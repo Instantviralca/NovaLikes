@@ -1,12 +1,12 @@
-# InstantViral — Production Deployment Guide
+# NovaLikes — Production Deployment Guide
 
-Safe launch runbook for instantviral.ca. Does not change product UI, SEO, pricing, or content.
+Safe launch runbook for novalikes.com. Does not change product UI, SEO, pricing, or content.
 
 > **Operator guide (env vars, Vercel, Stripe webhooks, smoke tests):**  
 > [`docs/PRODUCTION_DEPLOYMENT_GUIDE.md`](docs/PRODUCTION_DEPLOYMENT_GUIDE.md)  
 > **Template:** [`.env.production.example`](.env.production.example)
 
-> **External checkout subdomain:** set `NEXT_PUBLIC_CHECKOUT_URL=https://checkout.instantviral.ca` and add the domain in Vercel (same project). Soft cart on the main site hands off to that host; Stripe cancel returns there; success stays on the main site. When configured, main-site `/checkout` redirects to the subdomain; the subdomain redirects all non-checkout pages to the main site.
+> **External checkout subdomain:** set `NEXT_PUBLIC_CHECKOUT_URL=https://checkout.novalikes.com` and add the domain in Vercel (same project). Soft cart on the main site hands off to that host; Stripe cancel returns there; success stays on the main site. When configured, main-site `/checkout` redirects to the subdomain; the subdomain redirects all non-checkout pages to the main site.
 
 ## Required environment variables
 
@@ -30,7 +30,7 @@ Set these in the production host (Vercel / Railway / VPS). Never commit secrets.
 |-----|---------|
 | `EMAIL_ADMIN_TO` | Admin order + contact notifications |
 | `EMAIL_SUPPORT` | Shown in customer emails |
-| `EMAIL_COMPANY_NAME` | Defaults to InstantViral |
+| `EMAIL_COMPANY_NAME` | Defaults to NovaLikes |
 | `NEXT_PUBLIC_ADMIN_AUTH_CONFIGURED=true` | Shows admin login availability |
 
 ### Forbidden in production
@@ -76,16 +76,16 @@ npm test
 
 ## Manual configuration (outside the codebase)
 
-1. **DNS / HTTPS** — Point `instantviral.ca` (+ `www` redirect) to the host with a valid TLS certificate.
+1. **DNS / HTTPS** — Point `novalikes.com` (+ `www` redirect) to the host with a valid TLS certificate.
 2. **PostgreSQL** — Provision managed Postgres (Neon/Supabase/etc.) and set `DATABASE_URL` with `sslmode=require`.
 3. **Stripe Dashboard**
    - Live mode keys (`sk_live_…`, `pk_live_…`)
-   - Webhook endpoint: `https://instantviral.ca/api/webhooks/stripe`
+   - Webhook endpoint: `https://novalikes.com/api/webhooks/stripe`
    - Events: `checkout.session.completed`, `checkout.session.expired`, `payment_intent.payment_failed`
    - Copy signing secret → `STRIPE_WEBHOOK_SECRET`
 4. **Resend** — Verify sending domain; set `EMAIL_FROM` to an address on that domain.
 5. **Host env panel** — Paste all secrets; redeploy after changes.
-6. **Search Console** — Submit `https://instantviral.ca/sitemap.xml` after go-live.
+6. **Search Console** — Submit `https://novalikes.com/sitemap.xml` after go-live.
 
 ---
 

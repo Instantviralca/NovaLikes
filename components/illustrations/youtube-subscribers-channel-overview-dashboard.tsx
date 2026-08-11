@@ -60,8 +60,8 @@ export function YouTubeSubscribersChannelOverviewDashboard({
             YT
           </span>
           <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-stone-900">@channel.ca</p>
-            <p className="text-xs text-stone-500">youtube.com/@channel.ca</p>
+            <p className="truncate text-sm font-bold text-stone-900">@channel</p>
+            <p className="text-xs text-stone-500">youtube.com/@channel</p>
           </div>
         </div>
 

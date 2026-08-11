@@ -1,5 +1,5 @@
 /**
- * Export all InstantViral.ca website URLs to an Excel-compatible workbook.
+ * Export all NovaLikes.ca website URLs to an Excel-compatible workbook.
  * Writes SpreadsheetML (.xls) that Excel / Google Sheets open natively.
  * Run: node scripts/export-website-links.mjs
  */
@@ -7,8 +7,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const BASE = 'https://instantviral.ca';
-const OUT = path.join(ROOT, 'docs', 'InstantViral-Website-Links.xls');
+const BASE = 'https://novalikes.com';
+const OUT = path.join(ROOT, 'docs', 'NovaLikes-Website-Links.xls');
 
 function abs(pathname) {
   if (!pathname.startsWith('/')) pathname = `/${pathname}`;

@@ -4,7 +4,7 @@ import type { ServiceContent } from '@/types/content';
 const PRICING_ANCHOR = '#pricing-packages';
 
 /**
- * Buy TikTok Followers Canada — Document 09.21 production content.
+ * Buy TikTok Followers — Document 09.21 production content.
  * Other TikTok services remain factory placeholders until their production docs land.
  */
 function buildBuyTikTokFollowersContent(): ServiceContent {
@@ -12,18 +12,18 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     slug: 'buy-tiktok-followers',
     platformId: 'tiktok',
     seo: {
-      title: 'Buy TikTok Followers Canada | InstantViral',
+      title: 'Buy TikTok Followers | NovaLikes',
       description:
-        'Buy TikTok followers in Canada using real package options from InstantViral.ca, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
+        'Buy TikTok followers worldwide using real package options from NovaLikes.ca, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
     },
     hero: {
       eyebrow:
         'TRUSTED TIKTOK FOLLOWER SERVICE FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy TikTok Followers Canada',
+      title: 'Buy TikTok Followers',
       description:
-        'Buy TikTok followers in Canada with packages for creators, businesses, and brands. Choose a quantity that fits your goals, enter your public TikTok username, and complete checkout when you are ready.',
-      purpose: 'Convert for TikTok follower packages in Canada',
-      primaryKeyword: 'buy TikTok followers Canada',
+        'Buy TikTok followers worldwide with packages for creators, businesses, and brands. Choose a quantity that fits your goals, enter your public TikTok username, and complete checkout when you are ready.',
+      purpose: 'Convert for TikTok follower packages worldwide',
+      primaryKeyword: 'buy TikTok followers',
       supportingKeywords: [
         'Buy TikTok Followers',
         'Buying TikTok Followers',
@@ -47,10 +47,10 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
         { id: 'tt-f-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/tiktok-dashboard.svg',
+        src: '/assets/images/illustrations/buy-tiktok-followers-hero-v2.webp',
         alt: 'TikTok followers growth service dashboard illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -58,7 +58,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       title: 'Choose Your TikTok Followers Package',
       description:
         'Compare package sizes before you buy followers on TikTok. Start with a smaller test order, choose 500 or 1,000 followers for steady growth, or select larger options such as 10,000 followers for bigger campaigns.',
-      purpose: 'Present real InstantViral.ca TikTok follower packages',
+      purpose: 'Present real NovaLikes.ca TikTok follower packages',
       primaryKeyword: 'TikTok follower packages',
       suggestedWordCount: 45,
       packageIds: [],
@@ -69,7 +69,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       id: 'why-buy-tiktok-followers',
       title: 'Why Do People Buy TikTok Followers?',
       description:
-        'People buy TikTok followers to increase the visible follower count on their profile, strengthen first impressions, and support creator or business branding. Follower packages do not guarantee engagement or viral reach. Across Canada, creators and brands often use packages alongside consistent posting to present a more established profile.',
+        'People buy TikTok followers to increase the visible follower count on their profile, strengthen first impressions, and support creator or business branding. Follower packages do not guarantee engagement or viral reach. Worldwide, creators and brands often use packages alongside consistent posting to present a more established profile.',
       purpose: 'Explain informed use of TikTok follower packages',
       primaryKeyword: 'buy TikTok followers',
       suggestedWordCount: 90,
@@ -100,12 +100,12 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-instantviral-tiktok-followers-legacy',
-      title: 'Why InstantViral?',
+    whyNovaLikes: {
+      id: 'why-novalikes-tiktok-followers-legacy',
+      title: 'Why NovaLikes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in hero, packages, and FAQ',
-      primaryKeyword: 'TikTok growth service Canada',
+      primaryKeyword: 'TikTok growth service',
       suggestedWordCount: 0,
       items: [],
     },
@@ -193,8 +193,8 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     },
     reviews: {
       id: 'tt-followers-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Omitted on lean commercial layout to avoid homepage duplication',
       testimonialIds: [],
     },
@@ -204,7 +204,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       description:
         'Direct answers to common questions about whether you can buy TikTok followers, how buying followers on TikTok works, and which package size to choose.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy TikTok followers Canada',
+      primaryKeyword: 'buy TikTok followers',
       faqIds: [
         'faq-tt-followers-can-buy',
         'faq-tt-followers-how-buy',
@@ -245,29 +245,29 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
 }
 
 /**
- * Buy TikTok Likes Canada — Document 09.22 production content.
+ * Buy TikTok Likes — Document 09.22 production content.
  */
 function buildBuyTikTokLikesContent(): ServiceContent {
   return {
     slug: 'buy-tiktok-likes',
     platformId: 'tiktok',
     seo: {
-      title: 'Buy TikTok Likes Canada | InstantViral',
+      title: 'Buy TikTok Likes | NovaLikes',
       description:
-        'Buy TikTok likes Canada with real packages for creators and businesses. Public video URL only, secure checkout, gradual delivery options, and order tracking.',
+        'Buy TikTok likes with real packages for creators and businesses. Public video URL only, secure checkout, gradual delivery options, and order tracking.',
     },
     hero: {
       eyebrow: 'TIKTOK LIKE PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy TikTok Likes in Canada',
+      title: 'Buy TikTok Likes worldwide',
       description:
         'Buy TikTok likes for public videos with clear package pricing, secure checkout and visible order updates. Choose the quantity that fits your content, paste your public TikTok video link and review the delivery information before completing your order. No password or private account access is required.',
-      purpose: 'Convert for TikTok likes packages in Canada',
-      primaryKeyword: 'buy TikTok likes Canada',
+      purpose: 'Convert for TikTok likes packages worldwide',
+      primaryKeyword: 'buy TikTok likes',
       supportingKeywords: [
         'Buy TikTok Likes',
         'TikTok Likes Packages',
         'Buy Real TikTok Likes',
-        'TikTok Engagement Canada',
+        'TikTok Engagement',
       ],
       suggestedWordCount: 90,
       primaryCta: {
@@ -285,10 +285,10 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         { id: 'tt-l-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/tiktok-dashboard.svg',
+        src: '/assets/images/illustrations/buy-tiktok-likes-hero-v2.webp',
         alt: 'TikTok video likes engagement dashboard illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -296,7 +296,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       title: 'Choose Your TikTok Likes Package',
       description:
         'Compare available package sizes and select the number of likes that matches your video and campaign goals. Each option displays its price and order details before checkout, allowing you to confirm the quantity and public video link before payment.',
-      purpose: 'Present real InstantViral.ca TikTok likes packages',
+      purpose: 'Present real NovaLikes.ca TikTok likes packages',
       primaryKeyword: 'TikTok likes packages',
       suggestedWordCount: 55,
       packageIds: [],
@@ -338,9 +338,9 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-tiktok-likes',
-      title: 'Why Choose TikTok Likes From InstantViral?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-tiktok-likes',
+      title: 'Why Choose TikTok Likes From NovaLikes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections',
       primaryKeyword: 'buy real TikTok likes',
@@ -442,9 +442,9 @@ function buildBuyTikTokLikesContent(): ServiceContent {
     },
     reviews: {
       id: 'tt-likes-reviews',
-      title: 'What Customers Say About InstantViral',
+      title: 'What Customers Say About NovaLikes',
       description:
-        'Customer reviews for this InstantViral service.',
+        'Customer reviews for this NovaLikes service.',
       purpose: 'Social proof from approved customer reviews',
       testimonialIds: [],
     },
@@ -454,7 +454,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       description:
         'These are the most common questions customers ask before purchasing TikTok likes.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy TikTok likes Canada',
+      primaryKeyword: 'buy TikTok likes',
       faqIds: [
         'faq-tt-likes-can-buy',
         'faq-tt-likes-how-buy',
@@ -495,25 +495,25 @@ function buildBuyTikTokLikesContent(): ServiceContent {
 }
 
 /**
- * Buy TikTok Views Canada — lean authority content (mirrors Likes pattern).
- * Packages resolved from InstantViral catalog (Buzzoid-synced HQ + Premium tiers).
+ * Buy TikTok Views — lean authority content (mirrors Likes pattern).
+ * Packages resolved from NovaLikes catalog (Buzzoid-synced HQ + Premium tiers).
  */
 function buildBuyTikTokViewsContent(): ServiceContent {
   return {
     slug: 'buy-tiktok-views',
     platformId: 'tiktok',
     seo: {
-      title: 'Buy TikTok Views Canada | InstantViral',
+      title: 'Buy TikTok Views | NovaLikes',
       description:
-        'Buy TikTok views Canada with clear package pricing for public videos. Public video URL only, secure checkout and order tracking for creators and businesses.',
+        'Buy TikTok views with clear package pricing for public videos. Public video URL only, secure checkout and order tracking for creators and businesses.',
     },
     hero: {
       eyebrow: 'TIKTOK VIEW PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy TikTok Views in Canada',
+      title: 'Buy TikTok Views worldwide',
       description:
         'Buy TikTok views for public videos with clear package pricing, secure checkout and visible order updates. Choose the quantity that fits your campaign, paste the public TikTok video link and review delivery details before completing your order. No password or private account access is required.',
-      purpose: 'Convert for TikTok views packages in Canada',
-      primaryKeyword: 'buy TikTok views Canada',
+      purpose: 'Convert for TikTok views packages worldwide',
+      primaryKeyword: 'buy TikTok views',
       supportingKeywords: [
         'Buy TikTok Views',
         'Buy Views on TikTok',
@@ -537,10 +537,10 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         { id: 'tt-v-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/tiktok-dashboard.svg',
+        src: '/assets/images/illustrations/buy-tiktok-views-hero-v2.webp',
         alt: 'TikTok video views and reach analytics illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -548,7 +548,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
       title: 'Choose Your TikTok Views Package',
       description:
         'Compare available package sizes and select the number of views that matches your video, audience and campaign goals. Each option displays its price and order details before checkout so you can confirm the quantity and public video link before payment.',
-      purpose: 'Present real InstantViral.ca TikTok views packages',
+      purpose: 'Present real NovaLikes.ca TikTok views packages',
       primaryKeyword: 'TikTok views packages',
       suggestedWordCount: 55,
       packageIds: [],
@@ -590,9 +590,9 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-tiktok-views',
-      title: 'Why Choose TikTok Views From InstantViral?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-tiktok-views',
+      title: 'Why Choose TikTok Views From NovaLikes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections',
       primaryKeyword: 'buy TikTok views',
@@ -693,8 +693,8 @@ function buildBuyTikTokViewsContent(): ServiceContent {
     },
     reviews: {
       id: 'tt-views-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority layout — no customer reviews section',
       testimonialIds: [],
     },
@@ -704,7 +704,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
       description:
         'Below are answers to the most common questions customers ask before purchasing TikTok view packages.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy TikTok views Canada',
+      primaryKeyword: 'buy TikTok views',
       faqIds: [
         'faq-tt-views-can-buy',
         'faq-tt-views-how-buy',

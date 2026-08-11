@@ -101,7 +101,7 @@ export function TikTokFollowersHeroDashboard({
       <div className="pointer-events-none absolute bottom-[18%] left-[4%] size-28 rounded-full bg-[#25F4EE]/18 blur-3xl" />
       <div className="pointer-events-none absolute top-[42%] -right-2 size-20 rounded-full bg-[#FE2C55]/12 blur-2xl" />
 
-      {/* Floating UI cards — InstantViral trust + growth signals */}
+      {/* Floating UI cards — NovaLikes trust + growth signals */}
       <div className="pointer-events-none absolute top-[4%] -left-1 z-[5] max-w-[9.5rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_18px_36px_-16px_rgba(28,25,23,0.5)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.2s_ease-in-out_infinite] sm:left-0">
         <p className="text-[8px] font-semibold tracking-wide text-emerald-600 uppercase">Growth</p>
         <p className="text-[11px] font-bold text-stone-800">+1K Followers</p>
@@ -194,7 +194,7 @@ export function TikTokFollowersHeroDashboard({
                   </span>
                 </div>
                 <p className="inline-flex items-center gap-1 text-sm font-bold text-stone-900">
-                  @creator.ca
+                  @creator
                   <span
                     className="inline-flex size-3.5 items-center justify-center rounded-full text-[8px] text-white"
                     style={{ background: '#20D5EC' }}

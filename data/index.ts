@@ -24,12 +24,12 @@ export {
   getActivePackagesByServiceSlug,
   getServicesWithPricing,
   getServicesMissingPricing,
-  getInstantViralProductCount,
+  getNovaLikesProductCount,
   currencies,
   getDefaultCurrency,
   getCouponByCode,
   packageBadges,
-  INSTANTVIRAL_PRODUCTS,
+  NOVALIKES_PRODUCTS,
 } from '@/data/pricing';
 export { getServiceOrderConfig, getOrderFieldsForServiceSlug } from '@/data/order-fields';
 export {

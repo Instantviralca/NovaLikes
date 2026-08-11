@@ -7,7 +7,7 @@ export const learnConfig = {
   newsletterEnabled: false,
   newsletterHeading: 'Get growth tips in your inbox',
   newsletterDescription:
-    'Practical social media guides from InstantViral. No spam.',
+    'Practical social media guides from NovaLikes. No spam.',
   /** Index empty category pages for IA; articles only when published. */
   indexEmptyCategories: true,
   defaultReadingWordsPerMinute: 220,

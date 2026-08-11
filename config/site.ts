@@ -7,17 +7,14 @@ import { brand } from '@/config/brand';
 
 export const site = {
   name: brand.name,
-  domain: 'https://instantviral.ca',
-  supportEmail: 'support@instantviral.ca',
+  domain: 'https://novalikes.com',
+  supportEmail: 'support@novalikes.com',
   socialLinks: {
-    /** Verified official InstantViral Instagram profile. */
-    instagram: 'https://www.instagram.com/inst_antviral',
-    /** No verified official TikTok profile — omit from sameAs / footer. */
+    /** Add only after official NovaLikes profiles are live. */
+    instagram: '',
     tiktok: '',
-    /** No verified official YouTube profile — omit from sameAs / footer. */
     youtube: '',
-    /** Verified official InstantViral Facebook page. */
-    facebook: 'https://www.facebook.com/Instantviralcanada',
+    facebook: '',
   },
   tagline: brand.tagline,
   mission: brand.mission,

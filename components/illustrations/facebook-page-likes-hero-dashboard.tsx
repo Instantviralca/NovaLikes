@@ -212,7 +212,7 @@ export function FacebookPageLikesHeroDashboard({
               </div>
               <div className="pt-8">
                 <p className="text-sm font-bold text-stone-900">Your Business Page</p>
-                <p className="text-[10px] text-stone-500">Public · Brand · Canada</p>
+                <p className="text-[10px] text-stone-500">Public · Brand · Global</p>
               </div>
               <div className="mt-3 flex items-end justify-between gap-2">
                 <div>

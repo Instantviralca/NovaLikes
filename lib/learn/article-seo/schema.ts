@@ -135,7 +135,7 @@ export function buildArticleSchema(
     },
     articleSection: section,
     keywords: keywords.length ? keywords.join(', ') : undefined,
-    inLanguage: 'en-CA',
+    inLanguage: 'en',
     isAccessibleForFree: true,
     about: section
       ? {

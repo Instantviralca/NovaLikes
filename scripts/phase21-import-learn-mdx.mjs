@@ -286,18 +286,18 @@ function svgFor(filename, alt) {
       <stop offset="0%" stop-color="#FFFBF8"/><stop offset="100%" stop-color="#F3EBE4"/>
     </linearGradient>
     <linearGradient id="${id}or" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#F07020"/><stop offset="100%" stop-color="#E85818"/>
+      <stop offset="0%" stop-color="#E85D04"/><stop offset="100%" stop-color="#C2410C"/>
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#${id}bg)"/>
   <rect x="120" y="100" width="1360" height="700" rx="36" fill="#fff" stroke="#E8DDD4"/>
-  <rect x="160" y="150" width="200" height="28" rx="10" fill="#FFF1E8"/>
-  <text x="175" y="170" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#E85818">LEARN</text>
+  <rect x="160" y="150" width="200" height="28" rx="10" fill="#FFF4ED"/>
+  <text x="175" y="170" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#C2410C">LEARN</text>
   <text x="160" y="240" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#2B2B2B">${title}</text>
   <rect x="160" y="290" width="800" height="16" rx="8" fill="#E8DDD4"/>
-  <rect x="160" y="360" width="380" height="140" rx="20" fill="#FFF1E8"/>
+  <rect x="160" y="360" width="380" height="140" rx="20" fill="#FFF4ED"/>
   <rect x="580" y="360" width="380" height="140" rx="20" fill="#F7F0EA"/>
-  <rect x="1000" y="360" width="400" height="140" rx="20" fill="#FFF1E8"/>
+  <rect x="1000" y="360" width="400" height="140" rx="20" fill="#FFF4ED"/>
   <path d="M180 680 C400 620 700 520 1000 420 C1200 360 1350 320 1420 300" fill="none" stroke="url(#${id}or)" stroke-width="10" stroke-linecap="round"/>
 </svg>`;
 }
@@ -418,7 +418,7 @@ export const ${name}: LearnArticleRecord = {
   blocks: BODY_BLOCKS,
   category: 'instagram',
   tags: ['creator', 'business', 'engagement', 'followers'],
-  authorId: 'author-instantviral-editorial',
+  authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: \`\${IMG}/${a.hero.filename}\`,
     alt: '${esc(a.hero.alt)}',

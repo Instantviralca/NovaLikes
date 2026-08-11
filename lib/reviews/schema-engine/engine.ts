@@ -42,7 +42,7 @@ export function validateReviewedEntity(entity: ReviewedEntity): boolean {
  * Entity matching:
  * - service: exact serviceSlug only (never mix other services)
  * - platform: matching platform reviews for a platform grouping page
- * - organization: general InstantViral reviews (no conflicting service-only scope)
+ * - organization: general NovaLikes reviews (no conflicting service-only scope)
  */
 export function matchesReviewedEntity(review: Review, entity: ReviewedEntity): boolean {
   if (entity.kind === 'service') {
@@ -50,7 +50,7 @@ export function matchesReviewedEntity(review: Review, entity: ReviewedEntity): b
     // Another service's exclusive review must never attach here.
     if (review.serviceSlug && review.serviceSlug !== entity.serviceSlug) return false;
     if (review.platform && entity.platform && review.platform === entity.platform) return true;
-    // General InstantViral reviews (no platform / service scope).
+    // General NovaLikes reviews (no platform / service scope).
     if (!review.platform && !review.serviceSlug) return true;
     return false;
   }
@@ -203,7 +203,7 @@ export function calculateAggregateRating(
   reviews: Review[],
   options?: Pick<ReviewSchemaEngineOptions, 'entity' | 'visibleReviewIds' | 'reviewSectionVisible'>,
 ): AggregateRatingResult | null {
-  const entity = options?.entity ?? ({ kind: 'organization', name: 'InstantViral' } as const);
+  const entity = options?.entity ?? ({ kind: 'organization', name: 'NovaLikes' } as const);
   const { eligible } = getSchemaEligibleReviews(reviews, {
     entity,
     visibleReviewIds: options?.visibleReviewIds,

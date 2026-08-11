@@ -10,7 +10,7 @@ const LOOP_MS = 7800;
 const LIVE_TOASTS = [
   { id: 'a', label: 'New subscriber', detail: '@north.studio joined' },
   { id: 'b', label: 'Channel growth', detail: '+18 this hour' },
-  { id: 'c', label: 'Audience update', detail: 'Canada trending' },
+  { id: 'c', label: 'Audience update', detail: 'Trending' },
 ] as const;
 
 function formatSubs(n: number) {
@@ -194,7 +194,7 @@ export function YouTubeSubscribersHeroDashboard({
             </div>
             <div className="min-w-0 flex-1 pb-1">
               <div className="flex flex-wrap items-center gap-1.5">
-                <p className="truncate text-sm font-bold text-stone-900">Creator Channel CA</p>
+                <p className="truncate text-sm font-bold text-stone-900">Creator Channel</p>
                 <span className="inline-flex items-center gap-0.5 rounded-full bg-sky-50 px-1.5 py-0.5 text-[8px] font-bold text-sky-700">
                   <span className="flex size-2.5 items-center justify-center rounded-full bg-sky-500 text-[6px] text-white">
                     ✓
@@ -202,7 +202,7 @@ export function YouTubeSubscribersHeroDashboard({
                   Verified
                 </span>
               </div>
-              <p className="text-[10px] font-semibold text-stone-500">@creator.ca · Public channel</p>
+              <p className="text-[10px] font-semibold text-stone-500">@creator · Public channel</p>
             </div>
           </div>
         </div>

@@ -137,11 +137,11 @@ export function buildServiceContent(input: BuildServiceContentInput): ServiceCon
         },
       ],
     },
-    whyInstantViral: {
+    whyNovaLikes: {
       id: `${slug}-why`,
-      title: 'Why InstantViral',
+      title: 'Why NovaLikes',
       description: 'Placeholder differentiation intro.',
-      purpose: 'Differentiate InstantViral for this service',
+      purpose: 'Differentiate NovaLikes for this service',
       primaryKeyword,
       suggestedWordCount: 150,
       items: [
@@ -165,7 +165,7 @@ export function buildServiceContent(input: BuildServiceContentInput): ServiceCon
     reviews: {
       id: `${slug}-reviews`,
       title: 'Reviews',
-      description: 'Customer reviews for this InstantViral service.',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Social proof for this service',
       testimonialIds: defaultTestimonialIds(platformId),
     },

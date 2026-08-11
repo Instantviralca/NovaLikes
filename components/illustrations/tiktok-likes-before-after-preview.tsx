@@ -123,7 +123,7 @@ export function TikTokLikesBeforeAfterPreview({ className }: TikTokLikesBeforeAf
             </div>
 
             <div className="absolute inset-x-0 bottom-0 z-[2] bg-gradient-to-t from-black/80 via-black/35 to-transparent px-3 pt-10 pb-3">
-              <p className="truncate text-[11px] font-bold text-white">@creator.ca</p>
+              <p className="truncate text-[11px] font-bold text-white">@creator</p>
               <p className="mt-1 text-[9px] text-white/85">Illustration · sample video frame</p>
             </div>
           </div>

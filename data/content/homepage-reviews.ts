@@ -25,7 +25,7 @@ export const homepageCustomerReviews: HomepageCustomerReview[] = [];
 export const homepageCustomerReviewsMeta = {
   id: 'home-customer-reviews',
   title: 'Customer Reviews',
-  description: 'Approved customer feedback from the InstantViral review catalogue.',
+  description: 'Approved customer feedback from the NovaLikes review catalogue.',
   averageRatingLabel: '5.0/5 Average Rating',
   stats: [
     { id: 'rating', label: '5.0 out of 5 based on customer reviews', showStars: true },

@@ -6,7 +6,7 @@ import { footerMeta, getFooterColumns } from '@/data/footer';
 import { cn } from '@/lib/utils';
 
 /**
- * Global site footer — Explore InstantViral column layout (sitewide).
+ * Global site footer — Explore NovaLikes column layout (sitewide).
  */
 export function Footer({ className }: { className?: string }) {
   const columns = getFooterColumns();

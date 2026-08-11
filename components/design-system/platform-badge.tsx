@@ -34,7 +34,7 @@ type PlatformBadgeProps = {
 };
 
 /**
- * Subtle platform accent badge — InstantViral brand remains dominant.
+ * Subtle platform accent badge — NovaLikes brand remains dominant.
  */
 export function PlatformBadge({ platform, className, size = 'sm' }: PlatformBadgeProps) {
   const meta = PLATFORM_STYLES[platform];

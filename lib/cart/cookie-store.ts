@@ -1,5 +1,5 @@
 /**
- * Cross-subdomain cart cookie — Domain=.instantviral.ca when on brand hosts.
+ * Cross-subdomain cart cookie — Domain=.novalikes.com when on brand hosts.
  * sessionStorage remains a local cache; cookie is the handoff to checkout host.
  */
 

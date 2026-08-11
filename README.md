@@ -1,4 +1,4 @@
-# InstantViral v2 — project scaffold
+# NovaLikes v2 — project scaffold
 
 Architecture based on `docs/01_Project_Overview.md` and `docs/02_Information_Architecture.md`.
 

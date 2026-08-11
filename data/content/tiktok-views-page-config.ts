@@ -98,12 +98,12 @@ export type TikTokViewsPageConfig = {
 };
 
 /**
- * Lean topical blocks for Buy TikTok Views Canada.
+ * Lean topical blocks for Buy TikTok Views.
  * Hero, pricing, process, requirements, FAQ remain in data/content/tiktok.ts.
  */
 export const TIKTOK_VIEWS_PAGE_CONFIG: TikTokViewsPageConfig = {
   orderNotice:
-    'InstantViral never asks for your TikTok password. The order is processed using only the public video URL and the details entered at checkout.',
+    'NovaLikes never asks for your TikTok password. The order is processed using only the public video URL and the details entered at checkout.',
   canYouBuy: {
     id: 'can-you-buy-tiktok-views',
     title: 'Can You Buy TikTok Views?',
@@ -262,10 +262,10 @@ export const TIKTOK_VIEWS_PAGE_CONFIG: TikTokViewsPageConfig = {
     ],
   },
   canada: {
-    id: 'buying-tiktok-views-in-canada',
-    title: 'Buying TikTok Views in Canada',
+    id: 'buying-tiktok-views',
+    title: 'Buying TikTok Views worldwide',
     description:
-      'InstantViral provides TikTok view packages for creators, businesses and brands across Canada. Compare package sizes, review pricing and complete your order using only the public TikTok video link.',
+      'NovaLikes provides TikTok view packages for creators, businesses and brands worldwide. Compare package sizes, review pricing and complete your order using only the public TikTok video link.',
     body: "Whether you're promoting a product, launching a campaign or increasing the visibility of a public video, selecting the right package starts with understanding your goals. Review the package details and delivery information before completing your purchase.",
     cards: [
       {

@@ -275,7 +275,7 @@ export function validateArticleSeo(
   }
   if (
     seo.metaDescription &&
-    /instantviral learn center guides and resources/i.test(seo.metaDescription)
+    /novalikes learn center guides and resources/i.test(seo.metaDescription)
   ) {
     issues.push({
       severity: 'warning',

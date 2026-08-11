@@ -33,22 +33,22 @@ export function buildMarketingEmailContent(input: {
   const coupon = input.couponCode?.trim().toUpperCase();
   const messageHtml = escapeHtml(input.message).replace(/\n/g, '<br />');
   const couponBlock = coupon
-    ? `<p style="margin:24px 0;padding:16px;border:1px dashed #F07020;border-radius:8px;text-align:center;font-size:20px;font-weight:700;letter-spacing:0.04em;color:#141414;">Use code <span style="color:#F07020;">${escapeHtml(coupon)}</span></p>`
+    ? `<p style="margin:24px 0;padding:16px;border:1px dashed #E85D04;border-radius:8px;text-align:center;font-size:20px;font-weight:700;letter-spacing:0.04em;color:#141414;">Use code <span style="color:#E85D04;">${escapeHtml(coupon)}</span></p>`
     : '';
   const couponText = coupon ? `\n\nUse code: ${coupon}\n` : '\n';
 
   const html = `<!doctype html>
-<html><body style="margin:0;background:#fffbf8;font-family:Arial,sans-serif;color:#141414;">
+<html><body style="margin:0;background:#faf8f6;font-family:Arial,sans-serif;color:#1c1917;">
   <div style="max-width:560px;margin:0 auto;padding:32px 20px;">
-    <p style="font-size:14px;font-weight:700;color:#F07020;margin:0 0 8px;">${escapeHtml(site.name)}</p>
+    <p style="font-size:14px;font-weight:700;color:#E85D04;margin:0 0 8px;">${escapeHtml(site.name)}</p>
     <h1 style="font-size:24px;line-height:1.25;margin:0 0 16px;">${escapeHtml(input.subject)}</h1>
     <p style="font-size:16px;line-height:1.6;margin:0 0 16px;">${messageHtml}</p>
     ${couponBlock}
-    <p style="margin:24px 0;"><a href="${escapeHtml(siteOrigin)}" style="display:inline-block;background:#F07020;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:700;">Shop InstantViral</a></p>
+    <p style="margin:24px 0;"><a href="${escapeHtml(siteOrigin)}" style="display:inline-block;background:#E85D04;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:700;">Shop NovaLikes</a></p>
     <hr style="border:none;border-top:1px solid #eadfd6;margin:28px 0;" />
     <p style="font-size:12px;line-height:1.5;color:#5c5c5c;margin:0;">
-      You are receiving this email because you opted in to InstantViral offers at checkout.<br />
-      InstantViral · <a href="${escapeHtml(siteOrigin)}" style="color:#5c5c5c;">${escapeHtml(site.domain.replace(/^https?:\/\//, ''))}</a><br />
+      You are receiving this email because you opted in to NovaLikes offers at checkout.<br />
+      NovaLikes · <a href="${escapeHtml(siteOrigin)}" style="color:#5c5c5c;">${escapeHtml(site.domain.replace(/^https?:\/\//, ''))}</a><br />
       <a href="${escapeHtml(input.unsubscribeUrl)}" style="color:#5c5c5c;">Unsubscribe</a>
     </p>
   </div>
@@ -61,7 +61,7 @@ ${couponText}
 Shop: ${siteOrigin}
 
 —
-You opted in to InstantViral offers at checkout.
+You opted in to NovaLikes offers at checkout.
 Unsubscribe: ${input.unsubscribeUrl}
 `;
 

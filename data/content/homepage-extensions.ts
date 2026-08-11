@@ -3,10 +3,10 @@ import type { PlatformId } from '@/types/platform';
 
 export const comparisonSection = {
   id: 'home-comparison',
-  eyebrow: 'Why InstantViral',
-  title: 'Why Thousands Choose InstantViral',
+  eyebrow: 'Why NovaLikes',
+  title: 'Why Thousands Choose NovaLikes',
   description:
-    'InstantViral brings package selection, checkout, delivery information and order tracking into one straightforward customer journey across Instagram, TikTok, YouTube and Facebook.',
+    'NovaLikes brings package selection, checkout, delivery information and order tracking into one straightforward customer journey across Instagram, TikTok, YouTube and Facebook.',
   proofPoints: [
     'Public profile only',
     'Secure checkout',
@@ -46,24 +46,24 @@ export const comparisonSection = {
     href: '#featured-services',
   },
   columns: {
-    instantViral: 'InstantViral',
+    novaLikes: 'NovaLikes',
     typical: 'May Vary Elsewhere',
   },
   rows: [
     {
       id: 'package-info',
       label: 'Package information before checkout',
-      instantViral: true,
+      novaLikes: true,
       typical: false,
     },
-    { id: 'tracking', label: 'Public order tracking', instantViral: true, typical: false },
-    { id: 'platforms', label: 'Four supported platforms', instantViral: true, typical: false },
-    { id: 'package-pages', label: 'Dedicated package pages', instantViral: true, typical: false },
-    { id: 'faqs', label: 'Searchable homepage FAQs', instantViral: true, typical: false },
+    { id: 'tracking', label: 'Public order tracking', novaLikes: true, typical: false },
+    { id: 'platforms', label: 'Four supported platforms', novaLikes: true, typical: false },
+    { id: 'package-pages', label: 'Dedicated package pages', novaLikes: true, typical: false },
+    { id: 'faqs', label: 'Searchable homepage FAQs', novaLikes: true, typical: false },
     {
       id: 'refund-refill',
       label: 'Clear refund and refill terms',
-      instantViral: true,
+      novaLikes: true,
       typical: false,
       href: routes.refundPolicy,
     },
@@ -74,9 +74,9 @@ export const timelineSection = {
   id: 'home-timeline',
   title: 'Serving Customers Since 2018',
   description:
-    'Since launching in 2018, InstantViral has helped creators, businesses and brands grow across Instagram, TikTok, YouTube and Facebook through secure ordering, transparent delivery and professional support.',
+    'Since launching in 2018, NovaLikes has helped creators, businesses and brands grow across Instagram, TikTok, YouTube and Facebook through secure ordering, transparent delivery and professional support.',
   milestones: [
-    { id: 'launch', year: '2018', label: 'InstantViral launched' },
+    { id: 'launch', year: '2018', label: 'NovaLikes launched' },
     { id: 'growing', year: 'Growth', label: 'Growing customer base' },
     { id: 'customers', year: '50,000+', label: 'Customers served' },
     { id: 'delivered', year: 'Millions', label: 'Services delivered' },
@@ -154,13 +154,13 @@ export const paymentsSection = {
 export const extensionIllustrations = {
   comparison: {
     src: '/assets/images/illustrations/extensions/comparison-dashboard.webp',
-    alt: 'InstantViral compared with typical providers — checklist cards with secure ordering highlights',
+    alt: 'NovaLikes compared with typical providers — checklist cards with secure ordering highlights',
     width: 1536,
     height: 1024,
   },
   timeline: {
     src: '/assets/images/illustrations/extensions/timeline-milestones.webp',
-    alt: 'InstantViral timeline from 2018 launch to 50,000+ customers and millions delivered',
+    alt: 'NovaLikes timeline from 2018 launch to 50,000+ customers and millions delivered',
     width: 1536,
     height: 1024,
   },

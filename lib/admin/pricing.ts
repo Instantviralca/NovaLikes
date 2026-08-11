@@ -1,6 +1,6 @@
 /**
  * Admin pricing — Document 12.05.
- * Reads InstantViral packages and applies admin overrides.
+ * Reads NovaLikes packages and applies admin overrides.
  */
 
 import { getAllServices, getServiceBySlug } from '@/data/services';

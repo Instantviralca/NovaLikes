@@ -16,7 +16,7 @@ const STANDARDS = {
 } as const;
 
 function defaultAlt(brief: ArticleBrief): string {
-  return `Illustrated cover for “${brief.workingTitle}” on InstantViral Learn`;
+  return `Illustrated cover for “${brief.workingTitle}” on NovaLikes Learn`;
 }
 
 export function buildImageManifest(brief: ArticleBrief): ImageManifest {
@@ -80,7 +80,7 @@ export function generateImageBrief(brief: ArticleBrief): string {
   return `# Image Brief — ${brief.workingTitle}
 
 ## Branding
-- InstantViral Learn visual language
+- NovaLikes Learn visual language
 - Clear title-safe area
 - No unauthorized stock hotlinks
 
@@ -112,10 +112,10 @@ ${brief.imageRequirements.notes}
 export function generateImagePrompts(brief: ArticleBrief): string {
   return `# Image Prompts — ${brief.workingTitle}
 
-Use these prompts for design or AI generation. Do not invent InstantViral logos that violate brand guidelines.
+Use these prompts for design or AI generation. Do not invent NovaLikes logos that violate brand guidelines.
 
 ## Featured image (1600×900)
-Editorial Learn cover about “${brief.workingTitle}”. Clean composition, title-safe center, InstantViral brand colors, no fake UI screenshots of private data, no clickbait faces.
+Editorial Learn cover about “${brief.workingTitle}”. Clean composition, title-safe center, NovaLikes brand colors, no fake UI screenshots of private data, no clickbait faces.
 
 ## Social / OG image (1200×630)
 Crop-friendly social share graphic for “${brief.workingTitle}”. High contrast headline area, minimal text, platform: ${brief.platform}.

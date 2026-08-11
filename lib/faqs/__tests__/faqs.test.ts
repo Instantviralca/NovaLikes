@@ -70,7 +70,7 @@ const fixtureCatalogue: FaqRecord[] = [
   makeFaq({
     id: 'ig-followers-1',
     question: 'Do I need my Instagram password for followers?',
-    answer: 'No. InstantViral does not ask for your Instagram password.',
+    answer: 'No. NovaLikes does not ask for your Instagram password.',
     category: 'instagram',
     platform: 'instagram',
     serviceSlugs: ['buy-instagram-followers'],

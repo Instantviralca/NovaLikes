@@ -39,7 +39,7 @@ import {
 /** @deprecated Prefer buildReviewSchemaBundle with an explicit ReviewedEntity. */
 export function buildPublicReviewSchemas(
   reviews: Review[],
-  entity: ReviewedEntity = { kind: 'organization', name: 'InstantViral' },
+  entity: ReviewedEntity = { kind: 'organization', name: 'NovaLikes' },
 ): JsonLd[] {
   if (!canGenerateReviewSchema(reviews, { entity })) return [];
   const { eligible } = getSchemaEligibleReviews(reviews, { entity });
@@ -51,7 +51,7 @@ export function buildPublicReviewSchemas(
 /** @deprecated Prefer buildAggregateRatingSchema with ReviewSchemaEngineOptions. */
 export function buildAggregateRatingSchemaNode(
   reviews: Review[],
-  entity: ReviewedEntity = { kind: 'organization', name: 'InstantViral' },
+  entity: ReviewedEntity = { kind: 'organization', name: 'NovaLikes' },
 ): JsonLd | null {
   return buildAggregateRatingSchema(reviews, { entity });
 }

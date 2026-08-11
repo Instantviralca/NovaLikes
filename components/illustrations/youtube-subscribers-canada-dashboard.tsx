@@ -3,9 +3,9 @@
 import { cn } from '@/lib/utils';
 
 /**
- * Canada-themed Creator Studio dashboard for Buying YouTube Subscribers in Canada.
+ * Global Creator Studio dashboard for Buying YouTube Subscribers worldwide.
  */
-export function YouTubeSubscribersCanadaDashboard({
+export function YouTubeSubscribersGlobalDashboard({
   className,
 }: {
   className?: string;
@@ -42,21 +42,21 @@ export function YouTubeSubscribersCanadaDashboard({
               <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
                 Creator Studio
               </p>
-              <p className="text-sm font-bold text-stone-900">Canada Channels</p>
+              <p className="text-sm font-bold text-stone-900">Channels</p>
             </div>
           </div>
           <span className="rounded-full bg-red-50 px-2.5 py-1 text-[9px] font-bold text-red-600">
-            CA
+            WW
           </span>
         </div>
 
         <div className="grid grid-cols-[0.85fr_1.15fr] gap-2">
           <div className="flex flex-col items-center justify-center rounded-xl border border-stone-100 bg-[var(--surface-muted)]/80 p-2.5">
             <svg viewBox="0 0 64 64" className="h-14 w-14 text-red-600" fill="currentColor">
-              <path d="M32 6c-1.2 3.8-4.4 7.4-8.2 9.2 2.6 1.4 4.6 3.6 5.6 6.2-3.8-.6-7.4.4-10.2 2.8 2.2 2.2 5.2 3.4 8.4 3.2-2.8 2.4-4.4 5.8-4.2 9.4 3.2-1.2 6.6-1 9.4.6-.2 3.8 1.4 7.4 4.2 9.8.6-3.4 2.4-6.4 5.2-8.4 2.8 2 4.6 5 5.2 8.4 2.8-2.4 4.4-6 4.2-9.8 2.8-1.6 6.2-1.8 9.4-.6.2-3.6-1.4-7-4.2-9.4 3.2.2 6.2-1 8.4-3.2-2.8-2.4-6.4-3.4-10.2-2.8 1-2.6 3-4.8 5.6-6.2C40.4 13.4 37.2 9.8 36 6c-1.2 2.2-2.6 2.2-4 0z" />
+              <path d="M32 8c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24S45.3 8 32 8zm0 4c4.2 0 8 3.4 10.6 8.4H21.4C24 15.4 27.8 12 32 12zm-14.7 12h11.2c-.3 2.5-.4 5.1-.4 8s.1 5.5.4 8H17.3C16.5 37.2 16 34.7 16 32s.5-5.2 1.3-8zm13.9 0h11.6c.3 2.5.4 5.1.4 8s-.1 5.5-.4 8H31.2c.3-2.5.4-5.1.4-8s-.1-5.5-.4-8zm13.6 0h11.2c.8 2.8 1.3 5.3 1.3 8s-.5 5.2-1.3 8H44.7c.3-2.5.4-5.1.4-8s-.1-5.5-.4-8zM21.4 43.6h21.2C40 48.6 36.2 52 32 52s-8-3.4-10.6-8.4z" />
             </svg>
             <p className="mt-1 text-[8px] font-bold tracking-wide text-stone-500 uppercase">
-              Canada
+              Global
             </p>
           </div>
           <div className="space-y-2">

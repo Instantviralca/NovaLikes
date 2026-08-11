@@ -1,19 +1,19 @@
 import {
-  getInstantViralProductById,
-  getInstantViralProductsByPlatformType,
-  INSTANTVIRAL_PRODUCTS,
-  type InstantViralProduct,
-} from '@/data/pricing/instantviral-products';
+  getNovaLikesProductById,
+  getNovaLikesProductsByPlatformType,
+  NOVALIKES_PRODUCTS,
+  type NovaLikesProduct,
+} from '@/data/pricing/novalikes-products';
 import { getAllServices, getServiceBySlug } from '@/data/services';
 import { applyPackageOverride } from '@/lib/catalog/package-overrides';
 import type { PricingPackage } from '@/types/pricing';
 import type { Service } from '@/types/service';
 
-/** InstantViral.ca prices are stored in major USD units. */
+/** NovaLikes.ca prices are stored in major USD units. */
 const SOURCE_CURRENCY = 'USD' as const;
 
 /**
- * Convert InstantViral major-unit price to minor units without changing the value.
+ * Convert NovaLikes major-unit price to minor units without changing the value.
  * e.g. 1.99 → 199
  */
 function toMinorUnits(priceMajor: number): number {
@@ -21,10 +21,10 @@ function toMinorUnits(priceMajor: number): number {
 }
 
 /**
- * Map an InstantViral.ca product onto the PricingPackage shape.
+ * Map an NovaLikes.ca product onto the PricingPackage shape.
  * Comment packages may include tier, features, and compare-at pricing.
  */
-function mapProductToPackage(product: InstantViralProduct, service: Service): PricingPackage {
+function mapProductToPackage(product: NovaLikesProduct, service: Service): PricingPackage {
   const price = toMinorUnits(product.price);
   const compareAt = product.compareAtPrice
     ? toMinorUnits(product.compareAtPrice)
@@ -61,12 +61,12 @@ function mapProductToPackage(product: InstantViralProduct, service: Service): Pr
 }
 
 function packagesForService(service: Service): PricingPackage[] {
-  return getInstantViralProductsByPlatformType(service.platform, service.category)
+  return getNovaLikesProductsByPlatformType(service.platform, service.category)
     .map((product) => mapProductToPackage(product, service))
     .sort((a, b) => a.quantity - b.quantity);
 }
 
-/** Built once from InstantViral products + service registry — no invented tiers. */
+/** Built once from NovaLikes products + service registry — no invented tiers. */
 const packagesByServiceSlug: Record<string, PricingPackage[]> = Object.fromEntries(
   getAllServices().map((service) => [service.slug, packagesForService(service)]),
 );
@@ -92,7 +92,7 @@ export function getPackageById(packageId: string): PricingPackage | undefined {
     if (match) return applyPackageOverride(match);
   }
 
-  const product = getInstantViralProductById(packageId);
+  const product = getNovaLikesProductById(packageId);
   if (!product) return undefined;
   const service = getAllServices().find(
     (s) => s.platform === product.platform && s.category === product.type,
@@ -108,7 +108,7 @@ export function getPackagesByIds(packageIds: string[]): PricingPackage[] {
 
 /**
  * Resolve packages for a service page.
- * Returns [] when InstantViral.ca has no packages for that service — never fabricates data.
+ * Returns [] when NovaLikes.ca has no packages for that service — never fabricates data.
  */
 export function resolveServicePackages(
   serviceSlug: string,
@@ -126,20 +126,20 @@ export function resolveServicePackages(
   return getActivePackagesByServiceSlug(serviceSlug);
 }
 
-/** Services in the registry that have at least one InstantViral.ca package. */
+/** Services in the registry that have at least one NovaLikes.ca package. */
 export function getServicesWithPricing(): Service[] {
   return getAllServices().filter(
     (service) => getActivePackagesByServiceSlug(service.slug).length > 0,
   );
 }
 
-/** Services that still need real InstantViral package data. */
+/** Services that still need real NovaLikes package data. */
 export function getServicesMissingPricing(): Service[] {
   return getAllServices().filter(
     (service) => getActivePackagesByServiceSlug(service.slug).length === 0,
   );
 }
 
-export function getInstantViralProductCount(): number {
-  return INSTANTVIRAL_PRODUCTS.length;
+export function getNovaLikesProductCount(): number {
+  return NOVALIKES_PRODUCTS.length;
 }

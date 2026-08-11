@@ -101,7 +101,7 @@ function toRow(order: Order): AdminOrderRow {
     totalDisplay: formatMoney(
       order.total.amount,
       order.total.currency as CurrencyCode,
-      'en-CA',
+      'en',
     ),
     paymentStatus: order.payment?.status ?? 'pending',
     orderStatus: order.status,

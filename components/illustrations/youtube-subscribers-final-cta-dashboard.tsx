@@ -54,7 +54,7 @@ export function YouTubeSubscribersFinalCtaDashboard({ className }: { className?:
           </span>
           <div>
             <p className="text-sm font-bold text-stone-900">Channel profile</p>
-            <p className="text-[10px] text-stone-500">@channel.ca</p>
+            <p className="text-[10px] text-stone-500">@channel</p>
           </div>
         </div>
 
@@ -99,7 +99,7 @@ export function YouTubeSubscribersFinalCtaDashboard({ className }: { className?:
 
       <div className="pointer-events-none absolute -top-1 -right-1 z-10 max-w-[9.5rem] rounded-xl border border-white bg-white px-2.5 py-1.5 shadow-[0_14px_28px_-16px_rgba(28,25,23,0.5)] motion-safe:animate-[iv-float-card_5.6s_ease-in-out_infinite]">
         <p className="text-[8px] font-semibold text-red-600 uppercase">New subscriber</p>
-        <p className="text-[11px] font-bold text-stone-800">@viewer.ca joined</p>
+        <p className="text-[11px] font-bold text-stone-800">@viewer joined</p>
       </div>
     </div>
   );

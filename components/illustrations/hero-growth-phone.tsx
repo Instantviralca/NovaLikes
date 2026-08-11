@@ -37,7 +37,7 @@ const POST_TILES = [
 ] as const;
 
 function formatFollowers(n: number) {
-  return new Intl.NumberFormat('en-CA').format(Math.round(n));
+  return new Intl.NumberFormat('en').format(Math.round(n));
 }
 
 function easeInOut(t: number) {
@@ -264,7 +264,7 @@ export function HeroGrowthPhone({ className }: HeroGrowthPhoneProps) {
           </span>
           <div>
             <p className="text-[10px] font-bold text-[#1c1917]">{NOTIFS[notifIndex]}</p>
-            <p className="text-[9px] text-[#a8a29e]">InstantViral · just now</p>
+            <p className="text-[9px] text-[#a8a29e]">NovaLikes · just now</p>
           </div>
         </div>
       </div>

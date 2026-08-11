@@ -49,7 +49,7 @@ const TRUST_STATS: {
   },
   {
     id: 'about-trust-support',
-    title: 'Canadian Support',
+    title: 'Customer Support',
     description: 'Helpful customer support whenever required.',
     icon: Headphones,
   },

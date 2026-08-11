@@ -14,7 +14,7 @@ export type YouTubeSubscribersDirectAnswer = {
 };
 
 /**
- * Topical blocks for Buy YouTube Subscribers Canada.
+ * Topical blocks for Buy YouTube Subscribers.
  * Hero, pricing, Why Buy, How to Buy, and requirements remain in data/content/youtube.ts.
  */
 export type YouTubeSubscribersPageConfig = {
@@ -110,10 +110,10 @@ export type YouTubeSubscribersPageConfig = {
 
 export const YOUTUBE_SUBSCRIBERS_PAGE_CONFIG: YouTubeSubscribersPageConfig = {
   whyChoose: {
-    id: 'why-choose-instantviral-youtube-subscribers',
-    title: 'Why Choose InstantViral for YouTube Subscribers?',
+    id: 'why-choose-novalikes-youtube-subscribers',
+    title: 'Why Choose NovaLikes for YouTube Subscribers?',
     description:
-      'InstantViral provides a straightforward ordering experience with transparent subscriber packages, secure checkout and support throughout your purchase.',
+      'NovaLikes provides a straightforward ordering experience with transparent subscriber packages, secure checkout and support throughout your purchase.',
     items: [
       {
         id: 'yt-s-wc-2018',
@@ -138,7 +138,7 @@ export const YOUTUBE_SUBSCRIBERS_PAGE_CONFIG: YouTubeSubscribersPageConfig = {
       },
       {
         id: 'yt-s-wc-support',
-        title: 'Canadian Support',
+        title: 'Customer Support',
         description:
           'Get assistance before and after your purchase whenever you need help with package selection or order updates.',
         icon: 'headphones',
@@ -148,7 +148,7 @@ export const YOUTUBE_SUBSCRIBERS_PAGE_CONFIG: YouTubeSubscribersPageConfig = {
   whyBuyNote:
     'Subscriber packages work best alongside consistent publishing, high-quality videos and audience engagement rather than replacing a long-term YouTube strategy.',
   orderNotice:
-    'InstantViral only requires your public YouTube channel URL. Your YouTube password is never requested or stored.',
+    'NovaLikes only requires your public YouTube channel URL. Your YouTube password is never requested or stored.',
   canYouBuy: {
     id: 'can-you-buy-youtube-subscribers',
     title: 'Can You Buy YouTube Subscribers?',
@@ -271,10 +271,10 @@ export const YOUTUBE_SUBSCRIBERS_PAGE_CONFIG: YouTubeSubscribersPageConfig = {
       'Successful YouTube channels focus on multiple performance indicators rather than a single metric. Subscribers, Views and Watch Time each contribute to understanding overall channel performance and audience behaviour.',
   },
   canada: {
-    id: 'buying-youtube-subscribers-in-canada',
-    title: 'Buying YouTube Subscribers in Canada',
+    id: 'buying-youtube-subscribers',
+    title: 'Buying YouTube Subscribers worldwide',
     description:
-      "InstantViral offers YouTube Subscriber packages for creators, businesses and organizations across Canada. Whether you're starting a new channel or growing an existing audience, you can compare available packages and choose the option that aligns with your publishing goals.",
+      "NovaLikes offers YouTube Subscriber packages for creators, businesses and organizations worldwide. Whether you're starting a new channel or growing an existing audience, you can compare available packages and choose the option that aligns with your publishing goals.",
     body: 'Different channels have different growth objectives. A new creator may begin with a smaller subscriber package, while established brands and businesses often select larger packages that better match their existing audience and long-term content strategy.',
     closingNote:
       'Choose the package that best matches your current subscriber base rather than automatically selecting the largest option.',

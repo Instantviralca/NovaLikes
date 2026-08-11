@@ -33,7 +33,7 @@ function hasUnsupportedClaimOrClickbait(text: string): boolean {
 
 export function generateHashtags(brief: ArticleBrief): string[] {
   const base = [
-    'InstantViral',
+    'NovaLikes',
     'Learn',
     brief.platform === 'general' ? 'SocialMedia' : brief.platform,
   ];
@@ -93,7 +93,7 @@ export function generateSocialPosts(brief: ArticleBrief): SocialPostVariant[] {
     .join('\n')}\n\nFull article:`;
   const cta = brief.ctaStrategy.allowServiceCta
     ? `${brief.workingTitle} — practical steps without hype. ${brief.ctaStrategy.closingCtaLabel}.`
-    : `${brief.workingTitle} — practical InstantViral Learn guidance. Browse the full article.`;
+    : `${brief.workingTitle} — practical NovaLikes Learn guidance. Browse the full article.`;
 
   const platforms: SocialPlatform[] = ['facebook', 'instagram', 'x', 'linkedin'];
   const variants: SocialPostVariant[] = [];

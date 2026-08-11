@@ -1,5 +1,5 @@
 /**
- * Central design tokens — single source of truth for InstantViral Design System.
+ * Central design tokens — single source of truth for NovaLikes Design System.
  * Prefer these (and Tailwind token classes) over hardcoded values.
  */
 

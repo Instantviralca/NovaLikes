@@ -38,7 +38,7 @@ export type RelatedArticleWithThumb = InternalLink & {
   };
 };
 
-/** Section 3 — Why Choose InstantViral */
+/** Section 3 — Why Choose NovaLikes */
 export function FacebookPostLikesWhyChoose({
   config = FACEBOOK_POST_LIKES_PAGE_CONFIG,
   className,
@@ -579,7 +579,7 @@ export function FacebookPostLikesServiceCompare({
   );
 }
 
-/** Section 11 — Buying in Canada */
+/** Section 11 — Buying worldwide */
 export function FacebookPostLikesCanada({
   config = FACEBOOK_POST_LIKES_PAGE_CONFIG,
   className,
@@ -599,7 +599,7 @@ export function FacebookPostLikesCanada({
             <span aria-hidden className="text-sm leading-none">
               🍁
             </span>
-            Canada-ready Facebook Post Likes
+            Ready Facebook Post Likes
           </div>
           <Heading as="h2" size="h2" id={`${canada.id}-heading`} className="tracking-tight">
             {canada.title}

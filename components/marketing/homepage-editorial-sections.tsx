@@ -158,10 +158,10 @@ export function HomepageDirectAnswerSection() {
   const media = homepageMediaAssets.whereToBuy;
 
   const featureIcons: Record<string, LucideIcon> = {
-    'canada-focus': MapPin,
+    'global-focus': MapPin,
     'clear-packages': Package,
     'public-policies': FileText,
-    'why-instantviral': Sparkles,
+    'why-novalikes': Sparkles,
   };
 
   return (
@@ -382,8 +382,8 @@ export function HomepageCommercialSection() {
   );
 }
 
-export function HomepageWhyInstantViralSection() {
-  const { whyInstantViral } = homepageEditorial;
+export function HomepageWhyNovaLikesSection() {
+  const { whyNovaLikes } = homepageEditorial;
 
   const featureIcons: Record<string, LucideIcon> = {
     'no-password': Lock,
@@ -392,29 +392,29 @@ export function HomepageWhyInstantViralSection() {
     'human-support': Headphones,
     'clear-packages': Package,
     'order-tracking': ClipboardList,
-    'designed-for-canada': MapPin,
+    'designed-for-global': MapPin,
     'multiple-services': Sparkles,
   };
 
   return (
     <Section
-      id={whyInstantViral.id}
+      id={whyNovaLikes.id}
       spacing="md"
       className="surface-muted"
-      aria-labelledby={`${whyInstantViral.id}-heading`}
+      aria-labelledby={`${whyNovaLikes.id}-heading`}
     >
       <Container size="xl" className="space-y-6">
         <FadeUp className="mx-auto max-w-3xl space-y-3 text-center">
-          <Heading as="h2" size="h2" id={`${whyInstantViral.id}-heading`}>
-            {whyInstantViral.title}
+          <Heading as="h2" size="h2" id={`${whyNovaLikes.id}-heading`}>
+            {whyNovaLikes.title}
           </Heading>
           <Text className="leading-relaxed text-[var(--text-secondary)]">
-            {whyInstantViral.intro[0]}
+            {whyNovaLikes.intro[0]}
           </Text>
         </FadeUp>
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {whyInstantViral.features.map((feature, index) => {
+          {whyNovaLikes.features.map((feature, index) => {
             const Icon = featureIcons[feature.id] ?? ShieldCheck;
             return (
               <FadeUp key={feature.id} delay={0.03 * index} className="h-full">
@@ -437,17 +437,17 @@ export function HomepageWhyInstantViralSection() {
         <div className="space-y-4">
           <FadeUp className="text-center">
             <Heading as="h3" size="h3">
-              {whyInstantViral.comparison.title}
+              {whyNovaLikes.comparison.title}
             </Heading>
           </FadeUp>
           <div className="grid gap-4 md:grid-cols-2">
             <FadeUp>
               <article className="h-full rounded-2xl border border-[color-mix(in_srgb,var(--brand-primary)_30%,var(--border-subtle))] bg-[var(--brand-accent-soft)]/35 p-5 shadow-[var(--shadow-sm)]">
                 <h4 className="text-base font-semibold text-[var(--text-primary)]">
-                  {whyInstantViral.comparison.instantViral.title}
+                  {whyNovaLikes.comparison.novaLikes.title}
                 </h4>
                 <ul className="mt-3 space-y-2">
-                  {whyInstantViral.comparison.instantViral.items.map((item) => (
+                  {whyNovaLikes.comparison.novaLikes.items.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-sm text-[var(--text-secondary)]"
@@ -465,10 +465,10 @@ export function HomepageWhyInstantViralSection() {
             <FadeUp delay={0.05}>
               <article className="h-full rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)]">
                 <h4 className="text-base font-semibold text-[var(--text-primary)]">
-                  {whyInstantViral.comparison.typical.title}
+                  {whyNovaLikes.comparison.typical.title}
                 </h4>
                 <ul className="mt-3 space-y-2">
-                  {whyInstantViral.comparison.typical.items.map((item) => (
+                  {whyNovaLikes.comparison.typical.items.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-sm text-[var(--text-secondary)]"
@@ -483,7 +483,7 @@ export function HomepageWhyInstantViralSection() {
           </div>
           <FadeUp className="mx-auto max-w-3xl text-center">
             <Text className="leading-relaxed text-[var(--text-secondary)]">
-              {whyInstantViral.canadianTrust.description}
+              {whyNovaLikes.audienceTrust.description}
             </Text>
           </FadeUp>
         </div>
@@ -742,7 +742,7 @@ export function HomepageEntityTrustSection() {
     security: Lock,
     support: Headphones,
     consistency: Package,
-    'canadian-focus': MapPin,
+    'global-focus': MapPin,
   };
 
   return (
@@ -874,18 +874,18 @@ export function HomepageEntityTrustSection() {
           </aside>
         </FadeUp>
 
-        {/* Comparison content retained for topical coverage via compact checklist (avoids duplicating Why InstantViral vs cards). */}
+        {/* Comparison content retained for topical coverage via compact checklist (avoids duplicating Why NovaLikes vs cards). */}
         <FadeUp>
           <aside
             className="rounded-2xl border border-[var(--border-subtle)] bg-[#fffaf5] p-5 sm:p-6"
             aria-label="Provider comparison summary"
           >
             <p className="text-sm font-semibold text-[var(--text-primary)]">
-              InstantViral vs typical unknown providers
+              NovaLikes vs typical unknown providers
             </p>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <ul className="space-y-2">
-                {entityTrust.comparison.instantViral.items.map((item) => (
+                {entityTrust.comparison.novaLikes.items.map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-2 text-sm text-[var(--text-secondary)]"
@@ -1363,11 +1363,11 @@ export function HomepageCanYouBuySection() {
   );
 }
 
-export function HomepageCanadaSection() {
-  const { canada } = homepageEditorial;
+export function HomepageGlobalSection() {
+  const { globalAudience } = homepageEditorial;
   return (
-    <ProseBlock id={canada.id} title={canada.title} className="bg-hero-wash">
-      {canada.body.map((paragraph) => (
+    <ProseBlock id={globalAudience.id} title={globalAudience.title} className="bg-hero-wash">
+      {globalAudience.body.map((paragraph) => (
         <Text key={paragraph.slice(0, 40)} className="leading-relaxed text-[var(--text-secondary)]">
           {paragraph}
         </Text>

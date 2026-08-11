@@ -17,7 +17,7 @@ export function PricingPackagesSection({
   description,
   packages,
   secondaryCta,
-  emptyMessage = 'Pricing packages are not available for this service yet. Real InstantViral.ca package data has not been added for this offer.',
+  emptyMessage = 'Pricing packages are not available for this service yet. Real NovaLikes.ca package data has not been added for this offer.',
   loading,
   onSelectPackage,
   onContinuePackage,

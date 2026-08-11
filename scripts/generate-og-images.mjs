@@ -18,7 +18,7 @@ const H = 630;
 const SUPPORT = 'Fast delivery • No password required • Secure checkout';
 
 const BRAND = {
-  orange: '#F07020',
+  orange: '#E85D04',
   orangeSoft: '#FFF4EB',
   ink: '#1A1A1A',
   muted: '#5C5C5C',
@@ -33,7 +33,7 @@ const PLATFORM = {
   tiktok: { accent: '#111111', soft: '#F3FFFE', teal: '#00F2EA', label: 'TikTok' },
   youtube: { accent: '#FF0000', soft: '#FFF5F5', label: 'YouTube' },
   facebook: { accent: '#1877F2', soft: '#F0F6FF', label: 'Facebook' },
-  multi: { accent: '#F07020', soft: '#FFF4EB', label: 'Canada' },
+  multi: { accent: '#E85D04', soft: '#FFF4EB', label: 'Global' },
 };
 
 function esc(text) {
@@ -49,7 +49,7 @@ function wrapHeadline(headline) {
   if (headline.length <= 28) {
     return { line1: headline, line2: '' };
   }
-  // Prefer break before Canada when present
+  // Prefer break before  when present
   const canadaIdx = words.indexOf('Canada');
   if (canadaIdx > 0) {
     return {
@@ -200,7 +200,7 @@ function buildSvg({ headline, platformKey, metric, logoHref }) {
   <rect x="0" y="0" width="14" height="${H}" fill="${BRAND.orange}"/>
   <image xlink:href="${logoHref}" x="64" y="52" width="220" height="55" preserveAspectRatio="xMinYMid meet"/>
   <rect x="300" y="62" width="86" height="32" rx="16" fill="${BRAND.canada}"/>
-  <text x="343" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="${BRAND.white}">Canada</text>
+  <text x="343" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="${BRAND.white}">Global</text>
   <rect x="64" y="130" width="120" height="8" rx="4" fill="${platform.accent}"/>
   <text x="64" y="210" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="${BRAND.ink}">${esc(line1)}</text>
   ${
@@ -211,87 +211,87 @@ function buildSvg({ headline, platformKey, metric, logoHref }) {
   <text x="64" y="${line2 ? 320 : 280}" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="${BRAND.muted}">${esc(SUPPORT)}</text>
   <rect x="64" y="520" width="220" height="44" rx="22" fill="${accent}"/>
   <text x="174" y="548" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="${BRAND.white}">${esc(platform.label)}</text>
-  <text x="300" y="548" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="${BRAND.muted}">InstantViral.ca</text>
+  <text x="300" y="548" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="${BRAND.muted}">NovaLikes.ca</text>
   ${metricVisual(metric, accent)}
 </svg>`;
 }
 
 const SPECS = [
   {
-    file: 'instantviral-canada-social-media-growth-og.webp',
-    headline: 'Social Media Growth Services in Canada',
+    file: 'novalikes-canada-social-media-growth-og.webp',
+    headline: 'Social Media Growth Services worldwide',
     platformKey: 'multi',
     metric: 'homepage',
   },
   {
-    file: 'buy-instagram-followers-canada-og.webp',
-    headline: 'Buy Instagram Followers Canada',
+    file: 'buy-instagram-followers-global-og.webp',
+    headline: 'Buy Instagram Followers',
     platformKey: 'instagram',
     metric: 'followers',
   },
   {
     file: 'buy-instagram-likes-canada-og.webp',
-    headline: 'Buy Instagram Likes Canada',
+    headline: 'Buy Instagram Likes',
     platformKey: 'instagram',
     metric: 'likes',
   },
   {
     file: 'buy-instagram-views-canada-og.webp',
-    headline: 'Buy Instagram Views Canada',
+    headline: 'Buy Instagram Views',
     platformKey: 'instagram',
     metric: 'views',
   },
   {
     file: 'buy-instagram-comments-canada-og.webp',
-    headline: 'Buy Instagram Comments Canada',
+    headline: 'Buy Instagram Comments',
     platformKey: 'instagram',
     metric: 'comments',
   },
   {
     file: 'buy-tiktok-followers-canada-og.webp',
-    headline: 'Buy TikTok Followers Canada',
+    headline: 'Buy TikTok Followers',
     platformKey: 'tiktok',
     metric: 'followers',
   },
   {
     file: 'buy-tiktok-likes-canada-og.webp',
-    headline: 'Buy TikTok Likes Canada',
+    headline: 'Buy TikTok Likes',
     platformKey: 'tiktok',
     metric: 'likes',
   },
   {
     file: 'buy-tiktok-views-canada-og.webp',
-    headline: 'Buy TikTok Views Canada',
+    headline: 'Buy TikTok Views',
     platformKey: 'tiktok',
     metric: 'views',
   },
   {
     file: 'buy-youtube-subscribers-canada-og.webp',
-    headline: 'Buy YouTube Subscribers Canada',
+    headline: 'Buy YouTube Subscribers',
     platformKey: 'youtube',
     metric: 'subscribers',
   },
   {
     file: 'buy-youtube-views-canada-og.webp',
-    headline: 'Buy YouTube Views Canada',
+    headline: 'Buy YouTube Views',
     platformKey: 'youtube',
     metric: 'views',
   },
   {
     file: 'buy-facebook-followers-canada-og.webp',
-    headline: 'Buy Facebook Followers Canada',
+    headline: 'Buy Facebook Followers',
     platformKey: 'facebook',
     metric: 'followers',
   },
   {
     file: 'buy-facebook-page-likes-canada-og.webp',
-    headline: 'Buy Facebook Page Likes Canada',
+    headline: 'Buy Facebook Page Likes',
     platformKey: 'facebook',
     metric: 'page-likes',
   },
   {
     file: 'buy-facebook-post-likes-canada-og.webp',
-    headline: 'Buy Facebook Post Likes Canada',
+    headline: 'Buy Facebook Post Likes',
     platformKey: 'facebook',
     metric: 'post-likes',
   },

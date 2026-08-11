@@ -206,7 +206,7 @@ export type ServiceViewModel = {
     steps: ProcessStep[];
     cta?: CtaProps;
   };
-  whyInstantViral: {
+  whyNovaLikes: {
     id?: string;
     title?: string;
     description?: string;
@@ -318,12 +318,12 @@ export function mapServiceContent(content: ServiceContent): ServiceViewModel {
         ? { label: content.howItWorks.cta.label, href: content.howItWorks.cta.href }
         : undefined,
     },
-    whyInstantViral: {
-      id: content.whyInstantViral.id,
-      ...sectionCopyToProps(toSectionCopy(content.whyInstantViral)),
-      items: featureContentToProps(content.whyInstantViral.items),
-      cta: content.whyInstantViral.cta
-        ? { label: content.whyInstantViral.cta.label, href: content.whyInstantViral.cta.href }
+    whyNovaLikes: {
+      id: content.whyNovaLikes.id,
+      ...sectionCopyToProps(toSectionCopy(content.whyNovaLikes)),
+      items: featureContentToProps(content.whyNovaLikes.items),
+      cta: content.whyNovaLikes.cta
+        ? { label: content.whyNovaLikes.cta.label, href: content.whyNovaLikes.cta.href }
         : undefined,
     },
     deliveryAndSafety: content.deliveryAndSafety

@@ -7,7 +7,7 @@ import {
   HomepageHowToBuySection,
   HomepageInstagramHubSection,
   HomepageTrustedReviewsSection,
-  HomepageWhyInstantViralSection,
+  HomepageWhyNovaLikesSection,
 } from '@/components/marketing/homepage-editorial-sections';
 import {
   HomepageBuyingResponsiblySection,
@@ -25,7 +25,7 @@ type HomePageViewProps = {
 };
 
 /**
- * Homepage composition — Buy Instagram Followers Canada commercial authority.
+ * Homepage composition — Buy Instagram Followers commercial authority.
  * Order: Hero → Quick Answer → Social Proof → Trust → How It Works → Services →
  * Who We Help → Reviews → Articles → Educational → FAQ → Final CTA.
  * Footer is global (SiteLayout).
@@ -39,7 +39,7 @@ export function HomePageView({ content: _content = getHomepageContent() }: HomeP
       <HeroSection />
       <HomepageDirectAnswerSection />
       <HomepageCommercialSection />
-      <HomepageWhyInstantViralSection />
+      <HomepageWhyNovaLikesSection />
       <HomepageHowToBuySection />
       <HomepageInstagramHubSection />
       <HomepageWhoWeHelpSection />

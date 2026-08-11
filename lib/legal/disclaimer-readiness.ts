@@ -26,7 +26,7 @@ export function getDisclaimerPublicationReadiness(
       id: 'business-identity',
       label: 'Verified business identity',
       satisfied: Boolean(config.legalBusinessName && config.operatingName),
-      notes: 'Display name InstantViral is configured.',
+      notes: 'Display name NovaLikes is configured.',
     },
     {
       id: 'contact',

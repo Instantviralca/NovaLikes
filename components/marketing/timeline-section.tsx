@@ -54,7 +54,7 @@ export function TimelineSection({ className }: { className?: string }) {
         <ol
           ref={trackRef}
           className="relative grid gap-4 sm:grid-cols-2 lg:grid-cols-5"
-          aria-label="InstantViral milestones"
+          aria-label="NovaLikes milestones"
         >
           <li
             aria-hidden

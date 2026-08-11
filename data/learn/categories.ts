@@ -23,7 +23,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'instagram',
     seo: {
-      title: 'Instagram Guides | Learn | InstantViral',
+      title: 'Instagram Guides | Learn | NovaLikes',
       description:
         'Learn Instagram growth strategies, content tips, and engagement best practices.',
       canonicalPath: '/learn/instagram',
@@ -44,7 +44,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'tiktok',
     seo: {
-      title: 'TikTok Guides | Learn | InstantViral',
+      title: 'TikTok Guides | Learn | NovaLikes',
       description:
         'Learn TikTok growth strategies, short-form tips, and audience building.',
       canonicalPath: '/learn/tiktok',
@@ -65,7 +65,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'facebook',
     seo: {
-      title: 'Facebook Guides | Learn | InstantViral',
+      title: 'Facebook Guides | Learn | NovaLikes',
       description:
         'Learn Facebook page growth, engagement, and content strategies.',
       canonicalPath: '/learn/facebook',
@@ -86,7 +86,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'youtube',
     seo: {
-      title: 'YouTube Guides | Learn | InstantViral',
+      title: 'YouTube Guides | Learn | NovaLikes',
       description:
         'Learn YouTube channel growth, watch-time tips, and content planning.',
       canonicalPath: '/learn/youtube',
@@ -106,7 +106,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'marketing',
     seo: {
-      title: 'Social Media Marketing | Learn | InstantViral',
+      title: 'Social Media Marketing | Learn | NovaLikes',
       description:
         'Learn social media marketing fundamentals across major platforms.',
       canonicalPath: '/learn/social-media-marketing',
@@ -117,7 +117,7 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     id: 'guides',
     slug: 'guides',
     name: 'Guides',
-    description: 'Step-by-step InstantViral learning guides.',
+    description: 'Step-by-step NovaLikes learning guides.',
     active: true,
     status: 'active',
     featured: false,
@@ -126,8 +126,8 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'guides',
     seo: {
-      title: 'Guides | Learn | InstantViral',
-      description: 'Practical how-to guides for social growth and InstantViral.',
+      title: 'Guides | Learn | NovaLikes',
+      description: 'Practical how-to guides for social growth and NovaLikes.',
       canonicalPath: '/learn/guides',
       keywords: ['guides', 'how to', 'social growth'],
     },
@@ -145,8 +145,8 @@ export const LEARN_CATEGORIES: readonly LearnCategory[] = [
     updatedAt: UPDATED,
     icon: 'news',
     seo: {
-      title: 'News | Learn | InstantViral',
-      description: 'InstantViral news and social platform updates.',
+      title: 'News | Learn | NovaLikes',
+      description: 'NovaLikes news and social platform updates.',
       canonicalPath: '/learn/news',
       keywords: ['news', 'updates'],
     },

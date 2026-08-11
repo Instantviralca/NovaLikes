@@ -115,8 +115,8 @@ describe('Approved customer reviews catalogue', () => {
   it('emits Organization sameAs only for verified official social profiles', () => {
     const org = organizationSchema();
     expect(org.sameAs).toEqual([
-      'https://www.instagram.com/inst_antviral',
-      'https://www.facebook.com/Instantviralcanada',
+      'https://www.instagram.com/novalikes',
+      'https://www.facebook.com/Novalikescanada',
     ]);
     expect(JSON.stringify(org)).not.toContain('#');
     expect(JSON.stringify(org.sameAs)).not.toMatch(/tiktok|youtube|linkedin|twitter|x\.com/i);

@@ -60,7 +60,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy Facebook Followers Canada — full authority layout (Sections 1–18).
+ * Buy Facebook Followers — full authority layout (Sections 1–18).
  */
 export function FacebookFollowersAuthorityView({
   service,
@@ -100,7 +100,7 @@ export function FacebookFollowersAuthorityView({
           'No Login Required',
           'Secure Checkout',
           'Order Tracking',
-          'Canadian Support',
+          'Customer Support',
         ]}
       />
 
@@ -187,7 +187,7 @@ export function FacebookFollowersAuthorityView({
           'Public Page URL Only',
           'Secure Checkout',
           'No Password Required',
-          'Canadian Support',
+          'Customer Support',
         ]}
         className="[&_p:last-child]:text-white/70"
       />

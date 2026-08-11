@@ -51,7 +51,7 @@ function relatedBlurb(service: Service): string {
     case 'buy-youtube-views':
       return 'Choose a views package for a public YouTube video and review pricing, delivery information and tracking before ordering.';
     case 'buy-youtube-subscribers':
-      return 'Build a stronger YouTube audience alongside increased video visibility with subscriber packages designed for Canadian creators and businesses.';
+      return 'Build a stronger YouTube audience alongside increased video visibility with subscriber packages designed for creators and businesses.';
     case 'buy-facebook-followers':
       return 'Increase the visible audience connected to your Facebook page and strengthen your overall community presence.';
     case 'buy-facebook-page-likes':
@@ -85,7 +85,7 @@ function relatedCardTitle(service: Service): string {
     case 'buy-youtube-views':
       return 'YouTube Views Packages';
     case 'buy-youtube-subscribers':
-      return 'Buy YouTube Subscribers Canada';
+      return 'Buy YouTube Subscribers';
     case 'buy-facebook-followers':
       return 'Facebook Followers';
     case 'buy-facebook-page-likes':

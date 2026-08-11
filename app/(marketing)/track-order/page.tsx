@@ -16,10 +16,10 @@ export default function TrackOrderRoute() {
   const entry = getMetadataByRoute(routes.trackOrder);
   const graph = asJsonLdGraph([
     webPageSchema({
-      title: entry?.title ?? 'Track Order | InstantViral',
+      title: entry?.title ?? 'Track Order | NovaLikes',
       description:
         entry?.description ??
-        'Track your InstantViral order status using your order details.',
+        'Track your NovaLikes order status using your order details.',
       path: routes.trackOrder,
     }),
     breadcrumbSchema([

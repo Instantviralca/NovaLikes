@@ -52,7 +52,7 @@ export function ComparisonSection({ className }: { className?: string }) {
               <MutedText>{description}</MutedText>
             </div>
 
-            <ul className="space-y-3" aria-label="InstantViral features">
+            <ul className="space-y-3" aria-label="NovaLikes features">
               {featureCards.map((card) => {
                 const Icon = FEATURE_ICONS[card.id] ?? Check;
                 return (
@@ -88,7 +88,7 @@ export function ComparisonSection({ className }: { className?: string }) {
               <div
                 className="w-full"
                 role="table"
-                aria-label="InstantViral compared with other providers"
+                aria-label="NovaLikes compared with other providers"
               >
                 <div
                   className="hidden grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)_minmax(0,1fr)] border-b border-[var(--border-subtle)] sm:grid"
@@ -104,7 +104,7 @@ export function ComparisonSection({ className }: { className?: string }) {
                     className="bg-[color-mix(in_srgb,var(--brand-primary)_8%,white)] px-2 py-3.5 text-center text-[11px] font-bold text-[var(--brand-primary)] sm:px-4 sm:text-sm"
                     role="columnheader"
                   >
-                    {columns.instantViral}
+                    {columns.novaLikes}
                   </div>
                   <div
                     className="bg-stone-50 px-2 py-3.5 text-center text-[11px] font-semibold leading-snug text-[var(--text-secondary)] sm:px-4 sm:text-sm"
@@ -141,11 +141,11 @@ export function ComparisonSection({ className }: { className?: string }) {
                         role="cell"
                       >
                         <span className="text-[11px] font-semibold text-[var(--brand-primary)] sm:sr-only">
-                          {columns.instantViral}
+                          {columns.novaLikes}
                         </span>
                         <span className="flex size-7 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
                           <Check className="size-3.5" strokeWidth={2.5} aria-hidden />
-                          <span className="sr-only">Included with InstantViral</span>
+                          <span className="sr-only">Included with NovaLikes</span>
                         </span>
                       </div>
                       <div

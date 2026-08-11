@@ -56,7 +56,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy TikTok Likes Canada — lean authority layout.
+ * Buy TikTok Likes — lean authority layout.
  * Single requirements section (no duplicate What We Need blocks).
  */
 export function TikTokLikesAuthorityView({ service }: TikTokLikesAuthorityViewProps) {
@@ -139,7 +139,7 @@ export function TikTokLikesAuthorityView({ service }: TikTokLikesAuthorityViewPr
       {/* 8 — What to check before buying */}
       <TikTokLikesBeforeBuying config={config} />
 
-      {/* 9 — Canada */}
+      {/* 9 —  */}
       <TikTokLikesCanada config={config} />
 
       {/* 10 — Package size recommendations */}

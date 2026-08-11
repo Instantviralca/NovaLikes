@@ -165,8 +165,8 @@ export type ServiceContent = {
   benefits: SectionContent & { items: ContentListItem[] };
   features: SectionContent & { items: ContentListItem[]; cta?: CTAContent };
   howItWorks: SectionContent & { steps: ProcessStepContent[]; cta?: CTAContent };
-  /** Why Choose InstantViral — rendered on production service pages (09.11). */
-  whyInstantViral: SectionContent & { items: ContentListItem[]; cta?: CTAContent };
+  /** Why Choose NovaLikes — rendered on production service pages (09.11). */
+  whyNovaLikes: SectionContent & { items: ContentListItem[]; cta?: CTAContent };
   /** Delivery and Safety — optional; when present, rendered after How It Works. */
   deliveryAndSafety?: SectionContent & { items: ContentListItem[] };
   reviews: SectionContent & { testimonialIds: string[] };

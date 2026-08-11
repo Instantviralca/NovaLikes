@@ -50,7 +50,7 @@ function buildServiceEntries(): MetadataEntry[] {
     const content = getServiceContentBySlug(slug);
     const route = `/${slug}`;
     const title =
-      content?.seo?.title ?? (service ? titles.service(service) : `${slug} | InstantViral`);
+      content?.seo?.title ?? (service ? titles.service(service) : `${slug} | NovaLikes`);
     const description =
       content?.seo?.description ??
       (service ? descriptions.service(service) : seoSiteConfig.defaultDescription);
@@ -195,10 +195,10 @@ function buildTagEntries(): MetadataEntry[] {
       const articleCount = liveArticles.filter((article) => article.tags.includes(tag.slug)).length;
       if (articleCount < 1) return null;
       const route = `${LEARN_TAG_PATH_PREFIX}/${tag.slug}`;
-      const title = `${tag.name} Guides | InstantViral Learn`;
+      const title = `${tag.name} Guides | NovaLikes Learn`;
       const description =
         tag.description ||
-        `Browse InstantViral Learn guides tagged ${tag.name} for social media growth tips.`;
+        `Browse NovaLikes Learn guides tagged ${tag.name} for social media growth tips.`;
       return entry({
         id: `meta-learn-tag-${tag.slug}`,
         route,
@@ -234,15 +234,15 @@ export const metadataRegistry: MetadataEntry[] = [
     twitterImageAlt: homepageOg?.alt,
     robots: { index: true, follow: true },
     keywords: [
-      'buy instagram followers canada',
+      'buy instagram followers',
       'buy instagram followers',
       'buy followers instagram',
       'buy ig followers',
       'buy real instagram followers',
       'buy instagram likes',
       'buy instagram views',
-      'instagram growth services canada',
-      'InstantViral',
+      'instagram growth services',
+      'NovaLikes',
     ],
     active: true,
     indexable: true,
@@ -298,9 +298,9 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-track-order',
     route: routes.trackOrder,
     pageType: 'support',
-    title: 'Track Your Order | InstantViral',
+    title: 'Track Your Order | NovaLikes',
     description:
-      'Track your InstantViral order using your order ID and the email address used at checkout. View customer-safe status updates without sharing private account details.',
+      'Track your NovaLikes order using your order ID and the email address used at checkout. View customer-safe status updates without sharing private account details.',
     canonicalPath: routes.trackOrder,
     robots: { index: true, follow: true },
     active: true,
@@ -373,8 +373,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-cart',
     route: routes.cart,
     pageType: 'commerce',
-    title: 'Cart | InstantViral',
-    description: 'Review items in your InstantViral cart before checkout.',
+    title: 'Cart | NovaLikes',
+    description: 'Review items in your NovaLikes cart before checkout.',
     canonicalPath: routes.cart,
     robots: { index: false, follow: true },
     active: true,
@@ -384,8 +384,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-checkout',
     route: routes.checkout,
     pageType: 'commerce',
-    title: 'Checkout | InstantViral',
-    description: 'Complete your InstantViral order checkout securely.',
+    title: 'Checkout | NovaLikes',
+    description: 'Complete your NovaLikes order checkout securely.',
     canonicalPath: routes.checkout,
     robots: { index: false, follow: false },
     active: true,
@@ -395,8 +395,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-order-success',
     route: '/order-success',
     pageType: 'commerce',
-    title: 'Order Confirmation | InstantViral',
-    description: 'Your InstantViral order confirmation page.',
+    title: 'Order Confirmation | NovaLikes',
+    description: 'Your NovaLikes order confirmation page.',
     canonicalPath: '/order-success',
     robots: { index: false, follow: false },
     active: true,
@@ -408,7 +408,7 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-track-order-result',
     route: '/track-order/result',
     pageType: 'support',
-    title: 'Order Status | InstantViral',
+    title: 'Order Status | NovaLikes',
     description: 'Private order status view. This page is not indexed.',
     canonicalPath: '/track-order/result',
     robots: { index: false, follow: false },
@@ -421,8 +421,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-admin',
     route: routes.admin,
     pageType: 'admin',
-    title: 'Admin | InstantViral',
-    description: 'InstantViral administration.',
+    title: 'Admin | NovaLikes',
+    description: 'NovaLikes administration.',
     canonicalPath: routes.admin,
     robots: { index: false, follow: false },
     active: true,
@@ -434,8 +434,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-404',
     route: '/404',
     pageType: 'error',
-    title: 'Page Not Found | InstantViral',
-    description: 'The requested InstantViral page could not be found.',
+    title: 'Page Not Found | NovaLikes',
+    description: 'The requested NovaLikes page could not be found.',
     canonicalPath: '/404',
     robots: { index: false, follow: false },
     active: true,

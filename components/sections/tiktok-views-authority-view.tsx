@@ -60,7 +60,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy TikTok Views Canada — lean authority layout.
+ * Buy TikTok Views — lean authority layout.
  * Single requirements section; AI Overview direct-answer blocks; no reviews.
  */
 export function TikTokViewsAuthorityView({ service }: TikTokViewsAuthorityViewProps) {

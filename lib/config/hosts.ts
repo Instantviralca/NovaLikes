@@ -1,5 +1,5 @@
 /**
- * Site / checkout host helpers for multi-domain checkout (checkout.instantviral.ca).
+ * Site / checkout host helpers for multi-domain checkout (checkout.novalikes.com).
  * Client-safe: only reads NEXT_PUBLIC_* values.
  */
 
@@ -8,7 +8,7 @@ function trimOrigin(value: string | undefined): string | undefined {
   return trimmed || undefined;
 }
 
-/** Marketing / main site origin (e.g. https://instantviral.ca). */
+/** Marketing / main site origin (e.g. https://novalikes.com). */
 export function getSiteOrigin(): string {
   return (
     trimOrigin(process.env.NEXT_PUBLIC_SITE_URL) ||
@@ -18,7 +18,7 @@ export function getSiteOrigin(): string {
 }
 
 /**
- * External checkout origin (e.g. https://checkout.instantviral.ca).
+ * External checkout origin (e.g. https://checkout.novalikes.com).
  * Falls back to main site `/checkout` path origin when unset (local/dev).
  */
 export function getCheckoutOrigin(): string {
@@ -46,7 +46,7 @@ export function getSiteUrlPath(path: string): string {
   return `${origin}${normalized}`;
 }
 
-/** Parent cookie domain (e.g. .instantviral.ca). Null on localhost. */
+/** Parent cookie domain (e.g. .novalikes.com). Null on localhost. */
 export function getCartCookieDomain(): string | null {
   try {
     // Prefer the live browser host so cookies work even if SITE_URL env is wrong.
@@ -61,7 +61,7 @@ export function getCartCookieDomain(): string | null {
     if (host === 'vercel.app' || host.endsWith('.vercel.app')) {
       return null;
     }
-    // checkout.instantviral.ca + instantviral.ca → .instantviral.ca
+    // checkout.novalikes.com + novalikes.com → .novalikes.com
     const parts = host.split('.');
     if (parts.length >= 2) {
       return `.${parts.slice(-2).join('.')}`;

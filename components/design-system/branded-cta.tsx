@@ -16,7 +16,7 @@ type BrandedCTAProps = {
 };
 
 /**
- * Dark branded conversion band — InstantViral orange accents.
+ * Dark branded conversion band — NovaLikes orange accents.
  */
 export function BrandedCTA({
   title,

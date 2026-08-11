@@ -21,24 +21,24 @@ afterEach(() => {
 
 describe('Checkout host helpers', () => {
   it('falls back checkout to main site when CHECKOUT_URL unset', () => {
-    process.env.NEXT_PUBLIC_SITE_URL = 'https://instantviral.ca';
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
     delete process.env.NEXT_PUBLIC_CHECKOUT_URL;
-    expect(getSiteOrigin()).toBe('https://instantviral.ca');
-    expect(getCheckoutOrigin()).toBe('https://instantviral.ca');
-    expect(getCheckoutUrl('/')).toBe('https://instantviral.ca/checkout');
+    expect(getSiteOrigin()).toBe('https://novalikes.com');
+    expect(getCheckoutOrigin()).toBe('https://novalikes.com');
+    expect(getCheckoutUrl('/')).toBe('https://novalikes.com/checkout');
     expect(isDedicatedCheckoutConfigured()).toBe(false);
-    expect(isCheckoutHostname('instantviral.ca')).toBe(false);
+    expect(isCheckoutHostname('novalikes.com')).toBe(false);
   });
 
   it('uses dedicated checkout origin when configured', () => {
-    process.env.NEXT_PUBLIC_SITE_URL = 'https://instantviral.ca';
-    process.env.NEXT_PUBLIC_CHECKOUT_URL = 'https://checkout.instantviral.ca';
-    expect(getCheckoutOrigin()).toBe('https://checkout.instantviral.ca');
-    expect(getCheckoutUrl('/')).toBe('https://checkout.instantviral.ca/');
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
+    process.env.NEXT_PUBLIC_CHECKOUT_URL = 'https://checkout.novalikes.com';
+    expect(getCheckoutOrigin()).toBe('https://checkout.novalikes.com');
+    expect(getCheckoutUrl('/')).toBe('https://checkout.novalikes.com/');
     expect(isDedicatedCheckoutConfigured()).toBe(true);
-    expect(isCheckoutHostname('checkout.instantviral.ca')).toBe(true);
-    expect(isCheckoutHostname('instantviral.ca')).toBe(false);
-    expect(getCartCookieDomain()).toBe('.instantviral.ca');
-    expect(getCartCookieDomainFromSiteOrigin()).toBe('.instantviral.ca');
+    expect(isCheckoutHostname('checkout.novalikes.com')).toBe(true);
+    expect(isCheckoutHostname('novalikes.com')).toBe(false);
+    expect(getCartCookieDomain()).toBe('.novalikes.com');
+    expect(getCartCookieDomainFromSiteOrigin()).toBe('.novalikes.com');
   });
 });

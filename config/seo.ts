@@ -7,7 +7,7 @@ import { brand } from '@/config/brand';
 import { site } from '@/config/site';
 import { DEFAULT_LOCALE } from '@/config/constants';
 
-export const SEO_PRODUCTION_DOMAIN = 'https://instantviral.ca' as const;
+export const SEO_PRODUCTION_DOMAIN = 'https://novalikes.com' as const;
 
 export const seoSiteConfig = {
   siteName: brand.name,
@@ -15,7 +15,7 @@ export const seoSiteConfig = {
   productionDomain: SEO_PRODUCTION_DOMAIN,
   /** Keep in sync with config/site.ts domain. */
   configuredDomain: site.domain,
-  defaultLocale: 'en_CA',
+  defaultLocale: 'en_US',
   htmlLocale: DEFAULT_LOCALE,
   defaultTitleTemplate: `%s | ${brand.name}`,
   defaultDescription: site.defaultMetadata.description,

@@ -94,7 +94,7 @@ export function buildPageMetadataForRoute(route: string): Metadata {
     const slug = normalized.slice(1);
     if (!isApprovedServiceSlug(slug)) {
       return buildPageMetadata({
-        title: 'Unavailable Service | InstantViral',
+        title: 'Unavailable Service | NovaLikes',
         description: seoSiteConfig.defaultDescription,
         path: normalized,
         robots: { index: false, follow: false },
@@ -105,7 +105,7 @@ export function buildPageMetadataForRoute(route: string): Metadata {
   const entry = getMetadataByRoute(normalized);
   if (!entry || !entry.active) {
     return buildPageMetadata({
-      title: 'InstantViral',
+      title: 'NovaLikes',
       description: seoSiteConfig.defaultDescription,
       path: normalized,
       robots: { index: false, follow: false },

@@ -1,4 +1,4 @@
-/** InstantViral TT Followers page rhythm — surfaces, spacing, premium shadows. */
+/** NovaLikes TT Followers page rhythm — surfaces, spacing, premium shadows. */
 export const TT_FOLLOWERS_SURFACES = {
   white: 'bg-white',
   warm: 'bg-[#FFF9F4]',

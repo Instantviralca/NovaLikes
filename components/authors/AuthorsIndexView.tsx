@@ -20,7 +20,7 @@ export function AuthorsIndexView({ authors }: AuthorsIndexViewProps) {
         <div className="mb-10 max-w-2xl">
           <Heading as="h1">Authors</Heading>
           <MutedText className="mt-3">
-            InstantViral Learn contributors. Profiles appear here when authors are
+            NovaLikes Learn contributors. Profiles appear here when authors are
             published in the shared Author registry.
           </MutedText>
         </div>
@@ -30,7 +30,7 @@ export function AuthorsIndexView({ authors }: AuthorsIndexViewProps) {
             className="border border-dashed border-neutral-300 p-6 text-sm text-neutral-600"
             data-authors-empty="true"
           >
-            No author profiles are published yet. InstantViral does not invent
+            No author profiles are published yet. NovaLikes does not invent
             author names, roles, or credentials.
           </p>
         ) : (

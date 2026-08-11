@@ -67,7 +67,7 @@ export const UPDATE_SCHEDULE_RULES: readonly UpdateScheduleRule[] = [
   {
     cadence: 'policy_on_change',
     label: 'Policy-sensitive content',
-    guidance: 'Update when platform rules, safety policies, or InstantViral legal pages change.',
+    guidance: 'Update when platform rules, safety policies, or NovaLikes legal pages change.',
     exampleSlugs: PLANNED_ARTICLES.filter(
       (a) => a.updateCadence === 'policy_on_change',
     ).map((a) => a.slug),

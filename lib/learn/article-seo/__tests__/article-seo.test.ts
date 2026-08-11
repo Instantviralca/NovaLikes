@@ -13,7 +13,7 @@ const mockAuthor: PublicAuthor = {
   slug: 'jordan-lee',
   name: 'Jordan Lee',
   role: 'Content Strategist',
-  bio: 'Jordan writes InstantViral Learn guides on social growth topics.',
+  bio: 'Jordan writes NovaLikes Learn guides on social growth topics.',
   expertise: ['Instagram'],
   joinedAt: '2024-01-01T00:00:00.000Z',
   active: true,
@@ -65,15 +65,15 @@ import {
 function makeSeo(overrides: Partial<ArticleSeoRecord> = {}): ArticleSeoRecord {
   return {
     title: 'YouTube Growth Guide',
-    metaTitle: 'YouTube Growth Guide | InstantViral Learn',
+    metaTitle: 'YouTube Growth Guide | NovaLikes Learn',
     metaDescription:
       'Practical YouTube growth habits for creators who want sustainable channel progress.',
     canonicalPath: '/learn/youtube-growth-guide',
-    openGraphTitle: 'YouTube Growth Guide | InstantViral Learn',
+    openGraphTitle: 'YouTube Growth Guide | NovaLikes Learn',
     openGraphDescription:
       'Practical YouTube growth habits for creators who want sustainable channel progress.',
     openGraphImage: '/og-default.png',
-    twitterTitle: 'YouTube Growth Guide | InstantViral Learn',
+    twitterTitle: 'YouTube Growth Guide | NovaLikes Learn',
     twitterDescription:
       'Practical YouTube growth habits for creators who want sustainable channel progress.',
     twitterImage: '/og-default.png',
@@ -137,7 +137,7 @@ function makeRecord(
     updatedAt: '2024-06-01T00:00:00.000Z',
     showModifiedDate: false,
     seo: {
-      title: 'YouTube Growth Guide | InstantViral Learn',
+      title: 'YouTube Growth Guide | NovaLikes Learn',
       description:
         'Practical YouTube growth habits for creators who want sustainable channel progress.',
       canonicalPath: '/learn/youtube-growth-guide',
@@ -162,7 +162,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
   it('builds valid published article metadata', () => {
     const metadata = buildArticleMetadata(makeSeo());
     expect(metadata.title).toEqual({
-      absolute: 'YouTube Growth Guide | InstantViral Learn',
+      absolute: 'YouTube Growth Guide | NovaLikes Learn',
     });
     expect(metadata.description).toContain('YouTube growth');
     expect(metadata.robots).toMatchObject({ index: true, follow: true });
@@ -170,11 +170,11 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
 
   it('uses a unique self-referencing canonical', () => {
     expect(buildArticleCanonical('YouTube-Growth-Guide')).toBe(
-      'https://instantviral.ca/learn/youtube-growth-guide',
+      'https://novalikes.com/learn/youtube-growth-guide',
     );
     const metadata = buildArticleMetadata(makeSeo());
     expect(metadata.alternates?.canonical).toBe(
-      'https://instantviral.ca/learn/youtube-growth-guide',
+      'https://novalikes.com/learn/youtube-growth-guide',
     );
     expect(validateArticleCanonical('youtube-growth-guide', '/learn')).toEqual(
       expect.arrayContaining([
@@ -185,11 +185,11 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
 
   it('builds Open Graph article metadata', () => {
     const og = buildArticleOpenGraph(makeSeo(), {
-      authorUrl: 'https://instantviral.ca/authors/jordan-lee',
+      authorUrl: 'https://novalikes.com/authors/jordan-lee',
       articleSection: 'YouTube',
     }) as Record<string, unknown>;
     expect(og.type).toBe('article');
-    expect(og.url).toBe('https://instantviral.ca/learn/youtube-growth-guide');
+    expect(og.url).toBe('https://novalikes.com/learn/youtube-growth-guide');
     expect(og.publishedTime).toBe('2024-06-01T00:00:00.000Z');
     const images = og.images as Array<{ width: number; height: number }>;
     expect(images[0]?.width).toBe(1200);
@@ -312,7 +312,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
         id: 'yt-2',
         slug: 'youtube-growth-guide-copy',
         seo: {
-          title: 'YouTube Growth Guide | InstantViral Learn',
+          title: 'YouTube Growth Guide | NovaLikes Learn',
           description:
             'Practical YouTube growth habits for creators who want sustainable channel progress.',
           canonicalPath: '/learn/youtube-growth-guide',

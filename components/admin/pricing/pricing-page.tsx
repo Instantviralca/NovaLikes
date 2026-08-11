@@ -194,7 +194,7 @@ export function PricingTable({
     return (
       <AdminEmptyState
         title="No packages found"
-        description="Only real InstantViral.ca packages are listed. Adjust filters if needed."
+        description="Only real NovaLikes.ca packages are listed. Adjust filters if needed."
       />
     );
   }
@@ -506,7 +506,7 @@ export function PricingPage() {
     <div className="space-y-4">
       <AdminPageHeader
         title="Pricing"
-        description="Edit InstantViral package prices, quantities, and availability."
+        description="Edit NovaLikes package prices, quantities, and availability."
       />
       <PricingSearch value={query} onChange={(v) => { setQuery(v); setPage(1); }} />
       <PricingFilters

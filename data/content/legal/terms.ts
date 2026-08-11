@@ -17,7 +17,7 @@ function formatDisplayDate(isoDate: string | undefined): string | undefined {
   if (!isoDate) return undefined;
   const parsed = new Date(`${isoDate}T00:00:00Z`);
   if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -38,7 +38,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
   const paymentBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Payment is required to place an order through ${domainHost}. Available payment methods are those currently enabled in InstantViral checkout configuration.`,
+      text: `Payment is required to place an order through ${domainHost}. Available payment methods are those currently enabled in NovaLikes checkout configuration.`,
     },
   ];
 
@@ -56,13 +56,13 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
 
   paymentBlocks.push({
     type: 'paragraph',
-    text: 'Payment processing is handled by the enabled payment provider. InstantViral does not claim that every payment attempt will succeed, and failed or incomplete payments do not create a fulfilled order.',
+    text: 'Payment processing is handled by the enabled payment provider. NovaLikes does not claim that every payment attempt will succeed, and failed or incomplete payments do not create a fulfilled order.',
   });
 
   const eligibilityBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `You may use InstantViral services only if you have the legal capacity to enter into a binding agreement and are permitted to use the website under applicable law and the terms of Instagram, TikTok, Facebook, YouTube, and any payment provider you use.`,
+      text: `You may use NovaLikes services only if you have the legal capacity to enter into a binding agreement and are permitted to use the website under applicable law and the terms of Instagram, TikTok, Facebook, YouTube, and any payment provider you use.`,
     },
   ];
 
@@ -74,14 +74,14 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
   } else {
     eligibilityBlocks.push({
       type: 'paragraph',
-      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable law and platform requirements. InstantViral does not invent an arbitrary age for these Terms.',
+      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable law and platform requirements. NovaLikes does not invent an arbitrary age for these Terms.',
     });
   }
 
   const governingBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'These Terms are intended to be interpreted under the laws that apply to InstantViral’s operations and customers, subject to professional legal review before publication.',
+      text: 'These Terms are intended to be interpreted under the laws that apply to NovaLikes’s operations and customers, subject to professional legal review before publication.',
     },
   ];
 
@@ -93,7 +93,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
   } else {
     governingBlocks.push({
       type: 'paragraph',
-      text: 'A specific governing-law jurisdiction has not been published in InstantViral configuration. InstantViral will not invent a province, state, or country for these Terms.',
+      text: 'A specific governing-law jurisdiction has not been published in NovaLikes configuration. NovaLikes will not invent a province, state, or country for these Terms.',
     });
   }
 
@@ -131,7 +131,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
   } else {
     contactBlocks.push({
       type: 'paragraph',
-      text: `A verified support email has not been published in Terms configuration. Until that address is verified, contact InstantViral through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
+      text: `A verified support email has not been published in Terms configuration. Until that address is verified, contact NovaLikes through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
     });
   }
 
@@ -150,7 +150,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `By accessing ${domainHost}, browsing service pages, creating an order configuration, placing an order, tracking an order, or otherwise using InstantViral services, you agree to these Terms & Conditions and to the Privacy Policy available at ${domainHost}${privacyPolicyPath}.`,
+          text: `By accessing ${domainHost}, browsing service pages, creating an order configuration, placing an order, tracking an order, or otherwise using NovaLikes services, you agree to these Terms & Conditions and to the Privacy Policy available at ${domainHost}${privacyPolicyPath}.`,
         },
         {
           type: 'paragraph',
@@ -171,11 +171,11 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `You may use ${domainHost} only for lawful purposes and in accordance with these Terms. InstantViral may update website features, service pages, pricing displays, and related tools from time to time.`,
+          text: `You may use ${domainHost} only for lawful purposes and in accordance with these Terms. NovaLikes may update website features, service pages, pricing displays, and related tools from time to time.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} does not promise uninterrupted, error-free, or continuously available website access. Temporary interruptions may occur for maintenance, security, infrastructure, or reasons outside InstantViral’s control.`,
+          text: `${operatingName} does not promise uninterrupted, error-free, or continuously available website access. Temporary interruptions may occur for maintenance, security, infrastructure, or reasons outside NovaLikes’s control.`,
         },
       ],
     },
@@ -186,7 +186,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} offers package-based social media growth services for selected Instagram, TikTok, Facebook, and YouTube metrics through InstantViral.ca. Available services and packages are those displayed with real package data from InstantViral’s pricing system.`,
+          text: `${operatingName} offers package-based social media growth services for selected Instagram, TikTok, Facebook, and YouTube metrics through NovaLikes.ca. Available services and packages are those displayed with real package data from NovaLikes’s pricing system.`,
         },
         {
           type: 'paragraph',
@@ -209,7 +209,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Order configuration fields are determined by the selected service. InstantViral does not request social media passwords or private authentication codes to place an order.',
+          text: 'Order configuration fields are determined by the selected service. NovaLikes does not request social media passwords or private authentication codes to place an order.',
         },
       ],
     },
@@ -220,7 +220,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Prices shown on InstantViral.ca come from InstantViral’s real package pricing data. InstantViral does not invent dummy prices, quantities, delivery estimates, badges, discounts, or package features for display.',
+          text: 'Prices shown on NovaLikes.ca come from NovaLikes’s real package pricing data. NovaLikes does not invent dummy prices, quantities, delivery estimates, badges, discounts, or package features for display.',
         },
         {
           type: 'paragraph',
@@ -260,7 +260,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'When using InstantViral, you agree to:',
+          text: 'When using NovaLikes, you agree to:',
         },
         {
           type: 'list',
@@ -269,7 +269,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
             'Submit the correct public username or URL for the selected service',
             'Keep the destination public and accessible as required for fulfilment',
             'Comply with applicable law and the terms of third-party platforms you use',
-            'Use InstantViral services only for lawful purposes',
+            'Use NovaLikes services only for lawful purposes',
             'Not attempt to interfere with website security, payments, or order processing',
           ],
         },
@@ -282,7 +282,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'You may not use InstantViral to:',
+          text: 'You may not use NovaLikes to:',
         },
         {
           type: 'list',
@@ -290,8 +290,8 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
             'Violate applicable law or third-party platform terms',
             'Submit fraudulent payment information',
             'Abuse checkout, coupons, tracking, or support systems',
-            'Attempt unauthorized access to InstantViral systems or data',
-            'Harass InstantViral staff or other customers',
+            'Attempt unauthorized access to NovaLikes systems or data',
+            'Harass NovaLikes staff or other customers',
             'Misrepresent your identity or destination ownership where ownership or control is required for a lawful order',
           ],
         },
@@ -308,11 +308,11 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `The InstantViral name, website design, logos, copy, software, and other InstantViral content are owned by InstantViral or its licensors and are protected by applicable intellectual property laws.`,
+          text: `The NovaLikes name, website design, logos, copy, software, and other NovaLikes content are owned by NovaLikes or its licensors and are protected by applicable intellectual property laws.`,
         },
         {
           type: 'paragraph',
-          text: 'You may not copy, scrape, republish, or commercially exploit InstantViral website content except as expressly permitted by InstantViral or required by law.',
+          text: 'You may not copy, scrape, republish, or commercially exploit NovaLikes website content except as expressly permitted by NovaLikes or required by law.',
         },
       ],
     },
@@ -323,7 +323,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Instagram, TikTok, Facebook, YouTube, payment providers, and other third-party platforms operate independently from InstantViral and publish their own terms, policies, and technical rules.',
+          text: 'Instagram, TikTok, Facebook, YouTube, payment providers, and other third-party platforms operate independently from NovaLikes and publish their own terms, policies, and technical rules.',
         },
         {
           type: 'paragraph',
@@ -409,15 +409,15 @@ export function getTermsAndConditionsContent(
     id: 'terms-and-conditions',
     path: routes.termsAndConditions,
     seo: {
-      title: 'Terms & Conditions | InstantViral Canada',
+      title: 'Terms & Conditions | NovaLikes',
       description:
-        'Read the Terms & Conditions governing the use of InstantViral, website access, orders, payments, refunds, acceptable use, and customer responsibilities.',
+        'Read the Terms & Conditions governing the use of NovaLikes, website access, orders, payments, refunds, acceptable use, and customer responsibilities.',
     },
     breadcrumbLabel: 'Terms & Conditions',
     header: {
       title: 'Terms & Conditions',
       intro:
-        'These Terms & Conditions govern your use of InstantViral.ca, including browsing service pages, configuring and placing orders, making payments, tracking orders, and contacting support. Please read them carefully before using the website or placing an order.',
+        'These Terms & Conditions govern your use of NovaLikes.ca, including browsing service pages, configuring and placing orders, making payments, tracking orders, and contacting support. Please read them carefully before using the website or placing an order.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

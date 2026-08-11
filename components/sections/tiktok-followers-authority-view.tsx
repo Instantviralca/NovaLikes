@@ -55,7 +55,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy TikTok Followers Canada — alternating layout rhythm.
+ * Buy TikTok Followers — alternating layout rhythm.
  * 1 Text L / Image R → 2 Full width → 3 Image L / Text R → 4 Centered dashboard →
  * 5 Cards only → 6 FAQ → 7 Articles with thumbnails.
  */

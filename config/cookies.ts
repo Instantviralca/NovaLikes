@@ -25,7 +25,7 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current Cookie Policy configuration.
- * Essential purposes reflect core InstantViral commerce flows.
+ * Essential purposes reflect core NovaLikes commerce flows.
  * Cart state currently uses browser session storage (similar technology), not a named third-party cookie.
  * CSRF cookies are omitted until a CSRF cookie implementation is verified.
  */
@@ -47,7 +47,7 @@ export const cookieConfig: CookieConfig = {
         'Maintains selected packages and cart contents while you shop.',
       enabled: true,
       technologyNote:
-        'InstantViral currently stores cart state in browser session storage.',
+        'NovaLikes currently stores cart state in browser session storage.',
     },
     {
       id: 'checkout',
@@ -60,7 +60,7 @@ export const cookieConfig: CookieConfig = {
       id: 'session',
       label: 'Session',
       description:
-        'Supports session continuity while browsing InstantViral.ca and using cart or tracking flows.',
+        'Supports session continuity while browsing NovaLikes.ca and using cart or tracking flows.',
       enabled: true,
     },
     {

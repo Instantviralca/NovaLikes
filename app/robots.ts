@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: primary?.disallow ?? [],
     },
     sitemap: getSitemapUrl(),
-    host: 'instantviral.ca',
+    host: 'novalikes.com',
   };
 }

@@ -28,7 +28,7 @@ export function generatePackageFiles(brief: ArticleBrief): PackageFileContents {
   const seo = {
     slug: brief.slug,
     title: brief.workingTitle,
-    metaTitle: `${brief.workingTitle} | Learn | InstantViral`,
+    metaTitle: `${brief.workingTitle} | Learn | NovaLikes`,
     metaDescription: brief.shortAnswer.slice(0, 155),
     canonicalPath: `/learn/${brief.slug}`,
     primaryKeyword: brief.primaryKeyword,

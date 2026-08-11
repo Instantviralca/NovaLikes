@@ -34,7 +34,7 @@ export const ctaRegistry: CtaRecord[] = [
   {
     id: 'cta-browse-services',
     title: 'Browse growth services',
-    description: 'Explore InstantViral services for Instagram, TikTok, YouTube, and Facebook.',
+    description: 'Explore NovaLikes services for Instagram, TikTok, YouTube, and Facebook.',
     buttonLabel: 'Browse Services',
     destination: '/buy-instagram-followers',
     variant: 'primary',
@@ -129,7 +129,7 @@ export const ctaRegistry: CtaRecord[] = [
   {
     id: 'cta-explore-services',
     title: 'Explore services',
-    description: 'See the services InstantViral offers across supported platforms.',
+    description: 'See the services NovaLikes offers across supported platforms.',
     buttonLabel: exploreServices,
     destination: '/buy-instagram-followers',
     variant: 'secondary',
@@ -204,7 +204,7 @@ export const ctaRegistry: CtaRecord[] = [
   {
     id: 'cta-contact-informational',
     title: 'Contact us',
-    description: 'Reach the InstantViral support team for help with services or orders.',
+    description: 'Reach the NovaLikes support team for help with services or orders.',
     buttonLabel: 'Contact Support',
     destination: routes.contact,
     variant: 'informational',

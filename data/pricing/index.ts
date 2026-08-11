@@ -19,11 +19,11 @@ export {
   resolveServicePackages,
   getServicesWithPricing,
   getServicesMissingPricing,
-  getInstantViralProductCount,
+  getNovaLikesProductCount,
 } from '@/data/pricing/packages';
 export {
-  INSTANTVIRAL_PRODUCTS,
-  getInstantViralProductsByPlatformType,
-  getInstantViralProductById,
-  type InstantViralProduct,
-} from '@/data/pricing/instantviral-products';
+  NOVALIKES_PRODUCTS,
+  getNovaLikesProductsByPlatformType,
+  getNovaLikesProductById,
+  type NovaLikesProduct,
+} from '@/data/pricing/novalikes-products';

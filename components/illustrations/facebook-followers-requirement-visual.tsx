@@ -84,7 +84,7 @@ export function FacebookFollowersRequirementVisual({ className }: { className?: 
           <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
             Audience Insights
           </p>
-          <p className="mt-0.5 text-[11px] font-bold text-stone-800">Canada · Active community</p>
+          <p className="mt-0.5 text-[11px] font-bold text-stone-800">Active community</p>
         </div>
 
         <div className="rounded-xl border border-stone-100 bg-white px-2.5 py-2">

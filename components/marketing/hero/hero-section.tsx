@@ -16,7 +16,7 @@ import { getSafePublicReviews, summarizePublicReviews } from '@/lib/reviews';
 import { cn } from '@/lib/utils';
 
 /**
- * Homepage Hero — Buy Instagram Followers Canada.
+ * Homepage Hero — Buy Instagram Followers.
  * Every string comes from data/content/homepage.ts.
  */
 export function HeroSection({ className, visualSlot }: HeroSectionProps) {

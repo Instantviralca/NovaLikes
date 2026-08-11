@@ -9,7 +9,7 @@ export function ComparisonIllustration({ className }: IllustProps) {
       viewBox="0 0 560 360"
       className={cn('h-auto w-full', className)}
       role="img"
-      aria-label="InstantViral versus typical providers comparison cards"
+      aria-label="NovaLikes versus typical providers comparison cards"
     >
       <defs>
         <linearGradient id="cmp-bg" x1="0" y1="0" x2="1" y2="1">
@@ -27,7 +27,7 @@ export function ComparisonIllustration({ className }: IllustProps) {
         <rect x="294" y="64" width="230" height="248" rx="22" fill="#fff" />
       </g>
       <text x="151" y="88" textAnchor="middle" fontFamily="system-ui,sans-serif" fontSize="16" fontWeight="700" fill="#1c1917">
-        InstantViral
+        NovaLikes
       </text>
       <text x="409" y="104" textAnchor="middle" fontFamily="system-ui,sans-serif" fontSize="15" fontWeight="650" fill="#78716c">
         Typical Providers
@@ -55,7 +55,7 @@ export function TimelineIllustration({ className }: IllustProps) {
       viewBox="0 0 720 180"
       className={cn('h-auto w-full', className)}
       role="img"
-      aria-label="InstantViral growth timeline from 2018 to today"
+      aria-label="NovaLikes growth timeline from 2018 to today"
     >
       <defs>
         <linearGradient id="tl-line" x1="0" y1="0" x2="1" y2="0">

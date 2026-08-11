@@ -9,7 +9,7 @@ type CheckoutShellProps = {
 };
 
 /**
- * Minimal chrome for checkout.instantviral.ca — logo + secure checkout framing.
+ * Minimal chrome for checkout.novalikes.com — logo + secure checkout framing.
  */
 export function CheckoutShell({ children }: CheckoutShellProps) {
   const siteOrigin = getSiteOrigin();
@@ -23,7 +23,7 @@ export function CheckoutShell({ children }: CheckoutShellProps) {
             href={siteOrigin}
             className="text-sm font-medium text-[var(--text-secondary)] underline-offset-4 hover:text-[var(--text-primary)] hover:underline"
           >
-            Back to InstantViral
+            Back to NovaLikes
           </Link>
         </div>
       </header>

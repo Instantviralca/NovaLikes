@@ -21,7 +21,7 @@ function readPersistedPurchaseKeys(): Set<string> {
   const keys = new Set<string>();
   if (typeof window === 'undefined') return keys;
   try {
-    const raw = window.sessionStorage.getItem('instantviral.analytics.purchase.v1');
+    const raw = window.sessionStorage.getItem('novalikes.analytics.purchase.v1');
     if (!raw) return keys;
     const parsed = JSON.parse(raw) as string[];
     if (Array.isArray(parsed)) parsed.forEach((key) => keys.add(key));
@@ -37,7 +37,7 @@ function persistPurchaseKey(key: string): void {
     const keys = readPersistedPurchaseKeys();
     keys.add(key);
     window.sessionStorage.setItem(
-      'instantviral.analytics.purchase.v1',
+      'novalikes.analytics.purchase.v1',
       JSON.stringify([...keys]),
     );
   } catch {
@@ -92,7 +92,7 @@ export function resetDuplicateGuardsForTests(): void {
   guards.clear();
   if (typeof window !== 'undefined') {
     try {
-      window.sessionStorage.removeItem('instantviral.analytics.purchase.v1');
+      window.sessionStorage.removeItem('novalikes.analytics.purchase.v1');
     } catch {
       // ignore
     }

@@ -256,20 +256,20 @@ export async function ServicePageView({ service }: ServicePageViewProps) {
             ? [
                 { label: 'Homepage', href: routes.home },
                 {
-                  label: 'Buy TikTok Followers Canada',
+                  label: 'Buy TikTok Followers',
                   href: '/buy-tiktok-followers',
                 },
-                { label: 'Buy TikTok Views Canada', href: '/buy-tiktok-views' },
+                { label: 'Buy TikTok Views', href: '/buy-tiktok-views' },
                 { label: 'Support Page', href: routes.contact },
               ]
             : isTtViews
               ? [
                   { label: 'Homepage', href: routes.home },
                   {
-                    label: 'Buy TikTok Followers Canada',
+                    label: 'Buy TikTok Followers',
                     href: '/buy-tiktok-followers',
                   },
-                  { label: 'Buy TikTok Likes Canada', href: '/buy-tiktok-likes' },
+                  { label: 'Buy TikTok Likes', href: '/buy-tiktok-likes' },
                   { label: 'Support Page', href: routes.contact },
                 ]
               : isYtSubscribers
@@ -288,11 +288,11 @@ export async function ServicePageView({ service }: ServicePageViewProps) {
                   ? [
                       { label: 'Homepage', href: routes.home },
                       {
-                        label: 'Buy Facebook Page Likes Canada',
+                        label: 'Buy Facebook Page Likes',
                         href: '/buy-facebook-page-likes',
                       },
                       {
-                        label: 'Buy Facebook Post Likes Canada',
+                        label: 'Buy Facebook Post Likes',
                         href: '/buy-facebook-post-likes',
                       },
                       { label: 'Contact', href: routes.contact },
@@ -610,14 +610,14 @@ export async function ServicePageView({ service }: ServicePageViewProps) {
 
       {useProductionOrder ? (
         <>
-          {vm.whyInstantViral.items.length > 0 ? (
+          {vm.whyNovaLikes.items.length > 0 ? (
             <ServiceFeatureGrid
-              id={vm.whyInstantViral.id}
-              title={vm.whyInstantViral.title}
-              description={vm.whyInstantViral.description}
-              items={vm.whyInstantViral.items}
-              cta={vm.whyInstantViral.cta}
-              ariaLabel="Why choose InstantViral"
+              id={vm.whyNovaLikes.id}
+              title={vm.whyNovaLikes.title}
+              description={vm.whyNovaLikes.description}
+              items={vm.whyNovaLikes.items}
+              cta={vm.whyNovaLikes.cta}
+              ariaLabel="Why choose NovaLikes"
               className="surface-muted"
             />
           ) : null}

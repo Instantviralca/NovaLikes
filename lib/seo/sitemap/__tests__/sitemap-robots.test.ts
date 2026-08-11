@@ -31,23 +31,23 @@ describe('Sitemap & Robots Finalization', () => {
   const urls = entries.map((entry) => entry.url);
 
   it('uses the production hostname only', () => {
-    expect(urls.every((url) => url.startsWith('https://instantviral.ca'))).toBe(
+    expect(urls.every((url) => url.startsWith('https://novalikes.com'))).toBe(
       true,
     );
-    expect(validateSitemapUrl('http://instantviral.ca/').valid).toBe(false);
+    expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(false);
     expect(validateSitemapUrl('https://localhost/').valid).toBe(false);
     expect(
-      validateSitemapUrl('https://instantviral-next.vercel.app/').valid,
+      validateSitemapUrl('https://novalikes-next.vercel.app/').valid,
     ).toBe(false);
-    expect(validateSitemapUrl('https://preview.instantviral.ca/').valid).toBe(
+    expect(validateSitemapUrl('https://preview.novalikes.com/').valid).toBe(
       false,
     );
   });
 
   it('includes the homepage and all 12 approved service pages', () => {
-    expect(urls).toContain('https://instantviral.ca');
+    expect(urls).toContain('https://novalikes.com');
     for (const slug of APPROVED_SERVICE_SLUGS) {
-      expect(urls).toContain(`https://instantviral.ca/${slug}`);
+      expect(urls).toContain(`https://novalikes.com/${slug}`);
     }
     expect(
       urls.filter((url) => {
@@ -74,7 +74,7 @@ describe('Sitemap & Robots Finalization', () => {
       '/disclaimer',
     ]) {
       expect(urls).toContain(
-        route === '/' ? 'https://instantviral.ca' : `https://instantviral.ca${route}`,
+        route === '/' ? 'https://novalikes.com' : `https://novalikes.com${route}`,
       );
     }
   });
@@ -97,21 +97,21 @@ describe('Sitemap & Robots Finalization', () => {
       expect(urls.some((url) => url.includes(route))).toBe(false);
     }
     // Learn hub and reviews are indexable production routes.
-    expect(urls).toContain('https://instantviral.ca/learn');
-    expect(urls).toContain('https://instantviral.ca/reviews');
+    expect(urls).toContain('https://novalikes.com/learn');
+    expect(urls).toContain('https://novalikes.com/reviews');
     expect(findSkippedRoutesInSitemap(entries)).toHaveLength(0);
     expect(findNoindexSitemapEntries(entries)).toHaveLength(0);
   });
 
   it('includes published Learn articles when Learn sitemap is enabled', () => {
     expect(urls).toContain(
-      'https://instantviral.ca/learn/how-to-grow-instagram-followers-organically',
+      'https://novalikes.com/learn/how-to-grow-instagram-followers-organically',
     );
-    expect(urls).toContain('https://instantviral.ca/learn/instagram-algorithm-explained');
+    expect(urls).toContain('https://novalikes.com/learn/instagram-algorithm-explained');
     expect(urls).toContain(
-      'https://instantviral.ca/learn/how-to-get-more-instagram-followers-without-ads',
+      'https://novalikes.com/learn/how-to-get-more-instagram-followers-without-ads',
     );
-    expect(urls.some((url) => url.includes('/learn/buy-instagram-followers-canada'))).toBe(false);
+    expect(urls.some((url) => url.includes('/learn/buy-instagram-followers-global'))).toBe(false);
   });
 
   it('has no duplicate sitemap URLs', () => {
@@ -124,8 +124,8 @@ describe('Sitemap & Robots Finalization', () => {
   });
 
   it('rejects invalid trailing-slash variants', () => {
-    expect(validateSitemapUrl('https://instantviral.ca/faq/').valid).toBe(false);
-    expect(validateSitemapUrl('https://instantviral.ca/').valid).toBe(true);
+    expect(validateSitemapUrl('https://novalikes.com/faq/').valid).toBe(false);
+    expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(true);
   });
 
   it('uses registry lastModified values (not build-time spam)', () => {
@@ -155,8 +155,8 @@ describe('Sitemap & Robots Finalization', () => {
   it('configures robots with correct sitemap and disallow rules', () => {
     const report = validateRobotsRules();
     expect(report.valid).toBe(true);
-    expect(getSitemapUrl()).toBe('https://instantviral.ca/sitemap.xml');
-    expect(report.sitemapUrl).toBe('https://instantviral.ca/sitemap.xml');
+    expect(getSitemapUrl()).toBe('https://novalikes.com/sitemap.xml');
+    expect(report.sitemapUrl).toBe('https://novalikes.com/sitemap.xml');
 
     const rules = getRobotsRules()[0]!;
     for (const path of ROBOTS_DISALLOW) {

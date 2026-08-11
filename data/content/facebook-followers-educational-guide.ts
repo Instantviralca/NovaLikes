@@ -174,7 +174,7 @@ export const FACEBOOK_FOLLOWERS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
       links: [
         { label: 'Homepage', href: '/' },
         {
-          label: 'Buy Facebook Page Likes Canada',
+          label: 'Buy Facebook Page Likes',
           href: '/buy-facebook-page-likes',
         },
         { label: 'Contact', href: '/contact' },

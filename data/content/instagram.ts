@@ -5,7 +5,7 @@ const PRICING_ANCHOR = '#pricing-packages';
 const HOW_IT_WORKS_ANCHOR = '#how-it-works';
 
 /**
- * Buy Instagram Followers Canada — Document 09.11 production content.
+ * Buy Instagram Followers — Document 09.11 production content.
  * Other Instagram services remain factory placeholders until their production docs land.
  */
 function buildBuyInstagramFollowersContent(): ServiceContent {
@@ -13,7 +13,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
     slug: 'buy-instagram-followers',
     platformId: 'instagram',
     seo: {
-      title: 'Instagram Followers Packages & Pricing | InstantViral',
+      title: 'Instagram Followers Packages & Pricing | NovaLikes',
       description:
         'Compare Instagram follower packages, pricing, delivery details and available plan sizes. Choose an option that matches your account and growth goals.',
     },
@@ -46,10 +46,10 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
         { id: 'ig-f-trust-support', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/instagram-dashboard.svg',
+        src: '/assets/images/illustrations/buy-instagram-followers-hero-v2.webp',
         alt: 'Instagram profile dashboard showing available follower packages',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -57,7 +57,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       title: 'Instagram Followers Pricing',
       description:
         'Select a package quantity to view its price and included order details. Delivery availability, estimated timing and refill eligibility are shown before checkout for the option you select.',
-      purpose: 'Present real InstantViral.ca follower packages',
+      purpose: 'Present real NovaLikes.ca follower packages',
       primaryKeyword: 'Instagram Followers Pricing',
       suggestedWordCount: 40,
       packageIds: [],
@@ -73,9 +73,9 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       suggestedWordCount: 40,
       items: [],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral',
-      title: 'Why Order From InstantViral',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes',
+      title: 'Why Order From NovaLikes',
       description: '',
       purpose: 'Unused on packages conversion layout',
       primaryKeyword: 'instagram followers packages',
@@ -144,7 +144,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       id: 'ig-followers-reviews',
       title: 'Recent Customer Experiences',
       description:
-        'Read feedback from customers who used our Instagram package service and completed their orders through InstantViral.',
+        'Read feedback from customers who used our Instagram package service and completed their orders through NovaLikes.',
       purpose: 'Social proof from approved customer reviews',
       testimonialIds: [],
     },
@@ -200,9 +200,9 @@ function buildBuyInstagramLikesContent(): ServiceContent {
     slug: 'buy-instagram-likes',
     platformId: 'instagram',
     seo: {
-      title: 'Buy Instagram Likes | InstantViral',
+      title: 'Buy Instagram Likes | NovaLikes',
       description:
-        'Buy Instagram likes through InstantViral with clear package options, delivery details, secure checkout, order tracking and a public post URL only.',
+        'Buy Instagram likes through NovaLikes with clear package options, delivery details, secure checkout, order tracking and a public post URL only.',
     },
     hero: {
       eyebrow: 'INSTAGRAM LIKES PRICING',
@@ -214,11 +214,11 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       supportingKeywords: [
         'Buy Instagram Likes',
         'Buy Real Instagram Likes',
-        'Instagram Likes Canada',
+        'Instagram Likes',
         'Instagram Likes Pricing',
         'Instagram Likes Delivery',
         'Instagram Likes Order Tracking',
-        'Instagram Likes Packages Canada',
+        'Instagram Likes Packages',
       ],
       suggestedWordCount: 70,
       primaryCta: {
@@ -236,10 +236,10 @@ function buildBuyInstagramLikesContent(): ServiceContent {
         { id: 'ig-l-trust-support', label: 'Professional Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/instagram-dashboard.svg',
+        src: '/assets/images/illustrations/buy-instagram-likes-hero-v2.webp',
         alt: 'Instagram post engagement dashboard showing likes packages and delivery tracking',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -247,7 +247,7 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       title: 'Instagram Likes Pricing',
       description:
         'Select a real likes package quantity and price. Delivery timing is confirmed before checkout for the option you choose.',
-      purpose: 'Present real InstantViral.ca likes packages',
+      purpose: 'Present real NovaLikes.ca likes packages',
       primaryKeyword: 'Instagram Likes Pricing',
       suggestedWordCount: 40,
       packageIds: [],
@@ -263,9 +263,9 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       suggestedWordCount: 40,
       items: [],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-likes',
-      title: 'Why Order From InstantViral',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-likes',
+      title: 'Why Order From NovaLikes',
       description: '',
       purpose: 'Unused on packages conversion layout',
       primaryKeyword: 'buy instagram likes',
@@ -376,31 +376,31 @@ function buildBuyInstagramLikesContent(): ServiceContent {
 }
 
 /**
- * Buy Instagram Views Canada — Document 09.13 production content.
+ * Buy Instagram Views — Document 09.13 production content.
  */
 function buildBuyInstagramViewsContent(): ServiceContent {
   return {
     slug: 'buy-instagram-views',
     platformId: 'instagram',
     seo: {
-      title: 'Buy Instagram Views Canada | InstantViral',
+      title: 'Buy Instagram Views | NovaLikes',
       description:
-        'Buy Instagram views in Canada with clear Reel and video package options, delivery estimates, secure checkout, order tracking and no password required.',
+        'Buy Instagram views worldwide with clear Reel and video package options, delivery estimates, secure checkout, order tracking and no password required.',
     },
     hero: {
       eyebrow: 'INSTAGRAM VIDEO GROWTH SERVICES FOR CANADA',
-      title: 'Buy Instagram Views Canada',
+      title: 'Buy Instagram Views',
       description:
-        'Help Reels and videos get started more often with real Views packages. Compare the InstantViral.ca options, confirm delivery timing, and order with a public video URL—no Instagram password required.',
-      purpose: 'Convert for Instagram views packages in Canada',
-      primaryKeyword: 'buy Instagram views Canada',
+        'Help Reels and videos get started more often with real Views packages. Compare the NovaLikes.ca options, confirm delivery timing, and order with a public video URL—no Instagram password required.',
+      purpose: 'Convert for Instagram views packages worldwide',
+      primaryKeyword: 'buy Instagram views',
       supportingKeywords: [
-        'Instagram views Canada',
+        'Instagram views',
         'Buy Instagram video views',
         'Buy Instagram Reel views',
-        'Canadian Instagram views',
+        'Instagram views',
         'Instagram views packages',
-        'Instagram video promotion Canada',
+        'Instagram video promotion',
       ],
       suggestedWordCount: 120,
       primaryCta: {
@@ -418,10 +418,10 @@ function buildBuyInstagramViewsContent(): ServiceContent {
         { id: 'ig-v-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/instagram-dashboard.svg',
+        src: '/assets/images/illustrations/buy-instagram-views-hero-v2.webp',
         alt: 'Instagram views growth service dashboard illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -429,7 +429,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       title: 'Choose Your Instagram Views Package',
       description:
         'Select a package quantity and price. Delivery estimates and package details are shown before checkout.',
-      purpose: 'Present real InstantViral.ca views packages',
+      purpose: 'Present real NovaLikes.ca views packages',
       primaryKeyword: 'Instagram views packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -445,12 +445,12 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       suggestedWordCount: 40,
       items: [],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-views',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-views',
       title: 'A Clearer Way to Buy Instagram Views',
       description: '',
       purpose: 'Unused on packages ecommerce layout',
-      primaryKeyword: 'Instagram video promotion Canada',
+      primaryKeyword: 'Instagram video promotion',
       suggestedWordCount: 40,
       items: [],
     },
@@ -492,7 +492,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       title: 'Common Questions',
       description: 'Quick answers about packages, delivery and checkout.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy Instagram views Canada',
+      primaryKeyword: 'buy Instagram views',
       faqIds: [
         'faq-ig-views-password',
         'faq-ig-views-links',
@@ -534,30 +534,30 @@ function buildBuyInstagramViewsContent(): ServiceContent {
 }
 
 /**
- * Buy Instagram Comments Canada — Document 09.14 production content.
+ * Buy Instagram Comments — Document 09.14 production content.
  */
 function buildBuyInstagramCommentsContent(): ServiceContent {
   return {
     slug: 'buy-instagram-comments',
     platformId: 'instagram',
     seo: {
-      title: 'Buy Instagram Comments Canada | InstantViral',
+      title: 'Buy Instagram Comments | NovaLikes',
       description:
-        'Buy Instagram comments in Canada with clear package options, a public post URL, secure checkout, delivery details and order tracking through InstantViral.',
+        'Buy Instagram comments worldwide with clear package options, a public post URL, secure checkout, delivery details and order tracking through NovaLikes.',
     },
     hero: {
       eyebrow: 'INSTAGRAM COMMENT SERVICE FOR CANADA',
-      title: 'Buy Instagram Comments Canada',
+      title: 'Buy Instagram Comments',
       description:
         'Increase meaningful engagement with comments that help your posts look more active and encourage genuine conversations. Choose a package, place your order using only your public post URL, and monitor delivery through secure order tracking.',
       purpose: 'Convert visitors searching for Instagram comments packages',
-      primaryKeyword: 'buy Instagram comments Canada',
+      primaryKeyword: 'buy Instagram comments',
       supportingKeywords: [
         'Instagram comments packages',
         'Increase Instagram comments',
         'Instagram comment service',
         'More Instagram engagement',
-        'Buy Instagram comments Canada',
+        'Buy Instagram comments',
       ],
       suggestedWordCount: 90,
       primaryCta: {
@@ -576,10 +576,10 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
         { id: 'ig-c-trust-support', label: 'Professional Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/instagram-dashboard.svg',
+        src: '/assets/images/illustrations/buy-instagram-comments-hero-v2.webp',
         alt: 'Instagram comments conversation and community engagement dashboard',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -587,7 +587,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
       title: 'Instagram Comments Packages',
       description:
         'Compare High Quality and Premium Instagram Comments packages. Pick a quantity, review delivery details, and order with a public post URL only.',
-      purpose: 'Present real InstantViral.ca comments packages',
+      purpose: 'Present real NovaLikes.ca comments packages',
       primaryKeyword: 'Instagram comments packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -629,8 +629,8 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-comments',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-comments',
       title: 'A Clearer Way to Buy Instagram Comments',
       description:
         'Every package is built for conversation-focused engagement: public posts only, transparent delivery details, and checkout that never asks for your Instagram password.',
@@ -666,7 +666,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
           id: 'ig-c-why-checkout',
           title: 'Secure Checkout',
           description:
-            'Review package details, confirm pricing, and pay through InstantViral’s secure checkout flow.',
+            'Review package details, confirm pricing, and pay through NovaLikes’s secure checkout flow.',
         },
         {
           id: 'ig-c-why-support',
@@ -736,7 +736,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
       id: 'comment-type-and-link',
       title: 'What We Need to Process Your Order',
       description:
-        'Comments orders stay simple: a public Instagram post, the correct URL, a public account, and a valid email for tracking. InstantViral never asks for your Instagram password.',
+        'Comments orders stay simple: a public Instagram post, the correct URL, a public account, and a valid email for tracking. NovaLikes never asks for your Instagram password.',
       purpose: 'Explain comments order requirements',
       primaryKeyword: 'Instagram comments',
       suggestedWordCount: 100,
@@ -768,8 +768,8 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
     },
     reviews: {
       id: 'ig-comments-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Social proof from approved customer reviews',
       testimonialIds: [],
     },
@@ -799,7 +799,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
       purpose: 'Internal links to sibling Instagram offers',
       serviceSlugs: ['buy-instagram-followers', 'buy-instagram-likes', 'buy-instagram-views'],
       cta: {
-        label: 'Back to InstantViral homepage',
+        label: 'Back to NovaLikes homepage',
         href: '/',
       },
     },

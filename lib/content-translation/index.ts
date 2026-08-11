@@ -33,7 +33,7 @@ export const CANONICAL_CONTENT_LOCALE = DEFAULT_LOCALE;
  * Planned locales for future expansion.
  * Only the canonical locale is treated as live; others stay disabled in hreflang.
  */
-export const PLANNED_CONTENT_LOCALES = ['en-CA', 'fr-CA'] as const;
+export const PLANNED_CONTENT_LOCALES = ['en', 'fr'] as const;
 
 export type PlannedContentLocale = (typeof PLANNED_CONTENT_LOCALES)[number];
 
@@ -48,12 +48,12 @@ export function fingerprintTranslatableFields(fields: TranslatableFields): strin
 export function buildCanonicalFields(brief: ArticleBrief): TranslatableFields {
   return {
     title: brief.workingTitle,
-    metaTitle: `${brief.workingTitle} | Learn | InstantViral`,
+    metaTitle: `${brief.workingTitle} | Learn | NovaLikes`,
     metaDescription: brief.shortAnswer.slice(0, 160),
     slug: brief.slug,
     articleBody: '',
     faqs: brief.faqOpportunities,
-    imageAltText: `${brief.workingTitle} — InstantViral Learn featured image`,
+    imageAltText: `${brief.workingTitle} — NovaLikes Learn featured image`,
     socialPosts: '',
     newsletterCopy: brief.shortAnswer,
   };

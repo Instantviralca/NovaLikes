@@ -2,7 +2,6 @@ import { describe, expect, it } from 'vitest';
 
 import {
   isBlockedCountryCode,
-  isGeoBlockExemptPath,
   shouldBlockRequest,
 } from '@/lib/geo/blocked-countries';
 
@@ -13,70 +12,17 @@ function headersWithCountry(code: string | null): Headers {
 }
 
 describe('geo blocked countries', () => {
-  it('blocks PK IN BD NG', () => {
-    expect(isBlockedCountryCode('PK')).toBe(true);
-    expect(isBlockedCountryCode('in')).toBe(true);
-    expect(isBlockedCountryCode('BD')).toBe(true);
-    expect(isBlockedCountryCode('NG')).toBe(true);
+  it('blocks no countries', () => {
+    expect(isBlockedCountryCode('PK')).toBe(false);
+    expect(isBlockedCountryCode('IN')).toBe(false);
     expect(isBlockedCountryCode('CA')).toBe(false);
   });
 
-  it('exempts admin api seo and unavailable', () => {
-    expect(isGeoBlockExemptPath('/admin/login')).toBe(true);
-    expect(isGeoBlockExemptPath('/api/analytics/collect')).toBe(true);
-    expect(isGeoBlockExemptPath('/unavailable')).toBe(true);
-    expect(isGeoBlockExemptPath('/unsubscribe')).toBe(true);
-    expect(isGeoBlockExemptPath('/sitemap.xml')).toBe(true);
-    expect(isGeoBlockExemptPath('/robots.txt')).toBe(true);
-    expect(isGeoBlockExemptPath('/llms.txt')).toBe(true);
-    expect(isGeoBlockExemptPath('/')).toBe(false);
-  });
-
-  it('allows sitemap for blocked countries', () => {
-    expect(
-      shouldBlockRequest({
-        pathname: '/sitemap.xml',
-        headers: headersWithCountry('PK'),
-      }),
-    ).toBe(false);
-  });
-
-  it('blocks public paths for blocked countries', () => {
+  it('allows public paths for all countries', () => {
     expect(
       shouldBlockRequest({
         pathname: '/',
         headers: headersWithCountry('PK'),
-      }),
-    ).toBe(true);
-    expect(
-      shouldBlockRequest({
-        pathname: '/buy-instagram-followers',
-        headers: headersWithCountry('IN'),
-      }),
-    ).toBe(true);
-  });
-
-  it('allows unknown/local country and admin', () => {
-    expect(
-      shouldBlockRequest({
-        pathname: '/',
-        headers: headersWithCountry(null),
-      }),
-    ).toBe(false);
-    expect(
-      shouldBlockRequest({
-        pathname: '/admin/dashboard',
-        headers: headersWithCountry('PK'),
-      }),
-    ).toBe(false);
-  });
-
-  it('respects IV_GEO_BLOCK_DISABLED', () => {
-    expect(
-      shouldBlockRequest({
-        pathname: '/',
-        headers: headersWithCountry('PK'),
-        env: { IV_GEO_BLOCK_DISABLED: '1' } as unknown as NodeJS.ProcessEnv,
       }),
     ).toBe(false);
   });

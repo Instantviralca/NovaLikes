@@ -16,7 +16,7 @@ function formatDisplayDate(isoDate: string | undefined): string | undefined {
   if (!isoDate) return undefined;
   const parsed = new Date(`${isoDate}T00:00:00Z`);
   if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -36,7 +36,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
   const eligibilityBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Not every InstantViral order is refundable. Eligible refunds depend on InstantViral’s operational review and factors such as:`,
+      text: `Not every NovaLikes order is refundable. Eligible refunds depend on NovaLikes’s operational review and factors such as:`,
     },
     {
       type: 'list',
@@ -58,7 +58,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
   } else {
     eligibilityBlocks.push({
       type: 'paragraph',
-      text: 'InstantViral does not publish an unconditional money-back promise on this page. Any eligible money-back or refund window must come from verified operational policy and the conditions shown for the selected service and package. InstantViral will not invent a refund timeframe for public display.',
+      text: 'NovaLikes does not publish an unconditional money-back promise on this page. Any eligible money-back or refund window must come from verified operational policy and the conditions shown for the selected service and package. NovaLikes will not invent a refund timeframe for public display.',
     });
   }
 
@@ -70,7 +70,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
   const processingBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} reviews refund and refill requests after the required order details are received. InstantViral does not promise approval, a fixed outcome, or uninterrupted processing for every request.`,
+      text: `${operatingName} reviews refund and refill requests after the required order details are received. NovaLikes does not promise approval, a fixed outcome, or uninterrupted processing for every request.`,
     },
   ];
 
@@ -82,14 +82,14 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
   } else {
     processingBlocks.push({
       type: 'paragraph',
-      text: 'A specific public processing-time SLA has not been configured. InstantViral will communicate about eligible requests through support after reviewing the order ID, checkout email, and issue description. Do not treat unpublished timeframes as guarantees.',
+      text: 'A specific public processing-time SLA has not been configured. NovaLikes will communicate about eligible requests through support after reviewing the order ID, checkout email, and issue description. Do not treat unpublished timeframes as guarantees.',
     });
   }
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `For refund or refill help, contact InstantViral support with your order ID, checkout email, and a clear description of the issue.`,
+      text: `For refund or refill help, contact NovaLikes support with your order ID, checkout email, and a clear description of the issue.`,
     },
     {
       type: 'paragraph',
@@ -141,7 +141,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: `This policy works together with the Terms & Conditions (${domainHost}${termsPath}) and the Privacy Policy (${domainHost}${privacyPath}). Package-specific delivery estimates, features, and refill eligibility shown on service pages come from InstantViral’s real package pricing data.`,
+          text: `This policy works together with the Terms & Conditions (${domainHost}${termsPath}) and the Privacy Policy (${domainHost}${privacyPath}). Package-specific delivery estimates, features, and refill eligibility shown on service pages come from NovaLikes’s real package pricing data.`,
         },
       ],
     },
@@ -158,7 +158,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Refunds are generally not available in situations such as the following, subject to InstantViral’s operational review:',
+          text: 'Refunds are generally not available in situations such as the following, subject to NovaLikes’s operational review:',
         },
         {
           type: 'list',
@@ -173,7 +173,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'These examples do not create an exhaustive list. InstantViral may decline a refund where the operational review shows the request is outside eligible circumstances.',
+          text: 'These examples do not create an exhaustive list. NovaLikes may decline a refund where the operational review shows the request is outside eligible circumstances.',
         },
       ],
     },
@@ -184,11 +184,11 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'A partial refund may be considered when InstantViral’s operational process supports it — for example, when only part of an order was completed, when an order is marked partial, or when a reviewed request otherwise warrants limited credit.',
+          text: 'A partial refund may be considered when NovaLikes’s operational process supports it — for example, when only part of an order was completed, when an order is marked partial, or when a reviewed request otherwise warrants limited credit.',
         },
         {
           type: 'paragraph',
-          text: 'Partial refunds are not automatic and are not available for every order. Any partial refund amount depends on the reviewed order status, package terms, and InstantViral’s operational decision.',
+          text: 'Partial refunds are not automatic and are not available for every order. Any partial refund amount depends on the reviewed order status, package terms, and NovaLikes’s operational decision.',
         },
       ],
     },
@@ -203,7 +203,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Cancellation or refund may not be possible once processing has started or the order has been completed. InstantViral will review cancellation requests according to order status and operational policy.',
+          text: 'Cancellation or refund may not be possible once processing has started or the order has been completed. NovaLikes will review cancellation requests according to order status and operational policy.',
         },
       ],
     },
@@ -218,7 +218,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral does not invent refill periods on this page. If a package does not display refill eligibility, assume refill protection is not included for that package unless InstantViral later confirms otherwise in the package data.',
+          text: 'NovaLikes does not invent refill periods on this page. If a package does not display refill eligibility, assume refill protection is not included for that package unless NovaLikes later confirms otherwise in the package data.',
         },
         {
           type: 'paragraph',
@@ -241,7 +241,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
             'Providing an accurate public username or URL for the selected service',
             'Keeping the destination public and accessible as required for fulfilment and any eligible refill',
             'Reviewing package terms, delivery estimates, and refill eligibility before payment',
-            'Following InstantViral instructions related to the order',
+            'Following NovaLikes instructions related to the order',
             'Submitting refund or refill requests with complete and truthful information',
           ],
         },
@@ -258,7 +258,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `To request help with a refund or refill, contact InstantViral support through the Contact page at ${domainHost}${contactPath} and include only the information needed to locate and review the order:`,
+          text: `To request help with a refund or refill, contact NovaLikes support through the Contact page at ${domainHost}${contactPath} and include only the information needed to locate and review the order:`,
         },
         {
           type: 'list',
@@ -270,7 +270,7 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral will verify the order details and review the request against the applicable package terms and operational policy. A request does not guarantee approval, a refund amount, a refill, or any other specific outcome.',
+          text: 'NovaLikes will verify the order details and review the request against the applicable package terms and operational policy. A request does not guarantee approval, a refund amount, a refill, or any other specific outcome.',
         },
       ],
     },
@@ -296,15 +296,15 @@ export function getRefundPolicyContent(
     id: 'refund-policy',
     path: routes.refundPolicy,
     seo: {
-      title: 'Refund Policy | InstantViral Canada',
+      title: 'Refund Policy | NovaLikes',
       description:
-        'Read the InstantViral refund policy, including eligibility, cancellations, partial refunds, refill coverage, and customer responsibilities.',
+        'Read the NovaLikes refund policy, including eligibility, cancellations, partial refunds, refill coverage, and customer responsibilities.',
     },
     breadcrumbLabel: 'Refund Policy',
     header: {
       title: 'Refund Policy',
       intro:
-        'This Refund Policy explains when InstantViral may consider refunds, partial refunds, cancellations, and refill coverage for eligible packages. Not every order is refundable. Review the package terms shown before checkout and contact support if you need help with an existing order.',
+        'This Refund Policy explains when NovaLikes may consider refunds, partial refunds, cancellations, and refill coverage for eligible packages. Not every order is refundable. Review the package terms shown before checkout and contact support if you need help with an existing order.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

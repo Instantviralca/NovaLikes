@@ -61,7 +61,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy Facebook Post Likes Canada — full authority layout (Sections 1–19).
+ * Buy Facebook Post Likes — full authority layout (Sections 1–19).
  */
 export function FacebookPostLikesAuthorityView({
   service,
@@ -189,7 +189,7 @@ export function FacebookPostLikesAuthorityView({
         trustBadges={[
           'Secure Checkout',
           'Order Tracking',
-          'Canadian Support',
+          'Customer Support',
           'Public Facebook Post URL',
         ]}
         className="[&_p:last-child]:text-white/70"

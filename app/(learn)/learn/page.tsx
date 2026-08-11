@@ -24,11 +24,11 @@ export async function generateMetadata() {
   const title =
     typeof base.title === 'string'
       ? base.title
-      : 'Learn Center | InstantViral';
+      : 'Learn Center | NovaLikes';
   const description =
     typeof base.description === 'string'
       ? base.description
-      : 'Practical InstantViral Learn guides for social growth.';
+      : 'Practical NovaLikes Learn guides for social growth.';
 
   return buildLearnDiscoveryMetadata({
     title,

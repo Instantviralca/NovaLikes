@@ -78,7 +78,7 @@ function makeArticle(
     authorId: 'missing-author',
     featuredImage: {
       src: '/og-default.png',
-      alt: 'Abstract InstantViral branded cover',
+      alt: 'Abstract NovaLikes branded cover',
       width: 1600,
       height: 900,
     },
@@ -87,7 +87,7 @@ function makeArticle(
     updatedAt: '2026-06-15T00:00:00.000Z',
     showModifiedDate: true,
     seo: {
-      title: 'Test Growth Guide | Learn | InstantViral',
+      title: 'Test Growth Guide | Learn | NovaLikes',
       description: 'A test excerpt for the article template.',
       canonicalPath: '/learn/test-growth-guide',
     },
@@ -256,7 +256,7 @@ describe('Article Template System', () => {
   it('uses a self-referencing canonical URL', () => {
     const metadata = getArticleMetadata(makeArticle());
     expect(metadata.alternates?.canonical).toBe(
-      'https://instantviral.ca/learn/test-growth-guide',
+      'https://novalikes.com/learn/test-growth-guide',
     );
   });
 

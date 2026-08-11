@@ -17,7 +17,7 @@ export function HeroStats({ items, className }: HeroStatsProps) {
     <FadeUp immediate delay={0.24} className={cn(className)}>
       <dl
         className="grid grid-cols-2 gap-3 sm:grid-cols-4"
-        aria-label="InstantViral verified metrics"
+        aria-label="NovaLikes verified metrics"
       >
         {items.map((item) => (
           <div

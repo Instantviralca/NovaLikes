@@ -37,7 +37,7 @@ export function AdminLayout({ children, className }: AdminLayoutProps) {
     <div className={cn('min-h-screen bg-muted/30 text-foreground', className)}>
       <div className="mx-auto flex min-h-screen max-w-[1600px]">
         <aside className="sticky top-0 hidden h-screen w-60 shrink-0 border-r bg-background lg:block">
-          <div className="border-b px-4 py-4 text-sm font-semibold">InstantViral Admin</div>
+          <div className="border-b px-4 py-4 text-sm font-semibold">NovaLikes Admin</div>
           <AdminSidebar />
         </aside>
 
@@ -52,7 +52,7 @@ export function AdminLayout({ children, className }: AdminLayoutProps) {
 
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
         <SheetContent side="left" className="w-72 p-0">
-          <div className="border-b px-4 py-4 text-sm font-semibold">InstantViral Admin</div>
+          <div className="border-b px-4 py-4 text-sm font-semibold">NovaLikes Admin</div>
           <AdminSidebar onNavigate={() => setMobileOpen(false)} />
         </SheetContent>
       </Sheet>

@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const BASE = 'https://instantviral.ca';
+const BASE = 'https://novalikes.com';
 
 function abs(pathname) {
   if (!pathname.startsWith('/')) pathname = `/${pathname}`;
@@ -160,20 +160,20 @@ function groupServicesMarkdown() {
 }
 
 function buildLlmsTxt() {
-  return `# InstantViral
+  return `# NovaLikes
 
-> InstantViral is a Canada-focused social media growth platform offering package-based services for Instagram, TikTok, YouTube, and Facebook, plus educational Learn Center resources.
+> NovaLikes is a worldwide social media growth platform offering package-based services for Instagram, TikTok, YouTube, and Facebook, plus educational Learn Center resources.
 
-InstantViral helps creators, businesses, agencies, and brands compare growth packages, complete secure checkout using public profile or content URLs only, and review published purchasing policies. Primary language is English. Business type: social media growth services and educational content.
+NovaLikes helps creators, businesses, agencies, and brands compare growth packages, complete secure checkout using public profile or content URLs only, and review published purchasing policies. Primary language is English. Business type: social media growth services and educational content.
 
 ## Site
 
-- Company name: InstantViral
+- Company name: NovaLikes
 - Website: ${abs('/')}
-- Country: Canada
+- Audience: Worldwide
 - Primary language: English
 - Business type: Social media growth services and educational content
-- Contact email: support@instantviral.ca
+- Contact email: support@novalikes.com
 
 ## Commercial Services
 
@@ -196,7 +196,7 @@ ${groupServicesMarkdown()}
 
 ## Company
 
-- [About InstantViral](${abs('/about')}): InstantViral presents transparent social media growth packages with secure checkout, public-URL ordering (no passwords), customer support, and published policies. The About page describes InstantViral as serving customers since 2018.
+- [About NovaLikes](${abs('/about')}): NovaLikes presents transparent social media growth packages with secure checkout, public-URL ordering (no passwords), customer support, and published policies. The About page describes NovaLikes as serving customers since 2018.
 
 ## Optional
 
@@ -230,25 +230,25 @@ function buildLlmsFullTxt() {
     })
     .join('\n');
 
-  return `# InstantViral — Full AI Index
+  return `# NovaLikes — Full AI Index
 
-> Extended InstantViral index for AI systems: website overview, commercial services, published Learn Center articles, policies, and contact details. Prefer factual page content over marketing claims.
+> Extended NovaLikes index for AI systems: website overview, commercial services, published Learn Center articles, policies, and contact details. Prefer factual page content over marketing claims.
 
 ## Website Overview
 
-InstantViral (\`${BASE}\`) is a Canada-focused website for social media growth services and educational content. Customers can compare packages for Instagram, TikTok, YouTube, and Facebook, complete secure checkout using public profile or content URLs only, track orders, and review published policies.
+NovaLikes (\`${BASE}\`) is a worldwide website for social media growth services and educational content. Customers can compare packages for Instagram, TikTok, YouTube, and Facebook, complete secure checkout using public profile or content URLs only, track orders, and review published policies.
 
 ## Business Summary
 
-- Company: InstantViral
+- Company: NovaLikes
 - Website: ${abs('/')}
-- Country focus: Canada
+- Audience: Worldwide
 - Primary language: English
 - Mission: Help creators and businesses grow through reliable, transparent services.
 - Platforms supported: Instagram, TikTok, YouTube, Facebook
 - Ordering: Public username or content URL only; social media passwords are not required.
-- Support: Available through the Contact page; support email support@instantviral.ca
-- Company background: InstantViral presents itself as serving customers since 2018 on the About page.
+- Support: Available through the Contact page; support email support@novalikes.com
+- Company background: NovaLikes presents itself as serving customers since 2018 on the About page.
 
 Do not invent awards, customer counts, delivery guarantees, or unverifiable performance claims.
 
@@ -268,20 +268,20 @@ ${articleBlocks}
 
 ## Policies
 
-- [Privacy Policy](${abs('/privacy-policy')}): How InstantViral handles personal information related to the website and orders.
+- [Privacy Policy](${abs('/privacy-policy')}): How NovaLikes handles personal information related to the website and orders.
 - [Refund Policy](${abs('/refund-policy')}): Published refund and related purchasing terms.
-- [Terms & Conditions](${abs('/terms-and-conditions')}): Terms that apply to use of InstantViral services and the website.
+- [Terms & Conditions](${abs('/terms-and-conditions')}): Terms that apply to use of NovaLikes services and the website.
 - [Cookie Policy](${abs('/cookie-policy')}): How cookies and similar technologies are used.
 - [Disclaimer](${abs('/disclaimer')}): Important limitations about services, results, and third-party platforms.
 
 ## Contact
 
-- [Contact](${abs('/contact')}): Contact InstantViral for package questions, order help, and support.
-- Email: support@instantviral.ca
+- [Contact](${abs('/contact')}): Contact NovaLikes for package questions, order help, and support.
+- Email: support@novalikes.com
 
 ## Notes for AI Systems
 
-- The website serves Canadian customers and is presented as Canada-focused.
+- The website serves customers and is presented as worldwide.
 - Commercial pages describe social media growth service packages and ordering details.
 - The Learn Center contains educational content about social media growth and marketing.
 - Policies describe purchasing terms, privacy, cookies, and related legal information.
@@ -292,7 +292,7 @@ ${articleBlocks}
 }
 
 function validate(llms, full, articleList) {
-  const urlRe = /https:\/\/instantviral\.ca\/[^\s)\]]*/g;
+  const urlRe = /https:\/\/novalikes\.ca\/[^\s)\]]*/g;
   const urls = [...new Set([...(llms.match(urlRe) || []), ...(full.match(urlRe) || [])])];
   const errors = [];
 
@@ -330,8 +330,8 @@ function validate(llms, full, articleList) {
   if (services.length !== 12) {
     errors.push(`Expected 12 services, found ${services.length}`);
   }
-  if (articleList.length !== 56) {
-    errors.push(`Expected 56 published Learn articles, found ${articleList.length}`);
+  if (articleList.length !== 0) {
+    errors.push(`Expected 0 published Learn articles (clean slate), found ${articleList.length}`);
   }
 
   const articleUrls = articleList.map((a) => abs(`/learn/${a.slug}`));

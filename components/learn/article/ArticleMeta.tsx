@@ -13,7 +13,7 @@ type ArticleMetaProps = {
 function formatDate(iso: string): string {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return '';
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

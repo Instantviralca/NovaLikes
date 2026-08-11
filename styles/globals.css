@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 /*
-  InstantViral Design System — logo-extracted brand tokens
-  Primary source: public/assets/logos/logo.png (#F07020 orange)
+  NovaLikes Design System — deeper coral / orange
+  Primary: #E85D04 · Hover: #C2410C
 */
 
 @theme inline {
@@ -72,12 +72,13 @@
 
 :root {
   /* ─── Phase 18 VDS semantic tokens ─── */
-  /* Brand — extracted from InstantViral logo (public/assets/logos/logo.png) */
-  --brand-primary: #f07020;
-  --brand-primary-hover: #d85f14;
-  --brand-secondary: #1a1a1a;
-  --brand-accent: #e85818;
-  --brand-accent-soft: #fff1e8;
+  /* Brand — deeper coral / orange */
+  --brand-primary: #e85d04;
+  --brand-primary-hover: #c2410c;
+  --brand-secondary: #c2410c;
+  --brand-accent: #e85d04;
+  --brand-accent-hover: #c2410c;
+  --brand-accent-soft: #fff4ed;
 
   /* Checklist aliases (Primary / Primary Hover / Secondary / Accent) */
   --vds-primary: var(--brand-primary);
@@ -85,30 +86,31 @@
   --vds-secondary: var(--brand-secondary);
   --vds-accent: var(--brand-accent);
 
-  /* Surfaces — Background / Surface / Surface Alt */
-  --surface-page: #fffbf8;
+  /* Surfaces — warm off-white */
+  --surface-page: #faf8f6;
   --surface-card: #ffffff;
-  --surface-muted: #f7f0ea;
-  --surface-dark: #121212;
-  --surface-dark-elevated: #1e1e1e;
+  --surface-muted: #f3eee9;
+  --surface-dark: #1c1917;
+  --surface-dark-elevated: #292524;
   --vds-background: var(--surface-page);
   --vds-surface: var(--surface-card);
   --vds-surface-alt: var(--surface-muted);
 
   /* Text — Primary / Secondary / Muted */
-  --text-primary: #141414;
-  --text-secondary: #5c5c5c;
-  --text-muted: #7a7a7a;
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #78716c;
   --text-inverse: #ffffff;
-  --text-brand: #f07020;
+  --text-brand: #e85d04;
+  --text-accent: #e85d04;
   --vds-text-primary: var(--text-primary);
   --vds-text-secondary: var(--text-secondary);
   --vds-text-muted: var(--text-muted);
 
   /* Borders + focus */
-  --border-subtle: #e8ddd4;
-  --border-strong: #d4c4b5;
-  --focus-ring: #f07020;
+  --border-subtle: #e7e0d9;
+  --border-strong: #d6cbc0;
+  --focus-ring: #e85d04;
   --vds-border: var(--border-subtle);
 
   /* Semantic — Success / Warning / Error */
@@ -189,12 +191,12 @@
   --shadow-sm: 0 2px 8px rgb(20 20 20 / 0.06), 0 1px 2px rgb(20 20 20 / 0.04);
   --shadow-md: 0 8px 24px rgb(20 20 20 / 0.08), 0 2px 6px rgb(20 20 20 / 0.04);
   --shadow-lg: 0 16px 40px rgb(20 20 20 / 0.12), 0 4px 12px rgb(20 20 20 / 0.06);
-  --shadow-glow: 0 0 0 1px rgb(240 112 32 / 0.18), 0 12px 32px rgb(240 112 32 / 0.18);
+  --shadow-glow: 0 0 0 1px rgb(232 93 4 / 0.14), 0 12px 32px rgb(232 93 4 / 0.18);
 
-  /* Gradients — restrained (VDS: avoid excessive gradients) */
-  --gradient-brand: linear-gradient(135deg, #f07020 0%, #e85818 55%, #c62828 120%);
-  --gradient-hero: linear-gradient(160deg, #fffcfa 0%, #fff8f3 45%, #faf6f2 100%);
-  --gradient-dark: linear-gradient(145deg, #1a1a1a 0%, #2a1810 100%);
+  /* Gradients — coral / orange energy */
+  --gradient-brand: linear-gradient(135deg, #e85d04 0%, #f97316 55%, #c2410c 140%);
+  --gradient-hero: linear-gradient(160deg, #faf8f6 0%, #f3eee9 45%, #fff4ed 100%);
+  --gradient-dark: linear-gradient(145deg, #1c1917 0%, #c2410c 100%);
 }
 
 @layer base {
@@ -223,9 +225,9 @@
   body {
     @apply min-h-full bg-background font-sans text-foreground antialiased;
     background-image:
-      radial-gradient(ellipse 80% 50% at 100% -20%, rgb(240 112 32 / 0.045), transparent),
-      radial-gradient(ellipse 55% 40% at -8% 25%, rgb(232 88 24 / 0.03), transparent),
-      radial-gradient(ellipse 40% 30% at 50% 100%, rgb(240 112 32 / 0.02), transparent);
+      radial-gradient(ellipse 80% 50% at 100% -20%, rgb(232 93 4 / 0.06), transparent),
+      radial-gradient(ellipse 55% 40% at -8% 25%, rgb(194 65 12 / 0.04), transparent),
+      radial-gradient(ellipse 40% 30% at 50% 100%, rgb(249 115 22 / 0.04), transparent);
     background-attachment: fixed;
   }
 
@@ -257,8 +259,8 @@
 
   .bg-mesh-soft {
     background-image:
-      radial-gradient(ellipse 60% 50% at 0% 0%, rgb(240 112 32 / 0.04), transparent 55%),
-      radial-gradient(ellipse 50% 40% at 100% 100%, rgb(232 88 24 / 0.03), transparent 50%);
+      radial-gradient(ellipse 60% 50% at 0% 0%, rgb(232 93 4 / 0.06), transparent 55%),
+      radial-gradient(ellipse 50% 40% at 100% 100%, rgb(194 65 12 / 0.04), transparent 50%);
   }
 
   /* Typography utilities — Phase 18 VDS hierarchy */
@@ -354,7 +356,7 @@
   }
 }
 
-/* InstantViral hero phone illustration (~7.2s seamless loop) */
+/* NovaLikes hero phone illustration (~7.2s seamless loop) */
 @keyframes iv-phone-float {
   0%,
   100% {

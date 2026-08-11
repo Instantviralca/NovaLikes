@@ -56,7 +56,7 @@ export function FacebookFollowersFinalCtaDashboard({ className }: { className?: 
           </span>
           <div>
             <p className="text-sm font-bold text-stone-900">Business Suite</p>
-            <p className="text-[10px] text-stone-500">Your Page · Canada</p>
+            <p className="text-[10px] text-stone-500">Your Page · Global</p>
           </div>
         </div>
 
@@ -132,7 +132,7 @@ export function FacebookFollowersFinalCtaDashboard({ className }: { className?: 
         <p className="text-[8px] font-semibold uppercase" style={{ color: fbBlue }}>
           New follower
         </p>
-        <p className="text-[11px] font-bold text-stone-800">@visitor.ca joined</p>
+        <p className="text-[11px] font-bold text-stone-800">@visitor joined</p>
       </div>
 
       <div className="pointer-events-none absolute -bottom-2 -left-2 z-10 rounded-xl border border-white bg-white px-2.5 py-1.5 shadow-[0_14px_28px_-16px_rgba(28,25,23,0.5)] motion-safe:animate-[iv-float-card_6.2s_ease-in-out_infinite]">

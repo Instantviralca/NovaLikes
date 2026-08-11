@@ -21,7 +21,7 @@ export function AuthorBox({ authorId }: AuthorBoxProps) {
         className="border border-dashed border-neutral-300 p-4 text-sm text-neutral-600"
         data-author-missing="true"
       >
-        Author profile is not available yet. InstantViral does not invent author
+        Author profile is not available yet. NovaLikes does not invent author
         names, roles, or credentials.
       </aside>
     );

@@ -55,27 +55,27 @@ const trustBadges: TrustBadgeContent[] = [
 export const trustCenterContent: TrustCenterContent = {
   id: 'trust-center',
   header: {
-    title: 'Why Customers Trust InstantViral',
+    title: 'Why Customers Trust NovaLikes',
     subtitle:
       'Clear package data, password-free ordering, secure checkout, published policies, and support when you need help — without unsupported guarantees.',
   },
   badges: trustBadges,
   whyChoose: {
-    title: 'Why Choose InstantViral',
+    title: 'Why Choose NovaLikes',
     description:
-      'InstantViral focuses on transparent ordering, real package options, and practical support across Instagram, TikTok, Facebook, and YouTube services.',
+      'NovaLikes focuses on transparent ordering, real package options, and practical support across Instagram, TikTok, Facebook, and YouTube services.',
     items: [
       {
         id: 'trust-why-transparency',
         title: 'Transparent Packages',
         description:
-          'Compare real quantities, prices, and delivery estimates from InstantViral.ca before you checkout.',
+          'Compare real quantities, prices, and delivery estimates from NovaLikes.ca before you checkout.',
       },
       {
         id: 'trust-why-password-free',
         title: 'Password-Free Process',
         description:
-          'Orders use public usernames or URLs only. InstantViral does not request social media passwords.',
+          'Orders use public usernames or URLs only. NovaLikes does not request social media passwords.',
       },
       {
         id: 'trust-why-support',
@@ -95,19 +95,19 @@ export const trustCenterContent: TrustCenterContent = {
     id: 'trust-secure-checkout',
     title: 'Secure Checkout',
     description:
-      'Checkout uses HTTPS and enabled payment providers. InstantViral does not store complete payment-card details on its own systems. Payment confirmation and status come from the selected provider.',
+      'Checkout uses HTTPS and enabled payment providers. NovaLikes does not store complete payment-card details on its own systems. Payment confirmation and status come from the selected provider.',
   },
   noPasswordRequired: {
     id: 'trust-no-password',
     title: 'No Password Required',
     description:
-      'InstantViral does not ask for Instagram, TikTok, Facebook, YouTube, or Google account passwords. Provide the public username or URL required by the selected service and keep that destination accessible during processing.',
+      'NovaLikes does not ask for Instagram, TikTok, Facebook, YouTube, or Google account passwords. Provide the public username or URL required by the selected service and keep that destination accessible during processing.',
   },
   refundAndRefill: {
     id: 'trust-refund-refill',
     title: 'Refund & Refill Information',
     description:
-      'Not every order is automatically refundable. Eligible purchases may be covered under the Refund Policy and the conditions shown for the selected service and package. Refill protection applies only to eligible packages, and refill duration or limits must come from the real package data — InstantViral does not invent refill periods here.',
+      'Not every order is automatically refundable. Eligible purchases may be covered under the Refund Policy and the conditions shown for the selected service and package. Refill protection applies only to eligible packages, and refill duration or limits must come from the real package data — NovaLikes does not invent refill periods here.',
     refundPolicyCta: {
       label: 'Read the Refund Policy',
       href: routes.refundPolicy,
@@ -126,7 +126,7 @@ export const trustCenterContent: TrustCenterContent = {
   finalCta: {
     title: 'Ready to Choose a Package?',
     description:
-      'Browse InstantViral services, review real package options, and place an order with a clear, password-free process.',
+      'Browse NovaLikes services, review real package options, and place an order with a clear, password-free process.',
     primaryCta: {
       label: 'Browse Services',
       href: routes.home,

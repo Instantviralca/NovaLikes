@@ -5,7 +5,8 @@ import { site } from '@/config/site';
 import { cn } from '@/lib/utils';
 
 /** Primary brand mark used in the site header. */
-export const SITE_LOGO_SRC = '/assets/logos/logo.png' as const;
+export const SITE_LOGO_SRC = '/assets/logos/logo.svg' as const;
+export const SITE_LOGO_WHITE_SRC = '/assets/logos/logo-white.svg' as const;
 
 export interface LogoProps {
   src?: string;
@@ -13,21 +14,29 @@ export interface LogoProps {
   href?: string | null;
   className?: string;
   alt?: string;
+  /** Use the light wordmark for dark backgrounds. */
+  variant?: 'default' | 'white';
 }
 
 export function Logo({
-  src = SITE_LOGO_SRC,
+  src,
   href = '/',
   className,
   alt = site.name,
+  variant = 'default',
 }: LogoProps) {
+  const resolvedSrc =
+    src ?? (variant === 'white' ? SITE_LOGO_WHITE_SRC : SITE_LOGO_SRC);
+
   const mark = (
     <Image
-      src={src}
+      src={resolvedSrc}
       alt={alt}
-      width={162}
+      width={176}
       height={40}
       className="h-8 w-auto sm:h-9"
+      priority
+      unoptimized={resolvedSrc.endsWith('.svg')}
     />
   );
 

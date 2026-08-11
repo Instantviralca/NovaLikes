@@ -205,7 +205,7 @@ export function TikTokLikesHeroDashboard({
                 >
                   IV
                 </span>
-                <p className="truncate text-[11px] font-bold text-white">@creator.ca</p>
+                <p className="truncate text-[11px] font-bold text-white">@creator</p>
                 <span
                   className="rounded-full px-1.5 py-0.5 text-[8px] font-bold text-white"
                   style={{ background: brand }}
@@ -214,7 +214,7 @@ export function TikTokLikesHeroDashboard({
                 </span>
               </div>
               <p className="mt-1.5 line-clamp-2 text-[9px] leading-snug text-white/90">
-                New drop for Canadian creators · like growth live
+                New drop for creators · like growth live
               </p>
               <div className="mt-2 flex items-center gap-1.5">
                 <span className="h-0.5 flex-1 overflow-hidden rounded-full bg-white/25">

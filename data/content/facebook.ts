@@ -5,7 +5,7 @@ const PRICING_ANCHOR = '#pricing-packages';
 const HOW_IT_WORKS_ANCHOR = '#how-it-works';
 
 /**
- * Buy Facebook Followers Canada — Document 09.31 production content.
+ * Buy Facebook Followers — Document 09.31 production content.
  * Other Facebook services remain factory placeholders until their production docs land.
  */
 function buildBuyFacebookFollowersContent(): ServiceContent {
@@ -13,17 +13,17 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     slug: 'buy-facebook-followers',
     platformId: 'facebook',
     seo: {
-      title: 'Buy Facebook Followers Canada | Packages & Pricing',
+      title: 'Buy Facebook Followers | Packages & Pricing',
       description:
-        'Buy Facebook Followers Canada with clear package options, public page URL checkout, gradual delivery details and order tracking. No password required.',
+        'Buy Facebook Followers with clear package options, public page URL checkout, gradual delivery details and order tracking. No password required.',
     },
     hero: {
       eyebrow: 'FACEBOOK FOLLOWER PACKAGES FOR BUSINESSES, CREATORS & BRANDS',
-      title: 'Buy Facebook Followers in Canada',
+      title: 'Buy Facebook Followers worldwide',
       description:
-        'Build a stronger Facebook presence with follower packages designed for businesses, creators and brands across Canada. Compare transparent package options, choose the quantity that fits your goals and complete your order using only your public Facebook Page URL. Whether you\'re building a business page, creator profile or community, our ordering process is designed to be simple, secure and easy to follow.',
-      purpose: 'Convert for Facebook follower packages in Canada',
-      primaryKeyword: 'buy Facebook followers Canada',
+        'Build a stronger Facebook presence with follower packages designed for businesses, creators and brands worldwide. Compare transparent package options, choose the quantity that fits your goals and complete your order using only your public Facebook Page URL. Whether you\'re building a business page, creator profile or community, our ordering process is designed to be simple, secure and easy to follow.',
+      purpose: 'Convert for Facebook follower packages worldwide',
+      primaryKeyword: 'buy Facebook followers',
       supportingKeywords: [
         'Buy Facebook Followers',
         'Buy Followers On Facebook',
@@ -46,13 +46,13 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
         { id: 'fb-f-trust-password', label: 'No Password Required' },
         { id: 'fb-f-trust-checkout', label: 'Secure Checkout' },
         { id: 'fb-f-trust-track', label: 'Order Tracking' },
-        { id: 'fb-f-trust-ca', label: 'Canadian Support' },
+        { id: 'fb-f-trust-ca', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/facebook-dashboard.svg',
+        src: '/assets/images/illustrations/buy-facebook-followers-hero-v2.webp',
         alt: 'Facebook Business Page followers and Meta Business Suite dashboard illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -60,7 +60,7 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
       title: 'Choose Your Facebook Followers Package',
       description:
         'Select the follower package that best matches your Facebook page goals. Compare available quantities, review package details and complete your order with confidence before checkout.',
-      purpose: 'Present real InstantViral.ca Facebook followers packages',
+      purpose: 'Present real NovaLikes.ca Facebook followers packages',
       primaryKeyword: 'Facebook follower packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -107,9 +107,9 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-facebook-followers',
-      title: 'Why Choose Facebook Followers From InstantViral?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-facebook-followers',
+      title: 'Why Choose Facebook Followers From NovaLikes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in hero and Can You Buy',
       primaryKeyword: 'buy Facebook followers',
@@ -234,8 +234,8 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     },
     reviews: {
       id: 'fb-followers-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority layout — no customer reviews section',
       testimonialIds: [],
     },
@@ -245,7 +245,7 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
       description:
         'These answers cover the questions customers most frequently ask before purchasing Facebook follower packages.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy Facebook followers Canada',
+      primaryKeyword: 'buy Facebook followers',
       faqIds: [
         'faq-fb-followers-can-buy',
         'faq-fb-followers-how-buy',
@@ -286,24 +286,24 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
 }
 
 /**
- * Buy Facebook Page Likes Canada — lean authority content (Sections 1–5 live).
+ * Buy Facebook Page Likes — lean authority content (Sections 1–5 live).
  */
 function buildBuyFacebookPageLikesContent(): ServiceContent {
   return {
     slug: 'buy-facebook-page-likes',
     platformId: 'facebook',
     seo: {
-      title: 'Buy Facebook Page Likes Canada | InstantViral',
+      title: 'Buy Facebook Page Likes | NovaLikes',
       description:
-        'Buy Facebook Page Likes Canada with transparent packages for businesses and creators. Public Page URL only, secure checkout and order tracking. No password required.',
+        'Buy Facebook Page Likes with transparent packages for businesses and creators. Public Page URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
       eyebrow: 'FACEBOOK PAGE LIKE PACKAGES FOR CANADIAN BUSINESSES, BRANDS & CREATORS',
-      title: 'Buy Facebook Page Likes in Canada',
+      title: 'Buy Facebook Page Likes worldwide',
       description:
-        'Build a stronger first impression for your Facebook page with transparent Page Like packages for businesses, creators and organizations across Canada. Compare available quantities, choose the package that matches your goals and place your order using only your public Facebook Page URL. No password or private account access is required, and you can track available delivery updates after checkout.',
-      purpose: 'Convert for Facebook page likes packages in Canada',
-      primaryKeyword: 'buy Facebook page likes Canada',
+        'Build a stronger first impression for your Facebook page with transparent Page Like packages for businesses, creators and organizations worldwide. Compare available quantities, choose the package that matches your goals and place your order using only your public Facebook Page URL. No password or private account access is required, and you can track available delivery updates after checkout.',
+      purpose: 'Convert for Facebook page likes packages worldwide',
+      primaryKeyword: 'buy Facebook page likes',
       supportingKeywords: [
         'Buy Facebook Page Likes',
         'Buy Facebook Business Page Likes',
@@ -324,13 +324,13 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
         { id: 'fb-pl-trust-url', label: 'Public Facebook Page URL Only' },
         { id: 'fb-pl-trust-password', label: 'No Password Required' },
         { id: 'fb-pl-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-pl-trust-ca', label: 'Canadian Support' },
+        { id: 'fb-pl-trust-ca', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/facebook-dashboard.svg',
+        src: '/assets/images/illustrations/buy-facebook-page-likes-hero-v2.webp',
         alt: 'Facebook Business Page likes and Meta Business Suite analytics illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -338,7 +338,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       title: 'Choose Your Facebook Page Likes Package',
       description:
         'Compare available Page Like packages and select the quantity that best matches your current page size, campaign goals and budget. Each package includes secure checkout, order tracking and processing through your public Facebook Page URL.',
-      purpose: 'Present real InstantViral.ca Facebook page likes packages',
+      purpose: 'Present real NovaLikes.ca Facebook page likes packages',
       primaryKeyword: 'Facebook page likes packages',
       suggestedWordCount: 45,
       packageIds: [],
@@ -391,9 +391,9 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-facebook-page-likes',
-      title: 'Why Choose InstantViral for Facebook Page Likes?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-facebook-page-likes',
+      title: 'Why Choose NovaLikes for Facebook Page Likes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in Why Choose section',
       primaryKeyword: 'buy Facebook page likes',
@@ -494,8 +494,8 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
     },
     reviews: {
       id: 'fb-page-likes-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority layout — no customer reviews section',
       testimonialIds: [],
     },
@@ -505,7 +505,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       description:
         'These answers cover the most common questions customers ask before purchasing Facebook Page Like packages.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy Facebook page likes Canada',
+      primaryKeyword: 'buy Facebook page likes',
       faqIds: [
         'faq-fb-page-likes-can-buy',
         'faq-fb-page-likes-how-buy',
@@ -550,17 +550,17 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
     slug: 'buy-facebook-post-likes',
     platformId: 'facebook',
     seo: {
-      title: 'Buy Facebook Post Likes Canada | InstantViral',
+      title: 'Buy Facebook Post Likes | NovaLikes',
       description:
-        'Buy Facebook Post Likes Canada with transparent packages for businesses, creators and brands. Public Facebook post URL only, secure checkout and order tracking. No password required.',
+        'Buy Facebook Post Likes with transparent packages for businesses, creators and brands. Public Facebook post URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
       eyebrow: 'FACEBOOK POST LIKE PACKAGES FOR BUSINESSES, CREATORS & BRANDS',
-      title: 'Buy Facebook Post Likes in Canada',
+      title: 'Buy Facebook Post Likes worldwide',
       description:
-        'Increase post engagement on your Facebook updates with transparent Post Like packages for businesses, creators and brands across Canada. Select the package that matches your campaign, provide your public Facebook post URL and complete secure checkout in just a few steps. No password is required, and order tracking is available after confirmation.',
-      purpose: 'Convert for Facebook post likes packages in Canada',
-      primaryKeyword: 'buy Facebook Post Likes Canada',
+        'Increase post engagement on your Facebook updates with transparent Post Like packages for businesses, creators and brands worldwide. Select the package that matches your campaign, provide your public Facebook post URL and complete secure checkout in just a few steps. No password is required, and order tracking is available after confirmation.',
+      purpose: 'Convert for Facebook post likes packages worldwide',
+      primaryKeyword: 'buy Facebook Post Likes',
       supportingKeywords: [
         'Buy Facebook Post Likes',
         'Buy Likes for Facebook Post',
@@ -580,14 +580,14 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       trustLabels: [
         { id: 'fb-post-trust-url', label: 'Public Facebook Post URL' },
         { id: 'fb-post-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-post-trust-ca', label: 'Canadian Support' },
+        { id: 'fb-post-trust-ca', label: 'Customer Support' },
         { id: 'fb-post-trust-password', label: 'No Password Required' },
       ],
       visual: {
-        src: '/assets/images/illustrations/facebook-dashboard.svg',
+        src: '/assets/images/illustrations/buy-facebook-post-likes-hero-v2.webp',
         alt: 'Facebook post preview with rising post likes and engagement analytics illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -595,7 +595,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       title: 'Choose Your Facebook Post Likes Package',
       description:
         'Compare available Post Like packages and choose the quantity that best matches your campaign, content strategy and engagement goals. Every package includes secure checkout, transparent ordering and progress tracking.',
-      purpose: 'Present real InstantViral.ca Facebook post likes packages',
+      purpose: 'Present real NovaLikes.ca Facebook post likes packages',
       primaryKeyword: 'Facebook Post Likes',
       suggestedWordCount: 45,
       packageIds: [],
@@ -642,9 +642,9 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-facebook-post-likes',
-      title: 'Why Choose InstantViral for Facebook Post Likes?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-facebook-post-likes',
+      title: 'Why Choose NovaLikes for Facebook Post Likes?',
       description: '',
       purpose: 'Unused on lean authority layout — trust lives in Why Choose section',
       primaryKeyword: 'buy Facebook Post Likes',
@@ -745,8 +745,8 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
     },
     reviews: {
       id: 'fb-post-likes-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority layout — no customer reviews section',
       testimonialIds: [],
     },
@@ -756,7 +756,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       description:
         'These answers cover the most common questions customers ask before purchasing Facebook Post Like packages.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy Facebook Post Likes Canada',
+      primaryKeyword: 'buy Facebook Post Likes',
       faqIds: [
         'faq-fb-post-likes-can-buy',
         'faq-fb-post-likes-password',

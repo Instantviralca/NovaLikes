@@ -39,7 +39,7 @@ export function AuthorSidebar({
             <dt className="text-neutral-500">Joined</dt>
             <dd className="font-medium text-neutral-900">
               <time dateTime={author.joinedAt}>
-                {new Intl.DateTimeFormat('en-CA', {
+                {new Intl.DateTimeFormat('en', {
                   year: 'numeric',
                   month: 'long',
                 }).format(new Date(author.joinedAt))}

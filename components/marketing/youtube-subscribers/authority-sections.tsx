@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, Clock3, Eye, Users, X } from 'lucide-react';
 
 import { YouTubeSubscribersAnalyticsDashboard } from '@/components/illustrations/youtube-subscribers-analytics-dashboard';
-import { YouTubeSubscribersCanadaDashboard } from '@/components/illustrations/youtube-subscribers-canada-dashboard';
+import { YouTubeSubscribersGlobalDashboard } from '@/components/illustrations/youtube-subscribers-canada-dashboard';
 import { YouTubeSubscribersChannelOverviewDashboard } from '@/components/illustrations/youtube-subscribers-channel-overview-dashboard';
 import { YouTubeSubscribersOrderStatusDashboard } from '@/components/illustrations/youtube-subscribers-order-status-dashboard';
 import { YouTubeSubscribersProcessTimeline } from '@/components/illustrations/youtube-subscribers-process-timeline';
@@ -39,7 +39,7 @@ export type RelatedArticleWithThumb = InternalLink & {
   };
 };
 
-/** Section 3 — Why Choose InstantViral */
+/** Section 3 — Why Choose NovaLikes */
 export function YouTubeSubscribersWhyChoose({
   config = YOUTUBE_SUBSCRIBERS_PAGE_CONFIG,
   className,
@@ -584,7 +584,7 @@ export function YouTubeSubscribersServiceCompare({
   );
 }
 
-/** Section 11 — Buying in Canada */
+/** Section 11 — Buying worldwide */
 export function YouTubeSubscribersCanada({
   config = YOUTUBE_SUBSCRIBERS_PAGE_CONFIG,
   className,
@@ -602,7 +602,7 @@ export function YouTubeSubscribersCanada({
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
           <FadeUp immediate className="space-y-4">
             <div className="mb-1 inline-flex items-center gap-2 rounded-full border border-red-100 bg-[#FFF1F2] px-3 py-1.5 text-xs font-semibold text-[#B91C1C]">
-              Canada-ready YouTube Subscribers
+              Ready YouTube Subscribers
             </div>
             <Heading as="h2" size="h2" id={`${canada.id}-heading`} className="tracking-tight">
               {canada.title}
@@ -616,7 +616,7 @@ export function YouTubeSubscribersCanada({
             </p>
           </FadeUp>
           <FadeUp delay={0.04} className="mx-auto w-full max-w-[24rem] lg:max-w-none">
-            <YouTubeSubscribersCanadaDashboard className="max-w-none" />
+            <YouTubeSubscribersGlobalDashboard className="max-w-none" />
           </FadeUp>
         </div>
 

@@ -8,23 +8,23 @@ import type {
 } from '@/types/content';
 
 /**
- * About Us Canada — Document 13.01 production content.
+ * About Us — Document 13.01 production content.
  * Do not invent awards, certifications, partnerships, customer counts, or guarantees.
  */
 export const aboutContent: AboutPageContent = {
   id: 'about',
   path: routes.about,
   seo: {
-    title: 'About InstantViral Canada | Social Media Growth Since 2018',
+    title: 'About NovaLikes | Social Media Growth Since 2018',
     description:
-      'Learn about InstantViral, our mission, customer-first approach, secure ordering process, and commitment to transparent social media growth services.',
+      'Learn about NovaLikes, our mission, customer-first approach, secure ordering process, and commitment to transparent social media growth services.',
   },
   hero: {
-    title: 'About InstantViral',
+    title: 'About NovaLikes',
     description:
-      'InstantViral helps creators, businesses, agencies, and brands purchase social media growth services through a transparent ordering experience backed by real package data, secure checkout, and customer support.',
-    purpose: 'Introduce InstantViral as a trusted Canadian growth provider',
-    primaryKeyword: 'About InstantViral',
+      'NovaLikes helps creators, businesses, agencies, and brands purchase social media growth services through a transparent ordering experience backed by real package data, secure checkout, and customer support.',
+    purpose: 'Introduce NovaLikes as a trusted social media growth provider',
+    primaryKeyword: 'About NovaLikes',
     primaryCta: {
       label: 'Browse Services',
       href: routes.home,
@@ -39,7 +39,7 @@ export const aboutContent: AboutPageContent = {
     title: 'Our Story',
     description: 'A clearer way to buy social media growth services.',
     purpose: 'Share company journey without unverifiable historical claims',
-    body: 'InstantViral was built to make social media growth services easier to understand and order. Creators, businesses, agencies, and brands often need a straightforward way to compare packages, submit the required public URL, complete secure checkout, and track progress — without sharing account passwords.\n\nWe focus on transparency in how packages are presented, clarity in what is required to place an order, and continuous improvement of the ordering experience. Our goal is a customer-focused process that stays honest about what we provide and what we do not invent.',
+    body: 'NovaLikes was built to make social media growth services easier to understand and order. Creators, businesses, agencies, and brands often need a straightforward way to compare packages, submit the required public URL, complete secure checkout, and track progress — without sharing account passwords.\n\nWe focus on transparency in how packages are presented, clarity in what is required to place an order, and continuous improvement of the ordering experience. Our goal is a customer-focused process that stays honest about what we provide and what we do not invent.',
   },
   mission: {
     id: 'mission-and-values',
@@ -81,23 +81,23 @@ export const aboutContent: AboutPageContent = {
     ],
   },
   whyChoose: {
-    id: 'why-customers-choose-instantviral',
-    title: 'Why Customers Choose InstantViral',
+    id: 'why-customers-choose-novalikes',
+    title: 'Why Customers Choose NovaLikes',
     description:
-      'Practical reasons customers use InstantViral when they need a clear path from package selection to order tracking.',
+      'Practical reasons customers use NovaLikes when they need a clear path from package selection to order tracking.',
     purpose: 'Explain customer-facing strengths without invented claims',
     items: [
       {
         id: 'about-why-password',
         title: 'No Password Required',
         description:
-          'Orders use public profile, page, or content URLs. InstantViral does not ask for social media passwords.',
+          'Orders use public profile, page, or content URLs. NovaLikes does not ask for social media passwords.',
       },
       {
         id: 'about-why-catalog',
         title: 'Real Package Catalog',
         description:
-          'Quantities and prices come from the real InstantViral.ca package data — not invented frontend placeholders.',
+          'Quantities and prices come from the real NovaLikes.ca package data — not invented frontend placeholders.',
       },
       {
         id: 'about-why-checkout',
@@ -129,7 +129,7 @@ export const aboutContent: AboutPageContent = {
     id: 'platforms-we-support',
     title: 'Platforms We Support',
     description:
-      'Browse growth services across the platforms InstantViral currently supports.',
+      'Browse growth services across the platforms NovaLikes currently supports.',
     purpose: 'Link to platforms from the Service Registry',
     platformIds: ['instagram', 'tiktok', 'facebook', 'youtube'],
   },
@@ -173,7 +173,7 @@ export const aboutContent: AboutPageContent = {
       'We keep trust signals grounded in how the product actually works — not in unverifiable claims.',
     purpose: 'Reinforce trust without inventing awards or guarantees',
     disclaimer:
-      'InstantViral does not invent awards, certifications, partnerships, customer counts, or guarantees on this page. Trust is built through clear package data, secure checkout, transparent policies, and responsive support.',
+      'NovaLikes does not invent awards, certifications, partnerships, customer counts, or guarantees on this page. Trust is built through clear package data, secure checkout, transparent policies, and responsive support.',
     items: [
       {
         id: 'about-trust-password',
@@ -185,7 +185,7 @@ export const aboutContent: AboutPageContent = {
         id: 'about-trust-data',
         title: 'Real Package Data',
         description:
-          'Service pages display package information from the InstantViral.ca pricing source rather than fabricated tiers.',
+          'Service pages display package information from the NovaLikes.ca pricing source rather than fabricated tiers.',
       },
       {
         id: 'about-trust-policies',
@@ -203,7 +203,7 @@ export const aboutContent: AboutPageContent = {
   },
   finalCta: {
     id: 'about-final-cta',
-    title: 'Ready to Explore InstantViral Services?',
+    title: 'Ready to Explore NovaLikes Services?',
     description:
       'Browse available growth services, review real package options, and place an order with a clear, password-free process.',
     purpose: 'Drive visitors to services or contact',
@@ -219,23 +219,23 @@ export const aboutContent: AboutPageContent = {
 };
 
 /**
- * Contact Us Canada — Document 13.02 production content.
+ * Contact Us — Document 13.02 production content.
  * Business address, phone, office hours, and social links come from configuration only.
  */
 export const contactContent: ContactPageContent = {
   id: 'contact',
   path: routes.contact,
   seo: {
-    title: 'Contact InstantViral Canada | Customer Support',
+    title: 'Contact NovaLikes | Customer Support',
     description:
-      'Contact InstantViral for sales, support, order enquiries, and general questions. Reach our team through the official contact form and support channels.',
+      'Contact NovaLikes for sales, support, order enquiries, and general questions. Reach our team through the official contact form and support channels.',
   },
   hero: {
-    title: 'Contact InstantViral',
+    title: 'Contact NovaLikes',
     description:
       'Need help choosing a package, checking an order, or asking a general question? Our team is here to help.',
-    purpose: 'Help customers reach InstantViral for sales and support',
-    primaryKeyword: 'Contact InstantViral',
+    purpose: 'Help customers reach NovaLikes for sales and support',
+    primaryKeyword: 'Contact NovaLikes',
     primaryCta: {
       label: 'Track Your Order',
       href: routes.trackOrder,
@@ -261,7 +261,7 @@ export const contactContent: ContactPageContent = {
         id: 'contact-option-support',
         title: 'Customer Support',
         description:
-          'Help with account questions, delivery expectations, or using InstantViral services.',
+          'Help with account questions, delivery expectations, or using NovaLikes services.',
       },
       {
         id: 'contact-option-orders',
@@ -273,7 +273,7 @@ export const contactContent: ContactPageContent = {
         id: 'contact-option-general',
         title: 'General Questions',
         description:
-          'Other enquiries about InstantViral, policies, or how our ordering process works.',
+          'Other enquiries about NovaLikes, policies, or how our ordering process works.',
       },
     ],
   },
@@ -305,7 +305,7 @@ export const contactContent: ContactPageContent = {
     id: 'business-information',
     title: 'Business Information',
     description:
-      'Verified details from InstantViral configuration. Unavailable fields are hidden rather than invented.',
+      'Verified details from NovaLikes configuration. Unavailable fields are hidden rather than invented.',
     purpose: 'Show only configured business contact details',
     emptyMessage:
       'Additional contact details such as phone number, office address, and office hours will appear here when they are added to site configuration.',
@@ -351,17 +351,17 @@ export const faqPageContent: FaqPageContent = {
   id: 'faq',
   path: routes.faq,
   seo: {
-    title: 'InstantViral FAQ | Orders, Delivery, Payments & Support',
+    title: 'NovaLikes FAQ | Orders, Delivery, Payments & Support',
     description:
-      'Find answers about InstantViral services, real packages, delivery times, payments, refunds, refill eligibility, order tracking, and customer support.',
+      'Find answers about NovaLikes services, real packages, delivery times, payments, refunds, refill eligibility, order tracking, and customer support.',
   },
   hero: {
     eyebrow: 'HELP CENTER',
     title: 'Frequently Asked Questions',
     description:
-      'Find clear answers about InstantViral services, real package options, delivery estimates, payments, refunds, refill eligibility, order tracking, and customer support. Use the search field or choose a category to quickly find the information you need.',
+      'Find clear answers about NovaLikes services, real package options, delivery estimates, payments, refunds, refill eligibility, order tracking, and customer support. Use the search field or choose a category to quickly find the information you need.',
     purpose: 'Help customers find answers before contacting support',
-    primaryKeyword: 'InstantViral FAQ',
+    primaryKeyword: 'NovaLikes FAQ',
     primaryCta: {
       label: 'Track an Order',
       href: routes.trackOrder,
@@ -387,7 +387,7 @@ export const faqPageContent: FaqPageContent = {
     id: 'faq-contact-support-cta',
     title: 'Still Need Help?',
     description:
-      'Contact the InstantViral support team with your question. Include your order ID when asking about an existing order so the team can review it more efficiently.',
+      'Contact the NovaLikes support team with your question. Include your order ID when asking about an existing order so the team can review it more efficiently.',
     purpose: 'Offer contact and track-order exits',
     primaryCta: {
       label: 'Contact Support',
@@ -453,15 +453,15 @@ export const companyContent: Record<CompanyPageContent['id'], CompanyPageContent
     hero: {
       title: 'Customer Reviews',
       description:
-        'Read approved InstantViral customer reviews. Ratings and counts match our published review catalogue.',
+        'Read approved NovaLikes customer reviews. Ratings and counts match our published review catalogue.',
       purpose: 'Aggregate customer social proof',
-      primaryKeyword: 'instantviral reviews',
+      primaryKeyword: 'novalikes reviews',
     },
     sections: [
       {
         id: 'reviews-list',
         title: 'Customer reviews',
-        description: 'All approved InstantViral customer reviews.',
+        description: 'All approved NovaLikes customer reviews.',
       },
     ],
     testimonialIds: [],

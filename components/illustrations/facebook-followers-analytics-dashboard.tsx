@@ -68,7 +68,7 @@ export function FacebookFollowersAnalyticsDashboard({
         <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
           Audience Insights
         </p>
-        <p className="text-[11px] font-bold text-stone-900">Canada · Active</p>
+        <p className="text-[11px] font-bold text-stone-900">Active</p>
       </div>
 
       <div
@@ -180,7 +180,7 @@ export function FacebookFollowersAnalyticsDashboard({
               <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
                 Audience Insights
               </p>
-              <p className="mt-1 text-sm font-bold text-stone-900">Canada · Active</p>
+              <p className="mt-1 text-sm font-bold text-stone-900">Active</p>
               <p className="text-[10px] font-semibold text-emerald-600">Engagement holding</p>
             </div>
           </div>

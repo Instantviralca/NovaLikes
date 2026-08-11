@@ -75,7 +75,7 @@ export function AboutHeroIllustration({ className }: { className?: string }) {
         <div className="mb-2.5 flex items-center justify-between gap-2">
           <div>
             <p className="text-[10px] font-bold tracking-wide text-stone-400 uppercase">
-              InstantViral
+              NovaLikes
             </p>
             <p className="text-sm font-bold text-stone-900">Growth dashboard</p>
           </div>

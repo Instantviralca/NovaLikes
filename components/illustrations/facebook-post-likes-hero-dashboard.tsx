@@ -121,7 +121,7 @@ export function FacebookPostLikesHeroDashboard({
               </span>
               <div>
                 <p className="text-sm font-bold text-stone-900">Post Insights</p>
-                <p className="text-[10px] text-stone-500">Facebook · Engagement Canada</p>
+                <p className="text-[10px] text-stone-500">Facebook · Engagement</p>
               </div>
             </div>
             <span

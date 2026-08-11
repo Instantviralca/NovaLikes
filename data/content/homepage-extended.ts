@@ -1,5 +1,5 @@
 import { routes } from '@/config/routes';
-import { learnArticlePath, learnCategoryPath } from '@/config/routes';
+import { learnCategoryPath } from '@/config/routes';
 
 /**
  * Homepage Sections 11–16 — educational / authority content.
@@ -141,32 +141,32 @@ export const homepageExtendedSections = {
         title: 'Instagram Followers Guide',
         description:
           'Learn about follower growth and professional profile presentation.',
-        href: learnArticlePath('how-to-grow-instagram-followers-organically'),
+        href: learnCategoryPath('instagram'),
       },
       {
         id: 'likes-guide',
         title: 'Instagram Likes Guide',
         description: 'Understand how likes support post visibility.',
-        href: learnArticlePath('how-to-get-more-instagram-likes'),
+        href: learnCategoryPath('instagram'),
       },
       {
         id: 'views-guide',
         title: 'Instagram Views Guide',
         description: 'Discover how video views fit into an Instagram strategy.',
-        href: learnArticlePath('how-to-increase-instagram-engagement'),
+        href: learnCategoryPath('instagram'),
       },
       {
         id: 'comments-guide',
         title: 'Instagram Comments Guide',
         description:
           'Learn how visible conversations contribute to profile activity.',
-        href: learnArticlePath('how-to-increase-instagram-engagement'),
+        href: learnCategoryPath('instagram'),
       },
       {
         id: 'growth-tips',
         title: 'Instagram Growth Tips',
         description: 'Educational content focused on long-term account growth.',
-        href: learnArticlePath('complete-instagram-growth-guide'),
+        href: learnCategoryPath('instagram'),
       },
       {
         id: 'creator-resources',
@@ -261,7 +261,7 @@ export const homepageExtendedSections = {
 
 export const homepageExtendedMedia = {
   byTheNumbers: {
-    src: '/assets/images/illustrations/instagram-by-the-numbers.webp',
+    src: '/assets/images/illustrations/instagram-by-the-numbers-v2.webp',
     alt: 'Instagram growth statistics dashboard',
     title: 'Instagram by the Numbers',
     caption:
@@ -270,15 +270,15 @@ export const homepageExtendedMedia = {
     height: 1024,
   },
   whoWeHelp: {
-    src: '/assets/images/illustrations/who-we-help-instagram.webp',
+    src: '/assets/images/illustrations/who-we-help-instagram-v2.webp',
     alt: 'Creators and businesses growing with Instagram dashboards',
     title: 'Who We Help on Instagram',
-    caption: 'InstantViral supports creators, businesses, and brands across Canada.',
+    caption: 'NovaLikes supports creators, businesses, and brands worldwide.',
     width: 1536,
     height: 1024,
   },
   socialProofMatters: {
-    src: '/assets/images/illustrations/why-social-proof-matters.webp',
+    src: '/assets/images/illustrations/why-social-proof-matters-v2.webp',
     alt: 'Instagram profile social proof and analytics dashboard',
     title: 'Why Social Proof Matters',
     caption:
@@ -287,15 +287,15 @@ export const homepageExtendedMedia = {
     height: 1024,
   },
   learnGrowth: {
-    src: '/assets/images/illustrations/learn-instagram-growth.webp',
+    src: '/assets/images/illustrations/learn-instagram-growth-v2.webp',
     alt: 'Instagram growth learning resources and guides dashboard',
     title: 'Learn About Instagram Growth',
-    caption: 'Explore InstantViral Learn guides for Instagram strategy and growth.',
+    caption: 'Explore NovaLikes Learn guides for Instagram strategy and growth.',
     width: 1536,
     height: 1024,
   },
   compareServices: {
-    src: '/assets/images/illustrations/compare-instagram-services.webp',
+    src: '/assets/images/illustrations/compare-instagram-services-v2.webp',
     alt: 'Compare Instagram followers likes views and comments services',
     title: 'Compare Instagram Services',
     caption: 'Match followers, likes, views, and comments to your current goal.',
@@ -303,10 +303,10 @@ export const homepageExtendedMedia = {
     height: 1024,
   },
   needHelp: {
-    src: '/assets/images/illustrations/need-help-choosing-package.webp',
+    src: '/assets/images/illustrations/need-help-choosing-package-v2.webp',
     alt: 'Customer support helping choose Instagram packages',
     title: 'Need Help Choosing a Package',
-    caption: 'Compare packages or contact InstantViral support before you order.',
+    caption: 'Compare packages or contact NovaLikes support before you order.',
     width: 1536,
     height: 1024,
   },

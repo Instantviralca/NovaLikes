@@ -81,7 +81,7 @@ export function TrustCenter({
           {/* 2. Trust Badges */}
           <TrustBadgeList badges={enabledBadges} />
 
-          {/* 3. Why Choose InstantViral */}
+          {/* 3. Why Choose NovaLikes */}
           {!isCompact ? (
             <div className="space-y-6">
               <div className="max-w-2xl space-y-2">

@@ -57,7 +57,7 @@ export function ContactPageView({ content = getContactContent() }: ContactPageVi
       <ContactPageViewTracker />
 
       {/* 1. Hero */}
-      <Section spacing="lg" className="bg-hero-wash" aria-label="Contact InstantViral">
+      <Section spacing="lg" className="bg-hero-wash" aria-label="Contact NovaLikes">
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
             <Stack

@@ -232,12 +232,12 @@ export const INSTAGRAM_FOLLOWERS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
     {
       type: 'links',
       id: 'related',
-      heading: 'Related InstantViral Options',
+      heading: 'Related NovaLikes Options',
       links: [
         { label: 'Instagram Likes Packages', href: '/buy-instagram-likes' },
         { label: 'Instagram Views Packages', href: '/buy-instagram-views' },
         { label: 'Instagram Comments Packages', href: '/buy-instagram-comments' },
-        { label: 'InstantViral Homepage', href: '/' },
+        { label: 'NovaLikes Homepage', href: '/' },
       ],
     },
   ],
@@ -256,7 +256,7 @@ export const INSTAGRAM_LIKES_EDUCATIONAL_GUIDE: EducationalGuideContent = {
         'Instagram likes are a fast signal that a post earned a reaction. In the first few hours, that counter often decides whether strangers pause or keep scrolling.',
         'Likes support post performance. Followers grow who can see future work. Mixing those goals is how people buy the wrong package.',
         'Treat likes as help for launches, portfolio posts, and clips that already have a clear hook—not as a substitute for the creative.',
-        'If you sell to Canadian customers, package clarity still matters: public post URL only, visible delivery expectations, and tracking after payment.',
+        'If you sell to customers, package clarity still matters: public post URL only, visible delivery expectations, and tracking after payment.',
       ],
     },
     {
@@ -361,7 +361,7 @@ export const INSTAGRAM_LIKES_EDUCATIONAL_GUIDE: EducationalGuideContent = {
         { label: 'Instagram followers packages', href: '/buy-instagram-followers' },
         { label: 'Instagram views packages', href: '/buy-instagram-views' },
         { label: 'Instagram comments packages', href: '/buy-instagram-comments' },
-        { label: 'InstantViral homepage', href: '/' },
+        { label: 'NovaLikes homepage', href: '/' },
       ],
     },
   ],
@@ -472,12 +472,12 @@ export const INSTAGRAM_VIEWS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
     {
       type: 'links',
       id: 'related',
-      heading: 'Related InstantViral destinations',
+      heading: 'Related NovaLikes destinations',
       links: [
         { label: 'Instagram followers packages', href: '/buy-instagram-followers' },
         { label: 'Instagram likes packages', href: '/buy-instagram-likes' },
         { label: 'Instagram comments packages', href: '/buy-instagram-comments' },
-        { label: 'InstantViral homepage', href: '/' },
+        { label: 'NovaLikes homepage', href: '/' },
       ],
     },
   ],
@@ -651,14 +651,14 @@ export const INSTAGRAM_COMMENTS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
     {
       type: 'links',
       id: 'related',
-      heading: 'Related InstantViral options',
+      heading: 'Related NovaLikes options',
       intro:
         'Comments strengthen discussion. Pair them when a campaign also needs first reactions, Reel reach, or a larger audience.',
       links: [
         { label: 'Instagram likes packages', href: '/buy-instagram-likes' },
         { label: 'Instagram views packages', href: '/buy-instagram-views' },
         { label: 'Instagram followers packages', href: '/buy-instagram-followers' },
-        { label: 'InstantViral homepage', href: '/' },
+        { label: 'NovaLikes homepage', href: '/' },
       ],
     },
   ],
@@ -827,14 +827,14 @@ export const TIKTOK_LIKES_EDUCATIONAL_GUIDE: EducationalGuideContent = {
       id: 'tt-l-explore-more',
       heading: 'Explore Related TikTok Pages',
       intro:
-        'Pair likes with other growth options, or return to InstantViral for more services across Canada.',
+        'Pair likes with other growth options, or return to NovaLikes for more services worldwide.',
       links: [
         {
-          label: 'Buy TikTok Followers Canada',
+          label: 'Buy TikTok Followers',
           href: '/buy-tiktok-followers',
         },
         {
-          label: 'Buy TikTok Views Canada',
+          label: 'Buy TikTok Views',
           href: '/buy-tiktok-views',
         },
         {
@@ -954,14 +954,14 @@ export const TIKTOK_VIEWS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
       id: 'tt-v-explore-more',
       heading: 'Explore Related TikTok Pages',
       intro:
-        'Pair video views with audience growth, or return to InstantViral for more services across Canada.',
+        'Pair video views with audience growth, or return to NovaLikes for more services worldwide.',
       links: [
         {
-          label: 'Buy TikTok Followers Canada',
+          label: 'Buy TikTok Followers',
           href: '/buy-tiktok-followers',
         },
         {
-          label: 'Buy TikTok Likes Canada',
+          label: 'Buy TikTok Likes',
           href: '/buy-tiktok-likes',
         },
         {

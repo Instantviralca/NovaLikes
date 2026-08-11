@@ -9,7 +9,7 @@ const LOOP_MS = 7600;
 
 const LIVE_TOASTS = [
   { id: 'a', label: 'Realtime views', detail: '+312 in the last hour' },
-  { id: 'b', label: 'Audience pulse', detail: 'Canada + Suggested' },
+  { id: 'b', label: 'Audience pulse', detail: 'Worldwide + Suggested' },
   { id: 'c', label: 'Watch session', detail: 'Retention holding steady' },
 ] as const;
 

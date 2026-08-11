@@ -107,12 +107,12 @@ export type FacebookFollowersPageConfig = {
 };
 
 /**
- * Lean topical blocks for Buy Facebook Followers Canada.
+ * Lean topical blocks for Buy Facebook Followers.
  * Hero, pricing, Why Buy, How to Buy, and requirements remain in data/content/facebook.ts.
  */
 export const FACEBOOK_FOLLOWERS_PAGE_CONFIG: FacebookFollowersPageConfig = {
   orderNotice:
-    'InstantViral never asks for your Facebook password. Your order is processed using only your public Facebook Page URL and the information you provide during checkout.',
+    'NovaLikes never asks for your Facebook password. Your order is processed using only your public Facebook Page URL and the information you provide during checkout.',
   canYouBuy: {
     id: 'can-you-buy-facebook-followers',
     title: 'Can You Buy Facebook Followers?',
@@ -285,10 +285,10 @@ export const FACEBOOK_FOLLOWERS_PAGE_CONFIG: FacebookFollowersPageConfig = {
     ],
   },
   canada: {
-    id: 'buying-facebook-followers-in-canada',
-    title: 'Buying Facebook Followers in Canada',
+    id: 'buying-facebook-followers',
+    title: 'Buying Facebook Followers worldwide',
     description:
-      'InstantViral offers Facebook follower packages for businesses, creators and organizations across Canada. Compare package options, review pricing and place your order using only your public Facebook Page URL.',
+      'NovaLikes offers Facebook follower packages for businesses, creators and organizations worldwide. Compare package options, review pricing and place your order using only your public Facebook Page URL.',
     body: "Whether you're building a local business page, expanding a creator community or supporting a brand campaign, choosing the right follower package starts with understanding your goals. Compare available quantities before completing your purchase.",
     cards: [
       {
@@ -358,16 +358,16 @@ export const FACEBOOK_FOLLOWERS_PAGE_CONFIG: FacebookFollowersPageConfig = {
       'Select a package that aligns with your current audience and long-term marketing strategy instead of automatically choosing the largest option.',
   },
   whyChoose: {
-    id: 'why-choose-instantviral-facebook-followers',
-    title: 'Why Choose InstantViral',
+    id: 'why-choose-novalikes-facebook-followers',
+    title: 'Why Choose NovaLikes',
     description:
-      'InstantViral provides a clear, secure way to buy Facebook follower packages with transparent pricing and Canadian support.',
+      'NovaLikes provides a clear, secure way to buy Facebook follower packages with transparent pricing and customer support.',
     items: [
       {
         id: 'fb-f-wc-2018',
         title: 'Founded Since 2018',
         description:
-          'Years of experience helping Canadian businesses, creators and brands grow their Facebook presence.',
+          'Years of experience helping businesses, creators and brands grow their Facebook presence.',
         icon: 'sparkles',
       },
       {
@@ -386,7 +386,7 @@ export const FACEBOOK_FOLLOWERS_PAGE_CONFIG: FacebookFollowersPageConfig = {
       },
       {
         id: 'fb-f-wc-support',
-        title: 'Canadian Support',
+        title: 'Customer Support',
         description:
           'Get help from a support team available for questions before and after you place your order.',
         icon: 'headphones',

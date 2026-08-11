@@ -2,7 +2,7 @@
  * Anonymous analytics session ID — Document 14.09.
  */
 
-const SESSION_STORAGE_KEY = 'instantviral.analytics.session.v1';
+const SESSION_STORAGE_KEY = 'novalikes.analytics.session.v1';
 
 function createSessionId(): string {
   if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {

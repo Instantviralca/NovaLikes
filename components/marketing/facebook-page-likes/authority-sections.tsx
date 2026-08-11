@@ -36,7 +36,7 @@ export type RelatedArticleWithThumb = InternalLink & {
   };
 };
 
-/** Section 3 — Why Choose InstantViral */
+/** Section 3 — Why Choose NovaLikes */
 export function FacebookPageLikesWhyChoose({
   config = FACEBOOK_PAGE_LIKES_PAGE_CONFIG,
   className,
@@ -639,7 +639,7 @@ export function FacebookPageLikesBeforeBuying({
   );
 }
 
-/** Section 12 — Buying in Canada */
+/** Section 12 — Buying worldwide */
 export function FacebookPageLikesCanada({
   config = FACEBOOK_PAGE_LIKES_PAGE_CONFIG,
   className,
@@ -659,7 +659,7 @@ export function FacebookPageLikesCanada({
             <span aria-hidden className="text-sm leading-none">
               🍁
             </span>
-            Canada-ready Facebook Page Likes
+            Ready Facebook Page Likes
           </div>
           <Heading as="h2" size="h2" id={`${canada.id}-heading`} className="tracking-tight">
             {canada.title}

@@ -29,7 +29,7 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
     .filter((o) => o.createdAt.startsWith(monthKey))
     .reduce((sum, o) => sum + o.total.amount, 0);
 
-  const money = (amount: number) => formatMoney(amount, 'USD' as CurrencyCode, 'en-CA');
+  const money = (amount: number) => formatMoney(amount, 'USD' as CurrencyCode, 'en');
 
   const toOrderRow = (o: (typeof orders)[number]) => {
     const item = o.items[0];

@@ -217,7 +217,7 @@ export function FacebookFollowersHeroDashboard({
             </span>
             <div>
               <p className="text-[10px] font-bold text-stone-900">Meta Business Suite</p>
-              <p className="text-[9px] text-stone-400">Page insights · Canada</p>
+              <p className="text-[9px] text-stone-400">Page insights · Global</p>
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2 py-0.5 text-[9px] font-bold text-sky-700">
@@ -242,7 +242,7 @@ export function FacebookFollowersHeroDashboard({
               </div>
               <div className="pt-8">
                 <p className="text-sm font-bold text-stone-900">Your Business Page</p>
-                <p className="text-[10px] text-stone-500">Public · Community · Canada</p>
+                <p className="text-[10px] text-stone-500">Public · Community · Global</p>
               </div>
               <div className="mt-3 flex items-end justify-between gap-2">
                 <div>

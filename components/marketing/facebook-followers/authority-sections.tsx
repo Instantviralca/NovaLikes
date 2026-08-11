@@ -563,7 +563,7 @@ export function FacebookFollowersBeforeBuying({
   );
 }
 
-/** Section 11 — Buying in Canada */
+/** Section 11 — Buying worldwide */
 export function FacebookFollowersCanada({
   config = FACEBOOK_FOLLOWERS_PAGE_CONFIG,
   className,
@@ -583,7 +583,7 @@ export function FacebookFollowersCanada({
             <span aria-hidden className="text-sm leading-none">
               🍁
             </span>
-            Canada-ready Facebook growth
+            Ready Facebook growth
           </div>
           <Heading as="h2" size="h2" id={`${canada.id}-heading`} className="tracking-tight">
             {canada.title}
@@ -692,7 +692,7 @@ export function FacebookFollowersPackageSizes({
   );
 }
 
-/** Section — Why Choose InstantViral trust block */
+/** Section — Why Choose NovaLikes trust block */
 export function FacebookFollowersWhyChoose({
   config = FACEBOOK_FOLLOWERS_PAGE_CONFIG,
   className,

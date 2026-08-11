@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUpRight, Check, Clock3, Eye, Users, X } from 'lucide-r
 
 import { YouTubeViewsAnalyticsDashboard } from '@/components/illustrations/youtube-views-analytics-dashboard';
 import { YouTubeViewsAudienceRetentionDashboard } from '@/components/illustrations/youtube-views-audience-retention-dashboard';
-import { YouTubeViewsCanadaDashboard } from '@/components/illustrations/youtube-views-canada-dashboard';
+import { YouTubeViewsGlobalDashboard } from '@/components/illustrations/youtube-views-canada-dashboard';
 import { YouTubeViewsOrderStatusDashboard } from '@/components/illustrations/youtube-views-order-status-dashboard';
 import { YouTubeViewsProcessTimeline } from '@/components/illustrations/youtube-views-process-timeline';
 import { YouTubeViewsTrafficSourcesDashboard } from '@/components/illustrations/youtube-views-traffic-sources-dashboard';
@@ -40,7 +40,7 @@ export type RelatedArticleWithThumb = InternalLink & {
   };
 };
 
-/** Section 3 — Why Choose InstantViral */
+/** Section 3 — Why Choose NovaLikes */
 export function YouTubeViewsWhyChoose({
   config = YOUTUBE_VIEWS_PAGE_CONFIG,
   className,
@@ -585,7 +585,7 @@ export function YouTubeViewsServiceCompare({
   );
 }
 
-/** Section 11 — Buying in Canada */
+/** Section 11 — Buying worldwide */
 export function YouTubeViewsCanada({
   config = YOUTUBE_VIEWS_PAGE_CONFIG,
   className,
@@ -603,7 +603,7 @@ export function YouTubeViewsCanada({
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
           <FadeUp immediate className="space-y-4">
             <div className="mb-1 inline-flex items-center gap-2 rounded-full border border-red-100 bg-[#FFF1F2] px-3 py-1.5 text-xs font-semibold text-[#B91C1C]">
-              Canada-ready YouTube Views
+              Ready YouTube Views
             </div>
             <Heading as="h2" size="h2" id={`${canada.id}-heading`} className="tracking-tight">
               {canada.title}
@@ -617,7 +617,7 @@ export function YouTubeViewsCanada({
             </p>
           </FadeUp>
           <FadeUp delay={0.04} className="mx-auto w-full max-w-[24rem] lg:max-w-none">
-            <YouTubeViewsCanadaDashboard className="max-w-none" />
+            <YouTubeViewsGlobalDashboard className="max-w-none" />
           </FadeUp>
         </div>
 

@@ -22,7 +22,7 @@ export default function AdminLoginPage() {
           <Heading as="h1" size="h2">
             Admin sign in
           </Heading>
-          <MutedText>Staff access for InstantViral operations.</MutedText>
+          <MutedText>Staff access for NovaLikes operations.</MutedText>
         </div>
         <Suspense fallback={<p className="text-sm text-muted-foreground">Loading…</p>}>
           <AdminLoginForm configured={configured} />

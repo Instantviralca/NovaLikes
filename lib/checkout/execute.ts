@@ -98,7 +98,7 @@ export async function executeCheckout(
         orderId: order.id,
         amount: order.total,
         customerEmail: order.guestEmail,
-        description: `InstantViral order ${order.id}`,
+        description: `NovaLikes order ${order.id}`,
         metadata: { orderId: order.id },
         successUrl,
         cancelUrl,

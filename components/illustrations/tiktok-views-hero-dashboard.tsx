@@ -263,7 +263,7 @@ export function TikTokViewsHeroDashboard({
                 >
                   IV
                 </span>
-                <p className="truncate text-[11px] font-bold text-white">@creator.ca</p>
+                <p className="truncate text-[11px] font-bold text-white">@creator</p>
                 <span
                   className="rounded-full px-1.5 py-0.5 text-[8px] font-bold text-white"
                   style={{ background: brand }}

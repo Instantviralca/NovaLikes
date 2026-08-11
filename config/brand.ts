@@ -1,5 +1,5 @@
 /**
- * InstantViral Brand Strategy — Document 07.5 (Merged v1).
+ * NovaLikes Brand Strategy — Document 07.5 (Merged v1).
  * Highest-level brand reference for design, SEO, content, copywriting, and development.
  * Do not invent marketing slogans beyond what the Brand Strategy states.
  */
@@ -7,8 +7,8 @@
 import type { BrandConfig } from '@/types/brand';
 
 export const brand: BrandConfig = {
-  name: 'InstantViral',
-  legalName: 'InstantViral',
+  name: 'NovaLikes',
+  legalName: 'NovaLikes',
   /** Derived from vision: educational-first growth platform — not a campaign slogan. */
   tagline: 'Trusted educational-first social media growth',
 
@@ -94,8 +94,8 @@ export const brand: BrandConfig = {
       intent: 'Explain the practical value of the outcome.',
     },
     {
-      id: 'why-instantviral',
-      question: 'Why InstantViral?',
+      id: 'why-novalikes',
+      question: 'Why NovaLikes?',
       intent: 'Differentiate on trust, education, clarity, and UX.',
     },
     {

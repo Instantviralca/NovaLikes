@@ -8,7 +8,7 @@ const CARDS = [
   {
     id: 'username',
     label: 'TikTok Username',
-    value: '@creator.ca',
+    value: '@creator',
     icon: AtSign,
     accent: 'from-[#25F4EE] to-[#FE2C55]',
   },

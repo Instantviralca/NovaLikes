@@ -63,7 +63,7 @@ export function TikTokLikesSecureOrderingDashboard({
             Video receiving likes
           </p>
           <p className="mt-0.5 truncate text-sm font-bold text-stone-800">
-            tiktok.com/@creator.ca/video/…
+            tiktok.com/@creator/video/…
           </p>
         </div>
 

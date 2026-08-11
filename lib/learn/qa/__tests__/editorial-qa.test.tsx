@@ -22,7 +22,7 @@ const mockAuthor: PublicAuthor = {
   slug: 'jordan-lee',
   name: 'Jordan Lee',
   role: 'Content Strategist',
-  bio: 'Jordan writes InstantViral Learn guides on social growth topics.',
+  bio: 'Jordan writes NovaLikes Learn guides on social growth topics.',
   expertise: ['Instagram'],
   joinedAt: '2024-01-01T00:00:00.000Z',
   active: true,
@@ -112,7 +112,7 @@ function makeArticle(
     authorId: 'author-1',
     featuredImage: {
       src: '/og-default.png',
-      alt: 'Abstract InstantViral branded cover',
+      alt: 'Abstract NovaLikes branded cover',
       width: 1600,
       height: 900,
     },
@@ -121,7 +121,7 @@ function makeArticle(
     updatedAt: '2026-06-01T00:00:00.000Z',
     showModifiedDate: false,
     seo: {
-      title: 'YouTube Growth Habits | Learn | InstantViral',
+      title: 'YouTube Growth Habits | Learn | NovaLikes',
       description:
         'Practical YouTube growth habits for creators who want sustainable channel progress over time.',
       canonicalPath: '/learn/youtube-growth-habits',
@@ -259,7 +259,7 @@ describe('Editorial QA System', () => {
           slug: 'other-guide',
           title: 'YouTube Growth Habits',
           seo: {
-            title: 'Other Guide | Learn | InstantViral',
+            title: 'Other Guide | Learn | NovaLikes',
             description: 'A different description for the peer article content.',
           },
         },

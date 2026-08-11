@@ -77,7 +77,7 @@ export function TikTokFollowersFinalCtaVisual({ className }: { className?: strin
                 <p className="mt-1 text-lg font-bold tracking-tight text-stone-900">
                   1,000 Followers
                 </p>
-                <p className="mt-1 text-xs font-medium text-stone-500">@creator.ca</p>
+                <p className="mt-1 text-xs font-medium text-stone-500">@creator</p>
               </div>
 
               <div className="mt-3 space-y-1.5">

@@ -131,7 +131,7 @@ export function InstagramPackagesHeroDashboard({
                 </span>
                 <div className="min-w-0">
                   <div className="flex items-center gap-1">
-                    <p className="truncate text-sm font-bold text-stone-900">instantviral</p>
+                    <p className="truncate text-sm font-bold text-stone-900">novalikes</p>
                     <svg viewBox="0 0 24 24" className="size-3.5 shrink-0" aria-hidden>
                       <circle cx="12" cy="12" r="10" fill="#3897f0" />
                       <path

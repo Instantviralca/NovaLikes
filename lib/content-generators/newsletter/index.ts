@@ -50,7 +50,7 @@ export function generateNewsletter(brief: ArticleBrief): NewsletterAssets {
   const destinationUrl = withNewsletterUtm(
     `${SEO_PRODUCTION_DOMAIN}${learnArticlePath(brief.slug)}`,
   );
-  const intro = `This week on InstantViral Learn: ${brief.workingTitle}. ${brief.shortAnswer}`
+  const intro = `This week on NovaLikes Learn: ${brief.workingTitle}. ${brief.shortAnswer}`
     .trim()
     .slice(0, MAX_INTRO);
   const mainSummary =

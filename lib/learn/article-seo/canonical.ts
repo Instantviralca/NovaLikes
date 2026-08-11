@@ -13,7 +13,7 @@ const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 /**
  * Build self-referencing canonical for a Learn article slug.
- * Always https://instantviral.ca/learn/{slug} with lowercase slug.
+ * Always https://novalikes.com/learn/{slug} with lowercase slug.
  */
 export function buildArticleCanonical(slug: string): string {
   const clean = slug.trim().toLowerCase();

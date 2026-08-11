@@ -21,7 +21,7 @@ const serviceEntity = {
   kind: 'service' as const,
   serviceSlug: 'buy-instagram-followers',
   name: 'Buy Instagram Followers',
-  url: 'https://instantviral.ca/buy-instagram-followers',
+  url: 'https://novalikes.com/buy-instagram-followers',
 };
 
 describe('Review & Aggregate Rating Schema Engine (14.03)', () => {

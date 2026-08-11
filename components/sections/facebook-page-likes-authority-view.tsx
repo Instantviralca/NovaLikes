@@ -60,7 +60,7 @@ function enrichRelatedArticles(
 }
 
 /**
- * Buy Facebook Page Likes Canada — full authority layout (Sections 1–19).
+ * Buy Facebook Page Likes — full authority layout (Sections 1–19).
  */
 export function FacebookPageLikesAuthorityView({
   service,
@@ -183,7 +183,7 @@ export function FacebookPageLikesAuthorityView({
           'Public Facebook Page URL Only',
           'Secure Checkout',
           'Order Tracking',
-          'Canadian Support',
+          'Customer Support',
         ]}
         className="[&_p:last-child]:text-white/70"
       />

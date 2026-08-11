@@ -94,15 +94,15 @@ export type FacebookPostLikesPageConfig = {
 };
 
 /**
- * Topical blocks for Buy Facebook Post Likes Canada.
+ * Topical blocks for Buy Facebook Post Likes.
  * Hero, pricing, Why Buy, How to Buy, and requirements remain in data/content/facebook.ts.
  */
 export const FACEBOOK_POST_LIKES_PAGE_CONFIG: FacebookPostLikesPageConfig = {
   whyChoose: {
-    id: 'why-choose-instantviral-facebook-post-likes',
-    title: 'Why Choose InstantViral for Facebook Post Likes?',
+    id: 'why-choose-novalikes-facebook-post-likes',
+    title: 'Why Choose NovaLikes for Facebook Post Likes?',
     description:
-      'InstantViral offers a straightforward ordering experience with secure checkout, transparent package options and support throughout the ordering process.',
+      'NovaLikes offers a straightforward ordering experience with secure checkout, transparent package options and support throughout the ordering process.',
     items: [
       {
         id: 'fb-post-wc-2018',
@@ -127,7 +127,7 @@ export const FACEBOOK_POST_LIKES_PAGE_CONFIG: FacebookPostLikesPageConfig = {
       },
       {
         id: 'fb-post-wc-support',
-        title: 'Canadian Support',
+        title: 'Customer Support',
         description:
           'Friendly assistance before and after your order whenever you need help.',
         icon: 'headphones',
@@ -137,7 +137,7 @@ export const FACEBOOK_POST_LIKES_PAGE_CONFIG: FacebookPostLikesPageConfig = {
   whyBuyNote:
     'Post Likes work best when paired with useful content, relevant visuals and meaningful conversations with your audience.',
   orderNotice:
-    'InstantViral only requires the public URL of your Facebook post. Your Facebook password is never requested or stored.',
+    'NovaLikes only requires the public URL of your Facebook post. Your Facebook password is never requested or stored.',
   canYouBuy: {
     id: 'can-you-buy-facebook-post-likes',
     title: 'Can You Buy Facebook Post Likes?',
@@ -260,10 +260,10 @@ export const FACEBOOK_POST_LIKES_PAGE_CONFIG: FacebookPostLikesPageConfig = {
       'Many businesses combine Post Likes, Page Likes and Followers as part of a broader Facebook marketing strategy. Each service supports a different objective and should be selected according to your campaign goals.',
   },
   canada: {
-    id: 'buying-facebook-post-likes-in-canada',
-    title: 'Buying Facebook Post Likes in Canada',
+    id: 'buying-facebook-post-likes',
+    title: 'Buying Facebook Post Likes worldwide',
     description:
-      "InstantViral provides Facebook Post Like packages for businesses, creators and brands across Canada. Whether you're promoting a product launch, seasonal campaign or important announcement, you can choose the package that best matches your engagement goals.",
+      "NovaLikes provides Facebook Post Like packages for businesses, creators and brands worldwide. Whether you're promoting a product launch, seasonal campaign or important announcement, you can choose the package that best matches your engagement goals.",
     body: 'Different posts require different levels of engagement. A local promotion may only need a smaller package, while a larger marketing campaign or product announcement may benefit from a higher quantity of Post Likes.',
     cards: [
       {

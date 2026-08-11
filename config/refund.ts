@@ -22,7 +22,7 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current Refund Policy configuration.
- * Verified today: operating/legal display name InstantViral, domain instantviral.ca.
+ * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
  * Refill durations come from real package data on service pages — not from this file.
  */
 export const refundConfig: RefundConfig = {

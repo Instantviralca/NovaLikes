@@ -22,7 +22,7 @@ export type ServiceRelatedArticlesProps = {
 export function ServiceRelatedArticles({
   id = 'related-articles',
   title = 'Related Articles',
-  description = 'Guides from the InstantViral Learn Center that pair with this service.',
+  description = 'Guides from the NovaLikes Learn Center that pair with this service.',
   articles,
   className,
 }: ServiceRelatedArticlesProps) {

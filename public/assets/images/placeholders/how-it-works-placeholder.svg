@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="How it works visual placeholder">
   <rect width="640" height="480" rx="32" fill="#FFFBF8" stroke="#E8DDD4"/>
-  <rect x="48" y="56" width="160" height="120" rx="20" fill="#FFF1E8"/>
-  <rect x="240" y="56" width="160" height="120" rx="20" fill="#FFF1E8"/>
-  <rect x="432" y="56" width="160" height="120" rx="20" fill="#FFF1E8"/>
-  <circle cx="128" cy="116" r="24" fill="#F07020"/>
-  <circle cx="320" cy="116" r="24" fill="#F07020"/>
-  <circle cx="512" cy="116" r="24" fill="#F07020"/>
+  <rect x="48" y="56" width="160" height="120" rx="20" fill="#FFF4ED"/>
+  <rect x="240" y="56" width="160" height="120" rx="20" fill="#FFF4ED"/>
+  <rect x="432" y="56" width="160" height="120" rx="20" fill="#FFF4ED"/>
+  <circle cx="128" cy="116" r="24" fill="#E85D04"/>
+  <circle cx="320" cy="116" r="24" fill="#E85D04"/>
+  <circle cx="512" cy="116" r="24" fill="#E85D04"/>
   <text x="128" y="122" text-anchor="middle" fill="#fff" font-size="18" font-family="system-ui" font-weight="700">1</text>
   <text x="320" y="122" text-anchor="middle" fill="#fff" font-size="18" font-family="system-ui" font-weight="700">2</text>
   <text x="512" y="122" text-anchor="middle" fill="#fff" font-size="18" font-family="system-ui" font-weight="700">3</text>

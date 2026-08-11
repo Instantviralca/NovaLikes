@@ -34,7 +34,7 @@ export type TikTokFollowersPageConfig = {
 };
 
 /**
- * Lean topical blocks for Buy TikTok Followers Canada.
+ * Lean topical blocks for Buy TikTok Followers.
  * Hero, pricing, process, requirements, FAQ remain in data/content/tiktok.ts.
  */
 export const TIKTOK_FOLLOWERS_PAGE_CONFIG: TikTokFollowersPageConfig = {

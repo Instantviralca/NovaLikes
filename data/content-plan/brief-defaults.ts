@@ -14,7 +14,7 @@ export const DEFAULT_IMAGE_REQUIREMENTS: ContentImageRequirements = {
   minWidth: 1200,
   minHeight: 630,
   notes:
-    'Use an original InstantViral Learn cover. Verify rights. Prefer WebP. Provide meaningful alt text. No hotlinked screenshots without permission.',
+    'Use an original NovaLikes Learn cover. Verify rights. Prefer WebP. Provide meaningful alt text. No hotlinked screenshots without permission.',
 };
 
 export function nextReviewDateFromCadence(

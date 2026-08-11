@@ -1,29 +1,29 @@
 import { routes } from '@/config/routes';
 
 /**
- * Homepage editorial SEO sections — Instagram Followers Canada authority.
+ * Homepage editorial SEO sections — Instagram Followers authority.
  * Rendered by HomepageEditorialSections; does not replace commerce CTAs.
  */
 export const homepageEditorial = {
   directAnswer: {
     id: 'where-buy-instagram-followers',
-    title: 'Where Can You Buy Instagram Followers in Canada?',
+    title: 'Where Can You Buy Instagram Followers worldwide?',
     intro: [
-      'Looking for the best place to buy Instagram followers in Canada? Start with the provider—not the package size. Prefer a Canada-focused growth platform that publishes clear options, public policies, and enough detail to compare before you commit.',
-      'Built for Canadian creators, businesses, influencers, and brands who want one place to evaluate growth options—and buy real Instagram followers when the fit is right.',
+      'Looking for the best place to buy Instagram followers worldwide? Start with the provider—not the package size. Prefer a worldwide growth platform that publishes clear options, public policies, and enough detail to compare before you commit.',
+      'Built for creators, businesses, influencers, and brands who want one place to evaluate growth options—and buy real Instagram followers when the fit is right.',
     ],
     quickAnswer: {
       label: 'Quick Answer',
-      question: 'Where can I buy Instagram followers in Canada?',
+      question: 'Where can I buy Instagram followers worldwide?',
       answer:
-        'InstantViral is a trusted Canada-focused option for where to buy Instagram followers online. Look for transparent package pages and public policies, then choose the option that matches your goals.',
+        'NovaLikes is a trusted worldwide option for where to buy Instagram followers online. Look for transparent package pages and public policies, then choose the option that matches your goals.',
     },
     features: [
       {
-        id: 'canada-focus',
-        title: 'Canada-Focused Platform',
+        id: 'global-focus',
+        title: 'Global Platform',
         description:
-          'Choose a growth platform designed for Canadian creators, businesses, and brands—not a generic offshore storefront.',
+          'Choose a growth platform designed for creators, businesses, and brands—not a generic offshore storefront.',
       },
       {
         id: 'clear-packages',
@@ -38,10 +38,10 @@ export const homepageEditorial = {
           'Refund, terms, and privacy information should be easy to find and review in advance.',
       },
       {
-        id: 'why-instantviral',
-        title: 'Why InstantViral',
+        id: 'why-novalikes',
+        title: 'Why NovaLikes',
         description:
-          'One transparent place to evaluate profile growth and audience solutions across Canada.',
+          'One transparent place to evaluate profile growth and audience solutions worldwide.',
       },
     ],
     ctaPrompt: 'Ready to grow your creator profile?',
@@ -132,9 +132,9 @@ export const homepageEditorial = {
       href: '/buy-instagram-likes',
     },
     entityBox: {
-      title: 'Why InstantViral?',
+      title: 'Why NovaLikes?',
       items: [
-        'Canada-focused platform',
+        'worldwide platform',
         'Secure checkout',
         'No Instagram password required',
         'Multiple Instagram package options',
@@ -143,11 +143,11 @@ export const homepageEditorial = {
       ],
     },
   },
-  whyInstantViral: {
-    id: 'why-instantviral-instagram-growth',
-    title: 'Why Thousands Choose InstantViral for Instagram Growth',
+  whyNovaLikes: {
+    id: 'why-novalikes-instagram-growth',
+    title: 'Why Thousands Choose NovaLikes for Instagram Growth',
     intro: [
-      'A growth platform built for Canadian creators and brands—clear packages, username-only ordering, protected checkout, and help before and after you buy.',
+      'A growth platform built for creators and brands—clear packages, username-only ordering, protected checkout, and help before and after you buy.',
     ],
     features: [
       {
@@ -181,9 +181,9 @@ export const homepageEditorial = {
         description: 'Monitor status from confirmation through delivery.',
       },
       {
-        id: 'designed-for-canada',
-        title: 'Designed for Canada',
-        description: 'Built for Canadian creators, businesses, influencers, and agencies.',
+        id: 'designed-for-global',
+        title: 'Designed for Global Creators',
+        description: 'Built for creators, businesses, influencers, and agencies.',
       },
       {
         id: 'multiple-services',
@@ -198,13 +198,13 @@ export const homepageEditorial = {
       'Order Tracking',
       'Customer Support',
       'Transparent Pricing',
-      'Canada Focused',
+      'Global Reach',
       'Instagram Specialists',
     ],
     comparison: {
-      title: 'Why Customers Choose InstantViral',
-      instantViral: {
-        title: 'InstantViral',
+      title: 'Why Customers Choose NovaLikes',
+      novaLikes: {
+        title: 'NovaLikes',
         items: [
           'Clear packages',
           'Secure checkout',
@@ -226,8 +226,8 @@ export const homepageEditorial = {
         ],
       },
     },
-    canadianTrust: {
-      title: 'Why Canadian Businesses Trust InstantViral',
+    audienceTrust: {
+      title: 'Why Businesses Trust NovaLikes',
       audiences: [
         'Creator',
         'Agency',
@@ -239,7 +239,7 @@ export const homepageEditorial = {
         'Startup',
       ],
       description:
-        'From independent creators to growing Canadian businesses, the platform helps strengthen Instagram presence with a clear ordering path and dedicated help.',
+        'From independent creators to growing businesses, the platform helps strengthen Instagram presence with a clear ordering path and dedicated help.',
     },
     ctaPrompt: 'Looking for growth options?',
     cta: {
@@ -249,7 +249,7 @@ export const homepageEditorial = {
   },
   instagramHub: {
     id: 'instagram-growth-services',
-    title: 'Instagram Growth Options for Canadian Creators & Businesses',
+    title: 'Instagram Growth Options for Creators & Businesses',
     intro: [] as string[],
     featured: {
       id: 'hub-followers',
@@ -380,24 +380,24 @@ export const homepageEditorial = {
       'Purchased growth can strengthen social proof and profile presentation, but it does not replace content quality or organic strategy. Treat audience packages as presentation support—not a guarantee of sales or reach.',
     ],
   },
-  canada: {
-    id: 'instagram-followers-canada',
-    title: 'Instagram Follower Services for Canadian Creators and Businesses',
+  globalAudience: {
+    id: 'instagram-followers-global',
+    title: 'Instagram Follower Services for Creators and Businesses',
     body: [
-      'InstantViral serves customers across Canada who want a simple way to strengthen the visible presence of an Instagram profile. The platform can be used by individual creators, small businesses, ecommerce brands, agencies and established organizations managing Instagram campaigns. Pricing, checkout and package availability should be displayed clearly before purchase so customers understand what they are ordering.',
-      'Whether you are building a profile in Toronto, Vancouver, Calgary or elsewhere in Canada, the ordering process remains online and does not require access to your Instagram password.',
+      'NovaLikes serves customers worldwide who want a simple way to strengthen the visible presence of an Instagram profile. The platform can be used by individual creators, small businesses, ecommerce brands, agencies and established organizations managing Instagram campaigns. Pricing, checkout and package availability should be displayed clearly before purchase so customers understand what they are ordering.',
+      'Whether you are building a profile in major cities worldwide or elsewhere worldwide, the ordering process remains online and does not require access to your Instagram password.',
     ],
   },
   about: {
-    id: 'about-instantviral-home',
-    title: 'About InstantViral',
+    id: 'about-novalikes-home',
+    title: 'About NovaLikes',
     body: [
-      'InstantViral is a Canada-focused social media services website offering package-based Instagram growth options, including followers, likes, views and comments. Customers place orders through the website using a public social media username rather than sharing an account password. Full service, delivery and policy details are available before checkout.',
+      'NovaLikes is a worldwide social media services website offering package-based Instagram growth options, including followers, likes, views and comments. Customers place orders through the website using a public social media username rather than sharing an account password. Full service, delivery and policy details are available before checkout.',
     ],
     facts: [
-      { label: 'Business name', value: 'InstantViral' },
-      { label: 'Website', value: 'instantviral.ca' },
-      { label: 'Primary market', value: 'Canada' },
+      { label: 'Business name', value: 'NovaLikes' },
+      { label: 'Website', value: 'novalikes.com' },
+      { label: 'Audience', value: 'Worldwide' },
       {
         label: 'Services',
         value:
@@ -423,10 +423,10 @@ export const homepageEditorial = {
     ],
   },
   howConciseAnswer:
-    'To buy Instagram followers, select a package, submit the public Instagram username, complete checkout and track the order. InstantViral does not require the customer’s Instagram password.',
+    'To buy Instagram followers, select a package, submit the public Instagram username, complete checkout and track the order. NovaLikes does not require the customer’s Instagram password.',
   howToBuy: {
     id: 'how-to-buy-instagram-followers',
-    title: 'How to Buy Instagram Followers in Canada',
+    title: 'How to Buy Instagram Followers worldwide',
     intro:
       'Place an order in a few minutes: choose a package, enter your public username, complete checkout, then monitor delivery from the tracking page.',
     steps: [
@@ -478,7 +478,7 @@ export const homepageEditorial = {
         id: 'qa-track',
         question: 'When can I track delivery?',
         answer:
-          'After checkout is confirmed, open the InstantViral order tracking page to monitor progress.',
+          'After checkout is confirmed, open the NovaLikes order tracking page to monitor progress.',
       },
       {
         id: 'qa-username',
@@ -508,13 +508,13 @@ export const homepageEditorial = {
     },
   },
   entityTrust: {
-    id: 'why-instantviral-is-different',
-    title: 'Why InstantViral is Trusted by Canadian Instagram Users',
+    id: 'why-novalikes-is-different',
+    title: 'Why NovaLikes is Trusted by Instagram Users',
     story: [
       'Most websites only sell Instagram packages.',
-      'InstantViral was built to make the ordering process simple, transparent, and easy to understand.',
+      'NovaLikes was built to make the ordering process simple, transparent, and easy to understand.',
       'Instead of hiding package information behind complicated checkout pages, every service explains what customers receive, how the ordering process works, and where they can get support if they have questions.',
-      "Whether you're a creator, local business, ecommerce brand, agency, or influencer, InstantViral provides one place to compare Instagram growth services before placing an order.",
+      "Whether you're a creator, local business, ecommerce brand, agency, or influencer, NovaLikes provides one place to compare Instagram growth services before placing an order.",
     ],
     values: [
       {
@@ -543,9 +543,9 @@ export const homepageEditorial = {
         description: 'Instagram services are organized into dedicated package pages.',
       },
       {
-        id: 'canadian-focus',
-        title: 'Canadian Focus',
-        description: 'Built for creators and businesses across Canada.',
+        id: 'global-focus',
+        title: 'Global Focus',
+        description: 'Built for creators and businesses worldwide.',
       },
     ],
     metrics: [
@@ -580,8 +580,8 @@ export const homepageEditorial = {
       ],
     },
     comparison: {
-      instantViral: {
-        title: 'InstantViral',
+      novaLikes: {
+        title: 'NovaLikes',
         items: [
           'Clear package pages',
           'Public policies',
@@ -603,9 +603,9 @@ export const homepageEditorial = {
       },
     },
     entityBox: {
-      title: 'About InstantViral',
+      title: 'About NovaLikes',
       items: [
-        'Canada-focused platform',
+        'worldwide platform',
         'Instagram growth services',
         'Followers',
         'Likes',
@@ -626,8 +626,8 @@ export const homepageEditorial = {
     },
   },
   trustedReviews: {
-    id: 'trusted-across-canada',
-    title: 'Customer Experiences Across Canada',
+    id: 'trusted-worldwide',
+    title: 'Customer Experiences Worldwide',
     intro: [
       'See how people describe their overall experience.',
       'Real feedback—so you can decide with confidence.',
@@ -637,7 +637,7 @@ export const homepageEditorial = {
       quote:
         'I compared a few options and found the package pages clear and easy to understand before I ordered.',
       author: 'Sarah M.',
-      location: 'Toronto',
+      location: 'Worldwide',
       rating: 5,
     },
     /** Placeholder audience-framed cards — replace with approved authentic reviews before launch. */
@@ -679,7 +679,7 @@ export const homepageEditorial = {
         rating: 5,
       },
     ],
-    audiencesTitle: 'Who Uses InstantViral?',
+    audiencesTitle: 'Who Uses NovaLikes?',
     audiences: [
       { id: 'content-creators', label: 'Content Creators', icon: 'Video' },
       { id: 'small-businesses', label: 'Small Businesses', icon: 'Building2' },
@@ -818,7 +818,7 @@ export const homepageEditorial = {
         id: 'know-tracking',
         label: 'Order Tracking',
         href: routes.trackOrder,
-        anchor: 'Track your InstantViral order',
+        anchor: 'Track your NovaLikes order',
       },
       {
         id: 'know-contact',
@@ -864,7 +864,7 @@ export const homepageEditorial = {
   },
   seoFooterNav: {
     id: 'homepage-seo-footer-nav',
-    title: 'Explore InstantViral',
+    title: 'Explore NovaLikes',
     columns: [
       {
         id: 'services',
@@ -897,7 +897,7 @@ export const homepageEditorial = {
         id: 'company',
         title: 'Company',
         links: [
-          { label: 'About InstantViral', href: routes.about },
+          { label: 'About NovaLikes', href: routes.about },
           { label: 'Reviews', href: routes.reviews },
           { label: 'Contact', href: routes.contact },
         ],

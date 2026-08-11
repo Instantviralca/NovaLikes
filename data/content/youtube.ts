@@ -4,30 +4,30 @@ import type { ServiceContent } from '@/types/content';
 const PRICING_ANCHOR = '#pricing-packages';
 
 /**
- * Buy YouTube Subscribers Canada — full authority layout (Sections 1–18).
+ * Buy YouTube Subscribers — full authority layout (Sections 1–18).
  */
 function buildBuyYouTubeSubscribersContent(): ServiceContent {
   return {
     slug: 'buy-youtube-subscribers',
     platformId: 'youtube',
     seo: {
-      title: 'Buy YouTube Subscribers Canada | InstantViral',
+      title: 'Buy YouTube Subscribers | NovaLikes',
       description:
-        'Buy YouTube subscribers in Canada using your public channel URL. Compare transparent packages, complete secure checkout with no password required, and monitor available order updates.',
+        'Buy YouTube subscribers worldwide using your public channel URL. Compare transparent packages, complete secure checkout with no password required, and monitor available order updates.',
     },
     hero: {
       eyebrow: 'YOUTUBE SUBSCRIBER PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy YouTube Subscribers Canada',
+      title: 'Buy YouTube Subscribers',
       description:
-        'Grow your YouTube channel with subscriber packages designed for creators, brands and businesses across Canada. Compare transparent package options, choose the quantity that matches your channel goals and place your order using only your public YouTube channel URL. No password is required, secure checkout is included and you can monitor available order updates after confirmation.',
-      purpose: 'Convert for YouTube subscriber packages in Canada',
-      primaryKeyword: 'buy YouTube subscribers Canada',
+        'Grow your YouTube channel with subscriber packages designed for creators, brands and businesses worldwide. Compare transparent package options, choose the quantity that matches your channel goals and place your order using only your public YouTube channel URL. No password is required, secure checkout is included and you can monitor available order updates after confirmation.',
+      purpose: 'Convert for YouTube subscriber packages worldwide',
+      primaryKeyword: 'buy YouTube subscribers',
       supportingKeywords: [
         'Buy YouTube Subscribers',
         'YouTube Subscribers Packages',
         'Real YouTube Subscribers',
         'Increase YouTube Subscribers',
-        'YouTube Growth Canada',
+        'YouTube Growth',
       ],
       suggestedWordCount: 120,
       primaryCta: {
@@ -43,13 +43,13 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
         { id: 'yt-s-trust-password', label: 'No Password Required' },
         { id: 'yt-s-trust-checkout', label: 'Secure Checkout' },
         { id: 'yt-s-trust-track', label: 'Order Tracking' },
-        { id: 'yt-s-trust-ca', label: 'Canadian Support' },
+        { id: 'yt-s-trust-ca', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/youtube-dashboard.svg',
+        src: '/assets/images/illustrations/buy-youtube-subscribers-hero-v2.webp',
         alt: 'YouTube Creator Studio subscribers growth dashboard illustration',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -57,7 +57,7 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
       title: 'Choose Your YouTube Subscribers Package',
       description:
         "Whether you're launching a new YouTube channel or growing an established audience, compare subscriber packages and select the quantity that best matches your publishing strategy and channel goals. Every package includes secure checkout, transparent ordering and available delivery tracking.",
-      purpose: 'Present real InstantViral.ca YouTube subscribers packages',
+      purpose: 'Present real NovaLikes.ca YouTube subscribers packages',
       primaryKeyword: 'YouTube subscribers packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -99,13 +99,13 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-youtube-subscribers',
-      title: 'Why Choose InstantViral for YouTube Subscribers?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-youtube-subscribers',
+      title: 'Why Choose NovaLikes for YouTube Subscribers?',
       description:
-        'InstantViral provides a straightforward ordering experience with transparent subscriber packages, secure checkout and support throughout your purchase.',
+        'NovaLikes provides a straightforward ordering experience with transparent subscriber packages, secure checkout and support throughout your purchase.',
       purpose: 'Reserved for future authority batch (rendered via page-config)',
-      primaryKeyword: 'YouTube growth service Canada',
+      primaryKeyword: 'YouTube growth service',
       suggestedWordCount: 150,
       items: [],
     },
@@ -206,8 +206,8 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
     },
     reviews: {
       id: 'yt-subscribers-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority view — reserved for a future batch',
       testimonialIds: [],
     },
@@ -217,7 +217,7 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
       description:
         'Answers to common questions about buying YouTube subscribers, channel requirements, packages, delivery and tracking.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy YouTube subscribers Canada',
+      primaryKeyword: 'buy YouTube subscribers',
       faqIds: [
         'faq-yt-subscribers-can-you-buy',
         'faq-yt-subscribers-password',
@@ -260,7 +260,7 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
 }
 
 /**
- * Buy YouTube Views Canada — full authority layout (Sections 1–18).
+ * Buy YouTube Views — full authority layout (Sections 1–18).
  * Rebuild follows YouTube Subscribers winning architecture; video-views intent only.
  */
 function buildBuyYouTubeViewsContent(): ServiceContent {
@@ -268,17 +268,17 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
     slug: 'buy-youtube-views',
     platformId: 'youtube',
     seo: {
-      title: 'Buy YouTube Views Canada | InstantViral',
+      title: 'Buy YouTube Views | NovaLikes',
       description:
-        'Buy YouTube views in Canada using your public video URL. Compare transparent packages, complete secure checkout with no password required, and monitor available order updates.',
+        'Buy YouTube views worldwide using your public video URL. Compare transparent packages, complete secure checkout with no password required, and monitor available order updates.',
     },
     hero: {
       eyebrow: 'YOUTUBE VIDEO VIEW PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy YouTube Views Canada',
+      title: 'Buy YouTube Views',
       description:
-        'Increase the visibility of your YouTube videos with view packages designed for creators, businesses and brands across Canada. Compare transparent package options, choose the quantity that matches your promotion plan and place your order using only your public YouTube video URL. No password is required, secure checkout is included and you can monitor available order updates after confirmation.',
-      purpose: 'Convert for YouTube views packages in Canada',
-      primaryKeyword: 'buy YouTube views Canada',
+        'Increase the visibility of your YouTube videos with view packages designed for creators, businesses and brands worldwide. Compare transparent package options, choose the quantity that matches your promotion plan and place your order using only your public YouTube video URL. No password is required, secure checkout is included and you can monitor available order updates after confirmation.',
+      purpose: 'Convert for YouTube views packages worldwide',
+      primaryKeyword: 'buy YouTube views',
       supportingKeywords: [
         'Buy YouTube Views',
         'Buy YouTube Video Views',
@@ -300,13 +300,13 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
         { id: 'yt-v-trust-password', label: 'No Password Required' },
         { id: 'yt-v-trust-checkout', label: 'Secure Checkout' },
         { id: 'yt-v-trust-track', label: 'Order Tracking' },
-        { id: 'yt-v-trust-ca', label: 'Canadian Support' },
+        { id: 'yt-v-trust-ca', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/youtube-dashboard.svg',
+        src: '/assets/images/illustrations/buy-youtube-views-hero-v2.webp',
         alt: 'YouTube Studio video analytics dashboard with views, CTR and traffic sources',
-        width: 1000,
-        height: 800,
+        width: 1200,
+        height: 900,
       },
     },
     pricing: {
@@ -314,7 +314,7 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
       title: 'Choose Your YouTube Views Package',
       description:
         "Whether you're promoting a newly published video or increasing content visibility for existing uploads, compare available view packages and choose the quantity that best supports your promotional objectives. Every package includes secure checkout, transparent ordering and available delivery tracking.",
-      purpose: 'Present real InstantViral.ca YouTube views packages',
+      purpose: 'Present real NovaLikes.ca YouTube views packages',
       primaryKeyword: 'YouTube views packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -356,13 +356,13 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
         },
       ],
     },
-    whyInstantViral: {
-      id: 'why-choose-instantviral-youtube-views',
-      title: 'Why Choose InstantViral for YouTube Views?',
+    whyNovaLikes: {
+      id: 'why-choose-novalikes-youtube-views',
+      title: 'Why Choose NovaLikes for YouTube Views?',
       description:
-        'InstantViral provides transparent YouTube View packages with secure checkout, straightforward ordering and customer support throughout your purchase.',
+        'NovaLikes provides transparent YouTube View packages with secure checkout, straightforward ordering and customer support throughout your purchase.',
       purpose: 'Reserved for authority page-config (Why Choose)',
-      primaryKeyword: 'YouTube promotion service Canada',
+      primaryKeyword: 'YouTube promotion service',
       suggestedWordCount: 150,
       items: [],
     },
@@ -463,8 +463,8 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
     },
     reviews: {
       id: 'yt-views-reviews',
-      title: 'What Customers Say About InstantViral',
-      description: 'Customer reviews for this InstantViral service.',
+      title: 'What Customers Say About NovaLikes',
+      description: 'Customer reviews for this NovaLikes service.',
       purpose: 'Unused on lean authority view — reserved for a future batch',
       testimonialIds: [],
     },
@@ -474,7 +474,7 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
       description:
         'Answers to common questions about buying YouTube views, video requirements, packages, delivery and tracking.',
       purpose: 'Answer buying questions with FAQPage schema',
-      primaryKeyword: 'buy YouTube views Canada',
+      primaryKeyword: 'buy YouTube views',
       faqIds: [
         'faq-yt-views-can-you-buy',
         'faq-yt-views-password',

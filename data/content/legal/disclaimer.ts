@@ -19,7 +19,7 @@ function formatDisplayDate(isoDate: string | undefined): string | undefined {
   if (!isoDate) return undefined;
   const parsed = new Date(`${isoDate}T00:00:00Z`);
   if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -39,7 +39,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
   const affiliationBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} is an independent social media growth service provider. InstantViral operates InstantViral.ca and is not a social media platform.`,
+      text: `${operatingName} is an independent social media growth service provider. NovaLikes operates NovaLikes.ca and is not a social media platform.`,
     },
   ];
 
@@ -51,7 +51,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
   } else {
     affiliationBlocks.push({
       type: 'paragraph',
-      text: 'Unless supported by verified documentation, InstantViral is not:',
+      text: 'Unless supported by verified documentation, NovaLikes is not:',
     });
     affiliationBlocks.push({
       type: 'list',
@@ -67,7 +67,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
 
   affiliationBlocks.push({
     type: 'paragraph',
-    text: 'All trademarks, product names, logos, and brand identifiers for Instagram, TikTok, Facebook, Meta, YouTube, Google, and other third parties belong to their respective owners. Use of those names on InstantViral.ca is for descriptive reference only.',
+    text: 'All trademarks, product names, logos, and brand identifiers for Instagram, TikTok, Facebook, Meta, YouTube, Google, and other third parties belong to their respective owners. Use of those names on NovaLikes.ca is for descriptive reference only.',
   });
 
   const contactBlocks: LegalPolicySection['blocks'] = [
@@ -121,7 +121,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `Content on ${domainHost} is provided for general commercial and informational purposes. It describes InstantViral services, ordering, policies, and educational materials related to social media growth.`,
+          text: `Content on ${domainHost} is provided for general commercial and informational purposes. It describes NovaLikes services, ordering, policies, and educational materials related to social media growth.`,
         },
         {
           type: 'paragraph',
@@ -142,7 +142,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Results from InstantViral services may vary. Outcomes can depend on the selected service, package terms, platform conditions, account or content accessibility, customer-provided information, processing conditions, and changes made by third-party platforms.',
+          text: 'Results from NovaLikes services may vary. Outcomes can depend on the selected service, package terms, platform conditions, account or content accessibility, customer-provided information, processing conditions, and changes made by third-party platforms.',
         },
         {
           type: 'paragraph',
@@ -200,11 +200,11 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Package availability, pricing, features, start times, and delivery estimates may change. InstantViral displays only real package data from InstantViral.ca and does not invent prices, quantities, delivery times, badges, discounts, refill coverage, or package features for display.',
+          text: 'Package availability, pricing, features, start times, and delivery estimates may change. NovaLikes displays only real package data from NovaLikes.ca and does not invent prices, quantities, delivery times, badges, discounts, refill coverage, or package features for display.',
         },
         {
           type: 'paragraph',
-          text: 'Delivery estimates shown with packages are estimates, not absolute guarantees, unless a verified written InstantViral policy expressly states otherwise.',
+          text: 'Delivery estimates shown with packages are estimates, not absolute guarantees, unless a verified written NovaLikes policy expressly states otherwise.',
         },
       ],
     },
@@ -234,7 +234,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral does not control and is not responsible for third-party content, privacy practices, availability, security, terms, products, or services. A link does not automatically imply endorsement.',
+          text: 'NovaLikes does not control and is not responsible for third-party content, privacy practices, availability, security, terms, products, or services. A link does not automatically imply endorsement.',
         },
       ],
     },
@@ -260,7 +260,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Subject to applicable law, InstantViral should not be held responsible for issues caused by incorrect information supplied by the customer or by customer changes after processing begins.',
+          text: 'Subject to applicable law, NovaLikes should not be held responsible for issues caused by incorrect information supplied by the customer or by customer changes after processing begins.',
         },
       ],
     },
@@ -275,7 +275,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Reviews should not be fabricated, altered deceptively, or presented without permission. Where genuine reviews are unavailable, InstantViral does not invent them and does not publish Review or AggregateRating schema without genuine supporting data.',
+          text: 'Reviews should not be fabricated, altered deceptively, or presented without permission. Where genuine reviews are unavailable, NovaLikes does not invent them and does not publish Review or AggregateRating schema without genuine supporting data.',
         },
       ],
     },
@@ -310,15 +310,15 @@ export function getDisclaimerContent(
     id: 'disclaimer',
     path: routes.disclaimer,
     seo: {
-      title: 'Disclaimer | InstantViral Canada',
+      title: 'Disclaimer | NovaLikes',
       description:
-        'Read the InstantViral disclaimer covering third-party platform independence, service limitations, educational content, external links, and results.',
+        'Read the NovaLikes disclaimer covering third-party platform independence, service limitations, educational content, external links, and results.',
     },
     breadcrumbLabel: 'Disclaimer',
     header: {
       title: 'Disclaimer',
       intro:
-        'This Disclaimer explains important limitations about InstantViral services, third-party platform independence, results, educational content, external links, and customer responsibilities. Please read it together with the Terms & Conditions, Privacy Policy, and Refund Policy.',
+        'This Disclaimer explains important limitations about NovaLikes services, third-party platform independence, results, educational content, external links, and customer responsibilities. Please read it together with the Terms & Conditions, Privacy Policy, and Refund Policy.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

@@ -14,7 +14,7 @@ export type YouTubeViewsDirectAnswer = {
 };
 
 /**
- * Topical blocks for Buy YouTube Views Canada.
+ * Topical blocks for Buy YouTube Views.
  * Hero, pricing, Why Buy, How to Buy, and requirements remain in data/content/youtube.ts.
  */
 export type YouTubeViewsPageConfig = {
@@ -110,10 +110,10 @@ export type YouTubeViewsPageConfig = {
 
 export const YOUTUBE_VIEWS_PAGE_CONFIG: YouTubeViewsPageConfig = {
   whyChoose: {
-    id: 'why-choose-instantviral-youtube-views',
-    title: 'Why Choose InstantViral for YouTube Views?',
+    id: 'why-choose-novalikes-youtube-views',
+    title: 'Why Choose NovaLikes for YouTube Views?',
     description:
-      'InstantViral provides transparent YouTube View packages with secure checkout, straightforward ordering and customer support throughout your purchase.',
+      'NovaLikes provides transparent YouTube View packages with secure checkout, straightforward ordering and customer support throughout your purchase.',
     items: [
       {
         id: 'yt-v-wc-2018',
@@ -138,7 +138,7 @@ export const YOUTUBE_VIEWS_PAGE_CONFIG: YouTubeViewsPageConfig = {
       },
       {
         id: 'yt-v-wc-support',
-        title: 'Canadian Support',
+        title: 'Customer Support',
         description:
           'Get assistance before and after your purchase whenever you need help with package selection or order updates.',
         icon: 'headphones',
@@ -148,7 +148,7 @@ export const YOUTUBE_VIEWS_PAGE_CONFIG: YouTubeViewsPageConfig = {
   whyBuyNote:
     'View packages work best alongside valuable content, attractive thumbnails and consistent publishing rather than replacing long-term YouTube growth strategies.',
   orderNotice:
-    'InstantViral only requires the public URL of your YouTube video. Your YouTube password is never requested or stored.',
+    'NovaLikes only requires the public URL of your YouTube video. Your YouTube password is never requested or stored.',
   canYouBuy: {
     id: 'can-you-buy-youtube-views',
     title: 'Can You Buy YouTube Views?',
@@ -270,10 +270,10 @@ export const YOUTUBE_VIEWS_PAGE_CONFIG: YouTubeViewsPageConfig = {
       'Successful YouTube channels improve multiple performance metrics together. Views, Subscribers and Watch Time each provide different insights into audience behaviour and content performance.',
   },
   canada: {
-    id: 'buying-youtube-views-in-canada',
-    title: 'Buying YouTube Views in Canada',
+    id: 'buying-youtube-views',
+    title: 'Buying YouTube Views worldwide',
     description:
-      "InstantViral provides YouTube View packages for creators, businesses and organizations across Canada. Whether you're promoting a newly published video or increasing the visibility of existing content, you can compare available packages and choose the option that best fits your marketing objectives.",
+      "NovaLikes provides YouTube View packages for creators, businesses and organizations worldwide. Whether you're promoting a newly published video or increasing the visibility of existing content, you can compare available packages and choose the option that best fits your marketing objectives.",
     body: 'Every video has different promotional objectives. Smaller View packages may suit recently published videos, while larger campaigns often support videos with broader marketing goals or existing audience interest.',
     closingNote:
       'Choose the package that best matches your existing video performance rather than automatically selecting the largest available quantity.',

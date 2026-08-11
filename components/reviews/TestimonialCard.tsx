@@ -26,7 +26,7 @@ export type TestimonialCardProps = {
 function formatReviewDate(isoDate: string): string {
   const parsed = new Date(isoDate);
   if (Number.isNaN(parsed.getTime())) return isoDate;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',

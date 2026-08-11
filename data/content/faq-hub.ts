@@ -7,14 +7,14 @@ import type { FAQItem } from '@/types/content';
 export const faqHubItems: FAQItem[] = [
   // General
   {
-    id: 'faq-hub-what-is-instantviral',
+    id: 'faq-hub-what-is-novalikes',
     category: 'general',
     order: 1,
     active: true,
-    keywords: ['instantviral', 'about', 'platform', 'services'],
-    question: 'What is InstantViral?',
+    keywords: ['novalikes', 'about', 'platform', 'services'],
+    question: 'What is NovaLikes?',
     answer:
-      'InstantViral is a social media growth service platform offering package-based services for selected Instagram, TikTok, Facebook, and YouTube metrics. Customers choose a service, select one of the real packages available through InstantViral.ca, provide the required public username or URL, complete checkout, and track the order using their order ID and email address.',
+      'NovaLikes is a social media growth service platform offering package-based services for selected Instagram, TikTok, Facebook, and YouTube metrics. Customers choose a service, select one of the real packages available through NovaLikes.ca, provide the required public username or URL, complete checkout, and track the order using their order ID and email address.',
   },
   {
     id: 'faq-hub-platforms',
@@ -24,7 +24,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['platforms', 'instagram', 'tiktok', 'facebook', 'youtube'],
     question: 'Which platforms do you support?',
     answer:
-      'InstantViral currently supports selected services for Instagram, TikTok, Facebook, and YouTube. The available production pages include Instagram Followers, Likes, Views, and Comments; TikTok Followers, Likes, and Views; Facebook Followers, Page Likes, and Post Likes; and YouTube Subscribers and Views.',
+      'NovaLikes currently supports selected services for Instagram, TikTok, Facebook, and YouTube. The available production pages include Instagram Followers, Likes, Views, and Comments; TikTok Followers, Likes, and Views; Facebook Followers, Page Likes, and Post Likes; and YouTube Subscribers and Views.',
   },
   {
     id: 'faq-hub-account-required',
@@ -44,7 +44,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['password', 'login', 'security', 'credentials'],
     question: 'Do you need my social media password?',
     answer:
-      'No. InstantViral does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords. Orders use public information such as a username, page URL, post link, channel URL, or video URL.',
+      'No. NovaLikes does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords. Orders use public information such as a username, page URL, post link, channel URL, or video URL.',
   },
 
   // Ordering & Packages
@@ -53,10 +53,10 @@ export const faqHubItems: FAQItem[] = [
     category: 'ordering',
     order: 1,
     active: true,
-    keywords: ['prices', 'packages', 'real', 'instantviral.ca'],
+    keywords: ['prices', 'packages', 'real', 'novalikes.com'],
     question: 'Are the prices and packages real?',
     answer:
-      'Yes. The website should display only the real package data already maintained or imported from InstantViral.ca. The frontend must not create dummy prices, quantities, delivery times, badges, discounts, or package features.',
+      'Yes. The website should display only the real package data already maintained or imported from NovaLikes.ca. The frontend must not create dummy prices, quantities, delivery times, badges, discounts, or package features.',
   },
   {
     id: 'faq-hub-choose-package',

@@ -71,7 +71,7 @@ export type PackagesPageConfig = {
     description: string;
     rows: PackagesComparisonRow[];
     /**
-     * `competitor` (default): Package / Delivery / Recommended / InstantViral / Typical Providers.
+     * `competitor` (default): Package / Delivery / Recommended / NovaLikes / Typical Providers.
      * `approach`: Package / Recommended For / Package Approach.
      */
     layout?: 'competitor' | 'approach';

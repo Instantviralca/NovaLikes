@@ -18,7 +18,7 @@ function formatDisplayDate(isoDate: string | undefined): string | undefined {
   if (!isoDate) return undefined;
   const parsed = new Date(`${isoDate}T00:00:00Z`);
   if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -64,7 +64,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   const cookieBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'InstantViral uses technologies that are necessary to operate the website and may use additional analytics or marketing technologies only when they are actually enabled in configuration.',
+      text: 'NovaLikes uses technologies that are necessary to operate the website and may use additional analytics or marketing technologies only when they are actually enabled in configuration.',
     },
     {
       type: 'subheading',
@@ -86,7 +86,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
       },
       {
         type: 'paragraph',
-        text: `Analytics tools currently enabled: ${analyticsNames.join(', ')}. These tools may help InstantViral understand page visits, navigation patterns, device categories, conversion events, and website performance.`,
+        text: `Analytics tools currently enabled: ${analyticsNames.join(', ')}. These tools may help NovaLikes understand page visits, navigation patterns, device categories, conversion events, and website performance.`,
       },
     );
   } else {
@@ -98,7 +98,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
       },
       {
         type: 'paragraph',
-        text: 'No named analytics providers are currently enabled in InstantViral configuration. This policy will be updated if analytics tools are introduced.',
+        text: 'No named analytics providers are currently enabled in NovaLikes configuration. This policy will be updated if analytics tools are introduced.',
       },
     );
   }
@@ -124,7 +124,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
       },
       {
         type: 'paragraph',
-        text: 'No marketing pixels or advertising tools are currently enabled in InstantViral configuration.',
+        text: 'No marketing pixels or advertising tools are currently enabled in NovaLikes configuration.',
       },
     );
   }
@@ -137,7 +137,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     cookieBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie preference tool is not currently configured on InstantViral.ca. Browser controls can still be used to manage optional cookies, and this Privacy Policy will be updated if a preference tool is added.',
+      text: 'A dedicated cookie preference tool is not currently configured on NovaLikes.ca. Browser controls can still be used to manage optional cookies, and this Privacy Policy will be updated if a preference tool is added.',
     });
   }
 
@@ -154,7 +154,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   const internationalBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'Some service providers that InstantViral uses to operate the website, process payments, send email, or provide infrastructure may process personal information outside your province or country. Information processed in another jurisdiction may be subject to the laws of that jurisdiction.',
+      text: 'Some service providers that NovaLikes uses to operate the website, process payments, send email, or provide infrastructure may process personal information outside your province or country. Information processed in another jurisdiction may be subject to the laws of that jurisdiction.',
     },
   ];
 
@@ -166,7 +166,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     internationalBlocks.push({
       type: 'paragraph',
-      text: 'A specific hosting location has not been published in InstantViral configuration. InstantViral does not claim Canada-only storage unless and until that arrangement is verified.',
+      text: 'A specific hosting location has not been published in NovaLikes configuration. NovaLikes does not claim region-specific storage unless and until that arrangement is verified.',
     });
   }
 
@@ -180,14 +180,14 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   if (paymentNames.length > 0) {
     internationalBlocks.push({
       type: 'paragraph',
-      text: `Payment processing for enabled providers (${paymentNames.join(', ')}) may occur on those providers’ systems, which can include infrastructure outside Canada. Review each provider’s privacy policy for details.`,
+      text: `Payment processing for enabled providers (${paymentNames.join(', ')}) may occur on those providers’ systems, which can include infrastructure in other regions. Review each provider’s privacy policy for details.`,
     });
   }
 
   const retentionBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} retains personal information only for as long as reasonably necessary for the identified purposes and applicable legal obligations. When information is no longer needed, it should be securely deleted, anonymized, or otherwise disposed of according to InstantViral’s retention practices.`,
+      text: `${operatingName} retains personal information only for as long as reasonably necessary for the identified purposes and applicable legal obligations. When information is no longer needed, it should be securely deleted, anonymized, or otherwise disposed of according to NovaLikes’s retention practices.`,
     },
   ];
 
@@ -205,7 +205,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     retentionBlocks.push({
       type: 'paragraph',
-      text: 'Specific retention periods for carts, support records, orders, analytics, and security logs are not published on this page until a verified retention schedule is configured. InstantViral will not invent retention timeframes for public display.',
+      text: 'Specific retention periods for carts, support records, orders, analytics, and security logs are not published on this page until a verified retention schedule is configured. NovaLikes will not invent retention timeframes for public display.',
     });
   }
 
@@ -224,13 +224,13 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     childrenBlocks.push({
       type: 'paragraph',
-      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable privacy law, payment-provider requirements, and platform terms. InstantViral does not select an arbitrary age for this policy.',
+      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable privacy law, payment-provider requirements, and platform terms. NovaLikes does not select an arbitrary age for this policy.',
     });
   }
 
   childrenBlocks.push({
     type: 'paragraph',
-    text: `If InstantViral learns that it collected personal information from a child without valid authorization, it will take appropriate steps to delete or otherwise address that information.`,
+    text: `If NovaLikes learns that it collected personal information from a child without valid authorization, it will take appropriate steps to delete or otherwise address that information.`,
   });
 
   const contactBlocks: LegalPolicySection['blocks'] = [
@@ -280,7 +280,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
 
   contactBlocks.push({
     type: 'paragraph',
-    text: 'If you are not satisfied with InstantViral’s response, you may have the right to escalate a privacy complaint to the applicable privacy regulator in your jurisdiction.',
+    text: 'If you are not satisfied with NovaLikes’s response, you may have the right to escalate a privacy complaint to the applicable privacy regulator in your jurisdiction.',
   });
 
   return [
@@ -311,7 +311,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Depending on how you use InstantViral, you may provide:',
+          text: 'Depending on how you use NovaLikes, you may provide:',
         },
         {
           type: 'list',
@@ -356,7 +356,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Where actually collected through site operation, security, or enabled tools, InstantViral may process technical information such as IP address, browser type, device type, operating system, referral source, pages visited, approximate location derived from IP, session identifiers, security and error logs, and cookie preferences.',
+          text: 'Where actually collected through site operation, security, or enabled tools, NovaLikes may process technical information such as IP address, browser type, device type, operating system, referral source, pages visited, approximate location derived from IP, session identifiers, security and error logs, and cookie preferences.',
         },
         {
           type: 'subheading',
@@ -365,7 +365,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords, private direct messages, or social media authentication codes.',
+          text: 'NovaLikes does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords, private direct messages, or social media authentication codes.',
         },
       ],
     },
@@ -421,7 +421,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral does not use personal information for materially new purposes without assessing whether new consent or notice is required.',
+          text: 'NovaLikes does not use personal information for materially new purposes without assessing whether new consent or notice is required.',
         },
       ],
     },
@@ -432,7 +432,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'InstantViral seeks meaningful consent appropriate to the sensitivity of the information and the purpose of collection. Customers should be able to:',
+          text: 'NovaLikes seeks meaningful consent appropriate to the sensitivity of the information and the purpose of collection. Customers should be able to:',
         },
         {
           type: 'list',
@@ -523,7 +523,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'No website can guarantee absolute security. InstantViral does not claim that personal information is completely secure, 100% secure, or impossible to breach. InstantViral uses reasonable safeguards and continues to improve its practices over time.',
+          text: 'No website can guarantee absolute security. NovaLikes does not claim that personal information is completely secure, 100% secure, or impossible to breach. NovaLikes uses reasonable safeguards and continues to improve its practices over time.',
         },
       ],
     },
@@ -538,7 +538,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'If you suspect a privacy or security concern related to InstantViral, use the privacy contact details in the Contact and Complaints section below, or submit a message through the Contact page.',
+          text: 'If you suspect a privacy or security concern related to NovaLikes, use the privacy contact details in the Contact and Complaints section below, or submit a message through the Contact page.',
         },
       ],
     },
@@ -563,7 +563,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'InstantViral verifies identity before responding. Requests should be submitted through the verified privacy contact listed in this policy when available, or through the Contact page until that contact is published. InstantViral does not promise a specific response timeframe on this page unless a verified operational commitment is configured.',
+          text: 'NovaLikes verifies identity before responding. Requests should be submitted through the verified privacy contact listed in this policy when available, or through the Contact page until that contact is published. NovaLikes does not promise a specific response timeframe on this page unless a verified operational commitment is configured.',
         },
       ],
     },
@@ -578,7 +578,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Transactional order emails remain separate from optional promotional consent where appropriate. InstantViral honours unsubscribe requests and suppression records when marketing email is used.',
+          text: 'Transactional order emails remain separate from optional promotional consent where appropriate. NovaLikes honours unsubscribe requests and suppression records when marketing email is used.',
         },
       ],
     },
@@ -614,7 +614,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'The revised policy will display a new Last Updated date when that date is configured for publication. For material changes, InstantViral will consider a more prominent notice or renewed consent where required.',
+          text: 'The revised policy will display a new Last Updated date when that date is configured for publication. For material changes, NovaLikes will consider a more prominent notice or renewed consent where required.',
         },
       ],
     },
@@ -634,15 +634,15 @@ export function getPrivacyPolicyContent(
     id: 'privacy-policy',
     path: routes.privacyPolicy,
     seo: {
-      title: 'Privacy Policy | InstantViral Canada',
+      title: 'Privacy Policy | NovaLikes',
       description:
-        'Read how InstantViral collects, uses, protects, retains, and shares personal information when customers browse the website, contact support, or place an order.',
+        'Read how NovaLikes collects, uses, protects, retains, and shares personal information when customers browse the website, contact support, or place an order.',
     },
     breadcrumbLabel: 'Privacy Policy',
     header: {
       title: 'Privacy Policy',
       intro:
-        'This Privacy Policy explains how InstantViral collects, uses, discloses, retains, and protects personal information when you browse InstantViral.ca, contact our team, place an order, use order tracking, or otherwise interact with our services.',
+        'This Privacy Policy explains how NovaLikes collects, uses, discloses, retains, and protects personal information when you browse NovaLikes.ca, contact our team, place an order, use order tracking, or otherwise interact with our services.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

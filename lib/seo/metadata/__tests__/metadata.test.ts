@@ -31,9 +31,9 @@ describe('SEO Metadata & Canonical Engine', () => {
     const entry = getMetadataByRoute('/');
     expect(entry).toBeDefined();
     expect(meta.alternates?.canonical).toBe(buildCanonicalUrl('/'));
-    expect(meta.alternates?.canonical).toBe('https://instantviral.ca');
+    expect(meta.alternates?.canonical).toBe('https://novalikes.com');
     expect(String((meta.title as { absolute?: string })?.absolute ?? '')).toContain(
-      'InstantViral',
+      'NovaLikes',
     );
     expect(meta.robots).toMatchObject({ index: true });
   });
@@ -41,7 +41,7 @@ describe('SEO Metadata & Canonical Engine', () => {
   it('builds approved service metadata and rejects skipped services', () => {
     const ig = serviceMetadata('buy-instagram-followers');
     expect(ig.alternates?.canonical).toBe(
-      'https://instantviral.ca/buy-instagram-followers',
+      'https://novalikes.com/buy-instagram-followers',
     );
     expect(ig.robots).toMatchObject({ index: true });
 
@@ -52,10 +52,10 @@ describe('SEO Metadata & Canonical Engine', () => {
   });
 
   it('uses self-referencing canonicals without query or fragment', () => {
-    expect(buildCanonicalUrl('/faq?utm_source=x')).toBe('https://instantviral.ca/faq');
-    expect(buildCanonicalUrl('/about#team')).toBe('https://instantviral.ca/about');
+    expect(buildCanonicalUrl('/faq?utm_source=x')).toBe('https://novalikes.com/faq');
+    expect(buildCanonicalUrl('/about#team')).toBe('https://novalikes.com/about');
     expect(buildCanonicalUrl('/buy-tiktok-views/')).toBe(
-      'https://instantviral.ca/buy-tiktok-views',
+      'https://novalikes.com/buy-tiktok-views',
     );
   });
 
@@ -173,7 +173,7 @@ describe('SEO Metadata & Canonical Engine', () => {
       description: 'Test description for metadata engine coverage.',
       path: routes.about,
     });
-    expect(meta.metadataBase?.toString()).toContain('instantviral.ca');
+    expect(meta.metadataBase?.toString()).toContain('novalikes.com');
   });
 
   it('track order form metadata is indexable while result route is not', () => {

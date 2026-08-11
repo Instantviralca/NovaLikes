@@ -81,7 +81,7 @@ export function TikTokLikesRequirementVisual({ className }: { className?: string
             <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
               Valid email
             </p>
-            <p className="truncate text-[11px] font-semibold text-stone-800">you@company.ca</p>
+            <p className="truncate text-[11px] font-semibold text-stone-800">you@company.com</p>
           </div>
         </div>
 

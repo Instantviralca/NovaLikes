@@ -2,9 +2,9 @@ import { brand } from '@/config/brand';
 
 export const APP_NAME = brand.name;
 
-export const DEFAULT_LOCALE = 'en-CA';
+export const DEFAULT_LOCALE = 'en';
 
-export const SUPPORTED_LOCALES = ['en-CA'] as const;
+export const SUPPORTED_LOCALES = ['en'] as const;
 
 /** Soft limits / architecture constants (not env secrets). */
 export const CONSTANTS = {

@@ -1,7 +1,7 @@
 import type { CurrencyCode, PackageBadgeId, PricingPackage } from '@/types/pricing';
 import type { PlatformId } from '@/types/platform';
 
-/** Admin Pricing Management — Document 12.05. Uses real InstantViral packages. */
+/** Admin Pricing Management — Document 12.05. Uses real NovaLikes packages. */
 export type AdminPricingRow = {
   id: string;
   packageName: string;

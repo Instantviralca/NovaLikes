@@ -16,8 +16,8 @@ export function getCategoryMetadata(slug: string): Metadata {
   const category = getCategoryBySlug(slug);
   if (!category) {
     return buildPageMetadata({
-      title: 'Learn | InstantViral',
-      description: 'InstantViral Learn Center.',
+      title: 'Learn | NovaLikes',
+      description: 'NovaLikes Learn Center.',
       path: categoryPath(slug),
       robots: { index: false, follow: false },
     });
@@ -42,15 +42,15 @@ export function getTagMetadata(slug: string): Metadata {
   const tag = getTagBySlug(slug);
   if (!tag || !LEARN_TAG_PAGES_ENABLED) {
     return buildPageMetadata({
-      title: 'Learn | InstantViral',
-      description: 'InstantViral Learn Center.',
+      title: 'Learn | NovaLikes',
+      description: 'NovaLikes Learn Center.',
       path: tagPath(slug),
       robots: { index: false, follow: false },
     });
   }
 
   return buildPageMetadata({
-    title: `${tag.name} Guides | Learn | InstantViral`,
+    title: `${tag.name} Guides | Learn | NovaLikes`,
     description: tag.description,
     path: tagPath(tag.slug),
     type: 'website',

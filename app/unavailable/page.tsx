@@ -18,10 +18,10 @@ export default function UnavailablePage() {
     <StatusPageShell showHomeLink={false}>
       <p className="text-sm font-medium text-[var(--brand)]">Unavailable</p>
       <Heading as="h1" size="h2" className="mt-2">
-        InstantViral is not available in your region
+        NovaLikes is not available in your region
       </Heading>
       <MutedText className="mt-3 max-w-lg text-base">
-        We do not currently offer InstantViral services in your country. If you
+        We do not currently offer NovaLikes services in your country. If you
         believe this is an error, contact support from a supported region.
       </MutedText>
     </StatusPageShell>

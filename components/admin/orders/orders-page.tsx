@@ -209,7 +209,7 @@ export function OrdersPage() {
     <div className="space-y-4">
       <AdminPageHeader
         title="Orders"
-        description="Manual fulfillment workspace for InstantViral orders."
+        description="Manual fulfillment workspace for NovaLikes orders."
       />
 
       {loading ? (

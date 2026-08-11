@@ -2,7 +2,7 @@ import type { CurrencyCode } from '@/types/pricing';
 import type { AppliedCoupon, CartItem, CartState, CartTotals } from '@/types/cart';
 import { getDefaultCurrency } from '@/data/pricing/currencies';
 
-export const CART_STORAGE_KEY = 'instantviral.cart.v1';
+export const CART_STORAGE_KEY = 'novalikes.comrt.v1';
 
 export function createEmptyCart(currency?: CurrencyCode): CartState {
   return {

@@ -9,7 +9,7 @@ const ROWS: ReadonlyArray<{
   done: boolean;
   active?: boolean;
 }> = [
-  { id: 'username', label: 'Username', value: '@creator.ca', done: true },
+  { id: 'username', label: 'Username', value: '@creator', done: true },
   { id: 'package', label: 'Package selected', value: '1,000 Followers', done: true },
   { id: 'confirmed', label: 'Order confirmed', value: 'IV-94821', done: true },
   { id: 'tracking', label: 'Tracking available', value: 'Live', done: true, active: true },

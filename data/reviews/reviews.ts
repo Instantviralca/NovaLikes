@@ -69,7 +69,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 4,
     reviewText:
-      "The team at InstantViral really knows what they're doing. They made it simple to grow my social media accounts without any hassle. Excellent service!",
+      "The team at NovaLikes really knows what they're doing. They made it simple to grow my social media accounts without any hassle. Excellent service!",
   },
   {
     id: 'review-niel',
@@ -125,7 +125,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: false,
     displayOrder: 10,
     reviewText:
-      "Easy to use, quick delivery, and excellent results. I'd definitely recommend InstantViral.",
+      "Easy to use, quick delivery, and excellent results. I'd definitely recommend NovaLikes.",
   },
   {
     id: 'review-marvin',
@@ -212,7 +212,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 20,
     reviewText:
-      "I've used InstantViral multiple times, and the service has been consistently reliable.",
+      "I've used NovaLikes multiple times, and the service has been consistently reliable.",
   },
   {
     id: 'review-cris',
@@ -244,7 +244,7 @@ function toReview(seed: ReviewSeed): Review {
     createdAt: CATALOGUE_PUBLISHED_AT,
     updatedAt: CATALOGUE_PUBLISHED_AT,
     moderationNotes: [
-      'Imported historical customer feedback — published to InstantViral catalogue 2026-07-16.',
+      'Imported historical customer feedback — published to NovaLikes catalogue 2026-07-16.',
     ],
   };
 }

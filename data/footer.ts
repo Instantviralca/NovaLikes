@@ -1,4 +1,4 @@
-import { routes, learnArticlePath, learnCategoryPath } from '@/config/routes';
+import { routes, learnCategoryPath } from '@/config/routes';
 import { getActiveLearnCategories } from '@/data/learn';
 import type { FooterColumn } from '@/types';
 
@@ -21,7 +21,7 @@ function learnCategoryFooterLinks() {
 }
 
 /**
- * Global footer columns — Explore InstantViral structure (sitewide).
+ * Global footer columns — Explore NovaLikes structure (sitewide).
  * Resources keeps Learn category crawl paths for internal linking SEO.
  */
 export function getFooterColumns(): FooterColumn[] {
@@ -53,22 +53,6 @@ export function getFooterColumns(): FooterColumn[] {
           href: '/#how-to-buy-instagram-followers',
         },
         { label: 'Learn Center', href: routes.learn },
-        {
-          label: 'Grow Followers Organically',
-          href: learnArticlePath('how-to-grow-instagram-followers-organically'),
-        },
-        {
-          label: 'Get More Likes',
-          href: learnArticlePath('how-to-get-more-instagram-likes'),
-        },
-        {
-          label: 'Increase Engagement',
-          href: learnArticlePath('how-to-increase-instagram-engagement'),
-        },
-        {
-          label: 'Complete Growth Guide',
-          href: learnArticlePath('complete-instagram-growth-guide'),
-        },
         ...(instagramGuides
           ? [instagramGuides]
           : [{ label: 'Creator Guides', href: '/learn/instagram' }]),
@@ -80,7 +64,7 @@ export function getFooterColumns(): FooterColumn[] {
       id: 'company',
       title: 'Company',
       links: [
-        { label: 'About InstantViral', href: routes.about },
+        { label: 'About NovaLikes', href: routes.about },
         { label: 'Reviews', href: routes.reviews },
         { label: 'Contact', href: routes.contact },
       ],
@@ -109,7 +93,7 @@ export function getFooterColumns(): FooterColumn[] {
 }
 
 export const footerMeta = {
-  title: 'Explore InstantViral',
+  title: 'Explore NovaLikes',
   paymentCopy: 'Secure checkout · Common card and digital payment options at checkout',
   socialLinks: [
     { label: 'Creator Guides', href: '/learn/instagram' },

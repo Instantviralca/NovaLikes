@@ -47,7 +47,7 @@ describe('email marketing helpers', () => {
       subject: '25% off',
       message: 'Limited offer',
       couponCode: 'save25',
-      unsubscribeUrl: 'https://instantviral.ca/unsubscribe?token=abc',
+      unsubscribeUrl: 'https://novalikes.com/unsubscribe?token=abc',
     });
     expect(content.html).toContain('SAVE25');
     expect(content.html).toContain('/unsubscribe?token=abc');

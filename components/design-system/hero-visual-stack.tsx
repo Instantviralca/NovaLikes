@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import {
   PlatformDashboard,
   type FacebookDashboardVariant,
@@ -24,12 +26,20 @@ type HeroVisualStackProps = {
   facebookVariant?: FacebookDashboardVariant;
 };
 
+function isRasterHeroSrc(src: string): boolean {
+  return /\.(webp|png|jpe?g|avif)(\?.*)?$/i.test(src);
+}
+
 /**
- * Layered hero visual — platform dashboard illustration.
+ * Layered hero visual — prefers static raster art when provided, else platform dashboard.
  */
 export function HeroVisualStack({
+  src,
   alt,
+  width,
+  height,
   platform = 'instagram',
+  priority = false,
   className,
   packagePreview,
   instagramVariant,
@@ -37,6 +47,23 @@ export function HeroVisualStack({
   youtubeVariant,
   facebookVariant,
 }: HeroVisualStackProps) {
+  if (isRasterHeroSrc(src)) {
+    return (
+      <div className={cn('relative mx-auto w-full overflow-hidden rounded-[1.5rem]', className)}>
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          priority={priority}
+          fetchPriority={priority ? 'high' : undefined}
+          sizes="(max-width: 1024px) 100vw, 42vw"
+          className="h-auto w-full object-contain object-center"
+        />
+      </div>
+    );
+  }
+
   const isCompactInstagram =
     instagramVariant === 'likes' ||
     instagramVariant === 'views' ||

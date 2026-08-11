@@ -153,7 +153,7 @@ export function InstagramViewsHeroDashboard({
                   >
                     IV
                   </span>
-                  <p className="text-[10px] font-bold text-white drop-shadow">instantviral</p>
+                  <p className="text-[10px] font-bold text-white drop-shadow">novalikes</p>
                 </div>
 
                 <span

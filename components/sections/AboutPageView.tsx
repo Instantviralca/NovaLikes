@@ -58,7 +58,7 @@ export function AboutPageView({ content = getAboutContent() }: AboutPageViewProp
       <AboutPageViewTracker />
 
       {/* 1. Hero */}
-      <Section spacing="lg" className="bg-hero-wash" aria-label="About InstantViral">
+      <Section spacing="lg" className="bg-hero-wash" aria-label="About NovaLikes">
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
             <Stack
@@ -146,7 +146,7 @@ export function AboutPageView({ content = getAboutContent() }: AboutPageViewProp
         </Container>
       </Section>
 
-      {/* 4. Why Customers Choose InstantViral */}
+      {/* 4. Why Customers Choose NovaLikes */}
       <Section
         id={content.whyChoose.id}
         spacing="lg"

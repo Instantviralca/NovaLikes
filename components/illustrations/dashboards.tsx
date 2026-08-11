@@ -84,7 +84,7 @@ export function HomepageDashboard({ className }: HomepageDashboardProps) {
         className="absolute inset-0 opacity-90"
         style={{
           background:
-            'radial-gradient(ellipse 70% 55% at 85% 10%, rgb(240 112 32 / 0.18), transparent), linear-gradient(160deg, #fffbf8 0%, #fff1e8 45%, #f7f0ea 100%)',
+            'radial-gradient(ellipse 70% 55% at 85% 10%, rgb(232 93 4 / 0.18), transparent), linear-gradient(160deg, #fffbf8 0%, #fff4ed 45%, #f7f0ea 100%)',
         }}
       />
       {/* Main dashboard panel */}
@@ -119,8 +119,8 @@ export function HomepageDashboard({ className }: HomepageDashboardProps) {
         <svg viewBox="0 0 320 120" className="h-auto w-full" role="presentation">
           <defs>
             <linearGradient id="iv-chart-fill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#F07020" stopOpacity="0.35" />
-              <stop offset="100%" stopColor="#F07020" stopOpacity="0" />
+              <stop offset="0%" stopColor="#E85D04" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#E85D04" stopOpacity="0" />
             </linearGradient>
           </defs>
           <path
@@ -130,12 +130,12 @@ export function HomepageDashboard({ className }: HomepageDashboardProps) {
           <path
             d="M0 95 C40 90 55 70 90 65 C130 58 150 40 180 38 C220 35 250 55 280 30 C300 18 310 22 320 16"
             fill="none"
-            stroke="#F07020"
+            stroke="#E85D04"
             strokeWidth="3"
             strokeLinecap="round"
           />
-          <circle cx="180" cy="38" r="4" fill="#F07020" />
-          <circle cx="280" cy="30" r="4" fill="#E85818" />
+          <circle cx="180" cy="38" r="4" fill="#E85D04" />
+          <circle cx="280" cy="30" r="4" fill="#C2410C" />
         </svg>
         <div className="mt-2 flex gap-1.5">
           {['IG', 'TT', 'YT', 'FB'].map((p) => (
@@ -494,7 +494,7 @@ export function PlatformDashboard({
       <div
         className="absolute -inset-6 -z-10 rounded-[2rem] opacity-80 blur-2xl"
         style={{
-          background: `radial-gradient(circle at 30% 20%, rgb(240 112 32 / 0.28), transparent 55%), radial-gradient(circle at 80% 70%, ${accent}33, transparent 50%)`,
+          background: `radial-gradient(circle at 30% 20%, rgb(232 93 4 / 0.28), transparent 55%), radial-gradient(circle at 80% 70%, ${accent}33, transparent 50%)`,
         }}
         aria-hidden="true"
       />

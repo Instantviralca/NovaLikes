@@ -22,7 +22,7 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current Disclaimer configuration.
- * Verified today: operating/legal display name InstantViral, domain instantviral.ca.
+ * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
  * No verified platform affiliations or endorsements are configured.
  */
 export const disclaimerConfig: DisclaimerConfig = {

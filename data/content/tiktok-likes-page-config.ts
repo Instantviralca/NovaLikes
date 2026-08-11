@@ -76,12 +76,12 @@ export type TikTokLikesPageConfig = {
 };
 
 /**
- * Lean topical blocks for Buy TikTok Likes Canada.
+ * Lean topical blocks for Buy TikTok Likes.
  * Hero, pricing, process, requirements, FAQ remain in data/content/tiktok.ts.
  */
 export const TIKTOK_LIKES_PAGE_CONFIG: TikTokLikesPageConfig = {
   orderNotice:
-    'InstantViral never asks for your TikTok password. The order is processed using only the public video URL and the details entered at checkout.',
+    'NovaLikes never asks for your TikTok password. The order is processed using only the public video URL and the details entered at checkout.',
   doesBuyingWork: {
     id: 'does-buying-tiktok-likes-work',
     title: 'Does Buying TikTok Likes Work?',
@@ -186,10 +186,10 @@ export const TIKTOK_LIKES_PAGE_CONFIG: TikTokLikesPageConfig = {
     ],
   },
   canada: {
-    id: 'buying-tiktok-likes-in-canada',
-    title: 'Buying TikTok Likes in Canada',
+    id: 'buying-tiktok-likes',
+    title: 'Buying TikTok Likes worldwide',
     description:
-      'InstantViral offers TikTok like packages for creators, businesses, agencies and brands across Canada. You can compare package sizes, review pricing, and complete your order using a public TikTok video link without providing your account password.',
+      'NovaLikes offers TikTok like packages for creators, businesses, agencies and brands worldwide. You can compare package sizes, review pricing, and complete your order using a public TikTok video link without providing your account password.',
     body: "Whether you're promoting a product launch, growing a creator account, or increasing engagement on a business video, choosing the right package starts with understanding your goals. Before checkout, review the selected quantity, delivery information and package details so you know exactly what to expect.",
     cards: [
       {

@@ -268,7 +268,7 @@ describe('Email failure isolation', () => {
       recipient: 'buyer@example.com',
       orderId: 'IV-TEST',
       variables: {
-        companyName: 'InstantViral',
+        companyName: 'NovaLikes',
         customerEmail: 'buyer@example.com',
         orderId: 'IV-TEST',
         serviceName: 'Instagram Followers',
@@ -285,7 +285,7 @@ describe('Email failure isolation', () => {
       recipient: 'buyer@example.com',
       orderId: 'IV-TEST',
       variables: {
-        companyName: 'InstantViral',
+        companyName: 'NovaLikes',
         customerEmail: 'buyer@example.com',
         orderId: 'IV-TEST',
         serviceName: 'Instagram Followers',
@@ -627,7 +627,7 @@ describe('Env validation', () => {
     process.env.RESEND_API_KEY = 're_test_key';
     process.env.RESEND_FROM_EMAIL = 'orders@example.com';
     process.env.DATABASE_URL = 'postgresql://localhost/test';
-    process.env.NEXT_PUBLIC_SITE_URL = 'https://instantviral.ca';
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
 
     const result = validateEnv({ forceProduction: true });
     expect(result.ok).toBe(true);

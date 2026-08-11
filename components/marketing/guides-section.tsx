@@ -16,7 +16,7 @@ function formatGuideDate(iso?: string) {
   if (!iso) return null;
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return null;
-  return date.toLocaleDateString('en-CA', {
+  return date.toLocaleDateString('en', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',

@@ -13,7 +13,7 @@ import type { NextConfig } from 'next';
  * - base-uri 'self' — block base tag hijacking
  * - object-src 'none' — block plugins
  * - frame-ancestors 'self' — clickjacking mitigation
- * - form-action — allow InstantViral + Stripe Checkout/hooks posts
+ * - form-action — allow NovaLikes + Stripe Checkout/hooks posts
  * - img-src — self, data, blob, https images (OG, CDN, analytics pixels)
  * - font-src — self + data fonts
  * - style-src — self + unsafe-inline (Next.js / Tailwind runtime)
@@ -51,7 +51,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/learn/buy-instagram-followers-canada',
+        source: '/learn/buy-instagram-followers-global',
         destination: '/learn',
         permanent: true,
       },

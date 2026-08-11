@@ -1,5 +1,5 @@
 /**
- * Generate InstantViral Learn illustrations for algorithm + engagement articles.
+ * Generate NovaLikes Learn illustrations for algorithm + engagement articles.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,10 +12,10 @@ const H = 900;
 function defs(id) {
   return `<defs>
     <linearGradient id="${id}-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FFFBF8"/><stop offset="50%" stop-color="#FFF1E8"/><stop offset="100%" stop-color="#F3EBE4"/>
+      <stop offset="0%" stop-color="#FFFBF8"/><stop offset="50%" stop-color="#FFF4ED"/><stop offset="100%" stop-color="#F3EBE4"/>
     </linearGradient>
     <linearGradient id="${id}-orange" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F07020"/><stop offset="100%" stop-color="#E85818"/>
+      <stop offset="0%" stop-color="#E85D04"/><stop offset="100%" stop-color="#C2410C"/>
     </linearGradient>
     <linearGradient id="${id}-card" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFF8F3"/>
@@ -57,7 +57,7 @@ const sets = {
         <rect x="140" y="400" width="900" height="360" rx="24" fill="#fff" stroke="#EDE4DC"/>
         <text x="170" y="450" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#2B2B2B">Reach over time</text>
         <path d="M180 680 C300 640 380 560 500 500 C640 420 760 380 1000 300" fill="none" stroke="url(#alghero-orange)" stroke-width="8" stroke-linecap="round"/>
-        <path d="M180 680 C300 640 380 560 500 500 C640 420 760 380 1000 300 L1000 720 L180 720 Z" fill="#F07020" opacity="0.12"/>
+        <path d="M180 680 C300 640 380 560 500 500 C640 420 760 380 1000 300 L1000 720 L180 720 Z" fill="#E85D04" opacity="0.12"/>
         <rect x="1080" y="400" width="380" height="360" rx="24" fill="#fff" stroke="#EDE4DC"/>
         ${['Watch time', 'Saves', 'Shares', 'Comments']
           .map(
@@ -72,7 +72,7 @@ const sets = {
         ${[0, 1, 2]
           .map(
             (i) =>
-              `<g filter="url(#feed-shadow)"><rect x="${120 + i * 480}" y="160" width="440" height="620" rx="32" fill="#fff" stroke="#EDE4DC"/><rect x="${150 + i * 480}" y="200" width="380" height="220" rx="20" fill="#FFF1E8"/><circle cx="${200 + i * 480}" cy="470" r="22" fill="url(#feed-orange)"/><rect x="${240 + i * 480}" y="460" width="200" height="16" rx="6" fill="#2B2B2B"/><rect x="${150 + i * 480}" y="520" width="380" height="12" rx="5" fill="#E8DDD4"/><rect x="${150 + i * 480}" y="550" width="300" height="12" rx="5" fill="#E8DDD4"/><text x="${150 + i * 480}" y="620" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#2B2B2B">${['Close friends', 'Recent posts', 'Interest match'][i]}</text></g>`,
+              `<g filter="url(#feed-shadow)"><rect x="${120 + i * 480}" y="160" width="440" height="620" rx="32" fill="#fff" stroke="#EDE4DC"/><rect x="${150 + i * 480}" y="200" width="380" height="220" rx="20" fill="#FFF4ED"/><circle cx="${200 + i * 480}" cy="470" r="22" fill="url(#feed-orange)"/><rect x="${240 + i * 480}" y="460" width="200" height="16" rx="6" fill="#2B2B2B"/><rect x="${150 + i * 480}" y="520" width="380" height="12" rx="5" fill="#E8DDD4"/><rect x="${150 + i * 480}" y="550" width="300" height="12" rx="5" fill="#E8DDD4"/><text x="${150 + i * 480}" y="620" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#2B2B2B">${['Close friends', 'Recent posts', 'Interest match'][i]}</text></g>`,
           )
           .join('')}`,
       ),
@@ -144,14 +144,14 @@ const sets = {
         ${['Reels', 'Carousels', 'Stories', 'Lives']
           .map(
             (l, i) =>
-              `<g filter="url(#cont-shadow)"><rect x="${120 + (i % 2) * 720}" y="${160 + Math.floor(i / 2) * 340}" width="680" height="300" rx="28" fill="#fff" stroke="#EDE4DC"/><rect x="${160 + (i % 2) * 720}" y="${200 + Math.floor(i / 2) * 340}" width="200" height="36" rx="12" fill="#FFF1E8"/><text x="${180 + (i % 2) * 720}" y="${224 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#E85818">${l}</text><text x="${160 + (i % 2) * 720}" y="${300 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#2B2B2B">${['Hook in 3 seconds', 'Saveable checklists', 'Daily conversation', 'Live Q and A moments'][i]}</text><text x="${160 + (i % 2) * 720}" y="${350 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="16" fill="#6B6560">${['One clear takeaway', 'Step-by-step value', 'Polls and prompts', 'Real-time replies'][i]}</text></g>`,
+              `<g filter="url(#cont-shadow)"><rect x="${120 + (i % 2) * 720}" y="${160 + Math.floor(i / 2) * 340}" width="680" height="300" rx="28" fill="#fff" stroke="#EDE4DC"/><rect x="${160 + (i % 2) * 720}" y="${200 + Math.floor(i / 2) * 340}" width="200" height="36" rx="12" fill="#FFF4ED"/><text x="${180 + (i % 2) * 720}" y="${224 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#C2410C">${l}</text><text x="${160 + (i % 2) * 720}" y="${300 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#2B2B2B">${['Hook in 3 seconds', 'Saveable checklists', 'Daily conversation', 'Live Q and A moments'][i]}</text><text x="${160 + (i % 2) * 720}" y="${350 + Math.floor(i / 2) * 340}" font-family="system-ui,sans-serif" font-size="16" fill="#6B6560">${['One clear takeaway', 'Step-by-step value', 'Polls and prompts', 'Real-time replies'][i]}</text></g>`,
           )
           .join('')}`,
       ),
       'instagram-community-engagement': shell(
         'comm',
         `<g filter="url(#comm-shadow)"><rect x="560" y="120" width="480" height="660" rx="36" fill="#fff" stroke="#EDE4DC"/></g>
-        <rect x="590" y="180" width="420" height="280" rx="20" fill="#FFF1E8"/>
+        <rect x="590" y="180" width="420" height="280" rx="20" fill="#FFF4ED"/>
         <circle cx="640" cy="520" r="18" fill="url(#comm-orange)"/>
         <rect x="680" y="510" width="240" height="16" rx="6" fill="#2B2B2B"/>
         <rect x="590" y="560" width="360" height="12" rx="5" fill="#E8DDD4"/>

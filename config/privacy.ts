@@ -26,7 +26,7 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current privacy configuration.
- * Verified today: operating/legal display name InstantViral, domain instantviral.ca.
+ * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
  * Payment providers are read from config/payments.ts at content-build time.
  */
 export const privacyConfig: PrivacyConfig = {

@@ -21,7 +21,7 @@ const COMPETITOR_HEADERS = [
   'Package',
   'Delivery',
   'Recommended For',
-  'InstantViral',
+  'NovaLikes',
   'Typical Providers',
 ] as const;
 

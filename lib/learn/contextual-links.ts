@@ -362,7 +362,7 @@ export function buildContextualLinkTargets(
 
   push({
     href: routes.home,
-    phrases: ['InstantViral', 'instantviral.ca', 'homepage'],
+    phrases: ['NovaLikes', 'novalikes.com', 'homepage'],
     group: 'pillar',
   });
 

@@ -80,7 +80,7 @@ export function buildArticleMetadata(
 
 export function buildPreviewArticleMetadata(slug: string): Metadata {
   return {
-    title: { absolute: 'Preview | InstantViral Learn' },
+    title: { absolute: 'Preview | NovaLikes Learn' },
     description: 'Authorized article preview.',
     metadataBase: new URL(seoSiteConfig.productionDomain),
     alternates: {

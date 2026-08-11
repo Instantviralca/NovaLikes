@@ -15,7 +15,7 @@ export function UnsubscribeClient() {
   const search = useSearchParams();
   const token = search.get('token')?.trim() || '';
   const [status, setStatus] = useState<'loading' | 'ready' | 'done' | 'error'>('loading');
-  const [message, setMessage] = useState('Confirm to stop marketing emails from InstantViral.');
+  const [message, setMessage] = useState('Confirm to stop marketing emails from NovaLikes.');
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export function UnsubscribeClient() {
         }
         if (data.alreadyUnsubscribed) {
           setStatus('done');
-          setMessage('You are already unsubscribed from InstantViral marketing emails.');
+          setMessage('You are already unsubscribed from NovaLikes marketing emails.');
           return;
         }
         setStatus('ready');
@@ -75,7 +75,7 @@ export function UnsubscribeClient() {
         return;
       }
       setStatus('done');
-      setMessage('You have been unsubscribed from InstantViral marketing emails.');
+      setMessage('You have been unsubscribed from NovaLikes marketing emails.');
     } catch {
       setStatus('error');
       setMessage('Unable to unsubscribe. Please try again.');

@@ -1,66 +1,66 @@
-# InstantViral
+# NovaLikes
 
-> InstantViral is a Canada-focused social media growth platform offering package-based services for Instagram, TikTok, YouTube, and Facebook, plus educational Learn Center resources.
+> NovaLikes is a worldwide social media growth platform offering package-based services for Instagram, TikTok, YouTube, and Facebook, plus educational Learn Center resources.
 
-InstantViral helps creators, businesses, agencies, and brands compare growth packages, complete secure checkout using public profile or content URLs only, and review published purchasing policies. Primary language is English. Business type: social media growth services and educational content.
+NovaLikes helps creators, businesses, agencies, and brands compare growth packages, complete secure checkout using public profile or content URLs only, and review published purchasing policies. Primary language is English. Business type: social media growth services and educational content.
 
 ## Site
 
-- Company name: InstantViral
-- Website: https://instantviral.ca/
-- Country: Canada
+- Company name: NovaLikes
+- Website: https://novalikes.com/
+- Audience: Worldwide
 - Primary language: English
 - Business type: Social media growth services and educational content
-- Contact email: support@instantviral.ca
+- Contact email: support@novalikes.com
 
 ## Commercial Services
 
 ### Instagram
 
-- [Buy Instagram Followers](https://instantviral.ca/buy-instagram-followers)
-- [Buy Instagram Likes](https://instantviral.ca/buy-instagram-likes)
-- [Buy Instagram Views](https://instantviral.ca/buy-instagram-views)
-- [Buy Instagram Comments](https://instantviral.ca/buy-instagram-comments)
+- [Buy Instagram Followers](https://novalikes.com/buy-instagram-followers)
+- [Buy Instagram Likes](https://novalikes.com/buy-instagram-likes)
+- [Buy Instagram Views](https://novalikes.com/buy-instagram-views)
+- [Buy Instagram Comments](https://novalikes.com/buy-instagram-comments)
 
 ### TikTok
 
-- [Buy TikTok Followers](https://instantviral.ca/buy-tiktok-followers)
-- [Buy TikTok Likes](https://instantviral.ca/buy-tiktok-likes)
-- [Buy TikTok Views](https://instantviral.ca/buy-tiktok-views)
+- [Buy TikTok Followers](https://novalikes.com/buy-tiktok-followers)
+- [Buy TikTok Likes](https://novalikes.com/buy-tiktok-likes)
+- [Buy TikTok Views](https://novalikes.com/buy-tiktok-views)
 
 ### Facebook
 
-- [Buy Facebook Followers](https://instantviral.ca/buy-facebook-followers)
-- [Buy Facebook Page Likes](https://instantviral.ca/buy-facebook-page-likes)
-- [Buy Facebook Post Likes](https://instantviral.ca/buy-facebook-post-likes)
+- [Buy Facebook Followers](https://novalikes.com/buy-facebook-followers)
+- [Buy Facebook Page Likes](https://novalikes.com/buy-facebook-page-likes)
+- [Buy Facebook Post Likes](https://novalikes.com/buy-facebook-post-likes)
 
 ### YouTube
 
-- [Buy YouTube Subscribers](https://instantviral.ca/buy-youtube-subscribers)
-- [Buy YouTube Views](https://instantviral.ca/buy-youtube-views)
+- [Buy YouTube Subscribers](https://novalikes.com/buy-youtube-subscribers)
+- [Buy YouTube Views](https://novalikes.com/buy-youtube-views)
 
 ## Important Pages
 
-- [Homepage](https://instantviral.ca/)
-- [About](https://instantviral.ca/about)
-- [Reviews](https://instantviral.ca/reviews)
-- [FAQ](https://instantviral.ca/faq)
-- [Contact](https://instantviral.ca/contact)
-- [Refund Policy](https://instantviral.ca/refund-policy)
-- [Privacy Policy](https://instantviral.ca/privacy-policy)
-- [Terms & Conditions](https://instantviral.ca/terms-and-conditions)
+- [Homepage](https://novalikes.com/)
+- [About](https://novalikes.com/about)
+- [Reviews](https://novalikes.com/reviews)
+- [FAQ](https://novalikes.com/faq)
+- [Contact](https://novalikes.com/contact)
+- [Refund Policy](https://novalikes.com/refund-policy)
+- [Privacy Policy](https://novalikes.com/privacy-policy)
+- [Terms & Conditions](https://novalikes.com/terms-and-conditions)
 
 ## Learn Center
 
-- [Learn Center](https://instantviral.ca/learn): Educational guides covering Instagram, TikTok, YouTube, Facebook, and social media marketing. Commercial service pages and Learn articles are distinct.
+- [Learn Center](https://novalikes.com/learn): Educational guides covering Instagram, TikTok, YouTube, Facebook, and social media marketing. Commercial service pages and Learn articles are distinct.
 
 ## Company
 
-- [About InstantViral](https://instantviral.ca/about): InstantViral presents transparent social media growth packages with secure checkout, public-URL ordering (no passwords), customer support, and published policies. The About page describes InstantViral as serving customers since 2018.
+- [About NovaLikes](https://novalikes.com/about): NovaLikes presents transparent social media growth packages with secure checkout, public-URL ordering (no passwords), customer support, and published policies. The About page describes NovaLikes as serving customers since 2018.
 
 ## Optional
 
-- [Full AI index (llms-full.txt)](https://instantviral.ca/llms-full.txt): Extended service details and the complete published Learn Center article index.
-- [Cookie Policy](https://instantviral.ca/cookie-policy)
-- [Disclaimer](https://instantviral.ca/disclaimer)
-- [Track Order](https://instantviral.ca/track-order)
+- [Full AI index (llms-full.txt)](https://novalikes.com/llms-full.txt): Extended service details and the complete published Learn Center article index.
+- [Cookie Policy](https://novalikes.com/cookie-policy)
+- [Disclaimer](https://novalikes.com/disclaimer)
+- [Track Order](https://novalikes.com/track-order)

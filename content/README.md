@@ -1,4 +1,4 @@
-# InstantViral Content Repository
+# NovaLikes Content Repository
 
 File-based Learn Center article packages — Documents **16.00** (Content Design System) and **16.01** (Content Repository Generator).
 

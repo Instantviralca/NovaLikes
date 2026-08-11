@@ -208,7 +208,7 @@ export type DisclaimerConfig = {
   /** ISO date string (YYYY-MM-DD) when verified for publication. */
   lastUpdatedDate?: string;
   /**
-   * Only true when InstantViral has verified third-party platform affiliations
+   * Only true when NovaLikes has verified third-party platform affiliations
    * or endorsements with supporting documentation. Defaults to false.
    */
   hasVerifiedPlatformAffiliations: boolean;

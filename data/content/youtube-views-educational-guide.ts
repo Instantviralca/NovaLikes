@@ -181,7 +181,7 @@ export const YOUTUBE_VIEWS_EDUCATIONAL_GUIDE: EducationalGuideContent = {
       heading: 'Explore Related Pages',
       links: [
         {
-          label: 'Buy YouTube Subscribers Canada',
+          label: 'Buy YouTube Subscribers',
           href: '/buy-youtube-subscribers',
         },
         { label: 'Homepage', href: '/' },

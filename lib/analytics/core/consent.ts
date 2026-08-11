@@ -9,7 +9,7 @@ import type {
   AnalyticsEvent,
 } from '@/types/analytics';
 
-const CONSENT_STORAGE_KEY = 'instantviral.analytics.consent.v1';
+const CONSENT_STORAGE_KEY = 'novalikes.analytics.consent.v1';
 
 const DEFAULT_CONSENT: AnalyticsConsentState = {
   essential: true,

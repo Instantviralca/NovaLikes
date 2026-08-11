@@ -76,7 +76,7 @@ export function getHomepageReviews(
  * Service-page priority:
  * 1. Exact service reviews
  * 2. Platform reviews
- * 3. General InstantViral reviews
+ * 3. General NovaLikes reviews
  */
 export function getServicePageReviews(input: {
   serviceSlug: string;
@@ -96,7 +96,7 @@ export function getServicePageReviews(input: {
             review.serviceSlug !== input.serviceSlug && review.platform === input.platform,
         )
       : [];
-  /** Untagged InstantViral reviews only — never promote another platform's reviews as general. */
+  /** Untagged NovaLikes reviews only — never promote another platform's reviews as general. */
   const general = approved.filter((review) => {
     const alreadyIncluded =
       exact.some((item) => item.id === review.id) ||

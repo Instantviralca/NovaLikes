@@ -51,7 +51,7 @@ function buildRegistry(): LinkPage[] {
     slug: 'home',
     title: 'Home',
     category: 'homepage',
-    keywords: ['instantviral', 'social media growth', 'buy followers'],
+    keywords: ['novalikes', 'social media growth', 'buy followers'],
     relatedServices: [...APPROVED_SERVICE_SLUGS.filter((slug) => {
       const service = getAllServices().find((item) => item.slug === slug);
       return Boolean(service?.featured);

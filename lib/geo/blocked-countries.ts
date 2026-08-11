@@ -5,7 +5,7 @@
 import { resolveCountryFromHeaders } from '@/lib/analytics/funnel-events';
 
 /** ISO-3166-1 alpha-2 codes that must not reach the public storefront. */
-export const BLOCKED_COUNTRY_CODES = ['PK', 'IN', 'BD', 'NG'] as const;
+export const BLOCKED_COUNTRY_CODES = [] as const;
 
 export type BlockedCountryCode = (typeof BLOCKED_COUNTRY_CODES)[number];
 

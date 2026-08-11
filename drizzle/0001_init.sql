@@ -1,4 +1,4 @@
--- InstantViral production schema (PostgreSQL)
+-- NovaLikes production schema (PostgreSQL)
 -- Compatible with Neon / Supabase / managed Postgres via DATABASE_URL
 
 CREATE TABLE IF NOT EXISTS orders (

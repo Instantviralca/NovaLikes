@@ -55,7 +55,7 @@ export function YouTubeSubscribersOrderSummaryDashboard({
               Public Channel URL
             </p>
             <p className="mt-0.5 truncate text-sm font-semibold text-stone-800">
-              youtube.com/@channel.ca
+              youtube.com/@channel
             </p>
           </li>
           <li className="rounded-xl border border-stone-100 bg-white/90 px-3.5 py-2.5">

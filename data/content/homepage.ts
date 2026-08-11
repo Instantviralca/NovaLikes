@@ -3,19 +3,19 @@ import { resolveCta } from '@/data/content/cta';
 import type { HomepageContent } from '@/types/content';
 
 /**
- * Homepage content — Buy Instagram Followers Canada commercial authority.
+ * Homepage content — Buy Instagram Followers commercial authority.
  * Section components consume this via HomePageView / mappers.
  */
 export const homepageContent: HomepageContent = {
   hero: {
-    eyebrow: 'Instagram Growth Platform in Canada',
-    title: 'Buy Instagram Followers Canada',
+    eyebrow: 'Instagram Growth Platform worldwide',
+    title: 'Buy Instagram Followers',
     description:
-      'Build stronger social proof for your Instagram profile with package-based growth for Canadian creators, businesses, and brands. Compare real audience packages, likes, and views—then buy IG followers or buy followers for Instagram when you are ready.',
+      'Build stronger social proof for your Instagram profile with package-based growth for creators, businesses, and brands. Compare real audience packages, likes, and views—then buy IG followers or buy followers for Instagram when you are ready.',
     primaryMessage:
-      'The clear path to buy Instagram followers and grow brand presence across Canada.',
-    purpose: 'Convert visitors searching to buy Instagram followers in Canada',
-    primaryKeyword: 'buy instagram followers canada',
+      'The clear path to buy Instagram followers and grow brand presence worldwide.',
+    purpose: 'Convert visitors searching to buy Instagram followers worldwide',
+    primaryKeyword: 'buy instagram followers',
     supportingKeywords: [
       'buy instagram followers',
       'buy followers instagram',
@@ -24,7 +24,7 @@ export const homepageContent: HomepageContent = {
       'buy followers for instagram',
       'buy instagram likes',
       'buy instagram views',
-      'instagram growth services canada',
+      'instagram growth services',
     ],
     suggestedWordCount: 120,
     primaryCta: resolveCta('getStarted', {
@@ -37,11 +37,11 @@ export const homepageContent: HomepageContent = {
     }),
     microcopy: 'No password required · Secure checkout · Order tracking',
     visual: {
-      src: '/assets/images/illustrations/buy-instagram-followers-canada-hero.webp',
-      alt: 'Buy Instagram Followers Canada dashboard showing follower growth and secure delivery',
-      title: 'Buy Instagram Followers Canada',
+      src: '/assets/images/illustrations/buy-instagram-followers-global-hero-v2.webp',
+      alt: 'Buy Instagram Followers dashboard showing follower growth and secure delivery',
+      title: 'Buy Instagram Followers',
       caption:
-        'Premium Instagram growth for creators and businesses across Canada.',
+        'Premium Instagram growth for creators and businesses worldwide.',
       width: 1536,
       height: 1024,
     },
@@ -74,7 +74,7 @@ export const homepageContent: HomepageContent = {
   },
   heroStats: {
     id: 'home-hero-stats',
-    title: 'Verified InstantViral metrics',
+    title: 'Verified NovaLikes metrics',
     purpose: 'Hero trust statistics from approved claims only',
     statIds: ['stat-founded', 'stat-customers', 'stat-delivered', 'stat-support'],
   },
@@ -84,7 +84,7 @@ export const homepageContent: HomepageContent = {
     description:
       'Start with Instagram follower packages, or explore growth services for TikTok, YouTube and Facebook when you are ready.',
     purpose: 'Route users by platform',
-    primaryKeyword: 'instagram growth services canada',
+    primaryKeyword: 'instagram growth services',
     suggestedWordCount: 50,
     platformIds: ['instagram', 'tiktok', 'youtube', 'facebook'],
     internalLinks: [
@@ -97,7 +97,7 @@ export const homepageContent: HomepageContent = {
       {
         platformId: 'instagram',
         description:
-          'Buy Instagram followers, likes, views and comments with clear package options for creators, businesses and brands in Canada.',
+          'Buy Instagram followers, likes, views and comments with clear package options for creators, businesses and brands worldwide.',
         ctaLabel: 'View Instagram Packages',
         href: '#instagram-growth-services',
         previewServiceSlugs: [
@@ -153,7 +153,7 @@ export const homepageContent: HomepageContent = {
     ],
     descriptions: {
       'buy-instagram-followers':
-        'Build stronger Instagram profile visibility with follower packages for creators, businesses and brands across Canada.',
+        'Build stronger Instagram profile visibility with follower packages for creators, businesses and brands worldwide.',
       'buy-instagram-likes':
         'Add visible interaction to selected Instagram posts with like packages in several quantities.',
       'buy-instagram-views':
@@ -170,9 +170,9 @@ export const homepageContent: HomepageContent = {
   },
   whyChooseUs: {
     id: 'home-why',
-    title: 'Why Canadian Customers Choose InstantViral',
+    title: 'Why Customers Choose NovaLikes',
     description:
-      'InstantViral keeps Instagram ordering clear for Canadian customers — from package selection through checkout and delivery tracking.',
+      'NovaLikes keeps Instagram ordering clear for customers — from package selection through checkout and delivery tracking.',
     purpose: 'Explain practical ordering features',
     suggestedWordCount: 200,
     cta: {
@@ -202,7 +202,7 @@ export const homepageContent: HomepageContent = {
         id: 'why-order-tracking',
         title: 'Order Tracking',
         description:
-          'Customers can check their order status through the InstantViral tracking system.',
+          'Customers can check their order status through the NovaLikes tracking system.',
       },
       {
         id: 'why-clear-packages',
@@ -220,9 +220,9 @@ export const homepageContent: HomepageContent = {
   },
   howItWorks: {
     id: 'home-how',
-    title: 'How to Buy Instagram Followers in Canada',
+    title: 'How to Buy Instagram Followers worldwide',
     description:
-      'Buying Instagram followers should be simple, transparent, and secure. At InstantViral, complete an order in a few minutes without sharing your Instagram password.',
+      'Buying Instagram followers should be simple, transparent, and secure. At NovaLikes, complete an order in a few minutes without sharing your Instagram password.',
     purpose: 'Explain how to buy Instagram followers',
     primaryKeyword: 'how to buy Instagram followers',
     suggestedWordCount: 150,
@@ -265,9 +265,9 @@ export const homepageContent: HomepageContent = {
   },
   testimonials: {
     id: 'home-testimonials',
-    title: 'Customer Experiences with InstantViral',
+    title: 'Customer Experiences with NovaLikes',
     description:
-      'Genuine customer feedback for InstantViral Instagram and social media growth services.',
+      'Genuine customer feedback for NovaLikes Instagram and social media growth services.',
     purpose: 'Social proof',
     testimonialIds: [],
   },
@@ -275,9 +275,9 @@ export const homepageContent: HomepageContent = {
     id: 'home-faq',
     title: 'Frequently Asked Questions About Buying Instagram Followers',
     purpose: 'Answer Instagram follower buying questions',
-    primaryKeyword: 'buy instagram followers canada',
+    primaryKeyword: 'buy instagram followers',
     faqIds: [
-      'faq-home-buy-canada',
+      'faq-home-buy-followers',
       'faq-home-how-buy-followers',
       'faq-home-password',
       'faq-home-where-buy',
@@ -291,7 +291,7 @@ export const homepageContent: HomepageContent = {
     id: 'home-final-cta',
     title: 'Ready to Grow Your Instagram Presence?',
     description:
-      "Whether you're building a personal brand, launching a new business, promoting an online store, or growing a creator account, InstantViral makes it easy to compare Instagram growth services and choose the package that matches your goals. Browse our Instagram Followers, Likes, Views, and Comments packages, complete your order through a secure checkout, and track your order every step of the way.",
+      "Whether you're building a personal brand, launching a new business, promoting an online store, or growing a creator account, NovaLikes makes it easy to compare Instagram growth services and choose the package that matches your goals. Browse our Instagram Followers, Likes, Views, and Comments packages, complete your order through a secure checkout, and track your order every step of the way.",
     purpose: 'Drive conversions to Instagram follower packages',
     primaryCta: {
       label: 'Compare Instagram Followers Packages',

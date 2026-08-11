@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const graph = asJsonLdGraph([organizationSchema(), websiteSchema()]);
 
   return (
-    <html lang="en-CA" className={cn(GeistSans.variable)}>
+    <html lang="en" className={cn(GeistSans.variable)}>
       <body className={cn(GeistSans.className, 'antialiased')}>
         <JsonLdScript id="global-jsonld" data={graph} />
         <AnalyticsProvider>

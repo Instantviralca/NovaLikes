@@ -27,7 +27,7 @@ const PRODUCTION_FAQ_ANSWERS: Record<string, string> = {
 
 const PRODUCTION_META = {
   metaTitle:
-    'How to Get More Instagram Followers: 15 Proven Strategies | InstantViral',
+    'How to Get More Instagram Followers: 15 Proven Strategies | NovaLikes',
   metaDescription:
     'Learn practical strategies to grow your Instagram audience through content, engagement, profile optimization, and analytics.',
 };
@@ -50,12 +50,12 @@ describe('Article 01 production package apply', () => {
     seo.metaDescription = PRODUCTION_META.metaDescription;
     seo.openGraph = {
       ...seo.openGraph,
-      title: `${brief!.workingTitle} | InstantViral Learn`,
+      title: `${brief!.workingTitle} | NovaLikes Learn`,
       description: PRODUCTION_META.metaDescription.slice(0, 200),
     };
     seo.twitter = {
       ...seo.twitter,
-      title: `${brief!.workingTitle} | InstantViral Learn`,
+      title: `${brief!.workingTitle} | NovaLikes Learn`,
       description: PRODUCTION_META.metaDescription.slice(0, 200),
     };
     seo.readingTimeMinutes = estimateReadingTime(body);

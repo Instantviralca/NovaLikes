@@ -16,7 +16,7 @@ export function ScheduledPublishNotice({
   const when = Date.parse(scheduledAt);
   const label = Number.isNaN(when)
     ? scheduledAt
-    : new Intl.DateTimeFormat('en-CA', {
+    : new Intl.DateTimeFormat('en', {
         dateStyle: 'medium',
         timeStyle: 'short',
         timeZone: 'UTC',

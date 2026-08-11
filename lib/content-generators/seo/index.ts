@@ -25,7 +25,7 @@ export function generateOpenGraph(
   options: { image?: string | null; canonicalUrl: string },
 ): SeoAssets['openGraph'] {
   return {
-    title: `${brief.workingTitle} | InstantViral Learn`,
+    title: `${brief.workingTitle} | NovaLikes Learn`,
     description: brief.shortAnswer.slice(0, 200),
     url: options.canonicalUrl,
     type: 'article',
@@ -41,7 +41,7 @@ export function generateTwitterCard(
 ): SeoAssets['twitter'] {
   return {
     card: 'summary_large_image',
-    title: `${brief.workingTitle} | InstantViral Learn`,
+    title: `${brief.workingTitle} | NovaLikes Learn`,
     description: brief.shortAnswer.slice(0, 200),
     image: options.image ?? null,
   };
@@ -65,7 +65,7 @@ export function generateArticleSchema(
       : undefined,
     publisher: {
       '@type': 'Organization',
-      name: 'InstantViral',
+      name: 'NovaLikes',
       url: SEO_PRODUCTION_DOMAIN,
     },
     datePublished: seo.publishState === 'published' ? seo.sitemap.lastModified : undefined,
@@ -135,11 +135,11 @@ export function generateSeoAssets(input: GenerateSeoAssetsInput): {
 
   const seo: SeoAssets = {
     slug: input.brief.slug,
-    metaTitle: `${input.brief.workingTitle} | Learn | InstantViral`,
+    metaTitle: `${input.brief.workingTitle} | Learn | NovaLikes`,
     metaDescription:
       input.brief.shortAnswer.length >= 40
         ? input.brief.shortAnswer.slice(0, 160)
-        : `${input.brief.shortAnswer} Practical guidance for InstantViral Learn readers.`,
+        : `${input.brief.shortAnswer} Practical guidance for NovaLikes Learn readers.`,
     canonicalPath,
     canonicalUrl,
     robots: {

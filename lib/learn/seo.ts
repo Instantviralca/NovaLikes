@@ -23,8 +23,8 @@ export function getLearnArticlePageMetadata(articleSlug: string): Metadata {
   const article = getPublicLearnArticleBySlug(articleSlug);
   if (!article) {
     return buildPageMetadata({
-      title: 'Learn | InstantViral',
-      description: 'InstantViral Learn Center.',
+      title: 'Learn | NovaLikes',
+      description: 'NovaLikes Learn Center.',
       path: learnArticlePath(articleSlug),
       robots: { index: false, follow: false },
     });

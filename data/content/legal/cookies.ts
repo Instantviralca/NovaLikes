@@ -22,7 +22,7 @@ function formatDisplayDate(isoDate: string | undefined): string | undefined {
   if (!isoDate) return undefined;
   const parsed = new Date(`${isoDate}T00:00:00Z`);
   if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en-CA', {
+  return new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -43,7 +43,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
   const essentialBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'Essential cookies and similar technologies are required for core InstantViral functionality. They are not optional when you use cart, checkout, session, or security features.',
+      text: 'Essential cookies and similar technologies are required for core NovaLikes functionality. They are not optional when you use cart, checkout, session, or security features.',
     },
   ];
 
@@ -68,13 +68,13 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
 
   essentialBlocks.push({
     type: 'paragraph',
-    text: 'InstantViral does not invent named third-party cookie identifiers on this page. A detailed named-cookie inventory will be published only after it is verified.',
+    text: 'NovaLikes does not invent named third-party cookie identifiers on this page. A detailed named-cookie inventory will be published only after it is verified.',
   });
 
   const analyticsBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'Analytics cookies and similar technologies are optional. They are used only when an analytics provider is actually enabled, to help InstantViral understand page visits, navigation patterns, device categories, conversion events, and website performance.',
+      text: 'Analytics cookies and similar technologies are optional. They are used only when an analytics provider is actually enabled, to help NovaLikes understand page visits, navigation patterns, device categories, conversion events, and website performance.',
     },
   ];
 
@@ -86,7 +86,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
   } else {
     analyticsBlocks.push({
       type: 'paragraph',
-      text: 'No analytics providers are currently enabled in InstantViral configuration. InstantViral does not list Google Analytics, Microsoft Clarity, or other analytics tools unless they are genuinely configured.',
+      text: 'No analytics providers are currently enabled in NovaLikes configuration. NovaLikes does not list Google Analytics, Microsoft Clarity, or other analytics tools unless they are genuinely configured.',
     });
   }
 
@@ -105,7 +105,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
   } else {
     marketingBlocks.push({
       type: 'paragraph',
-      text: 'No marketing pixels or advertising technologies are currently enabled in InstantViral configuration.',
+      text: 'No marketing pixels or advertising technologies are currently enabled in NovaLikes configuration.',
     });
   }
 
@@ -127,19 +127,19 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
   if (config.consentManagerEnabled && config.consentManagerHref) {
     preferenceBlocks.push({
       type: 'paragraph',
-      text: `InstantViral provides cookie preference controls through ${config.consentManagerLabel ?? 'the cookie preference tool'} available on the website. Use those controls to update non-essential cookie choices.`,
+      text: `NovaLikes provides cookie preference controls through ${config.consentManagerLabel ?? 'the cookie preference tool'} available on the website. Use those controls to update non-essential cookie choices.`,
     });
   } else {
     preferenceBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie-consent banner or preference manager is not currently configured on InstantViral.ca. Until a consent manager is enabled, InstantViral keeps this wording generic: use your browser controls to manage optional cookies, and review this Cookie Policy and the Privacy Policy for updates when a preference tool is added.',
+      text: 'A dedicated cookie-consent banner or preference manager is not currently configured on NovaLikes.ca. Until a consent manager is enabled, NovaLikes keeps this wording generic: use your browser controls to manage optional cookies, and review this Cookie Policy and the Privacy Policy for updates when a preference tool is added.',
     });
   }
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Questions about InstantViral’s use of cookies or similar technologies may be submitted using the contact details below. Related privacy practices are described in the Privacy Policy at ${domainHost}${privacyPath}.`,
+      text: `Questions about NovaLikes’s use of cookies or similar technologies may be submitted using the contact details below. Related privacy practices are described in the Privacy Policy at ${domainHost}${privacyPath}.`,
     },
     {
       type: 'paragraph',
@@ -182,11 +182,11 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `Cookies are small text files stored on your device when you visit a website. InstantViral may also use similar technologies, such as browser session storage, local storage, pixels, or scripts, where those technologies are actually enabled.`,
+          text: `Cookies are small text files stored on your device when you visit a website. NovaLikes may also use similar technologies, such as browser session storage, local storage, pixels, or scripts, where those technologies are actually enabled.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} uses these technologies to support website functionality and, only when configured, optional analytics or marketing features. This Cookie Policy explains the categories InstantViral uses and how you can manage preferences.`,
+          text: `${operatingName} uses these technologies to support website functionality and, only when configured, optional analytics or marketing features. This Cookie Policy explains the categories NovaLikes uses and how you can manage preferences.`,
         },
       ],
     },
@@ -197,7 +197,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'InstantViral distinguishes between essential and optional technologies:',
+          text: 'NovaLikes distinguishes between essential and optional technologies:',
         },
         {
           type: 'list',
@@ -244,13 +244,13 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Some cookies or similar technologies may be set by third parties when InstantViral enables payment, analytics, marketing, or infrastructure providers. Those third parties control their own technologies and privacy practices.',
+          text: 'Some cookies or similar technologies may be set by third parties when NovaLikes enables payment, analytics, marketing, or infrastructure providers. Those third parties control their own technologies and privacy practices.',
         },
         {
           type: 'paragraph',
           text:
             analytics.length === 0 && marketing.length === 0
-              ? 'No third-party analytics or marketing providers are currently enabled. If InstantViral later enables such providers, this Cookie Policy will be updated to name only the providers that are actually configured.'
+              ? 'No third-party analytics or marketing providers are currently enabled. If NovaLikes later enables such providers, this Cookie Policy will be updated to name only the providers that are actually configured.'
               : `Third-party tools currently enabled for analytics or marketing: ${[
                   ...analytics.map((provider) => provider.displayName),
                   ...marketing.map((tool) => tool.displayName),
@@ -258,7 +258,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Payment providers enabled at checkout may also use their own cookies or similar technologies on their hosted payment flows. InstantViral does not invent payment-provider cookie inventories on this page.',
+          text: 'Payment providers enabled at checkout may also use their own cookies or similar technologies on their hosted payment flows. NovaLikes does not invent payment-provider cookie inventories on this page.',
         },
       ],
     },
@@ -293,15 +293,15 @@ export function getCookiePolicyContent(
     id: 'cookie-policy',
     path: routes.cookiePolicy,
     seo: {
-      title: 'Cookie Policy | InstantViral Canada',
+      title: 'Cookie Policy | NovaLikes',
       description:
-        'Learn how InstantViral uses cookies, similar technologies, and cookie preferences to support website functionality, analytics, and customer experience.',
+        'Learn how NovaLikes uses cookies, similar technologies, and cookie preferences to support website functionality, analytics, and customer experience.',
     },
     breadcrumbLabel: 'Cookie Policy',
     header: {
       title: 'Cookie Policy',
       intro:
-        'This Cookie Policy explains how InstantViral uses cookies and similar technologies on InstantViral.ca, which categories are essential or optional, and how you can manage preferences. InstantViral discloses only technologies that are actually configured.',
+        'This Cookie Policy explains how NovaLikes uses cookies and similar technologies on NovaLikes.ca, which categories are essential or optional, and how you can manage preferences. NovaLikes discloses only technologies that are actually configured.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

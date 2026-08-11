@@ -290,7 +290,7 @@ export function TikTokLikesBeforeBuying({
   );
 }
 
-/** Section 9 — Buying in Canada */
+/** Section 9 — Buying worldwide */
 export function TikTokLikesCanada({
   config = TIKTOK_LIKES_PAGE_CONFIG,
   className,

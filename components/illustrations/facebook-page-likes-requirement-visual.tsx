@@ -92,7 +92,7 @@ export function FacebookPageLikesRequirementVisual({ className }: { className?: 
           <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
             Community insights
           </p>
-          <p className="mt-0.5 text-[11px] font-bold text-stone-800">Canada · Trusted page</p>
+          <p className="mt-0.5 text-[11px] font-bold text-stone-800">Trusted page</p>
         </div>
 
         <div className="rounded-xl border border-stone-100 bg-white px-2.5 py-2">

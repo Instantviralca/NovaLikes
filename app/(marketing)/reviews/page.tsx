@@ -32,8 +32,8 @@ export default function ReviewsPage() {
   const reviewBundle = buildReviewSchemaBundle(getApprovedReviews(), {
     entity: {
       kind: 'organization',
-      name: 'InstantViral',
-      url: 'https://instantviral.ca',
+      name: 'NovaLikes',
+      url: 'https://novalikes.com',
     },
     visibleReviewIds: publicReviews.map((review) => review.id),
     reviewSectionVisible: publicReviews.length > 0,
@@ -43,7 +43,7 @@ export default function ReviewsPage() {
     reviewBundle.reviews.length > 0
       ? {
           '@type': 'ItemList',
-          name: 'InstantViral customer reviews',
+          name: 'NovaLikes customer reviews',
           numberOfItems: reviewBundle.reviews.length,
           itemListElement: reviewBundle.reviews.map((reviewNode, index) => ({
             '@type': 'ListItem',
@@ -82,7 +82,7 @@ export default function ReviewsPage() {
               Customer Reviews
             </Heading>
             <MutedText>
-              Real customer feedback about InstantViral social media growth services. All ratings
+              Real customer feedback about NovaLikes social media growth services. All ratings
               below come from our approved review catalogue.
             </MutedText>
             {aggregate ? (
@@ -110,7 +110,7 @@ export default function ReviewsPage() {
               href={routes.home}
               className="font-medium text-foreground underline-offset-4 hover:underline"
             >
-              Explore InstantViral services
+              Explore NovaLikes services
             </Link>
             .
           </p>

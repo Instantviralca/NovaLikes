@@ -37,7 +37,7 @@ export function FacebookPostLikesAnalyticsDashboard({ className }: { className?:
             </span>
             <div>
               <p className="text-[10px] font-bold text-stone-900">Post analytics</p>
-              <p className="text-[8px] text-stone-500">Public post · Canada</p>
+              <p className="text-[8px] text-stone-500">Public post · Global</p>
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2 py-0.5 text-[8px] font-bold text-sky-700">

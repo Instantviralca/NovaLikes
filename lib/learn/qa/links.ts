@@ -63,7 +63,7 @@ export function validateLinks(article: QAArticleSource): QAIssue[] {
         });
       } else if (
         block.href.startsWith('https://') &&
-        !block.href.startsWith('https://instantviral.ca')
+        !block.href.startsWith('https://novalikes.com')
       ) {
         // External https is allowed; flag missing descriptive label only.
         if (block.label.trim().length < 3) {

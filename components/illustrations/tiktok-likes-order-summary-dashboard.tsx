@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 const ROWS = [
   { id: 'url', label: 'Public video URL', value: 'tiktok.com/@…/video', done: true },
   { id: 'package', label: 'Package selected', value: '1,000 Likes', done: true },
-  { id: 'email', label: 'Valid email', value: 'you@company.ca', done: true },
+  { id: 'email', label: 'Valid email', value: 'you@company.com', done: true },
   { id: 'payment', label: 'Secure payment', value: 'Confirmed', done: true, active: true },
 ] as const;
 

@@ -29,9 +29,9 @@ function readCsrfToken(): string | undefined {
   return decodeURIComponent(match.slice('iv_admin_csrf='.length));
 }
 
-const DEFAULT_SUBJECT = 'Limited offer: 25% off InstantViral';
+const DEFAULT_SUBJECT = 'Limited offer: 25% off NovaLikes';
 const DEFAULT_MESSAGE =
-  'For a limited time, take 25% off your next InstantViral order. Apply the coupon code at checkout and grow faster.';
+  'For a limited time, take 25% off your next NovaLikes order. Apply the coupon code at checkout and grow faster.';
 
 export function EmailMarketingPage() {
   const [optedInCount, setOptedInCount] = useState(0);

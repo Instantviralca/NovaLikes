@@ -66,7 +66,7 @@ function ReviewCard({ review }: { review: PublicReview }) {
             {review.customerName}
           </h3>
           <p className="truncate text-xs text-[var(--text-secondary)]">
-            {review.platform ? PLATFORM_LABEL[review.platform] : 'InstantViral customer'}
+            {review.platform ? PLATFORM_LABEL[review.platform] : 'NovaLikes customer'}
           </p>
         </div>
       </div>

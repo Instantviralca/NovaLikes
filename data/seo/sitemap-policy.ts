@@ -11,8 +11,8 @@ import {
 } from '@/data/seo/sitemap-routes';
 
 /** Absolute production host for sitemap / robots (Document 14.08). */
-export const SITEMAP_PRODUCTION_HOST = 'instantviral.ca' as const;
-export const SITEMAP_PRODUCTION_ORIGIN = 'https://instantviral.ca' as const;
+export const SITEMAP_PRODUCTION_HOST = 'novalikes.com' as const;
+export const SITEMAP_PRODUCTION_ORIGIN = 'https://novalikes.com' as const;
 
 /**
  * Explicit production sitemap allowlist.

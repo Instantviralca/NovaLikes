@@ -438,7 +438,7 @@ export function TikTokViewsBeforeBuying({
   );
 }
 
-/** Buying in Canada */
+/** Buying worldwide */
 export function TikTokViewsCanada({
   config = TIKTOK_VIEWS_PAGE_CONFIG,
   className,

@@ -16,7 +16,7 @@ import { routes } from '@/config/routes';
 
 /** Homepage featured FAQ ids — homepage content faqIds. */
 export const HOMEPAGE_FEATURED_FAQ_IDS = [
-  'faq-home-buy-canada',
+  'faq-home-buy-followers',
   'faq-home-how-buy-followers',
   'faq-home-password',
   'faq-home-where-buy',

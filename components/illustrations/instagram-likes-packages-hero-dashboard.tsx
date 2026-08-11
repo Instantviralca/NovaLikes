@@ -133,7 +133,7 @@ export function InstagramLikesPackagesHeroDashboard({
                   IV
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-xs font-bold text-stone-900">instantviral</p>
+                  <p className="truncate text-xs font-bold text-stone-900">novalikes</p>
                   <p className="text-[9px] text-stone-500">Public post</p>
                 </div>
                 <span className="text-sm font-bold text-stone-400">•••</span>

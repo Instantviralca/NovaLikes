@@ -14,7 +14,7 @@ export type ProviderMappedEvent = {
 };
 
 /**
- * Translate a canonical InstantViral event into a provider payload.
+ * Translate a canonical NovaLikes event into a provider payload.
  * Providers never receive raw PII — only the already-sanitized event.
  */
 export function mapEventToProvider(

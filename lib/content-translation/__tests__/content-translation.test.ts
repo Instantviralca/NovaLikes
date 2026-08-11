@@ -41,13 +41,13 @@ describe('16.07 Translation Ready System', () => {
     const pkg = createTranslationPackage(brief);
     const localeMap = buildLocaleMap(brief);
 
-    expect(pkg.canonicalLocale).toBe('en-CA');
-    expect(pkg.locales['en-CA']?.fields.title).toBe(brief.workingTitle);
-    expect(pkg.locales['fr-CA']?.status).toBe('Not Started');
-    expect(localeMap.hreflang.some((h) => h.locale === 'en-CA' && h.enabled)).toBe(
+    expect(pkg.canonicalLocale).toBe('en');
+    expect(pkg.locales['en']?.fields.title).toBe(brief.workingTitle);
+    expect(pkg.locales['fr']?.status).toBe('Not Started');
+    expect(localeMap.hreflang.some((h) => h.locale === 'en' && h.enabled)).toBe(
       true,
     );
-    expect(localeMap.hreflang.every((h) => h.locale === 'en-CA' || !h.enabled)).toBe(
+    expect(localeMap.hreflang.every((h) => h.locale === 'en' || !h.enabled)).toBe(
       true,
     );
 
@@ -62,8 +62,8 @@ describe('16.07 Translation Ready System', () => {
       ...base,
       locales: {
         ...base.locales,
-        'fr-CA': {
-          locale: 'fr-CA',
+        'fr': {
+          locale: 'fr',
           status: 'Reviewed',
           fields: {
             title: 'Titre',
@@ -78,8 +78,8 @@ describe('16.07 Translation Ready System', () => {
     };
 
     const refreshed = createTranslationPackage(brief, { existing: stale });
-    expect(refreshed.locales['fr-CA']?.status).toBe('Needs Update');
-    expect(detectOutdatedTranslations(refreshed)).toContain('fr-CA');
+    expect(refreshed.locales['fr']?.status).toBe('Needs Update');
+    expect(detectOutdatedTranslations(refreshed)).toContain('fr');
     expect(
       validateTranslation(refreshed, buildLocaleMap(brief)).some(
         (i) => i.code === 'outdated_translation_status',

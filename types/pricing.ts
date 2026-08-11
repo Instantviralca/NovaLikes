@@ -75,7 +75,7 @@ export type PricingPackage = {
   availability: PackageAvailability;
   /**
    * Comment type label from real package data only (e.g. custom / random / premium).
-   * Omit when the InstantViral source does not define a type — never invent.
+   * Omit when the NovaLikes source does not define a type — never invent.
    */
   commentType?: string;
   /**

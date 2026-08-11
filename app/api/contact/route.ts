@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     // Email failures must not fail the contact persistence response.
     try {
-      const companyName = process.env.EMAIL_COMPANY_NAME?.trim() || 'InstantViral';
+      const companyName = process.env.EMAIL_COMPANY_NAME?.trim() || 'NovaLikes';
       const adminTo = await getAdminNotificationEmail();
       if (adminTo && isEmailConfigured()) {
         await dispatchTransactionalEmail({

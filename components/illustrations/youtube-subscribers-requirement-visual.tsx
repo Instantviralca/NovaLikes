@@ -58,9 +58,9 @@ export function YouTubeSubscribersRequirementVisual({ className }: { className?:
               <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
                 Channel avatar
               </p>
-              <p className="text-sm font-bold text-stone-900">Creator Channel CA</p>
+              <p className="text-sm font-bold text-stone-900">Creator Channel</p>
               <p className="mt-0.5 truncate text-[10px] font-semibold text-stone-600">
-                youtube.com/@creator.ca
+                youtube.com/@creator
               </p>
             </div>
           </div>

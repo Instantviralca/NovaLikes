@@ -16,7 +16,7 @@ type CategoryGridProps = {
  */
 export function CategoryGrid({
   title = 'Browse by category',
-  description = 'Explore InstantViral Learn topics.',
+  description = 'Explore NovaLikes Learn topics.',
   categories,
 }: CategoryGridProps) {
   if (categories.length === 0) return null;

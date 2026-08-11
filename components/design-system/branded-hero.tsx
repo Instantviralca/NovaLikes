@@ -82,7 +82,7 @@ export function BrandedHero({
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           background:
-            'radial-gradient(ellipse 50% 40% at 90% 10%, rgb(240 112 32 / 0.06), transparent)',
+            'radial-gradient(ellipse 50% 40% at 90% 10%, rgb(232 93 4 / 0.06), transparent)',
         }}
         aria-hidden="true"
       />

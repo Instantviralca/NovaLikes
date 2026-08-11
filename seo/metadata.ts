@@ -37,9 +37,9 @@ export function homeMetadata(): Metadata {
 export function serviceMetadata(slug: string): Metadata {
   if (!isApprovedServiceSlug(slug)) {
     return buildPageMetadata({
-      title: 'Unavailable Service | InstantViral',
+      title: 'Unavailable Service | NovaLikes',
       description:
-        'This service route is not part of the InstantViral production catalogue.',
+        'This service route is not part of the NovaLikes production catalogue.',
       path: `/${slug}`,
       robots: { index: false, follow: false },
     });
@@ -93,15 +93,15 @@ export function noIndexMetadata(title: string, path: string): Metadata {
   if (entry) {
     return buildMetadataFromEntry({
       ...entry,
-      title: title.includes('|') ? title : `${title} | InstantViral`,
+      title: title.includes('|') ? title : `${title} | NovaLikes`,
       robots: { index: false, follow: false },
       indexable: false,
     });
   }
 
   return buildPageMetadata({
-    title: title.includes('|') ? title : `${title} | InstantViral`,
-    description: 'This InstantViral page is not indexed.',
+    title: title.includes('|') ? title : `${title} | NovaLikes`,
+    description: 'This NovaLikes page is not indexed.',
     path,
     robots: { index: false, follow: false },
   });

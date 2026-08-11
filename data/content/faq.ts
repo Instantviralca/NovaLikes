@@ -10,10 +10,10 @@ import { faqHubItems } from '@/data/content/faq-hub';
 export const faqItems: FAQItem[] = [
   // Homepage FAQ set — Instagram followers commercial cluster
   {
-    id: 'faq-home-buy-canada',
-    question: 'Can I buy Instagram followers in Canada?',
+    id: 'faq-home-buy-followers',
+    question: 'Can I buy Instagram followers?',
     answer:
-      'Yes. InstantViral offers Instagram follower packages through its Canadian website. Select a package, provide the public username and complete checkout to place an order. Review package details on [Instagram Followers Packages](/buy-instagram-followers).',
+      'Yes. NovaLikes offers Instagram follower packages through its our website. Select a package, provide the public username and complete checkout to place an order. Review package details on [Instagram Followers Packages](/buy-instagram-followers).',
     homepageFilter: 'General',
     order: 1,
   },
@@ -27,7 +27,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-home-how-works',
-    question: 'How does InstantViral work?',
+    question: 'How does NovaLikes work?',
     answer:
       'Choose a service for Instagram, TikTok, YouTube or Facebook, compare packages on the service page, enter the public username or content URL required, and complete checkout. After payment is confirmed, monitor available updates on the [Track Order](/track-order) page with your order ID and email. Start with a popular option such as [Instagram Followers Packages](/buy-instagram-followers) when you know which platform to grow first.',
     homepageFilter: 'General',
@@ -45,7 +45,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-password',
     question: 'Do I need to provide my Instagram password?',
     answer:
-      'No. InstantViral only requires the public username needed to process the selected service. Never share login credentials, recovery codes or two-factor codes with anyone claiming to process your order.',
+      'No. NovaLikes only requires the public username needed to process the selected service. Never share login credentials, recovery codes or two-factor codes with anyone claiming to process your order.',
     homepageFilter: 'Safety',
     order: 5,
   },
@@ -53,7 +53,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-where-buy',
     question: 'Where can I buy Instagram followers?',
     answer:
-      'Instagram follower packages can be purchased from social media service websites such as InstantViral. Compare the package details, policies, delivery information and support before ordering. Review available options on [Instagram Followers Packages](/buy-instagram-followers).',
+      'Instagram follower packages can be purchased from social media service websites such as NovaLikes. Compare the package details, policies, delivery information and support before ordering. Review available options on [Instagram Followers Packages](/buy-instagram-followers).',
     homepageFilter: 'General',
     order: 6,
   },
@@ -61,7 +61,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-likes-views',
     question: 'Can I buy Instagram likes and views as well?',
     answer:
-      'Yes. InstantViral also provides dedicated package pages for [Instagram likes](/buy-instagram-likes) and [Instagram views](/buy-instagram-views).',
+      'Yes. NovaLikes also provides dedicated package pages for [Instagram likes](/buy-instagram-likes) and [Instagram views](/buy-instagram-views).',
     homepageFilter: 'Platforms',
     order: 7,
   },
@@ -77,7 +77,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-check-before',
     question: 'What should I check before buying followers?',
     answer:
-      'Review the provider’s package details, account-access requirements, delivery explanation, support options and refund or refill terms. InstantViral publishes ordering steps and policy links before checkout.',
+      'Review the provider’s package details, account-access requirements, delivery explanation, support options and refund or refill terms. NovaLikes publishes ordering steps and policy links before checkout.',
     homepageFilter: 'Safety',
     order: 9,
   },
@@ -109,7 +109,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-track-order',
     question: 'Can I track my order?',
     answer:
-      'Yes. Customers can use the order-tracking function provided by InstantViral to check the current order status. Open the [Track Order](/track-order) page and enter the order ID and email from your confirmation.',
+      'Yes. Customers can use the order-tracking function provided by NovaLikes to check the current order status. Open the [Track Order](/track-order) page and enter the order ID and email from your confirmation.',
     homepageFilter: 'Delivery',
     order: 13,
   },
@@ -133,7 +133,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-money-back',
     question: 'Is there a money-back guarantee?',
     answer:
-      "Eligible purchases are covered by InstantViral's 30-day money-back guarantee under the [refund policy](/refund-policy) and the terms shown for the selected service. Review those conditions before checkout. Contact support with your order ID and checkout email if you need help with an eligible purchase.",
+      "Eligible purchases are covered by NovaLikes's 30-day money-back guarantee under the [refund policy](/refund-policy) and the terms shown for the selected service. Review those conditions before checkout. Contact support with your order ID and checkout email if you need help with an eligible purchase.",
     homepageFilter: 'Delivery',
     order: 16,
   },
@@ -141,7 +141,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-platforms',
     question: 'Which social media platforms do you support?',
     answer:
-      'InstantViral supports Instagram, TikTok, YouTube and Facebook. Examples include [Instagram Followers Packages](/buy-instagram-followers), [Buy Instagram Likes](/buy-instagram-likes), [Buy TikTok Followers](/buy-tiktok-followers), [Buy TikTok Views](/buy-tiktok-views), [Buy YouTube Subscribers](/buy-youtube-subscribers), [Buy YouTube Views](/buy-youtube-views), [Buy Facebook Followers](/buy-facebook-followers) and [Buy Facebook Page Likes](/buy-facebook-page-likes). YouTube packages currently focus on subscribers and views.',
+      'NovaLikes supports Instagram, TikTok, YouTube and Facebook. Examples include [Instagram Followers Packages](/buy-instagram-followers), [Buy Instagram Likes](/buy-instagram-likes), [Buy TikTok Followers](/buy-tiktok-followers), [Buy TikTok Views](/buy-tiktok-views), [Buy YouTube Subscribers](/buy-youtube-subscribers), [Buy YouTube Views](/buy-youtube-views), [Buy Facebook Followers](/buy-facebook-followers) and [Buy Facebook Page Likes](/buy-facebook-page-likes). YouTube packages currently focus on subscribers and views.',
     homepageFilter: 'Platforms',
     order: 17,
   },
@@ -157,7 +157,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-password',
     question: 'Do I need to share my social media password?',
     answer:
-      'No. InstantViral does not require your Instagram, TikTok, YouTube, or Facebook password. Orders use public information such as a username, profile URL, post link, page URL, channel URL, or video link, depending on the service you select.',
+      'No. NovaLikes does not require your Instagram, TikTok, YouTube, or Facebook password. Orders use public information such as a username, profile URL, post link, page URL, channel URL, or video link, depending on the service you select.',
   },
   {
     id: 'faq-order-start',
@@ -193,7 +193,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-platforms',
     question: 'Which platforms do you support?',
     answer:
-      'InstantViral currently offers growth services for Instagram, TikTok, YouTube, and Facebook. Each platform has separate service pages and real package options.',
+      'NovaLikes currently offers growth services for Instagram, TikTok, YouTube, and Facebook. Each platform has separate service pages and real package options.',
   },
   {
     id: 'faq-need-help',
@@ -203,10 +203,10 @@ export const faqItems: FAQItem[] = [
   },
   // Shared aliases still referenced by company / service content shells
   {
-    id: 'faq-what-is-instantviral',
-    question: 'What is InstantViral?',
+    id: 'faq-what-is-novalikes',
+    question: 'What is NovaLikes?',
     answer:
-      'InstantViral is a Canadian social media growth platform offering services for Instagram, TikTok, YouTube, and Facebook, with clear ordering, order tracking, and 24/7 support.',
+      'NovaLikes is a social media growth platform offering services for Instagram, TikTok, YouTube, and Facebook, with clear ordering, order tracking, and 24/7 support.',
   },
   {
     id: 'faq-how-ordering-works',
@@ -218,7 +218,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-is-it-safe',
     question: 'Is it safe for my account?',
     answer:
-      'InstantViral never requires your social media password. Orders use public usernames or content links only. Always review the service page terms before purchasing.',
+      'NovaLikes never requires your social media password. Orders use public usernames or content links only. Always review the service page terms before purchasing.',
   },
   {
     id: 'faq-delivery-time',
@@ -250,12 +250,12 @@ export const faqItems: FAQItem[] = [
     answer:
       'Open the relevant likes or views service page to compare packages, review delivery details, and provide the public post or video URL required for the order.',
   },
-  // Buy Instagram Followers Canada — Document 09.11 §15
+  // Buy Instagram Followers — Document 09.11 §15
   {
     id: 'faq-ig-followers-password',
     question: 'Do I need to share my Instagram password?',
     answer:
-      'No. InstantViral does not ask for your Instagram password. The order form only requires the public username connected to the profile receiving the followers. You remain in control of your Instagram account throughout the process.',
+      'No. NovaLikes does not ask for your Instagram password. The order form only requires the public username connected to the profile receiving the followers. You remain in control of your Instagram account throughout the process.',
   },
   {
     id: 'faq-ig-followers-delivery-speed',
@@ -291,7 +291,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-followers-money-back',
     question: 'Is there a money-back guarantee?',
     answer:
-      "Eligible purchases are covered by InstantViral's 30-day money-back guarantee, subject to the Refund Policy and the service conditions displayed before checkout. Customers should review those terms before placing an order.",
+      "Eligible purchases are covered by NovaLikes's 30-day money-back guarantee, subject to the Refund Policy and the service conditions displayed before checkout. Customers should review those terms before placing an order.",
   },
   {
     id: 'faq-ig-followers-track',
@@ -421,12 +421,12 @@ export const faqItems: FAQItem[] = [
     answer:
       'Yes, as long as the post or Reel stays public and accessible while delivery is in progress.',
   },
-  // Buy Instagram Likes Canada — Document 09.12 §15
+  // Buy Instagram Likes — Document 09.12 §15
   {
     id: 'faq-ig-likes-password',
     question: 'Do I need to share my Instagram password?',
     answer:
-      'No. InstantViral does not require your Instagram password. The order form only needs the public URL of the post or Reel receiving the likes.',
+      'No. NovaLikes does not require your Instagram password. The order form only needs the public URL of the post or Reel receiving the likes.',
   },
   {
     id: 'faq-ig-likes-links',
@@ -566,9 +566,9 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-comments-track',
     question: 'Do I need my Instagram password?',
     answer:
-      'No. InstantViral never asks for your Instagram password. Orders use your public post URL and checkout email only. Track status with your order ID after purchase.',
+      'No. NovaLikes never asks for your Instagram password. Orders use your public post URL and checkout email only. Track status with your order ID after purchase.',
   },
-  // Buy TikTok Followers Canada — production FAQ (authority page)
+  // Buy TikTok Followers — production FAQ (authority page)
   {
     id: 'faq-tt-followers-can-buy',
     question: 'Can you buy TikTok followers?',
@@ -615,7 +615,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-tt-followers-password',
     question: 'Do I need to provide my TikTok password?',
     answer:
-      'No. InstantViral only requires your public TikTok username to process an order. Your password and login credentials are never requested.',
+      'No. NovaLikes only requires your public TikTok username to process an order. Your password and login credentials are never requested.',
   },
   {
     id: 'faq-tt-followers-another-order',
@@ -629,7 +629,7 @@ export const faqItems: FAQItem[] = [
     answer:
       'The best package depends on your current follower count, content activity, and overall goals. Smaller packages are suitable for testing the service. Many customers choose to buy 500 TikTok followers or buy 1,000 TikTok followers for steady growth, while larger campaigns may buy 10,000 TikTok followers or more.',
   },
-  // Buy TikTok Likes Canada — production FAQ (authority page)
+  // Buy TikTok Likes — production FAQ (authority page)
   {
     id: 'faq-tt-likes-can-buy',
     question: 'Can you buy TikTok likes?',
@@ -658,7 +658,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-tt-likes-password',
     question: 'Do you need my TikTok password?',
     answer:
-      'No. InstantViral only requires the public TikTok video link to process your order.',
+      'No. NovaLikes only requires the public TikTok video link to process your order.',
   },
   {
     id: 'faq-tt-likes-repeat',
@@ -730,7 +730,7 @@ export const faqItems: FAQItem[] = [
     answer:
       'Eligible purchases are covered by the 30-day money-back guarantee, subject to the Refund Policy and service-specific conditions.',
   },
-  // Buy TikTok Views Canada — production FAQ (authority page)
+  // Buy TikTok Views — production FAQ (authority page)
   {
     id: 'faq-tt-views-can-buy',
     question: 'Can you buy TikTok views?',
@@ -777,7 +777,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-tt-views-password',
     question: 'Do I need to provide my TikTok password?',
     answer:
-      'No. InstantViral only requires the public TikTok video URL to process your order.',
+      'No. NovaLikes only requires the public TikTok video URL to process your order.',
   },
   {
     id: 'faq-tt-views-should-buy',
@@ -837,7 +837,7 @@ export const faqItems: FAQItem[] = [
     answer:
       'Eligible purchases are covered by the 30-day money-back guarantee, subject to the Refund Policy and service-specific conditions.',
   },
-  // Buy Facebook Followers Canada — production FAQ (authority page)
+  // Buy Facebook Followers — production FAQ (authority page)
   {
     id: 'faq-fb-followers-can-buy',
     question: 'Can you buy Facebook followers?',
@@ -884,7 +884,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-fb-followers-password',
     question: 'Do I need my Facebook password?',
     answer:
-      'No. InstantViral only requires your public Facebook Page URL to process an order.',
+      'No. NovaLikes only requires your public Facebook Page URL to process an order.',
     homepageFilter: 'Page Requirements',
   },
   {
@@ -957,7 +957,7 @@ export const faqItems: FAQItem[] = [
       'Visit the [Contact](/contact) page or open the [FAQ](/faq) hub with your order ID and checkout email. Do not send passwords or private Facebook account details.',
     homepageFilter: 'Support',
   },
-  // Buy Facebook Page Likes Canada — AI Overview FAQs
+  // Buy Facebook Page Likes — AI Overview FAQs
   {
     id: 'faq-fb-page-likes-can-buy',
     question: 'Can you buy Facebook Page Likes?',
@@ -1018,7 +1018,7 @@ export const faqItems: FAQItem[] = [
     answer:
       'You only need your public Facebook Page URL, the selected package and a valid email address for order confirmation and tracking.',
   },
-  // Buy Facebook Post Likes Canada — AI Overview FAQs
+  // Buy Facebook Post Likes — AI Overview FAQs
   {
     id: 'faq-fb-post-likes-can-buy',
     question: 'Can you buy Facebook Post Likes?',
@@ -1028,7 +1028,7 @@ export const faqItems: FAQItem[] = [
   {
     id: 'faq-fb-post-likes-password',
     question: 'Do I need my Facebook password?',
-    answer: 'No. InstantViral only requires the public URL of your Facebook post.',
+    answer: 'No. NovaLikes only requires the public URL of your Facebook post.',
   },
   {
     id: 'faq-fb-post-likes-does-help',
@@ -1088,7 +1088,7 @@ export const faqItems: FAQItem[] = [
     answer:
       'Choose the quantity that best matches the importance of your post, your campaign objectives and its current engagement level.',
   },
-  // Buy YouTube Subscribers Canada — authority FAQs
+  // Buy YouTube Subscribers — authority FAQs
   {
     id: 'faq-yt-subscribers-can-you-buy',
     question: 'Can you buy YouTube subscribers?',
@@ -1171,7 +1171,7 @@ export const faqItems: FAQItem[] = [
       'Choose a package that aligns with your current audience size, upload frequency and long-term channel goals.',
     homepageFilter: 'Packages',
   },
-  // Buy YouTube Views Canada — authority FAQs
+  // Buy YouTube Views — authority FAQs
   {
     id: 'faq-yt-views-can-you-buy',
     question: 'Can you buy YouTube views?',

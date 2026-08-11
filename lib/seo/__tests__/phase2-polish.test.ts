@@ -70,16 +70,16 @@ describe('Phase 2 technical SEO polish', () => {
   });
 
   it('Organization sameAs includes only verified Instagram and Facebook profiles', () => {
-    expect(site.socialLinks.instagram).toBe('https://www.instagram.com/inst_antviral');
-    expect(site.socialLinks.facebook).toBe('https://www.facebook.com/Instantviralcanada');
+    expect(site.socialLinks.instagram).toBe('https://www.instagram.com/novalikes');
+    expect(site.socialLinks.facebook).toBe('https://www.facebook.com/Novalikescanada');
     expect(site.socialLinks.tiktok).toBe('');
     expect(site.socialLinks.youtube).toBe('');
 
     const org = organizationSchema();
     expect(org['@type']).toBe('Organization');
     expect(org.sameAs).toEqual([
-      'https://www.instagram.com/inst_antviral',
-      'https://www.facebook.com/Instantviralcanada',
+      'https://www.instagram.com/novalikes',
+      'https://www.facebook.com/Novalikescanada',
     ]);
     for (const url of org.sameAs as string[]) {
       expect(url).toMatch(/^https:\/\//);

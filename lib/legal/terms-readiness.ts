@@ -26,7 +26,7 @@ export function getTermsPublicationReadiness(
       label: 'Verified business identity',
       satisfied: Boolean(config.legalBusinessName && config.operatingName),
       notes:
-        'Display name InstantViral is configured; confirm whether a distinct registered legal entity name is required.',
+        'Display name NovaLikes is configured; confirm whether a distinct registered legal entity name is required.',
     },
     {
       id: 'contact',

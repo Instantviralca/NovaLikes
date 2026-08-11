@@ -15,7 +15,7 @@ function supportEmail(): string {
 }
 
 function companyName(): string {
-  return process.env.EMAIL_COMPANY_NAME?.trim() || 'InstantViral';
+  return process.env.EMAIL_COMPANY_NAME?.trim() || 'NovaLikes';
 }
 
 function trackingUrl(orderId: string, email: string): string {

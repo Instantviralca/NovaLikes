@@ -101,15 +101,15 @@ export type FacebookPageLikesPageConfig = {
 };
 
 /**
- * Topical blocks for Buy Facebook Page Likes Canada.
+ * Topical blocks for Buy Facebook Page Likes.
  * Hero, pricing, Why Buy, How to Buy, and requirements remain in data/content/facebook.ts.
  */
 export const FACEBOOK_PAGE_LIKES_PAGE_CONFIG: FacebookPageLikesPageConfig = {
   whyChoose: {
-    id: 'why-choose-instantviral-facebook-page-likes',
-    title: 'Why Choose InstantViral for Facebook Page Likes?',
+    id: 'why-choose-novalikes-facebook-page-likes',
+    title: 'Why Choose NovaLikes for Facebook Page Likes?',
     description:
-      'InstantViral provides a clear ordering experience with transparent package options, secure checkout and support before and after your purchase.',
+      'NovaLikes provides a clear ordering experience with transparent package options, secure checkout and support before and after your purchase.',
     items: [
       {
         id: 'fb-pl-wc-2018',
@@ -134,7 +134,7 @@ export const FACEBOOK_PAGE_LIKES_PAGE_CONFIG: FacebookPageLikesPageConfig = {
       },
       {
         id: 'fb-pl-wc-support',
-        title: 'Canadian Support',
+        title: 'Customer Support',
         description:
           'Get assistance with package selection, checkout questions and available order updates.',
         icon: 'headphones',
@@ -144,7 +144,7 @@ export const FACEBOOK_PAGE_LIKES_PAGE_CONFIG: FacebookPageLikesPageConfig = {
   whyBuyNote:
     'Motivations differ by page type and campaign stage, but Page Likes are typically chosen as visible social proof — not as a substitute for content, ads or customer engagement.',
   orderNotice:
-    'InstantViral processes Page Like orders using only your public Facebook Page URL. Your Facebook password is never required during checkout.',
+    'NovaLikes processes Page Like orders using only your public Facebook Page URL. Your Facebook password is never required during checkout.',
   canYouBuy: {
     id: 'can-you-buy-facebook-page-likes',
     title: 'Can You Buy Facebook Page Likes?',
@@ -312,17 +312,17 @@ export const FACEBOOK_PAGE_LIKES_PAGE_CONFIG: FacebookPageLikesPageConfig = {
     ],
   },
   canada: {
-    id: 'buying-facebook-page-likes-in-canada',
-    title: 'Buying Facebook Page Likes in Canada',
+    id: 'buying-facebook-page-likes',
+    title: 'Buying Facebook Page Likes worldwide',
     description:
-      'InstantViral provides Facebook Page Like packages for businesses, creators and organizations across Canada. Compare package sizes, review available pricing and place your order using only your public Facebook Page URL.',
+      'NovaLikes provides Facebook Page Like packages for businesses, creators and organizations worldwide. Compare package sizes, review available pricing and place your order using only your public Facebook Page URL.',
     body: "Whether you're growing a local business, launching a new brand or expanding an established Facebook presence, choosing the right Page Like package starts with selecting a quantity that matches your current marketing objectives.",
     cards: [
       {
         id: 'fb-pl-ca-businesses',
         title: 'Local Businesses',
         description:
-          'Support the visible popularity of restaurants, agencies, retail stores and other local businesses across Canada.',
+          'Support the visible popularity of restaurants, agencies, retail stores and other local businesses worldwide.',
         icon: 'briefcase',
       },
       {

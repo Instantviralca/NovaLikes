@@ -409,7 +409,7 @@ const COMMENTS_STEPS: Array<{
     id: 'no-password',
     icon: Lock,
     title: 'No Password Required',
-    description: 'InstantViral never asks for Instagram login access.',
+    description: 'NovaLikes never asks for Instagram login access.',
   },
 ];
 
