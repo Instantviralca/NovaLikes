@@ -1,4 +1,4 @@
-import { routes } from '@/config/routes';
+﻿import { routes } from '@/config/routes';
 import type { ServiceContent } from '@/types/content';
 
 const PRICING_ANCHOR = '#pricing-packages';
@@ -14,7 +14,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     seo: {
       title: 'Buy TikTok Followers | NovaLikes',
       description:
-        'Buy TikTok followers worldwide using real package options from NovaLikes.ca, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
+        'Buy TikTok followers worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
     },
     hero: {
       eyebrow:
@@ -58,7 +58,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       title: 'Choose Your TikTok Followers Package',
       description:
         'Compare package sizes before you buy followers on TikTok. Start with a smaller test order, choose 500 or 1,000 followers for steady growth, or select larger options such as 10,000 followers for bigger campaigns.',
-      purpose: 'Present real NovaLikes.ca TikTok follower packages',
+      purpose: 'Present real NovaLikes.com TikTok follower packages',
       primaryKeyword: 'TikTok follower packages',
       suggestedWordCount: 45,
       packageIds: [],
@@ -296,7 +296,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       title: 'Choose Your TikTok Likes Package',
       description:
         'Compare available package sizes and select the number of likes that matches your video and campaign goals. Each option displays its price and order details before checkout, allowing you to confirm the quantity and public video link before payment.',
-      purpose: 'Present real NovaLikes.ca TikTok likes packages',
+      purpose: 'Present real NovaLikes.com TikTok likes packages',
       primaryKeyword: 'TikTok likes packages',
       suggestedWordCount: 55,
       packageIds: [],
@@ -548,7 +548,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
       title: 'Choose Your TikTok Views Package',
       description:
         'Compare available package sizes and select the number of views that matches your video, audience and campaign goals. Each option displays its price and order details before checkout so you can confirm the quantity and public video link before payment.',
-      purpose: 'Present real NovaLikes.ca TikTok views packages',
+      purpose: 'Present real NovaLikes.com TikTok views packages',
       primaryKeyword: 'TikTok views packages',
       suggestedWordCount: 55,
       packageIds: [],

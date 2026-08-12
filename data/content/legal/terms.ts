@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Terms & Conditions production content — Document 13.05.
  * Body text lives here; React views render sections without hardcoding legal copy.
  * Provider-specific and jurisdiction disclosures are conditional on verified config.
@@ -186,7 +186,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} offers package-based social media growth services for selected Instagram, TikTok, Facebook, and YouTube metrics through NovaLikes.ca. Available services and packages are those displayed with real package data from NovaLikes’s pricing system.`,
+          text: `${operatingName} offers package-based social media growth services for selected Instagram, TikTok, Facebook, and YouTube metrics through NovaLikes.com. Available services and packages are those displayed with real package data from NovaLikes’s pricing system.`,
         },
         {
           type: 'paragraph',
@@ -220,7 +220,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Prices shown on NovaLikes.ca come from NovaLikes’s real package pricing data. NovaLikes does not invent dummy prices, quantities, delivery estimates, badges, discounts, or package features for display.',
+          text: 'Prices shown on NovaLikes.com come from NovaLikes’s real package pricing data. NovaLikes does not invent dummy prices, quantities, delivery estimates, badges, discounts, or package features for display.',
         },
         {
           type: 'paragraph',
@@ -417,7 +417,7 @@ export function getTermsAndConditionsContent(
     header: {
       title: 'Terms & Conditions',
       intro:
-        'These Terms & Conditions govern your use of NovaLikes.ca, including browsing service pages, configuring and placing orders, making payments, tracking orders, and contacting support. Please read them carefully before using the website or placing an order.',
+        'These Terms & Conditions govern your use of NovaLikes.com, including browsing service pages, configuring and placing orders, making payments, tracking orders, and contacting support. Please read them carefully before using the website or placing an order.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

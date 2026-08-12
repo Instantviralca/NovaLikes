@@ -174,7 +174,7 @@ describe('Phase 19.01 compact pricing selector', () => {
     );
     expect(html).toContain('pricing-grid-compact');
     expect(html).toContain('package-summary');
-    expect(html).toContain('Select Package');
+    expect(html).toContain('Add to Cart');
     expect(html).not.toContain('pricing-grid-buzzoid');
   });
 });

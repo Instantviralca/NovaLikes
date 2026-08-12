@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
@@ -194,7 +194,7 @@ export function PricingTable({
     return (
       <AdminEmptyState
         title="No packages found"
-        description="Only real NovaLikes.ca packages are listed. Adjust filters if needed."
+        description="Only real NovaLikes.com packages are listed. Adjust filters if needed."
       />
     );
   }

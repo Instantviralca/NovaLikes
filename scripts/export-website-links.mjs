@@ -1,5 +1,5 @@
-/**
- * Export all NovaLikes.ca website URLs to an Excel-compatible workbook.
+﻿/**
+ * Export all NovaLikes.com website URLs to an Excel-compatible workbook.
  * Writes SpreadsheetML (.xls) that Excel / Google Sheets open natively.
  * Run: node scripts/export-website-links.mjs
  */

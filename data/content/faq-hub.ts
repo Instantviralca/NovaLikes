@@ -1,4 +1,4 @@
-import type { FAQItem } from '@/types/content';
+﻿import type { FAQItem } from '@/types/content';
 
 /**
  * FAQ hub production entries — Document 13.03.
@@ -14,7 +14,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['novalikes', 'about', 'platform', 'services'],
     question: 'What is NovaLikes?',
     answer:
-      'NovaLikes is a social media growth service platform offering package-based services for selected Instagram, TikTok, Facebook, and YouTube metrics. Customers choose a service, select one of the real packages available through NovaLikes.ca, provide the required public username or URL, complete checkout, and track the order using their order ID and email address.',
+      'NovaLikes is a social media growth service platform offering package-based services for selected Instagram, TikTok, Facebook, and YouTube metrics. Customers choose a service, select one of the real packages available through NovaLikes.com, provide the required public username or URL, complete checkout, and track the order using their order ID and email address.',
   },
   {
     id: 'faq-hub-platforms',
@@ -56,7 +56,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['prices', 'packages', 'real', 'novalikes.com'],
     question: 'Are the prices and packages real?',
     answer:
-      'Yes. The website should display only the real package data already maintained or imported from NovaLikes.ca. The frontend must not create dummy prices, quantities, delivery times, badges, discounts, or package features.',
+      'Yes. The website should display only the real package data already maintained or imported from NovaLikes.com. The frontend must not create dummy prices, quantities, delivery times, badges, discounts, or package features.',
   },
   {
     id: 'faq-hub-choose-package',

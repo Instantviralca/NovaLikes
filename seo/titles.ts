@@ -4,7 +4,7 @@ import type { Service } from '@/types/service';
 
 /** Title formulas from Document 05 / 09.11. */
 export const titles = {
-  home: () => `Buy Instagram Followers | Real Followers – ${site.name}`,
+  home: () => `Grow on Instagram, TikTok, Facebook & YouTube | ${site.name}`,
 
   service: (service: Service) => {
     if (service.slug === 'buy-instagram-followers') {

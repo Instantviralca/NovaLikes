@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Cookie Policy configuration — Document 13.07.
  *
  * Disclose only technologies that are actually used. Do not invent cookie names,
@@ -60,7 +60,7 @@ export const cookieConfig: CookieConfig = {
       id: 'session',
       label: 'Session',
       description:
-        'Supports session continuity while browsing NovaLikes.ca and using cart or tracking flows.',
+        'Supports session continuity while browsing NovaLikes.com and using cart or tracking flows.',
       enabled: true,
     },
     {

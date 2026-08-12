@@ -12,19 +12,27 @@ const LEARN_COMMERCIAL_TARGET =
   /\b(?:buy|purchase|checkout|packages?|pricing)\b|\border (?:followers|likes|views|subscribers|comments)\b/i;
 
 describe('SEO keyword ownership', () => {
-  it('positions the homepage as Buy Instagram Followers authority', () => {
-    const home = getHomepageContent();
+  it('positions the homepage as a multi-platform growth hub (not a buy-service authority)', () => {
     const metadata = getMetadataByRoute('/');
     const homeDescription = descriptions.home();
+    const title = metadata?.title?.toLowerCase() ?? '';
+    const keywords = metadata?.keywords?.join(' ').toLowerCase() ?? '';
 
-    expect(home.hero.title).toBe('Buy Instagram Followers');
-    expect(home.hero.primaryKeyword).toBe('buy instagram followers');
-    expect(home.hero.primaryCta?.href).toBe('/buy-instagram-followers');
-    expect(metadata?.title).toContain('Buy Instagram Followers');
+    expect(metadata?.title).toContain('Instagram');
+    expect(metadata?.title).toContain('TikTok');
+    expect(metadata?.title).toContain('Facebook');
+    expect(metadata?.title).toContain('YouTube');
+    expect(metadata?.title).toContain('NovaLikes');
+    expect(title).not.toContain('buy instagram followers');
     expect(homeDescription.length).toBeGreaterThanOrEqual(140);
     expect(homeDescription.length).toBeLessThanOrEqual(160);
-    expect(homeDescription.toLowerCase()).toContain('buy instagram followers');
-    expect(metadata?.keywords?.join(' ').toLowerCase()).toContain('buy instagram followers');
+    expect(homeDescription.toLowerCase()).toMatch(/instagram/);
+    expect(homeDescription.toLowerCase()).toMatch(/tiktok/);
+    expect(homeDescription.toLowerCase()).toMatch(/facebook/);
+    expect(homeDescription.toLowerCase()).toMatch(/youtube/);
+    expect(homeDescription.toLowerCase()).not.toContain('buy instagram followers');
+    expect(keywords).not.toContain('buy instagram followers');
+    expect(keywords).toContain('social media growth');
   });
 
   it('gives Instagram Followers Packages one consistent service-page owner', () => {

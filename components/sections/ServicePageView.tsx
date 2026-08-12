@@ -32,14 +32,14 @@ const EmptyVisual: ComponentType<Record<string, unknown>> = () => null;
 
 /**
  * Service page — Documents 09.01 + 09.11 + 10.01–10.03.
- * Instagram followers/likes use packages-conversion layouts.
+ * Instagram likes/views use packages-conversion layouts; followers uses authority layout.
  * Platform illustrations load only for the active service platform.
  */
 export async function ServicePageView({ service }: ServicePageViewProps) {
   if (service.slug === 'buy-instagram-followers') {
-    const { InstagramFollowersPackagesView } =
-      await import('@/components/sections/instagram-followers-packages-view');
-    return <InstagramFollowersPackagesView service={service} />;
+    const { InstagramFollowersAuthorityView } =
+      await import('@/components/sections/instagram-followers-authority-view');
+    return <InstagramFollowersAuthorityView service={service} />;
   }
   if (service.slug === 'buy-instagram-likes') {
     const { InstagramLikesPackagesView } =

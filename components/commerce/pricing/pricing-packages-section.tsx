@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 
@@ -17,7 +17,7 @@ export function PricingPackagesSection({
   description,
   packages,
   secondaryCta,
-  emptyMessage = 'Pricing packages are not available for this service yet. Real NovaLikes.ca package data has not been added for this offer.',
+  emptyMessage = 'Pricing packages are not available for this service yet. Real NovaLikes.com package data has not been added for this offer.',
   loading,
   onSelectPackage,
   onContinuePackage,
@@ -35,9 +35,9 @@ export function PricingPackagesSection({
       aria-label="Pricing packages"
       data-analytics="pricing-packages"
     >
-      <Container size="xl">
+      <Container size="md" className="px-4 sm:px-6">
         {(title || description) && (
-          <div className="mb-5 max-w-2xl space-y-2 md:mb-6">
+          <div className="mb-5 w-full space-y-2 md:mb-6">
             {title ? (
               <Heading as="h2" size="h2">
                 {title}

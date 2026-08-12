@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Disclaimer production content — Document 13.08.
  * Body text lives here; React views render sections without hardcoding disclaimer copy.
  * Do not invent affiliations, result guarantees, or contact details.
@@ -39,7 +39,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
   const affiliationBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} is an independent social media growth service provider. NovaLikes operates NovaLikes.ca and is not a social media platform.`,
+      text: `${operatingName} is an independent social media growth service provider. NovaLikes operates NovaLikes.com and is not a social media platform.`,
     },
   ];
 
@@ -67,7 +67,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
 
   affiliationBlocks.push({
     type: 'paragraph',
-    text: 'All trademarks, product names, logos, and brand identifiers for Instagram, TikTok, Facebook, Meta, YouTube, Google, and other third parties belong to their respective owners. Use of those names on NovaLikes.ca is for descriptive reference only.',
+    text: 'All trademarks, product names, logos, and brand identifiers for Instagram, TikTok, Facebook, Meta, YouTube, Google, and other third parties belong to their respective owners. Use of those names on NovaLikes.com is for descriptive reference only.',
   });
 
   const contactBlocks: LegalPolicySection['blocks'] = [
@@ -200,7 +200,7 @@ function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Package availability, pricing, features, start times, and delivery estimates may change. NovaLikes displays only real package data from NovaLikes.ca and does not invent prices, quantities, delivery times, badges, discounts, refill coverage, or package features for display.',
+          text: 'Package availability, pricing, features, start times, and delivery estimates may change. NovaLikes displays only real package data from NovaLikes.com and does not invent prices, quantities, delivery times, badges, discounts, refill coverage, or package features for display.',
         },
         {
           type: 'paragraph',

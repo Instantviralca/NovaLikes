@@ -1,4 +1,4 @@
-import { routes } from '@/config/routes';
+﻿import { routes } from '@/config/routes';
 import type { ServiceContent } from '@/types/content';
 
 const PRICING_ANCHOR = '#pricing-packages';
@@ -37,7 +37,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       },
       secondaryCta: {
         label: 'View Delivery Details',
-        href: '#delivery-process',
+        href: '#how-it-works',
       },
       trustLabels: [
         { id: 'ig-f-trust-password', label: 'No Password Required' },
@@ -57,7 +57,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       title: 'Instagram Followers Pricing',
       description:
         'Select a package quantity to view its price and included order details. Delivery availability, estimated timing and refill eligibility are shown before checkout for the option you select.',
-      purpose: 'Present real NovaLikes.ca follower packages',
+      purpose: 'Present real NovaLikes.com follower packages',
       primaryKeyword: 'Instagram Followers Pricing',
       suggestedWordCount: 40,
       packageIds: [],
@@ -66,21 +66,76 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
     },
     benefits: {
       id: 'why-buy-instagram-followers',
-      title: 'Support the Presence You Are Already Building',
-      description: '',
-      purpose: 'Unused on packages conversion layout',
+      title: 'Why Do People Buy Instagram Followers?',
+      description:
+        'People buy Instagram followers to strengthen the visible audience on their profile, improve credibility for new visitors and support long-term growth. A larger follower count can make a profile appear more established, but it does not guarantee engagement, sales or organic reach.',
+      purpose: 'Explain informed use of Instagram followers packages',
       primaryKeyword: 'instagram followers packages',
-      suggestedWordCount: 40,
-      items: [],
+      suggestedWordCount: 180,
+      items: [
+        {
+          id: 'ig-f-social-proof',
+          title: 'Stronger First Impression',
+          description:
+            'When people discover an Instagram profile, one of the first things they notice is the size of its audience. A healthy follower count can help build confidence in your brand or content.',
+        },
+        {
+          id: 'ig-f-launch',
+          title: 'Support Launches and Campaigns',
+          description:
+            'Creators and businesses often use follower packages alongside product launches, brand campaigns and awareness efforts.',
+        },
+        {
+          id: 'ig-f-community',
+          title: 'Build Visible Presence',
+          description:
+            'A larger follower base can make your Instagram profile look more established while encouraging new visitors to explore your content.',
+        },
+        {
+          id: 'ig-f-flexible',
+          title: 'Flexible Package Sizes',
+          description:
+            'Choose a package that matches your existing account size and current growth goals instead of selecting more followers than your profile naturally supports.',
+        },
+        {
+          id: 'ig-f-alongside',
+          title: 'Alongside Active Content',
+          description:
+            'Follower packages work best as support for consistent posting, engagement and other Instagram growth efforts — not as a replacement for them.',
+        },
+      ],
     },
     whyNovaLikes: {
       id: 'why-choose-novalikes',
       title: 'Why Order From NovaLikes',
-      description: '',
-      purpose: 'Unused on packages conversion layout',
+      description:
+        'NovaLikes keeps Instagram follower ordering straightforward: public username only, clear package details, secure checkout and available order tracking.',
+      purpose: 'Unused on lean authority layout — trust lives in Why Choose section',
       primaryKeyword: 'instagram followers packages',
       suggestedWordCount: 40,
-      items: [],
+      items: [
+        {
+          id: 'ig-f-wn-username',
+          title: 'Public Username Only',
+          description:
+            'Orders use your public Instagram username — no password or private account access.',
+        },
+        {
+          id: 'ig-f-wn-checkout',
+          title: 'Secure Checkout',
+          description: 'Complete payment through a protected checkout process.',
+        },
+        {
+          id: 'ig-f-wn-tracking',
+          title: 'Order Tracking',
+          description: 'Monitor available delivery updates with your order ID and email.',
+        },
+        {
+          id: 'ig-f-wn-support',
+          title: 'Customer Support',
+          description: 'Get help with package selection, checkout questions and order updates.',
+        },
+      ],
     },
     // Retained for factory compatibility; Delivery and Safety uses deliveryAndSafety.
     features: {
@@ -132,13 +187,38 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
     },
     deliveryAndSafety: {
       id: 'delivery-and-safety',
-      title: 'Instagram Followers Delivery',
+      title: 'What Do You Need to Place an Order?',
       description:
-        'Delivery timing depends on the selected package. Gradual delivery and refill terms apply where stated before checkout.',
-      purpose: 'Delivery clarification',
+        'Ordering Instagram followers only requires a few public details. You do not need to provide your Instagram password, private account access or verification codes.',
+      purpose: 'Explain username and order requirements',
       primaryKeyword: 'Instagram Followers Delivery',
-      suggestedWordCount: 60,
-      items: [],
+      suggestedWordCount: 120,
+      items: [
+        {
+          id: 'ig-f-req-username',
+          title: 'Public Instagram Username',
+          description:
+            'Provide the public username of the Instagram profile that should receive the selected follower package.',
+        },
+        {
+          id: 'ig-f-req-package',
+          title: 'Selected Package',
+          description:
+            'Choose the follower quantity that best fits your account and current growth objectives.',
+        },
+        {
+          id: 'ig-f-req-public',
+          title: 'Public Profile Access',
+          description:
+            'The selected Instagram profile should remain publicly accessible while your order is being processed.',
+        },
+        {
+          id: 'ig-f-req-email',
+          title: 'Email Address',
+          description:
+            'Use a valid email address so you can receive order confirmations, updates and customer support if needed.',
+        },
+      ],
     },
     reviews: {
       id: 'ig-followers-reviews',
@@ -155,6 +235,12 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
       purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'instagram followers packages',
       faqIds: [
+        'faq-ig-followers-password',
+        'faq-ig-followers-delivery-speed',
+        'faq-ig-followers-gradual-delivery',
+        'faq-ig-followers-refill',
+        'faq-ig-followers-private',
+        'faq-ig-followers-track',
         'faq-ig-pkg-choose',
         'faq-ig-pkg-delivery-start',
         'faq-ig-pkg-gradual',
@@ -247,7 +333,7 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       title: 'Instagram Likes Pricing',
       description:
         'Select a real likes package quantity and price. Delivery timing is confirmed before checkout for the option you choose.',
-      purpose: 'Present real NovaLikes.ca likes packages',
+      purpose: 'Present real NovaLikes.com likes packages',
       primaryKeyword: 'Instagram Likes Pricing',
       suggestedWordCount: 40,
       packageIds: [],
@@ -391,7 +477,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       eyebrow: 'INSTAGRAM VIDEO GROWTH SERVICES FOR CANADA',
       title: 'Buy Instagram Views',
       description:
-        'Help Reels and videos get started more often with real Views packages. Compare the NovaLikes.ca options, confirm delivery timing, and order with a public video URL—no Instagram password required.',
+        'Help Reels and videos get started more often with real Views packages. Compare the NovaLikes.com options, confirm delivery timing, and order with a public video URL—no Instagram password required.',
       purpose: 'Convert for Instagram views packages worldwide',
       primaryKeyword: 'buy Instagram views',
       supportingKeywords: [
@@ -429,7 +515,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       title: 'Choose Your Instagram Views Package',
       description:
         'Select a package quantity and price. Delivery estimates and package details are shown before checkout.',
-      purpose: 'Present real NovaLikes.ca views packages',
+      purpose: 'Present real NovaLikes.com views packages',
       primaryKeyword: 'Instagram views packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -587,7 +673,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
       title: 'Instagram Comments Packages',
       description:
         'Compare High Quality and Premium Instagram Comments packages. Pick a quantity, review delivery details, and order with a public post URL only.',
-      purpose: 'Present real NovaLikes.ca comments packages',
+      purpose: 'Present real NovaLikes.com comments packages',
       primaryKeyword: 'Instagram comments packages',
       suggestedWordCount: 40,
       packageIds: [],

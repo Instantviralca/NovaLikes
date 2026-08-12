@@ -11,8 +11,8 @@ import { cn } from '@/lib/utils';
  * Hidden while the hero CTAs are in view; hidden again near the final CTA.
  */
 export function HomepageStickyCta({
-  href = '/buy-instagram-followers',
-  label = 'Compare Packages',
+  href = '#services-overview',
+  label = 'Explore services',
   className,
 }: {
   href?: string;
@@ -62,11 +62,13 @@ export function HomepageStickyCta({
         className,
       )}
       role="region"
-      aria-label="Quick compare packages"
+      aria-label="Explore NovaLikes services"
     >
       <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="truncate text-xs text-[var(--text-secondary)]">Instagram growth packages</p>
+          <p className="truncate text-xs text-[var(--text-secondary)]">
+            Instagram · TikTok · Facebook · YouTube
+          </p>
           <p className="truncate text-sm font-semibold text-[var(--text-primary)]">
             No password · Secure checkout
           </p>

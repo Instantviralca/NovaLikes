@@ -1,4 +1,4 @@
-import {
+﻿import {
   getNovaLikesProductById,
   getNovaLikesProductsByPlatformType,
   NOVALIKES_PRODUCTS,
@@ -9,7 +9,7 @@ import { applyPackageOverride } from '@/lib/catalog/package-overrides';
 import type { PricingPackage } from '@/types/pricing';
 import type { Service } from '@/types/service';
 
-/** NovaLikes.ca prices are stored in major USD units. */
+/** NovaLikes.com prices are stored in major USD units. */
 const SOURCE_CURRENCY = 'USD' as const;
 
 /**
@@ -21,7 +21,7 @@ function toMinorUnits(priceMajor: number): number {
 }
 
 /**
- * Map an NovaLikes.ca product onto the PricingPackage shape.
+ * Map an NovaLikes.com product onto the PricingPackage shape.
  * Comment packages may include tier, features, and compare-at pricing.
  */
 function mapProductToPackage(product: NovaLikesProduct, service: Service): PricingPackage {
@@ -108,7 +108,7 @@ export function getPackagesByIds(packageIds: string[]): PricingPackage[] {
 
 /**
  * Resolve packages for a service page.
- * Returns [] when NovaLikes.ca has no packages for that service — never fabricates data.
+ * Returns [] when NovaLikes.com has no packages for that service — never fabricates data.
  */
 export function resolveServicePackages(
   serviceSlug: string,
@@ -126,7 +126,7 @@ export function resolveServicePackages(
   return getActivePackagesByServiceSlug(serviceSlug);
 }
 
-/** Services in the registry that have at least one NovaLikes.ca package. */
+/** Services in the registry that have at least one NovaLikes.com package. */
 export function getServicesWithPricing(): Service[] {
   return getAllServices().filter(
     (service) => getActivePackagesByServiceSlug(service.slug).length > 0,

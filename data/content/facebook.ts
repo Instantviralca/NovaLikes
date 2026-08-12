@@ -1,4 +1,4 @@
-import { routes } from '@/config/routes';
+﻿import { routes } from '@/config/routes';
 import type { ServiceContent } from '@/types/content';
 
 const PRICING_ANCHOR = '#pricing-packages';
@@ -60,7 +60,7 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
       title: 'Choose Your Facebook Followers Package',
       description:
         'Select the follower package that best matches your Facebook page goals. Compare available quantities, review package details and complete your order with confidence before checkout.',
-      purpose: 'Present real NovaLikes.ca Facebook followers packages',
+      purpose: 'Present real NovaLikes.com Facebook followers packages',
       primaryKeyword: 'Facebook follower packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -338,7 +338,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       title: 'Choose Your Facebook Page Likes Package',
       description:
         'Compare available Page Like packages and select the quantity that best matches your current page size, campaign goals and budget. Each package includes secure checkout, order tracking and processing through your public Facebook Page URL.',
-      purpose: 'Present real NovaLikes.ca Facebook page likes packages',
+      purpose: 'Present real NovaLikes.com Facebook page likes packages',
       primaryKeyword: 'Facebook page likes packages',
       suggestedWordCount: 45,
       packageIds: [],
@@ -595,7 +595,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       title: 'Choose Your Facebook Post Likes Package',
       description:
         'Compare available Post Like packages and choose the quantity that best matches your campaign, content strategy and engagement goals. Every package includes secure checkout, transparent ordering and progress tracking.',
-      purpose: 'Present real NovaLikes.ca Facebook post likes packages',
+      purpose: 'Present real NovaLikes.com Facebook post likes packages',
       primaryKeyword: 'Facebook Post Likes',
       suggestedWordCount: 45,
       packageIds: [],

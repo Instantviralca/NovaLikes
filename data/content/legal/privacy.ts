@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Privacy Policy production content — Document 13.04.
  * Body text lives here; React views render sections without hardcoding policy copy.
  * Provider-specific disclosures are conditional on verified configuration.
@@ -137,7 +137,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     cookieBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie preference tool is not currently configured on NovaLikes.ca. Browser controls can still be used to manage optional cookies, and this Privacy Policy will be updated if a preference tool is added.',
+      text: 'A dedicated cookie preference tool is not currently configured on NovaLikes.com. Browser controls can still be used to manage optional cookies, and this Privacy Policy will be updated if a preference tool is added.',
     });
   }
 
@@ -642,7 +642,7 @@ export function getPrivacyPolicyContent(
     header: {
       title: 'Privacy Policy',
       intro:
-        'This Privacy Policy explains how NovaLikes collects, uses, discloses, retains, and protects personal information when you browse NovaLikes.ca, contact our team, place an order, use order tracking, or otherwise interact with our services.',
+        'This Privacy Policy explains how NovaLikes collects, uses, discloses, retains, and protects personal information when you browse NovaLikes.com, contact our team, place an order, use order tracking, or otherwise interact with our services.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

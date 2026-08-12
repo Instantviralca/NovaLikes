@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Cookie Policy production content — Document 13.07.
  * Body text lives here; React views render sections without hardcoding policy copy.
  * Provider and consent disclosures are conditional on verified configuration.
@@ -132,7 +132,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
   } else {
     preferenceBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie-consent banner or preference manager is not currently configured on NovaLikes.ca. Until a consent manager is enabled, NovaLikes keeps this wording generic: use your browser controls to manage optional cookies, and review this Cookie Policy and the Privacy Policy for updates when a preference tool is added.',
+      text: 'A dedicated cookie-consent banner or preference manager is not currently configured on NovaLikes.com. Until a consent manager is enabled, NovaLikes keeps this wording generic: use your browser controls to manage optional cookies, and review this Cookie Policy and the Privacy Policy for updates when a preference tool is added.',
     });
   }
 
@@ -301,7 +301,7 @@ export function getCookiePolicyContent(
     header: {
       title: 'Cookie Policy',
       intro:
-        'This Cookie Policy explains how NovaLikes uses cookies and similar technologies on NovaLikes.ca, which categories are essential or optional, and how you can manage preferences. NovaLikes discloses only technologies that are actually configured.',
+        'This Cookie Policy explains how NovaLikes uses cookies and similar technologies on NovaLikes.com, which categories are essential or optional, and how you can manage preferences. NovaLikes discloses only technologies that are actually configured.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),

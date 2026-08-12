@@ -34,7 +34,7 @@ describe('Sitemap & Robots Finalization', () => {
     expect(urls.every((url) => url.startsWith('https://novalikes.com'))).toBe(
       true,
     );
-    expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(false);
+    expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(true); // homepage trailing slash allowed
     expect(validateSitemapUrl('https://localhost/').valid).toBe(false);
     expect(
       validateSitemapUrl('https://novalikes-next.vercel.app/').valid,
@@ -104,13 +104,10 @@ describe('Sitemap & Robots Finalization', () => {
   });
 
   it('includes published Learn articles when Learn sitemap is enabled', () => {
-    expect(urls).toContain(
-      'https://novalikes.com/learn/how-to-grow-instagram-followers-organically',
-    );
-    expect(urls).toContain('https://novalikes.com/learn/instagram-algorithm-explained');
-    expect(urls).toContain(
-      'https://novalikes.com/learn/how-to-get-more-instagram-followers-without-ads',
-    );
+    // Learn article registry is intentionally empty after legacy article removal.
+    expect(urls).toContain('https://novalikes.com/learn');
+    expect(urls.some((url) => /\/learn\/how-to-/.test(url))).toBe(false);
+    expect(urls.some((url) => url.includes('/learn/instagram-algorithm'))).toBe(false);
     expect(urls.some((url) => url.includes('/learn/buy-instagram-followers-global'))).toBe(false);
   });
 
@@ -138,15 +135,14 @@ describe('Sitemap & Robots Finalization', () => {
     const indexable = getIndexableRoutes();
     expect(indexable.length).toBeGreaterThanOrEqual(SITEMAP_PRODUCTION_ROUTES.length);
     expect(entries.length).toBe(indexable.length);
-    expect(
-      indexable.some((r) => r.route === '/learn/how-to-grow-instagram-followers-organically'),
-    ).toBe(true);
-    expect(indexable.some((r) => r.route === '/learn/instagram-algorithm-explained')).toBe(true);
-    expect(
-      indexable.some(
-        (r) => r.route === '/learn/how-to-get-more-instagram-followers-without-ads',
-      ),
-    ).toBe(true);
+    // Deleted legacy article slugs must not reappear (category hubs may still exist).
+    for (const route of [
+      '/learn/how-to-grow-instagram-followers-organically',
+      '/learn/instagram-algorithm-explained',
+      '/learn/how-to-get-more-instagram-followers-without-ads',
+    ]) {
+      expect(indexable.some((r) => r.route === route)).toBe(false);
+    }
     expect(indexable.some((r) => r.route.startsWith('/learn/') && r.route.endsWith('-canada'))).toBe(
       false,
     );

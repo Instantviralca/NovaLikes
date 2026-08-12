@@ -1,4 +1,4 @@
-import { routes } from '@/config/routes';
+﻿import { routes } from '@/config/routes';
 import type { ServiceContent } from '@/types/content';
 
 const PRICING_ANCHOR = '#pricing-packages';
@@ -57,7 +57,7 @@ function buildBuyYouTubeSubscribersContent(): ServiceContent {
       title: 'Choose Your YouTube Subscribers Package',
       description:
         "Whether you're launching a new YouTube channel or growing an established audience, compare subscriber packages and select the quantity that best matches your publishing strategy and channel goals. Every package includes secure checkout, transparent ordering and available delivery tracking.",
-      purpose: 'Present real NovaLikes.ca YouTube subscribers packages',
+      purpose: 'Present real NovaLikes.com YouTube subscribers packages',
       primaryKeyword: 'YouTube subscribers packages',
       suggestedWordCount: 40,
       packageIds: [],
@@ -314,7 +314,7 @@ function buildBuyYouTubeViewsContent(): ServiceContent {
       title: 'Choose Your YouTube Views Package',
       description:
         "Whether you're promoting a newly published video or increasing content visibility for existing uploads, compare available view packages and choose the quantity that best supports your promotional objectives. Every package includes secure checkout, transparent ordering and available delivery tracking.",
-      purpose: 'Present real NovaLikes.ca YouTube views packages',
+      purpose: 'Present real NovaLikes.com YouTube views packages',
       primaryKeyword: 'YouTube views packages',
       suggestedWordCount: 40,
       packageIds: [],

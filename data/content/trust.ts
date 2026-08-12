@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Shared Trust Center content — Document 14.01.
  * Single source for homepage, service pages, checkout, about, contact, and tracking.
  * Do not hardcode these strings inside React components.
@@ -69,7 +69,7 @@ export const trustCenterContent: TrustCenterContent = {
         id: 'trust-why-transparency',
         title: 'Transparent Packages',
         description:
-          'Compare real quantities, prices, and delivery estimates from NovaLikes.ca before you checkout.',
+          'Compare real quantities, prices, and delivery estimates from NovaLikes.com before you checkout.',
       },
       {
         id: 'trust-why-password-free',

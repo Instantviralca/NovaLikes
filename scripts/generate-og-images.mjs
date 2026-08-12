@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Generate unique 1200×630 Open Graph WebP images for homepage + buy-* services.
  * Run: node scripts/generate-og-images.mjs
  */
@@ -211,14 +211,15 @@ function buildSvg({ headline, platformKey, metric, logoHref }) {
   <text x="64" y="${line2 ? 320 : 280}" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="${BRAND.muted}">${esc(SUPPORT)}</text>
   <rect x="64" y="520" width="220" height="44" rx="22" fill="${accent}"/>
   <text x="174" y="548" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="${BRAND.white}">${esc(platform.label)}</text>
-  <text x="300" y="548" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="${BRAND.muted}">NovaLikes.ca</text>
+  <text x="300" y="548" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="${BRAND.muted}">NovaLikes.com</text>
   ${metricVisual(metric, accent)}
 </svg>`;
 }
 
+/** Only generate assets referenced by data/seo/open-graph-images.ts */
 const SPECS = [
   {
-    file: 'novalikes-canada-social-media-growth-og.webp',
+    file: 'novalikes-social-media-growth-og.webp',
     headline: 'Social Media Growth Services worldwide',
     platformKey: 'multi',
     metric: 'homepage',
@@ -230,67 +231,67 @@ const SPECS = [
     metric: 'followers',
   },
   {
-    file: 'buy-instagram-likes-canada-og.webp',
+    file: 'buy-instagram-likes-global-og.webp',
     headline: 'Buy Instagram Likes',
     platformKey: 'instagram',
     metric: 'likes',
   },
   {
-    file: 'buy-instagram-views-canada-og.webp',
+    file: 'buy-instagram-views-global-og.webp',
     headline: 'Buy Instagram Views',
     platformKey: 'instagram',
     metric: 'views',
   },
   {
-    file: 'buy-instagram-comments-canada-og.webp',
+    file: 'buy-instagram-comments-global-og.webp',
     headline: 'Buy Instagram Comments',
     platformKey: 'instagram',
     metric: 'comments',
   },
   {
-    file: 'buy-tiktok-followers-canada-og.webp',
+    file: 'buy-tiktok-followers-global-og.webp',
     headline: 'Buy TikTok Followers',
     platformKey: 'tiktok',
     metric: 'followers',
   },
   {
-    file: 'buy-tiktok-likes-canada-og.webp',
+    file: 'buy-tiktok-likes-global-og.webp',
     headline: 'Buy TikTok Likes',
     platformKey: 'tiktok',
     metric: 'likes',
   },
   {
-    file: 'buy-tiktok-views-canada-og.webp',
+    file: 'buy-tiktok-views-global-og.webp',
     headline: 'Buy TikTok Views',
     platformKey: 'tiktok',
     metric: 'views',
   },
   {
-    file: 'buy-youtube-subscribers-canada-og.webp',
+    file: 'buy-youtube-subscribers-global-og.webp',
     headline: 'Buy YouTube Subscribers',
     platformKey: 'youtube',
     metric: 'subscribers',
   },
   {
-    file: 'buy-youtube-views-canada-og.webp',
+    file: 'buy-youtube-views-global-og.webp',
     headline: 'Buy YouTube Views',
     platformKey: 'youtube',
     metric: 'views',
   },
   {
-    file: 'buy-facebook-followers-canada-og.webp',
+    file: 'buy-facebook-followers-global-og.webp',
     headline: 'Buy Facebook Followers',
     platformKey: 'facebook',
     metric: 'followers',
   },
   {
-    file: 'buy-facebook-page-likes-canada-og.webp',
+    file: 'buy-facebook-page-likes-global-og.webp',
     headline: 'Buy Facebook Page Likes',
     platformKey: 'facebook',
     metric: 'page-likes',
   },
   {
-    file: 'buy-facebook-post-likes-canada-og.webp',
+    file: 'buy-facebook-post-likes-global-og.webp',
     headline: 'Buy Facebook Post Likes',
     platformKey: 'facebook',
     metric: 'post-likes',

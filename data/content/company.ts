@@ -1,4 +1,4 @@
-import { routes } from '@/config/routes';
+﻿import { routes } from '@/config/routes';
 import { resolveCta } from '@/data/content/cta';
 import type {
   AboutPageContent,
@@ -97,7 +97,7 @@ export const aboutContent: AboutPageContent = {
         id: 'about-why-catalog',
         title: 'Real Package Catalog',
         description:
-          'Quantities and prices come from the real NovaLikes.ca package data — not invented frontend placeholders.',
+          'Quantities and prices come from the real NovaLikes.com package data — not invented frontend placeholders.',
       },
       {
         id: 'about-why-checkout',
@@ -185,7 +185,7 @@ export const aboutContent: AboutPageContent = {
         id: 'about-trust-data',
         title: 'Real Package Data',
         description:
-          'Service pages display package information from the NovaLikes.ca pricing source rather than fabricated tiers.',
+          'Service pages display package information from the NovaLikes.com pricing source rather than fabricated tiers.',
       },
       {
         id: 'about-trust-policies',

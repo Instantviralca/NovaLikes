@@ -1,4 +1,4 @@
-import { site } from '@/config/site';
+﻿import { site } from '@/config/site';
 import type { LearnArticle } from '@/types/blog';
 import type { Service } from '@/types/service';
 
@@ -18,7 +18,7 @@ function clampDescription(text: string, min = 140, max = 160): string {
 export const descriptions = {
   home: () =>
     clampDescription(
-      'Buy Instagram followers worldwide with secure checkout, no password required, gradual delivery and clear packages. Explore likes and views — NovaLikes.',
+      'NovaLikes helps you grow on Instagram, TikTok, Facebook, and YouTube with followers, likes, views, and engagement packages. Clear options, secure checkout.',
     ),
 
   service: (service: Service) => {
@@ -34,7 +34,7 @@ export const descriptions = {
     }
     if (service.slug === 'buy-instagram-views') {
       return clampDescription(
-        'Buy Instagram views worldwide using real package options from NovaLikes.ca, with no password required, clear delivery details, support, and secure checkout.',
+        'Buy Instagram views worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, support, and secure checkout.',
       );
     }
     if (service.slug === 'buy-instagram-comments') {
@@ -44,7 +44,7 @@ export const descriptions = {
     }
     if (service.slug === 'buy-tiktok-followers') {
       return clampDescription(
-        'Buy TikTok followers worldwide using real package options from NovaLikes.ca, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
+        'Buy TikTok followers worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
       );
     }
     if (service.slug === 'buy-tiktok-likes') {
@@ -64,12 +64,12 @@ export const descriptions = {
     }
     if (service.slug === 'buy-facebook-page-likes') {
       return clampDescription(
-        'Buy Facebook page likes worldwide with NovaLikes.ca packages. Public page URL only, clear delivery details, 24/7 support, secure checkout, and order tracking.',
+        'Buy Facebook page likes worldwide with NovaLikes.com packages. Public page URL only, clear delivery details, 24/7 support, secure checkout, and order tracking.',
       );
     }
     if (service.slug === 'buy-facebook-post-likes') {
       return clampDescription(
-        'Buy Facebook post likes worldwide with NovaLikes.ca packages. Public post URL only, clear delivery details, 24/7 support, secure checkout, and order tracking.',
+        'Buy Facebook post likes worldwide with NovaLikes.com packages. Public post URL only, clear delivery details, 24/7 support, secure checkout, and order tracking.',
       );
     }
     if (service.slug === 'buy-youtube-subscribers') {
