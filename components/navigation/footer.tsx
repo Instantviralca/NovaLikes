@@ -3,7 +3,6 @@ import {
   Briefcase,
   Flame,
   Headphones,
-  Heart,
   ShieldCheck,
   User,
   Zap,
@@ -190,9 +189,18 @@ export function Footer({
             © 2026 {site.name}. {ui.footer.allRightsReserved}
           </span>
           <span className="hidden h-3 w-px bg-[#E8D5C4] sm:block" aria-hidden="true" />
-          <span className="inline-flex items-center gap-1">
-            {ui.footer.madeWithCare}
-            <Heart className="size-3 fill-[#E85D04] text-[#E85D04]" aria-hidden="true" />
+          <span className="inline-flex flex-wrap items-center justify-center gap-x-1">
+            <span>
+              {ui.footer.madeWithCare} <span aria-hidden="true">🤍</span> by{' '}
+              <a
+                href="https://localseowiser.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-[#4A4540] underline decoration-[#E8D5C4] underline-offset-2 transition-colors hover:text-[#E85D04] hover:decoration-[#E85D04]"
+              >
+                LocalSeoWiser
+              </a>
+            </span>
           </span>
         </p>
       </div>
