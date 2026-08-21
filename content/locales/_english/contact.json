@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "eyebrow": "CONTACT US",
+    "title": "We're Here to Help!",
+    "description": "Have questions about our services or need help with an order? Contact NovaLikes support and include your order details when the question is about a purchase.",
+    "trustLabels": [
+      {
+        "id": "contact-hero-247",
+        "label": "Customer Support — Help with services and orders"
+      },
+      {
+        "id": "contact-hero-quick",
+        "label": "Order Tracking — Check status after checkout"
+      },
+      {
+        "id": "contact-hero-safe",
+        "label": "No Password Required — Public details only"
+      }
+    ],
+    "visual": {
+      "alt": "NovaLikes customer support illustration with chat and headphones"
+    }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "description": "Fill out the form below and our team will get back to you as soon as possible.",
+    "fields": {
+      "fullNameLabel": "Your Name",
+      "fullNamePlaceholder": "Your Name",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "Your Email",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Subject",
+      "orderIdLabel": "Order ID",
+      "orderIdPlaceholder": "Optional — e.g. IV-1001",
+      "orderIdHelper": "Optional. Include this if your message relates to an existing order.",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Your Message",
+      "submitLabel": "Send Message",
+      "successTitle": "Message sent",
+      "successDescription": "Thanks for contacting NovaLikes. We will follow up using the email address you provided."
+    }
+  },
+  "business": {
+    "title": "Contact Information"
+  },
+  "faqPreview": {
+    "title": "Quick Answers to Common Questions",
+    "description": "FREQUENTLY ASKED QUESTIONS",
+    "viewAllCta": {
+      "label": "View all FAQs"
+    }
+  },
+  "finalCta": {
+    "title": "Still Need Help?",
+    "description": "Our friendly support team is always here for you. Don't hesitate to reach out anytime!",
+    "primaryCta": {
+      "label": "Start Live Chat"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "Contact Us",
+    "heroAria": "Contact NovaLikes",
+    "sendAnother": "Send another message",
+    "sending": "Sending…",
+    "submitError": "Unable to send your message.",
+    "privacyNote": "Your information is safe and will never be shared.",
+    "fullNameRequired": "Full name is required.",
+    "emailRequired": "Email address is required.",
+    "emailInvalid": "Enter a valid email address.",
+    "subjectRequired": "Subject is required.",
+    "messageRequired": "Message is required.",
+    "messageMin": "Message must be at least 20 characters.",
+    "emailTitle": "Email Support",
+    "emailReply": "We reply within minutes",
+    "liveChatTitle": "Live Chat",
+    "liveChatAvailable": "Available 24/7 on our website",
+    "liveChatHelp": "Get instant help from our team",
+    "quickTitle": "Quick Support",
+    "quickHours": "Mon – Sun: 24/7",
+    "quickReach": "Reach us anytime through the contact form",
+    "responseTitle": "Response Time",
+    "responseAverage": "Average response time:",
+    "responseTime": "Under 15 minutes",
+    "orderTitle": "Order Support",
+    "orderHelp": "Need help with an order?",
+    "orderLink": "Visit Order Support Page →"
+  }
+}

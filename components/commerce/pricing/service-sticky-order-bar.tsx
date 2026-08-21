@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { cn } from '@/lib/utils';
 
 export type ServiceStickyOrderBarProps = {
@@ -20,11 +21,13 @@ export type ServiceStickyOrderBarProps = {
  */
 export function ServiceStickyOrderBar({
   pricingSectionId,
-  ctaLabel = 'Order Now',
+  ctaLabel,
   priceLabel,
   onOrder,
   className,
 }: ServiceStickyOrderBarProps) {
+  const { locale, ui } = useI18nChrome();
+  const resolvedCta = ctaLabel ?? ui.commerce.choosePackage;
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -56,23 +59,25 @@ export function ServiceStickyOrderBar({
         className,
       )}
       role="region"
-      aria-label="Quick order"
+      aria-label={resolvedCta}
       data-analytics="service-sticky-order-bar"
     >
       <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="truncate text-xs text-[var(--text-secondary)]">Ready to order?</p>
+          {locale === 'en' ? (
+            <p className="truncate text-xs text-[var(--text-secondary)]">Ready to order?</p>
+          ) : null}
           {priceLabel ? (
             <p className="truncate text-base font-bold text-[var(--brand-primary)]">{priceLabel}</p>
           ) : (
             <p className="truncate text-sm font-semibold text-[var(--text-primary)]">
-              Choose a package above
+              {ui.commerce.choosePackage}
             </p>
           )}
         </div>
         <Button
           type="button"
-          className="min-h-11 shrink-0 rounded-xl px-5 font-semibold"
+          className="min-h-11 max-w-[11rem] shrink-0 rounded-xl px-4 font-semibold sm:max-w-none sm:px-5"
           onClick={() => {
             if (onOrder) {
               onOrder();
@@ -81,7 +86,7 @@ export function ServiceStickyOrderBar({
             scrollToPricing();
           }}
         >
-          {ctaLabel}
+          {resolvedCta}
         </Button>
       </div>
     </div>

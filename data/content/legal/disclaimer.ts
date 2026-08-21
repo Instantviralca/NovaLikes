@@ -1,303 +1,203 @@
 ﻿/**
  * Disclaimer production content — Document 13.08.
- * Body text lives here; React views render sections without hardcoding disclaimer copy.
- * Do not invent affiliations, result guarantees, or contact details.
  */
 
+import { routes } from '@/config/routes';
 import {
   disclaimerConfig,
   getVerifiedDisclaimerContactEmail,
 } from '@/config/disclaimer';
-import { routes } from '@/config/routes';
+import { formatLegalDisplayDate } from '@/lib/legal/format-date';
 import type {
   DisclaimerConfig,
   DisclaimerContent,
   LegalPolicySection,
 } from '@/types/legal';
 
-function formatDisplayDate(isoDate: string | undefined): string | undefined {
-  if (!isoDate) return undefined;
-  const parsed = new Date(`${isoDate}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(parsed);
-}
-
 function buildSections(config: DisclaimerConfig): LegalPolicySection[] {
   const operatingName = config.operatingName;
-  const domainHost = config.websiteDomain.replace(/^https?:\/\//, '');
   const contactEmail = getVerifiedDisclaimerContactEmail(config);
-  const termsPath = routes.termsAndConditions;
-  const privacyPath = routes.privacyPolicy;
-  const refundPath = routes.refundPolicy;
-  const contactPath = routes.contact;
 
   const affiliationBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} is an independent social media growth service provider. NovaLikes operates NovaLikes.com and is not a social media platform.`,
+      text: `${operatingName} is an independent service and is not endorsed, sponsored, administered by, or officially affiliated with Instagram, TikTok, Facebook, Meta, or their parent or related companies unless explicitly stated otherwise.`,
     },
   ];
 
   if (config.hasVerifiedPlatformAffiliations) {
     affiliationBlocks.push({
       type: 'paragraph',
-      text: 'Verified platform affiliations or endorsements, when documented, will be listed here after confirmation.',
+      text: 'Any verified platform relationship will be described clearly where it applies.',
     });
   } else {
     affiliationBlocks.push({
       type: 'paragraph',
-      text: 'Unless supported by verified documentation, NovaLikes is not:',
-    });
-    affiliationBlocks.push({
-      type: 'list',
-      items: [
-        'Affiliated with Instagram',
-        'Endorsed by TikTok',
-        'Sponsored by Facebook or Meta',
-        'Partnered with YouTube or Google',
-        'Acting on behalf of any social media platform',
-      ],
+      text: 'Platform names and trademarks are used only to identify relevant third-party platforms and services. All such marks remain the property of their respective owners.',
     });
   }
-
-  affiliationBlocks.push({
-    type: 'paragraph',
-    text: 'All trademarks, product names, logos, and brand identifiers for Instagram, TikTok, Facebook, Meta, YouTube, Google, and other third parties belong to their respective owners. Use of those names on NovaLikes.com is for descriptive reference only.',
-  });
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Questions about this Disclaimer may be submitted using the contact details below.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Operating name: ${config.operatingName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Legal / business name on file: ${config.legalBusinessName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Website: ${config.websiteDomain}`,
+      text: `Questions about this Disclaimer can be sent through the [Contact](${routes.contact}) page.`,
     },
   ];
 
   if (contactEmail) {
     contactBlocks.push({
       type: 'paragraph',
-      text: `Contact email: ${contactEmail}`,
-    });
-  } else {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `A verified contact email has not been published in Disclaimer configuration. Submit questions through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
-    });
-  }
-
-  if (config.mailingAddress) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Mailing address: ${config.mailingAddress}`,
+      text: `You may also email ${contactEmail}.`,
     });
   }
 
   contactBlocks.push({
     type: 'paragraph',
-    text: `Related documents: Terms & Conditions (${domainHost}${termsPath}), Privacy Policy (${domainHost}${privacyPath}), and Refund Policy (${domainHost}${refundPath}).`,
+    text: `Contractual terms are set out in the [Terms and Conditions](${routes.termsAndConditions}). Related pages include the [Privacy Policy](${routes.privacyPolicy}), [Refund Policy](${routes.refundPolicy}), and [Cookie Policy](${routes.cookiePolicy}).`,
   });
 
   return [
     {
-      id: 'general-information',
-      anchor: 'general-information',
-      title: 'General Information',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `Content on ${domainHost} is provided for general commercial and informational purposes. It describes NovaLikes services, ordering, policies, and educational materials related to social media growth.`,
-        },
-        {
-          type: 'paragraph',
-          text: `Service descriptions, delivery estimates, package features, and policies should be read together with the relevant service page, the real package data shown before checkout, the Terms & Conditions (${domainHost}${termsPath}), and the Refund Policy (${domainHost}${refundPath}).`,
-        },
-      ],
-    },
-    {
-      id: 'no-affiliation',
-      anchor: 'no-affiliation',
-      title: 'No Affiliation with Social Platforms',
+      id: 'independent-service',
+      anchor: 'independent-service',
+      title: '1. Independent Service',
       blocks: affiliationBlocks,
     },
     {
-      id: 'no-guaranteed-results',
-      anchor: 'no-guaranteed-results',
-      title: 'No Guaranteed Results',
+      id: 'no-guaranteed-social-media-results',
+      anchor: 'no-guaranteed-social-media-results',
+      title: '2. No Guaranteed Social Media Results',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Results from NovaLikes services may vary. Outcomes can depend on the selected service, package terms, platform conditions, account or content accessibility, customer-provided information, processing conditions, and changes made by third-party platforms.',
+          text: 'Purchasing a NovaLikes service does not guarantee engagement, reach, sales, followers from other sources, comments from other sources, viral performance, algorithmic placement, monetization, business success, or organic growth.',
         },
         {
           type: 'paragraph',
-          text: `${operatingName} does not guarantee:`,
-        },
-        {
-          type: 'list',
-          items: [
-            'That followers, likes, views, comments, or subscribers will remain permanently',
-            'Organic engagement',
-            'Viral reach',
-            'Rankings or discoverability',
-            'Recommendations',
-            'Sales',
-            'Revenue',
-            'Verification',
-            'Brand growth',
-          ],
-        },
-        {
-          type: 'paragraph',
-          text: 'Purchased activity does not replace an organic content, audience, or marketing strategy.',
+          text: 'The purchased service is limited to what is described for the selected package on the relevant service page and during checkout.',
         },
       ],
     },
     {
-      id: 'no-monetization-or-ranking',
-      anchor: 'no-monetization-or-ranking',
-      title: 'No Monetization or Ranking Guarantee',
+      id: 'social-media-metrics-can-change',
+      anchor: 'social-media-metrics-can-change',
+      title: '3. Social Media Metrics Can Change',
       blocks: [
         {
-          type: 'subheading',
-          id: 'youtube-disclaimer',
-          text: 'YouTube',
+          type: 'paragraph',
+          text: 'Third-party platforms control their systems and metrics. Counts may change because of platform actions, account removals, content removal, platform updates, or other factors outside NovaLikes’ control.',
         },
         {
           type: 'paragraph',
-          text: 'Purchased YouTube Subscribers or Views do not guarantee YouTube Partner Program approval, monetization, qualifying watch hours, higher rankings, recommendations, revenue, or verification.',
-        },
-        {
-          type: 'subheading',
-          id: 'instagram-tiktok-facebook-disclaimer',
-          text: 'Instagram, TikTok, and Facebook',
-        },
-        {
-          type: 'paragraph',
-          text: 'Purchased Instagram, TikTok, or Facebook services do not guarantee algorithmic promotion, Explore or For You placement, organic reach, sales, follower retention, or account verification.',
+          text: 'This explanation does not waive any refund or refill obligations that actually apply under the [Refund Policy](/refund-policy) or the terms shown for a specific package.',
         },
       ],
     },
     {
-      id: 'service-availability-and-delivery',
-      anchor: 'service-availability-and-delivery',
-      title: 'Service Availability and Delivery',
+      id: 'third-party-platform-rules',
+      anchor: 'third-party-platform-rules',
+      title: '4. Third-Party Platform Rules',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Package availability, pricing, features, start times, and delivery estimates may change. NovaLikes displays only real package data from NovaLikes.com and does not invent prices, quantities, delivery times, badges, discounts, refill coverage, or package features for display.',
+          text: 'Customers are responsible for understanding and complying with applicable Instagram, TikTok, and Facebook rules and policies.',
         },
         {
           type: 'paragraph',
-          text: 'Delivery estimates shown with packages are estimates, not absolute guarantees, unless a verified written NovaLikes policy expressly states otherwise.',
+          text: `${operatingName} cannot guarantee that a third-party platform will not change or enforce its rules.`,
         },
       ],
     },
     {
-      id: 'educational-content',
-      anchor: 'educational-content',
-      title: 'Educational Content Disclaimer',
+      id: 'no-professional-advice',
+      anchor: 'no-professional-advice',
+      title: '5. No Professional Advice',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Learn articles, guides, FAQs, and other website content are provided for general informational purposes.',
+          text: 'Website information is general informational material. It is not legal advice, financial advice, business advice, or professional marketing advice.',
+        },
+      ],
+    },
+    {
+      id: 'website-information',
+      anchor: 'website-information',
+      title: '6. Website Information',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `${operatingName} aims to keep information useful and current but cannot guarantee that every page will always be error-free or fully up to date.`,
         },
         {
           type: 'paragraph',
-          text: 'They do not constitute legal advice, financial advice, tax advice, professional marketing advice, or a guaranteed growth strategy. Readers should use their own judgment and seek professional advice where appropriate.',
+          text: 'Prices and package information displayed through the actual ordering system govern purchases where applicable.',
+        },
+      ],
+    },
+    {
+      id: 'free-tools-disclaimer',
+      anchor: 'free-tools-disclaimer',
+      title: '7. Free Tools Disclaimer',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Free tools depend on publicly available information and third-party platform accessibility.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Tools may fail, be temporarily blocked, return limited data, or stop working because platforms change their public pages or restrict automated access.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not guarantee continuous availability of any free tool, and does not claim that Instagram, TikTok, or Facebook downloaders or viewers will always succeed.`,
+        },
+      ],
+    },
+    {
+      id: 'downloaded-content',
+      anchor: 'downloaded-content',
+      title: '8. Downloaded Content',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'For downloader and viewer tools, users are responsible for ensuring they have permission or legal authority to download, store, reproduce, or use third-party content.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not grant rights to third-party content and does not encourage copyright infringement.`,
         },
       ],
     },
     {
       id: 'external-links',
       anchor: 'external-links',
-      title: 'External Links',
+      title: '9. External Links',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} may link to third-party websites, including social platforms, payment providers, and other external resources.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'NovaLikes does not control and is not responsible for third-party content, privacy practices, availability, security, terms, products, or services. A link does not automatically imply endorsement.',
+          text: `${operatingName} may link to third-party websites. NovaLikes does not control their content, availability, or privacy practices.`,
         },
       ],
     },
     {
-      id: 'customer-responsibility',
-      anchor: 'customer-responsibility',
-      title: 'Customer Responsibility',
+      id: 'limitation',
+      anchor: 'limitation',
+      title: '10. Limitation',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Customers are responsible for:',
-        },
-        {
-          type: 'list',
-          items: [
-            'Providing accurate usernames and URLs',
-            'Keeping eligible destinations publicly accessible during processing',
-            'Reviewing package terms before purchase',
-            'Following platform rules',
-            'Using services lawfully',
-            'Monitoring account and content settings',
-          ],
+          text: `To the maximum extent permitted by applicable law, ${operatingName} disclaims liability for reliance on general website information, free-tool results, or third-party platform behavior beyond the contractual terms that apply to a specific order.`,
         },
         {
           type: 'paragraph',
-          text: 'Subject to applicable law, NovaLikes should not be held responsible for issues caused by incorrect information supplied by the customer or by customer changes after processing begins.',
-        },
-      ],
-    },
-    {
-      id: 'testimonials-and-reviews',
-      anchor: 'testimonials-and-reviews',
-      title: 'Testimonials and Reviews',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `${operatingName} uses authentic testimonials and reviews only. Individual experiences vary, and reviews do not guarantee that you will receive similar results.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'Reviews should not be fabricated, altered deceptively, or presented without permission. Where genuine reviews are unavailable, NovaLikes does not invent them and does not publish Review or AggregateRating schema without genuine supporting data.',
-        },
-      ],
-    },
-    {
-      id: 'changes',
-      anchor: 'changes',
-      title: 'Changes to This Disclaimer',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `${operatingName} may update this Disclaimer when services change, legal requirements change, new platforms are added, or business practices change.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'The revised Disclaimer will display a new Last Updated date when that date is configured for publication.',
+          text: `For binding contractual terms, including warranties and liability limits, see the [Terms and Conditions](${routes.termsAndConditions}).`,
         },
       ],
     },
     {
       id: 'contact',
       anchor: 'contact',
-      title: 'Contact',
+      title: '11. Contact',
       blocks: contactBlocks,
     },
   ];
@@ -312,13 +212,13 @@ export function getDisclaimerContent(
     seo: {
       title: 'Disclaimer | NovaLikes',
       description:
-        'Read the NovaLikes disclaimer covering third-party platform independence, service limitations, educational content, external links, and results.',
+        'Read important information about NovaLikes services, social media platforms, service results, website information and free tools.',
     },
     breadcrumbLabel: 'Disclaimer',
     header: {
       title: 'Disclaimer',
       intro:
-        'This Disclaimer explains important limitations about NovaLikes services, third-party platform independence, results, educational content, external links, and customer responsibilities. Please read it together with the Terms & Conditions, Privacy Policy, and Refund Policy.',
+        'This Disclaimer explains important limitations relating to NovaLikes services, website content, free tools, and third-party social media platforms.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),
@@ -330,9 +230,7 @@ export function getDisclaimerDates(config: DisclaimerConfig = disclaimerConfig):
   lastUpdatedLabel?: string;
 } {
   return {
-    effectiveDateLabel: formatDisplayDate(config.effectiveDate),
-    lastUpdatedLabel: formatDisplayDate(config.lastUpdatedDate),
+    effectiveDateLabel: formatLegalDisplayDate(config.effectiveDate),
+    lastUpdatedLabel: formatLegalDisplayDate(config.lastUpdatedDate),
   };
 }
-
-export { disclaimerConfig };

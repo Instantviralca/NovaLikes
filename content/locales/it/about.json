@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "CHI SIAMO",
+    "title": "Chi siamo",
+    "description": "NovaLikes è una piattaforma premium per la crescita sui social, pensata per aiutare creator, attività e brand a crescere con segnali social di alta qualità.\n\nCi concentriamo su un’esperienza di ordine chiara, un checkout sicuro e una consegna affidabile su Instagram, TikTok, Facebook e altro.",
+    "trustLabels": [
+      {
+        "id": "about-hero-quality",
+        "label": "Pacchetti chiari, ordini senza password e policy pubblicate."
+      },
+      {
+        "id": "about-hero-delivery",
+        "label": "Checkout sicuro e tracciamento dell’ordine per gli acquisti effettuati."
+      },
+      {
+        "id": "about-hero-support",
+        "label": "Assistenza clienti per domande su pacchetti, ordini e pagamenti."
+      }
+    ],
+    "visual": {
+      "alt": "Dashboard NovaLikes che rappresenta i servizi Instagram, TikTok e Facebook"
+    }
+  },
+  "mission": {
+    "title": "Ti aiutiamo a crescere. Nel modo giusto.",
+    "description": "La nostra missione è aiutarti a potenziare la presenza sui social in modo sicuro ed efficace, con pacchetti chiari, ordini senza password e supporto quando ti serve.\n\nLa crescita deve essere semplice: scegli un servizio, seleziona un pacchetto, indica un URL pubblico e traccia l’ordine con fiducia."
+  },
+  "whyChoose": {
+    "title": "Perché migliaia di persone ci scelgono",
+    "description": "PERCHÉ SCEGLIERE NOVALIKES?",
+    "items": [
+      {
+        "id": "about-why-safe",
+        "title": "Sicuro e protetto",
+        "description": "Il checkout crittografato e gli ordini senza password proteggono i tuoi account."
+      },
+      {
+        "id": "about-why-fast",
+        "title": "Prezzi chiari per pacchetto",
+        "description": "Confronta quantità e prezzi prima del checkout così sai quale pacchetto stai scegliendo."
+      },
+      {
+        "id": "about-why-quality",
+        "title": "Servizi per piattaforma",
+        "description": "I pacchetti sono elencati per metrica Instagram, TikTok e Facebook, non come un mix generico di crescita."
+      },
+      {
+        "id": "about-why-support",
+        "title": "Assistenza clienti",
+        "description": "Contatta NovaLikes per domande su pacchetto, ordine o pagamento usando le opzioni di supporto disponibili."
+      },
+      {
+        "id": "about-why-refund",
+        "title": "Garanzia di rimborso di 30 giorni",
+        "description": "Gli acquisti idonei sono coperti dalla nostra garanzia di rimborso di 30 giorni secondo la Policy di rimborso pubblicata."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Costruito sulla fiducia, consegnato con cura",
+    "description": "Siamo impegnati in un’esperienza cliente chiara, sicura e affidabile, dalla scelta del pacchetto al tracciamento dell’ordine.",
+    "items": [
+      {
+        "id": "about-trust-payments",
+        "title": "Pagamenti sicuri"
+      },
+      {
+        "id": "about-trust-privacy",
+        "title": "Privacy protetta"
+      },
+      {
+        "id": "about-trust-password",
+        "title": "Nessuna password"
+      },
+      {
+        "id": "about-trust-global",
+        "title": "Servizio globale"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Pronto a far crescere la tua presenza sui social?",
+    "description": "Confronta i servizi Instagram, TikTok e Facebook disponibili, rivedi le opzioni di pacchetto e ordina quando sei pronto.",
+    "primaryCta": {
+      "label": "Inizia ora"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "Chi siamo",
+    "heroAria": "Chi siamo",
+    "missionEyebrow": "LA NOSTRA MISSIONE",
+    "commitmentEyebrow": "IL NOSTRO IMPEGNO",
+    "statsAria": "Punti salienti di NovaLikes",
+    "missionImageAlt": "Illustrazione del bersaglio della missione NovaLikes",
+    "commitmentImageAlt": "Illustrazione di fiducia e impegno NovaLikes",
+    "statsCustomers": "Clienti soddisfatti",
+    "statsOrders": "Ordini consegnati",
+    "statsRating": "Valutazione media",
+    "statsSuccess": "Tasso di successo degli ordini"
+  }
+}

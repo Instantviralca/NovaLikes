@@ -1,83 +1,67 @@
-import { Suspense } from 'react';
-
 import { CategoryGrid } from '@/components/learn/CategoryGrid';
 import { FeaturedArticles } from '@/components/learn/FeaturedArticles';
-import { LearnHero } from '@/components/learn/LearnHero';
+import { LearnIndexHero } from '@/components/learn/LearnIndexHero';
 import { NewsletterCTA } from '@/components/learn/NewsletterCTA';
 import { PopularTags } from '@/components/learn/taxonomy/PopularTags';
-import { LearnDiscovery } from '@/components/learn/search/LearnDiscovery';
-import { LearnSearchSkeleton } from '@/components/learn/search/LearnSearchSkeleton';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
-import { Heading } from '@/components/typography/heading';
-import { routes } from '@/config/routes';
 import {
   getLearnIndexBreadcrumbs,
-  listFeaturedPublicLearnArticles,
   listPublicLearnArticles,
   listPublicLearnCategories,
 } from '@/lib/learn';
-import { getPopularTags, getTags } from '@/lib/learn/taxonomy';
-import {
-  buildArticleSearchIndex,
-  parseLearnSearchParams,
-} from '@/lib/learn/search';
-import type { LearnSearchState } from '@/types/learn-search';
+import { getPopularTags } from '@/lib/learn/taxonomy';
+import type { PublicLearnArticle } from '@/types/learn';
 
 type LearnIndexViewProps = {
-  initialState?: LearnSearchState;
+  articles?: PublicLearnArticle[];
 };
+
+function byNewest(a: PublicLearnArticle, b: PublicLearnArticle) {
+  return Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
+}
 
 /**
  * Learn Center index — Documents 15.01 + 15.04 + 15.05.
  */
-export function LearnIndexView({ initialState }: LearnIndexViewProps) {
+export function LearnIndexView({ articles: articlesProp }: LearnIndexViewProps) {
   const categories = listPublicLearnCategories();
-  const featured = listFeaturedPublicLearnArticles();
-  const articles = listPublicLearnArticles();
+  const articles = (articlesProp ?? listPublicLearnArticles()).slice().sort(byNewest);
   const breadcrumbs = getLearnIndexBreadcrumbs();
   const popularTags = getPopularTags(10);
-  const tags = getTags();
-  const documents = buildArticleSearchIndex(articles);
-  const resolvedInitial =
-    initialState ?? parseLearnSearchParams({}).state;
+  const featured = articles[0];
+  const remaining = articles.slice(1);
 
   return (
     <div className="overflow-x-hidden">
-      <LearnHero
-        title="Learn Center"
-        description="Practical guides for Instagram, TikTok, Facebook, YouTube, and social media marketing. New articles publish here as they are approved."
+      <LearnIndexHero
         breadcrumbs={breadcrumbs}
+        articleCount={articles.length}
+        categoryCount={categories.length}
+        featured={featured}
       />
 
-      <CategoryGrid categories={categories} />
+      <CategoryGrid
+        title="Browse by platform"
+        description="Jump into Instagram, TikTok, Facebook, or broader growth topics."
+        categories={categories}
+      />
 
       {popularTags.length > 0 ? (
-        <Section>
+        <Section className="border-y border-[#F0E4D8] bg-hero-wash">
           <Container>
             <PopularTags tags={popularTags} />
           </Container>
         </Section>
       ) : null}
 
-      <FeaturedArticles articles={featured} />
-
-      <Section>
-        <Container>
-          <Heading as="h2">All articles</Heading>
-          <div className="mt-6">
-            <Suspense fallback={<LearnSearchSkeleton />}>
-              <LearnDiscovery
-                documents={documents}
-                categories={categories}
-                tags={tags}
-                basePath={routes.learn}
-                initialState={resolvedInitial}
-              />
-            </Suspense>
-          </div>
-        </Container>
-      </Section>
+      <div id="all-articles">
+        <FeaturedArticles
+          title="All articles"
+          description="Every published Learn guide, newest first."
+          articles={remaining.length > 0 ? remaining : articles}
+        />
+      </div>
 
       <Section>
         <Container>

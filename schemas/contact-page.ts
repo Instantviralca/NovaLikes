@@ -1,7 +1,7 @@
 import { absoluteUrl } from '@/seo/canonical';
-import type { JsonLd } from '@/schemas/organization';
+import { ORGANIZATION_ID, WEBSITE_ID, type JsonLd } from '@/schemas/organization';
 
-/** ContactPage JSON-LD (Document 13.02). */
+/** ContactPage JSON-LD — no invented phone, address, or support hours. */
 export function contactPageSchema(input: {
   title: string;
   description: string;
@@ -13,5 +13,7 @@ export function contactPageSchema(input: {
     name: input.title,
     description: input.description,
     url: absoluteUrl(input.path),
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': ORGANIZATION_ID },
   };
 }

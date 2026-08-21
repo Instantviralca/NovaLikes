@@ -1,9 +1,10 @@
 /**
- * Resend email provider + transactional templates (orders + contact).
- * Disabled until RESEND_API_KEY and EMAIL_FROM are set.
+ * Transactional email — SMTP (self-hosted Postfix/relay) or Resend.
+ * Disabled until EMAIL_FROM is set with SMTP_HOST and/or RESEND_API_KEY.
  */
 
-import { getEmailFrom, isEmailConfigured } from '@/lib/config/env';
+import { getEmailFrom, getEmailReplyTo, isEmailConfigured, isSmtpConfigured } from '@/lib/config/env';
+import { sendSmtpEmail } from '@/lib/notifications/smtp';
 import { getPersistence } from '@/lib/persistence';
 import type { NotificationProvider } from '@/types/notification';
 
@@ -67,38 +68,66 @@ const EXTRA_TEMPLATES: Record<
   },
 };
 
+async function sendViaConfiguredTransport(input: {
+  to: string;
+  subject: string;
+  html: string;
+  text: string;
+}): Promise<{ messageId: string; providerId: 'smtp' | 'resend' }> {
+  const from = getEmailFrom();
+  if (!from) {
+    throw new Error('EMAIL_FROM (or RESEND_FROM_EMAIL) is not configured.');
+  }
+  const replyTo = getEmailReplyTo();
+
+  if (isSmtpConfigured()) {
+    const result = await sendSmtpEmail({
+      from,
+      to: input.to,
+      subject: input.subject,
+      html: input.html,
+      text: input.text,
+      replyTo,
+    });
+    return { messageId: result.messageId, providerId: 'smtp' };
+  }
+
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  if (!apiKey) {
+    throw new Error('Email provider is not configured (SMTP_HOST or RESEND_API_KEY).');
+  }
+  const response = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from,
+      to: [input.to],
+      subject: input.subject,
+      html: input.html,
+      text: input.text,
+      ...(replyTo ? { reply_to: replyTo } : {}),
+    }),
+  });
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`Resend error ${response.status}: ${body.slice(0, 200)}`);
+  }
+  const data = (await response.json()) as { id?: string };
+  return { messageId: data.id ?? `resend_${Date.now()}`, providerId: 'resend' };
+}
+
 export const resendEmailProvider: NotificationProvider = {
   id: 'resend',
   channel: 'email',
   async send({ to, subject, html, text }) {
     if (!isEmailConfigured()) {
-      throw new Error('Email provider is not configured (RESEND_API_KEY / EMAIL_FROM).');
+      throw new Error('Email provider is not configured (SMTP_HOST / RESEND_API_KEY / EMAIL_FROM).');
     }
-    const apiKey = process.env.RESEND_API_KEY!.trim();
-    const from = getEmailFrom();
-    if (!from) {
-      throw new Error('EMAIL_FROM (or RESEND_FROM_EMAIL) is not configured.');
-    }
-    const response = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        subject,
-        html,
-        text,
-      }),
-    });
-    if (!response.ok) {
-      const body = await response.text();
-      throw new Error(`Resend error ${response.status}: ${body.slice(0, 200)}`);
-    }
-    const data = (await response.json()) as { id?: string };
-    return { messageId: data.id ?? `resend_${Date.now()}` };
+    const result = await sendViaConfiguredTransport({ to, subject, html, text });
+    return { messageId: result.messageId };
   },
 };
 
@@ -132,7 +161,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
       status: 'failed',
       subject,
       bodyPreview: text.slice(0, 180),
-      errorMessage: 'Email provider disabled — missing RESEND_API_KEY or EMAIL_FROM.',
+      errorMessage: 'Email provider disabled — missing EMAIL_FROM plus SMTP_HOST or RESEND_API_KEY.',
       createdAt,
       immutable: true,
       idempotencyKey: input.idempotencyKey,
@@ -141,7 +170,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
   }
 
   try {
-    const result = await resendEmailProvider.send({
+    const result = await sendViaConfiguredTransport({
       to: input.to,
       subject,
       html,
@@ -157,7 +186,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
       status: 'sent',
       subject,
       bodyPreview: text.slice(0, 180),
-      providerId: 'resend',
+      providerId: result.providerId,
       providerMessageId: result.messageId,
       createdAt,
       sentAt: new Date().toISOString(),
@@ -181,7 +210,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
       subject,
       bodyPreview: text.slice(0, 180),
       errorMessage: error instanceof Error ? error.message : 'Delivery failed',
-      providerId: 'resend',
+      providerId: isSmtpConfigured() ? 'smtp' : 'resend',
       createdAt,
       immutable: true,
       idempotencyKey: input.idempotencyKey,

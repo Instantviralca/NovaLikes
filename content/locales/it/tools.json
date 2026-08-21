@@ -1,0 +1,952 @@
+{
+  "hub": {
+    "eyebrow": "Strumenti gratis",
+    "h1": "Strumenti gratis per Instagram, TikTok e Facebook",
+    "lead": "Consulta un profilo pubblico, verifica un conteggio follower pubblicato o recupera un file video che la piattaforma espone già. Ogni assistente gira sui server NovaLikes e restituisce solo informazioni pubbliche — mai un contenuto privato, una sessione di accesso o un download inventato.",
+    "howHeading": "Come funzionano questi strumenti",
+    "how": [
+      "Scegli uno strumento, poi incolla un nome utente o un URL pubblico.",
+      "NovaLikes controlla l’indirizzo e richiede la pagina pubblica dai nostri server.",
+      "Se la piattaforma espone la foto, il conteggio o il file, lo vedi qui. In caso contrario, ricevi un messaggio chiaro invece di un risultato falso."
+    ],
+    "servicesHeading": "Pacchetti NovaLikes opzionali",
+    "servicesNote": "Gli strumenti sopra sono gratis. Le pagine dei pacchetti sono separate se vuoi anche far crescere un account pubblico.",
+    "h1Accent": "Strumenti",
+    "packagesHeading": "Pacchetti NovaLikes opzionali"
+  },
+  "pages": {
+    "instagram-profile-picture-viewer": {
+      "eyebrow": "Strumento Instagram",
+      "h1": "Visualizzatore foto profilo Instagram",
+      "lead": "Instagram ritaglia le foto profilo in un cerchio piccolo sulla maggior parte degli schermi, quindi è difficile ispezionare l’immagine. Inserisci un nome utente o un URL di profilo pubblico e NovaLikes mostrerà la foto che Instagram pubblica già per quell’account — più grande, con opzioni per vederla o scaricarla.",
+      "inputLabel": "Nome utente o URL del profilo Instagram",
+      "helperText": "Esempio: nasa, @nasa o https://www.instagram.com/nasa/",
+      "processingLabel": "Caricamento della foto profilo pubblica…",
+      "resetLabel": "Cerca un altro profilo",
+      "introHeading": "Vedi una foto Instagram pubblica a una dimensione utile",
+      "intro": [
+        "La foto profilo è spesso l’unica immagine che si può aprire senza seguire un account, eppure il layout di Instagram la tiene minuscola. Questa pagina copre quel vuoto: cerchi un nome utente pubblico e, quando Instagram include la foto sul profilo pubblico, la mostriamo a una dimensione che si può davvero vedere.",
+        "Nulla qui sblocca un account privato. Se Instagram non pubblica un’immagine profilo per i visitatori non connessi, lo strumento restituisce un errore invece di indovinare o sostituire un’altra foto."
+      ],
+      "howHeading": "Come funziona questo visualizzatore",
+      "how": [
+        "Invii un nome utente o un URL di profilo. NovaLikes normalizza l’input, richiede il profilo Instagram pubblico dal nostro server e legge l’immagine che Instagram già allega a quella pagina.",
+        "Quando l’immagine è presente, viene consegnata tramite un download firmato e di breve durata su NovaLikes — non come un proxy aperto verso il resto di internet. Puoi aprirla a dimensione intera in una nuova scheda o salvare il file."
+      ],
+      "howToUseHeading": "Come consultare una foto profilo",
+      "howToUse": [
+        "Copia un nome utente Instagram pubblico o l’URL del profilo dalla barra degli indirizzi.",
+        "Incollalo sopra e scegli Vedi foto.",
+        "Usa Vedi dimensione intera o Scarica immagine quando la foto pubblica è disponibile."
+      ],
+      "supportedHeading": "Cosa puoi inserire",
+      "supportedIntro": "La ricerca è per gli account, non per post o Stories.",
+      "supported": [
+        "Nomi utente, con o senza @",
+        "URL instagram.com/{username}, inclusi parametri di tracciamento extra",
+        "Percorsi di profilo come /{username}/reels che identificano ancora lo stesso account pubblico"
+      ],
+      "notesHeading": "Limiti dei profili pubblici",
+      "notes": [
+        "I profili privati, nascosti o visibili solo dopo l’accesso non possono essere visualizzati.",
+        "Questa pagina non mostra conteggi follower, bio o post recenti. Usa il Visualizzatore profilo Instagram quando vuoi quella vista combinata.",
+        "L’immagine è quella che Instagram pubblica in quel momento. Non la ingrandiamo né la etichettiamo come HD."
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "faqHeading": "Domande sulla foto profilo",
+      "faqs": [
+        {
+          "id": "igp-private",
+          "question": "Posso vedere la foto profilo di un account Instagram privato?",
+          "answer": "No. Viene richiesta solo la foto che Instagram pubblica già su un profilo pubblico. Gli account privati restituiscono un errore."
+        },
+        {
+          "id": "igp-login",
+          "question": "Devo accedere a Instagram?",
+          "answer": "No. Questa pagina non chiede mai una password Instagram. Se Instagram non espone la foto pubblica, vedrai un errore."
+        },
+        {
+          "id": "igp-full",
+          "question": "Posso vedere qui i conteggi follower e la bio?",
+          "answer": "Non in questa pagina. Usa il [Visualizzatore profilo Instagram](/tools/instagram-profile-viewer) per nome, bio e conteggi pubblicati insieme."
+        },
+        {
+          "id": "igp-download",
+          "question": "Posso scaricare la foto profilo?",
+          "answer": "Sì, quando Instagram espone l’immagine pubblica. Scarica immagine salva quel file tramite NovaLikes. Vedi dimensione intera apre la stessa immagine in una nuova scheda."
+        }
+      ]
+    },
+    "instagram-follower-counter": {
+      "eyebrow": "Strumento Instagram",
+      "h1": "Contatore follower Instagram",
+      "lead": "Instagram spesso mostra audience grandi come 104M o 872K invece di un intero completo. Questo contatore legge l’etichetta follower che Instagram già mostra su un profilo pubblico e la presenta come pubblicata — comprese quelle abbreviazioni. Non inventa un numero esatto dietro 104M.",
+      "inputLabel": "Nome utente o URL del profilo Instagram",
+      "helperText": "I conteggi grandi restano abbreviati quando Instagram li pubblica così.",
+      "processingLabel": "Lettura del profilo Instagram pubblico…",
+      "resetLabel": "Cerca un altro profilo",
+      "introHeading": "Un’etichetta follower pubblica, non un censimento privato",
+      "intro": [
+        "Le persone consultano i conteggi follower per confermare ciò che un account già mostra al mondo. Questo strumento fa quella ricerca per te: richiede il profilo pubblico e restituisce la cifra follower che Instagram include in quella pagina al momento del controllo.",
+        "Quando Instagram scrive 104M, vedi 104M. Espanderlo in un 104.000.000 inventato sarebbe meno onesto, non più preciso. Anche gli account più piccoli che mostrano ancora un numero completo vengono presentati così."
+      ],
+      "howHeading": "Come viene letto il conteggio",
+      "how": [
+        "NovaLikes richiede il profilo Instagram pubblico dai nostri server e legge l’etichetta follower che Instagram già stampa. Non c’è un flusso in tempo reale di ogni follow, né un dump interno di cifre esatte.",
+        "Il risultato è un’istantanea di ciò che un visitatore potrebbe vedere sulla pagina pubblica. Controlla di nuovo più tardi se ti serve una lettura più recente; la cifra può cambiare dopo che te ne vai."
+      ],
+      "howToUseHeading": "Come controllare un conteggio follower",
+      "howToUse": [
+        "Inserisci un nome utente pubblico come nasa, @nasa o un URL di profilo.",
+        "Scegli Controlla conteggio.",
+        "Leggi il numero grande come Instagram lo pubblica, comprese le abbreviazioni K o M."
+      ],
+      "supportedHeading": "Cosa puoi inserire",
+      "supported": [
+        "Nomi utente, con o senza @",
+        "URL instagram.com/{username}, inclusi parametri di tracciamento",
+        "Percorsi come /{username}/reels che identificano ancora lo stesso account pubblico"
+      ],
+      "notesHeading": "Cosa non è questo numero",
+      "notes": [
+        "Non è un totale in tempo reale né una ricerca di account privato.",
+        "Non convertiamo 104M in un conteggio esatto finto.",
+        "I totali di seguiti e di post appartengono al Visualizzatore profilo Instagram, non a questo contatore mirato."
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "faqHeading": "Domande sul conteggio follower",
+      "faqs": [
+        {
+          "id": "igf-exact",
+          "question": "È il numero esatto di follower in tempo reale?",
+          "answer": "È il conteggio che Instagram pubblica sul profilo pubblico al momento della ricerca. Gli account grandi sono spesso abbreviati e la cifra può cambiare dopo il controllo."
+        },
+        {
+          "id": "igf-abbrev",
+          "question": "Perché alcuni risultati dicono 104M invece di un numero completo?",
+          "answer": "Instagram stesso accorcia spesso le audience grandi. Questo strumento mantiene quell’etichetta. Non inventiamo le cifre mancanti."
+        },
+        {
+          "id": "igf-private",
+          "question": "Funziona sugli account privati?",
+          "answer": "No. Si possono controllare solo i profili pubblici che espongono un conteggio follower."
+        },
+        {
+          "id": "igf-photo",
+          "question": "Posso vedere anche la foto profilo?",
+          "answer": "Il contatore può includere la foto pubblica quando Instagram la espone. Per una vista dedicata dell’immagine, usa il [Visualizzatore foto profilo Instagram](/tools/instagram-profile-picture-viewer). Per nome, bio e tutti e tre i conteggi, usa il [Visualizzatore profilo Instagram](/tools/instagram-profile-viewer)."
+        }
+      ]
+    },
+    "instagram-profile-viewer": {
+      "eyebrow": "Strumento Instagram",
+      "h1": "Visualizzatore profilo Instagram",
+      "lead": "Inserisci un nome utente o un URL di profilo Instagram pubblico per vedere foto, nome, bio e i conteggi pubblicati che Instagram già mostra. NovaLikes restituisce solo i dettagli di profilo pubblici — niente di privato e niente di inventato.",
+      "inputLabel": "Nome utente o URL del profilo Instagram",
+      "helperText": "Prova nasa, @nasa o un URL di profilo pubblico.",
+      "processingLabel": "Caricamento del profilo Instagram pubblico…",
+      "resetLabel": "Cerca un altro profilo",
+      "introHeading": "Un’istantanea pubblica combinata",
+      "intro": [
+        "Il Visualizzatore foto profilo è solo per l’immagine. Il Contatore follower è per l’etichetta di audience. Questa pagina sta in mezzo: una ricerca che raccoglie il blocco di identità pubblico che Instagram mostra in cima a un profilo.",
+        "Vedi ancora solo ciò che Instagram espone senza accesso. Post recenti, Stories, Highlights e bio private sono fuori ambito. Se un campo manca sulla pagina pubblica, manca anche qui."
+      ],
+      "howHeading": "Come viene costruita l’istantanea",
+      "how": [
+        "NovaLikes richiede il profilo pubblico e mappa la foto pubblicata, i nomi, la biografia e le etichette di conteggio in un riepilogo semplice. Conteggi come 104M o 872K restano abbreviati quando Instagram li scrive così.",
+        "Quando è inclusa una foto pubblica, puoi aprirla a dimensione intera. È fornito un link di ritorno a Instagram per confermare lo stesso account sulla piattaforma."
+      ],
+      "howToUseHeading": "Come visualizzare un profilo pubblico",
+      "howToUse": [
+        "Inserisci un nome utente o un URL di profilo pubblico.",
+        "Scegli Vedi profilo.",
+        "Esamina foto, nome, bio e la riga follower / seguiti / post. Apri Instagram o la foto a dimensione intera se compaiono quelle azioni."
+      ],
+      "supportedHeading": "Cosa puoi inserire",
+      "supported": [
+        "Nomi utente, con o senza @",
+        "URL instagram.com/{username}, inclusi parametri di tracciamento",
+        "Percorsi come /{username}/reels che identificano ancora lo stesso account pubblico"
+      ],
+      "notesHeading": "Cosa questo visualizzatore non include",
+      "notes": [
+        "I profili privati non possono essere visualizzati. Questo strumento non aggira le protezioni dell’account.",
+        "Non elenca post, Stories o Highlights.",
+        "Se ti serve solo la foto, il Visualizzatore foto profilo è il percorso più breve."
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "faqHeading": "Domande",
+      "faqs": [
+        {
+          "id": "igvwr-what",
+          "question": "Quali informazioni può mostrare il Visualizzatore profilo Instagram?",
+          "answer": "La foto profilo pubblica, il nome visualizzato, il nome utente, la biografia e le etichette pubblicate di follower, seguiti e post quando Instagram le include."
+        },
+        {
+          "id": "igvwr-private",
+          "question": "Posso visualizzare un profilo Instagram privato?",
+          "answer": "No. Si possono controllare solo i profili pubblici che Instagram espone già."
+        },
+        {
+          "id": "igvwr-counts",
+          "question": "I numeri dei follower sono esatti?",
+          "answer": "Corrispondono alle etichette che Instagram pubblica. Gli account grandi possono apparire come 104M. Questo non viene convertito in un totale esatto finto."
+        },
+        {
+          "id": "igvwr-photo",
+          "question": "Qual è la differenza tra Visualizzatore profilo e Visualizzatore foto profilo?",
+          "answer": "Questa pagina mostra l’istantanea di identità pubblica. Il [Visualizzatore foto profilo Instagram](/tools/instagram-profile-picture-viewer) serve solo a vedere o scaricare la foto pubblica."
+        }
+      ]
+    },
+    "instagram-video-downloader": {
+      "eyebrow": "Strumento Instagram",
+      "h1": "Downloader video / Reels Instagram",
+      "lead": "Incolla l’URL di un Reel o di un post video Instagram pubblico. NovaLikes controlla la pagina pubblica e offre un file solo quando Instagram ne include uno. Molti post pubblici al momento non lo fanno. Questa è Disponibilità limitata — non uno strumento rotto e non un download falso.",
+      "inputLabel": "URL pubblico di Reel o video Instagram",
+      "helperText": "Un file viene offerto solo se Instagram lo include sulla pagina pubblica.",
+      "processingLabel": "Controllo della pagina Instagram pubblica…",
+      "resetLabel": "Prova un altro URL",
+      "limitedNotice": "Instagram potrebbe non esporre un file media scaricabile per ogni post o Reel pubblico. NovaLikes restituisce un file solo quando è disponibile pubblicamente.",
+      "introHeading": "Un controllo della pagina pubblica, non un download promesso",
+      "intro": [
+        "Instagram spesso riproduce i Reels in un player che non consegna mai un file video a un visitatore non autenticato. Questo strumento esegue comunque il controllo: se è presente un URL media pubblico, puoi scaricarlo. In caso contrario, vedi un messaggio chiaro.",
+        "Disponibilità limitata significa che ci rifiutiamo di inventare un file. Non significa che il modulo sia offline. Stories, post privati e media visibili solo dopo l’accesso restano fuori portata."
+      ],
+      "howHeading": "Cosa succede dopo aver incollato un URL",
+      "how": [
+        "NovaLikes verifica che il link sia un URL pubblico di Reel, post o video in stile IGTV di Instagram, poi richiede quella pagina dai nostri server. Un pulsante di download compare solo quando un file media è realmente esposto.",
+        "Nomi di qualità come HD compaiono solo se Instagram li indica. Non etichettiamo come HD un file senza etichetta."
+      ],
+      "howToUseHeading": "Come controllare un Reel o un post video",
+      "howToUse": [
+        "Copia un URL pubblico di Reel o di post video da Instagram.",
+        "Incollalo sopra e scegli Controlla video.",
+        "Scarica il file se è elencato. Se Instagram non ha incluso il media, leggi il messaggio e prova un altro URL pubblico."
+      ],
+      "supportedHeading": "URL pubblici supportati",
+      "supported": [
+        "instagram.com/reel/{code} e /reels/{code}",
+        "post video instagram.com/p/{code}",
+        "instagram.com/tv/{code}"
+      ],
+      "notesHeading": "Limiti da aspettarti",
+      "notes": [
+        "Stories, account privati e post visibili solo dopo l’accesso non vengono recuperati.",
+        "Questa pagina non chiede una password Instagram.",
+        "Per le foto profilo, usa il Visualizzatore foto profilo Instagram invece di un URL di Reel."
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "faqHeading": "Domande su Reel e video",
+      "faqs": [
+        {
+          "id": "igv-works",
+          "question": "Ogni Reel pubblico verrà scaricato?",
+          "answer": "No. Un file viene restituito solo quando Instagram ne espone uno sulla pagina pubblica. Molti Reels pubblici al momento non lo fanno."
+        },
+        {
+          "id": "igv-private",
+          "question": "Funziona sui post privati?",
+          "answer": "No. Post privati, limitati o rimossi non vengono recuperati."
+        },
+        {
+          "id": "igv-login",
+          "question": "Serve un accesso Instagram?",
+          "answer": "No. Se Instagram nasconde il file alle richieste pubbliche, lo strumento non può reinserirlo."
+        },
+        {
+          "id": "igv-profile",
+          "question": "Mi serve solo una foto profilo?",
+          "answer": "Usa il [Visualizzatore foto profilo Instagram](/tools/instagram-profile-picture-viewer)."
+        }
+      ]
+    },
+    "tiktok-video-downloader": {
+      "eyebrow": "Strumento TikTok",
+      "h1": "Downloader video TikTok",
+      "lead": "Incolla un link video TikTok pubblico, compresi gli URL di condivisione comuni. NovaLikes recupera il file che TikTok espone già su quella pagina. Se è elencata più di una qualità, quelle etichette arrivano da TikTok — non inventiamo HD e non rimuoviamo filigrane.",
+      "inputLabel": "URL pubblico di video TikTok",
+      "helperText": "Sono accettate le pagine di visione e i link di condivisione come vm.tiktok.com o vt.tiktok.com.",
+      "processingLabel": "Recupero della pagina TikTok pubblica…",
+      "resetLabel": "Prova un altro URL",
+      "introHeading": "Scarica il file pubblico che TikTok già serve",
+      "intro": [
+        "Creatori e spettatori spesso hanno bisogno di una copia di un video pubblico che possono già guardare senza accedere. Questo downloader richiede quella pagina pubblica dai server NovaLikes e, quando TikTok include un file video, lo offre come download.",
+        "I link di condivisione vengono risolti quando puntano a una pagina di visione pubblica. Post foto, video privati e elementi rimossi non sono supportati. Qualsiasi filigrana o limite regionale del file pubblico resta valida."
+      ],
+      "howHeading": "Come funziona il recupero",
+      "how": [
+        "Dopo che incolli un URL, NovaLikes verifica che sia un video TikTok o un host di condivisione consentito, segue i reindirizzamenti pubblici e legge i media che TikTok ha allegato alla pagina.",
+        "Se TikTok indica più di una qualità, ogni opzione è elencata con l’etichetta fornita da TikTok. I file senza etichetta sono offerti come un download semplice, non come una risoluzione indovinata."
+      ],
+      "howToUseHeading": "Come recuperare un video TikTok",
+      "howToUse": [
+        "Copia l’URL del video da TikTok, compreso un link di condivisione breve se è quello che hai.",
+        "Incollalo sopra e scegli Recupera video.",
+        "Scarica il file, oppure scegli una qualità elencata quando TikTok ne indica più di una."
+      ],
+      "supportedHeading": "Link supportati",
+      "supported": [
+        "tiktok.com/@user/video/{id}",
+        "link mobili m.tiktok.com/v/{id}",
+        "link di condivisione vm.tiktok.com, vt.tiktok.com e tiktok.com/t/ che si risolvono in un video pubblico"
+      ],
+      "notesHeading": "Limiti dei media pubblici",
+      "notes": [
+        "Post foto, video privati e video rimossi non sono supportati.",
+        "TikTok può limitare brevemente le richieste ripetute.",
+        "Questa pagina non pretende di rimuovere le filigrane. Ricevi ciò che TikTok pubblica."
+      ],
+      "relatedHeading": "Altri strumenti TikTok",
+      "faqHeading": "Domande sui video TikTok",
+      "faqs": [
+        {
+          "id": "tt-public",
+          "question": "Funziona su ogni video TikTok?",
+          "answer": "No. Solo video pubblici. Video privati, eliminati o temporaneamente bloccati restituiscono un errore."
+        },
+        {
+          "id": "tt-short",
+          "question": "Posso incollare un link di condivisione breve?",
+          "answer": "Sì. Gli host di condivisione pubblici come vm.tiktok.com vengono risolti quando puntano a un video TikTok."
+        },
+        {
+          "id": "tt-quality",
+          "question": "Cosa significano le etichette di qualità?",
+          "answer": "Etichette come 720p compaiono solo quando TikTok indica quella qualità. Non inventiamo nomi HD o SD."
+        },
+        {
+          "id": "tt-login",
+          "question": "Serve un account TikTok?",
+          "answer": "No. Se TikTok non espone il file pubblico, lo strumento non può recuperarlo."
+        }
+      ]
+    },
+    "tiktok-profile-picture-downloader": {
+      "eyebrow": "Strumento TikTok",
+      "h1": "Downloader foto profilo TikTok",
+      "lead": "TikTok tiene gli avatar piccoli nell’app. Inserisci un nome utente pubblico, @username o un URL di profilo e NovaLikes mostrerà la foto profilo che TikTok pubblica già — abbastanza grande da ispezionarla, con Vedi dimensione intera e Scarica immagine quando l’immagine è pubblica.",
+      "inputLabel": "Nome utente o URL del profilo TikTok",
+      "helperText": "I nomi utente funzionano con o senza @. Anche gli URL di profilo vanno bene.",
+      "processingLabel": "Caricamento della foto profilo TikTok pubblica…",
+      "resetLabel": "Cerca un altro profilo",
+      "introHeading": "L’avatar pubblico, nient’altro",
+      "intro": [
+        "Questa pagina è solo per l’immagine che TikTok mette su un profilo pubblico. Non conta follower, non elenca video e non apre account privati. Se ti serve un file video, usa il Downloader video TikTok.",
+        "Un nome utente, un @handle o un link tiktok.com/@user identificano lo stesso account pubblico. Gli URL video vengono rifiutati qui così la ricerca resta sulla foto profilo."
+      ],
+      "howHeading": "Come viene recuperata la foto",
+      "how": [
+        "NovaLikes richiede il profilo TikTok pubblico dai nostri server e legge l’immagine che TikTok già pubblica per crawler e visitatori. Quando quell’immagine è presente, viene mostrata qui e offerta tramite un download firmato NovaLikes.",
+        "I nomi visualizzati compaiono quando TikTok li include nel titolo pubblico. Le statistiche follower sono omesse di proposito."
+      ],
+      "howToUseHeading": "Come scaricare una foto profilo TikTok",
+      "howToUse": [
+        "Inserisci un nome utente come nba, oppure incolla un link tiktok.com/@username.",
+        "Scegli Vedi foto.",
+        "Apri Vedi dimensione intera o Scarica immagine quando la foto pubblica è disponibile."
+      ],
+      "supportedHeading": "Cosa puoi inserire",
+      "supported": [
+        "Nomi utente, con o senza @",
+        "URL di profilo tiktok.com/@username"
+      ],
+      "notesHeading": "Limiti degli account pubblici",
+      "notes": [
+        "I profili privati o visibili solo dopo l’accesso restituiscono un errore.",
+        "Gli URL video TikTok appartengono al downloader video, non a questo modulo.",
+        "Il file è l’avatar che TikTok pubblica. Non lo etichettiamo come HD."
+      ],
+      "relatedHeading": "Altri strumenti TikTok",
+      "faqHeading": "Domande sulle foto TikTok",
+      "faqs": [
+        {
+          "id": "ttp-public",
+          "question": "Funziona sugli account TikTok privati?",
+          "answer": "No. Viene richiesta solo l’immagine profilo pubblicata pubblicamente."
+        },
+        {
+          "id": "ttp-video",
+          "question": "Posso scaricare un video TikTok qui?",
+          "answer": "No. Usa il [Downloader video TikTok](/tools/tiktok-video-downloader) per i video pubblici."
+        },
+        {
+          "id": "ttp-login",
+          "question": "Devo accedere a TikTok?",
+          "answer": "No. Se TikTok non espone la foto pubblica, lo strumento restituisce un errore."
+        },
+        {
+          "id": "ttp-input",
+          "question": "Funziona @username, o serve l’URL completo?",
+          "answer": "Funzionano entrambi. Puoi digitare nba, @nba o https://www.tiktok.com/@nba."
+        }
+      ]
+    },
+    "facebook-video-downloader": {
+      "eyebrow": "Strumento Facebook",
+      "h1": "Downloader video Facebook",
+      "lead": "Incolla un URL pubblico Facebook watch o /videos/. NovaLikes offre HD o SD solo quando Facebook espone quei file. I link Reel appartengono al downloader Reels così ogni modulo resta allineato al tipo di URL che Facebook usa.",
+      "inputLabel": "URL pubblico di video Facebook",
+      "helperText": "Usa un link watch o /videos/. Gli URL Reel appartengono al downloader Reels.",
+      "processingLabel": "Controllo del video Facebook pubblico…",
+      "resetLabel": "Prova un altro URL",
+      "introHeading": "Video Facebook pubblici, non Reels",
+      "intro": [
+        "Facebook pubblica ancora molti video lunghi sulle pagine watch e sui percorsi /videos/ delle Pagine. Questo downloader è per quegli URL. Quando Facebook include una sorgente HD, una sorgente SD o entrambe, quelle opzioni compaiono con le etichette di Facebook.",
+        "Clip solo per amici, muri di accesso e video rimossi non possono essere recuperati. Un link in stile Reel /reel/ viene indirizzato al Downloader Reels Facebook invece di essere forzato in questo modulo."
+      ],
+      "howHeading": "Come vengono offerti i media Facebook",
+      "how": [
+        "NovaLikes verifica che l’URL sia un video Facebook pubblico (o un link fb.watch che può risolversi in uno), poi legge i media che Facebook ha allegato per la riproduzione pubblica.",
+        "Se Facebook elenca HD e SD, ottieni azioni di download separate. Se elenca un solo file, ottieni quel file — non una seconda qualità inventata."
+      ],
+      "howToUseHeading": "Come recuperare un video Facebook",
+      "howToUse": [
+        "Copia l’URL pubblico del video da Facebook.",
+        "Incollalo sopra e recupera il video.",
+        "Scegli una qualità elencata quando Facebook espone più di un file."
+      ],
+      "supportedHeading": "Link video supportati",
+      "supported": [
+        "facebook.com/{page}/videos/{id}",
+        "facebook.com/watch/?v={id}",
+        "link facebook.com/share/v/ e facebook.com/video.php?v=",
+        "link fb.watch che si risolvono in media video pubblici"
+      ],
+      "notesHeading": "Quando un download non comparirà",
+      "notes": [
+        "Video solo per amici, che richiedono l’accesso o rimossi non possono essere recuperati.",
+        "I pulsanti di qualità compaiono solo quando Facebook etichetta quelle sorgenti.",
+        "Usa il downloader Reels per URL /reel/ e di condivisione Reel."
+      ],
+      "relatedHeading": "Altri strumenti Facebook",
+      "faqHeading": "Domande sui video Facebook",
+      "faqs": [
+        {
+          "id": "fbv-public",
+          "question": "Quali video Facebook funzionano?",
+          "answer": "URL video pubblici in cui Facebook espone ancora un file media."
+        },
+        {
+          "id": "fbv-reel",
+          "question": "Posso incollare un Reel qui?",
+          "answer": "Usa il [Downloader Reels Facebook](/tools/facebook-reels-downloader) per gli URL Reel. Questa pagina è per i link watch e /videos/."
+        },
+        {
+          "id": "fbv-hd",
+          "question": "Vedrò sempre l’HD?",
+          "answer": "Solo se Facebook espone una sorgente HD. Alcuni video pubblici includono solo SD."
+        },
+        {
+          "id": "fbv-login",
+          "question": "Serve un accesso Facebook?",
+          "answer": "No. Lo strumento non chiede mai credenziali Facebook."
+        }
+      ]
+    },
+    "facebook-reels-downloader": {
+      "eyebrow": "Strumento Facebook",
+      "h1": "Downloader Reels Facebook",
+      "lead": "Incolla un URL di Reel Facebook pubblico. NovaLikes restituisce i media che Facebook rende disponibili per quel Reel — compreso HD o SD quando Facebook etichetta quei file. I link watch o /videos/ standard appartengono al Downloader video Facebook.",
+      "inputLabel": "URL pubblico di Reel Facebook",
+      "helperText": "Usa un link /reel/ o di condivisione Reel. Gli URL watch standard appartengono al downloader video.",
+      "processingLabel": "Controllo del Reel Facebook pubblico…",
+      "resetLabel": "Prova un altro URL",
+      "introHeading": "I Reels sono un URL Facebook diverso",
+      "intro": [
+        "I Reels Facebook usano percorsi /reel/ e link di condivisione Reel, non il vecchio player watch. Questa pagina esiste perché quegli URL siano trattati secondo le proprie regole. Se Facebook espone un file media pubblico, puoi scaricarlo qui.",
+        "Un video di Pagina regolare appartiene ancora al Downloader video Facebook. Inviare il tipo di link sbagliato restituisce un rinvio allo strumento corrispondente invece di un fallimento silenzioso."
+      ],
+      "howHeading": "Come viene recuperato un Reel",
+      "how": [
+        "NovaLikes conferma che l’URL è un Reel pubblico o un link share/fb.watch che può risolversi in media Reel, poi legge il file che Facebook ha allegato per la riproduzione pubblica.",
+        "Le opzioni di qualità disponibili sono elencate solo quando Facebook le indica. Reels privati, eliminati o visibili solo dopo l’accesso restituiscono un errore."
+      ],
+      "howToUseHeading": "Come recuperare un Reel Facebook",
+      "howToUse": [
+        "Copia il link del Reel da Facebook.",
+        "Incollalo sopra e recupera il Reel.",
+        "Scarica il file elencato, oppure scegli HD/SD quando Facebook espone entrambi."
+      ],
+      "supportedHeading": "Link Reel supportati",
+      "supported": [
+        "facebook.com/reel/{id} e /reels/{id}",
+        "link di condivisione Reel facebook.com/share/r/",
+        "link fb.watch che si risolvono in media Reel pubblici"
+      ],
+      "notesHeading": "Limiti specifici dei Reels",
+      "notes": [
+        "I link watch o /videos/ appartengono al Downloader video Facebook.",
+        "Le etichette di qualità compaiono solo quando Facebook indica HD o SD.",
+        "I Reels privati non vengono recuperati."
+      ],
+      "relatedHeading": "Altri strumenti Facebook",
+      "faqHeading": "Domande sui Reels Facebook",
+      "faqs": [
+        {
+          "id": "fbr-public",
+          "question": "I Reels privati funzionano?",
+          "answer": "No. Si possono recuperare solo Reels pubblici con un file media esposto."
+        },
+        {
+          "id": "fbr-video",
+          "question": "E un URL video Facebook regolare?",
+          "answer": "Usa il [Downloader video Facebook](/tools/facebook-video-downloader) per i link watch o /videos/."
+        },
+        {
+          "id": "fbr-quality",
+          "question": "Le qualità differiranno tra Reels?",
+          "answer": "Possono. Alcuni Reels includono HD e SD; altri includono un solo file senza etichetta. Le etichette compaiono solo quando Facebook le fornisce."
+        },
+        {
+          "id": "fbr-login",
+          "question": "Serve un account Facebook?",
+          "answer": "No. Lo strumento non chiede mai credenziali Facebook."
+        }
+      ]
+    }
+  },
+  "registry": {
+    "instagram-profile-viewer": {
+      "name": "Visualizzatore profilo Instagram",
+      "shortDescription": "Vedi la foto pubblica, il nome, la bio e i conteggi pubblicati di un profilo Instagram.",
+      "placeholder": "nome utente o https://www.instagram.com/username/",
+      "actionLabel": "Vedi profilo",
+      "availabilityLabel": "Disponibile"
+    },
+    "instagram-profile-picture-viewer": {
+      "name": "Visualizzatore foto profilo Instagram",
+      "shortDescription": "Vedi la foto profilo pubblicata pubblicamente per un nome utente Instagram.",
+      "placeholder": "nome utente o https://www.instagram.com/username/",
+      "actionLabel": "Vedi foto",
+      "availabilityLabel": "Disponibile"
+    },
+    "instagram-follower-counter": {
+      "name": "Contatore follower Instagram",
+      "shortDescription": "Leggi il conteggio follower che Instagram pubblica su una pagina di profilo pubblico.",
+      "placeholder": "nome utente o https://www.instagram.com/username/",
+      "actionLabel": "Controlla conteggio",
+      "availabilityLabel": "Disponibile"
+    },
+    "instagram-video-downloader": {
+      "name": "Downloader video / Reels Instagram",
+      "shortDescription": "Controlla un Reel o un post video Instagram pubblico. Un file viene restituito solo se Instagram ne espone uno.",
+      "placeholder": "https://www.instagram.com/reel/...",
+      "actionLabel": "Controlla video",
+      "availabilityLabel": "Disponibilità limitata"
+    },
+    "tiktok-video-downloader": {
+      "name": "Downloader video TikTok",
+      "shortDescription": "Scarica un video TikTok pubblico quando il file è disponibile sulla pagina pubblica.",
+      "placeholder": "https://www.tiktok.com/@user/video/...",
+      "actionLabel": "Recupera video",
+      "availabilityLabel": "Disponibile"
+    },
+    "tiktok-profile-picture-downloader": {
+      "name": "Downloader foto profilo TikTok",
+      "shortDescription": "Vedi e scarica la foto profilo pubblica che TikTok pubblica per un account.",
+      "placeholder": "nome utente o https://www.tiktok.com/@username",
+      "actionLabel": "Vedi foto",
+      "availabilityLabel": "Disponibile"
+    },
+    "facebook-video-downloader": {
+      "name": "Downloader video Facebook",
+      "shortDescription": "Scarica un video Facebook pubblico quando Facebook espone il file media.",
+      "placeholder": "https://www.facebook.com/.../videos/...",
+      "actionLabel": "Recupera video",
+      "availabilityLabel": "Disponibile"
+    },
+    "facebook-reels-downloader": {
+      "name": "Downloader Reels Facebook",
+      "shortDescription": "Scarica un Reel Facebook pubblico quando il file media è accessibile pubblicamente.",
+      "placeholder": "https://www.facebook.com/reel/...",
+      "actionLabel": "Recupera Reel",
+      "availabilityLabel": "Disponibile"
+    }
+  },
+  "layout": {
+    "instagram-profile-picture-viewer": {
+      "accentWord": "Visualizzatore",
+      "editorialHeading": "Vedi una foto Instagram pubblica a una dimensione utile",
+      "seeHeading": "Cosa puoi vedere?",
+      "seeItems": [
+        {
+          "title": "Foto profilo",
+          "text": "L’avatar pubblico, mostrato abbastanza grande da ispezionarlo."
+        },
+        {
+          "title": "Ricerca per nome utente",
+          "text": "Funziona con un handle, @username o un URL di profilo pubblico."
+        },
+        {
+          "title": "Vista a dimensione intera",
+          "text": "Apri la stessa immagine pubblica in una nuova scheda quando Instagram la espone."
+        },
+        {
+          "title": "Scarica file",
+          "text": "Salva la foto pubblicata tramite NovaLikes — non un contenuto privato."
+        }
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "ctaHeading": "Vuoi far crescere la tua presenza su Instagram?",
+      "privacyLead": "Solo profili pubblici."
+    },
+    "instagram-follower-counter": {
+      "accentWord": "Contatore",
+      "editorialHeading": "Un’etichetta follower pubblica, non un censimento privato",
+      "seeHeading": "Cosa puoi vedere?",
+      "seeItems": [
+        {
+          "title": "Follower",
+          "text": "L’etichetta pubblicata, comprese abbreviazioni come 104M."
+        },
+        {
+          "title": "Come Instagram la stampa",
+          "text": "I conteggi grandi restano abbreviati quando Instagram li scrive così."
+        },
+        {
+          "title": "Foto pubblica",
+          "text": "Inclusa quando Instagram espone l’avatar sulla pagina pubblica."
+        },
+        {
+          "title": "Solo account pubblico",
+          "text": "I profili privati non vengono conteggiati con questo strumento."
+        }
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "ctaHeading": "Vuoi far crescere la tua presenza su Instagram?",
+      "privacyLead": "Solo profili pubblici."
+    },
+    "instagram-video-downloader": {
+      "accentWord": "Downloader",
+      "editorialHeading": "Un controllo della pagina pubblica, non un download promesso",
+      "seeHeading": "Cosa puoi ottenere?",
+      "seeItems": [
+        {
+          "title": "URL pubblico di Reel o video",
+          "text": "Incolla l’indirizzo di un post o Reel Instagram pubblico."
+        },
+        {
+          "title": "File quando è esposto",
+          "text": "Un download compare solo se Instagram include un file pubblico."
+        },
+        {
+          "title": "Limiti chiari",
+          "text": "Molti post pubblici al momento non espongono un file. Questa è Disponibilità limitata."
+        },
+        {
+          "title": "Nessun media privato",
+          "text": "Stories, Highlights e post privati sono fuori ambito."
+        }
+      ],
+      "relatedHeading": "Altri strumenti Instagram",
+      "ctaHeading": "Vuoi far crescere la tua presenza su Instagram?",
+      "privacyLead": "Solo post pubblici."
+    },
+    "tiktok-video-downloader": {
+      "accentWord": "Downloader",
+      "editorialHeading": "Recupera un file TikTok pubblico quando TikTok lo espone",
+      "seeHeading": "Cosa puoi ottenere?",
+      "seeItems": [
+        {
+          "title": "URL di visione pubblico",
+          "text": "Incolla un link video TikTok pubblico."
+        },
+        {
+          "title": "Controllo lato server",
+          "text": "NovaLikes richiede la pagina pubblica e cerca un file media."
+        },
+        {
+          "title": "Download quando disponibile",
+          "text": "Se TikTok espone il file, puoi salvarlo qui."
+        },
+        {
+          "title": "Solo video pubblici",
+          "text": "Video privati o limitati non vengono recuperati."
+        }
+      ],
+      "relatedHeading": "Altri strumenti TikTok",
+      "ctaHeading": "Vuoi far crescere la tua presenza su TikTok?",
+      "privacyLead": "Solo video pubblici."
+    },
+    "tiktok-profile-picture-downloader": {
+      "accentWord": "Downloader",
+      "editorialHeading": "Vedi la foto TikTok pubblica che un account già pubblica",
+      "seeHeading": "Cosa puoi vedere?",
+      "seeItems": [
+        {
+          "title": "Foto profilo",
+          "text": "L’avatar che TikTok pubblica su un account pubblico."
+        },
+        {
+          "title": "Nome utente o URL",
+          "text": "Inserisci un handle o un link di profilo TikTok pubblico."
+        },
+        {
+          "title": "Download",
+          "text": "Salva l’immagine pubblica quando TikTok la espone."
+        },
+        {
+          "title": "Solo account pubblici",
+          "text": "Le foto profilo private non sono disponibili."
+        }
+      ],
+      "relatedHeading": "Altri strumenti TikTok",
+      "ctaHeading": "Vuoi far crescere la tua presenza su TikTok?",
+      "privacyLead": "Solo profili pubblici."
+    },
+    "facebook-video-downloader": {
+      "accentWord": "Downloader",
+      "editorialHeading": "Scarica un video Facebook pubblico quando un file è esposto",
+      "seeHeading": "Cosa puoi ottenere?",
+      "seeItems": [
+        {
+          "title": "URL video pubblico",
+          "text": "Incolla l’indirizzo di un video Facebook pubblico."
+        },
+        {
+          "title": "Controllo del file pubblico",
+          "text": "NovaLikes cerca un file media che Facebook espone già."
+        },
+        {
+          "title": "Download",
+          "text": "Salva il file quando Facebook ne include uno sulla pagina pubblica."
+        },
+        {
+          "title": "Solo video pubblici",
+          "text": "Video solo per amici o protetti da accesso non vengono recuperati."
+        }
+      ],
+      "relatedHeading": "Altri strumenti Facebook",
+      "ctaHeading": "Vuoi far crescere la tua presenza su Facebook?",
+      "privacyLead": "Solo video pubblici."
+    },
+    "facebook-reels-downloader": {
+      "accentWord": "Downloader",
+      "editorialHeading": "Scarica un Reel Facebook pubblico quando il media è accessibile",
+      "seeHeading": "Cosa puoi ottenere?",
+      "seeItems": [
+        {
+          "title": "URL Reel pubblico",
+          "text": "Incolla l’indirizzo di un Reel Facebook pubblico."
+        },
+        {
+          "title": "Controllo del file pubblico",
+          "text": "NovaLikes cerca un file media sulla pagina pubblica del Reel."
+        },
+        {
+          "title": "Download",
+          "text": "Salva il file del Reel quando Facebook lo espone."
+        },
+        {
+          "title": "Solo Reels pubblici",
+          "text": "Reels privati o limitati non vengono recuperati."
+        }
+      ],
+      "relatedHeading": "Altri strumenti Facebook",
+      "ctaHeading": "Vuoi far crescere la tua presenza su Facebook?",
+      "privacyLead": "Solo Reels pubblici."
+    }
+  },
+  "profileViewer": {
+    "accentWord": "Visualizzatore",
+    "editorialHeading": "Uno sguardo più chiaro a un profilo Instagram pubblico",
+    "editorialBody": "Instagram tiene piccolo il blocco di identità pubblico. Questo visualizzatore porta quel blocco in una vista: la foto profilo, il nome visualizzato, il nome utente, la biografia e le etichette di follower, seguiti e post che Instagram già stampa. Le audience grandi restano abbreviate quando Instagram scrive 104M o 872K. Profili privati, Stories e Highlights restano fuori portata.",
+    "seeHeading": "Cosa puoi vedere?",
+    "seeItems": [
+      {
+        "title": "Foto profilo",
+        "text": "L’avatar pubblico, mostrato abbastanza grande da ispezionarlo."
+      },
+      {
+        "title": "Bio e nome utente",
+        "text": "Nome visualizzato, @username e biografia quando sono pubblici."
+      },
+      {
+        "title": "Follower",
+        "text": "L’etichetta pubblicata, comprese abbreviazioni come 104M."
+      },
+      {
+        "title": "Seguiti e post",
+        "text": "Inclusi quando Instagram stampa quei conteggi sul profilo pubblico."
+      }
+    ],
+    "howHeading": "Come usarlo",
+    "howSteps": [
+      "Inserisci un nome utente o un URL di profilo",
+      "NovaLikes controlla il profilo pubblico",
+      "Consulta i dettagli di profilo disponibili"
+    ],
+    "privacyLead": "Solo profili pubblici.",
+    "privacyBody": "NovaLikes non aggira le impostazioni di privacy di Instagram. Contenuti di profili privati, Stories e Highlights non sono disponibili tramite questo strumento.",
+    "relatedHeading": "Altri strumenti Instagram",
+    "ctaHeading": "Vuoi far crescere la tua presenza su Instagram?",
+    "ctaNote": "Questo visualizzatore è gratis. Le pagine dei pacchetti sono separate se vuoi anche far crescere un account pubblico."
+  },
+  "chrome": {
+    "howToUseIt": "Come usarlo",
+    "stepLabel": "Passo {n}",
+    "openTool": "Apri strumento",
+    "allFreeTools": "Tutti gli strumenti gratis",
+    "toolIsFreeNote": "Questo strumento è gratis. Le pagine dei pacchetti sono separate se vuoi anche far crescere un account pubblico.",
+    "exploreServices": "Esplora i servizi",
+    "faqTitle": "Domande frequenti",
+    "viewFullSize": "Vedi dimensione intera",
+    "downloadImage": "Scarica immagine",
+    "downloadVideo": "Scarica video",
+    "downloadFileN": "Scarica file {n}",
+    "downloadQuality": "Scarica {quality}",
+    "viewOnInstagram": "Vedi su Instagram",
+    "viewFullSizeProfilePicture": "Vedi foto profilo a dimensione intera",
+    "currentFollowerCount": "Conteggio follower attualmente disponibile pubblicamente",
+    "abbreviatedCountNote": "Mostrato come Instagram lo pubblica, non come un conteggio esatto.",
+    "followers": "Follower",
+    "following": "Seguiti",
+    "posts": "Post",
+    "availableQuality": "Qualità disponibile: ",
+    "availableQualities": "Qualità disponibili: ",
+    "profilePhotoAlt": "Foto profilo di {username}",
+    "videoThumbnailAlt": "Miniatura del video",
+    "thumbnailForTitle": "Miniatura per {title}",
+    "viewProfile": "Vedi profilo",
+    "hubHowTitles": [
+      "Inserisci un nome utente o un URL",
+      "Controlliamo i dati pubblici",
+      "Consulta il risultato disponibile"
+    ],
+    "usps": [
+      {
+        "title": "Gratis da usare",
+        "text": "Nessun costo per nessun assistente"
+      },
+      {
+        "title": "Nessun accesso",
+        "text": "Anonimo e sicuro"
+      },
+      {
+        "title": "Solo dati pubblici",
+        "text": "Rispettiamo la privacy"
+      }
+    ],
+    "servicePills": {
+      "buy-instagram-followers": "Pacchetti follower Instagram",
+      "buy-tiktok-followers": "Pacchetti follower TikTok",
+      "buy-facebook-followers": "Pacchetti follower Facebook"
+    },
+    "platformLabels": {
+      "instagram": "Strumenti Instagram",
+      "tiktok": "Strumenti TikTok",
+      "facebook": "Strumenti Facebook"
+    },
+    "platformIntros": {
+      "instagram": "Foto profilo pubbliche, etichette follower, istantanee combinate e controlli video.",
+      "tiktok": "Video TikTok pubblici e foto profilo.",
+      "facebook": "Video e Reels Facebook pubblici quando è esposto un file media."
+    },
+    "cardBlurbs": {
+      "instagram-profile-viewer": "Vedi insieme la foto pubblica, il nome, la bio e i conteggi pubblicati.",
+      "instagram-profile-picture-viewer": "Vedi la foto profilo pubblica di un nome utente Instagram.",
+      "instagram-follower-counter": "Leggi il conteggio follower pubblicato su una pagina di profilo pubblico.",
+      "instagram-video-downloader": "Controlla un Reel o un video pubblico. Un file compare solo se Instagram ne espone uno.",
+      "tiktok-video-downloader": "Scarica un video TikTok pubblico quando il file è sulla pagina pubblica.",
+      "tiktok-profile-picture-downloader": "Vedi e scarica la foto pubblica che TikTok pubblica per un account.",
+      "facebook-video-downloader": "Scarica un video Facebook pubblico quando Facebook espone il file.",
+      "facebook-reels-downloader": "Scarica un Reel Facebook pubblico quando il file media è accessibile."
+    },
+    "serviceLabels": {
+      "buy-instagram-followers": "Follower Instagram",
+      "buy-instagram-likes": "Like Instagram",
+      "buy-instagram-views": "Views Instagram",
+      "buy-instagram-comments": "Commenti Instagram",
+      "buy-tiktok-followers": "Follower TikTok",
+      "buy-tiktok-likes": "Like TikTok",
+      "buy-tiktok-views": "Views TikTok",
+      "buy-facebook-followers": "Follower Facebook",
+      "buy-facebook-page-likes": "Mi piace Pagina Facebook",
+      "buy-facebook-post-likes": "Mi piace post Facebook"
+    },
+    "networkErrors": {
+      "profileImage": "Non siamo riusciti a recuperare questa foto profilo pubblica in questo momento. Riprova.",
+      "profileViewer": "Non siamo riusciti a recuperare questo profilo Instagram pubblico in questo momento. Riprova.",
+      "followerCount": "Non siamo riusciti a recuperare questo conteggio follower pubblico in questo momento. Riprova.",
+      "video": "Non siamo riusciti a recuperare questo video pubblico in questo momento. Riprova."
+    },
+    "errors": {
+      "base": {
+        "invalid_url": "Inserisci un URL pubblico valido.",
+        "unsupported_url": "Questo URL non è supportato da questo strumento. Prova un altro URL pubblico.",
+        "private_or_unavailable": "Questo contenuto è privato o non disponibile.",
+        "platform_blocked": "La piattaforma ha bloccato temporaneamente questa richiesta. Prova un altro URL pubblico più tardi.",
+        "media_not_exposed": "La piattaforma non ha esposto un file media pubblico per questo link.",
+        "not_found": "Non siamo riusciti a recuperare questo video.",
+        "rate_limited": "Troppe richieste. Attendi un minuto e riprova.",
+        "too_large": "Questo file è più grande di quanto possiamo elaborare in sicurezza.",
+        "timeout": "La richiesta è scaduta. Riprova tra un momento.",
+        "download_unavailable": "Questo link di download è scaduto. Recupera di nuovo il contenuto per ottenere un nuovo file."
+      },
+      "byTool": {
+        "tiktok-video-downloader": {
+          "invalid_url": "Incolla un URL video TikTok pubblico, compresi i link di condivisione comuni.",
+          "unsupported_url": "Questo non sembra un URL video TikTok pubblico.",
+          "private_or_unavailable": "Questo video TikTok sembra privato, rimosso o non disponibile.",
+          "platform_blocked": "Non siamo riusciti a recuperare questo video TikTok pubblico in questo momento. TikTok potrebbe limitare temporaneamente le richieste. Riprova a breve.",
+          "media_not_exposed": "TikTok non ha esposto un file video pubblico per questo link.",
+          "not_found": "Non siamo riusciti a recuperare questo video TikTok pubblico. Prova un altro URL video pubblico.",
+          "timeout": "TikTok ha impiegato troppo tempo a rispondere. Riprova tra un momento."
+        },
+        "tiktok-profile-picture-downloader": {
+          "invalid_url": "Inserisci un nome utente o un URL di profilo TikTok pubblico.",
+          "unsupported_url": "Questo non è un profilo TikTok pubblico. Gli URL video appartengono al downloader video.",
+          "private_or_unavailable": "Questo profilo TikTok sembra privato o non disponibile.",
+          "platform_blocked": "TikTok non ha esposto una foto profilo pubblica per questo account. Prova un altro nome utente pubblico.",
+          "not_found": "Non siamo riusciti a recuperare questa foto profilo TikTok pubblica."
+        },
+        "facebook-video-downloader": {
+          "invalid_url": "Incolla un URL video Facebook pubblico. I link Reel appartengono al downloader Reels.",
+          "unsupported_url": "Questo sembra un URL Reel Facebook. Usa il Downloader Reels Facebook per i link Reel.",
+          "private_or_unavailable": "Questo video Facebook sembra privato, rimosso o non disponibile alle richieste pubbliche.",
+          "platform_blocked": "Facebook non ha esposto un file video pubblico per questo link. Prova un altro video pubblico, o riprova a breve.",
+          "media_not_exposed": "Facebook non ha esposto un file video pubblico per questo link. HD o SD viene restituito solo quando Facebook lo include.",
+          "not_found": "Non siamo riusciti a recuperare questo video Facebook pubblico. Potrebbe essere stato rimosso."
+        },
+        "facebook-reels-downloader": {
+          "invalid_url": "Incolla un URL Reel Facebook pubblico. I link video standard appartengono al downloader video.",
+          "unsupported_url": "Questo sembra un URL video Facebook standard. Usa il Downloader video Facebook per i link watch o /videos/.",
+          "private_or_unavailable": "Questo Reel Facebook sembra privato, rimosso o non disponibile alle richieste pubbliche.",
+          "platform_blocked": "Facebook non ha esposto un file Reel pubblico per questo link. Prova un altro Reel pubblico, o riprova a breve.",
+          "media_not_exposed": "Facebook non ha esposto un file Reel pubblico per questo link.",
+          "not_found": "Non siamo riusciti a recuperare questo Reel Facebook pubblico. Potrebbe essere stato rimosso."
+        },
+        "instagram-profile-picture-viewer": {
+          "invalid_url": "Inserisci un nome utente o un URL di profilo Instagram pubblico.",
+          "unsupported_url": "Questo non è un profilo Instagram pubblico. Gli URL di Story e di post non sono ricerche di profilo.",
+          "private_or_unavailable": "Questo profilo Instagram sembra privato o non disponibile.",
+          "platform_blocked": "Instagram non ha esposto una foto profilo pubblica per questo account. Prova un altro nome utente pubblico.",
+          "not_found": "Non siamo riusciti a recuperare questa foto profilo Instagram pubblica."
+        },
+        "instagram-profile-viewer": {
+          "invalid_url": "Inserisci un nome utente o un URL di profilo Instagram pubblico.",
+          "unsupported_url": "Questo non è un profilo Instagram pubblico. Gli URL di post, Reel e Story non sono ricerche di profilo.",
+          "private_or_unavailable": "Questo profilo Instagram sembra privato o non disponibile.",
+          "platform_blocked": "Instagram non ha esposto informazioni di profilo pubbliche per questo account. Prova un altro nome utente pubblico.",
+          "not_found": "Non siamo riusciti a recuperare questo profilo Instagram pubblico."
+        },
+        "instagram-follower-counter": {
+          "invalid_url": "Inserisci un nome utente o un URL di profilo Instagram pubblico.",
+          "unsupported_url": "Questo non è un profilo Instagram pubblico. Gli URL di post e Reel non sono ricerche follower.",
+          "private_or_unavailable": "Questo profilo Instagram sembra privato o non disponibile.",
+          "platform_blocked": "Instagram non ha esposto un conteggio follower pubblico per questo account. Prova un altro nome utente pubblico.",
+          "not_found": "Non siamo riusciti a recuperare un conteggio follower pubblico per questo nome utente."
+        },
+        "instagram-video-downloader": {
+          "invalid_url": "Incolla un URL pubblico di Reel o di post video Instagram.",
+          "unsupported_url": "Questo URL non è un Reel né un post video Instagram pubblico.",
+          "private_or_unavailable": "Questo post Instagram sembra privato, rimosso o non disponibile.",
+          "platform_blocked": "Instagram non ha esposto un file video pubblico per questo link. Si possono recuperare solo i post in cui Instagram rende disponibile il file.",
+          "media_not_exposed": "Questo sembra una pagina Instagram pubblica, ma Instagram non ha esposto un file video. La disponibilità dipende dai media esposti pubblicamente.",
+          "not_found": "Non siamo riusciti a recuperare un video Instagram pubblico da questo link."
+        }
+      }
+    }
+  }
+}

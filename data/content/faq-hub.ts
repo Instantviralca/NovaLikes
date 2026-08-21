@@ -1,399 +1,616 @@
 ﻿import type { FAQItem } from '@/types/content';
 
 /**
- * FAQ hub production entries — Document 13.03.
- * Shared pool entries used by /faq. Service pages keep their own FAQ ids.
+ * Main /faq hub entries — search-focused FAQ resource.
+ * Answers stay concise, indexable, and free of unsupported growth claims.
  */
 export const faqHubItems: FAQItem[] = [
-  // General
+  // ── Getting Started ──────────────────────────────────────────────
   {
-    id: 'faq-hub-what-is-novalikes',
-    category: 'general',
+    id: 'faq-gs-what-is-novalikes',
+    category: 'getting_started',
     order: 1,
     active: true,
-    keywords: ['novalikes', 'about', 'platform', 'services'],
+    keywords: ['novalikes', 'what is', 'about', 'services'],
     question: 'What is NovaLikes?',
     answer:
-      'NovaLikes is a social media growth service platform offering package-based services for selected Instagram, TikTok, Facebook, and YouTube metrics. Customers choose a service, select one of the real packages available through NovaLikes.com, provide the required public username or URL, complete checkout, and track the order using their order ID and email address.',
+      'NovaLikes is a social media services website for Instagram, TikTok and Facebook. Available services include selected follower, like, view, comment and Facebook Page services, depending on the platform.',
   },
   {
-    id: 'faq-hub-platforms',
-    category: 'general',
+    id: 'faq-gs-how-works',
+    category: 'getting_started',
     order: 2,
     active: true,
-    keywords: ['platforms', 'instagram', 'tiktok', 'facebook', 'youtube'],
-    question: 'Which platforms do you support?',
+    keywords: ['how it works', 'order', 'process', 'checkout'],
+    question: 'How does NovaLikes work?',
     answer:
-      'NovaLikes currently supports selected services for Instagram, TikTok, Facebook, and YouTube. The available production pages include Instagram Followers, Likes, Views, and Comments; TikTok Followers, Likes, and Views; Facebook Followers, Page Likes, and Post Likes; and YouTube Subscribers and Views.',
+      'Choose a service, select one of the available packages and provide the public profile, Page, post or video information requested for that service. Complete checkout and follow the available order-status options after your order has been placed.',
   },
   {
-    id: 'faq-hub-account-required',
-    category: 'general',
+    id: 'faq-gs-platforms',
+    category: 'getting_started',
     order: 3,
     active: true,
-    keywords: ['account', 'login', 'register', 'signup'],
-    question: 'Do I need to create an account?',
+    keywords: ['platforms', 'instagram', 'tiktok', 'facebook', 'supported'],
+    question: 'Which social media platforms does NovaLikes support?',
     answer:
-      'A customer account is not required for Version 1. Customers can place an order using their email address and track it using the order ID and the same email address.',
+      'NovaLikes currently supports Instagram, TikTok and Facebook. YouTube and X/Twitter services are not currently offered.',
   },
   {
-    id: 'faq-hub-password',
-    category: 'general',
+    id: 'faq-gs-what-info',
+    category: 'getting_started',
     order: 4,
     active: true,
-    keywords: ['password', 'login', 'security', 'credentials'],
-    question: 'Do you need my social media password?',
+    keywords: ['information', 'required', 'username', 'url', 'checkout'],
+    question: 'What information do I need to place an order?',
     answer:
-      'No. NovaLikes does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords. Orders use public information such as a username, page URL, post link, channel URL, or video URL.',
-  },
-
-  // Ordering & Packages
-  {
-    id: 'faq-hub-real-packages',
-    category: 'ordering',
-    order: 1,
-    active: true,
-    keywords: ['prices', 'packages', 'real', 'novalikes.com'],
-    question: 'Are the prices and packages real?',
-    answer:
-      'Yes. The website should display only the real package data already maintained or imported from NovaLikes.com. The frontend must not create dummy prices, quantities, delivery times, badges, discounts, or package features.',
+      'The required information depends on the service you choose. Profile-level services may require a username or public profile/Page URL, while services for individual content may require the public post, Reel or video URL.',
   },
   {
-    id: 'faq-hub-choose-package',
-    category: 'ordering',
-    order: 2,
-    active: true,
-    keywords: ['choose', 'package', 'quantity', 'budget'],
-    question: 'How do I choose the right package?',
-    answer:
-      'Review the package quantity, price, delivery estimate, included features, refill eligibility, and service requirements shown on the relevant service page. Choose the package that best fits your current goal and budget.',
-  },
-  {
-    id: 'faq-hub-change-order',
-    category: 'ordering',
-    order: 3,
-    active: true,
-    keywords: ['change', 'edit', 'modify', 'after payment'],
-    question: 'Can I change my order after payment?',
-    answer:
-      'Customers cannot directly edit an order after payment. Contact support as soon as possible with the order ID. Changes may not be possible once processing has started.',
-  },
-  {
-    id: 'faq-hub-multiple-orders',
-    category: 'ordering',
-    order: 4,
-    active: true,
-    keywords: ['multiple', 'repeat', 'overlapping'],
-    question: 'Can I place more than one order?',
-    answer:
-      'Yes, but review the progress of any existing order for the same username, page, post, channel, or video before placing another order. Overlapping orders may affect processing.',
-  },
-
-  // Delivery & Processing
-  {
-    id: 'faq-hub-order-begin',
-    category: 'delivery',
-    order: 1,
-    active: true,
-    keywords: ['start', 'begin', 'processing', 'estimate'],
-    question: 'When will my order begin?',
-    answer:
-      'Start times depend on the selected service and package. The current estimate should be displayed with the real package data before checkout.',
-  },
-  {
-    id: 'faq-hub-delivery-time',
-    category: 'delivery',
-    order: 2,
-    active: true,
-    keywords: ['delivery', 'how long', 'timeframe'],
-    question: 'How long will delivery take?',
-    answer:
-      'Delivery times vary by platform, service, package size, and current processing conditions. Use the package-specific estimate shown before checkout rather than a universal delivery promise.',
-  },
-  {
-    id: 'faq-hub-gradual-delivery',
-    category: 'delivery',
-    order: 3,
-    active: true,
-    keywords: ['gradual', 'drip', 'delivery method'],
-    question: 'Is gradual delivery available?',
-    answer:
-      'Gradual delivery may be available on eligible packages. The relevant package should state whether gradual processing applies.',
-  },
-  {
-    id: 'faq-hub-public-destination',
-    category: 'delivery',
-    order: 4,
-    active: true,
-    keywords: ['public', 'private', 'privacy', 'url'],
-    question: 'Why must my profile, page, post, or video remain public?',
-    answer:
-      'The public destination may need to remain accessible so the order can be processed correctly. Changing privacy settings, deleting content, or changing the username or URL may delay or prevent completion.',
-  },
-  {
-    id: 'faq-hub-order-statuses',
-    category: 'delivery',
+    id: 'faq-gs-account-required',
+    category: 'getting_started',
     order: 5,
     active: true,
-    keywords: ['status', 'pending', 'processing', 'completed', 'partial', 'cancelled', 'refunded'],
-    question: 'What do the order statuses mean?',
+    keywords: ['account', 'login', 'register', 'signup'],
+    question: 'Do I need to create an account before ordering?',
     answer:
-      'Pending: the order has been received and is waiting for review. Processing: manual fulfilment has started. Completed: the order has been fully completed. Partial: part of the order was completed. Cancelled: the order will not be fulfilled. Refunded: the applicable payment has been refunded.',
+      'No. You can place an order using the information requested during checkout without creating a separate NovaLikes account.',
   },
 
-  // Payments & Checkout
+  // ── Account & Safety ─────────────────────────────────────────────
   {
-    id: 'faq-hub-payment-methods',
-    category: 'payments',
+    id: 'faq-as-password',
+    category: 'account_security',
     order: 1,
     active: true,
-    keywords: ['payment', 'pay', 'checkout', 'methods'],
-    question: 'Which payment methods do you accept?',
-    // Base answer — enabled providers are appended at runtime from config/payments.ts
+    keywords: ['password', 'login', 'credentials', 'security'],
+    question: 'Do I need to provide my social media password?',
     answer:
-      'Only payment methods currently enabled in checkout configuration are available. The list below updates automatically when providers are turned on or off.',
+      'No. You should never provide your Instagram, TikTok or Facebook password when placing an order with NovaLikes. Only provide the public profile, Page, post or video information requested for the service.',
   },
   {
-    id: 'faq-hub-checkout-secure',
-    category: 'payments',
+    id: 'faq-as-public-account',
+    category: 'account_security',
     order: 2,
     active: true,
-    keywords: ['secure', 'https', 'security', 'checkout'],
-    question: 'Is checkout secure?',
+    keywords: ['public', 'private', 'visibility', 'access'],
+    question: 'Does my social media account need to be public?',
     answer:
-      'Checkout should use HTTPS, server-side payment verification, protected credentials, and the security requirements defined by the selected payment provider. Never expose secret keys in the browser.',
+      'If the selected service requires NovaLikes to access your profile, Page, post or video publicly, that content needs to remain publicly accessible while the order is being processed. Private or unavailable content may prevent the service from being completed.',
   },
   {
-    id: 'faq-hub-coupon',
-    category: 'payments',
+    id: 'faq-as-make-private-after',
+    category: 'account_security',
     order: 3,
     active: true,
-    keywords: ['coupon', 'discount', 'promo', 'code'],
-    question: 'Can I use a coupon code?',
+    keywords: ['private after order', 'visibility', 'processing'],
+    question: 'Can I make my account private after placing an order?',
     answer:
-      'Yes, when an active coupon is available and the order meets its requirements. Coupon validity, minimum order amount, expiry, and usage limits should be checked during checkout.',
+      'If your order depends on public access to a profile or piece of content, keep it public while the order is being processed. Changing its visibility may prevent the required information from being accessed.',
   },
   {
-    id: 'faq-hub-confirmation',
-    category: 'payments',
+    id: 'faq-as-login-account',
+    category: 'account_security',
     order: 4,
     active: true,
-    keywords: ['confirmation', 'email', 'receipt'],
-    question: 'Will I receive an order confirmation?',
+    keywords: ['login', 'access account', 'credentials'],
+    question: 'Will NovaLikes log in to my social media account?',
     answer:
-      'Yes. After a successful order, the customer should receive an order confirmation containing the order ID, service summary, current status, and tracking link.',
+      'No social media password is required for the services described on NovaLikes. Never send your Instagram, TikTok or Facebook login credentials through checkout or support.',
+  },
+  {
+    id: 'faq-as-wrong-url',
+    category: 'account_security',
+    order: 5,
+    active: true,
+    keywords: ['wrong username', 'wrong url', 'mistake', 'correct'],
+    question: 'What happens if I enter the wrong username or URL?',
+    answer:
+      'Contact NovaLikes support as soon as possible if you submitted incorrect information. Whether it can be changed depends on the current status of the order, so always check the username or URL carefully before completing checkout.',
+  },
+  {
+    id: 'faq-as-platform-risk',
+    category: 'account_security',
+    order: 6,
+    active: true,
+    keywords: ['risk', 'policy', 'enforcement', 'account', 'followers', 'likes', 'views'],
+    question: 'Can buying followers, likes or views affect my social media account?',
+    answer:
+      "Third-party social media services can carry platform-policy or account-enforcement risks. NovaLikes does not require your Instagram, TikTok or Facebook password for the services described on the site, but no third-party service can guarantee that a platform will never remove activity, change how metrics are counted or take action under its current rules. Review the service requirements and the platform's current policies before ordering.",
+  },
+  {
+    id: 'faq-as-platform-control',
+    category: 'account_security',
+    order: 7,
+    active: true,
+    keywords: ['instagram', 'tiktok', 'facebook', 'policies', 'rules', 'third-party'],
+    question: 'Does NovaLikes control Instagram, TikTok or Facebook policies?',
+    answer:
+      'No. Instagram, TikTok and Facebook are third-party platforms with their own rules, systems and enforcement decisions. NovaLikes does not control platform policies or guarantee how a platform will treat third-party engagement activity. Platform rules can change, so users should review the current rules of the platform they use.',
   },
 
-  // Refunds & Refill
+  // ── Orders & Delivery ────────────────────────────────────────────
   {
-    id: 'faq-hub-refunds',
-    category: 'refunds',
+    id: 'faq-od-how-long',
+    category: 'orders_delivery',
     order: 1,
     active: true,
-    keywords: ['refund', 'money back', 'policy'],
-    relatedServiceSlugs: [],
-    question: 'Do you offer refunds?',
+    keywords: ['delivery time', 'how long', 'processing time'],
+    question: 'How long does a NovaLikes order take?',
     answer:
-      'Eligible purchases may be covered under the Refund Policy and the conditions shown for the selected service and package. Refunds are not automatic for every situation, so customers should review the policy before ordering.',
+      'Processing and delivery can vary by service and package. Use the delivery information displayed for the specific package you choose rather than assuming every NovaLikes service has the same timeframe.',
   },
   {
-    id: 'faq-hub-money-back',
-    category: 'refunds',
+    id: 'faq-od-start-immediately',
+    category: 'orders_delivery',
     order: 2,
     active: true,
-    keywords: ['30-day', 'money-back', 'guarantee', 'eligible'],
-    question: 'What does the 30-day money-back guarantee mean?',
+    keywords: ['start', 'immediately', 'begin', 'processing'],
+    question: 'Does my order start immediately?',
     answer:
-      'The guarantee applies only to eligible purchases and remains subject to the Refund Policy, service conditions, customer actions, and order status. The website must not present it as an unconditional promise.',
+      'Order processing can vary depending on the selected service and current processing conditions. Refer to the information provided for your selected service or package for any applicable timing details.',
   },
   {
-    id: 'faq-hub-refill',
-    category: 'refunds',
+    id: 'faq-od-track',
+    category: 'orders_delivery',
     order: 3,
     active: true,
-    keywords: ['refill', 'drop', 'protection', 'eligible'],
-    question: 'What is refill protection?',
+    keywords: ['track', 'order status', 'tracking'],
+    question: 'How can I track my NovaLikes order?',
     answer:
-      'Eligible packages may include refill coverage for qualifying decreases during the stated refill period. The exact period, limits, and conditions must come from the real package data or service terms.',
+      'Use the NovaLikes Track Order page and provide the information it requests. If you cannot locate an order, contact support with your available order details.',
   },
   {
-    id: 'faq-hub-refund-help',
-    category: 'refunds',
+    id: 'faq-od-still-processing',
+    category: 'orders_delivery',
     order: 4,
     active: true,
-    keywords: ['request', 'refill', 'refund', 'support'],
-    question: 'How do I request help with a refill or refund?',
+    keywords: ['processing', 'pending', 'waiting'],
+    question: 'Why is my order still processing?',
     answer:
-      'Contact support with the order ID, checkout email, and a clear explanation. The team will review the order against the applicable package and policy terms.',
+      'An order may remain in processing while the selected service is being completed. Keep the submitted profile, Page, post or video publicly accessible when the service requires public access, and contact support if you believe there is a problem with the order.',
+  },
+  {
+    id: 'faq-od-not-started',
+    category: 'orders_delivery',
+    order: 5,
+    active: true,
+    keywords: ['not started', 'stuck', 'delay'],
+    question: 'What should I do if my order has not started?',
+    answer:
+      'First check that the username or URL you submitted is correct and that the required profile or content is still public. If the information is correct and you still need assistance, contact NovaLikes support with your order details.',
+  },
+  {
+    id: 'faq-od-change-url',
+    category: 'orders_delivery',
+    order: 6,
+    active: true,
+    keywords: ['change', 'edit', 'modify', 'username', 'url'],
+    question: 'Can I change the username or URL after ordering?',
+    answer:
+      'Contact support as quickly as possible if you need to correct submitted information. Changes may not be possible after processing has started.',
+  },
+  {
+    id: 'faq-od-delete-content',
+    category: 'orders_delivery',
+    order: 7,
+    active: true,
+    keywords: ['delete', 'remove post', 'remove video'],
+    question: 'What happens if I delete a post or video after ordering?',
+    answer:
+      'Deleting or restricting access to content connected to an active order may prevent that order from being processed or completed. Keep the submitted content available while the service requires access to it.',
+  },
+  {
+    id: 'faq-od-cancel-change',
+    category: 'orders_delivery',
+    order: 8,
+    active: true,
+    keywords: ['cancel', 'change order', 'edit order', 'after payment'],
+    question: 'Can I cancel or change an order after payment?',
+    answer:
+      'There is no self-service cancellation or edit option after a successful payment. Contact NovaLikes support as soon as possible if you need to request a cancellation or change. Whether a request can be completed depends on the current processing status of the order.',
   },
 
-  // Order Tracking
+  // ── Instagram ────────────────────────────────────────────────────
   {
-    id: 'faq-hub-track-order',
-    category: 'tracking',
-    order: 1,
-    active: true,
-    keywords: ['track', 'tracking', 'order id', 'status'],
-    question: 'How do I track my order?',
-    answer:
-      'Visit the Track Order page and enter the order ID and email address used during checkout. Both values must match the stored order.',
-  },
-  {
-    id: 'faq-hub-tracking-info',
-    category: 'tracking',
-    order: 2,
-    active: true,
-    keywords: ['tracking page', 'timeline', 'status'],
-    question: 'What information appears on the tracking page?',
-    answer:
-      'The tracking page may show the order ID, service, package, quantity, public destination information where appropriate, current status, order date, last update, and customer-safe timeline.',
-  },
-  {
-    id: 'faq-hub-cannot-find-order',
-    category: 'tracking',
-    order: 3,
-    active: true,
-    keywords: ['missing', 'not found', 'typo'],
-    question: 'I cannot find my order. What should I do?',
-    answer:
-      'Check the order ID and email address for typing mistakes. If the problem continues, contact support without repeatedly submitting the form.',
-  },
-  {
-    id: 'faq-hub-tracking-public',
-    category: 'tracking',
-    order: 4,
-    active: true,
-    keywords: ['privacy', 'public', 'secure', 'notes'],
-    question: 'Is my tracking information public?',
-    answer:
-      'No. The system requires both the order ID and matching email address. It must not expose internal notes, payment details, admin information, or sensitive customer data.',
-  },
-
-  // Instagram
-  {
-    id: 'faq-hub-ig-services',
+    id: 'faq-ig-safe-followers',
     category: 'instagram',
     order: 1,
     active: true,
-    keywords: ['instagram', 'followers', 'likes', 'views', 'comments'],
+    keywords: ['safe', 'instagram followers', 'risk'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'Is it safe to buy Instagram followers?',
+    answer:
+      'Buying Instagram followers involves using a third-party service, so you should understand what information the service requires before ordering. NovaLikes does not require your Instagram password; use only the public profile information requested during checkout and review the service details before purchasing.',
+  },
+  {
+    id: 'faq-ig-how-followers',
+    category: 'instagram',
+    order: 2,
+    active: true,
+    keywords: ['how', 'buy instagram followers', 'profile'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'How does buying Instagram followers work?',
+    answer:
+      'Choose an Instagram Followers package and provide the public Instagram profile information requested during checkout. Instagram Followers is a profile-level service, so make sure you submit the correct profile rather than a post or Reel URL.',
+  },
+  {
+    id: 'faq-ig-password-followers',
+    category: 'instagram',
+    order: 3,
+    active: true,
+    keywords: ['password', 'instagram followers'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'Do I need my Instagram password to buy followers?',
+    answer:
+      'No. You do not need to provide your Instagram password when ordering Instagram followers from NovaLikes. Never send your Instagram login credentials during checkout or through support.',
+  },
+  {
+    id: 'faq-ig-public-followers',
+    category: 'instagram',
+    order: 4,
+    active: true,
+    keywords: ['public', 'instagram', 'followers'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'Does my Instagram account need to be public to receive followers?',
+    answer:
+      'If the Instagram Followers service requires access to your public profile, keep the profile publicly accessible while the order is being processed. A private or unavailable profile may prevent the required information from being accessed.',
+  },
+  {
+    id: 'faq-ig-private-followers',
+    category: 'instagram',
+    order: 5,
+    active: true,
+    keywords: ['private account', 'instagram followers'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'Can I buy Instagram followers for a private account?',
+    answer:
+      'A private Instagram account can prevent a service that depends on public profile access from being processed normally. Follow the visibility requirements shown for the Instagram Followers service before and during your order.',
+  },
+  {
+    id: 'faq-ig-followers-drop',
+    category: 'instagram',
+    order: 6,
+    active: true,
+    keywords: ['remove followers', 'drop', 'refill'],
+    relatedServiceSlugs: ['buy-instagram-followers'],
+    question: 'Can Instagram remove followers after delivery?',
+    answer:
+      'Follower counts on social platforms can change over time, including when accounts are removed, disabled or otherwise no longer counted by the platform. Check the terms of the specific NovaLikes service for any applicable refill conditions rather than assuming every order includes a refill.',
+  },
+  {
+    id: 'faq-ig-safe-likes',
+    category: 'instagram',
+    order: 7,
+    active: true,
+    keywords: ['safe', 'instagram likes'],
+    relatedServiceSlugs: ['buy-instagram-likes'],
+    question: 'Is it safe to buy Instagram likes?',
+    answer:
+      'Instagram Likes is a third-party service for a specific piece of public content, so review the service requirements before ordering. NovaLikes does not require your Instagram password to place an Instagram Likes order.',
+  },
+  {
+    id: 'faq-ig-likes-post',
+    category: 'instagram',
+    order: 8,
+    active: true,
+    keywords: ['instagram likes', 'specific post'],
+    relatedServiceSlugs: ['buy-instagram-likes'],
+    question: 'Can I buy Instagram likes for a specific post?',
+    answer:
+      'Yes. Instagram Likes applies to specific Instagram content, so provide the public post or Reel information requested during checkout.',
+  },
+  {
+    id: 'faq-ig-likes-reel',
+    category: 'instagram',
+    order: 9,
+    active: true,
+    keywords: ['instagram likes', 'reel'],
+    relatedServiceSlugs: ['buy-instagram-likes'],
+    question: 'Can I buy Instagram likes for a Reel?',
+    answer:
+      'Use the Instagram Likes service when the public Reel format is supported by the current order requirements. Always submit the exact public content URL requested during checkout.',
+  },
+  {
+    id: 'faq-ig-views-reels',
+    category: 'instagram',
+    order: 10,
+    active: true,
+    keywords: ['instagram views', 'reels'],
+    relatedServiceSlugs: ['buy-instagram-views'],
+    question: 'Can I buy Instagram views for Reels?',
+    answer:
+      'NovaLikes offers an Instagram Views service for supported public Instagram content. Check the service page and provide the exact public Reel or content URL requested during checkout.',
+  },
+  {
+    id: 'faq-ig-comments',
+    category: 'instagram',
+    order: 11,
+    active: true,
+    keywords: ['instagram comments', 'post', 'reel'],
+    relatedServiceSlugs: ['buy-instagram-comments'],
+    question: 'Can I buy comments for an Instagram post or Reel?',
+    answer:
+      'NovaLikes offers Instagram Comments for supported public Instagram content. Choose an available package and provide the specific public post or Reel URL requested during checkout.',
+  },
+  {
+    id: 'faq-ig-difference-metrics',
+    category: 'instagram',
+    order: 12,
+    active: true,
+    keywords: ['difference', 'followers', 'likes', 'views', 'comments'],
     relatedServiceSlugs: [
       'buy-instagram-followers',
       'buy-instagram-likes',
       'buy-instagram-views',
       'buy-instagram-comments',
     ],
-    question: 'Which Instagram services are available?',
-    answer: 'Instagram Followers, Likes, Views, and Comments.',
-  },
-  {
-    id: 'faq-hub-ig-requirements',
-    category: 'instagram',
-    order: 2,
-    active: true,
-    keywords: ['instagram', 'username', 'url', 'reel', 'post'],
-    relatedServiceSlugs: [
-      'buy-instagram-followers',
-      'buy-instagram-likes',
-      'buy-instagram-views',
-      'buy-instagram-comments',
-    ],
-    question: 'What information is required for Instagram orders?',
+    question: 'What is the difference between Instagram followers, likes, views and comments?',
     answer:
-      'Followers use a public username. Likes, Views, and Comments use the relevant public post, Reel, or video URL. Custom comment fields should appear only when supported by the selected real package.',
+      'Instagram Followers applies to the profile, while Likes, Views and Comments apply to specific Instagram content according to the selected service. Choose Followers when you want a profile-level metric and choose Likes, Views or Comments when the target is a particular post or Reel.',
   },
 
-  // TikTok
+  // ── TikTok ───────────────────────────────────────────────────────
   {
-    id: 'faq-hub-tt-services',
+    id: 'faq-tt-safe-followers',
     category: 'tiktok',
     order: 1,
     active: true,
-    keywords: ['tiktok', 'followers', 'likes', 'views'],
-    relatedServiceSlugs: ['buy-tiktok-followers', 'buy-tiktok-likes', 'buy-tiktok-views'],
-    question: 'Which TikTok services are available?',
-    answer: 'TikTok Followers, Likes, and Views.',
+    keywords: ['safe', 'tiktok followers'],
+    relatedServiceSlugs: ['buy-tiktok-followers'],
+    question: 'Is it safe to buy TikTok followers?',
+    answer:
+      'Buying TikTok followers involves using a third-party service, so review the service requirements before placing an order. NovaLikes does not require your TikTok password for a TikTok Followers order.',
   },
   {
-    id: 'faq-hub-tt-requirements',
+    id: 'faq-tt-how-followers',
     category: 'tiktok',
     order: 2,
     active: true,
-    keywords: ['tiktok', 'username', 'video url'],
-    relatedServiceSlugs: ['buy-tiktok-followers', 'buy-tiktok-likes', 'buy-tiktok-views'],
-    question: 'What information is required for TikTok orders?',
+    keywords: ['how', 'tiktok followers'],
+    relatedServiceSlugs: ['buy-tiktok-followers'],
+    question: 'How does buying TikTok followers work?',
     answer:
-      'Followers use a public username. Likes and Views use the public TikTok video URL.',
-  },
-
-  // Facebook
-  {
-    id: 'faq-hub-fb-services',
-    category: 'facebook',
-    order: 1,
-    active: true,
-    keywords: ['facebook', 'followers', 'page likes', 'post likes'],
-    relatedServiceSlugs: [
-      'buy-facebook-followers',
-      'buy-facebook-page-likes',
-      'buy-facebook-post-likes',
-    ],
-    question: 'Which Facebook services are available?',
-    answer: 'Facebook Followers, Page Likes, and Post Likes.',
+      'Choose a TikTok Followers package and provide the public TikTok profile information requested during checkout. Followers is a profile-level service, so the order should point to the intended TikTok profile.',
   },
   {
-    id: 'faq-hub-fb-requirements',
-    category: 'facebook',
-    order: 2,
-    active: true,
-    keywords: ['facebook', 'page', 'profile', 'post url'],
-    relatedServiceSlugs: [
-      'buy-facebook-followers',
-      'buy-facebook-page-likes',
-      'buy-facebook-post-likes',
-    ],
-    question: 'What information is required for Facebook orders?',
-    answer:
-      'Followers use the eligible public page or profile URL. Page Likes use the public Facebook Page URL. Post Likes use the public post URL.',
-  },
-
-  // YouTube
-  {
-    id: 'faq-hub-yt-services',
-    category: 'youtube',
-    order: 1,
-    active: true,
-    keywords: ['youtube', 'subscribers', 'views'],
-    relatedServiceSlugs: ['buy-youtube-subscribers', 'buy-youtube-views'],
-    question: 'Which YouTube services are available?',
-    answer: 'YouTube Subscribers and Views.',
-  },
-  {
-    id: 'faq-hub-yt-requirements',
-    category: 'youtube',
-    order: 2,
-    active: true,
-    keywords: ['youtube', 'channel', 'video url'],
-    relatedServiceSlugs: ['buy-youtube-subscribers', 'buy-youtube-views'],
-    question: 'What information is required for YouTube orders?',
-    answer:
-      'Subscribers use the public YouTube channel URL. Views use the public YouTube video URL.',
-  },
-  {
-    id: 'faq-hub-yt-monetization',
-    category: 'youtube',
+    id: 'faq-tt-password',
+    category: 'tiktok',
     order: 3,
     active: true,
-    keywords: [
-      'monetization',
-      'partner program',
-      'watch hours',
-      'rankings',
-      'revenue',
-      'verification',
-    ],
-    relatedServiceSlugs: ['buy-youtube-subscribers', 'buy-youtube-views'],
-    question: 'Do YouTube services guarantee monetization?',
+    keywords: ['password', 'tiktok'],
+    relatedServiceSlugs: ['buy-tiktok-followers'],
+    question: 'Do I need my TikTok password to buy followers?',
     answer:
-      'No. Purchased subscribers or views do not guarantee YouTube Partner Program approval, monetization, qualifying watch hours, rankings, organic engagement, revenue, or verification.',
+      'No. You do not need to provide your TikTok password when ordering TikTok followers from NovaLikes. Never submit login credentials during checkout or through support.',
+  },
+  {
+    id: 'faq-tt-public',
+    category: 'tiktok',
+    order: 4,
+    active: true,
+    keywords: ['public', 'tiktok account'],
+    relatedServiceSlugs: ['buy-tiktok-followers'],
+    question: 'Does my TikTok account need to be public?',
+    answer:
+      'If the selected TikTok service requires public access to your profile or video, keep the relevant content publicly accessible while the order is being processed.',
+  },
+  {
+    id: 'faq-tt-likes-video',
+    category: 'tiktok',
+    order: 5,
+    active: true,
+    keywords: ['tiktok likes', 'video'],
+    relatedServiceSlugs: ['buy-tiktok-likes'],
+    question: 'Can I buy TikTok likes for a specific video?',
+    answer:
+      'Yes. TikTok Likes is a video-level service, so provide the public TikTok video information requested during checkout rather than only a profile username.',
+  },
+  {
+    id: 'faq-tt-views-video',
+    category: 'tiktok',
+    order: 6,
+    active: true,
+    keywords: ['tiktok views', 'video'],
+    relatedServiceSlugs: ['buy-tiktok-views'],
+    question: 'Can I buy TikTok views for a specific video?',
+    answer:
+      'Yes. TikTok Views applies to a specific supported public TikTok video. Provide the exact video URL requested during checkout.',
+  },
+  {
+    id: 'faq-tt-delete-video',
+    category: 'tiktok',
+    order: 7,
+    active: true,
+    keywords: ['delete video', 'tiktok'],
+    relatedServiceSlugs: ['buy-tiktok-views', 'buy-tiktok-likes'],
+    question: 'What happens if I delete my TikTok video after ordering?',
+    answer:
+      'Deleting or restricting the TikTok video connected to an active order may prevent the service from being processed or completed. Keep the submitted video publicly accessible while the order requires access to it.',
+  },
+  {
+    id: 'faq-tt-difference',
+    category: 'tiktok',
+    order: 8,
+    active: true,
+    keywords: ['difference', 'tiktok followers likes views'],
+    relatedServiceSlugs: ['buy-tiktok-followers', 'buy-tiktok-likes', 'buy-tiktok-views'],
+    question: 'What is the difference between TikTok followers, likes and views?',
+    answer:
+      'TikTok Followers applies to the creator profile, while TikTok Likes and TikTok Views apply to specific videos. The correct service depends on whether you want to target the profile or an individual video.',
+  },
+
+  // ── Facebook ─────────────────────────────────────────────────────
+  {
+    id: 'faq-fb-buy-followers',
+    category: 'facebook',
+    order: 1,
+    active: true,
+    keywords: ['facebook followers', 'page'],
+    relatedServiceSlugs: ['buy-facebook-followers'],
+    question: 'Can you buy followers for a Facebook Page?',
+    answer:
+      'NovaLikes offers a Facebook Followers service for supported public Facebook Pages. The service applies to the Page-level follower metric and requires the public Facebook Page information requested during checkout.',
+  },
+  {
+    id: 'faq-fb-password',
+    category: 'facebook',
+    order: 2,
+    active: true,
+    keywords: ['password', 'facebook'],
+    relatedServiceSlugs: ['buy-facebook-followers'],
+    question: 'Do I need my Facebook password to buy followers?',
+    answer:
+      'No. You do not need to provide your Facebook password when ordering Facebook Followers from NovaLikes. Never submit Facebook login credentials during checkout or through support.',
+  },
+  {
+    id: 'faq-fb-public-page',
+    category: 'facebook',
+    order: 3,
+    active: true,
+    keywords: ['public', 'facebook page'],
+    relatedServiceSlugs: ['buy-facebook-followers', 'buy-facebook-page-likes'],
+    question: 'Does my Facebook Page need to be public?',
+    answer:
+      'If the selected service requires access to your Facebook Page, the Page needs to remain publicly accessible while the order is being processed.',
+  },
+  {
+    id: 'faq-fb-followers-vs-page-likes',
+    category: 'facebook',
+    order: 4,
+    active: true,
+    keywords: ['difference', 'followers', 'page likes'],
+    relatedServiceSlugs: ['buy-facebook-followers', 'buy-facebook-page-likes'],
+    question: 'What is the difference between Facebook Followers and Page Likes?',
+    answer:
+      "Facebook Followers and Facebook Page Likes are both Page-level metrics, but they are not the same metric. Followers applies to the Page's follower count, while Page Likes applies to the Page's Like count.",
+  },
+  {
+    id: 'faq-fb-page-likes-vs-post-likes',
+    category: 'facebook',
+    order: 5,
+    active: true,
+    keywords: ['difference', 'page likes', 'post likes'],
+    relatedServiceSlugs: ['buy-facebook-page-likes', 'buy-facebook-post-likes'],
+    question: 'What is the difference between Facebook Page Likes and Post Likes?',
+    answer:
+      'Facebook Page Likes applies to the Facebook Page itself, while Facebook Post Likes applies to one specific Facebook post. Page Likes therefore requires Page-level information, while Post Likes requires the public URL of the individual post.',
+  },
+  {
+    id: 'faq-fb-url-followers',
+    category: 'facebook',
+    order: 6,
+    active: true,
+    keywords: ['url', 'facebook followers'],
+    relatedServiceSlugs: ['buy-facebook-followers'],
+    question: 'What URL do I need to buy Facebook Followers?',
+    answer:
+      'Use the public Facebook Page URL requested by the Facebook Followers service. Do not submit an individual Facebook post URL when ordering Page followers.',
+  },
+  {
+    id: 'faq-fb-url-page-likes',
+    category: 'facebook',
+    order: 7,
+    active: true,
+    keywords: ['url', 'facebook page likes'],
+    relatedServiceSlugs: ['buy-facebook-page-likes'],
+    question: 'What URL do I need to buy Facebook Page Likes?',
+    answer:
+      'Use the public URL of the Facebook Page you want the Page Likes service applied to. Facebook Page Likes is a Page-level service rather than a post-level service.',
+  },
+  {
+    id: 'faq-fb-url-post-likes',
+    category: 'facebook',
+    order: 8,
+    active: true,
+    keywords: ['url', 'facebook post likes'],
+    relatedServiceSlugs: ['buy-facebook-post-likes'],
+    question: 'What URL do I need to buy Facebook Post Likes?',
+    answer:
+      'Use the public URL of the specific Facebook post you want the Post Likes service applied to. A general Facebook Page URL is not the correct target for this service.',
+  },
+  {
+    id: 'faq-fb-page-url-for-post-likes',
+    category: 'facebook',
+    order: 9,
+    active: true,
+    keywords: ['page url', 'post likes'],
+    relatedServiceSlugs: ['buy-facebook-post-likes'],
+    question: 'Can I use a Facebook Page URL when buying Post Likes?',
+    answer:
+      'No. Facebook Post Likes applies to an individual post, so you need to provide the public URL of the specific Facebook post requested during checkout.',
+  },
+  {
+    id: 'faq-fb-post-likes-specific',
+    category: 'facebook',
+    order: 10,
+    active: true,
+    keywords: ['post likes', 'specific post'],
+    relatedServiceSlugs: ['buy-facebook-post-likes'],
+    question: 'Are Facebook Post Likes applied to one specific post?',
+    answer:
+      'Yes. Facebook Post Likes is a post-level service and applies to the specific public Facebook post submitted with the order.',
+  },
+
+  // ── Payments & Refunds ───────────────────────────────────────────
+  {
+    id: 'faq-pr-payment-methods',
+    category: 'payments_refunds',
+    order: 1,
+    active: true,
+    keywords: ['payment', 'methods', 'checkout', 'pay'],
+    question: 'What payment methods does NovaLikes accept?',
+    answer:
+      'Available payment options are shown at checkout based on the methods currently enabled for NovaLikes.',
+  },
+  {
+    id: 'faq-pr-currency',
+    category: 'payments_refunds',
+    order: 2,
+    active: true,
+    keywords: ['currency', 'usd', 'prices'],
+    question: 'What currency are NovaLikes prices shown in?',
+    answer:
+      'NovaLikes package prices are shown in the default storefront currency configured for the website.',
+  },
+  {
+    id: 'faq-pr-payment-declined',
+    category: 'payments_refunds',
+    order: 3,
+    active: true,
+    keywords: ['declined', 'failed payment', 'card'],
+    question: 'Why was my payment declined?',
+    answer:
+      'A payment can be declined for several reasons, including information entered during checkout or a decision by the payment provider. Check the details you entered and contact the relevant payment provider if necessary; if payment appears successful but no order was created, contact NovaLikes support.',
+  },
+  {
+    id: 'faq-pr-refund',
+    category: 'payments_refunds',
+    order: 4,
+    active: true,
+    keywords: ['refund', 'money back'],
+    question: 'Can I get a refund?',
+    answer:
+      'NovaLikes offers a 30-Day Money-Back Guarantee on eligible orders. Refund requests must be made within 30 days of the original purchase date and are reviewed according to the Refund Policy and the circumstances of the order.',
+  },
+  {
+    id: 'faq-pr-refills',
+    category: 'payments_refunds',
+    order: 5,
+    active: true,
+    keywords: ['refill', 'drop', 'guarantee'],
+    question: 'Does NovaLikes offer refills?',
+    answer:
+      'Refill availability depends on the service and package you purchase. Check the terms shown for your selected service or package for any applicable refill conditions.',
+  },
+  {
+    id: 'faq-pr-drops',
+    category: 'payments_refunds',
+    order: 6,
+    active: true,
+    keywords: ['drop', 'followers drop', 'likes drop'],
+    question: 'What happens if followers or likes drop after delivery?',
+    answer:
+      'Follower and like counts on social platforms can change over time. If your selected package includes an applicable refill policy, follow the conditions shown for that service or contact NovaLikes support for help with the order.',
   },
 ];

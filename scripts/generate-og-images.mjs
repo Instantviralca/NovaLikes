@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Generate unique 1200×630 Open Graph WebP images for homepage + buy-* services.
  * Run: node scripts/generate-og-images.mjs
  */
@@ -31,7 +31,6 @@ const BRAND = {
 const PLATFORM = {
   instagram: { accent: '#E1306C', soft: '#FFF0F5', label: 'Instagram' },
   tiktok: { accent: '#111111', soft: '#F3FFFE', teal: '#00F2EA', label: 'TikTok' },
-  youtube: { accent: '#FF0000', soft: '#FFF5F5', label: 'YouTube' },
   facebook: { accent: '#1877F2', soft: '#F0F6FF', label: 'Facebook' },
   multi: { accent: '#E85D04', soft: '#FFF4EB', label: 'Global' },
 };
@@ -264,18 +263,6 @@ const SPECS = [
     file: 'buy-tiktok-views-global-og.webp',
     headline: 'Buy TikTok Views',
     platformKey: 'tiktok',
-    metric: 'views',
-  },
-  {
-    file: 'buy-youtube-subscribers-global-og.webp',
-    headline: 'Buy YouTube Subscribers',
-    platformKey: 'youtube',
-    metric: 'subscribers',
-  },
-  {
-    file: 'buy-youtube-views-global-og.webp',
-    headline: 'Buy YouTube Views',
-    platformKey: 'youtube',
     metric: 'views',
   },
   {

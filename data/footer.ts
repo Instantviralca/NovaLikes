@@ -1,63 +1,35 @@
-import { routes, learnCategoryPath } from '@/config/routes';
-import { getActiveLearnCategories } from '@/data/learn';
+import { routes } from '@/config/routes';
 import type { FooterColumn } from '@/types';
-
-function learnCategoryFooterLinks() {
-  const labels: Record<string, string> = {
-    instagram: 'Creator Guides',
-    facebook: 'Facebook Guide',
-    tiktok: 'TikTok Guide',
-    youtube: 'YouTube Guide',
-    'social-media-marketing': 'Social Media Marketing',
-    guides: 'Guides',
-  };
-
-  return getActiveLearnCategories()
-    .filter((category) => category.slug !== 'news')
-    .map((category) => ({
-      label: labels[category.slug] ?? category.name,
-      href: learnCategoryPath(category.slug),
-    }));
-}
 
 /**
  * Global footer columns — Explore NovaLikes structure (sitewide).
- * Resources keeps Learn category crawl paths for internal linking SEO.
+ * Learn Center article destinations are omitted while that corpus is empty.
  */
 export function getFooterColumns(): FooterColumn[] {
-  const learnLinks = learnCategoryFooterLinks();
-  const instagramGuides = learnLinks.find((link) => link.href === '/learn/instagram');
-  const otherLearnLinks = learnLinks.filter((link) => link.href !== '/learn/instagram');
-
   return [
     {
       id: 'services',
       title: 'Popular Services',
       links: [
         { label: 'Buy Instagram Followers', href: '/buy-instagram-followers' },
+        { label: 'Buy Instagram Likes', href: '/buy-instagram-likes' },
         { label: 'Buy Instagram Views', href: '/buy-instagram-views' },
+        { label: 'Buy Instagram Comments', href: '/buy-instagram-comments' },
         { label: 'Buy TikTok Followers', href: '/buy-tiktok-followers' },
         { label: 'Buy TikTok Likes', href: '/buy-tiktok-likes' },
-        { label: 'Buy YouTube Subscribers', href: '/buy-youtube-subscribers' },
-        { label: 'Buy YouTube Views', href: '/buy-youtube-views' },
+        { label: 'Buy TikTok Views', href: '/buy-tiktok-views' },
         { label: 'Buy Facebook Followers', href: '/buy-facebook-followers' },
         { label: 'Buy Facebook Page Likes', href: '/buy-facebook-page-likes' },
+        { label: 'Buy Facebook Post Likes', href: '/buy-facebook-post-likes' },
       ],
     },
     {
       id: 'resources',
       title: 'Resources',
       links: [
-        {
-          label: 'How to Place an Order',
-          href: '/#how-to-buy-instagram-followers',
-        },
-        { label: 'Learn Center', href: routes.learn },
-        ...(instagramGuides
-          ? [instagramGuides]
-          : [{ label: 'Creator Guides', href: '/learn/instagram' }]),
-        ...otherLearnLinks,
+        { label: 'Free Tools', href: routes.tools },
         { label: 'FAQ', href: routes.faq },
+        { label: 'Blog', href: routes.learn },
       ],
     },
     {
@@ -87,6 +59,7 @@ export function getFooterColumns(): FooterColumn[] {
         { label: 'Terms & Conditions', href: routes.termsAndConditions },
         { label: 'Cookie Policy', href: routes.cookiePolicy },
         { label: 'Disclaimer', href: routes.disclaimer },
+        { label: 'Sitemap', href: routes.sitemap },
       ],
     },
   ];
@@ -94,9 +67,8 @@ export function getFooterColumns(): FooterColumn[] {
 
 export const footerMeta = {
   title: 'Explore NovaLikes',
-  paymentCopy: 'Secure checkout · Common card and digital payment options at checkout',
+  paymentCopy: 'Secure card payments',
   socialLinks: [
-    { label: 'Creator Guides', href: '/learn/instagram' },
     { label: 'Reviews', href: routes.reviews },
     { label: 'Contact', href: routes.contact },
   ],

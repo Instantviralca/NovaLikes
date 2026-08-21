@@ -1,0 +1,358 @@
+{
+  "id": "terms-and-conditions",
+  "path": "/terms-and-conditions",
+  "seo": {
+    "title": "Términos y condiciones | NovaLikes",
+    "description": "Lee los términos que rigen el uso de NovaLikes, incluidos los pedidos, los pagos, los servicios de redes sociales, las herramientas gratuitas y las responsabilidades del cliente."
+  },
+  "breadcrumbLabel": "Términos y condiciones",
+  "header": {
+    "title": "Términos y condiciones",
+    "intro": "Estos Términos y condiciones rigen tu acceso a NovaLikes y su uso, incluidos los servicios de redes sociales de pago, las herramientas gratuitas, las funciones del sitio web y el soporte relacionado."
+  },
+  "tocTitle": "En esta página",
+  "sections": [
+    {
+      "id": "acceptance-of-these-terms",
+      "anchor": "acceptance-of-these-terms",
+      "title": "1. Aceptación de estos Términos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Al acceder a NovaLikes, usar las herramientas gratuitas o comprar un servicio, aceptas estos Términos y condiciones y las políticas incorporadas, incluidas la [Política de privacidad](/privacy-policy), la [Política de reembolso](/refund-policy), la [Política de cookies](/cookie-policy) y el [Aviso legal](/disclaimer)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Si no estás de acuerdo, no uses el sitio web ni realices un pedido."
+        }
+      ]
+    },
+    {
+      "id": "eligibility",
+      "anchor": "eligibility",
+      "title": "2. Elegibilidad",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Solo puedes usar NovaLikes si puedes celebrar un contrato vinculante según la legislación aplicable y tienes autoridad para enviar la información pública de perfil, Página o contenido usada para un pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "En estos Términos no se publica una edad mínima numérica concreta hasta que se confirme tras una revisión jurídica. Sigues siendo responsable de cumplir los requisitos de edad aplicables de la ley y de Instagram, TikTok, Facebook y los proveedores de pago."
+        }
+      ]
+    },
+    {
+      "id": "novalikes-services",
+      "anchor": "novalikes-services",
+      "title": "3. Servicios de NovaLikes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes es un sitio web de servicios de redes sociales. Actualmente presta determinados servicios de terceros relacionados con redes sociales para Instagram, TikTok y Facebook."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las categorías de servicios de pago actuales incluyen seguidores, likes, views y comentarios de Instagram seleccionados; seguidores, likes y views de TikTok; y seguidores de Facebook, Me gusta de Página y Me gusta de publicaciones, según se ofrezcan en el sitio web de vez en cuando."
+        },
+        {
+          "type": "paragraph",
+          "text": "La disponibilidad de los servicios puede cambiar. Comprar un servicio no promete engagement, alcance, ventas, crecimiento viral, mejora del algoritmo, monetización u otros resultados más allá de lo descrito para el paquete seleccionado."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes también puede ofrecer herramientas gratuitas de redes sociales. Las herramientas gratuitas son independientes de los servicios de pago y no crean un derecho a un servicio de pago."
+        }
+      ]
+    },
+    {
+      "id": "no-affiliation-with-social-platforms",
+      "anchor": "no-affiliation-with-social-platforms",
+      "title": "4. Sin afiliación con las plataformas sociales",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes es un servicio independiente. NovaLikes no es Instagram, TikTok ni Facebook."
+        },
+        {
+          "type": "paragraph",
+          "text": "Salvo que se indique explícitamente lo contrario, NovaLikes no está respaldado, patrocinado ni administrado por Instagram, TikTok, Facebook, Meta ni sus matrices o empresas relacionadas, ni está afiliado oficialmente a ellos. Los nombres de las plataformas se usan solo para identificar las plataformas y los servicios de terceros pertinentes."
+        }
+      ]
+    },
+    {
+      "id": "customer-responsibilities",
+      "anchor": "customer-responsibilities",
+      "title": "5. Responsabilidades del cliente",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Eres responsable de:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Facilitar información de pedido precisa",
+            "Enviar el nombre de usuario o la URL públicos correctos para el servicio seleccionado",
+            "Mantener la accesibilidad pública requerida mientras un pedido necesite acceso",
+            "Asegurar que tienes autoridad para enviar la cuenta, Página o contenido pertinente",
+            "Revisar los detalles del paquete antes de la compra",
+            "Cumplir las leyes aplicables y las normas de las plataformas de terceros"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Nunca envíes contraseñas de Instagram, TikTok o Facebook. NovaLikes no exige credenciales de inicio de sesión de redes sociales para los servicios descritos en el sitio."
+        }
+      ]
+    },
+    {
+      "id": "orders",
+      "anchor": "orders",
+      "title": "6. Pedidos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Los pedidos se realizan mediante pago como invitado usando la información solicitada para el servicio seleccionado. No se requiere una cuenta de cliente de NovaLikes independiente para realizar un pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "Después de que se inicie o confirme el pago, puedes supervisar las actualizaciones de estado disponibles mediante el seguimiento del pedido usando tu referencia de pedido y el correo electrónico del pago."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los clientes no pueden editar directamente los destinos del pedido mediante herramientas de autoservicio después de un pago correcto. Contacta con el soporte de inmediato si se necesita una corrección. Es posible que los cambios no sean posibles una vez iniciado el procesamiento."
+        }
+      ]
+    },
+    {
+      "id": "prices-and-payments",
+      "anchor": "prices-and-payments",
+      "title": "7. Precios y pagos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Los precios se muestran en USD (dólar estadounidense) salvo que se aplique otra visualización de moneda a una experiencia concreta. El importe confirmado en el proceso de pago de tu pedido rige esa compra."
+        },
+        {
+          "type": "paragraph",
+          "text": "Método(s) de pago habilitados actualmente en el proceso de pago: Pago con tarjeta. Los métodos disponibles pueden cambiar; las opciones mostradas durante el proceso de pago determinan lo que puedes usar para ese pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los pagos con tarjeta se procesan a través del colector de pagos de terceros habilitado. NovaLikes no almacena números de tarjeta completos en sus propios sistemas."
+        }
+      ]
+    },
+    {
+      "id": "delivery-and-processing",
+      "anchor": "delivery-and-processing",
+      "title": "8. Entrega y procesamiento",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Los plazos de procesamiento y entrega varían según el servicio y el paquete. Usa la información de entrega o de plazos mostrada para el paquete concreto que elijas, en lugar de asumir que todos los servicios de NovaLikes tienen el mismo plazo."
+        },
+        {
+          "type": "paragraph",
+          "text": "El procesamiento del pedido también puede variar según las condiciones operativas actuales y la accesibilidad pública del perfil o contenido enviado."
+        }
+      ]
+    },
+    {
+      "id": "social-platform-changes",
+      "anchor": "social-platform-changes",
+      "title": "9. Cambios en las plataformas sociales",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Instagram, TikTok y Facebook son plataformas de terceros. Pueden cambiar sistemas, eliminar cuentas o contenido, cambiar métricas, restringir el acceso o cambiar API, interfaces y políticas."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no controla esas plataformas y no puede garantizar que el comportamiento de la plataforma permanezca inalterado."
+        }
+      ]
+    },
+    {
+      "id": "drops-changes-and-refills",
+      "anchor": "drops-changes-and-refills",
+      "title": "10. Caídas, cambios y recargas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las métricas sociales pueden cambiar después de la entrega. Cualquier condición de recarga se rige por los términos del servicio o paquete aplicables mostrados para esa compra."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no hace una promesa universal de recarga en estos Términos. Consulta la [Política de reembolso](/refund-policy) para orientación relacionada con problemas de pedido."
+        }
+      ]
+    },
+    {
+      "id": "refunds",
+      "anchor": "refunds",
+      "title": "11. Reembolsos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes ofrece una Garantía de reembolso de 30 días en pedidos elegibles. Las solicitudes de reembolso y la elegibilidad se rigen por la [Política de reembolso](/refund-policy)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta sección no sustituye la Política de reembolso. Revisa esa política para el plazo de solicitud de 30 días, las condiciones de elegibilidad y cómo contactar con el soporte."
+        }
+      ]
+    },
+    {
+      "id": "prohibited-use",
+      "anchor": "prohibited-use",
+      "title": "12. Uso prohibido",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "No debes usar NovaLikes:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Para actividad ilícita",
+            "Para interferir con la seguridad del sitio",
+            "Para abusar de las herramientas gratuitas",
+            "Para intentar el acceso no autorizado a sistemas o datos",
+            "Para enviar entradas maliciosas",
+            "Para usar sistemas automatizados de formas que sobrecarguen o interrumpan el servicio",
+            "Para infringir derechos de terceros"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "free-tools",
+      "anchor": "free-tools",
+      "title": "13. Herramientas gratuitas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes puede proporcionar herramientas gratuitas para información o contenidos de redes sociales accesibles de forma pública. Las herramientas pueden cambiarse, limitarse, no estar disponibles o verse afectadas por restricciones de plataformas de terceros."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los resultados no están garantizados. Los usuarios son responsables de asegurarse de que tienen derecho a descargar o usar cualquier contenido obtenido a través de una herramienta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las herramientas gratuitas no pretenden eludir muros de inicio de sesión de las plataformas, restricciones de cuentas privadas ni otros controles de acceso."
+        }
+      ]
+    },
+    {
+      "id": "intellectual-property",
+      "anchor": "intellectual-property",
+      "title": "14. Propiedad intelectual",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes y su marca, el diseño del sitio, los textos originales, los gráficos, el software y otros materiales propios están protegidos por las leyes de propiedad intelectual aplicables."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las marcas comerciales de las plataformas de terceros siguen siendo propiedad de sus respectivos titulares."
+        }
+      ]
+    },
+    {
+      "id": "availability-of-the-website",
+      "anchor": "availability-of-the-website",
+      "title": "15. Disponibilidad del sitio web",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no garantiza un funcionamiento ininterrumpido. El mantenimiento, las interrupciones, los fallos de terceros y las restricciones de las plataformas pueden afectar la disponibilidad del sitio web, del proceso de pago, de las herramientas o del procesamiento de pedidos."
+        }
+      ]
+    },
+    {
+      "id": "disclaimer-of-warranties",
+      "anchor": "disclaimer-of-warranties",
+      "title": "16. Exclusión de garantías",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En la máxima medida permitida por la legislación aplicable, NovaLikes proporciona el sitio web, las herramientas gratuitas y los servicios «tal cual» y «según disponibilidad», sin garantías de disponibilidad ininterrumpida, idoneidad para un fin empresarial concreto ni resultados específicos en redes sociales más allá de la descripción del servicio adquirido."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nada de lo dispuesto en estos Términos pretende excluir garantías o derechos que no puedan excluirse en virtud de la legislación aplicable."
+        }
+      ]
+    },
+    {
+      "id": "limitation-of-liability",
+      "anchor": "limitation-of-liability",
+      "title": "17. Limitación de responsabilidad",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En la máxima medida permitida por la legislación aplicable, NovaLikes no es responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, ni de la pérdida de beneficios, ingresos, datos, fondo de comercio u oportunidades de negocio derivados del uso del sitio web, de las herramientas gratuitas o de los servicios."
+        },
+        {
+          "type": "paragraph",
+          "text": "Estas limitaciones se aplican en la mayor medida permitida por la ley y no inventan un tope monetario de responsabilidad más allá de lo que permite la legislación aplicable."
+        }
+      ]
+    },
+    {
+      "id": "indemnification",
+      "anchor": "indemnification",
+      "title": "18. Indemnización",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aceptas indemnizar y mantener indemne a NovaLikes frente a reclamaciones, pérdidas y gastos derivados de tu uso indebido de NovaLikes, de tu incumplimiento de estos Términos o de tu infracción de derechos de terceros, en la medida permitida por la legislación aplicable."
+        }
+      ]
+    },
+    {
+      "id": "governing-law",
+      "anchor": "governing-law",
+      "title": "19. Ley aplicable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La ley aplicable y el fuero para controversias no se han publicado en la configuración de NovaLikes a la espera de confirmación empresarial y jurídica. Estos Términos no inventan una jurisdicción para su exhibición pública."
+        }
+      ]
+    },
+    {
+      "id": "changes-to-these-terms",
+      "anchor": "changes-to-these-terms",
+      "title": "20. Cambios de estos Términos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes puede actualizar estos Términos de vez en cuando. La fecha de Última actualización en la parte superior de esta página reflejará las revisiones sustanciales."
+        },
+        {
+          "type": "paragraph",
+          "text": "El uso continuado del sitio web tras una actualización constituye la aceptación de los Términos revisados en la medida permitida por la legislación aplicable."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "21. Contacto",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las preguntas sobre estos Términos pueden enviarse a través de la página de [Contacto](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "También puedes enviar un correo a support@novalikes.com."
+        }
+      ]
+    }
+  ]
+}

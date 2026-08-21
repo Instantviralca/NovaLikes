@@ -1,23 +1,31 @@
 /**
  * Configuration-driven FAQ answer enrichment — Document 14.04.
- * Payment methods are listed only from enabled providers in config/payments.ts.
+ * Payment methods and currency come from production config only.
  */
 
 import { getEnabledPaymentProviders } from '@/config/payments';
+import { getDefaultCurrency } from '@/data/pricing/currencies';
 import type { FaqRecord, PublicFaq } from '@/types/faq';
 
-export const PAYMENT_METHODS_FAQ_ID = 'faq-hub-payment-methods';
+export const PAYMENT_METHODS_FAQ_ID = 'faq-pr-payment-methods';
+export const CURRENCY_FAQ_ID = 'faq-pr-currency';
 
 export function enrichFaqAnswer(answer: string, faqId: string): string {
-  if (faqId !== PAYMENT_METHODS_FAQ_ID) return answer;
+  if (faqId === PAYMENT_METHODS_FAQ_ID) {
+    const enabled = getEnabledPaymentProviders();
+    if (enabled.length === 0) {
+      return 'No payment methods are currently enabled at checkout.';
+    }
+    const methods = enabled.map((provider) => provider.displayName).join(', ');
+    return `NovaLikes currently accepts ${methods} at checkout. Available options can change, so always confirm the payment methods shown when you place an order.`;
+  }
 
-  const enabled = getEnabledPaymentProviders();
-  const methodsLine =
-    enabled.length > 0
-      ? ` Currently available: ${enabled.map((provider) => provider.displayName).join(', ')}.`
-      : ' No payment methods are currently enabled.';
+  if (faqId === CURRENCY_FAQ_ID) {
+    const currency = getDefaultCurrency();
+    return `NovaLikes package prices are shown in ${currency.code} (${currency.label}).`;
+  }
 
-  return `${answer}${methodsLine}`;
+  return answer;
 }
 
 export function enrichFaqRecord(faq: FaqRecord): FaqRecord {

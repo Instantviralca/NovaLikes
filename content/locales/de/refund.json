@@ -1,0 +1,220 @@
+{
+  "id": "refund-policy",
+  "path": "/refund-policy",
+  "seo": {
+    "title": "Rückerstattung | NovaLikes",
+    "description": "Lesen Sie die Rückerstattungsrichtlinie von NovaLikes zu 30-Tage-Geld-zurück-Garantie, Anspruchsvoraussetzungen, Bestellproblemen, Stornierungen, Nachfüllungen und Supportanfragen."
+  },
+  "breadcrumbLabel": "Rückerstattung",
+  "header": {
+    "title": "Rückerstattung",
+    "intro": "NovaLikes bietet eine 30-Tage-Geld-zurück-Garantie auf berechtigte Bestellungen. Wenn Sie ein berechtigtes Problem mit Ihrem Kauf haben, können Sie NovaLikes innerhalb von 30 Tagen ab dem Bestelldatum kontaktieren, um eine Prüfung und, sofern berechtigt, eine Rückerstattung zu beantragen."
+  },
+  "tocTitle": "Auf dieser Seite",
+  "sections": [
+    {
+      "id": "before-requesting-a-refund",
+      "anchor": "before-requesting-a-refund",
+      "title": "1. Vor einer Rückerstattungsanfrage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Bevor Sie den Support wegen einer Rückerstattung kontaktieren, beachten Sie bitte:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prüfen Sie, ob der mit der Bestellung übermittelte Benutzername oder die URL korrekt ist",
+            "Halten Sie das erforderliche Profil, die Seite, den Beitrag, das Reel oder das Video öffentlich zugänglich, solange die Bestellung darauf zugreifen muss",
+            "Löschen oder beschränken Sie die übermittelten Inhalte nicht, solange die Bestellung aktiv ist",
+            "Kontaktieren Sie den Support mit Ihren Bestelldaten, damit das Team die Bestellung finden kann"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thirty-day-money-back-guarantee",
+      "anchor": "thirty-day-money-back-guarantee",
+      "title": "2. 30-Tage-Geld-zurück-Garantie",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes bietet eine 30-Tage-Geld-zurück-Garantie auf berechtigte Bestellungen. Die 30-Tage-Frist beginnt mit dem Kaufdatum / der Bestellzahlung."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rückerstattungsanträge müssen innerhalb von 30 Tagen ab dem ursprünglichen Kaufdatum gestellt werden. Die Berechtigung hängt von den Umständen der Bestellung ab, einschließlich ihres Status, des gewählten Services, der mit der Bestellung übermittelten Angaben und davon, ob NovaLikes den gekauften Service erbringen konnte."
+        },
+        {
+          "type": "paragraph",
+          "text": "Häufige Umstände, die nach Prüfung eine Rückerstattung stützen können, sind:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "NovaLikes kann den gekauften Service nicht erbringen",
+            "Ein technischer Fehler oder Bestellfehler verhindert die Erfüllung",
+            "Ein berechtigtes Serviceproblem kann nicht gelöst werden",
+            "Eine versehentliche Doppelzahlung wird bestätigt"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Das Einreichen eines Rückerstattungsantrags bedeutet nicht, dass jeder Antrag automatisch genehmigt wird. Jeder Antrag wird anhand dieser Rückerstattungsrichtlinie und der Umstände der Bestellung geprüft."
+        }
+      ]
+    },
+    {
+      "id": "when-a-refund-may-not-be-available",
+      "anchor": "when-a-refund-may-not-be-available",
+      "title": "3. Wann eine Rückerstattung nicht gilt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Eine Rückerstattung kann in Situationen wie den folgenden nicht verfügbar sein:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ein falscher Benutzername oder eine falsche URL wurde übermittelt und die Bearbeitung hatte bereits begonnen",
+            "Das erforderliche Profil, die Seite, der Beitrag, das Reel oder das Video wurde privat oder unzugänglich gemacht, obwohl öffentlicher Zugriff erforderlich war",
+            "Die übermittelten Inhalte wurden nach dem Checkout gelöscht oder eingeschränkt",
+            "Der Kunde hat nach Beginn der Bearbeitung Angaben geändert, die zur Erfüllung der Bestellung erforderlich sind",
+            "Die Bestellung wurde wie gekauft erfolgreich abgeschlossen",
+            "Der Rückerstattungsantrag wurde nach Ablauf der 30-Tage-Garantiefrist gestellt",
+            "Missbrauch, doppelte Rückerstattungsanträge, Betrug oder Zahlungsmanipulation"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Diese Ausschlüsse sollen die Garantie fair und praktikabel halten. Sie heben die 30-Tage-Geld-zurück-Garantie für berechtigte Bestellungen, die unter Abschnitt 2 fallen, nicht auf."
+        }
+      ]
+    },
+    {
+      "id": "cancellations",
+      "anchor": "cancellations",
+      "title": "4. Stornierungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Nach erfolgreicher Zahlung gibt es keine Selbstbedienungsoption zum Stornieren oder Bearbeiten."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kunden sollten den Support so schnell wie möglich mit ihren Bestelldaten kontaktieren. Eine Änderung oder Stornierung ist möglicherweise nicht mehr möglich, sobald die Bearbeitung begonnen hat oder die Bestellung abgeschlossen wurde."
+        }
+      ]
+    },
+    {
+      "id": "drops-and-refills",
+      "anchor": "drops-and-refills",
+      "title": "5. Rückgänge und Nachfüllungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Follower-, Like-, View-, Kommentar- und ähnliche Kennzahlen von Social-Media-Plattformen können sich im Laufe der Zeit aus Gründen ändern, die außerhalb der Kontrolle von NovaLikes liegen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ob eine Nachfüllung verfügbar ist, hängt vom gekauften Service und Paket ab. Etwaige Nachfüllbedingungen sind die, die für den jeweiligen Service oder das jeweilige Paket angegeben sind."
+        },
+        {
+          "type": "paragraph",
+          "text": "Die 30-Tage-Geld-zurück-Garantie ist von etwaigen paketspezifischen Nachfüllbedingungen getrennt. Diese Seite macht aus dem Geld-zurück-Zeitraum keine allgemeine 30-Tage-Nachfüllgarantie."
+        }
+      ]
+    },
+    {
+      "id": "duplicate-orders-or-payments",
+      "anchor": "duplicate-orders-or-payments",
+      "title": "6. Doppelte Bestellungen oder Zahlungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Wenn Sie glauben, zweimal für denselben beabsichtigten Kauf belastet worden zu sein, kontaktieren Sie den Support umgehend mit beiden Zahlungsreferenzen oder Bestelldaten."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes prüft die Unterlagen und arbeitet bei einer bestätigten Doppelzahlung auf eine angemessene Lösung gemäß dieser Rückerstattungsrichtlinie und dem Verfahren des jeweiligen Zahlungsanbieters hin."
+        }
+      ]
+    },
+    {
+      "id": "payment-disputes",
+      "anchor": "payment-disputes",
+      "title": "7. Zahlungsstreitigkeiten",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Wenn Sie ein Anliegen zu einer Zahlung oder Bestellung haben, kontaktieren Sie bitte zuerst den NovaLikes-Support, damit das Team den Sachverhalt prüfen und antworten kann."
+        },
+        {
+          "type": "paragraph",
+          "text": "Diese Richtlinie schränkt unrechtmäßig keine Chargeback- oder Streitrechte ein, die Sie gegenüber Ihrem Zahlungsanbieter oder nach geltendem Recht haben können."
+        }
+      ]
+    },
+    {
+      "id": "how-to-request-a-refund",
+      "anchor": "how-to-request-a-refund",
+      "title": "8. So beantragen Sie eine Rückerstattung",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um eine Prüfung im Rahmen der 30-Tage-Geld-zurück-Garantie zu beantragen, senden Sie eine Anfrage über die Seite [Kontakt](/contact) oder per E-Mail an [support@novalikes.com](mailto:support@novalikes.com)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bitte geben Sie an:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bestellreferenz",
+            "Für die Bestellung verwendete E-Mail-Adresse",
+            "Eine kurze Erläuterung des Problems"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Senden Sie niemals Instagram-, TikTok- oder Facebook-Passwörter. NovaLikes benötigt keine Social-Media-Zugangsdaten, um eine Bestellung zu prüfen."
+        }
+      ]
+    },
+    {
+      "id": "refund-processing",
+      "anchor": "refund-processing",
+      "title": "9. Bearbeitung von Rückerstattungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes prüft Rückerstattungsanträge, nachdem die erforderlichen Bestelldaten eingegangen sind."
+        },
+        {
+          "type": "paragraph",
+          "text": "Die Bearbeitungszeit einer Rückerstattung kann vom Zahlungsanbieter und von der für die Prüfung der Bestellung benötigten Zeit abhängen. NovaLikes veröffentlicht auf dieser Seite keine feste Auszahlungsfrist für Rückerstattungen."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "10. Kontakt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um eine Prüfung einer Rückerstattung im Rahmen der 30-Tage-Geld-zurück-Garantie zu beantragen, nutzen Sie die Seite [Kontakt](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sie können auch eine E-Mail an [support@novalikes.com](mailto:support@novalikes.com) senden."
+        },
+        {
+          "type": "paragraph",
+          "text": "Verwandte Richtlinien: [AGB](/terms-and-conditions), [Datenschutz](/privacy-policy) und [FAQ](/faq)."
+        }
+      ]
+    }
+  ]
+}

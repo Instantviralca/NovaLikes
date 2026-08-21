@@ -45,6 +45,9 @@ beforeEach(() => {
   delete process.env.STRIPE_WEBHOOK_SECRET;
   delete process.env.RESEND_API_KEY;
   delete process.env.EMAIL_FROM;
+  delete process.env.SMTP_HOST;
+  delete process.env.SMTP_USER;
+  delete process.env.SMTP_PASS;
   clearPersistenceSingletonForTests();
   useMemoryPersistenceForTests();
   resetOrderStoreForTests();
@@ -634,6 +637,26 @@ describe('Env validation', () => {
     expect(isEmailConfigured()).toBe(true);
   });
 
+  it('accepts SMTP_HOST with EMAIL_FROM and does not require Resend', () => {
+    delete process.env.IV_ADMIN_PASSWORD;
+    delete process.env.IV_ADMIN_SESSION_SECRET;
+    delete process.env.EMAIL_FROM;
+    delete process.env.RESEND_API_KEY;
+    delete process.env.RESEND_FROM_EMAIL;
+    process.env.ADMIN_PASSWORD = 'alias-admin-password-strong';
+    process.env.SESSION_SECRET = 'alias-session-secret-32chars!!';
+    process.env.SMTP_HOST = '127.0.0.1';
+    process.env.SMTP_PORT = '25';
+    process.env.EMAIL_FROM = 'orders@example.com';
+    process.env.DATABASE_URL = 'postgresql://localhost/test';
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
+
+    const result = validateEnv({ forceProduction: true });
+    expect(result.ok).toBe(true);
+    expect(isEmailConfigured()).toBe(true);
+    expect(result.issues.some((i) => i.key === 'EMAIL_FROM' && i.level === 'error')).toBe(false);
+  });
+
   it('throws in production when throwOnProductionErrors is enabled', () => {
     delete process.env.DATABASE_URL;
     delete process.env.IV_ADMIN_PASSWORD;
@@ -644,6 +667,7 @@ describe('Env validation', () => {
     delete process.env.RESEND_API_KEY;
     delete process.env.EMAIL_FROM;
     delete process.env.RESEND_FROM_EMAIL;
+    delete process.env.SMTP_HOST;
     delete process.env.NEXT_PUBLIC_SITE_URL;
     delete process.env.SITE_URL;
 

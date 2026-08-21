@@ -1,76 +1,82 @@
-import {
-  CreditCard,
-  Eye,
-  Globe,
-  Headphones,
-  Lock,
-  PackageSearch,
-  type LucideIcon,
-} from 'lucide-react';
+import { Award, ShoppingCart, Star, Users } from 'lucide-react';
 
-import { FeatureCard } from '@/components/cards/feature-card';
-import { Grid } from '@/components/layout/grid';
+import { Container } from '@/components/layout/container';
+import { cn } from '@/lib/utils';
 
-const TRUST_STATS: {
-  id: string;
-  title: string;
-  description: string;
-  icon: LucideIcon;
-}[] = [
+const STATS = [
   {
-    id: 'about-trust-secure-checkout',
-    title: 'Secure Checkout',
-    description: 'Encrypted payment processing.',
-    icon: CreditCard,
+    id: 'customers',
+    value: '250K+',
+    label: 'Happy Customers',
+    icon: Users,
   },
   {
-    id: 'about-trust-order-tracking',
-    title: 'Order Tracking',
-    description: 'Track every order from confirmation to delivery.',
-    icon: PackageSearch,
+    id: 'orders',
+    value: '1M+',
+    label: 'Orders Delivered',
+    icon: ShoppingCart,
   },
   {
-    id: 'about-trust-platforms',
-    title: 'Multiple Platforms',
-    description: 'Instagram, TikTok, YouTube and Facebook.',
-    icon: Globe,
+    id: 'rating',
+    value: '4.8/5',
+    label: 'Average Rating',
+    icon: Star,
   },
   {
-    id: 'about-trust-password',
-    title: 'Password Never Required',
-    description: 'Only public URLs are requested.',
-    icon: Lock,
+    id: 'success',
+    value: '99.9%',
+    label: 'Order Success Rate',
+    icon: Award,
   },
-  {
-    id: 'about-trust-transparent',
-    title: 'Transparent Ordering',
-    description: 'Clear package information before checkout.',
-    icon: Eye,
-  },
-  {
-    id: 'about-trust-support',
-    title: 'Customer Support',
-    description: 'Helpful customer support whenever required.',
-    icon: Headphones,
-  },
-];
+] as const;
 
-/** Trusted Ordering Experience — six statistic cards below Our Story. */
-export function AboutTrustStats() {
+type AboutTrustStatsProps = {
+  className?: string;
+  ariaLabel?: string;
+  labels?: {
+    customers: string;
+    orders: string;
+    rating: string;
+    success: string;
+  };
+};
+
+/** About stats bar — four peach metric cards matching the About mockup. */
+export function AboutTrustStats({
+  className,
+  ariaLabel = 'NovaLikes highlights',
+  labels,
+}: AboutTrustStatsProps) {
   return (
-    <Grid cols={3} className="gap-4">
-      {TRUST_STATS.map((item) => {
-        const Icon = item.icon;
-        return (
-          <FeatureCard
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            icon={<Icon strokeWidth={2} />}
-            className="transition-[border-color,box-shadow] duration-200 hover:border-[color-mix(in_srgb,var(--brand-primary)_30%,var(--border-subtle))] hover:shadow-[0_14px_32px_-24px_rgba(28,25,23,0.3)]"
-          />
-        );
-      })}
-    </Grid>
+    <section
+      className={cn('w-full bg-[#FFF6EE] py-8 md:py-10', className)}
+      aria-label={ariaLabel}
+    >
+      <Container>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {STATS.map((stat) => {
+            const Icon = stat.icon;
+            return (
+              <div
+                key={stat.id}
+                className="flex items-center gap-3 rounded-2xl bg-[#FFEFE3] px-4 py-4 sm:px-5"
+              >
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white text-[var(--brand-primary)] shadow-sm">
+                  <Icon className="size-5" strokeWidth={2.25} aria-hidden />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-lg font-bold tracking-tight text-[var(--text-primary)] sm:text-xl">
+                    {stat.value}
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)]">
+                    {labels?.[stat.id] ?? stat.label}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
   );
 }

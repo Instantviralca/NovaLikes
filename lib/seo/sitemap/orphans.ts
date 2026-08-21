@@ -13,6 +13,10 @@ import { getLinkRegistry } from '@/data/linking/registry';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getMetadataByRoute } from '@/lib/seo/metadata/getters';
 import { normalizeCanonicalPath } from '@/lib/seo/metadata/canonical';
+import { LOCALIZED_LOCALES } from '@/lib/i18n/config';
+import { COMPANY_PATHS, CORE_PATHS, LEGAL_PATHS, TOOL_PATHS } from '@/lib/i18n/core-paths';
+import { localizeHref } from '@/lib/i18n/paths';
+import { decodePathname } from '@/lib/i18n/slugs';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import type { SitemapIssue } from '@/types/sitemap';
 
@@ -52,6 +56,18 @@ function collectInboundFromLinkRegistry(): Map<string, Set<string>> {
     if (route !== '/') add('/', route);
   }
 
+  // Language switcher + HTML sitemap discover localized core pages
+  add('/sitemap', '/');
+  for (const locale of LOCALIZED_LOCALES) {
+    add('/', localizeHref('/', locale));
+    add('/sitemap', localizeHref('/', locale));
+    for (const path of [...CORE_PATHS, ...TOOL_PATHS, ...COMPANY_PATHS, ...LEGAL_PATHS]) {
+      const localized = localizeHref(path, locale);
+      add(localizeHref('/', locale), localized);
+      add('/sitemap', localized);
+    }
+  }
+
   // Learn hub discovers author + tag archive hubs included in the sitemap
   add('/learn', '/authors');
   for (const author of AUTHORS.filter((item) => item.active)) {
@@ -76,7 +92,9 @@ export function findOrphanSitemapPages(
   const issues: SitemapIssue[] = [];
 
   for (const entry of entries) {
-    const path = normalizeCanonicalPath(new URL(entry.url).pathname || '/');
+    const path = normalizeCanonicalPath(
+      decodePathname(new URL(entry.url).pathname || '/'),
+    );
     if (path === '/') continue;
 
     const sources = inbound.get(path);

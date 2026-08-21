@@ -18,3 +18,8 @@ export {
   LEARN_SITEMAP_ENABLED,
   SKIPPED_SERVICE_ROUTE_EXAMPLES,
 } from '@/data/seo/sitemap-routes';
+export {
+  getPublicDirectoryHrefs,
+  getPublicDirectorySections,
+  getPublishedLearnDirectoryLinks,
+} from '@/data/seo/public-directory';

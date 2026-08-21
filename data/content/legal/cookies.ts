@@ -1,7 +1,5 @@
 ﻿/**
  * Cookie Policy production content — Document 13.07.
- * Body text lives here; React views render sections without hardcoding policy copy.
- * Provider and consent disclosures are conditional on verified configuration.
  */
 
 import {
@@ -12,275 +10,230 @@ import {
   getVerifiedCookieContactEmail,
 } from '@/config/cookies';
 import { routes } from '@/config/routes';
+import { formatLegalDisplayDate } from '@/lib/legal/format-date';
 import type {
   CookieConfig,
   CookiePolicyContent,
   LegalPolicySection,
 } from '@/types/legal';
 
-function formatDisplayDate(isoDate: string | undefined): string | undefined {
-  if (!isoDate) return undefined;
-  const parsed = new Date(`${isoDate}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(parsed);
-}
-
 function buildSections(config: CookieConfig): LegalPolicySection[] {
   const operatingName = config.operatingName;
-  const domainHost = config.websiteDomain.replace(/^https?:\/\//, '');
   const contactEmail = getVerifiedCookieContactEmail(config);
   const essential = getEnabledEssentialPurposes(config);
   const analytics = getEnabledCookieAnalyticsProviders(config);
   const marketing = getEnabledCookieMarketingTools(config);
-  const privacyPath = routes.privacyPolicy;
-  const contactPath = routes.contact;
 
   const essentialBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'Essential cookies and similar technologies are required for core NovaLikes functionality. They are not optional when you use cart, checkout, session, or security features.',
+      text: 'Strictly necessary cookies and similar technologies support core website operation.',
     },
   ];
 
   if (essential.length > 0) {
     essentialBlocks.push({
-      type: 'paragraph',
-      text: 'Currently configured essential purposes:',
-    });
-    essentialBlocks.push({
       type: 'list',
-      items: essential.map((purpose) => {
-        const tech = purpose.technologyNote ? ` ${purpose.technologyNote}` : '';
-        return `${purpose.label}: ${purpose.description}${tech}`;
-      }),
-    });
-  } else {
-    essentialBlocks.push({
-      type: 'paragraph',
-      text: 'No essential cookie purposes are currently configured.',
+      items: essential.map((purpose) =>
+        purpose.technologyNote
+          ? `${purpose.label}: ${purpose.description} ${purpose.technologyNote}`
+          : `${purpose.label}: ${purpose.description}`,
+      ),
     });
   }
 
-  essentialBlocks.push({
-    type: 'paragraph',
-    text: 'NovaLikes does not invent named third-party cookie identifiers on this page. A detailed named-cookie inventory will be published only after it is verified.',
-  });
-
-  const analyticsBlocks: LegalPolicySection['blocks'] = [
+  essentialBlocks.push(
     {
-      type: 'paragraph',
-      text: 'Analytics cookies and similar technologies are optional. They are used only when an analytics provider is actually enabled, to help NovaLikes understand page visits, navigation patterns, device categories, conversion events, and website performance.',
-    },
-  ];
-
-  if (analytics.length > 0) {
-    analyticsBlocks.push({
-      type: 'paragraph',
-      text: `Analytics providers currently enabled: ${analytics.map((provider) => provider.displayName).join(', ')}.`,
-    });
-  } else {
-    analyticsBlocks.push({
-      type: 'paragraph',
-      text: 'No analytics providers are currently enabled in NovaLikes configuration. NovaLikes does not list Google Analytics, Microsoft Clarity, or other analytics tools unless they are genuinely configured.',
-    });
-  }
-
-  const marketingBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: 'Marketing cookies and similar technologies are optional. They are used only when advertising or remarketing tools are actually enabled.',
-    },
-  ];
-
-  if (marketing.length > 0) {
-    marketingBlocks.push({
-      type: 'paragraph',
-      text: `Marketing technologies currently enabled: ${marketing.map((tool) => tool.displayName).join(', ')}.`,
-    });
-  } else {
-    marketingBlocks.push({
-      type: 'paragraph',
-      text: 'No marketing pixels or advertising technologies are currently enabled in NovaLikes configuration.',
-    });
-  }
-
-  const preferenceBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: 'You can manage cookies and similar technologies as follows:',
+      type: 'subheading',
+      id: 'named-first-party-technologies',
+      text: 'Named first-party technologies currently used',
     },
     {
       type: 'list',
       items: [
-        'Essential technologies remain required for core cart, checkout, session, and security functionality',
-        'Where a consent manager is available, you may accept cookies, reject non-essential cookies, or update preferences',
-        'You may also control cookies through your browser settings, including blocking or deleting cookies',
+        'iv_cart_v1 — first-party cart cookie used for cart handoff (up to 7 days), together with a sessionStorage cart cache',
+        'iv_admin_session — staff administrative session cookie for NovaLikes admin access (not a customer account cookie)',
+        'novalikes.analytics.consent.v1 — browser localStorage key used to store analytics consent preferences for possible future analytics scripts',
       ],
+    },
+  );
+
+  const analyticsBlocks: LegalPolicySection['blocks'] = [];
+  if (analytics.length > 0) {
+    analyticsBlocks.push({
+      type: 'paragraph',
+      text: `Analytics technologies currently enabled: ${analytics.map((item) => item.displayName).join(', ')}.`,
+    });
+  } else {
+    analyticsBlocks.push({
+      type: 'paragraph',
+      text: 'No named analytics cookies or analytics providers are currently enabled in NovaLikes configuration. Optional analytics adapters (such as environment-gated integrations) are not treated as active until they are enabled in deployment with the required identifiers.',
+    });
+  }
+
+  const marketingBlocks: LegalPolicySection['blocks'] = [];
+  if (marketing.length > 0) {
+    marketingBlocks.push({
+      type: 'paragraph',
+      text: `Advertising or marketing technologies currently enabled: ${marketing.map((item) => item.displayName).join(', ')}.`,
+    });
+  } else {
+    marketingBlocks.push({
+      type: 'paragraph',
+      text: 'No advertising, remarketing, or marketing pixels are currently enabled in NovaLikes configuration.',
+    });
+  }
+
+  const managingBlocks: LegalPolicySection['blocks'] = [
+    {
+      type: 'paragraph',
+      text: 'You can control cookies through your browser settings, including blocking or deleting cookies.',
     },
   ];
 
   if (config.consentManagerEnabled && config.consentManagerHref) {
-    preferenceBlocks.push({
+    managingBlocks.push({
       type: 'paragraph',
-      text: `NovaLikes provides cookie preference controls through ${config.consentManagerLabel ?? 'the cookie preference tool'} available on the website. Use those controls to update non-essential cookie choices.`,
+      text: `NovaLikes also provides ${config.consentManagerLabel ?? 'cookie preference controls'} at ${config.consentManagerHref}.`,
     });
   } else {
-    preferenceBlocks.push({
+    managingBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie-consent banner or preference manager is not currently configured on NovaLikes.com. Until a consent manager is enabled, NovaLikes keeps this wording generic: use your browser controls to manage optional cookies, and review this Cookie Policy and the Privacy Policy for updates when a preference tool is added.',
+      text: 'NovaLikes does not currently provide a public cookie-consent banner or preference-center interface. Browser controls remain available for managing cookies.',
     });
   }
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Questions about NovaLikes’s use of cookies or similar technologies may be submitted using the contact details below. Related privacy practices are described in the Privacy Policy at ${domainHost}${privacyPath}.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Operating name: ${config.operatingName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Legal / business name on file: ${config.legalBusinessName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Website: ${config.websiteDomain}`,
+      text: `Questions about this Cookie Policy can be sent through the [Contact](${routes.contact}) page.`,
     },
   ];
 
   if (contactEmail) {
     contactBlocks.push({
       type: 'paragraph',
-      text: `Contact email: ${contactEmail}`,
-    });
-  } else {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `A verified contact email has not been published in Cookie Policy configuration. Submit questions through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
+      text: `You may also email ${contactEmail}.`,
     });
   }
 
-  if (config.mailingAddress) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Mailing address: ${config.mailingAddress}`,
-    });
-  }
+  contactBlocks.push({
+    type: 'paragraph',
+    text: `See also the [Privacy Policy](${routes.privacyPolicy}).`,
+  });
 
   return [
     {
       id: 'what-are-cookies',
       anchor: 'what-are-cookies',
-      title: 'What Are Cookies?',
+      title: '1. What Are Cookies?',
       blocks: [
         {
           type: 'paragraph',
-          text: `Cookies are small text files stored on your device when you visit a website. NovaLikes may also use similar technologies, such as browser session storage, local storage, pixels, or scripts, where those technologies are actually enabled.`,
-        },
-        {
-          type: 'paragraph',
-          text: `${operatingName} uses these technologies to support website functionality and, only when configured, optional analytics or marketing features. This Cookie Policy explains the categories NovaLikes uses and how you can manage preferences.`,
+          text: 'Cookies are small text files stored on your device when you visit a website. Similar technologies can include local storage, session storage, and comparable browser storage used to remember information needed for the site to work.',
         },
       ],
     },
     {
-      id: 'cookie-categories',
-      anchor: 'cookie-categories',
-      title: 'Cookie Categories',
+      id: 'how-novalikes-uses-cookies',
+      anchor: 'how-novalikes-uses-cookies',
+      title: '2. How NovaLikes Uses Cookies',
       blocks: [
         {
           type: 'paragraph',
-          text: 'NovaLikes distinguishes between essential and optional technologies:',
+          text: `${operatingName} uses cookies and similar technologies only for purposes that match current website functionality.`,
         },
         {
-          type: 'list',
-          items: [
-            'Essential: required for core website and ordering functionality such as cart, checkout, session continuity, and security',
-            'Analytics: optional; used only when an analytics provider is enabled',
-            'Marketing: optional; used only when advertising or remarketing technologies are enabled',
-          ],
+          type: 'subheading',
+          id: 'strictly-necessary-cookies',
+          text: 'Strictly Necessary Cookies',
+        },
+        ...essentialBlocks,
+        {
+          type: 'subheading',
+          id: 'functional-cookies',
+          text: 'Functional Cookies',
         },
         {
           type: 'paragraph',
-          text: 'Optional categories are disclosed below only when corresponding providers are enabled in configuration.',
+          text: 'Beyond the essential cart, checkout, session, and security purposes listed above, NovaLikes does not currently maintain a separate inventory of optional functional preference cookies.',
         },
+        {
+          type: 'subheading',
+          id: 'analytics-cookies',
+          text: 'Analytics Cookies',
+        },
+        ...analyticsBlocks,
+        {
+          type: 'subheading',
+          id: 'advertising-marketing-cookies',
+          text: 'Advertising / Marketing Cookies',
+        },
+        ...marketingBlocks,
       ],
-    },
-    {
-      id: 'essential-cookies',
-      anchor: 'essential-cookies',
-      title: 'Essential Cookies',
-      blocks: essentialBlocks,
-    },
-    {
-      id: 'analytics-cookies',
-      anchor: 'analytics-cookies',
-      title: 'Analytics Cookies',
-      blocks: analyticsBlocks,
-    },
-    {
-      id: 'marketing-cookies',
-      anchor: 'marketing-cookies',
-      title: 'Marketing Cookies',
-      blocks: marketingBlocks,
-    },
-    {
-      id: 'managing-preferences',
-      anchor: 'managing-preferences',
-      title: 'Managing Cookie Preferences',
-      blocks: preferenceBlocks,
     },
     {
       id: 'third-party-cookies',
       anchor: 'third-party-cookies',
-      title: 'Third-Party Cookies',
+      title: '3. Third-Party Cookies',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Some cookies or similar technologies may be set by third parties when NovaLikes enables payment, analytics, marketing, or infrastructure providers. Those third parties control their own technologies and privacy practices.',
+          text: 'When you complete Card Payment checkout, you may be redirected to a third-party payment collector. That payment environment may set its own cookies according to the payment provider’s practices. NovaLikes does not control those third-party cookies.',
         },
         {
           type: 'paragraph',
-          text:
-            analytics.length === 0 && marketing.length === 0
-              ? 'No third-party analytics or marketing providers are currently enabled. If NovaLikes later enables such providers, this Cookie Policy will be updated to name only the providers that are actually configured.'
-              : `Third-party tools currently enabled for analytics or marketing: ${[
-                  ...analytics.map((provider) => provider.displayName),
-                  ...marketing.map((tool) => tool.displayName),
-                ].join(', ')}. Review each provider’s privacy documentation for details.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'Payment providers enabled at checkout may also use their own cookies or similar technologies on their hosted payment flows. NovaLikes does not invent payment-provider cookie inventories on this page.',
+          text: 'No third-party analytics or advertising cookies are currently enabled by NovaLikes configuration.',
         },
       ],
     },
     {
-      id: 'changes',
-      anchor: 'changes',
-      title: 'Changes to This Policy',
+      id: 'cookie-duration',
+      anchor: 'cookie-duration',
+      title: '4. Cookie Duration',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} may update this Cookie Policy when cookie practices change, new tools are enabled, legal requirements change, or website features are updated.`,
+          text: 'Session technologies generally last only for the browsing session or until the storage is cleared. Persistent cookies can remain for a defined period.',
         },
         {
           type: 'paragraph',
-          text: 'The revised policy will display a new Last Updated date when that date is configured for publication.',
+          text: 'The cart cookie iv_cart_v1 is configured with a maximum age of up to 7 days. Exact lifetimes for other technologies can vary by browser settings and operational needs. NovaLikes does not invent additional exact durations beyond what is verified in the application.',
+        },
+      ],
+    },
+    {
+      id: 'managing-cookies',
+      anchor: 'managing-cookies',
+      title: '5. Managing Cookies',
+      blocks: managingBlocks,
+    },
+    {
+      id: 'effect-of-disabling-cookies',
+      anchor: 'effect-of-disabling-cookies',
+      title: '6. Effect of Disabling Cookies',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Disabling necessary cookies or related storage may affect site functionality, including cart continuity and checkout handoff between shopping and payment flows.',
+        },
+      ],
+    },
+    {
+      id: 'updates',
+      anchor: 'updates',
+      title: '7. Updates',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `${operatingName} may update this Cookie Policy when cookie practices change. The Last Updated date at the top of this page will reflect material revisions.`,
         },
       ],
     },
     {
       id: 'contact',
       anchor: 'contact',
-      title: 'Contact',
+      title: '8. Contact',
       blocks: contactBlocks,
     },
   ];
@@ -295,13 +248,13 @@ export function getCookiePolicyContent(
     seo: {
       title: 'Cookie Policy | NovaLikes',
       description:
-        'Learn how NovaLikes uses cookies, similar technologies, and cookie preferences to support website functionality, analytics, and customer experience.',
+        'Learn how NovaLikes uses cookies and similar technologies for website functionality, security, preferences and other applicable purposes.',
     },
     breadcrumbLabel: 'Cookie Policy',
     header: {
       title: 'Cookie Policy',
       intro:
-        'This Cookie Policy explains how NovaLikes uses cookies and similar technologies on NovaLikes.com, which categories are essential or optional, and how you can manage preferences. NovaLikes discloses only technologies that are actually configured.',
+        'This Cookie Policy explains how NovaLikes uses cookies and similar technologies when you visit and use our website.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),
@@ -313,9 +266,7 @@ export function getCookiePolicyDates(config: CookieConfig = cookieConfig): {
   lastUpdatedLabel?: string;
 } {
   return {
-    effectiveDateLabel: formatDisplayDate(config.effectiveDate),
-    lastUpdatedLabel: formatDisplayDate(config.lastUpdatedDate),
+    effectiveDateLabel: formatLegalDisplayDate(config.effectiveDate),
+    lastUpdatedLabel: formatLegalDisplayDate(config.lastUpdatedDate),
   };
 }
-
-export { cookieConfig };

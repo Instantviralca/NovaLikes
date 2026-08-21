@@ -14,9 +14,27 @@ import {
   buildCanonicalUrl,
   normalizeCanonicalPath,
 } from '@/lib/seo/metadata/canonical';
+import { isCoreLocalizedPath, isLocalizedLocale } from '@/lib/i18n/config';
+import { parseLocalePath } from '@/lib/i18n/paths';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import { validateSitemapUrl } from '@/lib/seo/sitemap/validate-url';
 import type { SitemapIssue } from '@/types/sitemap';
+
+function decodeSitemapPath(url: string): string {
+  try {
+    return decodeURI(new URL(url).pathname || '/');
+  } catch {
+    return new URL(url).pathname || '/';
+  }
+}
+
+function sitemapUrlsEqual(a: string, b: string): boolean {
+  try {
+    return decodeURI(a) === decodeURI(b);
+  } catch {
+    return a === b;
+  }
+}
 
 export function validateSitemapCanonicals(
   entries: MetadataRoute.Sitemap = buildSitemapEntries(),
@@ -34,7 +52,21 @@ export function validateSitemapCanonicals(
       continue;
     }
 
-    const path = new URL(entry.url).pathname || '/';
+    const path = decodeSitemapPath(entry.url);
+    const parsed = parseLocalePath(path);
+    if (isLocalizedLocale(parsed.locale) && isCoreLocalizedPath(parsed.pathname)) {
+      const expected = buildCanonicalUrl(path);
+      if (!sitemapUrlsEqual(expected, entry.url)) {
+        issues.push({
+          kind: 'canonical_mismatch',
+          route: path,
+          url: entry.url,
+          detail: `Localized sitemap URL ${entry.url} does not match self-canonical ${expected}`,
+        });
+      }
+      continue;
+    }
+
     const meta = getMetadataByRoute(path);
     if (!meta) {
       issues.push({
@@ -116,7 +148,7 @@ export function findSkippedRoutesInSitemap(
   const issues: SitemapIssue[] = [];
 
   for (const entry of entries) {
-    const path = new URL(entry.url).pathname || '/';
+    const path = decodeSitemapPath(entry.url);
     if (!path.startsWith('/buy-')) continue;
     const slug = path.slice(1);
     if (!isApprovedServiceSlug(slug)) {
@@ -197,7 +229,13 @@ export function findDuplicateSitemapUrls(
   const issues: SitemapIssue[] = [];
 
   for (const entry of entries) {
-    seen.set(entry.url, (seen.get(entry.url) ?? 0) + 1);
+    let key = entry.url;
+    try {
+      key = decodeURI(entry.url);
+    } catch {
+      key = entry.url;
+    }
+    seen.set(key, (seen.get(key) ?? 0) + 1);
   }
 
   for (const [url, count] of seen) {

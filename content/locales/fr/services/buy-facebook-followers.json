@@ -1,0 +1,660 @@
+{
+  "content": {
+    "slug": "buy-facebook-followers",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Acheter des abonnés Facebook | Forfaits et tarifs",
+      "description": "Achetez des abonnés Facebook avec des forfaits clairs, un paiement via l’URL de Page publique, des détails de livraison progressive et un suivi de commande. Aucun mot de passe requis."
+    },
+    "hero": {
+      "eyebrow": "ACHETER DES ABONNÉS FACEBOOK",
+      "title": "Acheter des abonnés Facebook",
+      "description": "Achetez des abonnés Facebook en choisissant le forfait et la quantité adaptés à votre Page. NovaLikes vous permet de comparer les forfaits d’abonnés Facebook et les prix avant de commander. Sélectionnez le nombre d’abonnés souhaité, indiquez l’URL de Page Facebook publique exacte, puis finalisez votre commande en ligne. Votre mot de passe Facebook n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "purpose": "Convert for Facebook follower packages worldwide",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "Buy Facebook Followers",
+        "Buy Followers On Facebook",
+        "Buying Facebook Followers",
+        "Facebook Followers Buy",
+        "Buy Facebook Page Followers",
+        "Buy Facebook Business Page Followers"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choisir un forfait d’abonnés Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Comment ça marche",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-f-trust-url",
+          "label": "URL de Page Facebook publique uniquement"
+        },
+        {
+          "id": "fb-f-trust-password",
+          "label": "Aucun mot de passe requis"
+        },
+        {
+          "id": "fb-f-trust-checkout",
+          "label": "Paiement sécurisé"
+        },
+        {
+          "id": "fb-f-trust-track",
+          "label": "Suivi de commande"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp",
+        "alt": "Illustration d’abonnés d’une Page professionnelle Facebook et du tableau de bord Meta Business Suite",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Forfaits et tarifs d’abonnés Facebook",
+      "description": "Comparez les forfaits d’abonnés Facebook disponibles, les quantités et les prix avant de commander. Choisissez le nombre d’abonnés souhaité pour votre Page Facebook publique, relisez le prix actuel du forfait, puis ajoutez le forfait sélectionné au panier lorsque vous êtes prêt.",
+      "purpose": "Present real NovaLikes.com Facebook followers packages",
+      "primaryKeyword": "Facebook follower packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuer avec ce forfait",
+      "emptyMessage": "Les forfaits d’abonnés Facebook sont temporairement indisponibles."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-followers",
+      "title": "Pourquoi achète-t-on des abonnés Facebook ?",
+      "description": "On achète des abonnés Facebook pour renforcer l’audience visible d’une Page Facebook, améliorer la crédibilité auprès des nouveaux visiteurs et soutenir la construction d’une communauté sur le long terme. Un plus grand nombre d’abonnés peut donner à une Page un aspect plus établi, mais il ne garantit ni l’engagement, ni les ventes, ni une portée organique.",
+      "purpose": "Explain informed use of Facebook followers packages",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "Facebook followers buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-f-community",
+          "title": "Construire une communauté",
+          "description": "Une base d’abonnés plus large peut donner à votre Page Facebook un aspect plus établi, tout en encourageant les nouveaux visiteurs à découvrir votre contenu, vos produits ou vos services."
+        },
+        {
+          "id": "fb-f-first-impression",
+          "title": "Une première impression plus forte",
+          "description": "Lorsque des personnes découvrent une Page Facebook, l’une des premières choses qu’elles remarquent est la taille de son audience. Un nombre d’abonnés solide peut aider à inspirer confiance dans votre marque."
+        },
+        {
+          "id": "fb-f-business-pages",
+          "title": "Soutenir les Pages professionnelles",
+          "description": "Les entreprises utilisent souvent des forfaits d’abonnés en complément d’une publication régulière, de la publicité et de l’engagement client, pour renforcer leur présence en ligne."
+        },
+        {
+          "id": "fb-f-flexible",
+          "title": "Volumes de forfaits flexibles",
+          "description": "Choisissez un forfait qui correspond à la taille actuelle de votre Page et à vos objectifs marketing, plutôt que de sélectionner plus d’abonnés que votre Page ne peut naturellement soutenir."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-followers",
+      "title": "Pourquoi choisir des abonnés Facebook chez NovaLikes ?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero and Can You Buy",
+      "primaryKeyword": "buy Facebook followers",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-followers-delivery",
+      "title": "Livraison des abonnés Facebook",
+      "description": "La livraison commence après l’examen et la confirmation de votre commande. Le délai de traitement dépend du forfait sélectionné et de la demande en cours. Vous pouvez consulter les mises à jour d’avancement disponibles via la page de suivi de commande jusqu’à la fin de la livraison.",
+      "purpose": "Explain Facebook followers delivery stages",
+      "primaryKeyword": "Facebook followers delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-del-review",
+          "title": "Examen de la commande",
+          "description": "L’URL de votre Page et le forfait sélectionné sont vérifiés."
+        },
+        {
+          "id": "fb-f-del-begins",
+          "title": "La livraison commence",
+          "description": "Les abonnés commencent selon l’estimation de livraison."
+        },
+        {
+          "id": "fb-f-del-progress",
+          "title": "Augmentation des abonnés",
+          "description": "Consultez le statut de votre commande via la page de suivi."
+        },
+        {
+          "id": "fb-f-del-complete",
+          "title": "Commande terminée",
+          "description": "Le forfait d’abonnés sélectionné a été livré."
+        }
+      ]
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Comment acheter des abonnés Facebook",
+      "description": "Acheter des abonnés Facebook est un processus simple. Choisissez un forfait d’abonnés, indiquez l’URL de votre Page Facebook publique, vérifiez les détails de la commande et finalisez un paiement sécurisé. Vous n’avez pas besoin d’indiquer votre mot de passe Facebook, et vous pouvez suivre le statut de votre commande après l’achat.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "can you buy followers on Facebook"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-f-step-1",
+          "title": "Choisissez un forfait d’abonnés",
+          "description": "Comparez les volumes de forfaits disponibles et sélectionnez la quantité qui correspond le mieux à votre Page Facebook, à la taille de votre audience et à vos objectifs de croissance."
+        },
+        {
+          "id": "fb-f-step-2",
+          "title": "Indiquez l’URL de votre Page Facebook publique",
+          "description": "Copiez le lien public de votre Page Facebook et collez-le dans le formulaire de commande, pour que les abonnés soient attribués à la bonne Page."
+        },
+        {
+          "id": "fb-f-step-3",
+          "title": "Vérifiez votre commande",
+          "description": "Confirmez le forfait sélectionné, l’URL de la Page, le tarif et les informations de livraison avant de finaliser le paiement."
+        },
+        {
+          "id": "fb-f-step-4",
+          "title": "Finalisez un paiement sécurisé",
+          "description": "Terminez votre achat via un paiement sécurisé, sans partager vos identifiants Facebook."
+        },
+        {
+          "id": "fb-f-step-5",
+          "title": "Suivez votre commande",
+          "description": "Après le paiement, suivez les mises à jour de commande disponibles pour surveiller l’avancement de votre achat."
+        }
+      ],
+      "cta": {
+        "label": "Sélectionner votre forfait d’abonnés",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "Que faut-il pour passer commande ?",
+      "description": "Commander des abonnés Facebook ne demande que quelques informations publiques. Vous n’avez pas besoin d’indiquer votre mot de passe Facebook, un accès privé au compte ni des codes de vérification.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook followers packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-req-url",
+          "title": "URL de Page Facebook publique",
+          "description": "Indiquez l’URL publique de la Page Facebook qui doit recevoir le forfait d’abonnés sélectionné."
+        },
+        {
+          "id": "fb-f-req-package",
+          "title": "Forfait sélectionné",
+          "description": "Choisissez la quantité d’abonnés qui correspond le mieux à votre Page et à vos objectifs marketing actuels."
+        },
+        {
+          "id": "fb-f-req-public",
+          "title": "Accès à la Page publique",
+          "description": "La Page Facebook sélectionnée doit rester accessible publiquement pendant le traitement de votre commande."
+        },
+        {
+          "id": "fb-f-req-email",
+          "title": "Adresse e-mail",
+          "description": "Utilisez une adresse e-mail valide pour recevoir les confirmations, les mises à jour et l’assistance client si besoin."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-followers-reviews",
+      "title": "Ce que disent les clients de NovaLikes",
+      "description": "Avis clients pour ce service NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-followers-faq",
+      "title": "Questions fréquentes sur l’achat d’abonnés Facebook",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook followers",
+      "faqIds": [
+        "faq-fb-followers-need",
+        "faq-fb-followers-package",
+        "faq-fb-followers-password",
+        "faq-fb-followers-how-long",
+        "faq-fb-followers-track",
+        "faq-fb-followers-wrong-url",
+        "faq-fb-followers-other-metrics",
+        "faq-fb-followers-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-followers",
+      "title": "Découvrir d’autres services de croissance Facebook",
+      "description": "Développer une présence Facebook implique souvent plus d’un service. Découvrez nos solutions Facebook conçues pour différents objectifs marketing.",
+      "purpose": "Internal links to sibling Facebook offers (no skipped services)",
+      "serviceSlugs": [
+        "buy-facebook-page-likes",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-followers-final-cta",
+      "title": "Choisissez votre forfait d’abonnés Facebook",
+      "description": "Comparez les volumes et les prix d’abonnés disponibles, choisissez le forfait adapté à la Page Facebook que vous voulez utiliser, puis passez commande avec l’URL de Page Facebook publique exacte.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Voir les forfaits d’abonnés Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Suivre une commande",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-followers-why-choose",
+        "title": "Pourquoi choisir NovaLikes pour des abonnés Facebook ?",
+        "description": "NovaLikes facilite la comparaison des forfaits d’abonnés Facebook avant de commander. Choisissez le nombre d’abonnés souhaité pour votre Page Facebook publique, relisez le prix actuel du forfait, indiquez l’URL de Page exacte, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-0",
+            "title": "Plusieurs quantités d’abonnés",
+            "description": "Comparez les quantités d’abonnés Facebook disponibles et choisissez le forfait qui correspond au nombre d’abonnés que vous voulez commander.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-1",
+            "title": "URL de Page Facebook publique uniquement",
+            "description": "Indiquez l’URL de Page Facebook publique exacte de la Page à laquelle vous voulez ajouter les abonnés. Votre mot de passe Facebook n’est pas requis.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-2",
+            "title": "Vérifiez avant le paiement",
+            "description": "Vérifiez la quantité d’abonnés sélectionnée et le prix actuel du forfait avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-3",
+            "title": "Suivi de commande",
+            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande d’abonnés Facebook.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-followers-can-you-buy",
+        "title": "Peut-on acheter des abonnés Facebook ?",
+        "description": "Oui. Des forfaits d’abonnés Facebook peuvent être achetés via des services d’abonnés en ligne. Chez NovaLikes, vous choisissez un forfait d’abonnés disponible, indiquez l’URL de Page Facebook publique de la Page que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-4",
+            "title": "Ce qu’une commande d’abonnés Facebook modifie",
+            "description": "Une commande d’abonnés Facebook s’applique au nombre d’abonnés de la Page Facebook publique fournie avec la commande. Elle n’ajoute pas automatiquement des J’aime de Page ni des likes aux publications individuelles.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-5",
+            "title": "Ce qu’il faut pour passer commande",
+            "description": "Vous avez besoin de l’URL de Page Facebook publique exacte et du forfait d’abonnés que vous souhaitez acheter. Votre mot de passe Facebook n’est pas requis.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-6",
+            "title": "Ce que les abonnés Facebook n’incluent pas",
+            "description": "Les abonnés sont distincts des J’aime de Page Facebook et des J’aime de publication. Commander des abonnés n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni un engagement, une portée, des ventes ou une croissance organique supplémentaires.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les abonnés Facebook, choisi la bonne quantité d’abonnés et indiqué l’URL de la Page Facebook publique exacte à laquelle vous voulez ajouter les abonnés."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-followers-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-followers-what-happens",
+        "title": "Que se passe-t-il après l’achat d’abonnés Facebook ?",
+        "description": "Une fois votre commande d’abonnés Facebook passée, le forfait d’abonnés et l’URL de Page Facebook publique que vous avez fournis servent à traiter la commande pour la Page sélectionnée. Gardez la Page accessible publiquement lorsque c’est requis pendant le traitement.",
+        "steps": [
+          {
+            "id": "buy-facebook-followers-th-1",
+            "title": "Les détails de votre commande sont vérifiés",
+            "description": "Le forfait d’abonnés, la quantité et l’URL de Page Facebook fournie sont associés à votre commande, afin que la demande soit traitée pour la Page visée."
+          },
+          {
+            "id": "buy-facebook-followers-th-2",
+            "title": "Les abonnés vont à la Page indiquée",
+            "description": "La commande s’applique à la Page Facebook liée à l’URL que vous avez fournie. Vérifiez soigneusement l’URL de la Page avant de finaliser le paiement."
+          },
+          {
+            "id": "buy-facebook-followers-th-3",
+            "title": "Le délai de traitement peut varier",
+            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité d’abonnés et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+          },
+          {
+            "id": "buy-facebook-followers-th-4",
+            "title": "Consultez le statut de votre commande",
+            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+          }
+        ],
+        "closingNote": "Évitez de supprimer la Page fournie, de la rendre indisponible, ou de modifier quoi que ce soit qui empêche l’accès pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-followers-service-compare",
+        "title": "Abonnés vs J’aime de Page vs J’aime de publication Facebook",
+        "description": "Les abonnés Facebook, les J’aime de Page et les J’aime de publication représentent des indicateurs différents. Choisissez le service selon que vous voulez modifier le nombre d’abonnés d’une Page Facebook, le nombre de J’aime de Page, ou le nombre de likes d’une publication Facebook précise.",
+        "current": {
+          "title": "Abonnés Facebook",
+          "description": "Les abonnés sont un indicateur au niveau de la Page. Choisissez les abonnés Facebook lorsque vous voulez augmenter le nombre d’abonnés affiché sur une Page Facebook publique.",
+          "bestFor": "Pages Facebook où le nombre d’abonnés est l’indicateur que vous voulez modifier.",
+          "ctaLabel": "Abonnés Facebook"
+        },
+        "likes": {
+          "title": "J’aime de Page Facebook",
+          "description": "Les J’aime de Page sont un indicateur au niveau de la Page, distinct des abonnés. Choisissez les J’aime de Page Facebook lorsque le nombre de J’aime de Page est l’indicateur que vous voulez modifier.",
+          "bestFor": "Pages Facebook où le nombre de J’aime de Page est l’indicateur que vous voulez modifier.",
+          "href": "/buy-facebook-page-likes",
+          "ctaLabel": "Voir les J’aime de Page Facebook"
+        },
+        "views": {
+          "title": "J’aime de publication Facebook",
+          "description": "Les J’aime de publication sont un indicateur au niveau de la publication. Choisissez les J’aime de publication Facebook lorsque vous voulez augmenter le nombre de likes d’une publication Facebook publique éligible précise.",
+          "bestFor": "Publications Facebook individuelles où le nombre de likes visible est l’indicateur que vous voulez modifier.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "Voir les J’aime de publication Facebook"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-facebook-page-likes"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-followers-before-buying",
+        "title": "Que vérifier avant d’acheter des abonnés Facebook",
+        "description": "Avant d’acheter des abonnés Facebook, relisez le forfait et les détails de la Page avant de finaliser votre commande. Assurez-vous que la quantité d’abonnés, le prix, l’URL de Page Facebook et le service correspondent à ce que vous voulez pour la Page sélectionnée.",
+        "framingNote": "Vérifiez une dernière fois l’URL de Page Facebook fournie, la quantité d’abonnés et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des abonnés garantirait davantage de J’aime de Page, de J’aime de publication, d’engagement, de portée, de ventes ou de croissance organique.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-7",
+            "title": "Vérifiez la quantité d’abonnés",
+            "description": "Relisez le nombre d’abonnés Facebook inclus dans le forfait, pour savoir combien vous commandez pour la Page indiquée.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-8",
+            "title": "Confirmez le prix du forfait",
+            "description": "Vérifiez le prix actuel affiché pour le forfait d’abonnés sélectionné avant de l’ajouter au panier. Si vous changez la quantité, relisez le prix mis à jour avant le paiement.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-9",
+            "title": "Utilisez la bonne URL de Page Facebook",
+            "description": "Vérifiez soigneusement l’URL de Page Facebook publique, pour que la commande soit associée à la Page exacte à laquelle vous voulez ajouter les abonnés.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-10",
+            "title": "Choisissez le bon service Facebook",
+            "description": "Abonnés, J’aime de Page et J’aime de publication sont des indicateurs distincts. Vérifiez que les abonnés Facebook sont bien le service dont vous avez besoin avant de passer commande.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-followers-11",
+            "title": "Consultez l’assistance et les politiques",
+            "description": "Vérifiez les politiques d’achat concernées et les options d’assistance disponibles, pour savoir où vous tourner si vous avez une question sur votre commande.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-followers-worldwide",
+        "title": "Préparer votre Page Facebook pour une commande d’abonnés",
+        "description": "Les abonnés Facebook sont un service au niveau de la Page. Avant de commander, confirmez la Page Facebook publique éligible et la quantité d’abonnés que vous voulez utiliser.",
+        "eyebrow": "Prêt pour des abonnés Facebook",
+        "closingNote": "Les abonnés Facebook s’appliquent à une Page Facebook publique. Indiquez la bonne Page, gardez-la accessible et relisez le forfait d’abonnés avant le paiement.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-12",
+            "title": "Utilisez la bonne Page Facebook",
+            "description": "Indiquez les informations de Page Facebook publique demandées lors du paiement. N’indiquez pas une publication Facebook individuelle lorsque vous commandez des abonnés de Page.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-13",
+            "title": "Gardez la Page accessible",
+            "description": "Gardez la Page fournie accessible publiquement lorsque c’est requis pendant le traitement de la commande d’abonnés.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-14",
+            "title": "Abonnés et J’aime de Page sont différents",
+            "description": "Les abonnés Facebook s’appliquent au nombre d’abonnés de la Page. Les J’aime de Page Facebook sont un service distinct pour l’indicateur J’aime de Page.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-15",
+            "title": "Relisez le forfait",
+            "description": "Vérifiez la quantité d’abonnés, les informations de la Page et le prix avant de finaliser le paiement.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-followers-popular-packages",
+        "title": "Forfaits d’abonnés Facebook populaires",
+        "description": "Comparez ci-dessous quelques-unes des quantités d’abonnés Facebook disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options de forfaits.",
+        "rows": [
+          {
+            "id": "fb-f-100",
+            "quantity": "100 abonnés",
+            "recommendedFor": "Un forfait plus petit pour une Page Facebook publique où vous voulez ajouter cent abonnés."
+          },
+          {
+            "id": "fb-f-500",
+            "quantity": "500 abonnés",
+            "recommendedFor": "Une option petite à intermédiaire pour une Page Facebook où vous voulez ajouter cinq cents abonnés."
+          },
+          {
+            "id": "fb-f-1000",
+            "quantity": "1 000 abonnés",
+            "recommendedFor": "Un forfait intermédiaire pour une Page Facebook publique où vous voulez ajouter mille abonnés."
+          },
+          {
+            "id": "fb-f-5000",
+            "quantity": "5 000 abonnés",
+            "recommendedFor": "Une option plus importante pour une Page Facebook où vous voulez ajouter cinq mille abonnés."
+          },
+          {
+            "id": "fb-f-10000",
+            "quantity": "10 000 abonnés",
+            "recommendedFor": "Un forfait à plus fort volume pour une Page Facebook publique où vous voulez ajouter dix mille abonnés."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-followers-best-practices",
+        "title": "Bonnes pratiques après l’achat d’abonnés Facebook",
+        "description": "Acheter des abonnés modifie le nombre d’abonnés de la Page Facebook sélectionnée, mais le reste de votre activité Facebook dépend toujours du contenu que vous publiez et de la façon dont vous gérez votre Page. Gardez votre Page active, consultez ses performances et interagissez avec votre audience, en complément du service.",
+        "closingNote": "Le nombre d’abonnés n’est qu’un indicateur d’une Page Facebook. Votre contenu, vos J’aime de Page, les interactions sur les publications, les réactions de l’audience et les autres activités dépendent toujours de la façon dont vous gérez votre présence Facebook.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-16",
+            "title": "Gardez votre Page Facebook active",
+            "description": "Continuez à publier des contenus adaptés à votre activité, à votre marque, à votre sujet ou à l’audience que vous voulez atteindre.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-17",
+            "title": "Tenez à jour les informations de votre Page",
+            "description": "Relisez le nom de votre Page, la description, les coordonnées, le site web, les informations professionnelles et les autres détails publics lorsque c’est pertinent.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-followers-18",
+            "title": "Consultez vos statistiques Facebook",
+            "description": "Si les statistiques sont disponibles pour votre Page, consultez l’activité des abonnés, les performances des publications, l’engagement et d’autres données pour comprendre comment votre propre contenu se comporte.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-19",
+            "title": "Testez différents types de contenus",
+            "description": "Essayez différents formats de publications, sujets, images, vidéos et approches de publication pour apprendre ce qui fonctionne pour votre Page.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-20",
+            "title": "Répondez aux interactions authentiques",
+            "description": "Répondez aux commentaires et messages authentiques lorsque c’est pertinent. Un nombre d’abonnés plus élevé ne remplace pas les interactions que vous construisez par votre propre activité de Page.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-21",
+            "title": "Maintenez une présence de Page cohérente",
+            "description": "Continuez à gérer et à publier sur votre Page, plutôt que de traiter un forfait d’abonnés comme un substitut à une activité Facebook continue.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-followers-common-mistakes",
+        "title": "Erreurs fréquentes lors de l’achat d’abonnés Facebook",
+        "description": "Quelques erreurs simples peuvent poser problème à une commande d’abonnés Facebook. Vérifiez l’URL de la Page, la quantité d’abonnés, le service et vos attentes avant le paiement, pour savoir exactement ce que vous commandez.",
+        "closingNote": "Avant de passer commande, vérifiez une dernière fois l’URL de Page Facebook, la quantité d’abonnés et le prix. Si quelque chose change après le paiement, utilisez le suivi ou l’assistance disponibles pour votre commande.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-22",
+            "title": "Envoyer la mauvaise URL de Page Facebook",
+            "description": "Vérifiez soigneusement l’URL de Page Facebook publique avant de commander. L’URL doit pointer vers la Page exacte à laquelle vous voulez ajouter les abonnés.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-23",
+            "title": "Choisir le mauvais service Facebook",
+            "description": "Abonnés, J’aime de Page et J’aime de publication sont des services distincts. Choisissez les abonnés Facebook uniquement lorsque le nombre d’abonnés d’une Page est l’indicateur que vous voulez modifier.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-24",
+            "title": "Sélectionner la mauvaise quantité d’abonnés",
+            "description": "Relisez le nombre d’abonnés inclus dans le forfait sélectionné avant le paiement, pour ne pas commander une quantité différente de celle prévue.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-25",
+            "title": "Rendre la Page indisponible pendant une commande",
+            "description": "Évitez de supprimer la Page fournie ou de la rendre indisponible pendant le traitement de la commande.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-26",
+            "title": "S’attendre à ce que les abonnés garantissent d’autres résultats",
+            "description": "Un nombre d’abonnés plus élevé ne signifie pas automatiquement plus de J’aime de Page, de J’aime de publication, d’engagement, de portée, de ventes ou de croissance organique.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-27",
+            "title": "Traiter les abonnés comme un substitut à l’activité de la Page",
+            "description": "Acheter des abonnés modifie un indicateur de la Page sélectionnée. Vos publications, informations de Page, décisions de publication et interactions avec l’audience dépendent toujours de la façon dont vous gérez votre Page.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-page-likes": {
+            "title": "J’aime de Page Facebook",
+            "description": "Choisissez les J’aime de Page Facebook lorsque le nombre de J’aime de Page d’une Page Facebook publique est l’indicateur que vous voulez modifier.",
+            "ctaLabel": "Voir les J’aime de Page Facebook"
+          },
+          "buy-facebook-post-likes": {
+            "title": "J’aime de publication Facebook",
+            "description": "Choisissez les J’aime de publication Facebook lorsque vous voulez augmenter le nombre de likes affiché sur une publication Facebook publique éligible.",
+            "ctaLabel": "Voir les J’aime de publication Facebook"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-followers-why-buy",
+      "title": "Pourquoi achète-t-on des abonnés Facebook ?",
+      "description": "On achète des abonnés Facebook pour des raisons variées. Certains veulent augmenter le nombre d’abonnés affiché sur une Page Facebook, d’autres choisissent un forfait d’abonnés pour une Page liée à une entreprise, une marque, une campagne ou une activité de contenu continue. Le service modifie l’indicateur d’abonnés de la Page sélectionnée, mais il ne garantit ni likes, ni engagement, ni portée, ni ventes, ni croissance organique supplémentaires.",
+      "items": [
+        {
+          "id": "buy-facebook-followers-wb-1",
+          "title": "Augmenter le nombre d’abonnés visible",
+          "description": "Un forfait d’abonnés Facebook peut être utilisé lorsque vous voulez augmenter le nombre d’abonnés affiché sur une Page Facebook publique précise."
+        },
+        {
+          "id": "buy-facebook-followers-wb-2",
+          "title": "Utiliser des abonnés autour d’un lancement ou d’une campagne",
+          "description": "Les entreprises et les propriétaires de Pages peuvent choisir un forfait d’abonnés en travaillant un lancement, une campagne, une annonce ou une autre activité Facebook."
+        },
+        {
+          "id": "buy-facebook-followers-wb-3",
+          "title": "Se concentrer sur l’indicateur abonnés",
+          "description": "Les abonnés Facebook s’appliquent au nombre d’abonnés de la Page sélectionnée. Ils n’ajoutent pas automatiquement des J’aime de Page ni des likes aux publications Facebook individuelles."
+        },
+        {
+          "id": "buy-facebook-followers-wb-4",
+          "title": "Choisissez la quantité souhaitée",
+          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre d’abonnés Facebook que vous voulez commander pour la Page indiquée."
+        },
+        {
+          "id": "buy-facebook-followers-wb-5",
+          "title": "Utilisez les abonnés en complément de votre contenu",
+          "description": "Acheter des abonnés ne remplace pas la publication et la gestion de votre propre contenu Facebook. Publications, réponses, informations de Page et autres activités dépendent toujours de la façon dont vous gérez votre Page."
+        }
+      ],
+      "bottomNote": "Si les J’aime de Page ou les J’aime de publication sont l’indicateur que vous voulez modifier, choisissez plutôt le service Facebook correspondant, et non un forfait d’abonnés."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Comment acheter des abonnés Facebook",
+      "description": "Acheter des abonnés Facebook via NovaLikes se fait en quatre étapes. Choisissez le forfait d’abonnés souhaité, indiquez l’URL de Page Facebook publique, finalisez le paiement, puis utilisez les détails de votre commande pour en consulter le statut.",
+      "steps": [
+        {
+          "id": "buy-facebook-followers-step-1",
+          "title": "Choisissez votre forfait d’abonnés",
+          "description": "Comparez les volumes et les prix d’abonnés Facebook disponibles, puis sélectionnez le forfait souhaité pour votre Page."
+        },
+        {
+          "id": "buy-facebook-followers-step-2",
+          "title": "Indiquez l’URL de la Page Facebook",
+          "description": "Fournissez l’URL de Page Facebook publique exacte de la Page à laquelle vous voulez ajouter les abonnés. Votre mot de passe Facebook n’est pas requis."
+        },
+        {
+          "id": "buy-facebook-followers-step-3",
+          "title": "Finalisez votre commande",
+          "description": "Vérifiez la quantité d’abonnés et le prix sélectionnés, puis passez au paiement pour valider votre commande."
+        },
+        {
+          "id": "buy-facebook-followers-step-4",
+          "title": "Suivez votre commande",
+          "description": "Après le paiement, utilisez l’option de suivi de commande disponible pour consulter les informations de statut de votre commande d’abonnés Facebook."
+        }
+      ]
+    },
+    "relatedHeading": "Découvrir d’autres services Facebook",
+    "relatedIntro": "Les abonnés ne sont qu’un indicateur Facebook. Si vous voulez plutôt augmenter le nombre de J’aime de Page ou le nombre de likes d’une publication Facebook précise, comparez les autres services Facebook ci-dessous."
+  }
+}

@@ -32,12 +32,18 @@ export {
   enrichFaqRecord,
   enrichPublicFaq,
   PAYMENT_METHODS_FAQ_ID,
+  CURRENCY_FAQ_ID,
 } from '@/lib/faqs/enrich';
 export {
   hasConditionalRefundOrRefillWording,
   answerMentionsPaymentProvider,
 } from '@/lib/faqs/wording';
-export { isApprovedFaq, isPubliclyRenderableFaq, FAQ_STATUS_LABELS } from '@/lib/faqs/status';
+export {
+  isApprovedFaq,
+  isPubliclyRenderableFaq,
+  isUnsupportedYoutubePurchaseFaq,
+  FAQ_STATUS_LABELS,
+} from '@/lib/faqs/status';
 export { sanitizeFaqText } from '@/lib/faqs/sanitize';
 export {
   FAQ_MODERATION_ACTIONS,

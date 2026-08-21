@@ -31,10 +31,6 @@ export type BuildArticleMetadataOptions = {
 function isIndexableSeo(seo: ArticleSeoRecord, preview?: boolean): boolean {
   if (preview || seo.noindex) return false;
   if (!seo.published || !seo.active) return false;
-  if (seo.scheduledFor) {
-    const when = Date.parse(seo.scheduledFor);
-    if (!Number.isNaN(when) && when > Date.now()) return false;
-  }
   return seo.robots.index && seo.robots.follow;
 }
 

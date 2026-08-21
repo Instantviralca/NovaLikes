@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "ÜBER NOVALIKES",
+    "title": "Über NovaLikes",
+    "description": "NovaLikes ist eine Premium-Plattform für Social-Media-Wachstum, die Creator, Unternehmen und Marken mit hochwertigen sozialen Signalen beim Wachsen unterstützt.\n\nWir legen den Fokus auf eine klare Bestellerfahrung, sicheren Checkout und zuverlässige Lieferung für Instagram, TikTok, Facebook und mehr.",
+    "trustLabels": [
+      {
+        "id": "about-hero-quality",
+        "label": "Klare Pakete, Bestellung ohne Passwort und veröffentlichte Richtlinien."
+      },
+      {
+        "id": "about-hero-delivery",
+        "label": "Sicherer Checkout und Bestellverfolgung für aufgegebene Käufe."
+      },
+      {
+        "id": "about-hero-support",
+        "label": "Kundensupport bei Fragen zu Paketen, Bestellungen und Zahlungen."
+      }
+    ],
+    "visual": {
+      "alt": "NovaLikes-Dashboard mit Instagram-, TikTok- und Facebook-Diensten"
+    }
+  },
+  "mission": {
+    "title": "Wir helfen Ihnen zu wachsen. Auf die richtige Weise.",
+    "description": "Unsere Mission ist es, Ihre Social-Media-Präsenz sicher und wirksam zu stärken – mit klaren Paketen, Bestellung ohne Passwort und Support, wenn Sie ihn brauchen.\n\nWachstum soll einfach sein: Service wählen, Paket auswählen, eine öffentliche URL angeben und Ihre Bestellung mit Vertrauen verfolgen."
+  },
+  "whyChoose": {
+    "title": "Warum uns Tausende wählen",
+    "description": "WARUM NOVALIKES WÄHLEN?",
+    "items": [
+      {
+        "id": "about-why-safe",
+        "title": "Sicher & geschützt",
+        "description": "Verschlüsselter Checkout und Bestellung ohne Passwort schützen Ihre Konten."
+      },
+      {
+        "id": "about-why-fast",
+        "title": "Klare Paketpreise",
+        "description": "Vergleichen Sie Mengen und Preise vor dem Checkout, damit Sie wissen, welches Paket Sie wählen."
+      },
+      {
+        "id": "about-why-quality",
+        "title": "Plattformspezifische Dienste",
+        "description": "Pakete sind nach Instagram-, TikTok- und Facebook-Metrik aufgeführt, nicht als generischer Wachstumsmix."
+      },
+      {
+        "id": "about-why-support",
+        "title": "Kundensupport",
+        "description": "Kontaktieren Sie NovaLikes bei Fragen zu Paket, Bestellung oder Zahlung über die verfügbaren Support-Optionen."
+      },
+      {
+        "id": "about-why-refund",
+        "title": "30-Tage-Geld-zurück-Garantie",
+        "description": "Berechtigte Käufe sind durch unsere 30-Tage-Geld-zurück-Garantie gemäß der veröffentlichten Erstattungsrichtlinie abgedeckt."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Auf Vertrauen gebaut, mit Sorgfalt geliefert",
+    "description": "Wir setzen uns für ein Kundenerlebnis ein, das klar, sicher und verlässlich wirkt – von der Paketauswahl bis zur Bestellverfolgung.",
+    "items": [
+      {
+        "id": "about-trust-payments",
+        "title": "Sichere Zahlungen"
+      },
+      {
+        "id": "about-trust-privacy",
+        "title": "Datenschutz"
+      },
+      {
+        "id": "about-trust-password",
+        "title": "Kein Passwort nötig"
+      },
+      {
+        "id": "about-trust-global",
+        "title": "Globaler Service"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Bereit, Ihre Social-Media-Präsenz zu steigern?",
+    "description": "Vergleichen Sie verfügbare Instagram-, TikTok- und Facebook-Dienste, prüfen Sie Paketoptionen und bestellen Sie, wenn Sie bereit sind.",
+    "primaryCta": {
+      "label": "Jetzt starten"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "Über NovaLikes",
+    "heroAria": "Über NovaLikes",
+    "missionEyebrow": "UNSERE MISSION",
+    "commitmentEyebrow": "UNSER ENGAGEMENT",
+    "statsAria": "NovaLikes-Highlights",
+    "missionImageAlt": "Illustration zum NovaLikes-Mission-Ziel",
+    "commitmentImageAlt": "Illustration zu Vertrauen und Engagement von NovaLikes",
+    "statsCustomers": "Zufriedene Kunden",
+    "statsOrders": "Gelieferte Bestellungen",
+    "statsRating": "Durchschnittliche Bewertung",
+    "statsSuccess": "Bestellerfolgsquote"
+  }
+}

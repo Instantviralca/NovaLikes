@@ -9,34 +9,37 @@ type RelatedArticlesProps = {
 };
 
 /**
- * Related articles — Document 15.02.
- * Excludes drafts and the current article (caller should already filter).
+ * Related guides — Document 15.02.
+ * Hidden unless at least two published related articles exist.
  */
 export function RelatedArticles({
-  title = 'Related articles',
+  title = 'Related guides',
   articles,
   currentSlug,
 }: RelatedArticlesProps) {
   const items = articles.filter((article) => article.slug !== currentSlug);
-  if (items.length === 0) return null;
+  if (items.length < 2) return null;
 
   return (
     <section aria-labelledby="article-related-articles" className="space-y-4">
-      <h2 id="article-related-articles" className="text-2xl font-semibold text-neutral-900">
+      <h2
+        id="article-related-articles"
+        className="text-xl font-semibold tracking-tight text-[#1C1917]"
+      >
         {title}
       </h2>
-      <ul className="grid gap-3 sm:grid-cols-2">
-        {items.map((article) => (
+      <ul className="grid gap-3">
+        {items.slice(0, 3).map((article) => (
           <li key={article.id}>
             <Link
               href={article.href}
-              className="block border border-neutral-200 p-4 outline-none transition-colors hover:border-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
+              className="block rounded-2xl border border-[#F0E4D8] bg-white p-4 outline-none transition-colors hover:border-[#FDBA74] hover:bg-[#FFF8F3] focus-visible:ring-2 focus-visible:ring-[#E85D04]"
             >
-              <p className="text-xs uppercase tracking-wide text-neutral-500">
+              <p className="text-[11px] font-semibold tracking-[0.12em] text-[#E85D04] uppercase">
                 {article.categoryName}
               </p>
-              <p className="mt-1 font-medium text-neutral-900">{article.title}</p>
-              <p className="mt-2 text-sm text-neutral-600 line-clamp-2">
+              <p className="mt-1 font-medium text-[#1C1917]">{article.title}</p>
+              <p className="mt-2 text-sm leading-relaxed text-[#78716C] line-clamp-2">
                 {article.excerpt}
               </p>
             </Link>

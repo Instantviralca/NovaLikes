@@ -184,6 +184,8 @@ export type PublicLearnArticle = {
   faqs: ArticleFaqItem[];
   serviceCta?: LearnArticleServiceCta;
   status: 'published';
+  /** Optional CMS overlay author for the existing AuthorBox. */
+  author?: import('@/types/author').PublicAuthor;
 };
 
 export type PublicLearnCategory = {

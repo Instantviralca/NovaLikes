@@ -143,10 +143,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, accepted: 0 });
   }
 
+  let persistence;
   try {
-    await getPersistence().insertAnalyticsEvents(records);
+    persistence = getPersistence();
   } catch (error) {
-    console.error('[analytics/collect]', error);
+    console.error('[analytics/collect] persistence unavailable', error);
+    return NextResponse.json({ ok: true, accepted: 0, skipped: true });
+  }
+
+  try {
+    await persistence.insertAnalyticsEvents(records);
+  } catch (error) {
+    console.error('[analytics/collect] store failed', error);
     return NextResponse.json({ ok: false, error: 'Store failed' }, { status: 500 });
   }
 

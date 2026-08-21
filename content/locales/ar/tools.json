@@ -1,0 +1,952 @@
+{
+  "hub": {
+    "eyebrow": "أدوات مجانية",
+    "h1": "أدوات مجانية لـ Instagram وTikTok وFacebook",
+    "lead": "اطّلع على ملف عام، أو تحقق من عدد متابعين منشور، أو استرجع ملف فيديو تعرضه المنصة أصلًا. يعمل كل مساعد على خوادم NovaLikes ويعيد معلومات عامة فقط — لا محتوى خاصًا ولا جلسة تسجيل دخول ولا تنزيلًا مختلقًا.",
+    "howHeading": "كيف تعمل هذه الأدوات",
+    "how": [
+      "اختر أداة ثم الصق اسم مستخدم عامًا أو عنوان URL.",
+      "تتحقق NovaLikes من العنوان وتطلب الصفحة العامة من خوادمنا.",
+      "إذا عرضت المنصة الصورة أو العدد أو الملف، تراه هنا. وإن لم تعرضه، تصلك رسالة واضحة بدل نتيجة مزيفة."
+    ],
+    "servicesHeading": "حزم NovaLikes الاختيارية",
+    "servicesNote": "الأدوات أعلاه مجانية. صفحات الحزم منفصلة إن أردت أيضًا تنمية حساب عام.",
+    "h1Accent": "أدوات",
+    "packagesHeading": "حزم NovaLikes الاختيارية"
+  },
+  "pages": {
+    "instagram-profile-picture-viewer": {
+      "eyebrow": "أداة Instagram",
+      "h1": "عارض صورة الملف الشخصي على Instagram",
+      "lead": "يقتطع Instagram صور الملف الشخصي إلى دائرة صغيرة على معظم الشاشات، فيصعب فحص الصورة نفسها. أدخل اسم مستخدم عامًا أو عنوان URL للملف وستعرض NovaLikes الصورة التي ينشرها Instagram أصلًا لهذا الحساب — بحجم أكبر، مع خيارات لعرضها أو تنزيلها.",
+      "inputLabel": "اسم مستخدم Instagram أو عنوان URL للملف",
+      "helperText": "مثال: nasa أو @nasa أو https://www.instagram.com/nasa/",
+      "processingLabel": "جارٍ تحميل صورة الملف العام…",
+      "resetLabel": "البحث عن ملف آخر",
+      "introHeading": "شاهد صورة Instagram عامة بحجم يمكن استخدامه",
+      "intro": [
+        "صورة الملف غالبًا هي الصورة الوحيدة التي يمكن فتحها دون متابعة الحساب، لكن تخطيط Instagram يبقيها صغيرة جدًا. تغطي هذه الصفحة تلك الفجوة: تبحث عن اسم مستخدم عام، وعندما يضمّن Instagram الصورة في الملف العام نعرضها بحجم يمكن رؤيته فعلًا.",
+        "لا شيء هنا يفتح حسابًا خاصًا. إذا لم ينشر Instagram صورة ملف للزوار غير المسجّلين، تعيد الأداة خطأً بدل التخمين أو استبدال صورة أخرى."
+      ],
+      "howHeading": "كيف يعمل هذا العارض",
+      "how": [
+        "ترسل اسم مستخدم أو عنوان URL للملف. تعمل NovaLikes على توحيد الإدخال، وتطلب ملف Instagram العام من خادمنا، وتقرأ الصورة التي يرفقها Instagram أصلًا بتلك الصفحة.",
+        "عندما تكون الصورة موجودة، تُسلَّم عبر تنزيل موقَّع قصير الأمد على NovaLikes — وليس كوكيل مفتوح لبقية الإنترنت. يمكنك فتحها بالحجم الكامل في تبويب جديد أو حفظ الملف."
+      ],
+      "howToUseHeading": "كيف تبحث عن صورة ملف",
+      "howToUse": [
+        "انسخ اسم مستخدم عامًا على Instagram أو عنوان URL للملف من شريط العنوان.",
+        "الصقه أعلاه واختر عرض الصورة.",
+        "استخدم عرض بالحجم الكامل أو تنزيل الصورة عندما تكون الصورة العامة متاحة."
+      ],
+      "supportedHeading": "ما يمكنك إدخاله",
+      "supportedIntro": "البحث للحسابات، لا للمنشورات ولا لـ Stories.",
+      "supported": [
+        "أسماء المستخدمين، مع @ أو بدونها",
+        "عناوين URL من نوع instagram.com/{username}، بما في ذلك معاملات التتبع الإضافية",
+        "مسارات ملف مثل /{username}/reels ما زالت تعرّف الحساب العام نفسه"
+      ],
+      "notesHeading": "حدود الملف العام",
+      "notes": [
+        "لا يمكن عرض الملفات الخاصة أو المخفية أو التي تتطلب تسجيل الدخول.",
+        "لا تعرض هذه الصفحة أعداد المتابعين ولا النبذة ولا المنشورات الأخيرة. استخدم عارض الملف الشخصي على Instagram عندما تريد تلك اللقطة المجمّعة.",
+        "الصورة هي ما ينشره Instagram حاليًا. لا نكبّرها ولا نسمّيها HD."
+      ],
+      "relatedHeading": "أدوات Instagram أخرى",
+      "faqHeading": "أسئلة عن صورة الملف",
+      "faqs": [
+        {
+          "id": "igp-private",
+          "question": "هل يمكنني عرض صورة ملف Instagram خاص؟",
+          "answer": "لا. يُطلب فقط الصورة التي ينشرها Instagram أصلًا على ملف عام. الحسابات الخاصة تعيد خطأً."
+        },
+        {
+          "id": "igp-login",
+          "question": "هل أحتاج إلى تسجيل الدخول إلى Instagram؟",
+          "answer": "لا. هذه الصفحة لا تطلب أبدًا كلمة مرور Instagram. إذا لم يعرض Instagram الصورة العامة، سترى خطأً بدلًا من ذلك."
+        },
+        {
+          "id": "igp-full",
+          "question": "هل يمكنني رؤية أعداد المتابعين والنبذة هنا؟",
+          "answer": "ليس في هذه الصفحة. استخدم [عارض الملف الشخصي على Instagram](/tools/instagram-profile-viewer) للاسم والنبذة والأعداد المنشورة معًا."
+        },
+        {
+          "id": "igp-download",
+          "question": "هل يمكنني تنزيل صورة الملف؟",
+          "answer": "نعم، عندما يعرض Instagram الصورة العامة. يحفظ تنزيل الصورة ذلك الملف عبر NovaLikes. يفتح عرض بالحجم الكامل الصورة نفسها في تبويب جديد."
+        }
+      ]
+    },
+    "instagram-follower-counter": {
+      "eyebrow": "أداة Instagram",
+      "h1": "عدّاد متابعي Instagram",
+      "lead": "يطبع Instagram الجماهير الكبيرة غالبًا بصيغة 104M أو 872K بدل عدد صحيح كامل. يقرأ هذا العدّاد تسمية المتابعين التي يعرضها Instagram أصلًا على ملف عام ويعرضها كما نُشرت — بما في ذلك تلك الاختصارات. لا يخترع رقمًا دقيقًا خلف 104M.",
+      "inputLabel": "اسم مستخدم Instagram أو عنوان URL للملف",
+      "helperText": "تبقى الأعداد الكبيرة مختصرة عندما ينشرها Instagram كذلك.",
+      "processingLabel": "جارٍ قراءة ملف Instagram العام…",
+      "resetLabel": "البحث عن ملف آخر",
+      "introHeading": "تسمية متابعين عامة، لا إحصاء خاص",
+      "intro": [
+        "يبحث الناس عن أعداد المتابعين لتأكيد ما يعرضه الحساب أصلًا للعالم. تقوم هذه الأداة بذلك البحث نيابة عنك: تطلب الملف العام وتعيد رقم المتابعين الذي يضمّنه Instagram في تلك الصفحة وقت الفحص.",
+        "عندما يكتب Instagram 104M سترى 104M. توسيع ذلك إلى 104,000,000 مختلق سيكون أقل صدقًا لا أكثر دقة. الحسابات الأصغر التي ما زالت تعرض رقمًا كاملًا تُعرض كذلك أيضًا."
+      ],
+      "howHeading": "كيف يُقرأ العدد",
+      "how": [
+        "تطلب NovaLikes ملف Instagram العام من خوادمنا وتقرأ تسمية المتابعين التي يطبعها Instagram أصلًا. لا يوجد تدفق مباشر لكل متابعة، ولا تفريغ داخلي لأرقام دقيقة.",
+        "النتيجة لقطة لما قد يراه زائر في الصفحة العامة. أعد الفحص لاحقًا إن احتجت قراءة أحدث؛ قد يتغيّر الرقم بعد مغادرتك."
+      ],
+      "howToUseHeading": "كيف تتحقق من عدد المتابعين",
+      "howToUse": [
+        "أدخل اسم مستخدم عامًا مثل nasa أو @nasa أو عنوان URL للملف.",
+        "اختر التحقق من العدد.",
+        "اقرأ الرقم الكبير كما ينشره Instagram، بما في ذلك اختصارات K أو M."
+      ],
+      "supportedHeading": "ما يمكنك إدخاله",
+      "supported": [
+        "أسماء المستخدمين، مع @ أو بدونها",
+        "عناوين URL من نوع instagram.com/{username}، بما في ذلك معاملات التتبع",
+        "مسارات مثل /{username}/reels ما زالت تعرّف الحساب العام نفسه"
+      ],
+      "notesHeading": "ما ليس هذا الرقم",
+      "notes": [
+        "ليس إجماليًا مباشرًا ولا بحثًا في حساب خاص.",
+        "لا نحوّل 104M إلى عدد دقيق مزيف.",
+        "إجماليات المتابَعين والمنشورات تخص عارض الملف الشخصي على Instagram، لا هذا العدّاد المركّز."
+      ],
+      "relatedHeading": "أدوات Instagram أخرى",
+      "faqHeading": "أسئلة عن عدد المتابعين",
+      "faqs": [
+        {
+          "id": "igf-exact",
+          "question": "هل هذا هو عدد المتابعين الدقيق المباشر؟",
+          "answer": "إنه العدد الذي ينشره Instagram على الملف العام وقت البحث. الحسابات الكبيرة غالبًا مختصرة، وقد يتغيّر الرقم بعد الفحص."
+        },
+        {
+          "id": "igf-abbrev",
+          "question": "لماذا تقول بعض النتائج 104M بدل رقم كامل؟",
+          "answer": "Instagram نفسه يختصر الجماهير الكبيرة غالبًا. تحتفظ هذه الأداة بتلك التسمية. لا نخترع الأرقام الناقصة."
+        },
+        {
+          "id": "igf-private",
+          "question": "هل يعمل هذا على الحسابات الخاصة؟",
+          "answer": "لا. يمكن فحص الملفات العامة التي تعرض عدد متابعين فقط."
+        },
+        {
+          "id": "igf-photo",
+          "question": "هل يمكنني عرض صورة الملف أيضًا؟",
+          "answer": "قد يضمّن العدّاد الصورة العامة عندما يعرضها Instagram. لعرض مخصص للصورة استخدم [عارض صورة الملف الشخصي على Instagram](/tools/instagram-profile-picture-viewer). للاسم والنبذة والأعداد الثلاثة استخدم [عارض الملف الشخصي على Instagram](/tools/instagram-profile-viewer)."
+        }
+      ]
+    },
+    "instagram-profile-viewer": {
+      "eyebrow": "أداة Instagram",
+      "h1": "عارض الملف الشخصي على Instagram",
+      "lead": "أدخل اسم مستخدم عامًا على Instagram أو عنوان URL للملف لعرض الصورة والاسم والنبذة والأعداد المنشورة التي يعرضها Instagram أصلًا. تعيد NovaLikes تفاصيل الملف العامة فقط — لا شيء خاصًا ولا شيئًا مختلقًا.",
+      "inputLabel": "اسم مستخدم Instagram أو عنوان URL للملف",
+      "helperText": "جرّب nasa أو @nasa أو عنوان URL لملف عام.",
+      "processingLabel": "جارٍ تحميل ملف Instagram العام…",
+      "resetLabel": "البحث عن ملف آخر",
+      "introHeading": "لقطة عامة مجمّعة",
+      "intro": [
+        "عارض صورة الملف للصورة وحدها. عدّاد المتابعين لتسمية الجمهور. تقع هذه الصفحة بينهما: بحث واحد يجمع كتلة الهوية العامة التي يعرضها Instagram أعلى الملف.",
+        "ما زلت ترى فقط ما يعرضه Instagram دون تسجيل دخول. المنشورات الأخيرة وStories وHighlights والنبذ الخاصة خارج النطاق. إذا غاب حقل في الصفحة العامة، يغيب هنا أيضًا."
+      ],
+      "howHeading": "كيف تُبنى اللقطة",
+      "how": [
+        "تطلب NovaLikes الملف العام وتطابق الصورة المنشورة والأسماء والسيرة وتسميات الأعداد في ملخص بسيط. تبقى أعداد مثل 104M أو 872K مختصرة عندما يكتبها Instagram كذلك.",
+        "عندما تُضمَّن صورة عامة يمكنك فتحها بالحجم الكامل. يُوفَّر رابط عائد إلى Instagram لتأكيد الحساب نفسه على المنصة."
+      ],
+      "howToUseHeading": "كيف تعرض ملفًا عامًا",
+      "howToUse": [
+        "أدخل اسم مستخدم عامًا أو عنوان URL للملف.",
+        "اختر عرض الملف.",
+        "راجع الصورة والاسم والنبذة وصف المتابعين / المتابَعين / المنشورات. افتح Instagram أو الصورة بالحجم الكامل إذا ظهرت تلك الإجراءات."
+      ],
+      "supportedHeading": "ما يمكنك إدخاله",
+      "supported": [
+        "أسماء المستخدمين، مع @ أو بدونها",
+        "عناوين URL من نوع instagram.com/{username}، بما في ذلك معاملات التتبع",
+        "مسارات مثل /{username}/reels ما زالت تعرّف الحساب العام نفسه"
+      ],
+      "notesHeading": "ما لا يشمله هذا العارض",
+      "notes": [
+        "لا يمكن عرض الملفات الخاصة. لا تتجاوز هذه الأداة حماية الحساب.",
+        "لا تسرد المنشورات ولا Stories ولا Highlights.",
+        "إذا احتجت الصورة فقط، فعارض صورة الملف هو المسار الأقصر."
+      ],
+      "relatedHeading": "أدوات Instagram أخرى",
+      "faqHeading": "أسئلة",
+      "faqs": [
+        {
+          "id": "igvwr-what",
+          "question": "ما المعلومات التي يمكن أن يعرضها عارض الملف الشخصي على Instagram؟",
+          "answer": "صورة الملف العامة واسم العرض واسم المستخدم والسيرة وتسميات المتابعين والمتابَعين والمنشورات المنشورة عندما يضمّنها Instagram."
+        },
+        {
+          "id": "igvwr-private",
+          "question": "هل يمكنني عرض ملف Instagram خاص؟",
+          "answer": "لا. يمكن فحص الملفات العامة التي يعرضها Instagram أصلًا فقط."
+        },
+        {
+          "id": "igvwr-counts",
+          "question": "هل أرقام المتابعين دقيقة؟",
+          "answer": "تطابق التسميات التي ينشرها Instagram. قد تظهر الحسابات الكبيرة بصيغة 104M. لا يُحوَّل ذلك إلى إجمالي دقيق مزيف."
+        },
+        {
+          "id": "igvwr-photo",
+          "question": "ما الفرق بين عارض الملف وعارض صورة الملف؟",
+          "answer": "تعرض هذه الصفحة لقطة الهوية العامة. أما [عارض صورة الملف الشخصي على Instagram](/tools/instagram-profile-picture-viewer) فهو لعرض الصورة العامة أو تنزيلها فقط."
+        }
+      ]
+    },
+    "instagram-video-downloader": {
+      "eyebrow": "أداة Instagram",
+      "h1": "منزّل فيديو / Reels على Instagram",
+      "lead": "الصق عنوان URL عامًا لـ Reel أو منشور فيديو على Instagram. تتحقق NovaLikes من الصفحة العامة وتعرض ملفًا فقط عندما يضمّن Instagram واحدًا. كثير من المنشورات العامة لا يفعل ذلك حاليًا. هذا توفر محدود — لا أداة معطّلة ولا تنزيل مزيف.",
+      "inputLabel": "عنوان URL عام لـ Reel أو فيديو على Instagram",
+      "helperText": "يُعرض ملف فقط إذا ضمّنه Instagram في الصفحة العامة.",
+      "processingLabel": "جارٍ فحص صفحة Instagram العامة…",
+      "resetLabel": "تجربة عنوان URL آخر",
+      "limitedNotice": "قد لا يعرض Instagram ملف وسائط قابلًا للتنزيل لكل منشور أو Reel عام. تعيد NovaLikes ملفًا فقط عندما يكون متاحًا للعامة.",
+      "introHeading": "فحص للصفحة العامة، لا تنزيلًا موعودًا",
+      "intro": [
+        "يعرض Instagram الـ Reels غالبًا في مشغّل لا يسلّم ملف فيديو لزائر غير موثّق. ما زالت هذه الأداة تجري الفحص: إذا وُجد عنوان URL عام للوسائط يمكنك تنزيله. وإن لم يوجد، ترى رسالة واضحة.",
+        "التوفر المحدود يعني أننا نرفض اختلاق ملف. ولا يعني أن النموذج غير متصل. تبقى Stories والمنشورات الخاصة والوسائط التي تتطلب تسجيل الدخول خارج المتناول."
+      ],
+      "howHeading": "ماذا يحدث بعد لصق عنوان URL",
+      "how": [
+        "تتحقق NovaLikes من أن الرابط عنوان URL عام لـ Reel أو منشور أو فيديو بأسلوب IGTV على Instagram، ثم تطلب تلك الصفحة من خوادمنا. يظهر زر تنزيل فقط عندما يُعرض ملف وسائط فعلًا.",
+        "أسماء الجودة مثل HD تظهر فقط إذا أبلغ عنها Instagram. لا نسمّي ملفًا بلا تسمية باسم HD."
+      ],
+      "howToUseHeading": "كيف تفحص Reel أو منشور فيديو",
+      "howToUse": [
+        "انسخ عنوان URL عامًا لـ Reel أو منشور فيديو من Instagram.",
+        "الصقه أعلاه واختر التحقق من الفيديو.",
+        "نزّل الملف إن وُجد في القائمة. إذا لم يضمّن Instagram الوسائط، اقرأ الرسالة وجرّب عنوان URL عامًا آخر."
+      ],
+      "supportedHeading": "عناوين URL العامة المدعومة",
+      "supported": [
+        "instagram.com/reel/{code} و /reels/{code}",
+        "منشورات فيديو instagram.com/p/{code}",
+        "instagram.com/tv/{code}"
+      ],
+      "notesHeading": "حدود ينبغي توقعها",
+      "notes": [
+        "لا تُسترجع Stories ولا الحسابات الخاصة ولا المنشورات التي تتطلب تسجيل الدخول.",
+        "لا تطلب هذه الصفحة كلمة مرور Instagram.",
+        "لصور الملف استخدم عارض صورة الملف الشخصي على Instagram بدل عنوان URL لـ Reel."
+      ],
+      "relatedHeading": "أدوات Instagram أخرى",
+      "faqHeading": "أسئلة عن Reel والفيديو",
+      "faqs": [
+        {
+          "id": "igv-works",
+          "question": "هل سيُنزَّل كل Reel عام؟",
+          "answer": "لا. يُعاد ملف فقط عندما يعرض Instagram واحدًا في الصفحة العامة. كثير من الـ Reels العامة لا يفعل ذلك حاليًا."
+        },
+        {
+          "id": "igv-private",
+          "question": "هل يعمل هذا على المنشورات الخاصة؟",
+          "answer": "لا. لا تُسترجع المنشورات الخاصة أو المقيّدة أو المحذوفة."
+        },
+        {
+          "id": "igv-login",
+          "question": "هل أحتاج إلى تسجيل دخول Instagram؟",
+          "answer": "لا. إذا أخفى Instagram الملف عن الطلبات العامة، لا تستطيع الأداة إعادته."
+        },
+        {
+          "id": "igv-profile",
+          "question": "أحتاج صورة ملف فقط؟",
+          "answer": "استخدم [عارض صورة الملف الشخصي على Instagram](/tools/instagram-profile-picture-viewer)."
+        }
+      ]
+    },
+    "tiktok-video-downloader": {
+      "eyebrow": "أداة TikTok",
+      "h1": "منزّل فيديو TikTok",
+      "lead": "الصق رابط فيديو عام على TikTok، بما في ذلك عناوين URL الشائعة للمشاركة. تسترجع NovaLikes الملف الذي يعرضه TikTok أصلًا في تلك الصفحة. إذا وُجدت أكثر من جودة في القائمة، فتلك التسميات من TikTok — لا نخترع HD ولا نزيل العلامات المائية.",
+      "inputLabel": "عنوان URL عام لفيديو TikTok",
+      "helperText": "تُقبل صفحات المشاهدة وروابط المشاركة مثل vm.tiktok.com أو vt.tiktok.com.",
+      "processingLabel": "جارٍ جلب صفحة TikTok العامة…",
+      "resetLabel": "تجربة عنوان URL آخر",
+      "introHeading": "نزّل الملف العام الذي يقدّمه TikTok أصلًا",
+      "intro": [
+        "يحتاج المنشئون والمشاهدون غالبًا إلى نسخة من فيديو عام يمكن مشاهدته أصلًا دون تسجيل دخول. يطلب هذا المنزّل تلك الصفحة العامة من خوادم NovaLikes، وعندما يضمّن TikTok ملف فيديو يعرضه للتنزيل.",
+        "تُحلّ روابط المشاركة عندما تشير إلى صفحة مشاهدة عامة. منشورات الصور والفيديوهات الخاصة والعناصر المحذوفة غير مدعومة. أي علامة مائية أو حد إقليمي على الملف العام ما زال يسري."
+      ],
+      "howHeading": "كيف يعمل الاسترجاع",
+      "how": [
+        "بعد لصق عنوان URL تتحقق NovaLikes من أنه فيديو TikTok أو مضيف مشاركة مسموح، وتتبع عمليات إعادة التوجيه العامة، وتقرأ الوسائط التي أرفقها TikTok بالصفحة.",
+        "إذا أبلغ TikTok عن أكثر من جودة، تُدرج كل خيار بالتسمية التي قدّمها TikTok. تُعرض الملفات بلا تسمية كتنزيل عادي، لا كدقة مُخمَّنة."
+      ],
+      "howToUseHeading": "كيف تسترجع فيديو TikTok",
+      "howToUse": [
+        "انسخ عنوان URL للفيديو من TikTok، بما في ذلك رابط مشاركة قصير إن كان ما لديك.",
+        "الصقه أعلاه واختر جلب الفيديو.",
+        "نزّل الملف، أو اختر جودة مدرجة عندما يبلّغ TikTok عن أكثر من واحدة."
+      ],
+      "supportedHeading": "الروابط المدعومة",
+      "supported": [
+        "tiktok.com/@user/video/{id}",
+        "روابط جوّال m.tiktok.com/v/{id}",
+        "روابط مشاركة vm.tiktok.com وvt.tiktok.com وtiktok.com/t/ التي تُحل إلى فيديو عام"
+      ],
+      "notesHeading": "حدود الوسائط العامة",
+      "notes": [
+        "منشورات الصور والفيديوهات الخاصة والفيديوهات المحذوفة غير مدعومة.",
+        "قد يحدّ TikTok الطلبات المتكررة لفترة وجيزة.",
+        "لا تدّعي هذه الصفحة إزالة العلامات المائية. ما ينشره TikTok هو ما تستلمه."
+      ],
+      "relatedHeading": "أدوات TikTok أخرى",
+      "faqHeading": "أسئلة عن فيديو TikTok",
+      "faqs": [
+        {
+          "id": "tt-public",
+          "question": "هل يعمل هذا على كل فيديو TikTok؟",
+          "answer": "لا. الفيديوهات العامة فقط. الفيديوهات الخاصة أو المحذوفة أو المحجوبة مؤقتًا تعيد خطأً."
+        },
+        {
+          "id": "tt-short",
+          "question": "هل يمكنني لصق رابط مشاركة قصير؟",
+          "answer": "نعم. تُحلّ مضيفات المشاركة العامة مثل vm.tiktok.com عندما تشير إلى فيديو TikTok."
+        },
+        {
+          "id": "tt-quality",
+          "question": "ماذا تعني تسميات الجودة؟",
+          "answer": "تظهر تسميات مثل 720p فقط عندما يبلّغ TikTok عن تلك الجودة. لا نخترع أسماء HD أو SD."
+        },
+        {
+          "id": "tt-login",
+          "question": "هل أحتاج إلى حساب TikTok؟",
+          "answer": "لا. إذا لم يعرض TikTok الملف العام، لا تستطيع الأداة استرجاعه."
+        }
+      ]
+    },
+    "tiktok-profile-picture-downloader": {
+      "eyebrow": "أداة TikTok",
+      "h1": "منزّل صورة الملف الشخصي على TikTok",
+      "lead": "يُبقي TikTok الصور الرمزية صغيرة داخل التطبيق. أدخل اسم مستخدم عامًا أو @username أو عنوان URL للملف وستعرض NovaLikes صورة الملف التي ينشرها TikTok أصلًا — بحجم يكفي للفحص، مع عرض بالحجم الكامل وتنزيل الصورة عندما تكون الصورة عامة.",
+      "inputLabel": "اسم مستخدم TikTok أو عنوان URL للملف",
+      "helperText": "تعمل أسماء المستخدمين مع @ أو بدونها. عناوين URL للملف مناسبة أيضًا.",
+      "processingLabel": "جارٍ تحميل صورة ملف TikTok العامة…",
+      "resetLabel": "البحث عن ملف آخر",
+      "introHeading": "الصورة الرمزية العامة، لا شيء غيرها",
+      "intro": [
+        "هذه الصفحة للصورة التي يضعها TikTok على ملف عام فقط. لا تعدّ المتابعين ولا تسرد الفيديوهات ولا تفتح حسابات خاصة. إذا احتجت ملف فيديو، استخدم منزّل فيديو TikTok.",
+        "اسم مستخدم أو @handle أو رابط tiktok.com/@user يعرّف الحساب العام نفسه. تُرفض عناوين URL للفيديو هنا كي يبقى البحث على صورة الملف."
+      ],
+      "howHeading": "كيف تُسترجع الصورة",
+      "how": [
+        "تطلب NovaLikes ملف TikTok العام من خوادمنا وتقرأ الصورة التي ينشرها TikTok أصلًا للزاحفات والزوار. عندما تكون تلك الصورة موجودة تُعرض هنا وتُقدَّم عبر تنزيل موقَّع من NovaLikes.",
+        "تظهر أسماء العرض عندما يضمّنها TikTok في العنوان العام. تُحذف إحصاءات المتابعين عمدًا."
+      ],
+      "howToUseHeading": "كيف تنزّل صورة ملف TikTok",
+      "howToUse": [
+        "أدخل اسم مستخدم مثل nba، أو الصق رابط tiktok.com/@username.",
+        "اختر عرض الصورة.",
+        "افتح عرض بالحجم الكامل أو تنزيل الصورة عندما تكون الصورة العامة متاحة."
+      ],
+      "supportedHeading": "ما يمكنك إدخاله",
+      "supported": [
+        "أسماء المستخدمين، مع @ أو بدونها",
+        "عناوين URL للملف tiktok.com/@username"
+      ],
+      "notesHeading": "حدود الحسابات العامة",
+      "notes": [
+        "الملفات الخاصة أو التي تتطلب تسجيل الدخول تعيد خطأً.",
+        "عناوين URL لفيديو TikTok تخص منزّل الفيديو، لا هذا النموذج.",
+        "الملف هو الصورة الرمزية التي ينشرها TikTok. لا نسمّيها HD."
+      ],
+      "relatedHeading": "أدوات TikTok أخرى",
+      "faqHeading": "أسئلة عن صور TikTok",
+      "faqs": [
+        {
+          "id": "ttp-public",
+          "question": "هل يعمل هذا على حسابات TikTok الخاصة؟",
+          "answer": "لا. يُطلب فقط صورة الملف المنشورة للعامة."
+        },
+        {
+          "id": "ttp-video",
+          "question": "هل يمكنني تنزيل فيديو TikTok هنا؟",
+          "answer": "لا. استخدم [منزّل فيديو TikTok](/tools/tiktok-video-downloader) للفيديوهات العامة."
+        },
+        {
+          "id": "ttp-login",
+          "question": "هل أحتاج إلى تسجيل الدخول إلى TikTok؟",
+          "answer": "لا. إذا لم يعرض TikTok الصورة العامة، تعيد الأداة خطأً."
+        },
+        {
+          "id": "ttp-input",
+          "question": "هل يعمل @username أم أحتاج إلى عنوان URL الكامل؟",
+          "answer": "كلاهما يعمل. يمكنك كتابة nba أو @nba أو https://www.tiktok.com/@nba."
+        }
+      ]
+    },
+    "facebook-video-downloader": {
+      "eyebrow": "أداة Facebook",
+      "h1": "منزّل فيديو Facebook",
+      "lead": "الصق عنوان URL عامًا لـ watch أو /videos/ على Facebook. تعرض NovaLikes HD أو SD فقط عندما يعرض Facebook تلك الملفات. روابط Reel تخص منزّل Reels كي يبقى كل نموذج متوافقًا مع نوع عنوان URL الذي يستخدمه Facebook.",
+      "inputLabel": "عنوان URL عام لفيديو Facebook",
+      "helperText": "استخدم رابط watch أو /videos/. عناوين URL لـ Reel تخص منزّل Reels.",
+      "processingLabel": "جارٍ فحص فيديو Facebook العام…",
+      "resetLabel": "تجربة عنوان URL آخر",
+      "introHeading": "فيديوهات Facebook العامة، لا Reels",
+      "intro": [
+        "ما زال Facebook ينشر فيديوهات طويلة كثيرة على صفحات watch ومسارات /videos/ للصفحات. هذا المنزّل لتلك العناوين. عندما يضمّن Facebook مصدر HD أو مصدر SD أو كليهما، تظهر تلك الخيارات بتسميات Facebook نفسها.",
+        "لا يمكن استرجاع المقاطع للأصدقاء فقط ولا جدران تسجيل الدخول ولا الفيديوهات المحذوفة. يُوجَّه رابط بأسلوب Reel مثل /reel/ إلى منزّل Reels على Facebook بدل إجباره عبر هذا النموذج."
+      ],
+      "howHeading": "كيف تُعرض وسائط Facebook",
+      "how": [
+        "تتحقق NovaLikes من أن عنوان URL فيديو Facebook عام (أو رابط fb.watch يمكن حلّه إلى واحد)، ثم تقرأ الوسائط التي أرفقها Facebook للتشغيل العام.",
+        "إذا سرد Facebook HD وSD، تحصل على إجراءات تنزيل منفصلة. إذا سرد ملفًا واحدًا فقط، تحصل على ذلك الملف — لا جودة ثانية مختلقة."
+      ],
+      "howToUseHeading": "كيف تسترجع فيديو Facebook",
+      "howToUse": [
+        "انسخ عنوان URL العام للفيديو من Facebook.",
+        "الصقه أعلاه واجلب الفيديو.",
+        "اختر جودة مدرجة عندما يعرض Facebook أكثر من ملف."
+      ],
+      "supportedHeading": "روابط الفيديو المدعومة",
+      "supported": [
+        "facebook.com/{page}/videos/{id}",
+        "facebook.com/watch/?v={id}",
+        "روابط facebook.com/share/v/ وfacebook.com/video.php?v=",
+        "روابط fb.watch التي تُحل إلى وسائط فيديو عامة"
+      ],
+      "notesHeading": "متى لن يظهر تنزيل",
+      "notes": [
+        "لا يمكن استرجاع فيديوهات الأصدقاء فقط أو التي تتطلب تسجيل الدخول أو المحذوفة.",
+        "تظهر أزرار الجودة فقط عندما يسمّي Facebook تلك المصادر.",
+        "استخدم منزّل Reels لعناوين /reel/ وروابط مشاركة Reel."
+      ],
+      "relatedHeading": "أدوات Facebook أخرى",
+      "faqHeading": "أسئلة عن فيديو Facebook",
+      "faqs": [
+        {
+          "id": "fbv-public",
+          "question": "أي فيديوهات Facebook تعمل؟",
+          "answer": "عناوين URL لفيديو عام ما زال Facebook يعرض لها ملف وسائط."
+        },
+        {
+          "id": "fbv-reel",
+          "question": "هل يمكنني لصق Reel هنا؟",
+          "answer": "استخدم [منزّل Reels على Facebook](/tools/facebook-reels-downloader) لعناوين URL لـ Reel. هذه الصفحة لروابط watch و/videos/."
+        },
+        {
+          "id": "fbv-hd",
+          "question": "هل سأرى HD دائمًا؟",
+          "answer": "فقط إذا عرض Facebook مصدر HD. بعض الفيديوهات العامة تتضمّن SD فقط."
+        },
+        {
+          "id": "fbv-login",
+          "question": "هل يلزم تسجيل دخول Facebook؟",
+          "answer": "لا. لا تطلب الأداة أبدًا بيانات اعتماد Facebook."
+        }
+      ]
+    },
+    "facebook-reels-downloader": {
+      "eyebrow": "أداة Facebook",
+      "h1": "منزّل Reels على Facebook",
+      "lead": "الصق عنوان URL عامًا لـ Reel على Facebook. تعيد NovaLikes الوسائط التي يتيحها Facebook لذلك الـ Reel — بما في ذلك HD أو SD عندما يسمّي Facebook تلك الملفات. روابط watch أو /videos/ القياسية تخص منزّل فيديو Facebook.",
+      "inputLabel": "عنوان URL عام لـ Reel على Facebook",
+      "helperText": "استخدم رابط /reel/ أو مشاركة Reel. عناوين URL لـ watch القياسية تخص منزّل الفيديو.",
+      "processingLabel": "جارٍ فحص Reel العام على Facebook…",
+      "resetLabel": "تجربة عنوان URL آخر",
+      "introHeading": "الـ Reels عنوان URL مختلف على Facebook",
+      "intro": [
+        "تستخدم Reels على Facebook مسارات /reel/ وروابط مشاركة Reel، لا مشغّل watch الأقدم. وُجدت هذه الصفحة لتعالج تلك العناوين بشروطها. إذا عرض Facebook ملف وسائط عامًا يمكنك تنزيله هنا.",
+        "ما زال فيديو الصفحة العادي يخص منزّل فيديو Facebook. إرسال نوع الرابط الخطأ يعيد توجيهًا إلى الأداة المطابقة بدل فشل صامت."
+      ],
+      "howHeading": "كيف يُسترجع Reel",
+      "how": [
+        "تؤكد NovaLikes أن عنوان URL هو Reel عام أو رابط share/fb.watch يمكن حلّه إلى وسائط Reel، ثم تقرأ الملف الذي أرفقه Facebook للتشغيل العام.",
+        "تُدرج خيارات الجودة المتاحة فقط عندما يبلّغ عنها Facebook. تعيد الـ Reels الخاصة أو المحذوفة أو التي تتطلب تسجيل الدخول خطأً."
+      ],
+      "howToUseHeading": "كيف تسترجع Reel على Facebook",
+      "howToUse": [
+        "انسخ رابط الـ Reel من Facebook.",
+        "الصقه أعلاه واجلب الـ Reel.",
+        "نزّل الملف المدرج، أو اختر HD/SD عندما يعرض Facebook كليهما."
+      ],
+      "supportedHeading": "روابط Reel المدعومة",
+      "supported": [
+        "facebook.com/reel/{id} و /reels/{id}",
+        "روابط مشاركة Reel من facebook.com/share/r/",
+        "روابط fb.watch التي تُحل إلى وسائط Reel عامة"
+      ],
+      "notesHeading": "حدود خاصة بـ Reels",
+      "notes": [
+        "روابط watch أو /videos/ تخص منزّل فيديو Facebook.",
+        "تظهر تسميات الجودة فقط عندما يبلّغ Facebook عن HD أو SD.",
+        "لا تُسترجع الـ Reels الخاصة."
+      ],
+      "relatedHeading": "أدوات Facebook أخرى",
+      "faqHeading": "أسئلة عن Reels على Facebook",
+      "faqs": [
+        {
+          "id": "fbr-public",
+          "question": "هل تعمل الـ Reels الخاصة؟",
+          "answer": "لا. يمكن استرجاع الـ Reels العامة ذات ملف وسائط معروض فقط."
+        },
+        {
+          "id": "fbr-video",
+          "question": "ماذا عن عنوان URL لفيديو Facebook عادي؟",
+          "answer": "استخدم [منزّل فيديو Facebook](/tools/facebook-video-downloader) لروابط watch أو /videos/."
+        },
+        {
+          "id": "fbr-quality",
+          "question": "هل تختلف الجودات بين الـ Reels؟",
+          "answer": "قد تختلف. تتضمّن بعض الـ Reels HD وSD؛ وأخرى ملفًا واحدًا بلا تسمية. تظهر التسميات فقط عندما يوفّرها Facebook."
+        },
+        {
+          "id": "fbr-login",
+          "question": "هل يلزم حساب Facebook؟",
+          "answer": "لا. لا تطلب الأداة أبدًا بيانات اعتماد Facebook."
+        }
+      ]
+    }
+  },
+  "registry": {
+    "instagram-profile-viewer": {
+      "name": "عارض الملف الشخصي على Instagram",
+      "shortDescription": "اطّلع على الصورة العامة والاسم والنبذة والأعداد المنشورة لملف Instagram.",
+      "placeholder": "اسم المستخدم أو https://www.instagram.com/username/",
+      "actionLabel": "عرض الملف",
+      "availabilityLabel": "متاح"
+    },
+    "instagram-profile-picture-viewer": {
+      "name": "عارض صورة الملف الشخصي على Instagram",
+      "shortDescription": "اعرض صورة الملف المنشورة للعامة لاسم مستخدم Instagram.",
+      "placeholder": "اسم المستخدم أو https://www.instagram.com/username/",
+      "actionLabel": "عرض الصورة",
+      "availabilityLabel": "متاح"
+    },
+    "instagram-follower-counter": {
+      "name": "عدّاد متابعي Instagram",
+      "shortDescription": "اقرأ عدد المتابعين الذي ينشره Instagram في صفحة ملف عام.",
+      "placeholder": "اسم المستخدم أو https://www.instagram.com/username/",
+      "actionLabel": "التحقق من العدد",
+      "availabilityLabel": "متاح"
+    },
+    "instagram-video-downloader": {
+      "name": "منزّل فيديو / Reels على Instagram",
+      "shortDescription": "يفحص Reel أو منشور فيديو عام على Instagram. يُعاد ملف فقط إذا عرض Instagram واحدًا.",
+      "placeholder": "https://www.instagram.com/reel/...",
+      "actionLabel": "التحقق من الفيديو",
+      "availabilityLabel": "توفر محدود"
+    },
+    "tiktok-video-downloader": {
+      "name": "منزّل فيديو TikTok",
+      "shortDescription": "نزّل فيديو TikTok عامًا عندما يكون الملف متاحًا في الصفحة العامة.",
+      "placeholder": "https://www.tiktok.com/@user/video/...",
+      "actionLabel": "جلب الفيديو",
+      "availabilityLabel": "متاح"
+    },
+    "tiktok-profile-picture-downloader": {
+      "name": "منزّل صورة الملف الشخصي على TikTok",
+      "shortDescription": "اعرض ونزّل صورة الملف العامة التي ينشرها TikTok لحساب.",
+      "placeholder": "اسم المستخدم أو https://www.tiktok.com/@username",
+      "actionLabel": "عرض الصورة",
+      "availabilityLabel": "متاح"
+    },
+    "facebook-video-downloader": {
+      "name": "منزّل فيديو Facebook",
+      "shortDescription": "نزّل فيديو Facebook عامًا عندما يعرض Facebook ملف الوسائط.",
+      "placeholder": "https://www.facebook.com/.../videos/...",
+      "actionLabel": "جلب الفيديو",
+      "availabilityLabel": "متاح"
+    },
+    "facebook-reels-downloader": {
+      "name": "منزّل Reels على Facebook",
+      "shortDescription": "نزّل Reel عامًا على Facebook عندما يكون ملف الوسائط متاحًا للعامة.",
+      "placeholder": "https://www.facebook.com/reel/...",
+      "actionLabel": "جلب Reel",
+      "availabilityLabel": "متاح"
+    }
+  },
+  "layout": {
+    "instagram-profile-picture-viewer": {
+      "accentWord": "عارض",
+      "editorialHeading": "شاهد صورة Instagram عامة بحجم يمكن استخدامه",
+      "seeHeading": "ماذا يمكنك أن ترى؟",
+      "seeItems": [
+        {
+          "title": "صورة الملف",
+          "text": "الصورة الرمزية العامة، معروضة بحجم يكفي للفحص."
+        },
+        {
+          "title": "بحث باسم المستخدم",
+          "text": "يعمل بمعرّف أو @username أو عنوان URL لملف عام."
+        },
+        {
+          "title": "عرض بالحجم الكامل",
+          "text": "افتح الصورة العامة نفسها في تبويب جديد عندما يعرضها Instagram."
+        },
+        {
+          "title": "تنزيل الملف",
+          "text": "احفظ الصورة المنشورة عبر NovaLikes — لا محتوى خاصًا."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات Instagram",
+      "ctaHeading": "هل تريد تنمية حضورك على Instagram؟",
+      "privacyLead": "الملفات العامة فقط."
+    },
+    "instagram-follower-counter": {
+      "accentWord": "عدّاد",
+      "editorialHeading": "تسمية متابعين عامة، لا إحصاء خاص",
+      "seeHeading": "ماذا يمكنك أن ترى؟",
+      "seeItems": [
+        {
+          "title": "المتابعون",
+          "text": "التسمية المنشورة، بما في ذلك اختصارات مثل 104M."
+        },
+        {
+          "title": "كما يطبعها Instagram",
+          "text": "تبقى الأعداد الكبيرة مختصرة عندما يكتبها Instagram كذلك."
+        },
+        {
+          "title": "صورة عامة",
+          "text": "مضمَّنة عندما يعرض Instagram الصورة الرمزية في الصفحة العامة."
+        },
+        {
+          "title": "حساب عام فقط",
+          "text": "لا تُعدّ الملفات الخاصة عبر هذه الأداة."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات Instagram",
+      "ctaHeading": "هل تريد تنمية حضورك على Instagram؟",
+      "privacyLead": "الملفات العامة فقط."
+    },
+    "instagram-video-downloader": {
+      "accentWord": "منزّل",
+      "editorialHeading": "فحص للصفحة العامة، لا تنزيلًا موعودًا",
+      "seeHeading": "ماذا يمكنك أن تحصل عليه؟",
+      "seeItems": [
+        {
+          "title": "عنوان URL عام لـ Reel أو فيديو",
+          "text": "الصق عنوان منشور أو Reel عام على Instagram."
+        },
+        {
+          "title": "ملف عند عرضه",
+          "text": "يظهر تنزيل فقط إذا ضمّن Instagram ملفًا عامًا."
+        },
+        {
+          "title": "حدود واضحة",
+          "text": "كثير من المنشورات العامة لا تعرض ملفًا حاليًا. هذا توفر محدود."
+        },
+        {
+          "title": "لا وسائط خاصة",
+          "text": "Stories وHighlights والمنشورات الخاصة خارج النطاق."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات Instagram",
+      "ctaHeading": "هل تريد تنمية حضورك على Instagram؟",
+      "privacyLead": "المنشورات العامة فقط."
+    },
+    "tiktok-video-downloader": {
+      "accentWord": "منزّل",
+      "editorialHeading": "استرجع ملف TikTok عامًا عندما يعرضه TikTok",
+      "seeHeading": "ماذا يمكنك أن تحصل عليه؟",
+      "seeItems": [
+        {
+          "title": "عنوان URL عام للمشاهدة",
+          "text": "الصق رابط فيديو عام على TikTok."
+        },
+        {
+          "title": "فحص من الخادم",
+          "text": "تطلب NovaLikes الصفحة العامة وتبحث عن ملف وسائط."
+        },
+        {
+          "title": "تنزيل عند التوفر",
+          "text": "إذا عرض TikTok الملف يمكنك حفظه هنا."
+        },
+        {
+          "title": "فيديوهات عامة فقط",
+          "text": "لا تُسترجع الفيديوهات الخاصة أو المقيّدة."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات TikTok",
+      "ctaHeading": "هل تريد تنمية حضورك على TikTok؟",
+      "privacyLead": "الفيديوهات العامة فقط."
+    },
+    "tiktok-profile-picture-downloader": {
+      "accentWord": "منزّل",
+      "editorialHeading": "اعرض صورة TikTok العامة التي ينشرها الحساب أصلًا",
+      "seeHeading": "ماذا يمكنك أن ترى؟",
+      "seeItems": [
+        {
+          "title": "صورة الملف",
+          "text": "الصورة الرمزية التي ينشرها TikTok على حساب عام."
+        },
+        {
+          "title": "اسم مستخدم أو عنوان URL",
+          "text": "أدخل معرّفًا أو رابط ملف عام على TikTok."
+        },
+        {
+          "title": "تنزيل",
+          "text": "احفظ الصورة العامة عندما يعرضها TikTok."
+        },
+        {
+          "title": "حسابات عامة فقط",
+          "text": "صور الملفات الخاصة غير متاحة."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات TikTok",
+      "ctaHeading": "هل تريد تنمية حضورك على TikTok؟",
+      "privacyLead": "الملفات العامة فقط."
+    },
+    "facebook-video-downloader": {
+      "accentWord": "منزّل",
+      "editorialHeading": "نزّل فيديو Facebook عامًا عندما يُعرض ملف",
+      "seeHeading": "ماذا يمكنك أن تحصل عليه؟",
+      "seeItems": [
+        {
+          "title": "عنوان URL عام للفيديو",
+          "text": "الصق عنوان فيديو عام على Facebook."
+        },
+        {
+          "title": "فحص الملف العام",
+          "text": "تبحث NovaLikes عن ملف وسائط يعرضه Facebook أصلًا."
+        },
+        {
+          "title": "تنزيل",
+          "text": "احفظ الملف عندما يضمّن Facebook واحدًا في الصفحة العامة."
+        },
+        {
+          "title": "فيديوهات عامة فقط",
+          "text": "لا تُسترجع فيديوهات الأصدقاء فقط أو المحمية بتسجيل الدخول."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات Facebook",
+      "ctaHeading": "هل تريد تنمية حضورك على Facebook؟",
+      "privacyLead": "الفيديوهات العامة فقط."
+    },
+    "facebook-reels-downloader": {
+      "accentWord": "منزّل",
+      "editorialHeading": "نزّل Reel عامًا على Facebook عندما تكون الوسائط متاحة",
+      "seeHeading": "ماذا يمكنك أن تحصل عليه؟",
+      "seeItems": [
+        {
+          "title": "عنوان URL عام لـ Reel",
+          "text": "الصق عنوان Reel عام على Facebook."
+        },
+        {
+          "title": "فحص الملف العام",
+          "text": "تبحث NovaLikes عن ملف وسائط في صفحة الـ Reel العامة."
+        },
+        {
+          "title": "تنزيل",
+          "text": "احفظ ملف الـ Reel عندما يعرضه Facebook."
+        },
+        {
+          "title": "Reels عامة فقط",
+          "text": "لا تُسترجع الـ Reels الخاصة أو المقيّدة."
+        }
+      ],
+      "relatedHeading": "المزيد من أدوات Facebook",
+      "ctaHeading": "هل تريد تنمية حضورك على Facebook؟",
+      "privacyLead": "الـ Reels العامة فقط."
+    }
+  },
+  "profileViewer": {
+    "accentWord": "عارض",
+    "editorialHeading": "نظرة أوضح إلى ملف Instagram عام",
+    "editorialBody": "يُبقي Instagram كتلة الهوية العامة صغيرة. يجمع هذا العارض تلك الكتلة في عرض واحد: صورة الملف واسم العرض واسم المستخدم والسيرة وتسميات المتابعين والمتابَعين والمنشورات التي يطبعها Instagram أصلًا. تبقى الجماهير الكبيرة مختصرة عندما يكتب Instagram 104M أو 872K. الملفات الخاصة وStories وHighlights تبقى خارج المتناول.",
+    "seeHeading": "ماذا يمكنك أن ترى؟",
+    "seeItems": [
+      {
+        "title": "صورة الملف",
+        "text": "الصورة الرمزية العامة، معروضة بحجم يكفي للفحص."
+      },
+      {
+        "title": "النبذة واسم المستخدم",
+        "text": "اسم العرض و@username والسيرة عندما تكون عامة."
+      },
+      {
+        "title": "المتابعون",
+        "text": "التسمية المنشورة، بما في ذلك اختصارات مثل 104M."
+      },
+      {
+        "title": "المتابَعون والمنشورات",
+        "text": "مضمَّنة عندما يطبع Instagram تلك الأعداد في الملف العام."
+      }
+    ],
+    "howHeading": "كيف تستخدمه",
+    "howSteps": [
+      "أدخل اسم مستخدم أو عنوان URL للملف",
+      "تتحقق NovaLikes من الملف العام",
+      "اطّلع على تفاصيل الملف المتاحة"
+    ],
+    "privacyLead": "الملفات العامة فقط.",
+    "privacyBody": "لا تتجاوز NovaLikes إعدادات خصوصية Instagram. محتوى الملفات الخاصة وStories وHighlights غير متاح عبر هذه الأداة.",
+    "relatedHeading": "المزيد من أدوات Instagram",
+    "ctaHeading": "هل تريد تنمية حضورك على Instagram؟",
+    "ctaNote": "هذا العارض مجاني. صفحات الحزم منفصلة إن أردت أيضًا تنمية حساب عام."
+  },
+  "chrome": {
+    "howToUseIt": "كيف تستخدمه",
+    "stepLabel": "الخطوة {n}",
+    "openTool": "فتح الأداة",
+    "allFreeTools": "كل الأدوات المجانية",
+    "toolIsFreeNote": "هذه الأداة مجانية. صفحات الحزم منفصلة إن أردت أيضًا تنمية حساب عام.",
+    "exploreServices": "استكشف الخدمات",
+    "faqTitle": "الأسئلة الشائعة",
+    "viewFullSize": "عرض بالحجم الكامل",
+    "downloadImage": "تنزيل الصورة",
+    "downloadVideo": "تنزيل الفيديو",
+    "downloadFileN": "تنزيل الملف {n}",
+    "downloadQuality": "تنزيل {quality}",
+    "viewOnInstagram": "العرض على Instagram",
+    "viewFullSizeProfilePicture": "عرض صورة الملف بالحجم الكامل",
+    "currentFollowerCount": "عدد المتابعين المتاح للعامة حاليًا",
+    "abbreviatedCountNote": "يُعرض كما ينشره Instagram، لا كعدد دقيق.",
+    "followers": "المتابعون",
+    "following": "يتابع",
+    "posts": "المنشورات",
+    "availableQuality": "الجودة المتاحة: ",
+    "availableQualities": "الجودات المتاحة: ",
+    "profilePhotoAlt": "صورة ملف {username}",
+    "videoThumbnailAlt": "صورة مصغّرة للفيديو",
+    "thumbnailForTitle": "صورة مصغّرة لـ {title}",
+    "viewProfile": "عرض الملف",
+    "hubHowTitles": [
+      "أدخل اسم مستخدم أو عنوان URL",
+      "نتحقق من البيانات العامة",
+      "اطّلع على النتيجة المتاحة"
+    ],
+    "usps": [
+      {
+        "title": "مجاني للاستخدام",
+        "text": "بلا رسوم لأي مساعد"
+      },
+      {
+        "title": "بلا تسجيل دخول",
+        "text": "مجهول وآمن"
+      },
+      {
+        "title": "بيانات عامة فقط",
+        "text": "نحترم الخصوصية"
+      }
+    ],
+    "servicePills": {
+      "buy-instagram-followers": "حزم متابعي Instagram",
+      "buy-tiktok-followers": "حزم متابعي TikTok",
+      "buy-facebook-followers": "حزم متابعي Facebook"
+    },
+    "platformLabels": {
+      "instagram": "أدوات Instagram",
+      "tiktok": "أدوات TikTok",
+      "facebook": "أدوات Facebook"
+    },
+    "platformIntros": {
+      "instagram": "صور ملفات عامة وتسميات متابعين ولقطات مجمّعة وفحوصات فيديو.",
+      "tiktok": "فيديوهات TikTok عامة وصور ملفات.",
+      "facebook": "فيديوهات وReels عامة على Facebook عندما يُعرض ملف وسائط."
+    },
+    "cardBlurbs": {
+      "instagram-profile-viewer": "اطّلع على الصورة العامة والاسم والنبذة والأعداد المنشورة معًا.",
+      "instagram-profile-picture-viewer": "اعرض صورة الملف العامة لاسم مستخدم Instagram.",
+      "instagram-follower-counter": "اقرأ عدد المتابعين المنشور في صفحة ملف عام.",
+      "instagram-video-downloader": "افحص Reel أو فيديو عامًا. يظهر ملف فقط إذا عرض Instagram واحدًا.",
+      "tiktok-video-downloader": "نزّل فيديو TikTok عامًا عندما يكون الملف في الصفحة العامة.",
+      "tiktok-profile-picture-downloader": "اعرض ونزّل الصورة العامة التي ينشرها TikTok لحساب.",
+      "facebook-video-downloader": "نزّل فيديو Facebook عامًا عندما يعرض Facebook الملف.",
+      "facebook-reels-downloader": "نزّل Reel عامًا على Facebook عندما يكون ملف الوسائط متاحًا."
+    },
+    "serviceLabels": {
+      "buy-instagram-followers": "متابعو Instagram",
+      "buy-instagram-likes": "إعجابات Instagram",
+      "buy-instagram-views": "مشاهدات Instagram",
+      "buy-instagram-comments": "تعليقات Instagram",
+      "buy-tiktok-followers": "متابعو TikTok",
+      "buy-tiktok-likes": "إعجابات TikTok",
+      "buy-tiktok-views": "مشاهدات TikTok",
+      "buy-facebook-followers": "متابعو Facebook",
+      "buy-facebook-page-likes": "إعجابات صفحة Facebook",
+      "buy-facebook-post-likes": "إعجابات منشور Facebook"
+    },
+    "networkErrors": {
+      "profileImage": "تعذّر استرجاع صورة الملف العامة هذه الآن. يُرجى المحاولة مرة أخرى.",
+      "profileViewer": "تعذّر استرجاع ملف Instagram العام هذا الآن. يُرجى المحاولة مرة أخرى.",
+      "followerCount": "تعذّر استرجاع عدد المتابعين العام هذا الآن. يُرجى المحاولة مرة أخرى.",
+      "video": "تعذّر استرجاع هذا الفيديو العام الآن. يُرجى المحاولة مرة أخرى."
+    },
+    "errors": {
+      "base": {
+        "invalid_url": "أدخل عنوان URL عامًا صالحًا.",
+        "unsupported_url": "عنوان URL هذا غير مدعوم في هذه الأداة. جرّب عنوان URL عامًا آخر.",
+        "private_or_unavailable": "هذا المحتوى خاص أو غير متاح.",
+        "platform_blocked": "حجبت المنصة هذا الطلب مؤقتًا. جرّب عنوان URL عامًا آخر لاحقًا.",
+        "media_not_exposed": "لم تعرض المنصة ملف وسائط عامًا لهذا الرابط.",
+        "not_found": "تعذّر استرجاع هذا الفيديو.",
+        "rate_limited": "طلبات كثيرة جدًا. انتظر دقيقة ثم حاول مرة أخرى.",
+        "too_large": "هذا الملف أكبر مما يمكننا معالجته بأمان.",
+        "timeout": "انتهت مهلة الطلب. حاول مرة أخرى بعد لحظة.",
+        "download_unavailable": "انتهت صلاحية رابط التنزيل هذا. استرجع المحتوى مرة أخرى للحصول على ملف جديد."
+      },
+      "byTool": {
+        "tiktok-video-downloader": {
+          "invalid_url": "الصق عنوان URL عامًا لفيديو TikTok، بما في ذلك روابط المشاركة الشائعة.",
+          "unsupported_url": "هذا لا يبدو عنوان URL عامًا لفيديو TikTok.",
+          "private_or_unavailable": "يبدو فيديو TikTok هذا خاصًا أو محذوفًا أو غير متاح.",
+          "platform_blocked": "تعذّر استرجاع فيديو TikTok العام هذا الآن. قد يحدّ TikTok الطلبات مؤقتًا. يُرجى المحاولة بعد قليل.",
+          "media_not_exposed": "لم يعرض TikTok ملف فيديو عامًا لهذا الرابط.",
+          "not_found": "تعذّر استرجاع فيديو TikTok العام هذا. جرّب عنوان URL عامًا لفيديو آخر.",
+          "timeout": "استغرق TikTok وقتًا طويلًا للرد. يُرجى المحاولة بعد لحظة."
+        },
+        "tiktok-profile-picture-downloader": {
+          "invalid_url": "أدخل اسم مستخدم عامًا على TikTok أو عنوان URL للملف.",
+          "unsupported_url": "هذا ليس ملف TikTok عامًا. عناوين URL للفيديو تخص منزّل الفيديو.",
+          "private_or_unavailable": "يبدو ملف TikTok هذا خاصًا أو غير متاح.",
+          "platform_blocked": "لم يعرض TikTok صورة ملف عامة لهذا الحساب. جرّب اسم مستخدم عامًا آخر.",
+          "not_found": "تعذّر استرجاع صورة ملف TikTok العامة هذه."
+        },
+        "facebook-video-downloader": {
+          "invalid_url": "الصق عنوان URL عامًا لفيديو Facebook. روابط Reel تخص منزّل Reels.",
+          "unsupported_url": "هذا يبدو عنوان URL لـ Reel على Facebook. استخدم منزّل Reels على Facebook لروابط Reel.",
+          "private_or_unavailable": "يبدو فيديو Facebook هذا خاصًا أو محذوفًا أو غير متاح للطلبات العامة.",
+          "platform_blocked": "لم يعرض Facebook ملف فيديو عامًا لهذا الرابط. جرّب فيديو عامًا آخر، أو حاول بعد قليل.",
+          "media_not_exposed": "لم يعرض Facebook ملف فيديو عامًا لهذا الرابط. يُعاد HD أو SD فقط عندما يضمّنه Facebook.",
+          "not_found": "تعذّر استرجاع فيديو Facebook العام هذا. ربما حُذف."
+        },
+        "facebook-reels-downloader": {
+          "invalid_url": "الصق عنوان URL عامًا لـ Reel على Facebook. روابط الفيديو القياسية تخص منزّل الفيديو.",
+          "unsupported_url": "هذا يبدو عنوان URL لفيديو Facebook قياسي. استخدم منزّل فيديو Facebook لروابط watch أو /videos/.",
+          "private_or_unavailable": "يبدو Reel Facebook هذا خاصًا أو محذوفًا أو غير متاح للطلبات العامة.",
+          "platform_blocked": "لم يعرض Facebook ملف Reel عامًا لهذا الرابط. جرّب Reel عامًا آخر، أو حاول بعد قليل.",
+          "media_not_exposed": "لم يعرض Facebook ملف Reel عامًا لهذا الرابط.",
+          "not_found": "تعذّر استرجاع Reel Facebook العام هذا. ربما حُذف."
+        },
+        "instagram-profile-picture-viewer": {
+          "invalid_url": "أدخل اسم مستخدم عامًا على Instagram أو عنوان URL للملف.",
+          "unsupported_url": "هذا ليس ملف Instagram عامًا. عناوين URL لـ Story والمنشورات ليست عمليات بحث عن ملف.",
+          "private_or_unavailable": "يبدو ملف Instagram هذا خاصًا أو غير متاح.",
+          "platform_blocked": "لم يعرض Instagram صورة ملف عامة لهذا الحساب. جرّب اسم مستخدم عامًا آخر.",
+          "not_found": "تعذّر استرجاع صورة ملف Instagram العامة هذه."
+        },
+        "instagram-profile-viewer": {
+          "invalid_url": "أدخل اسم مستخدم عامًا على Instagram أو عنوان URL للملف.",
+          "unsupported_url": "هذا ليس ملف Instagram عامًا. عناوين URL للمنشور وReel وStory ليست عمليات بحث عن ملف.",
+          "private_or_unavailable": "يبدو ملف Instagram هذا خاصًا أو غير متاح.",
+          "platform_blocked": "لم يعرض Instagram معلومات ملف عامة لهذا الحساب. جرّب اسم مستخدم عامًا آخر.",
+          "not_found": "تعذّر استرجاع ملف Instagram العام هذا."
+        },
+        "instagram-follower-counter": {
+          "invalid_url": "أدخل اسم مستخدم عامًا على Instagram أو عنوان URL للملف.",
+          "unsupported_url": "هذا ليس ملف Instagram عامًا. عناوين URL للمنشور وReel ليست عمليات بحث عن متابعين.",
+          "private_or_unavailable": "يبدو ملف Instagram هذا خاصًا أو غير متاح.",
+          "platform_blocked": "لم يعرض Instagram عدد متابعين عامًا لهذا الحساب. جرّب اسم مستخدم عامًا آخر.",
+          "not_found": "تعذّر استرجاع عدد متابعين عام لاسم المستخدم هذا."
+        },
+        "instagram-video-downloader": {
+          "invalid_url": "الصق عنوان URL عامًا لـ Reel أو منشور فيديو على Instagram.",
+          "unsupported_url": "عنوان URL هذا ليس Reel ولا منشور فيديو عامًا على Instagram.",
+          "private_or_unavailable": "يبدو منشور Instagram هذا خاصًا أو محذوفًا أو غير متاح.",
+          "platform_blocked": "لم يعرض Instagram ملف فيديو عامًا لهذا الرابط. يمكن استرجاع المنشورات التي يتيح Instagram ملفها فقط.",
+          "media_not_exposed": "هذا يبدو صفحة Instagram عامة، لكن Instagram لم يعرض ملف فيديو. يعتمد التوفر على الوسائط المعروضة للعامة.",
+          "not_found": "تعذّر استرجاع فيديو Instagram عام من هذا الرابط."
+        }
+      }
+    }
+  }
+}

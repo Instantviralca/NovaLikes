@@ -48,7 +48,6 @@ export const LEARN_PLATFORM_OPTIONS = [
   { value: 'instagram', label: 'Instagram' },
   { value: 'tiktok', label: 'TikTok' },
   { value: 'facebook', label: 'Facebook' },
-  { value: 'youtube', label: 'YouTube' },
   { value: 'general', label: 'General' },
 ] as const;
 

@@ -1,5 +1,3 @@
-'use client';
-
 import { TrustCard } from '@/components/marketing/trust-bar/trust-card';
 import type { TrustGridProps } from '@/components/marketing/trust-bar/types';
 import { StaggerChildren, StaggerItem } from '@/components/motion/stagger';

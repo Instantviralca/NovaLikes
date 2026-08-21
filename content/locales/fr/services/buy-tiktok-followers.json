@@ -1,0 +1,626 @@
+{
+  "content": {
+    "slug": "buy-tiktok-followers",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "Acheter des abonnés TikTok | NovaLikes",
+      "description": "Achetez des abonnés TikTok avec les forfaits réels de NovaLikes.com, sans mot de passe, avec des détails de livraison clairs, une assistance 24/7 et un refill sur les commandes éligibles."
+    },
+    "hero": {
+      "eyebrow": "ACHETER DES ABONNÉS TIKTOK",
+      "title": "Acheter des abonnés TikTok",
+      "description": "Achetez des abonnés TikTok en choisissant le forfait et la quantité adaptés à votre compte. NovaLikes vous permet de comparer les forfaits d’abonnés et les prix avant de commander. Sélectionnez le nombre d’abonnés TikTok souhaité, indiquez le nom d’utilisateur TikTok public exact, puis finalisez votre commande en ligne. Votre mot de passe TikTok n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "purpose": "Convert for TikTok follower packages worldwide",
+      "primaryKeyword": "buy TikTok followers",
+      "supportingKeywords": [
+        "Buy TikTok Followers",
+        "Buying TikTok Followers",
+        "Buy Followers on TikTok",
+        "TikTok follower packages",
+        "Buy Real TikTok Followers"
+      ],
+      "suggestedWordCount": 70,
+      "primaryCta": {
+        "label": "Choisir un forfait d’abonnés TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Comment ça marche",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-f-trust-public",
+          "label": "Nom d’utilisateur public uniquement"
+        },
+        {
+          "id": "tt-f-trust-password",
+          "label": "Aucun mot de passe requis"
+        },
+        {
+          "id": "tt-f-trust-checkout",
+          "label": "Paiement sécurisé"
+        },
+        {
+          "id": "tt-f-trust-track",
+          "label": "Suivi de commande"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-followers/tiktok-followers-hero.webp",
+        "alt": "Illustration d’un tableau de bord de service d’abonnés TikTok",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Forfaits et tarifs d’abonnés TikTok",
+      "description": "Comparez les forfaits d’abonnés TikTok disponibles, les quantités et les prix avant de commander. Choisissez le nombre d’abonnés souhaité pour votre profil TikTok public, relisez le prix actuel du forfait, puis ajoutez l’option sélectionnée au panier lorsque vous êtes prêt.",
+      "purpose": "Present real NovaLikes.com TikTok follower packages",
+      "primaryKeyword": "TikTok follower packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Commander",
+      "emptyMessage": "Les forfaits d’abonnés TikTok sont temporairement indisponibles."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-followers",
+      "title": "Pourquoi achète-t-on des abonnés TikTok ?",
+      "description": "On achète des abonnés TikTok pour augmenter le nombre d’abonnés visible du profil, renforcer la première impression et soutenir l’image d’un créateur ou d’une entreprise. Les forfaits d’abonnés ne garantissent ni l’engagement ni une portée virale. Partout dans le monde, créateurs et marques utilisent souvent ces forfaits en complément d’une publication régulière, pour présenter un profil plus établi.",
+      "purpose": "Explain informed use of TikTok follower packages",
+      "primaryKeyword": "buy TikTok followers",
+      "suggestedWordCount": 90,
+      "items": [
+        {
+          "id": "tt-f-social-proof",
+          "title": "Une première impression plus forte",
+          "description": "Une audience visible plus large peut donner à votre profil un aspect plus établi lorsqu’on découvre votre contenu."
+        },
+        {
+          "id": "tt-f-creator-friendly",
+          "title": "Image de créateur et d’entreprise",
+          "description": "Créateurs, commerces locaux et marques utilisent des forfaits d’abonnés pour soutenir des campagnes, tout en continuant à publier des vidéos originales."
+        },
+        {
+          "id": "tt-f-flexible",
+          "title": "Des volumes adaptés à vos objectifs",
+          "description": "Choisissez des forfaits plus petits pour tester le processus, ou des volumes plus importants lorsque votre profil et votre activité de publication sont déjà établis."
+        },
+        {
+          "id": "tt-f-content-first",
+          "title": "Fonctionne mieux avec du contenu",
+          "description": "Acheter des abonnés TikTok soutient la présentation du profil ; la croissance à long terme dépend toujours de la qualité des vidéos et d’une publication régulière."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-novalikes-tiktok-followers-legacy",
+      "title": "Pourquoi NovaLikes ?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero, packages, and FAQ",
+      "primaryKeyword": "TikTok growth service",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-followers-features",
+      "title": "Fonctionnalités",
+      "description": "",
+      "purpose": "Unused — requirements handled by What We Need section",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Comment acheter des abonnés TikTok",
+      "description": "Acheter des abonnés TikTok est simple : choisissez un forfait, indiquez votre nom d’utilisateur TikTok public, vérifiez votre commande, finalisez le paiement, puis suivez la livraison. Vous n’avez pas besoin de partager votre mot de passe pour acheter des abonnés TikTok.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok followers",
+      "suggestedWordCount": 60,
+      "steps": [
+        {
+          "id": "tt-f-step-1",
+          "title": "Choisissez un forfait",
+          "description": "Sélectionnez la quantité d’abonnés qui correspond à votre profil et à vos objectifs."
+        },
+        {
+          "id": "tt-f-step-2",
+          "title": "Indiquez votre nom d’utilisateur",
+          "description": "Fournissez le nom d’utilisateur TikTok public auquel les abonnés doivent être livrés."
+        },
+        {
+          "id": "tt-f-step-3",
+          "title": "Vérifiez votre commande",
+          "description": "Confirmez le volume du forfait et les informations du compte avant le paiement."
+        },
+        {
+          "id": "tt-f-step-4",
+          "title": "Finalisez le paiement",
+          "description": "Terminez l’achat via le paiement lorsque les détails de votre commande sont corrects."
+        },
+        {
+          "id": "tt-f-step-5",
+          "title": "Suivez la livraison",
+          "description": "Suivez l’avancement avec les informations de votre commande jusqu’à la fin de la livraison."
+        }
+      ],
+      "cta": {
+        "label": "Sélectionner un forfait",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "username-and-delivery",
+      "title": "Ce dont nous avons besoin de votre part",
+      "description": "Pour traiter une commande d’abonnés TikTok, nous n’avons besoin que de votre nom d’utilisateur TikTok public, du forfait sélectionné, d’un profil public et d’un e-mail valide pour la confirmation. Aucun mot de passe ni accès de connexion privé n’est requis.",
+      "purpose": "Explain username and delivery requirements",
+      "primaryKeyword": "TikTok followers delivery",
+      "suggestedWordCount": 55,
+      "items": [
+        {
+          "id": "tt-f-req-username",
+          "title": "Nom d’utilisateur TikTok public",
+          "description": "Indiquez le nom d’utilisateur public exact auquel vous souhaitez que les abonnés soient livrés."
+        },
+        {
+          "id": "tt-f-req-package",
+          "title": "Forfait sélectionné",
+          "description": "Choisissez le forfait d’abonnés qui correspond à vos objectifs de croissance avant de finaliser le paiement."
+        },
+        {
+          "id": "tt-f-req-public",
+          "title": "Profil public",
+          "description": "Votre profil TikTok doit rester public jusqu’à la fin réussie de la livraison."
+        },
+        {
+          "id": "tt-f-req-email",
+          "title": "Adresse e-mail valide",
+          "description": "Utilisez une adresse e-mail valide pour recevoir la confirmation de commande et les informations de suivi."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-followers-reviews",
+      "title": "Ce que disent les clients de NovaLikes",
+      "description": "Avis clients pour ce service NovaLikes.",
+      "purpose": "Omitted on lean commercial layout to avoid homepage duplication",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-followers-faq",
+      "title": "Questions fréquentes sur l’achat d’abonnés TikTok",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok followers",
+      "faqIds": [
+        "faq-tt-followers-need",
+        "faq-tt-followers-package",
+        "faq-tt-followers-password",
+        "faq-tt-followers-how-long",
+        "faq-tt-followers-track",
+        "faq-tt-followers-wrong-username",
+        "faq-tt-followers-other-metrics",
+        "faq-tt-followers-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-followers",
+      "title": "Découvrir d’autres services TikTok",
+      "description": "Les abonnés ne sont qu’un indicateur TikTok. Si vous voulez plutôt augmenter le nombre de likes ou de vues d’une vidéo précise, comparez les autres services TikTok ci-dessous.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-likes",
+        "buy-tiktok-views"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-followers-final-cta",
+      "title": "Choisissez votre forfait d’abonnés TikTok",
+      "description": "Comparez les volumes et les prix d’abonnés disponibles, choisissez le forfait adapté au profil TikTok que vous voulez utiliser, puis passez commande avec le nom d’utilisateur public exact.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Voir les forfaits d’abonnés TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Suivre une commande",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-tiktok-followers-why-choose",
+        "title": "Pourquoi choisir NovaLikes pour des abonnés TikTok ?",
+        "description": "NovaLikes facilite la comparaison des forfaits d’abonnés TikTok avant de commander. Choisissez la quantité d’abonnés souhaitée pour votre profil public, relisez le prix actuel, indiquez le nom d’utilisateur TikTok exact, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-0",
+            "title": "Plusieurs quantités d’abonnés",
+            "description": "Comparez les quantités d’abonnés TikTok disponibles et choisissez le forfait qui correspond au nombre d’abonnés que vous voulez commander.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-followers-1",
+            "title": "Nom d’utilisateur public uniquement",
+            "description": "Indiquez le nom d’utilisateur TikTok public exact du compte auquel vous voulez ajouter les abonnés. Votre mot de passe TikTok n’est pas requis.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-2",
+            "title": "Vérifiez avant le paiement",
+            "description": "Vérifiez la quantité d’abonnés sélectionnée et le prix actuel du forfait avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-3",
+            "title": "Suivi de commande",
+            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande d’abonnés TikTok.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-tiktok-followers-can-you-buy",
+        "title": "Peut-on acheter des abonnés TikTok ?",
+        "description": "Oui. Des abonnés TikTok peuvent être achetés via des services d’abonnés en ligne. Chez NovaLikes, vous choisissez un forfait d’abonnés disponible, indiquez le nom d’utilisateur TikTok public du profil que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "cards": [
+          {
+            "id": "buy-tiktok-followers-4",
+            "title": "Ce qu’une commande d’abonnés TikTok modifie",
+            "description": "Une commande d’abonnés TikTok s’applique au nombre d’abonnés du profil public fourni avec la commande. Elle n’ajoute pas automatiquement des likes ou des vues aux vidéos TikTok individuelles.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-followers-5",
+            "title": "Ce qu’il faut pour passer commande",
+            "description": "Vous avez besoin du nom d’utilisateur TikTok public exact et du forfait d’abonnés que vous souhaitez acheter. Votre mot de passe TikTok n’est pas requis.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-followers-6",
+            "title": "Ce que les abonnés TikTok n’incluent pas",
+            "description": "Les abonnés sont distincts des likes et des vues TikTok. Commander des abonnés n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni un engagement, une portée, des ventes ou une croissance organique supplémentaires.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les abonnés TikTok, choisi la bonne quantité d’abonnés et indiqué le nom d’utilisateur du profil auquel vous voulez ajouter les abonnés."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-tiktok-followers-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-tiktok-followers-what-happens",
+        "title": "Que se passe-t-il après l’achat d’abonnés TikTok ?",
+        "description": "Une fois votre commande d’abonnés TikTok passée, le forfait d’abonnés et le nom d’utilisateur public que vous avez fournis servent à traiter la commande pour le profil sélectionné. Gardez le profil accessible publiquement lorsque c’est requis pendant le traitement.",
+        "steps": [
+          {
+            "id": "buy-tiktok-followers-th-1",
+            "title": "Les détails de votre commande sont vérifiés",
+            "description": "Le forfait d’abonnés, la quantité et le nom d’utilisateur TikTok fourni sont associés à votre commande, afin que la demande soit traitée pour le profil visé."
+          },
+          {
+            "id": "buy-tiktok-followers-th-2",
+            "title": "Les abonnés vont au profil indiqué",
+            "description": "La commande s’applique au profil TikTok lié au nom d’utilisateur que vous avez fourni. Vérifiez soigneusement le nom d’utilisateur avant de finaliser le paiement."
+          },
+          {
+            "id": "buy-tiktok-followers-th-3",
+            "title": "Le délai de traitement peut varier",
+            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité d’abonnés et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+          },
+          {
+            "id": "buy-tiktok-followers-th-4",
+            "title": "Consultez le statut de votre commande",
+            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+          }
+        ],
+        "closingNote": "Évitez de changer le nom d’utilisateur indiqué, de rendre le profil indisponible, ou de modifier quoi que ce soit qui empêche l’accès au compte pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+      },
+      "serviceCompare": {
+        "id": "buy-tiktok-followers-service-compare",
+        "title": "Abonnés vs likes vs vues TikTok",
+        "description": "Abonnés, likes et vues mesurent des aspects différents d’un compte TikTok. Choisissez le service selon que vous voulez modifier le nombre d’abonnés de votre profil, le nombre de likes d’un contenu précis, ou le nombre de vues d’une vidéo TikTok.",
+        "current": {
+          "title": "Abonnés TikTok",
+          "description": "Les abonnés sont un indicateur au niveau du profil. Choisissez les abonnés TikTok lorsque vous voulez augmenter le nombre d’abonnés affiché sur votre profil public.",
+          "bestFor": "Profils où le nombre d’abonnés est l’indicateur que vous voulez modifier.",
+          "ctaLabel": "Abonnés TikTok"
+        },
+        "likes": {
+          "title": "Likes TikTok",
+          "description": "Les likes s’appliquent à un contenu individuel. Choisissez les likes TikTok lorsque vous voulez augmenter le nombre de likes d’une vidéo TikTok publique éligible.",
+          "bestFor": "Vidéos TikTok où le nombre de likes visible est l’indicateur que vous voulez modifier.",
+          "href": "/buy-tiktok-likes",
+          "ctaLabel": "Voir les likes TikTok"
+        },
+        "views": {
+          "title": "Vues TikTok",
+          "description": "Les vues sont un indicateur au niveau de la vidéo. Choisissez les vues TikTok lorsque vous voulez augmenter le nombre de vues d’une vidéo TikTok publique éligible.",
+          "bestFor": "Vidéos TikTok où le nombre de vues visible est l’indicateur que vous voulez modifier.",
+          "href": "/buy-tiktok-views",
+          "ctaLabel": "Voir les vues TikTok"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-tiktok-likes"
+      },
+      "beforeBuying": {
+        "id": "buy-tiktok-followers-before-buying",
+        "title": "Que vérifier avant d’acheter des abonnés TikTok",
+        "description": "Avant d’acheter des abonnés TikTok, relisez le forfait et les détails du profil avant de finaliser votre commande. Assurez-vous que la quantité d’abonnés, le prix, le nom d’utilisateur TikTok et le service correspondent à ce que vous voulez pour le profil sélectionné.",
+        "framingNote": "Vérifiez une dernière fois le nom d’utilisateur TikTok fourni, la quantité d’abonnés et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des abonnés garantirait davantage de vues, de likes, d’engagement, de portée, de ventes ou de croissance organique.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-7",
+            "title": "Vérifiez la quantité d’abonnés",
+            "description": "Relisez le nombre d’abonnés TikTok inclus dans le forfait, pour savoir combien vous commandez pour le profil indiqué.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-followers-8",
+            "title": "Confirmez le prix du forfait",
+            "description": "Vérifiez le prix actuel affiché pour le forfait d’abonnés sélectionné avant de l’ajouter au panier. Si vous changez la quantité, relisez le prix mis à jour avant le paiement.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-followers-9",
+            "title": "Utilisez le bon nom d’utilisateur TikTok",
+            "description": "Vérifiez soigneusement le nom d’utilisateur TikTok public, pour que la commande soit associée au profil auquel vous voulez ajouter les abonnés.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-followers-10",
+            "title": "Choisissez le bon service TikTok",
+            "description": "Abonnés, likes et vues sont des services distincts. Vérifiez que les abonnés TikTok sont bien le service dont vous avez besoin avant de passer commande.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-tiktok-followers-11",
+            "title": "Consultez l’assistance et les politiques",
+            "description": "Vérifiez les politiques d’achat concernées et les options d’assistance disponibles, pour savoir où vous tourner si vous avez une question sur votre commande.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-tiktok-followers-worldwide",
+        "title": "Préparer votre profil TikTok pour une commande d’abonnés",
+        "description": "Les abonnés TikTok sont un service au niveau du profil. Avant de commander, confirmez le profil TikTok public exact et la quantité d’abonnés que vous voulez utiliser.",
+        "eyebrow": "Prêt pour des abonnés TikTok",
+        "closingNote": "Les abonnés TikTok s’appliquent à un profil public. Confirmez le nom d’utilisateur, gardez le profil accessible lorsque c’est requis, et relisez le forfait d’abonnés avant le paiement.",
+        "cards": [
+          {
+            "id": "buy-tiktok-followers-12",
+            "title": "Vérifiez le nom d’utilisateur TikTok",
+            "description": "Assurez-vous que le nom d’utilisateur que vous indiquez appartient au profil TikTok visé avant de finaliser le paiement.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-13",
+            "title": "Gardez le profil accessible",
+            "description": "Gardez le profil accessible publiquement lorsque le service choisi exige un accès public pendant le traitement de la commande.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-14",
+            "title": "Évitez de modifier les informations du profil",
+            "description": "Évitez de changer le nom d’utilisateur indiqué pendant qu’une commande est en cours, si possible. Contactez l’assistance si un changement de compte affecte une commande existante.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-followers-15",
+            "title": "Relisez le forfait d’abonnés",
+            "description": "Vérifiez la quantité d’abonnés et le prix sélectionnés avant le paiement, pour savoir quel forfait est associé à la commande.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-tiktok-followers-popular-packages",
+        "title": "Forfaits d’abonnés TikTok populaires",
+        "description": "Vous hésitez sur le forfait ? Comparez ci-dessous quelques-unes des quantités d’abonnés TikTok disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options.",
+        "rows": [
+          {
+            "id": "tt-f-100",
+            "quantity": "100 abonnés",
+            "recommendedFor": "Une option plus petite pour un profil TikTok public où vous voulez ajouter un nombre modeste d’abonnés."
+          },
+          {
+            "id": "tt-f-500",
+            "quantity": "500 abonnés",
+            "recommendedFor": "Une option intermédiaire pour un profil TikTok où vous voulez un changement plus important du nombre d’abonnés affiché."
+          },
+          {
+            "id": "tt-f-1000",
+            "quantity": "1 000 abonnés",
+            "recommendedFor": "Un forfait plus important pour un profil TikTok public où vous voulez ajouter mille abonnés en une seule commande."
+          },
+          {
+            "id": "tt-f-5000",
+            "quantity": "5 000 abonnés",
+            "recommendedFor": "Une option à plus fort volume pour un profil TikTok où vous voulez une hausse plus importante du nombre d’abonnés affiché."
+          },
+          {
+            "id": "tt-f-10000",
+            "quantity": "10 000 abonnés",
+            "recommendedFor": "Une option pour les profils TikTok qui envisagent l’une des plus grandes quantités d’abonnés disponibles chez NovaLikes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-tiktok-followers-best-practices",
+        "title": "Bonnes pratiques après l’achat d’abonnés TikTok",
+        "description": "Acheter des abonnés modifie le nombre d’abonnés du profil TikTok sélectionné, mais le reste de votre compte dépend toujours du contenu que vous publiez et de la façon dont vous le gérez. Continuez à créer des vidéos, à consulter l’activité de votre compte et à interagir avec votre audience, en complément du service d’abonnés.",
+        "closingNote": "Le nombre d’abonnés n’est qu’une partie d’un profil TikTok. Vos vidéos, informations de profil, décisions de publication, réactions de l’audience et autres activités du compte demandent toujours une attention continue.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-16",
+            "title": "Continuez à publier des vidéos TikTok",
+            "description": "Continuez à créer des vidéos adaptées à votre compte, à votre sujet, à votre activité ou à l’audience que vous voulez atteindre.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-followers-17",
+            "title": "Gardez votre profil complet",
+            "description": "Relisez votre photo de profil, votre bio, votre nom d’utilisateur et les autres informations publiques, pour que les visiteurs comprennent de quoi parle votre compte.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-tiktok-followers-18",
+            "title": "Consultez vos statistiques TikTok",
+            "description": "Si les statistiques sont disponibles sur votre compte, consultez les vues, l’engagement, l’activité des abonnés et d’autres données pour comprendre comment votre propre contenu se comporte.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-followers-19",
+            "title": "Testez différents formats vidéo",
+            "description": "Essayez différents sujets, durées, ouvertures, formats et styles de présentation pour apprendre ce qui fonctionne pour votre compte.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-followers-20",
+            "title": "Répondez aux interactions authentiques",
+            "description": "Répondez aux commentaires et messages authentiques lorsque c’est pertinent. Un nombre d’abonnés plus élevé ne remplace pas les interactions que vous construisez par votre propre activité de compte.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-followers-21",
+            "title": "Gardez un contenu cohérent",
+            "description": "Conservez une approche de publication qui a du sens pour votre compte, plutôt que de traiter un forfait d’abonnés comme un substitut à un contenu continu.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-tiktok-followers-common-mistakes",
+        "title": "Erreurs fréquentes lors de l’achat d’abonnés TikTok",
+        "description": "Quelques erreurs simples peuvent poser problème à une commande d’abonnés TikTok. Vérifiez le nom d’utilisateur, la quantité d’abonnés, le service et vos attentes avant le paiement, pour savoir exactement ce que vous commandez.",
+        "closingNote": "Avant de passer commande, vérifiez une dernière fois le nom d’utilisateur TikTok, la quantité d’abonnés et le prix. Si quelque chose change après le paiement, utilisez le suivi ou l’assistance disponibles pour votre commande.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-22",
+            "title": "Indiquer le mauvais nom d’utilisateur TikTok",
+            "description": "Vérifiez soigneusement le nom d’utilisateur TikTok public avant de commander. Le nom d’utilisateur doit appartenir au profil exact auquel vous voulez ajouter les abonnés.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-followers-23",
+            "title": "Choisir le mauvais service TikTok",
+            "description": "Abonnés, likes et vues sont des services distincts. Choisissez les abonnés TikTok uniquement lorsque le nombre d’abonnés de votre profil est l’indicateur que vous voulez modifier.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-24",
+            "title": "Sélectionner la mauvaise quantité d’abonnés",
+            "description": "Relisez le nombre d’abonnés inclus dans le forfait sélectionné avant le paiement, pour ne pas commander une quantité différente de celle prévue.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-25",
+            "title": "Rendre le profil indisponible pendant une commande",
+            "description": "Évitez de changer le nom d’utilisateur indiqué ou de rendre le profil indisponible pendant le traitement de la commande.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-followers-26",
+            "title": "S’attendre à ce que les abonnés garantissent d’autres résultats",
+            "description": "Un nombre d’abonnés plus élevé ne signifie pas automatiquement plus de vues, de likes, d’engagement, de portée, de ventes ou de croissance organique.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-followers-27",
+            "title": "Traiter les abonnés comme un substitut au contenu",
+            "description": "Acheter des abonnés modifie un indicateur de profil. Vos vidéos, décisions de publication, informations de profil et interactions avec l’audience dépendent toujours de la façon dont vous gérez le compte.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-likes": {
+            "title": "Likes TikTok",
+            "description": "Choisissez les likes TikTok lorsque vous voulez augmenter le nombre de likes affiché sur une vidéo TikTok publique éligible.",
+            "ctaLabel": "Voir les likes TikTok"
+          },
+          "buy-tiktok-views": {
+            "title": "Vues TikTok",
+            "description": "Choisissez les vues TikTok lorsque vous voulez augmenter le nombre de vues affiché sur une vidéo TikTok publique éligible.",
+            "ctaLabel": "Voir les vues TikTok"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-tiktok-followers-why-buy",
+      "title": "Pourquoi achète-t-on des abonnés TikTok ?",
+      "description": "On achète des abonnés TikTok pour des raisons variées. Certains veulent augmenter le nombre d’abonnés affiché sur un profil plus récent, d’autres choisissent un forfait d’abonnés pour un compte établi, une campagne, un lancement ou une autre activité TikTok. Le service modifie l’indicateur d’abonnés du profil sélectionné, mais il ne garantit ni vues, ni likes, ni engagement, ni portée, ni ventes, ni croissance organique.",
+      "items": [
+        {
+          "id": "buy-tiktok-followers-wb-1",
+          "title": "Augmenter le nombre d’abonnés visible",
+          "description": "Un forfait d’abonnés TikTok peut être utilisé lorsque vous voulez augmenter le nombre d’abonnés affiché sur votre profil public."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-2",
+          "title": "Utiliser des abonnés autour d’un lancement ou d’une campagne",
+          "description": "Les créateurs et les entreprises peuvent choisir un forfait d’abonnés en travaillant un nouveau compte, un lancement de produit, une campagne ou une autre activité de contenu TikTok."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-3",
+          "title": "Se concentrer sur l’indicateur abonnés",
+          "description": "Les abonnés TikTok s’appliquent au nombre d’abonnés de votre profil, plutôt que d’ajouter automatiquement des likes ou des vues aux vidéos individuelles."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-4",
+          "title": "Choisissez la quantité souhaitée",
+          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre d’abonnés TikTok que vous voulez commander pour le profil indiqué."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-5",
+          "title": "Utilisez les abonnés en complément de votre contenu",
+          "description": "Acheter des abonnés ne remplace pas la publication et la gestion de votre propre contenu TikTok. Vidéos, légendes, réponses et autres activités du compte dépendent toujours de la façon dont vous gérez votre profil."
+        }
+      ],
+      "bottomNote": "Si les likes ou les vues vidéo sont l’indicateur que vous voulez modifier, choisissez plutôt le service TikTok correspondant, et non un forfait d’abonnés."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Comment acheter des abonnés TikTok",
+      "description": "Acheter des abonnés TikTok via NovaLikes se fait en quatre étapes. Choisissez le forfait d’abonnés souhaité, indiquez le nom d’utilisateur TikTok public de votre profil, finalisez le paiement, puis utilisez les détails de votre commande pour en consulter le statut.",
+      "steps": [
+        {
+          "id": "buy-tiktok-followers-step-1",
+          "title": "Choisissez votre forfait d’abonnés",
+          "description": "Comparez les volumes et les prix d’abonnés TikTok disponibles, puis sélectionnez le forfait souhaité pour votre profil."
+        },
+        {
+          "id": "buy-tiktok-followers-step-2",
+          "title": "Indiquez votre nom d’utilisateur TikTok",
+          "description": "Fournissez le nom d’utilisateur TikTok public exact du profil auquel vous voulez ajouter les abonnés. Votre mot de passe TikTok n’est pas requis."
+        },
+        {
+          "id": "buy-tiktok-followers-step-3",
+          "title": "Finalisez votre commande",
+          "description": "Vérifiez la quantité d’abonnés et le prix sélectionnés, puis passez au paiement pour valider votre commande."
+        },
+        {
+          "id": "buy-tiktok-followers-step-4",
+          "title": "Suivez votre commande",
+          "description": "Après le paiement, utilisez l’option de suivi de commande disponible pour consulter les informations de statut de votre commande d’abonnés TikTok."
+        }
+      ]
+    },
+    "relatedHeading": "Découvrir d’autres services TikTok",
+    "relatedIntro": "Les abonnés ne sont qu’un indicateur TikTok. Si vous voulez plutôt augmenter le nombre de likes ou de vues d’une vidéo précise, comparez les autres services TikTok ci-dessous."
+  }
+}

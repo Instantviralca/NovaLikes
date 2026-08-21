@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "À PROPOS DE NOVALIKES",
+    "title": "À propos de NovaLikes",
+    "description": "NovaLikes est une plateforme premium de croissance sur les réseaux sociaux, conçue pour aider les créateurs, les entreprises et les marques à se développer grâce à des signaux sociaux de qualité.\n\nNous privilégions une expérience de commande claire, un paiement sécurisé et une livraison fiable sur Instagram, TikTok, Facebook et plus encore.",
+    "trustLabels": [
+      {
+        "id": "about-hero-quality",
+        "label": "Forfaits clairs, commande sans mot de passe et politiques publiées."
+      },
+      {
+        "id": "about-hero-delivery",
+        "label": "Paiement sécurisé et suivi de commande pour les achats passés."
+      },
+      {
+        "id": "about-hero-support",
+        "label": "Support client pour les questions de forfait, de commande et de paiement."
+      }
+    ],
+    "visual": {
+      "alt": "Tableau de bord NovaLikes représentant les services Instagram, TikTok et Facebook"
+    }
+  },
+  "mission": {
+    "title": "Vous aider à grandir. De la bonne façon.",
+    "description": "Notre mission est de vous aider à renforcer votre présence sur les réseaux sociaux de manière sûre et efficace, avec des forfaits clairs, une commande sans mot de passe et du support quand vous en avez besoin.\n\nLa croissance doit rester simple : choisissez un service, sélectionnez un forfait, fournissez une URL publique et suivez votre commande en toute confiance."
+  },
+  "whyChoose": {
+    "title": "Pourquoi des milliers de clients nous choisissent",
+    "description": "POURQUOI CHOISIR NOVALIKES ?",
+    "items": [
+      {
+        "id": "about-why-safe",
+        "title": "Sûr et sécurisé",
+        "description": "Le paiement chiffré et la commande sans mot de passe protègent vos comptes."
+      },
+      {
+        "id": "about-why-fast",
+        "title": "Prix clairs par forfait",
+        "description": "Comparez les quantités et les prix avant le paiement pour savoir quel forfait vous choisissez."
+      },
+      {
+        "id": "about-why-quality",
+        "title": "Services par plateforme",
+        "description": "Les forfaits sont listés par métrique Instagram, TikTok et Facebook, et non comme un mélange de croissance générique."
+      },
+      {
+        "id": "about-why-support",
+        "title": "Support client",
+        "description": "Contactez NovaLikes pour une question de forfait, de commande ou de paiement via les options de support disponibles."
+      },
+      {
+        "id": "about-why-refund",
+        "title": "Garantie de remboursement de 30 jours",
+        "description": "Les achats éligibles sont couverts par notre garantie de remboursement de 30 jours selon la politique de remboursement publiée."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Bâti sur la confiance, livré avec soin",
+    "description": "Nous nous engageons à offrir une expérience client claire, sécurisée et fiable, du choix du forfait au suivi de commande.",
+    "items": [
+      {
+        "id": "about-trust-payments",
+        "title": "Paiements sécurisés"
+      },
+      {
+        "id": "about-trust-privacy",
+        "title": "Confidentialité protégée"
+      },
+      {
+        "id": "about-trust-password",
+        "title": "Aucun mot de passe"
+      },
+      {
+        "id": "about-trust-global",
+        "title": "Service mondial"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à développer votre présence sur les réseaux sociaux ?",
+    "description": "Comparez les services Instagram, TikTok et Facebook disponibles, consultez les options de forfait et passez commande lorsque vous êtes prêt.",
+    "primaryCta": {
+      "label": "Commencer maintenant"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "À propos de NovaLikes",
+    "heroAria": "À propos de NovaLikes",
+    "missionEyebrow": "NOTRE MISSION",
+    "commitmentEyebrow": "NOTRE ENGAGEMENT",
+    "statsAria": "Points forts de NovaLikes",
+    "missionImageAlt": "Illustration de la cible de mission NovaLikes",
+    "commitmentImageAlt": "Illustration de confiance et d’engagement NovaLikes",
+    "statsCustomers": "Clients satisfaits",
+    "statsOrders": "Commandes livrées",
+    "statsRating": "Note moyenne",
+    "statsSuccess": "Taux de réussite des commandes"
+  }
+}

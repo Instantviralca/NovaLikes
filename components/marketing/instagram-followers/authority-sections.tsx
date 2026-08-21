@@ -1,8 +1,14 @@
+import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, Eye, Heart, Users, X } from 'lucide-react';
 
-import { InstagramPackagesHeroDashboard } from '@/components/illustrations/instagram-packages-hero-dashboard';
+import {
+  InstagramFollowersHelpVisual,
+  InstagramFollowersOrderVisual,
+  InstagramFollowersPracticesVisual,
+  InstagramFollowersWhyVisual,
+} from '@/components/illustrations/instagram-followers-section-photos';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { FadeUp } from '@/components/motion/fade-up';
@@ -23,6 +29,8 @@ const IG_SECTION_SPACING = 'py-7 md:py-9 lg:py-10';
 type SectionProps = {
   config?: InstagramFollowersPageConfig;
   className?: string;
+  visual?: ReactNode;
+  revealCards?: boolean;
 };
 
 export type RelatedArticleWithThumb = InternalLink & {
@@ -34,10 +42,6 @@ export type RelatedArticleWithThumb = InternalLink & {
     height: number;
   };
 };
-
-function InstagramFollowersSectionVisual({ className }: { className?: string }) {
-  return <InstagramPackagesHeroDashboard className={cn('max-w-none', className)} />;
-}
 
 /** Section 3 — Why Choose NovaLikes */
 export function InstagramFollowersWhyChoose({
@@ -102,6 +106,7 @@ export function InstagramFollowersWhyBuy({
   description,
   items,
   bottomNote,
+  visual,
   className,
 }: {
   id?: string;
@@ -109,6 +114,7 @@ export function InstagramFollowersWhyBuy({
   description?: string;
   items: BenefitItem[];
   bottomNote?: string;
+  visual?: ReactNode;
   className?: string;
 }) {
   return (
@@ -163,7 +169,7 @@ export function InstagramFollowersWhyBuy({
             delay={0.06}
             className="mx-auto flex w-full max-w-[28rem] items-center justify-center self-center lg:max-w-none"
           >
-            <InstagramFollowersSectionVisual />
+            {visual ?? <InstagramFollowersWhyVisual className="h-auto w-full" />}
           </FadeUp>
         </div>
       </Container>
@@ -174,6 +180,7 @@ export function InstagramFollowersWhyBuy({
 /** Section 5 — Can you buy Instagram Followers? */
 export function InstagramFollowersCanYouBuy({
   config = INSTAGRAM_FOLLOWERS_PAGE_CONFIG,
+  visual,
   className,
 }: SectionProps) {
   const { canYouBuy } = config;
@@ -191,13 +198,9 @@ export function InstagramFollowersCanYouBuy({
             delay={0.04}
             className="order-2 mx-auto w-full max-w-[26rem] lg:order-1 lg:max-w-none"
           >
-            <Image
-              src="/assets/images/illustrations/instagram-dashboard.svg"
-              alt="Instagram follower order summary dashboard"
-              width={640}
-              height={520}
-              className="h-auto w-full"
-            />
+            {visual ?? (
+              <InstagramFollowersOrderVisual className="h-auto w-full" />
+            )}
           </FadeUp>
 
           <FadeUp className="order-1 space-y-5 lg:order-2">
@@ -247,6 +250,7 @@ export function InstagramFollowersHowToBuy({
   description,
   steps,
   cta,
+  revealSteps: _revealSteps,
   className,
 }: {
   id?: string;
@@ -254,6 +258,7 @@ export function InstagramFollowersHowToBuy({
   description?: string;
   steps: ProcessStep[];
   cta?: CtaProps;
+  revealSteps?: boolean;
   className?: string;
 }) {
   return (
@@ -387,7 +392,7 @@ export function InstagramFollowersDoesBuyingHelp({
           </FadeUp>
 
           <FadeUp delay={0.04} className="flex items-center justify-center lg:px-0">
-            <InstagramFollowersSectionVisual className="w-full max-w-[30rem]" />
+            <InstagramFollowersHelpVisual className="h-auto w-full max-w-[30rem]" />
           </FadeUp>
 
           <FadeUp delay={0.08} className="h-full">
@@ -589,6 +594,7 @@ export function InstagramFollowersServiceCompare({
 /** Section 11 — What to check before buying */
 export function InstagramFollowersBeforeBuying({
   config = INSTAGRAM_FOLLOWERS_PAGE_CONFIG,
+  revealCards: _revealCards,
   className,
 }: SectionProps) {
   const { beforeBuying } = config;
@@ -665,7 +671,7 @@ export function InstagramFollowersWorldwide({
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-8 max-w-2xl space-y-3">
           <div className="mb-1 inline-flex items-center gap-2 rounded-full border border-pink-100 bg-[#FFF1F2] px-3 py-1.5 text-xs font-semibold text-[#E1306C]">
-            Ready Instagram Followers
+            {worldwide.eyebrow}
           </div>
           <Heading
             as="h2"
@@ -782,6 +788,7 @@ export function InstagramFollowersPackageSizes({
 /** Section 14 — Best practices */
 export function InstagramFollowersBestPractices({
   config = INSTAGRAM_FOLLOWERS_PAGE_CONFIG,
+  visual,
   className,
 }: SectionProps) {
   const { bestPractices } = config;
@@ -807,7 +814,7 @@ export function InstagramFollowersBestPractices({
         </FadeUp>
 
         <FadeUp delay={0.04} className="mx-auto mb-7 max-w-[28rem]">
-          <InstagramFollowersSectionVisual />
+          {visual ?? <InstagramFollowersPracticesVisual className="h-auto w-full" />}
         </FadeUp>
 
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">

@@ -196,9 +196,14 @@ export function getRelatedCategories(
     .slice(0, limit);
 }
 
-/** Popular tags by published article count. */
+/** Active tags that currently have at least one published, indexable article. */
+export function getDiscoverableTags(): PublicLearnTag[] {
+  return getTags().filter((tag) => tag.articleCount > 0);
+}
+
+/** Popular tags by published article count. Empty archives are never promoted. */
 export function getPopularTags(limit = 8): PublicLearnTag[] {
-  return getTags()
+  return getDiscoverableTags()
     .slice()
     .sort((a, b) => b.articleCount - a.articleCount || a.name.localeCompare(b.name))
     .slice(0, limit);

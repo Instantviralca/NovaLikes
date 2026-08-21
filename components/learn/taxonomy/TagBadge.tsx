@@ -14,7 +14,7 @@ type TagBadgeProps = {
  */
 export function TagBadge({ tag, className, asLink = true }: TagBadgeProps) {
   const classes = cn(
-    'inline-flex items-center border border-neutral-200 bg-white px-2.5 py-1 text-xs font-medium text-neutral-700 outline-none transition-colors hover:border-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2',
+    'inline-flex items-center rounded-full border border-[#E8DDD3] bg-white px-3 py-1.5 text-xs font-medium text-neutral-700 outline-none transition-colors hover:border-[#F0C7A8] hover:bg-[#FFF8F3] hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2',
     className,
   );
 

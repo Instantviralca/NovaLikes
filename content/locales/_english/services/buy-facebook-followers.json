@@ -1,0 +1,660 @@
+{
+  "content": {
+    "slug": "buy-facebook-followers",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Followers | Packages & Pricing",
+      "description": "Buy Facebook Followers with clear package options, public page URL checkout, gradual delivery details and order tracking. No password required."
+    },
+    "hero": {
+      "eyebrow": "BUY FACEBOOK FOLLOWERS",
+      "title": "Buy Facebook Followers",
+      "description": "Buy Facebook followers by choosing the package and quantity that fits your page. NovaLikes lets you compare available Facebook follower packages and prices before ordering. Select the number of followers you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.",
+      "purpose": "Convert for Facebook follower packages worldwide",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "Buy Facebook Followers",
+        "Buy Followers On Facebook",
+        "Buying Facebook Followers",
+        "Facebook Followers Buy",
+        "Buy Facebook Page Followers",
+        "Buy Facebook Business Page Followers"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose a Facebook Followers Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-f-trust-url",
+          "label": "Public Facebook Page URL Only"
+        },
+        {
+          "id": "fb-f-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-f-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "fb-f-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp",
+        "alt": "Facebook Business Page followers and Meta Business Suite dashboard illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Facebook Followers Packages & Pricing",
+      "description": "Compare the available Facebook follower packages, quantities, and prices before ordering. Choose the number of followers you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.",
+      "purpose": "Present real NovaLikes.com Facebook followers packages",
+      "primaryKeyword": "Facebook follower packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Continue With This Package",
+      "emptyMessage": "Facebook Followers packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-followers",
+      "title": "Why Do People Buy Facebook Followers?",
+      "description": "People buy Facebook followers to strengthen the visible audience on their Facebook page, improve credibility for new visitors and support long-term community building. A larger follower count can make a page appear more established, but it does not guarantee engagement, sales or organic reach.",
+      "purpose": "Explain informed use of Facebook followers packages",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "Facebook followers buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-f-community",
+          "title": "Build Community",
+          "description": "A larger follower base can make your Facebook page look more established while encouraging new visitors to explore your content, products or services."
+        },
+        {
+          "id": "fb-f-first-impression",
+          "title": "Stronger First Impression",
+          "description": "When people discover a Facebook page, one of the first things they notice is the size of its audience. A healthy follower count can help build confidence in your brand."
+        },
+        {
+          "id": "fb-f-business-pages",
+          "title": "Support Business Pages",
+          "description": "Businesses often use follower packages alongside regular posting, advertising and customer engagement to strengthen their online presence."
+        },
+        {
+          "id": "fb-f-flexible",
+          "title": "Flexible Package Sizes",
+          "description": "Choose a package that matches your existing page size and current marketing goals instead of selecting more followers than your page naturally supports."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-followers",
+      "title": "Why Choose Facebook Followers From NovaLikes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero and Can You Buy",
+      "primaryKeyword": "buy Facebook followers",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-followers-delivery",
+      "title": "Facebook Followers Delivery",
+      "description": "Delivery begins after your order has been reviewed and confirmed. Processing time depends on the selected package and current demand. You can review available progress updates through the order tracking page until delivery is complete.",
+      "purpose": "Explain Facebook followers delivery stages",
+      "primaryKeyword": "Facebook followers delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-del-review",
+          "title": "Order Review",
+          "description": "Your page URL and selected package are verified."
+        },
+        {
+          "id": "fb-f-del-begins",
+          "title": "Delivery Begins",
+          "description": "Followers begin according to the delivery estimate."
+        },
+        {
+          "id": "fb-f-del-progress",
+          "title": "Followers Increasing",
+          "description": "Review your order status through the tracking page."
+        },
+        {
+          "id": "fb-f-del-complete",
+          "title": "Order Complete",
+          "description": "The selected follower package has been delivered."
+        }
+      ]
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Followers",
+      "description": "Buying Facebook followers is a simple process. Choose a follower package, enter your public Facebook Page URL, review the order details and complete secure checkout. You don't need to provide your Facebook password, and you can follow your order status after purchase.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "can you buy followers on Facebook"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-f-step-1",
+          "title": "Choose a Followers Package",
+          "description": "Compare available package sizes and select the quantity that best fits your Facebook page, audience size and growth objectives."
+        },
+        {
+          "id": "fb-f-step-2",
+          "title": "Enter Your Public Facebook Page URL",
+          "description": "Copy the public link to your Facebook page and paste it into the order form so the followers are assigned to the correct page."
+        },
+        {
+          "id": "fb-f-step-3",
+          "title": "Review Your Order",
+          "description": "Confirm your selected package, page URL, pricing and delivery information before completing payment."
+        },
+        {
+          "id": "fb-f-step-4",
+          "title": "Complete Secure Checkout",
+          "description": "Finish your purchase through secure checkout without sharing your Facebook login credentials."
+        },
+        {
+          "id": "fb-f-step-5",
+          "title": "Track Your Order",
+          "description": "After checkout, follow the available order updates so you can monitor the progress of your purchase."
+        }
+      ],
+      "cta": {
+        "label": "Select Your Followers Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "What Do You Need to Place an Order?",
+      "description": "Ordering Facebook followers only requires a few public details. You do not need to provide your Facebook password, private account access or verification codes.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook followers packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-req-url",
+          "title": "Public Facebook Page URL",
+          "description": "Provide the public URL of the Facebook page that should receive the selected follower package."
+        },
+        {
+          "id": "fb-f-req-package",
+          "title": "Selected Package",
+          "description": "Choose the follower quantity that best fits your page and current marketing objectives."
+        },
+        {
+          "id": "fb-f-req-public",
+          "title": "Public Page Access",
+          "description": "The selected Facebook page should remain publicly accessible while your order is being processed."
+        },
+        {
+          "id": "fb-f-req-email",
+          "title": "Email Address",
+          "description": "Use a valid email address so you can receive order confirmations, updates and customer support if needed."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-followers-reviews",
+      "title": "What Customers Say About NovaLikes",
+      "description": "Customer reviews for this NovaLikes service.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-followers-faq",
+      "title": "Frequently Asked Questions About Buying Facebook Followers",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook followers",
+      "faqIds": [
+        "faq-fb-followers-need",
+        "faq-fb-followers-package",
+        "faq-fb-followers-password",
+        "faq-fb-followers-how-long",
+        "faq-fb-followers-track",
+        "faq-fb-followers-wrong-url",
+        "faq-fb-followers-other-metrics",
+        "faq-fb-followers-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-followers",
+      "title": "Explore More Facebook Growth Services",
+      "description": "Growing a Facebook presence often involves more than one service. Explore our Facebook solutions designed to support different marketing objectives.",
+      "purpose": "Internal links to sibling Facebook offers (no skipped services)",
+      "serviceSlugs": [
+        "buy-facebook-page-likes",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-followers-final-cta",
+      "title": "Choose Your Facebook Followers Package",
+      "description": "Compare the available follower quantities and prices, choose the package that fits the Facebook Page you want to use, and place your order with the correct public Facebook Page URL.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "View Facebook Followers Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-followers-why-choose",
+        "title": "Why Choose NovaLikes for Facebook Followers?",
+        "description": "NovaLikes makes it easy to compare Facebook follower packages before you order. Choose the number of followers you want for your public Facebook Page, review the current package price, provide the correct Page URL, and use order tracking after checkout to check available status information.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-0",
+            "title": "Multiple Follower Quantities",
+            "description": "Compare the available Facebook follower quantities and choose the package that matches the number of followers you want to order.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-1",
+            "title": "Public Facebook Page URL Only",
+            "description": "Provide the correct public Facebook Page URL for the Page where you want the followers added. Your Facebook password is not required.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-2",
+            "title": "Review Before Checkout",
+            "description": "Check the selected follower quantity and current package price before adding your order to the cart and completing checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your Facebook followers order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-followers-can-you-buy",
+        "title": "Can You Buy Facebook Followers?",
+        "description": "Yes. Facebook follower packages can be purchased through online follower services. With NovaLikes, you choose an available follower package, provide the public Facebook Page URL for the Page you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-4",
+            "title": "What a Facebook Followers Order Changes",
+            "description": "A Facebook followers order applies to the follower count on the public Facebook Page submitted with the order. It does not automatically add Page Likes or likes to individual posts.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public Facebook Page URL and the follower package you want to purchase. Your Facebook password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-6",
+            "title": "What Facebook Followers Do Not Include",
+            "description": "Followers are separate from Facebook Page Likes and Post Likes. Ordering followers does not automatically add those other metrics or guarantee additional engagement, reach, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected Facebook Followers, chosen the correct follower quantity, and provided the URL for the exact public Facebook Page where you want the followers added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-followers-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-followers-what-happens",
+        "title": "What Happens After You Buy Facebook Followers?",
+        "description": "After you place a Facebook followers order, the follower package and public Facebook Page URL you submitted are used to process the order for the selected Page. Keep the Page publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-facebook-followers-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected follower package, quantity, and submitted Facebook Page URL are associated with your order so the request can be processed for the intended Page."
+          },
+          {
+            "id": "buy-facebook-followers-th-2",
+            "title": "Followers Go to the Submitted Page",
+            "description": "The order applies to the Facebook Page connected to the URL you provided. Check the Page URL carefully before completing checkout."
+          },
+          {
+            "id": "buy-facebook-followers-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the follower quantity and current order conditions. One fixed delivery time should not be expected for every package."
+          },
+          {
+            "id": "buy-facebook-followers-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking for available status updates. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid deleting the submitted Page, making it unavailable, or changing anything that prevents access to it while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-followers-service-compare",
+        "title": "Facebook Followers vs Page Likes vs Post Likes",
+        "description": "Facebook followers, Page Likes, and Post Likes represent different metrics. Choose the service based on whether you want to change the follower count on a Facebook Page, the Page Like count, or the like count on a specific Facebook post.",
+        "current": {
+          "title": "Facebook Followers",
+          "description": "Followers are a Page-level metric. Choose Facebook Followers when you want to increase the follower count shown on a public Facebook Page.",
+          "bestFor": "Facebook Pages where follower count is the metric you want to change.",
+          "ctaLabel": "Facebook Followers"
+        },
+        "likes": {
+          "title": "Facebook Page Likes",
+          "description": "Page Likes are a Page-level metric separate from followers. Choose Facebook Page Likes when the Page Like count is the metric you want to change.",
+          "bestFor": "Facebook Pages where Page Like count is the metric you want to change.",
+          "href": "/buy-facebook-page-likes",
+          "ctaLabel": "View Facebook Page Likes"
+        },
+        "views": {
+          "title": "Facebook Post Likes",
+          "description": "Post Likes are a post-level metric. Choose Facebook Post Likes when you want to increase the like count on a specific eligible public Facebook post.",
+          "bestFor": "Individual Facebook posts where the visible like count is the metric you want to change.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "View Facebook Post Likes"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-facebook-page-likes"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-followers-before-buying",
+        "title": "What to Check Before Buying Facebook Followers",
+        "description": "Before you buy Facebook followers, review the package and Page details before completing your order. Make sure the follower quantity, price, Facebook Page URL, and service match what you want for the selected Page.",
+        "framingNote": "Check the submitted Facebook Page URL, follower quantity, and price one more time before checkout. Avoid relying on claims that buying followers will guarantee additional Page Likes, Post Likes, engagement, reach, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-7",
+            "title": "Check the Follower Quantity",
+            "description": "Review the number of Facebook followers included in the package so you know how many you are ordering for the submitted Page.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-8",
+            "title": "Confirm the Package Price",
+            "description": "Check the current price shown for your selected follower package before adding it to the cart. If you change the quantity, review the updated price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-9",
+            "title": "Use the Correct Facebook Page URL",
+            "description": "Check the public Facebook Page URL carefully so the order is associated with the exact Page where you want the followers added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-10",
+            "title": "Choose the Right Facebook Service",
+            "description": "Followers, Page Likes, and Post Likes are separate metrics. Check that Facebook Followers is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-followers-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-followers-worldwide",
+        "title": "Preparing Your Facebook Page for a Followers Order",
+        "description": "Facebook Followers is a Page-level service. Before ordering, confirm the eligible public Facebook Page and follower quantity you want to use.",
+        "eyebrow": "Ready for Facebook Followers",
+        "closingNote": "Facebook Followers applies to a public Facebook Page. Submit the correct Page, keep it accessible, and review the follower package before checkout.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-12",
+            "title": "Use the Correct Facebook Page",
+            "description": "Provide the public Facebook Page information requested during checkout. Do not submit an individual Facebook post when ordering Page followers.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-13",
+            "title": "Keep the Page Accessible",
+            "description": "Keep the submitted Page publicly accessible where required while the follower order is being processed.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-14",
+            "title": "Followers and Page Likes Are Different",
+            "description": "Facebook Followers applies to the Page follower count. Facebook Page Likes is a separate service for the Page Like metric.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-15",
+            "title": "Review the Package",
+            "description": "Check the follower quantity, Page information and price before completing checkout.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-followers-popular-packages",
+        "title": "Popular Facebook Followers Packages",
+        "description": "Compare some of the Facebook follower quantities available on NovaLikes below, or return to the full pricing section to see all available package options.",
+        "rows": [
+          {
+            "id": "fb-f-100",
+            "quantity": "100 Followers",
+            "recommendedFor": "A smaller package for a public Facebook Page where you want to add one hundred followers."
+          },
+          {
+            "id": "fb-f-500",
+            "quantity": "500 Followers",
+            "recommendedFor": "A smaller-to-mid-range option for a Facebook Page where you want to add five hundred followers."
+          },
+          {
+            "id": "fb-f-1000",
+            "quantity": "1,000 Followers",
+            "recommendedFor": "A mid-range package for a public Facebook Page where you want to add one thousand followers."
+          },
+          {
+            "id": "fb-f-5000",
+            "quantity": "5,000 Followers",
+            "recommendedFor": "A larger option for a Facebook Page where you want to add five thousand followers."
+          },
+          {
+            "id": "fb-f-10000",
+            "quantity": "10,000 Followers",
+            "recommendedFor": "A higher-volume package for a public Facebook Page where you want to add ten thousand followers."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-followers-best-practices",
+        "title": "Best Practices After Buying Facebook Followers",
+        "description": "Buying followers changes the follower count on the selected Facebook Page, but the rest of your Facebook activity still depends on the content you publish and how you manage your Page. Keep your Page active, review its performance, and interact with your audience alongside the service.",
+        "closingNote": "Follower count is only one metric on a Facebook Page. Your content, Page Likes, post interactions, audience responses, and other activity still depend on how you manage your Facebook presence.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-16",
+            "title": "Keep Your Facebook Page Active",
+            "description": "Continue publishing posts that fit your business, brand, topic, or the audience you want to reach.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-17",
+            "title": "Keep Your Page Information Updated",
+            "description": "Review your Page name, description, contact details, website, business information, and other public details when relevant.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-followers-18",
+            "title": "Review Your Facebook Insights",
+            "description": "If insights are available for your Page, review follower activity, post performance, engagement, and other available data to understand how your own content performs.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-19",
+            "title": "Test Different Types of Content",
+            "description": "Try different post formats, topics, images, videos, and publishing approaches to learn what works for your Page.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-20",
+            "title": "Respond to Genuine Interaction",
+            "description": "Reply to genuine comments and messages when appropriate. A higher follower count does not replace the interactions you build through your own Page activity.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-21",
+            "title": "Maintain a Consistent Page Presence",
+            "description": "Keep managing and publishing on your Page rather than treating a followers package as a replacement for ongoing Facebook activity.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-followers-common-mistakes",
+        "title": "Common Mistakes When Buying Facebook Followers",
+        "description": "A few simple mistakes can cause problems with a Facebook followers order. Check the Page URL, follower quantity, service, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the Facebook Page URL, follower quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-22",
+            "title": "Submitting the Wrong Facebook Page URL",
+            "description": "Check the public Facebook Page URL carefully before ordering. The URL should point to the exact Page where you want the followers added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-23",
+            "title": "Choosing the Wrong Facebook Service",
+            "description": "Followers, Page Likes, and Post Likes are separate services. Choose Facebook Followers only when the follower count on a Page is the metric you want to change.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-24",
+            "title": "Selecting the Wrong Follower Quantity",
+            "description": "Review the number of followers included in your selected package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-25",
+            "title": "Making the Page Unavailable During an Order",
+            "description": "Avoid deleting the submitted Page or making it unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-26",
+            "title": "Expecting Followers to Guarantee Other Results",
+            "description": "A higher follower count does not automatically mean more Page Likes, Post Likes, engagement, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-27",
+            "title": "Treating Followers as a Replacement for Page Activity",
+            "description": "Buying followers changes one metric on the selected Page. Your posts, Page information, publishing decisions, and audience interaction still depend on how you manage your Page.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-page-likes": {
+            "title": "Facebook Page Likes",
+            "description": "Choose Facebook Page Likes when the Page Like count on a public Facebook Page is the metric you want to change.",
+            "ctaLabel": "View Facebook Page Likes"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Facebook Post Likes",
+            "description": "Choose Facebook Post Likes when you want to increase the like count shown on an eligible public Facebook post.",
+            "ctaLabel": "View Facebook Post Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-followers-why-buy",
+      "title": "Why Do People Buy Facebook Followers?",
+      "description": "People buy Facebook followers for different reasons. Some want to increase the follower count displayed on a Facebook Page, while others choose a follower package for a Page connected to a business, brand, campaign, or ongoing content activity. The service changes the follower metric on the selected Page, but it does not guarantee additional likes, engagement, reach, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-facebook-followers-wb-1",
+          "title": "Increase the Visible Follower Count",
+          "description": "A Facebook followers package can be used when you want to increase the follower count displayed on a specific public Facebook Page."
+        },
+        {
+          "id": "buy-facebook-followers-wb-2",
+          "title": "Use Followers Around a Launch or Campaign",
+          "description": "Businesses and Page owners may choose a follower package while working on a launch, campaign, announcement, or other Facebook activity."
+        },
+        {
+          "id": "buy-facebook-followers-wb-3",
+          "title": "Focus on the Follower Metric",
+          "description": "Facebook Followers applies to the follower count on the selected Page. It does not automatically add Page Likes or likes to individual Facebook posts."
+        },
+        {
+          "id": "buy-facebook-followers-wb-4",
+          "title": "Choose the Quantity You Want",
+          "description": "Different package sizes let you select the number of Facebook followers you want to order for the submitted Page."
+        },
+        {
+          "id": "buy-facebook-followers-wb-5",
+          "title": "Use Followers Alongside Your Content",
+          "description": "Buying followers does not replace publishing and managing your own Facebook content. Posts, replies, Page information, and other activity still depend on how you manage your Page."
+        }
+      ],
+      "bottomNote": "If Page Likes or Post Likes are the metric you want to change instead, choose the corresponding Facebook service rather than a followers package."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Followers",
+      "description": "Buying Facebook followers through NovaLikes takes four steps. Choose the follower package you want, provide the public Facebook Page URL, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-facebook-followers-step-1",
+          "title": "Choose Your Followers Package",
+          "description": "Compare the available Facebook follower quantities and prices, then select the package you want for your Page."
+        },
+        {
+          "id": "buy-facebook-followers-step-2",
+          "title": "Enter the Facebook Page URL",
+          "description": "Provide the correct public Facebook Page URL for the Page where you want the followers added. Your Facebook password is not required."
+        },
+        {
+          "id": "buy-facebook-followers-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected follower quantity and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-facebook-followers-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your Facebook followers order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Facebook Services",
+    "relatedIntro": "Followers are only one Facebook metric. If you want to increase the Page Like count or the like count on a specific Facebook post instead, compare the other Facebook services below."
+  }
+}

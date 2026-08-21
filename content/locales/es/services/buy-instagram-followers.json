@@ -1,0 +1,601 @@
+{
+  "content": {
+    "slug": "buy-instagram-followers",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Paquetes y precios de seguidores de Instagram | NovaLikes",
+      "description": "Compara paquetes de seguidores de Instagram, precios, detalles de entrega y tamaños de plan disponibles. Elige una opción que encaje con tu cuenta y tus objetivos de crecimiento."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR SEGUIDORES DE INSTAGRAM",
+      "title": "Comprar seguidores de Instagram",
+      "description": "Compra seguidores de Instagram para tu perfil público eligiendo el tamaño de paquete que encaja con tu cuenta. NovaLikes ofrece paquetes de seguidores de Instagram para creadores, negocios, marcas y otras cuentas públicas. Compara las cantidades y los precios disponibles, introduce tu nombre de usuario público de Instagram y completa tu pedido online. No se requiere contraseña de Instagram.",
+      "purpose": "Convert visitors comparing Instagram follower packages",
+      "primaryKeyword": "instagram followers packages",
+      "supportingKeywords": [
+        "Instagram Followers Pricing",
+        "Instagram Followers Plans",
+        "Instagram Followers Delivery",
+        "Instagram Followers Order"
+      ],
+      "suggestedWordCount": 60,
+      "primaryCta": {
+        "label": "Elegir un paquete",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Ver detalles de entrega",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-f-trust-password",
+          "label": "Sin contraseña necesaria"
+        },
+        {
+          "id": "ig-f-trust-public",
+          "label": "Solo nombre de usuario público"
+        },
+        {
+          "id": "ig-f-trust-checkout",
+          "label": "Pago seguro"
+        },
+        {
+          "id": "ig-f-trust-support",
+          "label": "Atención al cliente"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-followers/instagram-followers-hero.webp",
+        "alt": "Panel de perfil de Instagram con paquetes de seguidores disponibles",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Paquetes y precios de seguidores de Instagram",
+      "description": "Elige el número de seguidores de Instagram que quieres y consulta el precio de cada paquete antes de pedir. Selecciona una cantidad abajo para revisar los detalles del paquete y continúa cuando encuentres la opción que encaja con tu cuenta.",
+      "purpose": "Present real NovaLikes.com follower packages",
+      "primaryKeyword": "Instagram Followers Pricing",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuar con este paquete",
+      "emptyMessage": "Los paquetes de seguidores de Instagram no están disponibles temporalmente."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-followers",
+      "title": "¿Por qué la gente compra seguidores de Instagram?",
+      "description": "La gente compra seguidores de Instagram por distintos motivos. Algunos quieren un recuento mayor de seguidores en un perfil nuevo, mientras que otros usan paquetes de seguidores junto con publicaciones habituales, campañas o actividad de marca. El servicio cambia el recuento visible de seguidores en tu perfil, pero no garantiza interacción, alcance, ventas ni crecimiento orgánico.",
+      "purpose": "Explain informed use of Instagram followers packages",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "ig-f-social-proof",
+          "title": "Crea una audiencia inicial",
+          "description": "Los perfiles más nuevos pueden usar un paquete de seguidores para empezar con una audiencia visible mayor mientras siguen publicando su propio contenido."
+        },
+        {
+          "id": "ig-f-launch",
+          "title": "Apoya el lanzamiento de un producto o marca",
+          "description": "Creadores y negocios pueden añadir seguidores al presentar una cuenta, producto, servicio o campaña nueva en Instagram."
+        },
+        {
+          "id": "ig-f-community",
+          "title": "Aumenta tu recuento visible de seguidores",
+          "description": "Los paquetes de seguidores aumentan el número de seguidores que se muestra en tu perfil, sin cambiar los likes, views o comentarios de publicaciones concretas."
+        },
+        {
+          "id": "ig-f-flexible",
+          "title": "Elige una cantidad que encaje con tu perfil",
+          "description": "Los distintos tamaños de paquete te permiten elegir el número de seguidores según el tamaño actual de tu cuenta y lo que quieras pedir."
+        },
+        {
+          "id": "ig-f-alongside",
+          "title": "Usa seguidores junto con contenido habitual",
+          "description": "Comprar seguidores puede cambiar el tamaño visible de una cuenta, mientras que las publicaciones, Reels, Stories y la interacción con la audiencia siguen dependiendo de lo que publiques y de cómo gestiones el perfil."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes",
+      "title": "Por qué pedir en NovaLikes",
+      "description": "NovaLikes mantiene el pedido de seguidores de Instagram sencillo: solo nombre de usuario público, detalles claros del paquete, pago seguro y seguimiento del pedido disponible.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 40,
+      "items": [
+        {
+          "id": "ig-f-wn-username",
+          "title": "Solo nombre de usuario público",
+          "description": "Los pedidos usan tu nombre de usuario público de Instagram: sin contraseña ni acceso privado a la cuenta."
+        },
+        {
+          "id": "ig-f-wn-checkout",
+          "title": "Pago seguro",
+          "description": "Completa el pago a través de un proceso de checkout protegido."
+        },
+        {
+          "id": "ig-f-wn-tracking",
+          "title": "Seguimiento del pedido",
+          "description": "Consulta las actualizaciones de entrega disponibles con tu ID de pedido y tu email."
+        },
+        {
+          "id": "ig-f-wn-support",
+          "title": "Atención al cliente",
+          "description": "Obtén ayuda con la selección de paquetes, preguntas sobre el pago y actualizaciones del pedido."
+        }
+      ]
+    },
+    "features": {
+      "id": "buy-instagram-followers-features",
+      "title": "Características",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Cómo comprar seguidores de Instagram",
+      "description": "Pedir seguidores de Instagram en NovaLikes son cuatro pasos. Elige tu paquete, facilita el nombre de usuario público del perfil de Instagram, completa el pago y usa los datos de tu pedido para seguir su estado.",
+      "purpose": "Explain ordering process",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 80,
+      "steps": [
+        {
+          "id": "ig-f-step-1",
+          "title": "Elige tu paquete de seguidores",
+          "description": "Compara las cantidades y los precios de seguidores de Instagram disponibles, y selecciona el paquete que quieres para tu perfil."
+        },
+        {
+          "id": "ig-f-step-2",
+          "title": "Introduce tu nombre de usuario de Instagram",
+          "description": "Facilita el nombre de usuario público correcto de la cuenta de Instagram que debe recibir los seguidores. No necesitas facilitar tu contraseña."
+        },
+        {
+          "id": "ig-f-step-3",
+          "title": "Completa tu pedido",
+          "description": "Revisa la cantidad de seguidores y el precio seleccionados, y continúa con el pago para realizar tu pedido."
+        },
+        {
+          "id": "ig-f-step-4",
+          "title": "Sigue tu pedido",
+          "description": "Después del pago, usa la opción de seguimiento del pedido disponible para consultar el estado de tu pedido de seguidores de Instagram."
+        }
+      ],
+      "cta": {
+        "label": "Elegir un paquete",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "delivery-and-safety",
+      "title": "¿Qué necesitas para hacer un pedido?",
+      "description": "Pedir seguidores de Instagram solo requiere unos pocos datos públicos. No necesitas facilitar tu contraseña de Instagram, acceso privado a la cuenta ni códigos de verificación.",
+      "purpose": "Explain username and order requirements",
+      "primaryKeyword": "Instagram Followers Delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "ig-f-req-username",
+          "title": "Nombre de usuario público de Instagram",
+          "description": "Facilita el nombre de usuario público del perfil de Instagram que debe recibir el paquete de seguidores seleccionado."
+        },
+        {
+          "id": "ig-f-req-package",
+          "title": "Paquete seleccionado",
+          "description": "Elige la cantidad de seguidores que mejor encaje con tu cuenta y tus objetivos de crecimiento actuales."
+        },
+        {
+          "id": "ig-f-req-public",
+          "title": "Acceso público al perfil",
+          "description": "El perfil de Instagram seleccionado debe permanecer accesible públicamente mientras se procesa tu pedido."
+        },
+        {
+          "id": "ig-f-req-email",
+          "title": "Dirección de email",
+          "description": "Usa una dirección de email válida para recibir confirmaciones del pedido, actualizaciones y atención al cliente si la necesitas."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "ig-followers-reviews",
+      "title": "Experiencias recientes de clientes",
+      "description": "Lee opiniones de clientes que usaron nuestro servicio de paquetes de Instagram y completaron sus pedidos a través de NovaLikes.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-followers-faq",
+      "title": "Preguntas frecuentes sobre comprar seguidores de Instagram",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "instagram followers packages",
+      "faqIds": [
+        "faq-ig-followers-password",
+        "faq-ig-followers-delivery-speed",
+        "faq-ig-followers-gradual-delivery",
+        "faq-ig-followers-refill",
+        "faq-ig-followers-private",
+        "faq-ig-followers-track",
+        "faq-ig-followers-business",
+        "faq-ig-followers-money-back"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services",
+      "title": "Explora otros servicios de Instagram",
+      "description": "Los seguidores son solo una parte de un perfil de Instagram. Si quieres trabajar en una publicación, Reel o vídeo concreto, compara los otros servicios de Instagram abajo.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-likes",
+        "buy-instagram-views",
+        "buy-instagram-comments"
+      ]
+    },
+    "finalCta": {
+      "id": "ig-followers-final-cta",
+      "title": "Elige tu paquete de seguidores de Instagram",
+      "description": "Compara las cantidades y los precios de seguidores disponibles, elige el paquete que encaja con tu perfil y realiza tu pedido con tu nombre de usuario público de Instagram.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver paquetes de seguidores de Instagram",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Seguir un pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "followersAuthority": {
+    "whyChoose": {
+      "id": "why-choose-novalikes-instagram-followers",
+      "title": "¿Por qué elegir NovaLikes para seguidores de Instagram?",
+      "description": "NovaLikes mantiene sencillo el proceso de pedido de seguidores de Instagram. Puedes comparar tamaños de paquete y precios antes de comprar, pedir con tu nombre de usuario público, seguir tu compra y contactar con soporte si necesitas ayuda.",
+      "items": [
+        {
+          "id": "ig-f-wc-username",
+          "title": "Paquetes para cuentas de distintos tamaños",
+          "description": "Elige entre cantidades de seguidores más pequeñas y más grandes, en lugar de pagar un paquete fijo que puede no encajar con tu perfil.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-wc-checkout",
+          "title": "Precios antes de pedir",
+          "description": "Consulta el coste de cada paquete de seguidores de Instagram antes de añadir tu selección al carrito.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-wc-tracking",
+          "title": "Sigue tu pedido",
+          "description": "Usa los datos de tu pedido para consultar las actualizaciones de estado disponibles después de realizar la compra.",
+          "icon": "map-pin"
+        },
+        {
+          "id": "ig-f-wc-support",
+          "title": "Atención al cliente",
+          "description": "Contacta con NovaLikes si necesitas ayuda para elegir un paquete o tienes una pregunta sobre un pedido de seguidores existente.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "whyBuyNote": "El paquete adecuado depende de tu cuenta y de lo que quieras cambiar. Si tu objetivo son likes en publicaciones, views en Reels o comentarios en lugar del recuento de seguidores, elige el servicio de Instagram correspondiente.",
+    "orderNotice": "NovaLikes procesa los pedidos de seguidores usando solo tu nombre de usuario público de Instagram. Nunca se requiere tu contraseña de Instagram durante el pago.",
+    "canYouBuy": {
+      "id": "can-you-buy-instagram-followers",
+      "title": "¿Se pueden comprar seguidores de Instagram?",
+      "description": "Sí. Los paquetes de seguidores de Instagram se pueden comprar en servicios de terceros como NovaLikes. Eliges el número de seguidores que quieres, facilitas el nombre de usuario público de Instagram del perfil y completas el pedido a través del sitio web.",
+      "cards": [
+        {
+          "id": "ig-f-can-username",
+          "title": "Qué cambia realmente comprar seguidores de Instagram",
+          "description": "Un pedido de seguidores de Instagram se centra en el recuento de seguidores que se muestra en el perfil seleccionado. No aumenta automáticamente los likes, comentarios o views de tus publicaciones, y no garantiza que Instagram muestre tu contenido a más personas.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-can-password",
+          "title": "Tu cuenta sigue necesitando su propio contenido",
+          "description": "Un recuento mayor de seguidores no sustituye publicar. Las fotos, Reels, Stories, pies de foto, respuestas y demás actividad de la cuenta siguen viniendo de ti. Si quieres crear una audiencia que interactúe con regularidad con tu contenido, tu actividad en Instagram sigue siendo importante.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-can-packages",
+          "title": "Los seguidores son distintos de otros servicios de Instagram",
+          "description": "Elige seguidores cuando el recuento de seguidores del perfil sea lo que quieres cambiar. Likes de Instagram son para publicaciones o Reels individuales, views de Instagram son para contenido de vídeo elegible y comentarios de Instagram son para comentarios en el contenido seleccionado.",
+          "icon": "sparkles"
+        }
+      ],
+      "closingNote": "Antes de pedir, comprueba que has seleccionado el servicio y la cantidad de seguidores correctos para tu perfil. Las opciones de paquete y los precios se muestran en esta página para que puedas compararlos antes del pago."
+    },
+    "doesBuyingHelp": {
+      "id": "does-buying-instagram-followers-help",
+      "title": "¿Ayuda comprar seguidores de Instagram?",
+      "description": "Comprar seguidores de Instagram aumenta el recuento visible de seguidores que se muestra en un perfil, lo que puede ayudar a crear una primera impresión más sólida para los visitantes. Sin embargo, los paquetes de seguidores no garantizan más interacción, mayor alcance orgánico, ventas adicionales ni mejor visibilidad en los sistemas de recomendación de Instagram.",
+      "helpTitle": "En qué pueden ayudar los seguidores",
+      "helpItems": [
+        "Un recuento visible de seguidores más alto",
+        "Una primera impresión más sólida para nuevos visitantes",
+        "Prueba social extra durante lanzamientos",
+        "Apoyo junto con contenido y anuncios",
+        "Un aspecto más consolidado para perfiles públicos"
+      ],
+      "limitTitle": "Qué no garantizan",
+      "limitItems": [
+        "Mayor interacción en publicaciones",
+        "Más comentarios o compartidos",
+        "Mayor alcance orgánico",
+        "Ventas adicionales",
+        "Aprobación de monetización",
+        "Promoción algorítmica"
+      ],
+      "closingNote": "Los seguidores son más eficaces cuando se combinan con contenido de valor, publicación constante e interacción genuina con la audiencia, en lugar de tratarse como un sustituto de una estrategia activa en Instagram."
+    },
+    "whatHappens": {
+      "id": "what-happens-after-you-buy-instagram-followers",
+      "title": "¿Qué ocurre después de comprar seguidores de Instagram?",
+      "description": "Después de hacer un pedido de seguidores de Instagram, los datos que enviaste se usan para procesar el paquete seleccionado para el perfil correcto. Mantén sin cambios la información de la cuenta que facilitaste mientras se gestiona el pedido.",
+      "steps": [
+        {
+          "id": "ig-f-th-confirmed",
+          "title": "Se revisan los datos de tu pedido",
+          "description": "El paquete de seguidores seleccionado y el nombre de usuario de Instagram se asocian a tu pedido para que la solicitud se procese para el perfil público previsto."
+        },
+        {
+          "id": "ig-f-th-delivery",
+          "title": "La entrega va al perfil enviado",
+          "description": "Los seguidores se dirigen a la cuenta de Instagram vinculada al nombre de usuario que introdujiste. Revisa tu nombre de usuario con cuidado antes de completar el pedido."
+        },
+        {
+          "id": "ig-f-th-increase",
+          "title": "Los pedidos más grandes pueden tardar más",
+          "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de seguidores y las condiciones actuales de pedidos. Evita basarte en un único plazo de entrega fijo para todos los paquetes."
+        },
+        {
+          "id": "ig-f-th-grow",
+          "title": "Puedes consultar el estado de tu pedido",
+          "description": "Usa el seguimiento de pedidos de NovaLikes para consultar las actualizaciones disponibles de tu compra. Si necesitas ayuda con un pedido, contacta con soporte con la información relevante del pedido."
+        }
+      ],
+      "closingNote": "Mantén tu perfil de Instagram accesible públicamente cuando se requiera mientras se procesa el pedido. Si cambias tu nombre de usuario u otros datos relevantes de la cuenta después de pedir, contacta con soporte si necesitas ayuda."
+    },
+    "serviceCompare": {
+      "id": "instagram-followers-vs-likes-vs-views",
+      "title": "Seguidores vs likes vs views de Instagram",
+      "description": "Seguidores, likes y views miden partes distintas de una cuenta de Instagram. El servicio adecuado depende de si quieres trabajar en tu perfil, en la interacción de una publicación o Reel concreto, o en el recuento de views del contenido de vídeo.",
+      "current": {
+        "title": "Seguidores de Instagram",
+        "description": "Los seguidores son una métrica a nivel de perfil. Elige seguidores de Instagram cuando quieras aumentar el recuento de seguidores que se muestra en tu cuenta.",
+        "bestFor": "Recuento de seguidores del perfil, cuentas nuevas, creadores, marcas y perfiles de negocio.",
+        "ctaLabel": "Seguidores de Instagram"
+      },
+      "likes": {
+        "title": "Likes de Instagram",
+        "description": "Los likes están vinculados a contenido individual. Elige likes de Instagram cuando quieras más likes visibles en una publicación o Reel público concreto.",
+        "bestFor": "Publicaciones, Reels y contenido en el que el recuento visible de likes es la métrica en la que quieres trabajar.",
+        "href": "/buy-instagram-likes",
+        "ctaLabel": "Ver likes de Instagram"
+      },
+      "views": {
+        "title": "Views de Instagram",
+        "description": "Las views se aplican a contenido de vídeo elegible. Elige views de Instagram cuando quieras aumentar el recuento de views que se muestra en un Reel o vídeo público.",
+        "bestFor": "Reels, vídeos y otro contenido de vídeo de Instagram elegible.",
+        "href": "/buy-instagram-views",
+        "ctaLabel": "Ver views de Instagram"
+      },
+      "combinedNote": "Si los comentarios son la interacción que necesitas, los comentarios de Instagram están disponibles por separado para publicaciones y Reels elegibles.",
+      "commentsHref": "/buy-instagram-comments"
+    },
+    "beforeBuying": {
+      "id": "what-to-check-before-buying-instagram-followers",
+      "title": "Qué revisar antes de comprar seguidores de Instagram",
+      "description": "Antes de comprar seguidores de Instagram, revisa los detalles del servicio con el mismo cuidado que en cualquier compra online. El paquete, la información de la cuenta, los precios, las políticas y el soporte disponible deben estar claros antes de completar el pago.",
+      "framingNote": "Evita elegir un servicio solo por promesas exageradas. Las afirmaciones sobre interacción, alcance, ventas o rendimiento del algoritmo de Instagram garantizados no deben sustituir entender qué ofrece realmente el paquete de seguidores.",
+      "items": [
+        {
+          "id": "ig-f-check-pricing",
+          "title": "Revisa la cantidad de seguidores",
+          "description": "Asegúrate de haber seleccionado el número de seguidores de Instagram que realmente quieres para tu perfil. Revisa el paquete otra vez antes de añadirlo al carrito.",
+          "icon": "credit-card"
+        },
+        {
+          "id": "ig-f-check-username",
+          "title": "Confirma el precio",
+          "description": "Revisa el precio completo del paquete seleccionado antes del pago. Si cambias a otra cantidad de seguidores, consulta el precio actualizado antes de pedir.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-check-delivery",
+          "title": "Usa el nombre de usuario de Instagram correcto",
+          "description": "Vuelve a comprobar el nombre de usuario público que envías. Un error de escritura o una cuenta incorrecta puede causar problemas sobre adónde se dirige el pedido.",
+          "icon": "truck"
+        },
+        {
+          "id": "ig-f-check-tracking",
+          "title": "Lee las políticas correspondientes",
+          "description": "Revisa los términos, la información de reembolso y otras políticas aplicables para entender las condiciones asociadas a tu compra.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-check-support",
+          "title": "Sabe cómo obtener ayuda",
+          "description": "Comprueba que puedes contactar con soporte y seguir tu pedido si tienes una pregunta después del pago.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "worldwide": {
+      "id": "buying-instagram-followers",
+      "title": "Prepara tu perfil de Instagram para un pedido de seguidores",
+      "description": "Antes de hacer un pedido de seguidores de Instagram, asegúrate de que el perfil que quieres usar es la cuenta pública correcta y de que el nombre de usuario permanecerá sin cambios mientras se procesa el pedido.",
+      "eyebrow": "Listo para seguidores de Instagram",
+      "closingNote": "Seguidores de Instagram es un servicio a nivel de perfil. Confirma el nombre de usuario, mantén el perfil accesible cuando se requiera y revisa el paquete seleccionado antes del pago.",
+      "cards": [
+        {
+          "id": "ig-f-ww-creators",
+          "title": "Revisa tu nombre de usuario público",
+          "description": "Confirma el nombre de usuario exacto de Instagram antes del pago. La información del perfil que envías se usa para identificar dónde debe procesarse el pedido de seguidores.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-ww-businesses",
+          "title": "Mantén el perfil accesible",
+          "description": "Mantén el perfil de Instagram accesible públicamente cuando el servicio seleccionado lo requiera. Cambiar la visibilidad durante un pedido activo puede interferir con el procesamiento.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-ww-brands",
+          "title": "Evita cambiar tu nombre de usuario",
+          "description": "Si es posible, no cambies el nombre de usuario enviado mientras un pedido esté activo. Contacta con soporte si un cambio importante de cuenta afecta a un pedido existente.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-ww-orgs",
+          "title": "Revisa el paquete antes del pago",
+          "description": "Comprueba la cantidad de seguidores y el precio una vez más antes de completar tu pedido, para que el paquete seleccionado coincida con lo que pretendías comprar.",
+          "icon": "users"
+        }
+      ]
+    },
+    "packageSizes": {
+      "id": "popular-instagram-followers-packages",
+      "title": "Paquetes populares de seguidores de Instagram",
+      "description": "¿No sabes qué paquete elegir? Estas son algunas de las cantidades de seguidores de Instagram disponibles en NovaLikes. Compara las opciones abajo, o vuelve a la sección completa de precios para ver todos los paquetes disponibles.",
+      "rows": [
+        {
+          "id": "pkg-100",
+          "quantity": "100 seguidores",
+          "recommendedFor": "Una opción más pequeña para perfiles que quieren empezar con un aumento moderado de seguidores."
+        },
+        {
+          "id": "pkg-500",
+          "quantity": "500 seguidores",
+          "recommendedFor": "Una opción intermedia para cuentas que buscan un cambio más notable en el recuento de seguidores."
+        },
+        {
+          "id": "pkg-1k",
+          "quantity": "1,000 seguidores",
+          "recommendedFor": "Un paquete más grande para perfiles que quieren añadir mil seguidores en un solo pedido."
+        },
+        {
+          "id": "pkg-5k",
+          "quantity": "5,000 seguidores",
+          "recommendedFor": "Una opción de mayor volumen para cuentas que quieren un aumento más grande en su recuento visible de seguidores."
+        },
+        {
+          "id": "pkg-10k",
+          "quantity": "10,000+ seguidores",
+          "recommendedFor": "Una opción para perfiles que eligen una de las cantidades de seguidores más grandes disponibles en NovaLikes."
+        }
+      ]
+    },
+    "bestPractices": {
+      "id": "best-practices-after-buying-instagram-followers",
+      "title": "Buenas prácticas después de comprar seguidores de Instagram",
+      "description": "Comprar seguidores cambia el recuento de seguidores de tu perfil, pero el resto de tu presencia en Instagram sigue dependiendo de cómo gestiones la cuenta. Sigue publicando, mejora tu perfil y usa los datos de tu propia cuenta para entender a qué responde tu audiencia.",
+      "closingNote": "El recuento de seguidores es solo una parte de un perfil de Instagram. La calidad del contenido, los hábitos de publicación, la interacción con la audiencia y la forma en que presentas tu cuenta siguen necesitando atención continua.",
+      "items": [
+        {
+          "id": "ig-f-bp-publish",
+          "title": "Sigue publicando con constancia",
+          "description": "Continúa publicando posts, Reels y Stories, en lugar de tratar un pedido de seguidores como un sustituto del contenido habitual.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-bp-profile",
+          "title": "Mantén tu perfil completo",
+          "description": "Usa una foto de perfil clara, una bio útil, un enlace relevante e información de cuenta precisa para que los visitantes entiendan rápido quién eres y sobre qué publicas.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-bp-engage",
+          "title": "Crea contenido para tu audiencia",
+          "description": "Planifica las publicaciones en torno a los temas, productos, servicios o intereses relevantes para las personas a las que quieres llegar.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-bp-growth",
+          "title": "Presta atención a Instagram Insights",
+          "description": "Si Insights está disponible en tu cuenta, revisa métricas como alcance, views, interacciones y actividad de seguidores para ver cómo rinde tu propio contenido.",
+          "icon": "sparkles"
+        },
+        {
+          "id": "ig-f-bp-formats",
+          "title": "Usa Reels, publicaciones y Stories con distintos propósitos",
+          "description": "Los distintos formatos de Instagram te dan distintas formas de publicar. Prueba los formatos que tengan sentido para tu cuenta, en lugar de basarte en un solo tipo de contenido.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-bp-respond",
+          "title": "Responde a las interacciones reales",
+          "description": "Responde a comentarios y mensajes genuinos cuando corresponda. Comprar seguidores no sustituye las conversaciones y relaciones que construyes con tu propia actividad en la cuenta.",
+          "icon": "heart"
+        }
+      ]
+    },
+    "commonMistakes": {
+      "id": "common-mistakes-when-buying-instagram-followers",
+      "title": "Errores habituales al comprar seguidores de Instagram",
+      "description": "La mayoría de los problemas se pueden evitar revisando unos pocos detalles antes y después de pedir. Estos son algunos errores habituales a tener en cuenta al elegir un paquete de seguidores de Instagram.",
+      "closingNote": "Antes del pago, revisa los datos de tu perfil, el servicio seleccionado, la cantidad de seguidores y el precio una vez más. Si algo de un pedido existente no está claro, usa las opciones de seguimiento o soporte disponibles.",
+      "items": [
+        {
+          "id": "ig-f-mistake-quantity",
+          "title": "Introducir el nombre de usuario incorrecto",
+          "description": "Revisa tu nombre de usuario de Instagram con cuidado antes del pago. El pedido debe asociarse al perfil público correcto.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-mistake-content",
+          "title": "Elegir el servicio incorrecto",
+          "description": "Seguidores, likes, views y comentarios son servicios distintos. Elige seguidores solo cuando el recuento de seguidores de tu perfil sea lo que quieres cambiar.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-mistake-details",
+          "title": "Elegir un paquete sin revisar la cantidad",
+          "description": "Revisa el número de seguidores incluidos en el paquete antes de pedir, para saber exactamente qué cantidad seleccionaste.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-mistake-results",
+          "title": "Esperar que los seguidores sustituyan el contenido",
+          "description": "Un recuento mayor de seguidores no sustituye las publicaciones, Reels, Stories ni el trabajo de gestionar tu cuenta de Instagram.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-mistake-engagement",
+          "title": "Esperar interacción o alcance garantizados",
+          "description": "No asumas que cambiar tu recuento de seguidores producirá automáticamente más likes, comentarios, views, alcance, ventas o crecimiento orgánico.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-mistake-account-change",
+          "title": "Cambiar datos importantes de la cuenta durante un pedido",
+          "description": "Evita cambiar el nombre de usuario enviado u otros datos relevantes del perfil mientras se procesa un pedido. Contacta con soporte si un cambio necesario de cuenta afecta a un pedido existente.",
+          "icon": "users"
+        }
+      ]
+    },
+    "relatedPackages": {
+      "copyBySlug": {
+        "buy-instagram-likes": {
+          "title": "Likes de Instagram",
+          "description": "Elige likes de Instagram cuando quieras añadir likes a una publicación o Reel público concreto.",
+          "ctaLabel": "Ver likes de Instagram"
+        },
+        "buy-instagram-views": {
+          "title": "Views de Instagram",
+          "description": "Elige views de Instagram cuando quieras aumentar el recuento de views en un Reel o vídeo público elegible.",
+          "ctaLabel": "Ver views de Instagram"
+        },
+        "buy-instagram-comments": {
+          "title": "Comentarios de Instagram",
+          "description": "Elige comentarios de Instagram cuando quieras que se añadan comentarios a una publicación o Reel público elegible.",
+          "ctaLabel": "Ver comentarios de Instagram"
+        }
+      }
+    }
+  }
+}

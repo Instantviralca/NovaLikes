@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "eyebrow": "KONTAKT",
+    "title": "Wir sind für Sie da!",
+    "description": "Haben Sie Fragen zu unseren Services oder brauchen Sie Hilfe bei einer Bestellung? Kontaktieren Sie den NovaLikes-Support und geben Sie Ihre Bestelldaten an, wenn es um einen Kauf geht.",
+    "trustLabels": [
+      {
+        "id": "contact-hero-247",
+        "label": "Kundensupport — Hilfe zu Services und Bestellungen"
+      },
+      {
+        "id": "contact-hero-quick",
+        "label": "Bestellverfolgung — Status nach dem Checkout prüfen"
+      },
+      {
+        "id": "contact-hero-safe",
+        "label": "Kein Passwort erforderlich — nur öffentliche Angaben"
+      }
+    ],
+    "visual": {
+      "alt": "NovaLikes-Kundensupport-Illustration mit Chat und Kopfhörern"
+    }
+  },
+  "form": {
+    "title": "Senden Sie uns eine Nachricht",
+    "description": "Füllen Sie das Formular aus. Unser Team antwortet so schnell wie möglich.",
+    "fields": {
+      "fullNameLabel": "Ihr Name",
+      "fullNamePlaceholder": "Ihr Name",
+      "emailLabel": "Ihre E-Mail",
+      "emailPlaceholder": "Ihre E-Mail",
+      "subjectLabel": "Betreff",
+      "subjectPlaceholder": "Betreff",
+      "orderIdLabel": "Bestell-ID",
+      "orderIdPlaceholder": "Optional — z. B. IV-1001",
+      "orderIdHelper": "Optional. Geben Sie diese an, wenn sich Ihre Nachricht auf eine bestehende Bestellung bezieht.",
+      "messageLabel": "Ihre Nachricht",
+      "messagePlaceholder": "Ihre Nachricht",
+      "submitLabel": "Nachricht senden",
+      "successTitle": "Nachricht gesendet",
+      "successDescription": "Danke, dass Sie NovaLikes kontaktiert haben. Wir antworten über die von Ihnen angegebene E-Mail-Adresse."
+    }
+  },
+  "business": {
+    "title": "Kontaktinformationen"
+  },
+  "faqPreview": {
+    "title": "Schnelle Antworten auf häufige Fragen",
+    "description": "HÄUFIG GESTELLTE FRAGEN",
+    "viewAllCta": {
+      "label": "Alle FAQs anzeigen"
+    }
+  },
+  "finalCta": {
+    "title": "Brauchen Sie noch Hilfe?",
+    "description": "Unser freundliches Support-Team ist immer für Sie da. Zögern Sie nicht, uns jederzeit zu erreichen!",
+    "primaryCta": {
+      "label": "Live-Chat starten"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "Kontakt",
+    "heroAria": "Kontakt NovaLikes",
+    "sendAnother": "Weitere Nachricht senden",
+    "sending": "Wird gesendet…",
+    "submitError": "Ihre Nachricht konnte nicht gesendet werden.",
+    "privacyNote": "Ihre Angaben sind sicher und werden niemals weitergegeben.",
+    "fullNameRequired": "Der vollständige Name ist erforderlich.",
+    "emailRequired": "Die E-Mail-Adresse ist erforderlich.",
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "subjectRequired": "Der Betreff ist erforderlich.",
+    "messageRequired": "Die Nachricht ist erforderlich.",
+    "messageMin": "Die Nachricht muss mindestens 20 Zeichen lang sein.",
+    "emailTitle": "E-Mail-Support",
+    "emailReply": "Wir antworten innerhalb von Minuten",
+    "liveChatTitle": "Live-Chat",
+    "liveChatAvailable": "24/7 auf unserer Website verfügbar",
+    "liveChatHelp": "Erhalten Sie sofort Hilfe von unserem Team",
+    "quickTitle": "Schneller Support",
+    "quickHours": "Mo – So: 24/7",
+    "quickReach": "Erreichen Sie uns jederzeit über das Kontaktformular",
+    "responseTitle": "Antwortzeit",
+    "responseAverage": "Durchschnittliche Antwortzeit:",
+    "responseTime": "Unter 15 Minuten",
+    "orderTitle": "Bestellsupport",
+    "orderHelp": "Brauchen Sie Hilfe bei einer Bestellung?",
+    "orderLink": "Zur Bestellsupport-Seite →"
+  }
+}

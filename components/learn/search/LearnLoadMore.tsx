@@ -23,7 +23,7 @@ export function LearnLoadMore({
       <Button
         type="button"
         variant="outline"
-        className="min-h-11"
+        className="min-h-11 rounded-full px-6"
         disabled={disabled}
         onClick={onLoadMore}
       >

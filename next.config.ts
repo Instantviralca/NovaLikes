@@ -4,6 +4,8 @@
 
 import type { NextConfig } from 'next';
 
+import { getLegacyLocalizedRedirects } from './lib/i18n/slugs';
+
 /**
  * Content-Security-Policy-Report-Only (not enforced).
  * Monitor violations in the browser console — no report-uri/report-to endpoint configured.
@@ -146,50 +148,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/buy-youtube-subscribers-views',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-100-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-200-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-500-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-1000-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-2000-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-3000-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-5000-youtube-subscribers',
-        destination: '/buy-youtube-subscribers',
-        permanent: true,
-      },
-      {
         source: '/buy-facebook-likes-followers',
         destination: '/buy-facebook-followers',
         permanent: true,
       },
+      {
+        source: '/authors/novalikes-editorial-team',
+        destination: '/authors/najaf-khan',
+        permanent: true,
+      },
+      ...getLegacyLocalizedRedirects(),
     ];
   },
   async headers() {

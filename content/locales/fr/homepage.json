@@ -1,0 +1,761 @@
+{
+  "hero": {
+    "eyebrow": "CROISSANCE SUR LES RÉSEAUX SOCIAUX POUR INSTAGRAM, TIKTOK ET FACEBOOK",
+    "title": "Développez votre présence sur les réseaux sociaux avec NovaLikes",
+    "description": "Achetez des abonnés, des likes, des vues et des commentaires pour Instagram, TikTok et Facebook. NovaLikes vous propose des forfaits clairs pour chaque service, afin de choisir ce qui convient à votre compte et commander sans partager votre mot de passe. Sélectionnez un service, choisissez un forfait, indiquez les informations publiques de profil ou de contenu demandées, puis finalisez votre commande en ligne.",
+    "primaryCta": {
+      "label": "Voir les services",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "Comment ça marche",
+      "href": "#how-it-works"
+    },
+    "trustFeatures": [
+      {
+        "id": "password",
+        "line1": "Aucun mot de passe",
+        "line2": "requis",
+        "icon": "shield"
+      },
+      {
+        "id": "pricing",
+        "line1": "Tarifs",
+        "line2": "clairs",
+        "icon": "tag"
+      },
+      {
+        "id": "tracking",
+        "line1": "Suivi de",
+        "line2": "commande",
+        "icon": "truck"
+      }
+    ],
+    "visual": {
+      "src": "/assets/images/homepage/hero-social-growth.webp",
+      "alt": "Illustration NovaLikes de croissance sur les réseaux sociaux, avec Instagram, TikTok et Facebook",
+      "width": 1024,
+      "height": 682
+    }
+  },
+  "platformSelector": {
+    "id": "platform-selector",
+    "eyebrow": "Choisissez votre plateforme",
+    "title": "Choisissez votre plateforme",
+    "description": "Commencez par la plateforme que vous souhaitez développer. Chacune a ses propres services et forfaits, pour aller directement à ce dont vous avez besoin.",
+    "trustItems": [
+      {
+        "id": "packages",
+        "label": "Forfaits clairement présentés",
+        "icon": "shield"
+      },
+      {
+        "id": "password",
+        "label": "Aucun mot de passe requis",
+        "icon": "shield"
+      },
+      {
+        "id": "refund",
+        "label": "Garantie de remboursement de 30 jours sur les commandes éligibles",
+        "icon": "shield"
+      }
+    ],
+    "socialProof": {
+      "text": "Comparez les services NovaLikes pour Instagram, TikTok et Facebook",
+      "href": "#services-overview"
+    },
+    "platforms": [
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "description": "Abonnés, likes, vues et commentaires pour les profils et contenus Instagram.",
+        "href": "#instagram-services",
+        "ctaLabel": "Voir Instagram",
+        "badge": "Services Instagram",
+        "metric": {
+          "value": "Profil",
+          "label": "Abonnés"
+        },
+        "tags": [
+          {
+            "label": "Croissance du profil",
+            "href": "/buy-instagram-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Engagement des posts",
+            "href": "/buy-instagram-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Vues de Reels",
+            "href": "/buy-instagram-views",
+            "icon": "play"
+          },
+          {
+            "label": "Commentaires",
+            "href": "/buy-instagram-comments",
+            "icon": "comment"
+          }
+        ]
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "description": "Abonnés, likes et vues pour les comptes et vidéos TikTok.",
+        "href": "#tiktok-services",
+        "ctaLabel": "Voir TikTok",
+        "metric": {
+          "value": "Vidéo",
+          "label": "Vues"
+        },
+        "tags": [
+          {
+            "label": "Croissance du compte",
+            "href": "/buy-tiktok-followers",
+            "icon": "trend"
+          },
+          {
+            "label": "Likes de vidéos",
+            "href": "/buy-tiktok-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Vues de vidéos",
+            "href": "/buy-tiktok-views",
+            "icon": "eye"
+          },
+          {
+            "label": "Plus d’engagement",
+            "href": "#tiktok-services",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "description": "Abonnés, J’aime de Page et J’aime de publication pour les Pages et publications Facebook publiques.",
+        "href": "#facebook-services",
+        "ctaLabel": "Voir Facebook",
+        "metric": {
+          "value": "Page",
+          "label": "J’aime"
+        },
+        "tags": [
+          {
+            "label": "Croissance de la Page",
+            "href": "/buy-facebook-page-likes",
+            "icon": "users"
+          },
+          {
+            "label": "J’aime de publication",
+            "href": "/buy-facebook-post-likes",
+            "icon": "thumb"
+          },
+          {
+            "label": "Abonnés du profil",
+            "href": "/buy-facebook-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Plus de portée",
+            "href": "#facebook-services",
+            "icon": "reach"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesOverview": {
+    "id": "services-overview",
+    "eyebrow": "Tous les services",
+    "title": "Tous les services NovaLikes",
+    "description": "Choisissez le service qui correspond à ce que vous souhaitez développer. NovaLikes propose des abonnés, likes, vues, commentaires, J’aime de Page et J’aime de publication sur Instagram, TikTok et Facebook. Ouvrez un service pour comparer les volumes et les prix des forfaits.",
+    "trustNote": "Comparez les services et les forfaits",
+    "features": [
+      {
+        "id": "users",
+        "label": "Services par plateforme",
+        "icon": "users"
+      },
+      {
+        "id": "delivery",
+        "label": "Tarifs clairs par forfait",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Assistance client",
+        "icon": "headset"
+      },
+      {
+        "id": "payments",
+        "label": "Paiements par carte sécurisés",
+        "icon": "shield"
+      }
+    ]
+  },
+  "platformGroupTitles": {
+    "instagram": {
+      "id": "instagram-services",
+      "title": "Croissance Instagram",
+      "description": "Choisissez des abonnés, des likes, des vues ou des commentaires selon ce que vous voulez améliorer sur Instagram."
+    },
+    "tiktok": {
+      "id": "tiktok-services",
+      "title": "Croissance TikTok",
+      "description": "Choisissez des abonnés, des likes ou des vues selon ce que vous voulez ajouter à votre compte ou à vos vidéos TikTok."
+    },
+    "facebook": {
+      "id": "facebook-services",
+      "title": "Croissance Facebook",
+      "description": "Choisissez des abonnés, des J’aime de Page ou des J’aime de publication selon la partie de votre présence Facebook que vous souhaitez travailler."
+    }
+  },
+  "why": {
+    "id": "why-novalikes",
+    "title": "Pourquoi choisir NovaLikes ?",
+    "description": "Commander des services pour les réseaux sociaux ne devrait pas vous laisser dans le flou sur le prix, les informations à fournir ou l’état de votre commande. NovaLikes rend ces détails clairs dès le départ.",
+    "points": [
+      {
+        "title": "Forfaits clairement présentés",
+        "body": "Consultez les volumes et les prix disponibles avant de commander, pour savoir exactement quel forfait vous choisissez."
+      },
+      {
+        "title": "Aucun mot de passe requis",
+        "body": "Nous demandons uniquement les informations publiques de profil, de Page, de publication ou de vidéo nécessaires au service commandé. Le mot de passe de votre compte reste privé."
+      },
+      {
+        "title": "Suivi de commande",
+        "body": "Utilisez les détails de votre commande pour en vérifier le statut après le paiement, au lieu de vous demander où elle en est."
+      },
+      {
+        "title": "De l’aide quand vous en avez besoin",
+        "body": "Si vous avez une question sur un service ou une commande en cours, vous pouvez contacter NovaLikes."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "how-it-works",
+    "title": "Comment fonctionne NovaLikes",
+    "description": "Passer commande se fait en quelques étapes simples. Vous choisissez ce dont vous avez besoin, indiquez les informations publiques demandées, puis finalisez votre achat.",
+    "steps": [
+      {
+        "title": "Choisissez un service",
+        "body": "Sélectionnez Instagram, TikTok ou Facebook, puis choisissez les abonnés, likes, vues, commentaires, J’aime de Page ou J’aime de publication dont vous avez besoin."
+      },
+      {
+        "title": "Choisissez un forfait",
+        "body": "Comparez les volumes et les prix disponibles, puis sélectionnez le forfait que vous souhaitez commander."
+      },
+      {
+        "title": "Indiquez les informations demandées",
+        "body": "Fournissez le nom d’utilisateur public, le profil, la Page, la publication ou le lien vidéo demandé pour ce service. Aucun mot de passe n’est requis."
+      },
+      {
+        "title": "Finalisez votre commande",
+        "body": "Passez au paiement et validez votre commande. Vous pourrez ensuite utiliser le suivi de commande pour en consulter le statut."
+      }
+    ]
+  },
+  "guarantees": {
+    "id": "guarantees",
+    "title": "Sachez à quoi vous attendre avant de commander",
+    "description": "Avant de passer commande, vous devez savoir quelles informations sont demandées, comment fonctionnent les tarifs et où trouver de l’aide si besoin. NovaLikes met ces informations à disposition avant le paiement.",
+    "items": [
+      {
+        "title": "Votre mot de passe reste privé",
+        "body": "Vous n’avez pas besoin de partager le mot de passe de vos réseaux sociaux. Les commandes s’appuient sur les informations publiques de profil ou de contenu requises pour le service choisi."
+      },
+      {
+        "title": "Les prix sont affichés avant le paiement",
+        "body": "Les volumes et les prix des forfaits sont indiqués avant la commande, pour que vous puissiez vérifier votre choix avant de continuer."
+      },
+      {
+        "title": "Les politiques sont consultables",
+        "body": "Vous pouvez lire les conditions de remboursement, de confidentialité et de service applicables avant de passer commande."
+      },
+      {
+        "title": "Une assistance est disponible",
+        "body": "Vous avez une question avant de commander, ou besoin d’aide pour un achat en cours ? Contactez NovaLikes et joignez les détails de commande concernés, le cas échéant."
+      }
+    ]
+  },
+  "beforeYouBuy": {
+    "id": "before-you-buy",
+    "title": "Avant de passer commande",
+    "description": "Une vérification rapide avant de commander peut éviter des retards ou des problèmes de livraison. Assurez-vous d’avoir choisi le bon service et d’avoir indiqué les bonnes informations publiques pour le compte ou le contenu concerné.",
+    "items": [
+      {
+        "question": "Choisissez le bon service",
+        "answer": "Vérifiez si vous avez besoin d’abonnés, de likes, de vues, de commentaires, de J’aime de Page ou de J’aime de publication avant de sélectionner un forfait."
+      },
+      {
+        "question": "Vérifiez votre profil ou votre contenu",
+        "answer": "Assurez-vous que le profil, la Page, la publication, le Reel ou la vidéo pour lequel vous commandez est accessible publiquement lorsque le service choisi l’exige."
+      },
+      {
+        "question": "Indiquez les bonnes informations",
+        "answer": "Vérifiez le nom d’utilisateur ou l’URL avant le paiement. Les informations que vous fournissez indiquent où la commande doit être livrée."
+      },
+      {
+        "question": "Relisez votre forfait",
+        "answer": "Vérifiez le service, la quantité et le prix avant de finaliser votre achat."
+      }
+    ]
+  },
+  "faq": {
+    "id": "homepage-faq",
+    "title": "Questions fréquentes",
+    "description": "Voici des réponses aux questions courantes pour choisir un service NovaLikes et passer commande.",
+    "items": [
+      {
+        "question": "Quels services pour les réseaux sociaux puis-je commander chez NovaLikes ?",
+        "answer": "NovaLikes propose des abonnés, likes, vues, commentaires, J’aime de Page et J’aime de publication sur Instagram, TikTok et Facebook. Les options disponibles dépendent de la plateforme choisie."
+      },
+      {
+        "question": "Dois-je donner à NovaLikes le mot de passe de mes réseaux sociaux ?",
+        "answer": "Non. Vous indiquez uniquement le nom d’utilisateur public, le profil, la Page, la publication ou les informations vidéo demandés pour le service commandé."
+      },
+      {
+        "question": "Comment choisir le bon forfait ?",
+        "answer": "Commencez par choisir la plateforme et le service dont vous avez besoin. Vous pouvez ensuite comparer les volumes et les prix disponibles sur la page du service avant de sélectionner un forfait."
+      },
+      {
+        "question": "Quelles informations dois-je fournir pour passer commande ?",
+        "answer": "Cela dépend du service. On peut vous demander un nom d’utilisateur public, une URL de profil, une URL de Page, un lien de publication, un Reel ou une URL de vidéo, afin d’envoyer la commande au bon endroit."
+      },
+      {
+        "question": "Puis-je suivre ma commande après le paiement ?",
+        "answer": "Oui. NovaLikes propose un suivi de commande pour consulter le statut de votre achat."
+      },
+      {
+        "question": "Puis-je contacter NovaLikes si j’ai une question sur ma commande ?",
+        "answer": "Oui. Vous pouvez contacter NovaLikes pour une question sur un service ou une commande existante. Joignez les détails de votre commande lorsque vous contactez l’assistance au sujet d’un achat."
+      }
+    ]
+  },
+  "reviews": {
+    "id": "homepage-reviews",
+    "title": "Ce que disent les clients de NovaLikes",
+    "description": "Lisez les retours de clients qui ont utilisé NovaLikes pour des services sur les réseaux sociaux. Leur expérience peut vous donner une meilleure idée du processus de commande avant de passer la vôtre.",
+    "cta": {
+      "label": "Lire plus d’avis",
+      "href": "/reviews"
+    }
+  },
+  "finalCta": {
+    "id": "home-final-cta",
+    "eyebrow": "Développez plus vite avec NovaLikes",
+    "title": "Prêt à développer votre présence sociale ?",
+    "description": "Choisissez la plateforme et le service qui correspondent à ce que vous recherchez. Comparez les forfaits disponibles, relisez les détails, puis passez commande quand vous êtes prêt.",
+    "primaryCta": {
+      "label": "Voir les services",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "Suivre une commande",
+      "href": "/track-order"
+    },
+    "trustItems": [
+      {
+        "id": "secure",
+        "label": "Aucun mot de passe requis",
+        "icon": "shield"
+      },
+      {
+        "id": "delivery",
+        "label": "Tarifs clairs par forfait",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Suivi de commande",
+        "icon": "headset"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "ig-followers",
+      "platform": "instagram",
+      "slug": "buy-instagram-followers",
+      "href": "/buy-instagram-followers",
+      "name": "Abonnés Instagram",
+      "cardBlurb": "Forfaits d’abonnés pour votre profil Instagram public.",
+      "commercialLabel": "ACHETER DES ABONNÉS INSTAGRAM",
+      "title": "Forfaits d’abonnés Instagram",
+      "intro": "Achetez des abonnés Instagram lorsque vous souhaitez en ajouter à votre profil sans partager votre mot de passe. Choisissez parmi les volumes de forfaits disponibles, indiquez votre nom d’utilisateur Instagram public, puis passez commande en ligne.",
+      "points": [
+        {
+          "title": "Nombre d’abonnés du profil",
+          "text": "Les abonnés sont ajoutés au profil Instagram public fourni avec la commande."
+        },
+        {
+          "title": "Pour différentes tailles de comptes",
+          "text": "Choisissez une quantité d’abonnés adaptée au profil sur lequel vous travaillez."
+        },
+        {
+          "title": "Ciblé sur votre profil",
+          "text": "Ce service concerne votre nombre d’abonnés, pas les likes, vues ou commentaires des publications individuelles."
+        },
+        {
+          "title": "Autres services Instagram",
+          "text": "Les likes, vues et commentaires sont disponibles séparément lorsque vous souhaitez travailler un contenu en particulier."
+        }
+      ],
+      "cta": {
+        "label": "Voir les abonnés Instagram",
+        "href": "/buy-instagram-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-followers-visual.webp",
+        "alt": "Profil Instagram avec indicateurs d’abonnés et d’audience"
+      },
+      "tone": "rose"
+    },
+    {
+      "id": "ig-likes",
+      "platform": "instagram",
+      "slug": "buy-instagram-likes",
+      "href": "/buy-instagram-likes",
+      "name": "Likes Instagram",
+      "cardBlurb": "Forfaits de likes pour posts et Reels Instagram éligibles.",
+      "commercialLabel": "ACHETER DES LIKES INSTAGRAM",
+      "title": "Forfaits de likes Instagram",
+      "intro": "Achetez des likes Instagram pour un post ou un Reel lorsque vous voulez plus d’engagement visible sur ce contenu. Choisissez un forfait, indiquez l’URL publique du post ou du Reel, puis passez commande sans donner à NovaLikes l’accès à votre compte Instagram.",
+      "points": [
+        {
+          "title": "Pour posts et Reels",
+          "text": "Choisissez le post ou le Reel Instagram public sur lequel vous souhaitez que les likes soient livrés."
+        },
+        {
+          "title": "Spécifique au contenu",
+          "text": "Les likes s’appliquent au contenu sélectionné, et non au nombre d’abonnés de votre profil."
+        },
+        {
+          "title": "Choisissez le bon post",
+          "text": "Vérifiez que vous envoyez exactement le post ou le Reel public que vous souhaitez utiliser."
+        },
+        {
+          "title": "Likes, vues ou commentaires",
+          "text": "Choisissez les vues pour le nombre de lectures vidéo, ou les commentaires si vous voulez un autre type d’interaction."
+        }
+      ],
+      "cta": {
+        "label": "Voir les likes Instagram",
+        "href": "/buy-instagram-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
+        "alt": "Publication Instagram avec likes et indicateurs d’engagement"
+      },
+      "tone": "violet"
+    },
+    {
+      "id": "ig-views",
+      "platform": "instagram",
+      "slug": "buy-instagram-views",
+      "href": "/buy-instagram-views",
+      "name": "Vues Instagram",
+      "cardBlurb": "Forfaits de vues pour Reels et vidéos Instagram éligibles.",
+      "commercialLabel": "ACHETER DES VUES INSTAGRAM",
+      "title": "Forfaits de vues Instagram",
+      "intro": "Achetez des vues Instagram pour un Reel ou une vidéo lorsque vous souhaitez augmenter son nombre de vues visible. Sélectionnez le nombre de vues dont vous avez besoin, ajoutez le lien public de votre contenu, puis finalisez votre commande sans partager votre mot de passe Instagram.",
+      "points": [
+        {
+          "title": "Conçu pour le contenu vidéo",
+          "text": "Utilisez ce service pour un Reel ou une vidéo Instagram public éligible."
+        },
+        {
+          "title": "Ciblé sur les vues",
+          "text": "Ce service concerne le nombre de vues de votre contenu, et non les abonnés, likes ou commentaires."
+        },
+        {
+          "title": "Choisissez la bonne vidéo",
+          "text": "Indiquez exactement le Reel ou la vidéo publique auquel les vues doivent être livrées."
+        },
+        {
+          "title": "Commande par contenu",
+          "text": "Choisissez une quantité en fonction du Reel ou de la vidéo sur lequel vous travaillez."
+        }
+      ],
+      "cta": {
+        "label": "Voir les vues Instagram",
+        "href": "/buy-instagram-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
+        "alt": "Reel Instagram avec indicateurs de vues vidéo"
+      },
+      "tone": "orange"
+    },
+    {
+      "id": "ig-comments",
+      "platform": "instagram",
+      "slug": "buy-instagram-comments",
+      "href": "/buy-instagram-comments",
+      "name": "Commentaires Instagram",
+      "cardBlurb": "Forfaits de commentaires pour posts et Reels Instagram éligibles.",
+      "commercialLabel": "ACHETER DES COMMENTAIRES INSTAGRAM",
+      "title": "Forfaits de commentaires Instagram",
+      "intro": "Achetez des commentaires Instagram pour un post ou un Reel public lorsque vous voulez plus de conversation visible autour de votre contenu. Choisissez l’option de commentaires disponible qui convient à votre post, indiquez le lien public du contenu, puis passez commande sans partager votre mot de passe Instagram.",
+      "points": [
+        {
+          "title": "Pour posts et Reels",
+          "text": "Choisissez le contenu Instagram public sur lequel vous souhaitez ajouter des commentaires."
+        },
+        {
+          "title": "Activité de commentaires",
+          "text": "Les commentaires ajoutent un type d’interaction visible différent des likes ou des vues."
+        },
+        {
+          "title": "Spécifique au contenu",
+          "text": "La commande s’applique au post ou au Reel sélectionné, et non à votre nombre d’abonnés global."
+        },
+        {
+          "title": "Vérifiez votre contenu",
+          "text": "Assurez-vous que le post ou le Reel envoyé est bien celui que vous souhaitez utiliser pour la commande."
+        }
+      ],
+      "cta": {
+        "label": "Voir les commentaires Instagram",
+        "href": "/buy-instagram-comments"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-comments-visual.webp",
+        "alt": "Publication Instagram avec commentaires et bulles de conversation"
+      },
+      "tone": "amber"
+    },
+    {
+      "id": "tt-followers",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-followers",
+      "href": "/buy-tiktok-followers",
+      "name": "Abonnés TikTok",
+      "cardBlurb": "Forfaits d’abonnés pour votre profil TikTok public.",
+      "commercialLabel": "ACHETER DES ABONNÉS TIKTOK",
+      "title": "Forfaits d’abonnés TikTok",
+      "intro": "Achetez des abonnés TikTok lorsque vous souhaitez augmenter le nombre d’abonnés affiché sur votre profil. Choisissez un forfait adapté à votre compte, indiquez votre nom d’utilisateur TikTok public, puis passez commande sans partager votre mot de passe.",
+      "points": [
+        {
+          "title": "Nombre d’abonnés du profil",
+          "text": "Ce service concerne les abonnés affichés sur le profil TikTok fourni avec la commande."
+        },
+        {
+          "title": "Ciblé sur le compte",
+          "text": "Les abonnés s’appliquent au compte, et non aux likes ou vues d’une vidéo en particulier."
+        },
+        {
+          "title": "Choisissez pour votre compte",
+          "text": "Sélectionnez une quantité d’abonnés adaptée au profil TikTok sur lequel vous travaillez."
+        },
+        {
+          "title": "Les services vidéo sont séparés",
+          "text": "Les likes et vues TikTok sont disponibles lorsque vous souhaitez travailler des vidéos individuelles."
+        }
+      ],
+      "cta": {
+        "label": "Voir les abonnés TikTok",
+        "href": "/buy-tiktok-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-followers-visual.webp",
+        "alt": "Profil créateur TikTok avec indicateurs d’abonnés"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "tt-likes",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-likes",
+      "href": "/buy-tiktok-likes",
+      "name": "Likes TikTok",
+      "cardBlurb": "Forfaits de likes pour vidéos TikTok publiques éligibles.",
+      "commercialLabel": "ACHETER DES LIKES TIKTOK",
+      "title": "Forfaits de likes TikTok",
+      "intro": "Achetez des likes TikTok pour une vidéo publique lorsque vous voulez en ajouter à cette publication précise. Choisissez le volume de forfait dont vous avez besoin, indiquez le lien de la vidéo, puis finalisez votre commande sans donner à NovaLikes votre mot de passe TikTok.",
+      "points": [
+        {
+          "title": "Pour des vidéos individuelles",
+          "text": "Choisissez la vidéo TikTok publique sur laquelle vous souhaitez que les likes soient livrés."
+        },
+        {
+          "title": "Spécifique à la vidéo",
+          "text": "Les likes s’appliquent à la vidéo sélectionnée, et non au nombre d’abonnés de votre profil TikTok."
+        },
+        {
+          "title": "Vérifiez la vidéo",
+          "text": "Assurez-vous d’envoyer exactement la vidéo TikTok publique que vous souhaitez utiliser."
+        },
+        {
+          "title": "Likes ou vues",
+          "text": "Choisissez plutôt les vues TikTok si le nombre de vues est l’indicateur que vous voulez travailler."
+        }
+      ],
+      "cta": {
+        "label": "Voir les likes TikTok",
+        "href": "/buy-tiktok-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
+        "alt": "Vidéo TikTok avec likes et indicateurs d’interaction"
+      },
+      "tone": "cyan"
+    },
+    {
+      "id": "tt-views",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-views",
+      "href": "/buy-tiktok-views",
+      "name": "Vues TikTok",
+      "cardBlurb": "Forfaits de vues pour vidéos TikTok publiques éligibles.",
+      "commercialLabel": "ACHETER DES VUES TIKTOK",
+      "title": "Forfaits de vues TikTok",
+      "intro": "Achetez des vues TikTok pour une vidéo publique lorsque vous souhaitez augmenter le nombre de vues affiché sur cette publication. Choisissez le forfait de vues dont vous avez besoin, indiquez l’URL de la vidéo, puis passez commande sans partager votre mot de passe TikTok.",
+      "points": [
+        {
+          "title": "Pour les vidéos TikTok",
+          "text": "Choisissez la vidéo TikTok publique sur laquelle vous souhaitez que les vues soient livrées."
+        },
+        {
+          "title": "Ciblé sur le nombre de vues",
+          "text": "Ce service travaille les vues de la vidéo, et non les abonnés du profil ni les likes de la vidéo."
+        },
+        {
+          "title": "Utilisez la bonne vidéo",
+          "text": "Vérifiez la vidéo TikTok avant de l’envoyer avec votre commande."
+        },
+        {
+          "title": "Choisissez par vidéo",
+          "text": "Sélectionnez la quantité en fonction de la vidéo individuelle sur laquelle vous travaillez."
+        }
+      ],
+      "cta": {
+        "label": "Voir les vues TikTok",
+        "href": "/buy-tiktok-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
+        "alt": "Vidéo TikTok avec indicateurs de vues et de lecture"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "fb-followers",
+      "platform": "facebook",
+      "slug": "buy-facebook-followers",
+      "href": "/buy-facebook-followers",
+      "name": "Abonnés Facebook",
+      "cardBlurb": "Forfaits d’abonnés pour Pages Facebook publiques éligibles.",
+      "commercialLabel": "ACHETER DES ABONNÉS FACEBOOK",
+      "title": "Forfaits d’abonnés Facebook",
+      "intro": "Achetez des abonnés Facebook lorsque vous souhaitez en ajouter à une Page Facebook publique éligible. Choisissez parmi les volumes de forfaits disponibles, indiquez les informations publiques de la Page Facebook demandées pour votre commande, puis finalisez votre achat sans partager votre mot de passe Facebook.",
+      "points": [
+        {
+          "title": "Ciblé sur les abonnés",
+          "text": "Utilisez ce service lorsque les abonnés sont l’indicateur Facebook que vous voulez travailler."
+        },
+        {
+          "title": "Différent des J’aime de Page",
+          "text": "Les abonnés Facebook et les J’aime de Page Facebook sont des services distincts, avec des objectifs différents."
+        },
+        {
+          "title": "Pour votre Page Facebook",
+          "text": "Les abonnés s’appliquent à la Page Facebook publique éligible fournie avec la commande."
+        },
+        {
+          "title": "Les J’aime de publication sont séparés",
+          "text": "Choisissez les J’aime de publication Facebook si vous voulez des likes sur une publication individuelle."
+        }
+      ],
+      "cta": {
+        "label": "Voir les abonnés Facebook",
+        "href": "/buy-facebook-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-followers-visual.webp",
+        "alt": "Page Facebook avec indicateurs d’abonnés et de communauté"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-page-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-page-likes",
+      "href": "/buy-facebook-page-likes",
+      "name": "J’aime de Page Facebook",
+      "cardBlurb": "Forfaits de J’aime de Page pour Pages Facebook publiques éligibles.",
+      "commercialLabel": "ACHETER DES J’AIME DE PAGE FACEBOOK",
+      "title": "Forfaits de J’aime de Page Facebook",
+      "intro": "Achetez des J’aime de Page Facebook lorsque vous souhaitez augmenter le nombre de J’aime affiché sur votre Page professionnelle, de marque ou publique. Choisissez un forfait, indiquez le lien public de la Page Facebook, puis passez commande sans partager le mot de passe de votre compte.",
+      "points": [
+        {
+          "title": "Pour les Pages Facebook",
+          "text": "Utilisez ce service pour une Page Facebook publique éligible, professionnelle, de marque ou autre."
+        },
+        {
+          "title": "Indicateur au niveau de la Page",
+          "text": "Les J’aime de Page s’appliquent à la Page elle-même, et non à une publication Facebook individuelle."
+        },
+        {
+          "title": "Différent des abonnés",
+          "text": "Choisissez plutôt les abonnés Facebook si le nombre d’abonnés est l’indicateur que vous voulez."
+        },
+        {
+          "title": "Vérifiez la Page",
+          "text": "Assurez-vous que la Page Facebook publique fournie avec la commande est bien la bonne."
+        }
+      ],
+      "cta": {
+        "label": "Voir les J’aime de Page Facebook",
+        "href": "/buy-facebook-page-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-page-likes-visual.webp",
+        "alt": "Page Facebook avec indicateurs de J’aime de Page"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-post-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-post-likes",
+      "href": "/buy-facebook-post-likes",
+      "name": "J’aime de publication Facebook",
+      "cardBlurb": "Forfaits de J’aime de publication pour publications Facebook publiques éligibles.",
+      "commercialLabel": "ACHETER DES J’AIME DE PUBLICATION FACEBOOK",
+      "title": "Forfaits de J’aime de publication Facebook",
+      "intro": "Achetez des J’aime de publication Facebook pour une publication publique lorsque vous souhaitez augmenter le nombre de J’aime affiché sur ce contenu précis. Choisissez un forfait, indiquez l’URL publique de la publication, puis finalisez votre commande sans partager votre mot de passe Facebook.",
+      "points": [
+        {
+          "title": "Pour des publications individuelles",
+          "text": "Choisissez la publication Facebook publique sur laquelle vous souhaitez ajouter les J’aime."
+        },
+        {
+          "title": "Indicateur au niveau de la publication",
+          "text": "Ce service s’applique à une publication précise, et non à l’ensemble de la Page Facebook."
+        },
+        {
+          "title": "Différent des J’aime de Page",
+          "text": "Les J’aime de Page Facebook concernent la Page elle-même, tandis que ce service concerne un contenu individuel."
+        },
+        {
+          "title": "Choisissez la bonne publication",
+          "text": "Vérifiez la publication publique avant de l’envoyer avec votre commande."
+        }
+      ],
+      "cta": {
+        "label": "Voir les J’aime de publication Facebook",
+        "href": "/buy-facebook-post-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-post-likes-visual.webp",
+        "alt": "Publication Facebook avec indicateurs de J’aime et de réactions"
+      },
+      "tone": "blue"
+    }
+  ]
+}

@@ -25,6 +25,8 @@ import {
   CART_STORAGE_KEY,
   createCartItemId,
   createEmptyCart,
+  filterOfferedCartItems,
+  isOfferedCartItem,
   serializeCart,
 } from '@/lib/cart/utils';
 import type { AppliedCoupon, CartActions, CartItem, CartState, CartTotals } from '@/types/cart';
@@ -54,7 +56,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const fromTransfer = readCartFromLocationTransfer();
       if (fromTransfer) {
         if (!cancelled) {
-          setState(fromTransfer);
+          setState(filterOfferedCartItems(fromTransfer));
           writeCartCookie(fromTransfer);
           clearCartLocationTransfer();
           setIsHydrated(true);
@@ -77,7 +79,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
             error?: string;
           };
           if (!cancelled && response.ok && data.ok && data.cart?.items?.length) {
-            setState(data.cart);
+            setState(filterOfferedCartItems(data.cart));
             writeCartCookie(data.cart);
             params.delete('cartHandoff');
             const next = `${window.location.pathname}${params.toString() ? `?${params}` : ''}`;
@@ -114,6 +116,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [state, isHydrated]);
 
   const addItem = useCallback((item: Omit<CartItem, 'id' | 'addedAt'>) => {
+    if (!isOfferedCartItem(item)) return;
     setState((prev) => ({
       ...prev,
       items: [

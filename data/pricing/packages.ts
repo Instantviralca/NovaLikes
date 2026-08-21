@@ -4,6 +4,7 @@
   NOVALIKES_PRODUCTS,
   type NovaLikesProduct,
 } from '@/data/pricing/novalikes-products';
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getAllServices, getServiceBySlug } from '@/data/services';
 import { applyPackageOverride } from '@/lib/catalog/package-overrides';
 import type { PricingPackage } from '@/types/pricing';
@@ -61,6 +62,7 @@ function mapProductToPackage(product: NovaLikesProduct, service: Service): Prici
 }
 
 function packagesForService(service: Service): PricingPackage[] {
+  if (!isApprovedServiceSlug(service.slug)) return [];
   return getNovaLikesProductsByPlatformType(service.platform, service.category)
     .map((product) => mapProductToPackage(product, service))
     .sort((a, b) => a.quantity - b.quantity);

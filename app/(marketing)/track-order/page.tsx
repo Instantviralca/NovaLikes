@@ -4,28 +4,20 @@ import { JsonLdScript } from '@/components/common/json-ld';
 import { TrackOrderPage } from '@/components/tracking';
 import { routes } from '@/config/routes';
 import { asJsonLdGraph } from '@/lib/seo/schema';
-import { getMetadataByRoute } from '@/lib/seo/metadata';
-import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
+import { descriptions } from '@/seo/descriptions';
+import { titles } from '@/seo/titles';
 import { trackOrderMetadata } from '@/seo/metadata';
 
-/** Public Track Order form may be indexable; private results must never be. */
 export const metadata: Metadata = trackOrderMetadata();
 
 export default function TrackOrderRoute() {
-  const entry = getMetadataByRoute(routes.trackOrder);
   const graph = asJsonLdGraph([
     webPageSchema({
-      title: entry?.title ?? 'Track Order | NovaLikes',
-      description:
-        entry?.description ??
-        'Track your NovaLikes order status using your order details.',
+      title: titles.trackOrder(),
+      description: descriptions.trackOrder(),
       path: routes.trackOrder,
     }),
-    breadcrumbSchema([
-      { label: 'Home', href: routes.home },
-      { label: 'Track Order', href: routes.trackOrder },
-    ]),
   ]);
 
   return (

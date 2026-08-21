@@ -11,7 +11,8 @@ export type SeoPageType =
   | 'learn'
   | 'commerce'
   | 'admin'
-  | 'error';
+  | 'error'
+  | 'tools';
 
 export type SeoRobotsPolicy = {
   index: boolean;

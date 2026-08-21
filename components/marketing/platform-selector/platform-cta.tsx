@@ -5,6 +5,7 @@ import type { MouseEvent } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { homepageAnalyticsEvents } from '@/lib/analytics';
+import { prefetchForHref } from '@/lib/linking/prefetch';
 import { cn } from '@/lib/utils';
 import type { PlatformCTAProps } from '@/components/marketing/platform-selector/types';
 
@@ -39,7 +40,7 @@ export function PlatformCTA({ label, href, className }: PlatformCTAProps) {
           {label}
         </a>
       ) : (
-        <Link href={href} data-analytics={homepageAnalyticsEvents.home_platform_click}>
+        <Link href={href} prefetch={prefetchForHref(href)} data-analytics={homepageAnalyticsEvents.home_platform_click}>
           {label}
         </Link>
       )}

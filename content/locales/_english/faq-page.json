@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Frequently Asked Questions About NovaLikes",
+    "description": "Find clear answers about NovaLikes, Instagram, TikTok and Facebook services, placing an order, account requirements, delivery, payments and support. Browse by category or search for a specific question below.",
+    "purpose": "Help customers find answers before contacting support",
+    "primaryKeyword": "NovaLikes FAQ"
+  },
+  "search": {
+    "label": "Search questions",
+    "placeholder": "Search questions...",
+    "clearLabel": "Clear",
+    "emptyState": "No matching questions were found. Try another search or contact support."
+  },
+  "categoriesTitle": "Categories",
+  "refundPolicyCta": {
+    "label": "Read the Refund Policy",
+    "href": "/refund-policy"
+  },
+  "finalCta": {
+    "id": "faq-contact-support-cta",
+    "title": "Still Have a Question?",
+    "description": "Can't find the answer you're looking for? Contact NovaLikes support for help with a service, order or payment question. If your question is about an existing order, have your order details ready so the support team can locate it more easily.",
+    "purpose": "Offer contact and track-order exits",
+    "primaryCta": {
+      "label": "Contact Support",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Track Your Order",
+      "href": "/track-order"
+    }
+  },
+  "categories": [
+    {
+      "id": "getting_started",
+      "label": "Getting Started",
+      "anchor": "getting-started"
+    },
+    {
+      "id": "account_security",
+      "label": "Account & Safety",
+      "anchor": "account-safety"
+    },
+    {
+      "id": "orders_delivery",
+      "label": "Orders & Delivery",
+      "anchor": "orders-delivery"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "anchor": "instagram"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "anchor": "tiktok"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "anchor": "facebook"
+    },
+    {
+      "id": "payments_refunds",
+      "label": "Payments & Refunds",
+      "anchor": "payments-refunds"
+    }
+  ]
+}

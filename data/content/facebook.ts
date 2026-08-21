@@ -18,10 +18,10 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
         'Buy Facebook Followers with clear package options, public page URL checkout, gradual delivery details and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'FACEBOOK FOLLOWER PACKAGES FOR BUSINESSES, CREATORS & BRANDS',
-      title: 'Buy Facebook Followers worldwide',
+      eyebrow: 'BUY FACEBOOK FOLLOWERS',
+      title: 'Buy Facebook Followers',
       description:
-        'Build a stronger Facebook presence with follower packages designed for businesses, creators and brands worldwide. Compare transparent package options, choose the quantity that fits your goals and complete your order using only your public Facebook Page URL. Whether you\'re building a business page, creator profile or community, our ordering process is designed to be simple, secure and easy to follow.',
+        'Buy Facebook followers by choosing the package and quantity that fits your page. NovaLikes lets you compare available Facebook follower packages and prices before ordering. Select the number of followers you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for Facebook follower packages worldwide',
       primaryKeyword: 'buy Facebook followers',
       supportingKeywords: [
@@ -34,22 +34,21 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
       ],
       suggestedWordCount: 110,
       primaryCta: {
-        label: 'Choose Followers Package',
+        label: 'Choose a Facebook Followers Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Information',
-        href: '#page-link-and-delivery',
+        label: 'How It Works',
+        href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
         { id: 'fb-f-trust-url', label: 'Public Facebook Page URL Only' },
         { id: 'fb-f-trust-password', label: 'No Password Required' },
         { id: 'fb-f-trust-checkout', label: 'Secure Checkout' },
         { id: 'fb-f-trust-track', label: 'Order Tracking' },
-        { id: 'fb-f-trust-ca', label: 'Customer Support' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-facebook-followers-hero-v2.webp',
+        src: '/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp',
         alt: 'Facebook Business Page followers and Meta Business Suite dashboard illustration',
         width: 1200,
         height: 900,
@@ -57,9 +56,9 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your Facebook Followers Package',
+      title: 'Facebook Followers Packages & Pricing',
       description:
-        'Select the follower package that best matches your Facebook page goals. Compare available quantities, review package details and complete your order with confidence before checkout.',
+        'Compare the available Facebook follower packages, quantities, and prices before ordering. Choose the number of followers you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com Facebook followers packages',
       primaryKeyword: 'Facebook follower packages',
       suggestedWordCount: 40,
@@ -242,21 +241,18 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     faq: {
       id: 'fb-followers-faq',
       title: 'Frequently Asked Questions About Buying Facebook Followers',
-      description:
-        'These answers cover the questions customers most frequently ask before purchasing Facebook follower packages.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy Facebook followers',
       faqIds: [
-        'faq-fb-followers-can-buy',
-        'faq-fb-followers-how-buy',
-        'faq-fb-followers-does-help',
-        'faq-fb-followers-can-people-tell',
-        'faq-fb-followers-are-real',
-        'faq-fb-followers-should-buy',
-        'faq-fb-followers-monetization',
+        'faq-fb-followers-need',
+        'faq-fb-followers-package',
         'faq-fb-followers-password',
-        'faq-fb-followers-order-again',
-        'faq-fb-followers-which-package',
+        'faq-fb-followers-how-long',
+        'faq-fb-followers-track',
+        'faq-fb-followers-wrong-url',
+        'faq-fb-followers-other-metrics',
+        'faq-fb-followers-public',
       ],
     },
     relatedServices: {
@@ -269,17 +265,17 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     },
     finalCta: {
       id: 'fb-followers-final-cta',
-      title: 'Choose the Facebook Followers Package That Fits Your Goals',
+      title: 'Choose Your Facebook Followers Package',
       description:
-        'Compare available Facebook follower packages, review pricing and delivery information, and place your order using your public Facebook Page URL. Select the option that best supports your business, creator or community growth objectives.',
+        'Compare the available follower quantities and prices, choose the package that fits the Facebook Page you want to use, and place your order with the correct public Facebook Page URL.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Choose Your Package',
+        label: 'View Facebook Followers Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'Contact Support',
-        href: routes.contact,
+        label: 'Track an Order',
+        href: routes.trackOrder,
       },
     },
   };
@@ -298,10 +294,10 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
         'Buy Facebook Page Likes with transparent packages for businesses and creators. Public Page URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'FACEBOOK PAGE LIKE PACKAGES FOR CANADIAN BUSINESSES, BRANDS & CREATORS',
-      title: 'Buy Facebook Page Likes worldwide',
+      eyebrow: 'BUY FACEBOOK PAGE LIKES',
+      title: 'Buy Facebook Page Likes',
       description:
-        'Build a stronger first impression for your Facebook page with transparent Page Like packages for businesses, creators and organizations worldwide. Compare available quantities, choose the package that matches your goals and place your order using only your public Facebook Page URL. No password or private account access is required, and you can track available delivery updates after checkout.',
+        'Buy Facebook Page Likes by choosing the package and quantity that fits your Page. NovaLikes lets you compare available Page Like packages and prices before ordering. Select the number of Page Likes you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for Facebook page likes packages worldwide',
       primaryKeyword: 'buy Facebook page likes',
       supportingKeywords: [
@@ -313,21 +309,21 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       ],
       suggestedWordCount: 110,
       primaryCta: {
-        label: 'Choose Package',
+        label: 'Choose a Facebook Page Likes Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Information',
-        href: '#page-link-and-delivery',
+        label: 'How It Works',
+        href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
         { id: 'fb-pl-trust-url', label: 'Public Facebook Page URL Only' },
         { id: 'fb-pl-trust-password', label: 'No Password Required' },
         { id: 'fb-pl-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-pl-trust-ca', label: 'Customer Support' },
+        { id: 'fb-pl-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-facebook-page-likes-hero-v2.webp',
+        src: '/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp',
         alt: 'Facebook Business Page likes and Meta Business Suite analytics illustration',
         width: 1200,
         height: 900,
@@ -335,9 +331,9 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your Facebook Page Likes Package',
+      title: 'Facebook Page Likes Packages & Pricing',
       description:
-        'Compare available Page Like packages and select the quantity that best matches your current page size, campaign goals and budget. Each package includes secure checkout, order tracking and processing through your public Facebook Page URL.',
+        'Compare the available Facebook Page Like packages, quantities, and prices before ordering. Choose the number of Page Likes you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com Facebook page likes packages',
       primaryKeyword: 'Facebook page likes packages',
       suggestedWordCount: 45,
@@ -502,21 +498,18 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
     faq: {
       id: 'fb-page-likes-faq',
       title: 'Frequently Asked Questions About Buying Facebook Page Likes',
-      description:
-        'These answers cover the most common questions customers ask before purchasing Facebook Page Like packages.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy Facebook page likes',
       faqIds: [
-        'faq-fb-page-likes-can-buy',
-        'faq-fb-page-likes-how-buy',
-        'faq-fb-page-likes-does-help',
-        'faq-fb-page-likes-businesses',
+        'faq-fb-page-likes-need',
+        'faq-fb-page-likes-package',
         'faq-fb-page-likes-password',
-        'faq-fb-page-likes-delivery',
-        'faq-fb-page-likes-order-again',
-        'faq-fb-page-likes-vs-followers',
-        'faq-fb-page-likes-which-package',
-        'faq-fb-page-likes-requirements',
+        'faq-fb-page-likes-how-long',
+        'faq-fb-page-likes-track',
+        'faq-fb-page-likes-wrong-url',
+        'faq-fb-page-likes-other-metrics',
+        'faq-fb-page-likes-public',
       ],
     },
     relatedServices: {
@@ -529,12 +522,12 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
     },
     finalCta: {
       id: 'fb-page-likes-final-cta',
-      title: 'Choose the Facebook Page Likes Package That Fits Your Goals',
+      title: 'Choose Your Facebook Page Likes Package',
       description:
-        'Compare available Facebook Page Like packages, review pricing and delivery information, and complete your purchase using only your public Facebook Page URL. Select the package that best matches your business, creator or brand objectives.',
+        'Compare the available Page Like quantities and prices, choose the package that fits the Facebook Page you want to use, and place your order with the correct public Facebook Page URL.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Get Started Today',
+        label: 'View Facebook Page Likes Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
@@ -555,10 +548,10 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
         'Buy Facebook Post Likes with transparent packages for businesses, creators and brands. Public Facebook post URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'FACEBOOK POST LIKE PACKAGES FOR BUSINESSES, CREATORS & BRANDS',
-      title: 'Buy Facebook Post Likes worldwide',
+      eyebrow: 'BUY FACEBOOK POST LIKES',
+      title: 'Buy Facebook Post Likes',
       description:
-        'Increase post engagement on your Facebook updates with transparent Post Like packages for businesses, creators and brands worldwide. Select the package that matches your campaign, provide your public Facebook post URL and complete secure checkout in just a few steps. No password is required, and order tracking is available after confirmation.',
+        'Buy Facebook Post Likes by choosing the package and quantity you want for a specific eligible public Facebook post. Compare the available Post Like packages and prices, select the number of likes you want, provide the correct public Facebook post URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for Facebook post likes packages worldwide',
       primaryKeyword: 'buy Facebook Post Likes',
       supportingKeywords: [
@@ -570,21 +563,21 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       ],
       suggestedWordCount: 110,
       primaryCta: {
-        label: 'Choose Post Likes Package',
+        label: 'Choose a Facebook Post Likes Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Information',
-        href: '#post-link-and-delivery',
+        label: 'How It Works',
+        href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'fb-post-trust-url', label: 'Public Facebook Post URL' },
-        { id: 'fb-post-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-post-trust-ca', label: 'Customer Support' },
+        { id: 'fb-post-trust-url', label: 'Public Facebook Post URL Only' },
         { id: 'fb-post-trust-password', label: 'No Password Required' },
+        { id: 'fb-post-trust-checkout', label: 'Secure Checkout' },
+        { id: 'fb-post-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-facebook-post-likes-hero-v2.webp',
+        src: '/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp',
         alt: 'Facebook post preview with rising post likes and engagement analytics illustration',
         width: 1200,
         height: 900,
@@ -592,9 +585,9 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your Facebook Post Likes Package',
+      title: 'Facebook Post Likes Packages & Pricing',
       description:
-        'Compare available Post Like packages and choose the quantity that best matches your campaign, content strategy and engagement goals. Every package includes secure checkout, transparent ordering and progress tracking.',
+        'Compare the available Facebook Post Like packages, quantities, and prices before ordering. Choose the number of Post Likes you want for a specific eligible public Facebook post, review the current package price, and add your selected package to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com Facebook post likes packages',
       primaryKeyword: 'Facebook Post Likes',
       suggestedWordCount: 45,
@@ -752,24 +745,19 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
     },
     faq: {
       id: 'fb-post-likes-faq',
-      title: 'Frequently Asked Questions About Facebook Post Likes',
-      description:
-        'These answers cover the most common questions customers ask before purchasing Facebook Post Like packages.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      title: 'Frequently Asked Questions About Buying Facebook Post Likes',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy Facebook Post Likes',
       faqIds: [
-        'faq-fb-post-likes-can-buy',
+        'faq-fb-post-likes-need',
+        'faq-fb-post-likes-package',
         'faq-fb-post-likes-password',
-        'faq-fb-post-likes-does-help',
-        'faq-fb-post-likes-old-post',
-        'faq-fb-post-likes-existing-post',
-        'faq-fb-post-likes-order-again',
-        'faq-fb-post-likes-vs-page-likes',
-        'faq-fb-post-likes-public',
-        'faq-fb-post-likes-comments-shares',
+        'faq-fb-post-likes-how-long',
         'faq-fb-post-likes-track',
-        'faq-fb-post-likes-requirements',
-        'faq-fb-post-likes-which-package',
+        'faq-fb-post-likes-wrong-url',
+        'faq-fb-post-likes-other-metrics',
+        'faq-fb-post-likes-public',
       ],
     },
     relatedServices: {
@@ -782,12 +770,12 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
     },
     finalCta: {
       id: 'fb-post-likes-final-cta',
-      title: 'Choose the Facebook Post Likes Package That Fits Your Campaign',
+      title: 'Choose Your Facebook Post Likes Package',
       description:
-        'Compare available Facebook Post Like packages, review pricing and delivery information, then complete your purchase using only your public Facebook Post URL. Choose the option that best supports your campaign and audience interaction goals.',
+        'Compare the available Post Like quantities and prices, choose the package that fits the Facebook post you want to use, and place your order with the correct public Facebook post URL.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Choose Your Package',
+        label: 'View Facebook Post Likes Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {

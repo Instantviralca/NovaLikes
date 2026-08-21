@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "ABOUT NOVALIKES",
+    "title": "About NovaLikes",
+    "description": "NovaLikes is a premium social media growth platform built to help creators, businesses, and brands grow with high-quality social signals.\n\nWe focus on a clear ordering experience, secure checkout, and reliable delivery across Instagram, TikTok, Facebook, and more.",
+    "trustLabels": [
+      {
+        "id": "about-hero-quality",
+        "label": "Clear packages, password-free ordering, and published policies."
+      },
+      {
+        "id": "about-hero-delivery",
+        "label": "Secure checkout and order tracking for placed purchases."
+      },
+      {
+        "id": "about-hero-support",
+        "label": "Customer support for package, order, and payment questions."
+      }
+    ],
+    "visual": {
+      "alt": "NovaLikes dashboard representing Instagram, TikTok and Facebook services"
+    }
+  },
+  "mission": {
+    "title": "Helping You Grow. The Right Way.",
+    "description": "Our mission is to help you boost your social media presence safely and effectively — with clear packages, password-free ordering, and support when you need it.\n\nWe believe growth should feel simple: choose a service, pick a package, provide a public URL, and track your order with confidence."
+  },
+  "whyChoose": {
+    "title": "Why Thousands Choose Us",
+    "description": "WHY CHOOSE NOVALIKES?",
+    "items": [
+      {
+        "id": "about-why-safe",
+        "title": "Safe & Secure",
+        "description": "Encrypted checkout and password-free ordering keep your accounts protected."
+      },
+      {
+        "id": "about-why-fast",
+        "title": "Clear Package Pricing",
+        "description": "Compare quantities and prices before checkout so you know which package you are choosing."
+      },
+      {
+        "id": "about-why-quality",
+        "title": "Platform-Specific Services",
+        "description": "Packages are listed by Instagram, TikTok, and Facebook metric rather than as a generic growth mix."
+      },
+      {
+        "id": "about-why-support",
+        "title": "Customer Support",
+        "description": "Contact NovaLikes with package, order, or payment questions using the available support options."
+      },
+      {
+        "id": "about-why-refund",
+        "title": "30-Day Money-Back Guarantee",
+        "description": "Eligible purchases are covered by our 30-Day Money-Back Guarantee under the published Refund Policy."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Built on Trust Delivered with Care",
+    "description": "We are committed to a customer experience that feels clear, secure, and dependable — from package selection to order tracking.",
+    "items": [
+      {
+        "id": "about-trust-payments",
+        "title": "Secure Payments"
+      },
+      {
+        "id": "about-trust-privacy",
+        "title": "Privacy Protected"
+      },
+      {
+        "id": "about-trust-password",
+        "title": "No Password Needed"
+      },
+      {
+        "id": "about-trust-global",
+        "title": "Global Service"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to grow your social media presence?",
+    "description": "Compare available Instagram, TikTok, and Facebook services, review package options, and place an order when you are ready.",
+    "primaryCta": {
+      "label": "Get Started Now"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "About NovaLikes",
+    "heroAria": "About NovaLikes",
+    "missionEyebrow": "OUR MISSION",
+    "commitmentEyebrow": "OUR COMMITMENT",
+    "statsAria": "NovaLikes highlights",
+    "missionImageAlt": "NovaLikes mission target illustration",
+    "commitmentImageAlt": "NovaLikes trust and commitment illustration",
+    "statsCustomers": "Happy Customers",
+    "statsOrders": "Orders Delivered",
+    "statsRating": "Average Rating",
+    "statsSuccess": "Order Success Rate"
+  }
+}

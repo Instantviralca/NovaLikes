@@ -227,20 +227,7 @@ const SERVICE_PHRASE_BANK: Record<
       serviceSlug: 'buy-facebook-post-likes',
     },
   ],
-  youtube: [
-    {
-      phrases: [
-        'Buy YouTube Subscribers',
-        'YouTube subscriber packages',
-        'YouTube growth services',
-      ],
-      serviceSlug: 'buy-youtube-subscribers',
-    },
-    {
-      phrases: ['Buy YouTube Views', 'YouTube views packages'],
-      serviceSlug: 'buy-youtube-views',
-    },
-  ],
+  youtube: [],
 };
 
 function shortTitle(title: string): string {

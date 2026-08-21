@@ -32,7 +32,6 @@ const SUPPORTED_CLI_PLATFORMS = [
   'instagram',
   'tiktok',
   'facebook',
-  'youtube',
   'marketing',
   'general',
 ] as const;
@@ -46,8 +45,7 @@ function normalizePlatform(
   if (
     platform === 'instagram' ||
     platform === 'tiktok' ||
-    platform === 'facebook' ||
-    platform === 'youtube'
+    platform === 'facebook'
   ) {
     return platform;
   }

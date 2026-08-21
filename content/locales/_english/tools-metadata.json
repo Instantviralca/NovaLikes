@@ -1,0 +1,40 @@
+{
+  "toolsHub": {
+    "title": "Free Social Media Tools | Instagram, TikTok & Facebook",
+    "description": "Use free NovaLikes tools for Instagram, TikTok and Facebook, including video downloaders, profile viewers and public profile checks."
+  },
+  "tools": {
+    "instagram-profile-picture-viewer": {
+      "title": "Instagram Profile Picture Viewer – Full Size | NovaLikes",
+      "description": "View and download the publicly available Instagram profile picture in full size. Enter a username or public profile URL. No Instagram login needed."
+    },
+    "instagram-follower-counter": {
+      "title": "Instagram Follower Count Checker – Free | NovaLikes",
+      "description": "Check the follower count Instagram makes publicly available for a profile. Enter a username or public profile URL. No Instagram login required."
+    },
+    "instagram-profile-viewer": {
+      "title": "Instagram Profile Viewer – Public Profiles | NovaLikes",
+      "description": "View publicly available Instagram profile details including photo, bio, followers, following and post count. No Instagram login required."
+    },
+    "instagram-video-downloader": {
+      "title": "Instagram Video Downloader – Public Videos | NovaLikes",
+      "description": "Paste a public Instagram post or Reel URL to check for downloadable video media when Instagram exposes it. No Instagram login required."
+    },
+    "tiktok-video-downloader": {
+      "title": "Free TikTok Video Downloader – MP4 | NovaLikes",
+      "description": "Paste a public TikTok video URL to find available MP4 download options. No TikTok login or app is required. Availability can vary by video."
+    },
+    "tiktok-profile-picture-downloader": {
+      "title": "TikTok Profile Picture Downloader – Full Size | NovaLikes",
+      "description": "View and download a publicly available TikTok profile picture in full size. Enter a username, @handle or public profile URL. No TikTok login needed."
+    },
+    "facebook-video-downloader": {
+      "title": "Facebook Video Downloader – Free HD & SD | NovaLikes",
+      "description": "Paste a public Facebook video URL to find available HD or SD download options. No Facebook login or app is required for supported public videos."
+    },
+    "facebook-reels-downloader": {
+      "title": "Facebook Reels Downloader – Free HD & SD | NovaLikes",
+      "description": "Paste a public Facebook Reel URL to find available HD or SD download options. No Facebook login or app is required for supported public Reels."
+    }
+  }
+}

@@ -1,29 +1,29 @@
+'use client';
+
 import { cn } from '@/lib/utils';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 
-const STEPS = [
-  { id: 'package', label: 'Choose package' },
-  { id: 'details', label: 'Enter details' },
-  { id: 'review', label: 'Review' },
-  { id: 'payment', label: 'Payment' },
-] as const;
-
-export type CheckoutStepId = (typeof STEPS)[number]['id'];
+export type CheckoutStepId = 'package' | 'details' | 'review' | 'payment';
 
 type CheckoutProgressProps = {
   current: CheckoutStepId;
   className?: string;
 };
 
-/**
- * Visual checkout progress — UI only, no logic changes.
- */
 export function CheckoutProgress({ current, className }: CheckoutProgressProps) {
-  const currentIndex = STEPS.findIndex((s) => s.id === current);
+  const { ui } = useI18nChrome();
+  const steps = [
+    { id: 'package', label: ui.checkout.stepPackage },
+    { id: 'details', label: ui.checkout.stepDetails },
+    { id: 'review', label: ui.checkout.stepReview },
+    { id: 'payment', label: ui.checkout.stepPayment },
+  ] as const;
+  const currentIndex = steps.findIndex((s) => s.id === current);
 
   return (
-    <nav aria-label="Checkout progress" className={cn('w-full', className)}>
+    <nav aria-label={ui.checkout.progressAria} className={cn('w-full', className)}>
       <ol className="flex items-center gap-1 sm:gap-2">
-        {STEPS.map((step, index) => {
+        {steps.map((step, index) => {
           const active = index === currentIndex;
           const done = index < currentIndex;
           return (
@@ -54,7 +54,7 @@ export function CheckoutProgress({ current, className }: CheckoutProgressProps) 
                   {step.label}
                 </span>
               </div>
-              {index < STEPS.length - 1 ? (
+              {index < steps.length - 1 ? (
                 <span
                   className={cn(
                     'mb-4 hidden h-0.5 w-2 shrink-0 rounded-full sm:block sm:w-4',

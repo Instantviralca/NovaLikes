@@ -1,32 +1,27 @@
 import { absoluteUrl } from '@/seo/canonical';
-import { site } from '@/config/site';
-import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
+import { organizationRef } from '@/schemas/organization';
+import { descriptions } from '@/seo/descriptions';
 import type { Service } from '@/types/service';
 import type { JsonLd } from '@/schemas/organization';
 
-/** Product/Service schema — offers only when real package pricing exists. */
-export function serviceSchema(service: Service): JsonLd {
+/** Service schema — factual fields only. No Product, Offer, or AggregateRating. */
+export function serviceSchema(
+  service: Service,
+  overrides?: { name?: string; description?: string; url?: string },
+): JsonLd {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: service.name,
-    description: service.description,
-    url: absoluteUrl(service.url),
-    provider: {
-      '@type': 'Organization',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
-    areaServed: 'CA',
-    serviceType: service.primaryKeyword,
-    category: service.category,
+    name: overrides?.name ?? service.name,
+    description: overrides?.description ?? descriptions.service(service),
+    url: absoluteUrl(overrides?.url ?? service.url),
+    provider: organizationRef(),
   };
 }
 
-/** Product schema — offers only when real package pricing exists. No fabricated AggregateRating. */
+/** Kept for tests/admin preview. Not emitted on public service pages. */
 export function productSchema(service: Service): JsonLd {
-  const packages = getActivePackagesByServiceSlug(service.slug);
-  const schema: JsonLd = {
+  return {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: service.name,
@@ -34,28 +29,8 @@ export function productSchema(service: Service): JsonLd {
     url: absoluteUrl(service.url),
     brand: {
       '@type': 'Brand',
-      name: site.name,
+      name: 'NovaLikes',
     },
     category: service.platform,
   };
-
-  if (packages.length > 0) {
-    const prices = packages.map((pkg) => pkg.price).filter((n) => Number.isFinite(n) && n > 0);
-    if (prices.length > 0) {
-      const low = Math.min(...prices);
-      const high = Math.max(...prices);
-      const currency = packages[0]?.currency ?? 'USD';
-      schema.offers = {
-        '@type': 'AggregateOffer',
-        url: absoluteUrl(service.url),
-        priceCurrency: currency,
-        lowPrice: (low / 100).toFixed(2),
-        highPrice: (high / 100).toFixed(2),
-        offerCount: prices.length,
-        availability: 'https://schema.org/InStock',
-      };
-    }
-  }
-
-  return schema;
 }

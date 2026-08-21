@@ -1,20 +1,51 @@
 /**
- * Shared legal policy page view — Documents 13.04 / 13.05.
+ * Shared legal policy page view — Documents 13.04–13.08.
  * Renders content from the legal content layer; no hardcoded policy copy.
  */
+
+import Link from 'next/link';
 
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
+import { LegalRichText } from '@/components/sections/legal/LegalRichText';
 import { LegalTableOfContents } from '@/components/sections/legal/LegalTableOfContents';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
 import { MutedText } from '@/components/typography/muted-text';
-import { Text } from '@/components/typography/text';
+import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
 import type { LegalPolicyPageContent } from '@/types/legal';
 import type { TocItem } from '@/types/components';
+
+export type LegalPolicyChrome = {
+  homeLabel: string;
+  homeHref: string;
+  contactHref: string;
+  effectiveDate: string;
+  lastUpdated: string;
+  datesPending: string;
+  questionsTitle: string;
+  questionsBody: string;
+  contactSupport: string;
+  contactAria: string;
+};
+
+const ENGLISH_CHROME: LegalPolicyChrome = {
+  homeLabel: 'Home',
+  homeHref: routes.home,
+  contactHref: routes.contact,
+  effectiveDate: 'Effective date:',
+  lastUpdated: 'Last updated:',
+  datesPending:
+    'Effective and last-updated dates will appear here once they are configured for publication.',
+  questionsTitle: 'Questions about this policy?',
+  questionsBody:
+    'Contact NovaLikes support through the [Contact](/contact) page. If your question relates to an existing order, include your order reference and the email used at checkout.',
+  contactSupport: 'Contact Support',
+  contactAria: 'Contact support',
+};
 
 export type LegalPolicyPageViewProps = {
   content: LegalPolicyPageContent;
@@ -22,6 +53,7 @@ export type LegalPolicyPageViewProps = {
   lastUpdatedLabel?: string;
   /** Accessible name for the main content section. */
   contentAriaLabel?: string;
+  chrome?: Partial<LegalPolicyChrome>;
 };
 
 export function LegalPolicyPageView({
@@ -29,7 +61,9 @@ export function LegalPolicyPageView({
   effectiveDateLabel,
   lastUpdatedLabel,
   contentAriaLabel,
+  chrome,
 }: LegalPolicyPageViewProps) {
+  const labels = { ...ENGLISH_CHROME, ...chrome };
   const tocItems: TocItem[] = content.sections.map((section) => ({
     id: section.id,
     label: section.title,
@@ -49,7 +83,7 @@ export function LegalPolicyPageView({
           <Stack gap="md" className="mx-auto max-w-[52rem]">
             <Breadcrumb
               items={[
-                { label: 'Home', href: routes.home },
+                { label: labels.homeLabel, href: labels.homeHref },
                 { label: content.breadcrumbLabel },
               ]}
             />
@@ -61,23 +95,20 @@ export function LegalPolicyPageView({
               <dl className="space-y-1 text-sm text-muted-foreground">
                 {effectiveDateLabel ? (
                   <div className="flex flex-wrap gap-x-2">
-                    <dt className="font-medium text-foreground">Effective date:</dt>
+                    <dt className="font-medium text-foreground">{labels.effectiveDate}</dt>
                     <dd>{effectiveDateLabel}</dd>
                   </div>
                 ) : null}
                 {lastUpdatedLabel ? (
                   <div className="flex flex-wrap gap-x-2">
-                    <dt className="font-medium text-foreground">Last updated:</dt>
+                    <dt className="font-medium text-foreground">{labels.lastUpdated}</dt>
                     <dd>{lastUpdatedLabel}</dd>
                   </div>
                 ) : null}
               </dl>
             )}
             {!effectiveDateLabel && !lastUpdatedLabel ? (
-              <MutedText className="text-sm">
-                Effective and last-updated dates will appear here once they are configured for
-                publication.
-              </MutedText>
+              <MutedText className="text-sm">{labels.datesPending}</MutedText>
             ) : null}
           </Stack>
         </Container>
@@ -112,12 +143,10 @@ export function LegalPolicyPageView({
                   {section.blocks.map((block, index) => {
                     if (block.type === 'paragraph') {
                       return (
-                        <Text
+                        <LegalRichText
                           key={`${section.id}-p-${index}`}
-                          className="text-pretty leading-relaxed text-muted-foreground"
-                        >
-                          {block.text}
-                        </Text>
+                          text={block.text}
+                        />
                       );
                     }
                     if (block.type === 'subheading') {
@@ -140,7 +169,7 @@ export function LegalPolicyPageView({
                       >
                         {block.items.map((item) => (
                           <li key={item} className="leading-relaxed">
-                            {item}
+                            <LegalRichText as="span" text={item} />
                           </li>
                         ))}
                       </ul>
@@ -148,6 +177,19 @@ export function LegalPolicyPageView({
                   })}
                 </section>
               ))}
+
+              <aside
+                className="rounded-[1.75rem] bg-[#FFF1E4] px-6 py-8 sm:px-8"
+                aria-label={labels.contactAria}
+              >
+                <Heading as="h2" size="h3" className="mb-2">
+                  {labels.questionsTitle}
+                </Heading>
+                <LegalRichText text={labels.questionsBody} className="mb-6" />
+                <Button asChild size="lg">
+                  <Link href={labels.contactHref}>{labels.contactSupport}</Link>
+                </Button>
+              </aside>
             </article>
           </div>
         </Container>

@@ -26,12 +26,13 @@ export function robotsPolicyForRoute(route: string): SeoRobotsPolicy {
     normalized === '/cart' ||
     normalized === '/checkout' ||
     normalized === '/order-success' ||
+    normalized === '/track-order' ||
     normalized.startsWith('/track-order/result') ||
     normalized === '/404'
   ) {
     return {
       index: false,
-      follow: normalized === '/cart',
+      follow: normalized === '/cart' || normalized === '/track-order',
     };
   }
 

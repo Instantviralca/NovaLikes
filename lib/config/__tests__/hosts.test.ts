@@ -20,25 +20,25 @@ afterEach(() => {
 });
 
 describe('Checkout host helpers', () => {
-  it('falls back checkout to main site when CHECKOUT_URL unset', () => {
+  it('uses main-site checkout when CHECKOUT_URL is unset', () => {
     process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
     delete process.env.NEXT_PUBLIC_CHECKOUT_URL;
     expect(getSiteOrigin()).toBe('https://novalikes.com');
     expect(getCheckoutOrigin()).toBe('https://novalikes.com');
     expect(getCheckoutUrl('/')).toBe('https://novalikes.com/checkout');
     expect(isDedicatedCheckoutConfigured()).toBe(false);
-    expect(isCheckoutHostname('novalikes.com')).toBe(false);
+    expect(isCheckoutHostname()).toBe(false);
   });
 
-  it('uses dedicated checkout origin when configured', () => {
+  it('ignores a configured NovaLikes checkout subdomain', () => {
     process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
     process.env.NEXT_PUBLIC_CHECKOUT_URL = 'https://checkout.novalikes.com';
-    expect(getCheckoutOrigin()).toBe('https://checkout.novalikes.com');
-    expect(getCheckoutUrl('/')).toBe('https://checkout.novalikes.com/');
-    expect(isDedicatedCheckoutConfigured()).toBe(true);
-    expect(isCheckoutHostname('checkout.novalikes.com')).toBe(true);
-    expect(isCheckoutHostname('novalikes.com')).toBe(false);
-    expect(getCartCookieDomain()).toBe('.novalikes.com');
+    expect(getCheckoutOrigin()).toBe('https://novalikes.com');
+    expect(getCheckoutUrl('/')).toBe('https://novalikes.com/checkout');
+    expect(getCheckoutUrl('/checkout')).toBe('https://novalikes.com/checkout');
+    expect(isDedicatedCheckoutConfigured()).toBe(false);
+    expect(isCheckoutHostname()).toBe(false);
     expect(getCartCookieDomainFromSiteOrigin()).toBe('.novalikes.com');
+    expect(getCartCookieDomain()).toBe('.novalikes.com');
   });
 });

@@ -1,15 +1,37 @@
-import { ArticleCard } from '@/components/learn/ArticleCard';
+import { FeaturedArticlesPager } from '@/components/learn/FeaturedArticlesPager';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
 import type { PublicLearnArticle } from '@/types/learn';
 
+export const FEATURED_PAGE_SIZE = 6;
+
 type FeaturedArticlesProps = {
   title?: string;
   description?: string;
   articles: PublicLearnArticle[];
 };
+
+function toCardArticle(article: PublicLearnArticle) {
+  return {
+    id: article.id,
+    href: article.href,
+    title: article.title,
+    excerpt: article.excerpt,
+    category: article.category,
+    categoryName: article.categoryName,
+    readingTime: article.readingTime,
+    featuredImage: article.featuredImage,
+  };
+}
+
+function sectionAnchorId(title: string) {
+  return `featured-${title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')}`;
+}
 
 /**
  * Featured Learn articles grid — Document 15.01.
@@ -22,20 +44,24 @@ export function FeaturedArticles({
 }: FeaturedArticlesProps) {
   if (articles.length === 0) return null;
 
+  const headingId = sectionAnchorId(title);
+
   return (
     <Section>
       <Container>
-        <div className="mb-8 max-w-2xl">
-          <Heading as="h2">{title}</Heading>
+        <div className="mb-8 max-w-2xl scroll-mt-24" id={headingId}>
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+            Library
+          </p>
+          <Heading as="h2" className="mt-2">
+            {title}
+          </Heading>
           <MutedText className="mt-2">{description}</MutedText>
         </div>
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
-            <li key={article.id}>
-              <ArticleCard article={article} />
-            </li>
-          ))}
-        </ul>
+        <FeaturedArticlesPager
+          articles={articles.map(toCardArticle)}
+          pageSize={FEATURED_PAGE_SIZE}
+        />
       </Container>
     </Section>
   );

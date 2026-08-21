@@ -40,16 +40,6 @@ const TikTokViewsHeroDashboard = dynamic(() =>
     default: m.TikTokViewsHeroDashboard,
   })),
 );
-const YouTubeSubscribersHeroDashboard = dynamic(() =>
-  import('@/components/illustrations/youtube-subscribers-hero-dashboard').then((m) => ({
-    default: m.YouTubeSubscribersHeroDashboard,
-  })),
-);
-const YouTubeViewsHeroDashboard = dynamic(() =>
-  import('@/components/illustrations/youtube-views-hero-dashboard').then((m) => ({
-    default: m.YouTubeViewsHeroDashboard,
-  })),
-);
 const FacebookFollowersHeroDashboard = dynamic(() =>
   import('@/components/illustrations/facebook-followers-hero-dashboard').then((m) => ({
     default: m.FacebookFollowersHeroDashboard,
@@ -382,7 +372,6 @@ const PLATFORM_COPY: Record<
 
 export type InstagramDashboardVariant = 'followers' | 'likes' | 'views' | 'comments';
 export type TikTokDashboardVariant = 'followers' | 'likes' | 'views';
-export type YouTubeDashboardVariant = 'subscribers' | 'views';
 export type FacebookDashboardVariant = 'followers' | 'page-likes' | 'post-likes';
 
 type PlatformDashboardProps = {
@@ -393,8 +382,6 @@ type PlatformDashboardProps = {
   instagramVariant?: InstagramDashboardVariant;
   /** TikTok service hero visual variant. */
   tiktokVariant?: TikTokDashboardVariant;
-  /** YouTube service hero visual variant. */
-  youtubeVariant?: YouTubeDashboardVariant;
   /** Facebook service hero visual variant. */
   facebookVariant?: FacebookDashboardVariant;
 };
@@ -406,7 +393,6 @@ export function PlatformDashboard({
   packagePreview,
   instagramVariant = 'followers',
   tiktokVariant,
-  youtubeVariant,
   facebookVariant,
 }: PlatformDashboardProps) {
   if (platform === 'instagram') {
@@ -448,18 +434,6 @@ export function PlatformDashboard({
   if (platform === 'tiktok' && tiktokVariant === 'views') {
     return (
       <TikTokViewsHeroDashboard className={className} packagePreview={packagePreview} />
-    );
-  }
-
-  if (platform === 'youtube' && youtubeVariant === 'subscribers') {
-    return (
-      <YouTubeSubscribersHeroDashboard className={className} packagePreview={packagePreview} />
-    );
-  }
-
-  if (platform === 'youtube' && youtubeVariant === 'views') {
-    return (
-      <YouTubeViewsHeroDashboard className={className} packagePreview={packagePreview} />
     );
   }
 

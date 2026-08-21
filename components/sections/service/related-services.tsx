@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Eye, Heart, Play, Share2, Users, type LucideIcon } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Eye, Heart, Share2, Users, type LucideIcon } from 'lucide-react';
 
 import { Container } from '@/components/layout/container';
 import { Grid } from '@/components/layout/grid';
@@ -18,8 +18,15 @@ import {
   trackLinkingEvent,
 } from '@/lib/analytics/linking-events';
 import { cn } from '@/lib/utils';
+import { prefetchForHref } from '@/lib/linking/prefetch';
 import type { CtaProps } from '@/types/components';
 import type { Service } from '@/types/service';
+
+export type RelatedServiceCopyOverride = {
+  title: string;
+  description: string;
+  ctaLabel: string;
+};
 
 export type RelatedServicesProps = {
   id?: string;
@@ -30,9 +37,16 @@ export type RelatedServicesProps = {
   analyticsServiceSlug?: string;
   className?: string;
   footerLinks?: Array<{ label: string; href: string }>;
+  copyBySlug?: Record<string, RelatedServiceCopyOverride>;
 };
 
-function relatedBlurb(service: Service): string {
+function relatedBlurb(
+  service: Service,
+  copyBySlug?: Record<string, RelatedServiceCopyOverride>,
+): string {
+  const override = copyBySlug?.[service.slug];
+  if (override) return override.description;
+
   switch (service.slug) {
     case 'buy-instagram-followers':
       return 'Grow a steadier public audience so future comment threads and posts reach more people who already know your brand.';
@@ -48,10 +62,6 @@ function relatedBlurb(service: Service): string {
       return 'Increase the visible engagement on your public videos with TikTok like packages.';
     case 'buy-tiktok-views':
       return 'Increase the visible watch count on public videos with TikTok view packages.';
-    case 'buy-youtube-views':
-      return 'Choose a views package for a public YouTube video and review pricing, delivery information and tracking before ordering.';
-    case 'buy-youtube-subscribers':
-      return 'Build a stronger YouTube audience alongside increased video visibility with subscriber packages designed for creators and businesses.';
     case 'buy-facebook-followers':
       return 'Increase the visible audience connected to your Facebook page and strengthen your overall community presence.';
     case 'buy-facebook-page-likes':
@@ -68,7 +78,13 @@ function relatedBlurb(service: Service): string {
   return `Compare packages and place an order for ${service.navigationLabel}.`;
 }
 
-function relatedCardTitle(service: Service): string {
+function relatedCardTitle(
+  service: Service,
+  copyBySlug?: Record<string, RelatedServiceCopyOverride>,
+): string {
+  const override = copyBySlug?.[service.slug];
+  if (override) return override.title;
+
   switch (service.slug) {
     case 'buy-instagram-likes':
       return 'Instagram Likes Packages';
@@ -82,10 +98,6 @@ function relatedCardTitle(service: Service): string {
       return 'TikTok Likes';
     case 'buy-tiktok-views':
       return 'TikTok Views';
-    case 'buy-youtube-views':
-      return 'YouTube Views Packages';
-    case 'buy-youtube-subscribers':
-      return 'Buy YouTube Subscribers';
     case 'buy-facebook-followers':
       return 'Facebook Followers';
     case 'buy-facebook-page-likes':
@@ -97,7 +109,13 @@ function relatedCardTitle(service: Service): string {
   }
 }
 
-function relatedCtaLabel(service: Service): string {
+function relatedCtaLabel(
+  service: Service,
+  copyBySlug?: Record<string, RelatedServiceCopyOverride>,
+): string {
+  const override = copyBySlug?.[service.slug];
+  if (override) return override.ctaLabel;
+
   switch (service.slug) {
     case 'buy-instagram-followers':
       return 'View Followers Packages';
@@ -113,10 +131,6 @@ function relatedCtaLabel(service: Service): string {
       return 'View TikTok Likes';
     case 'buy-tiktok-views':
       return 'View TikTok Views';
-    case 'buy-youtube-views':
-      return 'View YouTube Views Packages';
-    case 'buy-youtube-subscribers':
-      return 'View Subscriber Packages';
     case 'buy-facebook-followers':
       return 'Explore Service';
     case 'buy-facebook-page-likes':
@@ -153,59 +167,6 @@ function RelatedMiniIllustration({ service }: { service: Service }) {
     label = 'Likes';
   }
 
-  if (service.slug === 'buy-youtube-views') {
-    return (
-      <div
-        className="relative flex size-16 items-center justify-center overflow-hidden rounded-2xl border border-red-100 bg-white shadow-[0_12px_24px_-16px_rgba(28,25,23,0.35)] transition-transform duration-300 group-hover:scale-[1.06] motion-reduce:group-hover:scale-100"
-        aria-hidden
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,0,0,0.14),transparent_60%)]" />
-        <div className="relative flex w-full flex-col items-center gap-1 px-2">
-          <Play className="size-5 text-[#FF0000]" fill="#FF0000" strokeWidth={0} />
-          <div className="flex h-3.5 w-full items-end justify-center gap-0.5">
-            {[40, 62, 48, 78].map((h, i) => (
-              <span
-                key={i}
-                className="w-1 rounded-sm"
-                style={{
-                  height: `${h}%`,
-                  background:
-                    i === 3
-                      ? 'linear-gradient(180deg, #FF0000, #F97316)'
-                      : 'linear-gradient(180deg, #fecaca, #f87171)',
-                }}
-              />
-            ))}
-          </div>
-          <span className="text-[7px] font-bold tracking-wide text-stone-500 uppercase">
-            Plays
-          </span>
-        </div>
-      </div>
-    );
-  }
-
-  if (service.slug === 'buy-youtube-subscribers') {
-    return (
-      <div
-        className="relative flex size-[4.75rem] items-center justify-center overflow-hidden rounded-2xl border border-red-100 shadow-[0_12px_28px_-14px_rgba(185,28,28,0.55)] transition-transform duration-300 group-hover:scale-[1.06] motion-reduce:group-hover:scale-100 sm:size-20"
-        aria-hidden
-        style={{
-          background: 'linear-gradient(145deg, #7f1d1d 0%, #FF0000 48%, #fb923c 100%)',
-        }}
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.22),transparent_55%)]" />
-        <div className="relative flex w-full flex-col items-center gap-1 px-2 text-white">
-          <Users className="size-5 drop-shadow-sm" strokeWidth={2.25} />
-          <p className="text-[10px] font-black tabular-nums drop-shadow-sm">12.4K</p>
-          <span className="text-[7px] font-bold tracking-wide uppercase opacity-90">
-            Subscribers
-          </span>
-        </div>
-      </div>
-    );
-  }
-
   if (service.slug === 'buy-facebook-page-likes') {
     const fbBlue = '#1877F2';
     return (
@@ -232,7 +193,6 @@ function RelatedMiniIllustration({ service }: { service: Service }) {
             </span>
             <Heart className="size-4" style={{ color: fbBlue }} strokeWidth={2.25} />
           </div>
-          <p className="text-[10px] font-black tabular-nums text-stone-900">6.2K</p>
           <div className="flex h-3.5 w-full items-end justify-center gap-0.5 px-1">
             {[42, 58, 50, 68, 76].map((h, i) => (
               <span
@@ -312,6 +272,7 @@ export function RelatedServices({
   analyticsServiceSlug,
   className,
   footerLinks,
+  copyBySlug,
 }: RelatedServicesProps) {
   if (services.length === 0) return null;
 
@@ -320,8 +281,6 @@ export function RelatedServices({
     : null;
   const isSingleWide = services.length === 1;
   const isTwoCol = services.length === 2;
-  const isYtSubscribersFeature =
-    isSingleWide && services[0]?.slug === 'buy-youtube-subscribers';
 
   return (
     <Section id={id} spacing="lg" className={cn(className)} aria-label="Related services">
@@ -349,6 +308,7 @@ export function RelatedServices({
               <HoverLift className="h-full">
                 <Link
                   href={service.url}
+                  prefetch={prefetchForHref(service.url)}
                   className={cn(
                     'group flex h-full cursor-pointer flex-col rounded-2xl border border-[var(--border-subtle)] bg-white p-7 shadow-[0_18px_40px_-24px_rgba(28,25,23,0.32)] transition-[border-color,box-shadow,transform,background-color] duration-300 hover:-translate-y-2.5 hover:border-[color-mix(in_srgb,var(--brand-primary)_42%,var(--border-subtle))] hover:bg-[color-mix(in_srgb,var(--brand-accent-soft)_32%,white)] hover:shadow-[0_32px_60px_-24px_rgba(28,25,23,0.48)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 motion-reduce:hover:translate-y-0',
                     isSingleWide
@@ -356,8 +316,6 @@ export function RelatedServices({
                       : isTwoCol
                         ? 'min-h-[20rem]'
                         : 'min-h-[18.5rem]',
-                    isYtSubscribersFeature &&
-                      'border-red-100 bg-[linear-gradient(135deg,#fffdfb_0%,#fff5f5_45%,#ffffff_100%)] hover:border-red-200 hover:bg-[linear-gradient(135deg,#fff7f7_0%,#ffecec_50%,#ffffff_100%)] hover:shadow-[0_28px_56px_-24px_rgba(185,28,28,0.35)]',
                   )}
                   onClick={() => {
                     analytics?.relatedServiceClick({
@@ -366,7 +324,7 @@ export function RelatedServices({
                     });
                     trackLinkingEvent(linkingAnalyticsEvents.related_service_click, {
                       href: service.url,
-                      label: relatedCardTitle(service),
+                      label: relatedCardTitle(service, copyBySlug),
                       slug: service.slug,
                       sourceSlug: analyticsServiceSlug,
                       surface: 'related_services',
@@ -394,19 +352,19 @@ export function RelatedServices({
                   <div className={cn('flex min-w-0 flex-1 flex-col', isSingleWide && 'sm:mt-0')}>
                     <h3
                       className={cn(
-                        'text-lg font-semibold tracking-tight text-[var(--text-primary)] transition-colors duration-200 group-hover:text-[var(--brand-primary)]',
+                        'break-words text-lg font-semibold tracking-tight text-[var(--text-primary)] transition-colors duration-200 group-hover:text-[var(--brand-primary)]',
                         isSingleWide ? 'mt-0 sm:mt-0' : 'mt-6',
                       )}
                     >
-                      {relatedCardTitle(service)}
+                      {relatedCardTitle(service, copyBySlug)}
                     </h3>
                     <p className="mt-2.5 flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      {relatedBlurb(service)}
+                      {relatedBlurb(service, copyBySlug)}
                     </p>
-                    <p className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--brand-primary)] transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:group-hover:translate-x-0">
-                      {relatedCtaLabel(service)}
+                    <p className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--brand-primary)] transition-transform duration-200 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 motion-reduce:group-hover:translate-x-0">
+                      {relatedCtaLabel(service, copyBySlug)}
                       <ArrowRight
-                        className="size-3.5 transition-transform duration-200 group-hover:translate-x-1 motion-reduce:group-hover:translate-x-0"
+                        className="size-3.5 transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 motion-reduce:group-hover:translate-x-0"
                         aria-hidden
                       />
                     </p>
@@ -440,7 +398,7 @@ export function RelatedServices({
               variant="outline"
               className="min-h-11 w-full rounded-xl border-[var(--border-strong)] bg-white transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] motion-reduce:hover:translate-y-0 sm:w-auto"
             >
-              <Link href={cta.href}>{cta.label}</Link>
+              <Link href={cta.href} prefetch={prefetchForHref(cta.href)}>{cta.label}</Link>
             </Button>
           </div>
         ) : null}

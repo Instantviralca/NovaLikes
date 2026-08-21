@@ -13,7 +13,7 @@ export function ArticleContent({ blocks }: ArticleContentProps) {
   if (blocks.length === 0) return null;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-7 md:space-y-9 [&_h2]:pt-2">
       {blocks.map((block) => (
         <ArticleContentBlockView key={block.id} block={block} />
       ))}

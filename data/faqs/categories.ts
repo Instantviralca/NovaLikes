@@ -11,26 +11,36 @@ export type FAQCategoryMeta = {
   anchor: string;
 };
 
-/** FAQ hub category navigation — Document 14.04. */
+/** Main /faq hub category navigation. */
 export const FAQ_CATEGORIES: FAQCategoryMeta[] = [
-  { id: 'general', label: 'General', anchor: 'general' },
-  { id: 'ordering', label: 'Ordering & Packages', anchor: 'ordering-packages' },
-  { id: 'delivery', label: 'Delivery & Processing', anchor: 'delivery-processing' },
-  { id: 'payments', label: 'Payments & Checkout', anchor: 'payments-checkout' },
-  { id: 'refunds', label: 'Refunds & Refill', anchor: 'refunds-refill' },
-  { id: 'tracking', label: 'Order Tracking', anchor: 'order-tracking' },
+  { id: 'getting_started', label: 'Getting Started', anchor: 'getting-started' },
+  { id: 'account_security', label: 'Account & Safety', anchor: 'account-safety' },
+  { id: 'orders_delivery', label: 'Orders & Delivery', anchor: 'orders-delivery' },
   { id: 'instagram', label: 'Instagram', anchor: 'instagram' },
   { id: 'tiktok', label: 'TikTok', anchor: 'tiktok' },
   { id: 'facebook', label: 'Facebook', anchor: 'facebook' },
-  { id: 'youtube', label: 'YouTube', anchor: 'youtube' },
-  { id: 'privacy_legal', label: 'Privacy & Legal', anchor: 'privacy-legal' },
-  { id: 'account_security', label: 'Account & Security', anchor: 'account-security' },
-  { id: 'contact_support', label: 'Contact & Support', anchor: 'contact-support' },
+  { id: 'payments_refunds', label: 'Payments & Refunds', anchor: 'payments-refunds' },
 ];
 
-export const FAQ_CATEGORY_LABELS: Record<FAQCategoryId, string> = Object.fromEntries(
-  FAQ_CATEGORIES.map((category) => [category.id, category.label]),
-) as Record<FAQCategoryId, string>;
+/** Labels for all category ids (hub + legacy service FAQ categories). */
+export const FAQ_CATEGORY_LABELS: Record<FAQCategoryId, string> = {
+  general: 'General',
+  getting_started: 'Getting Started',
+  ordering: 'Ordering & Packages',
+  delivery: 'Delivery & Processing',
+  orders_delivery: 'Orders & Delivery',
+  payments: 'Payments & Checkout',
+  refunds: 'Refunds & Refill',
+  payments_refunds: 'Payments & Refunds',
+  tracking: 'Order Tracking',
+  instagram: 'Instagram',
+  tiktok: 'TikTok',
+  facebook: 'Facebook',
+  youtube: 'YouTube',
+  privacy_legal: 'Privacy & Legal',
+  account_security: 'Account & Safety',
+  contact_support: 'Contact & Support',
+};
 
 export function getFaqCategoryMeta(id: FAQCategoryId): FAQCategoryMeta | undefined {
   return FAQ_CATEGORIES.find((category) => category.id === id);

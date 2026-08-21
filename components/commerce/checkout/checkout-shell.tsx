@@ -9,7 +9,7 @@ type CheckoutShellProps = {
 };
 
 /**
- * Minimal chrome for checkout.novalikes.com — logo + secure checkout framing.
+ * Optional minimal checkout chrome. Unused: checkout is same-origin on the main site.
  */
 export function CheckoutShell({ children }: CheckoutShellProps) {
   const siteOrigin = getSiteOrigin();

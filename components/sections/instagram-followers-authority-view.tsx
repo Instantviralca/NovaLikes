@@ -20,16 +20,27 @@ import {
   InstagramFollowersWorldwide,
 } from '@/components/marketing/instagram-followers/authority-sections';
 import { PackagesFinalCtaAside } from '@/components/marketing/packages/packages-final-cta-aside';
-import { InstagramPackagesHeroDashboard } from '@/components/illustrations/instagram-packages-hero-dashboard';
 import { INSTAGRAM_FOLLOWERS_PAGE_CONFIG } from '@/data/content/instagram-followers-page-config';
 import { getServiceContentBySlug } from '@/data/content/services';
 import { mapServiceContent } from '@/lib/content/mappers';
 import { resolveRelatedServices } from '@/lib/content/linking';
 import { buildBreadcrumb } from '@/lib/linking';
+import { localizeHref } from '@/lib/i18n/paths';
+import { DEFAULT_LOCALE, type Locale, isCoreServiceSlug } from '@/lib/i18n/config';
+import { loadServiceFaqItems, type LocalizedServiceBundle } from '@/lib/i18n/content/load';
+import type { UiDictionary } from '@/lib/i18n/content/ui-english';
+import type { BreadcrumbItem } from '@/types';
 import type { Service } from '@/types/service';
+
+const IG_FOLLOWERS_DELIVERY_IMAGE =
+  '/assets/images/illustrations/instagram-followers/instagram-followers-delivery-requirements.webp';
 
 type InstagramFollowersAuthorityViewProps = {
   service: Service;
+  bundle?: LocalizedServiceBundle;
+  breadcrumbs?: BreadcrumbItem[];
+  ui?: UiDictionary;
+  locale?: Locale;
 };
 
 /**
@@ -37,14 +48,26 @@ type InstagramFollowersAuthorityViewProps = {
  */
 export function InstagramFollowersAuthorityView({
   service,
+  bundle,
+  breadcrumbs: breadcrumbOverride,
+  ui,
+  locale = DEFAULT_LOCALE,
 }: InstagramFollowersAuthorityViewProps) {
-  const content = getServiceContentBySlug(service.slug);
+  const content = bundle?.content ?? getServiceContentBySlug(service.slug);
   if (!content) return null;
 
-  const vm = mapServiceContent(content);
-  const config = INSTAGRAM_FOLLOWERS_PAGE_CONFIG;
-  const related = resolveRelatedServices(service, content.relatedServices.serviceSlugs, 3);
-  const breadcrumbs = buildBreadcrumb(service.slug);
+  const vm = mapServiceContent(content, loadServiceFaqItems(locale, content.faq.faqIds));
+  const config = bundle?.followersAuthority ?? INSTAGRAM_FOLLOWERS_PAGE_CONFIG;
+  const related = resolveRelatedServices(service, content.relatedServices.serviceSlugs, 3).map(
+    (item) => ({
+      ...item,
+      url: localizeHref(item.url, locale),
+      name: isCoreServiceSlug(item.slug) && ui ? ui.services[item.slug] : item.name,
+      navigationLabel:
+        isCoreServiceSlug(item.slug) && ui ? ui.services[item.slug] : item.navigationLabel,
+    }),
+  );
+  const breadcrumbs = breadcrumbOverride ?? buildBreadcrumb(service.slug);
   const previewPackageId =
     vm.pricing.packages.find((p) => p.package.badge)?.package.id ??
     vm.pricing.packages[0]?.package.id;
@@ -62,12 +85,13 @@ export function InstagramFollowersAuthorityView({
       <ServiceCommerceBlocks
         service={service}
         pricing={vm.pricing}
+        stickyCtaLabel={ui?.commerce.choosePackage}
         summaryBenefits={[
-          'Public Username Only',
-          'No Password',
-          'Secure Checkout',
-          'Order Tracking',
-          'Customer Support',
+          ui?.commerce.publicUsernameOnly ?? 'Public Username Only',
+          ui?.commerce.noPassword ?? 'No Password',
+          ui?.commerce.secureCheckout ?? 'Secure Checkout',
+          ui?.commerce.orderTracking ?? 'Order Tracking',
+          ui?.commerce.customerSupport ?? 'Customer Support',
         ]}
       />
 
@@ -94,10 +118,12 @@ export function InstagramFollowersAuthorityView({
       {vm.deliveryAndSafety ? (
         <RequirementGuide
           id={vm.deliveryAndSafety.id}
-          visual={<InstagramPackagesHeroDashboard className="max-w-[24rem]" />}
+          imageSrc={IG_FOLLOWERS_DELIVERY_IMAGE}
+          imageAlt="Instagram follower order requirements — public username only, no password required"
           title={vm.deliveryAndSafety.title}
           description={vm.deliveryAndSafety.description}
           notice={config.orderNotice}
+          visualVariant="instagram-followers"
           reverse={false}
           className="!py-7 md:!py-9 lg:!py-10"
         />
@@ -135,6 +161,7 @@ export function InstagramFollowersAuthorityView({
           services={related}
           cta={vm.relatedServices.cta}
           analyticsServiceSlug={service.slug}
+          copyBySlug={config.relatedPackages.copyBySlug}
         />
       ) : null}
 
@@ -143,10 +170,10 @@ export function InstagramFollowersAuthorityView({
         analyticsServiceSlug={service.slug}
         aside={<PackagesFinalCtaAside instagramVariant="followers" />}
         trustBadges={[
-          'Public Username Only',
-          'Secure Checkout',
-          'Order Tracking',
-          'Customer Support',
+          ui?.commerce.publicUsernameOnly ?? 'Public Username Only',
+          ui?.commerce.secureCheckout ?? 'Secure Checkout',
+          ui?.commerce.orderTracking ?? 'Order Tracking',
+          ui?.commerce.customerSupport ?? 'Customer Support',
         ]}
         className="[&_p:last-child]:text-white/70"
       />

@@ -93,17 +93,18 @@ describe('Enterprise internal linking quality', () => {
     }
   });
 
-  it('exposes Learn category crawl paths in the footer Resources column', () => {
+  it('keeps current company, support, legal, and FAQ footer links without empty Learn destinations', () => {
     const resources = getFooterColumns().find((column) => column.id === 'resources');
     expect(resources).toBeTruthy();
     const hrefs = new Set(resources!.links.map((link) => link.href));
+    expect(hrefs.has('/faq')).toBe(true);
     expect(hrefs.has('/learn')).toBe(true);
-    expect(hrefs.has('/learn/instagram')).toBe(true);
-    expect(hrefs.has('/learn/tiktok')).toBe(true);
-    expect(hrefs.has('/learn/facebook')).toBe(true);
-    expect(hrefs.has('/learn/youtube')).toBe(true);
-    expect(hrefs.has('/learn/social-media-marketing')).toBe(true);
-    expect(hrefs.has('/learn/guides')).toBe(true);
+    expect(hrefs.has('/learn/instagram')).toBe(false);
+    expect(hrefs.has('/learn/tiktok')).toBe(false);
+    expect(hrefs.has('/learn/facebook')).toBe(false);
+    expect(hrefs.has('/learn/youtube')).toBe(false);
+    expect(hrefs.has('/learn/social-media-marketing')).toBe(false);
+    expect(hrefs.has('/learn/guides')).toBe(false);
   });
 
   it('keeps sitemap orphans empty', () => {

@@ -99,6 +99,7 @@ export function createHeadingId(text: string, used = new Set<string>()): string 
   return candidate;
 }
 
+/** Article TOC — H2 section headings only. H3s and substeps stay out. */
 export function generateTableOfContents(
   blocks: ArticleContentBlock[],
 ): LearnTocItem[] {
@@ -107,6 +108,7 @@ export function generateTableOfContents(
 
   for (const block of blocks) {
     if (block.type !== 'heading') continue;
+    if (block.headingLevel !== 2) continue;
     const text = block.text.trim();
     if (!text) continue;
     const id = block.anchorId
@@ -245,6 +247,10 @@ function extractBlockPlainText(block: ArticleContentBlock): string {
     case 'comparison_table':
     case 'data_table':
       return [...block.headers, ...block.rows.flat()].join(' ');
+    case 'service_cluster_cta':
+      return `${block.heading} ${block.text}`;
+    case 'internal_cta':
+      return `${block.heading ?? ''} ${block.label} ${block.description ?? ''}`;
     default:
       return '';
   }
@@ -382,6 +388,17 @@ export function validateArticleLinks(
         });
       }
     }
+    if (block.type === 'service_cluster_cta') {
+      for (const slug of block.serviceSlugs) {
+        if (!isApprovedServiceSlug(slug) || !getServiceBySlug(slug)) {
+          issues.push({
+            code: 'invalid_service',
+            field: block.id,
+            detail: `Invalid service cluster slug "${slug}"`,
+          });
+        }
+      }
+    }
     if (
       (block.type === 'image' || block.type === 'figure') &&
       block.image.sourceUrl?.startsWith('http://')
@@ -504,11 +521,10 @@ export function isArticlePubliclyRenderable(
   return { ok: true, article };
 }
 
-/** Preview gate — disabled until an authorized preview secret is configured. */
+/** Preview gate — requires LEARN_ARTICLE_PREVIEW_SECRET or an author/admin session. */
 export function canAccessArticlePreview(token: string | null | undefined): boolean {
   const secret = process.env.LEARN_ARTICLE_PREVIEW_SECRET?.trim();
-  if (!secret) return false;
-  if (!token) return false;
+  if (!secret || !token) return false;
   return token === secret;
 }
 

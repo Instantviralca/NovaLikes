@@ -17,7 +17,8 @@ export type HubServiceMini = {
   commercialLabel: string;
   title: string;
   intro: string;
-  points: string[];
+  cardBlurb: string;
+  points: { title: string; text: string }[];
   cta: HubCta;
   image: { src: string; alt: string };
   tone: 'rose' | 'slate' | 'blue' | 'red' | 'amber' | 'violet' | 'cyan' | 'orange';
@@ -25,276 +26,287 @@ export type HubServiceMini = {
 
 export const homepageHub = {
   hero: {
-    eyebrow: 'Social media growth for Instagram, TikTok, Facebook & YouTube',
-    title: 'Grow your presence across the platforms that matter',
+    eyebrow: 'SOCIAL MEDIA GROWTH FOR INSTAGRAM, TIKTOK & FACEBOOK',
+    title: 'Grow Your Social Media Presence with NovaLikes',
     description:
-      'NovaLikes helps creators, brands, and businesses compare clear growth packages, order with a public username or URL only, and track progress in one place—without handing over account passwords.',
-    primaryCta: { label: 'Explore services', href: '#services-overview' },
-    secondaryCta: { label: 'How ordering works', href: '#how-it-works' },
-    microcopy: 'No password required · Secure checkout · Public profile or content URL only',
+      'Buy followers, likes, views, and comments for Instagram, TikTok, and Facebook. NovaLikes gives you clear package options for each service, so you can choose what fits your account and order without sharing your password. Select a service, pick a package, enter the required public profile or content details, and complete your order online.',
+    primaryCta: { label: 'Explore Services', href: '#services-overview' },
+    secondaryCta: { label: 'How It Works', href: '#how-it-works' },
+    trustFeatures: [
+      { id: 'password', line1: 'No Password', line2: 'Required', icon: 'shield' as const },
+      { id: 'pricing', line1: 'Clear', line2: 'Pricing', icon: 'tag' as const },
+      { id: 'tracking', line1: 'Order', line2: 'Tracking', icon: 'truck' as const },
+    ],
     visual: {
-      src: '/assets/images/illustrations/homepage-dashboard.svg',
-      alt: 'NovaLikes multi-platform social growth dashboard illustration',
-      width: 720,
-      height: 560,
+      src: '/assets/images/homepage/hero-social-growth.webp',
+      alt: 'NovaLikes social media growth illustration showing Instagram, TikTok, and Facebook engagement',
+      width: 1024,
+      height: 682,
     },
   },
 
   platformSelector: {
     id: 'platform-selector',
-    title: 'Choose your platform',
+    eyebrow: 'Pick Your Platform',
+    title: 'Choose Your Platform',
     description:
-      'Jump to the network you want to grow. Each platform links to focused service pages with packages and ordering details.',
+      'Start with the platform you want to grow. Each one has its own services and package options, so you can go straight to what you need.',
+    trustItems: [
+      { id: 'packages', label: 'Clear Package Options', icon: 'shield' as const },
+      { id: 'password', label: 'No Password Required', icon: 'shield' as const },
+      { id: 'refund', label: '30-Day Money-Back Guarantee on Eligible Orders', icon: 'shield' as const },
+    ],
+    socialProof: {
+      text: 'Compare NovaLikes services for Instagram, TikTok and Facebook',
+      href: '#services-overview',
+    },
     platforms: [
       {
         id: 'instagram' as const,
         name: 'Instagram',
-        description: 'Followers, likes, views, and comments packages.',
+        description: 'Followers, likes, views, and comments for Instagram profiles and content.',
         href: '#instagram-services',
         ctaLabel: 'View Instagram',
+        badge: 'Instagram Services',
+        metric: { value: 'Profile', label: 'Followers' },
+        tags: [
+          { label: 'Profile Growth', href: '/buy-instagram-followers', icon: 'user' as const },
+          { label: 'Post Engagement', href: '/buy-instagram-likes', icon: 'heart' as const },
+          { label: 'Reels Views', href: '/buy-instagram-views', icon: 'play' as const },
+          { label: 'Comments', href: '/buy-instagram-comments', icon: 'comment' as const },
+        ],
       },
       {
         id: 'tiktok' as const,
         name: 'TikTok',
-        description: 'Followers, likes, and views for short-form growth.',
+        description: 'Followers, likes, and views for TikTok accounts and videos.',
         href: '#tiktok-services',
         ctaLabel: 'View TikTok',
+        metric: { value: 'Video', label: 'Views' },
+        tags: [
+          { label: 'Account Growth', href: '/buy-tiktok-followers', icon: 'trend' as const },
+          { label: 'Video Likes', href: '/buy-tiktok-likes', icon: 'heart' as const },
+          { label: 'Video Views', href: '/buy-tiktok-views', icon: 'eye' as const },
+          { label: 'More Engagement', href: '#tiktok-services', icon: 'spark' as const },
+        ],
       },
       {
         id: 'facebook' as const,
         name: 'Facebook',
-        description: 'Followers, page likes, and post likes.',
+        description: 'Followers, Page likes, and post likes for public Facebook Pages and posts.',
         href: '#facebook-services',
         ctaLabel: 'View Facebook',
-      },
-      {
-        id: 'youtube' as const,
-        name: 'YouTube',
-        description: 'Subscribers and views for channel growth.',
-        href: '#youtube-services',
-        ctaLabel: 'View YouTube',
-      },
-    ],
-  },
-
-  trustValue: {
-    id: 'trust-value',
-    title: 'Clear packages. Straightforward ordering.',
-    description:
-      'NovaLikes is built to feel like a modern product—not a cluttered panel. Compare real package options, review published policies, and complete checkout with the public details your order needs.',
-    points: [
-      {
-        title: 'Public details only',
-        body: 'Orders use a public username or content URL. We do not ask for your social media password.',
-      },
-      {
-        title: 'Transparent catalog',
-        body: 'Service pages show the packages available for that offer—quantities and prices from the live catalog.',
-      },
-      {
-        title: 'Policies you can read first',
-        body: 'Refund, terms, and privacy pages are published so you can review them before you buy.',
-      },
-      {
-        title: 'Order tracking',
-        body: 'After checkout, use your order details to check status from the track-order page.',
+        metric: { value: 'Page', label: 'Likes' },
+        tags: [
+          { label: 'Page Growth', href: '/buy-facebook-page-likes', icon: 'users' as const },
+          { label: 'Post Likes', href: '/buy-facebook-post-likes', icon: 'thumb' as const },
+          { label: 'Profile Followers', href: '/buy-facebook-followers', icon: 'user' as const },
+          { label: 'More Reach', href: '#facebook-services', icon: 'reach' as const },
+        ],
       },
     ],
   },
 
   servicesOverview: {
     id: 'services-overview',
-    title: 'All NovaLikes services',
+    eyebrow: 'All Services',
+    title: 'All NovaLikes Services',
     description:
-      'Twelve focused growth offers across four platforms. Open a service page for packages, delivery notes, and checkout.',
+      'Choose the service that matches what you want to grow. NovaLikes offers followers, likes, views, comments, Page likes, and post likes across Instagram, TikTok, and Facebook. Open any service to compare package sizes and prices.',
+    trustNote: 'Compare Services and Package Options',
+    features: [
+      { id: 'users', label: 'Platform-Specific Services', icon: 'users' as const },
+      { id: 'delivery', label: 'Clear Package Pricing', icon: 'bolt' as const },
+      { id: 'support', label: 'Customer Support', icon: 'headset' as const },
+      { id: 'payments', label: 'Secure Card Payments', icon: 'shield' as const },
+    ],
   },
 
   platformGroupTitles: {
     instagram: {
       id: 'instagram-services',
-      title: 'Instagram growth',
-      description: 'Audience and engagement options for profiles, posts, and Reels.',
+      title: 'Instagram Growth',
+      description:
+        'Choose from followers, likes, views, and comments based on what you want to improve on Instagram.',
     },
     tiktok: {
       id: 'tiktok-services',
-      title: 'TikTok growth',
-      description: 'Support discovery and engagement on short-form video.',
+      title: 'TikTok Growth',
+      description:
+        'Choose followers, likes, or views depending on what you want to add to your TikTok account or videos.',
     },
     facebook: {
       id: 'facebook-services',
-      title: 'Facebook growth',
-      description: 'Strengthen pages, profiles, and post engagement.',
-    },
-    youtube: {
-      id: 'youtube-services',
-      title: 'YouTube growth',
-      description: 'Build channel audience and video reach with clear packages.',
+      title: 'Facebook Growth',
+      description:
+        'Choose followers, Page likes, or post likes based on the part of your Facebook presence you want to work on.',
     },
   },
 
   why: {
     id: 'why-novalikes',
-    title: 'Why NovaLikes',
+    title: 'Why Choose NovaLikes?',
     description:
-      'We compete on clarity and trust—not hype. The goal is a calm buying experience where you understand what you are ordering and what happens next.',
+      'Ordering social media services should not leave you guessing about the price, what information you need, or where your order stands. NovaLikes keeps these details clear from the start.',
     points: [
       {
-        title: 'Multi-platform in one place',
-        body: 'Instagram, TikTok, Facebook, and YouTube services share the same ordering patterns and policies.',
+        title: 'Clear Package Options',
+        body: 'See the available quantities and prices before you place an order, so you know exactly which package you are choosing.',
       },
       {
-        title: 'Education before pressure',
-        body: 'Service pages explain the offer before asking you to checkout.',
+        title: 'No Password Required',
+        body: 'We only ask for the public profile, Page, post, or video details needed for the service you order. Your account password stays private.',
       },
       {
-        title: 'No password culture',
-        body: 'Account access stays with you. Public information is enough to place an order.',
+        title: 'Order Tracking',
+        body: 'Use your order details to check the status of your purchase after checkout instead of wondering what is happening with it.',
       },
       {
-        title: 'Supportable claims only',
-        body: 'We avoid inflated guarantees and unpublished statistics.',
+        title: 'Help When You Need It',
+        body: 'If you have a question about a service or an existing order, you can contact NovaLikes for support.',
       },
     ],
   },
 
   howItWorks: {
     id: 'how-it-works',
-    title: 'How it works',
-    description: 'Most orders follow the same simple path.',
+    title: 'How NovaLikes Works',
+    description:
+      'Placing an order takes a few simple steps. You choose what you need, enter the required public details, and complete your purchase.',
     steps: [
       {
-        title: 'Pick a platform and service',
-        body: 'Start from the homepage overview or open a dedicated service page.',
+        title: 'Choose a Service',
+        body: 'Select Instagram, TikTok, or Facebook, then choose the followers, likes, views, comments, Page likes, or post likes you need.',
       },
       {
-        title: 'Choose a package',
-        body: 'Select a quantity from the live catalog shown on that service page.',
+        title: 'Pick a Package',
+        body: 'Compare the available quantities and prices, then select the package you want to order.',
       },
       {
-        title: 'Add public details',
-        body: 'Provide the public username or content URL required for delivery.',
+        title: 'Enter the Required Details',
+        body: 'Provide the public username, profile, Page, post, or video link requested for that service. No password is required.',
       },
       {
-        title: 'Checkout securely',
-        body: 'Complete payment through the NovaLikes checkout flow.',
-      },
-      {
-        title: 'Track your order',
-        body: 'Use your order ID and email on the track-order page when you need a status update.',
+        title: 'Complete Your Order',
+        body: 'Continue through checkout and place your order. You can use the order tracking option afterward to check its status.',
       },
     ],
   },
 
   guarantees: {
     id: 'guarantees',
-    title: 'Trust & purchase protections',
+    title: 'Know What to Expect Before You Order',
     description:
-      'These points reflect how NovaLikes is configured today. Package-specific refill or refund eligibility is shown on service pages and in the Refund Policy when it applies.',
+      'Before placing an order, you should know what information is required, how pricing works, and where to find help if you need it. NovaLikes keeps these details available before checkout.',
     items: [
       {
-        title: 'No password required',
-        body: 'We never ask for your Instagram, TikTok, Facebook, or YouTube password.',
+        title: 'Your Password Stays Private',
+        body: 'You do not need to share your social media password. Orders use the public profile or content details required for the selected service.',
       },
       {
-        title: 'Secure checkout',
-        body: 'Orders are placed through the site checkout with encrypted payment handling by the configured payment provider.',
+        title: 'Prices Are Shown Before Checkout',
+        body: 'Package quantities and prices are displayed before you order, so you can review your choice before continuing.',
       },
       {
-        title: 'Published policies',
-        body: 'Terms, privacy, refund, and related legal pages are available before you purchase.',
+        title: 'Policies Are Available to Read',
+        body: 'You can review the applicable refund, privacy, and service terms before placing your order.',
       },
       {
-        title: 'Eligible refill / refund options',
-        body: 'Some packages may include refill or money-back eligibility. Those terms are package-specific—review the service page and Refund Policy rather than assuming every order is covered.',
-      },
-      {
-        title: 'Customer support',
-        body: 'Contact support when you need help with an order or a product question.',
+        title: 'Support Is Available',
+        body: 'Have a question before ordering or need help with an existing purchase? Contact NovaLikes and include the relevant order details when applicable.',
       },
     ],
   },
 
   beforeYouBuy: {
     id: 'before-you-buy',
-    title: 'Before you buy',
-    description: 'Quick answers that help you choose the right path.',
+    title: 'Before You Place an Order',
+    description:
+      'A quick check before ordering can help avoid delays or delivery issues. Make sure you have selected the right service and entered the correct public details for the account or content you want to use.',
     items: [
       {
-        question: 'Which service should I choose?',
+        question: 'Choose the Right Service',
         answer:
-          'Followers and subscribers grow account audience. Likes and comments support post engagement. Views support video reach. Start with the metric that matches your goal, then open that service page for packages.',
+          'Check whether you need followers, likes, views, comments, Page likes, or post likes before selecting a package.',
       },
       {
-        question: 'Do you need my password?',
+        question: 'Check Your Profile or Content',
         answer:
-          'No. NovaLikes only needs a public username or a public content URL, depending on the service.',
+          'Make sure the profile, Page, post, Reel, or video you are ordering for is publicly accessible where the selected service requires it.',
       },
       {
-        question: 'How does delivery work?',
+        question: 'Enter the Correct Details',
         answer:
-          'After payment, fulfillment follows the delivery notes on the service page for the package you selected. Timing can vary by service and quantity.',
+          'Double check the username or URL before checkout. The information you provide tells us where the order should be delivered.',
       },
       {
-        question: 'What information is required?',
+        question: 'Review Your Package',
         answer:
-          'Typically your email for the order receipt plus the public profile or content link the package targets. Exact fields appear during order configuration.',
-      },
-      {
-        question: 'What happens after checkout?',
-        answer:
-          'You receive order confirmation details and can track status with your order ID and email on the track-order page.',
+          'Check the service, quantity, and price before completing your purchase.',
       },
     ],
   },
 
   faq: {
     id: 'homepage-faq',
-    title: 'Frequently asked questions',
-    description: 'Common questions about ordering on NovaLikes.',
+    title: 'Frequently Asked Questions',
+    description:
+      'Here are answers to common questions about choosing a NovaLikes service and placing an order.',
     items: [
       {
-        question: 'Is NovaLikes only for Instagram?',
+        question: 'What social media services can I order from NovaLikes?',
         answer:
-          'No. NovaLikes offers Instagram, TikTok, Facebook, and YouTube growth packages from one catalog.',
+          'NovaLikes offers followers, likes, views, comments, Page likes, and post likes across Instagram, TikTok, and Facebook. The available options depend on the platform you choose.',
       },
       {
-        question: 'Where do I see prices and package sizes?',
+        question: 'Do I need to give NovaLikes my social media password?',
         answer:
-          'Open the dedicated service page for the offer you want. Each page lists the live packages for that service.',
+          'No. You only provide the public username, profile, Page, post, or video details required for the service you order.',
       },
       {
-        question: 'Can I buy without sharing my password?',
+        question: 'How do I choose the right package?',
         answer:
-          'Yes. Orders are designed around public profile or content details only.',
+          'Start by choosing the platform and service you need. You can then compare the available quantities and prices on that service page before selecting a package.',
       },
       {
-        question: 'How do I get help with an order?',
+        question: 'What information do I need to place an order?',
         answer:
-          'Use the contact page for support, or the track-order page when you already have an order ID and email.',
+          'It depends on the service. You may be asked for a public username, profile URL, Page URL, post link, Reel, or video URL so the order can be sent to the correct place.',
       },
       {
-        question: 'Are refunds always available?',
+        question: 'Can I check my order after checkout?',
         answer:
-          'Refund and refill rules depend on the package and the Refund Policy. Review those details before purchasing.',
+          'Yes. NovaLikes provides an order tracking option that you can use to check the status of your purchase.',
+      },
+      {
+        question: 'Can I contact NovaLikes if I have a question about my order?',
+        answer:
+          'Yes. You can contact NovaLikes for help with a service or an existing order. Include your order details when contacting support about a purchase.',
       },
     ],
   },
 
   reviews: {
     id: 'homepage-reviews',
-    title: 'Customer reviews',
+    title: 'What Customers Say About NovaLikes',
     description:
-      'Feedback from customers who purchased NovaLikes services. Only approved reviews are shown.',
-    cta: { label: 'Read more reviews', href: '/reviews' },
+      'Read feedback from customers who have used NovaLikes for social media services. Their experiences can help you get a better idea of the ordering process before placing your own order.',
+    cta: { label: 'Read More Reviews', href: '/reviews' },
   },
 
   finalCta: {
     id: 'home-final-cta',
-    title: 'Ready to choose a growth service?',
+    eyebrow: 'Grow Faster with NovaLikes',
+    title: 'Ready to Grow Your Social Presence?',
     description:
-      'Browse all twelve offers, open the page that matches your goal, and compare live packages before you checkout.',
-    primaryCta: { label: 'Browse all services', href: '#services-overview' },
-    secondaryCta: { label: 'Contact support', href: '/contact' },
+      "Choose the platform and service that fits what you're looking for. Compare available packages, review the details, and place your order when you're ready.",
+    primaryCta: { label: 'Explore Services', href: '#services-overview' },
+    secondaryCta: { label: 'Track an Order', href: '/track-order' },
+    trustItems: [
+      { id: 'secure', label: 'No Password Required', icon: 'shield' as const },
+      { id: 'delivery', label: 'Clear Package Pricing', icon: 'bolt' as const },
+      { id: 'support', label: 'Order Tracking', icon: 'headset' as const },
+    ],
   },
 
   services: [
@@ -304,20 +316,33 @@ export const homepageHub = {
       slug: 'buy-instagram-followers',
       href: '/buy-instagram-followers',
       name: 'Instagram Followers',
-      commercialLabel: 'Buy Instagram Followers',
-      title: 'Instagram Followers packages',
+      cardBlurb: 'Follower packages for your public Instagram profile.',
+      commercialLabel: 'BUY INSTAGRAM FOLLOWERS',
+      title: 'Instagram Followers Packages',
       intro:
-        'Build a clearer audience baseline for your Instagram profile with packages sized for different stages of growth.',
+        'Buy Instagram followers when you want to add more followers to your profile without sharing your password. Choose from the available package sizes, enter your public Instagram username, and place your order online.',
       points: [
-        'Public username only—no password',
-        'Multiple package sizes in the live catalog',
-        'Useful when you want account-level social proof',
-        'Compare options on the dedicated service page',
+        {
+          title: 'Profile Follower Count',
+          text: 'Followers are added to the public Instagram profile provided with the order.',
+        },
+        {
+          title: 'For Different Account Sizes',
+          text: 'Choose a follower quantity that makes sense for the profile you are working on.',
+        },
+        {
+          title: 'Focused on Your Profile',
+          text: 'This service is for your follower count, not the likes, views, or comments on individual posts.',
+        },
+        {
+          title: 'Other Instagram Services',
+          text: 'Likes, views, and comments are available separately when you want to work on individual content.',
+        },
       ],
       cta: { label: 'View Instagram Followers', href: '/buy-instagram-followers' },
       image: {
-        src: '/assets/images/illustrations/buy-instagram-followers-hero-v2.webp',
-        alt: 'Illustration for Instagram Followers growth packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/instagram-followers-visual.webp',
+        alt: 'Instagram profile with follower and audience indicators',
       },
       tone: 'rose',
     },
@@ -327,20 +352,33 @@ export const homepageHub = {
       slug: 'buy-instagram-likes',
       href: '/buy-instagram-likes',
       name: 'Instagram Likes',
-      commercialLabel: 'Buy Instagram Likes',
-      title: 'Instagram Likes packages',
+      cardBlurb: 'Like packages for eligible Instagram posts and Reels.',
+      commercialLabel: 'BUY INSTAGRAM LIKES',
+      title: 'Instagram Likes Packages',
       intro:
-        'Support post engagement when you want a stronger first impression on photos, carousels, or Reels.',
+        'Buy Instagram likes for a post or Reel when you want more visible engagement on that piece of content. Choose a package, provide the public post or Reel URL, and place your order without giving NovaLikes access to your Instagram account.',
       points: [
-        'Target a public post URL',
-        'Choose a quantity that fits the post',
-        'Pairs well with views on video content',
-        'Full package list on the service page',
+        {
+          title: 'For Posts and Reels',
+          text: 'Choose the public Instagram post or Reel where you want the likes delivered.',
+        },
+        {
+          title: 'Content Specific',
+          text: 'Likes apply to the selected content rather than the follower count of your profile.',
+        },
+        {
+          title: 'Choose the Right Post',
+          text: 'Check that you are submitting the exact public post or Reel you want to use.',
+        },
+        {
+          title: 'Likes, Views or Comments',
+          text: 'Choose views for video watch count or comments when you want a different type of interaction.',
+        },
       ],
       cta: { label: 'View Instagram Likes', href: '/buy-instagram-likes' },
       image: {
-        src: '/assets/images/illustrations/buy-instagram-likes-hero-v2.webp',
-        alt: 'Illustration for Instagram Likes packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/instagram-likes-visual.webp',
+        alt: 'Instagram post with likes and engagement indicators',
       },
       tone: 'violet',
     },
@@ -350,20 +388,33 @@ export const homepageHub = {
       slug: 'buy-instagram-views',
       href: '/buy-instagram-views',
       name: 'Instagram Views',
-      commercialLabel: 'Buy Instagram Views',
-      title: 'Instagram Views packages',
+      cardBlurb: 'View packages for eligible Instagram Reels and videos.',
+      commercialLabel: 'BUY INSTAGRAM VIEWS',
+      title: 'Instagram Views Packages',
       intro:
-        'Help Reels and video posts get started with view packages matched to your content URL.',
+        'Buy Instagram views for a Reel or video when you want to increase its visible view count. Select the number of views you need, add the public link to your content, and complete your order without sharing your Instagram password.',
       points: [
-        'Built for video and Reels URLs',
-        'Clear quantities in the catalog',
-        'Complements likes for engagement',
-        'Delivery notes listed on the service page',
+        {
+          title: 'Made for Video Content',
+          text: 'Use this service for an eligible public Instagram Reel or video.',
+        },
+        {
+          title: 'Focused on Views',
+          text: 'This service is for the view count on your content rather than followers, likes, or comments.',
+        },
+        {
+          title: 'Choose the Right Video',
+          text: 'Submit the exact public Reel or video you want the views delivered to.',
+        },
+        {
+          title: 'Order by Content',
+          text: 'Choose a quantity based on the individual Reel or video you are working on.',
+        },
       ],
       cta: { label: 'View Instagram Views', href: '/buy-instagram-views' },
       image: {
-        src: '/assets/images/illustrations/buy-instagram-views-hero-v2.webp',
-        alt: 'Illustration for Instagram Views packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/instagram-views-visual.webp',
+        alt: 'Instagram Reel with video view indicators',
       },
       tone: 'orange',
     },
@@ -373,20 +424,33 @@ export const homepageHub = {
       slug: 'buy-instagram-comments',
       href: '/buy-instagram-comments',
       name: 'Instagram Comments',
-      commercialLabel: 'Buy Instagram Comments',
-      title: 'Instagram Comments packages',
+      cardBlurb: 'Comment packages for eligible Instagram posts and Reels.',
+      commercialLabel: 'BUY INSTAGRAM COMMENTS',
+      title: 'Instagram Comments Packages',
       intro:
-        'Add conversation signals to a public post when comments are part of your engagement plan.',
+        'Buy Instagram comments for a public post or Reel when you want more visible conversation around your content. Choose the available comment option that suits your post, provide the public content link, and place your order without sharing your Instagram password.',
       points: [
-        'Post URL based ordering',
-        'HQ and Premium options where offered',
-        'Review package details before checkout',
-        'Use thoughtfully alongside organic replies',
+        {
+          title: 'For Posts and Reels',
+          text: 'Choose the public Instagram content where you want comments added.',
+        },
+        {
+          title: 'Comment Activity',
+          text: 'Comments add a different type of visible interaction from likes or views.',
+        },
+        {
+          title: 'Content Specific',
+          text: 'The order applies to the selected post or Reel rather than your overall follower count.',
+        },
+        {
+          title: 'Check Your Content',
+          text: 'Make sure the submitted post or Reel is the exact one you want to use for the order.',
+        },
       ],
       cta: { label: 'View Instagram Comments', href: '/buy-instagram-comments' },
       image: {
-        src: '/assets/images/illustrations/buy-instagram-comments-hero-v2.webp',
-        alt: 'Illustration for Instagram Comments packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/instagram-comments-visual.webp',
+        alt: 'Instagram post with comments and conversation bubbles',
       },
       tone: 'amber',
     },
@@ -396,20 +460,33 @@ export const homepageHub = {
       slug: 'buy-tiktok-followers',
       href: '/buy-tiktok-followers',
       name: 'TikTok Followers',
-      commercialLabel: 'Buy TikTok Followers',
-      title: 'TikTok Followers packages',
+      cardBlurb: 'Follower packages for your public TikTok profile.',
+      commercialLabel: 'BUY TIKTOK FOLLOWERS',
+      title: 'TikTok Followers Packages',
       intro:
-        'Grow your TikTok audience count with packages designed around a public profile username.',
+        'Buy TikTok followers when you want to increase the follower count shown on your profile. Choose a package that fits your account, provide your public TikTok username, and place your order without sharing your password.',
       points: [
-        'No password required',
-        'Multiple follower package sizes',
-        'Good starting point for account presence',
-        'Compare pricing on the service page',
+        {
+          title: 'Profile Follower Count',
+          text: 'This service is for followers shown on the TikTok profile submitted with the order.',
+        },
+        {
+          title: 'Account Focused',
+          text: 'Followers apply to the account rather than the likes or views on a specific video.',
+        },
+        {
+          title: 'Choose for Your Account',
+          text: 'Select a follower quantity that fits the TikTok profile you are working on.',
+        },
+        {
+          title: 'Video Services Are Separate',
+          text: 'TikTok Likes and Views are available when you want to work on individual videos.',
+        },
       ],
       cta: { label: 'View TikTok Followers', href: '/buy-tiktok-followers' },
       image: {
-        src: '/assets/images/illustrations/buy-tiktok-followers-hero-v2.webp',
-        alt: 'Illustration for TikTok Followers packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/tiktok-followers-visual.webp',
+        alt: 'TikTok creator profile with follower indicators',
       },
       tone: 'slate',
     },
@@ -419,20 +496,33 @@ export const homepageHub = {
       slug: 'buy-tiktok-likes',
       href: '/buy-tiktok-likes',
       name: 'TikTok Likes',
-      commercialLabel: 'Buy TikTok Likes',
-      title: 'TikTok Likes packages',
+      cardBlurb: 'Like packages for eligible public TikTok videos.',
+      commercialLabel: 'BUY TIKTOK LIKES',
+      title: 'TikTok Likes Packages',
       intro:
-        'Boost engagement on a specific TikTok video when likes are the metric you want to move.',
+        'Buy TikTok likes for a public video when you want to add more likes to that specific post. Pick the package size you need, enter the video link, and complete your order without giving NovaLikes your TikTok password.',
       points: [
-        'Public video URL required',
-        'Package sizes for different video stages',
-        'Often paired with views',
-        'Full details on the dedicated page',
+        {
+          title: 'For Individual Videos',
+          text: 'Choose the public TikTok video where you want the likes delivered.',
+        },
+        {
+          title: 'Video Specific',
+          text: 'Likes apply to the selected video rather than the follower count of your TikTok profile.',
+        },
+        {
+          title: 'Check the Video',
+          text: 'Make sure you submit the exact public TikTok video you want to use.',
+        },
+        {
+          title: 'Likes or Views',
+          text: 'Choose TikTok Views instead when the view count is the metric you want to work on.',
+        },
       ],
       cta: { label: 'View TikTok Likes', href: '/buy-tiktok-likes' },
       image: {
-        src: '/assets/images/illustrations/buy-tiktok-likes-hero-v2.webp',
-        alt: 'Illustration for TikTok Likes packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/tiktok-likes-visual.webp',
+        alt: 'TikTok video with likes and interaction indicators',
       },
       tone: 'cyan',
     },
@@ -442,20 +532,33 @@ export const homepageHub = {
       slug: 'buy-tiktok-views',
       href: '/buy-tiktok-views',
       name: 'TikTok Views',
-      commercialLabel: 'Buy TikTok Views',
-      title: 'TikTok Views packages',
+      cardBlurb: 'View packages for eligible public TikTok videos.',
+      commercialLabel: 'BUY TIKTOK VIEWS',
+      title: 'TikTok Views Packages',
       intro:
-        'Support video reach with view packages, including quality tiers when listed in the catalog.',
+        'Buy TikTok views for a public video when you want to increase the number of views shown on that post. Choose the view package you need, provide the video URL, and place your order without sharing your TikTok password.',
       points: [
-        'HQ and Premium tiers where available',
-        'Sized for different content goals',
-        'Public video link only',
-        'See delivery notes on the service page',
+        {
+          title: 'For TikTok Videos',
+          text: 'Choose the public TikTok video where you want the views delivered.',
+        },
+        {
+          title: 'Focused on View Count',
+          text: 'This service works on video views rather than profile followers or video likes.',
+        },
+        {
+          title: 'Use the Right Video',
+          text: 'Check the TikTok video before submitting it with your order.',
+        },
+        {
+          title: 'Choose by Video',
+          text: 'Select the quantity based on the individual video you are working on.',
+        },
       ],
       cta: { label: 'View TikTok Views', href: '/buy-tiktok-views' },
       image: {
-        src: '/assets/images/illustrations/buy-tiktok-views-hero-v2.webp',
-        alt: 'Illustration for TikTok Views packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/tiktok-views-visual.webp',
+        alt: 'TikTok video with view and playback indicators',
       },
       tone: 'slate',
     },
@@ -465,20 +568,33 @@ export const homepageHub = {
       slug: 'buy-facebook-followers',
       href: '/buy-facebook-followers',
       name: 'Facebook Followers',
-      commercialLabel: 'Buy Facebook Followers',
-      title: 'Facebook Followers packages',
+      cardBlurb: 'Follower packages for eligible public Facebook Pages.',
+      commercialLabel: 'BUY FACEBOOK FOLLOWERS',
+      title: 'Facebook Followers Packages',
       intro:
-        'Strengthen profile or page follower counts when audience size is your primary Facebook goal.',
+        'Buy Facebook followers when you want to add more followers to an eligible public Facebook Page. Choose from the available package sizes, provide the public Facebook Page details required for your order, and complete your purchase without sharing your Facebook password.',
       points: [
-        'Public Facebook details only',
-        'Package ladder in the live catalog',
-        'Useful for newer pages and profiles',
-        'Order from the dedicated service page',
+        {
+          title: 'Follower Focused',
+          text: 'Use this service when followers are the Facebook metric you want to work on.',
+        },
+        {
+          title: 'Different from Page Likes',
+          text: 'Facebook Followers and Facebook Page Likes are separate services with different purposes.',
+        },
+        {
+          title: 'For Your Facebook Page',
+          text: 'The followers apply to the eligible public Facebook Page submitted with the order.',
+        },
+        {
+          title: 'Post Likes Are Separate',
+          text: 'Choose Facebook Post Likes when you want likes on an individual post instead.',
+        },
       ],
       cta: { label: 'View Facebook Followers', href: '/buy-facebook-followers' },
       image: {
-        src: '/assets/images/illustrations/buy-facebook-followers-hero-v2.webp',
-        alt: 'Illustration for Facebook Followers packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/facebook-followers-visual.webp',
+        alt: 'Facebook Page with follower and community indicators',
       },
       tone: 'blue',
     },
@@ -488,20 +604,33 @@ export const homepageHub = {
       slug: 'buy-facebook-page-likes',
       href: '/buy-facebook-page-likes',
       name: 'Facebook Page Likes',
-      commercialLabel: 'Buy Facebook Page Likes',
-      title: 'Facebook Page Likes packages',
+      cardBlurb: 'Page Like packages for eligible public Facebook Pages.',
+      commercialLabel: 'BUY FACEBOOK PAGE LIKES',
+      title: 'Facebook Page Likes Packages',
       intro:
-        'Support Page credibility with page like packages aimed at public Facebook Pages.',
+        'Buy Facebook Page likes when you want to increase the number of likes shown on your business, brand, or public Page. Choose a package, provide the public Facebook Page link, and place your order without sharing your account password.',
       points: [
-        'Page URL based ordering',
-        'Multiple quantities available',
-        'Distinct from post likes',
-        'Review packages before checkout',
+        {
+          title: 'For Facebook Pages',
+          text: 'Use this service for an eligible public business, brand, or other Facebook Page.',
+        },
+        {
+          title: 'Page Level Metric',
+          text: 'Page likes apply to the Page itself rather than an individual Facebook post.',
+        },
+        {
+          title: 'Different from Followers',
+          text: 'Choose Facebook Followers instead when follower count is the metric you want.',
+        },
+        {
+          title: 'Check the Page',
+          text: 'Make sure the public Facebook Page submitted with the order is the correct one.',
+        },
       ],
       cta: { label: 'View Facebook Page Likes', href: '/buy-facebook-page-likes' },
       image: {
-        src: '/assets/images/illustrations/buy-facebook-page-likes-hero-v2.webp',
-        alt: 'Illustration for Facebook Page Likes packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/facebook-page-likes-visual.webp',
+        alt: 'Facebook Page with Page Like indicators',
       },
       tone: 'blue',
     },
@@ -511,68 +640,35 @@ export const homepageHub = {
       slug: 'buy-facebook-post-likes',
       href: '/buy-facebook-post-likes',
       name: 'Facebook Post Likes',
-      commercialLabel: 'Buy Facebook Post Likes',
-      title: 'Facebook Post Likes packages',
+      cardBlurb: 'Post Like packages for eligible public Facebook posts.',
+      commercialLabel: 'BUY FACEBOOK POST LIKES',
+      title: 'Facebook Post Likes Packages',
       intro:
-        'Add engagement to a specific public Facebook post when post-level likes are the goal.',
+        'Buy Facebook post likes for a public post when you want to increase the number of likes shown on that specific piece of content. Choose a package, provide the public post URL, and complete your order without sharing your Facebook password.',
       points: [
-        'Public post URL required',
-        'Flexible package sizes',
-        'Complements page-level growth',
-        'Details live on the service page',
+        {
+          title: 'For Individual Posts',
+          text: 'Choose the public Facebook post where you want the likes added.',
+        },
+        {
+          title: 'Post Level Metric',
+          text: 'This service applies to a specific post rather than the overall Facebook Page.',
+        },
+        {
+          title: 'Different from Page Likes',
+          text: 'Facebook Page Likes are for the Page itself, while this service is for individual content.',
+        },
+        {
+          title: 'Choose the Right Post',
+          text: 'Check the public post before submitting it with your order.',
+        },
       ],
       cta: { label: 'View Facebook Post Likes', href: '/buy-facebook-post-likes' },
       image: {
-        src: '/assets/images/illustrations/buy-facebook-post-likes-hero-v2.webp',
-        alt: 'Illustration for Facebook Post Likes packages on NovaLikes',
+        src: '/assets/images/illustrations/homepage/facebook-post-likes-visual.webp',
+        alt: 'Facebook post with Like and reaction indicators',
       },
       tone: 'blue',
-    },
-    {
-      id: 'yt-subscribers',
-      platform: 'youtube',
-      slug: 'buy-youtube-subscribers',
-      href: '/buy-youtube-subscribers',
-      name: 'YouTube Subscribers',
-      commercialLabel: 'Buy YouTube Subscribers',
-      title: 'YouTube Subscribers packages',
-      intro:
-        'Grow channel subscriber counts with packages tailored to public YouTube channels.',
-      points: [
-        'Channel-focused ordering',
-        'No password required',
-        'Catalog spans starter to larger sizes',
-        'Compare options on the service page',
-      ],
-      cta: { label: 'View YouTube Subscribers', href: '/buy-youtube-subscribers' },
-      image: {
-        src: '/assets/images/illustrations/buy-youtube-subscribers-hero-v2.webp',
-        alt: 'Illustration for YouTube Subscribers packages on NovaLikes',
-      },
-      tone: 'red',
-    },
-    {
-      id: 'yt-views',
-      platform: 'youtube',
-      slug: 'buy-youtube-views',
-      href: '/buy-youtube-views',
-      name: 'YouTube Views',
-      commercialLabel: 'Buy YouTube Views',
-      title: 'YouTube Views packages',
-      intro:
-        'Support video performance with view packages aimed at a public YouTube video URL.',
-      points: [
-        'Video URL based delivery target',
-        'Quantities for different video goals',
-        'Pairs with subscriber growth strategies',
-        'Full package list on the service page',
-      ],
-      cta: { label: 'View YouTube Views', href: '/buy-youtube-views' },
-      image: {
-        src: '/assets/images/illustrations/buy-youtube-views-hero-v2.webp',
-        alt: 'Illustration for YouTube Views packages on NovaLikes',
-      },
-      tone: 'red',
     },
   ] as const satisfies readonly HubServiceMini[],
 } as const;

@@ -8,6 +8,8 @@ import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { contactPageSchema } from '@/schemas/contact-page';
 import { companyMetadata } from '@/seo/metadata';
+import { descriptions } from '@/seo/descriptions';
+import { titles } from '@/seo/titles';
 
 export function generateMetadata(): Metadata {
   return companyMetadata('contact');
@@ -19,8 +21,8 @@ export default function ContactPage() {
 
   const graph = asJsonLdGraph([
     contactPageSchema({
-      title: content.seo.title,
-      description: content.seo.description,
+      title: titles.company('Contact'),
+      description: descriptions.contact(),
       path: routes.contact,
     }),
     breadcrumbSchema([

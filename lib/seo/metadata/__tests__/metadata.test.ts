@@ -20,7 +20,6 @@ import {
   validateMetadataRegistry,
   validateMetadataSchemaConsistency,
   validateSocialImage,
-  youtubeMetadataIsSafe,
 } from '@/lib/seo/metadata';
 import { adminMetadata, cartMetadata, checkoutMetadata, homeMetadata, serviceMetadata } from '@/seo/metadata';
 import { absoluteUrl } from '@/seo/canonical';
@@ -36,12 +35,20 @@ describe('SEO Metadata & Canonical Engine', () => {
       'NovaLikes',
     );
     expect(meta.robots).toMatchObject({ index: true });
+    expect(meta.alternates?.languages?.['x-default']).toBe('https://novalikes.com');
+    expect(meta.alternates?.languages?.es).toBe('https://novalikes.com/es');
   });
 
   it('builds approved service metadata and rejects skipped services', () => {
     const ig = serviceMetadata('buy-instagram-followers');
     expect(ig.alternates?.canonical).toBe(
       'https://novalikes.com/buy-instagram-followers',
+    );
+    expect(ig.alternates?.languages?.['x-default']).toBe(
+      'https://novalikes.com/buy-instagram-followers',
+    );
+    expect(ig.alternates?.languages?.de).toBe(
+      'https://novalikes.com/de/instagram-follower-kaufen',
     );
     expect(ig.robots).toMatchObject({ index: true });
 
@@ -121,7 +128,7 @@ describe('SEO Metadata & Canonical Engine', () => {
   });
 
   it('applies noindex to cart, checkout, and admin', () => {
-    expect(cartMetadata().robots).toMatchObject({ index: false });
+    expect(cartMetadata().robots).toMatchObject({ index: false, follow: true });
     expect(checkoutMetadata().robots).toMatchObject({ index: false, follow: false });
     expect(adminMetadata().robots).toMatchObject({ index: false, follow: false });
   });
@@ -143,19 +150,18 @@ describe('SEO Metadata & Canonical Engine', () => {
   });
 
   it('keeps metadata and schema canonicals consistent', () => {
-    const route = '/buy-youtube-views';
+    const route = '/buy-facebook-post-likes';
     const canonical = buildCanonicalUrl(route);
     const issues = validateMetadataSchemaConsistency(route, absoluteUrl(route));
     expect(issues.filter((issue) => issue.kind === 'schema_url_mismatch')).toHaveLength(0);
     expect(canonical).toBe(absoluteUrl(route));
   });
 
-  it('keeps YouTube metadata free of monetization claims', () => {
-    const entry = getMetadataByRoute('/buy-youtube-views');
-    expect(entry).toBeDefined();
-    expect(youtubeMetadataIsSafe(entry!.title)).toBe(true);
-    expect(youtubeMetadataIsSafe(entry!.description)).toBe(true);
-    expect(entry!.description.toLowerCase()).not.toContain('monetization');
+  it('does not publish metadata for removed YouTube service pages', () => {
+    expect(getMetadataByRoute('/buy-youtube-views')).toBeUndefined();
+    expect(getMetadataByRoute('/buy-youtube-subscribers')).toBeUndefined();
+    expect(isSkippedServiceRoute('/buy-youtube-views')).toBe(true);
+    expect(isSkippedServiceRoute('/buy-youtube-subscribers')).toBe(true);
   });
 
   it('registry validation has no duplicate titles among indexable pages', () => {
@@ -176,10 +182,10 @@ describe('SEO Metadata & Canonical Engine', () => {
     expect(meta.metadataBase?.toString()).toContain('novalikes.com');
   });
 
-  it('track order form metadata is indexable while result route is not', () => {
+  it('track order form metadata is noindex follow while result route is noindex', () => {
     const form = buildPageMetadataForRoute(routes.trackOrder);
     const result = buildPageMetadataForRoute('/track-order/result');
-    expect(form.robots).toMatchObject({ index: true });
+    expect(form.robots).toMatchObject({ index: false, follow: true });
     expect(result.robots).toMatchObject({ index: false });
   });
 });

@@ -3,6 +3,12 @@
  *
  * Use verified values only. Do not invent legal entity names, addresses,
  * governing law, venues, or contact details.
+ *
+ * TODO: GOVERNING LAW / JURISDICTION REQUIRES BUSINESS CONFIRMATION
+ * TODO: DISPUTE VENUE REQUIRES BUSINESS CONFIRMATION
+ * TODO: CONFIRM distinct registered legal entity name (if different from "NovaLikes")
+ * TODO: CONFIRM mailing / registered office address
+ * TODO: CONFIRM numeric minimum customer age after legal review
  */
 
 import { brand } from '@/config/brand';
@@ -22,7 +28,7 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current Terms configuration.
- * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
+ * Verified: operating name NovaLikes, domain novalikes.com, support@novalikes.com.
  * Payment providers are read from config/payments.ts at content-build time.
  */
 export const termsConfig: TermsConfig = {
@@ -30,11 +36,10 @@ export const termsConfig: TermsConfig = {
   operatingName: brand.name,
   websiteDomain: site.domain,
 
-  // Launch blockers until verified — intentionally unset
-  supportEmail: undefined,
+  supportEmail: site.supportEmail,
   mailingAddress: undefined,
-  effectiveDate: undefined,
-  lastUpdatedDate: undefined,
+  effectiveDate: '2026-08-17',
+  lastUpdatedDate: '2026-08-17',
   governingLaw: undefined,
   disputeVenue: undefined,
   minimumCustomerAge: undefined,

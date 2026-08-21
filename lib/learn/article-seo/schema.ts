@@ -3,7 +3,6 @@
  * Never invent authors, ratings, or FAQ schema without eligibility.
  */
 
-import { brand } from '@/config/brand';
 import { site } from '@/config/site';
 import { getAuthorById } from '@/lib/authors';
 import { getAuthorSchema } from '@/lib/authors/schema';
@@ -17,7 +16,7 @@ import { sanitizeJsonLdText } from '@/lib/learn/article-seo/sanitize';
 import { absoluteUrl } from '@/lib/seo/metadata/canonical';
 import { getLearnArticleBreadcrumbs } from '@/lib/learn/linking';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import type { JsonLd } from '@/schemas/organization';
+import { ORGANIZATION_ID, type JsonLd } from '@/schemas/organization';
 import type { LearnArticleRecord, PublicLearnArticle } from '@/types/learn';
 import type {
   ArticleFaqSchemaItem,
@@ -25,12 +24,11 @@ import type {
   BuildArticleSchemaOptions,
 } from '@/types/learn-article-seo';
 
-/** Publisher reference aligned with Organization entity — not a conflicting duplicate. */
+/** Publisher reference — reuse the site Organization entity, do not duplicate it. */
 export function buildArticlePublisherSchema(): JsonLd {
   return {
     '@type': 'Organization',
-    name: brand.name,
-    url: absoluteUrl('/'),
+    '@id': ORGANIZATION_ID,
   };
 }
 
@@ -108,11 +106,9 @@ export function buildArticleSchema(
   const schemaType =
     seo.schemaType === 'BlogPosting' ||
     seo.schemaType === 'NewsArticle' ||
-    seo.schemaType === 'HowTo'
-      ? seo.schemaType === 'HowTo'
-        ? 'Article' // HowTo requires dedicated builder; do not mislabel
-        : seo.schemaType
-      : 'Article';
+    seo.schemaType === 'Article'
+      ? seo.schemaType
+      : 'BlogPosting';
 
   const articleNode: JsonLd = {
     '@context': 'https://schema.org',

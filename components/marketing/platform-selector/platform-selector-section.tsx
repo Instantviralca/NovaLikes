@@ -32,7 +32,7 @@ export function PlatformSelectorSection({ className, id }: PlatformSelectorSecti
     <Section
       id={sectionId}
       spacing="lg"
-      className={cn('bg-background', className)}
+      className={cn('bg-transparent', className)}
       aria-labelledby={`${sectionId}-heading`}
     >
       <Container size="xl">

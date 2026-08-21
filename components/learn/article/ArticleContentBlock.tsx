@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
+import { ArticleServiceCluster } from '@/components/learn/article/ArticleServiceCluster';
 import { learnArticlePath } from '@/config/routes';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getServiceBySlug } from '@/data/services';
@@ -9,6 +10,7 @@ import { cn } from '@/lib/utils';
 import type {
   ArticleContentBlock,
   ArticleInlineLink,
+  CalloutVariant,
 } from '@/types/learn-article-blocks';
 
 type ArticleContentBlockProps = {
@@ -48,7 +50,7 @@ function renderTextWithInlineLinks(
       <Link
         key={`inl-${index}-${match.href}`}
         href={match.href}
-        className="font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-2 transition-colors hover:decoration-neutral-700"
+        className="font-medium text-[#E85D04] underline decoration-[#FDBA74] underline-offset-4 transition-colors hover:text-[#C2410C] hover:decoration-[#E85D04]"
       >
         {match.label}
       </Link>,
@@ -58,6 +60,22 @@ function renderTextWithInlineLinks(
   if (cursor < text.length) nodes.push(text.slice(cursor));
   return nodes;
 }
+
+const CALLOUT_STYLES: Record<CalloutVariant, string> = {
+  info: 'border-[#F0E4D8] bg-[#FFF8F3]',
+  tip: 'border-[#F0E4D8] bg-[#FFF8F3]',
+  important: 'border-[#FDBA74] bg-[#FFF1E6]',
+  warning: 'border-[#FDBA74] bg-[#FFF1E6]',
+  example: 'border-[#E7E5E4] bg-[#FAFAF9]',
+};
+
+const CALLOUT_LABELS: Record<CalloutVariant, string> = {
+  info: 'Info',
+  tip: 'Key takeaway',
+  important: 'Important note',
+  warning: 'Important note',
+  example: 'Comparison',
+};
 
 function CalloutShell({
   label,
@@ -72,14 +90,19 @@ function CalloutShell({
 }) {
   return (
     <aside
-      className={cn('border border-neutral-300 bg-neutral-50 p-4', className)}
+      className={cn(
+        'rounded-2xl border px-5 py-4',
+        className,
+      )}
       role="note"
     >
-      <p className="text-xs font-semibold uppercase tracking-wide text-neutral-700">
+      <p className="text-[11px] font-semibold tracking-[0.14em] text-[#E85D04] uppercase">
         {label}
       </p>
-      {title ? <p className="mt-1 font-medium text-neutral-900">{title}</p> : null}
-      <p className="mt-2 text-sm leading-relaxed text-neutral-700">{text}</p>
+      {title ? (
+        <p className="mt-1.5 font-semibold text-[#1C1917]">{title}</p>
+      ) : null}
+      <p className="mt-2 text-[15px] leading-relaxed text-[#44403C]">{text}</p>
     </aside>
   );
 }
@@ -95,15 +118,17 @@ function ResponsiveTable({
 }) {
   return (
     <div className="w-full overflow-x-auto" data-article-table>
-      <table className="min-w-full border-collapse text-left text-sm">
-        {caption ? <caption className="mb-2 text-left text-neutral-600">{caption}</caption> : null}
+      <table className="min-w-full border-collapse overflow-hidden rounded-xl text-left text-[15px]">
+        {caption ? (
+          <caption className="mb-3 text-left text-sm text-[#78716C]">{caption}</caption>
+        ) : null}
         <thead>
           <tr>
             {headers.map((header) => (
               <th
                 key={header}
                 scope="col"
-                className="border border-neutral-200 bg-neutral-50 px-3 py-2 font-semibold"
+                className="border border-[#F0E4D8] bg-[#FFF8F3] px-4 py-3 font-semibold text-[#1C1917]"
               >
                 {header}
               </th>
@@ -112,11 +137,11 @@ function ResponsiveTable({
         </thead>
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={`row-${rowIndex}`}>
+            <tr key={`row-${rowIndex}`} className="bg-white">
               {row.map((cell, cellIndex) => (
                 <td
                   key={`cell-${rowIndex}-${cellIndex}`}
-                  className="border border-neutral-200 px-3 py-2 align-top"
+                  className="border border-[#F0E4D8] px-4 py-3 align-top text-[#44403C]"
                 >
                   {cell}
                 </td>
@@ -137,7 +162,7 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
   switch (block.type) {
     case 'paragraph':
       return (
-        <p className="leading-relaxed text-neutral-800">
+        <p className="text-[17px] leading-[1.75] text-[#292524] md:text-[18px]">
           {renderTextWithInlineLinks(block.text, block.inlineLinks)}
         </p>
       );
@@ -147,8 +172,10 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
         <Tag
           id={block.anchorId}
           className={cn(
-            'scroll-mt-24 font-semibold text-neutral-900',
-            block.headingLevel === 2 ? 'text-2xl' : 'text-xl',
+            'scroll-mt-24 font-semibold tracking-tight text-[#1C1917]',
+            block.headingLevel === 2
+              ? 'mt-4 text-[1.45rem] leading-snug md:text-[1.6rem]'
+              : 'mt-2 text-[1.15rem] leading-snug md:text-[1.25rem]',
           )}
         >
           {block.text}
@@ -158,20 +185,45 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
     case 'bulleted_list':
       return (
         <div>
-          {block.leadIn ? <p className="mb-2 text-neutral-800">{block.leadIn}</p> : null}
-          <ul className="list-disc space-y-1 pl-5 text-neutral-800">
+          {block.leadIn ? (
+            <p className="mb-2 text-[17px] leading-[1.75] text-[#292524] md:text-[18px]">
+              {block.leadIn}
+            </p>
+          ) : null}
+          <ul
+            className={
+              block.styleVariant === 'checklist'
+                ? 'space-y-2.5 text-[17px] leading-[1.7] text-[#292524] md:text-[18px]'
+                : 'list-disc space-y-2 pl-5 text-[17px] leading-[1.7] text-[#292524] md:text-[18px]'
+            }
+          >
             {block.items.map((item, itemIndex) => {
               const itemLink = block.inlineItemLinks?.find(
                 (link) => link.itemIndex === itemIndex,
               );
               return (
-                <li key={`${itemIndex}-${item.slice(0, 24)}`}>
-                  {renderTextWithInlineLinks(
-                    item,
-                    itemLink
-                      ? [{ href: itemLink.href, label: itemLink.label }]
-                      : undefined,
-                  )}
+                <li
+                  key={`${itemIndex}-${item.slice(0, 24)}`}
+                  className={
+                    block.styleVariant === 'checklist'
+                      ? 'flex gap-2.5'
+                      : undefined
+                  }
+                >
+                  {block.styleVariant === 'checklist' ? (
+                    <span
+                      className="mt-2 size-1.5 shrink-0 rounded-full bg-[#E85D04]"
+                      aria-hidden
+                    />
+                  ) : null}
+                  <span>
+                    {renderTextWithInlineLinks(
+                      item,
+                      itemLink
+                        ? [{ href: itemLink.href, label: itemLink.label }]
+                        : undefined,
+                    )}
+                  </span>
                 </li>
               );
             })}
@@ -181,8 +233,12 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
     case 'numbered_list':
       return (
         <div>
-          {block.leadIn ? <p className="mb-2 text-neutral-800">{block.leadIn}</p> : null}
-          <ol className="list-decimal space-y-1 pl-5 text-neutral-800">
+          {block.leadIn ? (
+            <p className="mb-2 text-[17px] leading-[1.75] text-[#292524] md:text-[18px]">
+              {block.leadIn}
+            </p>
+          ) : null}
+          <ol className="list-decimal space-y-2 pl-5 text-[17px] leading-[1.7] text-[#292524] md:text-[18px]">
             {block.items.map((item, itemIndex) => {
               const itemLink = block.inlineItemLinks?.find(
                 (link) => link.itemIndex === itemIndex,
@@ -205,7 +261,7 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
     case 'figure': {
       const image = block.image;
       return (
-        <figure>
+        <figure className="overflow-hidden rounded-2xl border border-[#F0E4D8] bg-[#FFF8F3]">
           <Image
             src={image.src}
             alt={image.decorative ? '' : image.alt}
@@ -213,14 +269,14 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
             height={image.height}
             loading={image.priority ? undefined : 'lazy'}
             priority={Boolean(image.priority)}
-            className="h-auto w-full"
-            sizes="(max-width: 768px) 100vw, 780px"
+            className="h-auto w-full object-contain"
+            sizes="(max-width: 768px) 100vw, 800px"
           />
           {image.caption || image.credit ? (
-            <figcaption className="mt-2 text-sm text-neutral-500">
+            <figcaption className="border-t border-[#F0E4D8] px-4 py-3 text-sm leading-relaxed text-[#78716C]">
               {image.caption}
               {image.credit ? (
-                <span className="block text-xs">Credit: {image.credit}</span>
+                <span className="mt-1 block text-xs">Credit: {image.credit}</span>
               ) : null}
             </figcaption>
           ) : null}
@@ -229,28 +285,40 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
     }
     case 'blockquote':
       return (
-        <blockquote className="border-l-4 border-neutral-300 pl-4 text-neutral-700 italic">
+        <blockquote className="rounded-r-2xl border-l-4 border-[#E85D04] bg-[#FFF8F3] px-5 py-4 text-[17px] leading-relaxed text-[#44403C] italic md:text-[18px]">
           <p>{block.text}</p>
-          {block.cite ? <cite className="mt-2 block text-sm not-italic">— {block.cite}</cite> : null}
+          {block.cite ? (
+            <cite className="mt-2 block text-sm not-italic text-[#78716C]">
+              — {block.cite}
+            </cite>
+          ) : null}
         </blockquote>
       );
     case 'callout':
       return (
         <CalloutShell
-          label={block.variant}
+          label={CALLOUT_LABELS[block.variant]}
           title={block.title}
           text={block.text}
+          className={CALLOUT_STYLES[block.variant]}
         />
       );
     case 'tip':
-      return <CalloutShell label="Tip" title={block.title} text={block.text} />;
+      return (
+        <CalloutShell
+          label="Key takeaway"
+          title={block.title}
+          text={block.text}
+          className={CALLOUT_STYLES.tip}
+        />
+      );
     case 'warning':
       return (
         <CalloutShell
-          label="Warning"
+          label="Important note"
           title={block.title}
           text={block.text}
-          className="border-neutral-800"
+          className={CALLOUT_STYLES.important}
         />
       );
     case 'definition':
@@ -292,11 +360,11 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
       );
     case 'key_takeaway_box':
       return (
-        <aside className="border border-neutral-300 bg-neutral-50 p-4">
-          <p className="text-sm font-semibold text-neutral-900">
-            {block.title ?? 'Key takeaways'}
+        <aside className="rounded-2xl border border-[#F0E4D8] bg-[#FFF8F3] px-5 py-5">
+          <p className="text-[11px] font-semibold tracking-[0.14em] text-[#E85D04] uppercase">
+            {block.title ?? 'Key takeaway'}
           </p>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-700">
+          <ul className="mt-3 list-disc space-y-1.5 pl-5 text-[15px] leading-relaxed text-[#44403C]">
             {block.items.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -321,17 +389,38 @@ export function ArticleContentBlockView({ block }: ArticleContentBlockProps) {
       );
     case 'internal_cta':
       return (
-        <div className="border border-neutral-200 p-4">
+        <aside
+          data-article-cta="internal"
+          className="not-prose rounded-2xl border border-[#F0E4D8] bg-[#FFF8F3] px-5 py-6 sm:px-6"
+        >
+          <p className="text-[11px] font-semibold tracking-[0.16em] text-[#E85D04] uppercase">
+            NovaLikes
+          </p>
+          {block.heading ? (
+            <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#1C1917]">
+              {block.heading}
+            </h3>
+          ) : null}
           {block.description ? (
-            <p className="mb-2 text-sm text-neutral-600">{block.description}</p>
+            <p className="mt-2 text-[15px] leading-relaxed text-[#57534E]">
+              {block.description}
+            </p>
           ) : null}
           <Link
             href={block.href}
-            className="font-medium text-neutral-900 underline-offset-2 outline-none hover:underline focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
+            className="mt-5 inline-flex min-h-11 items-center rounded-full bg-[#E85D04] px-5 text-sm font-semibold text-white outline-none transition-colors hover:bg-[#D45504] focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2"
           >
             {block.label}
           </Link>
-        </div>
+        </aside>
+      );
+    case 'service_cluster_cta':
+      return (
+        <ArticleServiceCluster
+          heading={block.heading}
+          text={block.text}
+          serviceSlugs={block.serviceSlugs}
+        />
       );
     case 'related_service_card': {
       if (!isApprovedServiceSlug(block.serviceSlug)) return null;

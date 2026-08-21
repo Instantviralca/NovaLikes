@@ -6,6 +6,7 @@ import { CheckoutButton } from '@/components/commerce/cart/checkout-button';
 import { EmptyCart } from '@/components/commerce/cart/empty-cart';
 import { CheckoutProgress } from '@/components/design-system/checkout-progress';
 import { TrustStrip } from '@/components/design-system/trust-strip';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
@@ -15,12 +16,13 @@ import { formatMoney } from '@/lib/pricing/format';
 
 export function CartPage() {
   const cart = useCart();
+  const { ui } = useI18nChrome();
 
   if (!cart.isHydrated) {
     return (
-      <Section aria-label="Shopping cart" className="bg-hero-wash">
+      <Section aria-label={ui.cart.ariaLabel} className="bg-hero-wash">
         <Container size="xl">
-          <p className="text-sm text-muted-foreground">Loading cart…</p>
+          <p className="text-sm text-muted-foreground">{ui.cart.loading}</p>
         </Container>
       </Section>
     );
@@ -28,10 +30,10 @@ export function CartPage() {
 
   if (cart.items.length === 0) {
     return (
-      <Section aria-label="Shopping cart" className="bg-hero-wash">
+      <Section aria-label={ui.cart.ariaLabel} className="bg-hero-wash">
         <Container size="xl" className="space-y-6">
           <Heading as="h1" size="h1">
-            Cart
+            {ui.cart.title}
           </Heading>
           <EmptyCart />
         </Container>
@@ -40,13 +42,13 @@ export function CartPage() {
   }
 
   return (
-    <Section aria-label="Shopping cart" data-analytics="cart-page" className="bg-hero-wash pb-28 lg:pb-16">
+    <Section aria-label={ui.cart.ariaLabel} data-analytics="cart-page" className="bg-hero-wash pb-28 lg:pb-16">
       <Container size="xl">
         <div className="mb-6 space-y-3">
           <Heading as="h1" size="h1">
-            Your cart
+            {ui.cart.yourCart}
           </Heading>
-          <MutedText>Review your package details, then continue to secure checkout.</MutedText>
+          <MutedText>{ui.cart.reviewIntro}</MutedText>
           <CheckoutProgress current="details" className="max-w-2xl" />
         </div>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
@@ -62,8 +64,8 @@ export function CartPage() {
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-4 shadow-[var(--shadow-lg)] backdrop-blur lg:hidden">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
           <div>
-            <p className="text-xs text-[var(--text-secondary)]">Total</p>
-            <p className="text-lg font-bold text-[var(--brand-primary)]" aria-live="polite">
+            <p className="text-xs text-[var(--text-secondary)]">{ui.cart.total}</p>
+            <p className="text-lg font-bold text-[var(--brand-primary)]" aria-live="polite" dir="ltr">
               {formatMoney(cart.totals.total.amount, cart.totals.total.currency)}
             </p>
           </div>

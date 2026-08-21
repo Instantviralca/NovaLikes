@@ -1,0 +1,220 @@
+{
+  "id": "refund-policy",
+  "path": "/refund-policy",
+  "seo": {
+    "title": "Politique de remboursement | NovaLikes",
+    "description": "Consultez la Politique de remboursement de NovaLikes pour des informations sur la garantie de remboursement de 30 jours, l’éligibilité au remboursement, les problèmes de commande, les annulations, les refills et la demande d’assistance."
+  },
+  "breadcrumbLabel": "Politique de remboursement",
+  "header": {
+    "title": "Politique de remboursement",
+    "intro": "NovaLikes propose une garantie de remboursement de 30 jours sur les commandes éligibles. Si vous rencontrez un problème éligible avec votre achat, vous pouvez contacter NovaLikes dans les 30 jours suivant la date de commande pour demander un examen et, le cas échéant, un remboursement."
+  },
+  "tocTitle": "Sur cette page",
+  "sections": [
+    {
+      "id": "before-requesting-a-refund",
+      "anchor": "before-requesting-a-refund",
+      "title": "1. Avant de demander un remboursement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Avant de contacter l’assistance au sujet d’un remboursement, veuillez :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Vérifier que le nom d’utilisateur ou l’URL soumis avec la commande est correct",
+            "Maintenir le profil, la Page, la publication, le Reel ou la vidéo requis publiquement accessible tant que la commande a besoin d’y accéder",
+            "Éviter de supprimer ou de restreindre le contenu soumis tant que la commande est active",
+            "Contacter l’assistance avec les détails de votre commande afin que l’équipe puisse la localiser"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thirty-day-money-back-guarantee",
+      "anchor": "thirty-day-money-back-guarantee",
+      "title": "2. Garantie de remboursement de 30 jours",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes propose une garantie de remboursement de 30 jours sur les commandes éligibles. La période de 30 jours commence à la date d’achat / de paiement de la commande."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les demandes de remboursement doivent être soumises dans les 30 jours suivant la date d’achat d’origine. L’éligibilité dépend des circonstances de la commande, notamment de son statut, du service sélectionné, des informations soumises avec la commande, et de la capacité de NovaLikes à fournir le service acheté."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les circonstances éligibles courantes pouvant justifier un remboursement après examen comprennent :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "NovaLikes ne peut pas fournir le service acheté",
+            "Une erreur technique ou de commande empêche l’exécution",
+            "Un problème de service éligible ne peut pas être résolu",
+            "Un paiement en double accidentel est confirmé"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Soumettre une demande de remboursement ne signifie pas que chaque demande est automatiquement approuvée. Chaque demande est examinée au regard de la présente Politique de remboursement et des circonstances de la commande."
+        }
+      ]
+    },
+    {
+      "id": "when-a-refund-may-not-be-available",
+      "anchor": "when-a-refund-may-not-be-available",
+      "title": "3. Lorsqu’un remboursement peut ne pas s’appliquer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Un remboursement peut ne pas être disponible dans des situations telles que :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Un nom d’utilisateur ou une URL incorrect a été soumis et le traitement avait déjà commencé",
+            "Le profil, la Page, la publication, le Reel ou la vidéo requis a été rendu privé ou indisponible alors qu’un accès public était nécessaire",
+            "Le contenu soumis a été supprimé ou restreint après le paiement",
+            "Le client a modifié des informations nécessaires pour terminer la commande après le début du traitement",
+            "La commande a été menée à bien telle qu’achetée",
+            "La demande de remboursement a été faite après la période de garantie de 30 jours",
+            "Abus, demandes de remboursement en double, fraude ou manipulation de paiement"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Ces exclusions visent à maintenir la garantie équitable et applicable. Elles n’annulent pas la garantie de remboursement de 30 jours pour les commandes éligibles qui remplissent les conditions de la section 2."
+        }
+      ]
+    },
+    {
+      "id": "cancellations",
+      "anchor": "cancellations",
+      "title": "4. Annulations",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Il n’existe pas d’option d’annulation ou de modification en libre-service après un paiement réussi."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les clients doivent contacter l’assistance dès que possible avec les détails de leur commande. Une modification ou une annulation peut ne plus être possible une fois le traitement commencé ou la commande terminée."
+        }
+      ]
+    },
+    {
+      "id": "drops-and-refills",
+      "anchor": "drops-and-refills",
+      "title": "5. Baisses et refills",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Les indicateurs d’abonnés, de likes, de vues, de commentaires et autres indicateurs similaires des plateformes sociales peuvent évoluer dans le temps pour des raisons indépendantes de la volonté de NovaLikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "La disponibilité des refills dépend du service et du forfait achetés. Toute condition de refill applicable est celle indiquée pour le service ou le forfait concerné."
+        },
+        {
+          "type": "paragraph",
+          "text": "La garantie de remboursement de 30 jours est distincte de toute condition de refill propre à un forfait. Cette page ne convertit pas la fenêtre de remboursement en une garantie de refill universelle de 30 jours."
+        }
+      ]
+    },
+    {
+      "id": "duplicate-orders-or-payments",
+      "anchor": "duplicate-orders-or-payments",
+      "title": "6. Commandes ou paiements en double",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Si vous pensez avoir été débité deux fois pour le même achat prévu, contactez rapidement l’assistance en indiquant les deux références de paiement ou les détails de commande."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes examinera les enregistrements et, lorsqu’un paiement en double confirmé est constaté, s’efforcera d’aboutir à une résolution appropriée au titre de la présente Politique de remboursement et du processus du prestataire de paiement applicable."
+        }
+      ]
+    },
+    {
+      "id": "payment-disputes",
+      "anchor": "payment-disputes",
+      "title": "7. Litiges de paiement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Si vous avez une préoccupation relative à un paiement ou à une commande, veuillez d’abord contacter l’assistance NovaLikes afin que l’équipe puisse enquêter et répondre."
+        },
+        {
+          "type": "paragraph",
+          "text": "La présente politique ne restreint pas illicitement les droits d’opposition au paiement (chargeback) ou de litige dont vous pourriez disposer auprès de votre prestataire de paiement ou en vertu de la loi applicable."
+        }
+      ]
+    },
+    {
+      "id": "how-to-request-a-refund",
+      "anchor": "how-to-request-a-refund",
+      "title": "8. Comment demander un remboursement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pour demander un examen au titre de la garantie de remboursement de 30 jours, soumettez une demande via la page [Contact](/contact) ou par e-mail à [support@novalikes.com](mailto:support@novalikes.com)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Veuillez indiquer :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Référence de commande",
+            "Adresse e-mail utilisée pour la commande",
+            "Une brève explication du problème"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "N’envoyez jamais de mots de passe Instagram, TikTok ou Facebook. NovaLikes n’a pas besoin d’identifiants de connexion aux réseaux sociaux pour examiner une commande."
+        }
+      ]
+    },
+    {
+      "id": "refund-processing",
+      "anchor": "refund-processing",
+      "title": "9. Traitement des remboursements",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes examine les demandes de remboursement une fois les détails de commande requis reçus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Le délai de traitement d’un remboursement peut dépendre du prestataire de paiement et du temps nécessaire pour examiner la commande. NovaLikes ne publie pas de délai fixe de règlement des remboursements sur cette page."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "10. Contact",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pour demander un examen de remboursement au titre de la garantie de remboursement de 30 jours, utilisez la page [Contact](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Vous pouvez également envoyer un e-mail à [support@novalikes.com](mailto:support@novalikes.com)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Politiques associées : [Conditions générales](/terms-and-conditions), [Politique de confidentialité](/privacy-policy) et [FAQ](/faq)."
+        }
+      ]
+    }
+  ]
+}

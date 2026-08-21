@@ -39,23 +39,13 @@ describe('Phase 2 technical SEO polish', () => {
     );
   });
 
-  it('code-splits service illustrations via per-platform next/dynamic loaders', () => {
-    const load = readFileSync(
-      join(process.cwd(), 'components/sections/service-page-dynamic/load.ts'),
-      'utf8',
-    );
-    const facebook = readFileSync(
-      join(process.cwd(), 'components/sections/service-page-dynamic/facebook.ts'),
-      'utf8',
-    );
+  it('code-splits service page views by platform authority layouts', () => {
     const view = readFileSync(
       join(process.cwd(), 'components/sections/ServicePageView.tsx'),
       'utf8',
     );
-    expect(load).toContain("import('@/components/sections/service-page-dynamic/facebook')");
-    expect(load).toContain("import('@/components/sections/service-page-dynamic/tiktok')");
-    expect(facebook).toContain("import dynamic from 'next/dynamic'");
-    expect(view).toContain('loadServicePageVisuals');
+    expect(view).toContain("instagram-followers-authority-view");
+    expect(view).toContain("mirrored-service-authority-view");
     expect(view.includes("from '@/components/sections/service-page-dynamic'")).toBe(
       false,
     );
@@ -69,22 +59,26 @@ describe('Phase 2 technical SEO polish', () => {
     expect(height).toBe(630);
   });
 
-  it('Organization sameAs includes only verified Instagram and Facebook profiles', () => {
-    expect(site.socialLinks.instagram).toBe('https://www.instagram.com/novalikes');
-    expect(site.socialLinks.facebook).toBe('https://www.facebook.com/Novalikescanada');
+  it('Organization sameAs includes only verified official social profiles', () => {
+    expect(site.socialLinks.instagram).toBe('https://www.instagram.com/novalikesco/');
+    expect(site.socialLinks.facebook).toBe('https://www.facebook.com/novalikes/');
+    expect(site.socialLinks.linkedin).toBe('https://www.linkedin.com/company/nova-likes/');
     expect(site.socialLinks.tiktok).toBe('');
     expect(site.socialLinks.youtube).toBe('');
 
     const org = organizationSchema();
     expect(org['@type']).toBe('Organization');
+    expect(org['@id']).toBe('https://novalikes.com/#organization');
     expect(org.sameAs).toEqual([
-      'https://www.instagram.com/novalikes',
-      'https://www.facebook.com/Novalikescanada',
+      'https://www.instagram.com/novalikesco/',
+      'https://www.facebook.com/novalikes/',
+      'https://www.linkedin.com/company/nova-likes/',
     ]);
     for (const url of org.sameAs as string[]) {
       expect(url).toMatch(/^https:\/\//);
       expect(url).not.toBe('#');
     }
     expect(JSON.stringify(org)).not.toContain('"#"');
+    expect(JSON.stringify(org)).not.toContain('aggregaterating');
   });
 });

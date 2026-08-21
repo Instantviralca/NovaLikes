@@ -1,0 +1,24 @@
+{
+  "h1": "Avis clients",
+  "intro": "Avis clients issus du catalogue d’avis publié de NovaLikes. Les notes ci-dessous reflètent ce catalogue et peuvent inclure des retours 4 étoiles et 5 étoiles.",
+  "catalogueHeading": "Catalogue des avis clients",
+  "emptyFilter": "Aucun avis ne correspond à ce filtre de plateforme.",
+  "showingTemplate": "Affichage de {visible} sur {total} {word}",
+  "reviewSingular": "avis",
+  "reviewPlural": "avis",
+  "loadMore": "Charger plus d’avis",
+  "emptyCatalogue": "Les avis clients apparaîtront ici lorsque des retours approuvés seront disponibles.",
+  "filterAria": "Filtrer les avis par plateforme",
+  "filterAll": "Tous",
+  "basedOnTemplate": "Basé sur {count} {word}",
+  "exploreTitle": "Prêt à explorer NovaLikes ?",
+  "exploreIntro": "Parcourez nos services Instagram, TikTok et Facebook et choisissez l’option qui correspond à ce que vous recherchez.",
+  "exploreInstagram": "Explorer Instagram",
+  "exploreTikTok": "Explorer TikTok",
+  "exploreFacebook": "Explorer Facebook",
+  "readMore": "Lire plus",
+  "showLess": "Afficher moins",
+  "chrome": {
+    "breadcrumb": "Avis"
+  }
+}

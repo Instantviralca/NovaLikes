@@ -1,0 +1,626 @@
+{
+  "content": {
+    "slug": "buy-tiktok-followers",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "Buy TikTok Followers | NovaLikes",
+      "description": "Buy TikTok followers worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, 24/7 support, and eligible refill coverage."
+    },
+    "hero": {
+      "eyebrow": "BUY TIKTOK FOLLOWERS",
+      "title": "Buy TikTok Followers",
+      "description": "Buy TikTok followers by choosing the package and quantity that fits your account. NovaLikes lets you compare available follower packages and prices before ordering. Select the number of TikTok followers you want, provide the correct public TikTok username, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.",
+      "purpose": "Convert for TikTok follower packages worldwide",
+      "primaryKeyword": "buy TikTok followers",
+      "supportingKeywords": [
+        "Buy TikTok Followers",
+        "Buying TikTok Followers",
+        "Buy Followers on TikTok",
+        "TikTok follower packages",
+        "Buy Real TikTok Followers"
+      ],
+      "suggestedWordCount": 70,
+      "primaryCta": {
+        "label": "Choose a TikTok Followers Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-f-trust-public",
+          "label": "Public Username Only"
+        },
+        {
+          "id": "tt-f-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "tt-f-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "tt-f-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-followers/tiktok-followers-hero.webp",
+        "alt": "TikTok followers growth service dashboard illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "TikTok Followers Packages & Pricing",
+      "description": "Compare the available TikTok followers packages, quantities, and prices before ordering. Choose the number of followers you want for your public TikTok profile, review the current package price, and add your selected option to the cart when you are ready.",
+      "purpose": "Present real NovaLikes.com TikTok follower packages",
+      "primaryKeyword": "TikTok follower packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Order Now",
+      "emptyMessage": "TikTok Followers packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-followers",
+      "title": "Why Do People Buy TikTok Followers?",
+      "description": "People buy TikTok followers to increase the visible follower count on their profile, strengthen first impressions, and support creator or business branding. Follower packages do not guarantee engagement or viral reach. Worldwide, creators and brands often use packages alongside consistent posting to present a more established profile.",
+      "purpose": "Explain informed use of TikTok follower packages",
+      "primaryKeyword": "buy TikTok followers",
+      "suggestedWordCount": 90,
+      "items": [
+        {
+          "id": "tt-f-social-proof",
+          "title": "Stronger First Impressions",
+          "description": "A larger visible audience can make your profile look more established when someone discovers your content."
+        },
+        {
+          "id": "tt-f-creator-friendly",
+          "title": "Creator and Business Branding",
+          "description": "Creators, local businesses, and brands use follower packages to support campaigns while continuing to publish original videos."
+        },
+        {
+          "id": "tt-f-flexible",
+          "title": "Quantity Options That Fit Your Goals",
+          "description": "Choose smaller packages to test the process, or larger sizes when your profile and posting activity are already established."
+        },
+        {
+          "id": "tt-f-content-first",
+          "title": "Works Best With Content",
+          "description": "Buying followers on TikTok supports profile presentation; long-term growth still depends on quality videos and regular posting."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-novalikes-tiktok-followers-legacy",
+      "title": "Why NovaLikes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero, packages, and FAQ",
+      "primaryKeyword": "TikTok growth service",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-followers-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused — requirements handled by What We Need section",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How to Buy TikTok Followers",
+      "description": "How to buy TikTok followers is straightforward: choose a package, enter your public TikTok username, review your order, complete checkout, and track delivery. You do not need to share your password to buy followers on TikTok.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok followers",
+      "suggestedWordCount": 60,
+      "steps": [
+        {
+          "id": "tt-f-step-1",
+          "title": "Choose a Package",
+          "description": "Select the follower quantity that matches your profile and goals."
+        },
+        {
+          "id": "tt-f-step-2",
+          "title": "Enter Your Username",
+          "description": "Provide the public TikTok username where followers should be delivered."
+        },
+        {
+          "id": "tt-f-step-3",
+          "title": "Review Your Order",
+          "description": "Confirm the package size and account details before payment."
+        },
+        {
+          "id": "tt-f-step-4",
+          "title": "Complete Checkout",
+          "description": "Finish purchasing through checkout when your order details look correct."
+        },
+        {
+          "id": "tt-f-step-5",
+          "title": "Track Delivery",
+          "description": "Monitor progress with your order information until delivery finishes."
+        }
+      ],
+      "cta": {
+        "label": "Select a Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "username-and-delivery",
+      "title": "What We Need From You",
+      "description": "To process a TikTok follower order, we only need your public TikTok username, your selected package, a public profile, and a valid email for confirmation. No password or private login access is required.",
+      "purpose": "Explain username and delivery requirements",
+      "primaryKeyword": "TikTok followers delivery",
+      "suggestedWordCount": 55,
+      "items": [
+        {
+          "id": "tt-f-req-username",
+          "title": "Public TikTok Username",
+          "description": "Enter the exact public username where you'd like your followers delivered."
+        },
+        {
+          "id": "tt-f-req-package",
+          "title": "Selected Package",
+          "description": "Choose the follower package that matches your growth goals before completing checkout."
+        },
+        {
+          "id": "tt-f-req-public",
+          "title": "Public Profile",
+          "description": "Your TikTok profile should remain public until delivery has finished successfully."
+        },
+        {
+          "id": "tt-f-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a valid email address so you can receive your order confirmation and tracking information."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-followers-reviews",
+      "title": "What Customers Say About NovaLikes",
+      "description": "Customer reviews for this NovaLikes service.",
+      "purpose": "Omitted on lean commercial layout to avoid homepage duplication",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-followers-faq",
+      "title": "Frequently Asked Questions About Buying TikTok Followers",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok followers",
+      "faqIds": [
+        "faq-tt-followers-need",
+        "faq-tt-followers-package",
+        "faq-tt-followers-password",
+        "faq-tt-followers-how-long",
+        "faq-tt-followers-track",
+        "faq-tt-followers-wrong-username",
+        "faq-tt-followers-other-metrics",
+        "faq-tt-followers-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-followers",
+      "title": "Explore Other TikTok Services",
+      "description": "Followers are only one TikTok metric. If you want to increase the like count or view count on a specific video instead, compare the other TikTok services below.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-likes",
+        "buy-tiktok-views"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-followers-final-cta",
+      "title": "Choose Your TikTok Followers Package",
+      "description": "Compare the available follower quantities and prices, choose the package that fits the TikTok profile you want to use, and place your order with the correct public username.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "View TikTok Followers Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-tiktok-followers-why-choose",
+        "title": "Why Choose NovaLikes for TikTok Followers?",
+        "description": "NovaLikes makes it easy to compare TikTok followers packages before you order. Choose the follower quantity you want for your public profile, review the current price, provide the correct TikTok username, and use order tracking after checkout to check available status information.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-0",
+            "title": "Multiple Follower Quantities",
+            "description": "Compare the available TikTok follower quantities and choose the package that matches the number of followers you want to order.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-followers-1",
+            "title": "Public Username Only",
+            "description": "Provide the correct public TikTok username for the account where you want the followers added. Your TikTok password is not required.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-2",
+            "title": "Review Before Checkout",
+            "description": "Check the selected follower quantity and current package price before adding your order to the cart and completing checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your TikTok followers order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-tiktok-followers-can-you-buy",
+        "title": "Can You Buy TikTok Followers?",
+        "description": "Yes. TikTok followers can be purchased through online follower services. With NovaLikes, you choose an available follower package, provide the public TikTok username for the profile you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-tiktok-followers-4",
+            "title": "What a TikTok Followers Order Changes",
+            "description": "A TikTok followers order applies to the follower count on the public profile submitted with the order. It does not automatically add likes or views to individual TikTok videos.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-followers-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public TikTok username and the follower package you want to purchase. Your TikTok password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-followers-6",
+            "title": "What TikTok Followers Do Not Include",
+            "description": "Followers are separate from TikTok likes and views. Ordering followers does not automatically add those other metrics or guarantee additional engagement, reach, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected TikTok Followers, chosen the correct follower quantity, and provided the username for the profile where you want the followers added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-tiktok-followers-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-tiktok-followers-what-happens",
+        "title": "What Happens After You Buy TikTok Followers?",
+        "description": "After you place a TikTok followers order, the follower package and public username you submitted are used to process the order for the selected profile. Keep the profile publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-tiktok-followers-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected follower package, quantity, and submitted TikTok username are associated with your order so the request can be processed for the intended profile."
+          },
+          {
+            "id": "buy-tiktok-followers-th-2",
+            "title": "Followers Go to the Submitted Profile",
+            "description": "The order applies to the TikTok profile connected to the username you provided. Check the username carefully before completing checkout."
+          },
+          {
+            "id": "buy-tiktok-followers-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the follower quantity and current order conditions. One fixed delivery time should not be expected for every package."
+          },
+          {
+            "id": "buy-tiktok-followers-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking for available status updates. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid changing the submitted username, making the profile unavailable, or changing anything that prevents access to the account while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-tiktok-followers-service-compare",
+        "title": "TikTok Followers vs Likes vs Views",
+        "description": "Followers, likes, and views measure different parts of a TikTok account. Choose the service based on whether you want to change the follower count on your profile, the like count on specific content, or the view count on a TikTok video.",
+        "current": {
+          "title": "TikTok Followers",
+          "description": "Followers are a profile-level metric. Choose TikTok Followers when you want to increase the follower count shown on your public profile.",
+          "bestFor": "Profiles where follower count is the metric you want to change.",
+          "ctaLabel": "TikTok Followers"
+        },
+        "likes": {
+          "title": "TikTok Likes",
+          "description": "Likes apply to individual content. Choose TikTok Likes when you want to increase the like count on an eligible public TikTok video.",
+          "bestFor": "TikTok videos where the visible like count is the metric you want to change.",
+          "href": "/buy-tiktok-likes",
+          "ctaLabel": "View TikTok Likes"
+        },
+        "views": {
+          "title": "TikTok Views",
+          "description": "Views are a video-level metric. Choose TikTok Views when you want to increase the view count on an eligible public TikTok video.",
+          "bestFor": "TikTok videos where the visible view count is the metric you want to change.",
+          "href": "/buy-tiktok-views",
+          "ctaLabel": "View TikTok Views"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-tiktok-likes"
+      },
+      "beforeBuying": {
+        "id": "buy-tiktok-followers-before-buying",
+        "title": "What to Check Before Buying TikTok Followers",
+        "description": "Before you buy TikTok followers, review the package and profile details before completing your order. Make sure the follower quantity, price, TikTok username, and service match what you want for the selected profile.",
+        "framingNote": "Check the submitted TikTok username, follower quantity, and price one more time before checkout. Avoid relying on claims that buying followers will guarantee additional views, likes, engagement, reach, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-7",
+            "title": "Check the Follower Quantity",
+            "description": "Review the number of TikTok followers included in the package so you know how many you are ordering for the submitted profile.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-followers-8",
+            "title": "Confirm the Package Price",
+            "description": "Check the current price shown for your selected followers package before adding it to the cart. If you change the quantity, review the updated price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-followers-9",
+            "title": "Use the Correct TikTok Username",
+            "description": "Check the public TikTok username carefully so the order is associated with the profile where you want the followers added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-followers-10",
+            "title": "Choose the Right TikTok Service",
+            "description": "Followers, likes, and views are separate services. Check that TikTok Followers is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-tiktok-followers-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-tiktok-followers-worldwide",
+        "title": "Preparing Your TikTok Profile for a Followers Order",
+        "description": "TikTok Followers is a profile-level service. Before ordering, confirm the exact public TikTok profile and follower quantity you want to use.",
+        "eyebrow": "Ready for TikTok Followers",
+        "closingNote": "TikTok Followers applies to a public profile. Confirm the username, keep the profile accessible where required, and review the follower package before checkout.",
+        "cards": [
+          {
+            "id": "buy-tiktok-followers-12",
+            "title": "Check the TikTok Username",
+            "description": "Make sure the username you submit belongs to the intended TikTok profile before completing checkout.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-13",
+            "title": "Keep the Profile Accessible",
+            "description": "Keep the profile publicly accessible where the selected service requires public access while the order is being processed.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-14",
+            "title": "Avoid Changing Profile Details",
+            "description": "Avoid changing the submitted username while an order is active when possible. Contact support if an account change affects an existing order.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-followers-15",
+            "title": "Review the Follower Package",
+            "description": "Check the selected follower quantity and price before checkout so you know which package is attached to the order.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-tiktok-followers-popular-packages",
+        "title": "Popular TikTok Followers Packages",
+        "description": "Not sure which package to choose? Compare some of the TikTok follower quantities available on NovaLikes below, or return to the full pricing section to see all available options.",
+        "rows": [
+          {
+            "id": "tt-f-100",
+            "quantity": "100 Followers",
+            "recommendedFor": "A smaller option for a public TikTok profile where you want to add a modest number of followers."
+          },
+          {
+            "id": "tt-f-500",
+            "quantity": "500 Followers",
+            "recommendedFor": "A mid-range option for a TikTok profile where you want a larger change in the displayed follower count."
+          },
+          {
+            "id": "tt-f-1000",
+            "quantity": "1,000 Followers",
+            "recommendedFor": "A larger package for a public TikTok profile where you want to add one thousand followers in a single order."
+          },
+          {
+            "id": "tt-f-5000",
+            "quantity": "5,000 Followers",
+            "recommendedFor": "A higher-volume option for a TikTok profile where you want a larger increase in the displayed follower count."
+          },
+          {
+            "id": "tt-f-10000",
+            "quantity": "10,000 Followers",
+            "recommendedFor": "An option for TikTok profiles where you are considering one of the larger follower quantities available on NovaLikes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-tiktok-followers-best-practices",
+        "title": "Best Practices After Buying TikTok Followers",
+        "description": "Buying followers changes the follower count on the selected TikTok profile, but the rest of your account still depends on the content you publish and how you manage it. Keep creating videos, reviewing your account activity, and interacting with your audience alongside the follower service.",
+        "closingNote": "Follower count is only one part of a TikTok profile. Your videos, profile information, publishing decisions, audience response, and other account activity still need ongoing attention.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-16",
+            "title": "Keep Publishing TikTok Videos",
+            "description": "Continue creating videos that fit your account, topic, business, or the audience you want to reach.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-followers-17",
+            "title": "Keep Your Profile Complete",
+            "description": "Review your profile photo, bio, username, and other public profile details so visitors can understand what your account is about.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-tiktok-followers-18",
+            "title": "Review Your TikTok Analytics",
+            "description": "If analytics are available on your account, review views, engagement, follower activity, and other account data to understand how your own content performs.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-followers-19",
+            "title": "Test Different Video Formats",
+            "description": "Try different topics, video lengths, openings, formats, and presentation styles to learn what works for your account.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-followers-20",
+            "title": "Respond to Genuine Interaction",
+            "description": "Reply to genuine comments and messages when appropriate. A higher follower count does not replace the interactions you build through your own account activity.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-followers-21",
+            "title": "Keep Your Content Consistent",
+            "description": "Maintain a publishing approach that makes sense for your account rather than treating a follower package as a replacement for ongoing content.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-tiktok-followers-common-mistakes",
+        "title": "Common Mistakes When Buying TikTok Followers",
+        "description": "A few simple mistakes can cause problems with a TikTok followers order. Check the username, follower quantity, service, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the TikTok username, follower quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-tiktok-followers-22",
+            "title": "Entering the Wrong TikTok Username",
+            "description": "Check the public TikTok username carefully before ordering. The username should belong to the exact profile where you want the followers added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-followers-23",
+            "title": "Choosing the Wrong TikTok Service",
+            "description": "Followers, likes, and views are separate services. Choose TikTok Followers only when the follower count on your profile is the metric you want to change.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-followers-24",
+            "title": "Selecting the Wrong Follower Quantity",
+            "description": "Review the number of followers included in your selected package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-followers-25",
+            "title": "Making the Profile Unavailable During an Order",
+            "description": "Avoid changing the submitted username or making the profile unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-followers-26",
+            "title": "Expecting Followers to Guarantee Other Results",
+            "description": "A higher follower count does not automatically mean more video views, likes, engagement, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-followers-27",
+            "title": "Treating Followers as a Replacement for Content",
+            "description": "Buying followers changes one profile metric. Your videos, publishing decisions, profile information, and audience interaction still depend on how you manage the account.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-likes": {
+            "title": "TikTok Likes",
+            "description": "Choose TikTok Likes when you want to increase the like count shown on an eligible public TikTok video.",
+            "ctaLabel": "View TikTok Likes"
+          },
+          "buy-tiktok-views": {
+            "title": "TikTok Views",
+            "description": "Choose TikTok Views when you want to increase the view count shown on an eligible public TikTok video.",
+            "ctaLabel": "View TikTok Views"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-tiktok-followers-why-buy",
+      "title": "Why Do People Buy TikTok Followers?",
+      "description": "People buy TikTok followers for different reasons. Some want to increase the follower count displayed on a newer profile, while others choose a follower package for an established account, campaign, launch, or other TikTok activity. The service changes the follower metric on the selected profile, but it does not guarantee views, likes, engagement, reach, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-tiktok-followers-wb-1",
+          "title": "Increase the Visible Follower Count",
+          "description": "A TikTok followers package can be used when you want to increase the number of followers displayed on your public profile."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-2",
+          "title": "Use Followers Around a Launch or Campaign",
+          "description": "Creators and businesses may choose a follower package while working on a new account, product launch, campaign, or other TikTok content activity."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-3",
+          "title": "Focus on the Follower Metric",
+          "description": "TikTok Followers applies to your profile follower count rather than automatically adding likes or views to individual videos."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-4",
+          "title": "Choose the Quantity You Want",
+          "description": "Different package sizes let you select the number of TikTok followers you want to order for the submitted profile."
+        },
+        {
+          "id": "buy-tiktok-followers-wb-5",
+          "title": "Use Followers Alongside Your Content",
+          "description": "Buying followers does not replace publishing and managing your own TikTok content. Videos, captions, replies, and other account activity still depend on how you manage your profile."
+        }
+      ],
+      "bottomNote": "If likes or video views are the metric you want to change instead, choose the corresponding TikTok service rather than a followers package."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy TikTok Followers",
+      "description": "Buying TikTok followers through NovaLikes takes four steps. Choose the follower package you want, provide the public TikTok username for your profile, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-tiktok-followers-step-1",
+          "title": "Choose Your Followers Package",
+          "description": "Compare the available TikTok follower quantities and prices, then select the package you want for your profile."
+        },
+        {
+          "id": "buy-tiktok-followers-step-2",
+          "title": "Enter Your TikTok Username",
+          "description": "Provide the correct public TikTok username for the profile where you want the followers added. Your TikTok password is not required."
+        },
+        {
+          "id": "buy-tiktok-followers-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected follower quantity and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-tiktok-followers-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your TikTok followers order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other TikTok Services",
+    "relatedIntro": "Followers are only one TikTok metric. If you want to increase the like count or view count on a specific video instead, compare the other TikTok services below."
+  }
+}

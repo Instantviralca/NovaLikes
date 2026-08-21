@@ -1,0 +1,402 @@
+[
+  {
+    "id": "faq-ig-followers-password",
+    "question": "Was brauche ich, um Instagram Follower zu kaufen?",
+    "answer": "Sie brauchen den öffentlichen Instagram-Benutzernamen des Profils und das Follower-Paket, das Sie bestellen möchten. Ihr Instagram-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-ig-followers-delivery-speed",
+    "question": "Welches Instagram-Follower-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Follower, die Sie Ihrem Profil hinzufügen möchten, und nach dem Preis, der für Sie passt. Die verfügbaren Mengen und aktuellen Preise finden Sie im Preisbereich oben."
+  },
+  {
+    "id": "faq-ig-followers-gradual-delivery",
+    "question": "Muss ich mein Instagram-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Instagram-Passwort für eine Instagram-Follower-Bestellung nicht. Achten Sie darauf, dass der angegebene öffentliche Benutzername korrekt ist."
+  },
+  {
+    "id": "faq-ig-followers-refill",
+    "question": "Wie lange dauert eine Instagram-Follower-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Paketgröße und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt von einer festen Lieferzeit für jedes Paket auszugehen."
+  },
+  {
+    "id": "faq-ig-followers-private",
+    "question": "Kann ich meine Instagram-Follower-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-ig-followers-track",
+    "question": "Was passiert, wenn ich den falschen Instagram-Benutzernamen eingebe?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie den Benutzernamen immer vor dem Checkout, weil die übermittelten Kontoangaben zur Bearbeitung der Bestellung verwendet werden."
+  },
+  {
+    "id": "faq-ig-followers-business",
+    "question": "Erhöht der Kauf von Followern auch meine Instagram Likes oder Views?",
+    "answer": "Nicht automatisch. Follower, Likes, Views und Kommentare sind getrennte Services. Ein Instagram-Follower-Paket bezieht sich auf die Followerzahl des ausgewählten Profils."
+  },
+  {
+    "id": "faq-ig-followers-money-back",
+    "question": "Muss mein Instagram-Profil öffentlich sein?",
+    "answer": "Lassen Sie das Profil öffentlich zugänglich, soweit es für den gewählten Service während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, wie Ihr Konto eingerichtet ist, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-ig-likes-links",
+    "question": "Was brauche ich, um Instagram Likes zu kaufen?",
+    "answer": "Sie brauchen die öffentliche URL des Instagram-Beitrags oder Reels und das Like-Paket, das Sie bestellen möchten. Ihr Instagram-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-ig-likes-reel",
+    "question": "Welches Instagram-Likes-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Likes, die Sie für den ausgewählten Beitrag oder das Reel möchten, und nach dem Preis, der für Sie passt. Die verfügbaren Mengen und aktuellen Preise finden Sie im Preisbereich oben."
+  },
+  {
+    "id": "faq-ig-likes-password",
+    "question": "Muss ich mein Instagram-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Instagram-Passwort für eine Instagram-Likes-Bestellung nicht. Sie müssen nur die richtige öffentliche URL für den Inhalt angeben."
+  },
+  {
+    "id": "faq-ig-likes-delivery-speed",
+    "question": "Wie lange dauert eine Instagram-Likes-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Paketgröße und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-ig-likes-track",
+    "question": "Kann ich meine Instagram-Likes-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-ig-likes-gradual-delivery",
+    "question": "Was passiert, wenn ich die falsche Instagram-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die URL vor dem Checkout sorgfältig, weil der übermittelte Beitrag oder das Reel zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-ig-likes-refill",
+    "question": "Erhöht der Kauf von Instagram Likes auch meine Follower oder Views?",
+    "answer": "Nicht automatisch. Likes, Follower, Views und Kommentare sind getrennte Services. Ein Instagram-Likes-Paket gilt für die Like-Zahl des ausgewählten Beitrags oder Reels."
+  },
+  {
+    "id": "faq-ig-likes-money-back",
+    "question": "Muss der Instagram-Beitrag oder das Reel öffentlich sein?",
+    "answer": "Lassen Sie den übermittelten Inhalt öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Inhalt verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-ig-views-need",
+    "question": "Was brauche ich, um Instagram Views zu kaufen?",
+    "answer": "Sie brauchen die öffentliche URL des Instagram Reels oder Videos und das Views-Paket, das Sie bestellen möchten. Ihr Instagram-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-ig-views-package",
+    "question": "Welches Instagram-Views-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Views, die Sie für das ausgewählte Reel oder Video möchten, und nach dem Preis, der für Sie passt. Die verfügbaren Mengen und aktuellen Preise finden Sie im Preisbereich oben."
+  },
+  {
+    "id": "faq-ig-views-password",
+    "question": "Muss ich mein Instagram-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Instagram-Passwort für eine Instagram-Views-Bestellung nicht. Sie müssen nur die richtige öffentliche URL für den Videoinhalt angeben."
+  },
+  {
+    "id": "faq-ig-views-how-long",
+    "question": "Wie lange dauert eine Instagram-Views-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Paketgröße und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-ig-views-track",
+    "question": "Kann ich meine Instagram-Views-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-ig-views-wrong-url",
+    "question": "Was passiert, wenn ich die falsche Instagram-Video-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die URL vor dem Checkout sorgfältig, weil das übermittelte Reel oder Video zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-ig-views-other-metrics",
+    "question": "Erhöht der Kauf von Instagram Views auch meine Likes oder Follower?",
+    "answer": "Nicht automatisch. Views, Likes, Follower und Kommentare sind getrennte Services. Ein Instagram-Views-Paket gilt für die View-Zahl des ausgewählten Reels oder Videos."
+  },
+  {
+    "id": "faq-ig-views-public",
+    "question": "Muss das Instagram Reel oder Video öffentlich sein?",
+    "answer": "Lassen Sie den übermittelten Inhalt öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Video verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-ig-comments-need",
+    "question": "Was brauche ich, um Instagram Kommentare zu kaufen?",
+    "answer": "Sie brauchen die öffentliche URL des Instagram-Beitrags oder Reels und das Kommentar-Paket, das Sie bestellen möchten. Ihr Instagram-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-ig-comments-package",
+    "question": "Welches Instagram-Kommentare-Paket sollte ich wählen?",
+    "answer": "Vergleichen Sie die verfügbaren Pakettypen, Kommentaranzahlen und aktuellen Preise und wählen Sie die Option, die zu dem passt, was Sie für den ausgewählten Beitrag oder das Reel möchten."
+  },
+  {
+    "id": "faq-ig-comments-password",
+    "question": "Muss ich mein Instagram-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Instagram-Passwort für eine Instagram-Kommentare-Bestellung nicht. Sie müssen nur die richtige öffentliche URL für den Inhalt angeben."
+  },
+  {
+    "id": "faq-ig-comments-how-long",
+    "question": "Wie lange dauert eine Instagram-Kommentare-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach gewähltem Paket, Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jede Bestellung zu erwarten."
+  },
+  {
+    "id": "faq-ig-comments-track",
+    "question": "Kann ich meine Instagram-Kommentare-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-ig-comments-wrong-url",
+    "question": "Was passiert, wenn ich die falsche Instagram-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die URL vor dem Checkout sorgfältig, weil der übermittelte Beitrag oder das Reel zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-ig-comments-other-metrics",
+    "question": "Erhöht der Kauf von Instagram Kommentaren auch meine Likes, Views oder Follower?",
+    "answer": "Nicht automatisch. Kommentare, Likes, Views und Follower sind getrennte Services. Ein Instagram-Kommentare-Paket gilt für den ausgewählten Beitrag oder das Reel."
+  },
+  {
+    "id": "faq-ig-comments-public",
+    "question": "Muss der Instagram-Beitrag oder das Reel öffentlich sein?",
+    "answer": "Lassen Sie den übermittelten Inhalt öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Inhalt verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-tt-followers-need",
+    "question": "Was brauche ich, um TikTok Follower zu kaufen?",
+    "answer": "Sie brauchen den öffentlichen TikTok-Benutzernamen des Profils und das Follower-Paket, das Sie bestellen möchten. Ihr TikTok-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-tt-followers-package",
+    "question": "Welches TikTok-Follower-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Follower, die Sie für das ausgewählte Profil möchten, und nach dem Preis, der für Sie passt. Die verfügbaren Mengen und aktuellen Preise finden Sie im Preisbereich oben."
+  },
+  {
+    "id": "faq-tt-followers-password",
+    "question": "Muss ich mein TikTok-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr TikTok-Passwort für eine Follower-Bestellung nicht. Sie müssen nur den richtigen öffentlichen TikTok-Benutzernamen angeben."
+  },
+  {
+    "id": "faq-tt-followers-how-long",
+    "question": "Wie lange dauert eine TikTok-Follower-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Follower-Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-tt-followers-track",
+    "question": "Kann ich meine TikTok-Follower-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-tt-followers-wrong-username",
+    "question": "Was passiert, wenn ich den falschen TikTok-Benutzernamen eingebe?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie den Benutzernamen vor dem Checkout sorgfältig, weil das übermittelte Profil zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-tt-followers-other-metrics",
+    "question": "Erhöht der Kauf von TikTok Followern auch meine Likes oder Views?",
+    "answer": "Nicht automatisch. Follower, Likes und Views sind getrennte Services. Ein TikTok-Follower-Paket gilt für die Followerzahl des ausgewählten Profils."
+  },
+  {
+    "id": "faq-tt-followers-public",
+    "question": "Muss mein TikTok-Profil öffentlich sein?",
+    "answer": "Lassen Sie das übermittelte Profil öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Profil verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-tt-likes-need",
+    "question": "Was brauche ich, um TikTok Likes zu kaufen?",
+    "answer": "Sie brauchen den öffentlichen TikTok-Videolink und das Like-Paket, das Sie bestellen möchten. Ihr TikTok-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-tt-likes-package",
+    "question": "Welches TikTok-Likes-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Likes, die Sie für das ausgewählte Video möchten, und nach dem Preis, der für Sie passt. Die verfügbaren Mengen und aktuellen Preise finden Sie im Preisbereich oben."
+  },
+  {
+    "id": "faq-tt-likes-password",
+    "question": "Muss ich mein TikTok-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr TikTok-Passwort für eine Likes-Bestellung nicht. Sie müssen nur den richtigen öffentlichen TikTok-Videolink angeben."
+  },
+  {
+    "id": "faq-tt-likes-how-long",
+    "question": "Wie lange dauert eine TikTok-Likes-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Like-Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-tt-likes-track",
+    "question": "Kann ich meine TikTok-Likes-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-tt-likes-wrong-url",
+    "question": "Was passiert, wenn ich den falschen TikTok-Videolink übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie den Videolink vor dem Checkout sorgfältig, weil das übermittelte Video zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-tt-likes-other-metrics",
+    "question": "Erhöht der Kauf von TikTok Likes auch meine Follower oder Views?",
+    "answer": "Nicht automatisch. Likes, Follower und Views sind getrennte Services. Ein TikTok-Likes-Paket gilt für die Like-Zahl des ausgewählten Videos."
+  },
+  {
+    "id": "faq-tt-likes-public",
+    "question": "Muss mein TikTok-Video öffentlich sein?",
+    "answer": "Lassen Sie das übermittelte Video öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Video verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-tt-views-need",
+    "question": "Was brauche ich, um TikTok Views zu kaufen?",
+    "answer": "Sie brauchen den öffentlichen TikTok-Videolink und das Views-Paket, das Sie bestellen möchten. Ihr TikTok-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-tt-views-package",
+    "question": "Welches TikTok-Views-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Views, die Sie für das ausgewählte Video möchten, der verfügbaren Paketoption und dem Preis, der für Sie passt. Prüfen Sie die aktuellen Optionen und Preise im Preisbereich oben."
+  },
+  {
+    "id": "faq-tt-views-password",
+    "question": "Muss ich mein TikTok-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr TikTok-Passwort für eine Views-Bestellung nicht. Sie müssen nur den richtigen öffentlichen TikTok-Videolink angeben."
+  },
+  {
+    "id": "faq-tt-views-how-long",
+    "question": "Wie lange dauert eine TikTok-Views-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach View-Menge, gewählter Paketoption und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-tt-views-track",
+    "question": "Kann ich meine TikTok-Views-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-tt-views-wrong-url",
+    "question": "Was passiert, wenn ich den falschen TikTok-Videolink übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie den Videolink vor dem Checkout sorgfältig, weil das übermittelte Video zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-tt-views-other-metrics",
+    "question": "Erhöht der Kauf von TikTok Views auch meine Follower oder Likes?",
+    "answer": "Nicht automatisch. Views, Follower und Likes sind getrennte Services. Ein TikTok-Views-Paket gilt für die View-Zahl des ausgewählten Videos."
+  },
+  {
+    "id": "faq-tt-views-public",
+    "question": "Muss mein TikTok-Video öffentlich sein?",
+    "answer": "Lassen Sie das übermittelte Video öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Video verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-fb-followers-need",
+    "question": "Was brauche ich, um Facebook Follower zu kaufen?",
+    "answer": "Sie brauchen die öffentliche Facebook-Seiten-URL und das Follower-Paket, das Sie bestellen möchten. Ihr Facebook-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-fb-followers-package",
+    "question": "Welches Facebook-Follower-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Follower, die Sie für die ausgewählte Seite möchten, und nach dem Preis, der für Sie passt. Prüfen Sie die aktuellen Mengen und Preise im Preisbereich oben."
+  },
+  {
+    "id": "faq-fb-followers-password",
+    "question": "Muss ich mein Facebook-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Facebook-Passwort für eine Follower-Bestellung nicht. Sie müssen nur die richtige öffentliche Facebook-Seiten-URL angeben."
+  },
+  {
+    "id": "faq-fb-followers-how-long",
+    "question": "Wie lange dauert eine Facebook-Follower-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Follower-Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-fb-followers-track",
+    "question": "Kann ich meine Facebook-Follower-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-fb-followers-wrong-url",
+    "question": "Was passiert, wenn ich die falsche Facebook-Seiten-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die Seiten-URL vor dem Checkout sorgfältig, weil die übermittelte Seite zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-fb-followers-other-metrics",
+    "question": "Erhöht der Kauf von Facebook Followern auch Seiten-Likes oder Beitrags-Likes?",
+    "answer": "Nicht automatisch. Follower, Seiten-Likes und Beitrags-Likes sind getrennte Kennzahlen und Services. Ein Facebook-Follower-Paket gilt für die Followerzahl der ausgewählten Seite."
+  },
+  {
+    "id": "faq-fb-followers-public",
+    "question": "Muss meine Facebook-Seite öffentlich sein?",
+    "answer": "Lassen Sie die übermittelte Seite öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihre Seite verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-fb-page-likes-need",
+    "question": "Was brauche ich, um Facebook Seiten-Likes zu kaufen?",
+    "answer": "Sie brauchen die öffentliche Facebook-Seiten-URL und das Seiten-Likes-Paket, das Sie bestellen möchten. Ihr Facebook-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-fb-page-likes-package",
+    "question": "Welches Facebook-Seiten-Likes-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Seiten-Likes, die Sie für die ausgewählte Seite möchten, und nach dem Preis, der für Sie passt. Prüfen Sie die aktuellen Mengen und Preise im Preisbereich oben."
+  },
+  {
+    "id": "faq-fb-page-likes-password",
+    "question": "Muss ich mein Facebook-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Facebook-Passwort für eine Seiten-Likes-Bestellung nicht. Sie müssen nur die richtige öffentliche Facebook-Seiten-URL angeben."
+  },
+  {
+    "id": "faq-fb-page-likes-how-long",
+    "question": "Wie lange dauert eine Facebook-Seiten-Likes-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Seiten-Like-Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-fb-page-likes-track",
+    "question": "Kann ich meine Facebook-Seiten-Likes-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-fb-page-likes-wrong-url",
+    "question": "Was passiert, wenn ich die falsche Facebook-Seiten-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die Seiten-URL vor dem Checkout sorgfältig, weil die übermittelte Seite zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-fb-page-likes-other-metrics",
+    "question": "Erhöht der Kauf von Facebook Seiten-Likes auch Follower oder Beitrags-Likes?",
+    "answer": "Nicht automatisch. Seiten-Likes, Follower und Beitrags-Likes sind getrennte Kennzahlen und Services. Ein Facebook-Seiten-Likes-Paket gilt für die Seiten-Like-Zahl der ausgewählten Seite."
+  },
+  {
+    "id": "faq-fb-page-likes-public",
+    "question": "Muss meine Facebook-Seite öffentlich sein?",
+    "answer": "Lassen Sie die übermittelte Seite öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihre Seite verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  },
+  {
+    "id": "faq-fb-post-likes-need",
+    "question": "Was brauche ich, um Facebook Beitrags-Likes zu kaufen?",
+    "answer": "Sie brauchen die öffentliche Facebook-Beitrags-URL und das Beitrags-Likes-Paket, das Sie bestellen möchten. Ihr Facebook-Passwort ist nicht erforderlich."
+  },
+  {
+    "id": "faq-fb-post-likes-package",
+    "question": "Welches Facebook-Beitrags-Likes-Paket sollte ich wählen?",
+    "answer": "Wählen Sie nach der Anzahl der Beitrags-Likes, die Sie für den ausgewählten Beitrag möchten, und nach dem Preis, der für Sie passt. Prüfen Sie die aktuellen Mengen und Preise im Preisbereich oben."
+  },
+  {
+    "id": "faq-fb-post-likes-password",
+    "question": "Muss ich mein Facebook-Passwort weitergeben?",
+    "answer": "Nein. NovaLikes benötigt Ihr Facebook-Passwort für eine Beitrags-Likes-Bestellung nicht. Sie müssen nur die richtige öffentliche Facebook-Beitrags-URL angeben."
+  },
+  {
+    "id": "faq-fb-post-likes-how-long",
+    "question": "Wie lange dauert eine Facebook-Beitrags-Likes-Bestellung?",
+    "answer": "Die Bearbeitungszeit kann je nach Beitrags-Like-Menge und aktuellen Bestellbedingungen variieren. Prüfen Sie den Bestellstatus auf verfügbare Updates, statt eine feste Lieferzeit für jedes Paket zu erwarten."
+  },
+  {
+    "id": "faq-fb-post-likes-track",
+    "question": "Kann ich meine Facebook-Beitrags-Likes-Bestellung verfolgen?",
+    "answer": "Ja. Nutzen Sie nach dem Checkout die Bestellverfolgung von NovaLikes, um verfügbare Statusinformationen zu Ihrem Kauf zu prüfen."
+  },
+  {
+    "id": "faq-fb-post-likes-wrong-url",
+    "question": "Was passiert, wenn ich die falsche Facebook-Beitrags-URL übermittle?",
+    "answer": "Kontaktieren Sie den Support so schnell wie möglich mit Ihren Bestelldaten. Prüfen Sie die Beitrags-URL vor dem Checkout sorgfältig, weil der übermittelte Beitrag zur Bearbeitung der Bestellung verwendet wird."
+  },
+  {
+    "id": "faq-fb-post-likes-other-metrics",
+    "question": "Erhöht der Kauf von Facebook Beitrags-Likes auch Follower oder Seiten-Likes?",
+    "answer": "Nicht automatisch. Beitrags-Likes, Follower und Seiten-Likes sind getrennte Kennzahlen und Services. Ein Facebook-Beitrags-Likes-Paket gilt für die Like-Zahl des konkret übermittelten Beitrags."
+  },
+  {
+    "id": "faq-fb-post-likes-public",
+    "question": "Muss mein Facebook-Beitrag öffentlich sein?",
+    "answer": "Lassen Sie den übermittelten Beitrag öffentlich zugänglich, soweit es während der Bearbeitung erforderlich ist. Wenn Sie unsicher sind, ob Ihr Beitrag verwendet werden kann, prüfen Sie die Servicedetails oder kontaktieren Sie den Support vor der Bestellung."
+  }
+]

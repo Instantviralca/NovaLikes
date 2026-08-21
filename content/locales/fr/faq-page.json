@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Questions fréquentes sur NovaLikes",
+    "description": "Trouvez des réponses claires sur NovaLikes, les services Instagram, TikTok et Facebook, la commande, les exigences de compte, la livraison, les paiements et l’assistance. Parcourez par catégorie ou recherchez une question ci-dessous.",
+    "purpose": "Help customers find answers before contacting support",
+    "primaryKeyword": "NovaLikes FAQ"
+  },
+  "search": {
+    "label": "Rechercher des questions",
+    "placeholder": "Rechercher des questions...",
+    "clearLabel": "Effacer",
+    "emptyState": "Aucune question correspondante. Essayez une autre recherche ou contactez l’assistance."
+  },
+  "categoriesTitle": "Catégories",
+  "refundPolicyCta": {
+    "label": "Lire la politique de remboursement",
+    "href": "/refund-policy"
+  },
+  "finalCta": {
+    "id": "faq-contact-support-cta",
+    "title": "Vous avez encore une question ?",
+    "description": "Vous ne trouvez pas la réponse ? Contactez l’assistance NovaLikes pour une question sur un service, une commande ou un paiement. Si votre question concerne une commande existante, préparez les détails de la commande pour que l’équipe la retrouve plus facilement.",
+    "purpose": "Offer contact and track-order exits",
+    "primaryCta": {
+      "label": "Contacter l’assistance",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Suivre votre commande",
+      "href": "/track-order"
+    }
+  },
+  "categories": [
+    { "id": "getting_started", "label": "Pour commencer", "anchor": "getting-started" },
+    { "id": "account_security", "label": "Compte et sécurité", "anchor": "account-safety" },
+    { "id": "orders_delivery", "label": "Commandes et livraison", "anchor": "orders-delivery" },
+    { "id": "instagram", "label": "Instagram", "anchor": "instagram" },
+    { "id": "tiktok", "label": "TikTok", "anchor": "tiktok" },
+    { "id": "facebook", "label": "Facebook", "anchor": "facebook" },
+    { "id": "payments_refunds", "label": "Paiements et remboursements", "anchor": "payments-refunds" }
+  ]
+}

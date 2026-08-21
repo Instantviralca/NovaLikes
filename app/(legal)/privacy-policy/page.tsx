@@ -10,6 +10,8 @@ import {
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
+import { descriptions } from '@/seo/descriptions';
+import { titles } from '@/seo/titles';
 import { legalMetadata } from '@/seo/metadata';
 
 export function generateMetadata(): Metadata {
@@ -23,8 +25,8 @@ export default function PrivacyPolicyPage() {
 
   const graph = asJsonLdGraph([
     webPageSchema({
-      title: content.seo.title,
-      description: content.seo.description,
+      title: titles.legal('Privacy Policy'),
+      description: descriptions.privacyPolicy(),
       path: routes.privacyPolicy,
     }),
     breadcrumbSchema([

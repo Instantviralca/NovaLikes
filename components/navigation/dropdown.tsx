@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { prefetchForHref } from '@/lib/linking/prefetch';
 
 export type NavDropdownItem = {
   label: string;
@@ -27,7 +28,7 @@ export function NavDropdown({ label, items, triggerClassName }: NavDropdownProps
       <DropdownMenuContent align="start">
         {items.map((item) => (
           <DropdownMenuItem key={item.href} asChild>
-            <Link href={item.href}>{item.label}</Link>
+            <Link href={item.href} prefetch={prefetchForHref(item.href)}>{item.label}</Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

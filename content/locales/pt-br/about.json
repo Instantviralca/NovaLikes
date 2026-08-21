@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "SOBRE A NOVALIKES",
+    "title": "Sobre a NovaLikes",
+    "description": "A NovaLikes é uma plataforma premium de crescimento em redes sociais feita para ajudar criadores, negócios e marcas a crescer com sinais sociais de alta qualidade.\n\nFocamos em uma experiência de pedido clara, checkout seguro e entrega confiável no Instagram, TikTok, Facebook e mais.",
+    "trustLabels": [
+      {
+        "id": "about-hero-quality",
+        "label": "Pacotes claros, pedidos sem senha e políticas publicadas."
+      },
+      {
+        "id": "about-hero-delivery",
+        "label": "Checkout seguro e rastreio do pedido para compras realizadas."
+      },
+      {
+        "id": "about-hero-support",
+        "label": "Suporte ao cliente para dúvidas de pacote, pedido e pagamento."
+      }
+    ],
+    "visual": {
+      "alt": "Painel da NovaLikes representando serviços de Instagram, TikTok e Facebook"
+    }
+  },
+  "mission": {
+    "title": "Ajudando você a crescer. Do jeito certo.",
+    "description": "Nossa missão é ajudar você a impulsionar sua presença nas redes sociais com segurança e eficácia, com pacotes claros, pedidos sem senha e suporte quando precisar.\n\nAcreditamos que o crescimento deve ser simples: escolha um serviço, selecione um pacote, informe uma URL pública e acompanhe o pedido com confiança."
+  },
+  "whyChoose": {
+    "title": "Por que milhares nos escolhem",
+    "description": "POR QUE ESCOLHER A NOVALIKES?",
+    "items": [
+      {
+        "id": "about-why-safe",
+        "title": "Seguro e protegido",
+        "description": "O checkout criptografado e os pedidos sem senha protegem suas contas."
+      },
+      {
+        "id": "about-why-fast",
+        "title": "Preços claros por pacote",
+        "description": "Compare quantidades e preços antes do checkout para saber qual pacote você está escolhendo."
+      },
+      {
+        "id": "about-why-quality",
+        "title": "Serviços por plataforma",
+        "description": "Os pacotes são listados por métrica de Instagram, TikTok e Facebook, não como uma mistura genérica de crescimento."
+      },
+      {
+        "id": "about-why-support",
+        "title": "Suporte ao cliente",
+        "description": "Fale com a NovaLikes sobre pacote, pedido ou pagamento usando as opções de suporte disponíveis."
+      },
+      {
+        "id": "about-why-refund",
+        "title": "Garantia de reembolso de 30 dias",
+        "description": "Compras elegíveis são cobertas pela nossa Garantia de reembolso de 30 dias, conforme a Política de reembolso publicada."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Construído com confiança, entregue com cuidado",
+    "description": "Temos o compromisso de uma experiência do cliente clara, segura e confiável, da escolha do pacote ao rastreio do pedido.",
+    "items": [
+      {
+        "id": "about-trust-payments",
+        "title": "Pagamentos seguros"
+      },
+      {
+        "id": "about-trust-privacy",
+        "title": "Privacidade protegida"
+      },
+      {
+        "id": "about-trust-password",
+        "title": "Sem senha"
+      },
+      {
+        "id": "about-trust-global",
+        "title": "Serviço global"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Pronto para crescer sua presença nas redes sociais?",
+    "description": "Compare os serviços disponíveis de Instagram, TikTok e Facebook, revise as opções de pacote e faça um pedido quando estiver pronto.",
+    "primaryCta": {
+      "label": "Começar agora"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "Sobre a NovaLikes",
+    "heroAria": "Sobre a NovaLikes",
+    "missionEyebrow": "NOSSA MISSÃO",
+    "commitmentEyebrow": "NOSSO COMPROMISSO",
+    "statsAria": "Destaques da NovaLikes",
+    "missionImageAlt": "Ilustração do alvo da missão da NovaLikes",
+    "commitmentImageAlt": "Ilustração de confiança e compromisso da NovaLikes",
+    "statsCustomers": "Clientes satisfeitos",
+    "statsOrders": "Pedidos entregues",
+    "statsRating": "Avaliação média",
+    "statsSuccess": "Taxa de sucesso do pedido"
+  }
+}

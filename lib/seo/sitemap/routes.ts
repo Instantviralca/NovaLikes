@@ -10,6 +10,10 @@ import {
 } from '@/data/seo/sitemap-routes';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getActiveLearnCategories } from '@/data/learn';
+import {
+  getLearnArticlesByCategory,
+  getPublishedLearnArticleRecords,
+} from '@/data/learn/articles';
 import { getServiceBySlug } from '@/data/services';
 import { LEARN_TAG_PAGES_ENABLED } from '@/config/learn-taxonomy';
 import { getActiveAuthors } from '@/lib/authors/getters';
@@ -53,6 +57,8 @@ function changeFrequencyFor(route: string, pageType: string): SitemapChangeFrequ
 function priorityFor(route: string, pageType: string, featured: boolean): number {
   if (route === '/') return 1;
   if (pageType === 'service') return featured ? 0.9 : 0.85;
+  if (route === '/tools') return 0.7;
+  if (pageType === 'tools') return 0.65;
   if (route === '/track-order') return 0.5;
   if (pageType === 'legal') return 0.4;
   if (route === '/about' || route === '/contact' || route === '/faq') return 0.65;
@@ -108,7 +114,11 @@ export function getIndexableRoutes(): IndexableRoute[] {
 
 /** Indexable author hub + profiles for sitemap discovery. */
 export function getAuthorSitemapRoutes(): IndexableRoute[] {
-  const authors = getActiveAuthors();
+  if (getPublishedLearnArticleRecords().length === 0) return [];
+
+  const authors = getActiveAuthors().filter((author) => author.articleCount > 0);
+  if (authors.length === 0) return [];
+
   const index: IndexableRoute = {
     route: normalizeCanonicalPath(authorsIndexPath()),
     canonicalUrl: buildCanonicalUrl(authorsIndexPath()),
@@ -168,6 +178,7 @@ export function getFutureLearnSitemapRoutes(): IndexableRoute[] {
 
   const categoryRoutes = getActiveLearnCategories()
     .filter((category) => category.slug !== 'news')
+    .filter((category) => getLearnArticlesByCategory(category.id).length > 0)
     .map((category) => {
       const entry = getMetadataByRoute(`/learn/${category.slug}`);
       return {

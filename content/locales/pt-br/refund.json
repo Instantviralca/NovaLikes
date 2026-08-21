@@ -1,0 +1,220 @@
+{
+  "id": "refund-policy",
+  "path": "/refund-policy",
+  "seo": {
+    "title": "Política de Reembolso | NovaLikes",
+    "description": "Leia a Política de Reembolso da NovaLikes para informações sobre a Garantia de reembolso de 30 dias, elegibilidade de reembolso, problemas com pedidos, cancelamentos, reposições e solicitação de suporte."
+  },
+  "breadcrumbLabel": "Política de Reembolso",
+  "header": {
+    "title": "Política de Reembolso",
+    "intro": "A NovaLikes oferece uma Garantia de reembolso de 30 dias em pedidos elegíveis. Se você tiver um problema qualificado com sua compra, poderá entrar em contato com a NovaLikes em até 30 dias a partir da data do pedido para solicitar uma análise e, quando elegível, um reembolso."
+  },
+  "tocTitle": "Nesta página",
+  "sections": [
+    {
+      "id": "before-requesting-a-refund",
+      "anchor": "before-requesting-a-refund",
+      "title": "1. Antes de solicitar um reembolso",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Antes de entrar em contato com o suporte sobre um reembolso, por favor:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifique se o nome de usuário ou a URL enviados com o pedido estão corretos",
+            "Mantenha o perfil, a Página, a publicação, o Reel ou o vídeo exigidos publicamente acessíveis enquanto o pedido precisar de acesso",
+            "Evite excluir ou restringir o conteúdo enviado enquanto o pedido estiver ativo",
+            "Entre em contato com o suporte com os dados do pedido para que a equipe possa localizá-lo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thirty-day-money-back-guarantee",
+      "anchor": "thirty-day-money-back-guarantee",
+      "title": "2. Garantia de reembolso de 30 dias",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A NovaLikes oferece uma Garantia de reembolso de 30 dias em pedidos elegíveis. O prazo de 30 dias começa na data da compra / pagamento do pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "As solicitações de reembolso devem ser enviadas em até 30 dias a partir da data original da compra. A elegibilidade depende das circunstâncias do pedido, incluindo o status, o serviço selecionado, as informações enviadas com o pedido e se a NovaLikes conseguiu prestar o serviço comprado."
+        },
+        {
+          "type": "paragraph",
+          "text": "Circunstâncias qualificadas comuns que podem fundamentar um reembolso após análise incluem:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A NovaLikes não consegue prestar o serviço comprado",
+            "Um erro técnico ou de pedido impede o cumprimento",
+            "Um problema elegível do serviço não pode ser resolvido",
+            "Um pagamento duplicado acidental é confirmado"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Enviar uma solicitação de reembolso não significa que toda solicitação seja automaticamente aprovada. Cada solicitação é analisada nos termos desta Política de Reembolso e das circunstâncias do pedido."
+        }
+      ]
+    },
+    {
+      "id": "when-a-refund-may-not-be-available",
+      "anchor": "when-a-refund-may-not-be-available",
+      "title": "3. Quando um reembolso pode não se aplicar",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um reembolso pode não estar disponível em situações como:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Um nome de usuário ou URL incorreto foi enviado e o processamento já havia começado",
+            "O perfil, a Página, a publicação, o Reel ou o vídeo exigidos foram tornados privados ou indisponíveis quando o acesso público era necessário",
+            "O conteúdo enviado foi excluído ou restringido após o checkout",
+            "O cliente alterou informações necessárias para concluir o pedido depois que o processamento começou",
+            "O pedido foi concluído com sucesso conforme comprado",
+            "A solicitação de reembolso foi feita após o prazo da garantia de 30 dias",
+            "Abuso, solicitações de reembolso duplicadas, fraude ou manipulação de pagamento"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Essas exclusões visam manter a garantia justa e viável. Elas não eliminam a Garantia de reembolso de 30 dias para pedidos elegíveis que se qualificam nos termos da Seção 2."
+        }
+      ]
+    },
+    {
+      "id": "cancellations",
+      "anchor": "cancellations",
+      "title": "4. Cancelamentos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Não há opção de cancelamento ou edição por autoatendimento após o pagamento bem-sucedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "Os clientes devem entrar em contato com o suporte o quanto antes com os dados do pedido. Uma alteração ou um cancelamento pode não ser possível depois que o processamento tiver começado ou o pedido tiver sido concluído."
+        }
+      ]
+    },
+    {
+      "id": "drops-and-refills",
+      "anchor": "drops-and-refills",
+      "title": "5. Quedas e reposições",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Métricas de seguidores, curtidas, visualizações, comentários e semelhantes das plataformas sociais podem mudar ao longo do tempo por motivos fora do controle da NovaLikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "A disponibilidade de reposição depende do serviço e do pacote comprados. Quaisquer condições de reposição aplicáveis são as exibidas para o serviço ou pacote correspondente."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Garantia de reembolso de 30 dias é independente de quaisquer termos de reposição específicos do pacote. Esta página não converte a janela de reembolso em uma garantia universal de reposição de 30 dias."
+        }
+      ]
+    },
+    {
+      "id": "duplicate-orders-or-payments",
+      "anchor": "duplicate-orders-or-payments",
+      "title": "6. Pedidos ou pagamentos duplicados",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se você acredita que foi cobrado duas vezes pela mesma compra pretendida, entre em contato com o suporte imediatamente com as duas referências de pagamento ou os dados do pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "A NovaLikes analisará os registros e, quando um pagamento duplicado confirmado for encontrado, trabalhará em busca de uma resolução adequada nos termos desta Política de Reembolso e do processo do provedor de pagamento aplicável."
+        }
+      ]
+    },
+    {
+      "id": "payment-disputes",
+      "anchor": "payment-disputes",
+      "title": "7. Disputas de pagamento",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se você tiver uma preocupação com pagamento ou pedido, entre em contato primeiro com o suporte da NovaLikes para que a equipe possa investigar e responder."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta política não restringe ilegalmente quaisquer direitos de chargeback ou de contestação que você possa ter com o seu provedor de pagamento ou nos termos da lei aplicável."
+        }
+      ]
+    },
+    {
+      "id": "how-to-request-a-refund",
+      "anchor": "how-to-request-a-refund",
+      "title": "8. Como solicitar um reembolso",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para solicitar uma análise nos termos da Garantia de reembolso de 30 dias, envie uma solicitação pela página [Contato](/contact) ou pelo e-mail [support@novalikes.com](mailto:support@novalikes.com)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inclua, por favor:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Referência do pedido",
+            "Endereço de e-mail usado no pedido",
+            "Uma breve explicação do problema"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Nunca envie senhas do Instagram, TikTok ou Facebook. A NovaLikes não precisa de credenciais de login de redes sociais para analisar um pedido."
+        }
+      ]
+    },
+    {
+      "id": "refund-processing",
+      "anchor": "refund-processing",
+      "title": "9. Processamento do reembolso",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A NovaLikes analisa as solicitações de reembolso após o recebimento dos dados necessários do pedido."
+        },
+        {
+          "type": "paragraph",
+          "text": "O tempo de processamento do reembolso pode depender do provedor de pagamento e do tempo necessário para analisar o pedido. A NovaLikes não publica nesta página um prazo fixo de liquidação de reembolso."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "10. Contato",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para solicitar uma análise de reembolso nos termos da Garantia de reembolso de 30 dias, use a página [Contato](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Você também pode enviar um e-mail para [support@novalikes.com](mailto:support@novalikes.com)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Políticas relacionadas: [Termos e Condições](/terms-and-conditions), [Política de Privacidade](/privacy-policy) e [Perguntas frequentes](/faq)."
+        }
+      ]
+    }
+  ]
+}

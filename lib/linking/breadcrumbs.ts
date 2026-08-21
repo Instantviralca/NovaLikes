@@ -1,6 +1,10 @@
 /**
  * Breadcrumb builder from the shared link registry — Document 14.05.
  * Reuses one BreadcrumbList schema via schemas/breadcrumb.ts.
+ *
+ * Commercial service pages use Home > Current Service until an indexable
+ * platform hub exists. Empty/noindex Learn taxonomy pages are never inserted
+ * as parent breadcrumb nodes.
  */
 
 import { getLinkPageBySlug, linkPageHref } from '@/data/linking/registry';
@@ -10,7 +14,7 @@ const MAX_DEPTH = 8;
 
 /**
  * Build breadcrumb trail for a registry slug.
- * Platform parents link to Learn category hubs (`/learn/instagram`, etc.).
+ * Service pages resolve Home > Current Service (no empty Learn parents).
  */
 export function buildBreadcrumb(slug: string): BreadcrumbItem[] {
   const page = getLinkPageBySlug(slug);

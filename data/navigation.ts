@@ -2,6 +2,7 @@ import { routes } from '@/config/routes';
 import { getAllPlatforms } from '@/data/platforms';
 import { getNavigationServices, getServiceBySlug } from '@/data/services';
 import { getPrimaryCTA, getSecondaryCTA } from '@/lib/brand/helpers';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import type { NavItem, NavMegaMenuItem, PlatformId, Service } from '@/types';
 
 function primaryServiceHref(platformId: PlatformId): string {
@@ -25,9 +26,9 @@ export const mainNavigation: NavItem[] = [
   { id: 'nav-home', label: 'Home', href: routes.home },
   megaItem('instagram', 'Instagram'),
   megaItem('tiktok', 'TikTok'),
-  megaItem('youtube', 'YouTube'),
   megaItem('facebook', 'Facebook'),
   { id: 'nav-learn', label: 'Learn', href: routes.learn },
+  { id: 'nav-tools', label: 'Tools', href: routes.tools },
   { id: 'nav-reviews', label: 'Reviews', href: routes.reviews },
   { id: 'nav-about', label: 'About', href: routes.about },
   { id: 'nav-contact', label: 'Contact', href: routes.contact },
@@ -51,8 +52,9 @@ export const secondaryCta = {
   href: secondary.href,
 } as const;
 
-export function getMainNavigation(): NavItem[] {
-  return mainNavigation;
+export function getMainNavigation(locale: Locale = DEFAULT_LOCALE): NavItem[] {
+  if (locale === DEFAULT_LOCALE) return mainNavigation;
+  return mainNavigation.filter((item) => item.id !== 'nav-learn');
 }
 
 export function getMegaMenuServices(platformId: PlatformId): Service[] {
@@ -60,11 +62,13 @@ export function getMegaMenuServices(platformId: PlatformId): Service[] {
 }
 
 export function getPlatformNavItems() {
-  return getAllPlatforms().map((platform) => ({
-    platform,
-    href: primaryServiceHref(platform.id),
-    services: getMegaMenuServices(platform.id),
-  }));
+  return getAllPlatforms()
+    .map((platform) => ({
+      platform,
+      href: primaryServiceHref(platform.id),
+      services: getMegaMenuServices(platform.id),
+    }))
+    .filter((item) => item.services.length > 0);
 }
 
 export function isMegaMenuItem(item: NavItem): item is NavMegaMenuItem {

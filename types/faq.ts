@@ -19,10 +19,13 @@ export type FaqStatus =
  */
 export type FAQCategoryId =
   | 'general'
+  | 'getting_started'
   | 'ordering'
   | 'delivery'
+  | 'orders_delivery'
   | 'payments'
   | 'refunds'
+  | 'payments_refunds'
   | 'tracking'
   | 'instagram'
   | 'tiktok'

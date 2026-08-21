@@ -7,8 +7,6 @@ import { InstagramViewsRequirementGuideVisual } from '@/components/design-system
 import { TikTokFollowersRequirementGuideVisual } from '@/components/design-system/tiktok-followers-requirement-guide-visual';
 import { TikTokLikesRequirementGuideVisual } from '@/components/design-system/tiktok-likes-requirement-guide-visual';
 import { TikTokViewsRequirementGuideVisual } from '@/components/design-system/tiktok-views-requirement-guide-visual';
-import { YouTubeSubscribersRequirementGuideVisual } from '@/components/design-system/youtube-subscribers-requirement-guide-visual';
-import { YouTubeViewsRequirementGuideVisual } from '@/components/design-system/youtube-views-requirement-guide-visual';
 import { cn } from '@/lib/utils';
 import {
   CheckCircle2,
@@ -22,6 +20,42 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
+
+const INSTAGRAM_FOLLOWERS_STEPS: Array<{
+  id: string;
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}> = [
+  {
+    id: 'ig-f-username',
+    icon: UserRound,
+    title: 'Public Username Only',
+    description:
+      'We only need the public Instagram username for the profile receiving the follower order.',
+  },
+  {
+    id: 'ig-f-no-password',
+    icon: Lock,
+    title: 'No Password Required',
+    description:
+      'Never share your Instagram password, verification codes or private account access.',
+  },
+  {
+    id: 'ig-f-check-username',
+    icon: CheckCircle2,
+    title: 'Check the Username',
+    description:
+      'Double-check the Instagram username before checkout so the follower order is associated with the correct public profile.',
+  },
+  {
+    id: 'ig-f-track',
+    icon: CheckCircle2,
+    title: 'Track Your Order',
+    description:
+      'Use your email and order ID after checkout to check available order-status information.',
+  },
+];
 
 const DEFAULT_STEPS: Array<{
   id: string;
@@ -160,78 +194,6 @@ const TIKTOK_VIEWS_STEPS: Array<{
     title: 'Valid Email Address',
     description:
       'Use a working email address to receive confirmation, tracking details and support updates.',
-  },
-];
-
-const YOUTUBE_SUBSCRIBERS_STEPS: Array<{
-  id: string;
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}> = [
-  {
-    id: 'yt-s-channel-url',
-    icon: Link2,
-    title: 'Public YouTube Channel URL',
-    description:
-      'Provide the public URL of the YouTube channel receiving the selected subscriber package.',
-  },
-  {
-    id: 'yt-s-package',
-    icon: Package,
-    title: 'Selected Package',
-    description:
-      'Choose the subscriber quantity that best fits your current audience and channel objectives.',
-  },
-  {
-    id: 'yt-s-public',
-    icon: Eye,
-    title: 'Public Channel Access',
-    description:
-      'Keep your YouTube channel publicly accessible while your subscriber order is being processed.',
-  },
-  {
-    id: 'yt-s-email',
-    icon: Mail,
-    title: 'Valid Email Address',
-    description:
-      'Use a working email address to receive order confirmations, delivery updates and customer support when required.',
-  },
-];
-
-const YOUTUBE_VIEWS_STEPS: Array<{
-  id: string;
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}> = [
-  {
-    id: 'yt-v-video-url',
-    icon: Link2,
-    title: 'Public YouTube Video URL',
-    description:
-      'Provide the public URL of the YouTube video receiving the selected View package.',
-  },
-  {
-    id: 'yt-v-package',
-    icon: Package,
-    title: 'Selected Views Package',
-    description:
-      'Choose the view quantity that best fits your campaign objectives and current video performance.',
-  },
-  {
-    id: 'yt-v-public',
-    icon: Eye,
-    title: 'Public Video Access',
-    description:
-      'Keep the selected YouTube video publicly accessible while your order is being processed.',
-  },
-  {
-    id: 'yt-v-email',
-    icon: Mail,
-    title: 'Valid Email Address',
-    description:
-      'Use a working email address to receive order confirmation, delivery updates and customer support when required.',
   },
 ];
 
@@ -423,14 +385,13 @@ export type RequirementGuideProps = {
   visual?: ReactNode;
   /** Built-in compact views Reel dashboard. */
   visualVariant?:
+    | 'instagram-followers'
     | 'default'
     | 'instagram-views'
     | 'instagram-comments'
     | 'tiktok-followers'
     | 'tiktok-likes'
     | 'tiktok-views'
-    | 'youtube-subscribers'
-    | 'youtube-views'
     | 'facebook-followers'
     | 'facebook-page-likes'
     | 'facebook-post-likes';
@@ -469,10 +430,6 @@ export function RequirementGuide({
       <TikTokLikesRequirementGuideVisual />
     ) : visualVariant === 'tiktok-views' ? (
       <TikTokViewsRequirementGuideVisual />
-    ) : visualVariant === 'youtube-subscribers' ? (
-      <YouTubeSubscribersRequirementGuideVisual />
-    ) : visualVariant === 'youtube-views' ? (
-      <YouTubeViewsRequirementGuideVisual />
     ) : visualVariant === 'facebook-followers' ? (
       <FacebookFollowersRequirementGuideVisual />
     ) : visualVariant === 'facebook-page-likes' ? (
@@ -481,7 +438,9 @@ export function RequirementGuide({
       <FacebookPostLikesRequirementGuideVisual />
     ) : undefined);
   const steps =
-    visualVariant === 'instagram-views'
+    visualVariant === 'instagram-followers'
+      ? INSTAGRAM_FOLLOWERS_STEPS
+      : visualVariant === 'instagram-views'
       ? VIEWS_STEPS
       : visualVariant === 'instagram-comments'
         ? COMMENTS_STEPS
@@ -491,12 +450,8 @@ export function RequirementGuide({
             ? TIKTOK_LIKES_STEPS
             : visualVariant === 'tiktok-views'
               ? TIKTOK_VIEWS_STEPS
-              : visualVariant === 'youtube-subscribers'
-                ? YOUTUBE_SUBSCRIBERS_STEPS
-                : visualVariant === 'youtube-views'
-                  ? YOUTUBE_VIEWS_STEPS
-                  : visualVariant === 'facebook-followers'
-                    ? FACEBOOK_FOLLOWERS_STEPS
+              : visualVariant === 'facebook-followers'
+                ? FACEBOOK_FOLLOWERS_STEPS
                     : visualVariant === 'facebook-page-likes'
                       ? FACEBOOK_PAGE_LIKES_STEPS
                       : visualVariant === 'facebook-post-likes'
@@ -546,9 +501,7 @@ export function RequirementGuide({
             'mt-4 rounded-xl border border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--border-subtle))] px-4 py-3.5 text-sm leading-relaxed text-[var(--text-secondary)]',
             visualVariant === 'facebook-followers' ||
               visualVariant === 'facebook-page-likes' ||
-              visualVariant === 'facebook-post-likes' ||
-              visualVariant === 'youtube-subscribers' ||
-              visualVariant === 'youtube-views'
+              visualVariant === 'facebook-post-likes'
               ? 'bg-[#FFE8D6]'
               : 'bg-[var(--brand-accent-soft)]/70',
           )}

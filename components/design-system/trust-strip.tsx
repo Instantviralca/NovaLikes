@@ -22,7 +22,7 @@ const ICONS = {
 export const DEFAULT_TRUST_ITEMS: TrustItem[] = [
   { id: 'no-password', label: 'No password required', icon: 'lock' },
   { id: 'secure', label: 'Secure checkout', icon: 'shield' },
-  { id: 'refund', label: '30-day money-back guarantee', icon: 'refund' },
+  { id: 'refund', label: '30-Day Money-Back Guarantee', icon: 'refund' },
   { id: 'track', label: 'Order tracking', icon: 'track' },
   { id: 'support', label: 'Professional support', icon: 'support' },
 ];

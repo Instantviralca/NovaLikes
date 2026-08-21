@@ -223,7 +223,7 @@ function buildRegistry(): LinkPage[] {
         .filter((article) => article.platformId === service.platform)
         .map((article) => `learn/${article.slug}`),
       relatedPolicies: approved ? POLICY_LINK_SETS.service : [],
-      breadcrumbParent: service.platform,
+      breadcrumbParent: 'home',
       active: approved && !service.comingSoon,
       serviceIntent: SERVICE_INTENT_BY_CATEGORY[service.category] ?? 'other',
     });

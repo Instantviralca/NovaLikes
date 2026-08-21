@@ -1,5 +1,3 @@
-'use client';
-
 import { ServiceCard } from '@/components/marketing/featured-services/service-card';
 import type { FeaturedServicesGridProps } from '@/components/marketing/featured-services/types';
 import { StaggerChildren, StaggerItem } from '@/components/motion/stagger';

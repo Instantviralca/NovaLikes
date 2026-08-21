@@ -3,15 +3,15 @@ import type { ReactNode } from 'react';
 import { GeistSans } from 'geist/font/sans';
 
 import { AnalyticsProvider } from '@/components/analytics';
-import { JsonLdScript } from '@/components/common/json-ld';
-import { CartDrawer } from '@/components/commerce/cart/cart-drawer';
+import { LazyCartDrawer } from '@/components/commerce/cart/lazy-cart-drawer';
 import { CartToastProvider } from '@/components/feedback/cart-toast';
+import { I18nChromeProvider } from '@/components/i18n/i18n-chrome';
 import { CartProvider } from '@/lib/cart';
 import { CartUiProvider } from '@/lib/cart/cart-ui-context';
-import { asJsonLdGraph } from '@/lib/seo/schema';
+import { loadUi } from '@/lib/i18n/content/load';
+import { HTML_LANG, LOCALE_DIR } from '@/lib/i18n/config';
+import { getRequestLocale } from '@/lib/i18n/request-locale';
 import { cn } from '@/lib/utils';
-import { organizationSchema } from '@/schemas/organization';
-import { websiteSchema } from '@/schemas/website';
 import { seoSiteConfig } from '@/config/seo';
 import { titles } from '@/seo/titles';
 import '@/styles/globals.css';
@@ -34,23 +34,24 @@ type RootLayoutProps = {
 };
 
 /** Root layout — public chrome lives in route-group layouts so /admin stays clean. */
-export default function RootLayout({ children }: RootLayoutProps) {
-  const graph = asJsonLdGraph([organizationSchema(), websiteSchema()]);
-
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const locale = await getRequestLocale();
+  const ui = loadUi(locale);
   return (
-    <html lang="en" className={cn(GeistSans.variable)}>
+    <html lang={HTML_LANG[locale]} dir={LOCALE_DIR[locale]} className={cn(GeistSans.variable)}>
       <body className={cn(GeistSans.className, 'antialiased')}>
-        <JsonLdScript id="global-jsonld" data={graph} />
-        <AnalyticsProvider>
-          <CartProvider>
-            <CartUiProvider>
-              <CartToastProvider>
-                {children}
-                <CartDrawer />
-              </CartToastProvider>
-            </CartUiProvider>
-          </CartProvider>
-        </AnalyticsProvider>
+        <I18nChromeProvider locale={locale} ui={ui}>
+          <AnalyticsProvider>
+            <CartProvider>
+              <CartUiProvider>
+                <CartToastProvider>
+                  {children}
+                  <LazyCartDrawer />
+                </CartToastProvider>
+              </CartUiProvider>
+            </CartProvider>
+          </AnalyticsProvider>
+        </I18nChromeProvider>
       </body>
     </html>
   );

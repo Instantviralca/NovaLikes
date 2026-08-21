@@ -17,6 +17,7 @@ export {
   getLatestArticlesByCategory,
   getRelatedCategories,
   getPopularTags,
+  getDiscoverableTags,
   getPublicTagsForSlugs,
   paginateItems,
   getActiveCategorySlugsForStaticParams,

@@ -116,6 +116,7 @@ export async function getAdminNotificationEmail(): Promise<string> {
   }
 
   const fromEnv =
+    trimEmail(process.env.ADMIN_EMAIL) ||
     trimEmail(process.env.EMAIL_ADMIN_TO) ||
     trimEmail(process.env.EMAIL_FROM) ||
     trimEmail(process.env.RESEND_FROM_EMAIL);

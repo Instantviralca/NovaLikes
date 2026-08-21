@@ -1,0 +1,394 @@
+[
+  {
+    "id": "faq-gs-what-is-novalikes",
+    "category": "getting_started",
+    "order": 1,
+    "question": "Qu’est-ce que NovaLikes ?",
+    "answer": "NovaLikes est un site de services pour les réseaux sociaux Instagram, TikTok et Facebook. Les services disponibles comprennent des offres d’abonnés, de likes, de vues, de commentaires et de Pages Facebook, selon la plateforme."
+  },
+  {
+    "id": "faq-gs-how-works",
+    "category": "getting_started",
+    "order": 2,
+    "question": "Comment fonctionne NovaLikes ?",
+    "answer": "Choisissez un service, sélectionnez l’un des forfaits disponibles et fournissez les informations publiques de profil, de Page, de publication ou de vidéo demandées pour ce service. Finalisez le paiement, puis suivez les options de statut de commande disponibles une fois la commande passée."
+  },
+  {
+    "id": "faq-gs-platforms",
+    "category": "getting_started",
+    "order": 3,
+    "question": "Quelles plateformes de réseaux sociaux NovaLikes prend-il en charge ?",
+    "answer": "NovaLikes prend actuellement en charge Instagram, TikTok et Facebook. Les services YouTube et X/Twitter ne sont pas proposés pour le moment."
+  },
+  {
+    "id": "faq-gs-what-info",
+    "category": "getting_started",
+    "order": 4,
+    "question": "Quelles informations dois-je fournir pour passer commande ?",
+    "answer": "Les informations demandées dépendent du service choisi. Les services au niveau du profil peuvent exiger un nom d’utilisateur ou une URL de profil/Page publique, tandis que les services pour un contenu individuel peuvent exiger l’URL publique du post, du Reel ou de la vidéo."
+  },
+  {
+    "id": "faq-gs-account-required",
+    "category": "getting_started",
+    "order": 5,
+    "question": "Dois-je créer un compte avant de commander ?",
+    "answer": "Non. Vous pouvez passer commande avec les informations demandées lors du paiement, sans créer de compte NovaLikes séparé."
+  },
+  {
+    "id": "faq-as-password",
+    "category": "account_security",
+    "order": 1,
+    "question": "Dois-je indiquer le mot de passe de mes réseaux sociaux ?",
+    "answer": "Non. Vous ne devez jamais indiquer votre mot de passe Instagram, TikTok ou Facebook lorsque vous passez commande chez NovaLikes. Fournissez uniquement les informations publiques de profil, de Page, de publication ou de vidéo demandées pour le service."
+  },
+  {
+    "id": "faq-as-public-account",
+    "category": "account_security",
+    "order": 2,
+    "question": "Mon compte de réseau social doit-il être public ?",
+    "answer": "Si le service choisi exige que NovaLikes accède publiquement à votre profil, Page, publication ou vidéo, ce contenu doit rester accessible publiquement pendant le traitement de la commande. Un contenu privé ou indisponible peut empêcher l’exécution du service."
+  },
+  {
+    "id": "faq-as-make-private-after",
+    "category": "account_security",
+    "order": 3,
+    "question": "Puis-je passer mon compte en privé après avoir commandé ?",
+    "answer": "Si votre commande dépend d’un accès public à un profil ou à un contenu, gardez-le public pendant le traitement. Modifier sa visibilité peut empêcher l’accès aux informations nécessaires."
+  },
+  {
+    "id": "faq-as-login-account",
+    "category": "account_security",
+    "order": 4,
+    "question": "NovaLikes se connecte-t-il à mon compte de réseau social ?",
+    "answer": "Aucun mot de passe de réseau social n’est requis pour les services décrits sur NovaLikes. N’envoyez jamais vos identifiants Instagram, TikTok ou Facebook via le paiement ou l’assistance."
+  },
+  {
+    "id": "faq-as-wrong-url",
+    "category": "account_security",
+    "order": 5,
+    "question": "Que se passe-t-il si j’indique un mauvais nom d’utilisateur ou une mauvaise URL ?",
+    "answer": "Contactez l’assistance NovaLikes dès que possible si vous avez fourni des informations incorrectes. La possibilité de les modifier dépend du statut actuel de la commande : vérifiez toujours soigneusement le nom d’utilisateur ou l’URL avant de finaliser le paiement."
+  },
+  {
+    "id": "faq-as-platform-risk",
+    "category": "account_security",
+    "order": 6,
+    "question": "Acheter des abonnés, des likes ou des vues peut-il affecter mon compte de réseau social ?",
+    "answer": "Les services tiers pour les réseaux sociaux peuvent entraîner des risques liés aux règles des plateformes ou à des mesures sur le compte. NovaLikes n’exige pas votre mot de passe Instagram, TikTok ou Facebook pour les services décrits sur le site, mais aucun service tiers ne peut garantir qu’une plateforme ne supprimera jamais d’activité, ne changera pas la façon dont les indicateurs sont comptés, ou n’agira pas selon ses règles en vigueur. Consultez les exigences du service et les politiques actuelles de la plateforme avant de commander."
+  },
+  {
+    "id": "faq-as-platform-control",
+    "category": "account_security",
+    "order": 7,
+    "question": "NovaLikes contrôle-t-il les politiques d’Instagram, TikTok ou Facebook ?",
+    "answer": "Non. Instagram, TikTok et Facebook sont des plateformes tierces, avec leurs propres règles, systèmes et décisions d’application. NovaLikes ne contrôle pas les politiques des plateformes et ne garantit pas la façon dont une plateforme traitera une activité d’engagement tierce. Les règles des plateformes peuvent changer : les utilisateurs doivent consulter les règles en vigueur de la plateforme qu’ils utilisent."
+  },
+  {
+    "id": "faq-od-how-long",
+    "category": "orders_delivery",
+    "order": 1,
+    "question": "Combien de temps prend une commande NovaLikes ?",
+    "answer": "Le traitement et la livraison peuvent varier selon le service et le forfait. Utilisez les informations de livraison affichées pour le forfait choisi, plutôt que de supposer que tous les services NovaLikes ont le même délai."
+  },
+  {
+    "id": "faq-od-start-immediately",
+    "category": "orders_delivery",
+    "order": 2,
+    "question": "Ma commande démarre-t-elle immédiatement ?",
+    "answer": "Le traitement d’une commande peut varier selon le service choisi et les conditions de traitement en cours. Consultez les informations fournies pour le service ou le forfait sélectionné pour tout détail de délai applicable."
+  },
+  {
+    "id": "faq-od-track",
+    "category": "orders_delivery",
+    "order": 3,
+    "question": "Comment puis-je suivre ma commande NovaLikes ?",
+    "answer": "Utilisez la page Suivre la commande de NovaLikes et indiquez les informations demandées. Si vous ne trouvez pas une commande, contactez l’assistance avec les détails de commande dont vous disposez."
+  },
+  {
+    "id": "faq-od-still-processing",
+    "category": "orders_delivery",
+    "order": 4,
+    "question": "Pourquoi ma commande est-elle encore en cours de traitement ?",
+    "answer": "Une commande peut rester en traitement pendant l’exécution du service choisi. Gardez le profil, la Page, la publication ou la vidéo fourni accessible publiquement lorsque le service l’exige, et contactez l’assistance si vous pensez qu’il y a un problème avec la commande."
+  },
+  {
+    "id": "faq-od-not-started",
+    "category": "orders_delivery",
+    "order": 5,
+    "question": "Que faire si ma commande n’a pas commencé ?",
+    "answer": "Vérifiez d’abord que le nom d’utilisateur ou l’URL que vous avez indiqué est correct, et que le profil ou le contenu concerné est toujours public. Si les informations sont justes et que vous avez encore besoin d’aide, contactez l’assistance NovaLikes avec les détails de votre commande."
+  },
+  {
+    "id": "faq-od-change-url",
+    "category": "orders_delivery",
+    "order": 6,
+    "question": "Puis-je changer le nom d’utilisateur ou l’URL après avoir commandé ?",
+    "answer": "Contactez l’assistance dès que possible si vous devez corriger des informations fournies. Les modifications peuvent ne plus être possibles une fois le traitement commencé."
+  },
+  {
+    "id": "faq-od-delete-content",
+    "category": "orders_delivery",
+    "order": 7,
+    "question": "Que se passe-t-il si je supprime une publication ou une vidéo après avoir commandé ?",
+    "answer": "Supprimer ou restreindre l’accès à un contenu lié à une commande en cours peut empêcher son traitement ou son achèvement. Conservez le contenu fourni disponible tant que le service a besoin d’y accéder."
+  },
+  {
+    "id": "faq-od-cancel-change",
+    "category": "orders_delivery",
+    "order": 8,
+    "question": "Puis-je annuler ou modifier une commande après le paiement ?",
+    "answer": "Il n’existe pas d’option d’annulation ou de modification en libre-service après un paiement réussi. Contactez l’assistance NovaLikes dès que possible si vous souhaitez demander une annulation ou une modification. La possibilité de traiter la demande dépend du statut actuel de traitement de la commande."
+  },
+  {
+    "id": "faq-ig-safe-followers",
+    "category": "instagram",
+    "order": 1,
+    "question": "Est-il sûr d’acheter des abonnés Instagram ?",
+    "answer": "Acheter des abonnés Instagram implique d’utiliser un service tiers : vous devez donc comprendre quelles informations le service demande avant de commander. NovaLikes n’exige pas votre mot de passe Instagram ; utilisez uniquement les informations de profil public demandées lors du paiement et consultez les détails du service avant d’acheter."
+  },
+  {
+    "id": "faq-ig-how-followers",
+    "category": "instagram",
+    "order": 2,
+    "question": "Comment fonctionne l’achat d’abonnés Instagram ?",
+    "answer": "Choisissez un forfait d’abonnés Instagram et indiquez les informations de profil Instagram public demandées lors du paiement. Les abonnés Instagram sont un service au niveau du profil : assurez-vous d’indiquer le bon profil, et non l’URL d’un post ou d’un Reel."
+  },
+  {
+    "id": "faq-ig-password-followers",
+    "category": "instagram",
+    "order": 3,
+    "question": "Ai-je besoin de mon mot de passe Instagram pour acheter des abonnés ?",
+    "answer": "Non. Vous n’avez pas besoin d’indiquer votre mot de passe Instagram lorsque vous commandez des abonnés Instagram chez NovaLikes. N’envoyez jamais vos identifiants Instagram lors du paiement ni via l’assistance."
+  },
+  {
+    "id": "faq-ig-public-followers",
+    "category": "instagram",
+    "order": 4,
+    "question": "Mon compte Instagram doit-il être public pour recevoir des abonnés ?",
+    "answer": "Si le service Abonnés Instagram nécessite l’accès à votre profil public, gardez le profil accessible publiquement pendant le traitement de la commande. Un profil privé ou indisponible peut empêcher l’accès aux informations nécessaires."
+  },
+  {
+    "id": "faq-ig-private-followers",
+    "category": "instagram",
+    "order": 5,
+    "question": "Puis-je acheter des abonnés Instagram pour un compte privé ?",
+    "answer": "Un compte Instagram privé peut empêcher le traitement normal d’un service qui dépend de l’accès au profil public. Suivez les exigences de visibilité indiquées pour le service Abonnés Instagram avant et pendant votre commande."
+  },
+  {
+    "id": "faq-ig-followers-drop",
+    "category": "instagram",
+    "order": 6,
+    "question": "Instagram peut-il retirer des abonnés après la livraison ?",
+    "answer": "Les nombres d’abonnés sur les plateformes sociales peuvent évoluer dans le temps, notamment lorsque des comptes sont supprimés, désactivés ou ne sont plus comptabilisés par la plateforme. Consultez les conditions du service NovaLikes concerné pour toute condition de réapprovisionnement applicable, plutôt que de supposer que chaque commande inclut un refill."
+  },
+  {
+    "id": "faq-ig-safe-likes",
+    "category": "instagram",
+    "order": 7,
+    "question": "Est-il sûr d’acheter des likes Instagram ?",
+    "answer": "Les likes Instagram sont un service tiers pour un contenu public précis : consultez les exigences du service avant de commander. NovaLikes n’exige pas votre mot de passe Instagram pour passer une commande de likes Instagram."
+  },
+  {
+    "id": "faq-ig-likes-post",
+    "category": "instagram",
+    "order": 8,
+    "question": "Puis-je acheter des likes Instagram pour un post précis ?",
+    "answer": "Oui. Les likes Instagram s’appliquent à un contenu Instagram précis : indiquez les informations publiques du post ou du Reel demandées lors du paiement."
+  },
+  {
+    "id": "faq-ig-likes-reel",
+    "category": "instagram",
+    "order": 9,
+    "question": "Puis-je acheter des likes Instagram pour un Reel ?",
+    "answer": "Utilisez le service Likes Instagram lorsque le format Reel public est pris en charge par les exigences de commande en vigueur. Indiquez toujours l’URL exacte du contenu public demandée lors du paiement."
+  },
+  {
+    "id": "faq-ig-views-reels",
+    "category": "instagram",
+    "order": 10,
+    "question": "Puis-je acheter des vues Instagram pour des Reels ?",
+    "answer": "NovaLikes propose un service de vues Instagram pour le contenu Instagram public pris en charge. Consultez la page du service et indiquez l’URL publique exacte du Reel ou du contenu demandée lors du paiement."
+  },
+  {
+    "id": "faq-ig-comments",
+    "category": "instagram",
+    "order": 11,
+    "question": "Puis-je acheter des commentaires pour un post ou un Reel Instagram ?",
+    "answer": "NovaLikes propose des commentaires Instagram pour le contenu Instagram public pris en charge. Choisissez un forfait disponible et indiquez l’URL publique précise du post ou du Reel demandée lors du paiement."
+  },
+  {
+    "id": "faq-ig-difference-metrics",
+    "category": "instagram",
+    "order": 12,
+    "question": "Quelle est la différence entre abonnés, likes, vues et commentaires Instagram ?",
+    "answer": "Les abonnés Instagram s’appliquent au profil, tandis que les likes, vues et commentaires s’appliquent à un contenu Instagram précis, selon le service choisi. Choisissez les abonnés pour un indicateur au niveau du profil, et les likes, vues ou commentaires lorsque la cible est un post ou un Reel particulier."
+  },
+  {
+    "id": "faq-tt-safe-followers",
+    "category": "tiktok",
+    "order": 1,
+    "question": "Est-il sûr d’acheter des abonnés TikTok ?",
+    "answer": "Acheter des abonnés TikTok implique d’utiliser un service tiers : consultez les exigences du service avant de passer commande. NovaLikes n’exige pas votre mot de passe TikTok pour une commande d’abonnés TikTok."
+  },
+  {
+    "id": "faq-tt-how-followers",
+    "category": "tiktok",
+    "order": 2,
+    "question": "Comment fonctionne l’achat d’abonnés TikTok ?",
+    "answer": "Choisissez un forfait d’abonnés TikTok et indiquez les informations de profil TikTok public demandées lors du paiement. Les abonnés sont un service au niveau du profil : la commande doit pointer vers le profil TikTok visé."
+  },
+  {
+    "id": "faq-tt-password",
+    "category": "tiktok",
+    "order": 3,
+    "question": "Ai-je besoin de mon mot de passe TikTok pour acheter des abonnés ?",
+    "answer": "Non. Vous n’avez pas besoin d’indiquer votre mot de passe TikTok lorsque vous commandez des abonnés TikTok chez NovaLikes. N’envoyez jamais d’identifiants lors du paiement ni via l’assistance."
+  },
+  {
+    "id": "faq-tt-public",
+    "category": "tiktok",
+    "order": 4,
+    "question": "Mon compte TikTok doit-il être public ?",
+    "answer": "Si le service TikTok choisi exige un accès public à votre profil ou à votre vidéo, gardez le contenu concerné accessible publiquement pendant le traitement de la commande."
+  },
+  {
+    "id": "faq-tt-likes-video",
+    "category": "tiktok",
+    "order": 5,
+    "question": "Puis-je acheter des likes TikTok pour une vidéo précise ?",
+    "answer": "Oui. Les likes TikTok sont un service au niveau de la vidéo : indiquez les informations de la vidéo TikTok publique demandées lors du paiement, et non seulement un nom d’utilisateur de profil."
+  },
+  {
+    "id": "faq-tt-views-video",
+    "category": "tiktok",
+    "order": 6,
+    "question": "Puis-je acheter des vues TikTok pour une vidéo précise ?",
+    "answer": "Oui. Les vues TikTok s’appliquent à une vidéo TikTok publique précise, lorsqu’elle est prise en charge. Indiquez l’URL exacte de la vidéo demandée lors du paiement."
+  },
+  {
+    "id": "faq-tt-delete-video",
+    "category": "tiktok",
+    "order": 7,
+    "question": "Que se passe-t-il si je supprime ma vidéo TikTok après avoir commandé ?",
+    "answer": "Supprimer ou restreindre la vidéo TikTok liée à une commande en cours peut empêcher le traitement ou l’achèvement du service. Gardez la vidéo fournie accessible publiquement tant que la commande a besoin d’y accéder."
+  },
+  {
+    "id": "faq-tt-difference",
+    "category": "tiktok",
+    "order": 8,
+    "question": "Quelle est la différence entre abonnés, likes et vues TikTok ?",
+    "answer": "Les abonnés TikTok s’appliquent au profil du créateur, tandis que les likes et les vues TikTok s’appliquent à des vidéos précises. Le bon service dépend de si vous voulez cibler le profil ou une vidéo individuelle."
+  },
+  {
+    "id": "faq-fb-buy-followers",
+    "category": "facebook",
+    "order": 1,
+    "question": "Peut-on acheter des abonnés pour une Page Facebook ?",
+    "answer": "NovaLikes propose un service d’abonnés Facebook pour les Pages Facebook publiques prises en charge. Le service s’applique à l’indicateur d’abonnés au niveau de la Page et nécessite les informations de Page Facebook publique demandées lors du paiement."
+  },
+  {
+    "id": "faq-fb-password",
+    "category": "facebook",
+    "order": 2,
+    "question": "Ai-je besoin de mon mot de passe Facebook pour acheter des abonnés ?",
+    "answer": "Non. Vous n’avez pas besoin d’indiquer votre mot de passe Facebook lorsque vous commandez des abonnés Facebook chez NovaLikes. N’envoyez jamais d’identifiants Facebook lors du paiement ni via l’assistance."
+  },
+  {
+    "id": "faq-fb-public-page",
+    "category": "facebook",
+    "order": 3,
+    "question": "Ma Page Facebook doit-elle être publique ?",
+    "answer": "Si le service choisi exige l’accès à votre Page Facebook, la Page doit rester accessible publiquement pendant le traitement de la commande."
+  },
+  {
+    "id": "faq-fb-followers-vs-page-likes",
+    "category": "facebook",
+    "order": 4,
+    "question": "Quelle est la différence entre abonnés Facebook et J’aime de Page ?",
+    "answer": "Les abonnés Facebook et les J’aime de Page Facebook sont tous deux des indicateurs au niveau de la Page, mais ce n’est pas le même indicateur. Les abonnés concernent le nombre d’abonnés de la Page, tandis que les J’aime de Page concernent le nombre de J’aime de la Page."
+  },
+  {
+    "id": "faq-fb-page-likes-vs-post-likes",
+    "category": "facebook",
+    "order": 5,
+    "question": "Quelle est la différence entre J’aime de Page Facebook et J’aime de publication ?",
+    "answer": "Les J’aime de Page Facebook s’appliquent à la Page Facebook elle-même, tandis que les J’aime de publication Facebook s’appliquent à une publication Facebook précise. Les J’aime de Page nécessitent donc des informations au niveau de la Page, tandis que les J’aime de publication nécessitent l’URL publique de la publication individuelle."
+  },
+  {
+    "id": "faq-fb-url-followers",
+    "category": "facebook",
+    "order": 6,
+    "question": "Quelle URL dois-je indiquer pour acheter des abonnés Facebook ?",
+    "answer": "Utilisez l’URL de Page Facebook publique demandée par le service Abonnés Facebook. N’indiquez pas l’URL d’une publication Facebook individuelle lorsque vous commandez des abonnés de Page."
+  },
+  {
+    "id": "faq-fb-url-page-likes",
+    "category": "facebook",
+    "order": 7,
+    "question": "Quelle URL dois-je indiquer pour acheter des J’aime de Page Facebook ?",
+    "answer": "Utilisez l’URL publique de la Page Facebook à laquelle le service J’aime de Page doit s’appliquer. Les J’aime de Page Facebook sont un service au niveau de la Page, et non au niveau d’une publication."
+  },
+  {
+    "id": "faq-fb-url-post-likes",
+    "category": "facebook",
+    "order": 8,
+    "question": "Quelle URL dois-je indiquer pour acheter des J’aime de publication Facebook ?",
+    "answer": "Utilisez l’URL publique de la publication Facebook précise à laquelle le service J’aime de publication doit s’appliquer. Une URL générale de Page Facebook n’est pas la bonne cible pour ce service."
+  },
+  {
+    "id": "faq-fb-page-url-for-post-likes",
+    "category": "facebook",
+    "order": 9,
+    "question": "Puis-je utiliser une URL de Page Facebook pour acheter des J’aime de publication ?",
+    "answer": "Non. Les J’aime de publication Facebook s’appliquent à une publication individuelle : vous devez indiquer l’URL publique de la publication Facebook précise demandée lors du paiement."
+  },
+  {
+    "id": "faq-fb-post-likes-specific",
+    "category": "facebook",
+    "order": 10,
+    "question": "Les J’aime de publication Facebook s’appliquent-ils à une publication précise ?",
+    "answer": "Oui. Les J’aime de publication Facebook sont un service au niveau de la publication et s’appliquent à la publication Facebook publique précise fournie avec la commande."
+  },
+  {
+    "id": "faq-pr-payment-methods",
+    "category": "payments_refunds",
+    "order": 1,
+    "question": "Quels moyens de paiement NovaLikes accepte-t-il ?",
+    "answer": "Les options de paiement disponibles s’affichent au moment du paiement, selon les moyens actuellement activés pour NovaLikes."
+  },
+  {
+    "id": "faq-pr-currency",
+    "category": "payments_refunds",
+    "order": 2,
+    "question": "Dans quelle devise les prix NovaLikes sont-ils affichés ?",
+    "answer": "Les prix des forfaits NovaLikes sont affichés dans la devise par défaut configurée pour la boutique du site."
+  },
+  {
+    "id": "faq-pr-payment-declined",
+    "category": "payments_refunds",
+    "order": 3,
+    "question": "Pourquoi mon paiement a-t-il été refusé ?",
+    "answer": "Un paiement peut être refusé pour plusieurs raisons, notamment les informations saisies lors du paiement ou une décision du prestataire de paiement. Vérifiez les informations indiquées et contactez le prestataire concerné si nécessaire ; si le paiement semble réussi mais qu’aucune commande n’a été créée, contactez l’assistance NovaLikes."
+  },
+  {
+    "id": "faq-pr-refund",
+    "category": "payments_refunds",
+    "order": 4,
+    "question": "Puis-je obtenir un remboursement ?",
+    "answer": "NovaLikes propose une garantie de remboursement de 30 jours sur les commandes éligibles. Les demandes de remboursement doivent être faites dans les 30 jours suivant la date d’achat d’origine et sont examinées selon la politique de remboursement et les circonstances de la commande."
+  },
+  {
+    "id": "faq-pr-refills",
+    "category": "payments_refunds",
+    "order": 5,
+    "question": "NovaLikes propose-t-il des refills ?",
+    "answer": "La disponibilité des refills dépend du service et du forfait achetés. Consultez les conditions indiquées pour le service ou le forfait choisi pour toute condition de refill applicable."
+  },
+  {
+    "id": "faq-pr-drops",
+    "category": "payments_refunds",
+    "order": 6,
+    "question": "Que se passe-t-il si des abonnés ou des likes diminuent après la livraison ?",
+    "answer": "Les nombres d’abonnés et de likes sur les plateformes sociales peuvent évoluer dans le temps. Si votre forfait inclut une politique de refill applicable, suivez les conditions indiquées pour ce service, ou contactez l’assistance NovaLikes pour de l’aide sur la commande."
+  }
+]

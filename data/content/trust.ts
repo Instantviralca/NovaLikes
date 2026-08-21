@@ -26,7 +26,7 @@ const trustBadges: TrustBadgeContent[] = [
   },
   {
     id: 'support-24-7',
-    label: '24/7 Support',
+    label: 'Customer Support',
     enabled: trustBadgeFlags['support-24-7'],
   },
   {
@@ -44,7 +44,7 @@ const trustBadges: TrustBadgeContent[] = [
     id: 'money-back-guarantee',
     label: '30-Day Money-Back Guarantee',
     enabled: trustBadgeFlags['money-back-guarantee'],
-    note: 'Eligible purchases only. Subject to the Refund Policy and package conditions.',
+    note: 'Eligible purchases only. 30-Day Money-Back Guarantee subject to the Refund Policy.',
   },
 ];
 
@@ -63,7 +63,7 @@ export const trustCenterContent: TrustCenterContent = {
   whyChoose: {
     title: 'Why Choose NovaLikes',
     description:
-      'NovaLikes focuses on transparent ordering, real package options, and practical support across Instagram, TikTok, Facebook, and YouTube services.',
+      'NovaLikes focuses on transparent ordering, real package options, and practical support across Instagram, TikTok, and Facebook services.',
     items: [
       {
         id: 'trust-why-transparency',
@@ -101,7 +101,7 @@ export const trustCenterContent: TrustCenterContent = {
     id: 'trust-no-password',
     title: 'No Password Required',
     description:
-      'NovaLikes does not ask for Instagram, TikTok, Facebook, YouTube, or Google account passwords. Provide the public username or URL required by the selected service and keep that destination accessible during processing.',
+      'NovaLikes does not ask for Instagram, TikTok, or Facebook account passwords. Provide the public username or URL required by the selected service and keep that destination accessible during processing.',
   },
   refundAndRefill: {
     id: 'trust-refund-refill',

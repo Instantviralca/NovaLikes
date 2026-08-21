@@ -15,15 +15,28 @@ import type { AppPersistence } from '@/lib/persistence/types';
 let singleton: AppPersistence | null = null;
 let forcedMemory: AppPersistence | null = null;
 
+function assertProductionDurableStorage(): void {
+  if (!isProductionRuntime()) return;
+  if (process.env.IV_PERSISTENCE === 'memory') {
+    throw new Error('IV_PERSISTENCE=memory is not allowed in production.');
+  }
+  if (!isDatabaseConfigured()) {
+    throw new Error('DATABASE_URL is required in production. File store is disabled.');
+  }
+}
+
 export function getPersistence(): AppPersistence {
   if (forcedMemory) return forcedMemory;
   if (singleton) return singleton;
 
-  if (
-    process.env.IV_PERSISTENCE === 'memory' ||
-    process.env.NODE_ENV === 'test' ||
-    process.env.NEXT_PHASE === 'phase-production-build'
-  ) {
+  if (process.env.NODE_ENV === 'test' || process.env.NEXT_PHASE === 'phase-production-build') {
+    singleton = createMemoryPersistence();
+    return singleton;
+  }
+
+  assertProductionDurableStorage();
+
+  if (process.env.IV_PERSISTENCE === 'memory') {
     singleton = createMemoryPersistence();
     return singleton;
   }
@@ -36,10 +49,6 @@ export function getPersistence(): AppPersistence {
   if (allowFileStore()) {
     singleton = createFilePersistence();
     return singleton;
-  }
-
-  if (isProductionRuntime()) {
-    throw new Error('DATABASE_URL is required in production. File store is disabled.');
   }
 
   // Local default without DATABASE_URL: memory (no silent .data writes).

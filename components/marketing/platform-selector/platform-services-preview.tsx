@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Check } from 'lucide-react';
 
+import { prefetchForHref } from '@/lib/linking/prefetch';
 import { cn } from '@/lib/utils';
 import type { PlatformServicesPreviewProps } from '@/components/marketing/platform-selector/types';
 
@@ -19,6 +20,7 @@ export function PlatformServicesPreview({ items, className }: PlatformServicesPr
           />
           <Link
             href={item.href}
+            prefetch={prefetchForHref(item.href)}
             className="leading-none underline-offset-4 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             {item.label}

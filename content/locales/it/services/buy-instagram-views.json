@@ -1,0 +1,565 @@
+{
+  "content": {
+    "slug": "buy-instagram-views",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Comprare views Instagram | NovaLikes",
+      "description": "Comprare views Instagram in tutto il mondo con opzioni di pacchetto chiare per Reel e video, stime di consegna, checkout sicuro, tracciamento ordine e nessuna password richiesta."
+    },
+    "hero": {
+      "eyebrow": "COMPRARE VIEWS INSTAGRAM",
+      "title": "Comprare views Instagram",
+      "description": "Comprare views Instagram per un Reel o un video pubblico significa scegliere la quantità di pacchetto adatta al contenuto che vuoi usare. NovaLikes offre diverse quantità di views con prezzi chiari, così puoi confrontare le opzioni prima di ordinare. Seleziona il pacchetto, indica l’URL pubblico del contenuto Instagram e completa l’ordine online. Nessuna password Instagram è richiesta e, dopo il checkout, puoi tracciare l’ordine.",
+      "purpose": "Convert for Instagram views packages worldwide",
+      "primaryKeyword": "buy Instagram views",
+      "supportingKeywords": [
+        "Instagram views",
+        "Buy Instagram video views",
+        "Buy Instagram Reel views",
+        "Instagram views",
+        "Instagram views packages",
+        "Instagram video promotion"
+      ],
+      "suggestedWordCount": 120,
+      "primaryCta": {
+        "label": "Scegli un pacchetto",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Come funziona",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-v-trust-public",
+          "label": "Solo URL del contenuto pubblico"
+        },
+        {
+          "id": "ig-v-trust-password",
+          "label": "Nessuna password richiesta"
+        },
+        {
+          "id": "ig-v-trust-checkout",
+          "label": "Checkout sicuro"
+        },
+        {
+          "id": "ig-v-trust-track",
+          "label": "Tracciamento ordine"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-views/instagram-views-hero.webp",
+        "alt": "Illustrazione della dashboard del servizio di crescita views Instagram",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Pacchetti e prezzi views Instagram",
+      "description": "Scegli il numero di views Instagram che vuoi e confronta i prezzi dei pacchetti prima di ordinare. Seleziona una quantità qui sotto per rivedere i dettagli e continua con l’opzione adatta al Reel o al video che vuoi usare.",
+      "purpose": "Present real NovaLikes.com views packages",
+      "primaryKeyword": "Instagram views packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Ordina ora",
+      "emptyMessage": "I pacchetti sono temporaneamente non disponibili."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-views",
+      "title": "Supporta i video e i Reel che vuoi far vedere a più persone",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "buy Instagram views",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-views",
+      "title": "Un modo più chiaro per comprare views Instagram",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "Instagram video promotion",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "features": {
+      "id": "buy-instagram-views-features",
+      "title": "Caratteristiche",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Come funziona l’ordine",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "buy Instagram views",
+      "suggestedWordCount": 40,
+      "steps": []
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "Cosa ci serve per elaborare l’ordine",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "Instagram views delivery",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "reviews": {
+      "id": "ig-views-reviews",
+      "title": "Recensioni dei clienti",
+      "description": "Scopri cosa dicono i clienti su scelta del pacchetto, checkout, aggiornamenti di consegna e supporto.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-views-faq",
+      "title": "Domande frequenti su comprare views Instagram",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Instagram views",
+      "faqIds": [
+        "faq-ig-views-need",
+        "faq-ig-views-package",
+        "faq-ig-views-password",
+        "faq-ig-views-how-long",
+        "faq-ig-views-track",
+        "faq-ig-views-wrong-url",
+        "faq-ig-views-other-metrics",
+        "faq-ig-views-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-views",
+      "title": "Scopri altri servizi",
+      "description": "Aggiungi crescita dell’audience, reazioni o commenti quando la campagna ha bisogno di più supporto.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-likes",
+        "buy-instagram-comments"
+      ],
+      "cta": {
+        "label": "Scopri altri servizi",
+        "href": "/buy-instagram-followers"
+      }
+    },
+    "finalCta": {
+      "id": "ig-views-final-cta",
+      "title": "Scegli il tuo pacchetto views Instagram",
+      "description": "Confronta quantità e prezzi delle views disponibili, scegli il pacchetto adatto al Reel o al video che vuoi usare e completa l’ordine con l’URL Instagram pubblico corretto.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Vedi i pacchetti views Instagram",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Traccia un ordine",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-instagram-views-why-choose",
+        "title": "Perché scegliere NovaLikes per le views Instagram?",
+        "description": "NovaLikes rende facile confrontare i pacchetti views Instagram prima di ordinare. Scegli il numero di views che vuoi per un Reel o un video specifico, controlla il prezzo, indica l’URL pubblico corretto del contenuto e traccia l’ordine dopo il checkout.",
+        "items": [
+          {
+            "id": "buy-instagram-views-0",
+            "title": "Quantità di views diverse",
+            "description": "Confronta pacchetti views più piccoli e più grandi per trovare una quantità adatta al Reel o al video Instagram che vuoi usare.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-views-1",
+            "title": "Prezzi chiari per pacchetto",
+            "description": "Vedi il prezzo di ogni pacchetto views Instagram prima di aggiungere la selezione al carrello.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-views-2",
+            "title": "Per Reel e video specifici",
+            "description": "Scegli il Reel o il video Instagram pubblico su cui vuoi aggiungere le views, invece di cambiare una metrica a livello di profilo come il numero di follower.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-views-3",
+            "title": "Tracciamento ordine",
+            "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di views Instagram.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-instagram-views-can-you-buy",
+        "title": "Si possono comprare views Instagram?",
+        "description": "Sì. Le views Instagram si possono acquistare per Reel e video pubblici idonei. Con NovaLikes scegli un pacchetto views, indichi l’URL pubblico del video Instagram che vuoi usare e completi l’ordine sul sito.",
+        "cards": [
+          {
+            "id": "buy-instagram-views-4",
+            "title": "Cosa cambia un ordine di views Instagram",
+            "description": "Un ordine di views Instagram aumenta il conteggio views sul Reel o video specifico indicato con l’ordine. Non cambia il numero di follower mostrato sul profilo nel suo insieme.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-views-5",
+            "title": "Cosa ti serve per effettuare un ordine",
+            "description": "Ti servono l’URL pubblico corretto del Reel o del video Instagram e il pacchetto views che vuoi acquistare. La password Instagram non è richiesta.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-views-6",
+            "title": "Cosa non includono le views Instagram",
+            "description": "Le views sono separate da follower, like e commenti. Ordinare views Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Prima del checkout, assicurati di aver selezionato Views Instagram, di aver scelto la quantità corretta e di aver indicato l’URL del Reel o del video su cui vuoi aggiungere le views."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-instagram-views-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-instagram-views-what-happens",
+        "title": "Cosa succede dopo aver comprato views Instagram?",
+        "description": "Dopo aver effettuato un ordine di views Instagram, il pacchetto e l’URL del contenuto che hai inviato vengono usati per elaborare l’ordine sul Reel o video selezionato. Tieni il contenuto accessibile pubblicamente, dove richiesto, mentre l’ordine viene gestito.",
+        "steps": [
+          {
+            "id": "buy-instagram-views-th-1",
+            "title": "I dati dell’ordine vengono controllati",
+            "description": "Il pacchetto views selezionato e l’URL Instagram inviato vengono associati all’ordine, così la richiesta può essere elaborata per il contenuto video previsto."
+          },
+          {
+            "id": "buy-instagram-views-th-2",
+            "title": "Le views vanno al contenuto indicato",
+            "description": "L’ordine si applica al Reel o al video Instagram collegato all’URL che hai fornito. Controlla il link con attenzione prima di completare il checkout."
+          },
+          {
+            "id": "buy-instagram-views-th-3",
+            "title": "I tempi di elaborazione possono variare",
+            "description": "Il tempo necessario per elaborare un ordine può variare in base al numero di views selezionato e alle condizioni dell’ordine. Non va atteso un unico tempo di consegna fisso per ogni pacchetto."
+          },
+          {
+            "id": "buy-instagram-views-th-4",
+            "title": "Controlla lo stato dell’ordine",
+            "description": "Usa il tracciamento ordine NovaLikes per gli aggiornamenti di stato disponibili. Se ti serve aiuto, contatta il supporto con le informazioni dell’ordine."
+          }
+        ],
+        "closingNote": "Evita di cancellare il Reel o il video indicato, di renderlo non disponibile o di cambiare qualcosa che impedisca l’accesso al contenuto mentre l’ordine viene elaborato. Se qualcosa cambia dopo l’ordine, contatta il supporto se ti serve assistenza."
+      },
+      "serviceCompare": {
+        "id": "buy-instagram-views-service-compare",
+        "title": "Views vs follower vs like Instagram",
+        "description": "Views, follower e like misurano aspetti diversi di un account Instagram. Scegli il servizio in base al fatto che tu voglia cambiare il conteggio views dei video, il numero di follower del profilo o il conteggio like di un post o Reel specifico.",
+        "current": {
+          "title": "Views Instagram",
+          "description": "Le views sono una metrica dei contenuti video. Scegli Views Instagram quando vuoi aumentare il conteggio views mostrato su un Reel o un video pubblico idoneo.",
+          "bestFor": "Reel e video in cui la metrica che vuoi cambiare è il conteggio views visibile.",
+          "ctaLabel": "Views Instagram"
+        },
+        "likes": {
+          "title": "Follower Instagram",
+          "description": "I follower sono una metrica a livello di profilo. Scegli Follower Instagram quando vuoi aumentare il numero di follower mostrato sul tuo account.",
+          "bestFor": "Profili in cui la metrica che vuoi cambiare è il numero di follower.",
+          "href": "/buy-instagram-followers",
+          "ctaLabel": "Vedi follower Instagram"
+        },
+        "views": {
+          "title": "Like Instagram",
+          "description": "I like si applicano ai singoli contenuti. Scegli Like Instagram quando vuoi aumentare il conteggio like mostrato su un post o un Reel pubblico specifico.",
+          "bestFor": "Post e Reel in cui la metrica che vuoi cambiare è il conteggio like visibile.",
+          "href": "/buy-instagram-likes",
+          "ctaLabel": "Vedi like Instagram"
+        },
+        "combinedNote": "Se vuoi commenti su un post o un Reel specifico, i Commenti Instagram sono disponibili come servizio separato.",
+        "commentsHref": "/buy-instagram-comments"
+      },
+      "beforeBuying": {
+        "id": "buy-instagram-views-before-buying",
+        "title": "Cosa controllare prima di comprare views Instagram",
+        "description": "Prima di comprare views Instagram, controlla pacchetto e dettagli del video prima di completare l’ordine. Assicurati che quantità di views, prezzo, URL Instagram e tipo di servizio corrispondano a ciò che vuoi per il Reel o il video selezionato.",
+        "framingNote": "Controlla ancora una volta il video indicato, la quantità di views e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare views garantirebbe più portata, engagement, follower, vendite o crescita organica.",
+        "items": [
+          {
+            "id": "buy-instagram-views-7",
+            "title": "Controlla la quantità di views",
+            "description": "Rivedi il numero di views Instagram incluso nel pacchetto, così sai esattamente quante ne stai ordinando per il video selezionato.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-views-8",
+            "title": "Conferma il prezzo del pacchetto",
+            "description": "Controlla il prezzo mostrato per il pacchetto views selezionato prima di aggiungerlo al carrello. Se cambi la quantità, rivedi il prezzo aggiornato prima del checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-views-9",
+            "title": "Usa l’URL corretto del Reel o del video",
+            "description": "Assicurati che l’URL Instagram pubblico punti esattamente al Reel o al video su cui vuoi aggiungere le views.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-views-10",
+            "title": "Scegli il servizio Instagram giusto",
+            "description": "Views, follower, like e commenti sono servizi distinti. Verifica che Views Instagram sia il servizio che ti serve prima di effettuare l’ordine.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-instagram-views-11",
+            "title": "Rivedi supporto e policy",
+            "description": "Controlla le policy di acquisto pertinenti e le opzioni di supporto disponibili, così sai dove guardare se hai una domanda sull’ordine.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-instagram-views-worldwide",
+        "title": "Scegliere un Reel o un video per le views Instagram",
+        "description": "Views Instagram è un servizio per i contenuti video. Prima di ordinare, assicurati che l’URL inviato punti esattamente al Reel o al video idoneo il cui conteggio views visibile vuoi cambiare.",
+        "eyebrow": "Pronto per le views Instagram",
+        "closingNote": "Views Instagram si applica a Reel e video idonei. Invia un URL video pubblico, tieni il video accessibile e rivedi il pacchetto views selezionato prima del checkout.",
+        "cards": [
+          {
+            "id": "buy-instagram-views-12",
+            "title": "Usa un URL video pubblico",
+            "description": "Indica l’URL pubblico del Reel o del video richiesto in checkout, non un link generico al profilo Instagram.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-views-13",
+            "title": "Tieni il video accessibile",
+            "description": "Non cancellare né limitare l’accesso al video indicato mentre un ordine attivo dipende dal fatto che il contenuto sia disponibile pubblicamente.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-views-14",
+            "title": "Scegli le views per i contenuti video",
+            "description": "Views Instagram si applica alle views dei video. Se invece vuoi follower, like o commenti, scegli il servizio Instagram corrispondente.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-views-15",
+            "title": "Controlla quantità e prezzo",
+            "description": "Rivedi pacchetto views, quantità e prezzo selezionati prima del checkout, per assicurarti che l’ordine corrisponda al video che vuoi usare.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-instagram-views-popular-packages",
+        "title": "Pacchetti views Instagram più richiesti",
+        "description": "Non sai quale pacchetto scegliere? Confronta alcune delle quantità di views Instagram disponibili su NovaLikes qui sotto, oppure torna alla sezione prezzi completa per vedere tutte le opzioni.",
+        "rows": [
+          {
+            "id": "buy-instagram-views-pkg-100",
+            "quantity": "100 views",
+            "recommendedFor": "Un’opzione più piccola per un Reel o un video in cui vuoi un aumento contenuto del conteggio views visibile."
+          },
+          {
+            "id": "buy-instagram-views-pkg-500",
+            "quantity": "500 views",
+            "recommendedFor": "Un’opzione intermedia per i video Instagram in cui vuoi un cambiamento più visibile nel numero di views."
+          },
+          {
+            "id": "buy-instagram-views-pkg-1k",
+            "quantity": "1.000 views",
+            "recommendedFor": "Un pacchetto più grande per un Reel o un video selezionato in cui vuoi aggiungere mille views in un solo ordine."
+          },
+          {
+            "id": "buy-instagram-views-pkg-5k",
+            "quantity": "5.000 views",
+            "recommendedFor": "Un’opzione a volume più alto per i video Instagram in cui vuoi un aumento più ampio del conteggio views visibile."
+          },
+          {
+            "id": "buy-instagram-views-pkg-10k",
+            "quantity": "10.000+ views",
+            "recommendedFor": "Un’opzione per Reel o video in cui stai scegliendo una delle quantità di views più grandi disponibili su NovaLikes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-instagram-views-best-practices",
+        "title": "Buone pratiche dopo aver comprato views Instagram",
+        "description": "Comprare views cambia il conteggio views visibile sul Reel o video selezionato, ma il resto dei contenuti dipende ancora da ciò che pubblichi e da come gestisci l’account. Continua a creare video e usa i dati del tuo account per capire come performano Reel e video.",
+        "closingNote": "Le views sono solo una metrica per i video Instagram. Il Reel o il video in sé, le decisioni di pubblicazione, la risposta del pubblico e le altre attività dell’account richiedono comunque attenzione continua.",
+        "items": [
+          {
+            "id": "buy-instagram-views-16",
+            "title": "Continua a pubblicare contenuti video",
+            "description": "Continua a creare Reel e altri video pertinenti per il pubblico che vuoi raggiungere.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-views-17",
+            "title": "Rendi chiaro l’inizio",
+            "description": "Dai subito un’idea chiara di cosa tratta il Reel o il video, invece di affidarti solo al conteggio views.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-instagram-views-18",
+            "title": "Usa didascalie pertinenti",
+            "description": "Scrivi didascalie che aggiungano contesto utile al video, spieghino l’argomento o diano informazioni che stanno bene con il contenuto.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-views-19",
+            "title": "Consulta Insights Instagram",
+            "description": "Se Insights è disponibile sul tuo account, rivedi metriche come views, portata, interazioni e altri dati video per capire come performano i tuoi contenuti.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-views-20",
+            "title": "Prova idee video diverse",
+            "description": "Prova argomenti, durate, formati e stili di presentazione diversi per capire cosa ha senso per il tuo account e il tuo pubblico.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-views-21",
+            "title": "Rispondi alle interazioni genuine",
+            "description": "Rispondi a commenti e messaggi genuini quando è il caso. Un conteggio views più alto non sostituisce le interazioni che costruisci con l’attività del tuo account.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-instagram-views-common-mistakes",
+        "title": "Errori comuni quando si comprano views Instagram",
+        "description": "Alcuni errori semplici possono creare problemi con un ordine di views Instagram. Controlla URL del video, pacchetto e aspettative prima del checkout, così sai esattamente cosa stai ordinando.",
+        "closingNote": "Prima di effettuare un ordine, controlla ancora una volta URL Instagram, quantità di views e prezzo. Se qualcosa cambia dopo il checkout, usa le opzioni di tracciamento o supporto disponibili per l’ordine.",
+        "items": [
+          {
+            "id": "buy-instagram-views-22",
+            "title": "Inviare il Reel o il video sbagliato",
+            "description": "Controlla con attenzione l’URL Instagram prima di ordinare. Il link deve puntare esattamente al Reel o al video pubblico su cui vuoi aggiungere le views.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-views-23",
+            "title": "Scegliere il servizio Instagram sbagliato",
+            "description": "Views, follower, like e commenti sono servizi distinti. Scegli Views Instagram solo quando la metrica che vuoi cambiare è il conteggio views dei video.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-views-24",
+            "title": "Selezionare la quantità di views sbagliata",
+            "description": "Rivedi il numero di views incluso nel pacchetto prima del checkout, così non ordini una quantità diversa da quella che intendevi.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-views-25",
+            "title": "Rimuovere il video durante un ordine",
+            "description": "Evita di cancellare il Reel o il video indicato o di renderlo non disponibile mentre l’ordine viene elaborato.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-views-26",
+            "title": "Aspettarsi che le views garantiscano altri risultati",
+            "description": "Un conteggio views più alto non significa automaticamente più follower, like, commenti, portata, vendite o crescita organica.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-views-27",
+            "title": "Trattare le views come sostituto dei contenuti video",
+            "description": "Comprare views cambia una metrica visibile. Reel, video, didascalie, decisioni di pubblicazione e interazione con il pubblico dipendono ancora da come gestisci l’account.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-followers": {
+            "title": "Follower Instagram",
+            "description": "Scegli Follower Instagram quando vuoi aumentare il numero di follower mostrato sul tuo profilo pubblico.",
+            "ctaLabel": "Vedi follower Instagram"
+          },
+          "buy-instagram-likes": {
+            "title": "Like Instagram",
+            "description": "Scegli Like Instagram quando vuoi aumentare il conteggio like mostrato su un post o un Reel pubblico specifico.",
+            "ctaLabel": "Vedi like Instagram"
+          },
+          "buy-instagram-comments": {
+            "title": "Commenti Instagram",
+            "description": "Scegli Commenti Instagram quando vuoi aggiungere commenti a un post o a un Reel pubblico idoneo.",
+            "ctaLabel": "Vedi commenti Instagram"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-instagram-views-why-buy",
+      "title": "Perché si comprano views Instagram?",
+      "description": "Si comprano views Instagram per tipi di video e motivi diversi. Alcuni usano i pacchetti views per un Reel o un video nuovo, altri per contenuti di prodotto, annunci, campagne o altri post su cui vogliono più views visibili. Il servizio cambia il conteggio views visibile sul contenuto selezionato, ma non garantisce like, commenti, follower, portata, vendite o crescita organica.",
+      "items": [
+        {
+          "id": "buy-instagram-views-wb-1",
+          "title": "Aggiungi views a un Reel o a un video nuovo",
+          "description": "Un pacchetto views si può usare su un video pubblicato di recente, quando vuoi aumentarne il conteggio views visibile."
+        },
+        {
+          "id": "buy-instagram-views-wb-2",
+          "title": "Supporta contenuti di prodotto o di campagna",
+          "description": "Creator e aziende possono usare le views Instagram su Reel o video legati a un prodotto, una promozione, un annuncio o una campagna."
+        },
+        {
+          "id": "buy-instagram-views-wb-3",
+          "title": "Aumenta il conteggio views visibile",
+          "description": "Le views Instagram si applicano al Reel o al video selezionato, invece di cambiare il numero di follower mostrato sul profilo."
+        },
+        {
+          "id": "buy-instagram-views-wb-4",
+          "title": "Scegli una quantità per il video",
+          "description": "Quantità diverse ti permettono di scegliere il numero di views in base al singolo Reel o video che vuoi usare."
+        },
+        {
+          "id": "buy-instagram-views-wb-5",
+          "title": "Usa le views insieme ai tuoi contenuti",
+          "description": "Comprare views cambia una metrica visibile sul contenuto selezionato. Il video in sé, la didascalia, le decisioni di pubblicazione, le risposte e le altre attività dell’account dipendono ancora da come gestisci la presenza Instagram."
+        }
+      ],
+      "bottomNote": "Se la metrica che vuoi cambiare è il numero di follower del profilo, i like o i commenti, e non le views video, scegli invece il servizio Instagram corrispondente."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Come comprare views Instagram",
+      "description": "Comprare views Instagram su NovaLikes richiede quattro passaggi. Scegli il numero di views che vuoi, indica l’URL pubblico del Reel o del video Instagram, completa il checkout e usa i dati dell’ordine per controllarne lo stato.",
+      "steps": [
+        {
+          "id": "buy-instagram-views-step-1",
+          "title": "Scegli il pacchetto views",
+          "description": "Confronta quantità e prezzi delle views disponibili, poi seleziona il pacchetto che vuoi per i tuoi video Instagram."
+        },
+        {
+          "id": "buy-instagram-views-step-2",
+          "title": "Inserisci l’URL del Reel o del video",
+          "description": "Indica l’URL pubblico corretto del Reel o del video Instagram su cui vuoi aggiungere le views. La password Instagram non è richiesta."
+        },
+        {
+          "id": "buy-instagram-views-step-3",
+          "title": "Completa l’ordine",
+          "description": "Rivedi quantità di views e prezzo selezionati, poi prosegui con il checkout per effettuare l’ordine."
+        },
+        {
+          "id": "buy-instagram-views-step-4",
+          "title": "Traccia l’ordine",
+          "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di views Instagram."
+        }
+      ]
+    },
+    "relatedHeading": "Scopri altri servizi Instagram",
+    "relatedIntro": "Le views sono solo una metrica Instagram. Se vuoi lavorare sul numero di follower del profilo, sui like di contenuti specifici o sui commenti di un post o Reel, confronta gli altri servizi Instagram qui sotto."
+  }
+}

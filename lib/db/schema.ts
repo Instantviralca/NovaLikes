@@ -253,3 +253,139 @@ export const emailCampaigns = pgTable('email_campaigns', {
   createdBy: text('created_by').notNull().default('admin'),
 });
 
+/** CMS dashboard users — authors and optional database admins. */
+export const cmsUsers = pgTable(
+  'cms_users',
+  {
+    id: text('id').primaryKey(),
+    name: text('name').notNull(),
+    email: text('email').notNull(),
+    passwordHash: text('password_hash').notNull(),
+    profileImage: text('profile_image'),
+    bio: text('bio'),
+    role: text('role').notNull().default('author'),
+    status: text('status').notNull().default('active'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
+    lastLoginAt: timestamp('last_login_at', { withTimezone: true }),
+  },
+  (t) => ({
+    emailUidx: uniqueIndex('cms_users_email_uidx').on(t.email),
+    roleIdx: index('cms_users_role_idx').on(t.role),
+    statusIdx: index('cms_users_status_idx').on(t.status),
+  }),
+);
+
+export const cmsAuthorSessions = pgTable('cms_author_sessions', {
+  id: text('id').primaryKey(),
+  userId: text('user_id')
+    .notNull()
+    .references(() => cmsUsers.id, { onDelete: 'cascade' }),
+  tokenHash: text('token_hash').notNull(),
+  expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  revokedAt: timestamp('revoked_at', { withTimezone: true }),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+});
+
+export const cmsLoginAttempts = pgTable('cms_login_attempts', {
+  id: text('id').primaryKey(),
+  ipHash: text('ip_hash').notNull(),
+  success: boolean('success').notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+});
+
+export const cmsArticles = pgTable(
+  'cms_articles',
+  {
+    id: text('id').primaryKey(),
+    slug: text('slug').notNull(),
+    title: text('title').notNull(),
+    excerpt: text('excerpt').notNull().default(''),
+    contentHtml: text('content_html').notNull().default(''),
+    contentJson: jsonb('content_json').$type<Record<string, unknown>>(),
+    blocks: jsonb('blocks').$type<unknown[]>().notNull().default([]),
+    featuredImageUrl: text('featured_image_url'),
+    featuredImageAlt: text('featured_image_alt'),
+    featuredImageWidth: integer('featured_image_width'),
+    featuredImageHeight: integer('featured_image_height'),
+    category: text('category').notNull().default('guides'),
+    tags: jsonb('tags').$type<string[]>().notNull().default([]),
+    seoTitle: text('seo_title'),
+    seoDescription: text('seo_description'),
+    canonicalPath: text('canonical_path'),
+    authorId: text('author_id'),
+    createdBy: text('created_by').notNull(),
+    updatedBy: text('updated_by').notNull(),
+    status: text('status').notNull().default('draft'),
+    intendedPublishOn: text('intended_publish_on'),
+    publishAt: timestamp('publish_at', { withTimezone: true }),
+    publishedAt: timestamp('published_at', { withTimezone: true }),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
+    deletedAt: timestamp('deleted_at', { withTimezone: true }),
+    faqs: jsonb('faqs').$type<unknown[]>().notNull().default([]),
+    keyTakeaways: jsonb('key_takeaways').$type<string[]>().notNull().default([]),
+    relatedServices: jsonb('related_services').$type<string[]>().notNull().default([]),
+    relatedArticles: jsonb('related_articles').$type<string[]>().notNull().default([]),
+  },
+  (t) => ({
+    slugUidx: uniqueIndex('cms_articles_slug_uidx').on(t.slug),
+    statusIdx: index('cms_articles_status_idx').on(t.status),
+    publishAtIdx: index('cms_articles_publish_at_idx').on(t.publishAt),
+    authorIdx: index('cms_articles_author_idx').on(t.authorId),
+  }),
+);
+
+export const cmsMedia = pgTable(
+  'cms_media',
+  {
+    id: text('id').primaryKey(),
+    url: text('url').notNull(),
+    storageKey: text('storage_key').notNull(),
+    filename: text('filename').notNull(),
+    mime: text('mime').notNull(),
+    size: integer('size').notNull(),
+    alt: text('alt').notNull().default(''),
+    width: integer('width'),
+    height: integer('height'),
+    uploadedBy: text('uploaded_by').notNull(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    createdIdx: index('cms_media_created_idx').on(t.createdAt),
+    keyUidx: uniqueIndex('cms_media_storage_key_uidx').on(t.storageKey),
+  }),
+);
+
+export const cmsArticleRedirects = pgTable(
+  'cms_article_redirects',
+  {
+    id: text('id').primaryKey(),
+    fromSlug: text('from_slug').notNull(),
+    toSlug: text('to_slug').notNull(),
+    articleId: text('article_id')
+      .notNull()
+      .references(() => cmsArticles.id, { onDelete: 'cascade' }),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    fromUidx: uniqueIndex('cms_article_redirects_from_uidx').on(t.fromSlug),
+  }),
+);
+
+export const cmsAuditEvents = pgTable(
+  'cms_audit_events',
+  {
+    id: text('id').primaryKey(),
+    actorId: text('actor_id').notNull(),
+    action: text('action').notNull(),
+    articleId: text('article_id'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    meta: jsonb('meta').$type<Record<string, string | number | boolean | null>>(),
+  },
+  (t) => ({
+    actorIdx: index('cms_audit_events_actor_idx').on(t.actorId, t.createdAt),
+    articleIdx: index('cms_audit_events_article_idx').on(t.articleId),
+  }),
+);
+

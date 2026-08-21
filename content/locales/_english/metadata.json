@@ -1,0 +1,122 @@
+{
+  "homepage": {
+    "title": "Buy Followers, Likes & Views for Social Media | NovaLikes",
+    "description": "Buy followers, likes, views and comments for Instagram, TikTok and Facebook. Compare available packages, order online and track your NovaLikes order."
+  },
+  "faq": {
+    "title": "NovaLikes FAQ | Orders, Payments, Refunds & Support",
+    "description": "Find answers about NovaLikes orders, payments, refunds, tracking, account requirements and Instagram, TikTok and Facebook services."
+  },
+  "about": {
+    "title": "About NovaLikes | Instagram, TikTok & Facebook Services",
+    "description": "Learn how NovaLikes works, what social media services we offer, and how we support Instagram, TikTok and Facebook orders from start to finish."
+  },
+  "contact": {
+    "title": "Contact NovaLikes | Order & Service Support",
+    "description": "Contact NovaLikes for help with an order, payment, tracking or service question for Instagram, TikTok and Facebook."
+  },
+  "reviews": {
+    "title": "NovaLikes Reviews | Customer Feedback & Experiences",
+    "description": "Read customer feedback about NovaLikes Instagram, TikTok and Facebook services, ordering, support and overall service experience."
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy | NovaLikes",
+    "description": "Learn how NovaLikes collects, uses, stores and handles information when you use our website, paid services, free tools and support."
+  },
+  "refundPolicy": {
+    "title": "Refund Policy | 30-Day Money-Back Guarantee | NovaLikes",
+    "description": "Read the NovaLikes 30-Day Money-Back Guarantee, refund eligibility, exclusions, cancellations, refill terms and request process."
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions | NovaLikes",
+    "description": "Read the terms that govern NovaLikes services, orders, payments, free tools, customer responsibilities, refunds and website use."
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy | NovaLikes",
+    "description": "Learn how NovaLikes uses cookies and browser storage for cart functionality, admin sessions, preferences and other site features."
+  },
+  "disclaimer": {
+    "title": "Disclaimer | NovaLikes",
+    "description": "Read important limitations about NovaLikes services, third-party platforms, free tools, social media metrics and downloaded content."
+  },
+  "services": {
+    "buy-instagram-followers": {
+      "title": "Buy Instagram Followers – No Password Needed | NovaLikes",
+      "description": "Compare Instagram follower packages and prices. Order for a public profile without a password. Eligible orders have a 30-Day Money-Back Guarantee."
+    },
+    "buy-instagram-likes": {
+      "title": "Buy Instagram Likes for Posts & Reels | NovaLikes",
+      "description": "Compare Instagram like packages for public posts and Reels. Add the required content link, choose a package and complete your order online."
+    },
+    "buy-instagram-views": {
+      "title": "Buy Instagram Views for Reels & Videos | NovaLikes",
+      "description": "Compare Instagram view packages for eligible Reels and videos. Add the required public content link, choose a package and order online."
+    },
+    "buy-instagram-comments": {
+      "title": "Buy Instagram Comments for Posts & Reels | NovaLikes",
+      "description": "Compare Instagram comment packages for eligible posts and Reels. Add the public content link, choose a package and place your order online."
+    },
+    "buy-tiktok-followers": {
+      "title": "Buy TikTok Followers – No Password Needed | NovaLikes",
+      "description": "Compare TikTok follower packages and prices. Order for a public profile without a password. Eligible orders have a 30-Day Money-Back Guarantee."
+    },
+    "buy-tiktok-likes": {
+      "title": "Buy TikTok Likes for Videos | NovaLikes",
+      "description": "Compare TikTok like packages and prices for a public video. Add the required video link, choose a package and complete your order online."
+    },
+    "buy-tiktok-views": {
+      "title": "Buy TikTok Views for Videos | NovaLikes",
+      "description": "Compare TikTok view packages and prices for a public video. Add the required video link, choose a package and complete your order online."
+    },
+    "buy-facebook-followers": {
+      "title": "Buy Facebook Followers – Page Packages | NovaLikes",
+      "description": "Compare Facebook follower packages and prices for a public Page. Submit the correct Page URL, choose a package and complete your order online."
+    },
+    "buy-facebook-page-likes": {
+      "title": "Buy Facebook Page Likes – Packages & Prices | NovaLikes",
+      "description": "Compare Facebook Page Like packages and prices. Submit your public Page URL, choose a package and complete your order online."
+    },
+    "buy-facebook-post-likes": {
+      "title": "Buy Facebook Post Likes – Packages & Prices | NovaLikes",
+      "description": "Compare Facebook Post Like packages and prices. Submit the public post URL, choose a package and complete your order online."
+    }
+  },
+  "toolsHub": {
+    "title": "Free Social Media Tools | Instagram, TikTok & Facebook",
+    "description": "Use free NovaLikes tools for Instagram, TikTok and Facebook, including video downloaders, profile viewers and public profile checks."
+  },
+  "tools": {
+    "instagram-profile-picture-viewer": {
+      "title": "Instagram Profile Picture Viewer – Full Size | NovaLikes",
+      "description": "View and download the publicly available Instagram profile picture in full size. Enter a username or public profile URL. No Instagram login needed."
+    },
+    "instagram-follower-counter": {
+      "title": "Instagram Follower Count Checker – Free | NovaLikes",
+      "description": "Check the follower count Instagram makes publicly available for a profile. Enter a username or public profile URL. No Instagram login required."
+    },
+    "instagram-profile-viewer": {
+      "title": "Instagram Profile Viewer – Public Profiles | NovaLikes",
+      "description": "View publicly available Instagram profile details including photo, bio, followers, following and post count. No Instagram login required."
+    },
+    "instagram-video-downloader": {
+      "title": "Instagram Video Downloader – Public Videos | NovaLikes",
+      "description": "Paste a public Instagram post or Reel URL to check for downloadable video media when Instagram exposes it. No Instagram login required."
+    },
+    "tiktok-video-downloader": {
+      "title": "Free TikTok Video Downloader – MP4 | NovaLikes",
+      "description": "Paste a public TikTok video URL to find available MP4 download options. No TikTok login or app is required. Availability can vary by video."
+    },
+    "tiktok-profile-picture-downloader": {
+      "title": "TikTok Profile Picture Downloader – Full Size | NovaLikes",
+      "description": "View and download a publicly available TikTok profile picture in full size. Enter a username, @handle or public profile URL. No TikTok login needed."
+    },
+    "facebook-video-downloader": {
+      "title": "Facebook Video Downloader – Free HD & SD | NovaLikes",
+      "description": "Paste a public Facebook video URL to find available HD or SD download options. No Facebook login or app is required for supported public videos."
+    },
+    "facebook-reels-downloader": {
+      "title": "Facebook Reels Downloader – Free HD & SD | NovaLikes",
+      "description": "Paste a public Facebook Reel URL to find available HD or SD download options. No Facebook login or app is required for supported public Reels."
+    }
+  }
+}

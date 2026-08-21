@@ -3,10 +3,10 @@
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, encodeCartTransfer } from '@/lib/cart/cart-hash';
 import { writeCartCookie } from '@/lib/cart/cookie-store';
-import { getCheckoutUrl } from '@/lib/config/hosts';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
 import { cn } from '@/lib/utils';
 
@@ -24,12 +24,14 @@ type CheckoutButtonProps = {
 export function CheckoutButton({
   disabled,
   className,
-  label = 'Continue to Checkout',
+  label,
   onNavigate,
 }: CheckoutButtonProps) {
   const cart = useCart();
+  const { ui } = useI18nChrome();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const buttonLabel = label ?? ui.cart.continueToCheckout;
 
   const handleClick = () => {
     if (busy || disabled || cart.items.length === 0) return;
@@ -50,7 +52,7 @@ export function CheckoutButton({
     }
 
     const transfer = encodeCartTransfer(cartState);
-    const url = new URL(getCheckoutUrl('/'));
+    const url = new URL('/checkout', window.location.origin);
 
     if (transfer) {
       url.searchParams.set(CART_QUERY_PARAM, transfer);
@@ -79,7 +81,7 @@ export function CheckoutButton({
           error?: string;
         };
         if (!response.ok || !data.ok || !data.checkoutUrl) {
-          throw new Error(data.error ?? 'Unable to continue to checkout.');
+          throw new Error(data.error ?? ui.cart.unableToContinue);
         }
         emitLegacyAnalyticsEvent('checkout_click', { href: data.checkoutUrl });
         window.location.assign(data.checkoutUrl);
@@ -87,10 +89,10 @@ export function CheckoutButton({
       } catch (err) {
         setError(
           err instanceof Error && err.name === 'AbortError'
-            ? 'Checkout is taking too long. Please try again.'
+            ? ui.cart.checkoutTimeout
             : err instanceof Error
               ? err.message
-              : 'Unable to continue to checkout.',
+              : ui.cart.unableToContinue,
         );
         setBusy(false);
       }
@@ -106,7 +108,7 @@ export function CheckoutButton({
           aria-live="polite"
         >
           <p className="text-sm font-medium text-[var(--text-secondary)]">
-            Going to checkout…
+            {ui.cart.goingToCheckout}
           </p>
         </div>
       ) : null}
@@ -118,7 +120,7 @@ export function CheckoutButton({
         data-analytics="checkout-click"
         onClick={handleClick}
       >
-        {busy ? 'Continuing…' : label}
+        {busy ? ui.cart.continuing : buttonLabel}
       </Button>
       {error ? (
         <p className="text-xs text-destructive" role="alert">

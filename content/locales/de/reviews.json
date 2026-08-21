@@ -1,0 +1,24 @@
+{
+  "h1": "Kundenbewertungen",
+  "intro": "Kundenbewertungen aus dem veröffentlichten NovaLikes-Katalog. Die Bewertungen unten spiegeln diesen Katalog wider und können 4-Sterne- und 5-Sterne-Feedback enthalten.",
+  "catalogueHeading": "Katalog der Kundenbewertungen",
+  "emptyFilter": "Keine Bewertungen passen zu diesem Plattformfilter.",
+  "showingTemplate": "{visible} von {total} {word}",
+  "reviewSingular": "Bewertung",
+  "reviewPlural": "Bewertungen",
+  "loadMore": "Weitere Bewertungen laden",
+  "emptyCatalogue": "Kundenbewertungen erscheinen hier, sobald freigegebenes Feedback verfügbar ist.",
+  "filterAria": "Bewertungen nach Plattform filtern",
+  "filterAll": "Alle",
+  "basedOnTemplate": "Basierend auf {count} {word}",
+  "exploreTitle": "Bereit, NovaLikes zu entdecken?",
+  "exploreIntro": "Durchsuchen Sie unsere Instagram-, TikTok- und Facebook-Dienste und wählen Sie die Option, die zu Ihrem Bedarf passt.",
+  "exploreInstagram": "Instagram entdecken",
+  "exploreTikTok": "TikTok entdecken",
+  "exploreFacebook": "Facebook entdecken",
+  "readMore": "Mehr lesen",
+  "showLess": "Weniger anzeigen",
+  "chrome": {
+    "breadcrumb": "Bewertungen"
+  }
+}

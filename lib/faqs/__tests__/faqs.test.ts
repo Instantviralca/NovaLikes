@@ -17,9 +17,11 @@ import {
   sanitizeFaqForPublic,
   searchFaqs,
   selectHomepageFaqs,
+  selectMainFaqPageFaqs,
   selectServiceFaqs,
   enrichFaqAnswer,
   PAYMENT_METHODS_FAQ_ID,
+  isUnsupportedYoutubePurchaseFaq,
 } from '@/lib/faqs';
 import { buildFaqPageSchemaFromVisible } from '@/lib/faqs/schema';
 import type { FaqRecord } from '@/types/faq';
@@ -97,7 +99,7 @@ const fixtureCatalogue: FaqRecord[] = [
     id: 'refund-conditional',
     question: 'Is there a money-back guarantee?',
     answer:
-      'Eligible purchases are covered by a 30-day money-back guarantee, subject to the Refund Policy.',
+      'Eligible purchases are covered by a 30-Day Money-Back Guarantee, subject to the Refund Policy.',
     category: 'refunds',
     pageLocations: ['faq_page', 'homepage'],
     featured: true,
@@ -330,5 +332,33 @@ describe('Shared FAQ system', () => {
     expect(normalized[0]?.status).toBe('approved');
     expect(normalized[1]?.status).toBe('hidden');
     expect(normalized[1]?.pageLocations).toContain('faq_page');
+  });
+
+  it('keeps YouTube purchase FAQs out of public FAQ rendering and schema', () => {
+    const youtubeFaq = makeFaq({
+      id: 'faq-yt-subscribers-can-you-buy',
+      question: 'Can you buy YouTube subscribers?',
+      answer: 'Yes. You can purchase subscriber packages.',
+      category: 'youtube',
+      platform: 'youtube',
+      serviceSlugs: ['buy-youtube-subscribers'],
+      pageLocations: ['faq_page', 'service_page'],
+    });
+    const catalogue = [...fixtureCatalogue, youtubeFaq];
+
+    expect(isUnsupportedYoutubePurchaseFaq(youtubeFaq)).toBe(true);
+    expect(sanitizeFaqForPublic(youtubeFaq)).toBeNull();
+    expect(
+      selectMainFaqPageFaqs(catalogue).some((faq) => faq.id.startsWith('faq-yt-')),
+    ).toBe(false);
+    expect(
+      getApprovedFaqs(catalogue).some((faq) => /youtube/i.test(faq.question)),
+    ).toBe(false);
+
+    const visible = selectMainFaqPageFaqs(catalogue);
+    const schema = buildFaqPageSchemaFromVisible(visible);
+    const blob = JSON.stringify(schema);
+    expect(blob.toLowerCase()).not.toContain('youtube subscribers');
+    expect(blob.toLowerCase()).not.toContain('buy youtube');
   });
 });

@@ -79,7 +79,16 @@ export function validateSitemapUrl(url: string): SitemapUrlValidation {
     };
   }
 
-  if (path !== path.toLowerCase()) {
+  let decodedPath = path;
+  try {
+    decodedPath = decodeURI(path);
+  } catch {
+    decodedPath = path;
+  }
+
+  // ASCII letters in the visible path must be lowercase. Unicode slugs (Arabic)
+  // and percent-encoding hex are allowed.
+  if (/[A-Z]/.test(decodedPath)) {
     return {
       url: trimmed,
       valid: false,

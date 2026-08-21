@@ -1,6 +1,6 @@
 /**
  * Content-plan service scope — Document 16.01.
- * Only the 12 approved services may be associated with planned articles.
+ * Only approved services may be associated with planned articles.
  */
 
 import {
@@ -59,6 +59,6 @@ export const SERVICES_BY_PLATFORM = {
     'buy-facebook-page-likes',
     'buy-facebook-post-likes',
   ],
-  youtube: ['buy-youtube-subscribers', 'buy-youtube-views'],
-  general: [] as ApprovedServiceSlug[],
+  youtube: [] as const,
+  general: [] as const,
 } as const satisfies Record<string, readonly ApprovedServiceSlug[]>;

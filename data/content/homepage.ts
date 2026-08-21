@@ -82,15 +82,14 @@ export const homepageContent: HomepageContent = {
     id: 'platform-selector',
     title: 'Choose Your Platform',
     description:
-      'Start with Instagram follower packages, or explore growth services for TikTok, YouTube and Facebook when you are ready.',
+      'Start with Instagram follower packages, or explore growth services for TikTok and Facebook when you are ready.',
     purpose: 'Route users by platform',
     primaryKeyword: 'instagram growth services',
     suggestedWordCount: 50,
-    platformIds: ['instagram', 'tiktok', 'youtube', 'facebook'],
+    platformIds: ['instagram', 'tiktok', 'facebook'],
     internalLinks: [
       { label: 'Instagram', href: '/buy-instagram-followers' },
       { label: 'TikTok', href: '/buy-tiktok-followers' },
-      { label: 'YouTube', href: '/buy-youtube-subscribers' },
       { label: 'Facebook', href: '/buy-facebook-followers' },
     ],
     cards: [
@@ -114,14 +113,6 @@ export const homepageContent: HomepageContent = {
         ctaLabel: 'View TikTok Packages',
         href: '#featured-services-tiktok',
         previewServiceSlugs: ['buy-tiktok-followers', 'buy-tiktok-likes', 'buy-tiktok-views'],
-      },
-      {
-        platformId: 'youtube',
-        description:
-          'Support your YouTube channel with subscriber and view packages. Built for creators, businesses and brands focused on channel and video growth.',
-        ctaLabel: 'View YouTube Packages',
-        href: '#featured-services-youtube',
-        previewServiceSlugs: ['buy-youtube-subscribers', 'buy-youtube-views'],
       },
       {
         platformId: 'facebook',

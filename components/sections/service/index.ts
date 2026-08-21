@@ -20,7 +20,6 @@ export { Features } from '@/components/sections/service/features';
 export { Process } from '@/components/sections/service/process';
 export { ServiceReviews } from '@/components/sections/service/reviews';
 export { ServiceFaq } from '@/components/sections/service/faq';
-export { ServiceEducationalGuide } from '@/components/sections/service/educational-guide';
 export { RelatedServices } from '@/components/sections/service/related-services';
 export { ServiceRelatedArticles } from '@/components/sections/service/related-articles';
 export { ServiceCTA } from '@/components/sections/service/cta';

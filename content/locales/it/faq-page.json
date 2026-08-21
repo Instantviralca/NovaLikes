@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Domande frequenti su NovaLikes",
+    "description": "Trova risposte chiare su NovaLikes, i servizi Instagram, TikTok e Facebook, come ordinare, i requisiti dell’account, la consegna, i pagamenti e il supporto. Sfoglia per categoria o cerca una domanda qui sotto.",
+    "purpose": "Help customers find answers before contacting support",
+    "primaryKeyword": "NovaLikes FAQ"
+  },
+  "search": {
+    "label": "Cerca domande",
+    "placeholder": "Cerca domande...",
+    "clearLabel": "Cancella",
+    "emptyState": "Nessuna domanda corrispondente. Prova un’altra ricerca o contatta il supporto."
+  },
+  "categoriesTitle": "Categorie",
+  "refundPolicyCta": {
+    "label": "Leggi la politica di rimborso",
+    "href": "/refund-policy"
+  },
+  "finalCta": {
+    "id": "faq-contact-support-cta",
+    "title": "Hai ancora una domanda?",
+    "description": "Non trovi la risposta che cerchi? Contatta il supporto NovaLikes per aiuto su un servizio, un ordine o un pagamento. Se la domanda riguarda un ordine esistente, tieni a portata i dati dell’ordine così il team può individuarlo più facilmente.",
+    "purpose": "Offer contact and track-order exits",
+    "primaryCta": {
+      "label": "Contatta il supporto",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Traccia il tuo ordine",
+      "href": "/track-order"
+    }
+  },
+  "categories": [
+    { "id": "getting_started", "label": "Per iniziare", "anchor": "getting-started" },
+    { "id": "account_security", "label": "Account e sicurezza", "anchor": "account-safety" },
+    { "id": "orders_delivery", "label": "Ordini e consegna", "anchor": "orders-delivery" },
+    { "id": "instagram", "label": "Instagram", "anchor": "instagram" },
+    { "id": "tiktok", "label": "TikTok", "anchor": "tiktok" },
+    { "id": "facebook", "label": "Facebook", "anchor": "facebook" },
+    { "id": "payments_refunds", "label": "Pagamenti e rimborsi", "anchor": "payments-refunds" }
+  ]
+}

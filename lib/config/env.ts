@@ -57,6 +57,22 @@ export function getEmailFrom(): string | undefined {
   return firstPresent('EMAIL_FROM', 'RESEND_FROM_EMAIL');
 }
 
+export function getAdminNotifyEmailFromEnv(): string | undefined {
+  return firstPresent('ADMIN_EMAIL', 'EMAIL_ADMIN_TO');
+}
+
+export function getEmailReplyTo(): string | undefined {
+  return firstPresent('EMAIL_REPLY_TO');
+}
+
+export function isSmtpConfigured(): boolean {
+  return present('SMTP_HOST');
+}
+
+export function isResendConfigured(): boolean {
+  return present('RESEND_API_KEY') && Boolean(getEmailFrom());
+}
+
 export function getStripePublishableKey(): string | undefined {
   return firstPresent('NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY', 'STRIPE_PUBLISHABLE_KEY');
 }
@@ -70,7 +86,8 @@ export function isStripeConfigured(): boolean {
 }
 
 export function isEmailConfigured(): boolean {
-  return present('RESEND_API_KEY') && Boolean(getEmailFrom());
+  if (!getEmailFrom()) return false;
+  return isResendConfigured() || isSmtpConfigured();
 }
 
 export function isDatabaseConfigured(): boolean {
@@ -201,18 +218,26 @@ export function validateEnv(options: {
 
   if (!isEmailConfigured()) {
     issues.push({
-      key: 'RESEND_API_KEY',
+      key: 'EMAIL_FROM',
       level: 'warning',
       message:
-        'Email requires RESEND_API_KEY and EMAIL_FROM (or RESEND_FROM_EMAIL). Order emails will be skipped until set.',
+        'Transactional email is not configured. Set EMAIL_FROM plus SMTP_HOST (self-hosted Postfix) or RESEND_API_KEY. Order emails will be skipped until set.',
     });
   }
 
-  if (production && allowFileStore()) {
+  if (production && process.env.IV_ALLOW_FILE_STORE === '1') {
     issues.push({
       key: 'IV_ALLOW_FILE_STORE',
       level: 'error',
       message: 'File store is not allowed in production.',
+    });
+  }
+
+  if (production && process.env.IV_PERSISTENCE === 'memory') {
+    issues.push({
+      key: 'IV_PERSISTENCE',
+      level: 'error',
+      message: 'IV_PERSISTENCE=memory is not allowed in production.',
     });
   }
 
@@ -221,6 +246,33 @@ export function validateEnv(options: {
       key: 'IV_PAYMENTS_MODE',
       level: 'error',
       message: 'Mock payments are not allowed in production.',
+    });
+  }
+
+  if (production && !process.env.CMS_MEDIA_DIR?.trim()) {
+    issues.push({
+      key: 'CMS_MEDIA_DIR',
+      level: 'warning',
+      message:
+        'CMS_MEDIA_DIR is unset. Production media will default to <app>/.data/cms-media — set a persistent directory (for example /var/lib/novalikes/cms-media).',
+    });
+  }
+
+  if (production && !firstPresent('REMOTE_PAYMENT_WEBSITE_URL')) {
+    issues.push({
+      key: 'REMOTE_PAYMENT_WEBSITE_URL',
+      level: 'warning',
+      message:
+        'REMOTE_PAYMENT_WEBSITE_URL is unset. Checkout stays disabled until this env or Admin → Settings payment URL is configured.',
+    });
+  }
+
+  if (production && !present('TOOLS_MEDIA_SECRET') && getAdminSessionSecret()) {
+    issues.push({
+      key: 'TOOLS_MEDIA_SECRET',
+      level: 'warning',
+      message:
+        'TOOLS_MEDIA_SECRET is unset. Tool download HMAC will use IV_ADMIN_SESSION_SECRET. Set a dedicated secret if you rotate admin session independently.',
     });
   }
 

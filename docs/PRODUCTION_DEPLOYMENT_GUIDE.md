@@ -1,7 +1,7 @@
 # NovaLikes — Production Deployment Guide
 
 **Site:** https://novalikes.com  
-**Checkout host (optional):** https://checkout.novalikes.com  
+**Checkout:** https://novalikes.com/checkout (same origin; no NovaLikes checkout subdomain)  
 **Status:** Use this runbook for production. Never commit real secrets.
 
 Related files:
@@ -28,7 +28,6 @@ Production fails safely at runtime if critical variables are missing (`instrumen
 
 | Variable | Used for |
 |----------|----------|
-| `NEXT_PUBLIC_CHECKOUT_URL` | External checkout origin (`https://checkout.novalikes.com`) |
 | `REMOTE_PAYMENT_WEBSITE_URL` | Remote payment collector (Admin → Settings can override) |
 | `EMAIL_ADMIN_TO` | Admin inbox for paid orders + contact alerts |
 | `EMAIL_SUPPORT` | Support address shown in customer emails |
@@ -88,12 +87,12 @@ Live checkout currently prefers **remote payment**. If Stripe is enabled for you
 - Used for order-success links, email absolute URLs, and checkout return hosts when building site paths
 - `NEXT_PUBLIC_*` values are embedded in the client bundle (not secret)
 
-### `NEXT_PUBLIC_CHECKOUT_URL`
+### Checkout URLs
 
-- Value: `https://checkout.novalikes.com` (optional dedicated checkout host)
-- Soft cart on the main site hands off here
-- Cart cookie domain should match the shared parent (e.g. `.novalikes.com`) when using a subdomain
-- Cancel flows return to the checkout host; success stays on the main site (`/order-success`)
+- Cart, checkout, order-success and track-order are same-origin on `https://novalikes.com`
+- Do not configure a NovaLikes checkout subdomain
+- `NEXT_PUBLIC_CHECKOUT_URL` is ignored if present
+- A third-party payment processor may still host its own authorization page
 
 ### Admin secrets
 
@@ -119,17 +118,9 @@ Live checkout currently prefers **remote payment**. If Stripe is enabled for you
 2. Settings → Environment Variables → paste production values from `.env.production.example` (with real secrets filled in the dashboard only)
 3. Domains:
    - Add `novalikes.com` (+ redirect `www` → apex if desired)
-   - Optionally add `checkout.novalikes.com` (same project)
 4. Deploy production
 
-### Checkout subdomain checklist
-
-1. Vercel → Domains → add `checkout.novalikes.com`
-2. DNS CNAME to Vercel as instructed by the dashboard
-3. Env:
-   - `NEXT_PUBLIC_SITE_URL=https://novalikes.com`
-   - `NEXT_PUBLIC_CHECKOUT_URL=https://checkout.novalikes.com`
-4. Soft cart remains on the main site; `/checkout` on main redirects to the checkout host when configured
+Cart and checkout stay on `novalikes.com` (`/cart`, `/checkout`, `/order-success`, `/track-order`). Do not add a NovaLikes checkout subdomain.
 
 ---
 
@@ -188,7 +179,7 @@ Manual checks:
 | # | Item | Expected |
 |---|------|----------|
 | 1 | Site URL | `https://novalikes.com` |
-| 2 | Checkout URL | `https://checkout.novalikes.com` (if used) |
+| 2 | Checkout URL | `https://novalikes.com/checkout` |
 | 3 | Email domain | Verified for NovaLikes (e.g. `@novalikes.com`) |
 | 4 | Company name | `EMAIL_COMPANY_NAME=NovaLikes` |
 | 5 | Analytics | New NovaLikes properties only |

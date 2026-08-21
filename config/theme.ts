@@ -3,8 +3,6 @@
  * Prefer these (and Tailwind token classes) over hardcoded values.
  */
 
-import { cubicBezier } from 'framer-motion';
-
 export const theme = {
   colors: {
     background: 'var(--background)',
@@ -54,11 +52,7 @@ export const theme = {
     durationFast: 0.15,
     durationBase: 0.25,
     durationSlow: 0.4,
-    /**
-     * Must be an easing *function*. A raw `[x1,y1,x2,y2]` tuple is treated as an
-     * array of easings by motion-dom interpolate → TypeError: a[d] is not a function.
-     */
-    easeOut: cubicBezier(0.16, 1, 0.3, 1),
+    easeOut: 'cubic-bezier(0.16, 1, 0.3, 1)',
   },
 } as const;
 

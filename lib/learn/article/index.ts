@@ -22,3 +22,5 @@ export {
   canAccessArticlePreview,
   prepareArticleForRender,
 } from '@/lib/learn/article/template';
+export { splitArticleIntro } from '@/lib/learn/article/layout';
+export { getLearnArticleClosingCta } from '@/lib/learn/article/closing-cta';

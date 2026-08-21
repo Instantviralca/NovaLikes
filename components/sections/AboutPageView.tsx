@@ -1,268 +1,329 @@
+import Image from 'next/image';
 import {
-  AboutCtaButtons,
+  Award,
+  CheckCircle2,
+  Globe,
+  Headphones,
+  Heart,
+  Lock,
+  Rocket,
+  Shield,
+  ShieldCheck,
+  Users,
+} from 'lucide-react';
+
+import {
+  AboutFinalBannerCta,
   AboutPageViewTracker,
 } from '@/components/sections/about/about-cta';
-import { AboutCtaIllustration } from '@/components/sections/about/about-cta-illustration';
 import { AboutHeroIllustration } from '@/components/sections/about/about-hero-illustration';
-import { AboutPlatformCard } from '@/components/sections/about/about-platform-card';
 import { AboutTrustStats } from '@/components/sections/about/about-trust-stats';
-import { FeatureCard } from '@/components/cards/feature-card';
 import { Container } from '@/components/layout/container';
-import { Grid } from '@/components/layout/grid';
 import { Section } from '@/components/layout/section';
 import { Stack } from '@/components/layout/stack';
-import { HowItWorks } from '@/components/marketing/how-it-works';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { Heading } from '@/components/typography/heading';
-import { Lead } from '@/components/typography/lead';
-import { MutedText } from '@/components/typography/muted-text';
+import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { Text } from '@/components/typography/text';
-import { routes, platformHubPath } from '@/config/routes';
+import { routes } from '@/config/routes';
 import { getAboutContent } from '@/data/content/company';
-import { getPlatformById } from '@/data/platforms';
+import { getEnglishAboutSource } from '@/lib/i18n/content/company-english';
+import type { AboutPageOverlay } from '@/lib/i18n/content/company-english';
+import { cn } from '@/lib/utils';
 import type { AboutPageContent } from '@/types/content';
-import type { PlatformId } from '@/types/platform';
 
-const ABOUT_PLATFORM_COPY: Record<
-  PlatformId,
-  { description: string }
-> = {
-  instagram: { description: 'Followers, Likes, Views and Comments.' },
-  tiktok: { description: 'Followers, Likes and Views.' },
-  youtube: { description: 'Subscribers and Views.' },
-  facebook: { description: 'Followers, Page Likes and Post Likes.' },
-};
+const WHY_ICONS = [Shield, Rocket, Users, Headphones, Award] as const;
+const WHY_ICON_COLORS = [
+  'bg-[#E8F1FF] text-[#2563EB]',
+  'bg-[#F3E8FF] text-[#7C3AED]',
+  'bg-[#E8F8EF] text-[#16A34A]',
+  'bg-[#FFF1E6] text-[var(--brand-primary)]',
+  'bg-[#FFE8F1] text-[#DB2777]',
+] as const;
+
+const COMMITMENT_ICONS = [Lock, ShieldCheck, Award, Globe] as const;
 
 type AboutPageViewProps = {
   content?: AboutPageContent;
+  chrome?: AboutPageOverlay['chrome'];
+  homeLabel?: string;
+  homeHref?: string;
 };
 
 /**
- * About Us production composition (Document 13.01).
- *
- * Hero → Our Story → Trusted Ordering Experience → Mission & Values → Why Choose → Platforms →
- * Process → Trust & Security → Final CTA
+ * About Us page — visual layout matched to the About mockup.
  */
-export function AboutPageView({ content = getAboutContent() }: AboutPageViewProps) {
+export function AboutPageView({
+  content = getAboutContent(),
+  chrome = getEnglishAboutSource().chrome,
+  homeLabel = 'Home',
+  homeHref = routes.home,
+}: AboutPageViewProps) {
   const breadcrumbs = [
-    { label: 'Home', href: routes.home },
-    { label: 'About' },
+    { label: homeLabel, href: homeHref },
+    { label: chrome.breadcrumb },
   ];
 
-  const platforms = content.platforms.platformIds
-    .map((id) => getPlatformById(id))
-    .filter((platform): platform is NonNullable<typeof platform> => Boolean(platform));
+  const heroParagraphs = content.hero.description
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+
+  const missionParagraphs = (content.mission.description ?? '')
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean);
 
   return (
     <>
       <AboutPageViewTracker />
 
       {/* 1. Hero */}
-      <Section spacing="lg" className="bg-hero-wash" aria-label="About NovaLikes">
+      <Section spacing="lg" className="bg-transparent" aria-label={chrome.heroAria}>
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-            <Stack
-              gap="lg"
-              className="text-center sm:items-center lg:items-start lg:text-left"
-            >
+            <Stack gap="md" className="text-center sm:items-center lg:items-start lg:text-left">
               <Breadcrumb
                 items={breadcrumbs}
                 className="justify-center lg:justify-start"
                 variant="subtle"
               />
-              <Heading as="h1" size="h1">
-                {content.hero.title}
+              {content.hero.eyebrow ? (
+                <p className="text-xs font-semibold tracking-[0.14em] text-[var(--brand-primary)] uppercase">
+                  {content.hero.eyebrow}
+                </p>
+              ) : null}
+              <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
+                {accentLastWord(content.hero.title)}
               </Heading>
-              <Lead className="text-pretty text-[var(--text-secondary)]">
-                {content.hero.description}
-              </Lead>
-              {(content.hero.primaryCta || content.hero.secondaryCta) && (
-                <AboutCtaButtons
-                  primaryCta={content.hero.primaryCta!}
-                  secondaryCta={content.hero.secondaryCta}
-                  location="hero"
-                  align="responsive"
-                />
-              )}
+              <div className="space-y-3">
+                {heroParagraphs.map((paragraph) => (
+                  <Text
+                    key={paragraph.slice(0, 24)}
+                    className="text-pretty text-[var(--text-secondary)]"
+                  >
+                    {paragraph}
+                  </Text>
+                ))}
+              </div>
+              {content.hero.trustLabels?.length ? (
+                <ul className="mt-2 space-y-3 text-left">
+                  {content.hero.trustLabels.map((item) => (
+                    <li key={item.id} className="flex items-start gap-2.5">
+                      <CheckCircle2
+                        className="mt-0.5 size-5 shrink-0 text-[var(--brand-primary)]"
+                        strokeWidth={2.25}
+                        aria-hidden={true}
+                      />
+                      <span className="text-[0.95rem] leading-snug text-[var(--text-primary)]">
+                        {item.label}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </Stack>
             <div className="flex justify-center lg:justify-end">
-              <AboutHeroIllustration />
+              <AboutHeroIllustration
+                src={content.hero.visual?.src}
+                alt={content.hero.visual?.alt}
+              />
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* 2. Our Story */}
-      <Section id={content.story.id} spacing="lg" className="bg-muted/20" aria-labelledby="about-story-heading">
-        <Container>
-          <div className="mx-auto max-w-3xl space-y-4">
-            <Heading as="h2" size="h2" id="about-story-heading">
-              {content.story.title}
-            </Heading>
-            {content.story.description ? (
-              <MutedText>{content.story.description}</MutedText>
-            ) : null}
-            <Text className="whitespace-pre-line text-muted-foreground">{content.story.body}</Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 2. Stats bar */}
+      <AboutTrustStats
+        ariaLabel={chrome.statsAria}
+        labels={{
+          customers: chrome.statsCustomers,
+          orders: chrome.statsOrders,
+          rating: chrome.statsRating,
+          success: chrome.statsSuccess,
+        }}
+      />
 
-      {/* 2b. Trusted Ordering Experience */}
-      <Section
-        id="trusted-ordering-experience"
-        spacing="lg"
-        aria-labelledby="about-trust-stats-heading"
-      >
-        <Container>
-          <div className="mb-8 max-w-3xl space-y-2">
-            <Heading as="h2" size="h2" id="about-trust-stats-heading">
-              Trusted Ordering Experience
-            </Heading>
-          </div>
-          <AboutTrustStats />
-        </Container>
-      </Section>
-
-      {/* 3. Mission & Values */}
+      {/* 3. Our Mission */}
       <Section
         id={content.mission.id}
         spacing="lg"
+        className="bg-transparent"
         aria-labelledby="about-mission-heading"
       >
         <Container>
-          <div className="mb-8 max-w-3xl space-y-2">
-            <Heading as="h2" size="h2" id="about-mission-heading">
-              {content.mission.title}
-            </Heading>
-            {content.mission.description ? (
-              <MutedText>{content.mission.description}</MutedText>
-            ) : null}
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <div className="relative mx-auto w-full max-w-[22rem] lg:mx-0 lg:max-w-[26rem]">
+              <div
+                className="pointer-events-none absolute top-1/2 left-1/2 size-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFF1E6]"
+                aria-hidden={true}
+              />
+              <Image
+                src="/assets/images/illustrations/about/about-mission.webp"
+                alt={chrome.missionImageAlt}
+                width={1024}
+                height={1024}
+                className="relative z-10 h-auto w-full object-contain"
+                sizes="(max-width: 1024px) 80vw, 26rem"
+              />
+            </div>
+            <Stack gap="md" className="text-center lg:text-left">
+              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--brand-primary)] uppercase">
+                {chrome.missionEyebrow}
+              </p>
+              <Heading as="h2" size="h2" id="about-mission-heading">
+                {content.mission.title}
+              </Heading>
+              <div className="space-y-3">
+                {missionParagraphs.map((paragraph) => (
+                  <Text
+                    key={paragraph.slice(0, 24)}
+                    className="text-pretty text-[var(--text-secondary)]"
+                  >
+                    {paragraph}
+                  </Text>
+                ))}
+              </div>
+            </Stack>
           </div>
-          <Grid cols={3} className="gap-4">
-            {content.mission.items.map((item) => (
-              <FeatureCard key={item.id} title={item.title} description={item.description} />
-            ))}
-          </Grid>
         </Container>
       </Section>
 
-      {/* 4. Why Customers Choose NovaLikes */}
+      {/* 4. Why Thousands Choose Us */}
       <Section
         id={content.whyChoose.id}
         spacing="lg"
-        className="bg-muted/20"
+        className="bg-transparent"
         aria-labelledby="about-why-heading"
       >
         <Container>
-          <div className="mb-8 max-w-3xl space-y-2">
-            <Heading as="h2" size="h2" id="about-why-heading">
-              {content.whyChoose.title}
-            </Heading>
+          <div className="mx-auto mb-10 max-w-3xl space-y-2 text-center">
             {content.whyChoose.description ? (
-              <MutedText>{content.whyChoose.description}</MutedText>
+              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--brand-primary)] uppercase">
+                {content.whyChoose.description}
+              </p>
             ) : null}
-          </div>
-          <Grid cols={3} className="gap-4">
-            {content.whyChoose.items.map((item) => (
-              <FeatureCard key={item.id} title={item.title} description={item.description} />
-            ))}
-          </Grid>
-        </Container>
-      </Section>
-
-      {/* 5. Platforms We Support */}
-      <Section
-        id={content.platforms.id}
-        spacing="lg"
-        aria-labelledby="about-platforms-heading"
-      >
-        <Container>
-          <div className="mb-8 max-w-3xl space-y-2">
-            <Heading as="h2" size="h2" id="about-platforms-heading">
-              {content.platforms.title}
+            <Heading as="h2" size="h2" id="about-why-heading">
+              {accentLastWord(content.whyChoose.title)}
             </Heading>
-            {content.platforms.description ? (
-              <MutedText>{content.platforms.description}</MutedText>
-            ) : null}
           </div>
-          <Grid cols={4} className="gap-4">
-            {platforms.map((platform) => {
-              const copy = ABOUT_PLATFORM_COPY[platform.id];
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {content.whyChoose.items.map((item, index) => {
+              const Icon = WHY_ICONS[index % WHY_ICONS.length];
+              const color = WHY_ICON_COLORS[index % WHY_ICON_COLORS.length];
               return (
-                <AboutPlatformCard
-                  key={platform.id}
-                  platformId={platform.id}
-                  name={platform.name}
-                  iconKey={platform.icon}
-                  description={copy.description}
-                  href={platformHubPath(platform.slug)}
-                  ctaLabel={`View ${platform.name} services`}
-                />
+                <div
+                  key={item.id}
+                  className="flex h-full flex-col items-center rounded-2xl border border-[var(--border-subtle)] bg-white px-4 py-6 text-center shadow-[0_10px_30px_-24px_rgba(28,25,23,0.35)]"
+                >
+                  <span
+                    className={cn(
+                      'mb-4 flex size-12 items-center justify-center rounded-2xl',
+                      color,
+                    )}
+                  >
+                    <Icon className="size-5" strokeWidth={2.25} aria-hidden />
+                  </span>
+                  <h3 className="mb-2 text-base font-bold text-[var(--text-primary)]">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                    {item.description}
+                  </p>
+                </div>
               );
             })}
-          </Grid>
+          </div>
         </Container>
       </Section>
 
-      {/* 6. Our Process */}
-      <HowItWorks
-        id={content.process.id}
-        title={content.process.title}
-        description={content.process.description}
-        steps={content.process.steps}
-      />
-
-      {/* 7. Trust & Security */}
+      {/* 5. Our Commitment */}
       <Section
         id={content.trust.id}
         spacing="lg"
-        aria-labelledby="about-trust-heading"
+        className="bg-transparent"
+        aria-labelledby="about-commitment-heading"
       >
         <Container>
-          <div className="mb-8 max-w-3xl space-y-2">
-            <Heading as="h2" size="h2" id="about-trust-heading">
-              {content.trust.title}
-            </Heading>
-            {content.trust.description ? (
-              <MutedText>{content.trust.description}</MutedText>
-            ) : null}
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <Stack gap="md" className="text-center lg:order-1 lg:text-left">
+              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--brand-primary)] uppercase">
+                {chrome.commitmentEyebrow}
+              </p>
+              <Heading as="h2" size="h2" id="about-commitment-heading">
+                {content.trust.title}
+              </Heading>
+              {content.trust.description ? (
+                <Text className="text-pretty text-[var(--text-secondary)]">
+                  {content.trust.description}
+                </Text>
+              ) : null}
+              <div className="mt-2 grid grid-cols-2 gap-4 sm:gap-5">
+                {content.trust.items.map((item, index) => {
+                  const Icon = COMMITMENT_ICONS[index % COMMITMENT_ICONS.length];
+                  return (
+                    <div
+                      key={item.id}
+                      className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left"
+                    >
+                      <span className="flex size-10 items-center justify-center rounded-xl border border-[var(--border-subtle)] bg-white text-[var(--text-secondary)]">
+                        <Icon className="size-4" strokeWidth={2} aria-hidden />
+                      </span>
+                      <p className="text-sm font-semibold text-[var(--text-primary)]">
+                        {item.title}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </Stack>
+            <div className="relative mx-auto w-full max-w-[22rem] lg:order-2 lg:mx-0 lg:max-w-[26rem]">
+              <div
+                className="pointer-events-none absolute top-1/2 left-1/2 size-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#EEF4FF]"
+                aria-hidden={true}
+              />
+              <Image
+                src="/assets/images/illustrations/about/about-commitment.webp"
+                alt={chrome.commitmentImageAlt}
+                width={1024}
+                height={1024}
+                className="relative z-10 h-auto w-full object-contain"
+                sizes="(max-width: 1024px) 80vw, 26rem"
+              />
+            </div>
           </div>
-          <Grid cols={2} className="gap-4">
-            {content.trust.items.map((item) => (
-              <FeatureCard key={item.id} title={item.title} description={item.description} />
-            ))}
-          </Grid>
-          <MutedText className="mt-8 max-w-3xl text-sm">{content.trust.disclaimer}</MutedText>
         </Container>
       </Section>
 
-      {/* 8. Final CTA */}
+      {/* 6. Final CTA banner */}
       <Section
         id={content.finalCta.id}
         spacing="lg"
-        className="bg-brand/5"
+        className="bg-transparent"
         aria-labelledby="about-final-cta-heading"
       >
         <Container>
-          <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto] lg:gap-12">
-            <Stack
-              gap="lg"
-              className="mx-auto max-w-2xl items-center text-center lg:mx-0 lg:items-start lg:text-left"
-            >
-              <Heading as="h2" size="h2" id="about-final-cta-heading">
-                {content.finalCta.title}
+          <div className="flex flex-col items-center gap-5 rounded-[1.75rem] bg-[var(--brand-primary)] px-6 py-7 text-center sm:flex-row sm:gap-6 sm:px-8 sm:py-8 sm:text-left lg:gap-8">
+            <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/15 text-white">
+              <Heart className="size-7 fill-white" aria-hidden />
+            </span>
+            <div className="min-w-0 flex-1">
+              <Heading
+                as="h2"
+                size="h3"
+                id="about-final-cta-heading"
+                className="!text-white"
+              >
+                {content.finalCta.title}{' '}
+                <span className="font-normal text-white/95">
+                  {content.finalCta.description}
+                </span>
               </Heading>
-              <MutedText>{content.finalCta.description}</MutedText>
-              <AboutCtaButtons
-                primaryCta={content.finalCta.primaryCta}
-                secondaryCta={content.finalCta.secondaryCta}
-                location="final"
-                align="responsive"
-              />
-            </Stack>
-            <div className="mx-auto flex justify-center lg:mx-0 lg:justify-end">
-              <AboutCtaIllustration />
             </div>
+            <AboutFinalBannerCta
+              href={content.finalCta.primaryCta.href}
+              label={content.finalCta.primaryCta.label}
+            />
           </div>
         </Container>
       </Section>

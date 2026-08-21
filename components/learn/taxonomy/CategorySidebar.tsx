@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { CategoryCard } from '@/components/learn/taxonomy/CategoryCard';
 import { PopularTags } from '@/components/learn/taxonomy/PopularTags';
 import { cn } from '@/lib/utils';
 import type { PublicLearnCategory, PublicLearnTag } from '@/types/learn';
@@ -25,61 +24,60 @@ export function CategorySidebar({
   popularTags = [],
   className,
 }: CategorySidebarProps) {
+  const hasLinks =
+    relatedCategories.length > 0 ||
+    relatedServices.length > 0 ||
+    popularTags.length > 0;
+
+  if (!hasLinks) return null;
+
   return (
     <aside
-      className={cn('flex flex-col gap-8', className)}
+      className={cn('flex flex-col gap-6', className)}
       aria-label={`${category.name} details`}
     >
-      <div>
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-          About
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-          {category.description}
-        </p>
-        <p className="mt-2 text-xs text-neutral-500">
-          {category.articleCount} published{' '}
-          {category.articleCount === 1 ? 'article' : 'articles'}
-        </p>
-      </div>
-
       {relatedCategories.length > 0 ? (
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-            Related categories
-          </h2>
-          <ul className="mt-3 space-y-3">
+        <nav aria-label="Related categories">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+            More topics
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-1.5">
             {relatedCategories.map((item) => (
               <li key={item.id}>
-                <CategoryCard category={item} className="p-3" />
+                <Link
+                  href={item.href}
+                  className="inline-flex h-8 items-center rounded-full border border-[#E8DDD3] bg-white px-3 text-[13px] font-medium text-neutral-700 outline-none transition-colors hover:border-[#F0C7A8] hover:bg-[#FFF8F3] focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2"
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       ) : null}
 
       {relatedServices.length > 0 ? (
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-            Related services
-          </h2>
-          <ul className="mt-3 space-y-2">
+        <nav aria-label="Related services">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+            Related
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
             {relatedServices.map((service) => (
               <li key={service.href}>
                 <Link
                   href={service.href}
-                  className="text-sm font-medium text-neutral-900 underline-offset-2 outline-none hover:underline focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
+                  className="text-sm text-neutral-600 underline-offset-2 outline-none hover:text-neutral-900 hover:underline focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
                 >
                   {service.label}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       ) : null}
 
       {popularTags.length > 0 ? (
-        <PopularTags tags={popularTags} title="Popular tags" />
+        <PopularTags tags={popularTags} title="Popular topics" />
       ) : null}
     </aside>
   );

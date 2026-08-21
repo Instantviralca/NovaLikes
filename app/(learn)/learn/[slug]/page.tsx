@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 
 import { JsonLdScript } from '@/components/common/json-ld';
 import { ArticlePage } from '@/components/learn/article';
 import { LearnCategoryView } from '@/components/learn';
 import { getLearnCategorySlugs, getPublishedLearnArticleSlugs } from '@/data/learn';
 import {
+  getArticleMetadata,
   getPublishedArticleBySlug,
   prepareArticleForRender,
 } from '@/lib/learn/article';
@@ -18,6 +19,8 @@ import { buildArticlePageJsonLd } from '@/lib/learn/article-seo';
 import { getCategoryPageJsonLd } from '@/lib/learn/taxonomy';
 import { parseLearnSearchParams } from '@/lib/learn/search';
 import { asJsonLdGraph } from '@/lib/seo/schema';
+import { getPublishedCmsPublicArticle } from '@/lib/cms/learn-bridge';
+import { cmsGetRedirect } from '@/lib/cms/store';
 
 type LearnSegmentPageProps = {
   params: Promise<{ slug: string }>;
@@ -26,13 +29,10 @@ type LearnSegmentPageProps = {
 /**
  * Unified `/learn/[slug]` resolver — Documents 15.01 + 15.02 + 15.05.
  * Categories and published articles only. Drafts never render publicly.
- * Filtered category states keep the clean category canonical.
- *
- * force-static: articles/categories are prerendered. Category filter query
- * strings are applied client-side so searchParams does not force dynamic SSR.
+ * CMS published articles resolve on demand without replacing the TS registry.
  */
-export const dynamic = 'force-static';
-export const dynamicParams = false;
+export const dynamicParams = true;
+export const revalidate = 60;
 
 export function generateStaticParams() {
   const categories = getLearnCategorySlugs(false).map((slug) => ({ slug }));
@@ -46,13 +46,36 @@ export async function generateMetadata({
   const { slug } = await params;
   const resolved = resolveLearnSegment(slug);
   if (resolved.kind === 'category') {
-    // Clean category canonical even when filters are present in the URL.
     return getLearnCategoryMetadata(slug);
   }
   if (resolved.kind === 'article') {
     return getLearnArticlePageMetadata(slug);
   }
-  return { robots: { index: false, follow: false } };
+  const cms = await getPublishedCmsPublicArticle(slug);
+  if (cms) return getArticleMetadata(cms);
+  notFound();
+}
+
+function renderPublicArticle(slug: string, article: ReturnType<typeof getPublishedArticleBySlug> | Awaited<ReturnType<typeof getPublishedCmsPublicArticle>>) {
+  if (!article) return null;
+  const prepared = prepareArticleForRender(article);
+  const schemaFaqs = prepared.article.faqs.filter((faq) => faq.schemaEligible === true);
+  const graph = asJsonLdGraph(
+    buildArticlePageJsonLd(prepared.article, {
+      visibleFaqs: schemaFaqs.map((faq) => ({
+        id: faq.id,
+        question: faq.question,
+        answer: faq.answer,
+        schemaEligible: true,
+      })),
+    }),
+  );
+  return (
+    <>
+      <JsonLdScript id={`learn-article-jsonld-${slug}`} data={graph} />
+      <ArticlePage article={prepared.article} />
+    </>
+  );
 }
 
 export default async function LearnSegmentPage({ params }: LearnSegmentPageProps) {
@@ -61,7 +84,6 @@ export default async function LearnSegmentPage({ params }: LearnSegmentPageProps
 
   if (resolved.kind === 'category') {
     const graph = asJsonLdGraph(getCategoryPageJsonLd(resolved.category));
-    // Default locked category; client hydrates additional filters from the URL.
     const initialState = parseLearnSearchParams(
       {},
       { lockedCategory: resolved.category.slug },
@@ -80,32 +102,18 @@ export default async function LearnSegmentPage({ params }: LearnSegmentPageProps
 
   if (resolved.kind === 'article') {
     const article = getPublishedArticleBySlug(slug);
-    if (!article) {
-      notFound();
-    }
-
-    const prepared = prepareArticleForRender(article);
-    const schemaFaqs = prepared.article.faqs.filter(
-      (faq) => faq.schemaEligible === true,
-    );
-    const graph = asJsonLdGraph(
-      buildArticlePageJsonLd(prepared.article, {
-        visibleFaqs: schemaFaqs.map((faq) => ({
-          id: faq.id,
-          question: faq.question,
-          answer: faq.answer,
-          schemaEligible: true,
-        })),
-      }),
-    );
-
-    return (
-      <>
-        <JsonLdScript id={`learn-article-jsonld-${slug}`} data={graph} />
-        <ArticlePage article={prepared.article} />
-      </>
-    );
+    const view = renderPublicArticle(slug, article);
+    if (!view) notFound();
+    return view;
   }
 
-  notFound();
+  const redirected = await cmsGetRedirect(slug);
+  if (redirected && redirected !== slug) {
+    permanentRedirect(`/learn/${redirected}`);
+  }
+
+  const cms = await getPublishedCmsPublicArticle(slug);
+  const view = renderPublicArticle(slug, cms);
+  if (!view) notFound();
+  return view;
 }

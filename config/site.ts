@@ -9,19 +9,21 @@ export const site = {
   name: brand.name,
   domain: 'https://novalikes.com',
   supportEmail: 'support@novalikes.com',
+  /** Public WhatsApp chat (E.164 without +). Opens wa.me in a new tab. */
+  whatsappNumber: '61468147262',
   socialLinks: {
-    /** Add only after official NovaLikes profiles are live. */
-    instagram: '',
+    instagram: 'https://www.instagram.com/novalikesco/',
+    facebook: 'https://www.facebook.com/novalikes/',
+    linkedin: 'https://www.linkedin.com/company/nova-likes/',
     tiktok: '',
     youtube: '',
-    facebook: '',
   },
   tagline: brand.tagline,
   mission: brand.mission,
   defaultMetadata: {
     title: `${brand.name} | Social Media Growth Services`,
     description:
-      `${brand.name} helps creators and brands grow on Instagram, TikTok, YouTube, and Facebook with reliable, transparent social media growth services.`,
+      `${brand.name} helps creators and brands grow on Instagram, TikTok, and Facebook with reliable, transparent social media growth services.`,
   },
 } as const;
 

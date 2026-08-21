@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-import { JsonLdScript } from '@/components/common/json-ld';
 import { ArticleNotFound, ArticlePage } from '@/components/learn/article';
 import { getLearnArticleRecordBySlug, getLearnCategoryById } from '@/data/learn';
 import {
@@ -9,6 +8,8 @@ import {
   getDraftArticleMetadata,
   prepareArticleForRender,
 } from '@/lib/learn/article';
+import { hasCmsPreviewAccess } from '@/lib/cms/auth';
+import { getCmsLearnRecordBySlug, cmsUserToPublicAuthor } from '@/lib/cms/learn-bridge';
 import { learnArticlePath } from '@/config/routes';
 import type { LearnArticleRecord, PublicLearnArticle } from '@/types/learn';
 
@@ -19,7 +20,7 @@ type PreviewPageProps = {
 
 /**
  * Authorized article preview — Document 15.02.
- * Requires LEARN_ARTICLE_PREVIEW_SECRET. Always noindex. Never in sitemap.
+ * Always noindex. Never in sitemap.
  */
 export async function generateMetadata({
   params,
@@ -46,7 +47,7 @@ function asPreviewProjection(record: LearnArticleRecord): PublicLearnArticle {
     publishedAt: record.publishedAt,
     updatedAt: record.updatedAt,
     showModifiedDate: record.showModifiedDate,
-    seo: record.seo,
+    seo: { ...record.seo, noindex: true },
     relatedServices: [...record.relatedServices],
     relatedArticles: [...record.relatedArticles],
     featured: record.featured,
@@ -65,29 +66,18 @@ export default async function LearnArticlePreviewPage({
   const { slug } = await params;
   const { token } = await searchParams;
 
-  if (!canAccessArticlePreview(token)) {
+  if (!canAccessArticlePreview(token) && !(await hasCmsPreviewAccess())) {
     notFound();
   }
 
-  const record = getLearnArticleRecordBySlug(slug);
+  const record = getLearnArticleRecordBySlug(slug) ?? (await getCmsLearnRecordBySlug(slug));
   if (!record) {
     return <ArticleNotFound reason="missing" />;
   }
 
-  const prepared = prepareArticleForRender(asPreviewProjection(record));
+  const projection = asPreviewProjection(record);
+  const author = await cmsUserToPublicAuthor(record.authorId);
+  const prepared = prepareArticleForRender({ ...projection, author });
 
-  return (
-    <>
-      <JsonLdScript
-        id={`learn-preview-jsonld-${slug}`}
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'WebPage',
-          name: prepared.article.title,
-          description: 'Authorized article preview',
-        }}
-      />
-      <ArticlePage article={prepared.article} preview />
-    </>
-  );
+  return <ArticlePage article={prepared.article} preview />;
 }

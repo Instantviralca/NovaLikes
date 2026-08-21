@@ -6,7 +6,10 @@ import type { Metadata } from 'next';
 
 import { seoSiteConfig } from '@/config/seo';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
+import { isCoreLocalizedPath, isEnglishOnlyLearnPath } from '@/lib/i18n/config';
+import { hreflangMap } from '@/lib/i18n/paths';
 import {
+  absoluteUrl,
   buildCanonicalUrl,
   normalizeCanonicalPath,
 } from '@/lib/seo/metadata/canonical';
@@ -16,6 +19,15 @@ import { buildRobotsMetadata } from '@/lib/seo/metadata/robots';
 import { sanitizeMetadataText } from '@/lib/seo/metadata/sanitize';
 import { buildTwitterFromEntry, buildTwitterMetadata } from '@/lib/seo/metadata/twitter';
 import type { MetadataEntry, SeoRobotsPolicy } from '@/types/seo-metadata';
+
+function alternateLanguages(path: string): Record<string, string> | undefined {
+  if (!isCoreLocalizedPath(path) || isEnglishOnlyLearnPath(path)) return undefined;
+  const languages: Record<string, string> = {};
+  for (const [code, href] of Object.entries(hreflangMap(path))) {
+    languages[code] = absoluteUrl(href);
+  }
+  return languages;
+}
 
 export type BuildPageMetadataInput = {
   title: string;
@@ -38,6 +50,8 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
   const canonical = buildCanonicalUrl(path);
   const image = input.images?.[0] ?? seoSiteConfig.defaultOpenGraphImage;
 
+  const languages = alternateLanguages(path);
+
   return {
     title: { absolute: title },
     description,
@@ -45,6 +59,7 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
     keywords: input.keywords,
     alternates: {
       canonical,
+      ...(languages ? { languages } : {}),
     },
     robots: buildRobotsMetadata(robots),
     openGraph: buildOpenGraphMetadata({
@@ -69,6 +84,8 @@ export function buildMetadataFromEntry(entry: MetadataEntry): Metadata {
   const description = sanitizeMetadataText(entry.description);
   const path = normalizeCanonicalPath(entry.canonicalPath);
 
+  const languages = alternateLanguages(path);
+
   return {
     title: { absolute: title },
     description,
@@ -76,6 +93,7 @@ export function buildMetadataFromEntry(entry: MetadataEntry): Metadata {
     keywords: entry.keywords,
     alternates: {
       canonical: buildCanonicalUrl(path),
+      ...(languages ? { languages } : {}),
     },
     robots: buildRobotsMetadata(entry.robots),
     openGraph: buildOpenGraphFromEntry(entry),

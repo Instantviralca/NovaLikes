@@ -3,6 +3,9 @@
  *
  * Use verified values only. Do not invent affiliations, partnerships,
  * endorsements, addresses, or contact details.
+ *
+ * TODO: CONFIRM mailing address if required for formal notices
+ * TODO: CONFIRM any future verified platform partnerships before changing affiliation language
  */
 
 import { brand } from '@/config/brand';
@@ -20,21 +23,15 @@ function isPlaceholderEmail(email: string | undefined): boolean {
   );
 }
 
-/**
- * Current Disclaimer configuration.
- * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
- * No verified platform affiliations or endorsements are configured.
- */
 export const disclaimerConfig: DisclaimerConfig = {
   legalBusinessName: brand.legalName,
   operatingName: brand.name,
   websiteDomain: site.domain,
 
-  // Launch blockers until verified — intentionally unset
-  supportEmail: undefined,
+  supportEmail: site.supportEmail,
   mailingAddress: undefined,
-  effectiveDate: undefined,
-  lastUpdatedDate: undefined,
+  effectiveDate: '2026-08-17',
+  lastUpdatedDate: '2026-08-17',
 
   hasVerifiedPlatformAffiliations: false,
   publicationStatus: 'draft',

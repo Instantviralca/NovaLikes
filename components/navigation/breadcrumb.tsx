@@ -53,11 +53,15 @@ export function Breadcrumb({
         <ol className="flex min-w-0 flex-nowrap items-center gap-1.5 whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
-            const isHome = index === 0 && (item.label.toLowerCase() === 'home' || item.href === '/');
+            const isHome =
+              index === 0 &&
+              (item.href === '/' ||
+                /^\/(es|de|fr|it|pt-br|ar)$/.test(item.href ?? '') ||
+                item.label.toLowerCase() === 'home');
             return (
               <li key={`${item.label}-${index}`} className="flex items-center gap-1.5">
                 {index > 0 ? (
-                  <ChevronRight className="size-3 shrink-0 opacity-50" aria-hidden="true" />
+                  <ChevronRight className="size-3 shrink-0 opacity-50 rtl:rotate-180" aria-hidden="true" />
                 ) : null}
                 {item.href && !isLast ? (
                   <Link

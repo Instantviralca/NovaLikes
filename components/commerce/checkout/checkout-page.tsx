@@ -14,6 +14,7 @@ import { TermsAgreement } from '@/components/commerce/checkout/terms-agreement';
 import { CheckoutProgress } from '@/components/design-system/checkout-progress';
 import { PaymentConfidence } from '@/components/design-system/payment-confidence';
 import { TrustStrip } from '@/components/design-system/trust-strip';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
@@ -23,7 +24,6 @@ import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, locationHasCartTransfer } from '@/lib/cart/cart-hash';
-import { getSiteUrlPath } from '@/lib/config/hosts';
 import { formatMoney } from '@/lib/pricing/format';
 import type {
   CustomerInformation,
@@ -37,6 +37,7 @@ function isValidEmail(email: string): boolean {
 
 export function CheckoutPage() {
   const cart = useCart();
+  const { ui } = useI18nChrome();
   const analytics = useAnalyticsOptional();
   const checkoutViewSent = useRef(false);
   const router = useRouter();
@@ -45,7 +46,7 @@ export function CheckoutPage() {
   const cartTransferPending = Boolean(
     searchParams.get(CART_QUERY_PARAM) || searchParams.get('cartHandoff'),
   );
-  const cartHref = getSiteUrlPath(routes.cart);
+  const cartHref = routes.cart;
   const [customer, setCustomer] = useState<CustomerInformation>({ email: '' });
   const [paymentMethodId, setPaymentMethodId] = useState<PaymentMethodId | null>(() => {
     const enabled = getEnabledPaymentProviders().filter((p) => p.enabled);
@@ -66,9 +67,9 @@ export function CheckoutPage() {
         id: provider.id as PaymentMethodId,
         label: provider.displayName,
         enabled: provider.enabled,
-        description: 'Secure card payment.',
+        description: ui.checkout.secureCardPayment,
       })),
-    [],
+    [ui.checkout.secureCardPayment],
   );
 
   // Sole enabled method — select by default so the user never has to tap it.
@@ -99,7 +100,7 @@ export function CheckoutPage() {
 
   if (waitingForCart) {
     return (
-      <Section aria-label="Checkout" className="bg-hero-wash">
+      <Section aria-label={ui.checkout.ariaLabel} className="bg-hero-wash">
         <Container size="xl">
           <div
             className="flex min-h-[40vh] flex-col items-center justify-center gap-2"
@@ -107,7 +108,7 @@ export function CheckoutPage() {
             aria-live="polite"
           >
             <p className="text-sm font-medium text-muted-foreground">
-              Loading checkout…
+              {ui.checkout.loading}
             </p>
           </div>
         </Container>
@@ -117,14 +118,14 @@ export function CheckoutPage() {
 
   if (cart.items.length === 0) {
     return (
-      <Section aria-label="Checkout" className="bg-hero-wash">
+      <Section aria-label={ui.checkout.ariaLabel} className="bg-hero-wash">
         <Container size="xl" className="space-y-4">
           <Heading as="h1" size="h1">
-            Checkout
+            {ui.checkout.title}
           </Heading>
-          <MutedText>Your cart is empty.</MutedText>
+          <MutedText>{ui.checkout.emptyCart}</MutedText>
           <Button asChild>
-            <Link href={cartHref}>Return to cart</Link>
+            <Link href={cartHref}>{ui.checkout.returnToCart}</Link>
           </Button>
         </Container>
       </Section>
@@ -134,13 +135,13 @@ export function CheckoutPage() {
   const handlePlaceOrder = async () => {
     const nextErrors: typeof errors = {};
     if (!isValidEmail(customer.email)) {
-      nextErrors.email = 'Enter a valid email address.';
+      nextErrors.email = ui.checkout.validEmail;
     }
     if (!paymentMethodId) {
-      nextErrors.payment = 'Select a payment method.';
+      nextErrors.payment = ui.checkout.selectPayment;
     }
     if (!termsAccepted) {
-      nextErrors.terms = 'Please accept the terms to continue.';
+      nextErrors.terms = ui.checkout.acceptTerms;
     }
 
     if (Object.keys(nextErrors).length > 0) {
@@ -172,7 +173,7 @@ export function CheckoutPage() {
         redirectUrl?: string;
       };
       if (!response.ok || !data.ok || !data.orderId) {
-        setErrors({ form: data.error ?? 'Unable to place order.' });
+        setErrors({ form: data.error ?? ui.checkout.unableToPlace });
         setSubmitting(false);
         return;
       }
@@ -187,30 +188,29 @@ export function CheckoutPage() {
       });
       router.push(`${routes.orderSuccess}?${qs.toString()}`);
     } catch {
-      setErrors({ form: 'Unable to place order. Please try again.' });
+      setErrors({ form: ui.checkout.unableToPlaceRetry });
       setSubmitting(false);
     }
   };
 
   return (
     <Section
-      aria-label="Checkout"
+      aria-label={ui.checkout.ariaLabel}
       data-analytics="checkout-page"
       className="bg-hero-wash pb-28 lg:pb-16"
     >
       <Container size="xl">
         <div className="mb-6 space-y-3">
           <Heading as="h1" size="h1">
-            Checkout
+            {ui.checkout.title}
           </Heading>
-          <MutedText>Confirm your details and complete payment securely.</MutedText>
+          <MutedText>{ui.checkout.intro}</MutedText>
           {paymentCancelled ? (
             <p
               className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900"
               role="status"
             >
-              Payment was cancelled. Your cart is still available — you can try checkout again when
-              ready.
+              {ui.checkout.paymentCancelled}
             </p>
           ) : null}
           <CheckoutProgress current="payment" className="max-w-2xl" />
@@ -218,7 +218,7 @@ export function CheckoutPage() {
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
           <div className="space-y-5">
             <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)] sm:p-6">
-              <h2 className="mb-4 text-base font-bold">Customer information</h2>
+              <h2 className="mb-4 text-base font-bold">{ui.checkout.customerInformation}</h2>
               <CustomerInformationForm
                 value={customer}
                 errors={{ email: errors.email }}
@@ -227,7 +227,7 @@ export function CheckoutPage() {
               />
             </div>
             <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)] sm:p-6">
-              <h2 className="mb-4 text-base font-bold">Payment method</h2>
+              <h2 className="mb-4 text-base font-bold">{ui.checkout.paymentMethod}</h2>
               <PaymentMethods
                 methods={paymentMethods}
                 value={paymentMethodId}
@@ -254,7 +254,7 @@ export function CheckoutPage() {
                 <PlaceOrderButton
                   onClick={handlePlaceOrder}
                   disabled={submitting}
-                  label={submitting ? 'Placing order…' : 'Place Order'}
+                  label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
                   className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] text-base font-semibold hover:bg-[var(--brand-primary-hover)]"
                 />
                 <PaymentConfidence className="mt-4" />
@@ -270,19 +270,19 @@ export function CheckoutPage() {
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-4 shadow-[var(--shadow-lg)] backdrop-blur lg:hidden">
         <div className="mx-auto flex max-w-xl flex-col gap-3">
           <div className="flex items-center justify-between">
-            <span className="text-sm text-[var(--text-secondary)]">Total</span>
-            <span className="text-lg font-bold text-[var(--brand-primary)]">
+            <span className="text-sm text-[var(--text-secondary)]">{ui.cart.total}</span>
+            <span className="text-lg font-bold text-[var(--brand-primary)]" dir="ltr">
               {formatMoney(cart.totals.total.amount, cart.totals.total.currency)}
             </span>
           </div>
           <PlaceOrderButton
             onClick={handlePlaceOrder}
             disabled={submitting}
-            label={submitting ? 'Placing order…' : 'Place Order'}
+            label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
             className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] font-semibold hover:bg-[var(--brand-primary-hover)]"
           />
           <p className="text-center text-[11px] text-[var(--text-secondary)]">
-            Secure checkout · 30-Day Money-Back Guarantee
+            {ui.checkout.secureGuarantee}
           </p>
         </div>
       </div>

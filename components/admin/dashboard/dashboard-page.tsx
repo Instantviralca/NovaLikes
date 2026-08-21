@@ -5,6 +5,7 @@ import { QuickActions } from '@/components/admin/dashboard/quick-actions';
 import { RecentOrdersTable } from '@/components/admin/dashboard/recent-orders-table';
 import { RevenueWidget } from '@/components/admin/dashboard/revenue-widget';
 import { SystemStatusWidget } from '@/components/admin/dashboard/system-status-widget';
+import { ToolsHealthWidget } from '@/components/admin/dashboard/tools-health-widget';
 import { WelcomeBanner } from '@/components/admin/dashboard/welcome-banner';
 import { AdminPageHeader } from '@/components/admin/layout/admin-page-header';
 import type { DashboardViewModel } from '@/types/admin-dashboard';
@@ -49,6 +50,7 @@ export function DashboardPage({ data, loading }: DashboardPageProps) {
         <RevenueWidget revenue={data.revenue} loading={loading} />
         <SystemStatusWidget items={data.systemStatus} />
       </div>
+      <ToolsHealthWidget />
     </div>
   );
 }

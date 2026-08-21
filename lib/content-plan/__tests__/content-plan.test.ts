@@ -91,7 +91,7 @@ describe('SEO Content Production Plan', () => {
     ).toEqual([]);
   });
 
-  it('covers all 12 approved services with at least one relationship', () => {
+  it('covers all approved services with at least one relationship', () => {
     const missing = detectMissingServiceSupport().filter(
       (i) => i.severity === 'error',
     );

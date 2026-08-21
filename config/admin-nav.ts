@@ -15,6 +15,7 @@ export const adminNavItems: AdminNavItem[] = [
   { id: 'coupons', label: 'Coupons', href: '/admin/coupons' },
   { id: 'content', label: 'Content', href: '/admin/content' },
   { id: 'learn', label: 'Learn', href: '/admin/learn' },
+  { id: 'authors', label: 'Authors', href: '/admin/authors' },
   { id: 'testimonials', label: 'Testimonials', href: '/admin/testimonials' },
   { id: 'faq', label: 'FAQ', href: '/admin/faq' },
   { id: 'settings', label: 'Settings', href: '/admin/settings' },

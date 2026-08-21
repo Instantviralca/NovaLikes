@@ -8,6 +8,7 @@ import { OrderTimeline } from '@/components/tracking/order-timeline';
 import { TrackOrderForm } from '@/components/tracking/track-order-form';
 import { TrackingError } from '@/components/tracking/tracking-error';
 import { TrackingLoading } from '@/components/tracking/tracking-loading';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
@@ -15,36 +16,33 @@ import { MutedText } from '@/components/typography/muted-text';
 import type { PublicTrackedOrder, TrackOrderLookupError } from '@/types/tracking';
 
 export function TrackOrderPage() {
+  const { ui } = useI18nChrome();
   const [loading, setLoading] = useState(false);
   const [order, setOrder] = useState<PublicTrackedOrder | null>(null);
   const [error, setError] = useState<TrackOrderLookupError | null>(null);
 
   return (
-    <Section aria-label="Track order" data-analytics="track-order" className="bg-hero-wash">
+    <Section aria-label={ui.trackOrder.ariaLabel} data-analytics="track-order" className="bg-transparent">
       <Container size="md" className="space-y-8">
         <div className="space-y-4">
           <Heading as="h1" size="h1">
-            Track your order
+            {ui.trackOrder.title}
           </Heading>
-          <MutedText>
-            Enter your Order ID and the email used at checkout. No account required.
-          </MutedText>
+          <MutedText>{ui.trackOrder.intro}</MutedText>
           <ol className="grid gap-3 sm:grid-cols-3">
-            {[
-              'Enter your order ID',
-              'Confirm your checkout email',
-              'View status updates',
-            ].map((label, index) => (
-              <li
-                key={label}
-                className="rounded-xl border border-[var(--border-subtle)] bg-white p-3 text-sm shadow-[var(--shadow-xs)]"
-              >
-                <span className="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-[var(--brand-accent-soft)] text-xs font-bold text-[var(--brand-primary)]">
-                  {index + 1}
-                </span>
-                {label}
-              </li>
-            ))}
+            {[ui.trackOrder.stepId, ui.trackOrder.stepEmail, ui.trackOrder.stepStatus].map(
+              (label, index) => (
+                <li
+                  key={label}
+                  className="rounded-xl border border-[var(--border-subtle)] bg-white p-3 text-sm shadow-[var(--shadow-xs)]"
+                >
+                  <span className="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-[var(--brand-accent-soft)] text-xs font-bold text-[var(--brand-primary)]">
+                    {index + 1}
+                  </span>
+                  {label}
+                </li>
+              ),
+            )}
           </ol>
         </div>
 
@@ -71,7 +69,7 @@ export function TrackOrderPage() {
             } catch {
               setError({
                 code: 'server_error',
-                message: 'Something went wrong. Please try again in a moment.',
+                message: ui.trackOrder.serverError,
               });
             } finally {
               setLoading(false);
@@ -87,7 +85,7 @@ export function TrackOrderPage() {
             <OrderStatusCard order={order} />
             <OrderSummary order={order} />
             <div className="rounded-lg border p-6">
-              <h2 className="mb-4 text-lg font-semibold">Progress</h2>
+              <h2 className="mb-4 text-lg font-semibold">{ui.trackOrder.progress}</h2>
               <OrderTimeline steps={order.timeline} />
             </div>
           </div>

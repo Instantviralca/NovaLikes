@@ -1,0 +1,627 @@
+{
+  "content": {
+    "slug": "buy-tiktok-views",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "Acheter des vues TikTok | NovaLikes",
+      "description": "Achetez des vues TikTok avec des tarifs de forfaits clairs pour les vidéos publiques. Lien vidéo public uniquement, paiement sécurisé et suivi de commande pour créateurs et entreprises."
+    },
+    "hero": {
+      "eyebrow": "ACHETER DES VUES TIKTOK",
+      "title": "Acheter des vues TikTok",
+      "description": "Achetez des vues TikTok en choisissant le forfait et la quantité adaptés à votre vidéo. NovaLikes vous permet de comparer les forfaits de vues TikTok et les prix avant de commander. Sélectionnez le nombre de vues souhaité, indiquez le lien de la vidéo TikTok publique exact, puis finalisez votre commande en ligne. Votre mot de passe TikTok n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "purpose": "Convert for TikTok views packages worldwide",
+      "primaryKeyword": "buy TikTok views",
+      "supportingKeywords": [
+        "Buy TikTok Views",
+        "Buy Views on TikTok",
+        "Buy Views for TikTok",
+        "TikTok Views Packages",
+        "Buying TikTok Views"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "Choisir un forfait de vues TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Comment ça marche",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-v-trust-url",
+          "label": "Lien vidéo public uniquement"
+        },
+        {
+          "id": "tt-v-trust-password",
+          "label": "Aucun mot de passe requis"
+        },
+        {
+          "id": "tt-v-trust-checkout",
+          "label": "Paiement sécurisé"
+        },
+        {
+          "id": "tt-v-trust-track",
+          "label": "Suivi de commande"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-views/tiktok-views-hero.webp",
+        "alt": "Illustration des vues et de la portée d’une vidéo TikTok",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Forfaits et tarifs de vues TikTok",
+      "description": "Comparez les forfaits de vues TikTok disponibles, les quantités et les prix avant de commander. Choisissez le nombre de vues souhaité pour votre vidéo TikTok publique, relisez l’option de forfait et le prix actuel, puis ajoutez le forfait sélectionné au panier lorsque vous êtes prêt.",
+      "purpose": "Present real NovaLikes.com TikTok views packages",
+      "primaryKeyword": "TikTok views packages",
+      "suggestedWordCount": 55,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuer avec ce forfait",
+      "emptyMessage": "Les forfaits de vues TikTok sont temporairement indisponibles."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-views",
+      "title": "Pourquoi achète-t-on des vues TikTok ?",
+      "description": "On achète des vues TikTok pour augmenter le nombre de lectures visible d’une vidéo publique, renforcer sa première impression et soutenir des campagnes de créateurs ou d’entreprises. Un nombre de vues plus élevé peut donner à un contenu actif un aspect plus établi, mais il ne garantit ni likes, ni abonnés, ni ventes, ni promotion algorithmique.",
+      "purpose": "Explain informed use of TikTok views packages",
+      "primaryKeyword": "buy TikTok views",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "tt-v-first-impressions",
+          "title": "Une première impression plus forte",
+          "description": "Un nombre de lectures visible peut donner à une vidéo un aspect plus actif lorsque les spectateurs la découvrent via un profil, un lien partagé ou le fil TikTok."
+        },
+        {
+          "id": "tt-v-campaign-visibility",
+          "title": "Visibilité de campagne",
+          "description": "Les créateurs et les entreprises peuvent utiliser des forfaits de vues en complément de lancements, de promotions et d’autres campagnes vidéo courtes."
+        },
+        {
+          "id": "tt-v-flexible-quantities",
+          "title": "Quantités flexibles",
+          "description": "Des forfaits plus petits peuvent soutenir des publications individuelles, tandis que des options plus importantes peuvent mieux convenir aux comptes établis et régulièrement actifs."
+        },
+        {
+          "id": "tt-v-alongside-content",
+          "title": "Fonctionne en complément du contenu",
+          "description": "Les vues achetées sont plus utiles lorsqu’elles soutiennent des vidéos originales, des accroches claires, une publication régulière et une interaction authentique avec l’audience."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-tiktok-views",
+      "title": "Pourquoi choisir des vues TikTok chez NovaLikes ?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections",
+      "primaryKeyword": "buy TikTok views",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-views-features",
+      "title": "Fonctionnalités",
+      "description": "",
+      "purpose": "Unused on lean authority layout — requirements section is separate",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Comment acheter des vues TikTok",
+      "description": "Pour acheter des vues TikTok, choisissez un forfait, collez le lien public de la vidéo que vous voulez promouvoir, vérifiez les informations de la commande et finalisez un paiement sécurisé. Aucun mot de passe TikTok n’est requis, et les mises à jour de statut disponibles peuvent être suivies après le paiement.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok views",
+      "supportingKeywords": [
+        "how to buy views on TikTok",
+        "buy views for TikTok",
+        "buying TikTok views",
+        "TikTok views buy"
+      ],
+      "suggestedWordCount": 90,
+      "steps": [
+        {
+          "id": "tt-v-step-1",
+          "title": "Choisissez un forfait",
+          "description": "Sélectionnez la quantité de vues qui correspond à la vidéo et à l’objectif de campagne."
+        },
+        {
+          "id": "tt-v-step-2",
+          "title": "Collez le lien de la vidéo publique",
+          "description": "Copiez l’URL TikTok exacte pour que les vues soient livrées à la bonne publication."
+        },
+        {
+          "id": "tt-v-step-3",
+          "title": "Vérifiez la commande",
+          "description": "Confirmez la quantité, le lien, le prix et les informations de livraison."
+        },
+        {
+          "id": "tt-v-step-4",
+          "title": "Finalisez un paiement sécurisé",
+          "description": "Terminez le paiement sans partager vos identifiants."
+        },
+        {
+          "id": "tt-v-step-5",
+          "title": "Suivez la livraison",
+          "description": "Utilisez les détails de votre commande pour consulter les mises à jour d’avancement disponibles."
+        }
+      ],
+      "cta": {
+        "label": "Sélectionner un forfait",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "Que faut-il pour passer commande ?",
+      "description": "Une commande de vues TikTok ne demande que quelques informations publiques. Vous n’avez pas besoin d’indiquer votre mot de passe, un code de vérification ni un accès privé au compte.",
+      "purpose": "Explain video URL and processing requirements",
+      "primaryKeyword": "TikTok views packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "tt-v-req-url",
+          "title": "URL de vidéo TikTok publique",
+          "description": "Collez le lien public exact de la vidéo qui doit recevoir les vues sélectionnées."
+        },
+        {
+          "id": "tt-v-req-package",
+          "title": "Forfait sélectionné",
+          "description": "Choisissez la quantité adaptée à votre vidéo, à l’activité de votre compte et à votre campagne actuelle."
+        },
+        {
+          "id": "tt-v-req-public",
+          "title": "Accès à la vidéo publique",
+          "description": "La vidéo sélectionnée doit rester visible publiquement pendant le traitement de la commande."
+        },
+        {
+          "id": "tt-v-req-email",
+          "title": "Adresse e-mail valide",
+          "description": "Utilisez une adresse e-mail fonctionnelle pour recevoir la confirmation, les détails de suivi et les mises à jour d’assistance."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-views-reviews",
+      "title": "Ce que disent les clients de NovaLikes",
+      "description": "Avis clients pour ce service NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-views-faq",
+      "title": "Questions fréquentes sur l’achat de vues TikTok",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok views",
+      "faqIds": [
+        "faq-tt-views-need",
+        "faq-tt-views-package",
+        "faq-tt-views-password",
+        "faq-tt-views-how-long",
+        "faq-tt-views-track",
+        "faq-tt-views-wrong-url",
+        "faq-tt-views-other-metrics",
+        "faq-tt-views-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-views",
+      "title": "Découvrir d’autres services TikTok",
+      "description": "Les vues ne sont qu’un indicateur TikTok. Si vous voulez plutôt augmenter le nombre d’abonnés de votre profil ou le nombre de likes d’une vidéo précise, comparez les autres services TikTok ci-dessous.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-followers",
+        "buy-tiktok-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-views-final-cta",
+      "title": "Choisissez votre forfait de vues TikTok",
+      "description": "Comparez les volumes de vues, les options de forfaits et les prix disponibles, choisissez le forfait adapté à la vidéo TikTok que vous voulez utiliser, puis passez commande avec le lien vidéo public exact.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Voir les forfaits de vues TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Suivre une commande",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-tiktok-views-why-choose",
+        "title": "Pourquoi choisir NovaLikes pour des vues TikTok ?",
+        "description": "NovaLikes facilite la comparaison des forfaits de vues TikTok avant de commander. Choisissez le nombre de vues souhaité pour une vidéo TikTok publique, relisez l’option de forfait et le prix actuel, indiquez le lien vidéo exact, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-0",
+            "title": "Plusieurs quantités de vues",
+            "description": "Comparez les quantités de vues TikTok disponibles et choisissez le forfait qui correspond au nombre de vues que vous voulez commander.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-views-1",
+            "title": "Lien vidéo public uniquement",
+            "description": "Indiquez le lien de la vidéo TikTok publique exact du contenu auquel vous voulez ajouter les vues. Votre mot de passe TikTok n’est pas requis.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-2",
+            "title": "Vérifiez avant le paiement",
+            "description": "Vérifiez la quantité de vues, l’option de forfait et le prix actuel avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-3",
+            "title": "Suivi de commande",
+            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande de vues TikTok.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-tiktok-views-can-you-buy",
+        "title": "Peut-on acheter des vues TikTok ?",
+        "description": "Oui. Des vues TikTok peuvent être achetées via des services de vues en ligne. Chez NovaLikes, vous choisissez un forfait de vues disponible, indiquez le lien de la vidéo TikTok publique du contenu que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "cards": [
+          {
+            "id": "buy-tiktok-views-4",
+            "title": "Ce qu’une commande de vues TikTok modifie",
+            "description": "Une commande de vues TikTok s’applique au nombre de vues de la vidéo publique fournie avec la commande. Elle n’ajoute pas automatiquement des abonnés à votre profil ni des likes à la vidéo.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-views-5",
+            "title": "Ce qu’il faut pour passer commande",
+            "description": "Vous avez besoin du lien de la vidéo TikTok publique exact et du forfait de vues que vous souhaitez acheter. Votre mot de passe TikTok n’est pas requis.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-views-6",
+            "title": "Ce que les vues TikTok n’incluent pas",
+            "description": "Les vues sont distinctes des abonnés et des likes TikTok. Commander des vues n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni un engagement, une portée, des ventes ou une croissance organique supplémentaires.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les vues TikTok, choisi la bonne quantité de vues et l’option de forfait, et indiqué le lien de la vidéo publique exacte à laquelle vous voulez ajouter les vues."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-tiktok-views-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-tiktok-views-what-happens",
+        "title": "Que se passe-t-il après l’achat de vues TikTok ?",
+        "description": "Une fois votre commande de vues TikTok passée, le forfait de vues et le lien de la vidéo publique que vous avez fournis servent à traiter la commande pour la vidéo sélectionnée. Gardez la vidéo accessible publiquement lorsque c’est requis pendant le traitement.",
+        "steps": [
+          {
+            "id": "buy-tiktok-views-th-1",
+            "title": "Les détails de votre commande sont vérifiés",
+            "description": "Le forfait de vues, la quantité, l’option de forfait et le lien de la vidéo TikTok fourni sont associés à votre commande, afin que la demande soit traitée pour la vidéo visée."
+          },
+          {
+            "id": "buy-tiktok-views-th-2",
+            "title": "Les vues vont à la vidéo indiquée",
+            "description": "La commande s’applique à la vidéo TikTok liée au lien que vous avez fourni. Vérifiez soigneusement le lien de la vidéo avant de finaliser le paiement."
+          },
+          {
+            "id": "buy-tiktok-views-th-3",
+            "title": "Le délai de traitement peut varier",
+            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité de vues, l’option de forfait sélectionnée et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+          },
+          {
+            "id": "buy-tiktok-views-th-4",
+            "title": "Consultez le statut de votre commande",
+            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+          }
+        ],
+        "closingNote": "Évitez de supprimer la vidéo fournie, de la rendre indisponible, ou de modifier quoi que ce soit qui empêche l’accès au contenu pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+      },
+      "serviceCompare": {
+        "id": "buy-tiktok-views-service-compare",
+        "title": "Vues vs abonnés vs likes TikTok",
+        "description": "Vues, abonnés et likes mesurent des aspects différents de TikTok. Choisissez le service selon que vous voulez modifier le nombre de vues d’une vidéo précise, le nombre d’abonnés de votre profil, ou le nombre de likes d’une vidéo TikTok.",
+        "current": {
+          "title": "Vues TikTok",
+          "description": "Les vues sont un indicateur au niveau de la vidéo. Choisissez les vues TikTok lorsque vous voulez augmenter le nombre de vues affiché sur une vidéo TikTok publique éligible.",
+          "bestFor": "Vidéos TikTok où le nombre de vues visible est l’indicateur que vous voulez modifier.",
+          "ctaLabel": "Vues TikTok"
+        },
+        "likes": {
+          "title": "Abonnés TikTok",
+          "description": "Les abonnés sont un indicateur au niveau du profil. Choisissez les abonnés TikTok lorsque vous voulez augmenter le nombre d’abonnés affiché sur votre profil TikTok public.",
+          "bestFor": "Profils où le nombre d’abonnés est l’indicateur que vous voulez modifier.",
+          "href": "/buy-tiktok-followers",
+          "ctaLabel": "Voir les abonnés TikTok"
+        },
+        "views": {
+          "title": "Likes TikTok",
+          "description": "Les likes sont un indicateur au niveau de la vidéo. Choisissez les likes TikTok lorsque vous voulez augmenter le nombre de likes affiché sur une vidéo TikTok publique éligible.",
+          "bestFor": "Vidéos TikTok où le nombre de likes visible est l’indicateur que vous voulez modifier.",
+          "href": "/buy-tiktok-likes",
+          "ctaLabel": "Voir les likes TikTok"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-tiktok-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-tiktok-views-before-buying",
+        "title": "Que vérifier avant d’acheter des vues TikTok",
+        "description": "Avant d’acheter des vues TikTok, relisez le forfait et les détails de la vidéo avant de finaliser votre commande. Assurez-vous que la quantité de vues, l’option de forfait, le prix, le lien de la vidéo TikTok et le service correspondent à ce que vous voulez pour la vidéo sélectionnée.",
+        "framingNote": "Vérifiez une dernière fois le lien de la vidéo TikTok fourni, la quantité de vues, l’option de forfait et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des vues garantirait davantage de likes, d’abonnés, d’engagement, de portée, de ventes ou de croissance organique.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-7",
+            "title": "Vérifiez la quantité de vues",
+            "description": "Relisez le nombre de vues TikTok inclus dans le forfait, pour savoir combien vous commandez pour la vidéo indiquée.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-views-8",
+            "title": "Confirmez le prix du forfait",
+            "description": "Vérifiez le prix actuel affiché pour le forfait de vues sélectionné avant de l’ajouter au panier. Si vous changez la quantité ou l’option de forfait, relisez le prix mis à jour avant le paiement.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-views-9",
+            "title": "Utilisez le bon lien de vidéo TikTok",
+            "description": "Vérifiez soigneusement le lien de la vidéo TikTok publique, pour que la commande soit associée à la vidéo exacte à laquelle vous voulez ajouter les vues.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-views-10",
+            "title": "Choisissez le bon service TikTok",
+            "description": "Vues, abonnés et likes sont des services distincts. Vérifiez que les vues TikTok sont bien le service dont vous avez besoin avant de passer commande.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-tiktok-views-11",
+            "title": "Consultez l’assistance et les politiques",
+            "description": "Vérifiez les politiques d’achat concernées et les options d’assistance disponibles, pour savoir où vous tourner si vous avez une question sur votre commande.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-tiktok-views-worldwide",
+        "title": "Choisir la bonne vidéo TikTok pour des vues",
+        "description": "Les vues TikTok s’appliquent à une vidéo publique éligible précise. Assurez-vous que le lien vidéo saisi au paiement pointe vers le contenu exact dont vous voulez utiliser le nombre de vues.",
+        "eyebrow": "Prêt pour des vues TikTok",
+        "closingNote": "Les vues TikTok s’appliquent à une vidéo publique précise. Indiquez le lien vidéo exact, gardez la vidéo accessible et relisez le forfait de vues avant le paiement.",
+        "cards": [
+          {
+            "id": "buy-tiktok-views-12",
+            "title": "Indiquez le lien vidéo exact",
+            "description": "Une URL de profil TikTok n’est pas la même chose qu’une URL de vidéo. Utilisez le lien de la vidéo publique demandé pour le service Vues.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-13",
+            "title": "Gardez la vidéo accessible",
+            "description": "Évitez de supprimer ou de restreindre la vidéo fournie tant qu’une commande en cours dépend d’un accès public à ce contenu.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-14",
+            "title": "Choisissez un forfait de vues",
+            "description": "Comparez les quantités de vues et les options de forfaits disponibles avant de sélectionner celui que vous voulez pour la vidéo.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-views-15",
+            "title": "Vérifiez tout avant le paiement",
+            "description": "Relisez l’URL de la vidéo, le forfait de vues et le prix avant de finaliser votre commande.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-tiktok-views-popular-packages",
+        "title": "Forfaits de vues TikTok populaires",
+        "description": "Comparez ci-dessous quelques-unes des quantités de vues TikTok disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options de forfaits.",
+        "rows": [
+          {
+            "id": "tt-v-hq-1000",
+            "quantity": "1 000 vues",
+            "recommendedFor": "Une option plus petite pour une vidéo TikTok publique où vous voulez ajouter mille vues."
+          },
+          {
+            "id": "tt-v-hq-5000",
+            "quantity": "5 000 vues",
+            "recommendedFor": "Une option intermédiaire pour une vidéo TikTok où vous voulez un changement plus important du nombre de vues affiché."
+          },
+          {
+            "id": "tt-v-hq-10000",
+            "quantity": "10 000 vues",
+            "recommendedFor": "Un forfait plus important pour une vidéo TikTok publique où vous voulez ajouter dix mille vues en une seule commande."
+          },
+          {
+            "id": "tt-v-hq-50000",
+            "quantity": "50 000 vues",
+            "recommendedFor": "Une option à plus fort volume pour une vidéo TikTok où vous voulez une hausse plus importante du nombre de vues affiché."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-tiktok-views-best-practices",
+        "title": "Bonnes pratiques après l’achat de vues TikTok",
+        "description": "Acheter des vues modifie le nombre de vues de la vidéo TikTok sélectionnée, mais le reste de votre activité TikTok dépend toujours du contenu que vous publiez et de la façon dont vous gérez votre compte. Continuez à créer des vidéos, à consulter les performances et à interagir avec votre audience, en complément du service.",
+        "closingNote": "Le nombre de vues n’est qu’un indicateur d’une vidéo TikTok. Votre contenu, vos likes, les réactions de l’audience, vos décisions de publication et les autres activités du compte dépendent toujours de la façon dont vous gérez votre présence TikTok.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-16",
+            "title": "Continuez à publier des vidéos TikTok",
+            "description": "Continuez à créer des vidéos adaptées à votre compte, à votre sujet, à votre activité ou à l’audience que vous voulez atteindre.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-views-17",
+            "title": "Utilisez des légendes adaptées à la vidéo",
+            "description": "Rédigez des légendes qui soutiennent le contenu que vous publiez et fournissent un contexte utile aux personnes qui regardent la vidéo.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-tiktok-views-18",
+            "title": "Consultez vos statistiques TikTok",
+            "description": "Si les statistiques sont disponibles sur votre compte, consultez les vues, likes, engagement, activité de visionnage et autres données disponibles pour comprendre comment votre propre contenu se comporte.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-views-19",
+            "title": "Testez différents formats vidéo",
+            "description": "Essayez différents sujets, durées, ouvertures, formats et styles de présentation pour apprendre ce qui fonctionne pour votre compte.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-views-20",
+            "title": "Répondez aux interactions authentiques",
+            "description": "Répondez aux commentaires et messages authentiques lorsque c’est pertinent. Un nombre de vues plus élevé ne remplace pas les interactions que vous construisez par votre propre activité de compte.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-views-21",
+            "title": "Gardez un contenu cohérent",
+            "description": "Conservez une approche de publication qui a du sens pour votre compte, plutôt que de traiter un forfait de vues comme un substitut à un contenu continu.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-tiktok-views-common-mistakes",
+        "title": "Erreurs fréquentes lors de l’achat de vues TikTok",
+        "description": "Quelques erreurs simples peuvent poser problème à une commande de vues TikTok. Vérifiez le lien de la vidéo, la quantité de vues, l’option de forfait, le service et vos attentes avant le paiement, pour savoir exactement ce que vous commandez.",
+        "closingNote": "Avant de passer commande, vérifiez une dernière fois le lien de la vidéo TikTok, la quantité de vues, l’option de forfait et le prix. Si quelque chose change après le paiement, utilisez le suivi ou l’assistance disponibles pour votre commande.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-22",
+            "title": "Envoyer le mauvais lien de vidéo TikTok",
+            "description": "Vérifiez soigneusement le lien de la vidéo TikTok publique avant de commander. Le lien doit pointer vers la vidéo exacte à laquelle vous voulez ajouter les vues.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-views-23",
+            "title": "Choisir le mauvais service TikTok",
+            "description": "Vues, abonnés et likes sont des services distincts. Choisissez les vues TikTok uniquement lorsque le nombre de vues d’une vidéo précise est l’indicateur que vous voulez modifier.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-24",
+            "title": "Sélectionner la mauvaise quantité de vues",
+            "description": "Relisez le nombre de vues inclus dans le forfait sélectionné avant le paiement, pour ne pas commander une quantité différente de celle prévue.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-25",
+            "title": "Retirer la vidéo pendant une commande",
+            "description": "Évitez de supprimer la vidéo fournie ou de la rendre indisponible pendant le traitement de la commande.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-views-26",
+            "title": "S’attendre à ce que les vues garantissent d’autres résultats",
+            "description": "Un nombre de vues plus élevé ne signifie pas automatiquement plus de likes, d’abonnés, d’engagement, de portée, de ventes ou de croissance organique.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-views-27",
+            "title": "Traiter les vues comme un substitut au contenu",
+            "description": "Acheter des vues modifie un indicateur de la vidéo sélectionnée. Vos vidéos, décisions de publication, légendes et interactions avec l’audience dépendent toujours de la façon dont vous gérez votre compte.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-followers": {
+            "title": "Abonnés TikTok",
+            "description": "Choisissez les abonnés TikTok lorsque vous voulez augmenter le nombre d’abonnés affiché sur votre profil TikTok public.",
+            "ctaLabel": "Voir les abonnés TikTok"
+          },
+          "buy-tiktok-likes": {
+            "title": "Likes TikTok",
+            "description": "Choisissez les likes TikTok lorsque vous voulez augmenter le nombre de likes affiché sur une vidéo TikTok publique éligible.",
+            "ctaLabel": "Voir les likes TikTok"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-tiktok-views-why-buy",
+      "title": "Pourquoi achète-t-on des vues TikTok ?",
+      "description": "On achète des vues TikTok pour des raisons variées. Certains veulent augmenter le nombre de vues affiché sur une vidéo particulière, d’autres choisissent un forfait de vues pour un contenu lié à un lancement, une campagne ou une activité TikTok continue. Le service modifie l’indicateur de vues de la vidéo sélectionnée, mais il ne garantit ni likes, ni abonnés, ni engagement, ni portée, ni ventes, ni croissance organique supplémentaires.",
+      "items": [
+        {
+          "id": "buy-tiktok-views-wb-1",
+          "title": "Augmenter le nombre de vues visible",
+          "description": "Un forfait de vues TikTok peut être utilisé lorsque vous voulez augmenter le nombre de vues affiché sur une vidéo publique précise."
+        },
+        {
+          "id": "buy-tiktok-views-wb-2",
+          "title": "Utiliser des vues autour d’un lancement ou d’une campagne",
+          "description": "Les créateurs et les entreprises peuvent choisir un forfait de vues pour une vidéo TikTok liée à un lancement de produit, une campagne, une annonce ou une autre activité de contenu."
+        },
+        {
+          "id": "buy-tiktok-views-wb-3",
+          "title": "Se concentrer sur l’indicateur vues",
+          "description": "Les vues TikTok s’appliquent au nombre de vues de la vidéo sélectionnée, plutôt que d’ajouter automatiquement des abonnés à votre profil ou des likes à la vidéo."
+        },
+        {
+          "id": "buy-tiktok-views-wb-4",
+          "title": "Choisissez la quantité souhaitée",
+          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre de vues TikTok que vous voulez commander pour la vidéo indiquée."
+        },
+        {
+          "id": "buy-tiktok-views-wb-5",
+          "title": "Utilisez les vues en complément de votre contenu",
+          "description": "Acheter des vues ne remplace pas la création et la gestion de votre propre contenu TikTok. Vidéos, légendes, réponses et autres activités du compte dépendent toujours de la façon dont vous gérez votre présence."
+        }
+      ],
+      "bottomNote": "Si les abonnés ou les likes de vidéo sont l’indicateur que vous voulez modifier, choisissez plutôt le service TikTok correspondant, et non un forfait de vues."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Comment acheter des vues TikTok",
+      "description": "Acheter des vues TikTok via NovaLikes se fait en quatre étapes. Choisissez le forfait de vues souhaité, indiquez le lien de la vidéo TikTok publique, finalisez le paiement, puis utilisez les détails de votre commande pour en consulter le statut.",
+      "steps": [
+        {
+          "id": "buy-tiktok-views-step-1",
+          "title": "Choisissez votre forfait de vues",
+          "description": "Comparez les volumes de vues TikTok, les options de forfaits et les prix disponibles, puis sélectionnez le forfait souhaité pour votre vidéo."
+        },
+        {
+          "id": "buy-tiktok-views-step-2",
+          "title": "Indiquez le lien de la vidéo TikTok",
+          "description": "Fournissez le lien de la vidéo TikTok publique exact de la vidéo à laquelle vous voulez ajouter les vues. Votre mot de passe TikTok n’est pas requis."
+        },
+        {
+          "id": "buy-tiktok-views-step-3",
+          "title": "Finalisez votre commande",
+          "description": "Vérifiez la quantité de vues, l’option de forfait et le prix sélectionnés, puis passez au paiement pour valider votre commande."
+        },
+        {
+          "id": "buy-tiktok-views-step-4",
+          "title": "Suivez votre commande",
+          "description": "Après le paiement, utilisez l’option de suivi de commande disponible pour consulter les informations de statut de votre commande de vues TikTok."
+        }
+      ]
+    },
+    "relatedHeading": "Découvrir d’autres services TikTok",
+    "relatedIntro": "Les vues ne sont qu’un indicateur TikTok. Si vous voulez plutôt augmenter le nombre d’abonnés de votre profil ou le nombre de likes d’une vidéo précise, comparez les autres services TikTok ci-dessous."
+  }
+}

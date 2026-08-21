@@ -100,5 +100,11 @@ export function selectServiceFaqs(options: {
 
 /** Full approved hub set for the main FAQ page. */
 export function selectMainFaqPageFaqs(source?: FaqRecord[]): PublicFaq[] {
-  return getFaqsByPageLocation('faq_page', source);
+  return getFaqsByPageLocation('faq_page', source).filter(
+    (faq) =>
+      faq.platform !== 'youtube' &&
+      faq.category !== 'youtube' &&
+      !faq.id.startsWith('faq-yt-') &&
+      !faq.serviceSlugs.some((slug) => slug.includes('youtube')),
+  );
 }

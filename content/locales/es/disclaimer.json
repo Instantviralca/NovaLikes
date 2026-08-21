@@ -1,0 +1,181 @@
+{
+  "id": "disclaimer",
+  "path": "/disclaimer",
+  "seo": {
+    "title": "Aviso legal | NovaLikes",
+    "description": "Lee información importante sobre los servicios de NovaLikes, las plataformas de redes sociales, los resultados de los servicios, la información del sitio web y las herramientas gratuitas."
+  },
+  "breadcrumbLabel": "Aviso legal",
+  "header": {
+    "title": "Aviso legal",
+    "intro": "Este Aviso legal explica limitaciones importantes relacionadas con los servicios de NovaLikes, el contenido del sitio web, las herramientas gratuitas y las plataformas de redes sociales de terceros."
+  },
+  "tocTitle": "En esta página",
+  "sections": [
+    {
+      "id": "independent-service",
+      "anchor": "independent-service",
+      "title": "1. Servicio independiente",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes es un servicio independiente y no está respaldado, patrocinado ni administrado por Instagram, TikTok, Facebook, Meta ni sus matrices o empresas relacionadas, ni está afiliado oficialmente a ellos, salvo que se indique explícitamente lo contrario."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los nombres y las marcas comerciales de las plataformas se usan solo para identificar las plataformas y los servicios de terceros pertinentes. Todas esas marcas siguen siendo propiedad de sus respectivos titulares."
+        }
+      ]
+    },
+    {
+      "id": "no-guaranteed-social-media-results",
+      "anchor": "no-guaranteed-social-media-results",
+      "title": "2. Sin resultados de redes sociales garantizados",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Comprar un servicio de NovaLikes no garantiza engagement, alcance, ventas, seguidores de otras fuentes, comentarios de otras fuentes, rendimiento viral, posicionamiento algorítmico, monetización, éxito empresarial ni crecimiento orgánico."
+        },
+        {
+          "type": "paragraph",
+          "text": "El servicio adquirido se limita a lo descrito para el paquete seleccionado en la página del servicio correspondiente y durante el proceso de pago."
+        }
+      ]
+    },
+    {
+      "id": "social-media-metrics-can-change",
+      "anchor": "social-media-metrics-can-change",
+      "title": "3. Las métricas de redes sociales pueden cambiar",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las plataformas de terceros controlan sus sistemas y métricas. Los recuentos pueden cambiar por acciones de la plataforma, eliminaciones de cuentas, eliminación de contenido, actualizaciones de la plataforma u otros factores ajenos al control de NovaLikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta explicación no renuncia a ninguna obligación de reembolso o recarga que realmente se aplique en virtud de la [Política de reembolso](/refund-policy) o de los términos mostrados para un paquete concreto."
+        }
+      ]
+    },
+    {
+      "id": "third-party-platform-rules",
+      "anchor": "third-party-platform-rules",
+      "title": "4. Normas de las plataformas de terceros",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Los clientes son responsables de comprender y cumplir las normas y políticas aplicables de Instagram, TikTok y Facebook."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no puede garantizar que una plataforma de terceros no cambie ni haga cumplir sus normas."
+        }
+      ]
+    },
+    {
+      "id": "no-professional-advice",
+      "anchor": "no-professional-advice",
+      "title": "5. Sin asesoramiento profesional",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La información del sitio web es material informativo de carácter general. No constituye asesoramiento jurídico, financiero, empresarial ni de marketing profesional."
+        }
+      ]
+    },
+    {
+      "id": "website-information",
+      "anchor": "website-information",
+      "title": "6. Información del sitio web",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes procura que la información sea útil y actual, pero no puede garantizar que cada página esté siempre libre de errores o plenamente actualizada."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los precios y la información de paquetes mostrados a través del sistema de pedidos real rigen las compras cuando corresponda."
+        }
+      ]
+    },
+    {
+      "id": "free-tools-disclaimer",
+      "anchor": "free-tools-disclaimer",
+      "title": "7. Aviso sobre las herramientas gratuitas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las herramientas gratuitas dependen de información disponible de forma pública y de la accesibilidad de las plataformas de terceros."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las herramientas pueden fallar, bloquearse temporalmente, devolver datos limitados o dejar de funcionar porque las plataformas cambien sus páginas públicas o restrinjan el acceso automatizado."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no garantiza la disponibilidad continua de ninguna herramienta gratuita y no afirma que los descargadores o visores de Instagram, TikTok o Facebook tengan siempre éxito."
+        }
+      ]
+    },
+    {
+      "id": "downloaded-content",
+      "anchor": "downloaded-content",
+      "title": "8. Contenido descargado",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En el caso de las herramientas de descarga y visualización, los usuarios son responsables de asegurarse de que tienen permiso o autoridad legal para descargar, almacenar, reproducir o usar contenido de terceros."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no otorga derechos sobre contenido de terceros y no fomenta la infracción de derechos de autor."
+        }
+      ]
+    },
+    {
+      "id": "external-links",
+      "anchor": "external-links",
+      "title": "9. Enlaces externos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes puede enlazar a sitios web de terceros. NovaLikes no controla su contenido, disponibilidad ni prácticas de privacidad."
+        }
+      ]
+    },
+    {
+      "id": "limitation",
+      "anchor": "limitation",
+      "title": "10. Limitación",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En la máxima medida permitida por la legislación aplicable, NovaLikes declina responsabilidad por la confianza en la información general del sitio web, los resultados de las herramientas gratuitas o el comportamiento de las plataformas de terceros más allá de los términos contractuales que se apliquen a un pedido concreto."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para los términos contractuales vinculantes, incluidas las garantías y los límites de responsabilidad, consulta los [Términos y condiciones](/terms-and-conditions)."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "11. Contacto",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las preguntas sobre este Aviso legal pueden enviarse a través de la página de [Contacto](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "También puedes enviar un correo a support@novalikes.com."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los términos contractuales se establecen en los [Términos y condiciones](/terms-and-conditions). Las páginas relacionadas incluyen la [Política de privacidad](/privacy-policy), la [Política de reembolso](/refund-policy) y la [Política de cookies](/cookie-policy)."
+        }
+      ]
+    }
+  ]
+}

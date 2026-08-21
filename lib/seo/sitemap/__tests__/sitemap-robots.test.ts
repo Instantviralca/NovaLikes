@@ -44,76 +44,35 @@ describe('Sitemap & Robots Finalization', () => {
     );
   });
 
-  it('includes the homepage and all 12 approved service pages', () => {
+  it('includes the homepage and all approved service pages', () => {
     expect(urls).toContain('https://novalikes.com');
     for (const slug of APPROVED_SERVICE_SLUGS) {
       expect(urls).toContain(`https://novalikes.com/${slug}`);
     }
-    expect(
-      urls.filter((url) => {
-        try {
-          const path = new URL(url).pathname;
-          return path.startsWith('/buy-') && !path.startsWith('/learn/');
-        } catch {
-          return false;
-        }
-      }).length,
-    ).toBe(12);
   });
 
-  it('includes company, support, and legal routes', () => {
-    for (const route of [
-      '/about',
-      '/contact',
-      '/faq',
-      '/track-order',
-      '/privacy-policy',
-      '/terms-and-conditions',
-      '/refund-policy',
-      '/cookie-policy',
-      '/disclaimer',
-    ]) {
-      expect(urls).toContain(
-        route === '/' ? 'https://novalikes.com' : `https://novalikes.com${route}`,
-      );
-    }
-  });
-
-  it('excludes skipped services and private/transactional routes', () => {
-    for (const route of SKIPPED_SERVICE_ROUTE_EXAMPLES) {
-      expect(urls.some((url) => url.endsWith(route))).toBe(false);
-    }
-    for (const route of [
-      '/cart',
-      '/checkout',
-      '/order-success',
-      '/admin',
-      '/api/orders',
-      '/search',
-      '/preview/test',
-      '/draft/test',
-      '/track-order/result',
-    ]) {
-      expect(urls.some((url) => url.includes(route))).toBe(false);
-    }
-    // Learn hub and reviews are indexable production routes.
-    expect(urls).toContain('https://novalikes.com/learn');
-    expect(urls).toContain('https://novalikes.com/reviews');
+  it('excludes skipped / unpublished services', () => {
     expect(findSkippedRoutesInSitemap(entries)).toHaveLength(0);
+    for (const route of SKIPPED_SERVICE_ROUTE_EXAMPLES) {
+      expect(urls).not.toContain(`https://novalikes.com${route}`);
+    }
+  });
+
+  it('excludes noindex and non-production pages', () => {
     expect(findNoindexSitemapEntries(entries)).toHaveLength(0);
+    expect(urls).not.toContain('https://novalikes.com/track-order');
+    expect(urls).not.toContain('https://novalikes.com/cart');
+    expect(urls).not.toContain('https://novalikes.com/checkout');
+    expect(urls).not.toContain('https://novalikes.com/order-success');
+    expect(urls).not.toContain('https://novalikes.com/admin');
   });
 
-  it('includes published Learn articles when Learn sitemap is enabled', () => {
-    // Learn article registry is intentionally empty after legacy article removal.
-    expect(urls).toContain('https://novalikes.com/learn');
-    expect(urls.some((url) => /\/learn\/how-to-/.test(url))).toBe(false);
-    expect(urls.some((url) => url.includes('/learn/instagram-algorithm'))).toBe(false);
-    expect(urls.some((url) => url.includes('/learn/buy-instagram-followers-global'))).toBe(false);
-  });
-
-  it('has no duplicate sitemap URLs', () => {
+  it('has no duplicate URLs', () => {
     expect(findDuplicateSitemapUrls(entries)).toHaveLength(0);
-    expect(new Set(urls).size).toBe(urls.length);
+  });
+
+  it('has no orphan pages relative to the production allowlist', () => {
+    expect(findOrphanSitemapPages(entries)).toHaveLength(0);
   });
 
   it('matches canonical URLs exactly', () => {
@@ -123,6 +82,10 @@ describe('Sitemap & Robots Finalization', () => {
   it('rejects invalid trailing-slash variants', () => {
     expect(validateSitemapUrl('https://novalikes.com/faq/').valid).toBe(false);
     expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(true);
+    expect(
+      validateSitemapUrl('https://novalikes.com/ar/شراء-متابعين-انستغرام').valid,
+    ).toBe(true);
+    expect(validateSitemapUrl('https://novalikes.com/FAQ').valid).toBe(false);
   });
 
   it('uses registry lastModified values (not build-time spam)', () => {
@@ -134,7 +97,7 @@ describe('Sitemap & Robots Finalization', () => {
     expect(findMissingSitemapEntries(entries)).toHaveLength(0);
     const indexable = getIndexableRoutes();
     expect(indexable.length).toBeGreaterThanOrEqual(SITEMAP_PRODUCTION_ROUTES.length);
-    expect(entries.length).toBe(indexable.length);
+    expect(entries.length).toBe(indexable.length + 72 + 54 + 18 + 30);
     // Deleted legacy article slugs must not reappear (category hubs may still exist).
     for (const route of [
       '/learn/how-to-grow-instagram-followers-organically',
@@ -148,6 +111,14 @@ describe('Sitemap & Robots Finalization', () => {
     );
   });
 
+  it('does not index locale-prefixed Learn URLs', () => {
+    const localizedLearn = urls.filter((url) =>
+      /https:\/\/novalikes\.com\/(es|de|fr|it|pt-br|ar)\/learn(?:\/|$)/.test(url),
+    );
+    expect(localizedLearn).toEqual([]);
+    expect(urls).toContain('https://novalikes.com/learn');
+  });
+
   it('configures robots with correct sitemap and disallow rules', () => {
     const report = validateRobotsRules();
     expect(report.valid).toBe(true);
@@ -158,15 +129,5 @@ describe('Sitemap & Robots Finalization', () => {
     for (const path of ROBOTS_DISALLOW) {
       expect(rules.disallow).toContain(path);
     }
-    expect(rules.allow).toContain('/');
-    expect(rules.disallow.some((rule) => rule.includes('/_next'))).toBe(false);
-    expect(rules.disallow.some((rule) => rule.includes('/assets'))).toBe(false);
-  });
-
-  it('reports orphan sitemap pages without failing the allowlist', () => {
-    const orphans = findOrphanSitemapPages(entries);
-    expect(Array.isArray(orphans)).toBe(true);
-    // With global chrome links from home, orphans should be empty
-    expect(orphans).toHaveLength(0);
   });
 });

@@ -14,7 +14,7 @@ type TableOfContentsProps = {
 
 /**
  * Article TOC — Document 15.02.
- * Server-generated items; client only for active state + mobile collapse.
+ * Collapsible on mobile; always expanded in the desktop sidebar.
  */
 export function TableOfContents({
   title = 'On this page',
@@ -56,11 +56,11 @@ export function TableOfContents({
   return (
     <nav
       aria-label="Table of contents"
-      className="border border-neutral-200 bg-white"
+      className="overflow-hidden rounded-2xl border border-[#F0E4D8] bg-white"
     >
       <button
         type="button"
-        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-neutral-900 outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 lg:hidden"
+        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-[#1C1917] outline-none focus-visible:ring-2 focus-visible:ring-[#E85D04] lg:hidden"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >
@@ -69,10 +69,10 @@ export function TableOfContents({
       </button>
 
       <div className={cn('px-4 pb-4 lg:block lg:pt-4', open ? 'block' : 'hidden')}>
-        <p className="mb-3 hidden text-sm font-semibold text-neutral-900 lg:block">
+        <p className="mb-3 hidden text-[11px] font-semibold tracking-[0.14em] text-[#E85D04] uppercase lg:block">
           {title}
         </p>
-        <ol className="space-y-2">
+        <ol className="space-y-1.5">
           {items.map((item) => {
             const isActive = activeId === item.id;
             return (
@@ -80,11 +80,10 @@ export function TableOfContents({
                 <a
                   href={item.href}
                   className={cn(
-                    'block text-sm underline-offset-2 outline-none hover:underline focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2',
-                    isActive ? 'font-medium text-neutral-900' : 'text-neutral-600',
+                    'block text-sm leading-snug outline-none hover:text-[#E85D04] focus-visible:ring-2 focus-visible:ring-[#E85D04]',
+                    isActive ? 'font-medium text-[#E85D04]' : 'text-[#57534E]',
                   )}
                   aria-current={isActive ? 'location' : undefined}
-                  style={{ scrollMarginTop: headerOffset }}
                 >
                   {item.label}
                 </a>

@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import type { PublicCta } from '@/types/cta';
 
 export type FAQSupportCTAProps = {
+  eyebrow?: string;
   title?: string;
   description?: string;
   primary?: PublicCta;
@@ -17,9 +18,9 @@ export type FAQSupportCTAProps = {
 
 /**
  * Support CTA for FAQ surfaces — registry-driven (Document 14.06).
- * No hardcoded button labels or destinations.
  */
 export function FAQSupportCTA({
+  eyebrow,
   title,
   description,
   primary,
@@ -44,10 +45,15 @@ export function FAQSupportCTA({
   return (
     <div
       className={cn(
-        'rounded-lg border border-border bg-muted/20 px-6 py-8',
+        'rounded-[2.25rem] bg-[#FFF1E4] px-6 py-8 sm:px-10',
         className,
       )}
     >
+      {eyebrow ? (
+        <p className="mb-2 text-xs font-semibold tracking-[0.14em] text-[var(--brand-primary)] uppercase">
+          {eyebrow}
+        </p>
+      ) : null}
       <Heading as="h2" size="h3" className="mb-2">
         {title ?? resolvedPrimary.title}
       </Heading>

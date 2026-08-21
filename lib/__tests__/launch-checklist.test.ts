@@ -30,8 +30,8 @@ describe('Launch checklist surfaces', () => {
     expect(routes.orderSuccess).toBe('/order-success');
   });
 
-  it('registers all 12 approved service pages via dynamic slug route', () => {
-    expect(APPROVED_SERVICE_SLUGS).toHaveLength(12);
+  it('registers all 10 approved service pages via dynamic slug route', () => {
+    expect(APPROVED_SERVICE_SLUGS).toHaveLength(10);
     expect(pageExists('app/(marketing)/[slug]/page.tsx')).toBe(true);
     for (const slug of APPROVED_SERVICE_SLUGS) {
       expect(getServiceBySlug(slug)).toBeTruthy();

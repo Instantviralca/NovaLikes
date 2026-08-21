@@ -13,9 +13,18 @@ export const SITEMAP_PRODUCTION_ROUTES: readonly string[] = [
   routes.about,
   routes.contact,
   routes.faq,
+  routes.tools,
+  '/tools/tiktok-video-downloader',
+  '/tools/tiktok-profile-picture-downloader',
+  '/tools/instagram-video-downloader',
+  '/tools/instagram-profile-viewer',
+  '/tools/instagram-profile-picture-viewer',
+  '/tools/instagram-follower-counter',
+  '/tools/facebook-video-downloader',
+  '/tools/facebook-reels-downloader',
   routes.reviews,
-  routes.trackOrder,
   routes.learn,
+  routes.sitemap,
   routes.privacyPolicy,
   routes.termsAndConditions,
   routes.refundPolicy,
@@ -31,13 +40,15 @@ export const SITEMAP_EXCLUSION_PREFIXES = [
   '/checkout',
   '/order-success',
   '/admin',
+  '/author',
   '/api',
   '/search',
   '/preview',
   '/draft',
   '/404',
-  '/track-order/result',
+  '/track-order',
   '/services',
+  '/i18n',
 ] as const;
 
 /**
@@ -49,4 +60,6 @@ export const LEARN_SITEMAP_ENABLED = true;
 export const SKIPPED_SERVICE_ROUTE_EXAMPLES = [
   '/buy-tiktok-comments',
   '/buy-tiktok-shares',
+  '/buy-youtube-subscribers',
+  '/buy-youtube-views',
 ] as const;

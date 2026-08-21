@@ -1,0 +1,635 @@
+{
+  "content": {
+    "slug": "buy-facebook-page-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Page Likes | NovaLikes",
+      "description": "Buy Facebook Page Likes with transparent packages for businesses and creators. Public Page URL only, secure checkout and order tracking. No password required."
+    },
+    "hero": {
+      "eyebrow": "BUY FACEBOOK PAGE LIKES",
+      "title": "Buy Facebook Page Likes",
+      "description": "Buy Facebook Page Likes by choosing the package and quantity that fits your Page. NovaLikes lets you compare available Page Like packages and prices before ordering. Select the number of Page Likes you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.",
+      "purpose": "Convert for Facebook page likes packages worldwide",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Facebook Page Likes",
+        "Buy Facebook Business Page Likes",
+        "Buy Likes for Facebook Page",
+        "Facebook Page Likes Buy",
+        "Can You Buy Facebook Page Likes"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose a Facebook Page Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-pl-trust-url",
+          "label": "Public Facebook Page URL Only"
+        },
+        {
+          "id": "fb-pl-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-pl-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "fb-pl-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp",
+        "alt": "Facebook Business Page likes and Meta Business Suite analytics illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Facebook Page Likes Packages & Pricing",
+      "description": "Compare the available Facebook Page Like packages, quantities, and prices before ordering. Choose the number of Page Likes you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.",
+      "purpose": "Present real NovaLikes.com Facebook page likes packages",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Continue With Package",
+      "emptyMessage": "Facebook Page Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-page-likes",
+      "title": "Why Do People Buy Facebook Page Likes?",
+      "description": "People buy Facebook Page Likes for different marketing motivations — from launching a new business page to supporting brand campaigns. The common goal is stronger visible social proof when visitors first discover the page.",
+      "purpose": "Explain motivations for buying Facebook page likes",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "buy likes for Facebook page",
+        "buy Facebook business page likes",
+        "Facebook page likes buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-pl-new-business",
+          "title": "Launch a New Business Page",
+          "description": "New restaurants, agencies, retail stores and service businesses often want their Facebook page to look more established from day one."
+        },
+        {
+          "id": "fb-pl-launch",
+          "title": "Support a Product or Brand Launch",
+          "description": "Teams running launches and awareness campaigns use Page Like packages to strengthen the page that promotes the offer."
+        },
+        {
+          "id": "fb-pl-brand-image",
+          "title": "Strengthen Brand Image",
+          "description": "Brands buy Page Likes when they want the public Page Like count to better match how established their business already feels offline."
+        },
+        {
+          "id": "fb-pl-social-proof",
+          "title": "Add Visible Social Proof",
+          "description": "Creators and organizations use Page Likes as one more public signal that visitors may notice before reading posts or contacting the page."
+        },
+        {
+          "id": "fb-pl-campaigns",
+          "title": "Support Marketing Campaigns",
+          "description": "Page Like packages are often ordered alongside Facebook ads, content calendars and community engagement rather than as a standalone growth plan."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-page-likes",
+      "title": "Why Choose NovaLikes for Facebook Page Likes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook page likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-page-likes-delivery",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Page Likes",
+      "description": "Buying Facebook Page Likes is a straightforward process. Select the Page Like package that matches your goals, enter your public Facebook Page URL, review your order details and complete secure checkout. You never need to provide your Facebook password, and you can follow available order updates after your purchase.",
+      "purpose": "Explain the five-step Facebook Page Likes ordering process",
+      "primaryKeyword": "how to buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Page Likes on Facebook",
+        "Buying Page Likes on Facebook",
+        "Buy Facebook Business Page Likes"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-pl-step-1",
+          "title": "Choose a Page Likes Package",
+          "description": "Compare available Page Like packages and select the quantity that best fits your Facebook page, marketing campaign and current audience size."
+        },
+        {
+          "id": "fb-pl-step-2",
+          "title": "Enter Your Public Facebook Page URL",
+          "description": "Paste the public URL of the Facebook page that should receive the selected Page Likes package. This helps ensure your order is assigned to the correct page."
+        },
+        {
+          "id": "fb-pl-step-3",
+          "title": "Review Your Order",
+          "description": "Confirm your selected package, page URL, pricing and order details before completing checkout."
+        },
+        {
+          "id": "fb-pl-step-4",
+          "title": "Complete Secure Checkout",
+          "description": "Finish your purchase using our protected checkout process without sharing your Facebook login credentials."
+        },
+        {
+          "id": "fb-pl-step-5",
+          "title": "Track Your Order",
+          "description": "After checkout, monitor your available order updates so you can follow the delivery progress from start to finish."
+        }
+      ],
+      "cta": {
+        "label": "Choose Your Page Likes Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "What Do You Need to Place an Order?",
+      "description": "Ordering Facebook Page Likes only requires a few public details. Private account information, passwords and account verification codes are never requested.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-pl-req-url",
+          "title": "Public Facebook Page URL",
+          "description": "Provide the public URL of the Facebook page receiving the selected Page Likes package."
+        },
+        {
+          "id": "fb-pl-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that best matches your business goals and current Facebook page size."
+        },
+        {
+          "id": "fb-pl-req-public",
+          "title": "Public Page Access",
+          "description": "Keep your Facebook page publicly accessible while your order is being processed."
+        },
+        {
+          "id": "fb-pl-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive order confirmations, progress updates and customer support if needed."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-page-likes-reviews",
+      "title": "What Customers Say About NovaLikes",
+      "description": "Customer reviews for this NovaLikes service.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-page-likes-faq",
+      "title": "Frequently Asked Questions About Buying Facebook Page Likes",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook page likes",
+      "faqIds": [
+        "faq-fb-page-likes-need",
+        "faq-fb-page-likes-package",
+        "faq-fb-page-likes-password",
+        "faq-fb-page-likes-how-long",
+        "faq-fb-page-likes-track",
+        "faq-fb-page-likes-wrong-url",
+        "faq-fb-page-likes-other-metrics",
+        "faq-fb-page-likes-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-page-likes",
+      "title": "Explore More Facebook Growth Services",
+      "description": "Facebook Page Likes are only one part of building a stronger Facebook presence. Explore our additional Facebook services designed to support different growth objectives.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-page-likes-final-cta",
+      "title": "Choose Your Facebook Page Likes Package",
+      "description": "Compare the available Page Like quantities and prices, choose the package that fits the Facebook Page you want to use, and place your order with the correct public Facebook Page URL.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "View Facebook Page Likes Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-page-likes-why-choose",
+        "title": "Why Choose NovaLikes for Facebook Page Likes?",
+        "description": "NovaLikes makes it easy to compare Facebook Page Like packages before you order. Choose the Page Like quantity you want, provide the correct public Facebook Page URL, review the package price, and use order tracking after checkout to check available status information.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-0",
+            "title": "Multiple Page Like Quantities",
+            "description": "Compare the available Facebook Page Like quantities and choose the package that matches the number of Page Likes you want to order.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-1",
+            "title": "Public Facebook Page URL Only",
+            "description": "Provide the correct public Facebook Page URL for the Page where you want the Page Likes added. Your Facebook password is not required.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-2",
+            "title": "Review Before Checkout",
+            "description": "Check the selected Page Like quantity and current package price before adding your order to the cart and completing checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your Facebook Page Likes order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-page-likes-can-you-buy",
+        "title": "Can You Buy Facebook Page Likes?",
+        "description": "Yes. Facebook Page Like packages can be purchased through online Page Like services. With NovaLikes, you choose an available Page Likes package, provide the public Facebook Page URL for the Page you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-4",
+            "title": "What a Facebook Page Likes Order Changes",
+            "description": "A Facebook Page Likes order applies to the Page Like count on the public Facebook Page submitted with the order. It does not automatically add Facebook Followers or likes to individual posts.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-page-likes-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public Facebook Page URL and the Page Likes package you want to purchase. Your Facebook password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-6",
+            "title": "What Facebook Page Likes Do Not Include",
+            "description": "Page Likes are separate from Facebook Followers and Post Likes. Ordering Page Likes does not automatically add those other metrics or guarantee additional engagement, reach, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected Facebook Page Likes, chosen the correct Page Like quantity, and provided the URL for the exact public Facebook Page where you want the Page Likes added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-page-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-page-likes-what-happens",
+        "title": "What Happens After You Buy Facebook Page Likes?",
+        "description": "After you place a Facebook Page Likes order, the Page Likes package and public Facebook Page URL you submitted are used to process the order for the selected Page. Keep the Page publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-facebook-page-likes-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected Page Likes package, quantity, and submitted Facebook Page URL are associated with your order so the request can be processed for the intended Page."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-2",
+            "title": "Page Likes Go to the Submitted Page",
+            "description": "The order applies to the Facebook Page connected to the URL you provided. Check the Page URL carefully before completing checkout."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the Page Like quantity and current order conditions. One fixed delivery time should not be expected for every package."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking for available status updates. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid deleting the submitted Page, making it unavailable, or changing anything that prevents access to it while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-page-likes-service-compare",
+        "title": "Facebook Page Likes vs Other Facebook Services",
+        "description": "Facebook Page Likes, Facebook Followers, and Facebook Post Likes represent different metrics. Choose the service based on whether you want to change the Page Like count, follower count, or the like count on a specific Facebook post.",
+        "current": {
+          "title": "Facebook Page Likes",
+          "description": "Page Likes are a Page-level metric. Choose Facebook Page Likes when the Page Like count on a public Facebook Page is the metric you want to change.",
+          "bestFor": "Facebook Pages where Page Like count is the metric you want to change.",
+          "ctaLabel": "Facebook Page Likes"
+        },
+        "likes": {
+          "title": "Facebook Followers",
+          "description": "Followers are a separate Page-level metric. Choose Facebook Followers when you want to increase the follower count shown on a public Facebook Page.",
+          "bestFor": "Facebook Pages where follower count is the metric you want to change.",
+          "href": "/buy-facebook-followers",
+          "ctaLabel": "View Facebook Followers"
+        },
+        "views": {
+          "title": "Facebook Post Likes",
+          "description": "Post Likes are a post-level metric. Choose Facebook Post Likes when you want to increase the like count on a specific eligible public Facebook post.",
+          "bestFor": "Individual Facebook posts where the visible like count is the metric you want to change.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "View Facebook Post Likes"
+        },
+        "combinedNote": "Choose the Facebook service that matches the exact metric you want to change before placing an order.",
+        "commentsHref": "/buy-facebook-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-page-likes-before-buying",
+        "title": "What to Check Before Buying Facebook Page Likes",
+        "description": "Before you buy Facebook Page Likes, review the package and Page details before completing your order. Make sure the Page Like quantity, price, Facebook Page URL, and selected service match what you want for the Page.",
+        "framingNote": "Check the submitted Facebook Page URL, Page Like quantity, and price one more time before checkout. Avoid relying on claims that buying Page Likes will guarantee additional followers, Post Likes, engagement, reach, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-7",
+            "title": "Check the Page Like Quantity",
+            "description": "Review the number of Facebook Page Likes included in the package so you know how many you are ordering for the submitted Page.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-8",
+            "title": "Confirm the Package Price",
+            "description": "Check the current price shown for your selected Page Likes package before adding it to the cart. If you change the quantity, review the updated price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-9",
+            "title": "Use the Correct Facebook Page URL",
+            "description": "Check the public Facebook Page URL carefully so the order is associated with the exact Page where you want the Page Likes added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-10",
+            "title": "Choose the Right Facebook Service",
+            "description": "Page Likes, Followers, and Post Likes are separate metrics. Check that Facebook Page Likes is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-page-likes-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-page-likes-worldwide",
+        "title": "Preparing Your Facebook Page for Page Likes",
+        "description": "Facebook Page Likes applies to the Like count of an eligible public Facebook Page. Make sure the Page submitted during checkout is the exact Page you want to use.",
+        "eyebrow": "Ready for Facebook Page Likes",
+        "closingNote": "Facebook Page Likes applies to a public Facebook Page. Submit a Page URL rather than a post URL, keep the Page public, and review the selected quantity before checkout.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-12",
+            "title": "Submit a Page URL",
+            "description": "Use the public Facebook Page URL requested for the service. A link to an individual Facebook post is not the correct target for Page Likes.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-13",
+            "title": "Keep the Page Public",
+            "description": "Keep the submitted Page publicly accessible where required while the order is being processed.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-14",
+            "title": "Page Likes and Followers Are Separate",
+            "description": "Page Likes and Followers are both Page-level metrics, but they are different services. Choose the one that matches the metric you want to change.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-15",
+            "title": "Review Quantity and Price",
+            "description": "Check the selected Page Like quantity and current package price before completing your order.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-page-likes-popular-packages",
+        "title": "Popular Facebook Page Likes Packages",
+        "description": "Compare some of the Facebook Page Like quantities available on NovaLikes below, or return to the full pricing section to see all available package options.",
+        "rows": [
+          {
+            "id": "fb-pl-100",
+            "quantity": "100 Page Likes",
+            "recommendedFor": "A smaller package for a public Facebook Page where you want to add one hundred Page Likes."
+          },
+          {
+            "id": "fb-pl-500",
+            "quantity": "500 Page Likes",
+            "recommendedFor": "A smaller-to-mid-range option for a Facebook Page where you want to add five hundred Page Likes."
+          },
+          {
+            "id": "fb-pl-1000",
+            "quantity": "1,000 Page Likes",
+            "recommendedFor": "A mid-range package for a public Facebook Page where you want to add one thousand Page Likes."
+          },
+          {
+            "id": "fb-pl-5000",
+            "quantity": "5,000 Page Likes",
+            "recommendedFor": "A larger option for a Facebook Page where you want to add five thousand Page Likes."
+          },
+          {
+            "id": "fb-pl-10000",
+            "quantity": "10,000 Page Likes",
+            "recommendedFor": "A higher-volume package for a public Facebook Page where you want to add ten thousand Page Likes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-page-likes-best-practices",
+        "title": "Best Practices After Buying Facebook Page Likes",
+        "description": "Buying Page Likes changes the Page Like count on the selected Facebook Page, but the rest of your Facebook activity still depends on the content you publish and how you manage your Page. Keep your Page active, review its performance, and interact with your audience alongside the service.",
+        "closingNote": "Page Like count is only one metric on a Facebook Page. Your followers, post interactions, audience responses, and other activity still depend on how you manage your Facebook presence.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-16",
+            "title": "Keep Your Facebook Page Active",
+            "description": "Continue publishing posts that fit your business, brand, topic, or the audience you want to reach.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-17",
+            "title": "Keep Your Page Information Updated",
+            "description": "Review your Page name, description, contact details, website, business information, and other public details when relevant.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-page-likes-18",
+            "title": "Review Your Facebook Insights",
+            "description": "If insights are available for your Page, review Page activity, post performance, engagement, and other available data to understand how your own content performs.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-19",
+            "title": "Test Different Types of Content",
+            "description": "Try different post formats, topics, images, videos, and publishing approaches to learn what works for your Page.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-20",
+            "title": "Respond to Genuine Interaction",
+            "description": "Reply to genuine comments and messages when appropriate. A higher Page Like count does not replace the interactions you build through your own Page activity.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-21",
+            "title": "Maintain a Consistent Page Presence",
+            "description": "Keep managing and publishing on your Page rather than treating a Page Likes package as a replacement for ongoing Facebook activity.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-page-likes-common-mistakes",
+        "title": "Common Mistakes When Buying Facebook Page Likes",
+        "description": "A few simple mistakes can cause problems with a Facebook Page Likes order. Check the Page URL, Page Like quantity, service, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the Facebook Page URL, Page Like quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-22",
+            "title": "Submitting the Wrong Facebook Page URL",
+            "description": "Check the public Facebook Page URL carefully before ordering. The URL should point to the exact Page where you want the Page Likes added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-23",
+            "title": "Choosing the Wrong Facebook Service",
+            "description": "Page Likes, Followers, and Post Likes are separate services. Choose Facebook Page Likes only when the Page Like count on a Page is the metric you want to change.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-24",
+            "title": "Selecting the Wrong Page Like Quantity",
+            "description": "Review the number of Page Likes included in your selected package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-25",
+            "title": "Making the Page Unavailable During an Order",
+            "description": "Avoid deleting the submitted Page or making it unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-26",
+            "title": "Expecting Page Likes to Guarantee Other Results",
+            "description": "A higher Page Like count does not automatically mean more followers, Post Likes, engagement, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Facebook Followers",
+            "description": "Choose Facebook Followers when the follower count on a public Facebook Page is the metric you want to change.",
+            "ctaLabel": "View Facebook Followers"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Facebook Post Likes",
+            "description": "Choose Facebook Post Likes when you want to increase the like count shown on an eligible public Facebook post.",
+            "ctaLabel": "View Facebook Post Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-page-likes-why-buy",
+      "title": "Why Do People Buy Facebook Page Likes?",
+      "description": "People buy Facebook Page Likes for different reasons. Some want to increase the Page Like count displayed on a Facebook Page, while others choose a Page Likes package for a Page connected to a business, brand, campaign, or ongoing content activity. The service changes the Page Like metric on the selected Page, but it does not guarantee additional followers, post likes, engagement, reach, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-facebook-page-likes-wb-1",
+          "title": "Increase the Visible Page Like Count",
+          "description": "A Facebook Page Likes package can be used when you want to increase the Page Like count displayed on a specific public Facebook Page."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-2",
+          "title": "Use Page Likes Around a Launch or Campaign",
+          "description": "Businesses and Page owners may choose a Page Likes package while working on a launch, campaign, announcement, or other Facebook activity."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-3",
+          "title": "Focus on the Page Like Metric",
+          "description": "Facebook Page Likes applies to the Page Like count on the selected Page. It does not automatically add Facebook Followers or likes to individual Facebook posts."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-4",
+          "title": "Choose the Quantity You Want",
+          "description": "Different package sizes let you select the number of Facebook Page Likes you want to order for the submitted Page."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-5",
+          "title": "Use Page Likes Alongside Your Content",
+          "description": "Buying Page Likes does not replace publishing and managing your own Facebook content. Posts, replies, Page information, and other activity still depend on how you manage your Page."
+        }
+      ],
+      "bottomNote": "If Facebook Followers or Post Likes are the metric you want to change instead, choose the corresponding Facebook service rather than a Page Likes package."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Page Likes",
+      "description": "Buying Facebook Page Likes through NovaLikes takes four steps. Choose the Page Likes package you want, provide the public Facebook Page URL, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-facebook-page-likes-step-1",
+          "title": "Choose Your Page Likes Package",
+          "description": "Compare the available Facebook Page Like quantities and prices, then select the package you want for your Page."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-2",
+          "title": "Enter the Facebook Page URL",
+          "description": "Provide the correct public Facebook Page URL for the Page where you want the Page Likes added. Your Facebook password is not required."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected Page Like quantity and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your Facebook Page Likes order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Facebook Services",
+    "relatedIntro": "Page Likes are only one Facebook metric. If you want to increase the follower count on a Facebook Page or the like count on a specific Facebook post instead, compare the other Facebook services below."
+  }
+}

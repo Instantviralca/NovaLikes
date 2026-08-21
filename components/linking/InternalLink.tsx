@@ -7,6 +7,7 @@ import {
   linkingAnalyticsEvents,
   trackLinkingEvent,
 } from '@/lib/analytics/linking-events';
+import { prefetchForHref } from '@/lib/linking/prefetch';
 import { cn } from '@/lib/utils';
 import type { InternalLink } from '@/types/linking';
 
@@ -35,6 +36,7 @@ export function InternalLinkAnchor({
   return (
     <Link
       href={link.href}
+      prefetch={prefetchForHref(link.href)}
       className={cn(
         'min-h-11 inline-flex items-center underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         className,

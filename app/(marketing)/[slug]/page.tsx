@@ -3,23 +3,14 @@ import { notFound } from 'next/navigation';
 
 import { JsonLdScript } from '@/components/common/json-ld';
 import { ServicePageView } from '@/components/sections/ServicePageView';
-import { getServiceContentBySlug } from '@/data/content/services';
 import { APPROVED_SERVICE_SLUGS } from '@/data/linking/approved-services';
 import { getServiceBySlug } from '@/data/services';
-import { mapServiceContent } from '@/lib/content/mappers';
 import { ensureCatalogHydrated } from '@/lib/catalog/package-overrides-store';
-import { getApprovedReviews, getServicePageReviews } from '@/lib/reviews';
-import { buildReviewSchemaBundle } from '@/lib/reviews/schema-engine';
 import { asJsonLdGraph } from '@/lib/seo/schema';
-import { buildCanonicalUrl } from '@/lib/seo/metadata';
 import { buildBreadcrumb } from '@/lib/linking';
-import { faqPageSchema } from '@/schemas/faq';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { productSchema, serviceSchema } from '@/schemas/service';
-import { webPageSchema } from '@/schemas/website';
-import { descriptions } from '@/seo/descriptions';
+import { serviceSchema } from '@/schemas/service';
 import { serviceMetadata } from '@/seo/metadata';
-import { titles } from '@/seo/titles';
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -50,55 +41,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   await ensureCatalogHydrated();
-  const content = getServiceContentBySlug(service.slug);
-  const vm = content ? mapServiceContent(content) : null;
-  const title = content?.seo?.title ?? titles.service(service);
-  const description = content?.seo?.description ?? descriptions.service(service);
-  const canonical = buildCanonicalUrl(service.url);
-
-  const visibleReviews =
-    service.slug === 'buy-tiktok-followers' ||
-    service.slug === 'buy-tiktok-views' ||
-    service.slug === 'buy-facebook-followers' ||
-    service.slug === 'buy-facebook-page-likes' ||
-    service.slug === 'buy-facebook-post-likes' ||
-    service.slug === 'buy-youtube-subscribers' ||
-    service.slug === 'buy-youtube-views'
-    ? []
-    : getServicePageReviews({
-          serviceSlug: service.slug,
-          platform: service.platform,
-          limit: 6,
-        });
-  const reviewBundle = buildReviewSchemaBundle(getApprovedReviews(), {
-    entity: {
-      kind: 'service',
-      serviceSlug: service.slug,
-      name: service.name,
-      url: canonical,
-      platform: service.platform,
-    },
-    visibleReviewIds: visibleReviews.map((review) => review.id),
-    reviewSectionVisible: visibleReviews.length > 0,
-  });
-
-  const serviceNode = serviceSchema(service);
-  if (reviewBundle.aggregate) {
-    serviceNode.aggregateRating = reviewBundle.aggregate;
-  }
 
   const graph = asJsonLdGraph([
-    webPageSchema({
-      title,
-      description,
-      path: service.url,
-      url: canonical,
-    }),
-    serviceNode,
-    productSchema(service),
+    serviceSchema(service),
     breadcrumbSchema(buildBreadcrumb(service.slug)),
-    ...(vm && vm.faq.items.length > 0 ? [faqPageSchema(vm.faq.items)] : []),
-    ...reviewBundle.reviews,
   ]);
 
   return (

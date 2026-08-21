@@ -1,22 +1,18 @@
-'use client';
+import type { HTMLAttributes, ReactNode } from 'react';
 
-import { motion, type HTMLMotionProps } from 'framer-motion';
-
-import { theme } from '@/config/theme';
+import { fadeDelayStyle } from '@/components/motion/fade-delay-style';
 import { cn } from '@/lib/utils';
 
-type FadeLeftProps = HTMLMotionProps<'div'> & {
+type FadeLeftProps = HTMLAttributes<HTMLDivElement> & {
   delay?: number;
+  children?: ReactNode;
 };
 
-export function FadeLeft({ className, delay = 0, ...props }: FadeLeftProps) {
+export function FadeLeft({ className, delay = 0, style, ...props }: FadeLeftProps) {
   return (
-    <motion.div
-      className={cn(className)}
-      initial={{ opacity: 0, x: 12 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: theme.motion.durationBase, delay, ease: theme.motion.easeOut }}
+    <div
+      className={cn('nl-fade-left', className)}
+      style={fadeDelayStyle(delay, style)}
       {...props}
     />
   );

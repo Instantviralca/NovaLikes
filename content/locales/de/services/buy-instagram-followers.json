@@ -1,0 +1,601 @@
+{
+  "content": {
+    "slug": "buy-instagram-followers",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Instagram-Follower-Pakete und Preise | NovaLikes",
+      "description": "Vergleichen Sie Instagram-Follower-Pakete, Preise, Lieferangaben und verfügbare Größen. Wählen Sie eine Option, die zu Konto und Wachstumsziel passt."
+    },
+    "hero": {
+      "eyebrow": "INSTAGRAM FOLLOWER KAUFEN",
+      "title": "Instagram Follower kaufen",
+      "description": "Kaufen Sie Instagram Follower für Ihr öffentliches Profil, indem Sie die Paketgröße wählen, die zu Ihrem Konto passt. NovaLikes bietet Instagram-Follower-Pakete für Creator, Unternehmen, Marken und andere öffentliche Konten. Vergleichen Sie verfügbare Mengen und Preise, geben Sie Ihren öffentlichen Instagram-Benutzernamen ein und schließen Sie die Bestellung online ab. Ein Instagram-Passwort ist nicht erforderlich.",
+      "purpose": "Convert visitors comparing Instagram follower packages",
+      "primaryKeyword": "instagram followers packages",
+      "supportingKeywords": [
+        "Instagram Followers Pricing",
+        "Instagram Followers Plans",
+        "Instagram Followers Delivery",
+        "Instagram Followers Order"
+      ],
+      "suggestedWordCount": 60,
+      "primaryCta": {
+        "label": "Paket wählen",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Lieferangaben ansehen",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-f-trust-password",
+          "label": "Kein Passwort erforderlich"
+        },
+        {
+          "id": "ig-f-trust-public",
+          "label": "Nur öffentlicher Benutzername"
+        },
+        {
+          "id": "ig-f-trust-checkout",
+          "label": "Sicherer Checkout"
+        },
+        {
+          "id": "ig-f-trust-support",
+          "label": "Kundensupport"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-followers/instagram-followers-hero.webp",
+        "alt": "Instagram-Profil-Dashboard mit verfügbaren Follower-Paketen",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Instagram-Follower-Pakete und Preise",
+      "description": "Wählen Sie die gewünschte Anzahl Instagram Follower und sehen Sie den Preis jedes Pakets vor der Bestellung. Wählen Sie unten eine Menge, prüfen Sie die Paketdetails und fahren Sie fort, wenn die Option zu Ihrem Konto passt.",
+      "purpose": "Present real NovaLikes.com follower packages",
+      "primaryKeyword": "Instagram Followers Pricing",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Mit diesem Paket fortfahren",
+      "emptyMessage": "Instagram-Follower-Pakete sind vorübergehend nicht verfügbar."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-followers",
+      "title": "Warum kaufen Menschen Instagram Follower?",
+      "description": "Menschen kaufen Instagram Follower aus unterschiedlichen Gründen. Manche möchten auf einem neuen Profil eine höhere Follower-Zahl, andere nutzen Follower-Pakete zusätzlich zu regelmäßigem Posten, Kampagnen oder Markenaktivität. Der Service ändert die sichtbare Follower-Zahl auf Ihrem Profil, sagt aber keine Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "purpose": "Explain informed use of Instagram followers packages",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "ig-f-social-proof",
+          "title": "Erste Zielgruppe aufbauen",
+          "description": "Neuere Profile können ein Follower-Paket nutzen, um mit einer größeren sichtbaren Zielgruppe zu starten, während sie weiterhin eigene Inhalte veröffentlichen."
+        },
+        {
+          "id": "ig-f-launch",
+          "title": "Produkt- oder Markenlaunch unterstützen",
+          "description": "Creator und Unternehmen können Follower hinzufügen, während sie ein neues Konto, Produkt, einen Service oder eine Kampagne auf Instagram einführen."
+        },
+        {
+          "id": "ig-f-community",
+          "title": "Sichtbare Follower-Zahl erhöhen",
+          "description": "Follower-Pakete erhöhen die auf dem Profil angezeigte Follower-Zahl, ohne Likes, Views oder Kommentare einzelner Beiträge zu ändern."
+        },
+        {
+          "id": "ig-f-flexible",
+          "title": "Eine Menge wählen, die zum Profil passt",
+          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Follower-Zahl anhand der aktuellen Kontogröße und Ihres Bestellziels zu wählen."
+        },
+        {
+          "id": "ig-f-alongside",
+          "title": "Follower zusammen mit regelmäßigem Content nutzen",
+          "description": "Der Kauf von Followern kann die sichtbare Größe eines Kontos ändern. Beiträge, Reels, Stories und die Interaktion mit der Zielgruppe hängen weiterhin davon ab, was Sie veröffentlichen und wie Sie das Profil führen."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes",
+      "title": "Warum bei NovaLikes bestellen",
+      "description": "NovaLikes hält die Instagram-Follower-Bestellung übersichtlich: nur öffentlicher Benutzername, klare Paketdetails, sicherer Checkout und verfügbare Bestellverfolgung.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 40,
+      "items": [
+        {
+          "id": "ig-f-wn-username",
+          "title": "Nur öffentlicher Benutzername",
+          "description": "Bestellungen nutzen Ihren öffentlichen Instagram-Benutzernamen – kein Passwort und kein privater Kontozugriff."
+        },
+        {
+          "id": "ig-f-wn-checkout",
+          "title": "Sicherer Checkout",
+          "description": "Schließen Sie die Zahlung über einen geschützten Checkout-Prozess ab."
+        },
+        {
+          "id": "ig-f-wn-tracking",
+          "title": "Bestellverfolgung",
+          "description": "Verfolgen Sie verfügbare Lieferupdates mit Bestell-ID und E-Mail."
+        },
+        {
+          "id": "ig-f-wn-support",
+          "title": "Kundensupport",
+          "description": "Hilfe bei Paketwahl, Checkout-Fragen und Bestellupdates."
+        }
+      ]
+    },
+    "features": {
+      "id": "buy-instagram-followers-features",
+      "title": "Funktionen",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "So kaufen Sie Instagram Follower",
+      "description": "Instagram Follower über NovaLikes zu bestellen, dauert vier Schritte. Wählen Sie Ihr Paket, geben Sie den öffentlichen Benutzernamen des Instagram-Profils an, schließen Sie den Checkout ab und verfolgen Sie den Status mit Ihren Bestelldaten.",
+      "purpose": "Explain ordering process",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 80,
+      "steps": [
+        {
+          "id": "ig-f-step-1",
+          "title": "Follower-Paket wählen",
+          "description": "Vergleichen Sie verfügbare Instagram-Follower-Mengen und Preise und wählen Sie das Paket für Ihr Profil."
+        },
+        {
+          "id": "ig-f-step-2",
+          "title": "Instagram-Benutzernamen eingeben",
+          "description": "Geben Sie den korrekten öffentlichen Benutzernamen des Instagram-Kontos an, das die Follower erhalten soll. Ihr Passwort brauchen Sie nicht."
+        },
+        {
+          "id": "ig-f-step-3",
+          "title": "Bestellung abschließen",
+          "description": "Prüfen Sie die gewählte Follower-Menge und den Preis und gehen Sie durch den Checkout, um zu bestellen."
+        },
+        {
+          "id": "ig-f-step-4",
+          "title": "Bestellung verfolgen",
+          "description": "Nutzen Sie nach dem Checkout die verfügbare Bestellverfolgung, um den Status Ihrer Instagram-Follower-Bestellung zu prüfen."
+        }
+      ],
+      "cta": {
+        "label": "Paket wählen",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "delivery-and-safety",
+      "title": "Was brauchen Sie für eine Bestellung?",
+      "description": "Für Instagram Follower sind nur wenige öffentliche Angaben nötig. Sie müssen weder Instagram-Passwort noch privaten Kontozugriff oder Bestätigungscodes angeben.",
+      "purpose": "Explain username and order requirements",
+      "primaryKeyword": "Instagram Followers Delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "ig-f-req-username",
+          "title": "Öffentlicher Instagram-Benutzername",
+          "description": "Geben Sie den öffentlichen Benutzernamen des Instagram-Profils an, das das gewählte Follower-Paket erhalten soll."
+        },
+        {
+          "id": "ig-f-req-package",
+          "title": "Gewähltes Paket",
+          "description": "Wählen Sie die Follower-Menge, die am besten zu Konto und aktuellem Wachstumsziel passt."
+        },
+        {
+          "id": "ig-f-req-public",
+          "title": "Öffentlicher Profilzugriff",
+          "description": "Das gewählte Instagram-Profil sollte während der Bearbeitung Ihrer Bestellung öffentlich zugänglich bleiben."
+        },
+        {
+          "id": "ig-f-req-email",
+          "title": "E-Mail-Adresse",
+          "description": "Verwenden Sie eine gültige E-Mail-Adresse, damit Sie Bestellbestätigungen, Updates und bei Bedarf Kundensupport erhalten können."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "ig-followers-reviews",
+      "title": "Aktuelle Kundenerfahrungen",
+      "description": "Lesen Sie Rückmeldungen von Kundinnen und Kunden, die unseren Instagram-Paket-Service genutzt und ihre Bestellungen über NovaLikes abgeschlossen haben.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-followers-faq",
+      "title": "Häufige Fragen zum Kauf von Instagram Followern",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "instagram followers packages",
+      "faqIds": [
+        "faq-ig-followers-password",
+        "faq-ig-followers-delivery-speed",
+        "faq-ig-followers-gradual-delivery",
+        "faq-ig-followers-refill",
+        "faq-ig-followers-private",
+        "faq-ig-followers-track",
+        "faq-ig-followers-business",
+        "faq-ig-followers-money-back"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services",
+      "title": "Weitere Instagram-Services entdecken",
+      "description": "Follower sind nur ein Teil eines Instagram-Profils. Wenn Sie stattdessen an einem bestimmten Beitrag, Reel oder Video arbeiten möchten, vergleichen Sie die anderen Instagram-Services unten.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-likes",
+        "buy-instagram-views",
+        "buy-instagram-comments"
+      ]
+    },
+    "finalCta": {
+      "id": "ig-followers-final-cta",
+      "title": "Wählen Sie Ihr Instagram-Follower-Paket",
+      "description": "Vergleichen Sie verfügbare Follower-Mengen und Preise, wählen Sie das Paket, das zu Ihrem Profil passt, und bestellen Sie mit Ihrem öffentlichen Instagram-Benutzernamen.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Instagram-Follower-Pakete ansehen",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Bestellung verfolgen",
+        "href": "/track-order"
+      }
+    }
+  },
+  "followersAuthority": {
+    "whyChoose": {
+      "id": "why-choose-novalikes-instagram-followers",
+      "title": "Warum NovaLikes für Instagram Follower?",
+      "description": "NovaLikes hält den Bestellablauf für Instagram Follower einfach. Sie können Paketgrößen und Preise vor dem Kauf vergleichen, mit Ihrem öffentlichen Benutzernamen bestellen, den Kauf verfolgen und den Support kontaktieren, wenn Sie Hilfe brauchen.",
+      "items": [
+        {
+          "id": "ig-f-wc-username",
+          "title": "Pakete für unterschiedliche Kontogrößen",
+          "description": "Wählen Sie kleinere und größere Follower-Mengen, statt für ein festes Paket zu zahlen, das nicht zu Ihrem Profil passt.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-wc-checkout",
+          "title": "Preise vor der Bestellung",
+          "description": "Sehen Sie die Kosten jedes Instagram-Follower-Pakets, bevor Sie Ihre Auswahl in den Warenkorb legen.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-wc-tracking",
+          "title": "Bestellung verfolgen",
+          "description": "Prüfen Sie mit Ihren Bestelldaten verfügbare Statusupdates, nachdem der Kauf aufgegeben wurde.",
+          "icon": "map-pin"
+        },
+        {
+          "id": "ig-f-wc-support",
+          "title": "Kundensupport",
+          "description": "Kontaktieren Sie NovaLikes, wenn Sie Hilfe bei der Paketwahl brauchen oder eine Frage zu einer bestehenden Follower-Bestellung haben.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "whyBuyNote": "Das passende Paket hängt von Ihrem Konto und dem ab, was Sie ändern möchten. Geht es um Beitrags-Likes, Reel-Views oder Kommentare statt um die Follower-Zahl, wählen Sie den entsprechenden Instagram-Service.",
+    "orderNotice": "NovaLikes bearbeitet Follower-Bestellungen ausschließlich mit Ihrem öffentlichen Instagram-Benutzernamen. Ihr Instagram-Passwort wird im Checkout nie verlangt.",
+    "canYouBuy": {
+      "id": "can-you-buy-instagram-followers",
+      "title": "Kann man Instagram Follower kaufen?",
+      "description": "Ja. Instagram-Follower-Pakete können bei Drittanbietern wie NovaLikes gekauft werden. Sie wählen die gewünschte Follower-Zahl, geben den öffentlichen Instagram-Benutzernamen des Profils an und schließen die Bestellung über die Website ab.",
+      "cards": [
+        {
+          "id": "ig-f-can-username",
+          "title": "Was der Kauf von Instagram Followern tatsächlich ändert",
+          "description": "Eine Instagram-Follower-Bestellung zielt auf die Follower-Zahl des gewählten Profils. Sie erhöht nicht automatisch Likes, Kommentare oder Views Ihrer Beiträge und sagt nicht zu, dass Instagram Ihre Inhalte mehr Menschen zeigt.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-can-password",
+          "title": "Ihr Konto braucht weiterhin eigenen Content",
+          "description": "Eine höhere Follower-Zahl ersetzt das Posten nicht. Fotos, Reels, Stories, Bildunterschriften, Antworten und andere Kontoaktivität kommen weiterhin von Ihnen. Wenn Sie eine Zielgruppe aufbauen möchten, die regelmäßig mit Ihren Inhalten interagiert, bleibt Ihre Instagram-Aktivität wichtig.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-can-packages",
+          "title": "Follower unterscheiden sich von anderen Instagram-Services",
+          "description": "Wählen Sie Follower, wenn die Follower-Zahl des Profils das ist, was Sie ändern möchten. Instagram Likes gelten für einzelne Beiträge oder Reels, Instagram Views für geeignete Videoinhalte und Instagram Kommentare für Kommentare auf ausgewählten Inhalten.",
+          "icon": "sparkles"
+        }
+      ],
+      "closingNote": "Prüfen Sie vor der Bestellung, dass Sie den richtigen Service und die passende Follower-Menge für Ihr Profil gewählt haben. Paketoptionen und Preise stehen auf dieser Seite, damit Sie sie vor dem Checkout vergleichen können."
+    },
+    "doesBuyingHelp": {
+      "id": "does-buying-instagram-followers-help",
+      "title": "Hilft der Kauf von Instagram Followern?",
+      "description": "Der Kauf von Instagram Followern erhöht die sichtbare Follower-Zahl auf einem Profil, was den ersten Eindruck für Besuchende stärken kann. Follower-Pakete sagen jedoch keine höhere Interaktion, keine größere organische Reichweite, keine zusätzlichen Verkäufe und keine bessere Sichtbarkeit in den Empfehlungssystemen von Instagram zu.",
+      "helpTitle": "Wobei Follower helfen können",
+      "helpItems": [
+        "Eine höhere sichtbare Follower-Zahl",
+        "Ein stärkerer erster Eindruck für neue Besuchende",
+        "Zusätzlicher sozialer Nachweis bei Launches",
+        "Unterstützung neben Content und Anzeigen",
+        "Ein etablierterer Eindruck öffentlicher Profile"
+      ],
+      "limitTitle": "Was sie nicht zusagen",
+      "limitItems": [
+        "Höhere Beitragsinteraktion",
+        "Mehr Kommentare oder Shares",
+        "Größere organische Reichweite",
+        "Zusätzliche Verkäufe",
+        "Freigabe zur Monetarisierung",
+        "Algorithmische Bewerbung"
+      ],
+      "closingNote": "Follower wirken am ehesten zusammen mit wertvollen Inhalten, regelmäßigem Veröffentlichen und echter Zielgruppeninteraktion – nicht als Ersatz für eine aktive Instagram-Strategie."
+    },
+    "whatHappens": {
+      "id": "what-happens-after-you-buy-instagram-followers",
+      "title": "Was passiert nach dem Kauf von Instagram Followern?",
+      "description": "Nach einer Instagram-Follower-Bestellung werden die übermittelten Angaben genutzt, um das gewählte Paket für das richtige Profil zu bearbeiten. Lassen Sie die angegebenen Kontodaten unverändert, während die Bestellung bearbeitet wird.",
+      "steps": [
+        {
+          "id": "ig-f-th-confirmed",
+          "title": "Ihre Bestelldaten werden geprüft",
+          "description": "Das gewählte Follower-Paket und der Instagram-Benutzername werden Ihrer Bestellung zugeordnet, damit die Anfrage für das vorgesehene öffentliche Profil bearbeitet werden kann."
+        },
+        {
+          "id": "ig-f-th-delivery",
+          "title": "Die Lieferung geht an das übermittelte Profil",
+          "description": "Follower werden dem Instagram-Konto zugeordnet, das mit dem eingegebenen Benutzernamen verbunden ist. Prüfen Sie Ihren Benutzernamen sorgfältig, bevor Sie die Bestellung abschließen."
+        },
+        {
+          "id": "ig-f-th-increase",
+          "title": "Größere Bestellungen können länger dauern",
+          "description": "Die Bearbeitungszeit kann je nach Follower-Menge und aktuellen Bestellbedingungen unterschiedlich sein. Verlassen Sie sich nicht auf eine feste Lieferzeit für jedes Paket."
+        },
+        {
+          "id": "ig-f-th-grow",
+          "title": "Sie können den Bestellstatus prüfen",
+          "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Updates. Bei Fragen zu einer Bestellung kontaktieren Sie den Support mit den relevanten Bestelldaten."
+        }
+      ],
+      "closingNote": "Lassen Sie Ihr Instagram-Profil dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich. Wenn Sie nach der Bestellung den Benutzernamen oder andere relevante Kontodaten ändern, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+    },
+    "serviceCompare": {
+      "id": "instagram-followers-vs-likes-vs-views",
+      "title": "Instagram Follower vs. Likes vs. Views",
+      "description": "Follower, Likes und Views messen unterschiedliche Teile eines Instagram-Kontos. Der richtige Service hängt davon ab, ob Sie am Profil, an der Interaktion auf einem bestimmten Beitrag oder Reel oder an der View-Zahl von Videoinhalten arbeiten möchten.",
+      "current": {
+        "title": "Instagram Follower",
+        "description": "Follower sind eine Kennzahl auf Profilebene. Wählen Sie Instagram Follower, wenn Sie die auf Ihrem Konto angezeigte Follower-Zahl erhöhen möchten.",
+        "bestFor": "Follower-Zahl am Profil, neue Konten, Creator, Marken und Unternehmensprofile.",
+        "ctaLabel": "Instagram Follower"
+      },
+      "likes": {
+        "title": "Instagram Likes",
+        "description": "Likes sind an einzelne Inhalte gebunden. Wählen Sie Instagram Likes, wenn Sie mehr Likes auf einem bestimmten öffentlichen Beitrag oder Reel anzeigen möchten.",
+        "bestFor": "Beiträge, Reels und Inhalte, bei denen die sichtbare Like-Zahl die gewünschte Kennzahl ist.",
+        "href": "/buy-instagram-likes",
+        "ctaLabel": "Instagram Likes ansehen"
+      },
+      "views": {
+        "title": "Instagram Views",
+        "description": "Views gelten für geeignete Videoinhalte. Wählen Sie Instagram Views, wenn Sie die View-Zahl auf einem öffentlichen Reel oder Video erhöhen möchten.",
+        "bestFor": "Reels, Videos und andere geeignete Instagram-Videoinhalte.",
+        "href": "/buy-instagram-views",
+        "ctaLabel": "Instagram Views ansehen"
+      },
+      "combinedNote": "Wenn Kommentare die gewünschte Interaktion sind, stehen Instagram Kommentare separat für geeignete Beiträge und Reels zur Verfügung.",
+      "commentsHref": "/buy-instagram-comments"
+    },
+    "beforeBuying": {
+      "id": "what-to-check-before-buying-instagram-followers",
+      "title": "Was Sie vor dem Kauf von Instagram Followern prüfen sollten",
+      "description": "Bevor Sie Instagram Follower kaufen, prüfen Sie die Servicedetails so sorgfältig wie bei jedem Onlinekauf. Paket, Kontoangaben, Preise, Richtlinien und verfügbarer Support sollten vor dem Checkout klar sein.",
+      "framingNote": "Wählen Sie einen Service nicht allein aufgrund übertriebener Versprechen. Zusagen zu garantierter Interaktion, Reichweite, Verkäufen oder Instagram-Algorithmus-Leistung ersetzen nicht das Verständnis, was das Follower-Paket tatsächlich liefert.",
+      "items": [
+        {
+          "id": "ig-f-check-pricing",
+          "title": "Follower-Menge prüfen",
+          "description": "Stellen Sie sicher, dass Sie die Anzahl Instagram Follower gewählt haben, die Sie tatsächlich für Ihr Profil möchten. Prüfen Sie das Paket erneut, bevor Sie es in den Warenkorb legen.",
+          "icon": "credit-card"
+        },
+        {
+          "id": "ig-f-check-username",
+          "title": "Preis bestätigen",
+          "description": "Prüfen Sie den Gesamtpreis des gewählten Pakets vor dem Checkout. Wechseln Sie die Follower-Menge, prüfen Sie den aktualisierten Preis vor der Bestellung.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-check-delivery",
+          "title": "Den richtigen Instagram-Benutzernamen verwenden",
+          "description": "Prüfen Sie den übermittelten öffentlichen Benutzernamen doppelt. Ein Tippfehler oder das falsche Konto kann dazu führen, dass die Bestellung an die falsche Stelle geht.",
+          "icon": "truck"
+        },
+        {
+          "id": "ig-f-check-tracking",
+          "title": "Relevante Richtlinien lesen",
+          "description": "Prüfen Sie Bedingungen, Erstattungsinformationen und andere geltende Richtlinien, damit Sie die mit dem Kauf verbundenen Regelungen verstehen.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-check-support",
+          "title": "Wissen, wie Sie Hilfe bekommen",
+          "description": "Prüfen Sie, dass Sie den Support kontaktieren und Ihre Bestellung verfolgen können, wenn Sie nach dem Checkout eine Frage haben.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "worldwide": {
+      "id": "buying-instagram-followers",
+      "title": "Ihr Instagram-Profil auf eine Follower-Bestellung vorbereiten",
+      "description": "Bevor Sie Instagram Follower bestellen, stellen Sie sicher, dass das gewünschte Profil das richtige öffentliche Konto ist und der Benutzername während der Bearbeitung unverändert bleibt.",
+      "eyebrow": "Bereit für Instagram Follower",
+      "closingNote": "Instagram Follower ist ein Service auf Profilebene. Bestätigen Sie den Benutzernamen, halten Sie das Profil dort zugänglich, wo es erforderlich ist, und prüfen Sie das gewählte Paket vor dem Checkout.",
+      "cards": [
+        {
+          "id": "ig-f-ww-creators",
+          "title": "Öffentlichen Benutzernamen prüfen",
+          "description": "Bestätigen Sie den genauen Instagram-Benutzernamen vor dem Checkout. Die übermittelten Profilangaben bestimmen, wo die Follower-Bestellung bearbeitet wird.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-ww-businesses",
+          "title": "Profil zugänglich halten",
+          "description": "Lassen Sie das Instagram-Profil öffentlich zugänglich, sofern der gewählte Service das voraussetzt. Eine Änderung der Sichtbarkeit während einer aktiven Bestellung kann die Bearbeitung stören.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-ww-brands",
+          "title": "Benutzernamen möglichst nicht ändern",
+          "description": "Ändern Sie den übermittelten Benutzernamen möglichst nicht, solange eine Bestellung aktiv ist. Kontaktieren Sie den Support, wenn eine wichtige Kontoänderung eine bestehende Bestellung betrifft.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-ww-orgs",
+          "title": "Paket vor dem Checkout prüfen",
+          "description": "Prüfen Sie Follower-Menge und Preis noch einmal, bevor Sie die Bestellung abschließen, damit das gewählte Paket dem gewünschten Kauf entspricht.",
+          "icon": "users"
+        }
+      ]
+    },
+    "packageSizes": {
+      "id": "popular-instagram-followers-packages",
+      "title": "Beliebte Instagram-Follower-Pakete",
+      "description": "Unsicher, welches Paket passt? Das sind einige der Instagram-Follower-Mengen bei NovaLikes. Vergleichen Sie die Optionen unten oder kehren Sie zum vollständigen Preisbereich zurück, um alle verfügbaren Pakete zu sehen.",
+      "rows": [
+        {
+          "id": "pkg-100",
+          "quantity": "100 Follower",
+          "recommendedFor": "Eine kleinere Option für Profile, die mit einer gemäßigten Follower-Erhöhung starten möchten."
+        },
+        {
+          "id": "pkg-500",
+          "quantity": "500 Follower",
+          "recommendedFor": "Eine mittlere Option für Konten, die eine deutlichere Änderung der Follower-Zahl möchten."
+        },
+        {
+          "id": "pkg-1k",
+          "quantity": "1.000 Follower",
+          "recommendedFor": "Ein größeres Paket für Profile, die in einer Bestellung eintausend Follower hinzufügen möchten."
+        },
+        {
+          "id": "pkg-5k",
+          "quantity": "5.000 Follower",
+          "recommendedFor": "Eine Option mit höherem Volumen für Konten, die eine größere Steigerung der angezeigten Follower-Zahl möchten."
+        },
+        {
+          "id": "pkg-10k",
+          "quantity": "10.000+ Follower",
+          "recommendedFor": "Eine Option für Profile, die eine der größeren Follower-Mengen bei NovaLikes wählen."
+        }
+      ]
+    },
+    "bestPractices": {
+      "id": "best-practices-after-buying-instagram-followers",
+      "title": "Bewährte Vorgehensweisen nach dem Kauf von Instagram Followern",
+      "description": "Der Kauf von Followern ändert die Follower-Zahl auf Ihrem Profil. Der Rest Ihrer Instagram-Präsenz hängt weiterhin davon ab, wie Sie das Konto führen. Bleiben Sie beim Veröffentlichen, verbessern Sie Ihr Profil und nutzen Sie eigene Kontodaten, um zu verstehen, worauf Ihre Zielgruppe reagiert.",
+      "closingNote": "Die Follower-Zahl ist nur ein Teil eines Instagram-Profils. Inhaltsqualität, Posting-Gewohnheiten, Zielgruppeninteraktion und die Darstellung Ihres Kontos brauchen weiterhin Aufmerksamkeit.",
+      "items": [
+        {
+          "id": "ig-f-bp-publish",
+          "title": "Regelmäßig weiter posten",
+          "description": "Veröffentlichen Sie weiterhin Beiträge, Reels und Stories, statt eine Follower-Bestellung als Ersatz für regelmäßigen Content zu behandeln.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-bp-profile",
+          "title": "Profil vollständig halten",
+          "description": "Nutzen Sie ein klares Profilfoto, eine sinnvolle Bio, einen passenden Link und korrekte Kontoangaben, damit Besuchende schnell verstehen, wer Sie sind und worüber Sie posten.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-bp-engage",
+          "title": "Inhalte für Ihre Zielgruppe erstellen",
+          "description": "Planen Sie Beiträge rund um Themen, Produkte, Services oder Interessen, die für die Menschen relevant sind, die Sie erreichen möchten.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-bp-growth",
+          "title": "Instagram Insights beachten",
+          "description": "Wenn Insights auf Ihrem Konto verfügbar sind, prüfen Sie Kennzahlen wie Reichweite, Views, Interaktionen und Follower-Aktivität, um zu sehen, wie Ihre eigenen Inhalte performen.",
+          "icon": "sparkles"
+        },
+        {
+          "id": "ig-f-bp-formats",
+          "title": "Reels, Beiträge und Stories unterschiedlich nutzen",
+          "description": "Unterschiedliche Instagram-Formate bieten unterschiedliche Veröffentlichungswege. Testen Sie die Formate, die zu Ihrem Konto passen, statt sich auf nur eine Inhaltsart zu stützen.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-bp-respond",
+          "title": "Auf echte Interaktionen antworten",
+          "description": "Antworten Sie bei Bedarf auf echte Kommentare und Nachrichten. Der Kauf von Followern ersetzt nicht die Gespräche und Beziehungen, die Sie durch Ihre eigene Kontoaktivität aufbauen.",
+          "icon": "heart"
+        }
+      ]
+    },
+    "commonMistakes": {
+      "id": "common-mistakes-when-buying-instagram-followers",
+      "title": "Häufige Fehler beim Kauf von Instagram Followern",
+      "description": "Die meisten Probleme lassen sich vermeiden, wenn Sie vor und nach der Bestellung einige Details prüfen. Das sind häufige Fehler bei der Wahl eines Instagram-Follower-Pakets.",
+      "closingNote": "Prüfen Sie vor dem Checkout Profilangaben, gewählten Service, Follower-Menge und Preis noch einmal. Ist etwas an einer bestehenden Bestellung unklar, nutzen Sie die verfügbare Verfolgung oder den Support.",
+      "items": [
+        {
+          "id": "ig-f-mistake-quantity",
+          "title": "Falschen Benutzernamen eingeben",
+          "description": "Prüfen Sie Ihren Instagram-Benutzernamen vor dem Checkout sorgfältig. Die Bestellung muss dem richtigen öffentlichen Profil zugeordnet werden.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-mistake-content",
+          "title": "Den falschen Service wählen",
+          "description": "Follower, Likes, Views und Kommentare sind unterschiedliche Services. Wählen Sie Follower nur, wenn die Follower-Zahl auf Ihrem Profil das ist, was Sie ändern möchten.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-mistake-details",
+          "title": "Ein Paket wählen, ohne die Menge zu prüfen",
+          "description": "Prüfen Sie die im Paket enthaltene Follower-Zahl vor der Bestellung, damit Sie genau wissen, welche Menge Sie gewählt haben.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-mistake-results",
+          "title": "Erwarten, dass Follower Content ersetzen",
+          "description": "Eine höhere Follower-Zahl ersetzt weder Beiträge, Reels und Stories noch die Arbeit, die zur Führung Ihres Instagram-Kontos gehört.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-mistake-engagement",
+          "title": "Garantierte Interaktion oder Reichweite erwarten",
+          "description": "Gehen Sie nicht davon aus, dass eine Änderung der Follower-Zahl automatisch mehr Likes, Kommentare, Views, Reichweite, Verkäufe oder organisches Wachstum erzeugt.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-mistake-account-change",
+          "title": "Wichtige Kontodaten während einer Bestellung ändern",
+          "description": "Vermeiden Sie es, den übermittelten Benutzernamen oder andere relevante Profilangaben zu ändern, während eine Bestellung bearbeitet wird. Kontaktieren Sie den Support, wenn eine notwendige Kontoänderung eine bestehende Bestellung betrifft.",
+          "icon": "users"
+        }
+      ]
+    },
+    "relatedPackages": {
+      "copyBySlug": {
+        "buy-instagram-likes": {
+          "title": "Instagram Likes",
+          "description": "Wählen Sie Instagram Likes, wenn Sie einem bestimmten öffentlichen Beitrag oder Reel Likes hinzufügen möchten.",
+          "ctaLabel": "Instagram Likes ansehen"
+        },
+        "buy-instagram-views": {
+          "title": "Instagram Views",
+          "description": "Wählen Sie Instagram Views, wenn Sie die View-Zahl auf einem geeigneten öffentlichen Reel oder Video erhöhen möchten.",
+          "ctaLabel": "Instagram Views ansehen"
+        },
+        "buy-instagram-comments": {
+          "title": "Instagram Kommentare",
+          "description": "Wählen Sie Instagram Kommentare, wenn einem geeigneten öffentlichen Beitrag oder Reel Kommentare hinzugefügt werden sollen.",
+          "ctaLabel": "Instagram Kommentare ansehen"
+        }
+      }
+    }
+  }
+}

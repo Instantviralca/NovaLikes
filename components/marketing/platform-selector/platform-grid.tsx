@@ -1,5 +1,3 @@
-'use client';
-
 import { PlatformCard } from '@/components/marketing/platform-selector/platform-card';
 import type { PlatformSelectorGridProps } from '@/components/marketing/platform-selector/types';
 import { StaggerChildren, StaggerItem } from '@/components/motion/stagger';

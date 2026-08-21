@@ -1,0 +1,24 @@
+{
+  "h1": "Opiniones de clientes",
+  "intro": "Opiniones de clientes del catálogo publicado de NovaLikes. Las valoraciones de abajo reflejan ese catálogo y pueden incluir comentarios de 4 y 5 estrellas.",
+  "catalogueHeading": "Catálogo de opiniones de clientes",
+  "emptyFilter": "Ninguna opinión coincide con este filtro de plataforma.",
+  "showingTemplate": "Mostrando {visible} de {total} {word}",
+  "reviewSingular": "opinión",
+  "reviewPlural": "opiniones",
+  "loadMore": "Cargar más opiniones",
+  "emptyCatalogue": "Las opiniones de clientes aparecerán aquí cuando haya comentarios aprobados.",
+  "filterAria": "Filtrar opiniones por plataforma",
+  "filterAll": "Todas",
+  "basedOnTemplate": "Basado en {count} {word} de clientes",
+  "exploreTitle": "¿Listo para explorar NovaLikes?",
+  "exploreIntro": "Consulta nuestros servicios de Instagram, TikTok y Facebook y elige la opción que mejor se ajuste a lo que buscas.",
+  "exploreInstagram": "Explorar Instagram",
+  "exploreTikTok": "Explorar TikTok",
+  "exploreFacebook": "Explorar Facebook",
+  "readMore": "Leer más",
+  "showLess": "Mostrar menos",
+  "chrome": {
+    "breadcrumb": "Opiniones"
+  }
+}

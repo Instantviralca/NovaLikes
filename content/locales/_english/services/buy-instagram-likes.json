@@ -1,0 +1,596 @@
+{
+  "content": {
+    "slug": "buy-instagram-likes",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Buy Instagram Likes | NovaLikes",
+      "description": "Buy Instagram likes through NovaLikes with clear package options, delivery details, secure checkout, order tracking and a public post URL only."
+    },
+    "hero": {
+      "eyebrow": "BUY INSTAGRAM LIKES",
+      "title": "Buy Instagram Likes",
+      "description": "Buy Instagram likes for a public post or Reel by choosing the package size that fits what you need. NovaLikes offers several like quantities with clear pricing, so you can compare the available options before ordering. Select your package, provide the public Instagram post or Reel URL, and complete your order online. No Instagram password is required, and you can track your order after checkout.",
+      "purpose": "Convert visitors looking to buy Instagram likes",
+      "primaryKeyword": "buy instagram likes",
+      "supportingKeywords": [
+        "Buy Instagram Likes",
+        "Buy Real Instagram Likes",
+        "Instagram Likes",
+        "Instagram Likes Pricing",
+        "Instagram Likes Delivery",
+        "Instagram Likes Order Tracking",
+        "Instagram Likes Packages"
+      ],
+      "suggestedWordCount": 70,
+      "primaryCta": {
+        "label": "Choose a Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "View Delivery Information",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-l-trust-public",
+          "label": "Public Post URL Only"
+        },
+        {
+          "id": "ig-l-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "ig-l-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "ig-l-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-likes/instagram-likes-hero.webp",
+        "alt": "Instagram post engagement dashboard showing likes packages and delivery tracking",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Instagram Likes Packages & Pricing",
+      "description": "Choose the number of Instagram likes you want and compare the available package prices before ordering. Select a quantity below to review the package details and continue with the option that fits the post or Reel you want to use.",
+      "purpose": "Present real NovaLikes.com likes packages",
+      "primaryKeyword": "Instagram Likes Pricing",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Order Now",
+      "emptyMessage": "Instagram Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-likes",
+      "title": "Support the Content You Are Already Publishing",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-likes",
+      "title": "Why Order From NovaLikes",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "features": {
+      "id": "buy-instagram-likes-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How Instagram Likes Ordering Works",
+      "description": "Choose a package, enter your public post URL, complete checkout and track available updates.",
+      "purpose": "Explain ordering process",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 80,
+      "steps": [
+        {
+          "id": "ig-l-step-1",
+          "title": "Choose a Package",
+          "description": "Compare quantities, prices and package details in the pricing grid."
+        },
+        {
+          "id": "ig-l-step-2",
+          "title": "Enter Public Post URL",
+          "description": "Provide the public Instagram post or Reel URL receiving the likes."
+        },
+        {
+          "id": "ig-l-step-3",
+          "title": "Review Your Order",
+          "description": "Confirm package, price and delivery details before payment."
+        },
+        {
+          "id": "ig-l-step-4",
+          "title": "Complete Checkout",
+          "description": "Finish payment and receive your order confirmation by email."
+        },
+        {
+          "id": "ig-l-step-5",
+          "title": "Track Progress",
+          "description": "Use your order ID and email on the Track Order page."
+        }
+      ],
+      "cta": {
+        "label": "Choose a Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "delivery-and-safety",
+      "title": "Instagram Likes Delivery",
+      "description": "Delivery timing depends on the selected package. Gradual delivery applies where stated before checkout.",
+      "purpose": "Delivery clarification",
+      "primaryKeyword": "Instagram Likes Delivery",
+      "suggestedWordCount": 60,
+      "items": []
+    },
+    "reviews": {
+      "id": "ig-likes-reviews",
+      "title": "Customer Reviews",
+      "description": "Feedback from customers who completed an order on our platform.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-likes-faq",
+      "title": "Frequently Asked Questions About Buying Instagram Likes",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy instagram likes",
+      "faqIds": [
+        "faq-ig-likes-links",
+        "faq-ig-likes-reel",
+        "faq-ig-likes-password",
+        "faq-ig-likes-delivery-speed",
+        "faq-ig-likes-track",
+        "faq-ig-likes-gradual-delivery",
+        "faq-ig-likes-refill",
+        "faq-ig-likes-money-back"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-likes",
+      "title": "Explore More Services",
+      "description": "Add audience growth, views or comments when your campaign needs more support.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-views",
+        "buy-instagram-comments"
+      ],
+      "cta": {
+        "label": "Explore More Services",
+        "href": "/buy-instagram-followers"
+      }
+    },
+    "finalCta": {
+      "id": "ig-likes-final-cta",
+      "title": "Choose Your Instagram Likes Package",
+      "description": "Compare the available like quantities and prices, choose the package that fits the post or Reel you want to use, and place your order with the correct public Instagram URL.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "View Instagram Likes Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-instagram-likes-why-choose",
+        "title": "Why Choose NovaLikes for Instagram Likes?",
+        "description": "NovaLikes makes it easy to compare Instagram likes packages before you order. Choose the quantity you need for a specific post or Reel, check the price, provide the correct public content URL, and track your order after checkout.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-0",
+            "title": "Different Like Quantities",
+            "description": "Compare smaller and larger like packages to find a quantity that makes sense for the Instagram content you are working on.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-likes-1",
+            "title": "Clear Package Pricing",
+            "description": "See the price for each Instagram likes package before adding your selection to the cart.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-2",
+            "title": "For Specific Posts and Reels",
+            "description": "Choose the public Instagram post or Reel where you want the likes added instead of making changes to your overall follower count.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your Instagram likes order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-instagram-likes-can-you-buy",
+        "title": "Can You Buy Instagram Likes?",
+        "description": "Yes. Instagram likes can be purchased for eligible public posts and Reels. With NovaLikes, you choose a likes package, provide the public URL of the Instagram content you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-instagram-likes-4",
+            "title": "What an Instagram Likes Order Changes",
+            "description": "An Instagram likes order increases the like count on the specific post or Reel submitted with the order. It does not change the follower count of the overall profile.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-likes-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public URL for the Instagram post or Reel and the likes package you want to purchase. Your Instagram password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-likes-6",
+            "title": "What Instagram Likes Do Not Include",
+            "description": "Likes are separate from followers, views, and comments. Ordering Instagram likes does not automatically add those other metrics or guarantee additional reach, engagement, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected Instagram Likes, chosen the correct quantity, and provided the URL for the content where you want the likes added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-instagram-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-instagram-likes-what-happens",
+        "title": "What Happens After You Buy Instagram Likes?",
+        "description": "After you place an Instagram Likes order, the package and public content URL you submitted are used to process the order for the selected post or Reel. Keep the submitted content publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-instagram-likes-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected Likes package and Instagram URL are connected to your order so the request can be processed for the intended post or Reel."
+          },
+          {
+            "id": "buy-instagram-likes-th-2",
+            "title": "Likes Go to the Submitted Content",
+            "description": "The order applies to the Instagram post or Reel connected to the URL you provided. Check the link carefully before completing checkout."
+          },
+          {
+            "id": "buy-instagram-likes-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the Likes quantity and current order conditions. Do not assume every package will have exactly the same processing time."
+          },
+          {
+            "id": "buy-instagram-likes-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking to check available status updates after checkout. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid deleting the submitted post or Reel, making it unavailable, or changing anything that prevents access to the content while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-instagram-likes-service-compare",
+        "title": "Instagram Likes vs Followers vs Views",
+        "description": "Likes, followers, and views measure different parts of an Instagram account. Choose the service based on whether you want to work on a specific post or Reel, your profile follower count, or the view count on video content.",
+        "current": {
+          "title": "Instagram Likes",
+          "description": "Likes are a content-level metric. Choose Instagram Likes when you want to increase the like count shown on a specific public post or Reel.",
+          "bestFor": "Posts and Reels where the visible like count is the metric you want to change.",
+          "ctaLabel": "Instagram Likes"
+        },
+        "likes": {
+          "title": "Instagram Followers",
+          "description": "Followers are a profile-level metric. Choose Instagram Followers when you want to increase the follower count shown on your account rather than engagement on one piece of content.",
+          "bestFor": "Profiles where follower count is the metric you want to change.",
+          "href": "/buy-instagram-followers",
+          "ctaLabel": "View Instagram Followers"
+        },
+        "views": {
+          "title": "Instagram Views",
+          "description": "Views apply to eligible video content. Choose Instagram Views when you want to increase the view count shown on a public Reel or video.",
+          "bestFor": "Reels, videos, and other eligible Instagram video content.",
+          "href": "/buy-instagram-views",
+          "ctaLabel": "View Instagram Views"
+        },
+        "combinedNote": "If you want comments on a specific post or Reel, Instagram Comments are available as a separate service.",
+        "commentsHref": "/buy-instagram-comments"
+      },
+      "beforeBuying": {
+        "id": "buy-instagram-likes-before-buying",
+        "title": "What to Check Before Buying Instagram Likes",
+        "description": "Before you buy Instagram likes, check the package and content details before completing your order. Make sure the quantity, price, Instagram URL, and service type match what you want for the selected post or Reel.",
+        "framingNote": "Check your selected content, likes quantity, and price one more time before checkout. Avoid relying on claims that buying likes will guarantee additional reach, followers, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-7",
+            "title": "Check the Likes Quantity",
+            "description": "Review the number of Instagram likes included in the package so you know exactly how many you are ordering for the selected content.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-likes-8",
+            "title": "Confirm the Package Price",
+            "description": "Check the price shown for your selected likes package before adding it to the cart. If you change the quantity, review the updated price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-likes-9",
+            "title": "Use the Correct Post or Reel URL",
+            "description": "Make sure the public Instagram URL points to the exact post or Reel where you want the likes added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-likes-10",
+            "title": "Choose the Right Instagram Service",
+            "description": "Likes, followers, views, and comments are separate services. Check that Instagram Likes is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-instagram-likes-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-instagram-likes-worldwide",
+        "title": "Choosing the Right Post or Reel for Instagram Likes",
+        "description": "Instagram Likes applies to one specific piece of eligible public content, so choosing the correct post or Reel is one of the most important parts of placing the order.",
+        "eyebrow": "Ready for Instagram Likes",
+        "closingNote": "Instagram Likes applies to a specific public post or Reel. Submit the exact content URL, keep the content available, and review the selected likes package before checkout.",
+        "cards": [
+          {
+            "id": "buy-instagram-likes-12",
+            "title": "Use the Exact Content URL",
+            "description": "Submit the public URL of the post or Reel where you want the Likes package applied. A profile URL is not the correct target for this service.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-13",
+            "title": "Keep the Content Available",
+            "description": "Avoid deleting or restricting the submitted post or Reel while the order is being processed.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-14",
+            "title": "Check the Likes Quantity",
+            "description": "Choose the number of Likes based on the specific content you are ordering for and review the quantity before checkout.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-likes-15",
+            "title": "Review the Price Before Ordering",
+            "description": "Package prices are shown before checkout. If you change the Likes quantity, review the updated package and price before completing the order.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-instagram-likes-popular-packages",
+        "title": "Popular Instagram Likes Packages",
+        "description": "Not sure which package to choose? Compare some of the Instagram like quantities available on NovaLikes below, or return to the full pricing section to see all available options.",
+        "rows": [
+          {
+            "id": "buy-instagram-likes-pkg-100",
+            "quantity": "100 Likes",
+            "recommendedFor": "A smaller option for a post or Reel where you want a modest increase in the visible like count."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-500",
+            "quantity": "500 Likes",
+            "recommendedFor": "A mid-range option for Instagram content where you want a more noticeable change in the number of likes."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-1k",
+            "quantity": "1,000 Likes",
+            "recommendedFor": "A larger package for a selected post or Reel where you want to add one thousand likes in a single order."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-5k",
+            "quantity": "5,000 Likes",
+            "recommendedFor": "A higher-volume option for Instagram content where you want a larger increase in the displayed like count."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-10k",
+            "quantity": "10,000+ Likes",
+            "recommendedFor": "An option for posts or Reels where you are choosing one of the larger like quantities available on NovaLikes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-instagram-likes-best-practices",
+        "title": "Best Practices After Buying Instagram Likes",
+        "description": "Buying likes changes the visible like count on the selected post or Reel, but the rest of the content still depends on what you publish and how you manage your account. Use the order as one part of your Instagram activity rather than treating likes as a replacement for content.",
+        "closingNote": "Likes are only one metric on Instagram. The content itself, your posting decisions, profile, audience interaction, and other account activity still need ongoing attention.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-16",
+            "title": "Keep Publishing New Content",
+            "description": "Continue posting photos, Reels, Stories, and other content that is relevant to the audience you want to reach.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-likes-17",
+            "title": "Give Each Post a Clear Purpose",
+            "description": "Think about what you want a post or Reel to communicate before publishing, whether it is a product, update, idea, announcement, or piece of creative content.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-instagram-likes-18",
+            "title": "Write Useful Captions",
+            "description": "Use captions to add context to your posts, explain what viewers are seeing, or give people a reason to respond when it makes sense.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-likes-19",
+            "title": "Review Your Instagram Insights",
+            "description": "If Insights are available on your account, compare metrics such as reach, views, interactions, and other content data to understand how your posts and Reels perform.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-likes-20",
+            "title": "Test Different Instagram Formats",
+            "description": "Photos, carousels, Reels, and Stories serve different purposes. Test the formats that make sense for your account and the content you create.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-likes-21",
+            "title": "Respond to Genuine Interaction",
+            "description": "Reply to genuine comments and messages when appropriate. A higher like count does not replace the conversations you have with people through your own account.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-instagram-likes-common-mistakes",
+        "title": "Common Mistakes When Buying Instagram Likes",
+        "description": "A few simple mistakes can cause problems with an Instagram likes order. Check the content URL, package, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the Instagram URL, likes quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-22",
+            "title": "Submitting the Wrong Post or Reel",
+            "description": "Check the Instagram URL carefully before ordering. The link should point to the exact public post or Reel where you want the likes added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-likes-23",
+            "title": "Choosing the Wrong Instagram Service",
+            "description": "Likes, followers, views, and comments are separate services. Choose Instagram Likes only when the like count on specific content is the metric you want to change.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-24",
+            "title": "Selecting the Wrong Likes Quantity",
+            "description": "Review the number of likes included in your package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-25",
+            "title": "Removing the Content During an Order",
+            "description": "Avoid deleting the submitted post or Reel or making it unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-likes-26",
+            "title": "Expecting Likes to Guarantee Other Results",
+            "description": "A higher like count does not automatically mean more followers, comments, views, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-likes-27",
+            "title": "Treating Likes as a Replacement for Content",
+            "description": "Buying likes changes one visible metric. Your posts, Reels, captions, publishing decisions, and audience interaction still depend on how you manage the account.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-followers": {
+            "title": "Instagram Followers",
+            "description": "Choose Instagram Followers when you want to increase the follower count shown on your public profile.",
+            "ctaLabel": "View Instagram Followers"
+          },
+          "buy-instagram-views": {
+            "title": "Instagram Views",
+            "description": "Choose Instagram Views when you want to increase the view count on an eligible public Reel or video.",
+            "ctaLabel": "View Instagram Views"
+          },
+          "buy-instagram-comments": {
+            "title": "Instagram Comments",
+            "description": "Choose Instagram Comments when you want comments added to an eligible public post or Reel.",
+            "ctaLabel": "View Instagram Comments"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-instagram-likes-why-buy",
+      "title": "Why Do People Buy Instagram Likes?",
+      "description": "People buy Instagram likes for different types of content and different reasons. Some use like packages for a new post or Reel, while others use them when promoting a product, campaign, announcement, or piece of content. The service changes the visible like count on the selected content, but it does not guarantee reach, comments, followers, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-instagram-likes-wb-1",
+          "title": "Add Likes to New Content",
+          "description": "A like package can be used on a recently published post or Reel when you want to increase its visible like count."
+        },
+        {
+          "id": "buy-instagram-likes-wb-2",
+          "title": "Support a Product or Campaign Post",
+          "description": "Businesses and creators may use Instagram likes on content related to a product launch, promotion, announcement, or campaign."
+        },
+        {
+          "id": "buy-instagram-likes-wb-3",
+          "title": "Increase the Visible Like Count",
+          "description": "Instagram likes apply to the selected post or Reel rather than changing the follower count shown on your profile."
+        },
+        {
+          "id": "buy-instagram-likes-wb-4",
+          "title": "Choose a Quantity for the Content",
+          "description": "Different package sizes let you choose the number of likes based on the individual post or Reel you want to use."
+        },
+        {
+          "id": "buy-instagram-likes-wb-5",
+          "title": "Use Likes Alongside Your Own Content Strategy",
+          "description": "Buying likes changes one visible metric on the selected content. Captions, creative work, posting decisions, replies, and other account activity still depend on how you manage your Instagram presence."
+        }
+      ],
+      "bottomNote": "If the metric you want to change is your profile follower count, video views, or comments rather than likes, choose the corresponding Instagram service instead."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy Instagram Likes",
+      "description": "Buying Instagram likes through NovaLikes takes four steps. Choose the number of likes you want, provide the public URL for the Instagram post or Reel, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-instagram-likes-step-1",
+          "title": "Choose Your Likes Package",
+          "description": "Compare the available like quantities and prices, then select the package you want for your Instagram content."
+        },
+        {
+          "id": "buy-instagram-likes-step-2",
+          "title": "Enter the Post or Reel URL",
+          "description": "Provide the correct public URL for the Instagram post or Reel where you want the likes added. Your Instagram password is not required."
+        },
+        {
+          "id": "buy-instagram-likes-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected likes quantity and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-instagram-likes-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your Instagram likes order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Instagram Services",
+    "relatedIntro": "Likes are only one Instagram metric. If you want to work on your profile follower count, video views, or comments on specific content, compare the other Instagram services below."
+  }
+}

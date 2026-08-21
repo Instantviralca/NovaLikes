@@ -35,6 +35,7 @@ export const ROBOTS_DISALLOW_PATHS = [
   '/checkout',
   '/order-success',
   '/admin/',
+  '/author/',
   '/api/',
   '/preview/',
   '/draft/',

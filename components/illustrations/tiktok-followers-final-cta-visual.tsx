@@ -42,7 +42,7 @@ export function TikTokFollowersFinalCtaVisual({ className }: { className?: strin
         <p className="text-[8px] font-semibold tracking-wide text-sky-600 uppercase sm:text-[9px]">
           Tracking
         </p>
-        <p className="text-xs font-bold text-stone-800 sm:text-sm">Tracking Active</p>
+        <p className="text-xs font-bold text-stone-800 sm:text-sm">Order Tracking</p>
       </div>
 
       {/* Phone — completed order */}
@@ -66,25 +66,25 @@ export function TikTokFollowersFinalCtaVisual({ className }: { className?: strin
                   ♪
                 </span>
                 <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700 ring-1 ring-emerald-100">
-                  Complete
+                  Order Confirmed
                 </span>
               </div>
 
               <div className="rounded-2xl border border-emerald-100 bg-emerald-50/95 p-3 text-center shadow-sm">
                 <p className="text-[10px] font-semibold tracking-wide text-emerald-700 uppercase">
-                  Order complete
+                  Order Confirmed
                 </p>
                 <p className="mt-1 text-lg font-bold tracking-tight text-stone-900">
-                  1,000 Followers
+                  Package Selected
                 </p>
-                <p className="mt-1 text-xs font-medium text-stone-500">@creator</p>
+                <p className="mt-1 text-xs font-medium text-stone-500">Public username</p>
               </div>
 
               <div className="mt-3 space-y-1.5">
                 {[
-                  { label: 'Confirmed', done: true },
-                  { label: 'Delivering', done: true },
-                  { label: 'Complete', done: true },
+                  { label: 'Order Confirmed', done: true },
+                  { label: 'Order in Progress', done: true },
+                  { label: 'Order Tracking', done: true },
                 ].map((step) => (
                   <div
                     key={step.label}

@@ -6,8 +6,10 @@ import { routes } from '@/config/routes';
 import { getAboutContent } from '@/data/content/company';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { webPageSchema } from '@/schemas/website';
+import { aboutPageSchema } from '@/schemas/website';
 import { companyMetadata } from '@/seo/metadata';
+import { descriptions } from '@/seo/descriptions';
+import { titles } from '@/seo/titles';
 
 export function generateMetadata(): Metadata {
   return companyMetadata('about');
@@ -18,9 +20,9 @@ export default function AboutPage() {
   const content = getAboutContent();
 
   const graph = asJsonLdGraph([
-    webPageSchema({
-      title: content.seo.title,
-      description: content.seo.description,
+    aboutPageSchema({
+      title: titles.company('About'),
+      description: descriptions.about(),
       path: routes.about,
     }),
     breadcrumbSchema([

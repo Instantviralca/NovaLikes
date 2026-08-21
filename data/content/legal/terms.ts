@@ -1,402 +1,410 @@
 ﻿/**
- * Terms & Conditions production content — Document 13.05.
- * Body text lives here; React views render sections without hardcoding legal copy.
- * Provider-specific and jurisdiction disclosures are conditional on verified config.
+ * Terms and Conditions production content — Document 13.05.
  */
 
 import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
 import { getVerifiedTermsContactEmail, termsConfig } from '@/config/terms';
+import { getDefaultCurrency } from '@/data/pricing/currencies';
+import { formatLegalDisplayDate } from '@/lib/legal/format-date';
 import type {
   LegalPolicySection,
   TermsAndConditionsContent,
   TermsConfig,
 } from '@/types/legal';
 
-function formatDisplayDate(isoDate: string | undefined): string | undefined {
-  if (!isoDate) return undefined;
-  const parsed = new Date(`${isoDate}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(parsed);
-}
-
 function buildSections(config: TermsConfig): LegalPolicySection[] {
   const operatingName = config.operatingName;
-  const domainHost = config.websiteDomain.replace(/^https?:\/\//, '');
+  const contactEmail = getVerifiedTermsContactEmail(config);
   const enabledPayments = getEnabledPaymentProviders();
   const paymentNames = enabledPayments.map((provider) => provider.displayName);
-  const contactEmail = getVerifiedTermsContactEmail(config);
-  const refundPolicyPath = routes.refundPolicy;
-  const privacyPolicyPath = routes.privacyPolicy;
-  const contactPath = routes.contact;
-
-  const paymentBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: `Payment is required to place an order through ${domainHost}. Available payment methods are those currently enabled in NovaLikes checkout configuration.`,
-    },
-  ];
-
-  if (paymentNames.length > 0) {
-    paymentBlocks.push({
-      type: 'paragraph',
-      text: `Currently enabled payment methods: ${paymentNames.join(', ')}.`,
-    });
-  } else {
-    paymentBlocks.push({
-      type: 'paragraph',
-      text: 'No payment methods are currently enabled. This section will be updated when a payment method is enabled.',
-    });
-  }
-
-  paymentBlocks.push({
-    type: 'paragraph',
-    text: 'Payment processing is handled by the enabled payment provider. NovaLikes does not claim that every payment attempt will succeed, and failed or incomplete payments do not create a fulfilled order.',
-  });
+  const currency = getDefaultCurrency();
 
   const eligibilityBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `You may use NovaLikes services only if you have the legal capacity to enter into a binding agreement and are permitted to use the website under applicable law and the terms of Instagram, TikTok, Facebook, YouTube, and any payment provider you use.`,
+      text: `You may use ${operatingName} only if you can form a binding contract under applicable law and you have authority to submit the public profile, Page, or content information used for an order.`,
     },
   ];
 
   if (typeof config.minimumCustomerAge === 'number') {
     eligibilityBlocks.push({
       type: 'paragraph',
-      text: `The current configured minimum customer age is ${config.minimumCustomerAge}.`,
+      text: `You must be at least ${config.minimumCustomerAge} years old to use NovaLikes paid services.`,
     });
   } else {
+    // TODO: CONFIRM numeric minimum customer age after legal review
     eligibilityBlocks.push({
       type: 'paragraph',
-      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable law and platform requirements. NovaLikes does not invent an arbitrary age for these Terms.',
+      text: 'A specific numeric minimum age is not published in these Terms until it is confirmed after legal review. You remain responsible for complying with applicable age requirements of law and of Instagram, TikTok, Facebook, and payment providers.',
     });
   }
 
-  const governingBlocks: LegalPolicySection['blocks'] = [
+  const paymentBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'These Terms are intended to be interpreted under the laws that apply to NovaLikes’s operations and customers, subject to professional legal review before publication.',
+      text: `Prices are shown in ${currency.code} (${currency.label}) unless another currency display applies to a specific experience. The amount confirmed at checkout for your order governs that purchase.`,
     },
   ];
+
+  if (paymentNames.length > 0) {
+    paymentBlocks.push({
+      type: 'paragraph',
+      text: `Currently enabled payment method(s) at checkout: ${paymentNames.join(', ')}. Available methods can change; the options shown during checkout control what you can use for that order.`,
+    });
+  } else {
+    paymentBlocks.push({
+      type: 'paragraph',
+      text: 'No payment methods are currently enabled in checkout configuration.',
+    });
+  }
+
+  paymentBlocks.push({
+    type: 'paragraph',
+    text: 'Card payments are processed through the enabled third-party payment collector. NovaLikes does not store complete card numbers on its own systems.',
+  });
+
+  const governingBlocks: LegalPolicySection['blocks'] = [];
 
   if (config.governingLaw) {
     governingBlocks.push({
       type: 'paragraph',
-      text: `Governing law currently configured: ${config.governingLaw}.`,
+      text: `These Terms are governed by the laws of ${config.governingLaw}, without regard to conflict-of-law principles that would require another jurisdiction’s law.`,
     });
   } else {
+    // TODO: GOVERNING LAW / JURISDICTION REQUIRES BUSINESS CONFIRMATION
     governingBlocks.push({
       type: 'paragraph',
-      text: 'A specific governing-law jurisdiction has not been published in NovaLikes configuration. NovaLikes will not invent a province, state, or country for these Terms.',
+      text: 'Governing law and dispute venue have not been published in NovaLikes configuration pending business and legal confirmation. These Terms do not invent a jurisdiction for public display.',
     });
   }
 
   if (config.disputeVenue) {
     governingBlocks.push({
       type: 'paragraph',
-      text: `Dispute venue currently configured: ${config.disputeVenue}.`,
+      text: `Disputes arising out of these Terms will be handled in ${config.disputeVenue}, subject to applicable law.`,
     });
   }
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `Questions about these Terms may be submitted using the contact details below.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Operating name: ${config.operatingName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Legal / business name on file: ${config.legalBusinessName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Website: ${config.websiteDomain}`,
+      text: `Questions about these Terms can be sent through the [Contact](${routes.contact}) page.`,
     },
   ];
 
   if (contactEmail) {
     contactBlocks.push({
       type: 'paragraph',
-      text: `Contact email: ${contactEmail}`,
-    });
-  } else {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `A verified support email has not been published in Terms configuration. Until that address is verified, contact NovaLikes through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
-    });
-  }
-
-  if (config.mailingAddress) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Mailing address: ${config.mailingAddress}`,
+      text: `You may also email ${contactEmail}.`,
     });
   }
 
   return [
     {
-      id: 'acceptance',
-      anchor: 'acceptance',
-      title: 'Acceptance of Terms',
+      id: 'acceptance-of-these-terms',
+      anchor: 'acceptance-of-these-terms',
+      title: '1. Acceptance of These Terms',
       blocks: [
         {
           type: 'paragraph',
-          text: `By accessing ${domainHost}, browsing service pages, creating an order configuration, placing an order, tracking an order, or otherwise using NovaLikes services, you agree to these Terms & Conditions and to the Privacy Policy available at ${domainHost}${privacyPolicyPath}.`,
+          text: `By accessing NovaLikes, using free tools, or purchasing a service, you agree to these Terms and Conditions and to the incorporated policies, including the [Privacy Policy](${routes.privacyPolicy}), [Refund Policy](${routes.refundPolicy}), [Cookie Policy](${routes.cookiePolicy}), and [Disclaimer](${routes.disclaimer}).`,
         },
         {
           type: 'paragraph',
-          text: 'If you do not agree to these Terms, do not use the website or place an order.',
+          text: 'If you do not agree, do not use the website or place an order.',
         },
       ],
     },
     {
       id: 'eligibility',
       anchor: 'eligibility',
-      title: 'Eligibility',
+      title: '2. Eligibility',
       blocks: eligibilityBlocks,
     },
     {
-      id: 'website-use',
-      anchor: 'website-use',
-      title: 'Website Use',
+      id: 'novalikes-services',
+      anchor: 'novalikes-services',
+      title: '3. NovaLikes Services',
       blocks: [
         {
           type: 'paragraph',
-          text: `You may use ${domainHost} only for lawful purposes and in accordance with these Terms. NovaLikes may update website features, service pages, pricing displays, and related tools from time to time.`,
+          text: `${operatingName} is a social media services website. It currently provides selected third-party social media-related services for Instagram, TikTok, and Facebook.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} does not promise uninterrupted, error-free, or continuously available website access. Temporary interruptions may occur for maintenance, security, infrastructure, or reasons outside NovaLikes’s control.`,
+          text: 'Current paid service categories include selected Instagram Followers, Likes, Views, and Comments; TikTok Followers, Likes, and Views; and Facebook Followers, Page Likes, and Post Likes, as offered on the website from time to time.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Service availability may change. Purchasing a service does not promise engagement, reach, sales, viral growth, algorithm improvement, monetization, or other results beyond what is described for the selected package.',
+        },
+        {
+          type: 'paragraph',
+          text: 'NovaLikes may also offer free social media tools. Free tools are separate from paid services and do not create a paid-service entitlement.',
         },
       ],
     },
     {
-      id: 'services-offered',
-      anchor: 'services-offered',
-      title: 'Services Offered',
+      id: 'no-affiliation-with-social-platforms',
+      anchor: 'no-affiliation-with-social-platforms',
+      title: '4. No Affiliation With Social Platforms',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} offers package-based social media growth services for selected Instagram, TikTok, Facebook, and YouTube metrics through NovaLikes.com. Available services and packages are those displayed with real package data from NovaLikes’s pricing system.`,
+          text: `${operatingName} is an independent service. NovaLikes is not Instagram, TikTok, or Facebook.`,
         },
         {
           type: 'paragraph',
-          text: 'Purchasing services does not guarantee rankings, monetization, organic engagement, revenue, verification, Partner Program approval, watch hours, algorithmic promotion, or any particular platform outcome. Third-party platforms control their own systems and policies.',
-        },
-      ],
-    },
-    {
-      id: 'orders',
-      anchor: 'orders',
-      title: 'Orders',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Orders are processed using the information you provide during order configuration and checkout, including the required public username, profile URL, page URL, post URL, channel URL, or video URL for the selected service.',
-        },
-        {
-          type: 'paragraph',
-          text: 'You are responsible for verifying that submitted usernames and URLs are accurate, public, and correctly associated with the intended destination before payment. Incorrect, private, changed, or inaccessible destinations may delay, reduce, or prevent fulfilment.',
-        },
-        {
-          type: 'paragraph',
-          text: 'Order configuration fields are determined by the selected service. NovaLikes does not request social media passwords or private authentication codes to place an order.',
-        },
-      ],
-    },
-    {
-      id: 'pricing',
-      anchor: 'pricing',
-      title: 'Pricing',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Prices shown on NovaLikes.com come from NovaLikes’s real package pricing data. NovaLikes does not invent dummy prices, quantities, delivery estimates, badges, discounts, or package features for display.',
-        },
-        {
-          type: 'paragraph',
-          text: 'Prices are subject to change until an order is successfully placed. The price charged for a completed checkout is the price confirmed for that order at the time payment succeeds.',
-        },
-        {
-          type: 'paragraph',
-          text: 'Delivery estimates, refill eligibility, and package features, when shown, come from the selected package data and are not unlimited guarantees of performance.',
-        },
-      ],
-    },
-    {
-      id: 'payments',
-      anchor: 'payments',
-      title: 'Payments',
-      blocks: paymentBlocks,
-    },
-    {
-      id: 'refunds',
-      anchor: 'refunds',
-      title: 'Refunds',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `Refund and refill eligibility is governed by the Refund Policy available at ${domainHost}${refundPolicyPath}. These Terms do not duplicate that policy.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'Not every order is automatically refundable. Eligibility depends on the Refund Policy, the selected service and package conditions, order status, and applicable customer actions.',
+          text: 'Unless explicitly stated otherwise, NovaLikes is not endorsed, sponsored, administered by, or officially affiliated with Instagram, TikTok, Facebook, Meta, or their parent or related companies. Platform names are used only to identify relevant third-party platforms and services.',
         },
       ],
     },
     {
       id: 'customer-responsibilities',
       anchor: 'customer-responsibilities',
-      title: 'Customer Responsibilities',
+      title: '5. Customer Responsibilities',
       blocks: [
         {
           type: 'paragraph',
-          text: 'When using NovaLikes, you agree to:',
+          text: 'You are responsible for:',
         },
         {
           type: 'list',
           items: [
-            'Provide accurate contact and order information',
-            'Submit the correct public username or URL for the selected service',
-            'Keep the destination public and accessible as required for fulfilment',
-            'Comply with applicable law and the terms of third-party platforms you use',
-            'Use NovaLikes services only for lawful purposes',
-            'Not attempt to interfere with website security, payments, or order processing',
+            'Providing accurate order information',
+            'Submitting the correct public username or URL for the selected service',
+            'Maintaining required public accessibility while an order needs access',
+            'Ensuring you have authority to submit the relevant account, Page, or content',
+            'Reviewing package details before purchase',
+            'Complying with applicable laws and third-party platform rules',
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'Never submit Instagram, TikTok, or Facebook passwords. NovaLikes does not require social media login credentials for the services described on the site.',
+        },
+      ],
+    },
+    {
+      id: 'orders',
+      anchor: 'orders',
+      title: '6. Orders',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Orders are placed through guest checkout using the information requested for the selected service. A separate NovaLikes customer account is not required to place an order.',
+        },
+        {
+          type: 'paragraph',
+          text: 'After payment is initiated or confirmed, you can monitor available status updates through order tracking using your order reference and checkout email.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Customers cannot directly edit order targets through self-service tools after successful payment. Contact support promptly if a correction is needed. Changes may not be possible once processing has started.',
+        },
+      ],
+    },
+    {
+      id: 'prices-and-payments',
+      anchor: 'prices-and-payments',
+      title: '7. Prices and Payments',
+      blocks: paymentBlocks,
+    },
+    {
+      id: 'delivery-and-processing',
+      anchor: 'delivery-and-processing',
+      title: '8. Delivery and Processing',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Processing and delivery timing vary by service and package. Use the delivery or timing information shown for the specific package you choose rather than assuming every NovaLikes service has the same timeframe.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Order processing can also vary based on current operational conditions and the public accessibility of the submitted profile or content.',
+        },
+      ],
+    },
+    {
+      id: 'social-platform-changes',
+      anchor: 'social-platform-changes',
+      title: '9. Social Platform Changes',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Instagram, TikTok, and Facebook are third-party platforms. They can change systems, remove accounts or content, change metrics, restrict access, or change APIs, interfaces, and policies.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not control those platforms and cannot guarantee that platform behavior will remain unchanged.`,
+        },
+      ],
+    },
+    {
+      id: 'drops-changes-and-refills',
+      anchor: 'drops-changes-and-refills',
+      title: '10. Drops, Changes and Refills',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Social metrics can change after delivery. Any refill conditions are governed by the applicable service or package terms shown for that purchase.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not make a universal refill promise on these Terms. See the [Refund Policy](${routes.refundPolicy}) for related order-issue guidance.`,
+        },
+      ],
+    },
+    {
+      id: 'refunds',
+      anchor: 'refunds',
+      title: '11. Refunds',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `${operatingName} offers a 30-Day Money-Back Guarantee on eligible orders. Refund requests and eligibility are governed by the [Refund Policy](${routes.refundPolicy}).`,
+        },
+        {
+          type: 'paragraph',
+          text: 'This section does not replace the Refund Policy. Review that policy for the 30-day request window, eligibility conditions, and how to contact support.',
+        },
+      ],
+    },
+    {
+      id: 'prohibited-use',
+      anchor: 'prohibited-use',
+      title: '12. Prohibited Use',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `You must not use ${operatingName}:`,
+        },
+        {
+          type: 'list',
+          items: [
+            'For unlawful activity',
+            'To interfere with site security',
+            'To abuse free tools',
+            'To attempt unauthorized access to systems or data',
+            'To submit malicious input',
+            'To use automated systems in ways that overload or disrupt the service',
+            'To infringe third-party rights',
           ],
         },
       ],
     },
     {
-      id: 'acceptable-use',
-      anchor: 'acceptable-use',
-      title: 'Acceptable Use',
+      id: 'free-tools',
+      anchor: 'free-tools',
+      title: '13. Free Tools',
       blocks: [
         {
           type: 'paragraph',
-          text: 'You may not use NovaLikes to:',
-        },
-        {
-          type: 'list',
-          items: [
-            'Violate applicable law or third-party platform terms',
-            'Submit fraudulent payment information',
-            'Abuse checkout, coupons, tracking, or support systems',
-            'Attempt unauthorized access to NovaLikes systems or data',
-            'Harass NovaLikes staff or other customers',
-            'Misrepresent your identity or destination ownership where ownership or control is required for a lawful order',
-          ],
+          text: `${operatingName} may provide free tools for publicly accessible social-media information or media. Tools can be changed, limited, unavailable, or affected by third-party platform restrictions.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} may refuse, delay, cancel, or limit orders that appear abusive, fraudulent, incomplete, or otherwise inconsistent with these Terms.`,
+          text: 'Results are not guaranteed. Users are responsible for ensuring they have the right to download or use any content obtained through a tool.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Free tools do not claim to bypass platform login walls, private-account restrictions, or other access controls.',
         },
       ],
     },
     {
       id: 'intellectual-property',
       anchor: 'intellectual-property',
-      title: 'Intellectual Property',
+      title: '14. Intellectual Property',
       blocks: [
         {
           type: 'paragraph',
-          text: `The NovaLikes name, website design, logos, copy, software, and other NovaLikes content are owned by NovaLikes or its licensors and are protected by applicable intellectual property laws.`,
+          text: `${operatingName} and its brand, site design, original copy, graphics, software, and other owned materials are protected by applicable intellectual-property laws.`,
         },
         {
           type: 'paragraph',
-          text: 'You may not copy, scrape, republish, or commercially exploit NovaLikes website content except as expressly permitted by NovaLikes or required by law.',
+          text: 'Third-party platform trademarks remain the property of their respective owners.',
         },
       ],
     },
     {
-      id: 'third-party-platforms',
-      anchor: 'third-party-platforms',
-      title: 'Third-Party Platforms',
+      id: 'availability-of-the-website',
+      anchor: 'availability-of-the-website',
+      title: '15. Availability of the Website',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Instagram, TikTok, Facebook, YouTube, payment providers, and other third-party platforms operate independently from NovaLikes and publish their own terms, policies, and technical rules.',
+          text: `${operatingName} does not guarantee uninterrupted operation. Maintenance, outages, third-party failures, and platform restrictions may affect availability of the website, checkout, tools, or order processing.`,
+        },
+      ],
+    },
+    {
+      id: 'disclaimer-of-warranties',
+      anchor: 'disclaimer-of-warranties',
+      title: '16. Disclaimer of Warranties',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `To the maximum extent permitted by applicable law, ${operatingName} provides the website, free tools, and services on an “as is” and “as available” basis without warranties of uninterrupted availability, fitness for a particular business purpose, or specific social-media outcomes beyond the purchased service description.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} is not responsible for third-party platform decisions, outages, algorithm changes, account restrictions, content removals, or policy enforcement. Customers should review relevant third-party terms before ordering.`,
+          text: 'Nothing in these Terms is intended to exclude warranties or rights that cannot be excluded under applicable law.',
         },
       ],
     },
     {
       id: 'limitation-of-liability',
       anchor: 'limitation-of-liability',
-      title: 'Limitation of Liability',
+      title: '17. Limitation of Liability',
       blocks: [
         {
           type: 'paragraph',
-          text: `To the fullest extent permitted by applicable law, ${operatingName} is not liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, lost revenue, lost data, reputational harm, or business interruption arising from website use or purchased services.`,
+          text: `To the maximum extent permitted by applicable law, ${operatingName} is not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business opportunities arising from use of the website, free tools, or services.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} does not guarantee uninterrupted service, specific social media outcomes, rankings, monetization, engagement, revenue, or platform approval. Nothing in these Terms excludes liability that cannot be excluded under applicable law.`,
+          text: 'These limitations apply to the fullest extent permitted by law and do not invent a monetary liability cap beyond what applicable law allows.',
         },
       ],
     },
     {
       id: 'indemnification',
       anchor: 'indemnification',
-      title: 'Indemnification',
+      title: '18. Indemnification',
       blocks: [
         {
           type: 'paragraph',
-          text: `You agree to indemnify and hold harmless ${operatingName} and its operators from claims, losses, and expenses arising from your misuse of the website, your submitted order information, your violation of these Terms, or your violation of applicable law or third-party platform terms, to the extent permitted by law.`,
-        },
-      ],
-    },
-    {
-      id: 'termination',
-      anchor: 'termination',
-      title: 'Termination',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `${operatingName} may refuse service, cancel orders, or restrict access to the website where reasonably necessary to address fraud, abuse, security risk, legal compliance, or material breaches of these Terms.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'Provisions that by their nature should survive termination, including intellectual property, limitation of liability, indemnification, and governing-law provisions, will continue to apply as permitted by law.',
+          text: `You agree to indemnify and hold harmless ${operatingName} from claims, losses, and expenses arising out of your misuse of NovaLikes, your violation of these Terms, or your infringement of third-party rights, to the extent permitted by applicable law.`,
         },
       ],
     },
     {
       id: 'governing-law',
       anchor: 'governing-law',
-      title: 'Governing Law',
+      title: '19. Governing Law',
       blocks: governingBlocks,
     },
     {
-      id: 'changes-to-terms',
-      anchor: 'changes-to-terms',
-      title: 'Changes to Terms',
+      id: 'changes-to-these-terms',
+      anchor: 'changes-to-these-terms',
+      title: '20. Changes to These Terms',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} may update these Terms when services, payment methods, legal requirements, or business operations change. The revised Terms will display a new Last Updated date when that date is configured for publication.`,
+          text: `${operatingName} may update these Terms from time to time. The Last Updated date at the top of this page will reflect material revisions.`,
         },
         {
           type: 'paragraph',
-          text: 'Continued use of the website or placement of new orders after updated Terms are published constitutes acceptance of the revised Terms, except where applicable law requires a different process.',
+          text: 'Continued use of the website after an update constitutes acceptance of the revised Terms to the extent permitted by applicable law.',
         },
       ],
     },
     {
-      id: 'contact-information',
-      anchor: 'contact-information',
-      title: 'Contact Information',
+      id: 'contact',
+      anchor: 'contact',
+      title: '21. Contact',
       blocks: contactBlocks,
     },
   ];
@@ -409,15 +417,15 @@ export function getTermsAndConditionsContent(
     id: 'terms-and-conditions',
     path: routes.termsAndConditions,
     seo: {
-      title: 'Terms & Conditions | NovaLikes',
+      title: 'Terms and Conditions | NovaLikes',
       description:
-        'Read the Terms & Conditions governing the use of NovaLikes, website access, orders, payments, refunds, acceptable use, and customer responsibilities.',
+        'Read the terms governing use of NovaLikes, including orders, payments, social media services, free tools and customer responsibilities.',
     },
-    breadcrumbLabel: 'Terms & Conditions',
+    breadcrumbLabel: 'Terms and Conditions',
     header: {
-      title: 'Terms & Conditions',
+      title: 'Terms and Conditions',
       intro:
-        'These Terms & Conditions govern your use of NovaLikes.com, including browsing service pages, configuring and placing orders, making payments, tracking orders, and contacting support. Please read them carefully before using the website or placing an order.',
+        'These Terms and Conditions govern your access to and use of NovaLikes, including paid social media services, free tools, website features, and related support.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),
@@ -429,9 +437,7 @@ export function getTermsAndConditionsDates(config: TermsConfig = termsConfig): {
   lastUpdatedLabel?: string;
 } {
   return {
-    effectiveDateLabel: formatDisplayDate(config.effectiveDate),
-    lastUpdatedLabel: formatDisplayDate(config.lastUpdatedDate),
+    effectiveDateLabel: formatLegalDisplayDate(config.effectiveDate),
+    lastUpdatedLabel: formatLegalDisplayDate(config.lastUpdatedDate),
   };
 }
-
-export { termsConfig };

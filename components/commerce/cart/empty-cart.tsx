@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
+import { localizeHref } from '@/lib/i18n/paths';
 import { cn } from '@/lib/utils';
 
 type EmptyCartProps = {
@@ -11,6 +13,7 @@ type EmptyCartProps = {
 };
 
 export function EmptyCart({ className }: EmptyCartProps) {
+  const { locale, ui } = useI18nChrome();
   return (
     <div
       className={cn(
@@ -19,12 +22,10 @@ export function EmptyCart({ className }: EmptyCartProps) {
       )}
       role="status"
     >
-      <p className="text-lg font-medium">Your cart is empty</p>
-      <p className="max-w-sm text-sm text-muted-foreground">
-        Browse our growth services and add a package when you are ready.
-      </p>
+      <p className="text-lg font-medium">{ui.cart.emptyTitle}</p>
+      <p className="max-w-sm text-sm text-muted-foreground">{ui.cart.emptyBody}</p>
       <Button asChild size="lg">
-        <Link href={routes.home}>Browse Services</Link>
+        <Link href={localizeHref(routes.home, locale)}>{ui.cart.browseServices}</Link>
       </Button>
     </div>
   );

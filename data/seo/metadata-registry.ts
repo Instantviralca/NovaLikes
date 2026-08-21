@@ -9,17 +9,63 @@ import { LEARN_TAG_PAGES_ENABLED, LEARN_TAG_PATH_PREFIX } from '@/config/learn-t
 import { seoSiteConfig } from '@/config/seo';
 import { APPROVED_SERVICE_SLUGS } from '@/data/linking/approved-services';
 import { getActiveLearnCategories } from '@/data/learn';
-import { LEARN_ARTICLES } from '@/data/learn/articles';
+import {
+  LEARN_ARTICLES,
+  getLearnArticlesByCategory,
+  getPublishedLearnArticleRecords,
+} from '@/data/learn/articles';
 import { LEARN_TAGS } from '@/data/learn/tags';
 import { AUTHORS } from '@/data/authors';
 import { getServiceBySlug } from '@/data/services';
-import { getServiceContentBySlug } from '@/data/content/services';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import { getOpenGraphImageForSlug } from '@/data/seo/open-graph-images';
-import { descriptions } from '@/seo/descriptions';
-import { titles } from '@/seo/titles';
+import { descriptions, clampMetaDescription } from '@/seo/descriptions';
+import { titles, resolveArticleMetaTitle } from '@/seo/titles';
 import type { MetadataEntry } from '@/types/seo-metadata';
+import { TOOLS } from '@/data/tools/registry';
+import type { ToolSlug } from '@/lib/tools/types';
 
+function toolSeo(slug: ToolSlug): { title: string; description: string } {
+  switch (slug) {
+    case 'tiktok-video-downloader':
+      return { title: titles.tiktokVideoDownloader(), description: descriptions.tiktokVideoDownloader() };
+    case 'tiktok-profile-picture-downloader':
+      return {
+        title: titles.tiktokProfilePictureDownloader(),
+        description: descriptions.tiktokProfilePictureDownloader(),
+      };
+    case 'instagram-video-downloader':
+      return {
+        title: titles.instagramVideoDownloader(),
+        description: descriptions.instagramVideoDownloader(),
+      };
+    case 'instagram-profile-picture-viewer':
+      return {
+        title: titles.instagramProfilePictureViewer(),
+        description: descriptions.instagramProfilePictureViewer(),
+      };
+    case 'instagram-profile-viewer':
+      return {
+        title: titles.instagramProfileViewer(),
+        description: descriptions.instagramProfileViewer(),
+      };
+    case 'instagram-follower-counter':
+      return {
+        title: titles.instagramFollowerCounter(),
+        description: descriptions.instagramFollowerCounter(),
+      };
+    case 'facebook-video-downloader':
+      return {
+        title: titles.facebookVideoDownloader(),
+        description: descriptions.facebookVideoDownloader(),
+      };
+    case 'facebook-reels-downloader':
+      return {
+        title: titles.facebookReelsDownloader(),
+        description: descriptions.facebookReelsDownloader(),
+      };
+  }
+}
 const UPDATED = '2026-07-12T00:00:00.000Z';
 const OG = seoSiteConfig.defaultOpenGraphImage;
 const LOCALE = seoSiteConfig.defaultLocale;
@@ -47,13 +93,11 @@ function entry(
 function buildServiceEntries(): MetadataEntry[] {
   return APPROVED_SERVICE_SLUGS.map((slug) => {
     const service = getServiceBySlug(slug);
-    const content = getServiceContentBySlug(slug);
     const route = `/${slug}`;
-    const title =
-      content?.seo?.title ?? (service ? titles.service(service) : `${slug} | NovaLikes`);
-    const description =
-      content?.seo?.description ??
-      (service ? descriptions.service(service) : seoSiteConfig.defaultDescription);
+    const title = service ? titles.service(service) : `${slug} | NovaLikes`;
+    const description = service
+      ? descriptions.service(service)
+      : seoSiteConfig.defaultDescription;
     const og = getOpenGraphImageForSlug(slug);
 
     return entry({
@@ -92,43 +136,38 @@ function buildLearnEntries(): MetadataEntry[] {
     indexable: true,
   });
 
-  const categories = getActiveLearnCategories().map((category) => {
-    const route = `${routes.learn}/${category.slug}`;
-    return entry({
-      id: `meta-learn-category-${category.slug}`,
-      route,
-      pageType: 'learn',
-      title: category.seo.title,
-      description: category.seo.description,
-      canonicalPath: category.seo.canonicalPath ?? route,
-      openGraphTitle: category.seo.title,
-      openGraphDescription: category.seo.description,
-      twitterTitle: category.seo.title,
-      twitterDescription: category.seo.description,
-      robots: { index: true, follow: true },
-      active: true,
-      indexable: true,
+  const categories = getActiveLearnCategories()
+    .filter((category) => category.slug !== 'news')
+    .map((category) => {
+      const hasArticles = getLearnArticlesByCategory(category.id).length > 0;
+      const route = `${routes.learn}/${category.slug}`;
+      return entry({
+        id: `meta-learn-category-${category.slug}`,
+        route,
+        pageType: 'learn',
+        title: category.seo.title,
+        description: category.seo.description,
+        canonicalPath: category.seo.canonicalPath ?? route,
+        openGraphTitle: category.seo.title,
+        openGraphDescription: category.seo.description,
+        twitterTitle: category.seo.title,
+        twitterDescription: category.seo.description,
+        robots: hasArticles
+          ? { index: true, follow: true }
+          : { index: false, follow: true },
+        active: true,
+        indexable: hasArticles,
+      });
     });
-  });
 
   const articles = LEARN_ARTICLES.filter(
     (article) => isPublicLiveArticle(article) && !article.seo?.noindex,
   ).map((article) => {
     const route = `${routes.learn}/${article.slug}`;
-    const title =
-      article.seo.title ||
-      titles.learnArticle({
-        slug: article.slug,
-        title: article.title,
-        relatedServiceSlugs: [...article.relatedServices],
-      });
-    const description =
-      article.seo.description ||
-      descriptions.learnArticle({
-        slug: article.slug,
-        title: article.title,
-        relatedServiceSlugs: [...article.relatedServices],
-      });
+    const title = resolveArticleMetaTitle(article.seo.title, article.title);
+    const description = clampMetaDescription(
+      article.seo.description?.trim() || article.excerpt || article.title,
+    );
     return entry({
       id: `meta-learn-${article.slug}`,
       route,
@@ -151,6 +190,8 @@ function buildLearnEntries(): MetadataEntry[] {
 }
 
 function buildAuthorEntries(): MetadataEntry[] {
+  const hasPublishedArticles = getPublishedLearnArticleRecords().length > 0;
+
   const index = entry({
     id: 'meta-authors-index',
     route: AUTHOR_PATH_PREFIX,
@@ -158,13 +199,20 @@ function buildAuthorEntries(): MetadataEntry[] {
     title: AUTHOR_INDEX_SEO.title,
     description: AUTHOR_INDEX_SEO.description,
     canonicalPath: AUTHOR_INDEX_SEO.canonicalPath,
-    robots: { index: true, follow: true },
+    robots: hasPublishedArticles
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     active: true,
-    indexable: true,
+    indexable: hasPublishedArticles,
   });
 
-  const profiles = AUTHORS.filter((author) => author.active).map((author) =>
-    entry({
+  const profiles = AUTHORS.filter((author) => author.active).map((author) => {
+    const authorArticleCount = getPublishedLearnArticleRecords().filter(
+      (article) => article.authorId === author.id,
+    ).length;
+    const hasArticles = authorArticleCount > 0;
+
+    return entry({
       id: `meta-author-${author.slug}`,
       route: `${AUTHOR_PATH_PREFIX}/${author.slug}`,
       pageType: 'learn',
@@ -175,12 +223,14 @@ function buildAuthorEntries(): MetadataEntry[] {
       openGraphDescription: author.seo.description,
       twitterTitle: author.seo.title,
       twitterDescription: author.seo.description,
-      robots: { index: true, follow: true },
+      robots: hasArticles
+        ? { index: true, follow: true }
+        : { index: false, follow: true },
       active: true,
-      indexable: true,
+      indexable: hasArticles,
       updatedAt: author.joinedAt,
-    }),
-  );
+    });
+  });
 
   return [index, ...profiles];
 }
@@ -242,7 +292,6 @@ export const metadataRegistry: MetadataEntry[] = [
       'instagram growth',
       'tiktok growth',
       'facebook growth',
-      'youtube growth',
       'buy followers',
       'buy likes',
       'buy views',
@@ -302,10 +351,54 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-track-order',
     route: routes.trackOrder,
     pageType: 'support',
-    title: 'Track Your Order | NovaLikes',
-    description:
-      'Track your NovaLikes order using your order ID and the email address used at checkout. View customer-safe status updates without sharing private account details.',
+    title: titles.trackOrder(),
+    description: descriptions.trackOrder(),
     canonicalPath: routes.trackOrder,
+    robots: { index: false, follow: true },
+    active: true,
+    indexable: false,
+  }),
+
+  entry({
+    id: 'meta-tools-hub',
+    route: routes.tools,
+    pageType: 'tools',
+    title: titles.toolsHub(),
+    description: descriptions.toolsHub(),
+    canonicalPath: routes.tools,
+    openGraphTitle: titles.toolsHub(),
+    openGraphDescription: descriptions.toolsHub(),
+    twitterTitle: titles.toolsHub(),
+    twitterDescription: descriptions.toolsHub(),
+    robots: { index: true, follow: true },
+    active: true,
+    indexable: true,
+  }),
+  ...TOOLS.map((tool) => {
+    const { title, description } = toolSeo(tool.slug);
+    return entry({
+      id: `meta-tool-${tool.slug}`,
+      route: tool.href,
+      pageType: 'tools',
+      title,
+      description,
+      canonicalPath: tool.href,
+      openGraphTitle: title,
+      openGraphDescription: description,
+      twitterTitle: title,
+      twitterDescription: description,
+      robots: { index: true, follow: true },
+      active: true,
+      indexable: true,
+    });
+  }),
+  entry({
+    id: 'meta-html-sitemap',
+    route: routes.sitemap,
+    pageType: 'company',
+    title: titles.sitemap(),
+    description: descriptions.sitemap(),
+    canonicalPath: routes.sitemap,
     robots: { index: true, follow: true },
     active: true,
     indexable: true,
@@ -327,7 +420,7 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-terms',
     route: routes.termsAndConditions,
     pageType: 'legal',
-    title: titles.legal('Terms & Conditions'),
+    title: titles.legal('Terms and Conditions'),
     description: descriptions.termsAndConditions(),
     canonicalPath: routes.termsAndConditions,
     robots: { index: true, follow: true },
@@ -377,8 +470,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-cart',
     route: routes.cart,
     pageType: 'commerce',
-    title: 'Cart | NovaLikes',
-    description: 'Review items in your NovaLikes cart before checkout.',
+    title: titles.cart(),
+    description: descriptions.cart(),
     canonicalPath: routes.cart,
     robots: { index: false, follow: true },
     active: true,
@@ -388,8 +481,8 @@ export const metadataRegistry: MetadataEntry[] = [
     id: 'meta-checkout',
     route: routes.checkout,
     pageType: 'commerce',
-    title: 'Checkout | NovaLikes',
-    description: 'Complete your NovaLikes order checkout securely.',
+    title: titles.checkout(),
+    description: descriptions.checkout(),
     canonicalPath: routes.checkout,
     robots: { index: false, follow: false },
     active: true,

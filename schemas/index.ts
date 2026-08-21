@@ -5,5 +5,7 @@ export { breadcrumbSchema } from '@/schemas/breadcrumb';
 export { faqPageSchema } from '@/schemas/faq';
 export { articleSchema } from '@/schemas/article';
 export { serviceSchema, productSchema } from '@/schemas/service';
+export { webApplicationSchema, itemListSchema } from '@/schemas/web-application';
+export { websiteSchema, webPageSchema, aboutPageSchema, collectionPageSchema } from '@/schemas/website';
 export { reviewSchema, aggregateRatingSchema } from '@/schemas/review';
 export { imageObjectSchema, videoObjectSchema } from '@/schemas/image';

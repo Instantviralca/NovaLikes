@@ -77,7 +77,7 @@ export async function POST(request: Request) {
     let password = '';
     try {
       const body = (await request.json()) as { password?: string };
-      password = body.password ?? '';
+      password = (body.password ?? '').trim();
     } catch {
       return NextResponse.json({ ok: false, error: 'Invalid credentials.' }, { status: 401 });
     }

@@ -6,6 +6,8 @@ import { learnArticlePath } from '@/config/routes';
 import { getLearnCategoryById } from '@/data/learn/categories';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import { getEditorialRobots } from '@/lib/learn/editorial/effects';
+import { clampMetaDescription } from '@/seo/descriptions';
+import { resolveArticleMetaTitle } from '@/seo/titles';
 import type { LearnArticleRecord, PublicLearnArticle } from '@/types/learn';
 import type { ArticleSeoRecord } from '@/types/learn-article-seo';
 
@@ -29,17 +31,21 @@ export function toArticleSeoRecord(article: ArticleSeoSource): ArticleSeoRecord 
     noindex,
     isRecord(article) ? article.editorialApproved === true : true,
   );
+  const metaTitle = resolveArticleMetaTitle(article.seo.title, article.title);
+  const metaDescription = clampMetaDescription(
+    article.seo.description?.trim() || article.excerpt || article.title,
+  );
 
   return {
     title: article.title,
-    metaTitle: article.seo.title,
-    metaDescription: article.seo.description,
+    metaTitle,
+    metaDescription,
     canonicalPath,
-    openGraphTitle: article.seo.title,
-    openGraphDescription: article.seo.description,
+    openGraphTitle: metaTitle,
+    openGraphDescription: metaDescription,
     openGraphImage: article.seo.ogImage ?? article.featuredImage?.src,
-    twitterTitle: article.seo.title,
-    twitterDescription: article.seo.description,
+    twitterTitle: metaTitle,
+    twitterDescription: metaDescription,
     twitterImage: article.seo.ogImage ?? article.featuredImage?.src,
     robots: {
       index: robots.index && active && !noindex,
@@ -53,7 +59,7 @@ export function toArticleSeoRecord(article: ArticleSeoSource): ArticleSeoRecord 
     showModifiedDate: article.showModifiedDate,
     featuredImage: article.featuredImage,
     authorId: article.authorId,
-    schemaType: 'Article',
+    schemaType: 'BlogPosting',
     faqIds: article.faqs?.map((faq) => faq.id) ?? [],
     active,
     published,

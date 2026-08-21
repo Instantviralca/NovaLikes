@@ -14,8 +14,6 @@ export const APPROVED_SERVICE_SLUGS = [
   'buy-facebook-followers',
   'buy-facebook-page-likes',
   'buy-facebook-post-likes',
-  'buy-youtube-subscribers',
-  'buy-youtube-views',
 ] as const;
 
 export type ApprovedServiceSlug = (typeof APPROVED_SERVICE_SLUGS)[number];

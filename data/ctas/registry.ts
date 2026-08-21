@@ -34,7 +34,7 @@ export const ctaRegistry: CtaRecord[] = [
   {
     id: 'cta-browse-services',
     title: 'Browse growth services',
-    description: 'Explore NovaLikes services for Instagram, TikTok, YouTube, and Facebook.',
+    description: 'Explore NovaLikes services for Instagram, TikTok, and Facebook.',
     buttonLabel: 'Browse Services',
     destination: '/buy-instagram-followers',
     variant: 'primary',

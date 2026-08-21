@@ -1,76 +1,28 @@
 /**
  * Refund Policy production content — Document 13.06.
- * Body text lives here; React views render sections without hardcoding policy copy.
- * Do not invent refill periods, money-back windows, or processing SLAs.
+ * Approved: 30-Day Money-Back Guarantee on eligible orders.
+ * Refills remain package-dependent and separate from the money-back window.
  */
 
 import { routes } from '@/config/routes';
 import { getVerifiedRefundContactEmail, refundConfig } from '@/config/refund';
+import { formatLegalDisplayDate } from '@/lib/legal/format-date';
 import type {
   LegalPolicySection,
   RefundConfig,
   RefundPolicyContent,
 } from '@/types/legal';
 
-function formatDisplayDate(isoDate: string | undefined): string | undefined {
-  if (!isoDate) return undefined;
-  const parsed = new Date(`${isoDate}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(parsed);
-}
-
 function buildSections(config: RefundConfig): LegalPolicySection[] {
   const operatingName = config.operatingName;
-  const domainHost = config.websiteDomain.replace(/^https?:\/\//, '');
   const contactEmail = getVerifiedRefundContactEmail(config);
-  const termsPath = routes.termsAndConditions;
-  const privacyPath = routes.privacyPolicy;
-  const contactPath = routes.contact;
-  const faqPath = routes.faq;
-
-  const eligibilityBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: `Not every NovaLikes order is refundable. Eligible refunds depend on NovaLikes’s operational review and factors such as:`,
-    },
-    {
-      type: 'list',
-      items: [
-        'Order status',
-        'Service type',
-        'Package terms shown with the real package data',
-        'Operational review of the request',
-        'Customer compliance with order instructions and these policy terms',
-      ],
-    },
-  ];
-
-  if (config.eligibleMoneyBackWindowLabel) {
-    eligibilityBlocks.push({
-      type: 'paragraph',
-      text: `Where an eligible money-back window is published for a purchase, the configured window is: ${config.eligibleMoneyBackWindowLabel}. That window remains subject to this Refund Policy, the selected package conditions, order status, and customer actions.`,
-    });
-  } else {
-    eligibilityBlocks.push({
-      type: 'paragraph',
-      text: 'NovaLikes does not publish an unconditional money-back promise on this page. Any eligible money-back or refund window must come from verified operational policy and the conditions shown for the selected service and package. NovaLikes will not invent a refund timeframe for public display.',
-    });
-  }
-
-  eligibilityBlocks.push({
-    type: 'paragraph',
-    text: `Submitting a refund request does not guarantee approval or any particular outcome. Related questions are also covered in the FAQ at ${domainHost}${faqPath}.`,
-  });
+  const guaranteeLabel =
+    config.eligibleMoneyBackWindowLabel ?? '30-Day Money-Back Guarantee';
 
   const processingBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} reviews refund and refill requests after the required order details are received. NovaLikes does not promise approval, a fixed outcome, or uninterrupted processing for every request.`,
+      text: `${operatingName} reviews refund requests after the required order details are received.`,
     },
   ];
 
@@ -82,208 +34,210 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
   } else {
     processingBlocks.push({
       type: 'paragraph',
-      text: 'A specific public processing-time SLA has not been configured. NovaLikes will communicate about eligible requests through support after reviewing the order ID, checkout email, and issue description. Do not treat unpublished timeframes as guarantees.',
+      text: 'Refund processing time can depend on the payment provider and the time needed to review the order. NovaLikes does not publish a fixed refund settlement timeframe on this page.',
     });
   }
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `For refund or refill help, contact NovaLikes support with your order ID, checkout email, and a clear description of the issue.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Operating name: ${config.operatingName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Legal / business name on file: ${config.legalBusinessName}`,
-    },
-    {
-      type: 'paragraph',
-      text: `Website: ${config.websiteDomain}`,
+      text: `To request a refund review under the ${guaranteeLabel}, use the [Contact](${routes.contact}) page.`,
     },
   ];
 
   if (contactEmail) {
     contactBlocks.push({
       type: 'paragraph',
-      text: `Support email: ${contactEmail}`,
-    });
-  } else {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `A verified support email has not been published in Refund Policy configuration. Submit refund requests through the Contact page at ${domainHost}${contactPath}. Do not treat placeholder or example email addresses as official contacts.`,
-    });
-  }
-
-  if (config.mailingAddress) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Mailing address: ${config.mailingAddress}`,
+      text: `You may also email [${contactEmail}](mailto:${contactEmail}).`,
     });
   }
 
   contactBlocks.push({
     type: 'paragraph',
-    text: `You may also review the Terms & Conditions at ${domainHost}${termsPath}, the Privacy Policy at ${domainHost}${privacyPath}, and common answers in the FAQ at ${domainHost}${faqPath}.`,
+    text: `Related policies: [Terms and Conditions](${routes.termsAndConditions}), [Privacy Policy](${routes.privacyPolicy}), and [FAQ](${routes.faq}).`,
   });
 
   return [
     {
-      id: 'scope',
-      anchor: 'scope',
-      title: 'Scope',
+      id: 'before-requesting-a-refund',
+      anchor: 'before-requesting-a-refund',
+      title: '1. Before Requesting a Refund',
       blocks: [
         {
           type: 'paragraph',
-          text: `This Refund Policy explains how ${operatingName} handles refunds, partial refunds, cancellations, refill eligibility, customer responsibilities, and situations where a refund may not be available for orders placed through ${domainHost}.`,
-        },
-        {
-          type: 'paragraph',
-          text: `This policy works together with the Terms & Conditions (${domainHost}${termsPath}) and the Privacy Policy (${domainHost}${privacyPath}). Package-specific delivery estimates, features, and refill eligibility shown on service pages come from NovaLikes’s real package pricing data.`,
-        },
-      ],
-    },
-    {
-      id: 'refund-eligibility',
-      anchor: 'refund-eligibility',
-      title: 'Refund Eligibility',
-      blocks: eligibilityBlocks,
-    },
-    {
-      id: 'non-refundable',
-      anchor: 'non-refundable',
-      title: 'Non-Refundable Situations',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Refunds are generally not available in situations such as the following, subject to NovaLikes’s operational review:',
+          text: 'Before contacting support about a refund, please:',
         },
         {
           type: 'list',
           items: [
-            'Orders that have been completed in accordance with the selected package and destination details',
-            'Incorrect usernames, profile URLs, page URLs, post URLs, channel URLs, or video URLs supplied by the customer',
-            'Customer-requested changes after processing has begun',
-            'Orders affected by destination privacy settings, deleted content, restricted access, or other destination changes made after checkout',
-            'Violations of the Terms & Conditions',
-            'Abuse, fraud, chargeback misuse, or repeated bad-faith requests',
+            'Verify that the username or URL submitted with the order is correct',
+            'Keep the required profile, Page, post, Reel, or video publicly accessible while the order needs access to it',
+            'Avoid deleting or restricting the submitted content while the order is active',
+            'Contact support with your order details so the team can locate the order',
           ],
         },
-        {
-          type: 'paragraph',
-          text: 'These examples do not create an exhaustive list. NovaLikes may decline a refund where the operational review shows the request is outside eligible circumstances.',
-        },
       ],
     },
     {
-      id: 'partial-refunds',
-      anchor: 'partial-refunds',
-      title: 'Partial Refunds',
+      id: 'thirty-day-money-back-guarantee',
+      anchor: 'thirty-day-money-back-guarantee',
+      title: '2. 30-Day Money-Back Guarantee',
       blocks: [
         {
           type: 'paragraph',
-          text: 'A partial refund may be considered when NovaLikes’s operational process supports it — for example, when only part of an order was completed, when an order is marked partial, or when a reviewed request otherwise warrants limited credit.',
+          text: `${operatingName} offers a ${guaranteeLabel} on eligible orders. The 30-day period begins from the date of purchase / order payment.`,
         },
         {
           type: 'paragraph',
-          text: 'Partial refunds are not automatic and are not available for every order. Any partial refund amount depends on the reviewed order status, package terms, and NovaLikes’s operational decision.',
-        },
-      ],
-    },
-    {
-      id: 'order-cancellations',
-      anchor: 'order-cancellations',
-      title: 'Order Cancellations',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Customers cannot directly edit or cancel an order after successful payment through self-service tools. Contact support as soon as possible with the order ID and checkout email if you need help before or during processing.',
+          text: 'Refund requests must be submitted within 30 days of the original purchase date. Eligibility depends on the circumstances of the order, including its status, the selected service, the information submitted with the order, and whether NovaLikes was able to provide the purchased service.',
         },
         {
           type: 'paragraph',
-          text: 'Cancellation or refund may not be possible once processing has started or the order has been completed. NovaLikes will review cancellation requests according to order status and operational policy.',
-        },
-      ],
-    },
-    {
-      id: 'refill-policy',
-      anchor: 'refill-policy',
-      title: 'Refill Policy',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Only eligible packages include refill protection. Refill availability, duration, limits, and conditions must come from the real package data shown on the relevant service page before checkout.',
-        },
-        {
-          type: 'paragraph',
-          text: 'NovaLikes does not invent refill periods on this page. If a package does not display refill eligibility, assume refill protection is not included for that package unless NovaLikes later confirms otherwise in the package data.',
-        },
-        {
-          type: 'paragraph',
-          text: 'Where refill coverage applies, it is limited to qualifying decreases during the stated refill period for that package and remains subject to destination requirements, package terms, and operational review.',
-        },
-      ],
-    },
-    {
-      id: 'customer-responsibilities',
-      anchor: 'customer-responsibilities',
-      title: 'Customer Responsibilities',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Customers are responsible for:',
+          text: 'Common qualifying circumstances that may support a refund after review include:',
         },
         {
           type: 'list',
           items: [
-            'Providing an accurate public username or URL for the selected service',
-            'Keeping the destination public and accessible as required for fulfilment and any eligible refill',
-            'Reviewing package terms, delivery estimates, and refill eligibility before payment',
-            'Following NovaLikes instructions related to the order',
-            'Submitting refund or refill requests with complete and truthful information',
+            'NovaLikes cannot provide the purchased service',
+            'A technical or order error prevents fulfilment',
+            'An eligible service problem cannot be resolved',
+            'An accidental duplicate payment is confirmed',
           ],
         },
         {
           type: 'paragraph',
-          text: 'Incorrect destination information supplied by the customer may delay, reduce, or prevent fulfilment and may make an order ineligible for a refund.',
+          text: 'Submitting a refund request does not mean every request is automatically approved. Each request is reviewed under this Refund Policy and the circumstances of the order.',
         },
       ],
     },
     {
-      id: 'refund-request-process',
-      anchor: 'refund-request-process',
-      title: 'Refund Request Process',
+      id: 'when-a-refund-may-not-be-available',
+      anchor: 'when-a-refund-may-not-be-available',
+      title: '3. When a Refund May Not Apply',
       blocks: [
         {
           type: 'paragraph',
-          text: `To request help with a refund or refill, contact NovaLikes support through the Contact page at ${domainHost}${contactPath} and include only the information needed to locate and review the order:`,
+          text: 'A refund may not be available in situations such as:',
         },
         {
           type: 'list',
           items: [
-            'Order ID',
-            'Checkout email',
-            'Description of the issue',
+            'An incorrect username or URL was submitted and processing had already started',
+            'The required profile, Page, post, Reel, or video was made private or unavailable when public access was required',
+            'The submitted content was deleted or restricted after checkout',
+            'The customer changed information needed to complete the order after processing started',
+            'The order was successfully completed as purchased',
+            'The refund request was made after the 30-day guarantee period',
+            'Abuse, duplicate refund requests, fraud, or payment manipulation',
           ],
         },
         {
           type: 'paragraph',
-          text: 'NovaLikes will verify the order details and review the request against the applicable package terms and operational policy. A request does not guarantee approval, a refund amount, a refill, or any other specific outcome.',
+          text: `These exclusions are intended to keep the guarantee fair and workable. They do not remove the ${guaranteeLabel} for eligible orders that qualify under Section 2.`,
         },
       ],
     },
     {
-      id: 'processing-time',
-      anchor: 'processing-time',
-      title: 'Processing Time',
+      id: 'cancellations',
+      anchor: 'cancellations',
+      title: '4. Cancellations',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'There is no self-service cancellation or edit option after successful payment.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Customers should contact support as soon as possible with their order details. A change or cancellation may not be possible after processing has started or the order has been completed.',
+        },
+      ],
+    },
+    {
+      id: 'drops-and-refills',
+      anchor: 'drops-and-refills',
+      title: '5. Drops and Refills',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Follower, like, view, comment, and similar social-platform metrics can change over time for reasons outside NovaLikes’ control.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Refill availability depends on the service and package purchased. Any applicable refill conditions are those shown for the relevant service or package.',
+        },
+        {
+          type: 'paragraph',
+          text: `The ${guaranteeLabel} is separate from any package-specific refill terms. This page does not convert the money-back window into a universal 30-day refill guarantee.`,
+        },
+      ],
+    },
+    {
+      id: 'duplicate-orders-or-payments',
+      anchor: 'duplicate-orders-or-payments',
+      title: '6. Duplicate Orders or Payments',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'If you believe you were charged twice for the same intended purchase, contact support promptly with both payment references or order details.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} will review the records and, where a confirmed duplicate payment is found, work toward an appropriate resolution under this Refund Policy and the applicable payment provider process.`,
+        },
+      ],
+    },
+    {
+      id: 'payment-disputes',
+      anchor: 'payment-disputes',
+      title: '7. Payment Disputes',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `If you have a payment or order concern, please contact ${operatingName} support first so the team can investigate and respond.`,
+        },
+        {
+          type: 'paragraph',
+          text: 'This policy does not unlawfully restrict any chargeback or dispute rights you may have with your payment provider or under applicable law.',
+        },
+      ],
+    },
+    {
+      id: 'how-to-request-a-refund',
+      anchor: 'how-to-request-a-refund',
+      title: '8. How to Request a Refund',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: `To request a review under the ${guaranteeLabel}, submit a request through the [Contact](${routes.contact}) page${contactEmail ? ` or email [${contactEmail}](mailto:${contactEmail})` : ''}.`,
+        },
+        {
+          type: 'paragraph',
+          text: 'Please include:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Order reference',
+            'Email address used for the order',
+            'A short explanation of the issue',
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'Never send Instagram, TikTok, or Facebook passwords. NovaLikes does not need social media login credentials to review an order.',
+        },
+      ],
+    },
+    {
+      id: 'refund-processing',
+      anchor: 'refund-processing',
+      title: '9. Refund Processing',
       blocks: processingBlocks,
     },
     {
-      id: 'contact-support',
-      anchor: 'contact-support',
-      title: 'Contact Support',
+      id: 'contact',
+      anchor: 'contact',
+      title: '10. Contact',
       blocks: contactBlocks,
     },
   ];
@@ -292,19 +246,21 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
 export function getRefundPolicyContent(
   config: RefundConfig = refundConfig,
 ): RefundPolicyContent {
+  const guaranteeLabel =
+    config.eligibleMoneyBackWindowLabel ?? '30-Day Money-Back Guarantee';
+
   return {
     id: 'refund-policy',
     path: routes.refundPolicy,
     seo: {
       title: 'Refund Policy | NovaLikes',
       description:
-        'Read the NovaLikes refund policy, including eligibility, cancellations, partial refunds, refill coverage, and customer responsibilities.',
+        'Read the NovaLikes Refund Policy for information about the 30-Day Money-Back Guarantee, refund eligibility, order issues, cancellations, refills and requesting support.',
     },
     breadcrumbLabel: 'Refund Policy',
     header: {
       title: 'Refund Policy',
-      intro:
-        'This Refund Policy explains when NovaLikes may consider refunds, partial refunds, cancellations, and refill coverage for eligible packages. Not every order is refundable. Review the package terms shown before checkout and contact support if you need help with an existing order.',
+      intro: `${config.operatingName} offers a ${guaranteeLabel} on eligible orders. If you experience a qualifying problem with your purchase, you may contact NovaLikes within 30 days of the order date to request a review and, where eligible, a refund.`,
     },
     tocTitle: 'On this page',
     sections: buildSections(config),
@@ -316,9 +272,7 @@ export function getRefundPolicyDates(config: RefundConfig = refundConfig): {
   lastUpdatedLabel?: string;
 } {
   return {
-    effectiveDateLabel: formatDisplayDate(config.effectiveDate),
-    lastUpdatedLabel: formatDisplayDate(config.lastUpdatedDate),
+    effectiveDateLabel: formatLegalDisplayDate(config.effectiveDate),
+    lastUpdatedLabel: formatLegalDisplayDate(config.lastUpdatedDate),
   };
 }
-
-export { refundConfig };

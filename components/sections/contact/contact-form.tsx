@@ -5,8 +5,10 @@ import Link from 'next/link';
 import {
   CheckCircle2,
   Hash,
+  Lock,
   Mail,
   MessageSquare,
+  Send,
   Tag,
   User,
   type LucideIcon,
@@ -30,6 +32,8 @@ import {
   type ContactFormValues,
 } from '@/lib/contact/validation';
 import type { ContactFormFieldCopy, CTAContent } from '@/types/content';
+import type { ContactPageOverlay } from '@/lib/i18n/content/company-english';
+import { getEnglishContactSource } from '@/lib/i18n/content/company-english';
 
 type ContactCtaButtonsProps = {
   primaryCta: CTAContent;
@@ -97,10 +101,14 @@ export function ContactPageViewTracker() {
 
 type ContactFormProps = {
   fields: ContactFormFieldCopy;
+  chrome?: ContactPageOverlay['chrome'];
+  /** When true, omit the outer card chrome (used inside the Contact mockup panel). */
+  embedded?: boolean;
+  className?: string;
 };
 
 const inputClassName =
-  'min-h-11 rounded-xl border-[var(--border-subtle)] bg-white pl-10 transition-[border-color,box-shadow] duration-200 placeholder:text-muted-foreground focus-visible:border-[var(--brand-primary)]/45 focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--brand-primary)_12%,transparent)] focus-visible:ring-0';
+  'min-h-11 rounded-xl border-[var(--border-subtle)] bg-white ps-10 transition-[border-color,box-shadow] duration-200 placeholder:text-muted-foreground focus-visible:border-[var(--brand-primary)]/45 focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--brand-primary)_12%,transparent)] focus-visible:ring-0';
 
 const inputErrorClassName =
   'border-destructive focus-visible:border-destructive focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--destructive)_12%,transparent)]';
@@ -120,6 +128,7 @@ type ContactFieldProps = {
   icon: LucideIcon;
   value: string;
   onChange: (value: string) => void;
+  dir?: 'ltr' | 'rtl';
 };
 
 function ContactField({
@@ -137,6 +146,7 @@ function ContactField({
   icon: Icon,
   value,
   onChange,
+  dir,
 }: ContactFieldProps) {
   const fieldClass = cn(inputClassName, error && inputErrorClassName, multiline && 'min-h-[9rem] resize-y pt-3');
 
@@ -145,7 +155,7 @@ function ContactField({
       <div className="relative">
         <Icon
           className={cn(
-            'pointer-events-none absolute left-3.5 size-4 text-muted-foreground transition-colors duration-200',
+            'pointer-events-none absolute start-3.5 size-4 text-muted-foreground transition-colors duration-200',
             multiline ? 'top-3.5' : 'top-1/2 -translate-y-1/2',
             error && 'text-destructive',
           )}
@@ -176,6 +186,7 @@ function ContactField({
             value={value}
             onChange={(e) => onChange(e.target.value)}
             className={fieldClass}
+            dir={dir}
           />
         )}
       </div>
@@ -191,8 +202,30 @@ const emptyValues: ContactFormValues = {
   message: '',
 };
 
+function localizeFormErrors(
+  values: ContactFormValues,
+  raw: ContactFormErrors,
+  chrome: ContactPageOverlay['chrome'],
+): ContactFormErrors {
+  const next: ContactFormErrors = {};
+  if (raw.fullName) next.fullName = chrome.fullNameRequired;
+  if (raw.email) {
+    next.email = values.email.trim() ? chrome.emailInvalid : chrome.emailRequired;
+  }
+  if (raw.subject) next.subject = chrome.subjectRequired;
+  if (raw.message) {
+    next.message = values.message.trim() ? chrome.messageMin : chrome.messageRequired;
+  }
+  return next;
+}
+
 /** Validated contact form — posts to /api/contact for server-side storage. */
-export function ContactForm({ fields }: ContactFormProps) {
+export function ContactForm({
+  fields,
+  chrome = getEnglishContactSource().chrome,
+  embedded = false,
+  className,
+}: ContactFormProps) {
   const [values, setValues] = useState<ContactFormValues>(emptyValues);
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [submitted, setSubmitted] = useState(false);
@@ -238,7 +271,7 @@ export function ContactForm({ fields }: ContactFormProps) {
             setErrors({});
           }}
         >
-          Send another message
+          {chrome.sendAnother}
         </Button>
       </div>
     );
@@ -246,11 +279,16 @@ export function ContactForm({ fields }: ContactFormProps) {
 
   return (
     <form
-      className="space-y-5 rounded-2xl border border-[var(--border-subtle)] bg-card p-6 shadow-[0_14px_32px_-24px_rgba(28,25,23,0.22)] sm:p-8"
+      className={cn(
+        'space-y-5',
+        !embedded &&
+          'rounded-2xl border border-[var(--border-subtle)] bg-card p-6 shadow-[0_14px_32px_-24px_rgba(28,25,23,0.22)] sm:p-8',
+        className,
+      )}
       noValidate
       onSubmit={async (event) => {
         event.preventDefault();
-        const nextErrors = validateContactForm(values);
+        const nextErrors = localizeFormErrors(values, validateContactForm(values), chrome);
         setErrors(nextErrors);
         if (hasContactFormErrors(nextErrors)) return;
 
@@ -269,42 +307,45 @@ export function ContactForm({ fields }: ContactFormProps) {
           });
           const data = (await response.json()) as { ok?: boolean; error?: string };
           if (!response.ok || !data.ok) {
-            setSubmitError(data.error ?? 'Unable to send your message.');
+            setSubmitError(data.error ?? chrome.submitError);
             setSubmitting(false);
             return;
           }
           setSubmitted(true);
         } catch {
-          setSubmitError('Unable to send your message.');
+          setSubmitError(chrome.submitError);
           setSubmitting(false);
         }
       }}
     >
-      <ContactField
-        id="contact-full-name"
-        name="fullName"
-        label={fields.fullNameLabel}
-        placeholder={fields.fullNamePlaceholder}
-        autoComplete="name"
-        required
-        icon={User}
-        value={values.fullName}
-        error={errors.fullName}
-        onChange={(value) => update('fullName', value)}
-      />
-      <ContactField
-        id="contact-email"
-        name="email"
-        type="email"
-        label={fields.emailLabel}
-        placeholder={fields.emailPlaceholder}
-        autoComplete="email"
-        required
-        icon={Mail}
-        value={values.email}
-        error={errors.email}
-        onChange={(value) => update('email', value)}
-      />
+      <div className="grid gap-5 sm:grid-cols-2">
+        <ContactField
+          id="contact-full-name"
+          name="fullName"
+          label={fields.fullNameLabel}
+          placeholder={fields.fullNamePlaceholder}
+          autoComplete="name"
+          required
+          icon={User}
+          value={values.fullName}
+          error={errors.fullName}
+          onChange={(value) => update('fullName', value)}
+        />
+        <ContactField
+          id="contact-email"
+          name="email"
+          type="email"
+          label={fields.emailLabel}
+          placeholder={fields.emailPlaceholder}
+          autoComplete="email"
+          required
+          icon={Mail}
+          value={values.email}
+          error={errors.email}
+          onChange={(value) => update('email', value)}
+          dir="ltr"
+        />
+      </div>
       <ContactField
         id="contact-subject"
         name="subject"
@@ -327,6 +368,7 @@ export function ContactForm({ fields }: ContactFormProps) {
         value={values.orderId}
         error={errors.orderId}
         onChange={(value) => update('orderId', value)}
+        dir="ltr"
       />
       <ContactField
         id="contact-message"
@@ -348,14 +390,14 @@ export function ContactForm({ fields }: ContactFormProps) {
           {submitError}
         </p>
       ) : null}
-      <Button
-        type="submit"
-        size="lg"
-        className="min-h-11 w-full sm:w-auto"
-        disabled={submitting}
-      >
-        {submitting ? 'Sending…' : fields.submitLabel}
+      <Button type="submit" size="lg" className="min-h-11 w-full" disabled={submitting}>
+        <Send className="size-4" aria-hidden />
+        {submitting ? chrome.sending : fields.submitLabel}
       </Button>
+      <p className="flex items-center justify-center gap-2 text-center text-xs text-[var(--text-secondary)]">
+        <Lock className="size-3.5 shrink-0" aria-hidden />
+        {chrome.privacyNote}
+      </p>
     </form>
   );
 }

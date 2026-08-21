@@ -11,6 +11,7 @@ import { ArticleContent } from '@/components/learn/article/ArticleContent';
 import { ArticleFAQ } from '@/components/learn/article/ArticleFAQ';
 import { ArticleHero } from '@/components/learn/article/ArticleHero';
 import { ArticlePage } from '@/components/learn/article/ArticlePage';
+import { RelatedArticles } from '@/components/learn/article/RelatedArticles';
 import { AuthorBox } from '@/components/learn/article/AuthorBox';
 import {
   calculateReadingTime,
@@ -122,6 +123,37 @@ describe('Article Template System', () => {
     expect(html).toContain('Test Growth Guide');
     expect(html.match(/<h1\b/g)?.length).toBe(1);
     expect(html).toContain('data-learn-article');
+    expect(html).toContain('At a glance');
+    expect(html).not.toContain('Browse growth services');
+    expect(html).not.toContain('Explore Services');
+    expect(html).not.toContain('article-related-services');
+  });
+
+  it('renders a mid-article service cluster without pricing cards', () => {
+    const html = renderToStaticMarkup(
+      createElement(ArticleContent, {
+        blocks: [
+          {
+            id: 'cta-cluster',
+            type: 'service_cluster_cta',
+            order: 1,
+            heading: 'Compare TikTok Growth Options',
+            text: 'Followers, likes and views measure different parts of a TikTok presence.',
+            serviceSlugs: [
+              'buy-tiktok-followers',
+              'buy-tiktok-likes',
+              'buy-tiktok-views',
+            ],
+          },
+        ],
+      }),
+    );
+    expect(html).toContain('Compare TikTok Growth Options');
+    expect(html).toContain('/buy-tiktok-followers');
+    expect(html).toContain('/buy-tiktok-likes');
+    expect(html).toContain('/buy-tiktok-views');
+    expect(html).not.toContain('guaranteed growth');
+    expect(html).not.toContain('$');
   });
 
   it('does not expose drafts via public getters', () => {
@@ -132,9 +164,10 @@ describe('Article Template System', () => {
   it('validates heading hierarchy and generates TOC', () => {
     const blocks = withHeadingAnchors(makeArticle().blocks);
     const toc = generateTableOfContents(blocks);
-    expect(toc).toHaveLength(2);
+    expect(toc).toHaveLength(1);
     expect(toc[0]?.level).toBe(2);
-    expect(toc[1]?.level).toBe(3);
+    expect(toc[0]?.label).toBe('Getting started');
+    expect(toc.some((item) => item.level === 3)).toBe(false);
     expect(validateHeadingHierarchy(blocks)).toHaveLength(0);
   });
 
@@ -204,6 +237,16 @@ describe('Article Template System', () => {
     expect(related.every((item) => item.slug !== article.slug)).toBe(true);
   });
 
+  it('hides related guides when fewer than two published articles exist', () => {
+    const empty = renderToStaticMarkup(
+      createElement(RelatedArticles, {
+        articles: [makeArticle()],
+        currentSlug: 'other',
+      }),
+    );
+    expect(empty).toBe('');
+  });
+
   it('validates related service routes', () => {
     const issues = validateArticleLinks(
       makeArticle({
@@ -219,7 +262,7 @@ describe('Article Template System', () => {
 
   it('builds article schema and FAQ schema only when FAQs are schema-eligible', () => {
     const withFaq = getArticleSchema(makeArticle(), { includeFaq: true });
-    expect(withFaq.some((item) => item['@type'] === 'Article')).toBe(true);
+    expect(withFaq.some((item) => item['@type'] === 'BlogPosting')).toBe(true);
     expect(withFaq.some((item) => item['@type'] === 'FAQPage')).toBe(true);
 
     const hiddenFaq = getArticleSchema(
@@ -347,6 +390,7 @@ describe('Article Template System', () => {
 
   it('keeps preview access closed without a configured secret', () => {
     expect(canAccessArticlePreview('anything')).toBe(false);
+    expect(canAccessArticlePreview(undefined)).toBe(false);
   });
 
   it('renders hero with semantic time elements', () => {

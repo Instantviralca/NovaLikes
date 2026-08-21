@@ -1,0 +1,635 @@
+{
+  "content": {
+    "slug": "buy-facebook-page-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Comprar Me gusta de Página de Facebook | NovaLikes",
+      "description": "Compra Me gusta de Página de Facebook con paquetes transparentes para negocios y creadores. Solo URL de Página pública, pago seguro y seguimiento del pedido. Sin contraseña necesaria."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR ME GUSTA DE PÁGINA DE FACEBOOK",
+      "title": "Comprar Me gusta de Página de Facebook",
+      "description": "Compra Me gusta de Página de Facebook eligiendo el paquete y la cantidad que encajan con tu Página. NovaLikes te permite comparar los paquetes y precios de Me gusta de Página disponibles antes de pedir. Selecciona el número de Me gusta de Página que quieres, facilita la URL pública correcta de la Página de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+      "purpose": "Convert for Facebook page likes packages worldwide",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Facebook Page Likes",
+        "Buy Facebook Business Page Likes",
+        "Buy Likes for Facebook Page",
+        "Facebook Page Likes Buy",
+        "Can You Buy Facebook Page Likes"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Elegir un paquete de Me gusta de Página de Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Cómo funciona",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-pl-trust-url",
+          "label": "Solo URL pública de Página de Facebook"
+        },
+        {
+          "id": "fb-pl-trust-password",
+          "label": "Sin contraseña necesaria"
+        },
+        {
+          "id": "fb-pl-trust-checkout",
+          "label": "Pago seguro"
+        },
+        {
+          "id": "fb-pl-trust-track",
+          "label": "Seguimiento del pedido"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp",
+        "alt": "Ilustración de Me gusta de Página de negocio de Facebook y analíticas de Meta Business Suite",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Paquetes y precios de Me gusta de Página de Facebook",
+      "description": "Compara los paquetes, cantidades y precios de Me gusta de Página de Facebook disponibles antes de pedir. Elige el número de Me gusta de Página que quieres para tu Página pública de Facebook, revisa el precio actual del paquete y añade el paquete seleccionado al carrito cuando estés listo.",
+      "purpose": "Present real NovaLikes.com Facebook page likes packages",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuar con el paquete",
+      "emptyMessage": "Los paquetes de Me gusta de Página de Facebook no están disponibles temporalmente."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-page-likes",
+      "title": "¿Por qué la gente compra Me gusta de Página de Facebook?",
+      "description": "La gente compra Me gusta de Página de Facebook por distintas motivaciones de marketing: desde lanzar una Página de negocio nueva hasta apoyar campañas de marca. El objetivo común es una prueba social visible más sólida cuando los visitantes descubren la Página por primera vez.",
+      "purpose": "Explain motivations for buying Facebook page likes",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "buy likes for Facebook page",
+        "buy Facebook business page likes",
+        "Facebook page likes buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-pl-new-business",
+          "title": "Lanza una Página de negocio nueva",
+          "description": "Restaurantes, agencias, tiendas y negocios de servicios nuevos suelen querer que su Página de Facebook se vea más consolidada desde el primer día."
+        },
+        {
+          "id": "fb-pl-launch",
+          "title": "Apoya el lanzamiento de un producto o marca",
+          "description": "Los equipos que gestionan lanzamientos y campañas de notoriedad usan paquetes de Me gusta de Página para reforzar la Página que promociona la oferta."
+        },
+        {
+          "id": "fb-pl-brand-image",
+          "title": "Refuerza la imagen de marca",
+          "description": "Las marcas compran Me gusta de Página cuando quieren que el recuento público de Me gusta de Página encaje mejor con lo consolidado que ya se siente su negocio fuera de internet."
+        },
+        {
+          "id": "fb-pl-social-proof",
+          "title": "Añade prueba social visible",
+          "description": "Creadores y organizaciones usan Me gusta de Página como una señal pública más que los visitantes pueden notar antes de leer publicaciones o contactar con la Página."
+        },
+        {
+          "id": "fb-pl-campaigns",
+          "title": "Apoya campañas de marketing",
+          "description": "Los paquetes de Me gusta de Página suelen pedirse junto con anuncios de Facebook, calendarios de contenido e interacción con la comunidad, no como un plan de crecimiento aislado."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-page-likes",
+      "title": "¿Por qué elegir NovaLikes para Me gusta de Página de Facebook?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook page likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-page-likes-delivery",
+      "title": "Características",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Cómo comprar Me gusta de Página de Facebook",
+      "description": "Comprar Me gusta de Página de Facebook es un proceso directo. Selecciona el paquete de Me gusta de Página que encaja con tus objetivos, introduce la URL pública de tu Página de Facebook, revisa los detalles del pedido y completa el pago seguro. Nunca necesitas facilitar tu contraseña de Facebook, y puedes seguir las actualizaciones del pedido disponibles después de la compra.",
+      "purpose": "Explain the five-step Facebook Page Likes ordering process",
+      "primaryKeyword": "how to buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Page Likes on Facebook",
+        "Buying Page Likes on Facebook",
+        "Buy Facebook Business Page Likes"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-pl-step-1",
+          "title": "Elige un paquete de Me gusta de Página",
+          "description": "Compara los paquetes de Me gusta de Página disponibles y selecciona la cantidad que mejor encaje con tu Página de Facebook, tu campaña de marketing y el tamaño actual de audiencia."
+        },
+        {
+          "id": "fb-pl-step-2",
+          "title": "Introduce la URL pública de tu Página de Facebook",
+          "description": "Pega la URL pública de la Página de Facebook que debe recibir el paquete de Me gusta de Página seleccionado. Esto ayuda a que tu pedido se asigne a la Página correcta."
+        },
+        {
+          "id": "fb-pl-step-3",
+          "title": "Revisa tu pedido",
+          "description": "Confirma el paquete seleccionado, la URL de la Página, el precio y los detalles del pedido antes de completar el pago."
+        },
+        {
+          "id": "fb-pl-step-4",
+          "title": "Completa el pago seguro",
+          "description": "Finaliza tu compra usando nuestro proceso de checkout protegido sin compartir tus credenciales de Facebook."
+        },
+        {
+          "id": "fb-pl-step-5",
+          "title": "Sigue tu pedido",
+          "description": "Después del pago, consulta las actualizaciones del pedido disponibles para seguir el progreso de la entrega de principio a fin."
+        }
+      ],
+      "cta": {
+        "label": "Elige tu paquete de Me gusta de Página",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "¿Qué necesitas para hacer un pedido?",
+      "description": "Pedir Me gusta de Página de Facebook solo requiere unos pocos datos públicos. Nunca se piden información privada de la cuenta, contraseñas ni códigos de verificación.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-pl-req-url",
+          "title": "URL pública de Página de Facebook",
+          "description": "Facilita la URL pública de la Página de Facebook que recibirá el paquete de Me gusta de Página seleccionado."
+        },
+        {
+          "id": "fb-pl-req-package",
+          "title": "Paquete seleccionado",
+          "description": "Elige la cantidad que mejor coincida con tus objetivos de negocio y el tamaño actual de tu Página de Facebook."
+        },
+        {
+          "id": "fb-pl-req-public",
+          "title": "Acceso público a la Página",
+          "description": "Mantén tu Página de Facebook accesible públicamente mientras se procesa tu pedido."
+        },
+        {
+          "id": "fb-pl-req-email",
+          "title": "Dirección de email válida",
+          "description": "Usa una dirección de email que funcione para recibir confirmaciones del pedido, actualizaciones de progreso y atención al cliente si la necesitas."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-page-likes-reviews",
+      "title": "Qué dicen los clientes sobre NovaLikes",
+      "description": "Opiniones de clientes de este servicio de NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-page-likes-faq",
+      "title": "Preguntas frecuentes sobre comprar Me gusta de Página de Facebook",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook page likes",
+      "faqIds": [
+        "faq-fb-page-likes-need",
+        "faq-fb-page-likes-package",
+        "faq-fb-page-likes-password",
+        "faq-fb-page-likes-how-long",
+        "faq-fb-page-likes-track",
+        "faq-fb-page-likes-wrong-url",
+        "faq-fb-page-likes-other-metrics",
+        "faq-fb-page-likes-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-page-likes",
+      "title": "Explora más servicios de crecimiento en Facebook",
+      "description": "Los Me gusta de Página de Facebook son solo una parte de construir una presencia más sólida en Facebook. Explora nuestros servicios adicionales de Facebook pensados para distintos objetivos de crecimiento.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-page-likes-final-cta",
+      "title": "Elige tu paquete de Me gusta de Página de Facebook",
+      "description": "Compara las cantidades y los precios de Me gusta de Página disponibles, elige el paquete que encaja con la Página de Facebook que quieres usar y realiza tu pedido con la URL pública correcta de la Página de Facebook.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver paquetes de Me gusta de Página de Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Seguir un pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-page-likes-why-choose",
+        "title": "¿Por qué elegir NovaLikes para Me gusta de Página de Facebook?",
+        "description": "NovaLikes facilita comparar paquetes de Me gusta de Página de Facebook antes de pedir. Elige la cantidad de Me gusta de Página que quieres, facilita la URL pública correcta de la Página de Facebook, revisa el precio del paquete y usa el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-0",
+            "title": "Varias cantidades de Me gusta de Página",
+            "description": "Compara las cantidades de Me gusta de Página de Facebook disponibles y elige el paquete que coincida con el número de Me gusta de Página que quieres pedir.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-1",
+            "title": "Solo URL pública de Página de Facebook",
+            "description": "Facilita la URL pública correcta de la Página de Facebook donde quieres que se añadan los Me gusta de Página. No se requiere tu contraseña de Facebook.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-2",
+            "title": "Revisa antes del pago",
+            "description": "Comprueba la cantidad de Me gusta de Página seleccionada y el precio actual del paquete antes de añadir tu pedido al carrito y completar el pago.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-3",
+            "title": "Seguimiento del pedido",
+            "description": "Usa la opción de seguimiento disponible después del pago para consultar información de estado de tu pedido de Me gusta de Página de Facebook.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-page-likes-can-you-buy",
+        "title": "¿Se pueden comprar Me gusta de Página de Facebook?",
+        "description": "Sí. Los paquetes de Me gusta de Página de Facebook se pueden comprar a través de servicios online de Me gusta de Página. Con NovaLikes, eliges un paquete de Me gusta de Página disponible, facilitas la URL pública de la Página de Facebook que quieres usar y completas tu pedido a través del sitio web.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-4",
+            "title": "Qué cambia un pedido de Me gusta de Página de Facebook",
+            "description": "Un pedido de Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página pública de Facebook enviada con el pedido. No añade automáticamente seguidores de Facebook ni likes a publicaciones individuales.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-page-likes-5",
+            "title": "Qué necesitas para hacer un pedido",
+            "description": "Necesitas la URL pública correcta de la Página de Facebook y el paquete de Me gusta de Página que quieres comprar. No se requiere tu contraseña de Facebook.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-6",
+            "title": "Qué no incluyen los Me gusta de Página de Facebook",
+            "description": "Los Me gusta de Página son independientes de seguidores de Facebook y Me gusta de publicaciones. Pedir Me gusta de Página no añade automáticamente esas otras métricas ni garantiza más interacción, alcance, ventas o crecimiento orgánico.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de Página de Facebook, elegido la cantidad correcta de Me gusta de Página y facilitado la URL de la Página pública exacta de Facebook donde quieres que se añadan los Me gusta de Página."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-page-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-page-likes-what-happens",
+        "title": "¿Qué ocurre después de comprar Me gusta de Página de Facebook?",
+        "description": "Después de hacer un pedido de Me gusta de Página de Facebook, el paquete de Me gusta de Página y la URL pública de la Página de Facebook que enviaste se usan para procesar el pedido para la Página seleccionada. Mantén la Página accesible públicamente cuando se requiera mientras se gestiona el pedido.",
+        "steps": [
+          {
+            "id": "buy-facebook-page-likes-th-1",
+            "title": "Se revisan los datos de tu pedido",
+            "description": "El paquete de Me gusta de Página seleccionado, la cantidad y la URL de la Página de Facebook enviada se asocian a tu pedido para que la solicitud se procese para la Página prevista."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-2",
+            "title": "Los Me gusta de Página van a la Página enviada",
+            "description": "El pedido se aplica a la Página de Facebook vinculada a la URL que facilitaste. Revisa la URL de la Página con cuidado antes de completar el pago."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-3",
+            "title": "El tiempo de procesamiento puede variar",
+            "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de Me gusta de Página y las condiciones actuales de pedidos. No cabe esperar un único plazo de entrega fijo para todos los paquetes."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-4",
+            "title": "Consulta el estado de tu pedido",
+            "description": "Usa el seguimiento de pedidos de NovaLikes para las actualizaciones de estado disponibles. Si necesitas ayuda, contacta con soporte con la información relevante del pedido."
+          }
+        ],
+        "closingNote": "Evita eliminar la Página enviada, hacerla no disponible o cambiar algo que impida el acceso a ella mientras se procesa el pedido. Si algo cambia después de pedir, contacta con soporte si necesitas ayuda."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-page-likes-service-compare",
+        "title": "Me gusta de Página de Facebook vs otros servicios de Facebook",
+        "description": "Me gusta de Página de Facebook, seguidores de Facebook y Me gusta de publicaciones de Facebook representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de Me gusta de Página, el recuento de seguidores o el recuento de likes de una publicación concreta de Facebook.",
+        "current": {
+          "title": "Me gusta de Página de Facebook",
+          "description": "Los Me gusta de Página son una métrica a nivel de Página. Elige Me gusta de Página de Facebook cuando el recuento de Me gusta de Página de una Página pública de Facebook sea la métrica que quieres cambiar.",
+          "bestFor": "Páginas de Facebook en las que el recuento de Me gusta de Página es la métrica que quieres cambiar.",
+          "ctaLabel": "Me gusta de Página de Facebook"
+        },
+        "likes": {
+          "title": "Seguidores de Facebook",
+          "description": "Los seguidores son una métrica a nivel de Página distinta. Elige seguidores de Facebook cuando quieras aumentar el recuento de seguidores que se muestra en una Página pública de Facebook.",
+          "bestFor": "Páginas de Facebook en las que el recuento de seguidores es la métrica que quieres cambiar.",
+          "href": "/buy-facebook-followers",
+          "ctaLabel": "Ver seguidores de Facebook"
+        },
+        "views": {
+          "title": "Me gusta de publicaciones de Facebook",
+          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes de una publicación pública de Facebook elegible concreta.",
+          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de likes es la métrica que quieres cambiar.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
+        },
+        "combinedNote": "Elige el servicio de Facebook que coincida con la métrica exacta que quieres cambiar antes de hacer un pedido.",
+        "commentsHref": "/buy-facebook-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-page-likes-before-buying",
+        "title": "Qué revisar antes de comprar Me gusta de Página de Facebook",
+        "description": "Antes de comprar Me gusta de Página de Facebook, revisa el paquete y los detalles de la Página antes de completar tu pedido. Asegúrate de que la cantidad de Me gusta de Página, el precio, la URL de la Página de Facebook y el servicio seleccionado coinciden con lo que quieres para la Página.",
+        "framingNote": "Revisa la URL de la Página de Facebook enviada, la cantidad de Me gusta de Página y el precio una vez más antes del pago. Evita basarte en afirmaciones de que comprar Me gusta de Página garantizará más seguidores, Me gusta de publicaciones, interacción, alcance, ventas o crecimiento orgánico.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-7",
+            "title": "Revisa la cantidad de Me gusta de Página",
+            "description": "Consulta el número de Me gusta de Página de Facebook incluidos en el paquete para saber cuántos estás pidiendo para la Página enviada.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-8",
+            "title": "Confirma el precio del paquete",
+            "description": "Revisa el precio actual mostrado para el paquete de Me gusta de Página seleccionado antes de añadirlo al carrito. Si cambias la cantidad, consulta el precio actualizado antes del pago.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-9",
+            "title": "Usa la URL correcta de la Página de Facebook",
+            "description": "Revisa la URL pública de la Página de Facebook con cuidado para que el pedido se asocie exactamente a la Página donde quieres que se añadan los Me gusta de Página.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-10",
+            "title": "Elige el servicio de Facebook correcto",
+            "description": "Me gusta de Página, seguidores y Me gusta de publicaciones son métricas separadas. Comprueba que Me gusta de Página de Facebook es el servicio que necesitas antes de hacer el pedido.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-page-likes-11",
+            "title": "Revisa soporte y políticas",
+            "description": "Consulta las políticas de compra correspondientes y las opciones de soporte disponibles para saber dónde acudir si tienes una pregunta sobre tu pedido.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-page-likes-worldwide",
+        "title": "Prepara tu Página de Facebook para Me gusta de Página",
+        "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de una Página pública de Facebook elegible. Asegúrate de que la Página enviada durante el pago es exactamente la Página que quieres usar.",
+        "eyebrow": "Listo para Me gusta de Página de Facebook",
+        "closingNote": "Me gusta de Página de Facebook se aplica a una Página pública de Facebook. Envía una URL de Página, no una URL de publicación, mantén la Página pública y revisa la cantidad seleccionada antes del pago.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-12",
+            "title": "Envía una URL de Página",
+            "description": "Usa la URL pública de Página de Facebook solicitada para el servicio. Un enlace a una publicación individual de Facebook no es el destino correcto para Me gusta de Página.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-13",
+            "title": "Mantén la Página pública",
+            "description": "Mantén la Página enviada accesible públicamente cuando se requiera mientras se procesa el pedido.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-14",
+            "title": "Me gusta de Página y seguidores son independientes",
+            "description": "Me gusta de Página y seguidores son ambas métricas a nivel de Página, pero son servicios distintos. Elige el que coincida con la métrica que quieres cambiar.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-15",
+            "title": "Revisa cantidad y precio",
+            "description": "Comprueba la cantidad de Me gusta de Página seleccionada y el precio actual del paquete antes de completar tu pedido.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-page-likes-popular-packages",
+        "title": "Paquetes populares de Me gusta de Página de Facebook",
+        "description": "Compara algunas de las cantidades de Me gusta de Página de Facebook disponibles en NovaLikes abajo, o vuelve a la sección completa de precios para ver todas las opciones de paquete disponibles.",
+        "rows": [
+          {
+            "id": "fb-pl-100",
+            "quantity": "100 Me gusta de Página",
+            "recommendedFor": "Un paquete más pequeño para una Página pública de Facebook en la que quieres añadir cien Me gusta de Página."
+          },
+          {
+            "id": "fb-pl-500",
+            "quantity": "500 Me gusta de Página",
+            "recommendedFor": "Una opción pequeña-intermedia para una Página de Facebook en la que quieres añadir quinientos Me gusta de Página."
+          },
+          {
+            "id": "fb-pl-1000",
+            "quantity": "1,000 Me gusta de Página",
+            "recommendedFor": "Un paquete intermedio para una Página pública de Facebook en la que quieres añadir mil Me gusta de Página."
+          },
+          {
+            "id": "fb-pl-5000",
+            "quantity": "5,000 Me gusta de Página",
+            "recommendedFor": "Una opción más grande para una Página de Facebook en la que quieres añadir cinco mil Me gusta de Página."
+          },
+          {
+            "id": "fb-pl-10000",
+            "quantity": "10,000 Me gusta de Página",
+            "recommendedFor": "Un paquete de mayor volumen para una Página pública de Facebook en la que quieres añadir diez mil Me gusta de Página."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-page-likes-best-practices",
+        "title": "Buenas prácticas después de comprar Me gusta de Página de Facebook",
+        "description": "Comprar Me gusta de Página cambia el recuento de Me gusta de Página de la Página de Facebook seleccionada, pero el resto de tu actividad en Facebook sigue dependiendo del contenido que publicas y de cómo gestiones tu Página. Mantén tu Página activa, revisa su rendimiento e interactúa con tu audiencia junto al servicio.",
+        "closingNote": "El recuento de Me gusta de Página es solo una métrica de una Página de Facebook. Tus seguidores, interacciones en publicaciones, respuestas de la audiencia y el resto de la actividad siguen dependiendo de cómo gestiones tu presencia en Facebook.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-16",
+            "title": "Mantén tu Página de Facebook activa",
+            "description": "Continúa publicando posts que encajen con tu negocio, marca, tema o la audiencia a la que quieres llegar.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-17",
+            "title": "Mantén la información de tu Página actualizada",
+            "description": "Revisa el nombre de la Página, la descripción, los datos de contacto, el sitio web, la información del negocio y otros datos públicos cuando corresponda.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-page-likes-18",
+            "title": "Revisa Facebook Insights",
+            "description": "Si hay insights disponibles para tu Página, revisa la actividad de la Página, el rendimiento de las publicaciones, la interacción y otros datos disponibles para entender cómo rinde tu propio contenido.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-19",
+            "title": "Prueba distintos tipos de contenido",
+            "description": "Prueba distintos formatos de publicación, temas, imágenes, vídeos y enfoques de publicación para aprender qué funciona para tu Página.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-20",
+            "title": "Responde a la interacción genuina",
+            "description": "Responde a comentarios y mensajes genuinos cuando corresponda. Un recuento mayor de Me gusta de Página no sustituye las interacciones que construyes con tu propia actividad en la Página.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-21",
+            "title": "Mantén una presencia constante en la Página",
+            "description": "Sigue gestionando y publicando en tu Página, en lugar de tratar un paquete de Me gusta de Página como un sustituto de la actividad continua en Facebook.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-page-likes-common-mistakes",
+        "title": "Errores habituales al comprar Me gusta de Página de Facebook",
+        "description": "Unos pocos errores simples pueden causar problemas con un pedido de Me gusta de Página de Facebook. Revisa la URL de la Página, la cantidad de Me gusta de Página, el servicio y las expectativas antes del pago para saber exactamente qué estás pidiendo.",
+        "closingNote": "Antes de hacer un pedido, revisa la URL de la Página de Facebook, la cantidad de Me gusta de Página y el precio una vez más. Si algo cambia después del pago, usa las opciones de seguimiento o soporte disponibles para tu pedido.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-22",
+            "title": "Enviar la URL incorrecta de la Página de Facebook",
+            "description": "Revisa la URL pública de la Página de Facebook con cuidado antes de pedir. La URL debe apuntar exactamente a la Página donde quieres que se añadan los Me gusta de Página.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-23",
+            "title": "Elegir el servicio de Facebook incorrecto",
+            "description": "Me gusta de Página, seguidores y Me gusta de publicaciones son servicios separados. Elige Me gusta de Página de Facebook solo cuando el recuento de Me gusta de Página de una Página sea la métrica que quieres cambiar.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-24",
+            "title": "Seleccionar la cantidad de Me gusta de Página incorrecta",
+            "description": "Revisa el número de Me gusta de Página incluidos en el paquete seleccionado antes del pago para no pedir una cantidad distinta de la que pretendías.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-25",
+            "title": "Hacer la Página no disponible durante un pedido",
+            "description": "Evita eliminar la Página enviada o hacerla no disponible mientras se procesa el pedido.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-26",
+            "title": "Esperar que los Me gusta de Página garanticen otros resultados",
+            "description": "Un recuento mayor de Me gusta de Página no significa automáticamente más seguidores, Me gusta de publicaciones, interacción, alcance, ventas o crecimiento orgánico.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Seguidores de Facebook",
+            "description": "Elige seguidores de Facebook cuando el recuento de seguidores de una Página pública de Facebook sea la métrica que quieres cambiar.",
+            "ctaLabel": "Ver seguidores de Facebook"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Me gusta de publicaciones de Facebook",
+            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes que se muestra en una publicación pública de Facebook elegible.",
+            "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-page-likes-why-buy",
+      "title": "¿Por qué la gente compra Me gusta de Página de Facebook?",
+      "description": "La gente compra Me gusta de Página de Facebook por distintos motivos. Algunos quieren aumentar el recuento de Me gusta de Página que se muestra en una Página de Facebook, mientras que otros eligen un paquete de Me gusta de Página para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de Me gusta de Página de la Página seleccionada, pero no garantiza seguidores, likes de publicaciones, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "items": [
+        {
+          "id": "buy-facebook-page-likes-wb-1",
+          "title": "Aumenta el recuento visible de Me gusta de Página",
+          "description": "Un paquete de Me gusta de Página de Facebook se puede usar cuando quieres aumentar el recuento de Me gusta de Página que se muestra en una Página pública concreta de Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-2",
+          "title": "Usa Me gusta de Página en un lanzamiento o campaña",
+          "description": "Negocios y propietarios de Páginas pueden elegir un paquete de Me gusta de Página mientras trabajan en un lanzamiento, campaña, anuncio u otra actividad en Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-3",
+          "title": "Céntrate en la métrica de Me gusta de Página",
+          "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página seleccionada. No añade automáticamente seguidores de Facebook ni likes a publicaciones individuales de Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-4",
+          "title": "Elige la cantidad que quieres",
+          "description": "Los distintos tamaños de paquete te permiten seleccionar el número de Me gusta de Página de Facebook que quieres pedir para la Página enviada."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-5",
+          "title": "Usa Me gusta de Página junto con tu contenido",
+          "description": "Comprar Me gusta de Página no sustituye publicar y gestionar tu propio contenido de Facebook. Las publicaciones, respuestas, información de la Página y el resto de la actividad siguen dependiendo de cómo gestiones tu Página."
+        }
+      ],
+      "bottomNote": "Si seguidores de Facebook o Me gusta de publicaciones son la métrica que quieres cambiar, elige el servicio de Facebook correspondiente en lugar de un paquete de Me gusta de Página."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Cómo comprar Me gusta de Página de Facebook",
+      "description": "Comprar Me gusta de Página de Facebook en NovaLikes son cuatro pasos. Elige el paquete de Me gusta de Página que quieres, facilita la URL pública de la Página de Facebook, completa el pago y usa los datos de tu pedido para consultar su estado.",
+      "steps": [
+        {
+          "id": "buy-facebook-page-likes-step-1",
+          "title": "Elige tu paquete de Me gusta de Página",
+          "description": "Compara las cantidades y los precios de Me gusta de Página de Facebook disponibles, y selecciona el paquete que quieres para tu Página."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-2",
+          "title": "Introduce la URL de la Página de Facebook",
+          "description": "Facilita la URL pública correcta de la Página de Facebook donde quieres que se añadan los Me gusta de Página. No se requiere tu contraseña de Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-3",
+          "title": "Completa tu pedido",
+          "description": "Revisa la cantidad de Me gusta de Página y el precio seleccionados, y continúa con el pago para realizar tu pedido."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-4",
+          "title": "Sigue tu pedido",
+          "description": "Después del pago, usa la opción de seguimiento del pedido disponible para consultar información de estado de tu pedido de Me gusta de Página de Facebook."
+        }
+      ]
+    },
+    "relatedHeading": "Explora otros servicios de Facebook",
+    "relatedIntro": "Los Me gusta de Página son solo una métrica de Facebook. Si quieres aumentar el recuento de seguidores de una Página de Facebook o el recuento de likes de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
+  }
+}

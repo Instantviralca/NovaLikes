@@ -1,27 +1,15 @@
 import { absoluteUrl } from '@/seo/canonical';
 import { site } from '@/config/site';
-import { routes } from '@/config/routes';
-import type { JsonLd } from '@/schemas/organization';
+import { ORGANIZATION_ID, WEBSITE_ID, type JsonLd } from '@/schemas/organization';
 
 export function websiteSchema(): JsonLd {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': WEBSITE_ID,
     name: site.name,
     url: absoluteUrl('/'),
-    publisher: {
-      '@type': 'Organization',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${absoluteUrl(routes.learn)}?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+    publisher: { '@id': ORGANIZATION_ID },
   };
 }
 
@@ -38,11 +26,24 @@ export function webPageSchema(input: {
     name: input.title,
     description: input.description,
     url: input.url ?? absoluteUrl(input.path),
-    isPartOf: {
-      '@type': 'WebSite',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
+    isPartOf: { '@id': WEBSITE_ID },
+  };
+}
+
+export function aboutPageSchema(input: {
+  title: string;
+  description: string;
+  path: string;
+  url?: string;
+}): JsonLd {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: input.title,
+    description: input.description,
+    url: input.url ?? absoluteUrl(input.path),
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': ORGANIZATION_ID },
   };
 }
 
@@ -58,10 +59,6 @@ export function collectionPageSchema(input: {
     name: input.title,
     description: input.description,
     url: input.url ?? absoluteUrl(input.path),
-    isPartOf: {
-      '@type': 'WebSite',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
+    isPartOf: { '@id': WEBSITE_ID },
   };
 }

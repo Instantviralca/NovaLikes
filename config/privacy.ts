@@ -4,8 +4,13 @@
  * Use verified values only. Leave optional fields undefined rather than inventing
  * business identity, contact, providers, retention, age, or processing locations.
  *
- * publicationStatus and readiness helpers are internal — do not expose checklist
- * notes on the public Privacy Policy page.
+ * TODO: CONFIRM distinct registered legal entity name (if different from "NovaLikes")
+ * TODO: CONFIRM mailing / registered office address
+ * TODO: CONFIRM privacy contact role / DPO (if required)
+ * TODO: CONFIRM hosting location / international transfer details
+ * TODO: CONFIRM email delivery provider for customer notifications
+ * TODO: CONFIRM numeric minimum customer age after legal review
+ * TODO: CONFIRM verified retention schedule periods
  */
 
 import { brand } from '@/config/brand';
@@ -26,21 +31,21 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current privacy configuration.
- * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
+ * Verified: operating name NovaLikes, domain novalikes.com, support@novalikes.com.
  * Payment providers are read from config/payments.ts at content-build time.
+ * Analytics/marketing arrays stay empty until those providers are enabled in deployment.
  */
 export const privacyConfig: PrivacyConfig = {
   legalBusinessName: brand.legalName,
   operatingName: brand.name,
   websiteDomain: site.domain,
 
-  // Launch blockers until verified — intentionally unset
   privacyContactRole: undefined,
   privacyContactName: undefined,
-  privacyEmail: undefined,
+  privacyEmail: site.supportEmail,
   mailingAddress: undefined,
-  effectiveDate: undefined,
-  lastUpdatedDate: undefined,
+  effectiveDate: '2026-08-17',
+  lastUpdatedDate: '2026-08-17',
   hostingLocation: undefined,
   emailProvider: undefined,
   minimumCustomerAge: undefined,
@@ -53,7 +58,6 @@ export const privacyConfig: PrivacyConfig = {
   retentionScheduleVerified: false,
   retentionCategories: [],
 
-  // No analytics or marketing vendors are configured in the codebase
   analyticsProviders: [],
   marketingTools: [],
 

@@ -1,0 +1,601 @@
+{
+  "content": {
+    "slug": "buy-instagram-followers",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Forfaits et tarifs d’abonnés Instagram | NovaLikes",
+      "description": "Comparez les forfaits d’abonnés Instagram, les tarifs, les détails de livraison et les volumes disponibles. Choisissez l’option adaptée à votre compte et à vos objectifs."
+    },
+    "hero": {
+      "eyebrow": "ACHETER DES ABONNÉS INSTAGRAM",
+      "title": "Acheter des abonnés Instagram",
+      "description": "Achetez des abonnés Instagram pour votre profil public en choisissant le volume de forfait adapté à votre compte. NovaLikes propose des forfaits d’abonnés Instagram pour créateurs, entreprises, marques et autres comptes publics. Comparez les volumes et les prix disponibles, indiquez votre nom d’utilisateur Instagram public, puis finalisez votre commande en ligne. Aucun mot de passe Instagram n’est requis.",
+      "purpose": "Convert visitors comparing Instagram follower packages",
+      "primaryKeyword": "instagram followers packages",
+      "supportingKeywords": [
+        "Instagram Followers Pricing",
+        "Instagram Followers Plans",
+        "Instagram Followers Delivery",
+        "Instagram Followers Order"
+      ],
+      "suggestedWordCount": 60,
+      "primaryCta": {
+        "label": "Choisir un forfait",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Voir les détails de livraison",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-f-trust-password",
+          "label": "Aucun mot de passe requis"
+        },
+        {
+          "id": "ig-f-trust-public",
+          "label": "Nom d’utilisateur public uniquement"
+        },
+        {
+          "id": "ig-f-trust-checkout",
+          "label": "Paiement sécurisé"
+        },
+        {
+          "id": "ig-f-trust-support",
+          "label": "Assistance client"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-followers/instagram-followers-hero.webp",
+        "alt": "Tableau de bord d’un profil Instagram présentant les forfaits d’abonnés disponibles",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Forfaits et tarifs d’abonnés Instagram",
+      "description": "Choisissez le nombre d’abonnés Instagram souhaité et consultez le prix de chaque forfait avant de commander. Sélectionnez une quantité ci-dessous pour voir les détails du forfait, puis continuez lorsque vous avez trouvé l’option adaptée à votre compte.",
+      "purpose": "Present real NovaLikes.com follower packages",
+      "primaryKeyword": "Instagram Followers Pricing",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuer avec ce forfait",
+      "emptyMessage": "Les forfaits d’abonnés Instagram sont temporairement indisponibles."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-followers",
+      "title": "Pourquoi achète-t-on des abonnés Instagram ?",
+      "description": "On achète des abonnés Instagram pour des raisons variées. Certains veulent un plus grand nombre d’abonnés sur un nouveau profil, d’autres utilisent des forfaits d’abonnés en complément d’une publication régulière, de campagnes ou d’une activité de marque. Le service modifie le nombre d’abonnés visible sur votre profil, mais il ne garantit ni l’engagement, ni la portée, ni les ventes, ni une croissance organique.",
+      "purpose": "Explain informed use of Instagram followers packages",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "ig-f-social-proof",
+          "title": "Constituer une première audience",
+          "description": "Les profils plus récents peuvent utiliser un forfait d’abonnés pour démarrer avec une audience visible plus large, tout en continuant à publier leur propre contenu."
+        },
+        {
+          "id": "ig-f-launch",
+          "title": "Soutenir le lancement d’un produit ou d’une marque",
+          "description": "Les créateurs et les entreprises peuvent ajouter des abonnés en présentant un nouveau compte, produit, service ou campagne sur Instagram."
+        },
+        {
+          "id": "ig-f-community",
+          "title": "Augmenter votre nombre d’abonnés visible",
+          "description": "Les forfaits d’abonnés augmentent le nombre d’abonnés affiché sur votre profil, sans modifier les likes, vues ou commentaires des publications individuelles."
+        },
+        {
+          "id": "ig-f-flexible",
+          "title": "Choisissez une quantité adaptée à votre profil",
+          "description": "Différents volumes de forfaits vous permettent de choisir le nombre d’abonnés en fonction de la taille actuelle de votre compte et de ce que vous souhaitez commander."
+        },
+        {
+          "id": "ig-f-alongside",
+          "title": "Utilisez les abonnés en complément de votre contenu",
+          "description": "Acheter des abonnés peut modifier la taille visible d’un compte, tandis que les posts, Reels, Stories et l’interaction avec l’audience dépendent toujours de ce que vous publiez et de la façon dont vous gérez le profil."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes",
+      "title": "Pourquoi commander chez NovaLikes",
+      "description": "NovaLikes rend la commande d’abonnés Instagram simple : nom d’utilisateur public uniquement, détails de forfait clairs, paiement sécurisé et suivi de commande disponible.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 40,
+      "items": [
+        {
+          "id": "ig-f-wn-username",
+          "title": "Nom d’utilisateur public uniquement",
+          "description": "Les commandes utilisent votre nom d’utilisateur Instagram public — aucun mot de passe ni accès privé au compte."
+        },
+        {
+          "id": "ig-f-wn-checkout",
+          "title": "Paiement sécurisé",
+          "description": "Finalisez le paiement via un processus de paiement protégé."
+        },
+        {
+          "id": "ig-f-wn-tracking",
+          "title": "Suivi de commande",
+          "description": "Suivez les mises à jour de livraison disponibles avec votre identifiant de commande et votre e-mail."
+        },
+        {
+          "id": "ig-f-wn-support",
+          "title": "Assistance client",
+          "description": "Obtenez de l’aide pour le choix d’un forfait, les questions de paiement et les mises à jour de commande."
+        }
+      ]
+    },
+    "features": {
+      "id": "buy-instagram-followers-features",
+      "title": "Fonctionnalités",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Comment acheter des abonnés Instagram",
+      "description": "Commander des abonnés Instagram via NovaLikes se fait en quatre étapes. Choisissez votre forfait, indiquez le nom d’utilisateur public du profil Instagram, finalisez le paiement, puis utilisez les détails de votre commande pour en suivre le statut.",
+      "purpose": "Explain ordering process",
+      "primaryKeyword": "instagram followers packages",
+      "suggestedWordCount": 80,
+      "steps": [
+        {
+          "id": "ig-f-step-1",
+          "title": "Choisissez votre forfait d’abonnés",
+          "description": "Comparez les volumes et les prix d’abonnés Instagram disponibles, puis sélectionnez le forfait souhaité pour votre profil."
+        },
+        {
+          "id": "ig-f-step-2",
+          "title": "Indiquez votre nom d’utilisateur Instagram",
+          "description": "Fournissez le nom d’utilisateur public exact du compte Instagram qui doit recevoir les abonnés. Vous n’avez pas besoin d’indiquer votre mot de passe."
+        },
+        {
+          "id": "ig-f-step-3",
+          "title": "Finalisez votre commande",
+          "description": "Vérifiez la quantité d’abonnés et le prix sélectionnés, puis passez au paiement pour valider votre commande."
+        },
+        {
+          "id": "ig-f-step-4",
+          "title": "Suivez votre commande",
+          "description": "Après le paiement, utilisez l’option de suivi de commande disponible pour consulter le statut de votre commande d’abonnés Instagram."
+        }
+      ],
+      "cta": {
+        "label": "Choisir un forfait",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "delivery-and-safety",
+      "title": "Que faut-il pour passer commande ?",
+      "description": "Commander des abonnés Instagram ne demande que quelques informations publiques. Vous n’avez pas besoin d’indiquer votre mot de passe Instagram, un accès privé au compte ni des codes de vérification.",
+      "purpose": "Explain username and order requirements",
+      "primaryKeyword": "Instagram Followers Delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "ig-f-req-username",
+          "title": "Nom d’utilisateur Instagram public",
+          "description": "Indiquez le nom d’utilisateur public du profil Instagram qui doit recevoir le forfait d’abonnés choisi."
+        },
+        {
+          "id": "ig-f-req-package",
+          "title": "Forfait sélectionné",
+          "description": "Choisissez la quantité d’abonnés qui correspond le mieux à votre compte et à vos objectifs de croissance actuels."
+        },
+        {
+          "id": "ig-f-req-public",
+          "title": "Accès au profil public",
+          "description": "Le profil Instagram sélectionné doit rester accessible publiquement pendant le traitement de votre commande."
+        },
+        {
+          "id": "ig-f-req-email",
+          "title": "Adresse e-mail",
+          "description": "Utilisez une adresse e-mail valide pour recevoir les confirmations, les mises à jour et l’assistance client si besoin."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "ig-followers-reviews",
+      "title": "Retours récents de clients",
+      "description": "Lisez les retours de clients qui ont utilisé notre service de forfaits Instagram et finalisé leurs commandes via NovaLikes.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-followers-faq",
+      "title": "Questions fréquentes sur l’achat d’abonnés Instagram",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "instagram followers packages",
+      "faqIds": [
+        "faq-ig-followers-password",
+        "faq-ig-followers-delivery-speed",
+        "faq-ig-followers-gradual-delivery",
+        "faq-ig-followers-refill",
+        "faq-ig-followers-private",
+        "faq-ig-followers-track",
+        "faq-ig-followers-business",
+        "faq-ig-followers-money-back"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services",
+      "title": "Découvrir d’autres services Instagram",
+      "description": "Les abonnés ne sont qu’une partie d’un profil Instagram. Si vous souhaitez plutôt travailler un post, un Reel ou une vidéo en particulier, comparez les autres services Instagram ci-dessous.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-likes",
+        "buy-instagram-views",
+        "buy-instagram-comments"
+      ]
+    },
+    "finalCta": {
+      "id": "ig-followers-final-cta",
+      "title": "Choisissez votre forfait d’abonnés Instagram",
+      "description": "Comparez les volumes et les prix d’abonnés disponibles, choisissez le forfait adapté à votre profil, puis passez commande avec votre nom d’utilisateur Instagram public.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Voir les forfaits d’abonnés Instagram",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Suivre une commande",
+        "href": "/track-order"
+      }
+    }
+  },
+  "followersAuthority": {
+    "whyChoose": {
+      "id": "why-choose-novalikes-instagram-followers",
+      "title": "Pourquoi choisir NovaLikes pour des abonnés Instagram ?",
+      "description": "NovaLikes simplifie la commande d’abonnés Instagram. Vous pouvez comparer les volumes et les prix des forfaits avant d’acheter, commander avec votre nom d’utilisateur public, suivre votre achat et contacter l’assistance si vous avez besoin d’aide.",
+      "items": [
+        {
+          "id": "ig-f-wc-username",
+          "title": "Forfaits pour différentes tailles de comptes",
+          "description": "Choisissez parmi des volumes d’abonnés plus petits ou plus importants, au lieu de payer un forfait fixe qui ne convient pas forcément à votre profil.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-wc-checkout",
+          "title": "Tarifs avant de commander",
+          "description": "Consultez le prix de chaque forfait d’abonnés Instagram avant d’ajouter votre sélection au panier.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-wc-tracking",
+          "title": "Suivez votre commande",
+          "description": "Utilisez les détails de votre commande pour consulter les mises à jour de statut disponibles après l’achat.",
+          "icon": "map-pin"
+        },
+        {
+          "id": "ig-f-wc-support",
+          "title": "Assistance client",
+          "description": "Contactez NovaLikes si vous avez besoin d’aide pour choisir un forfait ou si vous avez une question sur une commande d’abonnés en cours.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "whyBuyNote": "Le bon forfait dépend de votre compte et de ce que vous voulez modifier. Si votre objectif est les likes de posts, les vues de Reels ou les commentaires plutôt que le nombre d’abonnés, choisissez plutôt le service Instagram correspondant.",
+    "orderNotice": "NovaLikes traite les commandes d’abonnés à partir de votre nom d’utilisateur Instagram public uniquement. Votre mot de passe Instagram n’est jamais demandé lors du paiement.",
+    "canYouBuy": {
+      "id": "can-you-buy-instagram-followers",
+      "title": "Peut-on acheter des abonnés Instagram ?",
+      "description": "Oui. Des forfaits d’abonnés Instagram peuvent être achetés auprès de services tiers comme NovaLikes. Vous choisissez le nombre d’abonnés souhaité, indiquez le nom d’utilisateur Instagram public du profil, puis finalisez la commande sur le site.",
+      "cards": [
+        {
+          "id": "ig-f-can-username",
+          "title": "Ce que l’achat d’abonnés Instagram modifie réellement",
+          "description": "Une commande d’abonnés Instagram cible le nombre d’abonnés affiché sur le profil sélectionné. Elle n’augmente pas automatiquement les likes, commentaires ou vues de vos posts, et elle ne garantit pas qu’Instagram montrera votre contenu à davantage de personnes.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-can-password",
+          "title": "Votre compte a toujours besoin de son propre contenu",
+          "description": "Un plus grand nombre d’abonnés ne remplace pas la publication. Photos, Reels, Stories, légendes, réponses et autres activités du compte viennent toujours de vous. Si vous voulez construire une audience qui interagit régulièrement avec votre contenu, votre activité Instagram reste importante.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-can-packages",
+          "title": "Les abonnés sont différents des autres services Instagram",
+          "description": "Choisissez les abonnés lorsque le nombre d’abonnés du profil est ce que vous voulez modifier. Les likes Instagram concernent des posts ou Reels individuels, les vues Instagram le contenu vidéo éligible, et les commentaires Instagram les commentaires sur un contenu sélectionné.",
+          "icon": "sparkles"
+        }
+      ],
+      "closingNote": "Avant de commander, vérifiez que vous avez choisi le bon service et la bonne quantité d’abonnés pour votre profil. Les options de forfaits et les prix sont affichés sur cette page pour que vous puissiez les comparer avant le paiement."
+    },
+    "doesBuyingHelp": {
+      "id": "does-buying-instagram-followers-help",
+      "title": "Acheter des abonnés Instagram, est-ce utile ?",
+      "description": "Acheter des abonnés Instagram augmente le nombre d’abonnés visible affiché sur un profil, ce qui peut renforcer la première impression des visiteurs. Les forfaits d’abonnés ne garantissent toutefois ni plus d’engagement, ni une portée organique accrue, ni des ventes supplémentaires, ni une meilleure visibilité dans les systèmes de recommandation d’Instagram.",
+      "helpTitle": "Ce que les abonnés peuvent aider",
+      "helpItems": [
+        "Un nombre d’abonnés visible plus élevé",
+        "Une première impression plus forte pour les nouveaux visiteurs",
+        "Une preuve sociale supplémentaire lors des lancements",
+        "Un soutien en complément du contenu et des publicités",
+        "Un aspect plus établi pour les profils publics"
+      ],
+      "limitTitle": "Ce qu’ils ne garantissent pas",
+      "limitItems": [
+        "Un engagement plus élevé sur les posts",
+        "Plus de commentaires ou de partages",
+        "Une portée organique accrue",
+        "Des ventes supplémentaires",
+        "Une validation de monétisation",
+        "Une promotion algorithmique"
+      ],
+      "closingNote": "Les abonnés sont plus utiles lorsqu’ils s’accompagnent d’un contenu de qualité, d’une publication régulière et d’un véritable engagement de l’audience, plutôt que d’être traités comme un substitut à une stratégie Instagram active."
+    },
+    "whatHappens": {
+      "id": "what-happens-after-you-buy-instagram-followers",
+      "title": "Que se passe-t-il après l’achat d’abonnés Instagram ?",
+      "description": "Une fois votre commande d’abonnés Instagram passée, les informations que vous avez fournies servent à traiter le forfait sélectionné pour le bon profil. Conservez inchangées les informations de compte indiquées pendant le traitement de la commande.",
+      "steps": [
+        {
+          "id": "ig-f-th-confirmed",
+          "title": "Les détails de votre commande sont vérifiés",
+          "description": "Le forfait d’abonnés et le nom d’utilisateur Instagram sélectionnés sont associés à votre commande, afin que la demande soit traitée pour le profil public visé."
+        },
+        {
+          "id": "ig-f-th-delivery",
+          "title": "La livraison va au profil indiqué",
+          "description": "Les abonnés sont dirigés vers le compte Instagram lié au nom d’utilisateur que vous avez saisi. Vérifiez soigneusement votre nom d’utilisateur avant de finaliser la commande."
+        },
+        {
+          "id": "ig-f-th-increase",
+          "title": "Les commandes plus importantes peuvent prendre plus de temps",
+          "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité d’abonnés et les conditions de commande en cours. Évitez de compter sur un délai de livraison unique pour tous les forfaits."
+        },
+        {
+          "id": "ig-f-th-grow",
+          "title": "Vous pouvez consulter le statut de votre commande",
+          "description": "Utilisez le suivi de commande NovaLikes pour consulter les mises à jour disponibles de votre achat. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+        }
+      ],
+      "closingNote": "Gardez votre profil Instagram accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous changez votre nom d’utilisateur ou d’autres informations de compte pertinentes après avoir commandé, contactez l’assistance si vous avez besoin d’aide."
+    },
+    "serviceCompare": {
+      "id": "instagram-followers-vs-likes-vs-views",
+      "title": "Abonnés vs likes vs vues Instagram",
+      "description": "Les abonnés, likes et vues mesurent des aspects différents d’un compte Instagram. Le bon service dépend de si vous voulez travailler votre profil, l’engagement d’un post ou d’un Reel précis, ou le nombre de vues d’un contenu vidéo.",
+      "current": {
+        "title": "Abonnés Instagram",
+        "description": "Les abonnés sont un indicateur au niveau du profil. Choisissez les abonnés Instagram lorsque vous voulez augmenter le nombre d’abonnés affiché sur votre compte.",
+        "bestFor": "Nombre d’abonnés du profil, nouveaux comptes, créateurs, marques et profils professionnels.",
+        "ctaLabel": "Abonnés Instagram"
+      },
+      "likes": {
+        "title": "Likes Instagram",
+        "description": "Les likes sont liés à un contenu individuel. Choisissez les likes Instagram lorsque vous voulez plus de likes affichés sur un post ou un Reel public précis.",
+        "bestFor": "Posts, Reels et contenus où le nombre de likes visible est l’indicateur que vous voulez travailler.",
+        "href": "/buy-instagram-likes",
+        "ctaLabel": "Voir les likes Instagram"
+      },
+      "views": {
+        "title": "Vues Instagram",
+        "description": "Les vues s’appliquent au contenu vidéo éligible. Choisissez les vues Instagram lorsque vous voulez augmenter le nombre de vues affiché sur un Reel ou une vidéo publique.",
+        "bestFor": "Reels, vidéos et autres contenus vidéo Instagram éligibles.",
+        "href": "/buy-instagram-views",
+        "ctaLabel": "Voir les vues Instagram"
+      },
+      "combinedNote": "Si les commentaires sont l’interaction dont vous avez besoin, les commentaires Instagram sont disponibles séparément pour les posts et Reels éligibles.",
+      "commentsHref": "/buy-instagram-comments"
+    },
+    "beforeBuying": {
+      "id": "what-to-check-before-buying-instagram-followers",
+      "title": "Que vérifier avant d’acheter des abonnés Instagram",
+      "description": "Avant d’acheter des abonnés Instagram, vérifiez les détails du service aussi soigneusement que pour tout achat en ligne. Le forfait, les informations de compte, les tarifs, les politiques et l’assistance disponible doivent être clairs avant de finaliser le paiement.",
+      "framingNote": "Évitez de choisir un service uniquement sur la base de promesses exagérées. Les allégations d’engagement, de portée, de ventes ou de performance de l’algorithme Instagram garantis ne doivent pas remplacer une compréhension de ce que le forfait d’abonnés fournit réellement.",
+      "items": [
+        {
+          "id": "ig-f-check-pricing",
+          "title": "Vérifiez la quantité d’abonnés",
+          "description": "Assurez-vous d’avoir sélectionné le nombre d’abonnés Instagram que vous voulez réellement pour votre profil. Relisez le forfait avant de l’ajouter au panier.",
+          "icon": "credit-card"
+        },
+        {
+          "id": "ig-f-check-username",
+          "title": "Confirmez le prix",
+          "description": "Vérifiez le prix complet du forfait sélectionné avant le paiement. Si vous passez à une autre quantité d’abonnés, relisez le prix mis à jour avant de commander.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-check-delivery",
+          "title": "Utilisez le bon nom d’utilisateur Instagram",
+          "description": "Vérifiez deux fois le nom d’utilisateur public que vous indiquez. Une faute d’orthographe ou un mauvais compte peut poser problème sur la destination de la commande.",
+          "icon": "truck"
+        },
+        {
+          "id": "ig-f-check-tracking",
+          "title": "Lisez les politiques concernées",
+          "description": "Consultez les conditions, les informations de remboursement et les autres politiques applicables pour comprendre les conditions associées à votre achat.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-check-support",
+          "title": "Sachez comment obtenir de l’aide",
+          "description": "Vérifiez que vous pouvez contacter l’assistance et suivre votre commande si vous avez une question après le paiement.",
+          "icon": "headphones"
+        }
+      ]
+    },
+    "worldwide": {
+      "id": "buying-instagram-followers",
+      "title": "Préparer votre profil Instagram pour une commande d’abonnés",
+      "description": "Avant de passer une commande d’abonnés Instagram, assurez-vous que le profil que vous souhaitez utiliser est le bon compte public et que le nom d’utilisateur restera inchangé pendant le traitement de la commande.",
+      "eyebrow": "Prêt pour des abonnés Instagram",
+      "closingNote": "Les abonnés Instagram sont un service au niveau du profil. Confirmez le nom d’utilisateur, gardez le profil accessible lorsque c’est requis, et relisez le forfait sélectionné avant le paiement.",
+      "cards": [
+        {
+          "id": "ig-f-ww-creators",
+          "title": "Vérifiez votre nom d’utilisateur public",
+          "description": "Confirmez le nom d’utilisateur Instagram exact avant le paiement. Les informations de profil que vous fournissez servent à identifier où la commande d’abonnés doit être traitée.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-ww-businesses",
+          "title": "Gardez le profil accessible",
+          "description": "Gardez le profil Instagram accessible publiquement lorsque le service choisi l’exige. Modifier la visibilité pendant une commande en cours peut perturber le traitement.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-ww-brands",
+          "title": "Évitez de changer votre nom d’utilisateur",
+          "description": "Si possible, ne changez pas le nom d’utilisateur indiqué pendant qu’une commande est en cours. Contactez l’assistance si un changement de compte important affecte une commande existante.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-ww-orgs",
+          "title": "Relisez le forfait avant le paiement",
+          "description": "Vérifiez une dernière fois la quantité d’abonnés et le prix avant de finaliser votre commande, pour que le forfait choisi corresponde à ce que vous vouliez acheter.",
+          "icon": "users"
+        }
+      ]
+    },
+    "packageSizes": {
+      "id": "popular-instagram-followers-packages",
+      "title": "Forfaits d’abonnés Instagram populaires",
+      "description": "Vous hésitez sur le forfait ? Voici quelques-unes des quantités d’abonnés Instagram disponibles chez NovaLikes. Comparez les options ci-dessous, ou revenez à la section tarifs complète pour voir tous les forfaits disponibles.",
+      "rows": [
+        {
+          "id": "pkg-100",
+          "quantity": "100 abonnés",
+          "recommendedFor": "Une option plus petite pour les profils qui veulent commencer par une hausse d’abonnés modeste."
+        },
+        {
+          "id": "pkg-500",
+          "quantity": "500 abonnés",
+          "recommendedFor": "Une option intermédiaire pour les comptes qui veulent un changement plus visible du nombre d’abonnés."
+        },
+        {
+          "id": "pkg-1k",
+          "quantity": "1 000 abonnés",
+          "recommendedFor": "Un forfait plus important pour les profils qui veulent ajouter mille abonnés en une seule commande."
+        },
+        {
+          "id": "pkg-5k",
+          "quantity": "5 000 abonnés",
+          "recommendedFor": "Une option à plus fort volume pour les comptes qui veulent une hausse plus importante du nombre d’abonnés affiché."
+        },
+        {
+          "id": "pkg-10k",
+          "quantity": "10 000+ abonnés",
+          "recommendedFor": "Une option pour les profils qui choisissent l’une des plus grandes quantités d’abonnés disponibles chez NovaLikes."
+        }
+      ]
+    },
+    "bestPractices": {
+      "id": "best-practices-after-buying-instagram-followers",
+      "title": "Bonnes pratiques après l’achat d’abonnés Instagram",
+      "description": "Acheter des abonnés modifie le nombre d’abonnés de votre profil, mais le reste de votre présence Instagram dépend toujours de la façon dont vous gérez le compte. Continuez à publier, améliorez votre profil et utilisez vos propres données de compte pour comprendre à quoi réagit votre audience.",
+      "closingNote": "Le nombre d’abonnés n’est qu’une partie d’un profil Instagram. La qualité du contenu, les habitudes de publication, l’interaction avec l’audience et la façon dont vous présentez votre compte demandent toujours une attention continue.",
+      "items": [
+        {
+          "id": "ig-f-bp-publish",
+          "title": "Continuez à publier régulièrement",
+          "description": "Continuez à publier des posts, Reels et Stories, plutôt que de traiter une commande d’abonnés comme un substitut à un contenu régulier.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-bp-profile",
+          "title": "Gardez votre profil complet",
+          "description": "Utilisez une photo de profil claire, une bio utile, un lien pertinent et des informations de compte exactes, pour que les visiteurs comprennent rapidement qui vous êtes et ce que vous publiez.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-bp-engage",
+          "title": "Créez du contenu pour votre audience",
+          "description": "Planifiez vos posts autour des sujets, produits, services ou centres d’intérêt pertinents pour les personnes que vous voulez atteindre.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-bp-growth",
+          "title": "Suivez les statistiques Instagram",
+          "description": "Si les statistiques sont disponibles sur votre compte, consultez des indicateurs comme la portée, les vues, les interactions et l’activité des abonnés pour voir comment votre propre contenu performe.",
+          "icon": "sparkles"
+        },
+        {
+          "id": "ig-f-bp-formats",
+          "title": "Utilisez Reels, posts et Stories à des fins différentes",
+          "description": "Les différents formats Instagram offrent différentes façons de publier. Testez les formats qui ont du sens pour votre compte, plutôt que de vous limiter à un seul type de contenu.",
+          "icon": "users"
+        },
+        {
+          "id": "ig-f-bp-respond",
+          "title": "Répondez aux interactions réelles",
+          "description": "Répondez aux commentaires et messages authentiques lorsque c’est pertinent. Acheter des abonnés ne remplace pas les conversations et relations que vous construisez par votre propre activité de compte.",
+          "icon": "heart"
+        }
+      ]
+    },
+    "commonMistakes": {
+      "id": "common-mistakes-when-buying-instagram-followers",
+      "title": "Erreurs fréquentes lors de l’achat d’abonnés Instagram",
+      "description": "La plupart des problèmes peuvent être évités en vérifiant quelques détails avant et après la commande. Voici quelques erreurs fréquentes à surveiller lorsque vous choisissez un forfait d’abonnés Instagram.",
+      "closingNote": "Avant le paiement, relisez les informations de votre profil, le service choisi, la quantité d’abonnés et le prix. Si quelque chose n’est pas clair sur une commande existante, utilisez le suivi ou l’assistance disponibles.",
+      "items": [
+        {
+          "id": "ig-f-mistake-quantity",
+          "title": "Indiquer le mauvais nom d’utilisateur",
+          "description": "Vérifiez soigneusement votre nom d’utilisateur Instagram avant le paiement. La commande doit être associée au bon profil public.",
+          "icon": "megaphone"
+        },
+        {
+          "id": "ig-f-mistake-content",
+          "title": "Choisir le mauvais service",
+          "description": "Abonnés, likes, vues et commentaires sont des services différents. Choisissez les abonnés uniquement lorsque le nombre d’abonnés de votre profil est ce que vous voulez modifier.",
+          "icon": "clapperboard"
+        },
+        {
+          "id": "ig-f-mistake-details",
+          "title": "Choisir un forfait sans vérifier la quantité",
+          "description": "Relisez le nombre d’abonnés inclus dans le forfait avant de commander, pour savoir exactement quelle quantité vous avez sélectionnée.",
+          "icon": "shield-check"
+        },
+        {
+          "id": "ig-f-mistake-results",
+          "title": "S’attendre à ce que les abonnés remplacent le contenu",
+          "description": "Un plus grand nombre d’abonnés ne remplace pas les posts, Reels, Stories, ni le travail de gestion de votre compte Instagram.",
+          "icon": "briefcase"
+        },
+        {
+          "id": "ig-f-mistake-engagement",
+          "title": "S’attendre à un engagement ou une portée garantis",
+          "description": "Ne supposez pas que modifier votre nombre d’abonnés produira automatiquement plus de likes, commentaires, vues, portée, ventes ou croissance organique.",
+          "icon": "lock"
+        },
+        {
+          "id": "ig-f-mistake-account-change",
+          "title": "Modifier des informations de compte importantes pendant une commande",
+          "description": "Évitez de changer le nom d’utilisateur indiqué ou d’autres informations de profil pertinentes pendant le traitement d’une commande. Contactez l’assistance si un changement de compte nécessaire affecte une commande existante.",
+          "icon": "users"
+        }
+      ]
+    },
+    "relatedPackages": {
+      "copyBySlug": {
+        "buy-instagram-likes": {
+          "title": "Likes Instagram",
+          "description": "Choisissez les likes Instagram lorsque vous voulez ajouter des likes à un post ou un Reel public précis.",
+          "ctaLabel": "Voir les likes Instagram"
+        },
+        "buy-instagram-views": {
+          "title": "Vues Instagram",
+          "description": "Choisissez les vues Instagram lorsque vous voulez augmenter le nombre de vues d’un Reel ou d’une vidéo publique éligible.",
+          "ctaLabel": "Voir les vues Instagram"
+        },
+        "buy-instagram-comments": {
+          "title": "Commentaires Instagram",
+          "description": "Choisissez les commentaires Instagram lorsque vous voulez ajouter des commentaires à un post ou un Reel public éligible.",
+          "ctaLabel": "Voir les commentaires Instagram"
+        }
+      }
+    }
+  }
+}

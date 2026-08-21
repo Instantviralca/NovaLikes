@@ -8,6 +8,7 @@ export const routes = {
   reviews: '/reviews',
   contact: '/contact',
   faq: '/faq',
+  tools: '/tools',
   learn: '/learn',
   authors: '/authors',
   /** Lightweight services landing — choose a platform / package. */
@@ -23,6 +24,7 @@ export const routes = {
   termsAndConditions: '/terms-and-conditions',
   cookiePolicy: '/cookie-policy',
   disclaimer: '/disclaimer',
+  sitemap: '/sitemap',
 } as const;
 
 export type AppRouteKey = keyof typeof routes;
@@ -56,10 +58,12 @@ export function platformHubPath(slug: string) {
   if (
     normalized === 'instagram' ||
     normalized === 'tiktok' ||
-    normalized === 'facebook' ||
-    normalized === 'youtube'
+    normalized === 'facebook'
   ) {
     return learnCategoryPath(normalized);
+  }
+  if (normalized === 'youtube') {
+    return routes.learn;
   }
   return `/${normalized}`;
 }

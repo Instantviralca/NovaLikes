@@ -4,7 +4,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 /** Phase 18 VDS type hierarchy — Hero Title / H1–H4 */
-const headingVariants = cva('tracking-tight text-foreground text-balance', {
+const headingVariants = cva('tracking-tight text-foreground text-balance break-words', {
   variants: {
     size: {
       display: 'type-hero font-bold',

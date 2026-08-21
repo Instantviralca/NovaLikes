@@ -1,4 +1,5 @@
 import { getHomepageContent } from '@/data/content/homepage';
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getPlatformById } from '@/data/platforms';
 import { getServiceBySlug } from '@/data/services';
 import { platformHubPath } from '@/config/routes';
@@ -34,7 +35,7 @@ export function mapFeaturedServicesContent(
   const cards = section.serviceSlugs
     .map((slug) => {
       const service = getServiceBySlug(slug);
-      if (!service) return null;
+      if (!service || !isApprovedServiceSlug(slug) || service.comingSoon) return null;
       const platform = getPlatformById(service.platform);
       if (!platform) return null;
 

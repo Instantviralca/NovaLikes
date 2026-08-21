@@ -15,8 +15,6 @@ export type OpenGraphImageKey =
   | 'buy-tiktok-followers'
   | 'buy-tiktok-likes'
   | 'buy-tiktok-views'
-  | 'buy-youtube-subscribers'
-  | 'buy-youtube-views'
   | 'buy-facebook-followers'
   | 'buy-facebook-page-likes'
   | 'buy-facebook-post-likes';
@@ -77,18 +75,6 @@ export const openGraphImagesBySlug = {
   'buy-tiktok-views': {
     path: `${OG_DIR}/buy-tiktok-views-global-og.webp`,
     alt: 'Buy TikTok Views by NovaLikes',
-    width: OPEN_GRAPH_IMAGE_WIDTH,
-    height: OPEN_GRAPH_IMAGE_HEIGHT,
-  },
-  'buy-youtube-subscribers': {
-    path: `${OG_DIR}/buy-youtube-subscribers-global-og.webp`,
-    alt: 'Buy YouTube Subscribers by NovaLikes',
-    width: OPEN_GRAPH_IMAGE_WIDTH,
-    height: OPEN_GRAPH_IMAGE_HEIGHT,
-  },
-  'buy-youtube-views': {
-    path: `${OG_DIR}/buy-youtube-views-global-og.webp`,
-    alt: 'Buy YouTube Views by NovaLikes',
     width: OPEN_GRAPH_IMAGE_WIDTH,
     height: OPEN_GRAPH_IMAGE_HEIGHT,
   },

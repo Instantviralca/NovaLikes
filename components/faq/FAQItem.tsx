@@ -17,6 +17,7 @@ export type FAQItemProps = {
 
 /**
  * Single accessible FAQ accordion row — content from PublicFaq only.
+ * Answers remain in the HTML for indexing; accordion only toggles visibility.
  */
 export function FAQItem({
   faq,
@@ -41,7 +42,7 @@ export function FAQItem({
         <button
           type="button"
           id={buttonId}
-          className="flex min-h-11 w-full cursor-pointer list-none items-center justify-between gap-4 py-3 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex min-h-11 w-full cursor-pointer list-none items-center justify-between gap-4 py-3 text-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           aria-expanded={open}
           aria-controls={panelId}
           data-analytics={faqAnalyticsEvents.faq_question_open}
@@ -56,7 +57,7 @@ export function FAQItem({
             }
           }}
         >
-          <span>{faq.question}</span>
+          <span className="min-w-0 flex-1 break-words">{faq.question}</span>
           <span
             aria-hidden
             className={cn(
@@ -72,17 +73,21 @@ export function FAQItem({
         id={panelId}
         role="region"
         aria-labelledby={buttonId}
-        hidden={!open}
-        className={cn(!open && 'hidden')}
+        className={cn(
+          'grid transition-[grid-template-rows] duration-300 motion-reduce:transition-none',
+          open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]',
+        )}
       >
-        <Text className="pb-2 text-muted-foreground whitespace-pre-line">
-          {faq.answer}
-        </Text>
-        {faq.relatedLinks.length > 0 ? (
-          <div className="pb-4">
-            <FAQRelatedLinks links={faq.relatedLinks} faqId={faq.id} />
-          </div>
-        ) : null}
+        <div className="overflow-hidden">
+          <Text className="pb-2 text-muted-foreground whitespace-pre-line">
+            {faq.answer}
+          </Text>
+          {faq.relatedLinks.length > 0 ? (
+            <div className="pb-4">
+              <FAQRelatedLinks links={faq.relatedLinks} faqId={faq.id} />
+            </div>
+          ) : null}
+        </div>
       </div>
     </div>
   );

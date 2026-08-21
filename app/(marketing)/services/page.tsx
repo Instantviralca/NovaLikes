@@ -10,7 +10,7 @@ import { buildPageMetadata } from '@/lib/seo/metadata';
 export const metadata: Metadata = buildPageMetadata({
   title: 'Services | NovaLikes',
   description:
-    'Choose your platform and browse NovaLikes social media growth packages for Instagram, TikTok, YouTube, and Facebook.',
+    'Choose your platform and browse NovaLikes social media growth packages for Instagram, TikTok, and Facebook.',
   path: routes.services,
   robots: { index: false, follow: true },
 });

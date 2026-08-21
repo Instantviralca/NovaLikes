@@ -61,10 +61,15 @@ describe('Phase 19.01 order destination fields', () => {
     expect(getServiceOrderConfig('buy-tiktok-views').fields[0]?.type).toBe('url');
   });
 
-  it('shows Facebook / YouTube URL fields for the matching services', () => {
+  it('shows Facebook URL fields for the matching services', () => {
     expect(getServiceOrderConfig('buy-facebook-followers').fields[0]?.type).toBe('url');
     expect(getServiceOrderConfig('buy-youtube-subscribers').fields[0]?.type).toBe('url');
     expect(getServiceOrderConfig('buy-youtube-views').fields[0]?.type).toBe('url');
+  });
+
+  it('does not expose active YouTube packages for new orders', () => {
+    expect(getActivePackagesByServiceSlug('buy-youtube-subscribers')).toEqual([]);
+    expect(getActivePackagesByServiceSlug('buy-youtube-views')).toEqual([]);
   });
 
   it('renders OrderDestinationField markup with label and help', () => {

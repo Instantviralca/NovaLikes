@@ -1,6 +1,7 @@
 /**
- * Site / checkout host helpers for multi-domain checkout (checkout.novalikes.com).
- * Client-safe: only reads NEXT_PUBLIC_* values.
+ * Site origin helpers. NovaLikes cart/checkout UI is always same-origin
+ * on the main website (novalikes.com/cart, /checkout, /order-success).
+ * Third-party payment authorization pages may still be hosted by the processor.
  */
 
 function trimOrigin(value: string | undefined): string | undefined {
@@ -18,26 +19,21 @@ export function getSiteOrigin(): string {
 }
 
 /**
- * External checkout origin (e.g. https://checkout.novalikes.com).
- * Falls back to main site `/checkout` path origin when unset (local/dev).
+ * Checkout origin is the main site. NEXT_PUBLIC_CHECKOUT_URL is ignored so
+ * cart/checkout never move onto a NovaLikes checkout subdomain.
  */
 export function getCheckoutOrigin(): string {
-  const configured = trimOrigin(process.env.NEXT_PUBLIC_CHECKOUT_URL);
-  if (configured) return configured;
   return getSiteOrigin();
 }
 
-/** Absolute URL for the checkout experience. */
+/** Absolute URL for the checkout experience on the main site. */
 export function getCheckoutUrl(path = '/'): string {
-  const origin = getCheckoutOrigin();
   const site = getSiteOrigin();
-  // Same-origin fallback: use /checkout on the main site.
-  if (origin === site) {
-    const normalized = path === '/' ? '/checkout' : path.startsWith('/') ? path : `/${path}`;
-    return `${site}${normalized === '/checkout' ? '/checkout' : normalized}`;
-  }
   const normalized = path.startsWith('/') ? path : `/${path}`;
-  return `${origin}${normalized === '/' ? '/' : normalized}`;
+  if (normalized === '/' || normalized === '/checkout') {
+    return `${site}/checkout`;
+  }
+  return `${site}${normalized}`;
 }
 
 export function getSiteUrlPath(path: string): string {
@@ -49,7 +45,6 @@ export function getSiteUrlPath(path: string): string {
 /** Parent cookie domain (e.g. .novalikes.com). Null on localhost. */
 export function getCartCookieDomain(): string | null {
   try {
-    // Prefer the live browser host so cookies work even if SITE_URL env is wrong.
     const host =
       typeof window !== 'undefined'
         ? window.location.hostname.toLowerCase()
@@ -57,11 +52,9 @@ export function getCartCookieDomain(): string | null {
     if (host === 'localhost' || host === '127.0.0.1' || host.endsWith('.localhost')) {
       return null;
     }
-    // Reject public-suffix style hosts where Domain= would be ignored (e.g. vercel.app).
     if (host === 'vercel.app' || host.endsWith('.vercel.app')) {
       return null;
     }
-    // checkout.novalikes.com + novalikes.com → .novalikes.com
     const parts = host.split('.');
     if (parts.length >= 2) {
       return `.${parts.slice(-2).join('.')}`;
@@ -112,32 +105,17 @@ export function getSiteHostname(): string {
   }
 }
 
-/**
- * True when a separate checkout subdomain is configured
- * (NEXT_PUBLIC_CHECKOUT_URL differs from the main site origin).
- */
+/** Dedicated NovaLikes checkout hosts are not used. */
 export function isDedicatedCheckoutConfigured(): boolean {
-  const checkoutHost = getCheckoutHostname();
-  const siteHost = getSiteHostname();
-  return Boolean(checkoutHost && siteHost && checkoutHost !== siteHost);
+  return false;
 }
 
-/** True when this request Host is the dedicated checkout host. */
-export function isCheckoutHostname(host: string | null | undefined): boolean {
-  const requestHost = normalizeHost(host);
-  const checkoutHost = getCheckoutHostname();
-  if (!requestHost || !checkoutHost) return false;
-  // Same-origin fallback (no dedicated subdomain configured).
-  if (!isDedicatedCheckoutConfigured()) return false;
-  return requestHost === checkoutHost;
+/** True when this request Host is a dedicated checkout host (never). */
+export function isCheckoutHostname(): boolean {
+  return false;
 }
 
-/** Dev-only: ?checkoutHost=1 forces checkout-host behaviour on any host. */
-export function isCheckoutHostForced(searchParams: URLSearchParams | string): boolean {
-  if (process.env.NODE_ENV === 'production') return false;
-  const params =
-    typeof searchParams === 'string'
-      ? new URLSearchParams(searchParams.startsWith('?') ? searchParams.slice(1) : searchParams)
-      : searchParams;
-  return params.get('checkoutHost') === '1';
+/** Dev-only checkout-host override is disabled. */
+export function isCheckoutHostForced(): boolean {
+  return false;
 }

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { runWhenIdle } from '@/lib/perf/run-when-idle';
 import { cn } from '@/lib/utils';
 
 /**
@@ -21,35 +23,44 @@ export function HomepageStickyCta({
 }) {
   const [visible, setVisible] = useState(false);
 
+  const { ui } = useI18nChrome();
+
   useEffect(() => {
-    const hero = document.getElementById('homepage-hero');
-    const finalCta = document.getElementById('home-final-cta');
-    if (!hero) return;
+    let observer: IntersectionObserver | null = null;
 
-    let heroInView = true;
-    let finalInView = false;
+    const cancelIdle = runWhenIdle(() => {
+      const hero = document.getElementById('homepage-hero');
+      const finalCta = document.getElementById('home-final-cta');
+      if (!hero) return;
 
-    const update = () => setVisible(!heroInView && !finalInView);
+      let heroInView = true;
+      let finalInView = false;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.target.id === 'homepage-hero') {
-            heroInView = entry.isIntersecting;
+      const update = () => setVisible(!heroInView && !finalInView);
+
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.target.id === 'homepage-hero') {
+              heroInView = entry.isIntersecting;
+            }
+            if (entry.target.id === 'home-final-cta') {
+              finalInView = entry.isIntersecting;
+            }
           }
-          if (entry.target.id === 'home-final-cta') {
-            finalInView = entry.isIntersecting;
-          }
-        }
-        update();
-      },
-      { root: null, threshold: 0.12, rootMargin: '-40px 0px 0px 0px' },
-    );
+          update();
+        },
+        { root: null, threshold: 0.12, rootMargin: '-40px 0px 0px 0px' },
+      );
 
-    observer.observe(hero);
-    if (finalCta) observer.observe(finalCta);
+      observer.observe(hero);
+      if (finalCta) observer.observe(finalCta);
+    }, 500);
 
-    return () => observer.disconnect();
+    return () => {
+      cancelIdle();
+      observer?.disconnect();
+    };
   }, []);
 
   if (!visible) return null;
@@ -62,18 +73,18 @@ export function HomepageStickyCta({
         className,
       )}
       role="region"
-      aria-label="Explore NovaLikes services"
+      aria-label={ui.homepage.exploreServicesAria}
     >
       <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
         <div className="min-w-0">
           <p className="truncate text-xs text-[var(--text-secondary)]">
-            Instagram · TikTok · Facebook · YouTube
+            Instagram · TikTok · Facebook
           </p>
           <p className="truncate text-sm font-semibold text-[var(--text-primary)]">
-            No password · Secure checkout
+            {ui.commerce.noPassword} · {ui.commerce.secureCheckout}
           </p>
         </div>
-        <Button asChild className="min-h-11 shrink-0 rounded-xl px-5 font-semibold">
+        <Button asChild className="min-h-11 max-w-[11rem] shrink-0 rounded-xl px-4 font-semibold sm:max-w-none sm:px-5">
           <Link href={href}>{label}</Link>
         </Button>
       </div>

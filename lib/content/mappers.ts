@@ -267,7 +267,10 @@ export function mapPackageCard(
   };
 }
 
-export function mapServiceContent(content: ServiceContent): ServiceViewModel {
+export function mapServiceContent(
+  content: ServiceContent,
+  faqItems?: Array<{ id: string; question: string; answer: string }>,
+): ServiceViewModel {
   const hero = heroCopyToProps(toHeroCopy(content.hero));
   const pricingSection = sectionCopyToProps(toSectionCopy(content.pricing));
   const packages = resolveServicePackages(content.slug, content.pricing.packageIds).map((pkg) =>
@@ -340,7 +343,7 @@ export function mapServiceContent(content: ServiceContent): ServiceViewModel {
     faq: {
       id: content.faq.id,
       ...sectionCopyToProps(toSectionCopy(content.faq)),
-      items: faqContentToProps(getFaqItemsByIds(content.faq.faqIds)),
+      items: faqContentToProps(faqItems ?? getFaqItemsByIds(content.faq.faqIds)),
     },
     relatedServices: {
       id: content.relatedServices.id,

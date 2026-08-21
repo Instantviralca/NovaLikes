@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "eyebrow": "اتصل بنا",
+    "title": "نحن هنا للمساعدة!",
+    "description": "هل لديك أسئلة عن خدماتنا أو تحتاج مساعدة في طلب؟ تواصل مع دعم NovaLikes وأدرج تفاصيل الطلب عندما يتعلق السؤال بعملية شراء.",
+    "trustLabels": [
+      {
+        "id": "contact-hero-247",
+        "label": "دعم العملاء — مساعدة في الخدمات والطلبات"
+      },
+      {
+        "id": "contact-hero-quick",
+        "label": "تتبع الطلب — تحقق من الحالة بعد الدفع"
+      },
+      {
+        "id": "contact-hero-safe",
+        "label": "لا حاجة لكلمة مرور — بيانات عامة فقط"
+      }
+    ],
+    "visual": {
+      "alt": "رسم لدعم عملاء NovaLikes مع محادثة وسماعات"
+    }
+  },
+  "form": {
+    "title": "أرسل لنا رسالة",
+    "description": "املأ النموذج أدناه وسيتواصل فريقنا معك في أقرب وقت ممكن.",
+    "fields": {
+      "fullNameLabel": "اسمك",
+      "fullNamePlaceholder": "اسمك",
+      "emailLabel": "بريدك الإلكتروني",
+      "emailPlaceholder": "بريدك الإلكتروني",
+      "subjectLabel": "الموضوع",
+      "subjectPlaceholder": "الموضوع",
+      "orderIdLabel": "معرّف الطلب",
+      "orderIdPlaceholder": "اختياري — مثل IV-1001",
+      "orderIdHelper": "اختياري. أدرجه إذا كانت رسالتك تتعلق بطلب قائم.",
+      "messageLabel": "رسالتك",
+      "messagePlaceholder": "رسالتك",
+      "submitLabel": "إرسال الرسالة",
+      "successTitle": "تم إرسال الرسالة",
+      "successDescription": "شكرًا لتواصلك مع NovaLikes. سنتابع باستخدام عنوان البريد الإلكتروني الذي قدّمته."
+    }
+  },
+  "business": {
+    "title": "معلومات التواصل"
+  },
+  "faqPreview": {
+    "title": "إجابات سريعة عن الأسئلة الشائعة",
+    "description": "الأسئلة الشائعة",
+    "viewAllCta": {
+      "label": "عرض كل الأسئلة الشائعة"
+    }
+  },
+  "finalCta": {
+    "title": "ما زلت بحاجة إلى مساعدة؟",
+    "description": "فريق الدعم الودود موجود دائمًا من أجلك. لا تتردد في التواصل في أي وقت!",
+    "primaryCta": {
+      "label": "بدء الدردشة المباشرة"
+    }
+  },
+  "chrome": {
+    "breadcrumb": "اتصل بنا",
+    "heroAria": "اتصل بـ NovaLikes",
+    "sendAnother": "إرسال رسالة أخرى",
+    "sending": "جارٍ الإرسال…",
+    "submitError": "تعذر إرسال رسالتك.",
+    "privacyNote": "معلوماتك آمنة ولن تتم مشاركتها أبدًا.",
+    "fullNameRequired": "الاسم الكامل مطلوب.",
+    "emailRequired": "عنوان البريد الإلكتروني مطلوب.",
+    "emailInvalid": "أدخل عنوان بريد إلكتروني صالحًا.",
+    "subjectRequired": "الموضوع مطلوب.",
+    "messageRequired": "الرسالة مطلوبة.",
+    "messageMin": "يجب ألا تقل الرسالة عن 20 حرفًا.",
+    "emailTitle": "الدعم عبر البريد",
+    "emailReply": "نرد خلال دقائق",
+    "liveChatTitle": "دردشة مباشرة",
+    "liveChatAvailable": "متاحة 24/7 على موقعنا",
+    "liveChatHelp": "احصل على مساعدة فورية من فريقنا",
+    "quickTitle": "دعم سريع",
+    "quickHours": "الاثنين – الأحد: 24/7",
+    "quickReach": "تواصل معنا في أي وقت عبر نموذج الاتصال",
+    "responseTitle": "وقت الاستجابة",
+    "responseAverage": "متوسط وقت الاستجابة:",
+    "responseTime": "أقل من 15 دقيقة",
+    "orderTitle": "دعم الطلبات",
+    "orderHelp": "هل تحتاج مساعدة في طلب؟",
+    "orderLink": "زيارة صفحة دعم الطلبات ←"
+  }
+}

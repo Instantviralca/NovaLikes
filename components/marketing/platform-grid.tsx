@@ -7,6 +7,7 @@ import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
 import { cn } from '@/lib/utils';
+import { prefetchForHref } from '@/lib/linking/prefetch';
 import type { Platform } from '@/types/platform';
 
 export type PlatformGridProps = {
@@ -50,7 +51,7 @@ export function PlatformGrid({
               />
             );
             return href ? (
-              <Link key={platform.id} href={href} className="block h-full rounded-lg focus-visible:outline-none">
+              <Link key={platform.id} href={href} prefetch={prefetchForHref(href)} className="block h-full rounded-lg focus-visible:outline-none">
                 {card}
               </Link>
             ) : (

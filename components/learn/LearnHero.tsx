@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { Eyebrow } from '@/components/typography/eyebrow';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
+import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { Button } from '@/components/ui/button';
 import type { BreadcrumbItem } from '@/types/shared';
 
@@ -31,15 +32,15 @@ export function LearnHero({
   secondaryCta,
 }: LearnHeroProps) {
   return (
-    <Section className="overflow-x-hidden border-b border-neutral-200 bg-neutral-50">
+    <Section className="overflow-x-hidden bg-transparent">
       <Container>
         <Stack gap="md" className="max-w-3xl py-10 md:py-14">
           {breadcrumbs && breadcrumbs.length > 0 ? (
             <Breadcrumb items={breadcrumbs} />
           ) : null}
           <Eyebrow>{eyebrow}</Eyebrow>
-          <Heading as="h1" className="text-balance">
-            {title}
+          <Heading as="h1" className={HERO_HEADING_CLASS}>
+            {accentLastWord(title)}
           </Heading>
           <Lead className="text-pretty text-neutral-600">{description}</Lead>
           {primaryCta || secondaryCta ? (

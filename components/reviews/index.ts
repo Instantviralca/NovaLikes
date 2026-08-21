@@ -7,3 +7,7 @@ export { TestimonialsSection } from '@/components/reviews/TestimonialsSection';
 export { ReviewsEmptyState } from '@/components/reviews/ReviewsEmptyState';
 export { ReviewsSkeleton } from '@/components/reviews/ReviewsSkeleton';
 export { ReviewSummary } from '@/components/reviews/ReviewSummary';
+export { ReviewsPageView } from '@/components/reviews/ReviewsPageView';
+export { ReviewsPlatformFilters } from '@/components/reviews/ReviewsPlatformFilters';
+export { ReviewsExploreCTA } from '@/components/reviews/ReviewsExploreCTA';
+export { ReviewsHeroVisual } from '@/components/reviews/ReviewsHeroVisual';

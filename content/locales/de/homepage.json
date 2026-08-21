@@ -1,0 +1,761 @@
+{
+  "hero": {
+    "eyebrow": "SOCIAL-MEDIA-WACHSTUM FÜR INSTAGRAM, TIKTOK UND FACEBOOK",
+    "title": "Steigern Sie Ihre Social-Media-Präsenz mit NovaLikes",
+    "description": "Kaufen Sie Follower, Likes, Views und Kommentare für Instagram, TikTok und Facebook. NovaLikes zeigt Ihnen klare Paketoptionen für jeden Service, damit Sie passend zu Ihrem Konto wählen und bestellen können – ohne Ihr Passwort weiterzugeben. Wählen Sie einen Service, entscheiden Sie sich für ein Paket, geben Sie die erforderlichen öffentlichen Profil- oder Inhaltsdaten ein und schließen Sie Ihre Bestellung online ab.",
+    "primaryCta": {
+      "label": "Services entdecken",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "So funktioniert’s",
+      "href": "#how-it-works"
+    },
+    "trustFeatures": [
+      {
+        "id": "password",
+        "line1": "Kein Passwort",
+        "line2": "erforderlich",
+        "icon": "shield"
+      },
+      {
+        "id": "pricing",
+        "line1": "Klare",
+        "line2": "Preise",
+        "icon": "tag"
+      },
+      {
+        "id": "tracking",
+        "line1": "Bestellung",
+        "line2": "verfolgen",
+        "icon": "truck"
+      }
+    ],
+    "visual": {
+      "src": "/assets/images/homepage/hero-social-growth.webp",
+      "alt": "NovaLikes-Illustration zum Social-Media-Wachstum mit Instagram-, TikTok- und Facebook-Interaktionen",
+      "width": 1024,
+      "height": 682
+    }
+  },
+  "platformSelector": {
+    "id": "platform-selector",
+    "eyebrow": "Plattform wählen",
+    "title": "Wählen Sie Ihre Plattform",
+    "description": "Starten Sie mit der Plattform, die Sie ausbauen möchten. Jede hat eigene Services und Paketoptionen, damit Sie direkt zum Passenden gelangen.",
+    "trustItems": [
+      {
+        "id": "packages",
+        "label": "Klare Paketoptionen",
+        "icon": "shield"
+      },
+      {
+        "id": "password",
+        "label": "Kein Passwort erforderlich",
+        "icon": "shield"
+      },
+      {
+        "id": "refund",
+        "label": "30-Tage-Geld-zurück-Garantie auf berechtigte Bestellungen",
+        "icon": "shield"
+      }
+    ],
+    "socialProof": {
+      "text": "Vergleichen Sie NovaLikes-Services für Instagram, TikTok und Facebook",
+      "href": "#services-overview"
+    },
+    "platforms": [
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "description": "Follower, Likes, Views und Kommentare für Instagram-Profile und Inhalte.",
+        "href": "#instagram-services",
+        "ctaLabel": "Instagram ansehen",
+        "badge": "Instagram-Services",
+        "metric": {
+          "value": "Profil",
+          "label": "Follower"
+        },
+        "tags": [
+          {
+            "label": "Profilwachstum",
+            "href": "/buy-instagram-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Beitrags-Engagement",
+            "href": "/buy-instagram-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Reels-Views",
+            "href": "/buy-instagram-views",
+            "icon": "play"
+          },
+          {
+            "label": "Kommentare",
+            "href": "/buy-instagram-comments",
+            "icon": "comment"
+          }
+        ]
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "description": "Follower, Likes und Views für TikTok-Konten und Videos.",
+        "href": "#tiktok-services",
+        "ctaLabel": "TikTok ansehen",
+        "metric": {
+          "value": "Video",
+          "label": "Views"
+        },
+        "tags": [
+          {
+            "label": "Konto-Wachstum",
+            "href": "/buy-tiktok-followers",
+            "icon": "trend"
+          },
+          {
+            "label": "Video-Likes",
+            "href": "/buy-tiktok-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Video-Views",
+            "href": "/buy-tiktok-views",
+            "icon": "eye"
+          },
+          {
+            "label": "Mehr Interaktion",
+            "href": "#tiktok-services",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "description": "Follower, Seiten-Likes und Beitrags-Likes für öffentliche Facebook-Seiten und Beiträge.",
+        "href": "#facebook-services",
+        "ctaLabel": "Facebook ansehen",
+        "metric": {
+          "value": "Seite",
+          "label": "Likes"
+        },
+        "tags": [
+          {
+            "label": "Seitenwachstum",
+            "href": "/buy-facebook-page-likes",
+            "icon": "users"
+          },
+          {
+            "label": "Beitrags-Likes",
+            "href": "/buy-facebook-post-likes",
+            "icon": "thumb"
+          },
+          {
+            "label": "Profil-Follower",
+            "href": "/buy-facebook-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Mehr Reichweite",
+            "href": "#facebook-services",
+            "icon": "reach"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesOverview": {
+    "id": "services-overview",
+    "eyebrow": "Alle Services",
+    "title": "Alle NovaLikes-Services",
+    "description": "Wählen Sie den Service, der zu Ihrem Ziel passt. NovaLikes bietet Follower, Likes, Views, Kommentare, Seiten-Likes und Beitrags-Likes für Instagram, TikTok und Facebook. Öffnen Sie einen Service, um Paketgrößen und Preise zu vergleichen.",
+    "trustNote": "Services und Paketoptionen vergleichen",
+    "features": [
+      {
+        "id": "users",
+        "label": "Plattformbezogene Services",
+        "icon": "users"
+      },
+      {
+        "id": "delivery",
+        "label": "Klare Paketpreise",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Kundensupport",
+        "icon": "headset"
+      },
+      {
+        "id": "payments",
+        "label": "Sichere Kartenzahlung",
+        "icon": "shield"
+      }
+    ]
+  },
+  "platformGroupTitles": {
+    "instagram": {
+      "id": "instagram-services",
+      "title": "Instagram-Wachstum",
+      "description": "Wählen Sie Follower, Likes, Views oder Kommentare, je nachdem, was Sie auf Instagram verbessern möchten."
+    },
+    "tiktok": {
+      "id": "tiktok-services",
+      "title": "TikTok-Wachstum",
+      "description": "Wählen Sie Follower, Likes oder Views, je nachdem, was Sie Ihrem TikTok-Konto oder Ihren Videos hinzufügen möchten."
+    },
+    "facebook": {
+      "id": "facebook-services",
+      "title": "Facebook-Wachstum",
+      "description": "Wählen Sie Follower, Seiten-Likes oder Beitrags-Likes, je nachdem, welchen Teil Ihrer Facebook-Präsenz Sie bearbeiten möchten."
+    }
+  },
+  "why": {
+    "id": "why-novalikes",
+    "title": "Warum NovaLikes?",
+    "description": "Bei Social-Media-Services sollten Preis, benötigte Angaben und Bestellstatus klar sein. NovaLikes macht diese Punkte von Anfang an nachvollziehbar.",
+    "points": [
+      {
+        "title": "Klare Paketoptionen",
+        "body": "Sehen Sie Mengen und Preise, bevor Sie bestellen, und wissen Sie genau, welches Paket Sie wählen."
+      },
+      {
+        "title": "Kein Passwort erforderlich",
+        "body": "Wir fragen nur nach den öffentlichen Profil-, Seiten-, Beitrags- oder Videodaten, die für den gewählten Service nötig sind. Ihr Kontopasswort bleibt privat."
+      },
+      {
+        "title": "Bestellverfolgung",
+        "body": "Prüfen Sie nach dem Checkout mit Ihren Bestelldaten den Status, statt im Unklaren zu bleiben."
+      },
+      {
+        "title": "Hilfe, wenn Sie sie brauchen",
+        "body": "Bei Fragen zu einem Service oder einer bestehenden Bestellung können Sie den NovaLikes-Support kontaktieren."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "how-it-works",
+    "title": "So funktioniert NovaLikes",
+    "description": "Eine Bestellung läuft in wenigen Schritten. Sie wählen, was Sie brauchen, geben die erforderlichen öffentlichen Angaben ein und schließen den Kauf ab.",
+    "steps": [
+      {
+        "title": "Service wählen",
+        "body": "Wählen Sie Instagram, TikTok oder Facebook und danach Follower, Likes, Views, Kommentare, Seiten-Likes oder Beitrags-Likes."
+      },
+      {
+        "title": "Paket wählen",
+        "body": "Vergleichen Sie verfügbare Mengen und Preise und wählen Sie das Paket, das Sie bestellen möchten."
+      },
+      {
+        "title": "Erforderliche Angaben eingeben",
+        "body": "Geben Sie den öffentlichen Benutzernamen, das Profil, die Seite, den Beitrag oder den Videolink an, der für den Service angefragt wird. Ein Passwort ist nicht erforderlich."
+      },
+      {
+        "title": "Bestellung abschließen",
+        "body": "Gehen Sie durch den Checkout und geben Sie Ihre Bestellung auf. Danach können Sie den Status über die Bestellverfolgung prüfen."
+      }
+    ]
+  },
+  "guarantees": {
+    "id": "guarantees",
+    "title": "Wissen, worauf Sie sich einlassen",
+    "description": "Bevor Sie bestellen, sollten Sie wissen, welche Angaben nötig sind, wie die Preise funktionieren und wo Sie Hilfe finden. NovaLikes stellt diese Informationen vor dem Checkout bereit.",
+    "items": [
+      {
+        "title": "Ihr Passwort bleibt privat",
+        "body": "Sie müssen Ihr Social-Media-Passwort nicht teilen. Bestellungen nutzen die öffentlichen Profil- oder Inhaltsdaten, die für den gewählten Service erforderlich sind."
+      },
+      {
+        "title": "Preise vor dem Checkout sichtbar",
+        "body": "Paketmengen und Preise werden vor der Bestellung angezeigt, damit Sie Ihre Auswahl prüfen können."
+      },
+      {
+        "title": "Richtlinien zum Nachlesen",
+        "body": "Sie können die geltenden Erstattungs-, Datenschutz- und Servicebedingungen vor der Bestellung einsehen."
+      },
+      {
+        "title": "Support ist erreichbar",
+        "body": "Haben Sie vor der Bestellung eine Frage oder brauchen Sie Hilfe bei einem bestehenden Kauf? Kontaktieren Sie NovaLikes und geben Sie bei Bedarf die relevanten Bestelldaten an."
+      }
+    ]
+  },
+  "beforeYouBuy": {
+    "id": "before-you-buy",
+    "title": "Bevor Sie bestellen",
+    "description": "Eine kurze Prüfung vor der Bestellung kann Verzögerungen oder Lieferprobleme vermeiden. Stellen Sie sicher, dass Sie den richtigen Service gewählt und die korrekten öffentlichen Angaben zum Konto oder Inhalt eingegeben haben.",
+    "items": [
+      {
+        "question": "Den richtigen Service wählen",
+        "answer": "Prüfen Sie, ob Sie Follower, Likes, Views, Kommentare, Seiten-Likes oder Beitrags-Likes brauchen, bevor Sie ein Paket auswählen."
+      },
+      {
+        "question": "Profil oder Inhalt prüfen",
+        "answer": "Stellen Sie sicher, dass das Profil, die Seite, der Beitrag, das Reel oder das Video öffentlich zugänglich ist, sofern der gewählte Service das voraussetzt."
+      },
+      {
+        "question": "Korrekte Angaben eingeben",
+        "answer": "Prüfen Sie Benutzername oder URL vor dem Checkout. Diese Angaben bestimmen, wohin die Bestellung geliefert wird."
+      },
+      {
+        "question": "Paket prüfen",
+        "answer": "Kontrollieren Sie Service, Menge und Preis, bevor Sie den Kauf abschließen."
+      }
+    ]
+  },
+  "faq": {
+    "id": "homepage-faq",
+    "title": "Häufige Fragen",
+    "description": "Hier finden Sie Antworten auf häufige Fragen zur Auswahl eines NovaLikes-Services und zur Bestellung.",
+    "items": [
+      {
+        "question": "Welche Social-Media-Services kann ich bei NovaLikes bestellen?",
+        "answer": "NovaLikes bietet Follower, Likes, Views, Kommentare, Seiten-Likes und Beitrags-Likes für Instagram, TikTok und Facebook. Die verfügbaren Optionen hängen von der gewählten Plattform ab."
+      },
+      {
+        "question": "Muss ich NovaLikes mein Social-Media-Passwort geben?",
+        "answer": "Nein. Sie geben nur den öffentlichen Benutzernamen sowie Profil-, Seiten-, Beitrags- oder Videodaten an, die für den bestellten Service erforderlich sind."
+      },
+      {
+        "question": "Wie wähle ich das richtige Paket?",
+        "answer": "Beginnen Sie mit Plattform und Service. Auf der Service-Seite können Sie anschließend Mengen und Preise vergleichen, bevor Sie ein Paket wählen."
+      },
+      {
+        "question": "Welche Angaben brauche ich für eine Bestellung?",
+        "answer": "Das hängt vom Service ab. Es kann ein öffentlicher Benutzername, eine Profil-URL, eine Seiten-URL, ein Beitragslink, ein Reel oder eine Video-URL angefragt werden, damit die Bestellung an die richtige Stelle geht."
+      },
+      {
+        "question": "Kann ich meine Bestellung nach dem Checkout prüfen?",
+        "answer": "Ja. NovaLikes bietet eine Bestellverfolgung, mit der Sie den Status Ihres Kaufs prüfen können."
+      },
+      {
+        "question": "Kann ich NovaLikes kontaktieren, wenn ich eine Frage zu meiner Bestellung habe?",
+        "answer": "Ja. Sie können NovaLikes bei Fragen zu einem Service oder einer bestehenden Bestellung kontaktieren. Geben Sie bei Anfragen zu einem Kauf Ihre Bestelldaten an."
+      }
+    ]
+  },
+  "reviews": {
+    "id": "homepage-reviews",
+    "title": "Was Kundinnen und Kunden über NovaLikes sagen",
+    "description": "Lesen Sie Rückmeldungen von Kundinnen und Kunden, die NovaLikes für Social-Media-Services genutzt haben. Ihre Erfahrungen helfen Ihnen, den Bestellablauf besser einzuschätzen.",
+    "cta": {
+      "label": "Weitere Bewertungen lesen",
+      "href": "/reviews"
+    }
+  },
+  "finalCta": {
+    "id": "home-final-cta",
+    "eyebrow": "Schneller wachsen mit NovaLikes",
+    "title": "Bereit, Ihre Social-Präsenz auszubauen?",
+    "description": "Wählen Sie Plattform und Service, die zu Ihrem Ziel passen. Vergleichen Sie verfügbare Pakete, prüfen Sie die Details und bestellen Sie, wenn Sie soweit sind.",
+    "primaryCta": {
+      "label": "Services entdecken",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "Bestellung verfolgen",
+      "href": "/track-order"
+    },
+    "trustItems": [
+      {
+        "id": "secure",
+        "label": "Kein Passwort erforderlich",
+        "icon": "shield"
+      },
+      {
+        "id": "delivery",
+        "label": "Klare Paketpreise",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Bestellverfolgung",
+        "icon": "headset"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "ig-followers",
+      "platform": "instagram",
+      "slug": "buy-instagram-followers",
+      "href": "/buy-instagram-followers",
+      "name": "Instagram Follower",
+      "cardBlurb": "Follower-Pakete für Ihr öffentliches Instagram-Profil.",
+      "commercialLabel": "INSTAGRAM FOLLOWER KAUFEN",
+      "title": "Instagram-Follower-Pakete",
+      "intro": "Kaufen Sie Instagram Follower, wenn Sie Ihrem Profil weitere Follower hinzufügen möchten, ohne Ihr Passwort zu teilen. Wählen Sie eine verfügbare Paketgröße, geben Sie Ihren öffentlichen Instagram-Benutzernamen ein und bestellen Sie online.",
+      "points": [
+        {
+          "title": "Follower-Zahl am Profil",
+          "text": "Die Follower werden dem öffentlichen Instagram-Profil zugeordnet, das mit der Bestellung angegeben wird."
+        },
+        {
+          "title": "Für unterschiedliche Kontogrößen",
+          "text": "Wählen Sie eine Follower-Menge, die zum Profil passt, an dem Sie arbeiten."
+        },
+        {
+          "title": "Fokus auf Ihr Profil",
+          "text": "Dieser Service betrifft Ihre Follower-Zahl, nicht Likes, Views oder Kommentare einzelner Beiträge."
+        },
+        {
+          "title": "Weitere Instagram-Services",
+          "text": "Likes, Views und Kommentare gibt es separat, wenn Sie einzelne Inhalte bearbeiten möchten."
+        }
+      ],
+      "cta": {
+        "label": "Instagram Follower ansehen",
+        "href": "/buy-instagram-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-followers-visual.webp",
+        "alt": "Instagram-Profil mit Follower- und Zielgruppenhinweisen"
+      },
+      "tone": "rose"
+    },
+    {
+      "id": "ig-likes",
+      "platform": "instagram",
+      "slug": "buy-instagram-likes",
+      "href": "/buy-instagram-likes",
+      "name": "Instagram Likes",
+      "cardBlurb": "Like-Pakete für geeignete Instagram-Beiträge und Reels.",
+      "commercialLabel": "INSTAGRAM LIKES KAUFEN",
+      "title": "Instagram-Likes-Pakete",
+      "intro": "Kaufen Sie Instagram Likes für einen Beitrag oder ein Reel, wenn Sie die sichtbare Interaktion auf diesem Inhalt erhöhen möchten. Wählen Sie ein Paket, geben Sie die öffentliche Beitrags- oder Reel-URL an und bestellen Sie, ohne NovaLikes Zugriff auf Ihr Instagram-Konto zu geben.",
+      "points": [
+        {
+          "title": "Für Beiträge und Reels",
+          "text": "Wählen Sie den öffentlichen Instagram-Beitrag oder das Reel, auf dem die Likes landen sollen."
+        },
+        {
+          "title": "Inhaltsbezogen",
+          "text": "Die Likes gelten für den ausgewählten Inhalt, nicht für die Follower-Zahl Ihres Profils."
+        },
+        {
+          "title": "Den richtigen Beitrag wählen",
+          "text": "Prüfen Sie, dass Sie genau den öffentlichen Beitrag oder das Reel übermitteln, den bzw. das Sie nutzen möchten."
+        },
+        {
+          "title": "Likes, Views oder Kommentare",
+          "text": "Wählen Sie Views für die Video-Aufrufzahl oder Kommentare, wenn Sie eine andere Interaktionsart möchten."
+        }
+      ],
+      "cta": {
+        "label": "Instagram Likes ansehen",
+        "href": "/buy-instagram-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
+        "alt": "Instagram-Beitrag mit Likes und Interaktionshinweisen"
+      },
+      "tone": "violet"
+    },
+    {
+      "id": "ig-views",
+      "platform": "instagram",
+      "slug": "buy-instagram-views",
+      "href": "/buy-instagram-views",
+      "name": "Instagram Views",
+      "cardBlurb": "View-Pakete für geeignete Instagram-Reels und Videos.",
+      "commercialLabel": "INSTAGRAM VIEWS KAUFEN",
+      "title": "Instagram-Views-Pakete",
+      "intro": "Kaufen Sie Instagram Views für ein Reel oder Video, wenn Sie die sichtbare View-Zahl erhöhen möchten. Wählen Sie die gewünschte Anzahl, fügen Sie den öffentlichen Link zu Ihrem Inhalt hinzu und schließen Sie die Bestellung ab, ohne Ihr Instagram-Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Für Videoinhalte",
+          "text": "Nutzen Sie diesen Service für ein geeignetes öffentliches Instagram-Reel oder Video."
+        },
+        {
+          "title": "Fokus auf Views",
+          "text": "Dieser Service betrifft die View-Zahl Ihres Inhalts, nicht Follower, Likes oder Kommentare."
+        },
+        {
+          "title": "Das richtige Video wählen",
+          "text": "Übermitteln Sie genau das öffentliche Reel oder Video, dem die Views zugeordnet werden sollen."
+        },
+        {
+          "title": "Nach Inhalt bestellen",
+          "text": "Wählen Sie eine Menge passend zum einzelnen Reel oder Video, an dem Sie arbeiten."
+        }
+      ],
+      "cta": {
+        "label": "Instagram Views ansehen",
+        "href": "/buy-instagram-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
+        "alt": "Instagram-Reel mit Hinweisen zur View-Zahl"
+      },
+      "tone": "orange"
+    },
+    {
+      "id": "ig-comments",
+      "platform": "instagram",
+      "slug": "buy-instagram-comments",
+      "href": "/buy-instagram-comments",
+      "name": "Instagram Kommentare",
+      "cardBlurb": "Kommentar-Pakete für geeignete Instagram-Beiträge und Reels.",
+      "commercialLabel": "INSTAGRAM KOMMENTARE KAUFEN",
+      "title": "Instagram-Kommentar-Pakete",
+      "intro": "Kaufen Sie Instagram Kommentare für einen öffentlichen Beitrag oder ein Reel, wenn Sie mehr sichtbare Unterhaltung um Ihren Inhalt möchten. Wählen Sie die passende Kommentar-Option, geben Sie den öffentlichen Inhaltslink an und bestellen Sie, ohne Ihr Instagram-Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Für Beiträge und Reels",
+          "text": "Wählen Sie den öffentlichen Instagram-Inhalt, dem Kommentare hinzugefügt werden sollen."
+        },
+        {
+          "title": "Kommentaraktivität",
+          "text": "Kommentare sind eine andere sichtbare Interaktion als Likes oder Views."
+        },
+        {
+          "title": "Inhaltsbezogen",
+          "text": "Die Bestellung gilt für den ausgewählten Beitrag oder das Reel, nicht für Ihre gesamte Follower-Zahl."
+        },
+        {
+          "title": "Inhalt prüfen",
+          "text": "Stellen Sie sicher, dass der übermittelte Beitrag oder das Reel genau der Inhalt ist, den Sie für die Bestellung nutzen möchten."
+        }
+      ],
+      "cta": {
+        "label": "Instagram Kommentare ansehen",
+        "href": "/buy-instagram-comments"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-comments-visual.webp",
+        "alt": "Instagram-Beitrag mit Kommentaren und Gesprächsblasen"
+      },
+      "tone": "amber"
+    },
+    {
+      "id": "tt-followers",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-followers",
+      "href": "/buy-tiktok-followers",
+      "name": "TikTok Follower",
+      "cardBlurb": "Follower-Pakete für Ihr öffentliches TikTok-Profil.",
+      "commercialLabel": "TIKTOK FOLLOWER KAUFEN",
+      "title": "TikTok-Follower-Pakete",
+      "intro": "Kaufen Sie TikTok Follower, wenn Sie die Follower-Zahl auf Ihrem Profil erhöhen möchten. Wählen Sie ein Paket, das zu Ihrem Konto passt, geben Sie Ihren öffentlichen TikTok-Benutzernamen an und bestellen Sie, ohne Ihr Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Follower-Zahl am Profil",
+          "text": "Dieser Service betrifft die Follower, die am mit der Bestellung angegebenen TikTok-Profil angezeigt werden."
+        },
+        {
+          "title": "Kontobezogen",
+          "text": "Follower gelten für das Konto, nicht für Likes oder Views eines einzelnen Videos."
+        },
+        {
+          "title": "Passend zu Ihrem Konto",
+          "text": "Wählen Sie eine Follower-Menge, die zum TikTok-Profil passt, an dem Sie arbeiten."
+        },
+        {
+          "title": "Video-Services separat",
+          "text": "TikTok Likes und Views gibt es, wenn Sie einzelne Videos bearbeiten möchten."
+        }
+      ],
+      "cta": {
+        "label": "TikTok Follower ansehen",
+        "href": "/buy-tiktok-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-followers-visual.webp",
+        "alt": "TikTok-Creator-Profil mit Follower-Hinweisen"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "tt-likes",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-likes",
+      "href": "/buy-tiktok-likes",
+      "name": "TikTok Likes",
+      "cardBlurb": "Like-Pakete für geeignete öffentliche TikTok-Videos.",
+      "commercialLabel": "TIKTOK LIKES KAUFEN",
+      "title": "TikTok-Likes-Pakete",
+      "intro": "Kaufen Sie TikTok Likes für ein öffentliches Video, wenn Sie diesem Beitrag weitere Likes hinzufügen möchten. Wählen Sie die Paketgröße, geben Sie den Videolink ein und schließen Sie die Bestellung ab, ohne NovaLikes Ihr TikTok-Passwort zu geben.",
+      "points": [
+        {
+          "title": "Für einzelne Videos",
+          "text": "Wählen Sie das öffentliche TikTok-Video, auf dem die Likes landen sollen."
+        },
+        {
+          "title": "Videobezogen",
+          "text": "Die Likes gelten für das ausgewählte Video, nicht für die Follower-Zahl Ihres TikTok-Profils."
+        },
+        {
+          "title": "Video prüfen",
+          "text": "Stellen Sie sicher, dass Sie genau das öffentliche TikTok-Video übermitteln, das Sie nutzen möchten."
+        },
+        {
+          "title": "Likes oder Views",
+          "text": "Wählen Sie stattdessen TikTok Views, wenn die View-Zahl die Kennzahl ist, an der Sie arbeiten möchten."
+        }
+      ],
+      "cta": {
+        "label": "TikTok Likes ansehen",
+        "href": "/buy-tiktok-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
+        "alt": "TikTok-Video mit Likes und Interaktionshinweisen"
+      },
+      "tone": "cyan"
+    },
+    {
+      "id": "tt-views",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-views",
+      "href": "/buy-tiktok-views",
+      "name": "TikTok Views",
+      "cardBlurb": "View-Pakete für geeignete öffentliche TikTok-Videos.",
+      "commercialLabel": "TIKTOK VIEWS KAUFEN",
+      "title": "TikTok-Views-Pakete",
+      "intro": "Kaufen Sie TikTok Views für ein öffentliches Video, wenn Sie die angezeigte View-Zahl dieses Beitrags erhöhen möchten. Wählen Sie das View-Paket, geben Sie die Video-URL an und bestellen Sie, ohne Ihr TikTok-Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Für TikTok-Videos",
+          "text": "Wählen Sie das öffentliche TikTok-Video, dem die Views zugeordnet werden sollen."
+        },
+        {
+          "title": "Fokus auf die View-Zahl",
+          "text": "Dieser Service betrifft Video-Views, nicht Profil-Follower oder Video-Likes."
+        },
+        {
+          "title": "Das richtige Video nutzen",
+          "text": "Prüfen Sie das TikTok-Video, bevor Sie es mit der Bestellung übermitteln."
+        },
+        {
+          "title": "Nach Video wählen",
+          "text": "Wählen Sie die Menge passend zum einzelnen Video, an dem Sie arbeiten."
+        }
+      ],
+      "cta": {
+        "label": "TikTok Views ansehen",
+        "href": "/buy-tiktok-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
+        "alt": "TikTok-Video mit View- und Wiedergabehinweisen"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "fb-followers",
+      "platform": "facebook",
+      "slug": "buy-facebook-followers",
+      "href": "/buy-facebook-followers",
+      "name": "Facebook Follower",
+      "cardBlurb": "Follower-Pakete für geeignete öffentliche Facebook-Seiten.",
+      "commercialLabel": "FACEBOOK FOLLOWER KAUFEN",
+      "title": "Facebook-Follower-Pakete",
+      "intro": "Kaufen Sie Facebook Follower, wenn Sie einer geeigneten öffentlichen Facebook-Seite weitere Follower hinzufügen möchten. Wählen Sie eine verfügbare Paketgröße, geben Sie die öffentlichen Facebook-Seitenangaben für Ihre Bestellung an und schließen Sie den Kauf ab, ohne Ihr Facebook-Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Fokus auf Follower",
+          "text": "Nutzen Sie diesen Service, wenn Follower die Facebook-Kennzahl sind, an der Sie arbeiten möchten."
+        },
+        {
+          "title": "Anders als Seiten-Likes",
+          "text": "Facebook Follower und Facebook Seiten-Likes sind getrennte Services mit unterschiedlichen Zwecken."
+        },
+        {
+          "title": "Für Ihre Facebook-Seite",
+          "text": "Die Follower gelten für die geeignete öffentliche Facebook-Seite, die mit der Bestellung übermittelt wird."
+        },
+        {
+          "title": "Beitrags-Likes separat",
+          "text": "Wählen Sie Facebook Beitrags-Likes, wenn Sie Likes für einen einzelnen Beitrag möchten."
+        }
+      ],
+      "cta": {
+        "label": "Facebook Follower ansehen",
+        "href": "/buy-facebook-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-followers-visual.webp",
+        "alt": "Facebook-Seite mit Follower- und Community-Hinweisen"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-page-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-page-likes",
+      "href": "/buy-facebook-page-likes",
+      "name": "Facebook Seiten-Likes",
+      "cardBlurb": "Seiten-Like-Pakete für geeignete öffentliche Facebook-Seiten.",
+      "commercialLabel": "FACEBOOK SEITEN-LIKES KAUFEN",
+      "title": "Facebook-Seiten-Likes-Pakete",
+      "intro": "Kaufen Sie Facebook Seiten-Likes, wenn Sie die Like-Zahl auf Ihrer Unternehmens-, Marken- oder öffentlichen Seite erhöhen möchten. Wählen Sie ein Paket, geben Sie den öffentlichen Facebook-Seitenlink an und bestellen Sie, ohne Ihr Kontopasswort zu teilen.",
+      "points": [
+        {
+          "title": "Für Facebook-Seiten",
+          "text": "Nutzen Sie diesen Service für eine geeignete öffentliche Unternehmens-, Marken- oder andere Facebook-Seite."
+        },
+        {
+          "title": "Kennzahl auf Seitenebene",
+          "text": "Seiten-Likes gelten für die Seite selbst, nicht für einen einzelnen Facebook-Beitrag."
+        },
+        {
+          "title": "Anders als Follower",
+          "text": "Wählen Sie stattdessen Facebook Follower, wenn die Follower-Zahl die gewünschte Kennzahl ist."
+        },
+        {
+          "title": "Seite prüfen",
+          "text": "Stellen Sie sicher, dass die mit der Bestellung übermittelte öffentliche Facebook-Seite die richtige ist."
+        }
+      ],
+      "cta": {
+        "label": "Facebook Seiten-Likes ansehen",
+        "href": "/buy-facebook-page-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-page-likes-visual.webp",
+        "alt": "Facebook-Seite mit Hinweisen zu Seiten-Likes"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-post-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-post-likes",
+      "href": "/buy-facebook-post-likes",
+      "name": "Facebook Beitrags-Likes",
+      "cardBlurb": "Beitrags-Like-Pakete für geeignete öffentliche Facebook-Beiträge.",
+      "commercialLabel": "FACEBOOK BEITRAGS-LIKES KAUFEN",
+      "title": "Facebook-Beitrags-Likes-Pakete",
+      "intro": "Kaufen Sie Facebook Beitrags-Likes für einen öffentlichen Beitrag, wenn Sie die Like-Zahl auf diesem konkreten Inhalt erhöhen möchten. Wählen Sie ein Paket, geben Sie die öffentliche Beitrags-URL an und schließen Sie die Bestellung ab, ohne Ihr Facebook-Passwort zu teilen.",
+      "points": [
+        {
+          "title": "Für einzelne Beiträge",
+          "text": "Wählen Sie den öffentlichen Facebook-Beitrag, dem die Likes hinzugefügt werden sollen."
+        },
+        {
+          "title": "Kennzahl auf Beitragsebene",
+          "text": "Dieser Service gilt für einen bestimmten Beitrag, nicht für die gesamte Facebook-Seite."
+        },
+        {
+          "title": "Anders als Seiten-Likes",
+          "text": "Facebook Seiten-Likes gelten für die Seite selbst, dieser Service für einzelne Inhalte."
+        },
+        {
+          "title": "Den richtigen Beitrag wählen",
+          "text": "Prüfen Sie den öffentlichen Beitrag, bevor Sie ihn mit der Bestellung übermitteln."
+        }
+      ],
+      "cta": {
+        "label": "Facebook Beitrags-Likes ansehen",
+        "href": "/buy-facebook-post-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-post-likes-visual.webp",
+        "alt": "Facebook-Beitrag mit Like- und Reaktionshinweisen"
+      },
+      "tone": "blue"
+    }
+  ]
+}

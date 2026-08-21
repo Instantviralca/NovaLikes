@@ -29,7 +29,6 @@ export {
 export { homepageContent, getHomepageContent } from '@/data/content/homepage';
 export { instagramContent, getInstagramContent } from '@/data/content/instagram';
 export { tiktokContent, getTikTokContent } from '@/data/content/tiktok';
-export { youtubeContent, getYouTubeContent } from '@/data/content/youtube';
 export { facebookContent, getFacebookContent } from '@/data/content/facebook';
 export {
   getServiceContentBySlug,

@@ -1,0 +1,24 @@
+{
+  "h1": "تقييمات العملاء",
+  "intro": "تقييمات عملاء من كتالوج NovaLikes المنشور. التقييمات أدناه تعكس ذلك الكتالوج وقد تشمل ملاحظات من 4 نجوم و5 نجوم.",
+  "catalogueHeading": "كتالوج تقييمات العملاء",
+  "emptyFilter": "لا توجد تقييمات مطابقة لمُرشِّح هذه المنصة.",
+  "showingTemplate": "عرض {visible} من {total} {word}",
+  "reviewSingular": "تقييم",
+  "reviewPlural": "تقييمات",
+  "loadMore": "تحميل المزيد من التقييمات",
+  "emptyCatalogue": "ستظهر تقييمات العملاء هنا عند توفر ملاحظات معتمدة.",
+  "filterAria": "تصفية التقييمات حسب المنصة",
+  "filterAll": "الكل",
+  "basedOnTemplate": "استنادًا إلى {count} {word}",
+  "exploreTitle": "هل أنت مستعد لاستكشاف NovaLikes؟",
+  "exploreIntro": "تصفّح خدمات إنستغرام وتيك توك وفيسبوك واختر الخيار الذي يناسب ما تبحث عنه.",
+  "exploreInstagram": "استكشف إنستغرام",
+  "exploreTikTok": "استكشف تيك توك",
+  "exploreFacebook": "استكشف فيسبوك",
+  "readMore": "اقرأ المزيد",
+  "showLess": "عرض أقل",
+  "chrome": {
+    "breadcrumb": "التقييمات"
+  }
+}

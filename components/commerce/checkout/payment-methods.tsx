@@ -4,6 +4,7 @@ import { CreditCard, Lock, ShieldCheck } from 'lucide-react';
 
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type { PaymentMethodId, PaymentMethodOption } from '@/types/checkout';
 import { cn } from '@/lib/utils';
 
@@ -28,12 +29,13 @@ export function PaymentMethods({
   className,
   hideLegend = false,
 }: PaymentMethodsProps) {
+  const { ui } = useI18nChrome();
   const enabled = methods.filter((m) => m.enabled);
 
   return (
     <fieldset className={cn('space-y-4', className)}>
-      {hideLegend ? <legend className="sr-only">Payment method</legend> : (
-        <legend className="text-base font-bold">Payment method</legend>
+      {hideLegend ? <legend className="sr-only">{ui.checkout.paymentMethod}</legend> : (
+        <legend className="text-base font-bold">{ui.checkout.paymentMethod}</legend>
       )}
       <RadioGroup
         value={value ?? undefined}
@@ -65,10 +67,10 @@ export function PaymentMethods({
                 {method.id === 'remote-payment' || method.id === 'stripe' ? (
                   <div className="mt-3 space-y-2">
                     <p className="text-xs font-medium text-[var(--text-secondary)]">
-                      Card payments are processed securely
+                      {ui.checkout.cardProcessedSecurely}
                     </p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {['Visa', 'Mastercard', 'Amex', 'Discover', 'Google Pay', 'Apple Pay'].map(
+                    <div className="flex flex-wrap gap-1.5" dir="ltr">
+                      {['Visa', 'Mastercard', 'Amex', 'Discover'].map(
                         (brand) => (
                           <span
                             key={brand}
@@ -81,11 +83,11 @@ export function PaymentMethods({
                     </div>
                     <p className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-muted)]">
                       <Lock className="size-3.5" aria-hidden="true" />
-                      Encrypted payment · we never store full card numbers
+                      {ui.checkout.encryptedPayment}
                     </p>
                     <p className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-muted)]">
                       <ShieldCheck className="size-3.5" aria-hidden="true" />
-                      Secure checkout
+                      {ui.checkout.secureCheckout}
                     </p>
                   </div>
                 ) : null}

@@ -1,0 +1,394 @@
+[
+  {
+    "id": "faq-gs-what-is-novalikes",
+    "category": "getting_started",
+    "order": 1,
+    "question": "O que é a NovaLikes?",
+    "answer": "A NovaLikes é um site de serviços de redes sociais para Instagram, TikTok e Facebook. Os serviços disponíveis incluem opções selecionadas de seguidores, curtidas, visualizações, comentários e serviços de Página do Facebook, conforme a plataforma."
+  },
+  {
+    "id": "faq-gs-how-works",
+    "category": "getting_started",
+    "order": 2,
+    "question": "Como a NovaLikes funciona?",
+    "answer": "Escolha um serviço, selecione um dos pacotes disponíveis e envie as informações públicas de perfil, Página, publicação ou vídeo pedidas para aquele serviço. Conclua o checkout e use as opções de status do pedido disponíveis depois que o pedido for feito."
+  },
+  {
+    "id": "faq-gs-platforms",
+    "category": "getting_started",
+    "order": 3,
+    "question": "Quais plataformas de redes sociais a NovaLikes atende?",
+    "answer": "No momento, a NovaLikes atende Instagram, TikTok e Facebook. Serviços de YouTube e X/Twitter não são oferecidos atualmente."
+  },
+  {
+    "id": "faq-gs-what-info",
+    "category": "getting_started",
+    "order": 4,
+    "question": "Quais informações preciso para fazer um pedido?",
+    "answer": "As informações necessárias dependem do serviço que você escolher. Serviços no nível do perfil podem exigir um nome de usuário ou URL pública de perfil/Página, enquanto serviços para conteúdo individual podem exigir a URL pública da publicação, Reel ou vídeo."
+  },
+  {
+    "id": "faq-gs-account-required",
+    "category": "getting_started",
+    "order": 5,
+    "question": "Preciso criar uma conta antes de pedir?",
+    "answer": "Não. Você pode fazer um pedido com as informações solicitadas no checkout, sem criar uma conta separada na NovaLikes."
+  },
+  {
+    "id": "faq-as-password",
+    "category": "account_security",
+    "order": 1,
+    "question": "Preciso informar a senha das minhas redes sociais?",
+    "answer": "Não. Você nunca deve informar a senha do Instagram, TikTok ou Facebook ao fazer um pedido na NovaLikes. Envie apenas as informações públicas de perfil, Página, publicação ou vídeo pedidas para o serviço."
+  },
+  {
+    "id": "faq-as-public-account",
+    "category": "account_security",
+    "order": 2,
+    "question": "Minha conta nas redes sociais precisa ser pública?",
+    "answer": "Se o serviço escolhido exigir que a NovaLikes acesse o perfil, a Página, a publicação ou o vídeo publicamente, esse conteúdo precisa permanecer acessível ao público enquanto o pedido estiver sendo processado. Conteúdo privado ou indisponível pode impedir que o serviço seja concluído."
+  },
+  {
+    "id": "faq-as-make-private-after",
+    "category": "account_security",
+    "order": 3,
+    "question": "Posso deixar a conta privada depois de fazer um pedido?",
+    "answer": "Se o pedido depender de acesso público a um perfil ou conteúdo, mantenha-o público enquanto o pedido estiver sendo processado. Alterar a visibilidade pode impedir o acesso às informações necessárias."
+  },
+  {
+    "id": "faq-as-login-account",
+    "category": "account_security",
+    "order": 4,
+    "question": "A NovaLikes vai entrar na minha conta das redes sociais?",
+    "answer": "Nenhuma senha de rede social é necessária para os serviços descritos na NovaLikes. Nunca envie os dados de login do Instagram, TikTok ou Facebook no checkout ou pelo suporte."
+  },
+  {
+    "id": "faq-as-wrong-url",
+    "category": "account_security",
+    "order": 5,
+    "question": "O que acontece se eu informar o nome de usuário ou a URL errados?",
+    "answer": "Fale com o suporte da NovaLikes o mais rápido possível se você enviou informações incorretas. A possibilidade de alteração depende do status atual do pedido, então sempre confira o nome de usuário ou a URL com cuidado antes de concluir o checkout."
+  },
+  {
+    "id": "faq-as-platform-risk",
+    "category": "account_security",
+    "order": 6,
+    "question": "Comprar seguidores, curtidas ou visualizações pode afetar minha conta nas redes sociais?",
+    "answer": "Serviços de redes sociais de terceiros podem envolver riscos de política da plataforma ou de medidas na conta. A NovaLikes não exige a senha do Instagram, TikTok ou Facebook para os serviços descritos no site, mas nenhum serviço de terceiros pode garantir que uma plataforma nunca remova atividade, mude a forma de contar métricas ou tome medidas segundo as regras vigentes. Consulte os requisitos do serviço e as políticas atuais da plataforma antes de pedir."
+  },
+  {
+    "id": "faq-as-platform-control",
+    "category": "account_security",
+    "order": 7,
+    "question": "A NovaLikes controla as políticas do Instagram, TikTok ou Facebook?",
+    "answer": "Não. Instagram, TikTok e Facebook são plataformas de terceiros, com regras, sistemas e decisões de aplicação próprias. A NovaLikes não controla as políticas das plataformas nem garante como uma plataforma vai tratar atividade de engajamento de terceiros. As regras das plataformas podem mudar, então os usuários devem consultar as regras atuais da plataforma que usam."
+  },
+  {
+    "id": "faq-od-how-long",
+    "category": "orders_delivery",
+    "order": 1,
+    "question": "Quanto tempo leva um pedido da NovaLikes?",
+    "answer": "O processamento e a entrega podem variar conforme o serviço e o pacote. Use as informações de entrega exibidas para o pacote específico que você escolher, em vez de assumir que todo serviço da NovaLikes tem o mesmo prazo."
+  },
+  {
+    "id": "faq-od-start-immediately",
+    "category": "orders_delivery",
+    "order": 2,
+    "question": "Meu pedido começa imediatamente?",
+    "answer": "O processamento do pedido pode variar conforme o serviço escolhido e as condições atuais de processamento. Consulte as informações fornecidas para o serviço ou pacote selecionado para quaisquer detalhes de prazo aplicáveis."
+  },
+  {
+    "id": "faq-od-track",
+    "category": "orders_delivery",
+    "order": 3,
+    "question": "Como posso acompanhar meu pedido da NovaLikes?",
+    "answer": "Use a página Acompanhar pedido da NovaLikes e envie as informações solicitadas. Se não localizar um pedido, fale com o suporte com os dados disponíveis do pedido."
+  },
+  {
+    "id": "faq-od-still-processing",
+    "category": "orders_delivery",
+    "order": 4,
+    "question": "Por que meu pedido ainda está em processamento?",
+    "answer": "Um pedido pode permanecer em processamento enquanto o serviço escolhido está sendo concluído. Mantenha o perfil, a Página, a publicação ou o vídeo enviados acessíveis ao público quando o serviço exigir acesso público, e fale com o suporte se achar que há um problema com o pedido."
+  },
+  {
+    "id": "faq-od-not-started",
+    "category": "orders_delivery",
+    "order": 5,
+    "question": "O que devo fazer se meu pedido não começou?",
+    "answer": "Primeiro confira se o nome de usuário ou a URL que você enviou estão corretos e se o perfil ou conteúdo exigido ainda está público. Se as informações estiverem corretas e você ainda precisar de ajuda, fale com o suporte da NovaLikes com os dados do pedido."
+  },
+  {
+    "id": "faq-od-change-url",
+    "category": "orders_delivery",
+    "order": 6,
+    "question": "Posso alterar o nome de usuário ou a URL depois de pedir?",
+    "answer": "Fale com o suporte o mais rápido possível se precisar corrigir informações enviadas. Alterações podem não ser possíveis depois que o processamento tiver começado."
+  },
+  {
+    "id": "faq-od-delete-content",
+    "category": "orders_delivery",
+    "order": 7,
+    "question": "O que acontece se eu excluir uma publicação ou um vídeo depois de pedir?",
+    "answer": "Excluir ou restringir o acesso ao conteúdo ligado a um pedido ativo pode impedir que esse pedido seja processado ou concluído. Mantenha o conteúdo enviado disponível enquanto o serviço exigir acesso a ele."
+  },
+  {
+    "id": "faq-od-cancel-change",
+    "category": "orders_delivery",
+    "order": 8,
+    "question": "Posso cancelar ou alterar um pedido depois do pagamento?",
+    "answer": "Não há opção de cancelamento ou edição por conta própria depois de um pagamento bem-sucedido. Fale com o suporte da NovaLikes o mais rápido possível se precisar solicitar um cancelamento ou uma alteração. Se o pedido puder ser atendido depende do status atual de processamento."
+  },
+  {
+    "id": "faq-ig-safe-followers",
+    "category": "instagram",
+    "order": 1,
+    "question": "É seguro comprar seguidores no Instagram?",
+    "answer": "Comprar seguidores no Instagram envolve o uso de um serviço de terceiros, então você deve entender quais informações o serviço exige antes de pedir. A NovaLikes não exige a senha do Instagram; use apenas as informações públicas do perfil pedidas no checkout e consulte os detalhes do serviço antes de comprar."
+  },
+  {
+    "id": "faq-ig-how-followers",
+    "category": "instagram",
+    "order": 2,
+    "question": "Como funciona comprar seguidores no Instagram?",
+    "answer": "Escolha um pacote de seguidores no Instagram e envie as informações públicas do perfil pedidas no checkout. Seguidores no Instagram é um serviço no nível do perfil, então envie o perfil correto, e não a URL de um post ou Reel."
+  },
+  {
+    "id": "faq-ig-password-followers",
+    "category": "instagram",
+    "order": 3,
+    "question": "Preciso da senha do Instagram para comprar seguidores?",
+    "answer": "Não. Você não precisa informar a senha do Instagram ao pedir seguidores no Instagram na NovaLikes. Nunca envie os dados de login do Instagram no checkout ou pelo suporte."
+  },
+  {
+    "id": "faq-ig-public-followers",
+    "category": "instagram",
+    "order": 4,
+    "question": "Minha conta do Instagram precisa ser pública para receber seguidores?",
+    "answer": "Se o serviço de seguidores no Instagram exigir acesso ao perfil público, mantenha o perfil acessível ao público enquanto o pedido estiver sendo processado. Um perfil privado ou indisponível pode impedir o acesso às informações necessárias."
+  },
+  {
+    "id": "faq-ig-private-followers",
+    "category": "instagram",
+    "order": 5,
+    "question": "Posso comprar seguidores no Instagram para uma conta privada?",
+    "answer": "Uma conta privada no Instagram pode impedir que um serviço que depende de acesso público ao perfil seja processado normalmente. Siga os requisitos de visibilidade mostrados para o serviço de seguidores no Instagram antes e durante o pedido."
+  },
+  {
+    "id": "faq-ig-followers-drop",
+    "category": "instagram",
+    "order": 6,
+    "question": "O Instagram pode remover seguidores depois da entrega?",
+    "answer": "As contagens de seguidores nas plataformas sociais podem mudar com o tempo, inclusive quando contas são removidas, desativadas ou deixam de ser contabilizadas pela plataforma. Consulte os termos do serviço específico da NovaLikes para quaisquer condições de reposição aplicáveis, em vez de assumir que todo pedido inclui reposição."
+  },
+  {
+    "id": "faq-ig-safe-likes",
+    "category": "instagram",
+    "order": 7,
+    "question": "É seguro comprar curtidas no Instagram?",
+    "answer": "Curtidas no Instagram é um serviço de terceiros para um conteúdo público específico, então consulte os requisitos do serviço antes de pedir. A NovaLikes não exige a senha do Instagram para fazer um pedido de curtidas no Instagram."
+  },
+  {
+    "id": "faq-ig-likes-post",
+    "category": "instagram",
+    "order": 8,
+    "question": "Posso comprar curtidas no Instagram para um post específico?",
+    "answer": "Sim. Curtidas no Instagram se aplica a um conteúdo específico do Instagram, então envie as informações públicas do post ou Reel pedidas no checkout."
+  },
+  {
+    "id": "faq-ig-likes-reel",
+    "category": "instagram",
+    "order": 9,
+    "question": "Posso comprar curtidas no Instagram para um Reel?",
+    "answer": "Use o serviço de curtidas no Instagram quando o formato de Reel público for atendido pelos requisitos atuais do pedido. Sempre envie exatamente a URL pública do conteúdo pedida no checkout."
+  },
+  {
+    "id": "faq-ig-views-reels",
+    "category": "instagram",
+    "order": 10,
+    "question": "Posso comprar visualizações no Instagram para Reels?",
+    "answer": "A NovaLikes oferece um serviço de visualizações no Instagram para conteúdo público compatível. Confira a página do serviço e envie exatamente a URL pública do Reel ou do conteúdo pedida no checkout."
+  },
+  {
+    "id": "faq-ig-comments",
+    "category": "instagram",
+    "order": 11,
+    "question": "Posso comprar comentários para um post ou Reel no Instagram?",
+    "answer": "A NovaLikes oferece comentários no Instagram para conteúdo público compatível. Escolha um pacote disponível e envie a URL pública específica do post ou Reel pedida no checkout."
+  },
+  {
+    "id": "faq-ig-difference-metrics",
+    "category": "instagram",
+    "order": 12,
+    "question": "Qual é a diferença entre seguidores, curtidas, visualizações e comentários no Instagram?",
+    "answer": "Seguidores no Instagram se aplica ao perfil, enquanto curtidas, visualizações e comentários se aplicam a um conteúdo específico do Instagram, conforme o serviço escolhido. Escolha seguidores quando quiser uma métrica no nível do perfil e escolha curtidas, visualizações ou comentários quando o alvo for um post ou Reel particular."
+  },
+  {
+    "id": "faq-tt-safe-followers",
+    "category": "tiktok",
+    "order": 1,
+    "question": "É seguro comprar seguidores no TikTok?",
+    "answer": "Comprar seguidores no TikTok envolve o uso de um serviço de terceiros, então consulte os requisitos do serviço antes de fazer um pedido. A NovaLikes não exige a senha do TikTok para um pedido de seguidores no TikTok."
+  },
+  {
+    "id": "faq-tt-how-followers",
+    "category": "tiktok",
+    "order": 2,
+    "question": "Como funciona comprar seguidores no TikTok?",
+    "answer": "Escolha um pacote de seguidores no TikTok e envie as informações públicas do perfil pedidas no checkout. Seguidores é um serviço no nível do perfil, então o pedido deve apontar para o perfil pretendido no TikTok."
+  },
+  {
+    "id": "faq-tt-password",
+    "category": "tiktok",
+    "order": 3,
+    "question": "Preciso da senha do TikTok para comprar seguidores?",
+    "answer": "Não. Você não precisa informar a senha do TikTok ao pedir seguidores no TikTok na NovaLikes. Nunca envie dados de login no checkout ou pelo suporte."
+  },
+  {
+    "id": "faq-tt-public",
+    "category": "tiktok",
+    "order": 4,
+    "question": "Minha conta do TikTok precisa ser pública?",
+    "answer": "Se o serviço de TikTok escolhido exigir acesso público ao perfil ou ao vídeo, mantenha o conteúdo relevante acessível ao público enquanto o pedido estiver sendo processado."
+  },
+  {
+    "id": "faq-tt-likes-video",
+    "category": "tiktok",
+    "order": 5,
+    "question": "Posso comprar curtidas no TikTok para um vídeo específico?",
+    "answer": "Sim. Curtidas no TikTok é um serviço no nível do vídeo, então envie as informações públicas do vídeo pedidas no checkout, e não apenas o nome de usuário do perfil."
+  },
+  {
+    "id": "faq-tt-views-video",
+    "category": "tiktok",
+    "order": 6,
+    "question": "Posso comprar visualizações no TikTok para um vídeo específico?",
+    "answer": "Sim. Visualizações no TikTok se aplica a um vídeo público compatível específico. Envie exatamente a URL do vídeo pedida no checkout."
+  },
+  {
+    "id": "faq-tt-delete-video",
+    "category": "tiktok",
+    "order": 7,
+    "question": "O que acontece se eu excluir meu vídeo do TikTok depois de pedir?",
+    "answer": "Excluir ou restringir o vídeo do TikTok ligado a um pedido ativo pode impedir que o serviço seja processado ou concluído. Mantenha o vídeo enviado acessível ao público enquanto o pedido exigir acesso a ele."
+  },
+  {
+    "id": "faq-tt-difference",
+    "category": "tiktok",
+    "order": 8,
+    "question": "Qual é a diferença entre seguidores, curtidas e visualizações no TikTok?",
+    "answer": "Seguidores no TikTok se aplica ao perfil do criador, enquanto curtidas e visualizações no TikTok se aplicam a vídeos específicos. O serviço correto depende de você querer o perfil ou um vídeo individual."
+  },
+  {
+    "id": "faq-fb-buy-followers",
+    "category": "facebook",
+    "order": 1,
+    "question": "Dá para comprar seguidores para uma Página do Facebook?",
+    "answer": "A NovaLikes oferece um serviço de seguidores no Facebook para Páginas públicas compatíveis. O serviço se aplica à métrica de seguidores no nível da Página e exige as informações públicas da Página do Facebook pedidas no checkout."
+  },
+  {
+    "id": "faq-fb-password",
+    "category": "facebook",
+    "order": 2,
+    "question": "Preciso da senha do Facebook para comprar seguidores?",
+    "answer": "Não. Você não precisa informar a senha do Facebook ao pedir seguidores no Facebook na NovaLikes. Nunca envie dados de login do Facebook no checkout ou pelo suporte."
+  },
+  {
+    "id": "faq-fb-public-page",
+    "category": "facebook",
+    "order": 3,
+    "question": "Minha Página do Facebook precisa ser pública?",
+    "answer": "Se o serviço escolhido exigir acesso à sua Página do Facebook, a Página precisa permanecer acessível ao público enquanto o pedido estiver sendo processado."
+  },
+  {
+    "id": "faq-fb-followers-vs-page-likes",
+    "category": "facebook",
+    "order": 4,
+    "question": "Qual é a diferença entre seguidores e curtidas de Página no Facebook?",
+    "answer": "Seguidores no Facebook e curtidas de Página no Facebook são métricas no nível da Página, mas não são a mesma métrica. Seguidores se aplica à contagem de seguidores da Página, enquanto curtidas de Página se aplica à contagem de curtidas da Página."
+  },
+  {
+    "id": "faq-fb-page-likes-vs-post-likes",
+    "category": "facebook",
+    "order": 5,
+    "question": "Qual é a diferença entre curtidas de Página e curtidas de publicação no Facebook?",
+    "answer": "Curtidas de Página no Facebook se aplica à própria Página, enquanto curtidas de publicação no Facebook se aplica a uma publicação específica. Por isso, curtidas de Página exige informações no nível da Página, enquanto curtidas de publicação exige a URL pública da publicação individual."
+  },
+  {
+    "id": "faq-fb-url-followers",
+    "category": "facebook",
+    "order": 6,
+    "question": "Qual URL preciso para comprar seguidores no Facebook?",
+    "answer": "Use a URL pública da Página do Facebook pedida pelo serviço de seguidores no Facebook. Não envie a URL de uma publicação individual do Facebook ao pedir seguidores de Página."
+  },
+  {
+    "id": "faq-fb-url-page-likes",
+    "category": "facebook",
+    "order": 7,
+    "question": "Qual URL preciso para comprar curtidas de Página no Facebook?",
+    "answer": "Use a URL pública da Página do Facebook à qual você quer aplicar o serviço de curtidas de Página. Curtidas de Página no Facebook é um serviço no nível da Página, não no nível da publicação."
+  },
+  {
+    "id": "faq-fb-url-post-likes",
+    "category": "facebook",
+    "order": 8,
+    "question": "Qual URL preciso para comprar curtidas de publicação no Facebook?",
+    "answer": "Use a URL pública da publicação específica do Facebook à qual você quer aplicar o serviço de curtidas de publicação. Uma URL geral da Página do Facebook não é o alvo correto para este serviço."
+  },
+  {
+    "id": "faq-fb-page-url-for-post-likes",
+    "category": "facebook",
+    "order": 9,
+    "question": "Posso usar a URL de uma Página do Facebook ao comprar curtidas de publicação?",
+    "answer": "Não. Curtidas de publicação no Facebook se aplica a uma publicação individual, então você precisa enviar a URL pública da publicação específica do Facebook pedida no checkout."
+  },
+  {
+    "id": "faq-fb-post-likes-specific",
+    "category": "facebook",
+    "order": 10,
+    "question": "As curtidas de publicação no Facebook são aplicadas a uma publicação específica?",
+    "answer": "Sim. Curtidas de publicação no Facebook é um serviço no nível da publicação e se aplica à publicação pública específica enviada com o pedido."
+  },
+  {
+    "id": "faq-pr-payment-methods",
+    "category": "payments_refunds",
+    "order": 1,
+    "question": "Quais formas de pagamento a NovaLikes aceita?",
+    "answer": "As opções de pagamento disponíveis são exibidas no checkout, conforme os métodos habilitados no momento para a NovaLikes."
+  },
+  {
+    "id": "faq-pr-currency",
+    "category": "payments_refunds",
+    "order": 2,
+    "question": "Em qual moeda os preços da NovaLikes são exibidos?",
+    "answer": "Os preços dos pacotes da NovaLikes são exibidos na moeda padrão da loja configurada para o site."
+  },
+  {
+    "id": "faq-pr-payment-declined",
+    "category": "payments_refunds",
+    "order": 3,
+    "question": "Por que meu pagamento foi recusado?",
+    "answer": "Um pagamento pode ser recusado por vários motivos, inclusive informações informadas no checkout ou uma decisão do provedor de pagamento. Confira os dados que você inseriu e fale com o provedor de pagamento, se necessário; se o pagamento parecer ter sido aprovado, mas nenhum pedido foi criado, fale com o suporte da NovaLikes."
+  },
+  {
+    "id": "faq-pr-refund",
+    "category": "payments_refunds",
+    "order": 4,
+    "question": "Posso receber um reembolso?",
+    "answer": "A NovaLikes oferece garantia de reembolso em 30 dias em pedidos elegíveis. Os pedidos de reembolso devem ser feitos em até 30 dias da data original da compra e são analisados de acordo com a Política de reembolso e as circunstâncias do pedido."
+  },
+  {
+    "id": "faq-pr-refills",
+    "category": "payments_refunds",
+    "order": 5,
+    "question": "A NovaLikes oferece reposição?",
+    "answer": "A disponibilidade de reposição depende do serviço e do pacote que você compra. Consulte os termos exibidos para o serviço ou pacote escolhido para quaisquer condições de reposição aplicáveis."
+  },
+  {
+    "id": "faq-pr-drops",
+    "category": "payments_refunds",
+    "order": 6,
+    "question": "O que acontece se seguidores ou curtidas caírem depois da entrega?",
+    "answer": "As contagens de seguidores e curtidas nas plataformas sociais podem mudar com o tempo. Se o pacote escolhido incluir uma política de reposição aplicável, siga as condições exibidas para aquele serviço ou fale com o suporte da NovaLikes para ajuda com o pedido."
+  }
+]

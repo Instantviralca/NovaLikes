@@ -1,7 +1,6 @@
 ﻿/**
  * Privacy Policy production content — Document 13.04.
  * Body text lives here; React views render sections without hardcoding policy copy.
- * Provider-specific disclosures are conditional on verified configuration.
  */
 
 import {
@@ -12,19 +11,9 @@ import {
 } from '@/config/privacy';
 import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
+import { getDefaultCurrency } from '@/data/pricing/currencies';
+import { formatLegalDisplayDate } from '@/lib/legal/format-date';
 import type { PrivacyConfig, PrivacyPolicyContent, LegalPolicySection } from '@/types/legal';
-
-function formatDisplayDate(isoDate: string | undefined): string | undefined {
-  if (!isoDate) return undefined;
-  const parsed = new Date(`${isoDate}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return undefined;
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(parsed);
-}
 
 function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   const enabledPayments = getEnabledPaymentProviders();
@@ -32,8 +21,7 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   const enabledMarketing = getEnabledMarketingTools(config);
   const privacyEmail = getVerifiedPrivacyEmail(config);
   const operatingName = config.operatingName;
-  const domainHost = config.websiteDomain.replace(/^https?:\/\//, '');
-
+  const currency = getDefaultCurrency();
   const paymentNames = enabledPayments.map((provider) => provider.displayName);
   const analyticsNames = enabledAnalytics.map((provider) => provider.displayName);
   const marketingNames = enabledMarketing.map((tool) => tool.displayName);
@@ -41,18 +29,18 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   const paymentBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} does not store complete payment-card details on its own systems. Payment information is collected and processed by the payment providers that are currently enabled for checkout.`,
+      text: `${operatingName} processes payments through the payment method(s) enabled at checkout. Card details are entered on a third-party payment collector used for Card Payment checkout. ${operatingName} does not store complete payment-card numbers on its own systems.`,
     },
   ];
 
   if (paymentNames.length > 0) {
     paymentBlocks.push({
       type: 'paragraph',
-      text: `Currently enabled payment providers: ${paymentNames.join(', ')}.`,
+      text: `Currently enabled checkout payment method(s): ${paymentNames.join(', ')}.`,
     });
     paymentBlocks.push({
       type: 'paragraph',
-      text: `${operatingName} may receive payment tokens, transaction identifiers, payer email where provided by the processor, billing details the processor returns, and payment status information needed for accounting, fraud prevention, refunds, and dispute management. Complete card numbers are handled by the payment provider according to that provider’s privacy practices.`,
+      text: `${operatingName} may receive order identifiers, line-item details, payment status, and related transaction information needed to confirm orders, support customers, account for payments, and handle disputes. Complete card numbers are handled by the payment collector according to that provider’s practices.`,
     });
   } else {
     paymentBlocks.push({
@@ -61,72 +49,40 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
     });
   }
 
+  paymentBlocks.push({
+    type: 'paragraph',
+    text: `Package prices on ${operatingName} are shown in ${currency.code} (${currency.label}) unless another currency display is configured for a specific experience.`,
+  });
+
   const cookieBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: 'NovaLikes uses technologies that are necessary to operate the website and may use additional analytics or marketing technologies only when they are actually enabled in configuration.',
-    },
-    {
-      type: 'subheading',
-      id: 'essential-technologies',
-      text: 'Essential Technologies',
-    },
-    {
-      type: 'paragraph',
-      text: 'Essential technologies may be used for cart state, checkout functionality, security, session continuity, fraud prevention, and storing cookie preferences when a preference tool is available.',
+      text: `${operatingName} uses cookies and similar technologies that are necessary to operate the website, cart, checkout, and related security features. A short summary is provided here; full details are in the [Cookie Policy](${routes.cookiePolicy}).`,
     },
   ];
 
   if (analyticsNames.length > 0) {
-    cookieBlocks.push(
-      {
-        type: 'subheading',
-        id: 'analytics-technologies',
-        text: 'Analytics Technologies',
-      },
-      {
-        type: 'paragraph',
-        text: `Analytics tools currently enabled: ${analyticsNames.join(', ')}. These tools may help NovaLikes understand page visits, navigation patterns, device categories, conversion events, and website performance.`,
-      },
-    );
+    cookieBlocks.push({
+      type: 'paragraph',
+      text: `Analytics tools currently enabled in configuration: ${analyticsNames.join(', ')}.`,
+    });
   } else {
-    cookieBlocks.push(
-      {
-        type: 'subheading',
-        id: 'analytics-technologies',
-        text: 'Analytics Technologies',
-      },
-      {
-        type: 'paragraph',
-        text: 'No named analytics providers are currently enabled in NovaLikes configuration. This policy will be updated if analytics tools are introduced.',
-      },
-    );
+    cookieBlocks.push({
+      type: 'paragraph',
+      text: 'No named analytics providers are currently enabled in NovaLikes configuration. Optional analytics adapters may exist in the codebase for future use, but they are not treated as active until they are enabled in deployment configuration.',
+    });
   }
 
   if (marketingNames.length > 0) {
-    cookieBlocks.push(
-      {
-        type: 'subheading',
-        id: 'marketing-technologies',
-        text: 'Marketing Technologies',
-      },
-      {
-        type: 'paragraph',
-        text: `Marketing tools currently enabled: ${marketingNames.join(', ')}.`,
-      },
-    );
+    cookieBlocks.push({
+      type: 'paragraph',
+      text: `Marketing tools currently enabled: ${marketingNames.join(', ')}.`,
+    });
   } else {
-    cookieBlocks.push(
-      {
-        type: 'subheading',
-        id: 'marketing-technologies',
-        text: 'Marketing Technologies',
-      },
-      {
-        type: 'paragraph',
-        text: 'No marketing pixels or advertising tools are currently enabled in NovaLikes configuration.',
-      },
-    );
+    cookieBlocks.push({
+      type: 'paragraph',
+      text: 'No advertising pixels or remarketing tools are currently enabled in NovaLikes configuration.',
+    });
   }
 
   if (config.cookiePreferenceToolEnabled && config.cookiePreferenceHref) {
@@ -137,82 +93,14 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
   } else {
     cookieBlocks.push({
       type: 'paragraph',
-      text: 'A dedicated cookie preference tool is not currently configured on NovaLikes.com. Browser controls can still be used to manage optional cookies, and this Privacy Policy will be updated if a preference tool is added.',
-    });
-  }
-
-  if (config.cookiePolicyHref) {
-    const cookiePolicyUrl = config.cookiePolicyHref.startsWith('http')
-      ? config.cookiePolicyHref
-      : `${domainHost}${config.cookiePolicyHref}`;
-    cookieBlocks.push({
-      type: 'paragraph',
-      text: `Additional cookie details are published in the Cookie Policy at ${cookiePolicyUrl}.`,
-    });
-  }
-
-  const internationalBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: 'Some service providers that NovaLikes uses to operate the website, process payments, send email, or provide infrastructure may process personal information outside your province or country. Information processed in another jurisdiction may be subject to the laws of that jurisdiction.',
-    },
-  ];
-
-  if (config.hostingLocation) {
-    internationalBlocks.push({
-      type: 'paragraph',
-      text: `Hosting location currently configured: ${config.hostingLocation}.`,
-    });
-  } else {
-    internationalBlocks.push({
-      type: 'paragraph',
-      text: 'A specific hosting location has not been published in NovaLikes configuration. NovaLikes does not claim region-specific storage unless and until that arrangement is verified.',
-    });
-  }
-
-  if (config.emailProvider) {
-    internationalBlocks.push({
-      type: 'paragraph',
-      text: `Transactional email delivery currently uses: ${config.emailProvider}.`,
-    });
-  }
-
-  if (paymentNames.length > 0) {
-    internationalBlocks.push({
-      type: 'paragraph',
-      text: `Payment processing for enabled providers (${paymentNames.join(', ')}) may occur on those providers’ systems, which can include infrastructure in other regions. Review each provider’s privacy policy for details.`,
-    });
-  }
-
-  const retentionBlocks: LegalPolicySection['blocks'] = [
-    {
-      type: 'paragraph',
-      text: `${operatingName} retains personal information only for as long as reasonably necessary for the identified purposes and applicable legal obligations. When information is no longer needed, it should be securely deleted, anonymized, or otherwise disposed of according to NovaLikes’s retention practices.`,
-    },
-  ];
-
-  if (config.retentionScheduleVerified && config.retentionCategories.length > 0) {
-    retentionBlocks.push({
-      type: 'paragraph',
-      text: 'Verified retention categories currently documented:',
-    });
-    retentionBlocks.push({
-      type: 'list',
-      items: config.retentionCategories.map((entry) =>
-        entry.period ? `${entry.label}: ${entry.period}` : entry.label,
-      ),
-    });
-  } else {
-    retentionBlocks.push({
-      type: 'paragraph',
-      text: 'Specific retention periods for carts, support records, orders, analytics, and security logs are not published on this page until a verified retention schedule is configured. NovaLikes will not invent retention timeframes for public display.',
+      text: 'A dedicated cookie preference banner or preference center is not currently configured. You can still use browser controls to manage cookies.',
     });
   }
 
   const childrenBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `${operatingName} services are not directed to children below the minimum age permitted by applicable law and the terms of Instagram, TikTok, Facebook, YouTube, and payment providers.`,
+      text: `${operatingName} services and free tools are not directed to children. Customers must be able to form a binding contract under applicable law and must meet any age requirements of Instagram, TikTok, Facebook, and payment providers that apply to them.`,
     },
   ];
 
@@ -222,406 +110,317 @@ function buildSections(config: PrivacyConfig): LegalPolicySection[] {
       text: `The current configured minimum customer age is ${config.minimumCustomerAge}.`,
     });
   } else {
+    // TODO: CONFIRM numeric minimum customer age after legal review
     childrenBlocks.push({
       type: 'paragraph',
-      text: 'A specific numeric age threshold will be published only after legal review and alignment with applicable privacy law, payment-provider requirements, and platform terms. NovaLikes does not select an arbitrary age for this policy.',
+      text: 'A specific numeric minimum age is not published on this page until it is confirmed after legal review and aligned with the [Terms and Conditions](/terms-and-conditions).',
     });
   }
 
   childrenBlocks.push({
     type: 'paragraph',
-    text: `If NovaLikes learns that it collected personal information from a child without valid authorization, it will take appropriate steps to delete or otherwise address that information.`,
+    text: `If ${operatingName} learns that it collected personal information from a child without appropriate authorization, it will take reasonable steps to delete or otherwise address that information.`,
   });
 
   const contactBlocks: LegalPolicySection['blocks'] = [
     {
       type: 'paragraph',
-      text: `If you have a question, access request, correction request, or complaint about ${operatingName}’s privacy practices, contact the person responsible for privacy using the details listed below. We will review the request, verify identity where necessary, and respond according to applicable law and our internal privacy procedures.`,
+      text: `For privacy questions, access requests, correction requests, deletion requests, or other privacy-related inquiries, contact ${operatingName} through the [Contact](${routes.contact}) page.`,
     },
+  ];
+
+  if (privacyEmail) {
+    contactBlocks.push({
+      type: 'paragraph',
+      text: `You may also email ${privacyEmail}.`,
+    });
+  }
+
+  contactBlocks.push(
     {
       type: 'paragraph',
       text: `Operating name: ${config.operatingName}`,
     },
     {
       type: 'paragraph',
-      text: `Legal / business name on file: ${config.legalBusinessName}`,
-    },
-    {
-      type: 'paragraph',
       text: `Website: ${config.websiteDomain}`,
     },
-  ];
-
-  if (config.privacyContactRole || config.privacyContactName) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Privacy contact: ${[config.privacyContactRole, config.privacyContactName].filter(Boolean).join(' — ')}`,
-    });
-  }
-
-  if (privacyEmail) {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `Privacy email: ${privacyEmail}`,
-    });
-  } else {
-    contactBlocks.push({
-      type: 'paragraph',
-      text: `A dedicated privacy email address has not been published in configuration. Until that address is verified, privacy questions may be submitted through the Contact page at ${domainHost}${routes.contact}. Do not treat placeholder or example email addresses as privacy contacts.`,
-    });
-  }
+  );
 
   if (config.mailingAddress) {
     contactBlocks.push({
       type: 'paragraph',
       text: `Mailing address: ${config.mailingAddress}`,
     });
+  } else {
+    // TODO: CONFIRM mailing / registered office address
+    contactBlocks.push({
+      type: 'paragraph',
+      text: 'A registered mailing address has not been published in NovaLikes configuration. Use the Contact page for privacy requests until a verified address is added.',
+    });
   }
-
-  contactBlocks.push({
-    type: 'paragraph',
-    text: 'If you are not satisfied with NovaLikes’s response, you may have the right to escalate a privacy complaint to the applicable privacy regulator in your jurisdiction.',
-  });
 
   return [
     {
-      id: 'scope',
-      anchor: 'scope',
-      title: 'Scope',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `This Privacy Policy applies to personal information handled through ${domainHost}, including service and pricing pages, cart and checkout, order configuration, order confirmation, order tracking, contact and support forms, email communications, administrative order processing, and analytics or security tools that are actually enabled.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'This policy does not automatically apply to independent third-party websites, social media platforms, or payment providers that publish their own privacy policies.',
-        },
-      ],
-    },
-    {
       id: 'information-we-collect',
       anchor: 'information-we-collect',
-      title: 'Information We Collect',
+      title: '1. Information We Collect',
       blocks: [
         {
+          type: 'paragraph',
+          text: `${operatingName} collects information needed to operate the website, process orders, provide free tools, and respond to support requests. The categories below reflect current NovaLikes flows.`,
+        },
+        {
           type: 'subheading',
-          id: 'information-customers-provide',
-          text: 'Information Customers Provide',
+          id: 'order-information',
+          text: 'Order information',
         },
         {
           type: 'paragraph',
-          text: 'Depending on how you use NovaLikes, you may provide:',
+          text: 'When you place an order, NovaLikes may collect:',
         },
         {
           type: 'list',
           items: [
-            'Full name',
-            'Email address',
-            'Order ID',
-            'Customer support messages',
+            'Email address (required for checkout and order tracking)',
+            'Optional first name and last name if you provide them',
+            'Selected service and package details',
+            'Public Instagram, TikTok, or Facebook username, profile URL, Page URL, post URL, Reel URL, or video URL required for the selected service',
             'Optional order notes',
-            'Coupon code',
-            'Selected service and package',
-            'Public social media username',
-            'Public profile, page, post, Reel, channel, or video URL',
-            'Custom comment text where a supported package requires it',
-            'Consent records',
-            'Terms acceptance records',
+            'Order reference and status information',
+            'Optional marketing preference if you opt in at checkout',
           ],
         },
         {
           type: 'subheading',
-          id: 'transaction-and-order-information',
-          text: 'Transaction and Order Information',
+          id: 'payment-information-collected',
+          text: 'Payment information',
         },
         {
-          type: 'list',
-          items: [
-            'Package quantity',
-            'Price and currency',
-            'Discounts',
-            'Payment status',
-            'Order status',
-            'Timestamps',
-            'Order history',
-            'Customer-safe status timeline',
-            'Internal administrative notes, which are not exposed publicly',
-          ],
+          type: 'paragraph',
+          text: 'Payment-card details are handled by the enabled third-party Card Payment collector during checkout. NovaLikes receives payment-related status and order accounting information rather than storing full card numbers.',
+        },
+        {
+          type: 'subheading',
+          id: 'support-information',
+          text: 'Support information',
+        },
+        {
+          type: 'paragraph',
+          text: 'If you contact support, NovaLikes may collect the full name, email address, subject, optional order ID, message content, and browser user-agent information submitted with the contact form.',
         },
         {
           type: 'subheading',
           id: 'technical-information',
-          text: 'Technical Information',
+          text: 'Technical information',
         },
         {
           type: 'paragraph',
-          text: 'Where actually collected through site operation, security, or enabled tools, NovaLikes may process technical information such as IP address, browser type, device type, operating system, referral source, pages visited, approximate location derived from IP, session identifiers, security and error logs, and cookie preferences.',
+          text: 'Depending on how you use the site, NovaLikes may process limited technical information such as:',
+        },
+        {
+          type: 'list',
+          items: [
+            'IP address used for free-tool rate limiting and abuse prevention',
+            'Browser or device user-agent information associated with support requests or tool requests',
+            'Cookies and similar storage used for cart, checkout continuity, and security (see the Cookie Policy)',
+            'Server and application logs needed to operate and troubleshoot the website',
+          ],
         },
         {
           type: 'subheading',
-          id: 'information-not-requested',
-          text: 'Information Not Requested',
+          id: 'free-tools-information',
+          text: 'Free tools',
         },
         {
           type: 'paragraph',
-          text: 'NovaLikes does not request Instagram, TikTok, Facebook, YouTube, or Google account passwords, private direct messages, or social media authentication codes.',
+          text: 'NovaLikes free tools process the public usernames or public content URLs you submit so the tool can attempt to return publicly available profile, media, or count information. Free tools do not require social media passwords and are not the same as paid NovaLikes services.',
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not request access to private social media accounts for the services and tools described on the site.`,
         },
       ],
     },
     {
-      id: 'how-information-is-collected',
-      anchor: 'how-information-is-collected',
-      title: 'How Information Is Collected',
+      id: 'how-we-use-information',
+      anchor: 'how-we-use-information',
+      title: '2. How We Use Information',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Information may be collected:',
+          text: `${operatingName} uses collected information to:`,
         },
         {
           type: 'list',
           items: [
-            'Directly from forms completed by the customer',
-            'During cart and checkout',
-            'Through order tracking lookups',
-            'Through customer support communications',
-            'Automatically through cookies, logs, analytics, and security technologies that are actually enabled',
-            'From payment and infrastructure providers where necessary to confirm transactions, prevent fraud, or operate the service',
+            'Process orders and provide the selected social media services',
+            'Provide free-tool functionality you request',
+            'Process payments through enabled payment methods',
+            'Provide customer support and respond to inquiries',
+            'Enable order-status tracking with the order reference and checkout email',
+            'Maintain website security and detect misuse or fraud',
+            'Troubleshoot technical issues and improve site functionality',
+            'Send transactional messages related to orders or support where email delivery is configured',
+            'Honor optional marketing preferences when you opt in',
+            'Comply with legal, accounting, and dispute-related obligations',
           ],
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not use this Privacy Policy to authorize selling personal information to data brokers.`,
         },
       ],
     },
     {
-      id: 'purposes',
-      anchor: 'purposes',
-      title: 'Purposes for Collection and Use',
+      id: 'social-media-information',
+      anchor: 'social-media-information',
+      title: '3. Social Media Information',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} may use personal information for the following real and necessary purposes:`,
-        },
-        {
-          type: 'list',
-          items: [
-            'Providing requested services',
-            'Processing and confirming orders',
-            'Associating selected packages with the correct public social media destination',
-            'Communicating order updates',
-            'Providing order tracking',
-            'Responding to customer questions',
-            'Processing payments through enabled payment providers',
-            'Applying valid coupons and calculating totals',
-            'Preventing duplicate, fraudulent, abusive, or unauthorized activity',
-            'Troubleshooting technical issues',
-            'Maintaining security logs',
-            'Improving website usability and performance',
-            'Meeting legal, accounting, tax, dispute-resolution, and recordkeeping obligations',
-            'Sending marketing communications only where legally permitted and consented to',
-          ],
+          text: `${operatingName} services may require public social media information so the selected service can be applied to the intended profile, Page, post, Reel, or video.`,
         },
         {
           type: 'paragraph',
-          text: 'NovaLikes does not use personal information for materially new purposes without assessing whether new consent or notice is required.',
+          text: 'Depending on the service, this can include an Instagram username or public profile/content URL, a TikTok username or public profile/video URL, a public Facebook Page URL, or a public Facebook post URL.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Customers should never provide social media passwords. NovaLikes does not require customers to provide their Instagram, TikTok, or Facebook passwords for the services described on the site.',
         },
       ],
     },
     {
-      id: 'consent',
-      anchor: 'consent',
-      title: 'Consent and Privacy Choices',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'NovaLikes seeks meaningful consent appropriate to the sensitivity of the information and the purpose of collection. Customers should be able to:',
-        },
-        {
-          type: 'list',
-          items: [
-            'Decide whether to receive optional marketing emails',
-            'Manage non-essential cookies where a consent tool is required or implemented',
-            'Withdraw consent for optional uses, subject to legal and contractual restrictions',
-            'Request information about privacy practices',
-            'Request access to or correction of personal information',
-          ],
-        },
-        {
-          type: 'paragraph',
-          text: 'Withdrawing consent may affect services that cannot be provided without the required information.',
-        },
-      ],
-    },
-    {
-      id: 'sharing',
-      anchor: 'sharing',
-      title: 'How Information Is Shared',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `${operatingName} discloses personal information only as necessary to operate the service. Depending on what is actually configured, recipients may include:`,
-        },
-        {
-          type: 'list',
-          items: [
-            ...(paymentNames.length > 0
-              ? [`Payment processors currently enabled: ${paymentNames.join(', ')}`]
-              : ['Payment processors, when enabled for checkout']),
-            'Hosting and cloud infrastructure providers',
-            config.emailProvider
-              ? `Email delivery providers (${config.emailProvider})`
-              : 'Email delivery providers, when configured',
-            ...(analyticsNames.length > 0
-              ? [`Analytics providers currently enabled: ${analyticsNames.join(', ')}`]
-              : []),
-            ...(marketingNames.length > 0
-              ? [`Marketing tools currently enabled: ${marketingNames.join(', ')}`]
-              : []),
-            'Fraud-prevention and security providers',
-            'Customer support tools',
-            'Professional advisers',
-            'Government, regulators, courts, or law enforcement where legally required',
-            'A buyer, investor, or successor during a genuine business transaction, subject to appropriate safeguards',
-          ],
-        },
-        {
-          type: 'paragraph',
-          text: `${operatingName} does not sell personal information. If that practice ever changes, this policy and the related consent process would be updated first.`,
-        },
-      ],
-    },
-    {
-      id: 'payment-information',
-      anchor: 'payment-information',
-      title: 'Payment Information',
+      id: 'payment-processing',
+      anchor: 'payment-processing',
+      title: '4. Payment Processing',
       blocks: paymentBlocks,
     },
     {
-      id: 'cookies-analytics',
-      anchor: 'cookies-analytics',
-      title: 'Cookies, Analytics, and Similar Technologies',
+      id: 'cookies-and-similar-technologies',
+      anchor: 'cookies-and-similar-technologies',
+      title: '5. Cookies and Similar Technologies',
       blocks: cookieBlocks,
     },
     {
-      id: 'international-processing',
-      anchor: 'international-processing',
-      title: 'International Processing',
-      blocks: internationalBlocks,
-    },
-    {
-      id: 'retention',
-      anchor: 'retention',
-      title: 'Retention',
-      blocks: retentionBlocks,
-    },
-    {
-      id: 'security-safeguards',
-      anchor: 'security-safeguards',
-      title: 'Security Safeguards',
+      id: 'how-we-share-information',
+      anchor: 'how-we-share-information',
+      title: '6. How We Share Information',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} uses safeguards appropriate to the sensitivity and volume of personal information. Depending on the system and context, safeguards may include HTTPS, access controls, strong administrator authentication, role restrictions, secure password storage, encryption where appropriate, server-side payment verification, protected environment variables, audit logs, backups, rate limiting, monitoring, vendor due diligence, staff confidentiality practices, and secure deletion.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'No website can guarantee absolute security. NovaLikes does not claim that personal information is completely secure, 100% secure, or impossible to breach. NovaLikes uses reasonable safeguards and continues to improve its practices over time.',
-        },
-      ],
-    },
-    {
-      id: 'privacy-incidents',
-      anchor: 'privacy-incidents',
-      title: 'Privacy Incidents',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: `${operatingName} maintains a privacy incident process that includes containing the incident, investigating what happened, assessing sensitivity and possible harm, recording relevant facts and decisions, notifying affected individuals and regulators where legally required, correcting weaknesses, and preserving required breach records.`,
-        },
-        {
-          type: 'paragraph',
-          text: 'If you suspect a privacy or security concern related to NovaLikes, use the privacy contact details in the Contact and Complaints section below, or submit a message through the Contact page.',
-        },
-      ],
-    },
-    {
-      id: 'access-and-correction',
-      anchor: 'access-and-correction',
-      title: 'Access and Correction',
-      blocks: [
-        {
-          type: 'paragraph',
-          text: 'Subject to applicable law and valid exceptions, individuals may request:',
+          text: `${operatingName} shares information only as needed to operate the business and fulfill requests, including with:`,
         },
         {
           type: 'list',
           items: [
-            'Access to personal information held about them',
-            'Information about how it has been used or disclosed',
-            'Correction of inaccurate or incomplete information',
-            'Withdrawal of consent for optional uses',
-            'Information about the privacy complaint process',
+            'Payment processors / payment collectors used for checkout',
+            'Hosting and infrastructure providers that run the website and related systems',
+            'Technical service providers used for email delivery, security, or similar operations when configured',
+            'Professional advisers or authorities when required by law or to protect legal rights',
           ],
         },
         {
           type: 'paragraph',
-          text: 'NovaLikes verifies identity before responding. Requests should be submitted through the verified privacy contact listed in this policy when available, or through the Contact page until that contact is published. NovaLikes does not promise a specific response timeframe on this page unless a verified operational commitment is configured.',
+          text: `Based on current NovaLikes business policy as reflected in this site, ${operatingName} does not sell personal information.`,
+        },
+        {
+          type: 'paragraph',
+          text: `${operatingName} does not claim that information is never shared with any third party, because payment processing and infrastructure providers necessarily receive limited information to perform their roles.`,
         },
       ],
     },
     {
-      id: 'marketing-communications',
-      anchor: 'marketing-communications',
-      title: 'Marketing Communications',
+      id: 'data-retention',
+      anchor: 'data-retention',
+      title: '7. Data Retention',
       blocks: [
         {
           type: 'paragraph',
-          text: 'Marketing email is sent only when legally permitted. Each marketing message should include accurate sender identification, a valid contact method, and a functioning unsubscribe mechanism.',
+          text: `${operatingName} retains information for as long as reasonably necessary for orders, support, records, security, accounting, and legal obligations, or as otherwise required by applicable law.`,
         },
         {
           type: 'paragraph',
-          text: 'Transactional order emails remain separate from optional promotional consent where appropriate. NovaLikes honours unsubscribe requests and suppression records when marketing email is used.',
+          // TODO: CONFIRM verified retention schedule periods
+          text: 'Specific retention periods are not published on this page until a verified retention schedule is configured. NovaLikes will not invent retention timeframes for public display.',
+        },
+      ],
+    },
+    {
+      id: 'data-security',
+      anchor: 'data-security',
+      title: '8. Data Security',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'We use reasonable administrative and technical measures intended to protect information handled through NovaLikes.',
+        },
+        {
+          type: 'paragraph',
+          text: 'No method of transmission or storage is completely secure. NovaLikes does not claim that systems are unhackable or that information can never be compromised.',
+        },
+      ],
+    },
+    {
+      id: 'your-privacy-rights',
+      anchor: 'your-privacy-rights',
+      title: '9. Your Privacy Rights',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Privacy rights can depend on your location and applicable law. Depending on those laws, you may be able to request access, correction, deletion, or other rights available under applicable law.',
+        },
+        {
+          type: 'paragraph',
+          text: `To make a privacy request, contact ${operatingName} through the [Contact](${routes.contact}) page${privacyEmail ? ` or email ${privacyEmail}` : ''}. We may need to verify your identity before responding.`,
+        },
+        {
+          type: 'paragraph',
+          text: 'This section does not claim that every privacy right applies worldwide.',
         },
       ],
     },
     {
       id: 'childrens-privacy',
       anchor: 'childrens-privacy',
-      title: 'Children’s Privacy',
+      title: '10. Children’s Privacy',
       blocks: childrenBlocks,
     },
     {
-      id: 'third-party-links',
-      anchor: 'third-party-links',
-      title: 'Third-Party Links and Platforms',
+      id: 'third-party-platforms',
+      anchor: 'third-party-platforms',
+      title: '11. Third-Party Platforms and Websites',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} pages may link to Instagram, TikTok, Facebook, YouTube, payment providers, and other external websites. Those third parties control their own privacy practices.`,
+          text: `${operatingName} interacts with or links to third-party platforms such as Instagram, TikTok, and Facebook. Those platforms have their own terms, privacy policies, and practices.`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} is not responsible for independent third-party privacy policies, content, or security. Review the relevant third-party policies before providing information directly to those services.`,
+          text: `${operatingName} is not responsible for the privacy practices of third-party platforms or external websites linked from NovaLikes.`,
         },
       ],
     },
     {
-      id: 'policy-changes',
-      anchor: 'policy-changes',
-      title: 'Policy Changes',
+      id: 'changes-to-this-privacy-policy',
+      anchor: 'changes-to-this-privacy-policy',
+      title: '12. Changes to This Privacy Policy',
       blocks: [
         {
           type: 'paragraph',
-          text: `${operatingName} may update this Privacy Policy when data practices change, new tools or providers are introduced, legal requirements change, new products or features launch, or business operations change.`,
+          text: `${operatingName} may update this Privacy Policy from time to time. The Last Updated date at the top of this page will reflect material revisions.`,
         },
         {
           type: 'paragraph',
-          text: 'The revised policy will display a new Last Updated date when that date is configured for publication. For material changes, NovaLikes will consider a more prominent notice or renewed consent where required.',
+          text: 'Continued use of the website after an update means you should review the revised policy for the current terms.',
         },
       ],
     },
     {
-      id: 'contact-and-complaints',
-      anchor: 'contact-and-complaints',
-      title: 'Contact and Complaints',
+      id: 'contact-us',
+      anchor: 'contact-us',
+      title: '13. Contact Us',
       blocks: contactBlocks,
     },
   ];
@@ -636,13 +435,13 @@ export function getPrivacyPolicyContent(
     seo: {
       title: 'Privacy Policy | NovaLikes',
       description:
-        'Read how NovaLikes collects, uses, protects, retains, and shares personal information when customers browse the website, contact support, or place an order.',
+        'Read the NovaLikes Privacy Policy to learn how information is collected, used, processed and protected when you use our website and services.',
     },
     breadcrumbLabel: 'Privacy Policy',
     header: {
       title: 'Privacy Policy',
       intro:
-        'This Privacy Policy explains how NovaLikes collects, uses, discloses, retains, and protects personal information when you browse NovaLikes.com, contact our team, place an order, use order tracking, or otherwise interact with our services.',
+        'This Privacy Policy explains how NovaLikes collects, uses, stores, and handles information when you visit our website, place an order, use our free tools, contact support, or otherwise interact with our services.',
     },
     tocTitle: 'On this page',
     sections: buildSections(config),
@@ -654,9 +453,7 @@ export function getPrivacyPolicyDates(config: PrivacyConfig = privacyConfig): {
   lastUpdatedLabel?: string;
 } {
   return {
-    effectiveDateLabel: formatDisplayDate(config.effectiveDate),
-    lastUpdatedLabel: formatDisplayDate(config.lastUpdatedDate),
+    effectiveDateLabel: formatLegalDisplayDate(config.effectiveDate),
+    lastUpdatedLabel: formatLegalDisplayDate(config.lastUpdatedDate),
   };
 }
-
-export { privacyConfig };

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "faq-ig-followers-password",
+    "question": "De quoi ai-je besoin pour acheter des abonnés Instagram ?",
+    "answer": "Vous avez besoin du nom d’utilisateur Instagram public du profil et du forfait d’abonnés que vous souhaitez commander. Votre mot de passe Instagram n’est pas requis."
+  },
+  {
+    "id": "faq-ig-followers-delivery-speed",
+    "question": "Quel forfait d’abonnés Instagram dois-je choisir ?",
+    "answer": "Choisissez selon le nombre d’abonnés que vous souhaitez ajouter à votre profil et le tarif qui vous convient. Les volumes disponibles et les prix actuels figurent dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-ig-followers-gradual-delivery",
+    "question": "Dois-je communiquer mon mot de passe Instagram ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Instagram pour une commande d’abonnés Instagram. Vérifiez que le nom d’utilisateur public fourni est correct."
+  },
+  {
+    "id": "faq-ig-followers-refill",
+    "question": "Combien de temps prend une commande d’abonnés Instagram ?",
+    "answer": "Le délai de traitement peut varier selon la taille du forfait et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que de compter sur un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-ig-followers-private",
+    "question": "Puis-je suivre ma commande d’abonnés Instagram ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-ig-followers-track",
+    "question": "Que se passe-t-il si je saisis le mauvais nom d’utilisateur Instagram ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez toujours le nom d’utilisateur avant le paiement, car les informations de compte transmises servent à traiter la commande."
+  },
+  {
+    "id": "faq-ig-followers-business",
+    "question": "L’achat d’abonnés augmentera-t-il aussi mes likes ou mes vues Instagram ?",
+    "answer": "Pas automatiquement. Les abonnés, likes, vues et commentaires sont des services distincts. Un forfait d’abonnés Instagram porte sur le nombre d’abonnés du profil sélectionné."
+  },
+  {
+    "id": "faq-ig-followers-money-back",
+    "question": "Mon profil Instagram doit-il être public ?",
+    "answer": "Laissez le profil accessible publiquement lorsque le service choisi l’exige pendant le traitement de la commande. Si vous n’êtes pas sûr de la configuration de votre compte, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-ig-likes-links",
+    "question": "De quoi ai-je besoin pour acheter des likes Instagram ?",
+    "answer": "Vous avez besoin de l’URL publique du post ou du Reel Instagram et du forfait de likes que vous souhaitez commander. Votre mot de passe Instagram n’est pas requis."
+  },
+  {
+    "id": "faq-ig-likes-reel",
+    "question": "Quel forfait de likes Instagram dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de likes souhaité pour le post ou le Reel sélectionné et le tarif qui vous convient. Les volumes disponibles et les prix actuels figurent dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-ig-likes-password",
+    "question": "Dois-je communiquer mon mot de passe Instagram ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Instagram pour une commande de likes Instagram. Vous devez seulement indiquer l’URL publique correcte du contenu."
+  },
+  {
+    "id": "faq-ig-likes-delivery-speed",
+    "question": "Combien de temps prend une commande de likes Instagram ?",
+    "answer": "Le délai de traitement peut varier selon la taille du forfait et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-ig-likes-track",
+    "question": "Puis-je suivre ma commande de likes Instagram ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-ig-likes-gradual-delivery",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL Instagram ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL avant le paiement, car le post ou le Reel transmis sert à traiter la commande."
+  },
+  {
+    "id": "faq-ig-likes-refill",
+    "question": "L’achat de likes Instagram augmentera-t-il aussi mes abonnés ou mes vues ?",
+    "answer": "Pas automatiquement. Les likes, abonnés, vues et commentaires sont des services distincts. Un forfait de likes Instagram s’applique au nombre de likes du post ou du Reel sélectionné."
+  },
+  {
+    "id": "faq-ig-likes-money-back",
+    "question": "Le post ou le Reel Instagram doit-il être public ?",
+    "answer": "Laissez le contenu transmis accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre contenu puisse être utilisé, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-ig-views-need",
+    "question": "De quoi ai-je besoin pour acheter des vues Instagram ?",
+    "answer": "Vous avez besoin de l’URL publique du Reel ou de la vidéo Instagram et du forfait de vues que vous souhaitez commander. Votre mot de passe Instagram n’est pas requis."
+  },
+  {
+    "id": "faq-ig-views-package",
+    "question": "Quel forfait de vues Instagram dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de vues souhaité pour le Reel ou la vidéo sélectionné et le tarif qui vous convient. Les volumes disponibles et les prix actuels figurent dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-ig-views-password",
+    "question": "Dois-je communiquer mon mot de passe Instagram ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Instagram pour une commande de vues Instagram. Vous devez seulement indiquer l’URL publique correcte du contenu vidéo."
+  },
+  {
+    "id": "faq-ig-views-how-long",
+    "question": "Combien de temps prend une commande de vues Instagram ?",
+    "answer": "Le délai de traitement peut varier selon la taille du forfait et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-ig-views-track",
+    "question": "Puis-je suivre ma commande de vues Instagram ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-ig-views-wrong-url",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL de vidéo Instagram ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL avant le paiement, car le Reel ou la vidéo transmis sert à traiter la commande."
+  },
+  {
+    "id": "faq-ig-views-other-metrics",
+    "question": "L’achat de vues Instagram augmentera-t-il aussi mes likes ou mes abonnés ?",
+    "answer": "Pas automatiquement. Les vues, likes, abonnés et commentaires sont des services distincts. Un forfait de vues Instagram s’applique au nombre de vues du Reel ou de la vidéo sélectionné."
+  },
+  {
+    "id": "faq-ig-views-public",
+    "question": "Le Reel ou la vidéo Instagram doit-il être public ?",
+    "answer": "Laissez le contenu transmis accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre vidéo puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-ig-comments-need",
+    "question": "De quoi ai-je besoin pour acheter des commentaires Instagram ?",
+    "answer": "Vous avez besoin de l’URL publique du post ou du Reel Instagram et du forfait de commentaires que vous souhaitez commander. Votre mot de passe Instagram n’est pas requis."
+  },
+  {
+    "id": "faq-ig-comments-package",
+    "question": "Quel forfait de commentaires Instagram dois-je choisir ?",
+    "answer": "Comparez les types de forfaits disponibles, les volumes de commentaires et les prix actuels, puis choisissez l’option qui correspond à ce que vous souhaitez pour le post ou le Reel sélectionné."
+  },
+  {
+    "id": "faq-ig-comments-password",
+    "question": "Dois-je communiquer mon mot de passe Instagram ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Instagram pour une commande de commentaires Instagram. Vous devez seulement indiquer l’URL publique correcte du contenu."
+  },
+  {
+    "id": "faq-ig-comments-how-long",
+    "question": "Combien de temps prend une commande de commentaires Instagram ?",
+    "answer": "Le délai de traitement peut varier selon le forfait choisi, le volume et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque commande."
+  },
+  {
+    "id": "faq-ig-comments-track",
+    "question": "Puis-je suivre ma commande de commentaires Instagram ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-ig-comments-wrong-url",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL Instagram ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL avant le paiement, car le post ou le Reel transmis sert à traiter la commande."
+  },
+  {
+    "id": "faq-ig-comments-other-metrics",
+    "question": "L’achat de commentaires Instagram augmentera-t-il aussi mes likes, mes vues ou mes abonnés ?",
+    "answer": "Pas automatiquement. Les commentaires, likes, vues et abonnés sont des services distincts. Un forfait de commentaires Instagram s’applique au post ou au Reel sélectionné."
+  },
+  {
+    "id": "faq-ig-comments-public",
+    "question": "Le post ou le Reel Instagram doit-il être public ?",
+    "answer": "Laissez le contenu transmis accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre contenu puisse être utilisé, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-tt-followers-need",
+    "question": "De quoi ai-je besoin pour acheter des abonnés TikTok ?",
+    "answer": "Vous avez besoin du nom d’utilisateur TikTok public du profil et du forfait d’abonnés que vous souhaitez commander. Votre mot de passe TikTok n’est pas requis."
+  },
+  {
+    "id": "faq-tt-followers-package",
+    "question": "Quel forfait d’abonnés TikTok dois-je choisir ?",
+    "answer": "Choisissez selon le nombre d’abonnés souhaité pour le profil sélectionné et le tarif qui vous convient. Les volumes disponibles et les prix actuels figurent dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-tt-followers-password",
+    "question": "Dois-je communiquer mon mot de passe TikTok ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe TikTok pour une commande d’abonnés. Vous devez seulement indiquer le nom d’utilisateur TikTok public correct."
+  },
+  {
+    "id": "faq-tt-followers-how-long",
+    "question": "Combien de temps prend une commande d’abonnés TikTok ?",
+    "answer": "Le délai de traitement peut varier selon le volume d’abonnés et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-tt-followers-track",
+    "question": "Puis-je suivre ma commande d’abonnés TikTok ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-tt-followers-wrong-username",
+    "question": "Que se passe-t-il si je saisis le mauvais nom d’utilisateur TikTok ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement le nom d’utilisateur avant le paiement, car le profil transmis sert à traiter la commande."
+  },
+  {
+    "id": "faq-tt-followers-other-metrics",
+    "question": "L’achat d’abonnés TikTok augmentera-t-il aussi mes likes ou mes vues ?",
+    "answer": "Pas automatiquement. Les abonnés, likes et vues sont des services distincts. Un forfait d’abonnés TikTok s’applique au nombre d’abonnés du profil sélectionné."
+  },
+  {
+    "id": "faq-tt-followers-public",
+    "question": "Mon profil TikTok doit-il être public ?",
+    "answer": "Laissez le profil transmis accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre profil puisse être utilisé, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-tt-likes-need",
+    "question": "De quoi ai-je besoin pour acheter des likes TikTok ?",
+    "answer": "Vous avez besoin du lien public de la vidéo TikTok et du forfait de likes que vous souhaitez commander. Votre mot de passe TikTok n’est pas requis."
+  },
+  {
+    "id": "faq-tt-likes-package",
+    "question": "Quel forfait de likes TikTok dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de likes souhaité pour la vidéo sélectionnée et le tarif qui vous convient. Les volumes disponibles et les prix actuels figurent dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-tt-likes-password",
+    "question": "Dois-je communiquer mon mot de passe TikTok ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe TikTok pour une commande de likes. Vous devez seulement indiquer le lien public correct de la vidéo TikTok."
+  },
+  {
+    "id": "faq-tt-likes-how-long",
+    "question": "Combien de temps prend une commande de likes TikTok ?",
+    "answer": "Le délai de traitement peut varier selon le volume de likes et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-tt-likes-track",
+    "question": "Puis-je suivre ma commande de likes TikTok ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-tt-likes-wrong-url",
+    "question": "Que se passe-t-il si je soumets le mauvais lien de vidéo TikTok ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement le lien de la vidéo avant le paiement, car la vidéo transmise sert à traiter la commande."
+  },
+  {
+    "id": "faq-tt-likes-other-metrics",
+    "question": "L’achat de likes TikTok augmentera-t-il aussi mes abonnés ou mes vues ?",
+    "answer": "Pas automatiquement. Les likes, abonnés et vues sont des services distincts. Un forfait de likes TikTok s’applique au nombre de likes de la vidéo sélectionnée."
+  },
+  {
+    "id": "faq-tt-likes-public",
+    "question": "Ma vidéo TikTok doit-elle être publique ?",
+    "answer": "Laissez la vidéo transmise accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre vidéo puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-tt-views-need",
+    "question": "De quoi ai-je besoin pour acheter des vues TikTok ?",
+    "answer": "Vous avez besoin du lien public de la vidéo TikTok et du forfait de vues que vous souhaitez commander. Votre mot de passe TikTok n’est pas requis."
+  },
+  {
+    "id": "faq-tt-views-package",
+    "question": "Quel forfait de vues TikTok dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de vues souhaité pour la vidéo sélectionnée, l’option de forfait disponible et le tarif qui vous convient. Consultez les options et les prix actuels dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-tt-views-password",
+    "question": "Dois-je communiquer mon mot de passe TikTok ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe TikTok pour une commande de vues. Vous devez seulement indiquer le lien public correct de la vidéo TikTok."
+  },
+  {
+    "id": "faq-tt-views-how-long",
+    "question": "Combien de temps prend une commande de vues TikTok ?",
+    "answer": "Le délai de traitement peut varier selon le volume de vues, l’option de forfait choisie et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-tt-views-track",
+    "question": "Puis-je suivre ma commande de vues TikTok ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-tt-views-wrong-url",
+    "question": "Que se passe-t-il si je soumets le mauvais lien de vidéo TikTok ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement le lien de la vidéo avant le paiement, car la vidéo transmise sert à traiter la commande."
+  },
+  {
+    "id": "faq-tt-views-other-metrics",
+    "question": "L’achat de vues TikTok augmentera-t-il aussi mes abonnés ou mes likes ?",
+    "answer": "Pas automatiquement. Les vues, abonnés et likes sont des services distincts. Un forfait de vues TikTok s’applique au nombre de vues de la vidéo sélectionnée."
+  },
+  {
+    "id": "faq-tt-views-public",
+    "question": "Ma vidéo TikTok doit-elle être publique ?",
+    "answer": "Laissez la vidéo transmise accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre vidéo puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-fb-followers-need",
+    "question": "De quoi ai-je besoin pour acheter des abonnés Facebook ?",
+    "answer": "Vous avez besoin de l’URL publique de la Page Facebook et du forfait d’abonnés que vous souhaitez commander. Votre mot de passe Facebook n’est pas requis."
+  },
+  {
+    "id": "faq-fb-followers-package",
+    "question": "Quel forfait d’abonnés Facebook dois-je choisir ?",
+    "answer": "Choisissez selon le nombre d’abonnés souhaité pour la Page sélectionnée et le tarif qui vous convient. Consultez les volumes et les prix actuels dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-fb-followers-password",
+    "question": "Dois-je communiquer mon mot de passe Facebook ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Facebook pour une commande d’abonnés. Vous devez seulement indiquer l’URL publique correcte de la Page Facebook."
+  },
+  {
+    "id": "faq-fb-followers-how-long",
+    "question": "Combien de temps prend une commande d’abonnés Facebook ?",
+    "answer": "Le délai de traitement peut varier selon le volume d’abonnés et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-fb-followers-track",
+    "question": "Puis-je suivre ma commande d’abonnés Facebook ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-fb-followers-wrong-url",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL de Page Facebook ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL de la Page avant le paiement, car la Page transmise sert à traiter la commande."
+  },
+  {
+    "id": "faq-fb-followers-other-metrics",
+    "question": "L’achat d’abonnés Facebook augmentera-t-il aussi les J’aime de Page ou les J’aime de publication ?",
+    "answer": "Pas automatiquement. Les abonnés, les J’aime de Page et les J’aime de publication sont des indicateurs et des services distincts. Un forfait d’abonnés Facebook s’applique au nombre d’abonnés de la Page sélectionnée."
+  },
+  {
+    "id": "faq-fb-followers-public",
+    "question": "Ma Page Facebook doit-elle être publique ?",
+    "answer": "Laissez la Page transmise accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre Page puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-fb-page-likes-need",
+    "question": "De quoi ai-je besoin pour acheter des J’aime de Page Facebook ?",
+    "answer": "Vous avez besoin de l’URL publique de la Page Facebook et du forfait de J’aime de Page que vous souhaitez commander. Votre mot de passe Facebook n’est pas requis."
+  },
+  {
+    "id": "faq-fb-page-likes-package",
+    "question": "Quel forfait de J’aime de Page Facebook dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de J’aime de Page souhaité pour la Page sélectionnée et le tarif qui vous convient. Consultez les volumes et les prix actuels dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-fb-page-likes-password",
+    "question": "Dois-je communiquer mon mot de passe Facebook ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Facebook pour une commande de J’aime de Page. Vous devez seulement indiquer l’URL publique correcte de la Page Facebook."
+  },
+  {
+    "id": "faq-fb-page-likes-how-long",
+    "question": "Combien de temps prend une commande de J’aime de Page Facebook ?",
+    "answer": "Le délai de traitement peut varier selon le volume de J’aime de Page et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-fb-page-likes-track",
+    "question": "Puis-je suivre ma commande de J’aime de Page Facebook ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-fb-page-likes-wrong-url",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL de Page Facebook ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL de la Page avant le paiement, car la Page transmise sert à traiter la commande."
+  },
+  {
+    "id": "faq-fb-page-likes-other-metrics",
+    "question": "L’achat de J’aime de Page Facebook augmentera-t-il aussi les abonnés ou les J’aime de publication ?",
+    "answer": "Pas automatiquement. Les J’aime de Page, les abonnés et les J’aime de publication sont des indicateurs et des services distincts. Un forfait de J’aime de Page Facebook s’applique au nombre de J’aime de Page de la Page sélectionnée."
+  },
+  {
+    "id": "faq-fb-page-likes-public",
+    "question": "Ma Page Facebook doit-elle être publique ?",
+    "answer": "Laissez la Page transmise accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre Page puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  },
+  {
+    "id": "faq-fb-post-likes-need",
+    "question": "De quoi ai-je besoin pour acheter des J’aime de publication Facebook ?",
+    "answer": "Vous avez besoin de l’URL publique de la publication Facebook et du forfait de J’aime de publication que vous souhaitez commander. Votre mot de passe Facebook n’est pas requis."
+  },
+  {
+    "id": "faq-fb-post-likes-package",
+    "question": "Quel forfait de J’aime de publication Facebook dois-je choisir ?",
+    "answer": "Choisissez selon le nombre de J’aime de publication souhaité pour la publication sélectionnée et le tarif qui vous convient. Consultez les volumes et les prix actuels dans la section tarifaire ci-dessus."
+  },
+  {
+    "id": "faq-fb-post-likes-password",
+    "question": "Dois-je communiquer mon mot de passe Facebook ?",
+    "answer": "Non. NovaLikes n’exige pas votre mot de passe Facebook pour une commande de J’aime de publication. Vous devez seulement indiquer l’URL publique correcte de la publication Facebook."
+  },
+  {
+    "id": "faq-fb-post-likes-how-long",
+    "question": "Combien de temps prend une commande de J’aime de publication Facebook ?",
+    "answer": "Le délai de traitement peut varier selon le volume de J’aime de publication et les conditions de commande du moment. Consultez le statut de votre commande pour les mises à jour disponibles, plutôt que d’attendre un délai de livraison unique pour chaque forfait."
+  },
+  {
+    "id": "faq-fb-post-likes-track",
+    "question": "Puis-je suivre ma commande de J’aime de publication Facebook ?",
+    "answer": "Oui. Utilisez l’option de suivi de commande NovaLikes après le paiement pour consulter les informations de statut disponibles concernant votre achat."
+  },
+  {
+    "id": "faq-fb-post-likes-wrong-url",
+    "question": "Que se passe-t-il si je soumets la mauvaise URL de publication Facebook ?",
+    "answer": "Contactez l’assistance dès que possible avec les détails de votre commande. Vérifiez soigneusement l’URL de la publication avant le paiement, car la publication transmise sert à traiter la commande."
+  },
+  {
+    "id": "faq-fb-post-likes-other-metrics",
+    "question": "L’achat de J’aime de publication Facebook augmentera-t-il aussi les abonnés ou les J’aime de Page ?",
+    "answer": "Pas automatiquement. Les J’aime de publication, les abonnés et les J’aime de Page sont des indicateurs et des services distincts. Un forfait de J’aime de publication Facebook s’applique au nombre de likes de la publication précise transmise."
+  },
+  {
+    "id": "faq-fb-post-likes-public",
+    "question": "Ma publication Facebook doit-elle être publique ?",
+    "answer": "Laissez la publication transmise accessible publiquement lorsque c’est requis pendant le traitement de la commande. Si vous n’êtes pas sûr que votre publication puisse être utilisée, consultez les détails du service ou contactez l’assistance avant de commander."
+  }
+]

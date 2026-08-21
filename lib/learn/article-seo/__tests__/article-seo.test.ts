@@ -91,7 +91,7 @@ function makeSeo(overrides: Partial<ArticleSeoRecord> = {}): ArticleSeoRecord {
       height: 630,
     },
     authorId: 'author-1',
-    schemaType: 'Article',
+    schemaType: 'BlogPosting',
     faqIds: [],
     active: true,
     published: true,
@@ -176,6 +176,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
     expect(metadata.alternates?.canonical).toBe(
       'https://novalikes.com/learn/youtube-growth-guide',
     );
+    expect(metadata.alternates?.languages).toBeUndefined();
     expect(validateArticleCanonical('youtube-growth-guide', '/learn')).toEqual(
       expect.arrayContaining([
         expect.objectContaining({ code: 'canonical_not_self' }),
@@ -202,9 +203,9 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
     expect(twitter).not.toHaveProperty('site');
   });
 
-  it('builds Article schema with Person author and Organization publisher', () => {
+  it('builds BlogPosting schema with Person author and Organization publisher @id', () => {
     const schemas = buildArticleSchema(makeSeo());
-    const article = schemas.find((item) => item['@type'] === 'Article');
+    const article = schemas.find((item) => item['@type'] === 'BlogPosting');
     expect(article).toBeDefined();
     expect(article?.author).toMatchObject({
       '@type': 'Person',
@@ -213,7 +214,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
     expect(JSON.stringify(article?.author)).not.toContain('email');
     expect(article?.publisher).toMatchObject({
       '@type': 'Organization',
-      name: expect.any(String),
+      '@id': 'https://novalikes.com/#organization',
     });
     expect(article).not.toHaveProperty('aggregateRating');
   });
@@ -260,12 +261,12 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
     expect(forced.robots).toMatchObject({ index: false, follow: false });
   });
 
-  it('excludes future-scheduled articles from indexability', () => {
-    const future = makeSeo({
+  it('indexes published articles even if a historical scheduledFor date remains', () => {
+    const published = makeSeo({
       scheduledFor: '2099-01-01T00:00:00.000Z',
     });
-    const metadata = buildArticleMetadata(future);
-    expect(metadata.robots).toMatchObject({ index: false, follow: false });
+    const metadata = buildArticleMetadata(published);
+    expect(metadata.robots).toMatchObject({ index: true, follow: true });
   });
 
   it('validates published and modified date rules', () => {

@@ -2,6 +2,7 @@
  * Server-side checkout pricing — never trust client totals.
  */
 
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getOrderFieldsForServiceSlug } from '@/data/order-fields';
 import {
   normalizeOrderConfigurationValues,
@@ -41,7 +42,7 @@ export function validateCheckoutPricing(input: {
 
   for (const item of input.items) {
     const pkg = findPackage(item.packageId);
-    if (!pkg || !pkg.active) {
+    if (!pkg || !pkg.active || !isApprovedServiceSlug(pkg.serviceSlug)) {
       throw new Error(`Invalid or inactive package: ${item.packageId}`);
     }
     if (pkg.currency !== currency && item.currency !== pkg.currency) {

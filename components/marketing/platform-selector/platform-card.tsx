@@ -1,5 +1,3 @@
-'use client';
-
 import {
   Card,
   CardContent,
@@ -32,7 +30,7 @@ export function PlatformCard({
     <HoverLift className="h-full">
       <Card
         className={cn(
-          'group flex h-full flex-col border-border bg-white transition-[border-color,box-shadow,transform] duration-200 hover:border-[color-mix(in_srgb,var(--brand-primary)_35%,var(--border-subtle))] hover:shadow-[0_18px_40px_-28px_rgba(28,25,23,0.35)]',
+          'group flex h-full flex-col bg-white transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5',
           className,
         )}
       >

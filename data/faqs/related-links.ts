@@ -3,7 +3,7 @@
  */
 
 import { routes, learnArticlePath } from '@/config/routes';
-import { getServiceBySlug } from '@/data/services';
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 
 const STATIC_INTERNAL_PATHS = new Set<string>([
   routes.home,
@@ -22,11 +22,9 @@ const STATIC_INTERNAL_PATHS = new Set<string>([
   routes.disclaimer,
   '/learn/instagram',
   '/learn/tiktok',
-  '/learn/youtube',
   '/learn/facebook',
   '/buy-instagram-followers',
   '/buy-tiktok-followers',
-  '/buy-youtube-subscribers',
   '/buy-facebook-followers',
 ]);
 
@@ -42,7 +40,7 @@ export function isAllowedFaqInternalHref(href: string): boolean {
 
   if (pathOnly.startsWith('/buy-')) {
     const slug = pathOnly.slice(1);
-    return Boolean(getServiceBySlug(slug));
+    return isApprovedServiceSlug(slug);
   }
 
   if (pathOnly.startsWith(`${routes.learn}/`)) {

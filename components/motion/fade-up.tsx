@@ -1,55 +1,29 @@
-'use client';
+import type { HTMLAttributes, ReactNode } from 'react';
 
-import { motion, useReducedMotion, type HTMLMotionProps } from 'framer-motion';
-
-import { theme } from '@/config/theme';
+import { fadeDelayStyle } from '@/components/motion/fade-delay-style';
 import { cn } from '@/lib/utils';
 
-type FadeUpProps = HTMLMotionProps<'div'> & {
+type FadeUpProps = HTMLAttributes<HTMLDivElement> & {
   delay?: number;
-  /** Animate on mount (for above-the-fold content). Default: in-view. */
+  /** Animate on mount (for above-the-fold content). Default: fade + translate. */
   immediate?: boolean;
+  children?: ReactNode;
 };
 
 /**
- * Lightweight fade-up. Never leaves above-the-fold content stuck at opacity 0.
+ * CSS fade-up. Never leaves above-the-fold content stuck at opacity 0.
  */
 export function FadeUp({
   className,
   delay = 0,
   immediate = false,
+  style,
   ...props
 }: FadeUpProps) {
-  const reduceMotion = useReducedMotion();
-  const transition = {
-    duration: theme.motion.durationBase,
-    delay,
-    ease: theme.motion.easeOut,
-  };
-
-  if (reduceMotion) {
-    return <div className={cn(className)} {...(props as React.HTMLAttributes<HTMLDivElement>)} />;
-  }
-
-  if (immediate) {
-    return (
-      <motion.div
-        className={cn(className)}
-        initial={{ opacity: 1, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={transition}
-        {...props}
-      />
-    );
-  }
-
   return (
-    <motion.div
-      className={cn(className)}
-      initial={{ opacity: 0, y: 12 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.35, margin: '0px 0px -10% 0px' }}
-      transition={transition}
+    <div
+      className={cn(immediate ? 'nl-fade-up-immediate' : 'nl-fade-up', className)}
+      style={fadeDelayStyle(delay, style)}
       {...props}
     />
   );

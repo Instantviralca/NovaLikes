@@ -1,0 +1,761 @@
+{
+  "hero": {
+    "eyebrow": "CRECIMIENTO EN REDES SOCIALES PARA INSTAGRAM, TIKTOK Y FACEBOOK",
+    "title": "Haz crecer tu presencia en redes sociales con NovaLikes",
+    "description": "Compra seguidores, likes, views y comentarios para Instagram, TikTok y Facebook. NovaLikes te muestra opciones de paquete claras para cada servicio, para que elijas lo que encaja con tu cuenta y hagas el pedido sin compartir tu contraseña. Selecciona un servicio, elige un paquete, introduce los datos públicos del perfil o del contenido y completa tu pedido online.",
+    "primaryCta": {
+      "label": "Ver servicios",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "Cómo funciona",
+      "href": "#how-it-works"
+    },
+    "trustFeatures": [
+      {
+        "id": "password",
+        "line1": "Sin contraseña",
+        "line2": "necesaria",
+        "icon": "shield"
+      },
+      {
+        "id": "pricing",
+        "line1": "Precios",
+        "line2": "claros",
+        "icon": "tag"
+      },
+      {
+        "id": "tracking",
+        "line1": "Seguimiento",
+        "line2": "del pedido",
+        "icon": "truck"
+      }
+    ],
+    "visual": {
+      "src": "/assets/images/homepage/hero-social-growth.webp",
+      "alt": "Ilustración de crecimiento en redes sociales de NovaLikes con interacción en Instagram, TikTok y Facebook",
+      "width": 1024,
+      "height": 682
+    }
+  },
+  "platformSelector": {
+    "id": "platform-selector",
+    "eyebrow": "Elige tu plataforma",
+    "title": "Elige tu plataforma",
+    "description": "Empieza por la plataforma que quieres hacer crecer. Cada una tiene sus propios servicios y opciones de paquete, para que vayas directo a lo que necesitas.",
+    "trustItems": [
+      {
+        "id": "packages",
+        "label": "Opciones de paquete claras",
+        "icon": "shield"
+      },
+      {
+        "id": "password",
+        "label": "Sin contraseña necesaria",
+        "icon": "shield"
+      },
+      {
+        "id": "refund",
+        "label": "Garantía de reembolso de 30 días en pedidos elegibles",
+        "icon": "shield"
+      }
+    ],
+    "socialProof": {
+      "text": "Compara los servicios de NovaLikes para Instagram, TikTok y Facebook",
+      "href": "#services-overview"
+    },
+    "platforms": [
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "description": "Seguidores, likes, views y comentarios para perfiles y contenido de Instagram.",
+        "href": "#instagram-services",
+        "ctaLabel": "Ver Instagram",
+        "badge": "Servicios de Instagram",
+        "metric": {
+          "value": "Perfil",
+          "label": "Seguidores"
+        },
+        "tags": [
+          {
+            "label": "Crecimiento del perfil",
+            "href": "/buy-instagram-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Interacción en publicaciones",
+            "href": "/buy-instagram-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Views en Reels",
+            "href": "/buy-instagram-views",
+            "icon": "play"
+          },
+          {
+            "label": "Comentarios",
+            "href": "/buy-instagram-comments",
+            "icon": "comment"
+          }
+        ]
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "description": "Seguidores, likes y views para cuentas y vídeos de TikTok.",
+        "href": "#tiktok-services",
+        "ctaLabel": "Ver TikTok",
+        "metric": {
+          "value": "Vídeo",
+          "label": "Views"
+        },
+        "tags": [
+          {
+            "label": "Crecimiento de la cuenta",
+            "href": "/buy-tiktok-followers",
+            "icon": "trend"
+          },
+          {
+            "label": "Likes en vídeos",
+            "href": "/buy-tiktok-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Views en vídeos",
+            "href": "/buy-tiktok-views",
+            "icon": "eye"
+          },
+          {
+            "label": "Más interacción",
+            "href": "#tiktok-services",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "description": "Seguidores, Me gusta de Página y Me gusta de publicaciones para Páginas y publicaciones públicas de Facebook.",
+        "href": "#facebook-services",
+        "ctaLabel": "Ver Facebook",
+        "metric": {
+          "value": "Página",
+          "label": "Me gusta"
+        },
+        "tags": [
+          {
+            "label": "Crecimiento de la Página",
+            "href": "/buy-facebook-page-likes",
+            "icon": "users"
+          },
+          {
+            "label": "Me gusta de publicaciones",
+            "href": "/buy-facebook-post-likes",
+            "icon": "thumb"
+          },
+          {
+            "label": "Seguidores del perfil",
+            "href": "/buy-facebook-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Más alcance",
+            "href": "#facebook-services",
+            "icon": "reach"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesOverview": {
+    "id": "services-overview",
+    "eyebrow": "Todos los servicios",
+    "title": "Todos los servicios de NovaLikes",
+    "description": "Elige el servicio que coincide con lo que quieres hacer crecer. NovaLikes ofrece seguidores, likes, views, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Abre cualquier servicio para comparar tamaños de paquete y precios.",
+    "trustNote": "Compara servicios y opciones de paquete",
+    "features": [
+      {
+        "id": "users",
+        "label": "Servicios por plataforma",
+        "icon": "users"
+      },
+      {
+        "id": "delivery",
+        "label": "Precios claros por paquete",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Atención al cliente",
+        "icon": "headset"
+      },
+      {
+        "id": "payments",
+        "label": "Pagos con tarjeta seguros",
+        "icon": "shield"
+      }
+    ]
+  },
+  "platformGroupTitles": {
+    "instagram": {
+      "id": "instagram-services",
+      "title": "Crecimiento en Instagram",
+      "description": "Elige entre seguidores, likes, views y comentarios según lo que quieras mejorar en Instagram."
+    },
+    "tiktok": {
+      "id": "tiktok-services",
+      "title": "Crecimiento en TikTok",
+      "description": "Elige seguidores, likes o views según lo que quieras añadir a tu cuenta o a tus vídeos de TikTok."
+    },
+    "facebook": {
+      "id": "facebook-services",
+      "title": "Crecimiento en Facebook",
+      "description": "Elige seguidores, Me gusta de Página o Me gusta de publicaciones según la parte de tu presencia en Facebook en la que quieras trabajar."
+    }
+  },
+  "why": {
+    "id": "why-novalikes",
+    "title": "¿Por qué elegir NovaLikes?",
+    "description": "Pedir servicios de redes sociales no debería dejarte dudas sobre el precio, la información que necesitas o el estado de tu pedido. NovaLikes deja estos detalles claros desde el principio.",
+    "points": [
+      {
+        "title": "Opciones de paquete claras",
+        "body": "Consulta las cantidades y los precios disponibles antes de hacer un pedido, para saber exactamente qué paquete estás eligiendo."
+      },
+      {
+        "title": "Sin contraseña necesaria",
+        "body": "Solo pedimos los datos públicos del perfil, Página, publicación o vídeo necesarios para el servicio que encargas. La contraseña de tu cuenta permanece privada."
+      },
+      {
+        "title": "Seguimiento del pedido",
+        "body": "Usa los datos de tu pedido para consultar el estado de tu compra después del pago, en lugar de preguntarte qué está pasando con él."
+      },
+      {
+        "title": "Ayuda cuando la necesitas",
+        "body": "Si tienes una pregunta sobre un servicio o un pedido existente, puedes contactar con NovaLikes para recibir soporte."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "how-it-works",
+    "title": "Cómo funciona NovaLikes",
+    "description": "Hacer un pedido son unos pocos pasos. Eliges lo que necesitas, introduces los datos públicos requeridos y completas la compra.",
+    "steps": [
+      {
+        "title": "Elige un servicio",
+        "body": "Selecciona Instagram, TikTok o Facebook, y después elige los seguidores, likes, views, comentarios, Me gusta de Página o Me gusta de publicaciones que necesitas."
+      },
+      {
+        "title": "Elige un paquete",
+        "body": "Compara las cantidades y los precios disponibles, y selecciona el paquete que quieres pedir."
+      },
+      {
+        "title": "Introduce los datos necesarios",
+        "body": "Facilita el nombre de usuario, perfil, Página, publicación o enlace de vídeo público que se pide para ese servicio. No se requiere contraseña."
+      },
+      {
+        "title": "Completa tu pedido",
+        "body": "Continúa con el pago y realiza tu pedido. Después puedes usar la opción de seguimiento para consultar su estado."
+      }
+    ]
+  },
+  "guarantees": {
+    "id": "guarantees",
+    "title": "Sabe qué esperar antes de pedir",
+    "description": "Antes de hacer un pedido, conviene saber qué información se requiere, cómo funcionan los precios y dónde encontrar ayuda si la necesitas. NovaLikes mantiene estos detalles disponibles antes del pago.",
+    "items": [
+      {
+        "title": "Tu contraseña permanece privada",
+        "body": "No necesitas compartir la contraseña de tus redes sociales. Los pedidos usan los datos públicos del perfil o del contenido requeridos para el servicio seleccionado."
+      },
+      {
+        "title": "Los precios se muestran antes del pago",
+        "body": "Las cantidades y los precios de los paquetes se muestran antes de pedir, para que puedas revisar tu elección antes de continuar."
+      },
+      {
+        "title": "Las políticas están disponibles para consultar",
+        "body": "Puedes revisar las condiciones de reembolso, privacidad y servicio aplicables antes de realizar tu pedido."
+      },
+      {
+        "title": "Hay soporte disponible",
+        "body": "¿Tienes una pregunta antes de pedir o necesitas ayuda con una compra existente? Contacta con NovaLikes e incluye los datos del pedido cuando corresponda."
+      }
+    ]
+  },
+  "beforeYouBuy": {
+    "id": "before-you-buy",
+    "title": "Antes de hacer un pedido",
+    "description": "Una revisión rápida antes de pedir puede ayudar a evitar retrasos o problemas de entrega. Asegúrate de haber seleccionado el servicio correcto y de haber introducido los datos públicos correctos de la cuenta o del contenido que quieres usar.",
+    "items": [
+      {
+        "question": "Elige el servicio adecuado",
+        "answer": "Comprueba si necesitas seguidores, likes, views, comentarios, Me gusta de Página o Me gusta de publicaciones antes de seleccionar un paquete."
+      },
+      {
+        "question": "Revisa tu perfil o contenido",
+        "answer": "Asegúrate de que el perfil, Página, publicación, Reel o vídeo para el que pides sea de acceso público cuando el servicio seleccionado lo requiera."
+      },
+      {
+        "question": "Introduce los datos correctos",
+        "answer": "Vuelve a comprobar el nombre de usuario o la URL antes del pago. La información que facilites indica dónde debe entregarse el pedido."
+      },
+      {
+        "question": "Revisa tu paquete",
+        "answer": "Comprueba el servicio, la cantidad y el precio antes de completar tu compra."
+      }
+    ]
+  },
+  "faq": {
+    "id": "homepage-faq",
+    "title": "Preguntas frecuentes",
+    "description": "Aquí tienes respuestas a preguntas habituales sobre cómo elegir un servicio de NovaLikes y hacer un pedido.",
+    "items": [
+      {
+        "question": "¿Qué servicios de redes sociales puedo pedir en NovaLikes?",
+        "answer": "NovaLikes ofrece seguidores, likes, views, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Las opciones disponibles dependen de la plataforma que elijas."
+      },
+      {
+        "question": "¿Necesito dar a NovaLikes la contraseña de mis redes sociales?",
+        "answer": "No. Solo facilitas el nombre de usuario, perfil, Página, publicación o datos de vídeo públicos requeridos para el servicio que pides."
+      },
+      {
+        "question": "¿Cómo elijo el paquete adecuado?",
+        "answer": "Empieza por elegir la plataforma y el servicio que necesitas. Después puedes comparar las cantidades y los precios disponibles en esa página de servicio antes de seleccionar un paquete."
+      },
+      {
+        "question": "¿Qué información necesito para hacer un pedido?",
+        "answer": "Depende del servicio. Puede pedirte un nombre de usuario público, URL de perfil, URL de Página, enlace de publicación, Reel o URL de vídeo para enviar el pedido al lugar correcto."
+      },
+      {
+        "question": "¿Puedo consultar mi pedido después del pago?",
+        "answer": "Sí. NovaLikes ofrece una opción de seguimiento del pedido que puedes usar para consultar el estado de tu compra."
+      },
+      {
+        "question": "¿Puedo contactar con NovaLikes si tengo una pregunta sobre mi pedido?",
+        "answer": "Sí. Puedes contactar con NovaLikes para ayuda con un servicio o un pedido existente. Incluye los datos de tu pedido cuando contactes con soporte sobre una compra."
+      }
+    ]
+  },
+  "reviews": {
+    "id": "homepage-reviews",
+    "title": "Qué dicen los clientes sobre NovaLikes",
+    "description": "Lee opiniones de clientes que han usado NovaLikes para servicios de redes sociales. Sus experiencias pueden ayudarte a entender mejor el proceso de pedido antes de realizar el tuyo.",
+    "cta": {
+      "label": "Leer más opiniones",
+      "href": "/reviews"
+    }
+  },
+  "finalCta": {
+    "id": "home-final-cta",
+    "eyebrow": "Crece más rápido con NovaLikes",
+    "title": "¿Listo para hacer crecer tu presencia en redes?",
+    "description": "Elige la plataforma y el servicio que encajan con lo que buscas. Compara los paquetes disponibles, revisa los detalles y haz tu pedido cuando estés listo.",
+    "primaryCta": {
+      "label": "Ver servicios",
+      "href": "#services-overview"
+    },
+    "secondaryCta": {
+      "label": "Seguir un pedido",
+      "href": "/track-order"
+    },
+    "trustItems": [
+      {
+        "id": "secure",
+        "label": "Sin contraseña necesaria",
+        "icon": "shield"
+      },
+      {
+        "id": "delivery",
+        "label": "Precios claros por paquete",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Seguimiento del pedido",
+        "icon": "headset"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "ig-followers",
+      "platform": "instagram",
+      "slug": "buy-instagram-followers",
+      "href": "/buy-instagram-followers",
+      "name": "Seguidores de Instagram",
+      "cardBlurb": "Paquetes de seguidores para tu perfil público de Instagram.",
+      "commercialLabel": "COMPRAR SEGUIDORES DE INSTAGRAM",
+      "title": "Paquetes de seguidores de Instagram",
+      "intro": "Compra seguidores de Instagram cuando quieras añadir más seguidores a tu perfil sin compartir tu contraseña. Elige entre los tamaños de paquete disponibles, introduce tu nombre de usuario público de Instagram y realiza tu pedido online.",
+      "points": [
+        {
+          "title": "Recuento de seguidores del perfil",
+          "text": "Los seguidores se añaden al perfil público de Instagram indicado en el pedido."
+        },
+        {
+          "title": "Para cuentas de distintos tamaños",
+          "text": "Elige una cantidad de seguidores que tenga sentido para el perfil en el que estás trabajando."
+        },
+        {
+          "title": "Centrado en tu perfil",
+          "text": "Este servicio es para tu recuento de seguidores, no para los likes, views o comentarios de publicaciones concretas."
+        },
+        {
+          "title": "Otros servicios de Instagram",
+          "text": "Likes, views y comentarios están disponibles por separado cuando quieres trabajar en contenido concreto."
+        }
+      ],
+      "cta": {
+        "label": "Ver seguidores de Instagram",
+        "href": "/buy-instagram-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-followers-visual.webp",
+        "alt": "Perfil de Instagram con indicadores de seguidores y audiencia"
+      },
+      "tone": "rose"
+    },
+    {
+      "id": "ig-likes",
+      "platform": "instagram",
+      "slug": "buy-instagram-likes",
+      "href": "/buy-instagram-likes",
+      "name": "Likes de Instagram",
+      "cardBlurb": "Paquetes de likes para publicaciones y Reels de Instagram elegibles.",
+      "commercialLabel": "COMPRAR LIKES DE INSTAGRAM",
+      "title": "Paquetes de likes de Instagram",
+      "intro": "Compra likes de Instagram para una publicación o Reel cuando quieras más interacción visible en ese contenido. Elige un paquete, facilita la URL pública de la publicación o Reel y realiza tu pedido sin dar a NovaLikes acceso a tu cuenta de Instagram.",
+      "points": [
+        {
+          "title": "Para publicaciones y Reels",
+          "text": "Elige la publicación o Reel público de Instagram donde quieres que se entreguen los likes."
+        },
+        {
+          "title": "Específico del contenido",
+          "text": "Los likes se aplican al contenido seleccionado, no al recuento de seguidores de tu perfil."
+        },
+        {
+          "title": "Elige la publicación correcta",
+          "text": "Comprueba que estás enviando exactamente la publicación o Reel público que quieres usar."
+        },
+        {
+          "title": "Likes, views o comentarios",
+          "text": "Elige views para el recuento de visualizaciones de vídeo o comentarios cuando quieras otro tipo de interacción."
+        }
+      ],
+      "cta": {
+        "label": "Ver likes de Instagram",
+        "href": "/buy-instagram-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
+        "alt": "Publicación de Instagram con indicadores de likes e interacción"
+      },
+      "tone": "violet"
+    },
+    {
+      "id": "ig-views",
+      "platform": "instagram",
+      "slug": "buy-instagram-views",
+      "href": "/buy-instagram-views",
+      "name": "Views de Instagram",
+      "cardBlurb": "Paquetes de views para Reels y vídeos de Instagram elegibles.",
+      "commercialLabel": "COMPRAR VIEWS DE INSTAGRAM",
+      "title": "Paquetes de views de Instagram",
+      "intro": "Compra views de Instagram para un Reel o vídeo cuando quieras aumentar su recuento visible de visualizaciones. Selecciona el número de views que necesitas, añade el enlace público de tu contenido y completa tu pedido sin compartir tu contraseña de Instagram.",
+      "points": [
+        {
+          "title": "Hecho para contenido de vídeo",
+          "text": "Usa este servicio para un Reel o vídeo público de Instagram elegible."
+        },
+        {
+          "title": "Centrado en las views",
+          "text": "Este servicio es para el recuento de views de tu contenido, no para seguidores, likes o comentarios."
+        },
+        {
+          "title": "Elige el vídeo correcto",
+          "text": "Envía exactamente el Reel o vídeo público al que quieres que se entreguen las views."
+        },
+        {
+          "title": "Pedido por contenido",
+          "text": "Elige una cantidad según el Reel o vídeo concreto en el que estás trabajando."
+        }
+      ],
+      "cta": {
+        "label": "Ver views de Instagram",
+        "href": "/buy-instagram-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
+        "alt": "Reel de Instagram con indicadores de visualizaciones de vídeo"
+      },
+      "tone": "orange"
+    },
+    {
+      "id": "ig-comments",
+      "platform": "instagram",
+      "slug": "buy-instagram-comments",
+      "href": "/buy-instagram-comments",
+      "name": "Comentarios de Instagram",
+      "cardBlurb": "Paquetes de comentarios para publicaciones y Reels de Instagram elegibles.",
+      "commercialLabel": "COMPRAR COMENTARIOS DE INSTAGRAM",
+      "title": "Paquetes de comentarios de Instagram",
+      "intro": "Compra comentarios de Instagram para una publicación o Reel público cuando quieras más conversación visible alrededor de tu contenido. Elige la opción de comentarios disponible que encaje con tu publicación, facilita el enlace público del contenido y realiza tu pedido sin compartir tu contraseña de Instagram.",
+      "points": [
+        {
+          "title": "Para publicaciones y Reels",
+          "text": "Elige el contenido público de Instagram donde quieres que se añadan comentarios."
+        },
+        {
+          "title": "Actividad de comentarios",
+          "text": "Los comentarios añaden un tipo de interacción visible distinto de los likes o las views."
+        },
+        {
+          "title": "Específico del contenido",
+          "text": "El pedido se aplica a la publicación o Reel seleccionado, no a tu recuento general de seguidores."
+        },
+        {
+          "title": "Revisa tu contenido",
+          "text": "Asegúrate de que la publicación o Reel enviado es exactamente el que quieres usar para el pedido."
+        }
+      ],
+      "cta": {
+        "label": "Ver comentarios de Instagram",
+        "href": "/buy-instagram-comments"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-comments-visual.webp",
+        "alt": "Publicación de Instagram con comentarios y globos de conversación"
+      },
+      "tone": "amber"
+    },
+    {
+      "id": "tt-followers",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-followers",
+      "href": "/buy-tiktok-followers",
+      "name": "Seguidores de TikTok",
+      "cardBlurb": "Paquetes de seguidores para tu perfil público de TikTok.",
+      "commercialLabel": "COMPRAR SEGUIDORES DE TIKTOK",
+      "title": "Paquetes de seguidores de TikTok",
+      "intro": "Compra seguidores de TikTok cuando quieras aumentar el recuento de seguidores que se muestra en tu perfil. Elige un paquete que encaje con tu cuenta, facilita tu nombre de usuario público de TikTok y realiza tu pedido sin compartir tu contraseña.",
+      "points": [
+        {
+          "title": "Recuento de seguidores del perfil",
+          "text": "Este servicio es para los seguidores que se muestran en el perfil de TikTok enviado con el pedido."
+        },
+        {
+          "title": "Centrado en la cuenta",
+          "text": "Los seguidores se aplican a la cuenta, no a los likes o views de un vídeo concreto."
+        },
+        {
+          "title": "Elige para tu cuenta",
+          "text": "Selecciona una cantidad de seguidores que encaje con el perfil de TikTok en el que estás trabajando."
+        },
+        {
+          "title": "Los servicios de vídeo son aparte",
+          "text": "Likes y views de TikTok están disponibles cuando quieres trabajar en vídeos concretos."
+        }
+      ],
+      "cta": {
+        "label": "Ver seguidores de TikTok",
+        "href": "/buy-tiktok-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-followers-visual.webp",
+        "alt": "Perfil de creador de TikTok con indicadores de seguidores"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "tt-likes",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-likes",
+      "href": "/buy-tiktok-likes",
+      "name": "Likes de TikTok",
+      "cardBlurb": "Paquetes de likes para vídeos públicos de TikTok elegibles.",
+      "commercialLabel": "COMPRAR LIKES DE TIKTOK",
+      "title": "Paquetes de likes de TikTok",
+      "intro": "Compra likes de TikTok para un vídeo público cuando quieras añadir más likes a esa publicación concreta. Elige el tamaño de paquete que necesitas, introduce el enlace del vídeo y completa tu pedido sin dar a NovaLikes tu contraseña de TikTok.",
+      "points": [
+        {
+          "title": "Para vídeos individuales",
+          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen los likes."
+        },
+        {
+          "title": "Específico del vídeo",
+          "text": "Los likes se aplican al vídeo seleccionado, no al recuento de seguidores de tu perfil de TikTok."
+        },
+        {
+          "title": "Revisa el vídeo",
+          "text": "Asegúrate de enviar exactamente el vídeo público de TikTok que quieres usar."
+        },
+        {
+          "title": "Likes o views",
+          "text": "Elige views de TikTok cuando el recuento de visualizaciones sea la métrica en la que quieres trabajar."
+        }
+      ],
+      "cta": {
+        "label": "Ver likes de TikTok",
+        "href": "/buy-tiktok-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
+        "alt": "Vídeo de TikTok con indicadores de likes e interacción"
+      },
+      "tone": "cyan"
+    },
+    {
+      "id": "tt-views",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-views",
+      "href": "/buy-tiktok-views",
+      "name": "Views de TikTok",
+      "cardBlurb": "Paquetes de views para vídeos públicos de TikTok elegibles.",
+      "commercialLabel": "COMPRAR VIEWS DE TIKTOK",
+      "title": "Paquetes de views de TikTok",
+      "intro": "Compra views de TikTok para un vídeo público cuando quieras aumentar el número de views que se muestra en esa publicación. Elige el paquete de views que necesitas, facilita la URL del vídeo y realiza tu pedido sin compartir tu contraseña de TikTok.",
+      "points": [
+        {
+          "title": "Para vídeos de TikTok",
+          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen las views."
+        },
+        {
+          "title": "Centrado en el recuento de views",
+          "text": "Este servicio trabaja sobre las views del vídeo, no sobre los seguidores del perfil ni los likes del vídeo."
+        },
+        {
+          "title": "Usa el vídeo correcto",
+          "text": "Revisa el vídeo de TikTok antes de enviarlo con tu pedido."
+        },
+        {
+          "title": "Elige por vídeo",
+          "text": "Selecciona la cantidad según el vídeo concreto en el que estás trabajando."
+        }
+      ],
+      "cta": {
+        "label": "Ver views de TikTok",
+        "href": "/buy-tiktok-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
+        "alt": "Vídeo de TikTok con indicadores de views y reproducción"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "fb-followers",
+      "platform": "facebook",
+      "slug": "buy-facebook-followers",
+      "href": "/buy-facebook-followers",
+      "name": "Seguidores de Facebook",
+      "cardBlurb": "Paquetes de seguidores para Páginas públicas de Facebook elegibles.",
+      "commercialLabel": "COMPRAR SEGUIDORES DE FACEBOOK",
+      "title": "Paquetes de seguidores de Facebook",
+      "intro": "Compra seguidores de Facebook cuando quieras añadir más seguidores a una Página pública de Facebook elegible. Elige entre los tamaños de paquete disponibles, facilita los datos públicos de la Página de Facebook requeridos para tu pedido y completa la compra sin compartir tu contraseña de Facebook.",
+      "points": [
+        {
+          "title": "Centrado en seguidores",
+          "text": "Usa este servicio cuando los seguidores sean la métrica de Facebook en la que quieres trabajar."
+        },
+        {
+          "title": "Distinto de los Me gusta de Página",
+          "text": "Seguidores de Facebook y Me gusta de Página de Facebook son servicios separados, con propósitos distintos."
+        },
+        {
+          "title": "Para tu Página de Facebook",
+          "text": "Los seguidores se aplican a la Página pública de Facebook elegible enviada con el pedido."
+        },
+        {
+          "title": "Los Me gusta de publicaciones son aparte",
+          "text": "Elige Me gusta de publicaciones de Facebook cuando quieras likes en una publicación concreta."
+        }
+      ],
+      "cta": {
+        "label": "Ver seguidores de Facebook",
+        "href": "/buy-facebook-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-followers-visual.webp",
+        "alt": "Página de Facebook con indicadores de seguidores y comunidad"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-page-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-page-likes",
+      "href": "/buy-facebook-page-likes",
+      "name": "Me gusta de Página de Facebook",
+      "cardBlurb": "Paquetes de Me gusta de Página para Páginas públicas de Facebook elegibles.",
+      "commercialLabel": "COMPRAR ME GUSTA DE PÁGINA DE FACEBOOK",
+      "title": "Paquetes de Me gusta de Página de Facebook",
+      "intro": "Compra Me gusta de Página de Facebook cuando quieras aumentar el número de Me gusta que se muestra en tu Página de negocio, marca o Página pública. Elige un paquete, facilita el enlace público de la Página de Facebook y realiza tu pedido sin compartir la contraseña de tu cuenta.",
+      "points": [
+        {
+          "title": "Para Páginas de Facebook",
+          "text": "Usa este servicio para una Página de negocio, marca u otra Página de Facebook pública y elegible."
+        },
+        {
+          "title": "Métrica a nivel de Página",
+          "text": "Los Me gusta de Página se aplican a la Página en sí, no a una publicación concreta de Facebook."
+        },
+        {
+          "title": "Distinto de los seguidores",
+          "text": "Elige seguidores de Facebook cuando el recuento de seguidores sea la métrica que quieres."
+        },
+        {
+          "title": "Revisa la Página",
+          "text": "Asegúrate de que la Página pública de Facebook enviada con el pedido es la correcta."
+        }
+      ],
+      "cta": {
+        "label": "Ver Me gusta de Página de Facebook",
+        "href": "/buy-facebook-page-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-page-likes-visual.webp",
+        "alt": "Página de Facebook con indicadores de Me gusta de Página"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-post-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-post-likes",
+      "href": "/buy-facebook-post-likes",
+      "name": "Me gusta de publicaciones de Facebook",
+      "cardBlurb": "Paquetes de Me gusta de publicaciones para publicaciones públicas de Facebook elegibles.",
+      "commercialLabel": "COMPRAR ME GUSTA DE PUBLICACIONES DE FACEBOOK",
+      "title": "Paquetes de Me gusta de publicaciones de Facebook",
+      "intro": "Compra Me gusta de publicaciones de Facebook para una publicación pública cuando quieras aumentar el número de Me gusta que se muestra en ese contenido concreto. Elige un paquete, facilita la URL pública de la publicación y completa tu pedido sin compartir tu contraseña de Facebook.",
+      "points": [
+        {
+          "title": "Para publicaciones individuales",
+          "text": "Elige la publicación pública de Facebook donde quieres que se añadan los Me gusta."
+        },
+        {
+          "title": "Métrica a nivel de publicación",
+          "text": "Este servicio se aplica a una publicación concreta, no a la Página de Facebook en conjunto."
+        },
+        {
+          "title": "Distinto de los Me gusta de Página",
+          "text": "Los Me gusta de Página de Facebook son para la Página en sí, mientras que este servicio es para contenido concreto."
+        },
+        {
+          "title": "Elige la publicación correcta",
+          "text": "Revisa la publicación pública antes de enviarla con tu pedido."
+        }
+      ],
+      "cta": {
+        "label": "Ver Me gusta de publicaciones de Facebook",
+        "href": "/buy-facebook-post-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-post-likes-visual.webp",
+        "alt": "Publicación de Facebook con indicadores de Me gusta y reacciones"
+      },
+      "tone": "blue"
+    }
+  ]
+}

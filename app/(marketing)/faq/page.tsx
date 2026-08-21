@@ -8,7 +8,6 @@ import { buildFaqPageSchemaFromVisible } from '@/lib/faqs/schema';
 import { selectMainFaqPageFaqs } from '@/lib/faqs/selection';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { webPageSchema } from '@/schemas/website';
 import { companyMetadata } from '@/seo/metadata';
 
 export function generateMetadata(): Metadata {
@@ -21,11 +20,6 @@ export default function FaqPage() {
   const items = selectMainFaqPageFaqs();
 
   const graph = asJsonLdGraph([
-    webPageSchema({
-      title: content.seo.title,
-      description: content.seo.description,
-      path: routes.faq,
-    }),
     breadcrumbSchema([
       { label: 'Home', href: routes.home },
       { label: 'FAQ', href: routes.faq },

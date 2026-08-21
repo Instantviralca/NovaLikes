@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { Clock3, Pencil, Trash2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { localizeHref } from '@/lib/i18n/paths';
 import { formatMoney } from '@/lib/pricing/format';
 import type { CartItem } from '@/types/cart';
 import type { PlatformId } from '@/types/platform';
@@ -24,6 +26,7 @@ const PLATFORM_ICON: Record<string, string> = {
 };
 
 export function CartItemRow({ item, onRemove, className }: CartItemProps) {
+  const { locale, ui } = useI18nChrome();
   const detailEntries = Object.entries(item.configuration).filter(
     ([, value]) => value !== '' && value !== undefined,
   );
@@ -57,13 +60,13 @@ export function CartItemRow({ item, onRemove, className }: CartItemProps) {
             </p>
             <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.packageTitle}</p>
           </div>
-          <p className="text-2xl font-bold text-[var(--brand-primary)]">
+          <p className="text-2xl font-bold text-[var(--brand-primary)]" dir="ltr">
             {formatMoney(item.unitPrice, item.currency)}
           </p>
           {item.deliveryTime ? (
             <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--surface-muted)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
               <Clock3 className="size-3.5 text-[var(--brand-primary)]" aria-hidden="true" />
-              Delivery: {item.deliveryTime}
+              {ui.cart.delivery}: {item.deliveryTime}
             </span>
           ) : null}
           {detailEntries.length > 0 ? (
@@ -75,7 +78,9 @@ export function CartItemRow({ item, onRemove, className }: CartItemProps) {
                 >
                   <span className="font-semibold text-[var(--text-primary)] capitalize">{key}</span>
                   <span className="text-[var(--text-muted)]"> · </span>
-                  <span className="font-medium text-[var(--text-secondary)]">{String(value)}</span>
+                  <span className="font-medium text-[var(--text-secondary)]" dir="ltr">
+                    {String(value)}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -83,9 +88,9 @@ export function CartItemRow({ item, onRemove, className }: CartItemProps) {
         </div>
         <div className="flex flex-wrap gap-2">
           <Button asChild size="sm" variant="outline" className="rounded-lg">
-            <Link href={`/${item.serviceSlug}`}>
+            <Link href={localizeHref(`/${item.serviceSlug}`, locale)}>
               <Pencil className="size-3.5" aria-hidden="true" />
-              Edit
+              {ui.cart.edit}
             </Link>
           </Button>
           <Button
@@ -97,7 +102,7 @@ export function CartItemRow({ item, onRemove, className }: CartItemProps) {
             onClick={() => onRemove(item.id)}
           >
             <Trash2 className="size-3.5" aria-hidden="true" />
-            Remove
+            {ui.cart.remove}
           </Button>
         </div>
       </div>

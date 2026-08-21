@@ -1,0 +1,631 @@
+{
+  "content": {
+    "slug": "buy-tiktok-likes",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "TikTok Likes kaufen | NovaLikes",
+      "description": "Kaufen Sie TikTok Likes mit Paketen für Creator und Unternehmen. Nur öffentliche Video-URL, sicherer Checkout, Optionen zur schrittweisen Lieferung und Bestellverfolgung."
+    },
+    "hero": {
+      "eyebrow": "TIKTOK LIKES KAUFEN",
+      "title": "TikTok Likes kaufen",
+      "description": "Kaufen Sie TikTok Likes, indem Sie Paket und Menge wählen, die zu Ihrem Video passen. NovaLikes lässt Sie verfügbare TikTok-Likes-Pakete und Preise vor der Bestellung vergleichen. Wählen Sie die gewünschte Like-Zahl, geben Sie den korrekten öffentlichen TikTok-Videolink an und schließen Sie die Bestellung online ab. Ihr TikTok-Passwort ist nicht erforderlich, und nach dem Checkout können Sie verfügbare Statusinformationen über die Bestellverfolgung prüfen.",
+      "purpose": "Convert for TikTok likes packages worldwide",
+      "primaryKeyword": "buy TikTok likes",
+      "supportingKeywords": [
+        "Buy TikTok Likes",
+        "TikTok Likes Packages",
+        "Buy Real TikTok Likes",
+        "TikTok Engagement"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "TikTok-Likes-Paket wählen",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "So funktioniert’s",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-l-trust-url",
+          "label": "Nur öffentlicher Videolink"
+        },
+        {
+          "id": "tt-l-trust-password",
+          "label": "Kein Passwort erforderlich"
+        },
+        {
+          "id": "tt-l-trust-checkout",
+          "label": "Sicherer Checkout"
+        },
+        {
+          "id": "tt-l-trust-track",
+          "label": "Bestellverfolgung"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-likes/tiktok-likes-hero.webp",
+        "alt": "Illustration eines Dashboards für TikTok-Video-Likes und Interaktion",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "TikTok-Likes-Pakete und Preise",
+      "description": "Vergleichen Sie verfügbare TikTok-Likes-Pakete, Mengen und Preise vor der Bestellung. Wählen Sie die Like-Zahl für Ihr öffentliches TikTok-Video, prüfen Sie den aktuellen Paketpreis und legen Sie die gewählte Option in den Warenkorb, wenn Sie soweit sind.",
+      "purpose": "Present real NovaLikes.com TikTok likes packages",
+      "primaryKeyword": "TikTok likes packages",
+      "suggestedWordCount": 55,
+      "packageIds": [],
+      "primaryCtaLabel": "Mit diesem Paket fortfahren",
+      "emptyMessage": "TikTok-Likes-Pakete sind vorübergehend nicht verfügbar."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-likes",
+      "title": "Warum kaufen Menschen TikTok Likes?",
+      "description": "Menschen kaufen TikTok Likes, um die sichtbare Interaktion auf einem öffentlichen Video zu stärken, den ersten Eindruck zu verbessern und Creator- oder Unternehmenskampagnen zu unterstützen. Likes können aktiven Content etablierter wirken lassen, sagen aber keine zusätzlichen Views, Follower, Verkäufe oder algorithmische Bewerbung zu.",
+      "purpose": "Explain informed use of TikTok likes packages",
+      "primaryKeyword": "buy TikTok likes",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "tt-l-first-impressions",
+          "title": "Stärkerer erster Eindruck",
+          "description": "Eine sichtbare Reaktionszahl kann ein Video aktiver wirken lassen, wenn neue Zuschauende es über ein Profil, einen geteilten Link oder den TikTok-Feed entdecken."
+        },
+        {
+          "id": "tt-l-campaign-support",
+          "title": "Kampagnenunterstützung",
+          "description": "Creator und Unternehmen können Like-Pakete neben Produktlaunches, Promotionen und anderen Short-Form-Video-Kampagnen nutzen."
+        },
+        {
+          "id": "tt-l-flexible-quantities",
+          "title": "Flexible Mengen",
+          "description": "Kleinere Optionen können einzelne Beiträge unterstützen, während größere Pakete besser zu Videos etablierter und regelmäßig aktiver Konten passen können."
+        },
+        {
+          "id": "tt-l-alongside-content",
+          "title": "Wirkt zusammen mit Content",
+          "description": "Gekaufte Likes eignen sich am besten als Unterstützung für eigene Videos, klare Bildunterschriften, regelmäßiges Posten und laufende Zielgruppeninteraktion."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-tiktok-likes",
+      "title": "Warum TikTok Likes bei NovaLikes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections",
+      "primaryKeyword": "buy real TikTok likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-likes-features",
+      "title": "Funktionen",
+      "description": "",
+      "purpose": "Unused on 09.22 — Video Link and Delivery Requirements is separate",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "So kaufen Sie TikTok Likes",
+      "description": "Um TikTok Likes zu kaufen, wählen Sie ein Paket, fügen Sie den öffentlichen Link zum gewünschten Video ein, prüfen Sie die Bestelldetails und schließen Sie den sicheren Checkout ab. Ein TikTok-Passwort ist nicht erforderlich, und nach der Zahlung können Sie verfügbare Bestellupdates verfolgen.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok likes",
+      "supportingKeywords": [
+        "how to buy likes on TikTok",
+        "how do you buy likes on TikTok",
+        "how to buy likes on a TikTok video",
+        "buying TikTok likes"
+      ],
+      "suggestedWordCount": 90,
+      "steps": [
+        {
+          "id": "tt-l-step-1",
+          "title": "Paket wählen",
+          "description": "Wählen Sie die Like-Zahl, die am besten zu Größe, Aktivität und Zweck Ihres Videos passt."
+        },
+        {
+          "id": "tt-l-step-2",
+          "title": "Öffentlichen Videolink einfügen",
+          "description": "Kopieren Sie die öffentliche TikTok-Video-URL und fügen Sie sie ins Bestellfeld ein, damit die Likes dem richtigen Beitrag zugeordnet werden."
+        },
+        {
+          "id": "tt-l-step-3",
+          "title": "Bestellung prüfen",
+          "description": "Bestätigen Sie gewählte Menge, Videolink, Preis und eventuelle Lieferangaben, bevor Sie fortfahren."
+        },
+        {
+          "id": "tt-l-step-4",
+          "title": "Sicheren Checkout abschließen",
+          "description": "Schließen Sie Ihre Bestellung über den sicheren Checkout ab, ohne TikTok-Passwort oder private Login-Daten zu teilen."
+        },
+        {
+          "id": "tt-l-step-5",
+          "title": "Lieferung verfolgen",
+          "description": "Nutzen Sie Ihre Bestelldaten, um verfügbare Statusupdates zu sehen, während das Paket Bearbeitung und Lieferung durchläuft."
+        }
+      ],
+      "cta": {
+        "label": "Paket auswählen",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "Was brauchen Sie für eine Bestellung?",
+      "description": "Für eine TikTok-Likes-Bestellung sind nur wenige öffentliche Angaben nötig. Sie müssen weder Kontopasswort noch Bestätigungscode oder privaten Profilzugriff angeben.",
+      "purpose": "Explain video URL and processing requirements",
+      "primaryKeyword": "TikTok likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "tt-l-req-url",
+          "title": "Öffentliche TikTok-Video-URL",
+          "description": "Fügen Sie den genauen öffentlichen Link zum TikTok-Video ein, das die gewählten Likes erhalten soll."
+        },
+        {
+          "id": "tt-l-req-package",
+          "title": "Gewähltes Paket",
+          "description": "Wählen Sie die Menge, die zu Video, Kontoaktivität und aktueller Kampagne passt."
+        },
+        {
+          "id": "tt-l-req-public",
+          "title": "Öffentlicher Videozugriff",
+          "description": "Das gewählte Video muss während der Bearbeitung der Bestellung öffentlich sichtbar bleiben."
+        },
+        {
+          "id": "tt-l-req-email",
+          "title": "Gültige E-Mail-Adresse",
+          "description": "Verwenden Sie eine funktionierende E-Mail-Adresse, um Bestellbestätigung, Tracking-Details und Support-Updates zu erhalten."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-likes-reviews",
+      "title": "Was Kundinnen und Kunden über NovaLikes sagen",
+      "description": "Kundenbewertungen zu diesem NovaLikes-Service.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-likes-faq",
+      "title": "Häufige Fragen zum Kauf von TikTok Likes",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok likes",
+      "faqIds": [
+        "faq-tt-likes-need",
+        "faq-tt-likes-package",
+        "faq-tt-likes-password",
+        "faq-tt-likes-how-long",
+        "faq-tt-likes-track",
+        "faq-tt-likes-wrong-url",
+        "faq-tt-likes-other-metrics",
+        "faq-tt-likes-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-likes",
+      "title": "Weitere TikTok-Services entdecken",
+      "description": "Likes sind nur eine TikTok-Kennzahl. Wenn Sie stattdessen die Follower-Zahl auf Ihrem Profil oder die View-Zahl eines bestimmten Videos erhöhen möchten, vergleichen Sie die anderen TikTok-Services unten.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-followers",
+        "buy-tiktok-views"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-likes-final-cta",
+      "title": "Wählen Sie Ihr TikTok-Likes-Paket",
+      "description": "Vergleichen Sie verfügbare Like-Mengen und Preise, wählen Sie das Paket, das zum gewünschten TikTok-Video passt, und bestellen Sie mit dem korrekten öffentlichen Videolink.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "TikTok-Likes-Pakete ansehen",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Bestellung verfolgen",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-tiktok-likes-why-choose",
+        "title": "Warum NovaLikes für TikTok Likes?",
+        "description": "NovaLikes macht es einfach, TikTok-Likes-Pakete vor der Bestellung zu vergleichen. Wählen Sie die Like-Zahl für ein öffentliches TikTok-Video, prüfen Sie den aktuellen Preis, geben Sie den korrekten Videolink an und nutzen Sie nach dem Checkout die Bestellverfolgung für verfügbare Statusinformationen.",
+        "items": [
+          {
+            "id": "buy-tiktok-likes-0",
+            "title": "Mehrere Like-Mengen",
+            "description": "Vergleichen Sie die verfügbaren TikTok-Likes-Mengen und wählen Sie das Paket, das zur gewünschten Like-Zahl passt.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-likes-1",
+            "title": "Nur öffentlicher Videolink",
+            "description": "Geben Sie den korrekten öffentlichen TikTok-Videolink zu dem Inhalt an, dem die Likes hinzugefügt werden sollen. Ihr TikTok-Passwort ist nicht erforderlich.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-likes-2",
+            "title": "Vor dem Checkout prüfen",
+            "description": "Prüfen Sie die gewählte Like-Menge und den aktuellen Paketpreis, bevor Sie die Bestellung in den Warenkorb legen und den Checkout abschließen.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-likes-3",
+            "title": "Bestellverfolgung",
+            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer TikTok-Likes-Bestellung zu prüfen.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-tiktok-likes-can-you-buy",
+        "title": "Kann man TikTok Likes kaufen?",
+        "description": "Ja. TikTok Likes können über Online-Likes-Services gekauft werden. Bei NovaLikes wählen Sie ein verfügbares Likes-Paket, geben den öffentlichen TikTok-Videolink zum gewünschten Inhalt an und schließen die Bestellung über die Website ab.",
+        "cards": [
+          {
+            "id": "buy-tiktok-likes-4",
+            "title": "Was eine TikTok-Likes-Bestellung ändert",
+            "description": "Eine TikTok-Likes-Bestellung gilt für die Like-Zahl des öffentlichen Videos, das mit der Bestellung übermittelt wird. Sie fügt Ihrem Profil nicht automatisch Follower und dem Video nicht automatisch Views hinzu.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-likes-5",
+            "title": "Was Sie für eine Bestellung brauchen",
+            "description": "Sie brauchen den korrekten öffentlichen TikTok-Videolink und das Likes-Paket, das Sie kaufen möchten. Ihr TikTok-Passwort ist nicht erforderlich.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-likes-6",
+            "title": "Was TikTok Likes nicht enthalten",
+            "description": "Likes sind getrennt von TikTok Followern und Views. Eine Likes-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie TikTok Likes gewählt, die richtige Like-Menge bestimmt und den Link zum genauen öffentlichen Video angegeben haben, dem die Likes hinzugefügt werden sollen."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-tiktok-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-tiktok-likes-what-happens",
+        "title": "Was passiert nach dem Kauf von TikTok Likes?",
+        "description": "Nach einer TikTok-Likes-Bestellung werden das Likes-Paket und der übermittelte öffentliche Videolink genutzt, um die Bestellung für das gewählte Video zu bearbeiten. Lassen Sie das Video dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "steps": [
+          {
+            "id": "buy-tiktok-likes-th-1",
+            "title": "Ihre Bestelldaten werden geprüft",
+            "description": "Das gewählte Likes-Paket, die Menge und der übermittelte TikTok-Videolink werden Ihrer Bestellung zugeordnet, damit die Anfrage für das vorgesehene Video bearbeitet werden kann."
+          },
+          {
+            "id": "buy-tiktok-likes-th-2",
+            "title": "Likes gehen an das übermittelte Video",
+            "description": "Die Bestellung gilt für das TikTok-Video, das mit dem angegebenen Link verbunden ist. Prüfen Sie den Videolink sorgfältig, bevor Sie den Checkout abschließen."
+          },
+          {
+            "id": "buy-tiktok-likes-th-3",
+            "title": "Die Bearbeitungszeit kann variieren",
+            "description": "Die benötigte Zeit kann je nach Like-Menge und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+          },
+          {
+            "id": "buy-tiktok-likes-th-4",
+            "title": "Bestellstatus prüfen",
+            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+          }
+        ],
+        "closingNote": "Vermeiden Sie es, das übermittelte Video zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+      },
+      "serviceCompare": {
+        "id": "buy-tiktok-likes-service-compare",
+        "title": "TikTok Likes vs. Follower vs. Views",
+        "description": "Likes, Follower und Views messen unterschiedliche Teile von TikTok. Wählen Sie den Service danach, ob Sie die Like-Zahl eines bestimmten Videos, die Follower-Zahl Ihres Profils oder die View-Zahl eines TikTok-Videos ändern möchten.",
+        "current": {
+          "title": "TikTok Likes",
+          "description": "Likes sind eine Kennzahl auf Videoebene. Wählen Sie TikTok Likes, wenn Sie die Like-Zahl auf einem geeigneten öffentlichen TikTok-Video erhöhen möchten.",
+          "bestFor": "TikTok-Videos, bei denen die sichtbare Like-Zahl die gewünschte Kennzahl ist.",
+          "ctaLabel": "TikTok Likes"
+        },
+        "likes": {
+          "title": "TikTok Follower",
+          "description": "Follower sind eine Kennzahl auf Profilebene. Wählen Sie TikTok Follower, wenn Sie die auf Ihrem öffentlichen TikTok-Profil angezeigte Follower-Zahl erhöhen möchten.",
+          "bestFor": "Profile, bei denen die Follower-Zahl die gewünschte Kennzahl ist.",
+          "href": "/buy-tiktok-followers",
+          "ctaLabel": "TikTok Follower ansehen"
+        },
+        "views": {
+          "title": "TikTok Views",
+          "description": "Views sind eine Kennzahl auf Videoebene. Wählen Sie TikTok Views, wenn Sie die View-Zahl auf einem geeigneten öffentlichen TikTok-Video erhöhen möchten.",
+          "bestFor": "TikTok-Videos, bei denen die sichtbare View-Zahl die gewünschte Kennzahl ist.",
+          "href": "/buy-tiktok-views",
+          "ctaLabel": "TikTok Views ansehen"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-tiktok-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-tiktok-likes-before-buying",
+        "title": "Was Sie vor dem Kauf von TikTok Likes prüfen sollten",
+        "description": "Bevor Sie TikTok Likes kaufen, prüfen Sie Paket- und Videodetails. Stellen Sie sicher, dass Like-Menge, Preis, TikTok-Videolink und Service zum gewählten Video passen.",
+        "framingNote": "Prüfen Sie den übermittelten TikTok-Videolink, die Like-Menge und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Likes zusätzliche Views, Follower, Interaktion, Reichweite, Verkäufe oder organisches Wachstum garantiert.",
+        "items": [
+          {
+            "id": "buy-tiktok-likes-7",
+            "title": "Like-Menge prüfen",
+            "description": "Prüfen Sie die im Paket enthaltene Anzahl TikTok Likes, damit Sie wissen, wie viele Sie für das übermittelte Video bestellen.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-likes-8",
+            "title": "Paketpreis bestätigen",
+            "description": "Prüfen Sie den aktuellen Preis des gewählten Likes-Pakets, bevor Sie es in den Warenkorb legen. Ändern Sie die Menge, prüfen Sie den aktualisierten Preis vor dem Checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-likes-9",
+            "title": "Den richtigen TikTok-Videolink verwenden",
+            "description": "Prüfen Sie den öffentlichen TikTok-Videolink sorgfältig, damit die Bestellung dem genauen Video zugeordnet wird, dem die Likes hinzugefügt werden sollen.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-likes-10",
+            "title": "Den richtigen TikTok-Service wählen",
+            "description": "Likes, Follower und Views sind getrennte Services. Prüfen Sie, dass TikTok Likes der benötigte Service ist, bevor Sie bestellen.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-tiktok-likes-11",
+            "title": "Support und Richtlinien prüfen",
+            "description": "Prüfen Sie die relevanten Kaufbedingungen und verfügbaren Support-Optionen, damit Sie wissen, wo Sie nachsehen, wenn Sie eine Frage zu Ihrer Bestellung haben.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-tiktok-likes-worldwide",
+        "title": "Das richtige TikTok-Video für Likes wählen",
+        "description": "TikTok Likes gilt für ein bestimmtes geeignetes öffentliches Video. Übermitteln Sie genau das Video, das Sie nutzen möchten, und kein allgemeines TikTok-Profil.",
+        "eyebrow": "Bereit für TikTok Likes",
+        "closingNote": "TikTok Likes gilt für ein bestimmtes öffentliches Video. Übermitteln Sie den Videolink, halten Sie das Video öffentlich und prüfen Sie die Like-Menge vor dem Checkout.",
+        "cards": [
+          {
+            "id": "buy-tiktok-likes-12",
+            "title": "Den korrekten Videolink verwenden",
+            "description": "Prüfen Sie die öffentliche TikTok-Video-URL vor der Bestellung sorgfältig, weil das übermittelte Video zur Bearbeitung des Likes-Pakets genutzt wird.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-likes-13",
+            "title": "Video öffentlich halten",
+            "description": "Löschen oder beschränken Sie das übermittelte Video nicht, solange die Bestellung öffentlichen Zugriff darauf voraussetzt.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-likes-14",
+            "title": "Like-Menge wählen",
+            "description": "Prüfen Sie die verfügbaren Like-Mengen und wählen Sie das Paket, das zum einzelnen gewünschten Video passt.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-likes-15",
+            "title": "Likes und Views sind unterschiedlich",
+            "description": "Wählen Sie TikTok Likes, wenn die Like-Zahl die gewünschte Kennzahl ist. TikTok Views ist ein eigener Service für sichtbare Video-Views.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-tiktok-likes-popular-packages",
+        "title": "Beliebte TikTok-Likes-Pakete",
+        "description": "Vergleichen Sie unten einige der TikTok-Likes-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle Optionen zu sehen.",
+        "rows": [
+          {
+            "id": "tt-l-100",
+            "quantity": "100 Likes",
+            "recommendedFor": "Eine kleinere Option für ein öffentliches TikTok-Video, dem Sie eine begrenzte Anzahl Likes hinzufügen möchten."
+          },
+          {
+            "id": "tt-l-500",
+            "quantity": "500 Likes",
+            "recommendedFor": "Eine mittlere Option für ein TikTok-Video, bei dem Sie eine größere Änderung der angezeigten Like-Zahl möchten."
+          },
+          {
+            "id": "tt-l-1000",
+            "quantity": "1.000 Likes",
+            "recommendedFor": "Ein größeres Paket für ein öffentliches TikTok-Video, dem Sie in einer Bestellung eintausend Likes hinzufügen möchten."
+          },
+          {
+            "id": "tt-l-5000",
+            "quantity": "5.000 Likes",
+            "recommendedFor": "Eine Option mit höherem Volumen für ein TikTok-Video, bei dem Sie eine größere Steigerung der angezeigten Like-Zahl möchten."
+          },
+          {
+            "id": "tt-l-10000",
+            "quantity": "10.000 Likes",
+            "recommendedFor": "Eine der größeren verfügbaren Paketoptionen für ein öffentliches TikTok-Video, dem Sie zehntausend Likes hinzufügen möchten."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-tiktok-likes-best-practices",
+        "title": "Bewährte Vorgehensweisen nach dem Kauf von TikTok Likes",
+        "description": "Der Kauf von Likes ändert die Like-Zahl auf dem gewählten TikTok-Video. Der Rest Ihrer TikTok-Aktivität hängt weiterhin von den Inhalten ab, die Sie veröffentlichen, und davon, wie Sie Ihr Konto führen. Erstellen Sie weiter Videos, prüfen Sie die Performance und interagieren Sie mit Ihrer Zielgruppe neben dem Service.",
+        "closingNote": "Die Like-Zahl ist nur eine Kennzahl auf einem TikTok-Video. Ihre Inhalte, Views, Zielgruppenreaktionen, Veröffentlichungsentscheidungen und andere Kontoaktivität hängen weiterhin davon ab, wie Sie Ihre TikTok-Präsenz führen.",
+        "items": [
+          {
+            "id": "buy-tiktok-likes-16",
+            "title": "Weiter TikTok-Videos veröffentlichen",
+            "description": "Erstellen Sie weiterhin Videos, die zu Konto, Thema, Unternehmen oder der Zielgruppe passen, die Sie erreichen möchten.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-likes-17",
+            "title": "Bildunterschriften nutzen, die zum Video passen",
+            "description": "Schreiben Sie Bildunterschriften, die den veröffentlichten Inhalt unterstützen und Zuschauenden nützlichen Kontext geben.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-tiktok-likes-18",
+            "title": "TikTok-Analysen prüfen",
+            "description": "Wenn Analysen auf Ihrem Konto verfügbar sind, prüfen Sie Views, Likes, Interaktion, Wiedergabeaktivität und andere verfügbare Daten, um zu verstehen, wie Ihre eigenen Inhalte performen.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-likes-19",
+            "title": "Unterschiedliche Videoformate testen",
+            "description": "Probieren Sie unterschiedliche Themen, Videolängen, Einstiege, Formate und Präsentationsstile, um zu lernen, was für Ihr Konto funktioniert.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-likes-20",
+            "title": "Auf echte Interaktion antworten",
+            "description": "Antworten Sie bei Bedarf auf echte Kommentare und Nachrichten. Eine höhere Like-Zahl ersetzt nicht die Interaktionen, die Sie durch Ihre eigene Kontoaktivität aufbauen.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-likes-21",
+            "title": "Inhalte konsistent halten",
+            "description": "Behalten Sie einen Veröffentlichungsansatz bei, der zu Ihrem Konto passt, statt ein Likes-Paket als Ersatz für laufenden Content zu behandeln.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-tiktok-likes-common-mistakes",
+        "title": "Häufige Fehler beim Kauf von TikTok Likes",
+        "description": "Einige einfache Fehler können Probleme bei einer TikTok-Likes-Bestellung verursachen. Prüfen Sie Videolink, Like-Menge, Service und Erwartungen vor dem Checkout, damit klar ist, was Sie bestellen.",
+        "closingNote": "Prüfen Sie vor der Bestellung TikTok-Videolink, Like-Menge und Preis noch einmal. Ändert sich nach dem Checkout etwas, nutzen Sie die verfügbare Verfolgung oder den Support.",
+        "items": [
+          {
+            "id": "buy-tiktok-likes-22",
+            "title": "Den falschen TikTok-Videolink übermitteln",
+            "description": "Prüfen Sie den öffentlichen TikTok-Videolink vor der Bestellung sorgfältig. Der Link sollte genau auf das Video zeigen, dem die Likes hinzugefügt werden sollen.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-likes-23",
+            "title": "Den falschen TikTok-Service wählen",
+            "description": "Likes, Follower und Views sind getrennte Services. Wählen Sie TikTok Likes nur, wenn die Like-Zahl eines bestimmten Videos die gewünschte Kennzahl ist.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-likes-24",
+            "title": "Die falsche Like-Menge wählen",
+            "description": "Prüfen Sie die im gewählten Paket enthaltene Like-Zahl vor dem Checkout, damit Sie nicht eine andere Menge bestellen als beabsichtigt.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-likes-25",
+            "title": "Das Video während einer Bestellung entfernen",
+            "description": "Vermeiden Sie es, das übermittelte Video zu löschen oder unzugänglich zu machen, während die Bestellung bearbeitet wird.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-likes-26",
+            "title": "Erwarten, dass Likes andere Ergebnisse zusagen",
+            "description": "Eine höhere Like-Zahl bedeutet nicht automatisch mehr Views, Follower, Interaktion, Reichweite, Verkäufe oder organisches Wachstum.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-likes-27",
+            "title": "Likes als Ersatz für Content behandeln",
+            "description": "Der Kauf von Likes ändert eine Kennzahl auf dem gewählten Video. Ihre Videos, Veröffentlichungsentscheidungen, Bildunterschriften und Zielgruppeninteraktion hängen weiterhin davon ab, wie Sie Ihr Konto führen.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-followers": {
+            "title": "TikTok Follower",
+            "description": "Wählen Sie TikTok Follower, wenn Sie die auf Ihrem öffentlichen TikTok-Profil angezeigte Follower-Zahl erhöhen möchten.",
+            "ctaLabel": "TikTok Follower ansehen"
+          },
+          "buy-tiktok-views": {
+            "title": "TikTok Views",
+            "description": "Wählen Sie TikTok Views, wenn Sie die View-Zahl auf einem geeigneten öffentlichen TikTok-Video erhöhen möchten.",
+            "ctaLabel": "TikTok Views ansehen"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-tiktok-likes-why-buy",
+      "title": "Warum kaufen Menschen TikTok Likes?",
+      "description": "Menschen kaufen TikTok Likes aus unterschiedlichen Gründen. Manche möchten die auf einem bestimmten Video angezeigte Like-Zahl erhöhen, andere wählen ein Likes-Paket für Inhalte zu einem Launch, einer Kampagne oder laufender TikTok-Aktivität. Der Service ändert die Like-Kennzahl auf dem gewählten Video, sagt aber keine zusätzlichen Views, Follower, Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "items": [
+        {
+          "id": "buy-tiktok-likes-wb-1",
+          "title": "Die sichtbare Like-Zahl erhöhen",
+          "description": "Ein TikTok-Likes-Paket kann genutzt werden, wenn Sie die auf einem bestimmten öffentlichen Video angezeigte Like-Zahl erhöhen möchten."
+        },
+        {
+          "id": "buy-tiktok-likes-wb-2",
+          "title": "Likes rund um Launch oder Kampagne nutzen",
+          "description": "Creator und Unternehmen können ein Likes-Paket für ein TikTok-Video zu einem Produktlaunch, einer Kampagne, einer Ankündigung oder anderer Content-Aktivität wählen."
+        },
+        {
+          "id": "buy-tiktok-likes-wb-3",
+          "title": "Fokus auf die Like-Kennzahl",
+          "description": "TikTok Likes gilt für die Like-Zahl des gewählten Videos und fügt Ihrem Profil nicht automatisch Follower und dem Video nicht automatisch Views hinzu."
+        },
+        {
+          "id": "buy-tiktok-likes-wb-4",
+          "title": "Die gewünschte Menge wählen",
+          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Anzahl TikTok Likes zu wählen, die Sie für das übermittelte Video bestellen möchten."
+        },
+        {
+          "id": "buy-tiktok-likes-wb-5",
+          "title": "Likes zusammen mit Ihren Inhalten nutzen",
+          "description": "Der Kauf von Likes ersetzt nicht das Erstellen und Führen eigener TikTok-Inhalte. Videos, Bildunterschriften, Antworten und andere Kontoaktivität hängen weiterhin davon ab, wie Sie Ihre Präsenz führen."
+        }
+      ],
+      "bottomNote": "Wenn Follower oder Video-Views die Kennzahl sind, die Sie stattdessen ändern möchten, wählen Sie den entsprechenden TikTok-Service statt eines Likes-Pakets."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "So kaufen Sie TikTok Likes",
+      "description": "TikTok Likes über NovaLikes zu kaufen, dauert vier Schritte. Wählen Sie das gewünschte Likes-Paket, geben Sie den öffentlichen TikTok-Videolink an, schließen Sie den Checkout ab und prüfen Sie den Status mit Ihren Bestelldaten.",
+      "steps": [
+        {
+          "id": "buy-tiktok-likes-step-1",
+          "title": "Likes-Paket wählen",
+          "description": "Vergleichen Sie verfügbare TikTok-Likes-Mengen und Preise und wählen Sie das Paket für Ihr Video."
+        },
+        {
+          "id": "buy-tiktok-likes-step-2",
+          "title": "TikTok-Videolink eingeben",
+          "description": "Geben Sie den korrekten öffentlichen TikTok-Videolink zu dem Video an, dem die Likes hinzugefügt werden sollen. Ihr TikTok-Passwort ist nicht erforderlich."
+        },
+        {
+          "id": "buy-tiktok-likes-step-3",
+          "title": "Bestellung abschließen",
+          "description": "Prüfen Sie die gewählte Like-Menge und den Preis und gehen Sie durch den Checkout, um zu bestellen."
+        },
+        {
+          "id": "buy-tiktok-likes-step-4",
+          "title": "Bestellung verfolgen",
+          "description": "Nutzen Sie nach dem Checkout die verfügbare Bestellverfolgung, um Statusinformationen zu Ihrer TikTok-Likes-Bestellung zu prüfen."
+        }
+      ]
+    },
+    "relatedHeading": "Weitere TikTok-Services entdecken",
+    "relatedIntro": "Likes sind nur eine TikTok-Kennzahl. Wenn Sie stattdessen die Follower-Zahl auf Ihrem Profil oder die View-Zahl eines bestimmten Videos erhöhen möchten, vergleichen Sie die anderen TikTok-Services unten."
+  }
+}

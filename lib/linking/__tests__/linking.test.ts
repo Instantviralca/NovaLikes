@@ -59,17 +59,15 @@ describe('Internal Linking Engine', () => {
     expect(related.every((link) => isApprovedServiceSlug(link.slug))).toBe(true);
   });
 
-  it('builds service breadcrumbs Home → Platform → Service', () => {
+  it('builds service breadcrumbs Home → Service without empty Learn parents', () => {
     const crumbs = buildBreadcrumb('buy-facebook-page-likes');
     expect(crumbs.map((item) => item.label)).toEqual([
       'Home',
-      'Facebook',
       'Buy Facebook Page Likes',
     ]);
     expect(crumbs[0]?.href).toBe('/');
-    // Platform hub resolves to the Learn category (no dead /facebook route)
-    expect(crumbs[1]?.href).toBe('/learn/facebook');
-    expect(crumbs[2]?.href).toBeUndefined();
+    expect(crumbs[1]?.href).toBeUndefined();
+    expect(JSON.stringify(crumbs)).not.toMatch(/\/learn\//);
   });
 
   it('builds FAQ and policy breadcrumbs', () => {
@@ -134,7 +132,9 @@ describe('Internal Linking Engine', () => {
     expect(isApprovedServiceSlug('buy-tiktok-shares')).toBe(false);
     expect(isApprovedServiceSlug('buy-instagram-reels-views')).toBe(false);
     expect(isApprovedServiceSlug('buy-facebook-video-views')).toBe(false);
+    expect(isApprovedServiceSlug('buy-youtube-subscribers')).toBe(false);
+    expect(isApprovedServiceSlug('buy-youtube-views')).toBe(false);
     expect(isApprovedServiceSlug('buy-youtube-watch-hours')).toBe(false);
-    expect(APPROVED_SERVICE_SLUGS).toHaveLength(12);
+    expect(APPROVED_SERVICE_SLUGS).toHaveLength(10);
   });
 });

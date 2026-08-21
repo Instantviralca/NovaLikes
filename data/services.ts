@@ -147,7 +147,7 @@ const SERVICE_INPUTS: ServiceInput[] = [
     icon: 'eye',
     showInFooter: true,
   },
-  // YouTube
+  // YouTube — retained for historical order/admin lookup only (not offered)
   {
     id: 'yt-subscribers',
     platform: 'youtube',
@@ -157,8 +157,10 @@ const SERVICE_INPUTS: ServiceInput[] = [
     secondaryKeywords: ['youtube subscribers'],
     category: 'subscribers',
     icon: 'users',
-    showInFooter: true,
-    featured: true,
+    showInNavigation: false,
+    showInFooter: false,
+    featured: false,
+    comingSoon: true,
   },
   {
     id: 'yt-views',
@@ -169,7 +171,10 @@ const SERVICE_INPUTS: ServiceInput[] = [
     secondaryKeywords: ['youtube views'],
     category: 'views',
     icon: 'eye',
-    showInFooter: true,
+    showInNavigation: false,
+    showInFooter: false,
+    featured: false,
+    comingSoon: true,
   },
   // Facebook
   {

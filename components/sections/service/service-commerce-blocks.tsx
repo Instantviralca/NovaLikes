@@ -1,14 +1,15 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useEffect, useMemo, useState } from 'react';
 
-import { PackageOrderDialog } from '@/components/commerce/order-configuration/package-order-dialog';
 import { PackageSelector } from '@/components/commerce/pricing';
 import { ServiceStickyOrderBar } from '@/components/commerce/pricing/service-sticky-order-bar';
 import type { PricingCardModel } from '@/components/commerce/pricing/types';
 import { getPlatformById } from '@/data/platforms';
 import { getServicePageAnalytics } from '@/lib/analytics';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
+import { runWhenIdle } from '@/lib/perf/run-when-idle';
 import { findPackage } from '@/lib/pricing';
 import { formatMoney } from '@/lib/pricing/format';
 import type { CtaProps } from '@/types/components';
@@ -32,6 +33,30 @@ type ServiceCommerceBlocksProps = {
 
 const USERNAME_ONLY_SLUGS = new Set(['buy-instagram-followers', 'buy-tiktok-followers']);
 
+function OrderDialogFallback() {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center bg-foreground/40 sm:items-center"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <p className="sr-only">Loading order form</p>
+      <div className="h-24 w-full max-w-lg rounded-t-2xl bg-background p-6 shadow-md sm:rounded-2xl">
+        <p className="text-sm text-muted-foreground">Loading order details…</p>
+      </div>
+    </div>
+  );
+}
+
+const PackageOrderDialog = dynamic(
+  () =>
+    import('@/components/commerce/order-configuration/package-order-dialog').then(
+      (mod) => ({ default: mod.PackageOrderDialog }),
+    ),
+  { ssr: false, loading: () => <OrderDialogFallback /> },
+);
+
 export function getDefaultSummaryBenefits(service: Service): string[] {
   const destination = USERNAME_ONLY_SLUGS.has(service.slug)
     ? 'Public Username Only'
@@ -53,22 +78,25 @@ export function ServiceCommerceBlocks({
   pricing,
   summaryBenefits,
   infoPills,
-  stickyCtaLabel = 'Order Now',
+  stickyCtaLabel,
 }: ServiceCommerceBlocksProps) {
   const [selectedPackage, setSelectedPackage] = useState<PricingPackage | null>(null);
   const [orderOpen, setOrderOpen] = useState(false);
+  const [dialogRequested, setDialogRequested] = useState(false);
   const pricingSectionId = pricing.id ?? 'pricing-packages';
 
   useEffect(() => {
     const analytics = getServicePageAnalytics(service.slug);
     if (!analytics || pricing.packages.length === 0) return;
-    analytics.viewPackages({ serviceSlug: service.slug });
-    for (const model of pricing.packages) {
-      analytics.packageImpression({
-        packageId: model.package.id,
-        serviceSlug: service.slug,
-      });
-    }
+    return runWhenIdle(() => {
+      analytics.viewPackages({ serviceSlug: service.slug });
+      for (const model of pricing.packages) {
+        analytics.packageImpression({
+          packageId: model.package.id,
+          serviceSlug: service.slug,
+        });
+      }
+    });
   }, [pricing.packages, service.slug]);
 
   const resolvedBenefits = useMemo(
@@ -96,6 +124,7 @@ export function ServiceCommerceBlocks({
       packageId,
       serviceSlug: service.slug,
     });
+    setDialogRequested(true);
     setOrderOpen(true);
   };
 
@@ -131,12 +160,14 @@ export function ServiceCommerceBlocks({
             ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }}
       />
-      <PackageOrderDialog
-        open={orderOpen}
-        onOpenChange={setOrderOpen}
-        service={service}
-        selectedPackage={selectedPackage}
-      />
+      {dialogRequested ? (
+        <PackageOrderDialog
+          open={orderOpen}
+          onOpenChange={setOrderOpen}
+          service={service}
+          selectedPackage={selectedPackage}
+        />
+      ) : null}
       {/* No-JS / deep-link anchor — not part of the visual order flow */}
       <div id="order-configuration" className="sr-only" aria-hidden="true" />
     </>

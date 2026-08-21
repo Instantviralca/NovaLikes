@@ -30,7 +30,9 @@ function blockText(block: ArticleContentBlock): string {
     case 'faq_group':
       return block.items.map((f) => `${f.question} ${f.answer}`).join(' ');
     case 'internal_cta':
-      return `${block.label} ${block.description ?? ''}`;
+      return `${block.heading ?? ''} ${block.label} ${block.description ?? ''}`;
+    case 'service_cluster_cta':
+      return `${block.heading} ${block.text}`;
     case 'related_service_card':
     case 'related_article_card':
       return `${block.label ?? ''} ${block.description ?? ''}`;

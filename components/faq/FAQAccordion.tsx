@@ -23,7 +23,7 @@ export function FAQAccordion({
   if (items.length === 0) return null;
 
   return (
-    <div className={cn('rounded-lg border border-border bg-card', className)}>
+    <div className={cn('overflow-hidden rounded-[1.25rem] bg-white shadow-[0_12px_32px_-20px_rgba(50,30,20,0.45)] ring-1 ring-black/[0.04]', className)}>
       {items.map((faq) => (
         <FAQItem
           key={faq.id}

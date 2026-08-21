@@ -1,0 +1,24 @@
+{
+  "h1": "Customer Reviews",
+  "intro": "Customer reviews from NovaLikes' published review catalogue. Ratings below reflect that catalogue and may include both 4-star and 5-star feedback.",
+  "catalogueHeading": "Customer review catalogue",
+  "emptyFilter": "No reviews match this platform filter.",
+  "showingTemplate": "Showing {visible} of {total} {word}",
+  "reviewSingular": "review",
+  "reviewPlural": "reviews",
+  "loadMore": "Load More Reviews",
+  "emptyCatalogue": "Customer reviews will appear here when approved feedback is available.",
+  "filterAria": "Filter reviews by platform",
+  "filterAll": "All",
+  "basedOnTemplate": "Based on {count} customer {word}",
+  "exploreTitle": "Ready to Explore NovaLikes?",
+  "exploreIntro": "Browse our Instagram, TikTok and Facebook services and choose the option that fits what you're looking for.",
+  "exploreInstagram": "Explore Instagram",
+  "exploreTikTok": "Explore TikTok",
+  "exploreFacebook": "Explore Facebook",
+  "readMore": "Read more",
+  "showLess": "Show less",
+  "chrome": {
+    "breadcrumb": "Reviews"
+  }
+}

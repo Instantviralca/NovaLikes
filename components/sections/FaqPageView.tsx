@@ -14,10 +14,11 @@ import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
-import { Eyebrow } from '@/components/typography/eyebrow';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
+import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { Button } from '@/components/ui/button';
+import { routes } from '@/config/routes';
 import { FAQ_CATEGORIES } from '@/data/faqs/categories';
 import {
   faqAnalyticsEvents,
@@ -29,17 +30,37 @@ import {
 } from '@/lib/analytics/faq-page-events';
 import { searchFaqs } from '@/lib/faqs/search';
 import type { FaqPageContent } from '@/types/content';
+import type { PublicCta } from '@/types/cta';
 import type { FAQCategoryId, PublicFaq } from '@/types/faq';
 
 type FaqPageViewProps = {
   content: FaqPageContent;
   items: PublicFaq[];
+  categories?: typeof FAQ_CATEGORIES;
+  homeHref?: string;
+  homeLabel?: string;
+  faqLabel?: string;
+  categoriesLabel?: string;
+  allLabel?: string;
+  emptyTitle?: string;
+  needMoreHelp?: string;
 };
 
 /**
- * Main FAQ hub view — Document 13.03 + 14.04 shared FAQ system.
+ * Main FAQ hub view — search-focused FAQ resource.
  */
-export function FaqPageView({ content, items }: FaqPageViewProps) {
+export function FaqPageView({
+  content,
+  items,
+  categories = FAQ_CATEGORIES,
+  homeHref = routes.home,
+  homeLabel = 'Home',
+  faqLabel = 'FAQ',
+  categoriesLabel,
+  allLabel,
+  emptyTitle = 'No matching questions',
+  needMoreHelp = 'NEED MORE HELP?',
+}: FaqPageViewProps) {
   const [query, setQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<FAQCategoryId | 'all'>('all');
 
@@ -73,126 +94,109 @@ export function FaqPageView({ content, items }: FaqPageViewProps) {
   }, [query, filtered.length]);
 
   const grouped = useMemo(() => {
-    return FAQ_CATEGORIES.map((category) => ({
+    return categories.map((category) => ({
       ...category,
       items: filtered
         .filter((item) => item.category === category.id)
         .sort((a, b) => a.order - b.order),
     })).filter((group) => group.items.length > 0);
-  }, [filtered]);
+  }, [filtered, categories]);
 
   const categoryIdsWithContent = useMemo(() => {
     const ids = new Set(items.map((item) => item.category));
-    return FAQ_CATEGORIES.map((category) => category.id).filter((id) => ids.has(id));
-  }, [items]);
+    return categories.map((category) => category.id).filter((id) => ids.has(id));
+  }, [items, categories]);
 
   return (
     <>
-      <Section spacing="lg" className="bg-hero-wash" aria-label="FAQ hero">
+      <Section spacing="lg" className="bg-transparent" aria-label="FAQ hero">
         <Container size="xl">
-          <Stack gap="lg" className="mx-auto max-w-3xl">
+          <Stack gap="md" className="mx-auto max-w-3xl">
             <Breadcrumb
               items={[
-                { label: 'Home', href: '/' },
-                { label: 'FAQ' },
+                { label: homeLabel, href: homeHref },
+                { label: faqLabel },
               ]}
               variant="subtle"
             />
-            {content.hero.eyebrow ? (
-              <Eyebrow className="text-[var(--brand-primary)]">{content.hero.eyebrow}</Eyebrow>
-            ) : null}
-            <Heading as="h1" size="h1">
-              {content.hero.title}
+            <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
+              {accentLastWord(content.hero.title)}
             </Heading>
-            <Lead className="text-pretty text-[var(--text-secondary)]">{content.hero.description}</Lead>
-            <div className="flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap">
-              {content.hero.primaryCta ? (
-                <Button asChild size="lg" className="min-h-11 w-full sm:w-auto">
-                  <Link href={content.hero.primaryCta.href}>
-                    {content.hero.primaryCta.label}
-                  </Link>
-                </Button>
-              ) : null}
-              {content.hero.secondaryCta ? (
-                <Button asChild size="lg" variant="outline" className="min-h-11 w-full sm:w-auto">
-                  <Link href={content.hero.secondaryCta.href}>
-                    {content.hero.secondaryCta.label}
-                  </Link>
-                </Button>
-              ) : null}
-            </div>
+            <Lead className="text-pretty text-[var(--text-secondary)]">
+              {content.hero.description}
+            </Lead>
           </Stack>
         </Container>
       </Section>
 
-      <Section spacing="lg" className="bg-muted/20" aria-label="FAQ content">
+      <Section spacing="lg" className="bg-transparent" aria-label="FAQ content">
         <Container size="xl">
-          <div className="grid gap-10 lg:grid-cols-[240px_minmax(0,1fr)]">
-            <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-              <FAQSearch
-                value={query}
-                onChange={setQuery}
-                resultCount={filtered.length}
-                label={content.search.label}
-                placeholder={content.search.placeholder}
+          <div className="mb-8 space-y-4 lg:mb-10">
+            <FAQSearch
+              value={query}
+              onChange={setQuery}
+              resultCount={filtered.length}
+              label={content.search.label}
+              placeholder={content.search.placeholder}
+            />
+            {query ? (
+              <Button
+                type="button"
+                variant="outline"
+                className="min-h-11"
+                onClick={() => setQuery('')}
+              >
+                {content.search.clearLabel}
+              </Button>
+            ) : null}
+            <FAQCategoryNav
+              activeCategory={activeCategory}
+              onSelect={setActiveCategory}
+              categoryIds={categoryIdsWithContent}
+              categories={categories}
+              categoriesLabel={categoriesLabel}
+              allLabel={allLabel}
+            />
+          </div>
+
+          <div className="space-y-12">
+            {grouped.length === 0 ? (
+              <FAQEmptyState
+                title={emptyTitle}
+                description={content.search.emptyState}
               />
-              {query ? (
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="min-h-11 w-full"
-                  onClick={() => setQuery('')}
+            ) : (
+              grouped.map((group) => (
+                <section
+                  key={group.id}
+                  id={group.anchor}
+                  aria-labelledby={`faq-section-${group.id}`}
+                  className="scroll-mt-28"
                 >
-                  {content.search.clearLabel}
-                </Button>
-              ) : null}
-
-              <FAQCategoryNav
-                activeCategory={activeCategory}
-                onSelect={setActiveCategory}
-                categoryIds={categoryIdsWithContent}
-              />
-            </aside>
-
-            <div className="space-y-12">
-              {grouped.length === 0 ? (
-                <FAQEmptyState
-                  title="No matching questions"
-                  description={content.search.emptyState}
-                />
-              ) : (
-                grouped.map((group) => (
-                  <section
-                    key={group.id}
-                    id={group.anchor}
-                    aria-labelledby={`faq-section-${group.id}`}
-                    className="scroll-mt-28"
-                  >
-                    <Heading as="h2" size="h2" id={`faq-section-${group.id}`} className="mb-6">
-                      {group.label}
-                    </Heading>
-                    <FAQAccordion
-                      items={group.items}
-                      onItemOpen={(faqId) =>
-                        trackFaqPageEvent(faqPageAnalyticsEvents.faq_question_open, {
-                          faqId,
-                          categoryId: group.id,
-                        })
-                      }
-                    />
-                    {group.id === 'refunds' ? (
-                      <div className="mt-4">
-                        <Button asChild variant="link" className="min-h-11 px-0">
-                          <Link href={content.refundPolicyCta.href}>
-                            {content.refundPolicyCta.label}
-                          </Link>
-                        </Button>
-                      </div>
-                    ) : null}
-                  </section>
-                ))
-              )}
-            </div>
+                  <Heading as="h2" size="h2" id={`faq-section-${group.id}`} className="mb-6">
+                    {group.label}
+                  </Heading>
+                  <FAQAccordion
+                    items={group.items}
+                    onItemOpen={(faqId) =>
+                      trackFaqPageEvent(faqPageAnalyticsEvents.faq_question_open, {
+                        faqId,
+                        categoryId: group.id,
+                      })
+                    }
+                  />
+                  {group.id === 'payments_refunds' ? (
+                    <div className="mt-4">
+                      <Button asChild variant="link" className="min-h-11 px-0">
+                        <Link href={content.refundPolicyCta.href}>
+                          {content.refundPolicyCta.label}
+                        </Link>
+                      </Button>
+                    </div>
+                  ) : null}
+                </section>
+              ))
+            )}
           </div>
         </Container>
       </Section>
@@ -200,13 +204,40 @@ export function FaqPageView({ content, items }: FaqPageViewProps) {
       <Section
         id={content.finalCta.id}
         spacing="lg"
-        className="bg-brand/5"
+        className="bg-transparent"
         aria-labelledby="faq-final-cta-heading"
       >
         <Container size="xl">
           <FAQSupportCTA
+            eyebrow={needMoreHelp}
             title={content.finalCta.title}
             description={content.finalCta.description}
+            primary={
+              {
+                id: 'faq-cta-contact',
+                title: content.finalCta.title,
+                description: content.finalCta.description,
+                buttonLabel: content.finalCta.primaryCta.label,
+                destination: content.finalCta.primaryCta.href,
+                variant: 'primary',
+                pageLocations: ['faq'],
+                order: 1,
+              } satisfies PublicCta
+            }
+            secondary={
+              content.finalCta.secondaryCta
+                ? ({
+                    id: 'faq-cta-track',
+                    title: content.finalCta.secondaryCta.label,
+                    description: '',
+                    buttonLabel: content.finalCta.secondaryCta.label,
+                    destination: content.finalCta.secondaryCta.href,
+                    variant: 'secondary',
+                    pageLocations: ['faq'],
+                    order: 2,
+                  } satisfies PublicCta)
+                : undefined
+            }
           />
         </Container>
       </Section>

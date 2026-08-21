@@ -31,7 +31,7 @@ export function AuthorAvatar({
     return (
       <div
         className={cn(
-          'flex shrink-0 items-center justify-center border border-neutral-200 bg-neutral-50 font-semibold text-neutral-600',
+          'flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-neutral-200 bg-neutral-50 font-semibold text-neutral-600',
           dims.className,
           className,
         )}
@@ -48,7 +48,11 @@ export function AuthorAvatar({
       alt={`Portrait of ${author.name}`}
       width={dims.px}
       height={dims.px}
-      className={cn('shrink-0 object-cover', dims.className, className)}
+      className={cn(
+        'shrink-0 overflow-hidden rounded-full object-cover object-top',
+        dims.className,
+        className,
+      )}
     />
   );
 }

@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { routes } from '@/config/routes';
+import { localizeHref } from '@/lib/i18n/paths';
 
 type TermsAgreementProps = {
   checked: boolean;
@@ -18,9 +20,14 @@ export function TermsAgreement({
   checked,
   onCheckedChange,
   error,
-  termsHref = routes.termsAndConditions,
-  privacyHref = routes.privacyPolicy,
+  termsHref,
+  privacyHref,
 }: TermsAgreementProps) {
+  const { locale, ui } = useI18nChrome();
+  const terms = termsHref ?? localizeHref(routes.termsAndConditions, locale);
+  const privacy = privacyHref ?? localizeHref(routes.privacyPolicy, locale);
+  const refund = localizeHref(routes.refundPolicy, locale);
+
   return (
     <div className="space-y-2">
       <div className="flex items-start gap-3">
@@ -31,23 +38,19 @@ export function TermsAgreement({
           aria-invalid={Boolean(error)}
         />
         <Label htmlFor="terms-agreement" className="leading-snug font-normal">
-          I agree to the{' '}
-          <Link href={termsHref} className="underline underline-offset-2" target="_blank">
-            Terms of Service
+          {ui.checkout.termsAgreePrefix}{' '}
+          <Link href={terms} className="underline underline-offset-2" target="_blank">
+            {ui.checkout.termsOfService}
           </Link>
-          ,{' '}
-          <Link href={privacyHref} className="underline underline-offset-2" target="_blank">
-            Privacy Policy
+          {ui.checkout.termsJoin}
+          <Link href={privacy} className="underline underline-offset-2" target="_blank">
+            {ui.checkout.privacyPolicy}
           </Link>
-          , and{' '}
-          <Link
-            href={routes.refundPolicy}
-            className="underline underline-offset-2"
-            target="_blank"
-          >
-            Refund Policy
+          {ui.checkout.termsAnd}
+          <Link href={refund} className="underline underline-offset-2" target="_blank">
+            {ui.checkout.refundPolicy}
           </Link>
-          .
+          {ui.checkout.termsPeriod}
         </Label>
       </div>
       {error ? (

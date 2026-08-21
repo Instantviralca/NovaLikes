@@ -3,7 +3,7 @@
  */
 
 import { allowMockPayments, isProductionRuntime } from '@/lib/config/env';
-import { getCheckoutUrl, getSiteUrlPath } from '@/lib/config/hosts';
+import { getSiteUrlPath } from '@/lib/config/hosts';
 import { notifyOrderPaid, notifyOrderPlaced } from '@/lib/notifications/order-hooks';
 import { placeOrder, type PlaceOrderInput } from '@/lib/orders/create';
 import { getPersistence } from '@/lib/persistence';
@@ -85,7 +85,9 @@ export async function executeCheckout(
     const successUrl = getSiteUrlPath(
       `/order-success?orderId=${encodeURIComponent(order.id)}&email=${encodeURIComponent(order.guestEmail)}`,
     );
-    const cancelUrl = `${getCheckoutUrl('/')}?cancelled=1&orderId=${encodeURIComponent(order.id)}`;
+    const cancelUrl = getSiteUrlPath(
+      `/checkout?cancelled=1&orderId=${encodeURIComponent(order.id)}`,
+    );
 
     if (remoteReady) {
       const totals = input.totals ?? {

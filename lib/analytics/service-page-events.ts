@@ -43,14 +43,6 @@ import {
   facebookPostLikesAnalyticsEvents,
   trackFacebookPostLikesEvent,
 } from '@/lib/analytics/facebook-post-likes-events';
-import {
-  youtubeSubscribersAnalyticsEvents,
-  trackYouTubeSubscribersEvent,
-} from '@/lib/analytics/youtube-subscribers-events';
-import {
-  youtubeViewsAnalyticsEvents,
-  trackYouTubeViewsEvent,
-} from '@/lib/analytics/youtube-views-events';
 
 export type ServicePageAnalyticsPayload = {
   href?: string;
@@ -418,85 +410,6 @@ export function getServicePageAnalytics(slug: string): ServicePageAnalytics | nu
       trackOrderClick: (payload) =>
         trackFacebookPostLikesEvent(
           facebookPostLikesAnalyticsEvents.facebook_post_likes_track_order_click,
-          payload,
-        ),
-    };
-  }
-
-  if (slug === 'buy-youtube-subscribers') {
-    return {
-      viewPackagesEvent: youtubeSubscribersAnalyticsEvents.youtube_subscribers_view_packages,
-      trackOrderEvent: youtubeSubscribersAnalyticsEvents.youtube_subscribers_track_order_click,
-      viewPackages: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_view_packages,
-          payload,
-        ),
-      packageImpression: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_package_impression,
-          payload,
-        ),
-      packageSelect: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_package_select,
-          payload,
-        ),
-      configurationSubmit: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_url_submit,
-          payload,
-        ),
-      checkoutStart: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_checkout_start,
-          payload,
-        ),
-      relatedServiceClick: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_related_service_click,
-          payload,
-        ),
-      faqOpen: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_faq_open,
-          payload,
-        ),
-      trackOrderClick: (payload) =>
-        trackYouTubeSubscribersEvent(
-          youtubeSubscribersAnalyticsEvents.youtube_subscribers_track_order_click,
-          payload,
-        ),
-    };
-  }
-
-  if (slug === 'buy-youtube-views') {
-    return {
-      viewPackagesEvent: youtubeViewsAnalyticsEvents.youtube_views_view_packages,
-      trackOrderEvent: youtubeViewsAnalyticsEvents.youtube_views_track_order_click,
-      viewPackages: (payload) =>
-        trackYouTubeViewsEvent(youtubeViewsAnalyticsEvents.youtube_views_view_packages, payload),
-      packageImpression: (payload) =>
-        trackYouTubeViewsEvent(
-          youtubeViewsAnalyticsEvents.youtube_views_package_impression,
-          payload,
-        ),
-      packageSelect: (payload) =>
-        trackYouTubeViewsEvent(youtubeViewsAnalyticsEvents.youtube_views_package_select, payload),
-      configurationSubmit: (payload) =>
-        trackYouTubeViewsEvent(youtubeViewsAnalyticsEvents.youtube_views_url_submit, payload),
-      checkoutStart: (payload) =>
-        trackYouTubeViewsEvent(youtubeViewsAnalyticsEvents.youtube_views_checkout_start, payload),
-      relatedServiceClick: (payload) =>
-        trackYouTubeViewsEvent(
-          youtubeViewsAnalyticsEvents.youtube_views_related_service_click,
-          payload,
-        ),
-      faqOpen: (payload) =>
-        trackYouTubeViewsEvent(youtubeViewsAnalyticsEvents.youtube_views_faq_open, payload),
-      trackOrderClick: (payload) =>
-        trackYouTubeViewsEvent(
-          youtubeViewsAnalyticsEvents.youtube_views_track_order_click,
           payload,
         ),
     };

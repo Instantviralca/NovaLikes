@@ -1,11 +1,21 @@
 import type { ReactNode } from 'react';
 
 import { SiteLayout } from '@/components/layout/site-layout';
+import { SiteJsonLd } from '@/components/seo/site-json-ld';
+import { getSiteChrome } from '@/lib/i18n/site-chrome';
 
 type LegalLayoutProps = {
   children: ReactNode;
 };
 
-export default function LegalLayout({ children }: LegalLayoutProps) {
-  return <SiteLayout>{children}</SiteLayout>;
+export default async function LegalLayout({ children }: LegalLayoutProps) {
+  const chrome = await getSiteChrome();
+  return (
+    <>
+      <SiteJsonLd />
+      <SiteLayout locale={chrome.locale} ui={chrome.ui}>
+        {children}
+      </SiteLayout>
+    </>
+  );
 }

@@ -1,0 +1,122 @@
+{
+  "homepage": {
+    "title": "Comprar seguidores, curtidas e views | NovaLikes",
+    "description": "Compre seguidores, curtidas, visualizações e comentários para Instagram, TikTok e Facebook. Compare pacotes, peça online e acompanhe seu pedido NovaLikes."
+  },
+  "faq": {
+    "title": "FAQ da NovaLikes | Pedidos, pagamentos e reembolsos",
+    "description": "Respostas sobre pedidos NovaLikes, pagamentos, reembolsos, rastreio, requisitos da conta e serviços de Instagram, TikTok e Facebook."
+  },
+  "about": {
+    "title": "Sobre a NovaLikes | Serviços de Instagram, TikTok e Facebook",
+    "description": "Saiba como a NovaLikes funciona, quais serviços de redes sociais oferecemos e como acompanhamos pedidos de Instagram, TikTok e Facebook do início ao fim."
+  },
+  "contact": {
+    "title": "Contato NovaLikes | Suporte de pedidos e serviços",
+    "description": "Fale com a NovaLikes para ajuda com um pedido, pagamento, rastreio ou uma dúvida de serviço de Instagram, TikTok e Facebook."
+  },
+  "reviews": {
+    "title": "Avaliações da NovaLikes | Experiências de clientes",
+    "description": "Leia comentários de clientes sobre os serviços de Instagram, TikTok e Facebook da NovaLikes, o pedido, o suporte e a experiência geral de serviço."
+  },
+  "services": {
+    "buy-instagram-followers": {
+      "title": "Comprar seguidores no Instagram | NovaLikes",
+      "description": "Compare pacotes e preços de seguidores no Instagram. Peça para um perfil público sem senha. Reembolso em 30 dias em pedidos elegíveis."
+    },
+    "buy-instagram-likes": {
+      "title": "Comprar curtidas no Instagram para posts e Reels",
+      "description": "Compare pacotes de curtidas no Instagram para posts e Reels públicos. Adicione o link, escolha um pacote e conclua o pedido online."
+    },
+    "buy-instagram-views": {
+      "title": "Comprar visualizações no Instagram | NovaLikes",
+      "description": "Compare pacotes de visualizações no Instagram para Reels e vídeos elegíveis. Adicione o link público, escolha um pacote e peça online."
+    },
+    "buy-instagram-comments": {
+      "title": "Comprar comentários no Instagram | NovaLikes",
+      "description": "Compare pacotes de comentários no Instagram para posts e Reels elegíveis. Adicione o link público, escolha um pacote e faça o pedido."
+    },
+    "buy-tiktok-followers": {
+      "title": "Comprar seguidores no TikTok | NovaLikes",
+      "description": "Compare pacotes e preços de seguidores no TikTok. Peça para um perfil público sem senha. Reembolso em 30 dias em pedidos elegíveis."
+    },
+    "buy-tiktok-likes": {
+      "title": "Comprar curtidas no TikTok para vídeos | NovaLikes",
+      "description": "Compare pacotes e preços de curtidas no TikTok para um vídeo público. Adicione o link, escolha um pacote e conclua o pedido online."
+    },
+    "buy-tiktok-views": {
+      "title": "Comprar visualizações no TikTok | NovaLikes",
+      "description": "Compare pacotes e preços de visualizações no TikTok para um vídeo público. Adicione o link, escolha um pacote e conclua o pedido."
+    },
+    "buy-facebook-followers": {
+      "title": "Comprar seguidores no Facebook | NovaLikes",
+      "description": "Compare pacotes de seguidores no Facebook para uma Página pública. Envie a URL correta, escolha um pacote e peça online."
+    },
+    "buy-facebook-page-likes": {
+      "title": "Comprar curtidas de Página no Facebook",
+      "description": "Compare pacotes e preços de curtidas de Página no Facebook. Envie a URL da Página pública, escolha um pacote e conclua o pedido."
+    },
+    "buy-facebook-post-likes": {
+      "title": "Comprar curtidas de publicação no Facebook",
+      "description": "Compare pacotes e preços de curtidas de publicação no Facebook. Envie a URL pública, escolha um pacote e conclua o pedido."
+    }
+  },
+  "toolsHub": {
+    "title": "Ferramentas grátis de redes sociais | Instagram, TikTok e Facebook",
+    "description": "Use ferramentas grátis da NovaLikes para Instagram, TikTok e Facebook, incluindo downloaders de vídeo, visualizadores de perfil e verificações de perfil público."
+  },
+  "tools": {
+    "instagram-profile-picture-viewer": {
+      "title": "Visualizador de foto de perfil do Instagram – Tamanho real | NovaLikes",
+      "description": "Veja e baixe a foto de perfil do Instagram disponível publicamente em tamanho real. Digite um nome de usuário ou URL de perfil público. Sem login no Instagram."
+    },
+    "instagram-follower-counter": {
+      "title": "Verificador de seguidores do Instagram – Grátis | NovaLikes",
+      "description": "Confira a contagem de seguidores que o Instagram deixa disponível publicamente para um perfil. Digite um nome de usuário ou URL de perfil público. Sem login no Instagram."
+    },
+    "instagram-profile-viewer": {
+      "title": "Visualizador de perfil do Instagram – Perfis públicos | NovaLikes",
+      "description": "Veja detalhes de perfil do Instagram disponíveis publicamente, incluindo foto, bio, seguidores, seguindo e contagem de posts. Sem login no Instagram."
+    },
+    "instagram-video-downloader": {
+      "title": "Downloader de vídeos do Instagram – Vídeos públicos | NovaLikes",
+      "description": "Cole a URL de um post ou Reel público do Instagram para conferir mídia de vídeo baixável quando o Instagram a expõe. Sem login no Instagram."
+    },
+    "tiktok-video-downloader": {
+      "title": "Downloader grátis de vídeos do TikTok – MP4 | NovaLikes",
+      "description": "Cole uma URL pública de vídeo do TikTok para encontrar opções de download MP4 disponíveis. Não é necessário login nem app do TikTok. A disponibilidade pode variar por vídeo."
+    },
+    "tiktok-profile-picture-downloader": {
+      "title": "Downloader de foto de perfil do TikTok – Tamanho real | NovaLikes",
+      "description": "Veja e baixe uma foto de perfil do TikTok disponível publicamente em tamanho real. Digite um nome de usuário, @handle ou URL de perfil público. Sem login no TikTok."
+    },
+    "facebook-video-downloader": {
+      "title": "Downloader de vídeos do Facebook – HD e SD grátis | NovaLikes",
+      "description": "Cole uma URL pública de vídeo do Facebook para encontrar opções de download HD ou SD. Não é necessário login nem app do Facebook para vídeos públicos suportados."
+    },
+    "facebook-reels-downloader": {
+      "title": "Downloader de Reels do Facebook – HD e SD grátis | NovaLikes",
+      "description": "Cole uma URL pública de Reel do Facebook para encontrar opções de download HD ou SD. Não é necessário login nem app do Facebook para Reels públicos suportados."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Política de privacidade | NovaLikes",
+    "description": "Saiba como a NovaLikes coleta, usa, armazena e trata informações quando você usa o site, os serviços pagos, as ferramentas gratuitas e o suporte."
+  },
+  "refundPolicy": {
+    "title": "Política de reembolso | Garantia de 30 dias | NovaLikes",
+    "description": "Leia a garantia de reembolso de 30 dias da NovaLikes, a elegibilidade, as exclusões, os cancelamentos, as reposições e o processo de solicitação."
+  },
+  "termsAndConditions": {
+    "title": "Termos e condições | NovaLikes",
+    "description": "Leia os termos que regem os serviços da NovaLikes, pedidos, pagamentos, ferramentas gratuitas, responsabilidades do cliente, reembolsos e o uso do site."
+  },
+  "cookiePolicy": {
+    "title": "Política de cookies | NovaLikes",
+    "description": "Saiba como a NovaLikes usa cookies e armazenamento do navegador para o carrinho, sessões de administração, preferências e outros recursos do site."
+  },
+  "disclaimer": {
+    "title": "Aviso legal | NovaLikes",
+    "description": "Leia limitações importantes sobre os serviços da NovaLikes, plataformas de terceiros, ferramentas gratuitas, métricas de redes sociais e conteúdo baixado."
+  }
+}

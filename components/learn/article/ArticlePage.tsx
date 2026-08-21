@@ -1,24 +1,22 @@
+import { ArticleClosingCta } from '@/components/learn/article/ArticleClosingCta';
 import { ArticleContent } from '@/components/learn/article/ArticleContent';
 import { ArticleFAQ } from '@/components/learn/article/ArticleFAQ';
 import { ArticleFeaturedImage } from '@/components/learn/article/ArticleFeaturedImage';
 import { ArticleHero } from '@/components/learn/article/ArticleHero';
-import { ArticleShare } from '@/components/learn/article/ArticleShare';
 import { ArticleSidebar } from '@/components/learn/article/ArticleSidebar';
 import { AuthorBox } from '@/components/learn/article/AuthorBox';
 import { KeyTakeaways } from '@/components/learn/article/KeyTakeaways';
 import { ReadingProgress } from '@/components/learn/article/ReadingProgress';
 import { RelatedArticles } from '@/components/learn/article/RelatedArticles';
-import { RelatedServices } from '@/components/learn/article/RelatedServices';
 import { TableOfContents } from '@/components/learn/article/TableOfContents';
-import { CTASection } from '@/components/cta';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
-import { selectPageCtas } from '@/lib/ctas';
+import { getLearnArticleClosingCta } from '@/lib/learn/article/closing-cta';
+import { splitArticleIntro } from '@/lib/learn/article/layout';
 import {
   getArticleRelatedLinks,
   prepareArticleForRender,
 } from '@/lib/learn/article';
-import { absoluteUrl } from '@/seo/canonical';
 import type { PublicLearnArticle } from '@/types/learn';
 
 type ArticlePageProps = {
@@ -31,11 +29,17 @@ type ArticlePageProps = {
  * Reusable Learn article template — Document 15.02.
  * Optional sections render only when content exists.
  */
-export function ArticlePage({ article, preview = false }: ArticlePageProps) {
+export function ArticlePage({
+  article,
+  preview = false,
+}: ArticlePageProps) {
   const prepared = prepareArticleForRender(article);
   const related = getArticleRelatedLinks(prepared.article);
-  const ctas = selectPageCtas('learn');
-  const canonical = absoluteUrl(prepared.article.href);
+  const relatedList = related.articles.filter(
+    (item) => item.slug !== prepared.article.slug,
+  );
+  const closingCta = getLearnArticleClosingCta(prepared.article);
+  const { intro, body } = splitArticleIntro(prepared.blocks);
 
   return (
     <div className="overflow-x-hidden">
@@ -47,25 +51,21 @@ export function ArticlePage({ article, preview = false }: ArticlePageProps) {
         </div>
       ) : null}
 
-      <Section className="border-b border-neutral-200 bg-neutral-50">
+      <Section className="border-b border-[#F0E4D8] bg-[#FFF8F3]">
         <Container>
-          <div className="mx-auto max-w-[780px] py-10 md:py-14">
+          <div className="mx-auto max-w-[800px] py-10 md:py-14">
             <ArticleHero article={prepared.article} />
           </div>
         </Container>
       </Section>
 
       <Section>
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]">
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">
+          <div className="flex flex-col gap-10 lg:flex-row lg:justify-center lg:gap-12">
             <article
               data-learn-article
-              className="mx-auto min-w-0 w-full max-w-[780px] space-y-10 lg:mx-0"
+              className="mx-auto min-w-0 w-full max-w-[800px] space-y-8 lg:mx-0"
             >
-              <div className="lg:hidden">
-                <TableOfContents items={prepared.toc} />
-              </div>
-
               {prepared.article.featuredImage ? (
                 <ArticleFeaturedImage
                   image={prepared.article.featuredImage}
@@ -73,40 +73,36 @@ export function ArticlePage({ article, preview = false }: ArticlePageProps) {
                 />
               ) : null}
 
-              <ArticleContent blocks={prepared.blocks} />
+              <div className="lg:hidden">
+                <TableOfContents items={prepared.toc} />
+              </div>
 
-              <KeyTakeaways items={prepared.article.keyTakeaways} />
+              {intro.length > 0 ? <ArticleContent blocks={intro} /> : null}
 
-              <RelatedServices
-                services={related.services}
-                prominentCta={prepared.article.serviceCta}
+              <KeyTakeaways
+                title="At a glance"
+                items={prepared.article.keyTakeaways}
               />
+
+              {body.length > 0 ? <ArticleContent blocks={body} /> : null}
 
               <ArticleFAQ items={prepared.article.faqs} />
 
-              <AuthorBox authorId={prepared.article.authorId} />
-
               <RelatedArticles
-                articles={related.articles}
+                articles={relatedList}
                 currentSlug={prepared.article.slug}
               />
 
-              <ArticleShare url={canonical} title={prepared.article.title} />
+              <AuthorBox authorId={prepared.article.authorId} author={prepared.article.author} />
 
-              {ctas.primary ? (
-                <CTASection
-                  primary={ctas.primary}
-                  secondary={ctas.secondary}
-                  surface="learn"
-                />
-              ) : null}
+              {closingCta ? <ArticleClosingCta cta={closingCta} /> : null}
             </article>
 
-            <div className="hidden lg:block">
+            <div className="hidden w-[260px] shrink-0 lg:block">
               <ArticleSidebar tocItems={prepared.toc} />
             </div>
           </div>
-        </Container>
+        </div>
       </Section>
     </div>
   );

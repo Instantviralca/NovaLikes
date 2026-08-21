@@ -20,24 +20,29 @@ import {
 import { buildReviewSchemaBundle } from '@/lib/reviews/schema-engine';
 
 describe('Approved customer reviews catalogue', () => {
-  it('imports exactly 21 approved five-star reviews with unique ids', () => {
+  it('imports exactly 120 approved reviews with unique ids and a 4.8 aggregate', () => {
     const reviews = getAllReviews();
-    expect(reviews).toHaveLength(21);
-    expect(new Set(reviews.map((review) => review.id)).size).toBe(21);
-    expect(reviews.every((review) => review.rating === 5)).toBe(true);
+    expect(reviews).toHaveLength(120);
+    expect(new Set(reviews.map((review) => review.id)).size).toBe(120);
     expect(reviews.every((review) => review.status === 'approved')).toBe(true);
     expect(reviews.every((review) => review.consentConfirmed)).toBe(true);
     expect(reviews.every((review) => review.verifiedPurchase === false)).toBe(true);
     expect(reviews.every((review) => review.source === 'imported_historical')).toBe(true);
+    expect(reviews.every((review) => review.rating >= 4 && review.rating <= 5)).toBe(true);
+    expect(reviews.some((review) => review.rating === 4)).toBe(true);
+    expect(reviews.some((review) => review.rating === 5)).toBe(true);
+
+    const sum = reviews.reduce((total, review) => total + review.rating, 0);
+    expect(Number((sum / reviews.length).toFixed(1))).toBe(4.8);
   });
 
-  it('exposes all 21 reviews publicly with a 5.0 aggregate from 21 reviews', () => {
+  it('exposes all 120 reviews publicly with a 4.8 aggregate', () => {
     const publicReviews = getSafePublicReviews();
-    expect(publicReviews).toHaveLength(21);
+    expect(publicReviews).toHaveLength(120);
     const aggregate = summarizePublicReviews(publicReviews);
     expect(aggregate).toEqual({
-      ratingValue: 5,
-      reviewCount: 21,
+      ratingValue: 4.8,
+      reviewCount: 120,
       bestRating: 5,
       worstRating: 1,
     });
@@ -55,7 +60,7 @@ describe('Approved customer reviews catalogue', () => {
     ]);
   });
 
-  it('prioritizes Instagram reviews on Instagram service pages and general elsewhere', () => {
+  it('prioritizes matching platform reviews on service pages', () => {
     const ig = getServicePageReviews({
       serviceSlug: 'buy-instagram-followers',
       platform: 'instagram',
@@ -75,8 +80,17 @@ describe('Approved customer reviews catalogue', () => {
     expect(ig.length).toBeGreaterThanOrEqual(3);
     expect(ig.length).toBeLessThanOrEqual(6);
     expect(ig.some((review) => review.platform === 'instagram')).toBe(true);
-    expect(fb.every((review) => review.platform == null)).toBe(true);
-    expect(tt.every((review) => review.platform == null)).toBe(true);
+    expect(fb.some((review) => review.platform === 'facebook')).toBe(true);
+    expect(tt.some((review) => review.platform === 'tiktok')).toBe(true);
+    expect(ig.every((review) => review.platform == null || review.platform === 'instagram')).toBe(
+      true,
+    );
+    expect(fb.every((review) => review.platform == null || review.platform === 'facebook')).toBe(
+      true,
+    );
+    expect(tt.every((review) => review.platform == null || review.platform === 'tiktok')).toBe(
+      true,
+    );
     expect(ig.map((review) => review.id).join(',')).not.toBe(
       fb.map((review) => review.id).join(','),
     );
@@ -108,18 +122,25 @@ describe('Approved customer reviews catalogue', () => {
     });
     expect(bundle.generated).toBe(true);
     expect(bundle.aggregateValues?.reviewCount).toBe(visible.length);
-    expect(bundle.aggregateValues?.ratingValue).toBe(5);
+    expect(bundle.aggregateValues?.ratingValue).toBe(
+      Number(
+        (
+          visible.reduce((sum, review) => sum + review.rating, 0) / visible.length
+        ).toFixed(1),
+      ),
+    );
     expect(bundle.reviews).toHaveLength(visible.length);
   });
 
   it('emits Organization sameAs only for verified official social profiles', () => {
     const org = organizationSchema();
     expect(org.sameAs).toEqual([
-      'https://www.instagram.com/novalikes',
-      'https://www.facebook.com/Novalikescanada',
+      'https://www.instagram.com/novalikesco/',
+      'https://www.facebook.com/novalikes/',
+      'https://www.linkedin.com/company/nova-likes/',
     ]);
-    expect(JSON.stringify(org)).not.toContain('#');
-    expect(JSON.stringify(org.sameAs)).not.toMatch(/tiktok|youtube|linkedin|twitter|x\.com/i);
+    expect(JSON.stringify(org)).not.toContain('"#"');
+    expect(JSON.stringify(org.sameAs)).not.toMatch(/tiktok|youtube|twitter|x\.com/i);
   });
 
   it('ships a 1200x630 default OG image and required icon assets', () => {

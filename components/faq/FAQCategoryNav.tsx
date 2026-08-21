@@ -10,6 +10,9 @@ export type FAQCategoryNavProps = {
   onSelect: (category: FAQCategoryId | 'all') => void;
   /** Optional subset of categories to show (e.g. those with results). */
   categoryIds?: FAQCategoryId[];
+  categories?: typeof FAQ_CATEGORIES;
+  categoriesLabel?: string;
+  allLabel?: string;
   className?: string;
 };
 
@@ -20,24 +23,27 @@ export function FAQCategoryNav({
   activeCategory,
   onSelect,
   categoryIds,
+  categories: categorySource = FAQ_CATEGORIES,
+  categoriesLabel = 'Categories',
+  allLabel = 'All',
   className,
 }: FAQCategoryNavProps) {
   const categories = categoryIds
-    ? FAQ_CATEGORIES.filter((category) => categoryIds.includes(category.id))
-    : FAQ_CATEGORIES;
+    ? categorySource.filter((category) => categoryIds.includes(category.id))
+    : categorySource;
 
   return (
-    <nav aria-label="FAQ categories" className={cn('space-y-2', className)}>
-      <p className="text-sm font-medium text-foreground">Categories</p>
-      <ul className="flex flex-wrap gap-2 lg:flex-col lg:gap-1">
-        <li>
+    <nav aria-label="FAQ categories" className={cn(className)}>
+      <p className="mb-2 text-sm font-medium text-foreground lg:mb-3">{categoriesLabel}</p>
+      <ul className="-mx-1 flex flex-wrap gap-2 overflow-x-auto px-1 pb-1 sm:overflow-visible">
+        <li className="max-w-full">
           <button
             type="button"
             className={cn(
-              'min-h-11 rounded-md px-3 py-2 text-left text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+              'min-h-11 max-w-full rounded-full px-4 py-2 text-start text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
               activeCategory === 'all'
-                ? 'bg-foreground text-background'
-                : 'bg-muted/60 text-foreground hover:bg-muted',
+                ? 'bg-[var(--brand-primary)] text-white'
+                : 'bg-[#FFF1E6] text-[var(--text-primary)] hover:bg-[#FFE4CC]',
             )}
             aria-current={activeCategory === 'all' ? 'true' : undefined}
             onClick={() => {
@@ -47,18 +53,18 @@ export function FAQCategoryNav({
               });
             }}
           >
-            All questions
+            {allLabel}
           </button>
         </li>
         {categories.map((category) => (
-          <li key={category.id}>
+          <li key={category.id} className="max-w-full">
             <button
               type="button"
               className={cn(
-                'min-h-11 w-full rounded-md px-3 py-2 text-left text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                'min-h-11 max-w-full rounded-full px-4 py-2 text-start text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
                 activeCategory === category.id
-                  ? 'bg-foreground text-background'
-                  : 'bg-muted/60 text-foreground hover:bg-muted',
+                  ? 'bg-[var(--brand-primary)] text-white'
+                  : 'bg-[#FFF1E6] text-[var(--text-primary)] hover:bg-[#FFE4CC]',
               )}
               aria-current={activeCategory === category.id ? 'true' : undefined}
               onClick={() => {

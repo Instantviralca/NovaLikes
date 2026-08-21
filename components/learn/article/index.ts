@@ -19,3 +19,5 @@ export { ReadingProgress } from '@/components/learn/article/ReadingProgress';
 export { ArticleShare } from '@/components/learn/article/ArticleShare';
 export { ArticleNotFound } from '@/components/learn/article/ArticleNotFound';
 export { ArticleSkeleton } from '@/components/learn/article/ArticleSkeleton';
+export { ArticleClosingCta } from '@/components/learn/article/ArticleClosingCta';
+export { ArticleServiceCluster } from '@/components/learn/article/ArticleServiceCluster';

@@ -1,0 +1,660 @@
+{
+  "content": {
+    "slug": "buy-facebook-followers",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Comprar seguidores de Facebook | Paquetes y precios",
+      "description": "Compra seguidores de Facebook con opciones de paquete claras, pago con URL de Página pública, detalles de entrega gradual y seguimiento del pedido. Sin contraseña necesaria."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR SEGUIDORES DE FACEBOOK",
+      "title": "Comprar seguidores de Facebook",
+      "description": "Compra seguidores de Facebook eligiendo el paquete y la cantidad que encajan con tu Página. NovaLikes te permite comparar los paquetes y precios de seguidores de Facebook disponibles antes de pedir. Selecciona el número de seguidores que quieres, facilita la URL pública correcta de la Página de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+      "purpose": "Convert for Facebook follower packages worldwide",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "Buy Facebook Followers",
+        "Buy Followers On Facebook",
+        "Buying Facebook Followers",
+        "Facebook Followers Buy",
+        "Buy Facebook Page Followers",
+        "Buy Facebook Business Page Followers"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Elegir un paquete de seguidores de Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Cómo funciona",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-f-trust-url",
+          "label": "Solo URL pública de Página de Facebook"
+        },
+        {
+          "id": "fb-f-trust-password",
+          "label": "Sin contraseña necesaria"
+        },
+        {
+          "id": "fb-f-trust-checkout",
+          "label": "Pago seguro"
+        },
+        {
+          "id": "fb-f-trust-track",
+          "label": "Seguimiento del pedido"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp",
+        "alt": "Ilustración de seguidores de Página de negocio de Facebook y panel de Meta Business Suite",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Paquetes y precios de seguidores de Facebook",
+      "description": "Compara los paquetes, cantidades y precios de seguidores de Facebook disponibles antes de pedir. Elige el número de seguidores que quieres para tu Página pública de Facebook, revisa el precio actual del paquete y añade el paquete seleccionado al carrito cuando estés listo.",
+      "purpose": "Present real NovaLikes.com Facebook followers packages",
+      "primaryKeyword": "Facebook follower packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuar con este paquete",
+      "emptyMessage": "Los paquetes de seguidores de Facebook no están disponibles temporalmente."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-followers",
+      "title": "¿Por qué la gente compra seguidores de Facebook?",
+      "description": "La gente compra seguidores de Facebook para reforzar la audiencia visible de su Página de Facebook, mejorar la credibilidad ante nuevos visitantes y apoyar la construcción de comunidad a largo plazo. Un recuento mayor de seguidores puede hacer que una Página se vea más consolidada, pero no garantiza interacción, ventas ni alcance orgánico.",
+      "purpose": "Explain informed use of Facebook followers packages",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "Facebook followers buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-f-community",
+          "title": "Construye comunidad",
+          "description": "Una base de seguidores más grande puede hacer que tu Página de Facebook se vea más consolidada y animar a los nuevos visitantes a explorar tu contenido, productos o servicios."
+        },
+        {
+          "id": "fb-f-first-impression",
+          "title": "Primera impresión más sólida",
+          "description": "Cuando las personas descubren una Página de Facebook, una de las primeras cosas que notan es el tamaño de su audiencia. Un recuento saludable de seguidores puede ayudar a generar confianza en tu marca."
+        },
+        {
+          "id": "fb-f-business-pages",
+          "title": "Apoya Páginas de negocio",
+          "description": "Los negocios suelen usar paquetes de seguidores junto con publicación habitual, publicidad e interacción con clientes para reforzar su presencia online."
+        },
+        {
+          "id": "fb-f-flexible",
+          "title": "Tamaños de paquete flexibles",
+          "description": "Elige un paquete que coincida con el tamaño actual de tu Página y tus objetivos de marketing, en lugar de seleccionar más seguidores de los que tu Página sostiene de forma natural."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-followers",
+      "title": "¿Por qué elegir seguidores de Facebook de NovaLikes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero and Can You Buy",
+      "primaryKeyword": "buy Facebook followers",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-followers-delivery",
+      "title": "Entrega de seguidores de Facebook",
+      "description": "La entrega empieza después de que tu pedido haya sido revisado y confirmado. El tiempo de procesamiento depende del paquete seleccionado y de la demanda actual. Puedes consultar las actualizaciones de progreso disponibles a través de la página de seguimiento del pedido hasta que se complete la entrega.",
+      "purpose": "Explain Facebook followers delivery stages",
+      "primaryKeyword": "Facebook followers delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-del-review",
+          "title": "Revisión del pedido",
+          "description": "Se verifican la URL de tu Página y el paquete seleccionado."
+        },
+        {
+          "id": "fb-f-del-begins",
+          "title": "Empieza la entrega",
+          "description": "Los seguidores empiezan según la estimación de entrega."
+        },
+        {
+          "id": "fb-f-del-progress",
+          "title": "Los seguidores aumentan",
+          "description": "Consulta el estado de tu pedido a través de la página de seguimiento."
+        },
+        {
+          "id": "fb-f-del-complete",
+          "title": "Pedido completado",
+          "description": "Se ha entregado el paquete de seguidores seleccionado."
+        }
+      ]
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Cómo comprar seguidores de Facebook",
+      "description": "Comprar seguidores de Facebook es un proceso sencillo. Elige un paquete de seguidores, introduce la URL pública de tu Página de Facebook, revisa los detalles del pedido y completa el pago seguro. No necesitas facilitar tu contraseña de Facebook, y puedes seguir el estado de tu pedido después de la compra.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "can you buy followers on Facebook"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-f-step-1",
+          "title": "Elige un paquete de seguidores",
+          "description": "Compara los tamaños de paquete disponibles y selecciona la cantidad que mejor encaje con tu Página de Facebook, el tamaño de audiencia y tus objetivos de crecimiento."
+        },
+        {
+          "id": "fb-f-step-2",
+          "title": "Introduce la URL pública de tu Página de Facebook",
+          "description": "Copia el enlace público de tu Página de Facebook y pégalo en el formulario del pedido para que los seguidores se asignen a la Página correcta."
+        },
+        {
+          "id": "fb-f-step-3",
+          "title": "Revisa tu pedido",
+          "description": "Confirma el paquete seleccionado, la URL de la Página, el precio y la información de entrega antes de completar el pago."
+        },
+        {
+          "id": "fb-f-step-4",
+          "title": "Completa el pago seguro",
+          "description": "Finaliza tu compra a través del checkout seguro sin compartir tus credenciales de Facebook."
+        },
+        {
+          "id": "fb-f-step-5",
+          "title": "Sigue tu pedido",
+          "description": "Después del pago, sigue las actualizaciones del pedido disponibles para consultar el progreso de tu compra."
+        }
+      ],
+      "cta": {
+        "label": "Selecciona tu paquete de seguidores",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "¿Qué necesitas para hacer un pedido?",
+      "description": "Pedir seguidores de Facebook solo requiere unos pocos datos públicos. No necesitas facilitar tu contraseña de Facebook, acceso privado a la cuenta ni códigos de verificación.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook followers packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-req-url",
+          "title": "URL pública de Página de Facebook",
+          "description": "Facilita la URL pública de la Página de Facebook que debe recibir el paquete de seguidores seleccionado."
+        },
+        {
+          "id": "fb-f-req-package",
+          "title": "Paquete seleccionado",
+          "description": "Elige la cantidad de seguidores que mejor encaje con tu Página y tus objetivos de marketing actuales."
+        },
+        {
+          "id": "fb-f-req-public",
+          "title": "Acceso público a la Página",
+          "description": "La Página de Facebook seleccionada debe permanecer accesible públicamente mientras se procesa tu pedido."
+        },
+        {
+          "id": "fb-f-req-email",
+          "title": "Dirección de email",
+          "description": "Usa una dirección de email válida para recibir confirmaciones del pedido, actualizaciones y atención al cliente si la necesitas."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-followers-reviews",
+      "title": "Qué dicen los clientes sobre NovaLikes",
+      "description": "Opiniones de clientes de este servicio de NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-followers-faq",
+      "title": "Preguntas frecuentes sobre comprar seguidores de Facebook",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook followers",
+      "faqIds": [
+        "faq-fb-followers-need",
+        "faq-fb-followers-package",
+        "faq-fb-followers-password",
+        "faq-fb-followers-how-long",
+        "faq-fb-followers-track",
+        "faq-fb-followers-wrong-url",
+        "faq-fb-followers-other-metrics",
+        "faq-fb-followers-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-followers",
+      "title": "Explora más servicios de crecimiento en Facebook",
+      "description": "Hacer crecer una presencia en Facebook suele implicar más de un servicio. Explora nuestras soluciones de Facebook pensadas para distintos objetivos de marketing.",
+      "purpose": "Internal links to sibling Facebook offers (no skipped services)",
+      "serviceSlugs": [
+        "buy-facebook-page-likes",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-followers-final-cta",
+      "title": "Elige tu paquete de seguidores de Facebook",
+      "description": "Compara las cantidades y los precios de seguidores disponibles, elige el paquete que encaja con la Página de Facebook que quieres usar y realiza tu pedido con la URL pública correcta de la Página de Facebook.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver paquetes de seguidores de Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Seguir un pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-followers-why-choose",
+        "title": "¿Por qué elegir NovaLikes para seguidores de Facebook?",
+        "description": "NovaLikes facilita comparar paquetes de seguidores de Facebook antes de pedir. Elige el número de seguidores que quieres para tu Página pública de Facebook, revisa el precio actual del paquete, facilita la URL correcta de la Página y usa el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-0",
+            "title": "Varias cantidades de seguidores",
+            "description": "Compara las cantidades de seguidores de Facebook disponibles y elige el paquete que coincida con el número de seguidores que quieres pedir.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-1",
+            "title": "Solo URL pública de Página de Facebook",
+            "description": "Facilita la URL pública correcta de la Página de Facebook donde quieres que se añadan los seguidores. No se requiere tu contraseña de Facebook.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-2",
+            "title": "Revisa antes del pago",
+            "description": "Comprueba la cantidad de seguidores seleccionada y el precio actual del paquete antes de añadir tu pedido al carrito y completar el pago.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-3",
+            "title": "Seguimiento del pedido",
+            "description": "Usa la opción de seguimiento disponible después del pago para consultar información de estado de tu pedido de seguidores de Facebook.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-followers-can-you-buy",
+        "title": "¿Se pueden comprar seguidores de Facebook?",
+        "description": "Sí. Los paquetes de seguidores de Facebook se pueden comprar a través de servicios online de seguidores. Con NovaLikes, eliges un paquete de seguidores disponible, facilitas la URL pública de la Página de Facebook que quieres usar y completas tu pedido a través del sitio web.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-4",
+            "title": "Qué cambia un pedido de seguidores de Facebook",
+            "description": "Un pedido de seguidores de Facebook se aplica al recuento de seguidores de la Página pública de Facebook enviada con el pedido. No añade automáticamente Me gusta de Página ni likes a publicaciones individuales.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-5",
+            "title": "Qué necesitas para hacer un pedido",
+            "description": "Necesitas la URL pública correcta de la Página de Facebook y el paquete de seguidores que quieres comprar. No se requiere tu contraseña de Facebook.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-6",
+            "title": "Qué no incluyen los seguidores de Facebook",
+            "description": "Los seguidores son independientes de Me gusta de Página y Me gusta de publicaciones de Facebook. Pedir seguidores no añade automáticamente esas otras métricas ni garantiza más interacción, alcance, ventas o crecimiento orgánico.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Antes del pago, asegúrate de haber seleccionado seguidores de Facebook, elegido la cantidad correcta de seguidores y facilitado la URL de la Página pública exacta de Facebook donde quieres que se añadan los seguidores."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-followers-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-followers-what-happens",
+        "title": "¿Qué ocurre después de comprar seguidores de Facebook?",
+        "description": "Después de hacer un pedido de seguidores de Facebook, el paquete de seguidores y la URL pública de la Página de Facebook que enviaste se usan para procesar el pedido para la Página seleccionada. Mantén la Página accesible públicamente cuando se requiera mientras se gestiona el pedido.",
+        "steps": [
+          {
+            "id": "buy-facebook-followers-th-1",
+            "title": "Se revisan los datos de tu pedido",
+            "description": "El paquete de seguidores seleccionado, la cantidad y la URL de la Página de Facebook enviada se asocian a tu pedido para que la solicitud se procese para la Página prevista."
+          },
+          {
+            "id": "buy-facebook-followers-th-2",
+            "title": "Los seguidores van a la Página enviada",
+            "description": "El pedido se aplica a la Página de Facebook vinculada a la URL que facilitaste. Revisa la URL de la Página con cuidado antes de completar el pago."
+          },
+          {
+            "id": "buy-facebook-followers-th-3",
+            "title": "El tiempo de procesamiento puede variar",
+            "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de seguidores y las condiciones actuales de pedidos. No cabe esperar un único plazo de entrega fijo para todos los paquetes."
+          },
+          {
+            "id": "buy-facebook-followers-th-4",
+            "title": "Consulta el estado de tu pedido",
+            "description": "Usa el seguimiento de pedidos de NovaLikes para las actualizaciones de estado disponibles. Si necesitas ayuda, contacta con soporte con la información relevante del pedido."
+          }
+        ],
+        "closingNote": "Evita eliminar la Página enviada, hacerla no disponible o cambiar algo que impida el acceso a ella mientras se procesa el pedido. Si algo cambia después de pedir, contacta con soporte si necesitas ayuda."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-followers-service-compare",
+        "title": "Seguidores vs Me gusta de Página vs Me gusta de publicaciones de Facebook",
+        "description": "Seguidores de Facebook, Me gusta de Página y Me gusta de publicaciones representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de seguidores de una Página de Facebook, el recuento de Me gusta de Página o el recuento de likes de una publicación concreta de Facebook.",
+        "current": {
+          "title": "Seguidores de Facebook",
+          "description": "Los seguidores son una métrica a nivel de Página. Elige seguidores de Facebook cuando quieras aumentar el recuento de seguidores que se muestra en una Página pública de Facebook.",
+          "bestFor": "Páginas de Facebook en las que el recuento de seguidores es la métrica que quieres cambiar.",
+          "ctaLabel": "Seguidores de Facebook"
+        },
+        "likes": {
+          "title": "Me gusta de Página de Facebook",
+          "description": "Los Me gusta de Página son una métrica a nivel de Página distinta de los seguidores. Elige Me gusta de Página de Facebook cuando el recuento de Me gusta de Página sea la métrica que quieres cambiar.",
+          "bestFor": "Páginas de Facebook en las que el recuento de Me gusta de Página es la métrica que quieres cambiar.",
+          "href": "/buy-facebook-page-likes",
+          "ctaLabel": "Ver Me gusta de Página de Facebook"
+        },
+        "views": {
+          "title": "Me gusta de publicaciones de Facebook",
+          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes de una publicación pública de Facebook elegible concreta.",
+          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de likes es la métrica que quieres cambiar.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-facebook-page-likes"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-followers-before-buying",
+        "title": "Qué revisar antes de comprar seguidores de Facebook",
+        "description": "Antes de comprar seguidores de Facebook, revisa el paquete y los detalles de la Página antes de completar tu pedido. Asegúrate de que la cantidad de seguidores, el precio, la URL de la Página de Facebook y el servicio coinciden con lo que quieres para la Página seleccionada.",
+        "framingNote": "Revisa la URL de la Página de Facebook enviada, la cantidad de seguidores y el precio una vez más antes del pago. Evita basarte en afirmaciones de que comprar seguidores garantizará más Me gusta de Página, Me gusta de publicaciones, interacción, alcance, ventas o crecimiento orgánico.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-7",
+            "title": "Revisa la cantidad de seguidores",
+            "description": "Consulta el número de seguidores de Facebook incluidos en el paquete para saber cuántos estás pidiendo para la Página enviada.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-8",
+            "title": "Confirma el precio del paquete",
+            "description": "Revisa el precio actual mostrado para el paquete de seguidores seleccionado antes de añadirlo al carrito. Si cambias la cantidad, consulta el precio actualizado antes del pago.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-9",
+            "title": "Usa la URL correcta de la Página de Facebook",
+            "description": "Revisa la URL pública de la Página de Facebook con cuidado para que el pedido se asocie exactamente a la Página donde quieres que se añadan los seguidores.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-10",
+            "title": "Elige el servicio de Facebook correcto",
+            "description": "Seguidores, Me gusta de Página y Me gusta de publicaciones son métricas separadas. Comprueba que seguidores de Facebook es el servicio que necesitas antes de hacer el pedido.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-followers-11",
+            "title": "Revisa soporte y políticas",
+            "description": "Consulta las políticas de compra correspondientes y las opciones de soporte disponibles para saber dónde acudir si tienes una pregunta sobre tu pedido.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-followers-worldwide",
+        "title": "Prepara tu Página de Facebook para un pedido de seguidores",
+        "description": "Seguidores de Facebook es un servicio a nivel de Página. Antes de pedir, confirma la Página pública de Facebook elegible y la cantidad de seguidores que quieres usar.",
+        "eyebrow": "Listo para seguidores de Facebook",
+        "closingNote": "Seguidores de Facebook se aplica a una Página pública de Facebook. Envía la Página correcta, mantenla accesible y revisa el paquete de seguidores antes del pago.",
+        "cards": [
+          {
+            "id": "buy-facebook-followers-12",
+            "title": "Usa la Página de Facebook correcta",
+            "description": "Facilita la información pública de la Página de Facebook solicitada durante el pago. No envíes una publicación individual de Facebook al pedir seguidores de Página.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-13",
+            "title": "Mantén la Página accesible",
+            "description": "Mantén la Página enviada accesible públicamente cuando se requiera mientras se procesa el pedido de seguidores.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-14",
+            "title": "Seguidores y Me gusta de Página son distintos",
+            "description": "Seguidores de Facebook se aplica al recuento de seguidores de la Página. Me gusta de Página de Facebook es un servicio aparte para la métrica de Me gusta de Página.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-15",
+            "title": "Revisa el paquete",
+            "description": "Comprueba la cantidad de seguidores, la información de la Página y el precio antes de completar el pago.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-followers-popular-packages",
+        "title": "Paquetes populares de seguidores de Facebook",
+        "description": "Compara algunas de las cantidades de seguidores de Facebook disponibles en NovaLikes abajo, o vuelve a la sección completa de precios para ver todas las opciones de paquete disponibles.",
+        "rows": [
+          {
+            "id": "fb-f-100",
+            "quantity": "100 seguidores",
+            "recommendedFor": "Un paquete más pequeño para una Página pública de Facebook en la que quieres añadir cien seguidores."
+          },
+          {
+            "id": "fb-f-500",
+            "quantity": "500 seguidores",
+            "recommendedFor": "Una opción pequeña-intermedia para una Página de Facebook en la que quieres añadir quinientos seguidores."
+          },
+          {
+            "id": "fb-f-1000",
+            "quantity": "1,000 seguidores",
+            "recommendedFor": "Un paquete intermedio para una Página pública de Facebook en la que quieres añadir mil seguidores."
+          },
+          {
+            "id": "fb-f-5000",
+            "quantity": "5,000 seguidores",
+            "recommendedFor": "Una opción más grande para una Página de Facebook en la que quieres añadir cinco mil seguidores."
+          },
+          {
+            "id": "fb-f-10000",
+            "quantity": "10,000 seguidores",
+            "recommendedFor": "Un paquete de mayor volumen para una Página pública de Facebook en la que quieres añadir diez mil seguidores."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-followers-best-practices",
+        "title": "Buenas prácticas después de comprar seguidores de Facebook",
+        "description": "Comprar seguidores cambia el recuento de seguidores de la Página de Facebook seleccionada, pero el resto de tu actividad en Facebook sigue dependiendo del contenido que publicas y de cómo gestiones tu Página. Mantén tu Página activa, revisa su rendimiento e interactúa con tu audiencia junto al servicio.",
+        "closingNote": "El recuento de seguidores es solo una métrica de una Página de Facebook. Tu contenido, Me gusta de Página, interacciones en publicaciones, respuestas de la audiencia y el resto de la actividad siguen dependiendo de cómo gestiones tu presencia en Facebook.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-16",
+            "title": "Mantén tu Página de Facebook activa",
+            "description": "Continúa publicando posts que encajen con tu negocio, marca, tema o la audiencia a la que quieres llegar.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-followers-17",
+            "title": "Mantén la información de tu Página actualizada",
+            "description": "Revisa el nombre de la Página, la descripción, los datos de contacto, el sitio web, la información del negocio y otros datos públicos cuando corresponda.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-followers-18",
+            "title": "Revisa Facebook Insights",
+            "description": "Si hay insights disponibles para tu Página, revisa la actividad de seguidores, el rendimiento de las publicaciones, la interacción y otros datos disponibles para entender cómo rinde tu propio contenido.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-followers-19",
+            "title": "Prueba distintos tipos de contenido",
+            "description": "Prueba distintos formatos de publicación, temas, imágenes, vídeos y enfoques de publicación para aprender qué funciona para tu Página.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-followers-20",
+            "title": "Responde a la interacción genuina",
+            "description": "Responde a comentarios y mensajes genuinos cuando corresponda. Un recuento mayor de seguidores no sustituye las interacciones que construyes con tu propia actividad en la Página.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-followers-21",
+            "title": "Mantén una presencia constante en la Página",
+            "description": "Sigue gestionando y publicando en tu Página, en lugar de tratar un paquete de seguidores como un sustituto de la actividad continua en Facebook.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-followers-common-mistakes",
+        "title": "Errores habituales al comprar seguidores de Facebook",
+        "description": "Unos pocos errores simples pueden causar problemas con un pedido de seguidores de Facebook. Revisa la URL de la Página, la cantidad de seguidores, el servicio y las expectativas antes del pago para saber exactamente qué estás pidiendo.",
+        "closingNote": "Antes de hacer un pedido, revisa la URL de la Página de Facebook, la cantidad de seguidores y el precio una vez más. Si algo cambia después del pago, usa las opciones de seguimiento o soporte disponibles para tu pedido.",
+        "items": [
+          {
+            "id": "buy-facebook-followers-22",
+            "title": "Enviar la URL incorrecta de la Página de Facebook",
+            "description": "Revisa la URL pública de la Página de Facebook con cuidado antes de pedir. La URL debe apuntar exactamente a la Página donde quieres que se añadan los seguidores.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-followers-23",
+            "title": "Elegir el servicio de Facebook incorrecto",
+            "description": "Seguidores, Me gusta de Página y Me gusta de publicaciones son servicios separados. Elige seguidores de Facebook solo cuando el recuento de seguidores de una Página sea la métrica que quieres cambiar.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-followers-24",
+            "title": "Seleccionar la cantidad de seguidores incorrecta",
+            "description": "Revisa el número de seguidores incluidos en el paquete seleccionado antes del pago para no pedir una cantidad distinta de la que pretendías.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-followers-25",
+            "title": "Hacer la Página no disponible durante un pedido",
+            "description": "Evita eliminar la Página enviada o hacerla no disponible mientras se procesa el pedido.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-followers-26",
+            "title": "Esperar que los seguidores garanticen otros resultados",
+            "description": "Un recuento mayor de seguidores no significa automáticamente más Me gusta de Página, Me gusta de publicaciones, interacción, alcance, ventas o crecimiento orgánico.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-followers-27",
+            "title": "Tratar los seguidores como un sustituto de la actividad de la Página",
+            "description": "Comprar seguidores cambia una métrica de la Página seleccionada. Tus publicaciones, información de la Página, decisiones de publicación e interacción con la audiencia siguen dependiendo de cómo gestiones tu Página.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-page-likes": {
+            "title": "Me gusta de Página de Facebook",
+            "description": "Elige Me gusta de Página de Facebook cuando el recuento de Me gusta de Página de una Página pública de Facebook sea la métrica que quieres cambiar.",
+            "ctaLabel": "Ver Me gusta de Página de Facebook"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Me gusta de publicaciones de Facebook",
+            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes que se muestra en una publicación pública de Facebook elegible.",
+            "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-followers-why-buy",
+      "title": "¿Por qué la gente compra seguidores de Facebook?",
+      "description": "La gente compra seguidores de Facebook por distintos motivos. Algunos quieren aumentar el recuento de seguidores que se muestra en una Página de Facebook, mientras que otros eligen un paquete de seguidores para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de seguidores de la Página seleccionada, pero no garantiza likes, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "items": [
+        {
+          "id": "buy-facebook-followers-wb-1",
+          "title": "Aumenta el recuento visible de seguidores",
+          "description": "Un paquete de seguidores de Facebook se puede usar cuando quieres aumentar el recuento de seguidores que se muestra en una Página pública concreta de Facebook."
+        },
+        {
+          "id": "buy-facebook-followers-wb-2",
+          "title": "Usa seguidores en un lanzamiento o campaña",
+          "description": "Negocios y propietarios de Páginas pueden elegir un paquete de seguidores mientras trabajan en un lanzamiento, campaña, anuncio u otra actividad en Facebook."
+        },
+        {
+          "id": "buy-facebook-followers-wb-3",
+          "title": "Céntrate en la métrica de seguidores",
+          "description": "Seguidores de Facebook se aplica al recuento de seguidores de la Página seleccionada. No añade automáticamente Me gusta de Página ni likes a publicaciones individuales de Facebook."
+        },
+        {
+          "id": "buy-facebook-followers-wb-4",
+          "title": "Elige la cantidad que quieres",
+          "description": "Los distintos tamaños de paquete te permiten seleccionar el número de seguidores de Facebook que quieres pedir para la Página enviada."
+        },
+        {
+          "id": "buy-facebook-followers-wb-5",
+          "title": "Usa seguidores junto con tu contenido",
+          "description": "Comprar seguidores no sustituye publicar y gestionar tu propio contenido de Facebook. Las publicaciones, respuestas, información de la Página y el resto de la actividad siguen dependiendo de cómo gestiones tu Página."
+        }
+      ],
+      "bottomNote": "Si Me gusta de Página o Me gusta de publicaciones son la métrica que quieres cambiar, elige el servicio de Facebook correspondiente en lugar de un paquete de seguidores."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Cómo comprar seguidores de Facebook",
+      "description": "Comprar seguidores de Facebook en NovaLikes son cuatro pasos. Elige el paquete de seguidores que quieres, facilita la URL pública de la Página de Facebook, completa el pago y usa los datos de tu pedido para consultar su estado.",
+      "steps": [
+        {
+          "id": "buy-facebook-followers-step-1",
+          "title": "Elige tu paquete de seguidores",
+          "description": "Compara las cantidades y los precios de seguidores de Facebook disponibles, y selecciona el paquete que quieres para tu Página."
+        },
+        {
+          "id": "buy-facebook-followers-step-2",
+          "title": "Introduce la URL de la Página de Facebook",
+          "description": "Facilita la URL pública correcta de la Página de Facebook donde quieres que se añadan los seguidores. No se requiere tu contraseña de Facebook."
+        },
+        {
+          "id": "buy-facebook-followers-step-3",
+          "title": "Completa tu pedido",
+          "description": "Revisa la cantidad de seguidores y el precio seleccionados, y continúa con el pago para realizar tu pedido."
+        },
+        {
+          "id": "buy-facebook-followers-step-4",
+          "title": "Sigue tu pedido",
+          "description": "Después del pago, usa la opción de seguimiento del pedido disponible para consultar información de estado de tu pedido de seguidores de Facebook."
+        }
+      ]
+    },
+    "relatedHeading": "Explora otros servicios de Facebook",
+    "relatedIntro": "Los seguidores son solo una métrica de Facebook. Si quieres aumentar el recuento de Me gusta de Página o el recuento de likes de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
+  }
+}

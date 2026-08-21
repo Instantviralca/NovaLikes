@@ -4,8 +4,9 @@
 
 import { learnCategoryPath, routes } from '@/config/routes';
 import { getLearnCategoryById } from '@/data/learn';
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
+import { getServiceBySlug } from '@/data/services';
 import { buildBreadcrumb } from '@/lib/linking/breadcrumbs';
-import { getRelatedServices } from '@/lib/linking/related-services';
 import {
   getPublicLearnArticleBySlug,
   getRelatedPublicArticles,
@@ -62,12 +63,32 @@ export function getLearnArticleBreadcrumbs(articleSlug: string): BreadcrumbItem[
 export function getLearnRelatedServicesForArticle(
   article: PublicLearnArticle,
 ): InternalLink[] {
-  if (article.relatedServices.length === 0) return [];
-  const seed = article.relatedServices[0]!;
-  return getRelatedServices(seed, {
-    limit: 4,
-    preferredSlugs: article.relatedServices,
-  });
+  const links: InternalLink[] = [];
+  const seen = new Set<string>();
+
+  for (const slug of article.relatedServices) {
+    if (seen.has(slug) || !isApprovedServiceSlug(slug)) continue;
+    const service = getServiceBySlug(slug);
+    if (!service || service.comingSoon || service.platform === 'youtube') {
+      continue;
+    }
+    seen.add(slug);
+    const platform =
+      service.platform === 'tiktok'
+        ? 'TikTok'
+        : service.platform === 'instagram'
+          ? 'Instagram'
+          : service.platform === 'facebook'
+            ? 'Facebook'
+            : service.platform;
+    links.push({
+      slug: service.slug,
+      href: service.url,
+      label: `${platform} ${service.shortName}`,
+    });
+  }
+
+  return links;
 }
 
 export function getLearnRelatedArticlesForArticle(

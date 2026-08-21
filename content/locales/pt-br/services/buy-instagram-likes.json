@@ -1,0 +1,596 @@
+{
+  "content": {
+    "slug": "buy-instagram-likes",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Comprar curtidas no Instagram | NovaLikes",
+      "description": "Compre curtidas no Instagram pela NovaLikes com opções claras de pacote, detalhes de entrega, checkout seguro, acompanhamento do pedido e somente a URL pública do post."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR CURTIDAS NO INSTAGRAM",
+      "title": "Comprar curtidas no Instagram",
+      "description": "Compre curtidas no Instagram para um post ou Reel público escolhendo o tamanho de pacote que combina com o que você precisa. A NovaLikes oferece várias quantidades de curtidas com preços claros, para você comparar as opções disponíveis antes de pedir. Selecione o pacote, envie a URL pública do post ou Reel no Instagram e conclua o pedido online. Não é necessária senha do Instagram, e você pode acompanhar o pedido depois do checkout.",
+      "purpose": "Convert visitors looking to buy Instagram likes",
+      "primaryKeyword": "buy instagram likes",
+      "supportingKeywords": [
+        "Buy Instagram Likes",
+        "Buy Real Instagram Likes",
+        "Instagram Likes",
+        "Instagram Likes Pricing",
+        "Instagram Likes Delivery",
+        "Instagram Likes Order Tracking",
+        "Instagram Likes Packages"
+      ],
+      "suggestedWordCount": 70,
+      "primaryCta": {
+        "label": "Escolher um pacote",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Ver informações de entrega",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-l-trust-public",
+          "label": "Somente URL pública do post"
+        },
+        {
+          "id": "ig-l-trust-password",
+          "label": "Sem senha necessária"
+        },
+        {
+          "id": "ig-l-trust-checkout",
+          "label": "Checkout seguro"
+        },
+        {
+          "id": "ig-l-trust-track",
+          "label": "Acompanhamento do pedido"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-likes/instagram-likes-hero.webp",
+        "alt": "Painel de engajamento de post no Instagram mostrando pacotes de curtidas e acompanhamento de entrega",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Pacotes e preços de curtidas no Instagram",
+      "description": "Escolha o número de curtidas no Instagram que você quer e compare os preços dos pacotes disponíveis antes de pedir. Selecione uma quantidade abaixo para revisar os detalhes do pacote e continue com a opção que combina com o post ou Reel que você quer usar.",
+      "purpose": "Present real NovaLikes.com likes packages",
+      "primaryKeyword": "Instagram Likes Pricing",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Pedir agora",
+      "emptyMessage": "Os pacotes de curtidas no Instagram estão temporariamente indisponíveis."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-likes",
+      "title": "Apoie o conteúdo que você já está publicando",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-likes",
+      "title": "Por que pedir na NovaLikes",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "features": {
+      "id": "buy-instagram-likes-features",
+      "title": "Recursos",
+      "description": "",
+      "purpose": "Unused on packages conversion layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Como funciona o pedido de curtidas no Instagram",
+      "description": "Escolha um pacote, informe a URL pública do post, conclua o checkout e acompanhe as atualizações disponíveis.",
+      "purpose": "Explain ordering process",
+      "primaryKeyword": "buy instagram likes",
+      "suggestedWordCount": 80,
+      "steps": [
+        {
+          "id": "ig-l-step-1",
+          "title": "Escolha um pacote",
+          "description": "Compare quantidades, preços e detalhes de pacote na grade de preços."
+        },
+        {
+          "id": "ig-l-step-2",
+          "title": "Informe a URL pública do post",
+          "description": "Envie a URL pública do post ou Reel no Instagram que vai receber as curtidas."
+        },
+        {
+          "id": "ig-l-step-3",
+          "title": "Revise o pedido",
+          "description": "Confirme pacote, preço e detalhes de entrega antes do pagamento."
+        },
+        {
+          "id": "ig-l-step-4",
+          "title": "Conclua o checkout",
+          "description": "Finalize o pagamento e receba a confirmação do pedido por e-mail."
+        },
+        {
+          "id": "ig-l-step-5",
+          "title": "Acompanhe o andamento",
+          "description": "Use o ID do pedido e o e-mail na página Acompanhar pedido."
+        }
+      ],
+      "cta": {
+        "label": "Escolher um pacote",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "delivery-and-safety",
+      "title": "Entrega de curtidas no Instagram",
+      "description": "O prazo de entrega depende do pacote selecionado. A entrega gradual se aplica quando isso estiver indicado antes do checkout.",
+      "purpose": "Delivery clarification",
+      "primaryKeyword": "Instagram Likes Delivery",
+      "suggestedWordCount": 60,
+      "items": []
+    },
+    "reviews": {
+      "id": "ig-likes-reviews",
+      "title": "Avaliações de clientes",
+      "description": "Depoimentos de clientes que concluíram um pedido na nossa plataforma.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-likes-faq",
+      "title": "Perguntas frequentes sobre comprar curtidas no Instagram",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy instagram likes",
+      "faqIds": [
+        "faq-ig-likes-links",
+        "faq-ig-likes-reel",
+        "faq-ig-likes-password",
+        "faq-ig-likes-delivery-speed",
+        "faq-ig-likes-track",
+        "faq-ig-likes-gradual-delivery",
+        "faq-ig-likes-refill",
+        "faq-ig-likes-money-back"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-likes",
+      "title": "Conheça mais serviços",
+      "description": "Acrescente crescimento de público, visualizações ou comentários quando a campanha precisar de mais apoio.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-views",
+        "buy-instagram-comments"
+      ],
+      "cta": {
+        "label": "Conheça mais serviços",
+        "href": "/buy-instagram-followers"
+      }
+    },
+    "finalCta": {
+      "id": "ig-likes-final-cta",
+      "title": "Escolha o pacote de curtidas no Instagram",
+      "description": "Compare as quantidades e os preços de curtidas disponíveis, escolha o pacote que combina com o post ou Reel que você quer usar e faça o pedido com a URL pública correta do Instagram.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver pacotes de curtidas no Instagram",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Acompanhar um pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-instagram-likes-why-choose",
+        "title": "Por que escolher a NovaLikes para curtidas no Instagram?",
+        "description": "A NovaLikes facilita comparar pacotes de curtidas no Instagram antes de pedir. Escolha a quantidade que precisa para um post ou Reel específico, confira o preço, envie a URL pública correta do conteúdo e acompanhe o pedido depois do checkout.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-0",
+            "title": "Quantidades diferentes de curtidas",
+            "description": "Compare pacotes menores e maiores de curtidas para encontrar uma quantidade que faça sentido para o conteúdo do Instagram em que você está trabalhando.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-likes-1",
+            "title": "Preços claros por pacote",
+            "description": "Veja o preço de cada pacote de curtidas no Instagram antes de adicionar a seleção ao carrinho.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-2",
+            "title": "Para posts e Reels específicos",
+            "description": "Escolha o post ou Reel público do Instagram onde você quer que as curtidas sejam adicionadas, em vez de alterar a contagem geral de seguidores.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-3",
+            "title": "Acompanhamento do pedido",
+            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de curtidas no Instagram.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-instagram-likes-can-you-buy",
+        "title": "Dá para comprar curtidas no Instagram?",
+        "description": "Sim. Curtidas no Instagram podem ser compradas para posts e Reels públicos elegíveis. Na NovaLikes, você escolhe um pacote de curtidas, envia a URL pública do conteúdo do Instagram que quer usar e conclui o pedido pelo site.",
+        "cards": [
+          {
+            "id": "buy-instagram-likes-4",
+            "title": "O que um pedido de curtidas no Instagram altera",
+            "description": "Um pedido de curtidas no Instagram aumenta a contagem de curtidas no post ou Reel específico enviado com o pedido. Ele não altera a contagem de seguidores do perfil como um todo.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-likes-5",
+            "title": "O que você precisa para fazer um pedido",
+            "description": "Você precisa da URL pública correta do post ou Reel no Instagram e do pacote de curtidas que quer comprar. A senha do Instagram não é necessária.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-likes-6",
+            "title": "O que as curtidas no Instagram não incluem",
+            "description": "Curtidas são separadas de seguidores, visualizações e comentários. Pedir curtidas no Instagram não acrescenta automaticamente essas outras métricas nem garante alcance, engajamento, vendas ou crescimento orgânico extras.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Antes do checkout, garanta que você selecionou curtidas no Instagram, escolheu a quantidade correta e enviou a URL do conteúdo onde quer que as curtidas sejam adicionadas."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-instagram-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-instagram-likes-what-happens",
+        "title": "O que acontece depois que você compra curtidas no Instagram?",
+        "description": "Depois de fazer um pedido de curtidas no Instagram, o pacote e a URL pública do conteúdo enviados são usados para processar o pedido no post ou Reel selecionado. Mantenha o conteúdo enviado acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "steps": [
+          {
+            "id": "buy-instagram-likes-th-1",
+            "title": "Os dados do pedido são conferidos",
+            "description": "O pacote de curtidas e a URL do Instagram selecionados são ligados ao pedido para que a solicitação possa ser processada no post ou Reel pretendido."
+          },
+          {
+            "id": "buy-instagram-likes-th-2",
+            "title": "As curtidas vão para o conteúdo enviado",
+            "description": "O pedido se aplica ao post ou Reel do Instagram ligado à URL que você enviou. Confira o link com cuidado antes de concluir o checkout."
+          },
+          {
+            "id": "buy-instagram-likes-th-3",
+            "title": "O tempo de processamento pode variar",
+            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de curtidas e as condições atuais. Não assuma que todo pacote terá exatamente o mesmo tempo de processamento."
+          },
+          {
+            "id": "buy-instagram-likes-th-4",
+            "title": "Confira o status do pedido",
+            "description": "Use o acompanhamento de pedidos da NovaLikes para conferir as atualizações de status disponíveis depois do checkout. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+          }
+        ],
+        "closingNote": "Evite excluir o post ou Reel enviado, torná-lo indisponível ou alterar qualquer coisa que impeça o acesso ao conteúdo enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+      },
+      "serviceCompare": {
+        "id": "buy-instagram-likes-service-compare",
+        "title": "Curtidas vs seguidores vs visualizações no Instagram",
+        "description": "Curtidas, seguidores e visualizações medem partes diferentes de uma conta no Instagram. Escolha o serviço conforme quiser trabalhar um post ou Reel específico, a contagem de seguidores do perfil ou a contagem de visualizações em conteúdo em vídeo.",
+        "current": {
+          "title": "Curtidas no Instagram",
+          "description": "Curtidas são uma métrica no nível do conteúdo. Escolha curtidas no Instagram quando quiser aumentar a contagem de curtidas exibida em um post ou Reel público específico.",
+          "bestFor": "Posts e Reels em que a contagem visível de curtidas é a métrica que você quer alterar.",
+          "ctaLabel": "Curtidas no Instagram"
+        },
+        "likes": {
+          "title": "Seguidores no Instagram",
+          "description": "Seguidores são uma métrica no nível do perfil. Escolha seguidores no Instagram quando quiser aumentar a contagem de seguidores exibida na conta, em vez do engajamento em um conteúdo.",
+          "bestFor": "Perfis em que a contagem de seguidores é a métrica que você quer alterar.",
+          "href": "/buy-instagram-followers",
+          "ctaLabel": "Ver seguidores no Instagram"
+        },
+        "views": {
+          "title": "Visualizações no Instagram",
+          "description": "As visualizações se aplicam a conteúdo em vídeo elegível. Escolha visualizações no Instagram quando quiser aumentar a contagem de visualizações exibida em um Reel ou vídeo público.",
+          "bestFor": "Reels, vídeos e outros conteúdos em vídeo elegíveis no Instagram.",
+          "href": "/buy-instagram-views",
+          "ctaLabel": "Ver visualizações no Instagram"
+        },
+        "combinedNote": "Se quiser comentários em um post ou Reel específico, comentários no Instagram estão disponíveis como um serviço separado.",
+        "commentsHref": "/buy-instagram-comments"
+      },
+      "beforeBuying": {
+        "id": "buy-instagram-likes-before-buying",
+        "title": "O que conferir antes de comprar curtidas no Instagram",
+        "description": "Antes de comprar curtidas no Instagram, confira o pacote e os detalhes do conteúdo antes de concluir o pedido. Garanta que a quantidade, o preço, a URL do Instagram e o tipo de serviço correspondam ao que você quer para o post ou Reel selecionado.",
+        "framingNote": "Confira o conteúdo selecionado, a quantidade de curtidas e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar curtidas garante alcance, seguidores, vendas ou crescimento orgânico extras.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-7",
+            "title": "Confira a quantidade de curtidas",
+            "description": "Revise o número de curtidas no Instagram incluído no pacote para saber exatamente quantas você está pedindo para o conteúdo selecionado.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-likes-8",
+            "title": "Confirme o preço do pacote",
+            "description": "Confira o preço exibido para o pacote de curtidas selecionado antes de adicioná-lo ao carrinho. Se alterar a quantidade, revise o preço atualizado antes do checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-likes-9",
+            "title": "Use a URL correta do post ou Reel",
+            "description": "Garanta que a URL pública do Instagram aponta para exatamente o post ou Reel onde você quer que as curtidas sejam adicionadas.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-likes-10",
+            "title": "Escolha o serviço certo de Instagram",
+            "description": "Curtidas, seguidores, visualizações e comentários são serviços separados. Confira se curtidas no Instagram é o serviço de que você precisa antes de fazer o pedido.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-instagram-likes-11",
+            "title": "Revise suporte e políticas",
+            "description": "Confira as políticas de compra relevantes e as opções de suporte disponíveis para saber onde procurar se tiver uma dúvida sobre o pedido.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-instagram-likes-worldwide",
+        "title": "Escolhendo o post ou Reel certo para curtidas no Instagram",
+        "description": "Curtidas no Instagram se aplica a um conteúdo público elegível específico, então escolher o post ou Reel correto é uma das partes mais importantes de fazer o pedido.",
+        "eyebrow": "Pronto para curtidas no Instagram",
+        "closingNote": "Curtidas no Instagram se aplica a um post ou Reel público específico. Envie a URL exata do conteúdo, mantenha o conteúdo disponível e revise o pacote de curtidas selecionado antes do checkout.",
+        "cards": [
+          {
+            "id": "buy-instagram-likes-12",
+            "title": "Use a URL exata do conteúdo",
+            "description": "Envie a URL pública do post ou Reel onde você quer aplicar o pacote de curtidas. Uma URL de perfil não é o alvo correto para este serviço.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-13",
+            "title": "Mantenha o conteúdo disponível",
+            "description": "Evite excluir ou restringir o post ou Reel enviado enquanto o pedido estiver sendo processado.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-14",
+            "title": "Confira a quantidade de curtidas",
+            "description": "Escolha o número de curtidas com base no conteúdo específico para o qual você está pedindo e revise a quantidade antes do checkout.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-likes-15",
+            "title": "Revise o preço antes de pedir",
+            "description": "Os preços dos pacotes são exibidos antes do checkout. Se alterar a quantidade de curtidas, revise o pacote e o preço atualizados antes de concluir o pedido.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-instagram-likes-popular-packages",
+        "title": "Pacotes populares de curtidas no Instagram",
+        "description": "Não tem certeza de qual pacote escolher? Compare algumas das quantidades de curtidas no Instagram disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções.",
+        "rows": [
+          {
+            "id": "buy-instagram-likes-pkg-100",
+            "quantity": "100 curtidas",
+            "recommendedFor": "Uma opção menor para um post ou Reel em que você quer um aumento modesto na contagem visível de curtidas."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-500",
+            "quantity": "500 curtidas",
+            "recommendedFor": "Uma opção intermediária para conteúdo no Instagram em que você quer uma mudança mais perceptível no número de curtidas."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-1k",
+            "quantity": "1.000 curtidas",
+            "recommendedFor": "Um pacote maior para um post ou Reel selecionado em que você quer acrescentar mil curtidas em um único pedido."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-5k",
+            "quantity": "5.000 curtidas",
+            "recommendedFor": "Uma opção de volume maior para conteúdo no Instagram em que você quer um aumento maior na contagem de curtidas exibida."
+          },
+          {
+            "id": "buy-instagram-likes-pkg-10k",
+            "quantity": "10.000+ curtidas",
+            "recommendedFor": "Uma opção para posts ou Reels em que você escolhe uma das quantidades maiores de curtidas disponíveis na NovaLikes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-instagram-likes-best-practices",
+        "title": "Boas práticas depois de comprar curtidas no Instagram",
+        "description": "Comprar curtidas altera a contagem visível de curtidas no post ou Reel selecionado, mas o restante do conteúdo ainda depende do que você publica e de como administra a conta. Use o pedido como uma parte da atividade no Instagram, em vez de tratar as curtidas como substituto de conteúdo.",
+        "closingNote": "Curtidas são só uma métrica no Instagram. O próprio conteúdo, as decisões de publicação, o perfil, a interação com o público e outras atividades da conta ainda pedem atenção contínua.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-16",
+            "title": "Continue publicando conteúdo novo",
+            "description": "Continue postando fotos, Reels, Stories e outros conteúdos relevantes para o público que você quer alcançar.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-likes-17",
+            "title": "Dê a cada post um propósito claro",
+            "description": "Pense no que você quer que um post ou Reel comunique antes de publicar, seja um produto, atualização, ideia, anúncio ou conteúdo criativo.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-instagram-likes-18",
+            "title": "Escreva legendas úteis",
+            "description": "Use legendas para dar contexto aos posts, explicar o que as pessoas estão vendo ou dar um motivo para responder quando fizer sentido.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-likes-19",
+            "title": "Revise o Instagram Insights",
+            "description": "Se o Insights estiver disponível na conta, compare métricas como alcance, visualizações, interações e outros dados de conteúdo para entender como posts e Reels performam.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-likes-20",
+            "title": "Teste formatos diferentes no Instagram",
+            "description": "Fotos, carrosséis, Reels e Stories servem a propósitos diferentes. Teste os formatos que fazem sentido para a conta e o conteúdo que você cria.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-likes-21",
+            "title": "Responda a interações genuínas",
+            "description": "Responda a comentários e mensagens genuínos quando fizer sentido. Uma contagem maior de curtidas não substitui as conversas que você tem com as pessoas pela própria conta.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-instagram-likes-common-mistakes",
+        "title": "Erros comuns ao comprar curtidas no Instagram",
+        "description": "Alguns erros simples podem causar problemas em um pedido de curtidas no Instagram. Confira a URL do conteúdo, o pacote e as expectativas antes do checkout para saber exatamente o que você está pedindo.",
+        "closingNote": "Antes de fazer um pedido, confira a URL do Instagram, a quantidade de curtidas e o preço mais uma vez. Se algo mudar depois do checkout, use as opções de acompanhamento ou suporte disponíveis para o pedido.",
+        "items": [
+          {
+            "id": "buy-instagram-likes-22",
+            "title": "Enviar o post ou Reel errado",
+            "description": "Confira a URL do Instagram com cuidado antes de pedir. O link deve apontar para exatamente o post ou Reel público onde você quer que as curtidas sejam adicionadas.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-likes-23",
+            "title": "Escolher o serviço errado de Instagram",
+            "description": "Curtidas, seguidores, visualizações e comentários são serviços separados. Escolha curtidas no Instagram somente quando a contagem de curtidas em um conteúdo específico for a métrica que você quer alterar.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-likes-24",
+            "title": "Selecionar a quantidade errada de curtidas",
+            "description": "Revise o número de curtidas incluído no pacote antes do checkout para não pedir uma quantidade diferente da que você pretendia.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-likes-25",
+            "title": "Remover o conteúdo durante um pedido",
+            "description": "Evite excluir o post ou Reel enviado ou torná-lo indisponível enquanto o pedido estiver sendo processado.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-likes-26",
+            "title": "Esperar que curtidas garantam outros resultados",
+            "description": "Uma contagem maior de curtidas não significa automaticamente mais seguidores, comentários, visualizações, alcance, vendas ou crescimento orgânico.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-likes-27",
+            "title": "Tratar curtidas como substituto de conteúdo",
+            "description": "Comprar curtidas altera uma métrica visível. Seus posts, Reels, legendas, decisões de publicação e interação com o público ainda dependem de como você administra a conta.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-followers": {
+            "title": "Seguidores no Instagram",
+            "description": "Escolha seguidores no Instagram quando quiser aumentar a contagem de seguidores exibida no perfil público.",
+            "ctaLabel": "Ver seguidores no Instagram"
+          },
+          "buy-instagram-views": {
+            "title": "Visualizações no Instagram",
+            "description": "Escolha visualizações no Instagram quando quiser aumentar a contagem de visualizações em um Reel ou vídeo público elegível.",
+            "ctaLabel": "Ver visualizações no Instagram"
+          },
+          "buy-instagram-comments": {
+            "title": "Comentários no Instagram",
+            "description": "Escolha comentários no Instagram quando quiser comentários adicionados a um post ou Reel público elegível.",
+            "ctaLabel": "Ver comentários no Instagram"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-instagram-likes-why-buy",
+      "title": "Por que as pessoas compram curtidas no Instagram?",
+      "description": "As pessoas compram curtidas no Instagram para tipos diferentes de conteúdo e por motivos diferentes. Algumas usam pacotes de curtidas em um post ou Reel novo, enquanto outras usam ao promover um produto, campanha, anúncio ou conteúdo. O serviço altera a contagem visível de curtidas no conteúdo selecionado, mas não garante alcance, comentários, seguidores, vendas ou crescimento orgânico.",
+      "items": [
+        {
+          "id": "buy-instagram-likes-wb-1",
+          "title": "Acrescente curtidas a conteúdo novo",
+          "description": "Um pacote de curtidas pode ser usado em um post ou Reel recém-publicado quando você quer aumentar a contagem visível de curtidas."
+        },
+        {
+          "id": "buy-instagram-likes-wb-2",
+          "title": "Apoie um post de produto ou campanha",
+          "description": "Negócios e criadores podem usar curtidas no Instagram em conteúdo ligado a lançamento de produto, promoção, anúncio ou campanha."
+        },
+        {
+          "id": "buy-instagram-likes-wb-3",
+          "title": "Aumente a contagem visível de curtidas",
+          "description": "As curtidas no Instagram se aplicam ao post ou Reel selecionado, em vez de alterar a contagem de seguidores exibida no perfil."
+        },
+        {
+          "id": "buy-instagram-likes-wb-4",
+          "title": "Escolha uma quantidade para o conteúdo",
+          "description": "Tamanhos diferentes de pacote permitem escolher o número de curtidas com base no post ou Reel individual que você quer usar."
+        },
+        {
+          "id": "buy-instagram-likes-wb-5",
+          "title": "Use curtidas junto com a sua estratégia de conteúdo",
+          "description": "Comprar curtidas altera uma métrica visível no conteúdo selecionado. Legendas, trabalho criativo, decisões de publicação, respostas e outras atividades da conta ainda dependem de como você administra a presença no Instagram."
+        }
+      ],
+      "bottomNote": "Se a métrica que você quer alterar for a contagem de seguidores do perfil, visualizações de vídeo ou comentários, e não curtidas, escolha o serviço correspondente de Instagram."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Como comprar curtidas no Instagram",
+      "description": "Comprar curtidas no Instagram pela NovaLikes leva quatro passos. Escolha o número de curtidas que quer, envie a URL pública do post ou Reel no Instagram, conclua o checkout e use os dados do pedido para conferir o status.",
+      "steps": [
+        {
+          "id": "buy-instagram-likes-step-1",
+          "title": "Escolha o pacote de curtidas",
+          "description": "Compare as quantidades e os preços de curtidas disponíveis e selecione o pacote que você quer para o conteúdo no Instagram."
+        },
+        {
+          "id": "buy-instagram-likes-step-2",
+          "title": "Informe a URL do post ou Reel",
+          "description": "Envie a URL pública correta do post ou Reel no Instagram onde você quer que as curtidas sejam adicionadas. A senha do Instagram não é necessária."
+        },
+        {
+          "id": "buy-instagram-likes-step-3",
+          "title": "Conclua o pedido",
+          "description": "Revise a quantidade de curtidas e o preço selecionados e siga o checkout para fazer o pedido."
+        },
+        {
+          "id": "buy-instagram-likes-step-4",
+          "title": "Acompanhe o pedido",
+          "description": "Depois do checkout, use a opção de acompanhamento disponível para conferir informações de status do pedido de curtidas no Instagram."
+        }
+      ]
+    },
+    "relatedHeading": "Conheça outros serviços de Instagram",
+    "relatedIntro": "Curtidas são só uma métrica no Instagram. Se quiser trabalhar a contagem de seguidores do perfil, visualizações de vídeo ou comentários em conteúdo específico, compare os outros serviços de Instagram abaixo."
+  }
+}

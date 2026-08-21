@@ -1,8 +1,11 @@
 /**
  * Refund Policy configuration — Document 13.06.
  *
- * Use verified values only. Do not invent refund windows, refill periods,
- * processing SLAs, or contact details.
+ * Approved operational policy: 30-Day Money-Back Guarantee on eligible orders.
+ * Do not invent refill periods or refund-processing SLAs here.
+ *
+ * TODO: CONFIRM mailing address for written refund correspondence (if required)
+ * TODO: CONFIRM published refund processing-time SLA (if any)
  */
 
 import { brand } from '@/config/brand';
@@ -22,7 +25,8 @@ function isPlaceholderEmail(email: string | undefined): boolean {
 
 /**
  * Current Refund Policy configuration.
- * Verified today: operating/legal display name NovaLikes, domain novalikes.com.
+ * Verified: operating name NovaLikes, domain, support email,
+ * and approved 30-Day Money-Back Guarantee on eligible orders.
  * Refill durations come from real package data on service pages — not from this file.
  */
 export const refundConfig: RefundConfig = {
@@ -30,15 +34,14 @@ export const refundConfig: RefundConfig = {
   operatingName: brand.name,
   websiteDomain: site.domain,
 
-  // Launch blockers until verified — intentionally unset
-  supportEmail: undefined,
+  supportEmail: site.supportEmail,
   mailingAddress: undefined,
-  effectiveDate: undefined,
-  lastUpdatedDate: undefined,
+  effectiveDate: '2026-08-17',
+  lastUpdatedDate: '2026-08-17',
   processingTimeDescription: undefined,
-  eligibleMoneyBackWindowLabel: undefined,
+  eligibleMoneyBackWindowLabel: '30-Day Money-Back Guarantee',
 
-  operationalPolicyVerified: false,
+  operationalPolicyVerified: true,
   publicationStatus: 'draft',
   legalReviewCompleted: false,
 };

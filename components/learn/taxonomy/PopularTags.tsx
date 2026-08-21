@@ -1,5 +1,4 @@
 import { TagList } from '@/components/learn/taxonomy/TagList';
-import { Heading } from '@/components/typography/heading';
 import { cn } from '@/lib/utils';
 import type { PublicLearnTag } from '@/types/learn';
 
@@ -14,17 +13,17 @@ type PopularTagsProps = {
  */
 export function PopularTags({
   tags,
-  title = 'Popular tags',
+  title = 'Popular topics',
   className,
 }: PopularTagsProps) {
   if (tags.length === 0) return null;
 
   return (
     <div className={cn(className)}>
-      <Heading as="h2" className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
         {title}
-      </Heading>
-      <TagList tags={tags} className="mt-3" label={title} />
+      </p>
+      <TagList tags={tags} className="mt-4" label={title} />
     </div>
   );
 }

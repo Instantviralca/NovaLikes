@@ -70,7 +70,7 @@ export function HowItWorks({
     <Section
       id={id}
       spacing="lg"
-      className={cn('surface-muted', className)}
+      className={cn('bg-transparent', className)}
       aria-labelledby={title ? 'how-it-works-heading' : undefined}
       aria-label={title ? undefined : 'How it works'}
     >
@@ -110,7 +110,7 @@ export function HowItWorks({
                 <li
                   key={step.id}
                   className={cn(
-                    'group relative flex h-full min-h-[15rem] flex-col overflow-hidden rounded-2xl border bg-white p-5 shadow-[var(--shadow-sm)] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_44px_-26px_rgba(28,25,23,0.34)] motion-reduce:hover:translate-y-0 sm:min-h-[15.5rem] sm:p-6',
+                    'group relative flex h-full min-h-[15rem] flex-col overflow-hidden rounded-[1.25rem] bg-white p-5 shadow-[0_12px_32px_-20px_rgba(50,30,20,0.45)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 motion-reduce:hover:translate-y-0 sm:min-h-[15.5rem] sm:p-6',
                     isActive
                       ? 'border-[color-mix(in_srgb,var(--brand-primary)_35%,var(--border-subtle))] shadow-[0_18px_40px_-28px_rgba(249,115,22,0.35)]'
                       : 'border-[var(--border-subtle)] hover:border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--border-subtle))] hover:shadow-[0_18px_40px_-28px_rgba(28,25,23,0.3)]',

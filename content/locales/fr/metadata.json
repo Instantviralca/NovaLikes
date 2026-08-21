@@ -1,0 +1,122 @@
+{
+  "homepage": {
+    "title": "Acheter des abonnés, likes et vues | NovaLikes",
+    "description": "Achetez des abonnés, likes, vues et commentaires pour Instagram, TikTok et Facebook. Comparez les forfaits, commandez en ligne et suivez votre commande NovaLikes."
+  },
+  "faq": {
+    "title": "FAQ NovaLikes | Commandes, paiements, remboursements",
+    "description": "Réponses sur les commandes NovaLikes, paiements, remboursements, suivi, exigences de compte et services Instagram, TikTok et Facebook."
+  },
+  "about": {
+    "title": "À propos de NovaLikes | Services Instagram, TikTok et Facebook",
+    "description": "Découvrez comment NovaLikes fonctionne, quels services de réseaux sociaux nous proposons et comment nous accompagnons les commandes Instagram, TikTok et Facebook du début à la fin."
+  },
+  "contact": {
+    "title": "Contact NovaLikes | Support commandes et services",
+    "description": "Contactez NovaLikes pour une aide concernant une commande, un paiement, le suivi ou une question de service Instagram, TikTok ou Facebook."
+  },
+  "reviews": {
+    "title": "Avis NovaLikes | Expériences des clients",
+    "description": "Lisez les retours clients sur les services Instagram, TikTok et Facebook de NovaLikes, la commande, le support et l’expérience de service globale."
+  },
+  "services": {
+    "buy-instagram-followers": {
+      "title": "Acheter des abonnés Instagram | NovaLikes",
+      "description": "Comparez les forfaits et prix d’abonnés Instagram. Commandez pour un profil public sans mot de passe. Remboursement 30 jours sur commandes éligibles."
+    },
+    "buy-instagram-likes": {
+      "title": "Acheter des likes Instagram pour posts et Reels",
+      "description": "Comparez les forfaits de likes Instagram pour posts et Reels publics. Ajoutez le lien, choisissez un forfait et finalisez votre commande en ligne."
+    },
+    "buy-instagram-views": {
+      "title": "Acheter des vues Instagram pour Reels et vidéos",
+      "description": "Comparez les forfaits de vues Instagram pour Reels et vidéos éligibles. Ajoutez le lien public, choisissez un forfait et commandez en ligne."
+    },
+    "buy-instagram-comments": {
+      "title": "Acheter des commentaires Instagram | NovaLikes",
+      "description": "Comparez les forfaits de commentaires Instagram pour posts et Reels éligibles. Ajoutez le lien public, choisissez un forfait et commandez."
+    },
+    "buy-tiktok-followers": {
+      "title": "Acheter des abonnés TikTok | NovaLikes",
+      "description": "Comparez les forfaits et prix d’abonnés TikTok. Commandez pour un profil public sans mot de passe. Remboursement 30 jours sur commandes éligibles."
+    },
+    "buy-tiktok-likes": {
+      "title": "Acheter des likes TikTok pour vidéos | NovaLikes",
+      "description": "Comparez les forfaits et prix de likes TikTok pour une vidéo publique. Ajoutez le lien, choisissez un forfait et finalisez votre commande."
+    },
+    "buy-tiktok-views": {
+      "title": "Acheter des vues TikTok pour vidéos | NovaLikes",
+      "description": "Comparez les forfaits et prix de vues TikTok pour une vidéo publique. Ajoutez le lien, choisissez un forfait et finalisez votre commande."
+    },
+    "buy-facebook-followers": {
+      "title": "Acheter des abonnés Facebook | NovaLikes",
+      "description": "Comparez les forfaits d’abonnés Facebook pour une Page publique. Indiquez l’URL de Page, choisissez un forfait et commandez en ligne."
+    },
+    "buy-facebook-page-likes": {
+      "title": "Acheter des J’aime de Page Facebook | NovaLikes",
+      "description": "Comparez les forfaits et prix de J’aime de Page Facebook. Indiquez l’URL de votre Page publique, choisissez un forfait et commandez."
+    },
+    "buy-facebook-post-likes": {
+      "title": "Acheter des J’aime de publication Facebook",
+      "description": "Comparez les forfaits et prix de J’aime de publication Facebook. Indiquez l’URL publique, choisissez un forfait et commandez en ligne."
+    }
+  },
+  "toolsHub": {
+    "title": "Outils gratuits pour les réseaux sociaux | Instagram, TikTok et Facebook",
+    "description": "Utilisez les outils gratuits NovaLikes pour Instagram, TikTok et Facebook, y compris des téléchargeurs de vidéos, des visionneuses de profil et des vérifications de profil public."
+  },
+  "tools": {
+    "instagram-profile-picture-viewer": {
+      "title": "Visionneuse de photo de profil Instagram – Taille réelle | NovaLikes",
+      "description": "Voyez et téléchargez la photo de profil Instagram disponible publiquement en taille réelle. Saisissez un nom d’utilisateur ou une URL de profil public. Aucune connexion Instagram requise."
+    },
+    "instagram-follower-counter": {
+      "title": "Vérificateur d’abonnés Instagram – Gratuit | NovaLikes",
+      "description": "Vérifiez le nombre d’abonnés qu’Instagram rend public pour un profil. Saisissez un nom d’utilisateur ou une URL de profil public. Aucune connexion Instagram requise."
+    },
+    "instagram-profile-viewer": {
+      "title": "Visionneuse de profil Instagram – Profils publics | NovaLikes",
+      "description": "Voyez les détails de profil Instagram disponibles publiquement, notamment photo, bio, abonnés, abonnements et nombre de publications. Aucune connexion Instagram requise."
+    },
+    "instagram-video-downloader": {
+      "title": "Téléchargeur de vidéos Instagram – Vidéos publiques | NovaLikes",
+      "description": "Collez l’URL d’une publication ou d’un Reel Instagram public pour vérifier un média vidéo téléchargeable lorsque Instagram l’expose. Aucune connexion Instagram requise."
+    },
+    "tiktok-video-downloader": {
+      "title": "Téléchargeur de vidéos TikTok gratuit – MP4 | NovaLikes",
+      "description": "Collez une URL de vidéo TikTok publique pour trouver les options de téléchargement MP4 disponibles. Aucune connexion ni application TikTok n’est requise. La disponibilité peut varier selon la vidéo."
+    },
+    "tiktok-profile-picture-downloader": {
+      "title": "Téléchargeur de photo de profil TikTok – Taille réelle | NovaLikes",
+      "description": "Voyez et téléchargez une photo de profil TikTok disponible publiquement en taille réelle. Saisissez un nom d’utilisateur, @handle ou une URL de profil public. Aucune connexion TikTok requise."
+    },
+    "facebook-video-downloader": {
+      "title": "Téléchargeur de vidéos Facebook – HD et SD gratuits | NovaLikes",
+      "description": "Collez une URL de vidéo Facebook publique pour trouver les options de téléchargement HD ou SD. Aucune connexion ni application Facebook n’est requise pour les vidéos publiques prises en charge."
+    },
+    "facebook-reels-downloader": {
+      "title": "Téléchargeur de Reels Facebook – HD et SD gratuits | NovaLikes",
+      "description": "Collez une URL de Reel Facebook publique pour trouver les options de téléchargement HD ou SD. Aucune connexion ni application Facebook n’est requise pour les Reels publics pris en charge."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Politique de confidentialité | NovaLikes",
+    "description": "Découvrez comment NovaLikes collecte, utilise, stocke et traite les informations lorsque vous utilisez le site, les services payants, les outils gratuits et le support."
+  },
+  "refundPolicy": {
+    "title": "Politique de remboursement | Garantie 30 jours | NovaLikes",
+    "description": "Lisez la garantie de remboursement de 30 jours NovaLikes, l’éligibilité, les exclusions, les annulations, les recharges et le processus de demande."
+  },
+  "termsAndConditions": {
+    "title": "Conditions générales | NovaLikes",
+    "description": "Lisez les conditions qui régissent les services NovaLikes, les commandes, les paiements, les outils gratuits, les responsabilités du client, les remboursements et l’utilisation du site."
+  },
+  "cookiePolicy": {
+    "title": "Politique de cookies | NovaLikes",
+    "description": "Découvrez comment NovaLikes utilise les cookies et le stockage du navigateur pour le panier, les sessions d’administration, les préférences et d’autres fonctions du site."
+  },
+  "disclaimer": {
+    "title": "Mentions légales | NovaLikes",
+    "description": "Lisez d’importantes limitations concernant les services NovaLikes, les plateformes tierces, les outils gratuits, les indicateurs des réseaux sociaux et le contenu téléchargé."
+  }
+}

@@ -25,7 +25,12 @@ export function CategoryGrid({
     <Section>
       <Container>
         <div className="mb-8 max-w-2xl">
-          <Heading as="h2">{title}</Heading>
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+            Topics
+          </p>
+          <Heading as="h2" className="mt-2">
+            {title}
+          </Heading>
           <MutedText className="mt-2">{description}</MutedText>
         </div>
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

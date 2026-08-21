@@ -33,7 +33,7 @@ export function FeaturedServicesSection({ className, id }: FeaturedServicesSecti
     <Section
       id={sectionId}
       spacing="lg"
-      className={cn('surface-muted', className)}
+      className={cn('bg-transparent', className)}
       aria-labelledby={`${sectionId}-heading`}
     >
       <Container size="xl">

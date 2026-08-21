@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -67,6 +68,37 @@ export function AboutCtaButtons({
         </Button>
       ) : null}
     </div>
+  );
+}
+
+type AboutFinalBannerCtaProps = {
+  href: string;
+  label: string;
+};
+
+/** Orange About banner CTA — white button with analytics. */
+export function AboutFinalBannerCta({ href, label }: AboutFinalBannerCtaProps) {
+  return (
+    <Button
+      asChild
+      size="lg"
+      className="min-h-11 shrink-0 border-0 bg-white text-[var(--brand-primary)] hover:bg-white/95 hover:text-[var(--brand-primary-hover)]"
+    >
+      <Link
+        href={href}
+        data-analytics={aboutAnalyticsEvents.about_cta_click}
+        onClick={() =>
+          trackAboutEvent(aboutAnalyticsEvents.about_cta_click, {
+            href,
+            cta: 'primary',
+            location: 'final',
+          })
+        }
+      >
+        {label}
+        <ArrowRight className="size-4" aria-hidden />
+      </Link>
+    </Button>
   );
 }
 

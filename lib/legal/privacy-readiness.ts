@@ -39,7 +39,9 @@ export function getPrivacyPublicationReadiness(
       id: 'privacy-contact',
       label: 'Verified privacy contact',
       satisfied: Boolean(privacyEmail || config.privacyContactName || config.privacyContactRole),
-      notes: 'Privacy email, role, and mailing address are not configured.',
+      notes: privacyEmail
+        ? `Privacy contact email configured: ${privacyEmail}. Confirm role/mailing address if required.`
+        : 'Privacy email, role, and mailing address are not configured.',
     },
     {
       id: 'effective-dates',

@@ -6,7 +6,7 @@ Safe launch runbook for novalikes.com. Does not change product UI, SEO, pricing,
 > [`docs/PRODUCTION_DEPLOYMENT_GUIDE.md`](docs/PRODUCTION_DEPLOYMENT_GUIDE.md)  
 > **Template:** [`.env.production.example`](.env.production.example)
 
-> **External checkout subdomain:** set `NEXT_PUBLIC_CHECKOUT_URL=https://checkout.novalikes.com` and add the domain in Vercel (same project). Soft cart on the main site hands off to that host; Stripe cancel returns there; success stays on the main site. When configured, main-site `/checkout` redirects to the subdomain; the subdomain redirects all non-checkout pages to the main site.
+> **Checkout:** cart, checkout, order-success and track-order are same-origin on `https://novalikes.com`. Do not configure `checkout.novalikes.com`. Stripe or another processor may still host its own payment-authorization page.
 
 ## Required environment variables
 
@@ -70,6 +70,16 @@ npm run db:migrate:sql      # apply drizzle/*.sql with schema_migrations trackin
 npm run build
 npm run start
 npm test
+npm run cms:create-author   # bootstrap an author (env vars, never commit passwords)
+npm run publish:scheduled   # idempotent scheduled Learn article publisher
+```
+
+Author Dashboard details: [`docs/CMS_AUTHOR_DASHBOARD.md`](docs/CMS_AUTHOR_DASHBOARD.md).
+
+Later, on the Ubuntu/Contabo host (do not enable until that deploy):
+
+```cron
+* * * * * cd /var/www/novalikes && /usr/bin/npm run publish:scheduled >> /var/log/novalikes-publish-scheduled.log 2>&1
 ```
 
 ---

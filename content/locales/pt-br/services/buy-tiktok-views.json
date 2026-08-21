@@ -1,0 +1,627 @@
+{
+  "content": {
+    "slug": "buy-tiktok-views",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "Comprar visualizações no TikTok | NovaLikes",
+      "description": "Compre visualizações no TikTok com preços claros de pacote para vídeos públicos. Somente URL pública do vídeo, checkout seguro e acompanhamento do pedido para criadores e negócios."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR VISUALIZAÇÕES NO TIKTOK",
+      "title": "Comprar visualizações no TikTok",
+      "description": "Compre visualizações no TikTok escolhendo o pacote e a quantidade que combinam com o vídeo. A NovaLikes permite comparar os pacotes e os preços de visualizações no TikTok disponíveis antes de pedir. Selecione o número de visualizações que quer, envie o link público correto do vídeo no TikTok e conclua o pedido online. A senha do TikTok não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "purpose": "Convert for TikTok views packages worldwide",
+      "primaryKeyword": "buy TikTok views",
+      "supportingKeywords": [
+        "Buy TikTok Views",
+        "Buy Views on TikTok",
+        "Buy Views for TikTok",
+        "TikTok Views Packages",
+        "Buying TikTok Views"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "Escolher um pacote de visualizações no TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Como funciona",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-v-trust-url",
+          "label": "Somente link de vídeo público"
+        },
+        {
+          "id": "tt-v-trust-password",
+          "label": "Sem senha necessária"
+        },
+        {
+          "id": "tt-v-trust-checkout",
+          "label": "Checkout seguro"
+        },
+        {
+          "id": "tt-v-trust-track",
+          "label": "Acompanhamento do pedido"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-views/tiktok-views-hero.webp",
+        "alt": "Ilustração de visualizações e análises de alcance de vídeo no TikTok",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Pacotes e preços de visualizações no TikTok",
+      "description": "Compare os pacotes, as quantidades e os preços de visualizações no TikTok disponíveis antes de pedir. Escolha o número de visualizações que quer para o vídeo público no TikTok, revise a opção de pacote disponível e o preço atual e adicione o pacote selecionado ao carrinho quando estiver pronto.",
+      "purpose": "Present real NovaLikes.com TikTok views packages",
+      "primaryKeyword": "TikTok views packages",
+      "suggestedWordCount": 55,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuar com este pacote",
+      "emptyMessage": "Os pacotes de visualizações no TikTok estão temporariamente indisponíveis."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-views",
+      "title": "Por que as pessoas compram visualizações no TikTok?",
+      "description": "As pessoas compram visualizações no TikTok para aumentar a contagem visível de reproduções em um vídeo público, fortalecer a primeira impressão e apoiar campanhas de criadores ou negócios. Uma contagem maior de visualizações pode fazer o conteúdo ativo parecer mais consolidado, mas não garante curtidas, seguidores, vendas nem promoção algorítmica.",
+      "purpose": "Explain informed use of TikTok views packages",
+      "primaryKeyword": "buy TikTok views",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "tt-v-first-impressions",
+          "title": "Primeiras impressões mais fortes",
+          "description": "Uma contagem visível de reproduções pode fazer um vídeo parecer mais ativo quando os espectadores o descobrem por um perfil, um link compartilhado ou o feed do TikTok."
+        },
+        {
+          "id": "tt-v-campaign-visibility",
+          "title": "Visibilidade de campanha",
+          "description": "Criadores e negócios podem usar pacotes de visualizações junto com lançamentos, promoções e outras campanhas de vídeo curto."
+        },
+        {
+          "id": "tt-v-flexible-quantities",
+          "title": "Quantidades flexíveis",
+          "description": "Pacotes menores podem apoiar publicações individuais, enquanto opções maiores podem combinar melhor com contas consolidadas e consistentemente ativas."
+        },
+        {
+          "id": "tt-v-alongside-content",
+          "title": "Funciona junto com o conteúdo",
+          "description": "As visualizações compradas funcionam melhor quando apoiam vídeos originais, ganchos claros, publicações consistentes e interação genuína com o público."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-tiktok-views",
+      "title": "Por que escolher visualizações no TikTok da NovaLikes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections",
+      "primaryKeyword": "buy TikTok views",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-views-features",
+      "title": "Recursos",
+      "description": "",
+      "purpose": "Unused on lean authority layout — requirements section is separate",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Como comprar visualizações no TikTok",
+      "description": "Para comprar visualizações no TikTok, escolha um pacote, cole o link público do vídeo que quer promover, revise as informações do pedido e conclua o checkout seguro. Não é necessária senha do TikTok, e as atualizações de status disponíveis podem ser acompanhadas depois do pagamento.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok views",
+      "supportingKeywords": [
+        "how to buy views on TikTok",
+        "buy views for TikTok",
+        "buying TikTok views",
+        "TikTok views buy"
+      ],
+      "suggestedWordCount": 90,
+      "steps": [
+        {
+          "id": "tt-v-step-1",
+          "title": "Escolha um pacote",
+          "description": "Selecione a quantidade de visualizações que combina com o vídeo e o objetivo da campanha."
+        },
+        {
+          "id": "tt-v-step-2",
+          "title": "Cole o link público do vídeo",
+          "description": "Copie a URL exata do TikTok para que as visualizações sejam entregues à publicação correta."
+        },
+        {
+          "id": "tt-v-step-3",
+          "title": "Revise o pedido",
+          "description": "Confirme a quantidade, o link, o preço e as informações de entrega."
+        },
+        {
+          "id": "tt-v-step-4",
+          "title": "Conclua o checkout seguro",
+          "description": "Finalize o pagamento sem informar dados de login."
+        },
+        {
+          "id": "tt-v-step-5",
+          "title": "Acompanhe a entrega",
+          "description": "Use os dados do pedido para conferir as atualizações de andamento disponíveis."
+        }
+      ],
+      "cta": {
+        "label": "Selecionar um pacote",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "O que você precisa para fazer um pedido?",
+      "description": "Um pedido de visualizações no TikTok exige apenas alguns dados públicos. Você não precisa informar a senha, código de verificação nem acesso privado à conta.",
+      "purpose": "Explain video URL and processing requirements",
+      "primaryKeyword": "TikTok views packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "tt-v-req-url",
+          "title": "URL pública do vídeo no TikTok",
+          "description": "Cole o link público exato do vídeo que deve receber as visualizações selecionadas."
+        },
+        {
+          "id": "tt-v-req-package",
+          "title": "Pacote selecionado",
+          "description": "Escolha a quantidade que combina com o vídeo, a atividade da conta e a campanha atual."
+        },
+        {
+          "id": "tt-v-req-public",
+          "title": "Acesso público ao vídeo",
+          "description": "O vídeo selecionado deve permanecer visível publicamente enquanto o pedido estiver sendo processado."
+        },
+        {
+          "id": "tt-v-req-email",
+          "title": "Endereço de e-mail válido",
+          "description": "Use um e-mail em funcionamento para receber confirmação, detalhes de acompanhamento e atualizações do suporte."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-views-reviews",
+      "title": "O que os clientes dizem sobre a NovaLikes",
+      "description": "Avaliações de clientes para este serviço da NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-views-faq",
+      "title": "Perguntas frequentes sobre comprar visualizações no TikTok",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok views",
+      "faqIds": [
+        "faq-tt-views-need",
+        "faq-tt-views-package",
+        "faq-tt-views-password",
+        "faq-tt-views-how-long",
+        "faq-tt-views-track",
+        "faq-tt-views-wrong-url",
+        "faq-tt-views-other-metrics",
+        "faq-tt-views-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-views",
+      "title": "Conheça outros serviços de TikTok",
+      "description": "Visualizações são só uma métrica no TikTok. Se quiser aumentar a contagem de seguidores do perfil ou a contagem de curtidas em um vídeo específico, compare os outros serviços de TikTok abaixo.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-followers",
+        "buy-tiktok-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-views-final-cta",
+      "title": "Escolha o pacote de visualizações no TikTok",
+      "description": "Compare as quantidades, as opções de pacote e os preços de visualizações disponíveis, escolha o pacote que combina com o vídeo do TikTok que você quer usar e faça o pedido com o link público correto do vídeo.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver pacotes de visualizações no TikTok",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Acompanhar um pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-tiktok-views-why-choose",
+        "title": "Por que escolher a NovaLikes para visualizações no TikTok?",
+        "description": "A NovaLikes facilita comparar pacotes de visualizações no TikTok antes de pedir. Escolha o número de visualizações que quer para um vídeo público no TikTok, revise a opção de pacote disponível e o preço atual, envie o link correto do vídeo e use o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-0",
+            "title": "Várias quantidades de visualizações",
+            "description": "Compare as quantidades de visualizações no TikTok disponíveis e escolha o pacote que corresponde ao número de visualizações que você quer pedir.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-views-1",
+            "title": "Somente link de vídeo público",
+            "description": "Envie o link público correto do vídeo no TikTok para o conteúdo onde você quer que as visualizações sejam adicionadas. A senha do TikTok não é necessária.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-2",
+            "title": "Revise antes do checkout",
+            "description": "Confira a quantidade de visualizações selecionada, a opção de pacote e o preço atual antes de adicionar o pedido ao carrinho e concluir o checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-3",
+            "title": "Acompanhamento do pedido",
+            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de visualizações no TikTok.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-tiktok-views-can-you-buy",
+        "title": "Dá para comprar visualizações no TikTok?",
+        "description": "Sim. Visualizações no TikTok podem ser compradas por serviços online de visualizações. Na NovaLikes, você escolhe um pacote de visualizações disponível, envia o link público do vídeo no TikTok do conteúdo que quer usar e conclui o pedido pelo site.",
+        "cards": [
+          {
+            "id": "buy-tiktok-views-4",
+            "title": "O que um pedido de visualizações no TikTok altera",
+            "description": "Um pedido de visualizações no TikTok se aplica à contagem de visualizações no vídeo público enviado com o pedido. Ele não acrescenta automaticamente seguidores ao perfil nem curtidas ao vídeo.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-views-5",
+            "title": "O que você precisa para fazer um pedido",
+            "description": "Você precisa do link público correto do vídeo no TikTok e do pacote de visualizações que quer comprar. A senha do TikTok não é necessária.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-views-6",
+            "title": "O que as visualizações no TikTok não incluem",
+            "description": "Visualizações são separadas de seguidores e curtidas no TikTok. Pedir visualizações não acrescenta automaticamente essas outras métricas nem garante engajamento, alcance, vendas ou crescimento orgânico extras.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Antes do checkout, garanta que você selecionou visualizações no TikTok, escolheu a quantidade e a opção de pacote corretas e enviou o link exatamente do vídeo público onde quer que as visualizações sejam adicionadas."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-tiktok-views-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-tiktok-views-what-happens",
+        "title": "O que acontece depois que você compra visualizações no TikTok?",
+        "description": "Depois de fazer um pedido de visualizações no TikTok, o pacote de visualizações e o link público do vídeo enviados são usados para processar o pedido no vídeo selecionado. Mantenha o vídeo acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "steps": [
+          {
+            "id": "buy-tiktok-views-th-1",
+            "title": "Os dados do pedido são conferidos",
+            "description": "O pacote de visualizações, a quantidade, a opção de pacote e o link do vídeo no TikTok enviados são associados ao pedido para que a solicitação possa ser processada no vídeo pretendido."
+          },
+          {
+            "id": "buy-tiktok-views-th-2",
+            "title": "As visualizações vão para o vídeo enviado",
+            "description": "O pedido se aplica ao vídeo do TikTok ligado ao link que você enviou. Confira o link do vídeo com cuidado antes de concluir o checkout."
+          },
+          {
+            "id": "buy-tiktok-views-th-3",
+            "title": "O tempo de processamento pode variar",
+            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de visualizações, a opção de pacote selecionada e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pacotes."
+          },
+          {
+            "id": "buy-tiktok-views-th-4",
+            "title": "Confira o status do pedido",
+            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+          }
+        ],
+        "closingNote": "Evite excluir o vídeo enviado, torná-lo indisponível ou alterar qualquer coisa que impeça o acesso ao conteúdo enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+      },
+      "serviceCompare": {
+        "id": "buy-tiktok-views-service-compare",
+        "title": "Visualizações vs seguidores vs curtidas no TikTok",
+        "description": "Visualizações, seguidores e curtidas medem partes diferentes do TikTok. Escolha o serviço conforme quiser alterar a contagem de visualizações em um vídeo específico, a contagem de seguidores do perfil ou a contagem de curtidas em um vídeo do TikTok.",
+        "current": {
+          "title": "Visualizações no TikTok",
+          "description": "Visualizações são uma métrica no nível do vídeo. Escolha visualizações no TikTok quando quiser aumentar a contagem de visualizações exibida em um vídeo público elegível no TikTok.",
+          "bestFor": "Vídeos no TikTok em que a contagem visível de visualizações é a métrica que você quer alterar.",
+          "ctaLabel": "Visualizações no TikTok"
+        },
+        "likes": {
+          "title": "Seguidores no TikTok",
+          "description": "Seguidores são uma métrica no nível do perfil. Escolha seguidores no TikTok quando quiser aumentar a contagem de seguidores exibida no perfil público no TikTok.",
+          "bestFor": "Perfis em que a contagem de seguidores é a métrica que você quer alterar.",
+          "href": "/buy-tiktok-followers",
+          "ctaLabel": "Ver seguidores no TikTok"
+        },
+        "views": {
+          "title": "Curtidas no TikTok",
+          "description": "Curtidas são uma métrica no nível do vídeo. Escolha curtidas no TikTok quando quiser aumentar a contagem de curtidas exibida em um vídeo público elegível no TikTok.",
+          "bestFor": "Vídeos no TikTok em que a contagem visível de curtidas é a métrica que você quer alterar.",
+          "href": "/buy-tiktok-likes",
+          "ctaLabel": "Ver curtidas no TikTok"
+        },
+        "combinedNote": "",
+        "commentsHref": "/buy-tiktok-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-tiktok-views-before-buying",
+        "title": "O que conferir antes de comprar visualizações no TikTok",
+        "description": "Antes de comprar visualizações no TikTok, revise o pacote e os detalhes do vídeo antes de concluir o pedido. Garanta que a quantidade de visualizações, a opção de pacote, o preço, o link do vídeo no TikTok e o serviço correspondam ao que você quer para o vídeo selecionado.",
+        "framingNote": "Confira o link do vídeo no TikTok enviado, a quantidade de visualizações, a opção de pacote e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar visualizações garante curtidas, seguidores, engajamento, alcance, vendas ou crescimento orgânico extras.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-7",
+            "title": "Confira a quantidade de visualizações",
+            "description": "Revise o número de visualizações no TikTok incluído no pacote para saber quantas você está pedindo para o vídeo enviado.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-views-8",
+            "title": "Confirme o preço do pacote",
+            "description": "Confira o preço atual exibido para o pacote de visualizações selecionado antes de adicioná-lo ao carrinho. Se alterar a quantidade ou a opção de pacote, revise o preço atualizado antes do checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-views-9",
+            "title": "Use o link correto do vídeo no TikTok",
+            "description": "Confira o link público do vídeo no TikTok com cuidado para o pedido ser associado exatamente ao vídeo onde você quer que as visualizações sejam adicionadas.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-views-10",
+            "title": "Escolha o serviço certo de TikTok",
+            "description": "Visualizações, seguidores e curtidas são serviços separados. Confira se visualizações no TikTok é o serviço de que você precisa antes de fazer o pedido.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-tiktok-views-11",
+            "title": "Revise suporte e políticas",
+            "description": "Confira as políticas de compra relevantes e as opções de suporte disponíveis para saber onde procurar se tiver uma dúvida sobre o pedido.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-tiktok-views-worldwide",
+        "title": "Escolhendo o vídeo certo no TikTok para visualizações",
+        "description": "Visualizações no TikTok se aplica a um vídeo público elegível específico. Garanta que o link do vídeo informado no checkout aponta para exatamente o conteúdo cuja contagem de visualizações você quer usar.",
+        "eyebrow": "Pronto para visualizações no TikTok",
+        "closingNote": "Visualizações no TikTok se aplica a um vídeo público específico. Envie o link exato do vídeo, mantenha o vídeo acessível e revise o pacote de visualizações antes do checkout.",
+        "cards": [
+          {
+            "id": "buy-tiktok-views-12",
+            "title": "Envie o link exato do vídeo",
+            "description": "Uma URL de perfil no TikTok não é a mesma coisa que uma URL de vídeo. Use o link público do vídeo pedido para o serviço de visualizações.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-13",
+            "title": "Mantenha o vídeo acessível",
+            "description": "Evite excluir ou restringir o vídeo enviado enquanto um pedido ativo depender de acesso público àquele conteúdo.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-14",
+            "title": "Escolha um pacote de visualizações",
+            "description": "Compare as quantidades de visualizações e as opções de pacote disponíveis antes de selecionar a que você quer para o vídeo.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-views-15",
+            "title": "Confira tudo antes do checkout",
+            "description": "Revise a URL do vídeo, o pacote de visualizações e o preço antes de concluir o pedido.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-tiktok-views-popular-packages",
+        "title": "Pacotes populares de visualizações no TikTok",
+        "description": "Compare algumas das quantidades de visualizações no TikTok disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções de pacote.",
+        "rows": [
+          {
+            "id": "tt-v-hq-1000",
+            "quantity": "1.000 visualizações",
+            "recommendedFor": "Uma opção menor para um vídeo público no TikTok em que você quer acrescentar mil visualizações."
+          },
+          {
+            "id": "tt-v-hq-5000",
+            "quantity": "5.000 visualizações",
+            "recommendedFor": "Uma opção intermediária para um vídeo no TikTok em que você quer uma mudança maior na contagem de visualizações exibida."
+          },
+          {
+            "id": "tt-v-hq-10000",
+            "quantity": "10.000 visualizações",
+            "recommendedFor": "Um pacote maior para um vídeo público no TikTok em que você quer acrescentar dez mil visualizações em um único pedido."
+          },
+          {
+            "id": "tt-v-hq-50000",
+            "quantity": "50.000 visualizações",
+            "recommendedFor": "Uma opção de volume maior para um vídeo no TikTok em que você quer um aumento maior na contagem de visualizações exibida."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-tiktok-views-best-practices",
+        "title": "Boas práticas depois de comprar visualizações no TikTok",
+        "description": "Comprar visualizações altera a contagem de visualizações no vídeo selecionado no TikTok, mas o restante da atividade no TikTok ainda depende do conteúdo que você publica e de como administra a conta. Continue criando vídeos, revisando o desempenho e interagindo com o público junto com o serviço.",
+        "closingNote": "A contagem de visualizações é só uma métrica em um vídeo no TikTok. Seu conteúdo, curtidas, respostas do público, decisões de publicação e outras atividades da conta ainda dependem de como você administra a presença no TikTok.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-16",
+            "title": "Continue publicando vídeos no TikTok",
+            "description": "Continue criando vídeos que combinem com a conta, o tema, o negócio ou o público que você quer alcançar.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-tiktok-views-17",
+            "title": "Use legendas que combinem com o vídeo",
+            "description": "Escreva legendas que apoiem o conteúdo que você publica e dêem contexto útil para quem assiste ao vídeo.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-tiktok-views-18",
+            "title": "Revise as análises do TikTok",
+            "description": "Se as análises estiverem disponíveis na conta, revise visualizações, curtidas, engajamento, atividade de visualização e outros dados disponíveis para entender como o próprio conteúdo performa.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-tiktok-views-19",
+            "title": "Teste formatos diferentes de vídeo",
+            "description": "Experimente temas, durações, aberturas, formatos e estilos de apresentação diferentes para aprender o que funciona para a conta.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-tiktok-views-20",
+            "title": "Responda a interações genuínas",
+            "description": "Responda a comentários e mensagens genuínos quando fizer sentido. Uma contagem maior de visualizações não substitui as interações que você constrói com a própria atividade da conta.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-tiktok-views-21",
+            "title": "Mantenha o conteúdo consistente",
+            "description": "Mantenha uma abordagem de publicação que faça sentido para a conta, em vez de tratar um pacote de visualizações como substituto de conteúdo contínuo.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-tiktok-views-common-mistakes",
+        "title": "Erros comuns ao comprar visualizações no TikTok",
+        "description": "Alguns erros simples podem causar problemas em um pedido de visualizações no TikTok. Confira o link do vídeo, a quantidade de visualizações, a opção de pacote, o serviço e as expectativas antes do checkout para saber exatamente o que você está pedindo.",
+        "closingNote": "Antes de fazer um pedido, confira o link do vídeo no TikTok, a quantidade de visualizações, a opção de pacote e o preço mais uma vez. Se algo mudar depois do checkout, use as opções de acompanhamento ou suporte disponíveis para o pedido.",
+        "items": [
+          {
+            "id": "buy-tiktok-views-22",
+            "title": "Enviar o link errado do vídeo no TikTok",
+            "description": "Confira o link público do vídeo no TikTok com cuidado antes de pedir. O link deve apontar exatamente para o vídeo onde você quer que as visualizações sejam adicionadas.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-tiktok-views-23",
+            "title": "Escolher o serviço errado de TikTok",
+            "description": "Visualizações, seguidores e curtidas são serviços separados. Escolha visualizações no TikTok somente quando a contagem de visualizações em um vídeo específico for a métrica que você quer alterar.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-tiktok-views-24",
+            "title": "Selecionar a quantidade errada de visualizações",
+            "description": "Revise o número de visualizações incluído no pacote selecionado antes do checkout para não pedir uma quantidade diferente da que você pretendia.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-tiktok-views-25",
+            "title": "Remover o vídeo durante um pedido",
+            "description": "Evite excluir o vídeo enviado ou torná-lo indisponível enquanto o pedido estiver sendo processado.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-tiktok-views-26",
+            "title": "Esperar que visualizações garantam outros resultados",
+            "description": "Uma contagem maior de visualizações não significa automaticamente mais curtidas, seguidores, engajamento, alcance, vendas ou crescimento orgânico.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-tiktok-views-27",
+            "title": "Tratar visualizações como substituto de conteúdo",
+            "description": "Comprar visualizações altera uma métrica no vídeo selecionado. Seus vídeos, decisões de publicação, legendas e interação com o público ainda dependem de como você administra a conta.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-followers": {
+            "title": "Seguidores no TikTok",
+            "description": "Escolha seguidores no TikTok quando quiser aumentar a contagem de seguidores exibida no perfil público no TikTok.",
+            "ctaLabel": "Ver seguidores no TikTok"
+          },
+          "buy-tiktok-likes": {
+            "title": "Curtidas no TikTok",
+            "description": "Escolha curtidas no TikTok quando quiser aumentar a contagem de curtidas exibida em um vídeo público elegível no TikTok.",
+            "ctaLabel": "Ver curtidas no TikTok"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-tiktok-views-why-buy",
+      "title": "Por que as pessoas compram visualizações no TikTok?",
+      "description": "As pessoas compram visualizações no TikTok por motivos diferentes. Algumas querem aumentar a contagem de visualizações exibida em um vídeo particular, enquanto outras escolhem um pacote de visualizações para conteúdo ligado a um lançamento, campanha ou atividade contínua no TikTok. O serviço altera a métrica de visualizações no vídeo selecionado, mas não garante curtidas, seguidores, engajamento, alcance, vendas ou crescimento orgânico extras.",
+      "items": [
+        {
+          "id": "buy-tiktok-views-wb-1",
+          "title": "Aumente a contagem visível de visualizações",
+          "description": "Um pacote de visualizações no TikTok pode ser usado quando você quer aumentar o número de visualizações exibido em um vídeo público específico."
+        },
+        {
+          "id": "buy-tiktok-views-wb-2",
+          "title": "Use visualizações em um lançamento ou campanha",
+          "description": "Criadores e negócios podem escolher um pacote de visualizações para um vídeo no TikTok ligado a um lançamento de produto, campanha, anúncio ou outra atividade de conteúdo."
+        },
+        {
+          "id": "buy-tiktok-views-wb-3",
+          "title": "Foque a métrica de visualizações",
+          "description": "Visualizações no TikTok se aplica à contagem de visualizações no vídeo selecionado, em vez de acrescentar automaticamente seguidores ao perfil ou curtidas ao vídeo."
+        },
+        {
+          "id": "buy-tiktok-views-wb-4",
+          "title": "Escolha a quantidade que você quer",
+          "description": "Tamanhos diferentes de pacote permitem selecionar o número de visualizações no TikTok que você quer pedir para o vídeo enviado."
+        },
+        {
+          "id": "buy-tiktok-views-wb-5",
+          "title": "Use visualizações junto com o conteúdo",
+          "description": "Comprar visualizações não substitui criar e administrar o próprio conteúdo no TikTok. Vídeos, legendas, respostas e outras atividades da conta ainda dependem de como você administra a presença."
+        }
+      ],
+      "bottomNote": "Se seguidores ou curtidas de vídeo forem a métrica que você quer alterar, escolha o serviço correspondente de TikTok em vez de um pacote de visualizações."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Como comprar visualizações no TikTok",
+      "description": "Comprar visualizações no TikTok pela NovaLikes leva quatro passos. Escolha o pacote de visualizações que quer, envie o link público do vídeo no TikTok, conclua o checkout e use os dados do pedido para conferir o status.",
+      "steps": [
+        {
+          "id": "buy-tiktok-views-step-1",
+          "title": "Escolha o pacote de visualizações",
+          "description": "Compare as quantidades, as opções de pacote e os preços de visualizações no TikTok disponíveis e selecione o pacote que você quer para o vídeo."
+        },
+        {
+          "id": "buy-tiktok-views-step-2",
+          "title": "Informe o link do vídeo no TikTok",
+          "description": "Envie o link público correto do vídeo no TikTok para o vídeo onde você quer que as visualizações sejam adicionadas. A senha do TikTok não é necessária."
+        },
+        {
+          "id": "buy-tiktok-views-step-3",
+          "title": "Conclua o pedido",
+          "description": "Revise a quantidade de visualizações, a opção de pacote e o preço selecionados e siga o checkout para fazer o pedido."
+        },
+        {
+          "id": "buy-tiktok-views-step-4",
+          "title": "Acompanhe o pedido",
+          "description": "Depois do checkout, use a opção de acompanhamento disponível para conferir informações de status do pedido de visualizações no TikTok."
+        }
+      ]
+    },
+    "relatedHeading": "Conheça outros serviços de TikTok",
+    "relatedIntro": "Visualizações são só uma métrica no TikTok. Se quiser aumentar a contagem de seguidores do perfil ou a contagem de curtidas em um vídeo específico, compare os outros serviços de TikTok abaixo."
+  }
+}

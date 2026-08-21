@@ -122,3 +122,15 @@ export function checkoutMetadata(): Metadata {
 export function adminMetadata(): Metadata {
   return buildPageMetadataForRoute(routes.admin);
 }
+
+export function toolsHubMetadata(): Metadata {
+  return buildPageMetadataForRoute(routes.tools);
+}
+
+export function toolPageMetadata(slug: string): Metadata {
+  return buildPageMetadataForRoute(`${routes.tools}/${slug}`);
+}
+
+export function htmlSitemapMetadata(): Metadata {
+  return buildPageMetadataForRoute(routes.sitemap);
+}

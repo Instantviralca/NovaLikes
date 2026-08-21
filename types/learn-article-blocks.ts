@@ -164,7 +164,16 @@ export type InternalCtaBlock = BlockBase & {
   type: 'internal_cta';
   href: string;
   label: string;
+  heading?: string;
   description?: string;
+};
+
+/** Mid-article cluster of related commercial destinations — editorial, not a pricing grid. */
+export type ServiceClusterCtaBlock = BlockBase & {
+  type: 'service_cluster_cta';
+  heading: string;
+  text: string;
+  serviceSlugs: string[];
 };
 
 export type RelatedServiceCardBlock = BlockBase & {
@@ -218,6 +227,7 @@ export type ArticleContentBlock =
   | KeyTakeawayBoxBlock
   | FaqGroupBlock
   | InternalCtaBlock
+  | ServiceClusterCtaBlock
   | RelatedServiceCardBlock
   | RelatedArticleCardBlock
   | DividerBlock

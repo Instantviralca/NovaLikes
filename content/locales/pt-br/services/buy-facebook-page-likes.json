@@ -1,0 +1,635 @@
+{
+  "content": {
+    "slug": "buy-facebook-page-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Comprar curtidas de Página no Facebook | NovaLikes",
+      "description": "Compre curtidas de Página no Facebook com pacotes transparentes para negócios e criadores. Somente URL pública da Página, checkout seguro e acompanhamento do pedido. Sem senha."
+    },
+    "hero": {
+      "eyebrow": "COMPRAR CURTIDAS DE PÁGINA NO FACEBOOK",
+      "title": "Comprar curtidas de Página no Facebook",
+      "description": "Compre curtidas de Página no Facebook escolhendo o pacote e a quantidade que combinam com a Página. A NovaLikes permite comparar os pacotes e os preços de curtidas de Página disponíveis antes de pedir. Selecione o número de curtidas de Página que quer, envie a URL pública correta da Página do Facebook e conclua o pedido online. A senha do Facebook não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "purpose": "Convert for Facebook page likes packages worldwide",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Facebook Page Likes",
+        "Buy Facebook Business Page Likes",
+        "Buy Likes for Facebook Page",
+        "Facebook Page Likes Buy",
+        "Can You Buy Facebook Page Likes"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Escolher um pacote de curtidas de Página no Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Como funciona",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-pl-trust-url",
+          "label": "Somente URL de Página pública do Facebook"
+        },
+        {
+          "id": "fb-pl-trust-password",
+          "label": "Sem senha necessária"
+        },
+        {
+          "id": "fb-pl-trust-checkout",
+          "label": "Checkout seguro"
+        },
+        {
+          "id": "fb-pl-trust-track",
+          "label": "Acompanhamento do pedido"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp",
+        "alt": "Ilustração de curtidas de Página de negócios no Facebook e análises do Meta Business Suite",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Pacotes e preços de curtidas de Página no Facebook",
+      "description": "Compare os pacotes, as quantidades e os preços de curtidas de Página no Facebook disponíveis antes de pedir. Escolha o número de curtidas de Página que quer para a Página pública do Facebook, revise o preço atual do pacote e adicione o pacote selecionado ao carrinho quando estiver pronto.",
+      "purpose": "Present real NovaLikes.com Facebook page likes packages",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Continuar com o pacote",
+      "emptyMessage": "Os pacotes de curtidas de Página no Facebook estão temporariamente indisponíveis."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-page-likes",
+      "title": "Por que as pessoas compram curtidas de Página no Facebook?",
+      "description": "As pessoas compram curtidas de Página no Facebook por motivações diferentes de marketing — de lançar uma Página nova de negócio a apoiar campanhas de marca. O objetivo comum é uma prova social visível mais forte quando os visitantes descobrem a Página pela primeira vez.",
+      "purpose": "Explain motivations for buying Facebook page likes",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "buy likes for Facebook page",
+        "buy Facebook business page likes",
+        "Facebook page likes buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-pl-new-business",
+          "title": "Lance uma Página nova de negócio",
+          "description": "Restaurantes, agências, lojas e negócios de serviço novos costumam querer que a Página do Facebook pareça mais consolidada desde o primeiro dia."
+        },
+        {
+          "id": "fb-pl-launch",
+          "title": "Apoie o lançamento de um produto ou marca",
+          "description": "Equipes que conduzem lançamentos e campanhas de reconhecimento usam pacotes de curtidas de Página para fortalecer a Página que promove a oferta."
+        },
+        {
+          "id": "fb-pl-brand-image",
+          "title": "Fortaleça a imagem da marca",
+          "description": "Marcas compram curtidas de Página quando querem que a contagem pública de curtidas da Página combine melhor com o quanto o negócio já parece consolidado offline."
+        },
+        {
+          "id": "fb-pl-social-proof",
+          "title": "Acrescente prova social visível",
+          "description": "Criadores e organizações usam curtidas de Página como mais um sinal público que os visitantes podem notar antes de ler as publicações ou entrar em contato."
+        },
+        {
+          "id": "fb-pl-campaigns",
+          "title": "Apoie campanhas de marketing",
+          "description": "Pacotes de curtidas de Página costumam ser pedidos junto com anúncios no Facebook, calendários de conteúdo e engajamento da comunidade, e não como um plano isolado de crescimento."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-page-likes",
+      "title": "Por que escolher a NovaLikes para curtidas de Página no Facebook?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook page likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-page-likes-delivery",
+      "title": "Recursos",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "Como comprar curtidas de Página no Facebook",
+      "description": "Comprar curtidas de Página no Facebook é um processo direto. Selecione o pacote de curtidas de Página que combina com os objetivos, informe a URL pública da Página do Facebook, revise os detalhes do pedido e conclua o checkout seguro. Você nunca precisa informar a senha do Facebook e pode acompanhar as atualizações disponíveis do pedido depois da compra.",
+      "purpose": "Explain the five-step Facebook Page Likes ordering process",
+      "primaryKeyword": "how to buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Page Likes on Facebook",
+        "Buying Page Likes on Facebook",
+        "Buy Facebook Business Page Likes"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-pl-step-1",
+          "title": "Escolha um pacote de curtidas de Página",
+          "description": "Compare os pacotes de curtidas de Página disponíveis e selecione a quantidade que melhor combina com a Página do Facebook, a campanha de marketing e o tamanho atual do público."
+        },
+        {
+          "id": "fb-pl-step-2",
+          "title": "Informe a URL pública da Página do Facebook",
+          "description": "Cole a URL pública da Página do Facebook que deve receber o pacote de curtidas de Página selecionado. Isso ajuda a garantir que o pedido seja atribuído à Página correta."
+        },
+        {
+          "id": "fb-pl-step-3",
+          "title": "Revise o pedido",
+          "description": "Confirme o pacote selecionado, a URL da Página, o preço e os detalhes do pedido antes de concluir o checkout."
+        },
+        {
+          "id": "fb-pl-step-4",
+          "title": "Conclua o checkout seguro",
+          "description": "Finalize a compra usando o processo de checkout protegido, sem informar os dados de login do Facebook."
+        },
+        {
+          "id": "fb-pl-step-5",
+          "title": "Acompanhe o pedido",
+          "description": "Depois do checkout, monitore as atualizações disponíveis do pedido para acompanhar o andamento da entrega do começo ao fim."
+        }
+      ],
+      "cta": {
+        "label": "Escolher o pacote de curtidas de Página",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "O que você precisa para fazer um pedido?",
+      "description": "Pedir curtidas de Página no Facebook exige apenas alguns dados públicos. Informações privadas da conta, senhas e códigos de verificação nunca são solicitados.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-pl-req-url",
+          "title": "URL pública da Página do Facebook",
+          "description": "Envie a URL pública da Página do Facebook que vai receber o pacote de curtidas de Página selecionado."
+        },
+        {
+          "id": "fb-pl-req-package",
+          "title": "Pacote selecionado",
+          "description": "Escolha a quantidade que melhor combina com os objetivos do negócio e o tamanho atual da Página do Facebook."
+        },
+        {
+          "id": "fb-pl-req-public",
+          "title": "Acesso público à Página",
+          "description": "Mantenha a Página do Facebook acessível ao público enquanto o pedido estiver sendo processado."
+        },
+        {
+          "id": "fb-pl-req-email",
+          "title": "Endereço de e-mail válido",
+          "description": "Use um e-mail em funcionamento para receber confirmações do pedido, atualizações de andamento e atendimento ao cliente, se precisar."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-page-likes-reviews",
+      "title": "O que os clientes dizem sobre a NovaLikes",
+      "description": "Avaliações de clientes para este serviço da NovaLikes.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-page-likes-faq",
+      "title": "Perguntas frequentes sobre comprar curtidas de Página no Facebook",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook page likes",
+      "faqIds": [
+        "faq-fb-page-likes-need",
+        "faq-fb-page-likes-package",
+        "faq-fb-page-likes-password",
+        "faq-fb-page-likes-how-long",
+        "faq-fb-page-likes-track",
+        "faq-fb-page-likes-wrong-url",
+        "faq-fb-page-likes-other-metrics",
+        "faq-fb-page-likes-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-page-likes",
+      "title": "Conheça mais serviços de crescimento no Facebook",
+      "description": "Curtidas de Página no Facebook são só uma parte de construir uma presença mais forte no Facebook. Conheça os demais serviços de Facebook pensados para apoiar objetivos diferentes de crescimento.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-page-likes-final-cta",
+      "title": "Escolha o pacote de curtidas de Página no Facebook",
+      "description": "Compare as quantidades e os preços de curtidas de Página disponíveis, escolha o pacote que combina com a Página do Facebook que você quer usar e faça o pedido com a URL pública correta da Página.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Ver pacotes de curtidas de Página no Facebook",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Acompanhar um pedido",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-page-likes-why-choose",
+        "title": "Por que escolher a NovaLikes para curtidas de Página no Facebook?",
+        "description": "A NovaLikes facilita comparar pacotes de curtidas de Página no Facebook antes de pedir. Escolha a quantidade de curtidas de Página que quer, envie a URL pública correta da Página do Facebook, revise o preço do pacote e use o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-0",
+            "title": "Várias quantidades de curtidas de Página",
+            "description": "Compare as quantidades de curtidas de Página no Facebook disponíveis e escolha o pacote que corresponde ao número de curtidas de Página que você quer pedir.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-1",
+            "title": "Somente URL de Página pública do Facebook",
+            "description": "Envie a URL pública correta da Página do Facebook onde você quer que as curtidas de Página sejam adicionadas. A senha do Facebook não é necessária.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-2",
+            "title": "Revise antes do checkout",
+            "description": "Confira a quantidade de curtidas de Página selecionada e o preço atual do pacote antes de adicionar o pedido ao carrinho e concluir o checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-3",
+            "title": "Acompanhamento do pedido",
+            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de curtidas de Página no Facebook.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-page-likes-can-you-buy",
+        "title": "Dá para comprar curtidas de Página no Facebook?",
+        "description": "Sim. Pacotes de curtidas de Página no Facebook podem ser comprados por serviços online de curtidas de Página. Na NovaLikes, você escolhe um pacote de curtidas de Página disponível, envia a URL pública da Página do Facebook que quer usar e conclui o pedido pelo site.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-4",
+            "title": "O que um pedido de curtidas de Página no Facebook altera",
+            "description": "Um pedido de curtidas de Página no Facebook se aplica à contagem de curtidas da Página na Página pública do Facebook enviada com o pedido. Ele não acrescenta automaticamente seguidores no Facebook nem curtidas em publicações individuais.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-page-likes-5",
+            "title": "O que você precisa para fazer um pedido",
+            "description": "Você precisa da URL pública correta da Página do Facebook e do pacote de curtidas de Página que quer comprar. A senha do Facebook não é necessária.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-6",
+            "title": "O que as curtidas de Página no Facebook não incluem",
+            "description": "Curtidas de Página são separadas de seguidores e de curtidas de publicação no Facebook. Pedir curtidas de Página não acrescenta automaticamente essas outras métricas nem garante engajamento, alcance, vendas ou crescimento orgânico extras.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Antes do checkout, garanta que você selecionou curtidas de Página no Facebook, escolheu a quantidade correta de curtidas de Página e enviou a URL exatamente da Página pública do Facebook onde quer que as curtidas de Página sejam adicionadas."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-page-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-page-likes-what-happens",
+        "title": "O que acontece depois que você compra curtidas de Página no Facebook?",
+        "description": "Depois de fazer um pedido de curtidas de Página no Facebook, o pacote de curtidas de Página e a URL pública da Página do Facebook enviados são usados para processar o pedido na Página selecionada. Mantenha a Página acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "steps": [
+          {
+            "id": "buy-facebook-page-likes-th-1",
+            "title": "Os dados do pedido são conferidos",
+            "description": "O pacote de curtidas de Página, a quantidade e a URL da Página do Facebook enviados são associados ao pedido para que a solicitação possa ser processada na Página pretendida."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-2",
+            "title": "As curtidas de Página vão para a Página enviada",
+            "description": "O pedido se aplica à Página do Facebook ligada à URL que você enviou. Confira a URL da Página com cuidado antes de concluir o checkout."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-3",
+            "title": "O tempo de processamento pode variar",
+            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de curtidas de Página e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pacotes."
+          },
+          {
+            "id": "buy-facebook-page-likes-th-4",
+            "title": "Confira o status do pedido",
+            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+          }
+        ],
+        "closingNote": "Evite excluir a Página enviada, torná-la indisponível ou alterar qualquer coisa que impeça o acesso a ela enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-page-likes-service-compare",
+        "title": "Curtidas de Página vs outros serviços de Facebook",
+        "description": "Curtidas de Página, seguidores e curtidas de publicação no Facebook representam métricas diferentes. Escolha o serviço conforme quiser alterar a contagem de curtidas da Página, a contagem de seguidores ou a contagem de curtidas em uma publicação específica no Facebook.",
+        "current": {
+          "title": "Curtidas de Página no Facebook",
+          "description": "Curtidas de Página são uma métrica no nível da Página. Escolha curtidas de Página no Facebook quando a contagem de curtidas da Página em uma Página pública do Facebook for a métrica que você quer alterar.",
+          "bestFor": "Páginas do Facebook em que a contagem de curtidas da Página é a métrica que você quer alterar.",
+          "ctaLabel": "Curtidas de Página no Facebook"
+        },
+        "likes": {
+          "title": "Seguidores no Facebook",
+          "description": "Seguidores são uma métrica separada no nível da Página. Escolha seguidores no Facebook quando quiser aumentar a contagem de seguidores exibida em uma Página pública do Facebook.",
+          "bestFor": "Páginas do Facebook em que a contagem de seguidores é a métrica que você quer alterar.",
+          "href": "/buy-facebook-followers",
+          "ctaLabel": "Ver seguidores no Facebook"
+        },
+        "views": {
+          "title": "Curtidas de publicação no Facebook",
+          "description": "Curtidas de publicação são uma métrica no nível da publicação. Escolha curtidas de publicação no Facebook quando quiser aumentar a contagem de curtidas em uma publicação pública elegível específica.",
+          "bestFor": "Publicações individuais no Facebook em que a contagem visível de curtidas é a métrica que você quer alterar.",
+          "href": "/buy-facebook-post-likes",
+          "ctaLabel": "Ver curtidas de publicação no Facebook"
+        },
+        "combinedNote": "Escolha o serviço de Facebook que corresponde exatamente à métrica que você quer alterar antes de fazer um pedido.",
+        "commentsHref": "/buy-facebook-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-page-likes-before-buying",
+        "title": "O que conferir antes de comprar curtidas de Página no Facebook",
+        "description": "Antes de comprar curtidas de Página no Facebook, revise o pacote e os detalhes da Página antes de concluir o pedido. Garanta que a quantidade de curtidas de Página, o preço, a URL da Página do Facebook e o serviço selecionado correspondam ao que você quer para a Página.",
+        "framingNote": "Confira a URL da Página do Facebook enviada, a quantidade de curtidas de Página e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar curtidas de Página garante seguidores, curtidas de publicação, engajamento, alcance, vendas ou crescimento orgânico extras.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-7",
+            "title": "Confira a quantidade de curtidas de Página",
+            "description": "Revise o número de curtidas de Página no Facebook incluído no pacote para saber quantas você está pedindo para a Página enviada.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-8",
+            "title": "Confirme o preço do pacote",
+            "description": "Confira o preço atual exibido para o pacote de curtidas de Página selecionado antes de adicioná-lo ao carrinho. Se alterar a quantidade, revise o preço atualizado antes do checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-9",
+            "title": "Use a URL correta da Página do Facebook",
+            "description": "Confira a URL pública da Página do Facebook com cuidado para o pedido ser associado exatamente à Página onde você quer que as curtidas de Página sejam adicionadas.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-10",
+            "title": "Escolha o serviço certo de Facebook",
+            "description": "Curtidas de Página, seguidores e curtidas de publicação são métricas separadas. Confira se curtidas de Página no Facebook é o serviço de que você precisa antes de fazer o pedido.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-page-likes-11",
+            "title": "Revise suporte e políticas",
+            "description": "Confira as políticas de compra relevantes e as opções de suporte disponíveis para saber onde procurar se tiver uma dúvida sobre o pedido.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-page-likes-worldwide",
+        "title": "Preparando a Página do Facebook para curtidas de Página",
+        "description": "Curtidas de Página no Facebook se aplica à contagem de curtidas de uma Página pública elegível. Garanta que a Página enviada no checkout é exatamente a Página que você quer usar.",
+        "eyebrow": "Pronto para curtidas de Página no Facebook",
+        "closingNote": "Curtidas de Página no Facebook se aplica a uma Página pública do Facebook. Envie uma URL de Página, e não de publicação, mantenha a Página pública e revise a quantidade selecionada antes do checkout.",
+        "cards": [
+          {
+            "id": "buy-facebook-page-likes-12",
+            "title": "Envie uma URL de Página",
+            "description": "Use a URL pública da Página do Facebook pedida para o serviço. Um link de uma publicação individual no Facebook não é o alvo correto para curtidas de Página.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-13",
+            "title": "Mantenha a Página pública",
+            "description": "Mantenha a Página enviada acessível ao público quando for exigido enquanto o pedido estiver sendo processado.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-14",
+            "title": "Curtidas de Página e seguidores são separados",
+            "description": "Curtidas de Página e seguidores são métricas no nível da Página, mas são serviços diferentes. Escolha aquele que corresponde à métrica que você quer alterar.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-15",
+            "title": "Revise quantidade e preço",
+            "description": "Confira a quantidade de curtidas de Página selecionada e o preço atual do pacote antes de concluir o pedido.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-page-likes-popular-packages",
+        "title": "Pacotes populares de curtidas de Página no Facebook",
+        "description": "Compare algumas das quantidades de curtidas de Página no Facebook disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções de pacote.",
+        "rows": [
+          {
+            "id": "fb-pl-100",
+            "quantity": "100 curtidas de Página",
+            "recommendedFor": "Um pacote menor para uma Página pública do Facebook em que você quer acrescentar cem curtidas de Página."
+          },
+          {
+            "id": "fb-pl-500",
+            "quantity": "500 curtidas de Página",
+            "recommendedFor": "Uma opção menor a intermediária para uma Página do Facebook em que você quer acrescentar quinhentas curtidas de Página."
+          },
+          {
+            "id": "fb-pl-1000",
+            "quantity": "1.000 curtidas de Página",
+            "recommendedFor": "Um pacote intermediário para uma Página pública do Facebook em que você quer acrescentar mil curtidas de Página."
+          },
+          {
+            "id": "fb-pl-5000",
+            "quantity": "5.000 curtidas de Página",
+            "recommendedFor": "Uma opção maior para uma Página do Facebook em que você quer acrescentar cinco mil curtidas de Página."
+          },
+          {
+            "id": "fb-pl-10000",
+            "quantity": "10.000 curtidas de Página",
+            "recommendedFor": "Um pacote de volume maior para uma Página pública do Facebook em que você quer acrescentar dez mil curtidas de Página."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-page-likes-best-practices",
+        "title": "Boas práticas depois de comprar curtidas de Página no Facebook",
+        "description": "Comprar curtidas de Página altera a contagem de curtidas da Página na Página selecionada do Facebook, mas o restante da atividade no Facebook ainda depende do conteúdo que você publica e de como administra a Página. Mantenha a Página ativa, revise o desempenho e interaja com o público junto com o serviço.",
+        "closingNote": "A contagem de curtidas da Página é só uma métrica em uma Página do Facebook. Seus seguidores, interações nas publicações, respostas do público e outras atividades ainda dependem de como você administra a presença no Facebook.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-16",
+            "title": "Mantenha a Página do Facebook ativa",
+            "description": "Continue publicando posts que combinem com o negócio, a marca, o tema ou o público que você quer alcançar.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-page-likes-17",
+            "title": "Mantenha as informações da Página atualizadas",
+            "description": "Revise o nome da Página, a descrição, os dados de contato, o site, as informações do negócio e outros detalhes públicos quando for relevante.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-page-likes-18",
+            "title": "Revise o Facebook Insights",
+            "description": "Se os insights estiverem disponíveis para a Página, revise a atividade da Página, o desempenho das publicações, o engajamento e outros dados disponíveis para entender como o próprio conteúdo performa.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-page-likes-19",
+            "title": "Teste tipos diferentes de conteúdo",
+            "description": "Experimente formatos de post, temas, imagens, vídeos e abordagens de publicação diferentes para aprender o que funciona para a Página.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-page-likes-20",
+            "title": "Responda a interações genuínas",
+            "description": "Responda a comentários e mensagens genuínos quando fizer sentido. Uma contagem maior de curtidas da Página não substitui as interações que você constrói com a própria atividade da Página.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-page-likes-21",
+            "title": "Mantenha uma presença consistente na Página",
+            "description": "Continue administrando e publicando na Página, em vez de tratar um pacote de curtidas de Página como substituto da atividade contínua no Facebook.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-page-likes-common-mistakes",
+        "title": "Erros comuns ao comprar curtidas de Página no Facebook",
+        "description": "Alguns erros simples podem causar problemas em um pedido de curtidas de Página no Facebook. Confira a URL da Página, a quantidade de curtidas de Página, o serviço e as expectativas antes do checkout para saber exatamente o que você está pedindo.",
+        "closingNote": "Antes de fazer um pedido, confira a URL da Página do Facebook, a quantidade de curtidas de Página e o preço mais uma vez. Se algo mudar depois do checkout, use as opções de acompanhamento ou suporte disponíveis para o pedido.",
+        "items": [
+          {
+            "id": "buy-facebook-page-likes-22",
+            "title": "Enviar a URL errada da Página do Facebook",
+            "description": "Confira a URL pública da Página do Facebook com cuidado antes de pedir. A URL deve apontar exatamente para a Página onde você quer que as curtidas de Página sejam adicionadas.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-page-likes-23",
+            "title": "Escolher o serviço errado de Facebook",
+            "description": "Curtidas de Página, seguidores e curtidas de publicação são serviços separados. Escolha curtidas de Página no Facebook somente quando a contagem de curtidas da Página for a métrica que você quer alterar.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-page-likes-24",
+            "title": "Selecionar a quantidade errada de curtidas de Página",
+            "description": "Revise o número de curtidas de Página incluído no pacote selecionado antes do checkout para não pedir uma quantidade diferente da que você pretendia.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-page-likes-25",
+            "title": "Tornar a Página indisponível durante um pedido",
+            "description": "Evite excluir a Página enviada ou torná-la indisponível enquanto o pedido estiver sendo processado.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-page-likes-26",
+            "title": "Esperar que curtidas de Página garantam outros resultados",
+            "description": "Uma contagem maior de curtidas da Página não significa automaticamente mais seguidores, curtidas de publicação, engajamento, alcance, vendas ou crescimento orgânico.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Seguidores no Facebook",
+            "description": "Escolha seguidores no Facebook quando a contagem de seguidores em uma Página pública do Facebook for a métrica que você quer alterar.",
+            "ctaLabel": "Ver seguidores no Facebook"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Curtidas de publicação no Facebook",
+            "description": "Escolha curtidas de publicação no Facebook quando quiser aumentar a contagem de curtidas exibida em uma publicação pública elegível no Facebook.",
+            "ctaLabel": "Ver curtidas de publicação no Facebook"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-page-likes-why-buy",
+      "title": "Por que as pessoas compram curtidas de Página no Facebook?",
+      "description": "As pessoas compram curtidas de Página no Facebook por motivos diferentes. Algumas querem aumentar a contagem de curtidas da Página exibida em uma Página do Facebook, enquanto outras escolhem um pacote de curtidas de Página para uma Página ligada a um negócio, marca, campanha ou atividade contínua de conteúdo. O serviço altera a métrica de curtidas da Página na Página selecionada, mas não garante seguidores, curtidas de publicação, engajamento, alcance, vendas ou crescimento orgânico extras.",
+      "items": [
+        {
+          "id": "buy-facebook-page-likes-wb-1",
+          "title": "Aumente a contagem visível de curtidas da Página",
+          "description": "Um pacote de curtidas de Página no Facebook pode ser usado quando você quer aumentar a contagem de curtidas da Página exibida em uma Página pública específica do Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-2",
+          "title": "Use curtidas de Página em um lançamento ou campanha",
+          "description": "Negócios e donos de Página podem escolher um pacote de curtidas de Página ao trabalhar um lançamento, campanha, anúncio ou outra atividade no Facebook."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-3",
+          "title": "Foque a métrica de curtidas da Página",
+          "description": "Curtidas de Página no Facebook se aplica à contagem de curtidas da Página na Página selecionada. Não acrescenta automaticamente seguidores no Facebook nem curtidas em publicações individuais."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-4",
+          "title": "Escolha a quantidade que você quer",
+          "description": "Tamanhos diferentes de pacote permitem selecionar o número de curtidas de Página no Facebook que você quer pedir para a Página enviada."
+        },
+        {
+          "id": "buy-facebook-page-likes-wb-5",
+          "title": "Use curtidas de Página junto com o conteúdo",
+          "description": "Comprar curtidas de Página não substitui publicar e administrar o próprio conteúdo no Facebook. Publicações, respostas, informações da Página e outras atividades ainda dependem de como você administra a Página."
+        }
+      ],
+      "bottomNote": "Se seguidores no Facebook ou curtidas de publicação forem a métrica que você quer alterar, escolha o serviço correspondente de Facebook em vez de um pacote de curtidas de Página."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "Como comprar curtidas de Página no Facebook",
+      "description": "Comprar curtidas de Página no Facebook pela NovaLikes leva quatro passos. Escolha o pacote de curtidas de Página que quer, envie a URL pública da Página do Facebook, conclua o checkout e use os dados do pedido para conferir o status.",
+      "steps": [
+        {
+          "id": "buy-facebook-page-likes-step-1",
+          "title": "Escolha o pacote de curtidas de Página",
+          "description": "Compare as quantidades e os preços de curtidas de Página no Facebook disponíveis e selecione o pacote que você quer para a Página."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-2",
+          "title": "Informe a URL da Página do Facebook",
+          "description": "Envie a URL pública correta da Página do Facebook onde você quer que as curtidas de Página sejam adicionadas. A senha do Facebook não é necessária."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-3",
+          "title": "Conclua o pedido",
+          "description": "Revise a quantidade de curtidas de Página e o preço selecionados e siga o checkout para fazer o pedido."
+        },
+        {
+          "id": "buy-facebook-page-likes-step-4",
+          "title": "Acompanhe o pedido",
+          "description": "Depois do checkout, use a opção de acompanhamento disponível para conferir informações de status do pedido de curtidas de Página no Facebook."
+        }
+      ]
+    },
+    "relatedHeading": "Conheça outros serviços de Facebook",
+    "relatedIntro": "Curtidas de Página são só uma métrica no Facebook. Se quiser aumentar a contagem de seguidores de uma Página do Facebook ou a contagem de curtidas em uma publicação específica, compare os outros serviços de Facebook abaixo."
+  }
+}

@@ -17,7 +17,6 @@ import type {
   FacebookDashboardVariant,
   InstagramDashboardVariant,
   TikTokDashboardVariant,
-  YouTubeDashboardVariant,
 } from '@/components/illustrations/dashboards';
 import type { PlatformId } from '@/types/platform';
 
@@ -34,7 +33,6 @@ export type BrandedHeroProps = {
   packagePreview?: { title: string; priceLabel: string } | null;
   instagramVariant?: InstagramDashboardVariant;
   tiktokVariant?: TikTokDashboardVariant;
-  youtubeVariant?: YouTubeDashboardVariant;
   facebookVariant?: FacebookDashboardVariant;
   className?: string;
   priorityImage?: boolean;
@@ -56,7 +54,6 @@ export function BrandedHero({
   packagePreview,
   instagramVariant,
   tiktokVariant,
-  youtubeVariant,
   facebookVariant,
   className,
   priorityImage = true,
@@ -64,8 +61,6 @@ export function BrandedHero({
   const isPremiumDashboardHero =
     instagramVariant === 'views' ||
     instagramVariant === 'comments' ||
-    youtubeVariant === 'subscribers' ||
-    youtubeVariant === 'views' ||
     facebookVariant === 'followers' ||
     facebookVariant === 'page-likes' ||
     facebookVariant === 'post-likes' ||
@@ -125,6 +120,7 @@ export function BrandedHero({
                 isPremiumDashboardHero
                   ? 'mt-4 max-w-[22ch] sm:mt-5 lg:text-[clamp(2.85rem,4.4vw,3.65rem)]'
                   : 'max-w-[16ch]',
+                'min-w-0',
               )}
             >
               {title}
@@ -152,7 +148,7 @@ export function BrandedHero({
                   <Button
                     asChild
                     size="lg"
-                    className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] px-8 text-base font-semibold shadow-[0_14px_32px_-14px_rgba(249,115,22,0.85)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:bg-[var(--brand-primary-hover)] hover:shadow-[0_18px_36px_-14px_rgba(249,115,22,0.95)] motion-reduce:hover:translate-y-0 sm:w-auto"
+                    className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] px-8 text-base font-semibold shadow-[0_14px_32px_-14px_rgba(249,115,22,0.85)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:bg-[var(--brand-primary-hover)] hover:shadow-[0_18px_36px_-14px_rgba(249,115,22,0.95)] motion-reduce:hover:translate-y-0 sm:w-auto sm:max-w-full"
                   >
                     <Link href={primaryCta.href}>{primaryCta.label}</Link>
                   </Button>
@@ -162,7 +158,7 @@ export function BrandedHero({
                     asChild
                     size="lg"
                     variant="outline"
-                    className="min-h-12 w-full rounded-xl border-[var(--border-strong)] bg-white/70 px-8 text-base font-semibold backdrop-blur-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 hover:bg-white motion-reduce:hover:translate-y-0 sm:w-auto"
+                    className="min-h-12 w-full rounded-xl border-[var(--border-strong)] bg-white/70 px-8 text-base font-semibold backdrop-blur-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 hover:bg-white motion-reduce:hover:translate-y-0 sm:w-auto sm:max-w-full"
                   >
                     <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
                   </Button>
@@ -208,17 +204,13 @@ export function BrandedHero({
                   tiktokVariant === 'likes' ||
                   tiktokVariant === 'views'
                   ? 'mx-auto max-w-[24rem] sm:max-w-[25.5rem] lg:mx-0 lg:max-w-[27rem]'
-                  : youtubeVariant === 'subscribers' ||
-                      youtubeVariant === 'views' ||
-                      facebookVariant === 'followers' || facebookVariant === 'page-likes' || facebookVariant === 'post-likes'
+                  : facebookVariant === 'followers' || facebookVariant === 'page-likes' || facebookVariant === 'post-likes'
                     ? 'mx-auto max-w-[26rem] sm:max-w-[28rem] lg:mx-0 lg:max-w-[32rem]'
                     : 'lg:max-w-none',
                 (instagramVariant === 'comments' ||
                   tiktokVariant === 'followers' ||
                   tiktokVariant === 'likes' ||
                   tiktokVariant === 'views' ||
-                  youtubeVariant === 'subscribers' ||
-                  youtubeVariant === 'views' ||
                   facebookVariant === 'followers' || facebookVariant === 'page-likes' || facebookVariant === 'post-likes') &&
                   'overflow-visible px-2 sm:px-3',
               )}
@@ -233,7 +225,6 @@ export function BrandedHero({
                 packagePreview={packagePreview}
                 instagramVariant={instagramVariant}
                 tiktokVariant={tiktokVariant}
-                youtubeVariant={youtubeVariant}
                 facebookVariant={facebookVariant}
                 className={
                   instagramVariant === 'likes' ||
@@ -243,8 +234,6 @@ export function BrandedHero({
                   tiktokVariant === 'followers' ||
                   tiktokVariant === 'likes' ||
                   tiktokVariant === 'views' ||
-                  youtubeVariant === 'subscribers' ||
-                  youtubeVariant === 'views' ||
                   facebookVariant === 'followers' || facebookVariant === 'page-likes' || facebookVariant === 'post-likes'
                     ? 'w-full max-w-full'
                     : 'max-w-none'

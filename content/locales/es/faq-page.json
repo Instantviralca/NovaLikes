@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Preguntas frecuentes sobre NovaLikes",
+    "description": "Encuentra respuestas claras sobre NovaLikes, los servicios de Instagram, TikTok y Facebook, cómo hacer un pedido, requisitos de la cuenta, entrega, pagos y soporte. Explora por categoría o busca una pregunta concreta abajo.",
+    "purpose": "Help customers find answers before contacting support",
+    "primaryKeyword": "NovaLikes FAQ"
+  },
+  "search": {
+    "label": "Buscar preguntas",
+    "placeholder": "Buscar preguntas...",
+    "clearLabel": "Borrar",
+    "emptyState": "No se encontraron preguntas coincidentes. Prueba otra búsqueda o contacta con soporte."
+  },
+  "categoriesTitle": "Categorías",
+  "refundPolicyCta": {
+    "label": "Leer la política de reembolso",
+    "href": "/refund-policy"
+  },
+  "finalCta": {
+    "id": "faq-contact-support-cta",
+    "title": "¿Todavía tienes una pregunta?",
+    "description": "¿No encuentras la respuesta que buscas? Contacta con el soporte de NovaLikes para ayuda con un servicio, pedido o pago. Si tu pregunta es sobre un pedido existente, ten a mano los datos del pedido para que el equipo pueda localizarlo más fácilmente.",
+    "purpose": "Offer contact and track-order exits",
+    "primaryCta": {
+      "label": "Contactar soporte",
+      "href": "/contact"
+    },
+    "secondaryCta": {
+      "label": "Seguir tu pedido",
+      "href": "/track-order"
+    }
+  },
+  "categories": [
+    { "id": "getting_started", "label": "Primeros pasos", "anchor": "getting-started" },
+    { "id": "account_security", "label": "Cuenta y seguridad", "anchor": "account-safety" },
+    { "id": "orders_delivery", "label": "Pedidos y entrega", "anchor": "orders-delivery" },
+    { "id": "instagram", "label": "Instagram", "anchor": "instagram" },
+    { "id": "tiktok", "label": "TikTok", "anchor": "tiktok" },
+    { "id": "facebook", "label": "Facebook", "anchor": "facebook" },
+    { "id": "payments_refunds", "label": "Pagos y reembolsos", "anchor": "payments-refunds" }
+  ]
+}

@@ -35,36 +35,36 @@ export type NovaLikesProduct = {
 
 const HQ_COMMENT_FEATURES = [
   'Relevant comments for your post',
-  'Fast delivery',
+  'Order tracking after checkout',
   'No password required',
-  '24/7 support',
+  'Customer support',
 ] as const;
 
 const PREMIUM_COMMENT_FEATURES = [
   'Highly relevant comments',
-  'Active Instagram users',
-  'Fast delivery start',
+  'Comments for eligible public posts and Reels',
+  'Orders are processed after checkout',
   '30-day refill protection',
   'No password required',
-  '24/7 support',
+  'Customer support',
 ] as const;
 
 const HQ_TIKTOK_VIEWS_FEATURES = [
-  'Authentic views',
-  'High quality views',
-  'Orders start quickly',
+  'View packages for public videos',
+  'Clear package quantities',
+  'Orders are processed after checkout',
   'No password required',
-  'Fast delivery',
-  '24/7 live support',
+  'Order tracking available',
+  'Customer support',
 ] as const;
 
 const PREMIUM_TIKTOK_VIEWS_FEATURES = [
-  'Real views from active users',
-  'Stronger visibility support',
-  'Orders start quickly',
+  'View packages for eligible public videos',
+  'Separate from likes and followers',
+  'Orders are processed after checkout',
   'No password required',
-  'Fast delivery',
-  '24/7 support',
+  'Order tracking available',
+  'Customer support',
 ] as const;
 
 /**

@@ -1,7 +1,6 @@
 'use client';
 
 import { Check, Clock3, RefreshCw } from 'lucide-react';
-import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 
 import {
@@ -47,7 +46,6 @@ export function PricingCard({
 }: PricingCardProps) {
   const pkg = model.package;
   const emphasized = pkg.badge === 'most-popular' || pkg.badge === 'best-value';
-  const reduceMotion = useReducedMotion();
   const service = getServiceBySlug(pkg.serviceSlug);
   const platform = service?.platform ?? platformFromSlug(pkg.serviceSlug);
   const quantityText = formatQuantity(pkg.quantity);
@@ -57,14 +55,7 @@ export function PricingCard({
     /refill/i.test(pkg.packageName);
 
   return (
-    <motion.div
-      className="h-full"
-      initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-      whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.3 }}
-      whileHover={reduceMotion ? undefined : { y: -6 }}
-    >
+    <div className="nl-fade-up nl-hover-lift h-full">
       <Card
         role="button"
         tabIndex={0}
@@ -123,7 +114,7 @@ export function PricingCard({
             <p className="text-4xl font-bold tracking-tight text-[var(--text-primary)] sm:text-5xl">
               {quantityText}
             </p>
-            <p className="mt-1 text-sm font-medium text-[var(--text-secondary)]">
+            <p className="mt-1 break-words text-sm font-medium text-[var(--text-secondary)]">
               {pkg.packageName || pkg.title}
             </p>
           </div>
@@ -193,6 +184,6 @@ export function PricingCard({
           />
         </CardFooter>
       </Card>
-    </motion.div>
+    </div>
   );
 }

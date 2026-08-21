@@ -1,0 +1,345 @@
+{
+  "id": "privacy-policy",
+  "path": "/privacy-policy",
+  "seo": {
+    "title": "Politique de confidentialité | NovaLikes",
+    "description": "Consultez la Politique de confidentialité de NovaLikes pour savoir comment les informations sont collectées, utilisées, traitées et protégées lorsque vous utilisez notre site web et nos services."
+  },
+  "breadcrumbLabel": "Politique de confidentialité",
+  "header": {
+    "title": "Politique de confidentialité",
+    "intro": "La présente Politique de confidentialité explique comment NovaLikes collecte, utilise, stocke et traite les informations lorsque vous visitez notre site web, passez une commande, utilisez nos outils gratuits, contactez l’assistance ou interagissez autrement avec nos services."
+  },
+  "tocTitle": "Sur cette page",
+  "sections": [
+    {
+      "id": "information-we-collect",
+      "anchor": "information-we-collect",
+      "title": "1. Informations que nous collectons",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes collecte les informations nécessaires pour faire fonctionner le site web, traiter les commandes, fournir les outils gratuits et répondre aux demandes d’assistance. Les catégories ci-dessous reflètent les parcours actuels de NovaLikes."
+        },
+        {
+          "type": "subheading",
+          "id": "order-information",
+          "text": "Informations de commande"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lorsque vous passez une commande, NovaLikes peut collecter :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Adresse e-mail (requise pour le paiement et le suivi de commande)",
+            "Prénom et nom facultatifs si vous les fournissez",
+            "Détails du service et du forfait sélectionnés",
+            "Nom d’utilisateur Instagram, TikTok ou Facebook public, URL de profil, URL de Page, URL de publication, URL de Reel ou URL de vidéo requis pour le service sélectionné",
+            "Notes de commande facultatives",
+            "Référence de commande et informations de statut",
+            "Préférence marketing facultative si vous y consentez lors du paiement"
+          ]
+        },
+        {
+          "type": "subheading",
+          "id": "payment-information-collected",
+          "text": "Informations de paiement"
+        },
+        {
+          "type": "paragraph",
+          "text": "Les données de carte de paiement sont traitées par le collecteur de paiement par carte tiers activé lors du paiement. NovaLikes reçoit des informations de statut liées au paiement et de comptabilisation des commandes, plutôt que de stocker les numéros de carte complets."
+        },
+        {
+          "type": "subheading",
+          "id": "support-information",
+          "text": "Informations d’assistance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si vous contactez l’assistance, NovaLikes peut collecter le nom complet, l’adresse e-mail, l’objet, l’identifiant de commande facultatif, le contenu du message et les informations user-agent du navigateur transmis avec le formulaire de contact."
+        },
+        {
+          "type": "subheading",
+          "id": "technical-information",
+          "text": "Informations techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Selon la façon dont vous utilisez le site, NovaLikes peut traiter des informations techniques limitées, telles que :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Adresse IP utilisée pour limiter le débit des outils gratuits et prévenir les abus",
+            "Informations user-agent du navigateur ou de l’appareil associées aux demandes d’assistance ou aux requêtes d’outils",
+            "Cookies et stockages similaires utilisés pour le panier, la continuité du paiement et la sécurité (voir la Politique de cookies)",
+            "Journaux serveur et applicatifs nécessaires pour exploiter et dépanner le site web"
+          ]
+        },
+        {
+          "type": "subheading",
+          "id": "free-tools-information",
+          "text": "Outils gratuits"
+        },
+        {
+          "type": "paragraph",
+          "text": "Les outils gratuits NovaLikes traitent les noms d’utilisateur publics ou les URL de contenu public que vous soumettez afin que l’outil puisse tenter de renvoyer des informations publiquement disponibles sur le profil, le média ou les compteurs. Les outils gratuits n’exigent pas de mots de passe de réseaux sociaux et ne sont pas identiques aux services NovaLikes payants."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes ne demande pas l’accès à des comptes de réseaux sociaux privés pour les services et outils décrits sur le site."
+        }
+      ]
+    },
+    {
+      "id": "how-we-use-information",
+      "anchor": "how-we-use-information",
+      "title": "2. Comment nous utilisons les informations",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes utilise les informations collectées pour :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Traiter les commandes et fournir les services de réseaux sociaux sélectionnés",
+            "Fournir les fonctionnalités d’outils gratuits que vous demandez",
+            "Traiter les paiements via les moyens de paiement activés",
+            "Fournir une assistance client et répondre aux demandes",
+            "Permettre le suivi du statut de commande avec la référence de commande et l’e-mail utilisé au paiement",
+            "Assurer la sécurité du site web et détecter les usages abusifs ou la fraude",
+            "Résoudre les problèmes techniques et améliorer le fonctionnement du site",
+            "Envoyer des messages transactionnels liés aux commandes ou à l’assistance lorsque la livraison d’e-mails est configurée",
+            "Respecter les préférences marketing facultatives lorsque vous y consentez",
+            "Se conformer aux obligations légales, comptables et liées aux litiges"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes n’utilise pas la présente Politique de confidentialité pour autoriser la vente d’informations personnelles à des courtiers en données."
+        }
+      ]
+    },
+    {
+      "id": "social-media-information",
+      "anchor": "social-media-information",
+      "title": "3. Informations de réseaux sociaux",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Les services NovaLikes peuvent exiger des informations publiques de réseaux sociaux afin que le service sélectionné puisse être appliqué au profil, à la Page, à la publication, au Reel ou à la vidéo concernés."
+        },
+        {
+          "type": "paragraph",
+          "text": "Selon le service, cela peut inclure un nom d’utilisateur Instagram ou une URL publique de profil/contenu, un nom d’utilisateur TikTok ou une URL publique de profil/vidéo, une URL de Page Facebook publique, ou une URL de publication Facebook publique."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les clients ne doivent jamais fournir de mots de passe de réseaux sociaux. NovaLikes n’exige pas que les clients fournissent leurs mots de passe Instagram, TikTok ou Facebook pour les services décrits sur le site."
+        }
+      ]
+    },
+    {
+      "id": "payment-processing",
+      "anchor": "payment-processing",
+      "title": "4. Traitement des paiements",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes traite les paiements via le ou les moyens de paiement activés lors du paiement. Les données de carte sont saisies auprès d’un collecteur de paiement tiers utilisé pour le paiement par carte. NovaLikes ne stocke pas les numéros de carte de paiement complets sur ses propres systèmes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moyen(s) de paiement actuellement activé(s) lors du paiement : Paiement par carte."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes peut recevoir des identifiants de commande, des détails de lignes, le statut de paiement et des informations de transaction associées, nécessaires pour confirmer les commandes, assister les clients, comptabiliser les paiements et traiter les litiges. Les numéros de carte complets sont traités par le collecteur de paiement conformément aux pratiques de ce prestataire."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les prix des forfaits sur NovaLikes sont indiqués en USD (dollar américain), sauf si un autre affichage de devise est configuré pour une expérience spécifique."
+        }
+      ]
+    },
+    {
+      "id": "cookies-and-similar-technologies",
+      "anchor": "cookies-and-similar-technologies",
+      "title": "5. Cookies et technologies similaires",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes utilise des cookies et des technologies similaires nécessaires au fonctionnement du site web, du panier, du paiement et des fonctions de sécurité associées. Un court résumé est fourni ici ; les détails complets figurent dans la [Politique de cookies](/cookie-policy)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aucun prestataire d’analyse nommé n’est actuellement activé dans la configuration NovaLikes. Des adaptateurs d’analyse facultatifs peuvent exister dans le code pour un usage futur, mais ils ne sont pas considérés comme actifs tant qu’ils n’ont pas été activés dans la configuration de déploiement."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aucun pixel publicitaire ni outil de remarketing n’est actuellement activé dans la configuration NovaLikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aucune bannière dédiée de préférences de cookies ni aucun centre de préférences n’est actuellement configuré. Vous pouvez toujours utiliser les contrôles de votre navigateur pour gérer les cookies."
+        }
+      ]
+    },
+    {
+      "id": "how-we-share-information",
+      "anchor": "how-we-share-information",
+      "title": "6. Comment nous partageons les informations",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes partage les informations uniquement dans la mesure nécessaire pour exploiter l’activité et satisfaire les demandes, notamment avec :"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Processeurs de paiement / collecteurs de paiement utilisés pour le paiement",
+            "Prestataires d’hébergement et d’infrastructure qui font fonctionner le site web et les systèmes associés",
+            "Prestataires de services techniques utilisés pour la livraison d’e-mails, la sécurité ou des opérations similaires lorsqu’ils sont configurés",
+            "Conseillers professionnels ou autorités lorsque la loi l’exige ou pour protéger des droits légaux"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Selon la politique commerciale actuelle de NovaLikes telle qu’elle ressort de ce site, NovaLikes ne vend pas d’informations personnelles."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes n’affirme pas que les informations ne sont jamais partagées avec un tiers, car les prestataires de traitement des paiements et d’infrastructure reçoivent nécessairement des informations limitées pour exercer leurs fonctions."
+        }
+      ]
+    },
+    {
+      "id": "data-retention",
+      "anchor": "data-retention",
+      "title": "7. Conservation des données",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes conserve les informations aussi longtemps que raisonnablement nécessaire pour les commandes, l’assistance, les archives, la sécurité, la comptabilité et les obligations légales, ou autrement selon ce qu’exige la loi applicable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Des durées de conservation spécifiques ne sont pas publiées sur cette page tant qu’un calendrier de conservation vérifié n’est pas configuré. NovaLikes n’inventera pas de durées de conservation pour un affichage public."
+        }
+      ]
+    },
+    {
+      "id": "data-security",
+      "anchor": "data-security",
+      "title": "8. Sécurité des données",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Nous utilisons des mesures administratives et techniques raisonnables destinées à protéger les informations traitées via NovaLikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aucune méthode de transmission ou de stockage n’est entièrement sécurisée. NovaLikes n’affirme pas que les systèmes sont inviolables ni que les informations ne peuvent jamais être compromises."
+        }
+      ]
+    },
+    {
+      "id": "your-privacy-rights",
+      "anchor": "your-privacy-rights",
+      "title": "9. Vos droits en matière de confidentialité",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Les droits en matière de confidentialité peuvent dépendre de votre lieu de résidence et de la loi applicable. Selon ces lois, vous pouvez être en mesure de demander l’accès, la rectification, la suppression ou d’autres droits prévus par la loi applicable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pour formuler une demande relative à la confidentialité, contactez NovaLikes via la page [Contact](/contact) ou par e-mail à support@novalikes.com. Nous pourrons avoir besoin de vérifier votre identité avant de répondre."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cette section n’affirme pas que chaque droit en matière de confidentialité s’applique dans le monde entier."
+        }
+      ]
+    },
+    {
+      "id": "childrens-privacy",
+      "anchor": "childrens-privacy",
+      "title": "10. Confidentialité des enfants",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Les services et outils gratuits NovaLikes ne s’adressent pas aux enfants. Les clients doivent pouvoir conclure un contrat contraignant en vertu de la loi applicable et doivent satisfaire à toute exigence d’âge d’Instagram, TikTok, Facebook et des prestataires de paiement qui s’applique à eux."
+        },
+        {
+          "type": "paragraph",
+          "text": "Un âge minimum numérique spécifique n’est pas publié sur cette page tant qu’il n’a pas été confirmé après examen juridique et aligné sur les [Conditions générales](/terms-and-conditions)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Si NovaLikes apprend qu’il a collecté des informations personnelles auprès d’un enfant sans autorisation appropriée, il prendra des mesures raisonnables pour supprimer ou traiter autrement ces informations."
+        }
+      ]
+    },
+    {
+      "id": "third-party-platforms",
+      "anchor": "third-party-platforms",
+      "title": "11. Plateformes et sites web tiers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes interagit avec des plateformes tierces telles qu’Instagram, TikTok et Facebook, ou y renvoie. Ces plateformes ont leurs propres conditions, politiques de confidentialité et pratiques."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes n’est pas responsable des pratiques de confidentialité des plateformes tierces ou des sites web externes liés depuis NovaLikes."
+        }
+      ]
+    },
+    {
+      "id": "changes-to-this-privacy-policy",
+      "anchor": "changes-to-this-privacy-policy",
+      "title": "12. Modifications de la présente Politique de confidentialité",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes peut mettre à jour la présente Politique de confidentialité de temps à autre. La date de dernière mise à jour indiquée en haut de cette page reflétera les révisions importantes."
+        },
+        {
+          "type": "paragraph",
+          "text": "La poursuite de l’utilisation du site web après une mise à jour signifie que vous devez consulter la politique révisée pour connaître les conditions en vigueur."
+        }
+      ]
+    },
+    {
+      "id": "contact-us",
+      "anchor": "contact-us",
+      "title": "13. Nous contacter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pour les questions de confidentialité, les demandes d’accès, de rectification, de suppression ou d’autres demandes liées à la confidentialité, contactez NovaLikes via la page [Contact](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Vous pouvez également envoyer un e-mail à support@novalikes.com."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nom commercial : NovaLikes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Site web : https://novalikes.com"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aucune adresse postale enregistrée n’a été publiée dans la configuration NovaLikes. Utilisez la page Contact pour les demandes relatives à la confidentialité jusqu’à ce qu’une adresse vérifiée soit ajoutée."
+        }
+      ]
+    }
+  ]
+}

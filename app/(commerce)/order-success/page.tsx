@@ -9,6 +9,7 @@ import { MutedText } from '@/components/typography/muted-text';
 import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
 import { allowMockPayments } from '@/lib/config/env';
+import { getSiteChrome } from '@/lib/i18n/site-chrome';
 import { getOrderById } from '@/lib/orders/store';
 import { buildPageMetadataForRoute } from '@/lib/seo/metadata';
 
@@ -26,6 +27,7 @@ type OrderSuccessPageProps = {
 
 export default async function OrderSuccessPage({ searchParams }: OrderSuccessPageProps) {
   const params = await searchParams;
+  const { ui } = await getSiteChrome();
   const orderId = params.orderId?.trim();
   const email = params.email?.trim();
 
@@ -50,26 +52,36 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
   }
 
   return (
-    <Section aria-label="Order success">
+    <Section aria-label={ui.orderSuccess.ariaLabel}>
       <Container size="md" className="space-y-6">
         <Heading as="h1" size="h1">
-          {verified ? 'Payment confirmed' : paymentPending ? 'Confirming payment' : 'Order status'}
+          {verified
+            ? ui.orderSuccess.paymentConfirmed
+            : paymentPending
+              ? ui.orderSuccess.confirmingPayment
+              : ui.orderSuccess.orderStatus}
         </Heading>
         <MutedText>
           {verified
-            ? 'Thanks — your payment was verified and your order is in the fulfilment queue.'
+            ? ui.orderSuccess.verifiedBody
             : paymentPending
-              ? 'We are confirming your payment. This page will show success once Stripe verifies the charge.'
-              : 'We could not verify this order yet. Use your order ID and email to track status.'}
+              ? ui.orderSuccess.pendingBody
+              : ui.orderSuccess.unverifiedBody}
         </MutedText>
         {orderId ? (
           <div className="rounded-lg border bg-card p-4 text-sm">
             <p>
-              <span className="font-medium">Order ID:</span> {orderId}
+              <span className="font-medium">{ui.orderSuccess.orderId}</span>{' '}
+              <span dir="ltr" className="[unicode-bidi:isolate]">
+                {orderId}
+              </span>
             </p>
             {email ? (
               <p className="mt-1">
-                <span className="font-medium">Email:</span> {email}
+                <span className="font-medium">{ui.orderSuccess.email}</span>{' '}
+                <span dir="ltr" className="[unicode-bidi:isolate]">
+                  {email}
+                </span>
               </p>
             ) : null}
           </div>
@@ -98,11 +110,11 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
                   : routes.trackOrder
               }
             >
-              Track order
+              {ui.orderSuccess.trackOrder}
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href={routes.home}>Back to home</Link>
+            <Link href={routes.home}>{ui.orderSuccess.backHome}</Link>
           </Button>
         </div>
       </Container>

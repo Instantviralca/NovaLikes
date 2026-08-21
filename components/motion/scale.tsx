@@ -1,24 +1,18 @@
-'use client';
+import type { HTMLAttributes, ReactNode } from 'react';
 
-import { motion, useReducedMotion, type HTMLMotionProps } from 'framer-motion';
-
-import { theme } from '@/config/theme';
+import { fadeDelayStyle } from '@/components/motion/fade-delay-style';
 import { cn } from '@/lib/utils';
 
-type ScaleProps = HTMLMotionProps<'div'> & {
+type ScaleProps = HTMLAttributes<HTMLDivElement> & {
   delay?: number;
+  children?: ReactNode;
 };
 
-export function Scale({ className, delay = 0, ...props }: ScaleProps) {
-  const reduceMotion = useReducedMotion();
-
+export function Scale({ className, delay = 0, style, ...props }: ScaleProps) {
   return (
-    <motion.div
-      className={cn(className)}
-      initial={reduceMotion ? false : { opacity: 0, scale: 0.96 }}
-      whileInView={reduceMotion ? undefined : { opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: theme.motion.durationBase, delay, ease: theme.motion.easeOut }}
+    <div
+      className={cn('nl-scale-in', className)}
+      style={fadeDelayStyle(delay, style)}
       {...props}
     />
   );

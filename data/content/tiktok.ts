@@ -17,11 +17,10 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
         'Buy TikTok followers worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
     },
     hero: {
-      eyebrow:
-        'TRUSTED TIKTOK FOLLOWER SERVICE FOR CREATORS, BRANDS & BUSINESSES',
+      eyebrow: 'BUY TIKTOK FOLLOWERS',
       title: 'Buy TikTok Followers',
       description:
-        'Buy TikTok followers worldwide with packages for creators, businesses, and brands. Choose a quantity that fits your goals, enter your public TikTok username, and complete checkout when you are ready.',
+        'Buy TikTok followers by choosing the package and quantity that fits your account. NovaLikes lets you compare available follower packages and prices before ordering. Select the number of TikTok followers you want, provide the correct public TikTok username, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for TikTok follower packages worldwide',
       primaryKeyword: 'buy TikTok followers',
       supportingKeywords: [
@@ -33,21 +32,21 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       ],
       suggestedWordCount: 70,
       primaryCta: {
-        label: 'Choose TikTok Package',
+        label: 'Choose a TikTok Followers Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Information',
-        href: '#username-and-delivery',
+        label: 'How It Works',
+        href: '#how-it-works',
       },
       trustLabels: [
-        { id: 'tt-f-trust-2018', label: 'Trusted Since 2018' },
+        { id: 'tt-f-trust-public', label: 'Public Username Only' },
         { id: 'tt-f-trust-password', label: 'No Password Required' },
         { id: 'tt-f-trust-checkout', label: 'Secure Checkout' },
         { id: 'tt-f-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-tiktok-followers-hero-v2.webp',
+        src: '/assets/images/illustrations/tiktok-followers/tiktok-followers-hero.webp',
         alt: 'TikTok followers growth service dashboard illustration',
         width: 1200,
         height: 900,
@@ -55,9 +54,9 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your TikTok Followers Package',
+      title: 'TikTok Followers Packages & Pricing',
       description:
-        'Compare package sizes before you buy followers on TikTok. Start with a smaller test order, choose 500 or 1,000 followers for steady growth, or select larger options such as 10,000 followers for bigger campaigns.',
+        'Compare the available TikTok followers packages, quantities, and prices before ordering. Choose the number of followers you want for your public TikTok profile, review the current package price, and add your selected option to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com TikTok follower packages',
       primaryKeyword: 'TikTok follower packages',
       suggestedWordCount: 45,
@@ -201,44 +200,41 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     faq: {
       id: 'tt-followers-faq',
       title: 'Frequently Asked Questions About Buying TikTok Followers',
-      description:
-        'Direct answers to common questions about whether you can buy TikTok followers, how buying followers on TikTok works, and which package size to choose.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy TikTok followers',
       faqIds: [
-        'faq-tt-followers-can-buy',
-        'faq-tt-followers-how-buy',
-        'faq-tt-followers-does-work',
-        'faq-tt-followers-are-real',
-        'faq-tt-followers-safe',
-        'faq-tt-followers-banned',
-        'faq-tt-followers-delivery-begin',
+        'faq-tt-followers-need',
+        'faq-tt-followers-package',
         'faq-tt-followers-password',
-        'faq-tt-followers-another-order',
-        'faq-tt-followers-which-package',
+        'faq-tt-followers-how-long',
+        'faq-tt-followers-track',
+        'faq-tt-followers-wrong-username',
+        'faq-tt-followers-other-metrics',
+        'faq-tt-followers-public',
       ],
     },
     relatedServices: {
       id: 'related-tiktok-services-followers',
-      title: 'Explore More TikTok Growth Services',
+      title: 'Explore Other TikTok Services',
       description:
-        'If you also want more video engagement or reach, compare TikTok Likes and TikTok Views packages alongside followers.',
+        'Followers are only one TikTok metric. If you want to increase the like count or view count on a specific video instead, compare the other TikTok services below.',
       purpose: 'Internal links to sibling TikTok offers',
       serviceSlugs: ['buy-tiktok-likes', 'buy-tiktok-views'],
     },
     finalCta: {
       id: 'tt-followers-final-cta',
-      title: 'Choose the TikTok Followers Package That Fits Your Goals',
+      title: 'Choose Your TikTok Followers Package',
       description:
-        'Compare package sizes, review delivery details, and place your order when you are ready. Pick the quantity that best matches your current growth strategy.',
+        'Compare the available follower quantities and prices, choose the package that fits the TikTok profile you want to use, and place your order with the correct public username.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Choose Your Package',
+        label: 'View TikTok Followers Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'Contact Support',
-        href: routes.contact,
+        label: 'Track an Order',
+        href: routes.trackOrder,
       },
     },
   };
@@ -257,10 +253,10 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         'Buy TikTok likes with real packages for creators and businesses. Public video URL only, secure checkout, gradual delivery options, and order tracking.',
     },
     hero: {
-      eyebrow: 'TIKTOK LIKE PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy TikTok Likes worldwide',
+      eyebrow: 'BUY TIKTOK LIKES',
+      title: 'Buy TikTok Likes',
       description:
-        'Buy TikTok likes for public videos with clear package pricing, secure checkout and visible order updates. Choose the quantity that fits your content, paste your public TikTok video link and review the delivery information before completing your order. No password or private account access is required.',
+        'Buy TikTok likes by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok likes packages and prices before ordering. Select the number of likes you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for TikTok likes packages worldwide',
       primaryKeyword: 'buy TikTok likes',
       supportingKeywords: [
@@ -271,12 +267,12 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       ],
       suggestedWordCount: 90,
       primaryCta: {
-        label: 'Choose a Likes Package',
+        label: 'Choose a TikTok Likes Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Details',
-        href: '#video-link-and-delivery',
+        label: 'How It Works',
+        href: '#how-it-works',
       },
       trustLabels: [
         { id: 'tt-l-trust-url', label: 'Public Video Link Only' },
@@ -285,7 +281,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         { id: 'tt-l-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-tiktok-likes-hero-v2.webp',
+        src: '/assets/images/illustrations/tiktok-likes/tiktok-likes-hero.webp',
         alt: 'TikTok video likes engagement dashboard illustration',
         width: 1200,
         height: 900,
@@ -293,9 +289,9 @@ function buildBuyTikTokLikesContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your TikTok Likes Package',
+      title: 'TikTok Likes Packages & Pricing',
       description:
-        'Compare available package sizes and select the number of likes that matches your video and campaign goals. Each option displays its price and order details before checkout, allowing you to confirm the quantity and public video link before payment.',
+        'Compare the available TikTok likes packages, quantities, and prices before ordering. Choose the number of likes you want for your public TikTok video, review the current package price, and add your selected option to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com TikTok likes packages',
       primaryKeyword: 'TikTok likes packages',
       suggestedWordCount: 55,
@@ -451,44 +447,41 @@ function buildBuyTikTokLikesContent(): ServiceContent {
     faq: {
       id: 'tt-likes-faq',
       title: 'Frequently Asked Questions About Buying TikTok Likes',
-      description:
-        'These are the most common questions customers ask before purchasing TikTok likes.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy TikTok likes',
       faqIds: [
-        'faq-tt-likes-can-buy',
-        'faq-tt-likes-how-buy',
-        'faq-tt-likes-does-help',
-        'faq-tt-likes-any-video',
+        'faq-tt-likes-need',
+        'faq-tt-likes-package',
         'faq-tt-likes-password',
-        'faq-tt-likes-repeat',
-        'faq-tt-likes-instant',
-        'faq-tt-likes-safe',
-        'faq-tt-likes-where',
-        'faq-tt-likes-which-package',
+        'faq-tt-likes-how-long',
+        'faq-tt-likes-track',
+        'faq-tt-likes-wrong-url',
+        'faq-tt-likes-other-metrics',
+        'faq-tt-likes-public',
       ],
     },
     relatedServices: {
       id: 'related-tiktok-services-likes',
-      title: 'Related TikTok Services',
+      title: 'Explore Other TikTok Services',
       description:
-        'Explore additional TikTok services to support different parts of your content strategy.',
+        'Likes are only one TikTok metric. If you want to increase the follower count on your profile or the view count on a specific video instead, compare the other TikTok services below.',
       purpose: 'Internal links to sibling TikTok offers',
       serviceSlugs: ['buy-tiktok-followers', 'buy-tiktok-views'],
     },
     finalCta: {
       id: 'tt-likes-final-cta',
-      title: 'Choose the TikTok Likes Package That Fits Your Goals',
+      title: 'Choose Your TikTok Likes Package',
       description:
-        'Compare available package sizes, review pricing and delivery information, and complete your order using your public TikTok video link. Choose the package that best matches your content and campaign objectives.',
+        'Compare the available likes quantities and prices, choose the package that fits the TikTok video you want to use, and place your order with the correct public video link.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Choose Your Package',
+        label: 'View TikTok Likes Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'Contact Support',
-        href: routes.contact,
+        label: 'Track an Order',
+        href: routes.trackOrder,
       },
     },
   };
@@ -508,10 +501,10 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         'Buy TikTok views with clear package pricing for public videos. Public video URL only, secure checkout and order tracking for creators and businesses.',
     },
     hero: {
-      eyebrow: 'TIKTOK VIEW PACKAGES FOR CREATORS, BRANDS & BUSINESSES',
-      title: 'Buy TikTok Views worldwide',
+      eyebrow: 'BUY TIKTOK VIEWS',
+      title: 'Buy TikTok Views',
       description:
-        'Buy TikTok views for public videos with clear package pricing, secure checkout and visible order updates. Choose the quantity that fits your campaign, paste the public TikTok video link and review delivery details before completing your order. No password or private account access is required.',
+        'Buy TikTok views by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok views packages and prices before ordering. Select the number of views you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
       purpose: 'Convert for TikTok views packages worldwide',
       primaryKeyword: 'buy TikTok views',
       supportingKeywords: [
@@ -523,12 +516,12 @@ function buildBuyTikTokViewsContent(): ServiceContent {
       ],
       suggestedWordCount: 90,
       primaryCta: {
-        label: 'Choose a Views Package',
+        label: 'Choose a TikTok Views Package',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'View Delivery Details',
-        href: '#video-link-and-delivery',
+        label: 'How It Works',
+        href: '#how-it-works',
       },
       trustLabels: [
         { id: 'tt-v-trust-url', label: 'Public Video Link Only' },
@@ -537,7 +530,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         { id: 'tt-v-trust-track', label: 'Order Tracking' },
       ],
       visual: {
-        src: '/assets/images/illustrations/buy-tiktok-views-hero-v2.webp',
+        src: '/assets/images/illustrations/tiktok-views/tiktok-views-hero.webp',
         alt: 'TikTok video views and reach analytics illustration',
         width: 1200,
         height: 900,
@@ -545,9 +538,9 @@ function buildBuyTikTokViewsContent(): ServiceContent {
     },
     pricing: {
       id: 'pricing-packages',
-      title: 'Choose Your TikTok Views Package',
+      title: 'TikTok Views Packages & Pricing',
       description:
-        'Compare available package sizes and select the number of views that matches your video, audience and campaign goals. Each option displays its price and order details before checkout so you can confirm the quantity and public video link before payment.',
+        'Compare the available TikTok views packages, quantities, and prices before ordering. Choose the number of views you want for your public TikTok video, review the available package option and current price, and add your selected package to the cart when you are ready.',
       purpose: 'Present real NovaLikes.com TikTok views packages',
       primaryKeyword: 'TikTok views packages',
       suggestedWordCount: 55,
@@ -701,44 +694,41 @@ function buildBuyTikTokViewsContent(): ServiceContent {
     faq: {
       id: 'tt-views-faq',
       title: 'Frequently Asked Questions About Buying TikTok Views',
-      description:
-        'Below are answers to the most common questions customers ask before purchasing TikTok view packages.',
-      purpose: 'Answer buying questions with FAQPage schema',
+      description: '',
+      purpose: 'Package and ordering FAQs with FAQPage schema',
       primaryKeyword: 'buy TikTok views',
       faqIds: [
-        'faq-tt-views-can-buy',
-        'faq-tt-views-how-buy',
-        'faq-tt-views-does-work',
-        'faq-tt-views-can-people-see',
-        'faq-tt-views-are-real',
-        'faq-tt-views-worth-it',
-        'faq-tt-views-should-buy',
-        'faq-tt-views-what-happens',
+        'faq-tt-views-need',
+        'faq-tt-views-package',
         'faq-tt-views-password',
-        'faq-tt-views-which-package',
+        'faq-tt-views-how-long',
+        'faq-tt-views-track',
+        'faq-tt-views-wrong-url',
+        'faq-tt-views-other-metrics',
+        'faq-tt-views-public',
       ],
     },
     relatedServices: {
       id: 'related-tiktok-services-views',
-      title: 'Related TikTok Services',
+      title: 'Explore Other TikTok Services',
       description:
-        'Video views are one part of building a stronger TikTok presence. Explore additional TikTok services to support different growth objectives.',
+        'Views are only one TikTok metric. If you want to increase the follower count on your profile or the like count on a specific video instead, compare the other TikTok services below.',
       purpose: 'Internal links to sibling TikTok offers',
       serviceSlugs: ['buy-tiktok-followers', 'buy-tiktok-likes'],
     },
     finalCta: {
       id: 'tt-views-final-cta',
-      title: 'Choose the TikTok Views Package That Fits Your Goals',
+      title: 'Choose Your TikTok Views Package',
       description:
-        'Compare available view packages, review pricing and delivery information, and complete your order using only your public TikTok video link. Select the package that best supports your content strategy and campaign objectives.',
+        'Compare the available views quantities, package options, and prices, choose the package that fits the TikTok video you want to use, and place your order with the correct public video link.',
       purpose: 'Drive conversion to pricing packages',
       primaryCta: {
-        label: 'Choose Your Package',
+        label: 'View TikTok Views Packages',
         href: PRICING_ANCHOR,
       },
       secondaryCta: {
-        label: 'Contact Support',
-        href: routes.contact,
+        label: 'Track an Order',
+        href: routes.trackOrder,
       },
     },
   };

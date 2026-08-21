@@ -347,10 +347,6 @@ export function getIndexableArticles(
     if (!isPublicLiveArticle(article)) return false;
     const seo = toArticleSeoRecord(article);
     if (seo.noindex || !seo.robots.index) return false;
-    if (seo.scheduledFor) {
-      const when = Date.parse(seo.scheduledFor);
-      if (!Number.isNaN(when) && when > Date.now()) return false;
-    }
     const result = validateArticleSeo(seo);
     return result.indexable && !hasBlocker(result.issues);
   });

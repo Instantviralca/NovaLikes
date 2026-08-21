@@ -87,7 +87,7 @@
   --vds-accent: var(--brand-accent);
 
   /* Surfaces — warm off-white */
-  --surface-page: #faf8f6;
+  --surface-page: #FFFBFA;
   --surface-card: #ffffff;
   --surface-muted: #f3eee9;
   --surface-dark: #1c1917;
@@ -195,7 +195,7 @@
 
   /* Gradients — coral / orange energy */
   --gradient-brand: linear-gradient(135deg, #e85d04 0%, #f97316 55%, #c2410c 140%);
-  --gradient-hero: linear-gradient(160deg, #faf8f6 0%, #f3eee9 45%, #fff4ed 100%);
+  --gradient-hero: linear-gradient(160deg, #FFFBFA 0%, #FFF0E2 48%, #F6EEFF 100%);
   --gradient-dark: linear-gradient(145deg, #1c1917 0%, #c2410c 100%);
 }
 
@@ -224,6 +224,7 @@
 
   body {
     @apply min-h-full bg-background font-sans text-foreground antialiased;
+    overflow-wrap: break-word;
     background-image:
       radial-gradient(ellipse 80% 50% at 100% -20%, rgb(232 93 4 / 0.06), transparent),
       radial-gradient(ellipse 55% 40% at -8% 25%, rgb(194 65 12 / 0.04), transparent),
@@ -516,6 +517,132 @@
   animation: iv-timeline-draw 1.1s ease-out forwards;
 }
 
+/* Lightweight replacements for Framer FadeUp / HoverLift / Stagger */
+@keyframes nl-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nl-fade-up-immediate {
+  from {
+    opacity: 1;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nl-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nl-fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nl-fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nl-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nl-fade-up,
+.nl-fade-up-immediate,
+.nl-fade-in,
+.nl-fade-left,
+.nl-fade-right,
+.nl-scale-in {
+  animation-duration: 0.25s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: both;
+  animation-delay: var(--nl-fade-delay, 0ms);
+}
+
+.nl-fade-up {
+  animation-name: nl-fade-up;
+}
+
+.nl-fade-up-immediate {
+  animation-name: nl-fade-up-immediate;
+}
+
+.nl-fade-in {
+  animation-name: nl-fade-in;
+}
+
+.nl-fade-left {
+  animation-name: nl-fade-left;
+}
+
+.nl-fade-right {
+  animation-name: nl-fade-right;
+}
+
+.nl-scale-in {
+  animation-name: nl-scale-in;
+}
+
+.nl-stagger > *:nth-child(1) { --nl-fade-delay: 0ms; }
+.nl-stagger > *:nth-child(2) { --nl-fade-delay: 80ms; }
+.nl-stagger > *:nth-child(3) { --nl-fade-delay: 160ms; }
+.nl-stagger > *:nth-child(4) { --nl-fade-delay: 240ms; }
+.nl-stagger > *:nth-child(5) { --nl-fade-delay: 320ms; }
+.nl-stagger > *:nth-child(6) { --nl-fade-delay: 400ms; }
+.nl-stagger > *:nth-child(7) { --nl-fade-delay: 480ms; }
+.nl-stagger > *:nth-child(8) { --nl-fade-delay: 560ms; }
+
+.nl-hover-lift {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .nl-hover-lift:hover {
+    transform: translateY(-4px);
+  }
+}
+
+[data-service-filter='instagram'] [data-platform-group]:not([data-platform-group='instagram']),
+[data-service-filter='tiktok'] [data-platform-group]:not([data-platform-group='tiktok']),
+[data-service-filter='facebook'] [data-platform-group]:not([data-platform-group='facebook']) {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   @keyframes cart-badge-pulse {
     0%,
@@ -540,7 +667,13 @@
   .animate-iv-timeline-draw,
   .animate-iv-particle,
   .animate-iv-price-pop,
-  .animate-iv-icon-bob {
+  .animate-iv-icon-bob,
+  .nl-fade-up,
+  .nl-fade-up-immediate,
+  .nl-fade-in,
+  .nl-fade-left,
+  .nl-fade-right,
+  .nl-scale-in {
     animation: none !important;
   }
 }

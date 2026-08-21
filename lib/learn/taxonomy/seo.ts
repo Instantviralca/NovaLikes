@@ -34,7 +34,10 @@ export function getCategoryMetadata(slug: string): Metadata {
         ? [category.featuredImage]
         : undefined,
     keywords: category.seo.keywords,
-    robots: { index: true, follow: true },
+    robots:
+      category.articleCount > 0
+        ? { index: true, follow: true }
+        : { index: false, follow: true },
   });
 }
 
@@ -54,6 +57,9 @@ export function getTagMetadata(slug: string): Metadata {
     description: tag.description,
     path: tagPath(tag.slug),
     type: 'website',
-    robots: { index: true, follow: true },
+    robots:
+      tag.articleCount > 0
+        ? { index: true, follow: true }
+        : { index: false, follow: true },
   });
 }

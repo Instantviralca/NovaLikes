@@ -8,7 +8,6 @@ import type {
   FacebookDashboardVariant,
   InstagramDashboardVariant,
   TikTokDashboardVariant,
-  YouTubeDashboardVariant,
 } from '@/components/illustrations/dashboards';
 import type { PlatformId } from '@/types/platform';
 
@@ -26,7 +25,6 @@ export type ServiceHeroProps = {
   previewPackageId?: string;
   instagramVariant?: InstagramDashboardVariant;
   tiktokVariant?: TikTokDashboardVariant;
-  youtubeVariant?: YouTubeDashboardVariant;
   facebookVariant?: FacebookDashboardVariant;
   className?: string;
 };
@@ -44,7 +42,6 @@ export function ServiceHero({
   previewPackageId,
   instagramVariant,
   tiktokVariant,
-  youtubeVariant,
   facebookVariant,
   className,
 }: ServiceHeroProps) {
@@ -71,7 +68,6 @@ export function ServiceHero({
       packagePreview={packagePreview}
       instagramVariant={instagramVariant}
       tiktokVariant={tiktokVariant}
-      youtubeVariant={youtubeVariant}
       facebookVariant={facebookVariant}
       className={className}
       priorityImage

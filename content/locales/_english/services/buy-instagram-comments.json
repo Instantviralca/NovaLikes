@@ -1,0 +1,671 @@
+{
+  "content": {
+    "slug": "buy-instagram-comments",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Buy Instagram Comments | NovaLikes",
+      "description": "Buy Instagram comments worldwide with clear package options, a public post URL, secure checkout, delivery details and order tracking through NovaLikes."
+    },
+    "hero": {
+      "eyebrow": "BUY INSTAGRAM COMMENTS",
+      "title": "Buy Instagram Comments",
+      "description": "Buy Instagram comments for a public post or Reel by choosing the package and quantity that fits the content you want to use. NovaLikes lets you compare available comment options and prices before ordering. Select your package, provide the correct public Instagram post URL, and complete your order online. Your Instagram password is not required, and you can use order tracking after checkout to check available status information.",
+      "purpose": "Convert visitors searching for Instagram comments packages",
+      "primaryKeyword": "buy Instagram comments",
+      "supportingKeywords": [
+        "Instagram comments packages",
+        "Increase Instagram comments",
+        "Instagram comment service",
+        "More Instagram engagement",
+        "Buy Instagram comments"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "Choose a Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-c-trust-public-url",
+          "label": "Public Post URL Only"
+        },
+        {
+          "id": "ig-c-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "ig-c-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "ig-c-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-comments/instagram-comments-hero.webp",
+        "alt": "Instagram comments conversation and community engagement dashboard",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Instagram Comments Packages & Pricing",
+      "description": "Compare the available Instagram comments packages, quantities, and prices before ordering. Choose between the available comment options, select the number of comments you want for your post or Reel, and review the package details before adding it to your cart.",
+      "purpose": "Present real NovaLikes.com comments packages",
+      "primaryKeyword": "Instagram comments packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Order Now",
+      "emptyMessage": "Instagram Comments packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-comments",
+      "title": "Support the Conversation Around Important Content",
+      "description": "Comments create conversations. Active discussion under a post helps new visitors see credibility, not a quiet grid. Visible engagement also makes it easier for more people to join in.\n\nCreators, businesses, and brands use comments packages when a launch, announcement, or educational post needs a stronger first impression—without replacing real replies, captions, or community management.",
+      "purpose": "Explain how comments support credibility and conversation",
+      "primaryKeyword": "Instagram comments",
+      "suggestedWordCount": 160,
+      "items": [
+        {
+          "id": "ig-c-benefit-conversation",
+          "title": "Comments create conversations",
+          "description": "A thread gives people something to read, ask about, and respond to—so the post feels like a discussion, not a monologue."
+        },
+        {
+          "id": "ig-c-benefit-credibility",
+          "title": "Discussions improve credibility",
+          "description": "Prospects skim comments for tone and proof. Clear, on-topic replies signal that the content matters to a real community."
+        },
+        {
+          "id": "ig-c-benefit-interaction",
+          "title": "Engagement invites more interaction",
+          "description": "When a post already shows activity, viewers are more likely to leave their own question, emoji, or opinion."
+        },
+        {
+          "id": "ig-c-benefit-audiences",
+          "title": "Built for creators, businesses, and brands",
+          "description": "Use comments on campaigns, product drops, education posts, and announcements where visible conversation supports trust."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-comments",
+      "title": "A Clearer Way to Buy Instagram Comments",
+      "description": "Every package is built for conversation-focused engagement: public posts only, transparent delivery details, and checkout that never asks for your Instagram password.",
+      "purpose": "Differentiate comments purchasing experience",
+      "primaryKeyword": "Instagram comment service",
+      "suggestedWordCount": 140,
+      "items": [
+        {
+          "id": "ig-c-why-relevant",
+          "title": "Relevant Comments",
+          "description": "Choose packages and options that fit the post you are promoting, so discussion stays useful rather than random noise."
+        },
+        {
+          "id": "ig-c-why-natural",
+          "title": "Natural Delivery",
+          "description": "Gradual delivery options help comments arrive at a pace that looks more natural beside normal activity."
+        },
+        {
+          "id": "ig-c-why-password",
+          "title": "No Password Required",
+          "description": "We never request Instagram login access. Orders use public information only."
+        },
+        {
+          "id": "ig-c-why-public",
+          "title": "Public Post Only",
+          "description": "Paste the public URL for the post or Reel that should receive comments. Keep it accessible while delivery runs."
+        },
+        {
+          "id": "ig-c-why-checkout",
+          "title": "Secure Checkout",
+          "description": "Review package details, confirm pricing, and pay through NovaLikes’s secure checkout flow."
+        },
+        {
+          "id": "ig-c-why-support",
+          "title": "Professional Support",
+          "description": "Need help with a package, URL, or order status? Support is available for comments-service questions."
+        }
+      ],
+      "cta": {
+        "label": "Choose Instagram Comments Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "features": {
+      "id": "buy-instagram-comments-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused — delivery requirements live in deliveryAndSafety",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How to Buy Instagram Comments",
+      "description": "Five clear steps from package selection to delivery—built for desktop and mobile checkout.",
+      "purpose": "Explain the comments ordering process",
+      "primaryKeyword": "buy Instagram comments",
+      "suggestedWordCount": 120,
+      "steps": [
+        {
+          "id": "ig-c-step-1",
+          "title": "Choose Package",
+          "description": "Compare comment quantities, pricing, and delivery estimates for the post you want more discussion on."
+        },
+        {
+          "id": "ig-c-step-2",
+          "title": "Paste Public Post URL",
+          "description": "Add the public Instagram post or Reel link. No username password or private access is required."
+        },
+        {
+          "id": "ig-c-step-3",
+          "title": "Complete Checkout",
+          "description": "Enter your email, choose a payment method, accept the terms, and place the order securely."
+        },
+        {
+          "id": "ig-c-step-4",
+          "title": "Order Processing",
+          "description": "We verify the public URL and prepare fulfillment based on the package you selected."
+        },
+        {
+          "id": "ig-c-step-5",
+          "title": "Delivery Starts",
+          "description": "Comments begin landing according to the package estimate. Track progress anytime after purchase."
+        }
+      ],
+      "cta": {
+        "label": "Choose Packages",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "comment-type-and-link",
+      "title": "What We Need to Process Your Order",
+      "description": "Comments orders stay simple: a public Instagram post, the correct URL, a public account, and a valid email for tracking. NovaLikes never asks for your Instagram password.",
+      "purpose": "Explain comments order requirements",
+      "primaryKeyword": "Instagram comments",
+      "suggestedWordCount": 100,
+      "items": [
+        {
+          "id": "ig-c-req-public-post",
+          "title": "Public post",
+          "description": "The post or Reel must stay publicly viewable while comments are delivered."
+        },
+        {
+          "id": "ig-c-req-correct-url",
+          "title": "Correct URL",
+          "description": "Paste the exact public link for the content that should receive the conversation."
+        },
+        {
+          "id": "ig-c-req-public-account",
+          "title": "Public account",
+          "description": "Private profiles block delivery. Keep the account public for the duration of the order."
+        },
+        {
+          "id": "ig-c-req-email",
+          "title": "Valid email",
+          "description": "Use a reachable checkout email so you can receive confirmation and track updates."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "ig-comments-reviews",
+      "title": "What Customers Say About NovaLikes",
+      "description": "Customer reviews for this NovaLikes service.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-comments-faq",
+      "title": "Frequently Asked Questions About Buying Instagram Comments",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Instagram comments",
+      "faqIds": [
+        "faq-ig-comments-need",
+        "faq-ig-comments-package",
+        "faq-ig-comments-password",
+        "faq-ig-comments-how-long",
+        "faq-ig-comments-track",
+        "faq-ig-comments-wrong-url",
+        "faq-ig-comments-other-metrics",
+        "faq-ig-comments-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-comments",
+      "title": "Related Instagram services that pair with comments",
+      "description": "Comments start the conversation. Pair likes for first reactions, views for Reel stay-time, or followers when you need a larger audience reading future threads.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-likes",
+        "buy-instagram-views"
+      ],
+      "cta": {
+        "label": "Back to NovaLikes homepage",
+        "href": "/"
+      }
+    },
+    "finalCta": {
+      "id": "ig-comments-final-cta",
+      "title": "Choose Your Instagram Comments Package",
+      "description": "Compare the available comment options, quantities, and prices, choose the package that fits the post or Reel you want to use, and place your order with the correct public Instagram URL.",
+      "purpose": "Drive conversion to comments packages",
+      "primaryCta": {
+        "label": "View Instagram Comments Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-instagram-comments-why-choose",
+        "title": "Why Choose NovaLikes for Instagram Comments?",
+        "description": "NovaLikes makes it easy to compare Instagram comments packages before you order. Choose the package type and quantity you want for a specific post or Reel, review the price, provide the correct public content URL, and track your order after checkout.",
+        "items": [
+          {
+            "id": "buy-instagram-comments-0",
+            "title": "Different Comment Quantities",
+            "description": "Compare the available comment quantities to find an option that fits the Instagram post or Reel you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-comments-1",
+            "title": "Multiple Package Options",
+            "description": "Choose between the available Instagram comments package types and review the current quantity and price before ordering.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-comments-2",
+            "title": "For Specific Posts and Reels",
+            "description": "Instagram comments are ordered for the public post or Reel you submit rather than for your overall profile.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-comments-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your Instagram comments order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-instagram-comments-can-you-buy",
+        "title": "Can You Buy Instagram Comments?",
+        "description": "Yes. Instagram comments can be purchased for eligible public posts and Reels. With NovaLikes, you choose an available comments package and quantity, provide the public URL of the Instagram content you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-instagram-comments-4",
+            "title": "What an Instagram Comments Order Changes",
+            "description": "An Instagram comments order adds comments to the specific post or Reel submitted with the order. It does not change the follower, like, or view count on your account.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-comments-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public URL for the Instagram post or Reel and the comments package you want to purchase. Your Instagram password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-comments-6",
+            "title": "What Instagram Comments Do Not Include",
+            "description": "Comments are separate from followers, likes, and views. Ordering Instagram comments does not automatically add those other metrics or guarantee additional reach, engagement, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected Instagram Comments, chosen the correct package and quantity, and provided the URL for the post or Reel where you want the comments added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-instagram-comments-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-instagram-comments-what-happens",
+        "title": "What Happens After You Buy Instagram Comments?",
+        "description": "After you place an Instagram comments order, the package, quantity, and content URL you submitted are used to process the order for the selected post or Reel. Keep the content publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-instagram-comments-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected comments package, quantity, and submitted Instagram URL are associated with your order so the request can be processed for the intended content."
+          },
+          {
+            "id": "buy-instagram-comments-th-2",
+            "title": "Comments Go to the Submitted Content",
+            "description": "The order applies to the Instagram post or Reel connected to the URL you provided. Check the link carefully before completing checkout."
+          },
+          {
+            "id": "buy-instagram-comments-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the comments package, quantity, and current order conditions. One fixed delivery time should not be expected for every order."
+          },
+          {
+            "id": "buy-instagram-comments-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking for available status updates. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid deleting the submitted post or Reel, making it unavailable, or changing anything that prevents access to the content while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-instagram-comments-service-compare",
+        "title": "Instagram Comments vs Followers vs Likes",
+        "description": "Comments, followers, and likes are different Instagram metrics. Choose the service based on whether you want comments on specific content, a higher follower count on your profile, or more likes on a particular post or Reel.",
+        "current": {
+          "title": "Instagram Comments",
+          "description": "Comments apply to individual content. Choose Instagram Comments when you want comments added to an eligible public post or Reel.",
+          "bestFor": "Posts and Reels where comments are the metric you want to change.",
+          "ctaLabel": "Instagram Comments"
+        },
+        "likes": {
+          "title": "Instagram Followers",
+          "description": "Followers are a profile-level metric. Choose Instagram Followers when you want to increase the follower count shown on your public profile.",
+          "bestFor": "Profiles where follower count is the metric you want to change.",
+          "href": "/buy-instagram-followers",
+          "ctaLabel": "View Instagram Followers"
+        },
+        "views": {
+          "title": "Instagram Likes",
+          "description": "Likes are a content-level metric. Choose Instagram Likes when you want to increase the like count shown on a specific public post or Reel.",
+          "bestFor": "Posts and Reels where the visible like count is the metric you want to change.",
+          "href": "/buy-instagram-likes",
+          "ctaLabel": "View Instagram Likes"
+        },
+        "combinedNote": "If you want to increase the view count on eligible video content, Instagram Views is available as a separate service.",
+        "commentsHref": "/buy-instagram-views"
+      },
+      "beforeBuying": {
+        "id": "buy-instagram-comments-before-buying",
+        "title": "What to Check Before Buying Instagram Comments",
+        "description": "Before you buy Instagram comments, review the package and content details before completing your order. Make sure the package type, comment quantity, price, Instagram URL, and service match what you want for the selected post or Reel.",
+        "framingNote": "Check the submitted content, comments package, quantity, and price one more time before checkout. Avoid relying on claims that buying comments will guarantee additional reach, engagement, followers, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-instagram-comments-7",
+            "title": "Check the Comment Quantity",
+            "description": "Review the number of Instagram comments included in the package so you know how many you are ordering for the selected content.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-comments-8",
+            "title": "Compare the Available Package Options",
+            "description": "Review the available comments package types, quantities, and prices before choosing the option you want to order.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-comments-9",
+            "title": "Use the Correct Post or Reel URL",
+            "description": "Make sure the public Instagram URL points to the exact post or Reel where you want the comments added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-comments-10",
+            "title": "Choose the Right Instagram Service",
+            "description": "Comments, followers, likes, and views are separate services. Check that Instagram Comments is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-instagram-comments-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-instagram-comments-worldwide",
+        "title": "Choosing Content for an Instagram Comments Order",
+        "description": "Instagram Comments applies to a specific eligible public post or Reel. Make sure the content you submit is the exact piece of Instagram content where you want the selected comment package applied.",
+        "eyebrow": "Ready for Instagram Comments",
+        "closingNote": "Instagram Comments applies to a specific post or Reel. Submit the correct content URL, keep the content available, and review the selected comment option before checkout.",
+        "cards": [
+          {
+            "id": "buy-instagram-comments-12",
+            "title": "Submit the Correct Content URL",
+            "description": "Use the public post or Reel URL requested during checkout. Do not submit only your Instagram profile when the service requires a content URL.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-comments-13",
+            "title": "Keep the Post or Reel Available",
+            "description": "The submitted content should remain publicly accessible where required while the order is being processed.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-comments-14",
+            "title": "Review the Comment Option",
+            "description": "Check the available comment package and quantity before ordering so you understand what you selected.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-comments-15",
+            "title": "Comments Are a Separate Metric",
+            "description": "Comments do not automatically add followers, likes or views. Choose the service that matches the metric you actually want for the content.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-instagram-comments-popular-packages",
+        "title": "Popular Instagram Comments Packages",
+        "description": "Compare some of the Instagram comments packages available on NovaLikes below. Review the package type, comment quantity, and current price, or return to the full pricing section to see all available options.",
+        "rows": [
+          {
+            "id": "ig-c-10",
+            "quantity": "10 Comments",
+            "recommendedFor": "A smaller option for a post or Reel where you want to add a limited number of comments."
+          },
+          {
+            "id": "ig-c-25",
+            "quantity": "25 Comments",
+            "recommendedFor": "An option for Instagram content where you want more comments than the smaller available package."
+          },
+          {
+            "id": "ig-c-50",
+            "quantity": "50 Comments",
+            "recommendedFor": "A middle package option for a selected public post or Reel."
+          },
+          {
+            "id": "ig-c-75",
+            "quantity": "75 Comments",
+            "recommendedFor": "A larger option for Instagram content where you want a higher number of comments added."
+          },
+          {
+            "id": "ig-c-100",
+            "quantity": "100 Comments",
+            "recommendedFor": "One of the larger comment quantities currently available for eligible Instagram content."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-instagram-comments-best-practices",
+        "title": "Best Practices After Buying Instagram Comments",
+        "description": "Buying comments adds comments to the selected post or Reel, but the rest of your Instagram activity still depends on the content you publish and how you manage your account. Keep your own posts, captions, replies, and audience interaction active alongside the service.",
+        "closingNote": "Comments are only one part of an Instagram post or Reel. Your content, captions, publishing decisions, genuine audience responses, and ongoing account activity still need your attention.",
+        "items": [
+          {
+            "id": "buy-instagram-comments-16",
+            "title": "Keep Publishing New Content",
+            "description": "Continue posting photos, Reels, carousels, Stories, and other content that makes sense for your account and audience.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-instagram-comments-17",
+            "title": "Write Captions That Fit the Post",
+            "description": "Use captions to explain the content, provide useful context, or give people something relevant to respond to when appropriate.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-instagram-comments-18",
+            "title": "Reply to Genuine Comments",
+            "description": "Respond to genuine questions and comments from your audience when it makes sense. Your own replies remain part of how you manage conversations on Instagram.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-instagram-comments-19",
+            "title": "Review Your Instagram Insights",
+            "description": "If Insights are available on your account, review reach, interactions, views, and other content data to understand how your posts and Reels perform.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-instagram-comments-20",
+            "title": "Keep the Conversation Relevant",
+            "description": "When people interact with your content naturally, keep your own replies connected to the topic of the post rather than using unrelated responses.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-instagram-comments-21",
+            "title": "Test Different Types of Content",
+            "description": "Try different post formats, topics, captions, and Reels to learn what works best for the audience you want to reach.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-instagram-comments-common-mistakes",
+        "title": "Common Mistakes When Buying Instagram Comments",
+        "description": "A few simple mistakes can cause problems with an Instagram comments order. Check the content URL, package, quantity, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the Instagram URL, package type, comment quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-instagram-comments-22",
+            "title": "Submitting the Wrong Post or Reel",
+            "description": "Check the Instagram URL carefully before ordering. The link should point to the exact public post or Reel where you want the comments added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-instagram-comments-23",
+            "title": "Choosing the Wrong Instagram Service",
+            "description": "Comments, followers, likes, and views are separate services. Choose Instagram Comments only when comments on specific content are what you want to order.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-instagram-comments-24",
+            "title": "Selecting the Wrong Comment Quantity",
+            "description": "Review the number of comments included in your selected package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-instagram-comments-25",
+            "title": "Removing the Content During an Order",
+            "description": "Avoid deleting the submitted post or Reel or making it unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-instagram-comments-26",
+            "title": "Expecting Comments to Guarantee Other Results",
+            "description": "Ordering comments does not automatically mean more followers, likes, views, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-instagram-comments-27",
+            "title": "Treating Comments as a Replacement for Your Own Activity",
+            "description": "Buying comments does not replace your own posts, captions, replies, publishing decisions, or interactions with people who engage with your account.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-followers": {
+            "title": "Instagram Followers",
+            "description": "Choose Instagram Followers when you want to increase the follower count shown on your public profile.",
+            "ctaLabel": "View Instagram Followers"
+          },
+          "buy-instagram-likes": {
+            "title": "Instagram Likes",
+            "description": "Choose Instagram Likes when you want to increase the like count shown on a specific public post or Reel.",
+            "ctaLabel": "View Instagram Likes"
+          },
+          "buy-instagram-views": {
+            "title": "Instagram Views",
+            "description": "Choose Instagram Views when you want to increase the view count shown on an eligible public Reel or video.",
+            "ctaLabel": "View Instagram Views"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-instagram-comments-why-buy",
+      "title": "Why Do People Buy Instagram Comments?",
+      "description": "People buy Instagram comments for different types of posts and Reels. Some use comment packages for product content, announcements, campaigns, or other posts where they want additional comments displayed. The service adds comments to the selected content, but it does not guarantee more followers, likes, views, reach, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-instagram-comments-wb-1",
+          "title": "Add Comments to a Post or Reel",
+          "description": "A comments package can be used when you want additional comments displayed on a specific public Instagram post or Reel."
+        },
+        {
+          "id": "buy-instagram-comments-wb-2",
+          "title": "Use Comments on Product or Campaign Content",
+          "description": "Businesses and creators may order comments for content connected to a product, promotion, announcement, launch, or campaign."
+        },
+        {
+          "id": "buy-instagram-comments-wb-3",
+          "title": "Focus on the Comment Metric",
+          "description": "Instagram comments apply to the selected content rather than changing your profile follower count or automatically adding likes or views."
+        },
+        {
+          "id": "buy-instagram-comments-wb-4",
+          "title": "Choose a Comment Quantity",
+          "description": "Different package sizes let you select the number of comments you want for the individual post or Reel you submit."
+        },
+        {
+          "id": "buy-instagram-comments-wb-5",
+          "title": "Use Comments Alongside Your Own Content",
+          "description": "Buying comments does not replace publishing and managing your own content. Captions, replies, new posts, and other account activity still depend on how you manage your Instagram presence."
+        }
+      ],
+      "bottomNote": "If you want to change your follower count, like count, or video views rather than add comments, choose the corresponding Instagram service instead."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy Instagram Comments",
+      "description": "Buying Instagram comments through NovaLikes takes four steps. Choose the comments package and quantity you want, provide the public URL for the Instagram post or Reel, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-instagram-comments-step-1",
+          "title": "Choose Your Comments Package",
+          "description": "Compare the available comment options, quantities, and prices, then select the package you want for your Instagram content."
+        },
+        {
+          "id": "buy-instagram-comments-step-2",
+          "title": "Enter the Post or Reel URL",
+          "description": "Provide the correct public URL for the Instagram post or Reel where you want the comments added. Your Instagram password is not required."
+        },
+        {
+          "id": "buy-instagram-comments-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected comments package, quantity, and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-instagram-comments-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your Instagram comments order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Instagram Services",
+    "relatedIntro": "Comments are only one Instagram metric. If you want to work on your profile follower count, likes on specific content, or views on a Reel or video, compare the other Instagram services below."
+  }
+}

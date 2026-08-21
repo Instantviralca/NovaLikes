@@ -1,63 +1,34 @@
-'use client';
+import type { CSSProperties, HTMLAttributes, ReactNode } from 'react';
 
-import { motion, useReducedMotion, type HTMLMotionProps } from 'framer-motion';
-
-import { theme } from '@/config/theme';
 import { cn } from '@/lib/utils';
 
-type StaggerChildrenProps = HTMLMotionProps<'div'> & {
+type StaggerChildrenProps = HTMLAttributes<HTMLDivElement> & {
   stagger?: number;
+  children?: ReactNode;
 };
 
 export function StaggerChildren({
   className,
   stagger = 0.08,
   children,
+  style,
   ...props
 }: StaggerChildrenProps) {
-  const reduceMotion = useReducedMotion();
-
   return (
-    <motion.div
-      className={cn(className)}
-      initial={reduceMotion ? false : 'hidden'}
-      whileInView={reduceMotion ? undefined : 'show'}
-      viewport={{ once: true, margin: '-40px' }}
-      variants={{
-        hidden: {},
-        show: {
-          transition: {
-            staggerChildren: reduceMotion ? 0 : stagger,
-          },
-        },
-      }}
+    <div
+      className={cn('nl-stagger', className)}
+      style={{ ...style, '--nl-stagger': `${stagger}s` } as CSSProperties}
       {...props}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-type StaggerItemProps = HTMLMotionProps<'div'>;
+type StaggerItemProps = HTMLAttributes<HTMLDivElement> & {
+  children?: ReactNode;
+};
 
 export function StaggerItem({ className, ...props }: StaggerItemProps) {
-  const reduceMotion = useReducedMotion();
-
-  return (
-    <motion.div
-      className={cn(className)}
-      variants={{
-        hidden: reduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 },
-        show: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: reduceMotion ? 0 : theme.motion.durationBase,
-            ease: theme.motion.easeOut,
-          },
-        },
-      }}
-      {...props}
-    />
-  );
+  return <div className={cn('nl-fade-up', className)} {...props} />;
 }

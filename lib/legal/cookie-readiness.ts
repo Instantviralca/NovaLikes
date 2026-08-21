@@ -36,7 +36,9 @@ export function getCookiePublicationReadiness(
       id: 'contact',
       label: 'Verified contact details',
       satisfied: Boolean(contactEmail || config.mailingAddress),
-      notes: 'Support email and mailing address are not configured.',
+      notes: contactEmail
+        ? `Support email configured: ${contactEmail}. Mailing address still unset.`
+        : 'Support email and mailing address are not configured.',
     },
     {
       id: 'effective-dates',
@@ -48,8 +50,9 @@ export function getCookiePublicationReadiness(
       id: 'cookie-inventory',
       label: 'Verified named-cookie inventory',
       satisfied: config.cookieInventoryVerified,
-      notes:
-        'No named third-party cookie inventory is verified yet. Essential purposes are purpose-based only.',
+      notes: config.cookieInventoryVerified
+        ? 'First-party cart/admin/consent storage documented; no enabled analytics/marketing cookies.'
+        : 'No named third-party cookie inventory is verified yet. Essential purposes are purpose-based only.',
     },
     {
       id: 'analytics-marketing',

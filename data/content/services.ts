@@ -1,13 +1,11 @@
 import { facebookContent } from '@/data/content/facebook';
 import { instagramContent } from '@/data/content/instagram';
 import { tiktokContent } from '@/data/content/tiktok';
-import { youtubeContent } from '@/data/content/youtube';
 import type { ServiceContent } from '@/types/content';
 
 const allServiceContent: Record<string, ServiceContent> = {
   ...instagramContent,
   ...tiktokContent,
-  ...youtubeContent,
   ...facebookContent,
 };
 

@@ -15,23 +15,36 @@ export const aboutContent: AboutPageContent = {
   id: 'about',
   path: routes.about,
   seo: {
-    title: 'About NovaLikes | Social Media Growth Since 2018',
+    title: 'About NovaLikes | Social Media Growth Platform',
     description:
-      'Learn about NovaLikes, our mission, customer-first approach, secure ordering process, and commitment to transparent social media growth services.',
+      'Learn about NovaLikes, our mission, why customers choose us, and our commitment to secure, transparent social media growth services.',
   },
   hero: {
+    eyebrow: 'ABOUT NOVALIKES',
     title: 'About NovaLikes',
     description:
-      'NovaLikes helps creators, businesses, agencies, and brands purchase social media growth services through a transparent ordering experience backed by real package data, secure checkout, and customer support.',
+      'NovaLikes is a premium social media growth platform built to help creators, businesses, and brands grow with high-quality social signals.\n\nWe focus on a clear ordering experience, secure checkout, and reliable delivery across Instagram, TikTok, Facebook, and more.',
     purpose: 'Introduce NovaLikes as a trusted social media growth provider',
     primaryKeyword: 'About NovaLikes',
-    primaryCta: {
-      label: 'Browse Services',
-      href: routes.home,
-    },
-    secondaryCta: {
-      label: 'Contact Us',
-      href: routes.contact,
+    trustLabels: [
+      {
+        id: 'about-hero-quality',
+        label: 'Clear packages, password-free ordering, and published policies.',
+      },
+      {
+        id: 'about-hero-delivery',
+        label: 'Secure checkout and order tracking for placed purchases.',
+      },
+      {
+        id: 'about-hero-support',
+        label: 'Customer support for package, order, and payment questions.',
+      },
+    ],
+    visual: {
+      src: '/assets/images/illustrations/about/about-hero.webp',
+      alt: 'NovaLikes dashboard representing Instagram, TikTok and Facebook services',
+      width: 1536,
+      height: 1024,
     },
   },
   story: {
@@ -39,89 +52,47 @@ export const aboutContent: AboutPageContent = {
     title: 'Our Story',
     description: 'A clearer way to buy social media growth services.',
     purpose: 'Share company journey without unverifiable historical claims',
-    body: 'NovaLikes was built to make social media growth services easier to understand and order. Creators, businesses, agencies, and brands often need a straightforward way to compare packages, submit the required public URL, complete secure checkout, and track progress — without sharing account passwords.\n\nWe focus on transparency in how packages are presented, clarity in what is required to place an order, and continuous improvement of the ordering experience. Our goal is a customer-focused process that stays honest about what we provide and what we do not invent.',
+    body: 'NovaLikes was built to make social media growth services easier to understand and order. Creators, businesses, agencies, and brands often need a straightforward way to compare packages, submit the required public URL, complete secure checkout, and track progress — without sharing account passwords.\n\nWe focus on transparency in how packages are presented, clarity in what is required to place an order, and continuous improvement of the ordering experience.',
   },
   mission: {
-    id: 'mission-and-values',
-    title: 'Mission & Values',
+    id: 'our-mission',
+    title: 'Helping You Grow. The Right Way.',
     description:
-      'The principles that guide how we present services, process orders, and support customers.',
-    purpose: 'Communicate mission values from Document 13.01',
-    items: [
-      {
-        id: 'about-value-transparency',
-        title: 'Transparency',
-        description:
-          'We present real package options and clear order requirements so customers can make informed decisions.',
-      },
-      {
-        id: 'about-value-ordering',
-        title: 'Reliable Ordering',
-        description:
-          'The ordering flow is designed to be simple: choose a service, select a package, submit the required URL, and complete checkout.',
-      },
-      {
-        id: 'about-value-support',
-        title: 'Customer Support',
-        description:
-          'Support is available for package questions, order updates, and help during processing.',
-      },
-      {
-        id: 'about-value-checkout',
-        title: 'Secure Checkout',
-        description:
-          'Checkout is handled through a secure process so customers can place orders with confidence.',
-      },
-      {
-        id: 'about-value-improvement',
-        title: 'Continuous Improvement',
-        description:
-          'We keep refining the experience around clearer package information, smoother ordering, and better customer communication.',
-      },
-    ],
+      'Our mission is to help you boost your social media presence safely and effectively — with clear packages, password-free ordering, and support when you need it.\n\nWe believe growth should feel simple: choose a service, pick a package, provide a public URL, and track your order with confidence.',
+    purpose: 'Communicate the NovaLikes mission',
+    items: [],
   },
   whyChoose: {
-    id: 'why-customers-choose-novalikes',
-    title: 'Why Customers Choose NovaLikes',
-    description:
-      'Practical reasons customers use NovaLikes when they need a clear path from package selection to order tracking.',
-    purpose: 'Explain customer-facing strengths without invented claims',
+    id: 'why-thousands-choose-us',
+    title: 'Why Thousands Choose Us',
+    description: 'WHY CHOOSE NOVALIKES?',
+    purpose: 'Highlight the main reasons customers choose NovaLikes',
     items: [
       {
-        id: 'about-why-password',
-        title: 'No Password Required',
-        description:
-          'Orders use public profile, page, or content URLs. NovaLikes does not ask for social media passwords.',
+        id: 'about-why-safe',
+        title: 'Safe & Secure',
+        description: 'Encrypted checkout and password-free ordering keep your accounts protected.',
       },
       {
-        id: 'about-why-catalog',
-        title: 'Real Package Catalog',
-        description:
-          'Quantities and prices come from the real NovaLikes.com package data — not invented frontend placeholders.',
+        id: 'about-why-fast',
+        title: 'Clear Package Pricing',
+        description: 'Compare quantities and prices before checkout so you know which package you are choosing.',
       },
       {
-        id: 'about-why-checkout',
-        title: 'Secure Checkout',
-        description:
-          'Complete your order through a secure checkout flow after reviewing package and delivery details.',
+        id: 'about-why-quality',
+        title: 'Platform-Specific Services',
+        description: 'Packages are listed by Instagram, TikTok, and Facebook metric rather than as a generic growth mix.',
       },
       {
         id: 'about-why-support',
-        title: 'Responsive Support',
-        description:
-          'Get help with package selection, order status, and processing questions when you need it.',
-      },
-      {
-        id: 'about-why-delivery',
-        title: 'Clear Delivery Information',
-        description:
-          'Delivery estimates shown on packages come from the real pricing data associated with each option.',
+        title: 'Customer Support',
+        description: 'Contact NovaLikes with package, order, or payment questions using the available support options.',
       },
       {
         id: 'about-why-refund',
-        title: 'Refund Policy',
+        title: '30-Day Money-Back Guarantee',
         description:
-          'Eligible purchases are covered under the Refund Policy and the conditions published for each service.',
+          'Eligible purchases are covered by our 30-Day Money-Back Guarantee under the published Refund Policy.',
       },
     ],
   },
@@ -167,53 +138,44 @@ export const aboutContent: AboutPageContent = {
     ],
   },
   trust: {
-    id: 'trust-and-security',
-    title: 'Trust & Security',
+    id: 'our-commitment',
+    title: 'Built on Trust Delivered with Care',
     description:
-      'We keep trust signals grounded in how the product actually works — not in unverifiable claims.',
-    purpose: 'Reinforce trust without inventing awards or guarantees',
-    disclaimer:
-      'NovaLikes does not invent awards, certifications, partnerships, customer counts, or guarantees on this page. Trust is built through clear package data, secure checkout, transparent policies, and responsive support.',
+      'We are committed to a customer experience that feels clear, secure, and dependable — from package selection to order tracking.',
+    purpose: 'Reinforce trust and commitment',
+    disclaimer: '',
     items: [
       {
+        id: 'about-trust-payments',
+        title: 'Secure Payments',
+        description: 'Encrypted payment processing at checkout.',
+      },
+      {
+        id: 'about-trust-privacy',
+        title: 'Privacy Protected',
+        description: 'Your data is handled according to our Privacy Policy.',
+      },
+      {
         id: 'about-trust-password',
-        title: 'Password-Free Ordering',
-        description:
-          'Only public URLs are requested for fulfillment. Account passwords are never part of the order form.',
+        title: 'No Password Needed',
+        description: 'Orders use public URLs only — never account passwords.',
       },
       {
-        id: 'about-trust-data',
-        title: 'Real Package Data',
-        description:
-          'Service pages display package information from the NovaLikes.com pricing source rather than fabricated tiers.',
-      },
-      {
-        id: 'about-trust-policies',
-        title: 'Published Policies',
-        description:
-          'Refund, privacy, and terms pages are available so customers can review how orders and data are handled.',
-      },
-      {
-        id: 'about-trust-tracking',
-        title: 'Customer-Facing Tracking',
-        description:
-          'Order progress is available through the Track Order page using the order ID and checkout email.',
+        id: 'about-trust-global',
+        title: 'Global Service',
+        description: 'Available to customers ordering from around the world.',
       },
     ],
   },
   finalCta: {
     id: 'about-final-cta',
-    title: 'Ready to Explore NovaLikes Services?',
+    title: 'Ready to grow your social media presence?',
     description:
-      'Browse available growth services, review real package options, and place an order with a clear, password-free process.',
-    purpose: 'Drive visitors to services or contact',
+      'Compare available Instagram, TikTok, and Facebook services, review package options, and place an order when you are ready.',
+    purpose: 'Drive visitors to start ordering',
     primaryCta: {
-      label: 'Browse Services',
+      label: 'Get Started Now',
       href: routes.home,
-    },
-    secondaryCta: {
-      label: 'Contact Us',
-      href: routes.contact,
     },
   },
 };
@@ -231,24 +193,29 @@ export const contactContent: ContactPageContent = {
       'Contact NovaLikes for sales, support, order enquiries, and general questions. Reach our team through the official contact form and support channels.',
   },
   hero: {
-    title: 'Contact NovaLikes',
+    eyebrow: 'CONTACT US',
+    title: "We're Here to Help!",
     description:
-      'Need help choosing a package, checking an order, or asking a general question? Our team is here to help.',
+      'Have questions about our services or need help with an order? Contact NovaLikes support and include your order details when the question is about a purchase.',
     purpose: 'Help customers reach NovaLikes for sales and support',
     primaryKeyword: 'Contact NovaLikes',
-    primaryCta: {
-      label: 'Track Your Order',
-      href: routes.trackOrder,
-    },
-    secondaryCta: {
-      label: 'Browse Services',
-      href: routes.home,
+    trustLabels: [
+      { id: 'contact-hero-247', label: 'Customer Support — Help with services and orders' },
+      { id: 'contact-hero-quick', label: 'Order Tracking — Check status after checkout' },
+      { id: 'contact-hero-safe', label: 'No Password Required — Public details only' },
+    ],
+    visual: {
+      src: '/assets/images/illustrations/contact/contact-hero.webp',
+      alt: 'NovaLikes customer support illustration with chat and headphones',
+      width: 1536,
+      height: 1024,
     },
   },
   contactOptions: {
     id: 'contact-options',
     title: 'How Can We Help?',
-    description: 'Choose the topic that best matches your enquiry, then send a message through the form below.',
+    description:
+      'Choose the topic that best matches your enquiry, then send a message through the form below.',
     purpose: 'Present contact option cards',
     items: [
       {
@@ -281,45 +248,48 @@ export const contactContent: ContactPageContent = {
     id: 'contact-form',
     title: 'Send Us a Message',
     description:
-      'Share a few details and we will follow up using the email address you provide.',
+      'Fill out the form below and our team will get back to you as soon as possible.',
     purpose: 'Collect contact form submissions',
     fields: {
-      fullNameLabel: 'Full Name',
-      fullNamePlaceholder: 'Your full name',
-      emailLabel: 'Email Address',
-      emailPlaceholder: 'you@email.com',
+      fullNameLabel: 'Your Name',
+      fullNamePlaceholder: 'Your Name',
+      emailLabel: 'Your Email',
+      emailPlaceholder: 'Your Email',
       subjectLabel: 'Subject',
-      subjectPlaceholder: 'How can we help?',
+      subjectPlaceholder: 'Subject',
       orderIdLabel: 'Order ID',
       orderIdPlaceholder: 'Optional — e.g. IV-1001',
       orderIdHelper: 'Optional. Include this if your message relates to an existing order.',
-      messageLabel: 'Message',
-      messagePlaceholder: 'Tell us what you need help with…',
+      messageLabel: 'Your Message',
+      messagePlaceholder: 'Your Message',
       submitLabel: 'Send Message',
-      successTitle: 'Message ready to send',
+      successTitle: 'Message sent',
       successDescription:
-        'Your message has been validated successfully. A support channel will be connected here when email delivery is configured.',
+        'Thanks for contacting NovaLikes. We will follow up using the email address you provided.',
     },
   },
   business: {
-    id: 'business-information',
-    title: 'Business Information',
-    description:
-      'Verified details from NovaLikes configuration. Unavailable fields are hidden rather than invented.',
-    purpose: 'Show only configured business contact details',
+    id: 'contact-information',
+    title: 'Contact Information',
+    description: 'Reach NovaLikes through the channels below.',
+    purpose: 'Show contact channels beside the form',
     emptyMessage:
-      'Additional contact details such as phone number, office address, and office hours will appear here when they are added to site configuration.',
+      'Additional contact details will appear here when they are added to site configuration.',
   },
   faqPreview: {
     id: 'contact-faq-preview',
-    title: 'Common Questions',
-    description: 'Quick answers before you write to us. Browse the full FAQ for more topics.',
+    title: 'Quick Answers to Common Questions',
+    description: 'FREQUENTLY ASKED QUESTIONS',
     purpose: 'Preview FAQ entries and link to the FAQ page',
     faqIds: [
+      'faq-support',
       'faq-password',
       'faq-track-order',
-      'faq-support',
       'faq-how-ordering-works',
+      'faq-delivery-time',
+      'faq-is-it-safe',
+      'faq-refunds',
+      'faq-need-help',
     ],
     viewAllCta: {
       label: 'View all FAQs',
@@ -328,17 +298,13 @@ export const contactContent: ContactPageContent = {
   },
   finalCta: {
     id: 'contact-final-cta',
-    title: 'Prefer to Check an Order First?',
+    title: 'Still Need Help?',
     description:
-      'Use Track Order with your order ID and checkout email, or browse services if you are ready to choose a package.',
-    purpose: 'Offer track order and browse services exits',
+      "Our friendly support team is always here for you. Don't hesitate to reach out anytime!",
+    purpose: 'Encourage continued support contact',
     primaryCta: {
-      label: 'Track Your Order',
-      href: routes.trackOrder,
-    },
-    secondaryCta: {
-      label: 'Browse Services',
-      href: routes.home,
+      label: 'Start Live Chat',
+      href: '#contact-form',
     },
   },
 };
@@ -351,29 +317,20 @@ export const faqPageContent: FaqPageContent = {
   id: 'faq',
   path: routes.faq,
   seo: {
-    title: 'NovaLikes FAQ | Orders, Delivery, Payments & Support',
+    title: 'NovaLikes FAQ | Instagram, TikTok & Facebook Help',
     description:
-      'Find answers about NovaLikes services, real packages, delivery times, payments, refunds, refill eligibility, order tracking, and customer support.',
+      'Find answers about NovaLikes orders, Instagram, TikTok and Facebook services, account requirements, delivery, payments, tracking and support.',
   },
   hero: {
-    eyebrow: 'HELP CENTER',
-    title: 'Frequently Asked Questions',
+    title: 'Frequently Asked Questions About NovaLikes',
     description:
-      'Find clear answers about NovaLikes services, real package options, delivery estimates, payments, refunds, refill eligibility, order tracking, and customer support. Use the search field or choose a category to quickly find the information you need.',
+      'Find clear answers about NovaLikes, Instagram, TikTok and Facebook services, placing an order, account requirements, delivery, payments and support. Browse by category or search for a specific question below.',
     purpose: 'Help customers find answers before contacting support',
     primaryKeyword: 'NovaLikes FAQ',
-    primaryCta: {
-      label: 'Track an Order',
-      href: routes.trackOrder,
-    },
-    secondaryCta: {
-      label: 'Contact Support',
-      href: routes.contact,
-    },
   },
   search: {
     label: 'Search questions',
-    placeholder: 'Search questions',
+    placeholder: 'Search questions...',
     clearLabel: 'Clear',
     emptyState:
       'No matching questions were found. Try another search or contact support.',
@@ -385,16 +342,16 @@ export const faqPageContent: FaqPageContent = {
   },
   finalCta: {
     id: 'faq-contact-support-cta',
-    title: 'Still Need Help?',
+    title: 'Still Have a Question?',
     description:
-      'Contact the NovaLikes support team with your question. Include your order ID when asking about an existing order so the team can review it more efficiently.',
+      "Can't find the answer you're looking for? Contact NovaLikes support for help with a service, order or payment question. If your question is about an existing order, have your order details ready so the support team can locate it more easily.",
     purpose: 'Offer contact and track-order exits',
     primaryCta: {
       label: 'Contact Support',
       href: routes.contact,
     },
     secondaryCta: {
-      label: 'Track an Order',
+      label: 'Track Your Order',
       href: routes.trackOrder,
     },
   },
@@ -453,7 +410,7 @@ export const companyContent: Record<CompanyPageContent['id'], CompanyPageContent
     hero: {
       title: 'Customer Reviews',
       description:
-        'Read approved NovaLikes customer reviews. Ratings and counts match our published review catalogue.',
+        'Read NovaLikes customer reviews from our published catalogue. Ratings reflect that catalogue.',
       purpose: 'Aggregate customer social proof',
       primaryKeyword: 'novalikes reviews',
     },

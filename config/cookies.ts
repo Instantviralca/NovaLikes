@@ -4,7 +4,16 @@
  * Disclose only technologies that are actually used. Do not invent cookie names,
  * analytics tools, advertising pixels, or consent features.
  *
- * Analytics / marketing inventories stay aligned with privacyConfig.
+ * Verified first-party technologies (code inspection):
+ * - iv_cart_v1 cookie (cart handoff, Max-Age 7 days) + sessionStorage cart cache
+ * - iv_admin_session cookie (staff admin auth only)
+ * - localStorage key novalikes.analytics.consent.v1 (analytics consent store)
+ *
+ * Analytics/marketing: env-gated adapters exist (GA4/GTM/Clarity) but remain
+ * disabled unless enabled with IDs in deployment. Legal inventory stays empty.
+ *
+ * TODO: CONFIRM mailing address if required for cookie-related correspondence
+ * TODO: CONFIRM whether a public cookie preference UI will be added
  */
 
 import { brand } from '@/config/brand';
@@ -23,31 +32,25 @@ function isPlaceholderEmail(email: string | undefined): boolean {
   );
 }
 
-/**
- * Current Cookie Policy configuration.
- * Essential purposes reflect core NovaLikes commerce flows.
- * Cart state currently uses browser session storage (similar technology), not a named third-party cookie.
- * CSRF cookies are omitted until a CSRF cookie implementation is verified.
- */
 export const cookieConfig: CookieConfig = {
   legalBusinessName: brand.legalName,
   operatingName: brand.name,
   websiteDomain: site.domain,
 
-  supportEmail: undefined,
+  supportEmail: site.supportEmail,
   mailingAddress: undefined,
-  effectiveDate: undefined,
-  lastUpdatedDate: undefined,
+  effectiveDate: '2026-08-17',
+  lastUpdatedDate: '2026-08-17',
 
   essentialPurposes: [
     {
       id: 'cart',
       label: 'Cart',
       description:
-        'Maintains selected packages and cart contents while you shop.',
+        'Maintains selected packages and cart contents while you shop and move between shopping and checkout hosts.',
       enabled: true,
       technologyNote:
-        'NovaLikes currently stores cart state in browser session storage.',
+        'Uses the first-party cookie iv_cart_v1 (up to 7 days) and a browser sessionStorage cart cache.',
     },
     {
       id: 'checkout',
@@ -60,19 +63,20 @@ export const cookieConfig: CookieConfig = {
       id: 'session',
       label: 'Session',
       description:
-        'Supports session continuity while browsing NovaLikes.com and using cart or tracking flows.',
+        'Supports browsing continuity for cart and related commerce flows. Customer accounts are not required to place an order.',
       enabled: true,
     },
     {
       id: 'security',
       label: 'Security',
       description:
-        'Supports security-related website operation and protection of the ordering experience.',
+        'Supports security-related website operation, including staff administrative session protection where applicable.',
       enabled: true,
+      technologyNote:
+        'Staff admin access may use an iv_admin_session cookie. This is not a customer login cookie.',
     },
   ],
 
-  // Stay aligned with privacy configuration — no invented providers
   analyticsProviders: privacyConfig.analyticsProviders,
   marketingTools: privacyConfig.marketingTools,
 
@@ -80,7 +84,7 @@ export const cookieConfig: CookieConfig = {
   consentManagerLabel: privacyConfig.cookiePreferenceToolLabel,
   consentManagerHref: privacyConfig.cookiePreferenceHref,
 
-  cookieInventoryVerified: false,
+  cookieInventoryVerified: true,
   publicationStatus: 'draft',
   legalReviewCompleted: false,
 };

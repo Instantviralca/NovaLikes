@@ -42,8 +42,11 @@ import {
   getCategoryCollectionSchema,
   getCategoryMetadata,
   getCategoryRelatedServices,
+  getDiscoverableTags,
+  getPopularTags,
   getTags,
   getTagBySlug,
+  getTagMetadata,
   validateCategory,
   validateLearnTaxonomy,
   validateTag,
@@ -234,7 +237,7 @@ describe('Categories & Tags System — Document 15.04', () => {
     const report = validateLearnTaxonomy();
     expect(report.duplicateCategorySlugs).toEqual([]);
     expect(report.duplicateTagSlugs).toEqual([]);
-    expect(report.activeCategoryCount).toBe(6);
+    expect(report.activeCategoryCount).toBe(5);
     expect(report.activeTagCount).toBe(13);
     expect(report.issues.some((i) => i.code === 'empty_category')).toBe(true);
     expect(report.valid).toBe(true);
@@ -242,6 +245,30 @@ describe('Categories & Tags System — Document 15.04', () => {
 
   it('hides inactive categories from public getters', () => {
     expect(getCategoryBySlug('news')).toBeUndefined();
+    expect(getCategoryBySlug('youtube')).toBeUndefined();
     expect(getCategories().map((c) => c.slug)).not.toContain('news');
+    expect(getCategories().map((c) => c.slug)).not.toContain('youtube');
+  });
+
+  it('noindexes empty tag archives and indexes them once a published article exists', () => {
+    expect(getDiscoverableTags()).toEqual([]);
+    expect(getPopularTags()).toEqual([]);
+    expect(getTagMetadata('algorithm').robots).toMatchObject({
+      index: false,
+      follow: true,
+    });
+
+    mockArticles.push(makeArticle({ tags: ['algorithm'] }));
+
+    expect(getDiscoverableTags().map((tag) => tag.slug)).toEqual(['algorithm']);
+    expect(getPopularTags().map((tag) => tag.slug)).toEqual(['algorithm']);
+    expect(getTagMetadata('algorithm').robots).toMatchObject({
+      index: true,
+      follow: true,
+    });
+    expect(getTagMetadata('followers').robots).toMatchObject({
+      index: false,
+      follow: true,
+    });
   });
 });

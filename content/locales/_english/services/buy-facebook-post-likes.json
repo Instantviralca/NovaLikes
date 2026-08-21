@@ -1,0 +1,636 @@
+{
+  "content": {
+    "slug": "buy-facebook-post-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Post Likes | NovaLikes",
+      "description": "Buy Facebook Post Likes with transparent packages for businesses, creators and brands. Public Facebook post URL only, secure checkout and order tracking. No password required."
+    },
+    "hero": {
+      "eyebrow": "BUY FACEBOOK POST LIKES",
+      "title": "Buy Facebook Post Likes",
+      "description": "Buy Facebook Post Likes by choosing the package and quantity you want for a specific eligible public Facebook post. Compare the available Post Like packages and prices, select the number of likes you want, provide the correct public Facebook post URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.",
+      "purpose": "Convert for Facebook post likes packages worldwide",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post",
+        "Buy Likes on Facebook Post",
+        "Can You Buy Facebook Post Likes"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose a Facebook Post Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-post-trust-url",
+          "label": "Public Facebook Post URL Only"
+        },
+        {
+          "id": "fb-post-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-post-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "fb-post-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp",
+        "alt": "Facebook post preview with rising post likes and engagement analytics illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Facebook Post Likes Packages & Pricing",
+      "description": "Compare the available Facebook Post Like packages, quantities, and prices before ordering. Choose the number of Post Likes you want for a specific eligible public Facebook post, review the current package price, and add your selected package to the cart when you are ready.",
+      "purpose": "Present real NovaLikes.com Facebook post likes packages",
+      "primaryKeyword": "Facebook Post Likes",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Continue With This Package",
+      "emptyMessage": "Facebook Post Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-post-likes",
+      "title": "Why Do People Buy Facebook Post Likes?",
+      "description": "People buy Facebook Post Likes to strengthen social proof on individual posts and create a stronger first impression for new viewers. Higher Like counts can make posts appear more active and encourage additional interactions, but they do not guarantee increased reach, sales or organic performance.",
+      "purpose": "Explain motivations for buying Facebook post likes",
+      "primaryKeyword": "Increase Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Post Engagement"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-post-product-launch",
+          "title": "Product Launches",
+          "description": "Businesses often use Post Like packages to strengthen engagement around product launches and promotional announcements."
+        },
+        {
+          "id": "fb-post-social-proof",
+          "title": "Build Social Proof",
+          "description": "Public interaction can help a Facebook post appear more active when people first discover it."
+        },
+        {
+          "id": "fb-post-campaign",
+          "title": "Campaign Support",
+          "description": "Marketing campaigns often use Post Likes alongside paid advertising and regular publishing."
+        },
+        {
+          "id": "fb-post-flexible",
+          "title": "Flexible Packages",
+          "description": "Choose the quantity that matches your campaign instead of selecting more engagement signals than your content naturally supports."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-post-likes",
+      "title": "Why Choose NovaLikes for Facebook Post Likes?",
+      "description": "",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-post-likes-delivery",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Post Likes",
+      "description": "Buying Facebook Post Likes is a simple process. Select the package that fits your campaign, copy the public URL of your Facebook post, review your order details and complete secure checkout. You do not need to provide your Facebook password, and you can track your order after confirmation.",
+      "purpose": "Explain the five-step Facebook Post Likes ordering process",
+      "primaryKeyword": "how to buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-post-step-1",
+          "title": "Choose Your Package",
+          "description": "Compare available Post Like packages and choose the quantity that best matches your content, campaign goals and existing engagement."
+        },
+        {
+          "id": "fb-post-step-2",
+          "title": "Paste Your Public Facebook Post URL",
+          "description": "Copy the public URL of the Facebook post that should receive the selected Like package. Make sure the post remains publicly accessible during processing."
+        },
+        {
+          "id": "fb-post-step-3",
+          "title": "Review Your Order",
+          "description": "Verify your selected package, Facebook post URL and pricing before completing checkout."
+        },
+        {
+          "id": "fb-post-step-4",
+          "title": "Complete Secure Checkout",
+          "description": "Finish your purchase using secure checkout without sharing your Facebook login credentials."
+        },
+        {
+          "id": "fb-post-step-5",
+          "title": "Track Delivery",
+          "description": "Follow your available order updates to monitor the progress of your Facebook Post Like package from confirmation through completion."
+        }
+      ],
+      "cta": {
+        "label": "Choose Your Post Likes Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "post-link-and-delivery",
+      "title": "What Do You Need to Place an Order?",
+      "description": "Ordering Facebook Post Likes only requires a few public details. Private account information, passwords and verification codes are never requested during checkout.",
+      "purpose": "Explain post URL and order requirements",
+      "primaryKeyword": "Facebook Post Likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-post-req-url",
+          "title": "Public Facebook Post URL",
+          "description": "Provide the public URL of the Facebook post receiving the selected Like package."
+        },
+        {
+          "id": "fb-post-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that best matches your campaign objectives and current engagement level."
+        },
+        {
+          "id": "fb-post-req-public",
+          "title": "Public Post Access",
+          "description": "Keep the selected Facebook post publicly available while your order is being processed."
+        },
+        {
+          "id": "fb-post-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive order confirmations, delivery updates and customer support if required."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-post-likes-reviews",
+      "title": "What Customers Say About NovaLikes",
+      "description": "Customer reviews for this NovaLikes service.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-post-likes-faq",
+      "title": "Frequently Asked Questions About Buying Facebook Post Likes",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "faqIds": [
+        "faq-fb-post-likes-need",
+        "faq-fb-post-likes-package",
+        "faq-fb-post-likes-password",
+        "faq-fb-post-likes-how-long",
+        "faq-fb-post-likes-track",
+        "faq-fb-post-likes-wrong-url",
+        "faq-fb-post-likes-other-metrics",
+        "faq-fb-post-likes-public"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-post-likes",
+      "title": "Explore More Facebook Growth Services",
+      "description": "Facebook Post Likes are only one part of building a stronger Facebook presence. Explore our additional Facebook services designed to support different growth objectives.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-page-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-post-likes-final-cta",
+      "title": "Choose Your Facebook Post Likes Package",
+      "description": "Compare the available Post Like quantities and prices, choose the package that fits the Facebook post you want to use, and place your order with the correct public Facebook post URL.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "View Facebook Post Likes Packages",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "buy-facebook-post-likes-why-choose",
+        "title": "Why Choose NovaLikes for Facebook Post Likes?",
+        "description": "NovaLikes makes it easy to compare Facebook Post Like packages before you order. Choose the Post Like quantity you want, provide the correct public Facebook post URL, review the package price, and use order tracking after checkout to check available status information.",
+        "items": [
+          {
+            "id": "buy-facebook-post-likes-0",
+            "title": "Multiple Post Like Quantities",
+            "description": "Compare the available Facebook Post Like quantities and choose the package that matches the number of likes you want to order for the selected post.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-post-likes-1",
+            "title": "Public Facebook Post URL Only",
+            "description": "Provide the correct public Facebook post URL for the post where you want the likes added. Your Facebook password is not required.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-post-likes-2",
+            "title": "Review Before Checkout",
+            "description": "Check the selected Post Like quantity and current package price before adding your order to the cart and completing checkout.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-post-likes-3",
+            "title": "Order Tracking",
+            "description": "Use the available tracking option after checkout to check status information for your Facebook Post Likes order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-post-likes-can-you-buy",
+        "title": "Can You Buy Facebook Post Likes?",
+        "description": "Yes. Facebook Post Like packages can be purchased through online Post Like services. With NovaLikes, you choose an available Post Likes package, provide the public Facebook post URL for the post you want to use, and complete your order through the website.",
+        "cards": [
+          {
+            "id": "buy-facebook-post-likes-4",
+            "title": "What a Facebook Post Likes Order Changes",
+            "description": "A Facebook Post Likes order applies to the like count on the public Facebook post submitted with the order. It does not automatically add Followers, Page Likes, comments, shares, or views.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-post-likes-5",
+            "title": "What You Need to Place an Order",
+            "description": "You need the correct public Facebook post URL and the Post Likes package you want to purchase. Your Facebook password is not required.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-post-likes-6",
+            "title": "What Facebook Post Likes Do Not Include",
+            "description": "Post Likes are separate from Facebook Followers, Page Likes, comments, shares, and views. Ordering Post Likes does not automatically add those other metrics or guarantee additional reach, sales, or organic growth.",
+            "icon": "megaphone"
+          }
+        ],
+        "closingNote": "Before checkout, make sure you have selected Facebook Post Likes, chosen the correct Post Like quantity, and provided the URL for the exact public Facebook post where you want the likes added."
+      },
+      "doesBuyingHelp": {
+        "id": "buy-facebook-post-likes-does-buying-help",
+        "title": "",
+        "description": "",
+        "helpTitle": "",
+        "helpItems": [],
+        "limitTitle": "",
+        "limitItems": [],
+        "closingNote": ""
+      },
+      "whatHappens": {
+        "id": "buy-facebook-post-likes-what-happens",
+        "title": "What Happens After You Buy Facebook Post Likes?",
+        "description": "After you place a Facebook Post Likes order, the Post Likes package and public Facebook post URL you submitted are used to process the order for the selected post. Keep the post publicly accessible where required while the order is being handled.",
+        "steps": [
+          {
+            "id": "buy-facebook-post-likes-th-1",
+            "title": "Your Order Details Are Checked",
+            "description": "The selected Post Likes package, quantity, and submitted Facebook post URL are associated with your order so the request can be processed for the intended post."
+          },
+          {
+            "id": "buy-facebook-post-likes-th-2",
+            "title": "Post Likes Go to the Submitted Post",
+            "description": "The order applies to the Facebook post connected to the URL you provided. Check the post URL carefully before completing checkout."
+          },
+          {
+            "id": "buy-facebook-post-likes-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "The time needed to process an order can vary depending on the Post Like quantity and current order conditions. One fixed delivery time should not be expected for every package."
+          },
+          {
+            "id": "buy-facebook-post-likes-th-4",
+            "title": "Check Your Order Status",
+            "description": "Use NovaLikes order tracking for available status updates. If you need help, contact support with the relevant order information."
+          }
+        ],
+        "closingNote": "Avoid deleting the submitted post, making it unavailable, or changing anything that prevents access to it while the order is being processed. If something changes after ordering, contact support if you need assistance."
+      },
+      "serviceCompare": {
+        "id": "buy-facebook-post-likes-service-compare",
+        "title": "Facebook Post Likes vs Other Facebook Services",
+        "description": "Facebook Post Likes, Facebook Page Likes, and Facebook Followers represent different metrics. Choose the service based on whether you want to change the like count on a specific post, the Page Like count, or the follower count on a Facebook Page.",
+        "current": {
+          "title": "Facebook Post Likes",
+          "description": "Post Likes are a post-level metric. Choose Facebook Post Likes when the like count on a specific eligible public Facebook post is the metric you want to change.",
+          "bestFor": "Individual Facebook posts where the visible like count is the metric you want to change.",
+          "ctaLabel": "Facebook Post Likes"
+        },
+        "likes": {
+          "title": "Facebook Followers",
+          "description": "Followers are a Page-level metric. Choose Facebook Followers when you want to increase the follower count shown on a public Facebook Page.",
+          "bestFor": "Facebook Pages where follower count is the metric you want to change.",
+          "href": "/buy-facebook-followers",
+          "ctaLabel": "View Facebook Followers"
+        },
+        "views": {
+          "title": "Facebook Page Likes",
+          "description": "Page Likes are a separate Page-level metric. Choose Facebook Page Likes when the Page Like count on a public Facebook Page is the metric you want to change.",
+          "bestFor": "Facebook Pages where Page Like count is the metric you want to change.",
+          "href": "/buy-facebook-page-likes",
+          "ctaLabel": "View Facebook Page Likes"
+        },
+        "combinedNote": "Choose the Facebook service that matches the exact metric you want to change before placing an order.",
+        "commentsHref": "/buy-facebook-followers"
+      },
+      "beforeBuying": {
+        "id": "buy-facebook-post-likes-before-buying",
+        "title": "What to Check Before Buying Facebook Post Likes",
+        "description": "Before you buy Facebook Post Likes, review the package and post details before completing your order. Make sure the Post Like quantity, price, Facebook post URL, and selected service match what you want for the specific post.",
+        "framingNote": "Check the submitted Facebook post URL, Post Like quantity, and price one more time before checkout. Avoid relying on claims that buying Post Likes will guarantee comments, shares, followers, Page Likes, reach, sales, or organic growth.",
+        "items": [
+          {
+            "id": "buy-facebook-post-likes-7",
+            "title": "Check the Post Like Quantity",
+            "description": "Review the number of Facebook Post Likes included in the package so you know how many you are ordering for the submitted post.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-post-likes-8",
+            "title": "Confirm the Package Price",
+            "description": "Check the current price shown for your selected Post Likes package before adding it to the cart. If you change the quantity, review the updated price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-post-likes-9",
+            "title": "Use the Correct Facebook Post URL",
+            "description": "Check the public Facebook post URL carefully so the order is associated with the exact post where you want the likes added.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-post-likes-10",
+            "title": "Choose the Right Facebook Service",
+            "description": "Post Likes, Page Likes, and Followers are separate metrics. Check that Facebook Post Likes is the service you need before placing the order.",
+            "icon": "truck"
+          },
+          {
+            "id": "buy-facebook-post-likes-11",
+            "title": "Review Support and Policies",
+            "description": "Check the relevant purchase policies and available support options so you know where to look if you have a question about your order.",
+            "icon": "users"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "buy-facebook-post-likes-worldwide",
+        "title": "Choosing the Right Facebook Post for Likes",
+        "description": "Facebook Post Likes applies to one specific eligible public Facebook post. The Page itself and the individual post are different targets, so check the submitted URL carefully.",
+        "eyebrow": "Ready for Facebook Post Likes",
+        "closingNote": "Facebook Post Likes applies to a specific public Facebook post. Submit the post URL rather than only the Page URL, keep the post available, and review the package before checkout.",
+        "cards": [
+          {
+            "id": "buy-facebook-post-likes-12",
+            "title": "Use the Specific Post URL",
+            "description": "Submit the public URL of the individual Facebook post where you want the Post Likes package applied.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-post-likes-13",
+            "title": "Do Not Submit Only the Page URL",
+            "description": "A general Facebook Page URL is not the correct target for a Post Likes order.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-post-likes-14",
+            "title": "Keep the Post Available",
+            "description": "Avoid deleting or restricting the submitted post while the active order requires access to it.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-post-likes-15",
+            "title": "Review Your Post Like Package",
+            "description": "Check the Post Like quantity, submitted post URL and price before completing checkout.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "buy-facebook-post-likes-popular-packages",
+        "title": "Popular Facebook Post Likes Packages",
+        "description": "Compare some of the Facebook Post Like quantities available on NovaLikes below, or return to the full pricing section to see all available package options.",
+        "rows": [
+          {
+            "id": "fb-post-100",
+            "quantity": "100 Post Likes",
+            "recommendedFor": "A smaller package for a specific public Facebook post where you want to add one hundred likes."
+          },
+          {
+            "id": "fb-post-500",
+            "quantity": "500 Post Likes",
+            "recommendedFor": "A smaller-to-mid-range option for a public Facebook post where you want to add five hundred likes."
+          },
+          {
+            "id": "fb-post-1000",
+            "quantity": "1,000 Post Likes",
+            "recommendedFor": "A mid-range package for a public Facebook post where you want to add one thousand likes."
+          },
+          {
+            "id": "fb-post-5000",
+            "quantity": "5,000 Post Likes",
+            "recommendedFor": "A larger option for a public Facebook post where you want to add five thousand likes."
+          },
+          {
+            "id": "fb-post-10000",
+            "quantity": "10,000 Post Likes",
+            "recommendedFor": "A higher-volume package for a public Facebook post where you want to add ten thousand likes."
+          }
+        ]
+      },
+      "bestPractices": {
+        "id": "buy-facebook-post-likes-best-practices",
+        "title": "Best Practices After Buying Facebook Post Likes",
+        "description": "Buying Post Likes changes the like count on the selected Facebook post, but the rest of your Facebook activity still depends on the content you publish and how you manage your Page. Continue managing your content and review how your own posts perform alongside the service.",
+        "closingNote": "Post Like count is only one metric on a specific Facebook post. Comments, shares, followers, Page Likes, audience responses, and other activity remain separate from a Facebook Post Likes order.",
+        "items": [
+          {
+            "id": "buy-facebook-post-likes-16",
+            "title": "Keep Publishing",
+            "description": "Continue publishing Facebook posts that fit your business, brand, topic, or the audience you want to reach.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "buy-facebook-post-likes-17",
+            "title": "Keep Your Page Information Updated",
+            "description": "Review your Facebook Page information, contact details, website, and other relevant public details when needed.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "buy-facebook-post-likes-18",
+            "title": "Create Relevant Content",
+            "description": "Plan future posts around topics and formats that make sense for your Page and the audience you want to reach.",
+            "icon": "lock"
+          },
+          {
+            "id": "buy-facebook-post-likes-19",
+            "title": "Review Available Insights",
+            "description": "If insights are available, review post performance, engagement, and other available data to understand how your own content performs.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "buy-facebook-post-likes-20",
+            "title": "Use Different Content Formats",
+            "description": "Test different post formats, images, videos, topics, and publishing approaches to learn what works for your Facebook presence.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "buy-facebook-post-likes-21",
+            "title": "Respond to Genuine Interaction",
+            "description": "Reply to genuine comments and messages when appropriate. A higher like count on one post does not replace the interactions you build through your own Facebook activity.",
+            "icon": "truck"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "buy-facebook-post-likes-common-mistakes",
+        "title": "Common Mistakes When Buying Facebook Post Likes",
+        "description": "A few simple mistakes can cause problems with a Facebook Post Likes order. Check the post URL, Post Like quantity, selected service, and expectations before checkout so you know exactly what you are ordering.",
+        "closingNote": "Before placing an order, check the Facebook post URL, Post Like quantity, and price one more time. If something changes after checkout, use the available tracking or support options for your order.",
+        "items": [
+          {
+            "id": "buy-facebook-post-likes-22",
+            "title": "Submitting the Wrong Facebook Post URL",
+            "description": "Check the public Facebook post URL carefully before ordering. The URL should point to the exact post where you want the likes added.",
+            "icon": "users"
+          },
+          {
+            "id": "buy-facebook-post-likes-23",
+            "title": "Choosing the Wrong Facebook Service",
+            "description": "Post Likes, Page Likes, and Followers are separate services. Choose Facebook Post Likes only when the like count on a specific post is the metric you want to change.",
+            "icon": "heart"
+          },
+          {
+            "id": "buy-facebook-post-likes-24",
+            "title": "Selecting the Wrong Post Like Quantity",
+            "description": "Review the number of Post Likes included in your selected package before checkout so you do not order a different quantity from the one you intended.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "buy-facebook-post-likes-25",
+            "title": "Making the Post Unavailable During an Order",
+            "description": "Avoid deleting the submitted post or making it unavailable while the order is being processed.",
+            "icon": "headphones"
+          },
+          {
+            "id": "buy-facebook-post-likes-26",
+            "title": "Expecting Post Likes to Guarantee Other Results",
+            "description": "A higher like count on a post does not automatically mean more comments, shares, followers, Page Likes, reach, sales, or organic growth.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "buy-facebook-post-likes-27",
+            "title": "Treating Post Likes as a Replacement for Content",
+            "description": "Buying Post Likes changes one metric on the submitted post. Your publishing decisions, future content, replies, and other Facebook activity still depend on how you manage your presence.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Facebook Followers",
+            "description": "Choose Facebook Followers when the follower count on a public Facebook Page is the metric you want to change.",
+            "ctaLabel": "View Facebook Followers"
+          },
+          "buy-facebook-page-likes": {
+            "title": "Facebook Page Likes",
+            "description": "Choose Facebook Page Likes when the Page Like count on a public Facebook Page is the metric you want to change.",
+            "ctaLabel": "View Facebook Page Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "buy-facebook-post-likes-why-buy",
+      "title": "Why Do People Buy Facebook Post Likes?",
+      "description": "People buy Facebook Post Likes for different reasons. Some want to increase the visible like count on a specific Facebook post, while others choose a Post Likes package for content connected to a launch, announcement, campaign, or ongoing Page activity. The service changes the like count on the submitted post, but it does not guarantee comments, shares, followers, Page Likes, reach, sales, or organic growth.",
+      "items": [
+        {
+          "id": "buy-facebook-post-likes-wb-1",
+          "title": "Increase the Visible Like Count",
+          "description": "A Facebook Post Likes package can be used when you want to increase the like count displayed on a specific eligible public Facebook post."
+        },
+        {
+          "id": "buy-facebook-post-likes-wb-2",
+          "title": "Use Post Likes Around Specific Content",
+          "description": "Page owners may choose a Post Likes package for a particular post connected to a launch, announcement, campaign, or other Facebook activity."
+        },
+        {
+          "id": "buy-facebook-post-likes-wb-3",
+          "title": "Focus on the Post Like Metric",
+          "description": "Facebook Post Likes applies to the like count on the submitted post. It does not automatically add Facebook Followers, Page Likes, comments, shares, or views."
+        },
+        {
+          "id": "buy-facebook-post-likes-wb-4",
+          "title": "Choose the Quantity You Want",
+          "description": "Different package sizes let you select the number of Facebook Post Likes you want to order for the submitted post."
+        },
+        {
+          "id": "buy-facebook-post-likes-wb-5",
+          "title": "Use Post Likes Alongside Your Content",
+          "description": "Buying Post Likes does not replace publishing or managing your own Facebook content. Posts, replies, Page information, and other activity still depend on how you manage your Facebook presence."
+        }
+      ],
+      "bottomNote": "If Facebook Followers or Page Likes are the metric you want to change instead, choose the corresponding Facebook service rather than a Post Likes package."
+    },
+    "howToBuy": {
+      "id": "how-it-works",
+      "title": "How to Buy Facebook Post Likes",
+      "description": "Buying Facebook Post Likes through NovaLikes takes four steps. Choose the Post Likes package you want, provide the public Facebook post URL, complete checkout, and use your order details to check its status.",
+      "steps": [
+        {
+          "id": "buy-facebook-post-likes-step-1",
+          "title": "Choose Your Post Likes Package",
+          "description": "Compare the available Facebook Post Like quantities and prices, then select the package you want for the post."
+        },
+        {
+          "id": "buy-facebook-post-likes-step-2",
+          "title": "Enter the Facebook Post URL",
+          "description": "Provide the correct public Facebook post URL for the post where you want the likes added. Your Facebook password is not required."
+        },
+        {
+          "id": "buy-facebook-post-likes-step-3",
+          "title": "Complete Your Order",
+          "description": "Review the selected Post Like quantity and price, then continue through checkout to place your order."
+        },
+        {
+          "id": "buy-facebook-post-likes-step-4",
+          "title": "Track Your Order",
+          "description": "After checkout, use the available order tracking option to check status information for your Facebook Post Likes order."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Facebook Services",
+    "relatedIntro": "Post Likes are only one Facebook metric. If you want to increase the follower count or Page Like count on a Facebook Page instead, compare the other Facebook services below."
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "cookie-policy",
+  "path": "/cookie-policy",
+  "seo": {
+    "title": "Política de cookies | NovaLikes",
+    "description": "Consulta cómo NovaLikes usa cookies y tecnologías similares para la funcionalidad del sitio web, la seguridad, las preferencias y otros fines aplicables."
+  },
+  "breadcrumbLabel": "Política de cookies",
+  "header": {
+    "title": "Política de cookies",
+    "intro": "Esta Política de cookies explica cómo NovaLikes usa cookies y tecnologías similares cuando visitas y usas nuestro sitio web."
+  },
+  "tocTitle": "En esta página",
+  "sections": [
+    {
+      "id": "what-are-cookies",
+      "anchor": "what-are-cookies",
+      "title": "1. ¿Qué son las cookies?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las cookies son pequeños archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Las tecnologías similares pueden incluir almacenamiento local, almacenamiento de sesión y almacenamiento comparable del navegador usado para recordar información necesaria para que el sitio funcione."
+        }
+      ]
+    },
+    {
+      "id": "how-novalikes-uses-cookies",
+      "anchor": "how-novalikes-uses-cookies",
+      "title": "2. Cómo usa las cookies NovaLikes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes usa cookies y tecnologías similares solo para fines que coinciden con la funcionalidad actual del sitio web."
+        },
+        {
+          "type": "subheading",
+          "id": "strictly-necessary-cookies",
+          "text": "Cookies estrictamente necesarias"
+        },
+        {
+          "type": "paragraph",
+          "text": "Las cookies estrictamente necesarias y las tecnologías similares respaldan el funcionamiento esencial del sitio web."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Carrito: Mantiene los paquetes seleccionados y el contenido del carrito mientras compras y te desplazas entre los hosts de compra y de pago. Usa la cookie de origen iv_cart_v1 (hasta 7 días) y una caché de carrito en sessionStorage del navegador.",
+            "Pago: Admite la continuidad del proceso de pago para que un pedido pueda completarse después de la selección y configuración del paquete.",
+            "Sesión: Admite la continuidad de navegación para el carrito y los flujos comerciales relacionados. No se requieren cuentas de cliente para realizar un pedido.",
+            "Seguridad: Admite el funcionamiento del sitio web relacionado con la seguridad, incluida la protección de la sesión administrativa del personal cuando corresponda. El acceso de administración del personal puede usar una cookie iv_admin_session. Esta no es una cookie de inicio de sesión de cliente."
+          ]
+        },
+        {
+          "type": "subheading",
+          "id": "named-first-party-technologies",
+          "text": "Tecnologías de origen con nombre usadas actualmente"
+        },
+        {
+          "type": "list",
+          "items": [
+            "iv_cart_v1 — cookie de carrito de origen usada para la transferencia del carrito (hasta 7 días), junto con una caché de carrito en sessionStorage",
+            "iv_admin_session — cookie de sesión administrativa del personal para el acceso de administración de NovaLikes (no es una cookie de cuenta de cliente)",
+            "novalikes.analytics.consent.v1 — clave de localStorage del navegador usada para almacenar preferencias de consentimiento de analítica para posibles scripts de analítica futuros"
+          ]
+        },
+        {
+          "type": "subheading",
+          "id": "functional-cookies",
+          "text": "Cookies funcionales"
+        },
+        {
+          "type": "paragraph",
+          "text": "Más allá de los fines esenciales de carrito, pago, sesión y seguridad enumerados arriba, NovaLikes no mantiene actualmente un inventario independiente de cookies de preferencia funcionales opcionales."
+        },
+        {
+          "type": "subheading",
+          "id": "analytics-cookies",
+          "text": "Cookies de analítica"
+        },
+        {
+          "type": "paragraph",
+          "text": "En la configuración de NovaLikes no hay habilitadas actualmente cookies de analítica con nombre ni proveedores de analítica. Los adaptadores de analítica opcionales (como integraciones condicionadas por el entorno) no se tratan como activos hasta que se habiliten en la implementación con los identificadores requeridos."
+        },
+        {
+          "type": "subheading",
+          "id": "advertising-marketing-cookies",
+          "text": "Cookies de publicidad / marketing"
+        },
+        {
+          "type": "paragraph",
+          "text": "En la configuración de NovaLikes no hay habilitados actualmente píxeles de publicidad, remarketing o marketing."
+        }
+      ]
+    },
+    {
+      "id": "third-party-cookies",
+      "anchor": "third-party-cookies",
+      "title": "3. Cookies de terceros",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cuando completas el pago con Pago con tarjeta, es posible que se te redirija a un colector de pagos de terceros. Ese entorno de pago puede establecer sus propias cookies según las prácticas del proveedor de pago. NovaLikes no controla esas cookies de terceros."
+        },
+        {
+          "type": "paragraph",
+          "text": "En la configuración de NovaLikes no hay habilitadas actualmente cookies de analítica o publicidad de terceros."
+        }
+      ]
+    },
+    {
+      "id": "cookie-duration",
+      "anchor": "cookie-duration",
+      "title": "4. Duración de las cookies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las tecnologías de sesión suelen durar solo durante la sesión de navegación o hasta que se borre el almacenamiento. Las cookies persistentes pueden permanecer durante un período definido."
+        },
+        {
+          "type": "paragraph",
+          "text": "La cookie de carrito iv_cart_v1 está configurada con una edad máxima de hasta 7 días. Las duraciones exactas de otras tecnologías pueden variar según la configuración del navegador y las necesidades operativas. NovaLikes no inventa duraciones exactas adicionales más allá de lo verificado en la aplicación."
+        }
+      ]
+    },
+    {
+      "id": "managing-cookies",
+      "anchor": "managing-cookies",
+      "title": "5. Gestión de cookies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Puedes controlar las cookies a través de la configuración de tu navegador, incluida la opción de bloquearlas o eliminarlas."
+        },
+        {
+          "type": "paragraph",
+          "text": "NovaLikes no proporciona actualmente un banner público de consentimiento de cookies ni una interfaz de centro de preferencias. Los controles del navegador siguen disponibles para gestionar las cookies."
+        }
+      ]
+    },
+    {
+      "id": "effect-of-disabling-cookies",
+      "anchor": "effect-of-disabling-cookies",
+      "title": "6. Efecto de desactivar las cookies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Desactivar las cookies necesarias o el almacenamiento relacionado puede afectar la funcionalidad del sitio, incluida la continuidad del carrito y la transferencia del proceso de pago entre los flujos de compra y de pago."
+        }
+      ]
+    },
+    {
+      "id": "updates",
+      "anchor": "updates",
+      "title": "7. Actualizaciones",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NovaLikes puede actualizar esta Política de cookies cuando cambien las prácticas de cookies. La fecha de Última actualización en la parte superior de esta página reflejará las revisiones sustanciales."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "anchor": "contact",
+      "title": "8. Contacto",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las preguntas sobre esta Política de cookies pueden enviarse a través de la página de [Contacto](/contact)."
+        },
+        {
+          "type": "paragraph",
+          "text": "También puedes enviar un correo a support@novalikes.com."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consulta también la [Política de privacidad](/privacy-policy)."
+        }
+      ]
+    }
+  ]
+}

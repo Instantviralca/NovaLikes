@@ -5,7 +5,6 @@ import {
   type FacebookDashboardVariant,
   type InstagramDashboardVariant,
   type TikTokDashboardVariant,
-  type YouTubeDashboardVariant,
 } from '@/components/illustrations/dashboards';
 import { cn } from '@/lib/utils';
 import type { PlatformId } from '@/types/platform';
@@ -22,7 +21,6 @@ type HeroVisualStackProps = {
   packagePreview?: { title: string; priceLabel: string } | null;
   instagramVariant?: InstagramDashboardVariant;
   tiktokVariant?: TikTokDashboardVariant;
-  youtubeVariant?: YouTubeDashboardVariant;
   facebookVariant?: FacebookDashboardVariant;
 };
 
@@ -44,7 +42,6 @@ export function HeroVisualStack({
   packagePreview,
   instagramVariant,
   tiktokVariant,
-  youtubeVariant,
   facebookVariant,
 }: HeroVisualStackProps) {
   if (isRasterHeroSrc(src)) {
@@ -73,9 +70,6 @@ export function HeroVisualStack({
     (tiktokVariant === 'followers' ||
       tiktokVariant === 'likes' ||
       tiktokVariant === 'views');
-  const isYouTubeHero =
-    platform === 'youtube' &&
-    (youtubeVariant === 'subscribers' || youtubeVariant === 'views');
   const isFacebookHero =
     platform === 'facebook' &&
     (facebookVariant === 'followers' || facebookVariant === 'page-likes' || facebookVariant === 'post-likes');
@@ -90,7 +84,7 @@ export function HeroVisualStack({
             : 'min-h-[18rem] px-4 py-4 sm:min-h-[20.5rem] sm:px-6 sm:py-5 lg:min-h-[22rem] lg:px-8'
           : isTikTokPhoneHero
             ? 'min-h-[18.5rem] px-3 py-2 sm:min-h-[21rem] sm:px-4 sm:py-3 lg:min-h-[22.5rem] lg:px-5'
-            : isYouTubeHero || isFacebookHero
+            : isFacebookHero
               ? 'min-h-[20rem] px-3 py-2 sm:min-h-[22.5rem] sm:px-4 sm:py-3 lg:min-h-[24rem] lg:px-5'
               : 'min-h-[22rem] sm:min-h-[24rem]',
         className,
@@ -102,7 +96,6 @@ export function HeroVisualStack({
         packagePreview={packagePreview}
         instagramVariant={instagramVariant}
         tiktokVariant={tiktokVariant}
-        youtubeVariant={youtubeVariant}
         facebookVariant={facebookVariant}
       />
     </div>

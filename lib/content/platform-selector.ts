@@ -1,5 +1,6 @@
 import { platformHubPath } from '@/config/routes';
 import { getHomepageContent } from '@/data/content/homepage';
+import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getPlatformById } from '@/data/platforms';
 import { getPlatformServices, getServiceBySlug } from '@/data/services';
 import type { HomepageContent, PlatformSelectorCardContent } from '@/types/content';
@@ -37,6 +38,7 @@ function resolvePreviewServices(
     return card.previewServiceSlugs
       .map((slug) => getServiceBySlug(slug))
       .filter((service): service is Service => Boolean(service))
+      .filter((service) => isApprovedServiceSlug(service.slug) && !service.comingSoon)
       .slice(0, limit)
       .map((service) => ({
         id: service.id,
@@ -46,7 +48,7 @@ function resolvePreviewServices(
   }
 
   return getPlatformServices(platformId)
-    .filter((service) => !service.comingSoon)
+    .filter((service) => isApprovedServiceSlug(service.slug) && !service.comingSoon)
     .slice(0, limit)
     .map((service) => ({
       id: service.id,
