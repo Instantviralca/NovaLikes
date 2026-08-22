@@ -83,7 +83,7 @@ describe('Sitemap & Robots Finalization', () => {
     expect(validateSitemapUrl('https://novalikes.com/faq/').valid).toBe(false);
     expect(validateSitemapUrl('https://novalikes.com/').valid).toBe(true);
     expect(
-      validateSitemapUrl('https://novalikes.com/ar/شراء-متابعين-انستغرام').valid,
+      validateSitemapUrl('https://novalikes.com/ar/buy-instagram-followers').valid,
     ).toBe(true);
     expect(validateSitemapUrl('https://novalikes.com/FAQ').valid).toBe(false);
   });

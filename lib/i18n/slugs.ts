@@ -1,9 +1,14 @@
 /**
  * Central typed permalink dictionary.
  *
- * English commercial slugs never change. Every other locale uses one
- * native-language slug per page. Routing, links, canonicals, hreflang,
- * sitemap, breadcrumbs, and the language switcher must all consume this map.
+ * English commercial slugs never change.
+ * Spanish / German / French / Italian / PT-BR use native-language slugs.
+ * Arabic public permalinks reuse the English canonical slugs under `/ar/…`
+ * (page content stays Arabic + RTL). Retired Arabic-script slugs redirect
+ * one hop to the English-slug Arabic URL.
+ *
+ * Routing, links, canonicals, hreflang, sitemap, breadcrumbs, and the
+ * language switcher must all consume this map.
  */
 
 import {
@@ -90,6 +95,42 @@ export const ENGLISH_SLUGS: Record<PageKey, string> = {
   'tiktok-profile-picture-downloader': 'tools/tiktok-profile-picture-downloader',
   'facebook-video-downloader': 'tools/facebook-video-downloader',
   'facebook-reels-downloader': 'tools/facebook-reels-downloader',
+};
+
+/**
+ * Retired Arabic-script public slugs. Kept only so old `/ar/…` URLs resolve
+ * and permanently redirect to the English-slug Arabic permalinks.
+ */
+export const LEGACY_ARABIC_SLUGS: Record<PageKey, string> = {
+  home: '',
+  faq: 'الأسئلة-الشائعة',
+  about: 'من-نحن',
+  contact: 'اتصل-بنا',
+  reviews: 'التقييمات',
+  'privacy-policy': 'سياسة-الخصوصية',
+  'refund-policy': 'سياسة-الاسترداد',
+  'terms-and-conditions': 'الشروط-والأحكام',
+  'cookie-policy': 'سياسة-ملفات-الارتباط',
+  disclaimer: 'إخلاء-المسؤولية',
+  'instagram-followers': 'شراء-متابعين-انستغرام',
+  'instagram-likes': 'شراء-إعجابات-انستغرام',
+  'instagram-views': 'شراء-مشاهدات-انستغرام',
+  'instagram-comments': 'شراء-تعليقات-انستغرام',
+  'tiktok-followers': 'شراء-متابعين-تيك-توك',
+  'tiktok-likes': 'شراء-إعجابات-تيك-توك',
+  'tiktok-views': 'شراء-مشاهدات-تيك-توك',
+  'facebook-followers': 'شراء-متابعين-فيسبوك',
+  'facebook-page-likes': 'شراء-إعجابات-صفحة-فيسبوك',
+  'facebook-post-likes': 'شراء-إعجابات-منشور-فيسبوك',
+  tools: 'أدوات',
+  'instagram-profile-picture-viewer': 'أدوات/عرض-صورة-الملف-انستغرام',
+  'instagram-follower-counter': 'أدوات/عداد-متابعين-انستغرام',
+  'instagram-profile-viewer': 'أدوات/عرض-ملف-انستغرام',
+  'instagram-video-downloader': 'أدوات/تنزيل-فيديو-انستغرام',
+  'tiktok-video-downloader': 'أدوات/تنزيل-فيديو-تيك-توك',
+  'tiktok-profile-picture-downloader': 'أدوات/تنزيل-صورة-تيك-توك',
+  'facebook-video-downloader': 'أدوات/تنزيل-فيديو-فيسبوك',
+  'facebook-reels-downloader': 'أدوات/تنزيل-ريلز-فيسبوك',
 };
 
 export const LOCALIZED_SLUGS: Record<LocalizedLocale, Record<PageKey, string>> = {
@@ -248,37 +289,8 @@ export const LOCALIZED_SLUGS: Record<LocalizedLocale, Record<PageKey, string>> =
     'facebook-video-downloader': 'ferramentas/baixar-videos-facebook',
     'facebook-reels-downloader': 'ferramentas/baixar-reels-facebook',
   },
-  ar: {
-    home: '',
-    faq: 'الأسئلة-الشائعة',
-    about: 'من-نحن',
-    contact: 'اتصل-بنا',
-    reviews: 'التقييمات',
-    'privacy-policy': 'سياسة-الخصوصية',
-    'refund-policy': 'سياسة-الاسترداد',
-    'terms-and-conditions': 'الشروط-والأحكام',
-    'cookie-policy': 'سياسة-ملفات-الارتباط',
-    disclaimer: 'إخلاء-المسؤولية',
-    'instagram-followers': 'شراء-متابعين-انستغرام',
-    'instagram-likes': 'شراء-إعجابات-انستغرام',
-    'instagram-views': 'شراء-مشاهدات-انستغرام',
-    'instagram-comments': 'شراء-تعليقات-انستغرام',
-    'tiktok-followers': 'شراء-متابعين-تيك-توك',
-    'tiktok-likes': 'شراء-إعجابات-تيك-توك',
-    'tiktok-views': 'شراء-مشاهدات-تيك-توك',
-    'facebook-followers': 'شراء-متابعين-فيسبوك',
-    'facebook-page-likes': 'شراء-إعجابات-صفحة-فيسبوك',
-    'facebook-post-likes': 'شراء-إعجابات-منشور-فيسبوك',
-    tools: 'أدوات',
-    'instagram-profile-picture-viewer': 'أدوات/عرض-صورة-الملف-انستغرام',
-    'instagram-follower-counter': 'أدوات/عداد-متابعين-انستغرام',
-    'instagram-profile-viewer': 'أدوات/عرض-ملف-انستغرام',
-    'instagram-video-downloader': 'أدوات/تنزيل-فيديو-انستغرام',
-    'tiktok-video-downloader': 'أدوات/تنزيل-فيديو-تيك-توك',
-    'tiktok-profile-picture-downloader': 'أدوات/تنزيل-صورة-تيك-توك',
-    'facebook-video-downloader': 'أدوات/تنزيل-فيديو-فيسبوك',
-    'facebook-reels-downloader': 'أدوات/تنزيل-ريلز-فيسبوك',
-  },
+  // Arabic public URLs use English canonical slugs under `/ar/…`.
+  ar: { ...ENGLISH_SLUGS },
 };
 
 const ENGLISH_SLUG_TO_KEY = new Map<string, PageKey>();
@@ -295,6 +307,15 @@ for (const locale of LOCALIZED_LOCALES) {
     if (key === 'home') continue;
     map.set(LOCALIZED_SLUGS[locale][key], key);
   }
+  if (locale === 'ar') {
+    for (const key of PAGE_KEYS) {
+      if (key === 'home') continue;
+      const legacy = LEGACY_ARABIC_SLUGS[key];
+      if (legacy && legacy !== LOCALIZED_SLUGS.ar[key]) {
+        map.set(legacy, key);
+      }
+    }
+  }
   LOCALIZED_SLUG_TO_KEY[locale] = map;
 }
 
@@ -302,6 +323,12 @@ function assertRouteDictionary(): void {
   const englishServices = SERVICE_PAGE_KEYS.map((key) => ENGLISH_SLUGS[key]);
   if (englishServices.join(',') !== CORE_SERVICE_SLUGS.join(',')) {
     throw new Error('Route dictionary English service slugs drifted from CORE_SERVICE_SLUGS');
+  }
+
+  for (const key of PAGE_KEYS) {
+    if (LOCALIZED_SLUGS.ar[key] !== ENGLISH_SLUGS[key]) {
+      throw new Error(`Arabic permalink for ${key} must equal the English canonical slug`);
+    }
   }
 
   for (const locale of LOCALIZED_LOCALES) {
@@ -365,8 +392,9 @@ export type LegacyLocalizedRedirect = {
 };
 
 /**
- * Permanent redirects from the first-pass locale + English-slug URLs
- * to the final native permalinks. Query strings are preserved by Next.js.
+ * Permanent one-hop redirects:
+ * - es/de/fr/it/pt-br: locale + English slug → native permalink
+ * - ar: retired Arabic-script slug → `/ar/{english-slug}`
  */
 export function getLegacyLocalizedRedirects(): LegacyLocalizedRedirect[] {
   const redirects: LegacyLocalizedRedirect[] = [];
@@ -375,7 +403,20 @@ export function getLegacyLocalizedRedirects(): LegacyLocalizedRedirect[] {
       if (key === 'home') continue;
       const english = ENGLISH_SLUGS[key];
       const localized = LOCALIZED_SLUGS[locale][key];
-      if (!english || !localized || english === localized) continue;
+      if (!english || !localized) continue;
+
+      if (locale === 'ar') {
+        const legacy = LEGACY_ARABIC_SLUGS[key];
+        if (!legacy || legacy === localized) continue;
+        redirects.push({
+          source: encodeURI(`/${locale}/${legacy}`),
+          destination: `/${locale}/${localized}`,
+          permanent: true,
+        });
+        continue;
+      }
+
+      if (english === localized) continue;
       redirects.push({
         source: `/${locale}/${english}`,
         destination: encodeURI(`/${locale}/${localized}`),

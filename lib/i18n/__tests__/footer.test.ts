@@ -127,7 +127,7 @@ describe('localized footer', () => {
     expect(localizeHref('/privacy-policy', 'fr')).toBe('/fr/politique-de-confidentialite');
     expect(localizeHref('/privacy-policy', 'it')).toBe('/it/informativa-sulla-privacy');
     expect(localizeHref('/privacy-policy', 'pt-br')).toBe('/pt-br/politica-de-privacidade');
-    expect(localizeHref('/privacy-policy', 'ar')).toBe('/ar/سياسة-الخصوصية');
+    expect(localizeHref('/privacy-policy', 'ar')).toBe('/ar/privacy-policy');
     expect(localizeHref('/contact', 'de')).toBe('/de/kontakt');
     expect(localizeHref('/reviews', 'de')).toBe('/de/bewertungen');
     expect(localizeHref('/faq', 'de')).toBe('/de/haeufige-fragen');
@@ -144,8 +144,8 @@ describe('localized footer', () => {
     expect(localizeHref('/contact', 'pt-br')).toBe('/pt-br/contato');
     expect(localizeHref('/reviews', 'pt-br')).toBe('/pt-br/avaliacoes');
 
-    expect(localizeHref('/about', 'ar')).toBe('/ar/من-نحن');
-    expect(localizeHref('/contact', 'ar')).toBe('/ar/اتصل-بنا');
-    expect(localizeHref('/reviews', 'ar')).toBe('/ar/التقييمات');
+    expect(localizeHref('/about', 'ar')).toBe('/ar/about');
+    expect(localizeHref('/contact', 'ar')).toBe('/ar/contact');
+    expect(localizeHref('/reviews', 'ar')).toBe('/ar/reviews');
   });
 });

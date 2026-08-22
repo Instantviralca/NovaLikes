@@ -7,7 +7,7 @@
     "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "start:prod": "next start -H 127.0.0.1 -p 3000",
+    "start:prod": "next start -H localhost -p 3000",
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest",

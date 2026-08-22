@@ -116,7 +116,11 @@ describe('i18n sitemap', () => {
       for (const pathName of CORE_PATHS) {
         const url = absoluteUrl(localizeHref(pathName, locale));
         expect(urls).toContain(url);
-        expect(url.includes(`/${locale}/buy-`)).toBe(false);
+        // Native-slug locales must not publish English commercial slugs.
+        // Arabic intentionally reuses English canonical slugs under `/ar/…`.
+        if (locale !== 'ar') {
+          expect(url.includes(`/${locale}/buy-`)).toBe(false);
+        }
         localized += 1;
       }
     }
@@ -134,7 +138,8 @@ describe('i18n sitemap', () => {
     expect(urls).not.toContain(absoluteUrl('/es/reviews'));
     expect(urls).toContain(absoluteUrl('/es/politica-de-privacidad'));
     expect(urls).toContain(absoluteUrl('/de/datenschutz'));
-    expect(urls).toContain(absoluteUrl('/ar/سياسة-الخصوصية'));
+    expect(urls).toContain(absoluteUrl('/ar/privacy-policy'));
+    expect(urls).not.toContain(absoluteUrl('/ar/سياسة-الخصوصية'));
     expect(urls).not.toContain(absoluteUrl('/es/privacy-policy'));
     expect(urls).not.toContain(absoluteUrl('/cart'));
     expect(urls).not.toContain(absoluteUrl('/checkout'));

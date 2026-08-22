@@ -9,7 +9,7 @@ This document does **not** mean the server was already deployed.
 Canonical public hostname: **novalikes.com**  
 Redirect: **www.novalikes.com → novalikes.com** (one hop)
 
-Application process: Next.js on **127.0.0.1:3000** only (Nginx terminates HTTP/HTTPS).
+Application process: Next.js on **localhost:3000** only (Nginx terminates HTTP/HTTPS). Use `localhost` (not `127.0.0.1`) so localized `/i18n/…` internal rewrites proxy over plain HTTP.
 
 ---
 
@@ -20,7 +20,7 @@ Application process: Next.js on **127.0.0.1:3000** only (Nginx terminates HTTP/H
 | App | Next.js `^15.5.7` + React 19 |
 | Node | `>=20.9.0` (`package.json` engines) |
 | Package manager | npm (`package-lock.json`) |
-| Production start | `npm run start:prod` → `next start -H 127.0.0.1 -p 3000` |
+| Production start | `npm run start:prod` → `next start -H localhost -p 3000` |
 | ORM | Drizzle ORM + `postgres` driver |
 | Migrations | `drizzle/0001_init.sql` … `drizzle/0006_cms_planned_calendar.sql` via `npm run db:migrate:sql` |
 | CMS | PostgreSQL required in production; local JSON `.data/cms-store.json` is **dev-only** |
@@ -257,8 +257,8 @@ Confirm bind:
 
 ```bash
 ss -lntp | grep 3000
-# expect 127.0.0.1:3000 only
-curl -sS http://127.0.0.1:3000/api/health
+# expect localhost:3000 only (bound as localhost for /i18n proxy safety)
+curl -sS http://localhost:3000/api/health
 # {"ok":true}
 ```
 
@@ -425,7 +425,7 @@ Also back up:
 | Build | `npm run build` |
 | Start (manual) | `npm run start:prod` |
 | Publish due articles | `npm run publish:scheduled` |
-| Health | `curl http://127.0.0.1:3000/api/health` |
+| Health | `curl http://localhost:3000/api/health` |
 
 ---
 

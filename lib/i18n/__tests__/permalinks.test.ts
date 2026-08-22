@@ -6,9 +6,9 @@ import { localizeHrefsDeep } from '@/lib/i18n/localize-hrefs';
 import { hreflangMap, localeCaseRedirectTarget, localizeHref } from '@/lib/i18n/paths';
 import {
   ENGLISH_SLUGS,
+  LEGACY_ARABIC_SLUGS,
   LOCALIZED_SLUGS,
   PAGE_KEYS,
-  decodePathname,
   getLegacyLocalizedRedirects,
   localizedPath,
 } from '@/lib/i18n/slugs';
@@ -58,8 +58,8 @@ describe('localized permalink dictionary', () => {
     expect(localizedPath('pt-br', 'instagram-likes')).toBe('/pt-br/comprar-curtidas-instagram');
     expect(localizedPath('pt-br', 'faq')).toBe('/pt-br/perguntas-frequentes');
 
-    expect(localizedPath('ar', 'instagram-followers')).toBe('/ar/شراء-متابعين-انستغرام');
-    expect(localizedPath('ar', 'faq')).toBe('/ar/الأسئلة-الشائعة');
+    expect(localizedPath('ar', 'instagram-followers')).toBe('/ar/buy-instagram-followers');
+    expect(localizedPath('ar', 'faq')).toBe('/ar/faq');
 
     expect(localizedPath('es', 'about')).toBe('/es/acerca-de');
     expect(localizedPath('es', 'contact')).toBe('/es/contacto');
@@ -76,9 +76,9 @@ describe('localized permalink dictionary', () => {
     expect(localizedPath('pt-br', 'about')).toBe('/pt-br/sobre');
     expect(localizedPath('pt-br', 'contact')).toBe('/pt-br/contato');
     expect(localizedPath('pt-br', 'reviews')).toBe('/pt-br/avaliacoes');
-    expect(localizedPath('ar', 'about')).toBe('/ar/من-نحن');
-    expect(localizedPath('ar', 'contact')).toBe('/ar/اتصل-بنا');
-    expect(localizedPath('ar', 'reviews')).toBe('/ar/التقييمات');
+    expect(localizedPath('ar', 'about')).toBe('/ar/about');
+    expect(localizedPath('ar', 'contact')).toBe('/ar/contact');
+    expect(localizedPath('ar', 'reviews')).toBe('/ar/reviews');
   });
 
   it('maps language-switcher destinations by page key, not prefix swap', () => {
@@ -96,9 +96,10 @@ describe('localized permalink dictionary', () => {
       '/pt-br/comprar-seguidores-instagram',
     );
     expect(localizeHref('/pt-br/comprar-seguidores-instagram', 'ar')).toBe(
-      '/ar/شراء-متابعين-انستغرام',
+      '/ar/buy-instagram-followers',
     );
     expect(localizeHref('/ar/شراء-متابعين-انستغرام', 'en')).toBe('/buy-instagram-followers');
+    expect(localizeHref('/ar/buy-instagram-followers', 'en')).toBe('/buy-instagram-followers');
     expect(localizeHref('/es/preguntas-frecuentes', 'de')).toBe('/de/haeufige-fragen');
     expect(localizeHref('/de/haeufige-fragen', 'en')).toBe('/faq');
     expect(localizeHref('/tools/tiktok-video-downloader', 'es')).toBe(
@@ -110,33 +111,33 @@ describe('localized permalink dictionary', () => {
     expect(localizeHref('/de/tools/tiktok-videos-herunterladen', 'en')).toBe(
       '/tools/tiktok-video-downloader',
     );
-    expect(localizeHref('/tools', 'ar')).toBe('/ar/أدوات');
+    expect(localizeHref('/tools', 'ar')).toBe('/ar/tools');
     expect(localizeHref('/ar/أدوات/تنزيل-فيديو-تيك-توك', 'fr')).toBe(
       '/fr/outils/telecharger-video-tiktok',
     );
     expect(localizeHref('/about', 'es')).toBe('/es/acerca-de');
     expect(localizeHref('/es/acerca-de', 'de')).toBe('/de/ueber-uns');
-    expect(localizeHref('/de/ueber-uns', 'ar')).toBe('/ar/من-نحن');
+    expect(localizeHref('/de/ueber-uns', 'ar')).toBe('/ar/about');
     expect(localizeHref('/ar/من-نحن', 'en')).toBe('/about');
     expect(localizeHref('/contact', 'es')).toBe('/es/contacto');
     expect(localizeHref('/es/contacto', 'de')).toBe('/de/kontakt');
     expect(localizeHref('/de/kontakt', 'fr')).toBe('/fr/contact');
     expect(localizeHref('/fr/contact', 'it')).toBe('/it/contatti');
     expect(localizeHref('/it/contatti', 'pt-br')).toBe('/pt-br/contato');
-    expect(localizeHref('/pt-br/contato', 'ar')).toBe('/ar/اتصل-بنا');
+    expect(localizeHref('/pt-br/contato', 'ar')).toBe('/ar/contact');
     expect(localizeHref('/reviews', 'es')).toBe('/es/resenas');
     expect(localizeHref('/es/resenas', 'de')).toBe('/de/bewertungen');
     expect(localizeHref('/de/bewertungen', 'fr')).toBe('/fr/avis');
     expect(localizeHref('/fr/avis', 'it')).toBe('/it/recensioni');
     expect(localizeHref('/it/recensioni', 'pt-br')).toBe('/pt-br/avaliacoes');
-    expect(localizeHref('/pt-br/avaliacoes', 'ar')).toBe('/ar/التقييمات');
+    expect(localizeHref('/pt-br/avaliacoes', 'ar')).toBe('/ar/reviews');
     expect(localizeHref('/ar/التقييمات', 'en')).toBe('/reviews');
     expect(localizeHref('/privacy-policy', 'es')).toBe('/es/politica-de-privacidad');
     expect(localizeHref('/es/politica-de-privacidad', 'de')).toBe('/de/datenschutz');
     expect(localizeHref('/de/datenschutz', 'fr')).toBe('/fr/politique-de-confidentialite');
     expect(localizeHref('/fr/politique-de-confidentialite', 'it')).toBe('/it/informativa-sulla-privacy');
     expect(localizeHref('/it/informativa-sulla-privacy', 'pt-br')).toBe('/pt-br/politica-de-privacidade');
-    expect(localizeHref('/pt-br/politica-de-privacidade', 'ar')).toBe('/ar/سياسة-الخصوصية');
+    expect(localizeHref('/pt-br/politica-de-privacidade', 'ar')).toBe('/ar/privacy-policy');
     expect(localizeHref('/ar/سياسة-الخصوصية', 'en')).toBe('/privacy-policy');
     expect(localizeHref('/refund-policy', 'es')).toBe('/es/politica-de-reembolso');
     expect(localizeHref('/es/politica-de-reembolso', 'de')).toBe('/de/rueckerstattungsrichtlinie');
@@ -152,6 +153,12 @@ describe('localized permalink dictionary', () => {
       let n = 0;
       for (const key of PAGE_KEYS) {
         if (key === 'home') continue;
+        if (locale === 'ar') {
+          if (LEGACY_ARABIC_SLUGS[key] && LEGACY_ARABIC_SLUGS[key] !== LOCALIZED_SLUGS.ar[key]) {
+            n += 1;
+          }
+          continue;
+        }
         if (ENGLISH_SLUGS[key] === LOCALIZED_SLUGS[locale][key]) continue;
         n += 1;
       }
@@ -168,18 +175,18 @@ describe('localized permalink dictionary', () => {
     expect(bySource.get('/pt-br/buy-instagram-followers')).toBe(
       '/pt-br/comprar-seguidores-instagram',
     );
-    expect(decodePathname(bySource.get('/ar/buy-instagram-followers') ?? '')).toBe(
-      '/ar/شراء-متابعين-انستغرام',
-    );
+    expect(bySource.has('/ar/buy-instagram-followers')).toBe(false);
+    expect(
+      bySource.get(encodeURI('/ar/شراء-متابعين-انستغرام')),
+    ).toBe('/ar/buy-instagram-followers');
     expect(bySource.get('/es/faq')).toBe('/es/preguntas-frecuentes');
     expect(bySource.get('/es/about')).toBe('/es/acerca-de');
     expect(bySource.get('/es/contact')).toBe('/es/contacto');
     expect(bySource.get('/es/reviews')).toBe('/es/resenas');
     expect(bySource.get('/es/privacy-policy')).toBe('/es/politica-de-privacidad');
     expect(bySource.get('/de/privacy-policy')).toBe('/de/datenschutz');
-    expect(decodePathname(bySource.get('/ar/privacy-policy') ?? '')).toBe(
-      '/ar/سياسة-الخصوصية',
-    );
+    expect(bySource.has('/ar/privacy-policy')).toBe(false);
+    expect(bySource.get(encodeURI('/ar/سياسة-الخصوصية'))).toBe('/ar/privacy-policy');
     expect(bySource.get('/de/about')).toBe('/de/ueber-uns');
     expect(bySource.get('/fr/about')).toBe('/fr/a-propos');
     expect(bySource.has('/fr/contact')).toBe(false);
@@ -224,7 +231,7 @@ describe('translated permalink SEO surfaces', () => {
     expect(map.fr).toBe('/fr/acheter-abonnes-instagram');
     expect(map.it).toBe('/it/comprare-follower-instagram');
     expect(map['pt-BR']).toBe('/pt-br/comprar-seguidores-instagram');
-    expect(map.ar).toBe('/ar/شراء-متابعين-انستغرام');
+    expect(map.ar).toBe('/ar/buy-instagram-followers');
     expect(map['x-default']).toBe('/buy-instagram-followers');
 
     for (const locale of LOCALES) {
@@ -249,15 +256,24 @@ describe('translated permalink SEO surfaces', () => {
 
     expect(urls).toContain(absoluteUrl('/es/comprar-seguidores-instagram'));
     expect(urls).not.toContain(absoluteUrl('/es/buy-instagram-followers'));
-    expect(validateSitemapUrl(absoluteUrl('/ar/شراء-متابعين-انستغرام')).valid).toBe(true);
+    expect(urls).toContain(absoluteUrl('/ar/buy-instagram-followers'));
+    expect(urls).not.toContain(absoluteUrl('/ar/شراء-متابعين-انستغرام'));
+    expect(validateSitemapUrl(absoluteUrl('/ar/buy-instagram-followers')).valid).toBe(true);
   });
 
-  it('does not create a second transliterated Arabic URL set', () => {
+  it('uses English canonical slugs for Arabic public permalinks', () => {
+    for (const key of PAGE_KEYS) {
+      expect(LOCALIZED_SLUGS.ar[key]).toBe(ENGLISH_SLUGS[key]);
+    }
     const arabicSlugs = Object.values(LOCALIZED_SLUGS.ar).filter(Boolean);
-    expect(arabicSlugs.every((slug) => /[\u0600-\u06FF]/.test(slug))).toBe(true);
-    expect(arabicSlugs.some((slug) => slug.includes('instagram') || slug.includes('shira'))).toBe(
-      false,
-    );
+    expect(arabicSlugs.every((slug) => !/[\u0600-\u06FF]/.test(slug))).toBe(true);
+    expect(arabicSlugs).toContain('buy-instagram-followers');
+    expect(arabicSlugs).toContain('privacy-policy');
+    expect(arabicSlugs).toContain('tools/instagram-profile-viewer');
+
+    const legacy = Object.values(LEGACY_ARABIC_SLUGS).filter(Boolean);
+    expect(legacy.every((slug) => /[\u0600-\u06FF]/.test(slug))).toBe(true);
+    expect(legacy).toContain('شراء-متابعين-انستغرام');
   });
 
   it('covers all 12 core page groups across 6 locales', () => {
