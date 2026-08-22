@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'instagram-followers-vs-likes-vs-views-vs-comments';
 const SCHEDULED_AT = '2026-08-28T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const IG_INSIGHTS =
@@ -946,8 +948,8 @@ export const INSTAGRAM_FOLLOWERS_VS_LIKES_VS_VIEWS_VS_COMMENTS_ARTICLE: LearnArt
       priority: true,
     },
     readingTime: estimateReadingTimeMinutes(CONTENT),
-    publishedAt: SCHEDULED_AT,
-    updatedAt: SCHEDULED_AT,
+    publishedAt: PUBLISHED_AT,
+    updatedAt: PUBLISHED_AT,
     showModifiedDate: false,
     seo: {
       title: 'Instagram Followers vs Likes vs Views vs Comments',

@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'tiktok-seo';
 const SCHEDULED_AT = '2026-08-31T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TIKTOK_CSI =
@@ -1084,8 +1086,8 @@ export const TIKTOK_SEO_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'TikTok SEO in 2026: How to Rank in TikTok Search',

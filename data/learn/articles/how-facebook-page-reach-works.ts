@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-facebook-page-reach-works';
 const SCHEDULED_AT = '2026-09-11T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const FB_VIEWS_REACH_IMPRESSIONS =
@@ -1368,8 +1370,8 @@ export const HOW_FACEBOOK_PAGE_REACH_WORKS_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'How Facebook Page Reach Works in 2026',

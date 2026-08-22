@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'tiktok-likes-vs-views';
 const SCHEDULED_AT = '2026-10-19T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TIKTOK_RECOMMENDS =
@@ -1320,8 +1322,8 @@ export const TIKTOK_LIKES_VS_VIEWS_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'TikTok Likes vs Views: Which Metric Matters More?',

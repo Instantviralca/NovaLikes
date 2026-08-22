@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-to-grow-instagram-followers-organically';
 const SCHEDULED_AT = '2026-09-30T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const META_AI_PERFORMANCE =
@@ -2150,8 +2152,8 @@ export const HOW_TO_GROW_INSTAGRAM_FOLLOWERS_ORGANICALLY_ARTICLE: LearnArticleRe
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'How to Grow Instagram Followers Organically in 2026',

@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-tiktok-video-views-are-counted';
 const SCHEDULED_AT = '2026-09-14T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TIKTOK_STUDIO =
@@ -1176,8 +1178,8 @@ export const HOW_TIKTOK_VIDEO_VIEWS_ARE_COUNTED_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'How Are TikTok Video Views Counted?',

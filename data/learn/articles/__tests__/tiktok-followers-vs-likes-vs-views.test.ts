@@ -9,9 +9,11 @@ import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import { calculateReadingTime } from '@/lib/learn/article';
 
 describe('Article #1 TikTok followers vs likes vs views', () => {
-  it('is published with the original Monday 24 August 2026 editorial date', () => {
+  it('is published with a public launch date and preserved editorial schedule', () => {
     expect(article.slug).toBe('tiktok-followers-vs-likes-vs-views');
     expect(article.status).toBe('published');
+    expect(article.publishedAt).toBe('2026-08-22T08:00:00.000Z');
+    expect(article.updatedAt).toBe('2026-08-22T08:00:00.000Z');
     expect(article.scheduledAt).toBe('2026-08-24T08:00:00.000Z');
     expect(article.published).toBe(true);
     expect(article.editorialApproved).toBe(true);

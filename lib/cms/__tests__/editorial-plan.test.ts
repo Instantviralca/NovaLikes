@@ -49,6 +49,22 @@ describe('editorial plan', () => {
     expect(new Set(slugs).size).toBe(30);
   });
 
+  it('keeps the four remaining planned CMS topics on Oct 23–30 dates', () => {
+    const planned = NOVALIKES_EDITORIAL_PLAN.slice(-4);
+    expect(planned.map((item) => item.date)).toEqual([
+      '2026-10-23',
+      '2026-10-26',
+      '2026-10-28',
+      '2026-10-30',
+    ]);
+    expect(planned.map((item) => item.slug)).toEqual([
+      'facebook-page-likes-vs-followers',
+      'how-to-save-tiktok-profile-picture-full-size',
+      'how-to-download-public-tiktok-video',
+      'how-to-download-instagram-videos-reels',
+    ]);
+  });
+
   it('seeds missing CMS planned rows and links existing Learn registry slugs', async () => {
     resetCmsMemoryForTests();
     const result = await seedEditorialPlan('usr_1');

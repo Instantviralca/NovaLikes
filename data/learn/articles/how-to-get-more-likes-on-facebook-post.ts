@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-to-get-more-likes-on-facebook-post';
 const SCHEDULED_AT = '2026-09-25T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const FB_REACH_BEST_PRACTICES =
@@ -1456,8 +1458,8 @@ export const HOW_TO_GET_MORE_LIKES_ON_FACEBOOK_POST_ARTICLE: LearnArticleRecord 
       priority: true,
     },
     readingTime: estimateReadingTimeMinutes(CONTENT),
-    publishedAt: SCHEDULED_AT,
-    updatedAt: SCHEDULED_AT,
+    publishedAt: PUBLISHED_AT,
+    updatedAt: PUBLISHED_AT,
     showModifiedDate: false,
     seo: {
       title: 'How to Get More Likes on Facebook Posts Without Ads',

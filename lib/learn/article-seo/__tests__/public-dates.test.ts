@@ -95,4 +95,21 @@ describe('public Learn date metadata', () => {
     expect(article.datePublished).toBe('2026-07-01T08:00:00.000Z');
     expect(article.dateModified).toBe('2026-07-15T08:00:00.000Z');
   });
+
+  it('emits public timestamps for the NovaLikes launch-day publishedAt', () => {
+    const launchNow = new Date('2026-08-22T12:00:00.000Z');
+    const launch = resolvePublicArticleTimestamps(
+      {
+        publishedAt: '2026-08-22T08:00:00.000Z',
+        updatedAt: '2026-08-22T08:00:00.000Z',
+        showModifiedDate: false,
+      },
+      launchNow,
+    );
+    expect(launch.datePublished).toBe('2026-08-22T08:00:00.000Z');
+    expect(launch.dateModified).toBe('2026-08-22T08:00:00.000Z');
+    expect(launch.sitemapLastModified?.toISOString()).toBe(
+      '2026-08-22T08:00:00.000Z',
+    );
+  });
 });

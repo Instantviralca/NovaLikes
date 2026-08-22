@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-to-get-more-facebook-page-followers';
 const SCHEDULED_AT = '2026-09-18T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const FB_FOLLOW_PAGE =
@@ -1609,8 +1611,8 @@ export const HOW_TO_GET_MORE_FACEBOOK_PAGE_FOLLOWERS_ARTICLE: LearnArticleRecord
       priority: true,
     },
     readingTime: estimateReadingTimeMinutes(CONTENT),
-    publishedAt: SCHEDULED_AT,
-    updatedAt: SCHEDULED_AT,
+    publishedAt: PUBLISHED_AT,
+    updatedAt: PUBLISHED_AT,
     showModifiedDate: false,
     seo: {
       title: 'How to Get More Facebook Page Followers Organically',

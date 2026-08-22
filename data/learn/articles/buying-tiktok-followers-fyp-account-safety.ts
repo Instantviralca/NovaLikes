@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'buying-tiktok-followers-fyp-account-safety';
 const SCHEDULED_AT = '2026-09-07T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TIKTOK_DECEPTIVE =
@@ -1085,8 +1087,8 @@ export const BUYING_TIKTOK_FOLLOWERS_FYP_ACCOUNT_SAFETY_ARTICLE: LearnArticleRec
       priority: true,
     },
     readingTime: estimateReadingTimeMinutes(CONTENT),
-    publishedAt: SCHEDULED_AT,
-    updatedAt: SCHEDULED_AT,
+    publishedAt: PUBLISHED_AT,
+    updatedAt: PUBLISHED_AT,
     showModifiedDate: false,
     seo: {
       title: 'Buying TikTok Followers: FYP & Account Safety Explained',

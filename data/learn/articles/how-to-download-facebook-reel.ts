@@ -14,6 +14,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'how-to-download-facebook-reel';
 const SCHEDULED_AT = '2026-10-16T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 const TOOL_HREF = '/tools/facebook-reels-downloader';
 const VIDEO_TOOL_HREF = '/tools/facebook-video-downloader';
@@ -1308,8 +1310,8 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_REEL_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'How to Download a Public Facebook Reel',

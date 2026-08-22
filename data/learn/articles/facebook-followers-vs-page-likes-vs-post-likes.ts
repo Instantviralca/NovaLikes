@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'facebook-followers-vs-page-likes-vs-post-likes';
 const SCHEDULED_AT = '2026-09-04T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const FB_FOLLOW_PAGE =
@@ -984,8 +986,8 @@ export const FACEBOOK_FOLLOWERS_VS_PAGE_LIKES_VS_POST_LIKES_ARTICLE: LearnArticl
       priority: true,
     },
     readingTime: estimateReadingTimeMinutes(CONTENT),
-    publishedAt: SCHEDULED_AT,
-    updatedAt: SCHEDULED_AT,
+    publishedAt: PUBLISHED_AT,
+    updatedAt: PUBLISHED_AT,
     showModifiedDate: false,
     seo: {
       title: 'Facebook Followers vs Page Likes vs Post Likes',

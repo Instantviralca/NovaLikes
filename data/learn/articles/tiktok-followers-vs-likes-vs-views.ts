@@ -13,6 +13,8 @@ import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 const SLUG = 'tiktok-followers-vs-likes-vs-views';
 const SCHEDULED_AT = '2026-08-24T08:00:00.000Z';
+/** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
+const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
 
 const TIKTOK_CREATOR_TOOLS =
   'https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok';
@@ -640,8 +642,8 @@ export const TIKTOK_FOLLOWERS_VS_LIKES_VS_VIEWS_ARTICLE: LearnArticleRecord = {
     priority: true,
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
-  publishedAt: SCHEDULED_AT,
-  updatedAt: SCHEDULED_AT,
+  publishedAt: PUBLISHED_AT,
+  updatedAt: PUBLISHED_AT,
   showModifiedDate: false,
   seo: {
     title: 'TikTok Followers vs Likes vs Views: Key Differences',

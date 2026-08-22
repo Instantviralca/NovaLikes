@@ -90,8 +90,8 @@ describe('Sitemap & Robots Finalization', () => {
 
   it('uses registry lastModified values (not build-time spam)', () => {
     expect(validateLastModified(entries)).toHaveLength(0);
-    // Learn articles may omit lastModified when editorial target dates are still
-    // in the future; every present lastModified must already be validated above.
+    // Learn public dates must be truthful; safety layer may still omit a stamp
+    // if a future date slips through. Every present lastModified is validated above.
     const stamped = entries.filter((entry) => entry.lastModified);
     expect(stamped.length).toBeGreaterThan(0);
     const now = Date.now();
