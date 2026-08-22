@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
-import { and, desc, eq, ilike, lte, or, sql } from 'drizzle-orm';
+import { and, desc, eq, gte, ilike, lte, or } from 'drizzle-orm';
 
 import { isProductionRuntime } from '@/lib/config/env';
 import { assertCmsProductionDatabase, cmsUsesMemoryStore, isCmsDatabaseReady } from '@/lib/cms/ready';
@@ -377,7 +377,7 @@ export async function cmsCountRecentFailures(ipHash: string, sinceIso: string): 
         and(
           eq(cmsLoginAttempts.ipHash, ipHash),
           eq(cmsLoginAttempts.success, false),
-          sql`${cmsLoginAttempts.createdAt} >= ${new Date(sinceIso)}`,
+          gte(cmsLoginAttempts.createdAt, new Date(sinceIso)),
         ),
       );
     return rows.length;
