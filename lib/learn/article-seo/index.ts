@@ -25,6 +25,11 @@ export {
   buildArticlePageJsonLd,
 } from '@/lib/learn/article-seo/schema';
 export {
+  resolvePublicArticleTimestamps,
+  publicIsoTimestamp,
+  publicDateTimestamp,
+} from '@/lib/learn/article-seo/public-dates';
+export {
   validateArticleSeo,
   validateArticleSchema,
   validateArticleDates,

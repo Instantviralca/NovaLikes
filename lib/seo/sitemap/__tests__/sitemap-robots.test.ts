@@ -90,7 +90,18 @@ describe('Sitemap & Robots Finalization', () => {
 
   it('uses registry lastModified values (not build-time spam)', () => {
     expect(validateLastModified(entries)).toHaveLength(0);
-    expect(entries.every((entry) => entry.lastModified)).toBe(true);
+    // Learn articles may omit lastModified when editorial target dates are still
+    // in the future; every present lastModified must already be validated above.
+    const stamped = entries.filter((entry) => entry.lastModified);
+    expect(stamped.length).toBeGreaterThan(0);
+    const now = Date.now();
+    for (const entry of stamped) {
+      const value =
+        entry.lastModified instanceof Date
+          ? entry.lastModified
+          : new Date(entry.lastModified as string | number | Date);
+      expect(value.getTime()).toBeLessThanOrEqual(now + 24 * 60 * 60 * 1000);
+    }
   });
 
   it('includes every approved production route plus published Learn articles', () => {
@@ -98,14 +109,17 @@ describe('Sitemap & Robots Finalization', () => {
     const indexable = getIndexableRoutes();
     expect(indexable.length).toBeGreaterThanOrEqual(SITEMAP_PRODUCTION_ROUTES.length);
     expect(entries.length).toBe(indexable.length + 72 + 54 + 18 + 30);
-    // Deleted legacy article slugs must not reappear (category hubs may still exist).
+    // Truly retired legacy Learn slugs must not reappear (category hubs may still exist).
+    // how-to-grow-instagram-followers-organically is intentionally published again.
     for (const route of [
-      '/learn/how-to-grow-instagram-followers-organically',
       '/learn/instagram-algorithm-explained',
       '/learn/how-to-get-more-instagram-followers-without-ads',
     ]) {
       expect(indexable.some((r) => r.route === route)).toBe(false);
     }
+    expect(indexable.some((r) => r.route === '/learn/how-to-grow-instagram-followers-organically')).toBe(
+      true,
+    );
     expect(indexable.some((r) => r.route.startsWith('/learn/') && r.route.endsWith('-canada'))).toBe(
       false,
     );

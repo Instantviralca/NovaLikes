@@ -35,14 +35,18 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       continue;
     }
 
-    lastModifiedByPath.set(route.route, route.lastModified);
+    if (route.lastModified) {
+      lastModifiedByPath.set(route.route, route.lastModified);
+    }
     const path = normalizeCanonicalPath(route.route);
     const entry: MetadataRoute.Sitemap[number] = {
       url: route.canonicalUrl,
-      lastModified: route.lastModified,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
     };
+    if (route.lastModified) {
+      entry.lastModified = route.lastModified;
+    }
     if (isCoreLocalizedPath(path) && !isEnglishOnlyLearnPath(path)) {
       entry.alternates = { languages: sitemapLanguages(path) };
     }

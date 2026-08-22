@@ -169,14 +169,11 @@ export function validateLastModified(
 ): SitemapIssue[] {
   const issues: SitemapIssue[] = [];
   const now = Date.now();
+  const stamped: number[] = [];
 
   for (const entry of entries) {
+    // Omitting lastModified is preferred over inventing or emitting a future date.
     if (!entry.lastModified) {
-      issues.push({
-        kind: 'invalid_last_modified',
-        url: entry.url,
-        detail: `Missing lastModified for ${entry.url}`,
-      });
       continue;
     }
 
@@ -200,17 +197,15 @@ export function validateLastModified(
         url: entry.url,
         detail: `lastModified is in the future for ${entry.url}`,
       });
+      continue;
     }
+
+    stamped.push(value.getTime());
   }
 
-  const stamps = entries.map((entry) =>
-    entry.lastModified instanceof Date
-      ? entry.lastModified.getTime()
-      : new Date(entry.lastModified as string | number | Date).getTime(),
-  );
   if (
-    stamps.length > 3 &&
-    stamps.every((stamp) => Math.abs(stamp - now) < 5000)
+    stamped.length > 3 &&
+    stamped.every((stamp) => Math.abs(stamp - now) < 5000)
   ) {
     issues.push({
       kind: 'invalid_last_modified',

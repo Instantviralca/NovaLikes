@@ -22,6 +22,7 @@ import {
   buildArticleCanonical,
   getIndexableArticles,
 } from '@/lib/learn/article-seo';
+import { resolvePublicArticleTimestamps } from '@/lib/learn/article-seo/public-dates';
 import { getTags } from '@/lib/learn/taxonomy/getters';
 import { tagPath } from '@/lib/learn/taxonomy/paths';
 import { getMetadataByRoute } from '@/lib/seo/metadata/getters';
@@ -162,13 +163,15 @@ export function getTagSitemapRoutes(): IndexableRoute[] {
 /** Learn article + category sitemap candidates — Document 15.07 / 14.08. */
 export function getFutureLearnSitemapRoutes(): IndexableRoute[] {
   const articleRoutes = getIndexableArticles().map((article) => {
-    const lastModifiedRaw = article.showModifiedDate
-      ? article.updatedAt
-      : article.publishedAt;
+    const publicDates = resolvePublicArticleTimestamps({
+      publishedAt: article.publishedAt,
+      updatedAt: article.updatedAt,
+      showModifiedDate: article.showModifiedDate,
+    });
     return {
       route: normalizeCanonicalPath(`/learn/${article.slug}`),
       canonicalUrl: buildArticleCanonical(article.slug),
-      lastModified: parseLastModified(lastModifiedRaw),
+      lastModified: publicDates.sitemapLastModified,
       changeFrequency: 'monthly' as SitemapChangeFrequency,
       priority: article.featured ? 0.7 : 0.6,
       pageType: 'learn' as const,

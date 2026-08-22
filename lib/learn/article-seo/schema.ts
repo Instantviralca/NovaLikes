@@ -8,6 +8,7 @@ import { getAuthorById } from '@/lib/authors';
 import { getAuthorSchema } from '@/lib/authors/schema';
 import { getLearnCategoryById } from '@/data/learn/categories';
 import { buildArticleCanonical } from '@/lib/learn/article-seo/canonical';
+import { resolvePublicArticleTimestamps } from '@/lib/learn/article-seo/public-dates';
 import {
   resolveArticleSection,
   toArticleSeoRecord,
@@ -96,7 +97,11 @@ export function buildArticleSchema(
       : toArticleSeoRecord(article);
   const category = getLearnCategoryById(seo.categoryId);
   const section = resolveArticleSection(seo, category?.name);
-  const dateModified = seo.showModifiedDate ? seo.updatedAt : seo.publishedAt;
+  const publicDates = resolvePublicArticleTimestamps({
+    publishedAt: seo.publishedAt,
+    updatedAt: seo.updatedAt,
+    showModifiedDate: seo.showModifiedDate,
+  });
   const authorNode = buildArticleAuthorSchema(seo.authorId);
   const keywords = [
     ...(seo.primaryKeyword ? [seo.primaryKeyword] : []),
@@ -118,8 +123,6 @@ export function buildArticleSchema(
     image: seo.featuredImage
       ? absoluteUrl(seo.featuredImage.src)
       : undefined,
-    datePublished: seo.publishedAt,
-    dateModified,
     author: authorNode ?? {
       '@type': 'Organization',
       name: site.name,
@@ -140,6 +143,12 @@ export function buildArticleSchema(
         }
       : undefined,
   };
+  if (publicDates.datePublished) {
+    articleNode.datePublished = publicDates.datePublished;
+  }
+  if (publicDates.dateModified) {
+    articleNode.dateModified = publicDates.dateModified;
+  }
 
   const schemas: JsonLd[] = [articleNode];
 

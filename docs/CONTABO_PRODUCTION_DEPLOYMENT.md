@@ -9,7 +9,7 @@ This document does **not** mean the server was already deployed.
 Canonical public hostname: **novalikes.com**  
 Redirect: **www.novalikes.com → novalikes.com** (one hop)
 
-Application process: Next.js on **localhost:3000** only (Nginx terminates HTTP/HTTPS). Use `localhost` (not `127.0.0.1`) so localized `/i18n/…` internal rewrites proxy over plain HTTP.
+Application process: Next.js on **localhost:3000** only (Nginx terminates HTTP/HTTPS). Use `localhost` (not `127.0.0.1`) so localized `/i18n/…` internal rewrites proxy over plain HTTP. On Ubuntu that bind is typically **`[::1]:3000`**, so Nginx upstream must use `server [::1]:3000;` (see `deploy/nginx/novalikes.conf`).
 
 ---
 
@@ -257,7 +257,7 @@ Confirm bind:
 
 ```bash
 ss -lntp | grep 3000
-# expect localhost:3000 only (bound as localhost for /i18n proxy safety)
+# expect [::1]:3000 (or localhost) — Next binds -H localhost
 curl -sS http://localhost:3000/api/health
 # {"ok":true}
 ```
@@ -280,7 +280,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-Leave Next.js bound to localhost. Nginx listens on 80 (then 443 after Certbot).
+Leave Next.js bound to localhost. Nginx upstream must target **`[::1]:3000`** (matching `deploy/nginx/novalikes.conf`). Do not proxy to `127.0.0.1:3000` after the localhost bind — that yields 502. Nginx listens on 80 (then 443 after Certbot).
 
 ## 15. DNS
 

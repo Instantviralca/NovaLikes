@@ -4,6 +4,7 @@
 
 import { seoSiteConfig } from '@/config/seo';
 import { buildArticleCanonical } from '@/lib/learn/article-seo/canonical';
+import { resolvePublicArticleTimestamps } from '@/lib/learn/article-seo/public-dates';
 import { sanitizeJsonLdText } from '@/lib/learn/article-seo/sanitize';
 import { absoluteUrl } from '@/lib/seo/metadata/canonical';
 import { sanitizeMetadataText } from '@/lib/seo/metadata/sanitize';
@@ -37,7 +38,11 @@ export function buildArticleOpenGraph(
   options?: { authorUrl?: string; articleSection?: string },
 ): NonNullable<Metadata['openGraph']> {
   const image = resolveImage(seo);
-  const modified = seo.showModifiedDate ? seo.updatedAt : seo.publishedAt;
+  const publicDates = resolvePublicArticleTimestamps({
+    publishedAt: seo.publishedAt,
+    updatedAt: seo.updatedAt,
+    showModifiedDate: seo.showModifiedDate,
+  });
 
   return {
     type: 'article',
@@ -56,8 +61,8 @@ export function buildArticleOpenGraph(
         alt: image.alt,
       },
     ],
-    publishedTime: seo.publishedAt,
-    modifiedTime: modified,
+    publishedTime: publicDates.datePublished,
+    modifiedTime: publicDates.dateModified,
     authors: options?.authorUrl ? [options.authorUrl] : undefined,
     section: options?.articleSection ?? seo.articleSection,
     tags: seo.tags.length ? [...seo.tags] : undefined,
