@@ -31,7 +31,21 @@ export function organizationSchema(): JsonLd {
     description: brand.mission,
     slogan: brand.tagline,
     url: absoluteUrl('/'),
+    logo: absoluteUrl('/assets/logos/logo.svg'),
     email: site.supportEmail,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: site.supportEmail,
+      url: absoluteUrl('/contact'),
+    },
+    knowsAbout: [
+      'Instagram growth services',
+      'TikTok growth services',
+      'Facebook growth services',
+      'Social media lookup tools',
+      'Social media education',
+    ],
     ...(sameAs.length > 0 ? { sameAs } : {}),
   };
 }

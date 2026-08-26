@@ -238,5 +238,8 @@
     "questionsBody": "Contatta il supporto NovaLikes tramite la pagina [Contatti](/contact). Se la domanda riguarda un ordine esistente, includi il riferimento dell’ordine e l’e-mail usata al pagamento.",
     "contactSupport": "Contatta il supporto",
     "contactAria": "Contatta il supporto"
+  },
+  "quickAnswer": {
+    "heading": "Risposta rapida"
   }
 }

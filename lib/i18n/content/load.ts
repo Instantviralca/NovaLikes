@@ -51,6 +51,9 @@ import {
   legalOverlayFile,
   type LegalOverlayKey,
 } from '@/lib/i18n/content/legal-english';
+import { getEnglishQuickAnswersSource } from '@/lib/i18n/content/quick-answers-english';
+import { getLocalizedQuickAnswer } from '@/lib/i18n/content/quick-answers-locales';
+import type { QuickAnswerPageId } from '@/data/quick-answers';
 
 const overlayCache = new Map<string, unknown>();
 
@@ -469,5 +472,14 @@ function readOptional(locale: LocalizedLocale, relative: string): unknown {
   if (!existsSync(file)) return undefined;
   return JSON.parse(readFileSync(file, 'utf8')) as unknown;
 }
+
+export const loadQuickAnswer = cache(
+  (locale: Locale, pageId: QuickAnswerPageId): string => {
+    if (!isLocalizedLocale(locale)) {
+      return getEnglishQuickAnswersSource()[pageId];
+    }
+    return getLocalizedQuickAnswer(locale, pageId);
+  },
+);
 
 export { DEFAULT_LOCALE };

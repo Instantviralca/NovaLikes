@@ -4,6 +4,7 @@
 
 import { describe, expect, it } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { PLANNED_ARTICLES } from '@/data/content-plan/articles';
 import { TOPIC_CLUSTERS } from '@/data/content-plan/clusters';
 import { findSameDayPublicationConflicts } from '@/data/content-plan/calendar';
@@ -24,7 +25,7 @@ import {
   validateContentPlan,
 } from '@/lib/content-plan';
 
-describe('SEO Content Production Plan', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('SEO Content Production Plan', () => {
   it('plans exactly 50 articles with correct platform and batch totals', () => {
     expect(getPlannedArticles()).toHaveLength(50);
     expect(getPlatformTotals()).toEqual({

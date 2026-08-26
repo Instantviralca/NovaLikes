@@ -344,7 +344,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-ig-pkg-after-checkout',
-    question: 'What happens after checkout?',
+    question: 'What happens after I place an order?',
     answer:
       'Your order details are reviewed, the package enters processing and the available status information is updated as delivery progresses.',
   },
@@ -356,7 +356,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-ig-pkg-password',
-    question: 'Do you need my Instagram password?',
+    question: 'Do I need to give my Instagram password?',
     answer:
       'No. Your password is not required. The order uses the public username entered during checkout.',
   },
@@ -399,7 +399,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-ig-likes-pkg-after-checkout',
-    question: 'What happens after checkout?',
+    question: 'What happens after I place an order?',
     answer:
       'You receive a confirmation by email. Your order then moves through review and delivery, with tracking available using your order details.',
   },
@@ -411,7 +411,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-ig-likes-pkg-password',
-    question: 'Do you need my password?',
+    question: 'Do I need to give my Instagram password?',
     answer:
       'No. Login credentials are never requested. Your order only needs the public URL of the post or Reel.',
   },

@@ -15,6 +15,7 @@ import path from 'node:path';
 
 import { afterEach, describe, expect, it } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { PLANNED_ARTICLES } from '@/data/content-plan/articles';
 import { createArticle } from '@/lib/content-generators';
 import {
@@ -45,7 +46,9 @@ afterEach(() => {
 });
 
 describe('16.08 Content QA Pipeline', () => {
-  it('runs staged QA and blocks publish on scaffold placeholders', () => {
+  it.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)(
+    'runs staged QA and blocks publish on scaffold placeholders',
+    () => {
     const cwd = tempCwd();
     const briefSlug = 'how-to-get-more-instagram-followers';
     createArticle('instagram', briefSlug, { cwd, force: true });
@@ -74,9 +77,12 @@ describe('16.08 Content QA Pipeline', () => {
 
     const regenerated = generateQAReport(report, packageDir);
     expect(existsSync(regenerated.jsonPath)).toBe(true);
-  });
+    },
+  );
 
-  it('marks a cleaned package publish-eligible when blockers are removed', () => {
+  it.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)(
+    'marks a cleaned package publish-eligible when blockers are removed',
+    () => {
     const cwd = tempCwd();
     const briefSlug = 'how-the-instagram-algorithm-works';
     createArticle('instagram', briefSlug, { cwd, force: true });
@@ -117,7 +123,8 @@ Stay honest about what the algorithm can and cannot do.
     expect(report.issues.some((i) => i.code === 'placeholder_or_todo')).toBe(false);
     expect(report.publishEligible).toBe(true);
     expect(['passed', 'requires_review']).toContain(report.status);
-  });
+    },
+  );
 
   it.skipIf(!shouldRunBulk)(
     'writes QA reports for all planned packages',

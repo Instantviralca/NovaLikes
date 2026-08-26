@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { JsonLdScript } from '@/components/common/json-ld';
 import { AboutPageView } from '@/components/sections/AboutPageView';
 import { isLocalizedLocale } from '@/lib/i18n/config';
-import { loadAboutPage, loadMetadataBundle, loadUi } from '@/lib/i18n/content/load';
+import { loadAboutPage, loadMetadataBundle, loadQuickAnswer, loadUi } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
 import { localizeHref } from '@/lib/i18n/paths';
 import { asJsonLdGraph } from '@/lib/seo/schema';
@@ -57,6 +57,8 @@ export default async function LocalizedAboutPage({ params }: PageProps) {
         chrome={chrome}
         homeLabel={ui.breadcrumbs.home}
         homeHref={homeHref}
+        quickAnswerHeading={ui.quickAnswer.heading}
+        quickAnswerText={loadQuickAnswer(locale, 'about')}
       />
     </>
   );

@@ -238,5 +238,8 @@
     "questionsBody": "Kontaktieren Sie den NovaLikes-Support über die Seite [Kontakt](/contact). Wenn sich Ihre Frage auf eine bestehende Bestellung bezieht, geben Sie bitte Ihre Bestellreferenz und die bei der Kasse verwendete E-Mail an.",
     "contactSupport": "Support kontaktieren",
     "contactAria": "Support kontaktieren"
+  },
+  "quickAnswer": {
+    "heading": "Kurzantwort"
   }
 }

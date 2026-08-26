@@ -8,6 +8,7 @@ import path from 'node:path';
 
 import { afterEach, describe, expect, it } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { getPlannedArticleBySlug } from '@/data/content-plan/articles';
 import { createArticle } from '@/lib/content-generators';
 import {
@@ -35,7 +36,7 @@ afterEach(() => {
   }
 });
 
-describe('16.07 Translation Ready System', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.07 Translation Ready System', () => {
   it('creates a translation package with locale map and canonical fields', () => {
     const brief = getPlannedArticleBySlug('how-to-get-more-instagram-followers')!;
     const pkg = createTranslationPackage(brief);

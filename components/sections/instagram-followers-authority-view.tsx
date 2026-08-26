@@ -26,6 +26,11 @@ import { mapServiceContent } from '@/lib/content/mappers';
 import { resolveRelatedServices } from '@/lib/content/linking';
 import { buildBreadcrumb } from '@/lib/linking';
 import { localizeHref } from '@/lib/i18n/paths';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
+import { Container } from '@/components/layout/container';
+import { Section } from '@/components/layout/section';
+import { loadQuickAnswer } from '@/lib/i18n/content/load';
+import type { QuickAnswerPageId } from '@/data/quick-answers';
 import { DEFAULT_LOCALE, type Locale, isCoreServiceSlug } from '@/lib/i18n/config';
 import { loadServiceFaqItems, type LocalizedServiceBundle } from '@/lib/i18n/content/load';
 import type { UiDictionary } from '@/lib/i18n/content/ui-english';
@@ -81,6 +86,15 @@ export function InstagramFollowersAuthorityView({
         previewPackageId={previewPackageId}
         instagramVariant="followers"
       />
+
+      <Section spacing="sm" className="bg-transparent">
+        <Container size="lg">
+          <QuickAnswer
+            heading={ui?.quickAnswer?.heading ?? 'Quick answer'}
+            text={loadQuickAnswer(locale, service.slug as QuickAnswerPageId)}
+          />
+        </Container>
+      </Section>
 
       <ServiceCommerceBlocks
         service={service}

@@ -29,6 +29,11 @@ export const ROBOTS_DISALLOW = [
 /**
  * Central robots directives — Document 14.08.
  * Does not block public CSS, JS, images, fonts, or rendering assets.
+ *
+ * AI search crawlers (OAI-SearchBot for ChatGPT Search, Bingbot, etc.) inherit
+ * the wildcard `*` rules unless a separate user-agent block is added. Public
+ * indexable pages remain crawlable; private paths stay disallowed. GPTBot
+ * (OpenAI training) is intentionally not given separate rules here.
  */
 export function getRobotsRules(): RobotsRuleSet[] {
   return [
@@ -38,6 +43,32 @@ export function getRobotsRules(): RobotsRuleSet[] {
       disallow: [...ROBOTS_DISALLOW],
     },
   ];
+}
+
+/** True when a crawler user-agent may fetch a public path under current robots rules. */
+export function isPathAllowedForCrawler(pathname: string, userAgent = '*'): boolean {
+  const rules = getRobotsRules().find((rule) => rule.userAgent === userAgent)
+    ?? getRobotsRules()[0];
+  if (!rules) return false;
+  const normalized = pathname.endsWith('/') && pathname.length > 1
+    ? pathname.slice(0, -1)
+    : pathname;
+  if (rules.disallow.some((rule) => {
+    if (rule.endsWith('/')) {
+      const prefix = rule.slice(0, -1);
+      return normalized === prefix || normalized.startsWith(rule);
+    }
+    return normalized === rule || normalized.startsWith(`${rule}/`);
+  })) {
+    return false;
+  }
+  return rules.allow.includes('/') || rules.allow.some((allow) => normalized.startsWith(allow));
+}
+
+/** OAI-SearchBot uses the wildcard allow/disallow rules — not blocked from public pages. */
+export function isOaiSearchBotAllowedOnPublicPages(): boolean {
+  const publicPaths = ['/', '/faq', '/learn', '/buy-instagram-followers', '/tools'];
+  return publicPaths.every((path) => isPathAllowedForCrawler(path, 'OAI-SearchBot'));
 }
 
 export function getSitemapUrl(): string {

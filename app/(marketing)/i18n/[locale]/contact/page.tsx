@@ -8,6 +8,7 @@ import {
   loadContactPage,
   loadFaqItems,
   loadMetadataBundle,
+  loadQuickAnswer,
   loadUi,
 } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
@@ -72,6 +73,8 @@ export default async function LocalizedContactPage({ params }: PageProps) {
         homeLabel={ui.breadcrumbs.home}
         homeHref={homeHref}
         faqItems={faqItems}
+        quickAnswerHeading={ui.quickAnswer.heading}
+        quickAnswerText={loadQuickAnswer(locale, 'contact')}
       />
     </>
   );

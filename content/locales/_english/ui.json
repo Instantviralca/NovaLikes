@@ -238,5 +238,8 @@
     "questionsBody": "Contact NovaLikes support through the [Contact](/contact) page. If your question relates to an existing order, include your order reference and the email used at checkout.",
     "contactSupport": "Contact Support",
     "contactAria": "Contact support"
+  },
+  "quickAnswer": {
+    "heading": "Quick answer"
   }
 }

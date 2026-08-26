@@ -69,7 +69,7 @@ function cartItem(overrides: Partial<{ unitPrice: number; packageId: string }> =
     packageTitle: '1000 Instagram Followers',
     quantity: 1000,
     quantityLabel: '1000',
-    unitPrice: overrides.unitPrice ?? 1, // wrong client price on purpose
+    unitPrice: overrides.unitPrice ?? 13.99, // wrong client price on purpose
     currency: 'USD' as const,
     deliveryTime: 'Gradual',
     configuration: { username: 'demo_user' },
@@ -87,7 +87,7 @@ describe('Database persistence (memory driver)', () => {
       items: [cartItem()],
       idempotencyKey: 'persist-1',
     });
-    expect(order.total.amount).toBe(999);
+    expect(order.total.amount).toBe(1399);
     expect((await getOrderById(order.id))?.guestEmail).toBe('buyer@example.com');
 
     const contact = await getPersistence().saveContactMessage({
@@ -118,8 +118,8 @@ describe('Database persistence (memory driver)', () => {
 describe('Server-side price validation', () => {
   it('recalculates from catalog and ignores client unitPrice', () => {
     const pricing = validateCheckoutPricing({ items: [cartItem({ unitPrice: 1 })] });
-    expect(pricing.total.amount).toBe(999);
-    expect(pricing.items[0]?.unitPrice).toBe(999);
+    expect(pricing.total.amount).toBe(1399);
+    expect(pricing.items[0]?.unitPrice).toBe(1399);
   });
 
   it('rejects unknown packages', () => {
@@ -191,7 +191,7 @@ describe('Payment verification + fulfilment gate', () => {
       paymentId: 'cs_test_1',
       status: 'paid',
       orderId: order.id,
-      amountMinor: 999,
+      amountMinor: 1399,
     });
     expect(first.applied).toBe(true);
     expect(first.order?.payment?.status).toBe('paid');
@@ -201,7 +201,7 @@ describe('Payment verification + fulfilment gate', () => {
       paymentId: 'cs_test_1',
       status: 'paid',
       orderId: order.id,
-      amountMinor: 999,
+      amountMinor: 1399,
     });
     expect(second.duplicate).toBe(true);
   });
@@ -347,68 +347,18 @@ describe('Unauthorized admin API gate helper', () => {
 });
 
 describe('Learn Center production content', () => {
-  it('publishes approved Learn articles with featured images in the sitemap', () => {
-    expect(LEARN_ARTICLES.length).toBe(56);
+  it('publishes 26 approved Learn articles with featured images in the sitemap', () => {
+    expect(LEARN_ARTICLES.length).toBe(26);
     expect(AUTHORS.length).toBeGreaterThanOrEqual(1);
-    expect(getPublishedLearnArticleSlugs()).toEqual([
-      'how-to-grow-instagram-followers-organically',
-      'instagram-algorithm-explained',
-      'how-to-get-more-instagram-followers-without-ads',
-      'common-instagram-growth-mistakes',
-      'best-time-to-post-on-instagram',
-      'instagram-seo-guide',
-      'how-to-use-instagram-hashtags-effectively',
-      'how-to-increase-instagram-engagement',
-      'how-to-get-more-instagram-likes',
-      'complete-instagram-growth-guide',
-      'how-to-use-instagram-for-business',
-      'instagram-marketing-for-small-businesses',
-      'how-to-create-an-instagram-content-calendar',
-      'instagram-content-ideas-for-businesses',
-      'organic-vs-paid-instagram-growth',
-      'how-to-build-trust-on-instagram',
-      'instagram-marketing-mistakes-businesses-should-avoid',
-      'complete-tiktok-growth-guide',
-      'how-to-get-more-tiktok-followers',
-      'how-the-tiktok-algorithm-works',
-      'best-time-to-post-on-tiktok',
-      'tiktok-seo-guide',
-      'how-to-increase-tiktok-engagement',
-      'how-to-get-more-tiktok-likes',
-      'how-to-get-more-tiktok-views',
-      'common-tiktok-growth-mistakes',
-      'tiktok-for-business',
-      'tiktok-marketing-for-small-businesses',
-      'how-to-create-a-tiktok-content-calendar',
-      'tiktok-content-ideas-for-businesses',
-      'organic-vs-paid-tiktok-growth',
-      'how-to-build-trust-on-tiktok',
-      'tiktok-marketing-mistakes-businesses-should-avoid',
-      'facebook-growth-guide',
-      'how-to-get-more-facebook-followers',
-      'how-the-facebook-algorithm-works',
-      'best-time-to-post-on-facebook',
-      'facebook-seo-guide',
-      'how-to-increase-facebook-engagement',
-      'how-to-get-more-facebook-page-likes',
-      'youtube-growth-guide',
-      'how-the-youtube-algorithm-works',
-      'youtube-seo-guide',
-      'how-to-get-more-youtube-subscribers',
-      'how-to-get-more-youtube-views',
-      'common-youtube-growth-mistakes',
-      'social-media-marketing-guide',
-      'social-media-marketing-strategy',
-      'social-media-content-planning',
-      'social-media-marketing-mistakes',
-      'how-to-measure-social-media-success',
-      'beginners-guide-to-social-media-growth',
-      'how-social-media-algorithms-work',
-      'organic-vs-paid-social-media-growth',
-      'how-to-build-a-strong-personal-brand-on-social-media',
-      'social-media-trends-2026',
-    ]);
-    for (const slug of getPublishedLearnArticleSlugs()) {
+    const slugs = getPublishedLearnArticleSlugs();
+    expect(slugs).toHaveLength(26);
+    expect(slugs).toContain('tiktok-seo');
+    expect(slugs).toContain('how-instagram-algorithm-works');
+    expect(slugs).toContain('facebook-followers-vs-page-likes-vs-post-likes');
+    expect(slugs).not.toContain('youtube-seo-guide');
+    expect(slugs).not.toContain('instagram-seo-guide');
+
+    for (const slug of slugs) {
       const article = LEARN_ARTICLES.find((item) => item.slug === slug)!;
       expect(article.status).toBe('published');
       expect(article.editorialApproved).toBe(true);
@@ -417,198 +367,21 @@ describe('Learn Center production content', () => {
       expect(article.seo.noindex).not.toBe(true);
     }
 
-    const facebookSeo = LEARN_ARTICLES.find(
-      (article) => article.slug === 'facebook-seo-guide',
+    const facebookCompare = LEARN_ARTICLES.find(
+      (article) => article.slug === 'facebook-followers-vs-page-likes-vs-post-likes',
     )!;
-    expect(facebookSeo.relatedServices).toEqual([
+    expect(facebookCompare.relatedServices).toEqual([
       'buy-facebook-followers',
       'buy-facebook-page-likes',
       'buy-facebook-post-likes',
     ]);
-    expect(facebookSeo.category).toBe('facebook');
+    expect(facebookCompare.category).toBe('facebook');
 
     expect(LEARN_SITEMAP_ENABLED).toBe(true);
     const entries = buildSitemapEntries();
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-tiktok-followers'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-the-tiktok-algorithm-works'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/best-time-to-post-on-tiktok'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/tiktok-seo-guide')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-increase-tiktok-engagement'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-tiktok-likes'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-tiktok-views'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/common-tiktok-growth-mistakes'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/tiktok-for-business')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/tiktok-marketing-for-small-businesses'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-create-a-tiktok-content-calendar'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/tiktok-content-ideas-for-businesses'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/organic-vs-paid-tiktok-growth'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-build-trust-on-tiktok'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes(
-          '/learn/tiktok-marketing-mistakes-businesses-should-avoid',
-        ),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/facebook-growth-guide')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-facebook-followers'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-the-facebook-algorithm-works'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/best-time-to-post-on-facebook'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/facebook-seo-guide')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-increase-facebook-engagement'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-facebook-page-likes'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/youtube-growth-guide')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-the-youtube-algorithm-works'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/youtube-seo-guide')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-youtube-subscribers'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-get-more-youtube-views'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/common-youtube-growth-mistakes'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/social-media-marketing-guide'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/social-media-marketing-strategy'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/social-media-content-planning'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/social-media-marketing-mistakes'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-to-measure-social-media-success'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/beginners-guide-to-social-media-growth'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/organic-vs-paid-social-media-growth'),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes(
-          '/learn/how-to-build-a-strong-personal-brand-on-social-media',
-        ),
-      ),
-    ).toBe(true);
-    expect(
-      entries.some((e) => e.url.includes('/learn/social-media-trends-2026')),
-    ).toBe(true);
-    expect(
-      entries.some((e) =>
-        e.url.includes('/learn/how-social-media-algorithms-work'),
-      ),
-    ).toBe(true);
+    for (const slug of slugs) {
+      expect(entries.some((e) => e.url.includes(`/learn/${slug}`))).toBe(true);
+    }
   });
 });
 
@@ -625,6 +398,7 @@ describe('Env validation', () => {
     delete process.env.IV_ADMIN_PASSWORD;
     delete process.env.IV_ADMIN_SESSION_SECRET;
     delete process.env.EMAIL_FROM;
+    delete process.env.IV_PERSISTENCE;
     process.env.ADMIN_PASSWORD = 'alias-admin-password-strong';
     process.env.SESSION_SECRET = 'alias-session-secret-32chars!!';
     process.env.RESEND_API_KEY = 're_test_key';
@@ -643,6 +417,7 @@ describe('Env validation', () => {
     delete process.env.EMAIL_FROM;
     delete process.env.RESEND_API_KEY;
     delete process.env.RESEND_FROM_EMAIL;
+    delete process.env.IV_PERSISTENCE;
     process.env.ADMIN_PASSWORD = 'alias-admin-password-strong';
     process.env.SESSION_SECRET = 'alias-session-secret-32chars!!';
     process.env.SMTP_HOST = '127.0.0.1';

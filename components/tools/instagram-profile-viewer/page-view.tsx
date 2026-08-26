@@ -16,6 +16,10 @@ import { getRelatedServicesForTool } from '@/data/tools/related-services';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { localizeHref } from '@/lib/i18n/paths';
 import { ENGLISH_TOOL_CHROME, type ToolChrome } from '@/data/tools/chrome';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
+import { loadQuickAnswer } from '@/lib/i18n/content/load';
+import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
+import type { QuickAnswerPageId } from '@/data/quick-answers';
 import type { ToolsBundle } from '@/lib/i18n/content/tools-english';
 
 const SERVICE_LABEL: Record<string, string> = {
@@ -40,6 +44,7 @@ type Props = {
   homeLabel?: string;
   toolsLabel?: string;
   toolsHref?: string;
+  quickAnswerHeading?: string;
 };
 
 export function InstagramProfileViewerPage({
@@ -52,6 +57,7 @@ export function InstagramProfileViewerPage({
   homeLabel = 'Home',
   toolsLabel = 'Tools',
   toolsHref,
+  quickAnswerHeading = ENGLISH_UI.quickAnswer.heading,
 }: Props) {
   const related = relatedTools ?? getRelatedTools(tool.slug);
   const services = getRelatedServicesForTool(tool.slug).map((service) => ({
@@ -88,6 +94,15 @@ export function InstagramProfileViewerPage({
             }}
             accentWord={pv?.accentWord ?? 'Viewer'}
             chrome={chrome}
+          />
+        </Container>
+      </Section>
+
+      <Section spacing="sm" className="bg-transparent">
+        <Container size="xl">
+          <QuickAnswer
+            heading={quickAnswerHeading}
+            text={loadQuickAnswer(locale, tool.slug as QuickAnswerPageId)}
           />
         </Container>
       </Section>

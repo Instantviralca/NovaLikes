@@ -17,13 +17,17 @@ import { Faq } from '@/components/sections/faq';
 import { Heading } from '@/components/typography/heading';
 import { routes } from '@/config/routes';
 import { ILLUSTRATED_TOOL_LAYOUT, relatedToolArt } from '@/data/tools/illustrated-layout';
+import { ENGLISH_TOOL_CHROME, type ToolChrome } from '@/data/tools/chrome';
 import type { ToolPageCopy } from '@/data/tools/copy';
 import { getRelatedTools, type ToolDefinition } from '@/data/tools/registry';
 import { getRelatedServicesForTool } from '@/data/tools/related-services';
 import type { ToolSlug } from '@/lib/tools/types';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { localizeHref } from '@/lib/i18n/paths';
-import { ENGLISH_TOOL_CHROME, type ToolChrome } from '@/data/tools/chrome';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
+import { loadQuickAnswer } from '@/lib/i18n/content/load';
+import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
+import type { QuickAnswerPageId } from '@/data/quick-answers';
 import type { ToolLayoutCopy } from '@/lib/i18n/content/tools-english';
 
 const SERVICE_LABEL: Record<string, string> = {
@@ -59,6 +63,7 @@ type Props = {
   chrome?: ToolChrome;
   layoutCopy?: ToolLayoutCopy;
   relatedTools?: ToolDefinition[];
+  quickAnswerHeading?: string;
   homeLabel?: string;
   toolsLabel?: string;
   toolsHref?: string;
@@ -71,6 +76,7 @@ export function IllustratedToolPage({
   chrome = ENGLISH_TOOL_CHROME,
   layoutCopy,
   relatedTools,
+  quickAnswerHeading = ENGLISH_UI.quickAnswer.heading,
   homeLabel = 'Home',
   toolsLabel = 'Tools',
   toolsHref,
@@ -110,6 +116,15 @@ export function IllustratedToolPage({
             accentWord={copyLayout?.accentWord ?? layout.accentWord}
             heroArt={layout.heroArt}
             chrome={chrome}
+          />
+        </Container>
+      </Section>
+
+      <Section spacing="sm" className="bg-transparent">
+        <Container size="xl">
+          <QuickAnswer
+            heading={quickAnswerHeading}
+            text={loadQuickAnswer(locale, tool.slug as QuickAnswerPageId)}
           />
         </Container>
       </Section>

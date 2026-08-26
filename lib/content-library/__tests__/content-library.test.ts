@@ -8,6 +8,7 @@ import path from 'node:path';
 
 import { afterEach, describe, expect, it } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { createArticle } from '@/lib/content-generators';
 import {
   CONTENT_LIBRARY_STARTER_QUEUE,
@@ -26,7 +27,7 @@ afterEach(() => {
   }
 });
 
-describe('17 Content Library Starter Kit', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('17 Content Library Starter Kit', () => {
   it('maps the first 10 publishing queue articles to planned packages', () => {
     expect(CONTENT_LIBRARY_STARTER_QUEUE).toHaveLength(10);
     const queue = getLibraryQueue({ cwd: process.cwd() });

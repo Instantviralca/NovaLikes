@@ -29,6 +29,7 @@ import { routes } from '@/config/routes';
 import { getAboutContent } from '@/data/content/company';
 import { getEnglishAboutSource } from '@/lib/i18n/content/company-english';
 import type { AboutPageOverlay } from '@/lib/i18n/content/company-english';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { cn } from '@/lib/utils';
 import type { AboutPageContent } from '@/types/content';
 
@@ -48,6 +49,8 @@ type AboutPageViewProps = {
   chrome?: AboutPageOverlay['chrome'];
   homeLabel?: string;
   homeHref?: string;
+  quickAnswerHeading?: string;
+  quickAnswerText?: string;
 };
 
 /**
@@ -58,6 +61,8 @@ export function AboutPageView({
   chrome = getEnglishAboutSource().chrome,
   homeLabel = 'Home',
   homeHref = routes.home,
+  quickAnswerHeading,
+  quickAnswerText,
 }: AboutPageViewProps) {
   const breadcrumbs = [
     { label: homeLabel, href: homeHref },
@@ -132,6 +137,14 @@ export function AboutPageView({
           </div>
         </Container>
       </Section>
+
+      {quickAnswerText ? (
+        <Section spacing="sm" className="bg-transparent">
+          <Container>
+            <QuickAnswer heading={quickAnswerHeading ?? 'Quick answer'} text={quickAnswerText} />
+          </Container>
+        </Section>
+      ) : null}
 
       {/* 2. Stats bar */}
       <AboutTrustStats

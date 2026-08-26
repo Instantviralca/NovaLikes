@@ -241,6 +241,9 @@ export const ENGLISH_UI = {
     contactSupport: 'Contact Support',
     contactAria: 'Contact support',
   },
+  quickAnswer: {
+    heading: 'Quick answer',
+  },
 } as const;
 
 export type UiDictionary = {
@@ -259,4 +262,5 @@ export type UiDictionary = {
   orderSuccess: { [K in keyof typeof ENGLISH_UI.orderSuccess]: string };
   trackOrder: { [K in keyof typeof ENGLISH_UI.trackOrder]: string };
   legalChrome: { [K in keyof typeof ENGLISH_UI.legalChrome]: string };
+  quickAnswer: { heading: string };
 };

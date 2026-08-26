@@ -23,6 +23,8 @@ export {
   getSitemapUrl,
   validateRobotsRules,
   ROBOTS_DISALLOW,
+  isPathAllowedForCrawler,
+  isOaiSearchBotAllowedOnPublicPages,
 } from '@/lib/seo/sitemap/robots';
 
 export {

@@ -21,6 +21,7 @@ import { getContactContent } from '@/data/content/company';
 import { getFaqItemsByIds } from '@/data/content/faq';
 import { getEnglishContactSource } from '@/lib/i18n/content/company-english';
 import type { ContactPageOverlay } from '@/lib/i18n/content/company-english';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { cn } from '@/lib/utils';
 import type { ContactPageContent } from '@/types/content';
 
@@ -44,6 +45,8 @@ type ContactPageViewProps = {
   homeHref?: string;
   faqItems?: ContactFaqItem[];
   trackOrderHref?: string;
+  quickAnswerHeading?: string;
+  quickAnswerText?: string;
 };
 
 /**
@@ -56,6 +59,8 @@ export function ContactPageView({
   homeHref = routes.home,
   faqItems,
   trackOrderHref = routes.trackOrder,
+  quickAnswerHeading,
+  quickAnswerText,
 }: ContactPageViewProps) {
   const breadcrumbs = [
     { label: homeLabel, href: homeHref },
@@ -122,6 +127,14 @@ export function ContactPageView({
           </div>
         </Container>
       </Section>
+
+      {quickAnswerText ? (
+        <Section spacing="sm" className="bg-transparent">
+          <Container>
+            <QuickAnswer heading={quickAnswerHeading ?? 'Quick answer'} text={quickAnswerText} />
+          </Container>
+        </Section>
+      ) : null}
 
       {/* 2. Form + Contact Information */}
       <Section

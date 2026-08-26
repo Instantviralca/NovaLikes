@@ -22,20 +22,35 @@ import { getLowercasePublicRedirect } from '@/lib/seo/lowercase-public-path';
 import { buildLlmsTxt } from '@/lib/seo/llms-txt';
 import { buildSitemapEntries, getTagSitemapRoutes } from '@/lib/seo/sitemap';
 
-describe('Empty Learn tag archives', () => {
-  it('treats every current production tag as empty and unpromoted', () => {
+describe('Learn tag archives', () => {
+  it('promotes only tags that have published articles', () => {
     expect(LEARN_TAGS).toHaveLength(13);
-    expect(getDiscoverableTags()).toEqual([]);
-    expect(getPopularTags(20)).toEqual([]);
+    expect(getDiscoverableTags().length).toBeGreaterThan(0);
+    expect(getPopularTags(20).length).toBeGreaterThan(0);
+    for (const tag of getDiscoverableTags()) {
+      expect(tag.articleCount).toBeGreaterThan(0);
+    }
     for (const tag of LEARN_TAGS) {
-      expect(getTagBySlug(tag.slug)?.articleCount ?? 0).toBe(0);
+      const count = getTagBySlug(tag.slug)?.articleCount ?? 0;
+      if (count === 0) {
+        expect(getDiscoverableTags().some((item) => item.slug === tag.slug)).toBe(false);
+      }
     }
   });
 
   it('excludes empty tags from XML sitemap, HTML sitemap, and llms.txt', () => {
-    expect(getTagSitemapRoutes()).toEqual([]);
+    const tagRoutes = getTagSitemapRoutes();
+    for (const route of tagRoutes) {
+      const slug = route.route.replace('/learn/tag/', '');
+      expect(getTagBySlug(slug)?.articleCount ?? 0).toBeGreaterThan(0);
+    }
+    const emptyTagSlugs = LEARN_TAGS.filter(
+      (tag) => (getTagBySlug(tag.slug)?.articleCount ?? 0) === 0,
+    ).map((tag) => tag.slug);
     const sitemap = buildSitemapEntries().map((entry) => entry.url).join('\n');
-    expect(sitemap).not.toContain('/learn/tag/');
+    for (const slug of emptyTagSlugs) {
+      expect(sitemap).not.toContain(`/learn/tag/${slug}`);
+    }
     expect(getPublicDirectoryHrefs().some((href) => href.includes('/learn/tag/'))).toBe(
       false,
     );

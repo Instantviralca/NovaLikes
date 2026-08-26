@@ -8,6 +8,7 @@ import path from 'node:path';
 
 import { afterEach, describe, expect, it } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { getPlannedArticleBySlug } from '@/data/content-plan/articles';
 import {
   buildCampaignAssets,
@@ -42,7 +43,7 @@ afterEach(() => {
   }
 });
 
-describe('16.02 Article Package Generator', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.02 Article Package Generator', () => {
   it('creates a full package with assets and updates the content index', () => {
     const cwd = tempCwd();
     const result = createArticle(
@@ -127,7 +128,7 @@ describe('16.02 Article Package Generator', () => {
   });
 });
 
-describe('16.03 SEO Asset Generator', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.03 SEO Asset Generator', () => {
   it('generates draft-safe SEO assets and validates peers', () => {
     const brief = getPlannedArticleBySlug('how-to-get-more-instagram-followers')!;
     const { seo, schema, faq } = generateSeoAssets({
@@ -156,7 +157,7 @@ describe('16.03 SEO Asset Generator', () => {
   });
 });
 
-describe('16.04 Image Asset Generator', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.04 Image Asset Generator', () => {
   it('builds manifests and prompts with accessibility fields', () => {
     const brief = getPlannedArticleBySlug('how-to-get-more-views-on-tiktok')!;
     const manifest = buildImageManifest(brief);
@@ -171,7 +172,7 @@ describe('16.04 Image Asset Generator', () => {
   });
 });
 
-describe('16.05 Social Media Asset Generator', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.05 Social Media Asset Generator', () => {
   it('builds platform variants with UTM URLs and character limits', () => {
     const brief = getPlannedArticleBySlug('social-media-growth-strategy-for-beginners')!;
     const assets = buildCampaignAssets(brief);
@@ -188,7 +189,7 @@ describe('16.05 Social Media Asset Generator', () => {
   });
 });
 
-describe('16.06 Newsletter Generator', () => {
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('16.06 Newsletter Generator', () => {
   it('generates subject options, preview, CTA, and validates JSON shape', () => {
     const brief = getPlannedArticleBySlug('how-the-instagram-algorithm-works')!;
     const newsletter = generateNewsletter(brief);

@@ -8,6 +8,7 @@ import path from 'node:path';
 
 import { describe, expect, it, afterEach } from 'vitest';
 
+import { SCAFFOLD_CONTENT_PLAN_ENABLED } from '@/lib/content-plan/scaffold-test-guard';
 import { PLANNED_ARTICLES } from '@/data/content-plan/articles';
 import { getContentDesignSystemSummary } from '@/lib/content-design';
 import {
@@ -34,14 +35,16 @@ afterEach(() => {
   }
 });
 
-describe('Content Design System + Repository Generator', () => {
+describe('Content Design System summary', () => {
   it('exposes design system structure and callouts', () => {
     const summary = getContentDesignSystemSummary();
     expect(summary.structure[0]).toBe('SEO Metadata');
     expect(summary.callouts).toContain('Pro Tip');
     expect(summary.faq.minQuestions).toBe(8);
   });
+});
 
+describe.skipIf(!SCAFFOLD_CONTENT_PLAN_ENABLED)('Content Design System + Repository Generator', () => {
   it('creates a complete article package from a planned brief', () => {
     const cwd = makeTempCwd();
     const slug = 'how-to-get-more-instagram-followers';

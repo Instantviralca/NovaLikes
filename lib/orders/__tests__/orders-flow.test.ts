@@ -67,7 +67,7 @@ describe('Launch checklist — orders + auth', () => {
     });
 
     expect(order.id.startsWith('IV-')).toBe(true);
-    expect(order.total.amount).toBe(999);
+    expect(order.total.amount).toBe(1399);
     expect((await getOrderById(order.id))?.guestEmail).toBe('buyer@example.com');
 
     const tracked = await lookupTrackedOrder(

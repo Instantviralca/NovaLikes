@@ -29,12 +29,12 @@ export type ContextualLinkTarget = {
 };
 
 const PILLAR_BY_CATEGORY: Record<string, string> = {
-  instagram: 'complete-instagram-growth-guide',
-  tiktok: 'complete-tiktok-growth-guide',
-  facebook: 'facebook-growth-guide',
-  youtube: 'youtube-growth-guide',
-  'social-media-marketing': 'social-media-marketing-guide',
-  guides: 'beginners-guide-to-social-media-growth',
+  instagram: 'how-to-grow-instagram-followers-organically',
+  tiktok: 'tiktok-seo',
+  facebook: 'facebook-followers-vs-page-likes-vs-post-likes',
+  youtube: '',
+  'social-media-marketing': 'how-to-grow-instagram-followers-organically',
+  guides: 'how-to-grow-instagram-followers-organically',
 };
 
 const PLATFORM_PHRASE_BANK: Record<
@@ -44,120 +44,91 @@ const PLATFORM_PHRASE_BANK: Record<
   instagram: [
     {
       phrases: ['Instagram algorithm', 'the algorithm'],
-      articleSlug: 'instagram-algorithm-explained',
+      articleSlug: 'how-instagram-algorithm-works',
     },
     {
-      phrases: ['Instagram SEO', 'Instagram search'],
-      articleSlug: 'instagram-seo-guide',
-    },
-    {
-      phrases: ['Instagram engagement', 'increase engagement', 'more engagement'],
-      articleSlug: 'how-to-increase-instagram-engagement',
-    },
-    {
-      phrases: [
-        'grow Instagram followers',
-        'Instagram followers organically',
-        'organic Instagram growth',
-        'more Instagram followers',
-      ],
+      phrases: ['Instagram followers', 'follower count', 'more Instagram followers'],
       articleSlug: 'how-to-grow-instagram-followers-organically',
     },
     {
-      phrases: ['Instagram hashtags', 'hashtag strategy', 'hashtags'],
-      articleSlug: 'how-to-use-instagram-hashtags-effectively',
+      phrases: ['Instagram Reels views', 'Reels views'],
+      articleSlug: 'how-instagram-reels-views-are-counted',
     },
     {
-      phrases: ['content calendar', 'Instagram content calendar'],
-      articleSlug: 'how-to-create-an-instagram-content-calendar',
+      phrases: ['followers drop', 'followers dropping'],
+      articleSlug: 'why-instagram-followers-drop',
     },
     {
-      phrases: ['Instagram likes', 'more likes'],
-      articleSlug: 'how-to-get-more-instagram-likes',
+      phrases: ['private Instagram account', 'public Instagram account'],
+      articleSlug: 'public-vs-private-instagram-account',
     },
     {
-      phrases: ['common mistakes', 'growth mistakes'],
-      articleSlug: 'common-instagram-growth-mistakes',
+      phrases: ['followers vs likes', 'likes vs views'],
+      articleSlug: 'instagram-followers-vs-likes-vs-views-vs-comments',
     },
   ],
   tiktok: [
     {
-      phrases: ['TikTok algorithm', 'For You Page', 'the algorithm'],
-      articleSlug: 'how-the-tiktok-algorithm-works',
-    },
-    {
       phrases: ['TikTok SEO', 'TikTok search'],
-      articleSlug: 'tiktok-seo-guide',
+      articleSlug: 'tiktok-seo',
     },
     {
-      phrases: ['TikTok engagement', 'increase engagement'],
-      articleSlug: 'how-to-increase-tiktok-engagement',
+      phrases: ['TikTok views', 'video views are counted'],
+      articleSlug: 'how-tiktok-video-views-are-counted',
     },
     {
-      phrases: ['TikTok followers', 'more TikTok followers'],
-      articleSlug: 'how-to-get-more-tiktok-followers',
+      phrases: ['TikTok followers', 'more TikTok followers', '1,000 TikTok followers'],
+      articleSlug: 'how-to-get-1000-tiktok-followers',
     },
     {
-      phrases: ['TikTok views', 'more views'],
-      articleSlug: 'how-to-get-more-tiktok-views',
+      phrases: ['followers vs likes vs views'],
+      articleSlug: 'tiktok-followers-vs-likes-vs-views',
     },
     {
-      phrases: ['content calendar', 'TikTok content calendar'],
-      articleSlug: 'how-to-create-a-tiktok-content-calendar',
+      phrases: ['views but no followers'],
+      articleSlug: 'tiktok-views-but-no-followers',
     },
     {
-      phrases: ['common mistakes', 'growth mistakes'],
-      articleSlug: 'common-tiktok-growth-mistakes',
+      phrases: ['go LIVE on TikTok', 'LIVE on TikTok'],
+      articleSlug: 'how-many-followers-to-go-live-on-tiktok',
+    },
+    {
+      phrases: ['private TikTok account', 'public TikTok account'],
+      articleSlug: 'public-vs-private-tiktok-account',
+    },
+    {
+      phrases: ['followers drop', 'followers dropping'],
+      articleSlug: 'why-tiktok-followers-drop',
     },
   ],
   facebook: [
     {
-      phrases: ['Facebook algorithm', 'the algorithm'],
-      articleSlug: 'how-the-facebook-algorithm-works',
+      phrases: ['Facebook Page reach', 'Page reach'],
+      articleSlug: 'how-facebook-page-reach-works',
     },
     {
-      phrases: ['Facebook SEO', 'Page SEO'],
-      articleSlug: 'facebook-seo-guide',
+      phrases: [
+        'Facebook Followers',
+        'Page Likes',
+        'Post Likes',
+        'followers vs Page Likes',
+      ],
+      articleSlug: 'facebook-followers-vs-page-likes-vs-post-likes',
     },
     {
-      phrases: ['Facebook engagement', 'increase engagement'],
-      articleSlug: 'how-to-increase-facebook-engagement',
+      phrases: ['Facebook Page followers', 'more Facebook Page followers'],
+      articleSlug: 'how-to-get-more-facebook-page-followers',
     },
     {
-      phrases: ['Facebook followers', 'more Facebook followers'],
-      articleSlug: 'how-to-get-more-facebook-followers',
+      phrases: ['likes on a Facebook post', 'Facebook post likes'],
+      articleSlug: 'how-to-get-more-likes-on-facebook-post',
     },
     {
-      phrases: ['Page Likes', 'Facebook Page Likes'],
-      articleSlug: 'how-to-get-more-facebook-page-likes',
-    },
-    {
-      phrases: ['best time to post', 'posting times'],
-      articleSlug: 'best-time-to-post-on-facebook',
+      phrases: ['Page followers drop', 'followers drop'],
+      articleSlug: 'why-facebook-page-followers-drop',
     },
   ],
-  youtube: [
-    {
-      phrases: ['YouTube algorithm', 'the algorithm'],
-      articleSlug: 'how-the-youtube-algorithm-works',
-    },
-    {
-      phrases: ['YouTube SEO', 'video SEO'],
-      articleSlug: 'youtube-seo-guide',
-    },
-    {
-      phrases: ['YouTube subscribers', 'more subscribers'],
-      articleSlug: 'how-to-get-more-youtube-subscribers',
-    },
-    {
-      phrases: ['YouTube views', 'more views'],
-      articleSlug: 'how-to-get-more-youtube-views',
-    },
-    {
-      phrases: ['common mistakes', 'growth mistakes'],
-      articleSlug: 'common-youtube-growth-mistakes',
-    },
-  ],
+  youtube: [],
 };
 
 const SERVICE_PHRASE_BANK: Record<
@@ -353,12 +324,12 @@ export function buildContextualLinkTargets(
     group: 'pillar',
   });
 
-  // Cross-cluster guides for sparse categories
+  // Cross-cluster guides for sparse categories (live corpus only)
   for (const slug of [
-    'beginners-guide-to-social-media-growth',
-    'social-media-marketing-guide',
-    'how-social-media-algorithms-work',
-    'social-media-trends-2026',
+    'tiktok-seo',
+    'how-instagram-algorithm-works',
+    'facebook-followers-vs-page-likes-vs-post-likes',
+    'instagram-followers-vs-likes-vs-views-vs-comments',
   ]) {
     if (slug === article.slug) continue;
     const item = getPublicLearnArticleBySlug(slug);
@@ -535,12 +506,16 @@ export function applyContextualLinksToBlocks(
 
       appliedCount += matches.length;
       previousBlockReceivedLink = true;
+      const existingLinks = block.inlineLinks ?? [];
+      const mergedLinks = [...existingLinks];
+      for (const match of matches) {
+        if (!mergedLinks.some((link) => link.href === match.href)) {
+          mergedLinks.push({ href: match.href, label: match.label });
+        }
+      }
       return {
         ...block,
-        inlineLinks: matches.map((match) => ({
-          href: match.href,
-          label: match.label,
-        })),
+        inlineLinks: mergedLinks,
       };
     }
 
@@ -581,9 +556,20 @@ export function applyContextualLinksToBlocks(
 
       appliedCount += itemLinks.length;
       previousBlockReceivedLink = true;
+      const existingItemLinks = block.inlineItemLinks ?? [];
+      const mergedItemLinks = [...existingItemLinks];
+      for (const link of itemLinks) {
+        if (
+          !mergedItemLinks.some(
+            (item) => item.itemIndex === link.itemIndex && item.href === link.href,
+          )
+        ) {
+          mergedItemLinks.push(link);
+        }
+      }
       return {
         ...block,
-        inlineItemLinks: itemLinks,
+        inlineItemLinks: mergedItemLinks,
       };
     }
 
