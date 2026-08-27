@@ -2,6 +2,7 @@
 
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 type FacebookPostLikesHeroDashboardProps = {
@@ -17,6 +18,7 @@ export function FacebookPostLikesHeroDashboard({
   className,
   packagePreview,
 }: FacebookPostLikesHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -34,7 +36,7 @@ export function FacebookPostLikesHeroDashboard({
       </div>
       <div className="pointer-events-none absolute top-[18%] -right-4 z-20 hidden rounded-2xl border border-white/90 bg-white px-3 py-2 shadow-[0_16px_32px_-14px_rgba(0,0,0,0.45)] sm:block">
         <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">Metric</p>
-        <p className="text-xs font-bold text-stone-800">Post Likes</p>
+        <p className="text-xs font-bold text-stone-800">{d('Post Likes')}</p>
       </div>
 
       <div className="relative overflow-hidden rounded-[1.35rem] border border-white/40 bg-white/80 p-4 shadow-[0_28px_60px_-32px_rgba(12,74,138,0.55)] backdrop-blur-xl sm:p-5">
@@ -90,7 +92,7 @@ export function FacebookPostLikesHeroDashboard({
               <div className="flex items-center gap-3 text-[10px] font-semibold text-stone-600">
                 <span className="inline-flex items-center gap-1">
                   <ThumbsUp className="size-3" style={{ color: fbBlue }} />
-                  Post Likes
+                  {d('Post Likes')}
                 </span>
               </div>
             </div>
@@ -105,7 +107,7 @@ export function FacebookPostLikesHeroDashboard({
               }}
             >
               <p className="text-[9px] font-semibold tracking-wide text-stone-500 uppercase">
-                Selected package
+                {d('Selected package')}
               </p>
               <p className="text-sm font-bold text-stone-900">{packagePreview.title}</p>
               <p className="text-xs font-semibold" style={{ color: brand }}>

@@ -1,5 +1,5 @@
 {
-  "h1": "Opiniones de clientes",
+  "h1": "Reseñas de NovaLikes",
   "intro": "Opiniones de clientes del catálogo publicado de NovaLikes. Las valoraciones de abajo reflejan ese catálogo y pueden incluir comentarios de 4 y 5 estrellas.",
   "catalogueHeading": "Catálogo de opiniones de clientes",
   "emptyFilter": "Ninguna opinión coincide con este filtro de plataforma.",
@@ -20,5 +20,6 @@
   "showLess": "Mostrar menos",
   "chrome": {
     "breadcrumb": "Opiniones"
-  }
+  },
+  "eyebrow": "OPINIONES DE CLIENTES"
 }

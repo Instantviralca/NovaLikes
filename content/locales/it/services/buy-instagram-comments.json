@@ -7,7 +7,7 @@
       "description": "Comprare commenti Instagram in tutto il mondo con opzioni di pacchetto chiare, URL del post pubblico, checkout sicuro, dettagli di consegna e tracciamento ordine tramite NovaLikes."
     },
     "hero": {
-      "eyebrow": "COMPRARE COMMENTI INSTAGRAM",
+      "eyebrow": "SERVIZI INSTAGRAM",
       "title": "Comprare commenti Instagram",
       "description": "Comprare commenti Instagram per un post o un Reel pubblico significa scegliere il pacchetto e la quantità adatti al contenuto che vuoi usare. NovaLikes ti consente di confrontare opzioni e prezzi dei commenti prima di ordinare. Seleziona il pacchetto, indica l’URL pubblico corretto del post Instagram e completa l’ordine online. La password Instagram non è richiesta e, dopo il checkout, puoi usare il tracciamento per vedere gli aggiornamenti di stato disponibili.",
       "purpose": "Convert visitors searching for Instagram comments packages",
@@ -241,7 +241,7 @@
     "relatedServices": {
       "id": "related-instagram-services-comments",
       "title": "Servizi Instagram correlati che si abbinano ai commenti",
-      "description": "I commenti aprono la conversazione. Abbinali ai like per le prime reazioni, alle views per il tempo sui Reel o ai follower quando ti serve un pubblico più ampio per i thread futuri.",
+      "description": "I commenti aprono la conversazione. Abbinali ai like per le prime reazioni, alle visualizzazioni per il tempo sui Reel o ai follower quando ti serve un pubblico più ampio per i thread futuri.",
       "purpose": "Internal links to sibling Instagram offers",
       "serviceSlugs": [
         "buy-instagram-followers",
@@ -311,7 +311,7 @@
           {
             "id": "buy-instagram-comments-4",
             "title": "Cosa cambia un ordine di commenti Instagram",
-            "description": "Un ordine di commenti Instagram aggiunge commenti al post o al Reel specifico indicato con l’ordine. Non cambia il conteggio di follower, like o views dell’account.",
+            "description": "Un ordine di commenti Instagram aggiunge commenti al post o al Reel specifico indicato con l’ordine. Non cambia il conteggio di follower, Mi piace o visualizzazioni dell’account.",
             "icon": "clapperboard"
           },
           {
@@ -323,7 +323,7 @@
           {
             "id": "buy-instagram-comments-6",
             "title": "Cosa non includono i commenti Instagram",
-            "description": "I commenti sono separati da follower, like e views. Ordinare commenti Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
+            "description": "I commenti sono separati da follower, like e visualizzazioni. Ordinare commenti Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
             "icon": "megaphone"
           }
         ],
@@ -391,7 +391,7 @@
           "href": "/buy-instagram-likes",
           "ctaLabel": "Vedi like Instagram"
         },
-        "combinedNote": "Se vuoi aumentare il conteggio views su video idonei, Views Instagram è disponibile come servizio separato.",
+        "combinedNote": "Se vuoi aumentare il conteggio visualizzazioni su video idonei, Visualizzazioni Instagram è disponibile come servizio separato.",
         "commentsHref": "/buy-instagram-views"
       },
       "beforeBuying": {
@@ -421,7 +421,7 @@
           {
             "id": "buy-instagram-comments-10",
             "title": "Scegli il servizio Instagram giusto",
-            "description": "Commenti, follower, like e views sono servizi distinti. Verifica che Commenti Instagram sia il servizio che ti serve prima di effettuare l’ordine.",
+            "description": "Commenti, follower, like e visualizzazioni sono servizi distinti. Verifica che Commenti Instagram sia il servizio che ti serve prima di effettuare l’ordine.",
             "icon": "truck"
           },
           {
@@ -460,7 +460,7 @@
           {
             "id": "buy-instagram-comments-15",
             "title": "I commenti sono una metrica separata",
-            "description": "I commenti non aggiungono automaticamente follower, like o views. Scegli il servizio che corrisponde alla metrica che vuoi davvero per il contenuto.",
+            "description": "I commenti non aggiungono automaticamente follower, Mi piace o visualizzazioni. Scegli il servizio che corrisponde alla metrica che vuoi davvero per il contenuto.",
             "icon": "clapperboard"
           }
         ]
@@ -524,7 +524,7 @@
           {
             "id": "buy-instagram-comments-19",
             "title": "Consulta Insights Instagram",
-            "description": "Se Insights è disponibile sul tuo account, rivedi portata, interazioni, views e altri dati sui contenuti per capire come performano post e Reel.",
+            "description": "Se Insights è disponibile sul tuo account, rivedi portata, interazioni, visualizzazioni e altri dati sui contenuti per capire come performano post e Reel.",
             "icon": "shield-check"
           },
           {
@@ -556,7 +556,7 @@
           {
             "id": "buy-instagram-comments-23",
             "title": "Scegliere il servizio Instagram sbagliato",
-            "description": "Commenti, follower, like e views sono servizi distinti. Scegli Commenti Instagram solo quando vuoi ordinare commenti su un contenuto specifico.",
+            "description": "Commenti, follower, like e visualizzazioni sono servizi distinti. Scegli Commenti Instagram solo quando vuoi ordinare commenti su un contenuto specifico.",
             "icon": "heart"
           },
           {
@@ -574,7 +574,7 @@
           {
             "id": "buy-instagram-comments-26",
             "title": "Aspettarsi che i commenti garantiscano altri risultati",
-            "description": "Ordinare commenti non significa automaticamente più follower, like, views, portata, vendite o crescita organica.",
+            "description": "Ordinare commenti non significa automaticamente più follower, Mi piace, visualizzazioni, portata, vendite o crescita organica.",
             "icon": "clapperboard"
           },
           {
@@ -598,9 +598,9 @@
             "ctaLabel": "Vedi like Instagram"
           },
           "buy-instagram-views": {
-            "title": "Views Instagram",
-            "description": "Scegli Views Instagram quando vuoi aumentare il conteggio views mostrato su un Reel o un video pubblico idoneo.",
-            "ctaLabel": "Vedi views Instagram"
+            "title": "Visualizzazioni Instagram",
+            "description": "Scegli Visualizzazioni Instagram quando vuoi aumentare il conteggio delle visualizzazioni mostrato su un Reel o un video pubblico idoneo.",
+            "ctaLabel": "Vedi visualizzazioni Instagram"
           }
         }
       }
@@ -608,7 +608,7 @@
     "whyBuy": {
       "id": "buy-instagram-comments-why-buy",
       "title": "Perché si comprano commenti Instagram?",
-      "description": "Si comprano commenti Instagram per tipi diversi di post e Reel. Alcuni usano i pacchetti commenti per contenuti di prodotto, annunci, campagne o altri post su cui vogliono più commenti visibili. Il servizio aggiunge commenti al contenuto selezionato, ma non garantisce più follower, like, views, portata, vendite o crescita organica.",
+      "description": "Si comprano commenti Instagram per tipi diversi di post e Reel. Alcuni usano i pacchetti commenti per contenuti di prodotto, annunci, campagne o altri post su cui vogliono più commenti visibili. Il servizio aggiunge commenti al contenuto selezionato, ma non garantisce più follower, Mi piace, visualizzazioni, portata, vendite o crescita organica.",
       "items": [
         {
           "id": "buy-instagram-comments-wb-1",
@@ -623,7 +623,7 @@
         {
           "id": "buy-instagram-comments-wb-3",
           "title": "Concentrati sulla metrica commenti",
-          "description": "I commenti Instagram si applicano al contenuto selezionato, invece di cambiare il numero di follower del profilo o di aggiungere automaticamente like o views."
+          "description": "I commenti Instagram si applicano al contenuto selezionato, invece di cambiare il numero di follower del profilo o di aggiungere automaticamente Mi piace o visualizzazioni."
         },
         {
           "id": "buy-instagram-comments-wb-4",
@@ -636,7 +636,7 @@
           "description": "Comprare commenti non sostituisce la pubblicazione e la gestione dei tuoi contenuti. Didascalie, risposte, nuovi post e altre attività dell’account dipendono ancora da come gestisci la presenza Instagram."
         }
       ],
-      "bottomNote": "Se vuoi cambiare il numero di follower, il conteggio like o le views video invece di aggiungere commenti, scegli invece il servizio Instagram corrispondente."
+      "bottomNote": "Se vuoi cambiare il numero di follower, il conteggio like o le visualizzazioni video invece di aggiungere commenti, scegli invece il servizio Instagram corrispondente."
     },
     "howToBuy": {
       "id": "how-it-works",
@@ -666,6 +666,6 @@
       ]
     },
     "relatedHeading": "Scopri altri servizi Instagram",
-    "relatedIntro": "I commenti sono solo una metrica Instagram. Se vuoi lavorare sul numero di follower del profilo, sui like di contenuti specifici o sulle views di un Reel o di un video, confronta gli altri servizi Instagram qui sotto."
+    "relatedIntro": "I commenti sono solo una metrica Instagram. Se vuoi lavorare sul numero di follower del profilo, sui like di contenuti specifici o sulle visualizzazioni di un Reel o di un video, confronta gli altri servizi Instagram qui sotto."
   }
 }

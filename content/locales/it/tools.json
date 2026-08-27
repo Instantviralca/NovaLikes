@@ -1,6 +1,6 @@
 {
   "hub": {
-    "eyebrow": "Strumenti gratis",
+    "eyebrow": "STRUMENTI GRATUITI PER I SOCIAL",
     "h1": "Strumenti gratis per Instagram, TikTok e Facebook",
     "lead": "Consulta un profilo pubblico, verifica un conteggio follower pubblicato o recupera un file video che la piattaforma espone già. Ogni assistente gira sui server NovaLikes e restituisce solo informazioni pubbliche — mai un contenuto privato, una sessione di accesso o un download inventato.",
     "howHeading": "Come funzionano questi strumenti",
@@ -201,7 +201,7 @@
     },
     "instagram-video-downloader": {
       "eyebrow": "Strumento Instagram",
-      "h1": "Downloader video / Reels Instagram",
+      "h1": "Downloader video e Reels Instagram",
       "lead": "Incolla l’URL di un Reel o di un post video Instagram pubblico. NovaLikes controlla la pagina pubblica e offre un file solo quando Instagram ne include uno. Molti post pubblici al momento non lo fanno. Questa è Disponibilità limitata — non uno strumento rotto e non un download falso.",
       "inputLabel": "URL pubblico di Reel o video Instagram",
       "helperText": "Un file viene offerto solo se Instagram lo include sulla pagina pubblica.",
@@ -529,7 +529,7 @@
       "availabilityLabel": "Disponibile"
     },
     "instagram-video-downloader": {
-      "name": "Downloader video / Reels Instagram",
+      "name": "Downloader video e Reels Instagram",
       "shortDescription": "Controlla un Reel o un post video Instagram pubblico. Un file viene restituito solo se Instagram ne espone uno.",
       "placeholder": "https://www.instagram.com/reel/...",
       "actionLabel": "Controlla video",
@@ -856,11 +856,11 @@
     "serviceLabels": {
       "buy-instagram-followers": "Follower Instagram",
       "buy-instagram-likes": "Like Instagram",
-      "buy-instagram-views": "Views Instagram",
+      "buy-instagram-views": "Visualizzazioni Instagram",
       "buy-instagram-comments": "Commenti Instagram",
       "buy-tiktok-followers": "Follower TikTok",
       "buy-tiktok-likes": "Like TikTok",
-      "buy-tiktok-views": "Views TikTok",
+      "buy-tiktok-views": "Visualizzazioni TikTok",
       "buy-facebook-followers": "Follower Facebook",
       "buy-facebook-page-likes": "Mi piace Pagina Facebook",
       "buy-facebook-post-likes": "Mi piace post Facebook"

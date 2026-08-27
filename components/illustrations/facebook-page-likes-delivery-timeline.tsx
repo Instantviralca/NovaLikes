@@ -15,6 +15,7 @@ import { Section } from '@/components/layout/section';
 import { FadeUp } from '@/components/motion/fade-up';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const STEPS = [
@@ -65,6 +66,7 @@ export function FacebookPageLikesDeliveryTimeline({
   description = 'Delivery begins after your order has been confirmed and reviewed. Processing time depends on the selected package and current demand. You can review available progress updates through the order tracking page until delivery is complete.',
   className,
 }: FacebookPageLikesDeliveryTimelineProps) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const [active, setActive] = useState(0);
 
@@ -94,7 +96,7 @@ export function FacebookPageLikesDeliveryTimeline({
       <Container size="xl">
         <FadeUp className="mb-10 max-w-2xl space-y-3">
           <Heading as="h2" size="h2" id={`${id}-heading`}>
-            {title}
+            {d(title)}
           </Heading>
           <MutedText>{description}</MutedText>
         </FadeUp>
@@ -156,7 +158,7 @@ export function FacebookPageLikesDeliveryTimeline({
                           !isDone && !isActive && 'text-stone-400',
                         )}
                       >
-                        {step.title}
+                        {d(step.title)}
                       </p>
                       <p
                         className={cn(
@@ -166,7 +168,7 @@ export function FacebookPageLikesDeliveryTimeline({
                             : 'text-stone-400',
                         )}
                       >
-                        {step.description}
+                        {d(step.description)}
                       </p>
                       {index < STEPS.length - 1 ? (
                         <span className="mt-3 text-[var(--brand-primary)] sm:hidden" aria-hidden>

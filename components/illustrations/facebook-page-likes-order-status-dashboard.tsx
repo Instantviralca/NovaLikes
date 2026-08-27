@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const STATUS_ROWS = [
@@ -25,6 +26,7 @@ export function FacebookPageLikesOrderStatusDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [likes, setLikes] = useState<number>(LIKE_KEYS[0]);
@@ -78,13 +80,13 @@ export function FacebookPageLikesOrderStatusDashboard({
             </span>
             <div>
               <p className="text-sm font-bold text-[var(--text-primary)]">
-                Page Likes Order Status
+                {d('Page Likes Order Status')}
               </p>
               <p className="text-xs text-[var(--text-muted)]">Meta Business Suite</p>
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2.5 py-1 text-[10px] font-bold text-sky-700">
-            Live
+            {d('Live')}
           </span>
         </div>
 
@@ -111,7 +113,7 @@ export function FacebookPageLikesOrderStatusDashboard({
               <div>
                 <p className="text-[11px] font-bold text-stone-900">Your Business Page</p>
                 <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
-                  Page likes
+                  {d('Page likes')}
                 </p>
                 <p className="text-lg font-black tabular-nums text-stone-900">
                   {(likes / 1000).toFixed(1)}K
@@ -121,7 +123,7 @@ export function FacebookPageLikesOrderStatusDashboard({
                 <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
                   Package selected
                 </p>
-                <p className="text-sm font-bold text-stone-800">500 Page Likes</p>
+                <p className="text-sm font-bold text-stone-800">{d('500 Page Likes')}</p>
               </div>
             </div>
           </div>
@@ -201,7 +203,7 @@ export function FacebookPageLikesOrderStatusDashboard({
                     : 'text-stone-400',
                 )}
               >
-                {row.label}
+                {d(row.label)}
               </span>
             </li>
           ))}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 
 const FLOW = [
   'Page Selected',
@@ -16,6 +17,7 @@ const FLOW = [
  * Facebook Page Likes horizontal progress flow for How To Buy.
  */
 export function FacebookPageLikesProcessTimeline({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const [active, setActive] = useState(0);
 
@@ -77,7 +79,7 @@ export function FacebookPageLikesProcessTimeline({ className }: { className?: st
                     isActive || isDone ? 'text-stone-800' : 'text-stone-400',
                   )}
                 >
-                  {label}
+                  {d(label)}
                 </p>
                 {index < FLOW.length - 1 ? (
                   <span className="mt-1 text-[10px] text-[var(--brand-primary)] sm:hidden" aria-hidden>

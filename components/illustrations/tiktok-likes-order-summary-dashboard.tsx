@@ -1,5 +1,6 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const ROWS = [
@@ -13,6 +14,7 @@ const ROWS = [
  * TikTok Likes order summary for “What We Need To Process Your Order”.
  */
 export function TikTokLikesOrderSummaryDashboard({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
   const brand = '#F97316';
@@ -45,7 +47,7 @@ export function TikTokLikesOrderSummaryDashboard({ className }: { className?: st
             </span>
             <div>
               <p className="text-sm font-bold text-stone-900">Order Details</p>
-              <p className="text-xs text-stone-500">TikTok Likes</p>
+              <p className="text-xs text-stone-500">{d('TikTok Likes')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
@@ -75,9 +77,9 @@ export function TikTokLikesOrderSummaryDashboard({ className }: { className?: st
                   </span>
                   <div className="min-w-0">
                     <p className="text-[10px] font-semibold tracking-wide text-stone-400 uppercase">
-                      {row.label}
+                      {d(row.label)}
                     </p>
-                    <p className="truncate text-sm font-bold text-stone-800">{row.value}</p>
+                    <p className="truncate text-sm font-bold text-stone-800">{d(row.value)}</p>
                   </div>
                 </div>
               </li>

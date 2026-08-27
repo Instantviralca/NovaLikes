@@ -1,13 +1,17 @@
 import Link from 'next/link';
 import {
   Briefcase,
+  Facebook,
   Flame,
   Headphones,
+  Instagram,
+  Linkedin,
   ShieldCheck,
   User,
   Zap,
   type LucideIcon,
 } from 'lucide-react';
+import type { ReactNode } from 'react';
 
 import { FooterLanguageSwitcher } from '@/components/i18n/footer-language-switcher';
 import { Logo } from '@/components/common/logo';
@@ -31,6 +35,21 @@ const COLUMN_ICONS: Record<string, LucideIcon> = {
 
 const PAYMENT_MARKS = ['Visa', 'Mastercard', 'Amex', 'Discover', 'Apple Pay'] as const;
 
+type FooterSocial = {
+  label: string;
+  href: string;
+  icon: ReactNode;
+  buttonClass: string;
+};
+
+function TikTokGlyph({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .56.04.82.12V9.01a6.27 6.27 0 0 0-.82-.05A6.34 6.34 0 0 0 3.15 15.3a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.2 8.2 0 0 0 4.76 1.52V6.84a4.86 4.86 0 0 1-1-.15Z" />
+    </svg>
+  );
+}
+
 type FooterProps = {
   className?: string;
   locale?: Locale;
@@ -44,11 +63,31 @@ export function Footer({
 }: FooterProps) {
   const columns = getLocalizedFooterColumns(locale, ui);
 
-  const socials = [
-    { label: 'Instagram', href: site.socialLinks.instagram },
-    { label: 'Facebook', href: site.socialLinks.facebook },
-    { label: 'LinkedIn', href: site.socialLinks.linkedin },
-    { label: 'TikTok', href: site.socialLinks.tiktok },
+  const socials: FooterSocial[] = [
+    {
+      label: 'Instagram',
+      href: site.socialLinks.instagram,
+      icon: <Instagram className="size-4" strokeWidth={2.2} aria-hidden="true" />,
+      buttonClass: 'bg-[linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)] text-white',
+    },
+    {
+      label: 'Facebook',
+      href: site.socialLinks.facebook,
+      icon: <Facebook className="size-4" strokeWidth={2.2} aria-hidden="true" />,
+      buttonClass: 'bg-[#1877F2] text-white',
+    },
+    {
+      label: 'LinkedIn',
+      href: site.socialLinks.linkedin,
+      icon: <Linkedin className="size-4" strokeWidth={2.2} aria-hidden="true" />,
+      buttonClass: 'bg-[#0A66C2] text-white',
+    },
+    {
+      label: 'TikTok',
+      href: site.socialLinks.tiktok,
+      icon: <TikTokGlyph className="size-4" />,
+      buttonClass: 'bg-[#111111] text-white',
+    },
   ].filter((item) => item.href);
 
   const trustChips = [
@@ -136,37 +175,26 @@ export function Footer({
               <p className="text-[11px] font-semibold tracking-[0.14em] text-[#E85D04] uppercase">
                 {ui.footer.followUs}
               </p>
-              <ul className="mt-2 flex flex-wrap gap-3 text-sm" dir="ltr">
+              <ul className="mt-2 flex flex-wrap items-center gap-2.5" dir="ltr">
                 {socials.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-[#E85D04] underline-offset-4 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.label}
+                      className={cn(
+                        'inline-flex size-9 items-center justify-center rounded-full shadow-sm transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+                        link.buttonClass,
+                      )}
                     >
-                      {link.label}
+                      {link.icon}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-          ) : (
-            <div aria-hidden="true">
-              <p className="text-[11px] font-semibold tracking-[0.14em] text-[#E85D04] uppercase">
-                {ui.footer.followUs}
-              </p>
-              <div className="mt-2 flex gap-2">
-                <span className="inline-flex size-9 items-center justify-center rounded-full bg-[linear-gradient(135deg,#F58529,#DD2A7B)] text-[10px] font-bold text-white">
-                  IG
-                </span>
-                <span className="inline-flex size-9 items-center justify-center rounded-full bg-[#111111] text-[10px] font-bold text-white">
-                  TT
-                </span>
-                <span className="inline-flex size-9 items-center justify-center rounded-full bg-[#1877F2] text-[10px] font-bold text-white">
-                  FB
-                </span>
-              </div>
-            </div>
-          )}
+          ) : null}
 
           <ul className="flex items-center gap-3 text-sm font-semibold text-[#E85D04]">
             {footerMeta.socialLinks.map((link, index) => (

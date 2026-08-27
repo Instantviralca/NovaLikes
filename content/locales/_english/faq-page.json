@@ -1,9 +1,10 @@
 {
   "hero": {
-    "title": "Frequently Asked Questions About NovaLikes",
+    "title": "Frequently Asked Questions",
     "description": "Find clear answers about NovaLikes, Instagram, TikTok and Facebook services, placing an order, account requirements, delivery, payments and support. Browse by category or search for a specific question below.",
     "purpose": "Help customers find answers before contacting support",
-    "primaryKeyword": "NovaLikes FAQ"
+    "primaryKeyword": "NovaLikes FAQ",
+    "eyebrow": "HELP CENTER"
   },
   "search": {
     "label": "Search questions",

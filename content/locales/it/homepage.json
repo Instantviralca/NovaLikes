@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "CRESCITA SOCIAL PER INSTAGRAM, TIKTOK E FACEBOOK",
+    "eyebrow": "INSTAGRAM • TIKTOK • FACEBOOK",
     "title": "Fai crescere la tua presenza social con NovaLikes",
-    "description": "Compra follower, like, views e commenti per Instagram, TikTok e Facebook. NovaLikes ti mostra opzioni di pacchetto chiare per ogni servizio, così puoi scegliere quello adatto al tuo account e ordinare senza condividere la password. Seleziona un servizio, scegli un pacchetto, inserisci i dati pubblici del profilo o del contenuto e completa l’ordine online.",
+    "description": "Compra follower, Mi piace, visualizzazioni e commenti per Instagram, TikTok e Facebook. NovaLikes ti mostra opzioni di pacchetto chiare per ogni servizio, così puoi scegliere quello adatto al tuo account e ordinare senza condividere la password. Seleziona un servizio, scegli un pacchetto, inserisci i dati pubblici del profilo o del contenuto e completa l’ordine online.",
     "primaryCta": {
       "label": "Esplora i servizi",
       "href": "#services-overview"
@@ -68,7 +68,7 @@
       {
         "id": "instagram",
         "name": "Instagram",
-        "description": "Follower, like, views e commenti per profili e contenuti Instagram.",
+        "description": "follower, Mi piace, visualizzazioni e commenti per profili e contenuti Instagram.",
         "href": "#instagram-services",
         "ctaLabel": "Vedi Instagram",
         "badge": "Servizi Instagram",
@@ -88,7 +88,7 @@
             "icon": "heart"
           },
           {
-            "label": "Views dei Reel",
+            "label": "Visualizzazioni dei Reel",
             "href": "/buy-instagram-views",
             "icon": "play"
           },
@@ -102,12 +102,12 @@
       {
         "id": "tiktok",
         "name": "TikTok",
-        "description": "Follower, like e views per account e video TikTok.",
+        "description": "Follower, Mi piace e visualizzazioni per account e video TikTok.",
         "href": "#tiktok-services",
         "ctaLabel": "Vedi TikTok",
         "metric": {
           "value": "Video",
-          "label": "Views"
+          "label": "Visualizzazioni"
         },
         "tags": [
           {
@@ -121,7 +121,7 @@
             "icon": "heart"
           },
           {
-            "label": "Views dei video",
+            "label": "Visualizzazioni dei video",
             "href": "/buy-tiktok-views",
             "icon": "eye"
           },
@@ -171,7 +171,7 @@
     "id": "services-overview",
     "eyebrow": "Tutti i servizi",
     "title": "Tutti i servizi NovaLikes",
-    "description": "Scegli il servizio che corrisponde a ciò che vuoi far crescere. NovaLikes offre follower, like, views, commenti, Mi piace Pagina e Mi piace post su Instagram, TikTok e Facebook. Apri qualsiasi servizio per confrontare quantità e prezzi dei pacchetti.",
+    "description": "Scegli il servizio che corrisponde a ciò che vuoi far crescere. NovaLikes offre follower, Mi piace, visualizzazioni, commenti, Mi piace Pagina e Mi piace post su Instagram, TikTok e Facebook. Apri qualsiasi servizio per confrontare quantità e prezzi dei pacchetti.",
     "trustNote": "Confronta servizi e opzioni di pacchetto",
     "features": [
       {
@@ -200,12 +200,12 @@
     "instagram": {
       "id": "instagram-services",
       "title": "Crescita su Instagram",
-      "description": "Scegli tra follower, like, views e commenti in base a ciò che vuoi migliorare su Instagram."
+      "description": "Scegli tra follower, Mi piace, visualizzazioni e commenti in base a ciò che vuoi migliorare su Instagram."
     },
     "tiktok": {
       "id": "tiktok-services",
       "title": "Crescita su TikTok",
-      "description": "Scegli follower, like o views a seconda di ciò che vuoi aggiungere al tuo account o ai tuoi video TikTok."
+      "description": "Scegli follower, Mi piace o visualizzazioni a seconda di ciò che vuoi aggiungere al tuo account o ai tuoi video TikTok."
     },
     "facebook": {
       "id": "facebook-services",
@@ -243,7 +243,7 @@
     "steps": [
       {
         "title": "Scegli un servizio",
-        "body": "Seleziona Instagram, TikTok o Facebook, poi scegli i follower, like, views, commenti, Mi piace Pagina o Mi piace post di cui hai bisogno."
+        "body": "Seleziona Instagram, TikTok o Facebook, poi scegli i follower, Mi piace, visualizzazioni, commenti, Mi piace Pagina o Mi piace post di cui hai bisogno."
       },
       {
         "title": "Scegli un pacchetto",
@@ -289,7 +289,7 @@
     "items": [
       {
         "question": "Scegli il servizio giusto",
-        "answer": "Verifica se ti servono follower, like, views, commenti, Mi piace Pagina o Mi piace post prima di selezionare un pacchetto."
+        "answer": "Verifica se ti servono follower, Mi piace, visualizzazioni, commenti, Mi piace Pagina o Mi piace post prima di selezionare un pacchetto."
       },
       {
         "question": "Controlla il profilo o il contenuto",
@@ -312,7 +312,7 @@
     "items": [
       {
         "question": "Quali servizi social posso ordinare su NovaLikes?",
-        "answer": "NovaLikes offre follower, like, views, commenti, Mi piace Pagina e Mi piace post su Instagram, TikTok e Facebook. Le opzioni disponibili dipendono dalla piattaforma che scegli."
+        "answer": "NovaLikes offre follower, Mi piace, visualizzazioni, commenti, Mi piace Pagina e Mi piace post su Instagram, TikTok e Facebook. Le opzioni disponibili dipendono dalla piattaforma che scegli."
       },
       {
         "question": "Devo dare a NovaLikes la password dei social?",
@@ -398,11 +398,11 @@
         },
         {
           "title": "Focalizzato sul tuo profilo",
-          "text": "Questo servizio riguarda il numero di follower, non i like, le views o i commenti dei singoli post."
+          "text": "Questo servizio riguarda il numero di follower, non i like, le visualizzazioni o i commenti dei singoli post."
         },
         {
           "title": "Altri servizi Instagram",
-          "text": "Like, views e commenti sono disponibili separatamente quando vuoi lavorare sui singoli contenuti."
+          "text": "Mi piace, visualizzazioni e commenti sono disponibili separatamente quando vuoi lavorare sui singoli contenuti."
         }
       ],
       "cta": {
@@ -439,8 +439,8 @@
           "text": "Verifica di inviare esattamente il post o il Reel pubblico che vuoi usare."
         },
         {
-          "title": "Like, views o commenti",
-          "text": "Scegli le views per il conteggio delle visualizzazioni video, o i commenti se vuoi un altro tipo di interazione."
+          "title": "Mi piace, visualizzazioni o commenti",
+          "text": "Scegli le visualizzazioni per il conteggio delle visualizzazioni video, o i commenti se vuoi un altro tipo di interazione."
         }
       ],
       "cta": {
@@ -458,23 +458,23 @@
       "platform": "instagram",
       "slug": "buy-instagram-views",
       "href": "/buy-instagram-views",
-      "name": "Views Instagram",
-      "cardBlurb": "Pacchetti views per Reel e video Instagram idonei.",
-      "commercialLabel": "COMPRARE VIEWS INSTAGRAM",
-      "title": "Pacchetti views Instagram",
-      "intro": "Comprare views Instagram per un Reel o un video è utile quando vuoi aumentare il conteggio views visibile. Seleziona il numero di views che ti serve, aggiungi il link pubblico del contenuto e completa l’ordine senza condividere la password Instagram.",
+      "name": "Visualizzazioni Instagram",
+      "cardBlurb": "pacchetti visualizzazioni per Reel e video Instagram idonei.",
+      "commercialLabel": "Comprare visualizzazioni INSTAGRAM",
+      "title": "pacchetti visualizzazioni Instagram",
+      "intro": "Comprare visualizzazioni Instagram per un Reel o un video è utile quando vuoi aumentare il conteggio visualizzazioni visibile. Seleziona il numero di visualizzazioni che ti serve, aggiungi il link pubblico del contenuto e completa l’ordine senza condividere la password Instagram.",
       "points": [
         {
           "title": "Pensato per i video",
           "text": "Usa questo servizio per un Reel o un video Instagram pubblico idoneo."
         },
         {
-          "title": "Focalizzato sulle views",
-          "text": "Questo servizio riguarda il conteggio views del contenuto, non follower, like o commenti."
+          "title": "Focalizzato sulle visualizzazioni",
+          "text": "Questo servizio riguarda il conteggio visualizzazioni del contenuto, non follower, like o commenti."
         },
         {
           "title": "Scegli il video giusto",
-          "text": "Invia esattamente il Reel o il video pubblico a cui vuoi far arrivare le views."
+          "text": "Invia esattamente il Reel o il video pubblico a cui vuoi far arrivare le visualizzazioni."
         },
         {
           "title": "Ordina per contenuto",
@@ -482,12 +482,12 @@
         }
       ],
       "cta": {
-        "label": "Vedi views Instagram",
+        "label": "Vedi visualizzazioni Instagram",
         "href": "/buy-instagram-views"
       },
       "image": {
         "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
-        "alt": "Reel Instagram con indicatori di views video"
+        "alt": "Reel Instagram con indicatori di visualizzazioni video"
       },
       "tone": "orange"
     },
@@ -508,7 +508,7 @@
         },
         {
           "title": "Attività nei commenti",
-          "text": "I commenti aggiungono un tipo di interazione visibile diverso da like o views."
+          "text": "I commenti aggiungono un tipo di interazione visibile diverso da Mi piace o visualizzazioni."
         },
         {
           "title": "Specifico per il contenuto",
@@ -546,7 +546,7 @@
         },
         {
           "title": "Focalizzato sull’account",
-          "text": "I follower si applicano all’account, non ai like o alle views di un video specifico."
+          "text": "I follower si applicano all’account, non ai like o alle visualizzazioni di un video specifico."
         },
         {
           "title": "Scegli per il tuo account",
@@ -554,7 +554,7 @@
         },
         {
           "title": "I servizi video sono separati",
-          "text": "Like TikTok e Views TikTok sono disponibili quando vuoi lavorare sui singoli video."
+          "text": "Like TikTok e Visualizzazioni TikTok sono disponibili quando vuoi lavorare sui singoli video."
         }
       ],
       "cta": {
@@ -591,8 +591,8 @@
           "text": "Assicurati di inviare esattamente il video TikTok pubblico che vuoi usare."
         },
         {
-          "title": "Like o views",
-          "text": "Scegli invece Views TikTok se la metrica su cui vuoi lavorare è il conteggio views."
+          "title": "Mi piace o visualizzazioni",
+          "text": "Scegli invece Visualizzazioni TikTok se la metrica su cui vuoi lavorare è il conteggio delle visualizzazioni."
         }
       ],
       "cta": {
@@ -610,19 +610,19 @@
       "platform": "tiktok",
       "slug": "buy-tiktok-views",
       "href": "/buy-tiktok-views",
-      "name": "Views TikTok",
-      "cardBlurb": "Pacchetti views per video TikTok pubblici idonei.",
-      "commercialLabel": "COMPRARE VIEWS TIKTOK",
-      "title": "Pacchetti views TikTok",
-      "intro": "Comprare views TikTok per un video pubblico è utile quando vuoi aumentare il numero di views mostrato su quel post. Scegli il pacchetto views che ti serve, indica l’URL del video e completa l’ordine senza condividere la password TikTok.",
+      "name": "Visualizzazioni TikTok",
+      "cardBlurb": "pacchetti visualizzazioni per video TikTok pubblici idonei.",
+      "commercialLabel": "Comprare visualizzazioni TIKTOK",
+      "title": "pacchetti visualizzazioni TikTok",
+      "intro": "Comprare visualizzazioni TikTok per un video pubblico è utile quando vuoi aumentare il numero di visualizzazioni mostrato su quel post. Scegli il pacchetto visualizzazioni che ti serve, indica l’URL del video e completa l’ordine senza condividere la password TikTok.",
       "points": [
         {
           "title": "Per i video TikTok",
-          "text": "Scegli il video TikTok pubblico su cui vuoi far arrivare le views."
+          "text": "Scegli il video TikTok pubblico su cui vuoi far arrivare le visualizzazioni."
         },
         {
-          "title": "Focalizzato sul conteggio views",
-          "text": "Questo servizio lavora sulle views del video, non sui follower del profilo o sui like del video."
+          "title": "Focalizzato sul conteggio delle visualizzazioni",
+          "text": "Questo servizio lavora sulle visualizzazioni del video, non sui follower del profilo o sui like del video."
         },
         {
           "title": "Usa il video giusto",
@@ -634,12 +634,12 @@
         }
       ],
       "cta": {
-        "label": "Vedi views TikTok",
+        "label": "Vedi visualizzazioni TikTok",
         "href": "/buy-tiktok-views"
       },
       "image": {
         "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
-        "alt": "Video TikTok con indicatori di views e riproduzione"
+        "alt": "Video TikTok con indicatori di visualizzazioni e riproduzione"
       },
       "tone": "slate"
     },

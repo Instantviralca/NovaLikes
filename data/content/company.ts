@@ -20,7 +20,7 @@ export const aboutContent: AboutPageContent = {
       'Learn about NovaLikes, our mission, why customers choose us, and our commitment to secure, transparent social media growth services.',
   },
   hero: {
-    eyebrow: 'ABOUT NOVALIKES',
+    eyebrow: 'OUR STORY',
     title: 'About NovaLikes',
     description:
       'NovaLikes is a premium social media growth platform built to help creators, businesses, and brands grow with high-quality social signals.\n\nWe focus on a clear ordering experience, secure checkout, and reliable delivery across Instagram, TikTok, Facebook, and more.',
@@ -193,8 +193,8 @@ export const contactContent: ContactPageContent = {
       'Contact NovaLikes for sales, support, order enquiries, and general questions. Reach our team through the official contact form and support channels.',
   },
   hero: {
-    eyebrow: 'CONTACT US',
-    title: "We're Here to Help!",
+    eyebrow: 'SUPPORT',
+    title: 'Contact NovaLikes',
     description:
       'Have questions about our services or need help with an order? Contact NovaLikes support and include your order details when the question is about a purchase.',
     purpose: 'Help customers reach NovaLikes for sales and support',
@@ -322,7 +322,8 @@ export const faqPageContent: FaqPageContent = {
       'Find answers about NovaLikes orders, Instagram, TikTok and Facebook services, account requirements, delivery, payments, tracking and support.',
   },
   hero: {
-    title: 'Frequently Asked Questions About NovaLikes',
+    eyebrow: 'HELP CENTER',
+    title: 'Frequently Asked Questions',
     description:
       'Find clear answers about NovaLikes, Instagram, TikTok and Facebook services, placing an order, account requirements, delivery, payments and support. Browse by category or search for a specific question below.',
     purpose: 'Help customers find answers before contacting support',

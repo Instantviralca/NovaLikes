@@ -7,7 +7,7 @@
       "description": "Comprare follower TikTok in tutto il mondo con le opzioni di pacchetto reali di NovaLikes.com, senza password, con dettagli di consegna chiari, supporto 24/7 e copertura refill su ordini idonei."
     },
     "hero": {
-      "eyebrow": "COMPRARE FOLLOWER TIKTOK",
+      "eyebrow": "SERVIZI TIKTOK",
       "title": "Comprare follower TikTok",
       "description": "Comprare follower TikTok significa scegliere il pacchetto e la quantità adatti al tuo account. NovaLikes ti consente di confrontare pacchetti e prezzi dei follower prima di ordinare. Seleziona il numero di follower TikTok che vuoi, indica lo username TikTok pubblico corretto e completa l’ordine online. La password TikTok non è richiesta e, dopo il checkout, puoi usare il tracciamento per vedere gli aggiornamenti di stato disponibili.",
       "purpose": "Convert for TikTok follower packages worldwide",
@@ -206,7 +206,7 @@
     "relatedServices": {
       "id": "related-tiktok-services-followers",
       "title": "Scopri altri servizi TikTok",
-      "description": "I follower sono solo una metrica TikTok. Se invece vuoi aumentare il conteggio like o views di un video specifico, confronta gli altri servizi TikTok qui sotto.",
+      "description": "I follower sono solo una metrica TikTok. Se invece vuoi aumentare il conteggio Mi piace o visualizzazioni di un video specifico, confronta gli altri servizi TikTok qui sotto.",
       "purpose": "Internal links to sibling TikTok offers",
       "serviceSlugs": [
         "buy-tiktok-likes",
@@ -271,7 +271,7 @@
           {
             "id": "buy-tiktok-followers-4",
             "title": "Cosa cambia un ordine di follower TikTok",
-            "description": "Un ordine di follower TikTok si applica al conteggio follower del profilo pubblico indicato con l’ordine. Non aggiunge automaticamente like o views ai singoli video TikTok.",
+            "description": "Un ordine di follower TikTok si applica al conteggio follower del profilo pubblico indicato con l’ordine. Non aggiunge automaticamente Mi piace o visualizzazioni ai singoli video TikTok.",
             "icon": "clapperboard"
           },
           {
@@ -283,7 +283,7 @@
           {
             "id": "buy-tiktok-followers-6",
             "title": "Cosa non includono i follower TikTok",
-            "description": "I follower sono separati da like e views TikTok. Ordinare follower non aggiunge automaticamente quelle altre metriche e non garantisce più engagement, portata, vendite o crescita organica.",
+            "description": "I follower sono separati da like e visualizzazioni TikTok. Ordinare follower non aggiunge automaticamente quelle altre metriche e non garantisce più engagement, portata, vendite o crescita organica.",
             "icon": "megaphone"
           }
         ],
@@ -329,8 +329,8 @@
       },
       "serviceCompare": {
         "id": "buy-tiktok-followers-service-compare",
-        "title": "Follower vs like vs views TikTok",
-        "description": "Follower, like e views misurano aspetti diversi di un account TikTok. Scegli il servizio in base al fatto che tu voglia cambiare il numero di follower del profilo, il conteggio like di un contenuto specifico o il conteggio views di un video TikTok.",
+        "title": "Follower vs like vs visualizzazioni TikTok",
+        "description": "Follower, Mi piace e visualizzazioni misurano aspetti diversi di un account TikTok. Scegli il servizio in base al fatto che tu voglia cambiare il numero di follower del profilo, il conteggio like di un contenuto specifico o il conteggio visualizzazioni di un video TikTok.",
         "current": {
           "title": "Follower TikTok",
           "description": "I follower sono una metrica a livello di profilo. Scegli Follower TikTok quando vuoi aumentare il numero di follower mostrato sul tuo profilo pubblico.",
@@ -345,11 +345,11 @@
           "ctaLabel": "Vedi like TikTok"
         },
         "views": {
-          "title": "Views TikTok",
-          "description": "Le views sono una metrica a livello di video. Scegli Views TikTok quando vuoi aumentare il conteggio views su un video TikTok pubblico idoneo.",
-          "bestFor": "Video TikTok in cui la metrica che vuoi cambiare è il conteggio views visibile.",
+          "title": "Visualizzazioni TikTok",
+          "description": "le visualizzazioni sono una metrica a livello di video. Scegli Visualizzazioni TikTok quando vuoi aumentare il conteggio visualizzazioni su un video TikTok pubblico idoneo.",
+          "bestFor": "Video TikTok in cui la metrica che vuoi cambiare è il conteggio visualizzazioni visibile.",
           "href": "/buy-tiktok-views",
-          "ctaLabel": "Vedi views TikTok"
+          "ctaLabel": "Vedi visualizzazioni TikTok"
         },
         "combinedNote": "",
         "commentsHref": "/buy-tiktok-likes"
@@ -358,7 +358,7 @@
         "id": "buy-tiktok-followers-before-buying",
         "title": "Cosa controllare prima di comprare follower TikTok",
         "description": "Prima di comprare follower TikTok, rivedi pacchetto e dettagli del profilo prima di completare l’ordine. Assicurati che quantità di follower, prezzo, username TikTok e servizio corrispondano a ciò che vuoi per il profilo selezionato.",
-        "framingNote": "Controlla ancora una volta lo username TikTok indicato, la quantità di follower e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare follower garantirebbe più views, like, engagement, portata, vendite o crescita organica.",
+        "framingNote": "Controlla ancora una volta lo username TikTok indicato, la quantità di follower e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare follower garantirebbe più visualizzazioni, like, engagement, portata, vendite o crescita organica.",
         "items": [
           {
             "id": "buy-tiktok-followers-7",
@@ -381,7 +381,7 @@
           {
             "id": "buy-tiktok-followers-10",
             "title": "Scegli il servizio TikTok giusto",
-            "description": "Follower, like e views sono servizi distinti. Verifica che Follower TikTok sia il servizio che ti serve prima di effettuare l’ordine.",
+            "description": "Follower, Mi piace e visualizzazioni sono servizi distinti. Verifica che Follower TikTok sia il servizio che ti serve prima di effettuare l’ordine.",
             "icon": "truck"
           },
           {
@@ -478,7 +478,7 @@
           {
             "id": "buy-tiktok-followers-18",
             "title": "Consulta le analytics TikTok",
-            "description": "Se le analytics sono disponibili sul tuo account, rivedi views, engagement, attività dei follower e altri dati per capire come performano i tuoi contenuti.",
+            "description": "Se le analytics sono disponibili sul tuo account, rivedi visualizzazioni, engagement, attività dei follower e altri dati per capire come performano i tuoi contenuti.",
             "icon": "lock"
           },
           {
@@ -516,7 +516,7 @@
           {
             "id": "buy-tiktok-followers-23",
             "title": "Scegliere il servizio TikTok sbagliato",
-            "description": "Follower, like e views sono servizi distinti. Scegli Follower TikTok solo quando la metrica che vuoi cambiare è il numero di follower del profilo.",
+            "description": "Follower, Mi piace e visualizzazioni sono servizi distinti. Scegli Follower TikTok solo quando la metrica che vuoi cambiare è il numero di follower del profilo.",
             "icon": "heart"
           },
           {
@@ -534,7 +534,7 @@
           {
             "id": "buy-tiktok-followers-26",
             "title": "Aspettarsi che i follower garantiscano altri risultati",
-            "description": "Un numero di follower più alto non significa automaticamente più views, like, engagement, portata, vendite o crescita organica.",
+            "description": "Un numero di follower più alto non significa automaticamente più visualizzazioni, like, engagement, portata, vendite o crescita organica.",
             "icon": "clapperboard"
           },
           {
@@ -553,9 +553,9 @@
             "ctaLabel": "Vedi like TikTok"
           },
           "buy-tiktok-views": {
-            "title": "Views TikTok",
-            "description": "Scegli Views TikTok quando vuoi aumentare il conteggio views mostrato su un video TikTok pubblico idoneo.",
-            "ctaLabel": "Vedi views TikTok"
+            "title": "Visualizzazioni TikTok",
+            "description": "Scegli Visualizzazioni TikTok quando vuoi aumentare il conteggio delle visualizzazioni mostrato su un video TikTok pubblico idoneo.",
+            "ctaLabel": "Vedi visualizzazioni TikTok"
           }
         }
       }
@@ -563,7 +563,7 @@
     "whyBuy": {
       "id": "buy-tiktok-followers-why-buy",
       "title": "Perché si comprano follower TikTok?",
-      "description": "Si comprano follower TikTok per motivi diversi. Alcuni vogliono aumentare il numero di follower mostrato su un profilo più nuovo, altri scelgono un pacchetto follower per un account consolidato, una campagna, un lancio o un’altra attività TikTok. Il servizio cambia la metrica follower sul profilo selezionato, ma non garantisce views, like, engagement, portata, vendite o crescita organica.",
+      "description": "Si comprano follower TikTok per motivi diversi. Alcuni vogliono aumentare il numero di follower mostrato su un profilo più nuovo, altri scelgono un pacchetto follower per un account consolidato, una campagna, un lancio o un’altra attività TikTok. Il servizio cambia la metrica follower sul profilo selezionato, ma non garantisce visualizzazioni, like, engagement, portata, vendite o crescita organica.",
       "items": [
         {
           "id": "buy-tiktok-followers-wb-1",
@@ -578,7 +578,7 @@
         {
           "id": "buy-tiktok-followers-wb-3",
           "title": "Concentrati sulla metrica follower",
-          "description": "Follower TikTok si applica al numero di follower del profilo, invece di aggiungere automaticamente like o views ai singoli video."
+          "description": "Follower TikTok si applica al numero di follower del profilo, invece di aggiungere automaticamente Mi piace o visualizzazioni ai singoli video."
         },
         {
           "id": "buy-tiktok-followers-wb-4",
@@ -591,7 +591,7 @@
           "description": "Comprare follower non sostituisce la pubblicazione e la gestione dei tuoi contenuti TikTok. Video, didascalie, risposte e altre attività dell’account dipendono ancora da come gestisci il profilo."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare sono i like o le views video, scegli il servizio TikTok corrispondente invece di un pacchetto follower."
+      "bottomNote": "Se la metrica che vuoi cambiare sono i like o le visualizzazioni video, scegli il servizio TikTok corrispondente invece di un pacchetto follower."
     },
     "howToBuy": {
       "id": "how-it-works",
@@ -621,6 +621,6 @@
       ]
     },
     "relatedHeading": "Scopri altri servizi TikTok",
-    "relatedIntro": "I follower sono solo una metrica TikTok. Se invece vuoi aumentare il conteggio like o views di un video specifico, confronta gli altri servizi TikTok qui sotto."
+    "relatedIntro": "I follower sono solo una metrica TikTok. Se invece vuoi aumentare il conteggio Mi piace o visualizzazioni di un video specifico, confronta gli altri servizi TikTok qui sotto."
   }
 }

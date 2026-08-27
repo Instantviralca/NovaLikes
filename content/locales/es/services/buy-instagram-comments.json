@@ -7,7 +7,7 @@
       "description": "Compra comentarios de Instagram en todo el mundo con opciones de paquete claras, URL pública de la publicación, pago seguro, detalles de entrega y seguimiento del pedido a través de NovaLikes."
     },
     "hero": {
-      "eyebrow": "COMPRAR COMENTARIOS DE INSTAGRAM",
+      "eyebrow": "SERVICIOS DE INSTAGRAM",
       "title": "Comprar comentarios de Instagram",
       "description": "Compra comentarios de Instagram para una publicación o Reel público eligiendo el paquete y la cantidad que encajan con el contenido que quieres usar. NovaLikes te permite comparar las opciones y precios de comentarios disponibles antes de pedir. Selecciona tu paquete, facilita la URL pública correcta de la publicación de Instagram y completa tu pedido online. No se requiere tu contraseña de Instagram, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
       "purpose": "Convert visitors searching for Instagram comments packages",
@@ -241,7 +241,7 @@
     "relatedServices": {
       "id": "related-instagram-services-comments",
       "title": "Servicios de Instagram relacionados que combinan con comentarios",
-      "description": "Los comentarios inician la conversación. Combínalos con likes para las primeras reacciones, views para el tiempo de permanencia en Reels o seguidores cuando necesitas una audiencia más amplia leyendo hilos futuros.",
+      "description": "Los comentarios inician la conversación. Combínalos con Me gusta para las primeras reacciones, visualizaciones para el tiempo de permanencia en Reels o seguidores cuando necesitas una audiencia más amplia leyendo hilos futuros.",
       "purpose": "Internal links to sibling Instagram offers",
       "serviceSlugs": [
         "buy-instagram-followers",
@@ -311,7 +311,7 @@
           {
             "id": "buy-instagram-comments-4",
             "title": "Qué cambia un pedido de comentarios de Instagram",
-            "description": "Un pedido de comentarios de Instagram añade comentarios a la publicación o Reel concreto enviado con el pedido. No cambia el recuento de seguidores, likes o views de tu cuenta.",
+            "description": "Un pedido de comentarios de Instagram añade comentarios a la publicación o Reel concreto enviado con el pedido. No cambia el recuento de seguidores, Me gusta o visualizaciones de tu cuenta.",
             "icon": "clapperboard"
           },
           {
@@ -323,7 +323,7 @@
           {
             "id": "buy-instagram-comments-6",
             "title": "Qué no incluyen los comentarios de Instagram",
-            "description": "Los comentarios son independientes de seguidores, likes y views. Pedir comentarios de Instagram no añade automáticamente esas otras métricas ni garantiza más alcance, interacción, ventas o crecimiento orgánico.",
+            "description": "Los comentarios son independientes de seguidores, Me gusta y visualizaciones. Pedir comentarios de Instagram no añade automáticamente esas otras métricas ni garantiza más alcance, interacción, ventas o crecimiento orgánico.",
             "icon": "megaphone"
           }
         ],
@@ -369,8 +369,8 @@
       },
       "serviceCompare": {
         "id": "buy-instagram-comments-service-compare",
-        "title": "Comentarios vs seguidores vs likes de Instagram",
-        "description": "Comentarios, seguidores y likes son métricas distintas de Instagram. Elige el servicio según si quieres comentarios en contenido concreto, un recuento mayor de seguidores en tu perfil o más likes en una publicación o Reel concreto.",
+        "title": "Comentarios vs seguidores vs Me gusta de Instagram",
+        "description": "Comentarios, seguidores y Me gusta son métricas distintas de Instagram. Elige el servicio según si quieres comentarios en contenido concreto, un recuento mayor de seguidores en tu perfil o más Me gusta en una publicación o Reel concreto.",
         "current": {
           "title": "Comentarios de Instagram",
           "description": "Los comentarios se aplican a contenido individual. Elige comentarios de Instagram cuando quieras que se añadan comentarios a una publicación o Reel público elegible.",
@@ -385,13 +385,13 @@
           "ctaLabel": "Ver seguidores de Instagram"
         },
         "views": {
-          "title": "Likes de Instagram",
-          "description": "Los likes son una métrica a nivel de contenido. Elige likes de Instagram cuando quieras aumentar el recuento de likes que se muestra en una publicación o Reel público concreto.",
-          "bestFor": "Publicaciones y Reels en los que el recuento visible de likes es la métrica que quieres cambiar.",
+          "title": "Me gusta de Instagram",
+          "description": "El número de Me gusta es una métrica a nivel de contenido. Elige Me gusta de Instagram cuando quieras aumentar el recuento de Me gusta que se muestra en una publicación o Reel público concreto.",
+          "bestFor": "Publicaciones y Reels en los que el recuento visible de Me gusta es la métrica que quieres cambiar.",
           "href": "/buy-instagram-likes",
-          "ctaLabel": "Ver likes de Instagram"
+          "ctaLabel": "Ver Me gusta de Instagram"
         },
-        "combinedNote": "Si quieres aumentar el recuento de views en contenido de vídeo elegible, views de Instagram está disponible como un servicio aparte.",
+        "combinedNote": "Si quieres aumentar el recuento de visualizaciones en contenido de vídeo elegible, visualizaciones de Instagram está disponible como un servicio aparte.",
         "commentsHref": "/buy-instagram-views"
       },
       "beforeBuying": {
@@ -421,7 +421,7 @@
           {
             "id": "buy-instagram-comments-10",
             "title": "Elige el servicio de Instagram correcto",
-            "description": "Comentarios, seguidores, likes y views son servicios separados. Comprueba que comentarios de Instagram es el servicio que necesitas antes de hacer el pedido.",
+            "description": "Comentarios, seguidores, Me gusta y visualizaciones son servicios separados. Comprueba que comentarios de Instagram es el servicio que necesitas antes de hacer el pedido.",
             "icon": "truck"
           },
           {
@@ -460,7 +460,7 @@
           {
             "id": "buy-instagram-comments-15",
             "title": "Los comentarios son una métrica aparte",
-            "description": "Los comentarios no añaden automáticamente seguidores, likes o views. Elige el servicio que coincida con la métrica que realmente quieres para el contenido.",
+            "description": "Los comentarios no añaden automáticamente seguidores, Me gusta o visualizaciones. Elige el servicio que coincida con la métrica que realmente quieres para el contenido.",
             "icon": "clapperboard"
           }
         ]
@@ -524,7 +524,7 @@
           {
             "id": "buy-instagram-comments-19",
             "title": "Revisa Instagram Insights",
-            "description": "Si Insights está disponible en tu cuenta, revisa alcance, interacciones, views y otros datos de contenido para entender cómo rinden tus publicaciones y Reels.",
+            "description": "Si Insights está disponible en tu cuenta, revisa alcance, interacciones, visualizaciones y otros datos de contenido para entender cómo rinden tus publicaciones y Reels.",
             "icon": "shield-check"
           },
           {
@@ -556,7 +556,7 @@
           {
             "id": "buy-instagram-comments-23",
             "title": "Elegir el servicio de Instagram incorrecto",
-            "description": "Comentarios, seguidores, likes y views son servicios separados. Elige comentarios de Instagram solo cuando los comentarios en contenido concreto sean lo que quieres pedir.",
+            "description": "Comentarios, seguidores, Me gusta y visualizaciones son servicios separados. Elige comentarios de Instagram solo cuando los comentarios en contenido concreto sean lo que quieres pedir.",
             "icon": "heart"
           },
           {
@@ -574,7 +574,7 @@
           {
             "id": "buy-instagram-comments-26",
             "title": "Esperar que los comentarios garanticen otros resultados",
-            "description": "Pedir comentarios no significa automáticamente más seguidores, likes, views, alcance, ventas o crecimiento orgánico.",
+            "description": "Pedir comentarios no significa automáticamente más seguidores, Me gusta, visualizaciones, alcance, ventas o crecimiento orgánico.",
             "icon": "clapperboard"
           },
           {
@@ -593,14 +593,14 @@
             "ctaLabel": "Ver seguidores de Instagram"
           },
           "buy-instagram-likes": {
-            "title": "Likes de Instagram",
-            "description": "Elige likes de Instagram cuando quieras aumentar el recuento de likes que se muestra en una publicación o Reel público concreto.",
-            "ctaLabel": "Ver likes de Instagram"
+            "title": "Me gusta de Instagram",
+            "description": "Elige Me gusta de Instagram cuando quieras aumentar el recuento de Me gusta que se muestra en una publicación o Reel público concreto.",
+            "ctaLabel": "Ver Me gusta de Instagram"
           },
           "buy-instagram-views": {
-            "title": "Views de Instagram",
-            "description": "Elige views de Instagram cuando quieras aumentar el recuento de views que se muestra en un Reel o vídeo público elegible.",
-            "ctaLabel": "Ver views de Instagram"
+            "title": "Visualizaciones de Instagram",
+            "description": "Elige visualizaciones de Instagram cuando quieras aumentar el recuento de visualizaciones que se muestra en un Reel o vídeo público elegible.",
+            "ctaLabel": "Ver visualizaciones de Instagram"
           }
         }
       }
@@ -608,7 +608,7 @@
     "whyBuy": {
       "id": "buy-instagram-comments-why-buy",
       "title": "¿Por qué la gente compra comentarios de Instagram?",
-      "description": "La gente compra comentarios de Instagram para distintos tipos de publicaciones y Reels. Algunos usan paquetes de comentarios para contenido de producto, anuncios, campañas u otras publicaciones en las que quieren comentarios adicionales visibles. El servicio añade comentarios al contenido seleccionado, pero no garantiza más seguidores, likes, views, alcance, ventas ni crecimiento orgánico.",
+      "description": "La gente compra comentarios de Instagram para distintos tipos de publicaciones y Reels. Algunos usan paquetes de comentarios para contenido de producto, anuncios, campañas u otras publicaciones en las que quieren comentarios adicionales visibles. El servicio añade comentarios al contenido seleccionado, pero no garantiza más seguidores, Me gusta, visualizaciones, alcance, ventas ni crecimiento orgánico.",
       "items": [
         {
           "id": "buy-instagram-comments-wb-1",
@@ -623,7 +623,7 @@
         {
           "id": "buy-instagram-comments-wb-3",
           "title": "Céntrate en la métrica de comentarios",
-          "description": "Los comentarios de Instagram se aplican al contenido seleccionado, en lugar de cambiar el recuento de seguidores de tu perfil o añadir automáticamente likes o views."
+          "description": "Los comentarios de Instagram se aplican al contenido seleccionado, en lugar de cambiar el recuento de seguidores de tu perfil o añadir automáticamente Me gusta o visualizaciones."
         },
         {
           "id": "buy-instagram-comments-wb-4",
@@ -636,7 +636,7 @@
           "description": "Comprar comentarios no sustituye publicar y gestionar tu propio contenido. Los pies de foto, las respuestas, las publicaciones nuevas y el resto de la actividad de la cuenta siguen dependiendo de cómo gestiones tu presencia en Instagram."
         }
       ],
-      "bottomNote": "Si quieres cambiar tu recuento de seguidores, de likes o de views de vídeo en lugar de añadir comentarios, elige el servicio de Instagram correspondiente."
+      "bottomNote": "Si quieres cambiar tu recuento de seguidores, el recuento de Me gusta o las visualizaciones de vídeo en lugar de añadir comentarios, elige el servicio de Instagram correspondiente."
     },
     "howToBuy": {
       "id": "how-it-works",
@@ -666,6 +666,6 @@
       ]
     },
     "relatedHeading": "Explora otros servicios de Instagram",
-    "relatedIntro": "Los comentarios son solo una métrica de Instagram. Si quieres trabajar en el recuento de seguidores de tu perfil, en likes de contenido concreto o en views de un Reel o vídeo, compara los otros servicios de Instagram abajo."
+    "relatedIntro": "Los comentarios son solo una métrica de Instagram. Si quieres trabajar en el recuento de seguidores de tu perfil, en Me gusta de contenido concreto o en visualizaciones de un Reel o vídeo, compara los otros servicios de Instagram abajo."
   }
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const FOLLOWER_KEYS = [12840, 13120, 13580, 13940, 14480, 15090] as const;
@@ -36,6 +37,7 @@ export function TikTokFollowersHeroDashboard({
   className,
   packagePreview,
 }: TikTokFollowersHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
@@ -103,23 +105,23 @@ export function TikTokFollowersHeroDashboard({
 
       {/* Floating UI cards — NovaLikes trust + growth signals */}
       <div className="pointer-events-none absolute top-[4%] -left-1 z-[5] max-w-[9.5rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_18px_36px_-16px_rgba(28,25,23,0.5)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.2s_ease-in-out_infinite] sm:left-0">
-        <p className="text-[8px] font-semibold tracking-wide text-emerald-600 uppercase">Growth</p>
+        <p className="text-[8px] font-semibold tracking-wide text-emerald-600 uppercase">{d('Growth')}</p>
         <p className="text-[11px] font-bold text-stone-800">+1K Followers</p>
       </div>
       <div className="pointer-events-none absolute top-[22%] -right-1 z-[5] max-w-[9rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.2s_ease-in-out_infinite] sm:right-0">
-        <p className="text-[8px] font-semibold text-stone-400 uppercase">Status</p>
-        <p className="text-[11px] font-bold text-stone-800">Order Tracking</p>
+        <p className="text-[8px] font-semibold text-stone-400 uppercase">{d('Status')}</p>
+        <p className="text-[11px] font-bold text-stone-800">{d('Order Tracking')}</p>
       </div>
       <div className="pointer-events-none absolute top-[44%] -left-2 z-[5] hidden max-w-[9.25rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.9s_ease-in-out_infinite] sm:block">
-        <p className="text-[8px] font-semibold text-[var(--brand-primary)] uppercase">Package</p>
-        <p className="text-[11px] font-bold text-stone-800">Package Confirmed</p>
+        <p className="text-[8px] font-semibold text-[var(--brand-primary)] uppercase">{d('Package')}</p>
+        <p className="text-[11px] font-bold text-stone-800">{d('Package Confirmed')}</p>
       </div>
       <div className="pointer-events-none absolute bottom-[28%] -right-1 z-[5] max-w-[8.75rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_7.4s_ease-in-out_infinite] sm:right-0">
-        <p className="text-[8px] font-semibold text-sky-600 uppercase">Verified</p>
-        <p className="text-[11px] font-bold text-stone-800">Profile Verified</p>
+        <p className="text-[8px] font-semibold text-sky-600 uppercase">{d('Verified')}</p>
+        <p className="text-[11px] font-bold text-stone-800">{d('Profile Verified')}</p>
       </div>
       <div className="pointer-events-none absolute bottom-[8%] left-[2%] z-[5] hidden max-w-[8rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-1.5 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:block">
-        <p className="text-[8px] font-semibold text-stone-400 uppercase">Analytics</p>
+        <p className="text-[8px] font-semibold text-stone-400 uppercase">{d('Analytics')}</p>
         <p className="text-[11px] font-bold tabular-nums text-stone-800">
           {toast.name.replace('@', '')} {toast.delta}
         </p>
@@ -157,7 +159,7 @@ export function TikTokFollowersHeroDashboard({
                     Public
                   </span>
                   <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[8px] font-bold text-emerald-700">
-                    Live
+                    {d('Live')}
                   </span>
                 </div>
               </div>
@@ -171,7 +173,7 @@ export function TikTokFollowersHeroDashboard({
                   <p className="truncate text-[10px] font-bold text-stone-800">
                     {toast.name} followed you
                   </p>
-                  <p className="text-[8px] font-medium text-emerald-700">Just now</p>
+                  <p className="text-[8px] font-medium text-emerald-700">{d('Just now')}</p>
                 </div>
               </div>
 
@@ -188,7 +190,7 @@ export function TikTokFollowersHeroDashboard({
                   <span
                     className="absolute -right-0.5 -bottom-0.5 flex size-5 items-center justify-center rounded-full text-[9px] font-bold text-white ring-2 ring-white"
                     style={{ background: '#20D5EC' }}
-                    title="Verified"
+                    title={d('Verified')}
                   >
                     ✓
                   </span>
@@ -223,7 +225,7 @@ export function TikTokFollowersHeroDashboard({
                 <div className="text-center">
                   <p className="text-sm font-bold text-stone-900">56.2K</p>
                   <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-                    Likes
+                    {d('Likes')}
                   </p>
                 </div>
               </div>
@@ -243,7 +245,7 @@ export function TikTokFollowersHeroDashboard({
                       {w.value}
                     </p>
                     <p className="text-[7px] font-semibold tracking-wide text-stone-400 uppercase">
-                      {w.label}
+                      {d(w.label)}
                     </p>
                   </div>
                 ))}
@@ -252,7 +254,7 @@ export function TikTokFollowersHeroDashboard({
               <div className="mt-2 rounded-xl border border-stone-100 bg-white p-2.5 shadow-sm">
                 <div className="mb-1.5 flex items-center justify-between">
                   <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
-                    Growth
+                    {d('Growth')}
                   </p>
                   <span className="text-[9px] font-bold text-[var(--brand-primary)]">+18%</span>
                 </div>
@@ -286,7 +288,7 @@ export function TikTokFollowersHeroDashboard({
 
       {packagePreview ? (
         <div className="absolute -bottom-1 left-1/2 z-[6] hidden w-[min(100%,11.5rem)] -translate-x-1/2 rounded-xl border border-[var(--border-subtle)] bg-white px-2.5 py-1.5 shadow-[0_14px_28px_-16px_rgba(28,25,23,0.4)] motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:block">
-          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">Selected</p>
+          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">{d('Selected')}</p>
           <p className="truncate text-[11px] font-bold text-[var(--text-primary)]">
             {packagePreview.title}
           </p>

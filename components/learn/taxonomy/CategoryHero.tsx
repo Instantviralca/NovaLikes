@@ -16,6 +16,14 @@ type CategoryHeroProps = {
   categories?: PublicLearnCategory[];
 };
 
+const CATEGORY_HERO_TITLES: Record<string, string> = {
+  instagram: 'Instagram Guides',
+  tiktok: 'TikTok Guides',
+  facebook: 'Facebook Guides',
+  'social-media-marketing': 'Social Media Marketing Guides',
+  guides: 'Social Media Guides',
+};
+
 /**
  * Category page hero — Document 15.04.
  */
@@ -31,9 +39,9 @@ export function CategoryHero({
           {breadcrumbs && breadcrumbs.length > 0 ? (
             <Breadcrumb items={breadcrumbs} className="mb-0" />
           ) : null}
-          <Eyebrow>Learn</Eyebrow>
+          <Eyebrow>NOVALIKES LEARN</Eyebrow>
           <Heading as="h1" className={HERO_HEADING_CLASS}>
-            {accentLastWord(category.name)}
+            {accentLastWord(CATEGORY_HERO_TITLES[category.slug] ?? category.name)}
           </Heading>
           <p className="max-w-xl text-pretty text-base leading-relaxed text-neutral-600 sm:text-lg">
             {category.description}

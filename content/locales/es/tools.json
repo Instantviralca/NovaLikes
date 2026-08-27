@@ -1,6 +1,6 @@
 {
   "hub": {
-    "eyebrow": "Herramientas gratis",
+    "eyebrow": "HERRAMIENTAS GRATIS DE REDES SOCIALES",
     "h1": "Herramientas gratis de Instagram, TikTok y Facebook",
     "lead": "Consulta un perfil público, comprueba un recuento de seguidores publicado o recupera un archivo de vídeo que la plataforma ya expone. Cada asistente se ejecuta en los servidores de NovaLikes y devuelve solo información pública: nunca un contenido privado, una sesión de inicio de sesión ni una descarga inventada.",
     "howHeading": "Cómo funcionan estas herramientas",
@@ -201,7 +201,7 @@
     },
     "instagram-video-downloader": {
       "eyebrow": "Herramienta de Instagram",
-      "h1": "Descargador de vídeos / Reels de Instagram",
+      "h1": "Descargador de vídeos y Reels de Instagram",
       "lead": "Pega la URL de un Reel o una publicación de vídeo pública de Instagram. NovaLikes comprueba la página pública y ofrece un archivo solo cuando Instagram incluye uno. Muchas publicaciones públicas ahora mismo no lo incluyen. Eso es Disponibilidad limitada: no una herramienta rota ni una descarga falsa.",
       "inputLabel": "URL pública de Reel o vídeo de Instagram",
       "helperText": "Se ofrece un archivo solo si Instagram lo incluye en la página pública.",
@@ -529,7 +529,7 @@
       "availabilityLabel": "Disponible"
     },
     "instagram-video-downloader": {
-      "name": "Descargador de vídeos / Reels de Instagram",
+      "name": "Descargador de vídeos y Reels de Instagram",
       "shortDescription": "Comprueba un Reel o una publicación de vídeo pública de Instagram. Se devuelve un archivo solo si Instagram expone uno.",
       "placeholder": "https://www.instagram.com/reel/...",
       "actionLabel": "Comprobar vídeo",
@@ -855,12 +855,12 @@
     },
     "serviceLabels": {
       "buy-instagram-followers": "Seguidores de Instagram",
-      "buy-instagram-likes": "Likes de Instagram",
-      "buy-instagram-views": "Views de Instagram",
+      "buy-instagram-likes": "Me gusta de Instagram",
+      "buy-instagram-views": "Visualizaciones de Instagram",
       "buy-instagram-comments": "Comentarios de Instagram",
       "buy-tiktok-followers": "Seguidores de TikTok",
-      "buy-tiktok-likes": "Likes de TikTok",
-      "buy-tiktok-views": "Views de TikTok",
+      "buy-tiktok-likes": "Me gusta de TikTok",
+      "buy-tiktok-views": "Visualizaciones de TikTok",
       "buy-facebook-followers": "Seguidores de Facebook",
       "buy-facebook-page-likes": "Me gusta de Página de Facebook",
       "buy-facebook-post-likes": "Me gusta de publicaciones de Facebook"

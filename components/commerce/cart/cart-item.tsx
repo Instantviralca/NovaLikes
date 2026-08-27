@@ -7,6 +7,7 @@ import { Clock3, Pencil, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { localizeHref } from '@/lib/i18n/paths';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { formatMoney } from '@/lib/pricing/format';
 import type { CartItem } from '@/types/cart';
 import type { PlatformId } from '@/types/platform';
@@ -56,9 +57,11 @@ export function CartItemRow({ item, onRemove, className }: CartItemProps) {
           </div>
           <div>
             <p className="text-3xl font-bold tracking-tight text-[var(--text-primary)]">
-              {item.quantityLabel}
+              {localizePackageDisplayName(item.quantityLabel, locale)}
             </p>
-            <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.packageTitle}</p>
+            <p className="mt-1 text-sm text-[var(--text-secondary)]">
+              {localizePackageDisplayName(item.packageTitle, locale)}
+            </p>
           </div>
           <p className="text-2xl font-bold text-[var(--brand-primary)]" dir="ltr">
             {formatMoney(item.unitPrice, item.currency)}

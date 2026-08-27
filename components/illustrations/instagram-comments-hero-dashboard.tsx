@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -57,6 +59,7 @@ export function InstagramCommentsHeroDashboard({
   className,
   packagePreview,
 }: InstagramCommentsHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const accent = '#E1306C';
   const brand = '#F97316';
   const [comments, setComments] = useState<number>(COMMENT_KEYS[0]);
@@ -171,7 +174,7 @@ export function InstagramCommentsHeroDashboard({
               )}
             >
               <span className="size-1.5 rounded-full bg-emerald-500" />
-              Live
+              {d('Live')}
             </span>
           </div>
 
@@ -301,7 +304,7 @@ export function InstagramCommentsHeroDashboard({
 
       {packagePreview ? (
         <div className="absolute -bottom-2 left-1/2 z-[6] hidden w-[min(100%,11.5rem)] -translate-x-1/2 rounded-xl border border-[var(--border-subtle)] bg-white px-2.5 py-1.5 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.42)] motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:block">
-          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">Selected</p>
+          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">{d('Selected')}</p>
           <p className="truncate text-[11px] font-bold text-[var(--text-primary)]">
             {packagePreview.title}
           </p>

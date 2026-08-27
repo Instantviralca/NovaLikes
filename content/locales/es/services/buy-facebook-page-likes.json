@@ -7,7 +7,7 @@
       "description": "Compra Me gusta de Página de Facebook con paquetes transparentes para negocios y creadores. Solo URL de Página pública, pago seguro y seguimiento del pedido. Sin contraseña necesaria."
     },
     "hero": {
-      "eyebrow": "COMPRAR ME GUSTA DE PÁGINA DE FACEBOOK",
+      "eyebrow": "SERVICIOS DE FACEBOOK",
       "title": "Comprar Me gusta de Página de Facebook",
       "description": "Compra Me gusta de Página de Facebook eligiendo el paquete y la cantidad que encajan con tu Página. NovaLikes te permite comparar los paquetes y precios de Me gusta de Página disponibles antes de pedir. Selecciona el número de Me gusta de Página que quieres, facilita la URL pública correcta de la Página de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
       "purpose": "Convert for Facebook page likes packages worldwide",
@@ -286,7 +286,7 @@
           {
             "id": "buy-facebook-page-likes-4",
             "title": "Qué cambia un pedido de Me gusta de Página de Facebook",
-            "description": "Un pedido de Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página pública de Facebook enviada con el pedido. No añade automáticamente seguidores de Facebook ni likes a publicaciones individuales.",
+            "description": "Un pedido de Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página pública de Facebook enviada con el pedido. No añade automáticamente seguidores de Facebook ni Me gusta a publicaciones individuales.",
             "icon": "clapperboard"
           },
           {
@@ -345,7 +345,7 @@
       "serviceCompare": {
         "id": "buy-facebook-page-likes-service-compare",
         "title": "Me gusta de Página de Facebook vs otros servicios de Facebook",
-        "description": "Me gusta de Página de Facebook, seguidores de Facebook y Me gusta de publicaciones de Facebook representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de Me gusta de Página, el recuento de seguidores o el recuento de likes de una publicación concreta de Facebook.",
+        "description": "Me gusta de Página de Facebook, seguidores de Facebook y Me gusta de publicaciones de Facebook representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de Me gusta de Página, el recuento de seguidores o el recuento de Me gusta de una publicación concreta de Facebook.",
         "current": {
           "title": "Me gusta de Página de Facebook",
           "description": "Los Me gusta de Página son una métrica a nivel de Página. Elige Me gusta de Página de Facebook cuando el recuento de Me gusta de Página de una Página pública de Facebook sea la métrica que quieres cambiar.",
@@ -361,8 +361,8 @@
         },
         "views": {
           "title": "Me gusta de publicaciones de Facebook",
-          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes de una publicación pública de Facebook elegible concreta.",
-          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de likes es la métrica que quieres cambiar.",
+          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de Me gusta de una publicación pública de Facebook elegible concreta.",
+          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de Me gusta es la métrica que quieres cambiar.",
           "href": "/buy-facebook-post-likes",
           "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
         },
@@ -563,7 +563,7 @@
           },
           "buy-facebook-post-likes": {
             "title": "Me gusta de publicaciones de Facebook",
-            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes que se muestra en una publicación pública de Facebook elegible.",
+            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de Me gusta que se muestra en una publicación pública de Facebook elegible.",
             "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
           }
         }
@@ -572,7 +572,7 @@
     "whyBuy": {
       "id": "buy-facebook-page-likes-why-buy",
       "title": "¿Por qué la gente compra Me gusta de Página de Facebook?",
-      "description": "La gente compra Me gusta de Página de Facebook por distintos motivos. Algunos quieren aumentar el recuento de Me gusta de Página que se muestra en una Página de Facebook, mientras que otros eligen un paquete de Me gusta de Página para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de Me gusta de Página de la Página seleccionada, pero no garantiza seguidores, likes de publicaciones, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "description": "La gente compra Me gusta de Página de Facebook por distintos motivos. Algunos quieren aumentar el recuento de Me gusta de Página que se muestra en una Página de Facebook, mientras que otros eligen un paquete de Me gusta de Página para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de Me gusta de Página de la Página seleccionada, pero no garantiza seguidores, Me gusta de publicaciones, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
       "items": [
         {
           "id": "buy-facebook-page-likes-wb-1",
@@ -587,7 +587,7 @@
         {
           "id": "buy-facebook-page-likes-wb-3",
           "title": "Céntrate en la métrica de Me gusta de Página",
-          "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página seleccionada. No añade automáticamente seguidores de Facebook ni likes a publicaciones individuales de Facebook."
+          "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página seleccionada. No añade automáticamente seguidores de Facebook ni Me gusta a publicaciones individuales de Facebook."
         },
         {
           "id": "buy-facebook-page-likes-wb-4",
@@ -630,6 +630,6 @@
       ]
     },
     "relatedHeading": "Explora otros servicios de Facebook",
-    "relatedIntro": "Los Me gusta de Página son solo una métrica de Facebook. Si quieres aumentar el recuento de seguidores de una Página de Facebook o el recuento de likes de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
+    "relatedIntro": "Los Me gusta de Página son solo una métrica de Facebook. Si quieres aumentar el recuento de seguidores de una Página de Facebook o el recuento de Me gusta de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
   }
 }

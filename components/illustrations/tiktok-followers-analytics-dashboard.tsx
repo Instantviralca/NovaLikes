@@ -1,12 +1,14 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 
 /**
  * 16:9 analytics dashboard — Does Buying TikTok Followers Work?
  * Shows growth metrics only (no earnings).
  */
 export function TikTokFollowersAnalyticsDashboard({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const bars = [32, 40, 38, 52, 48, 66, 62, 78, 74, 88];
@@ -27,12 +29,12 @@ export function TikTokFollowersAnalyticsDashboard({ className }: { className?: s
         <div className="flex items-center justify-between gap-2">
           <div>
             <p className="text-[9px] font-semibold tracking-[0.1em] text-stone-400 uppercase">
-              Account growth
+              {d('Account growth')}
             </p>
             <p className="text-sm font-bold text-stone-900">TikTok analytics overview</p>
           </div>
           <span className="rounded-full bg-[var(--brand-accent-soft)] px-2.5 py-1 text-[9px] font-bold text-[var(--brand-primary)]">
-            Growth timeline
+            {d('Growth timeline')}
           </span>
         </div>
 
@@ -48,7 +50,7 @@ export function TikTokFollowersAnalyticsDashboard({ className }: { className?: s
               className="rounded-xl border border-stone-100 bg-[var(--surface-muted)]/70 px-2.5 py-2"
             >
               <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-                {metric.label}
+                {d(metric.label)}
               </p>
               <p className="text-sm font-bold tabular-nums text-stone-900">{metric.value}</p>
             </div>

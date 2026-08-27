@@ -1,9 +1,10 @@
 {
   "hero": {
-    "title": "Questions fréquentes sur NovaLikes",
+    "title": "Questions fréquentes",
     "description": "Trouvez des réponses claires sur NovaLikes, les services Instagram, TikTok et Facebook, la commande, les exigences de compte, la livraison, les paiements et l’assistance. Parcourez par catégorie ou recherchez une question ci-dessous.",
     "purpose": "Help customers find answers before contacting support",
-    "primaryKeyword": "NovaLikes FAQ"
+    "primaryKeyword": "NovaLikes FAQ",
+    "eyebrow": "CENTRE D'AIDE"
   },
   "search": {
     "label": "Rechercher des questions",
@@ -31,12 +32,40 @@
     }
   },
   "categories": [
-    { "id": "getting_started", "label": "Pour commencer", "anchor": "getting-started" },
-    { "id": "account_security", "label": "Compte et sécurité", "anchor": "account-safety" },
-    { "id": "orders_delivery", "label": "Commandes et livraison", "anchor": "orders-delivery" },
-    { "id": "instagram", "label": "Instagram", "anchor": "instagram" },
-    { "id": "tiktok", "label": "TikTok", "anchor": "tiktok" },
-    { "id": "facebook", "label": "Facebook", "anchor": "facebook" },
-    { "id": "payments_refunds", "label": "Paiements et remboursements", "anchor": "payments-refunds" }
+    {
+      "id": "getting_started",
+      "label": "Pour commencer",
+      "anchor": "getting-started"
+    },
+    {
+      "id": "account_security",
+      "label": "Compte et sécurité",
+      "anchor": "account-safety"
+    },
+    {
+      "id": "orders_delivery",
+      "label": "Commandes et livraison",
+      "anchor": "orders-delivery"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "anchor": "instagram"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "anchor": "tiktok"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "anchor": "facebook"
+    },
+    {
+      "id": "payments_refunds",
+      "label": "Paiements et remboursements",
+      "anchor": "payments-refunds"
+    }
   ]
 }

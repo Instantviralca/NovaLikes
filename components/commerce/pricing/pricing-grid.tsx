@@ -2,10 +2,12 @@
 
 import { useEffect, useMemo, useState } from 'react';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { PricingCTA } from '@/components/commerce/pricing/pricing-cta';
 import type { PricingCardModel, PricingGridProps } from '@/components/commerce/pricing/types';
 import { Skeleton } from '@/components/ui/skeleton';
 import { getBadgeLabel } from '@/data/pricing/badges';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { formatMoney } from '@/lib/pricing/format';
 import { cn } from '@/lib/utils';
 import type { PackageBadgeId } from '@/types/pricing';
@@ -66,6 +68,7 @@ export function PricingGrid({
   summaryBenefits,
   infoPills,
 }: PricingGridProps) {
+  const { locale, ui } = useI18nChrome();
   const commentTiers = useMemo(() => {
     const tiers = [
       ...new Set(
@@ -139,7 +142,10 @@ export function PricingGrid({
     ? [
         formatQuantityShort(active.package.quantity),
         active.package.commentType ?? '',
-        serviceName || active.package.title,
+        localizePackageDisplayName(
+          serviceName || active.package.title,
+          locale,
+        ),
       ]
         .filter(Boolean)
         .join(' ')
@@ -211,8 +217,10 @@ export function PricingGrid({
               {badge ? (
                 <span className="absolute -top-2 left-2 z-10 rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase bg-emerald-500">
                   {badge === 'most-popular' || badge === 'recommended'
-                    ? 'Best Selling'
-                    : getBadgeLabel(badge)}
+                    ? ui.commerce.bestSelling
+                    : badge === 'best-value'
+                      ? ui.commerce.bestValue
+                      : getBadgeLabel(badge)}
                 </span>
               ) : null}
               <span className="text-lg font-bold tracking-tight sm:text-xl">
@@ -225,7 +233,7 @@ export function PricingGrid({
                     selected ? 'text-white/95' : 'text-[var(--brand-primary)]',
                   )}
                 >
-                  {formatMoney(offAmount, pkg.currency)} OFF
+                  {formatMoney(offAmount, pkg.currency)} {ui.commerce.off}
                 </span>
               ) : null}
             </button>
@@ -273,7 +281,7 @@ export function PricingGrid({
             <PricingCTA
               cta={{
                 ...active.primaryCta,
-                label: 'Add to Cart',
+                label: ui.commerce.addToCart,
               }}
               packageId={active.package.id}
               emphasized
@@ -282,7 +290,7 @@ export function PricingGrid({
             />
             {saveAmount ? (
               <p className="text-center text-sm font-semibold text-[var(--brand-primary)]">
-                You Save {formatMoney(saveAmount, active.package.currency)}
+                {ui.commerce.youSave} {formatMoney(saveAmount, active.package.currency)}
               </p>
             ) : null}
           </div>

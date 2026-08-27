@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const LIKE_KEYS = [2160, 2680, 3120, 3640] as const;
@@ -11,6 +12,7 @@ const LIKE_KEYS = [2160, 2680, 3120, 3640] as const;
  * Compact Facebook Post Likes final CTA dashboard.
  */
 export function FacebookPostLikesFinalCtaDashboard({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [likes, setLikes] = useState<number>(LIKE_KEYS[0]);
@@ -71,7 +73,7 @@ export function FacebookPostLikesFinalCtaDashboard({ className }: { className?: 
           </span>
           <div>
             <p className="text-sm font-bold text-stone-900">Post dashboard</p>
-            <p className="text-[10px] text-stone-500">Track Order · Live</p>
+            <p className="text-[10px] text-stone-500">{d('Track Order')} · {d('Live')}</p>
           </div>
         </div>
 
@@ -98,8 +100,8 @@ export function FacebookPostLikesFinalCtaDashboard({ className }: { className?: 
         </div>
 
         <div className="mb-2 rounded-lg border border-stone-100 bg-[var(--surface-muted)]/70 px-2 py-1.5">
-          <p className="text-[8px] text-stone-400 uppercase">Selected package</p>
-          <p className="text-xs font-bold text-stone-900">1,000 Post Likes</p>
+          <p className="text-[8px] text-stone-400 uppercase">{d('Selected package')}</p>
+          <p className="text-xs font-bold text-stone-900">{d('1,000 Post Likes')}</p>
         </div>
 
         <div className="mb-2 rounded-lg border border-stone-100 bg-[var(--surface-muted)]/70 px-2 py-1.5">

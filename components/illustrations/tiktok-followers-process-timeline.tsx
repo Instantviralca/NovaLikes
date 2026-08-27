@@ -11,6 +11,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const FLOW: Array<{ label: string; icon: LucideIcon }> = [
@@ -26,6 +27,7 @@ const FLOW: Array<{ label: string; icon: LucideIcon }> = [
  * Horizontal 16:9 process illustration — How to Buy TikTok Followers.
  */
 export function TikTokFollowersProcessTimeline({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const [active, setActive] = useState(0);
 
@@ -99,7 +101,7 @@ export function TikTokFollowersProcessTimeline({ className }: { className?: stri
                       isActive || isDone ? 'text-stone-800' : 'text-stone-400',
                     )}
                   >
-                    {step.label}
+                    {d(step.label)}
                   </p>
                 </li>
               );

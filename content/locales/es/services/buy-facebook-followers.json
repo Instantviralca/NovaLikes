@@ -7,7 +7,7 @@
       "description": "Compra seguidores de Facebook con opciones de paquete claras, pago con URL de Página pública, detalles de entrega gradual y seguimiento del pedido. Sin contraseña necesaria."
     },
     "hero": {
-      "eyebrow": "COMPRAR SEGUIDORES DE FACEBOOK",
+      "eyebrow": "SERVICIOS DE FACEBOOK",
       "title": "Comprar seguidores de Facebook",
       "description": "Compra seguidores de Facebook eligiendo el paquete y la cantidad que encajan con tu Página. NovaLikes te permite comparar los paquetes y precios de seguidores de Facebook disponibles antes de pedir. Selecciona el número de seguidores que quieres, facilita la URL pública correcta de la Página de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
       "purpose": "Convert for Facebook follower packages worldwide",
@@ -305,7 +305,7 @@
           {
             "id": "buy-facebook-followers-4",
             "title": "Qué cambia un pedido de seguidores de Facebook",
-            "description": "Un pedido de seguidores de Facebook se aplica al recuento de seguidores de la Página pública de Facebook enviada con el pedido. No añade automáticamente Me gusta de Página ni likes a publicaciones individuales.",
+            "description": "Un pedido de seguidores de Facebook se aplica al recuento de seguidores de la Página pública de Facebook enviada con el pedido. No añade automáticamente Me gusta de Página ni Me gusta a publicaciones individuales.",
             "icon": "clapperboard"
           },
           {
@@ -364,7 +364,7 @@
       "serviceCompare": {
         "id": "buy-facebook-followers-service-compare",
         "title": "Seguidores vs Me gusta de Página vs Me gusta de publicaciones de Facebook",
-        "description": "Seguidores de Facebook, Me gusta de Página y Me gusta de publicaciones representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de seguidores de una Página de Facebook, el recuento de Me gusta de Página o el recuento de likes de una publicación concreta de Facebook.",
+        "description": "Seguidores de Facebook, Me gusta de Página y Me gusta de publicaciones representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de seguidores de una Página de Facebook, el recuento de Me gusta de Página o el recuento de Me gusta de una publicación concreta de Facebook.",
         "current": {
           "title": "Seguidores de Facebook",
           "description": "Los seguidores son una métrica a nivel de Página. Elige seguidores de Facebook cuando quieras aumentar el recuento de seguidores que se muestra en una Página pública de Facebook.",
@@ -380,8 +380,8 @@
         },
         "views": {
           "title": "Me gusta de publicaciones de Facebook",
-          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes de una publicación pública de Facebook elegible concreta.",
-          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de likes es la métrica que quieres cambiar.",
+          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de Me gusta de una publicación pública de Facebook elegible concreta.",
+          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de Me gusta es la métrica que quieres cambiar.",
           "href": "/buy-facebook-post-likes",
           "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
         },
@@ -588,7 +588,7 @@
           },
           "buy-facebook-post-likes": {
             "title": "Me gusta de publicaciones de Facebook",
-            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de likes que se muestra en una publicación pública de Facebook elegible.",
+            "description": "Elige Me gusta de publicaciones de Facebook cuando quieras aumentar el recuento de Me gusta que se muestra en una publicación pública de Facebook elegible.",
             "ctaLabel": "Ver Me gusta de publicaciones de Facebook"
           }
         }
@@ -597,7 +597,7 @@
     "whyBuy": {
       "id": "buy-facebook-followers-why-buy",
       "title": "¿Por qué la gente compra seguidores de Facebook?",
-      "description": "La gente compra seguidores de Facebook por distintos motivos. Algunos quieren aumentar el recuento de seguidores que se muestra en una Página de Facebook, mientras que otros eligen un paquete de seguidores para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de seguidores de la Página seleccionada, pero no garantiza likes, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "description": "La gente compra seguidores de Facebook por distintos motivos. Algunos quieren aumentar el recuento de seguidores que se muestra en una Página de Facebook, mientras que otros eligen un paquete de seguidores para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de seguidores de la Página seleccionada, pero no garantiza Me gusta, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
       "items": [
         {
           "id": "buy-facebook-followers-wb-1",
@@ -612,7 +612,7 @@
         {
           "id": "buy-facebook-followers-wb-3",
           "title": "Céntrate en la métrica de seguidores",
-          "description": "Seguidores de Facebook se aplica al recuento de seguidores de la Página seleccionada. No añade automáticamente Me gusta de Página ni likes a publicaciones individuales de Facebook."
+          "description": "Seguidores de Facebook se aplica al recuento de seguidores de la Página seleccionada. No añade automáticamente Me gusta de Página ni Me gusta a publicaciones individuales de Facebook."
         },
         {
           "id": "buy-facebook-followers-wb-4",
@@ -655,6 +655,6 @@
       ]
     },
     "relatedHeading": "Explora otros servicios de Facebook",
-    "relatedIntro": "Los seguidores son solo una métrica de Facebook. Si quieres aumentar el recuento de Me gusta de Página o el recuento de likes de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
+    "relatedIntro": "Los seguidores son solo una métrica de Facebook. Si quieres aumentar el recuento de Me gusta de Página o el recuento de Me gusta de una publicación concreta de Facebook, compara los otros servicios de Facebook abajo."
   }
 }

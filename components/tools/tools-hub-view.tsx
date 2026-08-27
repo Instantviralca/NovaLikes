@@ -19,6 +19,7 @@ import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { ToolsHubHeroArt } from '@/components/tools/tools-hub-hero-art';
 import { PlatformMark, platformName } from '@/components/tools/platform-mark';
 import { HeroWash, Squiggle } from '@/components/tools/instagram-profile-viewer/visuals';
+import { splitAccentInTitle } from '@/components/typography/accent-title';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
 import { routes } from '@/config/routes';
@@ -90,10 +91,11 @@ export function ToolsHubView({
     ...service,
     url: localizeHref(service.url, locale),
   }));
-  const h1Accent = hub.h1Accent;
-  const accentAt = hub.h1.lastIndexOf(h1Accent);
-  const h1Before = accentAt >= 0 ? hub.h1.slice(0, accentAt) : hub.h1;
-  const h1AccentText = accentAt >= 0 ? h1Accent : '';
+  const {
+    before: h1Before,
+    accent: h1AccentText,
+    after: h1After,
+  } = splitAccentInTitle(hub.h1, hub.h1Accent);
 
   return (
     <div className="relative overflow-x-hidden bg-[#FFFBFA]">
@@ -118,6 +120,7 @@ export function ToolsHubView({
               <Heading as="h1" size="h1" className="mt-5 max-w-xl break-words text-[2.15rem] leading-[1.1] sm:text-[2.75rem]">
                 {h1Before}
                 {h1AccentText ? <span className="text-[var(--brand-primary)]">{h1AccentText}</span> : null}
+                {h1After}
               </Heading>
               <Lead className="mt-4 max-w-[34rem] text-[0.98rem] leading-relaxed text-[var(--text-secondary)]">
                 {hub.lead}

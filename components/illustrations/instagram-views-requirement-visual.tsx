@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
@@ -9,6 +10,7 @@ import { cn } from '@/lib/utils';
  * Lazy-safe client illustration for ImageTextSplit.
  */
 export function InstagramViewsRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const accent = '#E1306C';
   const [views, setViews] = useState(1240);
@@ -63,7 +65,7 @@ export function InstagramViewsRequirementVisual({ className }: { className?: str
             </span>
           </div>
           <div className="absolute right-2 bottom-2 left-2 rounded-lg bg-white/90 px-2 py-1.5 backdrop-blur-sm">
-            <p className="text-[8px] font-semibold text-stone-500 uppercase">Views</p>
+            <p className="text-[8px] font-semibold text-stone-500 uppercase">{d('Views')}</p>
             <p className="text-sm font-bold tabular-nums text-stone-900">
               {new Intl.NumberFormat('en-US').format(Math.round(views))}
             </p>
@@ -82,7 +84,7 @@ export function InstagramViewsRequirementVisual({ className }: { className?: str
       <div className="mt-2.5 rounded-xl border border-stone-100 bg-[var(--surface-muted)] p-2.5">
         <div className="mb-1.5 flex items-center justify-between">
           <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
-            Analytics
+            {d('Analytics')}
           </p>
           <span className="text-[9px] font-bold text-emerald-600">+12%</span>
         </div>

@@ -131,7 +131,8 @@ export type ContactPageOverlay = ReturnType<typeof getEnglishContactSource>;
 
 export function getEnglishReviewsPageSource() {
   return {
-    h1: 'Customer Reviews',
+    eyebrow: 'CUSTOMER FEEDBACK',
+    h1: 'NovaLikes Reviews',
     intro:
       "Customer reviews from NovaLikes' published review catalogue. Ratings below reflect that catalogue and may include both 4-star and 5-star feedback.",
     catalogueHeading: 'Customer review catalogue',

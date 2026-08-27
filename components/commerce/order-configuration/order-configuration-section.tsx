@@ -7,6 +7,7 @@ import { AddToCartButton } from '@/components/commerce/order-configuration/add-t
 import { DynamicOrderForm } from '@/components/commerce/order-configuration/dynamic-order-form';
 import { OrderSummary } from '@/components/commerce/order-configuration/order-summary';
 import { ValidationMessage } from '@/components/commerce/order-configuration/validation-message';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
@@ -16,6 +17,11 @@ import { routes } from '@/config/routes';
 import { getServiceOrderConfig } from '@/data/order-fields';
 import { getServicePageAnalytics } from '@/lib/analytics';
 import { useCart } from '@/lib/cart';
+import {
+  localizeOrderDescription,
+  localizeOrderFieldForDisplay,
+  localizeValidationMessage,
+} from '@/lib/i18n/order-display';
 import {
   normalizeOrderConfigurationValues,
   validateOrderConfiguration,
@@ -39,9 +45,14 @@ export function OrderConfigurationSection({
   className,
 }: OrderConfigurationSectionProps) {
   const cart = useCart();
+  const { ui } = useI18nChrome();
   const config = useMemo(
     () => getServiceOrderConfig(service.slug, selectedPackage),
     [service.slug, selectedPackage],
+  );
+  const displayFields = useMemo(
+    () => config.fields.map((field) => localizeOrderFieldForDisplay(field, ui)),
+    [config.fields, ui],
   );
   const [values, setValues] = useState<OrderConfigurationValues>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -68,11 +79,11 @@ export function OrderConfigurationSection({
       <Section
         id="order-configuration"
         className={cn(className)}
-        aria-label="Order configuration"
+        aria-label={ui.orderDialog.title}
       >
         <Container size="xl">
           <div className="rounded-lg border border-dashed p-8 text-center">
-            <MutedText>Select a package above to continue with your order details.</MutedText>
+            <MutedText>{ui.commerce.choosePackage}</MutedText>
           </div>
         </Container>
       </Section>
@@ -90,9 +101,11 @@ export function OrderConfigurationSection({
     const validationErrors = validateOrderConfiguration(config.fields, normalized);
     if (validationErrors.length > 0) {
       setErrors(
-        Object.fromEntries(validationErrors.map((e) => [e.fieldId, e.message])),
+        Object.fromEntries(
+          validationErrors.map((e) => [e.fieldId, localizeValidationMessage(e.message, ui)]),
+        ),
       );
-      setFormError('Please fix the highlighted fields.');
+      setFormError(ui.orderDialog.fixHighlighted);
       return;
     }
 
@@ -141,18 +154,18 @@ export function OrderConfigurationSection({
     <Section
       id="order-configuration"
       className={cn(className)}
-      aria-label="Order configuration"
+      aria-label={ui.orderDialog.title}
       data-analytics="order-configuration"
     >
       <Container size="xl">
         <div className="mb-8 max-w-2xl space-y-2">
           <Heading as="h2" size="h2">
-            Order details
+            {ui.orderDialog.title}
           </Heading>
           <MutedText>
-            Enter the information needed to fulfill {selectedPackage.quantityLabel}.
+            {localizeOrderDescription(selectedPackage.quantityLabel, ui)}
             {selectedPackage.commentType
-              ? ` Comment type: ${selectedPackage.commentType}.`
+              ? ` ${selectedPackage.commentType}.`
               : ''}
           </MutedText>
         </div>
@@ -160,22 +173,25 @@ export function OrderConfigurationSection({
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="space-y-4">
             <DynamicOrderForm
-              fields={config.fields}
+              fields={displayFields}
               values={values}
               errors={errors}
               onChange={handleChange}
             />
             <ValidationMessage message={formError} />
             <div className="flex flex-wrap gap-3">
-              <AddToCartButton onClick={handleAddToCart} />
+              <AddToCartButton
+                onClick={handleAddToCart}
+                label={ui.commerce.addToCart}
+              />
               {onBackToPackages ? (
                 <Button type="button" variant="outline" size="lg" onClick={onBackToPackages}>
-                  Back to Packages
+                  {ui.checkout.back}
                 </Button>
               ) : null}
               {added ? (
                 <Button asChild size="lg" variant="secondary">
-                  <Link href={routes.cart}>View Cart</Link>
+                  <Link href={routes.cart}>{ui.cart.viewFullCart}</Link>
                 </Button>
               ) : null}
             </div>

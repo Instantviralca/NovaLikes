@@ -1,5 +1,5 @@
 {
-  "h1": "Avis clients",
+  "h1": "Avis sur NovaLikes",
   "intro": "Avis clients issus du catalogue d’avis publié de NovaLikes. Les notes ci-dessous reflètent ce catalogue et peuvent inclure des retours 4 étoiles et 5 étoiles.",
   "catalogueHeading": "Catalogue des avis clients",
   "emptyFilter": "Aucun avis ne correspond à ce filtre de plateforme.",
@@ -20,5 +20,6 @@
   "showLess": "Afficher moins",
   "chrome": {
     "breadcrumb": "Avis"
-  }
+  },
+  "eyebrow": "AVIS CLIENTS"
 }

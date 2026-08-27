@@ -1,6 +1,6 @@
 {
   "hub": {
-    "eyebrow": "Kostenlose Tools",
+    "eyebrow": "KOSTENLOSE SOCIAL-MEDIA-TOOLS",
     "h1": "Kostenlose Instagram-, TikTok- und Facebook-Tools",
     "lead": "Rufen Sie ein öffentliches Profil ab, prüfen Sie eine veröffentlichte Follower-Zahl oder holen Sie eine Videodatei, die die Plattform bereits bereitstellt. Jeder Helfer läuft auf NovaLikes-Servern und liefert nur öffentliche Informationen — nie einen privaten Feed, eine Anmeldesitzung oder einen erfundenen Download.",
     "howHeading": "So funktionieren diese Tools",
@@ -201,7 +201,7 @@
     },
     "instagram-video-downloader": {
       "eyebrow": "Instagram-Tool",
-      "h1": "Instagram-Video-/Reels-Downloader",
+      "h1": "Instagram-Video- und Reels-Downloader",
       "lead": "Fügen Sie eine öffentliche Instagram-Reel- oder Video-Beitrags-URL ein. NovaLikes prüft die öffentliche Seite und bietet eine Datei nur an, wenn Instagram eine einbindet. Viele öffentliche Beiträge tun das derzeit nicht. Das ist eingeschränkte Verfügbarkeit — kein defektes Tool und kein gefälschter Download.",
       "inputLabel": "Öffentliche Instagram-Reel- oder Video-URL",
       "helperText": "Eine Datei wird nur angeboten, wenn Instagram sie auf der öffentlichen Seite einbindet.",
@@ -529,7 +529,7 @@
       "availabilityLabel": "Verfügbar"
     },
     "instagram-video-downloader": {
-      "name": "Instagram-Video-/Reels-Downloader",
+      "name": "Instagram-Video- und Reels-Downloader",
       "shortDescription": "Prüft ein öffentliches Instagram-Reel oder einen Videobeitrag. Eine Datei wird nur zurückgegeben, wenn Instagram eine preisgibt.",
       "placeholder": "https://www.instagram.com/reel/...",
       "actionLabel": "Video prüfen",

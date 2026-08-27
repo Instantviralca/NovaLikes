@@ -17,7 +17,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
         'Buy TikTok followers worldwide using real package options from NovaLikes.com, with no password required, clear delivery details, 24/7 support, and eligible refill coverage.',
     },
     hero: {
-      eyebrow: 'BUY TIKTOK FOLLOWERS',
+      eyebrow: 'TIKTOK SERVICES',
       title: 'Buy TikTok Followers',
       description:
         'Buy TikTok followers by choosing the package and quantity that fits your account. NovaLikes lets you compare available follower packages and prices before ordering. Select the number of TikTok followers you want, provide the correct public TikTok username, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
@@ -253,7 +253,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         'Buy TikTok likes with real packages for creators and businesses. Public video URL only, secure checkout, gradual delivery options, and order tracking.',
     },
     hero: {
-      eyebrow: 'BUY TIKTOK LIKES',
+      eyebrow: 'TIKTOK SERVICES',
       title: 'Buy TikTok Likes',
       description:
         'Buy TikTok likes by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok likes packages and prices before ordering. Select the number of likes you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
@@ -501,7 +501,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         'Buy TikTok views with clear package pricing for public videos. Public video URL only, secure checkout and order tracking for creators and businesses.',
     },
     hero: {
-      eyebrow: 'BUY TIKTOK VIEWS',
+      eyebrow: 'TIKTOK SERVICES',
       title: 'Buy TikTok Views',
       description:
         'Buy TikTok views by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok views packages and prices before ordering. Select the number of views you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',

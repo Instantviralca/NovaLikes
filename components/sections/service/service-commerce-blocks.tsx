@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { PackageSelector } from '@/components/commerce/pricing';
 import { ServiceStickyOrderBar } from '@/components/commerce/pricing/service-sticky-order-bar';
 import type { PricingCardModel } from '@/components/commerce/pricing/types';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { getPlatformById } from '@/data/platforms';
 import { getServicePageAnalytics } from '@/lib/analytics';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
@@ -57,16 +58,22 @@ const PackageOrderDialog = dynamic(
   { ssr: false, loading: () => <OrderDialogFallback /> },
 );
 
-export function getDefaultSummaryBenefits(service: Service): string[] {
+export function getDefaultSummaryBenefits(service: Service, ui?: { commerce: {
+  publicUsernameOnly: string;
+  publicUrlOnly: string;
+  noPassword: string;
+  secureCheckout: string;
+  orderTracking: string;
+} }): string[] {
   const destination = USERNAME_ONLY_SLUGS.has(service.slug)
-    ? 'Public Username Only'
-    : 'Public URL Only';
+    ? (ui?.commerce.publicUsernameOnly ?? 'Public Username Only')
+    : (ui?.commerce.publicUrlOnly ?? 'Public URL Only');
   return [
     destination,
-    'No Password Required',
-    'Secure Checkout',
+    ui?.commerce.noPassword ?? 'No Password Required',
+    ui?.commerce.secureCheckout ?? 'Secure Checkout',
     '30-Day Money-Back Guarantee',
-    'Order Tracking',
+    ui?.commerce.orderTracking ?? 'Order Tracking',
   ];
 }
 
@@ -80,6 +87,7 @@ export function ServiceCommerceBlocks({
   infoPills,
   stickyCtaLabel,
 }: ServiceCommerceBlocksProps) {
+  const { ui } = useI18nChrome();
   const [selectedPackage, setSelectedPackage] = useState<PricingPackage | null>(null);
   const [orderOpen, setOrderOpen] = useState(false);
   const [dialogRequested, setDialogRequested] = useState(false);
@@ -100,8 +108,8 @@ export function ServiceCommerceBlocks({
   }, [pricing.packages, service.slug]);
 
   const resolvedBenefits = useMemo(
-    () => summaryBenefits ?? getDefaultSummaryBenefits(service),
-    [summaryBenefits, service],
+    () => summaryBenefits ?? getDefaultSummaryBenefits(service, ui),
+    [summaryBenefits, service, ui],
   );
 
   const handleSelect = (packageId: string) => {

@@ -172,7 +172,46 @@ export const loadFaqItems = cache((locale: Locale): PublicFaq[] => {
     };
   });
   assertCompleteOverlay(locale, 'faq-items', issues);
-  return localizeHrefsDeep(items, locale);
+  const withLocalizedHrefs = localizeHrefsDeep(items, locale);
+  if (!isLocalizedLocale(locale)) return withLocalizedHrefs;
+
+  const ui = loadUi(locale);
+  const englishChipLabels: Record<string, string> = {
+    'Instagram Followers': ui.footerServices['buy-instagram-followers'],
+    'Instagram Likes': ui.footerServices['buy-instagram-likes'],
+    'Instagram Views': ui.footerServices['buy-instagram-views'],
+    'Instagram Comments': ui.footerServices['buy-instagram-comments'],
+    'Tiktok Followers': ui.footerServices['buy-tiktok-followers'],
+    'TikTok Followers': ui.footerServices['buy-tiktok-followers'],
+    'Tiktok Likes': ui.footerServices['buy-tiktok-likes'],
+    'TikTok Likes': ui.footerServices['buy-tiktok-likes'],
+    'Tiktok Views': ui.footerServices['buy-tiktok-views'],
+    'TikTok Views': ui.footerServices['buy-tiktok-views'],
+    'Facebook Followers': ui.footerServices['buy-facebook-followers'],
+    'Facebook Page Likes': ui.footerServices['buy-facebook-page-likes'],
+    'Facebook Post Likes': ui.footerServices['buy-facebook-post-likes'],
+  };
+  const utilityLabels: Record<string, string> = {
+    'Refund Policy': ui.footer.refundPolicy,
+    'Track Order': ui.footer.trackOrder,
+    Contact: ui.footer.contact,
+  };
+
+  return withLocalizedHrefs.map((item) => ({
+    ...item,
+    relatedLinks: item.relatedLinks.map((link) => {
+      const idSlug = (
+        Object.keys(ui.footerServices) as Array<keyof typeof ui.footerServices>
+      ).find((key) => link.id.endsWith(`-${key}`));
+      const fromId = idSlug ? ui.footerServices[idSlug] : undefined;
+      const fromEnglish = englishChipLabels[link.label];
+      const fromUtility = utilityLabels[link.label];
+      return {
+        ...link,
+        label: fromId ?? fromEnglish ?? fromUtility ?? link.label,
+      };
+    }),
+  }));
 });
 
 export type LocalizedServiceBundle = ReturnType<typeof getEnglishServiceBundle>;

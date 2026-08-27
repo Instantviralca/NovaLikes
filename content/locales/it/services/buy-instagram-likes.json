@@ -7,7 +7,7 @@
       "description": "Comprare like Instagram su NovaLikes con opzioni di pacchetto chiare, dettagli di consegna, checkout sicuro, tracciamento ordine e solo URL del post pubblico."
     },
     "hero": {
-      "eyebrow": "COMPRARE LIKE INSTAGRAM",
+      "eyebrow": "SERVIZI INSTAGRAM",
       "title": "Comprare like Instagram",
       "description": "Comprare like Instagram per un post o un Reel pubblico significa scegliere la quantità di pacchetto adatta a ciò che ti serve. NovaLikes offre diverse quantità di like con prezzi chiari, così puoi confrontare le opzioni prima di ordinare. Seleziona il pacchetto, indica l’URL pubblico del post o del Reel Instagram e completa l’ordine online. Nessuna password Instagram è richiesta e, dopo il checkout, puoi tracciare l’ordine.",
       "purpose": "Convert visitors looking to buy Instagram likes",
@@ -166,7 +166,7 @@
     "relatedServices": {
       "id": "related-instagram-services-likes",
       "title": "Scopri altri servizi",
-      "description": "Aggiungi crescita dell’audience, views o commenti quando la campagna ha bisogno di più supporto.",
+      "description": "Aggiungi crescita dell’audience, visualizzazioni o commenti quando la campagna ha bisogno di più supporto.",
       "purpose": "Internal links to sibling Instagram offers",
       "serviceSlugs": [
         "buy-instagram-followers",
@@ -248,7 +248,7 @@
           {
             "id": "buy-instagram-likes-6",
             "title": "Cosa non includono i like Instagram",
-            "description": "I like sono separati da follower, views e commenti. Ordinare like Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
+            "description": "I like sono separati da follower, visualizzazioni e commenti. Ordinare like Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
             "icon": "megaphone"
           }
         ],
@@ -294,8 +294,8 @@
       },
       "serviceCompare": {
         "id": "buy-instagram-likes-service-compare",
-        "title": "Like vs follower vs views Instagram",
-        "description": "Like, follower e views misurano aspetti diversi di un account Instagram. Scegli il servizio in base al fatto che tu voglia lavorare su un post o Reel specifico, sul conteggio follower del profilo o sul conteggio views dei video.",
+        "title": "Like vs follower vs visualizzazioni Instagram",
+        "description": "Like, follower e visualizzazioni misurano aspetti diversi di un account Instagram. Scegli il servizio in base al fatto che tu voglia lavorare su un post o Reel specifico, sul conteggio follower del profilo o sul conteggio delle visualizzazioni dei video.",
         "current": {
           "title": "Like Instagram",
           "description": "I like sono una metrica a livello di contenuto. Scegli Like Instagram quando vuoi aumentare il conteggio like mostrato su un post o un Reel pubblico specifico.",
@@ -310,11 +310,11 @@
           "ctaLabel": "Vedi follower Instagram"
         },
         "views": {
-          "title": "Views Instagram",
-          "description": "Le views si applicano ai video idonei. Scegli Views Instagram quando vuoi aumentare il conteggio views mostrato su un Reel o un video pubblico.",
+          "title": "Visualizzazioni Instagram",
+          "description": "le visualizzazioni si applicano ai video idonei. Scegli Visualizzazioni Instagram quando vuoi aumentare il conteggio delle visualizzazioni mostrato su un Reel o un video pubblico.",
           "bestFor": "Reel, video e altri contenuti video Instagram idonei.",
           "href": "/buy-instagram-views",
-          "ctaLabel": "Vedi views Instagram"
+          "ctaLabel": "Vedi visualizzazioni Instagram"
         },
         "combinedNote": "Se vuoi commenti su un post o un Reel specifico, i Commenti Instagram sono disponibili come servizio separato.",
         "commentsHref": "/buy-instagram-comments"
@@ -346,7 +346,7 @@
           {
             "id": "buy-instagram-likes-10",
             "title": "Scegli il servizio Instagram giusto",
-            "description": "Like, follower, views e commenti sono servizi distinti. Verifica che Like Instagram sia il servizio che ti serve prima di effettuare l’ordine.",
+            "description": "Like, follower, visualizzazioni e commenti sono servizi distinti. Verifica che Like Instagram sia il servizio che ti serve prima di effettuare l’ordine.",
             "icon": "truck"
           },
           {
@@ -449,7 +449,7 @@
           {
             "id": "buy-instagram-likes-19",
             "title": "Consulta Insights Instagram",
-            "description": "Se Insights è disponibile sul tuo account, confronta metriche come portata, views, interazioni e altri dati sui contenuti per capire come performano post e Reel.",
+            "description": "Se Insights è disponibile sul tuo account, confronta metriche come portata, visualizzazioni, interazioni e altri dati sui contenuti per capire come performano post e Reel.",
             "icon": "shield-check"
           },
           {
@@ -481,7 +481,7 @@
           {
             "id": "buy-instagram-likes-23",
             "title": "Scegliere il servizio Instagram sbagliato",
-            "description": "Like, follower, views e commenti sono servizi distinti. Scegli Like Instagram solo quando la metrica che vuoi cambiare è il conteggio like su un contenuto specifico.",
+            "description": "Like, follower, visualizzazioni e commenti sono servizi distinti. Scegli Like Instagram solo quando la metrica che vuoi cambiare è il conteggio like su un contenuto specifico.",
             "icon": "heart"
           },
           {
@@ -499,7 +499,7 @@
           {
             "id": "buy-instagram-likes-26",
             "title": "Aspettarsi che i like garantiscano altri risultati",
-            "description": "Un conteggio like più alto non significa automaticamente più follower, commenti, views, portata, vendite o crescita organica.",
+            "description": "Un conteggio like più alto non significa automaticamente più follower, commenti, visualizzazioni, portata, vendite o crescita organica.",
             "icon": "clapperboard"
           },
           {
@@ -518,9 +518,9 @@
             "ctaLabel": "Vedi follower Instagram"
           },
           "buy-instagram-views": {
-            "title": "Views Instagram",
-            "description": "Scegli Views Instagram quando vuoi aumentare il conteggio views su un Reel o un video pubblico idoneo.",
-            "ctaLabel": "Vedi views Instagram"
+            "title": "Visualizzazioni Instagram",
+            "description": "Scegli Visualizzazioni Instagram quando vuoi aumentare il conteggio visualizzazioni su un Reel o un video pubblico idoneo.",
+            "ctaLabel": "Vedi visualizzazioni Instagram"
           },
           "buy-instagram-comments": {
             "title": "Commenti Instagram",
@@ -561,7 +561,7 @@
           "description": "Comprare like cambia una metrica visibile sul contenuto selezionato. Didascalie, lavoro creativo, decisioni di pubblicazione, risposte e altre attività dell’account dipendono ancora da come gestisci la presenza Instagram."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare è il numero di follower del profilo, le views video o i commenti, e non i like, scegli invece il servizio Instagram corrispondente."
+      "bottomNote": "Se la metrica che vuoi cambiare è il numero di follower del profilo, le visualizzazioni video o i commenti, e non i like, scegli invece il servizio Instagram corrispondente."
     },
     "howToBuy": {
       "id": "how-it-works",
@@ -591,6 +591,6 @@
       ]
     },
     "relatedHeading": "Scopri altri servizi Instagram",
-    "relatedIntro": "I like sono solo una metrica Instagram. Se vuoi lavorare sul numero di follower del profilo, sulle views video o sui commenti di contenuti specifici, confronta gli altri servizi Instagram qui sotto."
+    "relatedIntro": "I like sono solo una metrica Instagram. Se vuoi lavorare sul numero di follower del profilo, sulle visualizzazioni video o sui commenti di contenuti specifici, confronta gli altri servizi Instagram qui sotto."
   }
 }

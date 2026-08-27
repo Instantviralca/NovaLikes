@@ -15,6 +15,7 @@ import { Section } from '@/components/layout/section';
 import { FadeUp } from '@/components/motion/fade-up';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const STEPS = [
@@ -65,6 +66,7 @@ export function FacebookPostLikesDeliveryTimeline({
   description = 'Delivery begins after your order has been reviewed and confirmed. Processing time depends on the selected package and current demand. Progress updates remain available through order tracking until delivery is complete.',
   className,
 }: FacebookPostLikesDeliveryTimelineProps) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const [active, setActive] = useState(0);
 
@@ -94,7 +96,7 @@ export function FacebookPostLikesDeliveryTimeline({
       <Container size="xl">
         <FadeUp className="mb-10 max-w-2xl space-y-3">
           <Heading as="h2" size="h2" id={`${id}-heading`}>
-            {title}
+            {d(title)}
           </Heading>
           <MutedText>{description}</MutedText>
         </FadeUp>
@@ -139,9 +141,9 @@ export function FacebookPostLikesDeliveryTimeline({
                           isActive || isDone ? 'text-stone-900' : 'text-stone-500',
                         )}
                       >
-                        {step.title}
+                        {d(step.title)}
                       </p>
-                      <p className="mt-1 text-xs leading-relaxed text-stone-500">{step.description}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-stone-500">{d(step.description)}</p>
                       {index < STEPS.length - 1 ? (
                         <span className="mt-3 text-sm text-[var(--brand-primary)] sm:hidden" aria-hidden>
                           ↓

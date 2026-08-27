@@ -14,9 +14,10 @@ import { TestimonialsGrid } from '@/components/reviews/TestimonialsGrid';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Button } from '@/components/ui/button';
+import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
+import { Eyebrow } from '@/components/typography/eyebrow';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
-import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { routes } from '@/config/routes';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/lib/i18n/config';
@@ -104,6 +105,7 @@ export function ReviewsPageView({
                 ]}
               />
               <div className="mt-5 max-w-xl space-y-4">
+                {copy?.eyebrow ? <Eyebrow>{copy.eyebrow}</Eyebrow> : null}
                 <Heading as="h1" size="h1" id="reviews-page-heading" className={HERO_HEADING_CLASS}>
                   {accentLastWord(copy?.h1 ?? 'Customer Reviews')}
                 </Heading>

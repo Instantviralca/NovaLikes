@@ -15,7 +15,9 @@ import { PackageFeatures } from '@/components/commerce/pricing/package-features'
 import { PriceDisplay } from '@/components/commerce/pricing/price-display';
 import { PricingCTA } from '@/components/commerce/pricing/pricing-cta';
 import type { PricingCardProps } from '@/components/commerce/pricing/types';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { getServiceBySlug } from '@/data/services';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { cn } from '@/lib/utils';
 import type { PlatformId } from '@/types/platform';
 
@@ -44,11 +46,13 @@ export function PricingCard({
   className,
   selected = false,
 }: PricingCardProps) {
+  const { locale, ui } = useI18nChrome();
   const pkg = model.package;
   const emphasized = pkg.badge === 'most-popular' || pkg.badge === 'best-value';
   const service = getServiceBySlug(pkg.serviceSlug);
   const platform = service?.platform ?? platformFromSlug(pkg.serviceSlug);
   const quantityText = formatQuantity(pkg.quantity);
+  const displayName = localizePackageDisplayName(pkg.packageName || pkg.title, locale);
   const hasRefill =
     pkg.features.some((f) => /refill/i.test(f)) ||
     /refill/i.test(pkg.title) ||
@@ -105,7 +109,7 @@ export function PricingCard({
             {selected ? (
               <span className="inline-flex items-center gap-1 rounded-full bg-[var(--brand-accent-soft)] px-2.5 py-1 text-[10px] font-bold tracking-wide text-[var(--brand-primary)] uppercase">
                 <Check className="size-3" aria-hidden="true" />
-                Selected
+                {ui.commerce.selected}
               </span>
             ) : null}
           </div>
@@ -115,7 +119,7 @@ export function PricingCard({
               {quantityText}
             </p>
             <p className="mt-1 break-words text-sm font-medium text-[var(--text-secondary)]">
-              {pkg.packageName || pkg.title}
+              {displayName}
             </p>
           </div>
 

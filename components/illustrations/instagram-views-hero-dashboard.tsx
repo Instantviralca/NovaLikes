@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const VIEW_KEYS = [8420, 8680, 8940, 9210] as const;
@@ -37,6 +38,7 @@ export function InstagramViewsHeroDashboard({
   className,
   packagePreview,
 }: InstagramViewsHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const accent = '#E1306C';
   const brand = '#F97316';
   const [views, setViews] = useState<number>(VIEW_KEYS[0]);
@@ -187,7 +189,7 @@ export function InstagramViewsHeroDashboard({
                     </span>
                     <div className="min-w-0">
                       <p className="text-[8px] font-semibold tracking-wide text-stone-500 uppercase">
-                        Views
+                        {d('Views')}
                       </p>
                       <p className="text-sm font-bold tabular-nums tracking-tight text-stone-900">
                         {formatViews(views)}
@@ -212,7 +214,7 @@ export function InstagramViewsHeroDashboard({
         <div className="absolute -bottom-6 -left-[48%] z-[3] hidden w-[9.5rem] overflow-hidden rounded-xl border border-white/85 bg-white/95 p-2.5 shadow-[0_16px_32px_-18px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:block">
           <div className="mb-1.5 flex items-center justify-between gap-1">
             <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-              Analytics
+              {d('Analytics')}
             </p>
             <span className="rounded-full bg-emerald-50 px-1.5 py-0.5 text-[8px] font-bold text-emerald-600">
               +14.8%
@@ -244,24 +246,24 @@ export function InstagramViewsHeroDashboard({
       </div>
 
       <div className="pointer-events-none absolute top-[0%] -left-2 z-[4] max-w-[8rem] rounded-lg border border-white/90 bg-white/95 px-2 py-1.5 shadow-[0_12px_28px_-14px_rgba(28,25,23,0.45)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.2s_ease-in-out_infinite] sm:-left-4">
-        <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">Views</p>
+        <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">{d('Views')}</p>
         <p className="mt-0.5 text-xs font-bold tabular-nums text-stone-800">
           +{formatViews(views - VIEW_KEYS[0])} today
         </p>
       </div>
 
       <div className="pointer-events-none absolute top-[2%] -right-2 z-[4] max-w-[8rem] rounded-lg border border-white/90 bg-white/95 px-2 py-1.5 shadow-[0_12px_28px_-14px_rgba(28,25,23,0.45)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.4s_ease-in-out_infinite] sm:-right-4">
-        <p className="text-[8px] font-semibold text-emerald-600 uppercase">Order confirmed</p>
-        <p className="mt-0.5 text-[11px] font-bold text-stone-800">Views delivering</p>
+        <p className="text-[8px] font-semibold text-emerald-600 uppercase">{d('Order confirmed')}</p>
+        <p className="mt-0.5 text-[11px] font-bold text-stone-800">{d('Views delivering')}</p>
       </div>
 
       <div className="pointer-events-none absolute top-[40%] -right-3 z-[4] rounded-full border border-white/90 bg-white/95 px-2 py-1 text-[9px] font-bold text-stone-700 shadow-[0_8px_20px_-10px_rgba(28,25,23,0.42)] backdrop-blur-md motion-safe:animate-[iv-float-card_7s_ease-in-out_infinite] sm:-right-5">
-        Live tracking
+        {d('Live tracking')}
       </div>
 
       {packagePreview ? (
         <div className="absolute -bottom-8 left-1/2 z-[5] hidden w-[min(100%,11rem)] -translate-x-1/2 rounded-lg border border-[var(--border-subtle)] bg-white px-2.5 py-1.5 shadow-[0_12px_28px_-16px_rgba(28,25,23,0.38)] motion-safe:animate-[iv-float-card_5.5s_ease-in-out_infinite] sm:block">
-          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">Selected</p>
+          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">{d('Selected')}</p>
           <p className="truncate text-[11px] font-bold text-[var(--text-primary)]">
             {packagePreview.title}
           </p>

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -28,6 +30,7 @@ export function FacebookFollowersOrderStatusDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [followers, setFollowers] = useState<number>(FOLLOWER_KEYS[0]);
@@ -87,7 +90,7 @@ export function FacebookFollowersOrderStatusDashboard({
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2.5 py-1 text-[10px] font-bold text-sky-700">
-            Live
+            {d('Live')}
           </span>
         </div>
 

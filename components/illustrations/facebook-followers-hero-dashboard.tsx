@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const FOLLOWER_KEYS = [8420, 9180, 9960, 10840, 11720] as const;
@@ -36,6 +37,7 @@ export function FacebookFollowersHeroDashboard({
   className,
   packagePreview,
 }: FacebookFollowersHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [followers, setFollowers] = useState<number>(FOLLOWER_KEYS[0]);
@@ -178,7 +180,7 @@ export function FacebookFollowersHeroDashboard({
             className="rounded-full px-1.5 py-0.5 text-[7px] font-bold text-white"
             style={{ background: fbBlue }}
           >
-            Live
+            {d('Live')}
           </span>
         </div>
         <p className="mt-1 text-[13px] font-black tabular-nums text-stone-900">28.6K</p>
@@ -221,7 +223,7 @@ export function FacebookFollowersHeroDashboard({
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2 py-0.5 text-[9px] font-bold text-sky-700">
-            Live
+            {d('Live')}
           </span>
         </div>
 
@@ -256,7 +258,7 @@ export function FacebookFollowersHeroDashboard({
                 </div>
                 {packagePreview ? (
                   <div className="rounded-lg border border-orange-100 bg-orange-50 px-2.5 py-1.5 text-right">
-                    <p className="text-[8px] font-semibold text-orange-600 uppercase">Package</p>
+                    <p className="text-[8px] font-semibold text-orange-600 uppercase">{d('Package')}</p>
                     <p className="text-[11px] font-bold text-stone-800">{packagePreview.title}</p>
                     <p className="text-[10px] font-semibold text-stone-500">
                       {packagePreview.priceLabel}

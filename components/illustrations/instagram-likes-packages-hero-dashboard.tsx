@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /** Subtle realtime like-count sequence for hero. */
@@ -34,6 +35,7 @@ export function InstagramLikesPackagesHeroDashboard({
   className,
   packagePreview,
 }: InstagramLikesPackagesHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const accent = '#E1306C';
   const brand = '#F97316';
   const [likes, setLikes] = useState<number>(LIKE_KEYS[0]);
@@ -176,7 +178,7 @@ export function InstagramLikesPackagesHeroDashboard({
                     </span>
                     <div className="min-w-0">
                       <p className="text-[9px] font-semibold tracking-wide text-stone-500 uppercase">
-                        Likes
+                        {d('Likes')}
                       </p>
                       <p className="text-base font-bold tabular-nums tracking-tight text-stone-900 transition-[opacity] duration-150">
                         {formatLikes(likes)}
@@ -215,7 +217,7 @@ export function InstagramLikesPackagesHeroDashboard({
                   <path d="M22 2 15 22 11 13 2 9l20-7z" strokeWidth="1.6" />
                 </svg>
                 <p className="ml-auto text-[10px] font-semibold tabular-nums text-stone-700">
-                  {formatLikes(likes)} likes
+                  {d(`${formatLikes(likes)} Likes`)}
                 </p>
               </div>
             </div>
@@ -285,24 +287,24 @@ export function InstagramLikesPackagesHeroDashboard({
       </div>
 
       <div className="pointer-events-none absolute top-[2%] -right-2 z-[4] max-w-[8rem] rounded-lg border border-white/90 bg-white/95 px-2 py-1.5 shadow-[0_12px_28px_-14px_rgba(28,25,23,0.45)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:-right-4">
-        <p className="text-[8px] font-semibold text-emerald-600 uppercase">Order confirmed</p>
-        <p className="mt-0.5 text-[11px] font-bold text-stone-800">Likes package ready</p>
+        <p className="text-[8px] font-semibold text-emerald-600 uppercase">{d('Order confirmed')}</p>
+        <p className="mt-0.5 text-[11px] font-bold text-stone-800">{d('Likes package ready')}</p>
       </div>
 
       <div className="pointer-events-none absolute bottom-[4%] -right-2 z-[4] hidden max-w-[8rem] rounded-lg border border-white/90 bg-white/95 px-2 py-1.5 shadow-[0_12px_28px_-14px_rgba(28,25,23,0.45)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.8s_ease-in-out_infinite] sm:-right-4 sm:block">
         <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-          Growth chart
+          {d('Growth chart')}
         </p>
         <p className="mt-0.5 text-[11px] font-bold text-stone-800">Engagement rising</p>
       </div>
 
       <div className="pointer-events-none absolute top-[40%] -right-3 z-[4] rounded-full border border-white/90 bg-white/95 px-2 py-1 text-[9px] font-bold text-stone-700 shadow-[0_8px_20px_-10px_rgba(28,25,23,0.42)] backdrop-blur-md sm:-right-5">
-        Live tracking
+        {d('Live tracking')}
       </div>
 
       {packagePreview ? (
         <div className="absolute -bottom-8 left-1/2 z-[5] hidden -translate-x-1/2 rounded-lg border border-[var(--border-subtle)] bg-white px-2.5 py-1.5 shadow-[0_12px_28px_-16px_rgba(28,25,23,0.38)] sm:block">
-          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">Selected</p>
+          <p className="text-[9px] font-semibold text-[var(--text-muted)] uppercase">{d('Selected')}</p>
           <p className="text-[11px] font-bold text-[var(--text-primary)]">{packagePreview.title}</p>
           <p className="text-xs font-bold text-[var(--brand-primary)]">{packagePreview.priceLabel}</p>
         </div>

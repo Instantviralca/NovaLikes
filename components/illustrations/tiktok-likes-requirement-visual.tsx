@@ -1,11 +1,13 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
  * TikTok likes requirement visual — video URL, package, email, secure checkout.
  */
 export function TikTokLikesRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
@@ -71,10 +73,10 @@ export function TikTokLikesRequirementVisual({ className }: { className?: string
         {/* Package + email */}
         <div className="rounded-xl border border-[color-mix(in_srgb,var(--brand-primary)_28%,#e7e5e4)] bg-[linear-gradient(145deg,#fffdfb,#fff7ed)] p-3 shadow-sm">
           <p className="text-[8px] font-semibold tracking-wide text-[var(--brand-primary)] uppercase">
-            Selected package
+            {d('Selected package')}
           </p>
           <div className="mt-1 flex items-baseline justify-between gap-2">
-            <p className="text-sm font-bold text-stone-900">1,000 Likes</p>
+            <p className="text-sm font-bold text-stone-900">{d('1,000 Likes')}</p>
             <p className="text-sm font-bold text-[var(--brand-primary)]">$4.99</p>
           </div>
           <div className="mt-2 rounded-lg border border-stone-200/80 bg-white/90 px-2.5 py-1.5">

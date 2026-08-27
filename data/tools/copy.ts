@@ -27,7 +27,7 @@ export type ToolPageCopy = {
 };
 
 export const TOOLS_HUB_COPY = {
-  eyebrow: 'Free tools',
+  eyebrow: 'FREE SOCIAL MEDIA TOOLS',
   h1: 'Free Instagram, TikTok & Facebook Tools',
   lead: 'Look up a public profile, check a published follower count, or retrieve a video file the platform already exposes. Each helper runs on NovaLikes servers and returns only public information — never a private feed, login session, or invented download.',
   howHeading: 'How these tools work',
@@ -238,7 +238,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
   },
   'instagram-video-downloader': {
     eyebrow: 'Instagram tool',
-    h1: 'Instagram Video / Reels Downloader',
+    h1: 'Instagram Video & Reels Downloader',
     lead: 'Paste a public Instagram Reel or video post URL. NovaLikes checks the public page and offers a file only when Instagram includes one. Many public posts currently do not. That is Limited availability — not a broken tool, and not a fake download.',
     inputLabel: 'Public Instagram Reel or video URL',
     helperText: 'A file is offered only if Instagram includes it on the public page.',

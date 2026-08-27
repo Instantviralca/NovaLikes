@@ -14,9 +14,10 @@ import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
+import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
+import { Eyebrow } from '@/components/typography/eyebrow';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
-import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
 import { FAQ_CATEGORIES } from '@/data/faqs/categories';
@@ -119,6 +120,7 @@ export function FaqPageView({
               ]}
               variant="subtle"
             />
+            {content.hero.eyebrow ? <Eyebrow>{content.hero.eyebrow}</Eyebrow> : null}
             <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
               {accentLastWord(content.hero.title)}
             </Heading>

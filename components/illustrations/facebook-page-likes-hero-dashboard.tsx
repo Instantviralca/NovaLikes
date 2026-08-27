@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const LIKE_KEYS = [3280, 3640, 4120, 4680, 5240] as const;
@@ -38,6 +39,7 @@ export function FacebookPageLikesHeroDashboard({
   className,
   packagePreview,
 }: FacebookPageLikesHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [likes, setLikes] = useState<number>(LIKE_KEYS[0]);
@@ -132,7 +134,7 @@ export function FacebookPageLikesHeroDashboard({
           Page Insights
         </p>
         <p className="mt-0.5 text-[13px] font-black tabular-nums text-stone-900">+8.6%</p>
-        <p className="text-[9px] font-semibold text-emerald-600">Page likes rising</p>
+        <p className="text-[9px] font-semibold text-emerald-600">{d('Page likes rising')}</p>
         <div className="mt-1.5 flex h-5 items-end gap-0.5">
           {engageBars.map((h, i) => (
             <span
@@ -157,7 +159,7 @@ export function FacebookPageLikesHeroDashboard({
             className="rounded-full px-1.5 py-0.5 text-[7px] font-bold text-white"
             style={{ background: fbBlue }}
           >
-            Live
+            {d('Live')}
           </span>
         </div>
         <p className="mt-1 text-[13px] font-black tabular-nums text-stone-900">5.4%</p>
@@ -182,7 +184,7 @@ export function FacebookPageLikesHeroDashboard({
             </span>
             <div>
               <p className="text-[10px] font-bold text-stone-900">Meta Business Suite</p>
-              <p className="text-[9px] text-stone-400">Page likes · Insights</p>
+              <p className="text-[9px] text-stone-400">{d('Page likes · Insights')}</p>
             </div>
           </div>
           <span className="rounded-full bg-sky-50 px-2 py-0.5 text-[9px] font-bold text-sky-700">
@@ -217,7 +219,7 @@ export function FacebookPageLikesHeroDashboard({
               <div className="mt-3 flex items-end justify-between gap-2">
                 <div>
                   <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
-                    Page likes
+                    {d('Page likes')}
                   </p>
                   <p className="text-2xl font-black tabular-nums tracking-tight text-stone-900">
                     {formatLikes(likes)}
@@ -226,7 +228,7 @@ export function FacebookPageLikesHeroDashboard({
                 </div>
                 {packagePreview ? (
                   <div className="rounded-lg border border-orange-100 bg-orange-50 px-2.5 py-1.5 text-right">
-                    <p className="text-[8px] font-semibold text-orange-600 uppercase">Package</p>
+                    <p className="text-[8px] font-semibold text-orange-600 uppercase">{d('Package')}</p>
                     <p className="text-[11px] font-bold text-stone-800">{packagePreview.title}</p>
                     <p className="text-[10px] font-semibold text-stone-500">
                       {packagePreview.priceLabel}

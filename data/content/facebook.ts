@@ -18,7 +18,7 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
         'Buy Facebook Followers with clear package options, public page URL checkout, gradual delivery details and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'BUY FACEBOOK FOLLOWERS',
+      eyebrow: 'FACEBOOK SERVICES',
       title: 'Buy Facebook Followers',
       description:
         'Buy Facebook followers by choosing the package and quantity that fits your page. NovaLikes lets you compare available Facebook follower packages and prices before ordering. Select the number of followers you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
@@ -294,7 +294,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
         'Buy Facebook Page Likes with transparent packages for businesses and creators. Public Page URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'BUY FACEBOOK PAGE LIKES',
+      eyebrow: 'FACEBOOK SERVICES',
       title: 'Buy Facebook Page Likes',
       description:
         'Buy Facebook Page Likes by choosing the package and quantity that fits your Page. NovaLikes lets you compare available Page Like packages and prices before ordering. Select the number of Page Likes you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
@@ -548,7 +548,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
         'Buy Facebook Post Likes with transparent packages for businesses, creators and brands. Public Facebook post URL only, secure checkout and order tracking. No password required.',
     },
     hero: {
-      eyebrow: 'BUY FACEBOOK POST LIKES',
+      eyebrow: 'FACEBOOK SERVICES',
       title: 'Buy Facebook Post Likes',
       description:
         'Buy Facebook Post Likes by choosing the package and quantity you want for a specific eligible public Facebook post. Compare the available Post Like packages and prices, select the number of likes you want, provide the correct public Facebook post URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',

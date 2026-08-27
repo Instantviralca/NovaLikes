@@ -7,7 +7,7 @@
       "description": "Confronta pacchetti follower Instagram, prezzi, dettagli di consegna e quantità disponibili. Scegli l’opzione adatta al tuo account e ai tuoi obiettivi di crescita."
     },
     "hero": {
-      "eyebrow": "COMPRARE FOLLOWER INSTAGRAM",
+      "eyebrow": "SERVIZI INSTAGRAM",
       "title": "Comprare follower Instagram",
       "description": "Comprare follower Instagram per il tuo profilo pubblico significa scegliere la quantità di pacchetto adatta al tuo account. NovaLikes offre pacchetti follower Instagram per creator, aziende, brand e altri account pubblici. Confronta quantità e prezzi disponibili, inserisci il tuo username Instagram pubblico e completa l’ordine online. Nessuna password Instagram è richiesta.",
       "purpose": "Convert visitors comparing Instagram follower packages",
@@ -84,7 +84,7 @@
         {
           "id": "ig-f-community",
           "title": "Aumenta il conteggio follower visibile",
-          "description": "I pacchetti follower aumentano il numero di follower mostrato sul profilo, senza modificare like, views o commenti dei singoli post."
+          "description": "I pacchetti follower aumentano il numero di follower mostrato sul profilo, senza modificare like, visualizzazioni o commenti dei singoli post."
         },
         {
           "id": "ig-f-flexible",
@@ -281,7 +281,7 @@
         }
       ]
     },
-    "whyBuyNote": "Il pacchetto giusto dipende dal tuo account e da ciò che vuoi cambiare. Se il tuo obiettivo sono like sui post, views dei Reel o commenti, e non il numero di follower, scegli invece il servizio Instagram corrispondente.",
+    "whyBuyNote": "Il pacchetto giusto dipende dal tuo account e da ciò che vuoi cambiare. Se il tuo obiettivo sono like sui post, visualizzazioni dei Reel o commenti, e non il numero di follower, scegli invece il servizio Instagram corrispondente.",
     "orderNotice": "NovaLikes elabora gli ordini follower usando solo il tuo username Instagram pubblico. La password Instagram non è mai richiesta in checkout.",
     "canYouBuy": {
       "id": "can-you-buy-instagram-followers",
@@ -291,7 +291,7 @@
         {
           "id": "ig-f-can-username",
           "title": "Cosa cambia davvero comprare follower Instagram",
-          "description": "Un ordine di follower Instagram è focalizzato sul conteggio follower mostrato sul profilo selezionato. Non aumenta automaticamente like, commenti o views dei post e non garantisce che Instagram mostri i tuoi contenuti a più persone.",
+          "description": "Un ordine di follower Instagram è focalizzato sul conteggio follower mostrato sul profilo selezionato. Non aumenta automaticamente like, commenti o visualizzazioni dei post e non garantisce che Instagram mostri i tuoi contenuti a più persone.",
           "icon": "users"
         },
         {
@@ -303,7 +303,7 @@
         {
           "id": "ig-f-can-packages",
           "title": "I follower sono diversi dagli altri servizi Instagram",
-          "description": "Scegli i follower quando vuoi cambiare il conteggio follower del profilo. Like Instagram sono per i singoli post o Reel, Views Instagram per i video idonei e Commenti Instagram per i commenti sui contenuti selezionati.",
+          "description": "Scegli i follower quando vuoi cambiare il conteggio follower del profilo. Like Instagram sono per i singoli post o Reel, Visualizzazioni Instagram per i video idonei e Commenti Instagram per i commenti sui contenuti selezionati.",
           "icon": "sparkles"
         }
       ],
@@ -362,8 +362,8 @@
     },
     "serviceCompare": {
       "id": "instagram-followers-vs-likes-vs-views",
-      "title": "Follower vs like vs views Instagram",
-      "description": "Follower, like e views misurano aspetti diversi di un account Instagram. Il servizio giusto dipende dal fatto che tu voglia lavorare sul profilo, sull’engagement di un post o Reel specifico, o sul conteggio views dei video.",
+      "title": "Follower vs like vs visualizzazioni Instagram",
+      "description": "Follower, Mi piace e visualizzazioni misurano aspetti diversi di un account Instagram. Il servizio giusto dipende dal fatto che tu voglia lavorare sul profilo, sull’engagement di un post o Reel specifico, o sul conteggio delle visualizzazioni dei video.",
       "current": {
         "title": "Follower Instagram",
         "description": "I follower sono una metrica a livello di profilo. Scegli i follower Instagram quando vuoi aumentare il numero di follower mostrato sul tuo account.",
@@ -378,11 +378,11 @@
         "ctaLabel": "Vedi like Instagram"
       },
       "views": {
-        "title": "Views Instagram",
-        "description": "Le views si applicano ai video idonei. Scegli le views Instagram quando vuoi aumentare il conteggio views mostrato su un Reel o un video pubblico.",
+        "title": "Visualizzazioni Instagram",
+        "description": "le visualizzazioni si applicano ai video idonei. Scegli le visualizzazioni Instagram quando vuoi aumentare il conteggio delle visualizzazioni mostrato su un Reel o un video pubblico.",
         "bestFor": "Reel, video e altri contenuti video Instagram idonei.",
         "href": "/buy-instagram-views",
-        "ctaLabel": "Vedi views Instagram"
+        "ctaLabel": "Vedi visualizzazioni Instagram"
       },
       "combinedNote": "Se l’interazione che ti serve sono i commenti, i Commenti Instagram sono disponibili separatamente per post e Reel idonei.",
       "commentsHref": "/buy-instagram-comments"
@@ -517,7 +517,7 @@
         {
           "id": "ig-f-bp-growth",
           "title": "Presta attenzione a Insights Instagram",
-          "description": "Se Insights è disponibile sul tuo account, rivedi metriche come portata, views, interazioni e attività dei follower per capire come performano i tuoi contenuti.",
+          "description": "Se Insights è disponibile sul tuo account, rivedi metriche come portata, visualizzazioni, interazioni e attività dei follower per capire come performano i tuoi contenuti.",
           "icon": "sparkles"
         },
         {
@@ -549,7 +549,7 @@
         {
           "id": "ig-f-mistake-content",
           "title": "Scegliere il servizio sbagliato",
-          "description": "Follower, like, views e commenti sono servizi diversi. Scegli i follower solo quando vuoi cambiare il conteggio follower del profilo.",
+          "description": "follower, Mi piace, visualizzazioni e commenti sono servizi diversi. Scegli i follower solo quando vuoi cambiare il conteggio follower del profilo.",
           "icon": "clapperboard"
         },
         {
@@ -567,7 +567,7 @@
         {
           "id": "ig-f-mistake-engagement",
           "title": "Aspettarsi engagement o portata garantiti",
-          "description": "Non dare per scontato che cambiare il conteggio follower produca automaticamente più like, commenti, views, portata, vendite o crescita organica.",
+          "description": "Non dare per scontato che cambiare il conteggio follower produca automaticamente più like, commenti, visualizzazioni, portata, vendite o crescita organica.",
           "icon": "lock"
         },
         {
@@ -586,9 +586,9 @@
           "ctaLabel": "Vedi like Instagram"
         },
         "buy-instagram-views": {
-          "title": "Views Instagram",
-          "description": "Scegli Views Instagram quando vuoi aumentare il conteggio views su un Reel o un video pubblico idoneo.",
-          "ctaLabel": "Vedi views Instagram"
+          "title": "Visualizzazioni Instagram",
+          "description": "Scegli Visualizzazioni Instagram quando vuoi aumentare il conteggio visualizzazioni su un Reel o un video pubblico idoneo.",
+          "ctaLabel": "Vedi visualizzazioni Instagram"
         },
         "buy-instagram-comments": {
           "title": "Commenti Instagram",

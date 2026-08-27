@@ -1,5 +1,6 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
@@ -10,6 +11,7 @@ export function FacebookFollowersOrderSummaryDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -42,7 +44,7 @@ export function FacebookFollowersOrderSummaryDashboard({
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
 
@@ -125,7 +127,7 @@ export function FacebookFollowersOrderSummaryDashboard({
             className="rounded-xl px-3.5 py-2 text-xs font-bold text-white shadow-sm"
             style={{ background: brand }}
           >
-            Track Order
+            {d('Track Order')}
           </span>
         </div>
       </div>

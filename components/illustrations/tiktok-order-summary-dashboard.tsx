@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const ROWS: ReadonlyArray<{
@@ -20,6 +22,7 @@ const ROWS: ReadonlyArray<{
  * TikTok order summary dashboard for delivery requirements section.
  */
 export function TikTokOrderSummaryDashboard({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
   const brand = '#F97316';
@@ -56,7 +59,7 @@ export function TikTokOrderSummaryDashboard({ className }: { className?: string 
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
 
@@ -85,9 +88,9 @@ export function TikTokOrderSummaryDashboard({ className }: { className?: string 
                 </span>
                 <div className="min-w-0">
                   <p className="text-[10px] font-semibold tracking-wide text-stone-400 uppercase">
-                    {row.label}
+                    {d(row.label)}
                   </p>
-                  <p className="truncate text-sm font-semibold text-stone-800">{row.value}</p>
+                  <p className="truncate text-sm font-semibold text-stone-800">{d(String(row.value))}</p>
                 </div>
               </div>
             </li>

@@ -31,6 +31,7 @@ type SectionProps = {
   className?: string;
   visual?: ReactNode;
   revealCards?: boolean;
+  choosePackageLabel?: string;
 };
 
 export type RelatedArticleWithThumb = InternalLink & {
@@ -720,6 +721,7 @@ export function InstagramFollowersWorldwide({
 export function InstagramFollowersPackageSizes({
   config = INSTAGRAM_FOLLOWERS_PAGE_CONFIG,
   className,
+  choosePackageLabel = 'Choose Package',
 }: SectionProps) {
   const { packageSizes } = config;
   const total = packageSizes.rows.length;
@@ -766,7 +768,7 @@ export function InstagramFollowersPackageSizes({
                     href="#pricing-packages"
                     className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--brand-primary)] transition-colors group-hover:underline"
                   >
-                    Choose Package
+                    {choosePackageLabel}
                     <ArrowRight className="size-3.5" aria-hidden />
                   </Link>
                 </article>

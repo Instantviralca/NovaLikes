@@ -18,9 +18,16 @@ type FieldRendererProps = {
   value: string | boolean | number | undefined;
   onChange: (name: string, value: string | boolean | number) => void;
   error?: string;
+  selectPlaceholder?: string;
 };
 
-export function FieldRenderer({ field, value, onChange, error }: FieldRendererProps) {
+export function FieldRenderer({
+  field,
+  value,
+  onChange,
+  error,
+  selectPlaceholder = 'Select…',
+}: FieldRendererProps) {
   const id = `order-field-${field.id}`;
   const describedBy = error ? `${id}-error` : field.helpText ? `${id}-help` : undefined;
   const required = Boolean(field.validation?.required && !field.optional);
@@ -89,7 +96,7 @@ export function FieldRenderer({ field, value, onChange, error }: FieldRendererPr
           onValueChange={(next) => onChange(field.name, next)}
         >
           <SelectTrigger id={id} aria-invalid={Boolean(error)}>
-            <SelectValue placeholder={field.placeholder ?? 'Select…'} />
+            <SelectValue placeholder={field.placeholder ?? selectPlaceholder} />
           </SelectTrigger>
           <SelectContent>
             {field.options.map((option) => (

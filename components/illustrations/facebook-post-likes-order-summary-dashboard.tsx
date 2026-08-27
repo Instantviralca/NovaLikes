@@ -2,6 +2,7 @@
 
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
@@ -12,6 +13,7 @@ export function FacebookPostLikesOrderSummaryDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -40,11 +42,11 @@ export function FacebookPostLikesOrderSummaryDashboard({
             </span>
             <div>
               <p className="text-sm font-bold text-stone-900">Order Summary</p>
-              <p className="text-xs text-stone-500">Facebook Post Likes</p>
+              <p className="text-xs text-stone-500">{d('Facebook Post Likes')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
 
@@ -78,7 +80,7 @@ export function FacebookPostLikesOrderSummaryDashboard({
             <p className="text-[10px] font-semibold tracking-wide text-stone-400 uppercase">
               Package selected
             </p>
-            <p className="mt-0.5 text-sm font-semibold text-stone-800">1,000 Post Likes</p>
+            <p className="mt-0.5 text-sm font-semibold text-stone-800">{d('1,000 Post Likes')}</p>
           </li>
           <li className="rounded-xl border border-stone-100 bg-white/90 px-3.5 py-2.5">
             <p className="text-[10px] font-semibold tracking-wide text-stone-400 uppercase">
@@ -114,7 +116,7 @@ export function FacebookPostLikesOrderSummaryDashboard({
           className="flex items-center justify-center rounded-xl px-3 py-2.5 text-sm font-bold text-white shadow-sm"
           style={{ background: `linear-gradient(135deg, ${fbBlue}, #0c4a8a)` }}
         >
-          Track Order
+          {d('Track Order')}
         </div>
       </div>
     </div>

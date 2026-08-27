@@ -13,25 +13,25 @@ const ES: LocaleQuickAnswers = {
   contact:
     'Contacta con NovaLikes para ayuda con pedidos, pagos, reembolsos y servicios mediante el formulario o el correo de soporte publicado en esta página. Incluye tu referencia de pedido cuando preguntes por una compra. NovaLikes no solicita contraseñas de redes sociales por soporte.',
   'buy-instagram-followers':
-    'NovaLikes vende paquetes de seguidores de Instagram para perfiles públicos. Eliges la cantidad, introduces el usuario o URL pública en el pago y no compartes tu contraseña de Instagram. El pedido afecta al recuento de seguidores del perfil, no a likes, vistas o comentarios de publicaciones concretas.',
+    'NovaLikes vende paquetes de seguidores de Instagram para perfiles públicos. Eliges la cantidad, introduces el usuario o URL pública en el pago y no compartes tu contraseña de Instagram. El pedido afecta al recuento de seguidores del perfil, no a Me gusta, visualizaciones o comentarios de publicaciones concretas.',
   'buy-instagram-likes':
-    'NovaLikes vende paquetes de likes de Instagram para publicaciones y Reels públicos compatibles. Eliges un paquete, envías la URL pública del contenido y pagas sin tu contraseña de Instagram. Los likes se aplican a esa publicación concreta; no añaden seguidores del perfil ni vistas del vídeo.',
+    'NovaLikes vende paquetes de Me gusta de Instagram para publicaciones y Reels públicos compatibles. Eliges un paquete, envías la URL pública del contenido y pagas sin tu contraseña de Instagram. Los Me gusta se aplican a esa publicación concreta; no añaden seguidores del perfil ni visualizaciones del vídeo.',
   'buy-instagram-views':
-    'NovaLikes vende paquetes de vistas de Instagram para Reels y vídeos públicos compatibles. Seleccionas un paquete, proporcionas la URL pública del contenido y pagas sin contraseña. Las vistas se aplican solo a ese Reel o vídeo; no a seguidores del perfil, likes ni comentarios en otras publicaciones.',
+    'NovaLikes vende paquetes de visualizaciones de Instagram para Reels y vídeos públicos compatibles. Seleccionas un paquete, proporcionas la URL pública del contenido y pagas sin contraseña. Las visualizaciones se aplican solo a ese Reel o vídeo; no a seguidores del perfil, Me gusta ni comentarios en otras publicaciones.',
   'buy-instagram-comments':
-    'NovaLikes vende paquetes de comentarios de Instagram para publicaciones y Reels públicos compatibles. Eliges un paquete, introduces la URL pública y pagas sin contraseña. Los comentarios se aplican a esa publicación; no aumentan seguidores, likes ni vistas en otras partes del perfil.',
+    'NovaLikes vende paquetes de comentarios de Instagram para publicaciones y Reels públicos compatibles. Eliges un paquete, introduces la URL pública y pagas sin contraseña. Los comentarios se aplican a esa publicación; no aumentan seguidores, Me gusta ni visualizaciones en otras partes del perfil.',
   'buy-tiktok-followers':
-    'NovaLikes vende paquetes de seguidores de TikTok para cuentas públicas. Eliges la cantidad, introduces el usuario público en el pago y no compartes tu contraseña de TikTok. Los seguidores se aplican al recuento de la cuenta, no a likes ni vistas de vídeos individuales.',
+    'NovaLikes vende paquetes de seguidores de TikTok para cuentas públicas. Eliges la cantidad, introduces el usuario público en el pago y no compartes tu contraseña de TikTok. Los seguidores se aplican al recuento de la cuenta, no a Me gusta ni visualizaciones de vídeos individuales.',
   'buy-tiktok-likes':
-    'NovaLikes vende paquetes de likes de TikTok para vídeos públicos compatibles. Eliges un paquete, pegas la URL pública del vídeo y pagas sin contraseña. Los likes se aplican a ese vídeo; no añaden seguidores del perfil ni cambian el recuento de vistas.',
+    'NovaLikes vende paquetes de Me gusta de TikTok para vídeos públicos compatibles. Eliges un paquete, pegas la URL pública del vídeo y pagas sin contraseña. Los Me gusta se aplican a ese vídeo; no añaden seguidores del perfil ni cambian el recuento de visualizaciones.',
   'buy-tiktok-views':
-    'NovaLikes vende paquetes de vistas de TikTok para vídeos públicos en la página de reproducción compatible. Eliges un paquete, pegas la URL pública del vídeo y pagas sin contraseña. El pedido cambia el recuento de vistas publicado de ese vídeo; no los seguidores del perfil ni los likes del vídeo.',
+    'NovaLikes vende paquetes de visualizaciones de TikTok para vídeos públicos en la página de reproducción compatible. Eliges un paquete, pegas la URL pública del vídeo y pagas sin contraseña. El pedido cambia el recuento de visualizaciones publicado de ese vídeo; no los seguidores del perfil ni los Me gusta del vídeo.',
   'buy-facebook-followers':
-    'NovaLikes vende paquetes de seguidores de Facebook para Páginas públicas. Eliges la cantidad, envías la URL pública de la Página y pagas sin contraseña. Los seguidores aumentan el recuento de seguidores de la Página; no son Me gusta de la Página ni likes de una publicación concreta.',
+    'NovaLikes vende paquetes de seguidores de Facebook para Páginas públicas. Eliges la cantidad, envías la URL pública de la Página y pagas sin contraseña. Los seguidores aumentan el recuento de seguidores de la Página; no son Me gusta de la Página ni Me gusta de una publicación concreta.',
   'buy-facebook-page-likes':
-    'NovaLikes vende paquetes de Me gusta de Página de Facebook para Páginas públicas. Eliges la cantidad, introduces la URL pública de la Página y pagas sin contraseña. Los Me gusta de Página afectan a ese métrica de la Página; no añaden seguidores ni likes de una publicación individual.',
+    'NovaLikes vende paquetes de Me gusta de Página de Facebook para Páginas públicas. Eliges la cantidad, introduces la URL pública de la Página y pagas sin contraseña. Los Me gusta de Página afectan a esa métrica de la Página; no añaden seguidores ni Me gusta de una publicación individual.',
   'buy-facebook-post-likes':
-    'NovaLikes vende paquetes de likes de publicación de Facebook para una publicación pública cada vez. Eliges un paquete, pegas la URL de la publicación y pagas sin contraseña. Los likes se aplican solo a esa publicación; no cambian los seguidores de la Página ni el total de Me gusta de la Página.',
+    'NovaLikes vende paquetes de Me gusta de publicación de Facebook para una publicación pública cada vez. Eliges un paquete, pegas la URL de la publicación y pagas sin contraseña. Los Me gusta se aplican solo a esa publicación; no cambian los seguidores de la Página ni el total de Me gusta de la Página.',
   'instagram-profile-viewer':
     'Esta herramienta de NovaLikes muestra datos públicos de un perfil de Instagram — foto, nombre, biografía y recuentos publicados — para un usuario o URL que introduzcas. Lee información que Instagram ya expone en perfiles públicos. No accede a cuentas privadas y no pide tu contraseña de Instagram.',
   'instagram-profile-picture-viewer':

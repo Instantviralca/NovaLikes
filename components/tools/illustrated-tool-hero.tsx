@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { PlatformPill } from '@/components/tools/platform-mark';
 import { ToolWorkspace } from '@/components/tools/tool-workspace';
 import { SnapArt, type SnapArtName } from '@/components/tools/instagram-profile-viewer/visuals';
+import { splitAccentInTitle } from '@/components/typography/accent-title';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
 import type { ToolPageCopy } from '@/data/tools/copy';
@@ -25,9 +26,7 @@ export function IllustratedToolHero({
   chrome?: ToolChrome;
 }) {
   const [hasResult, setHasResult] = useState(false);
-  const accentAt = copy.h1.lastIndexOf(accentWord);
-  const before = accentAt >= 0 ? copy.h1.slice(0, accentAt) : copy.h1;
-  const accent = accentAt >= 0 ? accentWord : '';
+  const { before, accent, after } = splitAccentInTitle(copy.h1, accentWord);
 
   return (
     <div className="mt-3 grid items-center gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,0.5fr)] lg:gap-4">
@@ -36,6 +35,7 @@ export function IllustratedToolHero({
         <Heading as="h1" size="h1" className="mt-3 max-w-xl break-words text-[2rem] leading-[1.12] sm:text-[2.45rem]">
           {before}
           {accent ? <span className="text-[var(--brand-primary)]">{accent}</span> : null}
+          {after}
         </Heading>
         {!hasResult ? (
           <Lead className="mt-4 max-w-lg text-base leading-relaxed text-[var(--text-secondary)]">{copy.lead}</Lead>

@@ -4,7 +4,7 @@
     "category": "getting_started",
     "order": 1,
     "question": "¿Qué es NovaLikes?",
-    "answer": "NovaLikes es un sitio web de servicios de redes sociales para Instagram, TikTok y Facebook. Los servicios disponibles incluyen opciones seleccionadas de seguidores, likes, views, comentarios y servicios de Página de Facebook, según la plataforma."
+    "answer": "NovaLikes es un sitio web de servicios de redes sociales para Instagram, TikTok y Facebook. Los servicios disponibles incluyen opciones seleccionadas de seguidores, Me gusta, visualizaciones, comentarios y servicios de Página de Facebook, según la plataforma."
   },
   {
     "id": "faq-gs-how-works",
@@ -73,7 +73,7 @@
     "id": "faq-as-platform-risk",
     "category": "account_security",
     "order": 6,
-    "question": "¿Comprar seguidores, likes o views puede afectar a mi cuenta de redes sociales?",
+    "question": "¿Comprar seguidores, Me gusta o visualizaciones puede afectar a mi cuenta de redes sociales?",
     "answer": "Los servicios de redes sociales de terceros pueden conllevar riesgos de política de la plataforma o de medidas sobre la cuenta. NovaLikes no requiere tu contraseña de Instagram, TikTok o Facebook para los servicios descritos en el sitio, pero ningún servicio de terceros puede garantizar que una plataforma nunca elimine actividad, cambie cómo se cuentan las métricas o tome medidas según sus normas vigentes. Revisa los requisitos del servicio y las políticas actuales de la plataforma antes de pedir."
   },
   {
@@ -185,29 +185,29 @@
     "id": "faq-ig-safe-likes",
     "category": "instagram",
     "order": 7,
-    "question": "¿Es seguro comprar likes de Instagram?",
-    "answer": "Likes de Instagram es un servicio de terceros para un contenido público concreto, así que revisa los requisitos del servicio antes de pedir. NovaLikes no requiere tu contraseña de Instagram para hacer un pedido de likes de Instagram."
+    "question": "¿Es seguro comprar Me gusta de Instagram?",
+    "answer": "Me gusta de Instagram es un servicio de terceros para un contenido público concreto, así que revisa los requisitos del servicio antes de pedir. NovaLikes no requiere tu contraseña de Instagram para hacer un pedido de Me gusta de Instagram."
   },
   {
     "id": "faq-ig-likes-post",
     "category": "instagram",
     "order": 8,
-    "question": "¿Puedo comprar likes de Instagram para una publicación concreta?",
-    "answer": "Sí. Likes de Instagram se aplica a contenido concreto de Instagram, así que facilita la información pública de la publicación o Reel solicitada durante el pago."
+    "question": "¿Puedo comprar Me gusta de Instagram para una publicación concreta?",
+    "answer": "Sí. Me gusta de Instagram se aplica a contenido concreto de Instagram, así que facilita la información pública de la publicación o Reel solicitada durante el pago."
   },
   {
     "id": "faq-ig-likes-reel",
     "category": "instagram",
     "order": 9,
-    "question": "¿Puedo comprar likes de Instagram para un Reel?",
-    "answer": "Usa el servicio de likes de Instagram cuando el formato de Reel público esté admitido por los requisitos actuales del pedido. Envía siempre la URL exacta del contenido público solicitada durante el pago."
+    "question": "¿Puedo comprar Me gusta de Instagram para un Reel?",
+    "answer": "Usa el servicio de Me gusta de Instagram cuando el formato de Reel público esté admitido por los requisitos actuales del pedido. Envía siempre la URL exacta del contenido público solicitada durante el pago."
   },
   {
     "id": "faq-ig-views-reels",
     "category": "instagram",
     "order": 10,
-    "question": "¿Puedo comprar views de Instagram para Reels?",
-    "answer": "NovaLikes ofrece un servicio de views de Instagram para contenido público de Instagram admitido. Consulta la página del servicio y facilita la URL exacta del Reel o contenido público solicitada durante el pago."
+    "question": "¿Puedo comprar visualizaciones de Instagram para Reels?",
+    "answer": "NovaLikes ofrece un servicio de visualizaciones de Instagram para contenido público de Instagram admitido. Consulta la página del servicio y facilita la URL exacta del Reel o contenido público solicitada durante el pago."
   },
   {
     "id": "faq-ig-comments",
@@ -220,8 +220,8 @@
     "id": "faq-ig-difference-metrics",
     "category": "instagram",
     "order": 12,
-    "question": "¿Cuál es la diferencia entre seguidores, likes, views y comentarios de Instagram?",
-    "answer": "Los seguidores de Instagram se aplican al perfil, mientras que likes, views y comentarios se aplican a contenido concreto de Instagram según el servicio seleccionado. Elige seguidores cuando quieras una métrica a nivel de perfil y elige likes, views o comentarios cuando el destino sea una publicación o Reel concreto."
+    "question": "¿Cuál es la diferencia entre seguidores, Me gusta, visualizaciones y comentarios de Instagram?",
+    "answer": "Los seguidores de Instagram se aplican al perfil, mientras que Me gusta, visualizaciones y comentarios se aplican a contenido concreto de Instagram según el servicio seleccionado. Elige seguidores cuando quieras una métrica a nivel de perfil y elige Me gusta, visualizaciones o comentarios cuando el destino sea una publicación o Reel concreto."
   },
   {
     "id": "faq-tt-safe-followers",
@@ -255,15 +255,15 @@
     "id": "faq-tt-likes-video",
     "category": "tiktok",
     "order": 5,
-    "question": "¿Puedo comprar likes de TikTok para un vídeo concreto?",
-    "answer": "Sí. Likes de TikTok es un servicio a nivel de vídeo, así que facilita la información pública del vídeo de TikTok solicitada durante el pago, no solo un nombre de usuario de perfil."
+    "question": "¿Puedo comprar Me gusta de TikTok para un vídeo concreto?",
+    "answer": "Sí. Me gusta de TikTok es un servicio a nivel de vídeo, así que facilita la información pública del vídeo de TikTok solicitada durante el pago, no solo un nombre de usuario de perfil."
   },
   {
     "id": "faq-tt-views-video",
     "category": "tiktok",
     "order": 6,
-    "question": "¿Puedo comprar views de TikTok para un vídeo concreto?",
-    "answer": "Sí. Views de TikTok se aplica a un vídeo público de TikTok concreto y admitido. Facilita la URL exacta del vídeo solicitada durante el pago."
+    "question": "¿Puedo comprar visualizaciones de TikTok para un vídeo concreto?",
+    "answer": "Sí. Visualizaciones de TikTok se aplica a un vídeo público de TikTok concreto y admitido. Facilita la URL exacta del vídeo solicitada durante el pago."
   },
   {
     "id": "faq-tt-delete-video",
@@ -276,8 +276,8 @@
     "id": "faq-tt-difference",
     "category": "tiktok",
     "order": 8,
-    "question": "¿Cuál es la diferencia entre seguidores, likes y views de TikTok?",
-    "answer": "Los seguidores de TikTok se aplican al perfil del creador, mientras que likes de TikTok y views de TikTok se aplican a vídeos concretos. El servicio correcto depende de si quieres orientar el perfil o un vídeo individual."
+    "question": "¿Cuál es la diferencia entre seguidores, Me gusta y visualizaciones de TikTok?",
+    "answer": "Los seguidores de TikTok se aplican al perfil del creador, mientras que Me gusta de TikTok y visualizaciones de TikTok se aplican a vídeos concretos. El servicio correcto depende de si quieres orientar el perfil o un vídeo individual."
   },
   {
     "id": "faq-fb-buy-followers",
@@ -388,7 +388,7 @@
     "id": "faq-pr-drops",
     "category": "payments_refunds",
     "order": 6,
-    "question": "¿Qué ocurre si bajan los seguidores o los likes después de la entrega?",
-    "answer": "Los recuentos de seguidores y likes en las plataformas sociales pueden cambiar con el tiempo. Si tu paquete seleccionado incluye una política de recarga aplicable, sigue las condiciones indicadas para ese servicio o contacta con el soporte de NovaLikes para ayuda con el pedido."
+    "question": "¿Qué ocurre si bajan los seguidores o los Me gusta después de la entrega?",
+    "answer": "Los recuentos de seguidores y Me gusta en las plataformas sociales pueden cambiar con el tiempo. Si tu paquete seleccionado incluye una política de recarga aplicable, sigue las condiciones indicadas para ese servicio o contacta con el soporte de NovaLikes para ayuda con el pedido."
   }
 ]

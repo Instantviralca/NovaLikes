@@ -1,3 +1,5 @@
+'use client';
+
 import {
   BarChart3,
   Eye,
@@ -6,6 +8,7 @@ import {
   UserPlus,
 } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 function IgIcon() {
@@ -141,6 +144,7 @@ function Star({ className }: { className?: string }) {
 }
 
 function PlatformCardView({ card }: { card: PlatformCard }) {
+  const d = useDecorativeLocalizer();
   const Icon = card.Icon;
 
   return (
@@ -163,7 +167,7 @@ function PlatformCardView({ card }: { card: PlatformCard }) {
             className="flex items-center gap-2 text-[12px] font-medium text-[#374151]"
           >
             <service.icon className={cn('size-3.5 shrink-0', card.iconClass)} aria-hidden="true" />
-            {service.label}
+            {d(service.label)}
           </li>
         ))}
       </ul>
@@ -176,7 +180,7 @@ export function HomepagePromoVisual({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'relative mx-auto h-[20rem] w-full max-w-[26rem] sm:h-[21rem] lg:mx-0 lg:ml-auto',
+        'pointer-events-none relative mx-auto h-[20rem] w-full max-w-[26rem] sm:h-[21rem] lg:mx-0 lg:ml-auto',
         className,
       )}
       aria-hidden="true"

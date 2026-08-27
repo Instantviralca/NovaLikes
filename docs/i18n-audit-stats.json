@@ -1,0 +1,114 @@
+{
+  "totalStringsAudited": 31444,
+  "wordsPerLocale": {
+    "en": 47954,
+    "es": 57064,
+    "de": 44074,
+    "fr": 55700,
+    "it": 50634,
+    "pt-br": 55035,
+    "ar": 41554
+  },
+  "uniqueIssueCount": 26,
+  "issueCountsByType": {
+    "MIXED_LANGUAGE": 9,
+    "MISSING_TRANSLATION": 1,
+    "CONSISTENCY": 16
+  },
+  "structural": {
+    "es": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    },
+    "de": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    },
+    "fr": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    },
+    "it": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    },
+    "pt-br": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    },
+    "ar": {
+      "missingKeys": 0,
+      "overlayIssues": [],
+      "englishFallbacks": 0,
+      "extraKeys": 0,
+      "emptyValues": 0,
+      "placeholderErrors": 0
+    }
+  },
+  "localeScores": {
+    "ES": {
+      "P0": 0,
+      "P1": 3,
+      "P2": 1,
+      "P3": 1,
+      "total": 5
+    },
+    "DE": {
+      "P0": 0,
+      "P1": 3,
+      "P2": 1,
+      "P3": 2,
+      "total": 6
+    },
+    "FR": {
+      "P0": 0,
+      "P1": 3,
+      "P2": 0,
+      "P3": 1,
+      "total": 4
+    },
+    "IT": {
+      "P0": 0,
+      "P1": 3,
+      "P2": 1,
+      "P3": 1,
+      "total": 5
+    },
+    "PT-BR": {
+      "P0": 0,
+      "P1": 3,
+      "P2": 0,
+      "P3": 1,
+      "total": 4
+    },
+    "AR": {
+      "P0": 0,
+      "P1": 1,
+      "P2": 0,
+      "P3": 1,
+      "total": 2
+    }
+  },
+  "best": "AR",
+  "worst": "DE"
+}

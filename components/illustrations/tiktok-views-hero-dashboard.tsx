@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const VIEW_KEYS = [8420, 8760, 9140, 9580, 10040] as const;
@@ -37,6 +38,7 @@ export function TikTokViewsHeroDashboard({
   className,
   packagePreview,
 }: TikTokViewsHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
@@ -135,10 +137,10 @@ export function TikTokViewsHeroDashboard({
       <div className="pointer-events-none absolute top-[28%] -right-4 z-[5] w-[8.25rem] rounded-xl border border-white/95 bg-white/95 px-2.5 py-2 shadow-[0_16px_32px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.4s_ease-in-out_infinite] sm:-right-5">
         <div className="flex items-center justify-between gap-1">
           <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-            Analytics
+            {d('Analytics')}
           </p>
           <span className="rounded-full bg-sky-50 px-1.5 py-0.5 text-[7px] font-bold text-sky-700">
-            Live
+            {d('Live')}
           </span>
         </div>
         <p className="mt-0.5 text-[13px] font-black tabular-nums text-stone-900">
@@ -169,7 +171,7 @@ export function TikTokViewsHeroDashboard({
             Gradual delivery
           </p>
           <span className="rounded-full bg-emerald-50 px-1.5 py-0.5 text-[8px] font-bold text-emerald-700">
-            Active
+            {d('Active')}
           </span>
         </div>
         <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-stone-100">
@@ -223,7 +225,7 @@ export function TikTokViewsHeroDashboard({
               </span>
               <div className="mt-3 rounded-xl border border-white/20 bg-black/35 px-3 py-2 backdrop-blur-sm">
                 <p className="text-[8px] font-semibold tracking-wide text-white/70 uppercase">
-                  Views
+                  {d('Views')}
                 </p>
                 <p className="text-lg font-black tabular-nums text-white">
                   {formatViews(views)}
@@ -286,7 +288,7 @@ export function TikTokViewsHeroDashboard({
               {packagePreview ? (
                 <div className="mt-2 rounded-lg border border-white/20 bg-white/10 px-2 py-1.5 backdrop-blur-sm">
                   <p className="text-[8px] font-semibold tracking-wide text-white/70 uppercase">
-                    Package
+                    {d('Package')}
                   </p>
                   <p className="truncate text-[10px] font-bold text-white">
                     {packagePreview.title} · {packagePreview.priceLabel}

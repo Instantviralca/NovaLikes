@@ -1,5 +1,5 @@
 {
-  "h1": "Recensioni dei clienti",
+  "h1": "Recensioni NovaLikes",
   "intro": "Recensioni dei clienti dal catalogo pubblicato di NovaLikes. Le valutazioni sotto riflettono quel catalogo e possono includere feedback a 4 e 5 stelle.",
   "catalogueHeading": "Catalogo recensioni dei clienti",
   "emptyFilter": "Nessuna recensione corrisponde a questo filtro di piattaforma.",
@@ -20,5 +20,6 @@
   "showLess": "Mostra meno",
   "chrome": {
     "breadcrumb": "Recensioni"
-  }
+  },
+  "eyebrow": "FEEDBACK DEI CLIENTI"
 }

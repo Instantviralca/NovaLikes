@@ -1,11 +1,14 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
  * Facebook Followers requirement visual — Business Page order dashboard.
  */
 export function FacebookFollowersRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -40,7 +43,7 @@ export function FacebookFollowersRequirementVisual({ className }: { className?: 
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
 

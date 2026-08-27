@@ -84,6 +84,7 @@ export function InstagramFollowersAuthorityView({
         breadcrumbs={breadcrumbs}
         platform={service.platform}
         previewPackageId={previewPackageId}
+        locale={locale}
         instagramVariant="followers"
       />
 
@@ -151,7 +152,10 @@ export function InstagramFollowersAuthorityView({
 
       <InstagramFollowersWorldwide config={config} />
 
-      <InstagramFollowersPackageSizes config={config} />
+      <InstagramFollowersPackageSizes
+        config={config}
+        choosePackageLabel={ui?.commerce.choosePackage ?? 'Choose Package'}
+      />
 
       <InstagramFollowersBestPractices config={config} />
 

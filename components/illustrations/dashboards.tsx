@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 import type { PlatformId } from '@/types/platform';
 
@@ -62,6 +63,7 @@ type HomepageDashboardProps = {
 
 /** Branded SaaS dashboard illustration for homepage hero — not a stock photo. */
 export function HomepageDashboard({ className }: HomepageDashboardProps) {
+  const d = useDecorativeLocalizer();
   return (
     <div
       className={cn(
@@ -83,11 +85,11 @@ export function HomepageDashboard({ className }: HomepageDashboardProps) {
           <div className="flex items-center gap-2">
             <span className="size-2.5 rounded-full bg-[var(--brand-primary)]" />
             <span className="text-[10px] font-semibold tracking-wide text-[var(--text-secondary)] uppercase sm:text-xs">
-              Growth overview
+              {d('Growth overview')}
             </span>
           </div>
           <span className="rounded-full bg-[var(--brand-accent-soft)] px-2 py-0.5 text-[9px] font-bold text-[var(--brand-primary)] sm:text-[10px]">
-            Live
+            {d('Live')}
           </span>
         </div>
         <div className="mb-3 grid grid-cols-3 gap-2">
@@ -179,6 +181,7 @@ type OrderTrackingDashboardProps = {
  * Soft beige/white UI with orange (#F97316) accents — no charts or analytics.
  */
 export function OrderTrackingDashboard({ className }: OrderTrackingDashboardProps) {
+  const d = useDecorativeLocalizer();
   const accent = '#F97316';
   const activeIndex = ORDER_STEPS.findIndex((step) => step.status === 'active');
 
@@ -214,7 +217,7 @@ export function OrderTrackingDashboard({ className }: OrderTrackingDashboardProp
               <p className="text-[10px] font-semibold tracking-wide text-stone-400 uppercase sm:text-[11px]">
                 Live status
               </p>
-              <p className="text-xs font-bold text-stone-800 sm:text-sm">Order Tracking</p>
+              <p className="text-xs font-bold text-stone-800 sm:text-sm">{d('Order Tracking')}</p>
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-1.5">
@@ -289,7 +292,7 @@ export function OrderTrackingDashboard({ className }: OrderTrackingDashboardProp
                         active ? 'text-stone-900' : done ? 'text-stone-600' : 'text-stone-400',
                       )}
                     >
-                      {step.label}
+                      {d(step.label)}
                     </p>
                     <span
                       className={cn(
@@ -314,12 +317,12 @@ export function OrderTrackingDashboard({ className }: OrderTrackingDashboardProp
               { label: 'Delivering', time: 'Live' },
             ].map((item) => (
               <div
-                key={item.label}
+                key={d(item.label)}
                 className="flex items-center gap-2 rounded-lg bg-white/80 px-2.5 py-2 ring-1 ring-stone-100"
               >
                 <span className="size-1.5 rounded-full" style={{ background: accent }} />
                 <div className="min-w-0">
-                  <p className="truncate text-[10px] font-semibold text-stone-700">{item.label}</p>
+                  <p className="truncate text-[10px] font-semibold text-stone-700">{d(item.label)}</p>
                   <p className="text-[9px] text-stone-400">{item.time}</p>
                 </div>
               </div>
@@ -336,7 +339,7 @@ export function OrderTrackingDashboard({ className }: OrderTrackingDashboardProp
             className="inline-flex items-center rounded-full px-3 py-1.5 text-[10px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(249,115,22,0.95)] sm:px-4 sm:text-[11px]"
             style={{ background: accent }}
           >
-            Track Order
+            {d('Track Order')}
           </span>
         </div>
       </div>
@@ -395,6 +398,8 @@ export function PlatformDashboard({
   tiktokVariant,
   facebookVariant,
 }: PlatformDashboardProps) {
+  const d = useDecorativeLocalizer();
+
   if (platform === 'instagram') {
     if (instagramVariant === 'likes') {
       return (
@@ -480,7 +485,7 @@ export function PlatformDashboard({
                 <p className="text-[10px] font-semibold tracking-wide text-[var(--text-muted)] uppercase">
                   {copy.title}
                 </p>
-                <p className="text-sm font-bold text-[var(--text-primary)]">{copy.metric} trend</p>
+                <p className="text-sm font-bold text-[var(--text-primary)]">{d(copy.metric)} trend</p>
               </div>
               <span
                 className="rounded-full px-2.5 py-1 text-[10px] font-bold uppercase"
@@ -495,8 +500,8 @@ export function PlatformDashboard({
                 <p className="text-xs font-semibold">Public only</p>
               </div>
               <div className="rounded-lg bg-white p-2.5 shadow-[var(--shadow-xs)]">
-                <p className="text-[10px] text-[var(--text-muted)]">Checkout</p>
-                <p className="text-xs font-semibold">Secure</p>
+                <p className="text-[10px] text-[var(--text-muted)]">{d('Checkout')}</p>
+                <p className="text-xs font-semibold">{d('Secure')}</p>
               </div>
             </div>
             <svg viewBox="0 0 320 100" className="mt-auto h-auto w-full" role="presentation">
@@ -536,7 +541,7 @@ export function PlatformDashboard({
       {packagePreview ? (
         <div className="absolute right-3 bottom-3 max-w-[11rem] rounded-xl border border-[var(--border-subtle)] bg-white/95 p-3 shadow-[var(--shadow-md)] backdrop-blur-sm">
           <p className="text-[10px] font-semibold tracking-wide text-[var(--text-secondary)] uppercase">
-            Package
+            {d('Package')}
           </p>
           <p className="mt-1 text-sm font-semibold text-[var(--text-primary)]">
             {packagePreview.title}
@@ -560,6 +565,7 @@ const CHECKOUT_ROWS = [
 ] as const;
 
 export function TrustDashboard({ className }: TrustDashboardProps) {
+  const d = useDecorativeLocalizer();
   return (
     <div
       className={cn(
@@ -584,7 +590,7 @@ export function TrustDashboard({ className }: TrustDashboardProps) {
             </svg>
           </span>
           <div>
-            <p className="text-sm font-bold text-[var(--text-primary)]">Checkout Summary</p>
+            <p className="text-sm font-bold text-[var(--text-primary)]">{d('Checkout Summary')}</p>
             <p className="text-xs text-[var(--text-muted)]">Public information only</p>
           </div>
         </div>
@@ -600,7 +606,7 @@ export function TrustDashboard({ className }: TrustDashboardProps) {
                   <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-              <p className="text-sm font-medium text-[var(--text-primary)]">{row.label}</p>
+              <p className="text-sm font-medium text-[var(--text-primary)]">{d(row.label)}</p>
             </div>
           ))}
         </div>
@@ -608,12 +614,12 @@ export function TrustDashboard({ className }: TrustDashboardProps) {
         <div className="mt-5 flex items-center justify-between gap-3 rounded-xl bg-[var(--surface-muted)] px-3.5 py-3">
           <div>
             <p className="text-[10px] font-semibold tracking-wide text-[var(--text-muted)] uppercase">
-              Status
+              {d('Status')}
             </p>
-            <p className="text-xs font-semibold text-[var(--text-primary)]">Ready to track</p>
+            <p className="text-xs font-semibold text-[var(--text-primary)]">{d('Ready to track')}</p>
           </div>
           <span className="rounded-full bg-[var(--brand-primary)] px-3 py-1.5 text-[10px] font-bold text-white">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
       </div>

@@ -84,6 +84,145 @@ export const ENGLISH_UI = {
     orderTracking: 'Order Tracking',
     customerSupport: 'Customer Support',
     choosePackage: 'Choose a Package',
+    addToCart: 'Add to Cart',
+    addingToCart: 'Adding…',
+    cancel: 'Cancel',
+    bestSelling: 'Best Selling',
+    mostPopular: 'Most Popular',
+    bestValue: 'Best Value',
+    recommended: 'Recommended',
+    youSave: 'You Save',
+    selected: 'Selected',
+    off: 'OFF',
+  },
+  orderDialog: {
+    title: 'Order details',
+    description: 'Enter the information needed to fulfill {quantity}.',
+    delivery: 'Delivery',
+    noPasswordRequired: 'No password required',
+    fixHighlighted: 'Please fix the highlighted fields.',
+    addedToCart: '{qty} {product} added to your cart.',
+    selectPlaceholder: 'Select…',
+    paymentReassuranceAria: 'Payment reassurance',
+    secureCheckoutEncrypted: 'Secure checkout · Encrypted payment',
+    moneyBackGuarantee: '30-Day Money-Back Guarantee',
+    labels: {
+      'Instagram username': 'Instagram username',
+      'TikTok username': 'TikTok username',
+      'Account username': 'Account username',
+      'Instagram Username': 'Instagram Username',
+      'TikTok Username': 'TikTok Username',
+      'Facebook Username': 'Facebook Username',
+      'YouTube Username': 'YouTube Username',
+      'Account Username': 'Account Username',
+      'TikTok video URL': 'TikTok video URL',
+      'Facebook page or profile URL': 'Facebook page or profile URL',
+      'Facebook page URL': 'Facebook page URL',
+      'Facebook post URL': 'Facebook post URL',
+      'YouTube channel URL': 'YouTube channel URL',
+      'Instagram post or Reel URL': 'Instagram post or Reel URL',
+      'YouTube video URL': 'YouTube video URL',
+      'Post URL': 'Post URL',
+      'Page URL': 'Page URL',
+      'Video URL': 'Video URL',
+      'Channel URL': 'Channel URL',
+      'Order Notes': 'Order Notes',
+      'Custom Comments': 'Custom Comments',
+    },
+    placeholders: {
+      '@username': '@username',
+      'Optional instructions for fulfillment': 'Optional instructions for fulfillment',
+      'Enter one comment per line': 'Enter one comment per line',
+    },
+    help: {
+      'Enter the public Instagram username that should receive the followers.':
+        'Enter the public Instagram username that should receive the followers.',
+      'Enter the public TikTok username that should receive the followers.':
+        'Enter the public TikTok username that should receive the followers.',
+      'Paste the public TikTok video URL that should receive the likes.':
+        'Paste the public TikTok video URL that should receive the likes.',
+      'Paste the public Facebook page or profile URL.':
+        'Paste the public Facebook page or profile URL.',
+      'Paste the public Facebook page URL that should receive the likes.':
+        'Paste the public Facebook page URL that should receive the likes.',
+      'Paste the public Facebook post URL that should receive the likes.':
+        'Paste the public Facebook post URL that should receive the likes.',
+      'Paste the public YouTube channel URL that should receive the subscribers.':
+        'Paste the public YouTube channel URL that should receive the subscribers.',
+      'Paste the public Instagram post or Reel URL that should receive the likes.':
+        'Paste the public Instagram post or Reel URL that should receive the likes.',
+      'Paste the public Instagram video or Reel URL that should receive the views.':
+        'Paste the public Instagram video or Reel URL that should receive the views.',
+      'Paste the public Instagram post or Reel URL that should receive the comments.':
+        'Paste the public Instagram post or Reel URL that should receive the comments.',
+      'Paste the public TikTok video URL that should receive the views.':
+        'Paste the public TikTok video URL that should receive the views.',
+      'Paste the public YouTube video URL that should receive the views.':
+        'Paste the public YouTube video URL that should receive the views.',
+    },
+    customCommentsHelp: 'Provide exactly {quantity} comments, one per line. Blank lines are removed.',
+    validation: {
+      isRequired: '{label} is required.',
+      minLength: '{label} must be at least {n} characters.',
+      maxLength: '{label} must be at most {n} characters.',
+      formatInvalid: '{label} format is invalid.',
+      usernameOnly: 'Enter a username only (not a full profile URL).',
+      usernameInvalid: 'Enter a valid username (letters, numbers, periods, underscores).',
+      instagramUrl: 'Enter a valid Instagram post or Reel URL (instagram.com).',
+      tiktokUrl: 'Enter a valid TikTok video URL (tiktok.com).',
+      facebookUrl: 'Enter a valid Facebook page or profile URL (facebook.com).',
+      facebookPostUrl: 'Enter a valid Facebook post URL (facebook.com).',
+      youtubeChannelUrl:
+        'Enter a valid YouTube channel URL (youtube.com/@…, /channel/…, /c/…, or /user/…).',
+      youtubeVideoUrl: 'Enter a valid YouTube video URL (youtube.com/watch?v=… or youtu.be/…).',
+      genericUrl: 'Enter a valid URL starting with https://.',
+      exactComments: 'Enter exactly {exact} comments (one per line). You entered {count}.',
+      commentMaxLength: 'Each comment must be at most {n} characters.',
+    },
+  },
+  decorative: {
+    orderLabel: 'Order',
+    secure: 'Secure',
+    save: 'Save',
+    selected: 'Selected',
+    activeLabel: 'Active',
+    complete: 'Complete',
+    package: 'Package',
+    tracking: 'Tracking',
+    delivering: 'Delivering',
+    current: 'Current',
+    done: 'Done',
+    next: 'Next',
+    orderConfirmed: 'Order Confirmed',
+    orderComplete: 'Order Complete',
+    packageConfirmed: 'Package Confirmed',
+    packageSelected: 'Package Selected',
+    paymentConfirmed: 'Payment Confirmed',
+    checkoutComplete: 'Checkout Complete',
+    checkoutSummary: 'Checkout Summary',
+    orderProcessing: 'Order Processing',
+    deliveryStarted: 'Delivery Started',
+    deliveryComplete: 'Delivery Complete',
+    enterUsername: 'Enter Username',
+    selectedPackage: 'Selected package',
+    onTrack: 'On track',
+    justNow: 'Just now',
+    readyToTrack: 'Ready to track',
+    statusLabel: 'Status',
+    live: 'Live',
+    checkout: 'Checkout',
+    confirmed: 'Confirmed',
+    pending: 'Pending',
+    processing: 'Processing',
+    growth: 'Growth',
+    verified: 'Verified',
+    profileVerified: 'Profile Verified',
+    analytics: 'Analytics',
+    growthOverview: 'Growth overview',
+    growthChart: 'Growth chart',
+    growthTimeline: 'Growth timeline',
+    accountGrowth: 'Account growth',
+    liveTracking: 'Live tracking',
   },
   faq: {
     categories: 'Categories',
@@ -253,6 +392,24 @@ export type UiDictionary = {
   breadcrumbs: { [K in keyof typeof ENGLISH_UI.breadcrumbs]: string };
   services: { [K in keyof typeof ENGLISH_UI.services]: string };
   commerce: { [K in keyof typeof ENGLISH_UI.commerce]: string };
+  orderDialog: {
+    title: string;
+    description: string;
+    delivery: string;
+    noPasswordRequired: string;
+    fixHighlighted: string;
+    addedToCart: string;
+    selectPlaceholder: string;
+    paymentReassuranceAria: string;
+    secureCheckoutEncrypted: string;
+    moneyBackGuarantee: string;
+    labels: { [K in keyof typeof ENGLISH_UI.orderDialog.labels]: string };
+    placeholders: { [K in keyof typeof ENGLISH_UI.orderDialog.placeholders]: string };
+    help: { [K in keyof typeof ENGLISH_UI.orderDialog.help]: string };
+    customCommentsHelp: string;
+    validation: { [K in keyof typeof ENGLISH_UI.orderDialog.validation]: string };
+  };
+  decorative: { [K in keyof typeof ENGLISH_UI.decorative]: string };
   faq: { [K in keyof typeof ENGLISH_UI.faq]: string };
   homepage: { [K in keyof typeof ENGLISH_UI.homepage]: string };
   sitemap: { [K in keyof typeof ENGLISH_UI.sitemap]: string };

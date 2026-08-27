@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -32,6 +34,7 @@ export function InstagramPackagesHeroDashboard({
   className,
   packagePreview,
 }: InstagramPackagesHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const accent = '#E1306C';
   const brand = '#F97316';
   const [followers, setFollowers] = useState<number>(FOLLOWER_KEYS[0]);
@@ -180,7 +183,7 @@ export function InstagramPackagesHeroDashboard({
         <div className="absolute -bottom-8 -left-[52%] z-[3] hidden w-[11.5rem] overflow-hidden rounded-2xl border border-white/80 bg-white/95 p-3 shadow-[0_22px_44px_-22px_rgba(28,25,23,0.5)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.4s_ease-in-out_infinite] sm:block">
           <div className="mb-2 flex items-center justify-between gap-1">
             <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
-              Analytics
+              {d('Analytics')}
             </p>
             <span className="rounded-full bg-emerald-50 px-1.5 py-0.5 text-[9px] font-bold text-emerald-600">
               +12.4%
@@ -220,23 +223,23 @@ export function InstagramPackagesHeroDashboard({
         )}
       >
         <p className="text-[9px] font-semibold text-stone-400 uppercase">Notification</p>
-        <p className="text-xs font-bold text-stone-800">{NOTIFS[notifIndex]}</p>
+        <p className="text-xs font-bold text-stone-800">{d(NOTIFS[notifIndex])}</p>
       </div>
       <div className="pointer-events-none absolute top-[4%] -right-1 z-[4] max-w-[9.5rem] rounded-xl border border-white/90 bg-white/95 px-3 py-2 shadow-[0_16px_36px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_5.8s_ease-in-out_infinite] sm:-right-3">
-        <p className="text-[9px] font-semibold text-emerald-600 uppercase">Order confirmed</p>
-        <p className="text-xs font-bold text-stone-800">Package selected</p>
+        <p className="text-[9px] font-semibold text-emerald-600 uppercase">{d('Order confirmed')}</p>
+        <p className="text-xs font-bold text-stone-800">{d('Package selected')}</p>
       </div>
       <div className="pointer-events-none absolute bottom-[6%] -right-1 z-[4] hidden max-w-[9.5rem] rounded-xl border border-white/90 bg-white/95 px-3 py-2 shadow-[0_16px_36px_-16px_rgba(28,25,23,0.48)] backdrop-blur-md motion-safe:animate-[iv-float-card_6.8s_ease-in-out_infinite] sm:-right-3 sm:block">
-        <p className="text-[9px] font-semibold text-stone-400 uppercase">Secure checkout</p>
+        <p className="text-[9px] font-semibold text-stone-400 uppercase">{d('Secure Checkout')}</p>
         <p className="text-xs font-bold text-stone-800">Public username only</p>
       </div>
       <div className="pointer-events-none absolute top-[42%] -right-2 z-[4] rounded-full border border-white/90 bg-white/95 px-3 py-1.5 text-[10px] font-bold text-stone-700 shadow-[0_10px_24px_-12px_rgba(28,25,23,0.45)] backdrop-blur-md sm:-right-4">
-        Live tracking
+        {d('Live tracking')}
       </div>
 
       {packagePreview ? (
         <div className="absolute -bottom-10 left-1/2 z-[5] hidden -translate-x-1/2 rounded-xl border border-[var(--border-subtle)] bg-white px-3 py-2 shadow-[0_18px_40px_-20px_rgba(28,25,23,0.42)] sm:block">
-          <p className="text-[10px] font-semibold text-[var(--text-muted)] uppercase">Selected</p>
+          <p className="text-[10px] font-semibold text-[var(--text-muted)] uppercase">{d('Selected')}</p>
           <p className="text-xs font-bold text-[var(--text-primary)]">{packagePreview.title}</p>
           <p className="text-sm font-bold text-[var(--brand-primary)]">{packagePreview.priceLabel}</p>
         </div>

@@ -53,9 +53,9 @@ export function LearnIndexHero({
           {breadcrumbs.length > 0 ? (
             <Breadcrumb items={breadcrumbs} className="mb-0" />
           ) : null}
-          <Eyebrow>Learn Center</Eyebrow>
+          <Eyebrow>NOVALIKES LEARN</Eyebrow>
           <Heading as="h1" className={HERO_HEADING_CLASS}>
-            {accentLastWord('Practical social growth guides')}
+            {accentLastWord('Social Media Guides & Resources')}
           </Heading>
           <p className="max-w-xl text-pretty text-base leading-relaxed text-neutral-600 sm:text-lg">
             Clear Instagram, TikTok, and Facebook explainers — how platforms

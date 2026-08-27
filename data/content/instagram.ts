@@ -18,7 +18,7 @@ function buildBuyInstagramFollowersContent(): ServiceContent {
         'Compare Instagram follower packages, pricing, delivery details and available plan sizes. Choose an option that matches your account and growth goals.',
     },
     hero: {
-      eyebrow: 'BUY INSTAGRAM FOLLOWERS',
+      eyebrow: 'INSTAGRAM SERVICES',
       title: 'Buy Instagram Followers',
       description:
         'Buy Instagram followers for your public profile by choosing the package size that fits your account. NovaLikes offers Instagram follower packages for creators, businesses, brands, and other public accounts. Compare the available quantities and prices, enter your public Instagram username, and complete your order online. No Instagram password is required.',
@@ -283,7 +283,7 @@ function buildBuyInstagramLikesContent(): ServiceContent {
         'Buy Instagram likes through NovaLikes with clear package options, delivery details, secure checkout, order tracking and a public post URL only.',
     },
     hero: {
-      eyebrow: 'BUY INSTAGRAM LIKES',
+      eyebrow: 'INSTAGRAM SERVICES',
       title: 'Buy Instagram Likes',
       description:
         'Buy Instagram likes for a public post or Reel by choosing the package size that fits what you need. NovaLikes offers several like quantities with clear pricing, so you can compare the available options before ordering. Select your package, provide the public Instagram post or Reel URL, and complete your order online. No Instagram password is required, and you can track your order after checkout.',
@@ -473,7 +473,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
         'Buy Instagram views worldwide with clear Reel and video package options, delivery estimates, secure checkout, order tracking and no password required.',
     },
     hero: {
-      eyebrow: 'BUY INSTAGRAM VIEWS',
+      eyebrow: 'INSTAGRAM SERVICES',
       title: 'Buy Instagram Views',
       description:
         'Buy Instagram views for a public Reel or video by choosing the package size that fits the content you want to use. NovaLikes offers several view quantities with clear pricing, so you can compare the available options before ordering. Select your package, provide the public Instagram content URL, and complete your order online. No Instagram password is required, and you can track your order after checkout.',
@@ -631,7 +631,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
         'Buy Instagram comments worldwide with clear package options, a public post URL, secure checkout, delivery details and order tracking through NovaLikes.',
     },
     hero: {
-      eyebrow: 'BUY INSTAGRAM COMMENTS',
+      eyebrow: 'INSTAGRAM SERVICES',
       title: 'Buy Instagram Comments',
       description:
         'Buy Instagram comments for a public post or Reel by choosing the package and quantity that fits the content you want to use. NovaLikes lets you compare available comment options and prices before ordering. Select your package, provide the correct public Instagram post URL, and complete your order online. Your Instagram password is not required, and you can use order tracking after checkout to check available status information.',

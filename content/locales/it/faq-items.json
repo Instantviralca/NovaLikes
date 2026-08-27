@@ -4,7 +4,7 @@
     "category": "getting_started",
     "order": 1,
     "question": "Cos’è NovaLikes?",
-    "answer": "NovaLikes è un sito di servizi social per Instagram, TikTok e Facebook. I servizi disponibili includono follower, like, views, commenti e servizi per Pagine Facebook selezionati, a seconda della piattaforma."
+    "answer": "NovaLikes è un sito di servizi social per Instagram, TikTok e Facebook. I servizi disponibili includono follower, like, visualizzazioni, commenti e servizi per Pagine Facebook selezionati, a seconda della piattaforma."
   },
   {
     "id": "faq-gs-how-works",
@@ -73,7 +73,7 @@
     "id": "faq-as-platform-risk",
     "category": "account_security",
     "order": 6,
-    "question": "Comprare follower, like o views può influire sul mio account social?",
+    "question": "Comprare follower, Mi piace o visualizzazioni può influire sul mio account social?",
     "answer": "I servizi social di terze parti possono comportare rischi legati alle policy della piattaforma o a provvedimenti sull’account. NovaLikes non richiede la password di Instagram, TikTok o Facebook per i servizi descritti sul sito, ma nessun servizio di terze parti può garantire che una piattaforma non rimuova mai attività, non cambi il modo in cui conta le metriche o non agisca in base alle regole in vigore. Prima di ordinare, rivedi i requisiti del servizio e le policy attuali della piattaforma."
   },
   {
@@ -206,8 +206,8 @@
     "id": "faq-ig-views-reels",
     "category": "instagram",
     "order": 10,
-    "question": "Posso comprare views Instagram per i Reel?",
-    "answer": "NovaLikes offre un servizio Views Instagram per i contenuti Instagram pubblici supportati. Controlla la pagina del servizio e indica l’URL esatto del Reel o del contenuto pubblico richiesto in checkout."
+    "question": "Posso Comprare visualizzazioni Instagram per i Reel?",
+    "answer": "NovaLikes offre un servizio Visualizzazioni Instagram per i contenuti Instagram pubblici supportati. Controlla la pagina del servizio e indica l’URL esatto del Reel o del contenuto pubblico richiesto in checkout."
   },
   {
     "id": "faq-ig-comments",
@@ -220,8 +220,8 @@
     "id": "faq-ig-difference-metrics",
     "category": "instagram",
     "order": 12,
-    "question": "Qual è la differenza tra follower, like, views e commenti Instagram?",
-    "answer": "I Follower Instagram si applicano al profilo, mentre Like, Views e Commenti si applicano a contenuti Instagram specifici, in base al servizio selezionato. Scegli Follower quando vuoi una metrica a livello di profilo e scegli Like, Views o Commenti quando l’obiettivo è un post o un Reel particolare."
+    "question": "Qual è la differenza tra follower, Mi piace, visualizzazioni e commenti Instagram?",
+    "answer": "I Follower Instagram si applicano al profilo, mentre Mi piace, visualizzazioni e commenti si applicano a contenuti Instagram specifici, in base al servizio selezionato. Scegli Follower quando vuoi una metrica a livello di profilo e scegli Like, visualizzazioni o Commenti quando l’obiettivo è un post o un Reel particolare."
   },
   {
     "id": "faq-tt-safe-followers",
@@ -262,8 +262,8 @@
     "id": "faq-tt-views-video",
     "category": "tiktok",
     "order": 6,
-    "question": "Posso comprare views TikTok per un video specifico?",
-    "answer": "Sì. Views TikTok si applica a un video TikTok pubblico supportato specifico. Indica l’URL esatto del video richiesto in checkout."
+    "question": "Posso Comprare visualizzazioni TikTok per un video specifico?",
+    "answer": "Sì. Visualizzazioni TikTok si applica a un video TikTok pubblico supportato specifico. Indica l’URL esatto del video richiesto in checkout."
   },
   {
     "id": "faq-tt-delete-video",
@@ -276,8 +276,8 @@
     "id": "faq-tt-difference",
     "category": "tiktok",
     "order": 8,
-    "question": "Qual è la differenza tra follower, like e views TikTok?",
-    "answer": "I Follower TikTok si applicano al profilo del creator, mentre Like TikTok e Views TikTok si applicano a video specifici. Il servizio corretto dipende dal fatto che tu voglia puntare al profilo o a un singolo video."
+    "question": "Qual è la differenza tra follower, like e visualizzazioni TikTok?",
+    "answer": "I Follower TikTok si applicano al profilo del creator, mentre Like TikTok e Visualizzazioni TikTok si applicano a video specifici. Il servizio corretto dipende dal fatto che tu voglia puntare al profilo o a un singolo video."
   },
   {
     "id": "faq-fb-buy-followers",

@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "CRECIMIENTO EN REDES SOCIALES PARA INSTAGRAM, TIKTOK Y FACEBOOK",
+    "eyebrow": "INSTAGRAM • TIKTOK • FACEBOOK",
     "title": "Haz crecer tu presencia en redes sociales con NovaLikes",
-    "description": "Compra seguidores, likes, views y comentarios para Instagram, TikTok y Facebook. NovaLikes te muestra opciones de paquete claras para cada servicio, para que elijas lo que encaja con tu cuenta y hagas el pedido sin compartir tu contraseña. Selecciona un servicio, elige un paquete, introduce los datos públicos del perfil o del contenido y completa tu pedido online.",
+    "description": "Compra seguidores, Me gusta, visualizaciones y comentarios para Instagram, TikTok y Facebook. NovaLikes te muestra opciones de paquete claras para cada servicio, para que elijas lo que encaja con tu cuenta y hagas el pedido sin compartir tu contraseña. Selecciona un servicio, elige un paquete, introduce los datos públicos del perfil o del contenido y completa tu pedido online.",
     "primaryCta": {
       "label": "Ver servicios",
       "href": "#services-overview"
@@ -68,7 +68,7 @@
       {
         "id": "instagram",
         "name": "Instagram",
-        "description": "Seguidores, likes, views y comentarios para perfiles y contenido de Instagram.",
+        "description": "Seguidores, Me gusta, visualizaciones y comentarios para perfiles y contenido de Instagram.",
         "href": "#instagram-services",
         "ctaLabel": "Ver Instagram",
         "badge": "Servicios de Instagram",
@@ -88,7 +88,7 @@
             "icon": "heart"
           },
           {
-            "label": "Views en Reels",
+            "label": "Visualizaciones en Reels",
             "href": "/buy-instagram-views",
             "icon": "play"
           },
@@ -102,12 +102,12 @@
       {
         "id": "tiktok",
         "name": "TikTok",
-        "description": "Seguidores, likes y views para cuentas y vídeos de TikTok.",
+        "description": "Seguidores, Me gusta y visualizaciones para cuentas y vídeos de TikTok.",
         "href": "#tiktok-services",
         "ctaLabel": "Ver TikTok",
         "metric": {
           "value": "Vídeo",
-          "label": "Views"
+          "label": "Visualizaciones"
         },
         "tags": [
           {
@@ -116,12 +116,12 @@
             "icon": "trend"
           },
           {
-            "label": "Likes en vídeos",
+            "label": "Me gusta en vídeos",
             "href": "/buy-tiktok-likes",
             "icon": "heart"
           },
           {
-            "label": "Views en vídeos",
+            "label": "Visualizaciones en vídeos",
             "href": "/buy-tiktok-views",
             "icon": "eye"
           },
@@ -171,7 +171,7 @@
     "id": "services-overview",
     "eyebrow": "Todos los servicios",
     "title": "Todos los servicios de NovaLikes",
-    "description": "Elige el servicio que coincide con lo que quieres hacer crecer. NovaLikes ofrece seguidores, likes, views, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Abre cualquier servicio para comparar tamaños de paquete y precios.",
+    "description": "Elige el servicio que coincide con lo que quieres hacer crecer. NovaLikes ofrece seguidores, Me gusta, visualizaciones, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Abre cualquier servicio para comparar tamaños de paquete y precios.",
     "trustNote": "Compara servicios y opciones de paquete",
     "features": [
       {
@@ -200,12 +200,12 @@
     "instagram": {
       "id": "instagram-services",
       "title": "Crecimiento en Instagram",
-      "description": "Elige entre seguidores, likes, views y comentarios según lo que quieras mejorar en Instagram."
+      "description": "Elige entre seguidores, Me gusta, visualizaciones y comentarios según lo que quieras mejorar en Instagram."
     },
     "tiktok": {
       "id": "tiktok-services",
       "title": "Crecimiento en TikTok",
-      "description": "Elige seguidores, likes o views según lo que quieras añadir a tu cuenta o a tus vídeos de TikTok."
+      "description": "Elige seguidores, Me gusta o visualizaciones según lo que quieras añadir a tu cuenta o a tus vídeos de TikTok."
     },
     "facebook": {
       "id": "facebook-services",
@@ -243,7 +243,7 @@
     "steps": [
       {
         "title": "Elige un servicio",
-        "body": "Selecciona Instagram, TikTok o Facebook, y después elige los seguidores, likes, views, comentarios, Me gusta de Página o Me gusta de publicaciones que necesitas."
+        "body": "Selecciona Instagram, TikTok o Facebook, y después elige los seguidores, Me gusta, visualizaciones, comentarios, Me gusta de Página o Me gusta de publicaciones que necesitas."
       },
       {
         "title": "Elige un paquete",
@@ -289,7 +289,7 @@
     "items": [
       {
         "question": "Elige el servicio adecuado",
-        "answer": "Comprueba si necesitas seguidores, likes, views, comentarios, Me gusta de Página o Me gusta de publicaciones antes de seleccionar un paquete."
+        "answer": "Comprueba si necesitas seguidores, Me gusta, visualizaciones, comentarios, Me gusta de Página o Me gusta de publicaciones antes de seleccionar un paquete."
       },
       {
         "question": "Revisa tu perfil o contenido",
@@ -312,7 +312,7 @@
     "items": [
       {
         "question": "¿Qué servicios de redes sociales puedo pedir en NovaLikes?",
-        "answer": "NovaLikes ofrece seguidores, likes, views, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Las opciones disponibles dependen de la plataforma que elijas."
+        "answer": "NovaLikes ofrece seguidores, Me gusta, visualizaciones, comentarios, Me gusta de Página y Me gusta de publicaciones en Instagram, TikTok y Facebook. Las opciones disponibles dependen de la plataforma que elijas."
       },
       {
         "question": "¿Necesito dar a NovaLikes la contraseña de mis redes sociales?",
@@ -398,11 +398,11 @@
         },
         {
           "title": "Centrado en tu perfil",
-          "text": "Este servicio es para tu recuento de seguidores, no para los likes, views o comentarios de publicaciones concretas."
+          "text": "Este servicio es para tu recuento de seguidores, no para los Me gusta, visualizaciones o comentarios de publicaciones concretas."
         },
         {
           "title": "Otros servicios de Instagram",
-          "text": "Likes, views y comentarios están disponibles por separado cuando quieres trabajar en contenido concreto."
+          "text": "Me gusta, visualizaciones y comentarios están disponibles por separado cuando quieres trabajar en contenido concreto."
         }
       ],
       "cta": {
@@ -420,36 +420,36 @@
       "platform": "instagram",
       "slug": "buy-instagram-likes",
       "href": "/buy-instagram-likes",
-      "name": "Likes de Instagram",
-      "cardBlurb": "Paquetes de likes para publicaciones y Reels de Instagram elegibles.",
-      "commercialLabel": "COMPRAR LIKES DE INSTAGRAM",
-      "title": "Paquetes de likes de Instagram",
-      "intro": "Compra likes de Instagram para una publicación o Reel cuando quieras más interacción visible en ese contenido. Elige un paquete, facilita la URL pública de la publicación o Reel y realiza tu pedido sin dar a NovaLikes acceso a tu cuenta de Instagram.",
+      "name": "Me gusta de Instagram",
+      "cardBlurb": "Paquetes de Me gusta para publicaciones y Reels de Instagram elegibles.",
+      "commercialLabel": "COMPRAR Me gusta de Instagram",
+      "title": "Paquetes de Me gusta de Instagram",
+      "intro": "Compra Me gusta de Instagram para una publicación o Reel cuando quieras más interacción visible en ese contenido. Elige un paquete, facilita la URL pública de la publicación o Reel y realiza tu pedido sin dar a NovaLikes acceso a tu cuenta de Instagram.",
       "points": [
         {
           "title": "Para publicaciones y Reels",
-          "text": "Elige la publicación o Reel público de Instagram donde quieres que se entreguen los likes."
+          "text": "Elige la publicación o Reel público de Instagram donde quieres que se entreguen los Me gusta."
         },
         {
           "title": "Específico del contenido",
-          "text": "Los likes se aplican al contenido seleccionado, no al recuento de seguidores de tu perfil."
+          "text": "Los Me gusta se aplican al contenido seleccionado, no al recuento de seguidores de tu perfil."
         },
         {
           "title": "Elige la publicación correcta",
           "text": "Comprueba que estás enviando exactamente la publicación o Reel público que quieres usar."
         },
         {
-          "title": "Likes, views o comentarios",
-          "text": "Elige views para el recuento de visualizaciones de vídeo o comentarios cuando quieras otro tipo de interacción."
+          "title": "Me gusta, visualizaciones o comentarios",
+          "text": "Elige visualizaciones para el recuento de visualizaciones de vídeo o comentarios cuando quieras otro tipo de interacción."
         }
       ],
       "cta": {
-        "label": "Ver likes de Instagram",
+        "label": "Ver Me gusta de Instagram",
         "href": "/buy-instagram-likes"
       },
       "image": {
         "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
-        "alt": "Publicación de Instagram con indicadores de likes e interacción"
+        "alt": "Publicación de Instagram con indicadores de Me gusta e interacción"
       },
       "tone": "violet"
     },
@@ -458,23 +458,23 @@
       "platform": "instagram",
       "slug": "buy-instagram-views",
       "href": "/buy-instagram-views",
-      "name": "Views de Instagram",
-      "cardBlurb": "Paquetes de views para Reels y vídeos de Instagram elegibles.",
-      "commercialLabel": "COMPRAR VIEWS DE INSTAGRAM",
-      "title": "Paquetes de views de Instagram",
-      "intro": "Compra views de Instagram para un Reel o vídeo cuando quieras aumentar su recuento visible de visualizaciones. Selecciona el número de views que necesitas, añade el enlace público de tu contenido y completa tu pedido sin compartir tu contraseña de Instagram.",
+      "name": "Visualizaciones de Instagram",
+      "cardBlurb": "paquetes de visualizaciones para Reels y vídeos de Instagram elegibles.",
+      "commercialLabel": "COMPRAR visualizaciones de Instagram",
+      "title": "paquetes de visualizaciones de Instagram",
+      "intro": "Compra visualizaciones de Instagram para un Reel o vídeo cuando quieras aumentar su recuento visible de visualizaciones. Selecciona el número de visualizaciones que necesitas, añade el enlace público de tu contenido y completa tu pedido sin compartir tu contraseña de Instagram.",
       "points": [
         {
           "title": "Hecho para contenido de vídeo",
           "text": "Usa este servicio para un Reel o vídeo público de Instagram elegible."
         },
         {
-          "title": "Centrado en las views",
-          "text": "Este servicio es para el recuento de views de tu contenido, no para seguidores, likes o comentarios."
+          "title": "Centrado en las visualizaciones",
+          "text": "Este servicio es para el recuento de visualizaciones de tu contenido, no para seguidores, Me gusta o comentarios."
         },
         {
           "title": "Elige el vídeo correcto",
-          "text": "Envía exactamente el Reel o vídeo público al que quieres que se entreguen las views."
+          "text": "Envía exactamente el Reel o vídeo público al que quieres que se entreguen las visualizaciones."
         },
         {
           "title": "Pedido por contenido",
@@ -482,7 +482,7 @@
         }
       ],
       "cta": {
-        "label": "Ver views de Instagram",
+        "label": "Ver visualizaciones de Instagram",
         "href": "/buy-instagram-views"
       },
       "image": {
@@ -508,7 +508,7 @@
         },
         {
           "title": "Actividad de comentarios",
-          "text": "Los comentarios añaden un tipo de interacción visible distinto de los likes o las views."
+          "text": "Los comentarios añaden un tipo de interacción visible distinto de los Me gusta o las visualizaciones."
         },
         {
           "title": "Específico del contenido",
@@ -546,7 +546,7 @@
         },
         {
           "title": "Centrado en la cuenta",
-          "text": "Los seguidores se aplican a la cuenta, no a los likes o views de un vídeo concreto."
+          "text": "Los seguidores se aplican a la cuenta, no a los Me gusta o visualizaciones de un vídeo concreto."
         },
         {
           "title": "Elige para tu cuenta",
@@ -554,7 +554,7 @@
         },
         {
           "title": "Los servicios de vídeo son aparte",
-          "text": "Likes y views de TikTok están disponibles cuando quieres trabajar en vídeos concretos."
+          "text": "Me gusta y visualizaciones de TikTok están disponibles cuando quieres trabajar en vídeos concretos."
         }
       ],
       "cta": {
@@ -572,36 +572,36 @@
       "platform": "tiktok",
       "slug": "buy-tiktok-likes",
       "href": "/buy-tiktok-likes",
-      "name": "Likes de TikTok",
-      "cardBlurb": "Paquetes de likes para vídeos públicos de TikTok elegibles.",
-      "commercialLabel": "COMPRAR LIKES DE TIKTOK",
-      "title": "Paquetes de likes de TikTok",
-      "intro": "Compra likes de TikTok para un vídeo público cuando quieras añadir más likes a esa publicación concreta. Elige el tamaño de paquete que necesitas, introduce el enlace del vídeo y completa tu pedido sin dar a NovaLikes tu contraseña de TikTok.",
+      "name": "Me gusta de TikTok",
+      "cardBlurb": "Paquetes de Me gusta para vídeos públicos de TikTok elegibles.",
+      "commercialLabel": "COMPRAR Me gusta de TikTok",
+      "title": "Paquetes de Me gusta de TikTok",
+      "intro": "Compra Me gusta de TikTok para un vídeo público cuando quieras añadir más Me gusta a esa publicación concreta. Elige el tamaño de paquete que necesitas, introduce el enlace del vídeo y completa tu pedido sin dar a NovaLikes tu contraseña de TikTok.",
       "points": [
         {
           "title": "Para vídeos individuales",
-          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen los likes."
+          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen los Me gusta."
         },
         {
           "title": "Específico del vídeo",
-          "text": "Los likes se aplican al vídeo seleccionado, no al recuento de seguidores de tu perfil de TikTok."
+          "text": "Los Me gusta se aplican al vídeo seleccionado, no al recuento de seguidores de tu perfil de TikTok."
         },
         {
           "title": "Revisa el vídeo",
           "text": "Asegúrate de enviar exactamente el vídeo público de TikTok que quieres usar."
         },
         {
-          "title": "Likes o views",
-          "text": "Elige views de TikTok cuando el recuento de visualizaciones sea la métrica en la que quieres trabajar."
+          "title": "Me gusta o visualizaciones",
+          "text": "Elige visualizaciones de TikTok cuando el recuento de visualizaciones sea la métrica en la que quieres trabajar."
         }
       ],
       "cta": {
-        "label": "Ver likes de TikTok",
+        "label": "Ver Me gusta de TikTok",
         "href": "/buy-tiktok-likes"
       },
       "image": {
         "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
-        "alt": "Vídeo de TikTok con indicadores de likes e interacción"
+        "alt": "Vídeo de TikTok con indicadores de Me gusta e interacción"
       },
       "tone": "cyan"
     },
@@ -610,19 +610,19 @@
       "platform": "tiktok",
       "slug": "buy-tiktok-views",
       "href": "/buy-tiktok-views",
-      "name": "Views de TikTok",
-      "cardBlurb": "Paquetes de views para vídeos públicos de TikTok elegibles.",
-      "commercialLabel": "COMPRAR VIEWS DE TIKTOK",
-      "title": "Paquetes de views de TikTok",
-      "intro": "Compra views de TikTok para un vídeo público cuando quieras aumentar el número de views que se muestra en esa publicación. Elige el paquete de views que necesitas, facilita la URL del vídeo y realiza tu pedido sin compartir tu contraseña de TikTok.",
+      "name": "Visualizaciones de TikTok",
+      "cardBlurb": "paquetes de visualizaciones para vídeos públicos de TikTok elegibles.",
+      "commercialLabel": "COMPRAR visualizaciones de TikTok",
+      "title": "paquetes de visualizaciones de TikTok",
+      "intro": "Compra visualizaciones de TikTok para un vídeo público cuando quieras aumentar el número de visualizaciones que se muestra en esa publicación. Elige el paquete de visualizaciones que necesitas, facilita la URL del vídeo y realiza tu pedido sin compartir tu contraseña de TikTok.",
       "points": [
         {
           "title": "Para vídeos de TikTok",
-          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen las views."
+          "text": "Elige el vídeo público de TikTok donde quieres que se entreguen las visualizaciones."
         },
         {
-          "title": "Centrado en el recuento de views",
-          "text": "Este servicio trabaja sobre las views del vídeo, no sobre los seguidores del perfil ni los likes del vídeo."
+          "title": "Centrado en el recuento de visualizaciones",
+          "text": "Este servicio trabaja sobre las visualizaciones del vídeo, no sobre los seguidores del perfil ni los Me gusta del vídeo."
         },
         {
           "title": "Usa el vídeo correcto",
@@ -634,12 +634,12 @@
         }
       ],
       "cta": {
-        "label": "Ver views de TikTok",
+        "label": "Ver visualizaciones de TikTok",
         "href": "/buy-tiktok-views"
       },
       "image": {
         "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
-        "alt": "Vídeo de TikTok con indicadores de views y reproducción"
+        "alt": "Vídeo de TikTok con indicadores de visualizaciones y reproducción"
       },
       "tone": "slate"
     },
@@ -668,7 +668,7 @@
         },
         {
           "title": "Los Me gusta de publicaciones son aparte",
-          "text": "Elige Me gusta de publicaciones de Facebook cuando quieras likes en una publicación concreta."
+          "text": "Elige Me gusta de publicaciones de Facebook cuando quieras Me gusta en una publicación concreta."
         }
       ],
       "cta": {

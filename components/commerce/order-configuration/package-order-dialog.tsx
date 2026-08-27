@@ -19,9 +19,16 @@ import {
 import { getServiceOrderConfig } from '@/data/order-fields';
 import { getPlatformById } from '@/data/platforms';
 import { useCartToast } from '@/components/feedback/cart-toast';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { getServicePageAnalytics } from '@/lib/analytics';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
 import { useCart } from '@/lib/cart';
+import {
+  localizeAddedToCart,
+  localizeOrderDescription,
+  localizeOrderFieldForDisplay,
+  localizeValidationMessage,
+} from '@/lib/i18n/order-display';
 import {
   normalizeOrderConfigurationValues,
   validateOrderConfiguration,
@@ -50,14 +57,24 @@ export function PackageOrderDialog({
 }: PackageOrderDialogProps) {
   const cart = useCart();
   const { showCartToast } = useCartToast();
+  const { ui } = useI18nChrome();
   const config = useMemo(
     () => getServiceOrderConfig(service.slug, selectedPackage),
     [service.slug, selectedPackage],
   );
-  const primaryField = config.fields.find(
+  const displayFields = useMemo(
+    () => config.fields.map((field) => localizeOrderFieldForDisplay(field, ui)),
+    [config.fields, ui],
+  );
+  const primaryField = displayFields.find(
     (field) => field.type === 'username' || field.type === 'url',
   );
-  const extraFields = config.fields.filter((field) => field !== primaryField);
+  const extraFields = displayFields.filter((field) => field !== primaryField);
+  // Validate against original config field definitions (English labels in messages),
+  // then localize messages for display.
+  const primaryFieldSource = config.fields.find(
+    (field) => field.type === 'username' || field.type === 'url',
+  );
 
   const [values, setValues] = useState<OrderConfigurationValues>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -91,8 +108,12 @@ export function PackageOrderDialog({
     const validationErrors = validateOrderConfiguration(config.fields, normalized);
 
     if (validationErrors.length > 0) {
-      setErrors(Object.fromEntries(validationErrors.map((e) => [e.fieldId, e.message])));
-      setFormError('Please fix the highlighted fields.');
+      setErrors(
+        Object.fromEntries(
+          validationErrors.map((e) => [e.fieldId, localizeValidationMessage(e.message, ui)]),
+        ),
+      );
+      setFormError(ui.orderDialog.fixHighlighted);
       submitLock.current = false;
       setSubmitting(false);
       return;
@@ -145,7 +166,7 @@ export function PackageOrderDialog({
     const platformName = getPlatformById(service.platform)?.name ?? '';
     const productLabel = `${platformName} ${service.shortName}`.trim();
     showCartToast({
-      title: `${qty} ${productLabel} added to your cart.`,
+      title: localizeAddedToCart(qty, productLabel, ui),
       quantityLabel: selectedPackage.quantityLabel,
       priceLabel: formatMoney(selectedPackage.price, selectedPackage.currency),
       serviceName: productLabel,
@@ -160,8 +181,8 @@ export function PackageOrderDialog({
   };
 
   const primaryValue =
-    primaryField && typeof values[primaryField.name] === 'string'
-      ? (values[primaryField.name] as string)
+    primaryFieldSource && typeof values[primaryFieldSource.name] === 'string'
+      ? (values[primaryFieldSource.name] as string)
       : undefined;
 
   return (
@@ -177,9 +198,9 @@ export function PackageOrderDialog({
           aria-hidden="true"
         />
         <DialogHeader>
-          <DialogTitle>Order details</DialogTitle>
+          <DialogTitle>{ui.orderDialog.title}</DialogTitle>
           <DialogDescription id="package-order-desc">
-            Enter the information needed to fulfill {selectedPackage.quantityLabel}.
+            {localizeOrderDescription(selectedPackage.quantityLabel, ui)}
           </DialogDescription>
         </DialogHeader>
 
@@ -193,21 +214,21 @@ export function PackageOrderDialog({
           <p className="text-muted-foreground">{service.name}</p>
           {selectedPackage.deliveryTime ? (
             <p className="text-xs text-muted-foreground">
-              Delivery: {selectedPackage.deliveryTime}
+              {ui.orderDialog.delivery}: {selectedPackage.deliveryTime}
             </p>
           ) : null}
           <p className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-success)]">
             <ShieldCheck className="size-3.5" aria-hidden="true" />
-            No password required
+            {ui.orderDialog.noPasswordRequired}
           </p>
         </div>
 
         <div className="space-y-4">
-          {primaryField ? (
+          {primaryField && primaryFieldSource ? (
             <OrderDestinationField
               field={primaryField}
               value={primaryValue}
-              error={errors[primaryField.id] ?? errors[primaryField.name]}
+              error={errors[primaryFieldSource.id] ?? errors[primaryFieldSource.name]}
               onChange={handleChange}
               autoFocus
             />
@@ -231,7 +252,7 @@ export function PackageOrderDialog({
             onClick={() => onOpenChange(false)}
             disabled={submitting}
           >
-            Cancel
+            {ui.commerce.cancel}
           </Button>
           <Button
             type="button"
@@ -240,7 +261,7 @@ export function PackageOrderDialog({
             data-analytics="add-to-cart"
             className="min-h-11 bg-[var(--brand-primary)] font-semibold"
           >
-            {submitting ? 'Adding…' : 'Add to Cart'}
+            {submitting ? ui.commerce.addingToCart : ui.commerce.addToCart}
           </Button>
         </DialogFooter>
       </DialogContent>

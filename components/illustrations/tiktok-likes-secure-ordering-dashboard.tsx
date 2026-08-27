@@ -1,5 +1,6 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const SECURE_ROWS = [
@@ -18,6 +19,7 @@ export function TikTokLikesSecureOrderingDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
@@ -50,7 +52,7 @@ export function TikTokLikesSecureOrderingDashboard({
             </span>
             <div>
               <p className="text-sm font-bold text-[var(--text-primary)]">Secure Ordering</p>
-              <p className="text-xs text-[var(--text-muted)]">TikTok Likes</p>
+              <p className="text-xs text-[var(--text-muted)]">{d('TikTok Likes')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
@@ -86,7 +88,7 @@ export function TikTokLikesSecureOrderingDashboard({
                 >
                   ✓
                 </span>
-                <p className="text-sm font-semibold text-stone-800">{row.label}</p>
+                <p className="text-sm font-semibold text-stone-800">{d(row.label)}</p>
               </li>
             );
           })}

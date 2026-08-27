@@ -1,5 +1,6 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const STATUS_ROWS = [
@@ -18,6 +19,7 @@ export function TikTokViewsSecureCheckoutDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
 
@@ -48,12 +50,12 @@ export function TikTokViewsSecureCheckoutDashboard({
               ▶
             </span>
             <div>
-              <p className="text-sm font-bold text-[var(--text-primary)]">Secure Checkout</p>
-              <p className="text-xs text-[var(--text-muted)]">TikTok Views</p>
+              <p className="text-sm font-bold text-[var(--text-primary)]">{d('Secure Checkout')}</p>
+              <p className="text-xs text-[var(--text-muted)]">{d('TikTok Views')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
-            Live
+            {d('Live')}
           </span>
         </div>
 
@@ -102,7 +104,7 @@ export function TikTokViewsSecureCheckoutDashboard({
                     row.done || isActive ? 'text-stone-800' : 'text-stone-400',
                   )}
                 >
-                  {row.label}
+                  {d(row.label)}
                 </p>
               </li>
             );

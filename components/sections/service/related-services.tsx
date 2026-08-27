@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Eye, Heart, Share2, Users, type LucideIcon } from 'lucide-react';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { Container } from '@/components/layout/container';
 import { Grid } from '@/components/layout/grid';
 import { Section } from '@/components/layout/section';
@@ -17,10 +19,12 @@ import {
   linkingAnalyticsEvents,
   trackLinkingEvent,
 } from '@/lib/analytics/linking-events';
+import { localizeDecorativeText } from '@/lib/i18n/es-visible-display';
 import { cn } from '@/lib/utils';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 import type { CtaProps } from '@/types/components';
 import type { Service } from '@/types/service';
+import type { Locale } from '@/lib/i18n/config';
 
 export type RelatedServiceCopyOverride = {
   title: string;
@@ -81,68 +85,90 @@ function relatedBlurb(
 function relatedCardTitle(
   service: Service,
   copyBySlug?: Record<string, RelatedServiceCopyOverride>,
+  locale: Locale = 'en',
 ): string {
   const override = copyBySlug?.[service.slug];
   if (override) return override.title;
 
+  let english: string;
   switch (service.slug) {
     case 'buy-instagram-likes':
-      return 'Instagram Likes Packages';
+      english = 'Instagram Likes Packages';
+      break;
     case 'buy-instagram-views':
-      return 'Instagram Views Packages';
+      english = 'Instagram Views Packages';
+      break;
     case 'buy-instagram-comments':
-      return 'Instagram Comments Packages';
+      english = 'Instagram Comments Packages';
+      break;
     case 'buy-tiktok-followers':
-      return 'TikTok Followers';
+      english = 'TikTok Followers';
+      break;
     case 'buy-tiktok-likes':
-      return 'TikTok Likes';
+      english = 'TikTok Likes';
+      break;
     case 'buy-tiktok-views':
-      return 'TikTok Views';
+      english = 'TikTok Views';
+      break;
     case 'buy-facebook-followers':
-      return 'Facebook Followers';
+      english = 'Facebook Followers';
+      break;
     case 'buy-facebook-page-likes':
-      return 'Facebook Page Likes';
+      english = 'Facebook Page Likes';
+      break;
     case 'buy-facebook-post-likes':
-      return 'Facebook Post Likes';
+      english = 'Facebook Post Likes';
+      break;
     default:
-      return service.navigationLabel;
+      english = service.navigationLabel;
   }
+  return localizeDecorativeText(english, locale);
 }
 
 function relatedCtaLabel(
   service: Service,
   copyBySlug?: Record<string, RelatedServiceCopyOverride>,
+  locale: Locale = 'en',
 ): string {
   const override = copyBySlug?.[service.slug];
   if (override) return override.ctaLabel;
 
+  let english: string;
   switch (service.slug) {
     case 'buy-instagram-followers':
-      return 'View Followers Packages';
+      english = 'View Followers Packages';
+      break;
     case 'buy-instagram-likes':
-      return 'View Likes Packages';
+      english = 'View Likes Packages';
+      break;
     case 'buy-instagram-views':
-      return 'View Views Packages';
+      english = 'View Views Packages';
+      break;
     case 'buy-instagram-comments':
-      return 'View Comments Packages';
+      english = 'View Comments Packages';
+      break;
     case 'buy-tiktok-followers':
-      return 'View TikTok Followers';
+      english = 'View TikTok Followers';
+      break;
     case 'buy-tiktok-likes':
-      return 'View TikTok Likes';
+      english = 'View TikTok Likes';
+      break;
     case 'buy-tiktok-views':
-      return 'View TikTok Views';
+      english = 'View TikTok Views';
+      break;
     case 'buy-facebook-followers':
-      return 'Explore Service';
     case 'buy-facebook-page-likes':
-      return 'Explore Service';
     case 'buy-facebook-post-likes':
-      return 'Explore Service';
+      english = 'Explore Service';
+      break;
     default:
-      return `View ${service.navigationLabel.toLowerCase()} packages`;
+      english = `View ${service.navigationLabel.toLowerCase()} packages`;
   }
+  return localizeDecorativeText(english, locale);
 }
 
 function RelatedMiniIllustration({ service }: { service: Service }) {
+  const d = useDecorativeLocalizer();
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
   let Icon: LucideIcon = Heart;
@@ -209,7 +235,7 @@ function RelatedMiniIllustration({ service }: { service: Service }) {
             ))}
           </div>
           <span className="text-[7px] font-bold tracking-wide text-stone-500 uppercase">
-            Likes
+            {d('Likes')}
           </span>
         </div>
       </div>
@@ -255,7 +281,7 @@ function RelatedMiniIllustration({ service }: { service: Service }) {
           ))}
         </div>
         <span className="text-[7px] font-bold tracking-wide text-stone-500 uppercase">
-          {label}
+          {d(label)}
         </span>
       </div>
     </div>
@@ -274,6 +300,7 @@ export function RelatedServices({
   footerLinks,
   copyBySlug,
 }: RelatedServicesProps) {
+  const { locale } = useI18nChrome();
   if (services.length === 0) return null;
 
   const analytics = analyticsServiceSlug
@@ -324,7 +351,7 @@ export function RelatedServices({
                     });
                     trackLinkingEvent(linkingAnalyticsEvents.related_service_click, {
                       href: service.url,
-                      label: relatedCardTitle(service, copyBySlug),
+                      label: relatedCardTitle(service, copyBySlug, locale),
                       slug: service.slug,
                       sourceSlug: analyticsServiceSlug,
                       surface: 'related_services',
@@ -356,13 +383,13 @@ export function RelatedServices({
                         isSingleWide ? 'mt-0 sm:mt-0' : 'mt-6',
                       )}
                     >
-                      {relatedCardTitle(service, copyBySlug)}
+                      {relatedCardTitle(service, copyBySlug, locale)}
                     </h3>
                     <p className="mt-2.5 flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">
                       {relatedBlurb(service, copyBySlug)}
                     </p>
                     <p className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--brand-primary)] transition-transform duration-200 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 motion-reduce:group-hover:translate-x-0">
-                      {relatedCtaLabel(service, copyBySlug)}
+                      {relatedCtaLabel(service, copyBySlug, locale)}
                       <ArrowRight
                         className="size-3.5 transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 motion-reduce:group-hover:translate-x-0"
                         aria-hidden

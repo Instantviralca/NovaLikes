@@ -1,6 +1,6 @@
 {
   "hub": {
-    "eyebrow": "أدوات مجانية",
+    "eyebrow": "أدوات مجانية لوسائل التواصل الاجتماعي",
     "h1": "أدوات مجانية لـ Instagram وTikTok وFacebook",
     "lead": "اطّلع على ملف عام، أو تحقق من عدد متابعين منشور، أو استرجع ملف فيديو تعرضه المنصة أصلًا. يعمل كل مساعد على خوادم NovaLikes ويعيد معلومات عامة فقط — لا محتوى خاصًا ولا جلسة تسجيل دخول ولا تنزيلًا مختلقًا.",
     "howHeading": "كيف تعمل هذه الأدوات",
@@ -201,7 +201,7 @@
     },
     "instagram-video-downloader": {
       "eyebrow": "أداة Instagram",
-      "h1": "منزّل فيديو / Reels على Instagram",
+      "h1": "منزّل فيديو وReels على Instagram",
       "lead": "الصق عنوان URL عامًا لـ Reel أو منشور فيديو على Instagram. تتحقق NovaLikes من الصفحة العامة وتعرض ملفًا فقط عندما يضمّن Instagram واحدًا. كثير من المنشورات العامة لا يفعل ذلك حاليًا. هذا توفر محدود — لا أداة معطّلة ولا تنزيل مزيف.",
       "inputLabel": "عنوان URL عام لـ Reel أو فيديو على Instagram",
       "helperText": "يُعرض ملف فقط إذا ضمّنه Instagram في الصفحة العامة.",
@@ -529,7 +529,7 @@
       "availabilityLabel": "متاح"
     },
     "instagram-video-downloader": {
-      "name": "منزّل فيديو / Reels على Instagram",
+      "name": "منزّل فيديو وReels على Instagram",
       "shortDescription": "يفحص Reel أو منشور فيديو عام على Instagram. يُعاد ملف فقط إذا عرض Instagram واحدًا.",
       "placeholder": "https://www.instagram.com/reel/...",
       "actionLabel": "التحقق من الفيديو",

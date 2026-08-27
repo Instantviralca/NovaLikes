@@ -1,6 +1,7 @@
 'use client';
 
 import { FieldRenderer } from '@/components/commerce/order-configuration/field-renderer';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type {
   OrderConfigurationValues,
   OrderFieldDefinition,
@@ -19,6 +20,7 @@ export function DynamicOrderForm({
   errors,
   onChange,
 }: DynamicOrderFormProps) {
+  const { ui } = useI18nChrome();
   return (
     <form className="space-y-4" onSubmit={(e) => e.preventDefault()} noValidate>
       {fields.map((field) => (
@@ -28,6 +30,7 @@ export function DynamicOrderForm({
           value={values[field.name] ?? values[field.id]}
           error={errors[field.id] ?? errors[field.name]}
           onChange={onChange}
+          selectPlaceholder={ui.orderDialog.selectPlaceholder}
         />
       ))}
     </form>

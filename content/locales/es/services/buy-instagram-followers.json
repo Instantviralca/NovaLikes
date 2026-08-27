@@ -7,7 +7,7 @@
       "description": "Compara paquetes de seguidores de Instagram, precios, detalles de entrega y tamaños de plan disponibles. Elige una opción que encaje con tu cuenta y tus objetivos de crecimiento."
     },
     "hero": {
-      "eyebrow": "COMPRAR SEGUIDORES DE INSTAGRAM",
+      "eyebrow": "SERVICIOS DE INSTAGRAM",
       "title": "Comprar seguidores de Instagram",
       "description": "Compra seguidores de Instagram para tu perfil público eligiendo el tamaño de paquete que encaja con tu cuenta. NovaLikes ofrece paquetes de seguidores de Instagram para creadores, negocios, marcas y otras cuentas públicas. Compara las cantidades y los precios disponibles, introduce tu nombre de usuario público de Instagram y completa tu pedido online. No se requiere contraseña de Instagram.",
       "purpose": "Convert visitors comparing Instagram follower packages",
@@ -84,7 +84,7 @@
         {
           "id": "ig-f-community",
           "title": "Aumenta tu recuento visible de seguidores",
-          "description": "Los paquetes de seguidores aumentan el número de seguidores que se muestra en tu perfil, sin cambiar los likes, views o comentarios de publicaciones concretas."
+          "description": "Los paquetes de seguidores aumentan el número de seguidores que se muestra en tu perfil, sin cambiar el recuento de Me gusta, las visualizaciones o los comentarios de publicaciones concretas."
         },
         {
           "id": "ig-f-flexible",
@@ -281,7 +281,7 @@
         }
       ]
     },
-    "whyBuyNote": "El paquete adecuado depende de tu cuenta y de lo que quieras cambiar. Si tu objetivo son likes en publicaciones, views en Reels o comentarios en lugar del recuento de seguidores, elige el servicio de Instagram correspondiente.",
+    "whyBuyNote": "El paquete adecuado depende de tu cuenta y de lo que quieras cambiar. Si tu objetivo son Me gusta en publicaciones, visualizaciones en Reels o comentarios en lugar del recuento de seguidores, elige el servicio de Instagram correspondiente.",
     "orderNotice": "NovaLikes procesa los pedidos de seguidores usando solo tu nombre de usuario público de Instagram. Nunca se requiere tu contraseña de Instagram durante el pago.",
     "canYouBuy": {
       "id": "can-you-buy-instagram-followers",
@@ -291,7 +291,7 @@
         {
           "id": "ig-f-can-username",
           "title": "Qué cambia realmente comprar seguidores de Instagram",
-          "description": "Un pedido de seguidores de Instagram se centra en el recuento de seguidores que se muestra en el perfil seleccionado. No aumenta automáticamente los likes, comentarios o views de tus publicaciones, y no garantiza que Instagram muestre tu contenido a más personas.",
+          "description": "Un pedido de seguidores de Instagram se centra en el recuento de seguidores que se muestra en el perfil seleccionado. No aumenta automáticamente el recuento de Me gusta, los comentarios o las visualizaciones de tus publicaciones, y no garantiza que Instagram muestre tu contenido a más personas.",
           "icon": "users"
         },
         {
@@ -303,7 +303,7 @@
         {
           "id": "ig-f-can-packages",
           "title": "Los seguidores son distintos de otros servicios de Instagram",
-          "description": "Elige seguidores cuando el recuento de seguidores del perfil sea lo que quieres cambiar. Likes de Instagram son para publicaciones o Reels individuales, views de Instagram son para contenido de vídeo elegible y comentarios de Instagram son para comentarios en el contenido seleccionado.",
+          "description": "Elige seguidores cuando el recuento de seguidores del perfil sea lo que quieres cambiar. Me gusta de Instagram son para publicaciones o Reels individuales, visualizaciones de Instagram son para contenido de vídeo elegible y comentarios de Instagram son para comentarios en el contenido seleccionado.",
           "icon": "sparkles"
         }
       ],
@@ -362,8 +362,8 @@
     },
     "serviceCompare": {
       "id": "instagram-followers-vs-likes-vs-views",
-      "title": "Seguidores vs likes vs views de Instagram",
-      "description": "Seguidores, likes y views miden partes distintas de una cuenta de Instagram. El servicio adecuado depende de si quieres trabajar en tu perfil, en la interacción de una publicación o Reel concreto, o en el recuento de views del contenido de vídeo.",
+      "title": "Seguidores vs Me gusta vs visualizaciones de Instagram",
+      "description": "Seguidores, Me gusta y visualizaciones miden partes distintas de una cuenta de Instagram. El servicio adecuado depende de si quieres trabajar en tu perfil, en la interacción de una publicación o Reel concreto, o en el recuento de visualizaciones del contenido de vídeo.",
       "current": {
         "title": "Seguidores de Instagram",
         "description": "Los seguidores son una métrica a nivel de perfil. Elige seguidores de Instagram cuando quieras aumentar el recuento de seguidores que se muestra en tu cuenta.",
@@ -371,18 +371,18 @@
         "ctaLabel": "Seguidores de Instagram"
       },
       "likes": {
-        "title": "Likes de Instagram",
-        "description": "Los likes están vinculados a contenido individual. Elige likes de Instagram cuando quieras más likes visibles en una publicación o Reel público concreto.",
-        "bestFor": "Publicaciones, Reels y contenido en el que el recuento visible de likes es la métrica en la que quieres trabajar.",
+        "title": "Me gusta de Instagram",
+        "description": "Los Me gusta están vinculados a contenido individual. Elige Me gusta de Instagram cuando quieras más Me gusta visibles en una publicación o Reel público concreto.",
+        "bestFor": "Publicaciones, Reels y contenido en el que el recuento visible de Me gusta es la métrica en la que quieres trabajar.",
         "href": "/buy-instagram-likes",
-        "ctaLabel": "Ver likes de Instagram"
+        "ctaLabel": "Ver Me gusta de Instagram"
       },
       "views": {
-        "title": "Views de Instagram",
-        "description": "Las views se aplican a contenido de vídeo elegible. Elige views de Instagram cuando quieras aumentar el recuento de views que se muestra en un Reel o vídeo público.",
+        "title": "Visualizaciones de Instagram",
+        "description": "Las visualizaciones se aplican a contenido de vídeo elegible. Elige visualizaciones de Instagram cuando quieras aumentar el recuento de visualizaciones que se muestra en un Reel o vídeo público.",
         "bestFor": "Reels, vídeos y otro contenido de vídeo de Instagram elegible.",
         "href": "/buy-instagram-views",
-        "ctaLabel": "Ver views de Instagram"
+        "ctaLabel": "Ver visualizaciones de Instagram"
       },
       "combinedNote": "Si los comentarios son la interacción que necesitas, los comentarios de Instagram están disponibles por separado para publicaciones y Reels elegibles.",
       "commentsHref": "/buy-instagram-comments"
@@ -517,7 +517,7 @@
         {
           "id": "ig-f-bp-growth",
           "title": "Presta atención a Instagram Insights",
-          "description": "Si Insights está disponible en tu cuenta, revisa métricas como alcance, views, interacciones y actividad de seguidores para ver cómo rinde tu propio contenido.",
+          "description": "Si Insights está disponible en tu cuenta, revisa métricas como alcance, visualizaciones, interacciones y actividad de seguidores para ver cómo rinde tu propio contenido.",
           "icon": "sparkles"
         },
         {
@@ -549,7 +549,7 @@
         {
           "id": "ig-f-mistake-content",
           "title": "Elegir el servicio incorrecto",
-          "description": "Seguidores, likes, views y comentarios son servicios distintos. Elige seguidores solo cuando el recuento de seguidores de tu perfil sea lo que quieres cambiar.",
+          "description": "Seguidores, Me gusta, visualizaciones y comentarios son servicios distintos. Elige seguidores solo cuando el recuento de seguidores de tu perfil sea lo que quieres cambiar.",
           "icon": "clapperboard"
         },
         {
@@ -567,7 +567,7 @@
         {
           "id": "ig-f-mistake-engagement",
           "title": "Esperar interacción o alcance garantizados",
-          "description": "No asumas que cambiar tu recuento de seguidores producirá automáticamente más likes, comentarios, views, alcance, ventas o crecimiento orgánico.",
+          "description": "No asumas que cambiar tu recuento de seguidores producirá automáticamente más Me gusta, comentarios, visualizaciones, alcance, ventas o crecimiento orgánico.",
           "icon": "lock"
         },
         {
@@ -581,14 +581,14 @@
     "relatedPackages": {
       "copyBySlug": {
         "buy-instagram-likes": {
-          "title": "Likes de Instagram",
-          "description": "Elige likes de Instagram cuando quieras añadir likes a una publicación o Reel público concreto.",
-          "ctaLabel": "Ver likes de Instagram"
+          "title": "Me gusta de Instagram",
+          "description": "Elige Me gusta de Instagram cuando quieras añadir Me gusta a una publicación o Reel público concreto.",
+          "ctaLabel": "Ver Me gusta de Instagram"
         },
         "buy-instagram-views": {
-          "title": "Views de Instagram",
-          "description": "Elige views de Instagram cuando quieras aumentar el recuento de views en un Reel o vídeo público elegible.",
-          "ctaLabel": "Ver views de Instagram"
+          "title": "Visualizaciones de Instagram",
+          "description": "Elige visualizaciones de Instagram cuando quieras aumentar el recuento de visualizaciones en un Reel o vídeo público elegible.",
+          "ctaLabel": "Ver visualizaciones de Instagram"
         },
         "buy-instagram-comments": {
           "title": "Comentarios de Instagram",

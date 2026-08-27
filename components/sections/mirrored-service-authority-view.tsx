@@ -151,6 +151,7 @@ export function MirroredServiceAuthorityView({
         breadcrumbs={breadcrumbs}
         platform={service.platform}
         previewPackageId={previewPackageId}
+        locale={locale}
         {...heroVariants(service)}
       />
 
@@ -284,7 +285,10 @@ export function MirroredServiceAuthorityView({
 
       <InstagramFollowersWorldwide config={dummy.config} />
 
-      <InstagramFollowersPackageSizes config={dummy.config} />
+      <InstagramFollowersPackageSizes
+        config={dummy.config}
+        choosePackageLabel={ui?.commerce.choosePackage ?? 'Choose Package'}
+      />
 
       <InstagramFollowersBestPractices
         config={dummy.config}

@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import { Lock, RefreshCw, ShieldCheck } from 'lucide-react';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { routes } from '@/config/routes';
 import { cn } from '@/lib/utils';
 
@@ -18,36 +21,38 @@ export function PaymentConfidence({
   className,
   showRefundLink = true,
 }: PaymentConfidenceProps) {
+  const { ui } = useI18nChrome();
+
   return (
     <ul
       className={cn(
         'flex flex-col gap-2 text-xs font-medium text-[var(--text-secondary)]',
         className,
       )}
-      aria-label="Payment reassurance"
+      aria-label={ui.orderDialog.paymentReassuranceAria}
     >
       <li className="inline-flex items-center gap-2">
         <ShieldCheck className="size-3.5 shrink-0 text-[var(--brand-primary)]" aria-hidden />
-        <span>Secure checkout · Encrypted payment</span>
+        <span>{ui.orderDialog.secureCheckoutEncrypted}</span>
       </li>
       <li className="inline-flex items-center gap-2">
         <Lock className="size-3.5 shrink-0 text-[var(--brand-primary)]" aria-hidden />
-        <span>No password required</span>
+        <span>{ui.orderDialog.noPasswordRequired}</span>
       </li>
       <li className="inline-flex items-center gap-2">
         <RefreshCw className="size-3.5 shrink-0 text-[var(--brand-primary)]" aria-hidden />
         {showRefundLink ? (
           <span>
-            30-Day Money-Back Guarantee ·{' '}
+            {ui.orderDialog.moneyBackGuarantee} ·{' '}
             <Link
               href={routes.refundPolicy}
               className="underline underline-offset-2 hover:text-[var(--text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              Refund Policy
+              {ui.footer.refundPolicy}
             </Link>
           </span>
         ) : (
-          <span>30-Day Money-Back Guarantee</span>
+          <span>{ui.orderDialog.moneyBackGuarantee}</span>
         )}
       </li>
     </ul>

@@ -21,7 +21,7 @@ export function TagPageView({ tag, articles, breadcrumbs }: TagPageViewProps) {
   return (
     <div className="overflow-x-hidden">
       <LearnHero
-        eyebrow="Learn tag"
+        eyebrow="NOVALIKES LEARN"
         title={tag.name}
         description={tag.description}
         breadcrumbs={breadcrumbs}

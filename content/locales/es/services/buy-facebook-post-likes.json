@@ -7,9 +7,9 @@
       "description": "Compra Me gusta de publicaciones de Facebook con paquetes transparentes para negocios, creadores y marcas. Solo URL pública de la publicación de Facebook, pago seguro y seguimiento del pedido. Sin contraseña necesaria."
     },
     "hero": {
-      "eyebrow": "COMPRAR ME GUSTA DE PUBLICACIONES DE FACEBOOK",
+      "eyebrow": "SERVICIOS DE FACEBOOK",
       "title": "Comprar Me gusta de publicaciones de Facebook",
-      "description": "Compra Me gusta de publicaciones de Facebook eligiendo el paquete y la cantidad que quieres para una publicación pública de Facebook elegible concreta. Compara los paquetes y precios de Me gusta de publicaciones disponibles, selecciona el número de likes que quieres, facilita la URL pública correcta de la publicación de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+      "description": "Compra Me gusta de publicaciones de Facebook eligiendo el paquete y la cantidad que quieres para una publicación pública de Facebook elegible concreta. Compara los paquetes y precios de Me gusta de publicaciones disponibles, selecciona el número de Me gusta que quieres, facilita la URL pública correcta de la publicación de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
       "purpose": "Convert for Facebook post likes packages worldwide",
       "primaryKeyword": "buy Facebook Post Likes",
       "supportingKeywords": [
@@ -48,7 +48,7 @@
       ],
       "visual": {
         "src": "/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp",
-        "alt": "Vista previa de una publicación de Facebook con likes e ilustración de analíticas de interacción",
+        "alt": "Vista previa de una publicación de Facebook con Me gusta e ilustración de analíticas de interacción",
         "width": 1200,
         "height": 900
       }
@@ -67,7 +67,7 @@
     "benefits": {
       "id": "why-buy-facebook-post-likes",
       "title": "¿Por qué la gente compra Me gusta de publicaciones de Facebook?",
-      "description": "La gente compra Me gusta de publicaciones de Facebook para reforzar la prueba social en publicaciones individuales y crear una primera impresión más sólida para nuevos espectadores. Un recuento mayor de likes puede hacer que las publicaciones se vean más activas y animar a más interacciones, pero no garantiza mayor alcance, ventas ni rendimiento orgánico.",
+      "description": "La gente compra Me gusta de publicaciones de Facebook para reforzar la prueba social en publicaciones individuales y crear una primera impresión más sólida para nuevos espectadores. Un recuento mayor de Me gusta puede hacer que las publicaciones se vean más activas y animar a más interacciones, pero no garantiza mayor alcance, ventas ni rendimiento orgánico.",
       "purpose": "Explain motivations for buying Facebook post likes",
       "primaryKeyword": "Increase Facebook Post Likes",
       "supportingKeywords": [
@@ -136,7 +136,7 @@
         {
           "id": "fb-post-step-2",
           "title": "Pega la URL pública de tu publicación de Facebook",
-          "description": "Copia la URL pública de la publicación de Facebook que debe recibir el paquete de likes seleccionado. Asegúrate de que la publicación permanezca accesible públicamente durante el procesamiento."
+          "description": "Copia la URL pública de la publicación de Facebook que debe recibir el paquete de Me gusta seleccionado. Asegúrate de que la publicación permanezca accesible públicamente durante el procesamiento."
         },
         {
           "id": "fb-post-step-3",
@@ -170,7 +170,7 @@
         {
           "id": "fb-post-req-url",
           "title": "URL pública de publicación de Facebook",
-          "description": "Facilita la URL pública de la publicación de Facebook que recibirá el paquete de likes seleccionado."
+          "description": "Facilita la URL pública de la publicación de Facebook que recibirá el paquete de Me gusta seleccionado."
         },
         {
           "id": "fb-post-req-package",
@@ -248,13 +248,13 @@
           {
             "id": "buy-facebook-post-likes-0",
             "title": "Varias cantidades de Me gusta de publicaciones",
-            "description": "Compara las cantidades de Me gusta de publicaciones de Facebook disponibles y elige el paquete que coincida con el número de likes que quieres pedir para la publicación seleccionada.",
+            "description": "Compara las cantidades de Me gusta de publicaciones de Facebook disponibles y elige el paquete que coincida con el número de Me gusta que quieres pedir para la publicación seleccionada.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-1",
             "title": "Solo URL pública de publicación de Facebook",
-            "description": "Facilita la URL pública correcta de la publicación de Facebook donde quieres que se añadan los likes. No se requiere tu contraseña de Facebook.",
+            "description": "Facilita la URL pública correcta de la publicación de Facebook donde quieres que se añadan los Me gusta. No se requiere tu contraseña de Facebook.",
             "icon": "heart"
           },
           {
@@ -281,7 +281,7 @@
           {
             "id": "buy-facebook-post-likes-4",
             "title": "Qué cambia un pedido de Me gusta de publicaciones de Facebook",
-            "description": "Un pedido de Me gusta de publicaciones de Facebook se aplica al recuento de likes de la publicación pública de Facebook enviada con el pedido. No añade automáticamente seguidores, Me gusta de Página, comentarios, compartidos ni views.",
+            "description": "Un pedido de Me gusta de publicaciones de Facebook se aplica al recuento de Me gusta de la publicación pública de Facebook enviada con el pedido. No añade automáticamente seguidores, Me gusta de Página, comentarios, compartidos ni visualizaciones.",
             "icon": "clapperboard"
           },
           {
@@ -293,11 +293,11 @@
           {
             "id": "buy-facebook-post-likes-6",
             "title": "Qué no incluyen los Me gusta de publicaciones de Facebook",
-            "description": "Los Me gusta de publicaciones son independientes de seguidores de Facebook, Me gusta de Página, comentarios, compartidos y views. Pedir Me gusta de publicaciones no añade automáticamente esas otras métricas ni garantiza más alcance, ventas o crecimiento orgánico.",
+            "description": "Los Me gusta de publicaciones son independientes de seguidores de Facebook, Me gusta de Página, comentarios, compartidos y visualizaciones. Pedir Me gusta de publicaciones no añade automáticamente esas otras métricas ni garantiza más alcance, ventas o crecimiento orgánico.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de publicaciones de Facebook, elegido la cantidad correcta de Me gusta de publicaciones y facilitado la URL de la publicación pública exacta de Facebook donde quieres que se añadan los likes."
+        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de publicaciones de Facebook, elegido la cantidad correcta de Me gusta de publicaciones y facilitado la URL de la publicación pública exacta de Facebook donde quieres que se añadan los Me gusta."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-post-likes-does-buying-help",
@@ -340,11 +340,11 @@
       "serviceCompare": {
         "id": "buy-facebook-post-likes-service-compare",
         "title": "Me gusta de publicaciones de Facebook vs otros servicios de Facebook",
-        "description": "Me gusta de publicaciones de Facebook, Me gusta de Página de Facebook y seguidores de Facebook representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de likes de una publicación concreta, el recuento de Me gusta de Página o el recuento de seguidores de una Página de Facebook.",
+        "description": "Me gusta de publicaciones de Facebook, Me gusta de Página de Facebook y seguidores de Facebook representan métricas distintas. Elige el servicio según si quieres cambiar el recuento de Me gusta de una publicación concreta, el recuento de Me gusta de Página o el recuento de seguidores de una Página de Facebook.",
         "current": {
           "title": "Me gusta de publicaciones de Facebook",
-          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando el recuento de likes de una publicación pública de Facebook elegible concreta sea la métrica que quieres cambiar.",
-          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de likes es la métrica que quieres cambiar.",
+          "description": "Los Me gusta de publicaciones son una métrica a nivel de publicación. Elige Me gusta de publicaciones de Facebook cuando el recuento de Me gusta de una publicación pública de Facebook elegible concreta sea la métrica que quieres cambiar.",
+          "bestFor": "Publicaciones individuales de Facebook en las que el recuento visible de Me gusta es la métrica que quieres cambiar.",
           "ctaLabel": "Me gusta de publicaciones de Facebook"
         },
         "likes": {
@@ -385,7 +385,7 @@
           {
             "id": "buy-facebook-post-likes-9",
             "title": "Usa la URL correcta de la publicación de Facebook",
-            "description": "Revisa la URL pública de la publicación de Facebook con cuidado para que el pedido se asocie exactamente a la publicación donde quieres que se añadan los likes.",
+            "description": "Revisa la URL pública de la publicación de Facebook con cuidado para que el pedido se asocie exactamente a la publicación donde quieres que se añadan los Me gusta.",
             "icon": "credit-card"
           },
           {
@@ -404,7 +404,7 @@
       },
       "worldwide": {
         "id": "buy-facebook-post-likes-worldwide",
-        "title": "Elegir la publicación de Facebook correcta para likes",
+        "title": "Elegir la publicación de Facebook correcta para Me gusta",
         "description": "Me gusta de publicaciones de Facebook se aplica a una publicación pública de Facebook elegible concreta. La Página en sí y la publicación individual son destinos distintos, así que revisa la URL enviada con cuidado.",
         "eyebrow": "Listo para Me gusta de publicaciones de Facebook",
         "closingNote": "Me gusta de publicaciones de Facebook se aplica a una publicación pública concreta de Facebook. Envía la URL de la publicación, no solo la URL de la Página, mantén la publicación disponible y revisa el paquete antes del pago.",
@@ -443,34 +443,34 @@
           {
             "id": "fb-post-100",
             "quantity": "100 Me gusta de publicaciones",
-            "recommendedFor": "Un paquete más pequeño para una publicación pública concreta de Facebook en la que quieres añadir cien likes."
+            "recommendedFor": "Un paquete más pequeño para una publicación pública concreta de Facebook en la que quieres añadir cien Me gusta."
           },
           {
             "id": "fb-post-500",
             "quantity": "500 Me gusta de publicaciones",
-            "recommendedFor": "Una opción pequeña-intermedia para una publicación pública de Facebook en la que quieres añadir quinientos likes."
+            "recommendedFor": "Una opción pequeña-intermedia para una publicación pública de Facebook en la que quieres añadir quinientos Me gusta."
           },
           {
             "id": "fb-post-1000",
             "quantity": "1,000 Me gusta de publicaciones",
-            "recommendedFor": "Un paquete intermedio para una publicación pública de Facebook en la que quieres añadir mil likes."
+            "recommendedFor": "Un paquete intermedio para una publicación pública de Facebook en la que quieres añadir mil Me gusta."
           },
           {
             "id": "fb-post-5000",
             "quantity": "5,000 Me gusta de publicaciones",
-            "recommendedFor": "Una opción más grande para una publicación pública de Facebook en la que quieres añadir cinco mil likes."
+            "recommendedFor": "Una opción más grande para una publicación pública de Facebook en la que quieres añadir cinco mil Me gusta."
           },
           {
             "id": "fb-post-10000",
             "quantity": "10,000 Me gusta de publicaciones",
-            "recommendedFor": "Un paquete de mayor volumen para una publicación pública de Facebook en la que quieres añadir diez mil likes."
+            "recommendedFor": "Un paquete de mayor volumen para una publicación pública de Facebook en la que quieres añadir diez mil Me gusta."
           }
         ]
       },
       "bestPractices": {
         "id": "buy-facebook-post-likes-best-practices",
         "title": "Buenas prácticas después de comprar Me gusta de publicaciones de Facebook",
-        "description": "Comprar Me gusta de publicaciones cambia el recuento de likes de la publicación de Facebook seleccionada, pero el resto de tu actividad en Facebook sigue dependiendo del contenido que publicas y de cómo gestiones tu Página. Sigue gestionando tu contenido y revisa cómo rinden tus propias publicaciones junto al servicio.",
+        "description": "Comprar Me gusta de publicaciones cambia el recuento de Me gusta de la publicación de Facebook seleccionada, pero el resto de tu actividad en Facebook sigue dependiendo del contenido que publicas y de cómo gestiones tu Página. Sigue gestionando tu contenido y revisa cómo rinden tus propias publicaciones junto al servicio.",
         "closingNote": "El recuento de Me gusta de publicaciones es solo una métrica de una publicación concreta de Facebook. Comentarios, compartidos, seguidores, Me gusta de Página, respuestas de la audiencia y el resto de la actividad siguen siendo independientes de un pedido de Me gusta de publicaciones de Facebook.",
         "items": [
           {
@@ -506,7 +506,7 @@
           {
             "id": "buy-facebook-post-likes-21",
             "title": "Responde a la interacción genuina",
-            "description": "Responde a comentarios y mensajes genuinos cuando corresponda. Un recuento mayor de likes en una publicación no sustituye las interacciones que construyes con tu propia actividad en Facebook.",
+            "description": "Responde a comentarios y mensajes genuinos cuando corresponda. Un recuento mayor de Me gusta en una publicación no sustituye las interacciones que construyes con tu propia actividad en Facebook.",
             "icon": "truck"
           }
         ]
@@ -520,13 +520,13 @@
           {
             "id": "buy-facebook-post-likes-22",
             "title": "Enviar la URL incorrecta de la publicación de Facebook",
-            "description": "Revisa la URL pública de la publicación de Facebook con cuidado antes de pedir. La URL debe apuntar exactamente a la publicación donde quieres que se añadan los likes.",
+            "description": "Revisa la URL pública de la publicación de Facebook con cuidado antes de pedir. La URL debe apuntar exactamente a la publicación donde quieres que se añadan los Me gusta.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-23",
             "title": "Elegir el servicio de Facebook incorrecto",
-            "description": "Me gusta de publicaciones, Me gusta de Página y seguidores son servicios separados. Elige Me gusta de publicaciones de Facebook solo cuando el recuento de likes de una publicación concreta sea la métrica que quieres cambiar.",
+            "description": "Me gusta de publicaciones, Me gusta de Página y seguidores son servicios separados. Elige Me gusta de publicaciones de Facebook solo cuando el recuento de Me gusta de una publicación concreta sea la métrica que quieres cambiar.",
             "icon": "heart"
           },
           {
@@ -544,7 +544,7 @@
           {
             "id": "buy-facebook-post-likes-26",
             "title": "Esperar que los Me gusta de publicaciones garanticen otros resultados",
-            "description": "Un recuento mayor de likes en una publicación no significa automáticamente más comentarios, compartidos, seguidores, Me gusta de Página, alcance, ventas o crecimiento orgánico.",
+            "description": "Un recuento mayor de Me gusta en una publicación no significa automáticamente más comentarios, compartidos, seguidores, Me gusta de Página, alcance, ventas o crecimiento orgánico.",
             "icon": "clapperboard"
           },
           {
@@ -573,12 +573,12 @@
     "whyBuy": {
       "id": "buy-facebook-post-likes-why-buy",
       "title": "¿Por qué la gente compra Me gusta de publicaciones de Facebook?",
-      "description": "La gente compra Me gusta de publicaciones de Facebook por distintos motivos. Algunos quieren aumentar el recuento visible de likes de una publicación concreta de Facebook, mientras que otros eligen un paquete de Me gusta de publicaciones para contenido vinculado a un lanzamiento, anuncio, campaña o actividad continua de la Página. El servicio cambia el recuento de likes de la publicación enviada, pero no garantiza comentarios, compartidos, seguidores, Me gusta de Página, alcance, ventas ni crecimiento orgánico.",
+      "description": "La gente compra Me gusta de publicaciones de Facebook por distintos motivos. Algunos quieren aumentar el recuento visible de Me gusta de una publicación concreta de Facebook, mientras que otros eligen un paquete de Me gusta de publicaciones para contenido vinculado a un lanzamiento, anuncio, campaña o actividad continua de la Página. El servicio cambia el recuento de Me gusta de la publicación enviada, pero no garantiza comentarios, compartidos, seguidores, Me gusta de Página, alcance, ventas ni crecimiento orgánico.",
       "items": [
         {
           "id": "buy-facebook-post-likes-wb-1",
-          "title": "Aumenta el recuento visible de likes",
-          "description": "Un paquete de Me gusta de publicaciones de Facebook se puede usar cuando quieres aumentar el recuento de likes que se muestra en una publicación pública de Facebook elegible concreta."
+          "title": "Aumenta el recuento visible de Me gusta",
+          "description": "Un paquete de Me gusta de publicaciones de Facebook se puede usar cuando quieres aumentar el recuento de Me gusta que se muestra en una publicación pública de Facebook elegible concreta."
         },
         {
           "id": "buy-facebook-post-likes-wb-2",
@@ -588,7 +588,7 @@
         {
           "id": "buy-facebook-post-likes-wb-3",
           "title": "Céntrate en la métrica de Me gusta de publicaciones",
-          "description": "Me gusta de publicaciones de Facebook se aplica al recuento de likes de la publicación enviada. No añade automáticamente seguidores de Facebook, Me gusta de Página, comentarios, compartidos ni views."
+          "description": "Me gusta de publicaciones de Facebook se aplica al recuento de Me gusta de la publicación enviada. No añade automáticamente seguidores de Facebook, Me gusta de Página, comentarios, compartidos ni visualizaciones."
         },
         {
           "id": "buy-facebook-post-likes-wb-4",
@@ -616,7 +616,7 @@
         {
           "id": "buy-facebook-post-likes-step-2",
           "title": "Introduce la URL de la publicación de Facebook",
-          "description": "Facilita la URL pública correcta de la publicación de Facebook donde quieres que se añadan los likes. No se requiere tu contraseña de Facebook."
+          "description": "Facilita la URL pública correcta de la publicación de Facebook donde quieres que se añadan los Me gusta. No se requiere tu contraseña de Facebook."
         },
         {
           "id": "buy-facebook-post-likes-step-3",

@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 
 const FLOW: ReadonlyArray<{ label: string; icon: LucideIcon }> = [
   { label: 'Post Selected', icon: FileImage },
@@ -24,6 +25,7 @@ const FLOW: ReadonlyArray<{ label: string; icon: LucideIcon }> = [
  * Horizontal How-To-Buy timeline for Facebook Post Likes.
  */
 export function FacebookPostLikesProcessTimeline({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const [active, setActive] = useState(0);
 
@@ -86,7 +88,7 @@ export function FacebookPostLikesProcessTimeline({ className }: { className?: st
                     isActive || isDone ? 'text-stone-800' : 'text-stone-400',
                   )}
                 >
-                  {step.label}
+                  {d(step.label)}
                 </p>
                 {index < FLOW.length - 1 ? (
                   <span className="mt-1 text-[10px] text-[var(--brand-primary)] sm:hidden" aria-hidden>

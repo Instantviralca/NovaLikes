@@ -1,9 +1,10 @@
 {
   "hero": {
-    "title": "Perguntas frequentes sobre a NovaLikes",
+    "title": "Perguntas frequentes",
     "description": "Encontre respostas claras sobre a NovaLikes, os serviços de Instagram, TikTok e Facebook, como fazer um pedido, requisitos da conta, entrega, pagamentos e suporte. Navegue por categoria ou busque uma pergunta específica abaixo.",
     "purpose": "Help customers find answers before contacting support",
-    "primaryKeyword": "NovaLikes FAQ"
+    "primaryKeyword": "NovaLikes FAQ",
+    "eyebrow": "CENTRAL DE AJUDA"
   },
   "search": {
     "label": "Buscar perguntas",
@@ -31,12 +32,40 @@
     }
   },
   "categories": [
-    { "id": "getting_started", "label": "Primeiros passos", "anchor": "getting-started" },
-    { "id": "account_security", "label": "Conta e segurança", "anchor": "account-safety" },
-    { "id": "orders_delivery", "label": "Pedidos e entrega", "anchor": "orders-delivery" },
-    { "id": "instagram", "label": "Instagram", "anchor": "instagram" },
-    { "id": "tiktok", "label": "TikTok", "anchor": "tiktok" },
-    { "id": "facebook", "label": "Facebook", "anchor": "facebook" },
-    { "id": "payments_refunds", "label": "Pagamentos e reembolsos", "anchor": "payments-refunds" }
+    {
+      "id": "getting_started",
+      "label": "Primeiros passos",
+      "anchor": "getting-started"
+    },
+    {
+      "id": "account_security",
+      "label": "Conta e segurança",
+      "anchor": "account-safety"
+    },
+    {
+      "id": "orders_delivery",
+      "label": "Pedidos e entrega",
+      "anchor": "orders-delivery"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "anchor": "instagram"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "anchor": "tiktok"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "anchor": "facebook"
+    },
+    {
+      "id": "payments_refunds",
+      "label": "Pagamentos e reembolsos",
+      "anchor": "payments-refunds"
+    }
   ]
 }

@@ -2,12 +2,14 @@
 
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
  * Facebook Post Likes requirement visual — post order checklist dashboard.
  */
 export function FacebookPostLikesRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -38,7 +40,7 @@ export function FacebookPostLikesRequirementVisual({ className }: { className?: 
               <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
                 Post order
               </p>
-              <p className="text-[11px] font-bold text-stone-800">Post likes package</p>
+              <p className="text-[11px] font-bold text-stone-800">{d('Post likes package')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
@@ -82,7 +84,7 @@ export function FacebookPostLikesRequirementVisual({ className }: { className?: 
               >
                 ✓
               </span>
-              <p className="text-[10px] font-semibold text-stone-800">{label}</p>
+              <p className="text-[10px] font-semibold text-stone-800">{d(label)}</p>
             </div>
           ))}
         </div>

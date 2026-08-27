@@ -1,5 +1,5 @@
 {
-  "h1": "Customer Reviews",
+  "h1": "NovaLikes Reviews",
   "intro": "Customer reviews from NovaLikes' published review catalogue. Ratings below reflect that catalogue and may include both 4-star and 5-star feedback.",
   "catalogueHeading": "Customer review catalogue",
   "emptyFilter": "No reviews match this platform filter.",
@@ -20,5 +20,6 @@
   "showLess": "Show less",
   "chrome": {
     "breadcrumb": "Reviews"
-  }
+  },
+  "eyebrow": "CUSTOMER FEEDBACK"
 }

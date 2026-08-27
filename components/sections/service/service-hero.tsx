@@ -1,6 +1,8 @@
 import { BrandedHero } from '@/components/design-system/branded-hero';
 import { formatMoney } from '@/lib/pricing/format';
 import { findPackage } from '@/lib/pricing';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import type { CtaProps } from '@/types/components';
 import type { HeroTrustLabel, HeroVisualContent } from '@/types/content';
 import type { BreadcrumbItem } from '@/types/shared';
@@ -23,6 +25,7 @@ export type ServiceHeroProps = {
   platform?: PlatformId;
   /** Optional real package id for hero preview card. */
   previewPackageId?: string;
+  locale?: Locale;
   instagramVariant?: InstagramDashboardVariant;
   tiktokVariant?: TikTokDashboardVariant;
   facebookVariant?: FacebookDashboardVariant;
@@ -40,6 +43,7 @@ export function ServiceHero({
   visual,
   platform,
   previewPackageId,
+  locale = DEFAULT_LOCALE,
   instagramVariant,
   tiktokVariant,
   facebookVariant,
@@ -49,7 +53,7 @@ export function ServiceHero({
   const packagePreview =
     previewPkg && previewPkg.active
       ? {
-          title: previewPkg.quantityLabel,
+          title: localizePackageDisplayName(previewPkg.quantityLabel, locale),
           priceLabel: formatMoney(previewPkg.price, previewPkg.currency),
         }
       : null;

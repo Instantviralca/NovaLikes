@@ -2,6 +2,7 @@
 
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
@@ -9,6 +10,7 @@ import { cn } from '@/lib/utils';
  * Distinct from Followers requirement artwork (likes metrics + thumbs-up package).
  */
 export function FacebookPageLikesRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
 
@@ -39,11 +41,11 @@ export function FacebookPageLikesRequirementVisual({ className }: { className?: 
               <p className="text-[9px] font-semibold tracking-wide text-stone-400 uppercase">
                 Page order
               </p>
-              <p className="text-[11px] font-bold text-stone-800">Page likes package</p>
+              <p className="text-[11px] font-bold text-stone-800">{d('Page likes package')}</p>
             </div>
           </div>
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
-            Confirmed
+            {d('Confirmed')}
           </span>
         </div>
 
@@ -76,15 +78,15 @@ export function FacebookPageLikesRequirementVisual({ className }: { className?: 
         <div className="grid grid-cols-2 gap-2">
           <div className="rounded-xl border border-stone-100 bg-[var(--surface-muted)]/80 px-2.5 py-2">
             <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-              Page likes
+              {d('Page likes')}
             </p>
             <p className="mt-0.5 text-sm font-black tabular-nums text-stone-900">4.6K</p>
           </div>
           <div className="rounded-xl border border-stone-100 bg-white px-2.5 py-2">
             <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-              Selected package
+              {d('Selected package')}
             </p>
-            <p className="mt-0.5 text-sm font-bold text-stone-900">500 Likes</p>
+            <p className="mt-0.5 text-sm font-bold text-stone-900">{d('500 Likes')}</p>
           </div>
         </div>
 

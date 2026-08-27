@@ -57,7 +57,7 @@ export const TOOLS: readonly ToolDefinition[] = [
   },
   {
     slug: 'instagram-video-downloader',
-    name: 'Instagram Video / Reels Downloader',
+    name: 'Instagram Video & Reels Downloader',
     platform: 'instagram',
     kind: 'video',
     status: 'limited',

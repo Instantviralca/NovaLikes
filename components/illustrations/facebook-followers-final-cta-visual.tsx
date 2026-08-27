@@ -1,11 +1,13 @@
 'use client';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 /**
  * Final CTA — Facebook Followers Page/order phone + status cards. No fake performance stats.
  */
 export function FacebookFollowersFinalCtaVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const fbBlue = '#1877F2';
 
@@ -22,23 +24,23 @@ export function FacebookFollowersFinalCtaVisual({ className }: { className?: str
 
       <div className="pointer-events-none absolute -top-1 -left-3 z-20 rounded-2xl border border-white/90 bg-white px-3 py-2 shadow-[0_16px_32px_-14px_rgba(0,0,0,0.55)] sm:-left-6 sm:px-3.5 sm:py-2.5 motion-safe:animate-[iv-float-card_5.6s_ease-in-out_infinite]">
         <p className="text-[8px] font-semibold tracking-wide text-[var(--brand-primary)] uppercase sm:text-[9px]">
-          Package
+          {d('Package')}
         </p>
         <p className="text-xs font-bold text-stone-800 sm:text-sm">Followers Package</p>
       </div>
 
       <div className="pointer-events-none absolute top-[38%] -right-2 z-20 hidden rounded-2xl border border-white/90 bg-white px-3.5 py-2.5 shadow-[0_16px_32px_-14px_rgba(0,0,0,0.55)] sm:block sm:-right-5 motion-safe:animate-[iv-float-card_6.4s_ease-in-out_infinite]">
         <p className="text-[9px] font-semibold tracking-wide text-emerald-600 uppercase">
-          Checkout
+          {d('Checkout')}
         </p>
-        <p className="text-sm font-bold text-stone-800">Secure Checkout</p>
+        <p className="text-sm font-bold text-stone-800">{d('Secure Checkout')}</p>
       </div>
 
       <div className="pointer-events-none absolute -bottom-1 -left-2 z-20 rounded-2xl border border-white/90 bg-white px-3 py-2 shadow-[0_16px_32px_-14px_rgba(0,0,0,0.55)] sm:-left-5 sm:px-3.5 sm:py-2.5 motion-safe:animate-[iv-float-card_7s_ease-in-out_infinite]">
         <p className="text-[8px] font-semibold tracking-wide text-sky-600 uppercase sm:text-[9px]">
-          Tracking
+          {d('Tracking')}
         </p>
-        <p className="text-xs font-bold text-stone-800 sm:text-sm">Order Tracking</p>
+        <p className="text-xs font-bold text-stone-800 sm:text-sm">{d('Order Tracking')}</p>
       </div>
 
       <div className="relative z-10 w-full rotate-[4deg] motion-safe:animate-iv-float-card motion-reduce:rotate-0">
@@ -59,7 +61,7 @@ export function FacebookFollowersFinalCtaVisual({ className }: { className?: str
                   f
                 </span>
                 <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold text-emerald-700 ring-1 ring-emerald-100">
-                  Order Confirmed
+                  {d('Order Confirmed')}
                 </span>
               </div>
 
@@ -68,7 +70,7 @@ export function FacebookFollowersFinalCtaVisual({ className }: { className?: str
                   Facebook Followers
                 </p>
                 <p className="mt-1 text-lg font-bold tracking-tight text-stone-900">
-                  Package Selected
+                  {d('Package Selected')}
                 </p>
                 <p className="mt-1 text-xs font-medium text-stone-500">Public Facebook Page URL</p>
               </div>
@@ -83,7 +85,7 @@ export function FacebookFollowersFinalCtaVisual({ className }: { className?: str
                     key={step.label}
                     className="flex items-center justify-between rounded-xl border border-stone-100 bg-white px-3 py-2 shadow-[0_4px_10px_-8px_rgba(28,25,23,0.35)]"
                   >
-                    <span className="text-[11px] font-semibold text-stone-700">{step.label}</span>
+                    <span className="text-[11px] font-semibold text-stone-700">{d(step.label)}</span>
                     <span className="text-[11px] font-bold text-emerald-600">✓</span>
                   </div>
                 ))}

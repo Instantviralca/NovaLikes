@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const LIKE_KEYS = [2180, 2260, 2380, 2510, 2640] as const;
@@ -44,6 +45,7 @@ export function TikTokLikesHeroDashboard({
   className,
   packagePreview,
 }: TikTokLikesHeroDashboardProps) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const tiktokCyan = '#25F4EE';
   const tiktokRed = '#FE2C55';
@@ -126,7 +128,7 @@ export function TikTokLikesHeroDashboard({
           <span className="text-sm leading-none" aria-hidden>
             {badge.emoji}
           </span>
-          <span className="truncate text-[11px] font-bold text-stone-800">{badge.label}</span>
+          <span className="truncate text-[11px] font-bold text-stone-800">{d(badge.label)}</span>
         </div>
       ))}
 
@@ -228,7 +230,7 @@ export function TikTokLikesHeroDashboard({
               {packagePreview ? (
                 <div className="mt-2 rounded-lg border border-white/20 bg-white/10 px-2 py-1.5 backdrop-blur-sm">
                   <p className="text-[8px] font-semibold tracking-wide text-white/70 uppercase">
-                    Package
+                    {d('Package')}
                   </p>
                   <p className="truncate text-[10px] font-bold text-white">
                     {packagePreview.title} · {packagePreview.priceLabel}

@@ -1,6 +1,6 @@
 {
   "hub": {
-    "eyebrow": "Ferramentas grátis",
+    "eyebrow": "FERRAMENTAS GRÁTIS DE REDES SOCIAIS",
     "h1": "Ferramentas grátis de Instagram, TikTok e Facebook",
     "lead": "Consulte um perfil público, confira uma contagem de seguidores publicada ou recupere um arquivo de vídeo que a plataforma já expõe. Cada assistente roda nos servidores da NovaLikes e devolve só informação pública — nunca um conteúdo privado, uma sessão de login nem um download inventado.",
     "howHeading": "Como essas ferramentas funcionam",
@@ -201,7 +201,7 @@
     },
     "instagram-video-downloader": {
       "eyebrow": "Ferramenta de Instagram",
-      "h1": "Downloader de vídeos / Reels do Instagram",
+      "h1": "Downloader de vídeos e Reels do Instagram",
       "lead": "Cole a URL de um Reel ou post de vídeo público do Instagram. A NovaLikes verifica a página pública e oferece um arquivo só quando o Instagram inclui um. Muitos posts públicos atualmente não incluem. Isso é Disponibilidade limitada — não uma ferramenta quebrada nem um download falso.",
       "inputLabel": "URL pública de Reel ou vídeo do Instagram",
       "helperText": "Um arquivo é oferecido só se o Instagram o inclui na página pública.",
@@ -529,7 +529,7 @@
       "availabilityLabel": "Disponível"
     },
     "instagram-video-downloader": {
-      "name": "Downloader de vídeos / Reels do Instagram",
+      "name": "Downloader de vídeos e Reels do Instagram",
       "shortDescription": "Confere um Reel ou post de vídeo público do Instagram. Um arquivo é devolvido só se o Instagram expõe um.",
       "placeholder": "https://www.instagram.com/reel/...",
       "actionLabel": "Conferir vídeo",

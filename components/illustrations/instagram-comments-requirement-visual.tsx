@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -9,6 +11,7 @@ import { cn } from '@/lib/utils';
  * Lazy-safe client illustration for ImageTextSplit.
  */
 export function InstagramCommentsRequirementVisual({ className }: { className?: string }) {
+  const d = useDecorativeLocalizer();
   const brand = '#F97316';
   const accent = '#E1306C';
   const [comments, setComments] = useState(12);
@@ -55,7 +58,7 @@ export function InstagramCommentsRequirementVisual({ className }: { className?: 
             <p className="text-sm font-bold text-stone-900">Public comments ready</p>
           </div>
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
-            Live
+            {d('Live')}
           </span>
         </div>
 

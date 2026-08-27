@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ThumbsUp } from 'lucide-react';
 
+import { useDecorativeLocalizer } from '@/components/i18n/use-decorative-localizer';
 import { cn } from '@/lib/utils';
 
 const LIKE_KEYS = [1240, 1680, 2140, 2680, 3120] as const;
@@ -29,6 +30,7 @@ export function FacebookPostLikesOrderStatusDashboard({
 }: {
   className?: string;
 }) {
+  const d = useDecorativeLocalizer();
   const fbBlue = '#1877F2';
   const brand = '#F97316';
   const [likes, setLikes] = useState<number>(LIKE_KEYS[0]);
@@ -82,7 +84,7 @@ export function FacebookPostLikesOrderStatusDashboard({
             </span>
             <div>
               <p className="text-sm font-bold text-stone-900">Business Suite</p>
-              <p className="text-xs text-stone-500">Post order · Live status</p>
+              <p className="text-xs text-stone-500">Post order · {d('Live')} status</p>
             </div>
           </div>
           <span
@@ -90,7 +92,7 @@ export function FacebookPostLikesOrderStatusDashboard({
             style={{ background: brand }}
           >
             <ThumbsUp className="size-2.5" />
-            Delivering
+            {d('Delivering')}
           </span>
         </div>
 
@@ -114,7 +116,7 @@ export function FacebookPostLikesOrderStatusDashboard({
             }}
           >
             <span className="rounded-full bg-white/95 px-2 py-0.5 text-[8px] font-bold text-stone-800">
-              👍 {(likes / 1000).toFixed(1)}K likes
+              👍 {d(`${(likes / 1000).toFixed(1)}K Likes`)}
             </span>
             <span className="rounded-full bg-black/25 px-2 py-0.5 text-[8px] font-bold text-white backdrop-blur">
               Engagement ↑
@@ -140,7 +142,7 @@ export function FacebookPostLikesOrderStatusDashboard({
           </div>
           <div className="rounded-xl border border-stone-100 bg-white/90 px-3 py-2">
             <p className="text-[8px] font-semibold tracking-wide text-stone-400 uppercase">
-              Analytics
+              {d('Analytics')}
             </p>
             <div className="mt-2 flex h-8 items-end gap-1">
               {engagement.map((h, i) => (
@@ -185,7 +187,7 @@ export function FacebookPostLikesOrderStatusDashboard({
               >
                 ✓
               </span>
-              <p className="text-sm font-semibold text-stone-800">{row.label}</p>
+              <p className="text-sm font-semibold text-stone-800">{d(row.label)}</p>
             </li>
           ))}
         </ul>
