@@ -92,6 +92,9 @@ export type InstagramFollowersPageConfig = {
     description: string;
     rows: Array<{ id: string; quantity: string; recommendedFor: string }>;
     bottomNote?: string;
+    unitSuffix?: string;
+    quantityColumnLabel?: string;
+    recommendedColumnLabel?: string;
   };
   bestPractices: {
     id: string;

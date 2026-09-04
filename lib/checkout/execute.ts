@@ -3,6 +3,10 @@
  */
 
 import { allowMockPayments, isProductionRuntime } from '@/lib/config/env';
+import {
+  linkOrderToCartRecovery,
+  markCartRecoveryConverted,
+} from '@/lib/cart-recovery';
 import { getSiteUrlPath } from '@/lib/config/hosts';
 import { notifyOrderPaid, notifyOrderPlaced } from '@/lib/notifications/order-hooks';
 import { placeOrder, type PlaceOrderInput } from '@/lib/orders/create';
@@ -57,6 +61,11 @@ export async function executeCheckout(
     }
 
     const order = await placeOrder(input);
+    await linkOrderToCartRecovery({
+      orderId: order.id,
+      email: order.guestEmail,
+      recoveryPublicId: input.recoveryPublicId,
+    });
 
     if (input.marketingOptIn || input.customer.marketingOptIn) {
       try {
@@ -111,6 +120,7 @@ export async function executeCheckout(
           totals,
           coupon: input.coupon,
           termsAccepted: input.termsAccepted,
+          cardToken: input.cardToken,
         },
       });
 
@@ -173,6 +183,10 @@ export async function executeCheckout(
         message: error instanceof Error ? error.message : 'unknown',
       });
     }
+    await markCartRecoveryConverted({
+      orderId: mockPaid.id,
+      email: mockPaid.guestEmail,
+    });
 
     return {
       ok: true,

@@ -16,6 +16,7 @@ export const ROBOTS_DISALLOW = [
   '/cart',
   '/checkout',
   '/order-success',
+  '/email/unsubscribe/',
   '/admin/',
   '/author/',
   '/api/',

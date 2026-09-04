@@ -59,17 +59,7 @@ export async function generateMetadata({
 function renderPublicArticle(slug: string, article: ReturnType<typeof getPublishedArticleBySlug> | Awaited<ReturnType<typeof getPublishedCmsPublicArticle>>) {
   if (!article) return null;
   const prepared = prepareArticleForRender(article);
-  const schemaFaqs = prepared.article.faqs.filter((faq) => faq.schemaEligible === true);
-  const graph = asJsonLdGraph(
-    buildArticlePageJsonLd(prepared.article, {
-      visibleFaqs: schemaFaqs.map((faq) => ({
-        id: faq.id,
-        question: faq.question,
-        answer: faq.answer,
-        schemaEligible: true,
-      })),
-    }),
-  );
+  const graph = asJsonLdGraph(buildArticlePageJsonLd(prepared.article));
   return (
     <>
       <JsonLdScript id={`learn-article-jsonld-${slug}`} data={graph} />

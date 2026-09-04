@@ -9,7 +9,7 @@ import { buildLocaleMetadata } from '@/lib/i18n/metadata';
 import { localizeHref } from '@/lib/i18n/paths';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { aboutPageSchema } from '@/schemas/website';
+import { webPageSchema } from '@/schemas/website';
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -38,7 +38,7 @@ export default async function LocalizedAboutPage({ params }: PageProps) {
   const homeHref = localizeHref('/', locale);
 
   const graph = asJsonLdGraph([
-    aboutPageSchema({
+    webPageSchema({
       title: meta.title,
       description: meta.description,
       path: aboutHref,

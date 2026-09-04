@@ -16,6 +16,7 @@ import {
 } from '@/lib/seo/metadata/canonical';
 import { isCoreLocalizedPath, isLocalizedLocale } from '@/lib/i18n/config';
 import { parseLocalePath } from '@/lib/i18n/paths';
+import { parseMarketPath } from '@/lib/market/paths';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import { validateSitemapUrl } from '@/lib/seo/sitemap/validate-url';
 import type { SitemapIssue } from '@/types/sitemap';
@@ -62,6 +63,22 @@ export function validateSitemapCanonicals(
           route: path,
           url: entry.url,
           detail: `Localized sitemap URL ${entry.url} does not match self-canonical ${expected}`,
+        });
+      }
+      continue;
+    }
+
+    // Market geo routes (/ca, /ca/buy-instagram-followers, etc.) are self-canonical;
+    // they have no metadata-registry entry — validate URL shape only.
+    const marketParsed = parseMarketPath(path);
+    if (marketParsed.market !== null) {
+      const expected = buildCanonicalUrl(path);
+      if (!sitemapUrlsEqual(expected, entry.url)) {
+        issues.push({
+          kind: 'canonical_mismatch',
+          route: path,
+          url: entry.url,
+          detail: `Market sitemap URL ${entry.url} does not match self-canonical ${expected}`,
         });
       }
       continue;

@@ -13,9 +13,11 @@ import { getLinkRegistry } from '@/data/linking/registry';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getMetadataByRoute } from '@/lib/seo/metadata/getters';
 import { normalizeCanonicalPath } from '@/lib/seo/metadata/canonical';
-import { LOCALIZED_LOCALES } from '@/lib/i18n/config';
+import { LOCALIZED_LOCALES, CORE_SERVICE_SLUGS } from '@/lib/i18n/config';
 import { COMPANY_PATHS, CORE_PATHS, LEGAL_PATHS, TOOL_PATHS } from '@/lib/i18n/core-paths';
 import { localizeHref } from '@/lib/i18n/paths';
+import { MARKETS } from '@/lib/market/config';
+import { localizeMarketHref } from '@/lib/market/paths';
 import { decodePathname } from '@/lib/i18n/slugs';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import type { SitemapIssue } from '@/types/sitemap';
@@ -76,6 +78,20 @@ function collectInboundFromLinkRegistry(): Map<string, Set<string>> {
   if (LEARN_TAG_PAGES_ENABLED) {
     for (const tag of LEARN_TAGS.filter((item) => item.active)) {
       add('/learn', `${LEARN_TAG_PATH_PREFIX}/${tag.slug}`);
+    }
+  }
+
+  // Market geo pages: global sitemap page → market homepage; market homepage → its service pages
+  for (const market of MARKETS) {
+    const marketHome = localizeMarketHref('/', market);
+    // Global sitemap page and global homepage both link to market homepages
+    add('/sitemap', marketHome);
+    add('/', marketHome);
+    // Each market homepage links to its 10 service pages
+    for (const slug of CORE_SERVICE_SLUGS) {
+      const servicePath = `/${slug}`;
+      const marketService = localizeMarketHref(servicePath, market);
+      add(marketHome, marketService);
     }
   }
 

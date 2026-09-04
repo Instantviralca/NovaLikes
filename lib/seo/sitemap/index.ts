@@ -26,6 +26,30 @@ export {
   isPathAllowedForCrawler,
   isOaiSearchBotAllowedOnPublicPages,
 } from '@/lib/seo/sitemap/robots';
+export {
+  SITEMAP_GROUP_IDS,
+  classifySitemapPath,
+  partitionSitemapEntries,
+  buildSitemapGroups,
+  getSitemapGroupById,
+  assertSitemapPartitionComplete,
+  getSitemapIndexLocs,
+  type SitemapGroupId,
+  type SitemapGroup,
+} from '@/lib/seo/sitemap/groups';
+export {
+  serializeUrlSet,
+  serializeSitemapIndex,
+  sitemapXmlPreamble,
+  SITEMAP_XML_HEADERS,
+} from '@/lib/seo/sitemap/serialize';
+export {
+  SITEMAP_STYLESHEET_HREF,
+  SITEMAP_STYLESHEET_PATH,
+  SITEMAP_XSL,
+  SITEMAP_XSL_HEADERS,
+} from '@/lib/seo/sitemap/xsl-stylesheet';
+export { getProductionSitemapEntries } from '@/lib/seo/sitemap/production-entries';
 
 export {
   SITEMAP_PRODUCTION_ROUTES,

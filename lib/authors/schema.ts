@@ -1,15 +1,9 @@
-/**
- * Author Person + page JSON-LD — Document 15.03.
- * Never includes private email or internal notes.
- */
-
 import { absoluteUrl } from '@/seo/canonical';
-import { brand } from '@/config/brand';
 import { site } from '@/config/site';
 import { authorPath, authorsIndexPath } from '@/lib/authors/paths';
 import type { PublicAuthor } from '@/types/author';
 import type { BreadcrumbItem } from '@/types/shared';
-import type { JsonLd } from '@/schemas/organization';
+import { ORGANIZATION_ID, WEBSITE_ID, type JsonLd } from '@/schemas/organization';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 
 function sameAsFromAuthor(author: PublicAuthor): string[] {
@@ -26,6 +20,7 @@ function sameAsFromAuthor(author: PublicAuthor): string[] {
 /**
  * Person schema for an active public author.
  * Omits email intentionally (private).
+ * worksFor references the shared Organization entity — no nested duplicate.
  */
 export function getAuthorSchema(author: PublicAuthor): JsonLd {
   const sameAs = sameAsFromAuthor(author);
@@ -40,11 +35,7 @@ export function getAuthorSchema(author: PublicAuthor): JsonLd {
     image: author.avatar ? absoluteUrl(author.avatar) : undefined,
     knowsAbout: author.expertise.length ? [...author.expertise] : undefined,
     sameAs: sameAs.length ? sameAs : undefined,
-    worksFor: {
-      '@type': 'Organization',
-      name: brand.name,
-      url: absoluteUrl('/'),
-    },
+    worksFor: { '@id': ORGANIZATION_ID },
   };
 }
 
@@ -76,11 +67,7 @@ export function getAuthorsIndexJsonLd(): JsonLd[] {
       name: 'Authors',
       description: `Contributors to ${site.name} Learn.`,
       url: absoluteUrl(authorsIndexPath()),
-      isPartOf: {
-        '@type': 'WebSite',
-        name: site.name,
-        url: absoluteUrl('/'),
-      },
+      isPartOf: { '@id': WEBSITE_ID },
     },
     ...(crumbs ? [crumbs] : []),
   ];

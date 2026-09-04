@@ -260,10 +260,10 @@ describe('Article Template System', () => {
     expect(issues.some((issue) => issue.code === 'invalid_service')).toBe(true);
   });
 
-  it('builds article schema and FAQ schema only when FAQs are schema-eligible', () => {
+  it('builds article schema without FAQPage even when FAQs are schema-eligible', () => {
     const withFaq = getArticleSchema(makeArticle(), { includeFaq: true });
     expect(withFaq.some((item) => item['@type'] === 'BlogPosting')).toBe(true);
-    expect(withFaq.some((item) => item['@type'] === 'FAQPage')).toBe(true);
+    expect(withFaq.some((item) => item['@type'] === 'FAQPage')).toBe(false);
 
     const hiddenFaq = getArticleSchema(
       makeArticle({

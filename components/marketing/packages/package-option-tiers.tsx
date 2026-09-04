@@ -40,7 +40,7 @@ export function PackageOptionTiers({
           {description ? <MutedText>{description}</MutedText> : null}
         </FadeUp>
 
-        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-5">
           {cards.map((card, index) => (
             <li key={card.id}>
               <FadeUp delay={0.03 * index}>

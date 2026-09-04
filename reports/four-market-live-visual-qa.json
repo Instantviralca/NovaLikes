@@ -1,0 +1,608 @@
+{
+  "auditedAt": "2026-09-03T11:18:43.075Z",
+  "base": "http://localhost:3000",
+  "pagesChecked": 40,
+  "pagesExpected": 40,
+  "visibleRegistryPlacements": 478,
+  "liveImageMentionsApprox": 478,
+  "p0": 0,
+  "p1": 0,
+  "p2": {
+    "altTextTemplateIssues": 107,
+    "altTextFirstImpressionMismatch": 48,
+    "wideTextCropRiskPlacements": 63,
+    "wideTextSectionIds": [
+      "local-businesses",
+      "more-business",
+      "business-results",
+      "real-business-content",
+      "useful-next-step",
+      "content-people-need"
+    ]
+  },
+  "issues": [],
+  "pageResults": [
+    {
+      "route": "/ca/buy-instagram-followers",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/instagram-followers/buy-instagram-followers-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-followers/buy-instagram-followers-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-followers/buy-instagram-followers-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/instagram-followers/buy-instagram-followers-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/instagram-followers/buy-instagram-followers-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-instagram-likes",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/instagram-likes/buy-instagram-likes-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-likes/buy-instagram-likes-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-likes/buy-instagram-likes-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/instagram-likes/buy-instagram-likes-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/instagram-likes/buy-instagram-likes-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-instagram-views",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/instagram-views/buy-instagram-views-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-views/buy-instagram-views-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-views/buy-instagram-views-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/instagram-views/buy-instagram-views-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/instagram-views/buy-instagram-views-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-instagram-comments",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/instagram-comments/buy-instagram-comments-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-comments/buy-instagram-comments-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/instagram-comments/buy-instagram-comments-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/instagram-comments/buy-instagram-comments-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/instagram-comments/buy-instagram-comments-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-tiktok-followers",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/tiktok-followers/buy-tiktok-followers-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-followers/buy-tiktok-followers-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-followers/buy-tiktok-followers-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-followers/buy-tiktok-followers-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-followers/buy-tiktok-followers-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-tiktok-likes",
+      "status": 200,
+      "images": 10,
+      "expectedVisible": 10,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/tiktok-likes/buy-tiktok-likes-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-likes/buy-tiktok-likes-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-likes/buy-tiktok-likes-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-likes/buy-tiktok-likes-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-likes/buy-tiktok-likes-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-tiktok-views",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/tiktok-views/buy-tiktok-views-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-views/buy-tiktok-views-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-views/buy-tiktok-views-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-views/buy-tiktok-views-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/tiktok-views/buy-tiktok-views-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-facebook-followers",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/facebook-followers/buy-facebook-followers-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-followers/buy-facebook-followers-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-followers/buy-facebook-followers-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/facebook-followers/buy-facebook-followers-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/facebook-followers/buy-facebook-followers-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-facebook-page-likes",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/facebook-page-likes/buy-facebook-page-likes-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-page-likes/buy-facebook-page-likes-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-page-likes/buy-facebook-page-likes-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/facebook-page-likes/buy-facebook-page-likes-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/facebook-page-likes/buy-facebook-page-likes-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/ca/buy-facebook-post-likes",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/ca/facebook-post-likes/buy-facebook-post-likes-canada-why-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-post-likes/buy-facebook-post-likes-canada-can-you-buy.webp",
+        "/assets/images/illustrations/markets/ca/facebook-post-likes/buy-facebook-post-likes-canada-does-buying-help.webp",
+        "/assets/images/illustrations/markets/ca/facebook-post-likes/buy-facebook-post-likes-canada-final-cta.webp",
+        "/assets/images/illustrations/markets/ca/facebook-post-likes/buy-facebook-post-likes-canada-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-instagram-followers",
+      "status": 200,
+      "images": 10,
+      "expectedVisible": 10,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/instagram-followers/buy-instagram-followers-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-followers/buy-instagram-followers-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-followers/buy-instagram-followers-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/instagram-followers/buy-instagram-followers-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/instagram-followers/buy-instagram-followers-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-instagram-likes",
+      "status": 200,
+      "images": 9,
+      "expectedVisible": 9,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/instagram-likes/buy-instagram-likes-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-likes/buy-instagram-likes-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-likes/buy-instagram-likes-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/instagram-likes/buy-instagram-likes-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/instagram-likes/buy-instagram-likes-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-instagram-views",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/instagram-views/buy-instagram-views-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-views/buy-instagram-views-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-views/buy-instagram-views-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/instagram-views/buy-instagram-views-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/instagram-views/buy-instagram-views-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-instagram-comments",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/instagram-comments/buy-instagram-comments-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-comments/buy-instagram-comments-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/instagram-comments/buy-instagram-comments-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/instagram-comments/buy-instagram-comments-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/instagram-comments/buy-instagram-comments-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-tiktok-followers",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/tiktok-followers/buy-tiktok-followers-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-followers/buy-tiktok-followers-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-followers/buy-tiktok-followers-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/tiktok-followers/buy-tiktok-followers-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/tiktok-followers/buy-tiktok-followers-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-tiktok-likes",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/tiktok-likes/buy-tiktok-likes-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-likes/buy-tiktok-likes-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-likes/buy-tiktok-likes-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/tiktok-likes/buy-tiktok-likes-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/tiktok-likes/buy-tiktok-likes-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-tiktok-views",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/tiktok-views/buy-tiktok-views-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-views/buy-tiktok-views-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/tiktok-views/buy-tiktok-views-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/tiktok-views/buy-tiktok-views-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/tiktok-views/buy-tiktok-views-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-facebook-followers",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/facebook-followers/buy-facebook-followers-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-followers/buy-facebook-followers-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-followers/buy-facebook-followers-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/facebook-followers/buy-facebook-followers-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/facebook-followers/buy-facebook-followers-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-facebook-page-likes",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/facebook-page-likes/buy-facebook-page-likes-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-page-likes/buy-facebook-page-likes-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-page-likes/buy-facebook-page-likes-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/facebook-page-likes/buy-facebook-page-likes-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/facebook-page-likes/buy-facebook-page-likes-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/au/buy-facebook-post-likes",
+      "status": 200,
+      "images": 10,
+      "expectedVisible": 10,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/au/facebook-post-likes/buy-facebook-post-likes-australia-why-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-post-likes/buy-facebook-post-likes-australia-can-you-buy.webp",
+        "/assets/images/illustrations/markets/au/facebook-post-likes/buy-facebook-post-likes-australia-does-buying-help.webp",
+        "/assets/images/illustrations/markets/au/facebook-post-likes/buy-facebook-post-likes-australia-final-cta.webp",
+        "/assets/images/illustrations/markets/au/facebook-post-likes/buy-facebook-post-likes-australia-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-instagram-followers",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/instagram-followers/buy-instagram-followers-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-followers/buy-instagram-followers-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-followers/buy-instagram-followers-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/instagram-followers/buy-instagram-followers-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/instagram-followers/buy-instagram-followers-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-instagram-likes",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/instagram-likes/buy-instagram-likes-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-likes/buy-instagram-likes-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-likes/buy-instagram-likes-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/instagram-likes/buy-instagram-likes-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/instagram-likes/buy-instagram-likes-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-instagram-views",
+      "status": 200,
+      "images": 10,
+      "expectedVisible": 10,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/instagram-views/buy-instagram-views-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-views/buy-instagram-views-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-views/buy-instagram-views-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/instagram-views/buy-instagram-views-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/instagram-views/buy-instagram-views-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-instagram-comments",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/instagram-comments/buy-instagram-comments-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-comments/buy-instagram-comments-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/instagram-comments/buy-instagram-comments-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/instagram-comments/buy-instagram-comments-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/instagram-comments/buy-instagram-comments-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-tiktok-followers",
+      "status": 200,
+      "images": 15,
+      "expectedVisible": 15,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/tiktok-followers/buy-tiktok-followers-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-followers/buy-tiktok-followers-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-followers/buy-tiktok-followers-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/tiktok-followers/buy-tiktok-followers-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/tiktok-followers/buy-tiktok-followers-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-tiktok-likes",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/tiktok-likes/buy-tiktok-likes-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-likes/buy-tiktok-likes-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-likes/buy-tiktok-likes-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/tiktok-likes/buy-tiktok-likes-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/tiktok-likes/buy-tiktok-likes-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-tiktok-views",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/tiktok-views/buy-tiktok-views-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-views/buy-tiktok-views-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/tiktok-views/buy-tiktok-views-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/tiktok-views/buy-tiktok-views-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/tiktok-views/buy-tiktok-views-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-facebook-followers",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/facebook-followers/buy-facebook-followers-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-followers/buy-facebook-followers-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-followers/buy-facebook-followers-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/facebook-followers/buy-facebook-followers-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/facebook-followers/buy-facebook-followers-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-facebook-page-likes",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/facebook-page-likes/buy-facebook-page-likes-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-page-likes/buy-facebook-page-likes-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-page-likes/buy-facebook-page-likes-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/facebook-page-likes/buy-facebook-page-likes-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/facebook-page-likes/buy-facebook-page-likes-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/us/buy-facebook-post-likes",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/us/facebook-post-likes/buy-facebook-post-likes-usa-why-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-post-likes/buy-facebook-post-likes-usa-can-you-buy.webp",
+        "/assets/images/illustrations/markets/us/facebook-post-likes/buy-facebook-post-likes-usa-does-buying-help.webp",
+        "/assets/images/illustrations/markets/us/facebook-post-likes/buy-facebook-post-likes-usa-final-cta.webp",
+        "/assets/images/illustrations/markets/us/facebook-post-likes/buy-facebook-post-likes-usa-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-instagram-followers",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/instagram-followers/buy-instagram-followers-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-followers/buy-instagram-followers-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-followers/buy-instagram-followers-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/instagram-followers/buy-instagram-followers-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/instagram-followers/buy-instagram-followers-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-instagram-likes",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/instagram-likes/buy-instagram-likes-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-likes/buy-instagram-likes-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-likes/buy-instagram-likes-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/instagram-likes/buy-instagram-likes-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/instagram-likes/buy-instagram-likes-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-instagram-views",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/instagram-views/buy-instagram-views-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-views/buy-instagram-views-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-views/buy-instagram-views-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/instagram-views/buy-instagram-views-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/instagram-views/buy-instagram-views-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-instagram-comments",
+      "status": 200,
+      "images": 11,
+      "expectedVisible": 11,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/instagram-comments/buy-instagram-comments-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-comments/buy-instagram-comments-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/instagram-comments/buy-instagram-comments-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/instagram-comments/buy-instagram-comments-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/instagram-comments/buy-instagram-comments-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-tiktok-followers",
+      "status": 200,
+      "images": 16,
+      "expectedVisible": 16,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/tiktok-followers/buy-tiktok-followers-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-followers/buy-tiktok-followers-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-followers/buy-tiktok-followers-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-followers/buy-tiktok-followers-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-followers/buy-tiktok-followers-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-tiktok-likes",
+      "status": 200,
+      "images": 13,
+      "expectedVisible": 13,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/tiktok-likes/buy-tiktok-likes-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-likes/buy-tiktok-likes-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-likes/buy-tiktok-likes-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-likes/buy-tiktok-likes-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-likes/buy-tiktok-likes-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-tiktok-views",
+      "status": 200,
+      "images": 16,
+      "expectedVisible": 16,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/tiktok-views/buy-tiktok-views-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-views/buy-tiktok-views-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-views/buy-tiktok-views-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-views/buy-tiktok-views-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/tiktok-views/buy-tiktok-views-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-facebook-followers",
+      "status": 200,
+      "images": 12,
+      "expectedVisible": 12,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/facebook-followers/buy-facebook-followers-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-followers/buy-facebook-followers-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-followers/buy-facebook-followers-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/facebook-followers/buy-facebook-followers-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/facebook-followers/buy-facebook-followers-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-facebook-page-likes",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/facebook-page-likes/buy-facebook-page-likes-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-page-likes/buy-facebook-page-likes-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-page-likes/buy-facebook-page-likes-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/facebook-page-likes/buy-facebook-page-likes-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/facebook-page-likes/buy-facebook-page-likes-uk-hero.webp"
+      ]
+    },
+    {
+      "route": "/uk/buy-facebook-post-likes",
+      "status": 200,
+      "images": 14,
+      "expectedVisible": 14,
+      "ok": true,
+      "assetsSample": [
+        "/assets/images/illustrations/markets/uk/facebook-post-likes/buy-facebook-post-likes-uk-why-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-post-likes/buy-facebook-post-likes-uk-can-you-buy.webp",
+        "/assets/images/illustrations/markets/uk/facebook-post-likes/buy-facebook-post-likes-uk-does-buying-help.webp",
+        "/assets/images/illustrations/markets/uk/facebook-post-likes/buy-facebook-post-likes-uk-final-cta.webp",
+        "/assets/images/illustrations/markets/uk/facebook-post-likes/buy-facebook-post-likes-uk-hero.webp"
+      ]
+    }
+  ],
+  "exclusions": [
+    "likes-vs-views",
+    "real-experience",
+    "profile-experience",
+    "page-trust"
+  ],
+  "verdict": "PASS WITH MINOR POLISH",
+  "p2Categories": 2,
+  "imagesNeedingRegeneration": [],
+  "cssOnlyPolish": [
+    "CaStoryFeatureImage wideText aspect-[5/4] vs 4:3 assets"
+  ],
+  "brokenImages": [],
+  "wrongPlatform": [],
+  "duplicatePaths": [],
+  "copyChanged": false,
+  "seoChanged": false,
+  "commit": false,
+  "push": false,
+  "deploy": false,
+  "viewportPixelScreenshots": false,
+  "methodologyNote": "40/40 live SSR + registry/disk/HTTP + CSS layout review; no Playwright screenshots"
+}

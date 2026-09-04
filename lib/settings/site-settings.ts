@@ -8,15 +8,18 @@ import { eq } from 'drizzle-orm';
 import { isDatabaseConfigured } from '@/lib/config/env';
 import { getDb } from '@/lib/db/client';
 import * as tables from '@/lib/db/schema';
+import {
+  MOLLIE_DEFAULT_PRODUCT_NAME,
+  MOLLIE_DEFAULT_SERVER_URL,
+  sanitizePaymentServerUrl,
+} from '@/lib/payments/mollie-remote-protocol';
 
 export const SETTING_PAYMENT_WEBSITE = 'payment_website' as const;
+export const SETTING_REMOTE_PAYMENT_SHARED_SECRET = 'remote_payment_shared_secret' as const;
+export const SETTING_REMOTE_PAYMENT_PRODUCT_NAME = 'remote_payment_product_name' as const;
 export const SETTING_ADMIN_EMAIL = 'admin_notification_email' as const;
 
 const memoryStore = new Map<string, string>();
-
-function trimUrl(value: string | undefined | null): string {
-  return (value ?? '').trim().replace(/\/$/, '');
-}
 
 function trimEmail(value: string | undefined | null): string {
   return (value ?? '').trim().toLowerCase();
@@ -58,47 +61,96 @@ async function writeToDb(key: string, value: string): Promise<void> {
   memoryStore.set(key, value);
 }
 
-/** Payment collection website URL (Woo remote-payment client setting). */
+/** Mollie payment collection server URL (Admin setting → env → carrycubes default). */
 export async function getPaymentWebsiteUrl(): Promise<string> {
   const fromMemory = memoryStore.get(SETTING_PAYMENT_WEBSITE);
-  if (fromMemory) return trimUrl(fromMemory);
+  if (fromMemory) return sanitizePaymentServerUrl(fromMemory);
 
   const fromDb = await readFromDb(SETTING_PAYMENT_WEBSITE);
   if (fromDb) {
-    const trimmed = trimUrl(fromDb);
+    const trimmed = sanitizePaymentServerUrl(fromDb);
     memoryStore.set(SETTING_PAYMENT_WEBSITE, trimmed);
     return trimmed;
   }
 
-  const fromEnv = trimUrl(process.env.REMOTE_PAYMENT_WEBSITE_URL);
+  const fromEnv = sanitizePaymentServerUrl(process.env.REMOTE_PAYMENT_WEBSITE_URL ?? '');
   if (fromEnv) {
     memoryStore.set(SETTING_PAYMENT_WEBSITE, fromEnv);
+    return fromEnv;
+  }
+
+  return sanitizePaymentServerUrl(MOLLIE_DEFAULT_SERVER_URL);
+}
+
+export async function setPaymentWebsiteUrl(url: string): Promise<string> {
+  const trimmed = sanitizePaymentServerUrl(url);
+  if (!trimmed) {
+    throw new Error('Enter a valid Mollie payment server URL (without trailing slash).');
+  }
+  await writeToDb(SETTING_PAYMENT_WEBSITE, trimmed);
+  return trimmed;
+}
+
+export async function getRemotePaymentSharedSecret(): Promise<string> {
+  const fromMemory = memoryStore.get(SETTING_REMOTE_PAYMENT_SHARED_SECRET);
+  if (fromMemory) return fromMemory;
+
+  const fromDb = await readFromDb(SETTING_REMOTE_PAYMENT_SHARED_SECRET);
+  if (fromDb) {
+    memoryStore.set(SETTING_REMOTE_PAYMENT_SHARED_SECRET, fromDb);
+    return fromDb;
+  }
+
+  const fromEnv = (process.env.REMOTE_PAYMENT_SHARED_SECRET ?? '').trim();
+  if (fromEnv) {
+    memoryStore.set(SETTING_REMOTE_PAYMENT_SHARED_SECRET, fromEnv);
     return fromEnv;
   }
 
   return '';
 }
 
-export async function setPaymentWebsiteUrl(url: string): Promise<string> {
-  const trimmed = trimUrl(url);
-  if (!trimmed) {
-    throw new Error('Payment website URL is required.');
+export async function setRemotePaymentSharedSecret(secret: string): Promise<void> {
+  const trimmed = secret.trim();
+  if (!trimmed) return;
+  if (trimmed.length < 16) {
+    throw new Error('Shared secret must be at least 16 characters.');
   }
-  try {
-    const parsed = new URL(trimmed);
-    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
-      throw new Error('Payment website URL must be http(s).');
-    }
-  } catch (error) {
-    if (error instanceof Error && error.message.includes('http')) throw error;
-    throw new Error('Enter a valid payment website URL (without trailing slash).');
+  await writeToDb(SETTING_REMOTE_PAYMENT_SHARED_SECRET, trimmed);
+}
+
+export async function getRemotePaymentProductName(): Promise<string> {
+  const fromMemory = memoryStore.get(SETTING_REMOTE_PAYMENT_PRODUCT_NAME);
+  if (fromMemory) return fromMemory;
+
+  const fromDb = await readFromDb(SETTING_REMOTE_PAYMENT_PRODUCT_NAME);
+  if (fromDb?.trim()) {
+    const value = fromDb.trim();
+    memoryStore.set(SETTING_REMOTE_PAYMENT_PRODUCT_NAME, value);
+    return value;
   }
-  await writeToDb(SETTING_PAYMENT_WEBSITE, trimmed);
+
+  const fromEnv = (process.env.REMOTE_PAYMENT_PRODUCT_NAME ?? '').trim();
+  if (fromEnv) {
+    memoryStore.set(SETTING_REMOTE_PAYMENT_PRODUCT_NAME, fromEnv);
+    return fromEnv;
+  }
+
+  return MOLLIE_DEFAULT_PRODUCT_NAME;
+}
+
+export async function setRemotePaymentProductName(name: string): Promise<string> {
+  const trimmed = name.trim() || MOLLIE_DEFAULT_PRODUCT_NAME;
+  await writeToDb(SETTING_REMOTE_PAYMENT_PRODUCT_NAME, trimmed);
   return trimmed;
 }
 
 export async function isRemotePaymentConfigured(): Promise<boolean> {
-  return Boolean(await getPaymentWebsiteUrl());
+  const [url, secret] = await Promise.all([
+    getPaymentWebsiteUrl(),
+    getRemotePaymentSharedSecret(),
+  ]);
+  return Boolean(url) && secret.trim().length >= 16;
 }
 
 /** Admin inbox for new orders + contact form (settings override → env). */

@@ -4,6 +4,7 @@
  */
 
 import { getAllReviews } from '@/data/reviews';
+import { HOMEPAGE_REVIEW_IDS } from '@/lib/reviews/display-order';
 import { toPublicReviews } from '@/lib/reviews/public';
 import { isPubliclyEligible } from '@/lib/reviews/status';
 import type { PlatformId } from '@/types/platform';
@@ -53,23 +54,32 @@ export function getReviewsByService(
 }
 
 /**
- * Homepage: featured approved reviews first, then other approved homepage placements.
- * Returns empty when none exist — callers must hide the section.
+ * Homepage: a small varied subset of existing approved reviews.
+ * Default limit is 3. Does not rewrite review bodies.
  */
 export function getHomepageReviews(
   limit = 3,
   source: Review[] = getAllReviews(),
 ): PublicReview[] {
   const approved = getApprovedReviews(source);
+  const byId = new Map(approved.map((review) => [review.id, review]));
+  const preferred: Review[] = [];
+  for (const id of HOMEPAGE_REVIEW_IDS) {
+    const match = byId.get(id);
+    if (match) preferred.push(match);
+  }
+
+  const preferredIds = new Set(preferred.map((review) => review.id));
   const homepageEligible = approved.filter(
     (review) =>
-      review.featured ||
-      review.displayLocations.includes('homepage') ||
-      review.displayLocations.length === 0,
+      !preferredIds.has(review.id) &&
+      (review.featured ||
+        review.displayLocations.includes('homepage') ||
+        review.displayLocations.length === 0),
   );
   const featured = homepageEligible.filter((review) => review.featured);
   const rest = homepageEligible.filter((review) => !review.featured);
-  return toPublicReviews([...featured, ...rest]).slice(0, limit);
+  return toPublicReviews([...preferred, ...featured, ...rest]).slice(0, limit);
 }
 
 /**

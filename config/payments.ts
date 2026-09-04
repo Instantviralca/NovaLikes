@@ -2,18 +2,19 @@ import type { PaymentProviderConfig } from '@/types/payment';
 
 /**
  * Public payment method configuration — Document 10.06.
- * Remote Payment (Woo-style collector URL) is the live checkout path.
+ * Mollie Remote Payment (Card) is the live checkout path.
+ * Stripe is paused temporarily — do not re-enable without ops approval.
  * Secret keys never appear here.
  */
 export const paymentProviders: PaymentProviderConfig[] = [
   {
     id: 'remote-payment',
     enabled: true,
-    displayName: 'Card Payment',
+    displayName: 'Credit / Debit Card',
   },
   {
     id: 'stripe',
-    enabled: false,
+    enabled: false, // paused — Mollie remote payment is active
     publicKeyEnv: 'NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY',
     displayName: 'Stripe',
   },

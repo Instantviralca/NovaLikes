@@ -1,0 +1,1065 @@
+{
+  "content": {
+    "slug": "buy-instagram-comments",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Buy Instagram Comments UK | Comments for Posts & Reels | NovaLikes",
+      "description": "Buy Instagram comments in the UK for public posts and Reels. Compare comment packages, order without sharing your password and track your purchase online."
+    },
+    "hero": {
+      "eyebrow": "INSTAGRAM SERVICES FOR THE UK",
+      "title": "Buy Instagram Comments in the UK and Build More Visible Conversation",
+      "description": "Put more visible conversation around the Instagram posts and Reels that matter most. NovaLikes gives creators, businesses, brands and agencies across the United Kingdom a straightforward way to buy Instagram Comments for eligible public content without sharing account login details. Choose the comment option and quantity that fits your post, submit the exact public post or Reel URL and complete your order online. Whether you're supporting a product launch, creator collaboration, campaign post, business announcement or content designed to encourage discussion, choose a comment package that fits the conversation around that content.",
+      "purpose": "Convert visitors searching for Instagram comments packages",
+      "primaryKeyword": "buy Instagram comments",
+      "supportingKeywords": [
+        "Instagram comments packages",
+        "Increase Instagram comments",
+        "Instagram comment service",
+        "More Instagram engagement",
+        "Buy Instagram comments"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "Choose Your Instagram Comments Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-c-trust-public-url",
+          "label": "Public Post or Reel URL Only"
+        },
+        {
+          "id": "ig-c-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "ig-c-trust-pricing",
+          "label": "Clear Pricing"
+        },
+        {
+          "id": "ig-c-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-comments/instagram-comments-hero.webp",
+        "alt": "Instagram comments conversation and community engagement dashboard",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose an Instagram Comments Package That Fits the Content",
+      "description": "Comments work differently from Likes and Views because they create visible conversation beneath individual content. NovaLikes currently offers comment quantities including 5, 10, 25, 50, 75 and 100 Comments. Different High Quality and Premium package options may be available depending on the quantity selected. A smaller package may suit a focused post. A larger launch, collaboration or campaign may call for something different. Before choosing, consider existing comment activity, the purpose of the content, your profile size and the quantity you actually want.",
+      "purpose": "Present real NovaLikes.com comments packages",
+      "primaryKeyword": "Instagram comments packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Instagram Comments Packages",
+      "emptyMessage": "Instagram Comments packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-comments",
+      "title": "Build Visible Discussion Around Instagram Content Worth Talking About",
+      "description": "A stronger comment count is most useful when the Instagram post already has something clear to say. UK creators and businesses may use posts and Reels for launches, events, seasonal offers, new services, collaborations, completed work or educational content. Adding visible comments can make the discussion area look more active, but the post still needs enough context for that activity to feel connected to the content. Keep captions clear, business details current and claims accurate. If someone discovers the post from a campaign or recommendation, the profile should help them understand who is behind it and what to do next. Use purchased comments for the selected public content, while treating genuine customer questions and community replies as a separate part of ongoing account management.",
+      "purpose": "Explain how comments support credibility and conversation",
+      "primaryKeyword": "Instagram comments",
+      "suggestedWordCount": 160,
+      "items": [
+        {
+          "id": "ig-c-benefit-conversation",
+          "title": "Start With Content That Has Something to Discuss",
+          "description": "Questions, launches, project reveals and useful educational posts give the visible conversation a clearer purpose than generic content."
+        },
+        {
+          "id": "ig-c-benefit-credibility",
+          "title": "Keep the Conversation Relevant to the Creative",
+          "description": "Comments work better as a presentation signal when the caption, visuals and visible discussion all relate to the same subject."
+        },
+        {
+          "id": "ig-c-benefit-interaction",
+          "title": "Support the Posts That Matter Most",
+          "description": "Focus comment packages on important campaigns or evergreen content rather than treating every post on the profile the same way."
+        },
+        {
+          "id": "ig-c-benefit-audiences",
+          "title": "Built Around Public Creator and Business Content",
+          "description": "UK creators, brands, local businesses and agencies can use comments for eligible public posts while continuing to handle genuine audience conversations themselves."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-comments",
+      "title": "Why Choose NovaLikes for Instagram Comments?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Differentiate comments purchasing experience",
+      "primaryKeyword": "Instagram comment service",
+      "suggestedWordCount": 140,
+      "items": [
+        {
+          "id": "ig-c-why-relevant",
+          "title": "Relevant Comments",
+          "description": "Choose packages and options that fit the post you are promoting, so discussion stays useful rather than random noise."
+        },
+        {
+          "id": "ig-c-why-natural",
+          "title": "Natural Delivery",
+          "description": "Gradual delivery options help comments arrive at a pace that looks more natural beside normal activity."
+        },
+        {
+          "id": "ig-c-why-password",
+          "title": "No Password Required",
+          "description": "We never request Instagram login access. Orders use public information only."
+        },
+        {
+          "id": "ig-c-why-public",
+          "title": "Public Post Only",
+          "description": "Paste the public URL for the post or Reel that should receive comments. Keep it accessible while delivery runs."
+        },
+        {
+          "id": "ig-c-why-checkout",
+          "title": "Secure Checkout",
+          "description": "Review package details, confirm pricing, and pay through NovaLikes’s secure checkout flow."
+        },
+        {
+          "id": "ig-c-why-support",
+          "title": "Professional Support",
+          "description": "Need help with a package, URL, or order status? Support is available for comments-service questions."
+        }
+      ],
+      "cta": {
+        "label": "Choose Instagram Comments Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "features": {
+      "id": "buy-instagram-comments-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused — delivery requirements live in deliveryAndSafety",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-instagram-comments-order-works-canada",
+      "title": "How an Instagram Comments Order Works",
+      "description": "The process starts with the content, not your login.",
+      "purpose": "Explain the comments ordering process",
+      "primaryKeyword": "buy Instagram comments",
+      "suggestedWordCount": 120,
+      "steps": [
+        {
+          "id": "ig-c-step-1",
+          "title": "Select Your Comment Option",
+          "description": "Compare the available package types and decide which option fits the post or Reel."
+        },
+        {
+          "id": "ig-c-step-2",
+          "title": "Choose the Quantity",
+          "description": "Select how many comments you want for the individual piece of content."
+        },
+        {
+          "id": "ig-c-step-3",
+          "title": "Submit the Correct URL",
+          "description": "Paste the direct public link to the Instagram post or Reel receiving the order."
+        },
+        {
+          "id": "ig-c-step-4",
+          "title": "Review Before Checkout",
+          "description": "Double-check the package, comment quantity, URL, and price."
+        },
+        {
+          "id": "ig-c-step-5",
+          "title": "Track Your Purchase",
+          "description": "After placing your order, use NovaLikes order tracking for available status information."
+        }
+      ],
+      "cta": {
+        "label": "Choose Packages",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "comment-type-and-link",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain comments order requirements",
+      "primaryKeyword": "Instagram comments",
+      "suggestedWordCount": 100,
+      "items": [
+        {
+          "id": "ig-c-req-public-post",
+          "title": "Public post",
+          "description": "The post or Reel must stay publicly viewable while comments are delivered."
+        },
+        {
+          "id": "ig-c-req-correct-url",
+          "title": "Correct URL",
+          "description": "Paste the exact public link for the content that should receive the conversation."
+        },
+        {
+          "id": "ig-c-req-public-account",
+          "title": "Public account",
+          "description": "Private profiles block delivery. Keep the account public for the duration of the order."
+        },
+        {
+          "id": "ig-c-req-email",
+          "title": "Valid email",
+          "description": "Use a reachable checkout email so you can receive confirmation and track updates."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "ig-comments-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this United Kingdom service page.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-comments-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Instagram comments",
+      "faqIds": [
+        "uk-ig-c-where-buy",
+        "uk-ig-c-get-more",
+        "uk-ig-c-cheap",
+        "uk-ig-c-real",
+        "uk-ig-c-how-many",
+        "uk-ig-c-reels",
+        "uk-ig-c-package-options",
+        "uk-ig-c-password",
+        "uk-ig-c-info",
+        "uk-ig-c-cost",
+        "uk-ig-c-delivery",
+        "uk-ig-c-followers",
+        "uk-ig-c-likes-views",
+        "uk-ig-c-organic-reach",
+        "uk-ig-c-business",
+        "uk-ig-c-local",
+        "uk-ig-c-client",
+        "uk-ig-c-wrong-url",
+        "uk-ig-c-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-comments",
+      "title": "Explore More Instagram Services",
+      "description": "Choose Followers for your profile, Likes for eligible posts or Reels, or Views for eligible Reels and videos.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-likes",
+        "buy-instagram-views"
+      ],
+      "cta": {
+        "label": "Back to NovaLikes homepage",
+        "href": "/"
+      }
+    },
+    "finalCta": {
+      "id": "ig-comments-final-cta",
+      "title": "Build Conversation Around Instagram Content Worth Discussing",
+      "description": "Choose the post or Reel you want to support, select the Instagram Comments package that fits the content and submit the correct public URL without sharing your login details. Then keep strengthening what a comment count cannot replace: relevant content, genuine audience interaction, accurate replies and conversations people actually want to join.",
+      "purpose": "Drive conversion to comments packages",
+      "primaryCta": {
+        "label": "Choose Your Instagram Comments Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-instagram-comments-uk",
+        "title": "Why Choose NovaLikes for Instagram Comments?",
+        "description": "Buying Instagram Comments should be easy to understand before checkout.",
+        "items": [
+          {
+            "id": "ig-c-wc-options",
+            "title": "Multiple Comment Options",
+            "description": "Compare the currently available package types before choosing.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-wc-quantities",
+            "title": "Flexible Quantities",
+            "description": "Select from smaller and larger comment quantities according to the individual post or Reel.",
+            "icon": "heart"
+          },
+          {
+            "id": "ig-c-wc-content",
+            "title": "Comments for Specific Content",
+            "description": "Your order applies to the eligible public content connected to the URL you submit.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "ig-c-wc-password",
+            "title": "No Instagram Password Required",
+            "description": "NovaLikes does not need your Instagram password, verification codes or private account access.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-c-wc-pricing",
+            "title": "Clear Pricing",
+            "description": "Review the comment package, quantity and current price before paying.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-c-wc-checkout",
+            "title": "Secure Checkout",
+            "description": "Complete your order through the available NovaLikes checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "ig-c-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes tracking afterwards for available status information.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "ig-c-wc-support",
+            "title": "Customer Support",
+            "description": "If something needs checking, contact support with your relevant order details.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-instagram-comments-without-login-uk",
+        "title": "Buy Instagram Comments Without Sharing Your Login",
+        "description": "A Comments order should not require control of your Instagram account. NovaLikes uses the public content information required for the service.",
+        "cards": [
+          {
+            "id": "ig-c-can-need",
+            "title": "What You Need",
+            "description": "The exact public URL of the Instagram post or Reel and your selected comment package and quantity.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Instagram password, verification codes, private messages or account login access.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before checkout, open the link yourself and confirm that it leads directly to the content you want to use. A general Instagram profile URL is not the correct target for a Comments order."
+      },
+      "doesBuyingHelp": {
+        "id": "real-instagram-comments-uk",
+        "title": "Looking for “Real Instagram Comments”? Check the Package Details First",
+        "description": "\"Real Instagram Comments\" is a common phrase used when comparing engagement services. You may also see high-quality Instagram Comments, premium Instagram Comments or natural Instagram Comments. Different providers may define those labels differently.",
+        "helpTitle": "Questions to Ask",
+        "helpItems": [
+          "What type of comments am I ordering?",
+          "How many Comments are included?",
+          "Which post or Reel receives them?",
+          "What information do I need to provide?",
+          "What does the provider actually promise?"
+        ],
+        "limitTitle": "What NovaLikes Instagram Comments Packages Do",
+        "limitItems": [
+          "Add Comments to the eligible public content submitted with the order"
+        ],
+        "closingNote": "They should not automatically be treated as guaranteed organic engagement, Followers, Likes, Views, reach, customers or sales. Clear expectations make comparison easier."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-instagram-comments-order-uk",
+        "title": "What Happens After You Order?",
+        "description": "After checkout, your selected comment package, quantity and submitted Instagram content URL are connected to the purchase. The order is then processed for the intended post or Reel.",
+        "steps": [
+          {
+            "id": "ig-c-th-1",
+            "title": "Keep the Content Public",
+            "description": "The submitted content should remain publicly accessible where required."
+          },
+          {
+            "id": "ig-c-th-2",
+            "title": "Do Not Delete It During Processing",
+            "description": "Removing the target post or Reel may interfere with an active order."
+          },
+          {
+            "id": "ig-c-th-3",
+            "title": "Check the URL Carefully",
+            "description": "Make sure the order points to the exact content you intended to use."
+          },
+          {
+            "id": "ig-c-th-4",
+            "title": "Follow the Order Status",
+            "description": "Processing time can vary depending on package type, quantity and current order conditions. Use NovaLikes order tracking for available status information."
+          }
+        ],
+        "closingNote": ""
+      },
+      "serviceCompare": {
+        "id": "comments-likes-views-followers-uk",
+        "title": "Comments, Likes, Views or Followers: Choose by Goal",
+        "description": "Different Instagram services affect different metrics.",
+        "current": {
+          "title": "Instagram Comments",
+          "description": "Comments displayed on an eligible public post or Reel",
+          "bestFor": "Conversation",
+          "ctaLabel": "Instagram Comments"
+        },
+        "likes": {
+          "title": "Instagram Likes",
+          "description": "Like count displayed on an eligible public post or Reel",
+          "bestFor": "Visible engagement",
+          "href": "/uk/buy-instagram-likes",
+          "ctaLabel": "Buy Instagram Likes"
+        },
+        "views": {
+          "title": "Instagram Views",
+          "description": "View count displayed on an eligible Reel or video",
+          "bestFor": "Video content",
+          "href": "/uk/buy-instagram-views",
+          "ctaLabel": "Buy Instagram Views"
+        },
+        "combinedNote": "Choose Comments for conversation. Choose Likes for visible engagement. Choose Views for video content. Choose Followers for profile audience size. One service does not automatically include the others.",
+        "commentsHref": "/uk/buy-instagram-followers"
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-instagram-comments-uk",
+        "title": "Before You Buy Instagram Comments in the UK",
+        "description": "Check these details before completing your order.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "ig-c-bb-content",
+            "title": "Confirm the Exact Post or Reel",
+            "description": "Open the public content you want to support.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-bb-url",
+            "title": "Copy the Direct Public URL",
+            "description": "Do not submit only the general Instagram profile link.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "ig-c-bb-options",
+            "title": "Choose the Right Comment Package",
+            "description": "Compare the available High Quality, Premium or other current package options before selecting one.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-c-bb-quantity",
+            "title": "Check the Quantity",
+            "description": "Make sure you're ordering the number of Comments you actually want.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "ig-c-bb-price",
+            "title": "Review the Current Price",
+            "description": "Confirm the package and total before checkout.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-c-bb-public",
+            "title": "Keep the Content Public",
+            "description": "Avoid deleting or restricting the submitted content while processing requires access.",
+            "icon": "headphones"
+          },
+          {
+            "id": "ig-c-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require your Instagram password.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "ig-c-bb-metric",
+            "title": "Choose the Correct Instagram Service",
+            "description": "Comments, Likes, Views and Followers are separate metrics.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the applicable service and refund information before completing checkout.",
+            "icon": "heart"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "instagram-comment-strategy-uk",
+        "title": "A Practical Instagram Comment Strategy for UK Accounts",
+        "description": "Comments can support selected content, but stronger community growth requires more than one visible number.",
+        "eyebrow": "Comment Strategy",
+        "closingNote": "Visible conversation can support a post. Long-term community growth comes from useful content and genuine interaction.",
+        "cards": [
+          {
+            "id": "ig-c-ww-subject",
+            "title": "Publish Content With a Clear Subject",
+            "description": "Give people something specific to react to.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-ww-captions",
+            "title": "Use Captions for Context",
+            "description": "Explain the topic, product, story or question properly.",
+            "icon": "heart"
+          },
+          {
+            "id": "ig-c-ww-priority",
+            "title": "Focus on Priority Posts",
+            "description": "Do not apply the same comment strategy to every piece of content.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "ig-c-ww-reply",
+            "title": "Reply to Genuine People",
+            "description": "Real conversations deserve real responses.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "choose-comment-package-uk",
+        "title": "Choose an Instagram Comments Package That Fits the Content",
+        "description": "Comments work differently from Likes and Views because they create visible conversation beneath individual content. NovaLikes currently offers comment quantities including 5, 10, 25, 50, 75 and 100 Comments.",
+        "quantityColumnLabel": "Consideration",
+        "recommendedColumnLabel": "What to Review",
+        "rows": [
+          {
+            "id": "ig-c-ps-activity",
+            "quantity": "Existing Comment Activity",
+            "recommendedFor": "Look at the conversation already visible beneath the post."
+          },
+          {
+            "id": "ig-c-ps-purpose",
+            "quantity": "The Purpose of the Content",
+            "recommendedFor": "A product launch, question-based Reel or collaboration may naturally suit more discussion than a simple image update."
+          },
+          {
+            "id": "ig-c-ps-profile",
+            "quantity": "Your Profile Size",
+            "recommendedFor": "The same number of Comments can look different on a newer profile and an established brand account."
+          },
+          {
+            "id": "ig-c-ps-conversation",
+            "quantity": "The Type of Conversation",
+            "recommendedFor": "Think about whether the post naturally gives people something relevant to discuss."
+          },
+          {
+            "id": "ig-c-ps-quantity",
+            "quantity": "The Quantity You Actually Want",
+            "recommendedFor": "Choose around the individual piece of content rather than automatically selecting the largest package."
+          }
+        ],
+        "bottomNote": "Compare Instagram Comments Packages"
+      },
+      "bestPractices": {
+        "id": "affordable-instagram-comments-uk",
+        "title": "Looking for Affordable Instagram Comments in the UK?",
+        "description": "If you're searching for cheap Instagram Comments in the UK, price will naturally be part of your comparison. Look beyond the lowest package price.",
+        "closingNote": "An affordable Instagram Comments service should make those details clear before checkout. NovaLikes lets you compare the available options, quantities and current prices before choosing.",
+        "items": [
+          {
+            "id": "ig-c-bp-1",
+            "title": "Comment Package Type",
+            "description": "Review what comment package types are offered.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-c-bp-2",
+            "title": "Number of Comments Included",
+            "description": "Check how many Comments are included.",
+            "icon": "heart"
+          },
+          {
+            "id": "ig-c-bp-3",
+            "title": "Current Price",
+            "description": "Compare pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-c-bp-4",
+            "title": "Supported Post or Reel Requirements",
+            "description": "Confirm what public content URL is required.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "ig-c-bp-5",
+            "title": "Password Policy",
+            "description": "Check whether your Instagram password is requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-c-bp-6",
+            "title": "Order Tracking",
+            "description": "Check whether status updates are available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "ig-c-bp-7",
+            "title": "Customer Support",
+            "description": "Support should be available if you need help.",
+            "icon": "headphones"
+          },
+          {
+            "id": "ig-c-bp-8",
+            "title": "Relevant Service Policies",
+            "description": "Review applicable service policies before paying.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "ig-c-bp-9",
+            "title": "What the Provider Actually Changes",
+            "description": "Understand what the package actually changes.",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-instagram-comments-uk",
+        "title": "Common Mistakes When Buying Instagram Comments",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-followers": {
+            "title": "Instagram Followers",
+            "description": "Choose Followers when you want to increase the follower count displayed on your public Instagram profile.",
+            "ctaLabel": "Buy Instagram Followers"
+          },
+          "buy-instagram-likes": {
+            "title": "Instagram Likes",
+            "description": "Choose Likes when you want more visible engagement on an eligible public post or Reel.",
+            "ctaLabel": "Buy Instagram Likes"
+          },
+          "buy-instagram-views": {
+            "title": "Instagram Views",
+            "description": "Choose Views when you want to increase the displayed View count on an eligible public Reel or video.",
+            "ctaLabel": "Buy Instagram Views"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "which-posts-best-suited-instagram-comments-uk",
+      "title": "Which Instagram Posts Are Best Suited to More Comments?",
+      "description": "Not every post needs additional conversation. Start with content that already gives people something clear to react to.",
+      "items": [
+        {
+          "id": "ig-c-wb-launch",
+          "title": "Product Launches",
+          "description": "A new product can naturally create questions around features, colours, availability or use."
+        },
+        {
+          "id": "ig-c-wb-collab",
+          "title": "Creator Collaborations",
+          "description": "Partnership content can generate discussion around the creator, brand or campaign."
+        },
+        {
+          "id": "ig-c-wb-opinion",
+          "title": "Opinion and Discussion Posts",
+          "description": "Questions, comparisons and opinion-led content naturally fit a comment-focused format."
+        },
+        {
+          "id": "ig-c-wb-announcement",
+          "title": "Business Announcements",
+          "description": "A new service, location, event or company update may create genuine questions."
+        },
+        {
+          "id": "ig-c-wb-educational",
+          "title": "Educational Content",
+          "description": "Useful posts and Reels can naturally lead to follow-up discussion."
+        },
+        {
+          "id": "ig-c-wb-portfolio",
+          "title": "Portfolio Content",
+          "description": "Creators and service businesses can support content representing work they genuinely want potential clients to see."
+        },
+        {
+          "id": "ig-c-wb-community",
+          "title": "Community Content",
+          "description": "Local events, industry topics and relevant community updates may naturally invite conversation."
+        }
+      ],
+      "bottomNote": "Choose the post first. Then decide whether a Comments package makes sense around it."
+    },
+    "howToBuy": {
+      "id": "how-instagram-comments-order-works-uk",
+      "title": "How Your Instagram Comments Order Works",
+      "description": "Choose your content, compare package options, select quantity, submit the URL, review your order and complete checkout without your password.",
+      "steps": [
+        {
+          "id": "ig-c-step-1",
+          "title": "Choose the Content",
+          "description": "Start with the exact public Instagram post or Reel you want to support."
+        },
+        {
+          "id": "ig-c-step-2",
+          "title": "Select a Comment Option",
+          "description": "Compare the available comment package types and current prices."
+        },
+        {
+          "id": "ig-c-step-3",
+          "title": "Choose the Quantity",
+          "description": "Select the number of Comments that fits the individual post."
+        },
+        {
+          "id": "ig-c-step-4",
+          "title": "Submit the Direct URL",
+          "description": "Paste the correct public post or Reel link."
+        },
+        {
+          "id": "ig-c-step-5",
+          "title": "Review Your Order",
+          "description": "Check the package, quantity, content URL and current price."
+        },
+        {
+          "id": "ig-c-step-6",
+          "title": "Complete Checkout",
+          "description": "Place your order without sharing your Instagram password."
+        },
+        {
+          "id": "ig-c-step-7",
+          "title": "Track the Status",
+          "description": "Use NovaLikes order tracking afterwards for available updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore More Instagram Services",
+    "relatedIntro": "Choose Followers for your profile, Likes for eligible posts or Reels, or Views for eligible Reels and videos.",
+    "quickAnswer": {
+      "heading": "Quick Answer: Where Can I Buy Instagram Comments in the UK?",
+      "text": "You can buy Instagram Comments in the UK through NovaLikes for eligible public Instagram posts and Reels. Choose an available comment package and quantity, submit the direct public content URL and complete checkout without sharing your Instagram password. Comments apply to the selected post or Reel. They do not automatically increase your Instagram Followers, Likes or Views."
+    },
+    "storySections": [
+      {
+        "id": "built-for-uk",
+        "title": "Choose Instagram Comments Around the UK Content You Actually Want to Support",
+        "lead": "Comments belong to an individual post or Reel, so the right approach depends on the subject of that content and the account publishing it.",
+        "paragraphs": [
+          "A UK creator may have a collaboration, opinion post or Reel that naturally gives viewers something to discuss. An ecommerce brand may be launching a product or collection where people could have genuine questions. A local business may publish work, services or updates that need explanation. Agencies may manage several client campaigns where the purpose and tone of the conversation differ from account to account.",
+          "Start with the post rather than the number of Comments. Understand what the content is communicating, what type of conversation fits beside it and how the account will handle genuine responses afterwards."
+        ],
+        "footer": "Comments can support visible conversation around selected content. The post itself should provide the context that makes that conversation believable and useful.",
+        "items": [
+          {
+            "title": "UK Creators",
+            "body": "Use Comments around posts and Reels with a clear subject that naturally allows genuine viewers to react, ask questions or share an opinion."
+          },
+          {
+            "title": "Ecommerce Brands",
+            "body": "Focus on launches, collections, demonstrations and product content where questions about genuine products could reasonably appear."
+          },
+          {
+            "title": "Local Businesses",
+            "body": "Support content showing real services, projects, locations and updates that potential customers may genuinely want to understand better."
+          },
+          {
+            "title": "Agencies and Client Accounts",
+            "body": "Choose the comment option and quantity according to the individual client post rather than applying one engagement pattern across every campaign."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Use visible conversation around selected campaign content while genuine community management and customer communication continue separately."
+          }
+        ]
+      },
+      {
+        "id": "uk-campaign-moments",
+        "title": "Put More Conversation Behind Important UK Campaign Moments",
+        "lead": "Some Instagram content becomes more important at particular times of year.",
+        "footer": "Comments can support visible conversation. The campaign itself still depends on accurate information and a useful offer.",
+        "items": [
+          {
+            "title": "Black Friday",
+            "body": "UK ecommerce and retail brands may have launch posts, offers and product content where visible conversation fits naturally."
+          },
+          {
+            "title": "Cyber Monday",
+            "body": "Online businesses may use Instagram alongside email, paid media and ecommerce campaigns."
+          },
+          {
+            "title": "Boxing Day",
+            "body": "Retailers and ecommerce brands may have another major sales period where product questions and campaign discussion can increase."
+          },
+          {
+            "title": "Christmas Campaigns",
+            "body": "Gift guides, seasonal products, restaurant offers, events and festive content may create useful discussion."
+          },
+          {
+            "title": "January Sales",
+            "body": "Retail brands may continue promotional activity into January."
+          },
+          {
+            "title": "Product Launches",
+            "body": "Support content where viewers may naturally ask about specifications, colours, availability or delivery."
+          },
+          {
+            "title": "Creator Partnerships",
+            "body": "Collaboration posts can create questions and reactions around the people and brands involved."
+          },
+          {
+            "title": "New Location Openings",
+            "body": "Businesses expanding into another town or city may publish content that leads to questions about opening dates, services or availability."
+          }
+        ]
+      },
+      {
+        "id": "build-conversation",
+        "title": "Give the Instagram Post a Clear Subject Before Building Conversation Around It",
+        "lead": "A visible comment section makes more sense when viewers can immediately understand what the post is about and what there is to respond to.",
+        "footer": "Purchased Comments can add visible activity. Clear content gives the conversation around the post useful context.",
+        "items": [
+          {
+            "title": "Give Viewers Something Specific to Discuss",
+            "body": "Use a clear question, comparison, opinion, product detail, result or subject instead of relying on a vague request for engagement."
+          },
+          {
+            "title": "Use the Caption to Add Context",
+            "body": "Explain enough of the story, product, project or idea for someone reading the post to understand what is happening."
+          },
+          {
+            "title": "Make the Creative Match the Subject",
+            "body": "The image, carousel or Reel should support the same topic rather than sending a different message from the caption and conversation."
+          },
+          {
+            "title": "Keep the Post Focused",
+            "body": "One understandable subject usually provides stronger context for discussion than a post trying to communicate several unrelated messages."
+          },
+          {
+            "title": "Make the Wider Profile Support the Post",
+            "body": "If genuine interest leads someone to explore the account, the profile should reinforce the creator niche, business or brand behind the content."
+          }
+        ]
+      },
+      {
+        "id": "make-comments-fit",
+        "title": "Make Sure the Comment Section Makes Sense Beside the Content",
+        "lead": "Comment relevance matters because someone can see the conversation and the post together.",
+        "paragraphs": [
+          "A restaurant Reel may lead to discussion about the dish, menu or location. A renovation post may create questions about materials, design or the finished work. A beauty post may invite questions about the treatment or product. A clothing launch may generate discussion around colours, fit or availability. An estate agency post may lead to property questions. A creator partnership may prompt reactions to the collaboration. Educational content may create genuine follow-up questions about the subject being explained."
+        ],
+        "footer": "A larger comment count is not automatically better when the conversation looks unrelated to the post. Keep visible interaction connected to the content it appears beneath."
+      },
+      {
+        "id": "reply-genuine",
+        "title": "Handle Genuine Instagram Questions With Your Own Real Information",
+        "lead": "Purchased Comments and genuine audience responses are different. When real users ask about the creator, product, service or business, those replies should come from someone who actually knows the answer.",
+        "paragraphs": [
+          "For a UK business, genuine questions may involve prices, delivery areas, opening times, appointments, availability, products, services, bookings or locations. Creators may receive real questions about the subject, collaboration or content itself. Answer those users accurately instead of treating every comment as just another engagement number."
+        ],
+        "footer": "Real people deserve real answers. Use first-hand knowledge so genuine public conversations remain accurate and useful."
+      },
+      {
+        "id": "trust-management",
+        "title": "Manage the Comment Section Like Part of the Public Customer Experience",
+        "lead": "Anyone viewing the post can also see how the account handles questions, complaints, spam and genuine interaction.",
+        "footer": "Visible conversation can support presentation. Credibility depends on how accurately and responsibly the account communicates with real people.",
+        "items": [
+          {
+            "title": "Answer Real Questions With Accurate Information",
+            "body": "Check genuine product, service, availability or policy information rather than guessing in a public reply."
+          },
+          {
+            "title": "Do Not Turn Comments Into Fake Customer Stories",
+            "body": "Do not present invented testimonials, purchases or experiences as if they came from genuine customers."
+          },
+          {
+            "title": "Keep Irrelevant Spam Under Control",
+            "body": "Moderate obvious spam or unrelated activity where appropriate so useful conversations remain easier to follow."
+          },
+          {
+            "title": "Handle Real Complaints Through the Proper Process",
+            "body": "If an actual customer raises a problem, respond appropriately and move the issue into the business's normal support process when necessary."
+          },
+          {
+            "title": "Keep Genuine Replies Consistent With the Account",
+            "body": "Responses from the creator or business should match its normal voice and provide information the account can genuinely support."
+          }
+        ]
+      },
+      {
+        "id": "real-experience",
+        "title": "Use Instagram Conversation Around Content Based on Real Experience",
+        "lead": "Posts built from genuine work, products and knowledge naturally give viewers more specific things to ask about or discuss.",
+        "footer": "Comments can support visible interaction. First-hand experience gives the underlying content something meaningful for people to respond to.",
+        "items": [
+          {
+            "title": "Show Work You Have Actually Completed",
+            "body": "Use genuine projects, transformations and results that give viewers specific details they can see and discuss."
+          },
+          {
+            "title": "Talk About Products You Really Offer",
+            "body": "Use accurate product information so genuine questions about features, availability or use can be answered properly."
+          },
+          {
+            "title": "Explain Processes You Understand",
+            "body": "Turn real professional or practical knowledge into content that can support useful follow-up discussion."
+          },
+          {
+            "title": "Use Recurring Customer Questions as Content Ideas",
+            "body": "Questions received through enquiries, consultations and customer conversations can reveal subjects people genuinely want explained."
+          },
+          {
+            "title": "Share a First-Hand Point of View",
+            "body": "Original experience and informed opinions can give genuine viewers more to respond to than general advice repeated across similar accounts."
+          }
+        ]
+      },
+      {
+        "id": "social-proof",
+        "title": "Keep Instagram Comments Separate From Genuine Customer Proof",
+        "paragraphs": [
+          "Visible conversation can make a post appear more active, but a comment count does not show whether genuine customers have bought from, hired or recommended the business.",
+          "UK businesses may have stronger customer evidence through verified reviews, authentic testimonials, genuine customer Comments, customer-created content, completed projects, case studies, accurate company information and responsive service.",
+          "Use real proof where it exists. Do not present purchased Comments as customer approval or as evidence that genuine buyers recommend the business."
+        ],
+        "footer": "Comments can support the visible conversation around a post. Genuine customer experience provides a separate and more meaningful form of proof."
+      },
+      {
+        "id": "organic-reach",
+        "title": "Instagram Comments and Organic Reach Are Not the Same Thing",
+        "lead": "More Comments do not automatically mean Instagram will distribute the post more widely. Buying Instagram Comments should not be treated as a guaranteed way to:",
+        "bullets": [
+          "reach Explore",
+          "make a Reel viral",
+          "gain organic Followers",
+          "increase Likes",
+          "add Views",
+          "increase organic reach",
+          "generate website traffic",
+          "secure brand partnerships",
+          "create customers",
+          "increase sales"
+        ],
+        "paragraphs": [
+          "NovaLikes Instagram Comments packages are designed around comments displayed on the selected eligible content.",
+          "Organic distribution and genuine audience behaviour remain separate outcomes."
+        ]
+      },
+      {
+        "id": "measure-performance",
+        "title": "Measure Real Instagram Response Separately From the Public Comment Count",
+        "lead": "The number of visible Comments is only one part of a post. Genuine Instagram and business data can show whether real people found the content useful enough to interact or take another action.",
+        "footer": "Purchased Comments affect one visible metric. Use genuine Instagram Insights and real business outcomes when deciding what content actually performs.",
+        "items": [
+          {
+            "title": "Genuine Audience Comments",
+            "body": "Look at what real users independently ask, discuss or contribute around the content."
+          },
+          {
+            "title": "Voluntary Shares",
+            "body": "People choosing to send the post to someone else can indicate that the content was relevant or useful to them."
+          },
+          {
+            "title": "Real Saves",
+            "body": "Saves may show that genuine viewers want to return to the information, idea or inspiration later."
+          },
+          {
+            "title": "Profile Activity",
+            "body": "Check whether genuine interest in the content encourages people to explore the wider Instagram account."
+          },
+          {
+            "title": "Messages and Enquiries",
+            "body": "For creators and businesses, genuine direct contact can show that the post created interest beyond its public engagement numbers."
+          },
+          {
+            "title": "Commercial or Campaign Outcomes",
+            "body": "Where relevant, measure bookings, enquiries, orders or other real objectives directly rather than using the Comment count as a substitute."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Use Instagram Comments Around Posts That Naturally Create Local Customer Questions",
+        "paragraphs": [
+          "Local-business content can provide useful conversation opportunities because potential customers often need practical information before deciding whether to visit, enquire or buy.",
+          "A restaurant may post a menu item that creates questions about availability or location. A builder may show completed work that prompts questions about the project. A salon may present a treatment. An interior designer can show a finished space. A retailer may introduce new stock. An estate agent can feature a property. An event business may receive questions about dates or access. A professional service can publish an explanation around a common customer concern.",
+          "If you add Comments to this type of content, keep the business behind the post accurate. Genuine questions about services, locations, availability or bookings should still receive reliable answers."
+        ],
+        "footer": "Visible conversation can support presentation of a local-business post. Local trust comes from the real company, its work and how it responds to genuine customers."
+      },
+      {
+        "id": "instagram-insights",
+        "title": "Use Instagram Insights to Understand Genuine Conversation",
+        "lead": "Purchased Comments change one visible metric. Your genuine account analytics and actual audience responses can tell you much more. Look at:",
+        "footer": "Use genuine audience behaviour to improve future content. Do not rely only on the public comment count.",
+        "items": [
+          {
+            "title": "Genuine Comment Themes",
+            "body": "What questions or topics appear repeatedly?"
+          },
+          {
+            "title": "Shares and Saves",
+            "body": "Which posts are useful enough for real users to keep or send to others?"
+          },
+          {
+            "title": "Profile Activity",
+            "body": "Does the content encourage genuine viewers to explore the account?"
+          },
+          {
+            "title": "Organic Engagement",
+            "body": "Which content creates authentic Likes, Comments and other interactions?"
+          },
+          {
+            "title": "Customer Questions",
+            "body": "For businesses, real questions can reveal information customers need before buying."
+          }
+        ]
+      },
+      {
+        "id": "comment-strategy",
+        "title": "A Practical Instagram Comment Strategy for UK Accounts",
+        "lead": "Comments can support selected content, but stronger community growth requires more than one visible number.",
+        "items": [
+          {
+            "title": "Publish Content With a Clear Subject",
+            "body": "Give people something specific to react to."
+          },
+          {
+            "title": "Use Captions for Context",
+            "body": "Explain the topic, product, story or question properly."
+          },
+          {
+            "title": "Focus on Priority Posts",
+            "body": "Do not apply the same comment strategy to every piece of content."
+          },
+          {
+            "title": "Reply to Genuine People",
+            "body": "Real conversations deserve real responses."
+          },
+          {
+            "title": "Learn From Real Questions",
+            "body": "Repeated audience questions can reveal useful future content ideas."
+          },
+          {
+            "title": "Review Genuine Analytics",
+            "body": "Use your actual account performance to understand organic interaction."
+          },
+          {
+            "title": "Moderate Where Necessary",
+            "body": "Keep irrelevant activity from weakening the public conversation."
+          },
+          {
+            "title": "Connect Instagram to Wider Marketing",
+            "body": "UK businesses may use Instagram alongside SEO, Google Ads, ecommerce, local search, email and their website."
+          },
+          {
+            "title": "Keep Comments in Perspective",
+            "body": "Visible conversation can support a post. Long-term community growth comes from useful content and genuine interaction."
+          }
+        ]
+      }
+    ]
+  }
+}

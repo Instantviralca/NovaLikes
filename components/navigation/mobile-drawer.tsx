@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { useResolvePublicHref } from '@/components/i18n/locale-link';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -18,7 +19,6 @@ import {
   primaryCta,
 } from '@/data/navigation';
 import { LOCALE_DIR, isCoreServiceSlug } from '@/lib/i18n/config';
-import { localizeHref } from '@/lib/i18n/paths';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 
 type MobileDrawerProps = {
@@ -28,6 +28,7 @@ type MobileDrawerProps = {
 
 export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
   const { locale, ui } = useI18nChrome();
+  const resolveHref = useResolvePublicHref();
   const items = getMainNavigation(locale);
   const side = LOCALE_DIR[locale] === 'rtl' ? 'left' : 'right';
 
@@ -41,7 +42,7 @@ export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
         <nav aria-label={ui.nav.mobileNav} className="mt-6 space-y-4">
           {items.map((item) => {
             if (!isMegaMenuItem(item)) {
-              const href = localizeHref(item.href, locale);
+              const href = resolveHref(item.href);
               const label =
                 item.id === 'nav-home'
                   ? ui.nav.home
@@ -70,7 +71,7 @@ export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
             }
 
             const services = getMegaMenuServices(item.platformId);
-            const platformHref = localizeHref(item.href, locale);
+            const platformHref = resolveHref(item.href);
             const platformLabel =
               item.platformId === 'instagram'
                 ? ui.nav.instagram
@@ -90,7 +91,7 @@ export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
                 </Link>
                 <ul className="space-y-2 border-s border-border ps-3">
                   {services.map((service) => {
-                    const href = localizeHref(service.url, locale);
+                    const href = resolveHref(service.url);
                     const label = isCoreServiceSlug(service.slug)
                       ? ui.services[service.slug]
                       : service.navigationLabel;
@@ -114,8 +115,8 @@ export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
 
           <Button asChild className="w-full">
             <Link
-              href={localizeHref(primaryCta.href, locale)}
-              prefetch={prefetchForHref(localizeHref(primaryCta.href, locale))}
+              href={resolveHref(primaryCta.href)}
+              prefetch={prefetchForHref(resolveHref(primaryCta.href))}
               onClick={() => onOpenChange(false)}
             >
               {ui.nav.getStarted}

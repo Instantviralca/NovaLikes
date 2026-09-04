@@ -13,9 +13,9 @@ import {
 } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
 import { localizeHref } from '@/lib/i18n/paths';
-import { buildFaqPageSchemaFromVisible } from '@/lib/faqs/schema';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
+import { webPageSchema } from '@/schemas/website';
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -45,12 +45,17 @@ export default async function LocalizedFaqPage({ params }: PageProps) {
   const faqHref = localizeHref('/faq', locale);
   const homeHref = localizeHref('/', locale);
 
+  const meta = loadMetadataBundle(locale).faq;
   const graph = asJsonLdGraph([
+    webPageSchema({
+      title: meta.title,
+      description: meta.description,
+      path: faqHref,
+    }),
     breadcrumbSchema([
       { label: ui.breadcrumbs.home, href: homeHref },
       { label: ui.breadcrumbs.faq, href: faqHref },
     ]),
-    buildFaqPageSchemaFromVisible(items),
   ]);
 
   return (

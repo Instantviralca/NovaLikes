@@ -1,0 +1,413 @@
+{
+  "summary": {
+    "checked": 40,
+    "failures": 0,
+    "p0": 0,
+    "p1": 0,
+    "pagesMissingPackages": [],
+    "pagesMissingFaq": [],
+    "generatedAt": "2026-09-03T12:51:02.891Z"
+  },
+  "results": [
+    {
+      "url": "http://localhost:3001/ca/buy-instagram-followers",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-instagram-likes",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-instagram-views",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-instagram-comments",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-tiktok-followers",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-tiktok-likes",
+      "ok": true,
+      "imgCount": 12,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-tiktok-views",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-facebook-followers",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-facebook-page-likes",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/ca/buy-facebook-post-likes",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-instagram-followers",
+      "ok": true,
+      "imgCount": 12,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-instagram-likes",
+      "ok": true,
+      "imgCount": 11,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-instagram-views",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-instagram-comments",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-tiktok-followers",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-tiktok-likes",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-tiktok-views",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-facebook-followers",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-facebook-page-likes",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/au/buy-facebook-post-likes",
+      "ok": true,
+      "imgCount": 12,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-instagram-followers",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-instagram-likes",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-instagram-views",
+      "ok": true,
+      "imgCount": 12,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-instagram-comments",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-tiktok-followers",
+      "ok": true,
+      "imgCount": 17,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-tiktok-likes",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-tiktok-views",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-facebook-followers",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-facebook-page-likes",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/us/buy-facebook-post-likes",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-instagram-followers",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-instagram-likes",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-instagram-views",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-instagram-comments",
+      "ok": true,
+      "imgCount": 13,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-tiktok-followers",
+      "ok": true,
+      "imgCount": 18,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-tiktok-likes",
+      "ok": true,
+      "imgCount": 15,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-tiktok-views",
+      "ok": true,
+      "imgCount": 18,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-facebook-followers",
+      "ok": true,
+      "imgCount": 14,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-facebook-page-likes",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    },
+    {
+      "url": "http://localhost:3001/uk/buy-facebook-post-likes",
+      "ok": true,
+      "imgCount": 16,
+      "hasPackages": true,
+      "hasFaq": true,
+      "hasHow": true,
+      "issues": [],
+      "status": 200
+    }
+  ]
+}

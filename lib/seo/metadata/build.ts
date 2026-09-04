@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 import { seoSiteConfig } from '@/config/seo';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { isCoreLocalizedPath, isEnglishOnlyLearnPath } from '@/lib/i18n/config';
-import { hreflangMap } from '@/lib/i18n/paths';
+import { hreflangMapWithMarket } from '@/lib/market/paths';
 import {
   absoluteUrl,
   buildCanonicalUrl,
@@ -23,7 +23,7 @@ import type { MetadataEntry, SeoRobotsPolicy } from '@/types/seo-metadata';
 function alternateLanguages(path: string): Record<string, string> | undefined {
   if (!isCoreLocalizedPath(path) || isEnglishOnlyLearnPath(path)) return undefined;
   const languages: Record<string, string> = {};
-  for (const [code, href] of Object.entries(hreflangMap(path))) {
+  for (const [code, href] of Object.entries(hreflangMapWithMarket(path))) {
     languages[code] = absoluteUrl(href);
   }
   return languages;

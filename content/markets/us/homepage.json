@@ -1,0 +1,1204 @@
+{
+  "hero": {
+    "eyebrow": "INSTAGRAM GROWTH FOR THE USA",
+    "title": "Build a Stronger Instagram Presence in the USA",
+    "description": "Put more visible momentum behind the Instagram profile and content you're already building. NovaLikes gives creators, businesses, brands and agencies across the United States a straightforward way to choose Instagram Followers, Likes, Views and Comments from one place. Start with the metric you want to work on, compare the available packages and place your order using only the public profile or content details required for that service. No Instagram password is required. Whether you're growing a creator profile, preparing an ecommerce launch, strengthening a local business account or putting more attention behind an important Reel, start with the Instagram service that matches your actual goal.",
+    "primaryCta": {
+      "label": "Explore Instagram Services",
+      "href": "#instagram-services"
+    },
+    "secondaryCta": {
+      "label": "Compare Packages",
+      "href": "#services-overview"
+    },
+    "trustFeatures": [
+      {
+        "id": "password",
+        "line1": "No Password",
+        "line2": "Required",
+        "icon": "shield"
+      },
+      {
+        "id": "pricing",
+        "line1": "Clear",
+        "line2": "Pricing",
+        "icon": "tag"
+      },
+      {
+        "id": "payments",
+        "line1": "Secure",
+        "line2": "Checkout",
+        "icon": "shield"
+      },
+      {
+        "id": "tracking",
+        "line1": "Order",
+        "line2": "Tracking",
+        "icon": "truck"
+      }
+    ],
+    "visual": {
+      "src": "/assets/images/homepage/hero-social-growth.webp",
+      "alt": "NovaLikes Instagram growth illustration for US creators and businesses",
+      "width": 1024,
+      "height": 682
+    }
+  },
+  "platformSelector": {
+    "id": "platform-selector",
+    "eyebrow": "Instagram Services",
+    "title": "What Instagram Growth Services Does NovaLikes Offer in the USA?",
+    "description": "NovaLikes offers Instagram Followers, Likes, Views and Comments for eligible public profiles and content. Each service works on a different Instagram metric. Followers work at the profile level. Likes apply to eligible posts and Reels. Views are designed for eligible Reels and video content. Comments add visible conversation around selected posts and Reels. Choose the service based on the exact part of your Instagram presence you want to strengthen.",
+    "trustItems": [
+      {
+        "id": "packages",
+        "label": "Clear Package Options",
+        "icon": "shield"
+      },
+      {
+        "id": "password",
+        "label": "No Password Required",
+        "icon": "shield"
+      },
+      {
+        "id": "refund",
+        "label": "30-Day Money-Back Guarantee on Eligible Orders",
+        "icon": "shield"
+      }
+    ],
+    "socialProof": {
+      "text": "Compare Instagram follower, like, view and comment packages",
+      "href": "#services-overview"
+    },
+    "platforms": [
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "description": "Followers, Likes, Views and Comments for eligible Instagram profiles and content in the USA.",
+        "href": "#instagram-services",
+        "ctaLabel": "View Instagram",
+        "badge": "Instagram Services",
+        "metric": {
+          "value": "Profile",
+          "label": "Followers"
+        },
+        "tags": [
+          {
+            "label": "Instagram Followers",
+            "href": "/us/buy-instagram-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Instagram Likes",
+            "href": "/us/buy-instagram-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Instagram Views",
+            "href": "/us/buy-instagram-views",
+            "icon": "play"
+          },
+          {
+            "label": "Instagram Comments",
+            "href": "/us/buy-instagram-comments",
+            "icon": "comment"
+          }
+        ]
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "description": "Followers, likes, and views for TikTok accounts and videos.",
+        "href": "#tiktok-services",
+        "ctaLabel": "View TikTok",
+        "metric": {
+          "value": "Video",
+          "label": "Views"
+        },
+        "tags": [
+          {
+            "label": "Account Growth",
+            "href": "/us/buy-tiktok-followers",
+            "icon": "trend"
+          },
+          {
+            "label": "Video Likes",
+            "href": "/us/buy-tiktok-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Video Views",
+            "href": "/us/buy-tiktok-views",
+            "icon": "eye"
+          },
+          {
+            "label": "More Engagement",
+            "href": "#tiktok-services",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "description": "Followers, Page likes, and post likes for public Facebook Pages and posts.",
+        "href": "#facebook-services",
+        "ctaLabel": "View Facebook",
+        "metric": {
+          "value": "Page",
+          "label": "Likes"
+        },
+        "tags": [
+          {
+            "label": "Page Growth",
+            "href": "/us/buy-facebook-page-likes",
+            "icon": "users"
+          },
+          {
+            "label": "Post Likes",
+            "href": "/us/buy-facebook-post-likes",
+            "icon": "thumb"
+          },
+          {
+            "label": "Profile Followers",
+            "href": "/us/buy-facebook-followers",
+            "icon": "user"
+          },
+          {
+            "label": "More Reach",
+            "href": "#facebook-services",
+            "icon": "reach"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesOverview": {
+    "id": "services-overview",
+    "eyebrow": "Choose Your Goal",
+    "title": "Start With the Instagram Result You Want",
+    "description": "Instagram growth is not one number. Your profile audience, post engagement, Reel Views and visible conversation all represent different parts of the account. Choose the result first. Then choose the service.",
+    "trustNote": "Your Goal → Start With the Right Service",
+    "features": [
+      {
+        "id": "followers",
+        "label": "Increase the follower count around your profile → Instagram Followers",
+        "icon": "users"
+      },
+      {
+        "id": "likes",
+        "label": "Add visible engagement to a post or Reel → Instagram Likes",
+        "icon": "bolt"
+      },
+      {
+        "id": "views",
+        "label": "Increase the displayed View count on video content → Instagram Views",
+        "icon": "headset"
+      },
+      {
+        "id": "comments",
+        "label": "Add visible conversation around content → Instagram Comments",
+        "icon": "shield"
+      }
+    ]
+  },
+  "platformGroupTitles": {
+    "instagram": {
+      "id": "instagram-services",
+      "title": "Built Around the Way US Creators and Businesses Use Instagram",
+      "description": "Instagram can play a completely different role depending on the account behind it. A creator in Los Angeles may use Instagram around entertainment, fashion, beauty, fitness or lifestyle content. An ecommerce brand in New York may rely on Instagram around product drops, creator partnerships and seasonal promotions. A local business in Miami, Dallas, Houston, Chicago or another US market may use its profile to show projects, services, products and recent activity. An agency may manage multiple accounts with completely different audiences and campaign goals. An established brand may use Instagram alongside paid media, search, email, ecommerce and influencer marketing. That means there is no single growth package that makes sense for every account."
+    },
+    "tiktok": {
+      "id": "tiktok-services",
+      "title": "TikTok Growth Services",
+      "description": "Choose TikTok Followers, Likes or Views when you're working on a TikTok profile or individual videos. TikTok services are separate from Instagram and should be selected according to the metric you want to change."
+    },
+    "facebook": {
+      "id": "facebook-services",
+      "title": "Facebook Growth Services",
+      "description": "Choose Facebook Followers, Page Likes or Post Likes when you're working on an eligible public Facebook Page or individual post. Facebook Followers and Page Likes work at the Page level. Post Likes work on individual content."
+    }
+  },
+  "why": {
+    "id": "why-novalikes",
+    "title": "Why Choose NovaLikes?",
+    "description": "Ordering social media services should be easy to understand before checkout.",
+    "points": [
+      {
+        "title": "No Password Required",
+        "body": "NovaLikes only asks for the public profile, post, Reel, Page or video information required for the service you choose. Your password stays private."
+      },
+      {
+        "title": "Clear Package Options",
+        "body": "Compare the available quantities and current prices before ordering."
+      },
+      {
+        "title": "Service-Specific Ordering",
+        "body": "Followers work around public profile details. Likes, Views and Comments work around eligible individual content."
+      },
+      {
+        "title": "Secure Card Payments",
+        "body": "Complete your purchase through the available NovaLikes checkout."
+      },
+      {
+        "title": "Order Tracking",
+        "body": "Use your order information afterward to check available status updates."
+      },
+      {
+        "title": "Customer Support",
+        "body": "Contact NovaLikes if you need help with a service or existing purchase."
+      },
+      {
+        "title": "30-Day Money-Back Guarantee on Eligible Orders",
+        "body": "Eligible purchases are covered according to the current NovaLikes refund terms."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "how-it-works",
+    "title": "How NovaLikes Instagram Orders Work",
+    "description": "No Instagram password is required.",
+    "steps": [
+      {
+        "title": "Choose Your Instagram Service",
+        "body": "Start with Followers, Likes, Views or Comments."
+      },
+      {
+        "title": "Select a Package",
+        "body": "Compare the available quantities and current pricing."
+      },
+      {
+        "title": "Enter the Required Public Details",
+        "body": "Depending on the service, provide the public Instagram username or direct link to the eligible post or Reel."
+      },
+      {
+        "title": "Review Your Order",
+        "body": "Check the service, package, profile or content information and current price."
+      },
+      {
+        "title": "Complete Checkout",
+        "body": "Place your order without sharing your Instagram password."
+      },
+      {
+        "title": "Track Your Purchase",
+        "body": "Use NovaLikes order tracking afterward for available status updates."
+      }
+    ]
+  },
+  "guarantees": {
+    "id": "guarantees",
+    "title": "More Followers Don't Automatically Mean More Reach",
+    "description": "Instagram metrics should be understood individually. A larger follower count does not automatically guarantee more Reel Views. More Likes do not automatically create Followers. More Views do not automatically produce organic distribution. More Comments do not automatically create sales. NovaLikes Instagram services should not be treated as guaranteed ways to reach Explore, make content viral, gain organic Followers, increase organic reach, secure creator partnerships, generate website traffic, create customer enquiries or increase sales. Each service works around the visible metric described by its package. Organic Instagram performance is a separate outcome. Clear expectations make it easier to choose the right service.",
+    "items": [
+      {
+        "title": "Not Guaranteed: Explore or Viral Distribution",
+        "body": "Purchased metrics should not be treated as guarantees of Explore placement or viral Reels."
+      },
+      {
+        "title": "Not Guaranteed: Organic Follower or Reach Growth",
+        "body": "More Likes do not automatically create Followers. More Views do not automatically increase organic reach."
+      },
+      {
+        "title": "Not Guaranteed: Business Results",
+        "body": "Services should not be treated as guarantees of customers, enquiries, sales or brand partnerships."
+      },
+      {
+        "title": "Buy for the Metric the Service Provides",
+        "body": "Clear expectations make it easier to choose the right service and compare packages realistically."
+      }
+    ]
+  },
+  "beforeYouBuy": {
+    "id": "before-you-buy",
+    "title": "Know What You're Ordering Before You Pay",
+    "description": "A few checks can help prevent ordering mistakes. If you're comparing affordable Instagram growth services in the USA, check which Instagram metric changes, package quantity, current pricing, required public information, password requirements, order tracking, customer support, relevant policies and what the service actually promises.",
+    "items": [
+      {
+        "question": "Profile or Content?",
+        "answer": "Choose Followers when you're working on the overall Instagram profile. Choose Likes, Views or Comments when specific content is the priority."
+      },
+      {
+        "question": "Correct Username or URL?",
+        "answer": "Double-check the public details before submitting them."
+      },
+      {
+        "question": "Correct Package?",
+        "answer": "Review the quantity you've selected."
+      },
+      {
+        "question": "Current Price?",
+        "answer": "Confirm the current package price before checkout."
+      },
+      {
+        "question": "Public Content?",
+        "answer": "Keep the submitted profile, post or Reel publicly accessible where required during processing."
+      },
+      {
+        "question": "Password?",
+        "answer": "Keep it private. NovaLikes does not require your Instagram password."
+      },
+      {
+        "question": "Policies?",
+        "answer": "Review the applicable service and refund information before completing your order."
+      }
+    ]
+  },
+  "faq": {
+    "id": "homepage-faq",
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about NovaLikes Instagram growth services in the USA.",
+    "items": [
+      {
+        "question": "What Instagram growth services does NovaLikes offer in the USA?",
+        "answer": "NovaLikes offers Instagram Followers, Likes, Views and Comments for eligible public profiles, posts and Reels. Choose the service based on the Instagram metric you want to work on."
+      },
+      {
+        "question": "Where can I buy Instagram Followers in the USA?",
+        "answer": "NovaLikes offers Instagram Followers packages for eligible public profiles. Choose an available package, submit the correct public username and complete checkout without sharing your Instagram password."
+      },
+      {
+        "question": "Can I buy Instagram Likes in the USA?",
+        "answer": "Yes. NovaLikes offers Instagram Likes packages for eligible public posts and Reels."
+      },
+      {
+        "question": "Can I buy Instagram Views for Reels?",
+        "answer": "Yes. Instagram Views packages are available for eligible public Reels and video content."
+      },
+      {
+        "question": "Can I buy Instagram Comments?",
+        "answer": "Yes. NovaLikes offers Instagram Comments packages for eligible public posts and Reels."
+      },
+      {
+        "question": "Do I need to share my Instagram password?",
+        "answer": "No. NovaLikes does not require your Instagram password or verification codes for Instagram services."
+      },
+      {
+        "question": "Which Instagram service should I choose?",
+        "answer": "Choose Followers for visible profile audience size, Likes for a specific post or Reel, Views for eligible video content and Comments for visible conversation around selected content."
+      },
+      {
+        "question": "Are Instagram Followers, Likes and Views the same thing?",
+        "answer": "No. They are separate Instagram metrics. Followers apply to the profile, while Likes and Views apply to individual eligible content."
+      },
+      {
+        "question": "Will buying Instagram Followers automatically increase my Likes?",
+        "answer": "No. Instagram Followers and Likes are separate metrics and separate services."
+      },
+      {
+        "question": "Will buying Instagram Views make my Reel viral?",
+        "answer": "There is no guarantee. A Views package changes the visible View metric described by the service. Organic distribution is separate."
+      },
+      {
+        "question": "Will more Likes improve organic reach?",
+        "answer": "There is no guarantee. Likes and organic content distribution are different outcomes."
+      },
+      {
+        "question": "Can US businesses use NovaLikes Instagram services?",
+        "answer": "Eligible public Instagram profiles and content used by US businesses, creators, brands and agencies can use the relevant NovaLikes services."
+      },
+      {
+        "question": "Can local businesses use Instagram growth services?",
+        "answer": "Yes, where the profile or content meets the relevant service requirements. Keep your actual business information and content accurate alongside your Instagram strategy."
+      },
+      {
+        "question": "How do I choose the right package?",
+        "answer": "Start with your current profile or content metric, decide what increase you want and compare the available package options before ordering."
+      },
+      {
+        "question": "Can I track my order?",
+        "answer": "Yes. NovaLikes provides order tracking for available status information after checkout."
+      },
+      {
+        "question": "Does NovaLikes require access to my Instagram account?",
+        "answer": "No. You only provide the public profile or content details required for the service you order."
+      },
+      {
+        "question": "Does NovaLikes offer a money-back guarantee?",
+        "answer": "NovaLikes offers a 30-day money-back guarantee on eligible orders according to its current refund terms."
+      },
+      {
+        "question": "Does NovaLikes also offer TikTok services?",
+        "answer": "Yes. NovaLikes also offers TikTok Followers, Likes and Views."
+      },
+      {
+        "question": "Does NovaLikes offer Facebook services?",
+        "answer": "Yes. Facebook Followers, Page Likes and Post Likes are also available."
+      }
+    ]
+  },
+  "reviews": {
+    "id": "homepage-reviews",
+    "title": "What Customers Say About NovaLikes",
+    "description": "Read feedback from customers who have used NovaLikes for social media services. Their experiences can help you get a better idea of the ordering process before placing your own order.",
+    "cta": {
+      "label": "Read More Reviews",
+      "href": "/reviews"
+    }
+  },
+  "finalCta": {
+    "id": "home-final-cta",
+    "eyebrow": "Instagram Growth for the USA",
+    "title": "Ready to Build a Stronger Instagram Presence?",
+    "description": "Start with the metric that matters most to your profile or campaign. Build your visible profile audience with Followers. Put more engagement behind important posts and Reels with Likes. Give selected video content more visible Views. Or create more visible conversation with Comments. Choose your Instagram service, compare the available packages and place your order without sharing your password.",
+    "primaryCta": {
+      "label": "Explore Instagram Services",
+      "href": "#instagram-services"
+    },
+    "secondaryCta": {
+      "label": "Compare Packages",
+      "href": "#services-overview"
+    },
+    "trustItems": [
+      {
+        "id": "secure",
+        "label": "No Password Required",
+        "icon": "shield"
+      },
+      {
+        "id": "delivery",
+        "label": "Clear Pricing",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Secure Checkout",
+        "icon": "headset"
+      },
+      {
+        "id": "tracking",
+        "label": "Order Tracking",
+        "icon": "shield"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "ig-followers",
+      "platform": "instagram",
+      "slug": "buy-instagram-followers",
+      "href": "/us/buy-instagram-followers",
+      "name": "Instagram Followers",
+      "cardBlurb": "Follower packages for your public Instagram profile.",
+      "commercialLabel": "INSTAGRAM FOLLOWERS",
+      "title": "Build a Stronger Visible Audience Around Your Profile",
+      "intro": "Choose Instagram Followers when the follower count displayed on your public profile is the metric you want to work on. Follower packages can support the visible audience around a creator account, business profile or established brand while you continue building the content behind it.",
+      "points": [
+        {
+          "title": "Creators",
+          "text": "Strengthen the visible profile around a clear niche and content people have a reason to explore."
+        },
+        {
+          "title": "Personal Brands",
+          "text": "Support the visible audience around an established or growing public profile."
+        },
+        {
+          "title": "Local Businesses",
+          "text": "Build a stronger profile around genuine services, locations, projects and business activity."
+        },
+        {
+          "title": "Ecommerce Brands",
+          "text": "Put attention behind launches, products and Reels that support your wider campaign."
+        },
+        {
+          "title": "Campaign Preparation",
+          "text": "Prepare a profile before a launch, collaboration or campaign sends new visitors toward it."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Followers",
+        "href": "/us/buy-instagram-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-followers-visual.webp",
+        "alt": "Instagram profile with follower and audience indicators"
+      },
+      "tone": "rose"
+    },
+    {
+      "id": "ig-likes",
+      "platform": "instagram",
+      "slug": "buy-instagram-likes",
+      "href": "/us/buy-instagram-likes",
+      "name": "Instagram Likes",
+      "cardBlurb": "Like packages for eligible Instagram posts and Reels.",
+      "commercialLabel": "INSTAGRAM LIKES",
+      "title": "Put More Engagement Behind Important Posts and Reels",
+      "intro": "Choose Instagram Likes when a specific piece of content is your priority. Add more visible Likes around an eligible public post or Reel based on the content, existing engagement and increase you want.",
+      "points": [
+        {
+          "title": "Product Launches",
+          "text": "Support the content that introduces or demonstrates the product most clearly."
+        },
+        {
+          "title": "Creator Collaborations",
+          "text": "Focus on the post or Reel that best represents the partnership."
+        },
+        {
+          "title": "Portfolio Posts",
+          "text": "Highlight work you'd genuinely want a potential client, customer or partner to see."
+        },
+        {
+          "title": "Campaign Content",
+          "text": "Add visible Likes around announcements, updates and priority creative."
+        },
+        {
+          "title": "Priority Reels",
+          "text": "Put more engagement behind Reels that matter most to your strategy."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Likes",
+        "href": "/us/buy-instagram-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
+        "alt": "Instagram post with likes and engagement indicators"
+      },
+      "tone": "violet"
+    },
+    {
+      "id": "ig-views",
+      "platform": "instagram",
+      "slug": "buy-instagram-views",
+      "href": "/us/buy-instagram-views",
+      "name": "Instagram Views",
+      "cardBlurb": "View packages for eligible Instagram Reels and videos.",
+      "commercialLabel": "INSTAGRAM VIEWS",
+      "title": "Give Your Reels More Visible Attention",
+      "intro": "Choose Instagram Views when video visibility is the metric you're working on. Views apply to eligible public Instagram Reels and video content rather than your overall profile follower count.",
+      "points": [
+        {
+          "title": "Product Demonstrations",
+          "text": "Put more visible Views behind videos that show your offer clearly."
+        },
+        {
+          "title": "Creator Reels",
+          "text": "Support the Reels that represent your niche and content direction."
+        },
+        {
+          "title": "Business Videos",
+          "text": "Give priority video content more visible attention."
+        },
+        {
+          "title": "Campaign Creative",
+          "text": "Support video content carrying your main campaign message."
+        },
+        {
+          "title": "Evergreen Video Content",
+          "text": "Support tutorials, explainers and useful videos that continue representing the account."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Views",
+        "href": "/us/buy-instagram-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
+        "alt": "Instagram Reel with video view indicators"
+      },
+      "tone": "orange"
+    },
+    {
+      "id": "ig-comments",
+      "platform": "instagram",
+      "slug": "buy-instagram-comments",
+      "href": "/us/buy-instagram-comments",
+      "name": "Instagram Comments",
+      "cardBlurb": "Comment packages for eligible Instagram posts and Reels.",
+      "commercialLabel": "INSTAGRAM COMMENTS",
+      "title": "Build More Visible Conversation Around Your Content",
+      "intro": "Comments create a different type of interaction from Followers, Likes and Views. Choose Instagram Comments when you want more visible conversation around an eligible public post or Reel.",
+      "points": [
+        {
+          "title": "Product Launches",
+          "text": "Add visible conversation around important announcements and launch content."
+        },
+        {
+          "title": "Discussion Posts",
+          "text": "Support content built around questions, topics or audience conversation."
+        },
+        {
+          "title": "Creator Collaborations",
+          "text": "Focus on partnership content where visible discussion supports the post."
+        },
+        {
+          "title": "Announcements",
+          "text": "Use Comments when visible conversation supports a priority update or milestone."
+        },
+        {
+          "title": "Campaign Posts",
+          "text": "Support content where conversation helps the post carry its message."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Comments",
+        "href": "/us/buy-instagram-comments"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-comments-visual.webp",
+        "alt": "Instagram post with comments and conversation bubbles"
+      },
+      "tone": "amber"
+    },
+    {
+      "id": "tt-followers",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-followers",
+      "href": "/us/buy-tiktok-followers",
+      "name": "TikTok Followers",
+      "cardBlurb": "TikTok follower packages for eligible public profiles across the United States.",
+      "commercialLabel": "BUY TIKTOK FOLLOWERS",
+      "title": "Build Profile Audience Around a Clear TikTok Identity",
+      "intro": "Choose TikTok Followers when the visible audience count on your public profile is the number you want to strengthen. US creators, ecommerce brands, local companies and larger businesses can use a follower package while continuing to build a clear niche, recent video library and recognisable account identity.",
+      "points": [
+        {
+          "title": "Profile Audience Growth",
+          "text": "Followers apply to the public TikTok profile submitted with the order, not to one individual video."
+        },
+        {
+          "title": "Support a Defined Niche",
+          "text": "The follower number has more context when visitors can quickly understand what the creator or business publishes."
+        },
+        {
+          "title": "Scale According to the Account",
+          "text": "Review your existing audience and posting activity before deciding which follower quantity suits the profile."
+        },
+        {
+          "title": "Video Engagement Uses Different Services",
+          "text": "Choose TikTok Likes or Views when you want to work on the visible metrics of a specific TikTok."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Followers",
+        "href": "/us/buy-tiktok-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-followers-visual.webp",
+        "alt": "TikTok creator profile with follower indicators"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "tt-likes",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-likes",
+      "href": "/us/buy-tiktok-likes",
+      "name": "TikTok Likes",
+      "cardBlurb": "TikTok Like packages for eligible public videos from US profiles.",
+      "commercialLabel": "BUY TIKTOK LIKES",
+      "title": "Add Visible Likes to TikToks That Matter to the Campaign",
+      "intro": "Choose TikTok Likes when one piece of video content has a specific job to do. US creators and businesses may prioritise a launch, product demonstration, educational clip, campaign creative or collaboration. Add Likes to that selected public TikTok while treating profile Followers and video Views as separate metrics.",
+      "points": [
+        {
+          "title": "Focus on High-Priority Videos",
+          "text": "Start with the TikTok that carries the message, offer or content you most want visitors to notice."
+        },
+        {
+          "title": "Likes Apply to the Post",
+          "text": "The package increases visible Likes on the selected video rather than changing the overall profile audience."
+        },
+        {
+          "title": "Connect Likes to a Content Goal",
+          "text": "Use the service around a clear launch, campaign, tutorial, demonstration or creator collaboration."
+        },
+        {
+          "title": "Do Not Mix Up the Metrics",
+          "text": "Views measure a different video number, while Followers apply to the TikTok profile itself."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Likes",
+        "href": "/us/buy-tiktok-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
+        "alt": "TikTok video with likes and interaction indicators"
+      },
+      "tone": "cyan"
+    },
+    {
+      "id": "tt-views",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-views",
+      "href": "/us/buy-tiktok-views",
+      "name": "TikTok Views",
+      "cardBlurb": "TikTok View packages for eligible public videos from US accounts.",
+      "commercialLabel": "BUY TIKTOK VIEWS",
+      "title": "Increase Visible Views on the TikToks You Are Prioritising",
+      "intro": "Choose TikTok Views when you want to strengthen the displayed view count of a specific public video. A US creator or business may use Views around a campaign asset, product clip, explainer, portfolio example or evergreen video that continues to represent the account after publication.",
+      "points": [
+        {
+          "title": "Choose One Eligible Video",
+          "text": "Submit the exact public TikTok that should receive the selected Views package."
+        },
+        {
+          "title": "Work on the View Count",
+          "text": "This service focuses on the video's visible Views rather than profile Followers or video Likes."
+        },
+        {
+          "title": "Use Views Where the Content Has a Job",
+          "text": "Prioritise videos tied to a campaign, useful message, product, service or strong piece of evergreen content."
+        },
+        {
+          "title": "Keep Wider Performance Separate",
+          "text": "A larger visible view count should not be treated as a guarantee of Likes, Followers or wider organic distribution."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Views",
+        "href": "/us/buy-tiktok-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
+        "alt": "TikTok video with view and playback indicators"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "fb-followers",
+      "platform": "facebook",
+      "slug": "buy-facebook-followers",
+      "href": "/us/buy-facebook-followers",
+      "name": "Facebook Followers",
+      "cardBlurb": "Facebook follower packages for eligible public Pages across the United States.",
+      "commercialLabel": "BUY FACEBOOK FOLLOWERS",
+      "title": "Strengthen the Audience Around an Active US Facebook Page",
+      "intro": "Choose Facebook Followers when you want to increase the visible follower count around a public Page. US local businesses, ecommerce brands, creators, organisations and larger companies can use follower growth while continuing to build the Page through accurate business details, regular publishing and wider marketing activity.",
+      "points": [
+        {
+          "title": "Increase the Page Audience Number",
+          "text": "Followers apply to the eligible Facebook Page supplied with the order rather than to an individual piece of content."
+        },
+        {
+          "title": "Useful Around Business Growth",
+          "text": "Follower growth can support a Page during launches, location expansion, campaigns or ongoing brand development."
+        },
+        {
+          "title": "Make the Page Worth Exploring",
+          "text": "Keep the website, contact details, Page description and recent content aligned with the business visitors expect to find."
+        },
+        {
+          "title": "Know the Difference Between Metrics",
+          "text": "Page Likes and Post Likes change different Facebook numbers, so use the service that matches your actual goal."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Followers",
+        "href": "/us/buy-facebook-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-followers-visual.webp",
+        "alt": "Facebook Page with follower and community indicators"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-page-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-page-likes",
+      "href": "/us/buy-facebook-page-likes",
+      "name": "Facebook Page Likes",
+      "cardBlurb": "Facebook Page Like packages for eligible US business, brand and public Pages.",
+      "commercialLabel": "BUY FACEBOOK PAGE LIKES",
+      "title": "Build More Visible Page Likes Around a Complete Facebook Presence",
+      "intro": "Choose Facebook Page Likes when the public Like total of the Page is the specific metric you want to increase. For US businesses and brands, that number is only one part of what a visitor can evaluate, so use it alongside current company information, clear branding, useful content and an accurate path to your website or contact details.",
+      "points": [
+        {
+          "title": "Work on the Page Like Total",
+          "text": "The package applies to the visible Page Like metric of the eligible public Page you submit."
+        },
+        {
+          "title": "Useful Around Launches and Rebrands",
+          "text": "Page Likes can support presentation when a company is launching, refreshing its brand or directing more campaign traffic to Facebook."
+        },
+        {
+          "title": "Keep Company Information Consistent",
+          "text": "The Page should match the business identity, website and offer people encounter through your other marketing channels."
+        },
+        {
+          "title": "Do Not Confuse Likes With Followers",
+          "text": "Facebook Followers represent a separate Page-level audience metric and are offered through their own service."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Page Likes",
+        "href": "/us/buy-facebook-page-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-page-likes-visual.webp",
+        "alt": "Facebook Page with Page Like indicators"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-post-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-post-likes",
+      "href": "/us/buy-facebook-post-likes",
+      "name": "Facebook Post Likes",
+      "cardBlurb": "Post Like packages for eligible public Facebook posts from US Pages.",
+      "commercialLabel": "BUY FACEBOOK POST LIKES",
+      "title": "Add Visible Engagement to Facebook Posts With a Specific Job",
+      "intro": "Choose Facebook Post Likes when one public post supports a particular business or content objective. US Pages may have priority posts around a new location, product launch, event, project result, seasonal offer or evergreen service message. Add Likes to that selected content while keeping Page-level Followers and Page Likes separate.",
+      "points": [
+        {
+          "title": "Choose Priority Content",
+          "text": "Start with the Facebook post that carries an important message, announcement, offer or campaign asset."
+        },
+        {
+          "title": "Likes Stay With the Selected Post",
+          "text": "The service increases visible Likes on one eligible post and does not automatically change Page-level metrics."
+        },
+        {
+          "title": "Review the Post Before Ordering",
+          "text": "Check that links, dates, prices, locations and other important information remain accurate."
+        },
+        {
+          "title": "Use the Right Facebook Service",
+          "text": "Choose Followers or Page Likes instead when your objective relates to the overall Facebook Page."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Post Likes",
+        "href": "/us/buy-facebook-post-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-post-likes-visual.webp",
+        "alt": "Facebook post with Like and reaction indicators"
+      },
+      "tone": "blue"
+    }
+  ],
+  "instagramOnly": true,
+  "hideReviews": true,
+  "crossPlatform": {
+    "id": "cross-platform",
+    "eyebrow": "More Platforms",
+    "title": "Instagram First. TikTok and Facebook When Your Campaign Needs Them.",
+    "description": "Instagram is the primary growth focus, but your social presence may extend across more than one platform.",
+    "platforms": [
+      {
+        "id": "tiktok",
+        "title": "TikTok Growth Services",
+        "description": "Choose TikTok Followers, Likes or Views when you're working on a TikTok profile or individual videos. TikTok services are separate from Instagram and should be selected according to the metric you want to change.",
+        "cta": {
+          "label": "Explore TikTok Services",
+          "href": "/us/buy-tiktok-followers"
+        }
+      },
+      {
+        "id": "facebook",
+        "title": "Facebook Growth Services",
+        "description": "Choose Facebook Followers, Page Likes or Post Likes when you're working on an eligible public Facebook Page or individual post. Facebook Followers and Page Likes work at the Page level. Post Likes work on individual content.",
+        "cta": {
+          "label": "Explore Facebook Services",
+          "href": "/us/buy-facebook-followers"
+        }
+      }
+    ]
+  },
+  "storySections": [
+    {
+      "id": "profile-growth-table",
+      "eyebrow": "Choose the Right Metric",
+      "title": "Profile Growth or Content Engagement? Choose the Right Metric",
+      "lead": "The easiest way to choose a service is to separate profile-level growth from content-level engagement.",
+      "footer": "Followers do not automatically include Likes. Likes do not automatically add Views. Views do not automatically increase Followers. Comments are another separate type of interaction. Choose the metric first. Then choose the package.",
+      "items": [
+        {
+          "title": "Increase the follower count around your profile",
+          "body": "Start with Instagram Followers."
+        },
+        {
+          "title": "Add visible engagement to a post or Reel",
+          "body": "Start with Instagram Likes."
+        },
+        {
+          "title": "Increase the displayed View count on video content",
+          "body": "Start with Instagram Views."
+        },
+        {
+          "title": "Add visible conversation around content",
+          "body": "Start with Instagram Comments."
+        }
+      ]
+    },
+    {
+      "id": "audience-segments",
+      "eyebrow": "US Instagram",
+      "title": "Built Around the Way US Creators and Businesses Use Instagram",
+      "lead": "Instagram growth should fit the account you're building. Not the other way around.",
+      "items": [
+        {
+          "title": "Creators",
+          "body": "Strengthen the visible profile around a clear niche and content people have a reason to explore."
+        },
+        {
+          "title": "Ecommerce Brands",
+          "body": "Put attention behind launches, products and Reels that support your wider campaign."
+        },
+        {
+          "title": "Local Businesses",
+          "body": "Build a stronger profile around genuine services, locations, projects and business activity."
+        },
+        {
+          "title": "Agencies",
+          "body": "Choose Followers, Likes, Views or Comments according to the actual objective of each client account."
+        },
+        {
+          "title": "Established Brands",
+          "body": "Support selected visible metrics while continuing genuine publishing, paid campaigns and customer communication."
+        }
+      ]
+    },
+    {
+      "id": "first-impression",
+      "title": "Make a Stronger First Impression When Someone Visits Your Instagram Profile",
+      "lead": "Someone may discover your account through a Reel, Google search, creator collaboration, ad, recommendation or another social platform. If they visit your profile, they may quickly notice:",
+      "bullets": [
+        "Profile image",
+        "Username",
+        "Bio",
+        "Follower count",
+        "Recent posts",
+        "Pinned content",
+        "Reels",
+        "Highlights",
+        "Visible engagement",
+        "Overall consistency"
+      ],
+      "paragraphs": [
+        "A stronger visible profile can support that first impression. But the numbers are only part of what someone sees.",
+        "NovaLikes can support the visible [Instagram](https://en.wikipedia.org/wiki/Instagram) metric you choose. The profile behind that metric determines what a visitor discovers next."
+      ],
+      "items": [
+        {
+          "title": "For Creators",
+          "body": "Make your niche, style and strongest content easy to understand."
+        },
+        {
+          "title": "For Businesses",
+          "body": "Explain what you offer and make the next step clear."
+        },
+        {
+          "title": "For Ecommerce Brands",
+          "body": "Keep product and campaign content easy to find."
+        },
+        {
+          "title": "For Local Businesses",
+          "body": "Make location, service and contact information accurate where relevant."
+        }
+      ]
+    },
+    {
+      "id": "priority-content",
+      "title": "Use Instagram Growth on the Content That Matters Most",
+      "lead": "Not every post or Reel needs the same level of attention. Some content has a more important role.",
+      "footer": "Choose the content first. Then decide whether Followers, Likes, Views or Comments fit the objective.",
+      "items": [
+        {
+          "title": "Product Launches",
+          "body": "Support the content that introduces or demonstrates the product most clearly."
+        },
+        {
+          "title": "Creator Collaborations",
+          "body": "Focus on the post or Reel that best represents the partnership."
+        },
+        {
+          "title": "Business Introductions",
+          "body": "Make sure new visitors can quickly understand the company behind the profile."
+        },
+        {
+          "title": "Portfolio Content",
+          "body": "Highlight work you'd genuinely want a potential client, customer or partner to see."
+        },
+        {
+          "title": "Evergreen Reels",
+          "body": "Tutorials, demonstrations and useful explainers can continue representing your account long after publication."
+        },
+        {
+          "title": "Major Announcements",
+          "body": "A new service, location, event or company update may deserve more attention than a routine post."
+        }
+      ]
+    },
+    {
+      "id": "campaign-moments",
+      "title": "Put Instagram Growth Behind Important US Campaign Moments",
+      "lead": "Certain times of year can make specific Instagram content more important.",
+      "paragraphs": [
+        "Visible Instagram metrics can support campaign presentation. The campaign itself still needs strong creative, accurate information and a clear offer."
+      ],
+      "items": [
+        {
+          "title": "Black Friday",
+          "body": "Retail and ecommerce brands may have high-priority launch posts, Reels and product content around Black Friday."
+        },
+        {
+          "title": "Cyber Monday",
+          "body": "Online businesses may use Instagram alongside email, paid ads and their ecommerce store during Cyber Monday campaigns."
+        },
+        {
+          "title": "Thanksgiving",
+          "body": "Restaurants, hospitality brands, retailers and local businesses may have seasonal content around Thanksgiving."
+        },
+        {
+          "title": "Christmas and Holiday Campaigns",
+          "body": "Gift guides, product promotions, seasonal events and holiday announcements can become priority content."
+        },
+        {
+          "title": "Back-to-School Campaigns",
+          "body": "Retail, technology, education, fashion and family-focused businesses may have important Instagram activity during back-to-school season."
+        },
+        {
+          "title": "Product Drops",
+          "body": "Put attention behind the strongest launch content rather than every post on the profile."
+        },
+        {
+          "title": "Creator Partnerships",
+          "body": "Collaborations may introduce your account to an audience seeing it for the first time."
+        },
+        {
+          "title": "New Location Launches",
+          "body": "Businesses entering another city or state can use Instagram to introduce the location, team, services and recent activity."
+        }
+      ]
+    },
+    {
+      "id": "content-worth-following",
+      "title": "Build Visible Growth Around Content Worth Following",
+      "lead": "If long-term Instagram growth matters, keep working on what no package can replace. Your content.",
+      "footer": "Purchased metrics can change selected visible numbers. Your real audience behavior should guide the long-term strategy.",
+      "items": [
+        {
+          "title": "Create Reels With a Purpose",
+          "body": "Teach, demonstrate, entertain, compare, explain or tell a story."
+        },
+        {
+          "title": "Build Useful Carousels",
+          "body": "Use multiple slides when a topic needs more context."
+        },
+        {
+          "title": "Make Your Posts Easy to Understand",
+          "body": "Strong visuals and clear messaging can make content more useful."
+        },
+        {
+          "title": "Develop Recognizable Themes",
+          "body": "Give people a reason to understand what your account is about."
+        },
+        {
+          "title": "Use Captions for Context",
+          "body": "Add information that makes the content clearer instead of repeating what is already obvious."
+        },
+        {
+          "title": "Respond to Genuine Users",
+          "body": "Real questions, comments and messages deserve real responses from the creator or business behind the account."
+        },
+        {
+          "title": "Review Instagram Insights",
+          "body": "Use genuine account data to understand what real viewers respond to."
+        }
+      ]
+    },
+    {
+      "id": "better-profile",
+      "title": "Turn Instagram Growth Into a Better Profile Experience",
+      "lead": "A stronger metric can get attention. The rest of the account determines whether that attention goes anywhere useful.",
+      "footer": "Visible growth can support the first impression. A better account supports what happens after it.",
+      "items": [
+        {
+          "title": "Keep Your Bio Clear",
+          "body": "Someone should quickly understand who you are or what the business offers."
+        },
+        {
+          "title": "Pin Strong Content",
+          "body": "Make your best posts and Reels easier to find."
+        },
+        {
+          "title": "Build a Consistent Content Direction",
+          "body": "Help visitors understand what else they can expect from the account."
+        },
+        {
+          "title": "Keep Important Information Current",
+          "body": "Don't send potential customers toward outdated offers, locations or websites."
+        },
+        {
+          "title": "Maintain Recent Activity",
+          "body": "A profile with current content gives visible metrics more context."
+        },
+        {
+          "title": "Create a Useful Next Step",
+          "body": "For commercial accounts, make it easy for interested users to shop, enquire, book, visit your website or learn more."
+        }
+      ]
+    },
+    {
+      "id": "local-businesses",
+      "title": "Instagram Growth for US Local Businesses",
+      "paragraphs": [
+        "Instagram can support local businesses alongside Google Business Profile, local SEO, referrals, paid advertising and the company website.",
+        "Someone may visit your Instagram profile because they want to see what the business actually looks like.",
+        "A restaurant may show current dishes. A contractor may publish completed projects. An interior designer may showcase finished spaces. A salon may show recent work. A retailer may introduce new products. A real estate company may feature properties. A fitness studio may publish training or class content. A tourism company may showcase experiences. A professional service may answer common customer questions.",
+        "If you're putting visible growth behind a local-business account, make sure the real business information remains accurate. Show genuine work. Use relevant city or service-area context where it helps customers. Give interested visitors a clear next step.",
+        "Followers, Likes, Views and Comments can support presentation. The business behind the account builds local trust."
+      ]
+    },
+    {
+      "id": "customer-proof",
+      "title": "Support Visible Metrics With Genuine Customer Proof",
+      "paragraphs": [
+        "Social metrics and genuine customer evidence are different things.",
+        "For US businesses, deeper trust can also come from verified reviews, authentic testimonials, completed projects, case studies, genuine customer comments, customer-created content, real company information and responsive customer service.",
+        "If you have real proof, use it. Do not invent testimonials or customer experiences simply to make the account appear stronger.",
+        "Visible Instagram metrics can support presentation. Actual customer experience provides stronger credibility."
+      ]
+    },
+    {
+      "id": "metric-meanings",
+      "title": "Understand What Each Instagram Metric Actually Tells You",
+      "lead": "No single public Instagram number tells the complete story.",
+      "items": [
+        {
+          "title": "Followers",
+          "body": "Follower count is a profile-level audience metric."
+        },
+        {
+          "title": "Likes",
+          "body": "Likes show one visible engagement metric on individual posts and Reels."
+        },
+        {
+          "title": "Views",
+          "body": "Views apply to eligible Reels and video content."
+        },
+        {
+          "title": "Comments",
+          "body": "Comments create visible conversation around individual content."
+        },
+        {
+          "title": "Genuine Performance",
+          "body": "Use your real Instagram analytics to understand organic reach, audience behavior, content performance and genuine engagement."
+        }
+      ],
+      "footer": "Purchased metrics can support selected visible numbers. Your genuine Insights should guide the wider strategy."
+    },
+    {
+      "id": "affordable-growth",
+      "title": "Affordable Instagram Growth Without Guesswork",
+      "paragraphs": [
+        "If you're comparing affordable Instagram growth services in the USA, price will naturally be part of the decision. But the cheapest number should not be the only thing you compare.",
+        "Check which Instagram metric changes, package quantity, current pricing, required public information, password requirements, order tracking, customer support, relevant policies and what the service actually promises.",
+        "A clearer buying experience makes it easier to understand what you're paying for. NovaLikes lets you choose the metric and package before checkout."
+      ]
+    },
+    {
+      "id": "account-you-have",
+      "title": "Build Growth Around the Instagram Account You Actually Have",
+      "paragraphs": [
+        "There is no universal package that makes sense for every account.",
+        "A newer creator may want to start with a smaller follower increase. An established creator may care more about an important Reel. An ecommerce brand may focus on Likes or Views around a product launch. A local business may want the overall profile to look more established before a campaign sends new visitors toward it. An agency may use completely different services across different client accounts.",
+        "Start with where the account is now. Decide which metric needs attention. Then choose the package that fits.",
+        "Instagram growth should support the strategy. Not replace it."
+      ]
+    }
+  ]
+}

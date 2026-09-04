@@ -17,14 +17,24 @@ const TRUST_FEATURE_ICONS = {
   truck: Truck,
 } as const satisfies Record<string, LucideIcon>;
 
-export function HomepageHero({ hub = homepageHub }: { hub?: HomepageHub }) {
+export function HomepageHero({
+  hub = homepageHub,
+  enhanced = false,
+}: {
+  hub?: HomepageHub;
+  enhanced?: boolean;
+}) {
   const hero = hub.hero;
 
   return (
     <Section
       id="homepage-hero"
-      spacing="lg"
-      className="relative overflow-hidden bg-transparent"
+      spacing="none"
+      className={cn(
+        'relative overflow-hidden bg-transparent',
+        /* Tighter than body sections so the hero doesn’t balloon vertically. */
+        enhanced ? 'py-10 md:py-12 lg:py-14' : 'py-9 md:py-12 lg:py-14',
+      )}
       aria-labelledby="homepage-hero-heading"
     >
       <div
@@ -32,15 +42,26 @@ export function HomepageHero({ hub = homepageHub }: { hub?: HomepageHub }) {
         aria-hidden="true"
       />
       <Container size="xl" className="relative z-10">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(22rem,1fr)] lg:gap-8 xl:gap-12">
-          <div>
+        <div
+          className={cn(
+            'grid items-center lg:grid-cols-[minmax(0,1.12fr)_minmax(20rem,0.95fr)]',
+            enhanced ? 'gap-8 lg:gap-10 xl:gap-12' : 'gap-10 lg:gap-8 xl:gap-12',
+          )}
+        >
+          <div className="min-w-0">
             <FadeUp immediate>
               <Eyebrow className="max-w-full text-pretty">{hero.eyebrow}</Eyebrow>
             </FadeUp>
             <FadeUp immediate delay={0.05}>
               <h1
                 id="homepage-hero-heading"
-                className={`${HERO_HEADING_CLASS} mt-4 font-bold text-[#1A1A1A]`}
+                className={cn(
+                  HERO_HEADING_CLASS,
+                  'mt-4 max-w-[20ch] text-balance font-bold text-[#1A1A1A] sm:max-w-[24ch] lg:max-w-[26ch]',
+                  /* Slightly calmer scale keeps long market H1s to ~2 lines on desktop. */
+                  enhanced &&
+                    '!text-[clamp(1.75rem,1.15rem+1.35vw,2.35rem)] sm:!text-[clamp(1.9rem,1.2rem+1.2vw,2.35rem)]',
+                )}
               >
                 {accentLastWord(hero.title)}
               </h1>
@@ -59,7 +80,7 @@ export function HomepageHero({ hub = homepageHub }: { hub?: HomepageHub }) {
                   <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
                 </Button>
               </div>
-              <ul className="mt-5 flex flex-wrap items-center divide-x divide-[#E7E0DA]">
+              <ul className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 sm:gap-x-0 sm:divide-x sm:divide-[#E7E0DA]">
                 {hero.trustFeatures.map((item, index) => {
                   const Icon = TRUST_FEATURE_ICONS[item.icon];
                   return (
@@ -68,10 +89,10 @@ export function HomepageHero({ hub = homepageHub }: { hub?: HomepageHub }) {
                       className={cn(
                         'flex items-center gap-2.5',
                         index === 0
-                          ? 'pr-4'
+                          ? 'sm:pr-4'
                           : index === hero.trustFeatures.length - 1
-                            ? 'pl-4'
-                            : 'px-4',
+                            ? 'sm:pl-4'
+                            : 'sm:px-4',
                       )}
                     >
                       <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#FFE8D9]">

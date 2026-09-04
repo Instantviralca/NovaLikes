@@ -10,6 +10,22 @@ import {
 } from '@/lib/cms/auth-edge';
 import { shouldBlockRequest } from '@/lib/geo/blocked-countries';
 import {
+  GEO_INTERNAL_PREFIX,
+  isInternalGeoPath,
+  isMarket,
+  isMarketCorePath,
+  MARKET_HEADER,
+  MARKET_HREFLANG,
+  MARKET_PATH_HEADER,
+  type Market,
+} from '@/lib/market/config';
+import {
+  isBlockedMarketAlias,
+  marketInternalPath,
+  parseMarketPath,
+  publicPathsEqual as marketPathsEqual,
+} from '@/lib/market/paths';
+import {
   I18N_HEADER,
   I18N_PATH_HEADER,
   isCoreLocalizedPath,
@@ -62,6 +78,50 @@ export async function middleware(request: NextRequest) {
 
   if (isInternalI18nPath(pathname) || isBlockedLocaleAlias(pathname)) {
     return new NextResponse('Not Found', { status: 404, headers: { 'x-robots-tag': 'noindex' } });
+  }
+
+  if (isInternalGeoPath(pathname) || isBlockedMarketAlias(pathname)) {
+    return new NextResponse('Not Found', { status: 404, headers: { 'x-robots-tag': 'noindex' } });
+  }
+
+  const parsedMarket = parseMarketPath(pathname);
+  if (isMarket(parsedMarket.market)) {
+    if (!isMarketCorePath(parsedMarket.pathname)) {
+      return new NextResponse('Not Found', { status: 404, headers: { 'x-robots-tag': 'noindex' } });
+    }
+
+    const canonicalMarketPath =
+      parsedMarket.pathname === '/'
+        ? `/${parsedMarket.market}/`
+        : `/${parsedMarket.market}${parsedMarket.pathname}`;
+    if (!marketPathsEqual(pathname, canonicalMarketPath)) {
+      const url = request.nextUrl.clone();
+      url.pathname = canonicalMarketPath;
+      return NextResponse.redirect(url, 308);
+    }
+
+    if (shouldBlockRequest({ pathname, headers: request.headers })) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/unavailable';
+      url.search = '';
+      const response = NextResponse.rewrite(url);
+      response.headers.set('x-robots-tag', 'noindex, nofollow');
+      response.headers.set('cache-control', 'private, no-store');
+      return response;
+    }
+
+    const url = request.nextUrl.clone();
+    url.pathname = marketInternalPath(parsedMarket.market, parsedMarket.pathname);
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set(MARKET_HEADER, parsedMarket.market);
+    requestHeaders.set(MARKET_PATH_HEADER, canonicalMarketPath);
+    requestHeaders.set(I18N_PATH_HEADER, canonicalMarketPath);
+    const response = NextResponse.rewrite(url, {
+      request: { headers: requestHeaders },
+    });
+    response.headers.set(MARKET_HEADER, parsedMarket.market);
+    response.headers.set('content-language', MARKET_HREFLANG[parsedMarket.market as Market]);
+    return response;
   }
 
   const parsedLocale = parseLocalePath(pathname);

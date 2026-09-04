@@ -153,6 +153,9 @@ export function getEnglishReviewsPageSource() {
     exploreFacebook: 'Explore Facebook',
     readMore: 'Read more',
     showLess: 'Show less',
+    collectTitle: 'How we collect reviews',
+    collectBody:
+      'These comments are customer feedback published in the NovaLikes review catalogue. They were imported as historical customer comments. They are not matched to a live order record and are not independently verified by a third party.',
     chrome: {
       breadcrumb: 'Reviews',
     },

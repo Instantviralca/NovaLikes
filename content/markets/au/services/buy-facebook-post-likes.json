@@ -1,0 +1,974 @@
+{
+  "content": {
+    "slug": "buy-facebook-post-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Post Likes Australia | Likes for Posts | NovaLikes",
+      "description": "Buy Facebook Post Likes in Australia for public posts. Compare flexible packages, order without sharing your password and track your purchase online."
+    },
+    "hero": {
+      "eyebrow": "FACEBOOK SERVICES FOR AUSTRALIA",
+      "title": "Buy Facebook Post Likes in Australia and Strengthen Post Engagement",
+      "description": "Put more visible engagement behind the Facebook posts that matter most. NovaLikes gives Australian businesses, brands, creators and Page managers a straightforward way to buy Facebook Post Likes for eligible public posts without sharing account login details. Choose the number of Likes you want, submit the exact public Facebook post URL and complete your order online. Whether you're supporting a product launch, business announcement, campaign post, project showcase, event or an important piece of evergreen content, choose your Post Likes package around the content you're actually trying to strengthen.",
+      "purpose": "Convert for Facebook post likes packages in Australia",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Australia",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post",
+        "Buy Likes on Facebook Post",
+        "Can You Buy Facebook Post Likes in Australia"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose Your Facebook Post Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-post-trust-url",
+          "label": "Public Facebook Post URL Only"
+        },
+        {
+          "id": "fb-post-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-post-trust-pricing",
+          "label": "Clear Pricing"
+        },
+        {
+          "id": "fb-post-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp",
+        "alt": "Facebook post preview with rising post likes and engagement analytics illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose a Post Likes Package That Fits the Content",
+      "description": "Different Facebook posts have different purposes. NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K Post Likes. A routine update may only need a smaller quantity. A campaign launch, major announcement or strong evergreen post may justify something larger. Before choosing, consider the current Like count, how important the post is, your Page size and the increase you actually want rather than automatically selecting the largest available package.",
+      "purpose": "Present real NovaLikes.com Facebook post likes packages",
+      "primaryKeyword": "Facebook Post Likes",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Facebook Post Likes Packages",
+      "emptyMessage": "Facebook Post Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-post-likes",
+      "title": "Build Stronger Visible Activity Around Important Content",
+      "description": "A Facebook Post Like is one of several visible signals connected to a piece of content. When someone sees a post, they may also notice the Page publishing it, the image or video, caption, visible Likes, comments, shares and recent Page activity. A Post Likes package increases the visible Like count on the selected post, but the post itself still needs to communicate something useful. Use Post Likes around business moments that matter — new locations, product launches, seasonal services, limited campaigns, company milestones and community announcements.",
+      "purpose": "Explain motivations for buying Facebook post likes",
+      "primaryKeyword": "Increase Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Australia",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Post Engagement"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-post-product-launch",
+          "title": "Product Launches",
+          "description": "Businesses often use Post Like packages to strengthen engagement around product launches and promotional announcements."
+        },
+        {
+          "id": "fb-post-social-proof",
+          "title": "Build Social Proof",
+          "description": "Public interaction can help a Facebook post appear more active when people first discover it."
+        },
+        {
+          "id": "fb-post-campaign",
+          "title": "Campaign Support",
+          "description": "Marketing campaigns often use Post Likes alongside paid advertising and regular publishing."
+        },
+        {
+          "id": "fb-post-flexible",
+          "title": "Flexible Packages",
+          "description": "Choose the quantity that matches your campaign instead of selecting more engagement signals than your content naturally supports."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-post-likes",
+      "title": "Why Choose NovaLikes for Facebook Post Likes?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-post-likes-delivery",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-facebook-post-likes-order-works-canada",
+      "title": "How Your Facebook Post Likes Order Works",
+      "description": "The process starts with the post you want to support.",
+      "purpose": "Explain the five-step Facebook Post Likes ordering process",
+      "primaryKeyword": "how to buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Australia",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-post-step-1",
+          "title": "Choose the Post",
+          "description": "Start with the exact eligible public Facebook post you want to support."
+        },
+        {
+          "id": "fb-post-step-2",
+          "title": "Select the Likes Quantity",
+          "description": "Compare the available packages and current pricing."
+        },
+        {
+          "id": "fb-post-step-3",
+          "title": "Copy the Direct Post URL",
+          "description": "Use the individual post link rather than the Facebook Page homepage."
+        },
+        {
+          "id": "fb-post-step-4",
+          "title": "Submit Your Order Details",
+          "description": "Paste the post URL into the required field."
+        },
+        {
+          "id": "fb-post-step-5",
+          "title": "Review Before Checkout",
+          "description": "Check the Post Like quantity, URL, and price before paying."
+        }
+      ],
+      "cta": {
+        "label": "Choose Your Post Likes Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "post-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain post URL and order requirements",
+      "primaryKeyword": "Facebook Post Likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-post-req-url",
+          "title": "Public Facebook Post URL",
+          "description": "Provide the public URL of the Facebook post receiving the selected Like package."
+        },
+        {
+          "id": "fb-post-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that best matches your campaign objectives and current engagement level."
+        },
+        {
+          "id": "fb-post-req-public",
+          "title": "Public Post Access",
+          "description": "Keep the selected Facebook post publicly available while your order is being processed."
+        },
+        {
+          "id": "fb-post-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive order confirmations, delivery updates and customer support if required."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-post-likes-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Australia service page.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-post-likes-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "faqIds": [
+        "au-fb-post-where-buy",
+        "au-fb-post-get-more",
+        "au-fb-post-cheap",
+        "au-fb-post-real",
+        "au-fb-post-how-many",
+        "au-fb-post-password",
+        "au-fb-post-admin",
+        "au-fb-post-info",
+        "au-fb-post-page-url",
+        "au-fb-post-cost",
+        "au-fb-post-delivery",
+        "au-fb-post-followers",
+        "au-fb-post-page-likes",
+        "au-fb-post-reach",
+        "au-fb-post-comments-shares",
+        "au-fb-post-business",
+        "au-fb-post-local",
+        "au-fb-post-older",
+        "au-fb-post-client",
+        "au-fb-post-wrong-url",
+        "au-fb-post-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-post-likes",
+      "title": "Explore More Facebook Services",
+      "description": "Choose the Facebook service that matches the metric you want to change.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-page-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-post-likes-final-cta",
+      "title": "Put More Likes Behind the Facebook Posts That Matter",
+      "description": "Choose the post you want to support, select a Facebook Post Likes package that fits the content and submit the correct public post URL without sharing your password or Page access. Then keep strengthening what the Like count cannot replace: useful content, genuine customer interaction, real business proof and a Facebook Page people can trust.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your Facebook Post Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-facebook-post-likes-australia",
+        "title": "Why Choose NovaLikes for Facebook Post Likes?",
+        "description": "Buying Post Likes should be easy to understand before checkout.",
+        "items": [
+          {
+            "id": "fb-post-wc-post",
+            "title": "Likes for Specific Posts",
+            "description": "Your order applies to the eligible public Facebook post connected to the URL you submit.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-wc-packages",
+            "title": "Flexible Package Sizes",
+            "description": "Choose from smaller and larger Post Like quantities depending on the individual post.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-wc-password",
+            "title": "No Facebook Password Required",
+            "description": "NovaLikes does not need your Facebook password, verification codes or private Page access.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-wc-pricing",
+            "title": "Clear Pricing",
+            "description": "Review the Post Like quantity and current package price before paying.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-wc-checkout",
+            "title": "Secure Checkout",
+            "description": "Complete your order through the available NovaLikes checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-post-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes tracking afterward for available status information.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-post-wc-support",
+            "title": "Customer Support",
+            "description": "If something needs checking, contact support with the relevant order details.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-post-likes-without-login-australia",
+        "title": "Buy Facebook Post Likes Without Sharing Your Login",
+        "description": "A Post Likes order should not require control of your Facebook account or Page. NovaLikes uses the public post information required for the service.",
+        "cards": [
+          {
+            "id": "fb-post-can-need",
+            "title": "What You Need",
+            "description": "The exact public Facebook post URL and your selected Post Likes package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Facebook password, verification codes, Page admin login, Meta Business Suite access, Business Manager access or private messages.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before checkout, open the link yourself and make sure it goes directly to the individual post you want to support. A general Facebook Page URL is not the correct target for a Post Likes order."
+      },
+      "doesBuyingHelp": {
+        "id": "real-facebook-post-likes-australia",
+        "title": "Looking for “Real Facebook Post Likes”? Check the Actual Service",
+        "description": "\"Real Facebook Post Likes\" is a common phrase people may use when comparing engagement providers. You may also see terms such as high-quality Facebook Post Likes, active Facebook Likes or organic Facebook Likes. Different providers may use those labels differently.",
+        "helpTitle": "Rather than relying only on the wording, ask",
+        "helpItems": [
+          "What metric changes?",
+          "How many Likes are included?",
+          "Which post receives them?",
+          "What information do I need to provide?",
+          "What does the provider actually promise?"
+        ],
+        "limitTitle": "What NovaLikes Facebook Post Likes Packages Do",
+        "limitItems": [
+          "Increase the Like count displayed on the eligible public post submitted with the order"
+        ],
+        "closingNote": "They should not automatically be treated as guaranteed organic engagement, reach, Followers, Page Likes, comments, shares, customers or sales. Clear expectations make it easier to compare services realistically."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-facebook-post-likes-order-australia",
+        "title": "What Happens After You Order?",
+        "description": "After checkout, your selected Post Likes package and submitted Facebook post URL are associated with the purchase. The order is then processed for that specific post.",
+        "steps": [
+          {
+            "id": "fb-post-th-1",
+            "title": "Keep the Post Public",
+            "description": "The submitted content should remain publicly accessible where required."
+          },
+          {
+            "id": "fb-post-th-2",
+            "title": "Don't Delete It Mid-Order",
+            "description": "Removing the post may interfere with an active order."
+          },
+          {
+            "id": "fb-post-th-3",
+            "title": "Check the URL Carefully",
+            "description": "Make sure your purchase points to the exact post you intended to use."
+          },
+          {
+            "id": "fb-post-th-4",
+            "title": "Follow the Order Status",
+            "description": "Processing time can vary depending on quantity and current order conditions. Use NovaLikes order tracking for available status information."
+          }
+        ],
+        "closingNote": ""
+      },
+      "serviceCompare": {
+        "id": "facebook-post-likes-page-likes-followers-australia",
+        "title": "Facebook Post Likes, Page Likes and Followers Are Different Metrics",
+        "description": "Choose the service based on the exact metric you want to change.",
+        "current": {
+          "title": "Facebook Post Likes",
+          "description": "Like count displayed on one eligible public Facebook post",
+          "bestFor": "Individual post engagement",
+          "ctaLabel": "Facebook Post Likes"
+        },
+        "likes": {
+          "title": "Facebook Page Likes",
+          "description": "Page-level Like count on an eligible public Facebook Page",
+          "bestFor": "Page Like count",
+          "href": "/au/buy-facebook-page-likes",
+          "ctaLabel": "Buy Facebook Page Likes"
+        },
+        "views": {
+          "title": "Facebook Followers",
+          "description": "Follower count displayed on an eligible public Facebook Page",
+          "bestFor": "Page follower count",
+          "href": "/au/buy-facebook-followers",
+          "ctaLabel": "Buy Facebook Followers"
+        },
+        "combinedNote": "Choose Post Likes for individual content. Choose Page Likes for the Page-level Like count. Choose Followers for Page audience size. One service does not automatically include the others.",
+        "commentsHref": ""
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-facebook-post-likes-australia",
+        "title": "Before You Buy Facebook Post Likes in Australia",
+        "description": "Check these details before completing your order.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "fb-post-bb-post",
+            "title": "Confirm the Exact Post",
+            "description": "Open the specific public Facebook post you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-bb-url",
+            "title": "Copy the Direct Post URL",
+            "description": "Do not submit only the general Facebook Page URL.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "fb-post-bb-quantity",
+            "title": "Check the Like Quantity",
+            "description": "Make sure you're selecting the number of Post Likes you actually want.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-bb-price",
+            "title": "Review the Current Price",
+            "description": "Confirm the package quantity and current price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-post-bb-public",
+            "title": "Keep the Post Public",
+            "description": "Avoid deleting or restricting the submitted content while processing requires access.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require your Facebook password.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-post-bb-admin",
+            "title": "Keep Admin Access Private",
+            "description": "You do not need to provide Page admin, Business Manager or Meta Business Suite access.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "fb-post-bb-service",
+            "title": "Choose the Correct Facebook Service",
+            "description": "Post Likes, Page Likes and Followers are separate metrics.",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-post-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the applicable service and refund information before completing your purchase.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "dont-measure-post-by-likes-alone-australia",
+        "title": "Don't Measure a Facebook Post by Likes Alone",
+        "description": "A public Like count tells you one thing about a post. It does not tell you the complete story of how genuine users responded. When reviewing your own Facebook performance, also consider:",
+        "eyebrow": "Look Beyond One Metric",
+        "closingNote": "Purchased Post Likes change one visible metric. Use genuine Facebook insights and your own business data for wider decisions.",
+        "cards": [
+          {
+            "id": "fb-post-ww-comments",
+            "title": "Genuine Comments",
+            "description": "What are real users asking or saying?",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-ww-shares",
+            "title": "Shares",
+            "description": "Are people choosing to share the post with others?",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-post-ww-clicks",
+            "title": "Clicks",
+            "description": "If the post links somewhere useful, are genuine users taking that next step?",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-ww-messages",
+            "title": "Messages",
+            "description": "Does the post lead to actual customer enquiries?",
+            "icon": "briefcase"
+          },
+          {
+            "id": "fb-post-ww-page",
+            "title": "Page Activity",
+            "description": "Are people exploring the Page behind the content?",
+            "icon": "megaphone"
+          },
+          {
+            "id": "fb-post-ww-outcomes",
+            "title": "Business Results",
+            "description": "Did the post contribute to the goal behind the campaign?",
+            "icon": "map-pin"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "choose-facebook-post-likes-package-australia",
+        "title": "Choose a Post Likes Package That Fits the Content",
+        "description": "NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K Post Likes. A routine update may only need a smaller quantity. A campaign launch, major announcement or strong evergreen post may justify something larger.",
+        "quantityColumnLabel": "Consideration",
+        "recommendedColumnLabel": "What to Review",
+        "rows": [
+          {
+            "id": "fb-post-ps-count",
+            "quantity": "The Current Like Count",
+            "recommendedFor": "Start with the visible engagement already shown on the post."
+          },
+          {
+            "id": "fb-post-ps-importance",
+            "quantity": "How Important the Post Is",
+            "recommendedFor": "A priority campaign post may deserve more support than an everyday update."
+          },
+          {
+            "id": "fb-post-ps-page",
+            "quantity": "Your Page Size",
+            "recommendedFor": "The same Post Like quantity can look different on a newer Page and an established brand presence."
+          },
+          {
+            "id": "fb-post-ps-increase",
+            "quantity": "The Increase You Actually Want",
+            "recommendedFor": "Choose based on the specific post rather than automatically selecting the largest available package."
+          }
+        ],
+        "bottomNote": "Compare Facebook Post Likes Packages"
+      },
+      "bestPractices": {
+        "id": "affordable-facebook-post-likes-australia",
+        "title": "Looking for Affordable Facebook Post Likes in Australia?",
+        "description": "If you're searching for cheap Facebook Post Likes in Australia, price will naturally be part of your comparison. Look beyond the lowest package price.",
+        "closingNote": "An affordable Facebook Post Likes service should make these details clear before checkout. NovaLikes lets you compare the available quantities and current prices before choosing.",
+        "items": [
+          {
+            "id": "fb-post-bp-1",
+            "title": "Post Like Quantity",
+            "description": "Check how many Likes are included.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-bp-2",
+            "title": "Current Package Price",
+            "description": "Review pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-bp-3",
+            "title": "Public Post Requirements",
+            "description": "Confirm what post URL is required.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-bp-4",
+            "title": "Password and Admin Policy",
+            "description": "Check whether password or admin access is requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-bp-5",
+            "title": "Order Tracking",
+            "description": "Check whether status updates are available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-post-bp-6",
+            "title": "Customer Support",
+            "description": "Support should be available if you need help.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-post-bp-7",
+            "title": "Service Policies",
+            "description": "Review what the package actually changes.",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-facebook-post-likes-australia",
+        "title": "Common Mistakes When Buying Facebook Post Likes",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Facebook Followers",
+            "description": "Choose Followers when you want to increase the follower count displayed on an eligible public Facebook Page.",
+            "ctaLabel": "Buy Facebook Followers"
+          },
+          "buy-facebook-page-likes": {
+            "title": "Facebook Page Likes",
+            "description": "Choose Page Likes when you want to increase the Page-level Like count on an eligible public Facebook Page.",
+            "ctaLabel": "Buy Facebook Page Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "which-facebook-posts-worth-likes-australia",
+      "title": "Which Facebook Posts Are Worth Supporting With More Likes?",
+      "description": "You don't need to add Likes to every post. A stronger approach is to identify the content that has a clear purpose.",
+      "items": [
+        {
+          "id": "fb-post-wb-launch",
+          "title": "Product Launches",
+          "description": "Support the post that best introduces, explains or showcases the product."
+        },
+        {
+          "id": "fb-post-wb-announcement",
+          "title": "Business Announcements",
+          "description": "A new service, location, milestone or company update may deserve more attention than a routine post."
+        },
+        {
+          "id": "fb-post-wb-project",
+          "title": "Project Showcases",
+          "description": "Builders, designers, agencies, photographers and other service businesses can focus on work they would genuinely want potential customers to see."
+        },
+        {
+          "id": "fb-post-wb-event",
+          "title": "Event Posts",
+          "description": "Use Post Likes around content promoting an event, opening, workshop or community activity."
+        },
+        {
+          "id": "fb-post-wb-campaign",
+          "title": "Promotional Campaigns",
+          "description": "Support the main campaign post instead of spreading engagement across unrelated content."
+        },
+        {
+          "id": "fb-post-wb-evergreen",
+          "title": "Evergreen Content",
+          "description": "Helpful guides, FAQs, introductions and strong business posts can continue representing the Page long after publication."
+        }
+      ],
+      "bottomNote": "Choose the post first. Then decide whether adding more visible Likes supports what you're trying to achieve."
+    },
+    "howToBuy": {
+      "id": "how-facebook-post-likes-order-works-australia",
+      "title": "How Your Facebook Post Likes Order Works",
+      "description": "The process starts with the post you want to support.",
+      "steps": [
+        {
+          "id": "fb-post-step-1",
+          "title": "Choose the Post",
+          "description": "Start with the exact public Facebook post you want to support."
+        },
+        {
+          "id": "fb-post-step-2",
+          "title": "Select Your Post Likes Package",
+          "description": "Compare the available quantities and current pricing."
+        },
+        {
+          "id": "fb-post-step-3",
+          "title": "Submit the Direct Post URL",
+          "description": "Paste the correct public Facebook post link into the required field."
+        },
+        {
+          "id": "fb-post-step-4",
+          "title": "Review the Order",
+          "description": "Check the post URL, Like quantity and current package price."
+        },
+        {
+          "id": "fb-post-step-5",
+          "title": "Complete Checkout",
+          "description": "Place your order without sharing your Facebook password."
+        },
+        {
+          "id": "fb-post-step-6",
+          "title": "Track the Status",
+          "description": "Use NovaLikes order tracking afterward for available updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore More Facebook Services",
+    "relatedIntro": "Choose the Facebook service that matches the metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: Where Can I Buy Facebook Post Likes in Australia?",
+      "text": "You can buy Facebook Post Likes in Australia through NovaLikes for eligible public posts. Choose an available Post Likes package, submit the exact public Facebook post URL and complete checkout without sharing your password. The Likes apply to that specific post and do not automatically increase Facebook Followers or the Page Like count."
+    },
+    "storySections": [
+      {
+        "id": "built-for-australia",
+        "title": "Choose Facebook Post Likes Around the Australian Content You Actually Want to Support",
+        "lead": "Post Likes apply to one individual Facebook post, so the right approach starts with what that content is doing for the Page and why it deserves additional visible engagement.",
+        "paragraphs": [
+          "An Australian retailer may have a product release or sale post that matters more than everyday updates. A local business may want to highlight completed work, a new service or an important announcement. Restaurants and venues may publish events or seasonal offers. Creators may have collaboration content. Ecommerce brands can support selected campaign posts, while agencies may manage client Pages with completely different priorities.",
+          "Start with the post rather than an arbitrary Like total. Review the message, current activity, Page context and purpose of the content before deciding what level of visible engagement makes sense."
+        ],
+        "footer": "Post Likes can support how active selected content appears. The post itself still needs a clear purpose and accurate information behind it.",
+        "items": [
+          {
+            "title": "Australian Local Businesses",
+            "body": "Support posts showing genuine services, projects, locations, events or updates that potential customers may actually want to understand."
+          },
+          {
+            "title": "Ecommerce Businesses",
+            "body": "Use Post Likes around real launches, promotions and product content connected to items customers can research or buy."
+          },
+          {
+            "title": "Creators",
+            "body": "Support collaborations, announcements and other selected posts that genuinely represent the creator or partnership behind them."
+          },
+          {
+            "title": "Agencies and Client Pages",
+            "body": "Choose Like quantities according to each post and campaign objective rather than applying one standard engagement number across clients."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Put visible engagement behind priority Facebook content while genuine publishing, paid media and wider customer activity continue independently."
+          }
+        ]
+      },
+      {
+        "id": "campaign-content",
+        "title": "Put More Engagement Behind Important Australian Campaign Content",
+        "lead": "Some Facebook posts matter more because of the campaign around them.",
+        "footer": "Visible Likes can support how the content appears. The campaign itself still depends on the message, offer and customer experience behind it.",
+        "items": [
+          {
+            "title": "Product Releases",
+            "body": "Support the post that introduces or explains the product most clearly."
+          },
+          {
+            "title": "Boxing Day Campaigns",
+            "body": "Australian retail and ecommerce brands may have higher-priority content around one of the country's major shopping periods."
+          },
+          {
+            "title": "Summer Promotions",
+            "body": "Travel, hospitality, events, fashion and other seasonal businesses may have important content during Australia's summer."
+          },
+          {
+            "title": "New Location Announcements",
+            "body": "Businesses expanding into another suburb or city can support the post carrying the main announcement."
+          },
+          {
+            "title": "Creator Partnerships",
+            "body": "Put Likes behind the strongest collaboration content rather than unrelated Page posts."
+          },
+          {
+            "title": "Events and Community Campaigns",
+            "body": "Local events, openings, partnerships and community activity can create posts worth highlighting."
+          }
+        ]
+      },
+      {
+        "id": "strong-content",
+        "title": "Use Facebook Post Likes to Support Strong Content, Not to Replace It",
+        "lead": "A public Like number may influence the first impression of a Facebook post, but people can still see the creative, caption and Page behind it.",
+        "bullets": [
+          "the post image or video",
+          "caption",
+          "comments",
+          "shares",
+          "Page name",
+          "business information",
+          "recent Page activity"
+        ],
+        "paragraphs": [
+          "A stronger Like count can make selected content appear more active, but it cannot fix unclear messaging, outdated information or creative that gives the audience no reason to pay attention.",
+          "Use purchased Post Likes for the visible metric they provide. Keep the post's message, accuracy and usefulness as separate parts of the campaign."
+        ],
+        "footer": "Post Likes can strengthen visible engagement. The quality and relevance of the post determine what a genuine viewer finds behind that number."
+      },
+      {
+        "id": "real-activity",
+        "title": "Build Facebook Engagement Around Work and Activity the Business Can Actually Show",
+        "lead": "Posts become more useful when they document genuine products, projects, events, knowledge or business activity rather than relying only on promotional claims.",
+        "footer": "Post Likes can support the visible engagement around this content. Real activity gives the post substance beyond the displayed number.",
+        "items": [
+          {
+            "title": "Completed Work",
+            "body": "Use genuine projects, transformations or results that the business can accurately explain and stand behind."
+          },
+          {
+            "title": "Products the Business Really Offers",
+            "body": "Show actual products with information that customers can verify if they decide to research or purchase them."
+          },
+          {
+            "title": "Meaningful Business Developments",
+            "body": "Share real openings, expansions, anniversaries, new services or other changes when they are genuinely relevant to customers."
+          },
+          {
+            "title": "Events With Accurate Information",
+            "body": "Publish real dates, locations, booking details and other practical information people may need before attending."
+          },
+          {
+            "title": "Questions Customers Regularly Ask",
+            "body": "Turn recurring enquiries into useful Facebook posts that explain services, products, policies or processes clearly."
+          },
+          {
+            "title": "Behind-the-Scenes Business Activity",
+            "body": "Show genuine people, processes, locations or preparation where that context helps customers understand the operation."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Use Facebook Post Likes Around Local Content Australian Customers Can Verify",
+        "paragraphs": [
+          "Local-business posts can help customers see what the company actually does before they make contact. A restaurant can show a dish or venue. A builder may publish completed work. A salon can show a treatment or result. A retailer may introduce new stock. A property business can feature a listing. Tourism and hospitality businesses may show real experiences, while professional services can explain useful topics or processes.",
+          "If you support these posts with Likes, keep the Page and content consistent with the real business. Locations, services, availability, prices and public claims should match what customers can verify through the website, Google presence and other official channels."
+        ],
+        "footer": "Visible engagement can support presentation of the post. Local trust comes from the real Australian business and what customers find behind the content."
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep Facebook Post Likes Separate From Genuine Customer Evidence",
+        "paragraphs": [
+          "A larger Like count can make a post appear more active, but it does not show whether genuine customers have bought from, hired, visited or recommended the business.",
+          "Australian companies may have stronger evidence through genuine reviews, Facebook Recommendations, authentic testimonials, completed projects, case studies, customer photos, real Comments and consistent public business information.",
+          "Use that proof where it genuinely exists. Do not present purchased Post Likes as customer approval or invent customer experiences simply to make the content appear more credible."
+        ]
+      },
+      {
+        "id": "organic-reach",
+        "title": "Post Likes and Organic Reach Are Not the Same Thing",
+        "lead": "A higher Like count does not automatically mean Facebook will distribute the post to more people.",
+        "bullets": [
+          "increase organic reach",
+          "add Followers",
+          "add Page Likes",
+          "create comments",
+          "generate shares",
+          "increase website traffic",
+          "create enquiries",
+          "produce bookings",
+          "increase sales"
+        ],
+        "paragraphs": [
+          "NovaLikes Facebook Post Likes packages are designed around the Like count displayed on the selected eligible public post.",
+          "Organic distribution and genuine audience response are separate outcomes. Use the service for the metric it actually changes."
+        ]
+      },
+      {
+        "id": "clear-goal",
+        "title": "Decide What the Facebook Post Is Supposed to Achieve Before Supporting It",
+        "lead": "A post is easier to evaluate when the business knows why it was published and what a genuine viewer should understand or do after seeing it.",
+        "footer": "A clear job gives the post and its visible engagement useful context.",
+        "items": [
+          {
+            "title": "Introduce Something Important",
+            "body": "Use the post for awareness when customers genuinely need to learn about a product, service, location, brand or business update."
+          },
+          {
+            "title": "Explain a Useful Topic",
+            "body": "Educational posts should answer real questions or clarify information the audience may need before making a decision."
+          },
+          {
+            "title": "Show Evidence",
+            "body": "Use genuine projects, products, results or business activity when the purpose is to demonstrate what the company actually does."
+          },
+          {
+            "title": "Promote a Real Offer",
+            "body": "Make prices, dates, availability, inclusions and important conditions clear when the post supports a promotion."
+          },
+          {
+            "title": "Create a Genuine Discussion Point",
+            "body": "If conversation matters, give people a specific subject or question worth responding to rather than asking for generic engagement."
+          },
+          {
+            "title": "Guide the Next Customer Action",
+            "body": "If the goal is commercial, make it clear how an interested person can visit, enquire, book, shop or learn more."
+          }
+        ]
+      },
+      {
+        "id": "campaign-presentation",
+        "title": "Use Post Likes as One Part of a Campaign That Still Works Without Them",
+        "lead": "Visible engagement can improve how active a campaign post appears, but the campaign still needs to make sense to a genuine customer who sees the content.",
+        "footer": "Post Likes can support campaign presentation. The offer, creative, information and customer journey determine whether the campaign itself is useful.",
+        "items": [
+          {
+            "title": "An Offer People Can Understand",
+            "body": "Make the product, service, event or promotion clear enough that customers know what is actually being presented."
+          },
+          {
+            "title": "Information Customers Can Trust",
+            "body": "Check dates, prices, locations, availability and relevant conditions before putting more attention behind the post."
+          },
+          {
+            "title": "Creative That Supports the Message",
+            "body": "Use an image or video that helps communicate the campaign instead of relying on the Like number to create interest."
+          },
+          {
+            "title": "A Clear Next Step",
+            "body": "Help genuine viewers understand where to visit, enquire, book, purchase or find more information if they become interested."
+          },
+          {
+            "title": "Real Follow-Up From the Business",
+            "body": "Genuine customer questions and problems should be handled by someone with accurate information from the actual company."
+          }
+        ]
+      },
+      {
+        "id": "facebook-insights",
+        "title": "Use Genuine Facebook Data to Judge What the Page Should Publish Next",
+        "lead": "Post Likes change one visible content metric. Real Page performance can provide better evidence about which subjects and formats genuine users actually respond to.",
+        "footer": "Purchased Post Likes affect the displayed Like number. Use genuine Page and business data when deciding what content deserves more attention in the future.",
+        "items": [
+          {
+            "title": "Which Posts Attract Genuine Attention?",
+            "body": "Compare real performance across multiple pieces of content instead of judging the strategy from one Like total."
+          },
+          {
+            "title": "Which Subjects Create Authentic Interaction?",
+            "body": "Look at genuine Comments, Shares and other available signals to understand what people actually respond to."
+          },
+          {
+            "title": "Which Content Formats Work Best?",
+            "body": "Compare real behaviour across images, videos, links and other post types used by the Page."
+          },
+          {
+            "title": "Does the Content Lead to Useful Customer Activity?",
+            "body": "For Australian businesses, genuine outcomes may include website visits, enquiries, bookings, store activity or purchases."
+          },
+          {
+            "title": "What Should the Page Do More of?",
+            "body": "Use actual performance patterns to choose future topics and formats rather than relying on purchased engagement as the decision signal."
+          }
+        ]
+      },
+      {
+        "id": "content-framework",
+        "title": "A Practical Facebook Content Plan for Australian Pages",
+        "lead": "Post Likes can support selected pieces of content, but stronger Facebook marketing comes from publishing useful posts and measuring genuine customer response.",
+        "footer": "Keep purchased Post Likes in perspective as one visible content metric. Longer-term value comes from the Page, content and genuine business activity behind it.",
+        "items": [
+          {
+            "title": "Build Content Around Several Customer Needs",
+            "body": "Use a useful mix of business updates, education, genuine proof, promotions, products, services and community information."
+          },
+          {
+            "title": "Choose Priority Posts Deliberately",
+            "body": "Identify which posts have a real campaign, customer or business purpose instead of treating every update as equally important."
+          },
+          {
+            "title": "Use First-Hand Business Experience",
+            "body": "Show genuine work, products, services, projects and knowledge that the company can accurately explain."
+          },
+          {
+            "title": "Keep the Page Behind the Post Accurate",
+            "body": "Make sure visitors can verify important business information after a post creates interest."
+          },
+          {
+            "title": "Respond to Authentic Interaction",
+            "body": "Treat real Comments and messages as customer or community conversations rather than simply additional engagement numbers."
+          },
+          {
+            "title": "Review Genuine Performance",
+            "body": "Use actual Page insights and business data to understand which content contributes useful audience or customer activity."
+          },
+          {
+            "title": "Connect Facebook With the Wider Australian Customer Journey",
+            "body": "Businesses may use Facebook alongside Instagram, their website, Google visibility, search, paid media, ecommerce and email."
+          },
+          {
+            "title": "Measure Purchased Post Likes Separately",
+            "body": "Use Post Likes for the visible metric they provide while evaluating organic interaction and commercial outcomes independently."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -13,26 +13,31 @@ import {
 } from '@/data/navigation';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
-import { localizeHref } from '@/lib/i18n/paths';
+import type { Market } from '@/lib/market/config';
+import { resolvePublicHref } from '@/lib/market/paths';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 import { cn } from '@/lib/utils';
 
 type NavbarProps = {
   className?: string;
   locale?: Locale;
+  market?: Market | null;
   ui?: UiDictionary;
 };
 
 export function Navbar({
   className,
   locale = DEFAULT_LOCALE,
+  market = null,
   ui = ENGLISH_UI as UiDictionary,
 }: NavbarProps) {
+  const resolveHref = (path: string) => resolvePublicHref(path, { locale, market });
+
   const items = getMainNavigation(locale).map((item) => {
     if (isMegaMenuItem(item)) {
       return {
         ...item,
-        href: localizeHref(item.href, locale),
+        href: resolveHref(item.href),
         label:
           item.platformId === 'instagram'
             ? ui.nav.instagram
@@ -41,7 +46,7 @@ export function Navbar({
               : ui.nav.facebook,
       };
     }
-    const href = localizeHref(item.href, locale);
+    const href = resolveHref(item.href);
     const label =
       item.id === 'nav-home'
         ? ui.nav.home
@@ -59,7 +64,7 @@ export function Navbar({
     return { ...item, href, label };
   });
 
-  const ctaHref = localizeHref(primaryCta.href, locale);
+  const ctaHref = resolveHref(primaryCta.href);
   const ctaLabel = ui.nav.getStarted;
 
   return (
@@ -69,7 +74,7 @@ export function Navbar({
         aria-hidden="true"
       />
       <Container className="relative flex h-14 items-center justify-between gap-4">
-        <Logo href={localizeHref('/', locale)} />
+        <Logo href={resolveHref('/')} />
 
         <nav aria-label={ui.nav.primaryNav} className="hidden h-full min-w-0 items-center gap-1 xl:flex">
           {items.map((item) => {

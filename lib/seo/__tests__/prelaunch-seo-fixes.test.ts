@@ -15,7 +15,6 @@ import {
   selectMainFaqPageFaqs,
   sanitizeFaqForPublic,
 } from '@/lib/faqs';
-import { buildFaqPageSchemaFromVisible } from '@/lib/faqs/schema';
 import { buildBreadcrumb } from '@/lib/linking';
 import { getDiscoverableTags, getPopularTags, getTagBySlug } from '@/lib/learn/taxonomy';
 import { getLowercasePublicRedirect } from '@/lib/seo/lowercase-public-path';
@@ -59,7 +58,7 @@ describe('Learn tag archives', () => {
 });
 
 describe('Public FAQ YouTube exclusion', () => {
-  it('does not expose YouTube purchase FAQs on /faq or in FAQPage schema', () => {
+  it('does not expose YouTube purchase FAQs on /faq (content filter)', () => {
     const visible = selectMainFaqPageFaqs();
     expect(visible.some((faq) => isUnsupportedYoutubePurchaseFaq(faq))).toBe(false);
     expect(visible.some((faq) => faq.id.startsWith('faq-yt-'))).toBe(false);
@@ -72,13 +71,6 @@ describe('Public FAQ YouTube exclusion', () => {
     expect(
       purchase.every((faq) => /not currently offered/i.test(faq.answer)),
     ).toBe(true);
-
-    const schema = buildFaqPageSchemaFromVisible(visible);
-    const names = (
-      (schema as { mainEntity?: Array<{ name: string }> } | null)?.mainEntity ?? []
-    ).map((item) => item.name);
-    expect(names).toEqual(visible.map((faq) => faq.question));
-    expect(names.some((name) => /buy youtube/i.test(name))).toBe(false);
   });
 
   it('keeps legacy YouTube catalogue rows out of public sanitization', () => {

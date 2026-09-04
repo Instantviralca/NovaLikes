@@ -35,6 +35,8 @@ export async function POST(request: Request) {
       termsAccepted: body.termsAccepted,
       idempotencyKey: body.idempotencyKey,
       marketingOptIn: Boolean(body.marketingOptIn || body.customer?.marketingOptIn),
+      cardToken: body.cardToken,
+      recoveryPublicId: body.recoveryPublicId,
     });
 
     if (!result.ok) {

@@ -18,6 +18,8 @@
   "exploreFacebook": "Explorar Facebook",
   "readMore": "Leer más",
   "showLess": "Mostrar menos",
+  "collectTitle": "Cómo recopilamos opiniones",
+  "collectBody": "Estos comentarios son opiniones de clientes publicadas en el catálogo de NovaLikes. Se importaron como comentarios históricos de clientes. No están vinculados a un pedido en vivo y no están verificados de forma independiente por un tercero.",
   "chrome": {
     "breadcrumb": "Opiniones"
   },

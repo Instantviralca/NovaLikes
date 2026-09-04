@@ -18,6 +18,8 @@
   "exploreFacebook": "Facebook entdecken",
   "readMore": "Mehr lesen",
   "showLess": "Weniger anzeigen",
+  "collectTitle": "Wie wir Bewertungen sammeln",
+  "collectBody": "Diese Kommentare sind Kundenfeedback aus dem veröffentlichten NovaLikes-Katalog. Sie wurden als historische Kundenkommentare importiert. Sie sind keinem Live-Auftrag zugeordnet und nicht unabhängig durch Dritte verifiziert.",
   "chrome": {
     "breadcrumb": "Bewertungen"
   },

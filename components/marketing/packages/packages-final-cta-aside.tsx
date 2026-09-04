@@ -2,6 +2,8 @@
 
 import { RasterSectionVisual } from '@/components/illustrations/raster-section-visual';
 import type { InstagramDashboardVariant } from '@/components/illustrations/dashboards';
+import { getUniqueServiceImage } from '@/lib/market/unique-service-images';
+import type { Market } from '@/lib/market/config';
 import { cn } from '@/lib/utils';
 
 const CTA_SRC: Record<InstagramDashboardVariant, string> = {
@@ -22,6 +24,8 @@ type PackagesFinalCtaAsideProps = {
   facebookFollowers?: boolean;
   facebookPageLikes?: boolean;
   facebookPostLikes?: boolean;
+  market?: Market;
+  serviceSlug?: string;
 };
 
 function resolveSrc(props: PackagesFinalCtaAsideProps): string {
@@ -65,7 +69,7 @@ function resolveAlt(props: PackagesFinalCtaAsideProps): string {
   }
 }
 
-/** Photorealistic final CTA visual. */
+/** Final CTA visual — unique per market service page when market+slug provided. */
 export function PackagesFinalCtaAside({
   className,
   instagramVariant = 'followers',
@@ -75,33 +79,36 @@ export function PackagesFinalCtaAside({
   facebookFollowers = false,
   facebookPageLikes = false,
   facebookPostLikes = false,
+  market,
+  serviceSlug,
 }: PackagesFinalCtaAsideProps) {
-  const src = resolveSrc({
-    instagramVariant,
-    tiktokFollowers,
-    tiktokLikes,
-    tiktokViews,
-    facebookFollowers,
-    facebookPageLikes,
-    facebookPostLikes,
-  });
-  const alt = resolveAlt({
-    instagramVariant,
-    tiktokFollowers,
-    tiktokLikes,
-    tiktokViews,
-    facebookFollowers,
-    facebookPageLikes,
-    facebookPostLikes,
-  });
+  const unique =
+    market && serviceSlug ? getUniqueServiceImage(market, serviceSlug, 'final-cta') : null;
+  const src =
+    unique?.src ??
+    resolveSrc({
+      instagramVariant,
+      tiktokFollowers,
+      tiktokLikes,
+      tiktokViews,
+      facebookFollowers,
+      facebookPageLikes,
+      facebookPostLikes,
+    });
+  const alt =
+    unique?.alt ??
+    resolveAlt({
+      instagramVariant,
+      tiktokFollowers,
+      tiktokLikes,
+      tiktokViews,
+      facebookFollowers,
+      facebookPageLikes,
+      facebookPostLikes,
+    });
 
   return (
-    <div
-      className={cn(
-        'relative flex min-h-[20rem] items-center overflow-hidden rounded-2xl bg-transparent p-1 sm:min-h-[24rem]',
-        className,
-      )}
-    >
+    <div className={cn('w-full', className)}>
       <RasterSectionVisual src={src} alt={alt} className="max-w-none" />
     </div>
   );

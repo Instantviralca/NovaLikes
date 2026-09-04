@@ -48,15 +48,18 @@ describe('Approved customer reviews catalogue', () => {
     });
   });
 
-  it('returns the six featured homepage reviews in the recommended order', () => {
-    const featured = getHomepageReviews(6);
+  it('returns three varied homepage reviews without changing their wording', () => {
+    const featured = getHomepageReviews();
+    expect(featured).toHaveLength(3);
     expect(featured.map((review) => review.customerName)).toEqual([
       'Mary Care',
       'Nina Hartley',
-      'Muntaha',
-      'Eva',
-      'Sheikh Hadi',
       'Lisa',
+    ]);
+    expect(featured.map((review) => review.reviewText)).toEqual([
+      'I compared a few Instagram packages before ordering, and checkout was easy. I also liked being able to see the full total before I paid.',
+      'I started with a smaller Instagram package for my creator page. The status updates helped, and everything went fine.',
+      'I’ve used NovaLikes a few times now, and it’s still been reliable for me.',
     ]);
   });
 

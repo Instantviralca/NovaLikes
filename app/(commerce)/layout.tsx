@@ -11,7 +11,7 @@ export default async function CommerceLayout({ children }: CommerceLayoutProps) 
   const chrome = await getSiteChrome();
 
   return (
-    <SiteLayout illustrated={false} locale={chrome.locale} ui={chrome.ui}>
+    <SiteLayout illustrated={false} locale={chrome.locale} market={chrome.market} ui={chrome.ui}>
       {children}
     </SiteLayout>
   );

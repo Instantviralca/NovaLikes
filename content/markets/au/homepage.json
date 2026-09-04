@@ -1,0 +1,1164 @@
+{
+  "hero": {
+    "eyebrow": "INSTAGRAM GROWTH FOR AUSTRALIA",
+    "title": "Build a Stronger Instagram Presence in Australia",
+    "description": "Put more visible momentum behind the Instagram profile, posts and Reels you're already building. NovaLikes gives Australian creators, businesses, brands and agencies a straightforward way to choose Instagram Followers, Likes, Views and Comments from one place. Pick the metric you want to work on, compare the available packages and place your order using only the public profile or content details required for that service. No Instagram password is required. Whether you're preparing for a product launch, growing a creator profile, supporting a local business or putting more attention behind an important Reel, start with the Instagram metric that actually matches your goal.",
+    "primaryCta": {
+      "label": "Explore Instagram Services",
+      "href": "#instagram-services"
+    },
+    "secondaryCta": {
+      "label": "Compare Packages",
+      "href": "#services-overview"
+    },
+    "trustFeatures": [
+      {
+        "id": "password",
+        "line1": "No Password",
+        "line2": "Required",
+        "icon": "shield"
+      },
+      {
+        "id": "pricing",
+        "line1": "Clear",
+        "line2": "Pricing",
+        "icon": "tag"
+      },
+      {
+        "id": "payments",
+        "line1": "Secure",
+        "line2": "Checkout",
+        "icon": "shield"
+      },
+      {
+        "id": "tracking",
+        "line1": "Order",
+        "line2": "Tracking",
+        "icon": "truck"
+      }
+    ],
+    "visual": {
+      "src": "/assets/images/homepage/hero-social-growth.webp",
+      "alt": "NovaLikes Instagram growth illustration for Australian creators and businesses",
+      "width": 1024,
+      "height": 682
+    }
+  },
+  "platformSelector": {
+    "id": "platform-selector",
+    "eyebrow": "Instagram Services",
+    "title": "What Instagram Growth Services Does NovaLikes Offer in Australia?",
+    "description": "NovaLikes offers Instagram Followers, Likes, Views and Comments for eligible public profiles and content in Australia. Followers work at the profile level. Likes apply to specific posts and Reels. Views are designed for eligible Reels and video content. Comments add visible conversation around selected posts and Reels. Choose the service based on the exact Instagram metric you want to work on.",
+    "trustItems": [
+      {
+        "id": "packages",
+        "label": "Clear Package Options",
+        "icon": "shield"
+      },
+      {
+        "id": "password",
+        "label": "No Password Required",
+        "icon": "shield"
+      },
+      {
+        "id": "refund",
+        "label": "30-Day Money-Back Guarantee on Eligible Orders",
+        "icon": "shield"
+      }
+    ],
+    "socialProof": {
+      "text": "Compare Instagram follower, like, view and comment packages",
+      "href": "#services-overview"
+    },
+    "platforms": [
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "description": "Followers, Likes, Views and Comments for eligible Instagram profiles and content in Australia.",
+        "href": "#instagram-services",
+        "ctaLabel": "View Instagram",
+        "badge": "Instagram Services",
+        "metric": {
+          "value": "Profile",
+          "label": "Followers"
+        },
+        "tags": [
+          {
+            "label": "Instagram Followers",
+            "href": "/au/buy-instagram-followers",
+            "icon": "user"
+          },
+          {
+            "label": "Instagram Likes",
+            "href": "/au/buy-instagram-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Instagram Views",
+            "href": "/au/buy-instagram-views",
+            "icon": "play"
+          },
+          {
+            "label": "Instagram Comments",
+            "href": "/au/buy-instagram-comments",
+            "icon": "comment"
+          }
+        ]
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "description": "Followers, likes, and views for TikTok accounts and videos.",
+        "href": "#tiktok-services",
+        "ctaLabel": "View TikTok",
+        "metric": {
+          "value": "Video",
+          "label": "Views"
+        },
+        "tags": [
+          {
+            "label": "Account Growth",
+            "href": "/au/buy-tiktok-followers",
+            "icon": "trend"
+          },
+          {
+            "label": "Video Likes",
+            "href": "/au/buy-tiktok-likes",
+            "icon": "heart"
+          },
+          {
+            "label": "Video Views",
+            "href": "/au/buy-tiktok-views",
+            "icon": "eye"
+          },
+          {
+            "label": "More Engagement",
+            "href": "#tiktok-services",
+            "icon": "spark"
+          }
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "description": "Followers, Page likes, and post likes for public Facebook Pages and posts.",
+        "href": "#facebook-services",
+        "ctaLabel": "View Facebook",
+        "metric": {
+          "value": "Page",
+          "label": "Likes"
+        },
+        "tags": [
+          {
+            "label": "Page Growth",
+            "href": "/au/buy-facebook-page-likes",
+            "icon": "users"
+          },
+          {
+            "label": "Post Likes",
+            "href": "/au/buy-facebook-post-likes",
+            "icon": "thumb"
+          },
+          {
+            "label": "Profile Followers",
+            "href": "/au/buy-facebook-followers",
+            "icon": "user"
+          },
+          {
+            "label": "More Reach",
+            "href": "#facebook-services",
+            "icon": "reach"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesOverview": {
+    "id": "services-overview",
+    "eyebrow": "Choose Your Goal",
+    "title": "Choose the Instagram Service That Matches Your Goal",
+    "description": "Instagram growth isn't one number. Your follower count, post engagement, Reel views and visible conversation each represent a different part of your presence. Start with the one that matters most right now.",
+    "trustNote": "Your Goal → Start With the Right Service",
+    "features": [
+      {
+        "id": "followers",
+        "label": "Increase visible profile audience → Instagram Followers",
+        "icon": "users"
+      },
+      {
+        "id": "likes",
+        "label": "Add Likes to a specific post or Reel → Instagram Likes",
+        "icon": "bolt"
+      },
+      {
+        "id": "views",
+        "label": "Increase displayed Views on video → Instagram Views",
+        "icon": "headset"
+      },
+      {
+        "id": "comments",
+        "label": "Add visible conversation → Instagram Comments",
+        "icon": "shield"
+      }
+    ]
+  },
+  "platformGroupTitles": {
+    "instagram": {
+      "id": "instagram-services",
+      "title": "Built Around Australian Creators, Businesses and Brands",
+      "description": "Instagram plays a different role depending on what you're building. An Australian creator may be developing a profile around fashion, fitness, food, travel, education or another niche. An ecommerce brand may rely on Instagram around product drops and seasonal promotions. A local business may use its profile to show genuine projects, services and recent activity before a potential customer makes contact. An agency may manage multiple accounts with completely different campaign goals. A larger brand may use Instagram alongside paid media, email, ecommerce, search and creator partnerships. That means there is no single Instagram growth package that makes sense for every account."
+    },
+    "tiktok": {
+      "id": "tiktok-services",
+      "title": "TikTok Growth Services",
+      "description": "Choose TikTok Followers, Likes or Views when you're working on your TikTok profile or individual videos."
+    },
+    "facebook": {
+      "id": "facebook-services",
+      "title": "Facebook Growth Services",
+      "description": "Choose Facebook Followers, Page Likes or Post Likes when you're working on an eligible public Facebook Page or post."
+    }
+  },
+  "why": {
+    "id": "why-novalikes",
+    "title": "Why Choose NovaLikes for Instagram Growth?",
+    "description": "Ordering Instagram services should be straightforward.",
+    "points": [
+      {
+        "title": "No Instagram Password Required",
+        "body": "NovaLikes does not require your Instagram password or verification codes."
+      },
+      {
+        "title": "Clear Package Options",
+        "body": "Compare available quantities and current pricing before placing your order."
+      },
+      {
+        "title": "Service-Specific Ordering",
+        "body": "Followers use the public profile details required for the follower service. Likes, Views and Comments use the eligible public content required for those services."
+      },
+      {
+        "title": "Secure Card Payments",
+        "body": "Complete checkout through the available NovaLikes payment process."
+      },
+      {
+        "title": "Order Tracking",
+        "body": "Use your NovaLikes order information afterward for available status updates."
+      },
+      {
+        "title": "Customer Support",
+        "body": "Contact support with the relevant order details if something needs checking."
+      },
+      {
+        "title": "30-Day Money-Back Guarantee on Eligible Orders",
+        "body": "Eligible purchases are covered according to the current NovaLikes refund terms."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "how-it-works",
+    "title": "How NovaLikes Instagram Orders Work",
+    "description": "No Instagram password is required.",
+    "steps": [
+      {
+        "title": "Choose Your Instagram Service",
+        "body": "Start with Followers, Likes, Views or Comments."
+      },
+      {
+        "title": "Pick a Package",
+        "body": "Compare the available quantities and current prices."
+      },
+      {
+        "title": "Provide the Required Public Details",
+        "body": "Depending on the service, you'll submit your public Instagram username or the direct URL of an eligible post or Reel."
+      },
+      {
+        "title": "Review Your Order",
+        "body": "Check the service, package, account or content details and current price."
+      },
+      {
+        "title": "Complete Checkout",
+        "body": "Place your order without sharing your Instagram password."
+      },
+      {
+        "title": "Track the Status",
+        "body": "Use NovaLikes order tracking afterward for available updates."
+      }
+    ]
+  },
+  "guarantees": {
+    "id": "guarantees",
+    "title": "More Instagram Followers Don't Automatically Mean More Reach",
+    "description": "Instagram metrics should be understood individually. A larger follower count does not automatically guarantee more Reel views. More Likes do not automatically create Followers. More Views do not guarantee viral distribution. More Comments do not automatically create sales. NovaLikes Instagram services should not be treated as guaranteed ways to reach Explore, make a Reel viral, gain organic Followers, increase organic reach, secure brand partnerships, generate customers, create enquiries or increase sales. Each NovaLikes service is designed around the visible metric described by the package. Organic Instagram performance remains separate.",
+    "items": [
+      {
+        "title": "Not Guaranteed: Explore or Viral Distribution",
+        "body": "Purchased metrics should not be treated as guarantees of Explore placement or viral Reels."
+      },
+      {
+        "title": "Not Guaranteed: Organic Follower or Reach Growth",
+        "body": "More Likes do not automatically create Followers. More Views do not automatically increase organic reach."
+      },
+      {
+        "title": "Not Guaranteed: Business Results",
+        "body": "Services should not be treated as guarantees of customers, enquiries, sales or brand partnerships."
+      },
+      {
+        "title": "Buy for the Metric the Service Provides",
+        "body": "Clear expectations make it easier to choose the right service and compare packages realistically."
+      }
+    ]
+  },
+  "beforeYouBuy": {
+    "id": "before-you-buy",
+    "title": "Know What You're Ordering Before You Pay",
+    "description": "A few checks can prevent avoidable ordering mistakes. If you're comparing affordable Instagram growth services in Australia, check which Instagram metric changes, package quantity, current pricing, required public information, password requirements, order tracking, customer support, service policies and what the provider actually promises.",
+    "items": [
+      {
+        "question": "Profile or Content?",
+        "answer": "Use Followers when you're working on the overall profile. Use Likes, Views or Comments when individual content is the priority."
+      },
+      {
+        "question": "Correct Username or URL?",
+        "answer": "Double-check the public details before submitting them."
+      },
+      {
+        "question": "Correct Package?",
+        "answer": "Review the quantity you've selected."
+      },
+      {
+        "question": "Current Price?",
+        "answer": "Check the package total before checkout."
+      },
+      {
+        "question": "Public Content?",
+        "answer": "Keep the profile, post or Reel publicly accessible where required during processing."
+      },
+      {
+        "question": "Password?",
+        "answer": "Keep it private. NovaLikes does not need your Instagram password."
+      },
+      {
+        "question": "Policies?",
+        "answer": "Review the applicable service and refund information before checkout."
+      }
+    ]
+  },
+  "faq": {
+    "id": "homepage-faq",
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about NovaLikes Instagram growth services in Australia.",
+    "items": [
+      {
+        "question": "What Instagram growth services does NovaLikes offer in Australia?",
+        "answer": "NovaLikes offers Instagram Followers, Likes, Views and Comments for eligible public profiles, posts and Reels. Choose the service based on the metric you want to work on."
+      },
+      {
+        "question": "Where can I buy Instagram followers in Australia?",
+        "answer": "You can use the NovaLikes Instagram Followers service for an eligible public Instagram profile. Choose an available package, submit the required public username and order without sharing your Instagram password."
+      },
+      {
+        "question": "Can I buy Instagram Likes in Australia?",
+        "answer": "Yes. NovaLikes offers Instagram Likes packages for eligible public posts and Reels."
+      },
+      {
+        "question": "Can I buy Instagram Views for Reels?",
+        "answer": "Yes. Instagram Views packages are available for eligible public Reels and video content."
+      },
+      {
+        "question": "Can I buy Instagram Comments?",
+        "answer": "Yes. NovaLikes offers Instagram Comments packages for eligible public posts and Reels."
+      },
+      {
+        "question": "Do I need to share my Instagram password?",
+        "answer": "No. NovaLikes does not require your Instagram password or verification codes for its Instagram services."
+      },
+      {
+        "question": "Which Instagram service should I choose?",
+        "answer": "Choose Followers for visible profile audience size, Likes for engagement on a specific post or Reel, Views for eligible video view count and Comments for visible conversation around content."
+      },
+      {
+        "question": "Are Instagram Followers, Likes and Views the same thing?",
+        "answer": "No. They are separate Instagram metrics. Followers apply to the profile, while Likes and Views apply to eligible individual content."
+      },
+      {
+        "question": "Will buying Instagram Followers automatically increase my Likes?",
+        "answer": "No. Followers and Likes are separate metrics and separate services."
+      },
+      {
+        "question": "Will buying Instagram Views make my Reel viral?",
+        "answer": "There is no guarantee. An Instagram Views package changes the visible View metric described by the service. Organic distribution depends on separate factors."
+      },
+      {
+        "question": "Can Australian businesses use NovaLikes Instagram services?",
+        "answer": "Eligible public Instagram profiles and content used by Australian businesses, creators, brands and agencies can use the relevant NovaLikes services."
+      },
+      {
+        "question": "Can local businesses use Instagram growth services?",
+        "answer": "Yes, where the profile or content meets the relevant service requirements. Keep your business information and content accurate alongside your Instagram strategy."
+      },
+      {
+        "question": "How do I choose the right package?",
+        "answer": "Start with your current profile or content metric, decide what increase you want and compare the available packages before ordering."
+      },
+      {
+        "question": "Can I track my order?",
+        "answer": "Yes. NovaLikes provides order tracking for available status information after checkout."
+      },
+      {
+        "question": "Does NovaLikes offer a money-back guarantee?",
+        "answer": "NovaLikes offers a 30-day money-back guarantee on eligible orders according to the current Refund Policy."
+      },
+      {
+        "question": "Does NovaLikes also offer TikTok and Facebook services?",
+        "answer": "Yes. NovaLikes also offers TikTok Followers, Likes and Views, plus Facebook Followers, Page Likes and Post Likes."
+      }
+    ]
+  },
+  "reviews": {
+    "id": "homepage-reviews",
+    "title": "What Customers Say About NovaLikes",
+    "description": "Read feedback from customers who have used NovaLikes for social media services. Their experiences can help you get a better idea of the ordering process before placing your own order.",
+    "cta": {
+      "label": "Read More Reviews",
+      "href": "/reviews"
+    }
+  },
+  "finalCta": {
+    "id": "home-final-cta",
+    "eyebrow": "Instagram Growth for Australia",
+    "title": "Ready to Build a Stronger Instagram Presence?",
+    "description": "Start with the metric that matters most to your profile or campaign. Build your visible profile audience with Followers. Put more engagement behind important posts and Reels with Likes. Give your strongest video content more visible Views. Or create more visible conversation with Comments. Choose your Instagram service, compare the available packages and place your order without sharing your password.",
+    "primaryCta": {
+      "label": "Explore Instagram Services",
+      "href": "#instagram-services"
+    },
+    "secondaryCta": {
+      "label": "Compare Packages",
+      "href": "#services-overview"
+    },
+    "trustItems": [
+      {
+        "id": "secure",
+        "label": "No Password Required",
+        "icon": "shield"
+      },
+      {
+        "id": "delivery",
+        "label": "Clear Pricing",
+        "icon": "bolt"
+      },
+      {
+        "id": "support",
+        "label": "Secure Checkout",
+        "icon": "headset"
+      },
+      {
+        "id": "tracking",
+        "label": "Order Tracking",
+        "icon": "shield"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "ig-followers",
+      "platform": "instagram",
+      "slug": "buy-instagram-followers",
+      "href": "/au/buy-instagram-followers",
+      "name": "Instagram Followers",
+      "cardBlurb": "Follower packages for your public Instagram profile.",
+      "commercialLabel": "INSTAGRAM FOLLOWERS",
+      "title": "Build a Stronger Profile Audience",
+      "intro": "Choose Instagram Followers when you want to increase the follower count displayed on your public profile. Follower packages can support the visible audience around a newer creator account, established brand or business profile while you continue developing the content behind it.",
+      "points": [
+        {
+          "title": "Creator Profiles",
+          "text": "Strengthen the profile around a clear niche and your best work."
+        },
+        {
+          "title": "Business Accounts",
+          "text": "Build a stronger profile around real services, projects and customer-facing activity."
+        },
+        {
+          "title": "Personal Brands",
+          "text": "Support the visible audience around an established or growing public profile."
+        },
+        {
+          "title": "Campaign Preparation",
+          "text": "Prepare a profile before a launch, collaboration or campaign sends new visitors toward it."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Followers",
+        "href": "/au/buy-instagram-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-followers-visual.webp",
+        "alt": "Instagram profile with follower and audience indicators"
+      },
+      "tone": "rose"
+    },
+    {
+      "id": "ig-likes",
+      "platform": "instagram",
+      "slug": "buy-instagram-likes",
+      "href": "/au/buy-instagram-likes",
+      "name": "Instagram Likes",
+      "cardBlurb": "Like packages for eligible Instagram posts and Reels.",
+      "commercialLabel": "INSTAGRAM LIKES",
+      "title": "Put More Engagement Behind Important Posts & Reels",
+      "intro": "Choose Instagram Likes when a particular piece of content is your priority. Add more visible Likes around an eligible public post or Reel based on the content, existing engagement and increase you want.",
+      "points": [
+        {
+          "title": "Product Launches",
+          "text": "Put more engagement behind launch posts and priority Reels."
+        },
+        {
+          "title": "Creator Collaborations",
+          "text": "Support the content that best represents the partnership."
+        },
+        {
+          "title": "Portfolio Posts",
+          "text": "Highlight work you want potential customers, clients or partners to see."
+        },
+        {
+          "title": "Campaign Content",
+          "text": "Add visible Likes around announcements, updates and priority creative."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Likes",
+        "href": "/au/buy-instagram-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-likes-visual.webp",
+        "alt": "Instagram post with likes and engagement indicators"
+      },
+      "tone": "violet"
+    },
+    {
+      "id": "ig-views",
+      "platform": "instagram",
+      "slug": "buy-instagram-views",
+      "href": "/au/buy-instagram-views",
+      "name": "Instagram Views",
+      "cardBlurb": "View packages for eligible Instagram Reels and videos.",
+      "commercialLabel": "INSTAGRAM VIEWS",
+      "title": "Give Your Best Reels More Visible Attention",
+      "intro": "Choose Instagram Views when video is the metric you're working on. Views apply to eligible public Instagram Reels and video content rather than your overall follower count.",
+      "points": [
+        {
+          "title": "Product Demonstrations",
+          "text": "Put more visible Views behind videos that show your offer clearly."
+        },
+        {
+          "title": "Creator Reels",
+          "text": "Support the Reels that represent your niche and content direction."
+        },
+        {
+          "title": "Campaign Videos",
+          "text": "Give priority video content more visible attention during a campaign."
+        },
+        {
+          "title": "Evergreen Video Content",
+          "text": "Support tutorials, explainers and useful videos that continue representing the account."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Views",
+        "href": "/au/buy-instagram-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-views-visual.webp",
+        "alt": "Instagram Reel with video view indicators"
+      },
+      "tone": "orange"
+    },
+    {
+      "id": "ig-comments",
+      "platform": "instagram",
+      "slug": "buy-instagram-comments",
+      "href": "/au/buy-instagram-comments",
+      "name": "Instagram Comments",
+      "cardBlurb": "Comment packages for eligible Instagram posts and Reels.",
+      "commercialLabel": "INSTAGRAM COMMENTS",
+      "title": "Build More Visible Conversation Around Your Content",
+      "intro": "Comments create a different type of visible interaction from Followers, Likes or Views. Choose Instagram Comments when you want more conversation around an eligible public post or Reel.",
+      "points": [
+        {
+          "title": "Launches",
+          "text": "Add visible conversation around important announcements and launch content."
+        },
+        {
+          "title": "Collaboration Posts",
+          "text": "Support discussion-focused content built around a partnership."
+        },
+        {
+          "title": "Product Posts",
+          "text": "Create more visible interaction around posts that introduce or explain an offer."
+        },
+        {
+          "title": "Campaign Content",
+          "text": "Use Comments when visible conversation supports the post or Reel you are prioritising."
+        }
+      ],
+      "cta": {
+        "label": "Buy Instagram Comments",
+        "href": "/au/buy-instagram-comments"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/instagram-comments-visual.webp",
+        "alt": "Instagram post with comments and conversation bubbles"
+      },
+      "tone": "amber"
+    },
+    {
+      "id": "tt-followers",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-followers",
+      "href": "/au/buy-tiktok-followers",
+      "name": "TikTok Followers",
+      "cardBlurb": "TikTok follower packages for eligible public profiles in Australia.",
+      "commercialLabel": "BUY TIKTOK FOLLOWERS",
+      "title": "Strengthen the Audience Number Around Your TikTok Profile",
+      "intro": "Choose TikTok Followers when you want to work on the visible audience size of a public profile. Australian creators and businesses can use follower growth alongside an account that already communicates what it is about through its bio, pinned videos and recent content.",
+      "points": [
+        {
+          "title": "Audience Size at Profile Level",
+          "text": "The follower package applies to the public TikTok account rather than an individual video."
+        },
+        {
+          "title": "Useful for Growing Profiles",
+          "text": "Support a creator, business or brand account while you continue developing the videos behind the profile."
+        },
+        {
+          "title": "Match Growth to Current Activity",
+          "text": "Choose a quantity that makes sense for the profile's existing audience and how actively you are publishing."
+        },
+        {
+          "title": "Content Engagement Is Separate",
+          "text": "TikTok Likes and Views are available when you want to focus on a specific piece of video content."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Followers",
+        "href": "/au/buy-tiktok-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-followers-visual.webp",
+        "alt": "TikTok creator profile with follower indicators"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "tt-likes",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-likes",
+      "href": "/au/buy-tiktok-likes",
+      "name": "TikTok Likes",
+      "cardBlurb": "Like packages for eligible public TikTok videos from Australian profiles.",
+      "commercialLabel": "BUY TIKTOK LIKES",
+      "title": "Support the TikTok Videos You Want People to Notice",
+      "intro": "Choose TikTok Likes when a particular public video is more important than the rest of the feed. You might be supporting a product launch, useful tutorial, creator partnership, project showcase or campaign video. Add visible Likes to that selected TikTok while keeping the wider account strategy separate.",
+      "points": [
+        {
+          "title": "For Priority TikToks",
+          "text": "Select the individual public video that best represents the content you want to support."
+        },
+        {
+          "title": "Likes Stay With the Video",
+          "text": "The package changes the Like count on that TikTok rather than your overall profile follower number."
+        },
+        {
+          "title": "Use Around Strong Content",
+          "text": "Put engagement behind videos with a clear subject, useful message or role in a wider campaign."
+        },
+        {
+          "title": "Choose the Metric Deliberately",
+          "text": "Use Views when video plays are the goal or Followers when you want to work on profile audience size."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Likes",
+        "href": "/au/buy-tiktok-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-likes-visual.webp",
+        "alt": "TikTok video with likes and interaction indicators"
+      },
+      "tone": "cyan"
+    },
+    {
+      "id": "tt-views",
+      "platform": "tiktok",
+      "slug": "buy-tiktok-views",
+      "href": "/au/buy-tiktok-views",
+      "name": "TikTok Views",
+      "cardBlurb": "View packages for eligible public TikTok videos from Australian accounts.",
+      "commercialLabel": "BUY TIKTOK VIEWS",
+      "title": "Put More Visible Views Behind Your Stronger TikToks",
+      "intro": "Choose TikTok Views when video visibility is the metric you want to work on. Pick an eligible public TikTok that still represents the account well, then select a view quantity based on that piece of content rather than treating every video on the profile the same way.",
+      "points": [
+        {
+          "title": "Video-Specific Views",
+          "text": "The selected package applies to the public TikTok video supplied with your order."
+        },
+        {
+          "title": "Useful for Priority Content",
+          "text": "Consider product demonstrations, explainers, campaign videos and other TikToks with a clear purpose."
+        },
+        {
+          "title": "Keep the Profile Consistent",
+          "text": "A stronger view number has more context when the video fits the content visitors find elsewhere on the account."
+        },
+        {
+          "title": "Other TikTok Metrics Are Separate",
+          "text": "Views do not automatically add Likes or Followers, so choose each service according to the metric you need."
+        }
+      ],
+      "cta": {
+        "label": "View TikTok Views",
+        "href": "/au/buy-tiktok-views"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/tiktok-views-visual.webp",
+        "alt": "TikTok video with view and playback indicators"
+      },
+      "tone": "slate"
+    },
+    {
+      "id": "fb-followers",
+      "platform": "facebook",
+      "slug": "buy-facebook-followers",
+      "href": "/au/buy-facebook-followers",
+      "name": "Facebook Followers",
+      "cardBlurb": "Facebook follower packages for eligible public Pages in Australia.",
+      "commercialLabel": "BUY FACEBOOK FOLLOWERS",
+      "title": "Grow the Visible Audience Around Your Facebook Page",
+      "intro": "Choose Facebook Followers when the audience connected to your public Page is the number you want to work on. Australian businesses, creators and brands can use a follower package while continuing to keep the Page active with current information, useful posts and genuine customer-facing updates.",
+      "points": [
+        {
+          "title": "Followers for the Whole Page",
+          "text": "The selected package applies to the follower count of your eligible public Facebook Page."
+        },
+        {
+          "title": "Support an Active Presence",
+          "text": "Use follower growth around a Page that already shows what the business, creator or organisation actually does."
+        },
+        {
+          "title": "Match the Increase to the Page",
+          "text": "A newer local Page and an established brand Page may need very different follower quantities."
+        },
+        {
+          "title": "Posts Use a Different Service",
+          "text": "Choose Facebook Post Likes when engagement on one particular post is more important than Page audience size."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Followers",
+        "href": "/au/buy-facebook-followers"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-followers-visual.webp",
+        "alt": "Facebook Page with follower and community indicators"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-page-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-page-likes",
+      "href": "/au/buy-facebook-page-likes",
+      "name": "Facebook Page Likes",
+      "cardBlurb": "Page Like packages for eligible public Facebook Pages used by Australian accounts.",
+      "commercialLabel": "BUY FACEBOOK PAGE LIKES",
+      "title": "Add More Visible Page Likes to an Established Facebook Presence",
+      "intro": "Choose Facebook Page Likes when the Like total on the Page itself is the metric you want to strengthen. The number works best as part of a complete Facebook presence, so keep important Page information, links, branding and recent activity up to date while you work on that visible metric.",
+      "points": [
+        {
+          "title": "For Business and Brand Pages",
+          "text": "Page Likes can be used with eligible public Pages representing businesses, creators, brands and other supported organisations."
+        },
+        {
+          "title": "Separate From Post Engagement",
+          "text": "A Page Like affects the Page-level number and is not the same as adding Likes to an individual Facebook post."
+        },
+        {
+          "title": "Keep Public Details Useful",
+          "text": "Make sure visitors can still find accurate information about the account behind the Page."
+        },
+        {
+          "title": "Choose Followers When Appropriate",
+          "text": "Use Facebook Followers instead when the visible follower audience is the number you are trying to strengthen."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Page Likes",
+        "href": "/au/buy-facebook-page-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-page-likes-visual.webp",
+        "alt": "Facebook Page with Page Like indicators"
+      },
+      "tone": "blue"
+    },
+    {
+      "id": "fb-post-likes",
+      "platform": "facebook",
+      "slug": "buy-facebook-post-likes",
+      "href": "/au/buy-facebook-post-likes",
+      "name": "Facebook Post Likes",
+      "cardBlurb": "Facebook Post Like packages for eligible public content from Australian Pages.",
+      "commercialLabel": "BUY FACEBOOK POST LIKES",
+      "title": "Support Facebook Posts That Matter More to Your Campaign",
+      "intro": "Choose Facebook Post Likes when a specific piece of content deserves more visible engagement. Australian businesses and creators may use Post Likes around a product launch, event, project showcase, campaign announcement or useful post that continues representing the Page after publication.",
+      "points": [
+        {
+          "title": "For Individual Facebook Posts",
+          "text": "Submit the direct public post you want to use rather than the Facebook Page homepage."
+        },
+        {
+          "title": "Focus on Important Content",
+          "text": "Prioritise posts with a clear role in your campaign or ongoing business presence."
+        },
+        {
+          "title": "Keep Old Information Accurate",
+          "text": "If you support an older post, check that links, dates, locations and offer details are still current."
+        },
+        {
+          "title": "Page Growth Works Differently",
+          "text": "Choose Followers or Page Likes when the Facebook Page itself, rather than an individual post, is the focus."
+        }
+      ],
+      "cta": {
+        "label": "View Facebook Post Likes",
+        "href": "/au/buy-facebook-post-likes"
+      },
+      "image": {
+        "src": "/assets/images/illustrations/homepage/facebook-post-likes-visual.webp",
+        "alt": "Facebook post with Like and reaction indicators"
+      },
+      "tone": "blue"
+    }
+  ],
+  "instagramOnly": true,
+  "hideReviews": true,
+  "crossPlatform": {
+    "id": "cross-platform",
+    "eyebrow": "More Platforms",
+    "title": "Instagram First. TikTok and Facebook When Your Campaign Needs Them.",
+    "description": "Instagram is the primary growth focus at NovaLikes, but your social presence may extend across more than one platform. Use each platform according to where your audience and content actually live.",
+    "platforms": [
+      {
+        "id": "tiktok",
+        "title": "TikTok Growth Services",
+        "description": "Choose TikTok Followers, Likes or Views when you're working on your TikTok profile or individual videos.",
+        "cta": {
+          "label": "Explore TikTok Services",
+          "href": "/au/buy-tiktok-followers"
+        }
+      },
+      {
+        "id": "facebook",
+        "title": "Facebook Growth Services",
+        "description": "Choose Facebook Followers, Page Likes or Post Likes when you're working on an eligible public Facebook Page or post.",
+        "cta": {
+          "label": "Explore Facebook Services",
+          "href": "/au/buy-facebook-followers"
+        }
+      }
+    ]
+  },
+  "storySections": [
+    {
+      "id": "profile-growth-table",
+      "eyebrow": "Choose the Right Metric",
+      "title": "Choose the Instagram Metric That Matches What You Actually Want to Strengthen",
+      "lead": "Start with the part of the Australian account or content you want to change, then choose the service built for that specific metric.",
+      "footer": "Followers, Likes, Views and Comments change different visible Instagram metrics. Decide what needs attention first instead of treating every package as the same type of growth.",
+      "items": [
+        {
+          "title": "Strengthen the Visible Audience Around the Profile",
+          "body": "Choose Instagram Followers when the profile-level follower count is the metric you want to increase."
+        },
+        {
+          "title": "Add Visible Engagement to a Post or Reel",
+          "body": "Choose Instagram Likes when the Like count on one eligible piece of content is the priority."
+        },
+        {
+          "title": "Support the Displayed View Count on Video Content",
+          "body": "Choose Instagram Views when you want to increase the visible Views on an eligible Reel or video."
+        },
+        {
+          "title": "Build Visible Conversation Around Selected Content",
+          "body": "Choose Instagram Comments when the goal is to add visible discussion to an eligible post or Reel."
+        }
+      ]
+    },
+    {
+      "id": "audience-segments",
+      "eyebrow": "Australian Instagram",
+      "title": "Different Australian Accounts Need Different Instagram Priorities",
+      "lead": "A creator profile, ecommerce store and local service business should not use Instagram growth in exactly the same way.",
+      "items": [
+        {
+          "title": "Creators",
+          "body": "Build around a recognisable niche, strong examples of your content and the profile visitors actually see after discovering a Reel or collaboration."
+        },
+        {
+          "title": "Ecommerce Businesses",
+          "body": "Support product launches, demonstrations and priority content while keeping the store, product information and customer journey clear."
+        },
+        {
+          "title": "Local Businesses",
+          "body": "Use Instagram around real services, locations, completed work and customer information that people can verify elsewhere."
+        },
+        {
+          "title": "Agencies",
+          "body": "Choose Followers, Likes, Views or Comments according to the individual client, account condition and purpose of the campaign."
+        },
+        {
+          "title": "Established Brands",
+          "body": "Use visible Instagram metrics as one part of a wider strategy that may also include organic content, creators, paid media, ecommerce and the company website."
+        }
+      ]
+    },
+    {
+      "id": "first-impression",
+      "title": "Make the Australian Instagram Profile Worth Checking Beyond the Numbers",
+      "lead": "Visible metrics may shape the first few seconds of a profile visit, but people can quickly look beyond them to understand the account itself.",
+      "bullets": [
+        "profile image",
+        "username",
+        "bio",
+        "follower count",
+        "recent posts",
+        "pinned content",
+        "Reels",
+        "Likes",
+        "Comments",
+        "overall visual consistency"
+      ],
+      "paragraphs": [
+        "A stronger follower count or more visible activity can make an [Instagram](https://en.wikipedia.org/wiki/Instagram) account appear more established, but the bio, recent posts, pinned content, Reels and public information still need to support that impression.",
+        "For Australian businesses, that also means making the offer, location and next step easy to understand. Creators should make their niche recognisable, while brands should keep the profile consistent with the identity customers see across other official channels."
+      ],
+      "items": [
+        {
+          "title": "For Creators",
+          "body": "Make the subject, style and reason to explore the account clear enough for a new visitor to recognise quickly."
+        },
+        {
+          "title": "For Businesses",
+          "body": "Help potential customers understand what the company offers and where they should go if they want to research, enquire, book or buy."
+        },
+        {
+          "title": "For Brands",
+          "body": "Keep profile visuals, messaging and campaign content consistent with the wider brand rather than relying on social numbers alone."
+        },
+        {
+          "title": "For Local Businesses",
+          "body": "Keep locations, services and contact information accurate when Instagram is part of the customer's research process."
+        }
+      ]
+    },
+    {
+      "id": "priority-content",
+      "title": "Put Instagram Support Behind Content With a Clear Job to Do",
+      "lead": "Not every post deserves the same level of attention. Start by identifying the content that matters to the account, campaign or customer journey.",
+      "footer": "Choose the priority content first. Then decide whether Followers, Likes, Views or Comments are the most relevant visible metric to support.",
+      "items": [
+        {
+          "title": "A Product Launch People Can Research",
+          "body": "Support the post or Reel that explains or demonstrates the real product clearly enough for interested customers to continue exploring it."
+        },
+        {
+          "title": "A Creator Collaboration With a Purpose",
+          "body": "Focus on the content that best communicates the partnership instead of spreading support across unrelated posts."
+        },
+        {
+          "title": "A Business Introduction",
+          "body": "Use content that helps someone discovering the company understand what it does, where it operates and why the profile may be useful."
+        },
+        {
+          "title": "Work You Would Show a Real Customer or Partner",
+          "body": "Prioritise portfolio pieces, projects or examples that genuinely represent the quality and type of work behind the account."
+        },
+        {
+          "title": "Evergreen Content That Keeps Working",
+          "body": "Tutorials, demonstrations and useful explainers may continue introducing the account long after the original publication date."
+        },
+        {
+          "title": "A Time-Sensitive Business Update",
+          "body": "New services, locations, events and other important changes may deserve more attention when customers genuinely need the information."
+        }
+      ]
+    },
+    {
+      "id": "campaign-moments",
+      "title": "Put Instagram Growth Behind Australian Campaign Moments",
+      "lead": "Timing can make certain Instagram content more important.",
+      "paragraphs": [
+        "Visible Instagram metrics can support the presentation around those moments. The campaign still needs strong creative, accurate information and a clear offer behind it."
+      ],
+      "items": [
+        {
+          "title": "Product Drops",
+          "body": "Put attention behind your strongest launch content rather than every post in the feed."
+        },
+        {
+          "title": "Boxing Day Campaigns",
+          "body": "Retail and ecommerce brands may have high-priority content around one of Australia's major shopping periods."
+        },
+        {
+          "title": "Summer Campaigns",
+          "body": "Travel, hospitality, fashion, fitness, events and outdoor brands may have stronger campaign activity through the Australian summer."
+        },
+        {
+          "title": "New Location Launches",
+          "body": "Businesses expanding into Sydney, Melbourne, Brisbane, Perth, Adelaide or another market can use Instagram to introduce the location and recent activity."
+        },
+        {
+          "title": "Creator Partnerships",
+          "body": "Collaboration campaigns may bring new visitors who want to explore the profile behind the post."
+        },
+        {
+          "title": "Events",
+          "body": "Venues, organisations and local businesses can use Instagram around launches, events and community activity."
+        }
+      ]
+    },
+    {
+      "id": "better-profile",
+      "title": "Improve the Instagram Profile Before Sending More Attention Towards It",
+      "lead": "A stronger-looking metric is more useful when the account itself gives new visitors enough context to understand the creator, business or brand.",
+      "footer": "Visible growth can support the first impression. A useful and current profile determines what happens after someone becomes interested.",
+      "items": [
+        {
+          "title": "Explain the Account Clearly",
+          "body": "Use the bio to make the creator niche, business offer or brand purpose understandable without forcing visitors to guess."
+        },
+        {
+          "title": "Use Pinned Content as an Introduction",
+          "body": "Keep strong posts or Reels visible when they help explain the account, key products, services or best work."
+        },
+        {
+          "title": "Keep the Content Direction Recognisable",
+          "body": "Give visitors enough consistency to understand what they are likely to find if they continue exploring."
+        },
+        {
+          "title": "Check Information Customers Depend On",
+          "body": "Keep links, products, services, locations and important public details current where they affect a real customer decision."
+        },
+        {
+          "title": "Show Recent Relevant Activity",
+          "body": "Current content gives people stronger context than visible metrics sitting beside a profile that appears neglected."
+        },
+        {
+          "title": "Make the Next Step Obvious",
+          "body": "For commercial accounts, help interested Australian visitors understand how to visit the website, enquire, shop, book or learn more."
+        }
+      ]
+    },
+    {
+      "id": "content-worth-following",
+      "title": "Give Real People a Reason to Keep Following the Australian Account",
+      "lead": "Purchased metrics can change visible numbers, but they cannot create the ongoing Instagram content that makes genuine viewers choose to stay connected.",
+      "footer": "Use purchased metrics for the visible changes they provide. Let genuine audience behaviour show which content deserves more investment over time.",
+      "items": [
+        {
+          "title": "Build Recognisable Content Themes",
+          "body": "Develop subjects that connect naturally with the audience, creator niche or business the account wants to represent."
+        },
+        {
+          "title": "Use Reels for More Than Frequency",
+          "body": "Create demonstrations, explainers, stories, transformations, comparisons or other videos with a clear reason to exist."
+        },
+        {
+          "title": "Make Feed Posts Useful",
+          "body": "Use posts and carousels for real education, product context, projects, proof and information visitors may genuinely want."
+        },
+        {
+          "title": "Give Captions Useful Context",
+          "body": "Use captions to explain the story, product, project or subject instead of treating them as empty space below the creative."
+        },
+        {
+          "title": "Respond to Genuine People",
+          "body": "Real Comments, questions and messages should receive appropriate responses from the creator or business behind the profile."
+        },
+        {
+          "title": "Learn From Genuine Instagram Performance",
+          "body": "Use actual Insights to understand which topics and formats earn authentic attention instead of judging the strategy by visible metrics alone."
+        }
+      ]
+    },
+    {
+      "id": "local-businesses",
+      "title": "Build Instagram Growth Around a Local Australian Business People Can Verify",
+      "paragraphs": [
+        "For a local business, Instagram may be only one part of the research journey. Potential customers can also check the company website, Google presence, reviews, referrals and other public information before deciding whether to make contact.",
+        "That means the profile should help people understand the real operation rather than simply display stronger social numbers.",
+        "Restaurants may show dishes and venues. Trades can document completed work. Interior designers may show finished spaces. Salons can present treatments. Retailers may feature real products. Property businesses can show listings. Tourism and hospitality companies can present destinations and experiences. Professional services can answer common customer questions.",
+        "If you support the Instagram profile with Followers, Likes, Views or Comments, keep locations, services, public claims and contact information consistent with what customers can verify elsewhere.",
+        "Visible Instagram metrics can support presentation. Local trust comes from the Australian business, its work and the customer experience behind the account."
+      ]
+    },
+    {
+      "id": "customer-proof",
+      "title": "Keep Visible Instagram Metrics Separate From Genuine Customer Evidence",
+      "paragraphs": [
+        "Follower counts, Likes, Views and Comments can affect how active or established an Instagram account appears, but they do not show whether genuine customers have bought from, hired or recommended the business.",
+        "Australian businesses may have stronger evidence through verified reviews, authentic testimonials, real customer Comments, completed projects, case studies, tagged customer content and consistent public company information.",
+        "Use that evidence where it genuinely exists. Do not invent testimonials or present purchased Instagram activity as customer approval.",
+        "Visible social metrics can support presentation. Genuine customer experience gives potential customers a different and more meaningful reason to trust the business."
+      ]
+    },
+    {
+      "id": "metric-meanings",
+      "title": "Understand What Each Instagram Metric Actually Tells You",
+      "lead": "No single Instagram number tells the complete story.",
+      "items": [
+        {
+          "title": "Followers",
+          "body": "Follower count is a profile-level audience metric."
+        },
+        {
+          "title": "Likes",
+          "body": "Likes apply visible engagement to individual posts and Reels."
+        },
+        {
+          "title": "Views",
+          "body": "Views are relevant to eligible Reels and video content."
+        },
+        {
+          "title": "Comments",
+          "body": "Comments create visible conversation around individual content."
+        },
+        {
+          "title": "Genuine Performance",
+          "body": "Use your real account analytics to understand organic reach, audience behaviour, content performance and other genuine activity."
+        }
+      ],
+      "footer": "Purchased metrics can support selected visible numbers. Your genuine Insights should guide your real growth strategy."
+    },
+    {
+      "id": "affordable-growth",
+      "title": "Compare Affordable Instagram Growth by What You Actually Receive",
+      "paragraphs": [
+        "Price matters when comparing Instagram growth services in Australia, but the cheapest package does not automatically make two offers equivalent.",
+        "Check the metric being changed, quantity, current price, required public information, password policy, tracking, support, service conditions and the exact outcome the provider says the package delivers.",
+        "Compare the service itself before comparing only the dollar amount. NovaLikes shows the available metric and package information before checkout so you can decide whether the option fits the account or content you want to support."
+      ]
+    },
+    {
+      "id": "account-you-have",
+      "title": "Choose Instagram Growth Around the Australian Account You Have Today",
+      "paragraphs": [
+        "There is no single Followers, Likes, Views or Comments package that automatically makes sense for every Australian creator, business or brand.",
+        "A newer profile may care about its overall audience number. An established creator may want to support one important Reel. An ecommerce business may focus on a product launch. A local company may want the wider profile to look stronger before advertising or another campaign sends new customers towards it.",
+        "Review the account as it exists now, including the current metric, content, profile quality and purpose of the campaign. Then choose the service that matches the specific area you want to strengthen.",
+        "Instagram growth should support the real strategy behind the account, not become a substitute for it."
+      ]
+    }
+  ]
+}

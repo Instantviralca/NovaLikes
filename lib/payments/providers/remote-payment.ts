@@ -1,11 +1,24 @@
 /**
- * Remote Payment provider — WooCommerce Remote Payment client protocol.
- * POST {payment_website}/?ro=1 with PHP http_build_query-style body.
- * Response body must be the absolute payment redirect URL.
+ * Mollie Remote Payment provider — client protocol matching
+ * WooCommerce Mollie Remote Payment Client v2.5.
+ * Stripe remains disabled in config/payments.ts.
  */
 
 import { getSiteUrlPath } from '@/lib/config/hosts';
-import { getPaymentWebsiteUrl } from '@/lib/settings/site-settings';
+import {
+  assertNoMollieTestModeInProduction,
+  buildMollieCreateBody,
+  fetchMollieHealth,
+  formatMajorAmount,
+  isValidMollieCardToken,
+  serverEndpoint,
+  type MollieRemoteLineItem,
+} from '@/lib/payments/mollie-remote-protocol';
+import {
+  getPaymentWebsiteUrl,
+  getRemotePaymentProductName,
+  getRemotePaymentSharedSecret,
+} from '@/lib/settings/site-settings';
 import type {
   CancelPaymentInput,
   CreatePaymentInput,
@@ -15,24 +28,14 @@ import type {
   VerifyPaymentResult,
 } from '@/types/payment';
 
-type RemoteLineItem = {
-  product_id: string;
-  name: string;
-  qty: number;
-  price: number;
-};
-
-function buildItems(input: CreatePaymentInput): RemoteLineItem[] {
+function buildItems(input: CreatePaymentInput): MollieRemoteLineItem[] {
   const payloadItems = input.payload?.items;
   if (payloadItems && payloadItems.length > 0) {
     return payloadItems.map((item) => ({
       product_id: item.packageId || item.serviceId,
       name: item.packageTitle || item.serviceName,
-      // CartItem.quantity is package size (e.g. 1000 followers), NOT purchase qty.
-      // Remote/Woo line qty must be 1 per cart row or amount becomes price × followers.
       qty: 1,
-      // Major currency units (e.g. 9.99), matching Woo get_subtotal()/qty.
-      price: Number((item.unitPrice / 100).toFixed(2)),
+      line_total: formatMajorAmount(item.unitPrice),
     }));
   }
 
@@ -41,67 +44,79 @@ function buildItems(input: CreatePaymentInput): RemoteLineItem[] {
       product_id: input.orderId,
       name: input.description ?? `Order ${input.orderId}`,
       qty: 1,
-      price: Number((input.amount.amount / 100).toFixed(2)),
+      line_total: formatMajorAmount(input.amount.amount),
     },
   ];
 }
 
-/** Match PHP http_build_query nested array encoding used by the Woo client. */
-function buildRemotePaymentBody(input: {
-  callbackUrl: string;
-  returnUrl: string;
-  orderId: string;
-  items: RemoteLineItem[];
-}): string {
-  const params = new URLSearchParams();
-  params.set('callback_url', input.callbackUrl);
-  params.set('return_url', input.returnUrl);
-  params.set('order_id', input.orderId);
-  input.items.forEach((item, index) => {
-    params.set(`items[${index}][product_id]`, String(item.product_id));
-    params.set(`items[${index}][name]`, item.name);
-    params.set(`items[${index}][qty]`, String(item.qty));
-    params.set(`items[${index}][price]`, String(item.price));
-  });
-  return params.toString();
-}
-
 export const remotePaymentProvider: PaymentProvider = {
   id: 'remote-payment',
-  displayName: 'Card Payment',
+  displayName: 'Credit / Debit Card',
 
   async createPayment(input: CreatePaymentInput): Promise<CreatePaymentResult> {
-    const paymentWebsite = await getPaymentWebsiteUrl();
+    const [paymentWebsite, sharedSecret, productName] = await Promise.all([
+      getPaymentWebsiteUrl(),
+      getRemotePaymentSharedSecret(),
+      getRemotePaymentProductName(),
+    ]);
+
     if (!paymentWebsite) {
       throw new Error(
-        'Remote payment website URL is not configured. Set it in Admin → Settings.',
+        'Mollie payment server URL is not configured. Set it in Admin → Settings.',
+      );
+    }
+    if (sharedSecret.trim().length < 16) {
+      throw new Error(
+        'Mollie shared secret is not configured. Set it in Admin → Settings.',
       );
     }
 
-    const body = buildRemotePaymentBody({
+    // Trusted collector health — block NODE_ENV=production checkout on testmode (IV_ENV cannot bypass).
+    if (process.env.NODE_ENV === 'production') {
+      const health = await fetchMollieHealth({ serverUrl: paymentWebsite, sharedSecret });
+      assertNoMollieTestModeInProduction(health.testmode, 'create_payment_health');
+    }
+
+    const cardToken = String(input.payload?.cardToken ?? '').trim();
+    if (!isValidMollieCardToken(cardToken)) {
+      throw new Error('Please enter valid card details in the secure payment form.');
+    }
+
+    const body = buildMollieCreateBody({
       callbackUrl: getSiteUrlPath('/api/webhooks/remote-payment'),
       returnUrl: input.successUrl,
+      cancelUrl: input.cancelUrl,
       orderId: input.orderId,
+      amountMajor: formatMajorAmount(input.amount.amount),
+      currency: input.amount.currency,
+      productName,
       items: buildItems(input),
+      cardToken,
+      sharedSecret,
     });
 
-    const response = await fetch(`${paymentWebsite}/?ro=1`, {
+    const response = await fetch(serverEndpoint(paymentWebsite, 'ro'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         Accept: 'text/plain, */*',
       },
-      body,
+      body: new URLSearchParams(body),
       signal: AbortSignal.timeout(90_000),
     });
 
     if (!response.ok) {
-      throw new Error(`Remote payment site returned HTTP ${response.status}.`);
+      const detail = (await response.text()).trim().slice(0, 240);
+      throw new Error(
+        detail
+          ? `Mollie payment server returned HTTP ${response.status}: ${detail}`
+          : `Mollie payment server returned HTTP ${response.status}.`,
+      );
     }
 
     const redirectUrl = (await response.text()).trim();
     if (!redirectUrl || !/^https?:\/\//i.test(redirectUrl)) {
-      throw new Error('Remote payment site did not return a valid redirect URL.');
+      throw new Error('Mollie payment server did not return a valid redirect URL.');
     }
 
     return {

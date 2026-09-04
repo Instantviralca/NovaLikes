@@ -11,10 +11,11 @@ export type TestimonialsGridProps = {
   serviceHrefFor?: (review: PublicReview) => string | undefined;
   variant?: TestimonialCardVariant;
   /**
-   * `natural` — content-height cards (no stretch) for the reviews catalogue.
-   * Preserves left-to-right, top-to-bottom reading order.
+   * `masonry` — CSS columns, natural card height (reviews catalogue).
+   * `natural` — CSS grid, no stretch.
+   * `equal` — CSS grid, stretched cards.
    */
-  layout?: 'equal' | 'natural';
+  layout?: 'equal' | 'natural' | 'masonry';
   readMoreLabel?: string;
   showLessLabel?: string;
 };
@@ -36,23 +37,38 @@ export function TestimonialsGrid({
 }: TestimonialsGridProps) {
   if (reviews.length === 0) return null;
 
+  const cards = reviews.map((review) => (
+    <TestimonialCard
+      key={review.id}
+      review={review}
+      showSource={showSource}
+      surface={surface}
+      variant={variant}
+      serviceHref={serviceHrefFor?.(review)}
+      readMoreLabel={readMoreLabel}
+      showLessLabel={showLessLabel}
+    />
+  ));
+
+  if (layout === 'masonry') {
+    return (
+      <div
+        className={cn(
+          'columns-1 gap-0 sm:columns-2 xl:columns-3',
+          className,
+        )}
+      >
+        {cards}
+      </div>
+    );
+  }
+
   return (
     <Grid
       cols={3}
       className={cn('gap-4', layout === 'natural' && 'items-start', className)}
     >
-      {reviews.map((review) => (
-        <TestimonialCard
-          key={review.id}
-          review={review}
-          showSource={showSource}
-          surface={surface}
-          variant={variant}
-          serviceHref={serviceHrefFor?.(review)}
-          readMoreLabel={readMoreLabel}
-          showLessLabel={showLessLabel}
-        />
-      ))}
+      {cards}
     </Grid>
   );
 }

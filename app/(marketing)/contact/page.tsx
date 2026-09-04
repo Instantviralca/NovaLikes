@@ -8,7 +8,7 @@ import { loadQuickAnswer } from '@/lib/i18n/content/load';
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { contactPageSchema } from '@/schemas/contact-page';
+import { webPageSchema } from '@/schemas/website';
 import { companyMetadata } from '@/seo/metadata';
 import { descriptions } from '@/seo/descriptions';
 import { titles } from '@/seo/titles';
@@ -22,7 +22,7 @@ export default function ContactPage() {
   const content = getContactContent();
 
   const graph = asJsonLdGraph([
-    contactPageSchema({
+    webPageSchema({
       title: titles.company('Contact'),
       description: descriptions.contact(),
       path: routes.contact,

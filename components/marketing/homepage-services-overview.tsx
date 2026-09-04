@@ -28,6 +28,8 @@ import { homepageHub, type HomepageHub, type HubServiceMini } from '@/data/conte
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 import { formatMoney } from '@/lib/pricing/format';
+import { homepageSectionPadding, isCanadaHomepageDesign } from '@/lib/market/homepage-design';
+import type { Market } from '@/lib/market/config';
 import { cn } from '@/lib/utils';
 
 const PLATFORM_THEME: Record<
@@ -106,7 +108,7 @@ function ServiceCard({ service }: { service: HubServiceMini }) {
     <Link
       href={service.href}
       prefetch={prefetchForHref(service.href)}
-      className="group flex h-full flex-col rounded-[1.35rem] bg-white p-5 shadow-[0_16px_40px_-28px_rgba(50,30,20,0.45)] ring-1 ring-black/[0.04] transition hover:-translate-y-0.5 hover:shadow-[0_22px_44px_-24px_rgba(50,30,20,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="group flex h-full flex-col rounded-2xl bg-white p-5 ring-1 ring-[#EDE8E3] transition hover:-translate-y-0.5 hover:ring-[#E5DDD5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       <span
         className={cn(
@@ -160,41 +162,63 @@ function PlatformLogoStack() {
   );
 }
 
-export function HomepageServicesOverview({ hub = homepageHub }: { hub?: HomepageHub }) {
+export function HomepageServicesOverview({
+  hub = homepageHub,
+  instagramOnly = false,
+  market,
+}: {
+  hub?: HomepageHub;
+  instagramOnly?: boolean;
+  market?: Market;
+}) {
   const section = hub.servicesOverview;
-  const platforms: Array<'instagram' | 'tiktok' | 'facebook'> = [
-    'instagram',
-    'tiktok',
-    'facebook',
-  ];
+  const enhanced = isCanadaHomepageDesign(market);
+  const platforms: Array<'instagram' | 'tiktok' | 'facebook'> = instagramOnly
+    ? ['instagram']
+    : ['instagram', 'tiktok', 'facebook'];
 
   return (
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden bg-transparent py-12 md:py-16"
+      className={cn('relative overflow-hidden bg-transparent', homepageSectionPadding(market))}
       aria-labelledby={`${section.id}-heading`}
     >
       <Container size="xl">
         <HomepageServicesFilter
+          hideFilters={instagramOnly}
           intro={
-            <FadeUp>
-              <p className="inline-flex items-center gap-1.5 rounded-full bg-[#FFE4D1] px-3.5 py-1.5 text-[12px] font-semibold text-[#E85D04]">
+            <FadeUp className={cn(enhanced && 'w-full text-center')}>
+              <p
+                className={cn(
+                  'inline-flex items-center gap-1.5 rounded-full bg-[#FFE4D1] px-3.5 py-1.5 text-[12px] font-semibold text-[#E85D04]',
+                  enhanced && 'mx-auto',
+                )}
+              >
                 <LayoutGrid className="size-3.5" aria-hidden="true" />
                 {section.eyebrow}
               </p>
               <h2
                 id={`${section.id}-heading`}
-                className="mt-4 text-balance text-[2.05rem] font-bold leading-[1.15] tracking-tight text-[#1C1917] sm:text-[2.45rem]"
+                className={cn(
+                  'text-balance text-[2.05rem] font-bold leading-[1.15] tracking-tight text-[#1C1917] sm:text-[2.45rem]',
+                  enhanced ? 'mt-5' : 'mt-4',
+                )}
               >
                 <AccentTitle title={section.title} />
               </h2>
-              <p className="mt-3 max-w-[38rem] text-pretty text-[15px] leading-relaxed text-[#6B6560]">
+              <p
+                className={cn(
+                  'text-pretty text-[15px] leading-relaxed text-[#6B6560]',
+                  enhanced ? 'mt-5 w-full' : 'mt-3 max-w-[38rem]',
+                )}
+              >
                 {section.description}
               </p>
             </FadeUp>
           }
           aside={
+            instagramOnly ? null : (
             <FadeUp delay={0.06} className="hidden justify-self-end lg:block">
               <PlatformLogoStack />
               <p className="mx-auto mt-3 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-[#F3EDE7] px-3 py-1.5 text-[12px] font-medium text-[#57534E]">
@@ -202,6 +226,7 @@ export function HomepageServicesOverview({ hub = homepageHub }: { hub?: Homepage
                 {section.trustNote}
               </p>
             </FadeUp>
+            )
           }
         >
           {platforms.map((platform) => {
@@ -219,7 +244,9 @@ export function HomepageServicesOverview({ hub = homepageHub }: { hub?: Homepage
                 <div
                   className={cn(
                     'grid gap-4 sm:grid-cols-2',
-                    platform === 'instagram' ? 'lg:grid-cols-4' : 'lg:grid-cols-3',
+                    /* Avoid cramped 4-up cards at 1024 — open full row from xl. */
+                    platform === 'instagram' ? 'lg:grid-cols-2 xl:grid-cols-4' : 'lg:grid-cols-3',
+                    enhanced && 'gap-5',
                   )}
                 >
                   {services.map((service) => (
@@ -231,8 +258,13 @@ export function HomepageServicesOverview({ hub = homepageHub }: { hub?: Homepage
           })}
         </HomepageServicesFilter>
 
-        <FadeUp delay={0.08} className="mt-10">
-          <ul className="grid gap-3 rounded-[1.35rem] bg-[#FFF1E6] px-5 py-4 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
+        <FadeUp delay={0.08} className={enhanced ? 'mt-6' : 'mt-10'}>
+          <ul
+            className={cn(
+              'grid gap-3 rounded-2xl bg-[#FAF7F4] px-5 py-4 sm:grid-cols-2 xl:grid-cols-4 lg:px-6',
+              enhanced && 'gap-2.5',
+            )}
+          >
             {section.features.map((feature) => {
               const Icon = FEATURE_ICONS[feature.icon];
               return (

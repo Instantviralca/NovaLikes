@@ -55,33 +55,6 @@ function platformLabel(platform: PlatformId): string {
   }
 }
 
-function platformChipClass(platform: PlatformId): string {
-  switch (platform) {
-    case 'instagram':
-      return 'bg-[#FFF1E6] text-[#9A3412] ring-[#E1306C]/15';
-    case 'tiktok':
-      return 'bg-[#F4F4F5] text-neutral-700 ring-neutral-800/10';
-    case 'facebook':
-      return 'bg-[#EFF6FF] text-[#1D4ED8] ring-[#1877F2]/20';
-    default:
-      return 'bg-muted text-muted-foreground ring-black/5';
-  }
-}
-
-function platformAccentClass(platform: PlatformId | undefined): string {
-  if (!platform) return '';
-  switch (platform) {
-    case 'instagram':
-      return 'border-l-[#E1306C]/35';
-    case 'tiktok':
-      return 'border-l-neutral-800/25';
-    case 'facebook':
-      return 'border-l-[#1877F2]/30';
-    default:
-      return 'border-l-transparent';
-  }
-}
-
 /**
  * Public testimonial card — Document 14.02.
  * Never receives or displays internal order references.
@@ -103,75 +76,53 @@ export function TestimonialCard({
     !expanded && isLong ? `${review.reviewText.slice(0, 220).trim()}…` : review.reviewText;
 
   if (isCatalogue) {
+    const hasStoredRating = typeof review.rating === 'number' && review.rating >= 1;
+    const showVerified = review.verifiedPurchase === true;
+
     return (
       <article
         className={cn(
-          'rounded-2xl border border-black/[0.05] bg-white p-4 shadow-[0_8px_24px_-18px_rgba(50,30,20,0.35)] transition-shadow duration-200 hover:shadow-[0_12px_28px_-16px_rgba(50,30,20,0.4)] sm:p-5',
-          review.platform ? 'border-l-[3px]' : null,
-          platformAccentClass(review.platform),
+          'mb-4 break-inside-avoid rounded-2xl border border-black/[0.06] bg-white p-5 shadow-none sm:p-6',
           className,
         )}
         aria-labelledby={`review-${review.id}-author`}
       >
         <div className="flex items-start gap-3">
           <div
-            className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#FFF1E6] text-xs font-semibold text-[var(--text-primary)]"
+            className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#FFF4ED] text-[11px] font-semibold tracking-wide text-[#9A3412]"
             aria-hidden
           >
             {review.customerInitials}
           </div>
-          <div className="min-w-0 flex-1 space-y-1">
-            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-              <h3
-                id={`review-${review.id}-author`}
-                className="text-sm font-semibold text-foreground"
-              >
-                <span dir="ltr" className="[unicode-bidi:isolate]">
-                  {review.customerName}
-                </span>
-              </h3>
-              <RatingDisplay rating={review.rating} size="sm" />
-            </div>
-            {review.platform ? (
-              <span
-                className={cn(
-                  'inline-flex rounded-full px-2 py-0.5 text-[11px] font-medium ring-1',
-                  platformChipClass(review.platform),
-                )}
-              >
-                {platformLabel(review.platform)}
+          <div className="min-w-0 flex-1">
+            <h3
+              id={`review-${review.id}-author`}
+              className="text-sm font-semibold text-foreground"
+            >
+              <span dir="ltr" className="[unicode-bidi:isolate]">
+                {review.customerName}
               </span>
-            ) : null}
+            </h3>
+            <div className="mt-1 flex flex-wrap items-center gap-2">
+              {showVerified ? <VerifiedPurchaseBadge verified /> : null}
+              {review.platform ? (
+                <span className="text-xs text-muted-foreground">{platformLabel(review.platform)}</span>
+              ) : null}
+            </div>
           </div>
         </div>
 
         {review.title ? (
-          <p className="mt-3 text-sm font-medium text-foreground">{review.title}</p>
+          <p className="mt-4 text-sm font-medium text-foreground">{review.title}</p>
         ) : null}
 
-        <Text className="mt-2 text-pretty text-[0.9375rem] leading-relaxed text-[var(--text-primary)]/80">
-          {body}
+        <Text className="mt-4 text-pretty text-[0.975rem] leading-relaxed text-[var(--text-primary)]">
+          {review.reviewText}
         </Text>
 
-        {isLong ? (
-          <button
-            type="button"
-            className="mt-2 min-h-11 self-start text-sm font-medium text-foreground underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            aria-expanded={expanded}
-            onClick={() => {
-              const next = !expanded;
-              setExpanded(next);
-              if (next) {
-                trackReviewEvent(reviewAnalyticsEvents.review_expand, {
-                  reviewId: review.id,
-                  surface,
-                });
-              }
-            }}
-          >
-            {expanded ? showLessLabel : readMoreLabel}
-          </button>
-        ) : null}
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+          {hasStoredRating ? <RatingDisplay rating={review.rating} size="sm" /> : null}
+        </div>
       </article>
     );
   }

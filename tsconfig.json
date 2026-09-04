@@ -22,6 +22,7 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": [
     "node_modules",
+    "scripts",
     "scripts/qa-author-dashboard.ts",
     "scripts/qa-author-remaining.ts",
     "scripts/qa-calendar-editor.ts"

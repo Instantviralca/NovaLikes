@@ -11,16 +11,18 @@ import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
 export function HomePageView({
   hub = homepageHub,
   stickyCtaLabel = ENGLISH_UI.homepage.exploreServices,
+  stickyCtaHref = '#services-overview',
   homepageLabels = ENGLISH_UI.homepage as UiDictionary['homepage'],
 }: {
   hub?: HomepageHub;
   stickyCtaLabel?: string;
+  stickyCtaHref?: string;
   homepageLabels?: UiDictionary['homepage'];
 }) {
   return (
     <div className="pb-[4.75rem] lg:pb-0">
       <HomepageHubSections hub={hub} labels={homepageLabels} />
-      <HomepageStickyCta href="#services-overview" label={stickyCtaLabel} />
+      <HomepageStickyCta href={stickyCtaHref} label={stickyCtaLabel} />
     </div>
   );
 }

@@ -3,11 +3,10 @@
  */
 
 import { absoluteUrl } from '@/seo/canonical';
-import { site } from '@/config/site';
 import { learnIndexPath } from '@/lib/learn/taxonomy/paths';
 import type { PublicLearnCategory, PublicLearnTag } from '@/types/learn';
 import type { BreadcrumbItem } from '@/types/shared';
-import type { JsonLd } from '@/schemas/organization';
+import { WEBSITE_ID, type JsonLd } from '@/schemas/organization';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 
 export function getCategoryBreadcrumbs(
@@ -38,11 +37,7 @@ export function getCategoryCollectionSchema(
     name: category.name,
     description: category.description,
     url: absoluteUrl(category.href),
-    isPartOf: {
-      '@type': 'WebSite',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
+    isPartOf: { '@id': WEBSITE_ID },
     about: {
       '@type': 'Thing',
       name: category.name,
@@ -57,11 +52,7 @@ export function getTagCollectionSchema(tag: PublicLearnTag): JsonLd {
     name: tag.name,
     description: tag.description,
     url: absoluteUrl(tag.href),
-    isPartOf: {
-      '@type': 'WebSite',
-      name: site.name,
-      url: absoluteUrl('/'),
-    },
+    isPartOf: { '@id': WEBSITE_ID },
   };
 }
 

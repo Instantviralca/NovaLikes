@@ -18,6 +18,7 @@ export const adminNavItems: AdminNavItem[] = [
   { id: 'authors', label: 'Authors', href: '/admin/authors' },
   { id: 'testimonials', label: 'Testimonials', href: '/admin/testimonials' },
   { id: 'faq', label: 'FAQ', href: '/admin/faq' },
+  { id: 'cart-recovery', label: 'Cart Recovery', href: '/admin/cart-recovery' },
   { id: 'settings', label: 'Settings', href: '/admin/settings' },
   { id: 'profile', label: 'Profile', href: '/admin/profile' },
 ];

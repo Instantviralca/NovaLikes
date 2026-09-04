@@ -194,7 +194,7 @@ describe('Author System — Document 15.03', () => {
     expect(person).not.toHaveProperty('email');
     expect(serialized).not.toContain('private@example.com');
     expect(serialized).not.toContain('Do not expose');
-    expect(serialized).toContain('Organization');
+    expect(person.worksFor).toEqual({ '@id': 'https://novalikes.com/#organization' });
     expect(serialized).toContain('BreadcrumbList');
   });
 

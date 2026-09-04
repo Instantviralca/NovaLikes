@@ -1,0 +1,810 @@
+{
+  "content": {
+    "slug": "buy-instagram-views",
+    "platformId": "instagram",
+    "seo": {
+      "title": "Buy Instagram Views Canada | Views for Reels & Videos",
+      "description": "Buy Instagram views in Canada for public Reels and videos. Choose flexible view packages, order without sharing your password, and track your order online."
+    },
+    "hero": {
+      "eyebrow": "INSTAGRAM SERVICES FOR CANADA",
+      "title": "Buy Instagram Views in Canada for Reels & Videos",
+      "description": "Put more visible attention behind the Instagram videos that matter to you. NovaLikes lets Canadian creators, businesses and brands buy Instagram views for eligible public Reels and videos without sharing Instagram login details. Choose the number of views you want, paste the exact public content URL, and place your order online. Use a smaller package for an individual Reel or scale up when you're supporting a launch, campaign, portfolio piece, or video you want to feature more prominently on your profile.",
+      "purpose": "Convert for Instagram views packages in Canada",
+      "primaryKeyword": "buy Instagram views",
+      "supportingKeywords": [
+        "Instagram views",
+        "Buy Instagram video views",
+        "Buy Instagram Reel views",
+        "Instagram views",
+        "Instagram views packages",
+        "Instagram video promotion"
+      ],
+      "suggestedWordCount": 120,
+      "primaryCta": {
+        "label": "Choose Your Views Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "ig-v-trust-public",
+          "label": "Public Video URL Only"
+        },
+        {
+          "id": "ig-v-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "ig-v-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "ig-v-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/instagram-views/instagram-views-hero.webp",
+        "alt": "Instagram views growth service dashboard illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose the View Count That Fits Your Video",
+      "description": "Different videos have different roles. A quick update may not need the same package as a product launch, branded Reel or important piece of creator content. NovaLikes currently offers 100, 500, 1K, 2K, 3K, 5K, 10K and 25K views. Instead of automatically choosing the largest option, look at the Reel you're working with and decide how much visible activity you want to add.",
+      "purpose": "Present real NovaLikes.com views packages",
+      "primaryKeyword": "Instagram views packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Views Packages",
+      "emptyMessage": "Packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-instagram-views",
+      "title": "Give Important Video Content a Stronger Visible Start",
+      "description": "Choose Instagram Views when a specific Reel or eligible video is the content you want to support. The service increases the visible View count on that submitted content, while genuine watch behaviour, organic reach, Likes, Followers, Comments and business results remain separate outcomes.",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "buy Instagram views",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-views",
+      "title": "Why Use NovaLikes for Instagram Views?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "Instagram video promotion",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "features": {
+      "id": "buy-instagram-views-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on packages ecommerce layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-to-buy-instagram-views-canada",
+      "title": "How to Buy Instagram Views",
+      "description": "You only need to make a few decisions before ordering.",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "buy Instagram views",
+      "suggestedWordCount": 40,
+      "steps": [],
+      "cta": {
+        "label": "Choose Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Unused on packages ecommerce layout",
+      "primaryKeyword": "Instagram views delivery",
+      "suggestedWordCount": 40,
+      "items": []
+    },
+    "reviews": {
+      "id": "ig-views-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Canada service page.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "ig-views-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Instagram views",
+      "faqIds": [
+        "ca-ig-v-where-buy",
+        "ca-ig-v-more-reel-views",
+        "ca-ig-v-cheap",
+        "ca-ig-v-real",
+        "ca-ig-v-reels",
+        "ca-ig-v-password",
+        "ca-ig-v-how-many",
+        "ca-ig-v-cost",
+        "ca-ig-v-delivery-time",
+        "ca-ig-v-followers",
+        "ca-ig-v-likes",
+        "ca-ig-v-business",
+        "ca-ig-v-older-reel",
+        "ca-ig-v-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-instagram-services-views",
+      "title": "Explore Instagram Services Around Your Goal",
+      "description": "Choose the service that matches the Instagram metric you want to change.",
+      "purpose": "Internal links to sibling Instagram offers",
+      "serviceSlugs": [
+        "buy-instagram-followers",
+        "buy-instagram-likes",
+        "buy-instagram-comments"
+      ],
+      "cta": {
+        "label": "Explore More Services",
+        "href": "/buy-instagram-followers"
+      }
+    },
+    "finalCta": {
+      "id": "ig-views-final-cta",
+      "title": "Put More Views Behind the Videos That Matter",
+      "description": "Choose the Reel or video you want to support, select a view quantity that fits the content, and place your order using the direct public URL.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your Instagram Views Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-instagram-views-canada",
+        "title": "Why Use NovaLikes for Instagram Views?",
+        "description": "The ordering experience should be clear before you spend anything.",
+        "items": [
+          {
+            "id": "ig-v-wc-video",
+            "title": "Designed for Individual Videos",
+            "description": "Instagram Views are delivered to the eligible public Reel or video URL included with your order.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "ig-v-wc-packages",
+            "title": "Multiple View Quantities",
+            "description": "Choose a modest increase or a larger package depending on the video you're working with.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-v-wc-password",
+            "title": "No Account Login Needed",
+            "description": "Your Instagram password and verification codes stay private.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-v-wc-pricing",
+            "title": "Pricing Before You Order",
+            "description": "See the available quantity and current price before completing your purchase.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-v-wc-tracking",
+            "title": "Track the Order Afterwards",
+            "description": "Use NovaLikes order tracking for available status updates after checkout.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "ig-v-wc-support",
+            "title": "Help When Something Needs Checking",
+            "description": "If you have a question about an order, NovaLikes support can review it using the relevant order information.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "get-instagram-views-without-login-canada",
+        "title": "Order Instagram Views With a Public Video URL Only",
+        "description": "You do not need to share your Instagram password or account login access to place a Views order. NovaLikes uses the direct public URL of the Reel or video you submit.",
+        "cards": [
+          {
+            "id": "ig-v-can-need",
+            "title": "What You Need",
+            "description": "The exact public URL of the Instagram Reel or video.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-v-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Instagram password, verification codes, private messages or account login access.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Open the link once before submitting it to make sure it points to the exact content you want to use."
+      },
+      "doesBuyingHelp": {
+        "id": "what-real-instagram-views-mean-canada",
+        "title": "\"Real Instagram Views\" Can Mean Different Things",
+        "description": "People often search for real Instagram views, high-quality views or similar terms when comparing providers. Those labels are not always used consistently. A better approach is to understand exactly what the service changes and what it does not promise.",
+        "helpTitle": "What NovaLikes Instagram Views Packages Do",
+        "helpItems": [
+          "Increase the view count displayed on an eligible public Reel or video submitted with the order"
+        ],
+        "limitTitle": "A Views Package Does Not Automatically Include",
+        "limitItems": [
+          "Instagram followers",
+          "Likes",
+          "Comments",
+          "Guaranteed organic reach",
+          "Guaranteed watch time, customers, sales or brand partnerships"
+        ],
+        "closingNote": "If one of those is your actual goal, evaluate it separately rather than assuming a larger view count guarantees the result."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-instagram-views-order-canada",
+        "title": "What Happens Once Your Order Is Placed?",
+        "description": "Your order is tied to the Views package you selected and the Instagram content URL you submitted. NovaLikes uses those details to process the order for the intended Reel or video.",
+        "steps": [
+          {
+            "id": "ig-v-th-1",
+            "title": "Package and URL Are Connected",
+            "description": "The selected Views package and submitted content URL are associated with your order."
+          },
+          {
+            "id": "ig-v-th-2",
+            "title": "Processing Targets That Video",
+            "description": "The order is processed for the Reel or video connected to your submitted URL."
+          },
+          {
+            "id": "ig-v-th-3",
+            "title": "Processing Time Can Vary",
+            "description": "Processing time can vary by package size and current order conditions."
+          },
+          {
+            "id": "ig-v-th-4",
+            "title": "Track Available Updates",
+            "description": "Use the order tracking option for available updates rather than assuming one fixed timeline."
+          }
+        ],
+        "closingNote": "Keep the submitted content publicly accessible where required while processing is active. Avoid deleting the Reel, restricting access to it or replacing the submitted link while an order depends on that content."
+      },
+      "serviceCompare": {
+        "id": "instagram-views-likes-followers-which-need-canada",
+        "title": "Instagram Views vs Likes vs Followers",
+        "description": "The right service depends on what you're trying to change.",
+        "current": {
+          "title": "Instagram Views",
+          "description": "Visible view count on an eligible Reel or video",
+          "bestFor": "Video attention on a specific Reel",
+          "ctaLabel": "Instagram Views"
+        },
+        "likes": {
+          "title": "Instagram Likes",
+          "description": "Like count on an eligible post or Reel",
+          "bestFor": "Visible post engagement",
+          "href": "/ca/buy-instagram-likes",
+          "ctaLabel": "Instagram Likes"
+        },
+        "views": {
+          "title": "Instagram Followers",
+          "description": "Follower count on your public profile",
+          "bestFor": "Overall profile audience size",
+          "href": "/ca/buy-instagram-followers",
+          "ctaLabel": "Instagram Followers"
+        },
+        "combinedNote": "Use Instagram Views when video attention is the priority. Choose Likes for visible post engagement, Followers for your overall profile, or Instagram Comments when visible conversation is the goal.",
+        "commentsHref": "/ca/buy-instagram-comments"
+      },
+      "beforeBuying": {
+        "id": "before-you-place-instagram-views-order-canada",
+        "title": "Before You Place a Views Order",
+        "description": "Check these details first.",
+        "framingNote": "Use the exact content link, keep the video publicly accessible, and review the package before payment.",
+        "items": [
+          {
+            "id": "ig-v-bb-open",
+            "title": "Open the Reel or Video",
+            "description": "Make sure you're working with the exact content you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-v-bb-url",
+            "title": "Copy the Direct Public URL",
+            "description": "Don't submit your general profile link when the service requires an individual video.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "ig-v-bb-quantity",
+            "title": "Check the View Quantity",
+            "description": "Review the package before adding it to your order.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-v-bb-price",
+            "title": "Confirm the Price",
+            "description": "Make sure the current package price matches the option you intended to choose.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "ig-v-bb-available",
+            "title": "Keep the Content Available",
+            "description": "Do not remove or restrict the submitted video while an active order requires access to it.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-v-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "Your Instagram password and verification codes are not required.",
+            "icon": "headphones"
+          },
+          {
+            "id": "ig-v-bb-policies",
+            "title": "Review Relevant Policies",
+            "description": "Read the applicable service terms and refund information before checkout.",
+            "icon": "megaphone"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "instagram-views-performance-metrics-canada",
+        "title": "Don't Let View Count Be Your Only Performance Metric",
+        "description": "Purchased views and organic video performance should not be treated as the same thing. When evaluating how your own content is performing, use the analytics available to your Instagram account.",
+        "eyebrow": "Measure What Matters",
+        "closingNote": "Purchased views can change a visible metric. Use your genuine Instagram performance data to make content decisions.",
+        "cards": [
+          {
+            "id": "ig-v-ww-reach",
+            "title": "Reach",
+            "description": "How many accounts your content reaches organically can tell you something different from the displayed view number.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-v-ww-interactions",
+            "title": "Interactions",
+            "description": "Likes, comments, saves and shares can provide more context about how people respond to the content.",
+            "icon": "heart"
+          },
+          {
+            "id": "ig-v-ww-profile",
+            "title": "Profile Activity",
+            "description": "If viewers move from a Reel to your profile, profile activity can help you understand what happens beyond the video itself.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "ig-v-ww-patterns",
+            "title": "Your Own Content Patterns",
+            "description": "Compare topics, hooks, formats and publishing decisions across multiple Reels rather than judging your entire strategy by one post.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "which-reel-should-you-put-views-behind-canada",
+        "title": "Which Reel Should You Put More Views Behind?",
+        "description": "You don't have to treat every video on your Instagram profile equally. If you're deciding where to use an Instagram Views package, start with content that has a clear purpose. Choose the content first. Then choose the views package.",
+        "quantityColumnLabel": "Content Type",
+        "recommendedColumnLabel": "Why It May Fit",
+        "rows": [
+          {
+            "id": "ig-v-ps-brand",
+            "quantity": "A Strong Introduction to Your Brand",
+            "recommendedFor": "A Reel that quickly explains who you are or what your business does can remain useful when new visitors explore your profile."
+          },
+          {
+            "id": "ig-v-ps-launch",
+            "quantity": "A Product or Service Launch",
+            "recommendedFor": "Use the video that communicates the launch most clearly rather than spreading attention across unrelated content."
+          },
+          {
+            "id": "ig-v-ps-portfolio",
+            "quantity": "Your Best Portfolio Work",
+            "recommendedFor": "Creators, designers, photographers and service businesses may have individual Reels that represent the quality of their work better than the rest of the feed."
+          },
+          {
+            "id": "ig-v-ps-campaign",
+            "quantity": "A Campaign You Want People to Notice",
+            "recommendedFor": "If one Reel is the centre of a promotion or campaign, it may make more sense to focus there."
+          },
+          {
+            "id": "ig-v-ps-evergreen",
+            "quantity": "Evergreen Video Content",
+            "recommendedFor": "A useful tutorial, demonstration, or brand story can continue representing your account after its original publishing date."
+          }
+        ],
+        "bottomNote": "Compare view package sizes and current prices in the pricing section above."
+      },
+      "bestPractices": {
+        "id": "affordable-instagram-views-canada",
+        "title": "Looking for Affordable Instagram Views?",
+        "description": "Lower-priced packages can make sense when you only want to add a modest number of views to one piece of content. But when comparing cheap Instagram views in Canada, don't look at price in isolation. Before ordering, check:",
+        "closingNote": "An affordable Instagram Views service should make these basics clear before checkout. NovaLikes lets you compare package sizes first and decide based on the video and budget you're working with.",
+        "items": [
+          {
+            "id": "ig-v-bp-1",
+            "title": "Number of Views Included",
+            "description": "Check how many views are included in the package.",
+            "icon": "users"
+          },
+          {
+            "id": "ig-v-bp-2",
+            "title": "Supported Content Type",
+            "description": "Confirm whether the service supports the Reel or video you want to use.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "ig-v-bp-3",
+            "title": "Required Submission Details",
+            "description": "Know what public video URL you need to submit.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "ig-v-bp-4",
+            "title": "No Login Access Required",
+            "description": "Your Instagram password should not be required.",
+            "icon": "lock"
+          },
+          {
+            "id": "ig-v-bp-5",
+            "title": "Upfront Package Pricing",
+            "description": "Package pricing should be shown before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "ig-v-bp-6",
+            "title": "Order Tracking",
+            "description": "Check whether order tracking exists after purchase.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "ig-v-bp-7",
+            "title": "Support and Policies",
+            "description": "Support and policies should be easy to find before you pay.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-instagram-views-canada",
+        "title": "Common Mistakes When Buying Instagram Views",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-instagram-likes": {
+            "title": "Instagram Likes",
+            "description": "Use Likes when you want to increase visible engagement on a specific public post or Reel.",
+            "ctaLabel": "Buy Instagram Likes"
+          },
+          "buy-instagram-followers": {
+            "title": "Instagram Followers",
+            "description": "Use Followers when your goal is to increase the follower count displayed on your public profile.",
+            "ctaLabel": "Buy Instagram Followers"
+          },
+          "buy-instagram-comments": {
+            "title": "Instagram Comments",
+            "description": "Use Comments when you want visible conversation on eligible Instagram content.",
+            "ctaLabel": "Buy Instagram Comments"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "give-important-video-content-stronger-start-canada",
+      "title": "Give Important Video Content a Stronger Visible Start",
+      "description": "View count is one of the most obvious numbers attached to Instagram video content. When someone lands on a Reel, they may also notice the account behind it, the quality of the video, caption, likes, comments and other visible activity. An Instagram Views package lets you work specifically on the displayed view count of the video you choose. That can make it useful when you're preparing a new product Reel, service demonstration, event announcement, creator collaboration, portfolio video, promotional campaign, brand introduction or educational Reel. Views are one part of the presentation. The content still needs to give genuine viewers a reason to keep watching, visit your profile or interact. A larger number beside a Reel cannot fix a video that gives people nothing useful to watch. Make the opening easy to understand, show something worth staying for, use captions to add context, keep your profile connected to the video, and continue publishing. Purchased views change the visible view count. Your real content strategy still depends on what you create and how people genuinely respond to it.",
+      "items": [
+        {
+          "id": "ig-v-wb-launch",
+          "title": "A Local Launch",
+          "description": "A Reel introducing a new product, service or opening."
+        },
+        {
+          "id": "ig-v-wb-seasonal",
+          "title": "A Seasonal Promotion",
+          "description": "Video content connected to a limited campaign or offer."
+        },
+        {
+          "id": "ig-v-wb-partnership",
+          "title": "A Creator Partnership",
+          "description": "A collaboration that you want to feature prominently in your content library."
+        },
+        {
+          "id": "ig-v-wb-ecommerce",
+          "title": "An Ecommerce Release",
+          "description": "A demonstration, product reveal or short promotional video."
+        },
+        {
+          "id": "ig-v-wb-event",
+          "title": "An Event or Announcement",
+          "description": "A Reel that communicates information you want profile visitors to notice."
+        }
+      ],
+      "bottomNote": "In each case, a Views package can increase the visible view count on that selected video. It does not guarantee that Instagram will distribute the content further, and it does not guarantee sales, followers or organic engagement. Use the service for the metric it actually changes."
+    },
+    "howToBuy": {
+      "id": "how-to-buy-instagram-views-canada",
+      "title": "How to Buy Instagram Views",
+      "description": "You only need to make a few decisions before ordering.",
+      "steps": [
+        {
+          "id": "ig-v-step-1",
+          "title": "Pick the Video First",
+          "description": "Open the exact Instagram Reel or video you want to use."
+        },
+        {
+          "id": "ig-v-step-2",
+          "title": "Choose Your View Quantity",
+          "description": "Compare the available packages and select the number of views that fits the content."
+        },
+        {
+          "id": "ig-v-step-3",
+          "title": "Paste the Public Video URL",
+          "description": "Use the direct Reel or video link rather than a general Instagram profile URL."
+        },
+        {
+          "id": "ig-v-step-4",
+          "title": "Review and Checkout",
+          "description": "Confirm the video, package quantity and current price before completing the purchase."
+        },
+        {
+          "id": "ig-v-step-5",
+          "title": "Follow the Order",
+          "description": "Use NovaLikes order tracking afterward for available status updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Instagram Services Around Your Goal",
+    "relatedIntro": "Choose the service that matches the Instagram metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: How Can You Buy Instagram Views in Canada?",
+      "text": "Choose an Instagram Views package on NovaLikes, provide the public URL of the Reel or video you want to use, and complete checkout online. Your Instagram password is not required. The purchased views apply to that specific video rather than your profile follower count, likes or comments."
+    },
+    "storySections": [
+      {
+        "id": "built-for-canada",
+        "title": "Choose Instagram Views Around the Canadian Video You Actually Want to Support",
+        "lead": "Instagram Views apply to individual Reels and eligible videos, so the useful starting point is the role that specific piece of content plays for the account.",
+        "paragraphs": [
+          "A Canadian creator may have a Reel that introduces their niche or strongest work. An ecommerce business may use video for a launch, demonstration or product story. A local company may show a completed project, venue, service or customer-facing experience. Tourism and hospitality businesses may rely on video to show places and activities, while agencies may manage several client campaigns with different objectives.",
+          "Start with the Reel rather than choosing a View quantity in isolation. Review what the video communicates, how it fits the wider profile and why that content deserves more visible attention."
+        ],
+        "footer": "Views can support how active selected video content appears. The Reel and account behind that number still need a reason for genuine viewers to care.",
+        "items": [
+          {
+            "title": "Canadian Creators",
+            "body": "Support Reels that genuinely represent the creator's niche, expertise, style or current content direction."
+          },
+          {
+            "title": "Ecommerce Businesses",
+            "body": "Use Views around genuine demonstrations, launches and product videos connected to items customers can research or buy."
+          },
+          {
+            "title": "Local Businesses",
+            "body": "Support videos showing real services, locations, products, projects or experiences potential customers may want to understand."
+          },
+          {
+            "title": "Agencies and Client Accounts",
+            "body": "Choose View quantities according to the individual video and campaign instead of applying one standard target across every client."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Put visible attention behind selected priority Reels while genuine publishing, advertising and wider audience activity continue separately."
+          }
+        ]
+      },
+      {
+        "id": "ca-campaign-moments",
+        "title": "Put Instagram Views Behind Canadian Campaign Videos With a Clear Reason to Matter",
+        "lead": "Some Reels become more important because of the launch, season, event or customer decision happening around them.",
+        "footer": "Views can support campaign presentation. The creative, offer, timing, availability and customer experience still determine whether the campaign itself works.",
+        "items": [
+          {
+            "title": "Product and Collection Launches",
+            "body": "Support the Reel that demonstrates or introduces the genuine product most clearly."
+          },
+          {
+            "title": "Black Friday and Cyber Monday",
+            "body": "Canadian retail and ecommerce businesses may have selected promotional videos that matter more during major November shopping periods."
+          },
+          {
+            "title": "Boxing Day Campaigns",
+            "body": "Retailers and ecommerce brands may prioritise specific Reels around Boxing Day and the wider holiday shopping period."
+          },
+          {
+            "title": "Seasonal Canadian Campaigns",
+            "body": "Travel, hospitality, outdoor, fashion, fitness, home and other businesses may have videos whose relevance changes across Canadian seasons."
+          },
+          {
+            "title": "New Locations or Service Areas",
+            "body": "A business entering another city, province or local market can use video to show what has changed and where customers can now find it."
+          },
+          {
+            "title": "Creator Partnerships",
+            "body": "Support the collaboration Reel that genuinely represents the campaign rather than unrelated video content."
+          }
+        ]
+      },
+      {
+        "id": "visible-momentum",
+        "title": "Give Important Reels More Visible Activity Without Treating Views as Content Quality",
+        "lead": "View count is one visible number attached to a Reel, but genuine viewers can immediately evaluate much more than that number.",
+        "bullets": [
+          "the video itself",
+          "opening seconds",
+          "Likes",
+          "Comments",
+          "creator or business profile",
+          "caption",
+          "overall account activity"
+        ],
+        "paragraphs": [
+          "A larger visible View count may make selected content appear more active, but it cannot make an unclear, irrelevant or weak video more useful.",
+          "Use Views for the public metric they provide. Keep the subject, creative, message and usefulness of the Reel as separate parts of the strategy."
+        ],
+        "footer": "Views can support presentation. The video still needs to give genuine viewers a reason to keep watching."
+      },
+      {
+        "id": "reels-worth-watching",
+        "title": "Give Genuine Viewers a Reason to Keep Watching the Reel",
+        "lead": "Purchased Views can change the visible count, but they cannot create the video quality, clarity or relevance that holds real attention.",
+        "footer": "Use purchased Views for the visible metric they provide. Let genuine watch behaviour and Instagram Insights guide future video decisions.",
+        "items": [
+          {
+            "title": "Make the Subject Clear Early",
+            "body": "Help viewers understand what the Reel is about before a long introduction gives them a reason to leave."
+          },
+          {
+            "title": "Bring the Useful Part Forward",
+            "body": "Show the result, product, demonstration, transformation or main idea early when that is what makes the video worth watching."
+          },
+          {
+            "title": "Keep One Strong Direction",
+            "body": "A focused video is often easier to understand than a Reel trying to communicate several unrelated ideas."
+          },
+          {
+            "title": "Use Visuals That Support the Message",
+            "body": "Framing, demonstrations, readable text and relevant footage should help communicate the idea instead of distracting from it."
+          },
+          {
+            "title": "Turn Strong Subjects Into Repeatable Formats",
+            "body": "When genuine viewers respond well to a useful format, develop related Reels rather than treating each video as an isolated experiment."
+          },
+          {
+            "title": "Review Genuine Performance",
+            "body": "Use actual account data to understand which videos earn real attention instead of judging the content strategy by View count alone."
+          }
+        ]
+      },
+      {
+        "id": "organic-reach",
+        "title": "Instagram Views and Organic Distribution Are Different Outcomes",
+        "lead": "Increasing the visible View count on a Reel does not automatically control how Instagram recommends that content or how genuine users respond.",
+        "bullets": [
+          "reach Explore",
+          "make a Reel viral",
+          "gain organic Followers",
+          "generate more Likes",
+          "create Comments",
+          "increase future reach",
+          "drive website traffic",
+          "secure brand partnerships",
+          "generate customers",
+          "increase sales"
+        ],
+        "paragraphs": [
+          "NovaLikes Instagram Views packages are designed to increase the visible View count on the selected eligible public Reel or video.",
+          "Organic recommendations, distribution and genuine audience behaviour remain separate outcomes. Use the Views service for the metric it actually changes."
+        ]
+      },
+      {
+        "id": "profile-experience",
+        "title": "Make the Instagram Profile Useful When a Reel Sends Someone There",
+        "lead": "A Reel may be a genuine viewer's first interaction with the account. If the video creates interest, the profile becomes the next part of the experience.",
+        "footer": "Views can support the selected video. The profile behind it determines what an interested visitor finds next.",
+        "items": [
+          {
+            "title": "Explain the Account Clearly",
+            "body": "Use the bio to make the creator niche, business offer or brand purpose understandable without forcing visitors to guess."
+          },
+          {
+            "title": "Keep Strong Introductory Content Visible",
+            "body": "Pin useful posts or Reels when they explain the account, show strong work or introduce important products and services."
+          },
+          {
+            "title": "Build a Recognisable Content Direction",
+            "body": "Give visitors enough consistency to understand what they are likely to find if they continue exploring."
+          },
+          {
+            "title": "Keep Important Information Current",
+            "body": "Review links, services, products, locations and other public details that may affect a genuine customer decision."
+          },
+          {
+            "title": "Give Business Visitors a Clear Next Step",
+            "body": "Help interested Canadian visitors understand how to enquire, shop, book, visit the website or learn more."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Use Instagram Views Around Canadian Local Business Videos Customers Can Verify",
+        "paragraphs": [
+          "Reels can help local businesses show customers details that are difficult to communicate through a business name or static description alone.",
+          "Restaurants may show dishes and venues. Trades can document completed projects. Interior designers may show finished spaces. Salons can present treatments or results. Retailers may demonstrate genuine products. Property businesses can show listings. Tourism and hospitality companies may present real destinations and experiences.",
+          "If Views are supporting these videos, keep the content and profile consistent with the real business. Locations, services, contact details and public claims should match what customers can verify through the website, Google presence and other official channels."
+        ],
+        "footer": "Visible attention can support presentation. Local trust comes from the Canadian business and what customers find behind the Reel."
+      },
+      {
+        "id": "real-experience",
+        "title": "Build Instagram Video Around Work and Experience You Can Actually Show",
+        "lead": "Reels based on genuine work, products and first-hand knowledge can give viewers more substance than video built only around generic marketing claims.",
+        "footer": "Views can support visible activity around this content. Genuine experience gives the Reel substance beyond the displayed number.",
+        "items": [
+          {
+            "title": "Show Real Projects",
+            "body": "Use completed work, transformations and genuine portfolio examples the creator or business can accurately explain."
+          },
+          {
+            "title": "Demonstrate Products You Really Offer",
+            "body": "Show genuine products in useful context so interested customers can understand how they look, work or may be used."
+          },
+          {
+            "title": "Explain Processes From First-Hand Knowledge",
+            "body": "Turn professional or practical experience into video that helps people understand how something actually works."
+          },
+          {
+            "title": "Use Real Customer Questions",
+            "body": "Recurring enquiries about products, services or processes can reveal useful subjects for future Reels."
+          },
+          {
+            "title": "Show Genuine Places and People",
+            "body": "Where appropriate, real teams, locations, venues and work environments can give business video more useful context."
+          },
+          {
+            "title": "Share an Original Perspective",
+            "body": "First-hand observations can make video more useful than repeating generic advice already common across similar accounts."
+          }
+        ]
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep Instagram Views Separate From Genuine Customer Evidence",
+        "paragraphs": [
+          "A larger View count can make a Reel appear more active, but it does not show whether genuine customers have bought from, hired, visited or recommended the business.",
+          "Canadian companies may have stronger evidence through verified reviews, authentic testimonials, completed projects, case studies, real customer Comments, tagged customer content and consistent public business information.",
+          "Use that proof where it genuinely exists. Do not present purchased Views as customer approval or invent customer experiences to make a campaign appear more credible."
+        ],
+        "footer": "Views can support video presentation. Genuine customer experience provides a different and more meaningful form of proof."
+      },
+      {
+        "id": "brand-partnerships",
+        "title": "Give Canadian Brands More to Assess Than an Instagram View Count",
+        "paragraphs": [
+          "A creator may want stronger visible Views when preparing video content for collaborations, but a Canadian brand or agency can evaluate much more than the public View number shown on a Reel.",
+          "A professional partnership review may consider creator positioning, audience relevance, video quality, genuine engagement, watch behaviour, consistency, previous collaborations, communication, campaign fit and reliable performance information.",
+          "If partnerships matter, publish video you would be comfortable showing to a potential partner and keep genuine analytics available when real audience performance needs to be demonstrated."
+        ],
+        "footer": "Treat Views as one visible video metric rather than proof of genuine influence by themselves."
+      }
+    ]
+  }
+}

@@ -14,6 +14,8 @@ import { CORE_SERVICE_SLUGS } from '@/lib/i18n/config';
 import { CORE_PATHS } from '@/lib/i18n/core-paths';
 import { HREFLANG, LOCALES, LOCALE_NATIVE_NAMES, LOCALE_SHORT_LABELS } from '@/lib/i18n/config';
 import { hreflangMap, localizeHref } from '@/lib/i18n/paths';
+import { hreflangMapWithMarket } from '@/lib/market/paths';
+import { isMarketCorePath } from '@/lib/market/config';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
 import { absoluteUrl } from '@/lib/seo/metadata/canonical';
 import { getEnglishMetadataBundle } from '@/lib/i18n/metadata';
@@ -63,14 +65,14 @@ describe('i18n translation completeness', () => {
 describe('i18n hreflang matrix', () => {
   it('is reciprocal for all 12 core page groups', () => {
     for (const pathName of CORE_PATHS) {
-      const map = hreflangMap(pathName);
+      const map = hreflangMapWithMarket(pathName);
       expect(map['x-default']).toBe(localizeHref(pathName, 'en'));
       for (const locale of LOCALES) {
         expect(map[HREFLANG[locale]]).toBe(localizeHref(pathName, locale));
       }
-      expect(Object.keys(map).sort()).toEqual(
-        ['ar', 'de', 'en', 'es', 'fr', 'it', 'pt-BR', 'x-default'].sort(),
-      );
+      const expectedKeys = ['ar', 'de', 'en', 'es', 'fr', 'it', 'pt-BR', 'x-default'];
+      if (isMarketCorePath(pathName)) expectedKeys.push('en-AU', 'en-CA', 'en-GB', 'en-US');
+      expect(Object.keys(map).sort()).toEqual(expectedKeys.sort());
     }
   });
 });

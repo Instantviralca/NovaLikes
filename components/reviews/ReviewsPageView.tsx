@@ -4,7 +4,6 @@ import { useMemo, useState } from 'react';
 
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { ReviewsExploreCTA } from '@/components/reviews/ReviewsExploreCTA';
-import { ReviewsHeroVisual } from '@/components/reviews/ReviewsHeroVisual';
 import {
   ReviewsPlatformFilters,
   type ReviewsPlatformFilterId,
@@ -84,61 +83,50 @@ export function ReviewsPageView({
     <>
       <Section
         spacing="lg"
-        className="relative overflow-hidden bg-gradient-to-b from-[#FFF8F1] via-[#FFFBF7] to-[#F7F5F2]"
+        className="relative overflow-hidden bg-[#FFFBFA]"
         aria-labelledby="reviews-page-heading"
       >
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-24 right-0 size-72 rounded-full bg-[var(--brand-primary)]/10 blur-3xl"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-16 left-0 size-64 rounded-full bg-[#FFE8D6]/70 blur-3xl"
-        />
-        <Container size="xl" className="relative">
-          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-10">
-            <div className="min-w-0">
-              <Breadcrumb
-                items={[
-                  { label: homeLabel, href: homeHref },
-                  { label: copy?.chrome.breadcrumb ?? 'Reviews', href: reviewsHref },
-                ]}
-              />
-              <div className="mt-5 max-w-xl space-y-4">
-                {copy?.eyebrow ? <Eyebrow>{copy.eyebrow}</Eyebrow> : null}
-                <Heading as="h1" size="h1" id="reviews-page-heading" className={HERO_HEADING_CLASS}>
-                  {accentLastWord(copy?.h1 ?? 'Customer Reviews')}
-                </Heading>
-                <MutedText>
-                  {copy?.intro ??
-                    'Customer reviews from NovaLikes\' published review catalogue. Ratings below reflect that catalogue and may include both 4-star and 5-star feedback.'}
-                </MutedText>
-                {aggregate ? (
-                  <ReviewSummary
-                    aggregate={aggregate}
-                    variant="hero"
-                    summaryLabel={
-                      copy
-                        ? copy.basedOnTemplate
-                            .replace('{count}', String(aggregate.reviewCount))
-                            .replace(
-                              '{word}',
-                              aggregate.reviewCount === 1 ? copy.reviewSingular : copy.reviewPlural,
-                            )
-                        : undefined
-                    }
-                  />
-                ) : null}
-              </div>
+        <Container size="xl">
+          <div className="max-w-2xl">
+            <Breadcrumb
+              items={[
+                { label: homeLabel, href: homeHref },
+                { label: copy?.chrome.breadcrumb ?? 'Reviews', href: reviewsHref },
+              ]}
+            />
+            <div className="mt-5 space-y-4">
+              {copy?.eyebrow ? <Eyebrow>{copy.eyebrow}</Eyebrow> : null}
+              <Heading as="h1" size="h1" id="reviews-page-heading" className={HERO_HEADING_CLASS}>
+                {accentLastWord(copy?.h1 ?? 'Customer Reviews')}
+              </Heading>
+              <MutedText>
+                {copy?.intro ??
+                  "Customer reviews from NovaLikes' published review catalogue. Ratings below reflect that catalogue and may include both 4-star and 5-star feedback."}
+              </MutedText>
+              {aggregate ? (
+                <ReviewSummary
+                  aggregate={aggregate}
+                  variant="hero"
+                  summaryLabel={
+                    copy
+                      ? copy.basedOnTemplate
+                          .replace('{count}', String(aggregate.reviewCount))
+                          .replace(
+                            '{word}',
+                            aggregate.reviewCount === 1 ? copy.reviewSingular : copy.reviewPlural,
+                          )
+                      : undefined
+                  }
+                />
+              ) : null}
             </div>
-            <ReviewsHeroVisual className="hidden sm:block" />
           </div>
         </Container>
       </Section>
 
       <Section
         spacing="lg"
-        className="bg-[#F7F5F2]"
+        className="bg-[#FFFBFA]"
         aria-labelledby="reviews-catalogue-heading"
       >
         <Container size="xl">
@@ -162,7 +150,7 @@ export function ReviewsPageView({
                     reviews={visible}
                     surface="reviews-page"
                     variant="catalogue"
-                    layout="natural"
+                    layout="masonry"
                     readMoreLabel={copy?.readMore}
                     showLessLabel={copy?.showLess}
                   />
@@ -211,6 +199,16 @@ export function ReviewsPageView({
                 'Customer reviews will appear here when approved feedback is available.'}
             </p>
           )}
+
+          <aside className="mt-12 max-w-2xl rounded-2xl border border-black/[0.06] bg-white px-5 py-5 sm:px-6">
+            <h2 className="text-sm font-semibold text-foreground">
+              {copy?.collectTitle ?? 'How we collect reviews'}
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {copy?.collectBody ??
+                'These comments are customer feedback published in the NovaLikes review catalogue. They were imported as historical customer comments. They are not matched to a live order record and are not independently verified by a third party.'}
+            </p>
+          </aside>
         </Container>
       </Section>
 

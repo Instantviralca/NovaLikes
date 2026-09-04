@@ -20,6 +20,7 @@ export type ServiceFaqProps = {
   className?: string;
   defaultOpenIds?: string[];
   pinnedOpenIds?: string[];
+  enhanced?: boolean;
 };
 
 /** Render FAQ answer text with safe internal markdown links: [label](/path). */
@@ -75,6 +76,7 @@ export function ServiceFaq({
   className,
   defaultOpenIds,
   pinnedOpenIds,
+  enhanced = false,
 }: ServiceFaqProps) {
   if (items.length === 0) return null;
 
@@ -82,10 +84,23 @@ export function ServiceFaq({
   const pinnedIds = pinnedOpenIds ?? [];
 
   return (
-    <Section id={id} className={cn(className)} aria-label="Service FAQ">
+    <Section
+      id={id}
+      spacing="none"
+      className={cn(
+        enhanced ? 'py-12 md:py-16 lg:py-20' : undefined,
+        className,
+      )}
+      aria-label="Service FAQ"
+    >
       <Container>
         {title || description ? (
-          <div className="mb-8 max-w-2xl space-y-2">
+          <div
+            className={cn(
+              'mb-8 space-y-2',
+              enhanced ? 'w-full text-center' : 'max-w-2xl',
+            )}
+          >
             {title ? (
               <Heading as="h2" size="h2">
                 {title}
@@ -96,7 +111,12 @@ export function ServiceFaq({
         ) : null}
 
         <div
-          className="overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_18px_40px_-24px_rgba(28,25,23,0.32)]"
+          className={cn(
+            'overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-white',
+            enhanced
+              ? 'ring-1 ring-[#EDE8E3]'
+              : 'shadow-[0_18px_40px_-24px_rgba(28,25,23,0.32)]',
+          )}
           data-service-faq
           data-analytics-service={analyticsServiceSlug ?? ''}
         >

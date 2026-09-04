@@ -10,8 +10,12 @@ import { isEmailConfigured } from '@/lib/config/env';
 import {
   getAdminNotificationEmail,
   getPaymentWebsiteUrl,
+  getRemotePaymentProductName,
+  getRemotePaymentSharedSecret,
   setAdminNotificationEmail,
   setPaymentWebsiteUrl,
+  setRemotePaymentProductName,
+  setRemotePaymentSharedSecret,
 } from '@/lib/settings/site-settings';
 
 export const runtime = 'nodejs';
@@ -33,14 +37,18 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: false, error: 'Unauthorized' }, { status: 401 });
   }
 
-  const [paymentWebsite, adminEmail] = await Promise.all([
+  const [paymentWebsite, sharedSecret, productName, adminEmail] = await Promise.all([
     getPaymentWebsiteUrl(),
+    getRemotePaymentSharedSecret(),
+    getRemotePaymentProductName(),
     getAdminNotificationEmail(),
   ]);
   return NextResponse.json({
     ok: true,
     settings: {
       paymentWebsite,
+      sharedSecretConfigured: sharedSecret.trim().length >= 16,
+      productName,
       adminEmail,
       emailConfigured: isEmailConfigured(),
     },
@@ -55,17 +63,31 @@ export async function POST(request: Request) {
   try {
     const body = (await request.json()) as {
       paymentWebsite?: string;
+      sharedSecret?: string;
+      productName?: string;
       adminEmail?: string;
     };
-    const paymentWebsite = await setPaymentWebsiteUrl(body.paymentWebsite ?? '');
+    const paymentWebsite = await setPaymentWebsiteUrl(
+      body.paymentWebsite ?? (await getPaymentWebsiteUrl()),
+    );
+    if (typeof body.sharedSecret === 'string' && body.sharedSecret.trim()) {
+      await setRemotePaymentSharedSecret(body.sharedSecret);
+    }
+    const productName =
+      typeof body.productName === 'string'
+        ? await setRemotePaymentProductName(body.productName)
+        : await getRemotePaymentProductName();
     const adminEmail =
       typeof body.adminEmail === 'string'
         ? await setAdminNotificationEmail(body.adminEmail)
         : await getAdminNotificationEmail();
+    const sharedSecret = await getRemotePaymentSharedSecret();
     return NextResponse.json({
       ok: true,
       settings: {
         paymentWebsite,
+        sharedSecretConfigured: sharedSecret.trim().length >= 16,
+        productName,
         adminEmail,
         emailConfigured: isEmailConfigured(),
       },

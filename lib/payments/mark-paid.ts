@@ -4,6 +4,7 @@
  */
 
 import { getPersistence } from '@/lib/persistence';
+import { markCartRecoveryConverted } from '@/lib/cart-recovery';
 import { getOrderById, getOrderByPaymentId, saveOrder } from '@/lib/orders/store';
 import { notifyOrderPaid } from '@/lib/notifications/order-hooks';
 import type { Order } from '@/types/order';
@@ -35,7 +36,8 @@ export async function markOrderPaymentStatus(input: {
     typeof storedPaymentId === 'string' &&
     storedPaymentId.length > 0 &&
     !storedPaymentId.startsWith('pending_') &&
-    !storedPaymentId.startsWith('mock_');
+    !storedPaymentId.startsWith('mock_') &&
+    !storedPaymentId.startsWith('remote_');
   if (
     input.status === 'paid' &&
     hasBoundCheckoutSession &&
@@ -91,6 +93,10 @@ export async function markOrderPaymentStatus(input: {
         message: error instanceof Error ? error.message : 'unknown',
       });
     }
+    await markCartRecoveryConverted({
+      orderId: saved.id,
+      email: saved.guestEmail,
+    });
   }
 
   return { order: saved, duplicate: false, applied: true };

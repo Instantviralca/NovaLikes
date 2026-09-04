@@ -226,7 +226,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
     expect(buildArticleAuthorSchema('missing')).toBeNull();
   });
 
-  it('includes FAQ schema only when visible and schemaEligible', () => {
+  it('does not emit FAQPage schema (visible FAQs remain content-only)', () => {
     const visible = buildArticleFaqSchema([
       {
         id: '1',
@@ -235,7 +235,7 @@ describe('Article SEO & Schema Engine — Document 15.07', () => {
         schemaEligible: true,
       },
     ]);
-    expect(visible?.['@type']).toBe('FAQPage');
+    expect(visible).toBeNull();
 
     const hidden = buildArticleFaqSchema([
       {

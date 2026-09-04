@@ -10,6 +10,7 @@ type CustomerInformationFormProps = {
   value: CustomerInformation;
   errors?: Partial<Record<keyof CustomerInformation, string>>;
   onChange: (next: CustomerInformation) => void;
+  onEmailBlur?: () => void;
   hideLegend?: boolean;
 };
 
@@ -17,6 +18,7 @@ export function CustomerInformationForm({
   value,
   errors,
   onChange,
+  onEmailBlur,
   hideLegend = false,
 }: CustomerInformationFormProps) {
   const { ui } = useI18nChrome();
@@ -40,6 +42,7 @@ export function CustomerInformationForm({
           value={value.email}
           aria-invalid={Boolean(errors?.email)}
           onChange={(e) => onChange({ ...value, email: e.target.value })}
+          onBlur={onEmailBlur}
         />
         {errors?.email ? (
           <p className="text-xs text-destructive" role="alert">

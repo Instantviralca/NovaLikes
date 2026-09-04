@@ -1,7 +1,12 @@
 'use client';
 
 import { CreditCard, Lock, ShieldCheck } from 'lucide-react';
+import type { MutableRefObject } from 'react';
 
+import {
+  MollieCardFields,
+  type MollieCardFieldsHandle,
+} from '@/components/commerce/checkout/mollie-card-fields';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
@@ -16,10 +21,11 @@ type PaymentMethodsProps = {
   className?: string;
   /** Hide legend when parent already renders a heading. */
   hideLegend?: boolean;
+  mollieHandleRef?: MutableRefObject<MollieCardFieldsHandle | null>;
 };
 
 /**
- * Payment method picker — accurate security copy only.
+ * Payment method picker — Mollie card fields when remote-payment is selected.
  */
 export function PaymentMethods({
   methods,
@@ -28,6 +34,7 @@ export function PaymentMethods({
   error,
   className,
   hideLegend = false,
+  mollieHandleRef,
 }: PaymentMethodsProps) {
   const { ui } = useI18nChrome();
   const enabled = methods.filter((m) => m.enabled);
@@ -64,23 +71,14 @@ export function PaymentMethods({
                 {method.description ? (
                   <p className="mt-1 text-xs text-muted-foreground">{method.description}</p>
                 ) : null}
-                {method.id === 'remote-payment' || method.id === 'stripe' ? (
+                {method.id === 'remote-payment' ? (
                   <div className="mt-3 space-y-2">
                     <p className="text-xs font-medium text-[var(--text-secondary)]">
                       {ui.checkout.cardProcessedSecurely}
                     </p>
-                    <div className="flex flex-wrap gap-1.5" dir="ltr">
-                      {['Visa', 'Mastercard', 'Amex', 'Discover'].map(
-                        (brand) => (
-                          <span
-                            key={brand}
-                            className="rounded-md border border-[var(--border-subtle)] bg-white px-2 py-1 text-[10px] font-semibold text-[var(--text-secondary)]"
-                          >
-                            {brand}
-                          </span>
-                        ),
-                      )}
-                    </div>
+                    <p className="text-xs font-medium text-[var(--text-secondary)]">
+                      Secure card payments
+                    </p>
                     <p className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-muted)]">
                       <Lock className="size-3.5" aria-hidden="true" />
                       {ui.checkout.encryptedPayment}
@@ -89,6 +87,7 @@ export function PaymentMethods({
                       <ShieldCheck className="size-3.5" aria-hidden="true" />
                       {ui.checkout.secureCheckout}
                     </p>
+                    {selected ? <MollieCardFields enabled handleRef={mollieHandleRef} /> : null}
                   </div>
                 ) : null}
               </div>

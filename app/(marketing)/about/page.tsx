@@ -8,7 +8,7 @@ import { loadQuickAnswer } from '@/lib/i18n/content/load';
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
-import { aboutPageSchema } from '@/schemas/website';
+import { webPageSchema } from '@/schemas/website';
 import { companyMetadata } from '@/seo/metadata';
 import { descriptions } from '@/seo/descriptions';
 import { titles } from '@/seo/titles';
@@ -22,7 +22,7 @@ export default function AboutPage() {
   const content = getAboutContent();
 
   const graph = asJsonLdGraph([
-    aboutPageSchema({
+    webPageSchema({
       title: titles.company('About'),
       description: descriptions.about(),
       path: routes.about,

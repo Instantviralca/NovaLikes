@@ -1,0 +1,258 @@
+.wrp-mollie-inline,
+.wrp-mollie-inline * {
+    box-sizing: border-box;
+}
+
+.wrp-mollie-inline [hidden] {
+    display: none !important;
+}
+
+.wrp-mollie-inline {
+    width: 100%;
+    max-width: 470px;
+    padding: 4px 0 2px;
+    color: #202632;
+    font-family: inherit;
+}
+
+.wrp-mollie-inline__intro {
+    margin: 0 0 16px !important;
+    color: #697386;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.wrp-mollie-inline__loading {
+    margin: 8px 0;
+    padding: 15px;
+    border: 1px solid #e6e8ec;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #697386;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wrp-mollie-inline__card {
+    margin: 0;
+}
+
+.wrp-mollie-group-label,
+.wrp-mollie-field--holder > label {
+    display: block;
+    margin: 0 0 8px;
+    color: #4b5565;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.wrp-mollie-card-group {
+    overflow: hidden;
+    border: 1px solid #d8dde6;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.wrp-mollie-card-group:focus-within,
+.wrp-mollie-card-group:has(.wrp-mollie-field--focused) {
+    border-color: #6ca6ff;
+    box-shadow: 0 0 0 3px rgba(23, 117, 255, 0.12);
+}
+
+.wrp-mollie-card-group__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #d8dde6;
+}
+
+.wrp-mollie-card-group__row .wrp-mollie-field:first-child {
+    border-right: 1px solid #d8dde6;
+}
+
+.wrp-mollie-field {
+    min-width: 0;
+    margin: 0;
+}
+
+.wrp-mollie-field__surface {
+    position: relative;
+}
+
+.wrp-mollie-field__control {
+    width: 100%;
+    min-height: 53px;
+    padding: 14px 15px;
+    border: 0;
+    background: transparent;
+    transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.wrp-mollie-field__control .mollie-component,
+.wrp-mollie-field__control iframe {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100% !important;
+    min-height: 24px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.wrp-mollie-field__placeholder {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 15px;
+    max-width: calc(100% - 30px);
+    overflow: hidden;
+    color: #98a2b3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: opacity 100ms ease;
+}
+
+.wrp-mollie-field--focused .wrp-mollie-field__placeholder,
+.wrp-mollie-field--has-value .wrp-mollie-field__placeholder {
+    opacity: 0;
+}
+
+.wrp-mollie-field__card-icon {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    right: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.wrp-mollie-field--number .wrp-mollie-field__control {
+    padding-right: 54px;
+}
+
+.wrp-mollie-field--invalid .wrp-mollie-field__control {
+    background: #fff7f6;
+    box-shadow: inset 0 0 0 1px #ef6a60;
+}
+
+.wrp-mollie-field--valid .wrp-mollie-field__control {
+    background: #fbfffd;
+}
+
+.wrp-mollie-field__error {
+    margin-top: 5px;
+    color: #b42318;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.wrp-mollie-field__error:empty {
+    display: none;
+}
+
+.wrp-mollie-field--holder {
+    margin-top: 18px;
+}
+
+.wrp-mollie-field--holder .wrp-mollie-field__surface {
+    border: 1px solid #d8dde6;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.wrp-mollie-field--holder .wrp-mollie-field__surface:focus-within,
+.wrp-mollie-field--holder.wrp-mollie-field--focused .wrp-mollie-field__surface {
+    border-color: #6ca6ff;
+    box-shadow: 0 0 0 3px rgba(23, 117, 255, 0.12);
+}
+
+.wrp-mollie-field--holder.wrp-mollie-field--invalid .wrp-mollie-field__surface {
+    border-color: #ef6a60;
+    background: #fff7f6;
+    box-shadow: 0 0 0 3px rgba(239, 106, 96, 0.1);
+}
+
+.wrp-mollie-inline__error {
+    margin: 12px 0 0;
+    padding: 10px 12px;
+    border: 1px solid #fecdca;
+    border-radius: 8px;
+    background: #fef3f2;
+    color: #b42318;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.wrp-mollie-inline__powered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: max-content;
+    margin: 18px auto 0;
+    color: #5e6673 !important;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none !important;
+}
+
+.wrp-mollie-inline__powered:hover,
+.wrp-mollie-inline__powered:focus {
+    color: #111827 !important;
+    text-decoration: none !important;
+}
+
+.wrp-mollie-inline__powered strong {
+    color: #111827;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.wrp-mollie-inline--busy {
+    opacity: 0.76;
+    pointer-events: none;
+}
+
+#place_order.wrp-mollie-processing {
+    cursor: wait !important;
+    opacity: 0.7;
+}
+
+@media (max-width: 520px) {
+    .wrp-mollie-inline {
+        max-width: none;
+    }
+
+    .wrp-mollie-field__control {
+        min-height: 50px;
+        padding: 13px 12px;
+    }
+
+    .wrp-mollie-field__placeholder {
+        left: 12px;
+        font-size: 15px;
+    }
+
+    .wrp-mollie-field__card-icon {
+        right: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wrp-mollie-field__placeholder,
+    .wrp-mollie-card-group,
+    .wrp-mollie-field__control {
+        transition: none;
+    }
+}

@@ -1,0 +1,903 @@
+{
+  "content": {
+    "slug": "buy-tiktok-likes",
+    "platformId": "tiktok",
+    "seo": {
+      "title": "Buy TikTok Likes Canada | Likes for Your Videos | NovaLikes",
+      "description": "Buy TikTok likes in Canada for public videos. Choose flexible like packages, submit your video link, order without a password, and track your purchase online."
+    },
+    "hero": {
+      "eyebrow": "TIKTOK SERVICES FOR CANADA",
+      "title": "Buy TikTok Likes in Canada and Strengthen Video Engagement",
+      "description": "Put more visible engagement behind the TikTok videos you want people to notice. NovaLikes lets Canadian creators, businesses, and brands buy TikTok likes for eligible public videos without sharing account login details. Choose the number of likes you want, submit the exact public TikTok video link, and complete your order online. Use a smaller package for an everyday video or choose a larger quantity when you're supporting an important launch, collaboration, campaign, product video, or piece of content that represents your profile well.",
+      "purpose": "Convert for TikTok likes packages in Canada",
+      "primaryKeyword": "buy TikTok likes",
+      "supportingKeywords": [
+        "Buy TikTok Likes in Canada",
+        "TikTok Likes Packages",
+        "Buy Real TikTok Likes",
+        "TikTok Engagement"
+      ],
+      "suggestedWordCount": 90,
+      "primaryCta": {
+        "label": "Choose Your TikTok Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "tt-l-trust-public",
+          "label": "Public Video Link Only"
+        },
+        {
+          "id": "tt-l-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "tt-l-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "tt-l-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/tiktok-likes/tiktok-likes-hero.webp",
+        "alt": "TikTok video likes engagement dashboard illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose the Likes Package That Fits Your Video",
+      "description": "Every TikTok video has a different purpose and level of existing activity. NovaLikes currently offers 100, 250, 500, 1K, 3K, 5K, 10K and 15K likes. Instead of treating every video the same, choose the quantity based on the content you're supporting. A newer video may need only a modest increase, while a launch, collaboration, or established account may call for something larger. Review the current package prices before ordering and choose based on the video rather than automatically selecting the biggest option.",
+      "purpose": "Present real NovaLikes.com TikTok likes packages",
+      "primaryKeyword": "TikTok likes packages",
+      "suggestedWordCount": 55,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare TikTok Likes Packages",
+      "emptyMessage": "TikTok Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-tiktok-likes",
+      "title": "Make Strong Content Look More Active at First Glance",
+      "description": "Choose TikTok Likes when a specific public video is the content you want to support with more visible engagement. The service increases the Like count displayed on that eligible video, while genuine Views, Comments, Followers, FYP distribution, customer activity and business results remain separate outcomes.",
+      "purpose": "Explain informed use of TikTok likes packages",
+      "primaryKeyword": "buy TikTok likes",
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "tt-l-first-impressions",
+          "title": "Stronger First Impressions",
+          "description": "A visible reaction count can make a video appear more active when new viewers discover it through a profile, shared link or TikTok feed."
+        },
+        {
+          "id": "tt-l-campaign-support",
+          "title": "Campaign Support",
+          "description": "Creators and businesses may use like packages alongside product launches, promotions and other short-form video campaigns."
+        },
+        {
+          "id": "tt-l-flexible-quantities",
+          "title": "Flexible Quantities",
+          "description": "Smaller options can support individual posts, while larger packages may better suit videos from established and consistently active accounts."
+        },
+        {
+          "id": "tt-l-alongside-content",
+          "title": "Works Alongside Content",
+          "description": "Purchased likes work best as support for original videos, clear captions, consistent posting and ongoing audience engagement."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-tiktok-likes",
+      "title": "Why Choose NovaLikes for TikTok Likes?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on lean authority layout — trust lives in hero, FAQ, and checklist sections",
+      "primaryKeyword": "buy real TikTok likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "buy-tiktok-likes-features",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on 09.22 — Video Link and Delivery Requirements is separate",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-tiktok-likes-order-works-canada",
+      "title": "How Your TikTok Likes Order Works",
+      "description": "The process is centred around the specific video you choose.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy TikTok likes",
+      "supportingKeywords": [
+        "how to buy likes on TikTok",
+        "how do you buy likes on TikTok",
+        "how to buy likes on a TikTok video",
+        "buying TikTok likes"
+      ],
+      "suggestedWordCount": 90,
+      "steps": [
+        {
+          "id": "tt-l-step-1",
+          "title": "Select a Likes Package",
+          "description": "Compare the available quantities and current prices."
+        },
+        {
+          "id": "tt-l-step-2",
+          "title": "Copy the TikTok Video Link",
+          "description": "Open the exact public video where you want the likes applied and copy its direct URL."
+        },
+        {
+          "id": "tt-l-step-3",
+          "title": "Submit the Video",
+          "description": "Paste the link into the required order field."
+        },
+        {
+          "id": "tt-l-step-4",
+          "title": "Check Everything Before Payment",
+          "description": "Review the video link, likes quantity, and package price."
+        },
+        {
+          "id": "tt-l-step-5",
+          "title": "Complete and Track Your Order",
+          "description": "Finish checkout and use NovaLikes order tracking afterward for available status updates."
+        }
+      ],
+      "cta": {
+        "label": "Select a Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "video-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain video URL and processing requirements",
+      "primaryKeyword": "TikTok likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "tt-l-req-url",
+          "title": "Public TikTok Video URL",
+          "description": "Paste the exact public link to the TikTok video that should receive the selected likes."
+        },
+        {
+          "id": "tt-l-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that fits your video, account activity and current campaign."
+        },
+        {
+          "id": "tt-l-req-public",
+          "title": "Public Video Access",
+          "description": "The selected video must remain publicly viewable while the order is being processed."
+        },
+        {
+          "id": "tt-l-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive your order confirmation, tracking details and support updates."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "tt-likes-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Canada service page.",
+      "purpose": "Social proof from approved customer reviews",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "tt-likes-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy TikTok likes",
+      "faqIds": [
+        "ca-tt-l-where-buy",
+        "ca-tt-l-more-likes",
+        "ca-tt-l-cheap",
+        "ca-tt-l-real",
+        "ca-tt-l-how-many",
+        "ca-tt-l-any-video",
+        "ca-tt-l-password",
+        "ca-tt-l-cost",
+        "ca-tt-l-delivery-time",
+        "ca-tt-l-views",
+        "ca-tt-l-followers",
+        "ca-tt-l-fyp",
+        "ca-tt-l-safe",
+        "ca-tt-l-business",
+        "ca-tt-l-older-video",
+        "ca-tt-l-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-tiktok-services-likes",
+      "title": "Explore More TikTok Services",
+      "description": "Choose the TikTok service that matches the metric you want to change.",
+      "purpose": "Internal links to sibling TikTok offers",
+      "serviceSlugs": [
+        "buy-tiktok-followers",
+        "buy-tiktok-views"
+      ]
+    },
+    "finalCta": {
+      "id": "tt-likes-final-cta",
+      "title": "Put More Engagement Behind Your Best TikTok Videos",
+      "description": "Choose the video you want to support, select a TikTok Likes package that fits the content, and place your order using its public link without sharing your password. Then keep working on what matters beyond the number: videos people genuinely want to watch and interact with.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your TikTok Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-tiktok-likes-canada",
+        "title": "Why Choose NovaLikes for TikTok Likes?",
+        "description": "A TikTok Likes order should be clear from the moment you choose a package.",
+        "items": [
+          {
+            "id": "tt-l-wc-video",
+            "title": "Video-Specific Ordering",
+            "description": "Likes are applied to the eligible public TikTok video connected to the link you submit.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "tt-l-wc-packages",
+            "title": "Flexible Package Sizes",
+            "description": "Choose the number of likes based on the individual video and budget you're working with.",
+            "icon": "users"
+          },
+          {
+            "id": "tt-l-wc-password",
+            "title": "No TikTok Password",
+            "description": "NovaLikes does not require your account password, verification codes, or private login access.",
+            "icon": "lock"
+          },
+          {
+            "id": "tt-l-wc-pricing",
+            "title": "Clear Pricing",
+            "description": "Check the likes quantity and current price before completing checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "tt-l-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes order tracking afterward for available status updates.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "tt-l-wc-support",
+            "title": "Customer Support",
+            "description": "If you need help with an order, contact support with the relevant purchase information.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "get-tiktok-likes-without-login-canada",
+        "title": "Get TikTok Likes Without Giving Up Your Account Login",
+        "description": "NovaLikes does not need control of your TikTok account to process a Likes order.",
+        "cards": [
+          {
+            "id": "tt-l-can-need",
+            "title": "What You Need",
+            "description": "The exact public TikTok video link and your selected likes quantity.",
+            "icon": "users"
+          },
+          {
+            "id": "tt-l-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your TikTok password, verification codes, access to private messages or account login credentials.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before placing the order, open the submitted link yourself and confirm that it leads directly to the correct video. Your TikTok profile URL is not the same as an individual video link."
+      },
+      "doesBuyingHelp": {
+        "id": "what-real-tiktok-likes-mean-canada",
+        "title": "What Do Providers Mean by \"Real TikTok Likes\"?",
+        "description": "\"Real TikTok likes\" is a common search phrase, but providers may use terms such as \"real,\" \"active,\" \"organic,\" or \"high-quality\" differently. A buyer should look beyond the wording and ask what the service actually changes.",
+        "helpTitle": "What NovaLikes TikTok Likes Packages Do",
+        "helpItems": [
+          "Increase the visible like count on the eligible public TikTok video submitted with the order"
+        ],
+        "limitTitle": "They Should Not Be Confused With Guaranteed",
+        "limitItems": [
+          "Organic engagement",
+          "Additional video views",
+          "Followers or comments",
+          "For You Page reach, customers, sales or sponsorships"
+        ],
+        "closingNote": "No third-party engagement service should promise zero platform-policy risk. TikTok publicly prohibits fake and artificially increased engagement. Understand what metric you're purchasing and continue building genuine content alongside any visible engagement package."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-tiktok-likes-order-canada",
+        "title": "What Happens After You Place the Order?",
+        "description": "Once checkout is complete, your selected likes package and TikTok video link are connected to the purchase. The order is then processed for the video you submitted.",
+        "steps": [
+          {
+            "id": "tt-l-th-1",
+            "title": "Package and Video Are Connected",
+            "description": "Your likes quantity and TikTok video link are associated with the purchase."
+          },
+          {
+            "id": "tt-l-th-2",
+            "title": "Order Targets That Video",
+            "description": "The likes are processed for the video connected to your submitted link."
+          },
+          {
+            "id": "tt-l-th-3",
+            "title": "Keep the Video Public",
+            "description": "The selected video should remain publicly accessible where required."
+          },
+          {
+            "id": "tt-l-th-4",
+            "title": "Track and Contact Support If Needed",
+            "description": "Use tracking for updates. If something needs attention, contact NovaLikes support with your order information."
+          }
+        ],
+        "closingNote": "Do not delete the video or submit the wrong link while an active order depends on that content."
+      },
+      "serviceCompare": {
+        "id": "tiktok-likes-views-followers-canada",
+        "title": "TikTok Likes, Views or Followers: Choose by Goal",
+        "description": "These are separate services and should not be treated as interchangeable.",
+        "current": {
+          "title": "TikTok Likes",
+          "description": "Increase the visible like count on a specific eligible video",
+          "bestFor": "Video-level engagement",
+          "ctaLabel": "TikTok Likes"
+        },
+        "likes": {
+          "title": "TikTok Views",
+          "description": "Increase the displayed view count on an eligible TikTok video",
+          "bestFor": "Video view count",
+          "href": "/ca/buy-tiktok-views",
+          "ctaLabel": "TikTok Views"
+        },
+        "views": {
+          "title": "TikTok Followers",
+          "description": "Increase the follower count displayed on your public profile",
+          "bestFor": "Profile follower count",
+          "href": "/ca/buy-tiktok-followers",
+          "ctaLabel": "TikTok Followers"
+        },
+        "combinedNote": "Choose TikTok Likes when the like count on an individual video is your priority. Choose TikTok Views for visible video views, or TikTok Followers for profile-level follower count.",
+        "commentsHref": ""
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-tiktok-likes-canada",
+        "title": "Before You Buy TikTok Likes",
+        "description": "Review these details before checkout.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "tt-l-bb-video",
+            "title": "Confirm the Video",
+            "description": "Open the exact TikTok video you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "tt-l-bb-url",
+            "title": "Copy the Direct Link",
+            "description": "Submit the video URL rather than your general TikTok profile.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "tt-l-bb-quantity",
+            "title": "Check the Likes Quantity",
+            "description": "Review the package size before ordering.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "tt-l-bb-price",
+            "title": "Confirm the Current Price",
+            "description": "Make sure the selected quantity and price match your intention.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "tt-l-bb-available",
+            "title": "Keep the Video Accessible",
+            "description": "Don't remove or restrict the submitted content while the order is being processed.",
+            "icon": "lock"
+          },
+          {
+            "id": "tt-l-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require your TikTok login details.",
+            "icon": "headphones"
+          },
+          {
+            "id": "tt-l-bb-metric",
+            "title": "Know the Difference Between Likes and Views",
+            "description": "Choose the service based on the metric you actually want.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "tt-l-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the relevant purchase, service, and refund information before checkout.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "likes-tiktok-reach-different-signals-canada",
+        "title": "Likes and TikTok Reach Are Different Signals",
+        "description": "A visible like count and TikTok distribution should not be treated as the same thing. TikTok decides which videos to recommend using multiple signals and its own recommendation systems. Buying TikTok likes should therefore not be treated as a guaranteed way to reach the For You Page, make a video viral, increase organic views, generate followers, improve search visibility, produce sales or unlock monetization.",
+        "eyebrow": "Engagement vs Distribution",
+        "closingNote": "A Likes package changes the visible like metric on the selected video. Your organic distribution still depends on TikTok's systems and genuine user behaviour.",
+        "cards": [
+          {
+            "id": "tt-l-ww-fyp",
+            "title": "For You Page Reach",
+            "description": "FYP distribution is separate from visible like count.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "tt-l-ww-views",
+            "title": "Organic Video Views",
+            "description": "Likes and views are different TikTok metrics.",
+            "icon": "heart"
+          },
+          {
+            "id": "tt-l-ww-followers",
+            "title": "Profile Followers",
+            "description": "Followers apply to the account rather than one video.",
+            "icon": "users"
+          },
+          {
+            "id": "tt-l-ww-sales",
+            "title": "Business Results",
+            "description": "Purchased likes should not be treated as guaranteed sales or monetization.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "which-tiktok-videos-worth-supporting-likes-canada",
+        "title": "Which TikTok Videos Are Worth Supporting With More Likes?",
+        "description": "You don't need additional likes on everything you publish. A more focused strategy is to identify the videos that already have a reason to stand out. Start with the content. Then choose the package.",
+        "quantityColumnLabel": "Video Type",
+        "recommendedColumnLabel": "Why It May Fit",
+        "rows": [
+          {
+            "id": "tt-l-ps-demo",
+            "quantity": "Product Demonstrations",
+            "recommendedFor": "If one video clearly shows what your product does, it may be more valuable than a general promotional clip."
+          },
+          {
+            "id": "tt-l-ps-collab",
+            "quantity": "Creator Collaborations",
+            "recommendedFor": "Collaboration content can represent your work to potential new viewers, creators, or brands."
+          },
+          {
+            "id": "tt-l-ps-announcement",
+            "quantity": "Important Announcements",
+            "recommendedFor": "A business launch, new service, event, offer, or milestone can have more long-term value than an everyday post."
+          },
+          {
+            "id": "tt-l-ps-educational",
+            "quantity": "Educational Videos",
+            "recommendedFor": "Tutorials, explainers, and useful tips can continue representing your expertise after the original publishing date."
+          },
+          {
+            "id": "tt-l-ps-portfolio",
+            "quantity": "Portfolio Content",
+            "recommendedFor": "Creators and service businesses can focus on videos that best demonstrate what they do."
+          },
+          {
+            "id": "tt-l-ps-organic",
+            "quantity": "Videos Already Performing Well Organically",
+            "recommendedFor": "If a video is already receiving genuine interest, it may be more useful to support than content that does not connect with your audience at all."
+          }
+        ],
+        "bottomNote": "Compare likes package sizes and current prices in the pricing section above."
+      },
+      "bestPractices": {
+        "id": "affordable-tiktok-likes-canada",
+        "title": "Affordable TikTok Likes Without Choosing on Price Alone",
+        "description": "If you're comparing cheap TikTok likes in Canada, lower-cost packages may be useful when you only need a modest increase. But check more than the price. Before ordering, look at:",
+        "closingNote": "An affordable TikTok Likes package should be easy to understand before you complete checkout. NovaLikes gives you multiple quantities so you can choose based on the individual video and budget.",
+        "items": [
+          {
+            "id": "tt-l-bp-1",
+            "title": "Likes Included",
+            "description": "Check how many likes are included in the package.",
+            "icon": "users"
+          },
+          {
+            "id": "tt-l-bp-2",
+            "title": "Supported Content",
+            "description": "Confirm the service supports the video you want to use.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "tt-l-bp-3",
+            "title": "Video Link Requirements",
+            "description": "Know what public TikTok video URL you need to submit.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "tt-l-bp-4",
+            "title": "No Password Requirement",
+            "description": "Your TikTok password should not be requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "tt-l-bp-5",
+            "title": "Current Package Price",
+            "description": "Review pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "tt-l-bp-6",
+            "title": "Order Tracking",
+            "description": "Check whether order tracking is available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "tt-l-bp-7",
+            "title": "Support and Policies",
+            "description": "Review support options and relevant service policies.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-tiktok-likes-canada",
+        "title": "Common Mistakes When Buying TikTok Likes",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-tiktok-views": {
+            "title": "TikTok Views",
+            "description": "Choose Views when your goal is to increase the visible view count on an eligible TikTok video.",
+            "ctaLabel": "Buy TikTok Views"
+          },
+          "buy-tiktok-followers": {
+            "title": "TikTok Followers",
+            "description": "Choose Followers when you want to increase the follower count displayed on your public TikTok profile.",
+            "ctaLabel": "Buy TikTok Followers"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "make-strong-content-look-active-canada",
+      "title": "Put Visible Likes Behind TikToks With a Clear Purpose",
+      "description": "Not every TikTok on an account needs the same level of support. Canadian creators and businesses may have a few videos that carry more weight, such as a product demonstration, campaign launch, client result, event announcement, seasonal offer or creator collaboration. A Likes package can increase the visible like count on the selected public video, which can strengthen one engagement signal when people encounter it. The video still needs a strong opening, a clear message and a profile that supports what the content promises. Choose the TikTok that best represents the campaign instead of spreading likes across unrelated posts. This keeps the order tied to a specific content goal and makes the visible engagement feel more connected to the rest of the account.",
+      "items": [
+        {
+          "id": "tt-l-wb-product",
+          "title": "A New Product Release",
+          "description": "Support the video that best demonstrates or introduces the product."
+        },
+        {
+          "id": "tt-l-wb-local",
+          "title": "A Local Business Launch",
+          "description": "Use content that clearly explains what has opened, changed, or become available."
+        },
+        {
+          "id": "tt-l-wb-seasonal",
+          "title": "A Seasonal Campaign",
+          "description": "Choose the TikTok that carries the main campaign message."
+        },
+        {
+          "id": "tt-l-wb-partnership",
+          "title": "A Creator Partnership",
+          "description": "Focus on the collaboration content most likely to represent the partnership afterward."
+        },
+        {
+          "id": "tt-l-wb-ecommerce",
+          "title": "An Ecommerce Promotion",
+          "description": "Use a video that shows the product rather than simply announcing a discount."
+        }
+      ],
+      "bottomNote": "Use Likes selectively around videos that already represent the message, product or campaign you want people to notice."
+    },
+    "howToBuy": {
+      "id": "how-tiktok-likes-order-works-canada",
+      "title": "How Your TikTok Likes Order Works",
+      "description": "The process is centred around the specific video you choose.",
+      "steps": [
+        {
+          "id": "tt-l-step-1",
+          "title": "Select a Likes Package",
+          "description": "Compare the available quantities and current prices."
+        },
+        {
+          "id": "tt-l-step-2",
+          "title": "Copy the TikTok Video Link",
+          "description": "Open the exact public video where you want the likes applied and copy its direct URL."
+        },
+        {
+          "id": "tt-l-step-3",
+          "title": "Submit the Video",
+          "description": "Paste the link into the required order field."
+        },
+        {
+          "id": "tt-l-step-4",
+          "title": "Check Everything Before Payment",
+          "description": "Review the video link, likes quantity, and package price."
+        },
+        {
+          "id": "tt-l-step-5",
+          "title": "Complete and Track Your Order",
+          "description": "Finish checkout and use NovaLikes order tracking afterward for available status updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore More TikTok Services",
+    "relatedIntro": "Choose the TikTok service that matches the metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: How Can You Buy TikTok Likes in Canada?",
+      "text": "You can buy TikTok likes in Canada through NovaLikes by selecting an available likes package, submitting the exact public TikTok video link, and completing checkout online. Your TikTok password is not required. The likes apply to the selected video's like count and do not automatically add followers or views."
+    },
+    "storySections": [
+      {
+        "id": "built-for-canada",
+        "title": "Choose TikTok Likes Around the Canadian Videos You Actually Want to Support",
+        "lead": "TikTok Likes apply to individual videos, so the useful starting point is the content itself and why that particular video matters to the account.",
+        "paragraphs": [
+          "A Canadian creator may want more visible engagement around a collaboration, portfolio piece or video that represents their niche. An ecommerce business may focus on a product demonstration or launch. A local company may highlight completed work, a service, event or useful customer update. Agencies may manage several client accounts where each video has a different purpose.",
+          "Start with the video rather than choosing a Like quantity in isolation. Review what the content communicates, how it fits the wider profile and why it deserves more visible engagement."
+        ],
+        "footer": "Likes can support how active selected TikTok content appears. The video and account behind that number still need a clear purpose.",
+        "items": [
+          {
+            "title": "Canadian Creators",
+            "body": "Support videos that genuinely represent the creator's niche, expertise, work or current content direction."
+          },
+          {
+            "title": "Ecommerce Businesses",
+            "body": "Use Likes around genuine product demonstrations, launches and campaign videos connected to items customers can research or buy."
+          },
+          {
+            "title": "Local Businesses",
+            "body": "Support videos showing real services, projects, products, locations or customer-facing activity."
+          },
+          {
+            "title": "Agencies and Client Accounts",
+            "body": "Choose Like quantities according to the individual video and campaign instead of using one standard engagement target across every client."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Put visible engagement behind selected priority videos while genuine publishing, advertising and wider audience activity continue separately."
+          }
+        ]
+      },
+      {
+        "id": "ca-campaign-moments",
+        "title": "Put TikTok Likes Behind Canadian Campaign Videos With a Real Reason to Matter",
+        "lead": "Some videos become more important because of the launch, season, event or customer decision happening around them.",
+        "footer": "Likes can support campaign presentation. The creative, offer, timing, availability and customer experience still determine whether the campaign itself works.",
+        "items": [
+          {
+            "title": "Product and Collection Launches",
+            "body": "Support the video that demonstrates or introduces the genuine product most clearly."
+          },
+          {
+            "title": "Black Friday and Cyber Monday",
+            "body": "Canadian retail and ecommerce businesses may have priority TikTok videos around major November shopping periods."
+          },
+          {
+            "title": "Boxing Day Campaigns",
+            "body": "Retailers and ecommerce brands may prioritise selected product and promotional videos around Boxing Day and the wider holiday period."
+          },
+          {
+            "title": "Seasonal Canadian Campaigns",
+            "body": "Travel, hospitality, outdoor, fashion, fitness, home and other businesses may have TikTok content whose importance changes across Canadian seasons."
+          },
+          {
+            "title": "New Locations or Service Areas",
+            "body": "A business entering another city, province or local market can support the video that clearly explains what has changed."
+          },
+          {
+            "title": "Creator Partnerships",
+            "body": "Put Likes behind the collaboration video that genuinely represents the partnership rather than unrelated uploads."
+          }
+        ]
+      },
+      {
+        "id": "strong-content",
+        "title": "Use TikTok Likes to Support Strong Videos, Not to Replace Them",
+        "lead": "Like count is one visible engagement signal, but genuine viewers can immediately evaluate the video and account behind that number.",
+        "bullets": [
+          "the video itself",
+          "opening seconds",
+          "View count",
+          "Comments",
+          "Shares",
+          "creator or business profile",
+          "caption"
+        ],
+        "paragraphs": [
+          "A stronger visible Like count can make selected content appear more active, but it cannot make an unclear, irrelevant or weak video more useful.",
+          "Use Likes for the visible engagement metric they provide. Keep the subject, creative, message and usefulness of the content as separate parts of the strategy."
+        ],
+        "footer": "Likes can support presentation. The video itself determines what a genuine viewer finds behind that number."
+      },
+      {
+        "id": "content-engagement",
+        "title": "Give Genuine TikTok Viewers a Reason to Engage With the Video",
+        "lead": "Purchased Likes can change one visible number, but they cannot create the clarity, relevance or interest that makes real people choose to interact.",
+        "footer": "Use purchased Likes for the metric they provide. Let genuine viewer behaviour and TikTok analytics guide what the account creates next.",
+        "items": [
+          {
+            "title": "Make the Subject Clear Early",
+            "body": "Help viewers understand what the video is about before a long introduction gives them a reason to leave."
+          },
+          {
+            "title": "Bring the Useful Part Forward",
+            "body": "Show the result, product, demonstration, transformation or main idea early when that is what gives the video value."
+          },
+          {
+            "title": "Keep the Video Focused",
+            "body": "One clear idea can be easier to understand than several unrelated messages packed into the same short video."
+          },
+          {
+            "title": "Use Visuals That Support the Message",
+            "body": "Footage, framing and on-screen text should help communicate the idea instead of distracting from it."
+          },
+          {
+            "title": "Develop Strong Subjects Into Repeatable Formats",
+            "body": "When genuine viewers respond well to a topic or format, create related videos rather than depending only on one-off ideas."
+          },
+          {
+            "title": "Learn From Authentic Interaction",
+            "body": "Real Comments, Shares and audience questions can reveal what people genuinely find useful or interesting."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Use TikTok Likes Around Canadian Local Business Videos Customers Can Verify",
+        "paragraphs": [
+          "TikTok can help potential customers see what a local business actually does before they decide whether to research, contact or visit it.",
+          "Restaurants may show dishes, preparation or venues. Trades can document completed projects. Salons may present treatments or results. Retailers can demonstrate real products. Property businesses may show listings. Tourism and hospitality companies can present destinations and experiences. Professional services may explain useful topics or common customer questions.",
+          "If Likes are supporting this content, keep the video and profile consistent with the real business. Services, locations, contact information and public claims should match what customers can verify through the website, Google presence and other official channels."
+        ],
+        "footer": "Visible engagement can support presentation. Local trust comes from the Canadian business and genuine activity behind the video."
+      },
+      {
+        "id": "real-experience",
+        "title": "Build TikTok Engagement Around Work and Experience You Can Actually Show",
+        "lead": "Videos based on real projects, products and first-hand knowledge give genuine viewers more substance than generic marketing claims.",
+        "footer": "Likes can support visible engagement around this content. Genuine experience gives the video substance beyond the displayed number.",
+        "items": [
+          {
+            "title": "Show Work You Have Actually Completed",
+            "body": "Use real projects, transformations and portfolio examples the creator or business can accurately explain."
+          },
+          {
+            "title": "Demonstrate Products You Really Offer",
+            "body": "Show genuine products in useful context so interested customers can understand how they look, work or may be used."
+          },
+          {
+            "title": "Explain Processes From First-Hand Knowledge",
+            "body": "Turn professional or practical experience into video that helps people understand how something actually works."
+          },
+          {
+            "title": "Use Genuine Customer Questions",
+            "body": "Recurring enquiries about products, services or processes can reveal useful subjects for future TikTok videos."
+          },
+          {
+            "title": "Show Real Places and People",
+            "body": "Where appropriate, genuine teams, locations, venues and work environments can give business content more useful context."
+          },
+          {
+            "title": "Share an Original Perspective",
+            "body": "First-hand observations can make content more useful than repeating generic advice already common across similar accounts."
+          }
+        ]
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep TikTok Likes Separate From Genuine Customer Evidence",
+        "paragraphs": [
+          "A larger Like count can make a video appear more active, but it does not show whether genuine customers have bought from, hired, visited or recommended the business.",
+          "Canadian businesses may have stronger evidence through verified reviews, authentic testimonials, completed projects, case studies, genuine customer Comments, customer-created content and consistent public business information.",
+          "Use that evidence where it genuinely exists. Do not present purchased Likes as customer approval or invent customer experiences to make content appear more credible."
+        ],
+        "footer": "Likes can support video presentation. Genuine customer experience provides a different and more meaningful form of proof."
+      },
+      {
+        "id": "brand-partnerships",
+        "title": "Give Canadian Brands More to Evaluate Than a TikTok Like Count",
+        "paragraphs": [
+          "A creator may want stronger visible engagement when preparing selected videos for collaborations, but a Canadian brand or agency can evaluate much more than the Like number displayed on the content.",
+          "A professional partnership review may consider creator positioning, audience relevance, video quality, authentic engagement, genuine performance, consistency, previous collaborations, communication, professionalism and campaign fit.",
+          "If partnerships matter, publish content you would be comfortable showing to a potential partner and keep genuine analytics available when real audience performance needs to be demonstrated."
+        ],
+        "footer": "Treat Likes as one visible engagement metric rather than proof of genuine influence by themselves."
+      },
+      {
+        "id": "business-results",
+        "title": "Measure Business Results Separately From the TikTok Like Count",
+        "lead": "A stronger visible Like number may improve how active selected content appears, but commercial value depends on what genuine people actually do.",
+        "footer": "If TikTok supports a commercial objective, measure that real objective separately from purchased Likes.",
+        "items": [
+          {
+            "title": "Website Activity",
+            "body": "Are genuine viewers moving from TikTok to useful pages on the business website?"
+          },
+          {
+            "title": "Enquiries and Messages",
+            "body": "Are potential customers contacting the company after seeing its videos?"
+          },
+          {
+            "title": "Bookings or Visits",
+            "body": "For relevant businesses, does TikTok contribute to appointments, reservations or in-person activity?"
+          },
+          {
+            "title": "Product Interest and Sales",
+            "body": "Is genuine TikTok activity contributing to product research, purchases or other ecommerce behaviour?"
+          },
+          {
+            "title": "Brand Discovery",
+            "body": "Is the content helping real people understand what the company offers and why it may be relevant to them?"
+          }
+        ]
+      },
+      {
+        "id": "engagement-framework",
+        "title": "A Practical TikTok Content and Engagement Plan for Canadian Accounts",
+        "lead": "Likes can support selected videos, but a stronger TikTok strategy still depends on useful content and genuine audience behaviour.",
+        "footer": "Keep purchased Likes in perspective as one visible video metric. Longer-term value comes from the content, account and genuine audience behind it.",
+        "items": [
+          {
+            "title": "Build Around Clear Content Themes",
+            "body": "Develop subjects that naturally fit the creator niche, business or brand instead of publishing unrelated videos simply to stay active."
+          },
+          {
+            "title": "Choose Priority Videos Deliberately",
+            "body": "Identify content with a genuine campaign, customer or portfolio purpose instead of treating every upload as equally important."
+          },
+          {
+            "title": "Use First-Hand Experience",
+            "body": "Show real products, work, processes and knowledge the account can accurately explain."
+          },
+          {
+            "title": "Keep Testing Video Formats",
+            "body": "Experiment with openings, subjects, formats and presentation while reviewing authentic viewer response."
+          },
+          {
+            "title": "Use Genuine TikTok Analytics",
+            "body": "Let actual account performance show which videos and subjects deserve more attention."
+          },
+          {
+            "title": "Respond to Real People",
+            "body": "Authentic Comments and questions can improve both community management and future content ideas."
+          },
+          {
+            "title": "Connect TikTok With the Wider Canadian Customer Journey",
+            "body": "Businesses may use TikTok alongside their website, Google visibility, Instagram, ecommerce, paid media and email."
+          },
+          {
+            "title": "Measure Purchased Likes Separately",
+            "body": "Use Likes for the visible engagement number they provide while evaluating organic interaction and business outcomes independently."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -35,6 +35,7 @@ import { routes } from '@/config/routes';
 import { homepageHub, type HomepageHub } from '@/data/content/homepage-hub';
 import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
 import { getHomepageReviews } from '@/lib/reviews';
+import { homepageSectionPadding } from '@/lib/market/homepage-design';
 import { cn } from '@/lib/utils';
 
 const CARD =
@@ -53,8 +54,6 @@ const CHECK_TONES = [
   { wrap: 'bg-[#DBEAFE]', icon: 'text-[#2563EB]' },
   { wrap: 'bg-[#DCFCE7]', icon: 'text-[#16A34A]' },
 ] as const;
-
-const AVATAR_TONES = ['bg-[#F97316]', 'bg-[#EC4899]', 'bg-[#8B5CF6]', 'bg-[#1877F2]', 'bg-[#0F766E]', 'bg-[#C2410C]'];
 
 function SectionBadge({
   icon: Icon,
@@ -115,6 +114,8 @@ function HeadingBlock({
   accent = 'brand',
   tailCount = 2,
   badgeClass,
+  enhanced = false,
+  center = false,
 }: {
   id: string;
   badge: string;
@@ -124,13 +125,22 @@ function HeadingBlock({
   accent?: 'brand' | 'tail' | 'none';
   tailCount?: number;
   badgeClass?: string;
+  enhanced?: boolean;
+  center?: boolean;
 }) {
   return (
-    <FadeUp className="max-w-2xl">
-      <SectionBadge icon={BadgeIcon} label={badge} className={badgeClass} />
+    <FadeUp className={cn(center ? 'w-full text-center' : 'max-w-2xl')}>
+      <SectionBadge
+        icon={BadgeIcon}
+        label={badge}
+        className={cn(badgeClass, center && 'mx-auto')}
+      />
       <h2
         id={id}
-        className="mt-4 text-balance text-[2rem] font-bold leading-[1.15] tracking-tight text-[#1C1917] sm:text-[2.35rem]"
+        className={cn(
+          'text-balance text-[2rem] font-bold leading-[1.15] tracking-tight text-[#1C1917] sm:text-[2.35rem]',
+          enhanced ? 'mt-5' : 'mt-4',
+        )}
       >
         {accent === 'brand' ? (
           <AccentBrand title={title} />
@@ -140,14 +150,28 @@ function HeadingBlock({
           title
         )}
       </h2>
-      <p className="mt-3 max-w-[38rem] text-pretty text-[15px] leading-relaxed text-[#6B6560]">
+      <p
+        className={cn(
+          'text-pretty text-[15px] leading-relaxed text-[#6B6560]',
+          enhanced ? 'mt-5' : 'mt-3',
+          center ? 'w-full' : 'max-w-[38rem]',
+        )}
+      >
         {description}
       </p>
     </FadeUp>
   );
 }
 
-function WhyNovaLikes({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function WhyNovaLikes({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.why;
   const icons: LucideIcon[] = [Package, Lock, Search, Headphones];
 
@@ -155,7 +179,10 @@ function WhyNovaLikes({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <span
@@ -173,8 +200,10 @@ function WhyNovaLikes({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
           BadgeIcon={ShieldCheck}
           title={section.title}
           description={section.description}
+          enhanced={enhanced}
+          center={enhanced}
         />
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <div className={cn('grid gap-4 md:grid-cols-2', enhanced ? 'mt-6 gap-5' : 'mt-8', section.points.length > 4 && 'lg:grid-cols-3')}>
           {section.points.map((point, index) => {
             const Icon = icons[index] ?? ShieldCheck;
             return (
@@ -197,16 +226,36 @@ function WhyNovaLikes({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
   );
 }
 
-function HowItWorks({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function HowItWorks({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.howItWorks;
-  const flowIcons: LucideIcon[] = [ShoppingCart, Box, User, Check];
-  const cardIcons: LucideIcon[] = [MousePointer2, Package, User, Check];
+  const steps = [...section.steps];
+  const flowIcons: LucideIcon[] = [ShoppingCart, Box, User, Check, Package, MousePointer2];
+  const cardIcons: LucideIcon[] = [MousePointer2, Package, User, Check, ShoppingCart, Box];
+  const stepCount = steps.length;
+  const showFlowStrip = stepCount > 0 && stepCount <= 4;
+  const stepGridClass =
+    stepCount <= 4
+      ? 'sm:grid-cols-2 xl:grid-cols-4'
+      : stepCount === 5
+        ? 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'
+        : 'sm:grid-cols-2 lg:grid-cols-3';
 
   return (
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <Container size="xl">
@@ -216,37 +265,44 @@ function HowItWorks({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
           BadgeIcon={Settings}
           title={section.title}
           description={section.description}
+          enhanced={enhanced}
+          center={enhanced}
         />
 
-        <div className="relative mx-auto mt-10 hidden max-w-4xl lg:block" aria-hidden="true">
-          <svg viewBox="0 0 800 70" className="absolute inset-x-8 top-5 h-10 w-[calc(100%-4rem)]">
-            <path
-              d="M20 28 C 140 8, 260 48, 400 28 S 660 8, 780 28"
-              fill="none"
-              stroke="#E8B48A"
-              strokeWidth="2"
-              strokeDasharray="6 8"
-            />
-          </svg>
-          <div className="relative flex items-start justify-between px-2">
-            {flowIcons.map((Icon, index) => (
-              <span
-                key={section.steps[index]?.title ?? index}
-                className={cn(
-                  'inline-flex size-12 items-center justify-center rounded-full text-white shadow-md',
-                  STEP_TONES[index].dot,
-                )}
-              >
-                <Icon className="size-5" />
-              </span>
-            ))}
+        {showFlowStrip ? (
+          <div className={cn('relative mx-auto hidden max-w-4xl lg:block', enhanced ? 'mt-8' : 'mt-10')} aria-hidden="true">
+            <svg viewBox="0 0 800 70" className="absolute inset-x-8 top-5 h-10 w-[calc(100%-4rem)]">
+              <path
+                d="M20 28 C 140 8, 260 48, 400 28 S 660 8, 780 28"
+                fill="none"
+                stroke="#E8B48A"
+                strokeWidth="2"
+                strokeDasharray="6 8"
+              />
+            </svg>
+            <div className="relative flex items-start justify-between px-2">
+              {steps.map((step, index) => {
+                const Icon = flowIcons[index % flowIcons.length] ?? Check;
+                return (
+                  <span
+                    key={step.title}
+                    className={cn(
+                      'inline-flex size-12 items-center justify-center rounded-full text-white shadow-md',
+                      STEP_TONES[index % STEP_TONES.length].dot,
+                    )}
+                  >
+                    <Icon className="size-5" />
+                  </span>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        ) : null}
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {section.steps.map((step, index) => {
-            const tone = STEP_TONES[index];
-            const Icon = cardIcons[index] ?? Check;
+        <div className={cn('grid gap-4', stepGridClass, enhanced ? 'mt-6 gap-5' : 'mt-8')}>
+          {steps.map((step, index) => {
+            const tone = STEP_TONES[index % STEP_TONES.length];
+            const Icon = cardIcons[index % cardIcons.length] ?? Check;
             return (
               <FadeUp key={step.title} delay={index * 0.04}>
                 <div className={cn(CARD, 'relative flex h-full flex-col p-5')}>
@@ -279,7 +335,15 @@ function HowItWorks({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
   );
 }
 
-function Guarantees({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function Guarantees({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.guarantees;
   const icons: LucideIcon[] = [Lock, ShieldCheck, FileText, Headphones];
 
@@ -287,11 +351,14 @@ function Guarantees({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <Container size="xl">
-        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_14rem]">
+        {enhanced ? (
           <HeadingBlock
             id={`${section.id}-heading`}
             badge={labels.beforeYouOrder}
@@ -300,18 +367,33 @@ function Guarantees({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
             description={section.description}
             accent="tail"
             tailCount={3}
+            enhanced={enhanced}
+            center
           />
-          <div className="relative mx-auto hidden h-36 w-40 lg:block" aria-hidden="true">
-            <span className="absolute right-2 top-2 size-24 rounded-full bg-[#FFE4D1]" />
-            <ShieldCheck className="absolute right-6 top-6 size-16 text-[#E85D04]" />
-            <span className={cn(CARD, 'absolute left-0 top-10 w-28 p-3')}>
-              <span className="block h-1.5 w-16 rounded bg-[#FDBA74]" />
-              <span className="mt-2 block h-1.5 w-12 rounded bg-[#FED7AA]" />
-              <span className="mt-2 block h-1.5 w-14 rounded bg-[#FDBA74]" />
-            </span>
+        ) : (
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_14rem]">
+            <HeadingBlock
+              id={`${section.id}-heading`}
+              badge={labels.beforeYouOrder}
+              BadgeIcon={Lightbulb}
+              title={section.title}
+              description={section.description}
+              accent="tail"
+              tailCount={3}
+              enhanced={enhanced}
+            />
+            <div className="relative mx-auto hidden h-36 w-40 lg:block" aria-hidden="true">
+              <span className="absolute right-2 top-2 size-24 rounded-full bg-[#FFE4D1]" />
+              <ShieldCheck className="absolute right-6 top-6 size-16 text-[#E85D04]" />
+              <span className={cn(CARD, 'absolute left-0 top-10 w-28 p-3')}>
+                <span className="block h-1.5 w-16 rounded bg-[#FDBA74]" />
+                <span className="mt-2 block h-1.5 w-12 rounded bg-[#FED7AA]" />
+                <span className="mt-2 block h-1.5 w-14 rounded bg-[#FDBA74]" />
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        )}
+        <div className={cn('grid gap-4 md:grid-cols-2', enhanced ? 'mt-6 gap-5' : 'mt-8')}>
           {section.items.map((item, index) => {
             const Icon = icons[index] ?? ShieldCheck;
             return (
@@ -329,7 +411,7 @@ function Guarantees({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
             );
           })}
         </div>
-        <FadeUp className="mt-6">
+        <FadeUp className={enhanced ? 'mt-5' : 'mt-6'}>
           <Link
             href={routes.refundPolicy}
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#E85D04] underline-offset-4 hover:underline"
@@ -344,7 +426,15 @@ function Guarantees({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
   );
 }
 
-function BeforeYouBuy({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function BeforeYouBuy({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.beforeYouBuy;
   const icons: LucideIcon[] = [Target, User, Link2, ListChecks];
 
@@ -352,11 +442,14 @@ function BeforeYouBuy({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <Container size="xl">
-        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_14rem]">
+        {enhanced ? (
           <HeadingBlock
             id={`${section.id}-heading`}
             badge={labels.quickCheck}
@@ -365,19 +458,34 @@ function BeforeYouBuy({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
             description={section.description}
             accent="none"
             badgeClass="bg-[#EDE9FE] text-[#6D28D9]"
+            enhanced={enhanced}
+            center
           />
-          <div className="relative mx-auto hidden h-36 w-40 lg:block" aria-hidden="true">
-            <Search className="absolute right-2 top-4 size-20 text-[#8B5CF6]/70" />
-            <span className={cn(CARD, 'absolute left-0 top-12 w-28 p-3')}>
-              <span className="block h-1.5 w-16 rounded bg-[#C4B5FD]" />
-              <span className="mt-2 block h-1.5 w-12 rounded bg-[#DDD6FE]" />
-            </span>
+        ) : (
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_14rem]">
+            <HeadingBlock
+              id={`${section.id}-heading`}
+              badge={labels.quickCheck}
+              BadgeIcon={ShieldCheck}
+              title={section.title}
+              description={section.description}
+              accent="none"
+              badgeClass="bg-[#EDE9FE] text-[#6D28D9]"
+              enhanced={enhanced}
+            />
+            <div className="relative mx-auto hidden h-36 w-40 lg:block" aria-hidden="true">
+              <Search className="absolute right-2 top-4 size-20 text-[#8B5CF6]/70" />
+              <span className={cn(CARD, 'absolute left-0 top-12 w-28 p-3')}>
+                <span className="block h-1.5 w-16 rounded bg-[#C4B5FD]" />
+                <span className="mt-2 block h-1.5 w-12 rounded bg-[#DDD6FE]" />
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        )}
+        <div className={cn('grid gap-4 md:grid-cols-2', enhanced ? 'mt-6 gap-5' : 'mt-8')}>
           {section.items.map((item, index) => {
-            const Icon = icons[index] ?? Check;
-            const tone = CHECK_TONES[index];
+            const Icon = icons[index % icons.length] ?? Check;
+            const tone = CHECK_TONES[index % CHECK_TONES.length];
             return (
               <FadeUp key={item.question} delay={index * 0.04}>
                 <div className={cn(CARD, 'flex h-full gap-4 p-5')}>
@@ -398,7 +506,7 @@ function BeforeYouBuy({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
             );
           })}
         </div>
-        <FadeUp className="mt-8">
+        <FadeUp className={enhanced ? 'mt-6' : 'mt-8'}>
           <div className="flex items-center justify-between gap-4 rounded-full bg-[#FFF1E6] px-5 py-3.5">
             <p className="flex items-center gap-2.5 text-sm font-medium text-[#3F3A36]">
               <Lightbulb className="size-5 shrink-0 text-[#E85D04]" aria-hidden="true" />
@@ -416,16 +524,27 @@ function BeforeYouBuy({ hub, labels }: { hub: HomepageHub; labels: UiDictionary[
   );
 }
 
-function HubReviews({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function HubReviews({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.reviews;
-  const reviews = getHomepageReviews(6);
+  const reviews = getHomepageReviews();
   if (!reviews.length) return null;
 
   return (
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <Container size="xl">
@@ -436,6 +555,7 @@ function HubReviews({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
             BadgeIcon={Star}
             title={section.title}
             description={section.description}
+            enhanced={enhanced}
           />
           <FadeUp>
             <Link
@@ -448,39 +568,17 @@ function HubReviews({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
           </FadeUp>
         </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {reviews.map((review, index) => (
-            <FadeUp key={review.id} delay={index * 0.04}>
-              <article className={cn(CARD, 'relative flex h-full flex-col p-5')}>
-                <div className="flex items-start justify-between gap-3">
-                  <p className="flex text-[#F97316]" aria-label={`${review.rating} out of 5`}>
-                    {Array.from({ length: 5 }).map((_, star) => (
-                      <Star
-                        key={star}
-                        className={cn(
-                          'size-4',
-                          star < Math.round(review.rating) ? 'fill-current' : 'text-[#FED7AA]',
-                        )}
-                      />
-                    ))}
-                  </p>
-                  <span className="text-3xl font-serif leading-none text-[#FED7AA]" aria-hidden="true">
-                    ”
-                  </span>
-                </div>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-[#3F3A36]">
-                  “{review.reviewText}”
-                </p>
-                <div className="mt-4 flex items-center gap-3">
+        <div className={cn('grid items-start gap-5 md:grid-cols-3', enhanced ? 'mt-6' : 'mt-8')}>
+          {reviews.map((review) => (
+            <FadeUp key={review.id}>
+              <article className={cn(CARD, 'p-5')}>
+                <div className="flex items-center gap-3">
                   <span
-                    className={cn(
-                      'inline-flex size-9 items-center justify-center rounded-full text-xs font-bold text-white',
-                      AVATAR_TONES[index % AVATAR_TONES.length],
-                    )}
+                    className="inline-flex size-9 items-center justify-center rounded-full bg-[#FFF4ED] text-[11px] font-semibold tracking-wide text-[#9A3412]"
                   >
-                    {review.customerInitials.slice(0, 1)}
+                    {review.customerInitials}
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm font-semibold text-[#1C1917]">{review.customerName}</p>
                     {review.verifiedPurchase ? (
                       <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-medium text-[#15803D]">
@@ -490,6 +588,20 @@ function HubReviews({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
                     ) : null}
                   </div>
                 </div>
+                <p className="mt-4 text-sm leading-relaxed text-[#3F3A36]">{review.reviewText}</p>
+                {typeof review.rating === 'number' ? (
+                  <p className="mt-4 flex text-[#E85D04]" aria-label={`${review.rating} out of 5`}>
+                    {Array.from({ length: 5 }).map((_, star) => (
+                      <Star
+                        key={star}
+                        className={cn(
+                          'size-4',
+                          star < review.rating ? 'fill-current' : 'text-[#FED7AA]',
+                        )}
+                      />
+                    ))}
+                  </p>
+                ) : null}
               </article>
             </FadeUp>
           ))}
@@ -508,7 +620,15 @@ function HubReviews({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['h
   );
 }
 
-function HubFaq({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homepage'] }) {
+function HubFaq({
+  hub,
+  labels,
+  enhanced,
+}: {
+  hub: HomepageHub;
+  labels: UiDictionary['homepage'];
+  enhanced?: boolean;
+}) {
   const section = hub.faq;
   const icons: LucideIcon[] = [MessageCircle, Lock, Box, Info, Eye, Headphones];
 
@@ -516,7 +636,10 @@ function HubFaq({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homep
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden py-12 md:py-16"
+      className={cn(
+        'relative overflow-hidden',
+        enhanced ? homepageSectionPadding(hub.market) : 'py-12 md:py-16',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
       <HelpCircle
@@ -532,8 +655,10 @@ function HubFaq({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homep
           description={section.description}
           accent="tail"
           tailCount={2}
+          enhanced={enhanced}
+          center={enhanced}
         />
-        <div className="mx-auto mt-8 w-full max-w-3xl space-y-3">
+        <div className={cn('mx-auto w-full max-w-3xl space-y-3', enhanced ? 'mt-6' : 'mt-8')}>
           {section.items.map((item, index) => {
             const Icon = icons[index] ?? HelpCircle;
             return (
@@ -576,18 +701,20 @@ function HubFaq({ hub, labels }: { hub: HomepageHub; labels: UiDictionary['homep
 export function HomepageLowerSections({
   hub = homepageHub,
   labels = ENGLISH_UI.homepage as UiDictionary['homepage'],
+  enhanced = false,
 }: {
   hub?: HomepageHub;
   labels?: UiDictionary['homepage'];
+  enhanced?: boolean;
 }) {
   return (
     <>
-      <WhyNovaLikes hub={hub} labels={labels} />
-      <HowItWorks hub={hub} labels={labels} />
-      <Guarantees hub={hub} labels={labels} />
-      <BeforeYouBuy hub={hub} labels={labels} />
-      <HubReviews hub={hub} labels={labels} />
-      <HubFaq hub={hub} labels={labels} />
+      <WhyNovaLikes hub={hub} labels={labels} enhanced={enhanced} />
+      <HowItWorks hub={hub} labels={labels} enhanced={enhanced} />
+      <Guarantees hub={hub} labels={labels} enhanced={enhanced} />
+      <BeforeYouBuy hub={hub} labels={labels} enhanced={enhanced} />
+      {hub.hideReviews ? null : <HubReviews hub={hub} labels={labels} enhanced={enhanced} />}
+      <HubFaq hub={hub} labels={labels} enhanced={enhanced} />
     </>
   );
 }

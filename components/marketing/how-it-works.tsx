@@ -56,11 +56,15 @@ export function HowItWorks({
 
   const progress = steps.length > 1 ? (active / (steps.length - 1)) * 100 : 0;
   const colClass =
-    steps.length >= 5
-      ? 'lg:grid-cols-5'
-      : steps.length === 3
+    steps.length >= 7
+      ? 'lg:grid-cols-3 xl:grid-cols-4'
+      : steps.length >= 6
         ? 'lg:grid-cols-3'
-        : 'lg:grid-cols-4';
+        : steps.length >= 5
+          ? 'lg:grid-cols-5'
+          : steps.length === 3
+            ? 'lg:grid-cols-3'
+            : 'lg:grid-cols-4';
   const progressGradient =
     progressAccent === 'youtube'
       ? 'bg-[linear-gradient(90deg,#FF0000_0%,#F97316_70%,#ea580c_100%)]'

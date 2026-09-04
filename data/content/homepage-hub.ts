@@ -5,6 +5,7 @@
  */
 
 import type { PlatformId } from '@/types/platform';
+import type { Market } from '@/lib/market/config';
 
 export type HubCta = { label: string; href: string };
 
@@ -673,4 +674,33 @@ export const homepageHub = {
   ] as const satisfies readonly HubServiceMini[],
 } as const;
 
-export type HomepageHub = typeof homepageHub;
+export type HubStorySection = {
+  id: string;
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  items?: { title: string; body: string }[];
+  footer?: string;
+};
+
+export type HomepageHub = typeof homepageHub & {
+  crossPlatform?: {
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    platforms: Array<{
+      id: 'tiktok' | 'facebook';
+      title: string;
+      description: string;
+      cta: HubCta;
+    }>;
+  };
+  hideReviews?: boolean;
+  instagramOnly?: boolean;
+  storySections?: HubStorySection[];
+  /** Set at load time for market-specific homepage design (not from content JSON). */
+  market?: Market;
+};

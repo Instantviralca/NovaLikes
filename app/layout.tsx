@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import { Alexandria } from 'next/font/google';
 import { GeistSans } from 'geist/font/sans';
 
 import { AnalyticsProvider } from '@/components/analytics';
@@ -11,10 +12,17 @@ import { CartUiProvider } from '@/lib/cart/cart-ui-context';
 import { loadUi } from '@/lib/i18n/content/load';
 import { HTML_LANG, LOCALE_DIR } from '@/lib/i18n/config';
 import { getRequestLocale } from '@/lib/i18n/request-locale';
+import { getRequestMarket } from '@/lib/market/request-market';
 import { cn } from '@/lib/utils';
 import { seoSiteConfig } from '@/config/seo';
 import { titles } from '@/seo/titles';
 import '@/styles/globals.css';
+
+const alexandria = Alexandria({
+  subsets: ['arabic', 'latin'],
+  variable: '--font-alexandria',
+  display: 'swap',
+});
 
 /**
  * Root metadata — Document 14.07.
@@ -35,12 +43,22 @@ type RootLayoutProps = {
 
 /** Root layout — public chrome lives in route-group layouts so /admin stays clean. */
 export default async function RootLayout({ children }: RootLayoutProps) {
-  const locale = await getRequestLocale();
+  const [locale, market] = await Promise.all([getRequestLocale(), getRequestMarket()]);
   const ui = loadUi(locale);
+  const isArabic = locale === 'ar';
   return (
-    <html lang={HTML_LANG[locale]} dir={LOCALE_DIR[locale]} className={cn(GeistSans.variable)}>
-      <body className={cn(GeistSans.className, 'antialiased')}>
-        <I18nChromeProvider locale={locale} ui={ui}>
+    <html
+      lang={HTML_LANG[locale]}
+      dir={LOCALE_DIR[locale]}
+      className={cn(GeistSans.variable, isArabic && alexandria.variable)}
+    >
+      <body
+        className={cn(
+          isArabic ? alexandria.className : GeistSans.className,
+          'antialiased',
+        )}
+      >
+        <I18nChromeProvider locale={locale} market={market} ui={ui}>
           <AnalyticsProvider>
             <CartProvider>
               <CartUiProvider>

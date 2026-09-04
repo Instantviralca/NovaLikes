@@ -1,0 +1,922 @@
+{
+  "content": {
+    "slug": "buy-facebook-followers",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Followers Canada | Grow Your Page | NovaLikes",
+      "description": "Buy Facebook followers in Canada for public Pages. Compare flexible follower packages, order without sharing your password, and track your purchase online."
+    },
+    "hero": {
+      "eyebrow": "FACEBOOK SERVICES FOR CANADA",
+      "title": "Buy Facebook Followers in Canada and Build a Stronger Page Presence",
+      "description": "Give your Facebook Page a stronger visible audience with follower packages built for businesses, brands, creators, and public Pages in Canada. NovaLikes lets you choose the number of Facebook followers that fits your Page, submit the correct public Facebook Page URL, and complete your order without sharing your Facebook password. Whether you're building a new business Page, preparing for a campaign, supporting an established brand, or strengthening your overall Facebook presence, you can choose a package that matches the Page you're working with.",
+      "purpose": "Convert for Facebook follower packages in Canada",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "Buy Facebook Followers in Canada",
+        "Buy Followers On Facebook",
+        "Buying Facebook Followers",
+        "Facebook Followers Buy",
+        "Buy Facebook Page Followers",
+        "Buy Facebook Business Page Followers"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose Your Facebook Followers Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-f-trust-url",
+          "label": "Public Facebook Page URL Only"
+        },
+        {
+          "id": "fb-f-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-f-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "fb-f-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp",
+        "alt": "Facebook Business Page followers and Meta Business Suite dashboard illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose a Facebook Followers Package That Fits Your Page",
+      "description": "Not every Facebook Page needs the same follower increase. NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K followers. A newer local business Page may prefer a smaller package, while an established brand or active Page may want a larger increase. Before choosing, look at your current follower count, how established the Page is, what you're preparing for and the increase you actually want. Choose a quantity that makes sense for your current Page instead of automatically selecting the largest option.",
+      "purpose": "Present real NovaLikes.com Facebook followers packages",
+      "primaryKeyword": "Facebook follower packages",
+      "suggestedWordCount": 40,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Facebook Followers Packages",
+      "emptyMessage": "Facebook Followers packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-followers",
+      "title": "Build a Stronger First Impression Around Your Facebook Page",
+      "description": "Choose Facebook Followers when the visible audience size of a public Facebook Page is the metric you want to strengthen. The service increases the follower count displayed on that eligible Page, while Page Likes, Post Likes, organic reach, genuine engagement, customer enquiries and sales remain separate outcomes.",
+      "purpose": "Explain informed use of Facebook followers packages",
+      "primaryKeyword": "buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "Facebook followers buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-f-community",
+          "title": "Build Community",
+          "description": "A larger follower base can make your Facebook page look more established while encouraging new visitors to explore your content, products or services."
+        },
+        {
+          "id": "fb-f-first-impression",
+          "title": "Stronger First Impression",
+          "description": "When people discover a Facebook page, one of the first things they notice is the size of its audience. A healthy follower count can help build confidence in your brand."
+        },
+        {
+          "id": "fb-f-business-pages",
+          "title": "Support Business Pages",
+          "description": "Businesses often use follower packages alongside regular posting, advertising and customer engagement to strengthen their online presence."
+        },
+        {
+          "id": "fb-f-flexible",
+          "title": "Flexible Package Sizes",
+          "description": "Choose a package that matches your existing page size and current marketing goals instead of selecting more followers than your page naturally supports."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-followers",
+      "title": "Why Choose NovaLikes for Facebook Followers?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on lean authority layout — trust lives in hero and Can You Buy",
+      "primaryKeyword": "buy Facebook followers",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-followers-delivery",
+      "title": "Features",
+      "description": "Service details are covered in the sections above.",
+      "purpose": "Explain Facebook followers delivery stages",
+      "primaryKeyword": "Facebook followers delivery",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-del-review",
+          "title": "Order Review",
+          "description": "Your page URL and selected package are verified."
+        },
+        {
+          "id": "fb-f-del-begins",
+          "title": "Delivery Begins",
+          "description": "Followers begin according to the delivery estimate."
+        },
+        {
+          "id": "fb-f-del-progress",
+          "title": "Followers Increasing",
+          "description": "Review your order status through the tracking page."
+        },
+        {
+          "id": "fb-f-del-complete",
+          "title": "Order Complete",
+          "description": "The selected follower package has been delivered."
+        }
+      ]
+    },
+    "howItWorks": {
+      "id": "how-facebook-followers-order-works-canada",
+      "title": "How Your Facebook Followers Order Works",
+      "description": "The process centres around the public Page you want to use.",
+      "purpose": "Explain the five-step ordering process",
+      "primaryKeyword": "how to buy Facebook followers",
+      "supportingKeywords": [
+        "buy followers on Facebook",
+        "buying Facebook followers",
+        "can you buy followers on Facebook"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-f-step-1",
+          "title": "Choose Your Package",
+          "description": "Compare the available follower quantities and current prices."
+        },
+        {
+          "id": "fb-f-step-2",
+          "title": "Copy the Facebook Page URL",
+          "description": "Open the exact public Page where you want the followers added."
+        },
+        {
+          "id": "fb-f-step-3",
+          "title": "Submit the Page Details",
+          "description": "Enter the public Page URL requested during checkout."
+        },
+        {
+          "id": "fb-f-step-4",
+          "title": "Review the Order",
+          "description": "Check the Page, follower quantity, and current price before paying."
+        },
+        {
+          "id": "fb-f-step-5",
+          "title": "Complete Checkout",
+          "description": "Place your order without providing your Facebook password."
+        }
+      ],
+      "cta": {
+        "label": "Select Your Followers Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook followers packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-f-req-url",
+          "title": "Public Facebook Page URL",
+          "description": "Provide the public URL of the Facebook page that should receive the selected follower package."
+        },
+        {
+          "id": "fb-f-req-package",
+          "title": "Selected Package",
+          "description": "Choose the follower quantity that best fits your page and current marketing objectives."
+        },
+        {
+          "id": "fb-f-req-public",
+          "title": "Public Page Access",
+          "description": "The selected Facebook page should remain publicly accessible while your order is being processed."
+        },
+        {
+          "id": "fb-f-req-email",
+          "title": "Email Address",
+          "description": "Use a valid email address so you can receive order confirmations, updates and customer support if needed."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-followers-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Canada service page.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-followers-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook followers",
+      "faqIds": [
+        "ca-fb-f-where-buy",
+        "ca-fb-f-more-followers",
+        "ca-fb-f-cheap",
+        "ca-fb-f-real",
+        "ca-fb-f-how-many",
+        "ca-fb-f-password",
+        "ca-fb-f-page-info",
+        "ca-fb-f-cost",
+        "ca-fb-f-delivery-time",
+        "ca-fb-f-vs-page-likes",
+        "ca-fb-f-page-likes-auto",
+        "ca-fb-f-reach",
+        "ca-fb-f-post-likes",
+        "ca-fb-f-business",
+        "ca-fb-f-local",
+        "ca-fb-f-client",
+        "ca-fb-f-wrong-url",
+        "ca-fb-f-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-followers",
+      "title": "Explore More Facebook Services",
+      "description": "Choose the Facebook service that matches the metric you want to change.",
+      "purpose": "Internal links to sibling Facebook offers (no skipped services)",
+      "serviceSlugs": [
+        "buy-facebook-page-likes",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-followers-final-cta",
+      "title": "Build a Facebook Page That Looks Active Beyond the Follower Number",
+      "description": "Choose a follower package that fits your Page, submit the correct public Facebook Page URL, and place your order without sharing your login details. Then keep building the things that make a Page worth following: accurate information, useful content, genuine customer communication, and consistent activity.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your Facebook Followers Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-facebook-followers-canada",
+        "title": "Why Choose NovaLikes for Facebook Followers?",
+        "description": "Buying Facebook followers should be simple enough to understand before checkout.",
+        "items": [
+          {
+            "id": "fb-f-wc-url",
+            "title": "Public Page URL Only",
+            "description": "Provide the exact public Facebook Page URL where you want the followers added.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-f-wc-password",
+            "title": "No Facebook Password Required",
+            "description": "NovaLikes does not need your Facebook password, verification codes, or private login credentials.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-f-wc-packages",
+            "title": "Multiple Follower Quantities",
+            "description": "Choose a smaller or larger package depending on the Page you're working with.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-f-wc-pricing",
+            "title": "Clear Pricing",
+            "description": "Review the package quantity and current price before completing your purchase.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-f-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes order tracking afterward for available status updates.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-f-wc-support",
+            "title": "Customer Support",
+            "description": "If you need help with an existing purchase, provide the relevant order information so support can review it.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "grow-facebook-page-without-login-canada",
+        "title": "Grow Your Page Without Sharing Facebook Login Details",
+        "description": "NovaLikes does not require access to your Facebook account.",
+        "cards": [
+          {
+            "id": "fb-f-can-need",
+            "title": "What You Need",
+            "description": "The correct public Facebook Page URL and your selected follower package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-f-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Facebook password, verification codes, private messages, Page admin login or Business Manager login.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before checkout, open the Page URL yourself and confirm that it leads to the exact Page receiving the order. Do not submit an individual Facebook post URL when ordering Page followers."
+      },
+      "doesBuyingHelp": {
+        "id": "what-real-facebook-followers-mean-canada",
+        "title": "Looking for \"Real Facebook Followers\"? Check What the Service Actually Promises",
+        "description": "\"Real Facebook followers\" is a common search phrase, but words such as \"real,\" \"active,\" \"organic,\" or \"high quality\" may be used differently by different providers. Instead of relying only on a label, ask what metric will change, which Page will receive the followers, how many are included and what information is required.",
+        "helpTitle": "What NovaLikes Facebook Followers Packages Do",
+        "helpItems": [
+          "Increase the follower count displayed on the eligible public Facebook Page submitted with the order"
+        ],
+        "limitTitle": "A Follower Package Does Not Automatically Guarantee",
+        "limitItems": [
+          "Page Likes or Post Likes",
+          "Genuine engagement or organic reach",
+          "Reviews, messages, leads, customers or sales"
+        ],
+        "closingNote": "Knowing exactly what the service does makes it easier to compare options responsibly. Purchased followers cannot answer genuine customer questions — keep customer communication accurate and timely."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-facebook-followers-order-canada",
+        "title": "What Happens After You Order?",
+        "description": "Once checkout is complete, the follower package and submitted Facebook Page URL are associated with your order. The service is then processed for the intended Page.",
+        "steps": [
+          {
+            "id": "fb-f-th-1",
+            "title": "Package and Page Are Connected",
+            "description": "The follower package and submitted Facebook Page URL are associated with your order."
+          },
+          {
+            "id": "fb-f-th-2",
+            "title": "Order Targets That Page",
+            "description": "The service is processed for the intended Page."
+          },
+          {
+            "id": "fb-f-th-3",
+            "title": "Keep the Page Accessible",
+            "description": "The submitted Facebook Page should remain publicly accessible where required."
+          },
+          {
+            "id": "fb-f-th-4",
+            "title": "Follow Order Status",
+            "description": "Processing time can vary based on quantity and current conditions. Use NovaLikes order tracking for available updates."
+          }
+        ],
+        "closingNote": "Avoid changing the target, deleting or disabling the Page while an active order depends on it."
+      },
+      "serviceCompare": {
+        "id": "facebook-followers-page-likes-post-likes-canada",
+        "title": "Followers, Page Likes or Post Likes: Choose the Right Facebook Metric",
+        "description": "Choose based on the metric you actually want to change.",
+        "current": {
+          "title": "Facebook Followers",
+          "description": "Follower count displayed on an eligible public Facebook Page",
+          "bestFor": "Page audience size",
+          "ctaLabel": "Facebook Followers"
+        },
+        "likes": {
+          "title": "Facebook Page Likes",
+          "description": "Like count associated with the Facebook Page",
+          "bestFor": "Page Like count",
+          "href": "/ca/buy-facebook-page-likes",
+          "ctaLabel": "Facebook Page Likes"
+        },
+        "views": {
+          "title": "Facebook Post Likes",
+          "description": "Like count on a specific eligible public Facebook post",
+          "bestFor": "Individual post likes",
+          "href": "/ca/buy-facebook-post-likes",
+          "ctaLabel": "Facebook Post Likes"
+        },
+        "combinedNote": "Use Facebook Followers when the Page's follower count is your focus. Choose Page Likes for the Page Like metric, or Post Likes when you want likes applied to a particular public post.",
+        "commentsHref": ""
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-facebook-followers-canada",
+        "title": "Before You Buy Facebook Followers",
+        "description": "Review these details before checkout.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "fb-f-bb-page",
+            "title": "Confirm the Facebook Page",
+            "description": "Open the exact public Page you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-f-bb-url",
+            "title": "Copy the Page URL",
+            "description": "Do not submit an individual post link when ordering followers.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "fb-f-bb-quantity",
+            "title": "Check the Follower Quantity",
+            "description": "Make sure your selected package contains the number of followers you intend to purchase.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-f-bb-price",
+            "title": "Review the Current Price",
+            "description": "Check the package price before completing checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-f-bb-public",
+            "title": "Keep the Page Publicly Accessible",
+            "description": "Avoid deleting or disabling the submitted Page while processing depends on it.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-f-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require Facebook login credentials.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-f-bb-service",
+            "title": "Choose the Correct Facebook Service",
+            "description": "Followers, Page Likes, and Post Likes are different metrics.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "fb-f-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the applicable service and refund information before placing your order.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "followers-reach-not-same-facebook-canada",
+        "title": "More Followers Do Not Guarantee More Reach",
+        "description": "A Facebook follower count and the organic reach of individual posts are not the same thing. Having more followers does not guarantee that every follower will see every post. It also does not guarantee more Page Likes, Post Likes, comments, shares, organic reach, website traffic, leads, customers or sales.",
+        "eyebrow": "Followers vs Reach",
+        "closingNote": "A followers package is designed around the Page follower metric. Your organic content performance still depends on Facebook's systems, audience behaviour, content quality, and how you manage the Page.",
+        "cards": [
+          {
+            "id": "fb-f-ww-reach",
+            "title": "Organic Post Reach",
+            "description": "Post reach is separate from visible follower count.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-f-ww-likes",
+            "title": "Page and Post Likes",
+            "description": "Followers and Page Likes are different Page-level metrics.",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-f-ww-engagement",
+            "title": "Genuine Engagement",
+            "description": "Comments and shares depend on content and audience behaviour.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-f-ww-business",
+            "title": "Business Results",
+            "description": "Follower count alone does not guarantee enquiries, sales or partnerships.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "choose-facebook-followers-package-fits-page-canada",
+        "title": "Choose a Facebook Followers Package That Fits Your Page",
+        "description": "Not every Facebook Page needs the same follower increase. Before choosing, look at four things that help you decide on a sensible quantity.",
+        "quantityColumnLabel": "Consideration",
+        "recommendedColumnLabel": "What to Review",
+        "rows": [
+          {
+            "id": "fb-f-ps-count",
+            "quantity": "Your Current Follower Count",
+            "recommendedFor": "Start with the audience size already displayed on the Page."
+          },
+          {
+            "id": "fb-f-ps-established",
+            "quantity": "How Established the Page Is",
+            "recommendedFor": "A Page with years of content, reviews, business information, and regular activity has a different context from a newly created Page."
+          },
+          {
+            "id": "fb-f-ps-preparing",
+            "quantity": "What You're Preparing For",
+            "recommendedFor": "A new location, product launch, campaign, event, or business announcement may change how much attention you're putting into the Page."
+          },
+          {
+            "id": "fb-f-ps-increase",
+            "quantity": "The Increase You Actually Want",
+            "recommendedFor": "Choose a quantity that makes sense for your current Page instead of automatically selecting the largest option."
+          }
+        ],
+        "bottomNote": "Compare follower package sizes and current prices in the pricing section above."
+      },
+      "bestPractices": {
+        "id": "affordable-facebook-followers-canada",
+        "title": "Affordable Facebook Followers Without Choosing on Price Alone",
+        "description": "If you're comparing cheap Facebook followers in Canada, price will naturally be part of the decision. Before choosing a provider, also check:",
+        "closingNote": "An affordable Facebook followers package should make these basics clear before checkout. NovaLikes lets you compare follower quantities and current prices before placing your order.",
+        "items": [
+          {
+            "id": "fb-f-bp-1",
+            "title": "Followers Included",
+            "description": "Check how many followers are included in the package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-f-bp-2",
+            "title": "Current Package Pricing",
+            "description": "Review pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-f-bp-3",
+            "title": "Page vs Profile Service",
+            "description": "Confirm the service is for a Page and what URL you need.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-f-bp-4",
+            "title": "No Password Requirement",
+            "description": "Your Facebook password should not be requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-f-bp-5",
+            "title": "Order Tracking",
+            "description": "Check whether order tracking is available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-f-bp-6",
+            "title": "Customer Support",
+            "description": "Confirm support is available if you need help.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-f-bp-7",
+            "title": "Service Policies",
+            "description": "Review relevant service policies before ordering.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-facebook-followers-canada",
+        "title": "Common Mistakes When Buying Facebook Followers",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-page-likes": {
+            "title": "Facebook Page Likes",
+            "description": "Choose Facebook Page Likes when the Page Like count is the metric you want to increase.",
+            "ctaLabel": "Buy Facebook Page Likes"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Facebook Post Likes",
+            "description": "Choose Facebook Post Likes when you want to increase the visible like count on a specific eligible public post.",
+            "ctaLabel": "Buy Facebook Post Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "build-stronger-first-impression-facebook-canada",
+      "title": "Use Follower Growth to Reinforce an Active Canadian Facebook Page",
+      "description": "Facebook Followers can support the visible audience size of a Page, but the Page should look current when someone arrives. Before adding followers, Canadian businesses and organisations can check that the Page name, category, About details, website, contact information and recent posts still match the real business. This matters especially around launches, new locations, seasonal services, events and campaigns that may send more people to the Page. A follower package changes the follower metric; it does not automatically improve reviews, post engagement, reach or customer enquiries. Treat the follower count as one part of the Page presentation and keep publishing useful updates that help visitors understand what the business offers, where it operates and what they should do next.",
+      "items": [
+        {
+          "id": "fb-f-wb-launch",
+          "title": "Launching a New Business Page",
+          "description": "A newer company may want to build the visible size of the Page while publishing its first set of useful posts."
+        },
+        {
+          "id": "fb-f-wb-location",
+          "title": "Opening a New Location",
+          "description": "Local businesses can update Page information, publish location-specific content, and support the Page as part of the launch."
+        },
+        {
+          "id": "fb-f-wb-product",
+          "title": "Introducing a New Product or Service",
+          "description": "A Page may receive more visitors when a business is promoting something new."
+        },
+        {
+          "id": "fb-f-wb-seasonal",
+          "title": "Running a Seasonal Campaign",
+          "description": "Canadian businesses may use Facebook around holidays, sales periods, community events, or seasonal services."
+        },
+        {
+          "id": "fb-f-wb-brand",
+          "title": "Building a Brand Presence",
+          "description": "Established businesses may continue developing their Page alongside a website, Instagram, email marketing, and other channels."
+        }
+      ],
+      "bottomNote": "A stronger follower count is more useful when the Page behind it is accurate, active and easy for visitors to understand."
+    },
+    "howToBuy": {
+      "id": "how-facebook-followers-order-works-canada",
+      "title": "How Your Facebook Followers Order Works",
+      "description": "The process centres around the public Page you want to use.",
+      "steps": [
+        {
+          "id": "fb-f-step-1",
+          "title": "Choose Your Package",
+          "description": "Compare the available follower quantities and current prices."
+        },
+        {
+          "id": "fb-f-step-2",
+          "title": "Copy the Facebook Page URL",
+          "description": "Open the exact public Page where you want the followers added."
+        },
+        {
+          "id": "fb-f-step-3",
+          "title": "Submit the Page Details",
+          "description": "Enter the public Page URL requested during checkout."
+        },
+        {
+          "id": "fb-f-step-4",
+          "title": "Review the Order",
+          "description": "Check the Page, follower quantity, and current price before paying."
+        },
+        {
+          "id": "fb-f-step-5",
+          "title": "Complete Checkout",
+          "description": "Place your order without providing your Facebook password."
+        },
+        {
+          "id": "fb-f-step-6",
+          "title": "Track the Purchase",
+          "description": "Use NovaLikes order tracking for available status updates afterward."
+        }
+      ]
+    },
+    "relatedHeading": "Explore More Facebook Services",
+    "relatedIntro": "Choose the Facebook service that matches the metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: Where Can You Buy Facebook Followers in Canada?",
+      "text": "You can buy Facebook followers in Canada through NovaLikes by choosing an available follower package, submitting the correct public Facebook Page URL, and completing checkout online. Your Facebook password is not required. Followers increase the Page-level follower count and are separate from Facebook Page Likes and Post Likes."
+    },
+    "storySections": [
+      {
+        "id": "built-for-canada",
+        "title": "Build Facebook Followers Around the Canadian Page You Are Actually Managing",
+        "lead": "A Facebook Page can play a different role for a local company, ecommerce business, creator, organization or established brand, so follower growth should fit the Page behind the number.",
+        "paragraphs": [
+          "A Canadian local business may use Facebook for updates, customer communication and community visibility. An ecommerce company may publish products and seasonal campaigns. A service business may show completed work and answer common questions. A creator or organization may use Facebook alongside other social and digital channels.",
+          "Review the current Page before choosing a follower quantity. The useful amount depends on the Page, its existing audience, activity and what the business or creator is preparing for."
+        ],
+        "footer": "Followers can strengthen visible audience size. The Page and organization behind that number give it meaning.",
+        "items": [
+          {
+            "title": "Local Businesses",
+            "body": "Build the visible audience around a Page potential customers may check while researching the business."
+          },
+          {
+            "title": "Ecommerce Businesses",
+            "body": "Use Facebook alongside genuine product launches, seasonal promotions and wider digital campaigns."
+          },
+          {
+            "title": "Service Businesses",
+            "body": "Build the Page around real services, projects, expertise and useful customer information."
+          },
+          {
+            "title": "Creators",
+            "body": "Support the Page audience while continuing to publish content that gives genuine people a reason to follow."
+          },
+          {
+            "title": "Organizations",
+            "body": "Use Facebook around real updates, events, information and community communication."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Keep follower growth in context with advertising, content, customer service and wider brand activity."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Make a Canadian Local Business Page Useful When Customers Check It",
+        "lead": "Facebook may be one of several places a customer checks before deciding whether a local company appears current and trustworthy.",
+        "bullets": [
+          "recent business activity",
+          "services",
+          "products",
+          "projects",
+          "events",
+          "contact information",
+          "location details",
+          "customer interaction",
+          "current opening or availability information"
+        ],
+        "paragraphs": [
+          "Restaurants may share menu or venue updates. Trades can show completed work. Salons may present services or results. Retailers can feature products. Property businesses may publish listings. Tourism and hospitality companies can show experiences. Professional services may answer common questions."
+        ],
+        "footer": "A larger follower count can support Page presentation. Local trust comes from accurate information and the real Canadian business behind it."
+      },
+      {
+        "id": "ca-campaign-moments",
+        "title": "Prepare the Facebook Page for Canadian Campaign Moments That Bring More Visitors",
+        "lead": "Some launches, seasonal periods and business changes can bring additional attention to a Page.",
+        "footer": "Followers can support visible audience size during these moments. The campaign still needs useful content, accurate information and a genuine offer.",
+        "items": [
+          {
+            "title": "New Business Launches",
+            "body": "Complete important Page information and publish useful initial content before sending more attention toward a newer business."
+          },
+          {
+            "title": "New Locations or Service Areas",
+            "body": "Businesses entering another city, province or local market should update the Page and explain what has changed."
+          },
+          {
+            "title": "Black Friday and Cyber Monday",
+            "body": "Canadian retail and ecommerce businesses may have higher-priority Facebook activity during major November shopping periods."
+          },
+          {
+            "title": "Boxing Day Campaigns",
+            "body": "Retailers and ecommerce businesses may use Facebook around Boxing Day, holiday offers and year-end product activity."
+          },
+          {
+            "title": "Seasonal Canadian Campaigns",
+            "body": "Travel, hospitality, home services, retail, fitness and other businesses may have periods when particular Page content becomes more important."
+          },
+          {
+            "title": "Events and Community Activity",
+            "body": "Venues, organizations and local businesses may use Facebook around openings, events and genuine community activity."
+          },
+          {
+            "title": "Rebrands and Expansions",
+            "body": "A Page may receive additional visitors while a company changes its identity, offer or market coverage."
+          }
+        ]
+      },
+      {
+        "id": "better-page",
+        "title": "Give the Facebook Follower Count a Better Page Behind It",
+        "lead": "A stronger visible audience works best when someone opening the Page can quickly understand the business, creator or organization.",
+        "footer": "Followers can support Page presentation. Page management determines what visitors find behind that audience number.",
+        "items": [
+          {
+            "title": "Complete Important Page Information",
+            "body": "Explain clearly what the Page represents and keep important business details current."
+          },
+          {
+            "title": "Keep Contact Details Accurate",
+            "body": "Review website links, phone numbers, addresses and other details that may affect a genuine customer decision."
+          },
+          {
+            "title": "Publish Current Content",
+            "body": "Recent activity provides more context than a larger follower number on a Page that appears abandoned."
+          },
+          {
+            "title": "Use Recognisable Visuals",
+            "body": "Profile and cover imagery should clearly connect the Page with the creator, company or organization behind it."
+          },
+          {
+            "title": "Make Important Updates Easy to Find",
+            "body": "Give launches, offers, events and major company information enough visibility on the Page."
+          },
+          {
+            "title": "Give Visitors a Next Step",
+            "body": "Help interested people understand how to contact, shop, book, visit or learn more."
+          }
+        ]
+      },
+      {
+        "id": "page-trust",
+        "title": "Build Facebook Followers Around a Page Canadian Customers Can Verify",
+        "lead": "Follower count can contribute to a first impression, but genuine trust comes from what customers can confirm about the business.",
+        "footer": "Followers can support visible social presence. The real business creates the trust behind it.",
+        "items": [
+          {
+            "title": "Show Genuine Business Activity",
+            "body": "Publish real products, projects, services, events, team activity and useful company updates."
+          },
+          {
+            "title": "Keep Public Information Consistent",
+            "body": "Align important business details across Facebook, the company website, Google presence and other official channels."
+          },
+          {
+            "title": "Use Real Experience",
+            "body": "Share work and knowledge the company can accurately explain rather than relying on generic claims."
+          },
+          {
+            "title": "Respond to Genuine Customers",
+            "body": "Real Comments, questions and messages should receive appropriate responses from the business."
+          },
+          {
+            "title": "Keep Claims Supportable",
+            "body": "Do not invent testimonials, results or customer experiences simply to strengthen Page presentation."
+          }
+        ]
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep Facebook Followers Separate From Genuine Customer Proof",
+        "paragraphs": [
+          "A follower count can make a Page appear more established, but it does not show whether genuine customers have bought from, hired, visited or recommended the business.",
+          "Canadian companies may have stronger evidence through verified reviews, genuine Facebook Recommendations, authentic testimonials, completed projects, case studies, real customer Comments, customer-created content and accurate public company information.",
+          "Use genuine evidence where it exists. Do not present purchased Followers as customer approval."
+        ],
+        "footer": "Followers support one visible Page metric. Genuine customer experience provides a different and more meaningful form of proof."
+      },
+      {
+        "id": "brand-credibility",
+        "title": "Give Canadian Customers and Partners More to Judge Than the Follower Count",
+        "paragraphs": [
+          "Follower count may influence the first impression of a Facebook Page, but someone researching a Canadian company can look beyond that number quickly.",
+          "They may check recent activity, Page completeness, customer reviews, Recommendations, business information, content quality, customer responses, company history, website presence and wider reputation.",
+          "Build the whole Page rather than expecting one public number to establish credibility by itself."
+        ]
+      },
+      {
+        "id": "business-results",
+        "title": "Measure Facebook Business Results Separately From the Follower Number",
+        "lead": "A larger visible audience does not automatically create commercial outcomes.",
+        "footer": "Use Followers for the Page metric they provide while measuring real business outcomes independently.",
+        "items": [
+          {
+            "title": "Website Visits",
+            "body": "Are genuine Facebook users reaching useful pages on the company website?"
+          },
+          {
+            "title": "Messages and Enquiries",
+            "body": "Are potential customers contacting the business after discovering the Page?"
+          },
+          {
+            "title": "Bookings or Visits",
+            "body": "Where relevant, is Facebook contributing to appointments, reservations or real-world activity?"
+          },
+          {
+            "title": "Product Interest and Sales",
+            "body": "Is genuine Facebook activity contributing to product research or purchases?"
+          },
+          {
+            "title": "Customer Awareness",
+            "body": "Is the Page helping real people understand what the business offers and whether it is relevant to them?"
+          }
+        ]
+      },
+      {
+        "id": "growth-framework",
+        "title": "A Practical Facebook Page Plan for Canadian Businesses",
+        "lead": "Followers can support Page presentation, but stronger Facebook marketing still depends on useful content and genuine customer activity.",
+        "footer": "Keep purchased Followers in perspective as one visible Page metric. Longer-term value comes from the business, content and genuine audience behind it.",
+        "items": [
+          {
+            "title": "Complete the Page",
+            "body": "Keep important business and organization information accurate."
+          },
+          {
+            "title": "Build a Useful Content Mix",
+            "body": "Combine genuine updates, education, proof, promotions and relevant community content."
+          },
+          {
+            "title": "Publish Real Business Activity",
+            "body": "Show what the company is actually doing rather than relying on generic promotional posts."
+          },
+          {
+            "title": "Respond to Genuine People",
+            "body": "Treat real Comments and messages as genuine customer conversations."
+          },
+          {
+            "title": "Review Real Performance",
+            "body": "Use genuine Facebook insights and business data where available to understand what works."
+          },
+          {
+            "title": "Connect Facebook With Wider Marketing",
+            "body": "Canadian businesses may use Facebook alongside their website, Google visibility, Instagram, TikTok, ecommerce, paid media and email."
+          },
+          {
+            "title": "Keep Customer Proof Genuine",
+            "body": "Use real reviews, Recommendations and examples where they actually exist."
+          },
+          {
+            "title": "Measure Purchased Followers Separately",
+            "body": "Evaluate organic reach, genuine engagement and business outcomes independently from the purchased follower count."
+          }
+        ]
+      }
+    ]
+  }
+}

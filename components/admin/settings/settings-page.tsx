@@ -19,6 +19,9 @@ function readCsrfToken(): string | undefined {
 
 export function SettingsPage() {
   const [paymentWebsite, setPaymentWebsite] = useState('');
+  const [sharedSecret, setSharedSecret] = useState('');
+  const [sharedSecretConfigured, setSharedSecretConfigured] = useState(false);
+  const [productName, setProductName] = useState('Cubes');
   const [adminEmail, setAdminEmail] = useState('');
   const [emailConfigured, setEmailConfigured] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -35,6 +38,8 @@ export function SettingsPage() {
           ok?: boolean;
           settings?: {
             paymentWebsite?: string;
+            sharedSecretConfigured?: boolean;
+            productName?: string;
             adminEmail?: string;
             emailConfigured?: boolean;
           };
@@ -45,6 +50,8 @@ export function SettingsPage() {
         }
         if (!cancelled) {
           setPaymentWebsite(data.settings?.paymentWebsite ?? '');
+          setSharedSecretConfigured(Boolean(data.settings?.sharedSecretConfigured));
+          setProductName(data.settings?.productName ?? 'Cubes');
           setAdminEmail(data.settings?.adminEmail ?? '');
           setEmailConfigured(Boolean(data.settings?.emailConfigured));
         }
@@ -73,12 +80,19 @@ export function SettingsPage() {
           'Content-Type': 'application/json',
           ...(csrf ? { 'x-csrf-token': csrf } : {}),
         },
-        body: JSON.stringify({ paymentWebsite, adminEmail }),
+        body: JSON.stringify({
+          paymentWebsite,
+          sharedSecret,
+          productName,
+          adminEmail,
+        }),
       });
       const data = (await response.json()) as {
         ok?: boolean;
         settings?: {
           paymentWebsite?: string;
+          sharedSecretConfigured?: boolean;
+          productName?: string;
           adminEmail?: string;
           emailConfigured?: boolean;
         };
@@ -88,8 +102,11 @@ export function SettingsPage() {
         throw new Error(data.error ?? 'Unable to save settings.');
       }
       setPaymentWebsite(data.settings?.paymentWebsite ?? paymentWebsite);
+      setSharedSecretConfigured(Boolean(data.settings?.sharedSecretConfigured));
+      setProductName(data.settings?.productName ?? productName);
       setAdminEmail(data.settings?.adminEmail ?? adminEmail);
       setEmailConfigured(Boolean(data.settings?.emailConfigured));
+      setSharedSecret('');
       setMessage('Settings saved.');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unable to save settings.');
@@ -104,22 +121,60 @@ export function SettingsPage() {
         title="Settings"
         description="Checkout, payment, and email notification settings."
       />
-      <AdminCard title="Remote Payment">
+      <AdminCard title="Mollie Remote Payment">
         <div className="space-y-4">
           <p className="text-sm text-muted-foreground">
-            Website URL for Payment Collection (without trailing slash). Checkout posts
-            orders to this site the same way as the WooCommerce Remote Payment client.
+            NovaLikes talks to the Mollie payment collection server the same way as the
+            WooCommerce Mollie Remote Payment Client. Stripe checkout is paused.
           </p>
           <div className="space-y-2">
-            <Label htmlFor="payment-website">Payment website URL</Label>
+            <Label htmlFor="payment-website">Payment server URL</Label>
             <Input
               id="payment-website"
               value={paymentWebsite}
               onChange={(event) => setPaymentWebsite(event.target.value)}
-              placeholder="https://your-payment-collector.com"
+              placeholder="https://carrycubes.com"
               disabled={loading || saving}
               autoComplete="off"
             />
+            <p className="text-xs text-muted-foreground">
+              Default is https://carrycubes.com (no trailing slash).
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="shared-secret">Shared secret</Label>
+            <Input
+              id="shared-secret"
+              type="password"
+              value={sharedSecret}
+              onChange={(event) => setSharedSecret(event.target.value)}
+              placeholder={
+                sharedSecretConfigured
+                  ? '•••••••••••••••• (leave blank to keep current)'
+                  : 'Must match the Mollie server plugin'
+              }
+              disabled={loading || saving}
+              autoComplete="new-password"
+            />
+            <p className="text-xs text-muted-foreground">
+              {sharedSecretConfigured
+                ? 'A shared secret is already configured. Enter a new value only to rotate it.'
+                : 'Required — at least 16 characters, identical to the Mollie server Shared Secret.'}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="product-name">Mollie payment description</Label>
+            <Input
+              id="product-name"
+              value={productName}
+              onChange={(event) => setProductName(event.target.value)}
+              placeholder="Cubes"
+              disabled={loading || saving}
+              autoComplete="off"
+            />
+            <p className="text-xs text-muted-foreground">
+              Sent as product_name (plugin default: Cubes). Must match server expectations.
+            </p>
           </div>
         </div>
       </AdminCard>

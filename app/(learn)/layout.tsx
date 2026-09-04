@@ -13,7 +13,7 @@ export default async function LearnLayout({ children }: LearnLayoutProps) {
   return (
     <>
       <SiteJsonLd />
-      <SiteLayout locale={chrome.locale} ui={chrome.ui}>
+      <SiteLayout locale={chrome.locale} market={chrome.market} ui={chrome.ui}>
         {children}
       </SiteLayout>
     </>

@@ -347,7 +347,7 @@ export const ENGLISH_UI = {
     verifiedBody:
       'Thanks — your payment was verified and your order is in the fulfilment queue.',
     pendingBody:
-      'We are confirming your payment. This page will show success once Stripe verifies the charge.',
+      'We are confirming your payment. This page will show success once Mollie verifies the charge.',
     unverifiedBody:
       'We could not verify this order yet. Use your order ID and email to track status.',
     orderId: 'Order ID:',

@@ -19,8 +19,9 @@ const FILTERS: { id: FilterId; label: string }[] = [
 
 type HomepageServicesFilterProps = {
   intro: ReactNode;
-  aside: ReactNode;
+  aside?: ReactNode;
   children: ReactNode;
+  hideFilters?: boolean;
 };
 
 /**
@@ -31,14 +32,21 @@ export function HomepageServicesFilter({
   intro,
   aside,
   children,
+  hideFilters = false,
 }: HomepageServicesFilterProps) {
   const [filter, setFilter] = useState<FilterId>('all');
 
   return (
     <>
-      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)] lg:gap-10">
+      <div
+        className={cn(
+          'grid items-start gap-8',
+          aside && 'lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)] lg:gap-10',
+        )}
+      >
         <div>
           {intro}
+          {hideFilters ? null : (
           <div
             className="mt-5 flex flex-wrap gap-2"
             role="tablist"
@@ -73,6 +81,7 @@ export function HomepageServicesFilter({
               );
             })}
           </div>
+          )}
         </div>
         {aside}
       </div>

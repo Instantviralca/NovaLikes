@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import { JsonLdScript } from '@/components/common/json-ld';
 import { ReviewsPageView } from '@/components/reviews/ReviewsPageView';
 import { routes } from '@/config/routes';
-import { getSafePublicReviews, summarizePublicReviews } from '@/lib/reviews';
+import { getEnglishReviewsPageSource } from '@/lib/i18n/content/company-english';
+import { getSafePublicReviews, interleaveReviewsByTopic, summarizePublicReviews } from '@/lib/reviews';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
@@ -16,7 +17,7 @@ export function generateMetadata(): Metadata {
 }
 
 export default function ReviewsPage() {
-  const publicReviews = getSafePublicReviews();
+  const publicReviews = interleaveReviewsByTopic(getSafePublicReviews());
   const aggregate = summarizePublicReviews(publicReviews);
   const title = titles.company('Reviews');
   const description = descriptions.reviews();
@@ -36,7 +37,11 @@ export default function ReviewsPage() {
   return (
     <>
       <JsonLdScript id="reviews-jsonld" data={graph} />
-      <ReviewsPageView reviews={publicReviews} aggregate={aggregate} />
+      <ReviewsPageView
+        reviews={publicReviews}
+        aggregate={aggregate}
+        copy={getEnglishReviewsPageSource()}
+      />
     </>
   );
 }

@@ -9,6 +9,7 @@ import { Navbar } from '@/components/navigation/navbar';
 import { HTML_LANG, LOCALE_DIR, type Locale, DEFAULT_LOCALE } from '@/lib/i18n/config';
 import type { UiDictionary } from '@/lib/i18n/content/ui-english';
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
+import type { Market } from '@/lib/market/config';
 import { cn } from '@/lib/utils';
 
 type SiteLayoutProps = {
@@ -17,6 +18,7 @@ type SiteLayoutProps = {
   /** Cream wash + doodles. Off for cart/checkout so commerce chrome stays unchanged. */
   illustrated?: boolean;
   locale?: Locale;
+  market?: Market | null;
   ui?: UiDictionary;
 };
 
@@ -25,10 +27,11 @@ export function SiteLayout({
   className,
   illustrated = true,
   locale = DEFAULT_LOCALE,
+  market = null,
   ui = ENGLISH_UI as UiDictionary,
 }: SiteLayoutProps) {
   return (
-    <I18nChromeProvider locale={locale} ui={ui}>
+    <I18nChromeProvider locale={locale} market={market} ui={ui}>
       <div
         lang={HTML_LANG[locale]}
         dir={LOCALE_DIR[locale]}
@@ -39,13 +42,13 @@ export function SiteLayout({
         )}
       >
         <HtmlLang locale={locale} />
-        <Navbar locale={locale} ui={ui} />
+        <Navbar locale={locale} market={market} ui={ui} />
         {illustrated ? (
           <IllustratedMain>{children}</IllustratedMain>
         ) : (
           <main className="flex-1">{children}</main>
         )}
-        <Footer locale={locale} ui={ui} />
+        <Footer locale={locale} market={market} ui={ui} />
         <WhatsAppFloatButton />
       </div>
     </I18nChromeProvider>

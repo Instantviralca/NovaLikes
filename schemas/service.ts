@@ -19,6 +19,24 @@ export function serviceSchema(
   };
 }
 
+import { MARKET_COUNTRY_NAME, type Market } from '@/lib/market/config';
+
+/** Geo market service schema — adds areaServed without local address claims. */
+export function marketServiceSchema(
+  service: Service,
+  market: Market,
+  overrides?: { name?: string; description?: string; url?: string },
+): JsonLd {
+  const base = serviceSchema(service, overrides);
+  return {
+    ...base,
+    areaServed: {
+      '@type': 'Country',
+      name: MARKET_COUNTRY_NAME[market],
+    },
+  };
+}
+
 /** Kept for tests/admin preview. Not emitted on public service pages. */
 export function productSchema(service: Service): JsonLd {
   return {

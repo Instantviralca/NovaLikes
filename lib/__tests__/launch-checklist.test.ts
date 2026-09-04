@@ -49,7 +49,9 @@ describe('Launch checklist surfaces', () => {
     expect(pageExists('app/api/webhooks/stripe/route.ts')).toBe(true);
     expect(pageExists('instrumentation.ts')).toBe(true);
     expect(pageExists('drizzle/0001_init.sql')).toBe(true);
-    expect(pageExists('app/sitemap.ts')).toBe(true);
+    expect(pageExists('app/sitemap.xml/route.ts')).toBe(true);
+    expect(pageExists('app/sitemaps/[group]/route.ts')).toBe(true);
+    expect(pageExists('app/sitemap.xsl/route.ts')).toBe(true);
     expect(pageExists('app/robots.ts')).toBe(true);
   });
 

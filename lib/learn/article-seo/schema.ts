@@ -48,32 +48,14 @@ export function buildArticleBreadcrumbSchema(articleSlug: string): JsonLd | null
 }
 
 /**
- * FAQPage schema only for visible, schema-eligible FAQs.
- * Questions/answers must match rendered content exactly.
+ * FAQPage schema is intentionally not emitted.
+ * Visible FAQ content remains on pages; FAQPage requires an explicit future SEO approval.
  */
 export function buildArticleFaqSchema(
   faqs: readonly ArticleFaqSchemaItem[],
 ): JsonLd | null {
-  const eligible = faqs.filter(
-    (faq) =>
-      faq.schemaEligible &&
-      sanitizeJsonLdText(faq.question) &&
-      sanitizeJsonLdText(faq.answer),
-  );
-  if (eligible.length === 0) return null;
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: eligible.map((faq) => ({
-      '@type': 'Question',
-      name: sanitizeJsonLdText(faq.question),
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: sanitizeJsonLdText(faq.answer),
-      },
-    })),
-  };
+  void faqs;
+  return null;
 }
 
 /**
@@ -129,7 +111,6 @@ export function buildArticleSchema(
     },
     publisher: buildArticlePublisherSchema(),
     mainEntityOfPage: {
-      '@type': 'WebPage',
       '@id': buildArticleCanonical(seo.slug),
     },
     articleSection: section,

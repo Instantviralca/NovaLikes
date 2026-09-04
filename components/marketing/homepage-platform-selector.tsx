@@ -178,9 +178,9 @@ function PlatformCard({ platform, delay }: { platform: HubPlatform; delay: numbe
     <FadeUp delay={delay} className="h-full">
       <article
         className={cn(
-          'group flex h-full flex-col overflow-hidden rounded-[1.75rem] bg-white',
-          'shadow-[0_22px_50px_-28px_rgba(50,30,20,0.55)] ring-1 ring-black/[0.04]',
-          'transition duration-200 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(50,30,20,0.5)]',
+          'group flex h-full flex-col overflow-hidden rounded-2xl bg-white',
+          'ring-1 ring-[#EDE8E3]',
+          'transition duration-200 hover:-translate-y-0.5 hover:ring-[#E5DDD5]',
         )}
       >
         <CardHeaderArt platform={platform} />
@@ -265,76 +265,152 @@ function FloatingScene() {
   );
 }
 
-export function HomepagePlatformSelector({ hub = homepageHub }: { hub?: HomepageHub }) {
+export function HomepagePlatformSelector({
+  hub = homepageHub,
+  instagramOnly = false,
+  enhanced = false,
+}: {
+  hub?: HomepageHub;
+  instagramOnly?: boolean;
+  enhanced?: boolean;
+}) {
   const section = hub.platformSelector;
+  const platforms = instagramOnly
+    ? section.platforms.filter((platform) => platform.id === 'instagram')
+    : section.platforms;
+  const compactSplit = enhanced && instagramOnly;
 
   return (
     <Section
       id={section.id}
       spacing="none"
-      className="relative overflow-hidden bg-transparent py-12 md:py-16 lg:py-[4.5rem]"
+      className={cn(
+        'relative overflow-hidden bg-transparent',
+        enhanced ? 'py-10 md:py-12 lg:py-14' : 'py-12 md:py-16 lg:py-[4.5rem]',
+      )}
       aria-labelledby={`${section.id}-heading`}
     >
-      <FloatingScene />
+      {enhanced ? null : <FloatingScene />}
       <Container size="xl" className="relative">
-        <FadeUp className="mx-auto max-w-[42rem] text-center">
-          <p className="mx-auto inline-flex items-center gap-1.5 rounded-full bg-[#FFE4D1] px-3.5 py-1.5 text-[12px] font-semibold text-[#E85D04]">
-            <Heart className="size-3.5 fill-current" aria-hidden="true" />
-            {section.eyebrow}
-          </p>
-          <h2
-            id={`${section.id}-heading`}
-            className="mt-4 text-balance text-[2.15rem] font-bold leading-[1.12] tracking-tight text-[#1C1917] sm:text-[2.75rem]"
-          >
-            <AccentTitle title={section.title} />
-          </h2>
-          <p className="mx-auto mt-3 max-w-[36rem] text-pretty text-[15px] leading-[1.65] text-[#6B6560]">
-            {section.description}
-          </p>
-          <ul className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
-            {section.trustItems.map((item) => {
-              const Icon = item.id === 'refund' ? TRUST_ICONS.check : TRUST_ICONS[item.icon];
-              return (
-                <li
-                  key={item.id}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[#F3F0EE] px-3 py-1.5 text-[12.5px] font-medium text-[#44403C]"
-                >
-                  <Icon className="size-3.5 text-[#E85D04]" aria-hidden="true" />
-                  {item.label}
-                </li>
-              );
-            })}
-          </ul>
-        </FadeUp>
+        {compactSplit ? (
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-14">
+            <FadeUp>
+              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#E85D04]">
+                {section.eyebrow}
+              </p>
+              <h2
+                id={`${section.id}-heading`}
+                className="mt-3 text-balance text-[1.85rem] font-bold leading-[1.15] tracking-tight text-[#1C1917] sm:text-[2.15rem]"
+              >
+                {section.title}
+              </h2>
+              <p className="mt-3 max-w-[34rem] text-pretty text-[15px] leading-relaxed text-[#6B6560]">
+                {section.description}
+              </p>
+              <ul className="mt-5 flex flex-wrap items-center gap-2">
+                {section.trustItems.map((item) => {
+                  const Icon = item.id === 'refund' ? TRUST_ICONS.check : TRUST_ICONS[item.icon];
+                  return (
+                    <li
+                      key={item.id}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-[#FAF7F4] px-3 py-1.5 text-[12.5px] font-medium text-[#44403C]"
+                    >
+                      <Icon className="size-3.5 text-[#E85D04]" aria-hidden="true" />
+                      {item.label}
+                    </li>
+                  );
+                })}
+              </ul>
+              <Link
+                href={section.socialProof.href}
+                className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold text-[#E85D04] transition hover:text-[#C2410C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                {section.socialProof.text}
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+            </FadeUp>
+            <div className="mx-auto w-full max-w-sm lg:max-w-none lg:justify-self-end">
+              {platforms.map((platform, index) => (
+                <PlatformCard key={platform.id} platform={platform} delay={index * 0.05} />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <>
+            <FadeUp className="mx-auto max-w-[42rem] text-center">
+              <p className="mx-auto inline-flex items-center gap-1.5 rounded-full bg-[#FFE4D1] px-3.5 py-1.5 text-[12px] font-semibold text-[#E85D04]">
+                <Heart className="size-3.5 fill-current" aria-hidden="true" />
+                {section.eyebrow}
+              </p>
+              <h2
+                id={`${section.id}-heading`}
+                className={cn(
+                  'text-balance text-[2.15rem] font-bold leading-[1.12] tracking-tight text-[#1C1917] sm:text-[2.75rem]',
+                  enhanced ? 'mt-5' : 'mt-4',
+                )}
+              >
+                <AccentTitle title={section.title} />
+              </h2>
+              <p
+                className={cn(
+                  'mx-auto max-w-[36rem] text-pretty text-[15px] leading-[1.65] text-[#6B6560]',
+                  enhanced ? 'mt-5' : 'mt-3',
+                )}
+              >
+                {section.description}
+              </p>
+              <ul className={cn('flex flex-wrap items-center justify-center gap-2.5', enhanced ? 'mt-5' : 'mt-6')}>
+                {section.trustItems.map((item) => {
+                  const Icon = item.id === 'refund' ? TRUST_ICONS.check : TRUST_ICONS[item.icon];
+                  return (
+                    <li
+                      key={item.id}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-[#F3F0EE] px-3 py-1.5 text-[12.5px] font-medium text-[#44403C]"
+                    >
+                      <Icon className="size-3.5 text-[#E85D04]" aria-hidden="true" />
+                      {item.label}
+                    </li>
+                  );
+                })}
+              </ul>
+            </FadeUp>
 
-        <div className="mt-11 grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-7">
-          {section.platforms.map((platform, index) => (
-            <PlatformCard key={platform.id} platform={platform} delay={index * 0.05} />
-          ))}
-        </div>
+            <div
+              className={cn(
+                'grid gap-6',
+                enhanced ? 'mt-8' : 'mt-11',
+                instagramOnly ? 'mx-auto max-w-md' : 'md:grid-cols-2 lg:grid-cols-3 lg:gap-7',
+              )}
+            >
+              {platforms.map((platform, index) => (
+                <PlatformCard key={platform.id} platform={platform} delay={index * 0.05} />
+              ))}
+            </div>
 
-        <FadeUp delay={0.16} className="mt-11 flex justify-center">
-          <Link
-            href={section.socialProof.href}
-            className="inline-flex max-w-full items-center gap-3 rounded-full bg-[#FFE8D6] px-5 py-2.5 text-[13.5px] font-medium text-[#3F3A36] shadow-[0_10px_24px_-16px_rgba(232,93,4,0.55)] transition hover:bg-[#FFDCC4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            <span className="flex -space-x-2" aria-hidden="true">
-              <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
-                <Avatar hair="#1C1917" skin="#E8B89A" shirt="#FB7185" />
-              </span>
-              <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
-                <Avatar hair="#44403C" skin="#D1A07A" shirt="#60A5FA" />
-              </span>
-              <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
-                <Avatar hair="#78350F" skin="#F1C7A8" shirt="#FDBA74" />
-              </span>
-            </span>
-            <span className="text-pretty">
-              {section.socialProof.text}
-              <ArrowRight className="ml-1 inline size-4 align-[-2px]" aria-hidden="true" />
-            </span>
-          </Link>
-        </FadeUp>
+            <FadeUp delay={0.16} className={cn('flex justify-center', enhanced ? 'mt-8' : 'mt-11')}>
+              <Link
+                href={section.socialProof.href}
+                className="inline-flex max-w-full items-center gap-3 rounded-full bg-[#FFE8D6] px-5 py-2.5 text-[13.5px] font-medium text-[#3F3A36] shadow-[0_10px_24px_-16px_rgba(232,93,4,0.55)] transition hover:bg-[#FFDCC4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <span className="flex -space-x-2" aria-hidden="true">
+                  <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
+                    <Avatar hair="#1C1917" skin="#E8B89A" shirt="#FB7185" />
+                  </span>
+                  <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
+                    <Avatar hair="#44403C" skin="#D1A07A" shirt="#60A5FA" />
+                  </span>
+                  <span className="overflow-hidden rounded-full ring-2 ring-[#FFE8D6]">
+                    <Avatar hair="#78350F" skin="#F1C7A8" shirt="#FDBA74" />
+                  </span>
+                </span>
+                <span className="text-pretty">
+                  {section.socialProof.text}
+                  <ArrowRight className="ml-1 inline size-4 align-[-2px]" aria-hidden="true" />
+                </span>
+              </Link>
+            </FadeUp>
+          </>
+        )}
       </Container>
     </Section>
   );

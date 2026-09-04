@@ -25,7 +25,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 22,
     reviewText:
-      'Worked great, thanks!',
+      'Worked great for me, thanks. That’s really all I can say.',
   },
   {
     id: 'review-marcus-okoro',
@@ -35,7 +35,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 23,
     reviewText:
-      'All good on my end.',
+      'All good on my end. Overall, it was fine.',
   },
   {
     id: 'review-sofia-castile',
@@ -45,7 +45,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 24,
     reviewText:
-      'Would buy again.',
+      'I’d buy again. That probably says enough.',
   },
   {
     id: 'review-jamal-brooks',
@@ -55,7 +55,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 25,
     reviewText:
-      'Solid. No drama.',
+      'Solid overall. No drama, which I appreciated.',
   },
   {
     id: 'review-elena-vargas',
@@ -65,7 +65,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 26,
     reviewText:
-      'Pretty smooth order.',
+      'Pretty smooth order overall. That was my experience with it.',
   },
   {
     id: 'review-chris-nguyen',
@@ -75,7 +75,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 27,
     reviewText:
-      'Happy with it.',
+      'Happy with it overall. Simple as that.',
   },
   {
     id: 'review-nadia-hassan',
@@ -85,7 +85,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 28,
     reviewText:
-      'Fine for what I paid.',
+      'Fine for what I paid. I was okay with the experience.',
   },
   {
     id: 'review-omar-farouk',
@@ -95,7 +95,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 29,
     reviewText:
-      'Okay experience.',
+      'Overall, it was an okay experience. Nothing more to add.',
   },
   {
     id: 'review-kayla-stone',
@@ -105,7 +105,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 30,
     reviewText:
-      'Took a while but finished.',
+      'It took a while, but it did finish in the end.',
   },
   {
     id: 'review-diego-ramos',
@@ -115,7 +115,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 31,
     reviewText:
-      'Not bad at all.',
+      'Honestly, not bad at all. That’s my take on it.',
   },
   {
     id: 'review-amira-saleh',
@@ -125,7 +125,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 32,
     reviewText:
-      'Placed an order last week. Support actually replied when I emailed them.',
+      'I placed an order last week and emailed support. They actually replied when I reached out.',
   },
   {
     id: 'review-ryan-keller',
@@ -135,7 +135,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 33,
     reviewText:
-      'I’m not very techy and I still managed fine. That says a lot.',
+      'I’m not very techy, and I still managed fine. That says a lot for me.',
   },
   {
     id: 'review-leila-noor',
@@ -145,7 +145,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 34,
     reviewText:
-      'Started small on purpose. Felt better that way.',
+      'I started small on purpose, and I felt better doing it that way.',
   },
   {
     id: 'review-tom-brennan',
@@ -155,7 +155,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 35,
     reviewText:
-      'Site didn’t feel sketchy at checkout, which was my main worry.',
+      'My biggest worry was checkout feeling sketchy, but the site didn’t give me that feeling.',
   },
   {
     id: 'review-yasmin-ali',
@@ -165,7 +165,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 36,
     reviewText:
-      'Had a typo in my email. Support sorted it without making me feel dumb.',
+      'I had a typo in my email, and support sorted it out without making me feel dumb about it.',
   },
   {
     id: 'review-ben-carter',
@@ -175,7 +175,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 37,
     reviewText:
-      'Used them twice now. Second time felt familiar in a good way.',
+      'I’ve used them twice now. The second time felt familiar in a good way.',
   },
   {
     id: 'review-camila-duarte',
@@ -195,7 +195,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 39,
     reviewText:
-      'Honestly expected worse. It was a normal online order.',
+      'I honestly expected worse, but it felt like a normal online order. That was a good surprise.',
   },
   {
     id: 'review-hana-kim',
@@ -205,7 +205,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 40,
     reviewText:
-      'My coworker recommended it. Glad I tried.',
+      'A coworker recommended it to me. I’m glad I gave it a try.',
   },
   {
     id: 'review-luis-ortega',
@@ -215,7 +215,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 41,
     reviewText:
-      'Quietly reliable. That’s all I wanted.',
+      'Quietly reliable, which is really all I wanted.',
   },
   {
     id: 'review-farah-iqbal',
@@ -226,7 +226,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 42,
     reviewText:
-      'Instagram order went through without me stressing.',
+      'My Instagram order went through without me having to stress about it.',
   },
   {
     id: 'review-jake-miller',
@@ -237,7 +237,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 43,
     reviewText:
-      'Used it for a couple Instagram posts before a launch. Helpful.',
+      'I used it for a couple of Instagram posts before a launch. It was helpful.',
   },
   {
     id: 'review-noor-abbas',
@@ -248,7 +248,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 44,
     reviewText:
-      'My bakery IG needed a nudge. This did the job.',
+      'My bakery’s Instagram needed a little nudge, and this did the job.',
   },
   {
     id: 'review-sam-reid',
@@ -259,7 +259,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 45,
     reviewText:
-      'Easy Instagram purchase. Would do it again next month.',
+      'Easy Instagram purchase. I’d do it again next month.',
   },
   {
     id: 'review-aisha-rahman',
@@ -270,7 +270,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 46,
     reviewText:
-      'Reel order was fine. No weird requests.',
+      'The Reel order was fine, and there were no weird requests along the way.',
   },
   {
     id: 'review-drew-collins',
@@ -281,7 +281,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 47,
     reviewText:
-      'Picked a mid-size Instagram package. Felt right for my page.',
+      'I picked a mid-size Instagram package, and it felt like the right fit for my page.',
   },
   {
     id: 'review-mei-lin',
@@ -292,7 +292,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 48,
     reviewText:
-      'Creator account order. Took a bit, still happy.',
+      'It was for a creator account. It took a bit, but I’m still happy with it.',
   },
   {
     id: 'review-carl-jensen',
@@ -303,7 +303,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 49,
     reviewText:
-      'Instagram likes for one post. Exactly what I wanted — nothing extra.',
+      'I bought Instagram likes for one post and got exactly what I wanted, nothing extra.',
   },
   {
     id: 'review-rania-haddad',
@@ -314,7 +314,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 50,
     reviewText:
-      'I’ve ordered Instagram stuff here three times. Still coming back.',
+      'I’ve ordered Instagram stuff here three times now, and I’m still coming back.',
   },
   {
     id: 'review-pete-morgan',
@@ -325,7 +325,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 51,
     reviewText:
-      'Sister placed the Instagram order for me. She said it was easy.',
+      'My sister placed the Instagram order for me, and she said it was easy.',
   },
   {
     id: 'review-ivy-chen',
@@ -336,7 +336,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 52,
     reviewText:
-      'Was nervous first time. Instagram checkout calmed me down.',
+      'I was nervous the first time, but the Instagram checkout made me feel calmer.',
   },
   {
     id: 'review-hassan-malik',
@@ -347,7 +347,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 53,
     reviewText:
-      'Good for a small IG push. Not magic, just useful.',
+      'Good for a small Instagram push. It’s not magic, but it was useful for me.',
   },
   {
     id: 'review-nina-volkov',
@@ -358,7 +358,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 54,
     reviewText:
-      'Instagram comments order landed okay. Support was chill.',
+      'My Instagram comments order came through okay, and support was pretty chill.',
   },
   {
     id: 'review-cole-parker',
@@ -369,7 +369,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 55,
     reviewText:
-      'My IG campaign week was less stressful because of this.',
+      'My Instagram campaign week was less stressful because of this.',
   },
   {
     id: 'review-zara-khan',
@@ -380,7 +380,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 56,
     reviewText:
-      'Simple Instagram buy. That’s rare online these days.',
+      'Simple Instagram purchase. That feels rare online these days.',
   },
   {
     id: 'review-alex-rivera',
@@ -391,7 +391,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 57,
     reviewText:
-      'Followers package for Instagram. Started small, might go bigger later.',
+      'I started with a smaller Instagram followers package. I might go bigger later.',
   },
   {
     id: 'review-layla-osman',
@@ -402,7 +402,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 58,
     reviewText:
-      'Views on a Reel. Worked. No complaints.',
+      'I ordered views for a Reel. It worked, and I had no complaints.',
   },
   {
     id: 'review-mark-hughes',
@@ -413,7 +413,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 59,
     reviewText:
-      'Instagram order status made sense when I checked later that night.',
+      'When I checked later that night, the Instagram order status was easy to understand.',
   },
   {
     id: 'review-tara-singh',
@@ -424,7 +424,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 60,
     reviewText:
-      'Would recommend for Instagram if you want something uncomplicated.',
+      'I’d recommend it for Instagram if you want something uncomplicated.',
   },
   {
     id: 'review-joe-bennett',
@@ -435,7 +435,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 61,
     reviewText:
-      'One Instagram order felt slow. Still finished. Giving 4.',
+      'One Instagram order felt a bit slow, but it still finished. Four stars from me.',
   },
   {
     id: 'review-sara-cohen',
@@ -446,7 +446,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 62,
     reviewText:
-      'IG post boost before a sale weekend. Glad I didn’t overthink it.',
+      'I used it for an Instagram post boost before a sale weekend. Glad I didn’t overthink it.',
   },
   {
     id: 'review-dev-patel',
@@ -457,7 +457,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 63,
     reviewText:
-      'Honest Instagram review: did what I paid for.',
+      'My honest take on the Instagram order: it did what I paid for.',
   },
   {
     id: 'review-mila-costa',
@@ -468,7 +468,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 64,
     reviewText:
-      'Used NovaLikes only for Instagram so far. Positive so far.',
+      'I’ve only used NovaLikes for Instagram so far, and the experience has been positive.',
   },
   {
     id: 'review-owen-blake',
@@ -479,7 +479,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 65,
     reviewText:
-      'My personal IG, not a brand. Still felt welcoming.',
+      'I used it for my personal Instagram, not a brand account, and still felt welcome.',
   },
   {
     id: 'review-rhea-kapoor',
@@ -490,7 +490,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 66,
     reviewText:
-      'Instagram package options weren’t overwhelming. Nice.',
+      'The Instagram package options were easy to look through without feeling overwhelming.',
   },
   {
     id: 'review-gabe-foster',
@@ -501,7 +501,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 67,
     reviewText:
-      'Bit of wait on Instagram delivery. Overall fine.',
+      'There was a bit of a wait on the Instagram delivery, but overall it was fine.',
   },
   {
     id: 'review-lana-meyers',
@@ -512,7 +512,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 68,
     reviewText:
-      'Second Instagram order this quarter. Same easy vibe.',
+      'This was my second Instagram order this quarter, and it had the same easy feel as before.',
   },
   {
     id: 'review-finn-sullivan',
@@ -523,7 +523,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 69,
     reviewText:
-      'Bought likes for an IG carousel. No issues.',
+      'I bought likes for an Instagram carousel and had no issues with the order.',
   },
   {
     id: 'review-dina-yusuf',
@@ -534,7 +534,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 70,
     reviewText:
-      'If you just want an Instagram order done, this works.',
+      'If you just want an Instagram order done without making it complicated, this works.',
   },
   {
     id: 'review-will-harper',
@@ -545,7 +545,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 71,
     reviewText:
-      'Creator friend sent me here for Instagram. Thanks, friend.',
+      'A creator friend sent me here for Instagram. Thanks, friend.',
   },
   {
     id: 'review-anya-petrova',
@@ -556,7 +556,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 72,
     reviewText:
-      'TikTok order was fine. No complaints.',
+      'My TikTok order went fine. No complaints from me.',
   },
   {
     id: 'review-reed-lawson',
@@ -567,7 +567,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 73,
     reviewText:
-      'Used it for one TikTok video. Did the job.',
+      'I used it for one TikTok video, and it did the job.',
   },
   {
     id: 'review-sana-qureshi',
@@ -578,7 +578,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 74,
     reviewText:
-      'Side-hustle TikTok clip. Happy enough.',
+      'Used it for a side-hustle TikTok clip. I’m happy enough with how it went.',
   },
   {
     id: 'review-hugh-dalton',
@@ -589,7 +589,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 75,
     reviewText:
-      'Third TikTok order with them. Still good.',
+      'This was my third TikTok order with them, and it’s still been good.',
   },
   {
     id: 'review-vera-novak',
@@ -600,7 +600,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 76,
     reviewText:
-      'I’m not a power user. TikTok checkout still made sense.',
+      'I’m not a power user, but the TikTok checkout still made sense to me.',
   },
   {
     id: 'review-ian-brooks',
@@ -611,7 +611,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 77,
     reviewText:
-      'Smaller TikTok package first. Glad I tested.',
+      'I started with a smaller TikTok package first. Glad I tested it that way.',
   },
   {
     id: 'review-nora-feld',
@@ -622,7 +622,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 78,
     reviewText:
-      'TikTok views for a product demo. Worked.',
+      'I ordered TikTok views for a product demo. It worked.',
   },
   {
     id: 'review-kyle-sanders',
@@ -633,7 +633,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 79,
     reviewText:
-      'One TikTok order felt slow. Otherwise okay.',
+      'One TikTok order felt slow, but otherwise the experience was okay.',
   },
   {
     id: 'review-juno-park',
@@ -644,7 +644,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 80,
     reviewText:
-      'TikTok followers for my creator page. Straightforward.',
+      'I ordered TikTok followers for my creator page. The process was straightforward.',
   },
   {
     id: 'review-brad-coleman',
@@ -655,7 +655,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 81,
     reviewText:
-      'Would use again for another TikTok push.',
+      'I’d use NovaLikes again for another TikTok push.',
   },
   {
     id: 'review-elise-martin',
@@ -666,7 +666,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 82,
     reviewText:
-      'Paid, waited, checked later. TikTok order done.',
+      'Paid, waited, checked back later, and the TikTok order was done.',
   },
   {
     id: 'review-ravi-desai',
@@ -677,7 +677,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 83,
     reviewText:
-      'TikTok likes. Nothing fancy. That’s fine by me.',
+      'I ordered TikTok likes. Nothing fancy, and that’s completely fine by me.',
   },
   {
     id: 'review-tess-morgan',
@@ -688,7 +688,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 84,
     reviewText:
-      'Support helped when I was unsure about TikTok. Polite.',
+      'Support helped when I was unsure about TikTok, and they were polite about it.',
   },
   {
     id: 'review-gina-flores',
@@ -699,7 +699,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 85,
     reviewText:
-      'Decent TikTok experience. 4 stars because of wait time.',
+      'Decent TikTok experience overall. I’m giving four stars because of the wait time.',
   },
   {
     id: 'review-paul-richter',
@@ -710,7 +710,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 86,
     reviewText:
-      'My first ever TikTok boost order. Less scary than expected.',
+      'This was my first ever TikTok boost order, and it was less scary than I expected.',
   },
   {
     id: 'review-rita-gomez',
@@ -721,7 +721,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 87,
     reviewText:
-      'TikTok side account. Order went through cleanly.',
+      'I used it for a side TikTok account, and the order went through cleanly.',
   },
   {
     id: 'review-sean-murphy',
@@ -732,7 +732,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 88,
     reviewText:
-      'Using NovaLikes only on TikTok right now. Positive.',
+      'I’m only using NovaLikes for TikTok right now, and so far it’s been positive.',
   },
   {
     id: 'review-maya-tran',
@@ -743,7 +743,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 89,
     reviewText:
-      'Product TikTok needed eyes. Got them.',
+      'My product TikTok needed more eyes on it, and that’s what I got.',
   },
   {
     id: 'review-todd-ellis',
@@ -754,7 +754,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 90,
     reviewText:
-      'Quiet TikTok order. No spammy emails after. Appreciate that.',
+      'The TikTok order was quiet and straightforward. I also appreciated not getting spammy emails afterward.',
   },
   {
     id: 'review-iris-weber',
@@ -765,7 +765,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 91,
     reviewText:
-      'TikTok package fit my budget. Didn’t feel pushed higher.',
+      'The TikTok package fit my budget, and I didn’t feel pushed toward a higher one.',
   },
   {
     id: 'review-vince-romano',
@@ -776,7 +776,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 92,
     reviewText:
-      'Another TikTok video next month — I’ll be back.',
+      'I’ve got another TikTok video next month, and I’ll be back.',
   },
   {
     id: 'review-pia-andersson',
@@ -787,7 +787,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 93,
     reviewText:
-      'TikTok order confirmation showed up. Tracking helped later.',
+      'The TikTok order confirmation came through, and the tracking was helpful later.',
   },
   {
     id: 'review-greg-nolan',
@@ -798,7 +798,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 94,
     reviewText:
-      'Facebook Page order went okay.',
+      'My Facebook Page order went okay overall.',
   },
   {
     id: 'review-lila-hartmann',
@@ -809,7 +809,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 95,
     reviewText:
-      'Business Page on Facebook. Easy enough.',
+      'I used it for a business Page on Facebook. Easy enough.',
   },
   {
     id: 'review-cora-blake',
@@ -820,7 +820,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 96,
     reviewText:
-      'Local shop Facebook Page. Happy with the result.',
+      'I used it for my local shop’s Facebook Page, and I’m happy with the result.',
   },
   {
     id: 'review-nick-steiner',
@@ -831,7 +831,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 97,
     reviewText:
-      'Facebook post likes for one promo. Exactly that — one post.',
+      'I bought Facebook post likes for one promo, and that’s exactly what I wanted for that one post.',
   },
   {
     id: 'review-jade-connolly',
@@ -842,7 +842,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 98,
     reviewText:
-      'Clinic Facebook Page. Process was calm.',
+      'I used it for a clinic Facebook Page. The process felt calm.',
   },
   {
     id: 'review-eric-vogel',
@@ -853,7 +853,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 99,
     reviewText:
-      'Coworker mentioned NovaLikes. Facebook order checked out.',
+      'A coworker mentioned NovaLikes, so I tried it for Facebook. The order checked out fine.',
   },
   {
     id: 'review-mona-sharif',
@@ -864,7 +864,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 100,
     reviewText:
-      'Not my first Facebook order here. Still easy.',
+      'This wasn’t my first Facebook order here, and it’s still been easy.',
   },
   {
     id: 'review-seth-rowan',
@@ -875,7 +875,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 101,
     reviewText:
-      'Facebook followers for the Page. Good enough.',
+      'I ordered Facebook followers for the Page. Good enough for me.',
   },
   {
     id: 'review-bella-moretti',
@@ -886,7 +886,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 102,
     reviewText:
-      'Team shared status so everyone could see. Helpful.',
+      'The team shared the status so everyone could see where things stood. That was helpful.',
   },
   {
     id: 'review-hugo-blanc',
@@ -897,7 +897,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 103,
     reviewText:
-      'Facebook order took longer than hoped. Still worked.',
+      'The Facebook order took longer than I hoped, but it still worked in the end.',
   },
   {
     id: 'review-kira-novak',
@@ -908,7 +908,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 104,
     reviewText:
-      'Page likes, not post likes — got the right thing. Relief.',
+      'I needed Page likes, not post likes, and I got the right thing. That was a relief.',
   },
   {
     id: 'review-dan-pierce',
@@ -919,7 +919,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 105,
     reviewText:
-      'Small business Facebook push. Would recommend.',
+      'I used it for a small business Facebook push, and I’d recommend it.',
   },
   {
     id: 'review-elle-navarro',
@@ -930,7 +930,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 106,
     reviewText:
-      'Facebook checkout on desktop was fine. No fuss.',
+      'I placed the Facebook order on desktop. Checkout was fine, no fuss.',
   },
   {
     id: 'review-roy-atkins',
@@ -941,7 +941,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 107,
     reviewText:
-      'Our Facebook promo week was less chaotic thanks to this.',
+      'Our Facebook promo week felt less chaotic because of this.',
   },
   {
     id: 'review-skye-benton',
@@ -952,7 +952,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 108,
     reviewText:
-      'Polite support on a Facebook question. No hard sell.',
+      'Support was polite when I had a Facebook question, and there was no hard sell.',
   },
   {
     id: 'review-pat-crowley',
@@ -963,7 +963,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 109,
     reviewText:
-      'Facebook Page likes. Quiet success.',
+      'I ordered Facebook Page likes. Quiet success.',
   },
   {
     id: 'review-zoe-maddox',
@@ -974,7 +974,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 110,
     reviewText:
-      'Giving 4 — Facebook delivery wasn’t instant, but fair.',
+      'I’m giving four stars because the Facebook delivery wasn’t instant, but it was fair.',
   },
   {
     id: 'review-mike-torres',
@@ -985,7 +985,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 111,
     reviewText:
-      'Second Facebook order for the same Page. Consistent.',
+      'This was my second Facebook order for the same Page, and the experience was consistent.',
   },
   {
     id: 'review-jon-hale',
@@ -996,7 +996,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 112,
     reviewText:
-      'Facebook post for a weekend sale. Did what we needed.',
+      'I used it for a Facebook post during a weekend sale. It did what we needed.',
   },
   {
     id: 'review-kim-orth',
@@ -1007,7 +1007,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 113,
     reviewText:
-      'Business manager approved it after I showed them the order flow. Ha.',
+      'Our business manager approved it after I showed them the order flow. Ha.',
   },
   {
     id: 'review-lee-prado',
@@ -1018,7 +1018,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 114,
     reviewText:
-      'Facebook only for us so far. Positive start.',
+      'We’ve only used NovaLikes for Facebook so far, but it’s been a positive start.',
   },
   {
     id: 'review-ana-ruiz',
@@ -1029,7 +1029,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 115,
     reviewText:
-      'Simple Facebook buy for a community Page.',
+      'Simple Facebook purchase for a community Page.',
   },
   {
     id: 'review-raj-chopra',
@@ -1039,7 +1039,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 116,
     reviewText:
-      'I compared a few sites and picked NovaLikes because it felt calmer. Ordered once, waited, checked status, moved on with my day. That’s ideal for me.',
+      'I compared a few sites and picked NovaLikes because it felt calmer. I ordered once, waited, checked the status, and moved on with my day. That’s ideal for me.',
   },
   {
     id: 'review-sue-lind',
@@ -1049,7 +1049,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 117,
     reviewText:
-      'Skeptical going in. The order itself was boring in the best way — no weird steps. I’ll use them again for the next campaign.',
+      'I was skeptical going in. The order itself was boring in the best way, with no weird steps. I’ll use them again for the next campaign.',
   },
   {
     id: 'review-ted-boone',
@@ -1059,7 +1059,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 118,
     reviewText:
-      'Weekend support was a little slower, weekday was fine. The order completed without me babysitting it. Satisfied overall.',
+      'Weekend support was a little slower, but weekday support was fine. The order completed without me having to babysit it, so overall I’m satisfied.',
   },
   {
     id: 'review-violet-shaw',
@@ -1069,7 +1069,7 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 119,
     reviewText:
-      'I manage a tiny brand and don’t have time for complicated tools. This was pick, pay, wait. Works for my brain.',
+      'I manage a tiny brand and don’t have time for complicated tools. This was basically pick, pay, and wait. That works for my brain.',
   },
   {
     id: 'review-hugo-marsh',
@@ -1079,6 +1079,6 @@ export const EXTRA_REVIEW_SEEDS: ExtraReviewSeed[] = [
     featured: false,
     displayOrder: 120,
     reviewText:
-      'Told my sister she could place it. She did. If she can do it, anyone can. Lol.',
+      'I told my sister she could place the order, and she did. If she can do it, anyone can. Lol.',
   }
 ];

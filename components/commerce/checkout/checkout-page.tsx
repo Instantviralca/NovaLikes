@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
@@ -9,6 +9,7 @@ import { CheckoutSummary } from '@/components/commerce/checkout/checkout-summary
 import { CouponSection } from '@/components/commerce/checkout/coupon-section';
 import { CustomerInformationForm } from '@/components/commerce/checkout/customer-information-form';
 import { PaymentMethods } from '@/components/commerce/checkout/payment-methods';
+import type { MollieCardFieldsHandle } from '@/components/commerce/checkout/mollie-card-fields';
 import { PlaceOrderButton } from '@/components/commerce/checkout/place-order-button';
 import { TermsAgreement } from '@/components/commerce/checkout/terms-agreement';
 import { CheckoutProgress } from '@/components/design-system/checkout-progress';
@@ -37,12 +38,13 @@ function isValidEmail(email: string): boolean {
 
 export function CheckoutPage() {
   const cart = useCart();
-  const { ui } = useI18nChrome();
+  const { ui, locale, market } = useI18nChrome();
   const analytics = useAnalyticsOptional();
   const checkoutViewSent = useRef(false);
   const router = useRouter();
   const searchParams = useSearchParams();
   const paymentCancelled = searchParams.get('cancelled') === '1';
+  const restored = searchParams.get('restored') === '1';
   const cartTransferPending = Boolean(
     searchParams.get(CART_QUERY_PARAM) || searchParams.get('cartHandoff'),
   );
@@ -60,6 +62,43 @@ export function CheckoutPage() {
     form?: string;
   }>({});
   const [submitting, setSubmitting] = useState(false);
+  const mollieHandleRef = useRef<MollieCardFieldsHandle | null>(null);
+
+  const captureAbandonedCart = useCallback(async () => {
+    if (!isValidEmail(customer.email.trim()) || cart.items.length === 0) return;
+    try {
+      await fetch('/api/checkout/abandon-capture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: customer.email,
+          firstName: customer.firstName,
+          lastName: customer.lastName,
+          phone: customer.phone,
+          items: cart.items,
+          coupon: cart.coupon,
+          currency: cart.totals.total.currency,
+          subtotalAmount: cart.totals.subtotal.amount,
+          discountAmount: cart.totals.discount.amount,
+          totalAmount: cart.totals.total.amount,
+          locale,
+          market: market ?? undefined,
+          landingPath: typeof window === 'undefined' ? undefined : window.location.pathname,
+          referrer: typeof document === 'undefined' ? undefined : document.referrer,
+          checkoutPath: '/checkout',
+        }),
+        keepalive: true,
+      });
+    } catch {
+      // Recovery capture must never interrupt checkout.
+    }
+  }, [cart.coupon, cart.items, cart.totals, customer, locale, market]);
+
+  useEffect(() => {
+    if (!isValidEmail(customer.email.trim()) || cart.items.length === 0) return;
+    const timer = window.setTimeout(() => void captureAbandonedCart(), 2500);
+    return () => window.clearTimeout(timer);
+  }, [captureAbandonedCart, customer.email, cart.items.length]);
 
   const paymentMethods: PaymentMethodOption[] = useMemo(
     () =>
@@ -152,6 +191,27 @@ export function CheckoutPage() {
     setErrors({});
     setSubmitting(true);
     try {
+      let cardToken: string | undefined;
+      if (paymentMethodId === 'remote-payment') {
+        if (!mollieHandleRef.current) {
+          setErrors({ form: 'Secure card form is not ready yet. Please wait a moment and try again.' });
+          setSubmitting(false);
+          return;
+        }
+        try {
+          cardToken = await mollieHandleRef.current.createCardToken();
+        } catch (tokenError) {
+          setErrors({
+            form:
+              tokenError instanceof Error
+                ? tokenError.message
+                : 'Please check your card details and try again.',
+          });
+          setSubmitting(false);
+          return;
+        }
+      }
+
       const response = await fetch('/api/checkout/place-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -163,6 +223,11 @@ export function CheckoutPage() {
           coupon: cart.coupon,
           termsAccepted,
           marketingOptIn: Boolean(customer.marketingOptIn),
+          cardToken,
+          recoveryPublicId: document.cookie
+            .split('; ')
+            .find((row) => row.startsWith('iv_cart_recovery='))
+            ?.slice('iv_cart_recovery='.length),
         }),
       });
       const data = (await response.json()) as {
@@ -213,6 +278,14 @@ export function CheckoutPage() {
               {ui.checkout.paymentCancelled}
             </p>
           ) : null}
+          {restored ? (
+            <p
+              className="rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-900"
+              role="status"
+            >
+              Your order has been restored.
+            </p>
+          ) : null}
           <CheckoutProgress current="payment" className="max-w-2xl" />
         </div>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
@@ -223,6 +296,7 @@ export function CheckoutPage() {
                 value={customer}
                 errors={{ email: errors.email }}
                 onChange={setCustomer}
+                onEmailBlur={() => void captureAbandonedCart()}
                 hideLegend
               />
             </div>
@@ -234,6 +308,7 @@ export function CheckoutPage() {
                 onChange={setPaymentMethodId}
                 error={errors.payment}
                 hideLegend
+                mollieHandleRef={mollieHandleRef}
               />
             </div>
             <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)]">

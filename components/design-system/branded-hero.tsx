@@ -58,15 +58,8 @@ export function BrandedHero({
   className,
   priorityImage = true,
 }: BrandedHeroProps) {
-  const isPremiumDashboardHero =
-    instagramVariant === 'views' ||
-    instagramVariant === 'comments' ||
-    facebookVariant === 'followers' ||
-    facebookVariant === 'page-likes' ||
-    facebookVariant === 'post-likes' ||
-    tiktokVariant === 'followers' ||
-    tiktokVariant === 'likes' ||
-    tiktokVariant === 'views';
+  /** Match CA IG Followers compact hero across all geo service pages. */
+  const isPremiumDashboardHero = false;
   return (
     <Section
       spacing="lg"
@@ -116,11 +109,10 @@ export function BrandedHero({
               as="h1"
               size="display"
               className={cn(
-                'text-balance tracking-tight',
+                'text-balance tracking-tight min-w-0',
                 isPremiumDashboardHero
-                  ? 'mt-4 max-w-[22ch] sm:mt-5 lg:text-[clamp(2.85rem,4.4vw,3.65rem)]'
-                  : 'max-w-[16ch]',
-                'min-w-0',
+                  ? 'mt-4 max-w-[22ch] sm:mt-5 lg:!text-[clamp(2.85rem,4.4vw,3.65rem)]'
+                  : 'max-w-[22ch] !text-[clamp(1.85rem,1.25rem+1.5vw,2.6rem)]',
               )}
             >
               {title}

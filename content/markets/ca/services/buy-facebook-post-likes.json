@@ -1,0 +1,930 @@
+{
+  "content": {
+    "slug": "buy-facebook-post-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Post Likes Canada | Likes for Posts | NovaLikes",
+      "description": "Buy Facebook Post Likes in Canada for public posts. Choose flexible like packages, submit your post URL, order without a password, and track your purchase."
+    },
+    "hero": {
+      "eyebrow": "FACEBOOK SERVICES FOR CANADA",
+      "title": "Buy Facebook Post Likes in Canada and Strengthen Post Engagement",
+      "description": "Put more visible engagement behind the Facebook posts that matter most to your business, brand, or campaign. NovaLikes lets Canadian businesses, creators, brands, and Page managers buy Facebook Post Likes for eligible public posts without sharing Facebook login details. Choose the number of likes you want, submit the exact public post URL, and complete your order online. Use Post Likes around a product launch, business announcement, event, promotion, project showcase, or other content you want to support instead of treating every Facebook post the same.",
+      "purpose": "Convert for Facebook post likes packages in Canada",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Canada",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post",
+        "Buy Likes on Facebook Post",
+        "Can You Buy Facebook Post Likes in Canada"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose Your Facebook Post Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-post-trust-url",
+          "label": "Public Post URL Only"
+        },
+        {
+          "id": "fb-post-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-post-trust-checkout",
+          "label": "Secure Checkout"
+        },
+        {
+          "id": "fb-post-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp",
+        "alt": "Facebook post preview with rising post likes and engagement analytics illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose a Post Likes Package Around the Content",
+      "description": "Different Facebook posts have different purposes. NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K Post Likes. A routine Page update may call for a smaller quantity, while an important launch, campaign, or evergreen business post may justify a larger package. Before choosing, consider the post's existing Like count, how important the post is, your Page size and the increase you actually want. Choose based on the post you're supporting rather than automatically selecting the largest package.",
+      "purpose": "Present real NovaLikes.com Facebook post likes packages",
+      "primaryKeyword": "Facebook Post Likes",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Facebook Post Likes Packages",
+      "emptyMessage": "Facebook Post Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-post-likes",
+      "title": "Build Stronger Visible Activity Around Important Content",
+      "description": "Choose Facebook Post Likes when a specific eligible public post is the content you want to support with more visible engagement. The service increases the Like count shown on that post, while Followers, Page Likes, Comments, Shares, organic reach, customer activity and business results remain separate outcomes.",
+      "purpose": "Explain motivations for buying Facebook post likes",
+      "primaryKeyword": "Increase Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Canada",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Post Engagement"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-post-product-launch",
+          "title": "Product Launches",
+          "description": "Businesses often use Post Like packages to strengthen engagement around product launches and promotional announcements."
+        },
+        {
+          "id": "fb-post-social-proof",
+          "title": "Build Social Proof",
+          "description": "Public interaction can help a Facebook post appear more active when people first discover it."
+        },
+        {
+          "id": "fb-post-campaign",
+          "title": "Campaign Support",
+          "description": "Marketing campaigns often use Post Likes alongside paid advertising and regular publishing."
+        },
+        {
+          "id": "fb-post-flexible",
+          "title": "Flexible Packages",
+          "description": "Choose the quantity that matches your campaign instead of selecting more engagement signals than your content naturally supports."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-post-likes",
+      "title": "Why Choose NovaLikes for Facebook Post Likes?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-post-likes-delivery",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-facebook-post-likes-order-works-canada",
+      "title": "How Your Facebook Post Likes Order Works",
+      "description": "The process starts with the post you want to support.",
+      "purpose": "Explain the five-step Facebook Post Likes ordering process",
+      "primaryKeyword": "how to buy Facebook Post Likes",
+      "supportingKeywords": [
+        "Buy Facebook Post Likes in Canada",
+        "Buy Likes for Facebook Post",
+        "Buy Facebook Likes for Post"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-post-step-1",
+          "title": "Choose the Post",
+          "description": "Start with the exact eligible public Facebook post you want to support."
+        },
+        {
+          "id": "fb-post-step-2",
+          "title": "Select the Likes Quantity",
+          "description": "Compare the available packages and current pricing."
+        },
+        {
+          "id": "fb-post-step-3",
+          "title": "Copy the Direct Post URL",
+          "description": "Use the individual post link rather than the Facebook Page homepage."
+        },
+        {
+          "id": "fb-post-step-4",
+          "title": "Submit Your Order Details",
+          "description": "Paste the post URL into the required field."
+        },
+        {
+          "id": "fb-post-step-5",
+          "title": "Review Before Checkout",
+          "description": "Check the Post Like quantity, URL, and price before paying."
+        }
+      ],
+      "cta": {
+        "label": "Choose Your Post Likes Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "post-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain post URL and order requirements",
+      "primaryKeyword": "Facebook Post Likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-post-req-url",
+          "title": "Public Facebook Post URL",
+          "description": "Provide the public URL of the Facebook post receiving the selected Like package."
+        },
+        {
+          "id": "fb-post-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that best matches your campaign objectives and current engagement level."
+        },
+        {
+          "id": "fb-post-req-public",
+          "title": "Public Post Access",
+          "description": "Keep the selected Facebook post publicly available while your order is being processed."
+        },
+        {
+          "id": "fb-post-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive order confirmations, delivery updates and customer support if required."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-post-likes-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Canada service page.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-post-likes-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook Post Likes",
+      "faqIds": [
+        "ca-fb-post-where-buy",
+        "ca-fb-post-more-likes",
+        "ca-fb-post-cheap",
+        "ca-fb-post-real",
+        "ca-fb-post-how-many",
+        "ca-fb-post-password",
+        "ca-fb-post-info",
+        "ca-fb-post-page-url",
+        "ca-fb-post-cost",
+        "ca-fb-post-delivery-time",
+        "ca-fb-post-followers",
+        "ca-fb-post-page-likes",
+        "ca-fb-post-reach",
+        "ca-fb-post-comments-shares",
+        "ca-fb-post-business",
+        "ca-fb-post-older",
+        "ca-fb-post-which-type",
+        "ca-fb-post-wrong-url",
+        "ca-fb-post-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-post-likes",
+      "title": "Explore Other Facebook Services",
+      "description": "Choose the Facebook service that matches the metric you want to change.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-page-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-post-likes-final-cta",
+      "title": "Put More Likes Behind the Facebook Posts That Matter",
+      "description": "Choose the post you want to support, select a Facebook Post Likes package that fits the content, and submit the correct public post URL without sharing your Facebook login. Then keep building what the Like count cannot replace: useful content, genuine customer interaction, and a Facebook Page people can trust.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your Facebook Post Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-facebook-post-likes-canada",
+        "title": "Why Choose NovaLikes for Facebook Post Likes?",
+        "description": "The service should be easy to understand before you place an order.",
+        "items": [
+          {
+            "id": "fb-post-wc-post",
+            "title": "Post-Specific Ordering",
+            "description": "The likes apply to the eligible public Facebook post connected to the URL you submit.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-wc-packages",
+            "title": "Flexible Like Quantities",
+            "description": "Choose from smaller or larger packages depending on the post and budget you're working with.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-wc-password",
+            "title": "No Facebook Password Required",
+            "description": "NovaLikes does not need your Facebook password, verification codes, Page admin login, or private account access.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-wc-pricing",
+            "title": "Clear Pricing",
+            "description": "Review the Post Like quantity and current package price before completing checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes order tracking afterward for available status information.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-post-wc-support",
+            "title": "Customer Support",
+            "description": "If your order needs attention, provide the relevant purchase details so support can identify the correct order.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-post-likes-without-login-canada",
+        "title": "Buy Facebook Post Likes Without Sharing Your Login",
+        "description": "NovaLikes processes Post Likes orders using the public Facebook post URL you provide.",
+        "cards": [
+          {
+            "id": "fb-post-can-need",
+            "title": "What You Need",
+            "description": "The exact public Facebook post URL and your selected Post Likes package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Facebook password, verification codes, personal profile login, Page admin access, Business Manager access or private messages.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before checkout, open the URL yourself and make sure it goes directly to the individual Facebook post receiving the likes. A general Facebook Page URL is not the correct target for a Post Likes order."
+      },
+      "doesBuyingHelp": {
+        "id": "what-real-facebook-post-likes-mean-canada",
+        "title": "Looking for \"Real Facebook Post Likes\"? Understand the Service First",
+        "description": "\"Real Facebook Post Likes\" is a common phrase people use when comparing engagement services. You may also see terms such as high-quality Facebook Post Likes, active Facebook Likes or organic Facebook Likes. Different providers may use those terms differently. Before purchasing, ask what metric changes, how many Likes are included, which post receives them and what information you need to submit.",
+        "helpTitle": "What NovaLikes Facebook Post Likes Packages Do",
+        "helpItems": [
+          "Increase the Like count shown on the eligible public Facebook post submitted with your order"
+        ],
+        "limitTitle": "They Do Not Automatically Guarantee",
+        "limitItems": [
+          "Followers or Page Likes",
+          "Comments, shares or organic reach",
+          "Customers or sales"
+        ],
+        "closingNote": "Knowing that before checkout helps you compare services more realistically. Use genuine Facebook insights to judge your real content performance."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-facebook-post-likes-order-canada",
+        "title": "What Happens After You Order?",
+        "description": "After checkout, the selected Post Likes package and public Facebook post URL are associated with your order. The service is then processed for the submitted post.",
+        "steps": [
+          {
+            "id": "fb-post-th-1",
+            "title": "Package and Post URL Are Connected",
+            "description": "The selected Post Likes package and public Facebook post URL are associated with your order."
+          },
+          {
+            "id": "fb-post-th-2",
+            "title": "Likes Target That Post",
+            "description": "The Post Likes are directed to the content connected to the URL in your order."
+          },
+          {
+            "id": "fb-post-th-3",
+            "title": "Keep the Post Public",
+            "description": "Keep the submitted content publicly accessible where required while processing is active."
+          },
+          {
+            "id": "fb-post-th-4",
+            "title": "Track and Contact Support If Needed",
+            "description": "Processing time can vary depending on the package quantity and current order conditions. Use NovaLikes order tracking for available updates."
+          }
+        ],
+        "closingNote": "Do not delete the post mid-order. If you've submitted incorrect information, contact support with your order details as soon as possible."
+      },
+      "serviceCompare": {
+        "id": "facebook-post-likes-page-likes-followers-canada",
+        "title": "Post Likes, Page Likes or Followers: Start With the Metric",
+        "description": "Choose the service based on the exact number you want to change.",
+        "current": {
+          "title": "Facebook Post Likes",
+          "description": "Like count on one specific eligible public Facebook post",
+          "bestFor": "Individual post engagement",
+          "ctaLabel": "Facebook Post Likes"
+        },
+        "likes": {
+          "title": "Facebook Page Likes",
+          "description": "Like count associated with an eligible public Facebook Page",
+          "bestFor": "Page-level Like count",
+          "href": "/ca/buy-facebook-page-likes",
+          "ctaLabel": "Facebook Page Likes"
+        },
+        "views": {
+          "title": "Facebook Followers",
+          "description": "Follower count displayed on an eligible public Facebook Page",
+          "bestFor": "Page audience size",
+          "href": "/ca/buy-facebook-followers",
+          "ctaLabel": "Facebook Followers"
+        },
+        "combinedNote": "Use Facebook Post Likes when one specific post is your priority. Choose Page Likes for the Page-level Like count, or Followers for visible Page audience size.",
+        "commentsHref": ""
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-facebook-post-likes-canada",
+        "title": "Before You Buy Facebook Post Likes",
+        "description": "Check these details before completing your order.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "fb-post-bb-post",
+            "title": "Confirm the Exact Post",
+            "description": "Open the public Facebook post you want to use.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-bb-url",
+            "title": "Copy the Direct Post URL",
+            "description": "Do not submit only your general Facebook Page URL.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "fb-post-bb-quantity",
+            "title": "Check the Post Like Quantity",
+            "description": "Review the package size before adding it to your order.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-bb-price",
+            "title": "Confirm the Current Price",
+            "description": "Make sure the price matches the quantity you selected.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-post-bb-public",
+            "title": "Keep the Post Publicly Accessible",
+            "description": "Avoid deleting or restricting the target content while processing depends on it.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require Facebook login details.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-post-bb-service",
+            "title": "Choose the Correct Facebook Service",
+            "description": "Post Likes, Page Likes, and Followers are separate metrics.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "fb-post-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the applicable purchase, service, and refund information before checkout.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "post-likes-reach-not-guaranteed-facebook-canada",
+        "title": "Don't Treat Post Likes as a Guarantee of Facebook Reach",
+        "description": "A Facebook Post Like count and organic distribution are different things. Buying Post Likes should not be treated as a guaranteed way to increase organic post reach, generate more shares, attract comments, increase Facebook Followers or Page Likes, drive website traffic, generate leads, create bookings or produce sales.",
+        "eyebrow": "Post Likes vs Reach",
+        "closingNote": "A NovaLikes Post Likes package changes the Like count on the selected eligible public post. Facebook's content distribution and genuine audience response remain separate outcomes. Post Likes and genuine engagement are different — use genuine Facebook performance data to make marketing decisions.",
+        "cards": [
+          {
+            "id": "fb-post-ww-reach",
+            "title": "Organic Post Reach",
+            "description": "Distribution is separate from visible Like count.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-ww-comments",
+            "title": "Comments and Shares",
+            "description": "Different types of Facebook interaction from Likes.",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-post-ww-page",
+            "title": "Page-Level Metrics",
+            "description": "Followers and Page Likes apply to the Page, not one post.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-ww-business",
+            "title": "Business Results",
+            "description": "Leads, bookings and sales depend on content and the business behind it.",
+            "icon": "briefcase"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "which-facebook-posts-worth-supporting-likes-canada",
+        "title": "Which Facebook Posts Are Worth Supporting With More Likes?",
+        "description": "Not every Facebook post needs additional likes. A better approach is to identify the content that has lasting value or supports an important business goal. Choose the post first. Then decide whether increasing its visible Like count supports what you're trying to achieve.",
+        "quantityColumnLabel": "Post Type",
+        "recommendedColumnLabel": "Why It May Fit",
+        "rows": [
+          {
+            "id": "fb-post-ps-launch",
+            "quantity": "Product or Service Launches",
+            "recommendedFor": "If you're introducing something new, focus on the post that explains the offer most clearly."
+          },
+          {
+            "id": "fb-post-ps-announcement",
+            "quantity": "Important Business Announcements",
+            "recommendedFor": "A new location, extended service area, change in opening hours, milestone, or major company update can remain useful after publication."
+          },
+          {
+            "id": "fb-post-ps-showcase",
+            "quantity": "Project Showcases",
+            "recommendedFor": "Contractors, designers, agencies, photographers, and other service businesses can support posts that show strong examples of their work."
+          },
+          {
+            "id": "fb-post-ps-offers",
+            "quantity": "Offers and Seasonal Campaigns",
+            "recommendedFor": "A promotion tied to a Canadian holiday, shopping period, local event, or seasonal service may have a clear campaign purpose."
+          },
+          {
+            "id": "fb-post-ps-events",
+            "quantity": "Events",
+            "recommendedFor": "Posts announcing an event, opening, workshop, launch, or community activity may receive more attention from people checking the Page."
+          },
+          {
+            "id": "fb-post-ps-evergreen",
+            "quantity": "Evergreen Content",
+            "recommendedFor": "Useful guides, FAQs, demonstrations, or company introductions may continue representing your business well over time."
+          }
+        ],
+        "bottomNote": "Compare Post Like package sizes and current prices in the pricing section above."
+      },
+      "bestPractices": {
+        "id": "affordable-facebook-post-likes-canada",
+        "title": "Affordable Facebook Post Likes Without Choosing Blindly",
+        "description": "If you're searching for cheap Facebook Post Likes in Canada, price will naturally be part of your decision. Compare more than the cost. Check:",
+        "closingNote": "An affordable Facebook Post Likes package should clearly explain what you're purchasing before checkout. NovaLikes provides multiple quantities so you can select an option based on the post and budget you're working with.",
+        "items": [
+          {
+            "id": "fb-post-bp-1",
+            "title": "Post Likes Included",
+            "description": "Check how many Post Likes are included in the package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-post-bp-2",
+            "title": "Current Package Price",
+            "description": "Review pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-post-bp-3",
+            "title": "Public Post Requirements",
+            "description": "Know what direct Facebook post URL you need to submit.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-post-bp-4",
+            "title": "No Login Details",
+            "description": "Your Facebook password should not be requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-post-bp-5",
+            "title": "Order Tracking",
+            "description": "Check whether order tracking is available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-post-bp-6",
+            "title": "Customer Support",
+            "description": "Confirm support is available if you need help.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-post-bp-7",
+            "title": "Service Policies",
+            "description": "Review refund and purchase policies before ordering.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-facebook-post-likes-canada",
+        "title": "Common Mistakes When Buying Facebook Post Likes",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-page-likes": {
+            "title": "Facebook Page Likes",
+            "description": "Choose Facebook Page Likes when you want to increase the Page-level Like count rather than engagement on one individual post.",
+            "ctaLabel": "Buy Facebook Page Likes"
+          },
+          "buy-facebook-followers": {
+            "title": "Facebook Followers",
+            "description": "Choose Facebook Followers when your goal is to increase the follower count displayed on an eligible public Facebook Page.",
+            "ctaLabel": "Buy Facebook Followers"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "build-stronger-visible-activity-post-likes-canada",
+      "title": "Add Visible Engagement to Facebook Posts With a Clear Business Purpose",
+      "description": "Facebook Post Likes work at the individual-post level, which makes the choice of post important. Canadian businesses may want to support a launch announcement, project showcase, seasonal promotion, event update, product post or other content that remains useful after it is published. A Post Likes package increases the visible Like count on that selected public post, but it does not automatically change Page Followers, Page Likes, comments, shares or organic distribution. Choose a post with a clear message, accurate information and a useful next step for anyone who becomes interested. If the post represents a business offer, make sure the linked website, contact details or Page information are current as well. The goal is to strengthen the presentation of meaningful content rather than add Likes to posts with no wider purpose.",
+      "items": [
+        {
+          "id": "fb-post-wb-location",
+          "title": "A New Location",
+          "description": "A post announcing another store, office, clinic, restaurant, or service location can become an important reference point on the Page."
+        },
+        {
+          "id": "fb-post-wb-product",
+          "title": "A New Product",
+          "description": "Use Post Likes around content that clearly presents what you're launching rather than a vague promotional update."
+        },
+        {
+          "id": "fb-post-wb-seasonal",
+          "title": "Seasonal Services",
+          "description": "Home services, retail, travel, hospitality, beauty, fitness, and other businesses may have seasonal periods when certain posts matter more."
+        },
+        {
+          "id": "fb-post-wb-campaign",
+          "title": "A Limited Campaign",
+          "description": "Focus on the post carrying the main message rather than spreading engagement across unrelated Page content."
+        },
+        {
+          "id": "fb-post-wb-milestone",
+          "title": "A Company Milestone",
+          "description": "Awards, anniversaries, major projects, or company updates can remain visible proof of business activity."
+        }
+      ],
+      "bottomNote": "Choose the post for its business or content value first, then use Post Likes to support the visible engagement around it."
+    },
+    "howToBuy": {
+      "id": "how-facebook-post-likes-order-works-canada",
+      "title": "How Your Facebook Post Likes Order Works",
+      "description": "The process starts with the post you want to support.",
+      "steps": [
+        {
+          "id": "fb-post-step-1",
+          "title": "Choose the Post",
+          "description": "Start with the exact eligible public Facebook post you want to support."
+        },
+        {
+          "id": "fb-post-step-2",
+          "title": "Select the Likes Quantity",
+          "description": "Compare the available packages and current pricing."
+        },
+        {
+          "id": "fb-post-step-3",
+          "title": "Copy the Direct Post URL",
+          "description": "Use the individual post link rather than the Facebook Page homepage."
+        },
+        {
+          "id": "fb-post-step-4",
+          "title": "Submit Your Order Details",
+          "description": "Paste the post URL into the required field."
+        },
+        {
+          "id": "fb-post-step-5",
+          "title": "Review Before Checkout",
+          "description": "Check the Post Like quantity, URL, and price before paying."
+        },
+        {
+          "id": "fb-post-step-6",
+          "title": "Track Your Purchase",
+          "description": "Use NovaLikes order tracking afterward for available status updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore Other Facebook Services",
+    "relatedIntro": "Choose the Facebook service that matches the metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: How Can You Buy Facebook Post Likes in Canada?",
+      "text": "You can buy Facebook Post Likes in Canada through NovaLikes by selecting an available Post Likes package, submitting the exact public Facebook post URL, and completing checkout online. Your Facebook password is not required. The likes apply to that specific post and do not automatically increase Facebook Followers or Page Likes."
+    },
+    "storySections": [
+      {
+        "id": "built-for-canada",
+        "title": "Choose Facebook Post Likes Around the Canadian Content You Actually Want to Support",
+        "lead": "Post Likes apply to individual content, so start with the role of the post rather than treating every Page update as equally important.",
+        "paragraphs": [
+          "A Canadian ecommerce business may focus on a product launch. A restaurant may have an important menu or event post. A trade or service business may highlight completed work. A retailer may feature new products. A creator may support priority content. An organization may have an event or community announcement that deserves more attention.",
+          "Choose the post first, then decide whether additional visible Likes fit what that content is meant to do."
+        ],
+        "footer": "Post Likes can support one visible engagement metric. The content behind that number still needs a purpose.",
+        "items": [
+          {
+            "title": "Local Businesses",
+            "body": "Support posts showing real services, projects, products, events or business updates."
+          },
+          {
+            "title": "Ecommerce Businesses",
+            "body": "Focus on genuine launches, product content and important shopping campaigns."
+          },
+          {
+            "title": "Service Businesses",
+            "body": "Use Post Likes around completed work, educational posts and meaningful company announcements."
+          },
+          {
+            "title": "Creators",
+            "body": "Put visible engagement behind priority content instead of treating every post the same way."
+          },
+          {
+            "title": "Organizations",
+            "body": "Support genuine event, campaign and community information where the individual post matters."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Use Post Likes around selected content while genuine publishing, advertising and customer activity continue separately."
+          }
+        ]
+      },
+      {
+        "id": "ca-campaign-content",
+        "title": "Put Facebook Post Likes Behind Canadian Campaign Content With a Clear Role",
+        "lead": "Some posts matter more because customers are actively looking for information around a launch, season, promotion or business change.",
+        "footer": "Post Likes can support campaign presentation. The real campaign still depends on useful creative, accurate information and a genuine offer.",
+        "items": [
+          {
+            "title": "Black Friday and Cyber Monday",
+            "body": "Canadian retail and ecommerce businesses may have priority Facebook posts during major November shopping periods."
+          },
+          {
+            "title": "Boxing Day Campaigns",
+            "body": "Retailers and ecommerce brands may use selected posts around Boxing Day and the wider holiday shopping period."
+          },
+          {
+            "title": "Product Launches",
+            "body": "Support the post that most clearly introduces or explains the genuine product."
+          },
+          {
+            "title": "Seasonal Canadian Services",
+            "body": "Travel, hospitality, home services, retail, fitness and other businesses may have posts whose importance changes throughout the year."
+          },
+          {
+            "title": "New Locations or Service Areas",
+            "body": "A business entering another city, province or local market can prioritise the post that clearly explains what has changed."
+          },
+          {
+            "title": "Events",
+            "body": "Venues, organizations and local businesses may have important posts around genuine events, openings or community activity."
+          },
+          {
+            "title": "Company Milestones",
+            "body": "Anniversaries, major projects, awards or other genuine company developments can remain useful reference points on the Page."
+          }
+        ]
+      },
+      {
+        "id": "strong-content",
+        "title": "Use Facebook Post Likes to Support Strong Content, Not to Replace It",
+        "lead": "Like count is only one visible element of a Facebook post. Genuine viewers can immediately evaluate the content around it.",
+        "bullets": [
+          "the image or video",
+          "caption",
+          "Comments",
+          "Shares",
+          "Page name",
+          "business information",
+          "recent Page activity"
+        ],
+        "paragraphs": [
+          "A stronger visible Like count can make selected content appear more active, but it cannot make an unclear post useful or an inaccurate claim trustworthy.",
+          "Use Post Likes for the metric they provide. Keep the creative, information and purpose of the post as separate parts of the strategy."
+        ],
+        "footer": "Post Likes can support presentation. The content gives genuine people a reason to pay attention."
+      },
+      {
+        "id": "real-activity",
+        "title": "Build Facebook Engagement Around Real Business Activity",
+        "lead": "Posts based on genuine work, products and first-hand knowledge give customers more substance than generic promotional claims.",
+        "footer": "Post Likes can support visible engagement. Real activity gives the content something meaningful to represent.",
+        "items": [
+          {
+            "title": "Completed Projects",
+            "body": "Show work the business has actually completed and can accurately explain."
+          },
+          {
+            "title": "Products You Really Sell",
+            "body": "Use genuine photos, useful product information and accurate availability details."
+          },
+          {
+            "title": "Business Milestones",
+            "body": "Share real openings, expansions, anniversaries, awards or other company developments."
+          },
+          {
+            "title": "Events",
+            "body": "Publish accurate dates, locations and event details."
+          },
+          {
+            "title": "Customer Questions",
+            "body": "Turn genuine recurring enquiries into useful Facebook content."
+          },
+          {
+            "title": "Behind-the-Scenes Activity",
+            "body": "Show real teams, places and processes where appropriate."
+          },
+          {
+            "title": "Professional Knowledge",
+            "body": "Use first-hand expertise to explain something customers actually need to understand."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Use Facebook Post Likes Around Canadian Local Business Content Customers Can Verify",
+        "paragraphs": [
+          "Facebook posts can help customers understand the real business behind the Page before deciding whether to enquire, visit, book or buy.",
+          "Restaurants may publish menu or venue updates. Trades can show finished work. Salons may feature recent services or results. Retailers can introduce products. Property businesses may share listings. Tourism and hospitality companies may promote genuine experiences. Professional services can explain useful customer topics.",
+          "If Post Likes are supporting this content, keep the Page, business information and claims consistent with what customers can verify through official channels."
+        ],
+        "footer": "Visible engagement can support presentation. Local trust comes from the Canadian business behind the post."
+      },
+      {
+        "id": "useful-next-step",
+        "title": "Give Interested People Somewhere Useful to Go After the Facebook Post",
+        "lead": "A post may create interest, but the wider Page and customer journey determine what happens next.",
+        "footer": "Post Likes can support visible activity around the content. A useful next step determines whether genuine interest can go further.",
+        "items": [
+          {
+            "title": "Keep Page Information Current",
+            "body": "Make sure websites, contact details, locations and important business information are accurate."
+          },
+          {
+            "title": "Explain the Offer Clearly",
+            "body": "If the post promotes something, make it easy to understand what the product, service or event actually is."
+          },
+          {
+            "title": "Use the Correct Destination",
+            "body": "Send interested customers to the relevant product, service, booking or information page."
+          },
+          {
+            "title": "Respond to Genuine Questions",
+            "body": "Real customer Comments deserve accurate responses from the business."
+          },
+          {
+            "title": "Keep Related Content Available",
+            "body": "Someone exploring the Page should be able to find more than one useful post."
+          }
+        ]
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep Facebook Post Likes Separate From Genuine Customer Proof",
+        "paragraphs": [
+          "A Like count can make a post appear more active, but it does not show whether genuine customers have bought from, hired, visited or recommended the company.",
+          "Canadian businesses may have stronger evidence through verified reviews, genuine Recommendations, authentic testimonials, completed projects, case studies, customer photos, real Comments and accurate business information.",
+          "Use genuine customer evidence where it exists. Do not present purchased Post Likes as customer approval."
+        ],
+        "footer": "Post Likes can support content presentation. Genuine customer experience creates a different and more meaningful form of trust."
+      },
+      {
+        "id": "brand-campaigns",
+        "title": "Keep Facebook Post Likes in Context for Canadian Brand Campaigns",
+        "paragraphs": [
+          "Brands and agencies may use Facebook as one part of campaigns that also involve Instagram, TikTok, paid social, search, ecommerce, email, creators and the company website.",
+          "If Post Likes are part of the campaign, professional reporting should keep purchased and genuine activity separate.",
+          "Distinguish purchased Post Likes from genuine engagement, organic reach, paid reach, Page growth, website activity and real business outcomes."
+        ]
+      },
+      {
+        "id": "business-results",
+        "title": "Measure Business Outcomes Separately From Facebook Post Likes",
+        "lead": "A stronger Like count can support how active a selected post appears, but business value depends on genuine customer behaviour.",
+        "footer": "Measure the real objective separately instead of treating the displayed Like count as the final result.",
+        "items": [
+          {
+            "title": "Website Activity",
+            "body": "Are genuine users moving from Facebook to relevant pages on the business website?"
+          },
+          {
+            "title": "Enquiries and Messages",
+            "body": "Are potential customers contacting the business after seeing the content?"
+          },
+          {
+            "title": "Bookings or Visits",
+            "body": "Where relevant, is Facebook contributing to appointments, reservations or in-person activity?"
+          },
+          {
+            "title": "Product Interest and Sales",
+            "body": "Is genuine activity contributing to product research or purchases?"
+          },
+          {
+            "title": "Customer Awareness",
+            "body": "Is the post helping real people understand the business, product, service or campaign?"
+          }
+        ]
+      },
+      {
+        "id": "content-framework",
+        "title": "A Practical Facebook Content Plan for Canadian Businesses",
+        "lead": "Post Likes can support priority content, but stronger Facebook marketing still depends on what the business publishes and how genuine users respond.",
+        "footer": "Keep purchased Post Likes in perspective as one visible post metric.",
+        "items": [
+          {
+            "title": "Start With the Purpose",
+            "body": "Know what the individual post is meant to communicate or support."
+          },
+          {
+            "title": "Choose Priority Content",
+            "body": "Do not assume every Facebook post needs the same level of attention."
+          },
+          {
+            "title": "Use Real Business Experience",
+            "body": "Publish genuine products, services, projects and expertise."
+          },
+          {
+            "title": "Improve the Creative",
+            "body": "Use images or video that clearly communicate the idea."
+          },
+          {
+            "title": "Write Useful Copy",
+            "body": "Explain the information the customer genuinely needs."
+          },
+          {
+            "title": "Give People a Next Step",
+            "body": "Make it clear how interested users can learn more, contact, shop or book."
+          },
+          {
+            "title": "Respond to Genuine Interaction",
+            "body": "Treat real Comments and messages as actual customer conversations."
+          },
+          {
+            "title": "Review Real Performance",
+            "body": "Use genuine Facebook data and real business outcomes to understand what works."
+          },
+          {
+            "title": "Connect Facebook With Wider Canadian Marketing",
+            "body": "Businesses may use Facebook alongside Instagram, TikTok, Google visibility, ecommerce, paid media, email and their website."
+          },
+          {
+            "title": "Measure Purchased Post Likes Separately",
+            "body": "Evaluate organic reach, genuine engagement and business outcomes independently."
+          }
+        ]
+      }
+    ]
+  }
+}

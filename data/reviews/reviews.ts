@@ -41,7 +41,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 1,
     reviewText:
-      'Compared a few Instagram packages and checkout was easy. Nice to see the total before paying.',
+      'I compared a few Instagram packages before ordering, and checkout was easy. I also liked being able to see the full total before I paid.',
   },
   {
     id: 'review-nina-hartley',
@@ -52,7 +52,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 2,
     reviewText:
-      'Started with a smaller Instagram package for my creator page. Status updates helped. All good.',
+      'I started with a smaller Instagram package for my creator page. The status updates helped, and everything went fine.',
   },
   {
     id: 'review-johnny',
@@ -63,7 +63,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: false,
     displayOrder: 3,
     reviewText:
-      'Choosing a quantity was simple. Support answered quickly. Took a little longer than I hoped, but okay.',
+      'Choosing the quantity was simple, and support got back to me quickly. It took a little longer than I hoped, but overall it was okay.',
   },
   {
     id: 'review-muntaha',
@@ -73,7 +73,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 4,
     reviewText:
-      'Team made it easy to place the order. No hassle. I’ll use NovaLikes again.',
+      'The team made it easy to place my order, and there was no hassle. I’d use NovaLikes again.',
   },
   {
     id: 'review-niel',
@@ -83,7 +83,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: false,
     displayOrder: 5,
     reviewText:
-      'From checkout to tracking, everything made sense. Didn’t get lost in the site.',
+      'From checkout through tracking, everything was easy to follow. I never felt lost on the site.',
   },
   {
     id: 'review-sherry',
@@ -94,7 +94,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: false,
     displayOrder: 6,
     reviewText:
-      'Liked that checkout only needed my Instagram name — nothing sketchy. Felt safer.',
+      'I liked that checkout only asked for my Instagram name and nothing sketchy. That made the process feel safer.',
   },
   {
     id: 'review-eva',
@@ -105,7 +105,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 7,
     reviewText:
-      'Pricing was clear and ordering didn’t feel complicated. Would use again for another campaign.',
+      'The pricing was clear, and ordering didn’t feel complicated. I’d use it again for another campaign.',
   },
   {
     id: 'review-sheikh-hadi',
@@ -115,7 +115,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: true,
     displayOrder: 8,
     reviewText:
-      'Got what I expected from the package I bought. Smooth experience overall.',
+      'I got what I expected from the package I bought. Overall, the experience was smooth.',
   },
   {
     id: 'review-abbas',
@@ -124,7 +124,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 4,
     featured: false,
     displayOrder: 9,
-    reviewText: 'Professional enough. Results matched the order. A bit slow to start.',
+    reviewText: 'It felt professional enough, and the results matched the order. It was a bit slow to start, though.',
   },
   {
     id: 'review-lovely',
@@ -133,7 +133,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 10,
-    reviewText: 'Easy to use. I’d recommend NovaLikes.',
+    reviewText: 'It was easy to use, and I’d recommend NovaLikes.',
   },
   {
     id: 'review-marvin',
@@ -142,7 +142,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 11,
-    reviewText: 'Simple and reliable for me. Worth trying.',
+    reviewText: 'Simple and reliable for me. Definitely worth trying.',
   },
   {
     id: 'review-ash',
@@ -151,7 +151,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 12,
-    reviewText: 'Straightforward. Worked as expected.',
+    reviewText: 'Straightforward from start to finish. It worked as expected.',
   },
   {
     id: 'review-anusha',
@@ -160,7 +160,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 13,
-    reviewText: 'Tried a couple similar sites before. This one felt the least confusing.',
+    reviewText: 'I’d tried a couple of similar sites before, and this one felt the least confusing to use.',
   },
   {
     id: 'review-leah',
@@ -169,7 +169,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 14,
-    reviewText: 'Tested a small package first, then ordered a bigger one. Glad I could do that.',
+    reviewText: 'I tested a smaller package first and then came back for a bigger one. I was glad I could do it that way.',
   },
   {
     id: 'review-sasha',
@@ -180,7 +180,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     featured: false,
     displayOrder: 15,
     reviewText:
-      'Good from package pick through delivery. Support was responsive. Wish updates were a tad faster.',
+      'The process was good from choosing a package through delivery, and support was responsive. I just wish the updates had been a little faster.',
   },
   {
     id: 'review-milka',
@@ -189,7 +189,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 16,
-    reviewText: 'Simple and surprisingly fast.',
+    reviewText: 'Simple process, and it was surprisingly fast.',
   },
   {
     id: 'review-mia',
@@ -198,7 +198,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 17,
-    reviewText: 'Faster than I expected. Thanks!',
+    reviewText: 'It was faster than I expected. Thanks!',
   },
   {
     id: 'review-hazzel',
@@ -207,7 +207,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 18,
-    reviewText: 'Hassle-free. Good.',
+    reviewText: 'Hassle-free and easy enough. Good experience for me.',
   },
   {
     id: 'review-alina',
@@ -216,7 +216,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 19,
-    reviewText: 'Very happy with the experience.',
+    reviewText: 'I was very happy with the experience overall.',
   },
   {
     id: 'review-lisa',
@@ -225,7 +225,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: true,
     displayOrder: 20,
-    reviewText: 'Used NovaLikes a few times now. Still reliable for me.',
+    reviewText: 'I’ve used NovaLikes a few times now, and it’s still been reliable for me.',
   },
   {
     id: 'review-cris',
@@ -234,7 +234,7 @@ const REVIEW_SEEDS: ReviewSeed[] = [
     rating: 5,
     featured: false,
     displayOrder: 21,
-    reviewText: 'Turnaround was impressive.',
+    reviewText: 'The turnaround was impressive. That’s what stood out most to me.',
   },
   ...EXTRA_REVIEW_SEEDS,
 ];

@@ -9,7 +9,8 @@ import {
   TOOL_SLUGS,
   type Locale,
 } from '@/lib/i18n/config';
-import { hreflangMap, localizeHref } from '@/lib/i18n/paths';
+import { localizeHref } from '@/lib/i18n/paths';
+import { hreflangMapWithMarket } from '@/lib/market/paths';
 import { absoluteUrl, buildCanonicalUrl } from '@/lib/seo/metadata/canonical';
 import { buildPageMetadata } from '@/lib/seo/metadata/build';
 import type { Metadata } from 'next';
@@ -147,7 +148,7 @@ export function buildLocaleMetadata(options: {
   const { locale, pathname, title, description } = options;
   const canonicalPath = localizeHref(pathname, locale);
   const languages: Record<string, string> = {};
-  const hrefs = hreflangMap(pathname);
+  const hrefs = hreflangMapWithMarket(pathname);
   for (const [code, path] of Object.entries(hrefs)) {
     languages[code] = absoluteUrl(path);
   }
@@ -180,7 +181,7 @@ export function buildLocaleMetadata(options: {
 
 export function hreflangLanguages(pathname: string): Record<string, string> {
   const languages: Record<string, string> = {};
-  for (const [code, path] of Object.entries(hreflangMap(pathname))) {
+  for (const [code, path] of Object.entries(hreflangMapWithMarket(pathname))) {
     languages[code] = absoluteUrl(path);
   }
   return languages;

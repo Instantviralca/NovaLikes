@@ -389,3 +389,71 @@ export const cmsAuditEvents = pgTable(
   }),
 );
 
+/** Native cart abandonment recovery sessions. */
+export const cartRecoverySessions = pgTable(
+  'cart_recovery_sessions',
+  {
+    id: text('id').primaryKey(),
+    publicId: text('public_id').notNull(),
+    email: text('email').notNull(),
+    customerName: text('customer_name'),
+    whatsappNumber: text('whatsapp_number'),
+    currency: text('currency').notNull(),
+    subtotalAmount: integer('subtotal_amount').notNull(),
+    discountAmount: integer('discount_amount').notNull().default(0),
+    totalAmount: integer('total_amount').notNull(),
+    market: text('market'),
+    locale: text('locale'),
+    status: text('status').notNull().default('active'),
+    cartSnapshot: jsonb('cart_snapshot').notNull().$type<Record<string, unknown>>(),
+    checkoutSnapshot: jsonb('checkout_snapshot').$type<Record<string, unknown>>(),
+    recoveryTokenHash: text('recovery_token_hash').notNull(),
+    unsubscribeTokenHash: text('unsubscribe_token_hash').notNull(),
+    unsubscribedAt: timestamp('unsubscribed_at', { withTimezone: true }),
+    lastActivityAt: timestamp('last_activity_at', { withTimezone: true }).notNull(),
+    abandonedAt: timestamp('abandoned_at', { withTimezone: true }),
+    recoveredAt: timestamp('recovered_at', { withTimezone: true }),
+    convertedAt: timestamp('converted_at', { withTimezone: true }),
+    orderId: text('order_id'),
+    landingPath: text('landing_path'),
+    referrer: text('referrer'),
+    checkoutPath: text('checkout_path'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
+    expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    publicUidx: uniqueIndex('cart_recovery_sessions_public_uidx').on(t.publicId),
+    tokenUidx: uniqueIndex('cart_recovery_sessions_token_uidx').on(t.recoveryTokenHash),
+    unsubUidx: uniqueIndex('cart_recovery_sessions_unsub_uidx').on(t.unsubscribeTokenHash),
+    emailStatusIdx: index('cart_recovery_sessions_email_status_idx').on(t.email, t.status),
+    statusActivityIdx: index('cart_recovery_sessions_status_activity_idx').on(
+      t.status,
+      t.lastActivityAt,
+    ),
+    orderIdx: index('cart_recovery_sessions_order_idx').on(t.orderId),
+  }),
+);
+
+/** Recovery email steps + interaction events for a session. */
+export const cartRecoveryEvents = pgTable(
+  'cart_recovery_events',
+  {
+    id: text('id').primaryKey(),
+    sessionId: text('session_id')
+      .notNull()
+      .references(() => cartRecoverySessions.id, { onDelete: 'cascade' }),
+    type: text('type').notNull(),
+    emailStep: integer('email_step'),
+    idempotencyKey: text('idempotency_key'),
+    providerMessageId: text('provider_message_id'),
+    errorMessage: text('error_message'),
+    meta: jsonb('meta').$type<Record<string, string | number | boolean | null>>(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    sessionIdx: index('cart_recovery_events_session_idx').on(t.sessionId, t.createdAt),
+    idempotencyUidx: uniqueIndex('cart_recovery_events_idempotency_uidx').on(t.idempotencyKey),
+  }),
+);
+

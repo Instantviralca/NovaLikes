@@ -258,12 +258,12 @@ export function validateEnv(options: {
     });
   }
 
-  if (production && !firstPresent('REMOTE_PAYMENT_WEBSITE_URL')) {
+  if (production && !firstPresent('REMOTE_PAYMENT_SHARED_SECRET')) {
     issues.push({
-      key: 'REMOTE_PAYMENT_WEBSITE_URL',
+      key: 'REMOTE_PAYMENT_SHARED_SECRET',
       level: 'warning',
       message:
-        'REMOTE_PAYMENT_WEBSITE_URL is unset. Checkout stays disabled until this env or Admin → Settings payment URL is configured.',
+        'REMOTE_PAYMENT_SHARED_SECRET is unset. Checkout stays disabled until this env or Admin → Settings shared secret is configured (min 16 chars).',
     });
   }
 

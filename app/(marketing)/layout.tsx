@@ -13,7 +13,7 @@ export default async function MarketingLayout({ children }: MarketingLayoutProps
   return (
     <>
       <SiteJsonLd />
-      <SiteLayout locale={chrome.locale} ui={chrome.ui}>
+      <SiteLayout locale={chrome.locale} market={chrome.market} ui={chrome.ui}>
         {children}
       </SiteLayout>
     </>

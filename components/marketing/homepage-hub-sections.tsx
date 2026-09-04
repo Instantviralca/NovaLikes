@@ -5,7 +5,6 @@ import { CheckCircle2 } from 'lucide-react';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { FadeUp } from '@/components/motion/fade-up';
-import { Eyebrow } from '@/components/typography/eyebrow';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
 import { Text } from '@/components/typography/text';
@@ -16,40 +15,58 @@ import { HomepageHero } from '@/components/marketing/homepage-hero';
 import { HomepagePlatformSelector } from '@/components/marketing/homepage-platform-selector';
 import { HomepageServicesOverview } from '@/components/marketing/homepage-services-overview';
 import { HomepageLowerSections } from '@/components/marketing/homepage-story-sections';
+import { HomepageCrossPlatform } from '@/components/marketing/homepage-cross-platform';
+import { HomepageMarketStorySections } from '@/components/marketing/homepage-market-story-sections';
 import { HomepageFinalCta } from '@/components/marketing/homepage-final-cta';
 import { ILLUSTRATED_CARD } from '@/components/layout/illustrated-surface';
 import { prefetchForHref } from '@/lib/linking/prefetch';
+import { isCanadaHomepageDesign } from '@/lib/market/homepage-design';
 import { cn } from '@/lib/utils';
 
-function ServicesOverview({ hub }: { hub: HomepageHub }) {
-  return <HomepageServicesOverview hub={hub} />;
+function ServicesOverview({
+  hub,
+  instagramOnly,
+}: {
+  hub: HomepageHub;
+  instagramOnly?: boolean;
+}) {
+  return <HomepageServicesOverview hub={hub} instagramOnly={instagramOnly} market={hub.market} />;
 }
 
 function ServiceMiniSection({
   service,
   index,
+  enhanced,
 }: {
   service: HubServiceMini;
   index: number;
+  enhanced?: boolean;
 }) {
   const reverse = index % 2 === 1;
+  const tinted =
+    enhanced &&
+    (service.slug === 'buy-instagram-likes' || service.slug === 'buy-instagram-comments');
+
   return (
     <Section
       id={`${service.slug}-mini`}
-      spacing="md"
-      className="bg-transparent"
+      spacing="none"
+      className={cn(
+        tinted ? 'bg-[#FFF8F3]' : 'bg-transparent',
+        enhanced ? 'py-10 md:py-12 lg:py-14' : 'py-8 md:py-11 lg:py-12',
+      )}
       aria-labelledby={`${service.id}-heading`}
     >
       <Container size="xl">
         <div
           className={cn(
-            'grid items-center gap-8 lg:grid-cols-2 lg:gap-12',
+            'grid items-center gap-8 lg:grid-cols-2',
+            enhanced ? 'lg:gap-10' : 'lg:gap-12',
             reverse && 'lg:[&>*:first-child]:order-2',
           )}
         >
           <FadeUp>
             <div className="space-y-4">
-              <Eyebrow className="text-[var(--brand-primary)]">{service.commercialLabel}</Eyebrow>
               <Heading as="h3" id={`${service.id}-heading`}>
                 {service.title}
               </Heading>
@@ -81,7 +98,7 @@ function ServiceMiniSection({
                 src={service.image.src}
                 alt={service.image.alt}
                 fill
-                className="object-cover object-center scale-[1.14]"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 560px"
                 loading="lazy"
               />
@@ -93,8 +110,18 @@ function ServiceMiniSection({
   );
 }
 
-function PlatformServiceGroups({ hub }: { hub: HomepageHub }) {
-  const platforms = ['instagram', 'tiktok', 'facebook'] as const;
+function PlatformServiceGroups({
+  hub,
+  instagramOnly = false,
+  enhanced = false,
+}: {
+  hub: HomepageHub;
+  instagramOnly?: boolean;
+  enhanced?: boolean;
+}) {
+  const platforms: Array<'instagram' | 'tiktok' | 'facebook'> = instagramOnly
+    ? ['instagram']
+    : ['instagram', 'tiktok', 'facebook'];
   let runningIndex = 0;
 
   return (
@@ -106,16 +133,31 @@ function PlatformServiceGroups({ hub }: { hub: HomepageHub }) {
           <div key={platform}>
             <Section
               id={group.id}
-              spacing="sm"
-              className="bg-transparent"
+              spacing="none"
+              className={cn('bg-transparent', enhanced ? 'py-6 md:py-8' : 'py-6 md:py-8')}
               aria-labelledby={`${group.id}-heading`}
             >
               <Container size="xl">
-                <FadeUp className="max-w-2xl space-y-2 py-2">
-                  <Heading as="h2" id={`${group.id}-heading`}>
+                <FadeUp
+                  className={cn(
+                    'space-y-3 py-2',
+                    enhanced ? 'w-full text-center' : 'max-w-2xl',
+                  )}
+                >
+                  <Heading
+                    as="h2"
+                    id={`${group.id}-heading`}
+                    className={
+                      enhanced
+                        ? 'text-[1.85rem] font-bold leading-[1.15] tracking-tight sm:text-[2.25rem]'
+                        : undefined
+                    }
+                  >
                     {group.title}
                   </Heading>
-                  <MutedText>{group.description}</MutedText>
+                  <MutedText className={enhanced ? 'w-full' : undefined}>
+                    {group.description}
+                  </MutedText>
                 </FadeUp>
               </Container>
             </Section>
@@ -125,6 +167,7 @@ function PlatformServiceGroups({ hub }: { hub: HomepageHub }) {
                   key={service.id}
                   service={service}
                   index={runningIndex}
+                  enhanced={enhanced}
                 />
               );
               runningIndex += 1;
@@ -145,14 +188,19 @@ export function HomepageHubSections({
   hub?: HomepageHub;
   labels?: UiDictionary['homepage'];
 }) {
+  const instagramOnly = hub.instagramOnly === true;
+  const enhanced = isCanadaHomepageDesign(hub.market);
+
   return (
     <>
-      <HomepageHero hub={hub} />
-      <HomepagePlatformSelector hub={hub} />
-      <ServicesOverview hub={hub} />
-      <PlatformServiceGroups hub={hub} />
-      <HomepageLowerSections hub={hub} labels={labels} />
-      <HomepageFinalCta hub={hub} />
+      <HomepageHero hub={hub} enhanced={enhanced} />
+      <HomepagePlatformSelector hub={hub} instagramOnly={instagramOnly} enhanced={enhanced} />
+      <ServicesOverview hub={hub} instagramOnly={instagramOnly} />
+      <PlatformServiceGroups hub={hub} instagramOnly={instagramOnly} enhanced={enhanced} />
+      <HomepageMarketStorySections hub={hub} />
+      <HomepageLowerSections hub={hub} labels={labels} enhanced={enhanced} />
+      <HomepageCrossPlatform hub={hub} enhanced={enhanced} />
+      <HomepageFinalCta hub={hub} enhanced={enhanced} />
     </>
   );
 }

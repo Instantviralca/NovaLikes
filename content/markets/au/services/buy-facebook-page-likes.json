@@ -1,0 +1,979 @@
+{
+  "content": {
+    "slug": "buy-facebook-page-likes",
+    "platformId": "facebook",
+    "seo": {
+      "title": "Buy Facebook Page Likes Australia | Grow Your Page | NovaLikes",
+      "description": "Buy Facebook Page Likes in Australia for public Pages. Compare flexible packages, order without sharing your password and track your Page Likes order online."
+    },
+    "hero": {
+      "eyebrow": "FACEBOOK SERVICES FOR AUSTRALIA",
+      "title": "Buy Facebook Page Likes in Australia and Build a Stronger Page",
+      "description": "Strengthen the visible presence around the Facebook Page you're already building. NovaLikes gives Australian businesses, brands, creators, organisations and Page managers a straightforward way to buy Facebook Page Likes without sharing account login details. Choose the number of Page Likes you want, submit the correct public Facebook Page URL and complete your order online. Whether you're building a newer business Page, preparing for a campaign, launching a brand or strengthening an established Facebook presence, choose a Page Likes package that fits where your Page is today.",
+      "purpose": "Convert for Facebook page likes packages in Australia",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Facebook Page Likes in Australia",
+        "Buy Facebook Business Page Likes",
+        "Buy Likes for Facebook Page",
+        "Facebook Page Likes Buy",
+        "Can You Buy Facebook Page Likes in Australia"
+      ],
+      "suggestedWordCount": 110,
+      "primaryCta": {
+        "label": "Choose Your Facebook Page Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "How It Works",
+        "href": "#how-it-works"
+      },
+      "trustLabels": [
+        {
+          "id": "fb-pl-trust-url",
+          "label": "Public Facebook Page URL Only"
+        },
+        {
+          "id": "fb-pl-trust-password",
+          "label": "No Password Required"
+        },
+        {
+          "id": "fb-pl-trust-pricing",
+          "label": "Clear Pricing"
+        },
+        {
+          "id": "fb-pl-trust-track",
+          "label": "Order Tracking"
+        }
+      ],
+      "visual": {
+        "src": "/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp",
+        "alt": "Facebook Business Page likes and Meta Business Suite analytics illustration",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    "pricing": {
+      "id": "pricing-packages",
+      "title": "Choose a Facebook Page Likes Package That Fits Your Page",
+      "description": "Different Facebook Pages need different quantities. NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K Page Likes. A newer business Page may prefer a smaller increase. An established brand or Page supporting a larger campaign may choose something different. Before ordering, consider your current Page Like count, how established the Page looks, what the Page represents, what you're building toward and the increase you actually want rather than automatically selecting the biggest available package.",
+      "purpose": "Present real NovaLikes.com Facebook page likes packages",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 45,
+      "packageIds": [],
+      "primaryCtaLabel": "Compare Facebook Page Likes Packages",
+      "emptyMessage": "Facebook Page Likes packages are temporarily unavailable."
+    },
+    "benefits": {
+      "id": "why-buy-facebook-page-likes",
+      "title": "Build a Stronger First Impression Around Your Facebook Page",
+      "description": "When someone opens your Facebook Page, they don't see the Page Like count in isolation. They may also look at your Page name, profile and cover images, About information, recent posts, reviews, website and followers. A larger Page Like count can support the visible size of your Facebook presence, but the number becomes more meaningful when the rest of the Page looks complete and actively managed. Give your business Page more context behind the number by completing About information, checking contact details, keeping branding consistent and publishing current content.",
+      "purpose": "Explain motivations for buying Facebook page likes",
+      "primaryKeyword": "buy Facebook page likes",
+      "supportingKeywords": [
+        "buy likes for Facebook page",
+        "buy Facebook business page likes",
+        "Facebook page likes buy"
+      ],
+      "suggestedWordCount": 180,
+      "items": [
+        {
+          "id": "fb-pl-new-business",
+          "title": "Launch a New Business Page",
+          "description": "New restaurants, agencies, retail stores and service businesses often want their Facebook page to look more established from day one."
+        },
+        {
+          "id": "fb-pl-launch",
+          "title": "Support a Product or Brand Launch",
+          "description": "Teams running launches and awareness campaigns use Page Like packages to strengthen the page that promotes the offer."
+        },
+        {
+          "id": "fb-pl-brand-image",
+          "title": "Strengthen Brand Image",
+          "description": "Brands buy Page Likes when they want the public Page Like count to better match how established their business already feels offline."
+        },
+        {
+          "id": "fb-pl-social-proof",
+          "title": "Add Visible Social Proof",
+          "description": "Creators and organizations use Page Likes as one more public signal that visitors may notice before reading posts or contacting the page."
+        },
+        {
+          "id": "fb-pl-campaigns",
+          "title": "Support Marketing Campaigns",
+          "description": "Page Like packages are often ordered alongside Facebook ads, content calendars and community engagement rather than as a standalone growth plan."
+        }
+      ]
+    },
+    "whyNovaLikes": {
+      "id": "why-choose-novalikes-facebook-page-likes",
+      "title": "Why Choose NovaLikes for Facebook Page Likes?",
+      "description": "Trust and ordering details are covered in the page sections below.",
+      "purpose": "Unused on lean authority layout — trust lives in Why Choose section",
+      "primaryKeyword": "buy Facebook page likes",
+      "suggestedWordCount": 0,
+      "items": []
+    },
+    "features": {
+      "id": "facebook-page-likes-delivery",
+      "title": "Features",
+      "description": "",
+      "purpose": "Unused on lean authority layout",
+      "items": []
+    },
+    "howItWorks": {
+      "id": "how-facebook-page-likes-order-works-canada",
+      "title": "How Your Facebook Page Likes Order Works",
+      "description": "The process starts with the Page and quantity you want.",
+      "purpose": "Explain the five-step Facebook Page Likes ordering process",
+      "primaryKeyword": "how to buy Facebook page likes",
+      "supportingKeywords": [
+        "Buy Page Likes on Facebook",
+        "Buying Page Likes on Facebook",
+        "Buy Facebook Business Page Likes"
+      ],
+      "suggestedWordCount": 140,
+      "steps": [
+        {
+          "id": "fb-pl-step-1",
+          "title": "Choose Your Package",
+          "description": "Compare the available Page Like quantities and current prices."
+        },
+        {
+          "id": "fb-pl-step-2",
+          "title": "Open the Correct Facebook Page",
+          "description": "Go to the exact public Page receiving the order."
+        },
+        {
+          "id": "fb-pl-step-3",
+          "title": "Copy the Page URL",
+          "description": "Submit the Page link requested during checkout."
+        },
+        {
+          "id": "fb-pl-step-4",
+          "title": "Review Your Details",
+          "description": "Check the Page, Like quantity, and package price carefully."
+        },
+        {
+          "id": "fb-pl-step-5",
+          "title": "Complete Checkout",
+          "description": "Place your order without providing your Facebook password."
+        }
+      ],
+      "cta": {
+        "label": "Choose Your Page Likes Package",
+        "href": "#pricing-packages"
+      }
+    },
+    "deliveryAndSafety": {
+      "id": "page-link-and-delivery",
+      "title": "Order requirements",
+      "description": "Public profile or content details only. No password required.",
+      "purpose": "Explain page URL and order requirements",
+      "primaryKeyword": "Facebook page likes packages",
+      "suggestedWordCount": 120,
+      "items": [
+        {
+          "id": "fb-pl-req-url",
+          "title": "Public Facebook Page URL",
+          "description": "Provide the public URL of the Facebook page receiving the selected Page Likes package."
+        },
+        {
+          "id": "fb-pl-req-package",
+          "title": "Selected Package",
+          "description": "Choose the quantity that best matches your business goals and current Facebook page size."
+        },
+        {
+          "id": "fb-pl-req-public",
+          "title": "Public Page Access",
+          "description": "Keep your Facebook page publicly accessible while your order is being processed."
+        },
+        {
+          "id": "fb-pl-req-email",
+          "title": "Valid Email Address",
+          "description": "Use a working email address to receive order confirmations, progress updates and customer support if needed."
+        }
+      ]
+    },
+    "reviews": {
+      "id": "fb-page-likes-reviews",
+      "title": "Customer reviews",
+      "description": "Reviews are not displayed on this Australia service page.",
+      "purpose": "Unused on lean authority layout — no customer reviews section",
+      "testimonialIds": []
+    },
+    "faq": {
+      "id": "fb-page-likes-faq",
+      "title": "Frequently Asked Questions",
+      "description": "",
+      "purpose": "Package and ordering FAQs with FAQPage schema",
+      "primaryKeyword": "buy Facebook page likes",
+      "faqIds": [
+        "au-fb-pl-where-buy",
+        "au-fb-pl-get-more",
+        "au-fb-pl-cheap",
+        "au-fb-pl-real",
+        "au-fb-pl-how-many",
+        "au-fb-pl-password",
+        "au-fb-pl-admin",
+        "au-fb-pl-meta",
+        "au-fb-pl-info",
+        "au-fb-pl-cost",
+        "au-fb-pl-delivery",
+        "au-fb-pl-vs-followers",
+        "au-fb-pl-followers",
+        "au-fb-pl-post-likes",
+        "au-fb-pl-reach",
+        "au-fb-pl-business",
+        "au-fb-pl-local",
+        "au-fb-pl-older",
+        "au-fb-pl-client",
+        "au-fb-pl-wrong-page",
+        "au-fb-pl-track"
+      ]
+    },
+    "relatedServices": {
+      "id": "related-facebook-services-page-likes",
+      "title": "Explore More Facebook Services",
+      "description": "Choose the Facebook service that matches the metric you want to change.",
+      "purpose": "Internal links to sibling Facebook offers",
+      "serviceSlugs": [
+        "buy-facebook-followers",
+        "buy-facebook-post-likes"
+      ]
+    },
+    "finalCta": {
+      "id": "fb-page-likes-final-cta",
+      "title": "Build a Facebook Page People Can Trust Beyond the Like Count",
+      "description": "Choose the Facebook Page Likes package that fits your Page, submit the correct public Page URL and place your order without sharing your password or admin access. Then keep strengthening what the Page Like number cannot replace: accurate business information, genuine customer proof, useful content and a Page that gives people a reason to engage with the business behind it.",
+      "purpose": "Drive conversion to pricing packages",
+      "primaryCta": {
+        "label": "Choose Your Facebook Page Likes Package",
+        "href": "#pricing-packages"
+      },
+      "secondaryCta": {
+        "label": "Track an Order",
+        "href": "/track-order"
+      }
+    }
+  },
+  "dummy": {
+    "config": {
+      "whyChoose": {
+        "id": "why-choose-novalikes-facebook-page-likes-australia",
+        "title": "Why Choose NovaLikes for Facebook Page Likes?",
+        "description": "Buying Facebook Page Likes should be easy to understand before checkout.",
+        "items": [
+          {
+            "id": "fb-pl-wc-packages",
+            "title": "Multiple Page Like Quantities",
+            "description": "Compare the available quantities and choose the package that fits your Page.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-pl-wc-url",
+            "title": "Public Facebook Page URL Only",
+            "description": "Provide the exact eligible public Page where you want the Page Likes added.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-pl-wc-password",
+            "title": "No Facebook Password Required",
+            "description": "NovaLikes does not need your Facebook password, verification codes or Page admin credentials.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-pl-wc-pricing",
+            "title": "Clear Pricing Before Checkout",
+            "description": "Review the selected Page Like quantity and current package price before paying.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-pl-wc-checkout",
+            "title": "Secure Checkout",
+            "description": "Complete your order through the available NovaLikes checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-pl-wc-tracking",
+            "title": "Order Tracking",
+            "description": "Use NovaLikes order tracking afterward for available status information.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-pl-wc-support",
+            "title": "Customer Support",
+            "description": "If something needs checking, contact support with your relevant order details.",
+            "icon": "headphones"
+          }
+        ]
+      },
+      "whyBuyNote": "",
+      "orderNotice": "",
+      "canYouBuy": {
+        "id": "buy-facebook-page-likes-without-login-australia",
+        "title": "Buy Facebook Page Likes Without Sharing Admin Access",
+        "description": "A Page Likes order should not require you to hand over control of your Facebook Page. NovaLikes uses the public Page URL required for the service.",
+        "cards": [
+          {
+            "id": "fb-pl-can-need",
+            "title": "What You Need",
+            "description": "The correct public Facebook Page URL and your selected Page Likes package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-pl-can-not-need",
+            "title": "What You Don't Need",
+            "description": "Your Facebook password, verification codes, Page admin login, Meta Business Suite access, Business Manager access or private messages.",
+            "icon": "lock"
+          }
+        ],
+        "closingNote": "Before checkout, open the Page URL yourself. Make sure it goes directly to the Page where you want the Page Likes applied. A link to an individual Facebook post is not the correct target for this service."
+      },
+      "doesBuyingHelp": {
+        "id": "real-facebook-page-likes-australia",
+        "title": "Looking for “Real Facebook Page Likes”? Check the Actual Service",
+        "description": "\"Real Facebook Page Likes\" is a common phrase people may use while comparing services. You may also see terms such as high-quality Facebook Page Likes, active Facebook Page Likes or organic Facebook Page Likes. Different providers may use these labels differently.",
+        "helpTitle": "Rather than relying only on the wording, ask",
+        "helpItems": [
+          "What metric changes?",
+          "How many Page Likes are included?",
+          "Which Page receives them?",
+          "What information is required?",
+          "Does the provider guarantee anything beyond the Page Like count?"
+        ],
+        "limitTitle": "What NovaLikes Facebook Page Likes Packages Do",
+        "limitItems": [
+          "Increase the Page Like count on the eligible public Facebook Page submitted with the order"
+        ],
+        "closingNote": "They should not automatically be treated as guaranteed organic engagement, Followers, Post Likes, reach, customers or sales. Clear service expectations make it easier to compare providers realistically."
+      },
+      "whatHappens": {
+        "id": "what-happens-after-facebook-page-likes-order-australia",
+        "title": "What Happens After You Order?",
+        "description": "After checkout, your selected Page Likes package and submitted Facebook Page URL are associated with your purchase. The order is then processed for the intended Page.",
+        "steps": [
+          {
+            "id": "fb-pl-th-1",
+            "title": "Keep the Page Publicly Accessible",
+            "description": "The submitted Page should remain available where required during processing."
+          },
+          {
+            "id": "fb-pl-th-2",
+            "title": "Check the URL Carefully",
+            "description": "Make sure you've submitted the correct Facebook Page before completing checkout."
+          },
+          {
+            "id": "fb-pl-th-3",
+            "title": "Avoid Making the Page Unavailable",
+            "description": "Deleting or restricting access to the submitted Page can interfere with processing."
+          },
+          {
+            "id": "fb-pl-th-4",
+            "title": "Follow Your Order Status",
+            "description": "Processing time can vary depending on the Page Like quantity and current order conditions. Use NovaLikes order tracking for available status information."
+          }
+        ],
+        "closingNote": ""
+      },
+      "serviceCompare": {
+        "id": "facebook-page-likes-followers-post-likes-australia",
+        "title": "Page Likes, Followers or Post Likes: Choose by Goal",
+        "description": "Different Facebook services affect different metrics.",
+        "current": {
+          "title": "Facebook Page Likes",
+          "description": "Page-level Like count on an eligible public Facebook Page",
+          "bestFor": "Page Like count",
+          "ctaLabel": "Facebook Page Likes"
+        },
+        "likes": {
+          "title": "Facebook Followers",
+          "description": "Follower count displayed on an eligible public Facebook Page",
+          "bestFor": "Page follower count",
+          "href": "/au/buy-facebook-followers",
+          "ctaLabel": "Buy Facebook Followers"
+        },
+        "views": {
+          "title": "Facebook Post Likes",
+          "description": "Like count on one eligible public Facebook post",
+          "bestFor": "Individual post likes",
+          "href": "/au/buy-facebook-post-likes",
+          "ctaLabel": "Buy Facebook Post Likes"
+        },
+        "combinedNote": "Choose Page Likes for the Page-level Like count. Choose Followers for Page audience size. Choose Post Likes for a specific post. One service does not automatically include the others.",
+        "commentsHref": ""
+      },
+      "beforeBuying": {
+        "id": "before-you-buy-facebook-page-likes-australia",
+        "title": "Before You Buy Facebook Page Likes in Australia",
+        "description": "Check these details before completing your order.",
+        "framingNote": "",
+        "items": [
+          {
+            "id": "fb-pl-bb-page",
+            "title": "Confirm the Exact Facebook Page",
+            "description": "Open the Page where you want the Page Likes added.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-pl-bb-url",
+            "title": "Copy the Correct Public Page URL",
+            "description": "Do not submit the URL of an individual Facebook post.",
+            "icon": "sparkles"
+          },
+          {
+            "id": "fb-pl-bb-quantity",
+            "title": "Check the Page Like Quantity",
+            "description": "Make sure you're ordering the number you actually want.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-pl-bb-price",
+            "title": "Review the Current Price",
+            "description": "Confirm the package quantity and current price before checkout.",
+            "icon": "shield-check"
+          },
+          {
+            "id": "fb-pl-bb-public",
+            "title": "Keep the Page Accessible",
+            "description": "Avoid deleting or making the submitted Page unavailable while processing requires access.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-pl-bb-password",
+            "title": "Keep Your Password Private",
+            "description": "NovaLikes does not require your Facebook password.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-pl-bb-admin",
+            "title": "Keep Admin Access Private",
+            "description": "You do not need to provide Page admin, Business Manager or Meta Business Suite access.",
+            "icon": "megaphone"
+          },
+          {
+            "id": "fb-pl-bb-service",
+            "title": "Choose the Correct Facebook Service",
+            "description": "Page Likes, Followers and Post Likes are separate metrics.",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-pl-bb-policies",
+            "title": "Review the Policies",
+            "description": "Read the relevant purchase and refund information before completing your order.",
+            "icon": "clapperboard"
+          }
+        ]
+      },
+      "worldwide": {
+        "id": "facebook-insights-real-performance-australia",
+        "title": "Use Facebook Insights to Understand Real Page Performance",
+        "description": "Page Like count is only one metric. If performance insights are available for your Facebook Page, use them to understand how genuine users actually interact with your content.",
+        "eyebrow": "Look Beyond One Metric",
+        "closingNote": "Purchased Page Likes change one visible metric. Use genuine data to make wider marketing decisions.",
+        "cards": [
+          {
+            "id": "fb-pl-ww-posts",
+            "title": "Which Posts Perform Best?",
+            "description": "Compare real content performance over time.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-pl-ww-engagement",
+            "title": "What Earns Genuine Engagement?",
+            "description": "Look at authentic comments, reactions and other interactions.",
+            "icon": "heart"
+          },
+          {
+            "id": "fb-pl-ww-topics",
+            "title": "Which Topics Matter to Your Audience?",
+            "description": "Use real audience response to guide future content.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-pl-ww-actions",
+            "title": "Are People Taking Useful Actions?",
+            "description": "For businesses, Page activity may contribute to website visits, enquiries or bookings.",
+            "icon": "briefcase"
+          },
+          {
+            "id": "fb-pl-ww-next",
+            "title": "What Should You Publish Next?",
+            "description": "Actual Page performance can provide better content direction than relying on a public Like count alone.",
+            "icon": "megaphone"
+          }
+        ]
+      },
+      "packageSizes": {
+        "id": "choose-facebook-page-likes-package-australia",
+        "title": "Choose a Facebook Page Likes Package That Fits Your Page",
+        "description": "NovaLikes currently offers 100, 250, 500, 1K, 2.5K, 5K, 10K and 15K Page Likes. A newer business Page may prefer a smaller increase. An established brand or Page supporting a larger campaign may choose something different.",
+        "quantityColumnLabel": "Consideration",
+        "recommendedColumnLabel": "What to Review",
+        "rows": [
+          {
+            "id": "fb-pl-ps-count",
+            "quantity": "Your Current Page Like Count",
+            "recommendedFor": "Start with the number already shown on your Facebook Page."
+          },
+          {
+            "id": "fb-pl-ps-established",
+            "quantity": "How Established the Page Looks",
+            "recommendedFor": "A complete Page with recent content, accurate business details and genuine activity provides more context behind the Like count."
+          },
+          {
+            "id": "fb-pl-ps-represents",
+            "quantity": "What the Page Represents",
+            "recommendedFor": "A local business, ecommerce brand, creator Page and community organisation can all use Facebook differently."
+          },
+          {
+            "id": "fb-pl-ps-building",
+            "quantity": "What You're Building Toward",
+            "recommendedFor": "A launch, event, business expansion or promotional campaign may influence the quantity that makes sense."
+          },
+          {
+            "id": "fb-pl-ps-increase",
+            "quantity": "The Increase You Actually Want",
+            "recommendedFor": "Choose based on your Page rather than automatically selecting the biggest available package."
+          }
+        ],
+        "bottomNote": "Compare Facebook Page Likes Packages"
+      },
+      "bestPractices": {
+        "id": "affordable-facebook-page-likes-australia",
+        "title": "Looking for Affordable Facebook Page Likes in Australia?",
+        "description": "If you're searching for cheap Facebook Page Likes in Australia, price will naturally be part of your decision. But don't compare only the lowest number.",
+        "closingNote": "An affordable Facebook Page Likes service should make those basics clear before checkout. NovaLikes lets you compare the available quantities and current pricing before choosing.",
+        "items": [
+          {
+            "id": "fb-pl-bp-1",
+            "title": "Number of Page Likes Included",
+            "description": "Check how many Page Likes are in the package.",
+            "icon": "users"
+          },
+          {
+            "id": "fb-pl-bp-2",
+            "title": "Current Package Price",
+            "description": "Review pricing before checkout.",
+            "icon": "credit-card"
+          },
+          {
+            "id": "fb-pl-bp-3",
+            "title": "Public Page Requirements",
+            "description": "Confirm what Page URL is required.",
+            "icon": "clapperboard"
+          },
+          {
+            "id": "fb-pl-bp-4",
+            "title": "Password and Admin Policy",
+            "description": "Check whether your password or admin access is requested.",
+            "icon": "lock"
+          },
+          {
+            "id": "fb-pl-bp-5",
+            "title": "Order Tracking",
+            "description": "Check whether status updates are available.",
+            "icon": "map-pin"
+          },
+          {
+            "id": "fb-pl-bp-6",
+            "title": "Customer Support",
+            "description": "Support should be available if you need help.",
+            "icon": "headphones"
+          },
+          {
+            "id": "fb-pl-bp-7",
+            "title": "Service Policies",
+            "description": "Review what the package actually changes.",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "commonMistakes": {
+        "id": "common-mistakes-facebook-page-likes-australia",
+        "title": "Common Mistakes When Buying Facebook Page Likes",
+        "description": "",
+        "closingNote": "",
+        "items": []
+      },
+      "relatedPackages": {
+        "copyBySlug": {
+          "buy-facebook-followers": {
+            "title": "Facebook Followers",
+            "description": "Choose Followers when you want to increase the follower count displayed on an eligible public Facebook Page.",
+            "ctaLabel": "Buy Facebook Followers"
+          },
+          "buy-facebook-post-likes": {
+            "title": "Facebook Post Likes",
+            "description": "Choose Post Likes when you want more visible Likes on one specific eligible public Facebook post.",
+            "ctaLabel": "Buy Facebook Post Likes"
+          }
+        }
+      }
+    },
+    "whyBuy": {
+      "id": "stronger-first-impression-facebook-page-likes-australia",
+      "title": "Build a Stronger First Impression Around Your Facebook Page",
+      "description": "People can form an opinion about a Facebook Page before reading much of its content. They may notice the Page name, profile image, cover image, Page Like count, follower count, recent posts, photos and videos, About information, reviews or Recommendations, contact details and overall Page activity. A larger Page Like count can support how established the Page appears at first glance. But the rest of the Page still needs to support that impression.",
+      "items": [
+        {
+          "id": "fb-pl-wb-business",
+          "title": "For Businesses",
+          "description": "Make it easy to understand what you offer."
+        },
+        {
+          "id": "fb-pl-wb-local",
+          "title": "For Local Companies",
+          "description": "Keep location and contact information current."
+        },
+        {
+          "id": "fb-pl-wb-brands",
+          "title": "For Brands",
+          "description": "Maintain consistent visuals and messaging."
+        },
+        {
+          "id": "fb-pl-wb-orgs",
+          "title": "For Creators and Organisations",
+          "description": "Make the purpose of the Page clear."
+        }
+      ],
+      "bottomNote": "Page Likes can strengthen one visible signal. The Page behind that number creates the wider impression."
+    },
+    "howToBuy": {
+      "id": "how-facebook-page-likes-order-works-australia",
+      "title": "How Your Facebook Page Likes Order Works",
+      "description": "Compare packages, submit your Page URL and track your order afterward.",
+      "steps": [
+        {
+          "id": "fb-pl-step-1",
+          "title": "Choose Your Page Likes Package",
+          "description": "Compare the available quantities and current prices."
+        },
+        {
+          "id": "fb-pl-step-2",
+          "title": "Enter the Facebook Page URL",
+          "description": "Provide the exact public Page where you want the Page Likes added."
+        },
+        {
+          "id": "fb-pl-step-3",
+          "title": "Review Your Order",
+          "description": "Check the Page URL, Like quantity and current package price."
+        },
+        {
+          "id": "fb-pl-step-4",
+          "title": "Complete Checkout",
+          "description": "Place your order without providing your Facebook password or Page admin access."
+        },
+        {
+          "id": "fb-pl-step-5",
+          "title": "Track Your Purchase",
+          "description": "Use NovaLikes order tracking afterward for available status updates."
+        }
+      ]
+    },
+    "relatedHeading": "Explore More Facebook Services",
+    "relatedIntro": "Choose the Facebook service that matches the metric you want to change.",
+    "quickAnswer": {
+      "heading": "Quick Answer: Where Can I Buy Facebook Page Likes in Australia?",
+      "text": "You can buy Facebook Page Likes in Australia through NovaLikes by choosing an available Page Likes package, submitting the correct public Facebook Page URL and completing checkout online. Your Facebook password is not required. Page Likes apply to the Page-level Like count and do not automatically add Facebook Followers or Likes to individual posts."
+    },
+    "storySections": [
+      {
+        "id": "built-for-australia",
+        "title": "Built for Australian Businesses, Brands and Organisations",
+        "lead": "Facebook Pages can serve different purposes across Australia.",
+        "paragraphs": [
+          "A local business may use Facebook for customer updates and community visibility. An ecommerce company may use its Page around new product releases and promotions. A service business may showcase recent work. A restaurant or venue may publish opening information, events and seasonal updates. A creator may use Facebook alongside Instagram and TikTok. An organisation may use its Page to communicate with its community.",
+          "That means Page Like growth should fit the Page you're actually managing."
+        ],
+        "footer": "Page Likes can strengthen a visible Page metric. The business or organisation behind them still matters.",
+        "items": [
+          {
+            "title": "Local Businesses",
+            "body": "Build a stronger visible Page presence around the business customers may research before making contact."
+          },
+          {
+            "title": "Ecommerce Brands",
+            "body": "Support your Facebook Page alongside product launches, promotions and broader campaigns."
+          },
+          {
+            "title": "Service Businesses",
+            "body": "Use the Page to show projects, answer questions and keep potential customers informed."
+          },
+          {
+            "title": "Creators",
+            "body": "Strengthen the Page-level Like count while continuing to publish relevant content."
+          },
+          {
+            "title": "Agencies",
+            "body": "Choose quantities according to each individual client Page rather than applying one fixed package across every campaign."
+          },
+          {
+            "title": "Established Brands",
+            "body": "Support Page presentation while continuing genuine publishing, paid advertising and customer communication."
+          }
+        ]
+      },
+      {
+        "id": "local-businesses",
+        "title": "Facebook Page Likes for Australian Local Businesses",
+        "lead": "For a local business, Facebook may be one of several places a potential customer checks before deciding whether to contact you.",
+        "bullets": [
+          "Google",
+          "your website",
+          "Instagram",
+          "advertising",
+          "referrals",
+          "local community groups",
+          "another Facebook post"
+        ],
+        "paragraphs": [
+          "Once they reach your Page, they may look at its activity and business information.",
+          "A restaurant in Melbourne might show recent menu updates. A builder in Brisbane may publish completed projects. A salon in Sydney may showcase recent work. A retailer in Perth may announce new products. A tourism company may publish experiences and seasonal offers. A professional service may answer common customer questions."
+        ],
+        "footer": "Page Likes can support how established that Facebook presence appears. Local trust comes from accurate information, genuine work and the real business behind the Page."
+      },
+      {
+        "id": "campaign-moments",
+        "title": "Use Page Likes Around Important Australian Business Moments",
+        "lead": "Some periods bring more attention to a Facebook Page than others.",
+        "footer": "Page Likes can support visible Page presentation during those moments. The real campaign still depends on the offer, content and customer experience behind it.",
+        "items": [
+          {
+            "title": "Launching a New Business",
+            "body": "Build out your Page information and initial content before putting more attention behind it."
+          },
+          {
+            "title": "Opening a New Location",
+            "body": "Businesses expanding into another suburb or Australian city can update the Page and publish relevant launch content."
+          },
+          {
+            "title": "Rebranding",
+            "body": "A refreshed Page can support a wider change in company identity or positioning."
+          },
+          {
+            "title": "Product Launches",
+            "body": "Make sure customers arriving on the Page can easily find information about the new product."
+          },
+          {
+            "title": "Boxing Day and Holiday Campaigns",
+            "body": "Australian retailers and ecommerce brands may have higher-priority Facebook activity during major shopping periods."
+          },
+          {
+            "title": "Seasonal Promotions",
+            "body": "Tourism, hospitality, home services, retail and other businesses may have periods where Page activity becomes particularly important."
+          },
+          {
+            "title": "Events",
+            "body": "Venues, local businesses and organisations may use Facebook around event announcements and community activity."
+          }
+        ]
+      },
+      {
+        "id": "page-worth-exploring",
+        "title": "Give Australian Page Visitors Something Useful to Check Beyond the Like Count",
+        "lead": "A stronger Page Like number can affect the first impression of a Facebook Page, but visitors may quickly look beyond it to decide whether the Page represents an active and credible business.",
+        "footer": "Page Likes can support the visible presentation of the Page. The information and activity behind that number determine whether the visit is actually useful.",
+        "items": [
+          {
+            "title": "Explain the Business Clearly",
+            "body": "Make it easy to understand what the company, brand or organisation does without forcing visitors to piece the answer together from old posts."
+          },
+          {
+            "title": "Check the Details Customers Rely On",
+            "body": "Keep website links, contact information, locations, opening details and other public information accurate wherever they appear on the Page."
+          },
+          {
+            "title": "Show Current Activity",
+            "body": "Recent relevant posts can help visitors see that the Page still reflects the business as it operates today."
+          },
+          {
+            "title": "Use Recognisable Branding",
+            "body": "Profile and cover imagery should match the business customers see on its website and other official channels."
+          },
+          {
+            "title": "Publish Information Worth Exploring",
+            "body": "Use updates, projects, products, events, explanations and other content that helps people understand the business behind the Page."
+          },
+          {
+            "title": "Make the Customer Journey Clear",
+            "body": "If someone becomes interested, make it straightforward to visit the website, enquire, book, shop, call or find the next relevant piece of information."
+          }
+        ]
+      },
+      {
+        "id": "social-proof",
+        "title": "Treat Facebook Page Likes as One Visible Signal, Not a Measure of Reputation",
+        "lead": "A larger Page Like count may make a Facebook presence appear more established, but it does not tell an Australian customer what experience other people have actually had with the business.",
+        "footer": "Use Page Likes for the visible signal they provide. Let genuine customer experiences and verifiable business activity carry the reputation of the company.",
+        "items": [
+          {
+            "title": "Independent Customer Feedback",
+            "body": "Use genuine reviews or Recommendations from people who have actually dealt with the business where that evidence is available."
+          },
+          {
+            "title": "Real Examples of the Work",
+            "body": "Projects, products, transformations and other genuine examples can show what the company actually delivers."
+          },
+          {
+            "title": "Consistent Public Information",
+            "body": "Make sure important business details agree across Facebook, the website, Google profiles and other official places customers may check."
+          },
+          {
+            "title": "Authentic Customer Evidence",
+            "body": "Real testimonials, customer photos or case material can provide context that a Page Like number cannot create by itself."
+          },
+          {
+            "title": "Useful Customer Communication",
+            "body": "How the business responds to genuine questions, messages and problems can influence trust more directly than the public Like total."
+          }
+        ]
+      },
+      {
+        "id": "customer-proof",
+        "title": "Keep Purchased Page Likes Separate From Genuine Customer Evidence",
+        "lead": "If an Australian business has strong proof of its work or customer experience, show that proof clearly without presenting purchased Page Likes as if they created it.",
+        "footer": "Page Likes describe one Facebook metric. Genuine customer evidence helps visitors evaluate the real company behind the Page.",
+        "items": [
+          {
+            "title": "Verified Customer Reviews",
+            "body": "Use genuine feedback from customers who have actually bought from, hired or dealt with the business."
+          },
+          {
+            "title": "Facebook Recommendations",
+            "body": "Authentic Recommendations can help visitors understand experiences real customers independently chose to share."
+          },
+          {
+            "title": "Completed Projects and Results",
+            "body": "Show work the company has genuinely delivered rather than relying only on promotional claims about quality or experience."
+          },
+          {
+            "title": "Customer-Created Material",
+            "body": "Real photos, feedback or other customer contributions can add useful context when they are authentic and appropriate to publish."
+          },
+          {
+            "title": "Case Studies and Examples",
+            "body": "Explain genuine situations, work and outcomes accurately when more detail helps a potential customer understand the service."
+          },
+          {
+            "title": "Business Details That Match Everywhere",
+            "body": "Keep key information consistent across Facebook, the company website and other official profiles customers may use for verification."
+          }
+        ]
+      },
+      {
+        "id": "page-likes-vs-followers",
+        "title": "Page Likes and Facebook Followers Are Different Metrics",
+        "paragraphs": [
+          "Facebook Page Likes apply to the Like count associated with an eligible public Facebook Page. Choose this service when that Page-level Like metric is what you want to change.",
+          "Facebook Followers are another Page-level metric. Choose Facebook Followers when the follower count is your priority instead.",
+          "Facebook Post Likes apply to one specific eligible public Facebook post. They do not change the overall Page Like count. Choosing the correct service helps ensure your order targets the metric you actually want."
+        ]
+      },
+      {
+        "id": "reach-not-same",
+        "title": "More Facebook Page Likes Don't Automatically Mean More Reach",
+        "lead": "A higher Page Like count and organic Facebook reach are different things.",
+        "bullets": [
+          "increase Facebook Followers",
+          "increase Post Likes",
+          "generate comments",
+          "increase shares",
+          "improve organic post reach",
+          "generate website traffic",
+          "create customer enquiries",
+          "increase bookings",
+          "generate sales"
+        ],
+        "paragraphs": [
+          "NovaLikes Page Likes packages are designed around the Page Like count on the selected eligible public Facebook Page.",
+          "How Facebook distributes content and how genuine users respond are separate outcomes. Use the service for the Page metric it actually changes."
+        ]
+      },
+      {
+        "id": "content-people-need",
+        "title": "Publish Facebook Content That Helps Australian Customers Understand the Business",
+        "lead": "A Page can have a stronger visible Like count and still be unhelpful if visitors cannot find the information they came looking for.",
+        "footer": "Page Likes can support Page-level presentation. Useful, current content gives potential customers a reason to keep exploring after they arrive.",
+        "items": [
+          {
+            "title": "Changes Customers Need to Know About",
+            "body": "Publish genuine updates about locations, services, opening information, availability and other changes that affect the customer experience."
+          },
+          {
+            "title": "Answers to Recurring Questions",
+            "body": "Turn common enquiries into clear posts that explain products, services, processes, policies or decisions customers regularly ask about."
+          },
+          {
+            "title": "Product Information With Context",
+            "body": "Show what is available and explain the details customers need instead of relying only on promotional images or short sales captions."
+          },
+          {
+            "title": "Real Project and Service Examples",
+            "body": "Use completed work and genuine examples to help potential customers understand what the business can actually provide."
+          },
+          {
+            "title": "Offers With Clear Details",
+            "body": "If the Page promotes an offer, explain the important dates, conditions, inclusions or availability accurately."
+          },
+          {
+            "title": "Useful Local Information",
+            "body": "Share information relevant to the real suburb, city, region or service area when location genuinely affects the customer."
+          },
+          {
+            "title": "Events and Time-Sensitive Updates",
+            "body": "Keep dates, locations, booking details and other practical information current when promoting events or limited-time activity."
+          }
+        ]
+      },
+      {
+        "id": "brands-agencies",
+        "title": "Facebook Page Likes for Brands and Agencies",
+        "paragraphs": [
+          "Brands and agencies may use Facebook Pages as part of a wider digital presence. A campaign could involve Facebook, Instagram, paid advertising, email, ecommerce, search, creator partnerships and a company website.",
+          "Page Likes can support the visible presentation of the Facebook Page within that wider campaign. But professional reporting should keep metrics in context.",
+          "If you're managing a client Page, distinguish between purchased Page Like activity, organic followers, organic reach, paid advertising performance, genuine customer engagement and business results. Clear reporting is more useful than presenting every visible metric as organic growth."
+        ]
+      },
+      {
+        "id": "growth-framework",
+        "title": "A Practical Facebook Page Plan for Australian Businesses",
+        "lead": "Page Likes can support the visible size of a Facebook presence, but stronger Page management comes from keeping the business clear, current and useful to the people who check it.",
+        "footer": "Keep purchased Page Likes in perspective as one visible metric. Judge the wider Facebook presence using genuine customer behaviour and real business outcomes.",
+        "items": [
+          {
+            "title": "Make the Page Easy to Verify",
+            "body": "Check the business description, website, contact information, locations and other details a potential customer may compare with official sources."
+          },
+          {
+            "title": "Show What the Business Is Doing Now",
+            "body": "Use genuine projects, products, services, team activity and current updates to keep the Page connected to the real operation."
+          },
+          {
+            "title": "Build Content Around Customer Needs",
+            "body": "Mix practical information, education, real work, useful offers and updates instead of publishing only promotional posts."
+          },
+          {
+            "title": "Treat Genuine Interaction as Customer Communication",
+            "body": "Real Comments and messages should receive appropriate responses from someone who can provide accurate information."
+          },
+          {
+            "title": "Use Proof the Business Can Support",
+            "body": "Reviews, Recommendations, completed work and genuine customer evidence provide context that a Page Like count cannot replace."
+          },
+          {
+            "title": "Review Actual Performance",
+            "body": "Use genuine Facebook information and business data to understand which content contributes to useful audience or customer activity."
+          },
+          {
+            "title": "Connect Facebook With the Wider Customer Journey",
+            "body": "Australian businesses may use Facebook alongside their website, Google presence, Instagram, TikTok, search, paid media, ecommerce and email."
+          },
+          {
+            "title": "Measure Purchased Likes Separately",
+            "body": "Use Page Likes for the visible metric they provide while evaluating organic audience activity, customer enquiries and commercial results independently."
+          }
+        ]
+      }
+    ]
+  }
+}

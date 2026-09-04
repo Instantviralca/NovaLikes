@@ -8,8 +8,8 @@ import { ChevronDown } from 'lucide-react';
 
 import { getMegaMenuServices } from '@/data/navigation';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { useResolvePublicHref } from '@/components/i18n/locale-link';
 import { isCoreServiceSlug } from '@/lib/i18n/config';
-import { localizeHref } from '@/lib/i18n/paths';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 import type { NavMegaMenuItem } from '@/types';
 import { cn } from '@/lib/utils';
@@ -27,7 +27,8 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const services = getMegaMenuServices(item.platformId);
   const router = useRouter();
-  const { locale, ui } = useI18nChrome();
+  const { ui } = useI18nChrome();
+  const resolveHref = useResolvePublicHref();
 
   useEffect(() => {
     setMounted(true);
@@ -50,7 +51,7 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
     try {
       router.prefetch(item.href);
       for (const service of services) {
-        router.prefetch(localizeHref(service.url, locale));
+        router.prefetch(resolveHref(service.url));
       }
     } catch {
       // Prefetch must never block the menu from opening.
@@ -112,7 +113,7 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
             <div className="rounded-lg border border-border bg-popover p-3 shadow-lg">
               <ul className="space-y-1">
                 {services.map((service) => {
-                  const href = localizeHref(service.url, locale);
+                  const href = resolveHref(service.url);
                   const label = isCoreServiceSlug(service.slug)
                     ? ui.services[service.slug]
                     : service.navigationLabel;

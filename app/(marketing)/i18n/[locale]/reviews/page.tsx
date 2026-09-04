@@ -7,7 +7,7 @@ import { isLocalizedLocale } from '@/lib/i18n/config';
 import { loadMetadataBundle, loadReviewsPageCopy, loadUi } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
 import { localizeHref } from '@/lib/i18n/paths';
-import { getSafePublicReviews, summarizePublicReviews } from '@/lib/reviews';
+import { getSafePublicReviews, interleaveReviewsByTopic, summarizePublicReviews } from '@/lib/reviews';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
@@ -32,7 +32,7 @@ export default async function LocalizedReviewsPage({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocalizedLocale(locale)) notFound();
 
-  const publicReviews = getSafePublicReviews();
+  const publicReviews = interleaveReviewsByTopic(getSafePublicReviews());
   const aggregate = summarizePublicReviews(publicReviews);
   const copy = loadReviewsPageCopy(locale);
   const ui = loadUi(locale);

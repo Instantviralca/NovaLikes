@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "checked": 4,
+    "failures": 0,
+    "p0": 0,
+    "p1": 0,
+    "storyCounts": {
+      "ca": "12/12",
+      "au": "12/12",
+      "us": "12/12",
+      "uk": "15/15"
+    },
+    "generatedAt": "2026-09-03T13:05:53.450Z"
+  },
+  "results": [
+    {
+      "market": "ca",
+      "ok": true,
+      "imgCount": 12,
+      "storyPresent": 12,
+      "storyExpected": 12,
+      "missingStories": [],
+      "issues": [],
+      "status": 200,
+      "url": "http://localhost:3010/ca",
+      "finalUrl": "http://localhost:3010/ca"
+    },
+    {
+      "market": "au",
+      "ok": true,
+      "imgCount": 12,
+      "storyPresent": 12,
+      "storyExpected": 12,
+      "missingStories": [],
+      "issues": [],
+      "status": 200,
+      "url": "http://localhost:3010/au",
+      "finalUrl": "http://localhost:3010/au"
+    },
+    {
+      "market": "us",
+      "ok": true,
+      "imgCount": 12,
+      "storyPresent": 12,
+      "storyExpected": 12,
+      "missingStories": [],
+      "issues": [],
+      "status": 200,
+      "url": "http://localhost:3010/us",
+      "finalUrl": "http://localhost:3010/us"
+    },
+    {
+      "market": "uk",
+      "ok": true,
+      "imgCount": 12,
+      "storyPresent": 15,
+      "storyExpected": 15,
+      "missingStories": [],
+      "issues": [],
+      "status": 200,
+      "url": "http://localhost:3010/uk",
+      "finalUrl": "http://localhost:3010/uk"
+    }
+  ]
+}

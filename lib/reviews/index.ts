@@ -25,6 +25,12 @@ export {
 } from '@/lib/reviews/selection';
 
 export {
+  HOMEPAGE_REVIEW_IDS,
+  classifyReviewTopic,
+  interleaveReviewsByTopic,
+} from '@/lib/reviews/display-order';
+
+export {
   validateRatingValue,
   validateReviewedEntity,
   matchesReviewedEntity,

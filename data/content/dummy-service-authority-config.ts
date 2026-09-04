@@ -122,8 +122,10 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
     },
     doesBuyingHelp: {
       id: `${p}-does-buying-help`,
-      title: `Does Buying ${label} Help?`,
-      description: 'Kept for config compatibility and not shown on the mirrored layout.',
+      // Intentionally empty in English — geo markets supply copy via overlay;
+      // locale packs skip blank strings. Do not add placeholder English here.
+      title: '',
+      description: '',
       helpTitle: '',
       helpItems: [],
       limitTitle: '',
@@ -261,16 +263,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-instagram-likes') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Instagram Likes?',
@@ -630,16 +622,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-instagram-views') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Instagram Views?',
@@ -1000,16 +982,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-instagram-comments') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Instagram Comments?',
@@ -1353,16 +1325,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-tiktok-followers') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for TikTok Followers?',
@@ -1726,16 +1688,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-tiktok-likes') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for TikTok Likes?',
@@ -2099,16 +2051,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-tiktok-views') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for TikTok Views?',
@@ -2475,16 +2417,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-facebook-followers') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Facebook Followers?',
@@ -2848,16 +2780,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-facebook-page-likes') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Facebook Page Likes?',
@@ -3216,16 +3138,6 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
   if (slug === 'buy-facebook-post-likes') {
     config.whyBuyNote = '';
     config.orderNotice = '';
-    config.doesBuyingHelp = {
-      id: `${p}-does-buying-help`,
-      title: '',
-      description: '',
-      helpTitle: '',
-      helpItems: [],
-      limitTitle: '',
-      limitItems: [],
-      closingNote: '',
-    };
     config.whyChoose = {
       id: `${p}-why-choose`,
       title: 'Why Choose NovaLikes for Facebook Post Likes?',

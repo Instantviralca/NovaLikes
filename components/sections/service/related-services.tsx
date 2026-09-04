@@ -42,6 +42,7 @@ export type RelatedServicesProps = {
   className?: string;
   footerLinks?: Array<{ label: string; href: string }>;
   copyBySlug?: Record<string, RelatedServiceCopyOverride>;
+  enhanced?: boolean;
 };
 
 function relatedBlurb(
@@ -299,6 +300,7 @@ export function RelatedServices({
   className,
   footerLinks,
   copyBySlug,
+  enhanced = false,
 }: RelatedServicesProps) {
   const { locale } = useI18nChrome();
   if (services.length === 0) return null;
@@ -310,10 +312,20 @@ export function RelatedServices({
   const isTwoCol = services.length === 2;
 
   return (
-    <Section id={id} spacing="lg" className={cn(className)} aria-label="Related services">
+    <Section
+      id={id}
+      spacing={enhanced ? 'none' : 'lg'}
+      className={cn(enhanced && 'py-12 md:py-16 lg:py-20', className)}
+      aria-label="Related services"
+    >
       <Container size="xl">
         {(title || description) && (
-          <FadeUp className="mb-10 max-w-2xl space-y-3">
+          <FadeUp
+            className={cn(
+              'mb-10 space-y-3',
+              enhanced ? 'w-full text-center' : 'max-w-2xl',
+            )}
+          >
             {title ? (
               <Heading as="h2" size="h2" className="tracking-tight">
                 {title}

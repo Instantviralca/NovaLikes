@@ -22,6 +22,8 @@ import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
 import { getLocalizedFooterColumns } from '@/lib/i18n/footer';
 import { localizeHref } from '@/lib/i18n/paths';
+import type { Market } from '@/lib/market/config';
+import { resolvePublicHref } from '@/lib/market/paths';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 import { cn } from '@/lib/utils';
 
@@ -33,7 +35,7 @@ const COLUMN_ICONS: Record<string, LucideIcon> = {
   legal: ShieldCheck,
 };
 
-const PAYMENT_MARKS = ['Visa', 'Mastercard', 'Amex', 'Discover', 'Apple Pay'] as const;
+const PAYMENT_MARKS = ['Secure card payments'] as const;
 
 type FooterSocial = {
   label: string;
@@ -53,15 +55,18 @@ function TikTokGlyph({ className }: { className?: string }) {
 type FooterProps = {
   className?: string;
   locale?: Locale;
+  market?: Market | null;
   ui?: UiDictionary;
 };
 
 export function Footer({
   className,
   locale = DEFAULT_LOCALE,
+  market = null,
   ui = ENGLISH_UI as UiDictionary,
 }: FooterProps) {
-  const columns = getLocalizedFooterColumns(locale, ui);
+  const columns = getLocalizedFooterColumns(locale, ui, market);
+  const homeHref = resolvePublicHref('/', { locale, market });
 
   const socials: FooterSocial[] = [
     {
@@ -108,7 +113,7 @@ export function Footer({
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           <div className="max-w-sm min-w-0 sm:col-span-2 xl:col-span-1">
             <span dir="ltr" className="inline-flex">
-              <Logo href={localizeHref('/', locale)} />
+              <Logo href={homeHref} />
             </span>
             <p className="mt-4 text-sm leading-relaxed text-[#6B6560]">{ui.footer.brandSummary}</p>
             <ul className="mt-4 space-y-2">

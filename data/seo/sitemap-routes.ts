@@ -49,6 +49,7 @@ export const SITEMAP_EXCLUSION_PREFIXES = [
   '/track-order',
   '/services',
   '/i18n',
+  '/geo',
 ] as const;
 
 /**
