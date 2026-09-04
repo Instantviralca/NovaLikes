@@ -122,13 +122,27 @@ export function CheckoutPage() {
 
   useEffect(() => {
     if (!analytics?.ready || checkoutViewSent.current) return;
+    if (cart.items.length === 0) return;
     checkoutViewSent.current = true;
     analytics.track({
-      eventName: 'checkout_view',
+      eventName: 'checkout_started',
       pageType: 'checkout',
       pagePath: '/checkout',
     });
-  }, [analytics]);
+  }, [analytics, cart.items.length]);
+
+  const emailMilestoneSent = useRef(false);
+  useEffect(() => {
+    if (!analytics?.ready || emailMilestoneSent.current) return;
+    const email = customer.email?.trim() ?? '';
+    if (!email.includes('@')) return;
+    emailMilestoneSent.current = true;
+    analytics.track({
+      eventName: 'checkout_email_entered',
+      pageType: 'checkout',
+      pagePath: '/checkout',
+    });
+  }, [analytics, customer.email]);
 
   // Never flash empty cart while transfer/bootstrap is in progress.
   const waitingForCart =

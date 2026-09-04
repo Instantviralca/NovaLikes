@@ -7,7 +7,9 @@ import type {
   AdminAuthStore,
   AdminSessionRecord,
   AnalyticsEventRecord,
+  AnalyticsSessionRecord,
   AnalyticsStore,
+  AnalyticsVisitorRecord,
   AppPersistence,
   ContactMessageRecord,
   ContactStore,
@@ -35,6 +37,8 @@ function createMemoryState() {
     sessions: [] as AdminSessionRecord[],
     audits: [] as AdminAuditRecord[],
     analyticsEvents: [] as AnalyticsEventRecord[],
+    analyticsVisitors: [] as AnalyticsVisitorRecord[],
+    analyticsSessions: [] as AnalyticsSessionRecord[],
     emailSubscribers: [] as EmailSubscriberRecord[],
     emailCampaigns: [] as EmailCampaignRecord[],
   };
@@ -148,7 +152,10 @@ export function createMemoryPersistence(): AppPersistence {
   const analyticsApi: AnalyticsStore = {
     async insertAnalyticsEvents(events) {
       if (!events.length) return;
-      state.analyticsEvents.push(...events);
+      for (const event of events) {
+        if (state.analyticsEvents.some((e) => e.id === event.id)) continue;
+        state.analyticsEvents.push(event);
+      }
       if (state.analyticsEvents.length > 20_000) {
         state.analyticsEvents = state.analyticsEvents.slice(-20_000);
       }
@@ -157,6 +164,25 @@ export function createMemoryPersistence(): AppPersistence {
       return state.analyticsEvents
         .filter((e) => e.createdAt >= sinceIso)
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    },
+    async upsertAnalyticsVisitor(visitor) {
+      const existing = state.analyticsVisitors.find((v) => v.id === visitor.id);
+      if (existing) {
+        existing.lastSeenAt = visitor.lastSeenAt;
+        return;
+      }
+      state.analyticsVisitors.push(visitor);
+    },
+    async upsertAnalyticsSession(session) {
+      const existing = state.analyticsSessions.find((s) => s.id === session.id);
+      if (existing) {
+        existing.lastActivityAt = session.lastActivityAt;
+        return;
+      }
+      state.analyticsSessions.push(session);
+    },
+    async hasAnalyticsEventId(id) {
+      return state.analyticsEvents.some((e) => e.id === id);
     },
   };
 

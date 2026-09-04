@@ -88,11 +88,61 @@ export type AnalyticsEventRecord = {
   country: string;
   metadata?: Record<string, string | number | boolean | null>;
   createdAt: string;
+  visitorId?: string | null;
+  eventCategory?: string | null;
+  pageType?: string | null;
+  serviceSlug?: string | null;
+  packageId?: string | null;
+  market?: string | null;
+  locale?: string | null;
+  referrer?: string | null;
+  source?: string | null;
+  medium?: string | null;
+  campaign?: string | null;
+  content?: string | null;
+  term?: string | null;
+  deviceType?: string | null;
+  browserFamily?: string | null;
+  osFamily?: string | null;
+  properties?: Record<string, string | number | boolean | null>;
+  occurredAt?: string | null;
+};
+
+export type AnalyticsVisitorRecord = {
+  id: string;
+  firstSeenAt: string;
+  lastSeenAt: string;
+};
+
+export type AnalyticsSessionRecord = {
+  id: string;
+  visitorId: string;
+  startedAt: string;
+  lastActivityAt: string;
+  landingPath?: string | null;
+  landingPageType?: string | null;
+  referrer?: string | null;
+  utmSource?: string | null;
+  utmMedium?: string | null;
+  utmCampaign?: string | null;
+  utmContent?: string | null;
+  utmTerm?: string | null;
+  market?: string | null;
+  locale?: string | null;
+  deviceType?: string | null;
+  browserFamily?: string | null;
+  osFamily?: string | null;
+  countryCode: string;
+  isBot: boolean;
+  sourceChannel?: string | null;
 };
 
 export type AnalyticsStore = {
   insertAnalyticsEvents(events: AnalyticsEventRecord[]): Promise<void>;
   listAnalyticsEvents(sinceIso: string): Promise<AnalyticsEventRecord[]>;
+  upsertAnalyticsVisitor?(visitor: AnalyticsVisitorRecord): Promise<void>;
+  upsertAnalyticsSession?(session: AnalyticsSessionRecord): Promise<void>;
+  hasAnalyticsEventId?(id: string): Promise<boolean>;
 };
 
 export type EmailSubscriberRecord = {

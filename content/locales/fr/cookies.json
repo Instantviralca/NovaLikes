@@ -47,6 +47,7 @@
             "Panier : conserve les forfaits sélectionnés et le contenu du panier pendant que vous achetez et passez d’un hôte d’achat à un hôte de paiement. Utilise le cookie first-party iv_cart_v1 (jusqu’à 7 jours) et un cache de panier sessionStorage du navigateur.",
             "Paiement : prend en charge la continuité du paiement afin qu’une commande puisse être finalisée après la sélection et la configuration du forfait.",
             "Session : prend en charge la continuité de navigation pour le panier et les parcours commerciaux associés. Les comptes clients ne sont pas requis pour passer une commande.",
+            "Analytique opérationnelle : mesure la performance du tunnel de la boutique (visites, sessions, panier, paiement et commandes payées) afin d’exploiter et d’améliorer la boutique. Il s’agit d’analytique opérationnelle first-party, pas de mesure publicitaire. Utilise les cookies first-party nl_visitor_id (environ 1 an), nl_session_id et nl_session_activity (expiration après ~30 minutes d’inactivité). Aucun cookie d’analytique tiers n’est défini par défaut.",
             "Sécurité : prend en charge le fonctionnement du site lié à la sécurité, y compris la protection des sessions administratives du personnel le cas échéant. L’accès d’administration du personnel peut utiliser un cookie iv_admin_session. Il ne s’agit pas d’un cookie de connexion client."
           ]
         },
@@ -59,6 +60,8 @@
           "type": "list",
           "items": [
             "iv_cart_v1 — cookie de panier first-party utilisé pour le transfert du panier (jusqu’à 7 jours), conjointement avec un cache de panier sessionStorage",
+            "nl_visitor_id — cookie first-party d’identifiant visiteur (environ 1 an) pour l’analytique opérationnelle de la boutique",
+            "nl_session_id / nl_session_activity — cookies de session first-party avec expiration après ~30 minutes d’inactivité pour l’analytique opérationnelle",
             "iv_admin_session — cookie de session administrative du personnel pour l’accès d’administration NovaLikes (ce n’est pas un cookie de compte client)",
             "novalikes.analytics.consent.v1 — clé localStorage du navigateur utilisée pour stocker les préférences de consentement analytique en vue de possibles scripts d’analyse futurs"
           ]
@@ -70,7 +73,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Au-delà des finalités essentielles de panier, de paiement, de session et de sécurité listées ci-dessus, NovaLikes ne tient actuellement pas d’inventaire distinct de cookies de préférence fonctionnels facultatifs."
+          "text": "Au-delà des finalités essentielles de panier, de paiement, de session, d’analytique opérationnelle et de sécurité listées ci-dessus, NovaLikes ne tient actuellement pas d’inventaire distinct de cookies de préférence fonctionnels facultatifs."
         },
         {
           "type": "subheading",

@@ -568,14 +568,51 @@ export function createPostgresPersistence(): AppPersistence {
             country: event.country || 'XX',
             metadata: event.metadata ?? null,
             createdAt: new Date(event.createdAt),
+            visitorId: event.visitorId ?? null,
+            eventCategory: event.eventCategory ?? null,
+            pageType: event.pageType ?? null,
+            serviceSlug: event.serviceSlug ?? null,
+            packageId: event.packageId ?? null,
+            market: event.market ?? null,
+            locale: event.locale ?? null,
+            referrer: event.referrer ?? null,
+            source: event.source ?? null,
+            medium: event.medium ?? null,
+            campaign: event.campaign ?? null,
+            content: event.content ?? null,
+            term: event.term ?? null,
+            deviceType: event.deviceType ?? null,
+            browserFamily: event.browserFamily ?? null,
+            osFamily: event.osFamily ?? null,
+            properties: event.properties ?? null,
+            occurredAt: new Date(event.occurredAt ?? event.createdAt),
           })),
-        );
+        ).onConflictDoNothing();
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         // Missing migration should not break the public site.
         if (/relation|does not exist|analytics_events/i.test(message)) {
           console.error('[persistence] analytics_events missing — run drizzle/0003_analytics_events.sql');
           return;
+        }
+        // Older schema without new columns — retry minimal insert.
+        if (/column|undefined/i.test(message)) {
+          try {
+            await db.insert(tables.analyticsEvents).values(
+              events.map((event) => ({
+                id: event.id,
+                eventName: event.eventName,
+                sessionId: event.sessionId,
+                pagePath: event.pagePath,
+                country: event.country || 'XX',
+                metadata: event.metadata ?? null,
+                createdAt: new Date(event.createdAt),
+              })),
+            ).onConflictDoNothing();
+            return;
+          } catch {
+            /* fall through */
+          }
         }
         throw error;
       }
@@ -596,7 +633,95 @@ export function createPostgresPersistence(): AppPersistence {
         country: row.country,
         metadata: row.metadata ?? undefined,
         createdAt: row.createdAt.toISOString(),
+        visitorId: row.visitorId ?? undefined,
+        eventCategory: row.eventCategory ?? undefined,
+        pageType: row.pageType ?? undefined,
+        serviceSlug: row.serviceSlug ?? undefined,
+        packageId: row.packageId ?? undefined,
+        market: row.market ?? undefined,
+        locale: row.locale ?? undefined,
+        referrer: row.referrer ?? undefined,
+        source: row.source ?? undefined,
+        medium: row.medium ?? undefined,
+        campaign: row.campaign ?? undefined,
+        content: row.content ?? undefined,
+        term: row.term ?? undefined,
+        deviceType: row.deviceType ?? undefined,
+        browserFamily: row.browserFamily ?? undefined,
+        osFamily: row.osFamily ?? undefined,
+        properties: row.properties ?? undefined,
+        occurredAt: row.occurredAt?.toISOString() ?? row.createdAt.toISOString(),
       }));
+    },
+    async upsertAnalyticsVisitor(visitor) {
+      const db = getDb();
+      try {
+        await db
+          .insert(tables.analyticsVisitors)
+          .values({
+            id: visitor.id,
+            firstSeenAt: new Date(visitor.firstSeenAt),
+            lastSeenAt: new Date(visitor.lastSeenAt),
+          })
+          .onConflictDoUpdate({
+            target: tables.analyticsVisitors.id,
+            set: { lastSeenAt: new Date(visitor.lastSeenAt) },
+          });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        if (/relation|does not exist|analytics_visitors/i.test(message)) return;
+        throw error;
+      }
+    },
+    async upsertAnalyticsSession(session) {
+      const db = getDb();
+      try {
+        await db
+          .insert(tables.analyticsSessions)
+          .values({
+            id: session.id,
+            visitorId: session.visitorId,
+            startedAt: new Date(session.startedAt),
+            lastActivityAt: new Date(session.lastActivityAt),
+            landingPath: session.landingPath ?? null,
+            landingPageType: session.landingPageType ?? null,
+            referrer: session.referrer ?? null,
+            utmSource: session.utmSource ?? null,
+            utmMedium: session.utmMedium ?? null,
+            utmCampaign: session.utmCampaign ?? null,
+            utmContent: session.utmContent ?? null,
+            utmTerm: session.utmTerm ?? null,
+            market: session.market ?? null,
+            locale: session.locale ?? null,
+            deviceType: session.deviceType ?? null,
+            browserFamily: session.browserFamily ?? null,
+            osFamily: session.osFamily ?? null,
+            countryCode: session.countryCode || 'XX',
+            isBot: session.isBot,
+            sourceChannel: session.sourceChannel ?? null,
+          })
+          .onConflictDoUpdate({
+            target: tables.analyticsSessions.id,
+            set: { lastActivityAt: new Date(session.lastActivityAt) },
+          });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        if (/relation|does not exist|analytics_sessions/i.test(message)) return;
+        throw error;
+      }
+    },
+    async hasAnalyticsEventId(id) {
+      const db = getDb();
+      try {
+        const [row] = await db
+          .select({ id: tables.analyticsEvents.id })
+          .from(tables.analyticsEvents)
+          .where(eq(tables.analyticsEvents.id, id))
+          .limit(1);
+        return Boolean(row);
+      } catch {
+        return false;
+      }
     },
     async upsertMarketingSubscriber(input) {
       if (!input.marketingOptIn) return null;

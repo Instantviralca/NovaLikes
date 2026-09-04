@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Cookie Policy configuration — Document 13.07.
  *
  * Disclose only technologies that are actually used. Do not invent cookie names,
@@ -7,10 +7,13 @@
  * Verified first-party technologies (code inspection):
  * - iv_cart_v1 cookie (cart handoff, Max-Age 7 days) + sessionStorage cart cache
  * - iv_admin_session cookie (staff admin auth only)
+ * - nl_visitor_id / nl_session_id / nl_session_activity (first-party operational analytics)
  * - localStorage key novalikes.analytics.consent.v1 (analytics consent store)
  *
  * Analytics/marketing: env-gated adapters exist (GA4/GTM/Clarity) but remain
  * disabled unless enabled with IDs in deployment. Legal inventory stays empty.
+ * First-party operational funnel analytics uses nl_* cookies independently of
+ * marketing consent (admin channel).
  *
  * TODO: CONFIRM mailing address if required for cookie-related correspondence
  * TODO: CONFIRM whether a public cookie preference UI will be added
@@ -40,7 +43,7 @@ export const cookieConfig: CookieConfig = {
   supportEmail: site.supportEmail,
   mailingAddress: undefined,
   effectiveDate: '2026-08-17',
-  lastUpdatedDate: '2026-08-17',
+  lastUpdatedDate: '2026-09-05',
 
   essentialPurposes: [
     {
@@ -65,6 +68,15 @@ export const cookieConfig: CookieConfig = {
       description:
         'Supports browsing continuity for cart and related commerce flows. Customer accounts are not required to place an order.',
       enabled: true,
+    },
+    {
+      id: 'operational_analytics',
+      label: 'Operational analytics',
+      description:
+        'Measures storefront funnel performance (visits, sessions, cart, checkout, and paid orders) so we can operate and improve the shop. This is first-party operational analytics, not advertising measurement.',
+      enabled: true,
+      technologyNote:
+        'Uses first-party cookies nl_visitor_id (about 1 year), nl_session_id, and nl_session_activity (sliding ~30 minutes of inactivity). No third-party analytics cookies are set by default.',
     },
     {
       id: 'security',

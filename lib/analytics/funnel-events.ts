@@ -1,9 +1,24 @@
 /**
  * Funnel event allowlist + country helpers for first-party analytics ingest.
+ * Includes native canonical names and legacy aliases for consent bypass / admin.
  */
 
 export const FUNNEL_EVENT_NAMES = [
+  // Native canonical
+  'session_started',
   'page_view',
+  'landing_view',
+  'service_view',
+  'cart_add',
+  'cart_remove',
+  'cart_quantity_change',
+  'cart_view',
+  'checkout_started',
+  'checkout_email_entered',
+  'coupon_applied',
+  'coupon_failed',
+  'cart_recovery_returned',
+  // Legacy (pre-upgrade rows / call sites)
   'home_page_view',
   'service_page_view',
   'cart_item_add',
@@ -17,18 +32,31 @@ export type FunnelEventName = (typeof FUNNEL_EVENT_NAMES)[number];
 const FUNNEL_EVENT_SET = new Set<string>(FUNNEL_EVENT_NAMES);
 
 export const LANDING_EVENT_NAMES = new Set<string>([
+  'landing_view',
+  'session_started',
   'page_view',
   'home_page_view',
   'service_page_view',
+  'service_view',
 ]);
 
-export const CART_EVENT_NAMES = new Set<string>(['cart_item_add']);
+export const CART_EVENT_NAMES = new Set<string>(['cart_add', 'cart_item_add']);
 
-export const CHECKOUT_EVENT_NAMES = new Set<string>(['checkout_view', 'checkout_submit']);
+export const CHECKOUT_EVENT_NAMES = new Set<string>([
+  'checkout_started',
+  'checkout_view',
+  'checkout_submit',
+]);
 
-export const PURCHASE_EVENT_NAMES = new Set<string>(['purchase']);
+export const PURCHASE_EVENT_NAMES = new Set<string>([
+  'payment_paid',
+  'order_completed',
+  'purchase',
+]);
 
-export function isFunnelEventName(name: string): name is FunnelEventName {
+export const ORDER_CREATED_EVENT_NAMES = new Set<string>(['order_created']);
+
+export function isFunnelEventName(name: string): boolean {
   return FUNNEL_EVENT_SET.has(name);
 }
 

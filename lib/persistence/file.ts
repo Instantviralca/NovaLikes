@@ -10,6 +10,8 @@ import type {
   AdminAuditRecord,
   AdminSessionRecord,
   AnalyticsEventRecord,
+  AnalyticsSessionRecord,
+  AnalyticsVisitorRecord,
   AppPersistence,
   ContactMessageRecord,
   EmailCampaignRecord,
@@ -32,6 +34,8 @@ type FileState = {
   sessions: AdminSessionRecord[];
   audits: AdminAuditRecord[];
   analyticsEvents: AnalyticsEventRecord[];
+  analyticsVisitors: AnalyticsVisitorRecord[];
+  analyticsSessions: AnalyticsSessionRecord[];
   emailSubscribers: EmailSubscriberRecord[];
   emailCampaigns: EmailCampaignRecord[];
   updatedAt: string;
@@ -47,6 +51,8 @@ function emptyState(): FileState {
     sessions: [],
     audits: [],
     analyticsEvents: [],
+    analyticsVisitors: [],
+    analyticsSessions: [],
     emailSubscribers: [],
     emailCampaigns: [],
     updatedAt: new Date().toISOString(),
@@ -66,6 +72,8 @@ function read(): FileState {
       ...emptyState(),
       ...parsed,
       analyticsEvents: parsed.analyticsEvents ?? [],
+      analyticsVisitors: parsed.analyticsVisitors ?? [],
+      analyticsSessions: parsed.analyticsSessions ?? [],
       emailSubscribers: parsed.emailSubscribers ?? [],
       emailCampaigns: parsed.emailCampaigns ?? [],
     };
@@ -189,7 +197,10 @@ export function createFilePersistence(): AppPersistence {
     async insertAnalyticsEvents(events) {
       if (!events.length) return;
       const state = read();
-      state.analyticsEvents.push(...events);
+      for (const event of events) {
+        if (state.analyticsEvents.some((e) => e.id === event.id)) continue;
+        state.analyticsEvents.push(event);
+      }
       if (state.analyticsEvents.length > 20_000) {
         state.analyticsEvents = state.analyticsEvents.slice(-20_000);
       }
@@ -199,6 +210,31 @@ export function createFilePersistence(): AppPersistence {
       return read()
         .analyticsEvents.filter((e) => e.createdAt >= sinceIso)
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    },
+    async upsertAnalyticsVisitor(visitor) {
+      const state = read();
+      if (!state.analyticsVisitors) state.analyticsVisitors = [];
+      const existing = state.analyticsVisitors.find((v) => v.id === visitor.id);
+      if (existing) {
+        existing.lastSeenAt = visitor.lastSeenAt;
+      } else {
+        state.analyticsVisitors.push(visitor);
+      }
+      write(state);
+    },
+    async upsertAnalyticsSession(session) {
+      const state = read();
+      if (!state.analyticsSessions) state.analyticsSessions = [];
+      const existing = state.analyticsSessions.find((s) => s.id === session.id);
+      if (existing) {
+        existing.lastActivityAt = session.lastActivityAt;
+      } else {
+        state.analyticsSessions.push(session);
+      }
+      write(state);
+    },
+    async hasAnalyticsEventId(id) {
+      return read().analyticsEvents.some((e) => e.id === id);
     },
     ...createEmailMarketingApi(
       () => read(),

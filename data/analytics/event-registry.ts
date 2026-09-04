@@ -30,6 +30,9 @@ function entry(
 export const ANALYTICS_EVENT_REGISTRY: readonly EventRegistryEntry[] = [
   // Global page / engagement
   entry('page_view', 'page', 'view', 'analytics', 'Generic page view'),
+  entry('session_started', 'engagement', 'session_start', 'analytics', 'Anonymous session started'),
+  entry('landing_view', 'page', 'landing', 'analytics', 'First page view of a session'),
+  entry('service_view', 'service', 'view', 'analytics', 'Service page view (native)'),
   entry('page_engagement', 'engagement', 'engage', 'analytics', 'Meaningful page engagement'),
   entry('scroll_depth', 'engagement', 'scroll', 'analytics', 'Scroll depth milestone'),
   entry('outbound_link_click', 'engagement', 'click', 'analytics', 'Outbound link click'),
@@ -99,6 +102,9 @@ export const ANALYTICS_EVENT_REGISTRY: readonly EventRegistryEntry[] = [
   entry('cart_view', 'cart', 'view', 'analytics', 'Cart view'),
   entry('cart_view_click', 'cart', 'view_click', 'analytics', 'Cart view click from toast/nav'),
   entry('cart_item_add', 'cart', 'add', 'analytics', 'Cart item add'),
+  entry('cart_add', 'cart', 'add', 'analytics', 'Cart add (native)'),
+  entry('cart_remove', 'cart', 'remove', 'analytics', 'Cart remove (native)'),
+  entry('cart_quantity_change', 'cart', 'quantity', 'analytics', 'Cart quantity change'),
   entry('cart_item_remove', 'cart', 'remove', 'analytics', 'Cart item remove'),
   entry('cart_item_edit', 'cart', 'edit', 'analytics', 'Cart item edit'),
   entry('cart_coupon_apply', 'cart', 'coupon_apply', 'analytics', 'Cart coupon apply'),
@@ -106,9 +112,14 @@ export const ANALYTICS_EVENT_REGISTRY: readonly EventRegistryEntry[] = [
   entry('cart_checkout_click', 'cart', 'checkout_click', 'analytics', 'Cart checkout click'),
   entry('checkout_click', 'cart', 'checkout_click', 'analytics', 'Checkout click from toast'),
   entry('cart_empty_state_view', 'cart', 'empty_view', 'analytics', 'Empty cart view'),
+  entry('cart_recovery_returned', 'cart', 'recovery', 'analytics', 'Cart recovery return'),
 
   // Checkout
   entry('checkout_view', 'checkout', 'view', 'analytics', 'Checkout view'),
+  entry('checkout_started', 'checkout', 'start', 'analytics', 'Checkout started (native)'),
+  entry('checkout_email_entered', 'checkout', 'email', 'analytics', 'Checkout email milestone'),
+  entry('coupon_applied', 'checkout', 'coupon_apply', 'analytics', 'Coupon applied'),
+  entry('coupon_failed', 'checkout', 'coupon_fail', 'analytics', 'Coupon failed'),
   entry('checkout_contact_start', 'checkout', 'contact_start', 'analytics', 'Checkout contact start'),
   entry(
     'checkout_payment_method_select',
@@ -394,6 +405,11 @@ export function listApprovedEventNames(): string[] {
  * Keeps historical call sites working without duplicating funnel semantics.
  */
 export const LEGACY_EVENT_ALIASES: Readonly<Record<string, string>> = {
+  cart_item_add: 'cart_add',
+  cart_item_remove: 'cart_remove',
+  checkout_view: 'checkout_started',
+  home_page_view: 'page_view',
+  service_page_view: 'service_view',
   ig_followers_view_packages: 'service_view_packages',
   ig_followers_package_impression: 'package_impression',
   ig_followers_package_select: 'package_select',

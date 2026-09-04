@@ -47,6 +47,7 @@
             "Warenkorb: Behält ausgewählte Pakete und den Inhalt des Warenkorbs bei, während Sie einkaufen und zwischen Shopping- und Checkout-Hosts wechseln. Verwendet das First-Party-Cookie iv_cart_v1 (bis zu 7 Tage) sowie einen Warenkorb-Cache im Browser-sessionStorage.",
             "Checkout: Unterstützt die Kontinuität des Checkouts, damit eine Bestellung nach Paketauswahl und Konfiguration abgeschlossen werden kann.",
             "Sitzung: Unterstützt die Kontinuität beim Browsen für Warenkorb und zugehörige Commerce-Abläufe. Ein Kundenkonto ist für eine Bestellung nicht erforderlich.",
+            "Betriebliche Analyse: Misst die Funnel-Leistung des Shops (Besuche, Sitzungen, Warenkorb, Checkout und bezahlte Bestellungen), damit wir den Shop betreiben und verbessern können. Dies ist First-Party-Betriebsanalyse, keine Werbemessung. Verwendet die First-Party-Cookies nl_visitor_id (ca. 1 Jahr), nl_session_id und nl_session_activity (Ablauf nach ~30 Minuten Inaktivität). Standardmäßig werden keine Third-Party-Analyse-Cookies gesetzt.",
             "Sicherheit: Unterstützt sicherheitsbezogene Website-Funktionen, einschließlich des Schutzes administrativer Mitarbeitersitzungen, soweit zutreffend. Der Admin-Zugang für Mitarbeitende kann ein Cookie iv_admin_session verwenden. Dies ist kein Kunden-Login-Cookie."
           ]
         },
@@ -59,6 +60,8 @@
           "type": "list",
           "items": [
             "iv_cart_v1 — First-Party-Warenkorb-Cookie für die Warenkorbübergabe (bis zu 7 Tage), zusammen mit einem sessionStorage-Warenkorb-Cache",
+            "nl_visitor_id — First-Party-Besucherkennungs-Cookie (ca. 1 Jahr) für betriebliche Shop-Analyse",
+            "nl_session_id / nl_session_activity — First-Party-Sitzungs-Cookies mit ~30 Minuten Inaktivitäts-Timeout für betriebliche Analyse",
             "iv_admin_session — administratives Sitzungs-Cookie für Mitarbeitende für den NovaLikes-Admin-Zugang (kein Kundenkonto-Cookie)",
             "novalikes.analytics.consent.v1 — localStorage-Schlüssel im Browser zur Speicherung von Analyse-Einwilligungseinstellungen für mögliche zukünftige Analyse-Skripte"
           ]
@@ -70,7 +73,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Über die oben genannten wesentlichen Zwecke für Warenkorb, Checkout, Sitzung und Sicherheit hinaus führt NovaLikes derzeit kein gesondertes Inventar optionaler funktionaler Einstellungs-Cookies."
+          "text": "Über die oben genannten wesentlichen Zwecke für Warenkorb, Checkout, Sitzung, betriebliche Analyse und Sicherheit hinaus führt NovaLikes derzeit kein gesondertes Inventar optionaler funktionaler Einstellungs-Cookies."
         },
         {
           "type": "subheading",

@@ -97,6 +97,17 @@ export async function markOrderPaymentStatus(input: {
       orderId: saved.id,
       email: saved.guestEmail,
     });
+    try {
+      const { recordPaymentPaidAnalytics } = await import(
+        '@/lib/analytics/native/server-events'
+      );
+      await recordPaymentPaidAnalytics(saved);
+    } catch (error) {
+      console.error('[payments] analytics paid event failed', {
+        orderId: saved.id,
+        message: error instanceof Error ? error.message : 'unknown',
+      });
+    }
   }
 
   return { order: saved, duplicate: false, applied: true };

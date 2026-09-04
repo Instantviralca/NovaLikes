@@ -123,5 +123,17 @@ export async function placeOrder(input: PlaceOrderInput): Promise<Order> {
     const existing = await getOrderByIdempotencyKey(key);
     if (existing) return existing;
   }
-  return saveOrder(draft);
+  const saved = await saveOrder(draft);
+  try {
+    const { recordOrderCreatedAnalytics } = await import(
+      '@/lib/analytics/native/server-events'
+    );
+    await recordOrderCreatedAnalytics(saved);
+  } catch (error) {
+    console.error('[orders] analytics order_created failed', {
+      orderId: saved.id,
+      message: error instanceof Error ? error.message : 'unknown',
+    });
+  }
+  return saved;
 }

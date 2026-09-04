@@ -3,7 +3,11 @@
  */
 
 import { analyticsConfig } from '@/config/analytics';
-import { isFunnelEventName } from '@/lib/analytics/funnel-events';
+import {
+  getOrCreateSessionId,
+  getOrCreateVisitorId,
+} from '@/lib/analytics/native/identity';
+import { canonicalizeClientEventName } from '@/lib/analytics/native/taxonomy';
 import type {
   AnalyticsEvent,
   AnalyticsProviderAdapter,
@@ -12,20 +16,32 @@ import type {
 type QueuedEvent = {
   eventName: string;
   sessionId: string;
+  visitorId: string;
   pagePath: string;
+  pageType?: string;
   eventId: string;
   timestamp: string;
+  referrer?: string;
+  search?: string;
+  market?: string;
+  locale?: string;
+  serviceSlug?: string;
+  packageId?: string;
+  isNewSession?: boolean;
   metadata?: Record<string, string | number | boolean | null>;
 };
 
 const queue: QueuedEvent[] = [];
 let flushTimer: ReturnType<typeof setTimeout> | null = null;
 let pagehideBound = false;
+let attributionCaptured = false;
 
-function enqueue(event: AnalyticsEvent): void {
-  if (!isFunnelEventName(event.eventName)) return;
+function enqueue(event: AnalyticsEvent, isNewSession = false): void {
+  const eventName = canonicalizeClientEventName(event.eventName);
+  if (!eventName) return;
   if (!event.sessionId || !event.pagePath) return;
 
+  const visitorId = getOrCreateVisitorId();
   const metadata: Record<string, string | number | boolean | null> = {
     pageType: event.pageType,
   };
@@ -34,12 +50,27 @@ function enqueue(event: AnalyticsEvent): void {
   if (typeof event.quantity === 'number') metadata.quantity = event.quantity;
   if (event.platform) metadata.platform = event.platform;
 
+  let search: string | undefined;
+  let referrer: string | undefined;
+  if (typeof window !== 'undefined' && !attributionCaptured) {
+    search = window.location.search || undefined;
+    referrer = document.referrer || undefined;
+    attributionCaptured = true;
+  }
+
   queue.push({
-    eventName: event.eventName,
+    eventName,
     sessionId: event.sessionId,
+    visitorId,
     pagePath: event.pagePath,
+    pageType: event.pageType,
     eventId: event.eventId,
     timestamp: event.timestamp,
+    referrer,
+    search,
+    serviceSlug: event.serviceSlug,
+    packageId: event.packageId,
+    isNewSession: isNewSession || undefined,
     metadata,
   });
 
@@ -100,6 +131,8 @@ export function createInternalAdapter(): AnalyticsProviderAdapter | null {
     id: 'internal',
     initialize: () => {
       bindPagehide();
+      getOrCreateVisitorId();
+      getOrCreateSessionId();
     },
     trackPageView: (event: AnalyticsEvent) => {
       enqueue(event);
@@ -107,16 +140,25 @@ export function createInternalAdapter(): AnalyticsProviderAdapter | null {
     trackEvent: (event: AnalyticsEvent) => {
       enqueue(event);
     },
-    trackConversion: (event: AnalyticsEvent) => {
-      enqueue(event);
+    trackConversion: () => {
+      // Paid conversion is server-only — ignore client purchase for first-party sink.
     },
     setConsent: () => undefined,
     reset: () => {
       queue.length = 0;
+      attributionCaptured = false;
       if (flushTimer) {
         clearTimeout(flushTimer);
         flushTimer = null;
       }
     },
   };
+}
+
+/** Test helper: enqueue with new-session flag for landing. */
+export function enqueueNativeAnalyticsEvent(
+  event: AnalyticsEvent,
+  options?: { isNewSession?: boolean },
+): void {
+  enqueue(event, options?.isNewSession === true);
 }

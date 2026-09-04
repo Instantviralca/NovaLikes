@@ -47,6 +47,7 @@
             "Cart: Maintains selected packages and cart contents while you shop and move between shopping and checkout hosts. Uses the first-party cookie iv_cart_v1 (up to 7 days) and a browser sessionStorage cart cache.",
             "Checkout: Supports checkout continuity so an order can be completed after package selection and configuration.",
             "Session: Supports browsing continuity for cart and related commerce flows. Customer accounts are not required to place an order.",
+            "Operational analytics: Measures storefront funnel performance (visits, sessions, cart, checkout, and paid orders) so we can operate and improve the shop. This is first-party operational analytics, not advertising measurement. Uses first-party cookies nl_visitor_id (about 1 year), nl_session_id, and nl_session_activity (sliding ~30 minutes of inactivity). No third-party analytics cookies are set by default.",
             "Security: Supports security-related website operation, including staff administrative session protection where applicable. Staff admin access may use an iv_admin_session cookie. This is not a customer login cookie."
           ]
         },
@@ -59,6 +60,8 @@
           "type": "list",
           "items": [
             "iv_cart_v1 — first-party cart cookie used for cart handoff (up to 7 days), together with a sessionStorage cart cache",
+            "nl_visitor_id — first-party visitor identifier cookie (about 1 year) for operational storefront analytics",
+            "nl_session_id / nl_session_activity — first-party session cookies with ~30 minutes of inactivity timeout for operational analytics",
             "iv_admin_session — staff administrative session cookie for NovaLikes admin access (not a customer account cookie)",
             "novalikes.analytics.consent.v1 — browser localStorage key used to store analytics consent preferences for possible future analytics scripts"
           ]
@@ -70,7 +73,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Beyond the essential cart, checkout, session, and security purposes listed above, NovaLikes does not currently maintain a separate inventory of optional functional preference cookies."
+          "text": "Beyond the essential cart, checkout, session, operational analytics, and security purposes listed above, NovaLikes does not currently maintain a separate inventory of optional functional preference cookies."
         },
         {
           "type": "subheading",

@@ -47,6 +47,7 @@
             "Carrello: Mantiene i pacchetti selezionati e il contenuto del carrello mentre fai acquisti e ti sposti tra gli host di shopping e checkout. Usa il cookie di prima parte iv_cart_v1 (fino a 7 giorni) e una cache del carrello in sessionStorage del browser.",
             "Checkout: Supporta la continuità del checkout in modo che un ordine possa essere completato dopo la selezione e la configurazione del pacchetto.",
             "Sessione: Supporta la continuità di navigazione per il carrello e i flussi commerciali correlati. Gli account cliente non sono necessari per effettuare un ordine.",
+            "Analitica operativa: Misura le prestazioni del funnel del negozio (visite, sessioni, carrello, checkout e ordini pagati) per gestire e migliorare il negozio. È analitica operativa di prima parte, non misurazione pubblicitaria. Usa i cookie di prima parte nl_visitor_id (circa 1 anno), nl_session_id e nl_session_activity (scadenza dopo ~30 minuti di inattività). Per impostazione predefinita non vengono impostati cookie di analitica di terze parti.",
             "Sicurezza: Supporta il funzionamento del sito web relativo alla sicurezza, inclusa la protezione delle sessioni amministrative dello staff ove applicabile. L’accesso admin dello staff può usare un cookie iv_admin_session. Questo non è un cookie di login del cliente."
           ]
         },
@@ -59,6 +60,8 @@
           "type": "list",
           "items": [
             "iv_cart_v1 — cookie di prima parte del carrello usato per il passaggio del carrello (fino a 7 giorni), insieme a una cache del carrello in sessionStorage",
+            "nl_visitor_id — cookie di prima parte per identificatore visitatore (circa 1 anno) per l’analitica operativa del negozio",
+            "nl_session_id / nl_session_activity — cookie di sessione di prima parte con timeout di ~30 minuti di inattività per l’analitica operativa",
             "iv_admin_session — cookie di sessione amministrativa dello staff per l’accesso admin NovaLikes (non un cookie di account cliente)",
             "novalikes.analytics.consent.v1 — chiave di localStorage del browser usata per memorizzare le preferenze di consenso analytics per eventuali script analytics futuri"
           ]
@@ -70,7 +73,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Oltre agli scopi essenziali di carrello, checkout, sessione e sicurezza elencati sopra, NovaLikes non mantiene attualmente un inventario separato di cookie funzionali facoltativi per le preferenze."
+          "text": "Oltre agli scopi essenziali di carrello, checkout, sessione, analitica operativa e sicurezza elencati sopra, NovaLikes non mantiene attualmente un inventario separato di cookie funzionali facoltativi per le preferenze."
         },
         {
           "type": "subheading",

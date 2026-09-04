@@ -8,6 +8,7 @@ import {
   resolveCanonicalEventName,
 } from '@/data/analytics/event-registry';
 import { isFunnelEventName } from '@/lib/analytics/funnel-events';
+import { isClientAnalyticsEvent } from '@/lib/analytics/native/taxonomy';
 import { canTrackEvent, getAnalyticsConsent } from '@/lib/analytics/core/consent';
 import { getAnalyticsContext } from '@/lib/analytics/core/context';
 import { dispatchToProviders } from '@/lib/analytics/core/dispatch';
@@ -175,9 +176,9 @@ export function trackEvent(input: AnalyticsEventInput): AnalyticsTrackResult {
           ? 'conversion'
           : 'event';
 
-    // First-party admin funnel: still persist allowlisted events without marketing consent.
+    // First-party operational funnel: persist allowlisted events without marketing consent.
     if (!consentAllowed) {
-      if (isFunnelEventName(event.eventName)) {
+      if (isFunnelEventName(event.eventName) || isClientAnalyticsEvent(event.eventName)) {
         return dispatchToProviders({ ...event, channel: 'admin' }, mode);
       }
       return blockedResult(

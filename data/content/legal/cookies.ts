@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Cookie Policy production content — Document 13.07.
  */
 
@@ -52,6 +52,8 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
       type: 'list',
       items: [
         'iv_cart_v1 — first-party cart cookie used for cart handoff (up to 7 days), together with a sessionStorage cart cache',
+        'nl_visitor_id — first-party visitor identifier cookie (about 1 year) for operational storefront analytics',
+        'nl_session_id / nl_session_activity — first-party session cookies with ~30 minutes of inactivity timeout for operational analytics',
         'iv_admin_session — staff administrative session cookie for NovaLikes admin access (not a customer account cookie)',
         'novalikes.analytics.consent.v1 — browser localStorage key used to store analytics consent preferences for possible future analytics scripts',
       ],
@@ -156,7 +158,7 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Beyond the essential cart, checkout, session, and security purposes listed above, NovaLikes does not currently maintain a separate inventory of optional functional preference cookies.',
+          text: 'Beyond the essential cart, checkout, session, operational analytics, and security purposes listed above, NovaLikes does not currently maintain a separate inventory of optional functional preference cookies.',
         },
         {
           type: 'subheading',
