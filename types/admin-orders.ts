@@ -6,7 +6,10 @@ import type { OrderConfigurationValues } from '@/types/order-fields';
 
 /** Admin Order Management row — Document 12.03. */
 export type AdminOrderRow = {
+  /** Internal database order id (IV-…). Used for admin API routes. */
   id: string;
+  /** Customer-facing order number (01001) or legacy IV- id. */
+  publicOrderId: string;
   customerEmail: string;
   platformId: PlatformId;
   serviceName: string;

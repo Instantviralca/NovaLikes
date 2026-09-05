@@ -5,6 +5,7 @@
 import { getEmailFrom, getSiteUrl, isEmailConfigured } from '@/lib/config/env';
 import { dispatchNotification } from '@/lib/notifications/service';
 import { dispatchTransactionalEmail } from '@/lib/notifications/email';
+import { getCustomerOrderId } from '@/lib/orders/public-number';
 import { formatMoney } from '@/lib/pricing/format';
 import { getAdminNotificationEmail } from '@/lib/settings/site-settings';
 import type { Order } from '@/types/order';
@@ -27,11 +28,12 @@ function baseVariables(order: Order) {
   const item = order.items[0];
   const meta = ORDER_STATUS_METADATA[order.status];
   const year = new Date().getFullYear();
+  const customerOrderId = getCustomerOrderId(order);
   return {
     companyName: companyName(),
     customerEmail: order.guestEmail,
     customerName: order.guestEmail.split('@')[0] || 'there',
-    orderId: order.id,
+    orderId: customerOrderId,
     serviceName: item?.serviceName ?? 'Service',
     packageName: item?.packageTitle ?? '',
     quantity: item?.quantityLabel ?? '',
@@ -39,7 +41,7 @@ function baseVariables(order: Order) {
     itemCount: String(order.items.length),
     statusLabel: meta?.customerLabel ?? order.status,
     statusMessage: meta?.customerMessage ?? '',
-    trackingUrl: trackingUrl(order.id, order.guestEmail),
+    trackingUrl: trackingUrl(customerOrderId, order.guestEmail),
     supportEmail: supportEmail(),
     footerText: `© ${year} ${companyName()}. All rights reserved.`,
   };
@@ -48,6 +50,7 @@ function baseVariables(order: Order) {
 /** Fire when checkout creates the order (before / as payment starts). */
 export async function notifyOrderPlaced(order: Order): Promise<void> {
   const vars = baseVariables(order);
+  const customerOrderId = getCustomerOrderId(order);
 
   await dispatchNotification({
     trigger: 'order_created',
@@ -66,7 +69,7 @@ export async function notifyOrderPlaced(order: Order): Promise<void> {
       idempotencyKey: `admin_new_order:${order.id}`,
       variables: {
         ...vars,
-        subjectHint: `New order ${order.id}`,
+        subjectHint: `New order ${customerOrderId}`,
       },
     });
   }
@@ -75,6 +78,7 @@ export async function notifyOrderPlaced(order: Order): Promise<void> {
 /** Fire when payment is verified paid (remote callback / webhook). */
 export async function notifyOrderPaid(order: Order): Promise<void> {
   const vars = baseVariables(order);
+  const customerOrderId = getCustomerOrderId(order);
 
   // Customer: payment confirmed (distinct from place-order confirmation).
   if (isEmailConfigured()) {
@@ -96,7 +100,7 @@ export async function notifyOrderPaid(order: Order): Promise<void> {
       idempotencyKey: `admin_order_paid:${order.id}`,
       variables: {
         ...vars,
-        subjectHint: `Paid order ${order.id}`,
+        subjectHint: `Paid order ${customerOrderId}`,
       },
     });
   }

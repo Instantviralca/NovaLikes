@@ -1,4 +1,5 @@
 import { getCustomerStatusMessage, getAdminStatusLabel, ORDER_STATUSES } from '@/lib/orders/status';
+import { getCustomerOrderId } from '@/lib/orders/public-number';
 import type { Order } from '@/types/order';
 import type { OrderStatus } from '@/types/order-status';
 import type {
@@ -10,7 +11,7 @@ import type {
 
 /**
  * Order Tracking lookup — Document 11.05.
- * Architecture: verification + public projection. No real order store yet.
+ * Architecture: verification + public projection.
  */
 
 const GENERIC_NOT_FOUND =
@@ -97,7 +98,7 @@ export function buildPublicTimeline(
 export function toPublicTrackedOrder(order: Order): PublicTrackedOrder {
   const item = order.items[0];
   return {
-    orderId: order.id,
+    orderId: getCustomerOrderId(order),
     status: order.status,
     statusLabel: getAdminStatusLabel(order.status),
     statusMessage: getCustomerStatusMessage(order.status),
@@ -114,7 +115,6 @@ export function toPublicTrackedOrder(order: Order): PublicTrackedOrder {
 
 /**
  * Verify Order ID + Email. Returns a generic error when unmatched.
- * Persistence is not wired — returns not_found until order store exists.
  */
 export async function lookupTrackedOrder(
   input: TrackOrderLookupInput,

@@ -2,7 +2,7 @@
  * PostgreSQL persistence via Drizzle — primary production store.
  */
 
-import { and, desc, eq, gte } from 'drizzle-orm';
+import { and, desc, eq, gte, sql } from 'drizzle-orm';
 
 import { getDb } from '@/lib/db/client';
 import * as tables from '@/lib/db/schema';
@@ -147,6 +147,7 @@ async function hydrateOrder(orderId: string): Promise<Order | null> {
 
   return {
     id: row.id,
+    publicNumber: row.publicNumber ?? null,
     guestEmail: row.guestEmail,
     status: row.status as OrderStatus,
     fulfillmentMode: row.fulfillmentMode as Order['fulfillmentMode'],
@@ -182,6 +183,15 @@ export function createPostgresPersistence(): AppPersistence {
     async getOrderById(orderId) {
       return hydrateOrder(orderId);
     },
+    async getOrderByPublicNumber(publicNumber) {
+      const db = getDb();
+      const [row] = await db
+        .select({ id: tables.orders.id })
+        .from(tables.orders)
+        .where(eq(tables.orders.publicNumber, publicNumber))
+        .limit(1);
+      return row ? hydrateOrder(row.id) : null;
+    },
     async getOrderByIdempotencyKey(key) {
       const db = getDb();
       const [row] = await db
@@ -200,10 +210,27 @@ export function createPostgresPersistence(): AppPersistence {
         .limit(1);
       return row ? hydrateOrder(row.orderId) : null;
     },
+    async allocatePublicOrderNumber() {
+      const db = getDb();
+      const result = await db.execute(
+        sql`SELECT nextval('orders_public_number_seq') AS n`,
+      );
+      const rows = result as unknown as Array<{ n: string | number }>;
+      const raw = rows[0]?.n;
+      const n = typeof raw === 'number' ? raw : Number(raw);
+      if (!Number.isInteger(n) || n < 1) {
+        throw new Error('Failed to allocate public order number from sequence.');
+      }
+      return n;
+    },
     async saveOrder(order) {
       const db = getDb();
       const withKey = order as Order & { idempotencyKey?: string };
       const existing = await hydrateOrder(order.id);
+      const publicNumber =
+        typeof order.publicNumber === 'number'
+          ? order.publicNumber
+          : existing?.publicNumber ?? null;
 
       await db
         .insert(tables.orders)
@@ -219,6 +246,7 @@ export function createPostgresPersistence(): AppPersistence {
           couponCode: order.couponCode ?? null,
           customerNotes: order.customerNotes ?? null,
           idempotencyKey: withKey.idempotencyKey ?? null,
+          publicNumber,
           createdAt: new Date(order.createdAt),
           updatedAt: new Date(order.updatedAt),
         })
@@ -235,6 +263,8 @@ export function createPostgresPersistence(): AppPersistence {
             couponCode: order.couponCode ?? null,
             customerNotes: order.customerNotes ?? null,
             idempotencyKey: withKey.idempotencyKey ?? null,
+            // Never clear an assigned public number on update.
+            publicNumber: publicNumber ?? existing?.publicNumber ?? null,
             updatedAt: new Date(order.updatedAt),
           },
         });

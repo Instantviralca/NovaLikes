@@ -11,7 +11,7 @@ import {
 } from '@/lib/admin/auth';
 import { verifyAdminSessionTokenEdge } from '@/lib/admin/auth-edge';
 import { placeOrder } from '@/lib/orders/create';
-import { getOrderById, resetOrderStoreForTests } from '@/lib/orders/store';
+import { getOrderById, resetOrderStoreForTests, resolveOrderByCustomerRef } from '@/lib/orders/store';
 import {
   clearPersistenceSingletonForTests,
   useMemoryPersistenceForTests,
@@ -67,16 +67,17 @@ describe('Launch checklist — orders + auth', () => {
     });
 
     expect(order.id.startsWith('IV-')).toBe(true);
+    expect(order.publicNumber).toBe(1001);
     expect(order.total.amount).toBe(1399);
     expect((await getOrderById(order.id))?.guestEmail).toBe('buyer@example.com');
 
     const tracked = await lookupTrackedOrder(
-      { orderId: order.id, email: 'buyer@example.com' },
-      async (id) => getOrderById(id),
+      { orderId: '01001', email: 'buyer@example.com' },
+      async (id) => resolveOrderByCustomerRef(id),
     );
     expect(tracked.ok).toBe(true);
     if (tracked.ok) {
-      expect(tracked.order.orderId).toBe(order.id);
+      expect(tracked.order.orderId).toBe('01001');
       expect(tracked.order.targetDisplay).toContain('***');
     }
   });

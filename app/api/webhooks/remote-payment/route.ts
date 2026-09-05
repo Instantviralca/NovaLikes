@@ -13,10 +13,29 @@ import {
   markOrderPaymentStatus,
   recordWebhookProcessed,
 } from '@/lib/payments/mark-paid';
-import { getOrderById } from '@/lib/orders/store';
+import { parsePublicOrderNumber } from '@/lib/orders/public-number';
+import {
+  getOrderById,
+  getOrderByPaymentId,
+  getOrderByPublicNumber,
+} from '@/lib/orders/store';
 import { getRemotePaymentSharedSecret } from '@/lib/settings/site-settings';
+import type { Order } from '@/types/order';
 
 export const runtime = 'nodejs';
+
+async function resolveOrderFromMollieCallback(orderIdField: string): Promise<Order | null> {
+  const byPayment = await getOrderByPaymentId(`remote_${orderIdField}`);
+  if (byPayment) return byPayment;
+
+  const publicNumber = parsePublicOrderNumber(orderIdField);
+  if (publicNumber !== null) {
+    const byPublic = await getOrderByPublicNumber(publicNumber);
+    if (byPublic) return byPublic;
+  }
+
+  return getOrderById(orderIdField);
+}
 
 /**
  * Mollie Remote Payment server callback (Woo client compatible).
@@ -93,7 +112,7 @@ export async function POST(request: Request) {
       throw error;
     }
 
-    const order = await getOrderById(orderId);
+    const order = await resolveOrderFromMollieCallback(orderId);
     if (!order) {
       return new NextResponse('Not Found', { status: 404 });
     }
@@ -113,7 +132,7 @@ export async function POST(request: Request) {
 
     await markOrderPaymentStatus({
       paymentId: txnId,
-      orderId,
+      orderId: order.id,
       status: 'paid',
       amountMinor: order.total.amount,
       providerReference: txnId,

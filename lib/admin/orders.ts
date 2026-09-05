@@ -1,6 +1,7 @@
 import { formatMoney } from '@/lib/pricing/format';
 import { getAllServices } from '@/data/services';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
+import { getCustomerOrderId } from '@/lib/orders/public-number';
 import { listOrders, getOrderById } from '@/lib/orders/store';
 import { isEligibleForFulfilmentQueue } from '@/lib/payments/mark-paid';
 import type {
@@ -92,6 +93,7 @@ function toRow(order: Order): AdminOrderRow {
   const configuration = (item?.configuration ?? {}) as OrderConfigurationValues;
   return {
     id: order.id,
+    publicOrderId: getCustomerOrderId(order),
     customerEmail: order.guestEmail,
     platformId: (item?.platformId ?? 'instagram') as PlatformId,
     serviceName: item?.serviceName ?? 'Service',

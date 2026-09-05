@@ -37,7 +37,7 @@ export function OrderDetailsDrawer({
     <Sheet open={open} onOpenChange={onOpenChange} modal={false}>
       <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-lg">
         <SheetHeader>
-          <SheetTitle>{order ? `Order ${order.id}` : 'Order details'}</SheetTitle>
+          <SheetTitle>{order ? `Order ${order.publicOrderId}` : 'Order details'}</SheetTitle>
           <SheetDescription>Manual fulfillment workspace</SheetDescription>
         </SheetHeader>
 

@@ -21,6 +21,7 @@ import type {
   WebhookStore,
 } from '@/lib/persistence/types';
 import type { ContactFormValues } from '@/lib/contact/validation';
+import { PUBLIC_ORDER_NUMBER_START } from '@/lib/orders/public-number';
 import type { Order } from '@/types/order';
 import type { NotificationRecord } from '@/types/notification';
 import {
@@ -41,6 +42,7 @@ function createMemoryState() {
     analyticsSessions: [] as AnalyticsSessionRecord[],
     emailSubscribers: [] as EmailSubscriberRecord[],
     emailCampaigns: [] as EmailCampaignRecord[],
+    nextPublicNumber: PUBLIC_ORDER_NUMBER_START,
   };
 }
 
@@ -54,6 +56,9 @@ export function createMemoryPersistence(): AppPersistence {
     async getOrderById(orderId) {
       return state.orders.find((o) => o.id === orderId) ?? null;
     },
+    async getOrderByPublicNumber(publicNumber) {
+      return state.orders.find((o) => o.publicNumber === publicNumber) ?? null;
+    },
     async getOrderByIdempotencyKey(key) {
       return (
         state.orders.find((o) => (o as Order & { idempotencyKey?: string }).idempotencyKey === key) ??
@@ -62,6 +67,11 @@ export function createMemoryPersistence(): AppPersistence {
     },
     async getOrderByPaymentId(paymentId) {
       return state.orders.find((o) => o.payment?.paymentId === paymentId) ?? null;
+    },
+    async allocatePublicOrderNumber() {
+      const n = state.nextPublicNumber;
+      state.nextPublicNumber += 1;
+      return n;
     },
     async saveOrder(order) {
       const withKey = order as Order & { idempotencyKey?: string };

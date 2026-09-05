@@ -46,8 +46,11 @@ export type PersistenceDriver = 'postgres' | 'memory' | 'file';
 export type OrderStore = {
   listOrders(): Promise<Order[]>;
   getOrderById(orderId: string): Promise<Order | null>;
+  getOrderByPublicNumber?(publicNumber: number): Promise<Order | null>;
   getOrderByIdempotencyKey(key: string): Promise<Order | null>;
   getOrderByPaymentId(paymentId: string): Promise<Order | null>;
+  /** Atomically allocate the next public_number (Postgres sequence / memory counter). */
+  allocatePublicOrderNumber?(): Promise<number>;
   saveOrder(order: Order): Promise<Order>;
   addInternalNote(orderId: string, note: OrderInternalNote): Promise<OrderInternalNote>;
 };

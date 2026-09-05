@@ -21,6 +21,7 @@ import {
   readCollectorTestMode,
 } from '@/lib/payments/mollie-remote-protocol';
 import { placeOrder } from '@/lib/orders/create';
+import { toMollieOrderId } from '@/lib/orders/public-number';
 import { getOrderById, resetOrderStoreForTests } from '@/lib/orders/store';
 import {
   clearPersistenceSingletonForTests,
@@ -157,7 +158,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const response = await postWebhook(
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_iv_env_bypass',
         price,
         currency: order.total.currency,
@@ -175,7 +176,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const response = await postWebhook(
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_test_1',
         price,
         currency: order.total.currency,
@@ -193,7 +194,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const response = await postWebhook(
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_live_1',
         price,
         currency: order.total.currency,
@@ -212,7 +213,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const response = await postWebhook(
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_dev_test_1',
         price,
         currency: order.total.currency,
@@ -248,7 +249,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const response = await postWebhook(
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_test_recovery',
         price,
         currency: order.total.currency,
@@ -275,7 +276,7 @@ describe('Mollie production testmode safety', () => {
     const price = (order.total.amount / 100).toFixed(2);
     const body = () =>
       signedWebhookBody({
-        orderId: order.id,
+        orderId: toMollieOrderId(order.publicNumber!),
         txnId: 'tr_test_repeat',
         price,
         currency: order.total.currency,

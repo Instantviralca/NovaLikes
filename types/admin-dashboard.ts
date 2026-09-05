@@ -18,6 +18,8 @@ export type DashboardQuickAction = {
 
 export type DashboardOrderRow = {
   id: string;
+  /** Customer-facing order number (01001) when available. */
+  publicOrderId: string;
   customer: string;
   service: string;
   packageTitle: string;

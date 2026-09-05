@@ -32,7 +32,7 @@ export function PendingOrdersWidget({ orders, loading }: PendingOrdersWidgetProp
               className="flex items-center justify-between gap-3 border-b pb-3 last:border-0"
             >
               <div>
-                <p className="text-sm font-medium">{order.id}</p>
+                <p className="text-sm font-medium">{order.publicOrderId}</p>
                 <p className="text-xs text-muted-foreground">
                   {order.service} · {order.customer}
                 </p>

@@ -27,12 +27,15 @@ export const orders = pgTable(
     couponCode: text('coupon_code'),
     customerNotes: text('customer_notes'),
     idempotencyKey: text('idempotency_key'),
+    /** Sequential customer/Mollie-facing number (1001 → display 01001). */
+    publicNumber: integer('public_number'),
     createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
   },
   (t) => ({
     emailIdx: index('orders_guest_email_idx').on(t.guestEmail),
     idempotencyIdx: uniqueIndex('orders_idempotency_key_uidx').on(t.idempotencyKey),
+    publicNumberIdx: uniqueIndex('orders_public_number_uidx').on(t.publicNumber),
   }),
 );
 

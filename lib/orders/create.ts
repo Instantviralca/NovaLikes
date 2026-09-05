@@ -10,6 +10,7 @@ import type { CustomerInformation, PlaceOrderPayload } from '@/types/checkout';
 import type { Order } from '@/types/order';
 import type { PaymentProviderId } from '@/types/payment';
 import {
+  allocatePublicOrderNumber,
   createOrderId,
   getOrderByIdempotencyKey,
   saveOrder,
@@ -123,7 +124,9 @@ export async function placeOrder(input: PlaceOrderInput): Promise<Order> {
     const existing = await getOrderByIdempotencyKey(key);
     if (existing) return existing;
   }
-  const saved = await saveOrder(draft);
+  // Allocate only after idempotency miss so retries do not burn sequence values.
+  const publicNumber = await allocatePublicOrderNumber();
+  const saved = await saveOrder({ ...draft, publicNumber });
   try {
     const { recordOrderCreatedAnalytics } = await import(
       '@/lib/analytics/native/server-events'

@@ -18,6 +18,7 @@ import type {
   EmailSubscriberRecord,
   WebhookEventRecord,
 } from '@/lib/persistence/types';
+import { PUBLIC_ORDER_NUMBER_START } from '@/lib/orders/public-number';
 import type { Order, OrderInternalNote } from '@/types/order';
 import type { NotificationRecord } from '@/types/notification';
 import { createEmailMarketingApi } from '@/lib/persistence/email-marketing-memory';
@@ -38,6 +39,7 @@ type FileState = {
   analyticsSessions: AnalyticsSessionRecord[];
   emailSubscribers: EmailSubscriberRecord[];
   emailCampaigns: EmailCampaignRecord[];
+  nextPublicNumber: number;
   updatedAt: string;
 };
 
@@ -55,6 +57,7 @@ function emptyState(): FileState {
     analyticsSessions: [],
     emailSubscribers: [],
     emailCampaigns: [],
+    nextPublicNumber: PUBLIC_ORDER_NUMBER_START,
     updatedAt: new Date().toISOString(),
   };
 }
@@ -76,6 +79,10 @@ function read(): FileState {
       analyticsSessions: parsed.analyticsSessions ?? [],
       emailSubscribers: parsed.emailSubscribers ?? [],
       emailCampaigns: parsed.emailCampaigns ?? [],
+      nextPublicNumber:
+        typeof parsed.nextPublicNumber === 'number' && parsed.nextPublicNumber >= PUBLIC_ORDER_NUMBER_START
+          ? parsed.nextPublicNumber
+          : PUBLIC_ORDER_NUMBER_START,
     };
   } catch {
     return emptyState();
@@ -97,11 +104,21 @@ export function createFilePersistence(): AppPersistence {
     async getOrderById(orderId) {
       return read().orders.find((o) => o.id === orderId) ?? null;
     },
+    async getOrderByPublicNumber(publicNumber) {
+      return read().orders.find((o) => o.publicNumber === publicNumber) ?? null;
+    },
     async getOrderByIdempotencyKey(key) {
       return read().orders.find((o) => o.idempotencyKey === key) ?? null;
     },
     async getOrderByPaymentId(paymentId) {
       return read().orders.find((o) => o.payment?.paymentId === paymentId) ?? null;
+    },
+    async allocatePublicOrderNumber() {
+      const state = read();
+      const n = state.nextPublicNumber;
+      state.nextPublicNumber = n + 1;
+      write(state);
+      return n;
     },
     async saveOrder(order) {
       const state = read();

@@ -75,6 +75,11 @@ export type OrderInternalNote = {
  */
 export type Order = {
   id: string;
+  /**
+   * Sequential customer-facing number (1001 → "01001").
+   * Null/undefined on historical IV-only orders.
+   */
+  publicNumber?: number | null;
   customerId?: string;
   guestEmail: string;
   status: OrderStatus;

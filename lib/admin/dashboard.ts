@@ -1,4 +1,5 @@
 import { allowMockPayments, isEmailConfigured } from '@/lib/config/env';
+import { getCustomerOrderId } from '@/lib/orders/public-number';
 import { listOrders } from '@/lib/orders/store';
 import { isEligibleForFulfilmentQueue } from '@/lib/payments/mark-paid';
 import { formatMoney } from '@/lib/pricing/format';
@@ -33,8 +34,10 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
 
   const toOrderRow = (o: (typeof orders)[number]) => {
     const item = o.items[0];
+    const publicOrderId = getCustomerOrderId(o);
     return {
       id: o.id,
+      publicOrderId,
       customer: o.guestEmail,
       service: item?.serviceName ?? 'Service',
       packageTitle: item?.packageTitle ?? 'Package',
@@ -76,7 +79,7 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
     pendingOrders: pending.slice(0, 5).map(toOrderRow),
     activity: orders.slice(0, 8).map((o) => ({
       id: o.id,
-      message: `Order ${o.id} · ${o.status}`,
+      message: `Order ${getCustomerOrderId(o)} · ${o.status}`,
       at: o.updatedAt,
     })),
     revenue: {

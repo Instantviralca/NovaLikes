@@ -97,6 +97,7 @@ export function OrdersPage() {
       if (!q) return true;
       return (
         order.id.toLowerCase().includes(q) ||
+        order.publicOrderId.toLowerCase().includes(q) ||
         order.customerEmail.toLowerCase().includes(q) ||
         order.serviceName.toLowerCase().includes(q) ||
         order.targetDisplay.toLowerCase().includes(q)

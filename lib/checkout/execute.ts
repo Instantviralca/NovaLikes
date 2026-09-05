@@ -10,6 +10,11 @@ import {
 import { getSiteUrlPath } from '@/lib/config/hosts';
 import { notifyOrderPaid, notifyOrderPlaced } from '@/lib/notifications/order-hooks';
 import { placeOrder, type PlaceOrderInput } from '@/lib/orders/create';
+import {
+  formatOrderNumber,
+  getCustomerOrderId,
+  toMollieOrderId,
+} from '@/lib/orders/public-number';
 import { getPersistence } from '@/lib/persistence';
 import { saveOrder } from '@/lib/orders/store';
 import { paymentGatewayManager } from '@/lib/payments/manager';
@@ -61,6 +66,17 @@ export async function executeCheckout(
     }
 
     const order = await placeOrder(input);
+    if (typeof order.publicNumber !== 'number') {
+      return {
+        ok: false,
+        error: 'Order public number was not allocated.',
+        code: 'provider_error',
+      };
+    }
+
+    const customerOrderId = getCustomerOrderId(order);
+    const mollieOrderId = toMollieOrderId(order.publicNumber);
+
     await linkOrderToCartRecovery({
       orderId: order.id,
       email: order.guestEmail,
@@ -92,10 +108,10 @@ export async function executeCheckout(
     }
 
     const successUrl = getSiteUrlPath(
-      `/order-success?orderId=${encodeURIComponent(order.id)}&email=${encodeURIComponent(order.guestEmail)}`,
+      `/order-success?orderId=${encodeURIComponent(customerOrderId)}&email=${encodeURIComponent(order.guestEmail)}`,
     );
     const cancelUrl = getSiteUrlPath(
-      `/checkout?cancelled=1&orderId=${encodeURIComponent(order.id)}`,
+      `/checkout?cancelled=1&orderId=${encodeURIComponent(customerOrderId)}`,
     );
 
     if (remoteReady) {
@@ -106,11 +122,14 @@ export async function executeCheckout(
         itemCount: order.items.reduce((sum, item) => sum + item.quantity, 0),
       };
       const payment = await paymentGatewayManager.createPayment('remote-payment', {
-        orderId: order.id,
+        orderId: mollieOrderId,
         amount: order.total,
         customerEmail: order.guestEmail,
-        description: `NovaLikes order ${order.id}`,
-        metadata: { orderId: order.id },
+        description: `NovaLikes order ${customerOrderId}`,
+        metadata: {
+          orderId: order.id,
+          publicOrderNumber: formatOrderNumber(order.publicNumber),
+        },
         successUrl,
         cancelUrl,
         payload: {
@@ -138,7 +157,7 @@ export async function executeCheckout(
 
       return {
         ok: true,
-        orderId: updated.id,
+        orderId: customerOrderId,
         email: updated.guestEmail,
         status: updated.status,
         paymentStatus: updated.payment?.status ?? 'pending',
@@ -154,7 +173,7 @@ export async function executeCheckout(
       ...order,
       payment: {
         provider: 'remote-payment',
-        paymentId: `mock_${order.id}`,
+        paymentId: `mock_${mollieOrderId}`,
         status: 'paid',
         amount: order.total,
         paidAt: now,
@@ -190,7 +209,7 @@ export async function executeCheckout(
 
     return {
       ok: true,
-      orderId: mockPaid.id,
+      orderId: customerOrderId,
       email: mockPaid.guestEmail,
       status: mockPaid.status,
       paymentStatus: 'paid',

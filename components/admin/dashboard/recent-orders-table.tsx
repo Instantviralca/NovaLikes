@@ -25,7 +25,7 @@ export function RecentOrdersTable({ orders, loading }: RecentOrdersTableProps) {
           rows={orders}
           rowKey={(row) => row.id}
           columns={[
-            { id: 'id', header: 'Order ID', cell: (row) => row.id },
+            { id: 'id', header: 'Order ID', cell: (row) => row.publicOrderId },
             { id: 'customer', header: 'Customer', cell: (row) => row.customer },
             { id: 'service', header: 'Service', cell: (row) => row.service },
             { id: 'package', header: 'Package', cell: (row) => row.packageTitle },
