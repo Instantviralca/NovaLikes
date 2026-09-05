@@ -23,6 +23,7 @@ import { MutedText } from '@/components/typography/muted-text';
 import { Button } from '@/components/ui/button';
 import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
+import { getOrCreateSessionId } from '@/lib/analytics/native/identity';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, locationHasCartTransfer } from '@/lib/cart/cart-hash';
 import { formatMoney } from '@/lib/pricing/format';
@@ -123,7 +124,26 @@ export function CheckoutPage() {
   useEffect(() => {
     if (!analytics?.ready || checkoutViewSent.current) return;
     if (cart.items.length === 0) return;
+
+    const { sessionId } = getOrCreateSessionId();
+    const markerKey = `nl_analytics_checkout_started:${sessionId}`;
+
+    // Survive checkout remounts within the same analytics session.
+    try {
+      if (typeof window !== 'undefined' && window.sessionStorage.getItem(markerKey) === '1') {
+        checkoutViewSent.current = true;
+        return;
+      }
+    } catch {
+      // ignore
+    }
+
     checkoutViewSent.current = true;
+    try {
+      window.sessionStorage.setItem(markerKey, '1');
+    } catch {
+      // ignore
+    }
     analytics.track({
       eventName: 'checkout_started',
       pageType: 'checkout',

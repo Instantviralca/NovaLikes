@@ -19,7 +19,7 @@ export type NativeKpiCard = {
 };
 
 export type NativeFunnelStage = {
-  id: 'landing' | 'cart' | 'checkout' | 'order_created' | 'paid';
+  id: 'landing' | 'service' | 'cart' | 'checkout' | 'order_created' | 'paid';
   label: string;
   sessions: number;
   conversionFromPrevious: number | null;

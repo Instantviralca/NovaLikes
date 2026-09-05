@@ -230,6 +230,8 @@ export const analyticsEvents = pgTable(
     osFamily: text('os_family'),
     properties: jsonb('properties').$type<Record<string, string | number | boolean | null>>(),
     occurredAt: timestamp('occurred_at', { withTimezone: true }),
+    /** Nullable milestone key — UNIQUE when present (see drizzle/0009). */
+    idempotencyKey: text('idempotency_key'),
   },
   (t) => ({
     eventCreatedIdx: index('analytics_events_event_created_idx').on(t.eventName, t.createdAt),
@@ -239,6 +241,7 @@ export const analyticsEvents = pgTable(
     visitorOccurredIdx: index('analytics_events_visitor_occurred_idx').on(t.visitorId, t.occurredAt),
     serviceOccurredIdx: index('analytics_events_service_occurred_idx').on(t.serviceSlug, t.occurredAt),
     marketOccurredIdx: index('analytics_events_market_occurred_idx').on(t.market, t.occurredAt),
+    idempotencyUidx: uniqueIndex('analytics_events_idempotency_uidx').on(t.idempotencyKey),
   }),
 );
 

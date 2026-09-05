@@ -199,6 +199,12 @@ export function createFilePersistence(): AppPersistence {
       const state = read();
       for (const event of events) {
         if (state.analyticsEvents.some((e) => e.id === event.id)) continue;
+        if (
+          event.idempotencyKey &&
+          state.analyticsEvents.some((e) => e.idempotencyKey === event.idempotencyKey)
+        ) {
+          continue;
+        }
         state.analyticsEvents.push(event);
       }
       if (state.analyticsEvents.length > 20_000) {
@@ -210,6 +216,11 @@ export function createFilePersistence(): AppPersistence {
       return read()
         .analyticsEvents.filter((e) => e.createdAt >= sinceIso)
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    },
+    async listAnalyticsSessions(sinceIso) {
+      return read()
+        .analyticsSessions.filter((s) => s.startedAt >= sinceIso)
+        .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
     },
     async upsertAnalyticsVisitor(visitor) {
       const state = read();
@@ -228,10 +239,12 @@ export function createFilePersistence(): AppPersistence {
       const existing = state.analyticsSessions.find((s) => s.id === session.id);
       if (existing) {
         existing.lastActivityAt = session.lastActivityAt;
-      } else {
-        state.analyticsSessions.push(session);
+        write(state);
+        return { created: false };
       }
+      state.analyticsSessions.push(session);
       write(state);
+      return { created: true };
     },
     async hasAnalyticsEventId(id) {
       return read().analyticsEvents.some((e) => e.id === id);

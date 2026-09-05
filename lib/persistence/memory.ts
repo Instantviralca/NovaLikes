@@ -154,6 +154,12 @@ export function createMemoryPersistence(): AppPersistence {
       if (!events.length) return;
       for (const event of events) {
         if (state.analyticsEvents.some((e) => e.id === event.id)) continue;
+        if (
+          event.idempotencyKey &&
+          state.analyticsEvents.some((e) => e.idempotencyKey === event.idempotencyKey)
+        ) {
+          continue;
+        }
         state.analyticsEvents.push(event);
       }
       if (state.analyticsEvents.length > 20_000) {
@@ -164,6 +170,11 @@ export function createMemoryPersistence(): AppPersistence {
       return state.analyticsEvents
         .filter((e) => e.createdAt >= sinceIso)
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    },
+    async listAnalyticsSessions(sinceIso) {
+      return state.analyticsSessions
+        .filter((s) => s.startedAt >= sinceIso)
+        .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
     },
     async upsertAnalyticsVisitor(visitor) {
       const existing = state.analyticsVisitors.find((v) => v.id === visitor.id);
@@ -177,9 +188,10 @@ export function createMemoryPersistence(): AppPersistence {
       const existing = state.analyticsSessions.find((s) => s.id === session.id);
       if (existing) {
         existing.lastActivityAt = session.lastActivityAt;
-        return;
+        return { created: false };
       }
       state.analyticsSessions.push(session);
+      return { created: true };
     },
     async hasAnalyticsEventId(id) {
       return state.analyticsEvents.some((e) => e.id === id);

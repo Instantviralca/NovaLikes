@@ -106,6 +106,8 @@ export type AnalyticsEventRecord = {
   osFamily?: string | null;
   properties?: Record<string, string | number | boolean | null>;
   occurredAt?: string | null;
+  /** Milestone idempotency (e.g. session:<id>:started). Null for multi-fire events. */
+  idempotencyKey?: string | null;
 };
 
 export type AnalyticsVisitorRecord = {
@@ -137,11 +139,20 @@ export type AnalyticsSessionRecord = {
   sourceChannel?: string | null;
 };
 
+export type AnalyticsSessionUpsertResult = { created: boolean };
+
 export type AnalyticsStore = {
   insertAnalyticsEvents(events: AnalyticsEventRecord[]): Promise<void>;
   listAnalyticsEvents(sinceIso: string): Promise<AnalyticsEventRecord[]>;
+  listAnalyticsSessions?(sinceIso: string): Promise<AnalyticsSessionRecord[]>;
   upsertAnalyticsVisitor?(visitor: AnalyticsVisitorRecord): Promise<void>;
-  upsertAnalyticsSession?(session: AnalyticsSessionRecord): Promise<void>;
+  /**
+   * Insert session if absent; on conflict only refresh lastActivityAt
+   * (never overwrite landing/UTM first-touch fields). Returns whether the row was new.
+   */
+  upsertAnalyticsSession?(
+    session: AnalyticsSessionRecord,
+  ): Promise<AnalyticsSessionUpsertResult | void>;
   hasAnalyticsEventId?(id: string): Promise<boolean>;
 };
 

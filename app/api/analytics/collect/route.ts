@@ -7,6 +7,12 @@ import {
   parseUtmFromSearch,
 } from '@/lib/analytics/native/attribution';
 import {
+  isSessionMilestoneEvent,
+  milestoneIdempotencyKey,
+  resolveAnalyticsMarketLocale,
+  type SessionMilestoneEvent,
+} from '@/lib/analytics/native/milestones';
+import {
   canonicalizeClientEventName,
   eventCategoryFor,
   isExcludedAnalyticsPath,
@@ -146,6 +152,8 @@ export async function POST(request: Request) {
   const records: AnalyticsEventRecord[] = [];
   const visitors = new Map<string, AnalyticsVisitorRecord>();
   const sessions = new Map<string, AnalyticsSessionRecord>();
+  /** First trackable path seen per session in this batch (landing candidate). */
+  const landingCandidate = new Map<string, { pagePath: string; pageType: string | null }>();
 
   for (const raw of body.events.slice(0, MAX_BATCH)) {
     const rawName = typeof raw.eventName === 'string' ? raw.eventName.trim() : '';
@@ -175,10 +183,15 @@ export async function POST(request: Request) {
       }
     }
 
-    const id =
-      typeof raw.eventId === 'string' && raw.eventId.trim().length <= 80
-        ? raw.eventId.trim()
-        : makeId();
+    const pathMarketLocale = resolveAnalyticsMarketLocale(pagePath);
+    const market =
+      typeof raw.market === 'string' && raw.market.trim()
+        ? raw.market.trim().slice(0, 32)
+        : pathMarketLocale.market;
+    const locale =
+      typeof raw.locale === 'string' && raw.locale.trim()
+        ? raw.locale.trim().slice(0, 16)
+        : pathMarketLocale.locale;
 
     const search = typeof raw.search === 'string' ? raw.search : '';
     const utm = parseUtmFromSearch(search);
@@ -186,6 +199,7 @@ export async function POST(request: Request) {
       typeof raw.referrer === 'string' ? raw.referrer.trim().slice(0, 300) : '';
     const { channel, sourceLabel } = classifyReferrer(referrer, utm);
     const props = sanitizeProps(raw.metadata);
+    const pageType = typeof raw.pageType === 'string' ? raw.pageType.slice(0, 40) : null;
 
     if (visitorId) {
       const existing = visitors.get(visitorId);
@@ -196,33 +210,48 @@ export async function POST(request: Request) {
       });
     }
 
-    if (visitorId && (raw.isNewSession || !sessions.has(sessionId))) {
-      sessions.set(sessionId, {
-        id: sessionId,
-        visitorId,
-        startedAt: createdAt,
-        lastActivityAt: createdAt,
-        landingPath: pagePath,
-        landingPageType: typeof raw.pageType === 'string' ? raw.pageType : null,
-        referrer: referrer || null,
-        utmSource: utm.source ?? null,
-        utmMedium: utm.medium ?? null,
-        utmCampaign: utm.campaign ?? null,
-        utmContent: utm.content ?? null,
-        utmTerm: utm.term ?? null,
-        market: typeof raw.market === 'string' ? raw.market.slice(0, 32) : null,
-        locale: typeof raw.locale === 'string' ? raw.locale.slice(0, 16) : null,
-        deviceType: device.deviceType,
-        browserFamily: device.browserFamily,
-        osFamily: device.osFamily,
-        countryCode: country,
-        isBot: false,
-        sourceChannel: channel,
-      });
-    } else if (sessions.has(sessionId)) {
-      const s = sessions.get(sessionId)!;
-      s.lastActivityAt = createdAt;
+    if (visitorId) {
+      if (!sessions.has(sessionId)) {
+        sessions.set(sessionId, {
+          id: sessionId,
+          visitorId,
+          startedAt: createdAt,
+          lastActivityAt: createdAt,
+          landingPath: pagePath,
+          landingPageType: pageType,
+          referrer: referrer || null,
+          utmSource: utm.source ?? null,
+          utmMedium: utm.medium ?? null,
+          utmCampaign: utm.campaign ?? null,
+          utmContent: utm.content ?? null,
+          utmTerm: utm.term ?? null,
+          market,
+          locale,
+          deviceType: device.deviceType,
+          browserFamily: device.browserFamily,
+          osFamily: device.osFamily,
+          countryCode: country,
+          isBot: false,
+          sourceChannel: channel,
+        });
+        landingCandidate.set(sessionId, { pagePath, pageType });
+      } else {
+        const s = sessions.get(sessionId)!;
+        s.lastActivityAt = createdAt;
+      }
     }
+
+    const milestone = isSessionMilestoneEvent(eventName);
+    const idempotencyKey = milestone
+      ? milestoneIdempotencyKey(sessionId, eventName as SessionMilestoneEvent)
+      : null;
+
+    // Deterministic id for milestones so PK conflict also dedupes under races.
+    const id = idempotencyKey
+      ? idempotencyKey
+      : typeof raw.eventId === 'string' && raw.eventId.trim().length <= 80
+        ? raw.eventId.trim()
+        : makeId();
 
     records.push({
       id,
@@ -236,7 +265,7 @@ export async function POST(request: Request) {
       occurredAt: createdAt,
       visitorId: visitorId || null,
       eventCategory: eventCategoryFor(eventName),
-      pageType: typeof raw.pageType === 'string' ? raw.pageType.slice(0, 40) : null,
+      pageType,
       serviceSlug:
         typeof raw.serviceSlug === 'string'
           ? raw.serviceSlug.slice(0, 80)
@@ -249,8 +278,8 @@ export async function POST(request: Request) {
           : typeof props?.packageId === 'string'
             ? props.packageId
             : null,
-      market: typeof raw.market === 'string' ? raw.market.slice(0, 32) : null,
-      locale: typeof raw.locale === 'string' ? raw.locale.slice(0, 16) : null,
+      market,
+      locale,
       referrer: referrer || null,
       source: utm.source || sourceLabel,
       medium: utm.medium || channel,
@@ -260,6 +289,7 @@ export async function POST(request: Request) {
       deviceType: device.deviceType,
       browserFamily: device.browserFamily,
       osFamily: device.osFamily,
+      idempotencyKey,
     });
   }
 
@@ -279,14 +309,95 @@ export async function POST(request: Request) {
     for (const visitor of visitors.values()) {
       await persistence.upsertAnalyticsVisitor?.(visitor);
     }
+
+    const sessionCreated = new Map<string, boolean>();
     for (const session of sessions.values()) {
-      await persistence.upsertAnalyticsSession?.(session);
+      const result = await persistence.upsertAnalyticsSession?.(session);
+      sessionCreated.set(session.id, result?.created === true);
     }
-    await persistence.insertAnalyticsEvents(records);
+
+    // DB is authoritative: only keep session_started / landing_view when the
+    // analytics_sessions row was newly created. checkout_started always uses
+    // idempotency (one per session) regardless of session age.
+    const filtered = records.filter((record) => {
+      if (record.eventName === 'session_started' || record.eventName === 'landing_view') {
+        return sessionCreated.get(record.sessionId) === true;
+      }
+      return true;
+    });
+
+    // If a new session was created but the client omitted landing_view,
+    // synthesize from the first path seen for that session in this batch.
+    for (const [sessionId, created] of sessionCreated) {
+      if (!created) continue;
+      const hasLanding = filtered.some(
+        (r) => r.sessionId === sessionId && r.eventName === 'landing_view',
+      );
+      const hasStarted = filtered.some(
+        (r) => r.sessionId === sessionId && r.eventName === 'session_started',
+      );
+      const session = sessions.get(sessionId);
+      const candidate = landingCandidate.get(sessionId);
+      if (!session || !candidate) continue;
+
+      const base = {
+        sessionId,
+        pagePath: candidate.pagePath,
+        country,
+        createdAt: session.startedAt,
+        occurredAt: session.startedAt,
+        visitorId: session.visitorId,
+        pageType: candidate.pageType,
+        market: session.market ?? null,
+        locale: session.locale ?? null,
+        referrer: session.referrer ?? null,
+        source: session.utmSource ?? null,
+        medium: session.utmMedium ?? session.sourceChannel ?? null,
+        campaign: session.utmCampaign ?? null,
+        content: session.utmContent ?? null,
+        term: session.utmTerm ?? null,
+        deviceType: session.deviceType ?? null,
+        browserFamily: session.browserFamily ?? null,
+        osFamily: session.osFamily ?? null,
+      };
+
+      if (!hasStarted) {
+        const key = milestoneIdempotencyKey(sessionId, 'session_started');
+        filtered.push({
+          ...base,
+          id: key,
+          eventName: 'session_started',
+          eventCategory: eventCategoryFor('session_started'),
+          idempotencyKey: key,
+        });
+      }
+      if (!hasLanding) {
+        const key = milestoneIdempotencyKey(sessionId, 'landing_view');
+        filtered.unshift({
+          ...base,
+          id: key,
+          eventName: 'landing_view',
+          eventCategory: eventCategoryFor('landing_view'),
+          idempotencyKey: key,
+        });
+      }
+    }
+
+    // De-dupe milestone rows within the same batch before insert.
+    const seenKeys = new Set<string>();
+    const toInsert: AnalyticsEventRecord[] = [];
+    for (const record of filtered) {
+      if (record.idempotencyKey) {
+        if (seenKeys.has(record.idempotencyKey)) continue;
+        seenKeys.add(record.idempotencyKey);
+      }
+      toInsert.push(record);
+    }
+
+    await persistence.insertAnalyticsEvents(toInsert);
+    return NextResponse.json({ ok: true, accepted: toInsert.length });
   } catch (error) {
     console.error('[analytics/collect] store failed', error);
     return NextResponse.json({ ok: false, error: 'Store failed' }, { status: 500 });
   }
-
-  return NextResponse.json({ ok: true, accepted: records.length });
 }

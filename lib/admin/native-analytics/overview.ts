@@ -1,5 +1,15 @@
 /**
  * Native first-party admin analytics aggregation (UTC).
+ *
+ * Funnel stages and session KPIs use DISTINCT session_id reach (or
+ * analytics_sessions rows). Raw milestone row duplicates from early rollout
+ * cannot inflate Sessions / Landing / Checkout funnel counts.
+ *
+ * Metric event sources:
+ * - Canonical (preferred): session_started, landing_view, page_view, service_view,
+ *   cart_add, checkout_started, order_created, payment_paid
+ * - Legacy compatibility (pre-upgrade rows only): home_page_view, service_page_view,
+ *   cart_item_add, checkout_view, checkout_submit — never mixed into paid/revenue
  */
 
 import {
@@ -7,8 +17,9 @@ import {
   CHECKOUT_EVENT_NAMES,
   ORDER_CREATED_EVENT_NAMES,
 } from '@/lib/analytics/funnel-events';
+import { analyticsMarketLocaleLabel } from '@/lib/analytics/native/milestones';
 import { getPersistence } from '@/lib/persistence';
-import type { AnalyticsEventRecord } from '@/lib/persistence/types';
+import type { AnalyticsEventRecord, AnalyticsSessionRecord } from '@/lib/persistence/types';
 import type {
   NativeAnalyticsRangeId,
   NativeAnalyticsViewModel,
@@ -26,23 +37,26 @@ const RANGE_LABELS: Record<Exclude<NativeAnalyticsRangeId, 'custom'>, string> = 
   '90d': 'Last 90 days',
 };
 
+/** Legitimate navigations — excludes milestone landing_view (emitted alongside page_view). */
 const PAGE_VIEW_NAMES = new Set([
   'page_view',
-  'landing_view',
   'service_view',
   'home_page_view',
   'service_page_view',
 ]);
 
-const LANDING_SESSION_NAMES = new Set([
-  'landing_view',
-  'session_started',
-  // Pre-upgrade: any page view counted as a session landing proxy
+/** Canonical landing milestones. */
+const CANONICAL_LANDING_NAMES = new Set(['landing_view', 'session_started']);
+
+/** Pre-upgrade landing proxies (only when visitorId is missing). */
+const LEGACY_LANDING_NAMES = new Set([
   'page_view',
   'home_page_view',
   'service_page_view',
   'service_view',
 ]);
+
+const SERVICE_VIEW_NAMES = new Set(['service_view', 'service_page_view']);
 
 function pct(numerator: number, denominator: number): number | null {
   if (denominator <= 0) return null;
@@ -101,7 +115,6 @@ export function getNativeRangeBounds(
         label: `Custom (${start.toISOString().slice(0, 10)} → ${end.toISOString().slice(0, 10)})`,
       };
     }
-    // Fall back to 30d if custom dates invalid
     since.setTime(since.getTime() - 30 * 24 * 60 * 60 * 1000);
     return { sinceIso: since.toISOString(), untilIso: until.toISOString(), label: RANGE_LABELS['30d'] };
   }
@@ -143,7 +156,13 @@ function previousEqualLengthBounds(
 }
 
 function isLandingEvent(event: AnalyticsEventRecord): boolean {
-  return LANDING_SESSION_NAMES.has(event.eventName);
+  if (CANONICAL_LANDING_NAMES.has(event.eventName)) return true;
+  if (!event.visitorId && LEGACY_LANDING_NAMES.has(event.eventName)) return true;
+  return false;
+}
+
+function isServiceViewEvent(event: AnalyticsEventRecord): boolean {
+  return SERVICE_VIEW_NAMES.has(event.eventName);
 }
 
 function isCartEvent(event: AnalyticsEventRecord): boolean {
@@ -175,6 +194,14 @@ function currencyFromEvent(event: AnalyticsEventRecord): string {
   return typeof currency === 'string' ? currency.toUpperCase() : 'USD';
 }
 
+function marketLocaleKey(event: AnalyticsEventRecord): string {
+  const market = event.market?.trim();
+  if (market) return market.toLowerCase();
+  const locale = event.locale?.trim();
+  if (locale && locale.toLowerCase() !== 'en') return locale.toLowerCase();
+  return 'en';
+}
+
 type PeriodMetrics = {
   visitors: number;
   sessions: number;
@@ -185,6 +212,7 @@ type PeriodMetrics = {
   paidOrders: number;
   revenueUsdMinor: number;
   landingSessions: number;
+  serviceSessions: number;
   cartSessions: number;
   checkoutSessions: number;
   orderCreatedSessions: number;
@@ -202,6 +230,7 @@ function emptyMetrics(): PeriodMetrics {
     paidOrders: 0,
     revenueUsdMinor: 0,
     landingSessions: 0,
+    serviceSessions: 0,
     cartSessions: 0,
     checkoutSessions: 0,
     orderCreatedSessions: 0,
@@ -209,27 +238,44 @@ function emptyMetrics(): PeriodMetrics {
   };
 }
 
-function aggregatePeriod(events: AnalyticsEventRecord[]): PeriodMetrics {
+function aggregatePeriod(
+  events: AnalyticsEventRecord[],
+  sessionRows?: AnalyticsSessionRecord[],
+): PeriodMetrics {
   const m = emptyMetrics();
   const visitors = new Set<string>();
   const sessions = new Set<string>();
   const landing = new Set<string>();
+  const service = new Set<string>();
   const cart = new Set<string>();
   const checkout = new Set<string>();
   const orderCreated = new Set<string>();
   const paid = new Set<string>();
   const paidOrderIds = new Set<string>();
 
+  if (sessionRows && sessionRows.length > 0) {
+    for (const session of sessionRows) {
+      sessions.add(session.id);
+      visitors.add(session.visitorId);
+      landing.add(session.id);
+    }
+  }
+
   for (const event of events) {
-    sessions.add(event.sessionId);
-    if (event.visitorId) visitors.add(event.visitorId);
-    else visitors.add(`session:${event.sessionId}`);
+    if (!sessionRows?.length) {
+      sessions.add(event.sessionId);
+      if (event.visitorId) visitors.add(event.visitorId);
+      else visitors.add(`session:${event.sessionId}`);
+    } else if (event.visitorId) {
+      visitors.add(event.visitorId);
+    }
 
     if (isPageViewEvent(event)) m.pageViews += 1;
     if (isCartEvent(event)) m.cartAdds += 1;
     if (isCheckoutEvent(event)) m.checkoutStarts += 1;
 
     if (isLandingEvent(event)) landing.add(event.sessionId);
+    if (isServiceViewEvent(event)) service.add(event.sessionId);
     if (isCartEvent(event)) cart.add(event.sessionId);
     if (isCheckoutEvent(event)) checkout.add(event.sessionId);
     if (isOrderCreatedEvent(event)) {
@@ -244,7 +290,6 @@ function aggregatePeriod(events: AnalyticsEventRecord[]): PeriodMetrics {
           : event.id;
       if (!paidOrderIds.has(orderId)) {
         paidOrderIds.add(orderId);
-        // Revenue KPI labeled USD; non-USD amounts still counted as minor units for ops visibility.
         void currencyFromEvent(event);
         m.revenueUsdMinor += revenueMinorFromEvent(event);
       }
@@ -254,8 +299,11 @@ function aggregatePeriod(events: AnalyticsEventRecord[]): PeriodMetrics {
   m.visitors = visitors.size;
   m.sessions = sessions.size;
   m.landingSessions = landing.size || sessions.size;
+  m.serviceSessions = service.size;
   m.cartSessions = cart.size;
   m.checkoutSessions = checkout.size;
+  // Funnel + secondary checkout KPI: distinct sessions, not raw event rows.
+  m.checkoutStarts = checkout.size;
   m.orderCreatedSessions = orderCreated.size;
   m.paidSessions = paid.size;
   m.paidOrders = paidOrderIds.size;
@@ -295,10 +343,13 @@ function kpi(
 }
 
 function buildFunnel(m: PeriodMetrics): NativeFunnelStage[] {
-  const stages: Array<Omit<NativeFunnelStage, 'conversionFromPrevious' | 'pctOfLandings' | 'dropOffFromPrevious'> & {
-    sessions: number;
-  }> = [
+  const stages: Array<
+    Omit<NativeFunnelStage, 'conversionFromPrevious' | 'pctOfLandings' | 'dropOffFromPrevious'> & {
+      sessions: number;
+    }
+  > = [
     { id: 'landing', label: 'Landing', sessions: m.landingSessions },
+    { id: 'service', label: 'Service view', sessions: m.serviceSessions },
     { id: 'cart', label: 'Cart', sessions: m.cartSessions },
     { id: 'checkout', label: 'Checkout', sessions: m.checkoutSessions },
     { id: 'order_created', label: 'Order created', sessions: m.orderCreatedSessions },
@@ -319,13 +370,13 @@ function buildFunnel(m: PeriodMetrics): NativeFunnelStage[] {
 }
 
 function bucketKey(iso: string, hourly: boolean): string {
-  if (hourly) return iso.slice(0, 13); // YYYY-MM-DDTHH
+  if (hourly) return iso.slice(0, 13);
   return iso.slice(0, 10);
 }
 
 function bucketLabel(key: string, hourly: boolean): string {
   if (hourly) return `${key.slice(11, 13)}:00`;
-  return key.slice(5); // MM-DD
+  return key.slice(5);
 }
 
 function buildSeries(
@@ -360,7 +411,6 @@ function buildSeries(
     return row;
   };
 
-  // Seed empty buckets for chart continuity
   const start = new Date(sinceIso).getTime();
   const end = new Date(untilIso).getTime();
   const step = hourly ? 60 * 60 * 1000 : 24 * 60 * 60 * 1000;
@@ -486,20 +536,28 @@ export async function getNativeAnalyticsViewModel(input?: {
     from: input?.from,
     to: input?.to,
   });
-  const effectiveRange = range === 'custom' && bounds.label.startsWith('Custom') ? 'custom' : range === 'custom' ? '30d' : range;
+  const effectiveRange =
+    range === 'custom' && bounds.label.startsWith('Custom')
+      ? 'custom'
+      : range === 'custom'
+        ? '30d'
+        : range;
   const prevBounds = previousEqualLengthBounds(bounds.sinceIso, bounds.untilIso);
   const persistence = getPersistence();
 
   let allEvents: AnalyticsEventRecord[] = [];
+  let allSessions: AnalyticsSessionRecord[] = [];
   let setupNotice: string | undefined;
   try {
-    // Load from start of previous period so we can compare.
     allEvents = await persistence.listAnalyticsEvents(prevBounds.sinceIso);
+    if (persistence.listAnalyticsSessions) {
+      allSessions = await persistence.listAnalyticsSessions(prevBounds.sinceIso);
+    }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error('[native-analytics] listAnalyticsEvents failed:', message);
     setupNotice = /relation|does not exist|analytics_events/i.test(message)
-      ? 'Analytics table is missing. Run drizzle/0003_analytics_events.sql and drizzle/0008_analytics_upgrade.sql, then refresh.'
+      ? 'Analytics table is missing. Run drizzle/0003_analytics_events.sql, drizzle/0008_analytics_upgrade.sql, and drizzle/0009_analytics_milestone_idempotency.sql, then refresh.'
       : 'Analytics event store is temporarily unavailable.';
     allEvents = [];
   }
@@ -510,9 +568,15 @@ export async function getNativeAnalyticsViewModel(input?: {
   const previousEvents = allEvents.filter((e) =>
     inRange(eventTime(e), prevBounds.sinceIso, prevBounds.untilIso),
   );
+  const currentSessions = allSessions.filter((s) =>
+    inRange(s.startedAt, bounds.sinceIso, bounds.untilIso),
+  );
+  const previousSessions = allSessions.filter((s) =>
+    inRange(s.startedAt, prevBounds.sinceIso, prevBounds.untilIso),
+  );
 
-  const current = aggregatePeriod(currentEvents);
-  const previous = aggregatePeriod(previousEvents);
+  const current = aggregatePeriod(currentEvents, currentSessions);
+  const previous = aggregatePeriod(previousEvents, previousSessions);
 
   const sessionToPaid =
     current.sessions > 0 ? pct(current.paidOrders, current.sessions) : null;
@@ -561,7 +625,7 @@ export async function getNativeAnalyticsViewModel(input?: {
 
   const secondaryKpis: NativeKpiCard[] = [
     kpi('cart_adds', 'Cart adds', current.cartAdds, previous.cartAdds),
-    kpi('checkout_starts', 'Checkout starts', current.checkoutStarts, previous.checkoutStarts),
+    kpi('checkout_starts', 'Checkout sessions', current.checkoutStarts, previous.checkoutStarts),
     {
       id: 'cart_abandonment',
       label: 'Cart abandonment',
@@ -588,14 +652,11 @@ export async function getNativeAnalyticsViewModel(input?: {
   const series = buildSeries(currentEvents, bounds.sinceIso, bounds.untilIso, hourly);
 
   const acquisition = buildGroupedTable(currentEvents, (e) => classifyAcquisition(e));
-  const services = buildGroupedTable(
-    currentEvents,
-    (e) => e.serviceSlug?.trim() || null,
-  );
+  const services = buildGroupedTable(currentEvents, (e) => e.serviceSlug?.trim() || null);
   const markets = buildGroupedTable(
     currentEvents,
-    (e) => (e.market?.trim() || e.locale?.trim() || null),
-    (key) => key.toUpperCase(),
+    (e) => marketLocaleKey(e),
+    (key) => analyticsMarketLocaleLabel(key),
   );
   const devices = buildGroupedTable(
     currentEvents,
@@ -605,12 +666,32 @@ export async function getNativeAnalyticsViewModel(input?: {
 
   const recentSince = new Date(Date.now() - 30 * 60 * 1000).toISOString();
   const recentEvents = allEvents.filter((e) => eventTime(e) >= recentSince);
-  const recent = aggregatePeriod(recentEvents);
+  const recentSessions = allSessions.filter((s) => s.startedAt >= recentSince);
+  const recent = aggregatePeriod(recentEvents, recentSessions);
 
   const hasPreUpgrade = currentEvents.some((e) => !e.visitorId);
-  const preUpgradeNotice = hasPreUpgrade
-    ? 'This range includes events from before the native visitor/session upgrade. Some KPIs (visitors, UTM, device, revenue) may be incomplete versus new tracking.'
-    : undefined;
+  const hasDuplicateMilestones = (() => {
+    const counts = new Map<string, number>();
+    for (const e of currentEvents) {
+      if (e.eventName !== 'session_started' && e.eventName !== 'landing_view') continue;
+      const key = `${e.sessionId}:${e.eventName}`;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    return [...counts.values()].some((n) => n > 1);
+  })();
+
+  const notices: string[] = [];
+  if (hasPreUpgrade) {
+    notices.push(
+      'This range includes events from before the native visitor/session upgrade. Some KPIs (visitors, UTM, device, revenue) may be incomplete versus new tracking.',
+    );
+  }
+  if (hasDuplicateMilestones) {
+    notices.push(
+      'Raw event table contains early rollout duplicates of session_started/landing_view, but dashboard metrics dedupe sessions and future events are idempotent.',
+    );
+  }
+  const preUpgradeNotice = notices.length ? notices.join(' ') : undefined;
 
   return {
     range: effectiveRange,

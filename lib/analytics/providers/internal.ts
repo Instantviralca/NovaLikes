@@ -7,6 +7,12 @@ import {
   getOrCreateSessionId,
   getOrCreateVisitorId,
 } from '@/lib/analytics/native/identity';
+import {
+  isSessionMilestoneEvent,
+  resolveAnalyticsMarketLocale,
+  type SessionMilestoneEvent,
+  milestoneIdempotencyKey,
+} from '@/lib/analytics/native/milestones';
 import { canonicalizeClientEventName } from '@/lib/analytics/native/taxonomy';
 import type {
   AnalyticsEvent,
@@ -42,6 +48,7 @@ function enqueue(event: AnalyticsEvent, isNewSession = false): void {
   if (!event.sessionId || !event.pagePath) return;
 
   const visitorId = getOrCreateVisitorId();
+  const { market, locale } = resolveAnalyticsMarketLocale(event.pagePath);
   const metadata: Record<string, string | number | boolean | null> = {
     pageType: event.pageType,
   };
@@ -49,6 +56,8 @@ function enqueue(event: AnalyticsEvent, isNewSession = false): void {
   if (event.packageId) metadata.packageId = event.packageId;
   if (typeof event.quantity === 'number') metadata.quantity = event.quantity;
   if (event.platform) metadata.platform = event.platform;
+  if (market) metadata.market = market;
+  metadata.locale = locale;
 
   let search: string | undefined;
   let referrer: string | undefined;
@@ -58,16 +67,23 @@ function enqueue(event: AnalyticsEvent, isNewSession = false): void {
     attributionCaptured = true;
   }
 
+  const milestone = isSessionMilestoneEvent(eventName);
+  const eventId = milestone
+    ? milestoneIdempotencyKey(event.sessionId, eventName as SessionMilestoneEvent)
+    : event.eventId;
+
   queue.push({
     eventName,
     sessionId: event.sessionId,
     visitorId,
     pagePath: event.pagePath,
     pageType: event.pageType,
-    eventId: event.eventId,
+    eventId,
     timestamp: event.timestamp,
     referrer,
     search,
+    market: market ?? undefined,
+    locale,
     serviceSlug: event.serviceSlug,
     packageId: event.packageId,
     isNewSession: isNewSession || undefined,

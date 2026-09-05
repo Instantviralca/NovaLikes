@@ -8,6 +8,11 @@ import {
   resolveCanonicalEventName,
 } from '@/data/analytics/event-registry';
 import { isFunnelEventName } from '@/lib/analytics/funnel-events';
+import {
+  isSessionMilestoneEvent,
+  milestoneIdempotencyKey,
+  type SessionMilestoneEvent,
+} from '@/lib/analytics/native/milestones';
 import { isClientAnalyticsEvent } from '@/lib/analytics/native/taxonomy';
 import { canTrackEvent, getAnalyticsConsent } from '@/lib/analytics/core/consent';
 import { getAnalyticsContext } from '@/lib/analytics/core/context';
@@ -27,6 +32,8 @@ import type {
   AnalyticsTrackResult,
   AnalyticsValidationIssue,
 } from '@/types/analytics';
+
+const MILESTONE_DEDUPE_TTL_MS = 1000 * 60 * 60; // 1h client guard for session milestones
 
 function createEventId(): string {
   if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
@@ -71,6 +78,14 @@ function enrichEvent(input: AnalyticsEventInput): AnalyticsEvent {
     pageType: input.pageType,
   });
 
+  const milestoneKey =
+    isSessionMilestoneEvent(canonicalName) && context.sessionId
+      ? milestoneIdempotencyKey(
+          context.sessionId,
+          canonicalName as SessionMilestoneEvent,
+        )
+      : undefined;
+
   return {
     eventName: canonicalName,
     category: input.category ?? registry?.category ?? 'engagement',
@@ -91,8 +106,9 @@ function enrichEvent(input: AnalyticsEventInput): AnalyticsEvent {
     consentCategory:
       input.consentCategory ?? registry?.consentCategory ?? 'analytics',
     channel: input.channel ?? registry?.channel ?? 'public',
-    eventId: createEventId(),
-    idempotencyKey: input.idempotencyKey ?? input.verification?.idempotencyKey,
+    eventId: milestoneKey ?? createEventId(),
+    idempotencyKey:
+      input.idempotencyKey ?? input.verification?.idempotencyKey ?? milestoneKey,
   };
 }
 
@@ -133,6 +149,7 @@ export function trackEvent(input: AnalyticsEventInput): AnalyticsTrackResult {
     const consent = getAnalyticsConsent();
     const consentAllowed = canTrackEvent(event, consent, analyticsConfig.consentMode);
 
+    const isMilestone = isSessionMilestoneEvent(event.eventName);
     const dedupeKey =
       event.idempotencyKey ??
       buildEventDedupeKey(event.eventName, [
@@ -156,7 +173,9 @@ export function trackEvent(input: AnalyticsEventInput): AnalyticsTrackResult {
           { duplicate: true, consentAllowed: true, event },
         );
       }
-    } else if (preventDuplicateEvent(dedupeKey)) {
+    } else if (
+      preventDuplicateEvent(dedupeKey, isMilestone ? MILESTONE_DEDUPE_TTL_MS : undefined)
+    ) {
       return blockedResult(
         event.eventName,
         [

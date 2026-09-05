@@ -559,35 +559,39 @@ export function createPostgresPersistence(): AppPersistence {
       if (!events.length) return;
       const db = getDb();
       try {
-        await db.insert(tables.analyticsEvents).values(
-          events.map((event) => ({
-            id: event.id,
-            eventName: event.eventName,
-            sessionId: event.sessionId,
-            pagePath: event.pagePath,
-            country: event.country || 'XX',
-            metadata: event.metadata ?? null,
-            createdAt: new Date(event.createdAt),
-            visitorId: event.visitorId ?? null,
-            eventCategory: event.eventCategory ?? null,
-            pageType: event.pageType ?? null,
-            serviceSlug: event.serviceSlug ?? null,
-            packageId: event.packageId ?? null,
-            market: event.market ?? null,
-            locale: event.locale ?? null,
-            referrer: event.referrer ?? null,
-            source: event.source ?? null,
-            medium: event.medium ?? null,
-            campaign: event.campaign ?? null,
-            content: event.content ?? null,
-            term: event.term ?? null,
-            deviceType: event.deviceType ?? null,
-            browserFamily: event.browserFamily ?? null,
-            osFamily: event.osFamily ?? null,
-            properties: event.properties ?? null,
-            occurredAt: new Date(event.occurredAt ?? event.createdAt),
-          })),
-        ).onConflictDoNothing();
+        await db
+          .insert(tables.analyticsEvents)
+          .values(
+            events.map((event) => ({
+              id: event.id,
+              eventName: event.eventName,
+              sessionId: event.sessionId,
+              pagePath: event.pagePath,
+              country: event.country || 'XX',
+              metadata: event.metadata ?? null,
+              createdAt: new Date(event.createdAt),
+              visitorId: event.visitorId ?? null,
+              eventCategory: event.eventCategory ?? null,
+              pageType: event.pageType ?? null,
+              serviceSlug: event.serviceSlug ?? null,
+              packageId: event.packageId ?? null,
+              market: event.market ?? null,
+              locale: event.locale ?? null,
+              referrer: event.referrer ?? null,
+              source: event.source ?? null,
+              medium: event.medium ?? null,
+              campaign: event.campaign ?? null,
+              content: event.content ?? null,
+              term: event.term ?? null,
+              deviceType: event.deviceType ?? null,
+              browserFamily: event.browserFamily ?? null,
+              osFamily: event.osFamily ?? null,
+              properties: event.properties ?? null,
+              occurredAt: new Date(event.occurredAt ?? event.createdAt),
+              idempotencyKey: event.idempotencyKey ?? null,
+            })),
+          )
+          .onConflictDoNothing();
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         // Missing migration should not break the public site.
@@ -595,20 +599,23 @@ export function createPostgresPersistence(): AppPersistence {
           console.error('[persistence] analytics_events missing — run drizzle/0003_analytics_events.sql');
           return;
         }
-        // Older schema without new columns — retry minimal insert.
-        if (/column|undefined/i.test(message)) {
+        // Older schema without new columns — retry without optional columns.
+        if (/column|undefined|idempotency/i.test(message)) {
           try {
-            await db.insert(tables.analyticsEvents).values(
-              events.map((event) => ({
-                id: event.id,
-                eventName: event.eventName,
-                sessionId: event.sessionId,
-                pagePath: event.pagePath,
-                country: event.country || 'XX',
-                metadata: event.metadata ?? null,
-                createdAt: new Date(event.createdAt),
-              })),
-            ).onConflictDoNothing();
+            await db
+              .insert(tables.analyticsEvents)
+              .values(
+                events.map((event) => ({
+                  id: event.id,
+                  eventName: event.eventName,
+                  sessionId: event.sessionId,
+                  pagePath: event.pagePath,
+                  country: event.country || 'XX',
+                  metadata: event.metadata ?? null,
+                  createdAt: new Date(event.createdAt),
+                })),
+              )
+              .onConflictDoNothing();
             return;
           } catch {
             /* fall through */
@@ -651,7 +658,45 @@ export function createPostgresPersistence(): AppPersistence {
         osFamily: row.osFamily ?? undefined,
         properties: row.properties ?? undefined,
         occurredAt: row.occurredAt?.toISOString() ?? row.createdAt.toISOString(),
+        idempotencyKey: row.idempotencyKey ?? undefined,
       }));
+    },
+    async listAnalyticsSessions(sinceIso) {
+      const db = getDb();
+      try {
+        const rows = await db
+          .select()
+          .from(tables.analyticsSessions)
+          .where(gte(tables.analyticsSessions.startedAt, new Date(sinceIso)))
+          .orderBy(desc(tables.analyticsSessions.startedAt))
+          .limit(20_000);
+        return rows.map((row) => ({
+          id: row.id,
+          visitorId: row.visitorId,
+          startedAt: row.startedAt.toISOString(),
+          lastActivityAt: row.lastActivityAt.toISOString(),
+          landingPath: row.landingPath,
+          landingPageType: row.landingPageType,
+          referrer: row.referrer,
+          utmSource: row.utmSource,
+          utmMedium: row.utmMedium,
+          utmCampaign: row.utmCampaign,
+          utmContent: row.utmContent,
+          utmTerm: row.utmTerm,
+          market: row.market,
+          locale: row.locale,
+          deviceType: row.deviceType,
+          browserFamily: row.browserFamily,
+          osFamily: row.osFamily,
+          countryCode: row.countryCode,
+          isBot: row.isBot,
+          sourceChannel: row.sourceChannel,
+        }));
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        if (/relation|does not exist|analytics_sessions/i.test(message)) return [];
+        throw error;
+      }
     },
     async upsertAnalyticsVisitor(visitor) {
       const db = getDb();
@@ -676,7 +721,7 @@ export function createPostgresPersistence(): AppPersistence {
     async upsertAnalyticsSession(session) {
       const db = getDb();
       try {
-        await db
+        const inserted = await db
           .insert(tables.analyticsSessions)
           .values({
             id: session.id,
@@ -700,13 +745,23 @@ export function createPostgresPersistence(): AppPersistence {
             isBot: session.isBot,
             sourceChannel: session.sourceChannel ?? null,
           })
-          .onConflictDoUpdate({
-            target: tables.analyticsSessions.id,
-            set: { lastActivityAt: new Date(session.lastActivityAt) },
-          });
+          .onConflictDoNothing()
+          .returning({ id: tables.analyticsSessions.id });
+
+        if (inserted.length > 0) {
+          return { created: true };
+        }
+
+        await db
+          .update(tables.analyticsSessions)
+          .set({ lastActivityAt: new Date(session.lastActivityAt) })
+          .where(eq(tables.analyticsSessions.id, session.id));
+        return { created: false };
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
-        if (/relation|does not exist|analytics_sessions/i.test(message)) return;
+        if (/relation|does not exist|analytics_sessions/i.test(message)) {
+          return { created: false };
+        }
         throw error;
       }
     },
