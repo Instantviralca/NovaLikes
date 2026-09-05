@@ -13,6 +13,41 @@
 
 export const PUBLIC_ORDER_NUMBER_START = 1001;
 export const PUBLIC_ORDER_NUMBER_MIN_WIDTH = 5;
+/** Matches Postgres sequence MINVALUE / START for orders_public_number_seq. */
+export const PUBLIC_ORDER_NUMBER_SEQUENCE_MIN = PUBLIC_ORDER_NUMBER_START;
+
+/**
+ * Mirrors drizzle/0010_order_public_number.sql setval positioning.
+ * Runtime allocation still uses nextval() — this is for migration safety tests.
+ *
+ * setval(value, is_called=false) → next nextval returns value
+ * setval(value, is_called=true)  → next nextval returns value + 1
+ */
+export function resolvePublicNumberSequenceSetval(
+  maxExistingPublicNumber: number | null | undefined,
+): { value: number; isCalled: boolean } {
+  if (
+    typeof maxExistingPublicNumber !== 'number' ||
+    !Number.isInteger(maxExistingPublicNumber) ||
+    maxExistingPublicNumber < PUBLIC_ORDER_NUMBER_SEQUENCE_MIN
+  ) {
+    return { value: PUBLIC_ORDER_NUMBER_SEQUENCE_MIN, isCalled: false };
+  }
+  return { value: maxExistingPublicNumber, isCalled: true };
+}
+
+/** Expected first nextval() after applying resolvePublicNumberSequenceSetval. */
+export function expectedNextPublicNumberAfterSetval(setval: {
+  value: number;
+  isCalled: boolean;
+}): number {
+  if (setval.value < PUBLIC_ORDER_NUMBER_SEQUENCE_MIN) {
+    throw new Error(
+      `setval value ${setval.value} is below sequence minimum ${PUBLIC_ORDER_NUMBER_SEQUENCE_MIN}`,
+    );
+  }
+  return setval.isCalled ? setval.value + 1 : setval.value;
+}
 
 /** Display / Track Order / email / admin primary reference. */
 export function formatOrderNumber(publicNumber: number): string {

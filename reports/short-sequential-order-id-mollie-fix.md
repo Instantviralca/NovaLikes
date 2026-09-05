@@ -50,10 +50,13 @@ NovaLikes was sending the internal order primary key (`IV-{base36}-{rand}`) as `
 
 `drizzle/0010_order_public_number.sql` (additive after `0009_analytics_milestone_idempotency.sql`):
 
-- Creates sequence starting at 1001
+- Creates sequence starting at 1001 (`MINVALUE 1001`)
 - Adds nullable `public_number`
-- Syncs sequence from `MAX(public_number)`
+- Positions sequence with safe `setval` (never below 1001):
+  - empty → `setval(..., 1001, false)` so next `nextval` = **1001**
+  - max existing `M` ≥ 1001 → `setval(..., M, true)` so next `nextval` = **M+1**
 - Unique partial index `orders_public_number_uidx`
+- Idempotent (`IF NOT EXISTS` + re-runnable `DO` block)
 
 ## 8. First new public order expected
 
@@ -194,10 +197,79 @@ No deploy performed. Apply `drizzle/0010_order_public_number.sql` on production 
 
 Before production traffic:
 
-1. Apply migration `0010_order_public_number.sql`.
+1. Apply migration `0010_order_public_number.sql` (fixed setval; safe to re-run after the failed production attempt).
 2. Confirm sequence starts at 1001 (or higher if any `public_number` already exists).
 3. Smoke: place order → Mollie create succeeds → webhook marks paid → Track Order `01001`.
 
+---
+
+## Production-found migration bug / fix (2026-09-05)
+
+### Failure
+
+Production `npm run db:migrate:sql` failed on `0010_order_public_number.sql`:
+
+```text
+setval: value 1000 is out of bounds for sequence
+"orders_public_number_seq" (1001..2147483647)
+```
+
+### Bad SQL (before)
+
+```sql
+SELECT setval(
+  'orders_public_number_seq',
+  GREATEST(
+    1000,
+    COALESCE((SELECT MAX(public_number) FROM orders WHERE public_number IS NOT NULL), 1000)
+  )
+);
+```
+
+On an empty `public_number` column this evaluates to `setval(..., 1000)`, which violates `MINVALUE 1001`.
+
+### Corrected sequence logic (same file `0010`)
+
+```sql
+DO $$
+DECLARE
+  max_existing INTEGER;
+BEGIN
+  SELECT MAX(public_number)
+    INTO max_existing
+    FROM orders
+   WHERE public_number IS NOT NULL
+     AND public_number >= 1001;
+
+  IF max_existing IS NULL THEN
+    PERFORM setval('orders_public_number_seq', 1001, false);
+  ELSE
+    PERFORM setval('orders_public_number_seq', max_existing, true);
+  END IF;
+END $$;
+```
+
+| State | setval | Next `nextval` |
+|-------|--------|----------------|
+| No public_number ≥ 1001 | `(1001, false)` | **1001** → display `01001` |
+| Max = 1001 | `(1001, true)` | **1002** |
+| Max = 1250 | `(1250, true)` | **1251** |
+
+### Transaction / rollback analysis (`scripts/apply-migrations.ts`)
+
+- Each migration file is applied via a single `sql.unsafe(body)` call, then `INSERT INTO schema_migrations` only on success.
+- PostgreSQL simple-query multi-statement batches run in **one implicit transaction**; a mid-file error aborts and **rolls back prior statements in that batch**.
+- Because `setval` failed, `schema_migrations` was **not** inserted for `0010`.
+- Therefore a clean apply-migrations failure should leave **no durable 0010 objects**. Partial remnants are only possible if statements were run outside this runner (manual one-by-one commits). `IF NOT EXISTS` + the fixed `DO` block still make re-apply safe.
+
+### Migration identity
+
+**Same migration file** `drizzle/0010_order_public_number.sql` — no `0011` required (0010 never recorded as applied).
+
+### Unchanged
+
+Public format `01001`, Mollie `"1001"`, internal `IV-` IDs, HMAC, testmode guard, Stripe paused, analytics, cart recovery.
+
 ## FINAL VERDICT
 
-**A. SHORT ORDER ID + MOLLIE FLOW FIXED**
+**A. SHORT ORDER ID + MOLLIE FLOW FIXED** (plus production `0010` setval fix)
