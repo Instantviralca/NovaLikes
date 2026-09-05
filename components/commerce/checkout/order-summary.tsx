@@ -1,7 +1,5 @@
 'use client';
 
-import { Lock, ShieldCheck } from 'lucide-react';
-
 import { formatMoney } from '@/lib/pricing/format';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type { CartItem, CartTotals } from '@/types/cart';
@@ -68,16 +66,6 @@ export function CheckoutOrderSummary({
           </dd>
         </div>
       </dl>
-      <div className="space-y-2 border-t border-[var(--border-subtle)] pt-4 text-xs font-medium text-[var(--text-secondary)]">
-        <p className="inline-flex items-center gap-2">
-          <ShieldCheck className="size-4 text-[var(--brand-primary)]" aria-hidden="true" />
-          {ui.checkout.secureCheckout}
-        </p>
-        <p className="inline-flex items-center gap-2">
-          <Lock className="size-4 text-[var(--brand-primary)]" aria-hidden="true" />
-          {ui.checkout.noPassword}
-        </p>
-      </div>
     </aside>
   );
 }

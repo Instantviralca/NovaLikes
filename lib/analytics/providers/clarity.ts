@@ -26,6 +26,9 @@ function ensureClarity(projectId: string): void {
   script.id = scriptId;
   script.async = true;
   script.src = `https://www.clarity.ms/tag/${encodeURIComponent(projectId)}`;
+  script.onerror = () => {
+    // Ignore CDN blocks — never throw raw Event into React.
+  };
   document.head.appendChild(script);
 }
 

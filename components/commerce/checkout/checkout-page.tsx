@@ -13,8 +13,6 @@ import type { MollieCardFieldsHandle } from '@/components/commerce/checkout/moll
 import { PlaceOrderButton } from '@/components/commerce/checkout/place-order-button';
 import { TermsAgreement } from '@/components/commerce/checkout/terms-agreement';
 import { CheckoutProgress } from '@/components/design-system/checkout-progress';
-import { PaymentConfidence } from '@/components/design-system/payment-confidence';
-import { TrustStrip } from '@/components/design-system/trust-strip';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
@@ -107,9 +105,8 @@ export function CheckoutPage() {
         id: provider.id as PaymentMethodId,
         label: provider.displayName,
         enabled: provider.enabled,
-        description: ui.checkout.secureCardPayment,
       })),
-    [ui.checkout.secureCardPayment],
+    [],
   );
 
   // Sole enabled method — select by default so the user never has to tap it.
@@ -366,10 +363,8 @@ export function CheckoutPage() {
                   label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
                   className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] text-base font-semibold hover:bg-[var(--brand-primary-hover)]"
                 />
-                <PaymentConfidence className="mt-4" />
               </div>
             </div>
-            <TrustStrip className="rounded-2xl border border-[var(--border-subtle)] bg-white/80 p-4" />
           </div>
           <div className="hidden h-fit lg:sticky lg:top-24 lg:block">
             <CheckoutSummary items={cart.items} totals={cart.totals} />
@@ -390,9 +385,6 @@ export function CheckoutPage() {
             label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
             className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] font-semibold hover:bg-[var(--brand-primary-hover)]"
           />
-          <p className="text-center text-[11px] text-[var(--text-secondary)]">
-            {ui.checkout.secureGuarantee}
-          </p>
         </div>
       </div>
     </Section>

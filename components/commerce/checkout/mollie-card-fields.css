@@ -15,13 +15,6 @@
     font-family: inherit;
 }
 
-.wrp-mollie-inline__intro {
-    margin: 0 0 16px !important;
-    color: #697386;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
 .wrp-mollie-inline__loading {
     margin: 8px 0;
     padding: 15px;

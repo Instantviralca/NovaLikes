@@ -1,6 +1,6 @@
 'use client';
 
-import { CreditCard, Lock, ShieldCheck } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
 import type { MutableRefObject } from 'react';
 
 import {
@@ -68,27 +68,8 @@ export function PaymentMethods({
                   <CreditCard className="size-4 text-[var(--brand-primary)]" aria-hidden="true" />
                   {method.label}
                 </Label>
-                {method.description ? (
-                  <p className="mt-1 text-xs text-muted-foreground">{method.description}</p>
-                ) : null}
-                {method.id === 'remote-payment' ? (
-                  <div className="mt-3 space-y-2">
-                    <p className="text-xs font-medium text-[var(--text-secondary)]">
-                      {ui.checkout.cardProcessedSecurely}
-                    </p>
-                    <p className="text-xs font-medium text-[var(--text-secondary)]">
-                      Secure card payments
-                    </p>
-                    <p className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-muted)]">
-                      <Lock className="size-3.5" aria-hidden="true" />
-                      {ui.checkout.encryptedPayment}
-                    </p>
-                    <p className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-muted)]">
-                      <ShieldCheck className="size-3.5" aria-hidden="true" />
-                      {ui.checkout.secureCheckout}
-                    </p>
-                    {selected ? <MollieCardFields enabled handleRef={mollieHandleRef} /> : null}
-                  </div>
+                {method.id === 'remote-payment' && selected ? (
+                  <MollieCardFields enabled handleRef={mollieHandleRef} />
                 ) : null}
               </div>
             </div>

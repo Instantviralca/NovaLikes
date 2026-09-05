@@ -29,6 +29,9 @@ function ensureGtag(measurementId: string): void {
     script.id = scriptId;
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+    script.onerror = () => {
+      // Ignore CDN blocks — never throw raw Event into React.
+    };
     document.head.appendChild(script);
   }
 

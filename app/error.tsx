@@ -14,6 +14,12 @@ type ErrorProps = {
 
 export default function GlobalError({ error, reset }: ErrorProps) {
   const isDev = process.env.NODE_ENV === 'development';
+  const message =
+    error?.message && error.message !== '[object Event]'
+      ? error.message
+      : isDev
+        ? 'A client resource failed to load (often a blocked payment/analytics script). Check the network tab.'
+        : undefined;
 
   return (
     <StatusPageShell>
@@ -22,8 +28,8 @@ export default function GlobalError({ error, reset }: ErrorProps) {
         Something went wrong
       </Heading>
       <MutedText className="mt-3 max-w-lg text-base">
-        {isDev && error.message
-          ? error.message
+        {isDev && message
+          ? message
           : 'An unexpected error occurred. Please try again.'}
       </MutedText>
       {error.digest ? (

@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type MutableRefObject } from 'react';
-import Script from 'next/script';
 
 import './mollie-card-fields.css';
 
@@ -35,6 +34,9 @@ declare global {
   }
 }
 
+const MOLLIE_SCRIPT_SRC = 'https://js.mollie.com/v1/mollie.js';
+const MOLLIE_SCRIPT_ID = 'novalikes-mollie-js';
+
 const FIELD_STYLES = {
   styles: {
     base: {
@@ -59,6 +61,71 @@ type MollieCardFieldsProps = {
   handleRef?: MutableRefObject<MollieCardFieldsHandle | null>;
 };
 
+function errorMessage(err: unknown, fallback: string): string {
+  if (err instanceof Error && err.message) return err.message;
+  // next/script (and some browsers) reject with a raw Event — never surface "[object Event]".
+  if (typeof Event !== 'undefined' && err instanceof Event) {
+    return fallback;
+  }
+  if (typeof err === 'string' && err.trim()) return err;
+  return fallback;
+}
+
+/**
+ * Load Mollie.js without next/script.
+ * next/script rejects load failures with a raw Event, which React 19's overlay
+ * reports as the useless Runtime Error "[object Event]".
+ */
+function loadMollieScript(): Promise<void> {
+  if (typeof window === 'undefined') {
+    return Promise.reject(new Error('Secure payment form is unavailable.'));
+  }
+  if (typeof window.Mollie === 'function') {
+    return Promise.resolve();
+  }
+
+  const existing = document.getElementById(MOLLIE_SCRIPT_ID) as HTMLScriptElement | null;
+  if (existing) {
+    return new Promise((resolve, reject) => {
+      if (typeof window.Mollie === 'function') {
+        resolve();
+        return;
+      }
+      const onLoad = () => {
+        cleanup();
+        if (typeof window.Mollie === 'function') resolve();
+        else reject(new Error('Unable to load the secure payment form. Please try again.'));
+      };
+      const onError = () => {
+        cleanup();
+        reject(new Error('Unable to load the secure payment form. Please try again.'));
+      };
+      const cleanup = () => {
+        existing.removeEventListener('load', onLoad);
+        existing.removeEventListener('error', onError);
+      };
+      existing.addEventListener('load', onLoad);
+      existing.addEventListener('error', onError);
+    });
+  }
+
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.id = MOLLIE_SCRIPT_ID;
+    script.src = MOLLIE_SCRIPT_SRC;
+    script.async = true;
+    script.addEventListener('load', () => {
+      if (typeof window.Mollie === 'function') resolve();
+      else reject(new Error('Unable to load the secure payment form. Please try again.'));
+    });
+    script.addEventListener('error', () => {
+      script.remove();
+      reject(new Error('Unable to load the secure payment form. Please try again.'));
+    });
+    document.head.appendChild(script);
+  });
+}
+
 /**
  * Mollie Components card fields — mirrors Woo Mollie Remote Payment Client v2.5.
  */
@@ -67,7 +134,6 @@ export function MollieCardFields({
   onReadyChange,
   handleRef,
 }: MollieCardFieldsProps) {
-  const [scriptReady, setScriptReady] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
@@ -150,7 +216,7 @@ export function MollieCardFields({
   );
 
   useEffect(() => {
-    if (!enabled || !scriptReady) return;
+    if (!enabled) return;
     let cancelled = false;
 
     (async () => {
@@ -176,13 +242,16 @@ export function MollieCardFields({
             currency: data.currency || '',
           };
         }
+        // Only load Mollie.js after config succeeds — avoids useless CDN/script errors
+        // when payments are not configured locally.
+        await loadMollieScript();
         if (cancelled) return;
         mountFields(configRef.current);
       } catch (err) {
         if (cancelled) return;
         cleanup();
         setLoading(false);
-        setError(err instanceof Error ? err.message : 'Unable to load the secure payment form.');
+        setError(errorMessage(err, 'Unable to load the secure payment form.'));
         onReadyChange?.(false);
       }
     })();
@@ -192,7 +261,7 @@ export function MollieCardFields({
       cleanup();
       onReadyChange?.(false);
     };
-  }, [enabled, scriptReady, cleanup, mountFields, onReadyChange]);
+  }, [enabled, cleanup, mountFields, onReadyChange]);
 
   useEffect(() => {
     if (!handleRef) return;
@@ -219,14 +288,7 @@ export function MollieCardFields({
 
   return (
     <div className="mt-4">
-      <Script
-        src="https://js.mollie.com/v1/mollie.js"
-        strategy="afterInteractive"
-        onLoad={() => setScriptReady(true)}
-        onError={() => setError('Unable to load the secure payment form. Please try again.')}
-      />
       <div id="wrp-mollie-inline" className="wrp-mollie-inline">
-        <p className="wrp-mollie-inline__intro">Secure payment powered by Mollie.</p>
         {loading ? (
           <div id="wrp-mollie-loading" className="wrp-mollie-inline__loading" role="status">
             Loading secure card form…
