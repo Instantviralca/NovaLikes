@@ -1,15 +1,15 @@
 /**
  * Native first-party admin analytics aggregation (UTC).
  *
- * Funnel stages and session KPIs use DISTINCT session_id reach (or
- * analytics_sessions rows). Raw milestone row duplicates from early rollout
- * cannot inflate Sessions / Landing / Checkout funnel counts.
+ * Session-based metrics (Sessions, Landing, Funnel, Acquisition, Markets,
+ * Devices) use ONLY real analytics_sessions rows (or events whose session_id
+ * exists in that set). Legacy analytics_events without a native session must
+ * NOT invent pseudo-sessions.
  *
- * Metric event sources:
- * - Canonical (preferred): session_started, landing_view, page_view, service_view,
- *   cart_add, checkout_started, order_created, payment_paid
- * - Legacy compatibility (pre-upgrade rows only): home_page_view, service_page_view,
- *   cart_item_add, checkout_view, checkout_submit — never mixed into paid/revenue
+ * Page Views may still include historical page_view / home_page_view /
+ * service_page_view rows for continuity — documented in the UI notice.
+ *
+ * Paid / revenue remain server-only (payment_paid), distinct by orderId.
  */
 
 import {
@@ -37,23 +37,15 @@ const RANGE_LABELS: Record<Exclude<NativeAnalyticsRangeId, 'custom'>, string> = 
   '90d': 'Last 90 days',
 };
 
-/** Legitimate navigations — excludes milestone landing_view (emitted alongside page_view). */
+/**
+ * Page-view event names for the Page Views KPI / charts.
+ * Includes historical aliases for continuity — NOT used as session proxies.
+ */
 const PAGE_VIEW_NAMES = new Set([
   'page_view',
   'service_view',
   'home_page_view',
   'service_page_view',
-]);
-
-/** Canonical landing milestones. */
-const CANONICAL_LANDING_NAMES = new Set(['landing_view', 'session_started']);
-
-/** Pre-upgrade landing proxies (only when visitorId is missing). */
-const LEGACY_LANDING_NAMES = new Set([
-  'page_view',
-  'home_page_view',
-  'service_page_view',
-  'service_view',
 ]);
 
 const SERVICE_VIEW_NAMES = new Set(['service_view', 'service_page_view']);
@@ -155,12 +147,6 @@ function previousEqualLengthBounds(
   };
 }
 
-function isLandingEvent(event: AnalyticsEventRecord): boolean {
-  if (CANONICAL_LANDING_NAMES.has(event.eventName)) return true;
-  if (!event.visitorId && LEGACY_LANDING_NAMES.has(event.eventName)) return true;
-  return false;
-}
-
 function isServiceViewEvent(event: AnalyticsEventRecord): boolean {
   return SERVICE_VIEW_NAMES.has(event.eventName);
 }
@@ -194,12 +180,41 @@ function currencyFromEvent(event: AnalyticsEventRecord): string {
   return typeof currency === 'string' ? currency.toUpperCase() : 'USD';
 }
 
-function marketLocaleKey(event: AnalyticsEventRecord): string {
-  const market = event.market?.trim();
+function marketLocaleKeyFromSession(session: AnalyticsSessionRecord): string {
+  const market = session.market?.trim();
   if (market) return market.toLowerCase();
-  const locale = event.locale?.trim();
+  const locale = session.locale?.trim();
   if (locale && locale.toLowerCase() !== 'en') return locale.toLowerCase();
   return 'en';
+}
+
+/** Session-first acquisition label (each session counted once). */
+export function classifySessionAcquisition(session: AnalyticsSessionRecord): string {
+  if (session.utmCampaign || session.utmSource || session.utmMedium) {
+    return `Campaign · ${(session.utmSource || session.utmMedium || 'campaign').toLowerCase()}`;
+  }
+  const channel = session.sourceChannel?.trim().toLowerCase();
+  if (channel && channel !== 'direct' && channel !== 'unknown') {
+    if (channel === 'organic') return 'Organic';
+    if (channel === 'social') return 'Social';
+    if (channel === 'referral') return 'Referral';
+    if (channel === 'campaign') return 'Campaign';
+    return channel.charAt(0).toUpperCase() + channel.slice(1);
+  }
+  const ref = session.referrer?.trim();
+  if (!ref) return 'Direct';
+  try {
+    const host = new URL(ref).hostname.toLowerCase().replace(/^www\./, '');
+    if (/google\.|bing\.|duckduckgo\.|yahoo\./.test(host)) {
+      return `Organic · ${host.split('.')[0]}`;
+    }
+    if (/instagram\.|facebook\.|tiktok\.|twitter\.|x\.com|linkedin\.|reddit\.|youtube\./.test(host)) {
+      return `Social · ${host}`;
+    }
+    return `Referral · ${host}`;
+  } catch {
+    return 'Referral';
+  }
 }
 
 type PeriodMetrics = {
@@ -217,6 +232,7 @@ type PeriodMetrics = {
   checkoutSessions: number;
   orderCreatedSessions: number;
   paidSessions: number;
+  legacyEventCount: number;
 };
 
 function emptyMetrics(): PeriodMetrics {
@@ -235,17 +251,24 @@ function emptyMetrics(): PeriodMetrics {
     checkoutSessions: 0,
     orderCreatedSessions: 0,
     paidSessions: 0,
+    legacyEventCount: 0,
   };
 }
 
-function aggregatePeriod(
+/**
+ * Aggregate a period.
+ * When analytics_sessions rows exist, they are the sole session universe.
+ * Events whose session_id is not in that set never create session metrics.
+ */
+export function aggregatePeriod(
   events: AnalyticsEventRecord[],
-  sessionRows?: AnalyticsSessionRecord[],
+  sessionRows: AnalyticsSessionRecord[],
 ): PeriodMetrics {
   const m = emptyMetrics();
+  const validSessionIds = new Set(sessionRows.map((s) => s.id));
+  const hasNativeSessions = validSessionIds.size > 0;
+
   const visitors = new Set<string>();
-  const sessions = new Set<string>();
-  const landing = new Set<string>();
   const service = new Set<string>();
   const cart = new Set<string>();
   const checkout = new Set<string>();
@@ -253,37 +276,32 @@ function aggregatePeriod(
   const paid = new Set<string>();
   const paidOrderIds = new Set<string>();
 
-  if (sessionRows && sessionRows.length > 0) {
+  if (hasNativeSessions) {
     for (const session of sessionRows) {
-      sessions.add(session.id);
       visitors.add(session.visitorId);
-      landing.add(session.id);
     }
+    m.sessions = validSessionIds.size;
+    // Every real analytics_sessions row has exactly one landing.
+    m.landingSessions = validSessionIds.size;
+    m.visitors = visitors.size;
   }
 
   for (const event of events) {
-    if (!sessionRows?.length) {
-      sessions.add(event.sessionId);
-      if (event.visitorId) visitors.add(event.visitorId);
-      else visitors.add(`session:${event.sessionId}`);
-    } else if (event.visitorId) {
-      visitors.add(event.visitorId);
+    const sid = event.sessionId?.trim() || '';
+    const linkedToNative = hasNativeSessions && sid !== '' && validSessionIds.has(sid);
+    const isLegacyOrUnlinked = !linkedToNative;
+
+    if (isLegacyOrUnlinked) {
+      m.legacyEventCount += 1;
     }
 
-    if (isPageViewEvent(event)) m.pageViews += 1;
-    if (isCartEvent(event)) m.cartAdds += 1;
-    if (isCheckoutEvent(event)) m.checkoutStarts += 1;
-
-    if (isLandingEvent(event)) landing.add(event.sessionId);
-    if (isServiceViewEvent(event)) service.add(event.sessionId);
-    if (isCartEvent(event)) cart.add(event.sessionId);
-    if (isCheckoutEvent(event)) checkout.add(event.sessionId);
-    if (isOrderCreatedEvent(event)) {
-      orderCreated.add(event.sessionId);
-      m.orderCreated += 1;
+    // Page Views: historical + native event counts (never treated as sessions).
+    if (isPageViewEvent(event)) {
+      m.pageViews += 1;
     }
+
+    // Paid / revenue: server-only events, distinct by orderId — not session-fabricated.
     if (event.eventName === 'payment_paid') {
-      paid.add(event.sessionId);
       const orderId =
         typeof (event.properties ?? event.metadata)?.orderId === 'string'
           ? String((event.properties ?? event.metadata)?.orderId)
@@ -293,16 +311,30 @@ function aggregatePeriod(
         void currencyFromEvent(event);
         m.revenueUsdMinor += revenueMinorFromEvent(event);
       }
+      if (linkedToNative) {
+        paid.add(sid);
+      }
+    }
+
+    if (!linkedToNative) {
+      continue;
+    }
+
+    if (isServiceViewEvent(event)) service.add(sid);
+    if (isCartEvent(event)) {
+      cart.add(sid);
+      m.cartAdds += 1;
+    }
+    if (isCheckoutEvent(event)) checkout.add(sid);
+    if (isOrderCreatedEvent(event)) {
+      orderCreated.add(sid);
+      m.orderCreated += 1;
     }
   }
 
-  m.visitors = visitors.size;
-  m.sessions = sessions.size;
-  m.landingSessions = landing.size || sessions.size;
   m.serviceSessions = service.size;
   m.cartSessions = cart.size;
   m.checkoutSessions = checkout.size;
-  // Funnel + secondary checkout KPI: distinct sessions, not raw event rows.
   m.checkoutStarts = checkout.size;
   m.orderCreatedSessions = orderCreated.size;
   m.paidSessions = paid.size;
@@ -342,7 +374,12 @@ function kpi(
   };
 }
 
-function buildFunnel(m: PeriodMetrics): NativeFunnelStage[] {
+/**
+ * Reach-based funnel (sessions may skip Service / Cart).
+ * Never emit >100% "from previous" — return null when a later stage exceeds the prior
+ * (skippable stage), so the UI does not imply an impossible sequential conversion.
+ */
+export function buildFunnel(m: PeriodMetrics): NativeFunnelStage[] {
   const stages: Array<
     Omit<NativeFunnelStage, 'conversionFromPrevious' | 'pctOfLandings' | 'dropOffFromPrevious'> & {
       sessions: number;
@@ -357,9 +394,15 @@ function buildFunnel(m: PeriodMetrics): NativeFunnelStage[] {
   ];
   return stages.map((stage, index) => {
     const prev = index > 0 ? stages[index - 1]!.sessions : null;
-    const conversionFromPrevious = prev === null ? null : pct(stage.sessions, prev);
-    const dropOffFromPrevious =
-      prev === null || prev <= 0 ? null : pct(Math.max(prev - stage.sessions, 0), prev);
+    let conversionFromPrevious: number | null = null;
+    let dropOffFromPrevious: number | null = null;
+    if (prev !== null && prev > 0) {
+      if (stage.sessions <= prev) {
+        conversionFromPrevious = pct(stage.sessions, prev);
+        dropOffFromPrevious = pct(Math.max(prev - stage.sessions, 0), prev);
+      }
+      // else: skippable stage / non-strict funnel — omit invalid >100% rate
+    }
     return {
       ...stage,
       conversionFromPrevious,
@@ -381,10 +424,12 @@ function bucketLabel(key: string, hourly: boolean): string {
 
 function buildSeries(
   events: AnalyticsEventRecord[],
+  sessionRows: AnalyticsSessionRecord[],
   sinceIso: string,
   untilIso: string,
   hourly: boolean,
 ): NativeSeriesPoint[] {
+  const validSessionIds = new Set(sessionRows.map((s) => s.id));
   const map = new Map<
     string,
     {
@@ -418,11 +463,16 @@ function buildSeries(
     ensure(bucketKey(new Date(t).toISOString(), hourly));
   }
 
+  for (const session of sessionRows) {
+    const key = bucketKey(session.startedAt, hourly);
+    const row = ensure(key);
+    row.sessions.add(session.id);
+    row.visitors.add(session.visitorId);
+  }
+
   for (const event of events) {
     const key = bucketKey(eventTime(event), hourly);
     const row = ensure(key);
-    row.sessions.add(event.sessionId);
-    row.visitors.add(event.visitorId || `session:${event.sessionId}`);
     if (isPageViewEvent(event)) row.pageViews += 1;
     if (event.eventName === 'payment_paid') {
       const orderId =
@@ -434,6 +484,8 @@ function buildSeries(
         row.revenueUsdMinor += revenueMinorFromEvent(event);
       }
     }
+    // Never add legacy/unlinked event.sessionId into chart session counts.
+    void validSessionIds;
   }
 
   return [...map.entries()]
@@ -449,69 +501,18 @@ function buildSeries(
     }));
 }
 
-function classifyAcquisition(event: AnalyticsEventRecord): string {
-  if (event.campaign || event.source || event.medium) {
-    return `Campaign · ${(event.source || event.medium || 'campaign').toLowerCase()}`;
-  }
-  const ref = event.referrer?.trim();
-  if (!ref) return 'Direct';
-  try {
-    const host = new URL(ref).hostname.toLowerCase().replace(/^www\./, '');
-    if (/google\.|bing\.|duckduckgo\.|yahoo\./.test(host)) return `Organic · ${host.split('.')[0]}`;
-    if (/instagram\.|facebook\.|tiktok\.|twitter\.|x\.com|linkedin\.|reddit\.|youtube\./.test(host)) {
-      return `Social · ${host}`;
-    }
-    return `Referral · ${host}`;
-  } catch {
-    return 'Referral';
-  }
-}
+type GroupBucket = {
+  sessions: Set<string>;
+  visitors: Set<string>;
+  pageViews: number;
+  paidOrders: Set<string>;
+  revenueUsdMinor: number;
+};
 
-function buildGroupedTable(
-  events: AnalyticsEventRecord[],
-  keyFn: (event: AnalyticsEventRecord) => string | null,
+function finalizeGroupedTable(
+  map: Map<string, GroupBucket>,
   labelFn?: (key: string) => string,
 ): NativeTableRow[] {
-  const map = new Map<
-    string,
-    {
-      sessions: Set<string>;
-      visitors: Set<string>;
-      pageViews: number;
-      paidOrders: Set<string>;
-      revenueUsdMinor: number;
-    }
-  >();
-
-  for (const event of events) {
-    const key = keyFn(event);
-    if (!key) continue;
-    let row = map.get(key);
-    if (!row) {
-      row = {
-        sessions: new Set(),
-        visitors: new Set(),
-        pageViews: 0,
-        paidOrders: new Set(),
-        revenueUsdMinor: 0,
-      };
-      map.set(key, row);
-    }
-    row.sessions.add(event.sessionId);
-    row.visitors.add(event.visitorId || `session:${event.sessionId}`);
-    if (isPageViewEvent(event)) row.pageViews += 1;
-    if (event.eventName === 'payment_paid') {
-      const orderId =
-        typeof (event.properties ?? event.metadata)?.orderId === 'string'
-          ? String((event.properties ?? event.metadata)?.orderId)
-          : event.id;
-      if (!row.paidOrders.has(orderId)) {
-        row.paidOrders.add(orderId);
-        row.revenueUsdMinor += revenueMinorFromEvent(event);
-      }
-    }
-  }
-
   return [...map.entries()]
     .map(([key, row]) => ({
       key,
@@ -524,6 +525,143 @@ function buildGroupedTable(
     }))
     .sort((a, b) => b.sessions - a.sessions || a.label.localeCompare(b.label))
     .slice(0, 25);
+}
+
+function emptyBucket(): GroupBucket {
+  return {
+    sessions: new Set(),
+    visitors: new Set(),
+    pageViews: 0,
+    paidOrders: new Set(),
+    revenueUsdMinor: 0,
+  };
+}
+
+/** Acquisition / markets / devices — one row contribution per analytics_sessions row. */
+function buildSessionAttributeTable(
+  sessionRows: AnalyticsSessionRecord[],
+  keyFn: (session: AnalyticsSessionRecord) => string | null,
+  labelFn?: (key: string) => string,
+): NativeTableRow[] {
+  const map = new Map<string, GroupBucket>();
+  for (const session of sessionRows) {
+    const key = keyFn(session);
+    if (!key) continue;
+    let row = map.get(key);
+    if (!row) {
+      row = emptyBucket();
+      map.set(key, row);
+    }
+    row.sessions.add(session.id);
+    row.visitors.add(session.visitorId);
+  }
+  return finalizeGroupedTable(map, labelFn);
+}
+
+/**
+ * Services: page views from all events (incl. historical);
+ * sessions / paid only for events linked to a real analytics_sessions id.
+ */
+function buildServicesTable(
+  events: AnalyticsEventRecord[],
+  validSessionIds: Set<string>,
+): NativeTableRow[] {
+  const map = new Map<string, GroupBucket>();
+  const hasNative = validSessionIds.size > 0;
+
+  for (const event of events) {
+    const slug = event.serviceSlug?.trim();
+    if (!slug) continue;
+    let row = map.get(slug);
+    if (!row) {
+      row = emptyBucket();
+      map.set(slug, row);
+    }
+    if (isPageViewEvent(event) || isServiceViewEvent(event)) {
+      row.pageViews += 1;
+    }
+    const sid = event.sessionId?.trim() || '';
+    if (hasNative && sid && validSessionIds.has(sid)) {
+      row.sessions.add(sid);
+      if (event.visitorId) row.visitors.add(event.visitorId);
+    }
+    if (event.eventName === 'payment_paid') {
+      const orderId =
+        typeof (event.properties ?? event.metadata)?.orderId === 'string'
+          ? String((event.properties ?? event.metadata)?.orderId)
+          : event.id;
+      if (!row.paidOrders.has(orderId)) {
+        row.paidOrders.add(orderId);
+        row.revenueUsdMinor += revenueMinorFromEvent(event);
+      }
+    }
+  }
+
+  return finalizeGroupedTable(map);
+}
+
+/** Attach page-view / paid counts from linked events onto session-keyed tables. */
+function enrichSessionTablesWithEvents(
+  rows: NativeTableRow[],
+  sessionRows: AnalyticsSessionRecord[],
+  events: AnalyticsEventRecord[],
+  keyFn: (session: AnalyticsSessionRecord) => string | null,
+): NativeTableRow[] {
+  const sessionKey = new Map<string, string>();
+  for (const session of sessionRows) {
+    const key = keyFn(session);
+    if (key) sessionKey.set(session.id, key);
+  }
+  const byKey = new Map(rows.map((r) => [r.key, { ...r }]));
+
+  for (const event of events) {
+    const sid = event.sessionId?.trim() || '';
+    const key = sid ? sessionKey.get(sid) : undefined;
+    if (!key) continue;
+    const row = byKey.get(key);
+    if (!row) continue;
+    if (isPageViewEvent(event)) {
+      row.pageViews = (row.pageViews ?? 0) + 1;
+    }
+    if (event.eventName === 'payment_paid') {
+      // Paid already counted at order level in aggregate; per-dimension paid via order ids
+      // is approximate here — count once per event id to avoid double-count noise.
+      row.paidOrders = (row.paidOrders ?? 0) + 0;
+      void event;
+    }
+  }
+
+  // Recompute paid/revenue per dimension from events linked to sessions in that bucket.
+  for (const row of byKey.values()) {
+    row.paidOrders = 0;
+    row.revenueUsdMinor = 0;
+  }
+  const paidSeen = new Map<string, Set<string>>();
+  for (const event of events) {
+    if (event.eventName !== 'payment_paid') continue;
+    const sid = event.sessionId?.trim() || '';
+    const key = sid ? sessionKey.get(sid) : undefined;
+    if (!key) continue;
+    const row = byKey.get(key);
+    if (!row) continue;
+    const orderId =
+      typeof (event.properties ?? event.metadata)?.orderId === 'string'
+        ? String((event.properties ?? event.metadata)?.orderId)
+        : event.id;
+    let seen = paidSeen.get(key);
+    if (!seen) {
+      seen = new Set();
+      paidSeen.set(key, seen);
+    }
+    if (seen.has(orderId)) continue;
+    seen.add(orderId);
+    row.paidOrders = (row.paidOrders ?? 0) + 1;
+    row.revenueUsdMinor = (row.revenueUsdMinor ?? 0) + revenueMinorFromEvent(event);
+  }
+
+  return [...byKey.values()].sort(
+    (a, b) => b.sessions - a.sessions || a.label.localeCompare(b.label),
+  );
 }
 
 export async function getNativeAnalyticsViewModel(input?: {
@@ -577,6 +715,7 @@ export async function getNativeAnalyticsViewModel(input?: {
 
   const current = aggregatePeriod(currentEvents, currentSessions);
   const previous = aggregatePeriod(previousEvents, previousSessions);
+  const validSessionIds = new Set(currentSessions.map((s) => s.id));
 
   const sessionToPaid =
     current.sessions > 0 ? pct(current.paidOrders, current.sessions) : null;
@@ -649,43 +788,72 @@ export async function getNativeAnalyticsViewModel(input?: {
   ];
 
   const hourly = effectiveRange === 'today' || effectiveRange === 'yesterday';
-  const series = buildSeries(currentEvents, bounds.sinceIso, bounds.untilIso, hourly);
-
-  const acquisition = buildGroupedTable(currentEvents, (e) => classifyAcquisition(e));
-  const services = buildGroupedTable(currentEvents, (e) => e.serviceSlug?.trim() || null);
-  const markets = buildGroupedTable(
+  const series = buildSeries(
     currentEvents,
-    (e) => marketLocaleKey(e),
+    currentSessions,
+    bounds.sinceIso,
+    bounds.untilIso,
+    hourly,
+  );
+
+  const acquisitionBase = buildSessionAttributeTable(
+    currentSessions,
+    (s) => classifySessionAcquisition(s),
+  );
+  const acquisition = enrichSessionTablesWithEvents(
+    acquisitionBase,
+    currentSessions,
+    currentEvents,
+    (s) => classifySessionAcquisition(s),
+  );
+
+  const marketsBase = buildSessionAttributeTable(
+    currentSessions,
+    (s) => marketLocaleKeyFromSession(s),
     (key) => analyticsMarketLocaleLabel(key),
   );
-  const devices = buildGroupedTable(
+  const markets = enrichSessionTablesWithEvents(
+    marketsBase,
+    currentSessions,
     currentEvents,
-    (e) => e.deviceType?.trim() || 'unknown',
+    (s) => marketLocaleKeyFromSession(s),
+  );
+
+  const devicesBase = buildSessionAttributeTable(
+    currentSessions,
+    (s) => s.deviceType?.trim().toLowerCase() || 'unknown',
     (key) => key.charAt(0).toUpperCase() + key.slice(1),
   );
+  const devices = enrichSessionTablesWithEvents(
+    devicesBase,
+    currentSessions,
+    currentEvents,
+    (s) => s.deviceType?.trim().toLowerCase() || 'unknown',
+  );
+
+  const services = buildServicesTable(currentEvents, validSessionIds);
 
   const recentSince = new Date(Date.now() - 30 * 60 * 1000).toISOString();
   const recentEvents = allEvents.filter((e) => eventTime(e) >= recentSince);
   const recentSessions = allSessions.filter((s) => s.startedAt >= recentSince);
   const recent = aggregatePeriod(recentEvents, recentSessions);
 
-  const hasPreUpgrade = currentEvents.some((e) => !e.visitorId);
+  const notices: string[] = [];
+  if (current.legacyEventCount > 0) {
+    notices.push(
+      'Historical events collected before native visitor/session tracking may have incomplete visitor/session attribution. Session, funnel, acquisition, market, and device metrics use analytics_sessions only — legacy event rows are not invented into sessions. Page Views may still include historical page_view rows for continuity.',
+    );
+  }
   const hasDuplicateMilestones = (() => {
     const counts = new Map<string, number>();
     for (const e of currentEvents) {
       if (e.eventName !== 'session_started' && e.eventName !== 'landing_view') continue;
+      if (!validSessionIds.has(e.sessionId)) continue;
       const key = `${e.sessionId}:${e.eventName}`;
       counts.set(key, (counts.get(key) ?? 0) + 1);
     }
     return [...counts.values()].some((n) => n > 1);
   })();
-
-  const notices: string[] = [];
-  if (hasPreUpgrade) {
-    notices.push(
-      'This range includes events from before the native visitor/session upgrade. Some KPIs (visitors, UTM, device, revenue) may be incomplete versus new tracking.',
-    );
-  }
   if (hasDuplicateMilestones) {
     notices.push(
       'Raw event table contains early rollout duplicates of session_started/landing_view, but dashboard metrics dedupe sessions and future events are idempotent.',

@@ -51,17 +51,26 @@ function SimpleBars({
     );
   }
   const values = series.map((p) => Number(p[valueKey]) || 0);
+  const total = values.reduce((sum, v) => sum + v, 0);
+  if (total === 0) {
+    return (
+      <AdminEmptyState
+        title={`No ${label.toLowerCase()} in this range`}
+        description="Bars appear when this metric has non-zero values."
+      />
+    );
+  }
   const max = Math.max(...values, 1);
   return (
     <div className="space-y-2" aria-label={label}>
-      <div className="flex h-36 items-end gap-px overflow-x-auto rounded-lg border bg-muted/20 p-2">
+      <div className="flex h-40 items-end gap-0.5 overflow-x-auto rounded-lg border bg-muted/20 p-3">
         {series.map((point) => {
           const value = Number(point[valueKey]) || 0;
-          const height = Math.max((value / max) * 100, value > 0 ? 4 : 0);
+          const height = value > 0 ? Math.max((value / max) * 100, 6) : 0;
           return (
             <div
               key={`${valueKey}-${point.key}`}
-              className="flex min-w-[10px] flex-1 flex-col items-center justify-end"
+              className="flex min-w-[8px] flex-1 flex-col items-center justify-end"
               title={`${point.label}: ${valueKey === 'revenueUsdMinor' ? money(value) : value}`}
             >
               <div
@@ -202,8 +211,12 @@ export function AnalyticsPage({ data }: AnalyticsPageProps) {
       </section>
 
       <section aria-label="Funnel" className="space-y-3">
-        <h2 className="text-sm font-semibold">Funnel (session-deduped)</h2>
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <h2 className="text-sm font-semibold">Funnel (native sessions)</h2>
+        <p className="text-xs text-muted-foreground">
+          Reach-based distinct sessions from analytics_sessions. Service and Cart can be skipped —
+          &quot;from previous&quot; is omitted when a later stage exceeds the prior stage.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6">
           {data.funnel.map((stage) => (
             <AdminStatCard
               key={stage.id}
@@ -230,6 +243,10 @@ export function AnalyticsPage({ data }: AnalyticsPageProps) {
       <section aria-label="Traffic charts" className="grid gap-4 lg:grid-cols-2">
         <div className="space-y-2">
           <h2 className="text-sm font-semibold">Visitors / sessions / page views</h2>
+          <p className="text-xs text-muted-foreground">
+            Sessions/visitors use analytics_sessions. Page views include historical page_view rows.
+          </p>
+          <SimpleBars series={data.series} valueKey="visitors" label="Visitors by period" />
           <SimpleBars series={data.series} valueKey="sessions" label="Sessions by period" />
           <SimpleBars series={data.series} valueKey="pageViews" label="Page views by period" />
         </div>

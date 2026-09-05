@@ -135,6 +135,21 @@ describe('admin native aggregation', () => {
 
     const persistence = getPersistence();
     const now = new Date().toISOString();
+    await persistence.upsertAnalyticsVisitor?.({
+      id: 'v1',
+      firstSeenAt: now,
+      lastSeenAt: now,
+    });
+    await persistence.upsertAnalyticsSession?.({
+      id: 's1',
+      visitorId: 'v1',
+      startedAt: now,
+      lastActivityAt: now,
+      landingPath: '/',
+      countryCode: 'US',
+      isBot: false,
+      deviceType: 'desktop',
+    });
     await persistence.insertAnalyticsEvents([
       {
         id: 'e1',

@@ -412,7 +412,7 @@ describe('admin dashboard robustness', () => {
     expect(vm.preUpgradeNotice).toMatch(/early rollout duplicates/i);
   });
 
-  it('K: legacy events do not corrupt canonical paid/revenue; landing uses legacy only without visitorId', async () => {
+  it('K: legacy events do not invent landing sessions; paid/revenue stay server-only', async () => {
     const now = new Date().toISOString();
     const persistence = getPersistence();
     await persistence.insertAnalyticsEvents([
@@ -450,9 +450,13 @@ describe('admin dashboard robustness', () => {
     ]);
 
     const vm = await getNativeAnalyticsViewModel({ range: '30d' });
-    expect(vm.funnel.find((s) => s.id === 'landing')?.sessions).toBe(1);
+    // No analytics_sessions row → no fabricated landing/session
+    expect(vm.kpis.find((k) => k.id === 'sessions')?.value).toBe(0);
+    expect(vm.funnel.find((s) => s.id === 'landing')?.sessions).toBe(0);
     expect(vm.kpis.find((k) => k.id === 'paid_orders')?.value).toBe(1);
     expect(vm.kpis.find((k) => k.id === 'revenue')?.value).toBe('$15.00');
+    // Historical page views still counted
+    expect(vm.kpis.find((k) => k.id === 'page_views')?.value).toBe(1);
   });
 
   it('L: paid/revenue remains server-only and exactly once', async () => {
@@ -486,9 +490,42 @@ describe('admin dashboard robustness', () => {
     expect(events.filter((e) => e.eventName === 'payment_paid')).toHaveLength(1);
   });
 
-  it('normalizes blank market/locale to Default / Global English', async () => {
+  it('normalizes blank market/locale to Default / Global English for real sessions', async () => {
     const now = new Date().toISOString();
-    await getPersistence().insertAnalyticsEvents([
+    const persistence = getPersistence();
+    await persistence.upsertAnalyticsVisitor?.({
+      id: 'v-m',
+      firstSeenAt: now,
+      lastSeenAt: now,
+    });
+    await persistence.upsertAnalyticsVisitor?.({
+      id: 'v-m2',
+      firstSeenAt: now,
+      lastSeenAt: now,
+    });
+    await persistence.upsertAnalyticsSession?.({
+      id: 's-m',
+      visitorId: 'v-m',
+      startedAt: now,
+      lastActivityAt: now,
+      landingPath: '/',
+      countryCode: 'US',
+      isBot: false,
+      market: null,
+      locale: 'en',
+    });
+    await persistence.upsertAnalyticsSession?.({
+      id: 's-m2',
+      visitorId: 'v-m2',
+      startedAt: now,
+      lastActivityAt: now,
+      landingPath: '/ca/',
+      countryCode: 'CA',
+      isBot: false,
+      market: 'ca',
+      locale: 'en',
+    });
+    await persistence.insertAnalyticsEvents([
       {
         id: 'm1',
         eventName: 'page_view',
@@ -518,5 +555,6 @@ describe('admin dashboard robustness', () => {
     const labels = vm.markets.map((r) => r.label);
     expect(labels).toContain('Default / Global English');
     expect(labels).toContain('Canada');
+    expect(vm.markets.reduce((sum, r) => sum + r.sessions, 0)).toBe(2);
   });
 });
