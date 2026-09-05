@@ -50,7 +50,13 @@ export type OrderStore = {
   getOrderByIdempotencyKey(key: string): Promise<Order | null>;
   getOrderByPaymentId(paymentId: string): Promise<Order | null>;
   /** Atomically allocate the next public_number (Postgres sequence / memory counter). */
-  allocatePublicOrderNumber?(): Promise<number>;
+  allocatePublicOrderNumber(): Promise<number>;
+  /**
+   * Ensure an existing order has a public_number.
+   * Used to repair NULL public_number rows on idempotent checkout retry.
+   * Concurrent callers must assign at most one number to the same order.
+   */
+  ensurePublicOrderNumber(orderId: string): Promise<Order>;
   saveOrder(order: Order): Promise<Order>;
   addInternalNote(orderId: string, note: OrderInternalNote): Promise<OrderInternalNote>;
 };

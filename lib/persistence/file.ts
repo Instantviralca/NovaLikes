@@ -120,14 +120,56 @@ export function createFilePersistence(): AppPersistence {
       write(state);
       return n;
     },
+    async ensurePublicOrderNumber(orderId) {
+      const state = read();
+      const index = state.orders.findIndex((o) => o.id === orderId);
+      if (index < 0) throw new Error(`Order not found for public number repair: ${orderId}`);
+      const order = state.orders[index];
+      if (typeof order.publicNumber === 'number' && order.publicNumber >= 1) {
+        return order;
+      }
+      const n = state.nextPublicNumber;
+      state.nextPublicNumber = n + 1;
+      // Re-check after allocate (another writer may have assigned meanwhile via save).
+      const latest = state.orders[index];
+      if (typeof latest.publicNumber === 'number' && latest.publicNumber >= 1) {
+        write(state); // keep counter advance
+        return latest;
+      }
+      latest.publicNumber = n;
+      latest.updatedAt = new Date().toISOString();
+      write(state);
+      return latest;
+    },
     async saveOrder(order) {
       const state = read();
-      const withKey = order as Order & { idempotencyKey?: string };
+      const withKey = order as Order & {
+        idempotencyKey?: string;
+        allowNullPublicNumber?: boolean;
+      };
       const index = state.orders.findIndex((o) => o.id === order.id);
-      if (index >= 0) state.orders[index] = withKey;
-      else state.orders.unshift(withKey);
+      if (index < 0) {
+        if (
+          !withKey.allowNullPublicNumber &&
+          (typeof order.publicNumber !== 'number' || order.publicNumber < 1)
+        ) {
+          throw new Error('Refusing to persist new order without public_number.');
+        }
+        const { allowNullPublicNumber: _, ...stored } = withKey;
+        void _;
+        state.orders.unshift(stored);
+      } else {
+        const existing = state.orders[index];
+        const { allowNullPublicNumber: __, ...rest } = withKey;
+        void __;
+        state.orders[index] = {
+          ...rest,
+          publicNumber:
+            typeof rest.publicNumber === 'number' ? rest.publicNumber : existing.publicNumber,
+        };
+      }
       write(state);
-      return withKey;
+      return state.orders.find((o) => o.id === order.id) ?? withKey;
     },
     async addInternalNote(orderId, note: OrderInternalNote) {
       const order = await this.getOrderById(orderId);

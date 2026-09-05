@@ -56,11 +56,11 @@ export async function getOrderByPaymentId(paymentId: string): Promise<Order | nu
 }
 
 export async function allocatePublicOrderNumber(): Promise<number> {
-  const store = getPersistence();
-  if (!store.allocatePublicOrderNumber) {
-    throw new Error('Public order number allocation is not available on this persistence driver.');
-  }
-  return store.allocatePublicOrderNumber();
+  return getPersistence().allocatePublicOrderNumber();
+}
+
+export async function ensurePublicOrderNumber(orderId: string): Promise<Order> {
+  return getPersistence().ensurePublicOrderNumber(orderId);
 }
 
 export async function saveOrder(order: Order): Promise<Order> {

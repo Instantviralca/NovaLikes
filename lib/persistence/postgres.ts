@@ -2,11 +2,12 @@
  * PostgreSQL persistence via Drizzle — primary production store.
  */
 
-import { and, desc, eq, gte, sql } from 'drizzle-orm';
+import { and, desc, eq, gte, isNull, sql } from 'drizzle-orm';
 
 import { getDb } from '@/lib/db/client';
 import * as tables from '@/lib/db/schema';
 import type { ContactFormValues } from '@/lib/contact/validation';
+import { parseSequenceNextvalResult } from '@/lib/orders/sequence-nextval';
 import {
   createCampaignId,
   createSubscriberId,
@@ -215,13 +216,54 @@ export function createPostgresPersistence(): AppPersistence {
       const result = await db.execute(
         sql`SELECT nextval('orders_public_number_seq') AS n`,
       );
-      const rows = result as unknown as Array<{ n: string | number }>;
-      const raw = rows[0]?.n;
-      const n = typeof raw === 'number' ? raw : Number(raw);
-      if (!Number.isInteger(n) || n < 1) {
-        throw new Error('Failed to allocate public order number from sequence.');
+      return parseSequenceNextvalResult(result);
+    },
+    async ensurePublicOrderNumber(orderId) {
+      const db = getDb();
+      await db.transaction(async (tx) => {
+        const [locked] = await tx
+          .select({
+            id: tables.orders.id,
+            publicNumber: tables.orders.publicNumber,
+          })
+          .from(tables.orders)
+          .where(eq(tables.orders.id, orderId))
+          .for('update')
+          .limit(1);
+
+        if (!locked) {
+          throw new Error(`Order not found for public number repair: ${orderId}`);
+        }
+        if (typeof locked.publicNumber === 'number' && locked.publicNumber >= 1) {
+          return;
+        }
+
+        const allocated = parseSequenceNextvalResult(
+          await tx.execute(sql`SELECT nextval('orders_public_number_seq') AS n`),
+        );
+
+        const updated = await tx
+          .update(tables.orders)
+          .set({
+            publicNumber: allocated,
+            updatedAt: new Date(),
+          })
+          .where(and(eq(tables.orders.id, orderId), isNull(tables.orders.publicNumber)))
+          .returning({ id: tables.orders.id, publicNumber: tables.orders.publicNumber });
+
+        // Another concurrent repair won the conditional update — keep their number.
+        // Our nextval was consumed (non-transactional) but the order keeps a single public_number.
+        if (updated.length === 0) {
+          return;
+        }
+      });
+
+      const order = await hydrateOrder(orderId);
+      if (!order) throw new Error(`Order not found after public number repair: ${orderId}`);
+      if (typeof order.publicNumber !== 'number' || order.publicNumber < 1) {
+        throw new Error(`Order public number repair failed for ${orderId}`);
       }
-      return n;
+      return order;
     },
     async saveOrder(order) {
       const db = getDb();
@@ -231,6 +273,19 @@ export function createPostgresPersistence(): AppPersistence {
         typeof order.publicNumber === 'number'
           ? order.publicNumber
           : existing?.publicNumber ?? null;
+
+      // New production orders must never persist without a public_number.
+      // Historical IV-only rows may remain NULL (explicit allowNullPublicNumber for imports/tests).
+      const allowNullPublicNumber = Boolean(
+        (order as Order & { allowNullPublicNumber?: boolean }).allowNullPublicNumber,
+      );
+      if (
+        !existing &&
+        !allowNullPublicNumber &&
+        (typeof publicNumber !== 'number' || publicNumber < 1)
+      ) {
+        throw new Error('Refusing to persist new order without public_number.');
+      }
 
       await db
         .insert(tables.orders)
@@ -366,7 +421,16 @@ export function createPostgresPersistence(): AppPersistence {
         });
       }
 
-      return withKey;
+      const persisted = await hydrateOrder(order.id);
+      if (!persisted) {
+        throw new Error(`Order ${order.id} was not found after save.`);
+      }
+      // Preserve in-memory idempotencyKey for callers that rely on it.
+      return withKey.idempotencyKey
+        ? ({ ...persisted, idempotencyKey: withKey.idempotencyKey } as Order & {
+            idempotencyKey?: string;
+          })
+        : persisted;
     },
     async addInternalNote(orderId, note) {
       const db = getDb();

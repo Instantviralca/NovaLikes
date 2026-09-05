@@ -317,7 +317,11 @@ describe('sequential public order numbers', () => {
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
-    await saveOrder(historical);
+    await saveOrder({
+      ...historical,
+      allowNullPublicNumber: true,
+    } as Order & { allowNullPublicNumber?: boolean });
+
     expect(await resolveOrderByCustomerRef('IV-OLDHIST-0001')).toMatchObject({
       id: 'IV-OLDHIST-0001',
     });

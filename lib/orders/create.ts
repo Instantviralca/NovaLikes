@@ -12,6 +12,7 @@ import type { PaymentProviderId } from '@/types/payment';
 import {
   allocatePublicOrderNumber,
   createOrderId,
+  ensurePublicOrderNumber,
   getOrderByIdempotencyKey,
   saveOrder,
 } from '@/lib/orders/store';
@@ -122,11 +123,40 @@ export async function placeOrder(input: PlaceOrderInput): Promise<Order> {
   const key = (draft as Order & { idempotencyKey?: string }).idempotencyKey;
   if (key) {
     const existing = await getOrderByIdempotencyKey(key);
-    if (existing) return existing;
+    if (existing) {
+      // Repair production rows that were persisted before public_number allocation
+      // (or failed mid-flow) so the same idempotent checkout retry can continue.
+      if (typeof existing.publicNumber === 'number' && existing.publicNumber >= 1) {
+        return existing;
+      }
+      return ensurePublicOrderNumber(existing.id);
+    }
   }
+
   // Allocate only after idempotency miss so retries do not burn sequence values.
   const publicNumber = await allocatePublicOrderNumber();
   const saved = await saveOrder({ ...draft, publicNumber });
+
+  if (typeof saved.publicNumber !== 'number' || saved.publicNumber < 1) {
+    // Never continue checkout with a NULL public number — repair same row.
+    const repaired = await ensurePublicOrderNumber(saved.id);
+    if (typeof repaired.publicNumber !== 'number' || repaired.publicNumber < 1) {
+      throw new Error('Order public number was not allocated.');
+    }
+    try {
+      const { recordOrderCreatedAnalytics } = await import(
+        '@/lib/analytics/native/server-events'
+      );
+      await recordOrderCreatedAnalytics(repaired);
+    } catch (error) {
+      console.error('[orders] analytics order_created failed', {
+        orderId: repaired.id,
+        message: error instanceof Error ? error.message : 'unknown',
+      });
+    }
+    return repaired;
+  }
+
   try {
     const { recordOrderCreatedAnalytics } = await import(
       '@/lib/analytics/native/server-events'

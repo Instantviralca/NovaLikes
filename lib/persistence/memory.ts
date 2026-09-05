@@ -73,12 +73,48 @@ export function createMemoryPersistence(): AppPersistence {
       state.nextPublicNumber += 1;
       return n;
     },
+    async ensurePublicOrderNumber(orderId) {
+      const order = state.orders.find((o) => o.id === orderId);
+      if (!order) throw new Error(`Order not found for public number repair: ${orderId}`);
+      if (typeof order.publicNumber === 'number' && order.publicNumber >= 1) {
+        return order;
+      }
+      const n = await this.allocatePublicOrderNumber();
+      // Concurrent repair may have assigned meanwhile (after await).
+      if (typeof order.publicNumber === 'number' && order.publicNumber >= 1) {
+        return order;
+      }
+      order.publicNumber = n;
+      order.updatedAt = new Date().toISOString();
+      return order;
+    },
     async saveOrder(order) {
-      const withKey = order as Order & { idempotencyKey?: string };
+      const withKey = order as Order & {
+        idempotencyKey?: string;
+        allowNullPublicNumber?: boolean;
+      };
       const index = state.orders.findIndex((o) => o.id === order.id);
-      if (index >= 0) state.orders[index] = withKey;
-      else state.orders.unshift(withKey);
-      return withKey;
+      if (index < 0) {
+        if (
+          !withKey.allowNullPublicNumber &&
+          (typeof order.publicNumber !== 'number' || order.publicNumber < 1)
+        ) {
+          throw new Error('Refusing to persist new order without public_number.');
+        }
+        const { allowNullPublicNumber: _, ...stored } = withKey;
+        void _;
+        state.orders.unshift(stored);
+      } else {
+        const existing = state.orders[index];
+        const { allowNullPublicNumber: __, ...rest } = withKey;
+        void __;
+        state.orders[index] = {
+          ...rest,
+          publicNumber:
+            typeof rest.publicNumber === 'number' ? rest.publicNumber : existing.publicNumber,
+        };
+      }
+      return state.orders.find((o) => o.id === order.id) ?? withKey;
     },
     async addInternalNote(orderId, note) {
       const order = await this.getOrderById(orderId);
