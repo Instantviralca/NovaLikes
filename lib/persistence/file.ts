@@ -162,10 +162,16 @@ export function createFilePersistence(): AppPersistence {
         const existing = state.orders[index];
         const { allowNullPublicNumber: __, ...rest } = withKey;
         void __;
+        // Never reassign an already-allocated public_number on update.
+        const lockedPublicNumber =
+          typeof existing.publicNumber === 'number' && existing.publicNumber >= 1
+            ? existing.publicNumber
+            : typeof rest.publicNumber === 'number'
+              ? rest.publicNumber
+              : existing.publicNumber;
         state.orders[index] = {
           ...rest,
-          publicNumber:
-            typeof rest.publicNumber === 'number' ? rest.publicNumber : existing.publicNumber,
+          publicNumber: lockedPublicNumber,
         };
       }
       write(state);

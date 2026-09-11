@@ -33,8 +33,15 @@ export type OrderLineItem = {
   serviceName: string;
   packageId: string;
   packageTitle: string;
+  /** Package size (e.g. 1000 followers) — not cart purchase count. */
   quantity: number;
+  /** Package size label (e.g. "1,000 Followers"). */
   quantityLabel: string;
+  /**
+   * How many times this cart line is purchased.
+   * Defaults to 1 when missing (legacy orders). Distinct from `quantity`.
+   */
+  lineQuantity?: number;
   unitPrice: number;
   currency: CurrencyCode;
   /** Username, URL, and other fulfillment inputs from order configuration. */
@@ -109,9 +116,18 @@ export type ManualOrderReviewSummary = {
   platformId: PlatformId;
   serviceName: string;
   packageTitle: string;
+  /** Package size of first line (legacy). Prefer `lines`. */
   quantity: number;
-  /** Primary username or URL from configuration. */
+  /** Primary username or URL from configuration (first line). */
   target: string;
+  itemCount: number;
+  lines: Array<{
+    serviceName: string;
+    packageTitle: string;
+    quantityLabel: string;
+    lineQuantity: number;
+    target: string;
+  }>;
   paymentStatus?: PaymentStatus;
   orderStatus: OrderStatus;
   customerNotes?: string;

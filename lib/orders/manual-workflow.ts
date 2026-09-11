@@ -4,6 +4,8 @@
  */
 
 import { placeOrder } from '@/lib/orders/create';
+import { formatMultiItemServiceSummary } from '@/lib/orders/line-display';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import { getOrderById, saveOrder } from '@/lib/orders/store';
 import { notifyOrderStatusChange } from '@/lib/notifications/order-hooks';
 import type { CartItem } from '@/types/cart';
@@ -198,20 +200,33 @@ export const manualOrderWorkflow: ManualOrderWorkflow = {
   },
   async getReviewSummary(orderId) {
     const order = await requireOrder(orderId);
-    const item = order.items[0];
-    const target =
-      item?.configuration.username ??
-      item?.configuration.targetUrl ??
-      item?.configuration.url ??
-      '';
+    const lines = (order.items ?? []).map((item) => ({
+      serviceName: item.serviceName,
+      packageTitle: item.packageTitle,
+      quantityLabel: item.quantityLabel,
+      lineQuantity: normalizeLineQuantity(item.lineQuantity),
+      target: String(
+        item.configuration?.username ??
+          item.configuration?.targetUrl ??
+          item.configuration?.url ??
+          item.configuration?.profileUrl ??
+          item.configuration?.videoUrl ??
+          item.configuration?.channelUrl ??
+          '',
+      ),
+    }));
+    const first = order.items[0];
     return {
       orderId: order.id,
       guestEmail: order.guestEmail,
-      platformId: item?.platformId ?? 'instagram',
-      serviceName: item?.serviceName ?? 'Service',
-      packageTitle: item?.packageTitle ?? 'Package',
-      quantity: item?.quantity ?? 0,
-      target: String(target),
+      platformId: first?.platformId ?? 'instagram',
+      serviceName: formatMultiItemServiceSummary(order),
+      packageTitle:
+        lines.length > 1 ? `${lines.length} items` : (first?.packageTitle ?? 'Package'),
+      quantity: first?.quantity ?? 0,
+      target: lines[0]?.target ?? '',
+      itemCount: lines.length,
+      lines,
       paymentStatus: order.payment?.status,
       orderStatus: order.status,
       customerNotes: order.customerNotes,

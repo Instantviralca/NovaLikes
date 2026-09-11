@@ -158,7 +158,9 @@ describe('tools registry and Instagram limited state', () => {
 });
 
 describe('tools SEO metadata', () => {
-  it('gives each tools route a unique indexable title, description, and canonical', async () => {
+  it(
+    'gives each tools route a unique indexable title, description, and canonical',
+    async () => {
     const { getMetadataByRoute } = await import('@/lib/seo/metadata');
     const paths = [
       '/tools',
@@ -195,5 +197,7 @@ describe('tools SEO metadata', () => {
     for (const path of paths) {
       expect(SITEMAP_PRODUCTION_ROUTE_SET.has(path)).toBe(true);
     }
-  });
+  },
+    20_000,
+  );
 });

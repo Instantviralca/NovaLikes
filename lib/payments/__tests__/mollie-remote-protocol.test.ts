@@ -45,6 +45,7 @@ describe('mollie remote protocol', () => {
     expect(body.integration_mode).toBe('components_v1');
     expect(body.card_token).toBe('tkn_testtoken');
     expect(body.product_name).toBe('Cubes');
+    expect(body.merchant_order_number).toBeUndefined();
 
     const itemsJson = body.items_json;
     const expectedPayload = buildMollieSignaturePayload({
@@ -62,6 +63,26 @@ describe('mollie remote protocol', () => {
     });
     expect(body.signature).toBe(signMolliePayload(expectedPayload, 'abcdefghijklmnop'));
     expect(createHash('sha256').update(itemsJson).digest('hex')).toHaveLength(64);
+  });
+
+  it('uses numeric collector order_id without merchant_order_number protocol extension', () => {
+    const body = buildMollieCreateBody({
+      callbackUrl: 'https://novalikes.com/api/webhooks/remote-payment',
+      returnUrl: 'https://novalikes.com/order-success',
+      cancelUrl: 'https://novalikes.com/checkout',
+      orderId: '1001',
+      amountMajor: '9.99',
+      currency: 'USD',
+      productName: 'Cubes',
+      items: [{ product_id: 'pkg', name: 'Followers', qty: 1, line_total: '9.99' }],
+      cardToken: 'tkn_testtoken',
+      sharedSecret: 'abcdefghijklmnop',
+      requestTs: 1700000000,
+      requestNonce: 'nonce123',
+    });
+    expect(body.order_id).toBe('1001');
+    expect(body.merchant_order_number).toBeUndefined();
+    expect(Object.keys(body)).not.toContain('merchant_order_number');
   });
 
   it('verifies callback signatures and timestamp window', () => {

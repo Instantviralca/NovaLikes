@@ -12,7 +12,12 @@ export const MOLLIE_INTEGRATION_MODE = 'components_v1';
 export type MollieRemoteLineItem = {
   product_id: string | number;
   name: string;
+  /** Purchase quantity (Woo get_quantity / storefront lineQuantity). */
   qty: number;
+  /**
+   * Full line amount in major units (Woo get_total), not unit price.
+   * May sum above charged `amount` when an order-level coupon applies.
+   */
   line_total: string;
 };
 
@@ -20,6 +25,7 @@ export type MollieCreatePayload = {
   callbackUrl: string;
   returnUrl: string;
   cancelUrl: string;
+  /** Digits-only public order number string for the collector (e.g. "1001"). */
   orderId: string;
   amountMajor: string;
   currency: string;

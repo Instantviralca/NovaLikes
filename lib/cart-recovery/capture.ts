@@ -14,6 +14,7 @@ import {
   deriveUnsubscribeToken,
   hashCartRecoveryToken,
 } from '@/lib/cart-recovery/tokens';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import type { CartRecoveryCaptureInput, CartRecoverySession } from '@/types/cart-recovery';
 
 function isValidEmail(email: string): boolean {
@@ -38,6 +39,7 @@ function toSnapshot(input: CartRecoveryCaptureInput): CartRecoverySession['cartS
       packageTitle: item.packageTitle,
       quantity: item.quantity,
       quantityLabel: item.quantityLabel,
+      lineQuantity: normalizeLineQuantity(item.lineQuantity),
       unitPrice: item.unitPrice,
       currency: item.currency,
       deliveryTime: item.deliveryTime,

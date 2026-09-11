@@ -81,6 +81,10 @@ export async function recordOrderCreatedAnalytics(order: Order): Promise<void> {
       amountMinor: order.total.amount,
       currency: order.total.currency,
       itemCount: order.items.length,
+      purchaseUnitCount: order.items.reduce(
+        (sum, item) => sum + (typeof item.lineQuantity === 'number' ? item.lineQuantity : 1),
+        0,
+      ),
     },
   });
 }
@@ -92,6 +96,10 @@ export async function recordPaymentPaidAnalytics(order: Order): Promise<void> {
     amountMinor: order.total.amount,
     currency: order.total.currency,
     itemCount: order.items.length,
+    purchaseUnitCount: order.items.reduce(
+      (sum, item) => sum + (typeof item.lineQuantity === 'number' ? item.lineQuantity : 1),
+      0,
+    ),
   };
   await recordServerAnalyticsEvent({
     id: `analytics:payment_paid:${order.id}`,

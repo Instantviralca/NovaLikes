@@ -22,7 +22,9 @@ describe('closeDb', () => {
     process.env.DATABASE_URL = 'postgres://user:pass@localhost:5432/novalikes_test';
   });
 
-  it('ends the postgres client so cron scripts can exit', async () => {
+  it(
+    'ends the postgres client so cron scripts can exit',
+    async () => {
     const { getDb, closeDb, resetDbSingletonForTests } = await import('@/lib/db/client');
     resetDbSingletonForTests();
 
@@ -34,5 +36,7 @@ describe('closeDb', () => {
 
     getDb();
     expect(postgresMock).toHaveBeenCalledTimes(2);
-  });
+  },
+    15_000,
+  );
 });

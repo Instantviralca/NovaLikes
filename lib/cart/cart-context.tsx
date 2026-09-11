@@ -23,12 +23,15 @@ import {
 import {
   calculateCartTotals,
   CART_STORAGE_KEY,
+  cartLinesMatch,
   createCartItemId,
   createEmptyCart,
   filterOfferedCartItems,
+  getCartLineQuantity,
   isOfferedCartItem,
   serializeCart,
 } from '@/lib/cart/utils';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import type { AppliedCoupon, CartActions, CartItem, CartState, CartTotals } from '@/types/cart';
 
 type CartContextValue = CartState &
@@ -117,24 +120,80 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const addItem = useCallback((item: Omit<CartItem, 'id' | 'addedAt'>) => {
     if (!isOfferedCartItem(item)) return;
-    setState((prev) => ({
-      ...prev,
-      items: [
-        ...prev.items,
-        {
-          ...item,
-          id: createCartItemId(),
-          addedAt: new Date().toISOString(),
-        },
-      ],
-      updatedAt: new Date().toISOString(),
-    }));
+    const incomingLineQuantity = normalizeLineQuantity(item.lineQuantity);
+    setState((prev) => {
+      const matchIndex = prev.items.findIndex((existing) => cartLinesMatch(existing, item));
+      if (matchIndex >= 0) {
+        const items = prev.items.map((existing, index) => {
+          if (index !== matchIndex) return existing;
+          return {
+            ...existing,
+            lineQuantity: getCartLineQuantity(existing) + incomingLineQuantity,
+          };
+        });
+        return {
+          ...prev,
+          items,
+          updatedAt: new Date().toISOString(),
+        };
+      }
+      return {
+        ...prev,
+        items: [
+          ...prev.items,
+          {
+            ...item,
+            lineQuantity: incomingLineQuantity,
+            id: createCartItemId(),
+            addedAt: new Date().toISOString(),
+          },
+        ],
+        updatedAt: new Date().toISOString(),
+      };
+    });
   }, []);
 
   const removeItem = useCallback((itemId: string) => {
     setState((prev) => ({
       ...prev,
       items: prev.items.filter((item) => item.id !== itemId),
+      updatedAt: new Date().toISOString(),
+    }));
+  }, []);
+
+  const setLineQuantity = useCallback((itemId: string, lineQuantity: number) => {
+    const next = normalizeLineQuantity(lineQuantity);
+    setState((prev) => ({
+      ...prev,
+      items: prev.items.map((item) =>
+        item.id === itemId ? { ...item, lineQuantity: next } : item,
+      ),
+      updatedAt: new Date().toISOString(),
+    }));
+  }, []);
+
+  const incrementLineQuantity = useCallback((itemId: string) => {
+    setState((prev) => ({
+      ...prev,
+      items: prev.items.map((item) =>
+        item.id === itemId
+          ? { ...item, lineQuantity: getCartLineQuantity(item) + 1 }
+          : item,
+      ),
+      updatedAt: new Date().toISOString(),
+    }));
+  }, []);
+
+  const decrementLineQuantity = useCallback((itemId: string) => {
+    setState((prev) => ({
+      ...prev,
+      items: prev.items
+        .map((item) => {
+          if (item.id !== itemId) return item;
+          const next = getCartLineQuantity(item) - 1;
+          return next < 1 ? item : { ...item, lineQuantity: next };
+        })
+        .filter((item) => getCartLineQuantity(item) >= 1),
       updatedAt: new Date().toISOString(),
     }));
   }, []);
@@ -189,6 +248,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       isBootstrapping,
       addItem,
       removeItem,
+      setLineQuantity,
+      incrementLineQuantity,
+      decrementLineQuantity,
       updateItemConfiguration,
       applyCoupon,
       removeCoupon,
@@ -201,6 +263,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       isBootstrapping,
       addItem,
       removeItem,
+      setLineQuantity,
+      incrementLineQuantity,
+      decrementLineQuantity,
       updateItemConfiguration,
       applyCoupon,
       removeCoupon,

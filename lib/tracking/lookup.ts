@@ -1,5 +1,10 @@
 import { getCustomerStatusMessage, getAdminStatusLabel, ORDER_STATUSES } from '@/lib/orders/status';
+import {
+  formatMultiItemServiceSummary,
+  getOrderLineViews,
+} from '@/lib/orders/line-display';
 import { getCustomerOrderId } from '@/lib/orders/public-number';
+import { formatMoney } from '@/lib/pricing/format';
 import type { Order } from '@/types/order';
 import type { OrderStatus } from '@/types/order-status';
 import type {
@@ -39,13 +44,6 @@ export function maskTarget(raw: string): string {
   }
   if (value.length <= 3) return '***';
   return `${value.slice(0, 2)}***${value.slice(-1)}`;
-}
-
-function extractTarget(order: Order): string {
-  const config = order.items[0]?.configuration ?? {};
-  const preferred =
-    config.username ?? config.targetUrl ?? config.url ?? Object.values(config)[0];
-  return preferred === undefined ? '' : String(preferred);
 }
 
 const MILESTONE_ORDER: Array<{ status: OrderStatus; label: string }> = [
@@ -96,19 +94,33 @@ export function buildPublicTimeline(
 }
 
 export function toPublicTrackedOrder(order: Order): PublicTrackedOrder {
-  const item = order.items[0];
+  const lines = getOrderLineViews(order);
+  const first = lines[0];
+  const items = lines.map((line) => ({
+    serviceName: line.serviceName,
+    packageTitle: line.packageTitle,
+    quantityLabel: line.quantityLabel,
+    lineQuantity: line.lineQuantity,
+    targetDisplay: maskTarget(line.targetDisplay),
+    lineTotalDisplay: line.lineTotalDisplay,
+  }));
+
   return {
     orderId: getCustomerOrderId(order),
     status: order.status,
     statusLabel: getAdminStatusLabel(order.status),
     statusMessage: getCustomerStatusMessage(order.status),
-    serviceName: item?.serviceName ?? 'Service',
-    packageTitle: item?.packageTitle ?? 'Package',
-    quantityLabel: item?.quantityLabel ?? String(item?.quantity ?? ''),
-    targetDisplay: maskTarget(extractTarget(order)),
+    serviceName: formatMultiItemServiceSummary(order),
+    packageTitle:
+      lines.length > 1 ? `${lines.length} items` : (first?.packageTitle ?? 'Package'),
+    quantityLabel: first?.quantityLabel ?? '',
+    targetDisplay: first ? maskTarget(first.targetDisplay) : '—',
+    items,
+    itemCount: items.length,
+    orderTotalDisplay: formatMoney(order.total.amount, order.total.currency),
     createdAt: order.createdAt,
     updatedAt: order.updatedAt,
-    estimatedDelivery: item?.deliveryTime || undefined,
+    estimatedDelivery: first?.deliveryTime || undefined,
     timeline: buildPublicTimeline(order.status, order.updatedAt),
   };
 }

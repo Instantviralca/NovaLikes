@@ -40,7 +40,7 @@ export async function resolveOrderByCustomerRef(ref: string): Promise<Order | nu
     if (byPublic) return byPublic;
   }
 
-  if (isLegacyInternalOrderId(trimmed) || !publicNumber) {
+  if (isLegacyInternalOrderId(trimmed) || publicNumber === null) {
     return getOrderById(trimmed);
   }
 

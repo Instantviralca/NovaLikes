@@ -156,6 +156,7 @@ export function PackageOrderDialog({
       packageTitle: selectedPackage.title,
       quantity: selectedPackage.quantity,
       quantityLabel: selectedPackage.quantityLabel,
+      lineQuantity: 1,
       unitPrice: selectedPackage.price,
       currency: selectedPackage.currency,
       deliveryTime: selectedPackage.deliveryTime,

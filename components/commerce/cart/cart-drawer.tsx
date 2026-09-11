@@ -40,7 +40,12 @@ export function CartDrawer() {
           ) : cart.items.length === 0 ? (
             <EmptyCart />
           ) : (
-            <CartList items={cart.items} onRemove={cart.removeItem} />
+            <CartList
+              items={cart.items}
+              onRemove={cart.removeItem}
+              onIncrement={cart.incrementLineQuantity}
+              onDecrement={cart.decrementLineQuantity}
+            />
           )}
         </div>
 

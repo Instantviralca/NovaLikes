@@ -2,9 +2,18 @@
  * Mollie Remote Payment provider — client protocol matching
  * WooCommerce Mollie Remote Payment Client v2.5.
  * Stripe remains disabled in config/payments.ts.
+ *
+ * Collector items_json contract (Woo client source):
+ * - qty = purchase quantity (CartItem.lineQuantity; default 1)
+ * - line_total = full line amount = unitPrice × lineQuantity (WC get_total())
+ * Charged `amount` remains authoritative order.total (may be less after coupon).
  */
 
 import { getSiteUrlPath } from '@/lib/config/hosts';
+import {
+  computeLineTotal,
+  normalizeLineQuantity,
+} from '@/lib/orders/line-quantity';
 import {
   assertNoMollieTestModeInProduction,
   buildMollieCreateBody,
@@ -19,6 +28,7 @@ import {
   getRemotePaymentProductName,
   getRemotePaymentSharedSecret,
 } from '@/lib/settings/site-settings';
+import type { CartItem } from '@/types/cart';
 import type {
   CancelPaymentInput,
   CreatePaymentInput,
@@ -28,25 +38,43 @@ import type {
   VerifyPaymentResult,
 } from '@/types/payment';
 
-function buildItems(input: CreatePaymentInput): MollieRemoteLineItem[] {
-  const payloadItems = input.payload?.items;
-  if (payloadItems && payloadItems.length > 0) {
-    return payloadItems.map((item) => ({
-      product_id: item.packageId || item.serviceId,
-      name: item.packageTitle || item.serviceName,
-      qty: 1,
-      line_total: formatMajorAmount(item.unitPrice),
-    }));
+/**
+ * Map cart/order lines to collector items_json rows.
+ * qty = purchase multiplier; line_total = full line major-unit amount.
+ */
+export function buildRemotePaymentItems(
+  items: CartItem[] | undefined,
+  fallback: { orderId: string; amountMinor: number; description?: string },
+): MollieRemoteLineItem[] {
+  if (items && items.length > 0) {
+    return items.map((item) => {
+      const lineQuantity = normalizeLineQuantity(item.lineQuantity);
+      const lineTotalMinor = computeLineTotal(item.unitPrice, lineQuantity);
+      return {
+        product_id: item.packageId || item.serviceId,
+        name: item.packageTitle || item.serviceName,
+        qty: lineQuantity,
+        line_total: formatMajorAmount(lineTotalMinor),
+      };
+    });
   }
 
   return [
     {
-      product_id: input.orderId,
-      name: input.description ?? `Order ${input.orderId}`,
+      product_id: fallback.orderId,
+      name: fallback.description ?? `Order ${fallback.orderId}`,
       qty: 1,
-      line_total: formatMajorAmount(input.amount.amount),
+      line_total: formatMajorAmount(fallback.amountMinor),
     },
   ];
+}
+
+function buildItems(input: CreatePaymentInput): MollieRemoteLineItem[] {
+  return buildRemotePaymentItems(input.payload?.items, {
+    orderId: input.orderId,
+    amountMinor: input.amount.amount,
+    description: input.description,
+  });
 }
 
 export const remotePaymentProvider: PaymentProvider = {

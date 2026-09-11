@@ -1,15 +1,27 @@
 import { formatMoney } from '@/lib/pricing/format';
 import { getAllServices } from '@/data/services';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
+import {
+  formatItemCountLabel,
+  formatMultiItemServiceSummary,
+  getOrderLineViews,
+  resolveLineTarget,
+  sumPurchaseUnits,
+} from '@/lib/orders/line-display';
+import {
+  isReservedConfigurationKey,
+  normalizeLineQuantity,
+} from '@/lib/orders/line-quantity';
 import { getCustomerOrderId } from '@/lib/orders/public-number';
-import { listOrders, getOrderById } from '@/lib/orders/store';
+import { listOrders, getOrderById, resolveOrderByCustomerRef } from '@/lib/orders/store';
 import { isEligibleForFulfilmentQueue } from '@/lib/payments/mark-paid';
 import type {
   AdminOrderDetails,
   AdminOrderFulfillmentField,
+  AdminOrderLineView,
   AdminOrderRow,
 } from '@/types/admin-orders';
-import type { Order, OrderLineItem } from '@/types/order';
+import type { Order } from '@/types/order';
 import type { OrderConfigurationValues } from '@/types/order-fields';
 import type { PlatformId } from '@/types/platform';
 import type { CurrencyCode } from '@/types/pricing';
@@ -31,19 +43,6 @@ const FIELD_LABELS: Record<string, string> = {
   customComments: 'Custom comments',
 };
 
-function resolveTarget(configuration: OrderConfigurationValues | undefined): string {
-  if (!configuration) return '';
-  const value =
-    configuration.username ??
-    configuration.targetUrl ??
-    configuration.url ??
-    configuration.profileUrl ??
-    configuration.videoUrl ??
-    configuration.channelUrl ??
-    '';
-  return typeof value === 'string' ? value.trim() : String(value ?? '');
-}
-
 function buildFulfillmentFields(
   configuration: OrderConfigurationValues | undefined,
 ): AdminOrderFulfillmentField[] {
@@ -62,6 +61,7 @@ function buildFulfillmentFields(
   const fields: AdminOrderFulfillmentField[] = [];
 
   for (const key of preferredOrder) {
+    if (isReservedConfigurationKey(key)) continue;
     const raw = configuration[key];
     if (raw == null || raw === '') continue;
     const value = String(raw).trim();
@@ -75,7 +75,7 @@ function buildFulfillmentFields(
   }
 
   for (const [key, raw] of Object.entries(configuration)) {
-    if (seen.has(key) || raw == null || raw === '') continue;
+    if (seen.has(key) || isReservedConfigurationKey(key) || raw == null || raw === '') continue;
     const value = String(raw).trim();
     if (!value) continue;
     fields.push({
@@ -88,26 +88,51 @@ function buildFulfillmentFields(
   return fields;
 }
 
+function toAdminLines(order: Order): AdminOrderLineView[] {
+  return getOrderLineViews(order).map((line) => ({
+    id: line.id,
+    platformId: line.platformId as PlatformId,
+    serviceName: line.serviceName,
+    packageTitle: line.packageTitle,
+    quantityLabel: line.quantityLabel,
+    packageQuantity: line.quantity,
+    lineQuantity: line.lineQuantity,
+    unitPriceDisplay: line.unitPriceDisplay,
+    lineTotalDisplay: line.lineTotalDisplay,
+    targetDisplay: line.targetDisplay || '—',
+    configuration: line.configuration,
+    fulfillmentFields: buildFulfillmentFields(line.configuration),
+    deliveryTime: line.deliveryTime,
+  }));
+}
+
 function toRow(order: Order): AdminOrderRow {
-  const item = order.items[0] as OrderLineItem | undefined;
-  const configuration = (item?.configuration ?? {}) as OrderConfigurationValues;
+  const lines = toAdminLines(order);
+  const first = lines[0];
+  const isMultiItem = lines.length > 1;
+  const currency = order.total.currency as CurrencyCode;
+
   return {
     id: order.id,
     publicOrderId: getCustomerOrderId(order),
     customerEmail: order.guestEmail,
-    platformId: (item?.platformId ?? 'instagram') as PlatformId,
-    serviceName: item?.serviceName ?? 'Service',
-    packageTitle: item?.packageTitle ?? 'Package',
-    quantity: item?.quantity ?? 0,
-    quantityLabel: item?.quantityLabel ?? String(item?.quantity ?? 0),
-    totalDisplay: formatMoney(
-      order.total.amount,
-      order.total.currency as CurrencyCode,
-      'en',
-    ),
+    platformId: (first?.platformId ?? 'instagram') as PlatformId,
+    serviceName: formatMultiItemServiceSummary(order),
+    packageTitle: isMultiItem
+      ? formatItemCountLabel(order)
+      : (first?.packageTitle ?? 'Package'),
+    quantity: first?.packageQuantity ?? 0,
+    quantityLabel: isMultiItem
+      ? formatItemCountLabel(order)
+      : (first?.quantityLabel ?? '—'),
+    itemCount: lines.length,
+    itemCountLabel: formatItemCountLabel(order),
+    purchaseUnitCount: sumPurchaseUnits(order),
+    isMultiItem,
+    totalDisplay: formatMoney(order.total.amount, currency, 'en'),
     paymentStatus: order.payment?.status ?? 'pending',
     orderStatus: order.status,
-    targetDisplay: resolveTarget(configuration) || '—',
+    targetDisplay: first?.targetDisplay || '—',
     createdAt: order.createdAt,
     updatedAt: order.updatedAt,
   };
@@ -124,18 +149,23 @@ export async function getAdminOrderRows(options?: {
 }
 
 export async function getAdminOrderById(orderId: string): Promise<AdminOrderDetails | null> {
-  const order = await getOrderById(orderId);
+  const order =
+    (await resolveOrderByCustomerRef(orderId)) ?? (await getOrderById(orderId));
   if (!order) return null;
-  const item = order.items[0];
-  const configuration = (item?.configuration ?? {}) as OrderConfigurationValues;
+  const lines = toAdminLines(order);
+  const first = lines[0];
+  const currency = order.total.currency as CurrencyCode;
   return {
     ...toRow(order),
     timeline: order.timeline,
     internalNotes: order.internalNotes,
     paymentMethod: order.payment?.provider,
     customerNotes: order.customerNotes,
-    configuration,
-    fulfillmentFields: buildFulfillmentFields(configuration),
+    subtotalDisplay: formatMoney(order.subtotal.amount, currency, 'en'),
+    discountDisplay: formatMoney(order.discount.amount, currency, 'en'),
+    lines,
+    configuration: first?.configuration ?? {},
+    fulfillmentFields: first?.fulfillmentFields ?? [],
   };
 }
 
@@ -148,3 +178,5 @@ export function getAdminOrderServiceOptions() {
     packageCount: getActivePackagesByServiceSlug(s.slug).length,
   }));
 }
+
+export { normalizeLineQuantity, resolveLineTarget };

@@ -25,15 +25,18 @@ import type { Order } from '@/types/order';
 export const runtime = 'nodejs';
 
 async function resolveOrderFromMollieCallback(orderIdField: string): Promise<Order | null> {
+  // Payment id at create time: remote_{publicNumber digits}.
   const byPayment = await getOrderByPaymentId(`remote_${orderIdField}`);
   if (byPayment) return byPayment;
 
+  // Primary collector contract: numeric public_number string ("1001").
   const publicNumber = parsePublicOrderNumber(orderIdField);
   if (publicNumber !== null) {
     const byPublic = await getOrderByPublicNumber(publicNumber);
     if (byPublic) return byPublic;
   }
 
+  // Fallback for any legacy internal-id callbacks.
   return getOrderById(orderIdField);
 }
 

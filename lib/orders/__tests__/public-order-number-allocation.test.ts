@@ -67,8 +67,8 @@ afterEach(() => {
   clearPersistenceSingletonForTests();
 });
 
-describe('public order number allocation (production fix)', () => {
-  it('1-5: fresh order allocates, persists, returns publicNumber, display + Mollie', async () => {
+describe('public order number allocation (production)', () => {
+  it('1-5: fresh order allocates 1001, displays 01001, Mollie "1001"', async () => {
     const order = await createOrder('fresh@example.com');
     expect(order.publicNumber).toBe(1001);
     expect((await getOrderById(order.id))?.publicNumber).toBe(1001);
@@ -91,6 +91,7 @@ describe('public order number allocation (production fix)', () => {
       requestNonce: 'nonce12345678',
     });
     expect(body.order_id).toBe('1001');
+    expect(body.merchant_order_number).toBeUndefined();
   });
 
   it('6: second distinct order gets 01002', async () => {
@@ -164,7 +165,6 @@ describe('public order number allocation (production fix)', () => {
 
   it('8b: repair of pre-sequence NULL order gets 1001 when counter still at start', async () => {
     const key = 'pre-seq-null';
-    // Insert historical-style NULL row without consuming sequence.
     const orphan: Order = {
       id: 'IV-MTOJP6Z3-U5OI',
       publicNumber: null,
@@ -344,6 +344,7 @@ describe('public order number allocation (production fix)', () => {
     });
     expect(body.signature).toMatch(/^[a-f0-9]{64}$/);
     expect(body.order_id).toBe('1001');
+    expect(body.merchant_order_number).toBeUndefined();
     expect(getEnabledPaymentProviders().some((p) => p.id === 'stripe')).toBe(false);
   });
 

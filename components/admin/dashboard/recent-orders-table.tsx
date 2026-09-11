@@ -28,7 +28,12 @@ export function RecentOrdersTable({ orders, loading }: RecentOrdersTableProps) {
             { id: 'id', header: 'Order ID', cell: (row) => row.publicOrderId },
             { id: 'customer', header: 'Customer', cell: (row) => row.customer },
             { id: 'service', header: 'Service', cell: (row) => row.service },
-            { id: 'package', header: 'Package', cell: (row) => row.packageTitle },
+            {
+              id: 'package',
+              header: 'Package',
+              cell: (row) =>
+                row.isMultiItem ? row.itemCountLabel ?? row.packageTitle : row.packageTitle,
+            },
             { id: 'status', header: 'Status', cell: (row) => row.status },
             { id: 'total', header: 'Total', cell: (row) => row.total },
             { id: 'created', header: 'Created', cell: (row) => row.createdAt },

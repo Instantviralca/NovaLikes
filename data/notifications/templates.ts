@@ -3,37 +3,69 @@ import type {
   NotificationTemplateId,
   NotificationTrigger,
 } from '@/types/notification';
+import {
+  getTransactionalSiteUrl,
+  renderTransactionalEmailShell,
+} from '@/lib/notifications/email-shell';
 
 /**
  * Data-driven email templates — Document 11.04.
- * Customer-specific values come from NotificationTemplateVariableMap at send time.
+ * Customer-facing order reference prefers 01001 via {{orderId}}.
+ * order_created must NOT claim payment confirmed or that processing has started.
  */
+
+function customerShell(title: string, bodyHtml: string, preheader: string): string {
+  return renderTransactionalEmailShell({
+    title,
+    companyName: '{{companyName}}',
+    supportEmail: '{{supportEmail}}',
+    siteUrl: '{{siteUrl}}',
+    preheader,
+    bodyHtml,
+  });
+}
+
+const trackCtaHtml = `<p style="margin:18px 0 8px;">
+      <a href="{{trackingUrl}}" style="display:inline-block;background:#0f172a;color:#ffffff;text-decoration:none;padding:10px 16px;border-radius:8px;font-weight:600;">Track your order</a>
+    </p>`;
+
+const itemsBlock = `{{itemsHtml}}
+    {{detailsHtml}}`;
 
 export const NOTIFICATION_TEMPLATES: NotificationTemplateDefinition[] = [
   {
     id: 'order_confirmation',
     channel: 'email',
     trigger: 'order_created',
-    subject: 'Order confirmation — {{orderId}}',
-    bodyHtml: defaultHtml(
-      'Order confirmation',
-      'We received your order <strong>{{orderId}}</strong> for {{serviceName}}.',
+    subject: 'Order received — {{orderId}}',
+    bodyHtml: customerShell(
+      'We received your order',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">Thanks for your order. We’ve received order <strong>{{orderId}}</strong>. Your payment is currently pending. We’ll email you again as soon as payment is confirmed.</p>
+    ${itemsBlock}
+    <p style="margin:0 0 14px;">We’ll begin processing your order once payment is confirmed.</p>
+    ${trackCtaHtml}`,
+      'We received your order. Payment is pending.',
     ),
     bodyText:
-      'Order confirmation\n\nHi {{customerName}},\nWe received your order {{orderId}} for {{serviceName}}.\nStatus: {{statusLabel}}\n{{statusMessage}}\nTrack: {{trackingUrl}}\nSupport: {{supportEmail}}',
+      'We received your order\n\n{{greetingLine}}\n\nThanks for your order. We’ve received order {{orderId}}. Your payment is currently pending. We’ll email you again as soon as payment is confirmed.\n\n{{itemsText}}\n\n{{detailsText}}\n\nWe’ll begin processing your order once payment is confirmed.\n\nTrack your order: {{trackingUrl}}',
     active: true,
   },
   {
     id: 'processing_update',
     channel: 'email',
     trigger: 'processing_started',
-    subject: 'Your order is processing — {{orderId}}',
-    bodyHtml: defaultHtml(
+    subject: 'Your order is being processed — {{orderId}}',
+    bodyHtml: customerShell(
       'Order processing',
-      'Your order <strong>{{orderId}}</strong> is now being processed.',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">We’ve started processing order <strong>{{orderId}}</strong>. You can check the latest status at any time using the button below.</p>
+    ${itemsBlock}
+    ${trackCtaHtml}`,
+      'Your order is being processed.',
     ),
     bodyText:
-      'Order processing\n\nHi {{customerName}},\nYour order {{orderId}} is now being processed.\nTrack: {{trackingUrl}}\nSupport: {{supportEmail}}',
+      'Order processing\n\n{{greetingLine}}\n\nWe’ve started processing order {{orderId}}. You can check the latest status at any time using the link below.\n\n{{itemsText}}\n\n{{detailsText}}\n\nTrack your order: {{trackingUrl}}',
     active: true,
   },
   {
@@ -41,12 +73,16 @@ export const NOTIFICATION_TEMPLATES: NotificationTemplateDefinition[] = [
     channel: 'email',
     trigger: 'order_completed',
     subject: 'Order completed — {{orderId}}',
-    bodyHtml: defaultHtml(
+    bodyHtml: customerShell(
       'Order completed',
-      'Your order <strong>{{orderId}}</strong> has been completed successfully.',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">Order <strong>{{orderId}}</strong> has been completed. Thank you for choosing NovaLikes.</p>
+    ${itemsBlock}
+    ${trackCtaHtml}`,
+      'Your order is complete.',
     ),
     bodyText:
-      'Order completed\n\nHi {{customerName}},\nYour order {{orderId}} has been completed.\nTrack: {{trackingUrl}}\nSupport: {{supportEmail}}',
+      'Order completed\n\n{{greetingLine}}\n\nOrder {{orderId}} has been completed. Thank you for choosing NovaLikes.\n\n{{itemsText}}\n\n{{detailsText}}\n\nTrack your order: {{trackingUrl}}',
     active: true,
   },
   {
@@ -54,12 +90,16 @@ export const NOTIFICATION_TEMPLATES: NotificationTemplateDefinition[] = [
     channel: 'email',
     trigger: 'order_partial',
     subject: 'Order partially completed — {{orderId}}',
-    bodyHtml: defaultHtml(
+    bodyHtml: customerShell(
       'Partial completion',
-      'Your order <strong>{{orderId}}</strong> was partially completed. Contact support if you have questions.',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">Order <strong>{{orderId}}</strong> has been partially completed. If you need help or have questions about the remaining delivery, please contact our support team.</p>
+    ${itemsBlock}
+    <p style="margin:16px 0 0;font-size:13px;color:#64748b;">{{supportHtml}}</p>`,
+      'Your order was partially completed.',
     ),
     bodyText:
-      'Partial completion\n\nHi {{customerName}},\nYour order {{orderId}} was partially completed.\nTrack: {{trackingUrl}}\nSupport: {{supportEmail}}',
+      'Partial completion\n\n{{greetingLine}}\n\nOrder {{orderId}} has been partially completed. If you need help or have questions about the remaining delivery, please contact our support team.\n\n{{itemsText}}\n\n{{detailsText}}\n\n{{supportText}}',
     active: true,
   },
   {
@@ -67,12 +107,16 @@ export const NOTIFICATION_TEMPLATES: NotificationTemplateDefinition[] = [
     channel: 'email',
     trigger: 'order_cancelled',
     subject: 'Order cancelled — {{orderId}}',
-    bodyHtml: defaultHtml(
+    bodyHtml: customerShell(
       'Order cancelled',
-      'Your order <strong>{{orderId}}</strong> has been cancelled.',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">Order <strong>{{orderId}}</strong> has been cancelled. If you believe this was unexpected or need assistance, please contact our support team.</p>
+    ${itemsBlock}
+    <p style="margin:16px 0 0;font-size:13px;color:#64748b;">{{supportHtml}}</p>`,
+      'Your order was cancelled.',
     ),
     bodyText:
-      'Order cancelled\n\nHi {{customerName}},\nYour order {{orderId}} has been cancelled.\nSupport: {{supportEmail}}',
+      'Order cancelled\n\n{{greetingLine}}\n\nOrder {{orderId}} has been cancelled. If you believe this was unexpected or need assistance, please contact our support team.\n\n{{itemsText}}\n\n{{detailsText}}\n\n{{supportText}}',
     active: true,
   },
   {
@@ -80,42 +124,27 @@ export const NOTIFICATION_TEMPLATES: NotificationTemplateDefinition[] = [
     channel: 'email',
     trigger: 'order_refunded',
     subject: 'Refund confirmation — {{orderId}}',
-    bodyHtml: defaultHtml(
+    bodyHtml: customerShell(
       'Refund confirmation',
-      'A refund for order <strong>{{orderId}}</strong> has been processed.',
+      `<p style="margin:0 0 14px;">{{greetingLine}}</p>
+    <p style="margin:0 0 14px;">A refund for order <strong>{{orderId}}</strong> has been processed.</p>
+    ${itemsBlock}
+    <p style="margin:16px 0 0;font-size:13px;color:#64748b;">{{supportHtml}}</p>`,
+      'A refund has been processed.',
     ),
     bodyText:
-      'Refund confirmation\n\nHi {{customerName}},\nA refund for order {{orderId}} has been processed.\nSupport: {{supportEmail}}',
+      'Refund confirmation\n\n{{greetingLine}}\n\nA refund for order {{orderId}} has been processed.\n\n{{itemsText}}\n\n{{detailsText}}\n\n{{supportText}}',
     active: true,
   },
 ];
 
-function defaultHtml(title: string, summary: string): string {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>${title}</title></head>
-<body style="font-family: system-ui, sans-serif; line-height: 1.5; color: #111; max-width: 560px; margin: 0 auto; padding: 24px;">
-  <header style="margin-bottom: 16px;">
-    <div style="font-size: 18px; font-weight: 700;">{{companyName}}</div>
-  </header>
-  <main>
-    <h1 style="font-size: 20px;">${title}</h1>
-    <p>Hi {{customerName}},</p>
-    <p>${summary}</p>
-    <p><strong>Package:</strong> {{packageName}}</p>
-    <p><strong>Quantity:</strong> {{quantity}}</p>
-    <p><strong>Total:</strong> {{orderTotal}}</p>
-    <p><strong>Status:</strong> {{statusLabel}}</p>
-    <p>{{statusMessage}}</p>
-    <p><a href="{{trackingUrl}}">Track your order</a></p>
-    <p>Need help? <a href="mailto:{{supportEmail}}">{{supportEmail}}</a></p>
-  </main>
-  <footer style="margin-top: 32px; font-size: 12px; color: #666;">
-    <p>{{footerText}}</p>
-    <p>{{companyName}}</p>
-  </footer>
-</body>
-</html>`;
+export function withDefaultEmailSiteUrl(
+  variables: Record<string, string | undefined>,
+): Record<string, string | undefined> {
+  return {
+    ...variables,
+    siteUrl: variables.siteUrl?.trim() || getTransactionalSiteUrl(),
+  };
 }
 
 export function getTemplateById(

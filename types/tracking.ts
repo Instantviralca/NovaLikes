@@ -32,16 +32,31 @@ export type PublicOrderTimelineStep = {
   message?: string;
 };
 
+export type PublicTrackedOrderLine = {
+  serviceName: string;
+  packageTitle: string;
+  quantityLabel: string;
+  lineQuantity: number;
+  targetDisplay: string;
+  lineTotalDisplay?: string;
+};
+
 export type PublicTrackedOrder = {
   orderId: string;
   status: OrderStatus;
   statusLabel: string;
   statusMessage: string;
+  /** @deprecated Prefer `items` — kept for older UI fallbacks. */
   serviceName: string;
+  /** @deprecated Prefer `items`. */
   packageTitle: string;
+  /** @deprecated Prefer `items`. */
   quantityLabel: string;
-  /** Masked username / URL when appropriate. */
+  /** @deprecated Prefer per-line targetDisplay. */
   targetDisplay: string;
+  items: PublicTrackedOrderLine[];
+  itemCount: number;
+  orderTotalDisplay?: string;
   createdAt: string;
   updatedAt: string;
   estimatedDelivery?: string;

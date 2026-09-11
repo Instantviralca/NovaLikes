@@ -1,6 +1,7 @@
 'use client';
 
 import { formatMoney } from '@/lib/pricing/format';
+import { computeLineTotal, normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type { CartItem, CartTotals } from '@/types/cart';
 import { cn } from '@/lib/utils';
@@ -37,13 +38,19 @@ export function CheckoutOrderSummary({
             </p>
             <p className="mt-1 text-lg font-bold">{item.quantityLabel}</p>
             <p className="text-[var(--text-secondary)]">{item.packageTitle}</p>
+            <p className="mt-1 text-sm text-[var(--text-secondary)]">
+              Qty: {normalizeLineQuantity(item.lineQuantity)}
+            </p>
             {item.deliveryTime ? (
               <p className="mt-1 text-xs text-[var(--text-secondary)]">
                 {ui.cart.delivery}: {item.deliveryTime}
               </p>
             ) : null}
             <p className="mt-2 font-semibold text-[var(--brand-primary)]" dir="ltr">
-              {formatMoney(item.unitPrice, item.currency)}
+              {formatMoney(
+                computeLineTotal(item.unitPrice, item.lineQuantity),
+                item.currency,
+              )}
             </p>
           </li>
         ))}

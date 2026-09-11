@@ -1,4 +1,8 @@
 import { allowMockPayments, isEmailConfigured } from '@/lib/config/env';
+import {
+  formatItemCountLabel,
+  formatMultiItemServiceSummary,
+} from '@/lib/orders/line-display';
 import { getCustomerOrderId } from '@/lib/orders/public-number';
 import { listOrders } from '@/lib/orders/store';
 import { isEligibleForFulfilmentQueue } from '@/lib/payments/mark-paid';
@@ -33,14 +37,18 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
   const money = (amount: number) => formatMoney(amount, 'USD' as CurrencyCode, 'en');
 
   const toOrderRow = (o: (typeof orders)[number]) => {
-    const item = o.items[0];
     const publicOrderId = getCustomerOrderId(o);
+    const isMultiItem = (o.items?.length ?? 0) > 1;
     return {
       id: o.id,
       publicOrderId,
       customer: o.guestEmail,
-      service: item?.serviceName ?? 'Service',
-      packageTitle: item?.packageTitle ?? 'Package',
+      service: formatMultiItemServiceSummary(o),
+      packageTitle: isMultiItem
+        ? formatItemCountLabel(o)
+        : (o.items[0]?.packageTitle ?? 'Package'),
+      itemCountLabel: formatItemCountLabel(o),
+      isMultiItem,
       status: o.status,
       total: money(o.total.amount),
       createdAt: o.createdAt,

@@ -15,6 +15,7 @@ import {
   getCustomerOrderId,
   toMollieOrderId,
 } from '@/lib/orders/public-number';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import { getPersistence } from '@/lib/persistence';
 import { saveOrder } from '@/lib/orders/store';
 import { paymentGatewayManager } from '@/lib/payments/manager';
@@ -75,6 +76,7 @@ export async function executeCheckout(
     }
 
     const customerOrderId = getCustomerOrderId(order);
+    // Collector requires absint()-safe digits (public_number), never IV-….
     const mollieOrderId = toMollieOrderId(order.publicNumber);
 
     await linkOrderToCartRecovery({
@@ -119,7 +121,11 @@ export async function executeCheckout(
         subtotal: order.subtotal,
         discount: order.discount,
         total: order.total,
-        itemCount: order.items.reduce((sum, item) => sum + item.quantity, 0),
+        itemCount: order.items.reduce(
+          (sum, item) => sum + normalizeLineQuantity(item.lineQuantity),
+          0,
+        ),
+        lineCount: order.items.length,
       };
       const payment = await paymentGatewayManager.createPayment('remote-payment', {
         orderId: mollieOrderId,

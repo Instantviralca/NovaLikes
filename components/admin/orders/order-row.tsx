@@ -29,9 +29,17 @@ export function OrderRow({ order, selected, onSelect, onOpen, className }: Order
       <td className="px-3 py-3">{order.serviceName}</td>
       <td className="px-3 py-3">{order.packageTitle}</td>
       <td className="max-w-[14rem] truncate px-3 py-3" title={order.targetDisplay}>
-        {order.targetDisplay}
+        {order.isMultiItem ? order.itemCountLabel : order.targetDisplay}
       </td>
-      <td className="px-3 py-3">{order.quantityLabel}</td>
+      <td className="px-3 py-3">
+        {order.isMultiItem
+          ? `${order.itemCountLabel}${
+              order.purchaseUnitCount !== order.itemCount
+                ? ` · ${order.purchaseUnitCount} units`
+                : ''
+            }`
+          : `Qty ${order.purchaseUnitCount}`}
+      </td>
       <td className="px-3 py-3">{order.totalDisplay}</td>
       <td className="px-3 py-3">{order.paymentStatus}</td>
       <td className="px-3 py-3 capitalize">{order.orderStatus}</td>
@@ -61,10 +69,14 @@ export function OrderRowCard({ order, selected, onSelect, onOpen }: OrderRowProp
         />
       </div>
       <p className="text-sm">
-        {order.serviceName} · {order.packageTitle}
+        {order.serviceName}
+        {order.isMultiItem ? ` · ${order.itemCountLabel}` : ` · ${order.packageTitle}`}
       </p>
       <p className="break-all text-sm">
-        <span className="text-muted-foreground">Target:</span> {order.targetDisplay}
+        <span className="text-muted-foreground">
+          {order.isMultiItem ? 'Items:' : 'Target:'}
+        </span>{' '}
+        {order.isMultiItem ? order.itemCountLabel : order.targetDisplay}
       </p>
       <p className="text-sm capitalize">
         {order.orderStatus} · {order.totalDisplay}

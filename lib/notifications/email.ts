@@ -3,7 +3,17 @@
  * Disabled until EMAIL_FROM is set with SMTP_HOST and/or RESEND_API_KEY.
  */
 
+import { withDefaultEmailSiteUrl } from '@/data/notifications/templates';
 import { getEmailFrom, getEmailReplyTo, isEmailConfigured, isSmtpConfigured } from '@/lib/config/env';
+import {
+  buildEmailDetailsText,
+  escapeEmailVariables,
+  escapeHtml,
+  filterEmailDetailRows,
+  orderEmailBody,
+  renderTransactionalEmailShell,
+  type EmailDetailRow,
+} from '@/lib/notifications/email-shell';
 import { sendSmtpEmail } from '@/lib/notifications/smtp';
 import { getPersistence } from '@/lib/persistence';
 import type { NotificationProvider } from '@/types/notification';
@@ -27,46 +37,210 @@ function render(template: string, variables: Record<string, string | undefined>)
   return template.replace(/\{\{(\w+)\}\}/g, (_, key: string) => variables[key] ?? '');
 }
 
-const EXTRA_TEMPLATES: Record<
-  ExtraTemplateId,
-  { subject: string; bodyHtml: string; bodyText: string }
-> = {
-  admin_new_order: {
-    subject: 'New order — {{orderId}}',
-    bodyHtml:
-      '<p>New order <strong>{{orderId}}</strong>.</p><p><strong>Service:</strong> {{serviceName}} ({{packageName}})</p><p><strong>Total:</strong> {{orderTotal}}</p><p><strong>Customer:</strong> {{customerEmail}}</p><p>Open Admin → Orders to review.</p>',
-    bodyText:
-      'New order {{orderId}}.\nService: {{serviceName}} ({{packageName}})\nTotal: {{orderTotal}}\nCustomer: {{customerEmail}}\nReview in Admin → Orders.',
-  },
-  admin_order_paid: {
-    subject: 'Order paid — {{orderId}}',
-    bodyHtml:
-      '<p>Payment confirmed for <strong>{{orderId}}</strong>.</p><p><strong>Service:</strong> {{serviceName}} ({{packageName}})</p><p><strong>Total:</strong> {{orderTotal}}</p><p><strong>Customer:</strong> {{customerEmail}}</p><p>Ready for fulfilment — open Admin → Orders.</p>',
-    bodyText:
-      'Payment confirmed for {{orderId}}.\nService: {{serviceName}} ({{packageName}})\nTotal: {{orderTotal}}\nCustomer: {{customerEmail}}\nReady for fulfilment.',
-  },
-  payment_confirmed: {
-    subject: 'Payment confirmed — {{orderId}}',
-    bodyHtml:
-      '<p>Hi {{customerName}},</p><p>We confirmed payment for order <strong>{{orderId}}</strong> ({{serviceName}}).</p><p><strong>Total:</strong> {{orderTotal}}</p><p><a href="{{trackingUrl}}">Track your order</a></p><p>Need help? {{supportEmail}}</p>',
-    bodyText:
-      'Hi {{customerName}},\n\nWe confirmed payment for order {{orderId}} ({{serviceName}}).\nTotal: {{orderTotal}}\nTrack: {{trackingUrl}}\nSupport: {{supportEmail}}',
-  },
-  contact_admin: {
-    subject: 'Contact form — {{subject}}',
-    bodyHtml:
-      '<p>New contact message from <strong>{{fullName}}</strong> ({{email}}).</p><p>Subject: {{subject}}</p><p>Order ID: {{orderId}}</p><pre>{{message}}</pre>',
-    bodyText:
-      'New contact message from {{fullName}} ({{email}}).\nSubject: {{subject}}\nOrder ID: {{orderId}}\n\n{{message}}',
-  },
-  contact_acknowledgement: {
-    subject: 'We received your message',
-    bodyHtml:
-      '<p>Hi {{fullName}},</p><p>Thanks for contacting {{companyName}}. We received your message and will reply soon.</p>',
-    bodyText:
-      'Hi {{fullName}},\n\nThanks for contacting {{companyName}}. We received your message and will reply soon.',
-  },
-};
+function adminMetaRows(
+  variables: Record<string, string | undefined>,
+  paymentStatus: string,
+): EmailDetailRow[] {
+  return filterEmailDetailRows([
+    { label: 'Order ID', value: variables.orderId ?? '' },
+    { label: 'Customer Name', value: variables.customerName ?? '' },
+    { label: 'Customer Email', value: variables.customerEmail ?? '' },
+    { label: 'Order Total', value: variables.orderTotal ?? '' },
+    { label: 'Payment Status', value: paymentStatus },
+    { label: 'Order Date', value: variables.orderDate ?? '' },
+  ]);
+}
+
+function customerPaidMetaRows(variables: Record<string, string | undefined>): EmailDetailRow[] {
+  return filterEmailDetailRows([
+    { label: 'Order ID', value: variables.orderId ?? '' },
+    { label: 'Order Total', value: variables.orderTotal ?? '' },
+    { label: 'Payment Status', value: 'Paid' },
+    { label: 'Order Date', value: variables.orderDate ?? '' },
+  ]);
+}
+
+function formatContactGreeting(fullName?: string): string {
+  const name = fullName?.trim();
+  return name ? `Hi ${name},` : 'Hi,';
+}
+
+function getExtraTemplate(
+  templateId: ExtraTemplateId,
+  variables: Record<string, string | undefined>,
+): { subject: string; bodyHtml: string; bodyText: string } {
+  const orderId = variables.orderId ?? '';
+  const companyName = variables.companyName ?? 'NovaLikes';
+  const supportEmail = variables.supportEmail ?? '';
+  const siteUrl = variables.siteUrl ?? '';
+  const internalRef = variables.internalOrderId?.trim();
+  const greetingLine = variables.greetingLine?.trim() || 'Hi,';
+  const adminUrl = variables.adminOrderUrl?.trim();
+  const itemsHtml = variables.itemsHtml ?? '';
+  const itemsText = variables.itemsText ?? '';
+
+  switch (templateId) {
+    case 'admin_new_order': {
+      const details = adminMetaRows(variables, 'Pending');
+      return {
+        subject: `New order — ${orderId}`,
+        bodyHtml: renderTransactionalEmailShell({
+          title: 'New order',
+          companyName,
+          supportEmail,
+          siteUrl,
+          preheader: `New order ${orderId}`,
+          bodyHtml:
+            orderEmailBody({
+              greetingLine: 'Hi,',
+              paragraphs: ['A new order has been received.'],
+              details,
+              cta: adminUrl
+                ? { label: 'View Order in Admin', href: adminUrl }
+                : undefined,
+              secondaryHtml: internalRef
+                ? `Internal reference: ${escapeHtml(internalRef)}`
+                : undefined,
+            }) +
+            (itemsHtml ? `<div style="margin:16px 0;">${itemsHtml}</div>` : '') +
+            `<p style="margin:16px 0 0;font-size:13px;color:#64748b;">Payment has not been confirmed yet.</p>`,
+        }),
+        bodyText: [
+          'New order',
+          '',
+          'A new order has been received.',
+          '',
+          buildEmailDetailsText(details),
+          '',
+          itemsText,
+          '',
+          'Payment has not been confirmed yet.',
+          internalRef ? `Internal reference: ${internalRef}` : '',
+          adminUrl ? `View Order in Admin: ${adminUrl}` : '',
+        ]
+          .filter(Boolean)
+          .join('\n'),
+      };
+    }
+    case 'admin_order_paid': {
+      const details = adminMetaRows(variables, 'Paid');
+      return {
+        subject: `Order paid — ${orderId}`,
+        bodyHtml: renderTransactionalEmailShell({
+          title: 'Order paid',
+          companyName,
+          supportEmail,
+          siteUrl,
+          preheader: `Payment confirmed for ${orderId}`,
+          bodyHtml:
+            orderEmailBody({
+              greetingLine: 'Hi,',
+              paragraphs: [
+                `Payment has been confirmed for order <strong>${escapeHtml(orderId)}</strong>.`,
+              ],
+              details,
+              cta: adminUrl
+                ? { label: 'View Order in Admin', href: adminUrl }
+                : undefined,
+              secondaryHtml: internalRef
+                ? `Internal reference: ${escapeHtml(internalRef)}`
+                : undefined,
+            }) + (itemsHtml ? `<div style="margin:16px 0;">${itemsHtml}</div>` : ''),
+        }),
+        bodyText: [
+          'Order paid',
+          '',
+          `Payment has been confirmed for order ${orderId}.`,
+          '',
+          buildEmailDetailsText(details),
+          '',
+          itemsText,
+          internalRef ? `Internal reference: ${internalRef}` : '',
+          adminUrl ? `View Order in Admin: ${adminUrl}` : '',
+        ]
+          .filter(Boolean)
+          .join('\n'),
+      };
+    }
+    case 'payment_confirmed': {
+      const details = customerPaidMetaRows(variables);
+      return {
+        subject: `Payment confirmed — ${orderId}`,
+        bodyHtml: renderTransactionalEmailShell({
+          title: 'Payment confirmed',
+          companyName,
+          supportEmail,
+          siteUrl,
+          preheader: `Payment confirmed for ${orderId}`,
+          bodyHtml:
+            orderEmailBody({
+              greetingLine,
+              paragraphs: [
+                `Your payment for order <strong>${escapeHtml(orderId)}</strong> has been confirmed. Your order is now ready for processing.`,
+              ],
+              details,
+              cta: {
+                label: 'Track your order',
+                href: variables.trackingUrl || siteUrl,
+              },
+            }) + (itemsHtml ? `<div style="margin:16px 0;">${itemsHtml}</div>` : ''),
+        }),
+        bodyText: [
+          'Payment confirmed',
+          '',
+          greetingLine,
+          '',
+          `Your payment for order ${orderId} has been confirmed. Your order is now ready for processing.`,
+          '',
+          itemsText,
+          '',
+          buildEmailDetailsText(details),
+          '',
+          `Track your order: ${variables.trackingUrl ?? ''}`,
+        ].join('\n'),
+      };
+    }
+    case 'contact_admin':
+      return {
+        subject: `Contact form — ${variables.subject ?? ''}`,
+        bodyHtml: renderTransactionalEmailShell({
+          title: 'Contact form',
+          companyName,
+          supportEmail,
+          siteUrl,
+          bodyHtml: orderEmailBody({
+            greetingLine: 'Hi,',
+            paragraphs: [
+              `New contact message from <strong>${escapeHtml(variables.fullName ?? '')}</strong> (${escapeHtml(variables.email ?? '')}).`,
+            ],
+            details: [
+              { label: 'Subject', value: variables.subject ?? '' },
+              { label: 'Order ID', value: variables.orderId ?? '' },
+              { label: 'Message', value: variables.message ?? '' },
+            ],
+          }),
+        }),
+        bodyText: `New contact message from ${variables.fullName ?? ''} (${variables.email ?? ''}).\nSubject: ${variables.subject ?? ''}\nOrder ID: ${variables.orderId ?? ''}\n\n${variables.message ?? ''}`,
+      };
+    case 'contact_acknowledgement':
+      return {
+        subject: 'We received your message',
+        bodyHtml: renderTransactionalEmailShell({
+          title: 'Message received',
+          companyName,
+          supportEmail,
+          siteUrl,
+          bodyHtml: orderEmailBody({
+            greetingLine: formatContactGreeting(variables.fullName),
+            paragraphs: [
+              `Thanks for contacting ${escapeHtml(companyName)}. We received your message and will reply soon.`,
+            ],
+          }),
+        }),
+        bodyText: `${formatContactGreeting(variables.fullName)}\n\nThanks for contacting ${companyName}. We received your message and will reply soon.`,
+      };
+  }
+}
 
 async function sendViaConfiguredTransport(input: {
   to: string;
@@ -141,13 +315,13 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
     return { id: existing.id, status: existing.status === 'sent' ? 'sent' : 'failed' };
   }
 
-  const template = EXTRA_TEMPLATES[input.templateId];
-  const subject = render(template.subject, input.variables);
-  const html = render(template.bodyHtml, input.variables);
-  const text = render(template.bodyText, input.variables);
+  const variables = withDefaultEmailSiteUrl(input.variables);
+  const template = getExtraTemplate(input.templateId, variables);
+  const subject = template.subject;
+  const html = template.bodyHtml;
+  const text = template.bodyText;
   const id = `ntf_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
   const createdAt = new Date().toISOString();
-  // Persist a known customer template id for DB typing; real template is in subject/body.
   const storedTemplateId = 'order_confirmation' as const;
 
   if (!isEmailConfigured()) {
@@ -218,3 +392,5 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
     return { id, status: 'failed' };
   }
 }
+
+export { escapeEmailVariables, render };

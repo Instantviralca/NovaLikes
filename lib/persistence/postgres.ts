@@ -9,6 +9,11 @@ import * as tables from '@/lib/db/schema';
 import type { ContactFormValues } from '@/lib/contact/validation';
 import { parseSequenceNextvalResult } from '@/lib/orders/sequence-nextval';
 import {
+  embedLineQuantityInConfiguration,
+  extractLineQuantityFromConfiguration,
+  stripLineQuantityFromConfiguration,
+} from '@/lib/orders/line-quantity';
+import {
   createCampaignId,
   createSubscriberId,
   createUnsubscribeToken,
@@ -108,9 +113,10 @@ async function hydrateOrder(orderId: string): Promise<Order | null> {
     packageTitle: item.packageTitle,
     quantity: item.quantity,
     quantityLabel: item.quantityLabel,
+    lineQuantity: extractLineQuantityFromConfiguration(item.configuration),
     unitPrice: item.unitPrice,
     currency: item.currency as CurrencyCode,
-    configuration: item.configuration,
+    configuration: stripLineQuantityFromConfiguration(item.configuration),
     deliveryTime: item.deliveryTime ?? undefined,
   }));
 
@@ -269,10 +275,13 @@ export function createPostgresPersistence(): AppPersistence {
       const db = getDb();
       const withKey = order as Order & { idempotencyKey?: string };
       const existing = await hydrateOrder(order.id);
+      // Never reassign an already-allocated public_number on update.
       const publicNumber =
-        typeof order.publicNumber === 'number'
-          ? order.publicNumber
-          : existing?.publicNumber ?? null;
+        typeof existing?.publicNumber === 'number' && existing.publicNumber >= 1
+          ? existing.publicNumber
+          : typeof order.publicNumber === 'number'
+            ? order.publicNumber
+            : existing?.publicNumber ?? null;
 
       // New production orders must never persist without a public_number.
       // Historical IV-only rows may remain NULL (explicit allowNullPublicNumber for imports/tests).
@@ -338,7 +347,10 @@ export function createPostgresPersistence(): AppPersistence {
         quantityLabel: item.quantityLabel,
         unitPrice: item.unitPrice,
         currency: item.currency,
-        configuration: item.configuration ?? {},
+        configuration: embedLineQuantityInConfiguration(
+          item.configuration ?? {},
+          item.lineQuantity ?? 1,
+        ),
         deliveryTime: item.deliveryTime?.trim() ? item.deliveryTime : null,
         publicDestination: publicDestinationFromConfig(item.configuration ?? {}) ?? null,
       }));

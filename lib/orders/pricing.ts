@@ -8,6 +8,11 @@ import {
   normalizeOrderConfigurationValues,
   validateOrderConfiguration,
 } from '@/lib/order/validation';
+import {
+  computeLineTotal,
+  parseStrictLineQuantity,
+  stripLineQuantityFromConfiguration,
+} from '@/lib/orders/line-quantity';
 import { findPackage, validateCoupon } from '@/lib/pricing/resolve';
 import type { CartItem } from '@/types/cart';
 import type { OrderConfigurationValues } from '@/types/order-fields';
@@ -52,13 +57,23 @@ export function validateCheckoutPricing(input: {
       throw new Error(`Quantity mismatch for package ${item.packageId}.`);
     }
 
+    const lineQuantity =
+      item.lineQuantity === undefined || item.lineQuantity === null
+        ? 1
+        : parseStrictLineQuantity(item.lineQuantity);
+    if (lineQuantity === null) {
+      throw new Error(`Invalid line quantity for package ${item.packageId}.`);
+    }
+
     // Never trust client unitPrice — use catalog minor units.
     const unitPrice = pkg.price;
-    subtotalAmount += unitPrice;
+    subtotalAmount += computeLineTotal(unitPrice, lineQuantity);
 
     // Re-validate username / URL configuration server-side (never trust client-only checks).
     const fields = getOrderFieldsForServiceSlug(pkg.serviceSlug, pkg);
-    const rawConfig = (item.configuration ?? {}) as OrderConfigurationValues;
+    const rawConfig = stripLineQuantityFromConfiguration(
+      (item.configuration ?? {}) as OrderConfigurationValues,
+    );
     const configuration = normalizeOrderConfigurationValues(fields, rawConfig);
     const configErrors = validateOrderConfiguration(fields, configuration);
     if (configErrors.length > 0) {
@@ -77,6 +92,7 @@ export function validateCheckoutPricing(input: {
       packageTitle: pkg.title,
       quantity: pkg.quantity,
       quantityLabel: pkg.quantityLabel,
+      lineQuantity,
       unitPrice,
       currency: pkg.currency,
       configuration,

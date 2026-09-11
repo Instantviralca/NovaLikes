@@ -34,7 +34,8 @@ export function PendingOrdersWidget({ orders, loading }: PendingOrdersWidgetProp
               <div>
                 <p className="text-sm font-medium">{order.publicOrderId}</p>
                 <p className="text-xs text-muted-foreground">
-                  {order.service} · {order.customer}
+                  {order.service}
+                  {order.isMultiItem ? ` · ${order.itemCountLabel}` : ''} · {order.customer}
                 </p>
               </div>
               <Button asChild size="sm" variant="outline">

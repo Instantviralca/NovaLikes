@@ -3,9 +3,10 @@
  * Persists delivery status; uses Resend when configured.
  */
 
-import { getTemplateForTrigger } from '@/data/notifications/templates';
+import { getTemplateForTrigger, withDefaultEmailSiteUrl } from '@/data/notifications/templates';
 import { isEmailConfigured } from '@/lib/config/env';
 import { resendEmailProvider } from '@/lib/notifications/email';
+import { escapeEmailVariables } from '@/lib/notifications/email-shell';
 import { getPersistence } from '@/lib/persistence';
 import type {
   NotificationProvider,
@@ -103,9 +104,16 @@ export async function dispatchNotification(
     return failed;
   }
 
-  const subject = renderTemplate(template.subject, request.variables);
-  const html = renderTemplate(template.bodyHtml, request.variables);
-  const text = renderTemplate(template.bodyText, request.variables);
+  const vars = withDefaultEmailSiteUrl(
+    request.variables as Record<string, string | undefined>,
+  ) as NotificationTemplateVariableMap;
+  const htmlVars = escapeEmailVariables(
+    vars as Record<string, string | undefined>,
+  ) as NotificationTemplateVariableMap;
+
+  const subject = renderTemplate(template.subject, vars);
+  const html = renderTemplate(template.bodyHtml, htmlVars);
+  const text = renderTemplate(template.bodyText, vars);
 
   const pending: NotificationRecord & { idempotencyKey?: string } = {
     id: recordId(),

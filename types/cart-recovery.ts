@@ -27,6 +27,8 @@ export type CartRecoverySnapshotItem = {
   packageTitle: string;
   quantity: number;
   quantityLabel: string;
+  /** Purchase multiplier; legacy snapshots without this default to 1. */
+  lineQuantity?: number;
   unitPrice: number;
   currency: CurrencyCode;
   deliveryTime: string;

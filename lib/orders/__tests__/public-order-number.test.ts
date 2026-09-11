@@ -1,5 +1,5 @@
 /**
- * Short sequential public order numbers + Mollie Remote compatibility.
+ * Production public_number contract: 1001 → 01001, Mollie "1001", IV internal.
  */
 
 import { createHmac } from 'node:crypto';
@@ -131,8 +131,8 @@ afterEach(() => {
   clearPersistenceSingletonForTests();
 });
 
-describe('public order number formatting', () => {
-  it('E: formats 1001 → 01001 and grows past 5 digits', () => {
+describe('production public order number formatting', () => {
+  it('formats 1001 → 01001 and grows past 5 digits', () => {
     expect(formatOrderNumber(1001)).toBe('01001');
     expect(formatOrderNumber(1002)).toBe('01002');
     expect(formatOrderNumber(9999)).toBe('09999');
@@ -143,8 +143,8 @@ describe('public order number formatting', () => {
   });
 });
 
-describe('sequential public order numbers', () => {
-  it('A/B/C: first orders are 01001 then 01002', async () => {
+describe('production sequential public order numbers', () => {
+  it('first orders are 01001 then 01002', async () => {
     const a = await createOrder('a@example.com');
     const b = await createOrder('b@example.com');
     expect(a.publicNumber).toBe(1001);
@@ -155,7 +155,20 @@ describe('sequential public order numbers', () => {
     expect(a.id).not.toBe(getCustomerOrderId(a));
   });
 
-  it('D: concurrent creates never duplicate public numbers', async () => {
+  it('updates never reassign public_number', async () => {
+    const order = await createOrder('stable@example.com');
+    const n = order.publicNumber;
+    const updated = await saveOrder({
+      ...order,
+      customerNotes: 'note',
+      updatedAt: new Date().toISOString(),
+      publicNumber: 9999,
+    });
+    expect(updated.publicNumber).toBe(n);
+    expect((await getOrderById(order.id))?.publicNumber).toBe(n);
+  });
+
+  it('concurrent creates never duplicate public numbers', async () => {
     const created = await Promise.all(
       Array.from({ length: 20 }, (_, i) => createOrder(`c${i}@example.com`)),
     );
@@ -165,14 +178,16 @@ describe('sequential public order numbers', () => {
     expect(Math.max(...numbers)).toBe(1020);
   });
 
-  it('F: Track Order finds 01001 and legacy IV- ids', async () => {
+  it('Track Order finds 01001, 1001, and legacy IV- ids', async () => {
     const order = await createOrder('track@example.com');
-    const byPublic = await lookupTrackedOrder(
-      { orderId: '01001', email: 'track@example.com' },
-      (id) => resolveOrderByCustomerRef(id),
-    );
-    expect(byPublic.ok).toBe(true);
-    if (byPublic.ok) expect(byPublic.order.orderId).toBe('01001');
+    for (const token of ['01001', '1001'] as const) {
+      const byPublic = await lookupTrackedOrder(
+        { orderId: token, email: 'track@example.com' },
+        (id) => resolveOrderByCustomerRef(id),
+      );
+      expect(byPublic.ok).toBe(true);
+      if (byPublic.ok) expect(byPublic.order.orderId).toBe('01001');
+    }
 
     const byLegacy = await lookupTrackedOrder(
       { orderId: order.id, email: 'track@example.com' },
@@ -181,27 +196,18 @@ describe('sequential public order numbers', () => {
     expect(byLegacy.ok).toBe(true);
   });
 
-  it('G: confirmation surfaces use public order id 01001', async () => {
-    const order = await createOrder('email@example.com');
-    expect(getCustomerOrderId(order)).toBe('01001');
-  });
-
-  it('H: Admin shows 01001 as primary public order id', async () => {
+  it('Admin shows 01001 as primary; internal IV remains available', async () => {
     const order = await createOrder('admin@example.com');
     const rows = await getAdminOrderRows();
     const row = rows.find((r) => r.id === order.id);
     expect(row?.publicOrderId).toBe('01001');
+    expect(row?.id.startsWith('IV-')).toBe(true);
     const details = await getAdminOrderById(order.id);
     expect(details?.publicOrderId).toBe('01001');
+    expect(details?.id).toBe(order.id);
   });
 
-  it('I: success/customer ref resolves 01001', async () => {
-    const order = await createOrder('success@example.com');
-    expect(getCustomerOrderId(order)).toBe('01001');
-    expect(await resolveOrderByCustomerRef('01001')).toMatchObject({ id: order.id });
-  });
-
-  it('J: Mollie create body sends digits-only unpadded order_id', () => {
+  it('Mollie create body sends digits-only unpadded order_id (not IV-…)', () => {
     const body = buildMollieCreateBody({
       callbackUrl: 'https://novalikes.com/api/webhooks/remote-payment',
       returnUrl: 'https://novalikes.com/order-success?orderId=01001',
@@ -219,9 +225,10 @@ describe('sequential public order numbers', () => {
     expect(body.order_id).toBe('1001');
     expect(body.order_id).not.toMatch(/IV-/);
     expect(body.order_id).not.toMatch(/^0/);
+    expect(body.merchant_order_number).toBeUndefined();
   });
 
-  it('K/L/M: signed webhook resolves public number; unknown + unsigned rejected', async () => {
+  it('signed webhook resolves numeric collector order_id; unsigned rejected', async () => {
     const order = await createOrder('pay@example.com');
     const price = (order.total.amount / 100).toFixed(2);
     const mollieId = toMollieOrderId(order.publicNumber!);
@@ -259,7 +266,7 @@ describe('sequential public order numbers', () => {
     expect(unsigned.status).toBe(403);
   });
 
-  it('N: production testmode still rejected', async () => {
+  it('production testmode still rejected', async () => {
     vi.stubEnv('NODE_ENV', 'production');
     const order = await createOrder('tm@example.com');
     const price = (order.total.amount / 100).toFixed(2);
@@ -276,11 +283,11 @@ describe('sequential public order numbers', () => {
     expect((await getOrderById(order.id))?.payment?.status).not.toBe('paid');
   });
 
-  it('O: Stripe remains paused', () => {
+  it('Stripe remains paused', () => {
     expect(getEnabledPaymentProviders().some((p) => p.id === 'stripe')).toBe(false);
   });
 
-  it('P: historical IV-only orders remain resolvable', async () => {
+  it('historical IV-only orders remain resolvable with NULL public_number', async () => {
     const historical: Order = {
       id: 'IV-OLDHIST-0001',
       guestEmail: 'legacy@example.com',
@@ -328,7 +335,7 @@ describe('sequential public order numbers', () => {
     expect(getCustomerOrderId(historical)).toBe('IV-OLDHIST-0001');
   });
 
-  it('Q: cart recovery still links/converts once on internal id', async () => {
+  it('cart recovery still links/converts once on internal id', async () => {
     const email = 'recovery@example.com';
     const captured = await captureCartRecoverySession({
       email,
@@ -356,7 +363,7 @@ describe('sequential public order numbers', () => {
     expect(session?.status).toBe('converted');
   });
 
-  it('R: paid analytics events remain once per internal order id', async () => {
+  it('paid analytics events remain once per internal order id', async () => {
     const order = await createOrder('analytics@example.com');
     const eventId = `analytics:payment_paid:${order.id}`;
     const first = await recordServerAnalyticsEvent({

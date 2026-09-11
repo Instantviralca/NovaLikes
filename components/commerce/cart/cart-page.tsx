@@ -53,7 +53,12 @@ export function CartPage() {
         </div>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
           <div className="space-y-6">
-            <CartList items={cart.items} onRemove={cart.removeItem} />
+            <CartList
+              items={cart.items}
+              onRemove={cart.removeItem}
+              onIncrement={cart.incrementLineQuantity}
+              onDecrement={cart.decrementLineQuantity}
+            />
             <TrustStrip className="rounded-2xl border border-[var(--border-subtle)] bg-white/80 p-4" />
           </div>
           <div className="hidden h-fit lg:sticky lg:top-24 lg:block">

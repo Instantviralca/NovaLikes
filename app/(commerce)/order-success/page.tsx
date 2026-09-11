@@ -11,8 +11,11 @@ import { routes } from '@/config/routes';
 import { allowMockPayments } from '@/lib/config/env';
 import { getSiteChrome } from '@/lib/i18n/site-chrome';
 import { getCustomerOrderId } from '@/lib/orders/public-number';
+import { getOrderLineViews } from '@/lib/orders/line-display';
+import { formatMoney } from '@/lib/pricing/format';
 import { resolveOrderByCustomerRef } from '@/lib/orders/store';
 import { buildPageMetadataForRoute } from '@/lib/seo/metadata';
+import type { CurrencyCode } from '@/types/pricing';
 
 export const metadata: Metadata = buildPageMetadataForRoute(routes.orderSuccess);
 
@@ -37,6 +40,13 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
   let orderTotal: number | undefined;
   let currency = 'USD';
   let displayOrderId = orderIdParam;
+  let lineSummaries: Array<{
+    serviceName: string;
+    packageTitle: string;
+    quantityLabel: string;
+    lineQuantity: number;
+    lineTotalDisplay: string;
+  }> = [];
 
   if (orderIdParam) {
     const order = await resolveOrderByCustomerRef(orderIdParam);
@@ -47,11 +57,25 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
       orderTotal = order.total.amount;
       currency = order.total.currency;
       displayOrderId = getCustomerOrderId(order);
+      lineSummaries = getOrderLineViews(order).map((line) => ({
+        serviceName: line.serviceName,
+        packageTitle: line.packageTitle,
+        quantityLabel: line.quantityLabel,
+        lineQuantity: line.lineQuantity,
+        lineTotalDisplay: line.lineTotalDisplay,
+      }));
     } else if (allowMockPayments() && params.verified === '1' && order) {
       verified = order.payment?.status === 'paid';
       orderTotal = order.total.amount;
       currency = order.total.currency;
       displayOrderId = getCustomerOrderId(order);
+      lineSummaries = getOrderLineViews(order).map((line) => ({
+        serviceName: line.serviceName,
+        packageTitle: line.packageTitle,
+        quantityLabel: line.quantityLabel,
+        lineQuantity: line.lineQuantity,
+        lineTotalDisplay: line.lineTotalDisplay,
+      }));
     }
   }
 
@@ -73,7 +97,7 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
               : ui.orderSuccess.unverifiedBody}
         </MutedText>
         {displayOrderId ? (
-          <div className="rounded-lg border bg-card p-4 text-sm">
+          <div className="rounded-lg border bg-card p-4 text-sm space-y-3">
             <p>
               <span className="font-medium">{ui.orderSuccess.orderId}</span>{' '}
               <span dir="ltr" className="[unicode-bidi:isolate]">
@@ -81,12 +105,33 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
               </span>
             </p>
             {email ? (
-              <p className="mt-1">
+              <p>
                 <span className="font-medium">{ui.orderSuccess.email}</span>{' '}
                 <span dir="ltr" className="[unicode-bidi:isolate]">
                   {email}
                 </span>
               </p>
+            ) : null}
+            {orderTotal !== undefined ? (
+              <p>
+                <span className="font-medium">Total:</span>{' '}
+                <span dir="ltr">
+                  {formatMoney(orderTotal, currency as CurrencyCode)}
+                </span>
+              </p>
+            ) : null}
+            {lineSummaries.length > 0 ? (
+              <ul className="space-y-2 border-t pt-3">
+                {lineSummaries.map((line, index) => (
+                  <li key={`${line.serviceName}-${index}`}>
+                    <p className="font-medium">{line.serviceName}</p>
+                    <p className="text-muted-foreground">
+                      {line.packageTitle || line.quantityLabel} · Qty {line.lineQuantity} ·{' '}
+                      {line.lineTotalDisplay}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             ) : null}
           </div>
         ) : null}

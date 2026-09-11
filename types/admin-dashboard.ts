@@ -23,6 +23,8 @@ export type DashboardOrderRow = {
   customer: string;
   service: string;
   packageTitle: string;
+  itemCountLabel?: string;
+  isMultiItem?: boolean;
   status: string;
   total: string;
   createdAt: string;

@@ -1,14 +1,13 @@
 /**
  * Customer-facing sequential order numbers.
  *
- * Internal DB PK remains opaque (IV-…).
- * Public sequence is an integer starting at 1001, displayed zero-padded:
- *   1001 → "01001"
- *   10000 → "10000"
- *
- * Mollie Remote collector requires WordPress absint() — a positive integer.
- * We send the unpadded digit string ("1001") so create + webhook signatures match
- * after the collector normalizes the value.
+ * Production contract (do not change without collector coordination):
+ * - Internal DB PK remains opaque (IV-…).
+ * - orders.public_number is an integer sequence starting at 1001.
+ * - Customer display is zero-padded to 5 digits: 1001 → "01001".
+ * - Mollie Remote collector order_id is the unpadded digit string: "1001"
+ *   (WordPress absint() requires a positive integer — never send IV-…).
+ * - Historical IV-only rows may keep public_number NULL.
  */
 
 export const PUBLIC_ORDER_NUMBER_START = 1001;
@@ -77,7 +76,7 @@ export function isMollieOrderIdFormat(value: string): boolean {
  * Accepts "01001", "1001", or plain digits. Returns null for IV- / non-numeric.
  */
 export function parsePublicOrderNumber(raw: string): number | null {
-  const trimmed = raw.trim();
+  const trimmed = raw.trim().replace(/^#/, '');
   if (!/^\d+$/.test(trimmed)) return null;
   const n = Number(trimmed);
   if (!Number.isInteger(n) || n < 1) return null;

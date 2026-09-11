@@ -16,8 +16,15 @@ export type CartItem = {
   serviceName: string;
   platformId: string;
   packageTitle: string;
+  /** Package size (e.g. 1000) — not purchase multiplier. */
   quantity: number;
+  /** Package size label. */
   quantityLabel: string;
+  /**
+   * Purchase multiplier for this cart line (default 1).
+   * Distinct from package `quantity`.
+   */
+  lineQuantity?: number;
   unitPrice: number;
   currency: CurrencyCode;
   deliveryTime: string;
@@ -36,7 +43,10 @@ export type CartTotals = {
   subtotal: MoneyAmount;
   discount: MoneyAmount;
   total: MoneyAmount;
+  /** Total purchase units = sum(lineQuantity). Used by cart badge. */
   itemCount: number;
+  /** Number of distinct cart lines. */
+  lineCount: number;
 };
 
 export type CartState = {
@@ -49,6 +59,9 @@ export type CartState = {
 export type CartActions = {
   addItem: (item: Omit<CartItem, 'id' | 'addedAt'>) => void;
   removeItem: (itemId: CartItemId) => void;
+  setLineQuantity: (itemId: CartItemId, lineQuantity: number) => void;
+  incrementLineQuantity: (itemId: CartItemId) => void;
+  decrementLineQuantity: (itemId: CartItemId) => void;
   updateItemConfiguration: (itemId: CartItemId, configuration: OrderConfigurationValues) => void;
   applyCoupon: (coupon: AppliedCoupon) => void;
   removeCoupon: () => void;

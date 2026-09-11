@@ -14,9 +14,10 @@ import {
   parsePublicIdFromToken,
   verifyDerivedRecoveryToken,
 } from '@/lib/cart-recovery/tokens';
+import { createCartItemId } from '@/lib/cart/utils';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import type { CartItem, CartState } from '@/types/cart';
 import type { CartRecoverySession } from '@/types/cart-recovery';
-import { createCartItemId } from '@/lib/cart/utils';
 
 export type CartRecoveryRestoreResult =
   | {
@@ -67,6 +68,7 @@ export async function restoreCartFromRecoveryToken(
       packageTitle: pkg.title,
       quantity: pkg.quantity,
       quantityLabel: pkg.quantityLabel,
+      lineQuantity: normalizeLineQuantity(snap.lineQuantity),
       // Current catalog price is source of truth (anti-tamper).
       unitPrice: pkg.price,
       currency: pkg.currency,
