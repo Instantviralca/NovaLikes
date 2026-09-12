@@ -216,7 +216,6 @@ describe('remote Mollie items_json lineQuantity contract', () => {
       currency: 'USD',
       productName: 'Cubes',
       items: remoteItems,
-      cardToken: 'tkn_testtoken',
       sharedSecret: 'abcdefghijklmnop',
       requestTs: 1700000000,
       requestNonce: 'nonce123',
@@ -226,8 +225,10 @@ describe('remote Mollie items_json lineQuantity contract', () => {
     expect(body.amount).toBe('29.97');
     expect(body.merchant_order_number).toBeUndefined();
     expect(Object.keys(body)).not.toContain('merchant_order_number');
-    expect(body.card_token).toBe('tkn_testtoken');
-    expect(body.integration_mode).toBe('components_v1');
+    expect(body.card_token).toBeUndefined();
+    expect(body.integration_mode).toBeUndefined();
+    expect(Object.keys(body)).not.toContain('card_token');
+    expect(Object.keys(body)).not.toContain('integration_mode');
 
     const itemsJson = body.items_json;
     expect(JSON.parse(itemsJson)).toEqual([
@@ -250,7 +251,6 @@ describe('remote Mollie items_json lineQuantity contract', () => {
       currency: 'USD',
       productName: 'Cubes',
       itemsJson,
-      cardToken: 'tkn_testtoken',
     });
     expect(body.signature).toBe(signMolliePayload(expectedPayload, 'abcdefghijklmnop'));
     expect(createHash('sha256').update(itemsJson).digest('hex')).toHaveLength(64);

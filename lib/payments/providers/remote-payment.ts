@@ -1,12 +1,15 @@
 /**
- * Mollie Remote Payment provider — client protocol matching
- * WooCommerce Mollie Remote Payment Client v2.5.
+ * Mollie Remote Payment provider — hosted checkout redirect.
+ * Matches WooCommerce Mollie Remote Payment Client classic `?ro=1` contract.
  * Stripe remains disabled in config/payments.ts.
  *
  * Collector items_json contract (Woo client source):
  * - qty = purchase quantity (CartItem.lineQuantity; default 1)
  * - line_total = full line amount = unitPrice × lineQuantity (WC get_total())
  * Charged `amount` remains authoritative order.total (may be less after coupon).
+ *
+ * Response body must be an absolute trusted redirect URL (collector hop and/or Mollie).
+ * Browser return URL never marks paid — signed webhook remains authority.
  */
 
 import { getSiteUrlPath } from '@/lib/config/hosts';
@@ -19,7 +22,7 @@ import {
   buildMollieCreateBody,
   fetchMollieHealth,
   formatMajorAmount,
-  isValidMollieCardToken,
+  isTrustedPaymentRedirectUrl,
   serverEndpoint,
   type MollieRemoteLineItem,
 } from '@/lib/payments/mollie-remote-protocol';
@@ -105,11 +108,6 @@ export const remotePaymentProvider: PaymentProvider = {
       assertNoMollieTestModeInProduction(health.testmode, 'create_payment_health');
     }
 
-    const cardToken = String(input.payload?.cardToken ?? '').trim();
-    if (!isValidMollieCardToken(cardToken)) {
-      throw new Error('Please enter valid card details in the secure payment form.');
-    }
-
     const body = buildMollieCreateBody({
       callbackUrl: getSiteUrlPath('/api/webhooks/remote-payment'),
       returnUrl: input.successUrl,
@@ -119,7 +117,6 @@ export const remotePaymentProvider: PaymentProvider = {
       currency: input.amount.currency,
       productName,
       items: buildItems(input),
-      cardToken,
       sharedSecret,
     });
 
@@ -146,6 +143,9 @@ export const remotePaymentProvider: PaymentProvider = {
     if (!redirectUrl || !/^https?:\/\//i.test(redirectUrl)) {
       throw new Error('Mollie payment server did not return a valid redirect URL.');
     }
+    if (!isTrustedPaymentRedirectUrl(redirectUrl, paymentWebsite)) {
+      throw new Error('Mollie payment server returned an untrusted redirect URL.');
+    }
 
     return {
       paymentId: `remote_${input.orderId}`,
@@ -156,6 +156,7 @@ export const remotePaymentProvider: PaymentProvider = {
   },
 
   async verifyPayment(input: VerifyPaymentInput): Promise<VerifyPaymentResult> {
+    // Return URL / browser must never mark paid.
     return {
       paymentId: input.paymentId,
       status: 'pending',

@@ -1,12 +1,17 @@
 /**
- * Mollie Remote Payment client protocol (Woo plugin v2.5 compatible).
- * Posts signed order payloads to the Mollie collection server (?ro=1).
+ * Mollie Remote Payment client protocol — hosted checkout (collector `?ro=1`).
+ * Matches WooCommerce Mollie Remote Payment Client classic HMAC + Instantviral hosted flow.
+ * Response body is an absolute redirect URL (collector intermediate and/or Mollie hosted).
+ *
+ * Paid authority remains the signed callback webhook — never the browser return URL.
  */
 
 import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 
 export const MOLLIE_DEFAULT_SERVER_URL = 'https://carrycubes.com';
 export const MOLLIE_DEFAULT_PRODUCT_NAME = 'Cubes';
+
+/** @deprecated Retained for compatibility references; normal checkout uses hosted (no Components). */
 export const MOLLIE_INTEGRATION_MODE = 'components_v1';
 
 export type MollieRemoteLineItem = {
@@ -31,7 +36,6 @@ export type MollieCreatePayload = {
   currency: string;
   productName: string;
   items: MollieRemoteLineItem[];
-  cardToken: string;
   sharedSecret: string;
   requestTs?: number;
   requestNonce?: string;
@@ -74,10 +78,16 @@ export function formatMajorAmount(amountMinor: number): string {
   return (amountMinor / 100).toFixed(2);
 }
 
+/** @deprecated Components-only helper retained for compatibility; not used by hosted checkout. */
 export function isValidMollieCardToken(token: string): boolean {
   return /^tkn_[A-Za-z0-9]+$/.test(token);
 }
 
+/**
+ * Hosted HMAC field order (Woo classic / local collector server):
+ * orderId|ts|nonce|callback|return|cancel|amount|currency|productName|sha256(items_json)
+ * No integration_mode, card_token, or merchant_order_number.
+ */
 export function buildMollieSignaturePayload(input: {
   orderId: string;
   requestTs: number;
@@ -89,7 +99,6 @@ export function buildMollieSignaturePayload(input: {
   currency: string;
   productName: string;
   itemsJson: string;
-  cardToken: string;
 }): string {
   return [
     String(input.orderId),
@@ -102,8 +111,6 @@ export function buildMollieSignaturePayload(input: {
     String(input.currency),
     String(input.productName),
     createHash('sha256').update(input.itemsJson).digest('hex'),
-    MOLLIE_INTEGRATION_MODE,
-    createHash('sha256').update(input.cardToken).digest('hex'),
   ].join('|');
 }
 
@@ -112,9 +119,6 @@ export function signMolliePayload(payload: string, sharedSecret: string): string
 }
 
 export function buildMollieCreateBody(input: MollieCreatePayload): Record<string, string> {
-  if (!isValidMollieCardToken(input.cardToken)) {
-    throw new Error('Please enter valid card details in the secure payment form.');
-  }
   if (input.sharedSecret.trim().length < 16) {
     throw new Error('Mollie shared secret is not configured.');
   }
@@ -134,7 +138,6 @@ export function buildMollieCreateBody(input: MollieCreatePayload): Record<string
     currency,
     productName: input.productName,
     itemsJson,
-    cardToken: input.cardToken,
   });
 
   return {
@@ -148,10 +151,41 @@ export function buildMollieCreateBody(input: MollieCreatePayload): Record<string
     items_json: itemsJson,
     request_ts: String(requestTs),
     request_nonce: requestNonce,
-    integration_mode: MOLLIE_INTEGRATION_MODE,
-    card_token: input.cardToken,
     signature: signMolliePayload(signaturePayload, input.sharedSecret),
   };
+}
+
+/**
+ * Accept only collector-configured host (intermediate `?rop=` hop) or Mollie checkout hosts.
+ * Reject arbitrary absolute URLs to prevent open redirects after place-order.
+ */
+export function isTrustedPaymentRedirectUrl(
+  redirectUrl: string,
+  paymentServerUrl: string,
+): boolean {
+  let parsed: URL;
+  try {
+    parsed = new URL(redirectUrl.trim());
+  } catch {
+    return false;
+  }
+  if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return false;
+  if (parsed.username || parsed.password) return false;
+
+  const host = parsed.hostname.toLowerCase();
+  if (host === 'mollie.com' || host === 'www.mollie.com' || host.endsWith('.mollie.com')) {
+    return true;
+  }
+
+  const server = sanitizePaymentServerUrl(paymentServerUrl);
+  if (!server) return false;
+  let serverHost: string;
+  try {
+    serverHost = new URL(server).hostname.toLowerCase();
+  } catch {
+    return false;
+  }
+  return host === serverHost;
 }
 
 export function buildHealthSignature(requestTs: number, sharedSecret: string): string {

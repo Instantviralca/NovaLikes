@@ -145,7 +145,7 @@ export async function executeCheckout(
           totals,
           coupon: input.coupon,
           termsAccepted: input.termsAccepted,
-          cardToken: input.cardToken,
+          // Hosted Mollie checkout — no inline cardToken / Components.
         },
       });
 

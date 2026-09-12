@@ -50,7 +50,7 @@ export type PlaceOrderPayload = {
   coupon: AppliedCoupon | null;
   termsAccepted: boolean;
   marketingOptIn?: boolean;
-  /** Mollie Components card token (tkn_…). Required for live remote payment. */
+  /** Legacy optional Mollie Components card token — not used by hosted checkout. */
   cardToken?: string;
   /** Opaque cart-recovery session identifier, when restored or captured. */
   recoveryPublicId?: string;

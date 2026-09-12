@@ -34,7 +34,10 @@ export type PlaceOrderInput = {
   idempotencyKey?: string;
   /** CASL marketing opt-in from checkout checkbox. */
   marketingOptIn?: boolean;
-  /** Mollie Components card token (tkn_…). */
+  /**
+   * Legacy optional Mollie Components card token.
+   * Normal checkout uses hosted redirect and does not require this.
+   */
   cardToken?: string;
   /** Opaque cart-recovery session identifier. */
   recoveryPublicId?: string;

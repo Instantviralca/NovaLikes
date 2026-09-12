@@ -1,12 +1,7 @@
 'use client';
 
 import { CreditCard } from 'lucide-react';
-import type { MutableRefObject } from 'react';
 
-import {
-  MollieCardFields,
-  type MollieCardFieldsHandle,
-} from '@/components/commerce/checkout/mollie-card-fields';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
@@ -21,11 +16,11 @@ type PaymentMethodsProps = {
   className?: string;
   /** Hide legend when parent already renders a heading. */
   hideLegend?: boolean;
-  mollieHandleRef?: MutableRefObject<MollieCardFieldsHandle | null>;
 };
 
 /**
- * Payment method picker — Mollie card fields when remote-payment is selected.
+ * Payment method picker — remote card payment redirects to Mollie hosted checkout.
+ * Inline Mollie Components fields are not used for the normal checkout path.
  */
 export function PaymentMethods({
   methods,
@@ -34,7 +29,6 @@ export function PaymentMethods({
   error,
   className,
   hideLegend = false,
-  mollieHandleRef,
 }: PaymentMethodsProps) {
   const { ui } = useI18nChrome();
   const enabled = methods.filter((m) => m.enabled);
@@ -68,9 +62,6 @@ export function PaymentMethods({
                   <CreditCard className="size-4 text-[var(--brand-primary)]" aria-hidden="true" />
                   {method.label}
                 </Label>
-                {method.id === 'remote-payment' && selected ? (
-                  <MollieCardFields enabled handleRef={mollieHandleRef} />
-                ) : null}
               </div>
             </div>
           );

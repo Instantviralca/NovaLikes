@@ -217,7 +217,6 @@ describe('production sequential public order numbers', () => {
       currency: 'USD',
       productName: 'Cubes',
       items: [{ product_id: 'ig-f-1000', name: 'Followers', qty: 1, line_total: '13.99' }],
-      cardToken: 'tkn_testtoken123',
       sharedSecret: SECRET,
       requestTs: 1_700_000_000,
       requestNonce: 'abc123nonce00',

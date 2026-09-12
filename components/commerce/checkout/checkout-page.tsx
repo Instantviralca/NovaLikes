@@ -9,7 +9,6 @@ import { CheckoutSummary } from '@/components/commerce/checkout/checkout-summary
 import { CouponSection } from '@/components/commerce/checkout/coupon-section';
 import { CustomerInformationForm } from '@/components/commerce/checkout/customer-information-form';
 import { PaymentMethods } from '@/components/commerce/checkout/payment-methods';
-import type { MollieCardFieldsHandle } from '@/components/commerce/checkout/mollie-card-fields';
 import { PlaceOrderButton } from '@/components/commerce/checkout/place-order-button';
 import { TermsAgreement } from '@/components/commerce/checkout/terms-agreement';
 import { CheckoutProgress } from '@/components/design-system/checkout-progress';
@@ -61,7 +60,6 @@ export function CheckoutPage() {
     form?: string;
   }>({});
   const [submitting, setSubmitting] = useState(false);
-  const mollieHandleRef = useRef<MollieCardFieldsHandle | null>(null);
 
   const captureAbandonedCart = useCallback(async () => {
     if (!isValidEmail(customer.email.trim()) || cart.items.length === 0) return;
@@ -222,27 +220,7 @@ export function CheckoutPage() {
     setErrors({});
     setSubmitting(true);
     try {
-      let cardToken: string | undefined;
-      if (paymentMethodId === 'remote-payment') {
-        if (!mollieHandleRef.current) {
-          setErrors({ form: 'Secure card form is not ready yet. Please wait a moment and try again.' });
-          setSubmitting(false);
-          return;
-        }
-        try {
-          cardToken = await mollieHandleRef.current.createCardToken();
-        } catch (tokenError) {
-          setErrors({
-            form:
-              tokenError instanceof Error
-                ? tokenError.message
-                : 'Please check your card details and try again.',
-          });
-          setSubmitting(false);
-          return;
-        }
-      }
-
+      // Hosted Mollie checkout: place pending order, then redirect to collector/Mollie URL.
       const response = await fetch('/api/checkout/place-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -254,7 +232,6 @@ export function CheckoutPage() {
           coupon: cart.coupon,
           termsAccepted,
           marketingOptIn: Boolean(customer.marketingOptIn),
-          cardToken,
           recoveryPublicId: document.cookie
             .split('; ')
             .find((row) => row.startsWith('iv_cart_recovery='))
@@ -339,7 +316,6 @@ export function CheckoutPage() {
                 onChange={setPaymentMethodId}
                 error={errors.payment}
                 hideLegend
-                mollieHandleRef={mollieHandleRef}
               />
             </div>
             <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)]">
