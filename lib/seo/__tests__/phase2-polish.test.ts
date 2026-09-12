@@ -20,9 +20,10 @@ describe('Phase 2 technical SEO polish', () => {
       (header) => header.key === 'Content-Security-Policy-Report-Only',
     );
     expect(csp?.value).toContain("default-src 'self'");
-    expect(csp?.value).toContain('https://js.stripe.com');
+    expect(csp?.value).toContain('https://js.mollie.com');
     expect(csp?.value).not.toContain('report-uri');
     expect(csp?.value).not.toContain('report-to');
+    expect(global?.headers.some((h) => h.key === 'Content-Security-Policy')).toBe(false);
   });
 
   it('declares square PWA and favicon assets in the web app manifest', async () => {

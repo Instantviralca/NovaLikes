@@ -1,7 +1,11 @@
 /**
  * Bounded in-memory rate limiter for public/admin HTTP routes.
- * Shared Map with TTL prune — suitable for single-node Contabo (nginx → Node).
+ *
+ * CURRENT SINGLE-PROCESS RATE LIMITING: PASS
+ * Suitable for Contabo single PM2 fork (nginx → Node). TTL prune + MAX_KEYS cap.
  * Does not apply to Mollie webhooks.
+ *
+ * MULTI-PROCESS / MULTI-SERVER SHARED LIMITING: FUTURE INFRA HARDENING
  */
 
 import { createHash } from 'node:crypto';

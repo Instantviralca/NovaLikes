@@ -31,7 +31,7 @@ Set these in the production host (Vercel / Railway / VPS). Never commit secrets.
 | `EMAIL_ADMIN_TO` | Admin order + contact notifications |
 | `EMAIL_SUPPORT` | Shown in customer emails |
 | `EMAIL_COMPANY_NAME` | Defaults to NovaLikes |
-| `NEXT_PUBLIC_ADMIN_AUTH_CONFIGURED=true` | Shows admin login availability |
+| Admin password + session secret | Required for `/admin` login (server-derived; no public flag) |
 
 ### Forbidden in production
 

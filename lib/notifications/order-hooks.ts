@@ -157,6 +157,7 @@ function orderMetaRows(
 }
 
 function baseVariables(order: Order) {
+  const lines = getOrderLineViews(order);
   const item = order.items[0];
   const meta = ORDER_STATUS_METADATA[order.status];
   const customerOrderId = getCustomerOrderId(order);
@@ -167,6 +168,7 @@ function baseVariables(order: Order) {
   const statusLabel = meta?.customerLabel ?? order.status;
   const metaRows = orderMetaRows(order, { paymentStatus, statusLabel });
   const serviceSummary = formatMultiItemServiceSummary(order);
+  const singleLine = lines.length <= 1;
 
   return {
     companyName: companyName(),
@@ -175,10 +177,16 @@ function baseVariables(order: Order) {
     greetingLine: formatEmailGreeting(genuineName),
     orderId: customerOrderId,
     internalOrderId: order.id,
+    // Multi-item-aware summary (templates use this + itemsHtml/itemsText).
     serviceName: serviceSummary,
-    packageName: item?.packageTitle ?? '',
-    profileUrl: resolveOrderProfileUrl(order),
-    quantity: item?.quantityLabel ?? '',
+    /**
+     * Legacy single-line fields — retained for NotificationTemplateVariableMap
+     * compatibility. Active templates use itemsHtml/itemsText/detailsHtml only.
+     * For multi-item orders these stay empty so they never imply a false first-line-only view.
+     */
+    packageName: singleLine ? (item?.packageTitle ?? '') : '',
+    profileUrl: singleLine ? resolveOrderProfileUrl(order) : '',
+    quantity: singleLine ? (item?.quantityLabel ?? '') : '',
     orderTotal: formatTotalWithCurrency(order),
     paymentStatus,
     statusLabel,

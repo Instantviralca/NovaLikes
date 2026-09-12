@@ -32,7 +32,7 @@ Production fails safely at runtime if critical variables are missing (`instrumen
 | `EMAIL_ADMIN_TO` | Admin inbox for paid orders + contact alerts |
 | `EMAIL_SUPPORT` | Support address shown in customer emails |
 | `EMAIL_COMPANY_NAME` | Brand name in email templates (defaults to **NovaLikes**) |
-| `NEXT_PUBLIC_ADMIN_AUTH_CONFIGURED` | Set `true` when admin login is configured |
+| Admin password (`IV_ADMIN_PASSWORD`) | Required for `/admin` login (server-derived) |
 
 ### Stripe (if using Stripe provider)
 

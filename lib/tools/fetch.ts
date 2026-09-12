@@ -1,10 +1,13 @@
+import type { IncomingMessage } from 'node:http';
+import { Readable } from 'node:stream';
+
 import {
   assertAllowedMediaHost,
   assertAllowedPageHost,
-  assertPublicHostname,
   parseHttpUrl,
   resolveRedirectUrl,
 } from '@/lib/tools/ssrf';
+import { pinnedRequest, resolvePublicAddresses } from '@/lib/tools/pinned-fetch';
 import { TOOL_LIMITS, TOOL_TIMEOUTS, browserUserAgent } from '@/lib/tools/config';
 
 export type SafeFetchPurpose = 'page' | 'media';
@@ -75,9 +78,16 @@ function isAllowed(hostname: string, input: SafeFetchInput): boolean {
   return Boolean(input.allowedHosts && assertAllowedPageHost(hostname, input.allowedHosts));
 }
 
+function destroyBody(body: IncomingMessage) {
+  body.resume();
+  body.destroy();
+}
+
 async function openSafeResponse(input: SafeFetchInput): Promise<{
   url: string;
-  response: Response;
+  status: number;
+  headers: Headers;
+  body: IncomingMessage;
   cookies?: string;
 }> {
   const timeoutMs =
@@ -94,19 +104,18 @@ async function openSafeResponse(input: SafeFetchInput): Promise<{
     if (!isAllowed(current.hostname, input)) {
       throw new SafeFetchError('unsupported_url', 'unsupported_url');
     }
+
+    let target;
     try {
-      await assertPublicHostname(current.hostname);
+      target = await resolvePublicAddresses(current.hostname);
     } catch {
       throw new SafeFetchError('unsupported_url', 'unsupported_url');
     }
 
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
-      const response = await fetch(current.url.toString(), {
+      const response = await pinnedRequest(current.url, target, {
         method: 'GET',
-        redirect: 'manual',
-        signal: controller.signal,
+        timeoutMs,
         headers: {
           'User-Agent': input.userAgent ?? browserUserAgent(),
           Accept:
@@ -123,7 +132,7 @@ async function openSafeResponse(input: SafeFetchInput): Promise<{
       cookies = collectCookies(cookies, response.headers);
 
       if ([301, 302, 303, 307, 308].includes(response.status)) {
-        response.body?.cancel().catch(() => undefined);
+        destroyBody(response.body);
         const location = response.headers.get('location');
         if (!location) throw new SafeFetchError('not_found', 'not_found');
         const next = resolveRedirectUrl(current.url, location);
@@ -138,62 +147,61 @@ async function openSafeResponse(input: SafeFetchInput): Promise<{
       }
 
       if (response.status === 429 || response.status === 403) {
-        response.body?.cancel().catch(() => undefined);
+        destroyBody(response.body);
         throw new SafeFetchError('platform_blocked', 'platform_blocked');
       }
       if (response.status === 404 || response.status >= 400) {
-        response.body?.cancel().catch(() => undefined);
+        destroyBody(response.body);
         throw new SafeFetchError('not_found', 'not_found');
       }
 
-      return { url: current.url.toString(), response, cookies };
+      return {
+        url: current.url.toString(),
+        status: response.status,
+        headers: response.headers,
+        body: response.body,
+        cookies,
+      };
     } catch (error) {
       if (error instanceof SafeFetchError) throw error;
-      if (error instanceof Error && error.name === 'AbortError') {
+      if (error instanceof Error && (error.message === 'timeout' || error.message.includes('timeout'))) {
         throw new SafeFetchError('timeout', 'timeout');
       }
       throw new SafeFetchError('not_found', 'not_found');
-    } finally {
-      clearTimeout(timer);
     }
   }
 
   throw new SafeFetchError('unsupported_url', 'unsupported_url');
 }
 
-async function readLimited(response: Response, maxBytes: number): Promise<Buffer> {
-  const length = Number(response.headers.get('content-length') || 0);
-  if (length && length > maxBytes) {
-    response.body?.cancel().catch(() => undefined);
-    throw new SafeFetchError('too_large', 'too_large');
-  }
-  if (!response.body) return Buffer.alloc(0);
-
-  const reader = response.body.getReader();
-  const chunks: Uint8Array[] = [];
+async function readLimited(body: IncomingMessage, maxBytes: number): Promise<Buffer> {
+  const chunks: Buffer[] = [];
   let total = 0;
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    if (!value) continue;
-    total += value.byteLength;
+  for await (const chunk of body) {
+    const buf = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+    total += buf.byteLength;
     if (total > maxBytes) {
-      await reader.cancel();
+      destroyBody(body);
       throw new SafeFetchError('too_large', 'too_large');
     }
-    chunks.push(value);
+    chunks.push(buf);
   }
-  return Buffer.concat(chunks.map((chunk) => Buffer.from(chunk)));
+  return Buffer.concat(chunks);
 }
 
 export async function safeFetch(input: SafeFetchInput): Promise<SafeFetchResult> {
   const maxBytes = input.maxBytes ?? (input.purpose === 'media' ? TOOL_LIMITS.mediaBytes : TOOL_LIMITS.pageBytes);
   const opened = await openSafeResponse(input);
-  const body = await readLimited(opened.response, maxBytes);
+  const length = Number(opened.headers.get('content-length') || 0);
+  if (length && length > maxBytes) {
+    destroyBody(opened.body);
+    throw new SafeFetchError('too_large', 'too_large');
+  }
+  const body = await readLimited(opened.body, maxBytes);
   return {
     url: opened.url,
-    status: opened.response.status,
-    headers: opened.response.headers,
+    status: opened.status,
+    headers: opened.headers,
     body,
     cookies: opened.cookies,
   };
@@ -208,42 +216,38 @@ export async function safeFetchStream(input: SafeFetchInput): Promise<{
 }> {
   const maxBytes = input.maxBytes ?? TOOL_LIMITS.mediaBytes;
   const opened = await openSafeResponse(input);
-  const length = Number(opened.response.headers.get('content-length') || 0);
+  const length = Number(opened.headers.get('content-length') || 0);
   if (length && length > maxBytes) {
-    opened.response.body?.cancel().catch(() => undefined);
+    destroyBody(opened.body);
     throw new SafeFetchError('too_large', 'too_large');
   }
-  if (!opened.response.body) {
-    throw new SafeFetchError('not_found', 'not_found');
-  }
 
-  const reader = opened.response.body.getReader();
   let total = 0;
+  const nodeReadable = Readable.from(opened.body);
   const body = new ReadableStream<Uint8Array>({
-    async pull(controller) {
-      const { done, value } = await reader.read();
-      if (done) {
-        controller.close();
-        return;
-      }
-      if (!value) return;
-      total += value.byteLength;
-      if (total > maxBytes) {
-        await reader.cancel();
-        controller.error(new SafeFetchError('too_large', 'too_large'));
-        return;
-      }
-      controller.enqueue(value);
+    start(controller) {
+      nodeReadable.on('data', (chunk: Buffer | string) => {
+        const value = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+        total += value.byteLength;
+        if (total > maxBytes) {
+          nodeReadable.destroy();
+          controller.error(new SafeFetchError('too_large', 'too_large'));
+          return;
+        }
+        controller.enqueue(new Uint8Array(value));
+      });
+      nodeReadable.on('end', () => controller.close());
+      nodeReadable.on('error', (err) => controller.error(err));
     },
     cancel() {
-      return reader.cancel();
+      nodeReadable.destroy();
     },
   });
 
   return {
     url: opened.url,
-    status: opened.response.status,
-    headers: opened.response.headers,
+    status: opened.status,
+    headers: opened.headers,
     cookies: opened.cookies,
     body,
   };

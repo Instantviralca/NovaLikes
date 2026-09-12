@@ -159,7 +159,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         ok: false,
-        error: error instanceof Error ? error.message : 'Unable to process callback.',
+        error: 'Unable to process callback.',
       },
       { status: 400 },
     );

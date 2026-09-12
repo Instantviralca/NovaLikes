@@ -5,41 +5,7 @@
 import type { NextConfig } from 'next';
 
 import { getLegacyLocalizedRedirects } from './lib/i18n/slugs';
-
-/**
- * Content-Security-Policy-Report-Only (not enforced).
- * Monitor violations in the browser console — no report-uri/report-to endpoint configured.
- *
- * Directives:
- * - default-src 'self' — baseline same-origin
- * - base-uri 'self' — block base tag hijacking
- * - object-src 'none' — block plugins
- * - frame-ancestors 'self' — clickjacking mitigation
- * - form-action — allow NovaLikes + Stripe Checkout/hooks posts
- * - img-src — self, data, blob, https images (OG, CDN, analytics pixels)
- * - font-src — self + data fonts
- * - style-src — self + unsafe-inline (Next.js / Tailwind runtime)
- * - script-src — self, inline/eval for Next, Stripe.js, GTM/GA, Clarity
- * - connect-src — APIs for Stripe, GA, Clarity, Vercel vitals
- * - frame-src — Stripe Checkout/js embeds
- * - worker-src — self + blob workers
- * - manifest-src 'self' — PWA manifest
- */
-const CONTENT_SECURITY_POLICY_REPORT_ONLY = [
-  "default-src 'self'",
-  "base-uri 'self'",
-  "object-src 'none'",
-  "frame-ancestors 'self'",
-  "form-action 'self' https://checkout.stripe.com https://hooks.stripe.com https://*.mollie.com https://js.mollie.com",
-  "img-src 'self' data: blob: https:",
-  "font-src 'self' data:",
-  "style-src 'self' 'unsafe-inline'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.mollie.com https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://scripts.clarity.ms",
-  "connect-src 'self' https://api.mollie.com https://*.mollie.com https://api.stripe.com https://checkout.stripe.com https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://vitals.vercel-insights.com",
-  "frame-src 'self' https://js.mollie.com https://*.mollie.com https://js.stripe.com https://hooks.stripe.com https://checkout.stripe.com",
-  "worker-src 'self' blob:",
-  "manifest-src 'self'",
-].join('; ');
+import { CONTENT_SECURITY_POLICY_REPORT_ONLY } from './lib/security/csp';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -177,6 +143,7 @@ const nextConfig: NextConfig = {
             value: 'camera=(), microphone=(), geolocation=(), payment=(self)',
           },
           {
+            // Report-Only — CSP ENFORCEMENT REQUIRES BROWSER PRODUCTION OBSERVATION
             key: 'Content-Security-Policy-Report-Only',
             value: CONTENT_SECURITY_POLICY_REPORT_ONLY,
           },

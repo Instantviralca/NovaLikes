@@ -1,5 +1,4 @@
 import { isIP } from 'node:net';
-import { lookup } from 'node:dns/promises';
 
 import { hostMatchesSuffix, isExactHost } from '@/lib/tools/platforms';
 
@@ -10,6 +9,11 @@ const BLOCKED_HOSTS = new Set([
   'localhost.localdomain',
   'metadata.google.internal',
   'metadata.internal',
+  'metadata',
+  'instance-data',
+  // Cloud metadata well-known hostnames (IP literals are covered by isPrivateIp).
+  'kubernetes.default',
+  'kubernetes.default.svc',
 ]);
 
 export type ParsedPublicUrl = {
@@ -24,19 +28,22 @@ export function isPrivateIPv4(address: string): boolean {
   }
   const [a, b] = parts;
   if (a === 0 || a === 10 || a === 127) return true;
-  if (a === 169 && b === 254) return true;
+  if (a === 169 && b === 254) return true; // link-local + cloud metadata 169.254.169.254
   if (a === 172 && b >= 16 && b <= 31) return true;
   if (a === 192 && b === 168) return true;
-  if (a === 100 && b >= 64 && b <= 127) return true;
-  if (a === 198 && (b === 18 || b === 19)) return true;
+  if (a === 100 && b >= 64 && b <= 127) return true; // CGNAT
+  if (a === 198 && (b === 18 || b === 19)) return true; // benchmarking
   return false;
 }
 
 export function isPrivateIPv6(address: string): boolean {
-  const normalized = address.toLowerCase();
+  const normalized = address.toLowerCase().replace(/^\[|\]$/g, '');
   if (normalized === '::' || normalized === '::1') return true;
-  if (normalized.startsWith('fe80:')) return true;
+  // Link-local fe80::/10
+  if (normalized === 'fe80' || normalized.startsWith('fe80:')) return true;
+  // Unique local fc00::/7 (fc… / fd…)
   if (normalized.startsWith('fc') || normalized.startsWith('fd')) return true;
+  // IPv4-mapped IPv6
   const mapped = normalized.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/i);
   if (mapped?.[1]) return isPrivateIPv4(mapped[1]);
   return false;
@@ -92,17 +99,9 @@ export function assertAllowedMediaHost(
 }
 
 export async function assertPublicHostname(hostname: string): Promise<void> {
-  if (isIP(hostname)) {
-    if (isPrivateIp(hostname)) {
-      throw new Error('private_address');
-    }
-    return;
-  }
-
-  const records = await lookup(hostname, { all: true, verbatim: true });
-  if (!records.length || records.some((record) => isPrivateIp(record.address))) {
-    throw new Error('private_address');
-  }
+  // Prefer shared resolver used by pinned outbound fetch.
+  const { resolvePublicAddresses } = await import('@/lib/tools/pinned-fetch');
+  await resolvePublicAddresses(hostname);
 }
 
 export function resolveRedirectUrl(current: URL, location: string): URL | null {
