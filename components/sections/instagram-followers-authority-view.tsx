@@ -26,7 +26,6 @@ import { getServiceContentBySlug } from '@/data/content/services';
 import { mapServiceContent } from '@/lib/content/mappers';
 import { resolveRelatedServices } from '@/lib/content/linking';
 import { buildBreadcrumb } from '@/lib/linking';
-import { localizeHref } from '@/lib/i18n/paths';
 import { loadMarketServiceFaqItems } from '@/lib/market/content/load';
 import type { Market } from '@/lib/market/config';
 import { resolvePublicHref } from '@/lib/market/paths';

@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server';
 
 import { CART_COOKIE_MAX_CHARS, CART_COOKIE_NAME } from '@/lib/cart/cookie-store';
+import { publicApiErrorMessage } from '@/lib/http/public-error';
+import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
 import { serializeCart, deserializeCart } from '@/lib/cart/utils';
 import type { CartState } from '@/types/cart';
 
@@ -10,6 +16,9 @@ export const runtime = 'nodejs';
  * Prepare same-origin checkout navigation. Cart rides in a shared cookie.
  */
 export async function POST(request: Request) {
+  const limited = consumePublicRouteLimit('prepareCheckout', clientIpFromRequestHeaders(request.headers));
+  if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
+
   try {
     const body = (await request.json()) as { cart?: CartState };
     const cart = body.cart ? deserializeCart(JSON.stringify(body.cart)) : null;
@@ -34,7 +43,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         ok: false,
-        error: error instanceof Error ? error.message : 'Unable to prepare checkout.',
+        error: publicApiErrorMessage(error, 'Unable to prepare checkout.'),
       },
       { status: 500 },
     );

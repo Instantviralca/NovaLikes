@@ -62,7 +62,10 @@ export async function dispatchNotification(
 
   if (request.idempotencyKey) {
     const existing = await store.findByIdempotencyKey(request.idempotencyKey);
-    if (existing) return existing;
+    if (existing?.status === 'sent') return existing;
+    if (existing) {
+      await store.releaseNotificationIdempotencyKey(request.idempotencyKey);
+    }
   }
 
   if (!isValidEmail(request.recipient)) {
@@ -78,7 +81,7 @@ export async function dispatchNotification(
       errorMessage: 'Invalid recipient email.',
       createdAt,
       immutable: true,
-      idempotencyKey: request.idempotencyKey,
+      // No idempotency key on failure — remains retryable.
     };
     await store.saveNotification(failed);
     return failed;
@@ -98,7 +101,6 @@ export async function dispatchNotification(
       errorMessage: `No active template for trigger: ${request.trigger}`,
       createdAt,
       immutable: true,
-      idempotencyKey: request.idempotencyKey,
     };
     await store.saveNotification(failed);
     return failed;
@@ -152,6 +154,7 @@ export async function dispatchNotification(
       status: 'failed',
       errorMessage: error instanceof Error ? error.message : 'Delivery failed',
       providerId: provider.id,
+      idempotencyKey: undefined,
     };
     console.error('[notifications] delivery failed', {
       orderId: request.orderId,

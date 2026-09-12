@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server';
 
 import { executeCheckout } from '@/lib/checkout/execute';
+import { publicApiErrorMessage } from '@/lib/http/public-error';
+import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
 import type { PlaceOrderPayload } from '@/types/checkout';
 
 export const runtime = 'nodejs';
@@ -25,6 +31,9 @@ export async function POST(request: Request) {
     if (!Array.isArray(body.items) || body.items.length === 0) {
       return NextResponse.json({ ok: false, error: 'Cart is empty.' }, { status: 400 });
     }
+
+    const limited = consumePublicRouteLimit('placeOrder', clientIpFromRequestHeaders(request.headers));
+    if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
 
     const result = await executeCheckout({
       customer: body.customer,
@@ -54,7 +63,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         ok: false,
-        error: error instanceof Error ? error.message : 'Unable to place order.',
+        error: publicApiErrorMessage(error, 'Unable to place order.'),
       },
       { status: 400 },
     );

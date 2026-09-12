@@ -2,7 +2,7 @@
  * PostgreSQL persistence via Drizzle — primary production store.
  */
 
-import { and, desc, eq, gte, isNull, sql } from 'drizzle-orm';
+import { and, desc, eq, gte, isNull, ne, sql } from 'drizzle-orm';
 
 import { getDb } from '@/lib/db/client';
 import * as tables from '@/lib/db/schema';
@@ -496,24 +496,37 @@ export function createPostgresPersistence(): AppPersistence {
     async saveNotification(record) {
       const db = getDb();
       const withKey = record as NotificationRecord & { idempotencyKey?: string };
-      await db.insert(tables.notificationRecords).values({
-        id: record.id,
-        orderId: record.orderId,
-        channel: record.channel,
-        templateId: record.templateId,
-        trigger: record.trigger,
-        recipient: record.recipient,
-        status: record.status,
-        subject: record.subject,
-        bodyPreview: record.bodyPreview ?? null,
-        errorMessage: record.errorMessage ?? null,
-        providerId: record.providerId ?? null,
-        providerMessageId: record.providerMessageId ?? null,
-        idempotencyKey: withKey.idempotencyKey ?? null,
-        createdAt: new Date(record.createdAt),
-        sentAt: record.sentAt ? new Date(record.sentAt) : null,
-      });
-      return withKey;
+      try {
+        await db.insert(tables.notificationRecords).values({
+          id: record.id,
+          orderId: record.orderId,
+          channel: record.channel,
+          templateId: record.templateId,
+          trigger: record.trigger,
+          recipient: record.recipient,
+          status: record.status,
+          subject: record.subject,
+          bodyPreview: record.bodyPreview ?? null,
+          errorMessage: record.errorMessage ?? null,
+          providerId: record.providerId ?? null,
+          providerMessageId: record.providerMessageId ?? null,
+          idempotencyKey: withKey.idempotencyKey ?? null,
+          createdAt: new Date(record.createdAt),
+          sentAt: record.sentAt ? new Date(record.sentAt) : null,
+        });
+        return withKey;
+      } catch (error) {
+        // Concurrent successful sends racing the unique idempotency key.
+        const code =
+          error && typeof error === 'object' && 'code' in error
+            ? String((error as { code: unknown }).code)
+            : '';
+        if (code === '23505' && withKey.idempotencyKey) {
+          const existing = await this.findByIdempotencyKey(withKey.idempotencyKey);
+          if (existing) return existing;
+        }
+        throw error;
+      }
     },
     async findByIdempotencyKey(key) {
       const db = getDb();
@@ -541,6 +554,18 @@ export function createPostgresPersistence(): AppPersistence {
         immutable: true as const,
         idempotencyKey: row.idempotencyKey ?? undefined,
       };
+    },
+    async releaseNotificationIdempotencyKey(key) {
+      const db = getDb();
+      await db
+        .update(tables.notificationRecords)
+        .set({ idempotencyKey: null })
+        .where(
+          and(
+            eq(tables.notificationRecords.idempotencyKey, key),
+            ne(tables.notificationRecords.status, 'sent'),
+          ),
+        );
     },
     async listByOrderId(orderId) {
       const db = getDb();
@@ -582,15 +607,25 @@ export function createPostgresPersistence(): AppPersistence {
     },
     async markProcessed(event: WebhookEventRecord) {
       const db = getDb();
-      await db.insert(tables.webhookEvents).values({
-        id: event.id,
-        provider: event.provider,
-        eventId: event.eventId,
-        eventType: event.eventType,
-        paymentId: event.paymentId ?? null,
-        processedAt: new Date(event.processedAt),
-        rawSummary: event.rawSummary ?? null,
-      });
+      try {
+        await db.insert(tables.webhookEvents).values({
+          id: event.id,
+          provider: event.provider,
+          eventId: event.eventId,
+          eventType: event.eventType,
+          paymentId: event.paymentId ?? null,
+          processedAt: new Date(event.processedAt),
+          rawSummary: event.rawSummary ?? null,
+        });
+      } catch (error) {
+        // Unique (provider, eventId) — concurrent duplicate callback is idempotent.
+        const code =
+          error && typeof error === 'object' && 'code' in error
+            ? String((error as { code?: string }).code)
+            : '';
+        if (code === '23505') return;
+        throw error;
+      }
     },
     async recordLoginAttempt(ipHash, success) {
       const db = getDb();

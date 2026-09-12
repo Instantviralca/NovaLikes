@@ -159,6 +159,13 @@ export function createMemoryPersistence(): AppPersistence {
     async findByIdempotencyKey(key) {
       return state.notifications.find((n) => n.idempotencyKey === key) ?? null;
     },
+    async releaseNotificationIdempotencyKey(key) {
+      for (const n of state.notifications) {
+        if (n.idempotencyKey === key && n.status !== 'sent') {
+          delete (n as { idempotencyKey?: string }).idempotencyKey;
+        }
+      }
+    },
     async listByOrderId(orderId) {
       return state.notifications.filter((n) => n.orderId === orderId);
     },
@@ -169,6 +176,9 @@ export function createMemoryPersistence(): AppPersistence {
       return state.webhooks.some((w) => w.provider === provider && w.eventId === eventId);
     },
     async markProcessed(event) {
+      if (state.webhooks.some((w) => w.provider === event.provider && w.eventId === event.eventId)) {
+        return;
+      }
       state.webhooks.push(event);
     },
   };

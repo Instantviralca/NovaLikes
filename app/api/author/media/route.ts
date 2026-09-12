@@ -1,7 +1,12 @@
 import { NextResponse } from 'next/server';
 
 import { requireCmsActor } from '@/lib/cms/auth';
-import { storeCmsMediaFile, validateMediaUpload } from '@/lib/cms/storage';
+import {
+  detectImageMime,
+  storeCmsMediaFile,
+  validateMediaBuffer,
+  validateMediaUpload,
+} from '@/lib/cms/storage';
 import { cmsListMedia } from '@/lib/cms/store';
 
 export const runtime = 'nodejs';
@@ -27,9 +32,14 @@ export async function POST(request: Request) {
   const invalid = validateMediaUpload({ type: file.type, size: file.size });
   if (invalid) return NextResponse.json({ ok: false, error: invalid }, { status: 400 });
   const buffer = Buffer.from(await file.arrayBuffer());
+  const bufferInvalid = validateMediaBuffer(buffer, file.type);
+  if (bufferInvalid) {
+    return NextResponse.json({ ok: false, error: bufferInvalid }, { status: 400 });
+  }
+  const mime = detectImageMime(buffer) ?? file.type;
   const media = await storeCmsMediaFile({
     buffer,
-    mime: file.type,
+    mime,
     filename: file.name || 'upload',
     alt,
     uploadedBy: actor.id,

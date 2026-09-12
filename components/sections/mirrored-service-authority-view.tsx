@@ -46,7 +46,6 @@ import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { loadQuickAnswer } from '@/lib/i18n/content/load';
 import type { QuickAnswerPageId } from '@/data/quick-answers';
 import { DEFAULT_LOCALE, type Locale, isCoreServiceSlug } from '@/lib/i18n/config';
-import { localizeHref } from '@/lib/i18n/paths';
 import { loadMarketServiceFaqItems } from '@/lib/market/content/load';
 import type { Market } from '@/lib/market/config';
 import { resolvePublicHref } from '@/lib/market/paths';

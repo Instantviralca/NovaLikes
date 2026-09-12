@@ -13,7 +13,7 @@ import {
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 import { loadMarketMetadataBundle, loadMarketServiceBundle } from '@/lib/market/content/load';
 import { isMarket, MARKETS, type Market } from '@/lib/market/config';
-import { buildMarketMetadata, marketServiceMetadata } from '@/lib/market/metadata';
+import { marketServiceMetadata } from '@/lib/market/metadata';
 import { localizeMarketHref } from '@/lib/market/paths';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';

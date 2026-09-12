@@ -1,11 +1,19 @@
 import { NextResponse } from 'next/server';
 
+import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
 import { resolveOrderByCustomerRef } from '@/lib/orders/store';
 import { lookupTrackedOrder } from '@/lib/tracking/lookup';
 
 export const runtime = 'nodejs';
 
 export async function POST(request: Request) {
+  const limited = consumePublicRouteLimit('track', clientIpFromRequestHeaders(request.headers));
+  if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
+
   try {
     const body = (await request.json()) as { orderId?: string; email?: string };
     const result = await lookupTrackedOrder(

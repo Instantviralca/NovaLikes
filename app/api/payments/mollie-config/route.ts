@@ -1,5 +1,11 @@
 import { NextResponse } from 'next/server';
 
+import { publicApiErrorMessage } from '@/lib/http/public-error';
+import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
 import {
   fetchMollieHealth,
   MollieTestModeRejectedError,
@@ -16,7 +22,10 @@ export const runtime = 'nodejs';
  * Public Mollie Components config (profile id only — no shared secret).
  * Production rejects collector testmode via fetchMollieHealth guard.
  */
-export async function GET() {
+export async function GET(request: Request) {
+  const limited = consumePublicRouteLimit('mollieConfig', clientIpFromRequestHeaders(request.headers));
+  if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
+
   try {
     if (!(await isRemotePaymentConfigured())) {
       return NextResponse.json(
@@ -53,7 +62,7 @@ export async function GET() {
     return NextResponse.json(
       {
         ok: false,
-        error: error instanceof Error ? error.message : 'Unable to load Mollie config.',
+        error: publicApiErrorMessage(error, 'Unable to load Mollie config.'),
       },
       { status: 502 },
     );

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+import { getEnabledPaymentProviders } from '@/config/payments';
 import { stripeProvider, getStripeEventId } from '@/lib/payments/providers/stripe';
 import {
   isWebhookAlreadyProcessed,
@@ -11,6 +12,14 @@ import { isStripeConfigured } from '@/lib/config/env';
 export const runtime = 'nodejs';
 
 export async function POST(request: Request) {
+  // Stripe remains paused in config/payments.ts — refuse even if env keys exist.
+  if (!getEnabledPaymentProviders().some((p) => p.id === 'stripe')) {
+    return NextResponse.json(
+      { ok: false, error: 'Stripe payments are paused.' },
+      { status: 503 },
+    );
+  }
+
   if (!isStripeConfigured()) {
     return NextResponse.json(
       { ok: false, error: 'Stripe webhooks are not configured.' },

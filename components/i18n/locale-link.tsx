@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import type { ComponentProps } from 'react';
 
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
-import { getLocaleFromPath, parseLocalePath } from '@/lib/i18n/paths';
+import { getLocaleFromPath } from '@/lib/i18n/paths';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type { Market } from '@/lib/market/config';
 import { getBareCorePath, getMarketFromPath, resolvePublicHref } from '@/lib/market/paths';

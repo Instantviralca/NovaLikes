@@ -26,6 +26,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
   const { slug } = await params;
+  if (
+    !APPROVED_SERVICE_SLUGS.includes(slug as (typeof APPROVED_SERVICE_SLUGS)[number])
+  ) {
+    notFound();
+  }
   return serviceMetadata(slug);
 }
 

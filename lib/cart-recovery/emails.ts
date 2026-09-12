@@ -34,7 +34,14 @@ function firstName(session: CartRecoverySession): string {
 
 function cartItemsText(session: CartRecoverySession): string {
   return session.cartSnapshot.items
-    .map((item) => `• ${item.serviceName} — ${item.packageTitle}`)
+    .map((item) => {
+      const qty =
+        typeof item.lineQuantity === 'number' && item.lineQuantity > 0
+          ? Math.floor(item.lineQuantity)
+          : 1;
+      const qtyLabel = qty > 1 ? ` × ${qty}` : '';
+      return `• ${item.serviceName} — ${item.packageTitle}${qtyLabel}`;
+    })
     .join('\n');
 }
 

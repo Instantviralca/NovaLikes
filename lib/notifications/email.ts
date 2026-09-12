@@ -311,8 +311,12 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
 }> {
   const store = getPersistence();
   const existing = await store.findByIdempotencyKey(input.idempotencyKey);
+  // Only a successful send is final. Failed/pending markers must remain retryable.
+  if (existing?.status === 'sent') {
+    return { id: existing.id, status: 'sent' };
+  }
   if (existing) {
-    return { id: existing.id, status: existing.status === 'sent' ? 'sent' : 'failed' };
+    await store.releaseNotificationIdempotencyKey(input.idempotencyKey);
   }
 
   const variables = withDefaultEmailSiteUrl(input.variables);
@@ -338,7 +342,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
       errorMessage: 'Email provider disabled — missing EMAIL_FROM plus SMTP_HOST or RESEND_API_KEY.',
       createdAt,
       immutable: true,
-      idempotencyKey: input.idempotencyKey,
+      // Omit idempotency key so a later successful send can claim it.
     });
     return { id, status: 'skipped' };
   }
@@ -387,7 +391,7 @@ export async function dispatchTransactionalEmail(input: ExtraSendInput): Promise
       providerId: isSmtpConfigured() ? 'smtp' : 'resend',
       createdAt,
       immutable: true,
-      idempotencyKey: input.idempotencyKey,
+      // No idempotency key on failure — allows retry with the same logical key.
     });
     return { id, status: 'failed' };
   }

@@ -73,6 +73,11 @@ export type NotificationStore = {
   saveNotification(record: NotificationRecord & { idempotencyKey?: string }): Promise<NotificationRecord>;
   findByIdempotencyKey(key: string): Promise<NotificationRecord | null>;
   listByOrderId(orderId: string): Promise<NotificationRecord[]>;
+  /**
+   * Clears idempotency_key on non-sent rows so a failed notification can be retried
+   * without a schema migration (unique key remains free for a successful send).
+   */
+  releaseNotificationIdempotencyKey(key: string): Promise<void>;
 };
 
 export type WebhookStore = {

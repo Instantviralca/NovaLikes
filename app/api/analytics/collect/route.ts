@@ -59,8 +59,8 @@ const rateBuckets = new Map<string, { count: number; resetAt: number }>();
 
 function clientKey(request: Request): string {
   const ip =
+    request.headers.get('x-real-ip')?.trim() ||
     request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
-    request.headers.get('x-real-ip') ||
     'unknown';
   return createHash('sha256').update(`analytics:${ip}`).digest('hex').slice(0, 24);
 }

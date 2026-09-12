@@ -4,7 +4,6 @@ import {
   Box,
   Check,
   ChevronDown,
-  ClipboardList,
   Eye,
   FileText,
   Headphones,

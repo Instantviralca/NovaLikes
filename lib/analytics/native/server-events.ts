@@ -3,6 +3,7 @@
  */
 
 import { eventCategoryFor, isServerAnalyticsEvent } from '@/lib/analytics/native/taxonomy';
+import { normalizeLineQuantity } from '@/lib/orders/line-quantity';
 import { getPersistence } from '@/lib/persistence';
 import type { AnalyticsEventRecord } from '@/lib/persistence/types';
 import type { Order } from '@/types/order';
@@ -82,7 +83,7 @@ export async function recordOrderCreatedAnalytics(order: Order): Promise<void> {
       currency: order.total.currency,
       itemCount: order.items.length,
       purchaseUnitCount: order.items.reduce(
-        (sum, item) => sum + (typeof item.lineQuantity === 'number' ? item.lineQuantity : 1),
+        (sum, item) => sum + normalizeLineQuantity(item.lineQuantity),
         0,
       ),
     },
@@ -97,7 +98,7 @@ export async function recordPaymentPaidAnalytics(order: Order): Promise<void> {
     currency: order.total.currency,
     itemCount: order.items.length,
     purchaseUnitCount: order.items.reduce(
-      (sum, item) => sum + (typeof item.lineQuantity === 'number' ? item.lineQuantity : 1),
+      (sum, item) => sum + normalizeLineQuantity(item.lineQuantity),
       0,
     ),
   };

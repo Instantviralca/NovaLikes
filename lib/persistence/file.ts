@@ -212,6 +212,17 @@ export function createFilePersistence(): AppPersistence {
     async findByIdempotencyKey(key) {
       return read().notifications.find((n) => n.idempotencyKey === key) ?? null;
     },
+    async releaseNotificationIdempotencyKey(key) {
+      const state = read();
+      let changed = false;
+      for (const n of state.notifications) {
+        if (n.idempotencyKey === key && n.status !== 'sent') {
+          delete (n as { idempotencyKey?: string }).idempotencyKey;
+          changed = true;
+        }
+      }
+      if (changed) write(state);
+    },
     async listByOrderId(orderId) {
       return read().notifications.filter((n) => n.orderId === orderId);
     },

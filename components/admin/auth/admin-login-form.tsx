@@ -11,6 +11,15 @@ type AdminLoginFormProps = {
   configured: boolean;
 };
 
+function safeAdminNextPath(value: string): string {
+  const path = value.trim();
+  if (!path.startsWith('/admin')) return '/admin/dashboard';
+  if (path.startsWith('//') || path.includes('\\') || path.includes('://')) {
+    return '/admin/dashboard';
+  }
+  return path;
+}
+
 /**
  * Admin login — Document 12.01.
  * Configuration flag comes from the server; password is verified server-side only.
@@ -39,7 +48,7 @@ export function AdminLoginForm({ configured }: AdminLoginFormProps) {
         setLoading(false);
         return;
       }
-      router.replace(nextPath.startsWith('/admin') ? nextPath : '/admin/dashboard');
+      router.replace(safeAdminNextPath(nextPath));
       router.refresh();
     } catch {
       setError('Unable to sign in.');

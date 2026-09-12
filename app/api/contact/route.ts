@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server';
 
 import { saveContactMessage } from '@/lib/contact/store';
 import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
+import {
   hasContactFormErrors,
   validateContactForm,
   type ContactFormValues,
@@ -13,6 +18,9 @@ import { getAdminNotificationEmail } from '@/lib/settings/site-settings';
 export const runtime = 'nodejs';
 
 export async function POST(request: Request) {
+  const limited = consumePublicRouteLimit('contact', clientIpFromRequestHeaders(request.headers));
+  if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
+
   try {
     const body = (await request.json()) as ContactFormValues;
     const errors = validateContactForm(body);

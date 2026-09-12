@@ -218,13 +218,18 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  const adminRequestHeaders = new Headers(request.headers);
+  adminRequestHeaders.set('x-admin-path', pathname);
+
   if (pathname === '/admin/login') {
-    return NextResponse.next();
+    return NextResponse.next({ request: { headers: adminRequestHeaders } });
   }
 
   const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
   const valid = await verifyAdminSessionTokenEdge(token);
-  if (valid) return NextResponse.next();
+  if (valid) {
+    return NextResponse.next({ request: { headers: adminRequestHeaders } });
+  }
 
   const loginUrl = request.nextUrl.clone();
   loginUrl.pathname = '/admin/login';

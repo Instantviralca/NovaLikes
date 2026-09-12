@@ -264,7 +264,7 @@ describe('Webhook duplicate + signature gate', () => {
 });
 
 describe('Email failure isolation', () => {
-  it('records failed notification without duplicating on idempotency key', async () => {
+  it('records failed notification and allows retry with the same idempotency key', async () => {
     expect(isEmailConfigured()).toBe(false);
     const a = await dispatchNotification({
       trigger: 'order_created',
@@ -299,7 +299,9 @@ describe('Email failure isolation', () => {
       },
       idempotencyKey: 'email:IV-TEST',
     });
-    expect(b.id).toBe(a.id);
+    // Failed sends omit the idempotency claim so retries remain possible.
+    expect(b.status).toBe('failed');
+    expect(b.id).not.toBe(a.id);
   });
 });
 

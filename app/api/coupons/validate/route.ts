@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server';
 
 import { hydrateCoupons } from '@/lib/catalog/coupons-store';
+import { publicApiErrorMessage } from '@/lib/http/public-error';
+import {
+  clientIpFromRequestHeaders,
+  consumePublicRouteLimit,
+  rateLimitResponse,
+} from '@/lib/http/rate-limit';
 import { validateCoupon } from '@/lib/pricing/resolve';
 import type { CurrencyCode } from '@/types/pricing';
 
@@ -8,6 +14,9 @@ export const runtime = 'nodejs';
 
 /** Public coupon validation for cart (uses hydrated admin catalog). */
 export async function POST(request: Request) {
+  const limited = consumePublicRouteLimit('coupons', clientIpFromRequestHeaders(request.headers));
+  if (!limited.allowed) return rateLimitResponse(limited.retryAfterSec);
+
   try {
     await hydrateCoupons();
     const body = (await request.json()) as {
@@ -31,7 +40,7 @@ export async function POST(request: Request) {
         ok: false,
         valid: false,
         discountAmount: 0,
-        message: error instanceof Error ? error.message : 'Unable to validate coupon.',
+        message: publicApiErrorMessage(error, 'Unable to validate coupon.'),
       },
       { status: 400 },
     );
