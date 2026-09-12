@@ -18,6 +18,10 @@ type ServicePageProps = {
 
 /** Only approved production services — Document 14.07. */
 export const revalidate = 60;
+/**
+ * Unknown single-segment slugs must be rejected by the App Router (real HTTP 404).
+ * Do not reintroduce a root `app/loading.tsx`: it streams and softens notFound() to HTTP 200.
+ */
 export const dynamicParams = false;
 
 export function generateStaticParams() {
