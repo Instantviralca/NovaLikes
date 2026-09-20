@@ -10,23 +10,16 @@ import {
   getAuthorCsrfCookieOptions,
   getAuthorSessionCookieOptions,
 } from '@/lib/cms/auth';
+import { safeAuthorNextPath } from '@/lib/cms/author-routes';
 
 export type AuthorLoginState = {
   error?: string;
 };
 
-function safeNextPath(value: unknown): string {
-  if (typeof value !== 'string') return '/author';
-  const path = value.trim();
-  if (!path.startsWith('/author')) return '/author';
-  if (path.startsWith('//') || path.includes('\\') || path.includes('://')) return '/author';
-  return path;
-}
-
 export async function loginAuthorAction(formData: FormData): Promise<void> {
   const email = String(formData.get('email') ?? '').trim().toLowerCase();
   const password = String(formData.get('password') ?? '');
-  const nextPath = safeNextPath(formData.get('next'));
+  const nextPath = safeAuthorNextPath(formData.get('next'));
 
   const headerStore = await headers();
   const ip =

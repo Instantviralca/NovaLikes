@@ -6,6 +6,7 @@ import type { ReactNode } from 'react';
 import { AuthorShell } from '@/components/author/author-shell';
 import { requireAdminFromCookies } from '@/lib/admin/auth';
 import { AUTHOR_SESSION_COOKIE, resolveAuthorFromToken } from '@/lib/cms/auth';
+import { isAuthorCmsLoginPath } from '@/lib/cms/author-routes';
 
 export const metadata: Metadata = {
   title: 'Author Dashboard',
@@ -16,7 +17,7 @@ export const dynamic = 'force-dynamic';
 
 async function enforceAuthorSession() {
   const pathname = (await headers()).get('x-nl-pathname') || '';
-  if (pathname === '/author/login' || pathname.startsWith('/author/login/')) {
+  if (isAuthorCmsLoginPath(pathname)) {
     return;
   }
   const jar = await cookies();

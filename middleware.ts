@@ -46,6 +46,10 @@ import {
   parseLocalePath,
   publicPathsEqual,
 } from '@/lib/i18n/paths';
+import {
+  isAuthorCmsLoginPath,
+  isAuthorCmsPath,
+} from '@/lib/cms/author-routes';
 import { getLowercasePublicRedirect } from '@/lib/seo/lowercase-public-path';
 
 function contentLanguage(locale: string): string {
@@ -194,11 +198,12 @@ export async function middleware(request: NextRequest) {
     return response;
   }
 
-  if (pathname.startsWith('/author')) {
+  // Exact /author or /author/* only — must not capture public /authors profiles.
+  if (isAuthorCmsPath(pathname)) {
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-nl-pathname', pathname);
 
-    if (pathname === '/author/login' || pathname.startsWith('/author/login/')) {
+    if (isAuthorCmsLoginPath(pathname)) {
       return NextResponse.next({ request: { headers: requestHeaders } });
     }
 

@@ -184,6 +184,7 @@ describe('HTML sitemap public directory', () => {
       'instagram',
       'tiktok',
       'facebook',
+      'markets',
       'tools',
       'guides',
       'policies',
@@ -192,6 +193,7 @@ describe('HTML sitemap public directory', () => {
       if (path === '/sitemap') continue;
       expect(hrefs).toContain(path);
     }
+    expect(hrefs).toEqual(expect.arrayContaining(['/ca', '/au', '/us', '/uk']));
   });
 
   it('does not include private or unsupported-platform links', () => {

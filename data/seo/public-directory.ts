@@ -5,6 +5,7 @@
 
 import { learnArticlePath, routes } from '@/config/routes';
 import { getIndexableArticles } from '@/lib/learn/article-seo';
+import { MARKETS, MARKET_NATIVE_NAMES } from '@/lib/market/config';
 
 export type PublicDirectoryLink = {
   href: string;
@@ -44,6 +45,12 @@ const FACEBOOK_SERVICES: readonly PublicDirectoryLink[] = [
   { href: '/buy-facebook-page-likes', label: 'Buy Facebook Page Likes' },
   { href: '/buy-facebook-post-likes', label: 'Buy Facebook Post Likes' },
 ];
+
+/** Crawlable entry points to geo market homepages (not the language switcher dropdown). */
+const MARKET_HOMES: readonly PublicDirectoryLink[] = MARKETS.map((market) => ({
+  href: `/${market}`,
+  label: MARKET_NATIVE_NAMES[market],
+}));
 
 const FREE_TOOLS: readonly PublicDirectoryLink[] = [
   { href: routes.tools, label: 'Main Tools Page' },
@@ -102,6 +109,7 @@ export function getPublicDirectorySections(): PublicDirectorySection[] {
     { id: 'instagram', title: 'Instagram Services', links: [...INSTAGRAM_SERVICES] },
     { id: 'tiktok', title: 'TikTok Services', links: [...TIKTOK_SERVICES] },
     { id: 'facebook', title: 'Facebook Services', links: [...FACEBOOK_SERVICES] },
+    { id: 'markets', title: 'Country Pages', links: [...MARKET_HOMES] },
     { id: 'tools', title: 'Free Social Media Tools', links: [...FREE_TOOLS] },
     { id: 'guides', title: 'Guides & Resources', links: guides },
     { id: 'policies', title: 'Policies', links: [...POLICIES] },

@@ -1,17 +1,12 @@
 import type { Metadata } from 'next';
 
 import { AuthorLoginForm } from '@/components/author/author-login-form';
+import { safeAuthorNextPath } from '@/lib/cms/author-routes';
 
 export const metadata: Metadata = {
   title: 'Author Login',
   robots: { index: false, follow: false },
 };
-
-function safeNextPath(value: string | undefined): string {
-  if (!value?.startsWith('/author')) return '/author';
-  if (value.startsWith('//') || value.includes('\\') || value.includes('://')) return '/author';
-  return value;
-}
 
 export default async function AuthorLoginPage({
   searchParams,
@@ -37,7 +32,7 @@ export default async function AuthorLoginPage({
           </div>
 
           <div className="rounded-[28px] border border-[#F0E4D8] bg-white/90 p-7 shadow-[0_24px_60px_rgba(61,40,23,0.08)] backdrop-blur sm:p-8">
-            <AuthorLoginForm nextPath={safeNextPath(next)} initialError={error} />
+            <AuthorLoginForm nextPath={safeAuthorNextPath(next)} initialError={error} />
           </div>
         </div>
       </div>
