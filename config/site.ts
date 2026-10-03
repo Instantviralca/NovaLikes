@@ -10,7 +10,12 @@ export const site = {
   domain: 'https://novalikes.com',
   supportEmail: 'support@novalikes.com',
   /** Public WhatsApp chat (E.164 without +). Opens wa.me in a new tab. */
-  whatsappNumber: '61468147262',
+  whatsappNumber: '447454758272',
+  company: {
+    legalName: brand.legalName,
+    companyNumber: 'SC876437',
+    officeAddress: '1/4 22 Dundasvale Court, Glasgow, Scotland, G4 0XE',
+  },
   socialLinks: {
     instagram: 'https://www.instagram.com/novalikesco/',
     facebook: 'https://www.facebook.com/novalikes/',

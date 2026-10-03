@@ -8,7 +8,7 @@ import type { BrandConfig } from '@/types/brand';
 
 export const brand: BrandConfig = {
   name: 'NovaLikes',
-  legalName: 'NovaLikes',
+  legalName: 'DMRUSH LIMITED',
   /** Derived from vision: educational-first growth platform — not a campaign slogan. */
   tagline: 'Trusted educational-first social media growth',
 

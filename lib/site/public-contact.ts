@@ -8,10 +8,12 @@ import { site } from '@/config/site';
 
 export type PublicBusinessContact = {
   legalName: string;
+  companyNumber?: string;
   email?: string;
   phone?: string;
   address?: string;
   officeHours?: string;
+  whatsappHref?: string;
   socialLinks: Array<{ id: string; href: string }>;
 };
 
@@ -40,14 +42,18 @@ function isUsableUrl(url: string): boolean {
 /** Verified public contact fields from site/brand config. */
 export function getPublicBusinessContact(): PublicBusinessContact {
   const email = site.supportEmail?.trim();
+  const whatsappDigits = site.whatsappNumber?.trim();
   const socialLinks = Object.entries(site.socialLinks)
     .filter(([, href]) => isUsableUrl(href))
     .map(([id, href]) => ({ id, href }));
 
   return {
     legalName: brand.legalName,
+    companyNumber: site.company.companyNumber,
     email: email && !isPlaceholderEmail(email) ? email : undefined,
-    // Phone, address, and office hours are not configured — omit rather than invent.
+    phone: whatsappDigits ? `+${whatsappDigits}` : undefined,
+    address: site.company.officeAddress,
+    whatsappHref: whatsappDigits ? `https://wa.me/${whatsappDigits}` : undefined,
     socialLinks,
   };
 }

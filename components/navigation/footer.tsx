@@ -127,6 +127,27 @@ export function Footer({
                 </li>
               ))}
             </ul>
+            <div className="mt-5 space-y-1.5 text-sm leading-relaxed text-[#6B6560]">
+              <p className="font-semibold text-[#1C1917]">{site.company.legalName}</p>
+              <p>Company number {site.company.companyNumber}</p>
+              <p>{site.company.officeAddress}</p>
+              <p>
+                WhatsApp Number:{' '}
+                <span dir="ltr" className="whitespace-nowrap">
+                  +{site.whatsappNumber}
+                </span>
+              </p>
+              <p>
+                <a
+                  href={`https://wa.me/${site.whatsappNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-[#25D366] underline-offset-4 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  Chat on WhatsApp
+                </a>
+              </p>
+            </div>
           </div>
 
           <nav aria-label={ui.footer.ariaLabel} className="contents">
