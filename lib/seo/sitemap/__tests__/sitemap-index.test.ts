@@ -5,7 +5,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { CORE_SERVICE_SLUGS, LOCALIZED_LOCALES } from '@/lib/i18n/config';
-import { MARKETS } from '@/lib/market/config';
+import { PRIMARY_MARKETS } from '@/lib/market/config';
 import {
   assertSitemapPartitionComplete,
   buildSitemapEntries,
@@ -66,9 +66,9 @@ describe('Sitemap index architecture', () => {
     expect(findDuplicateSitemapUrls(entries)).toHaveLength(0);
   });
 
-  it('places exactly 44 market URLs in markets.xml and nowhere else', () => {
-    expect(buckets.markets).toHaveLength(44);
-    for (const market of MARKETS) {
+  it('places exactly 11 primary-market URLs in markets.xml and nowhere else', () => {
+    expect(buckets.markets).toHaveLength(PRIMARY_MARKETS.length * (1 + CORE_SERVICE_SLUGS.length));
+    for (const market of PRIMARY_MARKETS) {
       expect(
         buckets.markets.some((entry) => entry.url === `https://novalikes.com/${market}`),
       ).toBe(true);
@@ -80,6 +80,9 @@ describe('Sitemap index architecture', () => {
         ).toBe(true);
       }
     }
+    expect(
+      buckets.markets.filter((entry) => /novalikes\.com\/(ca|au|us)(\/|$)/.test(entry.url)),
+    ).toHaveLength(0);
     expect(
       [...buckets.core, ...buckets.services, ...buckets.locales, ...buckets.tools, ...buckets.learn, ...buckets.taxonomy].filter(
         (entry) => /novalikes\.com\/(ca|au|us|uk)(\/|$)/.test(entry.url),
@@ -154,8 +157,9 @@ describe('Sitemap index architecture', () => {
     expect(marketsXml).toContain('<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>');
     expect(marketsXml).toContain('<urlset');
     expect(marketsXml).toContain('xmlns:xhtml="http://www.w3.org/1999/xhtml"');
-    expect(marketsXml).toContain('hreflang="en-CA"');
-    expect(marketsXml).toContain('https://novalikes.com/ca/buy-instagram-followers');
+    expect(marketsXml).toContain('hreflang="en-GB"');
+    expect(marketsXml).toContain('https://novalikes.com/uk/buy-instagram-followers');
+    expect(marketsXml).not.toContain('https://novalikes.com/ca/buy-instagram-followers');
   });
 
   it('keeps canonical and orphan guarantees on the full inventory', () => {

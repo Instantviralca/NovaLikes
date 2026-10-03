@@ -4,6 +4,8 @@
 
 import { describe, expect, it } from 'vitest';
 
+import { CORE_SERVICE_SLUGS } from '@/lib/i18n/config';
+import { PRIMARY_MARKETS } from '@/lib/market/config';
 import {
   assertSitemapPartitionComplete,
   buildSitemapEntries,
@@ -78,7 +80,8 @@ describe('Sitemap XML presentation (XSL)', () => {
     expect(partition.sum).toBe(partition.total);
     expect(partition.duplicates).toEqual([]);
     expect(partition.missing).toEqual([]);
-    expect(buckets.markets).toHaveLength(44);
+    const marketUrlCount = PRIMARY_MARKETS.length * (1 + CORE_SERVICE_SLUGS.length);
+    expect(buckets.markets).toHaveLength(marketUrlCount);
     expect(validateSitemapCanonicals(entries)).toHaveLength(0);
     expect(findOrphanSitemapPages(entries)).toHaveLength(0);
     expect(
@@ -90,8 +93,8 @@ describe('Sitemap XML presentation (XSL)', () => {
     ).toBe(false);
 
     const marketsXml = serializeUrlSet(buckets.markets);
-    expect(marketsXml).toContain('hreflang="en-CA"');
+    expect(marketsXml).toContain('hreflang="en-GB"');
     expect(marketsXml).toContain('xmlns:xhtml="http://www.w3.org/1999/xhtml"');
-    expect((marketsXml.match(/<url>/g) ?? []).length).toBe(44);
+    expect((marketsXml.match(/<url>/g) ?? []).length).toBe(marketUrlCount);
   });
 });

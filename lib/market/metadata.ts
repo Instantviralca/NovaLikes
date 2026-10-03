@@ -4,7 +4,12 @@ import type { CoreServiceSlug } from '@/lib/i18n/config';
 import { absoluteUrl, buildCanonicalUrl } from '@/lib/seo/metadata/canonical';
 import { buildPageMetadata } from '@/lib/seo/metadata/build';
 import { hreflangMapWithMarket, localizeMarketHref } from '@/lib/market/paths';
-import { MARKET_HREFLANG, MARKET_OG_LOCALE, type Market } from '@/lib/market/config';
+import {
+  isPrimaryMarket,
+  MARKET_HREFLANG,
+  MARKET_OG_LOCALE,
+  type Market,
+} from '@/lib/market/config';
 
 export function buildMarketMetadata(options: {
   market: Market;
@@ -13,7 +18,14 @@ export function buildMarketMetadata(options: {
   description: string;
 }): Metadata {
   const { market, pathname, title, description } = options;
-  const canonicalPath = localizeMarketHref(pathname, market);
+  /**
+   * Only the primary market (UK) self-canonicalizes. Other markets (ca/au/us)
+   * still render at their own URL but canonicalize to the root English page —
+   * one indexed market avoids duplicate-content signals on a new domain.
+   */
+  const canonicalPath = isPrimaryMarket(market)
+    ? localizeMarketHref(pathname, market)
+    : pathname;
   const languages: Record<string, string> = {};
   for (const [code, path] of Object.entries(hreflangMapWithMarket(pathname))) {
     languages[code] = absoluteUrl(path);

@@ -8,6 +8,22 @@ import { CORE_SERVICE_SLUGS, isCoreServiceSlug } from '@/lib/i18n/config';
 export const MARKETS = ['ca', 'au', 'us', 'uk'] as const;
 export type Market = (typeof MARKETS)[number];
 
+/**
+ * Markets that get their own canonical URL, hreflang alternate, and sitemap
+ * listing. Any other market in MARKETS still renders (so existing links and
+ * backlinks keep working) but its pages canonicalize to the root English
+ * page and are not linked, indexed as a distinct URL, or listed in the
+ * sitemap. New domain / low authority — one indexed English market avoids
+ * splitting crawl budget and duplicate-content signals across four clones.
+ */
+export const PRIMARY_MARKETS: readonly Market[] = ['uk'];
+
+const PRIMARY_MARKET_SET = new Set<string>(PRIMARY_MARKETS);
+
+export function isPrimaryMarket(market: Market): boolean {
+  return PRIMARY_MARKET_SET.has(market);
+}
+
 export const MARKET_PREFIXES: Record<Market, string> = {
   ca: 'ca',
   au: 'au',

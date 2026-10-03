@@ -35,12 +35,12 @@ describe('Geo market routing', () => {
     expect(marketSwitcherHref('/about', 'uk')).toBe('/about');
   });
 
-  it('includes en-CA, en-AU, en-US and en-GB in hreflang for market-eligible paths only', () => {
+  it('includes only primary-market en-GB in hreflang for market-eligible paths', () => {
     const serviceMap = hreflangMapWithMarket('/buy-instagram-followers');
-    expect(serviceMap['en-CA']).toBe('/ca/buy-instagram-followers');
-    expect(serviceMap['en-AU']).toBe('/au/buy-instagram-followers');
-    expect(serviceMap['en-US']).toBe('/us/buy-instagram-followers');
     expect(serviceMap['en-GB']).toBe('/uk/buy-instagram-followers');
+    expect(serviceMap['en-CA']).toBeUndefined();
+    expect(serviceMap['en-AU']).toBeUndefined();
+    expect(serviceMap['en-US']).toBeUndefined();
     expect(serviceMap.en).toBe('/buy-instagram-followers');
     expect(serviceMap['x-default']).toBe('/buy-instagram-followers');
 

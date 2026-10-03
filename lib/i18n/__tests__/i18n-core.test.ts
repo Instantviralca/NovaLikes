@@ -71,7 +71,7 @@ describe('i18n hreflang matrix', () => {
         expect(map[HREFLANG[locale]]).toBe(localizeHref(pathName, locale));
       }
       const expectedKeys = ['ar', 'de', 'en', 'es', 'fr', 'it', 'pt-BR', 'x-default'];
-      if (isMarketCorePath(pathName)) expectedKeys.push('en-AU', 'en-CA', 'en-GB', 'en-US');
+      if (isMarketCorePath(pathName)) expectedKeys.push('en-GB');
       expect(Object.keys(map).sort()).toEqual(expectedKeys.sort());
     }
   });

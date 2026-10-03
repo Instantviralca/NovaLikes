@@ -13,6 +13,7 @@ import {
   MARKET_HREFLANG,
   MARKET_PREFIXES,
   MARKETS,
+  PRIMARY_MARKETS,
   type Market,
 } from '@/lib/market/config';
 import { localizeHref, parseLocalePath, stripLocalePrefix } from '@/lib/i18n/paths';
@@ -109,7 +110,10 @@ export function resolvePublicHref(
 }
 
 /**
- * Full hreflang map including en-CA for market-eligible core paths.
+ * Full hreflang map including en-GB (UK) for market-eligible core paths.
+ * Only PRIMARY_MARKETS get an hreflang alternate — other markets (ca/au/us)
+ * still render their own pages but are not advertised as separate language
+ * variants, so they don't appear here.
  */
 export function hreflangMapWithMarket(pathname: string): Record<string, string> {
   const bare = stripMarketPrefix(pathname);
@@ -121,7 +125,7 @@ export function hreflangMapWithMarket(pathname: string): Record<string, string> 
   hrefs['x-default'] = localizeHref(bare, DEFAULT_LOCALE);
 
   if (isMarketCorePath(bare)) {
-    for (const market of MARKETS) {
+    for (const market of PRIMARY_MARKETS) {
       hrefs[MARKET_HREFLANG[market]] = localizeMarketHref(bare, market);
     }
   }

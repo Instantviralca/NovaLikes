@@ -7,7 +7,7 @@ import type { MetadataRoute } from 'next';
 import { CORE_SERVICE_SLUGS, LOCALIZED_LOCALES } from '@/lib/i18n/config';
 import { COMPANY_PATHS, CORE_PATHS, LEGAL_PATHS, TOOL_PATHS } from '@/lib/i18n/core-paths';
 import { localizeHref } from '@/lib/i18n/paths';
-import { MARKETS } from '@/lib/market/config';
+import { PRIMARY_MARKETS } from '@/lib/market/config';
 import { hreflangMapWithMarket, localizeMarketHref } from '@/lib/market/paths';
 import { isCoreLocalizedPath, isEnglishOnlyLearnPath } from '@/lib/i18n/config';
 import { getIndexableRoutes } from '@/lib/seo/sitemap/routes';
@@ -104,7 +104,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
   }
 
   const marketStamp = lastModifiedByPath.get('/') ?? new Date('2026-08-31T00:00:00.000Z');
-  for (const market of MARKETS) {
+  for (const market of PRIMARY_MARKETS) {
     for (const corePath of ['/', ...CORE_SERVICE_SLUGS.map((slug) => `/${slug}`)] as const) {
       const marketPath = localizeMarketHref(corePath, market);
       const englishStamp = lastModifiedByPath.get(corePath) ?? marketStamp;
