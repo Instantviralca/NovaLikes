@@ -1494,10 +1494,9 @@ export const VIEW_INSTAGRAM_PROFILE_WITHOUT_LOGIN_ARTICLE: LearnArticleRecord = 
     ogImage: `${IMAGE_DIR}/featured.png`,
     keywords: [
       'view Instagram profile without login',
-      'Instagram profile viewer',
       'view Instagram without account',
       'Instagram viewer without login',
-      'public Instagram profile viewer',
+      'what is public on an Instagram profile',
       'see Instagram profile anonymously',
     ],
   },

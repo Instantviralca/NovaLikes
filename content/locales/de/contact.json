@@ -53,9 +53,9 @@
   },
   "finalCta": {
     "title": "Brauchen Sie noch Hilfe?",
-    "description": "Unser freundliches Support-Team ist immer für Sie da. Zögern Sie nicht, uns jederzeit zu erreichen!",
+    "description": "Unser Support-Team ist rund um die Uhr per E-Mail und WhatsApp (+44 7454 758272) erreichbar und antwortet in der Regel innerhalb von 15 Minuten.",
     "primaryCta": {
-      "label": "Live-Chat starten"
+      "label": "Nachricht senden"
     }
   },
   "chrome": {
@@ -72,13 +72,13 @@
     "messageRequired": "Die Nachricht ist erforderlich.",
     "messageMin": "Die Nachricht muss mindestens 20 Zeichen lang sein.",
     "emailTitle": "E-Mail-Support",
-    "emailReply": "Wir antworten innerhalb von Minuten",
-    "liveChatTitle": "Live-Chat",
-    "liveChatAvailable": "24/7 auf unserer Website verfügbar",
-    "liveChatHelp": "Erhalten Sie sofort Hilfe von unserem Team",
+    "emailReply": "Wir antworten in der Regel innerhalb von 15 Minuten",
+    "liveChatTitle": "WhatsApp-Support",
+    "liveChatAvailable": "+44 7454 758272 – rund um die Uhr erreichbar",
+    "liveChatHelp": "Schreiben Sie uns bei Fragen zu Bestellungen und für Nachfüllanfragen",
     "quickTitle": "Schneller Support",
     "quickHours": "Mo – So: 24/7",
-    "quickReach": "Erreichen Sie uns jederzeit über das Kontaktformular",
+    "quickReach": "Erreichen Sie uns jederzeit per E-Mail, WhatsApp oder über das Kontaktformular",
     "responseTitle": "Antwortzeit",
     "responseAverage": "Durchschnittliche Antwortzeit:",
     "responseTime": "Unter 15 Minuten",

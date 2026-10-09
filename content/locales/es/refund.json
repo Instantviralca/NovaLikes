@@ -117,11 +117,15 @@
         },
         {
           "type": "paragraph",
-          "text": "La disponibilidad de recarga depende del servicio y del paquete adquiridos. Las condiciones de recarga aplicables son las mostradas para el servicio o paquete correspondiente."
+          "text": "Todos los servicios de NovaLikes incluyen un periodo de recarga de 6 meses que empieza en la fecha en que se entrega tu pedido. Si la cantidad entregada baja durante ese periodo, contacta con soporte por WhatsApp (+44 7454 758272) o por correo con tu ID de pedido y repondremos la diferencia en el mismo perfil, Página o contenido."
         },
         {
           "type": "paragraph",
-          "text": "La Garantía de reembolso de 30 días es independiente de cualquier condición de recarga específica del paquete. Esta página no convierte el plazo de reembolso en una garantía universal de recarga de 30 días."
+          "text": "Para mantener el derecho a recarga, el nombre de usuario no debe cambiarse y el perfil, la Página o el contenido deben ser públicos mientras se entregan el pedido original y cualquier recarga. Puedes poner tu cuenta en privado cuando termine la entrega."
+        },
+        {
+          "type": "paragraph",
+          "text": "La Garantía de reembolso de 30 días es independiente del periodo de recarga de 6 meses. Una recarga repone las caídas de las métricas entregadas; la garantía de reembolso cubre las solicitudes de reembolso elegibles hechas en los 30 días siguientes a la compra."
         }
       ]
     },

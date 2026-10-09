@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "SERVICES FACEBOOK",
       "title": "Acheter des J’aime de publication Facebook",
-      "description": "Achetez des J’aime de publication Facebook en choisissant le forfait et la quantité souhaités pour une publication Facebook publique éligible précise. Comparez les forfaits de J’aime de publication et les prix disponibles, sélectionnez le nombre de likes souhaité, indiquez l’URL de publication Facebook publique exacte, puis finalisez votre commande en ligne. Votre mot de passe Facebook n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "description": "Achetez des J’aime de publication Facebook pour toute publication publique d’une Page ou d’un profil personnel, à partir de 2,99 $ US. Livrés en J’aime par défaut, avec J’adore ou d’autres réactions sur demande. Collez le lien de la publication, choisissez un forfait et payez, sans mot de passe. La plupart des commandes démarrent sous 6 à 8 heures, et chaque commande inclut un refill de 6 mois et un support WhatsApp 24 h/24 et 7 j/7.",
       "purpose": "Convert for Facebook post likes packages worldwide",
       "primaryKeyword": "buy Facebook Post Likes",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "fb-post-trust-url",
-          "label": "URL de publication Facebook publique uniquement"
+          "label": "Publications de Page et de profil"
         },
         {
           "id": "fb-post-trust-password",
-          "label": "Aucun mot de passe requis"
+          "label": "Autres réactions sur demande"
         },
         {
           "id": "fb-post-trust-checkout",
-          "label": "Paiement sécurisé"
+          "label": "Aucun mot de passe requis"
         },
         {
           "id": "fb-post-trust-track",
-          "label": "Suivi de commande"
+          "label": "Refill de 6 mois"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Forfaits et tarifs de J’aime de publication Facebook",
-      "description": "Comparez les forfaits de J’aime de publication Facebook disponibles, les quantités et les prix avant de commander. Choisissez le nombre de J’aime de publication souhaité pour une publication Facebook publique éligible précise, relisez le prix actuel du forfait, puis ajoutez le forfait sélectionné au panier lorsque vous êtes prêt.",
+      "description": "Les prix sont en dollars américains. 1 000 J’aime de publication est le forfait le plus populaire ; choisissez une taille adaptée au nombre de personnes qui voient habituellement vos publications.",
       "purpose": "Present real NovaLikes.com Facebook post likes packages",
       "primaryKeyword": "Facebook Post Likes",
       "suggestedWordCount": 45,
@@ -242,31 +242,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-post-likes-why-choose",
-        "title": "Pourquoi choisir NovaLikes pour des J’aime de publication Facebook ?",
-        "description": "NovaLikes facilite la comparaison des forfaits de J’aime de publication Facebook avant de commander. Choisissez la quantité de J’aime de publication souhaitée, indiquez l’URL de publication Facebook publique exacte, relisez le prix du forfait, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "title": "Pourquoi acheter des J’aime de publication Facebook chez NovaLikes ?",
+        "description": "Notre équipe traite des commandes pour les réseaux sociaux depuis 7 à 8 ans, d’abord sur d’autres sites, puis sous le nom ViralMe et aujourd’hui NovaLikes. Une commande de J’aime de publication Facebook chez nous est simple : une publication, une heure de démarrage connue et un refill si le nombre baisse.",
         "items": [
           {
             "id": "buy-facebook-post-likes-0",
-            "title": "Plusieurs quantités de J’aime de publication",
-            "description": "Comparez les quantités de J’aime de publication Facebook disponibles et choisissez le forfait qui correspond au nombre de likes que vous voulez commander pour la publication sélectionnée.",
+            "title": "Pages et profils",
+            "description": "Les J’aime peuvent aller sur une publication publique d’une Page Facebook ou d’un profil personnel, tant que l’audience de la publication est réglée sur Public.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-1",
-            "title": "URL de publication Facebook publique uniquement",
-            "description": "Indiquez l’URL de publication Facebook publique exacte de la publication à laquelle vous voulez ajouter les likes. Votre mot de passe Facebook n’est pas requis.",
+            "title": "J’aime par défaut, autres réactions sur demande",
+            "description": "Les commandes sont livrées avec la réaction J’aime standard. Vous préférez J’adore ou une autre réaction ? Indiquez-le dans la note au paiement.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-2",
-            "title": "Vérifiez avant le paiement",
-            "description": "Vérifiez la quantité de J’aime de publication sélectionnée et le prix actuel du forfait avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "title": "Démarrage en 6 à 8 heures",
+            "description": "La plupart des commandes démarrent dans les 6 à 8 heures suivant le paiement et se terminent 4 à 6 heures plus tard. Livraison progressive possible sur demande.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-3",
-            "title": "Suivi de commande",
-            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande de J’aime de publication Facebook.",
+            "title": "Refill de 6 mois",
+            "description": "Si le nombre de réactions de cette publication baisse dans les 6 mois suivant la livraison, envoyez votre numéro de commande sur WhatsApp et nous complétons.",
             "icon": "headphones"
           }
         ]
@@ -276,66 +276,74 @@
       "canYouBuy": {
         "id": "buy-facebook-post-likes-can-you-buy",
         "title": "Peut-on acheter des J’aime de publication Facebook ?",
-        "description": "Oui. Des forfaits de J’aime de publication Facebook peuvent être achetés via des services de J’aime de publication en ligne. Chez NovaLikes, vous choisissez un forfait de J’aime de publication disponible, indiquez l’URL de publication Facebook publique de la publication que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "description": "Oui. Vous pouvez acheter des J’aime pour n’importe quelle publication Facebook publique, d’une Page ou d’un profil personnel. Copiez le lien de la publication, choisissez un forfait et payez en dollars américains. Le nombre de réactions sous cette publication augmente ; vos abonnés et les chiffres de votre Page restent identiques.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-4",
-            "title": "Ce qu’une commande de J’aime de publication Facebook modifie",
-            "description": "Une commande de J’aime de publication Facebook s’applique au nombre de likes de la publication Facebook publique fournie avec la commande. Elle n’ajoute pas automatiquement des abonnés, des J’aime de Page, des commentaires, des partages ou des vues.",
+            "title": "Une publication par commande",
+            "description": "Les J’aime sont ajoutés à la publication du lien envoyé. Vous voulez des J’aime sur plusieurs publications ? Passez une commande par publication.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-post-likes-5",
-            "title": "Ce qu’il faut pour passer commande",
-            "description": "Vous avez besoin de l’URL de publication Facebook publique exacte et du forfait de J’aime de publication que vous souhaitez acheter. Votre mot de passe Facebook n’est pas requis.",
+            "title": "Comment obtenir le lien",
+            "description": "Sur la publication, appuyez sur Partager puis Copier le lien, ou cliquez sur l’horodatage de la publication et copiez l’adresse. N’envoyez jamais votre mot de passe.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-post-likes-6",
-            "title": "Ce que les J’aime de publication Facebook n’incluent pas",
-            "description": "Les J’aime de publication sont distincts des abonnés Facebook, des J’aime de Page, des commentaires, des partages et des vues. Commander des J’aime de publication n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni une portée, des ventes ou une croissance organique supplémentaires.",
+            "title": "L’audience doit être Public",
+            "description": "Les publications partagées avec Amis ou une liste personnalisée ne peuvent pas recevoir de commande. Cherchez l’icône du globe près de la date.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les J’aime de publication Facebook, choisi la bonne quantité de J’aime de publication et indiqué l’URL de la publication Facebook publique exacte à laquelle vous voulez ajouter les likes."
+        "closingNote": "Les J’aime proviennent de comptes d’apparence réaliste. Nous ne prétendons pas qu’il s’agit de personnes actives qui commenteront ou partageront la publication."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-post-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Les J’aime achetés aident-ils une publication Facebook ?",
+        "description": "Ils aident l’apparence d’une publication, pas sa diffusion à eux seuls. Facebook classe les publications surtout selon l’engagement : commentaires, partages, réactions d’amis et temps passé. Un bon nombre de réactions est une preuve sociale : on s’arrête plus volontiers sur une publication à laquelle d’autres ont déjà réagi, et c’est là le vrai bénéfice.",
+        "helpTitle": "Là où les J’aime aident",
+        "helpItems": [
+          "Les offres, événements et annonces qui doivent paraître populaires dès la première heure.",
+          "Les publications que vous allez booster, pour que les spectateurs payants n’arrivent pas sur une publication à deux réactions.",
+          "Les publications produits ou services que les clients voient avant de contacter votre entreprise."
+        ],
+        "limitTitle": "Là où ils n’aident pas",
+        "limitItems": [
+          "La portée à eux seuls : les commentaires et partages pèsent bien plus que les J’aime.",
+          "Une publication à 3 000 J’aime sur une Page de 200 abonnés paraît peu naturelle. Restez proportionné.",
+          "Transformer une publication faible en bonne publication : le contenu décide toujours si les gens interagissent."
+        ],
+        "closingNote": "Notre guide du Learn Center (en anglais) pour obtenir plus de J’aime sur une publication Facebook présente des moyens organiques d’augmenter les réactions, en complément de tout forfait."
       },
       "whatHappens": {
         "id": "buy-facebook-post-likes-what-happens",
         "title": "Que se passe-t-il après l’achat de J’aime de publication Facebook ?",
-        "description": "Une fois votre commande de J’aime de publication Facebook passée, le forfait de J’aime de publication et l’URL de publication Facebook publique que vous avez fournis servent à traiter la commande pour la publication sélectionnée. Gardez la publication accessible publiquement lorsque c’est requis pendant le traitement.",
+        "description": "Ce qui se passe après le paiement de J’aime de publication Facebook.",
         "steps": [
           {
             "id": "buy-facebook-post-likes-th-1",
-            "title": "Les détails de votre commande sont vérifiés",
-            "description": "Le forfait de J’aime de publication, la quantité et l’URL de publication Facebook fournie sont associés à votre commande, afin que la demande soit traitée pour la publication visée."
+            "title": "Lien et note vérifiés",
+            "description": "Le lien de votre publication et toute note — par exemple une autre réaction ou un rythme progressif — sont rattachés à votre commande avant le début de la livraison."
           },
           {
             "id": "buy-facebook-post-likes-th-2",
-            "title": "Les J’aime de publication vont à la publication indiquée",
-            "description": "La commande s’applique à la publication Facebook liée à l’URL que vous avez fournie. Vérifiez soigneusement l’URL de la publication avant de finaliser le paiement."
+            "title": "Les J’aime démarrent sous 6 à 8 heures",
+            "description": "La plupart des commandes démarrent dans les 6 à 8 heures suivant le paiement. Les commandes progressives démarrent dans le même délai mais étalent les réactions."
           },
           {
             "id": "buy-facebook-post-likes-th-3",
-            "title": "Le délai de traitement peut varier",
-            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité de J’aime de publication et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+            "title": "Livraison standard en 4 à 6 heures",
+            "description": "Une fois lancées, la plupart des commandes se terminent en 4 à 6 heures. Suivez l’avancement sur la page Suivi de commande."
           },
           {
             "id": "buy-facebook-post-likes-th-4",
-            "title": "Consultez le statut de votre commande",
-            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+            "title": "Le refill de 6 mois commence",
+            "description": "La couverture refill commence le jour où la livraison se termine. Si le nombre baisse, envoyez votre numéro de commande sur WhatsApp."
           }
         ],
-        "closingNote": "Évitez de supprimer la publication fournie, de la rendre indisponible, ou de modifier quoi que ce soit qui empêche l’accès pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+        "closingNote": "Gardez la publication publique et ne la supprimez pas ni ne changez son audience avant la fin de la livraison, ni pendant la période de refill."
       },
       "serviceCompare": {
         "id": "buy-facebook-post-likes-service-compare",
@@ -367,8 +375,8 @@
       "beforeBuying": {
         "id": "buy-facebook-post-likes-before-buying",
         "title": "Que vérifier avant d’acheter des J’aime de publication Facebook",
-        "description": "Avant d’acheter des J’aime de publication Facebook, relisez le forfait et les détails de la publication avant de finaliser votre commande. Assurez-vous que la quantité de J’aime de publication, le prix, l’URL de publication Facebook et le service sélectionné correspondent à ce que vous voulez pour cette publication.",
-        "framingNote": "Vérifiez une dernière fois l’URL de publication Facebook fournie, la quantité de J’aime de publication et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des J’aime de publication garantirait des commentaires, des partages, des abonnés, des J’aime de Page, de la portée, des ventes ou une croissance organique.",
+        "description": "La plupart des problèmes viennent du lien de la publication ou de son réglage d’audience. Vérifiez ces cinq points avant de payer.",
+        "framingNote": "Les prix sont en dollars américains. Si vous voulez une autre réaction que J’aime, indiquez-la dans la note au paiement.",
         "items": [
           {
             "id": "buy-facebook-post-likes-7",
@@ -404,33 +412,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-post-likes-worldwide",
-        "title": "Choisir la bonne publication Facebook pour des likes",
-        "description": "Les J’aime de publication Facebook s’appliquent à une publication Facebook publique éligible précise. La Page elle-même et la publication individuelle sont des cibles différentes : vérifiez soigneusement l’URL fournie.",
-        "eyebrow": "Prêt pour des J’aime de publication Facebook",
-        "closingNote": "Les J’aime de publication Facebook s’appliquent à une publication Facebook publique précise. Indiquez l’URL de la publication plutôt que seulement l’URL de la Page, gardez la publication disponible et relisez le forfait avant le paiement.",
+        "title": "Quelles publications Facebook peuvent recevoir des J’aime",
+        "description": "Toute publication publique peut recevoir des J’aime. Ce qui compte, c’est où elle a été publiée et avec qui elle est partagée.",
+        "eyebrow": "Avant de commander",
+        "closingNote": "Vous ne savez pas si votre publication est publique ? Envoyez le lien sur WhatsApp avant de commander et nous vérifierons.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-12",
-            "title": "Utilisez l’URL de la publication précise",
-            "description": "Indiquez l’URL publique de la publication Facebook individuelle à laquelle le forfait de J’aime de publication doit s’appliquer.",
+            "title": "Publications de Page",
+            "description": "Les publications d’une Page Facebook sont publiques par défaut. Copiez le lien de la publication et vous pouvez commander.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-13",
-            "title": "N’indiquez pas seulement l’URL de la Page",
-            "description": "Une URL générale de Page Facebook n’est pas la bonne cible pour une commande de J’aime de publication.",
+            "title": "Publications de profil",
+            "description": "Les publications d’un profil personnel doivent avoir une audience Public. Modifiez-la si besoin depuis le menu à trois points de la publication.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-14",
-            "title": "Gardez la publication disponible",
-            "description": "Évitez de supprimer ou de restreindre la publication fournie tant que la commande en cours a besoin d’y accéder.",
+            "title": "Photos et vidéos",
+            "description": "Les publications photo et vidéo fonctionnent de la même façon. Utilisez le lien de la publication elle-même, pas celui de votre profil ou de votre Page.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-post-likes-15",
-            "title": "Relisez votre forfait de J’aime de publication",
-            "description": "Vérifiez la quantité de J’aime de publication, l’URL de publication fournie et le prix avant de finaliser le paiement.",
+            "title": "Réactions sur demande",
+            "description": "La livraison utilise la réaction J’aime par défaut. Écrivez « J’adore » ou une autre réaction dans la note au paiement si vous préférez.",
             "icon": "clapperboard"
           }
         ]
@@ -438,32 +446,32 @@
       "packageSizes": {
         "id": "buy-facebook-post-likes-popular-packages",
         "title": "Forfaits de J’aime de publication Facebook populaires",
-        "description": "Comparez ci-dessous quelques-unes des quantités de J’aime de publication Facebook disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options de forfaits.",
+        "description": "Choisissez une taille adaptée à votre audience. Une publication sur une Page de quelques centaines d’abonnés paraît naturelle avec 100 à 500 J’aime ; des milliers de J’aime y sembleraient déplacés.",
         "rows": [
           {
             "id": "fb-post-100",
             "quantity": "100 J’aime de publication",
-            "recommendedFor": "Un forfait plus petit pour une publication Facebook publique précise où vous voulez ajouter cent likes."
+            "recommendedFor": "Pour les publications de petites Pages et de profils personnels, ou pour tester le service d’abord."
           },
           {
             "id": "fb-post-500",
             "quantity": "500 J’aime de publication",
-            "recommendedFor": "Une option petite à intermédiaire pour une publication Facebook publique où vous voulez ajouter cinq cents likes."
+            "recommendedFor": "Pour les Pages de commerces locaux et les profils actifs qui veulent qu’une publication paraisse populaire."
           },
           {
             "id": "fb-post-1000",
             "quantity": "1 000 J’aime de publication",
-            "recommendedFor": "Un forfait intermédiaire pour une publication Facebook publique où vous voulez ajouter mille likes."
+            "recommendedFor": "Notre forfait le plus populaire : convient aux annonces, offres et événements sur des Pages établies."
           },
           {
             "id": "fb-post-5000",
             "quantity": "5 000 J’aime de publication",
-            "recommendedFor": "Une option plus importante pour une publication Facebook publique où vous voulez ajouter cinq mille likes."
+            "recommendedFor": "Pour les grandes Pages et les publications que vous boostez avec des publicités. Livraison progressive conseillée."
           },
           {
             "id": "fb-post-10000",
             "quantity": "10 000 J’aime de publication",
-            "recommendedFor": "Un forfait à plus fort volume pour une publication Facebook publique où vous voulez ajouter dix mille likes."
+            "recommendedFor": "Pour les Pages de grandes marques et les publications de campagne. Étalez la livraison sur une plus longue période."
           }
         ]
       },
@@ -573,35 +581,35 @@
     "whyBuy": {
       "id": "buy-facebook-post-likes-why-buy",
       "title": "Pourquoi achète-t-on des J’aime de publication Facebook ?",
-      "description": "On achète des J’aime de publication Facebook pour des raisons variées. Certains veulent augmenter le nombre de likes visible d’une publication Facebook précise, d’autres choisissent un forfait de J’aime de publication pour un contenu lié à un lancement, une annonce, une campagne ou une activité de Page continue. Le service modifie le nombre de likes de la publication indiquée, mais il ne garantit ni commentaires, ni partages, ni abonnés, ni J’aime de Page, ni portée, ni ventes, ni croissance organique.",
+      "description": "Voici les raisons que donnent les clients pour les J’aime de publication Facebook, toutes liées à l’impression qu’une publication donne à ceux qui la voient.",
       "items": [
         {
           "id": "buy-facebook-post-likes-wb-1",
-          "title": "Augmenter le nombre de likes visible",
-          "description": "Un forfait de J’aime de publication Facebook peut être utilisé lorsque vous voulez augmenter le nombre de likes affiché sur une publication Facebook publique éligible précise."
+          "title": "Offres et soldes",
+          "description": "Les entreprises ajoutent des J’aime aux publications d’offres et de soldes pour que les clients voient que d’autres sont aussi intéressés."
         },
         {
           "id": "buy-facebook-post-likes-wb-2",
-          "title": "Utiliser des J’aime de publication autour d’un contenu précis",
-          "description": "Les propriétaires de Pages peuvent choisir un forfait de J’aime de publication pour une publication particulière liée à un lancement, une annonce, une campagne ou une autre activité Facebook."
+          "title": "Événements et annonces",
+          "description": "Les publications d’événements et d’annonces ne comptent que quelques jours ; elles doivent donc paraître actives rapidement."
         },
         {
           "id": "buy-facebook-post-likes-wb-3",
-          "title": "Se concentrer sur l’indicateur J’aime de publication",
-          "description": "Les J’aime de publication Facebook s’appliquent au nombre de likes de la publication indiquée. Ils n’ajoutent pas automatiquement des abonnés Facebook, des J’aime de Page, des commentaires, des partages ou des vues."
+          "title": "Avant de booster",
+          "description": "Une publication avec quelques réactions fait meilleure impression quand vous commencez à payer pour la booster."
         },
         {
           "id": "buy-facebook-post-likes-wb-4",
-          "title": "Choisissez la quantité souhaitée",
-          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre de J’aime de publication Facebook que vous voulez commander pour la publication indiquée."
+          "title": "Publications marquantes",
+          "description": "Ouvertures, anniversaires et lancements sont très partagés : les propriétaires veulent qu’ils paraissent célébrés."
         },
         {
           "id": "buy-facebook-post-likes-wb-5",
-          "title": "Utilisez les J’aime de publication en complément de votre contenu",
-          "description": "Acheter des J’aime de publication ne remplace pas la publication ni la gestion de votre propre contenu Facebook. Publications, réponses, informations de Page et autres activités dépendent toujours de la façon dont vous gérez votre présence Facebook."
+          "title": "Rester réaliste",
+          "description": "Les J’aime changent un chiffre. Commentaires, partages, messages et ventes dépendent toujours de la publication et de votre audience."
         }
       ],
-      "bottomNote": "Si les abonnés Facebook ou les J’aime de Page sont l’indicateur que vous voulez modifier, choisissez plutôt le service Facebook correspondant, et non un forfait de J’aime de publication."
+      "bottomNote": "Vous voulez une Page ou un profil plus grand plutôt que des J’aime sur une publication ? Comparez les abonnés Facebook ci-dessous."
     },
     "howToBuy": {
       "id": "how-it-works",

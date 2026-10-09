@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "TIKTOK-SERVICES",
-      "title": "TikTok Views kaufen",
-      "description": "Kaufen Sie TikTok Views, indem Sie Paket und Menge wählen, die zu Ihrem Video passen. NovaLikes lässt Sie verfügbare TikTok-Views-Pakete und Preise vor der Bestellung vergleichen. Wählen Sie die gewünschte View-Zahl, geben Sie den korrekten öffentlichen TikTok-Videolink an und schließen Sie die Bestellung online ab. Ihr TikTok-Passwort ist nicht erforderlich, und nach dem Checkout können Sie verfügbare Statusinformationen über die Bestellverfolgung prüfen.",
+      "title": "TikTok Views kaufen – für Videos",
+      "description": "Kaufen Sie TikTok Views für jedes öffentliche Video, ab 1,99 US-$ für 1.000 High-Quality-Views oder mit unserer Premium-Option. Videolink kopieren, Paket wählen, bezahlen – kein Passwort nötig. Die meisten Bestellungen starten innerhalb von 6–8 Stunden und sind 4–6 Stunden später fertig, oder sie kommen auf Wunsch schrittweise. Jede Bestellung enthält eine 6-monatige Nachfüllung und WhatsApp-Support rund um die Uhr.",
       "purpose": "Convert for TikTok views packages worldwide",
       "primaryKeyword": "buy TikTok views",
       "supportingKeywords": [
@@ -31,7 +31,7 @@
       "trustLabels": [
         {
           "id": "tt-v-trust-url",
-          "label": "Nur öffentlicher Videolink"
+          "label": "High Quality oder Premium"
         },
         {
           "id": "tt-v-trust-password",
@@ -39,11 +39,11 @@
         },
         {
           "id": "tt-v-trust-checkout",
-          "label": "Sicherer Checkout"
+          "label": "Start in 6–8 Stunden"
         },
         {
           "id": "tt-v-trust-track",
-          "label": "Bestellverfolgung"
+          "label": "6 Monate Nachfüllung"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "TikTok-Views-Pakete und Preise",
-      "description": "Vergleichen Sie verfügbare TikTok-Views-Pakete, Mengen und Preise vor der Bestellung. Wählen Sie die View-Zahl für Ihr öffentliches TikTok-Video, prüfen Sie die verfügbare Paketoption und den aktuellen Preis und legen Sie das gewählte Paket in den Warenkorb, wenn Sie soweit sind.",
+      "description": "Die Preise sind in US-Dollar. Wechseln Sie zwischen High Quality und Premium, um die jeweiligen Pakete zu sehen; 50.000 High-Quality- und 10.000 Premium-Views sind am beliebtesten.",
       "purpose": "Present real NovaLikes.com TikTok views packages",
       "primaryKeyword": "TikTok views packages",
       "suggestedWordCount": 55,
@@ -238,31 +238,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-tiktok-views-why-choose",
-        "title": "Warum NovaLikes für TikTok Views?",
-        "description": "NovaLikes macht es einfach, TikTok-Views-Pakete vor der Bestellung zu vergleichen. Wählen Sie die View-Zahl für ein öffentliches TikTok-Video, prüfen Sie die verfügbare Paketoption und den aktuellen Preis, geben Sie den korrekten Videolink an und nutzen Sie nach dem Checkout die Bestellverfolgung für verfügbare Statusinformationen.",
+        "title": "Warum TikTok Views bei NovaLikes kaufen?",
+        "description": "Unser Team wickelt seit 7–8 Jahren Social-Media-Bestellungen ab – von unseren früheren Websites über ViralMe bis heute zu NovaLikes. Eine TikTok-Views-Bestellung bei uns dreht sich um die vier Dinge, nach denen Kunden am häufigsten fragen.",
         "items": [
           {
             "id": "buy-tiktok-views-0",
-            "title": "Mehrere View-Mengen",
-            "description": "Vergleichen Sie die verfügbaren TikTok-Views-Mengen und wählen Sie das Paket, das zur gewünschten View-Zahl passt.",
+            "title": "Zwei View-Optionen",
+            "description": "Wählen Sie High Quality für den niedrigsten Preis pro View oder Premium, unsere höherwertige Option. Unsicher? Fragen Sie uns vor der Bestellung per WhatsApp.",
             "icon": "users"
           },
           {
             "id": "buy-tiktok-views-1",
-            "title": "Nur öffentlicher Videolink",
-            "description": "Geben Sie den korrekten öffentlichen TikTok-Videolink zu dem Inhalt an, dem die Views hinzugefügt werden sollen. Ihr TikTok-Passwort ist nicht erforderlich.",
+            "title": "Start in 6–8 Stunden",
+            "description": "Die meisten TikTok-Views-Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung und sind 4–6 Stunden nach dem Start fertig.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-views-2",
-            "title": "Vor dem Checkout prüfen",
-            "description": "Prüfen Sie die gewählte View-Menge, die Paketoption und den aktuellen Preis, bevor Sie die Bestellung in den Warenkorb legen und den Checkout abschließen.",
+            "title": "Schrittweise Lieferung möglich",
+            "description": "Soll der Aufrufzähler gleichmäßig steigen? Fügen Sie beim Bezahlen eine Notiz hinzu oder schreiben Sie uns auf WhatsApp, dann verteilen wir die Views.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-views-3",
-            "title": "Bestellverfolgung",
-            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer TikTok-Views-Bestellung zu prüfen.",
+            "title": "6 Monate Nachfüllung",
+            "description": "Sinkt der Aufrufzähler dieses Videos innerhalb von 6 Monaten nach der Lieferung, senden Sie Ihre Bestellnummer per WhatsApp, und wir füllen ihn wieder auf.",
             "icon": "headphones"
           }
         ]
@@ -272,66 +272,74 @@
       "canYouBuy": {
         "id": "buy-tiktok-views-can-you-buy",
         "title": "Kann man TikTok Views kaufen?",
-        "description": "Ja. TikTok Views können über Online-Views-Services gekauft werden. Bei NovaLikes wählen Sie ein verfügbares Views-Paket, geben den öffentlichen TikTok-Videolink zum gewünschten Inhalt an und schließen die Bestellung über die Website ab.",
+        "description": "Ja. Sie können Views für jedes öffentliche TikTok-Video kaufen. Kopieren Sie den Link über den Teilen-Button von TikTok, wählen Sie High Quality oder Premium und eine Menge und bezahlen Sie in US-Dollar. Der öffentliche Aufrufzähler dieses Videos steigt – Likes, Kommentare und Follower ändern sich nicht.",
         "cards": [
           {
             "id": "buy-tiktok-views-4",
-            "title": "Was eine TikTok-Views-Bestellung ändert",
-            "description": "Eine TikTok-Views-Bestellung gilt für die View-Zahl des öffentlichen Videos, das mit der Bestellung übermittelt wird. Sie fügt Ihrem Profil nicht automatisch Follower und dem Video nicht automatisch Likes hinzu.",
+            "title": "Der Aufrufzähler steigt",
+            "description": "Die Views werden zur öffentlichen Aufrufzahl am Video und im Raster Ihres Profils addiert. Jede Bestellung gilt für ein Video.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-tiktok-views-5",
-            "title": "Was Sie für eine Bestellung brauchen",
-            "description": "Sie brauchen den korrekten öffentlichen TikTok-Videolink und das Views-Paket, das Sie kaufen möchten. Ihr TikTok-Passwort ist nicht erforderlich.",
+            "title": "Link rein, Passwort bleibt bei Ihnen",
+            "description": "Öffnen Sie das Video, tippen Sie auf „Teilen“ und dann auf „Link kopieren“ und fügen Sie ihn beim Bezahlen ein. Wir fragen nie nach Ihrem TikTok-Login.",
             "icon": "briefcase"
           },
           {
             "id": "buy-tiktok-views-6",
-            "title": "Was TikTok Views nicht enthalten",
-            "description": "Views sind getrennt von TikTok Followern und Likes. Eine Views-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+            "title": "Keine Creator-Rewards-Views",
+            "description": "TikTok berechnet Creator-Rewards-Einnahmen auf Basis separater „qualifizierter Aufrufe“ und schließt bezahlte Views aus. Gekaufte Views erhöhen nur die öffentliche Zahl.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie TikTok Views gewählt, die richtige View-Menge und Paketoption bestimmt und den Link zum genauen öffentlichen Video angegeben haben, dem die Views hinzugefügt werden sollen."
+        "closingNote": "Das Video muss öffentlich sein und online bleiben, bis die Lieferung abgeschlossen ist. Videos mit der Einstellung „Freunde“ oder „Nur du“ können keine Views erhalten."
       },
       "doesBuyingHelp": {
         "id": "buy-tiktok-views-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Helfen gekaufte Views einem TikTok-Video?",
+        "description": "Sie helfen dabei, wie ein Video wirkt – nicht dabei, was TikTok empfiehlt. TikTok zeigt jedes neue Video zuerst einer kleinen Gruppe und erweitert die Reichweite, wenn diese Zuschauer bis zum Ende schauen, erneut abspielen, teilen und folgen. Ein höherer öffentlicher Aufrufzähler ist Social Proof für alle, die ihn sehen – und genau so weit reicht der Nutzen ehrlich gesagt.",
+        "helpTitle": "Wo Views helfen",
+        "helpItems": [
+          "Ältere Videos im Profilraster, die neben neueren, erfolgreicheren Videos ruhig wirken.",
+          "Produkt-, Shop- und Markenvideos, auf die Sie von Ihrer Website oder aus Anzeigen verlinken.",
+          "Angepinnte Videos, die jeder Profilbesucher zuerst sieht."
+        ],
+        "limitTitle": "Wo nicht",
+        "limitItems": [
+          "Ein Video auf die „Für dich“-Seite bringen – das entscheiden die Reaktionen der Zuschauer, nicht der Zähler.",
+          "Creator-Rewards-Einnahmen: TikTok schließt bezahlte Views von qualifizierten Aufrufen aus, Views zu kaufen, um zu verdienen, verstößt also gegen die Regeln.",
+          "Ein Video mit 50.000 Aufrufen und 12 Likes wirkt seltsam. Halten Sie Aufrufe und Likes in einem glaubwürdigen Verhältnis."
+        ],
+        "closingNote": "Unser Learn-Center-Ratgeber (auf Englisch) dazu, wie TikTok-Videoaufrufe gezählt werden, erklärt öffentliche Aufrufe, qualifizierte Creator-Rewards-Aufrufe und die Mythen rund um beide."
       },
       "whatHappens": {
         "id": "buy-tiktok-views-what-happens",
         "title": "Was passiert nach dem Kauf von TikTok Views?",
-        "description": "Nach einer TikTok-Views-Bestellung werden das Views-Paket und der übermittelte öffentliche Videolink genutzt, um die Bestellung für das gewählte Video zu bearbeiten. Lassen Sie das Video dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "description": "Nach der Zahlung für TikTok Views durchläuft die Bestellung vier kurze Schritte.",
         "steps": [
           {
             "id": "buy-tiktok-views-th-1",
-            "title": "Ihre Bestelldaten werden geprüft",
-            "description": "Das gewählte Views-Paket, die Menge, die Paketoption und der übermittelte TikTok-Videolink werden Ihrer Bestellung zugeordnet, damit die Anfrage für das vorgesehene Video bearbeitet werden kann."
+            "title": "Videolink wird zugeordnet",
+            "description": "Videolink und gewählte Option werden mit Ihrer Bestellnummer verknüpft. Fällt Ihnen ein falscher Link auf, schreiben Sie uns auf WhatsApp, bevor die Lieferung startet."
           },
           {
             "id": "buy-tiktok-views-th-2",
-            "title": "Views gehen an das übermittelte Video",
-            "description": "Die Bestellung gilt für das TikTok-Video, das mit dem angegebenen Link verbunden ist. Prüfen Sie den Videolink sorgfältig, bevor Sie den Checkout abschließen."
+            "title": "Views starten innerhalb von 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung. Bei schrittweiser Lieferung wird dieselbe Bestellung über einen längeren Zeitraum verteilt."
           },
           {
             "id": "buy-tiktok-views-th-3",
-            "title": "Die Bearbeitungszeit kann variieren",
-            "description": "Die benötigte Zeit kann je nach View-Menge, gewählter Paketoption und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+            "title": "Standardbestellungen enden nach 4–6 Stunden",
+            "description": "Eine Standard-Views-Bestellung ist meist 4–6 Stunden nach dem Start fertig. Verfolgen Sie sie auf der Seite „Bestellung verfolgen“."
           },
           {
             "id": "buy-tiktok-views-th-4",
-            "title": "Bestellstatus prüfen",
-            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+            "title": "Nachfüllfrist beginnt",
+            "description": "Ihre 6-monatige Nachfüllung beginnt am Tag des Lieferabschlusses. Sinken die Views, senden Sie Ihre Bestellnummer per WhatsApp."
           }
         ],
-        "closingNote": "Vermeiden Sie es, das übermittelte Video zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+        "closingNote": "Lassen Sie das Video öffentlich und löschen oder laden Sie es nicht neu hoch. Ein neu hochgeladenes Video hat einen neuen Link und beginnt bei null."
       },
       "serviceCompare": {
         "id": "buy-tiktok-views-service-compare",
@@ -363,8 +371,8 @@
       "beforeBuying": {
         "id": "buy-tiktok-views-before-buying",
         "title": "Was Sie vor dem Kauf von TikTok Views prüfen sollten",
-        "description": "Bevor Sie TikTok Views kaufen, prüfen Sie Paket- und Videodetails. Stellen Sie sicher, dass View-Menge, Paketoption, Preis, TikTok-Videolink und Service zum gewählten Video passen.",
-        "framingNote": "Prüfen Sie den übermittelten TikTok-Videolink, die View-Menge, die Paketoption und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Views zusätzliche Likes, Follower, Interaktion, Reichweite, Verkäufe oder organisches Wachstum garantiert.",
+        "description": "Fast jedes Problem entsteht durch den Videolink oder dessen Datenschutzeinstellung. Prüfen Sie zuerst diese fünf Punkte.",
+        "framingNote": "Die Preise sind in US-Dollar. Zahlen Sie in einer anderen Währung, rechnet Ihre Bank den Betrag um.",
         "items": [
           {
             "id": "buy-tiktok-views-7",
@@ -400,33 +408,33 @@
       },
       "worldwide": {
         "id": "buy-tiktok-views-worldwide",
-        "title": "Das richtige TikTok-Video für Views wählen",
-        "description": "TikTok Views gilt für ein bestimmtes geeignetes öffentliches Video. Stellen Sie sicher, dass der im Checkout eingegebene Videolink auf genau den Inhalt zeigt, dessen View-Zahl Sie nutzen möchten.",
-        "eyebrow": "Bereit für TikTok Views",
-        "closingNote": "TikTok Views gilt für ein bestimmtes öffentliches Video. Übermitteln Sie den genauen Videolink, halten Sie das Video zugänglich und prüfen Sie das Views-Paket vor dem Checkout.",
+        "title": "Öffentliche Aufrufe vs. qualifizierte Aufrufe bei TikTok",
+        "description": "TikTok verwendet zwei verschiedene Aufrufzahlen. Wer weiß, welche ein Views-Paket verändert, erspart sich später viel Verwirrung.",
+        "eyebrow": "Wissen, welche Zahl sich ändert",
+        "closingNote": "Die vollständige Erklärung finden Sie in unserem Learn-Center-Ratgeber (auf Englisch) dazu, wie TikTok-Videoaufrufe gezählt werden.",
         "cards": [
           {
             "id": "buy-tiktok-views-12",
-            "title": "Den genauen Videolink übermitteln",
-            "description": "Eine TikTok-Profil-URL ist nicht dasselbe wie eine Video-URL. Verwenden Sie den öffentlichen Videolink, der für den Views-Service angefragt wird.",
+            "title": "Öffentliche Aufrufzahl",
+            "description": "Die Zahl, die jeder am Video sieht. Genau diese Zahl erhöht ein NovaLikes-Views-Paket.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-views-13",
-            "title": "Video zugänglich halten",
-            "description": "Vermeiden Sie es, das übermittelte Video zu löschen oder einzuschränken, solange eine aktive Bestellung öffentlichen Zugriff auf diesen Inhalt voraussetzt.",
+            "title": "Qualifizierte Aufrufe",
+            "description": "Eine Creator-Rewards-Kennzahl: einzigartige „Für dich“-Aufrufe von mehr als fünf Sekunden. TikTok schließt bezahlte Views davon aus.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-views-14",
-            "title": "Ein Views-Paket wählen",
-            "description": "Vergleichen Sie verfügbare View-Mengen und Paketoptionen, bevor Sie die Option für das Video wählen.",
+            "title": "Aufrufe vs. Likes",
+            "description": "Aufrufe zählen Wiedergaben, Likes zählen Herzen. Das eine zu kaufen, bringt nicht das andere – prüfen Sie also beide Zahlen vor der Bestellung.",
             "icon": "headphones"
           },
           {
             "id": "buy-tiktok-views-15",
-            "title": "Alles vor dem Checkout prüfen",
-            "description": "Prüfen Sie Video-URL, Views-Paket und Preis, bevor Sie die Bestellung abschließen.",
+            "title": "Ein Video pro Bestellung",
+            "description": "Jede Bestellung geht an einen einzelnen Videolink. Für mehrere Videos geben Sie pro Video eine Bestellung auf.",
             "icon": "clapperboard"
           }
         ]
@@ -434,27 +442,27 @@
       "packageSizes": {
         "id": "buy-tiktok-views-popular-packages",
         "title": "Beliebte TikTok-Views-Pakete",
-        "description": "Vergleichen Sie unten einige der TikTok-Views-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle verfügbaren Paketoptionen zu sehen.",
+        "description": "Gehen Sie von dem aus, was das Video bereits hat. Ein Paket, das die aktuellen Aufrufe ungefähr verdoppelt oder verdreifacht, wirkt natürlich; ein Sprung von 300 auf 50.000 über Nacht nicht.",
         "rows": [
           {
             "id": "tt-v-hq-1000",
             "quantity": "1.000 Views",
-            "recommendedFor": "Eine kleinere Option für ein öffentliches TikTok-Video, dem Sie eintausend Views hinzufügen möchten."
+            "recommendedFor": "Für neue Videos oder Videos unter 1.000 Aufrufen oder um den Service zuerst zu testen."
           },
           {
             "id": "tt-v-hq-5000",
             "quantity": "5.000 Views",
-            "recommendedFor": "Eine mittlere Option für ein TikTok-Video, bei dem Sie eine größere Änderung der angezeigten View-Zahl möchten."
+            "recommendedFor": "Für Videos, die bei einigen tausend Aufrufen feststecken und aktiver wirken sollen."
           },
           {
             "id": "tt-v-hq-10000",
             "quantity": "10.000 Views",
-            "recommendedFor": "Ein größeres Paket für ein öffentliches TikTok-Video, dem Sie in einer Bestellung zehntausend Views hinzufügen möchten."
+            "recommendedFor": "Für angepinnte, Produkt- oder ältere Rastervideos, die zu Ihren stärkeren Beiträgen passen sollen."
           },
           {
             "id": "tt-v-hq-50000",
             "quantity": "50.000 Views",
-            "recommendedFor": "Eine Option mit höherem Volumen für ein TikTok-Video, bei dem Sie eine größere Steigerung der angezeigten View-Zahl möchten."
+            "recommendedFor": "Unser beliebtestes High-Quality-Paket – für Kampagnenvideos oder Konten, die bereits Zehntausende erreichen. Schrittweise Lieferung empfohlen."
           }
         ]
       },
@@ -564,35 +572,35 @@
     "whyBuy": {
       "id": "buy-tiktok-views-why-buy",
       "title": "Warum kaufen Menschen TikTok Views?",
-      "description": "Menschen kaufen TikTok Views aus unterschiedlichen Gründen. Manche möchten die auf einem bestimmten Video angezeigte View-Zahl erhöhen, andere wählen ein Views-Paket für Inhalte zu einem Launch, einer Kampagne oder laufender TikTok-Aktivität. Der Service ändert die View-Kennzahl auf dem gewählten Video, sagt aber keine zusätzlichen Likes, Follower, Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "description": "TikTok-Kunden nennen uns immer wieder dieselben wenigen Gründe. Bei allen geht es darum, wie ein Video auf Menschen wirkt – bei keinem darum, TikTok auszutricksen.",
       "items": [
         {
           "id": "buy-tiktok-views-wb-1",
-          "title": "Die sichtbare View-Zahl erhöhen",
-          "description": "Ein TikTok-Views-Paket kann genutzt werden, wenn Sie die auf einem bestimmten öffentlichen Video angezeigte View-Zahl erhöhen möchten."
+          "title": "Ein ruhiges Video in einem aktiven Raster",
+          "description": "Haben die meisten Videos Tausende Aufrufe und eines nur 200, fällt es auf. Views bringen es auf das Niveau der anderen."
         },
         {
           "id": "buy-tiktok-views-wb-2",
-          "title": "Views rund um Launch oder Kampagne nutzen",
-          "description": "Creator und Unternehmen können ein Views-Paket für ein TikTok-Video zu einem Produktlaunch, einer Kampagne, einer Ankündigung oder anderer Content-Aktivität wählen."
+          "title": "Produkt- und Shop-Videos",
+          "description": "Verkäufer ergänzen Views bei Produktdemos, die sie auf ihrer Website, in E-Mails oder Anzeigen teilen – dort fällt Käufern die Aufrufzahl zuerst auf."
         },
         {
           "id": "buy-tiktok-views-wb-3",
-          "title": "Fokus auf die View-Kennzahl",
-          "description": "TikTok Views gilt für die View-Zahl des gewählten Videos und fügt Ihrem Profil nicht automatisch Follower und dem Video nicht automatisch Likes hinzu."
+          "title": "Starttag für ein neues Video",
+          "description": "Manche Creator geben einem neuen Upload eine Startzahl, damit die ersten echten Zuschauer kein Video mit kaum Wiedergaben sehen."
         },
         {
           "id": "buy-tiktok-views-wb-4",
-          "title": "Die gewünschte Menge wählen",
-          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Anzahl TikTok Views zu wählen, die Sie für das übermittelte Video bestellen möchten."
+          "title": "Angepinnte Videos",
+          "description": "Angepinnte Videos sind der erste Eindruck eines Profils. Kunden ergänzen dort Views vor allen anderen Videos."
         },
         {
           "id": "buy-tiktok-views-wb-5",
-          "title": "Views zusammen mit Ihren Inhalten nutzen",
-          "description": "Der Kauf von Views ersetzt nicht das Erstellen und Führen eigener TikTok-Inhalte. Videos, Bildunterschriften, Antworten und andere Kontoaktivität hängen weiterhin davon ab, wie Sie Ihre Präsenz führen."
+          "title": "Die Grenzen kennen",
+          "description": "Views ändern eine Zahl. „Für dich“-Reichweite, Follower und Creator Rewards hängen weiterhin von echten Zuschauern und echter Wiedergabezeit ab."
         }
       ],
-      "bottomNote": "Wenn Follower oder Video-Likes die Kennzahl sind, die Sie stattdessen ändern möchten, wählen Sie den entsprechenden TikTok-Service statt eines Views-Pakets."
+      "bottomNote": "Möchten Sie lieber mehr Herzen oder ein größeres Profil? TikTok Likes und TikTok Follower sind separate Services – vergleichen Sie sie unten."
     },
     "howToBuy": {
       "id": "how-it-works",

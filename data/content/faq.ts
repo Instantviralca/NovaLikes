@@ -13,7 +13,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-buy-followers',
     question: 'Can I buy Instagram followers?',
     answer:
-      'Yes. NovaLikes offers Instagram follower packages through its our website. Select a package, provide the public username and complete checkout to place an order. Review package details on [Instagram Followers Packages](/buy-instagram-followers).',
+      'Yes. NovaLikes offers Instagram follower packages through its website. Select a package, provide the public username and complete checkout to place an order. Review package details on [Instagram Followers Packages](/buy-instagram-followers).',
     homepageFilter: 'General',
     order: 1,
   },
@@ -85,7 +85,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-public-account',
     question: 'Do I need a public account to place an order?',
     answer:
-      'Many services need the relevant profile or content to remain public during delivery. Exact requirements appear on the service page before checkout. Private or restricted profiles may delay or prevent delivery. Keep the username or URL accurate, and contact support before ordering if you are unsure whether your account qualifies.',
+      'Yes. The profile, Page, post or video must be public while your order is being delivered, otherwise delivery cannot start or finish. Once delivery is complete you can switch it back to private. Please also keep the same username — changing it during an order or the 6-month refill period can stop delivery and refills.',
     homepageFilter: 'Safety',
     order: 10,
   },
@@ -101,7 +101,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-order-start',
     question: 'When will my order start?',
     answer:
-      'Start times depend on the selected service and package. Delivery estimates are shown on the service page before checkout. After purchase, use the [Track Order](/track-order) page with your order ID and email to review available status updates. Timing can also differ when gradual delivery applies.',
+      'Most orders start within 6–8 hours after payment is confirmed, and standard delivery is usually completed within 4–6 hours after the order starts. You can follow progress on the [Track Order](/track-order) page with your order ID and email. If you asked for gradual delivery, the order is spread over a longer period.',
     homepageFilter: 'Delivery',
     order: 12,
   },
@@ -117,7 +117,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-gradual-delivery',
     question: 'Is gradual delivery available?',
     answer:
-      'Gradual delivery is available for eligible services where it is clearly stated on the service page. When it applies, delivery is spread over time instead of completing at once. Availability and timing depend on the platform, service and package. If gradual delivery is not listed, that package uses the standard method shown on the page.',
+      'Yes. Every NovaLikes service can be delivered quickly or gradually. Add a note at checkout, or message us on WhatsApp after ordering, and tell us the pace you prefer. Without a note we use standard delivery, which is usually completed within 4–6 hours after the order starts.',
     homepageFilter: 'Delivery',
     order: 14,
   },
@@ -125,7 +125,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-home-refill',
     question: 'Do you offer a refill guarantee?',
     answer:
-      'Selected services include refill protection where it is stated on the service page. Eligibility, the refill window and other conditions vary by package. If you believe an eligible drop occurred, contact support with your order ID and checkout email so the team can review the request against the package terms.',
+      'Yes. Every NovaLikes service includes a 6-month refill. If delivered followers, likes, views or comments drop within 6 months of your order being delivered, message us on WhatsApp (+44 7454 758272) with your order ID and we will refill the drop. To stay eligible, do not change your username, and keep the profile or content public while the order or a refill is being delivered — you can make it private once delivery is complete.',
     homepageFilter: 'Delivery',
     order: 15,
   },
@@ -163,19 +163,19 @@ export const faqItems: FAQItem[] = [
     id: 'faq-order-start',
     question: 'How quickly will my order begin?',
     answer:
-      'Start times vary by service and package. Some orders may begin shortly after payment confirmation, while others require additional processing time. The relevant service page should display the expected start and delivery information before you place an order.',
+      'Most orders begin within 6–8 hours after payment is confirmed, and standard delivery is usually completed within 4–6 hours after the order starts. Gradual delivery takes longer by design.',
   },
   {
     id: 'faq-gradual-delivery',
     question: 'Is gradual delivery available?',
     answer:
-      'Yes, gradual delivery is available on eligible services. The exact delivery method and estimated timeframe depend on the platform, service, and package selected. Check the service page for the terms that apply to your order.',
+      'Yes. Every NovaLikes service can be delivered quickly or gradually. Add a note at checkout, or message us on WhatsApp after ordering, and tell us the pace you prefer. Without a note we use standard delivery, which is usually completed within 4–6 hours after the order starts.',
   },
   {
     id: 'faq-refill',
     question: 'Do you offer a refill guarantee?',
     answer:
-      'Eligible services include refill coverage. Refill periods and conditions vary by service, so the applicable terms should be shown clearly on the relevant service page before checkout.',
+      'Yes. Every NovaLikes service includes a 6-month refill. If delivered followers, likes, views or comments drop within 6 months of your order being delivered, message us on WhatsApp (+44 7454 758272) with your order ID and we will refill the drop. To stay eligible, do not change your username, and keep the profile or content public while the order or a refill is being delivered — you can make it private once delivery is complete.',
   },
   {
     id: 'faq-money-back',
@@ -224,7 +224,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-delivery-time',
     question: 'How long does delivery take?',
     answer:
-      'Delivery timelines vary by service and package. Expected start and delivery information should be shown on the relevant service page before you order.',
+      'Most orders start within 6–8 hours after payment is confirmed. Once an order starts, standard delivery is usually completed within 4–6 hours. If you prefer a slower pace, ask for gradual delivery in your order note or on WhatsApp. You can follow progress on the [Track Order](/track-order) page with your order ID and email.',
   },
   {
     id: 'faq-refunds',
@@ -273,7 +273,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-followers-refill',
     question: 'How long does an Instagram followers order take?',
     answer:
-      'Processing time can vary depending on the package size and current order conditions. Check your order status for available updates rather than relying on one fixed delivery time for every package.',
+      'Instagram followers orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-ig-followers-private',
@@ -297,7 +297,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-followers-money-back',
     question: 'Should my Instagram profile be public?',
     answer:
-      'Keep the profile publicly accessible where required for the selected service while the order is being processed. If you are unsure about your account setup, check the service details or contact support before ordering.',
+      'Yes. Keep your Instagram profile public until delivery is complete, otherwise the order cannot start or finish. You can make it private again once delivery is done. Please don\'t change your username during the order or the 6-month refill period.',
   },
   // Instagram Followers Packages conversion FAQs
   {
@@ -328,13 +328,13 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-pkg-delivery-start',
     question: 'When does delivery begin?',
     answer:
-      'Processing begins after the order and payment details have been confirmed. Any available timing estimate will be shown with the selected package or during checkout.',
+      'Delivery usually begins within 6–8 hours after payment is confirmed and is normally completed within 4–6 hours after it starts.',
   },
   {
     id: 'faq-ig-pkg-gradual',
     question: 'Will delivery be gradual?',
     answer:
-      'Gradual delivery may be available for eligible packages. Review the delivery information shown for your selected option before completing payment.',
+      'Only if you want it to be. Standard delivery is usually completed within 4–6 hours after the order starts. For gradual delivery, add a note at checkout or message us on WhatsApp with the pace you prefer.',
   },
   {
     id: 'faq-ig-pkg-track',
@@ -383,13 +383,13 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-likes-pkg-delivery-start',
     question: 'When does delivery begin?',
     answer:
-      'Processing begins after payment is confirmed. Any available timing estimate is shown with the selected option before checkout.',
+      'Delivery usually begins within 6–8 hours after payment is confirmed and is normally completed within 4–6 hours after it starts.',
   },
   {
     id: 'faq-ig-likes-pkg-gradual',
     question: 'Will delivery be gradual?',
     answer:
-      'Gradual delivery may be available on eligible options. Review the delivery details shown for your selection before payment.',
+      'Only if you want it to be. Standard delivery is usually completed within 4–6 hours after the order starts. For gradual delivery, add a note at checkout or message us on WhatsApp with the pace you prefer.',
   },
   {
     id: 'faq-ig-likes-pkg-track',
@@ -424,444 +424,444 @@ export const faqItems: FAQItem[] = [
   // Buy Instagram Likes — service FAQ set
   {
     id: 'faq-ig-likes-password',
-    question: 'Do I need to share my Instagram password?',
+    question: 'Can buying likes get my Instagram account in trouble?',
     answer:
-      'No. NovaLikes does not require your Instagram password for an Instagram likes order. You only need to provide the correct public URL for the content.',
+      'We only need the public link to the post — never your password or a login. Instagram’s rules discourage artificial engagement, so no service can honestly promise zero risk. What we do promise is no account access, a clear delivery time, a gradual option and a 6-month refill.',
   },
   {
     id: 'faq-ig-likes-links',
-    question: 'What do I need to buy Instagram likes?',
+    question: 'How do I buy likes for an Instagram post or Reel?',
     answer:
-      'You need the public URL for the Instagram post or Reel and the likes package you want to order. Your Instagram password is not required.',
+      'Open the post or Reel, tap the three dots or the share icon and choose Copy link. Pick a likes package, paste the link at checkout and pay. Each order covers one post, so use a separate order for every post you want likes on. No password is needed.',
   },
   {
     id: 'faq-ig-likes-delivery-speed',
     question: 'How long does an Instagram likes order take?',
     answer:
-      'Processing time can vary depending on the package size and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'Instagram likes orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-ig-likes-gradual-delivery',
-    question: 'What happens if I submit the wrong Instagram URL?',
+    question: 'Do Instagram likes drop, and what happens if they do?',
     answer:
-      'Contact support as soon as possible with your order details. Check the URL carefully before checkout because the submitted post or Reel is used to process the order.',
+      'A small drop can happen when Instagram removes or restricts accounts. Every order has a 6-month refill counted from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will add the missing likes. The post must still be public and not archived for the refill to work.',
   },
   {
     id: 'faq-ig-likes-refill',
-    question: 'Will buying Instagram likes also increase my followers or views?',
+    question: 'I have hidden like counts — can I still buy likes?',
     answer:
-      'Not automatically. Likes, followers, views, and comments are separate services. An Instagram likes package applies to the like count on the selected post or Reel.',
+      'Yes. The likes are still delivered and you can see the count yourself, but visitors will not, so the post gets less social-proof benefit. To show the number again, open the post, tap the three dots and choose Unhide like count.',
   },
   {
     id: 'faq-ig-likes-reel',
-    question: 'Which Instagram likes package should I choose?',
+    question: 'How much do Instagram likes cost?',
     answer:
-      'Choose based on the number of likes you want for the selected post or Reel and the price you are comfortable with. The available quantities and current prices are shown in the pricing section above.',
+      'Likes start at $2.99 for 100. 1,000 likes costs $9.99 and is our most popular package, and 10,000 likes costs $59.99. Prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-ig-likes-money-back',
     question: 'Does the Instagram post or Reel need to be public?',
     answer:
-      'Keep the submitted content publicly accessible where required while the order is being processed. If you are unsure whether your content can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Instagram post or Reel public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   {
     id: 'faq-ig-likes-track',
-    question: 'Can I track my Instagram likes order?',
+    question: 'Are the likes real, and can people see who liked my post?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'Likes come from realistic accounts, but we do not claim they are active real people who will follow or comment. Like any likes, the accounts appear in the post’s likes list for anyone who opens it. If you prefer, you can hide the like count on that post from its three-dot menu.',
   },
   // Buy Instagram Views — service FAQ set
   {
     id: 'faq-ig-views-need',
-    question: 'What do I need to buy Instagram views?',
+    question: 'How do I buy views for an Instagram Reel?',
     answer:
-      'You need the public URL for the Instagram Reel or video and the views package you want to order. Your Instagram password is not required.',
+      'Open the Reel, tap Share and copy the link (it looks like instagram.com/reel/…). Choose a package, paste the link at checkout and pay — no password needed. Views can also be added to public video posts using the post link. Story views are a different metric and are not covered.',
   },
   {
     id: 'faq-ig-views-package',
-    question: 'Which Instagram views package should I choose?',
+    question: 'How much do Instagram views cost?',
     answer:
-      'Choose based on the number of views you want for the selected Reel or video and the price you are comfortable with. The available quantities and current prices are shown in the pricing section above.',
+      'Packages start at $1.99 for 100 views. 1,000 views costs $4.99 and is our most popular option, and 10,000 views costs $24.99. All prices are in US dollars and are shown in the pricing table before checkout.',
   },
   {
     id: 'faq-ig-views-password',
-    question: 'Do I need to share my Instagram password?',
+    question: 'Is it safe to buy Instagram views?',
     answer:
-      'No. NovaLikes does not require your Instagram password for an Instagram views order. You only need to provide the correct public URL for the video content.',
+      'We never ask for your password or access to your account — only the public link to the Reel or video. Instagram’s terms discourage artificial engagement, so no provider can honestly promise zero risk. What we can promise is no login, a clear delivery time and a 6-month refill if views drop.',
   },
   {
     id: 'faq-ig-views-how-long',
     question: 'How long does an Instagram views order take?',
     answer:
-      'Processing time can vary depending on the package size and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'Instagram views orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-ig-views-track',
-    question: 'Can I track my Instagram views order?',
+    question: 'Are NovaLikes Instagram views real?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'They come from realistic accounts, but we do not claim they are active real people who will watch, like or follow. Think of a views package as raising the visible view count of a Reel — real engagement still comes from real viewers who find your content.',
   },
   {
     id: 'faq-ig-views-wrong-url',
-    question: 'What happens if I submit the wrong Instagram video URL?',
+    question: 'Do Instagram views drop, and what happens if they do?',
     answer:
-      'Contact support as soon as possible with your order details. Check the URL carefully before checkout because the submitted Reel or video is used to process the order.',
+      'Some drop is normal because Instagram regularly removes or hides accounts. Every order includes a 6-month refill from the date it is delivered: message us on WhatsApp (+44 7454 758272) with your order ID and we will top the count back up. Keep the Reel public and don’t delete it, or the refill cannot be delivered.',
   },
   {
     id: 'faq-ig-views-other-metrics',
-    question: 'Will buying Instagram views also increase my likes or followers?',
+    question: 'Will buying views help my Reel get on Explore or the Reels tab?',
     answer:
-      'Not automatically. Views, likes, followers, and comments are separate services. An Instagram views package applies to the view count on the selected Reel or video.',
+      'Not by itself. Instagram mainly looks at how real viewers react — watch time, replays, shares, saves and follows. Bought views raise the visible count, which can make new viewers more willing to watch, but they do not create those signals. Our guide on [how the Instagram algorithm works](/learn/how-instagram-algorithm-works) explains this in detail.',
   },
   {
     id: 'faq-ig-views-public',
     question: 'Does the Instagram Reel or video need to be public?',
     answer:
-      'Keep the submitted content publicly accessible where required while the order is being processed. If you are unsure whether your video can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Instagram Reel or video public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   // Buy Instagram Comments — service FAQ set
   {
     id: 'faq-ig-comments-need',
-    question: 'What do I need to buy Instagram comments?',
+    question: 'Can I write my own Instagram comments?',
     answer:
-      'You need the public URL for the Instagram post or Reel and the comments package you want to order. Your Instagram password is not required.',
+      'Yes. Add your comments in the checkout note, one per line, or send them to us on WhatsApp after you order. If you do not send any, our team writes them for you. Comments are in English by default; ask in the note if you need another language.',
   },
   {
     id: 'faq-ig-comments-package',
-    question: 'Which Instagram comments package should I choose?',
+    question: 'What is the difference between High Quality and Premium comments?',
     answer:
-      'Compare the available package types, comment quantities, and current prices, then choose the option that fits what you want for the selected post or Reel.',
+      'High Quality comments are short, positive reactions that suit most posts. Premium comments are written around what your post actually shows and come from more realistic-looking accounts, so they read more naturally on product, service and question posts.',
   },
   {
     id: 'faq-ig-comments-password',
-    question: 'Do I need to share my Instagram password?',
+    question: 'How much do Instagram comments cost?',
     answer:
-      'No. NovaLikes does not require your Instagram password for an Instagram comments order. You only need to provide the correct public URL for the content.',
+      'High Quality comments start at $13.47 for 10, and 25 comments cost $29.99. Premium comments start at $9.99 for 5, and 10 Premium comments cost $19.47. All prices are in US dollars and are listed in the pricing table above.',
   },
   {
     id: 'faq-ig-comments-how-long',
     question: 'How long does an Instagram comments order take?',
     answer:
-      'Processing time can vary depending on the selected package, quantity, and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every order.',
+      'Instagram comments orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-ig-comments-track',
-    question: 'Can I track my Instagram comments order?',
+    question: 'Are the comments real, and will they look natural?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'They are posted from realistic accounts, but we do not claim they are active real people who will follow you or keep talking. To make them look natural, choose Premium or send your own wording, keep the number in proportion to your likes, and reply to a few of them.',
   },
   {
     id: 'faq-ig-comments-wrong-url',
-    question: 'What happens if I submit the wrong Instagram URL?',
+    question: 'What if some comments disappear after delivery?',
     answer:
-      'Contact support as soon as possible with your order details. Check the URL carefully before checkout because the submitted post or Reel is used to process the order.',
+      'First check Hidden comments under the post — Instagram’s filters sometimes hide comments rather than remove them. If comments really are gone, every order has a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will replace them.',
   },
   {
     id: 'faq-ig-comments-other-metrics',
-    question: 'Will buying Instagram comments also increase my likes, views, or followers?',
+    question: 'Why can’t my comments order start?',
     answer:
-      'Not automatically. Comments, likes, views, and followers are separate services. An Instagram comments package applies to the selected post or Reel.',
+      'The usual reasons are: the account is private, comments are turned off for that post, comments are limited to followers or people you follow, or the link points to your profile instead of the post. Fix the setting and message us on WhatsApp with your order ID so we can restart it.',
   },
   {
     id: 'faq-ig-comments-public',
     question: 'Does the Instagram post or Reel need to be public?',
     answer:
-      'Keep the submitted content publicly accessible where required while the order is being processed. If you are unsure whether your content can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Instagram post or Reel public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   // Buy TikTok Followers — service FAQ set
   {
     id: 'faq-tt-followers-need',
-    question: 'What do I need to buy TikTok followers?',
+    question: 'How do I buy TikTok followers?',
     answer:
-      'You need the public TikTok username for the profile and the follower package you want to order. Your TikTok password is not required.',
+      'Choose a package, enter your TikTok username without the @, and pay. Your account must be public while the order is delivered. We never ask for your password, and you can follow the order on the Track Order page with your order ID and email.',
   },
   {
     id: 'faq-tt-followers-package',
-    question: 'Which TikTok followers package should I choose?',
+    question: 'How much do TikTok followers cost?',
     answer:
-      'Choose based on the number of followers you want for the selected profile and the price you are comfortable with. The available quantities and current prices are shown in the pricing section above.',
+      'Packages start at $2.99 for 100 followers. 1,000 followers costs $14.99 and is our most popular option, and 10,000 followers costs $119.99. All prices are in US dollars and every package is shown in the pricing table above.',
   },
   {
     id: 'faq-tt-followers-password',
-    question: 'Do I need to share my TikTok password?',
+    question: 'Can buying TikTok followers hurt my account or my For You reach?',
     answer:
-      'No. NovaLikes does not require your TikTok password for a followers order. You only need to provide the correct public TikTok username.',
+      'We never touch your account, but TikTok’s rules discourage inflated follower counts, so no provider can honestly promise zero risk. Followers also do not decide For You reach — each video is judged on how viewers react. Read our guide on [buying TikTok followers, the FYP and account safety](/learn/buying-tiktok-followers-fyp-account-safety) before you decide.',
   },
   {
     id: 'faq-tt-followers-how-long',
     question: 'How long does a TikTok followers order take?',
     answer:
-      'Processing time can vary depending on the follower quantity and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'TikTok followers orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-tt-followers-track',
-    question: 'Can I track my TikTok followers order?',
+    question: 'Will bought followers help me go LIVE or join Creator Rewards?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'For LIVE, followers count toward the number, but TikTok sets the threshold by region and checks other factors, so we cannot promise an unlock. For Creator Rewards, TikTok’s rules prohibit inflating follower counts, so do not buy followers to qualify for it.',
   },
   {
     id: 'faq-tt-followers-wrong-username',
-    question: 'What happens if I enter the wrong TikTok username?',
+    question: 'What if I change my TikTok username after ordering?',
     answer:
-      'Contact support as soon as possible with your order details. Check the username carefully before checkout because the submitted profile is used to process the order.',
+      'The order and the 6-month refill are linked to the username you entered, so avoid changing it until delivery is complete and ideally during the refill period too. If you have to change it, message us on WhatsApp with your order ID and both usernames.',
   },
   {
     id: 'faq-tt-followers-other-metrics',
-    question: 'Will buying TikTok followers also increase my likes or views?',
+    question: 'Do TikTok followers drop, and is there a refill?',
     answer:
-      'Not automatically. Followers, likes, and views are separate services. A TikTok followers package applies to the follower count on the selected profile.',
+      'Some drop is normal because TikTok regularly removes inactive or restricted accounts. Every order has a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will top your count back up. Keep the account public when you ask for a refill.',
   },
   {
     id: 'faq-tt-followers-public',
     question: 'Does my TikTok profile need to be public?',
     answer:
-      'Keep the submitted profile publicly accessible where required while the order is being processed. If you are unsure whether your profile can be used, check the service details or contact support before ordering.',
+      'Yes. Keep your TikTok profile public until delivery is complete, otherwise the order cannot start or finish. You can make it private again once delivery is done. Please don\'t change your username during the order or the 6-month refill period.',
   },
   // Buy TikTok Likes — service FAQ set
   {
     id: 'faq-tt-likes-need',
-    question: 'What do I need to buy TikTok likes?',
+    question: 'How do I buy TikTok likes for a video?',
     answer:
-      'You need the public TikTok video link for the video and the likes package you want to order. Your TikTok password is not required.',
+      'Open the video in TikTok, tap Share and choose Copy link. Pick a likes package, paste the link at checkout and pay. Each order covers one video, the video must be public, and you never need to share your password.',
   },
   {
     id: 'faq-tt-likes-package',
-    question: 'Which TikTok likes package should I choose?',
+    question: 'How much do TikTok likes cost?',
     answer:
-      'Choose based on the number of likes you want for the selected video and the price you are comfortable with. The available quantities and current prices are shown in the pricing section above.',
+      'Packages start at $2.99 for 100 likes. 1,000 likes costs $14.99 and is our most popular choice, and 10,000 likes costs $119.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-tt-likes-password',
-    question: 'Do I need to share my TikTok password?',
+    question: 'Will bought likes push my video onto the For You page?',
     answer:
-      'No. NovaLikes does not require your TikTok password for a likes order. You only need to provide the correct public TikTok video link.',
+      'Not on their own. TikTok mainly looks at watch time, rewatches, shares and comments when deciding how far a video travels. A higher like count can make new viewers more willing to stay, but it does not replace a strong first few seconds.',
   },
   {
     id: 'faq-tt-likes-how-long',
     question: 'How long does a TikTok likes order take?',
     answer:
-      'Processing time can vary depending on the likes quantity and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'TikTok likes orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-tt-likes-track',
-    question: 'Can I track my TikTok likes order?',
+    question: 'Are the TikTok likes real?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'They come from realistic-looking accounts, but we do not claim they are active real people who will follow you or keep engaging. Treat a likes package as raising the visible heart count — real engagement still comes from real viewers.',
   },
   {
     id: 'faq-tt-likes-wrong-url',
-    question: 'What happens if I submit the wrong TikTok video link?',
+    question: 'Do TikTok likes drop, and what happens if they do?',
     answer:
-      'Contact support as soon as possible with your order details. Check the video link carefully before checkout because the submitted video is used to process the order.',
+      'A small drop can happen when TikTok removes inactive or restricted accounts. Every order includes a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will add the missing likes. The video must still be public and not re-uploaded.',
   },
   {
     id: 'faq-tt-likes-other-metrics',
-    question: 'Will buying TikTok likes also increase my followers or views?',
+    question: 'Should I buy likes, views or both for a TikTok video?',
     answer:
-      'Not automatically. Likes, followers, and views are separate services. A TikTok likes package applies to the like count on the selected video.',
+      'It depends on the video. If it already has good views but few likes, likes make sense. If it has very few views, adding thousands of likes looks unbalanced — start with views, or order both in proportion. Our guide on [TikTok likes vs views](/learn/tiktok-likes-vs-views) explains the difference.',
   },
   {
     id: 'faq-tt-likes-public',
     question: 'Does my TikTok video need to be public?',
     answer:
-      'Keep the submitted video publicly accessible where required while the order is being processed. If you are unsure whether your video can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the TikTok video public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   // Buy TikTok Views — service FAQ set
   {
     id: 'faq-tt-views-need',
-    question: 'What do I need to buy TikTok views?',
+    question: 'How do I buy TikTok views?',
     answer:
-      'You need the public TikTok video link for the video and the views package you want to order. Your TikTok password is not required.',
+      'Open the video in TikTok, tap Share and choose Copy link. Pick High Quality or Premium and a quantity, paste the link at checkout and pay. The video must be public, each order covers one video, and you never need to share your password.',
   },
   {
     id: 'faq-tt-views-package',
-    question: 'Which TikTok views package should I choose?',
+    question: 'What is the difference between High Quality and Premium TikTok views?',
     answer:
-      'Choose based on the number of views you want for the selected video, the available package option, and the price you are comfortable with. Review the current options and prices in the pricing section above.',
+      'Both raise the public view count on your video and come with the same delivery times and 6-month refill. High Quality is the lower-priced option; Premium is our higher-tier option at a higher price. If you are unsure which suits your video, message us on WhatsApp before ordering.',
   },
   {
     id: 'faq-tt-views-password',
-    question: 'Do I need to share my TikTok password?',
+    question: 'How much do TikTok views cost?',
     answer:
-      'No. NovaLikes does not require your TikTok password for a views order. You only need to provide the correct public TikTok video link.',
+      'High Quality views start at $1.99 for 1,000, and 10,000 cost $9.99. Premium views start at $3.99 for 1,000, and 10,000 cost $19.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-tt-views-how-long',
     question: 'How long does a TikTok views order take?',
     answer:
-      'Processing time can vary depending on the views quantity, selected package option, and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'TikTok views orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-tt-views-track',
-    question: 'Can I track my TikTok views order?',
+    question: 'Do bought views count for TikTok Creator Rewards?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'No. Creator Rewards pays on qualified views — unique For You views longer than five seconds — and TikTok excludes paid views from that count. Bought views only raise the public number on the video, so do not buy views to earn from the program.',
   },
   {
     id: 'faq-tt-views-wrong-url',
-    question: 'What happens if I submit the wrong TikTok video link?',
+    question: 'Do TikTok views drop, and is there a refill?',
     answer:
-      'Contact support as soon as possible with your order details. Check the video link carefully before checkout because the submitted video is used to process the order.',
+      'A small drop can happen when TikTok removes inactive or restricted accounts. Every order includes a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will top the count back up. The video must still be public and not re-uploaded.',
   },
   {
     id: 'faq-tt-views-other-metrics',
-    question: 'Will buying TikTok views also increase my followers or likes?',
+    question: 'Will bought views push my video onto the For You page?',
     answer:
-      'Not automatically. Views, followers, and likes are separate services. A TikTok views package applies to the view count on the selected video.',
+      'Not by themselves. TikTok widens a video’s reach based on how viewers react — watch time, rewatches, shares and follows. A higher view count can make new viewers more curious, but it does not create those signals. Our guide on [how TikTok video views are counted](/learn/how-tiktok-video-views-are-counted) explains more.',
   },
   {
     id: 'faq-tt-views-public',
     question: 'Does my TikTok video need to be public?',
     answer:
-      'Keep the submitted video publicly accessible where required while the order is being processed. If you are unsure whether your video can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the TikTok video public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   // Buy Facebook Followers — service FAQ set
   {
     id: 'faq-fb-followers-need',
-    question: 'What do I need to buy Facebook followers?',
+    question: 'How do I buy Facebook followers?',
     answer:
-      'You need the public Facebook Page URL for the Page and the follower package you want to order. Your Facebook password is not required.',
+      'Copy the link to your Facebook Page or profile (for example facebook.com/yourpage), choose a package and paste the link at checkout. The Page must be public, and a personal profile must have “Who can follow me” set to Public. No password or admin access is needed.',
   },
   {
     id: 'faq-fb-followers-package',
-    question: 'Which Facebook followers package should I choose?',
+    question: 'How much do Facebook followers cost?',
     answer:
-      'Choose based on the number of followers you want for the selected Page and the price you are comfortable with. Review the current quantities and prices in the pricing section above.',
+      'Packages start at $4.99 for 100 followers. 1,000 followers costs $26.99 and is our most popular option, and 10,000 followers costs $149.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-fb-followers-password',
-    question: 'Do I need to share my Facebook password?',
+    question: 'Can I buy followers for a personal Facebook profile?',
     answer:
-      'No. NovaLikes does not require your Facebook password for a followers order. You only need to provide the correct public Facebook Page URL.',
+      'Yes, as long as the profile allows public followers. Go to Settings & privacy → Followers and public content and set “Who can follow me” to Public, then submit your profile link. Turning on professional mode also makes the follower count more visible.',
   },
   {
     id: 'faq-fb-followers-how-long',
     question: 'How long does a Facebook followers order take?',
     answer:
-      'Processing time can vary depending on the follower quantity and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'Facebook followers orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-fb-followers-track',
-    question: 'Can I track my Facebook followers order?',
+    question: 'Are Facebook followers the same as Page Likes?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'Not exactly. On the newer Facebook Page experience the follower count is the main public number, and Meta now shows follows instead of Page Likes in Meta Business Suite. If your Page displays followers, this is the right service; if an older Page still shows Page Likes, compare our Page Likes service.',
   },
   {
     id: 'faq-fb-followers-wrong-url',
-    question: 'What happens if I submit the wrong Facebook Page URL?',
+    question: 'Do Facebook followers drop, and is there a refill?',
     answer:
-      'Contact support as soon as possible with your order details. Check the Page URL carefully before checkout because the submitted Page is used to process the order.',
+      'Some drop is normal because Facebook removes inactive or restricted accounts. Every order has a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will top the count back up. Keep the Page public and the same URL when you ask.',
   },
   {
     id: 'faq-fb-followers-other-metrics',
-    question: 'Will buying Facebook followers also increase Page Likes or Post Likes?',
+    question: 'Will more followers increase my Facebook reach?',
     answer:
-      'Not automatically. Followers, Page Likes, and Post Likes are separate metrics and services. A Facebook followers package applies to the follower count on the selected Page.',
+      'Not by themselves. Facebook shows posts to more people when they get reactions, comments, shares and time spent. Followers who do not interact add little reach, but a larger count can make new visitors more willing to follow. Our guide on [how Facebook Page reach works](/learn/how-facebook-page-reach-works) explains the details.',
   },
   {
     id: 'faq-fb-followers-public',
-    question: 'Does my Facebook Page need to be public?',
+    question: 'Does my Facebook Page or profile need to be public?',
     answer:
-      'Keep the submitted Page publicly accessible where required while the order is being processed. If you are unsure whether your Page can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Page published, or the profile’s followers setting on Public, until delivery is complete — otherwise the order cannot start or finish. Please do not change the Page username or URL during the order or the 6-month refill period.',
   },
   // Buy Facebook Page Likes — AI Overview FAQs
   // Buy Facebook Page Likes — service FAQ set
   {
     id: 'faq-fb-page-likes-need',
-    question: 'What do I need to buy Facebook Page Likes?',
+    question: 'Should I buy Page Likes or Followers for my Facebook Page?',
     answer:
-      'You need the public Facebook Page URL for the Page and the Page Likes package you want to order. Your Facebook password is not required.',
+      'Buy whichever number your Page shows to visitors. Open the Page in a private window and look under the Page name: if it says “likes”, Page Likes fit; if it only says “followers”, choose Facebook Followers. Most newer Pages show followers.',
   },
   {
     id: 'faq-fb-page-likes-package',
-    question: 'Which Facebook Page Likes package should I choose?',
+    question: 'How much do Facebook Page Likes cost?',
     answer:
-      'Choose based on the number of Page Likes you want for the selected Page and the price you are comfortable with. Review the current quantities and prices in the pricing section above.',
+      'Packages start at $2.99 for 100 Page Likes. 1,000 Page Likes costs $14.99 and is our most popular option, and 10,000 costs $69.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-fb-page-likes-password',
-    question: 'Do I need to share my Facebook password?',
+    question: 'How do I buy Facebook Page Likes?',
     answer:
-      'No. NovaLikes does not require your Facebook password for a Page Likes order. You only need to provide the correct public Facebook Page URL.',
+      'Copy your public Page link (facebook.com/yourpage), choose a package and paste the link at checkout. We never ask for your password or admin access. Page Likes work on Facebook Pages only — not on personal profiles or single posts.',
   },
   {
     id: 'faq-fb-page-likes-how-long',
     question: 'How long does a Facebook Page Likes order take?',
     answer:
-      'Processing time can vary depending on the Page Like quantity and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'Facebook Page Likes orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-fb-page-likes-track',
-    question: 'Can I track my Facebook Page Likes order?',
+    question: 'Has Facebook removed Page Likes?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'Not completely, but they are no longer the main number. On the newer Page experience the follower count is shown first, Meta reports follows instead of Page Likes in Meta Business Suite, and the Page Likes metric was removed from Meta’s API in November 2025. Some older Pages still display likes, so check yours before ordering.',
   },
   {
     id: 'faq-fb-page-likes-wrong-url',
-    question: 'What happens if I submit the wrong Facebook Page URL?',
+    question: 'Do Facebook Page Likes drop, and is there a refill?',
     answer:
-      'Contact support as soon as possible with your order details. Check the Page URL carefully before checkout because the submitted Page is used to process the order.',
+      'A small drop can happen when Facebook removes inactive or restricted accounts. Every order has a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will top the count back up. Keep the Page public and on the same URL.',
   },
   {
     id: 'faq-fb-page-likes-other-metrics',
-    question: 'Will buying Facebook Page Likes also increase Followers or Post Likes?',
+    question: 'Do Page Likes help my Facebook posts reach more people?',
     answer:
-      'Not automatically. Page Likes, Followers, and Post Likes are separate metrics and services. A Facebook Page Likes package applies to the Page Like count on the selected Page.',
+      'Not by themselves. Facebook decides who sees a post mainly from reactions, comments, shares and time spent. A higher count can help a Page look established, but reach still comes from posts people engage with. Our guide on [how Facebook Page reach works](/learn/how-facebook-page-reach-works) explains more.',
   },
   {
     id: 'faq-fb-page-likes-public',
     question: 'Does my Facebook Page need to be public?',
     answer:
-      'Keep the submitted Page publicly accessible where required while the order is being processed. If you are unsure whether your Page can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Facebook Page public until delivery is complete, otherwise the order cannot start or finish. Please don\'t change the Page username or URL during the order or the 6-month refill period.',
   },
   // Buy Facebook Post Likes — service FAQ set
   {
     id: 'faq-fb-post-likes-need',
-    question: 'What do I need to buy Facebook Post Likes?',
+    question: 'How do I buy likes for a Facebook post?',
     answer:
-      'You need the public Facebook post URL for the post and the Post Likes package you want to order. Your Facebook password is not required.',
+      'Open the post, tap Share and choose Copy link (or click the post’s time stamp and copy the address). Pick a package, paste the link at checkout and pay. The post must be public, each order covers one post, and you never need to share your password.',
   },
   {
     id: 'faq-fb-post-likes-package',
-    question: 'Which Facebook Post Likes package should I choose?',
+    question: 'How much do Facebook Post Likes cost?',
     answer:
-      'Choose based on the number of Post Likes you want for the selected post and the price you are comfortable with. Review the current quantities and prices in the pricing section above.',
+      'Packages start at $2.99 for 100 Post Likes. 1,000 costs $14.99 and is our most popular option, and 10,000 costs $69.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-fb-post-likes-password',
-    question: 'Do I need to share my Facebook password?',
+    question: 'Can I get Love or other reactions instead of Likes?',
     answer:
-      'No. NovaLikes does not require your Facebook password for a Post Likes order. You only need to provide the correct public Facebook post URL.',
+      'Yes. Orders are delivered as the standard Like reaction by default. If you want Love or another reaction, write it in the checkout note or tell us on WhatsApp before the order starts.',
   },
   {
     id: 'faq-fb-post-likes-how-long',
     question: 'How long does a Facebook Post Likes order take?',
     answer:
-      'Processing time can vary depending on the Post Like quantity and current order conditions. Check your order status for available updates rather than expecting one fixed delivery time for every package.',
+      'Facebook Post Likes orders usually start within 6–8 hours of payment and are completed within 4–6 hours after they start. Prefer a slower, gradual delivery? Add a note at checkout or tell us on WhatsApp. You can follow progress on the Track Order page.',
   },
   {
     id: 'faq-fb-post-likes-track',
-    question: 'Can I track my Facebook Post Likes order?',
+    question: 'Can I buy likes for a post on my personal profile?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'Yes, as long as the post audience is set to Public — look for the globe icon next to the date. Posts shared with Friends or a custom list cannot receive an order. You can change the audience from the post’s three-dot menu.',
   },
   {
     id: 'faq-fb-post-likes-wrong-url',
-    question: 'What happens if I submit the wrong Facebook post URL?',
+    question: 'Do Facebook Post Likes drop, and is there a refill?',
     answer:
-      'Contact support as soon as possible with your order details. Check the post URL carefully before checkout because the submitted post is used to process the order.',
+      'A small drop can happen when Facebook removes inactive or restricted accounts. Every order has a 6-month refill from the delivery date: message us on WhatsApp (+44 7454 758272) with your order ID and we will top the count back up. The post must still be public.',
   },
   {
     id: 'faq-fb-post-likes-other-metrics',
-    question: 'Will buying Facebook Post Likes also increase Followers or Page Likes?',
+    question: 'Will Post Likes help my Facebook post reach more people?',
     answer:
-      'Not automatically. Post Likes, Followers, and Page Likes are separate metrics and services. A Facebook Post Likes package applies to the like count on the specific submitted post.',
+      'Not on their own. Facebook gives more weight to comments, shares and time spent than to likes alone. A higher reaction count can make people more willing to stop and engage, which is the real benefit. Our guide on [how to get more likes on a Facebook post](/learn/how-to-get-more-likes-on-facebook-post) covers organic tips too.',
   },
   {
     id: 'faq-fb-post-likes-public',
     question: 'Does my Facebook post need to be public?',
     answer:
-      'Keep the submitted post publicly accessible where required while the order is being processed. If you are unsure whether your post can be used, check the service details or contact support before ordering.',
+      'Yes. Keep the Facebook post public and don\'t delete it until delivery is complete, otherwise the order cannot start or finish. Keep it available during the 6-month refill period too, so any drop can be refilled.',
   },
   // Buy YouTube Subscribers — authority FAQs
   {

@@ -134,6 +134,10 @@ const BLOCKS: ArticleContentBlock[] = [
     'Publicly visible does not mean copyright-free. Facebook still prohibits posting content that infringes other people\'s intellectual-property rights. (Facebook)',
     [{ href: FB_INTELLECTUAL_PROPERTY, label: 'Facebook', external: true }],
   ),
+  paragraph(
+    'p-open-11',
+    'Important: only download a Reel you own or have clear permission to use. This tool works only with media Facebook already exposes publicly for a given Reel URL — it does not bypass privacy settings, passwords or any technical protection, and downloading a file never transfers copyright or ownership to you.',
+  ),
 
   heading('h-what', 'What Is a Facebook Reel in 2026?', 2),
   paragraph(
@@ -1321,7 +1325,7 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_REEL_ARTICLE: LearnArticleRecord = {
     ogImage: `${IMAGE_DIR}/featured.png`,
     keywords: [
       'download Facebook Reel',
-      'Facebook Reels downloader',
+      'download your own Facebook Reel',
       'download public Facebook Reel',
       'save Facebook Reel to phone',
       'Facebook Reel download HD',

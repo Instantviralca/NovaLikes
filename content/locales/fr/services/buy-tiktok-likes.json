@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVICES TIKTOK",
-      "title": "Acheter des likes TikTok",
-      "description": "Achetez des likes TikTok en choisissant le forfait et la quantité adaptés à votre vidéo. NovaLikes vous permet de comparer les forfaits de likes TikTok et les prix avant de commander. Sélectionnez le nombre de likes souhaité, indiquez le lien de la vidéo TikTok publique exact, puis finalisez votre commande en ligne. Votre mot de passe TikTok n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "title": "Acheter des likes TikTok pour vos vidéos",
+      "description": "Achetez des likes TikTok pour n’importe quelle vidéo publique à partir de 2,99 $ US. Copiez le lien de la vidéo, choisissez la quantité et payez : sans mot de passe ni connexion. La plupart des commandes démarrent sous 6 à 8 heures et se terminent 4 à 6 heures plus tard, ou arrivent progressivement sur demande. Chaque commande inclut un refill de 6 mois et un support WhatsApp 24 h/24 et 7 j/7.",
       "purpose": "Convert for TikTok likes packages worldwide",
       "primaryKeyword": "buy TikTok likes",
       "supportingKeywords": [
@@ -30,7 +30,7 @@
       "trustLabels": [
         {
           "id": "tt-l-trust-url",
-          "label": "Lien vidéo public uniquement"
+          "label": "Lien de la vidéo uniquement"
         },
         {
           "id": "tt-l-trust-password",
@@ -38,11 +38,11 @@
         },
         {
           "id": "tt-l-trust-checkout",
-          "label": "Paiement sécurisé"
+          "label": "Démarrage en 6 à 8 heures"
         },
         {
           "id": "tt-l-trust-track",
-          "label": "Suivi de commande"
+          "label": "Refill de 6 mois"
         }
       ],
       "visual": {
@@ -55,7 +55,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Forfaits et tarifs de likes TikTok",
-      "description": "Comparez les forfaits de likes TikTok disponibles, les quantités et les prix avant de commander. Choisissez le nombre de likes souhaité pour votre vidéo TikTok publique, relisez le prix actuel du forfait, puis ajoutez l’option sélectionnée au panier lorsque vous êtes prêt.",
+      "description": "Les prix sont en dollars américains. 1 000 likes est le forfait le plus populaire ; choisissez une taille qui garde les likes sous les vues de la vidéo.",
       "purpose": "Present real NovaLikes.com TikTok likes packages",
       "primaryKeyword": "TikTok likes packages",
       "suggestedWordCount": 55,
@@ -237,31 +237,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-tiktok-likes-why-choose",
-        "title": "Pourquoi choisir NovaLikes pour des likes TikTok ?",
-        "description": "NovaLikes facilite la comparaison des forfaits de likes TikTok avant de commander. Choisissez le nombre de likes souhaité pour une vidéo TikTok publique, relisez le prix actuel, indiquez le lien vidéo exact, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "title": "Pourquoi acheter des likes TikTok chez NovaLikes ?",
+        "description": "Nous traitons des commandes pour les réseaux sociaux depuis 7 à 8 ans : d’abord sur d’autres sites, puis sous le nom ViralMe, aujourd’hui NovaLikes. Pour les likes TikTok, cette expérience se résume à quatre promesses simples.",
         "items": [
           {
             "id": "buy-tiktok-likes-0",
-            "title": "Plusieurs quantités de likes",
-            "description": "Comparez les quantités de likes TikTok disponibles et choisissez le forfait qui correspond au nombre de likes que vous voulez commander.",
+            "title": "Une vidéo, un lien",
+            "description": "Les likes vont uniquement à la vidéo du lien envoyé. Vos autres vidéos et votre nombre d’abonnés ne changent pas.",
             "icon": "users"
           },
           {
             "id": "buy-tiktok-likes-1",
-            "title": "Lien vidéo public uniquement",
-            "description": "Indiquez le lien de la vidéo TikTok publique exact du contenu auquel vous voulez ajouter les likes. Votre mot de passe TikTok n’est pas requis.",
+            "title": "Démarrage sous 6 à 8 heures",
+            "description": "La plupart des commandes de likes TikTok démarrent dans les 6 à 8 heures suivant le paiement et se terminent environ 4 à 6 heures après le démarrage.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-2",
-            "title": "Vérifiez avant le paiement",
-            "description": "Vérifiez la quantité de likes sélectionnée et le prix actuel du forfait avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "title": "Un rythme régulier si vous préférez",
+            "description": "Demandez une livraison progressive dans la note au paiement ou sur WhatsApp : les likes arrivent sur une période plus longue au lieu d’arriver d’un coup.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-3",
-            "title": "Suivi de commande",
-            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande de likes TikTok.",
+            "title": "6 mois de refill",
+            "description": "Si le nombre de likes de cette vidéo baisse dans les 6 mois suivant la livraison, envoyez votre numéro de commande sur WhatsApp et nous ajoutons les likes manquants.",
             "icon": "headphones"
           }
         ]
@@ -271,66 +271,74 @@
       "canYouBuy": {
         "id": "buy-tiktok-likes-can-you-buy",
         "title": "Peut-on acheter des likes TikTok ?",
-        "description": "Oui. Des likes TikTok peuvent être achetés via des services de likes en ligne. Chez NovaLikes, vous choisissez un forfait de likes disponible, indiquez le lien de la vidéo TikTok publique du contenu que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "description": "Oui. Vous pouvez acheter des likes pour n’importe quelle vidéo TikTok publique. Copiez le lien de la vidéo avec le bouton Partager de TikTok, choisissez le nombre de likes et payez en dollars américains. Le compteur de cœurs de cette vidéo augmente ; rien d’autre ne change sur votre compte.",
         "cards": [
           {
             "id": "buy-tiktok-likes-4",
-            "title": "Ce qu’une commande de likes TikTok modifie",
-            "description": "Une commande de likes TikTok s’applique au nombre de likes de la vidéo publique fournie avec la commande. Elle n’ajoute pas automatiquement des abonnés à votre profil ni des vues à la vidéo.",
+            "title": "Le compteur de cœurs augmente",
+            "description": "Les likes s’ajoutent au compteur sous la vidéo envoyée. Les vues, commentaires, partages et abonnés sont des chiffres distincts.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-tiktok-likes-5",
-            "title": "Ce qu’il faut pour passer commande",
-            "description": "Vous avez besoin du lien de la vidéo TikTok publique exact et du forfait de likes que vous souhaitez acheter. Votre mot de passe TikTok n’est pas requis.",
+            "title": "Il nous faut seulement le lien",
+            "description": "Ouvrez la vidéo, appuyez sur Partager puis sur Copier le lien. Collez ce lien au paiement. Nous ne demandons jamais votre mot de passe TikTok ni une connexion.",
             "icon": "briefcase"
           },
           {
             "id": "buy-tiktok-likes-6",
-            "title": "Ce que les likes TikTok n’incluent pas",
-            "description": "Les likes sont distincts des abonnés et des vues TikTok. Commander des likes n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni un engagement, une portée, des ventes ou une croissance organique supplémentaires.",
+            "title": "D’où viennent les likes",
+            "description": "Les likes proviennent de comptes d’apparence réaliste. Nous ne prétendons pas qu’il s’agit de personnes actives qui regarderont vos autres vidéos ou s’abonneront.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les likes TikTok, choisi la bonne quantité de likes et indiqué le lien de la vidéo publique exacte à laquelle vous voulez ajouter les likes."
+        "closingNote": "La vidéo doit rester publique et disponible jusqu’à la fin de la livraison. Les vidéos réglées sur Amis ou Seulement vous ne peuvent pas recevoir de commande."
       },
       "doesBuyingHelp": {
         "id": "buy-tiktok-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Les likes achetés apportent-ils plus de vues à une vidéo TikTok ?",
+        "description": "Pas directement. TikTok teste chaque vidéo auprès d’un petit groupe et continue de la montrer quand ces spectateurs la regardent jusqu’au bout, la revoient, la partagent, commentent ou s’abonnent. Les likes sont un signal parmi d’autres, et des likes sans temps de visionnage derrière pèsent peu. Ce qu’un compteur plus élevé change, c’est l’impression que donne la vidéo à ceux qui la regardent déjà, et cette première impression est le vrai bénéfice.",
+        "helpTitle": "Là où les likes aident",
+        "helpItems": [
+          "Les vidéos produit et TikTok Shop, où un bon nombre de likes met les spectateurs en confiance.",
+          "Vos vidéos épinglées, que tout visiteur du profil voit en premier.",
+          "Une vidéo que vous allez promouvoir, pour que les spectateurs payants n’arrivent pas sur une vidéo à quelques likes."
+        ],
+        "limitTitle": "Là où ils n’aident pas",
+        "limitItems": [
+          "Placer seuls une vidéo sur la page Pour toi : le temps de visionnage et les partages comptent bien plus.",
+          "Une vidéo avec 2 000 likes mais seulement 1 500 vues paraît fausse. Les likes doivent rester bien en dessous des vues.",
+          "Remplacer l’accroche : si les spectateurs partent dans les premières secondes, les likes ne garderont pas la vidéo en vie."
+        ],
+        "closingNote": "Notre guide du Learn Center (en anglais) sur les likes et les vues TikTok explique le lien entre les deux chiffres et ce que TikTok en retient."
       },
       "whatHappens": {
         "id": "buy-tiktok-likes-what-happens",
         "title": "Que se passe-t-il après l’achat de likes TikTok ?",
-        "description": "Une fois votre commande de likes TikTok passée, le forfait de likes et le lien de la vidéo publique que vous avez fournis servent à traiter la commande pour la vidéo sélectionnée. Gardez la vidéo accessible publiquement lorsque c’est requis pendant le traitement.",
+        "description": "Du paiement à la livraison terminée, une commande de likes TikTok suit quatre étapes.",
         "steps": [
           {
             "id": "buy-tiktok-likes-th-1",
-            "title": "Les détails de votre commande sont vérifiés",
-            "description": "Le forfait de likes, la quantité et le lien de la vidéo TikTok fourni sont associés à votre commande, afin que la demande soit traitée pour la vidéo visée."
+            "title": "Lien associé à votre commande",
+            "description": "Le lien de vidéo collé est rattaché à votre numéro de commande. Si vous remarquez une erreur de lien, écrivez-nous sur WhatsApp avant le début de la livraison."
           },
           {
             "id": "buy-tiktok-likes-th-2",
-            "title": "Les likes vont à la vidéo indiquée",
-            "description": "La commande s’applique à la vidéo TikTok liée au lien que vous avez fourni. Vérifiez soigneusement le lien de la vidéo avant de finaliser le paiement."
+            "title": "Les likes démarrent sous 6 à 8 heures",
+            "description": "La plupart des commandes démarrent dans les 6 à 8 heures suivant le paiement. Les commandes progressives démarrent dans le même délai mais étalent les likes plus longtemps."
           },
           {
             "id": "buy-tiktok-likes-th-3",
-            "title": "Le délai de traitement peut varier",
-            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité de likes et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+            "title": "La livraison standard se termine en 4 à 6 heures",
+            "description": "Une fois lancées, la plupart des commandes de likes sont terminées en 4 à 6 heures. Suivez l’avancement sur la page Suivi de commande avec votre numéro de commande et votre e-mail."
           },
           {
             "id": "buy-tiktok-likes-th-4",
-            "title": "Consultez le statut de votre commande",
-            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+            "title": "Le refill de 6 mois commence",
+            "description": "La couverture refill commence le jour où la livraison se termine. Si le nombre de likes baisse ensuite, envoyez votre numéro de commande sur WhatsApp et nous complétons."
           }
         ],
-        "closingNote": "Évitez de supprimer la vidéo fournie, de la rendre indisponible, ou de modifier quoi que ce soit qui empêche l’accès au contenu pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+        "closingNote": "Gardez la vidéo publique et ne la supprimez pas ni ne la republiez, sinon ni la livraison ni les refills ne pourront l’atteindre."
       },
       "serviceCompare": {
         "id": "buy-tiktok-likes-service-compare",
@@ -362,8 +370,8 @@
       "beforeBuying": {
         "id": "buy-tiktok-likes-before-buying",
         "title": "Que vérifier avant d’acheter des likes TikTok",
-        "description": "Avant d’acheter des likes TikTok, relisez le forfait et les détails de la vidéo avant de finaliser votre commande. Assurez-vous que la quantité de likes, le prix, le lien de la vidéo TikTok et le service correspondent à ce que vous voulez pour la vidéo sélectionnée.",
-        "framingNote": "Vérifiez une dernière fois le lien de la vidéo TikTok fourni, la quantité de likes et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des likes garantirait davantage de vues, d’abonnés, d’engagement, de portée, de ventes ou de croissance organique.",
+        "description": "La plupart des problèmes viennent du lien de la vidéo ou de son réglage de confidentialité. Vérifiez ces cinq points avant de payer.",
+        "framingNote": "Les prix sont en dollars américains. Votre banque convertit le montant si vous payez dans une autre devise.",
         "items": [
           {
             "id": "buy-tiktok-likes-7",
@@ -399,33 +407,33 @@
       },
       "worldwide": {
         "id": "buy-tiktok-likes-worldwide",
-        "title": "Choisir la bonne vidéo TikTok pour des likes",
-        "description": "Les likes TikTok s’appliquent à une vidéo publique éligible précise. Indiquez exactement la vidéo que vous voulez utiliser, plutôt qu’un profil TikTok général.",
-        "eyebrow": "Prêt pour des likes TikTok",
-        "closingNote": "Les likes TikTok s’appliquent à une vidéo publique précise. Indiquez le lien de la vidéo, gardez la vidéo publique et relisez la quantité de likes avant le paiement.",
+        "title": "Likes, vues et le ratio que les spectateurs remarquent",
+        "description": "TikTok affiche les vues et les likes côte à côte, et les gens les comparent sans y penser. Garder les deux dans un équilibre crédible compte plus que la taille de l’un ou l’autre.",
+        "eyebrow": "Trouver le bon équilibre",
+        "closingNote": "Votre vidéo a beaucoup de likes mais peu de vues ? Notre service de vues TikTok augmente le compteur de lectures de la même vidéo.",
         "cards": [
           {
             "id": "buy-tiktok-likes-12",
-            "title": "Utilisez le bon lien vidéo",
-            "description": "Vérifiez soigneusement l’URL publique de la vidéo TikTok avant de commander, car la vidéo indiquée sert à traiter le forfait de likes.",
+            "title": "Deux compteurs distincts",
+            "description": "Les vues comptent les lectures, les likes comptent les cœurs. Acheter des likes ne change pas les vues, et acheter des vues n’ajoute pas de likes.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-13",
-            "title": "Gardez la vidéo publique",
-            "description": "Ne supprimez pas et ne restreignez pas la vidéo fournie tant que la commande a besoin d’un accès public.",
+            "title": "Les likes restent sous les vues",
+            "description": "Sur une vidéo normale, seule une partie des spectateurs appuie sur le cœur. Choisissez un forfait qui garde les likes nettement sous le nombre de vues.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-14",
-            "title": "Choisissez la quantité de likes",
-            "description": "Relisez les quantités de likes disponibles et choisissez le forfait adapté à la vidéo individuelle que vous voulez utiliser.",
+            "title": "D’abord les vidéos épinglées",
+            "description": "Les visiteurs du profil voient vos trois vidéos épinglées avant tout le reste. C’est souvent le meilleur endroit pour ajouter des likes.",
             "icon": "headphones"
           },
           {
             "id": "buy-tiktok-likes-15",
-            "title": "Likes et vues sont différents",
-            "description": "Choisissez les likes TikTok lorsque le nombre de likes est l’indicateur que vous voulez modifier. Les vues TikTok sont un service distinct pour les vues vidéo visibles.",
+            "title": "Même vidéo, même lien",
+            "description": "Supprimer puis republier une vidéo crée un nouveau lien et un nouveau compteur. Commandez pour la version qui restera en ligne.",
             "icon": "clapperboard"
           }
         ]
@@ -433,32 +441,32 @@
       "packageSizes": {
         "id": "buy-tiktok-likes-popular-packages",
         "title": "Forfaits de likes TikTok populaires",
-        "description": "Comparez ci-dessous quelques-unes des quantités de likes TikTok disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options.",
+        "description": "Laissez les vues actuelles de la vidéo vous guider. En règle générale, choisissez un forfait qui garde les likes bien en dessous des vues déjà obtenues.",
         "rows": [
           {
             "id": "tt-l-100",
             "quantity": "100 likes",
-            "recommendedFor": "Une option plus petite pour une vidéo TikTok publique où vous voulez ajouter un nombre limité de likes."
+            "recommendedFor": "Pour une vidéo à quelques milliers de vues, ou pour tester le service d’abord sur une vidéo."
           },
           {
             "id": "tt-l-500",
             "quantity": "500 likes",
-            "recommendedFor": "Une option intermédiaire pour une vidéo TikTok où vous voulez un changement plus important du nombre de likes affiché."
+            "recommendedFor": "Pour les vidéos d’environ 5 000 à 10 000 vues qui paraissent plus calmes qu’elles ne devraient."
           },
           {
             "id": "tt-l-1000",
             "quantity": "1 000 likes",
-            "recommendedFor": "Un forfait plus important pour une vidéo TikTok publique où vous voulez ajouter mille likes en une seule commande."
+            "recommendedFor": "Notre forfait le plus populaire : convient aux vidéos déjà au-delà de 10 000 vues, y compris épinglées et produit."
           },
           {
             "id": "tt-l-5000",
             "quantity": "5 000 likes",
-            "recommendedFor": "Une option à plus fort volume pour une vidéo TikTok où vous voulez une hausse plus importante du nombre de likes affiché."
+            "recommendedFor": "Pour les vidéos à forte portée, à partir de plusieurs dizaines de milliers de vues. Livraison progressive conseillée."
           },
           {
             "id": "tt-l-10000",
             "quantity": "10 000 likes",
-            "recommendedFor": "L’une des plus grandes options de forfaits disponibles pour une vidéo TikTok publique où vous voulez ajouter dix mille likes."
+            "recommendedFor": "Pour les vidéos de campagne ou virales aux vues très élevées. Étalez la livraison sur une plus longue période."
           }
         ]
       },
@@ -568,35 +576,35 @@
     "whyBuy": {
       "id": "buy-tiktok-likes-why-buy",
       "title": "Pourquoi achète-t-on des likes TikTok ?",
-      "description": "On achète des likes TikTok pour des raisons variées. Certains veulent augmenter le nombre de likes affiché sur une vidéo particulière, d’autres choisissent un forfait de likes pour un contenu lié à un lancement, une campagne ou une activité TikTok continue. Le service modifie l’indicateur de likes de la vidéo sélectionnée, mais il ne garantit ni vues, ni abonnés, ni engagement, ni portée, ni ventes, ni croissance organique supplémentaires.",
+      "description": "Les raisons données par nos clients TikTok sont pratiques, et toutes concernent l’impression que donne une vidéo à ceux qui la regardent déjà.",
       "items": [
         {
           "id": "buy-tiktok-likes-wb-1",
-          "title": "Augmenter le nombre de likes visible",
-          "description": "Un forfait de likes TikTok peut être utilisé lorsque vous voulez augmenter le nombre de likes affiché sur une vidéo publique précise."
+          "title": "Vidéos produit et boutique",
+          "description": "Les vendeurs ajoutent des likes aux démos produit et aux vidéos TikTok Shop pour montrer aux acheteurs que d’autres ont aimé ce qu’ils regardent."
         },
         {
           "id": "buy-tiktok-likes-wb-2",
-          "title": "Utiliser des likes autour d’un lancement ou d’une campagne",
-          "description": "Les créateurs et les entreprises peuvent choisir un forfait de likes pour une vidéo TikTok liée à un lancement de produit, une campagne, une annonce ou une autre activité de contenu."
+          "title": "Vidéos épinglées sur le profil",
+          "description": "Les vidéos épinglées sont la vitrine d’un profil TikTok. Les créateurs y ajoutent des likes pour une première impression forte."
         },
         {
           "id": "buy-tiktok-likes-wb-3",
-          "title": "Se concentrer sur l’indicateur likes",
-          "description": "Les likes TikTok s’appliquent au nombre de likes de la vidéo sélectionnée, plutôt que d’ajouter automatiquement des abonnés à votre profil ou des vues à la vidéo."
+          "title": "Équilibrer une bonne vidéo",
+          "description": "Certaines vidéos font de bonnes vues mais très peu de likes. Un forfait modéré rapproche le compteur de ce qu’attendent les spectateurs."
         },
         {
           "id": "buy-tiktok-likes-wb-4",
-          "title": "Choisissez la quantité souhaitée",
-          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre de likes TikTok que vous voulez commander pour la vidéo indiquée."
+          "title": "Avant de promouvoir une vidéo",
+          "description": "Beaucoup de clients ajoutent des likes avant d’utiliser Promouvoir ou des publicités, pour que le trafic payant arrive sur une vidéo déjà appréciée."
         },
         {
           "id": "buy-tiktok-likes-wb-5",
-          "title": "Utilisez les likes en complément de votre contenu",
-          "description": "Acheter des likes ne remplace pas la création et la gestion de votre propre contenu TikTok. Vidéos, légendes, réponses et autres activités du compte dépendent toujours de la façon dont vous gérez votre présence."
+          "title": "Des attentes réalistes",
+          "description": "Les likes changent un compteur. Les vues, abonnements et ventes dépendent toujours de la vidéo elle-même et du temps passé à la regarder."
         }
       ],
-      "bottomNote": "Si les abonnés ou les vues vidéo sont l’indicateur que vous voulez modifier, choisissez plutôt le service TikTok correspondant, et non un forfait de likes."
+      "bottomNote": "Besoin de plus de lectures ou d’un profil plus grand ? Les vues et les abonnés TikTok sont des services distincts : comparez-les ci-dessous."
     },
     "howToBuy": {
       "id": "how-it-works",

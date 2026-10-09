@@ -163,11 +163,15 @@ function buildSections(config: RefundConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: 'Refill availability depends on the service and package purchased. Any applicable refill conditions are those shown for the relevant service or package.',
+          text: 'Every NovaLikes service includes a 6-month refill period, starting from the date your order is delivered. If the delivered quantity drops during that period, contact support on WhatsApp (+44 7454 758272) or by email with your order ID and we will refill the shortfall on the same profile, Page or content.',
         },
         {
           type: 'paragraph',
-          text: `The ${guaranteeLabel} is separate from any package-specific refill terms. This page does not convert the money-back window into a universal 30-day refill guarantee.`,
+          text: 'To remain eligible for a refill, the username must not be changed, and the profile, Page or content must be public while the original order and any refill are being delivered. You may make your account private once delivery is complete.',
+        },
+        {
+          type: 'paragraph',
+          text: `The ${guaranteeLabel} is separate from the 6-month refill period. A refill tops up drops in delivered metrics; the money-back guarantee covers eligible refund requests made within 30 days of purchase.`,
         },
       ],
     },

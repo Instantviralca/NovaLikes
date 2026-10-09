@@ -26,7 +26,8 @@
       "introHeading": "Veja uma foto pública do Instagram em um tamanho utilizável",
       "intro": [
         "A foto de perfil costuma ser a única imagem que se pode abrir sem seguir uma conta, mas o próprio layout do Instagram a mantém minúscula. Esta página cobre essa lacuna: você busca um nome de usuário público e, quando o Instagram inclui a foto no perfil público, nós a exibimos em um tamanho que dá para ver de verdade.",
-        "Nada aqui destrava uma conta privada. Se o Instagram não publica uma imagem de perfil para visitantes sem login, a ferramenta devolve um erro em vez de adivinhar ou substituir outra foto."
+        "Nada aqui destrava uma conta privada. Se o Instagram não publica uma imagem de perfil para visitantes sem login, a ferramenta devolve um erro em vez de adivinhar ou substituir outra foto.",
+        "Motivos comuns: confirmar que você encontrou a conta certa antes de seguir ou mandar mensagem, ver bem o logo de uma marca ou identificar uma conta falsa que usa a foto de outra pessoa."
       ],
       "howHeading": "Como este visualizador funciona",
       "how": [
@@ -50,7 +51,8 @@
       "notes": [
         "Perfis privados, ocultos ou visíveis só com login não podem ser visualizados.",
         "Esta página não mostra contagens de seguidores, bios nem posts recentes. Use o Visualizador de perfil do Instagram quando quiser essa visão combinada.",
-        "A imagem é a que o Instagram publica no momento. Não a ampliamos nem a rotulamos como HD."
+        "A imagem é a que o Instagram publica no momento. Não a ampliamos nem a rotulamos como HD.",
+        "Uma foto de perfil pode ser uma imagem pessoal. Use-a para reconhecer a conta e peça permissão ao dono antes de reutilizá-la em outro lugar."
       ],
       "relatedHeading": "Outras ferramentas de Instagram",
       "faqHeading": "Perguntas sobre foto de perfil",
@@ -74,6 +76,11 @@
           "id": "igp-download",
           "question": "Posso baixar a foto de perfil?",
           "answer": "Sim, quando o Instagram expõe a imagem pública. Baixar imagem salva esse arquivo pela NovaLikes. Ver tamanho real abre a mesma imagem em uma nova aba."
+        },
+        {
+          "id": "igp-guide",
+          "question": "Por que as fotos de perfil do Instagram parecem tão pequenas?",
+          "answer": "O Instagram mostra as fotos de perfil como pequenos círculos em quase todo lugar, e o arquivo só pode ser tão nítido quanto o que o dono enviou. Este visualizador abre a maior versão pública que o Instagram disponibiliza. Nosso guia em inglês [como ver a foto de perfil do Instagram em tamanho real](/learn/view-instagram-profile-picture-full-size) explica o motivo e o que continua público em contas privadas."
         }
       ]
     },
@@ -88,7 +95,8 @@
       "introHeading": "Um rótulo público de seguidores, não um censo privado",
       "intro": [
         "As pessoas consultam contagens de seguidores para confirmar o que uma conta já mostra ao mundo. Esta ferramenta faz essa consulta por você: solicita o perfil público e devolve a cifra de seguidores que o Instagram inclui nessa página no momento da verificação.",
-        "Quando o Instagram escreve 104M, você vê 104M. Expandir isso para um 104.000.000 inventado seria menos honesto, não mais preciso. Contas menores que ainda mostram um número completo também são exibidas assim."
+        "Quando o Instagram escreve 104M, você vê 104M. Expandir isso para um 104.000.000 inventado seria menos honesto, não mais preciso. Contas menores que ainda mostram um número completo também são exibidas assim.",
+        "É útil para uma checagem rápida antes de uma parceria ou acordo de publicidade, para acompanhar o número publicado de um concorrente ou para confirmar uma meta. O Instagram não mostra o histórico de seguidores no perfil, então anote o número e a data a cada consulta."
       ],
       "howHeading": "Como a contagem é lida",
       "how": [
@@ -111,7 +119,8 @@
       "notes": [
         "Não é um total ao vivo nem uma consulta de conta privada.",
         "Não convertemos 104M em uma contagem exata falsa.",
-        "Totais de seguindo e de posts pertencem ao Visualizador de perfil do Instagram, não a este contador focado."
+        "Totais de seguindo e de posts pertencem ao Visualizador de perfil do Instagram, não a este contador focado.",
+        "O número de seguidores pode incluir contas inativas ou falsas, então um número alto sozinho não prova alcance nem engajamento reais."
       ],
       "relatedHeading": "Outras ferramentas de Instagram",
       "faqHeading": "Perguntas sobre contagem de seguidores",
@@ -135,6 +144,11 @@
           "id": "igf-photo",
           "question": "Posso ver a foto de perfil também?",
           "answer": "O contador pode incluir a foto pública quando o Instagram a expõe. Para uma visão dedicada da imagem, use o [Visualizador de foto de perfil do Instagram](/tools/instagram-profile-picture-viewer). Para nome, bio e as três contagens, use o [Visualizador de perfil do Instagram](/tools/instagram-profile-viewer)."
+        },
+        {
+          "id": "igf-guide",
+          "question": "Posso ver o número de seguidores sem uma conta no Instagram?",
+          "answer": "Sim, em perfis públicos. Digite o nome de usuário acima — não é preciso entrar no Instagram. Nosso guia em inglês [como ver seguidores do Instagram sem login](/learn/check-instagram-follower-count-without-login) mostra outros métodos e o que o número de seguidores diz e não diz."
         }
       ]
     },
@@ -185,7 +199,7 @@
         {
           "id": "igvwr-private",
           "question": "Posso ver um perfil privado do Instagram?",
-          "answer": "Não. Só perfis públicos que o Instagram já expõe podem ser conferidos."
+          "answer": "Não. Só perfis públicos que o Instagram já expõe podem ser conferidos. Nosso guia em inglês [como ver um perfil público do Instagram sem login](/learn/view-instagram-profile-without-login) explica o que continua público e o que as contas privadas escondem."
         },
         {
           "id": "igvwr-counts",
@@ -211,7 +225,8 @@
       "introHeading": "Uma verificação de página pública, não um download prometido",
       "intro": [
         "O Instagram costuma reproduzir Reels em um player que nunca entrega um arquivo de vídeo a um visitante sem autenticação. Esta ferramenta mesmo assim faz a verificação: se há uma URL de mídia pública, você pode baixá-la. Se não, vê uma mensagem clara.",
-        "Disponibilidade limitada significa que recusamos inventar um arquivo. Não significa que o formulário está offline. Stories, posts privados e mídia só com login continuam fora de alcance."
+        "Disponibilidade limitada significa que recusamos inventar um arquivo. Não significa que o formulário está offline. Stories, posts privados e mídia só com login continuam fora de alcance.",
+        "As pessoas costumam querer uma cópia por motivos simples: guardar um backup dos próprios Reels, assistir a um clipe offline ou salvar uma referência para edição. Se o vídeo não for seu, peça permissão ao criador antes de reutilizá-lo."
       ],
       "howHeading": "O que acontece depois que você cola uma URL",
       "how": [
@@ -234,7 +249,8 @@
       "notes": [
         "Stories, contas privadas e posts só com login não são recuperados.",
         "Esta página não pede uma senha do Instagram.",
-        "Para fotos de perfil, use o Visualizador de foto de perfil do Instagram em vez de uma URL de Reel."
+        "Para fotos de perfil, use o Visualizador de foto de perfil do Instagram em vez de uma URL de Reel.",
+        "Baixe apenas vídeos que sejam seus ou que você tenha permissão para usar. Repostar o Reel de outra pessoa pode violar as regras do Instagram e os direitos autorais do criador."
       ],
       "relatedHeading": "Outras ferramentas de Instagram",
       "faqHeading": "Perguntas sobre Reels e vídeos",
@@ -258,6 +274,11 @@
           "id": "igv-profile",
           "question": "Eu só preciso de uma foto de perfil?",
           "answer": "Use o [Visualizador de foto de perfil do Instagram](/tools/instagram-profile-picture-viewer)."
+        },
+        {
+          "id": "igv-save",
+          "question": "Como salvo um vídeo do Instagram na galeria do celular?",
+          "answer": "Quando um arquivo for oferecido, toque em Baixar. No iPhone ele vai para o app Arquivos (Downloads): abra, toque em Compartilhar e escolha Salvar vídeo para adicionar às Fotos. No Android ele vai para a pasta Downloads e aparece na galeria. O botão Salvar do Instagram só marca o post dentro do Instagram."
         }
       ]
     },
@@ -272,7 +293,8 @@
       "introHeading": "Baixe o arquivo público que o TikTok já serve",
       "intro": [
         "Criadores e espectadores muitas vezes precisam de uma cópia de um vídeo público que já podem assistir sem login. Este downloader solicita essa página pública nos servidores da NovaLikes e, quando o TikTok inclui um arquivo de vídeo, o oferece como download.",
-        "Links de compartilhamento são resolvidos quando apontam para uma página pública de reprodução. Posts de foto, vídeos privados e itens removidos não são suportados. Qualquer marca d’água ou limite regional do arquivo público ainda se aplica."
+        "Links de compartilhamento são resolvidos quando apontam para uma página pública de reprodução. Posts de foto, vídeos privados e itens removidos não são suportados. Qualquer marca d’água ou limite regional do arquivo público ainda se aplica.",
+        "Os motivos mais comuns são guardar um backup dos próprios TikToks, assistir a um clipe offline ou reunir referências para edição. Se o vídeo for de outra pessoa, peça permissão ao criador antes de reutilizá-lo."
       ],
       "howHeading": "Como a recuperação funciona",
       "how": [
@@ -295,7 +317,8 @@
       "notes": [
         "Posts de foto, vídeos privados e vídeos removidos não são suportados.",
         "O TikTok pode limitar brevemente solicitações repetidas.",
-        "Esta página não afirma remover marcas d’água. Você recebe o que o TikTok publica."
+        "Esta página não afirma remover marcas d’água. Você recebe o que o TikTok publica.",
+        "Baixe apenas vídeos que sejam seus ou que você tenha permissão para usar. Repostar o TikTok de outra pessoa pode violar as regras do TikTok e os direitos autorais do criador."
       ],
       "relatedHeading": "Outras ferramentas de TikTok",
       "faqHeading": "Perguntas sobre vídeos do TikTok",
@@ -319,6 +342,11 @@
           "id": "tt-login",
           "question": "Preciso de uma conta do TikTok?",
           "answer": "Não. Se o TikTok não expõe o arquivo público, a ferramenta não consegue recuperá-lo."
+        },
+        {
+          "id": "tt-save",
+          "question": "Como salvo um vídeo do TikTok no iPhone ou Android?",
+          "answer": "Quando o arquivo aparecer, toque em Baixar. No iPhone ele vai para o app Arquivos (Downloads): abra, toque em Compartilhar e escolha Salvar vídeo para mover para as Fotos. No Android ele vai para Downloads e aparece na galeria. A opção Salvar vídeo do próprio TikTok só aparece quando o criador permite downloads, e ela adiciona a marca d’água do TikTok."
         }
       ]
     },
@@ -333,7 +361,8 @@
       "introHeading": "O avatar público, nada mais",
       "intro": [
         "Esta página é só para a imagem que o TikTok coloca em um perfil público. Ela não conta seguidores, não lista vídeos e não abre contas privadas. Se você precisa de um arquivo de vídeo, use o Downloader de vídeos do TikTok.",
-        "Um nome de usuário, um @handle ou um link tiktok.com/@user identificam a mesma conta pública. URLs de vídeo são rejeitadas aqui para a consulta permanecer na foto de perfil."
+        "Um nome de usuário, um @handle ou um link tiktok.com/@user identificam a mesma conta pública. URLs de vídeo são rejeitadas aqui para a consulta permanecer na foto de perfil.",
+        "As pessoas usam para reconhecer uma conta, ver melhor o logo de uma marca ou confirmar que encontraram o perfil certo antes de seguir, mandar mensagem ou trabalhar com alguém."
       ],
       "howHeading": "Como a foto é recuperada",
       "how": [
@@ -355,7 +384,8 @@
       "notes": [
         "Perfis privados ou só com login devolvem um erro.",
         "URLs de vídeo do TikTok pertencem ao downloader de vídeos, não a este formulário.",
-        "O arquivo é o avatar que o TikTok publica. Não o rotulamos como HD."
+        "O arquivo é o avatar que o TikTok publica. Não o rotulamos como HD.",
+        "Uma foto de perfil pode ser uma imagem pessoal. Use-a só para reconhecer a conta ou com a permissão do dono."
       ],
       "relatedHeading": "Outras ferramentas de TikTok",
       "faqHeading": "Perguntas sobre fotos do TikTok",
@@ -379,6 +409,11 @@
           "id": "ttp-input",
           "question": "@username funciona, ou preciso da URL completa?",
           "answer": "Os dois funcionam. Você pode digitar nba, @nba ou https://www.tiktok.com/@nba."
+        },
+        {
+          "id": "ttp-size",
+          "question": "Por que a foto de perfil parece pequena ou sem nitidez?",
+          "answer": "O TikTok publica avatares em tamanho limitado, e o arquivo só pode ser tão nítido quanto o que o dono enviou. A NovaLikes mostra a maior versão pública que o TikTok disponibiliza e não amplia nem rotula como HD."
         }
       ]
     },
@@ -393,7 +428,8 @@
       "introHeading": "Vídeos públicos do Facebook, não Reels",
       "intro": [
         "O Facebook ainda publica muitos vídeos longos em páginas watch e caminhos /videos/ de Página. Este downloader é para essas URLs. Quando o Facebook inclui uma fonte HD, uma fonte SD ou ambas, essas opções aparecem com os próprios rótulos do Facebook.",
-        "Clipes só para amigos, muros de login e vídeos removidos não podem ser recuperados. Um link no estilo Reel /reel/ é direcionado ao Downloader de Reels do Facebook em vez de ser forçado neste formulário."
+        "Clipes só para amigos, muros de login e vídeos removidos não podem ser recuperados. Um link no estilo Reel /reel/ é direcionado ao Downloader de Reels do Facebook em vez de ser forçado neste formulário.",
+        "Para pegar o link no celular, abra o vídeo, toque em Compartilhar e escolha Copiar link. No computador, abra o vídeo em uma aba própria e copie a barra de endereço. Depois de baixar, o arquivo vai para o app Arquivos no iPhone e para Downloads no Android."
       ],
       "howHeading": "Como a mídia do Facebook é oferecida",
       "how": [
@@ -417,7 +453,8 @@
       "notes": [
         "Vídeos só para amigos, que exigem login ou removidos não podem ser recuperados.",
         "Botões de qualidade aparecem só quando o Facebook rotula essas fontes.",
-        "Use o downloader de Reels para URLs /reel/ e de compartilhamento de Reel."
+        "Use o downloader de Reels para URLs /reel/ e de compartilhamento de Reel.",
+        "Baixe apenas vídeos que sejam seus ou que você tenha permissão para usar. Repostar o vídeo de outra pessoa pode violar as regras do Facebook e os direitos autorais do criador."
       ],
       "relatedHeading": "Outras ferramentas de Facebook",
       "faqHeading": "Perguntas sobre vídeos do Facebook",
@@ -441,6 +478,11 @@
           "id": "fbv-login",
           "question": "É necessário um login do Facebook?",
           "answer": "Não. A ferramenta nunca pede credenciais do Facebook."
+        },
+        {
+          "id": "fbv-guide",
+          "question": "Qual é a diferença entre Salvar vídeo e baixar?",
+          "answer": "O Salvar vídeo do Facebook só marca o vídeo dentro do Facebook para você assistir depois. Baixar te dá um arquivo no seu dispositivo. Nosso guia em inglês [como baixar um vídeo público do Facebook](/learn/how-to-download-facebook-video) explica as duas opções e por que alguns vídeos não podem ser obtidos."
         }
       ]
     },
@@ -455,7 +497,8 @@
       "introHeading": "Reels são uma URL diferente do Facebook",
       "intro": [
         "Os Reels do Facebook usam caminhos /reel/ e links de compartilhamento de Reel, não o player watch mais antigo. Esta página existe para tratar essas URLs nos próprios termos. Se o Facebook expõe um arquivo de mídia público, você pode baixá-lo aqui.",
-        "Um vídeo regular de Página ainda pertence ao Downloader de vídeos do Facebook. Enviar o tipo de link errado devolve um apontamento para a ferramenta correspondente em vez de uma falha silenciosa."
+        "Um vídeo regular de Página ainda pertence ao Downloader de vídeos do Facebook. Enviar o tipo de link errado devolve um apontamento para a ferramenta correspondente em vez de uma falha silenciosa.",
+        "Para pegar o link, abra o Reel, toque em Compartilhar e escolha Copiar link. No iPhone o arquivo baixado vai para o app Arquivos, onde Compartilhar e depois Salvar vídeo leva para as Fotos. No Android ele vai para Downloads e aparece na galeria."
       ],
       "howHeading": "Como um Reel é recuperado",
       "how": [
@@ -478,7 +521,8 @@
       "notes": [
         "Links watch ou /videos/ pertencem ao Downloader de vídeos do Facebook.",
         "Rótulos de qualidade aparecem só quando o Facebook informa HD ou SD.",
-        "Reels privados não são recuperados."
+        "Reels privados não são recuperados.",
+        "Baixe apenas Reels que sejam seus ou que você tenha permissão para usar. Repostar o Reel de outra pessoa pode violar as regras do Facebook e os direitos autorais do criador."
       ],
       "relatedHeading": "Outras ferramentas de Facebook",
       "faqHeading": "Perguntas sobre Reels do Facebook",
@@ -502,6 +546,11 @@
           "id": "fbr-login",
           "question": "É necessária uma conta do Facebook?",
           "answer": "Não. A ferramenta nunca pede credenciais do Facebook."
+        },
+        {
+          "id": "fbr-guide",
+          "question": "Posso baixar meu próprio Reel sem esta ferramenta?",
+          "answer": "Muitas vezes, sim. O Facebook oferece uma opção de download própria para Reels que você mesmo compartilhou, no app para celular. Nosso guia em inglês [como baixar um Reel público do Facebook](/learn/how-to-download-facebook-reel) explica quando essa opção aparece e por que alguns Reels não podem ser obtidos."
         }
       ]
     }

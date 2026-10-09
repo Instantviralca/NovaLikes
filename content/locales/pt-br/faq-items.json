@@ -46,14 +46,14 @@
     "category": "account_security",
     "order": 2,
     "question": "Minha conta nas redes sociais precisa ser pública?",
-    "answer": "Se o serviço escolhido exigir que a NovaLikes acesse o perfil, a Página, a publicação ou o vídeo publicamente, esse conteúdo precisa permanecer acessível ao público enquanto o pedido estiver sendo processado. Conteúdo privado ou indisponível pode impedir que o serviço seja concluído."
+    "answer": "Sim. O perfil, a Página, a publicação ou o vídeo precisa estar público enquanto seu pedido é entregue; caso contrário, a entrega não pode começar nem terminar. Depois que a entrega for concluída, você pode voltar para o privado. Mantenha também o mesmo nome de usuário: alterá-lo durante um pedido ou o período de reposição de 6 meses pode interromper a entrega e as reposições."
   },
   {
     "id": "faq-as-make-private-after",
     "category": "account_security",
     "order": 3,
     "question": "Posso deixar a conta privada depois de fazer um pedido?",
-    "answer": "Se o pedido depender de acesso público a um perfil ou conteúdo, mantenha-o público enquanto o pedido estiver sendo processado. Alterar a visibilidade pode impedir o acesso às informações necessárias."
+    "answer": "Sim, mas só depois que a entrega for concluída. Enquanto o pedido é entregue, o perfil ou o conteúdo precisa continuar público. Depois você pode mudar para privado; se precisar de uma reposição mais tarde, deixe-o público novamente até a reposição ser entregue."
   },
   {
     "id": "faq-as-login-account",
@@ -88,14 +88,14 @@
     "category": "orders_delivery",
     "order": 1,
     "question": "Quanto tempo leva um pedido da NovaLikes?",
-    "answer": "O processamento e a entrega podem variar conforme o serviço e o pacote. Use as informações de entrega exibidas para o pacote específico que você escolher, em vez de assumir que todo serviço da NovaLikes tem o mesmo prazo."
+    "answer": "A maioria dos pedidos começa em até 6–8 horas após a confirmação do pagamento. Depois de iniciada, a entrega padrão costuma ser concluída em 4–6 horas. Se preferir um ritmo mais lento, peça entrega gradual na observação do pedido ou pelo WhatsApp. Você pode acompanhar o andamento na página [Rastrear pedido](/track-order) com o ID do pedido e seu e-mail."
   },
   {
     "id": "faq-od-start-immediately",
     "category": "orders_delivery",
     "order": 2,
     "question": "Meu pedido começa imediatamente?",
-    "answer": "O processamento do pedido pode variar conforme o serviço escolhido e as condições atuais de processamento. Consulte as informações fornecidas para o serviço ou pacote selecionado para quaisquer detalhes de prazo aplicáveis."
+    "answer": "Não na hora. Cada pedido é verificado primeiro, e a maioria começa em até 6–8 horas após a confirmação do pagamento. Depois disso, a entrega padrão costuma ser concluída em 4–6 horas."
   },
   {
     "id": "faq-od-track",
@@ -116,7 +116,7 @@
     "category": "orders_delivery",
     "order": 5,
     "question": "O que devo fazer se meu pedido não começou?",
-    "answer": "Primeiro confira se o nome de usuário ou a URL que você enviou estão corretos e se o perfil ou conteúdo exigido ainda está público. Se as informações estiverem corretas e você ainda precisar de ajuda, fale com o suporte da NovaLikes com os dados do pedido."
+    "answer": "Se seu pedido não começou em até 8 horas após o pagamento, confira primeiro se o nome de usuário ou o link está correto e se o perfil ou o conteúdo está público. Se estiver tudo certo, fale com a gente pelo WhatsApp (+44 7454 758272) ou pelo support@novalikes.com com o ID do pedido."
   },
   {
     "id": "faq-od-change-url",
@@ -165,21 +165,21 @@
     "category": "instagram",
     "order": 4,
     "question": "Minha conta do Instagram precisa ser pública para receber seguidores?",
-    "answer": "Se o serviço de seguidores no Instagram exigir acesso ao perfil público, mantenha o perfil acessível ao público enquanto o pedido estiver sendo processado. Um perfil privado ou indisponível pode impedir o acesso às informações necessárias."
+    "answer": "Sim. Mantenha seu perfil do Instagram público até a entrega ser concluída; caso contrário, o pedido não pode começar nem terminar. Depois da entrega, você pode deixá-lo privado de novo. Não altere seu nome de usuário durante o pedido nem durante o período de reposição de 6 meses."
   },
   {
     "id": "faq-ig-private-followers",
     "category": "instagram",
     "order": 5,
     "question": "Posso comprar seguidores no Instagram para uma conta privada?",
-    "answer": "Uma conta privada no Instagram pode impedir que um serviço que depende de acesso público ao perfil seja processado normalmente. Siga os requisitos de visibilidade mostrados para o serviço de seguidores no Instagram antes e durante o pedido."
+    "answer": "Você pode fazer o pedido, mas a entrega só começa quando o perfil estiver público. Deixe-o público antes ou logo depois do pedido, mantenha assim até a entrega ser concluída e depois você pode deixá-lo privado de novo."
   },
   {
     "id": "faq-ig-followers-drop",
     "category": "instagram",
     "order": 6,
     "question": "O Instagram pode remover seguidores depois da entrega?",
-    "answer": "As contagens de seguidores nas plataformas sociais podem mudar com o tempo, inclusive quando contas são removidas, desativadas ou deixam de ser contabilizadas pela plataforma. Consulte os termos do serviço específico da NovaLikes para quaisquer condições de reposição aplicáveis, em vez de assumir que todo pedido inclui reposição."
+    "answer": "Sim, alguma queda é normal. Nossos seguidores vêm de perfis realistas — não afirmamos que sejam usuários reais ativos — e o Instagram remove ou oculta regularmente contas que sinaliza. Por isso todo pedido inclui reposição de 6 meses: se o número cair, fale com a gente pelo WhatsApp (+44 7454 758272) com o ID do pedido e faremos a reposição."
   },
   {
     "id": "faq-ig-safe-likes",
@@ -249,7 +249,7 @@
     "category": "tiktok",
     "order": 4,
     "question": "Minha conta do TikTok precisa ser pública?",
-    "answer": "Se o serviço de TikTok escolhido exigir acesso público ao perfil ou ao vídeo, mantenha o conteúdo relevante acessível ao público enquanto o pedido estiver sendo processado."
+    "answer": "Sim. Mantenha sua conta do TikTok e o vídeo enviado públicos até a entrega ser concluída; depois você pode deixar a conta privada. Não altere seu nome de usuário durante o pedido nem durante o período de reposição de 6 meses."
   },
   {
     "id": "faq-tt-likes-video",
@@ -298,7 +298,7 @@
     "category": "facebook",
     "order": 3,
     "question": "Minha Página do Facebook precisa ser pública?",
-    "answer": "Se o serviço escolhido exigir acesso à sua Página do Facebook, a Página precisa permanecer acessível ao público enquanto o pedido estiver sendo processado."
+    "answer": "Sim. Mantenha a Página (e a publicação, no caso de curtidas em publicações) pública até a entrega ser concluída. Não altere o nome de usuário nem a URL da Página durante o pedido nem durante o período de reposição de 6 meses."
   },
   {
     "id": "faq-fb-followers-vs-page-likes",
@@ -361,7 +361,7 @@
     "category": "payments_refunds",
     "order": 2,
     "question": "Em qual moeda os preços da NovaLikes são exibidos?",
-    "answer": "Os preços dos pacotes da NovaLikes são exibidos na moeda padrão da loja configurada para o site."
+    "answer": "Todos os preços da NovaLikes estão em dólares americanos (USD). Se você pagar com um cartão em outra moeda, como real ou euro, o banco ou a operadora do cartão converte o valor pela própria taxa de câmbio, então o valor final na fatura pode variar um pouco."
   },
   {
     "id": "faq-pr-payment-declined",
@@ -382,13 +382,13 @@
     "category": "payments_refunds",
     "order": 5,
     "question": "A NovaLikes oferece reposição?",
-    "answer": "A disponibilidade de reposição depende do serviço e do pacote que você compra. Consulte os termos exibidos para o serviço ou pacote escolhido para quaisquer condições de reposição aplicáveis."
+    "answer": "Sim. Todo serviço da NovaLikes inclui reposição de 6 meses. Se os seguidores, curtidas, visualizações ou comentários entregues caírem em até 6 meses após a entrega do pedido, fale com a gente pelo WhatsApp (+44 7454 758272) com o ID do pedido e faremos a reposição. Para manter o direito, não altere seu nome de usuário e mantenha o perfil ou o conteúdo público enquanto o pedido ou uma reposição estiver sendo entregue; você pode deixá-lo privado quando a entrega terminar."
   },
   {
     "id": "faq-pr-drops",
     "category": "payments_refunds",
     "order": 6,
     "question": "O que acontece se seguidores ou curtidas caírem depois da entrega?",
-    "answer": "As contagens de seguidores e curtidas nas plataformas sociais podem mudar com o tempo. Se o pacote escolhido incluir uma política de reposição aplicável, siga as condições exibidas para aquele serviço ou fale com o suporte da NovaLikes para ajuda com o pedido."
+    "answer": "Alguma queda com o tempo é normal em qualquer plataforma, porque Instagram, TikTok e Facebook removem ou ocultam regularmente contas e interações. Todo pedido da NovaLikes inclui reposição de 6 meses: fale com a gente pelo WhatsApp (+44 7454 758272) com o ID do pedido e faremos a reposição, desde que o nome de usuário não tenha mudado e o perfil ou o conteúdo esteja público enquanto a reposição é entregue."
   }
 ]

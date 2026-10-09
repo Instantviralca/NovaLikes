@@ -53,9 +53,9 @@
   },
   "finalCta": {
     "title": "Vous avez encore besoin d’aide ?",
-    "description": "Notre équipe de support amicale est toujours là pour vous. N’hésitez pas à nous écrire à tout moment !",
+    "description": "Notre équipe support est disponible 24h/24, 7j/7 par e-mail et sur WhatsApp (+44 7454 758272) et répond généralement en 15 minutes.",
     "primaryCta": {
-      "label": "Démarrer le chat en direct"
+      "label": "Envoyer un message"
     }
   },
   "chrome": {
@@ -72,13 +72,13 @@
     "messageRequired": "Le message est obligatoire.",
     "messageMin": "Le message doit contenir au moins 20 caractères.",
     "emailTitle": "Support par e-mail",
-    "emailReply": "Nous répondons en quelques minutes",
-    "liveChatTitle": "Chat en direct",
-    "liveChatAvailable": "Disponible 24/7 sur notre site",
-    "liveChatHelp": "Obtenez une aide immédiate de notre équipe",
+    "emailReply": "Nous répondons généralement en 15 minutes",
+    "liveChatTitle": "Support WhatsApp",
+    "liveChatAvailable": "+44 7454 758272 — disponible 24h/24, 7j/7",
+    "liveChatHelp": "Écrivez-nous pour l’aide sur les commandes et les demandes de refill",
     "quickTitle": "Support rapide",
     "quickHours": "Lun – Dim : 24/7",
-    "quickReach": "Contactez-nous à tout moment via le formulaire",
+    "quickReach": "Contactez-nous à tout moment par e-mail, WhatsApp ou via le formulaire de contact",
     "responseTitle": "Délai de réponse",
     "responseAverage": "Délai de réponse moyen :",
     "responseTime": "Moins de 15 minutes",

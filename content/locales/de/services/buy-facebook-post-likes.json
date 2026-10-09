@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "FACEBOOK-SERVICES",
       "title": "Facebook Beitrags-Likes kaufen",
-      "description": "Kaufen Sie Facebook Beitrags-Likes, indem Sie Paket und Menge für einen bestimmten geeigneten öffentlichen Facebook-Beitrag wählen. Vergleichen Sie verfügbare Beitrags-Like-Pakete und Preise, wählen Sie die gewünschte Like-Zahl, geben Sie die korrekte öffentliche Facebook-Beitrags-URL an und schließen Sie die Bestellung online ab. Ihr Facebook-Passwort ist nicht erforderlich, und nach dem Checkout können Sie verfügbare Statusinformationen über die Bestellverfolgung prüfen.",
+      "description": "Kaufen Sie Facebook Beitrags-Likes für jeden öffentlichen Beitrag einer Seite oder eines persönlichen Profils ab 2,99 US-$. Standardmäßig als „Gefällt mir“ geliefert, „Love“ oder andere Reaktionen auf Wunsch. Beitragslink einfügen, Paket wählen, bezahlen – kein Passwort nötig. Die meisten Bestellungen starten innerhalb von 6–8 Stunden, und jede Bestellung enthält eine 6-monatige Nachfüllung und WhatsApp-Support rund um die Uhr.",
       "purpose": "Convert for Facebook post likes packages worldwide",
       "primaryKeyword": "buy Facebook Post Likes",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "fb-post-trust-url",
-          "label": "Nur öffentliche Facebook-Beitrags-URL"
+          "label": "Seiten- & Profilbeiträge"
         },
         {
           "id": "fb-post-trust-password",
-          "label": "Kein Passwort erforderlich"
+          "label": "Andere Reaktionen auf Wunsch"
         },
         {
           "id": "fb-post-trust-checkout",
-          "label": "Sicherer Checkout"
+          "label": "Kein Passwort erforderlich"
         },
         {
           "id": "fb-post-trust-track",
-          "label": "Bestellverfolgung"
+          "label": "6 Monate Nachfüllung"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Facebook-Beitrags-Likes-Pakete und Preise",
-      "description": "Vergleichen Sie verfügbare Facebook-Beitrags-Like-Pakete, Mengen und Preise vor der Bestellung. Wählen Sie die Anzahl Beitrags-Likes für einen bestimmten geeigneten öffentlichen Facebook-Beitrag, prüfen Sie den aktuellen Paketpreis und legen Sie das gewählte Paket in den Warenkorb, wenn Sie soweit sind.",
+      "description": "Die Preise sind in US-Dollar. 1.000 Beitrags-Likes ist das beliebteste Paket; wählen Sie eine Größe, die dazu passt, wie viele Menschen Ihre Beiträge üblicherweise sehen.",
       "purpose": "Present real NovaLikes.com Facebook post likes packages",
       "primaryKeyword": "Facebook Post Likes",
       "suggestedWordCount": 45,
@@ -242,31 +242,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-post-likes-why-choose",
-        "title": "Warum NovaLikes für Facebook Beitrags-Likes?",
-        "description": "NovaLikes macht es einfach, Facebook-Beitrags-Like-Pakete vor der Bestellung zu vergleichen. Wählen Sie die gewünschte Beitrags-Like-Menge, geben Sie die korrekte öffentliche Facebook-Beitrags-URL an, prüfen Sie den Paketpreis und nutzen Sie nach dem Checkout die Bestellverfolgung für verfügbare Statusinformationen.",
+        "title": "Warum Facebook Beitrags-Likes bei NovaLikes kaufen?",
+        "description": "Unser Team wickelt seit 7–8 Jahren Social-Media-Bestellungen ab, zuerst auf früheren Websites, dann als ViralMe und heute als NovaLikes. Eine Bestellung von Facebook Beitrags-Likes ist bei uns einfach: ein Beitrag, eine bekannte Startzeit und eine Nachfüllung, falls die Zahl sinkt.",
         "items": [
           {
             "id": "buy-facebook-post-likes-0",
-            "title": "Mehrere Beitrags-Like-Mengen",
-            "description": "Vergleichen Sie die verfügbaren Facebook-Beitrags-Like-Mengen und wählen Sie das Paket, das zur gewünschten Like-Zahl für den gewählten Beitrag passt.",
+            "title": "Seiten und Profile",
+            "description": "Likes können auf einen öffentlichen Beitrag einer Facebook-Seite oder eines persönlichen Profils gehen, solange das Publikum des Beitrags auf „Öffentlich“ steht.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-1",
-            "title": "Nur öffentliche Facebook-Beitrags-URL",
-            "description": "Geben Sie die korrekte öffentliche Facebook-Beitrags-URL des Beitrags an, dem die Likes hinzugefügt werden sollen. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "„Gefällt mir“ standardmäßig, andere Reaktionen auf Wunsch",
+            "description": "Bestellungen werden als normale „Gefällt mir“-Reaktion geliefert. Lieber „Love“ oder eine andere Reaktion? Geben Sie es in der Notiz beim Bezahlen an.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-2",
-            "title": "Vor dem Checkout prüfen",
-            "description": "Prüfen Sie die gewählte Beitrags-Like-Menge und den aktuellen Paketpreis, bevor Sie die Bestellung in den Warenkorb legen und den Checkout abschließen.",
+            "title": "Start in 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung und sind 4–6 Stunden später fertig. Schrittweise Lieferung ist auf Wunsch möglich.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-3",
-            "title": "Bestellverfolgung",
-            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer Facebook-Beitrags-Likes-Bestellung zu prüfen.",
+            "title": "6 Monate Nachfüllung",
+            "description": "Sinkt die Reaktionszahl dieses Beitrags innerhalb von 6 Monaten nach der Lieferung, senden Sie Ihre Bestellnummer per WhatsApp, und wir füllen auf.",
             "icon": "headphones"
           }
         ]
@@ -276,66 +276,74 @@
       "canYouBuy": {
         "id": "buy-facebook-post-likes-can-you-buy",
         "title": "Kann man Facebook Beitrags-Likes kaufen?",
-        "description": "Ja. Facebook-Beitrags-Like-Pakete können über Online-Beitrags-Like-Services gekauft werden. Bei NovaLikes wählen Sie ein verfügbares Beitrags-Likes-Paket, geben die öffentliche Facebook-Beitrags-URL des gewünschten Beitrags an und schließen die Bestellung über die Website ab.",
+        "description": "Ja. Sie können Likes für jeden öffentlichen Facebook-Beitrag kaufen – von einer Seite oder einem persönlichen Profil. Kopieren Sie den Beitragslink, wählen Sie ein Paket und bezahlen Sie in US-Dollar. Die Reaktionszahl unter diesem Beitrag steigt; Ihre Follower und Seitenzahlen bleiben gleich.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-4",
-            "title": "Was eine Facebook-Beitrags-Likes-Bestellung ändert",
-            "description": "Eine Facebook-Beitrags-Likes-Bestellung gilt für die Like-Zahl des öffentlichen Facebook-Beitrags, der mit der Bestellung übermittelt wird. Sie fügt nicht automatisch Follower, Seiten-Likes, Kommentare, Shares oder Views hinzu.",
+            "title": "Ein Beitrag pro Bestellung",
+            "description": "Die Likes werden dem Beitrag im gesendeten Link hinzugefügt. Likes auf mehreren Beiträgen? Geben Sie pro Beitrag eine Bestellung auf.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-post-likes-5",
-            "title": "Was Sie für eine Bestellung brauchen",
-            "description": "Sie brauchen die korrekte öffentliche Facebook-Beitrags-URL und das Beitrags-Likes-Paket, das Sie kaufen möchten. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "So erhalten Sie den Link",
+            "description": "Tippen Sie beim Beitrag auf „Teilen“ und wählen Sie „Link kopieren“, oder klicken Sie auf den Zeitstempel des Beitrags und kopieren Sie die Adresse. Senden Sie nie Ihr Passwort.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-post-likes-6",
-            "title": "Was Facebook Beitrags-Likes nicht enthalten",
-            "description": "Beitrags-Likes sind getrennt von Facebook Followern, Seiten-Likes, Kommentaren, Shares und Views. Eine Beitrags-Likes-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Reichweite, Verkäufe oder organisches Wachstum zu.",
+            "title": "Publikum muss öffentlich sein",
+            "description": "Beiträge, die mit „Freunde“ oder einer benutzerdefinierten Liste geteilt sind, können keine Bestellung erhalten. Achten Sie auf das Globus-Symbol neben dem Datum.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie Facebook Beitrags-Likes gewählt, die richtige Beitrags-Like-Menge bestimmt und die URL des genauen öffentlichen Facebook-Beitrags angegeben haben, dem die Likes hinzugefügt werden sollen."
+        "closingNote": "Die Likes stammen von realistisch wirkenden Konten. Wir behaupten nicht, dass es aktive Personen sind, die den Beitrag kommentieren oder teilen."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-post-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Helfen gekaufte Beitrags-Likes einem Facebook-Beitrag?",
+        "description": "Sie helfen dabei, wie ein Beitrag wirkt – nicht dabei, wie weit er von allein kommt. Facebook stuft Beiträge vor allem danach ein, wie Menschen interagieren: Kommentare, Shares, Reaktionen von Freunden und Verweildauer. Eine gesunde Reaktionszahl ist Social Proof: Menschen bleiben eher bei einem Beitrag hängen, auf den andere schon reagiert haben – das ist der ehrliche Nutzen.",
+        "helpTitle": "Wo Beitrags-Likes helfen",
+        "helpItems": [
+          "Angebote, Events und Ankündigungen, die ab der ersten Stunde beliebt wirken sollen.",
+          "Beiträge, die Sie bewerben wollen, damit bezahlte Zuschauer nicht auf einem Beitrag mit zwei Reaktionen landen.",
+          "Produkt- oder Dienstleistungsbeiträge, die Kunden sehen, bevor sie Ihr Unternehmen kontaktieren."
+        ],
+        "limitTitle": "Wo nicht",
+        "limitItems": [
+          "Reichweite von allein – Kommentare und Shares zählen viel mehr als Likes.",
+          "Ein Beitrag mit 3.000 Likes auf einer Seite mit 200 Followern wirkt unnatürlich. Bleiben Sie im Verhältnis.",
+          "Einen schwachen Beitrag in einen guten verwandeln: Der Inhalt entscheidet weiterhin, ob Menschen interagieren."
+        ],
+        "closingNote": "Unser Learn-Center-Ratgeber (auf Englisch) dazu, wie Sie mehr Likes auf einen Facebook-Beitrag bekommen, zeigt organische Wege, Reaktionen neben jedem Paket zu steigern."
       },
       "whatHappens": {
         "id": "buy-facebook-post-likes-what-happens",
         "title": "Was passiert nach dem Kauf von Facebook Beitrags-Likes?",
-        "description": "Nach einer Facebook-Beitrags-Likes-Bestellung werden das Beitrags-Likes-Paket und die übermittelte öffentliche Facebook-Beitrags-URL genutzt, um die Bestellung für den gewählten Beitrag zu bearbeiten. Lassen Sie den Beitrag dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "description": "Was nach der Zahlung für Facebook Beitrags-Likes passiert.",
         "steps": [
           {
             "id": "buy-facebook-post-likes-th-1",
-            "title": "Ihre Bestelldaten werden geprüft",
-            "description": "Das gewählte Beitrags-Likes-Paket, die Menge und die übermittelte Facebook-Beitrags-URL werden Ihrer Bestellung zugeordnet, damit die Anfrage für den vorgesehenen Beitrag bearbeitet werden kann."
+            "title": "Beitragslink und Notiz werden geprüft",
+            "description": "Ihr Beitragslink und jede Notiz – etwa eine andere Reaktion oder ein schrittweises Tempo – werden der Bestellung vor Lieferbeginn zugeordnet."
           },
           {
             "id": "buy-facebook-post-likes-th-2",
-            "title": "Beitrags-Likes gehen an den übermittelten Beitrag",
-            "description": "Die Bestellung gilt für den Facebook-Beitrag, der mit der angegebenen URL verbunden ist. Prüfen Sie die Beitrags-URL sorgfältig, bevor Sie den Checkout abschließen."
+            "title": "Likes starten innerhalb von 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung. Schrittweise Bestellungen starten im selben Zeitraum, verteilen die Reaktionen aber."
           },
           {
             "id": "buy-facebook-post-likes-th-3",
-            "title": "Die Bearbeitungszeit kann variieren",
-            "description": "Die benötigte Zeit kann je nach Beitrags-Like-Menge und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+            "title": "Standardlieferung in 4–6 Stunden",
+            "description": "Nach dem Start sind die meisten Bestellungen innerhalb von 4–6 Stunden abgeschlossen. Verfolgen Sie den Fortschritt auf der Seite „Bestellung verfolgen“."
           },
           {
             "id": "buy-facebook-post-likes-th-4",
-            "title": "Bestellstatus prüfen",
-            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+            "title": "6-monatige Nachfüllung beginnt",
+            "description": "Der Nachfüllschutz beginnt am Tag des Lieferabschlusses. Sinkt die Zahl, senden Sie Ihre Bestellnummer per WhatsApp."
           }
         ],
-        "closingNote": "Vermeiden Sie es, den übermittelten Beitrag zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+        "closingNote": "Lassen Sie den Beitrag öffentlich und löschen Sie ihn nicht oder ändern Sie das Publikum nicht, bis die Lieferung abgeschlossen ist – und auch nicht während der Nachfüllfrist."
       },
       "serviceCompare": {
         "id": "buy-facebook-post-likes-service-compare",
@@ -367,8 +375,8 @@
       "beforeBuying": {
         "id": "buy-facebook-post-likes-before-buying",
         "title": "Was Sie vor dem Kauf von Facebook Beitrags-Likes prüfen sollten",
-        "description": "Bevor Sie Facebook Beitrags-Likes kaufen, prüfen Sie Paket- und Beitragsdetails. Stellen Sie sicher, dass Beitrags-Like-Menge, Preis, Facebook-Beitrags-URL und gewählter Service zum konkreten Beitrag passen.",
-        "framingNote": "Prüfen Sie die übermittelte Facebook-Beitrags-URL, die Beitrags-Like-Menge und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Beitrags-Likes Kommentare, Shares, Follower, Seiten-Likes, Reichweite, Verkäufe oder organisches Wachstum garantiert.",
+        "description": "Die meisten Probleme entstehen durch den Beitragslink oder die Publikumseinstellung. Prüfen Sie diese fünf Punkte vor dem Bezahlen.",
+        "framingNote": "Die Preise sind in US-Dollar. Möchten Sie eine andere Reaktion als „Gefällt mir“, schreiben Sie es in die Notiz beim Bezahlen.",
         "items": [
           {
             "id": "buy-facebook-post-likes-7",
@@ -404,33 +412,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-post-likes-worldwide",
-        "title": "Den richtigen Facebook-Beitrag für Likes wählen",
-        "description": "Facebook Beitrags-Likes gilt für einen bestimmten geeigneten öffentlichen Facebook-Beitrag. Die Seite selbst und der einzelne Beitrag sind unterschiedliche Ziele – prüfen Sie die übermittelte URL daher sorgfältig.",
-        "eyebrow": "Bereit für Facebook Beitrags-Likes",
-        "closingNote": "Facebook Beitrags-Likes gilt für einen bestimmten öffentlichen Facebook-Beitrag. Übermitteln Sie die Beitrags-URL statt nur der Seiten-URL, halten Sie den Beitrag verfügbar und prüfen Sie das Paket vor dem Checkout.",
+        "title": "Welche Facebook-Beiträge Likes erhalten können",
+        "description": "Jeder öffentliche Beitrag kann Likes erhalten. Entscheidend ist, wo er gepostet wurde und mit wem er geteilt ist.",
+        "eyebrow": "Vor der Bestellung",
+        "closingNote": "Unsicher, ob Ihr Beitrag öffentlich ist? Senden Sie den Link vor der Bestellung per WhatsApp, und wir prüfen ihn.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-12",
-            "title": "Die konkrete Beitrags-URL verwenden",
-            "description": "Übermitteln Sie die öffentliche URL des einzelnen Facebook-Beitrags, auf den das Beitrags-Likes-Paket angewendet werden soll.",
+            "title": "Seitenbeiträge",
+            "description": "Beiträge auf einer Facebook-Seite sind standardmäßig öffentlich. Kopieren Sie den Link zum Beitrag, und Sie können bestellen.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-13",
-            "title": "Nicht nur die Seiten-URL übermitteln",
-            "description": "Eine allgemeine Facebook-Seiten-URL ist für eine Beitrags-Likes-Bestellung nicht das richtige Ziel.",
+            "title": "Profilbeiträge",
+            "description": "Beiträge auf einem persönlichen Profil müssen auf „Öffentlich“ stehen. Ändern Sie das Publikum bei Bedarf über das Drei-Punkte-Menü des Beitrags.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-14",
-            "title": "Beitrag verfügbar halten",
-            "description": "Vermeiden Sie es, den übermittelten Beitrag zu löschen oder einzuschränken, solange die aktive Bestellung Zugriff darauf voraussetzt.",
+            "title": "Fotos und Videos",
+            "description": "Foto- und Videobeiträge funktionieren genauso. Verwenden Sie den Link zum Beitrag selbst, nicht zu Ihrem Profil oder Ihrer Seite.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-post-likes-15",
-            "title": "Ihr Beitrags-Like-Paket prüfen",
-            "description": "Prüfen Sie Beitrags-Like-Menge, übermittelte Beitrags-URL und Preis, bevor Sie den Checkout abschließen.",
+            "title": "Reaktionen auf Wunsch",
+            "description": "Geliefert wird standardmäßig die „Gefällt mir“-Reaktion. Schreiben Sie „Love“ oder eine andere Reaktion in die Notiz beim Bezahlen, wenn Sie möchten.",
             "icon": "clapperboard"
           }
         ]
@@ -438,32 +446,32 @@
       "packageSizes": {
         "id": "buy-facebook-post-likes-popular-packages",
         "title": "Beliebte Facebook-Beitrags-Likes-Pakete",
-        "description": "Vergleichen Sie unten einige der Facebook-Beitrags-Like-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle verfügbaren Paketoptionen zu sehen.",
+        "description": "Wählen Sie eine Größe, die zu Ihrem Publikum passt. Ein Beitrag auf einer Seite mit einigen hundert Followern wirkt mit 100–500 Likes natürlich; Tausende Likes dort würden fehl am Platz wirken.",
         "rows": [
           {
             "id": "fb-post-100",
             "quantity": "100 Beitrags-Likes",
-            "recommendedFor": "Ein kleineres Paket für einen bestimmten öffentlichen Facebook-Beitrag, dem Sie einhundert Likes hinzufügen möchten."
+            "recommendedFor": "Für Beiträge auf kleinen Seiten und persönlichen Profilen oder um den Service zuerst zu testen."
           },
           {
             "id": "fb-post-500",
             "quantity": "500 Beitrags-Likes",
-            "recommendedFor": "Eine kleine bis mittlere Option für einen öffentlichen Facebook-Beitrag, dem Sie fünfhundert Likes hinzufügen möchten."
+            "recommendedFor": "Für lokale Unternehmensseiten und aktive Profile, deren Beitrag beliebt wirken soll."
           },
           {
             "id": "fb-post-1000",
             "quantity": "1.000 Beitrags-Likes",
-            "recommendedFor": "Ein mittleres Paket für einen öffentlichen Facebook-Beitrag, dem Sie eintausend Likes hinzufügen möchten."
+            "recommendedFor": "Unser beliebtestes Paket – passt zu Ankündigungen, Angeboten und Events auf etablierten Seiten."
           },
           {
             "id": "fb-post-5000",
             "quantity": "5.000 Beitrags-Likes",
-            "recommendedFor": "Eine größere Option für einen öffentlichen Facebook-Beitrag, dem Sie fünftausend Likes hinzufügen möchten."
+            "recommendedFor": "Für große Seiten und Beiträge, die Sie mit Anzeigen bewerben. Schrittweise Lieferung empfohlen."
           },
           {
             "id": "fb-post-10000",
             "quantity": "10.000 Beitrags-Likes",
-            "recommendedFor": "Ein Paket mit höherem Volumen für einen öffentlichen Facebook-Beitrag, dem Sie zehntausend Likes hinzufügen möchten."
+            "recommendedFor": "Für große Markenseiten und Kampagnenbeiträge. Verteilen Sie die Lieferung über einen längeren Zeitraum."
           }
         ]
       },
@@ -573,35 +581,35 @@
     "whyBuy": {
       "id": "buy-facebook-post-likes-why-buy",
       "title": "Warum kaufen Menschen Facebook Beitrags-Likes?",
-      "description": "Menschen kaufen Facebook Beitrags-Likes aus unterschiedlichen Gründen. Manche möchten die sichtbare Like-Zahl auf einem bestimmten Facebook-Beitrag erhöhen, andere wählen ein Beitrags-Likes-Paket für Inhalte zu einem Launch, einer Ankündigung, einer Kampagne oder laufender Seitenaktivität. Der Service ändert die Like-Zahl auf dem übermittelten Beitrag, sagt aber keine Kommentare, Shares, Follower, Seiten-Likes, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "description": "Das sind die Gründe, die Kunden für Facebook Beitrags-Likes nennen – bei allen geht es darum, wie ein Beitrag auf die Menschen wirkt, die ihn sehen.",
       "items": [
         {
           "id": "buy-facebook-post-likes-wb-1",
-          "title": "Die sichtbare Like-Zahl erhöhen",
-          "description": "Ein Facebook-Beitrags-Likes-Paket kann genutzt werden, wenn Sie die auf einem bestimmten geeigneten öffentlichen Facebook-Beitrag angezeigte Like-Zahl erhöhen möchten."
+          "title": "Angebote und Sales",
+          "description": "Unternehmen ergänzen Likes bei Angebots- und Sale-Beiträgen, damit Kunden sehen, dass sich auch andere dafür interessieren."
         },
         {
           "id": "buy-facebook-post-likes-wb-2",
-          "title": "Beitrags-Likes rund um bestimmte Inhalte nutzen",
-          "description": "Seiteninhaber können ein Beitrags-Likes-Paket für einen bestimmten Beitrag zu einem Launch, einer Ankündigung, einer Kampagne oder anderer Facebook-Aktivität wählen."
+          "title": "Events und Ankündigungen",
+          "description": "Event- und Ankündigungsbeiträge sind nur wenige Tage relevant und müssen deshalb schnell aktiv wirken."
         },
         {
           "id": "buy-facebook-post-likes-wb-3",
-          "title": "Fokus auf die Beitrags-Like-Kennzahl",
-          "description": "Facebook Beitrags-Likes gilt für die Like-Zahl des übermittelten Beitrags. Es fügt nicht automatisch Facebook Follower, Seiten-Likes, Kommentare, Shares oder Views hinzu."
+          "title": "Vor dem Bewerben",
+          "description": "Ein Beitrag mit einigen Reaktionen macht einen besseren ersten Eindruck, wenn Sie ihn bezahlt bewerben."
         },
         {
           "id": "buy-facebook-post-likes-wb-4",
-          "title": "Die gewünschte Menge wählen",
-          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Anzahl Facebook Beitrags-Likes zu wählen, die Sie für den übermittelten Beitrag bestellen möchten."
+          "title": "Meilenstein-Beiträge",
+          "description": "Eröffnungen, Jubiläen und Launches werden viel geteilt – Inhaber möchten, dass sie gefeiert wirken."
         },
         {
           "id": "buy-facebook-post-likes-wb-5",
-          "title": "Beitrags-Likes zusammen mit Ihren Inhalten nutzen",
-          "description": "Der Kauf von Beitrags-Likes ersetzt nicht das Veröffentlichen oder Führen eigener Facebook-Inhalte. Beiträge, Antworten, Seiteninformationen und andere Aktivität hängen weiterhin davon ab, wie Sie Ihre Facebook-Präsenz führen."
+          "title": "Realistisch bleiben",
+          "description": "Likes ändern eine Zahl. Kommentare, Shares, Nachrichten und Verkäufe hängen weiterhin vom Beitrag und Ihrem Publikum ab."
         }
       ],
-      "bottomNote": "Wenn Facebook Follower oder Seiten-Likes die Kennzahl sind, die Sie stattdessen ändern möchten, wählen Sie den entsprechenden Facebook-Service statt eines Beitrags-Likes-Pakets."
+      "bottomNote": "Möchten Sie statt Likes auf einem Beitrag eine größere Seite oder ein größeres Profil? Vergleichen Sie unten Facebook Follower."
     },
     "howToBuy": {
       "id": "how-it-works",

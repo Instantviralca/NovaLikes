@@ -147,8 +147,11 @@ describe('Approved static SEO metadata', () => {
     expect(websiteSchema()).not.toHaveProperty('potentialAction');
     expect(website).not.toContain('searchaction');
     expect(org).not.toContain('aggregaterating');
-    expect(org).not.toContain('"telephone"');
-    expect(org).not.toContain('address');
+    // Verified operator details (DMRUSH LIMITED, Companies House SC876437).
+    // `org` is lower-cased above.
+    expect(org).toContain('"legalname":"dmrush limited"');
+    expect(org).toContain('"telephone":"+447454758272"');
+    expect(org).toContain('"postalcode":"g4 0xe"');
 
     for (const slug of APPROVED_SERVICE_SLUGS) {
       const service = getServiceBySlug(slug)!;

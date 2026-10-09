@@ -126,7 +126,8 @@ describe('Article Template System', () => {
     expect(html).toContain('At a glance');
     expect(html).not.toContain('Browse growth services');
     expect(html).not.toContain('Explore Services');
-    expect(html).not.toContain('article-related-services');
+    expect(html).toContain('article-related-services');
+    expect(html).toContain('Explore Instagram Followers Packages');
   });
 
   it('renders a mid-article service cluster without pricing cards', () => {

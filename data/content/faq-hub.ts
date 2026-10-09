@@ -76,7 +76,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['public', 'private', 'visibility', 'access'],
     question: 'Does my social media account need to be public?',
     answer:
-      'If the selected service requires NovaLikes to access your profile, Page, post or video publicly, that content needs to remain publicly accessible while the order is being processed. Private or unavailable content may prevent the service from being completed.',
+      'Yes. The profile, Page, post or video must be public while your order is being delivered, otherwise delivery cannot start or finish. Once delivery is complete you can switch it back to private. Please also keep the same username — changing it during an order or the 6-month refill period can stop delivery and refills.',
   },
   {
     id: 'faq-as-make-private-after',
@@ -86,7 +86,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['private after order', 'visibility', 'processing'],
     question: 'Can I make my account private after placing an order?',
     answer:
-      'If your order depends on public access to a profile or piece of content, keep it public while the order is being processed. Changing its visibility may prevent the required information from being accessed.',
+      'Yes, but only after delivery is complete. While the order is being delivered, the profile or content must stay public. Once it is finished you can switch to private; if you later need a refill, make it public again until the refill has been delivered.',
   },
   {
     id: 'faq-as-login-account',
@@ -138,7 +138,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['delivery time', 'how long', 'processing time'],
     question: 'How long does a NovaLikes order take?',
     answer:
-      'Processing and delivery can vary by service and package. Use the delivery information displayed for the specific package you choose rather than assuming every NovaLikes service has the same timeframe.',
+      'Most orders start within 6–8 hours after payment is confirmed. Once an order starts, standard delivery is usually completed within 4–6 hours. If you prefer a slower pace, ask for gradual delivery in your order note or on WhatsApp. You can follow progress on the [Track Order](/track-order) page with your order ID and email.',
   },
   {
     id: 'faq-od-start-immediately',
@@ -148,7 +148,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['start', 'immediately', 'begin', 'processing'],
     question: 'Does my order start immediately?',
     answer:
-      'Order processing can vary depending on the selected service and current processing conditions. Refer to the information provided for your selected service or package for any applicable timing details.',
+      'Not instantly. Each order is checked first, and most orders start within 6–8 hours after payment is confirmed. After that, standard delivery is usually completed within 4–6 hours.',
   },
   {
     id: 'faq-od-track',
@@ -178,7 +178,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['not started', 'stuck', 'delay'],
     question: 'What should I do if my order has not started?',
     answer:
-      'First check that the username or URL you submitted is correct and that the required profile or content is still public. If the information is correct and you still need assistance, contact NovaLikes support with your order details.',
+      'If your order hasn\'t started within 8 hours of payment, first check that the username or link is correct and that the profile or content is public. If everything is correct, message us on WhatsApp (+44 7454 758272) or email support@novalikes.com with your order ID.',
   },
   {
     id: 'faq-od-change-url',
@@ -254,7 +254,7 @@ export const faqHubItems: FAQItem[] = [
     relatedServiceSlugs: ['buy-instagram-followers'],
     question: 'Does my Instagram account need to be public to receive followers?',
     answer:
-      'If the Instagram Followers service requires access to your public profile, keep the profile publicly accessible while the order is being processed. A private or unavailable profile may prevent the required information from being accessed.',
+      'Yes. Keep your Instagram profile public until delivery is complete, otherwise the order cannot start or finish. You can make it private again once delivery is done. Please don\'t change your username during the order or the 6-month refill period.',
   },
   {
     id: 'faq-ig-private-followers',
@@ -265,7 +265,7 @@ export const faqHubItems: FAQItem[] = [
     relatedServiceSlugs: ['buy-instagram-followers'],
     question: 'Can I buy Instagram followers for a private account?',
     answer:
-      'A private Instagram account can prevent a service that depends on public profile access from being processed normally. Follow the visibility requirements shown for the Instagram Followers service before and during your order.',
+      'You can place the order, but delivery can only start once the profile is public. Switch it to public before or right after ordering, keep it public until delivery is complete, then you can make it private again.',
   },
   {
     id: 'faq-ig-followers-drop',
@@ -276,7 +276,7 @@ export const faqHubItems: FAQItem[] = [
     relatedServiceSlugs: ['buy-instagram-followers'],
     question: 'Can Instagram remove followers after delivery?',
     answer:
-      'Follower counts on social platforms can change over time, including when accounts are removed, disabled or otherwise no longer counted by the platform. Check the terms of the specific NovaLikes service for any applicable refill conditions rather than assuming every order includes a refill.',
+      'Yes, some drop is normal. Our followers come from realistic profiles — we do not claim they are active real users — and Instagram regularly removes or hides accounts it flags. That is why every order includes a 6-month refill: if your count drops, message us on WhatsApp (+44 7454 758272) with your order ID and we will top it back up.',
   },
   {
     id: 'faq-ig-safe-likes',
@@ -393,7 +393,7 @@ export const faqHubItems: FAQItem[] = [
     relatedServiceSlugs: ['buy-tiktok-followers'],
     question: 'Does my TikTok account need to be public?',
     answer:
-      'If the selected TikTok service requires public access to your profile or video, keep the relevant content publicly accessible while the order is being processed.',
+      'Yes. Keep your TikTok account and the submitted video public until delivery is complete; you can make the account private afterwards. Please don\'t change your username during the order or the 6-month refill period.',
   },
   {
     id: 'faq-tt-likes-video',
@@ -472,7 +472,7 @@ export const faqHubItems: FAQItem[] = [
     relatedServiceSlugs: ['buy-facebook-followers', 'buy-facebook-page-likes'],
     question: 'Does my Facebook Page need to be public?',
     answer:
-      'If the selected service requires access to your Facebook Page, the Page needs to remain publicly accessible while the order is being processed.',
+      'Yes. Keep the Page (and the post, for Post Likes) public until delivery is complete. Please don\'t change the Page username or URL during the order or the 6-month refill period.',
   },
   {
     id: 'faq-fb-followers-vs-page-likes',
@@ -571,7 +571,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['currency', 'usd', 'prices'],
     question: 'What currency are NovaLikes prices shown in?',
     answer:
-      'NovaLikes package prices are shown in the default storefront currency configured for the website.',
+      'All NovaLikes prices are in US dollars (USD). If you pay with a card in another currency, such as GBP or EUR, your bank or card provider converts the amount at its own exchange rate, so the final amount on your statement may differ slightly.',
   },
   {
     id: 'faq-pr-payment-declined',
@@ -601,7 +601,7 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['refill', 'drop', 'guarantee'],
     question: 'Does NovaLikes offer refills?',
     answer:
-      'Refill availability depends on the service and package you purchase. Check the terms shown for your selected service or package for any applicable refill conditions.',
+      'Yes. Every NovaLikes service includes a 6-month refill. If delivered followers, likes, views or comments drop within 6 months of your order being delivered, message us on WhatsApp (+44 7454 758272) with your order ID and we will refill the drop. To stay eligible, do not change your username, and keep the profile or content public while the order or a refill is being delivered — you can make it private once delivery is complete.',
   },
   {
     id: 'faq-pr-drops',
@@ -611,6 +611,6 @@ export const faqHubItems: FAQItem[] = [
     keywords: ['drop', 'followers drop', 'likes drop'],
     question: 'What happens if followers or likes drop after delivery?',
     answer:
-      'Follower and like counts on social platforms can change over time. If your selected package includes an applicable refill policy, follow the conditions shown for that service or contact NovaLikes support for help with the order.',
+      'Some drop over time is normal on every platform, because Instagram, TikTok and Facebook regularly remove or hide accounts and engagement. Every NovaLikes order includes a 6-month refill: message us on WhatsApp (+44 7454 758272) with your order ID and we will refill the drop, as long as the username has not changed and the profile or content is public while the refill is delivered.',
   },
 ];

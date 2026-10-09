@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "SERVIZI FACEBOOK",
       "title": "Comprare Mi piace post Facebook",
-      "description": "Comprare Mi piace post Facebook significa scegliere il pacchetto e la quantità che vuoi per un post Facebook pubblico idoneo specifico. Confronta pacchetti e prezzi dei Mi piace post disponibili, seleziona il numero di like che vuoi, indica l’URL del post Facebook pubblico corretto e completa l’ordine online. La password Facebook non è richiesta e, dopo il checkout, puoi usare il tracciamento per vedere gli aggiornamenti di stato disponibili.",
+      "description": "Compra Mi piace per qualsiasi post Facebook pubblico di una Pagina o di un profilo personale, a partire da 2,99 USD. Consegnati come Mi piace di default, con Love o altre reazioni su richiesta. Incolla il link del post, scegli un pacchetto e paga, senza password. La maggior parte degli ordini parte entro 6–8 ore e ogni ordine include un refill di 6 mesi e supporto WhatsApp 24/7.",
       "purpose": "Convert for Facebook post likes packages worldwide",
       "primaryKeyword": "buy Facebook Post Likes",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "fb-post-trust-url",
-          "label": "Solo URL del post Facebook pubblico"
+          "label": "Post di Pagine e profili"
         },
         {
           "id": "fb-post-trust-password",
-          "label": "Nessuna password richiesta"
+          "label": "Altre reazioni su richiesta"
         },
         {
           "id": "fb-post-trust-checkout",
-          "label": "Checkout sicuro"
+          "label": "Nessuna password richiesta"
         },
         {
           "id": "fb-post-trust-track",
-          "label": "Tracciamento ordine"
+          "label": "Refill di 6 mesi"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacchetti e prezzi Mi piace post Facebook",
-      "description": "Confronta pacchetti, quantità e prezzi dei Mi piace post Facebook prima di ordinare. Scegli il numero di Mi piace post che vuoi per un post Facebook pubblico idoneo specifico, rivedi il prezzo attuale del pacchetto e aggiungilo al carrello quando sei pronto.",
+      "description": "I prezzi sono in dollari statunitensi. 1.000 Mi piace ai post è il pacchetto più popolare; scegli una dimensione adatta a quante persone vedono di solito i tuoi post.",
       "purpose": "Present real NovaLikes.com Facebook post likes packages",
       "primaryKeyword": "Facebook Post Likes",
       "suggestedWordCount": 45,
@@ -242,31 +242,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-post-likes-why-choose",
-        "title": "Perché scegliere NovaLikes per i Mi piace post Facebook?",
-        "description": "NovaLikes rende facile confrontare i pacchetti Mi piace post Facebook prima di ordinare. Scegli la quantità di Mi piace post che vuoi, indica l’URL del post Facebook pubblico corretto, rivedi il prezzo del pacchetto e usa il tracciamento dopo il checkout per vedere gli aggiornamenti di stato disponibili.",
+        "title": "Perché comprare Mi piace post Facebook su NovaLikes?",
+        "description": "Il nostro team gestisce ordini per i social da 7–8 anni, prima su altri siti, poi come ViralMe e oggi come NovaLikes. Un ordine di Mi piace per post Facebook con noi è semplice: un post, un orario di avvio noto e un refill se il numero cala.",
         "items": [
           {
             "id": "buy-facebook-post-likes-0",
-            "title": "Più quantità di Mi piace post",
-            "description": "Confronta le quantità di Mi piace post Facebook disponibili e scegli il pacchetto che corrisponde al numero di like che vuoi ordinare per il post selezionato.",
+            "title": "Pagine e profili",
+            "description": "I Mi piace possono andare a un post pubblico di una Pagina Facebook o di un profilo personale, purché il pubblico del post sia impostato su Pubblico.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-1",
-            "title": "Solo URL del post Facebook pubblico",
-            "description": "Indica l’URL del post Facebook pubblico corretto per il post su cui vuoi aggiungere i like. La password Facebook non è richiesta.",
+            "title": "Mi piace di default, altre reazioni su richiesta",
+            "description": "Gli ordini vengono consegnati come la classica reazione Mi piace. Preferisci Love o un’altra reazione? Indicalo nella nota al pagamento.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-2",
-            "title": "Rivedi prima del checkout",
-            "description": "Controlla la quantità di Mi piace post selezionata e il prezzo attuale del pacchetto prima di aggiungere l’ordine al carrello e completare il checkout.",
+            "title": "Avvio in 6–8 ore",
+            "description": "La maggior parte degli ordini parte entro 6–8 ore dal pagamento e finisce 4–6 ore dopo. La consegna graduale è disponibile su richiesta.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-3",
-            "title": "Tracciamento ordine",
-            "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di Mi piace post Facebook.",
+            "title": "Refill di 6 mesi",
+            "description": "Se il numero di reazioni di quel post cala entro 6 mesi dalla consegna, invia il numero d’ordine su WhatsApp e lo completiamo.",
             "icon": "headphones"
           }
         ]
@@ -276,66 +276,74 @@
       "canYouBuy": {
         "id": "buy-facebook-post-likes-can-you-buy",
         "title": "Si possono comprare Mi piace post Facebook?",
-        "description": "Sì. I pacchetti Mi piace post Facebook si possono acquistare tramite servizi Mi piace post online. Con NovaLikes scegli un pacchetto Mi piace post disponibile, indichi l’URL del post Facebook pubblico per il post che vuoi usare e completi l’ordine sul sito.",
+        "description": "Sì. Puoi comprare Mi piace per qualsiasi post Facebook pubblico, di una Pagina o di un profilo personale. Copia il link del post, scegli un pacchetto e paga in dollari statunitensi. Il numero di reazioni sotto quel post sale; follower e numeri della Pagina restano invariati.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-4",
-            "title": "Cosa cambia un ordine di Mi piace post Facebook",
-            "description": "Un ordine di Mi piace post Facebook si applica al conteggio like del post Facebook pubblico indicato con l’ordine. Non aggiunge automaticamente follower, Mi piace Pagina, commenti, condivisioni o visualizzazioni.",
+            "title": "Un post per ordine",
+            "description": "I Mi piace vengono aggiunti al post del link che invii. Vuoi Mi piace su più post? Fai un ordine per ogni post.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-post-likes-5",
-            "title": "Cosa ti serve per effettuare un ordine",
-            "description": "Ti servono l’URL del post Facebook pubblico corretto e il pacchetto Mi piace post che vuoi acquistare. La password Facebook non è richiesta.",
+            "title": "Come ottenere il link",
+            "description": "Sul post, tocca Condividi e scegli Copia link, oppure clicca sull’orario del post e copia l’indirizzo. Non inviare mai la password.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-post-likes-6",
-            "title": "Cosa non includono i Mi piace post Facebook",
-            "description": "I Mi piace post sono separati da Follower Facebook, Mi piace Pagina, commenti, condivisioni e visualizzazioni. Ordinare Mi piace post non aggiunge automaticamente quelle altre metriche e non garantisce più portata, vendite o crescita organica.",
+            "title": "Il pubblico deve essere Pubblico",
+            "description": "I post condivisi con Amici o con un elenco personalizzato non possono ricevere un ordine. Cerca l’icona del globo accanto alla data.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Prima del checkout, assicurati di aver selezionato Mi piace post Facebook, di aver scelto la quantità di Mi piace post corretta e di aver indicato l’URL del post Facebook pubblico esatto su cui vuoi aggiungere i like."
+        "closingNote": "I Mi piace arrivano da account dall’aspetto realistico. Non affermiamo che siano persone attive che commenteranno o condivideranno il post."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-post-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "I Mi piace acquistati aiutano un post Facebook?",
+        "description": "Aiutano l’aspetto di un post, non quanto lontano arriva da solo. Facebook ordina i post soprattutto in base all’interazione: commenti, condivisioni, reazioni degli amici e tempo trascorso. Un buon numero di reazioni è riprova sociale: le persone si fermano più volentieri su un post a cui altri hanno già reagito, ed è questo il vero beneficio.",
+        "helpTitle": "Dove i Mi piace aiutano",
+        "helpItems": [
+          "Offerte, eventi e annunci che devono sembrare popolari fin dalla prima ora.",
+          "Post che stai per sponsorizzare, così gli spettatori a pagamento non arrivano su un post con due reazioni.",
+          "Post di prodotti o servizi che i clienti vedono prima di contattare la tua attività."
+        ],
+        "limitTitle": "Dove non aiutano",
+        "limitItems": [
+          "La copertura da soli: commenti e condivisioni pesano molto più dei soli Mi piace.",
+          "Un post con 3.000 Mi piace su una Pagina con 200 follower sembra poco naturale. Resta in proporzione.",
+          "Trasformare un post debole in uno buono: è sempre il contenuto a decidere se le persone interagiscono."
+        ],
+        "closingNote": "La nostra guida del Learn Center (in inglese) su come ottenere più Mi piace su un post Facebook propone modi organici per aumentare le reazioni insieme a qualsiasi pacchetto."
       },
       "whatHappens": {
         "id": "buy-facebook-post-likes-what-happens",
         "title": "Cosa succede dopo aver comprato Mi piace post Facebook?",
-        "description": "Dopo aver effettuato un ordine di Mi piace post Facebook, il pacchetto Mi piace post e l’URL del post Facebook pubblico che hai inviato vengono usati per elaborare l’ordine sul post selezionato. Tieni il post accessibile pubblicamente, dove richiesto, mentre l’ordine viene gestito.",
+        "description": "Cosa succede dopo il pagamento dei Mi piace per post Facebook.",
         "steps": [
           {
             "id": "buy-facebook-post-likes-th-1",
-            "title": "I dati dell’ordine vengono controllati",
-            "description": "Il pacchetto Mi piace post, la quantità e l’URL del post Facebook inviati vengono associati all’ordine, così la richiesta può essere elaborata per il post previsto."
+            "title": "Link e nota verificati",
+            "description": "Il link del post e qualsiasi nota — per esempio un’altra reazione o un ritmo graduale — vengono associati all’ordine prima che parta la consegna."
           },
           {
             "id": "buy-facebook-post-likes-th-2",
-            "title": "I Mi piace post vanno al post indicato",
-            "description": "L’ordine si applica al post Facebook collegato all’URL che hai fornito. Controlla l’URL del post con attenzione prima di completare il checkout."
+            "title": "I Mi piace partono entro 6–8 ore",
+            "description": "La maggior parte degli ordini parte entro 6–8 ore dal pagamento. Gli ordini graduali partono negli stessi tempi ma distribuiscono le reazioni."
           },
           {
             "id": "buy-facebook-post-likes-th-3",
-            "title": "I tempi di elaborazione possono variare",
-            "description": "Il tempo necessario per elaborare un ordine può variare in base alla quantità di Mi piace post e alle condizioni dell’ordine. Non va atteso un unico tempo di consegna fisso per ogni pacchetto."
+            "title": "Consegna standard in 4–6 ore",
+            "description": "Una volta avviati, la maggior parte degli ordini finisce in 4–6 ore. Segui l’avanzamento nella pagina Traccia ordine."
           },
           {
             "id": "buy-facebook-post-likes-th-4",
-            "title": "Controlla lo stato dell’ordine",
-            "description": "Usa il tracciamento ordine NovaLikes per gli aggiornamenti di stato disponibili. Se ti serve aiuto, contatta il supporto con le informazioni dell’ordine."
+            "title": "Inizia il refill di 6 mesi",
+            "description": "La copertura refill inizia il giorno in cui la consegna termina. Se il numero cala, invia il numero d’ordine su WhatsApp."
           }
         ],
-        "closingNote": "Evita di cancellare il post indicato, di renderlo non disponibile o di cambiare qualcosa che impedisca di accedervi mentre l’ordine viene elaborato. Se qualcosa cambia dopo l’ordine, contatta il supporto se ti serve assistenza."
+        "closingNote": "Tieni il post pubblico e non eliminarlo né cambiarne il pubblico fino al termine della consegna, e nemmeno durante il periodo di refill."
       },
       "serviceCompare": {
         "id": "buy-facebook-post-likes-service-compare",
@@ -367,8 +375,8 @@
       "beforeBuying": {
         "id": "buy-facebook-post-likes-before-buying",
         "title": "Cosa controllare prima di comprare Mi piace post Facebook",
-        "description": "Prima di comprare Mi piace post Facebook, rivedi pacchetto e dettagli del post prima di completare l’ordine. Assicurati che quantità di Mi piace post, prezzo, URL del post Facebook e servizio selezionato corrispondano a ciò che vuoi per quel post specifico.",
-        "framingNote": "Controlla ancora una volta l’URL del post Facebook indicato, la quantità di Mi piace post e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare Mi piace post garantirebbe commenti, condivisioni, follower, Mi piace Pagina, portata, vendite o crescita organica.",
+        "description": "La maggior parte dei problemi nasce dal link del post o dall’impostazione del pubblico. Controlla questi cinque punti prima di pagare.",
+        "framingNote": "I prezzi sono in dollari statunitensi. Se vuoi una reazione diversa da Mi piace, scrivila nella nota al pagamento.",
         "items": [
           {
             "id": "buy-facebook-post-likes-7",
@@ -404,33 +412,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-post-likes-worldwide",
-        "title": "Scegliere il post Facebook giusto per i like",
-        "description": "Mi piace post Facebook si applica a un post Facebook pubblico idoneo specifico. La Pagina e il singolo post sono destinazioni diverse, quindi controlla con attenzione l’URL inviato.",
-        "eyebrow": "Pronto per i Mi piace post Facebook",
-        "closingNote": "Mi piace post Facebook si applica a un post Facebook pubblico specifico. Invia l’URL del post, non solo quello della Pagina, tieni il post disponibile e rivedi il pacchetto prima del checkout.",
+        "title": "Quali post Facebook possono ricevere Mi piace",
+        "description": "Qualsiasi post pubblico può ricevere Mi piace. Conta dove è stato pubblicato e con chi è condiviso.",
+        "eyebrow": "Prima di ordinare",
+        "closingNote": "Non sai se il tuo post è pubblico? Invia il link su WhatsApp prima di ordinare e lo controlliamo.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-12",
-            "title": "Usa l’URL del post specifico",
-            "description": "Invia l’URL pubblico del singolo post Facebook su cui vuoi applicare il pacchetto Mi piace post.",
+            "title": "Post di Pagina",
+            "description": "I post di una Pagina Facebook sono pubblici di default. Copia il link del post e sei pronto per ordinare.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-13",
-            "title": "Non inviare solo l’URL della Pagina",
-            "description": "Un URL generico della Pagina Facebook non è la destinazione corretta per un ordine di Mi piace post.",
+            "title": "Post del profilo",
+            "description": "I post di un profilo personale devono avere il pubblico su Pubblico. Se serve, cambialo dal menu a tre puntini del post.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-14",
-            "title": "Tieni il post disponibile",
-            "description": "Evita di cancellare o limitare il post indicato mentre l’ordine attivo richiede di accedervi.",
+            "title": "Foto e video",
+            "description": "I post con foto e video funzionano allo stesso modo. Usa il link del post stesso, non quello del profilo o della Pagina.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-post-likes-15",
-            "title": "Rivedi il pacchetto Mi piace post",
-            "description": "Controlla quantità di Mi piace post, URL del post inviato e prezzo prima di completare il checkout.",
+            "title": "Reazioni su richiesta",
+            "description": "La consegna usa la reazione Mi piace di default. Scrivi «Love» o un’altra reazione nella nota al pagamento se preferisci.",
             "icon": "clapperboard"
           }
         ]
@@ -438,32 +446,32 @@
       "packageSizes": {
         "id": "buy-facebook-post-likes-popular-packages",
         "title": "Pacchetti Mi piace post Facebook più richiesti",
-        "description": "Confronta alcune delle quantità di Mi piace post Facebook disponibili su NovaLikes qui sotto, oppure torna alla sezione prezzi completa per vedere tutte le opzioni di pacchetto.",
+        "description": "Scegli una dimensione adatta al tuo pubblico. Un post su una Pagina con qualche centinaio di follower sembra naturale con 100–500 Mi piace; migliaia di Mi piace lì sembrerebbero fuori luogo.",
         "rows": [
           {
             "id": "fb-post-100",
             "quantity": "100 Mi piace post",
-            "recommendedFor": "Un pacchetto più piccolo per un post Facebook pubblico specifico in cui vuoi aggiungere cento like."
+            "recommendedFor": "Per post su Pagine piccole e profili personali, o per provare prima il servizio."
           },
           {
             "id": "fb-post-500",
             "quantity": "500 Mi piace post",
-            "recommendedFor": "Un’opzione da piccola a intermedia per un post Facebook pubblico in cui vuoi aggiungere cinquecento like."
+            "recommendedFor": "Per Pagine di attività locali e profili attivi che vogliono far sembrare popolare un post."
           },
           {
             "id": "fb-post-1000",
             "quantity": "1.000 Mi piace post",
-            "recommendedFor": "Un pacchetto intermedio per un post Facebook pubblico in cui vuoi aggiungere mille like."
+            "recommendedFor": "Il nostro pacchetto più popolare: adatto ad annunci, offerte ed eventi su Pagine affermate."
           },
           {
             "id": "fb-post-5000",
             "quantity": "5.000 Mi piace post",
-            "recommendedFor": "Un’opzione più grande per un post Facebook pubblico in cui vuoi aggiungere cinquemila like."
+            "recommendedFor": "Per Pagine grandi e post che sponsorizzi con inserzioni. Consigliata la consegna graduale."
           },
           {
             "id": "fb-post-10000",
             "quantity": "10.000 Mi piace post",
-            "recommendedFor": "Un pacchetto a volume più alto per un post Facebook pubblico in cui vuoi aggiungere diecimila like."
+            "recommendedFor": "Per Pagine di grandi brand e post di campagna. Distribuisci la consegna su un periodo più lungo."
           }
         ]
       },
@@ -573,35 +581,35 @@
     "whyBuy": {
       "id": "buy-facebook-post-likes-why-buy",
       "title": "Perché si comprano Mi piace post Facebook?",
-      "description": "Si comprano Mi piace post Facebook per motivi diversi. Alcuni vogliono aumentare il conteggio like visibile su un post Facebook specifico, altri scelgono un pacchetto Mi piace post per contenuti legati a un lancio, a un annuncio, a una campagna o all’attività della Pagina. Il servizio cambia il conteggio like sul post indicato, ma non garantisce commenti, condivisioni, follower, Mi piace Pagina, portata, vendite o crescita organica.",
+      "description": "Questi sono i motivi che i clienti danno per i Mi piace ai post Facebook, tutti legati a come appare un post a chi lo vede.",
       "items": [
         {
           "id": "buy-facebook-post-likes-wb-1",
-          "title": "Aumenta il conteggio like visibile",
-          "description": "Un pacchetto Mi piace post Facebook si può usare quando vuoi aumentare il conteggio like mostrato su un post Facebook pubblico idoneo specifico."
+          "title": "Offerte e saldi",
+          "description": "Le attività aggiungono Mi piace ai post di offerte e saldi così i clienti vedono che anche altri sono interessati."
         },
         {
           "id": "buy-facebook-post-likes-wb-2",
-          "title": "Usa i Mi piace post su contenuti specifici",
-          "description": "I titolari di Pagina possono scegliere un pacchetto Mi piace post per un post particolare legato a un lancio, a un annuncio, a una campagna o ad un’altra attività Facebook."
+          "title": "Eventi e annunci",
+          "description": "I post di eventi e annunci contano solo per pochi giorni, quindi devono sembrare attivi in fretta."
         },
         {
           "id": "buy-facebook-post-likes-wb-3",
-          "title": "Concentrati sulla metrica Mi piace post",
-          "description": "Mi piace post Facebook si applica al conteggio like del post indicato. Non aggiunge automaticamente Follower Facebook, Mi piace Pagina, commenti, condivisioni o visualizzazioni."
+          "title": "Prima di sponsorizzare",
+          "description": "Un post con qualche reazione fa una prima impressione migliore quando inizi a pagare per sponsorizzarlo."
         },
         {
           "id": "buy-facebook-post-likes-wb-4",
-          "title": "Scegli la quantità che vuoi",
-          "description": "Quantità diverse ti permettono di selezionare il numero di Mi piace post Facebook che vuoi ordinare per il post indicato."
+          "title": "Post importanti",
+          "description": "Inaugurazioni, anniversari e lanci vengono condivisi molto: i proprietari vogliono che sembrino festeggiati."
         },
         {
           "id": "buy-facebook-post-likes-wb-5",
-          "title": "Usa i Mi piace post insieme ai tuoi contenuti",
-          "description": "Comprare Mi piace post non sostituisce la pubblicazione o la gestione dei tuoi contenuti Facebook. Post, risposte, informazioni della Pagina e altre attività dipendono ancora da come gestisci la presenza Facebook."
+          "title": "Restare realistici",
+          "description": "I Mi piace cambiano un numero. Commenti, condivisioni, messaggi e vendite dipendono sempre dal post e dal tuo pubblico."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare sono i Follower Facebook o i Mi piace Pagina, scegli il servizio Facebook corrispondente invece di un pacchetto Mi piace post."
+      "bottomNote": "Vuoi una Pagina o un profilo più grande invece di Mi piace su un post? Confronta i follower Facebook qui sotto."
     },
     "howToBuy": {
       "id": "how-it-works",

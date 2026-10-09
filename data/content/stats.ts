@@ -7,18 +7,18 @@ import type { Stat } from '@/types/content';
 export const stats: Stat[] = [
   {
     id: 'stat-founded',
-    label: 'Founded',
+    label: 'Serving Customers Since',
     value: '2018',
   },
   {
     id: 'stat-customers',
-    label: 'Customers Served',
-    value: '50,000+',
+    label: 'Customers Served (incl. ViralMe)',
+    value: '250,000+',
   },
   {
     id: 'stat-delivered',
-    label: 'Services Delivered',
-    value: 'Millions Delivered',
+    label: 'Orders Delivered (incl. ViralMe)',
+    value: '1M+',
   },
   {
     id: 'stat-support',

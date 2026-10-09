@@ -327,6 +327,14 @@
         "answer": "Cela dépend du service. On peut vous demander un nom d’utilisateur public, une URL de profil, une URL de Page, un lien de publication, un Reel ou une URL de vidéo, afin d’envoyer la commande au bon endroit."
       },
       {
+        "question": "Quand ma commande démarre-t-elle ?",
+        "answer": "La plupart des commandes démarrent dans les 6 à 8 heures suivant la confirmation du paiement, et la livraison standard se termine généralement 4 à 6 heures après le démarrage. Si vous préférez un rythme plus lent et plus naturel, ajoutez une note au paiement ou écrivez-nous sur WhatsApp pour demander une livraison progressive."
+      },
+      {
+        "question": "Que se passe-t-il si mes abonnés, likes ou vues baissent ?",
+        "answer": "Chaque commande NovaLikes inclut un refill de 6 mois à partir de la date de livraison. Si le nombre baisse pendant cette période, écrivez-nous sur WhatsApp (+44 7454 758272) avec votre numéro de commande et nous le complétons. Gardez le profil ou le contenu public et le même nom d’utilisateur pendant la livraison d’un refill."
+      },
+      {
         "question": "Puis-je suivre ma commande après le paiement ?",
         "answer": "Oui. NovaLikes propose un suivi de commande pour consulter le statut de votre achat."
       },

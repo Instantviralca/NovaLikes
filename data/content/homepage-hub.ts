@@ -275,6 +275,16 @@ export const homepageHub = {
           'It depends on the service. You may be asked for a public username, profile URL, Page URL, post link, Reel, or video URL so the order can be sent to the correct place.',
       },
       {
+        question: 'How quickly will my order start?',
+        answer:
+          'Most orders start within 6–8 hours after payment is confirmed, and standard delivery is usually finished 4–6 hours after it starts. If you prefer a slower, more natural pace, add a note at checkout or message us on WhatsApp to ask for gradual delivery.',
+      },
+      {
+        question: 'What happens if my followers, likes or views drop?',
+        answer:
+          'Every NovaLikes order includes a 6-month refill from the delivery date. If the number drops in that time, message us on WhatsApp (+44 7454 758272) with your order ID and we top it back up. Keep the profile or content public and the username unchanged while a refill is being delivered.',
+      },
+      {
         question: 'Can I check my order after checkout?',
         answer:
           'Yes. NovaLikes provides an order tracking option that you can use to check the status of your purchase.',

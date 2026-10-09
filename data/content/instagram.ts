@@ -284,9 +284,9 @@ function buildBuyInstagramLikesContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'INSTAGRAM SERVICES',
-      title: 'Buy Instagram Likes',
+      title: 'Buy Instagram Likes for Posts & Reels',
       description:
-        'Buy Instagram likes for a public post or Reel by choosing the package size that fits what you need. NovaLikes offers several like quantities with clear pricing, so you can compare the available options before ordering. Select your package, provide the public Instagram post or Reel URL, and complete your order online. No Instagram password is required, and you can track your order after checkout.',
+        'Buy Instagram likes for any public photo post, carousel or Reel from $2.99. Send the post link, pick a quantity and pay — we never ask for your password. Most orders start within 6–8 hours and finish 4–6 hours later, or arrive gradually if you ask. Every order comes with a 6-month refill and WhatsApp support 24/7.',
       purpose: 'Convert visitors looking to buy Instagram likes',
       primaryKeyword: 'buy instagram likes',
       supportingKeywords: [
@@ -308,10 +308,10 @@ function buildBuyInstagramLikesContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'ig-l-trust-public', label: 'Public Post URL Only' },
+        { id: 'ig-l-trust-public', label: 'Posts, Reels & Carousels' },
         { id: 'ig-l-trust-password', label: 'No Password Required' },
-        { id: 'ig-l-trust-checkout', label: 'Secure Checkout' },
-        { id: 'ig-l-trust-track', label: 'Order Tracking' },
+        { id: 'ig-l-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'ig-l-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/instagram-likes/instagram-likes-hero.webp',
@@ -324,7 +324,7 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Instagram Likes Packages & Pricing',
       description:
-        'Choose the number of Instagram likes you want and compare the available package prices before ordering. Select a quantity below to review the package details and continue with the option that fits the post or Reel you want to use.',
+        'Prices are in US dollars. 1,000 likes is the most popular package; choose a size that suits your follower count and usual engagement.',
       purpose: 'Present real NovaLikes.com likes packages',
       primaryKeyword: 'Instagram Likes Pricing',
       suggestedWordCount: 40,
@@ -474,9 +474,9 @@ function buildBuyInstagramViewsContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'INSTAGRAM SERVICES',
-      title: 'Buy Instagram Views',
+      title: 'Buy Instagram Views for Reels & Videos',
       description:
-        'Buy Instagram views for a public Reel or video by choosing the package size that fits the content you want to use. NovaLikes offers several view quantities with clear pricing, so you can compare the available options before ordering. Select your package, provide the public Instagram content URL, and complete your order online. No Instagram password is required, and you can track your order after checkout.',
+        'Buy Instagram views for any public Reel or video from $1.99. Paste the link, choose a package and pay — no password needed. Most orders start within 6–8 hours and finish 4–6 hours later, or you can ask for gradual delivery. Every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for Instagram views packages worldwide',
       primaryKeyword: 'buy Instagram views',
       supportingKeywords: [
@@ -497,10 +497,10 @@ function buildBuyInstagramViewsContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'ig-v-trust-public', label: 'Public Content URL Only' },
-        { id: 'ig-v-trust-password', label: 'No Password Required' },
-        { id: 'ig-v-trust-checkout', label: 'Secure Checkout' },
-        { id: 'ig-v-trust-track', label: 'Order Tracking' },
+        { id: 'ig-v-trust-public', label: 'Starts in 6–8 Hours' },
+        { id: 'ig-v-trust-password', label: '6-Month Refill' },
+        { id: 'ig-v-trust-checkout', label: 'No Password Required' },
+        { id: 'ig-v-trust-track', label: 'Gradual Delivery on Request' },
       ],
       visual: {
         src: '/assets/images/illustrations/instagram-views/instagram-views-hero.webp',
@@ -513,7 +513,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Instagram Views Packages & Pricing',
       description:
-        'Choose the number of Instagram views you want and compare the available package prices before ordering. Select a quantity below to review the package details and continue with the option that fits the Reel or video you want to use.',
+        'Prices are in US dollars. 1,000 views is the most popular package; smaller packages suit new Reels, larger ones suit campaign content.',
       purpose: 'Present real NovaLikes.com views packages',
       primaryKeyword: 'Instagram views packages',
       suggestedWordCount: 40,
@@ -632,9 +632,9 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'INSTAGRAM SERVICES',
-      title: 'Buy Instagram Comments',
+      title: 'Buy Instagram Comments for Posts & Reels',
       description:
-        'Buy Instagram comments for a public post or Reel by choosing the package and quantity that fits the content you want to use. NovaLikes lets you compare available comment options and prices before ordering. Select your package, provide the correct public Instagram post URL, and complete your order online. Your Instagram password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy Instagram comments for any public post or Reel, from short positive High Quality comments to Premium comments written around your post. Send your own wording or ask for another language in the checkout note. No password needed. Most orders start within 6–8 hours, and every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert visitors searching for Instagram comments packages',
       primaryKeyword: 'buy Instagram comments',
       supportingKeywords: [
@@ -654,10 +654,10 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'ig-c-trust-public-url', label: 'Public Post URL Only' },
-        { id: 'ig-c-trust-password', label: 'No Password Required' },
-        { id: 'ig-c-trust-checkout', label: 'Secure Checkout' },
-        { id: 'ig-c-trust-track', label: 'Order Tracking' },
+        { id: 'ig-c-trust-public-url', label: 'High Quality or Premium' },
+        { id: 'ig-c-trust-password', label: 'Custom Comments on Request' },
+        { id: 'ig-c-trust-checkout', label: 'No Password Required' },
+        { id: 'ig-c-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/instagram-comments/instagram-comments-hero.webp',
@@ -670,7 +670,7 @@ function buildBuyInstagramCommentsContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Instagram Comments Packages & Pricing',
       description:
-        'Compare the available Instagram comments packages, quantities, and prices before ordering. Choose between the available comment options, select the number of comments you want for your post or Reel, and review the package details before adding it to your cart.',
+        'Prices are in US dollars. Switch between High Quality and Premium to see each set of packages; 25 High Quality and 10 Premium comments are the most popular choices.',
       purpose: 'Present real NovaLikes.com comments packages',
       primaryKeyword: 'Instagram comments packages',
       suggestedWordCount: 40,

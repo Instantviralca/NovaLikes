@@ -1446,9 +1446,8 @@ export const CHECK_INSTAGRAM_FOLLOWER_COUNT_WITHOUT_LOGIN_ARTICLE: LearnArticleR
     ogImage: `${IMAGE_DIR}/featured.png`,
     keywords: [
       'check Instagram follower count without login',
-      'Instagram follower counter',
       'check Instagram followers',
-      'Instagram follower count viewer',
+      'why Instagram follower counts are abbreviated',
       'Instagram follower count without account',
       'public Instagram follower count',
     ],

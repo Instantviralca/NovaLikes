@@ -36,6 +36,16 @@ NovaLikes does not require customers to share their social media passwords for t
 
 Eligible orders are covered by the NovaLikes 30-Day Money-Back Guarantee according to the Refund Policy.
 
+## Key Facts
+
+- Operator: DMRUSH LIMITED, registered in Scotland (Company No. SC876437), 1/4 22 Dundasvale Court, Glasgow, G4 0XE.
+- History: NovaLikes was previously ViralMe, which ran for more than four years; the team has provided social media growth services for 7–8 years.
+- Delivery: most orders start within 6–8 hours of payment and are usually completed within 4–6 hours after they start. Gradual delivery is available on request.
+- Refill: every service includes a 6-month refill from the date the order is delivered, requested via WhatsApp with the order ID.
+- Currency: all prices are in US dollars (USD).
+- Quality: followers come from realistic profiles; NovaLikes does not claim they are active real users.
+- Support: 24/7 via support@novalikes.com and WhatsApp +44 7454 758272; replies usually within 15 minutes.
+
 ## Main Pages
 
 - [Home](${abs('/')}): Main NovaLikes website and overview of available services.

@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIÇOS DO TIKTOK",
-      "title": "Comprar curtidas no TikTok",
-      "description": "Compre curtidas no TikTok escolhendo o pacote e a quantidade que combinam com o vídeo. A NovaLikes permite comparar os pacotes e os preços de curtidas no TikTok disponíveis antes de pedir. Selecione o número de curtidas que quer, envie o link público correto do vídeo no TikTok e conclua o pedido online. A senha do TikTok não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "title": "Comprar curtidas no TikTok para vídeos",
+      "description": "Compre curtidas no TikTok para qualquer vídeo público a partir de US$ 2,99. Copie o link do vídeo, escolha a quantidade e pague: sem senha, sem login. A maioria dos pedidos começa em 6–8 horas e termina 4–6 horas depois, ou chega de forma gradual se você pedir. Todo pedido inclui reposição de 6 meses e suporte pelo WhatsApp 24/7.",
       "purpose": "Convert for TikTok likes packages worldwide",
       "primaryKeyword": "buy TikTok likes",
       "supportingKeywords": [
@@ -30,7 +30,7 @@
       "trustLabels": [
         {
           "id": "tt-l-trust-url",
-          "label": "Somente link de vídeo público"
+          "label": "Só o link do vídeo"
         },
         {
           "id": "tt-l-trust-password",
@@ -38,11 +38,11 @@
         },
         {
           "id": "tt-l-trust-checkout",
-          "label": "Checkout seguro"
+          "label": "Começa em 6–8 horas"
         },
         {
           "id": "tt-l-trust-track",
-          "label": "Acompanhamento do pedido"
+          "label": "Reposição de 6 meses"
         }
       ],
       "visual": {
@@ -55,7 +55,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacotes e preços de curtidas no TikTok",
-      "description": "Compare os pacotes, as quantidades e os preços de curtidas no TikTok disponíveis antes de pedir. Escolha o número de curtidas que quer para o vídeo público no TikTok, revise o preço atual do pacote e adicione a opção selecionada ao carrinho quando estiver pronto.",
+      "description": "Os preços estão em dólares americanos. 1.000 curtidas é o pacote mais popular; escolha um tamanho que mantenha as curtidas abaixo das visualizações do vídeo.",
       "purpose": "Present real NovaLikes.com TikTok likes packages",
       "primaryKeyword": "TikTok likes packages",
       "suggestedWordCount": 55,
@@ -237,31 +237,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-tiktok-likes-why-choose",
-        "title": "Por que escolher a NovaLikes para curtidas no TikTok?",
-        "description": "A NovaLikes facilita comparar pacotes de curtidas no TikTok antes de pedir. Escolha o número de curtidas que quer para um vídeo público no TikTok, revise o preço atual, envie o link correto do vídeo e use o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+        "title": "Por que comprar curtidas no TikTok na NovaLikes?",
+        "description": "Cuidamos de pedidos para redes sociais há 7–8 anos: primeiro em outros sites, depois como ViralMe e agora como NovaLikes. Para curtidas no TikTok, essa experiência se resume a quatro promessas simples.",
         "items": [
           {
             "id": "buy-tiktok-likes-0",
-            "title": "Várias quantidades de curtidas",
-            "description": "Compare as quantidades de curtidas no TikTok disponíveis e escolha o pacote que corresponde ao número de curtidas que você quer pedir.",
+            "title": "Um vídeo, um link",
+            "description": "As curtidas vão só para o vídeo do link que você envia. Seus outros vídeos e seu número de seguidores não mudam.",
             "icon": "users"
           },
           {
             "id": "buy-tiktok-likes-1",
-            "title": "Somente link de vídeo público",
-            "description": "Envie o link público correto do vídeo no TikTok para o conteúdo onde você quer que as curtidas sejam adicionadas. A senha do TikTok não é necessária.",
+            "title": "Começa em 6–8 horas",
+            "description": "A maioria dos pedidos de curtidas no TikTok começa em até 6–8 horas após o pagamento e termina cerca de 4–6 horas depois de começar.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-2",
-            "title": "Revise antes do checkout",
-            "description": "Confira a quantidade de curtidas selecionada e o preço atual do pacote antes de adicionar o pedido ao carrinho e concluir o checkout.",
+            "title": "Ritmo constante, se preferir",
+            "description": "Peça entrega gradual na observação do checkout ou no WhatsApp e as curtidas chegam ao longo de mais tempo, em vez de todas de uma vez.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-3",
-            "title": "Acompanhamento do pedido",
-            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de curtidas no TikTok.",
+            "title": "6 meses de reposição",
+            "description": "Se o número de curtidas desse vídeo cair em até 6 meses após a entrega, envie o número do pedido pelo WhatsApp e adicionamos as que faltarem.",
             "icon": "headphones"
           }
         ]
@@ -271,66 +271,74 @@
       "canYouBuy": {
         "id": "buy-tiktok-likes-can-you-buy",
         "title": "Dá para comprar curtidas no TikTok?",
-        "description": "Sim. Curtidas no TikTok podem ser compradas por serviços online de curtidas. Na NovaLikes, você escolhe um pacote de curtidas disponível, envia o link público do vídeo no TikTok do conteúdo que quer usar e conclui o pedido pelo site.",
+        "description": "Sim. Você pode comprar curtidas para qualquer vídeo público do TikTok. Copie o link do vídeo pelo botão Compartilhar do TikTok, escolha quantas curtidas quer e pague em dólares americanos. O contador de corações desse vídeo sobe; nada mais muda na sua conta.",
         "cards": [
           {
             "id": "buy-tiktok-likes-4",
-            "title": "O que um pedido de curtidas no TikTok altera",
-            "description": "Um pedido de curtidas no TikTok se aplica à contagem de curtidas no vídeo público enviado com o pedido. Ele não acrescenta automaticamente seguidores ao perfil nem visualizações ao vídeo.",
+            "title": "O contador de corações sobe",
+            "description": "As curtidas entram no contador abaixo do vídeo enviado. Visualizações, comentários, compartilhamentos e seguidores são números separados.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-tiktok-likes-5",
-            "title": "O que você precisa para fazer um pedido",
-            "description": "Você precisa do link público correto do vídeo no TikTok e do pacote de curtidas que quer comprar. A senha do TikTok não é necessária.",
+            "title": "Só precisamos do link",
+            "description": "Abra o vídeo, toque em Compartilhar e depois em Copiar link. Cole esse link no checkout. Nunca pedimos sua senha do TikTok nem login.",
             "icon": "briefcase"
           },
           {
             "id": "buy-tiktok-likes-6",
-            "title": "O que as curtidas no TikTok não incluem",
-            "description": "Curtidas são separadas de seguidores e visualizações no TikTok. Pedir curtidas não acrescenta automaticamente essas outras métricas nem garante engajamento, alcance, vendas ou crescimento orgânico extras.",
+            "title": "De onde vêm as curtidas",
+            "description": "As curtidas vêm de contas com aparência realista. Não afirmamos que sejam pessoas ativas que vão assistir seus outros vídeos ou seguir você.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes do checkout, garanta que você selecionou curtidas no TikTok, escolheu a quantidade correta de curtidas e enviou o link exatamente do vídeo público onde quer que as curtidas sejam adicionadas."
+        "closingNote": "O vídeo precisa continuar público e disponível até a entrega terminar. Vídeos configurados como Amigos ou Somente você não podem receber pedidos."
       },
       "doesBuyingHelp": {
         "id": "buy-tiktok-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Curtidas compradas trazem mais visualizações para um vídeo do TikTok?",
+        "description": "Não diretamente. O TikTok testa cada vídeo com um grupo pequeno e continua mostrando quando esses espectadores assistem até o fim, reassistem, compartilham, comentam ou seguem. Curtidas são um sinal entre muitos, e curtidas sem tempo de exibição por trás pesam pouco. O que um número maior de curtidas muda é como o vídeo parece para quem já está assistindo, e essa primeira impressão é o benefício real.",
+        "helpTitle": "Onde as curtidas ajudam",
+        "helpItems": [
+          "Vídeos de produto e do TikTok Shop, em que um bom número de curtidas faz o espectador confiar no que vê.",
+          "Seus vídeos fixados, que todo visitante do perfil vê primeiro.",
+          "Um vídeo que você vai impulsionar, para os espectadores pagos não chegarem a um vídeo com poucas curtidas."
+        ],
+        "limitTitle": "Onde não ajudam",
+        "limitItems": [
+          "Levar um vídeo sozinhas para a página Para Você: tempo de exibição e compartilhamentos pesam muito mais.",
+          "Um vídeo com 2.000 curtidas e só 1.500 visualizações parece errado. As curtidas devem ficar bem abaixo das visualizações.",
+          "Substituir o gancho: se os espectadores saem nos primeiros segundos, as curtidas não mantêm o vídeo vivo."
+        ],
+        "closingNote": "Nosso guia do Learn Center (em inglês) sobre curtidas x visualizações no TikTok explica como os dois números se relacionam e o que o TikTok lê de cada um."
       },
       "whatHappens": {
         "id": "buy-tiktok-likes-what-happens",
         "title": "O que acontece depois que você compra curtidas no TikTok?",
-        "description": "Depois de fazer um pedido de curtidas no TikTok, o pacote de curtidas e o link público do vídeo enviados são usados para processar o pedido no vídeo selecionado. Mantenha o vídeo acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "description": "Do checkout à entrega concluída, um pedido de curtidas no TikTok segue quatro etapas.",
         "steps": [
           {
             "id": "buy-tiktok-likes-th-1",
-            "title": "Os dados do pedido são conferidos",
-            "description": "O pacote de curtidas, a quantidade e o link do vídeo no TikTok enviados são associados ao pedido para que a solicitação possa ser processada no vídeo pretendido."
+            "title": "Link conferido no seu pedido",
+            "description": "O link do vídeo que você colou fica vinculado ao número do pedido. Se notar um link errado, fale com a gente no WhatsApp antes de a entrega começar."
           },
           {
             "id": "buy-tiktok-likes-th-2",
-            "title": "As curtidas vão para o vídeo enviado",
-            "description": "O pedido se aplica ao vídeo do TikTok ligado ao link que você enviou. Confira o link do vídeo com cuidado antes de concluir o checkout."
+            "title": "As curtidas começam em 6–8 horas",
+            "description": "A maioria dos pedidos começa em até 6–8 horas após o pagamento. Pedidos graduais começam no mesmo prazo, mas distribuem as curtidas por mais tempo."
           },
           {
             "id": "buy-tiktok-likes-th-3",
-            "title": "O tempo de processamento pode variar",
-            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de curtidas e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pacotes."
+            "title": "A entrega padrão termina em 4–6 horas",
+            "description": "Depois de iniciados, a maioria dos pedidos de curtidas termina em 4–6 horas. Acompanhe na página Rastrear pedido com o número do pedido e o e-mail."
           },
           {
             "id": "buy-tiktok-likes-th-4",
-            "title": "Confira o status do pedido",
-            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+            "title": "Começa a reposição de 6 meses",
+            "description": "A cobertura de reposição começa no dia em que a entrega termina. Se o número de curtidas cair depois, envie o número do pedido pelo WhatsApp e completamos."
           }
         ],
-        "closingNote": "Evite excluir o vídeo enviado, torná-lo indisponível ou alterar qualquer coisa que impeça o acesso ao conteúdo enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+        "closingNote": "Mantenha o vídeo público e não o apague nem publique de novo, senão nem a entrega nem as reposições conseguem chegar até ele."
       },
       "serviceCompare": {
         "id": "buy-tiktok-likes-service-compare",
@@ -362,8 +370,8 @@
       "beforeBuying": {
         "id": "buy-tiktok-likes-before-buying",
         "title": "O que conferir antes de comprar curtidas no TikTok",
-        "description": "Antes de comprar curtidas no TikTok, revise o pacote e os detalhes do vídeo antes de concluir o pedido. Garanta que a quantidade de curtidas, o preço, o link do vídeo no TikTok e o serviço correspondam ao que você quer para o vídeo selecionado.",
-        "framingNote": "Confira o link do vídeo no TikTok enviado, a quantidade de curtidas e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar curtidas garante visualizações, seguidores, engajamento, alcance, vendas ou crescimento orgânico extras.",
+        "description": "A maioria dos problemas vem do link do vídeo ou da configuração de privacidade. Confira estes cinco pontos antes de pagar.",
+        "framingNote": "Os preços estão em dólares americanos. Seu banco converte o valor se você pagar em outra moeda.",
         "items": [
           {
             "id": "buy-tiktok-likes-7",
@@ -399,33 +407,33 @@
       },
       "worldwide": {
         "id": "buy-tiktok-likes-worldwide",
-        "title": "Escolhendo o vídeo certo no TikTok para curtidas",
-        "description": "Curtidas no TikTok se aplica a um vídeo público elegível específico. Envie exatamente o vídeo que você quer usar, e não um perfil geral do TikTok.",
-        "eyebrow": "Pronto para curtidas no TikTok",
-        "closingNote": "Curtidas no TikTok se aplica a um vídeo público específico. Envie o link do vídeo, mantenha o vídeo público e revise a quantidade de curtidas antes do checkout.",
+        "title": "Curtidas, visualizações e a proporção que as pessoas notam",
+        "description": "O TikTok mostra visualizações e curtidas lado a lado, então as pessoas comparam sem pensar. Manter os dois num equilíbrio crível importa mais do que o tamanho de qualquer um deles.",
+        "eyebrow": "Acerte o equilíbrio",
+        "closingNote": "Seu vídeo tem muitas curtidas e poucas visualizações? Nosso serviço de visualizações no TikTok aumenta o contador de reproduções do mesmo vídeo.",
         "cards": [
           {
             "id": "buy-tiktok-likes-12",
-            "title": "Use o link correto do vídeo",
-            "description": "Confira a URL pública do vídeo no TikTok com cuidado antes de pedir, porque o vídeo enviado é usado para processar o pacote de curtidas.",
+            "title": "Dois contadores separados",
+            "description": "Visualizações contam reproduções; curtidas contam corações. Comprar curtidas não muda as visualizações, e comprar visualizações não adiciona curtidas.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-13",
-            "title": "Mantenha o vídeo público",
-            "description": "Não exclua nem restrinja o vídeo enviado enquanto o pedido exigir acesso público a ele.",
+            "title": "Curtidas abaixo das visualizações",
+            "description": "Num vídeo normal, só uma parte dos espectadores toca no coração. Escolha um pacote que deixe as curtidas claramente abaixo das visualizações.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-14",
-            "title": "Escolha a quantidade de curtidas",
-            "description": "Revise as quantidades de curtidas disponíveis e escolha o pacote que combina com o vídeo individual que você quer usar.",
+            "title": "Vídeos fixados primeiro",
+            "description": "Quem visita seu perfil vê os três vídeos fixados antes de tudo. Costumam ser o melhor lugar para adicionar curtidas.",
             "icon": "headphones"
           },
           {
             "id": "buy-tiktok-likes-15",
-            "title": "Curtidas e visualizações são diferentes",
-            "description": "Escolha curtidas no TikTok quando a contagem de curtidas for a métrica que você quer alterar. Visualizações no TikTok é um serviço separado para visualizações visíveis do vídeo.",
+            "title": "Mesmo vídeo, mesmo link",
+            "description": "Apagar e publicar de novo um vídeo cria um link e um contador novos. Peça para a versão que vai continuar no ar.",
             "icon": "clapperboard"
           }
         ]
@@ -433,32 +441,32 @@
       "packageSizes": {
         "id": "buy-tiktok-likes-popular-packages",
         "title": "Pacotes populares de curtidas no TikTok",
-        "description": "Compare algumas das quantidades de curtidas no TikTok disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções.",
+        "description": "Deixe as visualizações atuais do vídeo guiarem você. Como regra geral, escolha um pacote que deixe as curtidas bem abaixo das visualizações que o vídeo já tem.",
         "rows": [
           {
             "id": "tt-l-100",
             "quantity": "100 curtidas",
-            "recommendedFor": "Uma opção menor para um vídeo público no TikTok em que você quer acrescentar um número limitado de curtidas."
+            "recommendedFor": "Para um vídeo com alguns milhares de visualizações, ou para testar o serviço primeiro em um vídeo."
           },
           {
             "id": "tt-l-500",
             "quantity": "500 curtidas",
-            "recommendedFor": "Uma opção intermediária para um vídeo no TikTok em que você quer uma mudança maior na contagem de curtidas exibida."
+            "recommendedFor": "Para vídeos com cerca de 5.000–10.000 visualizações que parecem mais parados do que deveriam."
           },
           {
             "id": "tt-l-1000",
             "quantity": "1.000 curtidas",
-            "recommendedFor": "Um pacote maior para um vídeo público no TikTok em que você quer acrescentar mil curtidas em um único pedido."
+            "recommendedFor": "Nosso pacote mais popular: combina com vídeos que já passaram de 10.000 visualizações, inclusive fixados e de produto."
           },
           {
             "id": "tt-l-5000",
             "quantity": "5.000 curtidas",
-            "recommendedFor": "Uma opção de volume maior para um vídeo no TikTok em que você quer um aumento maior na contagem de curtidas exibida."
+            "recommendedFor": "Para vídeos com bastante alcance, a partir de dezenas de milhares de visualizações. Recomendamos entrega gradual."
           },
           {
             "id": "tt-l-10000",
             "quantity": "10.000 curtidas",
-            "recommendedFor": "Uma das opções maiores de pacote disponíveis para um vídeo público no TikTok em que você quer acrescentar dez mil curtidas."
+            "recommendedFor": "Para vídeos de campanha ou virais com muitíssimas visualizações. Distribua a entrega por um período mais longo."
           }
         ]
       },
@@ -568,35 +576,35 @@
     "whyBuy": {
       "id": "buy-tiktok-likes-why-buy",
       "title": "Por que as pessoas compram curtidas no TikTok?",
-      "description": "As pessoas compram curtidas no TikTok por motivos diferentes. Algumas querem aumentar a contagem de curtidas exibida em um vídeo particular, enquanto outras escolhem um pacote de curtidas para conteúdo ligado a um lançamento, campanha ou atividade contínua no TikTok. O serviço altera a métrica de curtidas no vídeo selecionado, mas não garante visualizações, seguidores, engajamento, alcance, vendas ou crescimento orgânico extras.",
+      "description": "Os motivos que nossos clientes do TikTok dão são práticos, e todos têm a ver com como o vídeo parece para quem já está assistindo.",
       "items": [
         {
           "id": "buy-tiktok-likes-wb-1",
-          "title": "Aumente a contagem visível de curtidas",
-          "description": "Um pacote de curtidas no TikTok pode ser usado quando você quer aumentar o número de curtidas exibido em um vídeo público específico."
+          "title": "Vídeos de produto e de loja",
+          "description": "Vendedores adicionam curtidas a demonstrações de produto e vídeos do TikTok Shop para os compradores verem que outras pessoas gostaram do que estão vendo."
         },
         {
           "id": "buy-tiktok-likes-wb-2",
-          "title": "Use curtidas em um lançamento ou campanha",
-          "description": "Criadores e negócios podem escolher um pacote de curtidas para um vídeo no TikTok ligado a um lançamento de produto, campanha, anúncio ou outra atividade de conteúdo."
+          "title": "Vídeos fixados no perfil",
+          "description": "Os vídeos fixados são a vitrine de um perfil no TikTok. Criadores adicionam curtidas ali para causar uma primeira impressão forte."
         },
         {
           "id": "buy-tiktok-likes-wb-3",
-          "title": "Foque a métrica de curtidas",
-          "description": "Curtidas no TikTok se aplica à contagem de curtidas no vídeo selecionado, em vez de acrescentar automaticamente seguidores ao perfil ou visualizações ao vídeo."
+          "title": "Equilibrar um bom vídeo",
+          "description": "Alguns vídeos têm boas visualizações e pouquíssimas curtidas. Um pacote moderado aproxima o contador do que os espectadores esperam."
         },
         {
           "id": "buy-tiktok-likes-wb-4",
-          "title": "Escolha a quantidade que você quer",
-          "description": "Tamanhos diferentes de pacote permitem selecionar o número de curtidas no TikTok que você quer pedir para o vídeo enviado."
+          "title": "Antes de impulsionar um vídeo",
+          "description": "Muitos clientes adicionam curtidas antes de usar o Promover ou anúncios, para o tráfego pago chegar a um vídeo que já parece aprovado."
         },
         {
           "id": "buy-tiktok-likes-wb-5",
-          "title": "Use curtidas junto com o conteúdo",
-          "description": "Comprar curtidas não substitui criar e administrar o próprio conteúdo no TikTok. Vídeos, legendas, respostas e outras atividades da conta ainda dependem de como você administra a presença."
+          "title": "Expectativas realistas",
+          "description": "Curtidas mudam um contador. Visualizações, seguidores e vendas continuam dependendo do próprio vídeo e de quanto tempo as pessoas assistem."
         }
       ],
-      "bottomNote": "Se seguidores ou visualizações de vídeo forem a métrica que você quer alterar, escolha o serviço correspondente de TikTok em vez de um pacote de curtidas."
+      "bottomNote": "Precisa de mais reproduções ou de um perfil maior? Visualizações e seguidores no TikTok são serviços separados: compare abaixo."
     },
     "howToBuy": {
       "id": "how-it-works",

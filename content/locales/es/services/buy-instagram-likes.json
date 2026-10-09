@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVICIOS DE INSTAGRAM",
-      "title": "Comprar Me gusta de Instagram",
-      "description": "Compra Me gusta de Instagram para una publicación o Reel público eligiendo el tamaño de paquete que encaja con lo que necesitas. NovaLikes ofrece varias cantidades de Me gusta con precios claros, para que compares las opciones disponibles antes de pedir. Selecciona tu paquete, facilita la URL pública de la publicación o Reel de Instagram y completa tu pedido online. No se requiere contraseña de Instagram, y puedes seguir tu pedido después del pago.",
+      "title": "Comprar Me gusta de Instagram para publicaciones y Reels",
+      "description": "Compra Me gusta (likes) de Instagram para cualquier publicación de foto, carrusel o Reel público desde US$ 2,99. Envía el enlace de la publicación, elige la cantidad y paga; nunca pedimos tu contraseña. La mayoría de los pedidos empiezan en 6–8 horas y terminan 4–6 horas después, o llegan de forma gradual si lo pides. Cada pedido incluye una recarga de 6 meses y soporte por WhatsApp 24/7.",
       "purpose": "Convert visitors looking to buy Instagram likes",
       "primaryKeyword": "buy instagram likes",
       "supportingKeywords": [
@@ -33,19 +33,19 @@
       "trustLabels": [
         {
           "id": "ig-l-trust-public",
-          "label": "Solo URL pública de la publicación"
+          "label": "Publicaciones, Reels y carruseles"
         },
         {
           "id": "ig-l-trust-password",
-          "label": "Sin contraseña necesaria"
+          "label": "Sin contraseña"
         },
         {
           "id": "ig-l-trust-checkout",
-          "label": "Pago seguro"
+          "label": "Empieza en 6–8 horas"
         },
         {
           "id": "ig-l-trust-track",
-          "label": "Seguimiento del pedido"
+          "label": "Recarga de 6 meses"
         }
       ],
       "visual": {
@@ -58,7 +58,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Paquetes y precios de Me gusta de Instagram",
-      "description": "Elige el número de Me gusta de Instagram que quieres y compara los precios de paquete disponibles antes de pedir. Selecciona una cantidad abajo para revisar los detalles del paquete y continúa con la opción que encaja con la publicación o Reel que quieres usar.",
+      "description": "Los precios están en dólares estadounidenses. 1.000 Me gusta es el paquete más popular; elige un tamaño acorde a tus seguidores y a tu interacción habitual.",
       "purpose": "Present real NovaLikes.com likes packages",
       "primaryKeyword": "Instagram Likes Pricing",
       "suggestedWordCount": 40,
@@ -197,31 +197,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-instagram-likes-why-choose",
-        "title": "¿Por qué elegir NovaLikes para Me gusta de Instagram?",
-        "description": "NovaLikes facilita comparar paquetes de Me gusta de Instagram antes de pedir. Elige la cantidad que necesitas para una publicación o Reel concreto, consulta el precio, facilita la URL pública correcta del contenido y sigue tu pedido después del pago.",
+        "title": "¿Por qué comprar Me gusta de Instagram en NovaLikes?",
+        "description": "Detrás de NovaLikes está el mismo equipo que lleva 7–8 años gestionando pedidos de Instagram, incluidos los años en que trabajamos como ViralMe. Un pedido de Me gusta con nosotros es sencillo: un enlace, una hora de inicio conocida, el ritmo que elijas y una recarga si el contador baja más adelante.",
         "items": [
           {
             "id": "buy-instagram-likes-0",
-            "title": "Distintas cantidades de Me gusta",
-            "description": "Compara paquetes de Me gusta más pequeños y más grandes para encontrar una cantidad que tenga sentido para el contenido de Instagram en el que estás trabajando.",
+            "title": "Publicaciones, Reels y carruseles",
+            "description": "Los Me gusta pueden ir a una publicación de foto, a un carrusel o a un Reel. Envías el enlace de la publicación exacta y los Me gusta se añaden solo a ella.",
             "icon": "users"
           },
           {
             "id": "buy-instagram-likes-1",
-            "title": "Precios claros por paquete",
-            "description": "Consulta el precio de cada paquete de Me gusta de Instagram antes de añadir tu selección al carrito.",
+            "title": "Empieza en 6–8 horas y termina en 4–6",
+            "description": "La mayoría de los pedidos de Me gusta empiezan en 6–8 horas tras el pago. Una vez iniciada, la entrega estándar suele terminar en 4–6 horas.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-likes-2",
-            "title": "Para publicaciones y Reels concretos",
-            "description": "Elige la publicación o Reel público de Instagram donde quieres que se añadan los Me gusta, en lugar de cambiar el recuento general de seguidores.",
+            "title": "Un ritmo natural si lo prefieres",
+            "description": "¿Prefieres que los Me gusta lleguen poco a poco durante un día o más? Indícalo en la nota del pago o dínoslo por WhatsApp antes de que empiece el pedido.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-likes-3",
-            "title": "Seguimiento del pedido",
-            "description": "Usa la opción de seguimiento disponible después del pago para consultar información de estado de tu pedido de Me gusta de Instagram.",
+            "title": "Recarga durante 6 meses",
+            "description": "Si el contador de Me gusta de esa publicación baja en los 6 meses siguientes a la entrega, envíanos tu número de pedido por WhatsApp y lo volvemos a completar.",
             "icon": "headphones"
           }
         ]
@@ -231,66 +231,74 @@
       "canYouBuy": {
         "id": "buy-instagram-likes-can-you-buy",
         "title": "¿Se pueden comprar Me gusta de Instagram?",
-        "description": "Sí. Los Me gusta de Instagram se pueden comprar para publicaciones y Reels públicos elegibles. Con NovaLikes, eliges un paquete de Me gusta, facilitas la URL pública del contenido de Instagram que quieres usar y completas tu pedido a través del sitio web.",
+        "description": "Sí. Puedes comprar Me gusta para cualquier publicación de foto, carrusel o Reel público de Instagram. Cada pedido cubre una publicación: pegas su enlace, eliges cuántos Me gusta quieres y pagas en dólares estadounidenses. Nunca se necesita tu contraseña.",
         "cards": [
           {
             "id": "buy-instagram-likes-4",
-            "title": "Qué cambia un pedido de Me gusta de Instagram",
-            "description": "Un pedido de Me gusta de Instagram aumenta el recuento de Me gusta en la publicación o Reel concreto enviado con el pedido. No cambia el recuento de seguidores del perfil en conjunto.",
+            "title": "Una publicación por pedido",
+            "description": "Los Me gusta se añaden a la publicación o al Reel del enlace que envías. ¿Quieres Me gusta en tres publicaciones? Haz tres pedidos, un enlace en cada uno.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-instagram-likes-5",
-            "title": "Qué necesitas para hacer un pedido",
-            "description": "Necesitas la URL pública correcta de la publicación o Reel de Instagram y el paquete de Me gusta que quieres comprar. No se requiere tu contraseña de Instagram.",
+            "title": "De dónde sale el enlace",
+            "description": "Toca los tres puntos o el icono de compartir de la publicación y elige Copiar enlace. Los enlaces de publicaciones tienen la forma instagram.com/p/… y los de Reels, instagram.com/reel/….",
             "icon": "briefcase"
           },
           {
             "id": "buy-instagram-likes-6",
-            "title": "Qué no incluyen los Me gusta de Instagram",
-            "description": "El número de Me gusta es independiente del número de seguidores, de las visualizaciones y de los comentarios. Pedir Me gusta de Instagram no añade automáticamente esas otras métricas ni garantiza más alcance, interacción, ventas o crecimiento orgánico.",
+            "title": "Lo que los Me gusta no cambian",
+            "description": "Tus seguidores, las visualizaciones de tus Reels y tus comentarios siguen igual. Los Me gusta suben el contador de corazones de esa publicación y nada más.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de Instagram, elegido la cantidad correcta y facilitado la URL del contenido donde quieres que se añadan los Me gusta."
+        "closingNote": "Un pedido no puede empezar si la cuenta es privada, si la publicación se archivó o eliminó, o si el enlace apunta a tu perfil en lugar de a la publicación."
       },
       "doesBuyingHelp": {
         "id": "buy-instagram-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "¿Los Me gusta comprados ayudan a que tus publicaciones de Instagram se vean más?",
+        "description": "Un poco, en la situación adecuada, pero no son un atajo de posicionamiento. Instagram tiene en cuenta muchas señales para decidir quién ve una publicación y, en los Reels, se fija mucho en el tiempo de visualización y en cuántas veces se envía a amigos. Un Me gusta de una cuenta que no hace nada más es una señal débil. Donde sí ayudan es en la primera impresión: la gente se detiene más en una publicación que ya parece valorada.",
+        "helpTitle": "Cuándo marcan la diferencia",
+        "helpItems": [
+          "Una publicación de producto, oferta o anuncio que debe inspirar confianza desde la primera hora.",
+          "Una publicación que vas a promocionar con anuncios, para que los nuevos visitantes no lleguen a una publicación con 4 Me gusta.",
+          "Mantener las publicaciones recientes en línea con tus números habituales cuando una rinde menos."
+        ],
+        "limitTitle": "Cuándo no",
+        "limitItems": [
+          "Si has ocultado el número de Me gusta, los visitantes no lo ven, así que el efecto de prueba social casi desaparece.",
+          "Los Me gusta no añaden guardados, compartidos ni comentarios, las acciones que Instagram interpreta como mayor interés.",
+          "Un número de Me gusta muy por encima de tus seguidores y visualizaciones puede parecer poco natural en vez de impresionante."
+        ],
+        "closingNote": "Nuestra guía del Learn Center (en inglés) que compara seguidores, Me gusta, visualizaciones y comentarios de Instagram explica qué indica realmente cada número a Instagram y a tus visitantes."
       },
       "whatHappens": {
         "id": "buy-instagram-likes-what-happens",
         "title": "¿Qué ocurre después de comprar Me gusta de Instagram?",
-        "description": "Después de hacer un pedido de Me gusta de Instagram, el paquete y la URL pública del contenido que enviaste se usan para procesar el pedido para la publicación o Reel seleccionado. Mantén el contenido enviado accesible públicamente cuando se requiera mientras se gestiona el pedido.",
+        "description": "Desde el pago hasta la entrega terminada, un pedido de Me gusta pasa por cuatro pasos cortos.",
         "steps": [
           {
             "id": "buy-instagram-likes-th-1",
-            "title": "Se revisan los datos de tu pedido",
-            "description": "El paquete de Me gusta seleccionado y la URL de Instagram se vinculan a tu pedido para que la solicitud se procese para la publicación o Reel previsto."
+            "title": "Pedido confirmado por correo",
+            "description": "Recibes una confirmación con tu número de pedido justo después de pagar. Guárdalo: lo necesitas para seguir el pedido o pedir una recarga."
           },
           {
             "id": "buy-instagram-likes-th-2",
-            "title": "Los Me gusta van al contenido enviado",
-            "description": "El pedido se aplica a la publicación o Reel de Instagram vinculado a la URL que facilitaste. Revisa el enlace con cuidado antes de completar el pago."
+            "title": "Los Me gusta empiezan en 6–8 horas",
+            "description": "El pedido se vincula al enlace de tu publicación y empieza en 6–8 horas. Si en tu nota pediste un ritmo más lento, la entrega se reparte en el tiempo."
           },
           {
             "id": "buy-instagram-likes-th-3",
-            "title": "El tiempo de procesamiento puede variar",
-            "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de Me gusta y las condiciones actuales de pedidos. No asumas que todos los paquetes tendrán exactamente el mismo tiempo de procesamiento."
+            "title": "La entrega estándar termina en 4–6 horas",
+            "description": "La mayoría de los pedidos se completan 4–6 horas después de empezar. Puedes ver cómo sube el contador en la publicación y seguir el avance en la página de seguimiento de pedidos."
           },
           {
             "id": "buy-instagram-likes-th-4",
-            "title": "Consulta el estado de tu pedido",
-            "description": "Usa el seguimiento de pedidos de NovaLikes para consultar las actualizaciones de estado disponibles después del pago. Si necesitas ayuda, contacta con soporte con la información relevante del pedido."
+            "title": "Empieza tu recarga de 6 meses",
+            "description": "El periodo de recarga empieza el día en que termina la entrega. Si el contador de Me gusta baja, envía tu número de pedido por WhatsApp y añadimos los que falten."
           }
         ],
-        "closingNote": "Evita eliminar la publicación o Reel enviado, hacerlo no disponible o cambiar algo que impida el acceso al contenido mientras se procesa el pedido. Si algo cambia después de pedir, contacta con soporte si necesitas ayuda."
+        "closingNote": "Mantén la cuenta pública y la publicación visible hasta que termine la entrega. Después puedes volver a poner la cuenta en privado."
       },
       "serviceCompare": {
         "id": "buy-instagram-likes-service-compare",
@@ -322,8 +330,8 @@
       "beforeBuying": {
         "id": "buy-instagram-likes-before-buying",
         "title": "Qué revisar antes de comprar Me gusta de Instagram",
-        "description": "Antes de comprar Me gusta de Instagram, revisa el paquete y los detalles del contenido antes de completar tu pedido. Asegúrate de que la cantidad, el precio, la URL de Instagram y el tipo de servicio coinciden con lo que quieres para la publicación o Reel seleccionado.",
-        "framingNote": "Revisa tu contenido seleccionado, la cantidad de Me gusta y el precio una vez más antes del pago. Evita basarte en afirmaciones de que comprar Me gusta garantizará más alcance, seguidores, ventas o crecimiento orgánico.",
+        "description": "La mayoría de los problemas vienen del enlace o de una cuenta privada. Revisa estos cinco puntos y tu pedido debería empezar sin contratiempos.",
+        "framingNote": "Todos los precios están en dólares estadounidenses. ¿Pagas en otra moneda? Tu banco convierte el importe a su propio tipo de cambio.",
         "items": [
           {
             "id": "buy-instagram-likes-7",
@@ -359,33 +367,33 @@
       },
       "worldwide": {
         "id": "buy-instagram-likes-worldwide",
-        "title": "Elegir la publicación o Reel correcto para Me gusta de Instagram",
-        "description": "Me gusta de Instagram se aplica a un contenido público elegible concreto, así que elegir la publicación o Reel correcto es una de las partes más importantes al hacer el pedido.",
-        "eyebrow": "Listo para Me gusta de Instagram",
-        "closingNote": "Me gusta de Instagram se aplica a una publicación o Reel público concreto. Envía la URL exacta del contenido, mantén el contenido disponible y revisa el paquete de Me gusta seleccionado antes del pago.",
+        "title": "Publicaciones de foto, carruseles, Reels y Me gusta ocultos",
+        "description": "Los Me gusta funcionan igual en todos los tipos de publicación pública. Lo único que cambia es el enlace que copias y si has decidido ocultar el número de Me gusta en esa publicación.",
+        "eyebrow": "Qué publicaciones pueden recibir Me gusta",
+        "closingNote": "¿No sabes qué enlace usar? Escríbenos por WhatsApp antes de pedir y lo revisamos por ti.",
         "cards": [
           {
             "id": "buy-instagram-likes-12",
-            "title": "Usa la URL exacta del contenido",
-            "description": "Envía la URL pública de la publicación o Reel donde quieres aplicar el paquete de Me gusta. Una URL de perfil no es el destino correcto para este servicio.",
+            "title": "Publicaciones de foto",
+            "description": "Las publicaciones de una sola imagen usan un enlace como instagram.com/p/…. Los Me gusta aparecen en esa publicación.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-likes-13",
-            "title": "Mantén el contenido disponible",
-            "description": "Evita eliminar o restringir la publicación o Reel enviado mientras se procesa el pedido.",
+            "title": "Carruseles",
+            "description": "Un carrusel es una sola publicación, así que un enlace lo cubre. Los Me gusta cuentan para todo el carrusel, no para cada imagen.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-likes-14",
-            "title": "Revisa la cantidad de Me gusta",
-            "description": "Elige el número de Me gusta según el contenido concreto para el que pides y revisa la cantidad antes del pago.",
+            "title": "Reels",
+            "description": "Los Reels usan un enlace como instagram.com/reel/…. Los Me gusta suben el contador de corazones; las visualizaciones son otro número y otro servicio.",
             "icon": "headphones"
           },
           {
             "id": "buy-instagram-likes-15",
-            "title": "Revisa el precio antes de pedir",
-            "description": "Los precios de los paquetes se muestran antes del pago. Si cambias la cantidad de Me gusta, revisa el paquete y el precio actualizados antes de completar el pedido.",
+            "title": "Número de Me gusta oculto",
+            "description": "Si ocultaste el número de Me gusta de una publicación, los Me gusta se entregan igual y tú los sigues viendo, pero los visitantes no. Puedes volver a mostrarlo desde el menú de tres puntos de la publicación.",
             "icon": "clapperboard"
           }
         ]
@@ -393,32 +401,32 @@
       "packageSizes": {
         "id": "buy-instagram-likes-popular-packages",
         "title": "Paquetes populares de Me gusta de Instagram",
-        "description": "¿No sabes qué paquete elegir? Compara algunas de las cantidades de Me gusta de Instagram disponibles en NovaLikes abajo, o vuelve a la sección completa de precios para ver todas las opciones disponibles.",
+        "description": "Mantén los Me gusta en proporción con el resto de la cuenta. Una publicación con 2.000 Me gusta en un perfil con 300 seguidores y 500 visualizaciones parece rara; una con 150 Me gusta, no. Usa esta guía como punto de partida.",
         "rows": [
           {
             "id": "buy-instagram-likes-pkg-100",
             "quantity": "100 Me gusta",
-            "recommendedFor": "Una opción más pequeña para una publicación o Reel en el que quieres un aumento moderado del recuento visible de Me gusta."
+            "recommendedFor": "Para cuentas nuevas o pequeñas, o para probar el servicio primero en una publicación."
           },
           {
             "id": "buy-instagram-likes-pkg-500",
             "quantity": "500 Me gusta",
-            "recommendedFor": "Una opción intermedia para contenido de Instagram en el que quieres un cambio más notable en el número de Me gusta."
+            "recommendedFor": "Para cuentas con unos miles de seguidores que quieren que una publicación reciente esté a la altura de sus números habituales."
           },
           {
             "id": "buy-instagram-likes-pkg-1k",
             "quantity": "1,000 Me gusta",
-            "recommendedFor": "Un paquete más grande para una publicación o Reel seleccionado en el que quieres añadir mil Me gusta en un solo pedido."
+            "recommendedFor": "Nuestra opción más popular: encaja con una publicación de producto, lanzamiento o anuncio en una cuenta ya consolidada."
           },
           {
             "id": "buy-instagram-likes-pkg-5k",
             "quantity": "5,000 Me gusta",
-            "recommendedFor": "Una opción de mayor volumen para contenido de Instagram en el que quieres un aumento más grande del recuento visible de Me gusta."
+            "recommendedFor": "Para cuentas grandes y Reels que ya reciben miles de visualizaciones."
           },
           {
             "id": "buy-instagram-likes-pkg-10k",
             "quantity": "10,000+ Me gusta",
-            "recommendedFor": "Una opción para publicaciones o Reels en los que eliges una de las cantidades de Me gusta más grandes disponibles en NovaLikes."
+            "recommendedFor": "Para publicaciones grandes de marca o campaña. Un ritmo gradual hace que la subida se vea constante."
           }
         ]
       },
@@ -533,35 +541,35 @@
     "whyBuy": {
       "id": "buy-instagram-likes-why-buy",
       "title": "¿Por qué la gente compra Me gusta de Instagram?",
-      "description": "La gente compra Me gusta de Instagram para distintos tipos de contenido y por distintos motivos. Algunos usan paquetes de Me gusta para una publicación o Reel nuevo, mientras que otros los usan al promocionar un producto, campaña, anuncio o pieza de contenido. El servicio cambia el recuento visible de Me gusta en el contenido seleccionado, pero no garantiza alcance, comentarios, seguidores, ventas ni crecimiento orgánico.",
+      "description": "En nuestros pedidos vemos las mismas pocas razones una y otra vez. Todas tienen que ver con cómo ven la publicación las personas que llegan a ella, no con engañar a Instagram.",
       "items": [
         {
           "id": "buy-instagram-likes-wb-1",
-          "title": "Añade Me gusta a contenido nuevo",
-          "description": "Un paquete de Me gusta se puede usar en una publicación o Reel recién publicado cuando quieres aumentar su recuento visible de Me gusta."
+          "title": "Un comienzo flojo en una publicación nueva",
+          "description": "Una publicación con un puñado de Me gusta en sus primeras horas puede hacer que los visitantes pasen de largo. Un contador inicial le da una primera impresión más justa."
         },
         {
           "id": "buy-instagram-likes-wb-2",
-          "title": "Apoya una publicación de producto o campaña",
-          "description": "Negocios y creadores pueden usar Me gusta de Instagram en contenido relacionado con un lanzamiento de producto, promoción, anuncio o campaña."
+          "title": "Publicaciones de producto y ofertas",
+          "description": "Las tiendas añaden Me gusta a fotos de producto, ofertas y novedades que sus clientes también ven desde su web o WhatsApp."
         },
         {
           "id": "buy-instagram-likes-wb-3",
-          "title": "Aumenta el recuento visible de Me gusta",
-          "description": "Los Me gusta de Instagram se aplican a la publicación o Reel seleccionado, en lugar de cambiar el recuento de seguidores que se muestra en tu perfil."
+          "title": "Sorteos y anuncios",
+          "description": "Las publicaciones de eventos, sorteos y anuncios suelen necesitar parecer activas rápido porque solo importan unos días."
         },
         {
           "id": "buy-instagram-likes-wb-4",
-          "title": "Elige una cantidad para el contenido",
-          "description": "Los distintos tamaños de paquete te permiten elegir el número de Me gusta según la publicación o Reel individual que quieres usar."
+          "title": "Una publicación que se queda atrás",
+          "description": "Cuando la mayoría de las publicaciones recibe 300 Me gusta y una solo 40, algunos dueños refuerzan la más débil para que la cuadrícula se vea pareja."
         },
         {
           "id": "buy-instagram-likes-wb-5",
-          "title": "Usa Me gusta junto con tu propia estrategia de contenido",
-          "description": "Comprar Me gusta cambia una métrica visible en el contenido seleccionado. Los pies de foto, el trabajo creativo, las decisiones de publicación, las respuestas y el resto de la actividad de la cuenta siguen dependiendo de cómo gestiones tu presencia en Instagram."
+          "title": "Antes de promocionar una publicación",
+          "description": "Algunos clientes añaden Me gusta a una publicación antes de promocionarla, para que los visitantes de pago lleguen a una publicación que ya tiene cierto aprecio."
         }
       ],
-      "bottomNote": "Si la métrica que quieres cambiar es el recuento de seguidores de tu perfil, las visualizaciones de vídeo o los comentarios en lugar del recuento de Me gusta, elige el servicio de Instagram correspondiente."
+      "bottomNote": "Los Me gusta solo cambian el contador de corazones de una publicación. Para más seguidores en el perfil, visualizaciones de Reels o comentarios, compara los demás servicios de Instagram abajo."
     },
     "howToBuy": {
       "id": "how-it-works",

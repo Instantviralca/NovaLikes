@@ -71,7 +71,13 @@ describe('public Learn date metadata', () => {
   });
 
   it('omits future BlogPosting dates for live articles with editorial calendar targets', () => {
-    const schemas = buildArticleSchema(makeSeo());
+    // Use a date that stays in the future (the old 2026-09-30 fixture has now passed).
+    const schemas = buildArticleSchema(
+      makeSeo({
+        publishedAt: '2099-01-01T08:00:00.000Z',
+        updatedAt: '2099-01-01T08:00:00.000Z',
+      }),
+    );
     const article = schemas.find((item) => item['@type'] === 'BlogPosting') as Record<
       string,
       unknown

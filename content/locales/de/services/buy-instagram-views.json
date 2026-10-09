@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "INSTAGRAM-SERVICES",
-      "title": "Instagram Views kaufen",
-      "description": "Kaufen Sie Instagram Views für ein öffentliches Reel oder Video, indem Sie die Paketgröße wählen, die zum gewünschten Inhalt passt. NovaLikes bietet mehrere View-Mengen mit klaren Preisen, damit Sie die Optionen vor der Bestellung vergleichen können. Wählen Sie Ihr Paket, geben Sie die öffentliche Instagram-Inhalts-URL an und schließen Sie die Bestellung online ab. Ein Instagram-Passwort ist nicht erforderlich, und nach dem Checkout können Sie Ihre Bestellung verfolgen.",
+      "title": "Instagram Views kaufen – für Reels & Videos",
+      "description": "Kaufen Sie Instagram Views für jedes öffentliche Reel oder Video ab 1,99 US-$. Link einfügen, Paket wählen, bezahlen – kein Passwort nötig. Die meisten Bestellungen starten innerhalb von 6–8 Stunden und sind 4–6 Stunden später fertig, oder Sie wünschen eine schrittweise Lieferung. Jede Bestellung enthält eine 6-monatige Nachfüllung und WhatsApp-Support rund um die Uhr.",
       "purpose": "Convert for Instagram views packages worldwide",
       "primaryKeyword": "buy Instagram views",
       "supportingKeywords": [
@@ -32,19 +32,19 @@
       "trustLabels": [
         {
           "id": "ig-v-trust-public",
-          "label": "Nur öffentliche Inhalts-URL"
+          "label": "Start in 6–8 Stunden"
         },
         {
           "id": "ig-v-trust-password",
-          "label": "Kein Passwort erforderlich"
+          "label": "6 Monate Nachfüllung"
         },
         {
           "id": "ig-v-trust-checkout",
-          "label": "Sicherer Checkout"
+          "label": "Kein Passwort erforderlich"
         },
         {
           "id": "ig-v-trust-track",
-          "label": "Bestellverfolgung"
+          "label": "Schrittweise Lieferung auf Wunsch"
         }
       ],
       "visual": {
@@ -57,7 +57,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Instagram-Views-Pakete und Preise",
-      "description": "Wählen Sie die gewünschte Anzahl Instagram Views und vergleichen Sie die Paketpreise vor der Bestellung. Wählen Sie unten eine Menge, prüfen Sie die Paketdetails und fahren Sie mit der Option fort, die zum gewünschten Reel oder Video passt.",
+      "description": "Die Preise sind in US-Dollar. 1.000 Views ist das beliebteste Paket; kleinere Pakete passen zu neuen Reels, größere zu Kampagneninhalten.",
       "purpose": "Present real NovaLikes.com views packages",
       "primaryKeyword": "Instagram views packages",
       "suggestedWordCount": 40,
@@ -166,31 +166,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-instagram-views-why-choose",
-        "title": "Warum NovaLikes für Instagram Views?",
-        "description": "NovaLikes macht es einfach, Instagram-Views-Pakete vor der Bestellung zu vergleichen. Wählen Sie die View-Zahl für ein bestimmtes Reel oder Video, prüfen Sie den Preis, geben Sie die korrekte öffentliche Inhalts-URL an und verfolgen Sie Ihre Bestellung nach dem Checkout.",
+        "title": "Warum Instagram Views bei NovaLikes kaufen?",
+        "description": "Wir bieten seit 7–8 Jahren Wachstumsservices für Instagram an – zuerst auf früheren Websites, dann als ViralMe und heute als NovaLikes. Jede Views-Bestellung enthält dieselben vier Dinge: eine klare Startzeit, schnelle oder schrittweise Lieferung nach Wahl, eine 6-monatige Nachfüllung und einen echten Menschen auf WhatsApp, falls etwas nicht stimmt.",
         "items": [
           {
             "id": "buy-instagram-views-0",
-            "title": "Unterschiedliche View-Mengen",
-            "description": "Vergleichen Sie kleinere und größere View-Pakete, um eine Menge zu finden, die zum gewünschten Instagram-Reel oder Video passt.",
+            "title": "Start in 6–8 Stunden",
+            "description": "Die meisten Bestellungen für Instagram Views starten innerhalb von 6–8 Stunden nach der Zahlung und sind 4–6 Stunden danach abgeschlossen – so erhält ein neues Reel seine Views schnell.",
             "icon": "users"
           },
           {
             "id": "buy-instagram-views-1",
-            "title": "Klare Paketpreise",
-            "description": "Sehen Sie den Preis jedes Instagram-Views-Pakets, bevor Sie Ihre Auswahl in den Warenkorb legen.",
+            "title": "Schnell oder schrittweise – Sie wählen",
+            "description": "Soll der Zähler lieber langsam steigen? Fügen Sie beim Bezahlen eine Notiz hinzu oder schreiben Sie uns auf WhatsApp, dann verteilen wir die Views über einen längeren Zeitraum.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-views-2",
-            "title": "Für bestimmte Reels und Videos",
-            "description": "Wählen Sie das öffentliche Instagram-Reel oder Video, dem die Views hinzugefügt werden sollen, statt eine Kennzahl auf Profilebene wie die Follower-Zahl zu ändern.",
+            "title": "6-monatige Nachfüllung",
+            "description": "Sinkt der View-Zähler Ihres Reels innerhalb von 6 Monaten nach der Lieferung, senden Sie uns Ihre Bestellnummer per WhatsApp und wir füllen ihn wieder auf.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-views-3",
-            "title": "Bestellverfolgung",
-            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer Instagram-Views-Bestellung zu prüfen.",
+            "title": "Niemals ein Passwort",
+            "description": "Wir brauchen nur den öffentlichen Link zu Ihrem Reel oder Video. Ihr Instagram-Login bleibt bei Ihnen, und Sie verfolgen die Bestellung mit Bestellnummer und E-Mail.",
             "icon": "headphones"
           }
         ]
@@ -200,66 +200,74 @@
       "canYouBuy": {
         "id": "buy-instagram-views-can-you-buy",
         "title": "Kann man Instagram Views kaufen?",
-        "description": "Ja. Instagram Views können für geeignete öffentliche Reels und Videos gekauft werden. Bei NovaLikes wählen Sie ein Views-Paket, geben die öffentliche URL des Instagram-Videoinhalts an und schließen die Bestellung über die Website ab.",
+        "description": "Ja. Sie können Views für jedes öffentliche Instagram-Reel oder jeden Videobeitrag kaufen. Wählen Sie ein Paket, fügen Sie den Link zu diesem Reel oder Video ein und bezahlen Sie in US-Dollar. Die Views werden genau diesem Inhalt hinzugefügt – sie erhöhen seinen View-Zähler, nicht Ihre Follower-Zahl.",
         "cards": [
           {
             "id": "buy-instagram-views-4",
-            "title": "Was eine Instagram-Views-Bestellung ändert",
-            "description": "Eine Instagram-Views-Bestellung erhöht die View-Zahl auf dem konkreten Reel oder Video, das mit der Bestellung übermittelt wird. Sie ändert nicht die auf dem gesamten Profil angezeigte Follower-Zahl.",
+            "title": "Was sich ändert",
+            "description": "Der View-Zähler des eingereichten Reels oder Videos steigt um die Anzahl der Views in Ihrem Paket. Sonst wird an Ihrem Profil nichts verändert.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-instagram-views-5",
-            "title": "Was Sie für eine Bestellung brauchen",
-            "description": "Sie brauchen die korrekte öffentliche URL des Instagram-Reels oder Videos und das Views-Paket, das Sie kaufen möchten. Ihr Instagram-Passwort ist nicht erforderlich.",
+            "title": "Was Sie brauchen",
+            "description": "Den öffentlichen Link zum Reel oder Video (aus dem Teilen-Menü kopieren) und ein Paket. Sie geben uns nie Ihr Instagram-Passwort und melden sich nirgendwo an.",
             "icon": "briefcase"
           },
           {
             "id": "buy-instagram-views-6",
-            "title": "Was Instagram Views nicht enthalten",
-            "description": "Views sind getrennt von Followern, Likes und Kommentaren. Eine Instagram-Views-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Reichweite, Interaktion, Verkäufe oder organisches Wachstum zu.",
+            "title": "Was es nicht bewirkt",
+            "description": "Views bringen von sich aus keine Likes, Kommentare, Follower oder Verkäufe und zwingen Instagram nicht, Ihr Reel mehr Menschen zu zeigen. Sie erhöhen den View-Zähler – genau das versprechen wir.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie Instagram Views gewählt, die richtige Menge bestimmt und die URL des Reels oder Videos angegeben haben, dem die Views hinzugefügt werden sollen."
+        "closingNote": "Tipp: Fügen Sie den Link zum genauen Reel ein, nicht zu Ihrem Profil. Mit einem Profillink, einem privaten oder einem gelöschten Reel kann eine Bestellung nicht starten."
       },
       "doesBuyingHelp": {
         "id": "buy-instagram-views-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Helfen gekaufte Instagram Views, dass Ihr Reel mehr Menschen erreicht?",
+        "description": "Ehrliche Antwort: manchmal ein wenig, aber nie allein. Instagram entscheidet vor allem anhand der Reaktionen echter Zuschauer, wie weit ein Reel ausgespielt wird – wie lange sie zusehen, ob sie es erneut abspielen, teilen, speichern oder folgen. Ein höherer View-Zähler ist Social Proof: Wer auf das Reel stößt, sieht, dass andere es bereits angesehen haben. Ein kaufbares Ranking-Signal ist er nicht.",
+        "helpTitle": "Wo Views helfen können",
+        "helpItems": [
+          "Launch-Beiträge: Ein neues Reel mit ein paar hundert Views wirkt für die ersten echten Besucher weniger leer.",
+          "Anzeigen und Aktionen: Ein Reel, das Sie gleich bewerben, startet nicht bei null.",
+          "Ein einheitliches Profil: Hat ein Reel 30.000 Views und das nächste 300, wirkt das Raster nach einem Aufstocken weniger ungleichmäßig."
+        ],
+        "limitTitle": "Was Views nicht leisten",
+        "limitItems": [
+          "Wiedergabezeit, Shares oder Speicherungen hinzufügen – die kommen nur von echten Zuschauern.",
+          "Einen Platz auf „Entdecken“ oder im Reels-Tab versprechen.",
+          "Guten Content ersetzen: Ein Reel, das Nutzer nach zwei Sekunden wegwischen, wird weiterhin weniger Menschen gezeigt."
+        ],
+        "closingNote": "Sie möchten verstehen, wie Instagram Reels zählt und einstuft? Unsere Learn-Center-Ratgeber (auf Englisch) dazu, wie Reels-Views gezählt werden und wie der Instagram-Algorithmus funktioniert, erklären es Schritt für Schritt."
       },
       "whatHappens": {
         "id": "buy-instagram-views-what-happens",
         "title": "Was passiert nach dem Kauf von Instagram Views?",
-        "description": "Nach einer Instagram-Views-Bestellung werden das Paket und die übermittelte Inhalts-URL genutzt, um die Bestellung für das gewählte Reel oder Video zu bearbeiten. Lassen Sie den Inhalt dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "description": "So läuft es nach Ihrer Zahlung ab – und so lange dauert jeder Schritt in der Regel.",
         "steps": [
           {
             "id": "buy-instagram-views-th-1",
-            "title": "Ihre Bestelldaten werden geprüft",
-            "description": "Das gewählte Views-Paket und die übermittelte Instagram-URL werden Ihrer Bestellung zugeordnet, damit die Anfrage für den vorgesehenen Videoinhalt bearbeitet werden kann."
+            "title": "Wir prüfen Ihren Link",
+            "description": "Die Bestellung wird dem eingereichten Reel- oder Video-Link zugeordnet. Bemerken Sie einen Fehler im Link, schreiben Sie uns sofort per WhatsApp mit Ihrer Bestellnummer, damit er vor Lieferbeginn korrigiert werden kann."
           },
           {
             "id": "buy-instagram-views-th-2",
-            "title": "Views gehen an den übermittelten Inhalt",
-            "description": "Die Bestellung gilt für das Instagram-Reel oder Video, das mit der angegebenen URL verbunden ist. Prüfen Sie den Link sorgfältig, bevor Sie den Checkout abschließen."
+            "title": "Lieferstart innerhalb von 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung. Haben Sie in Ihrer Notiz eine schrittweise Lieferung gewünscht, werden die Views stattdessen über einen längeren Zeitraum verteilt."
           },
           {
             "id": "buy-instagram-views-th-3",
-            "title": "Die Bearbeitungszeit kann variieren",
-            "description": "Die benötigte Zeit kann je nach gewählter View-Zahl und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+            "title": "Die meisten sind in 4–6 Stunden fertig",
+            "description": "Nach dem Start ist die Standardlieferung meist innerhalb von 4–6 Stunden abgeschlossen. Schrittweise Bestellungen dauern bewusst länger."
           },
           {
             "id": "buy-instagram-views-th-4",
-            "title": "Bestellstatus prüfen",
-            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+            "title": "Verfolgen – und Sie sind abgesichert",
+            "description": "Verfolgen Sie den Fortschritt auf der Seite „Bestellung verfolgen“. Nach Abschluss der Lieferung beginnt Ihre 6-monatige Nachfüllfrist: Sinkt der Zähler, schreiben Sie uns auf WhatsApp."
           }
         ],
-        "closingNote": "Vermeiden Sie es, das übermittelte Reel oder Video zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+        "closingNote": "Lassen Sie das Reel öffentlich und löschen Sie es nicht, bis die Lieferung abgeschlossen ist. Danach können Sie Ihr Konto wieder auf privat stellen."
       },
       "serviceCompare": {
         "id": "buy-instagram-views-service-compare",
@@ -291,8 +299,8 @@
       "beforeBuying": {
         "id": "buy-instagram-views-before-buying",
         "title": "Was Sie vor dem Kauf von Instagram Views prüfen sollten",
-        "description": "Bevor Sie Instagram Views kaufen, prüfen Sie Paket- und Videodetails. Stellen Sie sicher, dass View-Menge, Preis, Instagram-URL und Servicetyp zum gewählten Reel oder Video passen.",
-        "framingNote": "Prüfen Sie das übermittelte Video, die View-Menge und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Views zusätzliche Reichweite, Interaktion, Follower, Verkäufe oder organisches Wachstum garantiert.",
+        "description": "Zwei Minuten Prüfung verhindern die meisten Probleme. Bestätigen Sie vor dem Bezahlen die fünf Punkte unten.",
+        "framingNote": "Die Preise sind in US-Dollar angegeben. Zahlen Sie in Euro oder einer anderen Währung, rechnet Ihre Bank den Betrag zu ihrem eigenen Kurs um.",
         "items": [
           {
             "id": "buy-instagram-views-7",
@@ -328,33 +336,33 @@
       },
       "worldwide": {
         "id": "buy-instagram-views-worldwide",
-        "title": "Ein Reel oder Video für Instagram Views wählen",
-        "description": "Instagram Views ist ein Service für Videoinhalte. Stellen Sie vor der Bestellung sicher, dass die übermittelte URL auf genau das geeignete Reel oder Video zeigt, dessen sichtbare View-Zahl Sie ändern möchten.",
-        "eyebrow": "Bereit für Instagram Views",
-        "closingNote": "Instagram Views gilt für geeignete Reels und Videos. Übermitteln Sie eine öffentliche Video-URL, halten Sie das Video zugänglich und prüfen Sie das gewählte Views-Paket vor dem Checkout.",
+        "title": "Reels, Videos und wie Instagram einen View zählt",
+        "description": "Instagram zeigt für Reels und Videobeiträge inzwischen eine einzige Zahl „Aufrufe“ an. Bei Reels wird ein View gezählt, sobald das Reel abgespielt wird, und Wiederholungen können erneut zählen – deshalb ist der View-Zähler meist höher als die Zahl der Personen, die es gesehen haben.",
+        "eyebrow": "Wissen, was Sie kaufen",
+        "closingNote": "Die ausführliche Erklärung finden Sie in unserem Learn-Center-Ratgeber (auf Englisch) dazu, wie Instagram-Reels-Views gezählt werden.",
         "cards": [
           {
             "id": "buy-instagram-views-12",
-            "title": "Eine öffentliche Video-URL verwenden",
-            "description": "Geben Sie die öffentliche URL des Reels oder Videos an, die im Checkout angefragt wird, und keinen allgemeinen Instagram-Profillink.",
+            "title": "Reels",
+            "description": "Die meisten Kunden bestellen Views für Reels. Kopieren Sie den Reel-Link (instagram.com/reel/…) über das Teilen-Menü.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-views-13",
-            "title": "Video zugänglich halten",
-            "description": "Löschen oder beschränken Sie den Zugriff auf das übermittelte Video nicht, solange eine aktive Bestellung voraussetzt, dass der Inhalt öffentlich verfügbar ist.",
+            "title": "Videobeiträge",
+            "description": "Auch Videobeiträge im Feed zeigen einen View-Zähler. Verwenden Sie dafür den Beitragslink (instagram.com/p/…).",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-views-14",
-            "title": "Views für Videoinhalte wählen",
-            "description": "Instagram Views gilt für Video-Views. Wenn Sie stattdessen Follower, Likes oder Kommentare möchten, wählen Sie den entsprechenden Instagram-Service.",
+            "title": "Views vs. Reichweite",
+            "description": "Views zählen Wiedergaben; die Reichweite zählt die einzelnen Konten, die Ihren Inhalt gesehen haben. Lesen Sie Ihre Insights mit diesem Unterschied im Hinterkopf.",
             "icon": "headphones"
           },
           {
             "id": "buy-instagram-views-15",
-            "title": "Menge und Preis prüfen",
-            "description": "Prüfen Sie das gewählte Views-Paket, die Menge und den Preis vor dem Checkout, damit die Bestellung zum gewünschten Video passt.",
+            "title": "Stories sind getrennt",
+            "description": "Story-Aufrufe sind eine andere Kennzahl und nicht Teil dieses Services.",
             "icon": "clapperboard"
           }
         ]
@@ -362,32 +370,32 @@
       "packageSizes": {
         "id": "buy-instagram-views-popular-packages",
         "title": "Beliebte Instagram-Views-Pakete",
-        "description": "Unsicher, welches Paket passt? Vergleichen Sie unten einige der Instagram-View-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle Optionen zu sehen.",
+        "description": "Eine einfache Regel: Wählen Sie ein Paket, das ein sinnvoller Schritt über dem liegt, was das Reel bereits hat. Ein Sprung von 50 auf 25.000 Views wirkt seltsam, ein Sprung von 300 auf 1.000 nicht.",
         "rows": [
           {
             "id": "buy-instagram-views-pkg-100",
             "quantity": "100 Views",
-            "recommendedFor": "Eine kleinere Option für ein Reel oder Video, bei dem Sie die sichtbare View-Zahl gemäßigt erhöhen möchten."
+            "recommendedFor": "Für ein brandneues Reel mit kaum Views oder um den Service vor einer größeren Bestellung zu testen."
           },
           {
             "id": "buy-instagram-views-pkg-500",
             "quantity": "500 Views",
-            "recommendedFor": "Eine mittlere Option für Instagram-Videoinhalte, bei denen Sie eine deutlichere Änderung der View-Zahl möchten."
+            "recommendedFor": "Für ein Reel, das bei ein paar hundert Views feststeckt und aktiver wirken soll."
           },
           {
             "id": "buy-instagram-views-pkg-1k",
             "quantity": "1.000 Views",
-            "recommendedFor": "Ein größeres Paket für ein gewähltes Reel oder Video, dem Sie in einer Bestellung eintausend Views hinzufügen möchten."
+            "recommendedFor": "Unsere beliebteste Wahl – ein solider Start für ein Launch-Reel oder einen Beitrag, den Sie bewerben."
           },
           {
             "id": "buy-instagram-views-pkg-5k",
             "quantity": "5.000 Views",
-            "recommendedFor": "Eine Option mit höherem Volumen für Instagram-Videoinhalte, bei denen Sie eine größere Steigerung der angezeigten View-Zahl möchten."
+            "recommendedFor": "Für Reels, die schon recht gut laufen und einen passend höheren Zähler brauchen."
           },
           {
             "id": "buy-instagram-views-pkg-10k",
             "quantity": "10.000+ Views",
-            "recommendedFor": "Eine Option für Reels oder Videos, bei denen Sie eine der größeren View-Mengen bei NovaLikes wählen."
+            "recommendedFor": "Für Kampagnen- oder Marken-Reels. Erwägen Sie eine schrittweise Lieferung, damit der Zähler über einen längeren Zeitraum steigt."
           }
         ]
       },
@@ -502,35 +510,35 @@
     "whyBuy": {
       "id": "buy-instagram-views-why-buy",
       "title": "Warum kaufen Menschen Instagram Views?",
-      "description": "Menschen kaufen Instagram Views für unterschiedliche Videoinhalte und Gründe. Manche nutzen View-Pakete für ein neues Reel oder Video, andere für Produktinhalte, Ankündigungen, Kampagnen oder andere Beiträge, auf denen mehr Views angezeigt werden sollen. Der Service ändert die sichtbare View-Zahl auf dem gewählten Inhalt, sagt aber keine Likes, Kommentare, Follower, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "description": "Aus den Bestellungen, die wir über die Jahre bearbeitet haben, wissen wir: Die meisten kaufen Views aus ein paar praktischen Gründen. Keiner davon lautet „viral gehen“ – das schaffen Views allein nicht.",
       "items": [
         {
           "id": "buy-instagram-views-wb-1",
-          "title": "Views zu einem neuen Reel oder Video hinzufügen",
-          "description": "Ein Views-Paket kann für kürzlich veröffentlichten Videoinhalt genutzt werden, wenn Sie die sichtbare View-Zahl erhöhen möchten."
+          "title": "Ein neues Reel wirkt leer",
+          "description": "Die ersten Menschen, die ein Reel mit 12 Views sehen, scrollen oft weiter. Ein Startzähler lässt neue Inhalte weniger verlassen wirken."
         },
         {
           "id": "buy-instagram-views-wb-2",
-          "title": "Produkt- oder Kampagneninhalte unterstützen",
-          "description": "Creator und Unternehmen können Instagram Views auf Reels oder Videos zu einem Produkt, einer Promotion, einer Ankündigung oder einer Kampagne nutzen."
+          "title": "Produkt- und Launch-Videos",
+          "description": "Kleine Unternehmen ergänzen Views bei Produktdemos und Launch-Reels, die sie auch auf ihrer Website, über WhatsApp oder in Anzeigen teilen."
         },
         {
           "id": "buy-instagram-views-wb-3",
-          "title": "Die sichtbare View-Zahl erhöhen",
-          "description": "Instagram Views gelten für das gewählte Reel oder Video und ändern nicht die auf dem Profil angezeigte Follower-Zahl."
+          "title": "Ein ungleichmäßiges Raster",
+          "description": "Hat ein Reel 30.000 Views und das nächste 300, stocken manche Creator die schwächeren auf, damit das Profil einheitlich wirkt."
         },
         {
           "id": "buy-instagram-views-wb-4",
-          "title": "Eine Menge passend zum Video wählen",
-          "description": "Unterschiedliche Paketgrößen ermöglichen es, die View-Zahl anhand des einzelnen Reels oder Videos zu wählen."
+          "title": "Vor dem Schalten von Anzeigen",
+          "description": "Manche Kunden fügen einem Reel ein kleines Paket hinzu, bevor sie es mit bezahlten Anzeigen bewerben, damit die Anzeige nicht bei null startet."
         },
         {
           "id": "buy-instagram-views-wb-5",
-          "title": "Views zusammen mit eigenen Inhalten nutzen",
-          "description": "Der Kauf von Views ändert eine sichtbare Kennzahl auf dem gewählten Inhalt. Das Video selbst, die Bildunterschrift, Veröffentlichungsentscheidungen, Antworten und andere Kontoaktivität hängen weiterhin davon ab, wie Sie Ihre Instagram-Präsenz führen."
+          "title": "Realistische Erwartungen",
+          "description": "Views ändern eine Zahl. Likes, Kommentare, Follows und Verkäufe hängen weiterhin vom Reel selbst und von den Menschen ab, die es ansehen."
         }
       ],
-      "bottomNote": "Wenn die Kennzahl, die Sie ändern möchten, die Follower-Zahl, Likes oder Kommentare statt Video-Views ist, wählen Sie den entsprechenden Instagram-Service."
+      "bottomNote": "Wenn Sie eigentlich mehr Profil-Follower, Likes auf einem Beitrag oder Kommentare möchten, sind das separate Services – vergleichen Sie die Optionen unten."
     },
     "howToBuy": {
       "id": "how-it-works",

@@ -23,7 +23,7 @@ export const aboutContent: AboutPageContent = {
     eyebrow: 'OUR STORY',
     title: 'About NovaLikes',
     description:
-      'NovaLikes is a premium social media growth platform built to help creators, businesses, and brands grow with high-quality social signals.\n\nWe focus on a clear ordering experience, secure checkout, and reliable delivery across Instagram, TikTok, Facebook, and more.',
+      'NovaLikes helps creators, businesses and brands grow on Instagram, TikTok and Facebook with clear packages, password-free ordering and a 6-month refill on every service.\n\nWe are not new to this. Our team has provided social media growth services for 7–8 years — first through earlier sites, then for more than four years as ViralMe, which became NovaLikes in 2026. The customer and order figures below include orders delivered under the ViralMe name.',
     purpose: 'Introduce NovaLikes as a trusted social media growth provider',
     primaryKeyword: 'About NovaLikes',
     trustLabels: [
@@ -52,13 +52,13 @@ export const aboutContent: AboutPageContent = {
     title: 'Our Story',
     description: 'A clearer way to buy social media growth services.',
     purpose: 'Share company journey without unverifiable historical claims',
-    body: 'NovaLikes was built to make social media growth services easier to understand and order. Creators, businesses, agencies, and brands often need a straightforward way to compare packages, submit the required public URL, complete secure checkout, and track progress — without sharing account passwords.\n\nWe focus on transparency in how packages are presented, clarity in what is required to place an order, and continuous improvement of the ordering experience.',
+    body: 'Our team has provided social media growth services for 7–8 years. We started on earlier sites, then ran ViralMe for more than four years before rebuilding it as NovaLikes in 2026 — with clearer packages, password-free ordering, order tracking and a Learn Center that explains how platform metrics really work.\n\nNovaLikes is operated by DMRUSH LIMITED, a company registered in Scotland (Company No. SC876437), with its registered office at 1/4 22 Dundasvale Court, Glasgow, G4 0XE.',
   },
   mission: {
     id: 'our-mission',
     title: 'Helping You Grow. The Right Way.',
     description:
-      'Our mission is to help you boost your social media presence safely and effectively — with clear packages, password-free ordering, and support when you need it.\n\nWe believe growth should feel simple: choose a service, pick a package, provide a public URL, and track your order with confidence.',
+      'Our mission is to make social media growth simple and honest: choose a service, add a public username or link, and track your order — no passwords and no hidden steps. Most orders start within 6–8 hours and are usually completed within 4–6 hours after they start, and you can ask for gradual delivery if you prefer a slower pace.\n\nNovaLikes is operated by DMRUSH LIMITED, registered in Scotland (Company No. SC876437), 1/4 22 Dundasvale Court, Glasgow, G4 0XE. Our services and Learn Center guides are overseen by Najaf Khan, our Social Media Growth Expert. For help with an order, email support@novalikes.com or message us on WhatsApp at +44 7454 758272.',
     purpose: 'Communicate the NovaLikes mission',
     items: [],
   },
@@ -80,19 +80,19 @@ export const aboutContent: AboutPageContent = {
       },
       {
         id: 'about-why-quality',
-        title: 'Platform-Specific Services',
-        description: 'Packages are listed by Instagram, TikTok, and Facebook metric rather than as a generic growth mix.',
+        title: 'Fast or Gradual Delivery',
+        description: 'Most orders start within 6–8 hours and finish within 4–6 hours of starting. Prefer a slower pace? Ask for gradual delivery in your order note or on WhatsApp.',
       },
       {
         id: 'about-why-support',
-        title: 'Customer Support',
-        description: 'Contact NovaLikes with package, order, or payment questions using the available support options.',
+        title: 'Real Human Support',
+        description: 'Email support@novalikes.com or message us on WhatsApp with your order ID — the same team handles questions and refill requests.',
       },
       {
         id: 'about-why-refund',
-        title: '30-Day Money-Back Guarantee',
+        title: '6-Month Refill + Money-Back',
         description:
-          'Eligible purchases are covered by our 30-Day Money-Back Guarantee under the published Refund Policy.',
+          'Every service includes a 6-month refill, and eligible purchases are covered by our 30-Day Money-Back Guarantee under the published Refund Policy.',
       },
     ],
   },
@@ -300,10 +300,10 @@ export const contactContent: ContactPageContent = {
     id: 'contact-final-cta',
     title: 'Still Need Help?',
     description:
-      "Our friendly support team is always here for you. Don't hesitate to reach out anytime!",
+      'Our support team is available 24/7 by email and WhatsApp (+44 7454 758272) and usually replies within 15 minutes.',
     purpose: 'Encourage continued support contact',
     primaryCta: {
-      label: 'Start Live Chat',
+      label: 'Send a Message',
       href: '#contact-form',
     },
   },

@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "FACEBOOK-SERVICES",
-      "title": "Facebook Follower kaufen",
-      "description": "Kaufen Sie Facebook Follower, indem Sie Paket und Menge wählen, die zu Ihrer Seite passen. NovaLikes lässt Sie verfügbare Facebook-Follower-Pakete und Preise vor der Bestellung vergleichen. Wählen Sie die gewünschte Follower-Zahl, geben Sie die korrekte öffentliche Facebook-Seiten-URL an und schließen Sie die Bestellung online ab. Ihr Facebook-Passwort ist nicht erforderlich, und nach dem Checkout können Sie verfügbare Statusinformationen über die Bestellverfolgung prüfen.",
+      "title": "Facebook Follower kaufen – für Seiten & Profile",
+      "description": "Kaufen Sie Facebook Follower für eine öffentliche Seite oder ein Profil mit aktivierten öffentlichen Followern ab 4,99 US-$. Link einfügen, Paket wählen, bezahlen – kein Passwort, kein Admin-Zugang nötig. Die meisten Bestellungen starten innerhalb von 6–8 Stunden und sind 4–6 Stunden später fertig, oder sie kommen auf Wunsch schrittweise. Jede Bestellung enthält eine 6-monatige Nachfüllung und WhatsApp-Support rund um die Uhr.",
       "purpose": "Convert for Facebook follower packages worldwide",
       "primaryKeyword": "buy Facebook followers",
       "supportingKeywords": [
@@ -32,7 +32,7 @@
       "trustLabels": [
         {
           "id": "fb-f-trust-url",
-          "label": "Nur öffentliche Facebook-Seiten-URL"
+          "label": "Seiten & Profile"
         },
         {
           "id": "fb-f-trust-password",
@@ -40,11 +40,11 @@
         },
         {
           "id": "fb-f-trust-checkout",
-          "label": "Sicherer Checkout"
+          "label": "Start in 6–8 Stunden"
         },
         {
           "id": "fb-f-trust-track",
-          "label": "Bestellverfolgung"
+          "label": "6 Monate Nachfüllung"
         }
       ],
       "visual": {
@@ -57,7 +57,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Facebook-Follower-Pakete und Preise",
-      "description": "Vergleichen Sie verfügbare Facebook-Follower-Pakete, Mengen und Preise vor der Bestellung. Wählen Sie die Follower-Zahl für Ihre öffentliche Facebook-Seite, prüfen Sie den aktuellen Paketpreis und legen Sie das gewählte Paket in den Warenkorb, wenn Sie soweit sind.",
+      "description": "Die Preise sind in US-Dollar. 1.000 Follower ist das beliebteste Paket; wählen Sie eine Größe, die zur Aktivität Ihrer Seite passt.",
       "purpose": "Present real NovaLikes.com Facebook followers packages",
       "primaryKeyword": "Facebook follower packages",
       "suggestedWordCount": 40,
@@ -266,31 +266,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-followers-why-choose",
-        "title": "Warum NovaLikes für Facebook Follower?",
-        "description": "NovaLikes macht es einfach, Facebook-Follower-Pakete vor der Bestellung zu vergleichen. Wählen Sie die Follower-Zahl für Ihre öffentliche Facebook-Seite, prüfen Sie den aktuellen Paketpreis, geben Sie die korrekte Seiten-URL an und nutzen Sie nach dem Checkout die Bestellverfolgung für verfügbare Statusinformationen.",
+        "title": "Warum Facebook Follower bei NovaLikes kaufen?",
+        "description": "Unser Team wickelt seit 7–8 Jahren Social-Media-Bestellungen ab, zuerst auf früheren Websites, dann als ViralMe und heute als NovaLikes. Für Facebook Follower heißt das: klare Bedingungen statt vager Versprechen.",
         "items": [
           {
             "id": "buy-facebook-followers-0",
-            "title": "Mehrere Follower-Mengen",
-            "description": "Vergleichen Sie die verfügbaren Facebook-Follower-Mengen und wählen Sie das Paket, das zur gewünschten Follower-Zahl passt.",
+            "title": "Seiten und Profile",
+            "description": "Follower können an eine öffentliche Facebook-Seite oder an ein persönliches Profil mit öffentlichen Followern gehen. Senden Sie den Link, den Rest übernehmen wir.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-followers-1",
-            "title": "Nur öffentliche Facebook-Seiten-URL",
-            "description": "Geben Sie die korrekte öffentliche Facebook-Seiten-URL der Seite an, der die Follower hinzugefügt werden sollen. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "Start in 6–8 Stunden",
+            "description": "Die meisten Facebook-Follower-Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung und sind 4–6 Stunden nach dem Start fertig.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-followers-2",
-            "title": "Vor dem Checkout prüfen",
-            "description": "Prüfen Sie die gewählte Follower-Menge und den aktuellen Paketpreis, bevor Sie die Bestellung in den Warenkorb legen und den Checkout abschließen.",
+            "title": "Schrittweise auf Wunsch",
+            "description": "Soll die Zahl langsam steigen? Geben Sie es in der Notiz beim Bezahlen oder per WhatsApp an, und wir verteilen die Follower über einen längeren Zeitraum.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-followers-3",
-            "title": "Bestellverfolgung",
-            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer Facebook-Follower-Bestellung zu prüfen.",
+            "title": "6 Monate Nachfüllung",
+            "description": "Sinkt Ihre Follower-Zahl innerhalb von 6 Monaten nach der Lieferung, senden Sie uns Ihre Bestellnummer per WhatsApp, und wir füllen sie wieder auf.",
             "icon": "headphones"
           }
         ]
@@ -300,66 +300,74 @@
       "canYouBuy": {
         "id": "buy-facebook-followers-can-you-buy",
         "title": "Kann man Facebook Follower kaufen?",
-        "description": "Ja. Facebook-Follower-Pakete können über Online-Follower-Services gekauft werden. Bei NovaLikes wählen Sie ein verfügbares Follower-Paket, geben die öffentliche Facebook-Seiten-URL der gewünschten Seite an und schließen die Bestellung über die Website ab.",
+        "description": "Ja. Sie können Follower für eine öffentliche Facebook-Seite oder ein persönliches Profil mit aktivierten öffentlichen Followern kaufen. Fügen Sie den Seiten- oder Profillink ein, wählen Sie ein Paket und bezahlen Sie in US-Dollar. Nur die Follower-Zahl ändert sich – Beiträge, Seiten-Likes und Reaktionen bleiben, wie sie sind.",
         "cards": [
           {
             "id": "buy-facebook-followers-4",
-            "title": "Was eine Facebook-Follower-Bestellung ändert",
-            "description": "Eine Facebook-Follower-Bestellung gilt für die Follower-Zahl der öffentlichen Facebook-Seite, die mit der Bestellung übermittelt wird. Sie fügt nicht automatisch Seiten-Likes oder Likes zu einzelnen Beiträgen hinzu.",
+            "title": "Was sich ändert",
+            "description": "Die Follower-Zahl der Seite oder des Profils steigt um die Paketmenge. Diese Follower können Ihre öffentlichen Beiträge anschließend in ihrem Feed sehen.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-followers-5",
-            "title": "Was Sie für eine Bestellung brauchen",
-            "description": "Sie brauchen die korrekte öffentliche Facebook-Seiten-URL und das Follower-Paket, das Sie kaufen möchten. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "Was wir brauchen",
+            "description": "Den öffentlichen Link zur Seite oder zum Profil (facebook.com/ihreseite). Wir fragen nie nach Ihrem Facebook-Passwort oder Admin-Zugang.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-followers-6",
-            "title": "Was Facebook Follower nicht enthalten",
-            "description": "Follower sind getrennt von Facebook Seiten-Likes und Beitrags-Likes. Eine Follower-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+            "title": "Wer die Follower sind",
+            "description": "Die Follower stammen von realistisch wirkenden Konten. Wir behaupten nicht, dass es aktive Personen sind, die Ihre Beiträge kommentieren, darauf reagieren oder sie teilen.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie Facebook Follower gewählt, die richtige Follower-Menge bestimmt und die URL der genauen öffentlichen Facebook-Seite angegeben haben, der die Follower hinzugefügt werden sollen."
+        "closingNote": "Stellen Sie bei einem persönlichen Profil vor der Bestellung „Wer kann dir folgen?“ unter Einstellungen und Privatsphäre → Follower und öffentliche Inhalte auf „Öffentlich“, sonst kann die Bestellung nicht starten."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-followers-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Helfen gekaufte Follower einer Facebook-Seite?",
+        "description": "Sie helfen beim Vertrauen auf den ersten Blick, nicht bei der Reichweite. Facebook entscheidet vor allem danach, wie Menschen mit einem Beitrag interagieren – Reaktionen, Kommentare, Shares und Verweildauer –, wer ihn sieht. Eine Seite oder ein Profil mit einer soliden Follower-Zahl wirkt einfach etablierter auf jemanden, der entscheidet, ob er einem Unternehmen, Creator oder einer neuen Marke vertraut.",
+        "helpTitle": "Wo Follower helfen",
+        "helpItems": [
+          "Neue Unternehmensseiten, die Kunden vor einem Anruf, einer Buchung oder einem Kauf prüfen.",
+          "Creator und Personen des öffentlichen Lebens, die in den professionellen Modus wechseln und mit kleinem Publikum starten.",
+          "Seiten, die von Ihrer Website, Ihrem Google-Profil oder aus Anzeigen verlinkt sind und deren Zahl Besucher sofort beurteilen."
+        ],
+        "limitTitle": "Wo nicht",
+        "limitItems": [
+          "Organische Reichweite: Follower, die nie interagieren, bringen Facebook nicht dazu, Ihre Beiträge mehr Menschen zu zeigen.",
+          "Die Monetarisierungstools von Facebook, die echtes Engagement betrachten und eigene Voraussetzungen haben.",
+          "Eine Seite mit 10.000 Followern und keiner Reaktion auf ihren Beiträgen kann eher weniger glaubwürdig wirken."
+        ],
+        "closingNote": "Unser Learn-Center-Ratgeber (auf Englisch) zur Reichweite von Facebook-Seiten erklärt, was Ihre Beiträge tatsächlich in mehr Feeds bringt."
       },
       "whatHappens": {
         "id": "buy-facebook-followers-what-happens",
         "title": "Was passiert nach dem Kauf von Facebook Followern?",
-        "description": "Nach einer Facebook-Follower-Bestellung werden das Follower-Paket und die übermittelte öffentliche Facebook-Seiten-URL genutzt, um die Bestellung für die gewählte Seite zu bearbeiten. Lassen Sie die Seite dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "description": "So läuft es nach der Zahlung für Facebook Follower ab.",
         "steps": [
           {
             "id": "buy-facebook-followers-th-1",
-            "title": "Ihre Bestelldaten werden geprüft",
-            "description": "Das gewählte Follower-Paket, die Menge und die übermittelte Facebook-Seiten-URL werden Ihrer Bestellung zugeordnet, damit die Anfrage für die vorgesehene Seite bearbeitet werden kann."
+            "title": "Ihr Link wird zugeordnet",
+            "description": "Der eingereichte Seiten- oder Profillink wird mit Ihrer Bestellnummer verknüpft. Bemerken Sie einen falschen Link, schreiben Sie uns auf WhatsApp, bevor die Lieferung startet."
           },
           {
             "id": "buy-facebook-followers-th-2",
-            "title": "Follower gehen an die übermittelte Seite",
-            "description": "Die Bestellung gilt für die Facebook-Seite, die mit der angegebenen URL verbunden ist. Prüfen Sie die Seiten-URL sorgfältig, bevor Sie den Checkout abschließen."
+            "title": "Follower starten in 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung. Haben Sie ein langsameres Tempo gewünscht, werden die Follower über einen längeren Zeitraum hinzugefügt."
           },
           {
             "id": "buy-facebook-followers-th-3",
-            "title": "Die Bearbeitungszeit kann variieren",
-            "description": "Die benötigte Zeit kann je nach Follower-Menge und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+            "title": "Die meisten sind in 4–6 Stunden fertig",
+            "description": "Nach dem Start ist eine Standardbestellung meist innerhalb von 4–6 Stunden abgeschlossen. Den Fortschritt sehen Sie auf der Seite „Bestellung verfolgen“."
           },
           {
             "id": "buy-facebook-followers-th-4",
-            "title": "Bestellstatus prüfen",
-            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+            "title": "Nachfüllschutz beginnt",
+            "description": "Ihre 6-monatige Nachfüllung beginnt am Tag des Lieferabschlusses. Sinkt die Zahl, senden Sie Ihre Bestellnummer per WhatsApp."
           }
         ],
-        "closingNote": "Vermeiden Sie es, die übermittelte Seite zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+        "closingNote": "Lassen Sie die Seite veröffentlicht und die Follower-Einstellung des Profils auf „Öffentlich“, bis die Lieferung abgeschlossen ist, und ändern Sie Benutzernamen oder URL der Seite weder während der Bestellung noch während der Nachfüllfrist."
       },
       "serviceCompare": {
         "id": "buy-facebook-followers-service-compare",
@@ -391,8 +399,8 @@
       "beforeBuying": {
         "id": "buy-facebook-followers-before-buying",
         "title": "Was Sie vor dem Kauf von Facebook Followern prüfen sollten",
-        "description": "Bevor Sie Facebook Follower kaufen, prüfen Sie Paket- und Seitendetails. Stellen Sie sicher, dass Follower-Menge, Preis, Facebook-Seiten-URL und Service zur gewählten Seite passen.",
-        "framingNote": "Prüfen Sie die übermittelte Facebook-Seiten-URL, die Follower-Menge und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Followern zusätzliche Seiten-Likes, Beitrags-Likes, Interaktion, Reichweite, Verkäufe oder organisches Wachstum garantiert.",
+        "description": "Die meisten festhängenden Bestellungen liegen am Link oder an einer Datenschutzeinstellung. Prüfen Sie zuerst diese fünf Punkte.",
+        "framingNote": "Die Preise sind in US-Dollar. Zahlen Sie in einer anderen Währung, rechnet Ihre Bank den Betrag um.",
         "items": [
           {
             "id": "buy-facebook-followers-7",
@@ -428,33 +436,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-followers-worldwide",
-        "title": "Ihre Facebook-Seite auf eine Follower-Bestellung vorbereiten",
-        "description": "Facebook Follower ist ein Service auf Seitenebene. Bestätigen Sie vor der Bestellung die geeignete öffentliche Facebook-Seite und die gewünschte Follower-Menge.",
-        "eyebrow": "Bereit für Facebook Follower",
-        "closingNote": "Facebook Follower gilt für eine öffentliche Facebook-Seite. Übermitteln Sie die korrekte Seite, halten Sie sie zugänglich und prüfen Sie das Follower-Paket vor dem Checkout.",
+        "title": "Follower, Seiten-Likes und heutige Facebook-Seiten",
+        "description": "Facebook hat Seiten in Richtung Follower umgestellt. Bei der neueren Seitenversion ist die Follower-Zahl die wichtigste öffentliche Zahl, und Meta zeigt in der Meta Business Suite inzwischen Follows statt Seiten-Likes.",
+        "eyebrow": "Die richtige Kennzahl wählen",
+        "closingNote": "Einen direkten Vergleich finden Sie in unserem Learn-Center-Ratgeber (auf Englisch) zu Facebook Followern, Seiten-Likes und Beitrags-Likes.",
         "cards": [
           {
             "id": "buy-facebook-followers-12",
-            "title": "Die korrekte Facebook-Seite verwenden",
-            "description": "Geben Sie die öffentlichen Facebook-Seitenangaben an, die im Checkout angefragt werden. Übermitteln Sie beim Bestellen von Seiten-Followern keinen einzelnen Facebook-Beitrag.",
+            "title": "Neuere Seiten zeigen Follower",
+            "description": "Zeigt Ihre Seite eine Follower-Zahl neben dem Namen, sehen Besucher genau diese Zahl. Dann ist dies der richtige Service.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-followers-13",
-            "title": "Seite zugänglich halten",
-            "description": "Lassen Sie die übermittelte Seite dort, wo es erforderlich ist, während der Bearbeitung der Follower-Bestellung öffentlich zugänglich.",
+            "title": "Persönliche Profile",
+            "description": "Profile zeigen Follower, sobald „Wer kann dir folgen?“ auf „Öffentlich“ steht. Der professionelle Modus macht die Follower-Zahl sichtbarer.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-followers-14",
-            "title": "Follower und Seiten-Likes sind unterschiedlich",
-            "description": "Facebook Follower gilt für die Follower-Zahl der Seite. Facebook Seiten-Likes ist ein eigener Service für die Seiten-Like-Kennzahl.",
+            "title": "Ältere Seitenlayouts",
+            "description": "Manche älteren Seiten zeigen noch Seiten-Likes. Ist das die Zahl auf Ihrer Seite, vergleichen Sie unseren Service für Facebook-Seiten-Likes.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-followers-15",
-            "title": "Paket prüfen",
-            "description": "Prüfen Sie Follower-Menge, Seitenangaben und Preis, bevor Sie den Checkout abschließen.",
+            "title": "Beiträge sind getrennt",
+            "description": "Reaktionen auf einen einzelnen Beitrag werden separat gezählt. Dafür nutzen Sie Facebook-Beitrags-Likes mit dem Beitragslink.",
             "icon": "clapperboard"
           }
         ]
@@ -462,32 +470,32 @@
       "packageSizes": {
         "id": "buy-facebook-followers-popular-packages",
         "title": "Beliebte Facebook-Follower-Pakete",
-        "description": "Vergleichen Sie unten einige der Facebook-Follower-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle verfügbaren Paketoptionen zu sehen.",
+        "description": "Passen Sie das Paket an Größe und Aktivität der Seite an. Eine lokale Unternehmensseite mit 150 Followern wirkt mit ein paar hundert mehr natürlich; eine, die ohne Beitragsaktivität auf 10.000 springt, nicht.",
         "rows": [
           {
             "id": "fb-f-100",
             "quantity": "100 Follower",
-            "recommendedFor": "Ein kleineres Paket für eine öffentliche Facebook-Seite, der Sie einhundert Follower hinzufügen möchten."
+            "recommendedFor": "Für brandneue Seiten und Profile oder um den Service zuerst zu testen."
           },
           {
             "id": "fb-f-500",
             "quantity": "500 Follower",
-            "recommendedFor": "Eine kleine bis mittlere Option für eine Facebook-Seite, der Sie fünfhundert Follower hinzufügen möchten."
+            "recommendedFor": "Für kleine Unternehmen und lokale Seiten, die auf neue Kunden etabliert wirken sollen."
           },
           {
             "id": "fb-f-1000",
             "quantity": "1.000 Follower",
-            "recommendedFor": "Ein mittleres Paket für eine öffentliche Facebook-Seite, der Sie eintausend Follower hinzufügen möchten."
+            "recommendedFor": "Unser beliebtestes Paket – passt zu aktiven Seiten und Creatorn, die bereits regelmäßig posten."
           },
           {
             "id": "fb-f-5000",
             "quantity": "5.000 Follower",
-            "recommendedFor": "Eine größere Option für eine Facebook-Seite, der Sie fünftausend Follower hinzufügen möchten."
+            "recommendedFor": "Für wachsende Marken und Personen des öffentlichen Lebens mit stabilem Engagement. Schrittweise Lieferung ist sinnvoll."
           },
           {
             "id": "fb-f-10000",
             "quantity": "10.000 Follower",
-            "recommendedFor": "Ein Paket mit höherem Volumen für eine öffentliche Facebook-Seite, der Sie zehntausend Follower hinzufügen möchten."
+            "recommendedFor": "Für große Markenseiten. Wünschen Sie eine schrittweise Lieferung, damit die Zahl über mehrere Tage steigt."
           }
         ]
       },
@@ -597,35 +605,35 @@
     "whyBuy": {
       "id": "buy-facebook-followers-why-buy",
       "title": "Warum kaufen Menschen Facebook Follower?",
-      "description": "Menschen kaufen Facebook Follower aus unterschiedlichen Gründen. Manche möchten die auf einer Facebook-Seite angezeigte Follower-Zahl erhöhen, andere wählen ein Follower-Paket für eine Seite zu einem Unternehmen, einer Marke, einer Kampagne oder laufender Content-Aktivität. Der Service ändert die Follower-Kennzahl auf der gewählten Seite, sagt aber keine zusätzlichen Likes, Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "description": "Das sind die Gründe, die Facebook-Kunden uns am häufigsten nennen – bei allen geht es darum, wie eine Seite oder ein Profil auf Menschen wirkt, die entscheiden, ob sie vertrauen.",
       "items": [
         {
           "id": "buy-facebook-followers-wb-1",
-          "title": "Die sichtbare Follower-Zahl erhöhen",
-          "description": "Ein Facebook-Follower-Paket kann genutzt werden, wenn Sie die auf einer bestimmten öffentlichen Facebook-Seite angezeigte Follower-Zahl erhöhen möchten."
+          "title": "Eine neue Unternehmensseite",
+          "description": "Kunden prüfen oft die Facebook-Seite eines Unternehmens, bevor sie anrufen oder buchen. Eine Seite mit einer Handvoll Followern kann geschlossen oder brandneu wirken."
         },
         {
           "id": "buy-facebook-followers-wb-2",
-          "title": "Follower rund um Launch oder Kampagne nutzen",
-          "description": "Unternehmen und Seiteninhaber können ein Follower-Paket wählen, während sie an einem Launch, einer Kampagne, einer Ankündigung oder anderer Facebook-Aktivität arbeiten."
+          "title": "Wechsel in den professionellen Modus",
+          "description": "Creator, die den professionellen Modus aktivieren, starten mit wenigen öffentlichen Followern. Eine Startzahl lässt das Profil bereit für neue Besucher wirken."
         },
         {
           "id": "buy-facebook-followers-wb-3",
-          "title": "Fokus auf die Follower-Kennzahl",
-          "description": "Facebook Follower gilt für die Follower-Zahl der gewählten Seite. Es fügt nicht automatisch Seiten-Likes oder Likes zu einzelnen Facebook-Beiträgen hinzu."
+          "title": "Umzug auf eine neue Seite",
+          "description": "Unternehmen, die sich neu aufstellen oder eine neue Seite anlegen, geben ihr manchmal eine Startzahl, während bestehende Kunden umziehen."
         },
         {
           "id": "buy-facebook-followers-wb-4",
-          "title": "Die gewünschte Menge wählen",
-          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Anzahl Facebook Follower zu wählen, die Sie für die übermittelte Seite bestellen möchten."
+          "title": "Vor dem Schalten von Anzeigen",
+          "description": "Manche Kunden ergänzen Follower vor dem Werben, damit Menschen, die über eine Anzeige kommen, auf einer etabliert wirkenden Seite landen."
         },
         {
           "id": "buy-facebook-followers-wb-5",
-          "title": "Follower zusammen mit Ihren Inhalten nutzen",
-          "description": "Der Kauf von Followern ersetzt nicht das Veröffentlichen und Führen eigener Facebook-Inhalte. Beiträge, Antworten, Seiteninformationen und andere Aktivität hängen weiterhin davon ab, wie Sie Ihre Seite führen."
+          "title": "Realistisch bleiben",
+          "description": "Follower ändern eine Zahl. Reichweite, Nachrichten und Verkäufe hängen weiterhin von Ihren Beiträgen ab und davon, wie Menschen darauf reagieren."
         }
       ],
-      "bottomNote": "Wenn Seiten-Likes oder Beitrags-Likes die Kennzahl sind, die Sie stattdessen ändern möchten, wählen Sie den entsprechenden Facebook-Service statt eines Follower-Pakets."
+      "bottomNote": "Brauchen Sie stattdessen Reaktionen auf einen bestimmten Beitrag oder Seiten-Likes für eine ältere Seite? Vergleichen Sie die anderen Facebook-Services unten."
     },
     "howToBuy": {
       "id": "how-it-works",

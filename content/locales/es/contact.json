@@ -53,9 +53,9 @@
   },
   "finalCta": {
     "title": "¿Todavía necesitas ayuda?",
-    "description": "Nuestro equipo de soporte está siempre disponible. ¡No dudes en escribirnos cuando quieras!",
+    "description": "Nuestro equipo de soporte está disponible 24/7 por correo y WhatsApp (+44 7454 758272) y suele responder en 15 minutos.",
     "primaryCta": {
-      "label": "Iniciar chat en vivo"
+      "label": "Enviar un mensaje"
     }
   },
   "chrome": {
@@ -72,13 +72,13 @@
     "messageRequired": "El mensaje es obligatorio.",
     "messageMin": "El mensaje debe tener al menos 20 caracteres.",
     "emailTitle": "Soporte por correo",
-    "emailReply": "Respondemos en minutos",
-    "liveChatTitle": "Chat en vivo",
-    "liveChatAvailable": "Disponible 24/7 en nuestro sitio",
-    "liveChatHelp": "Obtén ayuda inmediata de nuestro equipo",
+    "emailReply": "Solemos responder en 15 minutos",
+    "liveChatTitle": "Soporte por WhatsApp",
+    "liveChatAvailable": "+44 7454 758272 — disponible 24/7",
+    "liveChatHelp": "Escríbenos para ayuda con pedidos y solicitudes de recarga",
     "quickTitle": "Soporte rápido",
     "quickHours": "Lun – Dom: 24/7",
-    "quickReach": "Escríbenos en cualquier momento a través del formulario de contacto",
+    "quickReach": "Escríbenos en cualquier momento por correo, WhatsApp o el formulario de contacto",
     "responseTitle": "Tiempo de respuesta",
     "responseAverage": "Tiempo medio de respuesta:",
     "responseTime": "Menos de 15 minutos",

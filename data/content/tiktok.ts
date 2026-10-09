@@ -18,9 +18,9 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'TIKTOK SERVICES',
-      title: 'Buy TikTok Followers',
+      title: 'Buy TikTok Followers – No Password Needed',
       description:
-        'Buy TikTok followers by choosing the package and quantity that fits your account. NovaLikes lets you compare available follower packages and prices before ordering. Select the number of TikTok followers you want, provide the correct public TikTok username, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy TikTok followers for any public account from $2.99. Enter your username, choose a package and pay — we never ask for your password. Most orders start within 6–8 hours and finish 4–6 hours later, or arrive gradually on request. Every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for TikTok follower packages worldwide',
       primaryKeyword: 'buy TikTok followers',
       supportingKeywords: [
@@ -40,10 +40,10 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
         href: '#how-it-works',
       },
       trustLabels: [
-        { id: 'tt-f-trust-public', label: 'Public Username Only' },
+        { id: 'tt-f-trust-public', label: 'Username Only' },
         { id: 'tt-f-trust-password', label: 'No Password Required' },
-        { id: 'tt-f-trust-checkout', label: 'Secure Checkout' },
-        { id: 'tt-f-trust-track', label: 'Order Tracking' },
+        { id: 'tt-f-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'tt-f-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/tiktok-followers/tiktok-followers-hero.webp',
@@ -56,7 +56,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'TikTok Followers Packages & Pricing',
       description:
-        'Compare the available TikTok followers packages, quantities, and prices before ordering. Choose the number of followers you want for your public TikTok profile, review the current package price, and add your selected option to the cart when you are ready.',
+        'Prices are in US dollars. 1,000 followers is the most popular package; pick a size that fits the views your videos already get.',
       purpose: 'Present real NovaLikes.com TikTok follower packages',
       primaryKeyword: 'TikTok follower packages',
       suggestedWordCount: 45,
@@ -254,9 +254,9 @@ function buildBuyTikTokLikesContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'TIKTOK SERVICES',
-      title: 'Buy TikTok Likes',
+      title: 'Buy TikTok Likes for Videos',
       description:
-        'Buy TikTok likes by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok likes packages and prices before ordering. Select the number of likes you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy TikTok likes for any public video from $2.99. Copy the video link, pick a quantity and pay — no password, no login. Most orders start within 6–8 hours and finish 4–6 hours later, or arrive gradually if you ask. Every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for TikTok likes packages worldwide',
       primaryKeyword: 'buy TikTok likes',
       supportingKeywords: [
@@ -275,10 +275,10 @@ function buildBuyTikTokLikesContent(): ServiceContent {
         href: '#how-it-works',
       },
       trustLabels: [
-        { id: 'tt-l-trust-url', label: 'Public Video Link Only' },
+        { id: 'tt-l-trust-url', label: 'Video Link Only' },
         { id: 'tt-l-trust-password', label: 'No Password Required' },
-        { id: 'tt-l-trust-checkout', label: 'Secure Checkout' },
-        { id: 'tt-l-trust-track', label: 'Order Tracking' },
+        { id: 'tt-l-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'tt-l-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/tiktok-likes/tiktok-likes-hero.webp',
@@ -291,7 +291,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'TikTok Likes Packages & Pricing',
       description:
-        'Compare the available TikTok likes packages, quantities, and prices before ordering. Choose the number of likes you want for your public TikTok video, review the current package price, and add your selected option to the cart when you are ready.',
+        'Prices are in US dollars. 1,000 likes is the most popular package; choose a size that keeps likes below the video’s views.',
       purpose: 'Present real NovaLikes.com TikTok likes packages',
       primaryKeyword: 'TikTok likes packages',
       suggestedWordCount: 55,
@@ -502,9 +502,9 @@ function buildBuyTikTokViewsContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'TIKTOK SERVICES',
-      title: 'Buy TikTok Views',
+      title: 'Buy TikTok Views for Videos',
       description:
-        'Buy TikTok views by choosing the package and quantity that fits your video. NovaLikes lets you compare available TikTok views packages and prices before ordering. Select the number of views you want, provide the correct public TikTok video link, and complete your order online. Your TikTok password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy TikTok views for any public video, from $1.99 for 1,000 High Quality views or with our Premium option. Copy the video link, choose a package and pay — no password needed. Most orders start within 6–8 hours and finish 4–6 hours later, or arrive gradually if you ask. Every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for TikTok views packages worldwide',
       primaryKeyword: 'buy TikTok views',
       supportingKeywords: [
@@ -524,10 +524,10 @@ function buildBuyTikTokViewsContent(): ServiceContent {
         href: '#how-it-works',
       },
       trustLabels: [
-        { id: 'tt-v-trust-url', label: 'Public Video Link Only' },
+        { id: 'tt-v-trust-url', label: 'High Quality or Premium' },
         { id: 'tt-v-trust-password', label: 'No Password Required' },
-        { id: 'tt-v-trust-checkout', label: 'Secure Checkout' },
-        { id: 'tt-v-trust-track', label: 'Order Tracking' },
+        { id: 'tt-v-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'tt-v-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/tiktok-views/tiktok-views-hero.webp',
@@ -540,7 +540,7 @@ function buildBuyTikTokViewsContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'TikTok Views Packages & Pricing',
       description:
-        'Compare the available TikTok views packages, quantities, and prices before ordering. Choose the number of views you want for your public TikTok video, review the available package option and current price, and add your selected package to the cart when you are ready.',
+        'Prices are in US dollars. Switch between High Quality and Premium to see each set of packages; 50,000 High Quality and 10,000 Premium views are the most popular choices.',
       purpose: 'Present real NovaLikes.com TikTok views packages',
       primaryKeyword: 'TikTok views packages',
       suggestedWordCount: 55,

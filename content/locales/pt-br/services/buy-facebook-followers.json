@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIÇOS DO FACEBOOK",
-      "title": "Comprar seguidores no Facebook",
-      "description": "Compre seguidores no Facebook escolhendo o pacote e a quantidade que combinam com a sua Página. A NovaLikes permite comparar os pacotes e os preços de seguidores no Facebook disponíveis antes de pedir. Selecione o número de seguidores que quer, envie a URL pública correta da Página do Facebook e conclua o pedido online. A senha do Facebook não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "title": "Comprar seguidores no Facebook para Páginas e perfis",
+      "description": "Compre seguidores no Facebook para uma Página pública ou um perfil com seguidores públicos ativados, a partir de US$ 4,99. Cole o link, escolha um pacote e pague, sem senha nem acesso de administrador. A maioria dos pedidos começa em 6–8 horas e termina 4–6 horas depois, ou chega de forma gradual se você pedir. Todo pedido inclui reposição de 6 meses e suporte pelo WhatsApp 24/7.",
       "purpose": "Convert for Facebook follower packages worldwide",
       "primaryKeyword": "buy Facebook followers",
       "supportingKeywords": [
@@ -32,7 +32,7 @@
       "trustLabels": [
         {
           "id": "fb-f-trust-url",
-          "label": "Somente URL de Página pública do Facebook"
+          "label": "Páginas e perfis"
         },
         {
           "id": "fb-f-trust-password",
@@ -40,11 +40,11 @@
         },
         {
           "id": "fb-f-trust-checkout",
-          "label": "Checkout seguro"
+          "label": "Começa em 6–8 horas"
         },
         {
           "id": "fb-f-trust-track",
-          "label": "Acompanhamento do pedido"
+          "label": "Reposição de 6 meses"
         }
       ],
       "visual": {
@@ -57,7 +57,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacotes e preços de seguidores no Facebook",
-      "description": "Compare os pacotes, as quantidades e os preços de seguidores no Facebook disponíveis antes de pedir. Escolha o número de seguidores que quer para a Página pública do Facebook, revise o preço atual do pacote e adicione o pacote selecionado ao carrinho quando estiver pronto.",
+      "description": "Os preços estão em dólares americanos. 1.000 seguidores é o pacote mais popular; escolha um tamanho que combine com a atividade da sua Página.",
       "purpose": "Present real NovaLikes.com Facebook followers packages",
       "primaryKeyword": "Facebook follower packages",
       "suggestedWordCount": 40,
@@ -266,31 +266,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-followers-why-choose",
-        "title": "Por que escolher a NovaLikes para seguidores no Facebook?",
-        "description": "A NovaLikes facilita comparar pacotes de seguidores no Facebook antes de pedir. Escolha o número de seguidores que quer para a Página pública do Facebook, revise o preço atual do pacote, envie a URL correta da Página e use o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+        "title": "Por que comprar seguidores no Facebook na NovaLikes?",
+        "description": "Nossa equipe cuida de pedidos para redes sociais há 7–8 anos, primeiro em outros sites, depois como ViralMe e agora como NovaLikes. Para seguidores no Facebook, isso significa condições claras em vez de promessas vagas.",
         "items": [
           {
             "id": "buy-facebook-followers-0",
-            "title": "Várias quantidades de seguidores",
-            "description": "Compare as quantidades de seguidores no Facebook disponíveis e escolha o pacote que corresponde ao número de seguidores que você quer pedir.",
+            "title": "Páginas e perfis",
+            "description": "Os seguidores podem ir para uma Página pública do Facebook ou para um perfil pessoal que permita seguidores públicos. Envie o link e a gente cuida do resto.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-followers-1",
-            "title": "Somente URL de Página pública do Facebook",
-            "description": "Envie a URL pública correta da Página do Facebook onde você quer que os seguidores sejam adicionados. A senha do Facebook não é necessária.",
+            "title": "Começa em 6–8 horas",
+            "description": "A maioria dos pedidos de seguidores no Facebook começa em até 6–8 horas após o pagamento e termina 4–6 horas depois de começar.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-followers-2",
-            "title": "Revise antes do checkout",
-            "description": "Confira a quantidade de seguidores selecionada e o preço atual do pacote antes de adicionar o pedido ao carrinho e concluir o checkout.",
+            "title": "Gradual sob pedido",
+            "description": "Quer que o número suba devagar? Peça na observação do checkout ou no WhatsApp e distribuímos os seguidores por um período mais longo.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-followers-3",
-            "title": "Acompanhamento do pedido",
-            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de seguidores no Facebook.",
+            "title": "Reposição de 6 meses",
+            "description": "Se o seu número de seguidores cair em até 6 meses após a entrega, envie o número do pedido pelo WhatsApp e completamos de novo.",
             "icon": "headphones"
           }
         ]
@@ -300,66 +300,74 @@
       "canYouBuy": {
         "id": "buy-facebook-followers-can-you-buy",
         "title": "Dá para comprar seguidores no Facebook?",
-        "description": "Sim. Pacotes de seguidores no Facebook podem ser comprados por serviços online de seguidores. Na NovaLikes, você escolhe um pacote de seguidores disponível, envia a URL pública da Página do Facebook que quer usar e conclui o pedido pelo site.",
+        "description": "Sim. Você pode comprar seguidores para uma Página pública do Facebook ou para um perfil pessoal com seguidores públicos ativados. Cole o link da Página ou do perfil, escolha um pacote e pague em dólares americanos. Só o número de seguidores muda; seus posts, as curtidas da Página e as reações continuam iguais.",
         "cards": [
           {
             "id": "buy-facebook-followers-4",
-            "title": "O que um pedido de seguidores no Facebook altera",
-            "description": "Um pedido de seguidores no Facebook se aplica à contagem de seguidores na Página pública do Facebook enviada com o pedido. Ele não acrescenta automaticamente curtidas de Página nem curtidas em publicações individuais.",
+            "title": "O que muda",
+            "description": "O número de seguidores mostrado na Página ou no perfil sobe conforme o pacote. Esses seguidores podem depois ver seus posts públicos no feed.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-followers-5",
-            "title": "O que você precisa para fazer um pedido",
-            "description": "Você precisa da URL pública correta da Página do Facebook e do pacote de seguidores que quer comprar. A senha do Facebook não é necessária.",
+            "title": "O que precisamos",
+            "description": "O link público da Página ou do perfil (facebook.com/suapagina). Nunca pedimos sua senha do Facebook nem acesso de administrador.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-followers-6",
-            "title": "O que os seguidores no Facebook não incluem",
-            "description": "Seguidores são separados de curtidas de Página e de curtidas de publicação no Facebook. Pedir seguidores não acrescenta automaticamente essas outras métricas nem garante engajamento, alcance, vendas ou crescimento orgânico extras.",
+            "title": "Quem são os seguidores",
+            "description": "Os seguidores vêm de contas com aparência realista. Não afirmamos que sejam pessoas ativas que vão comentar, reagir ou compartilhar seus posts.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes do checkout, garanta que você selecionou seguidores no Facebook, escolheu a quantidade correta de seguidores e enviou a URL exatamente da Página pública do Facebook onde quer que os seguidores sejam adicionados."
+        "closingNote": "Para um perfil pessoal, defina “Quem pode seguir você?” como Público em Configurações e privacidade → Seguidores e conteúdo público antes de pedir, ou o pedido não consegue começar."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-followers-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Seguidores comprados ajudam uma Página do Facebook?",
+        "description": "Eles ajudam na confiança à primeira vista, não no alcance. O Facebook decide quem vê cada post principalmente pela forma como as pessoas interagem: reações, comentários, compartilhamentos e tempo gasto. Uma Página ou perfil com um bom número de seguidores simplesmente parece mais estabelecido para quem está decidindo se confia em uma empresa, um criador ou uma marca nova.",
+        "helpTitle": "Onde os seguidores ajudam",
+        "helpItems": [
+          "Páginas de empresas novas que os clientes conferem antes de ligar, agendar ou comprar.",
+          "Criadores e figuras públicas que ativam o modo profissional e começam com um público pequeno.",
+          "Páginas linkadas no seu site, no perfil do Google ou em anúncios, onde os visitantes avaliam o número na hora."
+        ],
+        "limitTitle": "Onde não ajudam",
+        "limitItems": [
+          "Alcance orgânico: seguidores que nunca interagem não fazem o Facebook mostrar seus posts para mais gente.",
+          "As ferramentas de monetização do Facebook, que olham o engajamento real e seguem seus próprios requisitos.",
+          "Uma Página com 10.000 seguidores e nenhuma reação nos posts pode parecer menos confiável, não mais."
+        ],
+        "closingNote": "Nosso guia do Learn Center (em inglês) sobre como funciona o alcance das Páginas do Facebook explica o que realmente leva seus posts a mais feeds."
       },
       "whatHappens": {
         "id": "buy-facebook-followers-what-happens",
         "title": "O que acontece depois que você compra seguidores no Facebook?",
-        "description": "Depois de fazer um pedido de seguidores no Facebook, o pacote de seguidores e a URL pública da Página do Facebook enviados são usados para processar o pedido na Página selecionada. Mantenha a Página acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "description": "Veja o que acontece depois que você paga por seguidores no Facebook.",
         "steps": [
           {
             "id": "buy-facebook-followers-th-1",
-            "title": "Os dados do pedido são conferidos",
-            "description": "O pacote de seguidores, a quantidade e a URL da Página do Facebook enviados são associados ao pedido para que a solicitação possa ser processada na Página pretendida."
+            "title": "Seu link é vinculado",
+            "description": "O link da Página ou do perfil enviado fica ligado ao número do pedido. Se notar um link errado, fale com a gente no WhatsApp antes de a entrega começar."
           },
           {
             "id": "buy-facebook-followers-th-2",
-            "title": "Os seguidores vão para a Página enviada",
-            "description": "O pedido se aplica à Página do Facebook ligada à URL que você enviou. Confira a URL da Página com cuidado antes de concluir o checkout."
+            "title": "Os seguidores começam em 6–8 horas",
+            "description": "A maioria dos pedidos começa em até 6–8 horas após o pagamento. Se você pediu um ritmo mais lento, os seguidores são adicionados por um período mais longo."
           },
           {
             "id": "buy-facebook-followers-th-3",
-            "title": "O tempo de processamento pode variar",
-            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de seguidores e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pacotes."
+            "title": "A maioria termina em 4–6 horas",
+            "description": "Depois de iniciado, um pedido padrão costuma terminar em 4–6 horas. Você pode acompanhar na página Rastrear pedido."
           },
           {
             "id": "buy-facebook-followers-th-4",
-            "title": "Confira o status do pedido",
-            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+            "title": "Começa a cobertura de reposição",
+            "description": "Sua reposição de 6 meses começa no dia em que a entrega termina. Se o número cair, envie o número do pedido pelo WhatsApp."
           }
         ],
-        "closingNote": "Evite excluir a Página enviada, torná-la indisponível ou alterar qualquer coisa que impeça o acesso a ela enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+        "closingNote": "Mantenha a Página publicada e a configuração de seguidores do perfil em Público até a entrega terminar, e não mude o nome de usuário nem a URL da Página durante o pedido ou a reposição."
       },
       "serviceCompare": {
         "id": "buy-facebook-followers-service-compare",
@@ -391,8 +399,8 @@
       "beforeBuying": {
         "id": "buy-facebook-followers-before-buying",
         "title": "O que conferir antes de comprar seguidores no Facebook",
-        "description": "Antes de comprar seguidores no Facebook, revise o pacote e os detalhes da Página antes de concluir o pedido. Garanta que a quantidade de seguidores, o preço, a URL da Página do Facebook e o serviço correspondam ao que você quer para a Página selecionada.",
-        "framingNote": "Confira a URL da Página do Facebook enviada, a quantidade de seguidores e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar seguidores garante curtidas de Página, curtidas de publicação, engajamento, alcance, vendas ou crescimento orgânico extras.",
+        "description": "A maioria dos pedidos travados vem do link ou de uma configuração de privacidade. Faça primeiro estas cinco verificações.",
+        "framingNote": "Os preços estão em dólares americanos. Seu banco converte o valor se você pagar em outra moeda.",
         "items": [
           {
             "id": "buy-facebook-followers-7",
@@ -428,33 +436,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-followers-worldwide",
-        "title": "Preparando a Página do Facebook para um pedido de seguidores",
-        "description": "Seguidores no Facebook é um serviço no nível da Página. Antes de pedir, confirme a Página pública elegível do Facebook e a quantidade de seguidores que você quer usar.",
-        "eyebrow": "Pronto para seguidores no Facebook",
-        "closingNote": "Seguidores no Facebook se aplica a uma Página pública do Facebook. Envie a Página correta, mantenha-a acessível e revise o pacote de seguidores antes do checkout.",
+        "title": "Seguidores, curtidas da Página e as Páginas do Facebook de hoje",
+        "description": "O Facebook levou as Páginas para o modelo de seguidores. Na nova experiência de Páginas, o número de seguidores é o principal dado público, e a Meta agora mostra seguimentos em vez de curtidas da Página no Meta Business Suite.",
+        "eyebrow": "Escolha a métrica certa",
+        "closingNote": "Para uma comparação lado a lado, leia nosso guia do Learn Center (em inglês) sobre seguidores, curtidas da Página e curtidas em posts do Facebook.",
         "cards": [
           {
             "id": "buy-facebook-followers-12",
-            "title": "Use a Página correta do Facebook",
-            "description": "Envie as informações públicas da Página do Facebook pedidas no checkout. Não envie uma publicação individual do Facebook ao pedir seguidores de Página.",
+            "title": "Páginas novas mostram seguidores",
+            "description": "Se sua Página mostra um número de seguidores perto do nome, esse é o número que os visitantes veem. Este é o serviço certo para você.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-followers-13",
-            "title": "Mantenha a Página acessível",
-            "description": "Mantenha a Página enviada acessível ao público quando for exigido enquanto o pedido de seguidores estiver sendo processado.",
+            "title": "Perfis pessoais",
+            "description": "Perfis mostram seguidores quando “Quem pode seguir você?” está em Público. O modo profissional deixa o número de seguidores mais visível.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-followers-14",
-            "title": "Seguidores e curtidas de Página são diferentes",
-            "description": "Seguidores no Facebook se aplica à contagem de seguidores da Página. Curtidas de Página no Facebook é um serviço separado para a métrica de curtidas da Página.",
+            "title": "Layouts de Página antigos",
+            "description": "Algumas Páginas antigas ainda mostram curtidas da Página. Se esse é o número da sua Página, compare nosso serviço de curtidas para Páginas do Facebook.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-followers-15",
-            "title": "Revise o pacote",
-            "description": "Confira a quantidade de seguidores, as informações da Página e o preço antes de concluir o checkout.",
+            "title": "Posts são separados",
+            "description": "Reações em um post específico são contadas à parte. Para isso, use Curtidas em posts do Facebook com o link do post.",
             "icon": "clapperboard"
           }
         ]
@@ -462,32 +470,32 @@
       "packageSizes": {
         "id": "buy-facebook-followers-popular-packages",
         "title": "Pacotes populares de seguidores no Facebook",
-        "description": "Compare algumas das quantidades de seguidores no Facebook disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções de pacote.",
+        "description": "Ajuste o pacote ao tamanho e à atividade da Página. Uma Página de negócio local com 150 seguidores parece natural com algumas centenas a mais; uma que pula para 10.000 sem atividade nos posts, não.",
         "rows": [
           {
             "id": "fb-f-100",
             "quantity": "100 seguidores",
-            "recommendedFor": "Um pacote menor para uma Página pública do Facebook em que você quer acrescentar cem seguidores."
+            "recommendedFor": "Para Páginas e perfis recém-criados, ou para testar o serviço primeiro."
           },
           {
             "id": "fb-f-500",
             "quantity": "500 seguidores",
-            "recommendedFor": "Uma opção menor a intermediária para uma Página do Facebook em que você quer acrescentar quinhentos seguidores."
+            "recommendedFor": "Para pequenos negócios e Páginas locais que querem parecer estabelecidos para novos clientes."
           },
           {
             "id": "fb-f-1000",
             "quantity": "1.000 seguidores",
-            "recommendedFor": "Um pacote intermediário para uma Página pública do Facebook em que você quer acrescentar mil seguidores."
+            "recommendedFor": "Nosso pacote mais popular: combina com Páginas ativas e criadores que já publicam com frequência."
           },
           {
             "id": "fb-f-5000",
             "quantity": "5.000 seguidores",
-            "recommendedFor": "Uma opção maior para uma Página do Facebook em que você quer acrescentar cinco mil seguidores."
+            "recommendedFor": "Para marcas em crescimento e figuras públicas com engajamento constante. A entrega gradual é uma boa ideia."
           },
           {
             "id": "fb-f-10000",
             "quantity": "10.000 seguidores",
-            "recommendedFor": "Um pacote de volume maior para uma Página pública do Facebook em que você quer acrescentar dez mil seguidores."
+            "recommendedFor": "Para grandes Páginas de marca. Peça entrega gradual para o número subir ao longo de vários dias."
           }
         ]
       },
@@ -597,35 +605,35 @@
     "whyBuy": {
       "id": "buy-facebook-followers-why-buy",
       "title": "Por que as pessoas compram seguidores no Facebook?",
-      "description": "As pessoas compram seguidores no Facebook por motivos diferentes. Algumas querem aumentar a contagem de seguidores exibida em uma Página do Facebook, enquanto outras escolhem um pacote de seguidores para uma Página ligada a um negócio, marca, campanha ou atividade contínua de conteúdo. O serviço altera a métrica de seguidores na Página selecionada, mas não garante curtidas, engajamento, alcance, vendas ou crescimento orgânico extras.",
+      "description": "Estes são os motivos que os clientes do Facebook mais nos dão, todos ligados a como uma Página ou perfil parece para quem decide se pode confiar.",
       "items": [
         {
           "id": "buy-facebook-followers-wb-1",
-          "title": "Aumente a contagem visível de seguidores",
-          "description": "Um pacote de seguidores no Facebook pode ser usado quando você quer aumentar a contagem de seguidores exibida em uma Página pública específica do Facebook."
+          "title": "Uma Página de empresa nova",
+          "description": "Os clientes costumam conferir a Página do Facebook de uma empresa antes de ligar ou agendar. Uma Página com poucos seguidores pode parecer fechada ou recém-criada."
         },
         {
           "id": "buy-facebook-followers-wb-2",
-          "title": "Use seguidores em um lançamento ou campanha",
-          "description": "Negócios e donos de Página podem escolher um pacote de seguidores ao trabalhar um lançamento, campanha, anúncio ou outra atividade no Facebook."
+          "title": "Ativar o modo profissional",
+          "description": "Criadores que ativam o modo profissional começam com poucos seguidores públicos. Um número inicial deixa o perfil pronto para novos visitantes."
         },
         {
           "id": "buy-facebook-followers-wb-3",
-          "title": "Foque a métrica de seguidores",
-          "description": "Seguidores no Facebook se aplica à contagem de seguidores na Página selecionada. Não acrescenta automaticamente curtidas de Página nem curtidas em publicações individuais no Facebook."
+          "title": "Mudar para uma Página nova",
+          "description": "Empresas que mudam de marca ou criam uma Página nova às vezes dão a ela um número inicial enquanto os clientes migram."
         },
         {
           "id": "buy-facebook-followers-wb-4",
-          "title": "Escolha a quantidade que você quer",
-          "description": "Tamanhos diferentes de pacote permitem selecionar o número de seguidores no Facebook que você quer pedir para a Página enviada."
+          "title": "Antes de rodar anúncios",
+          "description": "Alguns clientes adicionam seguidores antes de anunciar, para quem vem de um anúncio encontrar uma Página que parece estabelecida."
         },
         {
           "id": "buy-facebook-followers-wb-5",
-          "title": "Use seguidores junto com o conteúdo",
-          "description": "Comprar seguidores não substitui publicar e administrar o próprio conteúdo no Facebook. Publicações, respostas, informações da Página e outras atividades ainda dependem de como você administra a Página."
+          "title": "Com os pés no chão",
+          "description": "Seguidores mudam um número. Alcance, mensagens e vendas continuam dependendo dos seus posts e de como as pessoas respondem."
         }
       ],
-      "bottomNote": "Se curtidas de Página ou curtidas de publicação forem a métrica que você quer alterar, escolha o serviço correspondente de Facebook em vez de um pacote de seguidores."
+      "bottomNote": "Precisa de reações em um post específico ou de curtidas em uma Página antiga? Compare os outros serviços do Facebook abaixo."
     },
     "howToBuy": {
       "id": "how-it-works",

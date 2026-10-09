@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "SERVICIOS DE FACEBOOK",
       "title": "Comprar Me gusta de Página de Facebook",
-      "description": "Compra Me gusta de Página de Facebook eligiendo el paquete y la cantidad que encajan con tu Página. NovaLikes te permite comparar los paquetes y precios de Me gusta de Página disponibles antes de pedir. Selecciona el número de Me gusta de Página que quieres, facilita la URL pública correcta de la Página de Facebook y completa tu pedido online. No se requiere tu contraseña de Facebook, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+      "description": "Compra Me gusta de Página de Facebook para una página pública desde US$ 2,99, pero antes comprueba que tu página aún muestra el número de Me gusta, porque las páginas nuevas muestran seguidores. Pega el enlace de la página, elige un paquete y paga, sin contraseña. La mayoría de los pedidos empiezan en 6–8 horas, y cada pedido incluye una recarga de 6 meses y soporte por WhatsApp 24/7.",
       "purpose": "Convert for Facebook page likes packages worldwide",
       "primaryKeyword": "buy Facebook page likes",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "fb-pl-trust-url",
-          "label": "Solo URL pública de Página de Facebook"
+          "label": "Solo páginas de Facebook"
         },
         {
           "id": "fb-pl-trust-password",
-          "label": "Sin contraseña necesaria"
+          "label": "Sin contraseña"
         },
         {
           "id": "fb-pl-trust-checkout",
-          "label": "Pago seguro"
+          "label": "Empieza en 6–8 horas"
         },
         {
           "id": "fb-pl-trust-track",
-          "label": "Seguimiento del pedido"
+          "label": "Recarga de 6 meses"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Paquetes y precios de Me gusta de Página de Facebook",
-      "description": "Compara los paquetes, cantidades y precios de Me gusta de Página de Facebook disponibles antes de pedir. Elige el número de Me gusta de Página que quieres para tu Página pública de Facebook, revisa el precio actual del paquete y añade el paquete seleccionado al carrito cuando estés listo.",
+      "description": "Los precios están en dólares estadounidenses. 1.000 Me gusta de Página es el paquete más popular. Si tu página muestra seguidores en lugar de Me gusta, elige seguidores de Facebook.",
       "purpose": "Present real NovaLikes.com Facebook page likes packages",
       "primaryKeyword": "Facebook page likes packages",
       "suggestedWordCount": 45,
@@ -247,31 +247,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-page-likes-why-choose",
-        "title": "¿Por qué elegir NovaLikes para Me gusta de Página de Facebook?",
-        "description": "NovaLikes facilita comparar paquetes de Me gusta de Página de Facebook antes de pedir. Elige la cantidad de Me gusta de Página que quieres, facilita la URL pública correcta de la Página de Facebook, revisa el precio del paquete y usa el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+        "title": "¿Por qué comprar Me gusta de Página de Facebook en NovaLikes?",
+        "description": "Llevamos 7–8 años gestionando pedidos de redes sociales —en otros sitios, como ViralMe y ahora como NovaLikes— y preferimos que compres el servicio correcto antes que el equivocado. Por eso esta página empieza con una comprobación sincera.",
         "items": [
           {
             "id": "buy-facebook-page-likes-0",
-            "title": "Varias cantidades de Me gusta de Página",
-            "description": "Compara las cantidades de Me gusta de Página de Facebook disponibles y elige el paquete que coincida con el número de Me gusta de Página que quieres pedir.",
+            "title": "Primero, un consejo sincero",
+            "description": "Facebook ahora prioriza los seguidores en la mayoría de las páginas. Te explicamos cómo comprobar qué número muestra tu página, para que solo pagues por el que ven los visitantes.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-page-likes-1",
-            "title": "Solo URL pública de Página de Facebook",
-            "description": "Facilita la URL pública correcta de la Página de Facebook donde quieres que se añadan los Me gusta de Página. No se requiere tu contraseña de Facebook.",
+            "title": "Empieza en 6–8 horas",
+            "description": "La mayoría de los pedidos de Me gusta de Página empiezan en 6–8 horas tras el pago y terminan 4–6 horas después de empezar.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-2",
-            "title": "Revisa antes del pago",
-            "description": "Comprueba la cantidad de Me gusta de Página seleccionada y el precio actual del paquete antes de añadir tu pedido al carrito y completar el pago.",
+            "title": "Gradual a petición",
+            "description": "¿Prefieres una subida más lenta? Pídelo en la nota del pago o por WhatsApp y repartimos el pedido en un periodo más largo.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-3",
-            "title": "Seguimiento del pedido",
-            "description": "Usa la opción de seguimiento disponible después del pago para consultar información de estado de tu pedido de Me gusta de Página de Facebook.",
+            "title": "Recarga de 6 meses",
+            "description": "Si el número baja en los 6 meses siguientes a la entrega, envía tu número de pedido por WhatsApp y lo volvemos a completar.",
             "icon": "headphones"
           }
         ]
@@ -281,66 +281,74 @@
       "canYouBuy": {
         "id": "buy-facebook-page-likes-can-you-buy",
         "title": "¿Se pueden comprar Me gusta de Página de Facebook?",
-        "description": "Sí. Los paquetes de Me gusta de Página de Facebook se pueden comprar a través de servicios online de Me gusta de Página. Con NovaLikes, eliges un paquete de Me gusta de Página disponible, facilitas la URL pública de la Página de Facebook que quieres usar y completas tu pedido a través del sitio web.",
+        "description": "Sí. Puedes comprar Me gusta de Página para una página pública de Facebook pegando el enlace de la página, eligiendo un paquete y pagando en dólares estadounidenses. Antes, revisa tu página: si muestra un número de seguidores en lugar de Me gusta, te conviene más comprar seguidores de Facebook.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-4",
-            "title": "Qué cambia un pedido de Me gusta de Página de Facebook",
-            "description": "Un pedido de Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página pública de Facebook enviada con el pedido. No añade automáticamente seguidores de Facebook ni Me gusta a publicaciones individuales.",
+            "title": "Solo para páginas de Facebook",
+            "description": "Los Me gusta de Página se aplican a una página de Facebook, no a un perfil personal ni a una publicación concreta.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-page-likes-5",
-            "title": "Qué necesitas para hacer un pedido",
-            "description": "Necesitas la URL pública correcta de la Página de Facebook y el paquete de Me gusta de Página que quieres comprar. No se requiere tu contraseña de Facebook.",
+            "title": "Revisa tu página primero",
+            "description": "Abre tu página como visitante. Si ves «Me gusta» junto al nombre, este servicio encaja. Si solo ves «seguidores», elige seguidores de Facebook.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-page-likes-6",
-            "title": "Qué no incluyen los Me gusta de Página de Facebook",
-            "description": "Los Me gusta de Página son independientes de seguidores de Facebook y Me gusta de publicaciones. Pedir Me gusta de Página no añade automáticamente esas otras métricas ni garantiza más interacción, alcance, ventas o crecimiento orgánico.",
+            "title": "Qué necesitamos",
+            "description": "El enlace público de la página (facebook.com/tupagina). Nunca tu contraseña ni acceso de administrador a la página.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de Página de Facebook, elegido la cantidad correcta de Me gusta de Página y facilitado la URL de la Página pública exacta de Facebook donde quieres que se añadan los Me gusta de Página."
+        "closingNote": "¿Sigues sin saber qué número muestra tu página? Envíanos el enlace por WhatsApp antes de pedir y te diremos qué servicio elegir."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-page-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "¿Todavía vale la pena comprar Me gusta de Página de Facebook?",
+        "description": "Para algunas páginas sí; para muchas, importan más los seguidores. Facebook lleva varios años pasando las páginas de los Me gusta a los seguidores. En la nueva experiencia de páginas, el número de seguidores es el dato principal, y Meta ahora muestra seguimientos en lugar de Me gusta de la página en Meta Business Suite. Los Me gusta de Página siguen teniendo sentido donde tu página aún los muestra.",
+        "helpTitle": "Cuándo tienen sentido",
+        "helpItems": [
+          "Páginas antiguas que aún muestran el número de Me gusta de forma destacada a los visitantes.",
+          "Páginas en las que has comprobado que el número de Me gusta es el que ven los clientes.",
+          "Mantener un número de Me gusta existente en línea con el resto de la página."
+        ],
+        "limitTitle": "Cuándo elegir otra cosa",
+        "limitItems": [
+          "Tu página muestra seguidores, no Me gusta: elige seguidores de Facebook.",
+          "Quieres reacciones en una publicación: elige Me gusta de publicaciones de Facebook.",
+          "Quieres más alcance: ni los Me gusta ni los seguidores hacen por sí solos que Facebook muestre tus publicaciones a más gente."
+        ],
+        "closingNote": "Nuestra guía del Learn Center (en inglés) que compara seguidores, Me gusta de Página y Me gusta de publicaciones en Facebook explica cómo funciona cada métrica en las páginas actuales."
       },
       "whatHappens": {
         "id": "buy-facebook-page-likes-what-happens",
         "title": "¿Qué ocurre después de comprar Me gusta de Página de Facebook?",
-        "description": "Después de hacer un pedido de Me gusta de Página de Facebook, el paquete de Me gusta de Página y la URL pública de la Página de Facebook que enviaste se usan para procesar el pedido para la Página seleccionada. Mantén la Página accesible públicamente cuando se requiera mientras se gestiona el pedido.",
+        "description": "Lo que ocurre después de pagar Me gusta de Página de Facebook.",
         "steps": [
           {
             "id": "buy-facebook-page-likes-th-1",
-            "title": "Se revisan los datos de tu pedido",
-            "description": "El paquete de Me gusta de Página seleccionado, la cantidad y la URL de la Página de Facebook enviada se asocian a tu pedido para que la solicitud se procese para la Página prevista."
+            "title": "Se vincula el enlace de la página",
+            "description": "El enlace de tu página queda unido a tu número de pedido. Si ves un error, escríbenos por WhatsApp antes de que empiece la entrega."
           },
           {
             "id": "buy-facebook-page-likes-th-2",
-            "title": "Los Me gusta de Página van a la Página enviada",
-            "description": "El pedido se aplica a la Página de Facebook vinculada a la URL que facilitaste. Revisa la URL de la Página con cuidado antes de completar el pago."
+            "title": "La entrega empieza en 6–8 horas",
+            "description": "La mayoría de los pedidos empiezan en 6–8 horas tras el pago. Si pediste un ritmo gradual, la entrega se reparte en más tiempo."
           },
           {
             "id": "buy-facebook-page-likes-th-3",
-            "title": "El tiempo de procesamiento puede variar",
-            "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de Me gusta de Página y las condiciones actuales de pedidos. No cabe esperar un único plazo de entrega fijo para todos los paquetes."
+            "title": "La mayoría termina en 4–6 horas",
+            "description": "Una vez iniciado, un pedido estándar suele completarse en 4–6 horas. Síguelo en la página de seguimiento de pedidos."
           },
           {
             "id": "buy-facebook-page-likes-th-4",
-            "title": "Consulta el estado de tu pedido",
-            "description": "Usa el seguimiento de pedidos de NovaLikes para las actualizaciones de estado disponibles. Si necesitas ayuda, contacta con soporte con la información relevante del pedido."
+            "title": "Se abre el periodo de recarga",
+            "description": "Tu recarga de 6 meses empieza el día en que termina la entrega. Si el número baja, envía tu número de pedido por WhatsApp."
           }
         ],
-        "closingNote": "Evita eliminar la Página enviada, hacerla no disponible o cambiar algo que impida el acceso a ella mientras se procesa el pedido. Si algo cambia después de pedir, contacta con soporte si necesitas ayuda."
+        "closingNote": "Mantén la página publicada y pública, y no cambies su nombre de usuario ni su URL durante el pedido ni durante los 6 meses de recarga."
       },
       "serviceCompare": {
         "id": "buy-facebook-page-likes-service-compare",
@@ -372,8 +380,8 @@
       "beforeBuying": {
         "id": "buy-facebook-page-likes-before-buying",
         "title": "Qué revisar antes de comprar Me gusta de Página de Facebook",
-        "description": "Antes de comprar Me gusta de Página de Facebook, revisa el paquete y los detalles de la Página antes de completar tu pedido. Asegúrate de que la cantidad de Me gusta de Página, el precio, la URL de la Página de Facebook y el servicio seleccionado coinciden con lo que quieres para la Página.",
-        "framingNote": "Revisa la URL de la Página de Facebook enviada, la cantidad de Me gusta de Página y el precio una vez más antes del pago. Evita basarte en afirmaciones de que comprar Me gusta de Página garantizará más seguidores, Me gusta de publicaciones, interacción, alcance, ventas o crecimiento orgánico.",
+        "description": "Con los Me gusta de Página, la comprobación más importante es si tu página los muestra. Después, revisa estos cinco puntos.",
+        "framingNote": "Los precios están en dólares estadounidenses. Tu banco convierte el importe si pagas en otra moneda.",
         "items": [
           {
             "id": "buy-facebook-page-likes-7",
@@ -409,33 +417,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-page-likes-worldwide",
-        "title": "Prepara tu Página de Facebook para Me gusta de Página",
-        "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de una Página pública de Facebook elegible. Asegúrate de que la Página enviada durante el pago es exactamente la Página que quieres usar.",
-        "eyebrow": "Listo para Me gusta de Página de Facebook",
-        "closingNote": "Me gusta de Página de Facebook se aplica a una Página pública de Facebook. Envía una URL de Página, no una URL de publicación, mantén la Página pública y revisa la cantidad seleccionada antes del pago.",
+        "title": "Cómo comprobar si tu página muestra Me gusta o seguidores",
+        "description": "No todas las páginas de Facebook se ven igual. Una comprobación de un minuto te dice qué número ven los visitantes en tu página y qué servicio pedir.",
+        "eyebrow": "Comprueba antes de comprar",
+        "closingNote": "¿Sigues con dudas después de comprobarlo? Envía el enlace de la página por WhatsApp y lo revisamos por ti.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-12",
-            "title": "Envía una URL de Página",
-            "description": "Usa la URL pública de Página de Facebook solicitada para el servicio. Un enlace a una publicación individual de Facebook no es el destino correcto para Me gusta de Página.",
+            "title": "Mírala como visitante",
+            "description": "Cierra sesión o abre la página en una ventana privada del navegador. Eso es exactamente lo que ven los clientes.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-13",
-            "title": "Mantén la Página pública",
-            "description": "Mantén la Página enviada accesible públicamente cuando se requiera mientras se procesa el pedido.",
+            "title": "Mira bajo el nombre de la página",
+            "description": "El número bajo el nombre de la página dice «Me gusta» o «seguidores». Esa palabra decide el servicio.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-14",
-            "title": "Me gusta de Página y seguidores son independientes",
-            "description": "Me gusta de Página y seguidores son ambas métricas a nivel de Página, pero son servicios distintos. Elige el que coincida con la métrica que quieres cambiar.",
+            "title": "Muestra Me gusta",
+            "description": "Si los visitantes ven un número de Me gusta, este servicio cambia el número que ven.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-page-likes-15",
-            "title": "Revisa cantidad y precio",
-            "description": "Comprueba la cantidad de Me gusta de Página seleccionada y el precio actual del paquete antes de completar tu pedido.",
+            "title": "Muestra seguidores",
+            "description": "Si los visitantes solo ven seguidores, pide seguidores de Facebook: los Me gusta de Página no cambiarían el número visible.",
             "icon": "clapperboard"
           }
         ]
@@ -443,32 +451,32 @@
       "packageSizes": {
         "id": "buy-facebook-page-likes-popular-packages",
         "title": "Paquetes populares de Me gusta de Página de Facebook",
-        "description": "Compara algunas de las cantidades de Me gusta de Página de Facebook disponibles en NovaLikes abajo, o vuelve a la sección completa de precios para ver todas las opciones de paquete disponibles.",
+        "description": "Mantén el nuevo total creíble para el tamaño y la actividad de tu página. Una página local con 200 Me gusta se ve natural con unos cientos más; una que salta a 10.000 de la noche a la mañana, no.",
         "rows": [
           {
             "id": "fb-pl-100",
             "quantity": "100 Me gusta de Página",
-            "recommendedFor": "Un paquete más pequeño para una Página pública de Facebook en la que quieres añadir cien Me gusta de Página."
+            "recommendedFor": "Para páginas pequeñas o nuevas, o para probar el servicio primero."
           },
           {
             "id": "fb-pl-500",
             "quantity": "500 Me gusta de Página",
-            "recommendedFor": "Una opción pequeña-intermedia para una Página de Facebook en la que quieres añadir quinientos Me gusta de Página."
+            "recommendedFor": "Para páginas de negocios locales que quieren parecer consolidadas ante nuevos clientes."
           },
           {
             "id": "fb-pl-1000",
             "quantity": "1,000 Me gusta de Página",
-            "recommendedFor": "Un paquete intermedio para una Página pública de Facebook en la que quieres añadir mil Me gusta de Página."
+            "recommendedFor": "Nuestro paquete más popular: encaja con páginas activas que publican con regularidad."
           },
           {
             "id": "fb-pl-5000",
             "quantity": "5,000 Me gusta de Página",
-            "recommendedFor": "Una opción más grande para una Página de Facebook en la que quieres añadir cinco mil Me gusta de Página."
+            "recommendedFor": "Para páginas de marca más grandes con interacción constante. Recomendamos entrega gradual."
           },
           {
             "id": "fb-pl-10000",
             "quantity": "10,000 Me gusta de Página",
-            "recommendedFor": "Un paquete de mayor volumen para una Página pública de Facebook en la que quieres añadir diez mil Me gusta de Página."
+            "recommendedFor": "Para páginas grandes y consolidadas. Pide entrega gradual durante varios días."
           }
         ]
       },
@@ -572,35 +580,35 @@
     "whyBuy": {
       "id": "buy-facebook-page-likes-why-buy",
       "title": "¿Por qué la gente compra Me gusta de Página de Facebook?",
-      "description": "La gente compra Me gusta de Página de Facebook por distintos motivos. Algunos quieren aumentar el recuento de Me gusta de Página que se muestra en una Página de Facebook, mientras que otros eligen un paquete de Me gusta de Página para una Página vinculada a un negocio, marca, campaña o actividad continua de contenido. El servicio cambia la métrica de Me gusta de Página de la Página seleccionada, pero no garantiza seguidores, Me gusta de publicaciones, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "description": "Los clientes que aún eligen Me gusta de Página suelen tener una de estas razones, y han comprobado que su página muestra el número de Me gusta.",
       "items": [
         {
           "id": "buy-facebook-page-likes-wb-1",
-          "title": "Aumenta el recuento visible de Me gusta de Página",
-          "description": "Un paquete de Me gusta de Página de Facebook se puede usar cuando quieres aumentar el recuento de Me gusta de Página que se muestra en una Página pública concreta de Facebook."
+          "title": "Una página antigua que muestra Me gusta",
+          "description": "Algunas páginas con muchos años todavía muestran el número de Me gusta. Sus dueños lo mantienen acorde a lo consolidado que está realmente el negocio."
         },
         {
           "id": "buy-facebook-page-likes-wb-2",
-          "title": "Usa Me gusta de Página en un lanzamiento o campaña",
-          "description": "Negocios y propietarios de Páginas pueden elegir un paquete de Me gusta de Página mientras trabajan en un lanzamiento, campaña, anuncio u otra actividad en Facebook."
+          "title": "Un número de Me gusta que parece bajo",
+          "description": "Una página con años de publicaciones pero solo unas decenas de Me gusta puede hacer pensar a los visitantes que el negocio está inactivo."
         },
         {
           "id": "buy-facebook-page-likes-wb-3",
-          "title": "Céntrate en la métrica de Me gusta de Página",
-          "description": "Me gusta de Página de Facebook se aplica al recuento de Me gusta de Página de la Página seleccionada. No añade automáticamente seguidores de Facebook ni Me gusta a publicaciones individuales de Facebook."
+          "title": "Antes de una promoción",
+          "description": "Algunos clientes completan el número de Me gusta antes de lanzar anuncios o una promoción local que lleva gente a la página."
         },
         {
           "id": "buy-facebook-page-likes-wb-4",
-          "title": "Elige la cantidad que quieres",
-          "description": "Los distintos tamaños de paquete te permiten seleccionar el número de Me gusta de Página de Facebook que quieres pedir para la Página enviada."
+          "title": "Igualar otras plataformas",
+          "description": "Los negocios con buena presencia en Instagram o Google a veces llevan su página de Facebook a un nivel parecido."
         },
         {
           "id": "buy-facebook-page-likes-wb-5",
-          "title": "Usa Me gusta de Página junto con tu contenido",
-          "description": "Comprar Me gusta de Página no sustituye publicar y gestionar tu propio contenido de Facebook. Las publicaciones, respuestas, información de la Página y el resto de la actividad siguen dependiendo de cómo gestiones tu Página."
+          "title": "Conocer los límites",
+          "description": "Los Me gusta de Página cambian un número. El alcance, los mensajes y las ventas siguen dependiendo de tus publicaciones y de cómo responde la gente."
         }
       ],
-      "bottomNote": "Si seguidores de Facebook o Me gusta de publicaciones son la métrica que quieres cambiar, elige el servicio de Facebook correspondiente en lugar de un paquete de Me gusta de Página."
+      "bottomNote": "Si tu página muestra seguidores, o quieres reacciones en una publicación concreta, compara abajo seguidores de Facebook y Me gusta de publicaciones de Facebook."
     },
     "howToBuy": {
       "id": "how-it-works",

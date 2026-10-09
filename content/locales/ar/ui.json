@@ -73,6 +73,7 @@
     "publicVideoLinkOnly": "رابط الفيديو العام فقط",
     "publicFacebookPageUrlOnly": "رابط صفحة فيسبوك العامة فقط",
     "publicFacebookPostUrlOnly": "رابط منشور فيسبوك العام فقط",
+    "publicFacebookPageOrProfileUrl": "رابط صفحة أو ملف شخصي عام على فيسبوك",
     "publicUrlOnly": "الرابط العام فقط",
     "noPassword": "بدون كلمة مرور",
     "secureCheckout": "دفع آمن",
@@ -88,7 +89,12 @@
     "recommended": "مُوصى به",
     "youSave": "وفّرت",
     "selected": "محدد",
-    "off": "خصم"
+    "off": "خصم",
+    "startsIn6to8Hours": "يبدأ خلال 6–8 ساعات",
+    "sixMonthRefill": "إعادة تعبئة 6 أشهر",
+    "gradualDeliveryOnRequest": "تسليم تدريجي عند الطلب",
+    "packageQualityAria": "جودة الحزمة",
+    "packageQuantitiesAria": "كميات الحزمة"
   },
   "faq": {
     "categories": "التصنيفات",

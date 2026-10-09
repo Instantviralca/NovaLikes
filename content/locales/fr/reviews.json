@@ -1,6 +1,6 @@
 {
   "h1": "Avis sur NovaLikes",
-  "intro": "Avis clients issus du catalogue d’avis publié de NovaLikes. Les notes ci-dessous reflètent ce catalogue et peuvent inclure des retours 4 étoiles et 5 étoiles.",
+  "intro": "Avis de nos clients, y compris ceux qui ont commandé lorsque nous nous appelions ViralMe. Les notes ci-dessous reflètent ce catalogue publié et incluent des avis 4 et 5 étoiles.",
   "catalogueHeading": "Catalogue des avis clients",
   "emptyFilter": "Aucun avis ne correspond à ce filtre de plateforme.",
   "showingTemplate": "Affichage de {visible} sur {total} {word}",
@@ -19,7 +19,7 @@
   "readMore": "Lire plus",
   "showLess": "Afficher moins",
   "collectTitle": "Comment nous recueillons les avis",
-  "collectBody": "Ces commentaires sont des retours clients publiés dans le catalogue NovaLikes. Ils ont été importés comme commentaires historiques. Ils ne sont pas rattachés à une commande en cours et ne sont pas vérifiés de manière indépendante par un tiers.",
+  "collectBody": "Ces avis ont été laissés par des clients de ViralMe, le service que nous avons exploité pendant plus de quatre ans avant qu’il ne devienne NovaLikes en 2026. Ils ont été repris lors du changement de nom ; lorsqu’un avis mentionnait l’ancien nom, il indique désormais NovaLikes. Ils ne sont pas liés à des commandes individuelles et ne sont pas vérifiés par un tiers.",
   "chrome": {
     "breadcrumb": "Avis"
   },

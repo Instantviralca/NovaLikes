@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIZI INSTAGRAM",
-      "title": "Comprare visualizzazioni Instagram",
-      "description": "Comprare visualizzazioni Instagram per un Reel o un video pubblico significa scegliere la quantità di pacchetto adatta al contenuto che vuoi usare. NovaLikes offre diverse quantità di visualizzazioni con prezzi chiari, così puoi confrontare le opzioni prima di ordinare. Seleziona il pacchetto, indica l’URL pubblico del contenuto Instagram e completa l’ordine online. Nessuna password Instagram è richiesta e, dopo il checkout, puoi tracciare l’ordine.",
+      "title": "Comprare visualizzazioni Instagram per Reels e video",
+      "description": "Compra visualizzazioni Instagram per qualsiasi Reel o video pubblico a partire da 1,99 USD. Incolla il link, scegli un pacchetto e paga, senza password. La maggior parte degli ordini parte entro 6–8 ore e si completa 4–6 ore dopo, oppure puoi chiedere la consegna graduale. Ogni ordine include un refill di 6 mesi e supporto WhatsApp 24/7.",
       "purpose": "Convert for Instagram views packages worldwide",
       "primaryKeyword": "buy Instagram views",
       "supportingKeywords": [
@@ -32,19 +32,19 @@
       "trustLabels": [
         {
           "id": "ig-v-trust-public",
-          "label": "Solo URL del contenuto pubblico"
+          "label": "Avvio in 6–8 ore"
         },
         {
           "id": "ig-v-trust-password",
-          "label": "Nessuna password richiesta"
+          "label": "Refill di 6 mesi"
         },
         {
           "id": "ig-v-trust-checkout",
-          "label": "Checkout sicuro"
+          "label": "Nessuna password richiesta"
         },
         {
           "id": "ig-v-trust-track",
-          "label": "Tracciamento ordine"
+          "label": "Consegna graduale su richiesta"
         }
       ],
       "visual": {
@@ -57,7 +57,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacchetti e prezzi visualizzazioni Instagram",
-      "description": "Scegli il numero di visualizzazioni Instagram che vuoi e confronta i prezzi dei pacchetti prima di ordinare. Seleziona una quantità qui sotto per rivedere i dettagli e continua con l’opzione adatta al Reel o al video che vuoi usare.",
+      "description": "I prezzi sono in dollari statunitensi. 1.000 visualizzazioni è il pacchetto più popolare; i pacchetti piccoli sono adatti ai nuovi Reels, quelli grandi ai contenuti di campagna.",
       "purpose": "Present real NovaLikes.com views packages",
       "primaryKeyword": "Instagram views packages",
       "suggestedWordCount": 40,
@@ -166,31 +166,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-instagram-views-why-choose",
-        "title": "Perché scegliere NovaLikes per le visualizzazioni Instagram?",
-        "description": "NovaLikes rende facile confrontare i pacchetti visualizzazioni Instagram prima di ordinare. Scegli il numero di visualizzazioni che vuoi per un Reel o un video specifico, controlla il prezzo, indica l’URL pubblico corretto del contenuto e traccia l’ordine dopo il checkout.",
+        "title": "Perché comprare visualizzazioni Instagram su NovaLikes?",
+        "description": "Offriamo servizi di crescita per Instagram da 7–8 anni: prima su altri siti, poi come ViralMe e oggi come NovaLikes. Ogni ordine di visualizzazioni include le stesse quattro cose: un orario di avvio chiaro, consegna veloce o graduale a tua scelta, un refill di 6 mesi e una persona reale su WhatsApp se qualcosa non va.",
         "items": [
           {
             "id": "buy-instagram-views-0",
-            "title": "Quantità di visualizzazioni diverse",
-            "description": "Confronta pacchetti visualizzazioni più piccoli e più grandi per trovare una quantità adatta al Reel o al video Instagram che vuoi usare.",
+            "title": "Avvio in 6–8 ore",
+            "description": "La maggior parte degli ordini di visualizzazioni Instagram parte entro 6–8 ore dal pagamento e si completa 4–6 ore dopo, così un nuovo Reel riceve le sue visualizzazioni in fretta.",
             "icon": "users"
           },
           {
             "id": "buy-instagram-views-1",
-            "title": "Prezzi chiari per pacchetto",
-            "description": "Vedi il prezzo di ogni pacchetto visualizzazioni Instagram prima di aggiungere la selezione al carrello.",
+            "title": "Veloce o graduale: scegli tu",
+            "description": "Preferisci che il contatore salga lentamente? Aggiungi una nota al pagamento o scrivici su WhatsApp e distribuiremo le visualizzazioni su un periodo più lungo.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-views-2",
-            "title": "Per Reel e video specifici",
-            "description": "Scegli il Reel o il video Instagram pubblico su cui vuoi aggiungere le visualizzazioni, invece di cambiare una metrica a livello di profilo come il numero di follower.",
+            "title": "Refill di 6 mesi",
+            "description": "Se il contatore delle visualizzazioni del tuo Reel cala entro 6 mesi dalla consegna, inviaci il numero d’ordine su WhatsApp e lo ricompleteremo.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-views-3",
-            "title": "Tracciamento ordine",
-            "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di visualizzazioni Instagram.",
+            "title": "Mai la password",
+            "description": "Ci serve solo il link pubblico del tuo Reel o video. Il tuo accesso a Instagram resta tuo e puoi seguire l’ordine con numero d’ordine ed email.",
             "icon": "headphones"
           }
         ]
@@ -200,66 +200,74 @@
       "canYouBuy": {
         "id": "buy-instagram-views-can-you-buy",
         "title": "Si possono Comprare visualizzazioni Instagram?",
-        "description": "Sì. Le visualizzazioni Instagram si possono acquistare per Reel e video pubblici idonei. Con NovaLikes scegli un pacchetto visualizzazioni, indichi l’URL pubblico del video Instagram che vuoi usare e completi l’ordine sul sito.",
+        "description": "Sì. Puoi comprare visualizzazioni per qualsiasi Reel o post video pubblico di Instagram. Scegli un pacchetto, incolla il link di quel Reel o video e paga in dollari statunitensi. Le visualizzazioni vengono aggiunte a quel contenuto specifico: aumentano il suo contatore di visualizzazioni, non il numero dei tuoi follower.",
         "cards": [
           {
             "id": "buy-instagram-views-4",
-            "title": "Cosa cambia un ordine di visualizzazioni Instagram",
-            "description": "Un ordine di visualizzazioni Instagram aumenta il conteggio visualizzazioni sul Reel o video specifico indicato con l’ordine. Non cambia il numero di follower mostrato sul profilo nel suo insieme.",
+            "title": "Cosa cambia",
+            "description": "Il contatore delle visualizzazioni del Reel o video che invii aumenta del numero di visualizzazioni del pacchetto. Nient’altro del tuo profilo viene toccato.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-instagram-views-5",
-            "title": "Cosa ti serve per effettuare un ordine",
-            "description": "Ti servono l’URL pubblico corretto del Reel o del video Instagram e il pacchetto visualizzazioni che vuoi acquistare. La password Instagram non è richiesta.",
+            "title": "Cosa ti serve",
+            "description": "Il link pubblico del Reel o video (copialo dal menu di condivisione) e un pacchetto. Non ci dai mai la password di Instagram e non accedi da nessuna parte.",
             "icon": "briefcase"
           },
           {
             "id": "buy-instagram-views-6",
-            "title": "Cosa non includono le visualizzazioni Instagram",
-            "description": "le visualizzazioni sono separate da follower, like e commenti. Ordinare visualizzazioni Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
+            "title": "Cosa non fa",
+            "description": "Le visualizzazioni da sole non aggiungono like, commenti, follower o vendite e non obbligano Instagram a mostrare il tuo Reel a più persone. Rendono più alto il contatore: è questo che promettiamo.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Prima del checkout, assicurati di aver selezionato Visualizzazioni Instagram, di aver scelto la quantità corretta e di aver indicato l’URL del Reel o del video su cui vuoi aggiungere le visualizzazioni."
+        "closingNote": "Consiglio: incolla il link del Reel esatto, non del tuo profilo. Un ordine non può partire con un link al profilo, un Reel privato o un Reel eliminato."
       },
       "doesBuyingHelp": {
         "id": "buy-instagram-views-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Le visualizzazioni Instagram acquistate aiutano il tuo Reel a raggiungere più persone?",
+        "description": "Risposta onesta: a volte un po’, mai da sole. Instagram decide quanto lontano arriva un Reel soprattutto in base a come reagiscono gli spettatori reali: quanto lo guardano, se lo rivedono, lo condividono, lo salvano o ti seguono. Un contatore più alto è riprova sociale: chi arriva sul Reel vede che altri l’hanno già guardato. Non è un segnale di ranking che si può comprare.",
+        "helpTitle": "Dove le visualizzazioni possono aiutare",
+        "helpItems": [
+          "Post di lancio: un nuovo Reel con qualche centinaio di visualizzazioni sembra meno vuoto ai primi visitatori reali.",
+          "Inserzioni e promozioni: un Reel che stai per sponsorizzare non parte da zero.",
+          "Un profilo coerente: quando un Reel ha 30.000 visualizzazioni e il successivo 300, un’integrazione rende la griglia meno irregolare."
+        ],
+        "limitTitle": "Cosa le visualizzazioni non fanno",
+        "limitItems": [
+          "Aggiungere tempo di visualizzazione, condivisioni o salvataggi: arrivano solo da spettatori reali.",
+          "Promettere un posto in Esplora o nella scheda Reels.",
+          "Sostituire un buon contenuto: un Reel che le persone scorrono dopo due secondi verrà comunque mostrato a meno persone."
+        ],
+        "closingNote": "Vuoi capire come Instagram conta e classifica i Reels? Le nostre guide del Learn Center (in inglese) su come vengono conteggiate le visualizzazioni dei Reels e su come funziona l’algoritmo di Instagram lo spiegano passo dopo passo."
       },
       "whatHappens": {
         "id": "buy-instagram-views-what-happens",
         "title": "Cosa succede dopo aver comprato visualizzazioni Instagram?",
-        "description": "Dopo aver effettuato un ordine di visualizzazioni Instagram, il pacchetto e l’URL del contenuto che hai inviato vengono usati per elaborare l’ordine sul Reel o video selezionato. Tieni il contenuto accessibile pubblicamente, dove richiesto, mentre l’ordine viene gestito.",
+        "description": "Ecco cosa succede dopo il pagamento e quanto dura di solito ogni passaggio.",
         "steps": [
           {
             "id": "buy-instagram-views-th-1",
-            "title": "I dati dell’ordine vengono controllati",
-            "description": "Il pacchetto visualizzazioni selezionato e l’URL Instagram inviato vengono associati all’ordine, così la richiesta può essere elaborata per il contenuto video previsto."
+            "title": "Controlliamo il tuo link",
+            "description": "L’ordine viene associato al link del Reel o video che hai inviato. Se noti un errore nel link, scrivici subito su WhatsApp con il numero d’ordine così da correggerlo prima che parta la consegna."
           },
           {
             "id": "buy-instagram-views-th-2",
-            "title": "le visualizzazioni vanno al contenuto indicato",
-            "description": "L’ordine si applica al Reel o al video Instagram collegato all’URL che hai fornito. Controlla il link con attenzione prima di completare il checkout."
+            "title": "La consegna parte entro 6–8 ore",
+            "description": "La maggior parte degli ordini parte entro 6–8 ore dal pagamento. Se nella nota hai chiesto la consegna graduale, le visualizzazioni vengono distribuite su un periodo più lungo."
           },
           {
             "id": "buy-instagram-views-th-3",
-            "title": "I tempi di elaborazione possono variare",
-            "description": "Il tempo necessario per elaborare un ordine può variare in base al numero di visualizzazioni selezionato e alle condizioni dell’ordine. Non va atteso un unico tempo di consegna fisso per ogni pacchetto."
+            "title": "La maggior parte finisce in 4–6 ore",
+            "description": "Una volta avviata, la consegna standard di solito si completa in 4–6 ore. Gli ordini graduali richiedono più tempo per scelta."
           },
           {
             "id": "buy-instagram-views-th-4",
-            "title": "Controlla lo stato dell’ordine",
-            "description": "Usa il tracciamento ordine NovaLikes per gli aggiornamenti di stato disponibili. Se ti serve aiuto, contatta il supporto con le informazioni dell’ordine."
+            "title": "Seguilo e sei coperto",
+            "description": "Segui l’avanzamento nella pagina Traccia ordine. A consegna completata inizia il tuo periodo di refill di 6 mesi: se il contatore cala, scrivici su WhatsApp."
           }
         ],
-        "closingNote": "Evita di cancellare il Reel o il video indicato, di renderlo non disponibile o di cambiare qualcosa che impedisca l’accesso al contenuto mentre l’ordine viene elaborato. Se qualcosa cambia dopo l’ordine, contatta il supporto se ti serve assistenza."
+        "closingNote": "Tieni il Reel pubblico e non eliminarlo finché la consegna non è completa. Dopo puoi rimettere l’account in privato."
       },
       "serviceCompare": {
         "id": "buy-instagram-views-service-compare",
@@ -291,8 +299,8 @@
       "beforeBuying": {
         "id": "buy-instagram-views-before-buying",
         "title": "Cosa controllare prima di Comprare visualizzazioni Instagram",
-        "description": "Prima di Comprare visualizzazioni Instagram, controlla pacchetto e dettagli del video prima di completare l’ordine. Assicurati che quantità di visualizzazioni, prezzo, URL Instagram e tipo di servizio corrispondano a ciò che vuoi per il Reel o il video selezionato.",
-        "framingNote": "Controlla ancora una volta il video indicato, la quantità di visualizzazioni e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui Comprare visualizzazioni garantirebbe più portata, engagement, follower, vendite o crescita organica.",
+        "description": "Due minuti di controllo evitano la maggior parte dei problemi. Prima di pagare, conferma i cinque punti qui sotto.",
+        "framingNote": "I prezzi sono in dollari statunitensi. Se paghi in euro o in un’altra valuta, la tua banca converte l’importo al proprio tasso.",
         "items": [
           {
             "id": "buy-instagram-views-7",
@@ -328,33 +336,33 @@
       },
       "worldwide": {
         "id": "buy-instagram-views-worldwide",
-        "title": "Scegliere un Reel o un video per le visualizzazioni Instagram",
-        "description": "Visualizzazioni Instagram è un servizio per i contenuti video. Prima di ordinare, assicurati che l’URL inviato punti esattamente al Reel o al video idoneo il cui conteggio visualizzazioni visibile vuoi cambiare.",
-        "eyebrow": "Pronto per le visualizzazioni Instagram",
-        "closingNote": "Visualizzazioni Instagram si applica a Reel e video idonei. Invia un URL video pubblico, tieni il video accessibile e rivedi il pacchetto visualizzazioni selezionato prima del checkout.",
+        "title": "Reels, video e come Instagram conta una visualizzazione",
+        "description": "Instagram ora mostra un unico numero di «Visualizzazioni» per Reels e post video. Per i Reels, una visualizzazione viene contata quando il Reel inizia a essere riprodotto e le riproduzioni ripetute possono contare di nuovo: per questo il contatore è di solito più alto del numero di persone che l’hanno visto.",
+        "eyebrow": "Sapere cosa stai comprando",
+        "closingNote": "Per la spiegazione completa, leggi la nostra guida del Learn Center (in inglese) su come vengono conteggiate le visualizzazioni dei Reels di Instagram.",
         "cards": [
           {
             "id": "buy-instagram-views-12",
-            "title": "Usa un URL video pubblico",
-            "description": "Indica l’URL pubblico del Reel o del video richiesto in checkout, non un link generico al profilo Instagram.",
+            "title": "Reels",
+            "description": "La maggior parte dei clienti ordina visualizzazioni per i Reels. Copia il link del Reel (instagram.com/reel/…) dal menu di condivisione.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-views-13",
-            "title": "Tieni il video accessibile",
-            "description": "Non cancellare né limitare l’accesso al video indicato mentre un ordine attivo dipende dal fatto che il contenuto sia disponibile pubblicamente.",
+            "title": "Post video",
+            "description": "Anche i video nel feed mostrano un contatore di visualizzazioni. Per questi usa il link del post (instagram.com/p/…).",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-views-14",
-            "title": "Scegli le visualizzazioni per i contenuti video",
-            "description": "Visualizzazioni Instagram si applica alle visualizzazioni dei video. Se invece vuoi follower, like o commenti, scegli il servizio Instagram corrispondente.",
+            "title": "Visualizzazioni e copertura",
+            "description": "Le visualizzazioni contano le riproduzioni; la copertura conta gli account unici che hanno visto il tuo contenuto. Leggi gli Insights tenendo presente questa differenza.",
             "icon": "headphones"
           },
           {
             "id": "buy-instagram-views-15",
-            "title": "Controlla quantità e prezzo",
-            "description": "Rivedi pacchetto visualizzazioni, quantità e prezzo selezionati prima del checkout, per assicurarti che l’ordine corrisponda al video che vuoi usare.",
+            "title": "Le storie sono a parte",
+            "description": "Le visualizzazioni delle storie sono una metrica diversa e non fanno parte di questo servizio.",
             "icon": "clapperboard"
           }
         ]
@@ -362,32 +370,32 @@
       "packageSizes": {
         "id": "buy-instagram-views-popular-packages",
         "title": "pacchetti visualizzazioni Instagram più richiesti",
-        "description": "Non sai quale pacchetto scegliere? Confronta alcune delle quantità di visualizzazioni Instagram disponibili su NovaLikes qui sotto, oppure torna alla sezione prezzi completa per vedere tutte le opzioni.",
+        "description": "Una regola semplice: scegli un pacchetto che sia un passo sensato rispetto a ciò che il Reel ha già. Passare da 50 a 25.000 visualizzazioni sembra strano; da 300 a 1.000 no.",
         "rows": [
           {
             "id": "buy-instagram-views-pkg-100",
             "quantity": "100 visualizzazioni",
-            "recommendedFor": "Un’opzione più piccola per un Reel o un video in cui vuoi un aumento contenuto del conteggio visualizzazioni visibile."
+            "recommendedFor": "Per un Reel nuovissimo con quasi nessuna visualizzazione o per provare il servizio prima di un ordine più grande."
           },
           {
             "id": "buy-instagram-views-pkg-500",
             "quantity": "500 visualizzazioni",
-            "recommendedFor": "Un’opzione intermedia per i video Instagram in cui vuoi un cambiamento più visibile nel numero di visualizzazioni."
+            "recommendedFor": "Per un Reel fermo a qualche centinaio di visualizzazioni che vuoi far sembrare attivo."
           },
           {
             "id": "buy-instagram-views-pkg-1k",
             "quantity": "1.000 visualizzazioni",
-            "recommendedFor": "Un pacchetto più grande per un Reel o un video selezionato in cui vuoi aggiungere mille visualizzazioni in un solo ordine."
+            "recommendedFor": "La nostra scelta più popolare: un buon inizio per un Reel di lancio o un post che stai promuovendo."
           },
           {
             "id": "buy-instagram-views-pkg-5k",
             "quantity": "5.000 visualizzazioni",
-            "recommendedFor": "Un’opzione a volume più alto per i video Instagram in cui vuoi un aumento più ampio del conteggio visualizzazioni visibile."
+            "recommendedFor": "Per Reels che vanno già abbastanza bene e hanno bisogno di un contatore più alto in proporzione."
           },
           {
             "id": "buy-instagram-views-pkg-10k",
             "quantity": "10.000+ visualizzazioni",
-            "recommendedFor": "Un’opzione per Reel o video in cui stai scegliendo una delle quantità di visualizzazioni più grandi disponibili su NovaLikes."
+            "recommendedFor": "Per Reels di campagna o di brand. Valuta la consegna graduale così il contatore sale in un periodo più lungo."
           }
         ]
       },
@@ -502,35 +510,35 @@
     "whyBuy": {
       "id": "buy-instagram-views-why-buy",
       "title": "Perché Si comprano visualizzazioni Instagram?",
-      "description": "Si comprano visualizzazioni Instagram per tipi di video e motivi diversi. Alcuni usano i pacchetti visualizzazioni per un Reel o un video nuovo, altri per contenuti di prodotto, annunci, campagne o altri post su cui vogliono più visualizzazioni visibili. Il servizio cambia il conteggio visualizzazioni visibile sul contenuto selezionato, ma non garantisce like, commenti, follower, portata, vendite o crescita organica.",
+      "description": "Dagli ordini che abbiamo gestito negli anni, la maggior parte delle persone compra visualizzazioni per alcuni motivi pratici. Nessuno è «diventare virale»: le visualizzazioni da sole non lo fanno.",
       "items": [
         {
           "id": "buy-instagram-views-wb-1",
-          "title": "Aggiungi visualizzazioni a un Reel o a un video nuovo",
-          "description": "Un pacchetto visualizzazioni si può usare su un video pubblicato di recente, quando vuoi aumentarne il conteggio visualizzazioni visibile."
+          "title": "Un nuovo Reel sembra vuoto",
+          "description": "Le prime persone che vedono un Reel con 12 visualizzazioni spesso scorrono oltre. Un contatore iniziale fa sembrare i contenuti nuovi meno abbandonati."
         },
         {
           "id": "buy-instagram-views-wb-2",
-          "title": "Supporta contenuti di prodotto o di campagna",
-          "description": "Creator e aziende possono usare le visualizzazioni Instagram su Reel o video legati a un prodotto, una promozione, un annuncio o una campagna."
+          "title": "Video di prodotto e di lancio",
+          "description": "Le piccole attività aggiungono visualizzazioni a demo di prodotto e Reels di lancio che condividono anche sul sito, su WhatsApp o nelle inserzioni."
         },
         {
           "id": "buy-instagram-views-wb-3",
-          "title": "Aumenta il conteggio visualizzazioni visibile",
-          "description": "Le visualizzazioni Instagram si applicano al Reel o al video selezionato, invece di cambiare il numero di follower mostrato sul profilo."
+          "title": "Una griglia irregolare",
+          "description": "Quando un Reel ha 30.000 visualizzazioni e il successivo 300, alcuni creator integrano quelli più bassi per rendere il profilo coerente."
         },
         {
           "id": "buy-instagram-views-wb-4",
-          "title": "Scegli una quantità per il video",
-          "description": "Quantità diverse ti permettono di scegliere il numero di visualizzazioni in base al singolo Reel o video che vuoi usare."
+          "title": "Prima di avviare le inserzioni",
+          "description": "Alcuni clienti aggiungono un piccolo pacchetto a un Reel prima di promuoverlo con inserzioni a pagamento, così l’inserzione non parte da zero."
         },
         {
           "id": "buy-instagram-views-wb-5",
-          "title": "Usa le visualizzazioni insieme ai tuoi contenuti",
-          "description": "Comprare visualizzazioni cambia una metrica visibile sul contenuto selezionato. Il video in sé, la didascalia, le decisioni di pubblicazione, le risposte e le altre attività dell’account dipendono ancora da come gestisci la presenza Instagram."
+          "title": "Aspettative realistiche",
+          "description": "Le visualizzazioni cambiano un numero. Like, commenti, follow e vendite dipendono sempre dal Reel stesso e dalle persone che lo guardano."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare è il numero di follower del profilo, i like o i commenti, e non le visualizzazioni video, scegli invece il servizio Instagram corrispondente."
+      "bottomNote": "Se in realtà vuoi più follower sul profilo, like su un post o commenti, sono servizi separati: confronta le opzioni qui sotto."
     },
     "howToBuy": {
       "id": "how-it-works",

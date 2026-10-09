@@ -73,6 +73,7 @@
     "publicVideoLinkOnly": "Solo link video pubblico",
     "publicFacebookPageUrlOnly": "Solo URL Pagina Facebook pubblica",
     "publicFacebookPostUrlOnly": "Solo URL post Facebook pubblico",
+    "publicFacebookPageOrProfileUrl": "URL pubblica di Pagina o profilo Facebook",
     "publicUrlOnly": "Solo URL pubblica",
     "noPassword": "Nessuna password",
     "secureCheckout": "Checkout sicuro",
@@ -88,7 +89,12 @@
     "recommended": "Consigliato",
     "youSave": "Risparmi",
     "selected": "Selezionato",
-    "off": "di sconto"
+    "off": "di sconto",
+    "startsIn6to8Hours": "Avvio in 6–8 ore",
+    "sixMonthRefill": "Refill di 6 mesi",
+    "gradualDeliveryOnRequest": "Consegna graduale su richiesta",
+    "packageQualityAria": "Qualità del pacchetto",
+    "packageQuantitiesAria": "Quantità del pacchetto"
   },
   "faq": {
     "categories": "Categorie",

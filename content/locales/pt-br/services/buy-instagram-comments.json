@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIÇOS DO INSTAGRAM",
-      "title": "Comprar comentários no Instagram",
-      "description": "Compre comentários no Instagram para um post ou Reel público escolhendo o pacote e a quantidade que combinam com o conteúdo que você quer usar. A NovaLikes permite comparar as opções e os preços de comentários disponíveis antes de pedir. Selecione o pacote, envie a URL pública correta do post no Instagram e conclua o pedido online. A senha do Instagram não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "title": "Comprar comentários no Instagram para posts e Reels",
+      "description": "Compre comentários no Instagram para qualquer post ou Reel público, de comentários High Quality curtos e positivos a comentários Premium escritos sobre o seu post. Envie o seu próprio texto ou peça outro idioma na observação do checkout. Sem senha. A maioria dos pedidos começa em 6–8 horas, e todo pedido inclui reposição de 6 meses e suporte pelo WhatsApp 24/7.",
       "purpose": "Convert visitors searching for Instagram comments packages",
       "primaryKeyword": "buy Instagram comments",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "ig-c-trust-public-url",
-          "label": "Somente URL pública do post"
+          "label": "High Quality ou Premium"
         },
         {
           "id": "ig-c-trust-password",
-          "label": "Sem senha necessária"
+          "label": "Comentários personalizados sob pedido"
         },
         {
           "id": "ig-c-trust-checkout",
-          "label": "Checkout seguro"
+          "label": "Sem senha necessária"
         },
         {
           "id": "ig-c-trust-track",
-          "label": "Acompanhamento do pedido"
+          "label": "Reposição de 6 meses"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacotes e preços de comentários no Instagram",
-      "description": "Compare os pacotes, as quantidades e os preços de comentários no Instagram disponíveis antes de pedir. Escolha entre as opções de comentários disponíveis, selecione o número de comentários que quer para o post ou Reel e revise os detalhes do pacote antes de adicioná-lo ao carrinho.",
+      "description": "Os preços estão em dólares americanos. Alterne entre High Quality e Premium para ver cada grupo de pacotes; 25 comentários High Quality e 10 Premium são as opções mais populares.",
       "purpose": "Present real NovaLikes.com comments packages",
       "primaryKeyword": "Instagram comments packages",
       "suggestedWordCount": 40,
@@ -272,31 +272,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-instagram-comments-why-choose",
-        "title": "Por que escolher a NovaLikes para comentários no Instagram?",
-        "description": "A NovaLikes facilita comparar pacotes de comentários no Instagram antes de pedir. Escolha o tipo de pacote e a quantidade que quer para um post ou Reel específico, revise o preço, envie a URL pública correta do conteúdo e acompanhe o pedido depois do checkout.",
+        "title": "Por que comprar comentários no Instagram na NovaLikes?",
+        "description": "Comentários são a única métrica que as pessoas realmente leem, então precisam de mais cuidado do que um número. Nossa equipe cuida de pedidos do Instagram há 7–8 anos, primeiro em outros sites, depois como ViralMe e agora como NovaLikes. Veja o que um pedido de comentários inclui.",
         "items": [
           {
             "id": "buy-instagram-comments-0",
-            "title": "Quantidades diferentes de comentários",
-            "description": "Compare as quantidades de comentários disponíveis para encontrar uma opção que combine com o post ou Reel do Instagram que você quer usar.",
+            "title": "Dois tipos de comentário",
+            "description": "High Quality traz comentários curtos e positivos. Premium traz comentários escritos sobre o seu post, de contas com aparência mais realista.",
             "icon": "users"
           },
           {
             "id": "buy-instagram-comments-1",
-            "title": "Várias opções de pacote",
-            "description": "Escolha entre os tipos de pacote de comentários no Instagram disponíveis e revise a quantidade e o preço atuais antes de pedir.",
+            "title": "Suas próprias palavras, se quiser",
+            "description": "Prefere escolher o texto? Envie seus comentários na observação do checkout ou pelo WhatsApp e usamos os seus no lugar dos nossos.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-comments-2",
-            "title": "Para posts e Reels específicos",
-            "description": "Os comentários no Instagram são pedidos para o post ou Reel público que você envia, e não para o perfil como um todo.",
+            "title": "Em inglês ou no seu idioma",
+            "description": "Os comentários são escritos em inglês por padrão. Precisa de outro idioma para o seu público? Peça na observação e a gente organiza.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-comments-3",
-            "title": "Acompanhamento do pedido",
-            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de comentários no Instagram.",
+            "title": "Reposição de 6 meses",
+            "description": "Se comentários entregues sumirem em até 6 meses, envie o número do pedido pelo WhatsApp e repomos os que faltarem.",
             "icon": "headphones"
           }
         ]
@@ -306,66 +306,74 @@
       "canYouBuy": {
         "id": "buy-instagram-comments-can-you-buy",
         "title": "Dá para comprar comentários no Instagram?",
-        "description": "Sim. Comentários no Instagram podem ser comprados para posts e Reels públicos elegíveis. Na NovaLikes, você escolhe um pacote e uma quantidade de comentários disponíveis, envia a URL pública do conteúdo do Instagram que quer usar e conclui o pedido pelo site.",
+        "description": "Sim. Você pode comprar comentários para qualquer post de foto, carrossel ou Reel público do Instagram. Escolha High Quality ou Premium, quantos comentários quer, cole o link do post e pague em dólares americanos. Os comentários aparecem só naquele post.",
         "cards": [
           {
             "id": "buy-instagram-comments-4",
-            "title": "O que um pedido de comentários no Instagram altera",
-            "description": "Um pedido de comentários no Instagram adiciona comentários ao post ou Reel específico enviado com o pedido. Ele não altera a contagem de seguidores, curtidas ou visualizações da conta.",
+            "title": "O que você recebe",
+            "description": "Comentários de contas diferentes publicados no post enviado. Você pode responder, curtir ou fixar um, como qualquer outro comentário.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-instagram-comments-5",
-            "title": "O que você precisa para fazer um pedido",
-            "description": "Você precisa da URL pública correta do post ou Reel no Instagram e do pacote de comentários que quer comprar. A senha do Instagram não é necessária.",
+            "title": "O que precisamos de você",
+            "description": "O link público do post ou Reel e, se quiser, o seu próprio texto ou um idioma preferido. Nunca a sua senha do Instagram.",
             "icon": "briefcase"
           },
           {
             "id": "buy-instagram-comments-6",
-            "title": "O que os comentários no Instagram não incluem",
-            "description": "Comentários são separados de seguidores, curtidas e visualizações. Pedir comentários no Instagram não acrescenta automaticamente essas outras métricas nem garante alcance, engajamento, vendas ou crescimento orgânico extras.",
+            "title": "O que os comentários não fazem",
+            "description": "Eles não trazem seguidores, curtidas ou visualizações e não iniciam conversas reais sozinhos. Eles fazem o post parecer comentado.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes do checkout, garanta que você selecionou comentários no Instagram, escolheu o pacote e a quantidade corretos e enviou a URL do post ou Reel onde quer que os comentários sejam adicionados."
+        "closingNote": "Antes de pedir, confira se os comentários estão ativados no post e liberados para todos. Se estiverem desativados ou limitados a seguidores, o pedido não pode ser entregue."
       },
       "doesBuyingHelp": {
         "id": "buy-instagram-comments-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Comentários comprados ajudam um post no Instagram?",
+        "description": "Eles fazem o post parecer vivo, e isso importa principalmente para quem o abre. Um post com alguns comentários relevantes convida a próxima pessoa a participar; um sem nenhum costuma ser ignorado. O Instagram também olha as conversas no post, mas sabe diferenciar uma discussão real de uma lista de respostas de uma palavra, então comentários não são um botão de alcance.",
+        "helpTitle": "Onde os comentários funcionam bem",
+        "helpItems": [
+          "Posts de produtos e serviços, em que os visitantes leem os comentários antes de confiar em uma empresa.",
+          "Posts de lançamento, sorteio e anúncio que precisam parecer ativos desde o início.",
+          "Posts em que você responde aos comentários, para a conversa parecer real."
+        ],
+        "limitTitle": "Onde eles não bastam",
+        "limitItems": [
+          "Comentários genéricos em um post muito específico: aqui, Premium ou o seu próprio texto são a melhor escolha.",
+          "Um post com 80 comentários e só 30 curtidas parece desequilibrado. Mantenha os comentários em proporção.",
+          "Comentários não vão fazer o Instagram impulsionar um post que os espectadores reais pulam."
+        ],
+        "closingNote": "Nosso guia do Learn Center (em inglês) que compara seguidores, curtidas, visualizações e comentários do Instagram explica como os visitantes e o Instagram enxergam cada um."
       },
       "whatHappens": {
         "id": "buy-instagram-comments-what-happens",
         "title": "O que acontece depois que você compra comentários no Instagram?",
-        "description": "Depois de fazer um pedido de comentários no Instagram, o pacote, a quantidade e a URL do conteúdo enviados são usados para processar o pedido no post ou Reel selecionado. Mantenha o conteúdo acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "description": "Veja o que acontece depois que você paga um pedido de comentários no Instagram.",
         "steps": [
           {
             "id": "buy-instagram-comments-th-1",
-            "title": "Os dados do pedido são conferidos",
-            "description": "O pacote de comentários, a quantidade e a URL do Instagram enviada são associados ao pedido para que a solicitação possa ser processada no conteúdo pretendido."
+            "title": "Primeiro lemos sua observação",
+            "description": "Se você enviou seus próprios comentários, um idioma ou um ritmo na observação do checkout, isso é aplicado ao pedido antes de qualquer publicação."
           },
           {
             "id": "buy-instagram-comments-th-2",
-            "title": "Os comentários vão para o conteúdo enviado",
-            "description": "O pedido se aplica ao post ou Reel do Instagram ligado à URL que você enviou. Confira o link com cuidado antes de concluir o checkout."
+            "title": "Os comentários começam em 6–8 horas",
+            "description": "A maioria dos pedidos de comentários começa em até 6–8 horas após o pagamento. Pedidos graduais são distribuídos para os comentários chegarem ao longo de mais tempo."
           },
           {
             "id": "buy-instagram-comments-th-3",
-            "title": "O tempo de processamento pode variar",
-            "description": "O tempo necessário para processar um pedido pode variar conforme o pacote de comentários, a quantidade e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pedidos."
+            "title": "A maioria termina em 4–6 horas",
+            "description": "Depois de iniciado, um pedido padrão de comentários costuma terminar em 4–6 horas. Acompanhe com o número do pedido na página Rastrear pedido."
           },
           {
             "id": "buy-instagram-comments-th-4",
-            "title": "Confira o status do pedido",
-            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+            "title": "Coberto por 6 meses",
+            "description": "O período de reposição começa quando a entrega termina. Se comentários forem removidos depois, fale com a gente no WhatsApp e repomos."
           }
         ],
-        "closingNote": "Evite excluir o post ou Reel enviado, torná-lo indisponível ou alterar qualquer coisa que impeça o acesso ao conteúdo enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+        "closingNote": "Mantenha a conta pública e os comentários ativados até a entrega terminar. Não apague nem oculte os comentários entregues, ou a reposição não poderá cobri-los."
       },
       "serviceCompare": {
         "id": "buy-instagram-comments-service-compare",
@@ -397,8 +405,8 @@
       "beforeBuying": {
         "id": "buy-instagram-comments-before-buying",
         "title": "O que conferir antes de comprar comentários no Instagram",
-        "description": "Antes de comprar comentários no Instagram, revise o pacote e os detalhes do conteúdo antes de concluir o pedido. Garanta que o tipo de pacote, a quantidade de comentários, o preço, a URL do Instagram e o serviço correspondam ao que você quer para o post ou Reel selecionado.",
-        "framingNote": "Confira o conteúdo enviado, o pacote de comentários, a quantidade e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar comentários garante alcance, engajamento, seguidores, vendas ou crescimento orgânico extras.",
+        "description": "Comentários são texto público no seu post, então uma conferência rápida antes do checkout importa mais aqui do que com curtidas ou visualizações.",
+        "framingNote": "Os preços estão em dólares americanos. Se quiser seus próprios comentários ou outro idioma, escreva na observação antes de pagar.",
         "items": [
           {
             "id": "buy-instagram-comments-7",
@@ -434,33 +442,33 @@
       },
       "worldwide": {
         "id": "buy-instagram-comments-worldwide",
-        "title": "Escolhendo conteúdo para um pedido de comentários no Instagram",
-        "description": "Comentários no Instagram se aplica a um post ou Reel público elegível específico. Garanta que o conteúdo que você envia é exatamente aquele do Instagram onde quer aplicar o pacote de comentários selecionado.",
-        "eyebrow": "Pronto para comentários no Instagram",
-        "closingNote": "Comentários no Instagram se aplica a um post ou Reel específico. Envie a URL correta do conteúdo, mantenha o conteúdo disponível e revise a opção de comentários selecionada antes do checkout.",
+        "title": "Comentários High Quality x Premium e as configurações que importam",
+        "description": "A principal escolha é o tipo de comentário. Depois disso, duas configurações do Instagram decidem se os comentários podem ser entregues e continuam visíveis.",
+        "eyebrow": "Escolha os comentários certos",
+        "closingNote": "Não sabe qual tipo combina com o seu post? Mande o link no WhatsApp antes de pedir e indicamos um.",
         "cards": [
           {
             "id": "buy-instagram-comments-12",
-            "title": "Envie a URL correta do conteúdo",
-            "description": "Use a URL pública do post ou Reel pedida no checkout. Não envie só o perfil do Instagram quando o serviço exigir uma URL de conteúdo.",
+            "title": "High Quality",
+            "description": "Comentários curtos e positivos, como reações e elogios. Combinam com posts de lifestyle, fotos e Reels em que uma reação geral faz sentido.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-comments-13",
-            "title": "Mantenha o post ou Reel disponível",
-            "description": "O conteúdo enviado deve permanecer acessível ao público quando for exigido enquanto o pedido estiver sendo processado.",
+            "title": "Premium",
+            "description": "Comentários escritos sobre o que o seu post mostra ou diz, de contas com aparência mais realista. Melhores para produtos, serviços e posts que fazem uma pergunta.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-comments-14",
-            "title": "Revise a opção de comentários",
-            "description": "Confira o pacote e a quantidade de comentários disponíveis antes de pedir, para entender o que você selecionou.",
+            "title": "Quem pode comentar",
+            "description": "Nas configurações do Instagram, os comentários precisam estar liberados para todos. Se estiverem limitados a seguidores ou a quem você segue, o pedido não pode ser entregue.",
             "icon": "headphones"
           },
           {
             "id": "buy-instagram-comments-15",
-            "title": "Comentários são uma métrica separada",
-            "description": "Comentários não acrescentam automaticamente seguidores, curtidas ou visualizações. Escolha o serviço que corresponde à métrica que você realmente quer para o conteúdo.",
+            "title": "Filtro de palavras ocultas",
+            "description": "O Instagram pode ocultar comentários que batem com seus filtros. Se comentários entregues não aparecerem, confira os comentários ocultos do post e suas configurações de palavras ocultas.",
             "icon": "clapperboard"
           }
         ]
@@ -468,32 +476,32 @@
       "packageSizes": {
         "id": "buy-instagram-comments-popular-packages",
         "title": "Pacotes populares de comentários no Instagram",
-        "description": "Compare alguns dos pacotes de comentários no Instagram disponíveis na NovaLikes abaixo. Revise o tipo de pacote, a quantidade de comentários e o preço atual, ou volte à seção completa de preços para ver todas as opções.",
+        "description": "Os comentários devem ficar em proporção às suas curtidas. Como referência, um post costuma ter bem menos comentários do que curtidas, então 10–25 comentários servem para a maioria dos posts e os pacotes maiores para conteúdos de grande alcance.",
         "rows": [
           {
             "id": "ig-c-10",
             "quantity": "10 comentários",
-            "recommendedFor": "Uma opção menor para um post ou Reel em que você quer acrescentar um número limitado de comentários."
+            "recommendedFor": "Para um post que ainda não tem comentários, ou para ver como o serviço fica antes de pedir mais."
           },
           {
             "id": "ig-c-25",
             "quantity": "25 comentários",
-            "recommendedFor": "Uma opção para conteúdo no Instagram em que você quer mais comentários do que o pacote menor disponível."
+            "recommendedFor": "Nosso pacote High Quality mais popular: o suficiente para um post comum parecer comentado."
           },
           {
             "id": "ig-c-50",
             "quantity": "50 comentários",
-            "recommendedFor": "Uma opção intermediária de pacote para um post ou Reel público selecionado."
+            "recommendedFor": "Para posts de produto, lançamento ou sorteio que já recebem algumas centenas de curtidas."
           },
           {
             "id": "ig-c-75",
             "quantity": "75 comentários",
-            "recommendedFor": "Uma opção maior para conteúdo no Instagram em que você quer um número mais alto de comentários adicionados."
+            "recommendedFor": "Para contas grandes e Reels com bastante alcance. Considere a entrega gradual."
           },
           {
             "id": "ig-c-100",
             "quantity": "100 comentários",
-            "recommendedFor": "Uma das quantidades maiores de comentários atualmente disponíveis para conteúdo elegível no Instagram."
+            "recommendedFor": "Para posts de campanha em contas grandes. Distribua a entrega para a conversa crescer de forma natural."
           }
         ]
       },
@@ -608,35 +616,35 @@
     "whyBuy": {
       "id": "buy-instagram-comments-why-buy",
       "title": "Por que as pessoas compram comentários no Instagram?",
-      "description": "As pessoas compram comentários no Instagram para tipos diferentes de posts e Reels. Algumas usam pacotes de comentários em conteúdo de produto, anúncios, campanhas ou outras publicações em que querem comentários adicionais exibidos. O serviço adiciona comentários ao conteúdo selecionado, mas não garante mais seguidores, curtidas, visualizações, alcance, vendas ou crescimento orgânico.",
+      "description": "A maioria dos pedidos de comentários que atendemos se encaixa em poucos grupos. Todos têm a ver com a primeira impressão que um post passa para quem o lê.",
       "items": [
         {
           "id": "buy-instagram-comments-wb-1",
-          "title": "Acrescente comentários a um post ou Reel",
-          "description": "Um pacote de comentários pode ser usado quando você quer comentários adicionais exibidos em um post ou Reel público específico no Instagram."
+          "title": "Uma seção de comentários vazia",
+          "description": "Um post com zero comentários pode parecer ignorado. Alguns comentários facilitam que o próximo visitante também diga algo."
         },
         {
           "id": "buy-instagram-comments-wb-2",
-          "title": "Use comentários em conteúdo de produto ou campanha",
-          "description": "Negócios e criadores podem pedir comentários para conteúdo ligado a um produto, promoção, anúncio, lançamento ou campanha."
+          "title": "Posts de produtos e serviços",
+          "description": "Empresas adicionam comentários Premium a fotos de produtos e posts de serviços, em que os clientes leem os comentários antes de decidir."
         },
         {
           "id": "buy-instagram-comments-wb-3",
-          "title": "Foque a métrica de comentários",
-          "description": "Os comentários no Instagram se aplicam ao conteúdo selecionado, em vez de alterar a contagem de seguidores do perfil ou acrescentar automaticamente curtidas ou visualizações."
+          "title": "Sorteios e lançamentos",
+          "description": "Posts de curta duração — eventos, sorteios, dias de lançamento — precisam parecer ativos rápido."
         },
         {
           "id": "buy-instagram-comments-wb-4",
-          "title": "Escolha uma quantidade de comentários",
-          "description": "Tamanhos diferentes de pacote permitem selecionar o número de comentários que você quer para o post ou Reel individual que envia."
+          "title": "Perguntas na legenda",
+          "description": "Quando a legenda faz uma pergunta, algumas respostas nos comentários mostram que o post está aberto à conversa."
         },
         {
           "id": "buy-instagram-comments-wb-5",
-          "title": "Use comentários junto com o próprio conteúdo",
-          "description": "Comprar comentários não substitui publicar e administrar o próprio conteúdo. Legendas, respostas, posts novos e outras atividades da conta ainda dependem de como você administra a presença no Instagram."
+          "title": "Uma conversa para responder",
+          "description": "Os donos respondem aos comentários entregues ou fixam um, o que transforma um post parado em algo que parece uma conversa."
         }
       ],
-      "bottomNote": "Se quiser alterar a contagem de seguidores, a contagem de curtidas ou as visualizações de vídeo, e não acrescentar comentários, escolha o serviço correspondente de Instagram."
+      "bottomNote": "Os comentários mudam só a seção de comentários de um post. Para um perfil maior, mais curtidas ou mais visualizações de Reels, compare os outros serviços do Instagram abaixo."
     },
     "howToBuy": {
       "id": "how-it-works",

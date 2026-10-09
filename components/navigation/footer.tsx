@@ -127,27 +127,6 @@ export function Footer({
                 </li>
               ))}
             </ul>
-            <div className="mt-5 space-y-1.5 text-sm leading-relaxed text-[#6B6560]">
-              <p className="font-semibold text-[#1C1917]">{site.company.legalName}</p>
-              <p>Company number {site.company.companyNumber}</p>
-              <p>{site.company.officeAddress}</p>
-              <p>
-                WhatsApp Number:{' '}
-                <span dir="ltr" className="whitespace-nowrap">
-                  +{site.whatsappNumber}
-                </span>
-              </p>
-              <p>
-                <a
-                  href={`https://wa.me/${site.whatsappNumber}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-[#25D366] underline-offset-4 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  Chat on WhatsApp
-                </a>
-              </p>
-            </div>
           </div>
 
           <nav aria-label={ui.footer.ariaLabel} className="contents">
@@ -241,6 +220,19 @@ export function Footer({
         <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs tracking-wide text-[#6B6560]">
           <span>
             © 2026 {site.name}. {ui.footer.allRightsReserved}
+          </span>
+          <span className="hidden h-3 w-px bg-[#E8D5C4] sm:block" aria-hidden="true" />
+          <span>
+            {site.name} is operated by {site.company.legalName} · Company No.{' '}
+            {site.company.companyNumber} · {site.company.addressDisplay} · WhatsApp{' '}
+            <a
+              href={`https://wa.me/${site.whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[#4A4540] underline decoration-[#E8D5C4] underline-offset-2 hover:text-[#E85D04]"
+            >
+              {site.company.phoneDisplay}
+            </a>
           </span>
           <span className="hidden h-3 w-px bg-[#E8D5C4] sm:block" aria-hidden="true" />
           <span className="inline-flex flex-wrap items-center justify-center gap-x-1">

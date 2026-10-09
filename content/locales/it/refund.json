@@ -117,11 +117,15 @@
         },
         {
           "type": "paragraph",
-          "text": "La disponibilità del refill dipende dal servizio e dal pacchetto acquistati. Eventuali condizioni di refill applicabili sono quelle indicate per il relativo servizio o pacchetto."
+          "text": "Ogni servizio NovaLikes include un periodo di refill di 6 mesi, che inizia dalla data di consegna del tuo ordine. Se la quantità consegnata cala in quel periodo, contatta l’assistenza su WhatsApp (+44 7454 758272) o via email con il tuo ID ordine e reintegreremo la differenza sullo stesso profilo, sulla stessa Pagina o sullo stesso contenuto."
         },
         {
           "type": "paragraph",
-          "text": "La Garanzia di rimborso di 30 giorni è distinta da eventuali termini di refill specifici del pacchetto. Questa pagina non converte la finestra di rimborso in una garanzia universale di refill di 30 giorni."
+          "text": "Per avere diritto al refill, lo username non deve essere cambiato e il profilo, la Pagina o il contenuto devono essere pubblici mentre vengono consegnati l’ordine originale ed eventuali refill. Puoi rendere privato il tuo account a consegna completata."
+        },
+        {
+          "type": "paragraph",
+          "text": "La Garanzia di rimborso di 30 giorni è separata dal periodo di refill di 6 mesi. Un refill reintegra i cali delle metriche consegnate; la garanzia di rimborso copre le richieste di rimborso idonee presentate entro 30 giorni dall’acquisto."
         }
       ]
     },

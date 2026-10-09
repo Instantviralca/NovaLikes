@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIZI TIKTOK",
-      "title": "Comprare follower TikTok",
-      "description": "Comprare follower TikTok significa scegliere il pacchetto e la quantità adatti al tuo account. NovaLikes ti consente di confrontare pacchetti e prezzi dei follower prima di ordinare. Seleziona il numero di follower TikTok che vuoi, indica lo username TikTok pubblico corretto e completa l’ordine online. La password TikTok non è richiesta e, dopo il checkout, puoi usare il tracciamento per vedere gli aggiornamenti di stato disponibili.",
+      "title": "Comprare follower TikTok senza password",
+      "description": "Compra follower TikTok per qualsiasi account pubblico a partire da 2,99 USD. Inserisci il nome utente, scegli un pacchetto e paga: non chiediamo mai la tua password. La maggior parte degli ordini parte entro 6–8 ore e finisce 4–6 ore dopo, oppure arriva in modo graduale su richiesta. Ogni ordine include un refill di 6 mesi e supporto WhatsApp 24/7.",
       "purpose": "Convert for TikTok follower packages worldwide",
       "primaryKeyword": "buy TikTok followers",
       "supportingKeywords": [
@@ -31,7 +31,7 @@
       "trustLabels": [
         {
           "id": "tt-f-trust-public",
-          "label": "Solo username pubblico"
+          "label": "Solo nome utente"
         },
         {
           "id": "tt-f-trust-password",
@@ -39,11 +39,11 @@
         },
         {
           "id": "tt-f-trust-checkout",
-          "label": "Checkout sicuro"
+          "label": "Avvio in 6–8 ore"
         },
         {
           "id": "tt-f-trust-track",
-          "label": "Tracciamento ordine"
+          "label": "Refill di 6 mesi"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacchetti e prezzi follower TikTok",
-      "description": "Confronta pacchetti, quantità e prezzi dei follower TikTok prima di ordinare. Scegli il numero di follower che vuoi per il tuo profilo TikTok pubblico, rivedi il prezzo attuale del pacchetto e aggiungi l’opzione selezionata al carrello quando sei pronto.",
+      "description": "I prezzi sono in dollari statunitensi. 1.000 follower è il pacchetto più popolare; scegli una dimensione adatta alle visualizzazioni che i tuoi video già ottengono.",
       "purpose": "Present real NovaLikes.com TikTok follower packages",
       "primaryKeyword": "TikTok follower packages",
       "suggestedWordCount": 45,
@@ -232,31 +232,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-tiktok-followers-why-choose",
-        "title": "Perché scegliere NovaLikes per i follower TikTok?",
-        "description": "NovaLikes rende facile confrontare i pacchetti follower TikTok prima di ordinare. Scegli la quantità di follower che vuoi per il profilo pubblico, rivedi il prezzo attuale, indica lo username TikTok corretto e usa il tracciamento dopo il checkout per vedere gli aggiornamenti di stato disponibili.",
+        "title": "Perché comprare follower TikTok su NovaLikes?",
+        "description": "Il nostro team gestisce ordini per i social da 7–8 anni, prima su altri siti, poi come ViralMe e oggi come NovaLikes. Un ordine di follower TikTok con noi ha quattro condizioni chiare.",
         "items": [
           {
             "id": "buy-tiktok-followers-0",
-            "title": "Più quantità di follower",
-            "description": "Confronta le quantità di follower TikTok disponibili e scegli il pacchetto che corrisponde al numero di follower che vuoi ordinare.",
+            "title": "Solo il nome utente",
+            "description": "Ci serve solo il tuo nome utente TikTok pubblico. Nessuna password, nessun link di accesso, nessuna app da installare.",
             "icon": "users"
           },
           {
             "id": "buy-tiktok-followers-1",
-            "title": "Solo username pubblico",
-            "description": "Indica lo username TikTok pubblico corretto dell’account su cui vuoi aggiungere i follower. La password TikTok non è richiesta.",
+            "title": "Avvio in 6–8 ore",
+            "description": "La maggior parte degli ordini di follower parte entro 6–8 ore dal pagamento e finisce 4–6 ore dopo.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-followers-2",
-            "title": "Rivedi prima del checkout",
-            "description": "Controlla la quantità di follower selezionata e il prezzo attuale del pacchetto prima di aggiungere l’ordine al carrello e completare il checkout.",
+            "title": "Graduale su richiesta",
+            "description": "Vuoi che i follower salgano piano? Chiedi la consegna graduale nella nota al pagamento o su WhatsApp prima che l’ordine parta.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-followers-3",
-            "title": "Tracciamento ordine",
-            "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di follower TikTok.",
+            "title": "Refill di 6 mesi",
+            "description": "Se il numero di follower cala entro 6 mesi dalla consegna, inviaci il numero d’ordine su WhatsApp e lo ricompletiamo.",
             "icon": "headphones"
           }
         ]
@@ -266,66 +266,74 @@
       "canYouBuy": {
         "id": "buy-tiktok-followers-can-you-buy",
         "title": "Si possono comprare follower TikTok?",
-        "description": "Sì. I follower TikTok si possono acquistare tramite servizi follower online. Con NovaLikes scegli un pacchetto follower disponibile, indichi lo username TikTok pubblico del profilo che vuoi usare e completi l’ordine sul sito.",
+        "description": "Sì. Puoi comprare follower per qualsiasi account TikTok pubblico. Scegli un pacchetto, inserisci il tuo nome utente (senza @) e paga in dollari statunitensi. I follower si aggiungono al contatore del profilo; i tuoi video restano esattamente come sono.",
         "cards": [
           {
             "id": "buy-tiktok-followers-4",
-            "title": "Cosa cambia un ordine di follower TikTok",
-            "description": "Un ordine di follower TikTok si applica al conteggio follower del profilo pubblico indicato con l’ordine. Non aggiunge automaticamente Mi piace o visualizzazioni ai singoli video TikTok.",
+            "title": "Cosa cambia",
+            "description": "Il numero di follower del tuo profilo TikTok sale della quantità del pacchetto. Like e visualizzazioni dei video non cambiano.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-tiktok-followers-5",
-            "title": "Cosa ti serve per effettuare un ordine",
-            "description": "Ti servono lo username TikTok pubblico corretto e il pacchetto follower che vuoi acquistare. La password TikTok non è richiesta.",
+            "title": "Chi sono i follower",
+            "description": "I follower arrivano da account dall’aspetto realistico. Non affermiamo che siano persone attive che guarderanno, metteranno like o commenteranno i tuoi video.",
             "icon": "briefcase"
           },
           {
             "id": "buy-tiktok-followers-6",
-            "title": "Cosa non includono i follower TikTok",
-            "description": "I follower sono separati da like e visualizzazioni TikTok. Ordinare follower non aggiunge automaticamente quelle altre metriche e non garantisce più engagement, portata, vendite o crescita organica.",
+            "title": "Cosa non fa",
+            "description": "I follower non portano i tuoi video nella pagina Per te. TikTok lo decide soprattutto in base a come gli spettatori reagiscono a ogni video.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Prima del checkout, assicurati di aver selezionato Follower TikTok, di aver scelto la quantità di follower corretta e di aver indicato lo username del profilo su cui vuoi aggiungere i follower."
+        "closingNote": "Controlla come è scritto il tuo nome utente prima di pagare. Un ordine non può partire su un account privato o con un nome utente cambiato."
       },
       "doesBuyingHelp": {
         "id": "buy-tiktok-followers-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "I follower TikTok acquistati ti aiutano a crescere?",
+        "description": "Possono aiutare l’aspetto del profilo, non il modo in cui TikTok classifica i tuoi video. La pagina Per te funziona video per video: TikTok prova ogni video con gli spettatori e lo spinge di più quando le persone lo guardano fino alla fine, lo rivedono, lo condividono e seguono l’account. Un numero di follower più alto fa sembrare il profilo affermato a chi lo apre: questo è il beneficio reale, e limitato.",
+        "helpTitle": "Dove un numero più alto aiuta",
+        "helpItems": [
+          "Creator e brand nuovi il cui profilo sembra vuoto a chi arriva da un video.",
+          "Attività che collegano TikTok dal proprio sito, dove i visitatori giudicano il profilo a colpo d’occhio.",
+          "Account che si presentano a brand o partner, insieme a visualizzazioni e interazioni reali."
+        ],
+        "limitTitle": "Dove non aiuta",
+        "limitItems": [
+          "Portare i video nella pagina Per te: dipende da come gli spettatori reagiscono a ogni video.",
+          "Creator Rewards: le regole di TikTok vietano di gonfiare il numero di follower, quindi non comprarli mai per qualificarti.",
+          "Un numero di follower molto più alto delle tue visualizzazioni abituali può rendere il profilo meno credibile."
+        ],
+        "closingNote": "La nostra guida del Learn Center (in inglese) sull’acquisto di follower TikTok, la pagina Per te e la sicurezza dell’account spiega rischi e limiti nel dettaglio."
       },
       "whatHappens": {
         "id": "buy-tiktok-followers-what-happens",
         "title": "Cosa succede dopo aver comprato follower TikTok?",
-        "description": "Dopo aver effettuato un ordine di follower TikTok, il pacchetto follower e lo username pubblico che hai inviato vengono usati per elaborare l’ordine sul profilo selezionato. Tieni il profilo accessibile pubblicamente, dove richiesto, mentre l’ordine viene gestito.",
+        "description": "Cosa succede tra il pagamento e un ordine di follower TikTok completato.",
         "steps": [
           {
             "id": "buy-tiktok-followers-th-1",
-            "title": "I dati dell’ordine vengono controllati",
-            "description": "Il pacchetto follower, la quantità e lo username TikTok inviati vengono associati all’ordine, così la richiesta può essere elaborata per il profilo previsto."
+            "title": "Nome utente associato all’ordine",
+            "description": "Il numero d’ordine e il nome utente inserito vengono collegati. Hai notato un errore di battitura? Scrivici subito su WhatsApp così lo correggiamo prima che parta la consegna."
           },
           {
             "id": "buy-tiktok-followers-th-2",
-            "title": "I follower vanno al profilo indicato",
-            "description": "L’ordine si applica al profilo TikTok collegato allo username che hai fornito. Controlla lo username con attenzione prima di completare il checkout."
+            "title": "I follower partono in 6–8 ore",
+            "description": "La maggior parte degli ordini parte entro 6–8 ore dal pagamento. Se hai chiesto un ritmo graduale, i follower vengono aggiunti in un periodo più lungo."
           },
           {
             "id": "buy-tiktok-followers-th-3",
-            "title": "I tempi di elaborazione possono variare",
-            "description": "Il tempo necessario per elaborare un ordine può variare in base alla quantità di follower e alle condizioni dell’ordine. Non va atteso un unico tempo di consegna fisso per ogni pacchetto."
+            "title": "Gli ordini standard finiscono in 4–6 ore",
+            "description": "Una volta avviato, un ordine standard di solito si completa in 4–6 ore. Segui l’avanzamento nella pagina Traccia ordine."
           },
           {
             "id": "buy-tiktok-followers-th-4",
-            "title": "Controlla lo stato dell’ordine",
-            "description": "Usa il tracciamento ordine NovaLikes per gli aggiornamenti di stato disponibili. Se ti serve aiuto, contatta il supporto con le informazioni dell’ordine."
+            "title": "Si apre il periodo di refill",
+            "description": "Il tuo refill di 6 mesi inizia il giorno in cui la consegna termina. Se il numero cala, invia il numero d’ordine su WhatsApp."
           }
         ],
-        "closingNote": "Evita di cambiare lo username indicato, di rendere il profilo non disponibile o di modificare qualcosa che impedisca l’accesso all’account mentre l’ordine viene elaborato. Se qualcosa cambia dopo l’ordine, contatta il supporto se ti serve assistenza."
+        "closingNote": "Tieni l’account pubblico fino al termine della consegna; dopo puoi rimetterlo privato. Non cambiare il nome utente durante la consegna né durante i 6 mesi di refill."
       },
       "serviceCompare": {
         "id": "buy-tiktok-followers-service-compare",
@@ -357,8 +365,8 @@
       "beforeBuying": {
         "id": "buy-tiktok-followers-before-buying",
         "title": "Cosa controllare prima di comprare follower TikTok",
-        "description": "Prima di comprare follower TikTok, rivedi pacchetto e dettagli del profilo prima di completare l’ordine. Assicurati che quantità di follower, prezzo, username TikTok e servizio corrispondano a ciò che vuoi per il profilo selezionato.",
-        "framingNote": "Controlla ancora una volta lo username TikTok indicato, la quantità di follower e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare follower garantirebbe più visualizzazioni, like, engagement, portata, vendite o crescita organica.",
+        "description": "Quasi ogni ordine bloccato dipende dal nome utente o da un account privato. Fai prima questi cinque controlli.",
+        "framingNote": "I prezzi sono in dollari statunitensi. Paghi in un’altra valuta? La tua banca converte l’importo al proprio tasso.",
         "items": [
           {
             "id": "buy-tiktok-followers-7",
@@ -394,33 +402,33 @@
       },
       "worldwide": {
         "id": "buy-tiktok-followers-worldwide",
-        "title": "Preparare il profilo TikTok per un ordine follower",
-        "description": "Follower TikTok è un servizio a livello di profilo. Prima di ordinare, conferma il profilo TikTok pubblico esatto e la quantità di follower che vuoi usare.",
-        "eyebrow": "Pronto per i follower TikTok",
-        "closingNote": "Follower TikTok si applica a un profilo pubblico. Conferma lo username, tieni il profilo accessibile dove richiesto e rivedi il pacchetto follower prima del checkout.",
+        "title": "TikTok LIVE, Creator Rewards e il tuo nome utente",
+        "description": "Molti chiedono se i follower sbloccano funzioni di TikTok. Ecco la risposta onesta, insieme ai dettagli del profilo che fanno filare liscio un ordine.",
+        "eyebrow": "Prima di ordinare",
+        "closingNote": "Per tutto sulle soglie LIVE, leggi la nostra guida del Learn Center (in inglese) su quanti follower servono per andare in LIVE su TikTok.",
         "cards": [
           {
             "id": "buy-tiktok-followers-12",
-            "title": "Controlla lo username TikTok",
-            "description": "Assicurati che lo username che invii appartenga al profilo TikTok previsto prima di completare il checkout.",
+            "title": "TikTok LIVE",
+            "description": "Circa 1.000 follower è il riferimento più citato per il LIVE, ma TikTok fissa la soglia per regione e controlla altri fattori, quindi il numero di follower da solo non garantisce l’accesso.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-followers-13",
-            "title": "Tieni il profilo accessibile",
-            "description": "Tieni il profilo accessibile pubblicamente, dove il servizio selezionato richiede l’accesso pubblico, mentre l’ordine viene elaborato.",
+            "title": "Creator Rewards",
+            "description": "Le regole Creator Rewards di TikTok vietano di gonfiare il numero di follower. Se pensi di partecipare, fai crescere l’account in modo organico.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-followers-14",
-            "title": "Evita di cambiare i dati del profilo",
-            "description": "Evita, se possibile, di cambiare lo username indicato mentre un ordine è attivo. Contatta il supporto se una modifica all’account influisce su un ordine esistente.",
+            "title": "Mantieni lo stesso nome utente",
+            "description": "Ordini e refill sono legati al nome utente inserito. Se devi cambiarlo, comunicaci prima su WhatsApp il vecchio e il nuovo.",
             "icon": "headphones"
           },
           {
             "id": "buy-tiktok-followers-15",
-            "title": "Rivedi il pacchetto follower",
-            "description": "Controlla quantità di follower e prezzo selezionati prima del checkout, così sai quale pacchetto è collegato all’ordine.",
+            "title": "Pubblico fino alla consegna",
+            "description": "Un account privato blocca la consegna. Rendilo pubblico per l’ordine e poi torna indietro a consegna completata.",
             "icon": "clapperboard"
           }
         ]
@@ -428,32 +436,32 @@
       "packageSizes": {
         "id": "buy-tiktok-followers-popular-packages",
         "title": "Pacchetti follower TikTok più richiesti",
-        "description": "Non sai quale pacchetto scegliere? Confronta alcune delle quantità di follower TikTok disponibili su NovaLikes qui sotto, oppure torna alla sezione prezzi completa per vedere tutte le opzioni.",
+        "description": "Scegli una dimensione adatta alle tue visualizzazioni. Un account con 200–500 visualizzazioni per video sembra naturale con qualche centinaio di follower in più; uno che passa a 10.000 follower con 50 visualizzazioni per video, no.",
         "rows": [
           {
             "id": "tt-f-100",
             "quantity": "100 follower",
-            "recommendedFor": "Un’opzione più piccola per un profilo TikTok pubblico in cui vuoi aggiungere un numero contenuto di follower."
+            "recommendedFor": "Per account nuovi o per provare il servizio prima di un ordine più grande."
           },
           {
             "id": "tt-f-500",
             "quantity": "500 follower",
-            "recommendedFor": "Un’opzione intermedia per un profilo TikTok in cui vuoi un cambiamento più ampio del conteggio follower visibile."
+            "recommendedFor": "Per creator con pochi video che vogliono un profilo meno “nuovo”."
           },
           {
             "id": "tt-f-1000",
             "quantity": "1.000 follower",
-            "recommendedFor": "Un pacchetto più grande per un profilo TikTok pubblico in cui vuoi aggiungere mille follower in un solo ordine."
+            "recommendedFor": "Il nostro pacchetto più popolare: adatto ad account che fanno già qualche migliaio di visualizzazioni per video."
           },
           {
             "id": "tt-f-5000",
             "quantity": "5.000 follower",
-            "recommendedFor": "Un’opzione a volume più alto per un profilo TikTok in cui vuoi un aumento più ampio del conteggio follower visibile."
+            "recommendedFor": "Per creator e brand affermati con visualizzazioni costanti. La consegna graduale è una buona idea."
           },
           {
             "id": "tt-f-10000",
             "quantity": "10.000 follower",
-            "recommendedFor": "Un’opzione per i profili TikTok che stanno valutando una delle quantità di follower più grandi disponibili su NovaLikes."
+            "recommendedFor": "Per grandi account di brand. Chiedi la consegna graduale così il numero sale nell’arco di più giorni."
           }
         ]
       },
@@ -563,35 +571,35 @@
     "whyBuy": {
       "id": "buy-tiktok-followers-why-buy",
       "title": "Perché si comprano follower TikTok?",
-      "description": "Si comprano follower TikTok per motivi diversi. Alcuni vogliono aumentare il numero di follower mostrato su un profilo più nuovo, altri scelgono un pacchetto follower per un account consolidato, una campagna, un lancio o un’altra attività TikTok. Il servizio cambia la metrica follower sul profilo selezionato, ma non garantisce visualizzazioni, like, engagement, portata, vendite o crescita organica.",
+      "description": "Questi sono i motivi che sentiamo più spesso dai clienti TikTok. Nessuno è “diventare virale”: i follower da soli non ci riescono.",
       "items": [
         {
           "id": "buy-tiktok-followers-wb-1",
-          "title": "Aumenta il conteggio follower visibile",
-          "description": "Un pacchetto follower TikTok si può usare quando vuoi aumentare il numero di follower mostrato sul tuo profilo pubblico."
+          "title": "Un account nuovo sembra vuoto",
+          "description": "Quando un video va bene, gli spettatori aprono il profilo. Un numero iniziale di follower fa sembrare un account nuovo meno un account di prova."
         },
         {
           "id": "buy-tiktok-followers-wb-2",
-          "title": "Usa i follower intorno a un lancio o a una campagna",
-          "description": "Creator e aziende possono scegliere un pacchetto follower mentre lavorano a un account nuovo, a un lancio di prodotto, a una campagna o ad altri contenuti TikTok."
+          "title": "Profili di aziende e negozi",
+          "description": "I brand che collegano TikTok dal sito o dalla confezione vogliono un profilo attivo quando i clienti lo guardano."
         },
         {
           "id": "buy-tiktok-followers-wb-3",
-          "title": "Concentrati sulla metrica follower",
-          "description": "Follower TikTok si applica al numero di follower del profilo, invece di aggiungere automaticamente Mi piace o visualizzazioni ai singoli video."
+          "title": "Arrivare da un’altra piattaforma",
+          "description": "Creator con un pubblico su Instagram o YouTube a volte danno a un nuovo account TikTok un numero iniziale mentre i fan si spostano."
         },
         {
           "id": "buy-tiktok-followers-wb-4",
-          "title": "Scegli la quantità che vuoi",
-          "description": "Quantità diverse ti permettono di selezionare il numero di follower TikTok che vuoi ordinare per il profilo indicato."
+          "title": "In linea con le visualizzazioni",
+          "description": "Account con buone visualizzazioni ma pochi follower ne aggiungono un numero moderato così il profilo rispecchia il rendimento dei video."
         },
         {
           "id": "buy-tiktok-followers-wb-5",
-          "title": "Usa i follower insieme ai tuoi contenuti",
-          "description": "Comprare follower non sostituisce la pubblicazione e la gestione dei tuoi contenuti TikTok. Video, didascalie, risposte e altre attività dell’account dipendono ancora da come gestisci il profilo."
+          "title": "Conoscere i limiti",
+          "description": "I follower cambiano un numero. Visualizzazioni, like e copertura su Per te dipendono sempre dai video che pubblichi."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare sono i like o le visualizzazioni video, scegli il servizio TikTok corrispondente invece di un pacchetto follower."
+      "bottomNote": "Se invece vuoi più like o visualizzazioni su un video specifico, sono servizi separati: confrontali qui sotto."
     },
     "howToBuy": {
       "id": "how-it-works",

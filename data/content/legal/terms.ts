@@ -133,6 +133,10 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
+          text: `${operatingName} is operated by DMRUSH LIMITED, a company registered in Scotland (Company No. SC876437), with its registered office at 1/4 22 Dundasvale Court, Glasgow, Scotland, G4 0XE.`,
+        },
+        {
+          type: 'paragraph',
           text: 'Current paid service categories include selected Instagram Followers, Likes, Views, and Comments; TikTok Followers, Likes, and Views; and Facebook Followers, Page Likes, and Post Likes, as offered on the website from time to time.',
         },
         {
@@ -248,11 +252,11 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
       blocks: [
         {
           type: 'paragraph',
-          text: 'Social metrics can change after delivery. Any refill conditions are governed by the applicable service or package terms shown for that purchase.',
+          text: `Social metrics can change after delivery. Every ${operatingName} service includes a 6-month refill period, starting from the date the order is delivered and subject to the conditions in the [Refund Policy](${routes.refundPolicy}).`,
         },
         {
           type: 'paragraph',
-          text: `${operatingName} does not make a universal refill promise on these Terms. See the [Refund Policy](${routes.refundPolicy}) for related order-issue guidance.`,
+          text: 'Refills are provided on the same profile, Page or content the order was placed for. They require that the username is not changed and that the relevant profile or content is public while the order and any refill are delivered.',
         },
       ],
     },

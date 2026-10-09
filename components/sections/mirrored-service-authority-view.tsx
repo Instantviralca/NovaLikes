@@ -72,7 +72,8 @@ type MirroredServiceAuthorityViewProps = {
 
 const USERNAME_ONLY = new Set(['buy-tiktok-followers']);
 const VIDEO_LINK_ONLY = new Set(['buy-tiktok-likes', 'buy-tiktok-views']);
-const PAGE_URL_ONLY = new Set(['buy-facebook-followers', 'buy-facebook-page-likes']);
+const PAGE_URL_ONLY = new Set(['buy-facebook-page-likes']);
+const PAGE_OR_PROFILE_URL = new Set(['buy-facebook-followers']);
 const POST_URL_ONLY = new Set(['buy-facebook-post-likes']);
 
 function uniqueMarketVisual(
@@ -166,7 +167,14 @@ export function MirroredServiceAuthorityView({
         ? (ui?.commerce.publicFacebookPageUrlOnly ?? 'Public Facebook Page URL Only')
         : POST_URL_ONLY.has(service.slug)
           ? (ui?.commerce.publicFacebookPostUrlOnly ?? 'Public Facebook Post URL Only')
-          : (ui?.commerce.publicUrlOnly ?? 'Public URL Only');
+          : PAGE_OR_PROFILE_URL.has(service.slug)
+            ? (ui?.commerce.publicFacebookPageOrProfileUrl ?? 'Public Facebook Page or Profile URL')
+            : (ui?.commerce.publicUrlOnly ?? 'Public URL Only');
+  const deliveryInfoPills = [
+    ui?.commerce.startsIn6to8Hours ?? 'Starts in 6–8 hours',
+    ui?.commerce.sixMonthRefill ?? '6-month refill',
+    ui?.commerce.gradualDeliveryOnRequest ?? 'Gradual delivery on request',
+  ];
   const isMarketLikes = Boolean(market) && service.slug === 'buy-instagram-likes';
   const isMarketViews = Boolean(market) && service.slug === 'buy-instagram-views';
   const isMarketComments = Boolean(market) && service.slug === 'buy-instagram-comments';
@@ -597,6 +605,7 @@ export function MirroredServiceAuthorityView({
         service={service}
         pricing={vm.pricing}
         stickyCtaLabel={marketPackageCta ?? ui?.commerce.choosePackage}
+        infoPills={deliveryInfoPills}
         summaryBenefits={
           marketTrustBadges ?? [
                 destination,
@@ -654,7 +663,7 @@ export function MirroredServiceAuthorityView({
             ? undefined
             : service.slug === 'buy-facebook-followers' || service.slug === 'buy-facebook-page-likes'
               ? [
-                  ui?.commerce.publicFacebookPageUrlOnly ?? 'Public Facebook Page URL Only',
+                  destination,
                   ui?.footer.noPassword ?? 'No Password Required',
                   ui?.commerce.secureCheckout ?? 'Secure Checkout',
                   ui?.commerce.orderTracking ?? 'Order Tracking',

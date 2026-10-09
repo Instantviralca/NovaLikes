@@ -1,6 +1,6 @@
 {
   "h1": "Avaliações NovaLikes",
-  "intro": "Avaliações de clientes do catálogo publicado da NovaLikes. As notas abaixo refletem esse catálogo e podem incluir feedback de 4 e 5 estrelas.",
+  "intro": "Avaliações dos nossos clientes, incluindo quem fez pedidos quando operávamos como ViralMe. As notas abaixo refletem este catálogo publicado e incluem avaliações de 4 e 5 estrelas.",
   "catalogueHeading": "Catálogo de avaliações de clientes",
   "emptyFilter": "Nenhuma avaliação corresponde a este filtro de plataforma.",
   "showingTemplate": "Mostrando {visible} de {total} {word}",
@@ -19,7 +19,7 @@
   "readMore": "Ler mais",
   "showLess": "Mostrar menos",
   "collectTitle": "Como coletamos avaliações",
-  "collectBody": "Estes comentários são feedback de clientes publicados no catálogo da NovaLikes. Foram importados como comentários históricos. Não estão vinculados a um pedido ao vivo e não são verificados de forma independente por terceiros.",
+  "collectBody": "Estas avaliações foram deixadas por clientes da ViralMe, o serviço que operamos por mais de quatro anos antes de ele se tornar NovaLikes em 2026. Elas foram mantidas na mudança de marca e, quando uma avaliação citava o nome antigo, agora aparece NovaLikes. Não estão ligadas a pedidos individuais e não são verificadas por terceiros.",
   "chrome": {
     "breadcrumb": "Avaliações"
   },

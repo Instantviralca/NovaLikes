@@ -19,9 +19,9 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
     },
     hero: {
       eyebrow: 'FACEBOOK SERVICES',
-      title: 'Buy Facebook Followers',
+      title: 'Buy Facebook Followers for Pages & Profiles',
       description:
-        'Buy Facebook followers by choosing the package and quantity that fits your page. NovaLikes lets you compare available Facebook follower packages and prices before ordering. Select the number of followers you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy Facebook followers for a public Page or a profile with public followers turned on, from $4.99. Paste the link, choose a package and pay — no password or admin access needed. Most orders start within 6–8 hours and finish 4–6 hours later, or arrive gradually on request. Every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for Facebook follower packages worldwide',
       primaryKeyword: 'buy Facebook followers',
       supportingKeywords: [
@@ -42,10 +42,10 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'fb-f-trust-url', label: 'Public Facebook Page URL Only' },
+        { id: 'fb-f-trust-url', label: 'Pages & Profiles' },
         { id: 'fb-f-trust-password', label: 'No Password Required' },
-        { id: 'fb-f-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-f-trust-track', label: 'Order Tracking' },
+        { id: 'fb-f-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'fb-f-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/facebook-followers/facebook-followers-hero.webp',
@@ -58,7 +58,7 @@ function buildBuyFacebookFollowersContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Facebook Followers Packages & Pricing',
       description:
-        'Compare the available Facebook follower packages, quantities, and prices before ordering. Choose the number of followers you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.',
+        'Prices are in US dollars. 1,000 followers is the most popular package; choose a size that suits how active your Page is.',
       purpose: 'Present real NovaLikes.com Facebook followers packages',
       primaryKeyword: 'Facebook follower packages',
       suggestedWordCount: 40,
@@ -297,7 +297,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       eyebrow: 'FACEBOOK SERVICES',
       title: 'Buy Facebook Page Likes',
       description:
-        'Buy Facebook Page Likes by choosing the package and quantity that fits your Page. NovaLikes lets you compare available Page Like packages and prices before ordering. Select the number of Page Likes you want, provide the correct public Facebook Page URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy Facebook Page Likes for a public Page from $2.99 — but first check that your Page still shows a like count, because newer Pages show followers instead. Paste the Page link, pick a package and pay; no password needed. Most orders start within 6–8 hours, and every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for Facebook page likes packages worldwide',
       primaryKeyword: 'buy Facebook page likes',
       supportingKeywords: [
@@ -317,10 +317,10 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'fb-pl-trust-url', label: 'Public Facebook Page URL Only' },
+        { id: 'fb-pl-trust-url', label: 'Facebook Pages Only' },
         { id: 'fb-pl-trust-password', label: 'No Password Required' },
-        { id: 'fb-pl-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-pl-trust-track', label: 'Order Tracking' },
+        { id: 'fb-pl-trust-checkout', label: 'Starts in 6–8 Hours' },
+        { id: 'fb-pl-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/facebook-page-likes/facebook-page-likes-hero.webp',
@@ -333,7 +333,7 @@ function buildBuyFacebookPageLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Facebook Page Likes Packages & Pricing',
       description:
-        'Compare the available Facebook Page Like packages, quantities, and prices before ordering. Choose the number of Page Likes you want for your public Facebook Page, review the current package price, and add your selected package to the cart when you are ready.',
+        'Prices are in US dollars. 1,000 Page Likes is the most popular package. If your Page shows followers instead of likes, choose Facebook Followers.',
       purpose: 'Present real NovaLikes.com Facebook page likes packages',
       primaryKeyword: 'Facebook page likes packages',
       suggestedWordCount: 45,
@@ -551,7 +551,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       eyebrow: 'FACEBOOK SERVICES',
       title: 'Buy Facebook Post Likes',
       description:
-        'Buy Facebook Post Likes by choosing the package and quantity you want for a specific eligible public Facebook post. Compare the available Post Like packages and prices, select the number of likes you want, provide the correct public Facebook post URL, and complete your order online. Your Facebook password is not required, and you can use order tracking after checkout to check available status information.',
+        'Buy Facebook Post Likes for any public post from a Page or a personal profile, from $2.99. Delivered as Likes by default, with Love or other reactions on request. Paste the post link, choose a package and pay — no password needed. Most orders start within 6–8 hours, and every order includes a 6-month refill and 24/7 WhatsApp support.',
       purpose: 'Convert for Facebook post likes packages worldwide',
       primaryKeyword: 'buy Facebook Post Likes',
       supportingKeywords: [
@@ -571,10 +571,10 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
         href: HOW_IT_WORKS_ANCHOR,
       },
       trustLabels: [
-        { id: 'fb-post-trust-url', label: 'Public Facebook Post URL Only' },
-        { id: 'fb-post-trust-password', label: 'No Password Required' },
-        { id: 'fb-post-trust-checkout', label: 'Secure Checkout' },
-        { id: 'fb-post-trust-track', label: 'Order Tracking' },
+        { id: 'fb-post-trust-url', label: 'Page & Profile Posts' },
+        { id: 'fb-post-trust-password', label: 'Other Reactions on Request' },
+        { id: 'fb-post-trust-checkout', label: 'No Password Required' },
+        { id: 'fb-post-trust-track', label: '6-Month Refill' },
       ],
       visual: {
         src: '/assets/images/illustrations/facebook-post-likes/facebook-post-likes-hero.webp',
@@ -587,7 +587,7 @@ function buildBuyFacebookPostLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Facebook Post Likes Packages & Pricing',
       description:
-        'Compare the available Facebook Post Like packages, quantities, and prices before ordering. Choose the number of Post Likes you want for a specific eligible public Facebook post, review the current package price, and add your selected package to the cart when you are ready.',
+        'Prices are in US dollars. 1,000 Post Likes is the most popular package; pick a size that suits how many people usually see your posts.',
       purpose: 'Present real NovaLikes.com Facebook post likes packages',
       primaryKeyword: 'Facebook Post Likes',
       suggestedWordCount: 45,

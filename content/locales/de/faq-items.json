@@ -46,14 +46,14 @@
     "category": "account_security",
     "order": 2,
     "question": "Muss mein Social-Media-Konto öffentlich sein?",
-    "answer": "Wenn der gewählte Service öffentlichen Zugriff auf Ihr Profil, Ihre Seite, Ihren Beitrag oder Ihr Video voraussetzt, muss dieser Inhalt während der Bearbeitung öffentlich zugänglich bleiben. Private oder nicht verfügbare Inhalte können verhindern, dass der Service abgeschlossen wird."
+    "answer": "Ja. Das Profil, die Seite, der Beitrag oder das Video muss öffentlich sein, solange Ihre Bestellung geliefert wird – sonst kann die Lieferung weder starten noch abgeschlossen werden. Nach Abschluss der Lieferung können Sie wieder auf privat umstellen. Bitte behalten Sie außerdem denselben Benutzernamen bei – eine Änderung während einer Bestellung oder der 6-monatigen Nachfüllfrist kann Lieferung und Nachfüllungen stoppen."
   },
   {
     "id": "faq-as-make-private-after",
     "category": "account_security",
     "order": 3,
     "question": "Kann ich mein Konto nach der Bestellung auf privat stellen?",
-    "answer": "Wenn Ihre Bestellung öffentlichen Zugriff auf ein Profil oder einen Inhalt voraussetzt, lassen Sie es während der Bearbeitung öffentlich. Eine Änderung der Sichtbarkeit kann den Zugriff auf die erforderlichen Angaben verhindern."
+    "answer": "Ja, aber erst nach Abschluss der Lieferung. Während die Bestellung geliefert wird, muss das Profil bzw. der Inhalt öffentlich bleiben. Danach können Sie auf privat umstellen; wenn Sie später eine Nachfüllung benötigen, stellen Sie wieder auf öffentlich, bis die Nachfüllung geliefert ist."
   },
   {
     "id": "faq-as-login-account",
@@ -88,14 +88,14 @@
     "category": "orders_delivery",
     "order": 1,
     "question": "Wie lange dauert eine NovaLikes-Bestellung?",
-    "answer": "Bearbeitung und Lieferung können je nach Service und Paket unterschiedlich sein. Nutzen Sie die Lieferangaben zum konkret gewählten Paket und gehen Sie nicht davon aus, dass jeder NovaLikes-Service denselben Zeitrahmen hat."
+    "answer": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach Zahlungsbestätigung. Nach dem Start ist die Standardlieferung in der Regel innerhalb von 4–6 Stunden abgeschlossen. Wenn Sie ein langsameres Tempo bevorzugen, wünschen Sie sich in der Bestellnotiz oder per WhatsApp eine schrittweise Lieferung. Den Fortschritt verfolgen Sie auf der Seite [Bestellung verfolgen](/track-order) mit Ihrer Bestell-ID und E-Mail-Adresse."
   },
   {
     "id": "faq-od-start-immediately",
     "category": "orders_delivery",
     "order": 2,
     "question": "Startet meine Bestellung sofort?",
-    "answer": "Die Bearbeitung kann je nach gewähltem Service und aktuellen Bedingungen unterschiedlich sein. Entnehmen Sie mögliche Zeitangaben den Informationen zu Ihrem Service oder Paket."
+    "answer": "Nicht sofort. Jede Bestellung wird zuerst geprüft, und die meisten starten innerhalb von 6–8 Stunden nach Zahlungsbestätigung. Danach ist die Standardlieferung in der Regel innerhalb von 4–6 Stunden abgeschlossen."
   },
   {
     "id": "faq-od-track",
@@ -116,7 +116,7 @@
     "category": "orders_delivery",
     "order": 5,
     "question": "Was soll ich tun, wenn meine Bestellung nicht gestartet ist?",
-    "answer": "Prüfen Sie zuerst, ob der übermittelte Benutzername oder die URL korrekt ist und ob das erforderliche Profil bzw. der Inhalt noch öffentlich ist. Stimmen die Angaben und Sie brauchen trotzdem Hilfe, kontaktieren Sie den NovaLikes-Support mit Ihren Bestelldaten."
+    "answer": "Wenn Ihre Bestellung 8 Stunden nach der Zahlung noch nicht gestartet ist, prüfen Sie zuerst, ob Benutzername oder Link korrekt sind und ob das Profil bzw. der Inhalt öffentlich ist. Wenn alles stimmt, schreiben Sie uns per WhatsApp (+44 7454 758272) oder an support@novalikes.com mit Ihrer Bestell-ID."
   },
   {
     "id": "faq-od-change-url",
@@ -165,21 +165,21 @@
     "category": "instagram",
     "order": 4,
     "question": "Muss mein Instagram-Konto öffentlich sein, um Follower zu erhalten?",
-    "answer": "Wenn der Instagram-Follower-Service Zugriff auf Ihr öffentliches Profil voraussetzt, lassen Sie das Profil während der Bearbeitung öffentlich zugänglich. Ein privates oder nicht verfügbares Profil kann den Zugriff auf die erforderlichen Angaben verhindern."
+    "answer": "Ja. Lassen Sie Ihr Instagram-Profil öffentlich, bis die Lieferung abgeschlossen ist – sonst kann die Bestellung weder starten noch abgeschlossen werden. Danach können Sie es wieder auf privat stellen. Bitte ändern Sie Ihren Benutzernamen weder während der Bestellung noch während der 6-monatigen Nachfüllfrist."
   },
   {
     "id": "faq-ig-private-followers",
     "category": "instagram",
     "order": 5,
     "question": "Kann ich Instagram Follower für ein privates Konto kaufen?",
-    "answer": "Ein privates Instagram-Konto kann verhindern, dass ein Service, der öffentlichen Profilzugriff voraussetzt, regulär bearbeitet wird. Halten Sie sich vor und während der Bestellung an die Sichtbarkeitsanforderungen des Instagram-Follower-Services."
+    "answer": "Sie können die Bestellung aufgeben, aber die Lieferung kann erst starten, wenn das Profil öffentlich ist. Stellen Sie es vor oder direkt nach der Bestellung auf öffentlich, lassen Sie es bis zum Abschluss der Lieferung so und stellen Sie es danach wieder auf privat."
   },
   {
     "id": "faq-ig-followers-drop",
     "category": "instagram",
     "order": 6,
     "question": "Kann Instagram Follower nach der Lieferung entfernen?",
-    "answer": "Follower-Zahlen auf Social-Plattformen können sich im Laufe der Zeit ändern, etwa wenn Konten entfernt, deaktiviert oder von der Plattform nicht mehr mitgezählt werden. Prüfen Sie die Bedingungen des konkreten NovaLikes-Services auf etwaige Nachfüllregelungen und gehen Sie nicht davon aus, dass jede Bestellung eine Nachfüllung umfasst."
+    "answer": "Ja, ein gewisser Rückgang ist normal. Unsere Follower stammen von realistischen Profilen – wir behaupten nicht, dass es aktive echte Nutzer sind – und Instagram entfernt oder verbirgt regelmäßig Konten, die es markiert. Deshalb enthält jede Bestellung eine 6-monatige Nachfüllung: Wenn Ihre Zahl sinkt, schreiben Sie uns per WhatsApp (+44 7454 758272) mit Ihrer Bestell-ID, und wir füllen sie wieder auf."
   },
   {
     "id": "faq-ig-safe-likes",
@@ -249,7 +249,7 @@
     "category": "tiktok",
     "order": 4,
     "question": "Muss mein TikTok-Konto öffentlich sein?",
-    "answer": "Wenn der gewählte TikTok-Service öffentlichen Zugriff auf Ihr Profil oder Video voraussetzt, lassen Sie den betreffenden Inhalt während der Bearbeitung öffentlich zugänglich."
+    "answer": "Ja. Lassen Sie Ihr TikTok-Konto und das übermittelte Video öffentlich, bis die Lieferung abgeschlossen ist; danach können Sie das Konto auf privat stellen. Bitte ändern Sie Ihren Benutzernamen weder während der Bestellung noch während der 6-monatigen Nachfüllfrist."
   },
   {
     "id": "faq-tt-likes-video",
@@ -298,7 +298,7 @@
     "category": "facebook",
     "order": 3,
     "question": "Muss meine Facebook-Seite öffentlich sein?",
-    "answer": "Wenn der gewählte Service Zugriff auf Ihre Facebook-Seite voraussetzt, muss die Seite während der Bearbeitung öffentlich zugänglich bleiben."
+    "answer": "Ja. Lassen Sie die Seite (und bei Beitrags-Likes auch den Beitrag) öffentlich, bis die Lieferung abgeschlossen ist. Bitte ändern Sie den Benutzernamen oder die URL der Seite weder während der Bestellung noch während der 6-monatigen Nachfüllfrist."
   },
   {
     "id": "faq-fb-followers-vs-page-likes",
@@ -361,7 +361,7 @@
     "category": "payments_refunds",
     "order": 2,
     "question": "In welcher Währung werden NovaLikes-Preise angezeigt?",
-    "answer": "Die Paketpreise von NovaLikes werden in der Standardwährung des Shops angezeigt, die für die Website eingerichtet ist."
+    "answer": "Alle NovaLikes-Preise sind in US-Dollar (USD) angegeben. Wenn Sie mit einer Karte in einer anderen Währung zahlen, etwa in Euro oder Pfund, rechnet Ihre Bank bzw. Ihr Kartenanbieter den Betrag zum eigenen Wechselkurs um, sodass der Endbetrag auf Ihrer Abrechnung leicht abweichen kann."
   },
   {
     "id": "faq-pr-payment-declined",
@@ -382,13 +382,13 @@
     "category": "payments_refunds",
     "order": 5,
     "question": "Bietet NovaLikes Nachfüllungen an?",
-    "answer": "Ob eine Nachfüllung verfügbar ist, hängt vom gekauften Service und Paket ab. Prüfen Sie die Bedingungen zu Ihrem gewählten Service oder Paket auf etwaige Nachfüllregelungen."
+    "answer": "Ja. Jeder NovaLikes-Service enthält eine 6-monatige Nachfüllung. Wenn gelieferte Follower, Likes, Views oder Kommentare innerhalb von 6 Monaten nach der Lieferung Ihrer Bestellung zurückgehen, schreiben Sie uns per WhatsApp (+44 7454 758272) mit Ihrer Bestell-ID, und wir füllen den Rückgang auf. Damit der Anspruch bestehen bleibt, ändern Sie Ihren Benutzernamen nicht und lassen Sie das Profil bzw. den Inhalt öffentlich, solange die Bestellung oder eine Nachfüllung geliefert wird – nach Abschluss der Lieferung können Sie auf privat umstellen."
   },
   {
     "id": "faq-pr-drops",
     "category": "payments_refunds",
     "order": 6,
     "question": "Was passiert, wenn Follower oder Likes nach der Lieferung zurückgehen?",
-    "answer": "Follower- und Like-Zahlen auf Social-Plattformen können sich im Laufe der Zeit ändern. Enthält Ihr gewähltes Paket eine geltende Nachfüllregelung, halten Sie sich an die Bedingungen dieses Services oder kontaktieren Sie den NovaLikes-Support für Hilfe zur Bestellung."
+    "answer": "Ein gewisser Rückgang im Laufe der Zeit ist auf jeder Plattform normal, weil Instagram, TikTok und Facebook regelmäßig Konten und Interaktionen entfernen oder ausblenden. Jede NovaLikes-Bestellung enthält eine 6-monatige Nachfüllung: Schreiben Sie uns per WhatsApp (+44 7454 758272) mit Ihrer Bestell-ID, und wir füllen den Rückgang auf – sofern der Benutzername nicht geändert wurde und das Profil bzw. der Inhalt öffentlich ist, während die Nachfüllung geliefert wird."
   }
 ]

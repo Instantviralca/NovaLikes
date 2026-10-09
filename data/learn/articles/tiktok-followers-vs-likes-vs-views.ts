@@ -335,7 +335,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Look at the profile and its recent content together.',
   ),
 
-  heading('h-likes-vs-views', 'Are Likes More Important Than Views?', 2),
+  heading('h-likes-vs-views', 'Followers, Likes or Views: Which Matters Most?', 2),
   paragraph(
     'p-lvv-1',
     'There is no universal answer.',
@@ -343,6 +343,11 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-lvv-2',
     'They measure different things.',
+  ),
+  paragraph(
+    'p-lvv-2b',
+    'If you only want to compare two of them for a single video, our TikTok likes vs views guide covers like-to-view ratios, the For You feed and Creator Rewards in detail.',
+    [{ href: '/learn/tiktok-likes-vs-views', label: 'TikTok likes vs views guide' }],
   ),
   paragraph(
     'p-lvv-3',
@@ -648,16 +653,16 @@ export const TIKTOK_FOLLOWERS_VS_LIKES_VS_VIEWS_ARTICLE: LearnArticleRecord = {
   seo: {
     title: 'TikTok Followers vs Likes vs Views: Key Differences',
     description:
-      'Learn the difference between TikTok followers, likes and views, what each metric measures, and how to evaluate your TikTok performance.',
+      'Learn what TikTok followers, likes and views each measure, which one a new creator should watch first, and how to read all three together.',
     canonicalPath: `/learn/${SLUG}`,
     ogImage: '/assets/images/learn/tiktok-followers-vs-likes-vs-views/featured.png',
     keywords: [
       'TikTok followers vs likes vs views',
       'TikTok followers meaning',
-      'TikTok likes meaning',
-      'TikTok views meaning',
+      'TikTok profile metrics explained',
+      'which TikTok metric matters most',
+      'TikTok metrics for new creators',
       'TikTok metrics',
-      'likes vs views TikTok',
     ],
   },
   relatedServices: [

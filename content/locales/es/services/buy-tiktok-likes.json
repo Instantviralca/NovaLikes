@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVICIOS DE TIKTOK",
-      "title": "Comprar Me gusta de TikTok",
-      "description": "Compra Me gusta de TikTok eligiendo el paquete y la cantidad que encajan con tu vídeo. NovaLikes te permite comparar los paquetes y precios de Me gusta de TikTok disponibles antes de pedir. Selecciona el número de Me gusta que quieres, facilita el enlace público correcto del vídeo de TikTok y completa tu pedido online. No se requiere tu contraseña de TikTok, y puedes usar el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+      "title": "Comprar Me gusta de TikTok para vídeos",
+      "description": "Compra Me gusta (likes) de TikTok para cualquier vídeo público desde US$ 2,99. Copia el enlace del vídeo, elige la cantidad y paga: sin contraseña ni inicio de sesión. La mayoría de los pedidos empiezan en 6–8 horas y terminan 4–6 horas después, o llegan de forma gradual si lo pides. Cada pedido incluye una recarga de 6 meses y soporte por WhatsApp 24/7.",
       "purpose": "Convert for TikTok likes packages worldwide",
       "primaryKeyword": "buy TikTok likes",
       "supportingKeywords": [
@@ -30,19 +30,19 @@
       "trustLabels": [
         {
           "id": "tt-l-trust-url",
-          "label": "Solo enlace público del vídeo"
+          "label": "Solo el enlace del vídeo"
         },
         {
           "id": "tt-l-trust-password",
-          "label": "Sin contraseña necesaria"
+          "label": "Sin contraseña"
         },
         {
           "id": "tt-l-trust-checkout",
-          "label": "Pago seguro"
+          "label": "Empieza en 6–8 horas"
         },
         {
           "id": "tt-l-trust-track",
-          "label": "Seguimiento del pedido"
+          "label": "Recarga de 6 meses"
         }
       ],
       "visual": {
@@ -55,7 +55,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Paquetes y precios de Me gusta de TikTok",
-      "description": "Compara los paquetes, cantidades y precios de Me gusta de TikTok disponibles antes de pedir. Elige el número de Me gusta que quieres para tu vídeo público de TikTok, revisa el precio actual del paquete y añade la opción seleccionada al carrito cuando estés listo.",
+      "description": "Los precios están en dólares estadounidenses. 1.000 Me gusta es el paquete más popular; elige un tamaño que mantenga los Me gusta por debajo de las visualizaciones del vídeo.",
       "purpose": "Present real NovaLikes.com TikTok likes packages",
       "primaryKeyword": "TikTok likes packages",
       "suggestedWordCount": 55,
@@ -237,31 +237,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-tiktok-likes-why-choose",
-        "title": "¿Por qué elegir NovaLikes para Me gusta de TikTok?",
-        "description": "NovaLikes facilita comparar paquetes de Me gusta de TikTok antes de pedir. Elige el número de Me gusta que quieres para un vídeo público de TikTok, revisa el precio actual, facilita el enlace correcto del vídeo y usa el seguimiento del pedido después del pago para consultar la información de estado disponible.",
+        "title": "¿Por qué comprar Me gusta de TikTok en NovaLikes?",
+        "description": "Llevamos 7–8 años gestionando pedidos de redes sociales: primero en otros sitios, después como ViralMe y ahora como NovaLikes. Para los Me gusta de TikTok, esa experiencia se resume en cuatro promesas sencillas.",
         "items": [
           {
             "id": "buy-tiktok-likes-0",
-            "title": "Varias cantidades de Me gusta",
-            "description": "Compara las cantidades de Me gusta de TikTok disponibles y elige el paquete que coincida con el número de Me gusta que quieres pedir.",
+            "title": "Un vídeo, un enlace",
+            "description": "Los Me gusta van solo al vídeo del enlace que envías. Tus demás vídeos y tu número de seguidores no se tocan.",
             "icon": "users"
           },
           {
             "id": "buy-tiktok-likes-1",
-            "title": "Solo enlace público del vídeo",
-            "description": "Facilita el enlace público correcto del vídeo de TikTok del contenido donde quieres que se añadan los Me gusta. No se requiere tu contraseña de TikTok.",
+            "title": "Empieza en 6–8 horas",
+            "description": "La mayoría de los pedidos de Me gusta de TikTok empiezan en 6–8 horas tras el pago y terminan unas 4–6 horas después de empezar.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-2",
-            "title": "Revisa antes del pago",
-            "description": "Comprueba la cantidad de Me gusta seleccionada y el precio actual del paquete antes de añadir tu pedido al carrito y completar el pago.",
+            "title": "Ritmo constante si lo prefieres",
+            "description": "Pide entrega gradual en la nota del pago o por WhatsApp y los Me gusta llegarán durante más tiempo en lugar de todos a la vez.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-3",
-            "title": "Seguimiento del pedido",
-            "description": "Usa la opción de seguimiento disponible después del pago para consultar información de estado de tu pedido de Me gusta de TikTok.",
+            "title": "6 meses de recarga",
+            "description": "Si el contador de Me gusta de ese vídeo baja en los 6 meses siguientes a la entrega, envía tu número de pedido por WhatsApp y añadimos los que falten.",
             "icon": "headphones"
           }
         ]
@@ -271,66 +271,74 @@
       "canYouBuy": {
         "id": "buy-tiktok-likes-can-you-buy",
         "title": "¿Se pueden comprar Me gusta de TikTok?",
-        "description": "Sí. Los Me gusta de TikTok se pueden comprar a través de servicios online de Me gusta. Con NovaLikes, eliges un paquete de Me gusta disponible, facilitas el enlace público del vídeo de TikTok del contenido que quieres usar y completas tu pedido a través del sitio web.",
+        "description": "Sí. Puedes comprar Me gusta para cualquier vídeo público de TikTok. Copia el enlace del vídeo con el botón Compartir de TikTok, elige cuántos Me gusta quieres y paga en dólares estadounidenses. Sube el contador de corazones de ese vídeo; nada más cambia en tu cuenta.",
         "cards": [
           {
             "id": "buy-tiktok-likes-4",
-            "title": "Qué cambia un pedido de Me gusta de TikTok",
-            "description": "Un pedido de Me gusta de TikTok se aplica al recuento de Me gusta del vídeo público enviado con el pedido. No añade automáticamente seguidores a tu perfil ni visualizaciones al vídeo.",
+            "title": "Sube el contador de corazones",
+            "description": "Los Me gusta se añaden al contador del vídeo que envías. Visualizaciones, comentarios, compartidos y seguidores son números aparte.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-tiktok-likes-5",
-            "title": "Qué necesitas para hacer un pedido",
-            "description": "Necesitas el enlace público correcto del vídeo de TikTok y el paquete de Me gusta que quieres comprar. No se requiere tu contraseña de TikTok.",
+            "title": "Solo necesitamos el enlace",
+            "description": "Abre el vídeo, toca Compartir y luego Copiar enlace. Pega ese enlace al pagar. Nunca pedimos tu contraseña de TikTok ni un inicio de sesión.",
             "icon": "briefcase"
           },
           {
             "id": "buy-tiktok-likes-6",
-            "title": "Qué no incluyen los Me gusta de TikTok",
-            "description": "El número de Me gusta es independiente del número de seguidores y de las visualizaciones de TikTok. Pedir Me gusta no añade automáticamente esas otras métricas ni garantiza más interacción, alcance, ventas o crecimiento orgánico.",
+            "title": "De dónde vienen los Me gusta",
+            "description": "Los Me gusta proceden de cuentas de aspecto realista. No afirmamos que sean personas activas que vayan a ver tus otros vídeos o a seguirte.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes del pago, asegúrate de haber seleccionado Me gusta de TikTok, elegido la cantidad correcta de Me gusta y facilitado el enlace del vídeo público exacto donde quieres que se añadan los Me gusta."
+        "closingNote": "El vídeo debe seguir público y disponible hasta que termine la entrega. Los vídeos configurados como Amigos o Solo tú no pueden recibir un pedido."
       },
       "doesBuyingHelp": {
         "id": "buy-tiktok-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "¿Los Me gusta comprados ayudan a que un vídeo de TikTok tenga más visualizaciones?",
+        "description": "No de forma directa. TikTok prueba cada vídeo con un grupo pequeño y lo sigue mostrando cuando esos espectadores lo ven hasta el final, lo repiten, lo comparten, comentan o siguen la cuenta. Los Me gusta son una señal entre muchas, y sin tiempo de visualización detrás pesan poco. Lo que sí cambia un número de Me gusta mayor es cómo ven el vídeo quienes ya lo están viendo, y esa primera impresión es el beneficio real.",
+        "helpTitle": "Dónde ayudan",
+        "helpItems": [
+          "Vídeos de producto y de TikTok Shop, donde un buen número de Me gusta hace que los espectadores confíen en lo que ven.",
+          "Tus vídeos fijados, que son lo primero que ve cualquier visitante del perfil.",
+          "Un vídeo que vas a promocionar, para que los espectadores de pago no lleguen a un vídeo con un puñado de Me gusta."
+        ],
+        "limitTitle": "Dónde no",
+        "limitItems": [
+          "Llevar un vídeo a la página Para ti por sí solos: el tiempo de visualización y los compartidos pesan mucho más.",
+          "Un vídeo con 2.000 Me gusta y solo 1.500 visualizaciones se ve raro. Los Me gusta deben quedar bastante por debajo de las visualizaciones.",
+          "Sustituir el gancho: si los espectadores se van en los primeros segundos, los Me gusta no mantendrán vivo el vídeo."
+        ],
+        "closingNote": "Nuestra guía del Learn Center (en inglés) sobre Me gusta frente a visualizaciones en TikTok explica cómo se relacionan ambos números y qué lee TikTok de cada uno."
       },
       "whatHappens": {
         "id": "buy-tiktok-likes-what-happens",
         "title": "¿Qué ocurre después de comprar Me gusta de TikTok?",
-        "description": "Después de hacer un pedido de Me gusta de TikTok, el paquete de Me gusta y el enlace público del vídeo que enviaste se usan para procesar el pedido para el vídeo seleccionado. Mantén el vídeo accesible públicamente cuando se requiera mientras se gestiona el pedido.",
+        "description": "Desde el pago hasta la entrega terminada, un pedido de Me gusta de TikTok sigue cuatro pasos.",
         "steps": [
           {
             "id": "buy-tiktok-likes-th-1",
-            "title": "Se revisan los datos de tu pedido",
-            "description": "El paquete de Me gusta seleccionado, la cantidad y el enlace del vídeo de TikTok enviado se asocian a tu pedido para que la solicitud se procese para el vídeo previsto."
+            "title": "Se revisa el enlace del pedido",
+            "description": "El enlace del vídeo que pegaste queda unido a tu número de pedido. Si ves que el enlace es incorrecto, escríbenos por WhatsApp antes de que empiece la entrega."
           },
           {
             "id": "buy-tiktok-likes-th-2",
-            "title": "Los Me gusta van al vídeo enviado",
-            "description": "El pedido se aplica al vídeo de TikTok vinculado al enlace que facilitaste. Revisa el enlace del vídeo con cuidado antes de completar el pago."
+            "title": "Los Me gusta empiezan en 6–8 horas",
+            "description": "La mayoría de los pedidos empiezan en 6–8 horas tras el pago. Los pedidos graduales empiezan en el mismo plazo pero reparten los Me gusta durante más tiempo."
           },
           {
             "id": "buy-tiktok-likes-th-3",
-            "title": "El tiempo de procesamiento puede variar",
-            "description": "El tiempo necesario para procesar un pedido puede variar según la cantidad de Me gusta y las condiciones actuales de pedidos. No cabe esperar un único plazo de entrega fijo para todos los paquetes."
+            "title": "La entrega estándar termina en 4–6 horas",
+            "description": "Una vez iniciados, la mayoría de los pedidos se completan en 4–6 horas. Consulta el avance en la página de seguimiento con tu número de pedido y tu correo."
           },
           {
             "id": "buy-tiktok-likes-th-4",
-            "title": "Consulta el estado de tu pedido",
-            "description": "Usa el seguimiento de pedidos de NovaLikes para las actualizaciones de estado disponibles. Si necesitas ayuda, contacta con soporte con la información relevante del pedido."
+            "title": "Empieza la recarga de 6 meses",
+            "description": "La cobertura de recarga empieza el día en que termina la entrega. Si el contador baja después, envía tu número de pedido por WhatsApp y lo completamos."
           }
         ],
-        "closingNote": "Evita eliminar el vídeo enviado, hacerlo no disponible o cambiar algo que impida el acceso al contenido mientras se procesa el pedido. Si algo cambia después de pedir, contacta con soporte si necesitas ayuda."
+        "closingNote": "Mantén el vídeo público y no lo elimines ni lo vuelvas a subir, o ni la entrega ni las recargas podrán llegar a él."
       },
       "serviceCompare": {
         "id": "buy-tiktok-likes-service-compare",
@@ -362,8 +370,8 @@
       "beforeBuying": {
         "id": "buy-tiktok-likes-before-buying",
         "title": "Qué revisar antes de comprar Me gusta de TikTok",
-        "description": "Antes de comprar Me gusta de TikTok, revisa el paquete y los detalles del vídeo antes de completar tu pedido. Asegúrate de que la cantidad de Me gusta, el precio, el enlace del vídeo de TikTok y el servicio coinciden con lo que quieres para el vídeo seleccionado.",
-        "framingNote": "Revisa el enlace del vídeo de TikTok enviado, la cantidad de Me gusta y el precio una vez más antes del pago. Evita basarte en afirmaciones de que comprar Me gusta garantizará más visualizaciones, seguidores, interacción, alcance, ventas o crecimiento orgánico.",
+        "description": "La mayoría de los problemas vienen del enlace del vídeo o de su configuración de privacidad. Revisa estos cinco puntos antes de pagar.",
+        "framingNote": "Los precios están en dólares estadounidenses. Tu banco convierte el importe si pagas en otra moneda.",
         "items": [
           {
             "id": "buy-tiktok-likes-7",
@@ -399,33 +407,33 @@
       },
       "worldwide": {
         "id": "buy-tiktok-likes-worldwide",
-        "title": "Elegir el vídeo de TikTok correcto para Me gusta",
-        "description": "Me gusta de TikTok se aplica a un vídeo público elegible concreto. Envía exactamente el vídeo que quieres usar, no un perfil general de TikTok.",
-        "eyebrow": "Listo para Me gusta de TikTok",
-        "closingNote": "Me gusta de TikTok se aplica a un vídeo público concreto. Envía el enlace del vídeo, mantén el vídeo público y revisa la cantidad de Me gusta antes del pago.",
+        "title": "Me gusta, visualizaciones y la proporción que nota la gente",
+        "description": "TikTok muestra visualizaciones y Me gusta uno al lado del otro, así que la gente los compara sin pensarlo. Mantener ambos en un equilibrio creíble importa más que el tamaño de cualquiera de los dos.",
+        "eyebrow": "Consigue el equilibrio",
+        "closingNote": "¿Tu vídeo tiene muchos Me gusta pero pocas visualizaciones? Nuestro servicio de visualizaciones de TikTok sube el contador de reproducciones del mismo vídeo.",
         "cards": [
           {
             "id": "buy-tiktok-likes-12",
-            "title": "Usa el enlace correcto del vídeo",
-            "description": "Revisa la URL pública del vídeo de TikTok con cuidado antes de pedir, porque el vídeo enviado se usa para procesar el paquete de Me gusta.",
+            "title": "Dos contadores separados",
+            "description": "Las visualizaciones cuentan reproducciones; los Me gusta cuentan corazones. Comprar Me gusta no cambia las visualizaciones, y comprar visualizaciones no añade Me gusta.",
             "icon": "heart"
           },
           {
             "id": "buy-tiktok-likes-13",
-            "title": "Mantén el vídeo público",
-            "description": "No elimines ni restrinjas el vídeo enviado mientras el pedido requiera acceso público a él.",
+            "title": "Me gusta por debajo de las visualizaciones",
+            "description": "En un vídeo normal solo una parte de los espectadores toca el corazón. Elige un paquete que deje los Me gusta claramente por debajo de las visualizaciones.",
             "icon": "sparkles"
           },
           {
             "id": "buy-tiktok-likes-14",
-            "title": "Elige la cantidad de Me gusta",
-            "description": "Revisa las cantidades de Me gusta disponibles y elige el paquete que encaja con el vídeo individual que quieres usar.",
+            "title": "Primero los vídeos fijados",
+            "description": "Quien visita tu perfil ve tus tres vídeos fijados antes que nada. Suelen ser el mejor lugar para añadir Me gusta.",
             "icon": "headphones"
           },
           {
             "id": "buy-tiktok-likes-15",
-            "title": "Me gusta y visualizaciones son distintos",
-            "description": "Elige Me gusta de TikTok cuando el recuento de Me gusta sea la métrica que quieres cambiar. Visualizaciones de TikTok es un servicio aparte para las visualizaciones visibles del vídeo.",
+            "title": "Mismo vídeo, mismo enlace",
+            "description": "Eliminar y volver a subir un vídeo crea un enlace y un contador nuevos. Pide para la versión que se va a quedar publicada.",
             "icon": "clapperboard"
           }
         ]
@@ -433,32 +441,32 @@
       "packageSizes": {
         "id": "buy-tiktok-likes-popular-packages",
         "title": "Paquetes populares de Me gusta de TikTok",
-        "description": "Compara algunas de las cantidades de Me gusta de TikTok disponibles en NovaLikes abajo, o vuelve a la sección completa de precios para ver todas las opciones disponibles.",
+        "description": "Deja que las visualizaciones actuales del vídeo te guíen. Como regla general, elige un paquete que deje los Me gusta bastante por debajo de las visualizaciones que ya tiene.",
         "rows": [
           {
             "id": "tt-l-100",
             "quantity": "100 Me gusta",
-            "recommendedFor": "Una opción más pequeña para un vídeo público de TikTok en el que quieres añadir un número limitado de Me gusta."
+            "recommendedFor": "Para un vídeo con unos miles de visualizaciones, o para probar el servicio primero en un vídeo."
           },
           {
             "id": "tt-l-500",
             "quantity": "500 Me gusta",
-            "recommendedFor": "Una opción intermedia para un vídeo de TikTok en el que quieres un cambio más grande en el recuento visible de Me gusta."
+            "recommendedFor": "Para vídeos con unas 5.000–10.000 visualizaciones que parecen más tranquilos de lo que deberían."
           },
           {
             "id": "tt-l-1000",
             "quantity": "1,000 Me gusta",
-            "recommendedFor": "Un paquete más grande para un vídeo público de TikTok en el que quieres añadir mil Me gusta en un solo pedido."
+            "recommendedFor": "Nuestro paquete más popular: encaja con vídeos que ya superan las 10.000 visualizaciones, incluidos los fijados y los de producto."
           },
           {
             "id": "tt-l-5000",
             "quantity": "5,000 Me gusta",
-            "recommendedFor": "Una opción de mayor volumen para un vídeo de TikTok en el que quieres un aumento más grande del recuento visible de Me gusta."
+            "recommendedFor": "Para vídeos con mucho alcance, de decenas de miles de visualizaciones en adelante. Recomendamos entrega gradual."
           },
           {
             "id": "tt-l-10000",
             "quantity": "10,000 Me gusta",
-            "recommendedFor": "Una de las opciones de paquete más grandes disponibles para un vídeo público de TikTok en el que quieres añadir diez mil Me gusta."
+            "recommendedFor": "Para vídeos de campaña o virales con muchísimas visualizaciones. Reparte la entrega en un periodo más largo."
           }
         ]
       },
@@ -568,35 +576,35 @@
     "whyBuy": {
       "id": "buy-tiktok-likes-why-buy",
       "title": "¿Por qué la gente compra Me gusta de TikTok?",
-      "description": "La gente compra Me gusta de TikTok por distintos motivos. Algunos quieren aumentar el recuento de Me gusta que se muestra en un vídeo concreto, mientras que otros eligen un paquete de Me gusta para contenido vinculado a un lanzamiento, una campaña o actividad continua en TikTok. El servicio cambia la métrica de Me gusta del vídeo seleccionado, pero no garantiza visualizaciones, seguidores, interacción, alcance, ventas ni crecimiento orgánico adicionales.",
+      "description": "Las razones que nos dan nuestros clientes de TikTok son prácticas, y todas tienen que ver con cómo ven el vídeo las personas que ya lo están viendo.",
       "items": [
         {
           "id": "buy-tiktok-likes-wb-1",
-          "title": "Aumenta el recuento visible de Me gusta",
-          "description": "Un paquete de Me gusta de TikTok se puede usar cuando quieres aumentar el número de Me gusta que se muestra en un vídeo público concreto."
+          "title": "Vídeos de producto y de tienda",
+          "description": "Los vendedores añaden Me gusta a demostraciones de producto y vídeos de TikTok Shop para que los compradores vean que a otros les gustó lo que están mirando."
         },
         {
           "id": "buy-tiktok-likes-wb-2",
-          "title": "Usa Me gusta en un lanzamiento o campaña",
-          "description": "Creadores y negocios pueden elegir un paquete de Me gusta para un vídeo de TikTok vinculado a un lanzamiento de producto, campaña, anuncio u otra actividad de contenido."
+          "title": "Vídeos fijados en el perfil",
+          "description": "Los vídeos fijados son el escaparate de un perfil de TikTok. Los creadores añaden Me gusta ahí para causar una primera impresión fuerte."
         },
         {
           "id": "buy-tiktok-likes-wb-3",
-          "title": "Céntrate en la métrica de Me gusta",
-          "description": "Me gusta de TikTok se aplica al recuento de Me gusta del vídeo seleccionado, no a añadir automáticamente seguidores a tu perfil ni visualizaciones al vídeo."
+          "title": "Equilibrar un buen vídeo",
+          "description": "Algunos vídeos tienen buenas visualizaciones pero muy pocos Me gusta. Un paquete moderado acerca el contador a lo que esperan los espectadores."
         },
         {
           "id": "buy-tiktok-likes-wb-4",
-          "title": "Elige la cantidad que quieres",
-          "description": "Los distintos tamaños de paquete te permiten seleccionar el número de Me gusta de TikTok que quieres pedir para el vídeo enviado."
+          "title": "Antes de promocionar un vídeo",
+          "description": "Muchos clientes añaden Me gusta antes de usar Promocionar o anuncios, para que el tráfico de pago llegue a un vídeo que ya parece valorado."
         },
         {
           "id": "buy-tiktok-likes-wb-5",
-          "title": "Usa Me gusta junto con tu contenido",
-          "description": "Comprar Me gusta no sustituye crear y gestionar tu propio contenido de TikTok. Los vídeos, pies de foto, respuestas y el resto de la actividad de la cuenta siguen dependiendo de cómo gestiones tu presencia."
+          "title": "Expectativas realistas",
+          "description": "Los Me gusta cambian un contador. Las visualizaciones, los seguidores y las ventas siguen dependiendo del propio vídeo y de cuánto tiempo lo ve la gente."
         }
       ],
-      "bottomNote": "Si seguidores o visualizaciones de vídeo son la métrica que quieres cambiar, elige el servicio de TikTok correspondiente en lugar de un paquete de Me gusta."
+      "bottomNote": "¿Necesitas más reproducciones o un perfil más grande? Las visualizaciones y los seguidores de TikTok son servicios distintos: compáralos abajo."
     },
     "howToBuy": {
       "id": "how-it-works",

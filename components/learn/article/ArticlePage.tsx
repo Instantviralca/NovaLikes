@@ -8,6 +8,7 @@ import { AuthorBox } from '@/components/learn/article/AuthorBox';
 import { KeyTakeaways } from '@/components/learn/article/KeyTakeaways';
 import { ReadingProgress } from '@/components/learn/article/ReadingProgress';
 import { RelatedArticles } from '@/components/learn/article/RelatedArticles';
+import { RelatedServices } from '@/components/learn/article/RelatedServices';
 import { TableOfContents } from '@/components/learn/article/TableOfContents';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
@@ -87,6 +88,11 @@ export function ArticlePage({
               {body.length > 0 ? <ArticleContent blocks={body} /> : null}
 
               <ArticleFAQ items={prepared.article.faqs} />
+
+              <RelatedServices
+                services={related.services}
+                prominentCta={prepared.article.serviceCta}
+              />
 
               <RelatedArticles
                 articles={relatedList}

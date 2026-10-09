@@ -117,11 +117,15 @@
         },
         {
           "type": "paragraph",
-          "text": "A disponibilidade de reposição depende do serviço e do pacote comprados. Quaisquer condições de reposição aplicáveis são as exibidas para o serviço ou pacote correspondente."
+          "text": "Todo serviço da NovaLikes inclui um período de reposição de 6 meses, que começa na data em que seu pedido é entregue. Se a quantidade entregue cair nesse período, fale com o suporte pelo WhatsApp (+44 7454 758272) ou por e-mail com o ID do pedido e faremos a reposição no mesmo perfil, Página ou conteúdo."
         },
         {
           "type": "paragraph",
-          "text": "A Garantia de reembolso de 30 dias é independente de quaisquer termos de reposição específicos do pacote. Esta página não converte a janela de reembolso em uma garantia universal de reposição de 30 dias."
+          "text": "Para manter o direito à reposição, o nome de usuário não pode ser alterado e o perfil, a Página ou o conteúdo precisa estar público enquanto o pedido original e qualquer reposição são entregues. Você pode deixar sua conta privada depois que a entrega for concluída."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Garantia de reembolso de 30 dias é separada do período de reposição de 6 meses. A reposição cobre quedas nas métricas entregues; a garantia de reembolso cobre solicitações de reembolso elegíveis feitas em até 30 dias após a compra."
         }
       ]
     },

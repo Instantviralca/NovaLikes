@@ -157,7 +157,7 @@ export function PricingGrid({
         <div
           className="flex w-full rounded-xl border border-[var(--border-subtle)] bg-white p-1"
           role="tablist"
-          aria-label="Package quality"
+          aria-label={ui.commerce.packageQualityAria}
         >
           {commentTiers.map((tier) => {
             const selected = tier === activeTier;
@@ -185,7 +185,7 @@ export function PricingGrid({
       <div
         className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4"
         role="listbox"
-        aria-label="Package quantities"
+        aria-label={ui.commerce.packageQuantitiesAria}
       >
         {visiblePackages.map((model) => {
           const pkg = model.package;

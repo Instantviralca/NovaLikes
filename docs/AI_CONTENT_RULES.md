@@ -108,7 +108,7 @@ Every article **MUST** contain:
 | Image Instructions | Yes — see Rule 6 |
 | Conclusion | Yes — educational close |
 
-Also expected in the production package: key takeaways, related articles, related services, author (InstantViral Editorial Team), category, changelog.
+Also expected in the production package: key takeaways, related articles, related services, author (named author from the approved registry), category, changelog.
 
 ---
 
@@ -161,7 +161,7 @@ Every article must include image production instructions and assets for:
 | Cite only real, attributable stats | Fake statistics or invented case studies |
 | Conditional wording for paid support | Guaranteed ranking, fame, or revenue |
 
-Author byline: **InstantViral Editorial Team** (no invented individuals).
+Author byline: a named author from the approved registry (`data/authors/registry.ts`), with a real public profile and no invented or embellished credentials.
 
 ---
 

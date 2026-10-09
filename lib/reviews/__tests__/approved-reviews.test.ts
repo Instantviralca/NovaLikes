@@ -137,13 +137,25 @@ describe('Approved customer reviews catalogue', () => {
 
   it('emits Organization sameAs only for verified official social profiles', () => {
     const org = organizationSchema();
+    // Official NovaLikes profiles confirmed by the site owner (Oct 2026).
     expect(org.sameAs).toEqual([
       'https://www.instagram.com/novalikesco/',
       'https://www.facebook.com/novalikes/',
       'https://www.linkedin.com/company/nova-likes/',
+      'https://www.tiktok.com/@novalikes2',
+      'https://x.com/novalikes21',
+      'https://ca.pinterest.com/novalikes01/',
+      'https://www.threads.com/@novalikes01',
+      'https://www.crunchbase.com/organization/nova-likes',
+      'https://www.producthunt.com/@novalikes',
+      'https://medium.com/@novalikes01',
+      'https://substack.com/@novalikes',
+      'https://www.reddit.com/user/novalikes12/',
+      'https://www.quora.com/profile/Novalikes',
+      'https://www.tumblr.com/novalikess',
     ]);
     expect(JSON.stringify(org)).not.toContain('"#"');
-    expect(JSON.stringify(org.sameAs)).not.toMatch(/tiktok|youtube|twitter|x\.com/i);
+    expect(JSON.stringify(org.sameAs)).not.toMatch(/youtube/i);
   });
 
   it('ships a 1200x630 default OG image and required icon assets', () => {

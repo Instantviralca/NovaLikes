@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "UNSERE GESCHICHTE",
     "title": "Über NovaLikes",
-    "description": "NovaLikes ist eine Premium-Plattform für Social-Media-Wachstum, die Creator, Unternehmen und Marken mit hochwertigen sozialen Signalen beim Wachsen unterstützt.\n\nWir legen den Fokus auf eine klare Bestellerfahrung, sicheren Checkout und zuverlässige Lieferung für Instagram, TikTok, Facebook und mehr.",
+    "description": "NovaLikes hilft Creatorn, Unternehmen und Marken, auf Instagram, TikTok und Facebook zu wachsen – mit klaren Paketen, Bestellungen ohne Passwort und einer 6-monatigen Nachfüllung bei jedem Service.\n\nWir sind keine Neulinge. Unser Team bietet seit 7–8 Jahren Social-Media-Wachstumsservices an – zuerst über frühere Websites, dann mehr als vier Jahre lang als ViralMe, das 2026 zu NovaLikes wurde. Die Kunden- und Bestellzahlen unten enthalten auch Bestellungen, die unter dem Namen ViralMe geliefert wurden.",
     "trustLabels": [
       {
         "id": "about-hero-quality",
@@ -23,7 +23,7 @@
   },
   "mission": {
     "title": "Wir helfen Ihnen zu wachsen. Auf die richtige Weise.",
-    "description": "Unsere Mission ist es, Ihre Social-Media-Präsenz sicher und wirksam zu stärken – mit klaren Paketen, Bestellung ohne Passwort und Support, wenn Sie ihn brauchen.\n\nWachstum soll einfach sein: Service wählen, Paket auswählen, eine öffentliche URL angeben und Ihre Bestellung mit Vertrauen verfolgen."
+    "description": "Unsere Mission ist es, Social-Media-Wachstum einfach und ehrlich zu machen: Sie wählen einen Service, geben einen öffentlichen Benutzernamen oder Link an und verfolgen Ihre Bestellung – ohne Passwörter und ohne versteckte Schritte. Die meisten Bestellungen starten innerhalb von 6–8 Stunden und sind in der Regel 4–6 Stunden nach dem Start abgeschlossen; auf Wunsch liefern wir auch schrittweise.\n\nNovaLikes wird von der DMRUSH LIMITED betrieben, einem in Schottland eingetragenen Unternehmen (Company No. SC876437), 1/4 22 Dundasvale Court, Glasgow, G4 0XE. Unsere Services und die Learn-Center-Guides werden von Najaf Khan, unserem Social-Media-Growth-Experten, betreut. Für Hilfe zu einer Bestellung schreiben Sie an support@novalikes.com oder per WhatsApp an +44 7454 758272."
   },
   "whyChoose": {
     "title": "Warum uns Tausende wählen",
@@ -41,18 +41,18 @@
       },
       {
         "id": "about-why-quality",
-        "title": "Plattformspezifische Dienste",
-        "description": "Pakete sind nach Instagram-, TikTok- und Facebook-Metrik aufgeführt, nicht als generischer Wachstumsmix."
+        "title": "Schnelle oder schrittweise Lieferung",
+        "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden und sind 4–6 Stunden nach dem Start abgeschlossen. Lieber langsamer? Wünschen Sie sich in der Bestellnotiz oder per WhatsApp eine schrittweise Lieferung."
       },
       {
         "id": "about-why-support",
-        "title": "Kundensupport",
-        "description": "Kontaktieren Sie NovaLikes bei Fragen zu Paket, Bestellung oder Zahlung über die verfügbaren Support-Optionen."
+        "title": "Echter persönlicher Support",
+        "description": "Schreiben Sie an support@novalikes.com oder per WhatsApp mit Ihrer Bestell-ID – dasselbe Team kümmert sich um Fragen und Nachfüllanfragen."
       },
       {
         "id": "about-why-refund",
-        "title": "30-Tage-Geld-zurück-Garantie",
-        "description": "Berechtigte Käufe sind durch unsere 30-Tage-Geld-zurück-Garantie gemäß der veröffentlichten Erstattungsrichtlinie abgedeckt."
+        "title": "6 Monate Nachfüllung + Geld zurück",
+        "description": "Jeder Service enthält eine 6-monatige Nachfüllung, und berechtigte Käufe sind durch unsere 30-Tage-Geld-zurück-Garantie gemäß der veröffentlichten Rückerstattungsrichtlinie abgedeckt."
       }
     ]
   },

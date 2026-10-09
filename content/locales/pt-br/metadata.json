@@ -21,44 +21,44 @@
   },
   "services": {
     "buy-instagram-followers": {
-      "title": "Comprar seguidores no Instagram | NovaLikes",
-      "description": "Compare pacotes e preços de seguidores no Instagram. Peça para um perfil público sem senha. Reembolso em 30 dias em pedidos elegíveis."
+      "title": "Comprar seguidores no Instagram sem senha | NovaLikes",
+      "description": "Compre seguidores no Instagram a partir de US$ 2,99 por 100. Só o usuário, sem senha. Começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-instagram-likes": {
       "title": "Comprar curtidas no Instagram para posts e Reels",
-      "description": "Compare pacotes de curtidas no Instagram para posts e Reels públicos. Adicione o link, escolha um pacote e conclua o pedido online."
+      "description": "Compre curtidas no Instagram para posts e Reels a partir de US$ 2,99. Sem senha, começa em 6–8 horas e tem reposição de 6 meses."
     },
     "buy-instagram-views": {
-      "title": "Comprar visualizações no Instagram | NovaLikes",
-      "description": "Compare pacotes de visualizações no Instagram para Reels e vídeos elegíveis. Adicione o link público, escolha um pacote e peça online."
+      "title": "Comprar visualizações no Instagram para Reels | NovaLikes",
+      "description": "Compre visualizações no Instagram para Reels e vídeos a partir de US$ 1,99. Sem senha, começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-instagram-comments": {
-      "title": "Comprar comentários no Instagram | NovaLikes",
-      "description": "Compare pacotes de comentários no Instagram para posts e Reels elegíveis. Adicione o link público, escolha um pacote e faça o pedido."
+      "title": "Comprar comentários personalizados no Instagram",
+      "description": "Compre comentários no Instagram High Quality ou Premium a partir de US$ 9,99, com seu próprio texto se quiser. Sem senha, reposição de 6 meses."
     },
     "buy-tiktok-followers": {
-      "title": "Comprar seguidores no TikTok | NovaLikes",
-      "description": "Compare pacotes e preços de seguidores no TikTok. Peça para um perfil público sem senha. Reembolso em 30 dias em pedidos elegíveis."
+      "title": "Comprar seguidores no TikTok sem senha | NovaLikes",
+      "description": "Compre seguidores no TikTok a partir de US$ 2,99 por 100. Só o usuário, sem senha. Começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-tiktok-likes": {
       "title": "Comprar curtidas no TikTok para vídeos | NovaLikes",
-      "description": "Compare pacotes e preços de curtidas no TikTok para um vídeo público. Adicione o link, escolha um pacote e conclua o pedido online."
+      "description": "Compre curtidas no TikTok para qualquer vídeo público a partir de US$ 2,99. Sem senha, começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-tiktok-views": {
       "title": "Comprar visualizações no TikTok | NovaLikes",
-      "description": "Compare pacotes e preços de visualizações no TikTok para um vídeo público. Adicione o link, escolha um pacote e conclua o pedido."
+      "description": "Compre visualizações no TikTok a partir de US$ 1,99 por 1.000. Cole o link do vídeo, sem senha. Começa em 6–8 horas, reposição de 6 meses."
     },
     "buy-facebook-followers": {
-      "title": "Comprar seguidores no Facebook | NovaLikes",
-      "description": "Compare pacotes de seguidores no Facebook para uma Página pública. Envie a URL correta, escolha um pacote e peça online."
+      "title": "Comprar seguidores no Facebook – Página ou perfil",
+      "description": "Compre seguidores no Facebook para Página ou perfil a partir de US$ 4,99. Sem senha, começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-facebook-page-likes": {
-      "title": "Comprar curtidas de Página no Facebook",
-      "description": "Compare pacotes e preços de curtidas de Página no Facebook. Envie a URL da Página pública, escolha um pacote e conclua o pedido."
+      "title": "Comprar curtidas para Página do Facebook | NovaLikes",
+      "description": "Compre curtidas para sua Página do Facebook a partir de US$ 2,99 por 100. Sem senha, começa em 6–8 horas, com reposição de 6 meses."
     },
     "buy-facebook-post-likes": {
-      "title": "Comprar curtidas de publicação no Facebook",
-      "description": "Compare pacotes e preços de curtidas de publicação no Facebook. Envie a URL pública, escolha um pacote e conclua o pedido."
+      "title": "Comprar curtidas em post do Facebook | NovaLikes",
+      "description": "Compre curtidas para qualquer post público do Facebook a partir de US$ 2,99. Sem senha, começa em 6–8 horas, com reposição de 6 meses."
     }
   },
   "toolsHub": {
@@ -67,35 +67,35 @@
   },
   "tools": {
     "instagram-profile-picture-viewer": {
-      "title": "Visualizador de foto de perfil do Instagram – Tamanho real | NovaLikes",
+      "title": "Ver foto de perfil do Instagram em tamanho real",
       "description": "Veja e baixe a foto de perfil do Instagram disponível publicamente em tamanho real. Digite um nome de usuário ou URL de perfil público. Sem login no Instagram."
     },
     "instagram-follower-counter": {
-      "title": "Verificador de seguidores do Instagram – Grátis | NovaLikes",
+      "title": "Contador de seguidores do Instagram grátis | NovaLikes",
       "description": "Confira a contagem de seguidores que o Instagram deixa disponível publicamente para um perfil. Digite um nome de usuário ou URL de perfil público. Sem login no Instagram."
     },
     "instagram-profile-viewer": {
-      "title": "Visualizador de perfil do Instagram – Perfis públicos | NovaLikes",
+      "title": "Ver perfil do Instagram sem login | NovaLikes",
       "description": "Veja detalhes de perfil do Instagram disponíveis publicamente, incluindo foto, bio, seguidores, seguindo e contagem de posts. Sem login no Instagram."
     },
     "instagram-video-downloader": {
-      "title": "Downloader de vídeos do Instagram – Vídeos públicos | NovaLikes",
+      "title": "Baixar vídeo do Instagram grátis | NovaLikes",
       "description": "Cole a URL de um post ou Reel público do Instagram para conferir mídia de vídeo baixável quando o Instagram a expõe. Sem login no Instagram."
     },
     "tiktok-video-downloader": {
-      "title": "Downloader grátis de vídeos do TikTok – MP4 | NovaLikes",
+      "title": "Baixar vídeo do TikTok em MP4 grátis | NovaLikes",
       "description": "Cole uma URL pública de vídeo do TikTok para encontrar opções de download MP4 disponíveis. Não é necessário login nem app do TikTok. A disponibilidade pode variar por vídeo."
     },
     "tiktok-profile-picture-downloader": {
-      "title": "Downloader de foto de perfil do TikTok – Tamanho real | NovaLikes",
+      "title": "Baixar foto de perfil do TikTok em tamanho real",
       "description": "Veja e baixe uma foto de perfil do TikTok disponível publicamente em tamanho real. Digite um nome de usuário, @handle ou URL de perfil público. Sem login no TikTok."
     },
     "facebook-video-downloader": {
-      "title": "Downloader de vídeos do Facebook – HD e SD grátis | NovaLikes",
+      "title": "Baixar vídeo do Facebook em HD ou SD grátis | NovaLikes",
       "description": "Cole uma URL pública de vídeo do Facebook para encontrar opções de download HD ou SD. Não é necessário login nem app do Facebook para vídeos públicos suportados."
     },
     "facebook-reels-downloader": {
-      "title": "Downloader de Reels do Facebook – HD e SD grátis | NovaLikes",
+      "title": "Baixar Reels do Facebook em HD ou SD grátis | NovaLikes",
       "description": "Cole uma URL pública de Reel do Facebook para encontrar opções de download HD ou SD. Não é necessário login nem app do Facebook para Reels públicos suportados."
     }
   },

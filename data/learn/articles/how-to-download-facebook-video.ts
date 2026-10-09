@@ -140,6 +140,10 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-open-10',
     'The simplest rule: publicly viewable does not mean every Facebook video is technically downloadable in every quality.',
   ),
+  paragraph(
+    'p-open-11',
+    'Important: only download a video you own or have clear permission to use. This tool works only with media Facebook already exposes publicly for a given URL — it does not bypass privacy settings, passwords or any technical protection, and downloading a file never transfers copyright or ownership to you.',
+  ),
 
   heading('h-public-mean', 'What Does a Public Facebook Video Mean?', 2),
   paragraph(
@@ -1361,10 +1365,10 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_VIDEO_ARTICLE: LearnArticleRecord = {
     ogImage: `${IMAGE_DIR}/featured.png`,
     keywords: [
       'download Facebook video',
-      'Facebook video downloader',
+      'Facebook save video vs download',
       'download public Facebook video',
       'save Facebook video to device',
-      'Facebook HD video downloader',
+      'why a Facebook video cannot be downloaded',
       'Facebook video URL',
     ],
   },

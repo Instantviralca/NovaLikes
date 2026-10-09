@@ -1,4 +1,13 @@
 import type { InstagramFollowersPageConfig } from '@/data/content/instagram-followers-page-config';
+import { applyInstagramCommentsAuthorityCopy } from '@/data/content/instagram-comments-page-config';
+import { applyInstagramLikesAuthorityCopy } from '@/data/content/instagram-likes-page-config';
+import { applyInstagramViewsAuthorityCopy } from '@/data/content/instagram-views-page-config';
+import { applyTiktokFollowersAuthorityCopy } from '@/data/content/tiktok-followers-page-config';
+import { applyFacebookPostLikesAuthorityCopy } from '@/data/content/facebook-post-likes-page-config';
+import { applyFacebookPageLikesAuthorityCopy } from '@/data/content/facebook-page-likes-page-config';
+import { applyFacebookFollowersAuthorityCopy } from '@/data/content/facebook-followers-page-config';
+import { applyTiktokViewsAuthorityCopy } from '@/data/content/tiktok-views-page-config';
+import { applyTiktokLikesAuthorityCopy } from '@/data/content/tiktok-likes-page-config';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
 import { getServiceBySlug } from '@/data/services';
 import type { Service } from '@/types/service';
@@ -4284,13 +4293,26 @@ export function buildDummyAuthorityPage(service: Service): DummyAuthorityPage {
       'Post Likes are only one Facebook metric. If you want to increase the follower count or Page Like count on a Facebook Page instead, compare the other Facebook services below.';
   }
 
-  return {
+  const page: DummyAuthorityPage = {
     config,
     whyBuy,
     howToBuy,
     relatedHeading,
     relatedIntro,
   };
+
+  // Unique copy per service page (replaces shared template wording).
+  if (slug === 'buy-instagram-likes') return applyInstagramLikesAuthorityCopy(page);
+  if (slug === 'buy-instagram-comments') return applyInstagramCommentsAuthorityCopy(page);
+  if (slug === 'buy-instagram-views') return applyInstagramViewsAuthorityCopy(page);
+  if (slug === 'buy-tiktok-followers') return applyTiktokFollowersAuthorityCopy(page);
+  if (slug === 'buy-facebook-post-likes') return applyFacebookPostLikesAuthorityCopy(page);
+  if (slug === 'buy-facebook-page-likes') return applyFacebookPageLikesAuthorityCopy(page);
+  if (slug === 'buy-facebook-followers') return applyFacebookFollowersAuthorityCopy(page);
+  if (slug === 'buy-tiktok-views') return applyTiktokViewsAuthorityCopy(page);
+  if (slug === 'buy-tiktok-likes') return applyTiktokLikesAuthorityCopy(page);
+
+  return page;
 }
 
 export function dummyRelatedSlugs(serviceSlug: string): string[] {

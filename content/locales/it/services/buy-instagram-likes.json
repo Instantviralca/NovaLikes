@@ -8,8 +8,8 @@
     },
     "hero": {
       "eyebrow": "SERVIZI INSTAGRAM",
-      "title": "Comprare like Instagram",
-      "description": "Comprare like Instagram per un post o un Reel pubblico significa scegliere la quantità di pacchetto adatta a ciò che ti serve. NovaLikes offre diverse quantità di like con prezzi chiari, così puoi confrontare le opzioni prima di ordinare. Seleziona il pacchetto, indica l’URL pubblico del post o del Reel Instagram e completa l’ordine online. Nessuna password Instagram è richiesta e, dopo il checkout, puoi tracciare l’ordine.",
+      "title": "Comprare like Instagram per post e Reel",
+      "description": "Compra like Instagram per qualsiasi post foto, carosello o Reel pubblico a partire da 2,99 USD. Invia il link del post, scegli la quantità e paga: non chiediamo mai la tua password. La maggior parte degli ordini parte entro 6–8 ore e finisce 4–6 ore dopo, oppure arriva in modo graduale su richiesta. Ogni ordine include un refill di 6 mesi e supporto WhatsApp 24/7.",
       "purpose": "Convert visitors looking to buy Instagram likes",
       "primaryKeyword": "buy instagram likes",
       "supportingKeywords": [
@@ -33,7 +33,7 @@
       "trustLabels": [
         {
           "id": "ig-l-trust-public",
-          "label": "Solo URL del post pubblico"
+          "label": "Post, Reel e caroselli"
         },
         {
           "id": "ig-l-trust-password",
@@ -41,11 +41,11 @@
         },
         {
           "id": "ig-l-trust-checkout",
-          "label": "Checkout sicuro"
+          "label": "Avvio in 6–8 ore"
         },
         {
           "id": "ig-l-trust-track",
-          "label": "Tracciamento ordine"
+          "label": "Refill di 6 mesi"
         }
       ],
       "visual": {
@@ -58,7 +58,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacchetti e prezzi like Instagram",
-      "description": "Scegli il numero di like Instagram che vuoi e confronta i prezzi dei pacchetti prima di ordinare. Seleziona una quantità qui sotto per rivedere i dettagli e continua con l’opzione adatta al post o al Reel che vuoi usare.",
+      "description": "I prezzi sono in dollari statunitensi. 1.000 like è il pacchetto più popolare; scegli una dimensione adatta ai tuoi follower e alla tua interazione abituale.",
       "purpose": "Present real NovaLikes.com likes packages",
       "primaryKeyword": "Instagram Likes Pricing",
       "suggestedWordCount": 40,
@@ -197,31 +197,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-instagram-likes-why-choose",
-        "title": "Perché scegliere NovaLikes per i like Instagram?",
-        "description": "NovaLikes rende facile confrontare i pacchetti like Instagram prima di ordinare. Scegli la quantità che ti serve per un post o un Reel specifico, controlla il prezzo, indica l’URL pubblico corretto del contenuto e traccia l’ordine dopo il checkout.",
+        "title": "Perché comprare like Instagram su NovaLikes?",
+        "description": "Dietro NovaLikes c’è lo stesso team che gestisce ordini Instagram da 7–8 anni, compresi gli anni in cui lavoravamo come ViralMe. Un ordine di like con noi è semplice: un link, un orario di avvio noto, il ritmo che preferisci e un refill se il contatore cala più avanti.",
         "items": [
           {
             "id": "buy-instagram-likes-0",
-            "title": "Quantità di like diverse",
-            "description": "Confronta pacchetti like più piccoli e più grandi per trovare una quantità adatta al contenuto Instagram su cui stai lavorando.",
+            "title": "Post, Reel e caroselli",
+            "description": "I like possono andare su un post foto, un carosello o un Reel. Ci invii il link del post esatto e i like vengono aggiunti solo a quel post.",
             "icon": "users"
           },
           {
             "id": "buy-instagram-likes-1",
-            "title": "Prezzi chiari per pacchetto",
-            "description": "Vedi il prezzo di ogni pacchetto like Instagram prima di aggiungere la selezione al carrello.",
+            "title": "Avvio in 6–8 ore, fine in 4–6",
+            "description": "La maggior parte degli ordini di like parte entro 6–8 ore dal pagamento. Una volta avviata, la consegna standard di solito termina in 4–6 ore.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-likes-2",
-            "title": "Per post e Reel specifici",
-            "description": "Scegli il post o il Reel Instagram pubblico su cui vuoi aggiungere i like, invece di modificare il numero complessivo di follower.",
+            "title": "Un ritmo naturale, se lo vuoi",
+            "description": "Preferisci che i like arrivino piano nell’arco di un giorno o più? Scrivilo nella nota al pagamento o dillo su WhatsApp prima che l’ordine parta.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-likes-3",
-            "title": "Tracciamento ordine",
-            "description": "Dopo il checkout, usa l’opzione di tracciamento disponibile per controllare lo stato dell’ordine di like Instagram.",
+            "title": "Refill per 6 mesi",
+            "description": "Se il numero di like di quel post cala entro 6 mesi dalla consegna, inviaci il numero d’ordine su WhatsApp e lo ricompletiamo.",
             "icon": "headphones"
           }
         ]
@@ -231,66 +231,74 @@
       "canYouBuy": {
         "id": "buy-instagram-likes-can-you-buy",
         "title": "Si possono comprare like Instagram?",
-        "description": "Sì. I like Instagram si possono acquistare per post e Reel pubblici idonei. Con NovaLikes scegli un pacchetto like, indichi l’URL pubblico del contenuto Instagram che vuoi usare e completi l’ordine sul sito.",
+        "description": "Sì. Puoi comprare like per qualsiasi post foto, carosello o Reel pubblico di Instagram. Ogni ordine copre un post: incolli il suo link, scegli quanti like vuoi e paghi in dollari statunitensi. La tua password non serve mai.",
         "cards": [
           {
             "id": "buy-instagram-likes-4",
-            "title": "Cosa cambia un ordine di like Instagram",
-            "description": "Un ordine di like Instagram aumenta il conteggio like sul post o Reel specifico indicato con l’ordine. Non cambia il numero di follower del profilo nel suo insieme.",
+            "title": "Un post per ordine",
+            "description": "I like vengono aggiunti al post o al Reel del link che invii. Vuoi like su tre post? Fai tre ordini, un link ciascuno.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-instagram-likes-5",
-            "title": "Cosa ti serve per effettuare un ordine",
-            "description": "Ti servono l’URL pubblico corretto del post o del Reel Instagram e il pacchetto like che vuoi acquistare. La password Instagram non è richiesta.",
+            "title": "Da dove prendere il link",
+            "description": "Tocca i tre puntini o l’icona di condivisione del post e scegli Copia link. I link dei post sono come instagram.com/p/…, quelli dei Reel come instagram.com/reel/….",
             "icon": "briefcase"
           },
           {
             "id": "buy-instagram-likes-6",
-            "title": "Cosa non includono i like Instagram",
-            "description": "I like sono separati da follower, visualizzazioni e commenti. Ordinare like Instagram non aggiunge automaticamente quelle altre metriche e non garantisce più portata, engagement, vendite o crescita organica.",
+            "title": "Cosa i like non cambiano",
+            "description": "Follower, visualizzazioni dei Reel e commenti restano uguali. I like alzano il contatore dei cuori di quel post e nient’altro.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Prima del checkout, assicurati di aver selezionato Like Instagram, di aver scelto la quantità corretta e di aver indicato l’URL del contenuto su cui vuoi aggiungere i like."
+        "closingNote": "Un ordine non può partire se l’account è privato, se il post è stato archiviato o eliminato, o se il link porta al tuo profilo invece che al post."
       },
       "doesBuyingHelp": {
         "id": "buy-instagram-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "I like acquistati aiutano i tuoi post Instagram a essere visti?",
+        "description": "Un po’, nella situazione giusta, ma non sono una scorciatoia per il ranking. Instagram valuta molti segnali per decidere chi vede un post e, per i Reel, guarda con attenzione il tempo di visualizzazione e quante volte un post viene inviato agli amici. Un like da un account che non fa altro è un segnale debole. Dove i like aiutano è la prima impressione: le persone si fermano più volentieri su un post che sembra già apprezzato.",
+        "helpTitle": "Quando i like fanno la differenza",
+        "helpItems": [
+          "Un post di prodotto, offerta o annuncio che deve sembrare affidabile fin dalla prima ora.",
+          "Un post che stai per sponsorizzare, così i nuovi visitatori non arrivano su un post con 4 like.",
+          "Tenere i post recenti in linea con i tuoi numeri abituali quando uno rende meno."
+        ],
+        "limitTitle": "Quando non servono",
+        "limitItems": [
+          "Se hai nascosto il numero di like, i visitatori non lo vedono e l’effetto di riprova sociale quasi sparisce.",
+          "I like non aggiungono salvataggi, condivisioni o commenti, le azioni che Instagram legge come interesse più forte.",
+          "Un numero di like molto più alto di follower e visualizzazioni può sembrare poco naturale invece che impressionante."
+        ],
+        "closingNote": "La nostra guida del Learn Center (in inglese) che confronta follower, like, visualizzazioni e commenti su Instagram spiega cosa dice davvero ogni numero a Instagram e ai tuoi visitatori."
       },
       "whatHappens": {
         "id": "buy-instagram-likes-what-happens",
         "title": "Cosa succede dopo aver comprato like Instagram?",
-        "description": "Dopo aver effettuato un ordine di like Instagram, il pacchetto e l’URL pubblico del contenuto che hai inviato vengono usati per elaborare l’ordine sul post o Reel selezionato. Tieni il contenuto accessibile pubblicamente, dove richiesto, mentre l’ordine viene gestito.",
+        "description": "Dal pagamento alla consegna completata, un ordine di like passa per quattro brevi passaggi.",
         "steps": [
           {
             "id": "buy-instagram-likes-th-1",
-            "title": "I dati dell’ordine vengono controllati",
-            "description": "Il pacchetto like selezionato e l’URL Instagram vengono collegati all’ordine, così la richiesta può essere elaborata per il post o il Reel previsto."
+            "title": "Ordine confermato via email",
+            "description": "Ricevi una conferma con il numero d’ordine subito dopo il pagamento. Conservala: ti serve per seguire l’ordine o chiedere un refill."
           },
           {
             "id": "buy-instagram-likes-th-2",
-            "title": "I like vanno al contenuto indicato",
-            "description": "L’ordine si applica al post o al Reel Instagram collegato all’URL che hai fornito. Controlla il link con attenzione prima di completare il checkout."
+            "title": "I like partono entro 6–8 ore",
+            "description": "L’ordine viene associato al link del tuo post e parte entro 6–8 ore. Se nella nota hai chiesto un ritmo più lento, la consegna viene distribuita nel tempo."
           },
           {
             "id": "buy-instagram-likes-th-3",
-            "title": "I tempi di elaborazione possono variare",
-            "description": "Il tempo necessario per elaborare un ordine può variare in base alla quantità di like e alle condizioni dell’ordine. Non dare per scontato che ogni pacchetto abbia esattamente lo stesso tempo di elaborazione."
+            "title": "La consegna standard finisce in 4–6 ore",
+            "description": "La maggior parte degli ordini è completa 4–6 ore dopo l’avvio. Puoi vedere il contatore salire sul post e seguire l’avanzamento nella pagina Traccia ordine."
           },
           {
             "id": "buy-instagram-likes-th-4",
-            "title": "Controlla lo stato dell’ordine",
-            "description": "Usa il tracciamento ordine NovaLikes per vedere gli aggiornamenti di stato disponibili dopo il checkout. Se ti serve aiuto, contatta il supporto con le informazioni dell’ordine."
+            "title": "Inizia il tuo refill di 6 mesi",
+            "description": "Il periodo di refill inizia il giorno in cui la consegna termina. Se il numero di like cala, invia il numero d’ordine su WhatsApp e aggiungiamo i like mancanti."
           }
         ],
-        "closingNote": "Evita di cancellare il post o il Reel indicato, di renderlo non disponibile o di cambiare qualcosa che impedisca l’accesso al contenuto mentre l’ordine viene elaborato. Se qualcosa cambia dopo l’ordine, contatta il supporto se ti serve assistenza."
+        "closingNote": "Tieni l’account pubblico e il post online finché la consegna non è finita. Dopo puoi tornare a un account privato."
       },
       "serviceCompare": {
         "id": "buy-instagram-likes-service-compare",
@@ -322,8 +330,8 @@
       "beforeBuying": {
         "id": "buy-instagram-likes-before-buying",
         "title": "Cosa controllare prima di comprare like Instagram",
-        "description": "Prima di comprare like Instagram, controlla pacchetto e dettagli del contenuto prima di completare l’ordine. Assicurati che quantità, prezzo, URL Instagram e tipo di servizio corrispondano a ciò che vuoi per il post o il Reel selezionato.",
-        "framingNote": "Controlla ancora una volta il contenuto selezionato, la quantità di like e il prezzo prima del checkout. Evita di fare affidamento su affermazioni secondo cui comprare like garantirebbe più portata, follower, vendite o crescita organica.",
+        "description": "La maggior parte dei problemi nasce dal link o da un account privato. Controlla questi cinque punti e il tuo ordine dovrebbe partire senza intoppi.",
+        "framingNote": "Tutti i prezzi sono in dollari statunitensi. Paghi in un’altra valuta? La tua banca converte l’importo al proprio tasso.",
         "items": [
           {
             "id": "buy-instagram-likes-7",
@@ -359,33 +367,33 @@
       },
       "worldwide": {
         "id": "buy-instagram-likes-worldwide",
-        "title": "Scegliere il post o il Reel giusto per i like Instagram",
-        "description": "Like Instagram si applica a un singolo contenuto pubblico idoneo, quindi scegliere il post o il Reel corretto è una delle parti più importanti dell’ordine.",
-        "eyebrow": "Pronto per i like Instagram",
-        "closingNote": "Like Instagram si applica a un post o a un Reel pubblico specifico. Invia l’URL esatto del contenuto, tienilo disponibile e rivedi il pacchetto like selezionato prima del checkout.",
+        "title": "Post foto, caroselli, Reel e like nascosti",
+        "description": "I like funzionano allo stesso modo su ogni tipo di post pubblico. Cambiano solo il link che copi e il fatto che tu abbia scelto o meno di nascondere il numero di like su quel post.",
+        "eyebrow": "Quali post possono ricevere like",
+        "closingNote": "Non sai quale link usare? Scrivici su WhatsApp prima di ordinare e lo controlliamo noi.",
         "cards": [
           {
             "id": "buy-instagram-likes-12",
-            "title": "Usa l’URL esatto del contenuto",
-            "description": "Invia l’URL pubblico del post o del Reel su cui vuoi applicare il pacchetto like. L’URL del profilo non è la destinazione corretta per questo servizio.",
+            "title": "Post foto",
+            "description": "I post con una sola immagine usano un link come instagram.com/p/…. I like compaiono su quel post.",
             "icon": "heart"
           },
           {
             "id": "buy-instagram-likes-13",
-            "title": "Tieni il contenuto disponibile",
-            "description": "Evita di cancellare o limitare il post o il Reel indicato mentre l’ordine viene elaborato.",
+            "title": "Caroselli",
+            "description": "Un carosello è un unico post, quindi basta un link. I like valgono per tutto il carosello, non per ogni slide.",
             "icon": "sparkles"
           },
           {
             "id": "buy-instagram-likes-14",
-            "title": "Controlla la quantità di like",
-            "description": "Scegli il numero di like in base al contenuto specifico per cui stai ordinando e rivedi la quantità prima del checkout.",
+            "title": "Reel",
+            "description": "I Reel usano un link come instagram.com/reel/…. I like alzano il contatore dei cuori; le visualizzazioni sono un altro numero e un altro servizio.",
             "icon": "headphones"
           },
           {
             "id": "buy-instagram-likes-15",
-            "title": "Rivedi il prezzo prima di ordinare",
-            "description": "I prezzi dei pacchetti sono visibili prima del checkout. Se cambi la quantità di like, rivedi pacchetto e prezzo aggiornati prima di completare l’ordine.",
+            "title": "Numero di like nascosto",
+            "description": "Se hai nascosto il numero di like di un post, i like vengono comunque consegnati e tu li vedi, ma i visitatori no. Puoi mostrarlo di nuovo dal menu a tre puntini del post.",
             "icon": "clapperboard"
           }
         ]
@@ -393,32 +401,32 @@
       "packageSizes": {
         "id": "buy-instagram-likes-popular-packages",
         "title": "Pacchetti like Instagram più richiesti",
-        "description": "Non sai quale pacchetto scegliere? Confronta alcune delle quantità di like Instagram disponibili su NovaLikes qui sotto, oppure torna alla sezione prezzi completa per vedere tutte le opzioni.",
+        "description": "Mantieni i like in proporzione al resto dell’account. Un post con 2.000 like su un profilo con 300 follower e 500 visualizzazioni sembra strano; uno con 150 like no. Usa questa guida come punto di partenza.",
         "rows": [
           {
             "id": "buy-instagram-likes-pkg-100",
             "quantity": "100 like",
-            "recommendedFor": "Un’opzione più piccola per un post o un Reel in cui vuoi un aumento contenuto del conteggio like visibile."
+            "recommendedFor": "Per account nuovi o piccoli, o per provare prima il servizio su un post."
           },
           {
             "id": "buy-instagram-likes-pkg-500",
             "quantity": "500 like",
-            "recommendedFor": "Un’opzione intermedia per i contenuti Instagram in cui vuoi un cambiamento più visibile nel numero di like."
+            "recommendedFor": "Per account con qualche migliaio di follower che vogliono un post recente in linea con i numeri abituali."
           },
           {
             "id": "buy-instagram-likes-pkg-1k",
             "quantity": "1.000 like",
-            "recommendedFor": "Un pacchetto più grande per un post o un Reel selezionato in cui vuoi aggiungere mille like in un solo ordine."
+            "recommendedFor": "La nostra scelta più popolare: adatta a un post di prodotto, lancio o annuncio su un account già avviato."
           },
           {
             "id": "buy-instagram-likes-pkg-5k",
             "quantity": "5.000 like",
-            "recommendedFor": "Un’opzione a volume più alto per i contenuti Instagram in cui vuoi un aumento più ampio del conteggio like visibile."
+            "recommendedFor": "Per account più grandi e Reel che ricevono già migliaia di visualizzazioni."
           },
           {
             "id": "buy-instagram-likes-pkg-10k",
             "quantity": "10.000+ like",
-            "recommendedFor": "Un’opzione per post o Reel in cui stai scegliendo una delle quantità di like più grandi disponibili su NovaLikes."
+            "recommendedFor": "Per grandi post di brand o di campagna. Un ritmo graduale rende la crescita regolare."
           }
         ]
       },
@@ -533,35 +541,35 @@
     "whyBuy": {
       "id": "buy-instagram-likes-why-buy",
       "title": "Perché si comprano like Instagram?",
-      "description": "Si comprano like Instagram per tipi di contenuti e motivi diversi. Alcuni usano i pacchetti like per un post o un Reel nuovo, altri quando promuovono un prodotto, una campagna, un annuncio o un contenuto. Il servizio cambia il conteggio like visibile sul contenuto selezionato, ma non garantisce portata, commenti, follower, vendite o crescita organica.",
+      "description": "Nei nostri ordini vediamo sempre gli stessi pochi motivi. Riguardano tutti come appare un post a chi lo vede, non un modo per ingannare Instagram.",
       "items": [
         {
           "id": "buy-instagram-likes-wb-1",
-          "title": "Aggiungi like ai nuovi contenuti",
-          "description": "Un pacchetto like si può usare su un post o un Reel pubblicato di recente, quando vuoi aumentarne il conteggio like visibile."
+          "title": "Un avvio fiacco su un nuovo post",
+          "description": "Un post con una manciata di like nelle prime ore può far scorrere oltre i visitatori. Un contatore iniziale gli dà una prima impressione più giusta."
         },
         {
           "id": "buy-instagram-likes-wb-2",
-          "title": "Supporta un post di prodotto o di campagna",
-          "description": "Aziende e creator possono usare i like Instagram su contenuti legati a un lancio, una promozione, un annuncio o una campagna."
+          "title": "Post di prodotto e offerte",
+          "description": "I negozi aggiungono like a foto di prodotto, offerte e novità che i clienti vedono anche dal sito o da WhatsApp."
         },
         {
           "id": "buy-instagram-likes-wb-3",
-          "title": "Aumenta il conteggio like visibile",
-          "description": "I like Instagram si applicano al post o al Reel selezionato, invece di cambiare il numero di follower mostrato sul profilo."
+          "title": "Giveaway e annunci",
+          "description": "I post di eventi, giveaway e annunci spesso devono sembrare attivi in fretta perché contano solo per pochi giorni."
         },
         {
           "id": "buy-instagram-likes-wb-4",
-          "title": "Scegli una quantità per il contenuto",
-          "description": "Quantità diverse ti permettono di scegliere il numero di like in base al singolo post o Reel che vuoi usare."
+          "title": "Un post rimasto indietro",
+          "description": "Quando la maggior parte dei post riceve 300 like e uno solo 40, alcuni proprietari integrano quello più debole per una griglia uniforme."
         },
         {
           "id": "buy-instagram-likes-wb-5",
-          "title": "Usa i like insieme alla tua strategia di contenuti",
-          "description": "Comprare like cambia una metrica visibile sul contenuto selezionato. Didascalie, lavoro creativo, decisioni di pubblicazione, risposte e altre attività dell’account dipendono ancora da come gestisci la presenza Instagram."
+          "title": "Prima di sponsorizzare un post",
+          "description": "Alcuni clienti aggiungono like a un post prima di promuoverlo, così i visitatori a pagamento arrivano su un post già un po’ apprezzato."
         }
       ],
-      "bottomNote": "Se la metrica che vuoi cambiare è il numero di follower del profilo, le visualizzazioni video o i commenti, e non i like, scegli invece il servizio Instagram corrispondente."
+      "bottomNote": "I like cambiano solo il contatore dei cuori di un post. Per più follower sul profilo, visualizzazioni dei Reel o commenti, confronta gli altri servizi Instagram qui sotto."
     },
     "howToBuy": {
       "id": "how-it-works",

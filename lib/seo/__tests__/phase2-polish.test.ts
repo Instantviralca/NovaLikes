@@ -64,16 +64,28 @@ describe('Phase 2 technical SEO polish', () => {
     expect(site.socialLinks.instagram).toBe('https://www.instagram.com/novalikesco/');
     expect(site.socialLinks.facebook).toBe('https://www.facebook.com/novalikes/');
     expect(site.socialLinks.linkedin).toBe('https://www.linkedin.com/company/nova-likes/');
-    expect(site.socialLinks.tiktok).toBe('');
+    expect(site.socialLinks.tiktok).toBe('https://www.tiktok.com/@novalikes2');
     expect(site.socialLinks.youtube).toBe('');
 
     const org = organizationSchema();
     expect(org['@type']).toBe('Organization');
     expect(org['@id']).toBe('https://novalikes.com/#organization');
+    // Official NovaLikes profiles confirmed by the site owner (Oct 2026).
     expect(org.sameAs).toEqual([
       'https://www.instagram.com/novalikesco/',
       'https://www.facebook.com/novalikes/',
       'https://www.linkedin.com/company/nova-likes/',
+      'https://www.tiktok.com/@novalikes2',
+      'https://x.com/novalikes21',
+      'https://ca.pinterest.com/novalikes01/',
+      'https://www.threads.com/@novalikes01',
+      'https://www.crunchbase.com/organization/nova-likes',
+      'https://www.producthunt.com/@novalikes',
+      'https://medium.com/@novalikes01',
+      'https://substack.com/@novalikes',
+      'https://www.reddit.com/user/novalikes12/',
+      'https://www.quora.com/profile/Novalikes',
+      'https://www.tumblr.com/novalikess',
     ]);
     for (const url of org.sameAs as string[]) {
       expect(url).toMatch(/^https:\/\//);

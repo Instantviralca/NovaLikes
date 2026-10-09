@@ -46,14 +46,14 @@
     "category": "account_security",
     "order": 2,
     "question": "Mon compte de réseau social doit-il être public ?",
-    "answer": "Si le service choisi exige que NovaLikes accède publiquement à votre profil, Page, publication ou vidéo, ce contenu doit rester accessible publiquement pendant le traitement de la commande. Un contenu privé ou indisponible peut empêcher l’exécution du service."
+    "answer": "Oui. Le profil, la Page, la publication ou la vidéo doit être public pendant la livraison de votre commande, sinon la livraison ne peut ni démarrer ni se terminer. Une fois la livraison terminée, vous pouvez repasser en privé. Gardez aussi le même nom d’utilisateur : le modifier pendant une commande ou la période de refill de 6 mois peut bloquer la livraison et les refills."
   },
   {
     "id": "faq-as-make-private-after",
     "category": "account_security",
     "order": 3,
     "question": "Puis-je passer mon compte en privé après avoir commandé ?",
-    "answer": "Si votre commande dépend d’un accès public à un profil ou à un contenu, gardez-le public pendant le traitement. Modifier sa visibilité peut empêcher l’accès aux informations nécessaires."
+    "answer": "Oui, mais seulement une fois la livraison terminée. Pendant la livraison, le profil ou le contenu doit rester public. Ensuite, vous pouvez passer en privé ; si vous avez besoin d’un refill plus tard, repassez en public jusqu’à ce que le refill soit livré."
   },
   {
     "id": "faq-as-login-account",
@@ -88,14 +88,14 @@
     "category": "orders_delivery",
     "order": 1,
     "question": "Combien de temps prend une commande NovaLikes ?",
-    "answer": "Le traitement et la livraison peuvent varier selon le service et le forfait. Utilisez les informations de livraison affichées pour le forfait choisi, plutôt que de supposer que tous les services NovaLikes ont le même délai."
+    "answer": "La plupart des commandes démarrent dans les 6 à 8 heures suivant la confirmation du paiement. Une fois démarrée, la livraison standard est généralement terminée en 4 à 6 heures. Si vous préférez un rythme plus lent, demandez une livraison progressive dans la note de commande ou sur WhatsApp. Vous pouvez suivre la progression sur la page [Suivre ma commande](/track-order) avec votre numéro de commande et votre e-mail."
   },
   {
     "id": "faq-od-start-immediately",
     "category": "orders_delivery",
     "order": 2,
     "question": "Ma commande démarre-t-elle immédiatement ?",
-    "answer": "Le traitement d’une commande peut varier selon le service choisi et les conditions de traitement en cours. Consultez les informations fournies pour le service ou le forfait sélectionné pour tout détail de délai applicable."
+    "answer": "Pas instantanément. Chaque commande est d’abord vérifiée, et la plupart démarrent dans les 6 à 8 heures suivant la confirmation du paiement. Ensuite, la livraison standard est généralement terminée en 4 à 6 heures."
   },
   {
     "id": "faq-od-track",
@@ -116,7 +116,7 @@
     "category": "orders_delivery",
     "order": 5,
     "question": "Que faire si ma commande n’a pas commencé ?",
-    "answer": "Vérifiez d’abord que le nom d’utilisateur ou l’URL que vous avez indiqué est correct, et que le profil ou le contenu concerné est toujours public. Si les informations sont justes et que vous avez encore besoin d’aide, contactez l’assistance NovaLikes avec les détails de votre commande."
+    "answer": "Si votre commande n’a pas démarré 8 heures après le paiement, vérifiez d’abord que le nom d’utilisateur ou le lien est correct et que le profil ou le contenu est public. Si tout est correct, écrivez-nous sur WhatsApp (+44 7454 758272) ou à support@novalikes.com avec votre numéro de commande."
   },
   {
     "id": "faq-od-change-url",
@@ -165,21 +165,21 @@
     "category": "instagram",
     "order": 4,
     "question": "Mon compte Instagram doit-il être public pour recevoir des abonnés ?",
-    "answer": "Si le service Abonnés Instagram nécessite l’accès à votre profil public, gardez le profil accessible publiquement pendant le traitement de la commande. Un profil privé ou indisponible peut empêcher l’accès aux informations nécessaires."
+    "answer": "Oui. Laissez votre profil Instagram public jusqu’à la fin de la livraison, sinon la commande ne peut ni démarrer ni se terminer. Vous pourrez le repasser en privé une fois la livraison terminée. Merci de ne pas changer votre nom d’utilisateur pendant la commande ni pendant la période de refill de 6 mois."
   },
   {
     "id": "faq-ig-private-followers",
     "category": "instagram",
     "order": 5,
     "question": "Puis-je acheter des abonnés Instagram pour un compte privé ?",
-    "answer": "Un compte Instagram privé peut empêcher le traitement normal d’un service qui dépend de l’accès au profil public. Suivez les exigences de visibilité indiquées pour le service Abonnés Instagram avant et pendant votre commande."
+    "answer": "Vous pouvez passer commande, mais la livraison ne peut démarrer qu’une fois le profil public. Passez-le en public avant ou juste après la commande, laissez-le public jusqu’à la fin de la livraison, puis vous pourrez le repasser en privé."
   },
   {
     "id": "faq-ig-followers-drop",
     "category": "instagram",
     "order": 6,
     "question": "Instagram peut-il retirer des abonnés après la livraison ?",
-    "answer": "Les nombres d’abonnés sur les plateformes sociales peuvent évoluer dans le temps, notamment lorsque des comptes sont supprimés, désactivés ou ne sont plus comptabilisés par la plateforme. Consultez les conditions du service NovaLikes concerné pour toute condition de réapprovisionnement applicable, plutôt que de supposer que chaque commande inclut un refill."
+    "answer": "Oui, une certaine baisse est normale. Nos abonnés proviennent de profils réalistes — nous ne prétendons pas qu’il s’agit d’utilisateurs réels actifs — et Instagram supprime ou masque régulièrement les comptes qu’il signale. C’est pourquoi chaque commande inclut un refill de 6 mois : si votre nombre baisse, écrivez-nous sur WhatsApp (+44 7454 758272) avec votre numéro de commande et nous le compléterons."
   },
   {
     "id": "faq-ig-safe-likes",
@@ -249,7 +249,7 @@
     "category": "tiktok",
     "order": 4,
     "question": "Mon compte TikTok doit-il être public ?",
-    "answer": "Si le service TikTok choisi exige un accès public à votre profil ou à votre vidéo, gardez le contenu concerné accessible publiquement pendant le traitement de la commande."
+    "answer": "Oui. Laissez votre compte TikTok et la vidéo transmise publics jusqu’à la fin de la livraison ; vous pourrez ensuite passer le compte en privé. Merci de ne pas changer votre nom d’utilisateur pendant la commande ni pendant la période de refill de 6 mois."
   },
   {
     "id": "faq-tt-likes-video",
@@ -298,7 +298,7 @@
     "category": "facebook",
     "order": 3,
     "question": "Ma Page Facebook doit-elle être publique ?",
-    "answer": "Si le service choisi exige l’accès à votre Page Facebook, la Page doit rester accessible publiquement pendant le traitement de la commande."
+    "answer": "Oui. Laissez la Page (et la publication, pour les J’aime de publication) publique jusqu’à la fin de la livraison. Merci de ne pas changer le nom d’utilisateur ni l’URL de la Page pendant la commande ni pendant la période de refill de 6 mois."
   },
   {
     "id": "faq-fb-followers-vs-page-likes",
@@ -361,7 +361,7 @@
     "category": "payments_refunds",
     "order": 2,
     "question": "Dans quelle devise les prix NovaLikes sont-ils affichés ?",
-    "answer": "Les prix des forfaits NovaLikes sont affichés dans la devise par défaut configurée pour la boutique du site."
+    "answer": "Tous les prix NovaLikes sont en dollars américains (USD). Si vous payez avec une carte dans une autre devise, comme l’euro ou la livre sterling, votre banque ou l’émetteur de votre carte convertit le montant à son propre taux de change ; le montant final sur votre relevé peut donc légèrement varier."
   },
   {
     "id": "faq-pr-payment-declined",
@@ -382,13 +382,13 @@
     "category": "payments_refunds",
     "order": 5,
     "question": "NovaLikes propose-t-il des refills ?",
-    "answer": "La disponibilité des refills dépend du service et du forfait achetés. Consultez les conditions indiquées pour le service ou le forfait choisi pour toute condition de refill applicable."
+    "answer": "Oui. Chaque service NovaLikes inclut un refill de 6 mois. Si les abonnés, J’aime, vues ou commentaires livrés baissent dans les 6 mois suivant la livraison de votre commande, écrivez-nous sur WhatsApp (+44 7454 758272) avec votre numéro de commande et nous compenserons la baisse. Pour rester éligible, ne changez pas votre nom d’utilisateur et laissez le profil ou le contenu public pendant la livraison de la commande ou d’un refill ; vous pourrez repasser en privé une fois la livraison terminée."
   },
   {
     "id": "faq-pr-drops",
     "category": "payments_refunds",
     "order": 6,
     "question": "Que se passe-t-il si des abonnés ou des likes diminuent après la livraison ?",
-    "answer": "Les nombres d’abonnés et de likes sur les plateformes sociales peuvent évoluer dans le temps. Si votre forfait inclut une politique de refill applicable, suivez les conditions indiquées pour ce service, ou contactez l’assistance NovaLikes pour de l’aide sur la commande."
+    "answer": "Une certaine baisse au fil du temps est normale sur toutes les plateformes, car Instagram, TikTok et Facebook suppriment ou masquent régulièrement des comptes et des interactions. Chaque commande NovaLikes inclut un refill de 6 mois : écrivez-nous sur WhatsApp (+44 7454 758272) avec votre numéro de commande et nous compenserons la baisse, à condition que le nom d’utilisateur n’ait pas changé et que le profil ou le contenu soit public pendant la livraison du refill."
   }
 ]

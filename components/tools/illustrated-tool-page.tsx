@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { ArrowRight, Heart, Lock, MessageCircle, Play, ThumbsUp, Users } from 'lucide-react';
+import { ArrowRight, Check, Heart, Lock, MessageCircle, Play, ThumbsUp, Users } from 'lucide-react';
 
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
@@ -136,7 +136,14 @@ export function IllustratedToolPage({
               {copyLayout?.editorialHeading ?? layout.editorialHeading}
             </Heading>
             <Squiggle className="mt-2 h-4 w-16" color="#E85D04" />
-            <p className="mt-5 text-base leading-relaxed text-[var(--text-secondary)]">{copy.intro[0]}</p>
+            {copy.intro.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`${index === 0 ? 'mt-5' : 'mt-4'} text-base leading-relaxed text-[var(--text-secondary)]`}
+              >
+                {paragraph}
+              </p>
+            ))}
           </div>
           <SnapArt name={layout.editorialArt} className="justify-self-center mix-blend-multiply lg:max-w-lg" />
         </Container>
@@ -161,6 +168,52 @@ export function IllustratedToolPage({
               ))}
             </div>
           </div>
+        </Container>
+      </Section>
+
+      <Section spacing="none" className="relative bg-transparent pt-14 md:pt-20" data-section="tool-details">
+        <Container size="xl" className="grid gap-6 lg:grid-cols-3">
+          <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
+            <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
+              {copy.howHeading}
+            </Heading>
+            {copy.how.map((paragraph) => (
+              <p key={paragraph} className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
+            <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
+              {copy.supportedHeading}
+            </Heading>
+            {copy.supportedIntro ? (
+              <p className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)]">{copy.supportedIntro}</p>
+            ) : null}
+            <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
+              {copy.supported.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <Check className="mt-0.5 size-4 shrink-0 text-[var(--brand-primary)]" aria-hidden="true" />
+                  <span className="break-words">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {copy.notes.length > 1 ? (
+            <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
+              <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
+                {copy.notesHeading}
+              </Heading>
+              <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
+                {copy.notes.slice(1).map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <Check className="mt-0.5 size-4 shrink-0 text-[var(--brand-primary)]" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </Container>
       </Section>
 

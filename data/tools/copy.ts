@@ -54,6 +54,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'A profile picture is often the only image people can open without following an account, yet Instagram’s own layout keeps it tiny. This page is for that gap: you look up a public username and, when Instagram includes the photo on the public profile, we display it at a size you can actually see.',
       'Nothing here unlocks a private account. If Instagram does not publish a profile image for visitors who are not logged in, the tool returns an error instead of guessing or substituting another picture.',
+      'Common reasons: checking you found the right account before you follow or message it, seeing a brand logo clearly, or spotting a copycat account that reuses someone else’s photo.',
     ],
     howHeading: 'How this viewer works',
     how: [
@@ -78,6 +79,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Private, hidden, or login-only profiles cannot be viewed.',
       'This page does not show follower counts, bios, or recent posts. Use Instagram Profile Viewer when you want that combined snapshot.',
       'The image is whatever Instagram currently publishes. We do not upscale it or label it HD.',
+      'A profile photo can be a personal image. Use it to recognise the account, and ask the owner before reusing it anywhere else.',
     ],
     relatedHeading: 'Other Instagram tools',
     faqHeading: 'Profile picture questions',
@@ -106,6 +108,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         answer:
           'Yes, when Instagram exposes the public image. Download Image saves that file through NovaLikes. View Full Size opens the same image in a new tab.',
       },
+      {
+        id: 'igp-guide',
+        question: 'Why do Instagram profile pictures look so small?',
+        answer:
+          'Instagram shows profile photos as small circles almost everywhere, and the file can only be as sharp as what the owner uploaded. This viewer opens the largest public version Instagram exposes. Our guide [How to View an Instagram Profile Picture in Full Size](/learn/view-instagram-profile-picture-full-size) explains why, and what stays public on private accounts.',
+      },
     ],
   },
   'instagram-follower-counter': {
@@ -120,6 +128,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'People look up follower counts to confirm what an account already shows the world. This tool does that lookup for you: it requests the public profile and returns the Followers figure Instagram includes on that page at the time of the check.',
       'When Instagram writes 104M, you will see 104M. Expanding that into a made-up 104,000,000 would be less honest, not more precise. Smaller accounts that still show a full number are shown that way too.',
+      'It is handy for a quick check before a collaboration or ad deal, for following a competitor’s published count, or for confirming a milestone. Instagram does not show follower history on the profile, so note the figure and the date each time you check.',
     ],
     howHeading: 'How the count is read',
     how: [
@@ -143,6 +152,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'It is not a live total and not a private-account lookup.',
       'We do not convert 104M into a fake exact count.',
       'Following and post totals belong on Instagram Profile Viewer, not this focused counter.',
+      'Follower counts can include inactive or fake accounts, so a large number on its own does not prove real reach or engagement.',
     ],
     relatedHeading: 'Other Instagram tools',
     faqHeading: 'Follower count questions',
@@ -169,6 +179,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         question: 'Can I view the profile photo too?',
         answer:
           'The counter may include the public photo when Instagram exposes it. For a dedicated image view, use the [Instagram Profile Picture Viewer](/tools/instagram-profile-picture-viewer). For name, bio, and all three counts, use the [Instagram Profile Viewer](/tools/instagram-profile-viewer).',
+      },
+      {
+        id: 'igf-guide',
+        question: 'Can I check a follower count without an Instagram account?',
+        answer:
+          'Yes, for public profiles. Enter the username above — no Instagram login is needed. Our guide [How to Check an Instagram Follower Count Without Logging In](/learn/check-instagram-follower-count-without-login) covers the other methods and what follower numbers do and do not tell you.',
       },
     ],
   },
@@ -220,7 +236,8 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       {
         id: 'igvwr-private',
         question: 'Can I view a private Instagram profile?',
-        answer: 'No. Only public profiles that Instagram already exposes can be checked.',
+        answer:
+          'No. Only public profiles that Instagram already exposes can be checked. Our guide [How to View a Public Instagram Profile Without Logging In](/learn/view-instagram-profile-without-login) explains what stays public and what private accounts hide.',
       },
       {
         id: 'igvwr-counts',
@@ -250,6 +267,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'Instagram often renders Reels in a player that never hands a video file to an unauthenticated visitor. This tool still performs the check: if a public media URL is present, you can download it. If it is not, you see a clear message.',
       'Limited availability means we refuse to invent a file. It does not mean the form is offline. Stories, private posts, and login-only media stay out of reach.',
+      'People usually want a copy for simple reasons: keeping a backup of their own Reels, watching a clip offline, or saving a reference for editing. If the video is not yours, ask the creator before you reuse it.',
     ],
     howHeading: 'What happens after you paste a URL',
     how: [
@@ -273,6 +291,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Stories, private accounts, and login-only posts are not retrieved.',
       'This page does not ask for an Instagram password.',
       'For profile photos, use the Instagram Profile Picture Viewer instead of a Reel URL.',
+      'Only download videos you own or have permission to use. Reposting someone else’s Reel can break Instagram’s rules and the creator’s copyright.',
     ],
     relatedHeading: 'Other Instagram tools',
     faqHeading: 'Reel and video questions',
@@ -299,6 +318,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         question: 'I only need a profile photo.',
         answer: 'Use the [Instagram Profile Picture Viewer](/tools/instagram-profile-picture-viewer).',
       },
+      {
+        id: 'igv-save',
+        question: 'How do I save an Instagram video to my phone’s gallery?',
+        answer:
+          'When a file is offered, tap Download. On iPhone it goes to the Files app (Downloads): open it, tap Share and choose Save Video to add it to Photos. On Android it lands in your Downloads folder and shows up in the gallery. Instagram’s own Save button only bookmarks the post inside Instagram.',
+      },
     ],
   },
   'tiktok-video-downloader': {
@@ -313,6 +338,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'Creators and viewers often need a copy of a public video they can already watch without logging in. This downloader requests that public page from NovaLikes servers and, when TikTok includes a video file, offers it as a download.',
       'Share links are resolved when they point at a public watch page. Photo posts, private videos, and removed items are not supported. Any watermark or region limit on the public file still applies.',
+      'Common reasons are keeping a backup of your own TikToks, watching a clip offline, or collecting references for editing. If the video belongs to someone else, ask the creator before you reuse it.',
     ],
     howHeading: 'How retrieval works',
     how: [
@@ -336,6 +362,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Photo posts, private videos, and removed videos are not supported.',
       'TikTok may briefly limit repeated requests.',
       'This page does not claim to strip watermarks. Whatever TikTok publishes is what you receive.',
+      'Only download videos you own or have permission to use. Reposting someone else’s TikTok can break TikTok’s rules and the creator’s copyright.',
     ],
     relatedHeading: 'Other TikTok tools',
     faqHeading: 'TikTok video questions',
@@ -360,6 +387,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         question: 'Do I need a TikTok account?',
         answer: 'No. If TikTok does not expose the public file, the tool cannot retrieve it.',
       },
+      {
+        id: 'tt-save',
+        question: 'How do I save a TikTok video to my iPhone or Android?',
+        answer:
+          'After the file appears, tap Download. On iPhone it goes to the Files app (Downloads): open it, tap Share and choose Save Video to move it into Photos. On Android it lands in Downloads and appears in your gallery. TikTok’s own Save video option only shows when the creator allows downloads, and it adds TikTok’s watermark.',
+      },
     ],
   },
   'tiktok-profile-picture-downloader': {
@@ -374,6 +407,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'This page is only for the picture TikTok places on a public profile. It does not count followers, list videos, or open private accounts. If you need a video file, use the TikTok Video Downloader instead.',
       'A username, an @handle, or a tiktok.com/@user link all identify the same public account. Video URLs are rejected here so the lookup stays on the profile photo.',
+      'People use it to recognise an account, see a brand logo more clearly, or confirm they have the right profile before they follow, message or work with someone.',
     ],
     howHeading: 'How the photo is retrieved',
     how: [
@@ -396,6 +430,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Private or login-only profiles return an error.',
       'TikTok video URLs belong on the video downloader, not this form.',
       'The file is the avatar TikTok publishes. We do not relabel it as HD.',
+      'A profile photo can be a personal image. Use it only to recognise the account, or with the owner’s permission.',
     ],
     relatedHeading: 'Other TikTok tools',
     faqHeading: 'TikTok photo questions',
@@ -420,6 +455,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         question: 'Does @username work, or do I need the full URL?',
         answer: 'Either works. You can type nba, @nba, or https://www.tiktok.com/@nba.',
       },
+      {
+        id: 'ttp-size',
+        question: 'Why does the profile picture look small or soft?',
+        answer:
+          'TikTok publishes avatars at a limited size, and the file can only be as sharp as what the owner uploaded. NovaLikes shows the largest public version TikTok exposes and does not upscale it or relabel it as HD.',
+      },
     ],
   },
   'facebook-video-downloader': {
@@ -434,6 +475,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'Facebook still publishes many long-form videos on watch pages and page /videos/ paths. This downloader is for those URLs. When Facebook includes an HD source, an SD source, or both, those options appear with Facebook’s own labels.',
       'Friends-only clips, login walls, and removed videos cannot be retrieved. A Reel-style /reel/ link is pointed to the Facebook Reels Downloader instead of being forced through this form.',
+      'To get the link on a phone, open the video, tap Share and choose Copy link. On a computer, open the video in its own tab and copy the address bar. After downloading, the file goes to the Files app on iPhone and to Downloads on Android.',
     ],
     howHeading: 'How Facebook media is offered',
     how: [
@@ -458,6 +500,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Friends-only, login-required, and removed videos cannot be retrieved.',
       'Quality buttons appear only when Facebook labels those sources.',
       'Use the Reels downloader for /reel/ and Reel share URLs.',
+      'Only download videos you own or have permission to use. Reposting someone else’s video can break Facebook’s rules and the creator’s copyright.',
     ],
     relatedHeading: 'Other Facebook tools',
     faqHeading: 'Facebook video questions',
@@ -483,6 +526,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         question: 'Is a Facebook login required?',
         answer: 'No. The tool never asks for Facebook credentials.',
       },
+      {
+        id: 'fbv-guide',
+        question: 'What is the difference between Save video and downloading?',
+        answer:
+          'Facebook’s Save video only bookmarks the video inside Facebook so you can watch it later. Downloading gives you a file on your device. Our guide [How to Download a Public Facebook Video](/learn/how-to-download-facebook-video) explains both and why some videos cannot be retrieved.',
+      },
     ],
   },
   'facebook-reels-downloader': {
@@ -497,6 +546,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
     intro: [
       'Facebook Reels use /reel/ paths and Reel share links, not the older watch player. This page exists so those URLs are handled on their own terms. If Facebook exposes a public media file, you can download it here.',
       'A regular page video still belongs on the Facebook Video Downloader. Sending the wrong link type returns a pointer to the matching tool rather than a silent failure.',
+      'To get the link, open the Reel, tap Share and choose Copy link. On iPhone the downloaded file goes to the Files app, where Share and then Save Video moves it to Photos. On Android it lands in Downloads and shows up in your gallery.',
     ],
     howHeading: 'How a Reel is retrieved',
     how: [
@@ -520,6 +570,7 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
       'Watch or /videos/ links belong on the Facebook Video Downloader.',
       'Quality labels appear only when Facebook reports HD or SD.',
       'Private Reels are not retrieved.',
+      'Only download Reels you own or have permission to use. Reposting someone else’s Reel can break Facebook’s rules and the creator’s copyright.',
     ],
     relatedHeading: 'Other Facebook tools',
     faqHeading: 'Facebook Reel questions',
@@ -545,6 +596,12 @@ export const TOOL_PAGE_COPY: Record<ToolSlug, ToolPageCopy> = {
         id: 'fbr-login',
         question: 'Is a Facebook account required?',
         answer: 'No. The tool never asks for Facebook credentials.',
+      },
+      {
+        id: 'fbr-guide',
+        question: 'Can I download my own Reel without this tool?',
+        answer:
+          'Often, yes. Facebook offers a native download option for Reels you shared yourself, in the mobile app. Our guide [How to Download a Public Facebook Reel](/learn/how-to-download-facebook-reel) explains when that option appears and why some Reels cannot be retrieved.',
       },
     ],
   },

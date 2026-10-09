@@ -144,13 +144,30 @@ describe('Organization schema entity signals', () => {
       expect.arrayContaining(['Instagram growth services', 'Social media lookup tools']),
     );
     expect(schema.sameAs).toEqual([
-      site.socialLinks.instagram,
-      site.socialLinks.facebook,
-      site.socialLinks.linkedin,
+      'https://www.instagram.com/novalikesco/',
+      'https://www.facebook.com/novalikes/',
+      'https://www.linkedin.com/company/nova-likes/',
+      'https://www.tiktok.com/@novalikes2',
+      'https://x.com/novalikes21',
+      'https://ca.pinterest.com/novalikes01/',
+      'https://www.threads.com/@novalikes01',
+      'https://www.crunchbase.com/organization/nova-likes',
+      'https://www.producthunt.com/@novalikes',
+      'https://medium.com/@novalikes01',
+      'https://substack.com/@novalikes',
+      'https://www.reddit.com/user/novalikes12/',
+      'https://www.quora.com/profile/Novalikes',
+      'https://www.tumblr.com/novalikess',
     ]);
     expect(schema).not.toHaveProperty('aggregateRating');
-    expect(schema).not.toHaveProperty('address');
-    expect(schema).not.toHaveProperty('telephone');
+    // Verified operator details (DMRUSH LIMITED, Companies House SC876437).
+    expect(schema.legalName).toBe('DMRUSH LIMITED');
+    expect(schema.telephone).toBe('+447454758272');
+    expect(schema.address).toMatchObject({
+      '@type': 'PostalAddress',
+      postalCode: 'G4 0XE',
+      addressCountry: 'GB',
+    });
     expect(schema).not.toHaveProperty('areaServed');
   });
 });

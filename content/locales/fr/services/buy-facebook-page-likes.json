@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "SERVICES FACEBOOK",
       "title": "Acheter des J’aime de Page Facebook",
-      "description": "Achetez des J’aime de Page Facebook en choisissant le forfait et la quantité adaptés à votre Page. NovaLikes vous permet de comparer les forfaits de J’aime de Page et les prix avant de commander. Sélectionnez le nombre de J’aime de Page souhaité, indiquez l’URL de Page Facebook publique exacte, puis finalisez votre commande en ligne. Votre mot de passe Facebook n’est pas requis, et vous pouvez utiliser le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+      "description": "Achetez des J’aime de Page Facebook pour une Page publique à partir de 2,99 $ US, mais vérifiez d’abord que votre Page affiche encore un nombre de J’aime, car les Pages récentes affichent des abonnés. Collez le lien de la Page, choisissez un forfait et payez, sans mot de passe. La plupart des commandes démarrent sous 6 à 8 heures, et chaque commande inclut un refill de 6 mois et un support WhatsApp 24 h/24 et 7 j/7.",
       "purpose": "Convert for Facebook page likes packages worldwide",
       "primaryKeyword": "buy Facebook page likes",
       "supportingKeywords": [
@@ -31,7 +31,7 @@
       "trustLabels": [
         {
           "id": "fb-pl-trust-url",
-          "label": "URL de Page Facebook publique uniquement"
+          "label": "Pages Facebook uniquement"
         },
         {
           "id": "fb-pl-trust-password",
@@ -39,11 +39,11 @@
         },
         {
           "id": "fb-pl-trust-checkout",
-          "label": "Paiement sécurisé"
+          "label": "Démarrage en 6 à 8 heures"
         },
         {
           "id": "fb-pl-trust-track",
-          "label": "Suivi de commande"
+          "label": "Refill de 6 mois"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Forfaits et tarifs de J’aime de Page Facebook",
-      "description": "Comparez les forfaits de J’aime de Page Facebook disponibles, les quantités et les prix avant de commander. Choisissez le nombre de J’aime de Page souhaité pour votre Page Facebook publique, relisez le prix actuel du forfait, puis ajoutez le forfait sélectionné au panier lorsque vous êtes prêt.",
+      "description": "Les prix sont en dollars américains. 1 000 J’aime de Page est le forfait le plus populaire. Si votre Page affiche des abonnés plutôt que des J’aime, choisissez les abonnés Facebook.",
       "purpose": "Present real NovaLikes.com Facebook page likes packages",
       "primaryKeyword": "Facebook page likes packages",
       "suggestedWordCount": 45,
@@ -247,31 +247,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-page-likes-why-choose",
-        "title": "Pourquoi choisir NovaLikes pour des J’aime de Page Facebook ?",
-        "description": "NovaLikes facilite la comparaison des forfaits de J’aime de Page Facebook avant de commander. Choisissez la quantité de J’aime de Page souhaitée, indiquez l’URL de Page Facebook publique exacte, relisez le prix du forfait, puis utilisez le suivi de commande après le paiement pour consulter les informations de statut disponibles.",
+        "title": "Pourquoi acheter des J’aime de Page Facebook chez NovaLikes ?",
+        "description": "Nous traitons des commandes pour les réseaux sociaux depuis 7 à 8 ans — sur d’autres sites, sous le nom ViralMe et aujourd’hui NovaLikes — et nous préférons que vous achetiez le bon service plutôt que le mauvais. C’est pourquoi cette page commence par une vérification honnête.",
         "items": [
           {
             "id": "buy-facebook-page-likes-0",
-            "title": "Plusieurs quantités de J’aime de Page",
-            "description": "Comparez les quantités de J’aime de Page Facebook disponibles et choisissez le forfait qui correspond au nombre de J’aime de Page que vous voulez commander.",
+            "title": "D’abord un conseil honnête",
+            "description": "Facebook met désormais les abonnés en avant sur la plupart des Pages. Nous vous expliquons comment vérifier quel chiffre votre Page affiche, pour ne payer que celui que voient les visiteurs.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-page-likes-1",
-            "title": "URL de Page Facebook publique uniquement",
-            "description": "Indiquez l’URL de Page Facebook publique exacte de la Page à laquelle vous voulez ajouter les J’aime de Page. Votre mot de passe Facebook n’est pas requis.",
+            "title": "Démarrage en 6 à 8 heures",
+            "description": "La plupart des commandes de J’aime de Page démarrent dans les 6 à 8 heures suivant le paiement et se terminent 4 à 6 heures après le démarrage.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-2",
-            "title": "Vérifiez avant le paiement",
-            "description": "Vérifiez la quantité de J’aime de Page sélectionnée et le prix actuel du forfait avant d’ajouter votre commande au panier et de finaliser le paiement.",
+            "title": "Progressif sur demande",
+            "description": "Vous préférez une hausse plus lente ? Demandez-le dans la note au paiement ou sur WhatsApp et nous étalons la commande sur une période plus longue.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-3",
-            "title": "Suivi de commande",
-            "description": "Utilisez l’option de suivi disponible après le paiement pour consulter les informations de statut de votre commande de J’aime de Page Facebook.",
+            "title": "Refill de 6 mois",
+            "description": "Si le nombre baisse dans les 6 mois suivant la livraison, envoyez votre numéro de commande sur WhatsApp et nous le complétons.",
             "icon": "headphones"
           }
         ]
@@ -281,66 +281,74 @@
       "canYouBuy": {
         "id": "buy-facebook-page-likes-can-you-buy",
         "title": "Peut-on acheter des J’aime de Page Facebook ?",
-        "description": "Oui. Des forfaits de J’aime de Page Facebook peuvent être achetés via des services de J’aime de Page en ligne. Chez NovaLikes, vous choisissez un forfait de J’aime de Page disponible, indiquez l’URL de Page Facebook publique de la Page que vous voulez utiliser, puis finalisez votre commande sur le site.",
+        "description": "Oui. Vous pouvez acheter des J’aime de Page pour une Page Facebook publique en collant le lien de la Page, en choisissant un forfait et en payant en dollars américains. Avant cela, vérifiez votre Page : si elle affiche un nombre d’abonnés plutôt qu’un nombre de J’aime, les abonnés Facebook sont un meilleur achat.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-4",
-            "title": "Ce qu’une commande de J’aime de Page Facebook modifie",
-            "description": "Une commande de J’aime de Page Facebook s’applique au nombre de J’aime de Page de la Page Facebook publique fournie avec la commande. Elle n’ajoute pas automatiquement des abonnés Facebook ni des likes aux publications individuelles.",
+            "title": "Pour les Pages Facebook uniquement",
+            "description": "Les J’aime de Page s’appliquent à une Page Facebook, pas à un profil personnel ni à une publication précise.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-page-likes-5",
-            "title": "Ce qu’il faut pour passer commande",
-            "description": "Vous avez besoin de l’URL de Page Facebook publique exacte et du forfait de J’aime de Page que vous souhaitez acheter. Votre mot de passe Facebook n’est pas requis.",
+            "title": "Vérifiez d’abord votre Page",
+            "description": "Ouvrez votre Page en tant que visiteur. Si vous voyez « J’aime » près du nom, ce service convient. Si vous ne voyez que « followers », choisissez plutôt les abonnés Facebook.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-page-likes-6",
-            "title": "Ce que les J’aime de Page Facebook n’incluent pas",
-            "description": "Les J’aime de Page sont distincts des abonnés Facebook et des J’aime de publication. Commander des J’aime de Page n’ajoute pas automatiquement ces autres indicateurs et ne garantit ni un engagement, une portée, des ventes ou une croissance organique supplémentaires.",
+            "title": "Ce dont nous avons besoin",
+            "description": "Le lien public de la Page (facebook.com/votrepage). Jamais votre mot de passe, ni un accès administrateur à la Page.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Avant le paiement, assurez-vous d’avoir sélectionné les J’aime de Page Facebook, choisi la bonne quantité de J’aime de Page et indiqué l’URL de la Page Facebook publique exacte à laquelle vous voulez ajouter les J’aime de Page."
+        "closingNote": "Toujours un doute sur le chiffre qu’affiche votre Page ? Envoyez-nous le lien sur WhatsApp avant de commander et nous vous dirons quel service choisir."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-page-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Les J’aime de Page Facebook valent-ils encore la peine ?",
+        "description": "Pour certaines Pages, oui ; pour beaucoup, les abonnés comptent davantage. Facebook fait passer les Pages des J’aime aux abonnés depuis plusieurs années. Sur la nouvelle expérience des Pages, le nombre d’abonnés est le chiffre principal, et Meta affiche désormais des abonnements plutôt que des J’aime de Page dans Meta Business Suite. Les J’aime de Page restent pertinents là où votre Page les affiche encore.",
+        "helpTitle": "Quand les J’aime de Page ont du sens",
+        "helpItems": [
+          "Les Pages plus anciennes qui affichent encore clairement un nombre de J’aime aux visiteurs.",
+          "Les Pages pour lesquelles vous avez vérifié que le nombre de J’aime est celui que voient les clients.",
+          "Garder un nombre de J’aime existant cohérent avec le reste de la Page."
+        ],
+        "limitTitle": "Quand choisir autre chose",
+        "limitItems": [
+          "Votre Page affiche des abonnés, pas des J’aime : choisissez les abonnés Facebook.",
+          "Vous voulez des réactions sur une publication : choisissez les J’aime de publication Facebook.",
+          "Vous voulez plus de portée : ni les J’aime ni les abonnés ne poussent seuls Facebook à montrer vos publications à plus de monde."
+        ],
+        "closingNote": "Notre guide du Learn Center (en anglais) qui compare abonnés, J’aime de Page et J’aime de publication Facebook explique le fonctionnement de chaque statistique sur les Pages actuelles."
       },
       "whatHappens": {
         "id": "buy-facebook-page-likes-what-happens",
         "title": "Que se passe-t-il après l’achat de J’aime de Page Facebook ?",
-        "description": "Une fois votre commande de J’aime de Page Facebook passée, le forfait de J’aime de Page et l’URL de Page Facebook publique que vous avez fournis servent à traiter la commande pour la Page sélectionnée. Gardez la Page accessible publiquement lorsque c’est requis pendant le traitement.",
+        "description": "Ce qui se passe après le paiement de J’aime de Page Facebook.",
         "steps": [
           {
             "id": "buy-facebook-page-likes-th-1",
-            "title": "Les détails de votre commande sont vérifiés",
-            "description": "Le forfait de J’aime de Page, la quantité et l’URL de Page Facebook fournie sont associés à votre commande, afin que la demande soit traitée pour la Page visée."
+            "title": "Lien de la Page rattaché",
+            "description": "Le lien de votre Page est lié à votre numéro de commande. Si vous remarquez une erreur, écrivez-nous sur WhatsApp avant le début de la livraison."
           },
           {
             "id": "buy-facebook-page-likes-th-2",
-            "title": "Les J’aime de Page vont à la Page indiquée",
-            "description": "La commande s’applique à la Page Facebook liée à l’URL que vous avez fournie. Vérifiez soigneusement l’URL de la Page avant de finaliser le paiement."
+            "title": "La livraison démarre sous 6 à 8 heures",
+            "description": "La plupart des commandes démarrent dans les 6 à 8 heures suivant le paiement. Si vous avez demandé un rythme progressif, la livraison est étalée plus longtemps."
           },
           {
             "id": "buy-facebook-page-likes-th-3",
-            "title": "Le délai de traitement peut varier",
-            "description": "Le temps nécessaire pour traiter une commande peut varier selon la quantité de J’aime de Page et les conditions de commande en cours. Un délai de livraison unique ne doit pas être attendu pour tous les forfaits."
+            "title": "La plupart se terminent en 4 à 6 heures",
+            "description": "Une fois lancée, une commande standard est généralement terminée en 4 à 6 heures. Suivez-la sur la page Suivi de commande."
           },
           {
             "id": "buy-facebook-page-likes-th-4",
-            "title": "Consultez le statut de votre commande",
-            "description": "Utilisez le suivi de commande NovaLikes pour les mises à jour de statut disponibles. Si vous avez besoin d’aide, contactez l’assistance avec les informations de commande concernées."
+            "title": "La période de refill s’ouvre",
+            "description": "Votre refill de 6 mois commence le jour où la livraison se termine. Si le nombre baisse, envoyez votre numéro de commande sur WhatsApp."
           }
         ],
-        "closingNote": "Évitez de supprimer la Page fournie, de la rendre indisponible, ou de modifier quoi que ce soit qui empêche l’accès pendant le traitement de la commande. Si quelque chose change après la commande, contactez l’assistance si vous avez besoin d’aide."
+        "closingNote": "Gardez la Page publiée et publique, et ne changez ni son nom d’utilisateur ni son URL pendant la commande ou les 6 mois de refill."
       },
       "serviceCompare": {
         "id": "buy-facebook-page-likes-service-compare",
@@ -372,8 +380,8 @@
       "beforeBuying": {
         "id": "buy-facebook-page-likes-before-buying",
         "title": "Que vérifier avant d’acheter des J’aime de Page Facebook",
-        "description": "Avant d’acheter des J’aime de Page Facebook, relisez le forfait et les détails de la Page avant de finaliser votre commande. Assurez-vous que la quantité de J’aime de Page, le prix, l’URL de Page Facebook et le service sélectionné correspondent à ce que vous voulez pour la Page.",
-        "framingNote": "Vérifiez une dernière fois l’URL de Page Facebook fournie, la quantité de J’aime de Page et le prix avant le paiement. Évitez de vous fier à des allégations selon lesquelles acheter des J’aime de Page garantirait davantage d’abonnés, de J’aime de publication, d’engagement, de portée, de ventes ou de croissance organique.",
+        "description": "Avec les J’aime de Page, la vérification la plus importante est de savoir si votre Page les affiche. Ensuite, passez ces cinq points en revue.",
+        "framingNote": "Les prix sont en dollars américains. Votre banque convertit le montant si vous payez dans une autre devise.",
         "items": [
           {
             "id": "buy-facebook-page-likes-7",
@@ -409,33 +417,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-page-likes-worldwide",
-        "title": "Préparer votre Page Facebook pour des J’aime de Page",
-        "description": "Les J’aime de Page Facebook s’appliquent au nombre de J’aime d’une Page Facebook publique éligible. Assurez-vous que la Page indiquée lors du paiement est exactement celle que vous voulez utiliser.",
-        "eyebrow": "Prêt pour des J’aime de Page Facebook",
-        "closingNote": "Les J’aime de Page Facebook s’appliquent à une Page Facebook publique. Indiquez une URL de Page plutôt qu’une URL de publication, gardez la Page publique et relisez la quantité sélectionnée avant le paiement.",
+        "title": "Comment vérifier si votre Page affiche des J’aime ou des abonnés",
+        "description": "Toutes les Pages Facebook ne se ressemblent pas. Une vérification d’une minute vous dit quel chiffre voient les visiteurs sur votre Page, et quel service commander.",
+        "eyebrow": "Vérifiez avant d’acheter",
+        "closingNote": "Encore un doute après vérification ? Envoyez le lien de la Page sur WhatsApp et nous regarderons pour vous.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-12",
-            "title": "Indiquez une URL de Page",
-            "description": "Utilisez l’URL de Page Facebook publique demandée pour le service. Un lien vers une publication Facebook individuelle n’est pas la bonne cible pour les J’aime de Page.",
+            "title": "Affichez-la en visiteur",
+            "description": "Déconnectez-vous ou ouvrez la Page dans une fenêtre de navigation privée. C’est exactement ce que voient les clients.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-13",
-            "title": "Gardez la Page publique",
-            "description": "Gardez la Page fournie accessible publiquement lorsque c’est requis pendant le traitement de la commande.",
+            "title": "Regardez sous le nom de la Page",
+            "description": "Le chiffre sous le nom de la Page indique « J’aime » ou « followers ». Ce mot décide du service.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-14",
-            "title": "J’aime de Page et abonnés sont distincts",
-            "description": "Les J’aime de Page et les abonnés sont tous deux des indicateurs au niveau de la Page, mais ce sont des services différents. Choisissez celui qui correspond à l’indicateur que vous voulez modifier.",
+            "title": "Affiche des J’aime",
+            "description": "Si les visiteurs voient un nombre de J’aime, ce service de J’aime de Page modifie le chiffre qu’ils voient.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-page-likes-15",
-            "title": "Relisez la quantité et le prix",
-            "description": "Vérifiez la quantité de J’aime de Page sélectionnée et le prix actuel du forfait avant de finaliser votre commande.",
+            "title": "Affiche des abonnés",
+            "description": "Si les visiteurs ne voient que des abonnés, commandez plutôt des abonnés Facebook : des J’aime de Page ne changeraient pas le chiffre visible.",
             "icon": "clapperboard"
           }
         ]
@@ -443,32 +451,32 @@
       "packageSizes": {
         "id": "buy-facebook-page-likes-popular-packages",
         "title": "Forfaits de J’aime de Page Facebook populaires",
-        "description": "Comparez ci-dessous quelques-unes des quantités de J’aime de Page Facebook disponibles chez NovaLikes, ou revenez à la section tarifs complète pour voir toutes les options de forfaits.",
+        "description": "Gardez le nouveau total crédible pour la taille et l’activité de votre Page. Une Page locale avec 200 J’aime paraît naturelle avec quelques centaines de plus ; un saut à 10 000 du jour au lendemain, non.",
         "rows": [
           {
             "id": "fb-pl-100",
             "quantity": "100 J’aime de Page",
-            "recommendedFor": "Un forfait plus petit pour une Page Facebook publique où vous voulez ajouter cent J’aime de Page."
+            "recommendedFor": "Pour les Pages petites ou nouvelles, ou pour tester le service d’abord."
           },
           {
             "id": "fb-pl-500",
             "quantity": "500 J’aime de Page",
-            "recommendedFor": "Une option petite à intermédiaire pour une Page Facebook où vous voulez ajouter cinq cents J’aime de Page."
+            "recommendedFor": "Pour les Pages de commerces locaux qui veulent paraître établies auprès de nouveaux clients."
           },
           {
             "id": "fb-pl-1000",
             "quantity": "1 000 J’aime de Page",
-            "recommendedFor": "Un forfait intermédiaire pour une Page Facebook publique où vous voulez ajouter mille J’aime de Page."
+            "recommendedFor": "Notre forfait le plus populaire : convient aux Pages actives qui publient régulièrement."
           },
           {
             "id": "fb-pl-5000",
             "quantity": "5 000 J’aime de Page",
-            "recommendedFor": "Une option plus importante pour une Page Facebook où vous voulez ajouter cinq mille J’aime de Page."
+            "recommendedFor": "Pour les Pages de marque plus grandes à l’engagement régulier. Livraison progressive conseillée."
           },
           {
             "id": "fb-pl-10000",
             "quantity": "10 000 J’aime de Page",
-            "recommendedFor": "Un forfait à plus fort volume pour une Page Facebook publique où vous voulez ajouter dix mille J’aime de Page."
+            "recommendedFor": "Pour les grandes Pages bien établies. Demandez une livraison progressive sur plusieurs jours."
           }
         ]
       },
@@ -572,35 +580,35 @@
     "whyBuy": {
       "id": "buy-facebook-page-likes-why-buy",
       "title": "Pourquoi achète-t-on des J’aime de Page Facebook ?",
-      "description": "On achète des J’aime de Page Facebook pour des raisons variées. Certains veulent augmenter le nombre de J’aime de Page affiché sur une Page Facebook, d’autres choisissent un forfait de J’aime de Page pour une Page liée à une entreprise, une marque, une campagne ou une activité de contenu continue. Le service modifie l’indicateur J’aime de Page de la Page sélectionnée, mais il ne garantit ni abonnés, ni likes de publication, ni engagement, ni portée, ni ventes, ni croissance organique supplémentaires.",
+      "description": "Les clients qui choisissent encore les J’aime de Page ont généralement l’une de ces raisons, et ils ont vérifié que leur Page affiche le nombre de J’aime.",
       "items": [
         {
           "id": "buy-facebook-page-likes-wb-1",
-          "title": "Augmenter le nombre de J’aime de Page visible",
-          "description": "Un forfait de J’aime de Page Facebook peut être utilisé lorsque vous voulez augmenter le nombre de J’aime de Page affiché sur une Page Facebook publique précise."
+          "title": "Une Page ancienne qui affiche des J’aime",
+          "description": "Certaines Pages de longue date affichent encore un nombre de J’aime. Leurs propriétaires le gardent cohérent avec l’ancienneté réelle de l’entreprise."
         },
         {
           "id": "buy-facebook-page-likes-wb-2",
-          "title": "Utiliser des J’aime de Page autour d’un lancement ou d’une campagne",
-          "description": "Les entreprises et les propriétaires de Pages peuvent choisir un forfait de J’aime de Page en travaillant un lancement, une campagne, une annonce ou une autre activité Facebook."
+          "title": "Un nombre de J’aime qui paraît faible",
+          "description": "Une Page avec des années de publications mais seulement quelques dizaines de J’aime peut faire croire aux visiteurs que l’entreprise est inactive."
         },
         {
           "id": "buy-facebook-page-likes-wb-3",
-          "title": "Se concentrer sur l’indicateur J’aime de Page",
-          "description": "Les J’aime de Page Facebook s’appliquent au nombre de J’aime de Page de la Page sélectionnée. Ils n’ajoutent pas automatiquement des abonnés Facebook ni des likes aux publications Facebook individuelles."
+          "title": "Avant une promotion",
+          "description": "Certains clients complètent le nombre de J’aime avant de lancer des publicités ou une promotion locale qui envoie des gens vers la Page."
         },
         {
           "id": "buy-facebook-page-likes-wb-4",
-          "title": "Choisissez la quantité souhaitée",
-          "description": "Différents volumes de forfaits vous permettent de sélectionner le nombre de J’aime de Page Facebook que vous voulez commander pour la Page indiquée."
+          "title": "S’aligner sur d’autres plateformes",
+          "description": "Les entreprises bien présentes sur Instagram ou Google amènent parfois leur Page Facebook à un niveau comparable."
         },
         {
           "id": "buy-facebook-page-likes-wb-5",
-          "title": "Utilisez les J’aime de Page en complément de votre contenu",
-          "description": "Acheter des J’aime de Page ne remplace pas la publication et la gestion de votre propre contenu Facebook. Publications, réponses, informations de Page et autres activités dépendent toujours de la façon dont vous gérez votre Page."
+          "title": "Connaître les limites",
+          "description": "Les J’aime de Page changent un chiffre. La portée, les messages et les ventes dépendent toujours de vos publications et de la réaction des gens."
         }
       ],
-      "bottomNote": "Si les abonnés Facebook ou les J’aime de publication sont l’indicateur que vous voulez modifier, choisissez plutôt le service Facebook correspondant, et non un forfait de J’aime de Page."
+      "bottomNote": "Si votre Page affiche des abonnés, ou si vous voulez des réactions sur une publication précise, comparez ci-dessous les abonnés Facebook et les J’aime de publication Facebook."
     },
     "howToBuy": {
       "id": "how-it-works",

@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "SERVIÇOS DO FACEBOOK",
       "title": "Comprar curtidas de publicação no Facebook",
-      "description": "Compre curtidas de publicação no Facebook escolhendo o pacote e a quantidade que você quer para uma publicação pública elegível específica. Compare os pacotes e os preços de curtidas de publicação disponíveis, selecione o número de curtidas que quer, envie a URL pública correta da publicação no Facebook e conclua o pedido online. A senha do Facebook não é necessária, e você pode usar o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+      "description": "Compre curtidas para qualquer post público do Facebook, de uma Página ou de um perfil pessoal, a partir de US$ 2,99. Entregues como Curtir por padrão, com Amei ou outras reações sob pedido. Cole o link do post, escolha um pacote e pague, sem senha. A maioria dos pedidos começa em 6–8 horas, e todo pedido inclui reposição de 6 meses e suporte pelo WhatsApp 24/7.",
       "purpose": "Convert for Facebook post likes packages worldwide",
       "primaryKeyword": "buy Facebook Post Likes",
       "supportingKeywords": [
@@ -31,19 +31,19 @@
       "trustLabels": [
         {
           "id": "fb-post-trust-url",
-          "label": "Somente URL de publicação pública do Facebook"
+          "label": "Posts de Página e perfil"
         },
         {
           "id": "fb-post-trust-password",
-          "label": "Sem senha necessária"
+          "label": "Outras reações sob pedido"
         },
         {
           "id": "fb-post-trust-checkout",
-          "label": "Checkout seguro"
+          "label": "Sem senha necessária"
         },
         {
           "id": "fb-post-trust-track",
-          "label": "Acompanhamento do pedido"
+          "label": "Reposição de 6 meses"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Pacotes e preços de curtidas de publicação no Facebook",
-      "description": "Compare os pacotes, as quantidades e os preços de curtidas de publicação no Facebook disponíveis antes de pedir. Escolha o número de curtidas de publicação que quer para uma publicação pública elegível específica, revise o preço atual do pacote e adicione o pacote selecionado ao carrinho quando estiver pronto.",
+      "description": "Os preços estão em dólares americanos. 1.000 curtidas de publicação é o pacote mais popular; escolha um tamanho que combine com quantas pessoas costumam ver seus posts.",
       "purpose": "Present real NovaLikes.com Facebook post likes packages",
       "primaryKeyword": "Facebook Post Likes",
       "suggestedWordCount": 45,
@@ -242,31 +242,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-post-likes-why-choose",
-        "title": "Por que escolher a NovaLikes para curtidas de publicação no Facebook?",
-        "description": "A NovaLikes facilita comparar pacotes de curtidas de publicação no Facebook antes de pedir. Escolha a quantidade de curtidas de publicação que quer, envie a URL pública correta da publicação no Facebook, revise o preço do pacote e use o acompanhamento do pedido depois do checkout para conferir as informações de status disponíveis.",
+        "title": "Por que comprar curtidas de publicação no Facebook na NovaLikes?",
+        "description": "Nossa equipe cuida de pedidos para redes sociais há 7–8 anos, primeiro em outros sites, depois como ViralMe e agora como NovaLikes. Um pedido de curtidas de publicação no Facebook com a gente é simples: um post, um horário de início conhecido e uma reposição se o número cair.",
         "items": [
           {
             "id": "buy-facebook-post-likes-0",
-            "title": "Várias quantidades de curtidas de publicação",
-            "description": "Compare as quantidades de curtidas de publicação no Facebook disponíveis e escolha o pacote que corresponde ao número de curtidas que você quer pedir para a publicação selecionada.",
+            "title": "Páginas e perfis",
+            "description": "As curtidas podem ir para um post público de uma Página do Facebook ou de um perfil pessoal, desde que o público do post esteja como Público.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-post-likes-1",
-            "title": "Somente URL de publicação pública do Facebook",
-            "description": "Envie a URL pública correta da publicação no Facebook onde você quer que as curtidas sejam adicionadas. A senha do Facebook não é necessária.",
+            "title": "Curtir por padrão, outras reações sob pedido",
+            "description": "Os pedidos são entregues com a reação Curtir padrão. Prefere Amei ou outra reação? Peça na observação do checkout.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-2",
-            "title": "Revise antes do checkout",
-            "description": "Confira a quantidade de curtidas de publicação selecionada e o preço atual do pacote antes de adicionar o pedido ao carrinho e concluir o checkout.",
+            "title": "Começa em 6–8 horas",
+            "description": "A maioria dos pedidos começa em até 6–8 horas após o pagamento e termina 4–6 horas depois. Há entrega gradual sob pedido.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-3",
-            "title": "Acompanhamento do pedido",
-            "description": "Use a opção de acompanhamento disponível depois do checkout para conferir informações de status do pedido de curtidas de publicação no Facebook.",
+            "title": "Reposição de 6 meses",
+            "description": "Se o número de reações desse post cair em até 6 meses após a entrega, envie o número do pedido pelo WhatsApp e completamos.",
             "icon": "headphones"
           }
         ]
@@ -276,66 +276,74 @@
       "canYouBuy": {
         "id": "buy-facebook-post-likes-can-you-buy",
         "title": "Dá para comprar curtidas de publicação no Facebook?",
-        "description": "Sim. Pacotes de curtidas de publicação no Facebook podem ser comprados por serviços online de curtidas de publicação. Na NovaLikes, você escolhe um pacote de curtidas de publicação disponível, envia a URL pública da publicação no Facebook que quer usar e conclui o pedido pelo site.",
+        "description": "Sim. Você pode comprar curtidas para qualquer post público do Facebook, de uma Página ou de um perfil pessoal. Copie o link do post, escolha um pacote e pague em dólares americanos. O número de reações desse post sobe; seus seguidores e os números da Página continuam iguais.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-4",
-            "title": "O que um pedido de curtidas de publicação no Facebook altera",
-            "description": "Um pedido de curtidas de publicação no Facebook se aplica à contagem de curtidas na publicação pública enviada com o pedido. Ele não acrescenta automaticamente seguidores, curtidas de Página, comentários, compartilhamentos ou visualizações.",
+            "title": "Um post por pedido",
+            "description": "As curtidas são adicionadas ao post do link enviado. Quer curtidas em vários posts? Faça um pedido por post.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-post-likes-5",
-            "title": "O que você precisa para fazer um pedido",
-            "description": "Você precisa da URL pública correta da publicação no Facebook e do pacote de curtidas de publicação que quer comprar. A senha do Facebook não é necessária.",
+            "title": "Como pegar o link",
+            "description": "No post, toque em Compartilhar e escolha Copiar link, ou clique no horário do post e copie o endereço. Nunca envie sua senha.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-post-likes-6",
-            "title": "O que as curtidas de publicação no Facebook não incluem",
-            "description": "Curtidas de publicação são separadas de seguidores, curtidas de Página, comentários, compartilhamentos e visualizações no Facebook. Pedir curtidas de publicação não acrescenta automaticamente essas outras métricas nem garante alcance, vendas ou crescimento orgânico extras.",
+            "title": "O público precisa ser Público",
+            "description": "Posts compartilhados com Amigos ou com uma lista personalizada não podem receber pedidos. Procure o ícone do globo ao lado da data.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Antes do checkout, garanta que você selecionou curtidas de publicação no Facebook, escolheu a quantidade correta de curtidas de publicação e enviou a URL exatamente da publicação pública no Facebook onde quer que as curtidas sejam adicionadas."
+        "closingNote": "As curtidas vêm de contas com aparência realista. Não afirmamos que sejam pessoas ativas que vão comentar ou compartilhar o post."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-post-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Curtidas compradas ajudam um post do Facebook?",
+        "description": "Elas ajudam na aparência do post, não no quanto ele vai longe sozinho. O Facebook classifica os posts principalmente pelo engajamento: comentários, compartilhamentos, reações de amigos e tempo gasto. Um bom número de reações é prova social: as pessoas param mais em um post em que outros já reagiram, e esse é o benefício real.",
+        "helpTitle": "Onde as curtidas ajudam",
+        "helpItems": [
+          "Ofertas, eventos e anúncios que precisam parecer populares desde a primeira hora.",
+          "Posts que você vai impulsionar, para os espectadores pagos não chegarem a um post com duas reações.",
+          "Posts de produtos ou serviços que os clientes veem antes de entrar em contato com sua empresa."
+        ],
+        "limitTitle": "Onde não ajudam",
+        "limitItems": [
+          "Alcance sozinhas: comentários e compartilhamentos pesam muito mais do que curtidas.",
+          "Um post com 3.000 curtidas numa Página com 200 seguidores parece artificial. Mantenha a proporção.",
+          "Transformar um post fraco em um bom: o conteúdo continua decidindo se as pessoas interagem."
+        ],
+        "closingNote": "Nosso guia do Learn Center (em inglês) sobre como conseguir mais curtidas em um post do Facebook traz formas orgânicas de aumentar as reações junto com qualquer pacote."
       },
       "whatHappens": {
         "id": "buy-facebook-post-likes-what-happens",
         "title": "O que acontece depois que você compra curtidas de publicação no Facebook?",
-        "description": "Depois de fazer um pedido de curtidas de publicação no Facebook, o pacote de curtidas de publicação e a URL pública da publicação no Facebook enviados são usados para processar o pedido na publicação selecionada. Mantenha a publicação acessível ao público quando for exigido enquanto o pedido estiver sendo tratado.",
+        "description": "O que acontece depois que você paga por curtidas de publicação no Facebook.",
         "steps": [
           {
             "id": "buy-facebook-post-likes-th-1",
-            "title": "Os dados do pedido são conferidos",
-            "description": "O pacote de curtidas de publicação, a quantidade e a URL da publicação no Facebook enviados são associados ao pedido para que a solicitação possa ser processada na publicação pretendida."
+            "title": "Link e observação conferidos",
+            "description": "O link do seu post e qualquer observação — por exemplo, outra reação ou um ritmo gradual — são ligados ao pedido antes de a entrega começar."
           },
           {
             "id": "buy-facebook-post-likes-th-2",
-            "title": "As curtidas de publicação vão para a publicação enviada",
-            "description": "O pedido se aplica à publicação no Facebook ligada à URL que você enviou. Confira a URL da publicação com cuidado antes de concluir o checkout."
+            "title": "As curtidas começam em 6–8 horas",
+            "description": "A maioria dos pedidos começa em até 6–8 horas após o pagamento. Pedidos graduais começam no mesmo prazo, mas distribuem as reações."
           },
           {
             "id": "buy-facebook-post-likes-th-3",
-            "title": "O tempo de processamento pode variar",
-            "description": "O tempo necessário para processar um pedido pode variar conforme a quantidade de curtidas de publicação e as condições atuais. Não se deve esperar um único prazo fixo de entrega para todos os pacotes."
+            "title": "Entrega padrão em 4–6 horas",
+            "description": "Depois de iniciados, a maioria dos pedidos termina em 4–6 horas. Acompanhe na página Rastrear pedido."
           },
           {
             "id": "buy-facebook-post-likes-th-4",
-            "title": "Confira o status do pedido",
-            "description": "Use o acompanhamento de pedidos da NovaLikes para as atualizações de status disponíveis. Se precisar de ajuda, fale com o suporte com as informações relevantes do pedido."
+            "title": "Começa a reposição de 6 meses",
+            "description": "A cobertura de reposição começa no dia em que a entrega termina. Se o número cair, envie o número do pedido pelo WhatsApp."
           }
         ],
-        "closingNote": "Evite excluir a publicação enviada, torná-la indisponível ou alterar qualquer coisa que impeça o acesso a ela enquanto o pedido estiver sendo processado. Se algo mudar depois de pedir, fale com o suporte se precisar de ajuda."
+        "closingNote": "Mantenha o post público e não o apague nem mude o público até a entrega terminar, nem durante o período de reposição."
       },
       "serviceCompare": {
         "id": "buy-facebook-post-likes-service-compare",
@@ -367,8 +375,8 @@
       "beforeBuying": {
         "id": "buy-facebook-post-likes-before-buying",
         "title": "O que conferir antes de comprar curtidas de publicação no Facebook",
-        "description": "Antes de comprar curtidas de publicação no Facebook, revise o pacote e os detalhes da publicação antes de concluir o pedido. Garanta que a quantidade de curtidas de publicação, o preço, a URL da publicação no Facebook e o serviço selecionado correspondam ao que você quer para a publicação específica.",
-        "framingNote": "Confira a URL da publicação no Facebook enviada, a quantidade de curtidas de publicação e o preço mais uma vez antes do checkout. Evite se apoiar em alegações de que comprar curtidas de publicação garante comentários, compartilhamentos, seguidores, curtidas de Página, alcance, vendas ou crescimento orgânico.",
+        "description": "A maioria dos problemas vem do link do post ou da configuração de público. Confira estes cinco pontos antes de pagar.",
+        "framingNote": "Os preços estão em dólares americanos. Se quiser uma reação diferente de Curtir, escreva na observação do checkout.",
         "items": [
           {
             "id": "buy-facebook-post-likes-7",
@@ -404,33 +412,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-post-likes-worldwide",
-        "title": "Escolhendo a publicação certa no Facebook para curtidas",
-        "description": "Curtidas de publicação no Facebook se aplica a uma publicação pública elegível específica. A própria Página e a publicação individual são alvos diferentes, então confira a URL enviada com cuidado.",
-        "eyebrow": "Pronto para curtidas de publicação no Facebook",
-        "closingNote": "Curtidas de publicação no Facebook se aplica a uma publicação pública específica. Envie a URL da publicação, e não só a da Página, mantenha a publicação disponível e revise o pacote antes do checkout.",
+        "title": "Quais posts do Facebook podem receber curtidas",
+        "description": "Qualquer post público pode receber curtidas. O que importa é onde ele foi publicado e com quem é compartilhado.",
+        "eyebrow": "Antes de pedir",
+        "closingNote": "Não sabe se o seu post é público? Mande o link no WhatsApp antes de pedir e conferimos.",
         "cards": [
           {
             "id": "buy-facebook-post-likes-12",
-            "title": "Use a URL da publicação específica",
-            "description": "Envie a URL pública da publicação individual no Facebook onde você quer aplicar o pacote de curtidas de publicação.",
+            "title": "Posts de Página",
+            "description": "Posts de uma Página do Facebook são públicos por padrão. Copie o link do post e pronto para pedir.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-post-likes-13",
-            "title": "Não envie só a URL da Página",
-            "description": "Uma URL geral da Página do Facebook não é o alvo correto para um pedido de curtidas de publicação.",
+            "title": "Posts de perfil",
+            "description": "Posts de um perfil pessoal precisam estar com o público em Público. Mude pelo menu de três pontinhos do post, se precisar.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-post-likes-14",
-            "title": "Mantenha a publicação disponível",
-            "description": "Evite excluir ou restringir a publicação enviada enquanto o pedido ativo exigir acesso a ela.",
+            "title": "Fotos e vídeos",
+            "description": "Posts de foto e de vídeo funcionam do mesmo jeito. Use o link do próprio post, não do seu perfil ou da Página.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-post-likes-15",
-            "title": "Revise o pacote de curtidas de publicação",
-            "description": "Confira a quantidade de curtidas de publicação, a URL da publicação enviada e o preço antes de concluir o checkout.",
+            "title": "Reações sob pedido",
+            "description": "A entrega usa a reação Curtir por padrão. Escreva “Amei” ou outra reação na observação do checkout, se preferir.",
             "icon": "clapperboard"
           }
         ]
@@ -438,32 +446,32 @@
       "packageSizes": {
         "id": "buy-facebook-post-likes-popular-packages",
         "title": "Pacotes populares de curtidas de publicação no Facebook",
-        "description": "Compare algumas das quantidades de curtidas de publicação no Facebook disponíveis na NovaLikes abaixo, ou volte à seção completa de preços para ver todas as opções de pacote.",
+        "description": "Escolha um tamanho que combine com seu público. Um post numa Página com algumas centenas de seguidores parece natural com 100–500 curtidas; milhares de curtidas ali pareceriam fora do lugar.",
         "rows": [
           {
             "id": "fb-post-100",
             "quantity": "100 curtidas de publicação",
-            "recommendedFor": "Um pacote menor para uma publicação pública específica no Facebook em que você quer acrescentar cem curtidas."
+            "recommendedFor": "Para posts de Páginas pequenas e perfis pessoais, ou para testar o serviço primeiro."
           },
           {
             "id": "fb-post-500",
             "quantity": "500 curtidas de publicação",
-            "recommendedFor": "Uma opção menor a intermediária para uma publicação pública no Facebook em que você quer acrescentar quinhentas curtidas."
+            "recommendedFor": "Para Páginas de negócios locais e perfis ativos que querem que um post pareça popular."
           },
           {
             "id": "fb-post-1000",
             "quantity": "1.000 curtidas de publicação",
-            "recommendedFor": "Um pacote intermediário para uma publicação pública no Facebook em que você quer acrescentar mil curtidas."
+            "recommendedFor": "Nosso pacote mais popular: combina com anúncios, ofertas e eventos em Páginas estabelecidas."
           },
           {
             "id": "fb-post-5000",
             "quantity": "5.000 curtidas de publicação",
-            "recommendedFor": "Uma opção maior para uma publicação pública no Facebook em que você quer acrescentar cinco mil curtidas."
+            "recommendedFor": "Para Páginas grandes e posts que você impulsiona com anúncios. Recomendamos entrega gradual."
           },
           {
             "id": "fb-post-10000",
             "quantity": "10.000 curtidas de publicação",
-            "recommendedFor": "Um pacote de volume maior para uma publicação pública no Facebook em que você quer acrescentar dez mil curtidas."
+            "recommendedFor": "Para Páginas de grandes marcas e posts de campanha. Distribua a entrega por um período mais longo."
           }
         ]
       },
@@ -573,35 +581,35 @@
     "whyBuy": {
       "id": "buy-facebook-post-likes-why-buy",
       "title": "Por que as pessoas compram curtidas de publicação no Facebook?",
-      "description": "As pessoas compram curtidas de publicação no Facebook por motivos diferentes. Algumas querem aumentar a contagem visível de curtidas em uma publicação específica no Facebook, enquanto outras escolhem um pacote de curtidas de publicação para conteúdo ligado a um lançamento, anúncio, campanha ou atividade contínua da Página. O serviço altera a contagem de curtidas na publicação enviada, mas não garante comentários, compartilhamentos, seguidores, curtidas de Página, alcance, vendas ou crescimento orgânico.",
+      "description": "Estes são os motivos que os clientes dão para curtidas de publicação no Facebook, todos ligados a como um post parece para quem o vê.",
       "items": [
         {
           "id": "buy-facebook-post-likes-wb-1",
-          "title": "Aumente a contagem visível de curtidas",
-          "description": "Um pacote de curtidas de publicação no Facebook pode ser usado quando você quer aumentar a contagem de curtidas exibida em uma publicação pública elegível específica no Facebook."
+          "title": "Ofertas e promoções",
+          "description": "Empresas adicionam curtidas a posts de ofertas e promoções para os clientes verem que outras pessoas também se interessam."
         },
         {
           "id": "buy-facebook-post-likes-wb-2",
-          "title": "Use curtidas de publicação em conteúdo específico",
-          "description": "Donos de Página podem escolher um pacote de curtidas de publicação para uma publicação particular ligada a um lançamento, anúncio, campanha ou outra atividade no Facebook."
+          "title": "Eventos e anúncios",
+          "description": "Posts de eventos e anúncios só importam por alguns dias, então precisam parecer ativos rápido."
         },
         {
           "id": "buy-facebook-post-likes-wb-3",
-          "title": "Foque a métrica de curtidas de publicação",
-          "description": "Curtidas de publicação no Facebook se aplica à contagem de curtidas na publicação enviada. Não acrescenta automaticamente seguidores no Facebook, curtidas de Página, comentários, compartilhamentos ou visualizações."
+          "title": "Antes de impulsionar",
+          "description": "Um post com algumas reações causa uma primeira impressão melhor quando você começa a pagar para impulsioná-lo."
         },
         {
           "id": "buy-facebook-post-likes-wb-4",
-          "title": "Escolha a quantidade que você quer",
-          "description": "Tamanhos diferentes de pacote permitem selecionar o número de curtidas de publicação no Facebook que você quer pedir para a publicação enviada."
+          "title": "Posts marcantes",
+          "description": "Inaugurações, aniversários e lançamentos são muito compartilhados; os donos querem que pareçam celebrados."
         },
         {
           "id": "buy-facebook-post-likes-wb-5",
-          "title": "Use curtidas de publicação junto com o conteúdo",
-          "description": "Comprar curtidas de publicação não substitui publicar nem administrar o próprio conteúdo no Facebook. Publicações, respostas, informações da Página e outras atividades ainda dependem de como você administra a presença no Facebook."
+          "title": "Com os pés no chão",
+          "description": "Curtidas mudam um número. Comentários, compartilhamentos, mensagens e vendas continuam dependendo do post e do seu público."
         }
       ],
-      "bottomNote": "Se seguidores no Facebook ou curtidas de Página forem a métrica que você quer alterar, escolha o serviço correspondente de Facebook em vez de um pacote de curtidas de publicação."
+      "bottomNote": "Quer uma Página ou perfil maior em vez de curtidas num post? Compare seguidores no Facebook abaixo."
     },
     "howToBuy": {
       "id": "how-it-works",

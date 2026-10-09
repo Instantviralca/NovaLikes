@@ -9,7 +9,7 @@
     "hero": {
       "eyebrow": "FACEBOOK-SERVICES",
       "title": "Facebook Seiten-Likes kaufen",
-      "description": "Kaufen Sie Facebook Seiten-Likes, indem Sie Paket und Menge wählen, die zu Ihrer Seite passen. NovaLikes lässt Sie verfügbare Seiten-Like-Pakete und Preise vor der Bestellung vergleichen. Wählen Sie die gewünschte Anzahl Seiten-Likes, geben Sie die korrekte öffentliche Facebook-Seiten-URL an und schließen Sie die Bestellung online ab. Ihr Facebook-Passwort ist nicht erforderlich, und nach dem Checkout können Sie verfügbare Statusinformationen über die Bestellverfolgung prüfen.",
+      "description": "Kaufen Sie Facebook Seiten-Likes für eine öffentliche Seite ab 2,99 US-$ – prüfen Sie aber zuerst, ob Ihre Seite noch eine Like-Zahl zeigt, denn neuere Seiten zeigen stattdessen Follower. Seitenlink einfügen, Paket wählen, bezahlen; kein Passwort nötig. Die meisten Bestellungen starten innerhalb von 6–8 Stunden, und jede Bestellung enthält eine 6-monatige Nachfüllung und WhatsApp-Support rund um die Uhr.",
       "purpose": "Convert for Facebook page likes packages worldwide",
       "primaryKeyword": "buy Facebook page likes",
       "supportingKeywords": [
@@ -31,7 +31,7 @@
       "trustLabels": [
         {
           "id": "fb-pl-trust-url",
-          "label": "Nur öffentliche Facebook-Seiten-URL"
+          "label": "Nur Facebook-Seiten"
         },
         {
           "id": "fb-pl-trust-password",
@@ -39,11 +39,11 @@
         },
         {
           "id": "fb-pl-trust-checkout",
-          "label": "Sicherer Checkout"
+          "label": "Start in 6–8 Stunden"
         },
         {
           "id": "fb-pl-trust-track",
-          "label": "Bestellverfolgung"
+          "label": "6 Monate Nachfüllung"
         }
       ],
       "visual": {
@@ -56,7 +56,7 @@
     "pricing": {
       "id": "pricing-packages",
       "title": "Facebook-Seiten-Likes-Pakete und Preise",
-      "description": "Vergleichen Sie verfügbare Facebook-Seiten-Like-Pakete, Mengen und Preise vor der Bestellung. Wählen Sie die Anzahl Seiten-Likes für Ihre öffentliche Facebook-Seite, prüfen Sie den aktuellen Paketpreis und legen Sie das gewählte Paket in den Warenkorb, wenn Sie soweit sind.",
+      "description": "Die Preise sind in US-Dollar. 1.000 Seiten-Likes ist das beliebteste Paket. Zeigt Ihre Seite Follower statt Likes, wählen Sie Facebook Follower.",
       "purpose": "Present real NovaLikes.com Facebook page likes packages",
       "primaryKeyword": "Facebook page likes packages",
       "suggestedWordCount": 45,
@@ -247,31 +247,31 @@
     "config": {
       "whyChoose": {
         "id": "buy-facebook-page-likes-why-choose",
-        "title": "Warum NovaLikes für Facebook Seiten-Likes?",
-        "description": "NovaLikes macht es einfach, Facebook-Seiten-Like-Pakete vor der Bestellung zu vergleichen. Wählen Sie die gewünschte Seiten-Like-Menge, geben Sie die korrekte öffentliche Facebook-Seiten-URL an, prüfen Sie den Paketpreis und nutzen Sie nach dem Checkout die Bestellverfolgung für verfügbare Statusinformationen.",
+        "title": "Warum Facebook Seiten-Likes bei NovaLikes kaufen?",
+        "description": "Wir wickeln seit 7–8 Jahren Social-Media-Bestellungen ab – auf früheren Websites, als ViralMe und heute als NovaLikes – und uns ist lieber, dass Sie den richtigen Service kaufen als den falschen. Deshalb beginnt diese Seite mit einer ehrlichen Prüfung.",
         "items": [
           {
             "id": "buy-facebook-page-likes-0",
-            "title": "Mehrere Seiten-Like-Mengen",
-            "description": "Vergleichen Sie die verfügbaren Facebook-Seiten-Like-Mengen und wählen Sie das Paket, das zur gewünschten Anzahl Seiten-Likes passt.",
+            "title": "Zuerst ehrlicher Rat",
+            "description": "Facebook stellt auf den meisten Seiten inzwischen Follower in den Vordergrund. Wir zeigen Ihnen, wie Sie prüfen, welche Zahl Ihre Seite anzeigt – damit Sie nur für die Zahl zahlen, die Besucher sehen.",
             "icon": "users"
           },
           {
             "id": "buy-facebook-page-likes-1",
-            "title": "Nur öffentliche Facebook-Seiten-URL",
-            "description": "Geben Sie die korrekte öffentliche Facebook-Seiten-URL der Seite an, der die Seiten-Likes hinzugefügt werden sollen. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "Start in 6–8 Stunden",
+            "description": "Die meisten Seiten-Likes-Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung und sind 4–6 Stunden nach dem Start fertig.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-2",
-            "title": "Vor dem Checkout prüfen",
-            "description": "Prüfen Sie die gewählte Seiten-Like-Menge und den aktuellen Paketpreis, bevor Sie die Bestellung in den Warenkorb legen und den Checkout abschließen.",
+            "title": "Schrittweise auf Wunsch",
+            "description": "Lieber ein langsamerer Anstieg? Geben Sie es in der Notiz beim Bezahlen oder per WhatsApp an, und wir verteilen die Bestellung über einen längeren Zeitraum.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-3",
-            "title": "Bestellverfolgung",
-            "description": "Nutzen Sie nach dem Checkout die verfügbare Verfolgung, um Statusinformationen zu Ihrer Facebook-Seiten-Likes-Bestellung zu prüfen.",
+            "title": "6 Monate Nachfüllung",
+            "description": "Sinkt die Zahl innerhalb von 6 Monaten nach der Lieferung, senden Sie Ihre Bestellnummer per WhatsApp, und wir füllen sie wieder auf.",
             "icon": "headphones"
           }
         ]
@@ -281,66 +281,74 @@
       "canYouBuy": {
         "id": "buy-facebook-page-likes-can-you-buy",
         "title": "Kann man Facebook Seiten-Likes kaufen?",
-        "description": "Ja. Facebook-Seiten-Like-Pakete können über Online-Seiten-Like-Services gekauft werden. Bei NovaLikes wählen Sie ein verfügbares Seiten-Likes-Paket, geben die öffentliche Facebook-Seiten-URL der gewünschten Seite an und schließen die Bestellung über die Website ab.",
+        "description": "Ja. Sie können Seiten-Likes für eine öffentliche Facebook-Seite kaufen, indem Sie den Seitenlink einfügen, ein Paket wählen und in US-Dollar bezahlen. Prüfen Sie vorher Ihre Seite: Zeigt sie eine Follower-Zahl statt einer Like-Zahl, sind Facebook Follower der bessere Kauf.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-4",
-            "title": "Was eine Facebook-Seiten-Likes-Bestellung ändert",
-            "description": "Eine Facebook-Seiten-Likes-Bestellung gilt für die Seiten-Like-Zahl der öffentlichen Facebook-Seite, die mit der Bestellung übermittelt wird. Sie fügt nicht automatisch Facebook Follower oder Likes zu einzelnen Beiträgen hinzu.",
+            "title": "Nur für Facebook-Seiten",
+            "description": "Seiten-Likes gelten für eine Facebook-Seite, nicht für ein persönliches Profil und nicht für einen einzelnen Beitrag.",
             "icon": "clapperboard"
           },
           {
             "id": "buy-facebook-page-likes-5",
-            "title": "Was Sie für eine Bestellung brauchen",
-            "description": "Sie brauchen die korrekte öffentliche Facebook-Seiten-URL und das Seiten-Likes-Paket, das Sie kaufen möchten. Ihr Facebook-Passwort ist nicht erforderlich.",
+            "title": "Zuerst die Seite prüfen",
+            "description": "Öffnen Sie Ihre Seite als Besucher. Sehen Sie „Gefällt mir“-Angaben beim Namen, passt dieser Service. Sehen Sie nur „Follower“, wählen Sie stattdessen Facebook Follower.",
             "icon": "briefcase"
           },
           {
             "id": "buy-facebook-page-likes-6",
-            "title": "Was Facebook Seiten-Likes nicht enthalten",
-            "description": "Seiten-Likes sind getrennt von Facebook Followern und Beitrags-Likes. Eine Seiten-Likes-Bestellung fügt diese anderen Kennzahlen nicht automatisch hinzu und sagt keine zusätzliche Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+            "title": "Was wir brauchen",
+            "description": "Den öffentlichen Seitenlink (facebook.com/ihreseite). Niemals Ihr Passwort und niemals Admin-Zugang zur Seite.",
             "icon": "megaphone"
           }
         ],
-        "closingNote": "Stellen Sie vor dem Checkout sicher, dass Sie Facebook Seiten-Likes gewählt, die richtige Seiten-Like-Menge bestimmt und die URL der genauen öffentlichen Facebook-Seite angegeben haben, der die Seiten-Likes hinzugefügt werden sollen."
+        "closingNote": "Immer noch unsicher, welche Zahl Ihre Seite zeigt? Senden Sie uns den Seitenlink vor der Bestellung per WhatsApp, und wir sagen Ihnen, welchen Service Sie wählen sollten."
       },
       "doesBuyingHelp": {
         "id": "buy-facebook-page-likes-does-buying-help",
-        "title": "",
-        "description": "",
-        "helpTitle": "",
-        "helpItems": [],
-        "limitTitle": "",
-        "limitItems": [],
-        "closingNote": ""
+        "title": "Lohnen sich Facebook Seiten-Likes noch?",
+        "description": "Für manche Seiten ja – für viele sind Follower wichtiger. Facebook stellt Seiten seit einigen Jahren von Likes auf Follower um. Bei der neueren Seitenversion ist die Follower-Zahl die Hauptzahl, und Meta zeigt in der Meta Business Suite inzwischen Follows statt Seiten-Likes. Seiten-Likes sind dort sinnvoll, wo Ihre Seite sie noch anzeigt.",
+        "helpTitle": "Wann Seiten-Likes sinnvoll sind",
+        "helpItems": [
+          "Ältere Seiten, die Besuchern noch deutlich eine Like-Zahl zeigen.",
+          "Seiten, bei denen Sie geprüft haben, dass die Like-Zahl die Zahl ist, die Kunden sehen.",
+          "Eine bestehende Like-Zahl im Einklang mit dem Rest der Seite halten."
+        ],
+        "limitTitle": "Wann Sie etwas anderes wählen sollten",
+        "limitItems": [
+          "Ihre Seite zeigt Follower, keine Likes – wählen Sie Facebook Follower.",
+          "Sie möchten Reaktionen auf einen Beitrag – wählen Sie Facebook-Beitrags-Likes.",
+          "Sie möchten mehr Reichweite: Weder Likes noch Follower bringen Facebook allein dazu, Beiträge mehr Menschen zu zeigen."
+        ],
+        "closingNote": "Unser Learn-Center-Ratgeber (auf Englisch) zu Facebook Followern, Seiten-Likes und Beitrags-Likes erklärt, wie jede Kennzahl auf heutigen Seiten funktioniert."
       },
       "whatHappens": {
         "id": "buy-facebook-page-likes-what-happens",
         "title": "Was passiert nach dem Kauf von Facebook Seiten-Likes?",
-        "description": "Nach einer Facebook-Seiten-Likes-Bestellung werden das Seiten-Likes-Paket und die übermittelte öffentliche Facebook-Seiten-URL genutzt, um die Bestellung für die gewählte Seite zu bearbeiten. Lassen Sie die Seite dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+        "description": "Was nach der Zahlung für Facebook Seiten-Likes passiert.",
         "steps": [
           {
             "id": "buy-facebook-page-likes-th-1",
-            "title": "Ihre Bestelldaten werden geprüft",
-            "description": "Das gewählte Seiten-Likes-Paket, die Menge und die übermittelte Facebook-Seiten-URL werden Ihrer Bestellung zugeordnet, damit die Anfrage für die vorgesehene Seite bearbeitet werden kann."
+            "title": "Seitenlink wird zugeordnet",
+            "description": "Ihr Seitenlink wird mit Ihrer Bestellnummer verknüpft. Bemerken Sie einen Fehler, schreiben Sie uns auf WhatsApp, bevor die Lieferung startet."
           },
           {
             "id": "buy-facebook-page-likes-th-2",
-            "title": "Seiten-Likes gehen an die übermittelte Seite",
-            "description": "Die Bestellung gilt für die Facebook-Seite, die mit der angegebenen URL verbunden ist. Prüfen Sie die Seiten-URL sorgfältig, bevor Sie den Checkout abschließen."
+            "title": "Lieferstart in 6–8 Stunden",
+            "description": "Die meisten Bestellungen starten innerhalb von 6–8 Stunden nach der Zahlung. Haben Sie ein schrittweises Tempo gewünscht, wird die Lieferung über einen längeren Zeitraum verteilt."
           },
           {
             "id": "buy-facebook-page-likes-th-3",
-            "title": "Die Bearbeitungszeit kann variieren",
-            "description": "Die benötigte Zeit kann je nach Seiten-Like-Menge und aktuellen Bestellbedingungen unterschiedlich sein. Eine feste Lieferzeit sollte nicht für jedes Paket erwartet werden."
+            "title": "Die meisten sind in 4–6 Stunden fertig",
+            "description": "Nach dem Start ist eine Standardbestellung meist innerhalb von 4–6 Stunden abgeschlossen. Verfolgen Sie sie auf der Seite „Bestellung verfolgen“."
           },
           {
             "id": "buy-facebook-page-likes-th-4",
-            "title": "Bestellstatus prüfen",
-            "description": "Nutzen Sie die NovaLikes-Bestellverfolgung für verfügbare Statusupdates. Bei Bedarf kontaktieren Sie den Support mit den relevanten Bestelldaten."
+            "title": "Nachfüllfrist beginnt",
+            "description": "Ihre 6-monatige Nachfüllung beginnt am Tag des Lieferabschlusses. Sinkt die Zahl, senden Sie Ihre Bestellnummer per WhatsApp."
           }
         ],
-        "closingNote": "Vermeiden Sie es, die übermittelte Seite zu löschen, unzugänglich zu machen oder etwas zu ändern, das den Zugriff während der Bearbeitung verhindert. Ändert sich nach der Bestellung etwas, kontaktieren Sie den Support, falls Sie Hilfe brauchen."
+        "closingNote": "Lassen Sie die Seite veröffentlicht und öffentlich, und ändern Sie Benutzernamen oder URL weder während der Bestellung noch während der 6-monatigen Nachfüllfrist."
       },
       "serviceCompare": {
         "id": "buy-facebook-page-likes-service-compare",
@@ -372,8 +380,8 @@
       "beforeBuying": {
         "id": "buy-facebook-page-likes-before-buying",
         "title": "Was Sie vor dem Kauf von Facebook Seiten-Likes prüfen sollten",
-        "description": "Bevor Sie Facebook Seiten-Likes kaufen, prüfen Sie Paket- und Seitendetails. Stellen Sie sicher, dass Seiten-Like-Menge, Preis, Facebook-Seiten-URL und gewählter Service zur Seite passen.",
-        "framingNote": "Prüfen Sie die übermittelte Facebook-Seiten-URL, die Seiten-Like-Menge und den Preis vor dem Checkout noch einmal. Verlassen Sie sich nicht auf Zusagen, dass der Kauf von Seiten-Likes zusätzliche Follower, Beitrags-Likes, Interaktion, Reichweite, Verkäufe oder organisches Wachstum garantiert.",
+        "description": "Bei Seiten-Likes ist die wichtigste Prüfung, ob Ihre Seite überhaupt Likes zeigt. Danach gehen Sie diese fünf Punkte durch.",
+        "framingNote": "Die Preise sind in US-Dollar. Zahlen Sie in einer anderen Währung, rechnet Ihre Bank den Betrag um.",
         "items": [
           {
             "id": "buy-facebook-page-likes-7",
@@ -409,33 +417,33 @@
       },
       "worldwide": {
         "id": "buy-facebook-page-likes-worldwide",
-        "title": "Ihre Facebook-Seite auf Seiten-Likes vorbereiten",
-        "description": "Facebook Seiten-Likes gilt für die Like-Zahl einer geeigneten öffentlichen Facebook-Seite. Stellen Sie sicher, dass die im Checkout übermittelte Seite genau die Seite ist, die Sie nutzen möchten.",
-        "eyebrow": "Bereit für Facebook Seiten-Likes",
-        "closingNote": "Facebook Seiten-Likes gilt für eine öffentliche Facebook-Seite. Übermitteln Sie eine Seiten-URL statt einer Beitrags-URL, halten Sie die Seite öffentlich und prüfen Sie die gewählte Menge vor dem Checkout.",
+        "title": "So prüfen Sie, ob Ihre Seite Likes oder Follower zeigt",
+        "description": "Nicht alle Facebook-Seiten sehen gleich aus. Eine einminütige Prüfung zeigt, welche Zahl Besucher auf Ihrer Seite sehen – und welchen Service Sie bestellen sollten.",
+        "eyebrow": "Vor dem Kauf prüfen",
+        "closingNote": "Nach der Prüfung immer noch unsicher? Senden Sie den Seitenlink per WhatsApp, und wir sehen für Sie nach.",
         "cards": [
           {
             "id": "buy-facebook-page-likes-12",
-            "title": "Eine Seiten-URL übermitteln",
-            "description": "Verwenden Sie die öffentliche Facebook-Seiten-URL, die für den Service angefragt wird. Ein Link zu einem einzelnen Facebook-Beitrag ist für Seiten-Likes nicht das richtige Ziel.",
+            "title": "Als Besucher ansehen",
+            "description": "Melden Sie sich ab oder öffnen Sie die Seite in einem privaten Browserfenster. Genau das sehen Kunden.",
             "icon": "heart"
           },
           {
             "id": "buy-facebook-page-likes-13",
-            "title": "Seite öffentlich halten",
-            "description": "Lassen Sie die übermittelte Seite dort, wo es erforderlich ist, während der Bearbeitung öffentlich zugänglich.",
+            "title": "Unter den Seitennamen schauen",
+            "description": "Die Zahl unter dem Seitennamen zeigt entweder „Gefällt mir“ oder „Follower“. Dieses Wort entscheidet über den Service.",
             "icon": "sparkles"
           },
           {
             "id": "buy-facebook-page-likes-14",
-            "title": "Seiten-Likes und Follower sind getrennt",
-            "description": "Seiten-Likes und Follower sind beide Kennzahlen auf Seitenebene, aber unterschiedliche Services. Wählen Sie den, der zur gewünschten Kennzahl passt.",
+            "title": "Zeigt Likes",
+            "description": "Sehen Besucher eine Like-Zahl, ändert dieser Seiten-Likes-Service die Zahl, die sie sehen.",
             "icon": "headphones"
           },
           {
             "id": "buy-facebook-page-likes-15",
-            "title": "Menge und Preis prüfen",
-            "description": "Prüfen Sie die gewählte Seiten-Like-Menge und den aktuellen Paketpreis, bevor Sie die Bestellung abschließen.",
+            "title": "Zeigt Follower",
+            "description": "Sehen Besucher nur Follower, bestellen Sie Facebook Follower – Seiten-Likes würden die sichtbare Zahl nicht ändern.",
             "icon": "clapperboard"
           }
         ]
@@ -443,32 +451,32 @@
       "packageSizes": {
         "id": "buy-facebook-page-likes-popular-packages",
         "title": "Beliebte Facebook-Seiten-Likes-Pakete",
-        "description": "Vergleichen Sie unten einige der Facebook-Seiten-Like-Mengen bei NovaLikes oder kehren Sie zum vollständigen Preisbereich zurück, um alle verfügbaren Paketoptionen zu sehen.",
+        "description": "Halten Sie die neue Gesamtzahl glaubwürdig für Größe und Aktivität Ihrer Seite. Eine lokale Seite mit 200 Likes wirkt mit ein paar hundert mehr natürlich; ein Sprung auf 10.000 über Nacht nicht.",
         "rows": [
           {
             "id": "fb-pl-100",
             "quantity": "100 Seiten-Likes",
-            "recommendedFor": "Ein kleineres Paket für eine öffentliche Facebook-Seite, der Sie einhundert Seiten-Likes hinzufügen möchten."
+            "recommendedFor": "Für kleine oder neue Seiten oder um den Service zuerst zu testen."
           },
           {
             "id": "fb-pl-500",
             "quantity": "500 Seiten-Likes",
-            "recommendedFor": "Eine kleine bis mittlere Option für eine Facebook-Seite, der Sie fünfhundert Seiten-Likes hinzufügen möchten."
+            "recommendedFor": "Für lokale Unternehmensseiten, die auf neue Kunden etabliert wirken sollen."
           },
           {
             "id": "fb-pl-1000",
             "quantity": "1.000 Seiten-Likes",
-            "recommendedFor": "Ein mittleres Paket für eine öffentliche Facebook-Seite, der Sie eintausend Seiten-Likes hinzufügen möchten."
+            "recommendedFor": "Unser beliebtestes Paket – passt zu aktiven Seiten, die regelmäßig posten."
           },
           {
             "id": "fb-pl-5000",
             "quantity": "5.000 Seiten-Likes",
-            "recommendedFor": "Eine größere Option für eine Facebook-Seite, der Sie fünftausend Seiten-Likes hinzufügen möchten."
+            "recommendedFor": "Für größere Markenseiten mit stabilem Engagement. Schrittweise Lieferung empfohlen."
           },
           {
             "id": "fb-pl-10000",
             "quantity": "10.000 Seiten-Likes",
-            "recommendedFor": "Ein Paket mit höherem Volumen für eine öffentliche Facebook-Seite, der Sie zehntausend Seiten-Likes hinzufügen möchten."
+            "recommendedFor": "Für große, etablierte Seiten. Wünschen Sie eine schrittweise Lieferung über mehrere Tage."
           }
         ]
       },
@@ -572,35 +580,35 @@
     "whyBuy": {
       "id": "buy-facebook-page-likes-why-buy",
       "title": "Warum kaufen Menschen Facebook Seiten-Likes?",
-      "description": "Menschen kaufen Facebook Seiten-Likes aus unterschiedlichen Gründen. Manche möchten die auf einer Facebook-Seite angezeigte Seiten-Like-Zahl erhöhen, andere wählen ein Seiten-Likes-Paket für eine Seite zu einem Unternehmen, einer Marke, einer Kampagne oder laufender Content-Aktivität. Der Service ändert die Seiten-Like-Kennzahl auf der gewählten Seite, sagt aber keine zusätzlichen Follower, Beitrags-Likes, Interaktion, Reichweite, Verkäufe oder organisches Wachstum zu.",
+      "description": "Kunden, die sich noch für Seiten-Likes entscheiden, haben meist einen dieser Gründe – und haben geprüft, dass ihre Seite die Like-Zahl anzeigt.",
       "items": [
         {
           "id": "buy-facebook-page-likes-wb-1",
-          "title": "Die sichtbare Seiten-Like-Zahl erhöhen",
-          "description": "Ein Facebook-Seiten-Likes-Paket kann genutzt werden, wenn Sie die auf einer bestimmten öffentlichen Facebook-Seite angezeigte Seiten-Like-Zahl erhöhen möchten."
+          "title": "Eine ältere Seite, die Likes zeigt",
+          "description": "Manche langjährigen Seiten zeigen noch eine Like-Zahl. Inhaber halten diese Zahl im Einklang damit, wie etabliert das Unternehmen tatsächlich ist."
         },
         {
           "id": "buy-facebook-page-likes-wb-2",
-          "title": "Seiten-Likes rund um Launch oder Kampagne nutzen",
-          "description": "Unternehmen und Seiteninhaber können ein Seiten-Likes-Paket wählen, während sie an einem Launch, einer Kampagne, einer Ankündigung oder anderer Facebook-Aktivität arbeiten."
+          "title": "Eine Like-Zahl, die niedrig wirkt",
+          "description": "Eine Seite mit jahrelangen Beiträgen, aber nur ein paar Dutzend Likes, kann Besucher glauben lassen, das Unternehmen sei inaktiv."
         },
         {
           "id": "buy-facebook-page-likes-wb-3",
-          "title": "Fokus auf die Seiten-Like-Kennzahl",
-          "description": "Facebook Seiten-Likes gilt für die Seiten-Like-Zahl der gewählten Seite. Es fügt nicht automatisch Facebook Follower oder Likes zu einzelnen Facebook-Beiträgen hinzu."
+          "title": "Vor einer Aktion",
+          "description": "Manche Kunden stocken die Like-Zahl auf, bevor sie Anzeigen oder eine lokale Aktion starten, die Menschen auf die Seite schickt."
         },
         {
           "id": "buy-facebook-page-likes-wb-4",
-          "title": "Die gewünschte Menge wählen",
-          "description": "Unterschiedliche Paketgrößen ermöglichen es, die Anzahl Facebook Seiten-Likes zu wählen, die Sie für die übermittelte Seite bestellen möchten."
+          "title": "An andere Plattformen angleichen",
+          "description": "Unternehmen mit starker Präsenz auf Instagram oder Google bringen ihre Facebook-Seite manchmal auf ein ähnliches Niveau."
         },
         {
           "id": "buy-facebook-page-likes-wb-5",
-          "title": "Seiten-Likes zusammen mit Ihren Inhalten nutzen",
-          "description": "Der Kauf von Seiten-Likes ersetzt nicht das Veröffentlichen und Führen eigener Facebook-Inhalte. Beiträge, Antworten, Seiteninformationen und andere Aktivität hängen weiterhin davon ab, wie Sie Ihre Seite führen."
+          "title": "Die Grenzen kennen",
+          "description": "Seiten-Likes ändern eine Zahl. Reichweite, Nachrichten und Verkäufe hängen weiterhin von Ihren Beiträgen ab und davon, wie Menschen reagieren."
         }
       ],
-      "bottomNote": "Wenn Facebook Follower oder Beitrags-Likes die Kennzahl sind, die Sie stattdessen ändern möchten, wählen Sie den entsprechenden Facebook-Service statt eines Seiten-Likes-Pakets."
+      "bottomNote": "Zeigt Ihre Seite Follower oder möchten Sie Reaktionen auf einen bestimmten Beitrag? Vergleichen Sie unten Facebook Follower und Facebook-Beitrags-Likes."
     },
     "howToBuy": {
       "id": "how-it-works",

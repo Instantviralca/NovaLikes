@@ -34,37 +34,38 @@ export type NovaLikesProduct = {
 };
 
 const HQ_COMMENT_FEATURES = [
-  'Relevant comments for your post',
-  'Order tracking after checkout',
+  'Short, positive comments',
+  'Your own wording on request',
+  '6-month refill',
   'No password required',
-  'Customer support',
+  'Order tracking after checkout',
 ] as const;
 
 const PREMIUM_COMMENT_FEATURES = [
-  'Highly relevant comments',
-  'Comments for eligible public posts and Reels',
-  'Orders are processed after checkout',
-  '30-day refill protection',
+  'Comments written around your post',
+  'More realistic-looking accounts',
+  'Your own wording on request',
+  '6-month refill',
   'No password required',
-  'Customer support',
+  'Order tracking after checkout',
 ] as const;
 
 const HQ_TIKTOK_VIEWS_FEATURES = [
-  'View packages for public videos',
-  'Clear package quantities',
-  'Orders are processed after checkout',
+  'Lowest price per view',
+  'Public TikTok video link only',
+  'Starts in 6–8 hours',
+  '6-month refill',
   'No password required',
-  'Order tracking available',
-  'Customer support',
+  'Order tracking after checkout',
 ] as const;
 
 const PREMIUM_TIKTOK_VIEWS_FEATURES = [
-  'View packages for eligible public videos',
-  'Separate from likes and followers',
-  'Orders are processed after checkout',
+  'Our higher-tier views option',
+  'Public TikTok video link only',
+  'Starts in 6–8 hours',
+  '6-month refill',
   'No password required',
-  'Order tracking available',
-  'Customer support',
+  'Order tracking after checkout',
 ] as const;
 
 /**

@@ -1408,7 +1408,7 @@ export const VIEW_INSTAGRAM_PROFILE_PICTURE_FULL_SIZE_ARTICLE: LearnArticleRecor
     ogImage: `${IMAGE_DIR}/featured.png`,
     keywords: [
       'view Instagram profile picture full size',
-      'Instagram profile picture viewer',
+      'why Instagram profile pictures are small',
       'view Instagram DP',
       'Instagram profile photo full size',
       'see Instagram profile picture',
