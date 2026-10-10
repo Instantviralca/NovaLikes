@@ -79,7 +79,7 @@ describe('Article #22 Why TikTok followers drop', () => {
       'does not prove a shadowban, recommendation restriction, fake-follower purge or algorithm penalty',
     );
     expect(article.content).toContain(
-      'avoid absolute claims such as followers can never drop',
+      'be wary of claims such as followers can never drop',
     );
     expect(article.content).not.toMatch(/TikTok removes \d+% (bots|monthly)/i);
     expect(

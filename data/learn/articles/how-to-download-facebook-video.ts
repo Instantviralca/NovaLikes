@@ -130,11 +130,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-8',
-    'It does not need to turn a private video into a public one.',
+    'It cannot turn a private video into a public one.',
   ),
   paragraph(
     'p-open-9',
-    'And it should never be marketed as a way to bypass Facebook privacy.',
+    'And it is not a way to bypass Facebook privacy.',
   ),
   paragraph(
     'p-open-10',
@@ -176,7 +176,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pm-7',
-    "A public downloader should work with media that is actually publicly accessible rather than trying to defeat an account's audience restrictions.",
+    "A public downloader only works with media that is actually publicly accessible. It cannot get around an account's audience restrictions.",
   ),
   paragraph(
     'p-pm-8',
@@ -212,7 +212,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-how-4',
-    "If Facebook itself says the content is unavailable, you do not have permission, or the post is restricted, do not expect a public downloader to bypass that restriction.",
+    'If Facebook itself says the content is unavailable, you do not have permission, or the post is restricted, a public downloader will not get around that.',
   ),
   paragraph(
     'p-how-5',
@@ -294,7 +294,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sv-5',
-    "That's what a Facebook Video Downloader is meant to help with.",
+    'That is what a Facebook Video Downloader helps with.',
   ),
   paragraph(
     'p-sv-6',
@@ -350,7 +350,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nt-7',
-    'That is where a public-video downloading utility can serve a different purpose.',
+    'That is where a public-video download tool serves a different purpose.',
   ),
 
   heading('h-own-reel', 'Can You Download Your Own Facebook Reel?', 2),
@@ -366,7 +366,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-or-4',
-    'There is no need to make an external tool the first choice for a function Facebook already provides directly.',
+    'There is no need to use an outside tool for something Facebook already does directly.',
   ),
 
   heading(
@@ -474,7 +474,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-wh-2',
-    'The exact copyright rules can vary by jurisdiction and use case, so the downloader should not pretend to provide universal legal permission.',
+    'Copyright rules vary by country and use, so no downloader can give you blanket legal permission.',
   ),
   paragraph(
     'p-wh-3',
@@ -489,11 +489,11 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-private', 'Can You Download a Private Facebook Video?', 2),
   paragraph(
     'p-pr-1',
-    'No. NovaLikes should not be used as a private-video bypass.',
+    'No. NovaLikes is not a private-video bypass.',
   ),
   paragraph(
     'p-pr-2',
-    'A video restricted to Friends, a private audience or another access-controlled context is not the intended use case for the public Facebook Video Downloader.',
+    'A video restricted to Friends, a private audience or another access-controlled context cannot be downloaded with the public Facebook Video Downloader.',
   ),
   paragraph(
     'p-pr-3',
@@ -502,11 +502,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-4',
-    'Do not treat the tool as a way to download private Facebook videos, bypass Facebook privacy, unlock Friends-only videos or download any hidden Facebook video.',
+    'The tool cannot download private Facebook videos, bypass Facebook privacy, unlock Friends-only videos or retrieve hidden Facebook videos.',
   ),
   paragraph(
     'p-pr-5',
-    "Those claims would conflict with the tool's actual public-media purpose.",
+    'It only works with public media.',
   ),
 
   heading(
@@ -525,11 +525,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gr-3',
-    'So a public Facebook downloader should not be presented as a way to join a private group, authenticate as another user or bypass membership requirements.',
+    'So a public Facebook downloader cannot get you into a private group, sign in as another user or skip membership requirements.',
   ),
   paragraph(
     'p-gr-4',
-    'If the video is not available publicly, it is outside the normal NovaLikes public downloader use case.',
+    'If the video is not available publicly, the NovaLikes downloader cannot retrieve it.',
   ),
 
   heading(
@@ -539,7 +539,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lg-1',
-    'If Facebook exposes the video publicly and the NovaLikes extractor can access its media without authentication, the downloader can process that public source without asking the user for a Facebook password.',
+    'Yes, for public videos. If Facebook exposes the video publicly and the NovaLikes tool can reach its media without signing in, it processes that public source without asking for a Facebook password.',
   ),
   paragraph(
     'p-lg-2',
@@ -552,11 +552,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lg-4',
-    'So do not turn this into a promise that every public Facebook video will always download without login forever.',
+    'So nobody can promise that every public Facebook video will always download without a login.',
   ),
   paragraph(
     'p-lg-5',
-    'The accurate promise is: no Facebook password is required for the NovaLikes public-video downloader workflow.',
+    'What NovaLikes can promise is that no Facebook password is required for its public-video downloader.',
   ),
 
   heading('h-app', 'Do You Need to Install an App?', 2),
@@ -566,17 +566,17 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ap-2',
-    'Use a browser, a Facebook video URL, the NovaLikes downloader and the available download result.',
+    'All you need is a browser, a Facebook video URL and the NovaLikes downloader.',
   ),
   paragraph(
     'p-ap-3',
-    'Do not expect a Chrome extension, Android app, iPhone app or desktop program unless NovaLikes actually releases one.',
+    'There is currently no NovaLikes Chrome extension, Android app, iPhone app or desktop program for this tool.',
   ),
 
   heading('h-mobile', 'Does It Work on Mobile?', 2),
   paragraph(
     'p-mb-1',
-    'The normal NovaLikes web-tool workflow is designed to work through the website.',
+    'Yes. The NovaLikes downloader works through the website on mobile.',
   ),
   paragraph(
     'p-mb-2',
@@ -588,7 +588,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mb-4',
-    'Avoid assuming one universal folder location.',
+    "So check your browser's downloads list if you cannot find the file. On iPhone it usually goes to the Files app, and on Android to Downloads.",
   ),
 
   heading('h-hd', 'Can You Download Facebook Videos in HD?', 2),
@@ -607,7 +607,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hd-5',
-    'So the tool copy should say HD or SD when available, rather than claiming every Facebook video downloads in full HD.',
+    'So expect HD or SD when available, not full HD for every Facebook video.',
   ),
 
   heading('h-sd', 'What Is Facebook SD Video?', 2),
@@ -621,29 +621,29 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sd-3',
-    'The downloader should present what actually exists.',
+    'The downloader shows what actually exists.',
   ),
   paragraph(
     'p-sd-4',
-    'It should not fabricate 4K, 1080p or HD labels when the media source does not support them.',
+    'It does not label a file 4K, 1080p or HD when the source does not support it.',
   ),
 
   heading('h-4k', 'Can You Download Facebook Videos in 4K?', 2),
   paragraph(
     'p-4k-1',
-    'Only if a legitimately retrievable source of that quality actually exists and the tool supports it.',
+    'Not with NovaLikes at the moment.',
   ),
   paragraph(
     'p-4k-2',
-    'NovaLikes should not market the current Facebook Video Downloader as a 4K Facebook Downloader unless that functionality has actually been verified.',
+    'The current Facebook Video Downloader offers the HD and SD files Facebook labels. It is not a 4K downloader.',
   ),
   paragraph(
     'p-4k-3',
-    'Current positioning should remain: available HD and SD options when exposed.',
+    'So expect HD or SD when available.',
   ),
   paragraph(
     'p-4k-4',
-    'That is more accurate than turning every input into a fake 4K button.',
+    'That is more honest than a 4K button that cannot deliver.',
   ),
 
   heading('h-only-sd', 'Why Is Only SD Available?', 2),
@@ -655,15 +655,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-os-2',
-    'The downloader cannot create an HD source just because the user asks for one.',
+    'The downloader cannot create an HD source that Facebook does not provide.',
   ),
   paragraph(
     'p-os-3',
-    'If only SD is actually exposed, display SD.',
+    'If only SD is exposed, the tool shows SD.',
   ),
   paragraph(
     'p-os-4',
-    'Do not upscale it and label the result Original HD unless it really is.',
+    'It does not upscale the file or label it Original HD.',
   ),
 
   heading(
@@ -686,11 +686,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-fl-3',
-    'NovaLikes already has specific tool behaviour for cases where media is not exposed.',
+    'When media is not exposed, the tool says so.',
   ),
   paragraph(
     'p-fl-4',
-    'The correct response is to show a clear error, not to generate a fake download file.',
+    'It shows a clear error instead of producing a fake download.',
   ),
 
   heading('h-exposed', 'What Does Media Not Exposed Mean?', 2),
@@ -712,7 +712,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ex-5',
-    'Do not ask users for their Facebook password, cookies, session tokens or a browser-login export to force the download.',
+    'The NovaLikes tool never asks for your Facebook password, cookies, session tokens or a browser-login export to force a download.',
   ),
 
   heading(
@@ -735,7 +735,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-4',
-    "A downloader should respect the video's current accessibility.",
+    'A downloader can only work with what is accessible now.',
   ),
 
   heading(
@@ -758,7 +758,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bp-4',
-    'If the creator restricts the post later, NovaLikes should not claim it can bypass the new privacy setting simply because the old URL still exists.',
+    'If the creator restricts the post later, NovaLikes cannot get around the new privacy setting just because you still have the old URL.',
   ),
 
   heading('h-short', 'Do Facebook Watch Short Links Work?', 2),
@@ -772,11 +772,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sh-3',
-    'The tool validates and follows supported Facebook redirects under its existing security rules before attempting extraction.',
+    'The tool checks and follows supported Facebook redirects under its security rules before looking for media.',
   ),
   paragraph(
     'p-sh-4',
-    'If the redirect does not resolve to supported public media, the tool should return an error rather than fetching arbitrary external URLs.',
+    'If the redirect does not lead to supported public media, the tool shows an error. It does not fetch other external URLs.',
   ),
 
   heading(
@@ -787,19 +787,19 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-au-1', 'No.'),
   paragraph(
     'p-au-2',
-    'The Facebook Video Downloader should remain Facebook-specific.',
+    'The Facebook Video Downloader only works with Facebook links.',
   ),
   paragraph(
     'p-au-3',
-    'The existing extractor uses platform-aware URL handling rather than becoming a generic download-anything-from-the-internet proxy.',
+    'It handles Facebook URLs specifically. It is not a general tool for downloading anything from the internet.',
   ),
   paragraph(
     'p-au-4',
-    'This is important for security, host allowlisting and predictable behaviour.',
+    'That keeps it more secure and more predictable.',
   ),
   paragraph(
     'p-au-5',
-    'Users should paste a supported Facebook video URL.',
+    'Paste a supported Facebook video URL.',
   ),
   paragraph(
     'p-au-6',
@@ -817,19 +817,19 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vr-3',
-    'Download Facebook video and download Facebook Reel are separate useful tasks.',
+    'Downloading a Facebook video and downloading a Facebook Reel are separate tasks.',
   ),
   paragraph(
     'p-vr-4',
-    'NovaLikes therefore keeps a Facebook video tool and a Facebook Reels tool as separate user-facing pages.',
+    'NovaLikes therefore has a Facebook video tool and a separate Facebook Reels tool.',
   ),
   paragraph(
     'p-vr-5',
-    'Do not automatically redirect every Video Downloader search to the Reels page.',
+    'Each one handles the link type it was built for.',
   ),
   paragraph(
     'p-vr-6',
-    'Give users the tool matching what they are trying to save.',
+    'Use the tool that matches what you are trying to save.',
   ),
 
   heading(
@@ -839,16 +839,16 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rw-1',
-    'If you specifically have a Reel, use the Facebook Reels Downloader rather than expecting universal Reel handling through the ordinary video tool.',
+    'If you have a Reel, use the Facebook Reels Downloader instead.',
     [{ href: REELS_TOOL_HREF, label: 'Facebook Reels Downloader' }],
   ),
   paragraph(
     'p-rw-2',
-    'The current NovaLikes video page is for watch links and page video paths. Reel-style links belong on the Reels downloader.',
+    'The NovaLikes video page is for watch links and page video paths. Reel links belong on the Reels downloader.',
   ),
   paragraph(
     'p-rw-3',
-    'That creates clearer UX, clearer SEO intent and more accurate expectations.',
+    'If you paste a Reel link here, the tool points you to the right page.',
   ),
   paragraph(
     'p-rw-4',
@@ -869,11 +869,11 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-lv-other', "Someone Else's Public LIVE Recording", 3),
   paragraph(
     'p-lv-3',
-    'If the ended recording exists as publicly accessible supported video content and Facebook exposes usable media, a downloader may be able to process it.',
+    'If the ended recording is available as a public video and Facebook exposes usable media, the downloader may be able to process it.',
   ),
   paragraph(
     'p-lv-4',
-    'Do not promise support for currently running livestreams, private LIVE broadcasts or content Facebook does not expose.',
+    'It does not support streams that are still running, private LIVE broadcasts or content Facebook does not expose.',
   ),
   paragraph(
     'p-lv-5',
@@ -883,7 +883,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-ongoing', 'Can You Download an Ongoing Facebook LIVE?', 2),
   paragraph(
     'p-og-1',
-    'Do not position the tool as a stream-recording service.',
+    'No. The NovaLikes tool is not a stream recorder.',
   ),
   paragraph(
     'p-og-2',
@@ -891,7 +891,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-og-3',
-    'NovaLikes should focus on supported existing public video media rather than real-time stream capture.',
+    'NovaLikes works with existing public videos, not real-time stream capture.',
   ),
   paragraph(
     'p-og-4',
@@ -901,7 +901,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-stories', 'Can You Download Facebook Stories?', 2),
   paragraph(
     'p-st-1',
-    'No claim should be made here.',
+    'Not with this tool.',
   ),
   paragraph(
     'p-st-2',
@@ -914,7 +914,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-4',
-    'NovaLikes should not expand tool claims beyond what has actually been built and tested.',
+    'If you want your own Stories, use those native options.',
   ),
 
   heading(
@@ -924,15 +924,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wm-1',
-    'Do not expect that.',
+    'No.',
   ),
   paragraph(
     'p-wm-2',
-    'The downloader should retrieve the available media.',
+    'The downloader retrieves the available media as it is.',
   ),
   paragraph(
     'p-wm-3',
-    'If the source contains branding, text, logos, captions or embedded marks, the tool should not pretend to remove them.',
+    'If the source contains branding, text, logos, captions or embedded marks, they stay in the file.',
   ),
   paragraph(
     'p-wm-4',
@@ -940,29 +940,29 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wm-5',
-    'NovaLikes does not need to invent a watermark-removal service here.',
+    'NovaLikes does not offer watermark removal.',
   ),
 
   heading('h-quality-change', 'Does Downloading Change the Video Quality?', 2),
   paragraph(
     'p-qc-1',
-    'The downloader should save an available media rendition.',
+    'No. The downloader saves an available media version as it is.',
   ),
   paragraph(
     'p-qc-2',
-    'It should not claim to enhance, restore or upscale the content unless a separate verified process exists.',
+    'It does not enhance, restore or upscale the video.',
   ),
   paragraph(
     'p-qc-3',
-    'If Facebook exposes HD, offer HD.',
+    'If Facebook exposes HD, you get HD.',
   ),
   paragraph(
     'p-qc-4',
-    'If only SD is exposed, offer SD.',
+    'If only SD is exposed, you get SD.',
   ),
   paragraph(
     'p-qc-5',
-    'Keep the downloaded result aligned with the actual available source.',
+    'The file matches the source Facebook provides.',
   ),
 
   heading(
@@ -973,15 +973,15 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-de-1', 'No.'),
   paragraph(
     'p-de-2',
-    'A current downloader should not be marketed as an archive, deleted-video recovery system, cache explorer or Facebook history database.',
+    'The NovaLikes downloader is not an archive, deleted-video recovery system, cache explorer or Facebook history database.',
   ),
   paragraph(
     'p-de-3',
-    'If the video is deleted and no supported public media remains available, the tool should fail clearly.',
+    'If the video is deleted and no supported public media remains, the tool shows an error.',
   ),
   paragraph(
     'p-de-4',
-    'Do not fabricate historical copies.',
+    'It does not keep or create old copies.',
   ),
 
   heading(
@@ -992,7 +992,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-rm-1', 'No.'),
   paragraph(
     'p-rm-2',
-    'If Facebook removes content because it is unavailable or subject to enforcement, a downloader should not be presented as a mechanism for defeating that action.',
+    'If Facebook removes content because it is unavailable or because of enforcement, a downloader cannot undo that.',
   ),
   paragraph(
     'p-rm-3',
@@ -1011,7 +1011,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pw-1',
-    "You should not need to provide your Facebook password for NovaLikes' public video downloader.",
+    "You do not need to provide your Facebook password for NovaLikes' public video downloader.",
   ),
   paragraph(
     'p-pw-2',
@@ -1019,7 +1019,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pw-3',
-    "NovaLikes' current workflow is built around public video extraction, not account takeover or authenticated scraping.",
+    "NovaLikes' tool only works with public video media. It never signs into Facebook accounts.",
   ),
 
   heading(
@@ -1033,7 +1033,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sp-2',
-    'That is a much stronger design than asking for a password and then asking you to trust the site.',
+    'That is safer than asking for a password and then asking you to trust the site with it.',
   ),
   paragraph(
     'p-sp-3',
@@ -1041,18 +1041,18 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sp-4',
-    "Nothing more should be necessary from the user's Facebook account.",
+    'Nothing else is needed from your Facebook account.',
   ),
 
   heading('h-every', 'Can the Tool Download Every Facebook Video?', 2),
   paragraph('p-ev-1', 'No.'),
   paragraph(
     'p-ev-2',
-    'Avoid that claim.',
+    'Be wary of any tool that says it can.',
   ),
   paragraph(
     'p-ev-3',
-    'The accurate wording is: the tool can download supported public Facebook videos when Facebook exposes usable video media.',
+    'What it can do is download supported public Facebook videos when Facebook exposes usable video media.',
   ),
   paragraph(
     'p-ev-4',
@@ -1060,7 +1060,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ev-5',
-    'A good downloader tells the truth when a video cannot be retrieved.',
+    'When a video cannot be retrieved, the tool tells you.',
   ),
 
   heading(
@@ -1070,20 +1070,20 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-1',
-    'Meta documents ordinary actions such as saving content for later viewing, but the current official sources reviewed here do not establish a universal creator notification specifically for third-party retrieval of publicly exposed video media. (Facebook)',
+    'Meta documents ordinary actions such as saving content for later viewing, but its official sources do not describe a creator notification for downloads of public video media by outside tools. (Facebook)',
     [{ href: FB_SAVE_VIDEO, label: 'Facebook', external: true }],
   ),
   paragraph(
     'p-nf-2',
-    'Therefore do not write an absolute claim that the creator can never know you downloaded it.',
+    'Even so, nobody can promise that the creator can never know you downloaded it.',
   ),
   paragraph(
     'p-nf-3',
-    'NovaLikes does not need that promise.',
+    'NovaLikes does not make that promise.',
   ),
   paragraph(
     'p-nf-4',
-    'The tool\'s benefit is retrieving available public media without requiring a Facebook password, not guaranteed invisible activity.',
+    'What it does offer is public media retrieval without your Facebook password, not invisible activity.',
   ),
 
   heading(
@@ -1093,7 +1093,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pg-1',
-    "If the Page's video is currently public and the media is supported and exposed, it is an appropriate input for the public-video downloader.",
+    "Yes, if the Page's video is currently public and Facebook exposes the media.",
   ),
   paragraph(
     'p-pg-2',
@@ -1116,12 +1116,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pf-2',
-    'If the user selected Public for that video or post, Public means anyone can see it, including people off Facebook. (Facebook)',
+    'If the owner selected Public for that video or post, Public means anyone can see it, including people off Facebook. (Facebook)',
     [{ href: FB_SELECT_AUDIENCE, label: 'Facebook', external: true }],
   ),
   paragraph(
     'p-pf-3',
-    'If it is Friends-only, Only Me or otherwise restricted, the public downloader should not be presented as a privacy bypass. (Facebook)',
+    'If it is Friends-only, Only Me or otherwise restricted, the public downloader cannot retrieve it. (Facebook)',
     [{ href: FB_CHOOSE_WHO, label: 'Facebook', external: true }],
   ),
 
@@ -1144,7 +1144,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sq-4',
-    'So describe options as HD when available and SD when available, rather than Original quality guaranteed.',
+    'So expect HD when available and SD when available, rather than guaranteed original quality.',
   ),
 
   heading(
@@ -1162,7 +1162,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sm-3',
-    'Do not use file size alone to decide that this video must be fake or that it cannot be HD.',
+    'File size alone does not tell you whether a video is HD.',
   ),
   paragraph(
     'p-sm-4',
@@ -1211,7 +1211,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-rp-4',
-    'The downloader itself should not make the copyright decision for the user.',
+    'The downloader cannot decide that for you.',
   ),
 
   heading(
@@ -1263,7 +1263,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-cta-section', 'Download a Public Facebook Video', 2),
   paragraph(
     'p-ct-1',
-    'This article has strong direct tool intent, so the next step is the free downloader rather than a Facebook follower or Like package.',
+    'If you want to download a public video now, the free downloader is the next step.',
   ),
   {
     id: 'cta-facebook-video-downloader',
@@ -1293,7 +1293,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-si-2',
-    'If the video is private, deleted, unavailable, or Facebook does not expose usable media, the tool should show an honest error instead of pretending the download succeeded.',
+    'If the video is private, deleted, unavailable, or Facebook does not expose usable media, the tool shows an error instead of pretending the download worked.',
   ),
   paragraph(
     'p-si-3',
@@ -1307,9 +1307,9 @@ const BLOCKS: ArticleContentBlock[] = [
     'Facebook defines Public audience content as content anyone can see, including people off Facebook.',
     "Facebook lets publishers select and later change the audience for posts, so a video's accessibility can change.",
     'Meta provides native download options for some content you own, including your own shared Reels and ended LIVE videos.',
-    "NovaLikes' Facebook Video Downloader is for supported publicly accessible videos; it should not be presented as a private-content bypass.",
-    'HD and SD should only be offered when those media options are actually available.',
-    'A downloader should not ask for a Facebook password to process supported public video media.',
+    "NovaLikes' Facebook Video Downloader is for supported publicly accessible videos; it is not a private-content bypass.",
+    'HD and SD options only appear when Facebook makes those files available.',
+    'The NovaLikes downloader does not ask for a Facebook password to process supported public video media.',
     'Publicly visible does not mean copyright-free. Meta says users retain rights in their content and prohibits intellectual-property infringing content on Facebook.',
     'Downloading and republishing are separate actions; permission or another legitimate legal basis may be needed for reuse.',
   ]),
@@ -1411,14 +1411,14 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_VIDEO_ARTICLE: LearnArticleRecord = {
       id: 'faq-3',
       question: 'Can I download Facebook videos in HD?',
       answer:
-        'When Facebook exposes an HD version and the tool can retrieve it, NovaLikes can show an HD option. HD should not be guaranteed for every video.',
+        'When Facebook exposes an HD version and the tool can retrieve it, NovaLikes shows an HD option. HD is not available for every video.',
       schemaEligible: true,
     },
     {
       id: 'faq-4',
       question: 'Can I download a private Facebook video?',
       answer:
-        'The NovaLikes tool should only be used for supported public Facebook videos. Facebook uses audience controls such as Public, Friends and Only Me to restrict who can see posts.',
+        'No. The NovaLikes tool only works with supported public Facebook videos. Facebook uses audience controls such as Public, Friends and Only Me to restrict who can see posts.',
       schemaEligible: true,
     },
     {
@@ -1460,7 +1460,7 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_VIDEO_ARTICLE: LearnArticleRecord = {
       id: 'faq-10',
       question: 'Can I use a Facebook watch short link?',
       answer:
-        'NovaLikes supports valid Facebook watch short links in its current Facebook video extraction flow. If the redirect does not lead to supported public media, the tool should return an error rather than fabricate a download.',
+        'Yes. NovaLikes supports valid Facebook watch short links. If the redirect does not lead to supported public media, the tool shows an error instead of a download.',
       schemaEligible: true,
     },
   ],

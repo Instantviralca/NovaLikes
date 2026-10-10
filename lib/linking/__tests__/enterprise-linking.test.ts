@@ -3,6 +3,7 @@
  */
 
 import { describe, expect, it } from 'vitest';
+import { EXPECTED_LIVE_LEARN_ARTICLE_COUNT } from '@/lib/__tests__/fixtures/learn-corpus';
 
 import { APPROVED_SERVICE_SLUGS } from '@/data/linking/approved-services';
 import { getFooterColumns } from '@/data/footer';
@@ -105,7 +106,7 @@ describe('Enterprise internal linking quality', () => {
     expect(findOrphanSitemapPages(buildSitemapEntries())).toHaveLength(0);
   });
 
-  it('publishes a Learn corpus of 26 live articles for link graph density', () => {
-    expect(listPublicLearnArticles().length).toBe(26);
+  it('publishes the full live Learn corpus for link graph density', () => {
+    expect(listPublicLearnArticles().length).toBe(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
   });
 });

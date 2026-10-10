@@ -25,11 +25,12 @@ describe('Article #25 TikTok likes vs views', () => {
 
   it('keeps likes and views as separate metrics and uses a two-service CTA', () => {
     expect(article.title).toBe(
-      'TikTok Likes vs Views: Which Metric Matters for What?',
+      'TikTok Likes vs Views: Which Matters and What Is a Good Ratio?',
     );
     expect(article.seo.title).toBe(
-      'TikTok Likes vs Views: Which Metric Matters More?',
+      'TikTok Likes vs Views: Like-to-View Ratio Explained',
     );
+    expect(article.seo.keywords?.[1]).toBe('TikTok like to view ratio');
     expect(article.seo.canonicalPath).toBe('/learn/tiktok-likes-vs-views');
     expect(article.seo.keywords?.[0]).toBe('TikTok likes vs views');
     expect(article.relatedServices).toEqual([
@@ -116,6 +117,35 @@ describe('Article #25 TikTok likes vs views', () => {
           ),
       ),
     ).toBe(false);
+  });
+
+  it('explains how to work out a like-to-view ratio baseline', () => {
+    const steps = article.blocks.find((block) => block.id === 'ol-ratio-steps');
+    expect(steps?.type).toBe('numbered_list');
+    expect(steps?.type === 'numbered_list' ? steps.items : []).toHaveLength(5);
+    expect(article.content).toContain('divide Likes by Views and multiply by 100');
+    expect(
+      article.faqs?.find((faq) => faq.id === 'faq-4')?.answer,
+    ).toContain('middle value as your baseline');
+  });
+
+  it('contains reader-facing copy only, with no internal writing notes', () => {
+    const text = [
+      article.content,
+      ...(article.faqs ?? []).map((faq) => faq.answer),
+    ].join('\n');
+    for (const phrase of [
+      /NovaLikes should/i,
+      /the customer/i,
+      /upsell/i,
+      /correct safety language/i,
+      /should not be presented/i,
+      /Do not (invent|imply|tell|promise|make that|use invented|build|create|write)/i,
+      /Answer it based on/i,
+      /should be claimed/i,
+    ]) {
+      expect(text).not.toMatch(phrase);
+    }
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

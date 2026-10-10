@@ -79,13 +79,13 @@ describe('Article #23 How to check an Instagram follower count without logging i
     );
     expect(article.content).toContain('No Instagram password is required');
     expect(article.content).toContain(
-      'should not invent additional precision',
+      'does not invent additional precision',
     );
     expect(article.content).toContain(
       'Private, hidden or login-gated profiles can return an error',
     );
     expect(article.content).toContain(
-      'should never market the Follower Counter as a way to see private followers, unlock a hidden follower list',
+      'does not show private followers, unlock hidden follower lists',
     );
     expect(
       article.blocks.some(

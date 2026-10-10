@@ -79,7 +79,7 @@ describe('Article #20 How to view an Instagram profile picture in full size', ()
       'No Instagram password should be required',
     );
     expect(article.content).toContain(
-      'should not claim to unlock private photos',
+      'cannot unlock private photos',
     );
     expect(article.content).toContain(
       'Private, hidden or login-gated profiles can return an error',

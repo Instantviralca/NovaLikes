@@ -3,6 +3,7 @@
  */
 
 import { describe, expect, it } from 'vitest';
+import { EXPECTED_LIVE_LEARN_ARTICLE_COUNT } from '@/lib/__tests__/fixtures/learn-corpus';
 
 import { NOVALIKES_EDITORIAL_PLAN } from '@/lib/cms/editorial-plan';
 import { getPublishedLearnArticleRecords, getPublishedLearnArticleSlugs } from '@/data/learn/articles';
@@ -77,9 +78,9 @@ describe('AI/GEO crawlability and indexability', () => {
 });
 
 describe('Learn corpus and editorial boundaries', () => {
-  it('keeps 26 live registry articles discoverable with valid public dates', () => {
+  it('keeps every live registry article discoverable with valid public dates', () => {
     const slugs = getPublishedLearnArticleSlugs();
-    expect(slugs).toHaveLength(26);
+    expect(slugs).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
     const now = Date.now();
     for (const article of getIndexableArticles()) {
       const dates = resolvePublicArticleTimestamps({
@@ -148,7 +149,7 @@ describe('Multilingual hreflang (core pages)', () => {
 
 describe('Live Learn article registry integrity', () => {
   it('matches published records count to public slug list', () => {
-    expect(getPublishedLearnArticleRecords()).toHaveLength(26);
-    expect(getPublishedLearnArticleSlugs().length).toBe(26);
+    expect(getPublishedLearnArticleRecords()).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
+    expect(getPublishedLearnArticleSlugs().length).toBe(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
   });
 });

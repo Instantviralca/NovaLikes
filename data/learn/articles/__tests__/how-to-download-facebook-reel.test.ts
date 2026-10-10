@@ -67,7 +67,7 @@ describe('Article #24 How to download a public Facebook Reel', () => {
     expect(article.content).toContain('No Facebook password should be required');
     expect(article.content).toContain('does not mean copyright-free');
     expect(article.content).toContain(
-      'should not be used as a private-content bypass',
+      'is not a private-content bypass',
     );
     expect(article.content).not.toMatch(/every Reel in 4K/i);
     expect(article.content).not.toMatch(/copyright-free Facebook Reel/i);

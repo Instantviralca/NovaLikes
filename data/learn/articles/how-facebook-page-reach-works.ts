@@ -214,7 +214,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vi-9',
-    'Do not interpret that example as an official Facebook calculation formula.',
+    'That example is not an official Facebook formula.',
   ),
   paragraph(
     'p-vi-10',
@@ -427,8 +427,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-rk-7',
     'Two people following the same Page do not necessarily receive identical Feed ordering.',
   ),
-  heading('h-no-formula', 'Do Not Turn This Into a Fake Formula', 3),
-  paragraph('p-rk-8', 'Avoid claims such as:'),
+  heading('h-no-formula', 'There Is No Facebook Reach Formula', 3),
+  paragraph('p-rk-8', 'Be wary of claims such as:'),
   bullets('ul-rk-avoid', [
     '10 comments = 1,000 extra reach',
     'shares are worth exactly 5× likes',
@@ -548,7 +548,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-um-5', 'Important:'),
   paragraph(
     'p-um-6',
-    'Do not represent any of these as guaranteed ways to:',
+    'None of these is a guaranteed way to:',
   ),
   bullets('ul-um-not', [
     'increase organic Page reach,',
@@ -630,7 +630,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-eg-7', 'Study them together.'),
   paragraph(
     'p-eg-8',
-    'Do not pretend they are interchangeable.',
+    'They are not interchangeable.',
   ),
   figure(
     'fig-together',
@@ -889,7 +889,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'consistency,',
     'and learning from Page Insights.',
   ]),
-  paragraph('p-inc-4', 'Do not promise:'),
+  paragraph('p-inc-4', 'Be wary of promises such as:'),
   paragraph(
     'p-inc-5',
     'Post at 8 PM and reach will double.',
@@ -993,7 +993,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bf-1',
-    'No guaranteed relationship should be claimed.',
+    'Not in any guaranteed way.',
   ),
   paragraph(
     'p-bf-2',
@@ -1010,14 +1010,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bf-5',
-    'Therefore NovaLikes should never claim:',
+    'So none of these claims holds up:',
   ),
   bullets('ul-bf', [
     'a specific follower purchase will create matching additional reach',
     'more purchased followers will make Facebook push your posts',
     'followers guarantee organic Page reach',
   ]),
-  paragraph('p-bf-6', 'Keep the metrics separate.'),
+  paragraph('p-bf-6', 'Followers and reach are separate metrics.'),
 
   heading(
     'h-page-likes-reach',
@@ -1044,7 +1044,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pl-6',
-    'Do not promise algorithm outcomes from a Page Like package.',
+    'A Page Like package cannot promise algorithm outcomes.',
   ),
 
   heading(
@@ -1059,7 +1059,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pt-2',
-    'But that does not justify promising:',
+    'But that does not mean:',
   ),
   paragraph(
     'p-pt-3',
@@ -1071,7 +1071,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pt-5',
-    'A Post Like service should be represented as:',
+    'A Post Like service is:',
   ),
   paragraph('p-pt-6', 'a Post Like service.'),
   paragraph('p-pt-7', 'Not:'),
@@ -1327,7 +1327,7 @@ const BLOCKS: ArticleContentBlock[] = [
     "Facebook's default Feed is ranked and personalized, so following a Page does not guarantee seeing every Page post.",
     'Facebook can recommend posts and Pages to people who do not already follow them.',
     'Reach can therefore be either higher or lower than follower count.',
-    'Likes, followers and Page Likes should not be advertised as guaranteed methods for increasing Facebook reach.',
+    'Likes, followers and Page Likes are not guaranteed ways to increase Facebook reach.',
   ]),
 ];
 

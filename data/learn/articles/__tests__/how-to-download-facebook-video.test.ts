@@ -74,7 +74,7 @@ describe('Article #21 How to download a public Facebook video', () => {
     );
     expect(article.content).toContain('not mean copyright-free');
     expect(article.content).toContain(
-      'should not be used as a private-video bypass',
+      'is not a private-video bypass',
     );
     expect(article.content).not.toMatch(/every video in 4K/i);
     expect(

@@ -516,7 +516,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ng-8',
-    'They should not be presented as guaranteed shortcuts to unrelated business outcomes.',
+    'None of them is a guaranteed shortcut to sales, enquiries or other business results.',
   ),
 
   heading('h-evaluate', 'How to Evaluate Your TikTok Performance Better', 2),

@@ -5,6 +5,7 @@
 import { createHmac } from 'node:crypto';
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { EXPECTED_LIVE_LEARN_ARTICLE_COUNT } from '@/lib/__tests__/fixtures/learn-corpus';
 
 import {
   assertLoginAllowed,
@@ -349,11 +350,11 @@ describe('Unauthorized admin API gate helper', () => {
 });
 
 describe('Learn Center production content', () => {
-  it('publishes 26 approved Learn articles with featured images in the sitemap', () => {
-    expect(LEARN_ARTICLES.length).toBe(26);
+  it('publishes every approved Learn article with featured images in the sitemap', () => {
+    expect(LEARN_ARTICLES.length).toBe(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
     expect(AUTHORS.length).toBeGreaterThanOrEqual(1);
     const slugs = getPublishedLearnArticleSlugs();
-    expect(slugs).toHaveLength(26);
+    expect(slugs).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
     expect(slugs).toContain('tiktok-seo');
     expect(slugs).toContain('how-instagram-algorithm-works');
     expect(slugs).toContain('facebook-followers-vs-page-likes-vs-post-likes');

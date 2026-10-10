@@ -4,6 +4,11 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {
+  EXPECTED_LIVE_LEARN_ARTICLE_COUNT,
+  LAUNCH_LEARN_ARTICLE_COUNT,
+  POST_LAUNCH_LEARN_SLUGS,
+} from '@/lib/__tests__/fixtures/learn-corpus';
 
 import { LEARN_ARTICLES } from '@/data/learn/articles';
 import { NOVALIKES_EDITORIAL_PLAN } from '@/lib/cms/editorial-plan';
@@ -20,6 +25,12 @@ const LAUNCH_ISO = '2026-08-22T08:00:00.000Z';
 const LAUNCH_MS = Date.parse(LAUNCH_ISO);
 const NOW = new Date('2026-08-22T12:00:00.000Z');
 
+/**
+ * Articles added after launch carry their real publication date.
+ * They are checked separately below instead of being backdated to launch.
+ */
+const POST_LAUNCH_SLUGS = POST_LAUNCH_LEARN_SLUGS;
+
 const PLANNED_SLUGS = [
   'facebook-page-likes-vs-followers',
   'how-to-save-tiktok-profile-picture-full-size',
@@ -28,7 +39,10 @@ const PLANNED_SLUGS = [
 ] as const;
 
 describe('live Learn registry public publication dates', () => {
-  const live = LEARN_ARTICLES.filter(isPublicLiveArticle);
+  const allLive = LEARN_ARTICLES.filter(isPublicLiveArticle);
+  const live = allLive.filter(
+    (article) => !(POST_LAUNCH_SLUGS as readonly string[]).includes(article.slug),
+  );
 
   beforeEach(() => {
     vi.useFakeTimers();
@@ -39,10 +53,11 @@ describe('live Learn registry public publication dates', () => {
     vi.useRealTimers();
   });
 
-  it('has exactly 26 live registry articles', () => {
-    expect(LEARN_ARTICLES).toHaveLength(26);
-    expect(live).toHaveLength(26);
-    expect(getIndexableArticles()).toHaveLength(26);
+  it('has exactly the launch articles plus the post-launch articles', () => {
+    expect(LEARN_ARTICLES).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
+    expect(allLive).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
+    expect(live).toHaveLength(LAUNCH_LEARN_ARTICLE_COUNT);
+    expect(getIndexableArticles()).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
   });
 
   it('sets publishedAt on or before the NovaLikes launch day for every live article', () => {
@@ -148,5 +163,55 @@ describe('live Learn registry public publication dates', () => {
       '2026-10-28',
       '2026-10-30',
     ]);
+  });
+});
+
+describe('post-launch Learn articles use their real publication date', () => {
+  const postLaunch = LEARN_ARTICLES.filter((article) =>
+    (POST_LAUNCH_SLUGS as readonly string[]).includes(article.slug),
+  );
+
+  it('registers every post-launch slug as a live article', () => {
+    expect(postLaunch.map((article) => article.slug).sort()).toEqual(
+      [...POST_LAUNCH_SLUGS].sort(),
+    );
+    for (const article of postLaunch) {
+      expect(isPublicLiveArticle(article), article.slug).toBe(true);
+    }
+  });
+
+  it('dates them after launch and never in the future', () => {
+    const now = Date.now();
+    for (const article of postLaunch) {
+      const published = Date.parse(article.publishedAt);
+      expect(published, article.slug).toBeGreaterThan(LAUNCH_MS);
+      expect(published, article.slug).toBeLessThanOrEqual(now);
+      expect(Date.parse(article.updatedAt), article.slug).toBeGreaterThanOrEqual(published);
+      expect(Date.parse(article.updatedAt), article.slug).toBeLessThanOrEqual(now);
+    }
+  });
+
+  it('emits truthful schema and Open Graph dates', () => {
+    for (const article of postLaunch) {
+      const seo = toArticleSeoRecord(article);
+      const blog = buildArticleSchema(seo).find((item) => item['@type'] === 'BlogPosting') as
+        | Record<string, unknown>
+        | undefined;
+      expect(blog, article.slug).toBeTruthy();
+      expect(blog!.datePublished, article.slug).toBe(article.publishedAt);
+      expect(blog!.dateModified, article.slug).toBe(article.updatedAt);
+      const og = buildArticleOpenGraph(seo) as { publishedTime?: string; modifiedTime?: string };
+      expect(og.publishedTime, article.slug).toBe(article.publishedAt);
+      expect(og.modifiedTime, article.slug).toBe(article.updatedAt);
+    }
+  });
+
+  it('lists them in the sitemap without locale-prefixed URLs', () => {
+    const entries = buildSitemapEntries();
+    for (const article of postLaunch) {
+      const url = `https://novalikes.com/learn/${article.slug}`;
+      expect(entries.some((entry) => entry.url === url), url).toBe(true);
+      expect(entries.some((entry) => entry.url.includes(`/es/learn/${article.slug}`))).toBe(false);
+    }
   });
 });

@@ -407,7 +407,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-8-2',
-    'That should not be rewritten as a rule that you must post five times per day or followers will leave.',
+    'That does not mean you must post five times a day or followers will leave.',
   ),
   paragraph(
     'p-8-3',
@@ -450,7 +450,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-9-5',
-    'Do not mix those concepts.',
+    'These are two different things.',
   ),
   paragraph(
     'p-9-6',
@@ -762,11 +762,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-19-3',
-    "So don't invent an inactive-follower cleanup rule.",
+    'So there is no documented inactive-follower cleanup rule.',
   ),
   paragraph(
     'p-19-4',
-    'If TikTok publishes a different policy later, update the article.',
+    'If TikTok publishes a different policy later, we will update this guide.',
   ),
   paragraph(
     'p-19-5',
@@ -776,7 +776,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-20', '20. What About Fake Followers?', 2),
   paragraph(
     'p-20-1',
-    'This needs careful wording.',
+    'This is where evidence matters.',
   ),
   paragraph(
     'p-20-2',
@@ -789,11 +789,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-20-4',
-    'That is enough reason not to describe artificial follower acquisition as TikTok-approved, risk-free or guaranteed safe for eligibility.',
+    'So artificial follower acquisition is not TikTok-approved, not risk-free and not safe for creator-program eligibility.',
   ),
   paragraph(
     'p-20-5',
-    'But a follower decline should not automatically be labelled as TikTok removed bots.',
+    'But a follower decline does not automatically mean TikTok removed bots.',
   ),
   paragraph(
     'p-20-6',
@@ -820,7 +820,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-df-4',
-    'The accurate wording is: fake or artificially inflated follower activity can create platform-policy risk, but a follower-count decline alone does not identify its cause.',
+    'In short, fake or artificially inflated follower activity can create platform-policy risk, but a follower-count decline alone does not identify its cause.',
   ),
 
   heading(
@@ -1202,16 +1202,16 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ct-2',
-    'It should not be described as a cure for organic follower loss, a guaranteed retention system, a guaranteed FYP boost or a guarantee that every follower remains forever.',
+    'It is not a cure for organic follower loss, a guaranteed retention system, a guaranteed FYP boost or a guarantee that every follower stays forever.',
   ),
   paragraph(
     'p-ct-3',
-    "If someone wants to compare the separate NovaLikes option, TikTok followers should be understood as a follower-count service.",
+    'If you want to compare the separate NovaLikes option, TikTok followers is a follower-count service.',
     [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-ct-4',
-    'Keep that service separate from organic audience retention.',
+    'It is separate from organic audience retention.',
   ),
   paragraph(
     'p-ct-5',
@@ -1247,18 +1247,18 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bs-4',
-    "Also, TikTok's Creator Rewards rules explicitly prohibit malicious or fraudulent behaviour such as inflating follower counts, so third-party follower acquisition should not be presented as TikTok-approved or as a safe way to satisfy creator-program eligibility. (TikTok Support)",
+    "Also, TikTok's Creator Rewards rules explicitly prohibit malicious or fraudulent behaviour such as inflating follower counts, so third-party follower acquisition is not TikTok-approved and is not a safe way to meet creator-program eligibility. (TikTok Support)",
     [{ href: TT_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-bs-5',
-    'Keep follower-count services and organic audience retention separate.',
+    'Follower-count services and organic audience retention are separate things.',
   ),
 
   heading('h-purchased-drop', 'Can Purchased Followers Drop Later?', 2),
   paragraph(
     'p-pd-1',
-    'No third-party follower package should be described as permanent forever unless the underlying service actually guarantees and can support that exact promise.',
+    'Yes, they can. No third-party follower package can honestly promise that followers stay forever.',
   ),
   paragraph(
     'p-pd-2',
@@ -1267,11 +1267,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pd-3',
-    'NovaLikes should therefore avoid absolute claims such as followers can never drop, or permanent TikTok followers guaranteed forever.',
+    'So be wary of claims such as followers can never drop, or permanent TikTok followers guaranteed forever.',
   ),
   paragraph(
     'p-pd-4',
-    'If a package has a specific documented guarantee, state only that actual guarantee. Do not invent one.',
+    'If a package includes a stated refill period, only that stated period applies. Nothing beyond it is guaranteed.',
   ),
 
   heading(
@@ -1281,7 +1281,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ha-1',
-    'Do not claim a direct formula.',
+    'Not in any direct way TikTok has published.',
   ),
   paragraph(
     'p-ha-2',
@@ -1298,7 +1298,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ha-5',
-    "But don't turn it into an invented ranking equation.",
+    'But it is not a ranking equation.',
   ),
 
   heading(
@@ -1336,11 +1336,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-180-3',
-    'Therefore do not publish a claim that TikTok deletes inactive followers every 180 days.',
+    'So TikTok does not say it deletes inactive followers every 180 days.',
   ),
   paragraph(
     'p-180-4',
-    'That would turn one policy into another policy TikTok did not state.',
+    'The username reset is the only part TikTok has documented.',
   ),
 
   heading(
@@ -1359,7 +1359,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dw-3',
-    "Don't invent an automatic inactivity-based unfollow rule without official evidence.",
+    'There is no official evidence of an automatic inactivity-based unfollow rule.',
   ),
 
   heading(
@@ -1641,7 +1641,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok Account Status can show certain account-standing restrictions and is a better troubleshooting source than assuming a penalty from follower loss alone.',
     'TikTok says it notifies users when an account becomes ineligible for recommendation and provides an appeal process.',
     "TikTok's inactive-account policy says an inactive account's username may be reset after 180 days; it does not establish a rule automatically deleting followers after 180 days.",
-    'TikTok Creator Rewards rules prohibit fraudulent activity such as inflating follower counts, so third-party follower services should not be described as TikTok-approved or guaranteed safe for creator-program eligibility.',
+    'TikTok Creator Rewards rules prohibit fraudulent activity such as inflating follower counts, so third-party follower services are not TikTok-approved or guaranteed safe for creator-program eligibility.',
     'Follower loss alone does not prove a shadowban, recommendation restriction, fake-follower purge or algorithm penalty.',
     'Views and followers can move in different directions because content recommendation and following or unfollowing are separate parts of TikTok.',
   ]),
@@ -1775,7 +1775,7 @@ export const WHY_TIKTOK_FOLLOWERS_DROP_ARTICLE: LearnArticleRecord = {
       id: 'faq-7',
       question: 'Can purchased TikTok followers drop?',
       answer:
-        'Follower relationships exist on TikTok\'s platform, where users can unfollow and creators can remove followers. Avoid any service claim promising that a follower can never disappear unless that exact guarantee is genuinely supported.',
+        "Yes. Follower relationships exist on TikTok's platform, where users can unfollow and creators can remove followers. Be wary of any service that promises followers can never disappear.",
       schemaEligible: true,
     },
     {

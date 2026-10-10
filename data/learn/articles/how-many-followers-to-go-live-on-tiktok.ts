@@ -156,15 +156,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-w1-4',
-    'It just should not be treated as an automatic worldwide guarantee.',
+    'It just is not an automatic worldwide guarantee.',
   ),
   paragraph(
     'p-w1-5',
-    'A better way to write the rule is: around 1,000 followers is commonly used as the TikTok LIVE benchmark, but TikTok applies a local minimum-follower threshold, so eligibility can vary.',
+    'A more accurate way to put it: around 1,000 followers is the commonly used TikTok LIVE benchmark, but TikTok applies a local minimum-follower threshold, so eligibility can vary.',
   ),
   paragraph(
     'p-w1-6',
-    'Not: TikTok always unlocks LIVE at exactly 1,000 followers.',
+    'It is not true that TikTok always unlocks LIVE at exactly 1,000 followers.',
   ),
   figure(
     'fig-elig',
@@ -226,11 +226,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-16-4',
-    'For a current article, use the current 18+ requirement.',
+    'Today, the rule is 18+.',
   ),
   paragraph(
     'p-16-5',
-    'Do not repeat an older “16+ to go LIVE, 18+ for Gifts” rule.',
+    'The older “16+ to go LIVE, 18+ for Gifts” rule you may still see online is out of date.',
   ),
   paragraph(
     'p-16-6',
@@ -264,7 +264,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-us-1',
-    "TikTok's current global Help Center does not give us a reliable basis for promising that one exact follower number applies to every US account.",
+    "TikTok's current global Help Center does not publish one exact follower number for every US account.",
   ),
   paragraph(
     'p-us-2',
@@ -273,15 +273,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-us-3',
-    'That is why this article does not publish a country-by-country follower table unless TikTok itself currently publishes those country-specific figures.',
+    'That is why this guide does not include a country-by-country follower table. TikTok does not publish one.',
   ),
   paragraph(
     'p-us-4',
-    'Otherwise we would be inventing precision.',
+    'Any such table would be a guess.',
   ),
   paragraph(
     'p-us-5',
-    'The better advice: check whether LIVE appears on the actual account after you meet the age and follower requirements applicable to your location.',
+    'The practical step: check whether LIVE appears on your account after you meet the age and follower requirements for your location.',
   ),
 
   heading(
@@ -320,7 +320,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-500-1',
-    'Possibly for some accounts if their applicable eligibility threshold allows it, but you should not promise that 500 followers unlocks LIVE.',
+    'Possibly for some accounts, if their local threshold allows it, but 500 followers does not unlock LIVE for everyone.',
   ),
   paragraph(
     'p-500-2',
@@ -347,7 +347,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-1',
-    'The safest answer is that some accounts may have a local eligibility threshold that differs from the commonly referenced 1,000 followers.',
+    'Some accounts may have a local threshold that differs from the commonly quoted 1,000 followers.',
   ),
   paragraph(
     'p-un-2',
@@ -356,7 +356,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-3',
-    'Do not advise users to change region with a VPN, fake their age, switch account type repeatedly, contact support pretending they previously had LIVE, or exploit a supposed bug just to bypass an eligibility requirement.',
+    'Do not change region with a VPN, fake your age, keep switching account type, contact support pretending you previously had LIVE, or rely on a supposed bug to get around an eligibility requirement.',
   ),
   paragraph(
     'p-un-4',
@@ -397,7 +397,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bu-1',
-    'Do not recommend switching account types as a guaranteed LIVE bypass.',
+    'No. Switching account type is not a reliable way around the LIVE requirements.',
   ),
   paragraph(
     'p-bu-2',
@@ -421,7 +421,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ms-1',
-    'This is where the article becomes genuinely useful.',
+    'Here are the checks that matter.',
   ),
   paragraph(
     'p-ms-2',
@@ -518,7 +518,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Does Reaching 1,000 Followers Instantly Unlock LIVE?',
     2,
   ),
-  paragraph('p-in-1', 'Do not promise that.'),
+  paragraph('p-in-1', 'Not necessarily.'),
   paragraph(
     'p-in-2',
     "Even if 1,000 is the commonly used planning benchmark, TikTok's current requirement is described as a local minimum-follower threshold, and other eligibility factors still apply. (TikTok Support)",
@@ -540,7 +540,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pu-1',
-    "Do not invent a blanket rule unless TikTok's current account interface specifically requires it for your account.",
+    "TikTok's LIVE help pages do not list a public account as one of the requirements.",
   ),
   paragraph(
     'p-pu-2',
@@ -563,7 +563,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pu-5',
-    'But do not rewrite that into “public automatically unlocks LIVE.”',
+    'But a public account does not automatically unlock LIVE.',
   ),
   paragraph('p-pu-6', "It doesn't."),
 
@@ -584,7 +584,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-vw-3', 'Those are different programs.'),
   paragraph(
     'p-vw-4',
-    'Do not tell users they need 100,000 recent views to go LIVE.',
+    'You do not need 100,000 recent views to go LIVE.',
   ),
   paragraph(
     'p-vw-5',
@@ -624,7 +624,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rw-3',
-    "Those requirements should not be copied into a TikTok LIVE eligibility article as though they're LIVE rules.",
+    'They are not LIVE requirements.',
   ),
 
   heading(
@@ -669,7 +669,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ga-3',
-    'This is another reason not to summarize all TikTok creator features with “get 1,000 followers and everything unlocks.”',
+    'This is another reason why “get 1,000 followers and everything unlocks” is wrong.',
   ),
   paragraph(
     'p-ga-4',
@@ -702,7 +702,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mf-3',
-    'But do not promise that going LIVE always increases followers.',
+    'But going LIVE does not always bring more followers.',
   ),
   paragraph(
     'p-mf-4',
@@ -734,7 +734,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fyp-1',
-    'Do not claim a guaranteed relationship.',
+    'Not in any way TikTok has confirmed.',
   ),
   paragraph(
     'p-fyp-2',
@@ -742,7 +742,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fyp-3',
-    'So this article should not repeat that type of growth myth.',
+    'So any claim of a LIVE-to-FYP boost is a myth until TikTok says otherwise.',
   ),
   paragraph('p-fyp-4', 'LIVE is a creator format.'),
   paragraph(
@@ -761,11 +761,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-by-1',
-    'This needs careful wording.',
+    'No.',
   ),
   paragraph(
     'p-by-2',
-    'Changing a follower count through a third-party service should not be presented as a guaranteed way to unlock TikTok LIVE.',
+    'Changing a follower count through a third-party service is not a guaranteed way to unlock TikTok LIVE.',
   ),
   paragraph(
     'p-by-3',
@@ -778,13 +778,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-by-5',
-    'TikTok also has rules against artificial or fake engagement, so third-party engagement carries platform-policy risk and should not be presented as TikTok-approved or risk-free.',
+    'TikTok also has rules against artificial or fake engagement, so third-party engagement carries platform-policy risk and is neither TikTok-approved nor risk-free.',
   ),
   paragraph(
     'p-by-6',
-    'Therefore this article should never claim that buying followers unlocks LIVE, that LIVE is enabled after purchase, or that TikTok approves purchased followers for eligibility.',
+    'So buying followers does not unlock LIVE, LIVE is not switched on after a purchase, and TikTok does not accept purchased followers as part of its eligibility checks.',
   ),
-  paragraph('p-by-7', 'Those would be unsupported.'),
+  paragraph('p-by-7', 'TikTok makes the LIVE decision, not the follower count alone.'),
 
   heading(
     'h-service',
@@ -793,7 +793,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-1',
-    'If someone is comparing TikTok follower options, TikTok followers should be understood as a follower-count service, not a LIVE-unlock method.',
+    'If you are comparing options for TikTok followers, a follower service changes the follower count. It is not a LIVE-unlock method.',
     [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
@@ -833,7 +833,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-uf-3',
-    'But 1,000 should be treated as an audience milestone and common LIVE planning benchmark rather than a magical TikTok algorithm number.',
+    'But 1,000 is an audience milestone and a common LIVE planning benchmark, not a magic TikTok algorithm number.',
   ),
   paragraph('p-uf-4', 'Even at 1,000 followers:'),
   bullets('ul-uf', [
@@ -914,7 +914,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-su-4',
-    'Do not tell readers to submit fake messages such as “I previously had LIVE and it disappeared” when that is not true.',
+    'Do not send support false messages such as “I previously had LIVE and it disappeared” when that is not true.',
   ),
   paragraph(
     'p-su-5',
@@ -926,7 +926,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
 
   heading('h-vpn', 'Can a VPN Unlock TikTok LIVE?', 2),
-  paragraph('p-vpn-1', 'Do not recommend it.'),
+  paragraph('p-vpn-1', 'No, and it is not worth trying.'),
   paragraph(
     'p-vpn-2',
     'TikTok explicitly uses local eligibility concepts for LIVE. (TikTok Support)',
@@ -965,7 +965,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bd-4',
-    'Do not advise users to pretend to be older.',
+    "Pretending to be older breaks TikTok's rules and puts the account at risk.",
   ),
 
   heading(
@@ -998,7 +998,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rl-1',
-    'LIVE access should not be treated as permanently guaranteed simply because an account once qualified.',
+    'LIVE access is not permanently guaranteed just because an account once qualified.',
   ),
   paragraph(
     'p-rl-2',
@@ -1007,11 +1007,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rl-3',
-    'If an account violates TikTok rules or otherwise becomes ineligible for a feature, follower count alone should not be assumed to protect LIVE access.',
+    'If an account breaks TikTok rules or otherwise becomes ineligible for a feature, its follower count alone will not protect LIVE access.',
   ),
   paragraph(
     'p-rl-4',
-    'Therefore “once you unlock LIVE, TikTok can never take it away” should not appear as a promise.',
+    'So “once you unlock LIVE, TikTok can never take it away” is not true.',
   ),
 
   heading(
@@ -1021,11 +1021,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dl-1',
-    "TikTok's public documentation does not give us enough detail to promise exactly what will happen to every account if its follower count later drops below its local LIVE threshold.",
+    "TikTok's public documentation does not say exactly what happens to every account if its follower count later drops below its local LIVE threshold.",
   ),
   paragraph(
     'p-dl-2',
-    'So avoid writing that LIVE disappears instantly if you drop below 1,000, or that once unlocked you keep LIVE forever.',
+    'So be wary of anyone who says LIVE disappears instantly if you drop below 1,000, or that once unlocked you keep LIVE forever.',
   ),
   paragraph('p-dl-3', 'Both are too absolute.'),
   paragraph(
@@ -1054,7 +1054,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-db-6',
-    'A later Learn guide on why TikTok followers drop will cover those causes in more depth.',
+    'Our guide on why TikTok followers drop covers those causes in more depth.',
+    [
+      {
+        href: '/learn/why-tiktok-followers-drop',
+        label: 'why TikTok followers drop',
+      },
+    ],
   ),
 
   heading(
@@ -1142,7 +1148,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ev-4',
-    'This is also why our copy should avoid saying TikTok LIVE requires exactly one follower number in every country.',
+    'So no single follower number applies to TikTok LIVE in every country.',
   ),
 
   heading(
@@ -1267,7 +1273,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-an-5',
-    'So do not treat 999 as universally impossible and 1,000 as guaranteed LIVE.',
+    'So 999 is not universally impossible, and 1,000 is not guaranteed LIVE.',
   ),
   paragraph(
     'p-an-6',
@@ -1278,13 +1284,13 @@ const BLOCKS: ArticleContentBlock[] = [
   bullets('ul-takeaways', [
     'TikTok currently requires creators to be at least 18 years old to host a LIVE.',
     'TikTok uses a local minimum-follower threshold for LIVE rather than presenting one guaranteed global number.',
-    '1,000 followers remains a commonly used practical benchmark, but it should not be described as an automatic worldwide unlock.',
+    '1,000 followers remains a commonly used practical benchmark, but it is not an automatic worldwide unlock.',
     "Only creators who meet TikTok's LIVE eligibility requirements can go LIVE.",
     'TikTok may ask creators to confirm their age before granting LIVE access.',
     'Restricted Mode prevents users from going LIVE.',
     'LIVE Gifts and other monetization features have additional requirements separate from normal LIVE access.',
-    'Creator Rewards requirements should not be confused with TikTok LIVE requirements.',
-    'A third-party follower service should never be represented as guaranteed TikTok LIVE access.',
+    'Creator Rewards requirements are separate from TikTok LIVE requirements.',
+    'A third-party follower service does not guarantee TikTok LIVE access.',
   ]),
 ];
 
@@ -1407,7 +1413,7 @@ export const HOW_MANY_FOLLOWERS_TO_GO_LIVE_ON_TIKTOK_ARTICLE: LearnArticleRecord
       id: 'faq-6',
       question: 'Can buying followers guarantee TikTok LIVE access?',
       answer:
-        'No. TikTok controls LIVE eligibility, and follower count is only one part of the requirements. A follower service should not be represented as a guaranteed LIVE-unlock method.',
+        'No. TikTok controls LIVE eligibility, and follower count is only one part of the requirements. A follower service is not a guaranteed way to unlock LIVE.',
       schemaEligible: true,
     },
     {

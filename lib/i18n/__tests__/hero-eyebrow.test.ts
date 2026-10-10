@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { EXPECTED_LIVE_LEARN_ARTICLE_COUNT } from '@/lib/__tests__/fixtures/learn-corpus';
 
 import { getPublishedLearnArticleRecords } from '@/data/learn/articles';
 import { CORE_SERVICE_SLUGS, LOCALES, type LocalizedLocale } from '@/lib/i18n/config';
@@ -107,7 +108,7 @@ describe('hero eyebrow / H1 system', () => {
 
   it('leaves published Learn article titles untouched', () => {
     const before = getPublishedLearnArticleRecords().map((a) => a.title);
-    expect(before).toHaveLength(26);
+    expect(before).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
     expect(before).toContain('TikTok SEO in 2026: How to Rank Videos in TikTok Search');
     expect(before).toContain('How the Instagram Algorithm Works in 2026: Feed, Reels, Explore & Stories');
   });

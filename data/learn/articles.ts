@@ -37,6 +37,10 @@ import { CHECK_INSTAGRAM_FOLLOWER_COUNT_WITHOUT_LOGIN_ARTICLE } from '@/data/lea
 import { HOW_TO_DOWNLOAD_FACEBOOK_REEL_ARTICLE } from '@/data/learn/articles/how-to-download-facebook-reel';
 import { TIKTOK_LIKES_VS_VIEWS_ARTICLE } from '@/data/learn/articles/tiktok-likes-vs-views';
 import { VIEW_INSTAGRAM_PROFILE_WITHOUT_LOGIN_ARTICLE } from '@/data/learn/articles/view-instagram-profile-without-login';
+import { WHY_DOES_MY_TIKTOK_HAVE_0_VIEWS_ARTICLE } from '@/data/learn/articles/why-does-my-tiktok-have-0-views';
+import { HOW_TO_RESET_TIKTOK_FYP_ARTICLE } from '@/data/learn/articles/how-to-reset-tiktok-fyp';
+import { HOW_MANY_FOLLOWERS_TO_MAKE_MONEY_ON_TIKTOK_ARTICLE } from '@/data/learn/articles/how-many-followers-to-make-money-on-tiktok';
+import { HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE } from '@/data/learn/articles/how-to-get-more-views-on-tiktok';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import type { LearnArticleRecord } from '@/types/learn';
 
@@ -67,6 +71,10 @@ export const LEARN_ARTICLES: readonly LearnArticleRecord[] = [
   HOW_TO_DOWNLOAD_FACEBOOK_REEL_ARTICLE,
   TIKTOK_LIKES_VS_VIEWS_ARTICLE,
   VIEW_INSTAGRAM_PROFILE_WITHOUT_LOGIN_ARTICLE,
+  WHY_DOES_MY_TIKTOK_HAVE_0_VIEWS_ARTICLE,
+  HOW_TO_RESET_TIKTOK_FYP_ARTICLE,
+  HOW_MANY_FOLLOWERS_TO_MAKE_MONEY_ON_TIKTOK_ARTICLE,
+  HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE,
 ];
 
 export function getAllLearnArticleRecords(): LearnArticleRecord[] {
