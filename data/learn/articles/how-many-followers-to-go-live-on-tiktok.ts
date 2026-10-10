@@ -16,6 +16,8 @@ const SLUG = 'how-many-followers-to-go-live-on-tiktok';
 const SCHEDULED_AT = '2026-10-05T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision (batches 24–25): internal writing notes rewritten for readers. */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TT_WHAT_IS_LIVE =
@@ -1334,8 +1336,8 @@ export const HOW_MANY_FOLLOWERS_TO_GO_LIVE_ON_TIKTOK_ARTICLE: LearnArticleRecord
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'How Many Followers Do You Need to Go LIVE on TikTok?',
     description:

@@ -16,6 +16,8 @@ const SLUG = 'why-tiktok-followers-drop';
 const SCHEDULED_AT = '2026-10-12T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision (batches 24–25): internal writing notes rewritten for readers. */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TT_FOLLOW_UNFOLLOW =
@@ -1687,8 +1689,8 @@ export const WHY_TIKTOK_FOLLOWERS_DROP_ARTICLE: LearnArticleRecord = {
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'Why Do TikTok Followers Drop? Common Causes Explained',
     description:

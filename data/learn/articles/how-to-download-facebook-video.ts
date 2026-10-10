@@ -16,6 +16,8 @@ const SLUG = 'how-to-download-facebook-video';
 const SCHEDULED_AT = '2026-10-09T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision (batches 24–25): internal writing notes rewritten for readers. */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 const TOOL_HREF = '/tools/facebook-video-downloader';
 const REELS_TOOL_HREF = '/tools/facebook-reels-downloader';
@@ -1355,8 +1357,8 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_VIDEO_ARTICLE: LearnArticleRecord = {
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'How to Download a Public Facebook Video',
     description:

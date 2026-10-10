@@ -1,6 +1,6 @@
 /**
  * Article #25 — TikTok Likes vs Views: Which Matters and What Is a Good Ratio?
- * Scheduled: Monday 19 October 2026.
+ * Scheduled: Monday 19 October 2026. Revised 10 October 2026.
  * Informational metrics-comparison. Supports TikTok Likes and Views pages only.
  */
 
@@ -15,22 +15,14 @@ const SLUG = 'tiktok-likes-vs-views';
 const SCHEDULED_AT = '2026-10-19T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision and like-to-view ratio rewrite (batches 23 and 27). */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TIKTOK_RECOMMENDS =
   'https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content';
-const TIKTOK_CREATOR_TOOLS =
-  'https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok';
-const TIKTOK_GROW_AUDIENCE =
-  'https://support.tiktok.com/en/using-tiktok/growing-your-audience/how-to-grow-your-audience';
-const TIKTOK_STUDIO =
-  'https://support.tiktok.com/en/using-tiktok/creating-videos/tiktok-studio';
-const TIKTOK_SEARCH_INSIGHTS =
-  'https://support.tiktok.com/en/using-tiktok/growing-your-audience/creator-search-insights';
 const TIKTOK_REWARDS_HOW =
   'https://support.tiktok.com/en/business-and-creator/creator-rewards-program/how-rewards-work';
-const TIKTOK_COMMENT_INSIGHTS =
-  'https://support.tiktok.com/en/using-tiktok/growing-your-audience/comment-insights-on-tiktok';
 const TIKTOK_REWARDS_PROGRAM =
   'https://support.tiktok.com/en/business-and-creator/creator-rewards-program/creator-rewards-program';
 
@@ -104,11 +96,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'The first video received more viewing activity. The second received more Likes. Those are different outcomes.',
   ),
   paragraph(
-    'p-open-5',
-    "TikTok's own creator tools separate post-performance and engagement information rather than reducing performance to one public number. TikTok Studio is specifically designed to help creators review content performance and audience insights. (TikTok Support)",
-    [{ href: TIKTOK_CREATOR_TOOLS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
     'p-open-6',
     'So the useful question is not whether Likes are better than Views. It is: what question does each metric answer?',
   ),
@@ -142,21 +129,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'Did Search or recommendation create more visibility?',
   ]),
   paragraph(
-    'p-vw-4',
-    'TikTok Studio provides post-performance analytics, while Creator Search Insights can separately show how posts perform in TikTok Search. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-vw-5',
-    'But a public view number has clear limits.',
-  ),
-  paragraph(
     'p-vw-6',
     'Views do not automatically tell you how many viewers liked the post, how many followed, how many bought something, how many watched the entire video, or how many were unique people.',
-  ),
-  paragraph(
-    'p-vw-7',
-    'That is why views should be treated as one layer of performance.',
   ),
 
   heading('h-likes', 'What Does a TikTok Like Measure?', 2),
@@ -174,16 +148,8 @@ const BLOCKS: ArticleContentBlock[] = [
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-lk-4',
-    'A Like can therefore help answer how many people chose to express that specific positive interaction.',
-  ),
-  paragraph(
     'p-lk-5',
     'But it does not automatically tell you how long they watched, whether they followed, whether they shared, whether they visited your profile, or whether they purchased anything.',
-  ),
-  paragraph(
-    'p-lk-6',
-    'Someone can Like a video after two seconds, most of the video, or after watching the full video. The public Like count alone does not explain the entire viewing behaviour.',
   ),
   figure(
     'fig-compare',
@@ -200,33 +166,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-wh-1',
     'Neither is universally more important. It depends on your objective.',
-  ),
-  heading('h-wh-vis', 'Visibility', 3),
-  paragraph(
-    'p-wh-2',
-    'Views are more directly related to that question.',
-  ),
-  heading('h-wh-int', 'Like Interaction', 3),
-  paragraph(
-    'p-wh-3',
-    'Likes are more directly related.',
-  ),
-  heading('h-wh-growth', 'Audience Growth', 3),
-  paragraph(
-    'p-wh-4',
-    'Neither alone is enough. You should also inspect followers, profile interest, comments and related content performance.',
-  ),
-  heading('h-wh-search', 'Search Visibility', 3),
-  paragraph(
-    'p-wh-5',
-    'TikTok Creator Search Insights provides dedicated Search analytics, making Search performance more useful than simply looking at Likes alone. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-wh-money', 'Monetization', 3),
-  paragraph(
-    'p-wh-6',
-    "It depends on the program. For example, TikTok's Creator Rewards uses its own qualified views rules rather than treating ordinary public Likes as the primary payment unit. (TikTok Support)",
-    [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-wh-7',
@@ -274,15 +213,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-mv-4',
     'This does not automatically mean something is wrong.',
   ),
-  paragraph(
-    "p-mv-5",
-    "TikTok's recommendation system can use multiple forms of user interaction and content information, not one fixed Likes-to-Views formula. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-mv-6',
-    'A high-view, lower-Like post can still be useful, search-driven, informational or widely discovered.',
-  ),
 
   heading(
     'h-few-views',
@@ -294,22 +224,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-fv-2',
     'A smaller audience may interact strongly with a post.',
   ),
-  paragraph(
-    'p-fv-3',
-    'These are illustrative numbers only: Video A with 100,000 views and 2,000 Likes, versus Video B with 10,000 views and 2,500 Likes.',
-  ),
-  paragraph(
-    'p-fv-4',
-    'Video A generated greater viewing volume. Video B generated more Likes despite fewer views.',
-  ),
-  paragraph(
-    'p-fv-5',
-    'That tells you they performed differently. It does not automatically prove Video B was better overall.',
-  ),
-  paragraph(
-    'p-fv-6',
-    'Maybe Video A also generated more followers, more shares, more Search traffic or more profile visits. You need more context.',
-  ),
 
   heading('h-ratio', 'Is Like-to-View Ratio Important?', 2),
   paragraph(
@@ -319,14 +233,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-rt-2',
     'But it is not a TikTok success score.',
-  ),
-  paragraph(
-    'p-rt-3',
-    'Suppose 2,000 Likes divided by 100,000 Views equals 2%. That simply describes the relationship between those two displayed metrics.',
-  ),
-  paragraph(
-    'p-rt-4',
-    'It does not prove the video is good or bad, TikTok will push it, the account will grow, or the content will go viral.',
   ),
   paragraph(
     'p-rt-5',
@@ -342,11 +248,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-gr-2',
     'Figures you see online, such as 10% is good or under 3% means the video failed, come from third-party samples rather than from TikTok. Treat them as rough context, not as a rule.',
-  ),
-  paragraph(
-    'p-gr-3',
-    "TikTok's official recommendation documentation does not reduce ranking to one Like percentage. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-gr-4',
@@ -378,18 +279,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-or-1',
     'A person normally needs an opportunity to encounter or watch the content before they can Like it.',
   ),
-  paragraph(
-    'p-or-2',
-    'So conceptually, discovery can lead to a view, which can then lead to a possible Like.',
-  ),
-  paragraph(
-    'p-or-3',
-    'But that does not mean every 100 views must produce a fixed number of Likes.',
-  ),
-  paragraph(
-    'p-or-4',
-    'Viewers can watch and scroll, watch and share, watch and comment, watch and follow, watch repeatedly, or do nothing. A Like is only one possible next action.',
-  ),
   figure(
     'fig-actions',
     `${IMAGE_DIR}/view-actions.png`,
@@ -407,16 +296,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'Not automatically.',
   ),
   paragraph(
-    'p-mo-2',
-    'More views create more opportunities for people to Like the content.',
-  ),
-  paragraph(
     'p-mo-3',
-    'But audience response depends on who sees it, what the content says, how relevant it is, what the viewer wants, and whether the post gives them a reason to interact.',
-  ),
-  paragraph(
-    'p-mo-4',
-    'A video can therefore increase from 10,000 views to 100,000 views without its Like rate remaining constant.',
+    'More views create more chances for a Like, but the response depends on who sees the video, how relevant it is to them and whether it gives them a reason to interact.',
   ),
   paragraph(
     'p-mo-5',
@@ -438,14 +319,6 @@ const BLOCKS: ArticleContentBlock[] = [
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-ml-3',
-    'That means Likes can be one input in personalized recommendation systems.',
-  ),
-  paragraph(
-    'p-ml-4',
-    'But TikTok does not publish a rule that 100 Likes equal another 1,000 views, or that 1,000 Likes unlocks another For You feed tier.',
-  ),
-  paragraph(
     'p-ml-5',
     "In short, Likes can be part of TikTok's interaction signals, but they do not guarantee extra reach.",
   ),
@@ -457,62 +330,8 @@ const BLOCKS: ArticleContentBlock[] = [
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-fl-2',
-    'For many users, TikTok says interaction signals can carry substantial weight in recommendation ranking. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-fl-3',
-    'But the exact recommendation result remains personalized.',
-  ),
-  paragraph(
     'p-fl-4',
     'So Likes do not control the For You feed on their own. They are one of several interaction signals TikTok can use when personalizing content.',
-  ),
-
-  heading('h-fyp-views', 'Do Views Matter for the For You Feed?', 2),
-  paragraph(
-    'p-fvw-1',
-    'Video-view information can also be part of content and interaction signals in TikTok recommendation systems.',
-  ),
-  paragraph(
-    'p-fvw-2',
-    "TikTok's recommendation documentation includes watch behaviour, whether content was watched fully or skipped, video view counts in certain recommendation contexts, and other interaction and content information. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-fvw-3',
-    "Again, views are not a single universal ranking switch. TikTok's system combines multiple signals.",
-  ),
-
-  heading('h-watch', 'Watch Time vs Views vs Likes', 2),
-  paragraph(
-    'p-wa-1',
-    'These metrics answer three different questions.',
-  ),
-  heading('h-wa-views', 'Views', 3),
-  paragraph(
-    'p-wa-2',
-    'Was the content watched or displayed enough to register viewing activity?',
-  ),
-  heading('h-wa-time', 'Watch Time', 3),
-  paragraph(
-    'p-wa-3',
-    'How much time did people spend watching?',
-  ),
-  heading('h-wa-likes', 'Likes', 3),
-  paragraph(
-    'p-wa-4',
-    'How many people used the Like interaction?',
-  ),
-  paragraph(
-    'p-wa-5',
-    "TikTok's recommendation documentation specifically refers to watch time and completion or skipping behaviour among user-interaction signals. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-wa-6',
-    'That is why a serious creator should not judge content from Likes only or Views only.',
   ),
 
   heading(
@@ -525,50 +344,15 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok does not publish a universal formula saying watch time equals 70%, Likes equal 20% and comments equal 10%.',
   ),
   paragraph(
-    'p-wl-2',
-    'Any percentage split you see online is a guess, not a TikTok figure.',
-  ),
-  paragraph(
     'p-wl-3',
     'TikTok does say that for many recommendation contexts, user interactions such as watch time, full watches, skips, Likes and comments can influence ranking, and certain interaction signals may generally weigh more heavily than other categories. (TikTok Support)',
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-wl-4',
-    'The exact importance depends on the recommendation surface, the user, the content and context. Your own Analytics will tell you more than any made-up scoring system.',
-  ),
-
-  heading('h-new', 'Likes vs Views for a New TikTok Account', 2),
-  paragraph(
-    'p-nw-1',
-    'For a new account, views tell you whether posts are receiving viewing activity. Likes help you see whether some viewers choose to interact.',
-  ),
-  paragraph(
-    'p-nw-2',
-    'But also watch comments, shares, followers and which topics repeatedly perform.',
-  ),
-  paragraph(
-    'p-nw-3',
-    'TikTok itself recommends creators review Analytics to identify top posts and audience engagement. (TikTok Support)',
-    [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-nw-4',
-    'Your early goal should be to learn what content attracts the intended audience, not to maximize one metric at all costs.',
   ),
 
   heading('h-growth', 'Likes vs Views for TikTok Growth', 2),
   paragraph(
     'p-go-1',
     'If your goal is follower growth, neither Likes nor Views is enough.',
-  ),
-  paragraph(
-    'p-go-2',
-    'Think of the journey: a view, then a possible Like, then a possible profile visit, then a possible follow.',
-  ),
-  paragraph(
-    'p-go-3',
-    'A video could receive huge views, lots of Likes and very few followers.',
   ),
   paragraph(
     'p-go-4',
@@ -587,18 +371,9 @@ const BLOCKS: ArticleContentBlock[] = [
 
   heading('h-search', 'Likes vs Views for TikTok Search', 2),
   paragraph(
-    'p-se-1',
-    'Search has its own logic.',
-  ),
-  paragraph(
     'p-se-2',
     "TikTok's current Search recommendation documentation says Search results can be influenced by how well content matches the query, hashtags, sounds, past user search behaviour and other user or content information. For many users, TikTok says content information — including how well content matches the search term — generally weighs heavily in Search. (TikTok Support)",
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-se-3',
-    'TikTok also provides Creator Search Insights where creators can review Search analytics. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-se-4',
@@ -606,43 +381,10 @@ const BLOCKS: ArticleContentBlock[] = [
     [{ href: '/learn/tiktok-seo', label: 'TikTok SEO' }],
   ),
 
-  heading(
-    'h-search-few',
-    'Can a Video Rank in TikTok Search With Few Likes?',
-    2,
-  ),
-  paragraph('p-sf-1', 'Potentially.'),
-  paragraph(
-    'p-sf-2',
-    'TikTok explicitly says Search ranking considers content relevance to the query, alongside other signals. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sf-3',
-    'Therefore a relevant video with a modest Like count can still have Search value.',
-  ),
-  paragraph(
-    'p-sf-4',
-    'You do not need a set number of Likes, such as 10,000, before TikTok Search will show a video. There is no official rule like that.',
-  ),
-
   heading('h-rewards', 'Likes vs Views for Creator Rewards', 2),
-  paragraph(
-    'p-rw-1',
-    'This is where mixing up metrics can cost you.',
-  ),
   paragraph(
     'p-rw-2',
     "TikTok's Creator Rewards Program uses qualified views and separate eligibility and reward rules. (TikTok Support)",
-    [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rw-3',
-    'That means public Likes are not the same thing as qualified Reward views.',
-  ),
-  paragraph(
-    'p-rw-4',
-    "TikTok's Rewards dashboard also provides qualified-view, video-engagement and reward information separately. (TikTok Support)",
     [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
   ),
   paragraph(
@@ -658,50 +400,6 @@ const BLOCKS: ArticleContentBlock[] = [
         label: 'how TikTok video views are counted',
       },
     ],
-  ),
-
-  heading('h-earn', 'Do Likes Earn Money on TikTok?', 2),
-  paragraph(
-    'p-er-1',
-    'Not directly. TikTok does not pay a set amount per Like.',
-  ),
-  paragraph(
-    'p-er-2',
-    "TikTok's Creator Rewards Program is based around qualifying content and qualified views or reward calculations rather than a simple cash-per-Like formula. (TikTok Support)",
-    [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-er-3',
-    'Likes can still be useful as engagement information. They simply are not equivalent to cash per heart.',
-  ),
-
-  heading('h-pay-view', 'Does TikTok Pay Per View?', 2),
-  paragraph(
-    'p-pv-1',
-    'Not for every view.',
-  ),
-  paragraph(
-    'p-pv-2',
-    "TikTok's Creator Rewards Program uses qualified views and its own reward formula, not every ordinary public view indiscriminately. (TikTok Support)",
-    [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-pv-3',
-    'So not every TikTok view earns money. A public view count and a monetization-qualified view are different metrics.',
-  ),
-
-  heading('h-brands', 'Likes vs Views for Brand Deals', 2),
-  paragraph(
-    'p-br-1',
-    'A brand evaluating a creator might care about more than either single number.',
-  ),
-  paragraph(
-    'p-br-2',
-    'Possible considerations include audience fit, content quality, views, engagement, follower audience, brand relevance and consistency.',
-  ),
-  paragraph(
-    'p-br-3',
-    "TikTok runs its own creator marketplace separately from the public counters, so a creator's value is more than Likes over Views or Views over Likes. For a brand partnership, context matters.",
   ),
 
   heading(
@@ -721,86 +419,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-ed-3',
     'That does not automatically make the video weak. If it performs in Search and answers the query well, the content may still be fulfilling its purpose.',
   ),
-  paragraph(
-    'p-ed-4',
-    'TikTok Creator Search Insights gives creators dedicated Search analytics for assessing posts in Search results. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-
-  heading(
-    'h-ent',
-    'Why Entertainment Videos May Get More Likes',
-    2,
-  ),
-  paragraph(
-    'p-en-1',
-    'Entertainment often creates an immediate emotional response.',
-  ),
-  paragraph(
-    'p-en-2',
-    'People may Like because something is funny, relatable, surprising, impressive or emotionally resonant.',
-  ),
-  paragraph(
-    'p-en-3',
-    'But that does not mean entertainment is automatically better content. A tutorial, product explanation or niche business video may have a different objective.',
-  ),
-  paragraph(
-    'p-en-4',
-    'Compare content according to what it is supposed to accomplish.',
-  ),
-
-  heading('h-ask', 'Should You Ask People to Like Your TikTok?', 2),
-  paragraph(
-    'p-ak-1',
-    'A relevant call to action can be fine. Example: if this explanation helped, you can save or Like it.',
-  ),
-  paragraph(
-    'p-ak-2',
-    'But do not make the entire content strategy a demand to Like now, double tap or spam the Like button without giving the audience value first.',
-  ),
-  paragraph(
-    'p-ak-3',
-    'The best reason for someone to Like is that they genuinely liked the content. Your content should earn the interaction.',
-  ),
-
-  heading(
-    'h-prefs',
-    'Can Likes Help TikTok Understand User Preferences?',
-    2,
-  ),
-  paragraph('p-pr-1', 'Yes.'),
-  paragraph(
-    'p-pr-2',
-    'TikTok explicitly says recommendation preferences can be informed by interactions such as liking posts and following accounts. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-pr-3',
-    'This is about personalization. If a viewer repeatedly Likes a particular type of content, that can help TikTok understand what may interest that viewer.',
-  ),
-  paragraph(
-    'p-pr-4',
-    'That is not the same as each Like giving the creator a guaranteed algorithm boost. Personalization is more nuanced than that.',
-  ),
-
-  heading('h-self', 'Does Liking Your Own TikTok Help?', 2),
-  paragraph(
-    'p-sl-1',
-    'Not in any meaningful way.',
-  ),
-  paragraph(
-    'p-sl-2',
-    'Even if an account interface allows interaction with its own content in some contexts, one self-generated Like would not constitute meaningful audience evidence.',
-  ),
-  paragraph(
-    'p-sl-3',
-    "TikTok's recommendation system is designed around understanding user and content interests across multiple signals. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sl-4',
-    'The useful goal is real viewer response, not manipulating one visible counter manually.',
-  ),
 
   heading('h-comments', 'Are Comments More Important Than Likes?', 2),
   paragraph(
@@ -808,37 +426,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok does not publish a universal hierarchy saying a comment is always more important than a Like for every video. Both are interactions.',
   ),
   paragraph(
-    'p-cm-2',
-    'TikTok lists Likes and comments among signals it can consider in recommendation contexts. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
     'p-cm-3',
     'Comments can provide something Likes cannot: actual language. They can reveal questions, confusion, opinions and future content ideas.',
-  ),
-  paragraph(
-    'p-cm-4',
-    "TikTok's Comment Insights feature can even summarize discussion topics, audience questions and suggestions. (TikTok Support)",
-    [{ href: TIKTOK_COMMENT_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-cm-5',
-    'So comments can be extremely useful strategically even if there are fewer of them.',
-  ),
-
-  heading('h-shares', 'Are Shares More Important Than Likes?', 2),
-  paragraph(
-    'p-sh-1',
-    'Again, no universal TikTok rule says one Share equals five Likes or any similar formula.',
-  ),
-  paragraph(
-    'p-sh-2',
-    'TikTok includes sharing among user interactions that can inform recommendation personalization. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sh-3',
-    'Strategically, a share tells you something different: someone thought the content was worth sending elsewhere. A Like tells you someone pressed Like. Both matter differently.',
   ),
 
   heading('h-followers', 'Are Followers More Important Than Likes?', 2),
@@ -851,11 +440,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'But follower count still does not guarantee views, Likes or For You feed reach.',
   ),
   paragraph(
-    'p-fo-3',
-    "TikTok's systems personalize content independently rather than distributing every post automatically to every follower. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
     'p-fo-4',
     'Our guide on TikTok followers vs likes vs views explains the three-way distinction.',
     [
@@ -864,57 +448,6 @@ const BLOCKS: ArticleContentBlock[] = [
         label: 'TikTok followers vs likes vs views',
       },
     ],
-  ),
-
-  heading('h-views-gt', 'Can TikTok Views Be Higher Than Followers?', 2),
-  paragraph('p-vg-1', 'Absolutely.'),
-  paragraph(
-    'p-vg-2',
-    "TikTok can recommend content beyond an account's existing followers through personalized discovery surfaces. TikTok's recommendation system is designed to help users discover content and creators based on their interests and interactions. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-vg-3',
-    'So an account with 1,000 followers can publish a video receiving far more than 1,000 views. Follower count is not a ceiling on views.',
-  ),
-
-  heading('h-likes-gt', 'Can TikTok Likes Be Higher Than Followers?', 2),
-  paragraph('p-lg-1', 'Yes.'),
-  paragraph(
-    'p-lg-2',
-    'A video can receive Likes from people who do not follow the creator.',
-  ),
-  paragraph(
-    'p-lg-3',
-    'TikTok recommends content to people based on personalized interests, so engagement does not need to come exclusively from followers. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-lg-4',
-    'Follower count and Like count should therefore not be expected to match.',
-  ),
-
-  heading(
-    'h-sync',
-    'Do TikTok Views and Likes Update at the Same Time?',
-    2,
-  ),
-  paragraph(
-    'p-sy-1',
-    'Not always.',
-  ),
-  paragraph(
-    'p-sy-2',
-    'Different metrics may update through platform systems at different times or appear differently across the public post interface, TikTok Studio, analytics surfaces and other TikTok interfaces.',
-  ),
-  paragraph(
-    'p-sy-3',
-    "TikTok Studio is the platform's dedicated environment for creator performance insights. (TikTok Support)",
-    [{ href: TIKTOK_STUDIO, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sy-4',
-    'If you notice temporary discrepancies, use the creator analytics rather than assuming fraud from one refresh.',
   ),
 
   heading(
@@ -936,36 +469,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'Was it strategically useful?',
   ]),
   paragraph(
-    'p-dl-3',
-    'TikTok recommends creators use Analytics to understand top-performing posts and audience engagement. (TikTok Support)',
-    [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
     'p-dl-4',
     'A lower Like-to-View ratio alone is not enough to justify deletion.',
-  ),
-
-  heading(
-    'h-repost',
-    'Should You Repost a TikTok Because It Got Few Views?',
-    2,
-  ),
-  paragraph(
-    'p-rp-1',
-    'Do not automatically delete and repost every underperforming video.',
-  ),
-  paragraph(
-    'p-rp-2',
-    'Instead investigate topic, opening, clarity, Search relevance, audience fit, watch behaviour and overall analytics.',
-  ),
-  paragraph(
-    'p-rp-3',
-    "TikTok's Creator Search Insights and TikTok Studio are more useful diagnostic tools than repeatedly resetting the post. (TikTok Support)",
-    [{ href: TIKTOK_STUDIO, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rp-4',
-    'Use failed posts as data.',
   ),
 
   heading('h-buy-likes', 'Can Bought Likes Increase Views?', 2),
@@ -995,10 +500,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-bv-1',
     'Same answer. More displayed views do not guarantee additional Likes.',
-  ),
-  paragraph(
-    'p-bv-2',
-    'A viewer must still choose whether to Like the content.',
   ),
   paragraph(
     'p-bv-3',
@@ -1052,10 +553,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-wb-4',
     'Neither one delivers the other. Bought Likes are not a reliable way to get organic views, and bought views do not bring Likes by themselves.',
   ),
-  paragraph(
-    'p-wb-5',
-    'Pick the service that matches the metric.',
-  ),
 
   heading(
     'h-both',
@@ -1067,26 +564,14 @@ const BLOCKS: ArticleContentBlock[] = [
     'You do not need both. It depends on which metric you want to change.',
   ),
   paragraph(
-    'p-bo-2',
-    'If you want views, use the Views service. If you want Likes, use the Likes service. If you want both, compare them separately.',
-  ),
-  paragraph(
     'p-bo-3',
     'Be wary of any seller who says every 1,000 views must have exactly 100 Likes and then offers Likes to fill that ratio.',
-  ),
-  paragraph(
-    'p-bo-4',
-    'There is no official TikTok ratio that every post must maintain.',
   ),
 
   heading(
     'h-ban',
     'Does an Unnatural Like-to-View Ratio Get You Banned?',
     2,
-  ),
-  paragraph(
-    'p-bn-1',
-    'There is no published number to check against.',
   ),
   paragraph(
     'p-bn-2',
@@ -1103,119 +588,10 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
 
   heading(
-    'h-guarantee',
-    'Can Likes or Views Guarantee TikTok Growth?',
-    2,
-  ),
-  paragraph('p-gu-1', 'No.'),
-  paragraph(
-    'p-gu-2',
-    'Follower growth is another outcome. A video can have high views, high Likes and little follower growth. Or moderate views, moderate Likes and strong follower acquisition.',
-  ),
-  paragraph(
-    'p-gu-3',
-    'That gap between viewing activity and account growth is the same issue covered in the views-but-no-followers guide.',
-  ),
-  paragraph(
-    'p-gu-4',
-    'TikTok itself recommends creators review multiple Analytics signals rather than relying on one metric. (TikTok Support)',
-    [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-gu-5',
-    'If the goal is specifically a first follower milestone, our organic guide on how to get your first 1,000 TikTok followers organically stays focused on audience-building rather than mixing Likes and Views into one growth formula.',
-    [
-      {
-        href: '/learn/how-to-get-1000-tiktok-followers',
-        label: 'how to get your first 1,000 TikTok followers organically',
-      },
-    ],
-  ),
-
-  heading('h-business', 'Which Metric Should a Business Care About?', 2),
-  paragraph(
-    'p-bu-1',
-    'For a business, public social metrics are only part of the picture.',
-  ),
-  paragraph(
-    'p-bu-2',
-    'Depending on the goal, you may also care about website visits, messages, leads, orders, appointments or conversions.',
-  ),
-  paragraph(
-    'p-bu-3',
-    'A TikTok with 100,000 views that creates zero relevant customer action may be less commercially useful than a smaller video watched by the exact target audience.',
-  ),
-  paragraph(
-    'p-bu-4',
-    'That does not make views useless. It means a business outcome is not the same as a public metric.',
-  ),
-
-  heading('h-creator', 'Which Metric Should a Creator Care About?', 2),
-  paragraph(
-    'p-cr-1',
-    'Creators should usually look at a combination.',
-  ),
-  bullets('ul-creator', [
-    'Views help identify discovery and visibility.',
-    'Likes help identify one type of interaction.',
-    'Comments can reveal discussion.',
-    'Shares can indicate content being passed along.',
-    'Followers can show ongoing audience connection.',
-    'Watch data can show viewing behaviour.',
-    'Search analytics can show Search performance.',
-  ]),
-  paragraph(
-    'p-cr-2',
-    'Creator Search Insights is the dedicated Search surface for that last item. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-cr-3',
-    'Your objective decides which gets the most attention.',
-  ),
-
-  heading('h-checklist', 'A Better TikTok Analytics Checklist', 2),
-  paragraph(
-    'p-ck-1',
-    'When reviewing a video, ask:',
-  ),
-  heading('h-ck-views', 'Views', 3),
-  paragraph('p-ck-2', 'How much viewing activity occurred?'),
-  heading('h-ck-likes', 'Likes', 3),
-  paragraph('p-ck-3', 'How many users pressed Like?'),
-  heading('h-ck-comments', 'Comments', 3),
-  paragraph(
-    'p-ck-4',
-    'What did people discuss or ask? TikTok Comment Insights can help identify common discussion topics and questions. (TikTok Support)',
-    [{ href: TIKTOK_COMMENT_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ck-shares', 'Shares', 3),
-  paragraph('p-ck-5', 'Did people send the content elsewhere?'),
-  heading('h-ck-followers', 'Followers', 3),
-  paragraph('p-ck-6', 'Did the video contribute to audience growth?'),
-  heading('h-ck-search', 'Search', 3),
-  paragraph(
-    'p-ck-7',
-    'Did it perform through Search? Creator Search Insights provides Search analytics. (TikTok Support)',
-    [{ href: TIKTOK_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ck-watch', 'Watch Behaviour', 3),
-  paragraph(
-    'p-ck-8',
-    'Did people keep watching or skip? TikTok includes watch behaviour among recommendation signals. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ck-9',
-    'This tells you much more than Likes divided by Views.',
-  ),
-
-  heading(
     'h-patterns',
     'A Simple Way to Read TikTok Likes and Views Together',
     2,
   ),
-  paragraph('p-pt-1', 'Consider four patterns.'),
   heading('h-pt-hh', 'High Views + High Likes', 3),
   paragraph(
     'p-pt-2',
@@ -1237,66 +613,14 @@ const BLOCKS: ArticleContentBlock[] = [
     'The video may need improvement, but do not diagnose it from those two metrics alone. Check Search, watch behaviour, comments, shares and audience context.',
   ),
 
-  heading('h-perfect', 'There Is No Perfect TikTok Metric', 2),
-  paragraph(
-    'p-pf-1',
-    'Views can look impressive. Likes can look impressive. Followers can look impressive. But every metric has limitations.',
-  ),
-  paragraph(
-    'p-pf-2',
-    "TikTok's own analytics ecosystem exists precisely because creators need more than one number to understand performance. TikTok Studio provides content-performance and audience insights, and TikTok recommends creators use Analytics when trying to grow. (TikTok Support)",
-    [{ href: TIKTOK_CREATOR_TOOLS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-pf-3',
-    'A strong creator asks what this content actually achieved, not which number looks biggest on the screenshot.',
-  ),
-
-  heading('h-simple', 'TikTok Likes vs Views in Simple Terms', 2),
-  paragraph('p-sm-1', 'Use this rule:'),
-  heading('h-sm-views', 'Views', 3),
-  paragraph(
-    'p-sm-2',
-    'Did people watch or encounter the video?',
-  ),
-  heading('h-sm-likes', 'Likes', 3),
-  paragraph(
-    'p-sm-3',
-    'Did people choose to Like it?',
-  ),
-  paragraph('p-sm-4', 'Then go deeper.'),
-  heading('h-sm-disc', 'Want More Discovery Context?', 3),
-  paragraph(
-    'p-sm-5',
-    'Look at views, Search and non-follower discovery patterns.',
-  ),
-  heading('h-sm-eng', 'Want More Engagement Context?', 3),
-  paragraph(
-    'p-sm-6',
-    'Look at Likes, comments, shares and watch behaviour.',
-  ),
-  heading('h-sm-grow', 'Want Growth Context?', 3),
-  paragraph(
-    'p-sm-7',
-    'Look at followers, profile activity and which topics repeatedly attract an audience.',
-  ),
-  paragraph(
-    'p-sm-8',
-    'No single metric explains everything.',
-  ),
-
   heading('h-takeaways', 'Key Takeaways', 2),
   bullets('ul-takeaways', [
-    'TikTok Views and Likes measure different outcomes.',
-    'Likes are a user-interaction signal TikTok can use when personalizing recommendations.',
-    'TikTok recommendation systems use multiple signals, including Likes, follows, comments, shares, watch behaviour, content information and user information.',
-    'TikTok does not publish a universal Likes-to-Views ratio that guarantees For You feed distribution.',
-    'Creator Search Insights provides separate Search analytics, so TikTok Search performance should not be judged from Likes alone.',
-    'TikTok recommends using creator Analytics to understand top-performing posts and audience engagement.',
-    'Creator Rewards uses qualified views and separate reward analytics; ordinary public Views and Likes should not be confused with monetization-qualified metrics.',
-    'More Views do not guarantee more Likes.',
-    'More Likes do not guarantee more Views, For You feed reach or followers.',
-    'A good like-to-view ratio is one above your own recent baseline, not a fixed internet number.',
+    'Views measure visibility; Likes measure one kind of interaction.',
+    'A like-to-view ratio is Likes divided by Views, multiplied by 100. TikTok publishes no good or bad number.',
+    'A good ratio is one above your own recent baseline, not a fixed internet figure.',
+    'TikTok recommendation systems use multiple signals, so neither metric controls the For You feed on its own.',
+    'More Views do not guarantee more Likes, and more Likes do not guarantee more Views or followers.',
+    'Creator Rewards uses qualified views, not public Likes.',
     'TikTok Like and View services change separate metrics; neither guarantees growth in the other.',
   ]),
 ];
@@ -1344,8 +668,8 @@ export const TIKTOK_LIKES_VS_VIEWS_ARTICLE: LearnArticleRecord = {
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'TikTok Likes vs Views: Like-to-View Ratio Explained',
     description:

@@ -8,6 +8,7 @@ import {
   EXPECTED_LIVE_LEARN_ARTICLE_COUNT,
   LAUNCH_LEARN_ARTICLE_COUNT,
   POST_LAUNCH_LEARN_SLUGS,
+  REVISED_LAUNCH_LEARN_ARTICLES,
 } from '@/lib/__tests__/fixtures/learn-corpus';
 
 import { LEARN_ARTICLES } from '@/data/learn/articles';
@@ -31,6 +32,10 @@ const NOW = new Date('2026-08-22T12:00:00.000Z');
  */
 const POST_LAUNCH_SLUGS = POST_LAUNCH_LEARN_SLUGS;
 
+/** Launch articles revised after launch; they carry a real modified date. */
+const REVISED_SLUGS = Object.keys(REVISED_LAUNCH_LEARN_ARTICLES);
+const isRevised = (slug: string) => REVISED_SLUGS.includes(slug);
+
 const PLANNED_SLUGS = [
   'facebook-page-likes-vs-followers',
   'how-to-save-tiktok-profile-picture-full-size',
@@ -43,6 +48,7 @@ describe('live Learn registry public publication dates', () => {
   const live = allLive.filter(
     (article) => !(POST_LAUNCH_SLUGS as readonly string[]).includes(article.slug),
   );
+  const unrevised = live.filter((article) => !isRevised(article.slug));
 
   beforeEach(() => {
     vi.useFakeTimers();
@@ -75,9 +81,16 @@ describe('live Learn registry public publication dates', () => {
         Date.parse(article.updatedAt),
         `${article.slug} updatedAt`,
       ).toBeGreaterThanOrEqual(Date.parse(article.publishedAt));
-      expect(Date.parse(article.updatedAt), article.slug).toBeLessThanOrEqual(
-        LAUNCH_MS,
-      );
+      if (isRevised(article.slug)) {
+        expect(article.updatedAt, article.slug).toBe(
+          REVISED_LAUNCH_LEARN_ARTICLES[article.slug],
+        );
+        expect(article.showModifiedDate, article.slug).toBe(true);
+      } else {
+        expect(Date.parse(article.updatedAt), article.slug).toBeLessThanOrEqual(
+          LAUNCH_MS,
+        );
+      }
     }
   });
 
@@ -96,7 +109,7 @@ describe('live Learn registry public publication dates', () => {
   });
 
   it('emits no future BlogPosting or Open Graph dates for live articles', () => {
-    for (const article of live) {
+    for (const article of unrevised) {
       const seo = toArticleSeoRecord(article);
       const schemas = buildArticleSchema(seo);
       const blog = schemas.find((item) => item['@type'] === 'BlogPosting') as
@@ -127,7 +140,7 @@ describe('live Learn registry public publication dates', () => {
       entries.map((entry) => [entry.url, entry] as const),
     );
 
-    for (const article of live) {
+    for (const article of unrevised) {
       const url = `https://novalikes.com/learn/${article.slug}`;
       const entry = byUrl.get(url);
       expect(entry, url).toBeTruthy();
@@ -163,6 +176,56 @@ describe('live Learn registry public publication dates', () => {
       '2026-10-28',
       '2026-10-30',
     ]);
+  });
+});
+
+describe('revised launch articles carry a truthful modified date', () => {
+  const revised = LEARN_ARTICLES.filter((article) => isRevised(article.slug));
+
+  it('lists only live launch articles', () => {
+    expect(revised.map((article) => article.slug).sort()).toEqual(
+      [...REVISED_SLUGS].sort(),
+    );
+    for (const article of revised) {
+      expect(isPublicLiveArticle(article), article.slug).toBe(true);
+      expect(article.publishedAt, article.slug).toBe(LAUNCH_ISO);
+    }
+  });
+
+  it('dates the revision after launch and never in the future', () => {
+    const now = Date.now();
+    for (const article of revised) {
+      const updated = Date.parse(article.updatedAt);
+      expect(updated, article.slug).toBeGreaterThan(LAUNCH_MS);
+      expect(updated, article.slug).toBeLessThanOrEqual(now);
+      expect(article.showModifiedDate, article.slug).toBe(true);
+    }
+  });
+
+  it('emits the revision date in schema, Open Graph and the sitemap', () => {
+    const entries = buildSitemapEntries();
+    for (const article of revised) {
+      const seo = toArticleSeoRecord(article);
+      const blog = buildArticleSchema(seo).find((item) => item['@type'] === 'BlogPosting') as
+        | Record<string, unknown>
+        | undefined;
+      expect(blog, article.slug).toBeTruthy();
+      expect(blog!.datePublished, article.slug).toBe(article.publishedAt);
+      expect(blog!.dateModified, article.slug).toBe(article.updatedAt);
+      const og = buildArticleOpenGraph(seo) as { publishedTime?: string; modifiedTime?: string };
+      expect(og.publishedTime, article.slug).toBe(article.publishedAt);
+      expect(og.modifiedTime, article.slug).toBe(article.updatedAt);
+
+      const url = `https://novalikes.com/learn/${article.slug}`;
+      const entry = entries.find((item) => item.url === url);
+      expect(entry, url).toBeTruthy();
+      const stamp =
+        entry!.lastModified instanceof Date
+          ? entry!.lastModified
+          : new Date(entry!.lastModified as string);
+      expect(stamp.getTime(), url).toBe(Date.parse(article.updatedAt));
+      expect(entries.some((item) => item.url.includes(`/es/learn/${article.slug}`))).toBe(false);
+    }
   });
 });
 

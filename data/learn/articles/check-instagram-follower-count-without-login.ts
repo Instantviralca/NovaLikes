@@ -16,6 +16,8 @@ const SLUG = 'check-instagram-follower-count-without-login';
 const SCHEDULED_AT = '2026-10-14T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision (batches 24–25): internal writing notes rewritten for readers. */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 const TOOL_HREF = '/tools/instagram-follower-counter';
 const PROFILE_VIEWER_HREF = '/tools/instagram-profile-viewer';
@@ -1436,8 +1438,8 @@ export const CHECK_INSTAGRAM_FOLLOWER_COUNT_WITHOUT_LOGIN_ARTICLE: LearnArticleR
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'Check Instagram Follower Count Without Logging In',
     description:

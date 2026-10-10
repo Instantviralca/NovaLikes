@@ -16,6 +16,8 @@ const SLUG = 'view-instagram-profile-picture-full-size';
 const SCHEDULED_AT = '2026-10-07T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Reader-copy revision (batches 24–25): internal writing notes rewritten for readers. */
+const REVISED_AT = '2026-10-10T20:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 const TOOL_HREF = '/tools/instagram-profile-picture-viewer';
 
@@ -1398,8 +1400,8 @@ export const VIEW_INSTAGRAM_PROFILE_PICTURE_FULL_SIZE_ARTICLE: LearnArticleRecor
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: REVISED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'How to View an Instagram Profile Picture in Full Size',
     description:
