@@ -580,16 +580,16 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-op-2',
-    'Instagram views should be understood as a playback-activity service.',
+    'Instagram views is a playback-activity service.',
     [{ href: '/buy-instagram-views', label: 'Instagram views' }],
   ),
   paragraph(
     'p-op-3',
-    'A view service should be represented as a view service.',
+    'A view service changes the view count, nothing more.',
   ),
   paragraph(
     'p-op-4',
-    'It should not be described as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-op', [
     'more followers,',
@@ -785,7 +785,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ch-6',
-    'If Instagram changes that definition later, this article should be updated rather than preserving an outdated explanation.',
+    'If Instagram changes that definition later, we will update this guide.',
   ),
 
   heading(
@@ -804,7 +804,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-who-3',
-    'So do not advertise ordinary Reel analytics as a tool for identifying every person who watched a Reel.',
+    'So ordinary Reel analytics cannot tell you every person who watched a Reel.',
   ),
   paragraph(
     'p-who-4',
@@ -863,11 +863,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bo-4',
-    'More importantly for NovaLikes:',
+    'The same applies to view services:',
   ),
   paragraph(
     'p-bo-5',
-    'do not present third-party Instagram view services as:',
+    'third-party Instagram view services are not:',
   ),
   bullets('ul-bo', [
     'Instagram advertising',
@@ -875,7 +875,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-bo-6',
-    'They are different products and should remain clearly separated.',
+    'They are different things.',
   ),
 
   heading(

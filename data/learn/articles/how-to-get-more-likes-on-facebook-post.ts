@@ -907,12 +907,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-4',
-    'If someone wants to compare that option, Facebook Post Likes should be understood as a Post Like metric service rather than an organic-content strategy.',
+    'If you want to compare that option, Facebook Post Likes is a Post Like metric service rather than an organic-content strategy.',
     [{ href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' }],
   ),
   paragraph(
     'p-svc-5',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-svc-not', [
     'increasing organic reach,',
@@ -940,7 +940,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ml-1',
-    'This needs careful wording.',
+    'Not in any guaranteed way.',
   ),
   paragraph(
     'p-ml-2',
@@ -969,7 +969,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Does Buying Facebook Post Likes Increase Organic Reach?',
     2,
   ),
-  paragraph('p-br-1', 'Do not promise that.'),
+  paragraph('p-br-1', 'No.'),
   paragraph(
     'p-br-2',
     'A paid third-party Like changes a visible Post Like metric.',
@@ -981,7 +981,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-br-4',
-    'So NovaLikes should never state that buying Post Likes will push the post, that purchased Likes trigger organic reach, or that more Likes guarantee Suggested For You placement.',
+    'So buying Post Likes does not push the post, purchased Likes do not trigger organic reach, and more Likes do not guarantee Suggested For You placement.',
   ),
   paragraph('p-br-5', 'Those are different outcomes.'),
 
@@ -1007,7 +1007,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-bst-4',
-    'Do not describe those as interchangeable.',
+    'They are not interchangeable.',
   ),
   paragraph(
     'p-bst-5',
@@ -1419,7 +1419,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Meta says engagement bait can result in less distribution, so avoid artificial “Like this now” tactics.',
     "Meta's Page-post guidance emphasizes clear messaging and clean, recognizable creative.",
     'Facebook does not publish a simple formula where a specific number of Likes guarantees a specific amount of additional reach. Its distribution systems consider multiple signals.',
-    'A third-party Post Like service should not be presented as a guaranteed method for increasing organic reach, followers, ranking or sales.',
+    'A third-party Post Like service is not a guaranteed method for increasing organic reach, followers, ranking or sales.',
   ]),
 ];
 
@@ -1540,7 +1540,7 @@ export const HOW_TO_GET_MORE_LIKES_ON_FACEBOOK_POST_ARTICLE: LearnArticleRecord 
         id: 'faq-6',
         question: 'Does buying Facebook Post Likes increase organic reach?',
         answer:
-          'No guaranteed relationship should be claimed. Facebook\'s distribution systems use multiple signals, and Meta does not publish a rule stating that purchasing a number of Likes creates a specific organic-reach increase.',
+          "Not in any guaranteed way. Facebook's distribution systems use multiple signals, and Meta does not publish a rule stating that purchasing a number of Likes creates a specific organic-reach increase.",
         schemaEligible: true,
       },
       {

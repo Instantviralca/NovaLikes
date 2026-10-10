@@ -325,7 +325,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ns-7',
-    'If you are comparing that older Page-connection option separately, Facebook Page Likes should be understood as a historical Page-connection metric, not as current follower Insights.',
+    'If you are comparing that older Page-connection option separately, Facebook Page Likes is a historical Page-connection metric, not current follower Insights.',
     [{ href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' }],
   ),
   figure(
@@ -373,7 +373,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fk-8',
-    'But do not claim that every follower drop is Facebook deleting bots.',
+    'But not every follower drop is Facebook deleting bots.',
   ),
   paragraph('p-fk-9', 'There is no basis for that.'),
 
@@ -501,7 +501,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-re-8',
-    'Keep the metrics separate until the evidence connects them.',
+    'Treat them as separate metrics until the evidence connects them.',
   ),
 
   heading(
@@ -782,7 +782,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-1',
-    'If someone is comparing Facebook Page follower options, Facebook followers should be understood as a follower-count service rather than a retention guarantee.',
+    'If you are comparing Facebook Page follower options, Facebook followers is a follower-count service, not a retention guarantee.',
     [{ href: '/buy-facebook-followers', label: 'Facebook followers' }],
   ),
   paragraph(
@@ -791,7 +791,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-3',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-svc-not', [
     'preventing future follower loss,',
@@ -880,9 +880,9 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pe-3',
-    'That means this article should not say Facebook approves purchased followers, followers are undetectable, there is zero platform risk, or Facebook can never take action.',
+    'So purchased followers are not Facebook-approved, not undetectable and not risk-free, and Facebook can take action.',
   ),
-  paragraph('p-pe-4', 'Those claims are too absolute.'),
+  paragraph('p-pe-4', 'Anyone who says otherwise is overpromising.'),
 
   heading(
     'h-inactive',
@@ -895,7 +895,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ia-2',
-    'So do not tell users that Facebook removes inactive Page followers after 30 days.',
+    'So Facebook does not remove inactive Page followers after 30 days.',
   ),
   paragraph(
     'p-ia-3',
@@ -911,7 +911,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Does Facebook Remove Followers if They Stop Engaging?',
     2,
   ),
-  paragraph('p-se-1', 'Do not claim that either.'),
+  paragraph('p-se-1', "No, not according to Meta's sources."),
   paragraph(
     'p-se-2',
     'Facebook allows people to unfollow Pages themselves. (Facebook)',

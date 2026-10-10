@@ -1,29 +1,24 @@
 import { describe, expect, it } from 'vitest';
 
-import { getPublishedLearnArticleBySlug } from '@/data/learn/articles';
+import {
+  getPublishedLearnArticleBySlug,
+  getPublishedLearnArticleSlugs,
+} from '@/data/learn/articles';
+import { EXPECTED_LIVE_LEARN_ARTICLE_COUNT } from '@/lib/__tests__/fixtures/learn-corpus';
 
 /**
- * Learn articles that have been cleaned of internal writing notes.
- * Add a slug here once its copy has been rewritten for readers.
+ * Every live Learn article must read as reader copy, with no internal
+ * writing notes such as "NovaLikes should" or "Do not promise".
  */
-const READER_COPY_SLUGS = [
-  'tiktok-likes-vs-views',
-  'view-instagram-profile-without-login',
-  'check-instagram-follower-count-without-login',
-  'how-to-download-facebook-video',
-  'how-to-download-facebook-reel',
-  'view-instagram-profile-picture-full-size',
-  'how-many-followers-to-go-live-on-tiktok',
-  'how-facebook-page-reach-works',
-  'why-tiktok-followers-drop',
-];
+const READER_COPY_SLUGS = getPublishedLearnArticleSlugs();
 
 const INTERNAL_NOTE_PATTERNS: RegExp[] = [
   /NovaLikes should/i,
   /\bthe customer\b/i,
   /\bupsell/i,
   /correct (safety )?language/i,
-  /should not be (presented|marketed|described|rewritten)/i,
+  /should not be (presented|marketed|described|rewritten|represented)/i,
+  /should be understood as a\b.{0,40}\b(service|metric)/i,
   /\bDo not (invent|promise|claim|advertise|market|add|introduce|imply|position|describe)\b/,
   /\b(the|a|this) tool should\b/i,
   /SEO copy|tool documentation|the article should|this article should/i,
@@ -32,6 +27,10 @@ const INTERNAL_NOTE_PATTERNS: RegExp[] = [
 ];
 
 describe('Learn reader copy', () => {
+  it('covers every live Learn article', () => {
+    expect(READER_COPY_SLUGS).toHaveLength(EXPECTED_LIVE_LEARN_ARTICLE_COUNT);
+  });
+
   it.each(READER_COPY_SLUGS)('%s has no internal writing notes', (slug) => {
     const article = getPublishedLearnArticleBySlug(slug);
     expect(article, slug).toBeTruthy();

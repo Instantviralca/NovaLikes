@@ -400,7 +400,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gr-2',
-    'But do not turn that into “Public accounts are guaranteed more views.”',
+    'But public accounts are not guaranteed more views.',
   ),
   paragraph(
     'p-gr-3',
@@ -427,7 +427,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gr-8',
-    'Follower count, likes and views are also separate metrics, so public status should not be treated as a substitute for understanding what each number actually measures.',
+    'Follower count, likes and views are also separate metrics, so public status is not a substitute for understanding TikTok followers, likes and views.',
     [
       {
         href: '/learn/tiktok-followers-vs-likes-vs-views',
@@ -456,11 +456,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fyp-4',
-    'It should not be described as “TikTok penalizes private accounts.”',
+    'It does not mean TikTok penalizes private accounts.',
   ),
   paragraph(
     'p-fyp-5',
-    'The user has chosen a more restrictive audience model.',
+    'The account owner has chosen a more restrictive audience.',
   ),
   paragraph('p-fyp-6', 'That is different from a penalty.'),
 
@@ -873,22 +873,22 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-2',
-    'If someone wants to compare follower packages, TikTok followers should be understood as a follower-count service for a public profile.',
+    'If you want to compare follower packages, TikTok followers is a follower-count service for a public profile.',
     [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-svc-3',
-    "But a follower service should not be presented as a reason to weaken someone's privacy preferences.",
+    'But a follower service is not a reason to weaken your privacy preferences.',
   ),
   paragraph(
     'p-svc-4',
-    'If the service requires a public profile for fulfillment, state that clearly.',
+    'The NovaLikes follower service needs a public profile to deliver followers.',
   ),
   paragraph(
     'p-svc-5',
-    'Do not tell users “Keep your account public because public accounts rank better.”',
+    'That does not mean public accounts rank better.',
   ),
-  paragraph('p-svc-6', 'Do not promise:'),
+  paragraph('p-svc-6', 'A follower service does not guarantee:'),
   bullets('ul-svc-not', [
     'FYP reach,',
     'search ranking,',
@@ -1125,7 +1125,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Public accounts allow broader content access and sharing depending on privacy settings.',
     'TikTok lets creators set visibility separately for individual posts whether the overall account is private or public.',
     'Other users can only Duet or Stitch your content when your account is public and the relevant reuse permissions allow it.',
-    'Making an account private should not be described as an algorithm penalty; it intentionally restricts audience access.',
+    'Making an account private is not an algorithm penalty; it intentionally restricts audience access.',
     'Making an account public does not guarantee FYP reach, followers, likes or views.',
   ]),
 ];

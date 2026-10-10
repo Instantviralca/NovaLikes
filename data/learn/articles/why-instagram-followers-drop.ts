@@ -485,7 +485,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-inc-12',
-    'It should not be presented as a secret follower-count rule.',
+    'It is not a secret follower-count rule.',
   ),
 
   heading(
@@ -586,7 +586,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-und-1',
-    'Follower count is an account-level metric. It should not be treated as a guaranteed predictor of likes, views, comments, reach or sales.',
+    'Follower count is an account-level metric. It is not a guaranteed predictor of likes, views, comments, reach or sales.',
   ),
   paragraph(
     'p-und-2',
@@ -600,12 +600,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-und-3',
-    "If you're comparing follower options, Instagram followers should be understood as a follower-count service.",
+    'If you are comparing follower options, Instagram followers is a follower-count service.',
     [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
   ),
   paragraph(
     'p-und-4',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-und-not', [
     "improving Instagram's algorithm,",
@@ -718,7 +718,7 @@ const BLOCKS: ArticleContentBlock[] = [
     '11. Third-Party Follower Apps Can Create Additional Risk',
     2,
   ),
-  paragraph('p-app-1', 'This needs careful handling.'),
+  paragraph('p-app-1', 'This is where the risks are real.'),
   paragraph(
     'p-app-2',
     'Instagram explicitly warns users about non-Instagram apps that offer likes and followers. Meta says accounts that continue using some of these apps may have parts of the account limited, and another official Help Center page warns that accounts using apps to gain likes or followers may be disabled or terminated. (Facebook)',
@@ -1156,7 +1156,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Instagram can identify potential spam followers and provides tools for removing them.',
     'Professional Instagram Insights can show follower growth, including followers gained and lost.',
     'A follower decline alone does not prove that Instagram has restricted an account. Account Status is the better place to check for actual platform issues.',
-    'Follower count should not be treated as a guarantee of views, likes, reach or sales.',
+    'Follower count is not a guarantee of views, likes, reach or sales.',
   ]),
 ];
 

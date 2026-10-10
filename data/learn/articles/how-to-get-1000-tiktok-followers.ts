@@ -242,7 +242,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mag-10',
-    'It should not be confused with a general ranking boost.',
+    'It is not a general ranking boost.',
   ),
 
   heading(
@@ -695,7 +695,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fn-4',
-    'Do not turn those hypothetical numbers into a universal conversion benchmark.',
+    'These are example numbers, not a universal conversion benchmark.',
   ),
   paragraph(
     'p-fn-5',
@@ -1237,12 +1237,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-4',
-    'If someone wants to compare the separate option, TikTok followers should be understood as a follower-count service rather than an organic-growth method.',
+    'If you want to compare the separate option, TikTok followers is a follower-count service rather than an organic-growth method.',
     [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-svc-5',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-svc-not', [
     'FYP reach,',
@@ -1277,15 +1277,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-buy-2',
-    'Keep those concepts separate.',
+    'They are separate things.',
   ),
   paragraph(
     'p-buy-3',
-    'TikTok also prohibits fake/artificial engagement, so third-party follower services can carry platform-policy risk and should never be described as TikTok-approved or zero-risk.',
+    'TikTok also prohibits fake/artificial engagement, so third-party follower services can carry platform-policy risk and are neither TikTok-approved nor zero-risk.',
   ),
   paragraph(
     'p-buy-4',
-    'Most importantly for this article: buying a visible follower number does not teach you which content attracts your audience, which topics convert viewers into followers, what people search for or why viewers stay.',
+    'Most importantly for organic growth: buying a visible follower number does not teach you which content attracts your audience, which topics convert viewers into followers, what people search for or why viewers stay.',
   ),
   paragraph(
     'p-buy-5',

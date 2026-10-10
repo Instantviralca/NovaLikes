@@ -71,7 +71,7 @@ describe('Article #4 TikTok SEO', () => {
       ),
     ).toBe(false);
     expect(article.content).toContain(
-      'not as a guaranteed method of',
+      'It is not a guaranteed method of',
     );
   });
 

@@ -855,7 +855,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-act-1',
     'There is no universal posting frequency that guarantees Facebook follower growth.',
   ),
-  paragraph('p-act-2', 'Do not invent one.'),
+  paragraph('p-act-2', 'Be wary of anyone who gives you one.'),
   paragraph('p-act-3', 'A Page does not automatically need:'),
   bullets('ul-act-not', [
     'three posts every day,',
@@ -998,12 +998,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vs-4',
-    'If you want to compare that separate option, Facebook followers should be understood as a follower-count service.',
+    'If you want to compare that separate option, Facebook followers is a follower-count service.',
     [{ href: '/buy-facebook-followers', label: 'Facebook followers' }],
   ),
   paragraph(
     'p-vs-5',
-    'It should not be represented as a replacement for organic content strategy or as a guaranteed method for increasing:',
+    'It is not a replacement for organic content strategy or a guaranteed method for increasing:',
   ),
   bullets('ul-vs-not', [
     'organic reach,',
@@ -1103,7 +1103,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-reels-4',
-    'Do not make “Reels always get more followers” a universal rule.',
+    'Reels do not always get more followers.',
   ),
 
   heading(

@@ -70,7 +70,7 @@ describe('Article #5 Instagram algorithm 2026', () => {
       ),
     ).toBe(false);
     expect(article.content).toContain(
-      'not be presented as guaranteed methods for manipulating Feed',
+      'None of them is a guaranteed way to manipulate Feed',
     );
   });
 

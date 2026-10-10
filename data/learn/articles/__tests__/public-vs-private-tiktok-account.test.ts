@@ -70,7 +70,7 @@ describe('Article #13 Public vs private TikTok accounts', () => {
       'name, username and profile photo remain visible',
     );
     expect(article.content).toContain(
-      'It should not be described as “TikTok penalizes private accounts.”',
+      'It does not mean TikTok penalizes private accounts.',
     );
     expect(article.content).not.toMatch(/shadowbanned/i);
     expect(

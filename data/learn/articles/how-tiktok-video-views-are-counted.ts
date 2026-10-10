@@ -257,7 +257,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rp-6',
-    'For the general public view count, keep the wording more careful unless TikTok provides a specific current definition.',
+    'For the general public view count, TikTok has not published the same detailed definition, so treat it more loosely.',
   ),
 
   heading('h-qualified', 'What Are TikTok Qualified Views?', 2),
@@ -381,14 +381,14 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-fv-5',
     'Those are different metrics.',
   ),
-  paragraph('p-fv-6', 'So the accurate statement is:'),
+  paragraph('p-fv-6', 'So what you can say is:'),
   paragraph(
     'p-fv-7',
     'Five seconds is a documented requirement for qualified Creator Rewards views.',
   ),
   paragraph(
     'p-fv-8',
-    'Do not turn it into a universal definition for every view counter on TikTok unless TikTok explicitly documents that separately.',
+    'It is not documented as a rule for every view counter on TikTok.',
   ),
 
   heading('h-paid', 'Do Paid TikTok Views Count?', 2),
@@ -419,7 +419,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tp-1',
-    'They should not be presented as a way to qualify for or increase Creator Rewards earnings.',
+    'They are not a way to qualify for or increase Creator Rewards earnings.',
   ),
   paragraph(
     'p-tp-2',
@@ -428,7 +428,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tp-3',
-    'Therefore NovaLikes should never promise:',
+    'So no view service can honestly promise:',
   ),
   bullets('ul-tp', [
     'Buy TikTok views to earn Creator Rewards',
@@ -438,7 +438,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-tp-4',
-    'A TikTok view service should be described only for the metric it provides.',
+    'A TikTok view service changes the view count, nothing more.',
   ),
 
   heading(
@@ -517,7 +517,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fl-2',
-    'But do not tell readers:',
+    'But it is not true that:',
   ),
   paragraph(
     'p-fl-3',
@@ -549,12 +549,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-op-2',
-    'TikTok views should be understood as a content-level viewing-activity service.',
+    'TikTok views is a content-level viewing-activity service.',
     [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
   ),
   paragraph(
     'p-op-3',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-op', [
     'Creator Rewards earnings',
@@ -729,7 +729,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-4',
-    'So this article should not use Story view behaviour to define ordinary video-post view counting.',
+    'So Story view behaviour does not tell you how ordinary video-post views are counted.',
   ),
   paragraph(
     'p-st-5',
@@ -1251,7 +1251,7 @@ export const HOW_TIKTOK_VIDEO_VIEWS_ARE_COUNTED_ARTICLE: LearnArticleRecord = {
       id: 'faq-5',
       question: 'Do purchased TikTok views count toward Creator Rewards?',
       answer:
-        'They should not be represented that way. TikTok excludes paid and fraudulent views from qualified views and prohibits fraudulent activity such as fake video views within Creator Rewards.',
+        'No. TikTok excludes paid and fraudulent views from qualified views and prohibits fraudulent activity such as fake video views within Creator Rewards.',
       schemaEligible: true,
     },
     {

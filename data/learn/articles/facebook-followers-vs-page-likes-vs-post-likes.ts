@@ -575,7 +575,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Page Like insights have been replaced by follow insights in Meta Business Suite.',
   ]),
   paragraph(
-    'p-st-6',
+    'p-st-5',
     'Those points come from Facebook\'s current Page-follow documentation. (Facebook)',
     [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
   ),
@@ -904,7 +904,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-out-5',
-    'This is also why NovaLikes should keep each Facebook service narrowly described by the metric it provides.',
+    'This is also why each NovaLikes Facebook service is described only by the metric it provides.',
   ),
 
   heading(
@@ -944,7 +944,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Some Pages may now show only a Follow button.',
     'Post Likes are reactions to one individual Facebook post, not Likes on the Page itself.',
     'A Like is one type of Facebook Reaction.',
-    'Page Followers, Page Likes and Post Likes should never be treated as interchangeable metrics.',
+    'Page Followers, Page Likes and Post Likes are not interchangeable metrics.',
   ]),
 ];
 

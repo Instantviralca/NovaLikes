@@ -145,7 +145,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-pol-4', '“TikTok doesn\'t care.”'),
   paragraph('p-pol-5', 'or:'),
   paragraph('p-pol-6', '“Buying followers is completely safe.”'),
-  paragraph('p-pol-7', 'Neither should be presented as fact.'),
+  paragraph('p-pol-7', 'Neither claim holds up.'),
   paragraph(
     'p-pol-8',
     'TikTok has explicitly documented a policy against artificial/fake engagement. (TikTok Newsroom)',
@@ -383,7 +383,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-more-3',
-    'This means NovaLikes should never say:',
+    'So be wary of anyone who says:',
   ),
   bullets('ul-more-never', [
     'Buy followers to unlock the FYP',
@@ -396,7 +396,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-more-5',
-    'Followers and recommendation reach should be presented separately.',
+    'Followers and recommendation reach are separate things.',
   ),
 
   heading(
@@ -404,7 +404,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Could Low-Quality Followers Hurt Engagement Ratios?',
     2,
   ),
-  paragraph('p-rat-1', 'This requires careful wording.'),
+  paragraph('p-rat-1', 'This is where people often go wrong.'),
   paragraph(
     'p-rat-2',
     'Mathematically, if your follower number changes while genuine interactions remain the same, simple ratios calculated using follower count can change.',
@@ -439,7 +439,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rat-16',
-    'Do not pretend they are the same system.',
+    'They are not the same system.',
   ),
 
   heading('h-remove', 'Can TikTok Remove Followers?', 2),
@@ -453,12 +453,12 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok also publicly describes substantial proactive enforcement against fake engagement activity and manipulative behaviour. (TikTok Newsroom)',
     [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
   ),
-  paragraph('p-rem-3', 'However, do not tell customers:'),
+  paragraph('p-rem-3', 'However, nobody can honestly promise:'),
   paragraph(
     'p-rem-4',
     '“TikTok will definitely never remove followers.”',
   ),
-  paragraph('p-rem-5', 'Nor should you claim:'),
+  paragraph('p-rem-5', 'And nobody can honestly claim:'),
   paragraph(
     'p-rem-6',
     '“TikTok removes every purchased follower.”',
@@ -565,12 +565,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tr-2',
-    'A TikTok followers package should be understood as a follower-count service.',
+    'A TikTok followers package is a follower-count service.',
     [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-tr-3',
-    'It should not be represented as a guaranteed method for:',
+    'It is not a guaranteed method for:',
   ),
   bullets('ul-tr-not', [
     'reaching the For You page',
@@ -588,7 +588,7 @@ const BLOCKS: ArticleContentBlock[] = [
     href: '/buy-tiktok-followers',
     heading: 'Understand What a Follower Service Does',
     description:
-      'A follower service changes a follower-count metric. It should not be treated as a guaranteed method for improving FYP reach, search rankings, engagement or monetization eligibility.',
+      'A follower service changes a follower-count metric. It is not a guaranteed method for improving FYP reach, search rankings, engagement or monetization eligibility.',
     label: 'View TikTok Followers',
   },
 
@@ -612,7 +612,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-qual-4',
-    'Therefore, the article should never recommend purchasing followers as a method for meeting Creator Rewards requirements.',
+    'So buying followers is not a way to meet Creator Rewards requirements.',
   ),
   paragraph(
     'p-qual-5',
@@ -849,7 +849,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-3',
-    'Official paid promotion and third-party artificial engagement should not be described as the same thing.',
+    'Official paid promotion and third-party artificial engagement are not the same thing.',
   ),
   paragraph(
     'p-pr-4',

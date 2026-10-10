@@ -244,7 +244,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-found-5', 'Those are different things.'),
   paragraph(
     'p-found-6',
-    'Do not describe a private profile as “completely invisible on Instagram.”',
+    'So a private profile is not “completely invisible on Instagram.”',
   ),
   paragraph(
     'p-found-7',
@@ -276,7 +276,7 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-diff-2',
-    'The recommendation point needs careful wording.',
+    'The recommendation point is where people often get confused.',
   ),
   paragraph(
     'p-diff-3',
@@ -916,7 +916,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gg-3',
-    'Do not promise that making an account private removes every trace of the profile from every search engine or historical cache.',
+    'And a private account does not remove every trace of the profile from every search engine or historical cache.',
   ),
   paragraph(
     'p-gg-4',
@@ -1001,14 +1001,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-svc-2',
-    'If someone wants to compare follower options, Instagram followers should be understood as a follower-count service for a public profile.',
+    'If you want to compare follower options, Instagram followers is a follower-count service for a public profile.',
     [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
   ),
   paragraph(
     'p-svc-3',
-    'A follower service should not be presented as a reason to ignore personal privacy preferences.',
+    'A follower service is not a reason to ignore your personal privacy preferences.',
   ),
-  paragraph('p-svc-4', 'Nor should it be described as guaranteeing:'),
+  paragraph('p-svc-4', 'Nor does it guarantee:'),
   bullets('ul-svc-not', [
     'Explore reach,',
     'Reels distribution,',
@@ -1305,7 +1305,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Professional Instagram accounts cannot be set to private.',
     'Switching to a private account can remove access to Instagram Insights.',
     'Public accounts can use Instagram Insights where eligible.',
-    'Private should not be described as an algorithm penalty, and public should not be described as a guaranteed reach boost.',
+    'Private is not an algorithm penalty, and public is not a guaranteed reach boost.',
   ]),
 ];
 

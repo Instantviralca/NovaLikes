@@ -834,7 +834,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fr-9',
-    'NovaLikes services should never be marketed as guaranteed TikTok SEO ranking tools.',
+    'No NovaLikes service is a guaranteed TikTok SEO ranking tool.',
   ),
 
   heading(
@@ -844,7 +844,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bv-1',
-    'There is no basis for NovaLikes to promise that purchasing TikTok views will improve TikTok Search rankings.',
+    'Buying TikTok views is not a way to improve TikTok Search rankings.',
     [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
   ),
   paragraph(
@@ -853,7 +853,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bv-3',
-    'A view service should be represented as a view service, not as a guaranteed method of:',
+    'A view service changes the view count. It is not a guaranteed method of:',
   ),
   bullets('ul-bv-not', [
     'ranking in TikTok Search,',
@@ -864,7 +864,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-bv-4',
-    'Keeping those concepts separate protects both accuracy and user expectations.',
+    'Keeping those concepts separate gives you a clearer picture of what actually drives Search.',
   ),
 
   heading('h-fyp', 'What About the For You Page?', 2),
@@ -1049,7 +1049,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok says search recommendations can consider how well content matches the query, alongside information such as hashtags and sounds.',
     'There is no public TikTok formula guaranteeing a #1 search position.',
     'Do not keyword-stuff. Make the subject of the video clear and useful.',
-    'Follower, like or view services should not be represented as guaranteed TikTok search-ranking tools.',
+    'Follower, like or view services are not guaranteed TikTok search-ranking tools.',
   ]),
 ];
 
