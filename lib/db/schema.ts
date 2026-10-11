@@ -13,6 +13,87 @@ import {
   index,
 } from 'drizzle-orm/pg-core';
 
+/** Customer accounts (phase 1). Declared before orders so customer_id can reference it. */
+export const customers = pgTable(
+  'customers',
+  {
+    id: text('id').primaryKey(),
+    email: text('email').notNull(),
+    name: text('name'),
+    passwordHash: text('password_hash'),
+    emailVerifiedAt: timestamp('email_verified_at', { withTimezone: true }),
+    status: text('status').notNull().default('active'),
+    marketingOptIn: boolean('marketing_opt_in').notNull().default(false),
+    whatsappNumber: text('whatsapp_number'),
+    tiktokUsername: text('tiktok_username'),
+    instagramUsername: text('instagram_username'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
+    lastLoginAt: timestamp('last_login_at', { withTimezone: true }),
+  },
+  (t) => ({
+    emailUidx: uniqueIndex('customers_email_uidx').on(t.email),
+  }),
+);
+
+export const customerSessions = pgTable(
+  'customer_sessions',
+  {
+    id: text('id').primaryKey(),
+    customerId: text('customer_id')
+      .notNull()
+      .references(() => customers.id, { onDelete: 'cascade' }),
+    tokenHash: text('token_hash').notNull(),
+    expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+    revokedAt: timestamp('revoked_at', { withTimezone: true }),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+    lastSeenAt: timestamp('last_seen_at', { withTimezone: true }),
+  },
+  (t) => ({
+    tokenHashIdx: index('customer_sessions_token_hash_idx').on(t.tokenHash),
+    customerIdx: index('customer_sessions_customer_idx').on(t.customerId),
+  }),
+);
+
+export const customerEmailCodes = pgTable(
+  'customer_email_codes',
+  {
+    id: text('id').primaryKey(),
+    email: text('email').notNull(),
+    purpose: text('purpose').notNull(),
+    codeHash: text('code_hash').notNull(),
+    attempts: integer('attempts').notNull().default(0),
+    expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+    consumedAt: timestamp('consumed_at', { withTimezone: true }),
+    ipHash: text('ip_hash'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    lookupIdx: index('customer_email_codes_lookup_idx').on(
+      t.email,
+      t.purpose,
+      t.createdAt,
+    ),
+  }),
+);
+
+export const customerLoginAttempts = pgTable(
+  'customer_login_attempts',
+  {
+    id: text('id').primaryKey(),
+    ipHash: text('ip_hash').notNull(),
+    emailHash: text('email_hash'),
+    success: boolean('success').notNull(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
+  },
+  (t) => ({
+    ipCreatedIdx: index('customer_login_attempts_ip_created_idx').on(
+      t.ipHash,
+      t.createdAt,
+    ),
+  }),
+);
+
 export const orders = pgTable(
   'orders',
   {
@@ -29,6 +110,9 @@ export const orders = pgTable(
     idempotencyKey: text('idempotency_key'),
     /** Sequential customer/Mollie-facing number (1001 → display 01001). */
     publicNumber: integer('public_number'),
+    customerId: text('customer_id').references(() => customers.id, {
+      onDelete: 'set null',
+    }),
     createdAt: timestamp('created_at', { withTimezone: true }).notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).notNull(),
   },
@@ -36,28 +120,37 @@ export const orders = pgTable(
     emailIdx: index('orders_guest_email_idx').on(t.guestEmail),
     idempotencyIdx: uniqueIndex('orders_idempotency_key_uidx').on(t.idempotencyKey),
     publicNumberIdx: uniqueIndex('orders_public_number_uidx').on(t.publicNumber),
+    customerIdx: index('orders_customer_idx').on(t.customerId, t.createdAt),
   }),
 );
 
-export const orderItems = pgTable('order_items', {
-  id: text('id').primaryKey(),
-  orderId: text('order_id')
-    .notNull()
-    .references(() => orders.id, { onDelete: 'cascade' }),
-  platformId: text('platform_id').notNull(),
-  serviceId: text('service_id').notNull(),
-  serviceSlug: text('service_slug').notNull(),
-  serviceName: text('service_name').notNull(),
-  packageId: text('package_id').notNull(),
-  packageTitle: text('package_title').notNull(),
-  quantity: integer('quantity').notNull(),
-  quantityLabel: text('quantity_label').notNull(),
-  unitPrice: integer('unit_price').notNull(),
-  currency: text('currency').notNull(),
-  configuration: jsonb('configuration').notNull().$type<Record<string, string | number | boolean>>(),
-  deliveryTime: text('delivery_time'),
-  publicDestination: text('public_destination'),
-});
+export const orderItems = pgTable(
+  'order_items',
+  {
+    id: text('id').primaryKey(),
+    orderId: text('order_id')
+      .notNull()
+      .references(() => orders.id, { onDelete: 'cascade' }),
+    platformId: text('platform_id').notNull(),
+    serviceId: text('service_id').notNull(),
+    serviceSlug: text('service_slug').notNull(),
+    serviceName: text('service_name').notNull(),
+    packageId: text('package_id').notNull(),
+    packageTitle: text('package_title').notNull(),
+    quantity: integer('quantity').notNull(),
+    quantityLabel: text('quantity_label').notNull(),
+    unitPrice: integer('unit_price').notNull(),
+    currency: text('currency').notNull(),
+    configuration: jsonb('configuration')
+      .notNull()
+      .$type<Record<string, string | number | boolean>>(),
+    deliveryTime: text('delivery_time'),
+    publicDestination: text('public_destination'),
+  },
+  (t) => ({
+    orderIdx: index('order_items_order_idx').on(t.orderId),
+  }),
+);
 
 export const orderPayments = pgTable(
   'order_payments',

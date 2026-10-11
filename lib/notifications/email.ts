@@ -242,6 +242,16 @@ function getExtraTemplate(
   }
 }
 
+/** Shared SMTP/Resend transport for account + order emails. */
+export async function sendRawTransactionalEmail(input: {
+  to: string;
+  subject: string;
+  html: string;
+  text: string;
+}): Promise<{ messageId: string; providerId: 'smtp' | 'resend' }> {
+  return sendViaConfiguredTransport(input);
+}
+
 async function sendViaConfiguredTransport(input: {
   to: string;
   subject: string;

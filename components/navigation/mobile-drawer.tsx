@@ -19,14 +19,16 @@ import {
   primaryCta,
 } from '@/data/navigation';
 import { LOCALE_DIR, isCoreServiceSlug } from '@/lib/i18n/config';
+import type { AccountNavState } from '@/lib/customers/nav';
 import { prefetchForHref } from '@/lib/linking/prefetch';
 
 type MobileDrawerProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  accountNav?: AccountNavState;
 };
 
-export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
+export function MobileDrawer({ open, onOpenChange, accountNav = null }: MobileDrawerProps) {
   const { locale, ui } = useI18nChrome();
   const resolveHref = useResolvePublicHref();
   const items = getMainNavigation(locale);
@@ -112,6 +114,17 @@ export function MobileDrawer({ open, onOpenChange }: MobileDrawerProps) {
               </div>
             );
           })}
+
+          {accountNav ? (
+            <Link
+              href={accountNav.href}
+              prefetch={prefetchForHref(accountNav.href)}
+              className="block text-sm font-medium text-foreground"
+              onClick={() => onOpenChange(false)}
+            >
+              {accountNav.label}
+            </Link>
+          ) : null}
 
           <Button asChild className="w-full">
             <Link

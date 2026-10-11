@@ -9,6 +9,8 @@ import { MutedText } from '@/components/typography/muted-text';
 import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
 import { allowMockPayments } from '@/lib/config/env';
+import { ACCOUNT_UI } from '@/lib/customers/messages';
+import { getCustomerFromCookies } from '@/lib/customers/session';
 import { getSiteChrome } from '@/lib/i18n/site-chrome';
 import { getCustomerOrderId } from '@/lib/orders/public-number';
 import { getOrderLineViews } from '@/lib/orders/line-display';
@@ -32,6 +34,7 @@ type OrderSuccessPageProps = {
 export default async function OrderSuccessPage({ searchParams }: OrderSuccessPageProps) {
   const params = await searchParams;
   const { ui } = await getSiteChrome();
+  const signedInCustomer = await getCustomerFromCookies();
   const orderIdParam = params.orderId?.trim();
   const email = params.email?.trim();
 
@@ -149,6 +152,21 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
               currency: currency as 'USD',
             }}
           />
+        ) : null}
+        {!signedInCustomer && email ? (
+          <div className="rounded-lg border bg-card p-4 space-y-3">
+            <h2 className="font-semibold">{ACCOUNT_UI.orderSuccess.h}</h2>
+            <p className="text-sm text-muted-foreground">
+              {ACCOUNT_UI.orderSuccess.text(email)}
+            </p>
+            <Button asChild>
+              <Link
+                href={`/signup?email=${encodeURIComponent(email)}&next=${encodeURIComponent('/dashboard/orders')}`}
+              >
+                {ACCOUNT_UI.orderSuccess.button}
+              </Link>
+            </Button>
+          </div>
         ) : null}
         <div className="flex flex-wrap gap-3">
           <Button asChild>

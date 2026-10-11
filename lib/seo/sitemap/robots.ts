@@ -25,6 +25,10 @@ export const ROBOTS_DISALLOW = [
   '/search',
   '/track-order/result',
   '/learn/preview/',
+  '/dashboard',
+  '/login',
+  '/signup',
+  '/forgot-password',
 ] as const;
 
 /**

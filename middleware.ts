@@ -8,7 +8,12 @@ import {
   AUTHOR_SESSION_COOKIE,
   canAccessAuthorDashboard,
 } from '@/lib/cms/auth-edge';
+import {
+  CUSTOMER_SESSION_COOKIE,
+  verifyCustomerSessionTokenEdge,
+} from '@/lib/customers/auth-edge';
 import { shouldBlockRequest } from '@/lib/geo/blocked-countries';
+
 import {
   GEO_INTERNAL_PREFIX,
   isInternalGeoPath,
@@ -196,6 +201,20 @@ export async function middleware(request: NextRequest) {
       response.headers.set('content-language', contentLanguage(cookieLocale));
     }
     return response;
+  }
+
+  const isCustomerDashboard = pathname === '/dashboard' || pathname.startsWith('/dashboard/');
+  if (isCustomerDashboard) {
+    const customerToken = request.cookies.get(CUSTOMER_SESSION_COOKIE)?.value;
+    const customerOk = await verifyCustomerSessionTokenEdge(customerToken);
+    if (!customerOk) {
+      const loginUrl = request.nextUrl.clone();
+      loginUrl.pathname = '/login';
+      loginUrl.search = '';
+      loginUrl.searchParams.set('next', pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+    return NextResponse.next();
   }
 
   // Exact /author or /author/* only — must not capture public /authors profiles.

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { Logo } from '@/components/common/logo';
+import { AccountNavLink } from '@/components/navigation/account-nav-link';
 import { CartNavButton } from '@/components/navigation/cart-nav-button';
 import { LazyMobileMenu } from '@/components/navigation/lazy-mobile-menu';
 import { MegaMenu } from '@/components/navigation/mega-menu';
@@ -11,6 +12,7 @@ import {
   isMegaMenuItem,
   primaryCta,
 } from '@/data/navigation';
+import { getAccountNavState } from '@/lib/customers/nav';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
 import type { Market } from '@/lib/market/config';
@@ -25,12 +27,13 @@ type NavbarProps = {
   ui?: UiDictionary;
 };
 
-export function Navbar({
+export async function Navbar({
   className,
   locale = DEFAULT_LOCALE,
   market = null,
   ui = ENGLISH_UI as UiDictionary,
 }: NavbarProps) {
+  const accountNav = await getAccountNavState();
   const resolveHref = (path: string) => resolvePublicHref(path, { locale, market });
 
   const items = getMainNavigation(locale).map((item) => {
@@ -95,6 +98,7 @@ export function Navbar({
           })}
 
           <CartNavButton className="ml-1" />
+          <AccountNavLink accountNav={accountNav} className="ml-1" />
           <Button asChild size="sm" className="ml-1">
             <Link href={ctaHref} prefetch={prefetchForHref(ctaHref)}>
               {ctaLabel}
@@ -104,12 +108,13 @@ export function Navbar({
 
         <div className="flex min-w-0 items-center gap-1 xl:hidden">
           <CartNavButton />
+          <AccountNavLink accountNav={accountNav} className="hidden sm:inline-flex" />
           <Button asChild size="sm" variant="outline" className="max-w-[9.5rem] px-3">
             <Link href={ctaHref} prefetch={prefetchForHref(ctaHref)}>
               {ctaLabel}
             </Link>
           </Button>
-          <LazyMobileMenu />
+          <LazyMobileMenu accountNav={accountNav} />
         </div>
       </Container>
     </header>

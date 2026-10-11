@@ -8,6 +8,7 @@ import {
   markCartRecoveryConverted,
 } from '@/lib/cart-recovery';
 import { getSiteUrlPath } from '@/lib/config/hosts';
+import { getCustomerFromCookies } from '@/lib/customers/session';
 import { notifyOrderPaid, notifyOrderPlaced } from '@/lib/notifications/order-hooks';
 import { placeOrder, type PlaceOrderInput } from '@/lib/orders/create';
 import {
@@ -66,7 +67,20 @@ export async function executeCheckout(
       };
     }
 
-    const order = await placeOrder(input);
+    let linkedCustomerId = input.linkedCustomerId;
+    if (!linkedCustomerId) {
+      try {
+        const customer = await getCustomerFromCookies();
+        const checkoutEmail = input.customer.email.trim().toLowerCase();
+        if (customer && customer.email === checkoutEmail) {
+          linkedCustomerId = customer.id;
+        }
+      } catch {
+        // cookies() unavailable outside a request context (e.g. some tests).
+      }
+    }
+
+    const order = await placeOrder({ ...input, linkedCustomerId });
     if (typeof order.publicNumber !== 'number') {
       return {
         ok: false,

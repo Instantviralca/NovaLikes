@@ -55,6 +55,8 @@ function buildSections(config: CookieConfig): LegalPolicySection[] {
         'nl_visitor_id — first-party visitor identifier cookie (about 1 year) for operational storefront analytics',
         'nl_session_id / nl_session_activity — first-party session cookies with ~30 minutes of inactivity timeout for operational analytics',
         'iv_admin_session — staff administrative session cookie for NovaLikes admin access (not a customer account cookie)',
+        'nl_customer_session — Keeps you signed in to your NovaLikes account. Expires after 30 days.',
+        'nl_customer_csrf — Protects account forms against cross-site requests.',
         'novalikes.analytics.consent.v1 — browser localStorage key used to store analytics consent preferences for possible future analytics scripts',
       ],
     },

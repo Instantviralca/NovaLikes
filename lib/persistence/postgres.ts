@@ -155,6 +155,7 @@ async function hydrateOrder(orderId: string): Promise<Order | null> {
   return {
     id: row.id,
     publicNumber: row.publicNumber ?? null,
+    customerId: row.customerId ?? undefined,
     guestEmail: row.guestEmail,
     status: row.status as OrderStatus,
     fulfillmentMode: row.fulfillmentMode as Order['fulfillmentMode'],
@@ -311,6 +312,7 @@ export function createPostgresPersistence(): AppPersistence {
           customerNotes: order.customerNotes ?? null,
           idempotencyKey: withKey.idempotencyKey ?? null,
           publicNumber,
+          customerId: order.customerId ?? null,
           createdAt: new Date(order.createdAt),
           updatedAt: new Date(order.updatedAt),
         })
@@ -329,6 +331,8 @@ export function createPostgresPersistence(): AppPersistence {
             idempotencyKey: withKey.idempotencyKey ?? null,
             // Never clear an assigned public number on update.
             publicNumber: publicNumber ?? existing?.publicNumber ?? null,
+            // Preserve existing link unless a new customerId is provided.
+            customerId: order.customerId ?? existing?.customerId ?? null,
             updatedAt: new Date(order.updatedAt),
           },
         });

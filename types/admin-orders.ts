@@ -29,6 +29,8 @@ export type AdminOrderRow = {
   /** Customer-facing order number (01001) or legacy IV- id. */
   publicOrderId: string;
   customerEmail: string;
+  /** Present when the order is linked to a customer account. */
+  customerId?: string;
   platformId: PlatformId;
   /** Compact service summary (may include "+ N more"). */
   serviceName: string;

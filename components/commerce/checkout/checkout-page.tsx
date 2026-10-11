@@ -24,6 +24,7 @@ import { getOrCreateSessionId } from '@/lib/analytics/native/identity';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, locationHasCartTransfer } from '@/lib/cart/cart-hash';
 import { formatMoney } from '@/lib/pricing/format';
+import { ACCOUNT_UI } from '@/lib/customers/messages';
 import type {
   CustomerInformation,
   PaymentMethodId,
@@ -34,7 +35,11 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-export function CheckoutPage() {
+type CheckoutPageProps = {
+  signedInEmail?: string | null;
+};
+
+export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
   const cart = useCart();
   const { ui, locale, market } = useI18nChrome();
   const analytics = useAnalyticsOptional();
@@ -47,7 +52,18 @@ export function CheckoutPage() {
     searchParams.get(CART_QUERY_PARAM) || searchParams.get('cartHandoff'),
   );
   const cartHref = routes.cart;
-  const [customer, setCustomer] = useState<CustomerInformation>({ email: '' });
+  const [customer, setCustomer] = useState<CustomerInformation>({
+    email: signedInEmail ?? '',
+  });
+  const signedInPrefillDone = useRef(false);
+
+  useEffect(() => {
+    if (!signedInEmail || signedInPrefillDone.current) return;
+    signedInPrefillDone.current = true;
+    setCustomer((prev) =>
+      prev.email.trim() ? prev : { ...prev, email: signedInEmail },
+    );
+  }, [signedInEmail]);
   const [paymentMethodId, setPaymentMethodId] = useState<PaymentMethodId | null>(() => {
     const enabled = getEnabledPaymentProviders().filter((p) => p.enabled);
     return enabled.length === 1 ? (enabled[0]!.id as PaymentMethodId) : null;
@@ -300,6 +316,11 @@ export function CheckoutPage() {
           <div className="space-y-5">
             <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)] sm:p-6">
               <h2 className="mb-4 text-base font-bold">{ui.checkout.customerInformation}</h2>
+              {signedInEmail ? (
+                <p className="mb-4 text-sm font-medium text-foreground">
+                  {ACCOUNT_UI.checkout.signedInAs(signedInEmail)}
+                </p>
+              ) : null}
               <CustomerInformationForm
                 value={customer}
                 errors={{ email: errors.email }}

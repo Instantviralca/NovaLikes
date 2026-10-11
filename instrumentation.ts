@@ -11,6 +11,14 @@ export async function register() {
       process.env.IV_SKIP_ENV_GUARD === '1' || isProductionBuildPhase();
 
     const result = validateEnv({ throwOnProductionErrors: !skipThrow });
+    if (process.env.IV_ACCOUNT_DEV_CODES === '1') {
+      const { isProductionRuntime } = await import('@/lib/config/env');
+      if (isProductionRuntime()) {
+        console.warn(
+          '[env] IV_ACCOUNT_DEV_CODES=1 is set in production — account verification codes will NOT be returned in API responses. Unset this flag immediately.',
+        );
+      }
+    }
     if (!result.ok) {
       const keys = result.issues.filter((i) => i.level === 'error').map((i) => i.key);
       console.error('[env] Missing required production configuration:', keys.join(', '));

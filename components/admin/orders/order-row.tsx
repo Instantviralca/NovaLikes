@@ -23,7 +23,16 @@ export function OrderRow({ order, selected, onSelect, onOpen, className }: Order
           aria-label={`Select order ${order.id}`}
         />
       </td>
-      <td className="px-3 py-3 font-medium">{order.publicOrderId}</td>
+      <td className="px-3 py-3 font-medium">
+        <span className="inline-flex items-center gap-2">
+          {order.publicOrderId}
+          {order.customerId ? (
+            <span className="rounded-full bg-[var(--brand)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--brand)]">
+              Account
+            </span>
+          ) : null}
+        </span>
+      </td>
       <td className="px-3 py-3">{order.customerEmail}</td>
       <td className="px-3 py-3 capitalize">{order.platformId}</td>
       <td className="px-3 py-3">{order.serviceName}</td>
@@ -59,7 +68,14 @@ export function OrderRowCard({ order, selected, onSelect, onOpen }: OrderRowProp
     <article className="rounded-lg border p-4 space-y-2">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="font-medium">{order.publicOrderId}</p>
+          <p className="font-medium inline-flex flex-wrap items-center gap-2">
+            {order.publicOrderId}
+            {order.customerId ? (
+              <span className="rounded-full bg-[var(--brand)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--brand)]">
+                Account
+              </span>
+            ) : null}
+          </p>
           <p className="text-sm text-muted-foreground">{order.customerEmail}</p>
         </div>
         <Checkbox

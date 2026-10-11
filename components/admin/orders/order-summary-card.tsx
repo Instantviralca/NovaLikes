@@ -44,7 +44,14 @@ export function OrderSummaryCard({ order }: OrderSummaryCardProps) {
         ) : null}
         <div>
           <dt className="text-muted-foreground">Customer</dt>
-          <dd className="font-medium">{order.customerEmail}</dd>
+          <dd className="font-medium inline-flex flex-wrap items-center gap-2">
+            {order.customerEmail}
+            {order.customerId ? (
+              <span className="rounded-full bg-[var(--brand)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--brand)]">
+                Account
+              </span>
+            ) : null}
+          </dd>
         </div>
         <div>
           <dt className="text-muted-foreground">Items</dt>

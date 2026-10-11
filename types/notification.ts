@@ -14,7 +14,8 @@ export type NotificationTrigger =
   | 'order_completed'
   | 'order_partial'
   | 'order_cancelled'
-  | 'order_refunded';
+  | 'order_refunded'
+  | 'account_code';
 
 export type NotificationTemplateId =
   | 'order_confirmation'
@@ -22,7 +23,10 @@ export type NotificationTemplateId =
   | 'order_completed'
   | 'partial_completion'
   | 'order_cancelled'
-  | 'refund_confirmation';
+  | 'refund_confirmation'
+  | 'account_signup_code'
+  | 'account_login_code'
+  | 'account_reset_code';
 
 export type NotificationTemplateVariableMap = {
   companyName: string;

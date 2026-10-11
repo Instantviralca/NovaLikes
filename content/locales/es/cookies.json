@@ -48,7 +48,8 @@
             "Pago: Admite la continuidad del proceso de pago para que un pedido pueda completarse después de la selección y configuración del paquete.",
             "Sesión: Admite la continuidad de navegación para el carrito y los flujos comerciales relacionados. No se requieren cuentas de cliente para realizar un pedido.",
             "Analítica operativa: Mide el rendimiento del embudo de la tienda (visitas, sesiones, carrito, pago y pedidos pagados) para operar y mejorar la tienda. Es analítica operativa de origen, no medición publicitaria. Usa las cookies de origen nl_visitor_id (aprox. 1 año), nl_session_id y nl_session_activity (caducidad tras ~30 minutos de inactividad). Por defecto no se establecen cookies de analítica de terceros.",
-            "Seguridad: Admite el funcionamiento del sitio web relacionado con la seguridad, incluida la protección de la sesión administrativa del personal cuando corresponda. El acceso de administración del personal puede usar una cookie iv_admin_session. Esta no es una cookie de inicio de sesión de cliente."
+            "Seguridad: Admite el funcionamiento del sitio web relacionado con la seguridad, incluida la protección de la sesión administrativa del personal cuando corresponda. El acceso de administración del personal puede usar una cookie iv_admin_session. Esta no es una cookie de inicio de sesión de cliente.",
+            "Cuenta de cliente: Te mantiene conectado a tu cuenta de NovaLikes y protege los formularios de la cuenta frente a solicitudes entre sitios. nl_customer_session: Te mantiene conectado a tu cuenta de NovaLikes. Caduca a los 30 días. nl_customer_csrf: Protege los formularios de la cuenta frente a solicitudes entre sitios."
           ]
         },
         {
@@ -63,6 +64,8 @@
             "nl_visitor_id — cookie de origen de identificador de visitante (aprox. 1 año) para analítica operativa de la tienda",
             "nl_session_id / nl_session_activity — cookies de sesión de origen con caducidad tras ~30 minutos de inactividad para analítica operativa",
             "iv_admin_session — cookie de sesión administrativa del personal para el acceso de administración de NovaLikes (no es una cookie de cuenta de cliente)",
+            "nl_customer_session — Te mantiene conectado a tu cuenta de NovaLikes. Caduca a los 30 días.",
+            "nl_customer_csrf — Protege los formularios de la cuenta frente a solicitudes entre sitios.",
             "novalikes.analytics.consent.v1 — clave de localStorage del navegador usada para almacenar preferencias de consentimiento de analítica para posibles scripts de analítica futuros"
           ]
         },

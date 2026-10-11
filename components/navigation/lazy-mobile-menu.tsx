@@ -6,8 +6,9 @@ import { Menu } from 'lucide-react';
 import { MobileDrawer } from '@/components/navigation/mobile-drawer';
 import { Button } from '@/components/ui/button';
 import { site } from '@/config/site';
+import type { AccountNavState } from '@/lib/customers/nav';
 
-export function LazyMobileMenu() {
+export function LazyMobileMenu({ accountNav }: { accountNav?: AccountNavState }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -24,7 +25,7 @@ export function LazyMobileMenu() {
       >
         <Menu />
       </Button>
-      <MobileDrawer open={open} onOpenChange={setOpen} />
+      <MobileDrawer open={open} onOpenChange={setOpen} accountNav={accountNav ?? null} />
     </>
   );
 }

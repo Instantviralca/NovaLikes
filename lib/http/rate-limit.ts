@@ -94,6 +94,11 @@ export const HTTP_RATE_LIMITS = {
   cartHandoff: { limit: 40, windowMs: 10 * 60 * 1000 },
   mollieConfig: { limit: 60, windowMs: 10 * 60 * 1000 },
   analytics: { limit: 60, windowMs: 60 * 1000 },
+  /** Customer account auth — aligned with email-code send / verify rules. */
+  accountSignup: { limit: 10, windowMs: 60 * 60 * 1000 },
+  accountLogin: { limit: 20, windowMs: 15 * 60 * 1000 },
+  accountCode: { limit: 20, windowMs: 60 * 60 * 1000 },
+  accountVerify: { limit: 30, windowMs: 15 * 60 * 1000 },
 } as const;
 
 export function consumePublicRouteLimit(

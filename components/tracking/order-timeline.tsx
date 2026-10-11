@@ -9,41 +9,42 @@ type OrderTimelineProps = {
 export function OrderTimeline({ steps, className }: OrderTimelineProps) {
   return (
     <ol className={cn('space-y-4', className)} aria-label="Order timeline">
-      {steps.map((step) => (
-        <li key={step.id} className="flex gap-3">
-          <span
-            className={cn(
-              'mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-xs',
-              step.status === 'complete' && 'border-primary bg-primary text-primary-foreground',
-              step.status === 'current' && 'border-primary text-primary',
-              step.status === 'upcoming' && 'border-muted-foreground/40 text-muted-foreground',
-            )}
-            aria-hidden
-          >
-            {step.status === 'complete' ? '✓' : step.status === 'current' ? '●' : '○'}
-          </span>
-          <div>
-            <p className="font-medium">
-              <span className="sr-only">
-                {step.status === 'complete'
-                  ? 'Completed: '
-                  : step.status === 'current'
-                    ? 'Current: '
-                    : 'Upcoming: '}
-              </span>
-              {step.label}
-            </p>
-            {step.message ? (
-              <p className="text-sm text-muted-foreground">{step.message}</p>
-            ) : null}
-            {step.at ? (
-              <time className="text-xs text-muted-foreground" dateTime={step.at}>
-                {new Date(step.at).toLocaleString()}
-              </time>
-            ) : null}
-          </div>
-        </li>
-      ))}
+      {steps.map((step) => {
+        const done = step.status === 'complete';
+        const current = step.status === 'current';
+        const upcoming = step.status === 'upcoming';
+        return (
+          <li key={step.id} className="flex gap-3">
+            <span
+              className={cn(
+                'mt-1 flex h-3 w-3 shrink-0 items-center justify-center rounded-full',
+                done && 'bg-[var(--brand)]',
+                current && 'border-2 border-[var(--brand)] bg-transparent',
+                upcoming && 'bg-muted-foreground/35',
+              )}
+              aria-hidden
+            />
+            <div className="min-w-0">
+              <p
+                className={cn(
+                  'text-sm',
+                  done && 'font-bold text-foreground',
+                  current && 'font-semibold text-foreground',
+                  upcoming && 'font-normal text-muted-foreground',
+                )}
+              >
+                <span className="sr-only">
+                  {done ? 'Completed: ' : current ? 'Current: ' : 'Upcoming: '}
+                </span>
+                {step.label}
+              </p>
+              {step.message && !upcoming ? (
+                <p className="text-sm text-muted-foreground">{step.message}</p>
+              ) : null}
+            </div>
+          </li>
+        );
+      })}
     </ol>
   );
 }

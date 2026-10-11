@@ -87,6 +87,15 @@ export const cookieConfig: CookieConfig = {
       technologyNote:
         'Staff admin access may use an iv_admin_session cookie. This is not a customer login cookie.',
     },
+    {
+      id: 'customer_account',
+      label: 'Customer account',
+      description:
+        'Keeps you signed in to your NovaLikes account and protects account forms against cross-site requests.',
+      enabled: true,
+      technologyNote:
+        'nl_customer_session: Keeps you signed in to your NovaLikes account. Expires after 30 days. nl_customer_csrf: Protects account forms against cross-site requests.',
+    },
   ],
 
   analyticsProviders: privacyConfig.analyticsProviders,

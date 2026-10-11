@@ -249,6 +249,15 @@ export function validateEnv(options: {
     });
   }
 
+  if (production && process.env.IV_ACCOUNT_DEV_CODES === '1') {
+    issues.push({
+      key: 'IV_ACCOUNT_DEV_CODES',
+      level: 'error',
+      message:
+        'IV_ACCOUNT_DEV_CODES=1 must never be set in production (would expose account codes in API responses).',
+    });
+  }
+
   if (production && !process.env.CMS_MEDIA_DIR?.trim()) {
     issues.push({
       key: 'CMS_MEDIA_DIR',
@@ -273,6 +282,15 @@ export function validateEnv(options: {
       level: 'warning',
       message:
         'TOOLS_MEDIA_SECRET is unset. Tool download HMAC will use IV_ADMIN_SESSION_SECRET. Set a dedicated secret if you rotate admin session independently.',
+    });
+  }
+
+  if (production && !present('NL_CUSTOMER_SESSION_SECRET') && getAdminSessionSecret()) {
+    issues.push({
+      key: 'NL_CUSTOMER_SESSION_SECRET',
+      level: 'warning',
+      message:
+        'NL_CUSTOMER_SESSION_SECRET is unset. Customer sessions will derive from sha256(customer:+admin secret). Set a dedicated secret to rotate independently.',
     });
   }
 

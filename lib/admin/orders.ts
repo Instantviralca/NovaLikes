@@ -116,6 +116,7 @@ function toRow(order: Order): AdminOrderRow {
     id: order.id,
     publicOrderId: getCustomerOrderId(order),
     customerEmail: order.guestEmail,
+    customerId: order.customerId,
     platformId: (first?.platformId ?? 'instagram') as PlatformId,
     serviceName: formatMultiItemServiceSummary(order),
     packageTitle: isMultiItem

@@ -48,7 +48,8 @@
             "Checkout: Unterstützt die Kontinuität des Checkouts, damit eine Bestellung nach Paketauswahl und Konfiguration abgeschlossen werden kann.",
             "Sitzung: Unterstützt die Kontinuität beim Browsen für Warenkorb und zugehörige Commerce-Abläufe. Ein Kundenkonto ist für eine Bestellung nicht erforderlich.",
             "Betriebliche Analyse: Misst die Funnel-Leistung des Shops (Besuche, Sitzungen, Warenkorb, Checkout und bezahlte Bestellungen), damit wir den Shop betreiben und verbessern können. Dies ist First-Party-Betriebsanalyse, keine Werbemessung. Verwendet die First-Party-Cookies nl_visitor_id (ca. 1 Jahr), nl_session_id und nl_session_activity (Ablauf nach ~30 Minuten Inaktivität). Standardmäßig werden keine Third-Party-Analyse-Cookies gesetzt.",
-            "Sicherheit: Unterstützt sicherheitsbezogene Website-Funktionen, einschließlich des Schutzes administrativer Mitarbeitersitzungen, soweit zutreffend. Der Admin-Zugang für Mitarbeitende kann ein Cookie iv_admin_session verwenden. Dies ist kein Kunden-Login-Cookie."
+            "Sicherheit: Unterstützt sicherheitsbezogene Website-Funktionen, einschließlich des Schutzes administrativer Mitarbeitersitzungen, soweit zutreffend. Der Admin-Zugang für Mitarbeitende kann ein Cookie iv_admin_session verwenden. Dies ist kein Kunden-Login-Cookie.",
+            "Kundenkonto: Hält Sie in Ihrem NovaLikes-Konto angemeldet und schützt Kontoformulare vor Cross-Site-Anfragen. nl_customer_session: Hält Sie in Ihrem NovaLikes-Konto angemeldet. Läuft nach 30 Tagen ab. nl_customer_csrf: Schützt Kontoformulare vor Cross-Site-Anfragen."
           ]
         },
         {
@@ -63,6 +64,8 @@
             "nl_visitor_id — First-Party-Besucherkennungs-Cookie (ca. 1 Jahr) für betriebliche Shop-Analyse",
             "nl_session_id / nl_session_activity — First-Party-Sitzungs-Cookies mit ~30 Minuten Inaktivitäts-Timeout für betriebliche Analyse",
             "iv_admin_session — administratives Sitzungs-Cookie für Mitarbeitende für den NovaLikes-Admin-Zugang (kein Kundenkonto-Cookie)",
+            "nl_customer_session — Hält Sie in Ihrem NovaLikes-Konto angemeldet. Läuft nach 30 Tagen ab.",
+            "nl_customer_csrf — Schützt Kontoformulare vor Cross-Site-Anfragen.",
             "novalikes.analytics.consent.v1 — localStorage-Schlüssel im Browser zur Speicherung von Analyse-Einwilligungseinstellungen für mögliche zukünftige Analyse-Skripte"
           ]
         },

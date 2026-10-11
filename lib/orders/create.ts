@@ -41,6 +41,11 @@ export type PlaceOrderInput = {
   cardToken?: string;
   /** Opaque cart-recovery session identifier. */
   recoveryPublicId?: string;
+  /**
+   * Server-only: set from a verified customer session when emails match.
+   * Never accept this from the client request body.
+   */
+  linkedCustomerId?: string;
 };
 
 export function buildIdempotencyKey(input: {
@@ -85,6 +90,7 @@ export async function buildOrderFromCheckout(input: PlaceOrderInput): Promise<Or
   const order = {
     id,
     guestEmail: input.customer.email.trim().toLowerCase(),
+    ...(input.linkedCustomerId ? { customerId: input.linkedCustomerId } : {}),
     status: 'pending' as const,
     fulfillmentMode: 'manual' as const,
     currency: pricing.currency,
