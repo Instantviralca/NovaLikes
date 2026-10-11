@@ -13,6 +13,7 @@ export const POST_LAUNCH_LEARN_SLUGS = [
   'how-to-reset-tiktok-fyp',
   'how-many-followers-to-make-money-on-tiktok',
   'how-to-get-more-views-on-tiktok',
+  'tiktok-shadowban',
 ] as const;
 
 export const EXPECTED_LIVE_LEARN_ARTICLE_COUNT =
