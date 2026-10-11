@@ -226,6 +226,11 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok says it may restore recommendations automatically, but it does not give a fixed timeframe. (TikTok Support)',
     [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
   ),
+  paragraph(
+    'p-acc-5',
+    'Creators often call this a shadowban. Our TikTok shadowban guide covers how long it lasts and which popular fixes do not work.',
+    [{ href: '/learn/tiktok-shadowban', label: 'TikTok shadowban guide' }],
+  ),
 
   heading('h-upload', '5. The Upload or the App Is the Problem', 2),
   paragraph(

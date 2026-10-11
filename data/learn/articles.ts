@@ -41,6 +41,7 @@ import { WHY_DOES_MY_TIKTOK_HAVE_0_VIEWS_ARTICLE } from '@/data/learn/articles/w
 import { HOW_TO_RESET_TIKTOK_FYP_ARTICLE } from '@/data/learn/articles/how-to-reset-tiktok-fyp';
 import { HOW_MANY_FOLLOWERS_TO_MAKE_MONEY_ON_TIKTOK_ARTICLE } from '@/data/learn/articles/how-many-followers-to-make-money-on-tiktok';
 import { HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE } from '@/data/learn/articles/how-to-get-more-views-on-tiktok';
+import { TIKTOK_SHADOWBAN_ARTICLE } from '@/data/learn/articles/tiktok-shadowban';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import type { LearnArticleRecord } from '@/types/learn';
 
@@ -75,6 +76,7 @@ export const LEARN_ARTICLES: readonly LearnArticleRecord[] = [
   HOW_TO_RESET_TIKTOK_FYP_ARTICLE,
   HOW_MANY_FOLLOWERS_TO_MAKE_MONEY_ON_TIKTOK_ARTICLE,
   HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE,
+  TIKTOK_SHADOWBAN_ARTICLE,
 ];
 
 export function getAllLearnArticleRecords(): LearnArticleRecord[] {
