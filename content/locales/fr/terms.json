@@ -117,11 +117,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Les commandes sont passées via un paiement en tant qu’invité, à l’aide des informations demandées pour le service sélectionné. Un compte client NovaLikes distinct n’est pas requis pour passer une commande."
+          "text": "Vous pouvez passer commande en tant qu’invité ou en étant connecté à un compte client NovaLikes. Un compte n’est pas nécessaire pour passer commande."
         },
         {
           "type": "paragraph",
-          "text": "Une fois le paiement initié ou confirmé, vous pouvez suivre les mises à jour de statut disponibles via le suivi de commande, à l’aide de votre référence de commande et de l’e-mail utilisé au paiement."
+          "text": "Une fois le paiement initié ou confirmé, vous pouvez suivre les mises à jour de statut disponibles via le suivi de commande à l’aide de votre référence de commande et de l’e-mail utilisé lors du paiement, ou depuis le tableau de bord de votre compte si la commande y est associée."
         },
         {
           "type": "paragraph",

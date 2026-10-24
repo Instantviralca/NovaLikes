@@ -31,15 +31,17 @@ export function CheckoutProgress({ current, className }: CheckoutProgressProps) 
               <div
                 className={cn(
                   'flex min-w-0 flex-1 flex-col items-center gap-1.5 rounded-xl px-1 py-2 sm:px-2',
-                  active && 'bg-[var(--brand-accent-soft)]',
+                  active && 'bg-[var(--nl-bg-soft)]',
                 )}
               >
                 <span
                   className={cn(
                     'flex size-7 items-center justify-center rounded-full text-xs font-bold sm:size-8 sm:text-sm',
-                    active && 'bg-[var(--brand-primary)] text-white shadow-[var(--shadow-glow)]',
-                    done && !active && 'bg-[var(--brand-secondary)] text-white',
-                    !active && !done && 'bg-[var(--surface-muted)] text-[var(--text-secondary)]',
+                    (active || done) && 'bg-nl-grad text-white',
+                    active && 'ring-2 ring-[color:rgb(249_115_22_/_0.35)] ring-offset-2 ring-offset-white',
+                    !active &&
+                      !done &&
+                      'border border-[var(--nl-border)] bg-white text-[var(--nl-muted)]',
                   )}
                   aria-current={active ? 'step' : undefined}
                 >
@@ -48,7 +50,7 @@ export function CheckoutProgress({ current, className }: CheckoutProgressProps) 
                 <span
                   className={cn(
                     'truncate text-center text-[10px] font-medium sm:text-xs',
-                    active ? 'text-[var(--text-primary)]' : 'text-[var(--text-secondary)]',
+                    active ? 'text-[var(--nl-ink)]' : 'text-[var(--nl-muted)]',
                   )}
                 >
                   {step.label}
@@ -58,7 +60,7 @@ export function CheckoutProgress({ current, className }: CheckoutProgressProps) 
                 <span
                   className={cn(
                     'mb-4 hidden h-0.5 w-2 shrink-0 rounded-full sm:block sm:w-4',
-                    done ? 'bg-[var(--brand-primary)]' : 'bg-[var(--border-subtle)]',
+                    done ? 'bg-nl-grad' : 'bg-[var(--nl-border)]',
                   )}
                   aria-hidden="true"
                 />

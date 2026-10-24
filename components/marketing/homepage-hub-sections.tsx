@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { homepageHub, type HomepageHub, type HubServiceMini } from '@/data/content/homepage-hub';
 import { ENGLISH_UI, type UiDictionary } from '@/lib/i18n/content/ui-english';
 import { HomepageHero } from '@/components/marketing/homepage-hero';
+import { HomepageGuides } from '@/components/marketing/homepage-guides';
 import { HomepagePlatformSelector } from '@/components/marketing/homepage-platform-selector';
 import { HomepageServicesOverview } from '@/components/marketing/homepage-services-overview';
 import { HomepageLowerSections } from '@/components/marketing/homepage-story-sections';
@@ -121,7 +122,7 @@ function PlatformServiceGroups({
 }) {
   const platforms: Array<'instagram' | 'tiktok' | 'facebook'> = instagramOnly
     ? ['instagram']
-    : ['instagram', 'tiktok', 'facebook'];
+    : (hub.platformOrder ?? ['instagram', 'tiktok', 'facebook']);
   let runningIndex = 0;
 
   return (
@@ -173,6 +174,9 @@ function PlatformServiceGroups({
               runningIndex += 1;
               return section;
             })}
+            {platform === 'tiktok' && hub.tiktokGuides ? (
+              <HomepageGuides guides={hub.tiktokGuides} />
+            ) : null}
           </div>
         );
       })}

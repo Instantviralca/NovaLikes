@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Alexandria } from 'next/font/google';
-import { GeistSans } from 'geist/font/sans';
+import { Alexandria, Geist } from 'next/font/google';
 
 import { AnalyticsProvider } from '@/components/analytics';
 import { LazyCartDrawer } from '@/components/commerce/cart/lazy-cart-drawer';
@@ -17,6 +16,18 @@ import { cn } from '@/lib/utils';
 import { seoSiteConfig } from '@/config/seo';
 import { titles } from '@/seo/titles';
 import '@/styles/globals.css';
+
+/**
+ * Same Geist typeface as `geist/font/sans`, loaded via next/font (display: swap).
+ * Variable file covers above-the-fold weights; single latin preload.
+ */
+const geistSans = Geist({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-geist-sans',
+  preload: true,
+  adjustFontFallback: true,
+});
 
 const alexandria = Alexandria({
   subsets: ['arabic', 'latin'],
@@ -50,11 +61,11 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     <html
       lang={HTML_LANG[locale]}
       dir={LOCALE_DIR[locale]}
-      className={cn(GeistSans.variable, isArabic && alexandria.variable)}
+      className={cn(geistSans.variable, isArabic && alexandria.variable)}
     >
       <body
         className={cn(
-          isArabic ? alexandria.className : GeistSans.className,
+          isArabic ? alexandria.className : geistSans.className,
           'antialiased',
         )}
       >

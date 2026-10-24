@@ -10,8 +10,6 @@ import {
   routes,
 } from '@/config/routes';
 import { getLearnCategoryById } from '@/data/learn';
-import { isApprovedServiceSlug } from '@/data/linking/approved-services';
-import { getServiceBySlug } from '@/data/services';
 import {
   getPublicLearnArticleBySlug,
   listPublicLearnArticles,
@@ -25,7 +23,7 @@ export type ContextualLinkTarget = {
   href: string;
   /** Phrases to match in existing copy (case-insensitive, first hit wins). */
   phrases: string[];
-  group: 'category' | 'platform' | 'service' | 'pillar' | 'same-category';
+  group: 'category' | 'platform' | 'pillar' | 'same-category';
 };
 
 const PILLAR_BY_CATEGORY: Record<string, string> = {
@@ -131,76 +129,6 @@ const PLATFORM_PHRASE_BANK: Record<
   youtube: [],
 };
 
-const SERVICE_PHRASE_BANK: Record<
-  PlatformId,
-  Array<{ phrases: string[]; serviceSlug: string }>
-> = {
-  instagram: [
-    {
-      phrases: [
-        'Buy Instagram Followers',
-        'Instagram follower packages',
-        'Instagram growth services',
-        'premium Instagram followers',
-      ],
-      serviceSlug: 'buy-instagram-followers',
-    },
-    {
-      phrases: [
-        'Buy Instagram Likes',
-        'Instagram likes packages',
-        'Instagram engagement services',
-      ],
-      serviceSlug: 'buy-instagram-likes',
-    },
-    {
-      phrases: ['Buy Instagram Views', 'Instagram views packages'],
-      serviceSlug: 'buy-instagram-views',
-    },
-    {
-      phrases: ['Buy Instagram Comments', 'Instagram comment packages'],
-      serviceSlug: 'buy-instagram-comments',
-    },
-  ],
-  tiktok: [
-    {
-      phrases: [
-        'Buy TikTok Followers',
-        'TikTok follower packages',
-        'TikTok growth services',
-      ],
-      serviceSlug: 'buy-tiktok-followers',
-    },
-    {
-      phrases: ['Buy TikTok Likes', 'TikTok likes packages'],
-      serviceSlug: 'buy-tiktok-likes',
-    },
-    {
-      phrases: ['Buy TikTok Views', 'TikTok views packages'],
-      serviceSlug: 'buy-tiktok-views',
-    },
-  ],
-  facebook: [
-    {
-      phrases: [
-        'Buy Facebook Followers',
-        'Facebook follower packages',
-        'Facebook growth services',
-      ],
-      serviceSlug: 'buy-facebook-followers',
-    },
-    {
-      phrases: ['Buy Facebook Page Likes', 'Facebook Page Likes packages'],
-      serviceSlug: 'buy-facebook-page-likes',
-    },
-    {
-      phrases: ['Buy Facebook Post Likes', 'Facebook post likes packages'],
-      serviceSlug: 'buy-facebook-post-likes',
-    },
-  ],
-  youtube: [],
-};
-
 function shortTitle(title: string): string {
   return title
     .replace(/\s*\(2026\)\s*$/i, '')
@@ -212,7 +140,8 @@ function shortTitle(title: string): string {
 
 /**
  * Build prioritized contextual link targets for an article.
- * Distribution goal: same-category, platform cluster, services, category hub, pillar/home.
+ * Distribution goal: same-category, platform cluster, category hub, pillar/home.
+ * Commercial `/buy-*` service targets are intentionally omitted from Learn body text.
  */
 export function buildContextualLinkTargets(
   article: PublicLearnArticle,
@@ -261,34 +190,6 @@ export function buildContextualLinkTargets(
         group: 'platform',
       });
     }
-  }
-
-  // Commercial services (varied phrases)
-  const serviceSlugs = [
-    ...article.relatedServices,
-    ...(platformId
-      ? (SERVICE_PHRASE_BANK[platformId] ?? []).map((item) => item.serviceSlug)
-      : []),
-  ];
-  for (const slug of serviceSlugs) {
-    if (!isApprovedServiceSlug(slug)) continue;
-    const service = getServiceBySlug(slug);
-    if (!service) continue;
-    const bank =
-      platformId != null
-        ? (SERVICE_PHRASE_BANK[platformId] ?? []).find(
-            (item) => item.serviceSlug === slug,
-          )
-        : undefined;
-    push({
-      href: service.url,
-      phrases: [
-        ...(bank?.phrases ?? []),
-        service.navigationLabel,
-        service.name,
-      ].filter(Boolean),
-      group: 'service',
-    });
   }
 
   // Parent Learn category

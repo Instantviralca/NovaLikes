@@ -117,11 +117,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Los pedidos se realizan mediante pago como invitado usando la información solicitada para el servicio seleccionado. No se requiere una cuenta de cliente de NovaLikes independiente para realizar un pedido."
+          "text": "Puedes hacer un pedido como invitado o con la sesión iniciada en una cuenta de cliente de NovaLikes. No necesitas una cuenta para hacer un pedido."
         },
         {
           "type": "paragraph",
-          "text": "Después de que se inicie o confirme el pago, puedes supervisar las actualizaciones de estado disponibles mediante el seguimiento del pedido usando tu referencia de pedido y el correo electrónico del pago."
+          "text": "Una vez iniciado o confirmado el pago, puedes seguir las actualizaciones de estado disponibles mediante el seguimiento de pedidos con tu referencia de pedido y el correo electrónico del proceso de pago, o desde el panel de tu cuenta si el pedido está vinculado a ella."
         },
         {
           "type": "paragraph",

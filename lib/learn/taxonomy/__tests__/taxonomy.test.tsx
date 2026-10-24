@@ -9,6 +9,12 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import type { LearnArticleRecord } from '@/types/learn';
 
+// next/font loaders only work inside the Next compiler; stub them for unit tests (views use SiteV2Shell).
+vi.mock('next/font/google', () => ({
+  Bricolage_Grotesque: () => ({ variable: 'font-display-var', className: 'font-display' }),
+  Nunito: () => ({ variable: 'font-body-var', className: 'font-body' }),
+}));
+
 const { mockArticles } = vi.hoisted(() => {
   const articles: LearnArticleRecord[] = [];
   return { mockArticles: articles };

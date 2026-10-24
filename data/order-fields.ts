@@ -59,15 +59,30 @@ const urlField = (
   },
 });
 
-const notesField: OrderFieldDefinition = {
-  id: 'notes',
-  name: 'notes',
-  label: 'Order Notes',
-  type: 'textarea',
-  optional: true,
-  placeholder: 'Optional instructions for fulfillment',
-  validation: { maxLength: 500 },
-};
+const NOTES_LABEL = 'Order notes (optional)';
+const NOTES_PLACEHOLDER = 'Anything we should know about this order?';
+const NOTES_HELP_DEFAULT = 'Want gradual delivery? Tell us the pace you prefer.';
+const NOTES_HELP_COMMENTS =
+  'Add your own comments, one per line, ask for another language, or ask for gradual delivery. Leave empty and our team writes the comments.';
+const NOTES_HELP_FB_POST =
+  'Likes are the default. Write Love or another reaction here, or ask for gradual delivery.';
+
+/** Shared optional order-notes textarea (category defaults + per-slug overrides). */
+function notesField(options?: {
+  helpText?: string;
+  maxLength?: number;
+}): OrderFieldDefinition {
+  return {
+    id: 'notes',
+    name: 'notes',
+    label: NOTES_LABEL,
+    type: 'textarea',
+    optional: true,
+    placeholder: NOTES_PLACEHOLDER,
+    helpText: options?.helpText ?? NOTES_HELP_DEFAULT,
+    validation: { maxLength: options?.maxLength ?? 500 },
+  };
+}
 
 /**
  * Custom comments textarea — only attached when the selected package
@@ -95,13 +110,13 @@ function customCommentsField(pkg: PricingPackage): OrderFieldDefinition {
 
 /** Category → default fields. Service-specific overrides can extend this map. */
 const fieldsByCategory: Partial<Record<ServiceCategory, OrderFieldDefinition[]>> = {
-  followers: [usernameField('Account'), notesField],
-  subscribers: [urlField('Channel URL', 'https://youtube.com/@channel'), notesField],
-  likes: [urlField('Post URL', 'https://…'), notesField],
-  'post-likes': [urlField('Post URL', 'https://…'), notesField],
-  'page-likes': [urlField('Page URL', 'https://facebook.com/…'), notesField],
-  views: [urlField('Video URL', 'https://…'), notesField],
-  comments: [urlField('Post URL', 'https://…'), notesField],
+  followers: [usernameField('Account'), notesField()],
+  subscribers: [urlField('Channel URL', 'https://youtube.com/@channel'), notesField()],
+  likes: [urlField('Post URL', 'https://…'), notesField()],
+  'post-likes': [urlField('Post URL', 'https://…'), notesField()],
+  'page-likes': [urlField('Page URL', 'https://facebook.com/…'), notesField()],
+  views: [urlField('Video URL', 'https://…'), notesField()],
+  comments: [urlField('Post URL', 'https://…'), notesField()],
 };
 
 const platformLabels: Record<string, string> = {
@@ -119,6 +134,7 @@ const serviceFieldOverrides: Record<string, OrderFieldDefinition[]> = {
       '@username',
       'Enter the public Instagram username that should receive the followers.',
     ),
+    notesField(),
   ],
   'buy-tiktok-followers': [
     usernameField(
@@ -126,30 +142,35 @@ const serviceFieldOverrides: Record<string, OrderFieldDefinition[]> = {
       '@username',
       'Enter the public TikTok username that should receive the followers.',
     ),
+    notesField(),
   ],
   'buy-tiktok-likes': [
     urlField('TikTok video URL', 'https://tiktok.com/@…/video/…', {
       tiktok: true,
       helpText: 'Paste the public TikTok video URL that should receive the likes.',
     }),
+    notesField(),
   ],
   'buy-facebook-followers': [
     urlField('Facebook page or profile URL', 'https://facebook.com/…', {
       facebook: true,
       helpText: 'Paste the public Facebook page or profile URL.',
     }),
+    notesField(),
   ],
   'buy-facebook-page-likes': [
     urlField('Facebook page URL', 'https://facebook.com/…', {
       facebook: true,
       helpText: 'Paste the public Facebook page URL that should receive the likes.',
     }),
+    notesField(),
   ],
   'buy-facebook-post-likes': [
     urlField('Facebook post URL', 'https://facebook.com/…/posts/…', {
       facebookPost: true,
       helpText: 'Paste the public Facebook post URL that should receive the likes.',
     }),
+    notesField({ helpText: NOTES_HELP_FB_POST }),
   ],
   'buy-youtube-subscribers': [
     urlField('YouTube channel URL', 'https://youtube.com/@channel', {
@@ -162,24 +183,28 @@ const serviceFieldOverrides: Record<string, OrderFieldDefinition[]> = {
       instagram: true,
       helpText: 'Paste the public Instagram post or Reel URL that should receive the likes.',
     }),
+    notesField(),
   ],
   'buy-instagram-views': [
     urlField('Instagram post or Reel URL', 'https://instagram.com/reel/…', {
       instagram: true,
       helpText: 'Paste the public Instagram video or Reel URL that should receive the views.',
     }),
+    notesField(),
   ],
   'buy-instagram-comments': [
     urlField('Instagram post or Reel URL', 'https://instagram.com/p/…', {
       instagram: true,
       helpText: 'Paste the public Instagram post or Reel URL that should receive the comments.',
     }),
+    notesField({ helpText: NOTES_HELP_COMMENTS, maxLength: 4000 }),
   ],
   'buy-tiktok-views': [
     urlField('TikTok video URL', 'https://tiktok.com/@…/video/…', {
       tiktok: true,
       helpText: 'Paste the public TikTok video URL that should receive the views.',
     }),
+    notesField(),
   ],
   'buy-youtube-views': [
     urlField('YouTube video URL', 'https://youtube.com/watch?v=…', {
@@ -200,12 +225,12 @@ export function getOrderFieldsForServiceSlug(
   } else {
     const service = getServiceBySlug(serviceSlug);
     if (!service) {
-      fields = [notesField];
+      fields = [notesField()];
     } else {
       const platform = platformLabels[service.platform] ?? 'Account';
       const fromCategory = fieldsByCategory[service.category];
       if (!fromCategory) {
-        fields = [usernameField(platform), notesField];
+        fields = [usernameField(platform), notesField()];
       } else {
         fields = fromCategory.map((field) =>
           field.type === 'username'

@@ -1,4 +1,5 @@
 import { site } from '@/config/site';
+import { ROOT_HOMEPAGE_METADATA_V5 } from '@/data/content/home-v5';
 import { truncateAtWordBoundary } from '@/seo/truncate';
 import type { LearnArticle } from '@/types/blog';
 import type { Service } from '@/types/service';
@@ -34,7 +35,7 @@ export function resolveArticleMetaTitle(
 
 /** Approved production meta titles. Do not rewrite. */
 export const titles = {
-  home: () => 'Buy Followers, Likes & Views for Social Media | NovaLikes',
+  home: () => ROOT_HOMEPAGE_METADATA_V5.title,
 
   service: (service: Service) => {
     if (service.slug === 'buy-instagram-followers') {

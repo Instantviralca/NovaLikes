@@ -111,12 +111,7 @@ export function ServiceFaq({
         ) : null}
 
         <div
-          className={cn(
-            'overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-white',
-            enhanced
-              ? 'ring-1 ring-[#EDE8E3]'
-              : 'shadow-[0_18px_40px_-24px_rgba(28,25,23,0.32)]',
-          )}
+          className="overflow-hidden rounded-2xl border border-[var(--nl-border)] bg-white shadow-sm"
           data-service-faq
           data-analytics-service={analyticsServiceSlug ?? ''}
         >
@@ -127,18 +122,18 @@ export function ServiceFaq({
               <details
                 key={item.id}
                 data-faq-id={item.id}
-                className="group border-b border-[var(--border-subtle)] px-4 py-1.5 last:border-b-0 transition-colors duration-200 hover:bg-[color-mix(in_srgb,var(--brand-accent-soft)_40%,transparent)] md:px-6 md:py-2"
+                className="group border-b border-[var(--nl-border)] px-4 py-1.5 last:border-b-0 transition-colors duration-200 hover:bg-[var(--nl-bg-soft)] md:px-6 md:py-2"
                 open={initiallyOpen.has(item.id) || undefined}
               >
                 <summary
                   id={buttonId}
-                  className="flex min-h-[4.25rem] cursor-pointer list-none items-center justify-between gap-4 py-5 text-start text-sm font-semibold text-foreground marker:content-none hover:text-[var(--brand-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:min-h-[4.5rem] md:py-6 md:text-base [&::-webkit-details-marker]:hidden"
+                  className="flex min-h-[4.25rem] cursor-pointer list-none items-center justify-between gap-4 py-5 text-start text-sm font-semibold text-[var(--nl-ink)] marker:content-none hover:text-[var(--nl-orange)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:rgb(249_115_22_/_0.4)] focus-visible:ring-offset-2 md:min-h-[4.5rem] md:py-6 md:text-base [&::-webkit-details-marker]:hidden"
                   aria-controls={panelId}
                 >
                   <span className="min-w-0 flex-1 break-words pe-2">{item.question}</span>
                   <span
                     aria-hidden
-                    className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[var(--surface-muted)] text-muted-foreground transition-[transform,background-color,color] duration-300 group-open:rotate-180 group-open:bg-[var(--brand-accent-soft)] group-open:text-[var(--brand-primary)] group-hover:bg-[var(--brand-accent-soft)] group-hover:text-[var(--brand-primary)]"
+                    className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[var(--nl-bg-soft)] text-[var(--nl-muted)] transition-[transform,background-color,color] duration-300 group-open:rotate-180 group-open:bg-[var(--nl-eyebrow-bg)] group-open:text-[var(--nl-orange)] group-hover:bg-[var(--nl-eyebrow-bg)] group-hover:text-[var(--nl-orange)]"
                   >
                     <ChevronDown className="size-4" strokeWidth={2.25} />
                   </span>

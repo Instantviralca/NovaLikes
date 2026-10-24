@@ -110,7 +110,7 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
             onMouseEnter={openMenu}
             onMouseLeave={scheduleClose}
           >
-            <div className="rounded-lg border border-border bg-popover p-3 shadow-lg">
+            <div className="rounded-2xl border border-[var(--nl-border)] bg-white p-3 shadow-md">
               <ul className="space-y-1">
                 {services.map((service) => {
                   const href = resolveHref(service.url);
@@ -122,7 +122,7 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
                       <Link
                         href={href}
                         prefetch={prefetchForHref(href)}
-                        className="block rounded-md px-2 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                        className="block rounded-xl px-2 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-[var(--nl-bg-soft)] hover:text-[var(--nl-orange)]"
                         onClick={() => setOpen(false)}
                       >
                         {label}
@@ -147,7 +147,7 @@ export function MegaMenu({ item, className }: MegaMenuProps) {
       <Link
         href={item.href}
         prefetch={prefetchForHref(item.href)}
-        className="inline-flex h-full items-center gap-1 rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
+        className="inline-flex h-full items-center gap-1 rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-[var(--nl-orange)]"
         aria-expanded={open}
         aria-haspopup="true"
         onClick={(event) => {

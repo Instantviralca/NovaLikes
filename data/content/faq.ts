@@ -279,13 +279,13 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-followers-private',
     question: 'Can I track my Instagram followers order?',
     answer:
-      'Yes. Use the NovaLikes order tracking option after checkout to check available status information for your purchase.',
+      'Yes. Enter your order ID and email on the Track Order page to see the latest status of your order. You can also message us on WhatsApp with your order ID.',
   },
   {
     id: 'faq-ig-followers-track',
     question: 'What happens if I enter the wrong Instagram username?',
     answer:
-      'Contact support as soon as possible with your order details. Always check the username before checkout because the submitted account information is used to process the order.',
+      'Message us on WhatsApp or by email as soon as possible with your order ID and the correct username, and we will check what can be done. The sooner you tell us the better, because once delivery starts, followers go to the username that was entered.',
   },
   {
     id: 'faq-ig-followers-business',
@@ -456,7 +456,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-likes-reel',
     question: 'How much do Instagram likes cost?',
     answer:
-      'Likes start at $2.99 for 100. 1,000 likes costs $9.99 and is our most popular package, and 10,000 likes costs $59.99. Prices are in US dollars and every package is listed in the pricing table above.',
+      'Likes start at $1.99 for 50. 2,500 likes costs $26.99 and is our most popular package, and 10,000 likes costs $99.99. Prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-ig-likes-money-back',
@@ -481,7 +481,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-views-package',
     question: 'How much do Instagram views cost?',
     answer:
-      'Packages start at $1.99 for 100 views. 1,000 views costs $4.99 and is our most popular option, and 10,000 views costs $24.99. All prices are in US dollars and are shown in the pricing table before checkout.',
+      'Packages start at $2.49 for 500 views. 5,000 views costs $16.99 and is our most popular option, and 10,000 views costs $26.99. All prices are in US dollars and are shown in the pricing table before checkout.',
   },
   {
     id: 'faq-ig-views-password',
@@ -536,7 +536,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-ig-comments-password',
     question: 'How much do Instagram comments cost?',
     answer:
-      'High Quality comments start at $13.47 for 10, and 25 comments cost $29.99. Premium comments start at $9.99 for 5, and 10 Premium comments cost $19.47. All prices are in US dollars and are listed in the pricing table above.',
+      'High Quality comments start at $13.99 for 10, and 25 comments cost $29.99. Premium comments start at $9.99 for 5, and 10 Premium comments cost $19.99. All prices are in US dollars and are listed in the pricing table above.',
   },
   {
     id: 'faq-ig-comments-how-long',
@@ -579,7 +579,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-tt-followers-package',
     question: 'How much do TikTok followers cost?',
     answer:
-      'Packages start at $2.99 for 100 followers. 1,000 followers costs $14.99 and is our most popular option, and 10,000 followers costs $119.99. All prices are in US dollars and every package is shown in the pricing table above.',
+      'Packages start at $5.99 for 100 followers. 500 followers costs $18.99 and is our most popular option, and 10,000 followers costs $119.99. All prices are in US dollars and every package is shown in the pricing table above.',
   },
   {
     id: 'faq-tt-followers-password',
@@ -628,7 +628,7 @@ export const faqItems: FAQItem[] = [
     id: 'faq-tt-likes-package',
     question: 'How much do TikTok likes cost?',
     answer:
-      'Packages start at $2.99 for 100 likes. 1,000 likes costs $14.99 and is our most popular choice, and 10,000 likes costs $119.99. All prices are in US dollars and every package is listed in the pricing table above.',
+      'Packages start at $2.99 for 100 likes. 200 likes costs $4.49 and is our most popular choice, and 10,000 likes costs $74.99. All prices are in US dollars and every package is listed in the pricing table above.',
   },
   {
     id: 'faq-tt-likes-password',

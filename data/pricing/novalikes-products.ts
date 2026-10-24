@@ -1,13 +1,9 @@
 ﻿/**
  * NovaLikes.com commercial product catalog.
  *
- * Package quantities + prices aligned to live BoostLikes AU catalogs
- * (boostlikes.com.au, checked 2026-08-13). Displayed competitor amounts applied
- * as catalog major units (USD store currency unchanged).
- *
- * Not listed on BoostLikes AU price pages (kept prior catalog):
- * - Instagram Comments (HQ / Premium)
- * - TikTok Views (HQ / Premium)
+ * Instagram + TikTok package quantities/prices/compare-at aligned to
+ * buzzoid.com High-Quality (and Premium where we already show tiers),
+ * checked 2026-10-22. Facebook + YouTube remain BoostLikes AU–aligned.
  */
 
 import type { PlatformId } from '@/types/platform';
@@ -25,7 +21,9 @@ export type NovaLikesProduct = {
   /** Major currency units (USD). */
   price: number;
   popular: boolean;
-  /** Optional comments tier — High Quality or Premium. */
+  /** Best-deal chip (Buzzoid “Best Deal”). */
+  deal?: boolean;
+  /** Optional comments/views tier — High Quality or Premium. */
   commentType?: NovaLikesCommentType;
   /** Package feature bullets when defined in catalog. */
   features?: string[];
@@ -69,53 +67,50 @@ const PREMIUM_TIKTOK_VIEWS_FEATURES = [
 ] as const;
 
 /**
- * BoostLikes AU–aligned PRODUCTS array.
- * Source pages:
- * - https://boostlikes.com.au/instagram-services-prices/
- * - https://boostlikes.com.au/buy-tiktok-followers-likes/
- * - https://boostlikes.com.au/buy-facebook-likes-followers-australia/
- * - https://boostlikes.com.au/buy-youtube-subscribers-views/
+ * PRODUCTS array — IG/TT from buzzoid.com (2026-10-22); FB/YT from BoostLikes AU.
  */
 export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
-  // Instagram Followers — BoostLikes AU
-  { id: 'ig-f-100', platform: 'instagram', type: 'followers', name: '100 Instagram Followers', count: 100, price: 2.99, popular: false },
-  { id: 'ig-f-250', platform: 'instagram', type: 'followers', name: '250 Instagram Followers', count: 250, price: 4.99, popular: false },
-  { id: 'ig-f-500', platform: 'instagram', type: 'followers', name: '500 Instagram Followers', count: 500, price: 7.99, popular: false },
-  { id: 'ig-f-1000', platform: 'instagram', type: 'followers', name: '1000 Instagram Followers', count: 1000, price: 13.99, popular: true },
-  { id: 'ig-f-2500', platform: 'instagram', type: 'followers', name: '2500 Instagram Followers', count: 2500, price: 25.99, popular: false },
-  { id: 'ig-f-5000', platform: 'instagram', type: 'followers', name: '5000 Instagram Followers', count: 5000, price: 39.99, popular: false },
-  { id: 'ig-f-10000', platform: 'instagram', type: 'followers', name: '10000 Instagram Followers', count: 10000, price: 74.99, popular: false },
-  { id: 'ig-f-15000', platform: 'instagram', type: 'followers', name: '15000 Instagram Followers', count: 15000, price: 109.99, popular: false },
+  // Instagram Followers — Buzzoid HQ
+  { id: 'ig-f-100', platform: 'instagram', type: 'followers', name: '100 Instagram Followers', count: 100, price: 3.49, compareAtPrice: 4.49, popular: false },
+  { id: 'ig-f-250', platform: 'instagram', type: 'followers', name: '250 Instagram Followers', count: 250, price: 5.99, compareAtPrice: 7.99, popular: false },
+  { id: 'ig-f-500', platform: 'instagram', type: 'followers', name: '500 Instagram Followers', count: 500, price: 7.99, compareAtPrice: 10.99, popular: false },
+  { id: 'ig-f-1000', platform: 'instagram', type: 'followers', name: '1000 Instagram Followers', count: 1000, price: 14.99, compareAtPrice: 18.99, popular: false },
+  { id: 'ig-f-2000', platform: 'instagram', type: 'followers', name: '2000 Instagram Followers', count: 2000, price: 25.99, compareAtPrice: 33.99, popular: true },
+  { id: 'ig-f-5000', platform: 'instagram', type: 'followers', name: '5000 Instagram Followers', count: 5000, price: 51.99, compareAtPrice: 67.99, popular: false },
+  { id: 'ig-f-10000', platform: 'instagram', type: 'followers', name: '10000 Instagram Followers', count: 10000, price: 102.99, compareAtPrice: 133.99, popular: false },
+  { id: 'ig-f-20000', platform: 'instagram', type: 'followers', name: '20000 Instagram Followers', count: 20000, price: 204.99, compareAtPrice: 265.99, popular: false, deal: true },
 
-  // Instagram Likes — BoostLikes AU
-  { id: 'ig-l-100', platform: 'instagram', type: 'likes', name: '100 Instagram Likes', count: 100, price: 2.99, popular: false },
-  { id: 'ig-l-250', platform: 'instagram', type: 'likes', name: '250 Instagram Likes', count: 250, price: 3.99, popular: false },
-  { id: 'ig-l-500', platform: 'instagram', type: 'likes', name: '500 Instagram Likes', count: 500, price: 5.99, popular: false },
-  { id: 'ig-l-1000', platform: 'instagram', type: 'likes', name: '1000 Instagram Likes', count: 1000, price: 9.99, popular: true },
-  { id: 'ig-l-2500', platform: 'instagram', type: 'likes', name: '2500 Instagram Likes', count: 2500, price: 19.99, popular: false },
-  { id: 'ig-l-3000', platform: 'instagram', type: 'likes', name: '3000 Instagram Likes', count: 3000, price: 24.99, popular: false },
-  { id: 'ig-l-5000', platform: 'instagram', type: 'likes', name: '5000 Instagram Likes', count: 5000, price: 39.99, popular: false },
-  { id: 'ig-l-10000', platform: 'instagram', type: 'likes', name: '10000 Instagram Likes', count: 10000, price: 59.99, popular: false },
+  // Instagram Likes — Buzzoid HQ
+  { id: 'ig-l-50', platform: 'instagram', type: 'likes', name: '50 Instagram Likes', count: 50, price: 1.99, compareAtPrice: 2.99, popular: false },
+  { id: 'ig-l-100', platform: 'instagram', type: 'likes', name: '100 Instagram Likes', count: 100, price: 3.49, compareAtPrice: 4.49, popular: false },
+  { id: 'ig-l-250', platform: 'instagram', type: 'likes', name: '250 Instagram Likes', count: 250, price: 5.99, compareAtPrice: 7.99, popular: false },
+  { id: 'ig-l-500', platform: 'instagram', type: 'likes', name: '500 Instagram Likes', count: 500, price: 7.99, compareAtPrice: 10.99, popular: false },
+  { id: 'ig-l-1000', platform: 'instagram', type: 'likes', name: '1000 Instagram Likes', count: 1000, price: 14.99, compareAtPrice: 18.99, popular: false },
+  { id: 'ig-l-2500', platform: 'instagram', type: 'likes', name: '2500 Instagram Likes', count: 2500, price: 26.99, compareAtPrice: 34.99, popular: true },
+  { id: 'ig-l-5000', platform: 'instagram', type: 'likes', name: '5000 Instagram Likes', count: 5000, price: 49.99, compareAtPrice: 64.99, popular: false },
+  { id: 'ig-l-10000', platform: 'instagram', type: 'likes', name: '10000 Instagram Likes', count: 10000, price: 99.99, compareAtPrice: 129.99, popular: false },
+  { id: 'ig-l-20000', platform: 'instagram', type: 'likes', name: '20000 Instagram Likes', count: 20000, price: 189.99, compareAtPrice: 246.99, popular: false },
 
-  // Instagram Views — BoostLikes AU (already matching)
-  { id: 'ig-v-100', platform: 'instagram', type: 'views', name: '100 Instagram Views', count: 100, price: 1.99, popular: false },
-  { id: 'ig-v-500', platform: 'instagram', type: 'views', name: '500 Instagram Views', count: 500, price: 3.99, popular: false },
-  { id: 'ig-v-1000', platform: 'instagram', type: 'views', name: '1000 Instagram Views', count: 1000, price: 4.99, popular: true },
-  { id: 'ig-v-2000', platform: 'instagram', type: 'views', name: '2000 Instagram Views', count: 2000, price: 6.99, popular: false },
-  { id: 'ig-v-3000', platform: 'instagram', type: 'views', name: '3000 Instagram Views', count: 3000, price: 9.99, popular: false },
-  { id: 'ig-v-5000', platform: 'instagram', type: 'views', name: '5000 Instagram Views', count: 5000, price: 14.99, popular: false },
-  { id: 'ig-v-10000', platform: 'instagram', type: 'views', name: '10000 Instagram Views', count: 10000, price: 24.99, popular: false },
-  { id: 'ig-v-25000', platform: 'instagram', type: 'views', name: '25000 Instagram Views', count: 25000, price: 44.99, popular: false },
+  // Instagram Views — Buzzoid HQ
+  { id: 'ig-v-500', platform: 'instagram', type: 'views', name: '500 Instagram Views', count: 500, price: 2.49, compareAtPrice: 3.49, popular: false },
+  { id: 'ig-v-2500', platform: 'instagram', type: 'views', name: '2500 Instagram Views', count: 2500, price: 8.49, compareAtPrice: 10.99, popular: false },
+  { id: 'ig-v-5000', platform: 'instagram', type: 'views', name: '5000 Instagram Views', count: 5000, price: 16.99, compareAtPrice: 21.99, popular: true },
+  { id: 'ig-v-10000', platform: 'instagram', type: 'views', name: '10000 Instagram Views', count: 10000, price: 26.99, compareAtPrice: 34.99, popular: false },
+  { id: 'ig-v-25000', platform: 'instagram', type: 'views', name: '25000 Instagram Views', count: 25000, price: 54.99, compareAtPrice: 70.99, popular: false },
+  { id: 'ig-v-50000', platform: 'instagram', type: 'views', name: '50000 Instagram Views', count: 50000, price: 79.99, compareAtPrice: 103.99, popular: false },
+  { id: 'ig-v-100000', platform: 'instagram', type: 'views', name: '100000 Instagram Views', count: 100000, price: 130.99, compareAtPrice: 169.99, popular: false },
+  { id: 'ig-v-250000', platform: 'instagram', type: 'views', name: '250000 Instagram Views', count: 250000, price: 251.99, compareAtPrice: 327.99, popular: false },
+  { id: 'ig-v-500000', platform: 'instagram', type: 'views', name: '500000 Instagram Views', count: 500000, price: 413.99, compareAtPrice: 537.99, popular: false },
 
-  // Instagram Comments — not on BoostLikes AU IG price page; keep prior catalog
+  // Instagram Comments — Buzzoid HQ / Premium
   {
     id: 'ig-c-10',
     platform: 'instagram',
     type: 'comments',
     name: '10 High Quality Instagram Comments',
     count: 10,
-    price: 13.47,
-    compareAtPrice: 14.97,
+    price: 13.99,
+    compareAtPrice: 17.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_COMMENT_FEATURES],
@@ -127,7 +122,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '25 High Quality Instagram Comments',
     count: 25,
     price: 29.99,
-    compareAtPrice: 40.53,
+    compareAtPrice: 38.99,
     popular: true,
     commentType: 'High Quality',
     features: [...HQ_COMMENT_FEATURES],
@@ -138,8 +133,8 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     type: 'comments',
     name: '50 High Quality Instagram Comments',
     count: 50,
-    price: 54.47,
-    compareAtPrice: 93.91,
+    price: 54.99,
+    compareAtPrice: 70.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_COMMENT_FEATURES],
@@ -151,7 +146,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '75 High Quality Instagram Comments',
     count: 75,
     price: 74.99,
-    compareAtPrice: 178.55,
+    compareAtPrice: 96.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_COMMENT_FEATURES],
@@ -162,9 +157,10 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     type: 'comments',
     name: '100 High Quality Instagram Comments',
     count: 100,
-    price: 99.47,
-    compareAtPrice: 397.88,
+    price: 99.99,
+    compareAtPrice: 129.99,
     popular: false,
+    deal: true,
     commentType: 'High Quality',
     features: [...HQ_COMMENT_FEATURES],
   },
@@ -175,7 +171,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '5 Premium Instagram Comments',
     count: 5,
     price: 9.99,
-    compareAtPrice: 11.1,
+    compareAtPrice: 12.99,
     popular: false,
     commentType: 'Premium',
     features: [...PREMIUM_COMMENT_FEATURES],
@@ -186,8 +182,8 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     type: 'comments',
     name: '10 Premium Instagram Comments',
     count: 10,
-    price: 19.47,
-    compareAtPrice: 28.63,
+    price: 19.99,
+    compareAtPrice: 25.99,
     popular: true,
     commentType: 'Premium',
     features: [...PREMIUM_COMMENT_FEATURES],
@@ -199,7 +195,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '25 Premium Instagram Comments',
     count: 25,
     price: 47.99,
-    compareAtPrice: 104.33,
+    compareAtPrice: 61.99,
     popular: false,
     commentType: 'Premium',
     features: [...PREMIUM_COMMENT_FEATURES],
@@ -210,34 +206,36 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     type: 'comments',
     name: '50 Premium Instagram Comments',
     count: 50,
-    price: 95.47,
-    compareAtPrice: 381.88,
+    price: 95.99,
+    compareAtPrice: 124.99,
     popular: false,
+    deal: true,
     commentType: 'Premium',
     features: [...PREMIUM_COMMENT_FEATURES],
   },
 
-  // TikTok Followers — BoostLikes AU
-  { id: 'tt-f-100', platform: 'tiktok', type: 'followers', name: '100 TikTok Followers', count: 100, price: 2.99, popular: false },
-  { id: 'tt-f-250', platform: 'tiktok', type: 'followers', name: '250 TikTok Followers', count: 250, price: 4.99, popular: false },
-  { id: 'tt-f-500', platform: 'tiktok', type: 'followers', name: '500 TikTok Followers', count: 500, price: 8.99, popular: false },
-  { id: 'tt-f-1000', platform: 'tiktok', type: 'followers', name: '1000 TikTok Followers', count: 1000, price: 14.99, popular: true },
-  { id: 'tt-f-3000', platform: 'tiktok', type: 'followers', name: '3000 TikTok Followers', count: 3000, price: 34.99, popular: false },
-  { id: 'tt-f-5000', platform: 'tiktok', type: 'followers', name: '5000 TikTok Followers', count: 5000, price: 59.99, popular: false },
-  { id: 'tt-f-10000', platform: 'tiktok', type: 'followers', name: '10000 TikTok Followers', count: 10000, price: 119.99, popular: false },
-  { id: 'tt-f-15000', platform: 'tiktok', type: 'followers', name: '15000 TikTok Followers', count: 15000, price: 169.99, popular: false },
+  // TikTok Followers — Buzzoid HQ
+  { id: 'tt-f-100', platform: 'tiktok', type: 'followers', name: '100 TikTok Followers', count: 100, price: 5.99, compareAtPrice: 7.99, popular: false },
+  { id: 'tt-f-200', platform: 'tiktok', type: 'followers', name: '200 TikTok Followers', count: 200, price: 8.99, compareAtPrice: 11.99, popular: false },
+  { id: 'tt-f-500', platform: 'tiktok', type: 'followers', name: '500 TikTok Followers', count: 500, price: 18.99, compareAtPrice: 24.99, popular: true },
+  { id: 'tt-f-1000', platform: 'tiktok', type: 'followers', name: '1000 TikTok Followers', count: 1000, price: 29.99, compareAtPrice: 38.99, popular: false },
+  { id: 'tt-f-2000', platform: 'tiktok', type: 'followers', name: '2000 TikTok Followers', count: 2000, price: 39.99, compareAtPrice: 51.99, popular: false },
+  { id: 'tt-f-5000', platform: 'tiktok', type: 'followers', name: '5000 TikTok Followers', count: 5000, price: 69.99, compareAtPrice: 90.99, popular: false },
+  { id: 'tt-f-10000', platform: 'tiktok', type: 'followers', name: '10000 TikTok Followers', count: 10000, price: 119.99, compareAtPrice: 155.99, popular: false },
+  { id: 'tt-f-20000', platform: 'tiktok', type: 'followers', name: '20000 TikTok Followers', count: 20000, price: 164.99, compareAtPrice: 213.99, popular: false, deal: true },
 
-  // TikTok Likes — BoostLikes AU (no bundled views)
-  { id: 'tt-l-100', platform: 'tiktok', type: 'likes', name: '100 TikTok Likes', count: 100, price: 2.99, popular: false },
-  { id: 'tt-l-250', platform: 'tiktok', type: 'likes', name: '250 TikTok Likes', count: 250, price: 4.99, popular: false },
-  { id: 'tt-l-500', platform: 'tiktok', type: 'likes', name: '500 TikTok Likes', count: 500, price: 8.99, popular: false },
-  { id: 'tt-l-1000', platform: 'tiktok', type: 'likes', name: '1000 TikTok Likes', count: 1000, price: 14.99, popular: true },
-  { id: 'tt-l-3000', platform: 'tiktok', type: 'likes', name: '3000 TikTok Likes', count: 3000, price: 34.99, popular: false },
-  { id: 'tt-l-5000', platform: 'tiktok', type: 'likes', name: '5000 TikTok Likes', count: 5000, price: 59.99, popular: false },
-  { id: 'tt-l-10000', platform: 'tiktok', type: 'likes', name: '10000 TikTok Likes', count: 10000, price: 119.99, popular: false },
-  { id: 'tt-l-15000', platform: 'tiktok', type: 'likes', name: '15000 TikTok Likes', count: 15000, price: 169.99, popular: false },
+  // TikTok Likes — Buzzoid HQ
+  { id: 'tt-l-100', platform: 'tiktok', type: 'likes', name: '100 TikTok Likes', count: 100, price: 2.99, compareAtPrice: 3.99, popular: false },
+  { id: 'tt-l-200', platform: 'tiktok', type: 'likes', name: '200 TikTok Likes', count: 200, price: 4.49, compareAtPrice: 5.99, popular: true },
+  { id: 'tt-l-500', platform: 'tiktok', type: 'likes', name: '500 TikTok Likes', count: 500, price: 8.99, compareAtPrice: 11.99, popular: false },
+  { id: 'tt-l-1000', platform: 'tiktok', type: 'likes', name: '1000 TikTok Likes', count: 1000, price: 13.99, compareAtPrice: 17.99, popular: false },
+  { id: 'tt-l-2000', platform: 'tiktok', type: 'likes', name: '2000 TikTok Likes', count: 2000, price: 22.99, compareAtPrice: 29.99, popular: false },
+  { id: 'tt-l-5000', platform: 'tiktok', type: 'likes', name: '5000 TikTok Likes', count: 5000, price: 44.99, compareAtPrice: 57.99, popular: false },
+  { id: 'tt-l-10000', platform: 'tiktok', type: 'likes', name: '10000 TikTok Likes', count: 10000, price: 74.99, compareAtPrice: 96.99, popular: false },
+  { id: 'tt-l-20000', platform: 'tiktok', type: 'likes', name: '20000 TikTok Likes', count: 20000, price: 135.49, compareAtPrice: 175.99, popular: false },
+  { id: 'tt-l-50000', platform: 'tiktok', type: 'likes', name: '50000 TikTok Likes', count: 50000, price: 295.99, compareAtPrice: 384.99, popular: false, deal: true },
 
-  // TikTok Views — not listed on BoostLikes AU TikTok page; keep prior HQ/Premium catalog
+  // TikTok Views — Buzzoid HQ / Premium
   {
     id: 'tt-v-hq-1000',
     platform: 'tiktok',
@@ -245,7 +243,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '1000 High Quality TikTok Views',
     count: 1000,
     price: 1.99,
-    compareAtPrice: 2.49,
+    compareAtPrice: 2.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_TIKTOK_VIEWS_FEATURES],
@@ -269,7 +267,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '5000 High Quality TikTok Views',
     count: 5000,
     price: 5.49,
-    compareAtPrice: 7.49,
+    compareAtPrice: 6.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_TIKTOK_VIEWS_FEATURES],
@@ -281,7 +279,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '10000 High Quality TikTok Views',
     count: 10000,
     price: 9.99,
-    compareAtPrice: 14.99,
+    compareAtPrice: 12.99,
     popular: false,
     commentType: 'High Quality',
     features: [...HQ_TIKTOK_VIEWS_FEATURES],
@@ -293,8 +291,21 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '50000 High Quality TikTok Views',
     count: 50000,
     price: 34.99,
-    compareAtPrice: 69.99,
+    compareAtPrice: 44.99,
     popular: true,
+    commentType: 'High Quality',
+    features: [...HQ_TIKTOK_VIEWS_FEATURES],
+  },
+  {
+    id: 'tt-v-hq-100000',
+    platform: 'tiktok',
+    type: 'views',
+    name: '100000 High Quality TikTok Views',
+    count: 100000,
+    price: 69.99,
+    compareAtPrice: 90.99,
+    popular: false,
+    deal: true,
     commentType: 'High Quality',
     features: [...HQ_TIKTOK_VIEWS_FEATURES],
   },
@@ -305,7 +316,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '1000 Premium TikTok Views',
     count: 1000,
     price: 3.99,
-    compareAtPrice: 4.99,
+    compareAtPrice: 5.49,
     popular: false,
     commentType: 'Premium',
     features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
@@ -317,7 +328,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '2000 Premium TikTok Views',
     count: 2000,
     price: 5.99,
-    compareAtPrice: 9.98,
+    compareAtPrice: 7.99,
     popular: false,
     commentType: 'Premium',
     features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
@@ -329,7 +340,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '5000 Premium TikTok Views',
     count: 5000,
     price: 10.99,
-    compareAtPrice: 24.95,
+    compareAtPrice: 13.99,
     popular: false,
     commentType: 'Premium',
     features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
@@ -341,7 +352,7 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     name: '10000 Premium TikTok Views',
     count: 10000,
     price: 19.99,
-    compareAtPrice: 49.9,
+    compareAtPrice: 25.99,
     popular: true,
     commentType: 'Premium',
     features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
@@ -352,9 +363,22 @@ export const NOVALIKES_PRODUCTS: NovaLikesProduct[] = [
     type: 'views',
     name: '50000 Premium TikTok Views',
     count: 50000,
-    price: 69.98,
-    compareAtPrice: 249.5,
+    price: 69.99,
+    compareAtPrice: 90.99,
     popular: false,
+    commentType: 'Premium',
+    features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
+  },
+  {
+    id: 'tt-v-prem-100000',
+    platform: 'tiktok',
+    type: 'views',
+    name: '100000 Premium TikTok Views',
+    count: 100000,
+    price: 127.99,
+    compareAtPrice: 165.99,
+    popular: false,
+    deal: true,
     commentType: 'Premium',
     features: [...PREMIUM_TIKTOK_VIEWS_FEATURES],
   },

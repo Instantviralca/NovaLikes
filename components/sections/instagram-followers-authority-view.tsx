@@ -1,7 +1,6 @@
 import {
   RelatedServices,
   ServiceCTA,
-  ServiceFaq,
   ServiceHero,
 } from '@/components/sections/service';
 import { ServiceCommerceBlocks } from '@/components/sections/service/service-commerce-blocks';
@@ -20,7 +19,7 @@ import {
   InstagramFollowersWhyChoose,
   InstagramFollowersWorldwide,
 } from '@/components/marketing/instagram-followers/authority-sections';
-import { PackagesFinalCtaAside } from '@/components/marketing/packages/packages-final-cta-aside';
+import { InstagramFollowersServiceFaq } from '@/components/marketing/instagram-followers/instagram-followers-service-faq';
 import { INSTAGRAM_FOLLOWERS_PAGE_CONFIG } from '@/data/content/instagram-followers-page-config';
 import { getServiceContentBySlug } from '@/data/content/services';
 import { mapServiceContent } from '@/lib/content/mappers';
@@ -32,12 +31,7 @@ import { resolvePublicHref } from '@/lib/market/paths';
 import { MarketStorySections } from '@/components/marketing/market-story-sections';
 import { RasterSectionVisual } from '@/components/illustrations/raster-section-visual';
 import { getUniqueServiceImage } from '@/lib/market/unique-service-images';
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import type { HubStorySection } from '@/data/content/homepage-hub';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
-import { loadQuickAnswer } from '@/lib/i18n/content/load';
-import type { QuickAnswerPageId } from '@/data/quick-answers';
 import { DEFAULT_LOCALE, type Locale, isCoreServiceSlug } from '@/lib/i18n/config';
 import { loadServiceFaqItems, type LocalizedServiceBundle } from '@/lib/i18n/content/load';
 import type { UiDictionary } from '@/lib/i18n/content/ui-english';
@@ -89,10 +83,6 @@ export function InstagramFollowersAuthorityView({
     vm.pricing.packages.find((p) => p.package.badge)?.package.id ??
     vm.pricing.packages[0]?.package.id;
   const isMarketOverlay = Boolean(market);
-  const marketQuickAnswer =
-    isMarketOverlay && config && 'quickAnswer' in config
-      ? (config as { quickAnswer: { heading: string; text: string } }).quickAnswer
-      : null;
   const choosePackageLabel = ui?.commerce.choosePackage ?? 'Choose Package';
   const finalTrustBadges = isMarketOverlay
     ? undefined
@@ -251,25 +241,10 @@ export function InstagramFollowersAuthorityView({
         platform={service.platform}
         previewPackageId={previewPackageId}
         locale={locale}
+        serviceSlug={service.slug}
+        useEnglishHeroRewrite={locale === 'en' && !market}
         instagramVariant="followers"
       />
-
-      {!isMarketOverlay ? (
-        <Section spacing="sm" className="bg-transparent">
-          <Container size="lg">
-            <QuickAnswer
-              heading={ui?.quickAnswer?.heading ?? 'Quick answer'}
-              text={loadQuickAnswer(locale, service.slug as QuickAnswerPageId)}
-            />
-          </Container>
-        </Section>
-      ) : marketQuickAnswer ? (
-        <Section spacing="sm" className="bg-transparent">
-          <Container size="lg">
-            <QuickAnswer heading={marketQuickAnswer.heading} text={marketQuickAnswer.text} />
-          </Container>
-        </Section>
-      ) : null}
 
       <ServiceCommerceBlocks
         service={service}
@@ -295,7 +270,7 @@ export function InstagramFollowersAuthorityView({
 
       {isMarketOverlay ? marketMiddleSections : defaultMiddleSections}
 
-      <ServiceFaq
+      <InstagramFollowersServiceFaq
         id={vm.faq.id}
         title={vm.faq.title}
         description={vm.faq.description}
@@ -303,7 +278,8 @@ export function InstagramFollowersAuthorityView({
         analyticsServiceSlug={service.slug}
         defaultOpenIds={vm.faq.items[0]?.id ? [vm.faq.items[0].id] : undefined}
         pinnedOpenIds={vm.faq.items[0]?.id ? [vm.faq.items[0].id] : undefined}
-        enhanced={isMarketOverlay}
+        contactHref={resolvePublicHref('/contact', { locale, market })}
+        contactLabel="Contact us"
       />
 
       {related.length > 0 ? (
@@ -322,15 +298,8 @@ export function InstagramFollowersAuthorityView({
       <ServiceCTA
         {...vm.finalCta}
         analyticsServiceSlug={service.slug}
-        aside={
-          <PackagesFinalCtaAside
-            instagramVariant="followers"
-            market={market}
-            serviceSlug={service.slug}
-          />
-        }
         trustBadges={finalTrustBadges}
-        className="[&_p:last-child]:text-white/70"
+        variant="banner"
       />
     </div>
   );

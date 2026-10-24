@@ -25,7 +25,7 @@ export function CategoryGrid({
     <Section>
       <Container>
         <div className="mb-8 max-w-2xl">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--nl-orange)]">
             Topics
           </p>
           <Heading as="h2" className="mt-2">

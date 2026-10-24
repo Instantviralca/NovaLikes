@@ -22,7 +22,7 @@ const PACKAGE_GUIDANCE: Record<string, string> = {
   'tt-f-500':
     'For creators with a handful of videos who want the profile to look less new.',
   'tt-f-1000':
-    'Our most popular package — fits accounts already getting a few thousand views per video.',
+    'Our most popular package (500 followers) — fits accounts already getting a few thousand views per video.',
   'tt-f-5000':
     'For established creators and brands with steady views. Gradual delivery is a good idea.',
   'tt-f-10000':

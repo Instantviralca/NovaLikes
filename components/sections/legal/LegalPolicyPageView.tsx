@@ -74,11 +74,7 @@ export function LegalPolicyPageView({
 
   return (
     <>
-      <Section
-        spacing="lg"
-        aria-label={`${content.header.title} header`}
-        className="print:py-4"
-      >
+      <Section spacing="lg" aria-label={`${content.header.title} header`} className="print:py-4">
         <Container size="xl">
           <Stack gap="md" className="mx-auto max-w-[52rem]">
             <Breadcrumb
@@ -133,21 +129,12 @@ export function LegalPolicyPageView({
                   aria-labelledby={`${headingPrefix}-${section.id}-heading`}
                   className="scroll-mt-28 space-y-4"
                 >
-                  <Heading
-                    as="h2"
-                    size="h2"
-                    id={`${headingPrefix}-${section.id}-heading`}
-                  >
+                  <Heading as="h2" size="h2" id={`${headingPrefix}-${section.id}-heading`}>
                     {section.title}
                   </Heading>
                   {section.blocks.map((block, index) => {
                     if (block.type === 'paragraph') {
-                      return (
-                        <LegalRichText
-                          key={`${section.id}-p-${index}`}
-                          text={block.text}
-                        />
-                      );
+                      return <LegalRichText key={`${section.id}-p-${index}`} text={block.text} />;
                     }
                     if (block.type === 'subheading') {
                       return (
@@ -179,7 +166,7 @@ export function LegalPolicyPageView({
               ))}
 
               <aside
-                className="rounded-[1.75rem] bg-[#FFF1E4] px-6 py-8 sm:px-8"
+                className="rounded-2xl bg-[var(--nl-bg-soft)] px-6 py-8 sm:px-8"
                 aria-label={labels.contactAria}
               >
                 <Heading as="h2" size="h3" className="mb-2">

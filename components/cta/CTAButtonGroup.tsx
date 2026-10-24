@@ -20,6 +20,8 @@ export type CTAButtonGroupProps = {
   serviceSlug?: string;
   className?: string;
   align?: 'start' | 'center';
+  /** `on-gradient` matches homepage final CTA (white primary / outline secondary). */
+  tone?: 'on-dark' | 'on-gradient';
 };
 
 /**
@@ -33,12 +35,15 @@ export function CTAButtonGroup({
   serviceSlug,
   className,
   align = 'start',
+  tone = 'on-dark',
 }: CTAButtonGroupProps) {
   const buttons = [primary, secondary, ...additional].filter(
     (cta): cta is PublicCta => Boolean(cta),
   );
 
   if (buttons.length === 0) return null;
+
+  const onGradient = tone === 'on-gradient';
 
   return (
     <div
@@ -62,10 +67,13 @@ export function CTAButtonGroup({
             className={cn(
               'min-h-12 w-full rounded-xl transition-[transform,box-shadow] duration-200 hover:-translate-y-1 active:scale-[0.99] motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100 sm:min-h-[3.25rem] sm:min-w-[11rem] sm:w-auto',
               usePrimary &&
-                'bg-[linear-gradient(145deg,var(--brand-primary)_0%,#ea580c_100%)] px-7 font-semibold shadow-[0_16px_36px_-12px_rgba(249,115,22,0.95)] hover:shadow-[0_22px_44px_-12px_rgba(249,115,22,1)]',
-              // Dark CTA bands set text-white on the section; keep outline labels readable.
+                (onGradient
+                  ? 'bg-white px-5 font-bold text-[var(--nl-orange)] shadow-sm hover:bg-white hover:text-[var(--nl-orange)] hover:shadow-md'
+                  : 'bg-[linear-gradient(145deg,var(--brand-primary)_0%,#ea580c_100%)] px-7 font-semibold shadow-[0_16px_36px_-12px_rgba(249,115,22,0.95)] hover:shadow-[0_22px_44px_-12px_rgba(249,115,22,1)]'),
               !usePrimary &&
-                'border border-white/25 bg-white px-6 font-semibold text-[var(--text-primary)] shadow-[0_10px_24px_-18px_rgba(0,0,0,0.35)] hover:border-white/40 hover:bg-white hover:text-[var(--text-primary)]',
+                (onGradient
+                  ? 'border-2 border-white bg-transparent px-5 font-bold text-white shadow-none hover:bg-white/10 hover:text-white'
+                  : 'border border-white/25 bg-white px-6 font-semibold text-[var(--text-primary)] shadow-[0_10px_24px_-18px_rgba(0,0,0,0.35)] hover:border-white/40 hover:bg-white hover:text-[var(--text-primary)]'),
             )}
           >
             <Link

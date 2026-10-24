@@ -10,7 +10,7 @@ import { getBadgeLabel } from '@/data/pricing/badges';
 import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { formatMoney } from '@/lib/pricing/format';
 import { cn } from '@/lib/utils';
-import type { PackageBadgeId } from '@/types/pricing';
+import type { PackageBadgeId, PricingPackage } from '@/types/pricing';
 
 function formatQuantityShort(quantity: number): string {
   if (quantity >= 1000 && quantity % 1000 === 0) {
@@ -21,6 +21,23 @@ function formatQuantityShort(quantity: number): string {
     return `${Number.isInteger(k) ? k : k.toFixed(1).replace(/\.0$/, '')}K`;
   }
   return new Intl.NumberFormat('en-US').format(quantity);
+}
+
+/**
+ * Display-only list price for IG/TT tiles when catalog has no compareAt.
+ * ~23% off list (Buzzoid-like), rounded to x.99. Never invents checkout/SEO prices.
+ */
+function resolveDisplayCompareAt(
+  pkg: PricingPackage,
+  platformId?: string,
+): number | undefined {
+  if (pkg.compareAtPrice && pkg.compareAtPrice > pkg.price) {
+    return pkg.compareAtPrice;
+  }
+  if (platformId !== 'instagram' && platformId !== 'tiktok') return undefined;
+  const list = Math.round(pkg.price / 0.77);
+  const rounded = Math.ceil(list / 100) * 100 - 1;
+  return rounded > pkg.price ? rounded : undefined;
 }
 
 function resolveChipBadge(
@@ -45,7 +62,7 @@ function PricingSkeletonCompact() {
     <div className="w-full space-y-5" aria-busy="true" aria-label="Loading packages">
       <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4">
         {Array.from({ length: 8 }).map((_, i) => (
-          <Skeleton key={i} className="h-[4.5rem] w-full rounded-xl" />
+          <Skeleton key={i} className="h-[5.5rem] w-full rounded-xl" />
         ))}
       </div>
       <Skeleton className="h-36 w-full rounded-2xl" />
@@ -55,7 +72,7 @@ function PricingSkeletonCompact() {
 
 /**
  * Package quantity chips + selected package summary.
- * Flat layout — no scale / glow / price-pop animations.
+ * IG/TT: tile shows sale + strikethrough list price; selection animates like Buzzoid.
  */
 export function PricingGrid({
   packages,
@@ -64,11 +81,14 @@ export function PricingGrid({
   className,
   loading,
   selectedPackageId,
+  platformId,
   serviceName,
   summaryBenefits,
   infoPills,
 }: PricingGridProps) {
   const { locale, ui } = useI18nChrome();
+  const buzzoidStyle = platformId === 'instagram' || platformId === 'tiktok';
+
   const commentTiers = useMemo(() => {
     const tiers = [
       ...new Set(
@@ -90,6 +110,7 @@ export function PricingGrid({
 
   const hasTier = commentTiers.length > 1;
   const [activeTier, setActiveTier] = useState<string | null>(null);
+  const [priceAnimKey, setPriceAnimKey] = useState(0);
 
   useEffect(() => {
     if (!hasTier) {
@@ -130,12 +151,20 @@ export function PricingGrid({
     onSelect?.(popularId);
   }, [activeTier, hasTier, popularId, selectedPackageId, visiblePackages, onSelect]);
 
+  useEffect(() => {
+    if (!activeId) return;
+    setPriceAnimKey((k) => k + 1);
+  }, [activeId]);
+
   if (loading) return <PricingSkeletonCompact />;
   if (packages.length === 0) return null;
 
+  const activeCompare = active
+    ? resolveDisplayCompareAt(active.package, platformId)
+    : undefined;
   const saveAmount =
-    active?.package.compareAtPrice && active.package.compareAtPrice > active.package.price
-      ? active.package.compareAtPrice - active.package.price
+    activeCompare && active && activeCompare > active.package.price
+      ? activeCompare - active.package.price
       : null;
 
   const packageTitle = active
@@ -155,7 +184,7 @@ export function PricingGrid({
     <div className={cn('mx-auto w-full space-y-5', className)} data-analytics="pricing-grid-compact">
       {hasTier ? (
         <div
-          className="flex w-full rounded-xl border border-[var(--border-subtle)] bg-white p-1"
+          className="flex w-full rounded-xl border border-[var(--nl-border)] bg-white p-1"
           role="tablist"
           aria-label={ui.commerce.packageQualityAria}
         >
@@ -169,10 +198,10 @@ export function PricingGrid({
                 aria-selected={selected}
                 onClick={() => setActiveTier(tier)}
                 className={cn(
-                  'flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold',
+                  'flex-1 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all duration-200',
                   selected
-                    ? 'bg-[var(--brand-primary)] text-white'
-                    : 'text-[var(--text-secondary)] hover:bg-[var(--surface-muted)]',
+                    ? 'bg-nl-grad text-white shadow-sm'
+                    : 'text-[var(--nl-muted)] hover:bg-[var(--nl-bg-soft)]',
                 )}
               >
                 {tier}
@@ -191,10 +220,8 @@ export function PricingGrid({
           const pkg = model.package;
           const selected = pkg.id === activeId;
           const badge = resolveChipBadge(model, visiblePackages);
-          const offAmount =
-            pkg.compareAtPrice && pkg.compareAtPrice > pkg.price
-              ? pkg.compareAtPrice - pkg.price
-              : null;
+          const compareAt = resolveDisplayCompareAt(pkg, platformId);
+          const showPrices = buzzoidStyle || Boolean(compareAt);
 
           return (
             <button
@@ -207,34 +234,69 @@ export function PricingGrid({
               data-selected={selected ? 'true' : 'false'}
               onClick={() => onSelect?.(pkg.id)}
               className={cn(
-                'relative flex min-h-[4.5rem] flex-col items-center justify-center gap-0.5 rounded-xl border px-2 py-3 text-center',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2',
-                selected
-                  ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white'
-                  : 'border-[var(--border-subtle)] bg-white text-[var(--text-primary)] hover:border-[var(--brand-primary)]',
+                'pkg-tile relative flex min-h-[5.25rem] flex-col items-center justify-center gap-0.5 rounded-xl border px-2 py-3 text-center',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:rgb(249_115_22_/_0.4)] focus-visible:ring-offset-2',
+                buzzoidStyle
+                  ? cn('pkg-tile--tactile', selected && 'pkg-tile-selected')
+                  : cn(
+                      'transition-all duration-200 ease-out',
+                      selected
+                        ? 'pkg-tile-selected'
+                        : 'border-[var(--nl-border)] bg-white text-[var(--nl-ink)] hover:border-[var(--nl-orange)]',
+                    ),
               )}
             >
               {badge ? (
-                <span className="absolute -top-2 left-2 z-10 rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase bg-emerald-500">
+                <span
+                  className={cn(
+                    'absolute -top-2 left-2 z-10 rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase',
+                    badge === 'best-value'
+                      ? 'bg-[var(--nl-orange)]'
+                      : 'bg-emerald-500',
+                  )}
+                >
                   {badge === 'most-popular' || badge === 'recommended'
                     ? ui.commerce.bestSelling
                     : badge === 'best-value'
-                      ? ui.commerce.bestValue
+                      ? `${ui.commerce.bestValue}`
                       : getBadgeLabel(badge)}
                 </span>
               ) : null}
-              <span className="text-lg font-bold tracking-tight sm:text-xl">
+              <span
+                className={cn(
+                  'text-lg font-bold tracking-tight sm:text-xl',
+                  selected && buzzoidStyle ? 'text-white' : undefined,
+                )}
+              >
                 {formatQuantityShort(pkg.quantity)}
               </span>
-              {offAmount ? (
-                <span
-                  className={cn(
-                    'text-[11px] font-semibold',
-                    selected ? 'text-white/95' : 'text-[var(--brand-primary)]',
-                  )}
-                >
-                  {formatMoney(offAmount, pkg.currency)} {ui.commerce.off}
-                </span>
+              {showPrices ? (
+                <>
+                  <span
+                    className={cn(
+                      'text-sm font-bold tabular-nums',
+                      selected
+                        ? buzzoidStyle
+                          ? 'text-white'
+                          : 'text-[var(--nl-orange)]'
+                        : 'text-[var(--nl-orange)]',
+                    )}
+                  >
+                    {formatMoney(pkg.price, pkg.currency)}
+                  </span>
+                  {compareAt ? (
+                    <span
+                      className={cn(
+                        'text-[11px] tabular-nums line-through',
+                        selected && buzzoidStyle
+                          ? 'text-white/70'
+                          : 'text-[var(--nl-muted)]',
+                      )}
+                    >
+                      {formatMoney(compareAt, pkg.currency)}
+                    </span>
+                  ) : null}
+                </>
               ) : null}
             </button>
           );
@@ -242,33 +304,52 @@ export function PricingGrid({
       </div>
 
       {active ? (
-        <div className="space-y-4 pt-1" data-analytics="package-summary">
+        <div className="space-y-4 pt-1 text-center" data-analytics="package-summary">
           <div className="space-y-1.5">
             <p className="text-xl font-bold tracking-tight text-[var(--text-primary)] sm:text-2xl">
               {packageTitle}
             </p>
-            <div className="flex flex-wrap items-baseline gap-2.5">
-              <p className="text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl">
-                {formatMoney(active.package.price, active.package.currency)}
-              </p>
-              {active.package.compareAtPrice &&
-              active.package.compareAtPrice > active.package.price ? (
-                <span className="text-base text-[var(--text-muted)] line-through">
-                  {formatMoney(active.package.compareAtPrice, active.package.currency)}
-                </span>
+            <div
+              key={priceAnimKey}
+              className={cn(
+                'space-y-1.5',
+                buzzoidStyle && 'animate-pkg-summary-pop',
+              )}
+            >
+              <div className="flex flex-wrap items-baseline justify-center gap-2.5">
+                <p className="text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl">
+                  {formatMoney(active.package.price, active.package.currency)}
+                </p>
+                {activeCompare ? (
+                  <span className="text-base text-[var(--text-muted)] line-through">
+                    {formatMoney(activeCompare, active.package.currency)}
+                  </span>
+                ) : null}
+              </div>
+              {saveAmount ? (
+                <p className="flex flex-wrap items-center justify-center gap-2 text-sm font-semibold text-emerald-600">
+                  <span className="inline-flex size-5 items-center justify-center rounded-full bg-emerald-500 text-[10px] font-bold text-white">
+                    %
+                  </span>
+                  <span>
+                    {ui.commerce.youSave}{' '}
+                    {formatMoney(saveAmount, active.package.currency)}
+                  </span>
+                </p>
               ) : null}
             </div>
+
             {summaryBenefits && summaryBenefits.length > 0 ? (
               <p className="text-sm text-[var(--text-secondary)]">
                 {summaryBenefits.slice(0, 3).join(' · ')}
               </p>
             ) : null}
             {infoPills && infoPills.length > 0 ? (
-              <ul className="flex flex-wrap gap-1.5 pt-1">
+              <ul className="flex flex-wrap justify-center gap-1.5 pt-1">
                 {infoPills.map((pill) => (
                   <li
                     key={pill}
-                    className="rounded-full border border-[var(--border-subtle)] bg-[var(--surface-muted)] px-2.5 py-1 text-[11px] font-medium text-[var(--text-secondary)]"
+                    className="rounded-full border border-[var(--nl-border)] bg-[var(--nl-bg-soft)] px-2.5 py-1 text-[11px] font-medium text-[var(--text-secondary)]"
                   >
                     {pill}
                   </li>
@@ -286,13 +367,8 @@ export function PricingGrid({
               packageId={active.package.id}
               emphasized
               onSelect={(id) => (onContinue ?? onSelect)?.(id)}
-              className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] text-sm font-bold tracking-wide text-white uppercase hover:bg-[var(--brand-primary-hover)]"
+              className="min-h-12 w-full rounded-xl bg-nl-grad text-sm font-bold tracking-wide text-white uppercase shadow-[var(--shadow-glow)] transition-transform duration-200 hover:scale-[1.01] hover:opacity-95 active:scale-[0.99]"
             />
-            {saveAmount ? (
-              <p className="text-center text-sm font-semibold text-[var(--brand-primary)]">
-                {ui.commerce.youSave} {formatMoney(saveAmount, active.package.currency)}
-              </p>
-            ) : null}
           </div>
         </div>
       ) : null}

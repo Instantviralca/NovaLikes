@@ -1,9 +1,7 @@
 'use client';
 
-import { CreditCard } from 'lucide-react';
+import type { ReactNode } from 'react';
 
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import type { PaymentMethodId, PaymentMethodOption } from '@/types/checkout';
 import { cn } from '@/lib/utils';
@@ -16,11 +14,17 @@ type PaymentMethodsProps = {
   className?: string;
   /** Hide legend when parent already renders a heading. */
   hideLegend?: boolean;
+  /** Optional description under each method label. */
+  descriptions?: Partial<Record<string, string>>;
+  /** Optional chip labels for a method (e.g. Card). */
+  chips?: Partial<Record<string, string[]>>;
+  /** Slot rendered under the selected method (e.g. Mollie card fields). */
+  selectedSlot?: ReactNode;
 };
 
 /**
  * Payment method picker — remote card payment redirects to Mollie hosted checkout.
- * Inline Mollie Components fields are not used for the normal checkout path.
+ * Visual: site-v2 `.pay-opt` radio cards. Mollie iframes unchanged when slotted.
  */
 export function PaymentMethods({
   methods,
@@ -29,46 +33,56 @@ export function PaymentMethods({
   error,
   className,
   hideLegend = false,
+  descriptions,
+  chips,
+  selectedSlot,
 }: PaymentMethodsProps) {
   const { ui } = useI18nChrome();
   const enabled = methods.filter((m) => m.enabled);
 
   return (
-    <fieldset className={cn('space-y-4', className)}>
-      {hideLegend ? <legend className="sr-only">{ui.checkout.paymentMethod}</legend> : (
-        <legend className="text-base font-bold">{ui.checkout.paymentMethod}</legend>
+    <fieldset className={cn('pay-opts', className)}>
+      {hideLegend ? (
+        <legend className="sr">{ui.checkout.paymentMethod}</legend>
+      ) : (
+        <legend className="sr">{ui.checkout.paymentMethod}</legend>
       )}
-      <RadioGroup
-        value={value ?? undefined}
-        onValueChange={(next) => onChange(next as PaymentMethodId)}
-        aria-invalid={Boolean(error)}
-        className="space-y-3"
-      >
-        {enabled.map((method) => {
-          const selected = value === method.id;
-          return (
-            <div
-              key={method.id}
-              className={cn(
-                'flex items-start gap-3 rounded-xl border p-4 transition-colors',
-                selected
-                  ? 'border-[var(--brand-primary)] bg-[var(--brand-accent-soft)]/50 shadow-[var(--shadow-xs)]'
-                  : 'border-[var(--border-subtle)] bg-white hover:border-[var(--brand-primary)]/35',
-              )}
-            >
-              <RadioGroupItem value={method.id} id={`pay-${method.id}`} className="mt-0.5" />
-              <div className="min-w-0 flex-1">
-                <Label htmlFor={`pay-${method.id}`} className="flex items-center gap-2 font-semibold">
-                  <CreditCard className="size-4 text-[var(--brand-primary)]" aria-hidden="true" />
-                  {method.label}
-                </Label>
+      {enabled.map((method) => {
+        const selected = value === method.id;
+        const desc = descriptions?.[method.id];
+        const methodChips = chips?.[method.id];
+        return (
+          <div key={method.id}>
+            <label className="pay-opt">
+              <input
+                type="radio"
+                name="payment-method"
+                value={method.id}
+                checked={selected}
+                onChange={() => onChange(method.id)}
+              />
+              <span>
+                <b>{method.label}</b>
+                {desc ? <em>{desc}</em> : null}
+              </span>
+              {methodChips && methodChips.length > 0 ? (
+                <span className="chips">
+                  {methodChips.map((chip) => (
+                    <span key={chip}>{chip}</span>
+                  ))}
+                </span>
+              ) : null}
+            </label>
+            {selected && selectedSlot ? (
+              <div className="card-fields" aria-label={ui.checkout.secureCardPayment}>
+                {selectedSlot}
               </div>
-            </div>
-          );
-        })}
-      </RadioGroup>
+            ) : null}
+          </div>
+        );
+      })}
       {error ? (
-        <p className="text-xs text-destructive" role="alert">
+        <p className="err" role="alert">
           {error}
         </p>
       ) : null}

@@ -17,13 +17,19 @@ export function PlatformMark({
   return (
     <span
       className={cn(
-        'inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[var(--brand-accent-soft)] text-[var(--brand-primary)]',
+        'inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]',
         className,
       )}
       aria-hidden="true"
     >
       {platform === 'instagram' ? (
-        <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <svg
+          viewBox="0 0 24 24"
+          className="size-5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        >
           <rect x="4" y="4" width="16" height="16" rx="5" />
           <circle cx="12" cy="12" r="3.5" />
           <circle cx="16.6" cy="7.4" r="0.9" fill="currentColor" stroke="none" />
@@ -43,7 +49,7 @@ export function PlatformMark({
 
 export function PlatformPill({ platform }: { platform: ToolPlatform }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-subtle)] bg-white/80 px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
+    <span className="inline-flex items-center gap-2 rounded-full border border-[var(--nl-border)] bg-white/80 px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
       <PlatformMark platform={platform} className="size-6 rounded-lg" />
       {LABEL[platform]}
     </span>

@@ -4,10 +4,7 @@ import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import {
-  contactAnalyticsEvents,
-  trackContactEvent,
-} from '@/lib/analytics/contact-events';
+import { contactAnalyticsEvents, trackContactEvent } from '@/lib/analytics/contact-events';
 
 type ContactFinalBannerCtaProps = {
   href: string;

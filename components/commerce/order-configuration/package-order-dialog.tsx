@@ -168,7 +168,8 @@ export function PackageOrderDialog({
     const productLabel = `${platformName} ${service.shortName}`.trim();
     showCartToast({
       title: localizeAddedToCart(qty, productLabel, ui),
-      quantityLabel: selectedPackage.quantityLabel,
+      // packageTitle only in the toast line (includes tier when present).
+      quantityLabel: selectedPackage.title,
       priceLabel: formatMoney(selectedPackage.price, selectedPackage.currency),
       serviceName: productLabel,
     });
@@ -260,7 +261,7 @@ export function PackageOrderDialog({
             onClick={handleAddToCart}
             disabled={submitting}
             data-analytics="add-to-cart"
-            className="min-h-11 bg-[var(--brand-primary)] font-semibold"
+            className="min-h-11 bg-nl-grad font-semibold"
           >
             {submitting ? ui.commerce.addingToCart : ui.commerce.addToCart}
           </Button>

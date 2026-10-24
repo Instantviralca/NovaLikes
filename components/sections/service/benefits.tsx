@@ -92,12 +92,12 @@ export function Benefits({ id, title, description, items, visual, className }: B
                 <FadeUp key={item.id} delay={0.04 * index} className="h-full min-h-0">
                   <HoverLift className="h-full">
                     <FeatureCard
-                      className="group flex h-full min-h-[15rem] flex-col border-[var(--border-subtle)] shadow-[0_12px_28px_-22px_rgba(28,25,23,0.26)] transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1.5 hover:border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--border-subtle))] hover:shadow-[0_22px_48px_-24px_rgba(28,25,23,0.36)] motion-reduce:hover:translate-y-0 sm:min-h-[15.75rem]"
+                      className="group flex h-full min-h-[15rem] flex-col border-[var(--nl-border)] shadow-[0_12px_28px_-22px_rgba(28,25,23,0.26)] transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1.5 hover:border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--nl-border))] hover:shadow-[0_22px_48px_-24px_rgba(28,25,23,0.36)] motion-reduce:hover:translate-y-0 sm:min-h-[15.75rem]"
                       title={item.title}
                       description={item.description}
                       icon={
                         item.icon ?? (
-                          <span className="flex size-12 items-center justify-center rounded-xl bg-[var(--brand-accent-soft)] text-[var(--brand-primary)] transition-transform duration-300 group-hover:scale-105 motion-safe:group-hover:animate-iv-icon-bob">
+                          <span className="flex size-12 items-center justify-center rounded-xl bg-[var(--nl-bg-soft)] text-[var(--brand-primary)] transition-transform duration-300 group-hover:scale-105 motion-safe:group-hover:animate-iv-icon-bob">
                             <Icon className="size-6" aria-hidden />
                           </span>
                         )

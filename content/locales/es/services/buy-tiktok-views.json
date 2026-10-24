@@ -463,6 +463,11 @@
             "id": "tt-v-hq-50000",
             "quantity": "50,000 visualizaciones",
             "recommendedFor": "Nuestro paquete High Quality más popular: para vídeos de campaña o cuentas que ya llegan a decenas de miles. Recomendamos entrega gradual."
+          },
+          {
+            "id": "tt-v-hq-100000",
+            "quantity": "100,000 visualizaciones",
+            "recommendedFor": "Uno de los paquetes más grandes para un vídeo público de TikTok, si esta cantidad está disponible en los datos de paquetes activos."
           }
         ]
       },

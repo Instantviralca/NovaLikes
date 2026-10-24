@@ -33,10 +33,11 @@ export function ServiceCTA(props: ServiceCTAProps) {
         description={props.description}
         surface="service_page"
         serviceSlug={props.analyticsServiceSlug}
-        aside={props.aside}
+        aside={props.variant === 'banner' ? undefined : props.aside}
         trustLine={props.trustLine}
         trustBadges={props.trustBadges}
         className={props.className}
+        variant={props.variant}
       />
     );
   }

@@ -56,6 +56,14 @@ describe('Approved static SEO metadata', () => {
     const over: string[] = [];
 
     for (const entry of APPROVED_STATIC) {
+      // Homepage v4 title is the approved exception (59 chars, do not rewrite).
+      if (entry.route === '/') {
+        expect(entry.title).toBe(
+          'Buy Instagram & TikTok Followers, Likes & Views | NovaLikes',
+        );
+        expect(entry.title.length).toBe(59);
+        continue;
+      }
       if (entry.title.length > META_TITLE_MAX) over.push(`${entry.route}: ${entry.title}`);
     }
 

@@ -324,7 +324,7 @@ function buildBuyInstagramLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Instagram Likes Packages & Pricing',
       description:
-        'Prices are in US dollars. 1,000 likes is the most popular package; choose a size that suits your follower count and usual engagement.',
+        'Prices are in US dollars. 2,500 likes is the most popular package; choose a size that suits your follower count and usual engagement.',
       purpose: 'Present real NovaLikes.com likes packages',
       primaryKeyword: 'Instagram Likes Pricing',
       suggestedWordCount: 40,
@@ -513,7 +513,7 @@ function buildBuyInstagramViewsContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'Instagram Views Packages & Pricing',
       description:
-        'Prices are in US dollars. 1,000 views is the most popular package; smaller packages suit new Reels, larger ones suit campaign content.',
+        'Prices are in US dollars. 5,000 views is the most popular package; smaller packages suit new Reels, larger ones suit campaign content.',
       purpose: 'Present real NovaLikes.com views packages',
       primaryKeyword: 'Instagram views packages',
       suggestedWordCount: 40,

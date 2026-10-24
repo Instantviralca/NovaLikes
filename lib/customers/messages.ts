@@ -1,7 +1,7 @@
 /** Final user-facing account copy (phase 1 prompt §9). */
 
 export const ACCOUNT_NAV = {
-  signIn: 'Sign in',
+  signIn: 'Log in',
   dashboard: 'Dashboard',
   signOut: 'Sign out',
 } as const;

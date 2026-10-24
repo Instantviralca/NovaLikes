@@ -48,10 +48,7 @@ export function AboutTrustStats({
   labels,
 }: AboutTrustStatsProps) {
   return (
-    <section
-      className={cn('w-full bg-[#FFF6EE] py-8 md:py-10', className)}
-      aria-label={ariaLabel}
-    >
+    <section className={cn('w-full bg-[#FFF6EE] py-8 md:py-10', className)} aria-label={ariaLabel}>
       <Container>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((stat) => {

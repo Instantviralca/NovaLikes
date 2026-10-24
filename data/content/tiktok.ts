@@ -56,7 +56,7 @@ function buildBuyTikTokFollowersContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'TikTok Followers Packages & Pricing',
       description:
-        'Prices are in US dollars. 1,000 followers is the most popular package; pick a size that fits the views your videos already get.',
+        'Prices are in US dollars. 500 followers is the most popular package; pick a size that fits the views your videos already get.',
       purpose: 'Present real NovaLikes.com TikTok follower packages',
       primaryKeyword: 'TikTok follower packages',
       suggestedWordCount: 45,
@@ -291,7 +291,7 @@ function buildBuyTikTokLikesContent(): ServiceContent {
       id: 'pricing-packages',
       title: 'TikTok Likes Packages & Pricing',
       description:
-        'Prices are in US dollars. 1,000 likes is the most popular package; choose a size that keeps likes below the video’s views.',
+        'Prices are in US dollars. 200 likes is the most popular package; choose a size that keeps likes below the video’s views.',
       purpose: 'Present real NovaLikes.com TikTok likes packages',
       primaryKeyword: 'TikTok likes packages',
       suggestedWordCount: 55,

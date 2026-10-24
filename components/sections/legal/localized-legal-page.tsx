@@ -17,14 +17,16 @@ import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
 
-const META_KEY: Record<LegalOverlayKey, 'privacyPolicy' | 'refundPolicy' | 'termsAndConditions' | 'cookiePolicy' | 'disclaimer'> =
-  {
-    'privacy-policy': 'privacyPolicy',
-    'refund-policy': 'refundPolicy',
-    'terms-and-conditions': 'termsAndConditions',
-    'cookie-policy': 'cookiePolicy',
-    disclaimer: 'disclaimer',
-  };
+const META_KEY: Record<
+  LegalOverlayKey,
+  'privacyPolicy' | 'refundPolicy' | 'termsAndConditions' | 'cookiePolicy' | 'disclaimer'
+> = {
+  'privacy-policy': 'privacyPolicy',
+  'refund-policy': 'refundPolicy',
+  'terms-and-conditions': 'termsAndConditions',
+  'cookie-policy': 'cookiePolicy',
+  disclaimer: 'disclaimer',
+};
 
 type PageProps = {
   params: Promise<{ locale: string }>;

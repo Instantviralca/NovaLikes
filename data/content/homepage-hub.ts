@@ -27,11 +27,11 @@ export type HubServiceMini = {
 
 export const homepageHub = {
   hero: {
-    eyebrow: 'INSTAGRAM • TIKTOK • FACEBOOK',
-    title: 'Grow Your Social Presence with NovaLikes',
+    eyebrow: 'TIKTOK GROWTH SERVICES',
+    title: 'TikTok Followers, Likes & Views for Creators and Brands',
     description:
-      'Buy followers, likes, views, and comments for Instagram, TikTok, and Facebook. NovaLikes gives you clear package options for each service, so you can choose what fits your account and order without sharing your password. Select a service, pick a package, enter the required public profile or content details, and complete your order online.',
-    primaryCta: { label: 'Explore Services', href: '#services-overview' },
+      'Grow your TikTok with followers for your profile, likes for your best videos and views for new uploads. Choose a package, enter your public TikTok username or video link, and order without sharing your password. Instagram and Facebook services are available too.',
+    primaryCta: { label: 'See TikTok Services', href: '#tiktok-services' },
     secondaryCta: { label: 'How It Works', href: '#how-it-works' },
     trustFeatures: [
       { id: 'password', line1: 'No Password', line2: 'Required', icon: 'shield' as const },
@@ -51,17 +51,31 @@ export const homepageHub = {
     eyebrow: 'Pick Your Platform',
     title: 'Choose Your Platform',
     description:
-      'Start with the platform you want to grow. Each one has its own services and package options, so you can go straight to what you need.',
+      'Start with TikTok or pick another platform. Each one has its own services and package options, so you can go straight to what you need.',
     trustItems: [
       { id: 'packages', label: 'Clear Package Options', icon: 'shield' as const },
       { id: 'password', label: 'No Password Required', icon: 'shield' as const },
       { id: 'refund', label: '30-Day Money-Back Guarantee on Eligible Orders', icon: 'shield' as const },
     ],
     socialProof: {
-      text: 'Compare NovaLikes services for Instagram, TikTok and Facebook',
+      text: 'Compare NovaLikes services for TikTok, Instagram and Facebook',
       href: '#services-overview',
     },
     platforms: [
+      {
+        id: 'tiktok' as const,
+        name: 'TikTok',
+        description: 'Followers for your profile, plus likes and views for individual videos.',
+        href: '#tiktok-services',
+        ctaLabel: 'View TikTok',
+        metric: { value: 'Video', label: 'Views' },
+        tags: [
+          { label: 'Profile Followers', href: '/buy-tiktok-followers', icon: 'trend' as const },
+          { label: 'Video Likes', href: '/buy-tiktok-likes', icon: 'heart' as const },
+          { label: 'Video Views', href: '/buy-tiktok-views', icon: 'eye' as const },
+          { label: 'Free TikTok Guides', href: '/learn/tiktok', icon: 'spark' as const },
+        ],
+      },
       {
         id: 'instagram' as const,
         name: 'Instagram',
@@ -75,20 +89,6 @@ export const homepageHub = {
           { label: 'Post Engagement', href: '/buy-instagram-likes', icon: 'heart' as const },
           { label: 'Reels Views', href: '/buy-instagram-views', icon: 'play' as const },
           { label: 'Comments', href: '/buy-instagram-comments', icon: 'comment' as const },
-        ],
-      },
-      {
-        id: 'tiktok' as const,
-        name: 'TikTok',
-        description: 'Followers, likes, and views for TikTok accounts and videos.',
-        href: '#tiktok-services',
-        ctaLabel: 'View TikTok',
-        metric: { value: 'Video', label: 'Views' },
-        tags: [
-          { label: 'Account Growth', href: '/buy-tiktok-followers', icon: 'trend' as const },
-          { label: 'Video Likes', href: '/buy-tiktok-likes', icon: 'heart' as const },
-          { label: 'Video Views', href: '/buy-tiktok-views', icon: 'eye' as const },
-          { label: 'More Engagement', href: '#tiktok-services', icon: 'spark' as const },
         ],
       },
       {
@@ -111,9 +111,9 @@ export const homepageHub = {
   servicesOverview: {
     id: 'services-overview',
     eyebrow: 'All Services',
-    title: 'All NovaLikes Services',
+    title: 'TikTok, Instagram and Facebook Services',
     description:
-      'Choose the service that matches what you want to grow. NovaLikes offers followers, likes, views, comments, Page likes, and post likes across Instagram, TikTok, and Facebook. Open any service to compare package sizes and prices.',
+      'Start with TikTok followers, likes and views, or choose an Instagram or Facebook service. Open any service to compare package sizes and prices.',
     trustNote: 'Compare Services and Package Options',
     features: [
       { id: 'users', label: 'Platform-Specific Services', icon: 'users' as const },
@@ -132,9 +132,9 @@ export const homepageHub = {
     },
     tiktok: {
       id: 'tiktok-services',
-      title: 'TikTok Growth',
+      title: 'TikTok Followers, Likes and Views',
       description:
-        'Choose followers, likes, or views depending on what you want to add to your TikTok account or videos.',
+        'Choose followers when you want to grow your profile, likes when you want more engagement on a video, and views when you want a higher view count on a specific video.',
     },
     facebook: {
       id: 'facebook-services',
@@ -146,9 +146,9 @@ export const homepageHub = {
 
   why: {
     id: 'why-novalikes',
-    title: 'Why Choose NovaLikes?',
+    title: 'Why Order TikTok Services from NovaLikes?',
     description:
-      'Ordering social media services should not leave you guessing about the price, what information you need, or where your order stands. NovaLikes keeps these details clear from the start.',
+      'You should know the price, the details you need and where your order stands, before and after you pay. NovaLikes keeps that clear for TikTok and every other service.',
     points: [
       {
         title: 'Clear Package Options',
@@ -156,7 +156,7 @@ export const homepageHub = {
       },
       {
         title: 'No Password Required',
-        body: 'We only ask for the public profile, Page, post, or video details needed for the service you order. Your account password stays private.',
+        body: 'We only ask for your public TikTok username or video link, or the public details other platforms need. Your password stays private.',
       },
       {
         title: 'Order Tracking',
@@ -177,7 +177,7 @@ export const homepageHub = {
     steps: [
       {
         title: 'Choose a Service',
-        body: 'Select Instagram, TikTok, or Facebook, then choose the followers, likes, views, comments, Page likes, or post likes you need.',
+        body: 'Start with TikTok followers, likes or views, or pick an Instagram or Facebook service.',
       },
       {
         title: 'Pick a Package',
@@ -185,7 +185,7 @@ export const homepageHub = {
       },
       {
         title: 'Enter the Required Details',
-        body: 'Provide the public username, profile, Page, post, or video link requested for that service. No password is required.',
+        body: 'Add your public TikTok username for followers, or the video link for likes and views. No password is required.',
       },
       {
         title: 'Complete Your Order',
@@ -252,27 +252,22 @@ export const homepageHub = {
     id: 'homepage-faq',
     title: 'Frequently Asked Questions',
     description:
-      'Here are answers to common questions about choosing a NovaLikes service and placing an order.',
+      'Answers to common questions about ordering TikTok followers, likes and views, and other NovaLikes services.',
     items: [
       {
-        question: 'What social media services can I order from NovaLikes?',
+        question: 'Do I need to give NovaLikes my TikTok password?',
         answer:
-          'NovaLikes offers followers, likes, views, comments, Page likes, and post likes across Instagram, TikTok, and Facebook. The available options depend on the platform you choose.',
+          'No. For followers you only provide your public TikTok username. For likes and views you provide the public video link. Never share your password with anyone.',
       },
       {
-        question: 'Do I need to give NovaLikes my social media password?',
+        question: 'Does my TikTok account need to be public?',
         answer:
-          'No. You only provide the public username, profile, Page, post, or video details required for the service you order.',
+          'Yes, while the order is being delivered. A private account or private video can stop delivery. You can make it private again once delivery is complete.',
       },
       {
-        question: 'How do I choose the right package?',
+        question: 'What is the difference between TikTok followers, likes and views?',
         answer:
-          'Start by choosing the platform and service you need. You can then compare the available quantities and prices on that service page before selecting a package.',
-      },
-      {
-        question: 'What information do I need to place an order?',
-        answer:
-          'It depends on the service. You may be asked for a public username, profile URL, Page URL, post link, Reel, or video URL so the order can be sent to the correct place.',
+          'Followers are people who follow your profile. Likes and views belong to a single video. Choose followers to grow your profile, and likes or views to work on a specific video.',
       },
       {
         question: 'How quickly will my order start?',
@@ -283,6 +278,16 @@ export const homepageHub = {
         question: 'What happens if my followers, likes or views drop?',
         answer:
           'Every NovaLikes order includes a 6-month refill from the delivery date. If the number drops in that time, message us on WhatsApp (+44 7454 758272) with your order ID and we top it back up. Keep the profile or content public and the username unchanged while a refill is being delivered.',
+      },
+      {
+        question: 'Can buying TikTok followers, likes or views affect my account?',
+        answer:
+          'Third-party services can carry platform-policy risks, and TikTok can remove activity or change how metrics are counted. NovaLikes never asks for your password, but no service can guarantee how TikTok will treat third-party engagement. Review TikTok’s current rules before ordering.',
+      },
+      {
+        question: 'What other services does NovaLikes offer?',
+        answer:
+          'Besides TikTok, NovaLikes offers Instagram followers, likes, views and comments, and Facebook followers, Page likes and post likes.',
       },
       {
         question: 'Can I check my order after checkout?',
@@ -307,11 +312,11 @@ export const homepageHub = {
 
   finalCta: {
     id: 'home-final-cta',
-    eyebrow: 'Grow Faster with NovaLikes',
-    title: 'Ready to Grow Your Social Presence?',
+    eyebrow: 'Grow on TikTok with NovaLikes',
+    title: 'Ready to Grow Your TikTok?',
     description:
-      "Choose the platform and service that fits what you're looking for. Compare available packages, review the details, and place your order when you're ready.",
-    primaryCta: { label: 'Explore Services', href: '#services-overview' },
+      "Pick followers, likes or views, compare the packages and order when you're ready. Instagram and Facebook services are available too.",
+    primaryCta: { label: 'See TikTok Services', href: '#tiktok-services' },
     secondaryCta: { label: 'Track an Order', href: '/track-order' },
     trustItems: [
       { id: 'secure', label: 'No Password Required', icon: 'shield' as const },
@@ -475,7 +480,7 @@ export const homepageHub = {
       commercialLabel: 'BUY TIKTOK FOLLOWERS',
       title: 'TikTok Followers Packages',
       intro:
-        'Buy TikTok followers when you want to increase the follower count shown on your profile. Choose a package that fits your account, provide your public TikTok username, and place your order without sharing your password.',
+        'Buy TikTok followers to grow the follower count on your profile. Choose a package size, enter your public TikTok username and complete your order without sharing your password. Followers apply to your profile, so they stay separate from the likes and views on individual videos.',
       points: [
         {
           title: 'Profile Follower Count',
@@ -511,7 +516,7 @@ export const homepageHub = {
       commercialLabel: 'BUY TIKTOK LIKES',
       title: 'TikTok Likes Packages',
       intro:
-        'Buy TikTok likes for a public video when you want to add more likes to that specific post. Pick the package size you need, enter the video link, and complete your order without giving NovaLikes your TikTok password.',
+        'Buy TikTok likes for a specific public video when you want it to show more engagement. Pick a package, paste the video link and complete your order without sharing your password. Likes go to that one video, not to your other uploads.',
       points: [
         {
           title: 'For Individual Videos',
@@ -547,7 +552,7 @@ export const homepageHub = {
       commercialLabel: 'BUY TIKTOK VIEWS',
       title: 'TikTok Views Packages',
       intro:
-        'Buy TikTok views for a public video when you want to increase the number of views shown on that post. Choose the view package you need, provide the video URL, and place your order without sharing your TikTok password.',
+        'Buy TikTok views for a public video when you want to raise the view count on that post. Choose the number of views, add the video link and place your order without sharing your password. Views are counted per video, so pick the one you want to work on.',
       points: [
         {
           title: 'For TikTok Videos',
@@ -695,6 +700,15 @@ export type HubStorySection = {
   footer?: string;
 };
 
+export type HomepageTikTokGuides = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  items: readonly { title: string; description: string; href: string }[];
+  cta: HubCta;
+};
+
 export type HomepageHub = typeof homepageHub & {
   crossPlatform?: {
     id: string;
@@ -713,4 +727,8 @@ export type HomepageHub = typeof homepageHub & {
   storySections?: HubStorySection[];
   /** Set at load time for market-specific homepage design (not from content JSON). */
   market?: Market;
+  /** Root English homepage only — overrides Instagram-first service group order. */
+  platformOrder?: Array<'instagram' | 'tiktok' | 'facebook'>;
+  /** Root English homepage only — Free TikTok Guides block after the TikTok group. */
+  tiktokGuides?: HomepageTikTokGuides;
 };

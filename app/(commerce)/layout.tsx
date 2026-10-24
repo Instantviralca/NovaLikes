@@ -1,18 +1,10 @@
 import type { ReactNode } from 'react';
 
-import { SiteLayout } from '@/components/layout/site-layout';
-import { getSiteChrome } from '@/lib/i18n/site-chrome';
-
-type CommerceLayoutProps = {
-  children: ReactNode;
-};
-
-export default async function CommerceLayout({ children }: CommerceLayoutProps) {
-  const chrome = await getSiteChrome();
-
-  return (
-    <SiteLayout illustrated={false} locale={chrome.locale} market={chrome.market} ui={chrome.ui}>
-      {children}
-    </SiteLayout>
-  );
+/**
+ * Commerce route group — leaf layouts own chrome:
+ * - `(storefront)` → full site nav/footer (cart, order-success)
+ * - `(checkout-flow)` → checkout-only shell (no site nav)
+ */
+export default function CommerceLayout({ children }: { children: ReactNode }) {
+  return children;
 }

@@ -16,7 +16,7 @@ export function AccountNavLink({ accountNav, className }: AccountNavLinkProps) {
       href={accountNav.href}
       prefetch={prefetchForHref(accountNav.href)}
       className={cn(
-        'rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground',
+        'inline-flex h-10 items-center rounded-xl px-3 text-sm font-semibold text-[var(--nl-ink)] transition-colors hover:text-[var(--nl-orange)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         className,
       )}
     >

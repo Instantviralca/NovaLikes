@@ -1,8 +1,14 @@
 'use client';
 
 import { formatMoney } from '@/lib/pricing/format';
-import { computeLineTotal, normalizeLineQuantity } from '@/lib/orders/line-quantity';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { SiteV2PlatformTile } from '@/components/site-v2/platform-tile';
+import {
+  getCartItemDestination,
+  getCartItemPrices,
+  getCartItemTitle,
+} from '@/components/site-v2/cart-helpers';
 import type { CartItem, CartTotals } from '@/types/cart';
 import { cn } from '@/lib/utils';
 
@@ -10,69 +16,91 @@ type CheckoutOrderSummaryProps = {
   items: CartItem[];
   totals: CartTotals;
   className?: string;
+  /** Navy panel variant (checkout left / mobile summary). */
+  variant?: 'panel' | 'navy';
+  couponCode?: string | null;
 };
+
+function SummaryLines({
+  items,
+  totals,
+  couponCode,
+}: {
+  items: CartItem[];
+  totals: CartTotals;
+  couponCode?: string | null;
+}) {
+  const { locale, ui } = useI18nChrome();
+  const discountLabel =
+    totals.discount.amount > 0 && couponCode
+      ? `${ui.cart.discount} (${couponCode})`
+      : ui.cart.discount;
+
+  return (
+    <>
+      <div className="co-lines">
+        {items.map((item) => {
+          const title = localizePackageDisplayName(getCartItemTitle(item), locale);
+          const dest = getCartItemDestination(item);
+          const { price, compareAt, currency } = getCartItemPrices(item);
+          return (
+            <div className="co-line" key={item.id}>
+              <SiteV2PlatformTile platformId={item.platformId} />
+              <span>
+                <b>{title}</b>
+                {dest ? <em dir="ltr">{dest}</em> : null}
+              </span>
+              <span className="p" dir="ltr">
+                {formatMoney(price, currency)}
+                {compareAt ? <s>{formatMoney(compareAt, currency)}</s> : null}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="co-sub">
+        <div>
+          <span>{ui.cart.subtotal}</span>
+          <span dir="ltr">{formatMoney(totals.subtotal.amount, totals.subtotal.currency)}</span>
+        </div>
+        {totals.discount.amount > 0 ? (
+          <div className="disc">
+            <span>{discountLabel}</span>
+            <span dir="ltr">
+              −{formatMoney(totals.discount.amount, totals.discount.currency)}
+            </span>
+          </div>
+        ) : null}
+      </div>
+    </>
+  );
+}
 
 export function CheckoutOrderSummary({
   items,
   totals,
   className,
+  variant = 'panel',
+  couponCode,
 }: CheckoutOrderSummaryProps) {
   const { ui } = useI18nChrome();
+
+  if (variant === 'navy') {
+    return (
+      <div className={cn(className)} aria-label={ui.cart.orderSummary}>
+        <SummaryLines items={items} totals={totals} couponCode={couponCode} />
+      </div>
+    );
+  }
+
   return (
-    <aside
-      className={cn(
-        'space-y-5 rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-card)] p-6 shadow-[var(--shadow-md)]',
-        className,
-      )}
-      aria-label={ui.cart.orderSummary}
-    >
-      <h2 className="text-lg font-bold tracking-tight">{ui.cart.orderSummary}</h2>
-      <ul className="space-y-3 text-sm">
-        {items.map((item) => (
-          <li
-            key={item.id}
-            className="rounded-xl border border-[var(--border-subtle)] bg-[var(--surface-muted)] p-3"
-          >
-            <p className="text-xs font-semibold tracking-wide text-[var(--brand-primary)] uppercase">
-              {item.serviceName}
-            </p>
-            <p className="mt-1 text-lg font-bold">{item.quantityLabel}</p>
-            <p className="text-[var(--text-secondary)]">{item.packageTitle}</p>
-            <p className="mt-1 text-sm text-[var(--text-secondary)]">
-              Qty: {normalizeLineQuantity(item.lineQuantity)}
-            </p>
-            {item.deliveryTime ? (
-              <p className="mt-1 text-xs text-[var(--text-secondary)]">
-                {ui.cart.delivery}: {item.deliveryTime}
-              </p>
-            ) : null}
-            <p className="mt-2 font-semibold text-[var(--brand-primary)]" dir="ltr">
-              {formatMoney(
-                computeLineTotal(item.unitPrice, item.lineQuantity),
-                item.currency,
-              )}
-            </p>
-          </li>
-        ))}
-      </ul>
-      <dl className="space-y-2 text-sm">
-        <div className="flex justify-between text-[var(--text-secondary)]">
-          <dt>{ui.cart.subtotal}</dt>
-          <dd dir="ltr">{formatMoney(totals.subtotal.amount, totals.subtotal.currency)}</dd>
-        </div>
-        {totals.discount.amount > 0 ? (
-          <div className="flex justify-between text-[var(--color-success)]">
-            <dt>{ui.cart.discount}</dt>
-            <dd dir="ltr">-{formatMoney(totals.discount.amount, totals.discount.currency)}</dd>
-          </div>
-        ) : null}
-        <div className="flex justify-between border-t border-[var(--border-subtle)] pt-4">
-          <dt className="text-lg font-semibold">{ui.cart.total}</dt>
-          <dd className="text-3xl font-bold tracking-tight text-[var(--brand-primary)]" aria-live="polite" dir="ltr">
-            {formatMoney(totals.total.amount, totals.total.currency)}
-          </dd>
-        </div>
-      </dl>
+    <aside className={cn('panel', className)} aria-label={ui.cart.orderSummary}>
+      <div className="panel-head">
+        <b>{ui.cart.orderSummary}</b>
+      </div>
+      <div className="sum">
+        <SummaryLines items={items} totals={totals} couponCode={couponCode} />
+      </div>
     </aside>
   );
 }

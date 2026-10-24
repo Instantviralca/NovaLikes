@@ -20,7 +20,7 @@ const PACKAGE_GUIDANCE: Record<string, string> = {
   'buy-instagram-views-pkg-500':
     'For a Reel stuck at a few hundred views that you want to look active.',
   'buy-instagram-views-pkg-1k':
-    'Our most popular choice — a solid start for a launch Reel or a post you are promoting.',
+    'Our most popular choice (5,000 views) — a solid start for a launch Reel or a post you are promoting.',
   'buy-instagram-views-pkg-5k':
     'For Reels that already perform reasonably well and need a bigger count to match.',
   'buy-instagram-views-pkg-10k':

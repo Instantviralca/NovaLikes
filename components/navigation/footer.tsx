@@ -104,7 +104,7 @@ export function Footer({
   return (
     <footer
       className={cn(
-        'mt-auto overflow-x-clip border-t border-[var(--border-subtle)] bg-white',
+        'mt-auto overflow-x-clip border-t border-[var(--nl-border)] bg-[var(--nl-bg-soft)]',
         className,
       )}
       role="contentinfo"
@@ -115,14 +115,14 @@ export function Footer({
             <span dir="ltr" className="inline-flex">
               <Logo href={homeHref} />
             </span>
-            <p className="mt-4 text-sm leading-relaxed text-[#6B6560]">{ui.footer.brandSummary}</p>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--nl-muted)]">{ui.footer.brandSummary}</p>
             <ul className="mt-4 space-y-2">
               {trustChips.map((item) => (
                 <li
                   key={item.label}
-                  className="flex min-w-0 items-center gap-2 text-sm font-medium text-[#44403C]"
+                  className="flex min-w-0 items-center gap-2 text-sm font-medium text-[var(--nl-body)]"
                 >
-                  <item.icon className="size-4 text-[#E85D04]" aria-hidden="true" />
+                  <item.icon className="size-4 text-[var(--nl-orange)]" aria-hidden="true" />
                   {item.label}
                 </li>
               ))}
@@ -134,8 +134,8 @@ export function Footer({
               const Icon = COLUMN_ICONS[column.id] ?? Flame;
               return (
                 <div key={column.id} className="min-w-0">
-                  <h3 className="flex items-center gap-1.5 text-sm font-semibold tracking-wide text-[#1C1917]">
-                    <Icon className="size-3.5 text-[#E85D04]" aria-hidden="true" />
+                  <h3 className="flex items-center gap-1.5 text-sm font-semibold tracking-wide text-[var(--nl-ink)]">
+                    <Icon className="size-3.5 text-[var(--nl-orange)]" aria-hidden="true" />
                     {column.title}
                   </h3>
                   <ul className="mt-4 space-y-2.5">
@@ -144,7 +144,7 @@ export function Footer({
                         <Link
                           href={link.href}
                           prefetch={prefetchForHref(link.href)}
-                          className="break-words text-sm text-[#6B6560] underline-offset-4 transition-colors hover:text-[#E85D04] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                          className="break-words text-sm text-[var(--nl-muted)] underline-offset-4 transition-colors hover:text-[var(--nl-orange)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:rgb(249_115_22_/_0.4)]"
                         >
                           {link.label}
                         </Link>

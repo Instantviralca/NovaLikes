@@ -7,6 +7,8 @@ export type LearnLoadMoreProps = {
   onLoadMore: () => void;
   disabled?: boolean;
   className?: string;
+  /** `v2` renders the site-v2 `.more-row` + `.btn.ghost` (inside SiteV2Shell). */
+  variant?: 'default' | 'v2';
 };
 
 /**
@@ -17,7 +19,23 @@ export function LearnLoadMore({
   onLoadMore,
   disabled,
   className,
+  variant = 'default',
 }: LearnLoadMoreProps) {
+  if (variant === 'v2') {
+    return (
+      <div className={cn('more-row', className)}>
+        <button
+          type="button"
+          className="btn ghost"
+          disabled={disabled}
+          onClick={onLoadMore}
+        >
+          Load More
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className={cn('flex justify-center', className)}>
       <Button

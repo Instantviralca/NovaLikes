@@ -1,8 +1,16 @@
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import {
+  ArrowRight,
+  Eye,
+  Heart,
+  MessageCircle,
+  UserPlus,
+  type LucideIcon,
+} from 'lucide-react';
 
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { getServiceBySlug } from '@/data/services';
+import { formatCardPrice } from '@/lib/marketing/home-v5/from-price';
 
 const PLATFORM_LABEL: Record<string, string> = {
   instagram: 'Instagram',
@@ -28,6 +36,13 @@ export function serviceClusterDescription(slug: string): string | null {
   return `Compare available ${platform} ${service.shortName.toLowerCase()} packages.`;
 }
 
+function serviceIcon(slug: string): LucideIcon {
+  if (slug.includes('like')) return Heart;
+  if (slug.includes('view')) return Eye;
+  if (slug.includes('comment')) return MessageCircle;
+  return UserPlus;
+}
+
 type ArticleServiceClusterProps = {
   heading: string;
   text: string;
@@ -35,7 +50,8 @@ type ArticleServiceClusterProps = {
 };
 
 /**
- * Editorial mid-article service cluster. Not a pricing grid.
+ * Editorial mid-article service cluster.
+ * Site-v2: same `.svc-cards` treatment as Related services, with "From $X".
  */
 export function ArticleServiceCluster({
   heading,
@@ -45,47 +61,42 @@ export function ArticleServiceCluster({
   const items = serviceSlugs
     .map((slug) => {
       const label = serviceClusterLabel(slug);
-      const description = serviceClusterDescription(slug);
       const service = getServiceBySlug(slug);
       if (!label || !service) return null;
-      return { href: service.url, label, description };
+      return {
+        href: service.url,
+        label,
+        price: formatCardPrice(slug),
+        slug,
+      };
     })
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   if (items.length === 0) return null;
 
   return (
-    <aside
-      data-article-cta="service-cluster"
-      className="not-prose rounded-2xl border border-[#F0E4D8] bg-[#FFF8F3] px-5 py-6 sm:px-6"
-    >
-      <p className="text-[11px] font-semibold tracking-[0.16em] text-[#E85D04] uppercase">
-        NovaLikes
-      </p>
-      <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#1C1917]">
-        {heading}
-      </h3>
-      <p className="mt-2 text-[15px] leading-relaxed text-[#57534E]">{text}</p>
-      <ul className="mt-5 grid gap-2.5">
-        {items.map((item) => (
-          <li key={item.href}>
-            <Link
-              href={item.href}
-              className="flex items-center justify-between gap-3 rounded-xl border border-[#F0E4D8] bg-white px-4 py-3 text-[#1C1917] outline-none transition-colors hover:border-[#FDBA74] hover:bg-[#FFF1E6] focus-visible:ring-2 focus-visible:ring-[#E85D04]"
-            >
-              <span>
-                <span className="block text-sm font-semibold">{item.label}</span>
-                {item.description ? (
-                  <span className="mt-0.5 block text-xs text-[#78716C]">
-                    {item.description}
-                  </span>
-                ) : null}
+    <aside data-article-cta="service-cluster">
+      <h3>{heading}</h3>
+      <p>{text}</p>
+      <div className="svc-cards" style={{ marginTop: 16 }}>
+        {items.map((item) => {
+          const Icon = serviceIcon(item.slug);
+          return (
+            <Link key={item.href} className="svc-card" href={item.href}>
+              <span className="si">
+                <Icon className="ic" aria-hidden="true" />
               </span>
-              <ArrowUpRight className="size-4 shrink-0 text-[#E85D04]" aria-hidden />
+              <span>
+                <b>{item.label}</b>
+                {item.price ? <em>{item.price}</em> : null}
+              </span>
+              <span className="sq">
+                <ArrowRight className="ic" strokeWidth={2.5} aria-hidden="true" />
+              </span>
             </Link>
-          </li>
-        ))}
-      </ul>
+          );
+        })}
+      </div>
     </aside>
   );
 }

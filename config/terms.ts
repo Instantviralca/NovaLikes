@@ -39,7 +39,7 @@ export const termsConfig: TermsConfig = {
   supportEmail: site.supportEmail,
   mailingAddress: undefined,
   effectiveDate: '2026-08-17',
-  lastUpdatedDate: '2026-08-17',
+  lastUpdatedDate: '2026-10-14',
   governingLaw: undefined,
   disputeVenue: undefined,
   minimumCustomerAge: undefined,

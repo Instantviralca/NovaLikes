@@ -20,7 +20,7 @@ export function PackageBadge({ badge, className }: PackageBadgeProps) {
     <Badge
       variant="secondary"
       className={cn(
-        'rounded-full border-0 bg-[var(--brand-accent-soft)] px-3 py-1 text-[10px] font-bold tracking-wide text-[var(--brand-primary)] uppercase',
+        'rounded-full border-0 bg-[var(--nl-bg-soft)] px-3 py-1 text-[10px] font-bold tracking-wide text-[var(--brand-primary)] uppercase',
         className,
       )}
       aria-label={`Package badge: ${label}`}

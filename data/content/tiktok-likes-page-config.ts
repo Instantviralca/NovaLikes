@@ -20,7 +20,7 @@ const PACKAGE_GUIDANCE: Record<string, string> = {
   'tt-l-500':
     'For videos with roughly 5,000–10,000 views that look quieter than they should.',
   'tt-l-1000':
-    'Our most popular package — fits videos already past 10,000 views, including pinned and product videos.',
+    'Our most popular package (200 likes) — fits videos already past a few thousand views, including pinned and product videos.',
   'tt-l-5000':
     'For videos with strong reach, tens of thousands of views and up. Gradual delivery recommended.',
   'tt-l-10000':

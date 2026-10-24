@@ -9,7 +9,7 @@ type OrderSummaryCardProps = {
 function CopyableValue({ value }: { value: string }) {
   const isUrl = /^https?:\/\//i.test(value);
   return (
-    <dd className="break-all font-medium">
+    <dd className="break-all whitespace-pre-wrap font-medium">
       {isUrl ? (
         <a
           href={value}
@@ -126,7 +126,8 @@ export function OrderSummaryCard({ order }: OrderSummaryCardProps) {
                   <CopyableValue value={line.targetDisplay} />
                 </div>
               </dl>
-              {line.fulfillmentFields.length > 1 ? (
+              {line.fulfillmentFields.length > 1 ||
+              line.fulfillmentFields.some((field) => field.key === 'notes') ? (
                 <dl className="space-y-2 border-t pt-2 text-sm">
                   {line.fulfillmentFields.map((field) => (
                     <div key={field.key}>

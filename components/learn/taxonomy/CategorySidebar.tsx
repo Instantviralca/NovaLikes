@@ -38,7 +38,7 @@ export function CategorySidebar({
     >
       {relatedCategories.length > 0 ? (
         <nav aria-label="Related categories">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--nl-orange)]">
             More topics
           </p>
           <ul className="mt-3 flex flex-wrap gap-1.5">
@@ -46,7 +46,7 @@ export function CategorySidebar({
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  className="inline-flex h-8 items-center rounded-full border border-[#E8DDD3] bg-white px-3 text-[13px] font-medium text-neutral-700 outline-none transition-colors hover:border-[#F0C7A8] hover:bg-[#FFF8F3] focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2"
+                  className="inline-flex h-8 items-center rounded-full border border-[var(--nl-border)] bg-white px-3 text-[13px] font-medium text-neutral-700 outline-none transition-colors hover:border-[var(--nl-border)] hover:bg-[var(--nl-bg-soft)] focus-visible:ring-2 focus-visible:ring-[var(--nl-orange)] focus-visible:ring-offset-2"
                 >
                   {item.name}
                 </Link>
@@ -58,7 +58,7 @@ export function CategorySidebar({
 
       {relatedServices.length > 0 ? (
         <nav aria-label="Related services">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--nl-orange)]">
             Related
           </p>
           <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">

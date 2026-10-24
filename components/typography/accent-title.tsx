@@ -16,7 +16,7 @@ export function splitAccentInTitle(
   };
 }
 
-/** Orange last word — tools-hub heading style. Does not change the words. */
+/** Gradient last word — tools-hub / company heading style. Does not change the words. */
 export function accentLastWord(title: string): ReactNode {
   const parts = title.trim().split(/\s+/);
   if (parts.length < 2) return title;
@@ -24,7 +24,7 @@ export function accentLastWord(title: string): ReactNode {
   return (
     <>
       {parts.join(' ')}{' '}
-      <span className="text-[var(--brand-primary)]">{last}</span>
+      <span className="nl-grad-text">{last}</span>
     </>
   );
 }

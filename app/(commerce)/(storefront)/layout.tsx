@@ -1,0 +1,18 @@
+import type { ReactNode } from 'react';
+
+import { SiteLayout } from '@/components/layout/site-layout';
+import { getSiteChrome } from '@/lib/i18n/site-chrome';
+
+type StorefrontLayoutProps = {
+  children: ReactNode;
+};
+
+export default async function StorefrontLayout({ children }: StorefrontLayoutProps) {
+  const chrome = await getSiteChrome();
+
+  return (
+    <SiteLayout illustrated={false} locale={chrome.locale} market={chrome.market} ui={chrome.ui}>
+      {children}
+    </SiteLayout>
+  );
+}

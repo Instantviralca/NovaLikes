@@ -2,12 +2,7 @@
 
 import Link from 'next/link';
 
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/cards/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/cards/card';
 import { PlatformIcon } from '@/components/marketing/platform-selector/platform-icon';
 import { HoverLift } from '@/components/motion/hover-lift';
 import { Button } from '@/components/ui/button';

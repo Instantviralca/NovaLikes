@@ -48,7 +48,7 @@ export function AboutCtaIllustration({ className }: { className?: string }) {
         style={{ background: `${brand}28` }}
       />
 
-      <div className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/95 p-3 shadow-[0_20px_44px_-24px_rgba(28,25,23,0.5)] backdrop-blur-sm">
+      <div className="-sm relative overflow-hidden rounded-2xl border border-white/70 bg-white/95 p-3 shadow-[0_20px_44px_-24px_rgba(28,25,23,0.5)]">
         <div className="mb-2 flex items-center gap-2">
           <span
             className="flex size-7 items-center justify-center rounded-lg text-[8px] font-black text-white"

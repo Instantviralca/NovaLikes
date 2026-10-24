@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingBag } from 'lucide-react';
 
 import { useCart } from '@/lib/cart';
 import { useCartUi } from '@/lib/cart/cart-ui-context';
 import { cn } from '@/lib/utils';
 
 /**
- * Navbar cart icon — opens soft cart drawer (Buzzoid-style).
+ * Navbar cart — shopping-bag icon in a soft tile (Buzzoid-style).
  */
 export function CartNavButton({ className }: { className?: string }) {
   const { totals, isHydrated } = useCart();
@@ -32,13 +32,13 @@ export function CartNavButton({ className }: { className?: string }) {
       type="button"
       onClick={openCart}
       className={cn(
-        'relative inline-flex size-10 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        'relative inline-flex size-10 items-center justify-center rounded-xl border border-[var(--nl-border)] bg-[var(--nl-bg-soft)] text-[var(--nl-ink)] transition-colors hover:bg-[#e9ecf2] hover:text-[var(--nl-ink)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         className,
       )}
       aria-label={count > 0 ? `Cart, ${count} items` : 'Open cart'}
       data-analytics="nav-cart"
     >
-      <ShoppingCart className="size-5" aria-hidden="true" />
+      <ShoppingBag className="size-[1.15rem]" strokeWidth={1.75} aria-hidden="true" />
       {count > 0 ? (
         <span
           className={cn(

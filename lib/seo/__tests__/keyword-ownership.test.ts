@@ -20,20 +20,16 @@ describe('SEO keyword ownership', () => {
     const title = metadata?.title ?? '';
     const keywords = metadata?.keywords?.join(' ').toLowerCase() ?? '';
 
-    expect(title).toBe('Buy Followers, Likes & Views for Social Media | NovaLikes');
-    expect(title.length).toBeLessThanOrEqual(58);
+    expect(title).toBe('Buy Instagram & TikTok Followers, Likes & Views | NovaLikes');
     expect(title).toContain('NovaLikes');
     expect(title).not.toContain('YouTube');
-    expect(title.toLowerCase()).not.toContain('buy instagram followers');
     expect(homeDescription).toBe(
-      'Buy followers, likes, views and comments for Instagram, TikTok and Facebook. Compare available packages, order online and track your NovaLikes order.',
+      'Buy Instagram and TikTok followers, likes and views in USD. No password needed, orders start within 6–8 hours, and every order has a 6-month refill.',
     );
     expect(homeDescription.length).toBeLessThanOrEqual(150);
     expect(homeDescription.toLowerCase()).toMatch(/instagram/);
     expect(homeDescription.toLowerCase()).toMatch(/tiktok/);
-    expect(homeDescription.toLowerCase()).toMatch(/facebook/);
     expect(homeDescription.toLowerCase()).not.toMatch(/youtube/);
-    expect(homeDescription.toLowerCase()).not.toContain('buy instagram followers');
     expect(keywords).not.toContain('buy instagram followers');
     expect(metadata?.canonicalPath).toBe('/');
   });

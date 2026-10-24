@@ -1,6 +1,11 @@
 import Link from 'next/link';
 
 import { ArticleShare } from '@/components/learn/article/ArticleShare';
+import {
+  formatLearnDate,
+  formatLearnMinRead,
+} from '@/components/learn/site-v2/learn-format';
+import { learnCategoryPath } from '@/config/routes';
 import { getAuthorById } from '@/lib/authors';
 import { absoluteUrl } from '@/seo/canonical';
 import type { PublicLearnArticle } from '@/types/learn';
@@ -9,83 +14,72 @@ type ArticleMetaProps = {
   article: PublicLearnArticle;
 };
 
-function formatDate(iso: string): string {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return '';
-  return new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }).format(date);
-}
-
-function MetaDot() {
+function Dot() {
   return (
-    <span className="hidden text-neutral-300 sm:inline" aria-hidden>
+    <span className="dot" aria-hidden="true">
       ·
     </span>
   );
 }
 
 /**
- * Article metadata — Documents 15.02 + 15.03 + 15.04.
- * Author, dates, reading time, and share actions.
+ * Article byline — Documents 15.02 + 15.03 + 15.04, site-v2 `.byline`.
+ * Avatar initial, author, dates · min read · category, and share actions.
  */
 export function ArticleMeta({ article }: ArticleMetaProps) {
   const registryAuthor = getAuthorById(article.authorId);
   const author = registryAuthor ?? article.author;
-  const publishedLabel = formatDate(article.publishedAt);
+  const publishedLabel = formatLearnDate(article.publishedAt);
   const updatedLabel =
     article.showModifiedDate && article.updatedAt !== article.publishedAt
-      ? formatDate(article.updatedAt)
+      ? formatLearnDate(article.updatedAt)
       : null;
+  const initial = author?.name.trim().slice(0, 1).toUpperCase() || '?';
 
   return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-neutral-500">
+    <div className="byline">
+      <div className="author">
+        {author ? (
+          <span className="avatar" aria-hidden="true">
+            {initial}
+          </span>
+        ) : null}
         <span>
-          {registryAuthor ? (
-            <>
-              By{' '}
-              <Link
-                href={registryAuthor.profilePath}
-                className="font-semibold text-neutral-900 underline-offset-2 outline-none hover:underline focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
-              >
-                {registryAuthor.name}
-              </Link>
-            </>
-          ) : author ? (
-            <>
-              By <span className="font-semibold text-neutral-900">{author.name}</span>
-            </>
-          ) : (
-            <span>Author information unavailable</span>
-          )}
+          <b>
+            {registryAuthor ? (
+              <>
+                By <Link href={registryAuthor.profilePath}>{registryAuthor.name}</Link>
+              </>
+            ) : author ? (
+              <>By {author.name}</>
+            ) : (
+              <>Author information unavailable</>
+            )}
+          </b>
+          <span className="meta">
+            {publishedLabel ? (
+              <span>
+                Published <time dateTime={article.publishedAt}>{publishedLabel}</time>
+              </span>
+            ) : null}
+            {updatedLabel ? (
+              <>
+                <Dot />
+                <span>
+                  Updated <time dateTime={article.updatedAt}>{updatedLabel}</time>
+                </span>
+              </>
+            ) : null}
+            {publishedLabel || updatedLabel ? <Dot /> : null}
+            <span>{formatLearnMinRead(article.readingTime)}</span>
+            <Dot />
+            <Link className="cat-chip" href={learnCategoryPath(article.category)}>
+              {article.categoryName}
+            </Link>
+          </span>
         </span>
-        {publishedLabel ? (
-          <>
-            <MetaDot />
-            <span>
-              Published{' '}
-              <time dateTime={article.publishedAt}>{publishedLabel}</time>
-            </span>
-          </>
-        ) : null}
-        {updatedLabel ? (
-          <>
-            <MetaDot />
-            <span>
-              Updated{' '}
-              <time dateTime={article.updatedAt}>{updatedLabel}</time>
-            </span>
-          </>
-        ) : null}
-        <MetaDot />
-        <span>{article.readingTime} min read</span>
       </div>
-      <div className="border-t border-[#F0E4D8] pt-4">
-        <ArticleShare url={absoluteUrl(article.href)} title={article.title} />
-      </div>
+      <ArticleShare url={absoluteUrl(article.href)} title={article.title} />
     </div>
   );
 }

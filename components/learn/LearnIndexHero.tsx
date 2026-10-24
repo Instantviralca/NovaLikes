@@ -47,7 +47,7 @@ export function LearnIndexHero({
     : null;
 
   return (
-    <Section className="overflow-x-hidden border-b border-[#F0E4D8] bg-hero-wash">
+    <Section className="overflow-x-hidden border-b border-[var(--nl-border)] bg-[var(--nl-bg-soft)]">
       <Container className="py-10 md:py-14">
         <FadeUp immediate className="max-w-3xl space-y-4">
           {breadcrumbs.length > 0 ? (
@@ -62,10 +62,10 @@ export function LearnIndexHero({
             actually work, without hype.
           </p>
           <div className="flex flex-wrap items-center gap-2 pt-1 text-[13px] text-neutral-500">
-            <span className="rounded-full border border-[#F0E4D8] bg-white px-3 py-1 font-medium text-neutral-700">
+            <span className="rounded-full border border-[var(--nl-border)] bg-white px-3 py-1 font-medium text-neutral-700">
               {articleCount} {articleCount === 1 ? 'guide' : 'guides'}
             </span>
-            <span className="rounded-full border border-[#F0E4D8] bg-white px-3 py-1 font-medium text-neutral-700">
+            <span className="rounded-full border border-[var(--nl-border)] bg-white px-3 py-1 font-medium text-neutral-700">
               {categoryCount} {categoryCount === 1 ? 'topic' : 'topics'}
             </span>
             <Button asChild variant="outline" className="h-8 rounded-full px-3 text-xs">
@@ -76,8 +76,8 @@ export function LearnIndexHero({
 
         {featured ? (
           <FadeUp delay={0.06} className="mt-8 md:mt-10">
-            <article className="group relative overflow-hidden rounded-[1.75rem] bg-white shadow-[0_22px_50px_-28px_rgba(50,30,20,0.4)] ring-1 ring-black/[0.04] lg:grid lg:grid-cols-[1.15fr_1fr]">
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#FFF8F3] lg:aspect-auto lg:min-h-[22rem]">
+            <article className="group relative overflow-hidden rounded-2xl border border-[var(--nl-border)] bg-white shadow-sm lg:grid lg:grid-cols-[1.15fr_1fr]">
+              <div className="relative aspect-[16/10] overflow-hidden bg-[var(--nl-bg-soft)] lg:aspect-auto lg:min-h-[22rem]">
                 {featured.featuredImage ? (
                   <ArticleCardImage
                     image={featured.featuredImage}
@@ -86,7 +86,7 @@ export function LearnIndexHero({
                     sizes="(max-width: 1024px) 100vw, 55vw"
                   />
                 ) : (
-                  <div className="flex h-full min-h-[16rem] items-center justify-center bg-[#FFF8F3]">
+                  <div className="flex h-full min-h-[16rem] items-center justify-center bg-[var(--nl-bg-soft)]">
                     <Image
                       src="/assets/logos/logo.svg"
                       alt=""
@@ -98,13 +98,13 @@ export function LearnIndexHero({
                 )}
               </div>
               <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
-                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--nl-orange)]">
                   Latest · {featured.categoryName}
                 </p>
                 <p className="mt-2 text-2xl font-bold tracking-tight text-neutral-950 sm:text-[1.85rem]">
                   <Link
                     href={featured.href}
-                    className="rounded-sm outline-none after:absolute after:inset-0 focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2"
+                    className="rounded-sm outline-none after:absolute after:inset-0 focus-visible:ring-2 focus-visible:ring-[var(--nl-orange)] focus-visible:ring-offset-2"
                   >
                     <span className="group-hover:underline">{featured.title}</span>
                   </Link>
@@ -117,7 +117,7 @@ export function LearnIndexHero({
                     .filter(Boolean)
                     .join(' · ')}
                 </p>
-                <p className="mt-5 text-sm font-semibold text-[#E85D04]">
+                <p className="mt-5 text-sm font-semibold text-[var(--nl-orange)]">
                   Read guide →
                 </p>
               </div>

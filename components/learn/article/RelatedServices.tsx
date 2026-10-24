@@ -1,5 +1,12 @@
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import {
+  ArrowRight,
+  Eye,
+  Heart,
+  MessageCircle,
+  UserPlus,
+  type LucideIcon,
+} from 'lucide-react';
 
 import { getServiceBySlug } from '@/data/services';
 import type { InternalLink } from '@/types/linking';
@@ -26,8 +33,44 @@ function cardDescription(slug: string): string | undefined {
   return `Compare available ${platform} ${service.shortName.toLowerCase()} packages.`;
 }
 
+/** Visual-only icon pick from the service slug (followers / likes / views / comments). */
+function serviceIcon(slug: string): LucideIcon {
+  if (slug.includes('like')) return Heart;
+  if (slug.includes('view')) return Eye;
+  if (slug.includes('comment')) return MessageCircle;
+  return UserPlus;
+}
+
+function ServiceCard({
+  href,
+  label,
+  description,
+  slug,
+}: {
+  href: string;
+  label: string;
+  description?: string;
+  slug: string;
+}) {
+  const Icon = serviceIcon(slug);
+  return (
+    <Link className="svc-card" href={href}>
+      <span className="si">
+        <Icon className="ic" aria-hidden="true" />
+      </span>
+      <span>
+        <b>{label}</b>
+        {description ? <em>{description}</em> : null}
+      </span>
+      <span className="sq">
+        <ArrowRight className="ic" strokeWidth={2.5} aria-hidden="true" />
+      </span>
+    </Link>
+  );
+}
+
 /**
- * Related services — Document 15.02 + 14.05.
+ * Related services — Document 15.02 + 14.05, site-v2 `.svc-cards`.
  * Compact cards for contextually related destinations only.
  */
 export function RelatedServices({
@@ -38,53 +81,29 @@ export function RelatedServices({
   if (!prominentCta && services.length === 0) return null;
 
   return (
-    <section aria-labelledby="article-related-services" className="space-y-4">
-      <h2
-        id="article-related-services"
-        className="text-xl font-semibold tracking-tight text-[#1C1917]"
-      >
+    <section aria-labelledby="article-related-services">
+      <h2 id="article-related-services" className="block-title">
         {title}
       </h2>
-
-      {prominentCta ? (
-        <Link
-          href={`/${prominentCta.serviceSlug}`}
-          className="flex items-center justify-between gap-3 rounded-2xl border border-[#1C1917] bg-[#1C1917] px-5 py-4 text-white outline-none focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2"
-        >
-          <span>
-            <span className="block font-semibold">{prominentCta.label}</span>
-            {prominentCta.description ? (
-              <span className="mt-1 block text-sm text-white/70">
-                {prominentCta.description}
-              </span>
-            ) : null}
-          </span>
-          <ArrowUpRight className="size-4 shrink-0" aria-hidden />
-        </Link>
-      ) : null}
-
-      {services.length > 0 ? (
-        <ul className="grid gap-3">
-          {services.map((service) => (
-            <li key={service.href}>
-              <Link
-                href={service.href}
-                className="flex items-center justify-between gap-3 rounded-2xl border border-[#F0E4D8] bg-white px-4 py-3.5 outline-none transition-colors hover:border-[#FDBA74] hover:bg-[#FFF8F3] focus-visible:ring-2 focus-visible:ring-[#E85D04]"
-              >
-                <span>
-                  <span className="block text-sm font-semibold text-[#1C1917]">
-                    {service.label}
-                  </span>
-                  <span className="mt-0.5 block text-xs leading-relaxed text-[#78716C]">
-                    {cardDescription(service.slug)}
-                  </span>
-                </span>
-                <ArrowUpRight className="size-4 shrink-0 text-[#E85D04]" aria-hidden />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ) : null}
+      <div className="svc-cards">
+        {prominentCta ? (
+          <ServiceCard
+            href={`/${prominentCta.serviceSlug}`}
+            label={prominentCta.label}
+            description={prominentCta.description}
+            slug={prominentCta.serviceSlug}
+          />
+        ) : null}
+        {services.map((service) => (
+          <ServiceCard
+            key={service.href}
+            href={service.href}
+            label={service.label}
+            description={cardDescription(service.slug)}
+            slug={service.slug}
+          />
+        ))}
+      </div>
     </section>
   );
 }

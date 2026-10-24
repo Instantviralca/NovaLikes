@@ -16,7 +16,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 /**
  * Fixed bottom-right WhatsApp chat button for public SiteLayout pages.
- * Hidden automatically on /admin and /author (those layouts do not use SiteLayout).
+ * On mobile, sits above sticky CTA bars via --nl-sticky-bar-h (+ 12px).
  */
 export function WhatsAppFloatButton({ className }: { className?: string }) {
   const href = `https://wa.me/${site.whatsappNumber}`;
@@ -28,12 +28,13 @@ export function WhatsAppFloatButton({ className }: { className?: string }) {
       rel="noopener noreferrer"
       aria-label="Chat with NovaLikes on WhatsApp"
       className={cn(
-        // Mobile: sit above sticky CTAs; desktop: standard corner
         'fixed z-[60] inline-flex size-14 items-center justify-center rounded-full',
         'bg-[#25D366] text-white shadow-lg shadow-black/20',
-        'transition-transform hover:scale-105 hover:bg-[#1ebe57] focus-visible:outline-none',
+        'transition-[transform,bottom] duration-200 hover:scale-105 hover:bg-[#1ebe57] focus-visible:outline-none',
         'focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2',
-        'bottom-20 end-4 md:bottom-6 md:end-6',
+        // Mobile: bar height + 12px when sticky visible; else comfortable corner
+        'bottom-[max(1.25rem,calc(var(--nl-sticky-bar-h,0px)+12px))] end-4',
+        'md:bottom-6 md:end-6',
         className,
       )}
     >

@@ -117,11 +117,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Gli ordini vengono effettuati tramite checkout come ospite usando le informazioni richieste per il servizio selezionato. Un account cliente NovaLikes separato non è necessario per effettuare un ordine."
+          "text": "Puoi effettuare un ordine come ospite o dopo aver effettuato l’accesso a un account cliente NovaLikes. Non è necessario un account per effettuare un ordine."
         },
         {
           "type": "paragraph",
-          "text": "Dopo che il pagamento è stato avviato o confermato, puoi monitorare gli aggiornamenti di stato disponibili tramite il tracciamento dell’ordine usando il riferimento dell’ordine e l’email usata in checkout."
+          "text": "Dopo l’avvio o la conferma del pagamento, puoi seguire gli aggiornamenti di stato disponibili tramite il tracciamento dell’ordine usando il riferimento dell’ordine e l’email del checkout, oppure dalla dashboard del tuo account se l’ordine è collegato al tuo account."
         },
         {
           "type": "paragraph",

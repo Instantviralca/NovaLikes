@@ -9,7 +9,7 @@ type ArticleFeaturedImageProps = {
 };
 
 /**
- * Featured article image — Document 15.02.
+ * Featured article image — Document 15.02, site-v2 `.hero-img` (16:9, radius 22).
  * Prefers 1600×900 local assets via next/image. No external hotlinking.
  */
 export function ArticleFeaturedImage({
@@ -19,22 +19,19 @@ export function ArticleFeaturedImage({
   const alt = image.decorative ? '' : image.alt;
 
   return (
-    <figure className="overflow-hidden rounded-2xl border border-[#F0E4D8] bg-[#FFF8F3]">
+    <figure className="hero-img">
       <Image
         src={image.src}
         alt={alt}
         width={image.width}
         height={image.height}
         priority={priority}
-        className="h-auto w-full object-contain"
-        sizes="(max-width: 768px) 100vw, 800px"
+        sizes="(max-width: 1024px) 100vw, 720px"
       />
       {image.caption || image.credit ? (
-        <figcaption className="border-t border-[#F0E4D8] px-4 py-3 text-sm text-[#78716C]">
+        <figcaption>
           {image.caption}
-          {image.credit ? (
-            <span className="mt-1 block text-xs">Credit: {image.credit}</span>
-          ) : null}
+          {image.credit ? <span>Credit: {image.credit}</span> : null}
         </figcaption>
       ) : null}
     </figure>

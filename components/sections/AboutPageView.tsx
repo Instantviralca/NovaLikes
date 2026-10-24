@@ -12,10 +12,7 @@ import {
   Users,
 } from 'lucide-react';
 
-import {
-  AboutFinalBannerCta,
-  AboutPageViewTracker,
-} from '@/components/sections/about/about-cta';
+import { AboutFinalBannerCta, AboutPageViewTracker } from '@/components/sections/about/about-cta';
 import { AboutHeroIllustration } from '@/components/sections/about/about-hero-illustration';
 import { AboutTrustStats } from '@/components/sections/about/about-trust-stats';
 import { Container } from '@/components/layout/container';
@@ -24,12 +21,13 @@ import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { Heading } from '@/components/typography/heading';
 import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
+import { GradientHeading } from '@/components/typography/gradient-heading';
 import { Text } from '@/components/typography/text';
 import { routes } from '@/config/routes';
+import { H1_HIGHLIGHTS } from '@/data/content/service-hero-rewrites';
 import { getAboutContent } from '@/data/content/company';
 import { getEnglishAboutSource } from '@/lib/i18n/content/company-english';
 import type { AboutPageOverlay } from '@/lib/i18n/content/company-english';
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { cn } from '@/lib/utils';
 import type { AboutPageContent } from '@/types/content';
 
@@ -38,7 +36,7 @@ const WHY_ICON_COLORS = [
   'bg-[#E8F1FF] text-[#2563EB]',
   'bg-[#F3E8FF] text-[#7C3AED]',
   'bg-[#E8F8EF] text-[#16A34A]',
-  'bg-[#FFF1E6] text-[var(--brand-primary)]',
+  'bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]',
   'bg-[#FFE8F1] text-[#DB2777]',
 ] as const;
 
@@ -49,8 +47,6 @@ type AboutPageViewProps = {
   chrome?: AboutPageOverlay['chrome'];
   homeLabel?: string;
   homeHref?: string;
-  quickAnswerHeading?: string;
-  quickAnswerText?: string;
 };
 
 /**
@@ -61,13 +57,8 @@ export function AboutPageView({
   chrome = getEnglishAboutSource().chrome,
   homeLabel = 'Home',
   homeHref = routes.home,
-  quickAnswerHeading,
-  quickAnswerText,
 }: AboutPageViewProps) {
-  const breadcrumbs = [
-    { label: homeLabel, href: homeHref },
-    { label: chrome.breadcrumb },
-  ];
+  const breadcrumbs = [{ label: homeLabel, href: homeHref }, { label: chrome.breadcrumb }];
 
   const heroParagraphs = content.hero.description
     .split(/\n\n+/)
@@ -98,9 +89,12 @@ export function AboutPageView({
                   {content.hero.eyebrow}
                 </p>
               ) : null}
-              <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
-                {accentLastWord(content.hero.title)}
-              </Heading>
+              <GradientHeading
+                as="h1"
+                text={content.hero.title}
+                highlight={H1_HIGHLIGHTS['/about']}
+                className={`${HERO_HEADING_CLASS} font-bold`}
+              />
               <div className="space-y-3">
                 {heroParagraphs.map((paragraph) => (
                   <Text
@@ -138,14 +132,6 @@ export function AboutPageView({
         </Container>
       </Section>
 
-      {quickAnswerText ? (
-        <Section spacing="sm" className="bg-transparent">
-          <Container>
-            <QuickAnswer heading={quickAnswerHeading ?? 'Quick answer'} text={quickAnswerText} />
-          </Container>
-        </Section>
-      ) : null}
-
       {/* 2. Stats bar */}
       <AboutTrustStats
         ariaLabel={chrome.statsAria}
@@ -168,7 +154,7 @@ export function AboutPageView({
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="relative mx-auto w-full max-w-[22rem] lg:mx-0 lg:max-w-[26rem]">
               <div
-                className="pointer-events-none absolute top-1/2 left-1/2 size-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFF1E6]"
+                className="pointer-events-none absolute top-1/2 left-1/2 size-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--nl-bg-soft)]"
                 aria-hidden={true}
               />
               <Image
@@ -227,7 +213,7 @@ export function AboutPageView({
               return (
                 <div
                   key={item.id}
-                  className="flex h-full flex-col items-center rounded-2xl border border-[var(--border-subtle)] bg-white px-4 py-6 text-center shadow-[0_10px_30px_-24px_rgba(28,25,23,0.35)]"
+                  className="flex h-full flex-col items-center rounded-2xl border border-[var(--nl-border)] bg-white px-4 py-6 text-center shadow-sm"
                 >
                   <span
                     className={cn(
@@ -279,7 +265,7 @@ export function AboutPageView({
                       key={item.id}
                       className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left"
                     >
-                      <span className="flex size-10 items-center justify-center rounded-xl border border-[var(--border-subtle)] bg-white text-[var(--text-secondary)]">
+                      <span className="flex size-10 items-center justify-center rounded-xl border border-[var(--nl-border)] bg-white text-[var(--text-secondary)]">
                         <Icon className="size-4" strokeWidth={2} aria-hidden />
                       </span>
                       <p className="text-sm font-semibold text-[var(--text-primary)]">
@@ -316,21 +302,14 @@ export function AboutPageView({
         aria-labelledby="about-final-cta-heading"
       >
         <Container>
-          <div className="flex flex-col items-center gap-5 rounded-[1.75rem] bg-[var(--brand-primary)] px-6 py-7 text-center sm:flex-row sm:gap-6 sm:px-8 sm:py-8 sm:text-left lg:gap-8">
+          <div className="bg-nl-grad flex flex-col items-center gap-5 rounded-2xl px-6 py-7 text-center sm:flex-row sm:gap-6 sm:px-8 sm:py-8 sm:text-left lg:gap-8">
             <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/15 text-white">
               <Heart className="size-7 fill-white" aria-hidden />
             </span>
             <div className="min-w-0 flex-1">
-              <Heading
-                as="h2"
-                size="h3"
-                id="about-final-cta-heading"
-                className="!text-white"
-              >
+              <Heading as="h2" size="h3" id="about-final-cta-heading" className="!text-white">
                 {content.finalCta.title}{' '}
-                <span className="font-normal text-white/95">
-                  {content.finalCta.description}
-                </span>
+                <span className="font-normal text-white/95">{content.finalCta.description}</span>
               </Heading>
             </div>
             <AboutFinalBannerCta

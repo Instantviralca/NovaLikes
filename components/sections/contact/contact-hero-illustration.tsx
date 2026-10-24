@@ -23,7 +23,7 @@ export function ContactHeroIllustration({
     >
       <div
         aria-hidden={true}
-        className="pointer-events-none absolute top-1/2 left-1/2 size-[88%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFE8D6]"
+        className="pointer-events-none absolute top-1/2 left-1/2 size-[88%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--nl-eyebrow-bg)]"
       />
       <Image
         src={src}

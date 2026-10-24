@@ -84,7 +84,7 @@ export function CodeStep({
       <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
         <button
           type="button"
-          className="font-medium text-[var(--brand)] disabled:text-muted-foreground"
+          className="font-medium text-[var(--nl-orange)] disabled:text-muted-foreground"
           disabled={seconds > 0 || submitting}
           onClick={() => {
             onResend();

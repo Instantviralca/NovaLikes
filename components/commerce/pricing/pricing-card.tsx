@@ -72,12 +72,12 @@ export function PricingCard({
           }
         }}
         className={cn(
-          'group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border bg-[var(--surface-card)] transition-[box-shadow,border-color,transform] duration-200',
+          'group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white transition-[box-shadow,border-color,transform] duration-200',
           'hover:border-[var(--brand-primary)]/45 hover:shadow-[var(--shadow-md)]',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2',
           selected
             ? 'scale-[1.01] border-[var(--brand-primary)] shadow-[var(--shadow-glow)] ring-2 ring-[var(--brand-primary)]/35'
-            : 'border-[var(--border-subtle)] shadow-[var(--shadow-sm)]',
+            : 'border-[var(--nl-border)] shadow-[var(--shadow-sm)]',
           emphasized && !selected && 'border-[var(--brand-primary)]/40',
           className,
         )}
@@ -93,7 +93,7 @@ export function PricingCard({
           <div className="flex items-start justify-between gap-2">
             <div className="flex items-center gap-2">
               {platform ? (
-                <span className="flex size-8 items-center justify-center rounded-lg bg-[var(--surface-muted)]">
+                <span className="flex size-8 items-center justify-center rounded-lg bg-[var(--nl-bg-soft)]">
                   <Image
                     src={PLATFORM_ICON[platform]}
                     alt=""
@@ -107,7 +107,7 @@ export function PricingCard({
               {pkg.badge ? <PackageBadge badge={pkg.badge} /> : null}
             </div>
             {selected ? (
-              <span className="inline-flex items-center gap-1 rounded-full bg-[var(--brand-accent-soft)] px-2.5 py-1 text-[10px] font-bold tracking-wide text-[var(--brand-primary)] uppercase">
+              <span className="inline-flex items-center gap-1 rounded-full bg-[var(--nl-bg-soft)] px-2.5 py-1 text-[10px] font-bold tracking-wide text-[var(--brand-primary)] uppercase">
                 <Check className="size-3" aria-hidden="true" />
                 {ui.commerce.selected}
               </span>
@@ -131,7 +131,7 @@ export function PricingCard({
           />
 
           <div className="flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--surface-muted)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--nl-bg-soft)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
               <Clock3 className="size-3.5 text-[var(--brand-primary)]" aria-hidden="true" />
               {pkg.deliveryTime ? (
                 <DeliveryEstimate deliveryTime={pkg.deliveryTime} className="text-xs text-inherit" />
@@ -139,10 +139,10 @@ export function PricingCard({
                 <span>Estimate confirmed before checkout</span>
               )}
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--surface-muted)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--nl-bg-soft)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
               Gradual delivery (eligible)
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--brand-accent-soft)] px-2.5 py-1 text-xs font-semibold text-[var(--brand-primary)]">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--nl-bg-soft)] px-2.5 py-1 text-xs font-semibold text-[var(--brand-primary)]">
               <RefreshCw className="size-3.5" aria-hidden="true" />
               {hasRefill ? 'Refill eligible' : 'Refill terms before checkout'}
             </span>

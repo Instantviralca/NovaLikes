@@ -28,17 +28,17 @@ export function CategoryCard({ category, className }: CategoryCardProps) {
   return (
     <article
       className={cn(
-        'group relative flex h-full flex-col overflow-hidden rounded-[1.5rem] bg-white p-5 shadow-[0_12px_32px_-20px_rgba(50,30,20,0.45)] ring-1 ring-black/[0.04] transition-transform hover:-translate-y-0.5 sm:p-6',
+        'group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--nl-border)] bg-white p-5 shadow-sm transition-transform hover:-translate-y-0.5 sm:p-6',
         className,
       )}
       data-category-id={category.id}
     >
       <div className="flex items-start gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FFF4ED] ring-1 ring-[#F0E4D8]">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[var(--nl-eyebrow-bg)] ring-1 ring-[var(--nl-border)]">
           {iconSrc ? (
             <Image src={iconSrc} alt="" width={28} height={28} className="h-7 w-7" />
           ) : (
-            <span className="text-sm font-bold text-[#E85D04]">
+            <span className="text-sm font-bold text-[var(--nl-orange)]">
               {category.name.slice(0, 1)}
             </span>
           )}
@@ -62,7 +62,7 @@ export function CategoryCard({ category, className }: CategoryCardProps) {
       <p className="mt-4 flex-1 text-sm leading-relaxed text-neutral-600">
         {category.description}
       </p>
-      <p className="mt-4 text-sm font-semibold text-[#E85D04]">Browse guides →</p>
+      <p className="mt-4 text-sm font-semibold text-[var(--nl-orange)]">Browse guides →</p>
     </article>
   );
 }

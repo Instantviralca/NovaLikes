@@ -2,7 +2,7 @@
 
 /*
   NovaLikes Design System ? deeper coral / orange
-  Primary: #E85D04 · Hover: #C2410C
+  Primary: #E85D04  Hover: #C2410C
 */
 
 @theme inline {
@@ -59,7 +59,7 @@
   --container-lg: 64rem;
   --container-xl: 80rem;
 
-  /* Spacing scale ? VDS: 8 · 16 · 24 · 32 · 48 · 64 · 96 · 120 */
+  /* Spacing scale ? VDS: 8  16  24  32  48  64  96  120 */
   --spacing-vds-1: var(--space-8);
   --spacing-vds-2: var(--space-16);
   --spacing-vds-3: var(--space-24);
@@ -71,14 +71,28 @@
 }
 
 :root {
-  /* ??? Phase 18 VDS semantic tokens ??? */
-  /* Brand ? deeper coral / orange */
-  --brand-primary: #e85d04;
-  --brand-primary-hover: #c2410c;
-  --brand-secondary: #c2410c;
-  --brand-accent: #e85d04;
-  --brand-accent-hover: #c2410c;
-  --brand-accent-soft: #fff4ed;
+  /* Site tokens  Buzzoid-aligned surfaces + action orange */
+  --nl-orange: #ff5c00;
+  --nl-orange-500: #ff5c00;
+  --nl-pink: #ed4ab0;
+  --nl-grad: linear-gradient(90deg, #ffaa04 0%, #ff5c00 45%, #ed4ab0 100%);
+  --nl-ink: #292f3b;
+  --nl-body: #484f5e;
+  --nl-muted: #626976;
+  --nl-bg: #ffffff;
+  --nl-bg-soft: #f6f7fa;
+  --nl-border: #dce0e8;
+  --nl-dark: #12263a;
+  --nl-dark-surface: #0b1a29;
+  --nl-eyebrow-bg: #fff3eb;
+
+  /* Brand aliases  homepage tokens (old components pick these up) */
+  --brand-primary: var(--nl-orange);
+  --brand-primary-hover: #ea5500;
+  --brand-secondary: #ea5500;
+  --brand-accent: var(--nl-orange);
+  --brand-accent-hover: #ea5500;
+  --brand-accent-soft: var(--nl-eyebrow-bg);
 
   /* Checklist aliases (Primary / Primary Hover / Secondary / Accent) */
   --vds-primary: var(--brand-primary);
@@ -86,31 +100,31 @@
   --vds-secondary: var(--brand-secondary);
   --vds-accent: var(--brand-accent);
 
-  /* Surfaces ? warm off-white */
-  --surface-page: #FFFBFA;
-  --surface-card: #ffffff;
-  --surface-muted: #f3eee9;
-  --surface-dark: #1c1917;
-  --surface-dark-elevated: #292524;
+  /* Surfaces */
+  --surface-page: var(--nl-bg);
+  --surface-card: var(--nl-bg);
+  --surface-muted: var(--nl-bg-soft);
+  --surface-dark: var(--nl-dark);
+  --surface-dark-elevated: var(--nl-dark-surface);
   --vds-background: var(--surface-page);
   --vds-surface: var(--surface-card);
   --vds-surface-alt: var(--surface-muted);
 
-  /* Text ? Primary / Secondary / Muted */
-  --text-primary: #1c1917;
-  --text-secondary: #57534e;
-  --text-muted: #78716c;
+  /* Text */
+  --text-primary: var(--nl-ink);
+  --text-secondary: var(--nl-body);
+  --text-muted: var(--nl-muted);
   --text-inverse: #ffffff;
-  --text-brand: #e85d04;
-  --text-accent: #e85d04;
+  --text-brand: var(--nl-orange);
+  --text-accent: var(--nl-orange);
   --vds-text-primary: var(--text-primary);
   --vds-text-secondary: var(--text-secondary);
   --vds-text-muted: var(--text-muted);
 
   /* Borders + focus */
-  --border-subtle: #e7e0d9;
-  --border-strong: #d6cbc0;
-  --focus-ring: #e85d04;
+  --border-subtle: var(--nl-border);
+  --border-strong: #b4bdcb;
+  --focus-ring: var(--nl-ink);
   --vds-border: var(--border-subtle);
 
   /* Semantic ? Success / Warning / Error */
@@ -121,10 +135,10 @@
   --vds-warning: var(--color-warning);
   --vds-error: var(--color-error);
 
-  /* Typography scale ? Hero Title ? Caption (max 2 families: Geist) */
-  --type-hero: clamp(2.25rem, 1.6rem + 2.2vw, 3.75rem);
-  --type-h1: clamp(1.875rem, 1.5rem + 1.2vw, 2.25rem);
-  --type-h2: clamp(1.5rem, 1.25rem + 0.8vw, 1.875rem);
+  /* Typography scale  match homepage H1/H2 weights & sizes */
+  --type-hero: clamp(2.125rem, 4vw, 3.5rem);
+  --type-h1: clamp(2.125rem, 4vw, 3.5rem);
+  --type-h2: clamp(1.625rem, 3vw, 2.5rem);
   --type-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
   --type-h4: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
   --type-body-lg: 1.125rem;
@@ -191,12 +205,12 @@
   --shadow-sm: 0 2px 8px rgb(20 20 20 / 0.06), 0 1px 2px rgb(20 20 20 / 0.04);
   --shadow-md: 0 8px 24px rgb(20 20 20 / 0.08), 0 2px 6px rgb(20 20 20 / 0.04);
   --shadow-lg: 0 16px 40px rgb(20 20 20 / 0.12), 0 4px 12px rgb(20 20 20 / 0.06);
-  --shadow-glow: 0 0 0 1px rgb(232 93 4 / 0.14), 0 12px 32px rgb(232 93 4 / 0.18);
+  --shadow-glow: 0 10px 24px -12px rgb(234 88 12 / 0.55);
 
-  /* Gradients ? coral / orange energy */
-  --gradient-brand: linear-gradient(135deg, #e85d04 0%, #f97316 55%, #c2410c 140%);
-  --gradient-hero: linear-gradient(160deg, #FFFBFA 0%, #FFF0E2 48%, #F6EEFF 100%);
-  --gradient-dark: linear-gradient(145deg, #1c1917 0%, #c2410c 100%);
+  /* Gradients  homepage orange?pink */
+  --gradient-brand: var(--nl-grad);
+  --gradient-hero: linear-gradient(160deg, #ffffff 0%, #f6f7fa 55%, #f1f3f7 100%);
+  --gradient-dark: linear-gradient(145deg, #12263a 0%, #ff5c00 100%);
 }
 
 @layer base {
@@ -225,15 +239,47 @@
   body {
     @apply min-h-full bg-background font-sans text-foreground antialiased;
     overflow-wrap: break-word;
+    /* Soft washes only  no filter:blur / backdrop-filter; avoid background-attachment:fixed (mobile paint cost). */
     background-image:
-      radial-gradient(ellipse 80% 50% at 100% -20%, rgb(232 93 4 / 0.06), transparent),
-      radial-gradient(ellipse 55% 40% at -8% 25%, rgb(194 65 12 / 0.04), transparent),
-      radial-gradient(ellipse 40% 30% at 50% 100%, rgb(249 115 22 / 0.04), transparent);
-    background-attachment: fixed;
+      radial-gradient(ellipse 70% 42% at 100% -10%, rgb(249 115 22 / 0.07), transparent 70%),
+      radial-gradient(ellipse 50% 36% at -5% 20%, rgb(236 72 153 / 0.045), transparent 70%);
+    /* Room for mobile sticky CTA so content isn't covered */
+    padding-bottom: var(--nl-sticky-bar-h, 0px);
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding-bottom: 0;
+    }
+  }
+
+  a:not([class]) {
+    color: var(--nl-orange);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  a:not([class]):hover {
+    text-decoration-line: underline;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(249 115 22 / 0.4);
+  }
+
+  details {
+    border-color: var(--nl-border);
+  }
+
+  details > summary {
+    cursor: pointer;
+    border-radius: 0.75rem;
+  }
+
+  details > summary:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(249 115 22 / 0.4);
   }
 }
 
@@ -252,6 +298,77 @@
 
   .bg-dark-band {
     background-image: var(--gradient-dark);
+  }
+
+  /* Homepage-style final CTA card (reusable outside .home-tt) */
+  .nl-final-banner {
+    background-image: var(--nl-grad);
+    background-color: var(--nl-orange);
+    color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px -20px rgba(234, 88, 12, 0.55);
+  }
+
+  /* Buzzoid-style site header: rest = full bleed; float = inset pill */
+  .nl-site-header {
+    --nl-header-h: 3.5rem;
+    --nl-header-float-h: 3.25rem;
+    --nl-header-inset: 0.5rem;
+    --nl-header-inset-inline: max(0.75rem, calc((100% - 80rem) / 2 + 0.75rem));
+  }
+
+  .nl-site-header .nl-header-spacer {
+    position: relative;
+    height: var(--nl-header-h);
+  }
+
+  .nl-site-header .nl-header-bar {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: var(--nl-header-h);
+    background: #fff;
+    border-bottom: 1px solid var(--nl-border);
+    border-radius: 0;
+    box-shadow: none;
+    pointer-events: none;
+    transition:
+      top 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      left 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      right 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      height 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-radius 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .nl-site-header .nl-header-row {
+    position: relative;
+    z-index: 1;
+    height: var(--nl-header-h);
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .nl-site-header[data-nl-header-state='float'] .nl-header-bar {
+    top: var(--nl-header-inset);
+    inset-inline: var(--nl-header-inset-inline);
+    height: var(--nl-header-float-h);
+    border-radius: 1rem;
+    border: 1px solid var(--nl-border);
+    border-bottom-color: var(--nl-border);
+    box-shadow: 0 12px 32px -16px rgba(15, 23, 42, 0.28);
+  }
+
+  .nl-site-header[data-nl-header-state='float'] .nl-header-row {
+    transform: translateY(var(--nl-header-inset));
+    height: var(--nl-header-float-h);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nl-site-header .nl-header-bar,
+    .nl-site-header .nl-header-row {
+      transition: none;
+    }
   }
 
   .shadow-glow {
@@ -275,15 +392,149 @@
   .type-h1 {
     font-size: var(--type-h1);
     line-height: var(--leading-tight);
-    font-weight: 700;
-    letter-spacing: -0.025em;
+    font-weight: 800;
+    letter-spacing: -0.03em;
   }
 
   .type-h2 {
     font-size: var(--type-h2);
-    line-height: var(--leading-snug);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+
+  .bg-nl-grad {
+    background-image: var(--nl-grad);
+    background-color: var(--nl-orange);
+  }
+
+  /** Gradient word in headings (?24px). Orange fallback when clip unsupported. */
+  .nl-grad-text {
+    color: var(--nl-orange);
+    background-image: var(--nl-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+    .nl-grad-text {
+      color: var(--nl-orange);
+      -webkit-text-fill-color: var(--nl-orange);
+      background-image: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-float {
+      animation: hero-float 4.8s ease-in-out infinite;
+    }
+    .hero-float-delay {
+      animation-delay: 0.9s;
+    }
+  }
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .pkg-tile-selected {
+    border: 2px solid transparent !important;
+    background: var(--nl-grad) !important;
+    color: #fff !important;
+  }
+
+  /*
+   * Buzzoid-like tactile package tiles (IG/TT only via .pkg-tile--tactile).
+   * Edge shadow ? hover lift ? press down ? selected flat.
+   */
+  .pkg-tile--tactile {
+    --pkg-edge: #d7dce6;
+    border: 1px solid var(--nl-border) !important;
+    background: #fff !important;
+    box-shadow: 0 3px 0 var(--pkg-edge);
+    transition:
+      transform 0.12s cubic-bezier(0.3, 0.7, 0.3, 1),
+      box-shadow 0.12s ease,
+      border-color 0.12s ease,
+      background 0.12s ease,
+      color 0.12s ease;
+    will-change: transform, box-shadow;
+  }
+
+  @media (hover: hover) {
+    .pkg-tile--tactile:hover:not([data-selected='true']) {
+      box-shadow: 0 4px 0 var(--pkg-edge);
+      transform: translateY(-1px);
+      border-color: var(--nl-orange) !important;
+    }
+  }
+
+  .pkg-tile--tactile:active:not([data-selected='true']) {
+    box-shadow: 0 1px 0 var(--pkg-edge);
+    transform: translateY(2px);
+    transition-duration: 80ms;
+  }
+
+  .pkg-tile--tactile.pkg-tile-selected,
+  .pkg-tile--tactile[data-selected='true'] {
+    border-color: transparent !important;
+    background: var(--nl-grad) !important;
+    color: #fff !important;
+    box-shadow: inset 0 3px 0 rgb(0 0 0 / 0.2);
+    transform: none;
+  }
+
+  @media (hover: hover) {
+    .pkg-tile--tactile.pkg-tile-selected:hover,
+    .pkg-tile--tactile[data-selected='true']:hover {
+      box-shadow: inset 0 3px 0 rgb(0 0 0 / 0.2);
+      transform: none;
+    }
+  }
+
+  .pkg-tile--tactile.pkg-tile-selected:active,
+  .pkg-tile--tactile[data-selected='true']:active {
+    box-shadow: inset 0 4px 0 rgb(0 0 0 / 0.28);
+    transform: translateY(1px);
+    transition-duration: 80ms;
+  }
+
+  @keyframes pkg-summary-pop {
+    0% {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-pkg-summary-pop {
+    animation: pkg-summary-pop 0.25s ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pkg-tile,
+    .pkg-tile--tactile {
+      transition: none !important;
+      transform: none !important;
+    }
+    .pkg-tile-selected,
+    .pkg-tile--tactile.pkg-tile-selected,
+    .pkg-tile--tactile[data-selected='true'] {
+      transform: none !important;
+    }
+    .animate-pkg-summary-pop {
+      animation: none !important;
+    }
   }
 
   .type-h3 {

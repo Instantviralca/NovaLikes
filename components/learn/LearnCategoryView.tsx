@@ -1,12 +1,12 @@
 import { FeaturedArticles } from '@/components/learn/FeaturedArticles';
-import { NewsletterCTA } from '@/components/learn/NewsletterCTA';
-import {
-  CategoryHero,
-  CategorySidebar,
-  EmptyCategoryState,
-} from '@/components/learn/taxonomy';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
+import { LearnBlogBar } from '@/components/learn/site-v2/LearnBlogBar';
+import { LearnBlogHead } from '@/components/learn/site-v2/LearnBlogHead';
+import { LearnGrowBox } from '@/components/learn/site-v2/LearnGrowBox';
+import { LearnPlatformBrowse } from '@/components/learn/site-v2/LearnPlatformBrowse';
+import { LearnTopics } from '@/components/learn/site-v2/LearnTopics';
+import { EmptyCategoryState } from '@/components/learn/taxonomy';
+import { CATEGORY_HERO_TITLES } from '@/components/learn/taxonomy/CategoryHero';
+import { SiteV2Shell } from '@/components/site-v2/site-v2-shell';
 import {
   getArticlesByCategory,
   getCategoryBreadcrumbs,
@@ -14,6 +14,7 @@ import {
   getPopularTags,
   getCategories,
 } from '@/lib/learn/taxonomy';
+import { listPublicLearnCategories } from '@/lib/learn';
 import type { PublicLearnCategory } from '@/types/learn';
 import type { LearnSearchState } from '@/types/learn-search';
 
@@ -23,59 +24,53 @@ type LearnCategoryViewProps = {
 };
 
 /**
- * Learn category page — Documents 15.01 + 15.04 + 15.05.
+ * Learn category page — Documents 15.01 + 15.04 + 15.05, site-v2 layout.
  * One article list plus compact topic links. Unpublished articles never appear.
+ * `NewsletterCTA` is not rendered (disabled, no working signup); the grow box replaces it.
  */
 export function LearnCategoryView({ category }: LearnCategoryViewProps) {
   const breadcrumbs = getCategoryBreadcrumbs(category);
   const articles = getArticlesByCategory(category.id)
     .slice()
     .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
-  const categories = getCategories();
+  const allCategories = listPublicLearnCategories();
+  const tabs = getCategories()
+    .filter((item) => item.articleCount > 0)
+    .map(({ slug, name, href, articleCount }) => ({ slug, name, href, articleCount }));
   const relatedServices = getCategoryRelatedServices(category.slug);
   const popularTags = getPopularTags(6);
-  const showFooterLinks = relatedServices.length > 0 || popularTags.length > 0;
+  const count = articles.length;
 
   return (
-    <div className="overflow-x-hidden">
-      <CategoryHero
-        category={category}
-        breadcrumbs={breadcrumbs}
-        categories={categories}
-      />
+    <SiteV2Shell>
+      <LearnBlogBar categories={tabs} active={category.slug} searchMode="inline" />
 
-      {articles.length === 0 ? (
-        <Section>
-          <Container>
-            <EmptyCategoryState categoryName={category.name} />
-          </Container>
-        </Section>
-      ) : (
-        <FeaturedArticles
-          title={`${category.name} guides`}
-          description="Newest first."
-          articles={articles}
+      <section className="wrap">
+        <LearnBlogHead
+          breadcrumbs={breadcrumbs}
+          title={CATEGORY_HERO_TITLES[category.slug] ?? category.name}
+          description={category.description}
         />
-      )}
 
-      {showFooterLinks ? (
-        <Section className="border-t border-[#F0E4D8] bg-hero-wash">
-          <Container>
-            <CategorySidebar
-              category={category}
-              relatedCategories={[]}
-              relatedServices={relatedServices}
-              popularTags={popularTags}
-            />
-          </Container>
-        </Section>
-      ) : null}
+        {articles.length === 0 ? (
+          <div style={{ margin: '40px 0 0' }}>
+            <EmptyCategoryState categoryName={category.name} />
+          </div>
+        ) : (
+          <FeaturedArticles
+            title={`${category.name} guides`}
+            meta={`${count} ${count === 1 ? 'guide' : 'guides'}`}
+            articles={articles}
+            pageSize={Math.max(articles.length, 1)}
+          />
+        )}
 
-      <Section>
-        <Container>
-          <NewsletterCTA />
-        </Container>
-      </Section>
-    </div>
+        <LearnPlatformBrowse categories={allCategories} />
+
+        <LearnTopics tags={popularTags} relatedServices={relatedServices} />
+      </section>
+
+      <LearnGrowBox />
+    </SiteV2Shell>
   );
 }

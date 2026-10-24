@@ -1,4 +1,5 @@
 ﻿import { site } from '@/config/site';
+import { ROOT_HOMEPAGE_METADATA_V5 } from '@/data/content/home-v5';
 import { truncateAtWordBoundary } from '@/seo/truncate';
 import type { LearnArticle } from '@/types/blog';
 import type { Service } from '@/types/service';
@@ -12,8 +13,7 @@ export function clampMetaDescription(text: string, max = DESCRIPTION_MAX): strin
 
 /** Approved production meta descriptions. Do not rewrite or auto-truncate. */
 export const descriptions = {
-  home: () =>
-    'Buy followers, likes, views and comments for Instagram, TikTok and Facebook. Compare available packages, order online and track your NovaLikes order.',
+  home: () => ROOT_HOMEPAGE_METADATA_V5.description,
 
   service: (service: Service) => {
     if (service.slug === 'buy-instagram-followers') {

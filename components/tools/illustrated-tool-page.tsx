@@ -1,33 +1,30 @@
 import Link from 'next/link';
-import { Fragment } from 'react';
-import { ArrowRight, Check, Heart, Lock, MessageCircle, Play, ThumbsUp, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
-import { Breadcrumb } from '@/components/navigation/breadcrumb';
+import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
+import { SiteV2Shell } from '@/components/site-v2/site-v2-shell';
 import { IllustratedToolHero } from '@/components/tools/illustrated-tool-hero';
+import { SnapArt } from '@/components/tools/instagram-profile-viewer/visuals';
+import { ToolFaqV2 } from '@/components/tools/site-v2/tool-faq-v2';
 import {
-  HeroWash,
-  PageDoodles,
-  SnapArt,
-  Squiggle,
-  StepArrow,
-} from '@/components/tools/instagram-profile-viewer/visuals';
-import { Faq } from '@/components/sections/faq';
-import { Heading } from '@/components/typography/heading';
+  buildToolTabs,
+  CheckList,
+  PkgCards,
+  SeeIcon,
+  ToolCard,
+} from '@/components/tools/site-v2/tool-v2-parts';
 import { routes } from '@/config/routes';
-import { ILLUSTRATED_TOOL_LAYOUT, relatedToolArt } from '@/data/tools/illustrated-layout';
+import type { QuickAnswerPageId } from '@/data/quick-answers';
+import { ILLUSTRATED_TOOL_LAYOUT } from '@/data/tools/illustrated-layout';
 import { ENGLISH_TOOL_CHROME, type ToolChrome } from '@/data/tools/chrome';
 import type { ToolPageCopy } from '@/data/tools/copy';
 import { getRelatedTools, type ToolDefinition } from '@/data/tools/registry';
 import { getRelatedServicesForTool } from '@/data/tools/related-services';
 import type { ToolSlug } from '@/lib/tools/types';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
-import { localizeHref } from '@/lib/i18n/paths';
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { loadQuickAnswer } from '@/lib/i18n/content/load';
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
-import type { QuickAnswerPageId } from '@/data/quick-answers';
+import { localizeHref } from '@/lib/i18n/paths';
 import type { ToolLayoutCopy } from '@/lib/i18n/content/tools-english';
 
 const SERVICE_LABEL: Record<string, string> = {
@@ -41,19 +38,6 @@ const SERVICE_LABEL: Record<string, string> = {
   'buy-facebook-followers': 'Facebook Followers',
   'buy-facebook-page-likes': 'Facebook Page Likes',
   'buy-facebook-post-likes': 'Facebook Post Likes',
-};
-
-const SERVICE_ICON: Record<string, typeof Users> = {
-  'buy-instagram-followers': Users,
-  'buy-instagram-likes': Heart,
-  'buy-instagram-views': Play,
-  'buy-instagram-comments': MessageCircle,
-  'buy-tiktok-followers': Users,
-  'buy-tiktok-likes': Heart,
-  'buy-tiktok-views': Play,
-  'buy-facebook-followers': Users,
-  'buy-facebook-page-likes': ThumbsUp,
-  'buy-facebook-post-likes': ThumbsUp,
 };
 
 type Props = {
@@ -81,272 +65,199 @@ export function IllustratedToolPage({
   toolsLabel = 'Tools',
   toolsHref,
 }: Props) {
-  const layout = ILLUSTRATED_TOOL_LAYOUT[tool.slug as Exclude<ToolSlug, 'instagram-profile-viewer'>];
+  const layout =
+    ILLUSTRATED_TOOL_LAYOUT[tool.slug as Exclude<ToolSlug, 'instagram-profile-viewer'>];
   const related = relatedTools ?? getRelatedTools(tool.slug);
   const services = getRelatedServicesForTool(tool.slug).map((service) => ({
     ...service,
     url: localizeHref(service.url, locale),
   }));
   const primaryService = services[0];
-  const steps = copy.howToUse;
+  const steps = copy.howToUse.slice(0, 3);
   const copyLayout = layoutCopy;
   const hubHref = toolsHref ?? localizeHref(routes.tools, locale);
 
   if (!layout) return null;
 
-  if (!layout) return null;
+  const crumbs = [
+    { label: homeLabel, href: localizeHref(routes.home, locale) },
+    { label: toolsLabel, href: hubHref },
+    { label: tool.name },
+  ];
+  const tabs = buildToolTabs(tool, related);
+  const editorialHeading = copyLayout?.editorialHeading ?? layout.editorialHeading;
+  const seeHeading = copyLayout?.seeHeading ?? layout.seeHeading;
+  const seeItems = copyLayout?.seeItems ?? layout.seeItems;
+  const noteList = copy.notes.slice(1);
+  const hasInfo = copy.how.length > 0 || copy.supported.length > 0 || noteList.length > 0;
 
   return (
-    <div className="relative bg-[#FFFBFA]">
-      <PageDoodles className="pointer-events-none absolute inset-0 h-full w-full" />
-      <Section spacing="none" className="relative overflow-x-hidden bg-transparent pb-10 pt-4 md:pb-14 md:pt-6">
-        <HeroWash className="pointer-events-none absolute inset-0 h-full w-full" />
-        <Container size="xl" className="relative">
-          <Breadcrumb
-            items={[
-              { label: homeLabel, href: localizeHref(routes.home, locale) },
-              { label: toolsLabel, href: hubHref },
-              { label: tool.name },
-            ]}
-            sourceSlug={tool.slug}
-          />
-          <IllustratedToolHero
-            tool={tool}
-            copy={copy}
-            accentWord={copyLayout?.accentWord ?? layout.accentWord}
-            heroArt={layout.heroArt}
-            chrome={chrome}
-          />
-        </Container>
-      </Section>
+    <SiteV2Shell>
+      <IllustratedToolHero tool={tool} copy={copy} crumbs={crumbs} tabs={tabs} chrome={chrome} />
 
-      <Section spacing="sm" className="bg-transparent">
-        <Container size="xl">
+      <section className="tool-qa">
+        <div className="wrap">
           <QuickAnswer
             heading={quickAnswerHeading}
             text={loadQuickAnswer(locale, tool.slug as QuickAnswerPageId)}
+            className="tool-qa-box"
           />
-        </Container>
-      </Section>
+        </div>
+      </section>
 
-      <Section spacing="none" className="relative bg-transparent py-14 md:py-20">
-        <Container size="xl" className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8">
-          <div className="max-w-xl">
-            <Heading as="h2" size="h2" className="text-[1.75rem] leading-tight sm:text-[2.05rem]">
-              {copyLayout?.editorialHeading ?? layout.editorialHeading}
-            </Heading>
-            <Squiggle className="mt-2 h-4 w-16" color="#E85D04" />
-            {copy.intro.map((paragraph, index) => (
-              <p
-                key={paragraph}
-                className={`${index === 0 ? 'mt-5' : 'mt-4'} text-base leading-relaxed text-[var(--text-secondary)]`}
-              >
-                {paragraph}
-              </p>
-            ))}
+      {editorialHeading || copy.intro.length ? (
+        <section className="sec">
+          <div className="wrap split">
+            <div className="body">
+              <h2 className="h2">{editorialHeading}</h2>
+              {copy.intro.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="art" aria-hidden="true">
+              <SnapArt name={layout.editorialArt} className="mix-blend-multiply" />
+            </div>
           </div>
-          <SnapArt name={layout.editorialArt} className="justify-self-center mix-blend-multiply lg:max-w-lg" />
-        </Container>
-      </Section>
+        </section>
+      ) : null}
 
-      <Section spacing="none" className="relative bg-transparent pb-6 md:pb-10">
-        <Container size="xl">
-          <div className="rounded-[2.25rem] bg-[#EEE8FA] px-6 py-12 sm:px-10 md:px-14 md:py-16">
-            <Heading as="h2" size="h2" className="text-center text-[1.75rem] sm:text-[2.05rem]">
-              {copyLayout?.seeHeading ?? layout.seeHeading}
-            </Heading>
-            <Squiggle className="mx-auto mt-2 h-4 w-16" />
-            <div className="mt-10 grid gap-8 sm:grid-cols-2">
-              {(copyLayout?.seeItems ?? layout.seeItems).map((item, index) => (
-                <div key={item.title} className="flex items-center gap-4">
-                  <SnapArt name={layout.seeItems[index]?.art ?? 'see-photo'} className="size-28 shrink-0 mix-blend-multiply sm:size-32" />
-                  <div>
-                    <p className="text-lg font-semibold text-[var(--text-primary)]">{item.title}</p>
-                    <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.text}</p>
-                  </div>
+      {seeItems.length ? (
+        <section className="sec grey">
+          <div className="wrap">
+            <div className="sec-head">
+              <h2 className="h2">{seeHeading}</h2>
+            </div>
+            <div className={seeItems.length === 4 ? 'feat-cards four' : 'feat-cards'}>
+              {seeItems.map((item, index) => (
+                <div key={item.title} className="fcard rv-up">
+                  <span className="fi">
+                    <SeeIcon art={layout.seeItems[index]?.art ?? 'see-photo'} />
+                  </span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
-        </Container>
-      </Section>
+        </section>
+      ) : null}
 
-      <Section spacing="none" className="relative bg-transparent pt-14 md:pt-20" data-section="tool-details">
-        <Container size="xl" className="grid gap-6 lg:grid-cols-3">
-          <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
-            <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
-              {copy.howHeading}
-            </Heading>
-            {copy.how.map((paragraph) => (
-              <p key={paragraph} className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-          <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
-            <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
-              {copy.supportedHeading}
-            </Heading>
-            {copy.supportedIntro ? (
-              <p className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)]">{copy.supportedIntro}</p>
-            ) : null}
-            <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
-              {copy.supported.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <Check className="mt-0.5 size-4 shrink-0 text-[var(--brand-primary)]" aria-hidden="true" />
-                  <span className="break-words">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {copy.notes.length > 1 ? (
-            <div className="rounded-[2rem] bg-white px-6 py-8 shadow-[var(--shadow-sm)] ring-1 ring-black/5 sm:px-8">
-              <Heading as="h2" size="h2" className="text-[1.35rem] leading-snug sm:text-[1.5rem]">
-                {copy.notesHeading}
-              </Heading>
-              <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
-                {copy.notes.slice(1).map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <Check className="mt-0.5 size-4 shrink-0 text-[var(--brand-primary)]" aria-hidden="true" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+      {hasInfo ? (
+        <section className="sec" data-section="tool-details">
+          <div className="wrap">
+            <div className="info-cards">
+              {copy.how.length ? (
+                <div className="icard rv-up">
+                  <h2>{copy.howHeading}</h2>
+                  {copy.how.map((paragraph, index) => (
+                    <p key={paragraph} style={index > 0 ? { marginTop: 10 } : undefined}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
+              {copy.supported.length ? (
+                <div className="icard rv-up">
+                  <h2>{copy.supportedHeading}</h2>
+                  {copy.supportedIntro ? (
+                    <p style={{ marginBottom: 10 }}>{copy.supportedIntro}</p>
+                  ) : null}
+                  <CheckList items={copy.supported} />
+                </div>
+              ) : null}
+              {noteList.length ? (
+                <div className="icard no rv-up">
+                  <h2>{copy.notesHeading}</h2>
+                  <CheckList items={noteList} variant="x" />
+                </div>
+              ) : null}
             </div>
-          ) : null}
-        </Container>
-      </Section>
+          </div>
+        </section>
+      ) : null}
 
-      <Section spacing="none" className="relative bg-transparent py-14 md:py-20">
-        <Container size="xl">
-            <Heading as="h2" size="h2" className="text-center text-[1.75rem] sm:text-[2.05rem]">
-              {chrome.howToUseIt}
-            </Heading>
-          <Squiggle className="mx-auto mt-2 h-4 w-16" color="#E85D04" />
-          <ol className="mt-10 grid list-none gap-8 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-start md:gap-2">
-            {steps.slice(0, 3).map((step, index) => (
-              <Fragment key={step}>
-                {index > 0 ? (
-                  <li key={`arrow-${index}`} className="hidden items-center md:flex md:h-36" aria-hidden="true">
-                    <StepArrow className="h-6 w-16" />
-                  </li>
-                ) : null}
-                <li key={step} className="text-center">
-                  <SnapArt
-                    name={index === 0 ? 'step-search' : index === 1 ? 'step-scan' : 'step-done'}
-                    className="mx-auto max-w-[16rem] mix-blend-multiply"
-                  />
-                  <p className="mt-4 text-sm font-semibold text-[var(--brand-primary)]">
-                    {chrome.stepLabel.replace('{n}', String(index + 1))}
-                  </p>
-                  <p className="mt-1 font-semibold text-[var(--text-primary)]">{step}</p>
-                </li>
-              </Fragment>
-            ))}
-          </ol>
-          <p className="mx-auto mt-10 flex max-w-3xl gap-3 rounded-2xl bg-[#FFF6E8] px-4 py-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-            <Lock className="mt-0.5 size-5 shrink-0 text-[var(--brand-primary)]" aria-hidden="true" />
-            <span>
-              <span className="font-semibold text-[var(--text-primary)]">
-                {copyLayout?.privacyLead ?? layout.privacyLead}{' '}
-              </span>
-              {copy.notes[0]}
-            </span>
-          </p>
-        </Container>
-      </Section>
+      {steps.length ? (
+        <section className="sec grey">
+          <div className="wrap">
+            <div className="sec-head">
+              <h2 className="h2">{chrome.howToUseIt}</h2>
+            </div>
+            <div className="steps-row">
+              {steps.map((step, index) => (
+                <div key={step} className="step rv-up">
+                  <span className="n">
+                    <span className="sr">{chrome.stepLabel.replace('{n}', String(index + 1))} </span>
+                    <span aria-hidden="true">{index + 1}</span>
+                  </span>
+                  <p>{step}</p>
+                </div>
+              ))}
+            </div>
+            {copy.notes[0] ? (
+              <p className="step-note">
+                <strong>{copyLayout?.privacyLead ?? layout.privacyLead}</strong> {copy.notes[0]}
+              </p>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
 
       {related.length ? (
-        <Section spacing="none" className="relative bg-transparent pb-6">
-          <Container size="xl">
-            <Heading as="h2" size="h2" className="text-[1.75rem] sm:text-[2.05rem]">
-              {copyLayout?.relatedHeading ?? layout.relatedHeading}
-            </Heading>
-            <ul className="mt-8 grid gap-6 md:grid-cols-3">
-              {related.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={item.href}
-                    className="group block min-h-11 rounded-3xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <SnapArt
-                      name={relatedToolArt(item.slug)}
-                      className="mix-blend-multiply transition-transform duration-200 group-hover:-translate-y-1"
-                    />
-                    <p className="mt-4 text-lg font-semibold leading-snug text-[var(--text-primary)]">{item.name}</p>
-                    {item.status !== 'working' ? (
-                      <p className="mt-1 text-xs font-medium text-[var(--text-muted)]">{item.availabilityLabel}</p>
-                    ) : null}
-                    <p className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[var(--brand-primary)]">
-                      {chrome.openTool}
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 text-sm">
-              <Link
-                href={hubHref}
-                className="font-medium text-[var(--brand-primary)] underline-offset-2 hover:underline"
-              >
+        <section className="sec">
+          <div className="wrap">
+            <div className="sec-head">
+              <h2 className="h2">{copyLayout?.relatedHeading ?? layout.relatedHeading}</h2>
+              <Link href={hubHref} className="tlink">
                 {chrome.allFreeTools}
+                <ArrowRight className="ic rtl:rotate-180" aria-hidden="true" />
               </Link>
-            </p>
-          </Container>
-        </Section>
+            </div>
+            <div className="tool-cards three">
+              {related.map((item) => (
+                <ToolCard key={item.slug} tool={item} chrome={chrome} />
+              ))}
+            </div>
+          </div>
+        </section>
       ) : null}
 
       {services.length ? (
-        <Section spacing="none" className="relative bg-transparent py-8 md:py-12">
-          <Container size="xl">
-            <div className="overflow-hidden rounded-[2.25rem] bg-[#FFF1E4] px-6 py-12 sm:px-10 md:px-14 md:py-14">
-              <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.45fr)_minmax(0,0.55fr)]">
-                <SnapArt name="cta-growth" className="max-w-md justify-self-center mix-blend-multiply lg:max-w-none" />
-                <div>
-                  <Heading as="h2" size="h2" className="text-[1.75rem] sm:text-[2.05rem]">
-                    {copyLayout?.ctaHeading ?? layout.ctaHeading}
-                  </Heading>
-                  <p className="mt-3 max-w-md text-[var(--text-secondary)]">{chrome.toolIsFreeNote}</p>
-                  <ul className="mt-6 flex flex-wrap gap-6">
-                    {services.map((service) => {
-                      const Icon = SERVICE_ICON[service.slug] ?? Users;
-                      return (
-                        <li key={service.slug}>
-                          <Link
-                            href={service.url}
-                            className="inline-flex min-h-11 flex-col items-center gap-2 text-sm font-semibold text-[var(--text-primary)]"
-                          >
-                            <span className="inline-flex size-12 items-center justify-center rounded-full bg-white text-[var(--brand-primary)]">
-                              <Icon className="size-5" aria-hidden="true" />
-                            </span>
-                            {chrome.serviceLabels[service.slug] ?? SERVICE_LABEL[service.slug] ?? service.name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  {primaryService ? (
-                    <Link
-                      href={primaryService.url}
-                      className="mt-6 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-[var(--brand-primary)] underline-offset-4 hover:underline"
-                    >
-                      {chrome.exploreServices}
-                      <ArrowRight className="size-4" aria-hidden="true" />
-                    </Link>
-                  ) : null}
-                </div>
+        <section className="sec grey">
+          <div className="wrap">
+            <div className="sec-head">
+              <div>
+                <h2 className="h2">{copyLayout?.ctaHeading ?? layout.ctaHeading}</h2>
+                <p className="lead">{chrome.toolIsFreeNote}</p>
               </div>
+              {primaryService ? (
+                <Link href={primaryService.url} className="tlink">
+                  {chrome.exploreServices}
+                  <ArrowRight className="ic rtl:rotate-180" aria-hidden="true" />
+                </Link>
+              ) : null}
             </div>
-          </Container>
-        </Section>
+            <PkgCards
+              services={services}
+              labelFor={(service) =>
+                chrome.serviceLabels[service.slug] ??
+                SERVICE_LABEL[service.slug] ??
+                service.name
+              }
+            />
+          </div>
+        </section>
       ) : null}
 
-      <Section spacing="none" className="relative bg-transparent py-14 md:py-16">
-        <Container size="lg">
-          <Faq title={chrome.faqTitle} items={copy.faqs} enhanced={false} />
-        </Container>
-      </Section>
-    </div>
+      {copy.faqs.length ? (
+        <section className="sec">
+          <div className="wrap" style={{ maxWidth: 860 }}>
+            <h2 className="h2" style={{ marginBottom: 12 }}>
+              {chrome.faqTitle}
+            </h2>
+            <ToolFaqV2 items={copy.faqs} />
+          </div>
+        </section>
+      ) : null}
+    </SiteV2Shell>
   );
 }

@@ -32,7 +32,7 @@ export function PasswordField({
         <Label htmlFor={id}>{label}</Label>
         <button
           type="button"
-          className="text-xs font-medium text-[var(--brand)]"
+          className="text-xs font-medium text-[var(--nl-orange)]"
           onClick={() => setVisible((v) => !v)}
         >
           {visible ? ACCOUNT_UI.shared.hidePassword : ACCOUNT_UI.shared.showPassword}

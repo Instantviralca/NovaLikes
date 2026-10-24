@@ -29,7 +29,11 @@ export function SnapArt({
   alt?: string;
 }) {
   const isHero = name === 'hero-portrait';
-  const wide = name.startsWith('related-') || name.startsWith('step-') || name === 'editorial-card' || name === 'cta-growth';
+  const wide =
+    name.startsWith('related-') ||
+    name.startsWith('step-') ||
+    name === 'editorial-card' ||
+    name === 'cta-growth';
   return (
     <Image
       src={`${BASE}/${name}.webp`}
@@ -39,7 +43,7 @@ export function SnapArt({
       sizes={isHero ? '(max-width: 1024px) 100vw, 36rem' : '(max-width: 768px) 50vw, 16rem'}
       priority={isHero}
       loading={isHero ? undefined : 'lazy'}
-      className={cn('h-auto w-full select-none object-contain', className)}
+      className={cn('h-auto w-full object-contain select-none', className)}
     />
   );
 }
@@ -62,10 +66,15 @@ export function StepArrow({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 72 24" className={className} aria-hidden="true">
       <path d="M2 12 H58" stroke="#E85D04" strokeWidth="2.4" strokeLinecap="round" />
-      <path d="M50 5 l12 7 -12 7" fill="none" stroke="#E85D04" strokeWidth="2.4" strokeLinecap="round" />
+      <path
+        d="M50 5 l12 7 -12 7"
+        fill="none"
+        stroke="#E85D04"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 export { HeroWash, PageDoodles } from '@/components/layout/illustrated-surface';
-

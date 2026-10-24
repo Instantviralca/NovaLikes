@@ -1,82 +1,96 @@
 'use client';
 
+import Link from 'next/link';
+import { ArrowRight, Plus } from 'lucide-react';
+
 import { CartList } from '@/components/commerce/cart/cart-list';
 import { CartSummary } from '@/components/commerce/cart/cart-summary';
-import { CheckoutButton } from '@/components/commerce/cart/checkout-button';
 import { EmptyCart } from '@/components/commerce/cart/empty-cart';
-import { CheckoutProgress } from '@/components/design-system/checkout-progress';
-import { TrustStrip } from '@/components/design-system/trust-strip';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
-import { Heading } from '@/components/typography/heading';
-import { MutedText } from '@/components/typography/muted-text';
+import { nlBody, nlDisplay } from '@/components/marketing/home-v5/fonts';
+import { formatCartItemsHeading } from '@/components/site-v2/cart-helpers';
+import { routes } from '@/config/routes';
+import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
 import { useCart } from '@/lib/cart';
-import { formatMoney } from '@/lib/pricing/format';
+import { localizeHref } from '@/lib/i18n/paths';
+import { cn } from '@/lib/utils';
+
+import '@/components/site-v2/site-v2.css';
 
 export function CartPage() {
   const cart = useCart();
-  const { ui } = useI18nChrome();
+  const { locale, ui } = useI18nChrome();
+  const copy = SITE_V2_COPY.cart;
+  const fontClassName = `${nlDisplay.variable} ${nlBody.variable}`;
 
   if (!cart.isHydrated) {
     return (
-      <Section aria-label={ui.cart.ariaLabel} className="bg-hero-wash">
-        <Container size="xl">
-          <p className="text-sm text-muted-foreground">{ui.cart.loading}</p>
-        </Container>
-      </Section>
+      <section className={cn('site-v2 cart-page', fontClassName)} aria-label={ui.cart.ariaLabel}>
+        <div className="wrap">
+          <p className="lead">{ui.cart.loading}</p>
+        </div>
+      </section>
     );
   }
 
   if (cart.items.length === 0) {
     return (
-      <Section aria-label={ui.cart.ariaLabel} className="bg-hero-wash">
-        <Container size="xl" className="space-y-6">
-          <Heading as="h1" size="h1">
-            {ui.cart.title}
-          </Heading>
+      <section className={cn('site-v2 cart-page', fontClassName)} aria-label={ui.cart.ariaLabel}>
+        <div className="wrap">
           <EmptyCart />
-        </Container>
-      </Section>
+        </div>
+      </section>
     );
   }
 
+  const itemsHeading = formatCartItemsHeading(
+    cart.totals.itemCount,
+    copy.itemHeading,
+    copy.itemsHeading,
+  );
+
   return (
-    <Section aria-label={ui.cart.ariaLabel} data-analytics="cart-page" className="bg-hero-wash pb-28 lg:pb-16">
-      <Container size="xl">
-        <div className="mb-6 space-y-3">
-          <Heading as="h1" size="h1">
-            {ui.cart.yourCart}
-          </Heading>
-          <MutedText>{ui.cart.reviewIntro}</MutedText>
-          <CheckoutProgress current="details" className="max-w-2xl" />
-        </div>
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
-          <div className="space-y-6">
+    <section
+      className={cn('site-v2 cart-page', fontClassName)}
+      aria-label={ui.cart.ariaLabel}
+      data-analytics="cart-page"
+    >
+      <div className="wrap">
+        <nav className="crumbs" aria-label={ui.breadcrumbs.ariaLabel}>
+          <Link href={localizeHref(routes.home, locale)}>{ui.breadcrumbs.home}</Link>
+          <span>/</span>
+          <span aria-current="page">{ui.cart.title}</span>
+        </nav>
+        <h1 className="h1">{ui.cart.yourCart}</h1>
+        <p className="lead">{ui.cart.reviewIntro}</p>
+        <div className="cart-grid">
+          <div className="panel">
+            <div className="panel-head">
+              <b>{itemsHeading}</b>
+              <Link className="tlink" href={localizeHref(routes.services, locale)}>
+                {ui.cart.continueShopping}
+                <ArrowRight className="ic" aria-hidden="true" />
+              </Link>
+            </div>
             <CartList
               items={cart.items}
               onRemove={cart.removeItem}
               onIncrement={cart.incrementLineQuantity}
               onDecrement={cart.decrementLineQuantity}
+              bare
             />
-            <TrustStrip className="rounded-2xl border border-[var(--border-subtle)] bg-white/80 p-4" />
+            <Link className="dr-add" href={localizeHref(routes.services, locale)}>
+              {copy.addAnotherService}
+              <Plus className="ic" aria-hidden="true" />
+            </Link>
           </div>
-          <div className="hidden h-fit lg:sticky lg:top-24 lg:block">
-            <CartSummary totals={cart.totals} />
-          </div>
-        </div>
-      </Container>
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-4 shadow-[var(--shadow-lg)] backdrop-blur lg:hidden">
-        <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
-          <div>
-            <p className="text-xs text-[var(--text-secondary)]">{ui.cart.total}</p>
-            <p className="text-lg font-bold text-[var(--brand-primary)]" aria-live="polite" dir="ltr">
-              {formatMoney(cart.totals.total.amount, cart.totals.total.currency)}
-            </p>
-          </div>
-          <CheckoutButton className="min-h-12 w-auto rounded-xl px-6 font-semibold" />
+          <CartSummary
+            totals={cart.totals}
+            couponCode={cart.coupon?.code}
+            className="h-fit lg:sticky lg:top-24"
+          />
         </div>
       </div>
-    </Section>
+    </section>
   );
 }

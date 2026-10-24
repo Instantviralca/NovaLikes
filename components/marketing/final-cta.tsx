@@ -31,6 +31,8 @@ export type FinalCTAProps = {
   trustLine?: string;
   /** Checklist-style trust badges under the CTA buttons. */
   trustBadges?: string[];
+  /** `banner` = homepage-style gradient card; default `band` = dark full-bleed. */
+  variant?: 'band' | 'banner';
 };
 
 function toPublicCta(
@@ -72,6 +74,7 @@ export function FinalCTA({
   aside,
   trustLine,
   trustBadges,
+  variant = 'band',
 }: FinalCTAProps) {
   const resolvedPrimary =
     primary ??
@@ -147,10 +150,11 @@ export function FinalCTA({
         description={description}
         surface={surface}
         serviceSlug={analyticsServiceSlug}
-        aside={aside}
+        aside={variant === 'banner' ? undefined : aside}
         trustLine={trustLine}
         trustBadges={trustBadges}
         className={className}
+        variant={variant}
       />
     </div>
   );

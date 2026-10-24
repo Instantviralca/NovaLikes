@@ -37,7 +37,7 @@ export function SiteLayout({
         dir={LOCALE_DIR[locale]}
         className={cn(
           'flex min-h-screen flex-col text-foreground',
-          illustrated ? 'bg-[#FFFBFA]' : 'bg-background',
+          illustrated ? 'bg-[var(--nl-bg)]' : 'bg-background',
           className,
         )}
       >

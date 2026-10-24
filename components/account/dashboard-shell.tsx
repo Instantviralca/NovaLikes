@@ -40,10 +40,10 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'whitespace-nowrap rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                  'whitespace-nowrap rounded-xl px-3 py-2 text-sm font-medium transition-colors',
                   active
-                    ? 'bg-[var(--brand)] text-white'
-                    : 'text-muted-foreground hover:bg-muted hover:text-foreground',
+                    ? 'bg-[var(--nl-eyebrow-bg)] text-[var(--nl-orange)]'
+                    : 'text-muted-foreground hover:bg-[var(--nl-bg-soft)] hover:text-[var(--nl-ink)]',
                 )}
               >
                 {item.label}

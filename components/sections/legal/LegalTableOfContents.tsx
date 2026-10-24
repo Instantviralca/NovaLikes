@@ -31,7 +31,7 @@ export function LegalTableOfContents({
     <nav
       aria-label="Table of contents"
       className={cn(
-        'rounded-lg border border-border bg-card p-4',
+        'rounded-2xl border border-[var(--nl-border)] bg-[var(--nl-bg-soft)] p-4 shadow-sm',
         stickyDesktop && 'lg:sticky lg:top-24 lg:self-start',
         className,
       )}
@@ -54,16 +54,13 @@ export function LegalTableOfContents({
 
       <ol
         id="legal-toc-list"
-        className={cn(
-          'mt-3 space-y-1 lg:mt-0 lg:block',
-          open ? 'block' : 'hidden lg:block',
-        )}
+        className={cn('mt-3 space-y-1 lg:mt-0 lg:block', open ? 'block' : 'hidden lg:block')}
       >
         {items.map((item) => (
           <li key={item.id}>
             <a
               href={item.href}
-              className="block min-h-11 rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-muted/60 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="block min-h-11 rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-muted/60 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
             >
               {item.label}
             </a>

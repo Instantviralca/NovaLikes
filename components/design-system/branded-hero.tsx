@@ -7,7 +7,7 @@ import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Button } from '@/components/ui/button';
 import { Eyebrow } from '@/components/typography/eyebrow';
-import { Heading } from '@/components/typography/heading';
+import { GradientHeading } from '@/components/typography/gradient-heading';
 import { Lead } from '@/components/typography/lead';
 import { cn } from '@/lib/utils';
 import type { CtaProps } from '@/types/components';
@@ -63,14 +63,14 @@ export function BrandedHero({
   return (
     <Section
       spacing="lg"
-      className={cn('relative overflow-x-clip bg-hero-wash', className)}
+      className={cn('relative overflow-x-clip bg-[var(--nl-bg)]', className)}
       aria-label="Page hero"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-40"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 50% 40% at 90% 10%, rgb(232 93 4 / 0.06), transparent)',
+            'radial-gradient(ellipse 50% 45% at 90% 10%, rgb(249 115 22 / 0.1), transparent 70%), radial-gradient(ellipse 40% 40% at 10% 80%, rgb(236 72 153 / 0.08), transparent 70%)',
         }}
         aria-hidden="true"
       />
@@ -105,18 +105,17 @@ export function BrandedHero({
                 {eyebrow}
               </Eyebrow>
             ) : null}
-            <Heading
+            <GradientHeading
               as="h1"
-              size="display"
+              text={title}
+              auto
               className={cn(
-                'text-balance tracking-tight min-w-0',
+                'type-hero min-w-0 text-balance font-bold tracking-tight',
                 isPremiumDashboardHero
                   ? 'mt-4 max-w-[22ch] sm:mt-5 lg:!text-[clamp(2.85rem,4.4vw,3.65rem)]'
                   : 'max-w-[22ch] !text-[clamp(1.85rem,1.25rem+1.5vw,2.6rem)]',
               )}
-            >
-              {title}
-            </Heading>
+            />
             {description ? (
               <Lead
                 className={cn(
@@ -139,8 +138,9 @@ export function BrandedHero({
                 {primaryCta ? (
                   <Button
                     asChild
+                    variant="primary"
                     size="lg"
-                    className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] px-8 text-base font-semibold shadow-[0_14px_32px_-14px_rgba(249,115,22,0.85)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:bg-[var(--brand-primary-hover)] hover:shadow-[0_18px_36px_-14px_rgba(249,115,22,0.95)] motion-reduce:hover:translate-y-0 sm:w-auto sm:max-w-full"
+                    className="min-h-12 w-full px-8 text-base sm:w-auto sm:max-w-full"
                   >
                     <Link href={primaryCta.href}>{primaryCta.label}</Link>
                   </Button>
@@ -150,7 +150,7 @@ export function BrandedHero({
                     asChild
                     size="lg"
                     variant="outline"
-                    className="min-h-12 w-full rounded-xl border-[var(--border-strong)] bg-white/70 px-8 text-base font-semibold backdrop-blur-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 hover:bg-white motion-reduce:hover:translate-y-0 sm:w-auto sm:max-w-full"
+                    className="min-h-12 w-full px-8 text-base sm:w-auto sm:max-w-full"
                   >
                     <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
                   </Button>
@@ -162,7 +162,7 @@ export function BrandedHero({
                 className={cn(
                   '[&_svg]:size-5',
                   isPremiumDashboardHero
-                    ? 'mt-6 gap-x-4 gap-y-2.5 rounded-2xl border border-white/80 bg-white/80 px-4 py-4 shadow-[0_16px_36px_-22px_rgba(28,25,23,0.38)] backdrop-blur-md sm:mt-7 sm:gap-x-5 sm:px-5'
+                    ? 'mt-6 gap-x-4 gap-y-2.5 rounded-2xl border border-white/80 bg-white px-4 py-4 shadow-sm sm:mt-7 sm:gap-x-5 sm:px-5'
                     : 'pt-2',
                 )}
                 items={trustLabels.map((t) => ({

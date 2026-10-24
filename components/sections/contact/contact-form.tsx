@@ -21,10 +21,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
-import {
-  contactAnalyticsEvents,
-  trackContactEvent,
-} from '@/lib/analytics/contact-events';
+import { contactAnalyticsEvents, trackContactEvent } from '@/lib/analytics/contact-events';
 import {
   hasContactFormErrors,
   validateContactForm,
@@ -108,7 +105,7 @@ type ContactFormProps = {
 };
 
 const inputClassName =
-  'min-h-11 rounded-xl border-[var(--border-subtle)] bg-white ps-10 transition-[border-color,box-shadow] duration-200 placeholder:text-muted-foreground focus-visible:border-[var(--brand-primary)]/45 focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--brand-primary)_12%,transparent)] focus-visible:ring-0';
+  'min-h-11 rounded-xl border-[var(--nl-border)] bg-white ps-10 transition-[border-color,box-shadow] duration-200 placeholder:text-muted-foreground focus-visible:border-[var(--brand-primary)]/45 focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--brand-primary)_12%,transparent)] focus-visible:ring-0';
 
 const inputErrorClassName =
   'border-destructive focus-visible:border-destructive focus-visible:shadow-[0_0_0_3px_color-mix(in_srgb,var(--destructive)_12%,transparent)]';
@@ -148,7 +145,11 @@ function ContactField({
   onChange,
   dir,
 }: ContactFieldProps) {
-  const fieldClass = cn(inputClassName, error && inputErrorClassName, multiline && 'min-h-[9rem] resize-y pt-3');
+  const fieldClass = cn(
+    inputClassName,
+    error && inputErrorClassName,
+    multiline && 'min-h-[9rem] resize-y pt-3',
+  );
 
   return (
     <FormField label={label} htmlFor={id} helper={helper} error={error} required={required}>
@@ -282,7 +283,7 @@ export function ContactForm({
       className={cn(
         'space-y-5',
         !embedded &&
-          'rounded-2xl border border-[var(--border-subtle)] bg-card p-6 shadow-[0_14px_32px_-24px_rgba(28,25,23,0.22)] sm:p-8',
+          'rounded-2xl border border-[var(--nl-border)] bg-card p-6 shadow-[0_14px_32px_-24px_rgba(28,25,23,0.22)] sm:p-8',
         className,
       )}
       noValidate

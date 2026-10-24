@@ -3,10 +3,7 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Heading } from '@/components/typography/heading';
-import {
-  getRelatedServicesForTool,
-  relatedServicesHeading,
-} from '@/data/tools/related-services';
+import { getRelatedServicesForTool, relatedServicesHeading } from '@/data/tools/related-services';
 import type { ToolPlatform, ToolSlug } from '@/lib/tools/types';
 
 type ToolRelatedServicesProps = {
@@ -21,7 +18,7 @@ export function ToolRelatedServices({ slug, platform }: ToolRelatedServicesProps
   return (
     <Section spacing="sm">
       <Container size="lg">
-        <div className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-muted)] px-5 py-5 sm:px-6">
+        <div className="rounded-2xl border border-[var(--nl-border)] bg-[var(--surface-muted)] px-5 py-5 sm:px-6">
           <Heading as="h2" size="h3">
             {relatedServicesHeading(platform)}
           </Heading>
@@ -34,7 +31,7 @@ export function ToolRelatedServices({ slug, platform }: ToolRelatedServicesProps
               <li key={service.slug}>
                 <Link
                   href={service.url}
-                  className="text-sm font-medium text-[var(--brand-primary)] underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="text-sm font-medium text-[var(--brand-primary)] underline-offset-2 hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
                 >
                   {service.name}
                 </Link>

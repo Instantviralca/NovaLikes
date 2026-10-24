@@ -148,7 +148,7 @@ export function LoginForm({ nextPath }: LoginFormProps) {
             className={cn(
               'flex-1 rounded-md px-3 py-2 text-sm font-medium transition-colors',
               tab === id
-                ? 'bg-[var(--brand)] text-white'
+                ? 'bg-nl-grad text-white'
                 : 'text-muted-foreground hover:text-foreground',
             )}
             onClick={() => {
@@ -192,7 +192,7 @@ export function LoginForm({ nextPath }: LoginFormProps) {
           <div className="flex justify-end">
             <Link
               href="/forgot-password"
-              className="text-sm font-medium text-[var(--brand)]"
+              className="text-sm font-medium text-[var(--nl-orange)]"
             >
               {ACCOUNT_UI.login.forgotPassword}
             </Link>
@@ -240,7 +240,7 @@ export function LoginForm({ nextPath }: LoginFormProps) {
 
       <p className="text-sm text-muted-foreground">
         New to NovaLikes?{' '}
-        <Link href="/signup" className="font-medium text-[var(--brand)]">
+        <Link href="/signup" className="font-medium text-[var(--nl-orange)]">
           Create an account
         </Link>
       </p>

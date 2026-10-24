@@ -7,16 +7,17 @@ type ArticleContentProps = {
 
 /**
  * Main article body renderer — Document 15.02.
- * Server-rendered from typed blocks only.
+ * Server-rendered from typed blocks only. Emits blocks as direct children so the
+ * surrounding site-v2 `.prose` wrapper (in `ArticlePage`) controls spacing.
  */
 export function ArticleContent({ blocks }: ArticleContentProps) {
   if (blocks.length === 0) return null;
 
   return (
-    <div className="space-y-7 md:space-y-9 [&_h2]:pt-2">
+    <>
       {blocks.map((block) => (
         <ArticleContentBlockView key={block.id} block={block} />
       ))}
-    </div>
+    </>
   );
 }

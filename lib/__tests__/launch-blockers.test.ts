@@ -88,7 +88,7 @@ describe('Database persistence (memory driver)', () => {
       items: [cartItem()],
       idempotencyKey: 'persist-1',
     });
-    expect(order.total.amount).toBe(1399);
+    expect(order.total.amount).toBe(1499);
     expect((await getOrderById(order.id))?.guestEmail).toBe('buyer@example.com');
 
     const contact = await getPersistence().saveContactMessage({
@@ -119,8 +119,8 @@ describe('Database persistence (memory driver)', () => {
 describe('Server-side price validation', () => {
   it('recalculates from catalog and ignores client unitPrice', () => {
     const pricing = validateCheckoutPricing({ items: [cartItem({ unitPrice: 1 })] });
-    expect(pricing.total.amount).toBe(1399);
-    expect(pricing.items[0]?.unitPrice).toBe(1399);
+    expect(pricing.total.amount).toBe(1499);
+    expect(pricing.items[0]?.unitPrice).toBe(1499);
   });
 
   it('rejects unknown packages', () => {
@@ -192,7 +192,7 @@ describe('Payment verification + fulfilment gate', () => {
       paymentId: 'cs_test_1',
       status: 'paid',
       orderId: order.id,
-      amountMinor: 1399,
+      amountMinor: 1499,
     });
     expect(first.applied).toBe(true);
     expect(first.order?.payment?.status).toBe('paid');
@@ -202,7 +202,7 @@ describe('Payment verification + fulfilment gate', () => {
       paymentId: 'cs_test_1',
       status: 'paid',
       orderId: order.id,
-      amountMinor: 1399,
+      amountMinor: 1499,
     });
     expect(second.duplicate).toBe(true);
   });

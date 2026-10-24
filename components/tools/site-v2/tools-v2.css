@@ -1,0 +1,63 @@
+/* Tools-only additions on top of components/site-v2/site-v2.css (scoped to .site-v2). */
+
+/* Quick answer — under hero, before editorial split */
+.site-v2 .tool-qa{padding:28px 0 0}
+.site-v2 .tool-qa-box{max-width:780px;margin:0;padding:22px 24px;border-radius:18px;background:var(--grey);border:0;box-shadow:none}
+.site-v2 .tool-qa-box h2{margin:0;font:800 22px/1.3 var(--nl-display);letter-spacing:-.01em;text-transform:none;color:var(--ink)}
+.site-v2 .tool-qa-box p{margin:10px 0 0;font:600 16px/1.65 var(--nl-body);color:var(--body)}
+
+/* Existing <Breadcrumb className="crumbs"> carries Tailwind utility classes; normalise to the prototype look. */
+.site-v2 .crumbs{margin:0 0 18px;max-width:none;overflow:visible;font:700 13px var(--nl-body);color:var(--muted)}
+.site-v2 .crumbs ol{margin:0;padding:0;list-style:none}
+.site-v2 .crumbs a:hover{color:var(--accent)}
+.site-v2 .crumbs [aria-current]{color:var(--ink-2);font-weight:700}
+
+/* feature cards: layouts ship 4 items for most tools */
+.site-v2 .feat-cards.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1024px){.site-v2 .feat-cards.four{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.site-v2 .feat-cards.four{grid-template-columns:1fr}}
+
+/* editorial split illustration */
+.site-v2 .split .art{padding:24px}
+.site-v2 .split .art img{max-width:440px;margin:0 auto}
+
+/* workspace states */
+.site-v2 .tool-note{margin:0 0 14px;padding:12px 14px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px var(--line);font:600 14px/1.55 var(--nl-body);color:var(--body)}
+.site-v2 .tool-status{display:flex;align-items:flex-start;gap:8px;margin:14px 0 0;font:600 14px/1.5 var(--nl-body);color:var(--body)}
+.site-v2 .tool-status .ic{width:16px;height:16px;margin-top:2px;animation:tv2-spin 1s linear infinite}
+@keyframes tv2-spin{to{transform:rotate(360deg)}}
+.site-v2 .tool-error{display:flex;align-items:flex-start;gap:10px;margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--red-1);color:var(--red);font:700 14px/1.5 var(--nl-body)}
+.site-v2 .tool-error .ic{width:18px;height:18px;margin-top:2px}
+.site-v2 .tool-error p{margin:0;min-width:0;overflow-wrap:anywhere}
+.site-v2 .tool-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.site-v2 .tool-actions + .tool-actions{margin-top:10px}
+.site-v2 .btn .ic.spin{animation:tv2-spin 1s linear infinite}
+
+/* result card variants (base .tool-result lives in site-v2.css) */
+.site-v2 .tool-result.rich{align-items:flex-start;flex-wrap:wrap}
+.site-v2 .tool-result .tr-body{flex:1;min-width:0}
+.site-v2 .tool-result .tr-img{width:96px;height:96px;flex:none;border-radius:18px;object-fit:cover;background:var(--grey)}
+.site-v2 .tool-result .tr-img.round{border-radius:50%}
+.site-v2 .tool-result .tr-img.lg{width:144px;height:144px}
+.site-v2 .tool-result .tr-img.wide{width:176px;height:auto;aspect-ratio:16/9}
+.site-v2 .tool-result .tr-img.tall{width:112px;height:auto;aspect-ratio:9/16;max-height:200px}
+.site-v2 .tool-result .tr-name{margin:0;font:800 22px/1.2 var(--nl-display);letter-spacing:-.02em;color:var(--ink);overflow-wrap:anywhere}
+.site-v2 .tool-result .tr-sub{margin:4px 0 0;font:700 14px var(--nl-body);color:var(--muted);overflow-wrap:anywhere}
+.site-v2 .tool-result .tr-text{margin:8px 0 0;font:600 15px/1.6 var(--nl-body);color:var(--body);overflow-wrap:anywhere}
+.site-v2 .tool-result .tr-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 0}
+.site-v2 .tool-result .tr-stats div{padding:12px 8px;border-radius:14px;background:var(--grey);text-align:center}
+.site-v2 .tool-result .tr-stats dt{font:800 11px var(--nl-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.site-v2 .tool-result .tr-stats dd{margin:4px 0 0;font:800 20px var(--nl-display);color:var(--ink);overflow-wrap:anywhere}
+.site-v2 .tool-result .tool-actions .btn{margin-left:0}
+@media (max-width:640px){
+  .site-v2 .tool-result{flex-wrap:wrap}
+  .site-v2 .tool-result .btn{margin-left:0}
+  .site-v2 .tool-result .tr-img.wide{width:100%}
+}
+
+/* hub / cards */
+.site-v2 .tcard h3{overflow-wrap:anywhere}
+.site-v2 .pkg{display:block}
+.site-v2 .faq-list a{color:var(--accent);font-weight:800}
+.site-v2 .faq-list details p{white-space:pre-line}
+.site-v2 .sec-head .tlink{flex:none}

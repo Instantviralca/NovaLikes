@@ -127,7 +127,7 @@ export function Features({
   if (items.length === 0 && !title && !description && !visual) return null;
 
   return (
-    <Section id={id} className={cn(className)} aria-label={ariaLabel}>
+    <Section id={id} className={cn('bg-[var(--nl-bg-soft)]', className)} aria-label={ariaLabel}>
       <Container>
         {(title || description || visual) && (
           <div
@@ -165,7 +165,7 @@ export function Features({
                 <FadeUp key={item.id} delay={0.04 * index} className="h-full min-h-0">
                   <HoverLift className="h-full">
                     <FeatureCard
-                      className="group flex h-full min-h-[15rem] flex-col border-[var(--border-subtle)] shadow-[0_12px_28px_-22px_rgba(28,25,23,0.26)] transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1.5 hover:border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--border-subtle))] hover:shadow-[0_22px_48px_-24px_rgba(28,25,23,0.36)] motion-reduce:hover:translate-y-0 sm:min-h-[15.75rem]"
+                      className="group flex h-full min-h-[15rem] flex-col border-[var(--nl-border)] shadow-[0_12px_28px_-22px_rgba(28,25,23,0.26)] transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1.5 hover:border-[color-mix(in_srgb,var(--brand-primary)_28%,var(--nl-border))] hover:shadow-[0_22px_48px_-24px_rgba(28,25,23,0.36)] motion-reduce:hover:translate-y-0 sm:min-h-[15.75rem]"
                       title={item.title}
                       description={item.description}
                       icon={

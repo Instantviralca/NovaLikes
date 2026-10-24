@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
@@ -16,6 +17,9 @@ type CheckoutButtonProps = {
   label?: string;
   /** Called before navigating to checkout (e.g. close drawer). */
   onNavigate?: () => void;
+  /** Site-v2 solid accent button (`.btn.block.shine`). */
+  tone?: 'default' | 'siteV2';
+  showArrow?: boolean;
 };
 
 /**
@@ -26,6 +30,8 @@ export function CheckoutButton({
   className,
   label,
   onNavigate,
+  tone = 'default',
+  showArrow = false,
 }: CheckoutButtonProps) {
   const cart = useCart();
   const { ui } = useI18nChrome();
@@ -57,13 +63,11 @@ export function CheckoutButton({
     if (transfer) {
       url.searchParams.set(CART_QUERY_PARAM, transfer);
       emitLegacyAnalyticsEvent('checkout_click', { href: url.toString() });
-      // Navigate first so drawer/toast unmount cannot cancel redirect.
       window.location.assign(url.toString());
       onNavigate?.();
       return;
     }
 
-    // Oversized cart — server handoff (rare).
     void (async () => {
       try {
         const controller = new AbortController();
@@ -99,6 +103,9 @@ export function CheckoutButton({
     })();
   };
 
+  const disabledState = disabled || busy || cart.items.length === 0;
+  const text = busy ? ui.cart.continuing : buttonLabel;
+
   return (
     <div className="space-y-2">
       {busy ? (
@@ -112,16 +119,29 @@ export function CheckoutButton({
           </p>
         </div>
       ) : null}
-      <Button
-        type="button"
-        size="lg"
-        className={cn('w-full min-h-11', className)}
-        disabled={disabled || busy || cart.items.length === 0}
-        data-analytics="checkout-click"
-        onClick={handleClick}
-      >
-        {busy ? ui.cart.continuing : buttonLabel}
-      </Button>
+      {tone === 'siteV2' ? (
+        <button
+          type="button"
+          className={cn('btn block shine', className)}
+          disabled={disabledState}
+          data-analytics="checkout-click"
+          onClick={handleClick}
+        >
+          {text}
+          {showArrow && !busy ? <ArrowRight className="ic" aria-hidden="true" /> : null}
+        </button>
+      ) : (
+        <Button
+          type="button"
+          size="lg"
+          className={cn('w-full min-h-11', className)}
+          disabled={disabledState}
+          data-analytics="checkout-click"
+          onClick={handleClick}
+        >
+          {text}
+        </Button>
+      )}
       {error ? (
         <p className="text-xs text-destructive" role="alert">
           {error}

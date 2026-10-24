@@ -117,11 +117,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Bestellungen werden über den Gast-Checkout mit den für den gewählten Service angeforderten Angaben aufgegeben. Ein gesondertes NovaLikes-Kundenkonto ist für eine Bestellung nicht erforderlich."
+          "text": "Sie können eine Bestellung als Gast oder angemeldet mit einem NovaLikes-Kundenkonto aufgeben. Für eine Bestellung ist kein Konto erforderlich."
         },
         {
           "type": "paragraph",
-          "text": "Nachdem die Zahlung eingeleitet oder bestätigt wurde, können Sie verfügbare Statusaktualisierungen über die Bestellverfolgung mit Ihrer Bestellreferenz und der Kassen-E-Mail verfolgen."
+          "text": "Nachdem die Zahlung eingeleitet oder bestätigt wurde, können Sie verfügbare Statusaktualisierungen über die Bestellverfolgung mit Ihrer Bestellreferenz und der Kassen-E-Mail verfolgen oder, wenn die Bestellung mit Ihrem Konto verknüpft ist, in Ihrem Kunden-Dashboard."
         },
         {
           "type": "paragraph",

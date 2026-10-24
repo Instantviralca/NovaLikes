@@ -46,14 +46,13 @@ function mapProductToPackage(product: NovaLikesProduct, service: Service): Prici
     compareAtPrice: compareAt && compareAt > price ? compareAt : undefined,
     deliveryTime: '',
     features: product.features ? [...product.features] : [],
-    badge:
-      product.commentType === 'Premium' && product.popular
+    badge: product.deal
+      ? 'best-value'
+      : product.commentType === 'Premium' && product.popular
         ? 'recommended'
         : product.popular
           ? 'most-popular'
-          : product.commentType === 'High Quality' && product.count === 100
-            ? 'best-value'
-            : undefined,
+          : undefined,
     displayOrder: product.count,
     active: true,
     availability: 'active',

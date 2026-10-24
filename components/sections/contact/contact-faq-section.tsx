@@ -22,7 +22,7 @@ function FaqRow({ item }: { item: FaqItem }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-white">
+    <div className="overflow-hidden rounded-2xl border border-[var(--nl-border)] bg-white">
       <button
         type="button"
         aria-expanded={open}
@@ -52,7 +52,7 @@ function FaqRow({ item }: { item: FaqItem }) {
         )}
       >
         <div className="overflow-hidden">
-          <p className="border-t border-[var(--border-subtle)] px-5 py-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+          <p className="border-t border-[var(--nl-border)] px-5 py-4 text-sm leading-relaxed text-[var(--text-secondary)]">
             {item.answer}
           </p>
         </div>

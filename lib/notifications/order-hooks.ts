@@ -90,7 +90,18 @@ function supportText(support: string, site: string): string {
   return `Support: ${site}${routes.contact}`;
 }
 
-function buildItemsHtml(order: Order): string {
+function lineNotes(configuration: Order['items'][number]['configuration'] | undefined): string {
+  const raw = configuration?.notes;
+  if (typeof raw !== 'string') return '';
+  return raw.trim();
+}
+
+/** Escaped plain-text notes with line breaks for admin HTML email bodies. */
+function formatNotesHtml(notes: string): string {
+  return escapeHtml(notes).replace(/\r\n|\r|\n/g, '<br />');
+}
+
+export function buildItemsHtml(order: Order): string {
   const lines = getOrderLineViews(order);
   if (lines.length === 0) return '';
   return lines
@@ -102,6 +113,12 @@ function buildItemsHtml(order: Order): string {
       if (line.targetDisplay) {
         rows.push(
           `<div style="margin:0 0 4px;color:#64748b;">Profile: ${escapeHtml(line.targetDisplay)}</div>`,
+        );
+      }
+      const notes = lineNotes(line.configuration);
+      if (notes) {
+        rows.push(
+          `<div style="margin:0 0 4px;color:#64748b;">Order notes:<br />${formatNotesHtml(notes)}</div>`,
         );
       }
       rows.push(`<div style="margin:0 0 4px;">Qty: ${line.lineQuantity}</div>`);
@@ -118,14 +135,16 @@ function buildItemsHtml(order: Order): string {
     .join('');
 }
 
-function buildItemsText(order: Order): string {
+export function buildItemsText(order: Order): string {
   const lines = getOrderLineViews(order);
   return lines
     .map((line) => {
+      const notes = lineNotes(line.configuration);
       const parts = [
         line.serviceName,
         line.packageTitle || line.quantityLabel,
         line.targetDisplay ? `Profile: ${line.targetDisplay}` : '',
+        notes ? `Order notes:\n${notes}` : '',
         `Qty: ${line.lineQuantity}`,
         line.lineQuantity > 1 ? `${line.unitPriceDisplay} each` : '',
         `Line total: ${line.lineTotalDisplay}`,

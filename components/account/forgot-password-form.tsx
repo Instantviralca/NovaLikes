@@ -181,7 +181,7 @@ export function ForgotPasswordForm() {
         </Button>
       </form>
       <p className="text-sm">
-        <Link href="/login" className="font-medium text-[var(--brand)]">
+        <Link href="/login" className="font-medium text-[var(--nl-orange)]">
           Sign in
         </Link>
       </p>

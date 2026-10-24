@@ -16,6 +16,7 @@ type ServicePageViewProps = {
 /**
  * Service pages share the Buy Instagram Followers authority structure.
  * Followers keeps approved production copy; other services use dummy topical copy.
+ * English default pages with SERVICE_V2_CONTENT use ServiceV2View.
  */
 export async function ServicePageView({
   service,
@@ -25,6 +26,24 @@ export async function ServicePageView({
   breadcrumbs,
   ui,
 }: ServicePageViewProps) {
+  if (!market && (locale ?? 'en') === 'en') {
+    const { getServiceV2Content } = await import('@/data/content/service-v2');
+    const v2 = getServiceV2Content(service.slug);
+    if (v2) {
+      const { ServiceV2View } = await import(
+        '@/components/marketing/service-v2/service-v2-view'
+      );
+      return (
+        <ServiceV2View
+          service={service}
+          content={v2}
+          breadcrumbs={breadcrumbs}
+          locale={locale}
+        />
+      );
+    }
+  }
+
   if (service.slug === 'buy-instagram-followers') {
     const { InstagramFollowersAuthorityView } =
       await import('@/components/sections/instagram-followers-authority-view');

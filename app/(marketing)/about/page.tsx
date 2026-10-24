@@ -4,8 +4,6 @@ import { JsonLdScript } from '@/components/common/json-ld';
 import { AboutPageView } from '@/components/sections/AboutPageView';
 import { routes } from '@/config/routes';
 import { getAboutContent } from '@/data/content/company';
-import { loadQuickAnswer } from '@/lib/i18n/content/load';
-import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 import { asJsonLdGraph } from '@/lib/seo/schema';
 import { breadcrumbSchema } from '@/schemas/breadcrumb';
 import { webPageSchema } from '@/schemas/website';
@@ -36,11 +34,7 @@ export default function AboutPage() {
   return (
     <>
       <JsonLdScript id="about-jsonld" data={graph} />
-      <AboutPageView
-        content={content}
-        quickAnswerHeading={ENGLISH_UI.quickAnswer.heading}
-        quickAnswerText={loadQuickAnswer('en', 'about')}
-      />
+      <AboutPageView content={content} />
     </>
   );
 }

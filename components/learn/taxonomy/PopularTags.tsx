@@ -20,7 +20,7 @@ export function PopularTags({
 
   return (
     <div className={cn(className)}>
-      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#E85D04]">
+      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--nl-orange)]">
         {title}
       </p>
       <TagList tags={tags} className="mt-4" label={title} />

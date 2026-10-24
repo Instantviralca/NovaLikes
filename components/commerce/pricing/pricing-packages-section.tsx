@@ -31,7 +31,7 @@ export function PricingPackagesSection({
   return (
     <Section
       id={id}
-      className={cn('bg-hero-wash py-10 md:py-12', className)}
+      className={cn('bg-[var(--nl-bg-soft)] py-10 md:py-12', className)}
       aria-label="Pricing packages"
       data-analytics="pricing-packages"
     >
@@ -39,7 +39,7 @@ export function PricingPackagesSection({
         {(title || description) && (
           <div className="mb-5 w-full space-y-2 md:mb-6">
             {title ? (
-              <Heading as="h2" size="h2">
+              <Heading as="h2" size="h2" className="text-[var(--nl-ink)]">
                 {title}
               </Heading>
             ) : null}
@@ -49,24 +49,26 @@ export function PricingPackagesSection({
 
         {!loading && packages.length === 0 ? (
           <div
-            className="rounded-2xl border border-dashed border-[var(--border-strong)] bg-white p-8 text-center"
+            className="rounded-2xl border border-dashed border-[var(--nl-border)] bg-white p-8 text-center"
             role="status"
             data-analytics="pricing-empty"
           >
             <p className="text-sm text-muted-foreground">{emptyMessage}</p>
           </div>
         ) : (
-          <PricingGrid
-            packages={packages}
-            loading={loading}
-            onSelect={onSelectPackage}
-            onContinue={onContinuePackage}
-            selectedPackageId={selectedPackageId}
-            platformId={platformId}
-            serviceName={serviceName}
-            summaryBenefits={summaryBenefits}
-            infoPills={infoPills}
-          />
+          <div className="rounded-2xl border border-[var(--nl-border)] bg-white p-5 shadow-sm sm:p-7">
+            <PricingGrid
+              packages={packages}
+              loading={loading}
+              onSelect={onSelectPackage}
+              onContinue={onContinuePackage}
+              selectedPackageId={selectedPackageId}
+              platformId={platformId}
+              serviceName={serviceName}
+              summaryBenefits={summaryBenefits}
+              infoPills={infoPills}
+            />
+          </div>
         )}
 
         {secondaryCta ? (

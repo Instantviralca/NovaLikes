@@ -6,10 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import {
-  aboutAnalyticsEvents,
-  trackAboutEvent,
-} from '@/lib/analytics/about-events';
+import { aboutAnalyticsEvents, trackAboutEvent } from '@/lib/analytics/about-events';
 import type { CTAContent } from '@/types/content';
 
 type AboutCtaButtonsProps = {

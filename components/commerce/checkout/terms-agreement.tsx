@@ -3,8 +3,6 @@
 import Link from 'next/link';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
 import { routes } from '@/config/routes';
 import { localizeHref } from '@/lib/i18n/paths';
 
@@ -29,32 +27,33 @@ export function TermsAgreement({
   const refund = localizeHref(routes.refundPolicy, locale);
 
   return (
-    <div className="space-y-2">
-      <div className="flex items-start gap-3">
-        <Checkbox
+    <div>
+      <label className="check">
+        <input
+          type="checkbox"
           id="terms-agreement"
           checked={checked}
-          onCheckedChange={(value) => onCheckedChange(Boolean(value))}
           aria-invalid={Boolean(error)}
+          onChange={(e) => onCheckedChange(e.target.checked)}
         />
-        <Label htmlFor="terms-agreement" className="leading-snug font-normal">
+        <span>
           {ui.checkout.termsAgreePrefix}{' '}
-          <Link href={terms} className="underline underline-offset-2" target="_blank">
+          <Link href={terms} target="_blank">
             {ui.checkout.termsOfService}
           </Link>
           {ui.checkout.termsJoin}
-          <Link href={privacy} className="underline underline-offset-2" target="_blank">
+          <Link href={privacy} target="_blank">
             {ui.checkout.privacyPolicy}
           </Link>
           {ui.checkout.termsAnd}
-          <Link href={refund} className="underline underline-offset-2" target="_blank">
+          <Link href={refund} target="_blank">
             {ui.checkout.refundPolicy}
           </Link>
           {ui.checkout.termsPeriod}
-        </Label>
-      </div>
+        </span>
+      </label>
       {error ? (
-        <p className="text-xs text-destructive" role="alert">
+        <p className="err" role="alert" style={{ marginTop: 8 }}>
           {error}
         </p>
       ) : null}

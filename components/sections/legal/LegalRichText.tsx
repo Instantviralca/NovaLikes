@@ -10,7 +10,6 @@ import { cn } from '@/lib/utils';
 
 const LINK_PATTERN = /\[([^\]]+)\]\(((?:\/[^)\s]+|mailto:[^)\s]+))\)/g;
 
-
 export type LegalRichTextProps = {
   text: string;
   className?: string;
@@ -69,7 +68,7 @@ export function LegalRichText({ text, className, as = 'p' }: LegalRichTextProps)
   }
 
   return (
-    <Text className={cn('text-pretty leading-relaxed text-muted-foreground', className)}>
+    <Text className={cn('leading-relaxed text-pretty text-muted-foreground', className)}>
       {nodes}
     </Text>
   );

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 import type { LearnArticleClosingCta } from '@/lib/learn/article/closing-cta';
 
@@ -8,28 +9,21 @@ type ArticleClosingCtaProps = {
 
 /**
  * Single closing CTA for Learn articles — not the global dual-button registry pair.
+ * Site-v2 navy `.closing` panel.
  */
 export function ArticleClosingCta({ cta }: ArticleClosingCtaProps) {
   return (
     <section
       data-article-closing-cta
-      className="rounded-2xl border border-[#F0E4D8] bg-[#1C1917] px-6 py-8 text-white sm:px-8"
+      className="closing"
       aria-labelledby="article-closing-cta-heading"
     >
-      <h2
-        id="article-closing-cta-heading"
-        className="text-2xl font-semibold tracking-tight"
-      >
-        {cta.heading}
-      </h2>
-      <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-white/75">
-        {cta.text}
-      </p>
-      <Link
-        href={cta.href}
-        className="mt-6 inline-flex min-h-11 items-center rounded-full bg-[#E85D04] px-5 text-sm font-semibold text-white outline-none transition-colors hover:bg-[#D45504] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1917]"
-      >
-        {cta.label}
+      <div>
+        <h2 id="article-closing-cta-heading">{cta.heading}</h2>
+        <p>{cta.text}</p>
+      </div>
+      <Link className="btn" href={cta.href}>
+        {cta.label} <ArrowRight className="ic" aria-hidden="true" />
       </Link>
     </section>
   );

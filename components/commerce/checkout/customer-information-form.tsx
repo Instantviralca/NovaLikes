@@ -1,9 +1,9 @@
 'use client';
 
-import { Checkbox } from '@/components/ui/checkbox';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Mail } from 'lucide-react';
+
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
 import type { CustomerInformation } from '@/types/checkout';
 
 type CustomerInformationFormProps = {
@@ -22,70 +22,84 @@ export function CustomerInformationForm({
   hideLegend = false,
 }: CustomerInformationFormProps) {
   const { ui } = useI18nChrome();
+  const optional = SITE_V2_COPY.checkout.optional;
+
   return (
-    <fieldset className="space-y-4">
+    <fieldset>
       {hideLegend ? (
-        <legend className="sr-only">{ui.checkout.customerInformation}</legend>
+        <legend className="sr">{ui.checkout.customerInformation}</legend>
       ) : (
-        <legend className="text-lg font-semibold">{ui.checkout.customerInformation}</legend>
+        <legend className="sr">{ui.checkout.customerInformation}</legend>
       )}
-      <div className="space-y-2">
-        <Label htmlFor="checkout-email">
-          {ui.checkout.email} <span className="text-destructive">*</span>
-        </Label>
-        <Input
-          id="checkout-email"
-          type="email"
-          autoComplete="email"
-          required
-          dir="ltr"
-          value={value.email}
-          aria-invalid={Boolean(errors?.email)}
-          onChange={(e) => onChange({ ...value, email: e.target.value })}
-          onBlur={onEmailBlur}
-        />
+      <div className="field">
+        <label htmlFor="checkout-email">{ui.checkout.email}</label>
+        <div className="input">
+          <Mail className="ic" aria-hidden="true" />
+          <input
+            id="checkout-email"
+            type="email"
+            autoComplete="email"
+            required
+            dir="ltr"
+            placeholder="you@example.com"
+            value={value.email}
+            aria-invalid={Boolean(errors?.email)}
+            onChange={(e) => onChange({ ...value, email: e.target.value })}
+            onBlur={onEmailBlur}
+          />
+        </div>
         {errors?.email ? (
-          <p className="text-xs text-destructive" role="alert">
+          <p className="err" role="alert">
             {errors.email}
           </p>
         ) : null}
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="checkout-first-name">{ui.checkout.firstName}</Label>
-          <Input
-            id="checkout-first-name"
-            autoComplete="given-name"
-            value={value.firstName ?? ''}
-            onChange={(e) => onChange({ ...value, firstName: e.target.value })}
-          />
+      <div className="two">
+        <div className="field">
+          <label htmlFor="checkout-first-name">
+            {ui.checkout.firstName}{' '}
+            <span className="hint" style={{ display: 'inline' }}>
+              {optional}
+            </span>
+          </label>
+          <div className="input">
+            <input
+              id="checkout-first-name"
+              autoComplete="given-name"
+              value={value.firstName ?? ''}
+              onChange={(e) => onChange({ ...value, firstName: e.target.value })}
+            />
+          </div>
         </div>
-        <div className="space-y-2">
-          <Label htmlFor="checkout-last-name">{ui.checkout.lastName}</Label>
-          <Input
-            id="checkout-last-name"
-            autoComplete="family-name"
-            value={value.lastName ?? ''}
-            onChange={(e) => onChange({ ...value, lastName: e.target.value })}
-          />
+        <div className="field">
+          <label htmlFor="checkout-last-name">
+            {ui.checkout.lastName}{' '}
+            <span className="hint" style={{ display: 'inline' }}>
+              {optional}
+            </span>
+          </label>
+          <div className="input">
+            <input
+              id="checkout-last-name"
+              autoComplete="family-name"
+              value={value.lastName ?? ''}
+              onChange={(e) => onChange({ ...value, lastName: e.target.value })}
+            />
+          </div>
         </div>
       </div>
-      <div className="flex items-start gap-3 rounded-lg border border-[var(--border-subtle)] p-3">
-        <Checkbox
-          id="checkout-marketing-opt-in"
+      <label className="check" style={{ marginTop: 12 }}>
+        <input
+          type="checkbox"
           checked={Boolean(value.marketingOptIn)}
-          onCheckedChange={(checked) =>
-            onChange({ ...value, marketingOptIn: checked === true })
-          }
-          className="mt-0.5"
+          onChange={(e) => onChange({ ...value, marketingOptIn: e.target.checked })}
         />
-        <div className="space-y-1">
-          <Label htmlFor="checkout-marketing-opt-in" className="font-medium leading-snug">
-            {ui.checkout.marketingOptIn}
-          </Label>
-          <p className="text-xs text-muted-foreground">{ui.checkout.marketingHint}</p>
-        </div>
-      </div>
+        <span>
+          {ui.checkout.marketingOptIn}
+          <br />
+          <span className="hint">{ui.checkout.marketingHint}</span>
+        </span>
+      </label>
     </fieldset>
   );
 }

@@ -1,10 +1,12 @@
-import { CategoryGrid } from '@/components/learn/CategoryGrid';
 import { FeaturedArticles } from '@/components/learn/FeaturedArticles';
-import { LearnIndexHero } from '@/components/learn/LearnIndexHero';
-import { NewsletterCTA } from '@/components/learn/NewsletterCTA';
-import { PopularTags } from '@/components/learn/taxonomy/PopularTags';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
+import { LearnBlogBar } from '@/components/learn/site-v2/LearnBlogBar';
+import { LearnBlogHead } from '@/components/learn/site-v2/LearnBlogHead';
+import { LearnFeaturedCard } from '@/components/learn/site-v2/LearnFeaturedCard';
+import { LearnGrowBox } from '@/components/learn/site-v2/LearnGrowBox';
+import { LearnPlatformBrowse } from '@/components/learn/site-v2/LearnPlatformBrowse';
+import { LearnTopics } from '@/components/learn/site-v2/LearnTopics';
+import { SiteV2Shell } from '@/components/site-v2/site-v2-shell';
+import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
 import {
   getLearnIndexBreadcrumbs,
   listPublicLearnArticles,
@@ -22,10 +24,16 @@ function byNewest(a: PublicLearnArticle, b: PublicLearnArticle) {
 }
 
 /**
- * Learn Center index — Documents 15.01 + 15.04 + 15.05.
+ * Learn Center index — Documents 15.01 + 15.04 + 15.05, site-v2 layout.
+ *
+ * `NewsletterCTA` is intentionally not rendered: `learnConfig.newsletterEnabled` is false
+ * and the component has no working signup. The grow box takes its place.
  */
 export function LearnIndexView({ articles: articlesProp }: LearnIndexViewProps) {
-  const categories = listPublicLearnCategories();
+  const allCategories = listPublicLearnCategories();
+  const tabCategories = allCategories
+    .filter((category) => category.articleCount > 0)
+    .map(({ slug, name, href, articleCount }) => ({ slug, name, href, articleCount }));
   const articles = (articlesProp ?? listPublicLearnArticles()).slice().sort(byNewest);
   const breadcrumbs = getLearnIndexBreadcrumbs();
   const popularTags = getPopularTags(10);
@@ -33,41 +41,41 @@ export function LearnIndexView({ articles: articlesProp }: LearnIndexViewProps) 
   const remaining = articles.slice(1);
 
   return (
-    <div className="overflow-x-hidden">
-      <LearnIndexHero
-        breadcrumbs={breadcrumbs}
-        articleCount={articles.length}
-        categoryCount={categories.length}
-        featured={featured}
+    <SiteV2Shell>
+      <LearnBlogBar
+        categories={tabCategories}
+        active="all"
+        searchMode="inline"
       />
 
-      <CategoryGrid
-        title="Browse by platform"
-        description="Jump into Instagram, TikTok, Facebook, or broader growth topics."
-        categories={categories}
-      />
+      <section className="wrap">
+        <LearnBlogHead
+          breadcrumbs={breadcrumbs}
+          title="Social Media Guides & Resources"
+          description={SITE_V2_COPY.learn.indexIntro}
+        />
 
-      {popularTags.length > 0 ? (
-        <Section className="border-y border-[#F0E4D8] bg-hero-wash">
-          <Container>
-            <PopularTags tags={popularTags} />
-          </Container>
-        </Section>
-      ) : null}
+        <LearnTopics tags={popularTags} />
 
-      <div id="all-articles">
         <FeaturedArticles
           title="All articles"
-          description="Every published Learn guide, newest first."
-          articles={remaining.length > 0 ? remaining : articles}
+          meta={SITE_V2_COPY.learn.newestFirst}
+          articles={articles}
+          defaultArticles={remaining.length > 0 ? remaining : articles}
+          featuredSlot={
+            featured ? (
+              <>
+                <LearnFeaturedCard article={featured} />
+                <LearnPlatformBrowse categories={allCategories} />
+              </>
+            ) : (
+              <LearnPlatformBrowse categories={allCategories} />
+            )
+          }
         />
-      </div>
+      </section>
 
-      <Section>
-        <Container>
-          <NewsletterCTA />
-        </Container>
-      </Section>
-    </div>
+      <LearnGrowBox />
+    </SiteV2Shell>
   );
 }

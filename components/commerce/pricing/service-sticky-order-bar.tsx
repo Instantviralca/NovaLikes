@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { setStickyBarOffset, clearStickyBarOffset } from '@/lib/ui/sticky-bar-offset';
 import { cn } from '@/lib/utils';
 
 export type ServiceStickyOrderBarProps = {
@@ -29,6 +30,7 @@ export function ServiceStickyOrderBar({
   const { locale, ui } = useI18nChrome();
   const resolvedCta = ctaLabel ?? ui.commerce.choosePackage;
   const [visible, setVisible] = useState(false);
+  const barRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const target = document.getElementById(pricingSectionId);
@@ -44,6 +46,23 @@ export function ServiceStickyOrderBar({
     return () => observer.disconnect();
   }, [pricingSectionId]);
 
+  useLayoutEffect(() => {
+    if (!visible) {
+      clearStickyBarOffset();
+      return;
+    }
+    const el = barRef.current;
+    if (!el) return;
+    const publish = () => setStickyBarOffset(el.getBoundingClientRect().height);
+    publish();
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(publish) : null;
+    ro?.observe(el);
+    return () => {
+      ro?.disconnect();
+      clearStickyBarOffset();
+    };
+  }, [visible]);
+
   if (!visible) return null;
 
   const scrollToPricing = () => {
@@ -53,8 +72,10 @@ export function ServiceStickyOrderBar({
 
   return (
     <div
+      ref={barRef}
       className={cn(
-        'fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-3 shadow-[var(--shadow-lg)] backdrop-blur lg:hidden',
+        // Plain soft fill — no backdrop-filter blur (mobile main-thread cost)
+        'fixed inset-x-0 bottom-0 z-40 border-t border-[var(--nl-border)] bg-[var(--nl-bg)] p-3 shadow-[var(--shadow-lg)] lg:hidden',
         'pb-[max(0.75rem,env(safe-area-inset-bottom))]',
         className,
       )}

@@ -6,15 +6,19 @@ import { cn } from '@/lib/utils';
 export function ToolsHubHeroArt({ className }: { className?: string }) {
   return (
     <div className={cn('relative mx-auto w-full max-w-[34rem]', className)} aria-hidden="true">
-      <span className="pointer-events-none absolute -left-8 top-8 size-40 rounded-full bg-[#F3E8FF] blur-2xl" />
-      <span className="pointer-events-none absolute -right-6 bottom-4 size-44 rounded-full bg-[#FFE4D1] blur-2xl" />
+      <span className="pointer-events-none absolute top-8 -left-8 size-40 rounded-full bg-[#F3E8FF] blur-2xl" />
+      <span className="pointer-events-none absolute -right-6 bottom-4 size-44 rounded-full bg-[var(--nl-eyebrow-bg)] blur-2xl" />
 
-      <Sparkle className="absolute left-[18%] top-2 text-[#F4A261]" />
-      <Sparkle className="absolute right-[22%] top-10 text-[#E07A5F]" />
+      <Sparkle className="absolute top-2 left-[18%] text-[#F4A261]" />
+      <Sparkle className="absolute top-10 right-[22%] text-[#E07A5F]" />
       <Sparkle className="absolute bottom-8 left-[8%] text-[#C9B6F2]" />
-      <Sparkle className="absolute bottom-4 right-[12%] text-[#E07A5F]" />
+      <Sparkle className="absolute right-[12%] bottom-4 text-[#E07A5F]" />
 
-      <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 400 340" fill="none">
+      <svg
+        className="pointer-events-none absolute inset-0 h-full w-full"
+        viewBox="0 0 400 340"
+        fill="none"
+      >
         <path
           d="M62 78 C 90 70, 118 92, 148 108"
           stroke="#D8D0EA"
@@ -38,13 +42,13 @@ export function ToolsHubHeroArt({ className }: { className?: string }) {
         />
       </svg>
 
-      <span className="absolute left-1 top-10 z-10 inline-flex size-12 items-center justify-center rounded-full bg-[#C9B6F2] text-white shadow-[0_10px_24px_-10px_rgba(120,80,180,0.55)] sm:size-14">
+      <span className="absolute top-10 left-1 z-10 inline-flex size-12 items-center justify-center rounded-full bg-[#C9B6F2] text-white shadow-[0_10px_24px_-10px_rgba(120,80,180,0.55)] sm:size-14">
         <Users className="size-6" />
       </span>
-      <span className="absolute right-0 top-6 z-10 inline-flex size-[4.25rem] items-center justify-center rounded-full bg-gradient-to-br from-[#FF8A4C] to-[#F472B6] text-white shadow-[0_12px_28px_-10px_rgba(232,93,4,0.55)] sm:size-[4.75rem]">
+      <span className="absolute top-6 right-0 z-10 inline-flex size-[4.25rem] items-center justify-center rounded-full bg-gradient-to-br from-[#FF8A4C] to-[#F472B6] text-white shadow-[0_12px_28px_-10px_rgba(232,93,4,0.55)] sm:size-[4.75rem]">
         <Play className="size-7 fill-current" />
       </span>
-      <span className="absolute bottom-6 right-1 z-10 inline-flex size-12 items-center justify-center rounded-full bg-[#7DD3C7] text-white shadow-[0_10px_24px_-10px_rgba(45,140,130,0.5)] sm:size-14">
+      <span className="absolute right-1 bottom-6 z-10 inline-flex size-12 items-center justify-center rounded-full bg-[#7DD3C7] text-white shadow-[0_10px_24px_-10px_rgba(45,140,130,0.5)] sm:size-14">
         <Users className="size-6" />
       </span>
 
@@ -55,8 +59,10 @@ export function ToolsHubHeroArt({ className }: { className?: string }) {
           <span className="size-2.5 rounded-full bg-[#B8E0A8]" />
         </div>
 
-        <div className="flex h-12 items-center rounded-2xl bg-white pl-4 pr-1.5 shadow-sm">
-          <span className="min-w-0 flex-1 truncate text-[13px] text-[#B0A9B4]">@username or profile URL</span>
+        <div className="flex h-12 items-center rounded-2xl bg-white pr-1.5 pl-4 shadow-sm">
+          <span className="min-w-0 flex-1 truncate text-[13px] text-[#B0A9B4]">
+            @username or profile URL
+          </span>
           <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#FF6B35] text-white">
             <Search className="size-4" />
           </span>
@@ -84,15 +90,7 @@ export function ToolsHubHeroArt({ className }: { className?: string }) {
   );
 }
 
-function HeroRow({
-  icon,
-  stroke,
-  points,
-}: {
-  icon: ReactNode;
-  stroke: string;
-  points: string;
-}) {
+function HeroRow({ icon, stroke, points }: { icon: ReactNode; stroke: string; points: string }) {
   return (
     <li className="flex items-center gap-3 rounded-2xl bg-white px-3 py-2.5 shadow-sm">
       {icon}
@@ -101,7 +99,13 @@ function HeroRow({
         <span className="block h-2 w-[46%] rounded-full bg-[#EDEAF0]" />
       </span>
       <svg viewBox="0 0 38 22" className="h-7 w-11 shrink-0" fill="none">
-        <polyline points={points} stroke={stroke} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+        <polyline
+          points={points}
+          stroke={stroke}
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </li>
   );
@@ -118,7 +122,13 @@ function Sparkle({ className }: { className?: string }) {
 function InstagramGlyph() {
   return (
     <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)] text-white">
-      <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <svg
+        viewBox="0 0 24 24"
+        className="size-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      >
         <rect x="4" y="4" width="16" height="16" rx="5" />
         <circle cx="12" cy="12" r="3.4" />
         <circle cx="16.6" cy="7.4" r="0.9" fill="currentColor" stroke="none" />

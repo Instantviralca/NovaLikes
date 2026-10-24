@@ -1,0 +1,389 @@
+/* Tokens live on :root (styles/globals.css). .home-tt only scopes homepage chrome. */
+.home-tt {
+  color: var(--nl-ink);
+  background: var(--nl-bg);
+}
+
+/* Alias homepage gradient words onto the global heading utility. */
+.home-tt .tt-grad {
+  color: var(--nl-orange);
+  background-image: var(--nl-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .home-tt .tt-grad {
+    color: var(--nl-orange);
+    -webkit-text-fill-color: var(--nl-orange);
+    background-image: none;
+  }
+}
+
+.home-tt .tt-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--nl-eyebrow-bg);
+  color: var(--nl-orange);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+}
+
+.home-tt .tt-h1 {
+  font-size: clamp(2.125rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--nl-ink);
+}
+
+.home-tt .tt-h2 {
+  font-size: clamp(1.625rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--nl-ink);
+}
+
+.home-tt .tt-body {
+  color: var(--nl-body);
+  line-height: 1.65;
+}
+
+.home-tt .tt-muted {
+  color: var(--nl-muted);
+}
+
+.home-tt .tt-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  border-radius: 0.75rem;
+  background: var(--nl-grad);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.65rem 1.35rem;
+  box-shadow: 0 10px 24px -12px rgba(234, 88, 12, 0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-tt .tt-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px -12px rgba(234, 88, 12, 0.65);
+}
+
+.home-tt .tt-btn-primary:focus-visible {
+  outline: 2px solid var(--nl-orange);
+  outline-offset: 2px;
+}
+
+.home-tt .tt-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  border-radius: 0.75rem;
+  border: 1.5px solid var(--nl-orange);
+  background: #fff;
+  color: var(--nl-orange);
+  font-weight: 700;
+  padding: 0.65rem 1.35rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-tt .tt-btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -14px rgba(234, 88, 12, 0.45);
+}
+
+.home-tt .tt-btn-secondary:focus-visible {
+  outline: 2px solid var(--nl-orange);
+  outline-offset: 2px;
+}
+
+.home-tt .tt-card {
+  border-radius: 1rem;
+  border: 1px solid var(--nl-border);
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(17 24 39 / 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-tt .tt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -16px rgb(17 24 39 / 0.2);
+}
+
+.home-tt .tt-icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background: #ffe8d8;
+  color: var(--nl-orange);
+}
+
+.home-tt .tt-icon-tile-pink {
+  background: #fce7f3;
+  color: var(--nl-pink);
+}
+
+.home-tt .tt-soft {
+  background: var(--nl-bg-soft);
+}
+
+.home-tt .tt-glow-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-tt .tt-glow-bg::before {
+  content: '';
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 70%;
+  background:
+    radial-gradient(ellipse 45% 55% at 20% 30%, rgb(249 115 22 / 0.12), transparent 70%),
+    radial-gradient(ellipse 40% 50% at 80% 20%, rgb(236 72 153 / 0.1), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-tt .tt-glow-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-tt .tt-dark {
+  background: var(--nl-dark);
+  color: #f9fafb;
+}
+
+.home-tt .tt-dark .tt-h2 {
+  color: #f9fafb;
+}
+
+.home-tt .tt-dark .tt-body {
+  color: #d1d5db;
+}
+
+.home-tt .tt-dark-panel {
+  background: var(--nl-dark-surface);
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: 1rem;
+}
+
+.home-tt .tt-tab {
+  border-radius: 999px;
+  border: 1.5px solid var(--nl-border);
+  background: #fff;
+  color: var(--nl-ink);
+  font-weight: 700;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+}
+
+.home-tt .tt-tab[aria-selected='true'] {
+  border-color: transparent;
+  background: var(--nl-grad);
+  color: #fff;
+}
+
+.home-tt .tt-tab:focus-visible {
+  outline: 2px solid var(--nl-orange);
+  outline-offset: 2px;
+}
+
+/* Compact picker — tactile selected state lives in globals .pkg-tile--tactile */
+.home-tt [data-analytics='pricing-grid-compact'] .pkg-tile--tactile[data-selected='true'] {
+  border-color: transparent !important;
+  background: var(--nl-grad) !important;
+  color: #fff !important;
+  box-shadow: inset 0 3px 0 rgb(0 0 0 / 0.2);
+  transform: none;
+}
+
+.home-tt [data-analytics='pricing-grid-compact'] [data-analytics='package-cta'] {
+  background: var(--nl-grad) !important;
+  border: none !important;
+  box-shadow: 0 10px 24px -12px rgba(234, 88, 12, 0.55);
+}
+
+.home-tt .tt-hero-blob {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  /* Soft blob without filter:blur (cheaper for mobile main-thread). */
+  background:
+    radial-gradient(circle at 32% 30%, rgb(249 115 22 / 0.12), transparent 62%),
+    radial-gradient(circle at 72% 68%, rgb(236 72 153 / 0.12), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-tt .tt-hero-blob-sm {
+  width: 280px;
+  height: 280px;
+}
+
+.home-tt .tt-mock-badge {
+  border-radius: 9999px;
+  border: 1px solid var(--nl-border);
+  background: #fff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--nl-ink);
+  box-shadow: 0 8px 20px -12px rgb(234 88 12 / 0.45);
+}
+
+.home-tt .tt-stat-highlight {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--nl-bg-soft), var(--nl-bg-soft)) padding-box,
+    var(--nl-grad) border-box;
+}
+
+.home-tt .tt-media-mock {
+  background: #1e1528;
+}
+
+.home-tt .tt-media-mock-overlay {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 35%;
+  background: linear-gradient(180deg, rgb(249 115 22 / 0.45) 0%, rgb(236 72 153 / 0.28) 55%, transparent 100%);
+  pointer-events: none;
+}
+
+.home-tt .tt-finder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-height: 5.5rem;
+  border-radius: 1rem;
+  border: 1.5px solid rgb(255 255 255 / 0.1);
+  background: rgb(255 255 255 / 0.05);
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.home-tt .tt-finder-card:hover {
+  border-color: rgb(249 115 22 / 0.45);
+  transform: translateY(-1px);
+}
+
+.home-tt .tt-finder-card:focus-visible {
+  outline: 2px solid var(--nl-orange-500);
+  outline-offset: 2px;
+}
+
+.home-tt .tt-finder-card-selected {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(rgb(30 21 40), rgb(30 21 40)) padding-box,
+    var(--nl-grad) border-box;
+  box-shadow: inset 0 0 0 999px rgb(249 115 22 / 0.08);
+}
+
+.home-tt .tt-finder-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.65rem;
+  background: rgb(249 115 22 / 0.16);
+  color: #fb923c;
+}
+
+/* Float: CSS transform only, fine-pointer desktop */
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .home-tt .tt-float {
+    animation: tt-float 4.8s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .home-tt .tt-float-delay {
+    animation-delay: 0.8s;
+  }
+}
+
+@keyframes tt-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-tt .tt-float,
+  .home-tt .tt-float-delay,
+  .home-tt .tt-btn-primary,
+  .home-tt .tt-btn-secondary,
+  .home-tt .tt-card {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+.home-tt .tt-bg-grad {
+  background-image: var(--nl-grad);
+  background-color: var(--nl-orange);
+}
+
+.home-tt .tt-final-banner {
+  background-image: var(--nl-grad);
+  background-color: var(--nl-orange);
+  color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -20px rgba(234, 88, 12, 0.55);
+}
+
+.home-tt .tt-sticky {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 40;
+  border-top: 1px solid var(--nl-border);
+  background: #fff;
+  padding: 0.75rem 1rem max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@media (min-width: 1024px) {
+  .home-tt .tt-sticky {
+    display: none;
+  }
+}
+
+/* Defer layout/paint for below-fold bands (keeps CLS low with auto intrinsic size). */
+.home-tt #tiktok-services,
+.home-tt #why-novalikes,
+.home-tt #how-it-works,
+.home-tt #what-to-expect,
+.home-tt #who-its-for,
+.home-tt #tiktok-guides,
+.home-tt #homepage-faq,
+.home-tt #other-platforms,
+.home-tt #home-final-cta {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}

@@ -30,6 +30,11 @@ export type CTASectionProps = {
   trustLine?: string;
   /** Optional checklist-style trust badges under the CTA buttons. */
   trustBadges?: string[];
+  /**
+   * `band` — full-bleed dark band (legacy).
+   * `banner` — homepage-style white section + orange gradient card.
+   */
+  variant?: 'band' | 'banner';
 };
 
 /**
@@ -48,9 +53,11 @@ export function CTASection({
   aside,
   trustLine,
   trustBadges,
+  variant = 'band',
 }: CTASectionProps) {
   const viewed = useRef(false);
   const headingId = id ? `${id}-heading` : 'cta-section-heading';
+  const isBanner = variant === 'banner';
 
   useEffect(() => {
     if (viewed.current) return;
@@ -64,6 +71,62 @@ export function CTASection({
       serviceSlug,
     });
   }, [primary, surface, serviceSlug]);
+
+  if (isBanner) {
+    return (
+      <Section
+        id={id}
+        spacing="none"
+        className={cn('bg-white pb-14 md:pb-18 lg:pb-20', className)}
+        aria-labelledby={headingId}
+      >
+        <Container size="xl">
+          <div className="nl-final-banner px-6 py-12 text-center sm:px-10 md:py-16">
+            <Stack gap="lg" className="mx-auto max-w-2xl items-center text-center sm:gap-7">
+              <Heading
+                as="h2"
+                size="h2"
+                id={headingId}
+                className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+              >
+                {title ?? primary.title}
+              </Heading>
+              {(description ?? primary.description) ? (
+                <MutedText className="mx-auto max-w-xl text-base leading-relaxed text-white/95 sm:text-lg">
+                  {description ?? primary.description}
+                </MutedText>
+              ) : null}
+              <CTAButtonGroup
+                primary={primary}
+                secondary={secondary}
+                additional={additional}
+                surface={surface}
+                serviceSlug={serviceSlug}
+                align="center"
+                tone="on-gradient"
+                className="w-full gap-3 pt-1 sm:w-auto sm:flex-nowrap sm:gap-4"
+              />
+              {trustBadges && trustBadges.length > 0 ? (
+                <ul className="flex max-w-[34rem] flex-wrap justify-center gap-2.5 pt-1">
+                  {trustBadges.map((badge) => (
+                    <li
+                      key={badge}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/15 px-3 py-1.5 text-xs font-medium text-white"
+                    >
+                      <Check className="size-3.5 shrink-0 text-white" strokeWidth={2.75} aria-hidden />
+                      {badge}
+                    </li>
+                  ))}
+                </ul>
+              ) : trustLine ? (
+                <p className="max-w-[520px] text-sm leading-relaxed text-white/90">{trustLine}</p>
+              ) : null}
+            </Stack>
+          </div>
+        </Container>
+      </Section>
+    );
+  }
 
   return (
     <Section

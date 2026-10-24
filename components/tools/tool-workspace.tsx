@@ -1,7 +1,16 @@
 'use client';
 
 import { useState, type FormEvent, type ReactNode } from 'react';
-import { AlertCircle, Download, ExternalLink, ImageIcon, Link2, Loader2, RotateCcw, User } from 'lucide-react';
+import {
+  AlertCircle,
+  Download,
+  ExternalLink,
+  ImageIcon,
+  Link2,
+  Loader2,
+  RotateCcw,
+  User,
+} from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,7 +18,11 @@ import { Label } from '@/components/ui/label';
 import type { ToolPageCopy } from '@/data/tools/copy';
 import type { ToolDefinition } from '@/data/tools/registry';
 import { videoQualityLabel } from '@/lib/tools/quality-label';
-import type { PublicProfileStatsResult, PublicToolResult, ToolExtractResponse } from '@/lib/tools/types';
+import type {
+  PublicProfileStatsResult,
+  PublicToolResult,
+  ToolExtractResponse,
+} from '@/lib/tools/types';
 import { cn } from '@/lib/utils';
 import {
   ENGLISH_TOOL_CHROME,
@@ -21,7 +34,7 @@ import {
 type ToolWorkspaceProps = {
   tool: ToolDefinition;
   copy: ToolPageCopy;
-  variant?: 'card' | 'illustrated';
+  variant?: 'card' | 'illustrated' | 'site-v2';
   onResultChange?: (hasResult: boolean) => void;
   chrome?: ToolChrome;
 };
@@ -68,12 +81,7 @@ export function ToolWorkspace({
       const data = (await response.json()) as ToolExtractResponse;
       if (!data.ok) {
         setError(
-          localizedToolError(
-            chrome,
-            tool.slug,
-            data.error.code,
-            networkFallback(chrome, tool),
-          ),
+          localizedToolError(chrome, tool.slug, data.error.code, networkFallback(chrome, tool)),
         );
         return;
       }
@@ -86,6 +94,93 @@ export function ToolWorkspace({
     }
   }
 
+  if (variant === 'site-v2') {
+    const InputIcon = tool.inputType === 'url' ? Link2 : User;
+    const inputId = `tool-input-${tool.slug}`;
+    return (
+      <div className="min-w-0">
+        {copy.limitedNotice ? <p className="tool-note">{copy.limitedNotice}</p> : null}
+
+        <form className="tool-form" onSubmit={onSubmit} noValidate aria-busy={loading || undefined}>
+          <div className="field">
+            <label htmlFor={inputId}>{copy.inputLabel}</label>
+            <div className="input">
+              <InputIcon className="ic" aria-hidden="true" />
+              <input
+                id={inputId}
+                name="input"
+                value={input}
+                onChange={(event) => setInput(event.target.value)}
+                placeholder={tool.placeholder}
+                autoComplete="off"
+                autoCapitalize="none"
+                autoCorrect="off"
+                spellCheck={false}
+                inputMode={tool.inputType === 'username_or_url' ? 'text' : 'url'}
+                enterKeyHint="go"
+                disabled={loading}
+                dir="ltr"
+                lang="en"
+                aria-invalid={Boolean(error) || undefined}
+                aria-describedby={
+                  error
+                    ? `tool-error-${tool.slug}`
+                    : loading
+                      ? `tool-status-${tool.slug}`
+                      : `tool-help-${tool.slug}`
+                }
+              />
+            </div>
+          </div>
+          <button type="submit" className="btn" disabled={loading}>
+            {loading ? <Loader2 className="ic spin" aria-hidden="true" /> : null}
+            {tool.actionLabel}
+          </button>
+        </form>
+        <p id={`tool-help-${tool.slug}`} className="hint" style={{ marginTop: 10 }}>
+          {copy.helperText}
+        </p>
+
+        {loading ? (
+          <p id={`tool-status-${tool.slug}`} role="status" aria-live="polite" className="tool-status">
+            <Loader2 className="ic" aria-hidden="true" />
+            <span>{copy.processingLabel}</span>
+          </p>
+        ) : null}
+
+        {error ? (
+          <>
+            <div
+              id={`tool-error-${tool.slug}`}
+              role="alert"
+              aria-live="assertive"
+              className="tool-error"
+            >
+              <AlertCircle className="ic" aria-hidden="true" />
+              <p>{error}</p>
+            </div>
+            <div className="tool-actions">
+              <button type="button" className="btn ghost" onClick={reset}>
+                <RotateCcw className="ic" aria-hidden="true" />
+                {copy.resetLabel}
+              </button>
+            </div>
+          </>
+        ) : null}
+
+        {result ? (
+          <V2Result
+            result={result}
+            slug={tool.slug}
+            chrome={chrome}
+            resetLabel={copy.resetLabel}
+            onReset={reset}
+          />
+        ) : null}
+      </div>
+    );
+  }
+
   const illustrated = variant === 'illustrated';
 
   return (
@@ -94,7 +189,7 @@ export function ToolWorkspace({
         'min-w-0',
         illustrated
           ? ''
-          : 'overflow-hidden rounded-[1.5rem] border border-[var(--border-subtle)] bg-white p-4 sm:p-6',
+          : 'overflow-hidden rounded-2xl border border-[var(--nl-border)] bg-white p-4 sm:p-6',
       )}
     >
       {copy.limitedNotice ? (
@@ -102,8 +197,8 @@ export function ToolWorkspace({
           className={cn(
             'mb-5 rounded-xl px-4 py-3 text-sm leading-relaxed text-[var(--text-secondary)]',
             illustrated
-              ? 'bg-[#FFF6E8]'
-              : 'border border-[var(--border-subtle)] bg-[var(--brand-accent-soft)]/50',
+              ? 'bg-[var(--nl-bg-soft)]'
+              : 'border border-[var(--nl-border)] bg-[var(--nl-bg-soft)]/50',
           )}
         >
           {copy.limitedNotice}
@@ -123,12 +218,12 @@ export function ToolWorkspace({
               {illustrated ? (
                 tool.inputType === 'url' ? (
                   <Link2
-                    className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-[var(--text-muted)]"
+                    className="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-[var(--text-muted)]"
                     aria-hidden="true"
                   />
                 ) : (
                   <User
-                    className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-[var(--text-muted)]"
+                    className="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-[var(--text-muted)]"
                     aria-hidden="true"
                   />
                 )
@@ -158,7 +253,7 @@ export function ToolWorkspace({
                 }
                 className={
                   illustrated
-                    ? 'h-14 min-h-14 w-full rounded-2xl border-0 bg-white pl-12 pr-5 text-base shadow-[0_10px_28px_-18px_rgba(63,46,36,0.4)] md:text-base'
+                    ? 'h-14 min-h-14 w-full rounded-2xl border-0 bg-white pr-5 pl-12 text-base shadow-[0_10px_28px_-18px_rgba(63,46,36,0.4)] md:text-base'
                     : 'h-12 min-h-12 w-full min-w-0 flex-1 rounded-xl border-[var(--border-strong)] bg-white px-4 text-base shadow-none md:text-base'
                 }
               />
@@ -207,13 +302,17 @@ export function ToolWorkspace({
       ) : null}
 
       {result ? (
-        <div aria-live="polite" aria-atomic="true" className="mt-5 border-t border-[var(--border-subtle)] pt-5">
+        <div
+          aria-live="polite"
+          aria-atomic="true"
+          className="mt-5 border-t border-[var(--nl-border)] pt-5"
+        >
           <ToolResultCard result={result} variant={tool.slug} chrome={chrome} />
           <Button
             type="button"
             size="lg"
             variant="outline"
-            className="mt-4 min-h-12 w-full whitespace-normal bg-white sm:w-auto"
+            className="mt-4 min-h-12 w-full bg-white whitespace-normal sm:w-auto"
             onClick={reset}
           >
             <RotateCcw aria-hidden="true" />
@@ -225,7 +324,7 @@ export function ToolWorkspace({
           type="button"
           size="lg"
           variant="outline"
-          className="mt-4 min-h-12 w-full whitespace-normal bg-white sm:w-auto"
+          className="mt-4 min-h-12 w-full bg-white whitespace-normal sm:w-auto"
           onClick={reset}
         >
           <RotateCcw aria-hidden="true" />
@@ -270,13 +369,15 @@ function ToolResultCard({
           />
           <div className="min-w-0 space-y-1">
             {result.displayName ? (
-              <p className="break-words text-xl font-semibold tracking-tight text-[var(--text-primary)]">
+              <p className="text-xl font-semibold tracking-tight break-words text-[var(--text-primary)]">
                 {result.displayName}
               </p>
             ) : null}
-            <p className="break-all text-sm text-[var(--text-secondary)]">@{result.username}</p>
+            <p className="text-sm break-all text-[var(--text-secondary)]">@{result.username}</p>
             {result.bio ? (
-              <p className="break-words text-sm leading-relaxed text-[var(--text-secondary)]">{result.bio}</p>
+              <p className="text-sm leading-relaxed break-words text-[var(--text-secondary)]">
+                {result.bio}
+              </p>
             ) : null}
           </div>
         </div>
@@ -287,7 +388,12 @@ function ToolResultCard({
               {chrome.viewFullSize}
             </a>
           </Button>
-          <Button asChild variant="outline" size="lg" className="min-h-12 w-full whitespace-normal bg-white sm:w-auto">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="min-h-12 w-full bg-white whitespace-normal sm:w-auto"
+          >
             <a href={result.image.downloadPath} download={result.image.filename}>
               <ImageIcon aria-hidden="true" />
               {chrome.downloadImage}
@@ -303,7 +409,10 @@ function ToolResultCard({
       ? 'aspect-video max-h-52 w-full rounded-2xl object-cover sm:max-h-56'
       : 'aspect-[9/16] max-h-52 w-full rounded-2xl object-cover sm:max-h-56';
   const qualities = result.media
-    .map((item, index) => videoQualityLabel(item.quality) ?? (result.media.length > 1 ? `File ${index + 1}` : null))
+    .map(
+      (item, index) =>
+        videoQualityLabel(item.quality) ?? (result.media.length > 1 ? `File ${index + 1}` : null),
+    )
     .filter((label): label is string => Boolean(label));
 
   return (
@@ -328,16 +437,20 @@ function ToolResultCard({
         ) : null}
         <div className="min-w-0">
           {result.title ? (
-            <p className="break-words text-base font-semibold text-[var(--text-primary)]">{result.title}</p>
+            <p className="text-base font-semibold break-words text-[var(--text-primary)]">
+              {result.title}
+            </p>
           ) : null}
           {result.author ? (
-            <p className="mt-1 break-all text-sm text-[var(--text-secondary)]">{result.author}</p>
+            <p className="mt-1 text-sm break-all text-[var(--text-secondary)]">{result.author}</p>
           ) : null}
           {typeof result.duration === 'number' ? (
-            <p className="mt-1 text-sm text-[var(--text-muted)]">{formatDuration(result.duration)}</p>
+            <p className="mt-1 text-sm text-[var(--text-muted)]">
+              {formatDuration(result.duration)}
+            </p>
           ) : null}
           {qualities.length ? (
-            <p className="mt-2 break-words text-sm text-[var(--text-secondary)]">
+            <p className="mt-2 text-sm break-words text-[var(--text-secondary)]">
               {qualities.length === 1 ? chrome.availableQuality : chrome.availableQualities}
               {qualities.join(', ')}
             </p>
@@ -350,7 +463,10 @@ function ToolResultCard({
             key={item.downloadPath}
             asChild
             variant={index === 0 ? 'default' : 'outline'}
-            className={cn('min-h-12 w-full whitespace-normal sm:w-auto', index === 0 ? '' : 'bg-white')}
+            className={cn(
+              'min-h-12 w-full whitespace-normal sm:w-auto',
+              index === 0 ? '' : 'bg-white',
+            )}
             size="lg"
           >
             <a href={item.downloadPath} download={item.filename}>
@@ -364,10 +480,16 @@ function ToolResultCard({
   );
 }
 
-function localizedDownloadLabel(chrome: ToolChrome, quality: string | undefined, index: number): string {
+function localizedDownloadLabel(
+  chrome: ToolChrome,
+  quality: string | undefined,
+  index: number,
+): string {
   const label = videoQualityLabel(quality);
   if (label) return formatToolChrome(chrome.downloadQuality, { quality: label });
-  return index === 0 ? chrome.downloadVideo : formatToolChrome(chrome.downloadFileN, { n: index + 1 });
+  return index === 0
+    ? chrome.downloadVideo
+    : formatToolChrome(chrome.downloadFileN, { n: index + 1 });
 }
 
 function InstagramProfileSnapshotCard({
@@ -398,13 +520,15 @@ function InstagramProfileSnapshotCard({
         ) : null}
         <div className="min-w-0 space-y-1">
           {result.displayName ? (
-            <p className="break-words text-xl font-semibold tracking-tight text-[var(--text-primary)]">
+            <p className="text-xl font-semibold tracking-tight break-words text-[var(--text-primary)]">
               {result.displayName}
             </p>
           ) : null}
-          <p className="break-all text-sm text-[var(--text-secondary)]">@{result.username}</p>
+          <p className="text-sm break-all text-[var(--text-secondary)]">@{result.username}</p>
           {result.bio ? (
-            <p className="mt-2 break-words text-sm leading-relaxed text-[var(--text-secondary)]">{result.bio}</p>
+            <p className="mt-2 text-sm leading-relaxed break-words text-[var(--text-secondary)]">
+              {result.bio}
+            </p>
           ) : null}
         </div>
       </div>
@@ -413,12 +537,12 @@ function InstagramProfileSnapshotCard({
           {stats.map((item) => (
             <div
               key={item.label}
-              className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-muted)] px-2 py-3 text-center"
+              className="rounded-2xl border border-[var(--nl-border)] bg-[var(--surface-muted)] px-2 py-3 text-center"
             >
-              <dt className="text-[11px] font-medium uppercase tracking-wide text-[var(--text-muted)] sm:text-xs">
+              <dt className="text-[11px] font-medium tracking-wide text-[var(--text-muted)] uppercase sm:text-xs">
                 {item.label}
               </dt>
-              <dd className="mt-1 break-words text-base font-semibold text-[var(--text-primary)] sm:text-lg">
+              <dd className="mt-1 text-base font-semibold break-words text-[var(--text-primary)] sm:text-lg">
                 {item.value}
               </dd>
             </div>
@@ -433,7 +557,12 @@ function InstagramProfileSnapshotCard({
           </a>
         </Button>
         {result.image ? (
-          <Button asChild variant="outline" size="lg" className="min-h-12 w-full whitespace-normal bg-white sm:w-auto">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="min-h-12 w-full bg-white whitespace-normal sm:w-auto"
+          >
             <a href={result.image.downloadPath} target="_blank" rel="noreferrer">
               <ImageIcon aria-hidden="true" />
               {chrome.viewFullSizeProfilePicture}
@@ -452,7 +581,9 @@ function PublicProfileStatsCard({
   result: PublicProfileStatsResult;
   chrome: ToolChrome;
 }) {
-  const abbreviated = Boolean(result.followersLabel && /[KMB]$/i.test(result.followersLabel.replace(/\s/g, '')));
+  const abbreviated = Boolean(
+    result.followersLabel && /[KMB]$/i.test(result.followersLabel.replace(/\s/g, '')),
+  );
 
   return (
     <div className="min-w-0">
@@ -469,9 +600,11 @@ function PublicProfileStatsCard({
         ) : null}
         <div className="min-w-0 space-y-1">
           {result.displayName ? (
-            <p className="break-words text-lg font-semibold text-[var(--text-primary)]">{result.displayName}</p>
+            <p className="text-lg font-semibold break-words text-[var(--text-primary)]">
+              {result.displayName}
+            </p>
           ) : null}
-          <p className="break-all text-sm text-[var(--text-secondary)]">@{result.username}</p>
+          <p className="text-sm break-all text-[var(--text-secondary)]">@{result.username}</p>
         </div>
       </div>
       {result.followersLabel ? (
@@ -485,6 +618,195 @@ function PublicProfileStatsCard({
           ) : null}
         </div>
       ) : null}
+    </div>
+  );
+}
+
+/** site-v2 `.tool-result` renderings of the same result data as ToolResultCard. */
+function V2Result({
+  result,
+  slug,
+  chrome,
+  resetLabel,
+  onReset,
+}: {
+  result: PublicToolResult;
+  slug: ToolDefinition['slug'];
+  chrome: ToolChrome;
+  resetLabel: string;
+  onReset: () => void;
+}) {
+  const resetButton = (
+    <button type="button" className="btn ghost" onClick={onReset}>
+      <RotateCcw className="ic" aria-hidden="true" />
+      {resetLabel}
+    </button>
+  );
+
+  if (result.kind === 'public_profile') {
+    if (slug === 'instagram-profile-viewer') {
+      const stats = [
+        result.followersLabel ? { label: chrome.followers, value: result.followersLabel } : null,
+        result.followingLabel ? { label: chrome.following, value: result.followingLabel } : null,
+        result.postsLabel ? { label: chrome.posts, value: result.postsLabel } : null,
+      ].filter((item): item is { label: string; value: string } => Boolean(item));
+      return (
+        <div className="tool-result rich" aria-live="polite" aria-atomic="true">
+          {result.image ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={result.image.downloadPath}
+              alt={formatToolChrome(chrome.profilePhotoAlt, { username: result.username })}
+              width={192}
+              height={192}
+              className="tr-img round lg"
+            />
+          ) : null}
+          <div className="tr-body">
+            {result.displayName ? <p className="tr-name">{result.displayName}</p> : null}
+            <p className="tr-sub">@{result.username}</p>
+            {result.bio ? <p className="tr-text">{result.bio}</p> : null}
+            {stats.length ? (
+              <dl className="tr-stats">
+                {stats.map((item) => (
+                  <div key={item.label}>
+                    <dt>{item.label}</dt>
+                    <dd>{item.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
+            <div className="tool-actions">
+              <a className="btn" href={result.profileUrl} target="_blank" rel="noreferrer">
+                <ExternalLink className="ic" aria-hidden="true" />
+                {chrome.viewOnInstagram}
+              </a>
+              {result.image ? (
+                <a
+                  className="btn ghost"
+                  href={result.image.downloadPath}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ImageIcon className="ic" aria-hidden="true" />
+                  {chrome.viewFullSizeProfilePicture}
+                </a>
+              ) : null}
+              {resetButton}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const abbreviated = Boolean(
+      result.followersLabel && /[KMB]$/i.test(result.followersLabel.replace(/\s/g, '')),
+    );
+    return (
+      <div className="tool-result" aria-live="polite" aria-atomic="true">
+        {result.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={result.image.downloadPath}
+            alt={formatToolChrome(chrome.profilePhotoAlt, { username: result.username })}
+            width={160}
+            height={160}
+            className="tr-img round"
+          />
+        ) : (
+          <span className="tr-av" aria-hidden="true" />
+        )}
+        <span>
+          {result.followersLabel ? <b>{result.followersLabel}</b> : null}
+          {result.followersLabel ? <em>{chrome.currentFollowerCount}</em> : null}
+          {result.displayName ? <em>{result.displayName}</em> : null}
+          <em>@{result.username}</em>
+          {result.followersLabel && abbreviated ? <em>{chrome.abbreviatedCountNote}</em> : null}
+        </span>
+        {resetButton}
+      </div>
+    );
+  }
+
+  if (result.kind === 'profile_image') {
+    return (
+      <div className="tool-result rich" aria-live="polite" aria-atomic="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={result.image.downloadPath}
+          alt={formatToolChrome(chrome.profilePhotoAlt, { username: result.username })}
+          width={192}
+          height={192}
+          className="tr-img lg"
+        />
+        <div className="tr-body">
+          {result.displayName ? <p className="tr-name">{result.displayName}</p> : null}
+          <p className="tr-sub">@{result.username}</p>
+          {result.bio ? <p className="tr-text">{result.bio}</p> : null}
+          <div className="tool-actions">
+            <a className="btn" href={result.image.downloadPath} target="_blank" rel="noreferrer">
+              <ExternalLink className="ic" aria-hidden="true" />
+              {chrome.viewFullSize}
+            </a>
+            <a className="btn ghost" href={result.image.downloadPath} download={result.image.filename}>
+              <ImageIcon className="ic" aria-hidden="true" />
+              {chrome.downloadImage}
+            </a>
+            {resetButton}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const qualities = result.media
+    .map(
+      (item, index) =>
+        videoQualityLabel(item.quality) ?? (result.media.length > 1 ? `File ${index + 1}` : null),
+    )
+    .filter((label): label is string => Boolean(label));
+
+  return (
+    <div className="tool-result rich" aria-live="polite" aria-atomic="true">
+      {result.thumbnailDownloadPath ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={result.thumbnailDownloadPath}
+          alt={
+            result.title
+              ? formatToolChrome(chrome.thumbnailForTitle, { title: result.title })
+              : chrome.videoThumbnailAlt
+          }
+          className={cn('tr-img', result.platform === 'facebook' ? 'wide' : 'tall')}
+        />
+      ) : null}
+      <div className="tr-body">
+        {result.title ? <p className="tr-name">{result.title}</p> : null}
+        {result.author ? <p className="tr-sub">{result.author}</p> : null}
+        {typeof result.duration === 'number' ? (
+          <p className="tr-sub">{formatDuration(result.duration)}</p>
+        ) : null}
+        {qualities.length ? (
+          <p className="tr-text">
+            {qualities.length === 1 ? chrome.availableQuality : chrome.availableQualities}
+            {qualities.join(', ')}
+          </p>
+        ) : null}
+        <div className="tool-actions">
+          {result.media.map((item, index) => (
+            <a
+              key={item.downloadPath}
+              className={cn('btn', index === 0 ? '' : 'ghost')}
+              href={item.downloadPath}
+              download={item.filename}
+            >
+              <Download className="ic" aria-hidden="true" />
+              {localizedDownloadLabel(chrome, item.quality, index)}
+            </a>
+          ))}
+          {resetButton}
+        </div>
+      </div>
     </div>
   );
 }

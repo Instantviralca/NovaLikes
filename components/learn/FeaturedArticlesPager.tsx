@@ -13,6 +13,9 @@ type FeaturedArticlesPagerProps = {
   pageSize: number;
 };
 
+/**
+ * Site-v2 article grid (`.cards` of `.acard`) with the existing Load more behaviour.
+ */
 export function FeaturedArticlesPager({
   articles,
   pageSize,
@@ -27,22 +30,20 @@ export function FeaturedArticlesPager({
   const hasMore = visibleCount < articles.length;
 
   return (
-    <div>
-      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <>
+      <div className="cards">
         {visibleArticles.map((article) => (
-          <li key={article.id}>
-            <ArticleCard article={article} />
-          </li>
+          <ArticleCard key={article.id} article={article} variant="v2" />
         ))}
-      </ul>
+      </div>
       {hasMore ? (
         <LearnLoadMore
-          className="mt-8"
+          variant="v2"
           onLoadMore={() =>
             setVisibleCount((current) => Math.min(current + pageSize, articles.length))
           }
         />
       ) : null}
-    </div>
+    </>
   );
 }

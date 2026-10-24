@@ -13,7 +13,7 @@ export function ContactFaqPreview(props: ContactFaqPreviewProps) {
       className={cn(
         'contact-faq-preview',
         '[&_input[type=search]]:h-12 [&_input[type=search]]:rounded-2xl',
-        '[&_input[type=search]]:border-[var(--border-subtle)] [&_input[type=search]]:bg-white',
+        '[&_input[type=search]]:border-[var(--nl-border)] [&_input[type=search]]:bg-white',
         '[&_input[type=search]]:pl-11 [&_input[type=search]]:shadow-[0_10px_28px_-18px_rgba(28,25,23,0.32)]',
         '[&_input[type=search]]:transition-[box-shadow,border-color] [&_input[type=search]]:duration-200',
         '[&_input[type=search]]:focus-visible:border-[var(--brand-primary)]/45',

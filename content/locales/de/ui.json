@@ -2,6 +2,8 @@
   "language": "Sprache",
   "nav": {
     "home": "Startseite",
+    "services": "Services",
+    "help": "Hilfe",
     "instagram": "Instagram",
     "tiktok": "TikTok",
     "facebook": "Facebook",
@@ -14,7 +16,8 @@
     "primaryNav": "Hauptnavigation",
     "mobileNav": "Mobil",
     "loadingMenu": "Menü wird geladen",
-    "cart": "Warenkorb"
+    "cart": "Warenkorb",
+    "logIn": "Anmelden"
   },
   "footer": {
     "ariaLabel": "Fußzeile",
@@ -171,7 +174,19 @@
     "goingToCheckout": "Weiter zur Kasse…",
     "continuing": "Wird fortgesetzt…",
     "unableToContinue": "Weiter zur Kasse nicht möglich.",
-    "checkoutTimeout": "Die Kasse dauert zu lange. Bitte versuchen Sie es erneut."
+    "checkoutTimeout": "Die Kasse dauert zu lange. Bitte versuchen Sie es erneut.",
+    "addedToast": "Added to your cart",
+    "viewCart": "View cart",
+    "itemsCount": "{count} items · One-time purchase",
+    "itemCount": "1 item · One-time purchase",
+    "addAnotherService": "Add another service",
+    "drawerFine": "Secure checkout · No password needed",
+    "pageFine": "Secure checkout · Prices in USD",
+    "itemsHeading": "{count} items",
+    "trustNoPassword": "No password needed",
+    "trustStartWithin": "Most orders start within 6–8 hours",
+    "trustRefill": "6-month refill on every order",
+    "trustWhatsapp": "24/7 WhatsApp support"
   },
   "checkout": {
     "title": "Kasse",
@@ -218,20 +233,43 @@
     "stepDetails": "Daten eingeben",
     "stepReview": "Prüfen",
     "stepPayment": "Zahlung",
-    "progressAria": "Kassenschritte"
+    "progressAria": "Kassenschritte",
+    "oneTime": "One-time payment. No subscription.",
+    "orderSummaryToggle": "Order summary",
+    "stepCart": "Cart",
+    "stepDetailsPayment": "Details & payment",
+    "stepDone": "Done",
+    "backToCart": "Back to cart",
+    "yourDetails": "Your details",
+    "updatesHint": "Order updates go here",
+    "optional": "(optional)",
+    "encrypted": "Encrypted",
+    "haveCoupon": "Have a coupon code?",
+    "placeOrderWithTotal": "Place Order · {total}",
+    "legalTerms": "Terms",
+    "legalPrivacy": "Privacy",
+    "legalRefund": "Refund policy",
+    "legalContact": "Contact",
+    "trustNoPassword": "No password needed",
+    "trustStartWithin": "Most orders start within 6–8 hours",
+    "trustRefill": "6-month refill on every order",
+    "trustWhatsapp": "24/7 WhatsApp support"
   },
   "orderSuccess": {
     "paymentConfirmed": "Zahlung bestätigt",
     "confirmingPayment": "Zahlung wird bestätigt",
     "orderStatus": "Bestellstatus",
     "verifiedBody": "Danke — Ihre Zahlung wurde bestätigt und Ihre Bestellung befindet sich in der Erfüllungswarteschlange.",
-    "pendingBody": "Wir bestätigen Ihre Zahlung. Diese Seite zeigt den Erfolg, sobald Stripe die Belastung bestätigt.",
+    "pendingBody": "Wir bestätigen Ihre Zahlung. Diese Seite zeigt den Erfolg, sobald die Zahlung verifiziert ist.",
     "unverifiedBody": "Wir konnten diese Bestellung noch nicht bestätigen. Nutzen Sie Ihre Bestell-ID und E-Mail, um den Status zu prüfen.",
     "orderId": "Bestell-ID:",
     "email": "E-Mail:",
     "trackOrder": "Bestellung verfolgen",
     "backHome": "Zur Startseite",
-    "ariaLabel": "Bestellung erfolgreich"
+    "ariaLabel": "Bestellung erfolgreich",
+    "nextEmail": "We send a confirmation to your email.",
+    "nextTiming": "Most orders start within 6–8 hours and finish 4–6 hours later.",
+    "nextTrack": "Follow progress any time on the Track Order page."
   },
   "trackOrder": {
     "title": "Bestellung verfolgen",

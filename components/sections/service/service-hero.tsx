@@ -1,4 +1,6 @@
 import { BrandedHero } from '@/components/design-system/branded-hero';
+import { ServiceHeroEnglishV2 } from '@/components/sections/service/service-hero-english-v2';
+import { SERVICE_HERO_REWRITES } from '@/data/content/service-hero-rewrites';
 import { formatMoney } from '@/lib/pricing/format';
 import { findPackage } from '@/lib/pricing';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
@@ -26,6 +28,9 @@ export type ServiceHeroProps = {
   /** Optional real package id for hero preview card. */
   previewPackageId?: string;
   locale?: Locale;
+  /** English root `/buy-*` only — enables hero rewrite v2. */
+  serviceSlug?: string;
+  useEnglishHeroRewrite?: boolean;
   instagramVariant?: InstagramDashboardVariant;
   tiktokVariant?: TikTokDashboardVariant;
   facebookVariant?: FacebookDashboardVariant;
@@ -44,11 +49,32 @@ export function ServiceHero({
   platform,
   previewPackageId,
   locale = DEFAULT_LOCALE,
+  serviceSlug,
+  useEnglishHeroRewrite = false,
   instagramVariant,
   tiktokVariant,
   facebookVariant,
   className,
 }: ServiceHeroProps) {
+  const rewrite =
+    useEnglishHeroRewrite && serviceSlug
+      ? SERVICE_HERO_REWRITES[serviceSlug]
+      : undefined;
+
+  if (rewrite && serviceSlug) {
+    return (
+      <ServiceHeroEnglishV2
+        rewrite={rewrite}
+        serviceSlug={serviceSlug}
+        breadcrumbs={breadcrumbs}
+        visual={visual}
+        primaryHref={primaryCta?.href ?? '#pricing-packages'}
+        secondaryHref={secondaryCta?.href ?? '#how-it-works'}
+        className={className}
+      />
+    );
+  }
+
   const previewPkg = previewPackageId ? findPackage(previewPackageId) : undefined;
   const packagePreview =
     previewPkg && previewPkg.active

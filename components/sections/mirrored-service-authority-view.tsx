@@ -40,11 +40,6 @@ import { mapServiceContent } from '@/lib/content/mappers';
 import { buildBreadcrumb } from '@/lib/linking';
 import { MarketStorySections } from '@/components/marketing/market-story-sections';
 import type { HubStorySection } from '@/data/content/homepage-hub';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
-import { loadQuickAnswer } from '@/lib/i18n/content/load';
-import type { QuickAnswerPageId } from '@/data/quick-answers';
 import { DEFAULT_LOCALE, type Locale, isCoreServiceSlug } from '@/lib/i18n/config';
 import { loadMarketServiceFaqItems } from '@/lib/market/content/load';
 import type { Market } from '@/lib/market/config';
@@ -194,10 +189,6 @@ export function MirroredServiceAuthorityView({
     isMarketFacebookFollowers ||
     isMarketFacebookPageLikes ||
     isMarketFacebookPostLikes;
-  const marketQuickAnswer =
-    isMarketCustomLayout && dummy && 'quickAnswer' in dummy
-      ? (dummy as { quickAnswer: { heading: string; text: string } }).quickAnswer
-      : null;
   const marketPackageCta = isMarketLikes
     ? 'Choose Your Likes Package'
     : isMarketViews
@@ -585,21 +576,10 @@ export function MirroredServiceAuthorityView({
         platform={service.platform}
         previewPackageId={previewPackageId}
         locale={locale}
+        serviceSlug={service.slug}
+        useEnglishHeroRewrite={locale === 'en' && !market}
         {...heroVariants(service)}
       />
-
-      <Section spacing="sm" className="bg-transparent">
-        <Container size="lg">
-          {isMarketCustomLayout && marketQuickAnswer ? (
-            <QuickAnswer heading={marketQuickAnswer.heading} text={marketQuickAnswer.text} />
-          ) : !isMarketCustomLayout ? (
-            <QuickAnswer
-              heading={ui?.quickAnswer?.heading ?? 'Quick answer'}
-              text={loadQuickAnswer(locale, service.slug as QuickAnswerPageId)}
-            />
-          ) : null}
-        </Container>
-      </Section>
 
       <ServiceCommerceBlocks
         service={service}

@@ -3,28 +3,35 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
+import {
+  ArrowLeft,
+  Clock,
+  Lock,
+  Mail,
+  MessageCircle,
+  RefreshCw,
+  ShieldCheck,
+} from 'lucide-react';
 
 import { useAnalyticsOptional } from '@/components/analytics/AnalyticsContext';
-import { CheckoutSummary } from '@/components/commerce/checkout/checkout-summary';
+import { CheckoutOrderSummary } from '@/components/commerce/checkout/order-summary';
 import { CouponSection } from '@/components/commerce/checkout/coupon-section';
 import { CustomerInformationForm } from '@/components/commerce/checkout/customer-information-form';
 import { PaymentMethods } from '@/components/commerce/checkout/payment-methods';
 import { PlaceOrderButton } from '@/components/commerce/checkout/place-order-button';
 import { TermsAgreement } from '@/components/commerce/checkout/terms-agreement';
-import { CheckoutProgress } from '@/components/design-system/checkout-progress';
+import { Logo } from '@/components/common/logo';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
-import { Heading } from '@/components/typography/heading';
-import { MutedText } from '@/components/typography/muted-text';
-import { Button } from '@/components/ui/button';
 import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
+import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
 import { getOrCreateSessionId } from '@/lib/analytics/native/identity';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, locationHasCartTransfer } from '@/lib/cart/cart-hash';
 import { formatMoney } from '@/lib/pricing/format';
 import { ACCOUNT_UI } from '@/lib/customers/messages';
+import { localizeHref } from '@/lib/i18n/paths';
+import { site } from '@/config/site';
 import type {
   CustomerInformation,
   PaymentMethodId,
@@ -39,6 +46,12 @@ type CheckoutPageProps = {
   signedInEmail?: string | null;
 };
 
+const TRUST_ICONS = [ShieldCheck, Clock, RefreshCw, MessageCircle] as const;
+
+/**
+ * Mobile place-order: in-form button only (no sticky bar).
+ * Prototype has a single `.co-place` CTA; a sticky bar would duplicate it.
+ */
 export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
   const cart = useCart();
   const { ui, locale, market } = useI18nChrome();
@@ -51,7 +64,8 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
   const cartTransferPending = Boolean(
     searchParams.get(CART_QUERY_PARAM) || searchParams.get('cartHandoff'),
   );
-  const cartHref = routes.cart;
+  const cartHref = localizeHref(routes.cart, locale);
+  const copy = SITE_V2_COPY.checkout;
   const [customer, setCustomer] = useState<CustomerInformation>({
     email: signedInEmail ?? '',
   });
@@ -123,7 +137,6 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     [],
   );
 
-  // Sole enabled method — select by default so the user never has to tap it.
   useEffect(() => {
     if (paymentMethodId) return;
     const enabled = paymentMethods.filter((m) => m.enabled);
@@ -139,7 +152,6 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     const { sessionId } = getOrCreateSessionId();
     const markerKey = `nl_analytics_checkout_started:${sessionId}`;
 
-    // Survive checkout remounts within the same analytics session.
     try {
       if (typeof window !== 'undefined' && window.sessionStorage.getItem(markerKey) === '1') {
         checkoutViewSent.current = true;
@@ -175,46 +187,16 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     });
   }, [analytics, customer.email]);
 
-  // Never flash empty cart while transfer/bootstrap is in progress.
   const waitingForCart =
     !cart.isHydrated ||
     cart.isBootstrapping ||
     (cartTransferPending && cart.items.length === 0) ||
     (locationHasCartTransfer() && cart.items.length === 0);
 
-  if (waitingForCart) {
-    return (
-      <Section aria-label={ui.checkout.ariaLabel} className="bg-hero-wash">
-        <Container size="xl">
-          <div
-            className="flex min-h-[40vh] flex-col items-center justify-center gap-2"
-            role="status"
-            aria-live="polite"
-          >
-            <p className="text-sm font-medium text-muted-foreground">
-              {ui.checkout.loading}
-            </p>
-          </div>
-        </Container>
-      </Section>
-    );
-  }
-
-  if (cart.items.length === 0) {
-    return (
-      <Section aria-label={ui.checkout.ariaLabel} className="bg-hero-wash">
-        <Container size="xl" className="space-y-4">
-          <Heading as="h1" size="h1">
-            {ui.checkout.title}
-          </Heading>
-          <MutedText>{ui.checkout.emptyCart}</MutedText>
-          <Button asChild>
-            <Link href={cartHref}>{ui.checkout.returnToCart}</Link>
-          </Button>
-        </Container>
-      </Section>
-    );
-  }
+  const totalLabel = formatMoney(cart.totals.total.amount, cart.totals.total.currency);
+  const placeLabel = submitting
+    ? ui.checkout.placingOrder
+    : copy.placeOrderWithTotal.replace('{total}', totalLabel);
 
   const handlePlaceOrder = async () => {
     const nextErrors: typeof errors = {};
@@ -236,7 +218,6 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     setErrors({});
     setSubmitting(true);
     try {
-      // Hosted Mollie checkout: place pending order, then redirect to collector/Mollie URL.
       const response = await fetch('/api/checkout/place-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -282,108 +263,211 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     }
   };
 
+  if (waitingForCart) {
+    return (
+      <div className="co" aria-label={ui.checkout.ariaLabel}>
+        <section className="co-right">
+          <div className="in">
+            <p className="lead" role="status" aria-live="polite">
+              {ui.checkout.loading}
+            </p>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  if (cart.items.length === 0) {
+    return (
+      <div className="co" aria-label={ui.checkout.ariaLabel} data-analytics="checkout-empty">
+        <aside className="co-left" aria-hidden="true">
+          <div className="in">
+            <Logo
+              href={localizeHref(routes.home, locale)}
+              variant="white"
+              className="co-brand"
+            />
+          </div>
+        </aside>
+        <section className="co-right">
+          <div className="in">
+            <div className="empty-cart" role="status">
+              <h1 className="h1">{ui.checkout.title}</h1>
+              <p>{ui.checkout.emptyCart}</p>
+              <Link className="btn" href={cartHref}>
+                {ui.checkout.returnToCart}
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  const summaryBlock = (
+    <CheckoutOrderSummary
+      items={cart.items}
+      totals={cart.totals}
+      couponCode={cart.coupon?.code}
+      variant="navy"
+    />
+  );
+
   return (
-    <Section
-      aria-label={ui.checkout.ariaLabel}
-      data-analytics="checkout-page"
-      className="bg-hero-wash pb-28 lg:pb-16"
-    >
-      <Container size="xl">
-        <div className="mb-6 space-y-3">
-          <Heading as="h1" size="h1">
-            {ui.checkout.title}
-          </Heading>
-          <MutedText>{ui.checkout.intro}</MutedText>
+    <div className="co" aria-label={ui.checkout.ariaLabel} data-analytics="checkout-page">
+      <aside className="co-left">
+        <div className="in">
+          <Logo
+            href={localizeHref(routes.home, locale)}
+            variant="white"
+            className="co-brand"
+          />
+          <div className="co-total">
+            <p className="k">{copy.total}</p>
+            <p className="v">
+              <span dir="ltr">{totalLabel}</span> <small>USD</small>
+            </p>
+            <p>{copy.oneTime}</p>
+          </div>
+          {summaryBlock}
+          <ul className="co-trust">
+            {copy.trust.map((item, i) => {
+              const Icon = TRUST_ICONS[i] ?? ShieldCheck;
+              return (
+                <li key={item}>
+                  <Icon className="ic" aria-hidden="true" />
+                  {item}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </aside>
+
+      <section className="co-right">
+        <div className="in">
+          <div className="co-mobile-sum">
+            <details>
+              <summary>
+                <span>
+                  {copy.orderSummaryToggle} ▾
+                </span>
+                <b dir="ltr">{totalLabel}</b>
+              </summary>
+              <div className="ms-body">{summaryBlock}</div>
+            </details>
+          </div>
+
+          <div className="co-steps" aria-label={ui.checkout.progressAria}>
+            <span className="done">{copy.steps[0]}</span>
+            <span className="on">{copy.steps[1]}</span>
+            <span>{copy.steps[2]}</span>
+          </div>
+
+          <Link className="back" href={cartHref}>
+            <ArrowLeft className="ic" aria-hidden="true" />
+            {copy.backToCart}
+          </Link>
+
+          <h1 className="sr">{ui.checkout.title}</h1>
+
           {paymentCancelled ? (
-            <p
-              className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900"
-              role="status"
-            >
+            <p className="notice warn" role="status" style={{ marginTop: 16 }}>
               {ui.checkout.paymentCancelled}
             </p>
           ) : null}
           {restored ? (
-            <p
-              className="rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-900"
-              role="status"
-            >
+            <p className="notice ok" role="status" style={{ marginTop: 16 }}>
               Your order has been restored.
             </p>
           ) : null}
-          <CheckoutProgress current="payment" className="max-w-2xl" />
-        </div>
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_24rem]">
-          <div className="space-y-5">
-            <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)] sm:p-6">
-              <h2 className="mb-4 text-base font-bold">{ui.checkout.customerInformation}</h2>
-              {signedInEmail ? (
-                <p className="mb-4 text-sm font-medium text-foreground">
-                  {ACCOUNT_UI.checkout.signedInAs(signedInEmail)}
-                </p>
-              ) : null}
-              <CustomerInformationForm
-                value={customer}
-                errors={{ email: errors.email }}
-                onChange={setCustomer}
-                onEmailBlur={() => void captureAbandonedCart()}
-                hideLegend
-              />
+
+          <div className="co-sec">
+            <div className="co-sec-h">
+              <h2>{copy.yourDetails}</h2>
+              <span>
+                <Mail className="ic" aria-hidden="true" />
+                {copy.updatesHint}
+              </span>
             </div>
-            <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-5 shadow-[var(--shadow-sm)] sm:p-6">
-              <h2 className="mb-4 text-base font-bold">{ui.checkout.paymentMethod}</h2>
-              <PaymentMethods
-                methods={paymentMethods}
-                value={paymentMethodId}
-                onChange={setPaymentMethodId}
-                error={errors.payment}
-                hideLegend
-              />
+            {signedInEmail ? (
+              <p className="hint" style={{ marginBottom: 12 }}>
+                {ACCOUNT_UI.checkout.signedInAs(signedInEmail)}
+              </p>
+            ) : null}
+            <CustomerInformationForm
+              value={customer}
+              errors={{ email: errors.email }}
+              onChange={setCustomer}
+              onEmailBlur={() => void captureAbandonedCart()}
+              hideLegend
+            />
+          </div>
+
+          <div className="co-sec">
+            <div className="co-sec-h">
+              <h2>{copy.payment}</h2>
+              <span>
+                <Lock className="ic" aria-hidden="true" />
+                {copy.encrypted}
+              </span>
             </div>
-            <div className="rounded-2xl border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)]">
-              <CouponSection />
-              <div className="mt-6">
-                <TermsAgreement
-                  checked={termsAccepted}
-                  onCheckedChange={setTermsAccepted}
-                  error={errors.terms}
-                />
-              </div>
-              {errors.form ? (
-                <p className="mt-4 text-sm text-destructive" role="alert">
-                  {errors.form}
-                </p>
-              ) : null}
-              <div className="mt-6 hidden lg:block">
-                <PlaceOrderButton
-                  onClick={handlePlaceOrder}
-                  disabled={submitting}
-                  label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
-                  className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] text-base font-semibold hover:bg-[var(--brand-primary-hover)]"
-                />
-              </div>
-            </div>
+            <PaymentMethods
+              methods={paymentMethods}
+              value={paymentMethodId}
+              onChange={setPaymentMethodId}
+              error={errors.payment}
+              hideLegend
+              descriptions={{
+                'remote-payment': ui.checkout.cardProcessedSecurely,
+              }}
+              chips={{
+                'remote-payment': ['Card'],
+              }}
+            />
           </div>
-          <div className="hidden h-fit lg:sticky lg:top-24 lg:block">
-            <CheckoutSummary items={cart.items} totals={cart.totals} />
+
+          <div className="co-sec">
+            <CouponSection />
           </div>
+
+          <div className="co-sec">
+            <TermsAgreement
+              checked={termsAccepted}
+              onCheckedChange={setTermsAccepted}
+              error={errors.terms}
+            />
+          </div>
+
+          {errors.form ? (
+            <p className="err" role="alert" style={{ marginTop: 16 }}>
+              {errors.form}
+            </p>
+          ) : null}
+
+          <div className="co-place">
+            <PlaceOrderButton
+              tone="siteV2"
+              showLock
+              onClick={handlePlaceOrder}
+              disabled={submitting}
+              label={placeLabel}
+            />
+            <p className="fine">
+              <ShieldCheck className="ic" aria-hidden="true" />
+              {ui.checkout.encryptedPayment}
+            </p>
+          </div>
+
+          <nav className="co-legal" aria-label="Legal">
+            <Link href={localizeHref(routes.termsAndConditions, locale)}>{copy.legal.terms}</Link>
+            <Link href={localizeHref(routes.privacyPolicy, locale)}>{copy.legal.privacy}</Link>
+            <Link href={localizeHref(routes.refundPolicy, locale)}>{copy.legal.refund}</Link>
+            <Link href={localizeHref(routes.contact, locale)}>{copy.legal.contact}</Link>
+            <span>© {site.name}</span>
+          </nav>
         </div>
-      </Container>
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-4 shadow-[var(--shadow-lg)] backdrop-blur lg:hidden">
-        <div className="mx-auto flex max-w-xl flex-col gap-3">
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-[var(--text-secondary)]">{ui.cart.total}</span>
-            <span className="text-lg font-bold text-[var(--brand-primary)]" dir="ltr">
-              {formatMoney(cart.totals.total.amount, cart.totals.total.currency)}
-            </span>
-          </div>
-          <PlaceOrderButton
-            onClick={handlePlaceOrder}
-            disabled={submitting}
-            label={submitting ? ui.checkout.placingOrder : ui.checkout.placeOrder}
-            className="min-h-12 w-full rounded-xl bg-[var(--brand-primary)] font-semibold hover:bg-[var(--brand-primary-hover)]"
-          />
-        </div>
-      </div>
-    </Section>
+      </section>
+    </div>
   );
 }

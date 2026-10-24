@@ -3,9 +3,6 @@
 import { useState, type FormEvent } from 'react';
 import { AlertCircle, ExternalLink, ImageIcon, Loader2, RotateCcw, User } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import type { ToolPageCopy } from '@/data/tools/copy';
 import type { ToolDefinition } from '@/data/tools/registry';
 import type { PublicProfileStatsResult, ToolExtractResponse } from '@/lib/tools/types';
@@ -62,7 +59,12 @@ export function InstagramProfileViewerWorkspace({
       const data = (await response.json()) as ToolExtractResponse;
       if (!data.ok) {
         setError(
-          localizedToolError(chrome, tool.slug, data.error.code, chrome.networkErrors.profileViewer),
+          localizedToolError(
+            chrome,
+            tool.slug,
+            data.error.code,
+            chrome.networkErrors.profileViewer,
+          ),
         );
         return;
       }
@@ -79,92 +81,84 @@ export function InstagramProfileViewerWorkspace({
     }
   }
 
+  const inputId = `tool-input-${tool.slug}`;
+
   return (
     <div className="min-w-0">
-      <form className="space-y-3" onSubmit={onSubmit} noValidate aria-busy={loading || undefined}>
-        <div className="space-y-2">
-          <Label htmlFor={`tool-input-${tool.slug}`} className="sr-only">
-            {copy.inputLabel}
-          </Label>
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
-            <div className="relative min-w-0 flex-1">
-              <User
-                className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-[var(--text-muted)]"
-                aria-hidden="true"
-              />
-              <Input
-                id={`tool-input-${tool.slug}`}
-                name="input"
-                value={input}
-                onChange={(event) => setInput(event.target.value)}
-                placeholder={tool.placeholder}
-                autoComplete="off"
-                autoCapitalize="none"
-                autoCorrect="off"
-                spellCheck={false}
-                inputMode="text"
-                enterKeyHint="go"
-                disabled={loading}
-                dir="ltr"
-                lang="en"
-                aria-invalid={Boolean(error) || undefined}
-                aria-describedby={
-                  error
-                    ? `tool-error-${tool.slug}`
-                    : loading
-                      ? `tool-status-${tool.slug}`
-                      : `tool-help-${tool.slug}`
-                }
-                className="h-14 min-h-14 w-full rounded-2xl border-0 bg-white pl-12 pr-5 text-base shadow-[0_10px_28px_-18px_rgba(63,46,36,0.4)] md:text-base"
-              />
-            </div>
-            <Button
-              type="submit"
-              size="lg"
-              className="h-14 min-h-14 w-full shrink-0 rounded-2xl px-7 sm:w-auto sm:min-w-[10rem]"
-              loading={loading}
-            >
-              {tool.actionLabel}
-            </Button>
+      <form className="tool-form" onSubmit={onSubmit} noValidate aria-busy={loading || undefined}>
+        <div className="field">
+          <label htmlFor={inputId}>{copy.inputLabel}</label>
+          <div className="input">
+            <User className="ic" aria-hidden="true" />
+            <input
+              id={inputId}
+              name="input"
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+              placeholder={tool.placeholder}
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              inputMode="text"
+              enterKeyHint="go"
+              disabled={loading}
+              dir="ltr"
+              lang="en"
+              aria-invalid={Boolean(error) || undefined}
+              aria-describedby={
+                error
+                  ? `tool-error-${tool.slug}`
+                  : loading
+                    ? `tool-status-${tool.slug}`
+                    : `tool-help-${tool.slug}`
+              }
+            />
           </div>
-          <p id={`tool-help-${tool.slug}`} className="text-sm text-[var(--text-muted)]">
-            {copy.helperText}
-          </p>
         </div>
+        <button type="submit" className="btn" disabled={loading}>
+          {loading ? <Loader2 className="ic spin" aria-hidden="true" /> : null}
+          {tool.actionLabel}
+        </button>
       </form>
+      <p id={`tool-help-${tool.slug}`} className="hint" style={{ marginTop: 10 }}>
+        {copy.helperText}
+      </p>
 
       {loading ? (
-        <p
-          id={`tool-status-${tool.slug}`}
-          role="status"
-          aria-live="polite"
-          className="mt-4 flex items-start gap-2 text-sm text-[var(--text-secondary)]"
-        >
-          <Loader2 className="mt-0.5 size-4 shrink-0 animate-spin" aria-hidden="true" />
+        <p id={`tool-status-${tool.slug}`} role="status" aria-live="polite" className="tool-status">
+          <Loader2 className="ic" aria-hidden="true" />
           <span>{copy.processingLabel}</span>
         </p>
       ) : null}
 
       {error ? (
-        <div
-          id={`tool-error-${tool.slug}`}
-          role="alert"
-          aria-live="assertive"
-          className="mt-4 flex gap-3 rounded-xl border border-[var(--color-error)]/20 bg-[var(--color-error)]/5 px-4 py-3 text-sm text-[var(--color-error)]"
-        >
-          <AlertCircle className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
-          <div className="min-w-0">
-            <p className="break-words">{error}</p>
-            <Button type="button" variant="outline" size="lg" className="mt-3 min-h-11 bg-white" onClick={reset}>
-              <RotateCcw aria-hidden="true" />
-              {copy.resetLabel}
-            </Button>
+        <>
+          <div
+            id={`tool-error-${tool.slug}`}
+            role="alert"
+            aria-live="assertive"
+            className="tool-error"
+          >
+            <AlertCircle className="ic" aria-hidden="true" />
+            <p>{error}</p>
           </div>
-        </div>
+          <div className="tool-actions">
+            <button type="button" className="btn ghost" onClick={reset}>
+              <RotateCcw className="ic" aria-hidden="true" />
+              {copy.resetLabel}
+            </button>
+          </div>
+        </>
       ) : null}
 
       {result ? (
-        <ProfileResultCard result={result} resetLabel={copy.resetLabel} onReset={reset} chrome={chrome} />
+        <ProfileResultCard
+          result={result}
+          resetLabel={copy.resetLabel}
+          onReset={reset}
+          chrome={chrome}
+        />
       ) : null}
     </div>
   );
@@ -188,79 +182,56 @@ function ProfileResultCard({
   ].filter((item): item is { label: string; value: string } => Boolean(item));
 
   return (
-    <div
-      aria-live="polite"
-      aria-atomic="true"
-      className="mt-5 overflow-hidden rounded-[1.5rem] border border-[var(--border-subtle)] bg-white p-4 sm:p-6"
-    >
-      <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-        {result.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={result.image.downloadPath}
-            alt={formatToolChrome(chrome.profilePhotoAlt, { username: result.username })}
-            width={220}
-            height={220}
-            className="aspect-square size-36 shrink-0 rounded-full object-cover ring-4 ring-[var(--brand-accent-soft)] sm:size-44"
-          />
-        ) : (
-          <div className="size-36 shrink-0 rounded-full bg-[var(--surface-muted)] sm:size-44" />
-        )}
-        <div className="min-w-0 flex-1">
-          {result.displayName ? (
-            <p className="break-words text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
-              {result.displayName}
-            </p>
-          ) : null}
-          <p className="mt-1 break-all text-sm font-medium text-[var(--text-secondary)]">@{result.username}</p>
-          {result.bio ? (
-            <p className="mt-3 max-w-xl break-words text-sm leading-relaxed text-[var(--text-secondary)]">
-              {result.bio}
-            </p>
-          ) : null}
-        </div>
-      </div>
+    <div className="tool-result rich" aria-live="polite" aria-atomic="true">
+      {result.image ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={result.image.downloadPath}
+          alt={formatToolChrome(chrome.profilePhotoAlt, { username: result.username })}
+          width={220}
+          height={220}
+          className="tr-img round lg"
+        />
+      ) : (
+        <span className="tr-av" aria-hidden="true" />
+      )}
+      <div className="tr-body">
+        {result.displayName ? <p className="tr-name">{result.displayName}</p> : null}
+        <p className="tr-sub">@{result.username}</p>
+        {result.bio ? <p className="tr-text">{result.bio}</p> : null}
 
-      {stats.length ? (
-        <dl className="mt-6 grid grid-cols-3 gap-2 sm:gap-3">
-          {stats.map((item) => (
-            <div key={item.label} className="rounded-2xl bg-[var(--surface-muted)] px-2 py-4 text-center">
-              <dt className="text-[11px] font-medium uppercase tracking-wide text-[var(--text-muted)] sm:text-xs">
-                {item.label}
-              </dt>
-              <dd className="mt-1 break-words text-lg font-semibold text-[var(--text-primary)] sm:text-2xl">
-                {item.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
-      ) : null}
+        {stats.length ? (
+          <dl className="tr-stats">
+            {stats.map((item) => (
+              <div key={item.label}>
+                <dt>{item.label}</dt>
+                <dd>{item.value}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
 
-      <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-        <Button asChild size="lg" className="min-h-12 w-full whitespace-normal sm:w-auto">
-          <a href={result.profileUrl} target="_blank" rel="noreferrer">
-            <ExternalLink aria-hidden="true" />
+        <div className="tool-actions">
+          <a className="btn" href={result.profileUrl} target="_blank" rel="noreferrer">
+            <ExternalLink className="ic" aria-hidden="true" />
             {chrome.viewOnInstagram}
           </a>
-        </Button>
-        {result.image ? (
-          <Button asChild variant="outline" size="lg" className="min-h-12 w-full whitespace-normal bg-white sm:w-auto">
-            <a href={result.image.downloadPath} target="_blank" rel="noreferrer">
-              <ImageIcon aria-hidden="true" />
+          {result.image ? (
+            <a
+              className="btn ghost"
+              href={result.image.downloadPath}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImageIcon className="ic" aria-hidden="true" />
               {chrome.viewFullSizeProfilePicture}
             </a>
-          </Button>
-        ) : null}
-        <Button
-          type="button"
-          variant="outline"
-          size="lg"
-          className="min-h-12 w-full whitespace-normal bg-white sm:w-auto"
-          onClick={onReset}
-        >
-          <RotateCcw aria-hidden="true" />
-          {resetLabel}
-        </Button>
+          ) : null}
+          <button type="button" className="btn ghost" onClick={onReset}>
+            <RotateCcw className="ic" aria-hidden="true" />
+            {resetLabel}
+          </button>
+        </div>
       </div>
     </div>
   );

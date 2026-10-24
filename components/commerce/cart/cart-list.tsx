@@ -8,6 +8,8 @@ type CartListProps = {
   onIncrement?: (id: string) => void;
   onDecrement?: (id: string) => void;
   className?: string;
+  /** When true, omit outer list spacing (site-v2 panel / drawer). */
+  bare?: boolean;
 };
 
 export function CartList({
@@ -16,9 +18,10 @@ export function CartList({
   onIncrement,
   onDecrement,
   className,
+  bare = false,
 }: CartListProps) {
   return (
-    <ul className={cn('space-y-3', className)}>
+    <div className={cn(bare ? undefined : 'space-y-3', className)} role="list">
       {items.map((item) => (
         <CartItemRow
           key={item.id}
@@ -28,6 +31,6 @@ export function CartList({
           onDecrement={onDecrement}
         />
       ))}
-    </ul>
+    </div>
   );
 }

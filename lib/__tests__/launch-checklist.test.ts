@@ -23,9 +23,9 @@ describe('Launch checklist surfaces', () => {
     expect(pageExists('app/(marketing)/faq/page.tsx')).toBe(true);
     expect(pageExists('app/(marketing)/contact/page.tsx')).toBe(true);
     expect(pageExists('app/(learn)/learn/page.tsx')).toBe(true);
-    expect(pageExists('app/(commerce)/cart/page.tsx')).toBe(true);
-    expect(pageExists('app/(commerce)/checkout/page.tsx')).toBe(true);
-    expect(pageExists('app/(commerce)/order-success/page.tsx')).toBe(true);
+    expect(pageExists('app/(commerce)/(storefront)/cart/page.tsx')).toBe(true);
+    expect(pageExists('app/(commerce)/(checkout-flow)/checkout/page.tsx')).toBe(true);
+    expect(pageExists('app/(commerce)/(storefront)/order-success/page.tsx')).toBe(true);
     expect(pageExists('app/(marketing)/track-order/page.tsx')).toBe(true);
     expect(routes.orderSuccess).toBe('/order-success');
   });

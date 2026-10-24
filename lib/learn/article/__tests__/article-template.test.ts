@@ -5,7 +5,13 @@
 
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
+
+// next/font loaders only work inside the Next compiler; stub them for unit tests (ArticlePage uses SiteV2Shell).
+vi.mock('next/font/google', () => ({
+  Bricolage_Grotesque: () => ({ variable: 'font-display-var', className: 'font-display' }),
+  Nunito: () => ({ variable: 'font-body-var', className: 'font-body' }),
+}));
 
 import { ArticleContent } from '@/components/learn/article/ArticleContent';
 import { ArticleFAQ } from '@/components/learn/article/ArticleFAQ';
@@ -13,6 +19,7 @@ import { ArticleHero } from '@/components/learn/article/ArticleHero';
 import { ArticlePage } from '@/components/learn/article/ArticlePage';
 import { RelatedArticles } from '@/components/learn/article/RelatedArticles';
 import { AuthorBox } from '@/components/learn/article/AuthorBox';
+import { LEARN_ARTICLES } from '@/data/learn/articles';
 import {
   calculateReadingTime,
   canAccessArticlePreview,
@@ -31,8 +38,73 @@ import {
   validateHeadingHierarchy,
   withHeadingAnchors,
 } from '@/lib/learn/article';
+import { listPublicLearnArticles } from '@/lib/learn';
 import type { ArticleContentBlock } from '@/types/learn-article-blocks';
 import type { PublicLearnArticle } from '@/types/learn';
+
+/** Distinctive text (or null for structural-only blocks) expected in rendered HTML. */
+function blockFingerprint(block: ArticleContentBlock): string | null {
+  switch (block.type) {
+    case 'paragraph':
+    case 'blockquote':
+    case 'heading':
+      return block.text;
+    case 'tip':
+    case 'warning':
+    case 'callout':
+      return block.text;
+    case 'bulleted_list':
+    case 'numbered_list':
+      return block.items[0] ?? null;
+    case 'definition':
+      return block.term;
+    case 'key_takeaway_box':
+      return block.items[0] ?? block.title ?? null;
+    case 'step_process':
+      return block.steps[0]?.title ?? null;
+    case 'faq_group':
+      return block.items[0]?.question ?? null;
+    case 'internal_cta':
+      return block.label;
+    case 'service_cluster_cta':
+      return block.heading;
+    case 'related_service_card':
+    case 'related_article_card':
+      return block.label ?? null;
+    case 'figure':
+    case 'image':
+      return block.image.alt;
+    case 'comparison_table':
+    case 'data_table':
+      return block.headers[0] ?? null;
+    case 'code':
+      return block.code.slice(0, 40) || null;
+    case 'embed_placeholder':
+      return block.label;
+    case 'divider':
+      return null;
+    default: {
+      const _exhaustive: never = block;
+      void _exhaustive;
+      return null;
+    }
+  }
+}
+
+/** Match block text even when inline links split the markup. */
+function htmlIncludesText(html: string, text: string): boolean {
+  if (html.includes(text)) return true;
+  const plain = html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;/g, "'")
+    .replace(/&#39;/g, "'");
+  return plain.includes(text);
+}
 
 function makeArticle(
   overrides: Partial<PublicLearnArticle> = {},
@@ -130,7 +202,7 @@ describe('Article Template System', () => {
     expect(html).toContain('Explore Instagram Followers Packages');
   });
 
-  it('renders a mid-article service cluster without pricing cards', () => {
+  it('renders a mid-article service cluster as svc-cards with From $X', () => {
     const html = renderToStaticMarkup(
       createElement(ArticleContent, {
         blocks: [
@@ -150,11 +222,13 @@ describe('Article Template System', () => {
       }),
     );
     expect(html).toContain('Compare TikTok Growth Options');
+    expect(html).toContain('svc-cards');
+    expect(html).toContain('svc-card');
     expect(html).toContain('/buy-tiktok-followers');
     expect(html).toContain('/buy-tiktok-likes');
     expect(html).toContain('/buy-tiktok-views');
+    expect(html).toContain('From $');
     expect(html).not.toContain('guaranteed growth');
-    expect(html).not.toContain('$');
   });
 
   it('does not expose drafts via public getters', () => {
@@ -401,4 +475,115 @@ describe('Article Template System', () => {
     expect(html).toContain('<time dateTime=');
     expect(html.match(/<h1\b/g)?.length).toBe(1);
   });
+
+  it('renders every block type used in article data', () => {
+    const used = new Set(
+      LEARN_ARTICLES.flatMap((article) => article.blocks.map((block) => block.type)),
+    );
+    const html = renderToStaticMarkup(
+      createElement(ArticleContent, {
+        blocks: [
+          {
+            id: 'p1',
+            type: 'paragraph',
+            order: 1,
+            text: 'Paragraph probe',
+          },
+          {
+            id: 'h1',
+            type: 'heading',
+            order: 2,
+            headingLevel: 2,
+            text: 'Heading probe',
+          },
+          {
+            id: 'ul1',
+            type: 'bulleted_list',
+            order: 3,
+            items: ['Bullet probe'],
+          },
+          {
+            id: 'ol1',
+            type: 'numbered_list',
+            order: 4,
+            items: ['Number probe'],
+          },
+          {
+            id: 'bq1',
+            type: 'blockquote',
+            order: 5,
+            text: 'Quote probe',
+          },
+          {
+            id: 'tbl1',
+            type: 'comparison_table',
+            order: 6,
+            headers: ['Col A', 'Col B'],
+            rows: [['a', 'b']],
+          },
+          {
+            id: 'cta1',
+            type: 'internal_cta',
+            order: 7,
+            href: '/learn',
+            label: 'Internal CTA probe',
+          },
+          {
+            id: 'cluster1',
+            type: 'service_cluster_cta',
+            order: 8,
+            heading: 'Cluster probe',
+            text: 'Cluster body probe',
+            serviceSlugs: ['buy-instagram-followers'],
+          },
+          {
+            id: 'fig1',
+            type: 'figure',
+            order: 9,
+            image: {
+              src: '/assets/learn/test.png',
+              alt: 'Figure probe',
+              width: 100,
+              height: 100,
+            },
+          },
+        ],
+      }),
+    );
+    for (const type of used) {
+      expect(html.length, `renderer must handle ${type}`).toBeGreaterThan(0);
+    }
+    expect(html).toContain('Paragraph probe');
+    expect(html).toContain('Heading probe');
+    expect(html).toContain('Bullet probe');
+    expect(html).toContain('Number probe');
+    expect(html).toContain('Quote probe');
+    expect(html).toContain('Col A');
+    expect(html).toContain('Internal CTA probe');
+    expect(html).toContain('Cluster probe');
+    expect(html).toContain('Figure probe');
+    expect(html).toContain('svc-cards');
+  });
+
+  it.each(listPublicLearnArticles().map((article) => [article.slug, article] as const))(
+    '%s: every prepared block fingerprint appears in HTML',
+    (_slug, article) => {
+      const { blocks } = prepareArticleForRender(article);
+      const html = renderToStaticMarkup(
+        createElement(ArticleContent, { blocks }),
+      );
+      for (const block of blocks) {
+        if (block.type === 'divider') {
+          expect(html).toContain('<hr');
+          continue;
+        }
+        const fingerprint = blockFingerprint(block);
+        if (!fingerprint) continue;
+        expect(
+          htmlIncludesText(html, fingerprint),
+          `${article.slug} block ${block.id} (${block.type}) missing from HTML`,
+        ).toBe(true);
+      }
+    },
+  );
 });

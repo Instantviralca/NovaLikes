@@ -17,6 +17,8 @@ export const ENGLISH_UI = {
   language: 'Language',
   nav: {
     home: 'Home',
+    services: 'Services',
+    help: 'Help',
     instagram: 'Instagram',
     tiktok: 'TikTok',
     facebook: 'Facebook',
@@ -30,6 +32,7 @@ export const ENGLISH_UI = {
     mobileNav: 'Mobile',
     loadingMenu: 'Loading menu',
     cart: 'Cart',
+    logIn: 'Log in',
   },
   footer: {
     ariaLabel: 'Footer',
@@ -90,7 +93,7 @@ export const ENGLISH_UI = {
     cancel: 'Cancel',
     bestSelling: 'Best Selling',
     mostPopular: 'Most Popular',
-    bestValue: 'Best Value',
+    bestValue: 'Best Deal',
     recommended: 'Recommended',
     youSave: 'You Save',
     selected: 'Selected',
@@ -296,6 +299,19 @@ export const ENGLISH_UI = {
     continuing: 'Continuing…',
     unableToContinue: 'Unable to continue to checkout.',
     checkoutTimeout: 'Checkout is taking too long. Please try again.',
+    /** Site-v2 drawer / toast / page (English fallback until locales translate). */
+    addedToast: 'Added to your cart',
+    viewCart: 'View cart',
+    itemsCount: '{count} items · One-time purchase',
+    itemCount: '1 item · One-time purchase',
+    addAnotherService: 'Add another service',
+    drawerFine: 'Secure checkout · No password needed',
+    pageFine: 'Secure checkout · Prices in USD',
+    itemsHeading: '{count} items',
+    trustNoPassword: 'No password needed',
+    trustStartWithin: 'Most orders start within 6–8 hours',
+    trustRefill: '6-month refill on every order',
+    trustWhatsapp: '24/7 WhatsApp support',
   },
   checkout: {
     title: 'Checkout',
@@ -345,6 +361,27 @@ export const ENGLISH_UI = {
     stepReview: 'Review',
     stepPayment: 'Payment',
     progressAria: 'Checkout progress',
+    /** Site-v2 checkout chrome (English fallback until locales translate). */
+    oneTime: 'One-time payment. No subscription.',
+    orderSummaryToggle: 'Order summary',
+    stepCart: 'Cart',
+    stepDetailsPayment: 'Details & payment',
+    stepDone: 'Done',
+    backToCart: 'Back to cart',
+    yourDetails: 'Your details',
+    updatesHint: 'Order updates go here',
+    optional: '(optional)',
+    encrypted: 'Encrypted',
+    haveCoupon: 'Have a coupon code?',
+    placeOrderWithTotal: 'Place Order · {total}',
+    legalTerms: 'Terms',
+    legalPrivacy: 'Privacy',
+    legalRefund: 'Refund policy',
+    legalContact: 'Contact',
+    trustNoPassword: 'No password needed',
+    trustStartWithin: 'Most orders start within 6–8 hours',
+    trustRefill: '6-month refill on every order',
+    trustWhatsapp: '24/7 WhatsApp support',
   },
   orderSuccess: {
     paymentConfirmed: 'Payment confirmed',
@@ -353,7 +390,7 @@ export const ENGLISH_UI = {
     verifiedBody:
       'Thanks — your payment was verified and your order is in the fulfilment queue.',
     pendingBody:
-      'We are confirming your payment. This page will show success once Mollie verifies the charge.',
+      'We are confirming your payment. This page will show success once the payment is verified.',
     unverifiedBody:
       'We could not verify this order yet. Use your order ID and email to track status.',
     orderId: 'Order ID:',
@@ -361,6 +398,10 @@ export const ENGLISH_UI = {
     trackOrder: 'Track order',
     backHome: 'Back to home',
     ariaLabel: 'Order success',
+    /** Site-v2 verified next-steps (English fallback until locales translate). */
+    nextEmail: 'We send a confirmation to your email.',
+    nextTiming: 'Most orders start within 6–8 hours and finish 4–6 hours later.',
+    nextTrack: 'Follow progress any time on the Track Order page.',
   },
   trackOrder: {
     title: 'Track your order',

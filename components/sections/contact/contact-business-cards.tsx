@@ -1,12 +1,7 @@
 import type { ReactNode } from 'react';
 import { Building2, Headphones, Mail, MapPin, Phone, Share2 } from 'lucide-react';
 
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/cards/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/cards/card';
 import { HoverLift } from '@/components/motion/hover-lift';
 import { MutedText } from '@/components/typography/muted-text';
 import type { PublicBusinessContact } from '@/lib/site/public-contact';
@@ -30,7 +25,7 @@ function InfoRow({
 }) {
   return (
     <div className="flex gap-3">
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-[var(--brand-accent-soft)] text-[var(--brand-primary)]">
+      <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]">
         <Icon className="size-4" strokeWidth={2} aria-hidden />
       </span>
       <div className="min-w-0 space-y-0.5">
@@ -62,7 +57,7 @@ export function ContactBusinessCards({
           >
             <CardHeader className="space-y-4 p-5 sm:p-6">
               <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center rounded-xl bg-[var(--brand-accent-soft)] text-[var(--brand-primary)]">
+                <span className="flex size-11 items-center justify-center rounded-xl bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]">
                   <Building2 className="size-5" strokeWidth={2} aria-hidden />
                 </span>
                 <CardTitle className="text-lg">Business Information</CardTitle>
@@ -112,7 +107,7 @@ export function ContactBusinessCards({
           >
             <CardHeader className="space-y-4 p-5 sm:p-6">
               <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center rounded-xl bg-[var(--brand-accent-soft)] text-[var(--brand-primary)]">
+                <span className="flex size-11 items-center justify-center rounded-xl bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]">
                   <Headphones className="size-5" strokeWidth={2} aria-hidden />
                 </span>
                 <CardTitle className="text-lg">Support Information</CardTitle>
@@ -120,7 +115,10 @@ export function ContactBusinessCards({
               <dl className="space-y-4">
                 {business.email ? (
                   <InfoRow icon={Mail} label="Email">
-                    <a href={`mailto:${business.email}`} className="underline-offset-4 hover:underline">
+                    <a
+                      href={`mailto:${business.email}`}
+                      className="underline-offset-4 hover:underline"
+                    >
                       {business.email}
                     </a>
                   </InfoRow>

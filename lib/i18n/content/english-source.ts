@@ -1,4 +1,5 @@
-import { homepageHub } from '@/data/content/homepage-hub';
+import type { HomepageHub } from '@/data/content/homepage-hub';
+import { homepageHubLegacy } from '@/data/content/homepage-hub-legacy';
 import { INSTAGRAM_FOLLOWERS_PAGE_CONFIG } from '@/data/content/instagram-followers-page-config';
 import { faqPageContent } from '@/data/content/company';
 import { faqHubItems } from '@/data/content/faq-hub';
@@ -10,8 +11,12 @@ import type { CoreServiceSlug } from '@/lib/i18n/config';
 import { getEnglishMetadataBundle } from '@/lib/i18n/metadata';
 import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 
-export function getEnglishHomepageSource() {
-  return homepageHub;
+/**
+ * Locale/market homepage loaders must keep the pre–TikTok-first English base.
+ * Root `/` uses `homepageHub` from homepage-hub.ts directly via HomePageView.
+ */
+export function getEnglishHomepageSource(): HomepageHub {
+  return homepageHubLegacy as unknown as HomepageHub;
 }
 
 export function getEnglishFaqPageSource() {

@@ -113,11 +113,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Orders are placed through guest checkout using the information requested for the selected service. A separate NovaLikes customer account is not required to place an order."
+          "text": "You can place an order through guest checkout or while signed in to a NovaLikes customer account. An account is not required to place an order."
         },
         {
           "type": "paragraph",
-          "text": "After payment is initiated or confirmed, you can monitor available status updates through order tracking using your order reference and checkout email."
+          "text": "After payment is initiated or confirmed, you can monitor available status updates through order tracking using your order reference and checkout email, or from your account dashboard if the order is linked to your account."
         },
         {
           "type": "paragraph",

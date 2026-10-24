@@ -1,13 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import {
-  Clock,
-  Headphones,
-  Mail,
-  MessageCircle,
-  ShieldCheck,
-  type LucideIcon,
-} from 'lucide-react';
+import { Clock, Headphones, Mail, MessageCircle, ShieldCheck, type LucideIcon } from 'lucide-react';
 
 import { routes } from '@/config/routes';
 import { getEnglishContactSource } from '@/lib/i18n/content/company-english';
@@ -55,7 +48,7 @@ export function ContactInfoPanel({
         </>
       ),
       icon: Mail,
-      iconClass: 'bg-[#FFF1E6] text-[var(--brand-primary)]',
+      iconClass: 'bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]',
     },
     {
       id: 'live-chat',
@@ -108,7 +101,7 @@ export function ContactInfoPanel({
         </>
       ),
       icon: ShieldCheck,
-      iconClass: 'bg-[#FFF1E6] text-[var(--brand-primary)]',
+      iconClass: 'bg-[var(--nl-bg-soft)] text-[var(--brand-primary)]',
     },
   ];
 

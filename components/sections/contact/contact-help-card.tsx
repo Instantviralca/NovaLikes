@@ -1,17 +1,6 @@
-import {
-  ClipboardList,
-  Headphones,
-  HelpCircle,
-  ShoppingBag,
-  type LucideIcon,
-} from 'lucide-react';
+import { ClipboardList, Headphones, HelpCircle, ShoppingBag, type LucideIcon } from 'lucide-react';
 
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/cards/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/cards/card';
 import { HoverLift } from '@/components/motion/hover-lift';
 import { cn } from '@/lib/utils';
 
@@ -42,7 +31,7 @@ export function ContactHelpCard({ id, title, description, className }: ContactHe
         )}
       >
         <CardHeader className="flex flex-1 flex-col space-y-3.5 p-5 sm:p-6">
-          <span className="flex size-12 items-center justify-center rounded-xl bg-[var(--brand-accent-soft)] text-[var(--brand-primary)] transition-transform duration-200 group-hover:scale-105">
+          <span className="flex size-12 items-center justify-center rounded-xl bg-[var(--nl-bg-soft)] text-[var(--brand-primary)] transition-transform duration-200 group-hover:scale-105">
             <Icon className="size-5" strokeWidth={2} aria-hidden />
           </span>
           <div className="space-y-2">

@@ -16,10 +16,12 @@ import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
 import { Eyebrow } from '@/components/typography/eyebrow';
+import { GradientHeading } from '@/components/typography/gradient-heading';
 import { Heading } from '@/components/typography/heading';
 import { Lead } from '@/components/typography/lead';
 import { Button } from '@/components/ui/button';
 import { routes } from '@/config/routes';
+import { H1_HIGHLIGHTS } from '@/data/content/service-hero-rewrites';
 import { FAQ_CATEGORIES } from '@/data/faqs/categories';
 import {
   faqAnalyticsEvents,
@@ -121,9 +123,12 @@ export function FaqPageView({
               variant="subtle"
             />
             {content.hero.eyebrow ? <Eyebrow>{content.hero.eyebrow}</Eyebrow> : null}
-            <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
-              {accentLastWord(content.hero.title)}
-            </Heading>
+            <GradientHeading
+              as="h1"
+              text={content.hero.title}
+              highlight={H1_HIGHLIGHTS['/faq']}
+              className={`${HERO_HEADING_CLASS} font-bold`}
+            />
             <Lead className="text-pretty text-[var(--text-secondary)]">
               {content.hero.description}
             </Lead>

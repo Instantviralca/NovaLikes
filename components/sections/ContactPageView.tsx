@@ -7,21 +7,19 @@ import { Stack } from '@/components/layout/stack';
 import { Breadcrumb } from '@/components/navigation/breadcrumb';
 import { ContactFaqSection } from '@/components/sections/contact/contact-faq-section';
 import { ContactFinalBannerCta } from '@/components/sections/contact/contact-final-banner-cta';
-import {
-  ContactForm,
-  ContactPageViewTracker,
-} from '@/components/sections/contact/contact-form';
+import { ContactForm, ContactPageViewTracker } from '@/components/sections/contact/contact-form';
 import { ContactHeroIllustration } from '@/components/sections/contact/contact-hero-illustration';
 import { ContactInfoPanel } from '@/components/sections/contact/contact-info-panel';
 import { Heading } from '@/components/typography/heading';
 import { accentLastWord, HERO_HEADING_CLASS } from '@/components/typography/accent-title';
+import { GradientHeading } from '@/components/typography/gradient-heading';
 import { Text } from '@/components/typography/text';
 import { routes } from '@/config/routes';
+import { H1_HIGHLIGHTS } from '@/data/content/service-hero-rewrites';
 import { getContactContent } from '@/data/content/company';
 import { getFaqItemsByIds } from '@/data/content/faq';
 import { getEnglishContactSource } from '@/lib/i18n/content/company-english';
 import type { ContactPageOverlay } from '@/lib/i18n/content/company-english';
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { cn } from '@/lib/utils';
 import type { ContactPageContent } from '@/types/content';
 
@@ -45,8 +43,6 @@ type ContactPageViewProps = {
   homeHref?: string;
   faqItems?: ContactFaqItem[];
   trackOrderHref?: string;
-  quickAnswerHeading?: string;
-  quickAnswerText?: string;
 };
 
 /**
@@ -59,13 +55,8 @@ export function ContactPageView({
   homeHref = routes.home,
   faqItems,
   trackOrderHref = routes.trackOrder,
-  quickAnswerHeading,
-  quickAnswerText,
 }: ContactPageViewProps) {
-  const breadcrumbs = [
-    { label: homeLabel, href: homeHref },
-    { label: chrome.breadcrumb },
-  ];
+  const breadcrumbs = [{ label: homeLabel, href: homeHref }, { label: chrome.breadcrumb }];
 
   const faqs =
     faqItems ??
@@ -94,9 +85,12 @@ export function ContactPageView({
                   {content.hero.eyebrow}
                 </p>
               ) : null}
-              <Heading as="h1" size="h1" className={HERO_HEADING_CLASS}>
-                {accentLastWord(content.hero.title)}
-              </Heading>
+              <GradientHeading
+                as="h1"
+                text={content.hero.title}
+                highlight={H1_HIGHLIGHTS['/contact']}
+                className={`${HERO_HEADING_CLASS} font-bold`}
+              />
               <Text className="text-pretty text-[var(--text-secondary)]">
                 {content.hero.description}
               </Text>
@@ -108,10 +102,14 @@ export function ContactPageView({
                     return (
                       <div
                         key={item.id}
-                        className="flex items-center gap-2 rounded-full bg-[#FFF1E6] px-3.5 py-2 text-left text-sm text-[var(--text-primary)]"
+                        className="flex items-center gap-2 rounded-full bg-[var(--nl-bg-soft)] px-3.5 py-2 text-left text-sm text-[var(--text-primary)]"
                       >
-                        <Icon className={cn('size-4 shrink-0', color)} strokeWidth={2.25} aria-hidden />
-                        <span className="font-medium leading-snug">{item.label}</span>
+                        <Icon
+                          className={cn('size-4 shrink-0', color)}
+                          strokeWidth={2.25}
+                          aria-hidden
+                        />
+                        <span className="leading-snug font-medium">{item.label}</span>
                       </div>
                     );
                   })}
@@ -128,14 +126,6 @@ export function ContactPageView({
         </Container>
       </Section>
 
-      {quickAnswerText ? (
-        <Section spacing="sm" className="bg-transparent">
-          <Container>
-            <QuickAnswer heading={quickAnswerHeading ?? 'Quick answer'} text={quickAnswerText} />
-          </Container>
-        </Section>
-      ) : null}
-
       {/* 2. Form + Contact Information */}
       <Section
         id={content.form.id}
@@ -144,7 +134,7 @@ export function ContactPageView({
         aria-labelledby="contact-form-heading"
       >
         <Container>
-          <div className="grid gap-8 rounded-[1.75rem] border border-[var(--border-subtle)] bg-white p-6 shadow-[0_18px_48px_-28px_rgba(28,25,23,0.35)] sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:p-10">
+          <div className="grid gap-8 rounded-2xl border border-[var(--nl-border)] bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:p-10">
             <div className="space-y-5">
               <div className="space-y-2">
                 <Heading as="h2" size="h3" id="contact-form-heading">
@@ -158,7 +148,7 @@ export function ContactPageView({
               </div>
               <ContactForm fields={content.form.fields} chrome={chrome} embedded />
             </div>
-            <div className="space-y-5 border-t border-[var(--border-subtle)] pt-6 lg:border-t-0 lg:border-s lg:pt-0 lg:ps-8">
+            <div className="space-y-5 border-t border-[var(--nl-border)] pt-6 lg:border-s lg:border-t-0 lg:ps-8 lg:pt-0">
               <Heading as="h2" size="h3" id="contact-business-heading">
                 {content.business.title}
               </Heading>
@@ -193,7 +183,7 @@ export function ContactPageView({
         aria-labelledby="contact-final-cta-heading"
       >
         <Container>
-          <div className="flex flex-col items-center gap-6 rounded-[1.75rem] bg-[var(--brand-primary)] px-6 py-8 text-center sm:flex-row sm:gap-8 sm:px-8 sm:py-9 sm:text-left">
+          <div className="bg-nl-grad flex flex-col items-center gap-6 rounded-2xl px-6 py-8 text-center sm:flex-row sm:gap-8 sm:px-8 sm:py-9 sm:text-left">
             <div className="relative h-20 w-28 shrink-0 sm:h-24 sm:w-32">
               <Image
                 src="/assets/images/illustrations/contact/contact-cta-chat.webp"
@@ -205,12 +195,7 @@ export function ContactPageView({
               />
             </div>
             <div className="min-w-0 flex-1 space-y-1">
-              <Heading
-                as="h2"
-                size="h3"
-                id="contact-final-cta-heading"
-                className="!text-white"
-              >
+              <Heading as="h2" size="h3" id="contact-final-cta-heading" className="!text-white">
                 {content.finalCta.title}
               </Heading>
               <p className="text-sm leading-relaxed text-white/95 sm:text-base">

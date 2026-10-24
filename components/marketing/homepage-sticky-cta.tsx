@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { runWhenIdle } from '@/lib/perf/run-when-idle';
+import { clearStickyBarOffset, setStickyBarOffset } from '@/lib/ui/sticky-bar-offset';
 import { cn } from '@/lib/utils';
 
 /**
@@ -22,6 +23,7 @@ export function HomepageStickyCta({
   className?: string;
 }) {
   const [visible, setVisible] = useState(false);
+  const barRef = useRef<HTMLDivElement>(null);
 
   const { ui } = useI18nChrome();
 
@@ -63,12 +65,30 @@ export function HomepageStickyCta({
     };
   }, []);
 
+  useLayoutEffect(() => {
+    if (!visible) {
+      clearStickyBarOffset();
+      return;
+    }
+    const el = barRef.current;
+    if (!el) return;
+    const publish = () => setStickyBarOffset(el.getBoundingClientRect().height);
+    publish();
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(publish) : null;
+    ro?.observe(el);
+    return () => {
+      ro?.disconnect();
+      clearStickyBarOffset();
+    };
+  }, [visible]);
+
   if (!visible) return null;
 
   return (
     <div
+      ref={barRef}
       className={cn(
-        'fixed inset-x-0 bottom-0 z-40 border-t border-[var(--border-subtle)] bg-white/95 p-3 shadow-[0_-12px_40px_-24px_rgba(28,25,23,0.35)] backdrop-blur lg:hidden',
+        'fixed inset-x-0 bottom-0 z-40 border-t border-[var(--nl-border)] bg-[var(--nl-bg)] p-3 shadow-[0_-12px_40px_-24px_rgba(28,25,23,0.35)] lg:hidden',
         'pb-[max(0.75rem,env(safe-area-inset-bottom))]',
         className,
       )}
@@ -84,7 +104,10 @@ export function HomepageStickyCta({
             {ui.commerce.noPassword} · {ui.commerce.secureCheckout}
           </p>
         </div>
-        <Button asChild className="min-h-11 max-w-[11rem] shrink-0 rounded-xl px-4 font-semibold sm:max-w-none sm:px-5">
+        <Button
+          asChild
+          className="min-h-11 max-w-[11rem] shrink-0 rounded-xl px-4 font-semibold sm:max-w-none sm:px-5"
+        >
           <Link href={href}>{label}</Link>
         </Button>
       </div>

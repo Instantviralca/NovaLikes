@@ -13,7 +13,11 @@ export type AccountNavState = {
 } | null;
 
 export async function getAccountNavState(): Promise<AccountNavState> {
-  if (!isDbReady()) return null;
+  // Always expose Login/Dashboard in the header (Buzzoid-style).
+  // When accounts DB isn't configured, still link to /login.
+  if (!isDbReady()) {
+    return { href: '/login', label: ACCOUNT_NAV.signIn };
+  }
   const jar = await cookies();
   const token = jar.get(CUSTOMER_SESSION_COOKIE)?.value;
   const signedIn = await verifyCustomerSessionTokenEdge(token);

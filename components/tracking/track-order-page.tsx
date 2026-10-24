@@ -34,9 +34,9 @@ export function TrackOrderPage() {
               (label, index) => (
                 <li
                   key={label}
-                  className="rounded-xl border border-[var(--border-subtle)] bg-white p-3 text-sm shadow-[var(--shadow-xs)]"
+                  className="rounded-xl border border-[var(--nl-border)] bg-white p-3 text-sm shadow-[var(--shadow-xs)]"
                 >
-                  <span className="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-[var(--brand-accent-soft)] text-xs font-bold text-[var(--brand-primary)]">
+                  <span className="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-[var(--nl-bg-soft)] text-xs font-bold text-[var(--brand-primary)]">
                     {index + 1}
                   </span>
                   {label}

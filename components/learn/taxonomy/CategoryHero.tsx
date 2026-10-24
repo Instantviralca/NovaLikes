@@ -16,7 +16,7 @@ type CategoryHeroProps = {
   categories?: PublicLearnCategory[];
 };
 
-const CATEGORY_HERO_TITLES: Record<string, string> = {
+export const CATEGORY_HERO_TITLES: Record<string, string> = {
   instagram: 'Instagram Guides',
   tiktok: 'TikTok Guides',
   facebook: 'Facebook Guides',
@@ -33,7 +33,7 @@ export function CategoryHero({
   categories = [],
 }: CategoryHeroProps) {
   return (
-    <Section className="overflow-x-hidden border-b border-[#F0E4D8] bg-hero-wash">
+    <Section className="overflow-x-hidden border-b border-[var(--nl-border)] bg-[var(--nl-bg-soft)]">
       <Container>
         <div className="max-w-3xl space-y-4 py-10 md:py-14">
           {breadcrumbs && breadcrumbs.length > 0 ? (
@@ -60,10 +60,10 @@ export function CategoryHero({
                     href={item.href}
                     aria-current={current ? 'page' : undefined}
                     className={cn(
-                      'inline-flex h-8 items-center rounded-full px-3 text-[13px] font-medium outline-none transition-colors focus-visible:ring-2 focus-visible:ring-[#E85D04] focus-visible:ring-offset-2',
+                      'inline-flex h-8 items-center rounded-full px-3 text-[13px] font-medium outline-none transition-colors focus-visible:ring-2 focus-visible:ring-[var(--nl-orange)] focus-visible:ring-offset-2',
                       current
-                        ? 'bg-[#E85D04] text-white'
-                        : 'border border-[#E8DDD3] bg-white text-neutral-700 hover:border-[#F0C7A8] hover:bg-[#FFF8F3]',
+                        ? 'bg-[var(--nl-orange)] text-white'
+                        : 'border border-[var(--nl-border)] bg-white text-neutral-700 hover:border-[var(--nl-border)] hover:bg-[var(--nl-bg-soft)]',
                     )}
                   >
                     {item.name}

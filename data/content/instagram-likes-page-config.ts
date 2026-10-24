@@ -20,7 +20,7 @@ const PACKAGE_GUIDANCE: Record<string, string> = {
   'buy-instagram-likes-pkg-500':
     'For accounts with a few thousand followers that want a recent post to match their usual numbers.',
   'buy-instagram-likes-pkg-1k':
-    'Our most popular choice — fits a product, launch or announcement post on an established account.',
+    'Our most popular choice (2,500 likes) — fits a product, launch or announcement post on an established account.',
   'buy-instagram-likes-pkg-5k':
     'For larger accounts and Reels that are already getting thousands of views.',
   'buy-instagram-likes-pkg-10k':

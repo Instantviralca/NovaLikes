@@ -273,6 +273,17 @@ export function normalizeOrderConfigurationValues(
     }
   }
 
+  // Optional empty strings are omitted so nothing extra is stored or shown.
+  for (const field of fields) {
+    const key = field.name in next ? field.name : field.id;
+    const optional = Boolean(field.optional) || !field.validation?.required;
+    if (!optional) continue;
+    const value = next[key];
+    if (typeof value === 'string' && value.trim() === '') {
+      delete next[key];
+    }
+  }
+
   return next;
 }
 

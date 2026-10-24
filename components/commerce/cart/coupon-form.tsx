@@ -1,19 +1,19 @@
 'use client';
 
 import { useState } from 'react';
+import { Ticket } from 'lucide-react';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import { useApplyCouponCode, useCart } from '@/lib/cart';
 import { cn } from '@/lib/utils';
 
 type CouponFormProps = {
   className?: string;
+  /** Hide the ticket icon in the input (checkout collapsible). */
+  hideIcon?: boolean;
 };
 
-export function CouponForm({ className }: CouponFormProps) {
+export function CouponForm({ className, hideIcon = false }: CouponFormProps) {
   const cart = useCart();
   const applyCode = useApplyCouponCode();
   const { ui } = useI18nChrome();
@@ -22,60 +22,62 @@ export function CouponForm({ className }: CouponFormProps) {
 
   if (cart.coupon) {
     return (
-      <div className={cn('space-y-2', className)}>
-        <p className="text-sm">
+      <div className={cn('coupon-applied', className)}>
+        <p style={{ font: '700 14px var(--nl-body)', margin: 0 }}>
           {ui.cart.coupon}{' '}
-          <span className="font-medium" dir="ltr">
+          <span dir="ltr" style={{ fontWeight: 800 }}>
             {cart.coupon.code}
           </span>{' '}
           {ui.cart.couponApplied}
         </p>
-        <Button
+        <button
           type="button"
-          variant="outline"
-          size="sm"
+          className="tlink"
+          style={{ marginTop: 8, fontSize: 13 }}
           onClick={() => {
             cart.removeCoupon();
             setMessage(undefined);
           }}
         >
           {ui.cart.removeCoupon}
-        </Button>
+        </button>
       </div>
     );
   }
 
   return (
-    <form
-      className={cn('space-y-2', className)}
-      onSubmit={async (e) => {
-        e.preventDefault();
-        const result = await applyCode(code);
-        setMessage(result.ok ? ui.cart.couponAppliedShort : result.message);
-      }}
-    >
-      <Label htmlFor="coupon-code" className="text-xs font-semibold tracking-wide text-[var(--text-secondary)] uppercase">
-        {ui.cart.couponCode}
-      </Label>
-      <div className="flex gap-2">
-        <Input
-          id="coupon-code"
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-          placeholder={ui.cart.couponPlaceholder}
-          autoComplete="off"
-          dir="ltr"
-          className="h-10 rounded-xl border-[var(--border-subtle)]"
-        />
-        <Button type="submit" variant="outline" className="h-10 rounded-xl px-4">
+    <div className={className}>
+      <form
+        className="coupon"
+        onSubmit={async (e) => {
+          e.preventDefault();
+          const result = await applyCode(code);
+          setMessage(result.ok ? ui.cart.couponAppliedShort : result.message);
+        }}
+      >
+        <label className="sr" htmlFor="coupon-code">
+          {ui.cart.couponCode}
+        </label>
+        <div className="input">
+          {!hideIcon ? <Ticket className="ic" aria-hidden="true" /> : null}
+          <input
+            id="coupon-code"
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+            placeholder={ui.cart.couponPlaceholder}
+            autoComplete="off"
+            dir="ltr"
+          />
+        </div>
+        <button className="btn dark" type="submit">
           {ui.cart.apply}
-        </Button>
-      </div>
+        </button>
+      </form>
       {message ? (
-        <p className="text-xs text-muted-foreground" role="status">
+        <p className="hint" style={{ marginTop: 6 }} role="status">
           {message}
         </p>
       ) : null}
-    </form>
+    </div>
   );
 }

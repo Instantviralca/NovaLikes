@@ -13,6 +13,7 @@ import { Section } from '@/components/layout/section';
 import { FadeUp } from '@/components/motion/fade-up';
 import { resolvePackagesIcon } from '@/components/marketing/packages/packages-icons';
 import { StoryItemsCarousel } from '@/components/marketing/story-items-carousel';
+import { GradientHeading } from '@/components/typography/gradient-heading';
 import { Heading } from '@/components/typography/heading';
 import { MutedText } from '@/components/typography/muted-text';
 import {
@@ -65,14 +66,7 @@ export function InstagramFollowersWhyChoose({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${whyChoose.id}-heading`}
-            className="tracking-tight"
-          >
-            {whyChoose.title}
-          </Heading>
+          <GradientHeading as="h2" text={whyChoose.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{whyChoose.description}</MutedText>
         </FadeUp>
 
@@ -134,14 +128,7 @@ export function InstagramFollowersWhyBuy({
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12 lg:items-center">
           <FadeUp immediate className="space-y-5 self-center">
             {title ? (
-              <Heading
-                as="h2"
-                size="h2"
-                id={id ? `${id}-heading` : undefined}
-                className="tracking-tight"
-              >
-                {title}
-              </Heading>
+              <GradientHeading as="h2" text={title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
             ) : null}
             {description ? (
               <MutedText className="max-w-xl text-base leading-relaxed sm:text-[1.05rem]">
@@ -210,14 +197,7 @@ export function InstagramFollowersCanYouBuy({
           </FadeUp>
 
           <FadeUp className="order-1 space-y-5 lg:order-2">
-            <Heading
-              as="h2"
-              size="h2"
-              id={`${canYouBuy.id}-heading`}
-              className="tracking-tight"
-            >
-              {canYouBuy.title}
-            </Heading>
+            <GradientHeading as="h2" text={canYouBuy.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
             <MutedText className="max-w-xl text-base leading-relaxed sm:text-[1.05rem]">
               {canYouBuy.description}
             </MutedText>
@@ -277,14 +257,7 @@ export function InstagramFollowersHowToBuy({
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
           {title ? (
-            <Heading
-              as="h2"
-              size="h2"
-              id={id ? `${id}-heading` : undefined}
-              className="tracking-tight"
-            >
-              {title}
-            </Heading>
+            <GradientHeading as="h2" text={title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           ) : null}
           {description ? (
             <MutedText className="mx-auto max-w-2xl text-base leading-relaxed sm:text-[1.05rem]">
@@ -375,14 +348,7 @@ export function InstagramFollowersDoesBuyingHelp({
           <FadeUp immediate className="space-y-5">
             <div className="space-y-3">
               {doesBuyingHelp.title?.trim() ? (
-                <Heading
-                  as="h2"
-                  size="h2"
-                  id={`${doesBuyingHelp.id}-heading`}
-                  className="tracking-tight"
-                >
-                  {doesBuyingHelp.title}
-                </Heading>
+                <GradientHeading as="h2" text={doesBuyingHelp.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
               ) : null}
               {doesBuyingHelp.description?.trim() ? (
                 <MutedText className="text-base leading-relaxed sm:text-[1.05rem]">
@@ -471,14 +437,7 @@ export function InstagramFollowersWhatHappens({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-8 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${whatHappens.id}-heading`}
-            className="tracking-tight"
-          >
-            {whatHappens.title}
-          </Heading>
+          <GradientHeading as="h2" text={whatHappens.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{whatHappens.description}</MutedText>
         </FadeUp>
 
@@ -533,14 +492,7 @@ export function InstagramFollowersServiceCompare({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${serviceCompare.id}-heading`}
-            className="tracking-tight"
-          >
-            {serviceCompare.title}
-          </Heading>
+          <GradientHeading as="h2" text={serviceCompare.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{serviceCompare.description}</MutedText>
         </FadeUp>
 
@@ -637,14 +589,7 @@ export function InstagramFollowersBeforeBuying({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${beforeBuying.id}-heading`}
-            className="tracking-tight"
-          >
-            {beforeBuying.title}
-          </Heading>
+          <GradientHeading as="h2" text={beforeBuying.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{beforeBuying.description}</MutedText>
         </FadeUp>
 
@@ -704,14 +649,7 @@ export function InstagramFollowersWorldwide({
           <div className="mb-1 inline-flex items-center gap-2 rounded-full border border-pink-100 bg-[#FFF1F2] px-3 py-1.5 text-xs font-semibold text-[#E1306C]">
             {worldwide.eyebrow}
           </div>
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${worldwide.id}-heading`}
-            className="tracking-tight"
-          >
-            {worldwide.title}
-          </Heading>
+          <GradientHeading as="h2" text={worldwide.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="text-base leading-relaxed sm:text-[1.05rem]">
             {worldwide.description}
           </MutedText>
@@ -764,14 +702,7 @@ export function InstagramFollowersPackageSizes({
     >
       <Container size="lg">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${packageSizes.id}-heading`}
-            className="tracking-tight"
-          >
-            {packageSizes.title}
-          </Heading>
+          <GradientHeading as="h2" text={packageSizes.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{packageSizes.description}</MutedText>
         </FadeUp>
 
@@ -861,14 +792,7 @@ export function InstagramFollowersBestPractices({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-6 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${bestPractices.id}-heading`}
-            className="tracking-tight"
-          >
-            {bestPractices.title}
-          </Heading>
+          <GradientHeading as="h2" text={bestPractices.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{bestPractices.description}</MutedText>
         </FadeUp>
 
@@ -931,14 +855,7 @@ export function InstagramFollowersCommonMistakes({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto mb-7 max-w-3xl space-y-3 text-center">
-          <Heading
-            as="h2"
-            size="h2"
-            id={`${commonMistakes.id}-heading`}
-            className="tracking-tight"
-          >
-            {commonMistakes.title}
-          </Heading>
+          <GradientHeading as="h2" text={commonMistakes.title} auto className="type-h2 font-semibold tracking-tight tracking-tight" />
           <MutedText className="leading-relaxed">{commonMistakes.description}</MutedText>
         </FadeUp>
 
@@ -992,9 +909,7 @@ export function InstagramFollowersRelatedArticles({
     >
       <Container size="xl">
         <FadeUp immediate className="mx-auto max-w-2xl space-y-2 text-center">
-          <Heading as="h2" size="h2" id="related-articles-heading">
-            {title}
-          </Heading>
+          <GradientHeading as="h2" text={title} auto id="related-articles-heading" className="type-h2 font-semibold tracking-tight" />
           {description ? <MutedText>{description}</MutedText> : null}
         </FadeUp>
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 sm:gap-6">

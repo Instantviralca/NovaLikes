@@ -32,7 +32,7 @@ export function ArticleCardImage({
 
   if (failed) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-[#FFF8F3]">
+      <div className="flex h-full w-full items-center justify-center bg-[var(--nl-bg-soft)]">
         <Image
           src={fallbackSrc}
           alt=""

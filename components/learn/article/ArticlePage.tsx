@@ -10,14 +10,15 @@ import { ReadingProgress } from '@/components/learn/article/ReadingProgress';
 import { RelatedArticles } from '@/components/learn/article/RelatedArticles';
 import { RelatedServices } from '@/components/learn/article/RelatedServices';
 import { TableOfContents } from '@/components/learn/article/TableOfContents';
-import { Container } from '@/components/layout/container';
-import { Section } from '@/components/layout/section';
+import { LearnBlogBar } from '@/components/learn/site-v2/LearnBlogBar';
+import { SiteV2Shell } from '@/components/site-v2/site-v2-shell';
 import { getLearnArticleClosingCta } from '@/lib/learn/article/closing-cta';
 import { splitArticleIntro } from '@/lib/learn/article/layout';
 import {
   getArticleRelatedLinks,
   prepareArticleForRender,
 } from '@/lib/learn/article';
+import { getCategories, getCategoryById } from '@/lib/learn/taxonomy';
 import type { PublicLearnArticle } from '@/types/learn';
 
 type ArticlePageProps = {
@@ -27,8 +28,9 @@ type ArticlePageProps = {
 };
 
 /**
- * Reusable Learn article template — Document 15.02.
+ * Reusable Learn article template — Document 15.02, site-v2 layout.
  * Optional sections render only when content exists.
+ * Section order: FAQ → Related services → Related guides → Author box → Closing CTA.
  */
 export function ArticlePage({
   article,
@@ -41,9 +43,13 @@ export function ArticlePage({
   );
   const closingCta = getLearnArticleClosingCta(prepared.article);
   const { intro, body } = splitArticleIntro(prepared.blocks);
+  const tabs = getCategories()
+    .filter((item) => item.articleCount > 0)
+    .map(({ slug, name, href, articleCount }) => ({ slug, name, href, articleCount }));
+  const activeCategory = getCategoryById(prepared.article.category)?.slug ?? null;
 
   return (
-    <div className="overflow-x-hidden">
+    <SiteV2Shell>
       <ReadingProgress />
 
       {preview ? (
@@ -52,32 +58,20 @@ export function ArticlePage({
         </div>
       ) : null}
 
-      <Section className="border-b border-[#F0E4D8] bg-[#FFF8F3]">
-        <Container>
-          <div className="mx-auto max-w-[800px] py-10 md:py-14">
+      <LearnBlogBar categories={tabs} active={activeCategory} searchMode="navigate" />
+
+      <div className="wrap art-top">
+        <div className="art-grid">
+          <article data-learn-article className="art-main">
             <ArticleHero article={prepared.article} />
-          </div>
-        </Container>
-      </Section>
 
-      <Section>
-        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">
-          <div className="flex flex-col gap-10 lg:flex-row lg:justify-center lg:gap-12">
-            <article
-              data-learn-article
-              className="mx-auto min-w-0 w-full max-w-[800px] space-y-8 lg:mx-0"
-            >
-              {prepared.article.featuredImage ? (
-                <ArticleFeaturedImage
-                  image={prepared.article.featuredImage}
-                  priority
-                />
-              ) : null}
+            {prepared.article.featuredImage ? (
+              <ArticleFeaturedImage image={prepared.article.featuredImage} priority />
+            ) : null}
 
-              <div className="lg:hidden">
-                <TableOfContents items={prepared.toc} />
-              </div>
+            <TableOfContents items={prepared.toc} variant="mobile" />
 
+            <div className="prose">
               {intro.length > 0 ? <ArticleContent blocks={intro} /> : null}
 
               <KeyTakeaways
@@ -86,30 +80,28 @@ export function ArticlePage({
               />
 
               {body.length > 0 ? <ArticleContent blocks={body} /> : null}
-
-              <ArticleFAQ items={prepared.article.faqs} />
-
-              <RelatedServices
-                services={related.services}
-                prominentCta={prepared.article.serviceCta}
-              />
-
-              <RelatedArticles
-                articles={relatedList}
-                currentSlug={prepared.article.slug}
-              />
-
-              <AuthorBox authorId={prepared.article.authorId} author={prepared.article.author} />
-
-              {closingCta ? <ArticleClosingCta cta={closingCta} /> : null}
-            </article>
-
-            <div className="hidden w-[260px] shrink-0 lg:block">
-              <ArticleSidebar tocItems={prepared.toc} />
             </div>
-          </div>
+
+            <ArticleFAQ items={prepared.article.faqs} />
+
+            <RelatedServices
+              services={related.services}
+              prominentCta={prepared.article.serviceCta}
+            />
+
+            <RelatedArticles
+              articles={relatedList}
+              currentSlug={prepared.article.slug}
+            />
+
+            <AuthorBox authorId={prepared.article.authorId} author={prepared.article.author} />
+
+            {closingCta ? <ArticleClosingCta cta={closingCta} /> : null}
+          </article>
+
+          <ArticleSidebar tocItems={prepared.toc} article={prepared.article} />
         </div>
-      </Section>
-    </div>
+      </div>
+    </SiteV2Shell>
   );
 }

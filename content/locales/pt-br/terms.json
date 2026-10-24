@@ -117,11 +117,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Os pedidos são feitos por checkout como visitante, usando as informações solicitadas para o serviço selecionado. Uma conta de cliente separada da NovaLikes não é necessária para fazer um pedido."
+          "text": "Você pode fazer um pedido como convidado ou conectado a uma conta de cliente NovaLikes. Não é necessário ter uma conta para fazer um pedido."
         },
         {
           "type": "paragraph",
-          "text": "Depois que o pagamento for iniciado ou confirmado, você pode acompanhar as atualizações de status disponíveis por meio do rastreamento do pedido, usando a referência do pedido e o e-mail do checkout."
+          "text": "Depois que o pagamento for iniciado ou confirmado, você pode acompanhar as atualizações de status disponíveis pelo rastreamento do pedido usando a referência do pedido e o e-mail do checkout, ou pelo painel da sua conta se o pedido estiver vinculado a ela."
         },
         {
           "type": "paragraph",

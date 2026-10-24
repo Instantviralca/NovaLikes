@@ -2,6 +2,8 @@
   "language": "اللغة",
   "nav": {
     "home": "الرئيسية",
+    "services": "الخدمات",
+    "help": "المساعدة",
     "instagram": "Instagram",
     "tiktok": "TikTok",
     "facebook": "Facebook",
@@ -14,7 +16,8 @@
     "primaryNav": "الرئيسي",
     "mobileNav": "الجوال",
     "loadingMenu": "جارٍ تحميل القائمة",
-    "cart": "السلة"
+    "cart": "السلة",
+    "logIn": "تسجيل الدخول"
   },
   "footer": {
     "ariaLabel": "تذييل الصفحة",
@@ -171,7 +174,19 @@
     "goingToCheckout": "جارٍ الانتقال إلى الدفع…",
     "continuing": "جارٍ المتابعة…",
     "unableToContinue": "تعذر المتابعة إلى الدفع.",
-    "checkoutTimeout": "يستغرق الدفع وقتًا أطول من المتوقع. حاول مرة أخرى."
+    "checkoutTimeout": "يستغرق الدفع وقتًا أطول من المتوقع. حاول مرة أخرى.",
+    "addedToast": "Added to your cart",
+    "viewCart": "View cart",
+    "itemsCount": "{count} items · One-time purchase",
+    "itemCount": "1 item · One-time purchase",
+    "addAnotherService": "Add another service",
+    "drawerFine": "Secure checkout · No password needed",
+    "pageFine": "Secure checkout · Prices in USD",
+    "itemsHeading": "{count} items",
+    "trustNoPassword": "No password needed",
+    "trustStartWithin": "Most orders start within 6–8 hours",
+    "trustRefill": "6-month refill on every order",
+    "trustWhatsapp": "24/7 WhatsApp support"
   },
   "checkout": {
     "title": "الدفع",
@@ -218,20 +233,43 @@
     "stepDetails": "إدخال التفاصيل",
     "stepReview": "المراجعة",
     "stepPayment": "الدفع",
-    "progressAria": "خطوات الدفع"
+    "progressAria": "خطوات الدفع",
+    "oneTime": "One-time payment. No subscription.",
+    "orderSummaryToggle": "Order summary",
+    "stepCart": "Cart",
+    "stepDetailsPayment": "Details & payment",
+    "stepDone": "Done",
+    "backToCart": "Back to cart",
+    "yourDetails": "Your details",
+    "updatesHint": "Order updates go here",
+    "optional": "(optional)",
+    "encrypted": "Encrypted",
+    "haveCoupon": "Have a coupon code?",
+    "placeOrderWithTotal": "Place Order · {total}",
+    "legalTerms": "Terms",
+    "legalPrivacy": "Privacy",
+    "legalRefund": "Refund policy",
+    "legalContact": "Contact",
+    "trustNoPassword": "No password needed",
+    "trustStartWithin": "Most orders start within 6–8 hours",
+    "trustRefill": "6-month refill on every order",
+    "trustWhatsapp": "24/7 WhatsApp support"
   },
   "orderSuccess": {
     "paymentConfirmed": "تم تأكيد الدفع",
     "confirmingPayment": "جارٍ تأكيد الدفع",
     "orderStatus": "حالة الطلب",
     "verifiedBody": "شكرًا — تم التحقق من الدفع وأُضيف طلبك إلى قائمة التنفيذ.",
-    "pendingBody": "نؤكّد دفعتك. ستظهر هذه الصفحة حالة النجاح بعد أن يتحقق Stripe من العملية.",
+    "pendingBody": "نؤكّد دفعتك. ستعرض هذه الصفحة حالة النجاح بعد التحقق من الدفع.",
     "unverifiedBody": "تعذر التحقق من هذا الطلب بعد. استخدم معرّف الطلب والبريد الإلكتروني لتتبع الحالة.",
     "orderId": "معرّف الطلب:",
     "email": "البريد الإلكتروني:",
     "trackOrder": "تتبع الطلب",
     "backHome": "العودة إلى الرئيسية",
-    "ariaLabel": "نجاح الطلب"
+    "ariaLabel": "نجاح الطلب",
+    "nextEmail": "We send a confirmation to your email.",
+    "nextTiming": "Most orders start within 6–8 hours and finish 4–6 hours later.",
+    "nextTrack": "Follow progress any time on the Track Order page."
   },
   "trackOrder": {
     "title": "تتبع طلبك",
