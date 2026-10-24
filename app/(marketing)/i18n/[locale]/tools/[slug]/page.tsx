@@ -97,13 +97,11 @@ export default async function LocalizedToolPage({ params }: PageProps) {
         <InstagramProfileViewerPage
           {...shared}
           profileViewer={bundle.profileViewer}
-          quickAnswerHeading={ui.quickAnswer.heading}
         />
       ) : (
         <ToolPageView
           {...shared}
           layoutCopy={bundle.layout[tool.slug as keyof typeof bundle.layout]}
-          quickAnswerHeading={ui.quickAnswer.heading}
         />
       )}
     </>

@@ -1,11 +1,20 @@
 'use client';
 
 import { LanguageSwitcher } from '@/components/i18n/language-switcher';
+import { cn } from '@/lib/utils';
 
-export function FooterLanguageSwitcher({ heading }: { heading: string }) {
+export function FooterLanguageSwitcher({
+  heading,
+  className,
+  triggerClassName = 'lang',
+}: {
+  heading: string;
+  className?: string;
+  triggerClassName?: string;
+}) {
   return (
-    <nav aria-label={heading} className="mt-8 border-t border-[var(--border-subtle)] pt-6">
-      <LanguageSwitcher />
+    <nav aria-label={heading} className={cn(className)}>
+      <LanguageSwitcher className={triggerClassName} />
     </nav>
   );
 }

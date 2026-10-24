@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-import { QuickAnswer } from '@/components/quick-answer/QuickAnswer';
 import { SiteV2Shell } from '@/components/site-v2/site-v2-shell';
 import { IllustratedToolHero } from '@/components/tools/illustrated-tool-hero';
 import { SnapArt } from '@/components/tools/instagram-profile-viewer/visuals';
@@ -14,7 +13,6 @@ import {
   ToolCard,
 } from '@/components/tools/site-v2/tool-v2-parts';
 import { routes } from '@/config/routes';
-import type { QuickAnswerPageId } from '@/data/quick-answers';
 import { ILLUSTRATED_TOOL_LAYOUT } from '@/data/tools/illustrated-layout';
 import { ENGLISH_TOOL_CHROME, type ToolChrome } from '@/data/tools/chrome';
 import type { ToolPageCopy } from '@/data/tools/copy';
@@ -22,8 +20,6 @@ import { getRelatedTools, type ToolDefinition } from '@/data/tools/registry';
 import { getRelatedServicesForTool } from '@/data/tools/related-services';
 import type { ToolSlug } from '@/lib/tools/types';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
-import { loadQuickAnswer } from '@/lib/i18n/content/load';
-import { ENGLISH_UI } from '@/lib/i18n/content/ui-english';
 import { localizeHref } from '@/lib/i18n/paths';
 import type { ToolLayoutCopy } from '@/lib/i18n/content/tools-english';
 
@@ -47,7 +43,6 @@ type Props = {
   chrome?: ToolChrome;
   layoutCopy?: ToolLayoutCopy;
   relatedTools?: ToolDefinition[];
-  quickAnswerHeading?: string;
   homeLabel?: string;
   toolsLabel?: string;
   toolsHref?: string;
@@ -60,7 +55,6 @@ export function IllustratedToolPage({
   chrome = ENGLISH_TOOL_CHROME,
   layoutCopy,
   relatedTools,
-  quickAnswerHeading = ENGLISH_UI.quickAnswer.heading,
   homeLabel = 'Home',
   toolsLabel = 'Tools',
   toolsHref,
@@ -94,16 +88,6 @@ export function IllustratedToolPage({
   return (
     <SiteV2Shell>
       <IllustratedToolHero tool={tool} copy={copy} crumbs={crumbs} tabs={tabs} chrome={chrome} />
-
-      <section className="tool-qa">
-        <div className="wrap">
-          <QuickAnswer
-            heading={quickAnswerHeading}
-            text={loadQuickAnswer(locale, tool.slug as QuickAnswerPageId)}
-            className="tool-qa-box"
-          />
-        </div>
-      </section>
 
       {editorialHeading || copy.intro.length ? (
         <section className="sec">

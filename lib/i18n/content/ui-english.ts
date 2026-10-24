@@ -65,6 +65,11 @@ export const ENGLISH_UI = {
     madeWithCare: 'Made with care for your growth',
     brandSummary:
       'Reliable, transparent social media growth services with education and clarity first.',
+    tagline: 'Instagram, TikTok and Facebook growth. All in one place.',
+    helpSupport: 'Help & support',
+    whatsapp247: 'WhatsApp 24/7',
+    yourOrder: 'Your order',
+    payCard: 'Card',
   },
   breadcrumbs: {
     home: 'Home',

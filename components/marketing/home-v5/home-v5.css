@@ -12,6 +12,7 @@
   --head-h:88px;
   font-family:var(--font-nl-body),ui-sans-serif,system-ui,sans-serif; color:var(--ink); background:var(--page);
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 .home-v5,.home-v5 *{box-sizing:border-box}
 .home-v5 a{color:inherit;text-decoration:none}
@@ -46,7 +47,7 @@
 .btn-tile .ic{width:20px;height:20px}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;overflow:hidden;background:var(--soft);padding:72px 0 64px}
+.hero{position:relative;overflow-x:hidden;background:var(--soft);padding:72px 0 64px}
 .hero-glow{position:absolute;inset:-20% -10% auto;height:120%;background:radial-gradient(40% 50% at 15% 20%,rgba(249,115,22,.10),transparent 70%),radial-gradient(35% 45% at 88% 15%,rgba(236,72,153,.10),transparent 70%);pointer-events:none}
 .hero .wrap{position:relative}
 .h1-tile{display:inline-grid;place-items:center;width:.86em;height:.86em;border-radius:.24em;vertical-align:-.08em;margin-right:.12em;color:#fff;-webkit-text-fill-color:#fff}
@@ -73,7 +74,7 @@
 .trust li{display:flex;align-items:center;gap:8px}.trust .ic{width:18px;height:18px;color:var(--orange);stroke-width:3}
 
 /* ---------- MARQUEE ---------- */
-.marquee{border-block:1px solid var(--line);background:#fff;overflow:hidden;padding:22px 0}
+.marquee{border-block:1px solid var(--line);background:#fff;overflow-x:hidden;padding:22px 0}
 .mq-track{display:flex;width:max-content;animation:nl-marquee 40s linear infinite}
 .marquee:hover .mq-track{animation-play-state:paused}
 .mq-list{display:flex;gap:44px;list-style:none;margin:0;padding:0 22px}
