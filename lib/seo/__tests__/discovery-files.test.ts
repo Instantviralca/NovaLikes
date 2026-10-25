@@ -193,7 +193,8 @@ describe('HTML sitemap public directory', () => {
       if (path === '/sitemap') continue;
       expect(hrefs).toContain(path);
     }
-    expect(hrefs).toEqual(expect.arrayContaining(['/ca', '/au', '/us', '/uk']));
+    expect(hrefs).toEqual(expect.arrayContaining(['/ca', '/au', '/uk']));
+    expect(hrefs).not.toContain('/us');
   });
 
   it('does not include private or unsupported-platform links', () => {

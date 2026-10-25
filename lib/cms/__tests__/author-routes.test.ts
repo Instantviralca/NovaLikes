@@ -60,15 +60,16 @@ describe('author CMS vs public /authors boundary', () => {
 });
 
 describe('market homepage crawlable discovery', () => {
-  it('exposes exactly the four market homes from the HTML sitemap directory', () => {
+  it('exposes uk/ca/au market homes from the HTML sitemap directory (no /us)', () => {
     const sections = getPublicDirectorySections();
     const markets = sections.find((section) => section.id === 'markets');
     expect(markets).toBeTruthy();
-    expect(markets?.links.map((link) => link.href)).toEqual(['/ca', '/au', '/us', '/uk']);
+    expect(markets?.links.map((link) => link.href)).toEqual(['/uk', '/ca', '/au']);
     const hrefs = getPublicDirectoryHrefs();
-    for (const market of MARKETS) {
-      expect(hrefs).toContain(`/${market}`);
-    }
+    expect(hrefs).toContain('/uk');
+    expect(hrefs).toContain('/ca');
+    expect(hrefs).toContain('/au');
+    expect(hrefs).not.toContain('/us');
   });
 
   it('keeps market homepage → market service internal paths intact', () => {

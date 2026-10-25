@@ -5,7 +5,7 @@
 
 import { learnArticlePath, routes } from '@/config/routes';
 import { getIndexableArticles } from '@/lib/learn/article-seo';
-import { MARKETS, MARKET_NATIVE_NAMES } from '@/lib/market/config';
+import { MARKET_NATIVE_NAMES, SWITCHER_MARKETS } from '@/lib/market/config';
 
 export type PublicDirectoryLink = {
   href: string;
@@ -46,8 +46,8 @@ const FACEBOOK_SERVICES: readonly PublicDirectoryLink[] = [
   { href: '/buy-facebook-post-likes', label: 'Buy Facebook Post Likes' },
 ];
 
-/** Crawlable entry points to geo market homepages (not the language switcher dropdown). */
-const MARKET_HOMES: readonly PublicDirectoryLink[] = MARKETS.map((market) => ({
+/** Crawlable entry points to geo market homepages (uk/ca/au — `/us` redirects to root). */
+const MARKET_HOMES: readonly PublicDirectoryLink[] = SWITCHER_MARKETS.map((market) => ({
   href: `/${market}`,
   label: MARKET_NATIVE_NAMES[market],
 }));

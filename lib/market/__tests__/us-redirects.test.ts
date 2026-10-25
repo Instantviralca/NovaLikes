@@ -39,4 +39,21 @@ describe('US market redirects to root English', () => {
       expect(bySource.get(`/us/${slug}`)).toBe(`/${slug}`);
     }
   });
+
+  it('covers all 11 /us URLs with 301/308-equivalent permanent Location targets', () => {
+    const expected: Array<{ path: string; location: string }> = [
+      { path: '/us', location: '/' },
+      ...CORE_SERVICE_SLUGS.map((slug) => ({
+        path: `/us/${slug}`,
+        location: `/${slug}`,
+      })),
+    ];
+    expect(expected).toHaveLength(11);
+    for (const { path, location } of expected) {
+      expect(usMarketRedirectDestination(path)).toBe(location);
+      const permanent = getUsMarketPermanentRedirects().find((r) => r.source === path);
+      expect(permanent?.destination).toBe(location);
+      expect(permanent?.permanent).toBe(true);
+    }
+  });
 });

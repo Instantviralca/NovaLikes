@@ -19,7 +19,7 @@ export function buildMarketMetadata(options: {
 }): Metadata {
   const { market, pathname, title, description } = options;
   /**
-   * Only the primary market (UK) self-canonicalizes. Other markets (ca/au/us)
+   * Primary markets (uk/ca/au) self-canonicalize. `/us` redirects to root;
    * still render at their own URL but canonicalize to the root English page —
    * one indexed market avoids duplicate-content signals on a new domain.
    */
