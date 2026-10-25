@@ -1,6 +1,7 @@
 import { BadgeCheck, Building2, MessageSquare, ShieldCheck, type LucideIcon } from 'lucide-react';
 
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 
 const WHY_ICONS: Record<string, LucideIcon> = {
@@ -8,8 +9,8 @@ const WHY_ICONS: Record<string, LucideIcon> = {
   building: Building2,
 };
 
-export function HomeV5Why() {
-  const { why } = HOME_V5;
+export function HomeV5Why({ content = HOME_V5 }: { content?: HomeV5Content }) {
+  const { why } = content;
   return (
     <section id={why.id} className="why">
       <div className="wrap why-grid">

@@ -44,6 +44,26 @@ export async function ServicePageView({
     }
   }
 
+  // UK / CA / AU: market-specific v2. `/us` never renders (middleware 308 → root).
+  if (market) {
+    const { getServiceV2MarketContent } = await import('@/data/content/service-v2');
+    const v2Market = getServiceV2MarketContent(market, service.slug);
+    if (v2Market) {
+      const { ServiceV2View } = await import(
+        '@/components/marketing/service-v2/service-v2-view'
+      );
+      return (
+        <ServiceV2View
+          service={service}
+          content={v2Market}
+          breadcrumbs={breadcrumbs}
+          locale={locale}
+          market={market}
+        />
+      );
+    }
+  }
+
   if (service.slug === 'buy-instagram-followers') {
     const { InstagramFollowersAuthorityView } =
       await import('@/components/sections/instagram-followers-authority-view');

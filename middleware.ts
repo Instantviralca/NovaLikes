@@ -30,6 +30,7 @@ import {
   parseMarketPath,
   publicPathsEqual as marketPathsEqual,
 } from '@/lib/market/paths';
+import { usMarketRedirectDestination } from '@/lib/market/us-redirects';
 import {
   I18N_HEADER,
   I18N_PATH_HEADER,
@@ -82,6 +83,14 @@ export async function middleware(request: NextRequest) {
   if (localeCaseTarget) {
     const url = request.nextUrl.clone();
     url.pathname = localeCaseTarget;
+    return NextResponse.redirect(url, 308);
+  }
+
+  // /us and /usa|/united-states → root English (301/308), before market rewrite or alias 404.
+  const usRedirect = usMarketRedirectDestination(pathname);
+  if (usRedirect !== null) {
+    const url = request.nextUrl.clone();
+    url.pathname = usRedirect;
     return NextResponse.redirect(url, 308);
   }
 

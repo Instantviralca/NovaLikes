@@ -261,6 +261,38 @@ export const loadMarketServiceFaqItems = cache(
   },
 );
 
+/**
+ * Market FAQ items whose id starts with `${idPrefix}-`, in file order.
+ * Trailing `-` matters: `uk-fb-p` must not match `uk-fb-post`.
+ */
+export const loadMarketServiceFaqItemsByPrefix = cache(
+  (market: Market, idPrefix: string): MarketServiceFaqItem[] => {
+    const overlayItems = readMarketOverlay(market, 'service-faqs.json');
+    if (!Array.isArray(overlayItems)) {
+      throw new Error(`service-faqs.json for ${market} must be an array`);
+    }
+    const prefix = idPrefix.endsWith('-') ? idPrefix : `${idPrefix}-`;
+    const items: MarketServiceFaqItem[] = [];
+    const seenIds = new Set<string>();
+    for (const raw of overlayItems) {
+      if (!raw || typeof raw !== 'object' || !('id' in raw)) continue;
+      const item = raw as { id: string; question?: string; answer?: string };
+      if (typeof item.id !== 'string' || !item.id.startsWith(prefix)) continue;
+      if (!item.question?.trim() || !item.answer?.trim()) continue;
+      // CA service-faqs.json duplicates ca-ig-f-* thrice — keep first occurrence only.
+      if (seenIds.has(item.id)) continue;
+      seenIds.add(item.id);
+      items.push({
+        id: item.id,
+        question: item.question,
+        answer: item.answer,
+        order: items.length,
+      });
+    }
+    return localizeMarketHrefsDeep(items, market);
+  },
+);
+
 export function getEnglishMetadataForMarketComparison(): ReturnType<typeof getEnglishMetadataSource> {
   return getEnglishMetadataSource();
 }

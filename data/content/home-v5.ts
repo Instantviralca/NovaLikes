@@ -1,6 +1,6 @@
 /**
  * Root English homepage v5 — Instagram + TikTok (+ Facebook tab), October 2026.
- * Replaces HOME_V4 on "/" only. Locale (/de/ …) and market (/uk/ …) homepages keep homepageHubLegacy.
+ * Replaces HOME_V4 on "/" only. Locale (/de/ …) and non-UK markets keep homepageHubLegacy; `/uk` uses HOME_V5_UK.
  * All copy is final. Do not edit wording in code.
  *
  * Layout and motion: port reference/index.html + reference/home-v5.css + reference/home-v5.js exactly.

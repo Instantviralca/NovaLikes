@@ -9,18 +9,27 @@ import {
 } from '@/components/marketing/home-v5/icons';
 import { PlatformTabPanel, PlatformTabs } from '@/components/marketing/home-v5/platform-tabs';
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
+import type { Market } from '@/lib/market/config';
+import { resolvePublicHref } from '@/lib/market/paths';
 import { formatCardPrice } from '@/lib/marketing/home-v5/from-price';
 
 const PLATFORM_ORDER: PlatformKey[] = ['instagram', 'tiktok', 'facebook'];
 
 type HeroCard = { slug: string; title: string; line: string; icon: string };
 
-export function HomeV5Hero() {
-  const { hero } = HOME_V5;
+export function HomeV5Hero({
+  content = HOME_V5,
+  market = null,
+}: {
+  content?: HomeV5Content;
+  market?: Market | null;
+}) {
+  const { hero } = content;
   const [igName, ttName] = hero.title.highlight.split(' & ');
 
   const tabMeta = PLATFORM_ORDER.map((key) => {
-    const tab = HOME_V5.hero.tabs[key];
+    const tab = content.hero.tabs[key];
     const Icon = PLATFORM_ICONS[key];
     const cards: readonly HeroCard[] = tab.cards;
     return {
@@ -68,7 +77,11 @@ export function HomeV5Hero() {
                 const CardIcon = cardIcon(card.icon);
                 const price = formatCardPrice(card.slug);
                 return (
-                  <Link key={card.slug} className="svc-card" href={`/${card.slug}`}>
+                  <Link
+                    key={card.slug}
+                    className="svc-card"
+                    href={resolvePublicHref(`/${card.slug}`, { market })}
+                  >
                     <span className="svc-ic">
                       <CardIcon className="ic" />
                     </span>

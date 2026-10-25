@@ -1,6 +1,7 @@
 import { Clock, MessageCircle, RefreshCw, ShieldCheck, type LucideIcon } from 'lucide-react';
 
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { PromisesTabs, type PromiseItem } from '@/components/marketing/home-v5/promises-tabs';
 import { PenUnderline } from '@/components/marketing/home-v5/icons';
 
@@ -11,8 +12,8 @@ const PROMISE_ICONS: Record<string, LucideIcon> = {
   'message-circle': MessageCircle,
 };
 
-export function HomeV5Promises() {
-  const { promises } = HOME_V5;
+export function HomeV5Promises({ content = HOME_V5 }: { content?: HomeV5Content }) {
+  const { promises } = content;
 
   const items: PromiseItem[] = promises.items.map((item) => {
     const Icon = PROMISE_ICONS[item.icon] ?? ShieldCheck;

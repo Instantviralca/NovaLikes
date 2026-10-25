@@ -7,9 +7,9 @@ import { MarketFlag } from '@/components/i18n/market-flag';
 import { useActiveMarket } from '@/components/i18n/locale-link';
 import {
   GLOBAL_ENGLISH_LABEL,
-  MARKETS,
   MARKET_NATIVE_NAMES,
   MARKET_SHORT_LABELS,
+  SWITCHER_MARKETS,
   type Market,
 } from '@/lib/market/config';
 import { marketSwitcherHref } from '@/lib/market/paths';
@@ -21,7 +21,7 @@ export function MarketMenuList({ onNavigate }: { onNavigate?: () => void }) {
 
   const items: Array<{ id: Market | 'global'; label: string; short: string }> = [
     { id: 'global', label: GLOBAL_ENGLISH_LABEL, short: 'EN' },
-    ...MARKETS.map((market) => ({
+    ...SWITCHER_MARKETS.map((market) => ({
       id: market,
       label: MARKET_NATIVE_NAMES[market],
       short: MARKET_SHORT_LABELS[market],

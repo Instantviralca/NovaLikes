@@ -66,7 +66,7 @@ describe('Sitemap index architecture', () => {
     expect(findDuplicateSitemapUrls(entries)).toHaveLength(0);
   });
 
-  it('places exactly 11 primary-market URLs in markets.xml and nowhere else', () => {
+  it('places exactly 33 primary-market URLs (uk/ca/au × 11) in markets.xml and nowhere else', () => {
     expect(buckets.markets).toHaveLength(PRIMARY_MARKETS.length * (1 + CORE_SERVICE_SLUGS.length));
     for (const market of PRIMARY_MARKETS) {
       expect(
@@ -80,8 +80,9 @@ describe('Sitemap index architecture', () => {
         ).toBe(true);
       }
     }
+    // /us stays out of the sitemap (canonicalizes to root English).
     expect(
-      buckets.markets.filter((entry) => /novalikes\.com\/(ca|au|us)(\/|$)/.test(entry.url)),
+      buckets.markets.filter((entry) => /novalikes\.com\/us(\/|$)/.test(entry.url)),
     ).toHaveLength(0);
     expect(
       [...buckets.core, ...buckets.services, ...buckets.locales, ...buckets.tools, ...buckets.learn, ...buckets.taxonomy].filter(
@@ -158,8 +159,12 @@ describe('Sitemap index architecture', () => {
     expect(marketsXml).toContain('<urlset');
     expect(marketsXml).toContain('xmlns:xhtml="http://www.w3.org/1999/xhtml"');
     expect(marketsXml).toContain('hreflang="en-GB"');
+    expect(marketsXml).toContain('hreflang="en-CA"');
+    expect(marketsXml).toContain('hreflang="en-AU"');
     expect(marketsXml).toContain('https://novalikes.com/uk/buy-instagram-followers');
-    expect(marketsXml).not.toContain('https://novalikes.com/ca/buy-instagram-followers');
+    expect(marketsXml).toContain('https://novalikes.com/ca/buy-instagram-followers');
+    expect(marketsXml).toContain('https://novalikes.com/au/buy-instagram-followers');
+    expect(marketsXml).not.toContain('https://novalikes.com/us/buy-instagram-followers');
   });
 
   it('keeps canonical and orphan guarantees on the full inventory', () => {

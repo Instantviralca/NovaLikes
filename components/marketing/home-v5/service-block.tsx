@@ -4,12 +4,15 @@ import { ArrowRight, Eye, Heart, MessageCircle, Plus, UserPlus, type LucideIcon 
 import type { CSSProperties } from 'react';
 
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { ServiceStack } from '@/components/marketing/home-v5/service-stack';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 import { PLATFORM_ICONS, bulletIcon } from '@/components/marketing/home-v5/icons';
+import type { Market } from '@/lib/market/config';
+import { resolvePublicHref } from '@/lib/market/paths';
 import { applyFromPrice, formatCardPrice } from '@/lib/marketing/home-v5/from-price';
 
-type Service = (typeof HOME_V5.services)[number];
+type Service = HomeV5Content['services'][number];
 
 type Visual = { src: string; alt: string; width: number; height: number };
 
@@ -70,9 +73,18 @@ const METRIC_ICONS: Record<string, LucideIcon> = {
   comments: MessageCircle,
 };
 
-export function ServiceBlock({ service, index }: { service: Service; index: number }) {
+export function ServiceBlock({
+  service,
+  index,
+  platformLabel,
+  href,
+}: {
+  service: Service;
+  index: number;
+  platformLabel: string;
+  href: string;
+}) {
   const platform = service.platform as 'instagram' | 'tiktok';
-  const platformLabel = HOME_V5.hero.tabs[platform].label;
   const PlatformIcon = PLATFORM_ICONS[platform];
   const MetricIcon = METRIC_ICONS[service.metric] ?? UserPlus;
   const visual = SERVICE_VISUALS[service.slug];
@@ -108,7 +120,7 @@ export function ServiceBlock({ service, index }: { service: Service; index: numb
               );
             })}
           </ul>
-          <Link className="btn" href={`/${service.slug}`}>
+          <Link className="btn" href={href}>
             <span>{service.cta}</span>
             <span className="btn-tile">
               <ArrowRight className="ic" aria-hidden="true" />
@@ -154,20 +166,34 @@ export function ServiceBlock({ service, index }: { service: Service; index: numb
 }
 
 /** The seven stacked service blocks (`section.services > ol.stack`). */
-export function HomeV5Services() {
+export function HomeV5Services({
+  content = HOME_V5,
+  market = null,
+}: {
+  content?: HomeV5Content;
+  market?: Market | null;
+}) {
   return (
     <section className="services" aria-label="Services">
       <div className="wrap">
         <ServiceStack>
-          {HOME_V5.services.map((service, index) => (
-            <li
-              key={service.slug}
-              className="stack-item"
-              style={{ '--i': index } as CSSProperties}
-            >
-              <ServiceBlock service={service} index={index} />
-            </li>
-          ))}
+          {content.services.map((service, index) => {
+            const platform = service.platform as 'instagram' | 'tiktok';
+            return (
+              <li
+                key={service.slug}
+                className="stack-item"
+                style={{ '--i': index } as CSSProperties}
+              >
+                <ServiceBlock
+                  service={service}
+                  index={index}
+                  platformLabel={content.hero.tabs[platform].label}
+                  href={resolvePublicHref(`/${service.slug}`, { market })}
+                />
+              </li>
+            );
+          })}
         </ServiceStack>
       </div>
     </section>

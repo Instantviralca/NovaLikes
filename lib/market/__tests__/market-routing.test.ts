@@ -14,10 +14,6 @@ describe('Geo market routing', () => {
     expect(localizeMarketHref('/buy-instagram-followers', 'au')).toBe(
       '/au/buy-instagram-followers',
     );
-    expect(localizeMarketHref('/', 'us')).toBe('/us/');
-    expect(localizeMarketHref('/buy-instagram-followers', 'us')).toBe(
-      '/us/buy-instagram-followers',
-    );
     expect(localizeMarketHref('/', 'uk')).toBe('/uk/');
     expect(localizeMarketHref('/buy-instagram-followers', 'uk')).toBe(
       '/uk/buy-instagram-followers',
@@ -35,11 +31,11 @@ describe('Geo market routing', () => {
     expect(marketSwitcherHref('/about', 'uk')).toBe('/about');
   });
 
-  it('includes only primary-market en-GB in hreflang for market-eligible paths', () => {
+  it('includes primary-market en-GB/en-CA/en-AU (not en-US) in hreflang for market-eligible paths', () => {
     const serviceMap = hreflangMapWithMarket('/buy-instagram-followers');
     expect(serviceMap['en-GB']).toBe('/uk/buy-instagram-followers');
-    expect(serviceMap['en-CA']).toBeUndefined();
-    expect(serviceMap['en-AU']).toBeUndefined();
+    expect(serviceMap['en-CA']).toBe('/ca/buy-instagram-followers');
+    expect(serviceMap['en-AU']).toBe('/au/buy-instagram-followers');
     expect(serviceMap['en-US']).toBeUndefined();
     expect(serviceMap.en).toBe('/buy-instagram-followers');
     expect(serviceMap['x-default']).toBe('/buy-instagram-followers');

@@ -111,9 +111,8 @@ export function resolvePublicHref(
 
 /**
  * Full hreflang map including en-GB (UK) for market-eligible core paths.
- * Only PRIMARY_MARKETS get an hreflang alternate — other markets (ca/au/us)
- * still render their own pages but are not advertised as separate language
- * variants, so they don't appear here.
+ * Only PRIMARY_MARKETS (uk/ca/au) get an hreflang alternate — `/us` redirects
+ * to root English and is not advertised as a language variant.
  */
 export function hreflangMapWithMarket(pathname: string): Record<string, string> {
   const bare = stripMarketPrefix(pathname);

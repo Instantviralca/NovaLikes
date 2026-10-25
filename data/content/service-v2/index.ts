@@ -27,3 +27,8 @@ export const SERVICE_V2_CONTENT: Record<string, ServiceV2Content> = {
 export function getServiceV2Content(slug: string): ServiceV2Content | undefined {
   return SERVICE_V2_CONTENT[slug];
 }
+
+export { SERVICE_V2_UK_CONTENT } from './markets/uk';
+export { SERVICE_V2_CA_CONTENT } from './markets/ca';
+export { SERVICE_V2_AU_CONTENT } from './markets/au';
+export { getServiceV2MarketContent } from './markets';

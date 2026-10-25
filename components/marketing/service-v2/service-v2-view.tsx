@@ -25,6 +25,9 @@ import { getServiceContentBySlug } from '@/data/content/services';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { loadServiceFaqItems } from '@/lib/i18n/content/load';
 import { buildBreadcrumb } from '@/lib/linking';
+import type { Market } from '@/lib/market/config';
+import { loadMarketServiceFaqItemsByPrefix } from '@/lib/market/content/load';
+import { resolvePublicHref } from '@/lib/market/paths';
 import { applyFromPrice } from '@/lib/marketing/home-v5/from-price';
 import {
   getServiceFromPriceLabel,
@@ -96,10 +99,18 @@ type ServiceV2ViewProps = {
   content: ServiceV2Content;
   breadcrumbs?: BreadcrumbItem[];
   locale?: Locale;
+  market?: Market | null;
 };
 
 /** Render copy that may contain `[label](/href)` as Next.js `<Link className="ilink">`. */
-function InlineRichText({ text }: { text: string }) {
+function InlineRichText({
+  text,
+  hrefFor,
+}: {
+  text: string;
+  /** Optional rewrite (e.g. market-prefix `/buy-*` links). */
+  hrefFor?: (href: string) => string;
+}) {
   const nodes: ReactNode[] = [];
   let last = 0;
   let match: RegExpExecArray | null;
@@ -108,8 +119,10 @@ function InlineRichText({ text }: { text: string }) {
     if (match.index > last) {
       nodes.push(text.slice(last, match.index));
     }
+    const rawHref = match[2]!;
+    const href = hrefFor ? hrefFor(rawHref) : rawHref;
     nodes.push(
-      <Link key={`${match[2]}-${match.index}`} className="ilink" href={match[2]!}>
+      <Link key={`${href}-${match.index}`} className="ilink" href={href}>
         {match[1]}
       </Link>,
     );
@@ -313,21 +326,37 @@ function perUnitMinor(pkg: PricingPackage, perUnit: number): number {
 }
 
 /**
- * Shared English-default service page (Buzzoid layout) for all 10 SERVICE_V2_CONTENT slugs.
- * Locale and market pages must not render this view.
+ * Shared Buzzoid service page for English defaults and market v2 pages (UK Phase 2).
+ * Locale pages and non-v2 markets keep their authority views.
  */
 export function ServiceV2View({
   service,
   content: copy,
   breadcrumbs: breadcrumbOverride,
   locale = DEFAULT_LOCALE,
+  market = null,
 }: ServiceV2ViewProps) {
   preloadHomeDisplayFont();
   const fontClassName = `${nlDisplay.variable} ${nlBody.variable}`;
 
+  const serviceHref = (slug: string) =>
+    resolvePublicHref(`/${slug}`, { locale, market });
+
+  /** Market pages: prefix bare `/buy-*` inline links; leave /learn, legal, etc. */
+  const inlineHrefFor = (href: string) => {
+    if (market && /^\/buy-[a-z0-9-]+\/?$/i.test(href)) {
+      return resolvePublicHref(href, { locale, market });
+    }
+    return href;
+  };
+
   const serviceContent = getServiceContentBySlug(service.slug);
   const faqIds = serviceContent?.faq.faqIds ?? [];
-  const faqItems = loadServiceFaqItems(locale, faqIds);
+  const marketFaq = copy.faq.market;
+  const faqItems =
+    market && marketFaq
+      ? loadMarketServiceFaqItemsByPrefix(marketFaq.code, marketFaq.idPrefix)
+      : loadServiceFaqItems(locale, faqIds);
 
   const breadcrumbs = breadcrumbOverride ?? buildBreadcrumb(service.slug);
   const fromPrice = getServiceFromPriceLabel(service.slug);
@@ -533,7 +562,7 @@ export function ServiceV2View({
             <h2 className="h2 big">{copy.promises.title}</h2>
             <div>
               <p className="body">
-                <InlineRichText text={copy.promises.intro} />
+                <InlineRichText hrefFor={inlineHrefFor} text={copy.promises.intro} />
               </p>
               <Link className="tlink" href={copy.promises.link.href}>
                 {copy.promises.link.label} <SvcV1Icon name="arrow-right" />
@@ -616,7 +645,7 @@ export function ServiceV2View({
           <div>
             <SplitTitle title={copy.whyBuy.title} className="h2 mid" pen />
             <p className="body ink">
-              <InlineRichText text={copy.whyBuy.intro} />
+              <InlineRichText hrefFor={inlineHrefFor} text={copy.whyBuy.intro} />
             </p>
             <ol className="nlist">
               {copy.whyBuy.items.map((item, index) => (
@@ -736,7 +765,7 @@ export function ServiceV2View({
         <div className="wrap">
           <SplitTitle title={copy.vs.title} className="h2 mid" pen />
           <p className="body ink narrow">
-            <InlineRichText text={copy.vs.intro} />
+            <InlineRichText hrefFor={inlineHrefFor} text={copy.vs.intro} />
           </p>
           <div className="vs-card rv-up">
             <table className="vtable">
@@ -762,7 +791,7 @@ export function ServiceV2View({
                             <em>{copy.vs.currentLabel}</em>
                           </span>
                         ) : (
-                          <Link href={`/${row.slug}`}>{row.label}</Link>
+                          <Link href={serviceHref(row.slug)}>{row.label}</Link>
                         )}
                       </th>
                       <td>{row.changes}</td>
@@ -813,7 +842,7 @@ export function ServiceV2View({
                 </div>
                 <h3>{card.title}</h3>
                 <p>
-                  <InlineRichText text={card.body} />
+                  <InlineRichText hrefFor={inlineHrefFor} text={card.body} />
                 </p>
               </article>
             ))}
@@ -834,7 +863,7 @@ export function ServiceV2View({
                 <div>
                   <h3>{item.title}</h3>
                   <p>
-                    <InlineRichText text={item.body} />
+                    <InlineRichText hrefFor={inlineHrefFor} text={item.body} />
                   </p>
                 </div>
               </li>
@@ -869,7 +898,7 @@ export function ServiceV2View({
                   </span>
                 </summary>
                 <p>
-                  <InlineRichText text={item.answer} />
+                  <InlineRichText hrefFor={inlineHrefFor} text={item.answer} />
                 </p>
               </details>
             ))}
@@ -893,7 +922,7 @@ export function ServiceV2View({
             {copy.more.services.map((svc) => {
               const priceLine = applyFromPrice(copy.more.cardPrice, svc.slug);
               return (
-                <Link key={svc.slug} className="mcard rv-up" href={`/${svc.slug}`}>
+                <Link key={svc.slug} className="mcard rv-up" href={serviceHref(svc.slug)}>
                   <div className="mc-vis">
                     <Image
                       src={svc.image}

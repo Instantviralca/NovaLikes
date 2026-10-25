@@ -1,6 +1,7 @@
 import { Heart, Star, UserPlus } from 'lucide-react';
 
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 
 /** Decorative profile card visual (matches the prototype). */
@@ -84,10 +85,10 @@ function GrowthVisual() {
   );
 }
 
-export function HomeV5Stories() {
+export function HomeV5Stories({ content = HOME_V5 }: { content?: HomeV5Content }) {
   return (
     <>
-      {HOME_V5.stories.map((story, index) => {
+      {content.stories.map((story, index) => {
         const reversed = index % 2 === 1;
         return (
           <section key={story.id} id={story.id} className={reversed ? 'story rev' : 'story'}>

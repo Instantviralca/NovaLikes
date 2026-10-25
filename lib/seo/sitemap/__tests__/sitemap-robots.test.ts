@@ -108,8 +108,8 @@ describe('Sitemap & Robots Finalization', () => {
     expect(findMissingSitemapEntries(entries)).toHaveLength(0);
     const indexable = getIndexableRoutes();
     expect(indexable.length).toBeGreaterThanOrEqual(SITEMAP_PRODUCTION_ROUTES.length);
-    // Market entries: only PRIMARY_MARKETS (UK) are listed — 1 market x 11 core paths.
-    expect(entries.length).toBe(indexable.length + 72 + 54 + 18 + 30 + 11);
+    // Market entries: PRIMARY_MARKETS (uk/ca/au) × 11 core paths = 33.
+    expect(entries.length).toBe(indexable.length + 72 + 54 + 18 + 30 + 33);
     // Truly retired legacy Learn slugs must not reappear (category hubs may still exist).
     // how-to-grow-instagram-followers-organically is intentionally published again.
     for (const route of [

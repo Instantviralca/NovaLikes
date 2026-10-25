@@ -26,12 +26,19 @@ vi.mock('react-dom', async () => {
 });
 
 import { ServiceV2View } from '@/components/marketing/service-v2/service-v2-view';
-import { SERVICE_V2_CONTENT } from '@/data/content/service-v2';
+import {
+  SERVICE_V2_AU_CONTENT,
+  SERVICE_V2_CA_CONTENT,
+  SERVICE_V2_CONTENT,
+  SERVICE_V2_UK_CONTENT,
+} from '@/data/content/service-v2';
 import type { ServiceV2Content } from '@/data/content/service-v2/types';
 import { getServiceContentBySlug } from '@/data/content/services';
 import { getServiceBySlug } from '@/data/services';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
 import { getBadgeLabel } from '@/data/pricing/badges';
+import type { Market } from '@/lib/market/config';
+import { loadMarketServiceFaqItemsByPrefix } from '@/lib/market/content/load';
 import { formatQuantityShort, getServiceFromPriceLabel } from '@/lib/marketing/service-hero';
 import { formatMoney } from '@/lib/pricing/format';
 
@@ -228,3 +235,233 @@ describe('ServiceV2View markup for all 10 EN services', () => {
     });
   }
 });
+
+describe('SERVICE_V2_UK_CONTENT copy constraints', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_UK_CONTENT)) {
+    it(`${slug} has no banned marketing words in rendered copy`, () => {
+      const { keywords: _keywords, ...metaRest } = copy.meta;
+      assertNoBannedWords(JSON.stringify({ ...copy, meta: metaRest }));
+    });
+  }
+});
+
+describe('ServiceV2View markup for all 10 UK services', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_UK_CONTENT)) {
+    describe(slug, () => {
+      const service = getServiceBySlug(slug)!;
+      const html = renderToStaticMarkup(
+        createElement(ServiceV2View, { service, content: copy, market: 'uk' }),
+      );
+      const packages = getActivePackagesByServiceSlug(slug);
+      const marketFaq = copy.faq.market!;
+      const marketFaqCount = loadMarketServiceFaqItemsByPrefix(
+        marketFaq.code,
+        marketFaq.idPrefix,
+      ).length;
+      const expectedFaqCount = marketFaqCount + copy.faq.extra.length;
+
+      it('declares faq.market for UK prefix loading', () => {
+        expect(copy.faq.market).toEqual({
+          code: marketFaq.code,
+          idPrefix: marketFaq.idPrefix,
+        });
+        expect(marketFaqCount).toBeGreaterThan(0);
+      });
+
+      it('loads the service', () => {
+        expect(service.slug).toBe(slug);
+      });
+
+      it('renders exactly one H1', () => {
+        expect(html.match(/<h1[\s>]/gi) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.hero.title.highlight);
+      });
+
+      it('renders 14 H2s in content order', () => {
+        expect(h2Texts(html)).toEqual(expectedH2s(copy));
+      });
+
+      it('has no raw placeholders or unparsed markdown links', () => {
+        const withoutClasses = html.replace(/\sclass="[^"]*"/g, '');
+        expect(withoutClasses).not.toContain('{');
+        expect(withoutClasses).not.toContain('[');
+        expect(withoutClasses).not.toContain('](');
+      });
+
+      it('renders package tiles from the registry', () => {
+        expect(html.match(/class="pk-tile"/g) ?? []).toHaveLength(packages.length);
+        for (const pkg of packages) {
+          expect(html).toContain(formatQuantityShort(pkg.quantity));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+          if (pkg.badge) {
+            expect(html).toContain(getBadgeLabel(pkg.badge));
+          }
+        }
+        if (copy.picker.tiers?.length) {
+          for (const tier of copy.picker.tiers) {
+            expect(html).toContain(`data-tier="${tier.label}"`);
+            const byTier = packages.filter((p) => p.commentType === tier.label);
+            expect(byTier.length).toBeGreaterThan(0);
+            for (const pkg of byTier) {
+              expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+            }
+          }
+        }
+      });
+
+      it('renders cost rows from the registry with exactly one best row', () => {
+        expect(html).toContain('class="ctable"');
+        const pers = packages.map((pkg) =>
+          perUnitMinor(pkg.price, pkg.quantity, copy.meta.perUnit),
+        );
+        const best = Math.min(...pers);
+        const bestIndex = pers.indexOf(best);
+        for (const pkg of packages) {
+          expect(html).toContain(costLabel(pkg, copy.meta.unit));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+        }
+        expect(html).toContain(formatMoney(pers[bestIndex]!, packages[bestIndex]!.currency));
+        expect(html.match(/class="best"/g) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.cost.best);
+      });
+
+      it('renders FAQ count = market prefix + extra with answers in HTML', () => {
+        const details = [...html.matchAll(/data-faq-id="([^"]+)"/g)];
+        expect(details).toHaveLength(expectedFaqCount);
+        const answers = [
+          ...html.matchAll(/data-faq-id="[^"]+"[\s\S]*?<p>([\s\S]*?)<\/p>/g),
+        ];
+        expect(answers.length).toBeGreaterThanOrEqual(expectedFaqCount);
+        for (const [, answer] of answers.slice(0, expectedFaqCount)) {
+          expect(answer!.trim().length).toBeGreaterThan(20);
+        }
+      });
+
+      it('prefixes every service buy-* link with /uk/', () => {
+        const serviceHrefs = [...html.matchAll(/href="(\/[^"]*buy-[^"]*)"/g)].map(
+          (m) => m[1]!,
+        );
+        expect(serviceHrefs.length).toBeGreaterThan(0);
+        for (const href of serviceHrefs) {
+          expect(href.startsWith('/uk/')).toBe(true);
+        }
+      });
+
+      it('has no duplicate FAQ questions', () => {
+        const questions = [...html.matchAll(/data-faq-id="[^"]+"[\s\S]*?<h3>([\s\S]*?)<\/h3>/g)].map(
+          (m) => stripHtml(m[1]!),
+        );
+        expect(new Set(questions).size).toBe(questions.length);
+      });
+
+      it('uses svc-v2 root', () => {
+        expect(html).toContain('svc-v2');
+        expect(html).toContain('id="pricing-packages"');
+        expect(html).toContain('id="how-it-works"');
+      });
+    });
+  }
+});
+
+function describeMarketV2Suite(
+  label: string,
+  market: Market,
+  catalog: Record<string, ServiceV2Content>,
+  opts: { useEnglishFaq?: boolean } = {},
+) {
+  describe(`SERVICE_V2_${label}_CONTENT copy constraints`, () => {
+    for (const [slug, copy] of Object.entries(catalog)) {
+      it(`${slug} has no banned marketing words in rendered copy`, () => {
+        const { keywords: _keywords, ...metaRest } = copy.meta;
+        assertNoBannedWords(JSON.stringify({ ...copy, meta: metaRest }));
+      });
+    }
+  });
+
+  describe(`ServiceV2View markup for all 10 ${label} services`, () => {
+    for (const [slug, copy] of Object.entries(catalog)) {
+      describe(slug, () => {
+        const service = getServiceBySlug(slug)!;
+        const html = renderToStaticMarkup(
+          createElement(ServiceV2View, { service, content: copy, market }),
+        );
+        const packages = getActivePackagesByServiceSlug(slug);
+        const prefix = `/${market}/`;
+
+        let expectedFaqCount: number;
+        if (opts.useEnglishFaq) {
+          const serviceContent = getServiceContentBySlug(slug);
+          expectedFaqCount =
+            (serviceContent?.faq.faqIds.length ?? 0) + copy.faq.extra.length;
+        } else {
+          const marketFaq = copy.faq.market!;
+          expectedFaqCount =
+            loadMarketServiceFaqItemsByPrefix(marketFaq.code, marketFaq.idPrefix)
+              .length + copy.faq.extra.length;
+        }
+
+        it('loads the service', () => {
+          expect(service.slug).toBe(slug);
+        });
+
+        it('renders exactly one H1', () => {
+          expect(html.match(/<h1[\s>]/gi) ?? []).toHaveLength(1);
+          expect(html).toContain(copy.hero.title.highlight);
+        });
+
+        it('renders 14 H2s in content order', () => {
+          expect(h2Texts(html)).toEqual(expectedH2s(copy));
+        });
+
+        it('has no raw placeholders or unparsed markdown links', () => {
+          const withoutClasses = html.replace(/\sclass="[^"]*"/g, '');
+          expect(withoutClasses).not.toContain('{');
+          expect(withoutClasses).not.toContain('[');
+          expect(withoutClasses).not.toContain('](');
+        });
+
+        it('renders package tiles from the registry', () => {
+          expect(html.match(/class="pk-tile"/g) ?? []).toHaveLength(packages.length);
+          for (const pkg of packages) {
+            expect(html).toContain(formatQuantityShort(pkg.quantity));
+            expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+          }
+        });
+
+        it('renders cost rows from the registry with exactly one best row', () => {
+          expect(html).toContain('class="ctable"');
+          expect(html.match(/class="best"/g) ?? []).toHaveLength(1);
+          expect(html).toContain(copy.cost.best);
+        });
+
+        it('renders FAQ count with answers and no duplicate questions', () => {
+          const details = [...html.matchAll(/data-faq-id="([^"]+)"/g)];
+          expect(details).toHaveLength(expectedFaqCount);
+          const questions = [
+            ...html.matchAll(/data-faq-id="[^"]+"[\s\S]*?<h3>([\s\S]*?)<\/h3>/g),
+          ].map((m) => stripHtml(m[1]!));
+          expect(new Set(questions).size).toBe(questions.length);
+        });
+
+        it(`prefixes every service buy-* link with ${prefix}`, () => {
+          const serviceHrefs = [...html.matchAll(/href="(\/[^"]*buy-[^"]*)"/g)].map(
+            (m) => m[1]!,
+          );
+          expect(serviceHrefs.length).toBeGreaterThan(0);
+          for (const href of serviceHrefs) {
+            expect(href.startsWith(prefix)).toBe(true);
+          }
+        });
+
+        it('uses svc-v2 root', () => {
+          expect(html).toContain('svc-v2');
+          expect(html).toContain('id="pricing-packages"');
+          expect(html).toContain('id="how-it-works"');
+        });
+      });
+    }
+  });
+}
+
+describeMarketV2Suite('CA', 'ca', SERVICE_V2_CA_CONTENT);
+describeMarketV2Suite('AU', 'au', SERVICE_V2_AU_CONTENT);

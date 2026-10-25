@@ -10,13 +10,14 @@ export type Market = (typeof MARKETS)[number];
 
 /**
  * Markets that get their own canonical URL, hreflang alternate, and sitemap
- * listing. Any other market in MARKETS still renders (so existing links and
- * backlinks keep working) but its pages canonicalize to the root English
- * page and are not linked, indexed as a distinct URL, or listed in the
- * sitemap. New domain / low authority — one indexed English market avoids
- * splitting crawl budget and duplicate-content signals across four clones.
+ * listing. UK, Canada and Australia have unique market content and distinct
+ * search demand. `/us` no longer renders — every `/us` URL 301/308-redirects
+ * to the matching root English page (root already serves US searchers).
  */
-export const PRIMARY_MARKETS: readonly Market[] = ['uk'];
+export const PRIMARY_MARKETS: readonly Market[] = ['uk', 'ca', 'au'];
+
+/** Markets shown in the footer/region switcher (excludes redirected `/us`). */
+export const SWITCHER_MARKETS: readonly Market[] = PRIMARY_MARKETS;
 
 const PRIMARY_MARKET_SET = new Set<string>(PRIMARY_MARKETS);
 

@@ -111,7 +111,9 @@ export type ServiceV2Content = {
     title: string;
     intro: string;
     cta: string;
-    /** EN-only extra questions, rendered after the service's existing faqIds. */
+    /** Market pages only: render the existing market FAQ items whose id starts with `${idPrefix}-` (from content/markets/<code>/service-faqs.json), in file order, before `extra`. */
+    market?: { code: 'uk' | 'us' | 'ca' | 'au'; idPrefix: string };
+    /** Extra questions, rendered after the service's existing faqIds (EN) or the market FAQ items (markets). */
     extra: { id: string; question: string; answer: string }[];
     /** Replacement EN answers for existing faq.ts ids (apply in data/content/faq.ts, EN only). */
     fixExisting?: Record<string, string>;

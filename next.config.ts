@@ -5,6 +5,7 @@
 import type { NextConfig } from 'next';
 
 import { getLegacyLocalizedRedirects } from './lib/i18n/slugs';
+import { getUsMarketPermanentRedirects } from './lib/market/us-redirects';
 import { CONTENT_SECURITY_POLICY_REPORT_ONLY } from './lib/security/csp';
 
 const nextConfig: NextConfig = {
@@ -123,6 +124,7 @@ const nextConfig: NextConfig = {
         destination: '/authors/najaf-khan',
         permanent: true,
       },
+      ...getUsMarketPermanentRedirects(),
       ...getLegacyLocalizedRedirects(),
     ];
   },

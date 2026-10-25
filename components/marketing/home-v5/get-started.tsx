@@ -2,8 +2,11 @@ import Link from 'next/link';
 import { BookOpen, ChevronRight, Wrench } from 'lucide-react';
 
 import { HOME_V5 } from '@/data/content/home-v5';
+import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 import { type PlatformKey } from '@/components/marketing/home-v5/icons';
+import type { Market } from '@/lib/market/config';
+import { resolvePublicHref } from '@/lib/market/paths';
 import {
   calculateAggregateRating,
   getApprovedReviews,
@@ -77,8 +80,14 @@ function StarIcon() {
   );
 }
 
-export function HomeV5GetStarted() {
-  const { getStarted, hero } = HOME_V5;
+export function HomeV5GetStarted({
+  content = HOME_V5,
+  market = null,
+}: {
+  content?: HomeV5Content;
+  market?: Market | null;
+}) {
+  const { getStarted, hero } = content;
 
   return (
     <section id={getStarted.id} className="start">
@@ -116,7 +125,7 @@ export function HomeV5GetStarted() {
                     <Link
                       key={card.slug}
                       className={index === 0 ? 'sg-key primary' : 'sg-key'}
-                      href={`/${card.slug}`}
+                      href={resolvePublicHref(`/${card.slug}`, { market })}
                       data-platform={key}
                       data-service={card.title.toLowerCase().replace(/\s+/g, '-')}
                     >
@@ -135,8 +144,9 @@ export function HomeV5GetStarted() {
           })}
         </nav>
 
+        {/* No rv-up: these sit at the page bottom where view() timelines often stall mid-fade. */}
         <div className="start-extras">
-          <div className="start-card list rv-up">
+          <div className="start-card list">
             <div className="sc-head">
               <span className="sc-ic">
                 <Wrench className="ic" aria-hidden="true" />
@@ -145,7 +155,7 @@ export function HomeV5GetStarted() {
             </div>
             <LinkList links={getStarted.tools.links} />
           </div>
-          <div className="start-card list rv-up">
+          <div className="start-card list">
             <div className="sc-head">
               <span className="sc-ic">
                 <BookOpen className="ic" aria-hidden="true" />
