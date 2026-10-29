@@ -12,6 +12,7 @@ import { getServicePageAnalytics } from '@/lib/analytics';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
 import { formatQuantityShort } from '@/lib/marketing/service-hero';
 import { runWhenIdle } from '@/lib/perf/run-when-idle';
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { findPackage } from '@/lib/pricing';
 import { formatMoney } from '@/lib/pricing/format';
 import type { PricingPackage } from '@/types/pricing';
@@ -24,6 +25,7 @@ type V2PackagePickerProps = {
   packages: PricingCardModel[];
   copy: PickerCopy;
   stickyLabel: string;
+  serviceDisplayName?: string;
 };
 
 function OrderDialogFallback() {
@@ -79,7 +81,10 @@ export function V2PackagePicker({
   packages,
   copy,
   stickyLabel,
+  serviceDisplayName,
 }: V2PackagePickerProps) {
+  const { locale } = useI18nChrome();
+  const usePickerSummaryInDialog = locale === 'de' || locale === 'es';
   const tierDefs = copy.tiers ?? [];
   const hasTiers =
     tierDefs.length > 0 && packages.some((p) => Boolean(p.package.commentType));
@@ -330,6 +335,10 @@ export function V2PackagePicker({
           open={orderOpen}
           onOpenChange={setOrderOpen}
           service={service}
+          serviceDisplayName={serviceDisplayName}
+          pickerSummaryName={
+            usePickerSummaryInDialog && summaryName ? summaryName : undefined
+          }
           selectedPackage={
             selectedPackage ?? findPackage(selectedModel?.package.id ?? '') ?? null
           }

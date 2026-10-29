@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Lock, RefreshCw, ShieldCheck } from 'lucide-react';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { routes } from '@/config/routes';
+import { localizeHref } from '@/lib/i18n/paths';
 import { cn } from '@/lib/utils';
 
 export type PaymentConfidenceProps = {
@@ -21,7 +21,8 @@ export function PaymentConfidence({
   className,
   showRefundLink = true,
 }: PaymentConfidenceProps) {
-  const { ui } = useI18nChrome();
+  const { locale, ui } = useI18nChrome();
+  const refundHref = localizeHref('/refund-policy', locale);
 
   return (
     <ul
@@ -45,7 +46,7 @@ export function PaymentConfidence({
           <span>
             {ui.orderDialog.moneyBackGuarantee} ·{' '}
             <Link
-              href={routes.refundPolicy}
+              href={refundHref}
               className="underline underline-offset-2 hover:text-[var(--text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               {ui.footer.refundPolicy}

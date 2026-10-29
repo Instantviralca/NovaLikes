@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ShoppingBag } from 'lucide-react';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { useCart } from '@/lib/cart';
 import { useCartUi } from '@/lib/cart/cart-ui-context';
 import { cn } from '@/lib/utils';
@@ -11,6 +12,7 @@ import { cn } from '@/lib/utils';
  * Navbar cart — shopping-bag icon in a soft tile (Buzzoid-style).
  */
 export function CartNavButton({ className }: { className?: string }) {
+  const { ui } = useI18nChrome();
   const { totals, isHydrated } = useCart();
   const { openCart } = useCartUi();
   const count = isHydrated ? totals.itemCount : 0;
@@ -35,7 +37,11 @@ export function CartNavButton({ className }: { className?: string }) {
         'relative inline-flex size-10 items-center justify-center rounded-xl border border-[var(--nl-border)] bg-[var(--nl-bg-soft)] text-[var(--nl-ink)] transition-colors hover:bg-[#e9ecf2] hover:text-[var(--nl-ink)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         className,
       )}
-      aria-label={count > 0 ? `Cart, ${count} items` : 'Open cart'}
+      aria-label={
+        count > 0
+          ? ui.headerAria.cartMany.replace('{count}', String(count))
+          : ui.headerAria.openCart
+      }
       data-analytics="nav-cart"
     >
       <ShoppingBag className="size-[1.15rem]" strokeWidth={1.75} aria-hidden="true" />

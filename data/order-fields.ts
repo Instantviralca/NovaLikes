@@ -59,11 +59,17 @@ const urlField = (
   },
 });
 
-const NOTES_LABEL = 'Order notes (optional)';
-const NOTES_PLACEHOLDER = 'Anything we should know about this order?';
-const NOTES_HELP_DEFAULT = 'Want gradual delivery? Tell us the pace you prefer.';
-const NOTES_HELP_COMMENTS =
+export const ORDER_NOTES_LABEL = 'Order notes (optional)';
+export const ORDER_NOTES_PLACEHOLDER = 'Anything we should know about this order?';
+export const ORDER_NOTES_HELP_DEFAULT =
+  'Want gradual delivery? Tell us the pace you prefer.';
+export const ORDER_NOTES_HELP_COMMENTS =
   'Add your own comments, one per line, ask for another language, or ask for gradual delivery. Leave empty and our team writes the comments.';
+
+const NOTES_LABEL = ORDER_NOTES_LABEL;
+const NOTES_PLACEHOLDER = ORDER_NOTES_PLACEHOLDER;
+const NOTES_HELP_DEFAULT = ORDER_NOTES_HELP_DEFAULT;
+const NOTES_HELP_COMMENTS = ORDER_NOTES_HELP_COMMENTS;
 const NOTES_HELP_FB_POST =
   'Likes are the default. Write Love or another reaction here, or ask for gradual delivery.';
 

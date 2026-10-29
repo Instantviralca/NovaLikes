@@ -3,6 +3,7 @@
  * Never mutates field names, IDs, validation rules, or API payload keys.
  */
 
+import { ORDER_NOTES_HELP_COMMENTS } from '@/data/order-fields';
 import type { UiDictionary } from '@/lib/i18n/content/ui-english';
 import type { OrderFieldDefinition } from '@/types/order-fields';
 
@@ -28,6 +29,19 @@ export function localizeOrderFieldForDisplay(
   const labels = ui.orderDialog.labels as Record<string, string>;
   const placeholders = ui.orderDialog.placeholders as Record<string, string>;
   const help = ui.orderDialog.help as Record<string, string>;
+
+  if (field.id === 'notes') {
+    const helpText =
+      field.helpText === ORDER_NOTES_HELP_COMMENTS
+        ? ui.orderDialog.notesHintComments
+        : ui.orderDialog.notesHintDefault;
+    return {
+      ...field,
+      label: ui.orderDialog.notesLabel,
+      placeholder: ui.orderDialog.notesPlaceholder,
+      helpText,
+    };
+  }
 
   let helpText = field.helpText;
   if (helpText) {

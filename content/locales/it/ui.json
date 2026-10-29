@@ -310,6 +310,16 @@
     "choosePlatform": "Choose a platform",
     "pageHero": "Page hero"
   },
+  "checkoutPayment": {
+    "cardMethod": "Credit / Debit Card",
+    "card": "Card"
+  },
+  "headerAria": {
+    "cartMany": "Cart, {count} items",
+    "cartOne": "Cart, 1 item",
+    "openMenu": "Open NovaLikes menu",
+    "openCart": "Open cart"
+  },
   "orderDialog": {
     "title": "Dettagli dell’ordine",
     "description": "Inserisci le informazioni necessarie per evadere {quantity}.",
@@ -321,6 +331,11 @@
     "paymentReassuranceAria": "Garanzie di pagamento",
     "secureCheckoutEncrypted": "Checkout sicuro · Pagamento crittografato",
     "moneyBackGuarantee": "Garanzia soddisfatti o rimborsati 30 giorni",
+    "notesLabel": "Order notes (optional)",
+    "notesPlaceholder": "Anything we should know about this order?",
+    "notesHintComments": "Add your own comments, one per line, ask for another language, or ask for gradual delivery. Leave empty and our team writes the comments.",
+    "notesHintDefault": "Want gradual delivery? Tell us the pace you prefer.",
+    "close": "Close",
     "labels": {
       "Instagram username": "Username Instagram",
       "TikTok username": "Username TikTok",

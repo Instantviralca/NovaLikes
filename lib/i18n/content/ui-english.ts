@@ -120,6 +120,12 @@ export const ENGLISH_UI = {
     paymentReassuranceAria: 'Payment reassurance',
     secureCheckoutEncrypted: 'Secure checkout · Encrypted payment',
     moneyBackGuarantee: '30-Day Money-Back Guarantee',
+    notesLabel: 'Order notes (optional)',
+    notesPlaceholder: 'Anything we should know about this order?',
+    notesHintComments:
+      'Add your own comments, one per line, ask for another language, or ask for gradual delivery. Leave empty and our team writes the comments.',
+    notesHintDefault: 'Want gradual delivery? Tell us the pace you prefer.',
+    close: 'Close',
     labels: {
       'Instagram username': 'Instagram username',
       'TikTok username': 'TikTok username',
@@ -444,6 +450,16 @@ export const ENGLISH_UI = {
     choosePlatform: 'Choose a platform',
     pageHero: 'Page hero',
   },
+  checkoutPayment: {
+    cardMethod: 'Credit / Debit Card',
+    card: 'Card',
+  },
+  headerAria: {
+    cartMany: 'Cart, {count} items',
+    cartOne: 'Cart, 1 item',
+    openMenu: 'Open NovaLikes menu',
+    openCart: 'Open cart',
+  },
 } as const;
 
 export type UiDictionary = {
@@ -464,6 +480,11 @@ export type UiDictionary = {
     paymentReassuranceAria: string;
     secureCheckoutEncrypted: string;
     moneyBackGuarantee: string;
+    notesLabel: string;
+    notesPlaceholder: string;
+    notesHintComments: string;
+    notesHintDefault: string;
+    close: string;
     labels: { [K in keyof typeof ENGLISH_UI.orderDialog.labels]: string };
     placeholders: { [K in keyof typeof ENGLISH_UI.orderDialog.placeholders]: string };
     help: { [K in keyof typeof ENGLISH_UI.orderDialog.help]: string };
@@ -487,5 +508,15 @@ export type UiDictionary = {
     buyServiceAria: string;
     choosePlatform: string;
     pageHero: string;
+  };
+  checkoutPayment: {
+    cardMethod: string;
+    card: string;
+  };
+  headerAria: {
+    cartMany: string;
+    cartOne: string;
+    openMenu: string;
+    openCart: string;
   };
 };

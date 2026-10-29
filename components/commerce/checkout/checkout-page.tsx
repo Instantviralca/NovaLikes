@@ -131,10 +131,13 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     () =>
       getEnabledPaymentProviders().map((provider) => ({
         id: provider.id as PaymentMethodId,
-        label: provider.displayName,
+        label:
+          provider.id === 'remote-payment'
+            ? ui.checkoutPayment.cardMethod
+            : provider.displayName,
         enabled: provider.enabled,
       })),
-    [],
+    [ui.checkoutPayment.cardMethod],
   );
 
   useEffect(() => {
@@ -422,7 +425,7 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
                 'remote-payment': ui.checkout.cardProcessedSecurely,
               }}
               chips={{
-                'remote-payment': ['Card'],
+                'remote-payment': [ui.checkoutPayment.card],
               }}
             />
           </div>

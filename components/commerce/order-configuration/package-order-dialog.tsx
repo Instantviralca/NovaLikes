@@ -43,6 +43,10 @@ export type PackageOrderDialogProps = {
   onOpenChange: (open: boolean) => void;
   service: Service;
   selectedPackage: PricingPackage | null;
+  /** Localized v2 service name (e.g. content.meta.name); English keeps catalog `service.name`. */
+  serviceDisplayName?: string;
+  /** de/es v2: picker `summaryName` (same as pk-sum); used for package line + description {quantity}. */
+  pickerSummaryName?: string;
 };
 
 /**
@@ -54,6 +58,8 @@ export function PackageOrderDialog({
   onOpenChange,
   service,
   selectedPackage,
+  serviceDisplayName,
+  pickerSummaryName,
 }: PackageOrderDialogProps) {
   const cart = useCart();
   const { showCartToast } = useCartToast();
@@ -92,6 +98,14 @@ export function PackageOrderDialog({
   }, [open, selectedPackage?.id]);
 
   if (!selectedPackage) return null;
+
+  const quantityForDescription =
+    pickerSummaryName?.trim() || selectedPackage.quantityLabel;
+  const packageLineTitle =
+    pickerSummaryName?.trim() ||
+    selectedPackage.title ||
+    selectedPackage.quantityLabel;
+  const serviceLine = serviceDisplayName?.trim() || service.name;
 
   const handleChange = (name: string, value: string | boolean | number) => {
     setValues((prev) => ({ ...prev, [name]: value }));
@@ -202,18 +216,18 @@ export function PackageOrderDialog({
         <DialogHeader>
           <DialogTitle>{ui.orderDialog.title}</DialogTitle>
           <DialogDescription id="package-order-desc">
-            {localizeOrderDescription(selectedPackage.quantityLabel, ui)}
+            {localizeOrderDescription(quantityForDescription, ui)}
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-3 rounded-lg border border-border bg-muted/30 p-3 text-sm">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <p className="font-semibold text-foreground">{selectedPackage.quantityLabel}</p>
+            <p className="font-semibold text-foreground">{packageLineTitle}</p>
             <p className="font-bold text-[var(--brand-primary)]">
               {formatMoney(selectedPackage.price, selectedPackage.currency)}
             </p>
           </div>
-          <p className="text-muted-foreground">{service.name}</p>
+          <p className="text-muted-foreground">{serviceLine}</p>
           {selectedPackage.deliveryTime ? (
             <p className="text-xs text-muted-foreground">
               {ui.orderDialog.delivery}: {selectedPackage.deliveryTime}

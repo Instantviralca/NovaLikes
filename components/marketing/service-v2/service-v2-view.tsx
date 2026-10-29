@@ -476,6 +476,9 @@ export function ServiceV2View({
             packages={cardModels}
             copy={copy.picker}
             stickyLabel={copy.sticky.label}
+            serviceDisplayName={
+              locale === 'de' || locale === 'es' ? copy.meta.name : undefined
+            }
           />
         </div>
       </section>

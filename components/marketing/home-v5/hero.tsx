@@ -63,8 +63,12 @@ export function HomeV5Hero({
             </span>
             {ttName}
           </span>
-          <br />
-          {hero.title.tail}
+          {hero.title.tail ? (
+            <>
+              <br />
+              {hero.title.tail}
+            </>
+          ) : null}
         </h1>
         <p className="lead">{hero.subtitle}</p>
         <PlatformTabs

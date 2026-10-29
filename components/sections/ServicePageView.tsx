@@ -44,20 +44,20 @@ export async function ServicePageView({
     }
   }
 
-  // German pilot: /de service routes use ServiceV2View. Other locales keep today's view.
-  if (!market && locale === 'de') {
+  // Locale pilot: /de and /es service routes use ServiceV2View. Other locales keep today's view.
+  if (!market && (locale === 'de' || locale === 'es')) {
     const { getServiceV2LocaleContent } = await import('@/data/content/service-v2');
-    const v2De = getServiceV2LocaleContent('de', service.slug);
-    if (v2De) {
+    const v2Locale = getServiceV2LocaleContent(locale, service.slug);
+    if (v2Locale) {
       const { ServiceV2View } = await import(
         '@/components/marketing/service-v2/service-v2-view'
       );
       return (
         <ServiceV2View
           service={service}
-          content={v2De}
+          content={v2Locale}
           breadcrumbs={breadcrumbs}
-          locale="de"
+          locale={locale}
         />
       );
     }
