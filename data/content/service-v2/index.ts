@@ -36,3 +36,4 @@ export { SERVICE_V2_DE_CONTENT, getServiceV2LocaleContent } from './locales/de';
 export { SERVICE_V2_ES_CONTENT } from './locales/es';
 export { SERVICE_V2_FR_CONTENT } from './locales/fr';
 export { SERVICE_V2_IT_CONTENT } from './locales/it';
+export { SERVICE_V2_PT_BR_CONTENT } from './locales/pt-br';

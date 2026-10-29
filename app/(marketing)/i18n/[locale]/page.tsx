@@ -8,6 +8,7 @@ import { HOME_V5_DE } from '@/data/content/home-v5-de';
 import { HOME_V5_ES } from '@/data/content/home-v5-es';
 import { HOME_V5_FR } from '@/data/content/home-v5-fr';
 import { HOME_V5_IT } from '@/data/content/home-v5-it';
+import { HOME_V5_PT_BR } from '@/data/content/home-v5-pt-br';
 import { isLocalizedLocale } from '@/lib/i18n/config';
 import { loadHomepageHub, loadMetadataBundle, loadUi } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
@@ -33,7 +34,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocalizedLocale(locale)) notFound();
 
-  if (locale === 'de' || locale === 'es' || locale === 'fr' || locale === 'it') {
+  if (locale === 'de' || locale === 'es' || locale === 'fr' || locale === 'it' || locale === 'pt-br') {
     preloadHomeDisplayFont();
     const fontVars = `${nlDisplay.variable} ${nlBody.variable}`;
     const homeContent =
@@ -43,7 +44,9 @@ export default async function LocalizedHomePage({ params }: PageProps) {
           ? HOME_V5_ES
           : locale === 'fr'
             ? HOME_V5_FR
-            : HOME_V5_IT;
+            : locale === 'it'
+              ? HOME_V5_IT
+              : HOME_V5_PT_BR;
     return (
       <HomeV5View fontClassName={fontVars} content={homeContent} locale={locale} />
     );

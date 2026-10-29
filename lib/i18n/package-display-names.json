@@ -189,6 +189,13 @@
       "1000 like per Pagina Facebook",
       "2500 like Instagram",
       "10000 visualizzazioni TikTok High Quality"
+    ],
+    "pt-br": [
+      "10 comentários Premium no Instagram",
+      "25 comentários High Quality no Instagram",
+      "1000 curtidas para Página do Facebook",
+      "2500 curtidas no Instagram",
+      "10000 visualizações High Quality no TikTok"
     ]
   },
   "it": [
@@ -255,6 +262,72 @@
     [
       "YouTube Subscribers",
       "iscritti YouTube"
+    ]
+  ],
+  "pt-br": [
+    [
+      "Facebook Page Likes",
+      "curtidas para Página do Facebook"
+    ],
+    [
+      "Facebook Post Likes",
+      "curtidas em post do Facebook"
+    ],
+    [
+      "High Quality Instagram Comments",
+      "comentários High Quality no Instagram"
+    ],
+    [
+      "Premium Instagram Comments",
+      "comentários Premium no Instagram"
+    ],
+    [
+      "High Quality TikTok Views",
+      "visualizações High Quality no TikTok"
+    ],
+    [
+      "Premium TikTok Views",
+      "visualizações Premium no TikTok"
+    ],
+    [
+      "Instagram Likes",
+      "curtidas no Instagram"
+    ],
+    [
+      "Instagram Views",
+      "visualizações no Instagram"
+    ],
+    [
+      "Instagram Followers",
+      "seguidores no Instagram"
+    ],
+    [
+      "Instagram Comments",
+      "comentários no Instagram"
+    ],
+    [
+      "TikTok Likes",
+      "curtidas no TikTok"
+    ],
+    [
+      "TikTok Views",
+      "visualizações no TikTok"
+    ],
+    [
+      "TikTok Followers",
+      "seguidores no TikTok"
+    ],
+    [
+      "Facebook Followers",
+      "seguidores no Facebook"
+    ],
+    [
+      "YouTube Views",
+      "visualizações no YouTube"
+    ],
+    [
+      "YouTube Subscribers",
+      "inscritos no YouTube"
     ]
   ]
 }

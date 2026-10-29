@@ -480,7 +480,8 @@ export function ServiceV2View({
               locale === 'de' ||
               locale === 'es' ||
               locale === 'fr' ||
-              locale === 'it'
+              locale === 'it' ||
+              locale === 'pt-br'
                 ? copy.meta.name
                 : undefined
             }
