@@ -44,6 +44,25 @@ export async function ServicePageView({
     }
   }
 
+  // German pilot: /de service routes use ServiceV2View. Other locales keep today's view.
+  if (!market && locale === 'de') {
+    const { getServiceV2LocaleContent } = await import('@/data/content/service-v2');
+    const v2De = getServiceV2LocaleContent('de', service.slug);
+    if (v2De) {
+      const { ServiceV2View } = await import(
+        '@/components/marketing/service-v2/service-v2-view'
+      );
+      return (
+        <ServiceV2View
+          service={service}
+          content={v2De}
+          breadcrumbs={breadcrumbs}
+          locale="de"
+        />
+      );
+    }
+  }
+
   // UK / CA / AU: market-specific v2. `/us` never renders (middleware 308 → root).
   if (market) {
     const { getServiceV2MarketContent } = await import('@/data/content/service-v2');

@@ -30,10 +30,12 @@ import {
   SERVICE_V2_AU_CONTENT,
   SERVICE_V2_CA_CONTENT,
   SERVICE_V2_CONTENT,
+  SERVICE_V2_DE_CONTENT,
   SERVICE_V2_UK_CONTENT,
 } from '@/data/content/service-v2';
 import type { ServiceV2Content } from '@/data/content/service-v2/types';
 import { getServiceContentBySlug } from '@/data/content/services';
+import { loadServiceFaqItems } from '@/lib/i18n/content/load';
 import { getServiceBySlug } from '@/data/services';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
 import { getBadgeLabel } from '@/data/pricing/badges';
@@ -465,3 +467,127 @@ function describeMarketV2Suite(
 
 describeMarketV2Suite('CA', 'ca', SERVICE_V2_CA_CONTENT);
 describeMarketV2Suite('AU', 'au', SERVICE_V2_AU_CONTENT);
+
+const DE_BANNED = ['garantiert', 'sofort', 'echte follower', 'billig', '#1'];
+
+function assertNoGermanBannedWords(raw: string) {
+  const lower = raw.toLowerCase();
+  for (const word of DE_BANNED) {
+    expect(lower).not.toContain(word);
+  }
+}
+
+describe('SERVICE_V2_DE_CONTENT copy constraints', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_DE_CONTENT)) {
+    it(`${slug} has no banned German marketing words`, () => {
+      const { keywords: _keywords, ...metaRest } = copy.meta;
+      assertNoGermanBannedWords(JSON.stringify({ ...copy, meta: metaRest }));
+    });
+  }
+});
+
+describe('ServiceV2View markup for all 10 DE services', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_DE_CONTENT)) {
+    describe(slug, () => {
+      const service = getServiceBySlug(slug)!;
+      const html = renderToStaticMarkup(
+        createElement(ServiceV2View, { service, content: copy, locale: 'de' }),
+      );
+      const packages = getActivePackagesByServiceSlug(slug);
+      const serviceContent = getServiceContentBySlug(slug);
+      const faqIds = serviceContent?.faq.faqIds ?? [];
+      const germanFaqs = loadServiceFaqItems('de', faqIds);
+      const expectedFaqCount = faqIds.length + copy.faq.extra.length;
+
+      it('loads the service', () => {
+        expect(service.slug).toBe(slug);
+      });
+
+      it('renders exactly one H1', () => {
+        expect(html.match(/<h1[\s>]/gi) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.hero.title.highlight);
+        expect(html).not.toMatch(/<h1[^>]*>\s/);
+      });
+
+      it('renders 14 H2s in content order', () => {
+        expect(h2Texts(html)).toEqual(expectedH2s(copy));
+      });
+
+      it('has no raw placeholders or unparsed markdown links', () => {
+        const withoutClasses = html.replace(/\sclass="[^"]*"/g, '');
+        expect(withoutClasses).not.toContain('{');
+        expect(withoutClasses).not.toContain('[');
+        expect(withoutClasses).not.toContain('](');
+      });
+
+      it('renders package tiles from the registry, one tier at a time', () => {
+        expect(html.match(/class="pk-tile"/g) ?? []).toHaveLength(packages.length);
+        for (const pkg of packages) {
+          expect(html).toContain(formatQuantityShort(pkg.quantity));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+        }
+        if (copy.picker.tiers?.length) {
+          for (const tier of copy.picker.tiers) {
+            expect(html).toContain(`data-tier="${tier.label}"`);
+            const byTier = packages.filter((p) => p.commentType === tier.label);
+            expect(byTier.length).toBeGreaterThan(0);
+            for (const pkg of byTier) {
+              expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+            }
+          }
+        }
+      });
+
+      it('renders cost rows from the registry with exactly one best row', () => {
+        expect(html).toContain('class="ctable"');
+        expect(html.match(/class="best"/g) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.cost.best);
+        for (const pkg of packages) {
+          expect(html).toContain(costLabel(pkg, copy.meta.unit));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+        }
+      });
+
+      it('renders German FAQ answers then extra, with no duplicate questions', () => {
+        const details = [...html.matchAll(/data-faq-id="([^"]+)"/g)];
+        expect(details).toHaveLength(expectedFaqCount);
+        for (const item of germanFaqs) {
+          expect(html).toContain(item.question);
+          expect(html).toContain(item.answer);
+        }
+        for (const extra of copy.faq.extra) {
+          expect(html).toContain(extra.question);
+        }
+        const questions = [
+          ...html.matchAll(/data-faq-id="[^"]+"[\s\S]*?<h3>([\s\S]*?)<\/h3>/g),
+        ].map((m) => stripHtml(m[1]!));
+        expect(new Set(questions).size).toBe(questions.length);
+      });
+
+      it('localizes every internal link under /de and has no /learn link', () => {
+        expect(html).not.toContain('/learn');
+        const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]!);
+        const internal = hrefs.filter(
+          (href) =>
+            href.startsWith('/') &&
+            !href.startsWith('//') &&
+            !href.startsWith('/assets/'),
+        );
+        expect(internal.length).toBeGreaterThan(0);
+        const bad = internal.filter((href) => href !== '/de' && !href.startsWith('/de/'));
+        expect(bad).toEqual([]);
+        const serviceHrefs = internal.filter((href) => href !== '/de');
+        expect(serviceHrefs.length).toBeGreaterThan(0);
+        for (const href of serviceHrefs) {
+          expect(href.startsWith('/de/')).toBe(true);
+        }
+      });
+
+      it('keeps pricing and how-it-works anchors', () => {
+        expect(html).toContain('svc-v2');
+        expect(html).toContain('id="pricing-packages"');
+        expect(html).toContain('id="how-it-works"');
+      });
+    });
+  }
+});

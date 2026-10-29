@@ -313,6 +313,7 @@ export const ENGLISH_UI = {
     drawerFine: 'Secure checkout · No password needed',
     pageFine: 'Secure checkout · Prices in USD',
     itemsHeading: '{count} items',
+    itemHeading: '1 item',
     trustNoPassword: 'No password needed',
     trustStartWithin: 'Most orders start within 6–8 hours',
     trustRefill: '6-month refill on every order',
@@ -367,6 +368,7 @@ export const ENGLISH_UI = {
     stepPayment: 'Payment',
     progressAria: 'Checkout progress',
     /** Site-v2 checkout chrome (English fallback until locales translate). */
+    total: 'Total',
     oneTime: 'One-time payment. No subscription.',
     orderSummaryToggle: 'Order summary',
     stepCart: 'Cart',
@@ -435,6 +437,13 @@ export const ENGLISH_UI = {
   quickAnswer: {
     heading: 'Quick answer',
   },
+  serviceV2Ui: {
+    weUse: 'We use',
+    oneTime: 'One-time',
+    buyServiceAria: 'Buy {platform} {service}',
+    choosePlatform: 'Choose a platform',
+    pageHero: 'Page hero',
+  },
 } as const;
 
 export type UiDictionary = {
@@ -472,4 +481,11 @@ export type UiDictionary = {
   trackOrder: { [K in keyof typeof ENGLISH_UI.trackOrder]: string };
   legalChrome: { [K in keyof typeof ENGLISH_UI.legalChrome]: string };
   quickAnswer: { heading: string };
+  serviceV2Ui: {
+    weUse: string;
+    oneTime: string;
+    buyServiceAria: string;
+    choosePlatform: string;
+    pageHero: string;
+  };
 };

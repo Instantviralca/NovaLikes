@@ -23,7 +23,7 @@ import { getBadgeLabel } from '@/data/pricing/badges';
 import { getActivePackagesByServiceSlug } from '@/data/pricing/packages';
 import { getServiceContentBySlug } from '@/data/content/services';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
-import { loadServiceFaqItems } from '@/lib/i18n/content/load';
+import { loadServiceFaqItems, loadUi } from '@/lib/i18n/content/load';
 import { buildBreadcrumb } from '@/lib/linking';
 import type { Market } from '@/lib/market/config';
 import { loadMarketServiceFaqItemsByPrefix } from '@/lib/market/content/load';
@@ -36,7 +36,7 @@ import {
 import { formatMoney } from '@/lib/pricing/format';
 import { cn } from '@/lib/utils';
 import type { BreadcrumbItem } from '@/types';
-import type { PricingPackage } from '@/types/pricing';
+import type { PackageBadgeId, PricingPackage } from '@/types/pricing';
 import type { Service } from '@/types/service';
 import { Music2, ThumbsUp } from 'lucide-react';
 
@@ -140,7 +140,16 @@ function fillFromPrice(template: string, slug: string, fromPrice: string | null)
   return template.split('{fromPrice}').join(fromPrice);
 }
 
-function toCardModels(packages: PricingPackage[]): PricingCardModel[] {
+function badgeLabelFor(badge: PackageBadgeId, locale: Locale): string {
+  if (locale === DEFAULT_LOCALE) return getBadgeLabel(badge);
+  const commerce = loadUi(locale).commerce;
+  if (badge === 'most-popular') return commerce.mostPopular;
+  if (badge === 'best-value') return commerce.bestValue;
+  if (badge === 'recommended') return commerce.recommended;
+  return getBadgeLabel(badge);
+}
+
+function toCardModels(packages: PricingPackage[], locale: Locale): PricingCardModel[] {
   return packages.map((pkg) => ({
     package: pkg,
     priceDisplay: formatMoney(pkg.price, pkg.currency),
@@ -148,7 +157,7 @@ function toCardModels(packages: PricingPackage[]): PricingCardModel[] {
       pkg.compareAtPrice != null
         ? formatMoney(pkg.compareAtPrice, pkg.currency)
         : undefined,
-    badgeLabel: pkg.badge ? getBadgeLabel(pkg.badge) : undefined,
+    badgeLabel: pkg.badge ? badgeLabelFor(pkg.badge, locale) : undefined,
     primaryCta: {
       label: 'Add to Cart',
       href: `#order-configuration?package=${encodeURIComponent(pkg.id)}`,
@@ -206,14 +215,36 @@ function CountTile({ platform }: { platform: ServiceV2Content['meta']['platform'
   );
 }
 
+type DiagramLabels = {
+  addToCart: string;
+  noPasswordNeeded: string;
+  noPassword: string;
+  card: string;
+  weUse: string;
+  oneTime: string;
+};
+
+function diagramLabelsFromUi(ui: ReturnType<typeof loadUi>): DiagramLabels {
+  return {
+    addToCart: ui.commerce.addToCart,
+    noPasswordNeeded: ui.footer.noPassword,
+    noPassword: ui.commerce.noPassword,
+    card: ui.footer.payCard,
+    weUse: ui.serviceV2Ui.weUse,
+    oneTime: ui.serviceV2Ui.oneTime,
+  };
+}
+
 function StepMiniUi({
   ui,
   contentUi,
   samplePrice,
+  labels,
 }: {
   ui: string;
   contentUi: ServiceV2Content['ui'];
   samplePrice: string;
+  labels: DiagramLabels;
 }) {
   if (ui === 'public') {
     return (
@@ -243,7 +274,7 @@ function StepMiniUi({
     return (
       <span className="mu-btn">
         <SvcV1Icon name="shopping-cart" />
-        Add to Cart
+        {labels.addToCart}
       </span>
     );
   }
@@ -258,7 +289,7 @@ function StepMiniUi({
           <i className="caret" />
         </div>
         <span className="mu-ok">
-          <SvcV1Icon name="check" strokeWidth={3} /> No password needed
+          <SvcV1Icon name="check" strokeWidth={3} /> {labels.noPasswordNeeded}
         </span>
       </div>
     );
@@ -268,12 +299,12 @@ function StepMiniUi({
       <div className="mu-pay">
         <span className="mu-card">
           <SvcV1Icon name="lock" />
-          Card
+          {labels.card}
         </span>
         <span className="mu-usd">Apple Pay</span>
         <span className="mu-usd">Google Pay</span>
         <span className="mu-total">
-          One-time · <b>{samplePrice}</b>
+          {labels.oneTime} · <b>{samplePrice}</b>
         </span>
       </div>
     );
@@ -285,14 +316,14 @@ function StepMiniUi({
         <span className="np-ic">
           <SvcV1Icon name="eye-off" />
         </span>
-        <b>{lead}. No password.</b>
+        <b>{lead}. {labels.noPassword}</b>
       </div>
     );
   }
   if (ui === 'privacy') {
     return (
       <div className="mu-priv">
-        <span className="mu-k">We use</span>
+        <span className="mu-k">{labels.weUse}</span>
         {contentUi.privacyTags.map((tag) => (
           <span key={tag} className="mu-tag">
             <SvcV1Icon name="check" strokeWidth={3} />
@@ -326,8 +357,8 @@ function perUnitMinor(pkg: PricingPackage, perUnit: number): number {
 }
 
 /**
- * Shared Buzzoid service page for English defaults and market v2 pages (UK Phase 2).
- * Locale pages and non-v2 markets keep their authority views.
+ * Shared Buzzoid service page for English defaults, market v2 pages, and /de.
+ * Other locales keep their authority views.
  */
 export function ServiceV2View({
   service,
@@ -342,10 +373,17 @@ export function ServiceV2View({
   const serviceHref = (slug: string) =>
     resolvePublicHref(`/${slug}`, { locale, market });
 
-  /** Market pages: prefix bare `/buy-*` inline links; leave /learn, legal, etc. */
+  /**
+   * Market pages: prefix bare `/buy-*` only.
+   * Locale pages: localize every internal path (services, refund, privacy).
+   */
   const inlineHrefFor = (href: string) => {
+    if (!href.startsWith('/')) return href;
     if (market && /^\/buy-[a-z0-9-]+\/?$/i.test(href)) {
       return resolvePublicHref(href, { locale, market });
+    }
+    if (!market && locale !== DEFAULT_LOCALE) {
+      return resolvePublicHref(href, { locale, market: null });
     }
     return href;
   };
@@ -353,19 +391,30 @@ export function ServiceV2View({
   const serviceContent = getServiceContentBySlug(service.slug);
   const faqIds = serviceContent?.faq.faqIds ?? [];
   const marketFaq = copy.faq.market;
+  const faqLocale = copy.faq.locale?.code ?? locale;
   const faqItems =
     market && marketFaq
       ? loadMarketServiceFaqItemsByPrefix(marketFaq.code, marketFaq.idPrefix)
-      : loadServiceFaqItems(locale, faqIds);
+      : loadServiceFaqItems(faqLocale, faqIds);
 
-  const breadcrumbs = breadcrumbOverride ?? buildBreadcrumb(service.slug);
+  const breadcrumbs =
+    breadcrumbOverride ??
+    buildBreadcrumb(service.slug).map((item) => ({
+      ...item,
+      href:
+        typeof item.href === 'string' && item.href.startsWith('/')
+          ? inlineHrefFor(item.href)
+          : item.href,
+    }));
   const fromPrice = getServiceFromPriceLabel(service.slug);
   const subtitle =
     resolveHeroSubtitle(copy.hero.subtitle, service.slug) ??
     (fromPrice ? fillFromPrice(copy.hero.subtitle, service.slug, fromPrice) : copy.hero.subtitle);
 
   const packages = getActivePackagesByServiceSlug(service.slug);
-  const cardModels = toCardModels(packages);
+  const chromeUi = loadUi(locale);
+  const cardModels = toCardModels(packages, locale);
+  const diagrams = diagramLabelsFromUi(chromeUi);
 
   const costRows = packages.map((pkg) => ({
     pkg,
@@ -396,7 +445,7 @@ export function ServiceV2View({
 
   return (
     <div className={cn('svc-v2', fontClassName)}>
-      <section className="hero" aria-label="Page hero">
+      <section className="hero" aria-label={chromeUi.serviceV2Ui.pageHero}>
         <div className="wrap">
           <Breadcrumb
             items={breadcrumbs}
@@ -405,7 +454,7 @@ export function ServiceV2View({
             withSchema={false}
           />
           <h1 className="h1">
-            {copy.hero.title.lead}{' '}
+            {copy.hero.title.lead ? <>{copy.hero.title.lead}{' '}</> : null}
             <PlatformTile platform={copy.meta.platform} />
             <span className="hl">{copy.hero.title.highlight}</span>{' '}
             {copy.hero.title.tail ? (
@@ -478,6 +527,7 @@ export function ServiceV2View({
                     <StepMiniUi
                       ui={step.ui}
                       contentUi={copy.ui}
+                      labels={diagrams}
                       samplePrice={samplePrice}
                     />
                   </div>
@@ -564,7 +614,7 @@ export function ServiceV2View({
               <p className="body">
                 <InlineRichText hrefFor={inlineHrefFor} text={copy.promises.intro} />
               </p>
-              <Link className="tlink" href={copy.promises.link.href}>
+              <Link className="tlink" href={inlineHrefFor(copy.promises.link.href)}>
                 {copy.promises.link.label} <SvcV1Icon name="arrow-right" />
               </Link>
             </div>
@@ -837,6 +887,7 @@ export function ServiceV2View({
                   <StepMiniUi
                     ui={card.ui}
                     contentUi={copy.ui}
+                    labels={diagrams}
                     samplePrice={samplePrice}
                   />
                 </div>
@@ -946,17 +997,19 @@ export function ServiceV2View({
               );
             })}
           </div>
-          <nav className="guides" aria-label="Guides">
-            <span className="g-k">
-              <SvcV1Icon name="book-open" />
-              {copy.more.guidesTitle}
-            </span>
-            {copy.more.guides.map((guide) => (
-              <Link key={guide.href} href={guide.href}>
-                {guide.label}
-              </Link>
-            ))}
-          </nav>
+          {copy.more.guides.length > 0 ? (
+            <nav className="guides" aria-label="Guides">
+              <span className="g-k">
+                <SvcV1Icon name="book-open" />
+                {copy.more.guidesTitle}
+              </span>
+              {copy.more.guides.map((guide) => (
+                <Link key={guide.href} href={inlineHrefFor(guide.href)}>
+                  {guide.label}
+                </Link>
+              ))}
+            </nav>
+          ) : null}
         </div>
       </section>
     </div>

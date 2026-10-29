@@ -113,6 +113,8 @@ export type ServiceV2Content = {
     cta: string;
     /** Market pages only: render the existing market FAQ items whose id starts with `${idPrefix}-` (from content/markets/<code>/service-faqs.json), in file order, before `extra`. */
     market?: { code: 'uk' | 'us' | 'ca' | 'au'; idPrefix: string };
+    /** Locale pages only: render the service's existing faqIds with that locale's translations (content/locales/<code>/service-faqs.json), then `extra`. */
+    locale?: { code: 'de' | 'es' | 'fr' | 'it' | 'pt-br' | 'ar' };
     /** Extra questions, rendered after the service's existing faqIds (EN) or the market FAQ items (markets). */
     extra: { id: string; question: string; answer: string }[];
     /** Replacement EN answers for existing faq.ts ids (apply in data/content/faq.ts, EN only). */

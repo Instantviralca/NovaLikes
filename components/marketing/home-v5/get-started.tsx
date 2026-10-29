@@ -5,7 +5,9 @@ import { HOME_V5 } from '@/data/content/home-v5';
 import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 import { type PlatformKey } from '@/components/marketing/home-v5/icons';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import type { Market } from '@/lib/market/config';
+import { loadUi } from '@/lib/i18n/content/load';
 import { resolvePublicHref } from '@/lib/market/paths';
 import {
   calculateAggregateRating,
@@ -83,11 +85,21 @@ function StarIcon() {
 export function HomeV5GetStarted({
   content = HOME_V5,
   market = null,
+  locale = DEFAULT_LOCALE,
 }: {
   content?: HomeV5Content;
   market?: Market | null;
+  locale?: Locale;
 }) {
   const { getStarted, hero } = content;
+  const buyServiceAria = loadUi(locale).serviceV2Ui.buyServiceAria;
+  const toolLinks = getStarted.tools.links.map((link) => ({
+    ...link,
+    href: link.href.startsWith('/')
+      ? resolvePublicHref(link.href, { locale, market })
+      : link.href,
+  }));
+  const showGuides = getStarted.guides.links.length > 0;
 
   return (
     <section id={getStarted.id} className="start">
@@ -125,11 +137,15 @@ export function HomeV5GetStarted({
                     <Link
                       key={card.slug}
                       className={index === 0 ? 'sg-key primary' : 'sg-key'}
-                      href={resolvePublicHref(`/${card.slug}`, { market })}
+                      href={resolvePublicHref(`/${card.slug}`, { locale, market })}
                       data-platform={key}
                       data-service={card.title.toLowerCase().replace(/\s+/g, '-')}
                     >
-                      <span className="sr-only">{`Buy ${tab.label} ${card.title}`}</span>
+                      <span className="sr-only">
+                        {buyServiceAria
+                          .replace('{platform}', tab.label)
+                          .replace('{service}', card.title)}
+                      </span>
                       <span className="sg-label" aria-hidden="true">
                         {card.title}
                       </span>
@@ -153,20 +169,22 @@ export function HomeV5GetStarted({
               </span>
               <h3>{getStarted.tools.title}</h3>
             </div>
-            <LinkList links={getStarted.tools.links} />
+            <LinkList links={toolLinks} />
           </div>
-          <div className="start-card list">
-            <div className="sc-head">
-              <span className="sc-ic">
-                <BookOpen className="ic" aria-hidden="true" />
-              </span>
-              <h3>{getStarted.guides.title}</h3>
+          {showGuides ? (
+            <div className="start-card list">
+              <div className="sc-head">
+                <span className="sc-ic">
+                  <BookOpen className="ic" aria-hidden="true" />
+                </span>
+                <h3>{getStarted.guides.title}</h3>
+              </div>
+              <LinkList links={getStarted.guides.links} />
+              <Link className="more" href={getStarted.guides.cta.href}>
+                {`${getStarted.guides.cta.label} →`}
+              </Link>
             </div>
-            <LinkList links={getStarted.guides.links} />
-            <Link className="more" href={getStarted.guides.cta.href}>
-              {`${getStarted.guides.cta.label} →`}
-            </Link>
-          </div>
+          ) : null}
         </div>
       </div>
     </section>

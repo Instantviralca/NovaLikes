@@ -188,6 +188,7 @@
     "drawerFine": "Secure checkout · No password needed",
     "pageFine": "Secure checkout · Prices in USD",
     "itemsHeading": "{count} items",
+    "itemHeading": "1 item",
     "trustNoPassword": "No password needed",
     "trustStartWithin": "Most orders start within 6–8 hours",
     "trustRefill": "6-month refill on every order",
@@ -239,6 +240,7 @@
     "stepReview": "المراجعة",
     "stepPayment": "الدفع",
     "progressAria": "خطوات الدفع",
+    "total": "Total",
     "oneTime": "One-time payment. No subscription.",
     "orderSummaryToggle": "Order summary",
     "stepCart": "Cart",
@@ -300,6 +302,13 @@
   },
   "quickAnswer": {
     "heading": "إجابة سريعة"
+  },
+  "serviceV2Ui": {
+    "weUse": "We use",
+    "oneTime": "One-time",
+    "buyServiceAria": "Buy {platform} {service}",
+    "choosePlatform": "Choose a platform",
+    "pageHero": "Page hero"
   },
   "orderDialog": {
     "title": "تفاصيل الطلب",

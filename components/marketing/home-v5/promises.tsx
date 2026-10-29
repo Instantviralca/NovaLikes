@@ -30,7 +30,7 @@ export function HomeV5Promises({ content = HOME_V5 }: { content?: HomeV5Content 
   const head = (
     <>
       <h2 className="h2 left on-dark">
-        {promises.title.lead}{' '}
+        {promises.title.lead ? <>{promises.title.lead}{' '}</> : null}
         <span className="hl">
           {promises.title.highlight}
           <PenUnderline />

@@ -24,7 +24,7 @@ import { Logo } from '@/components/common/logo';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { getEnabledPaymentProviders } from '@/config/payments';
 import { routes } from '@/config/routes';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
+import { siteV2CheckoutCopy } from '@/lib/site-v2/locale-commerce-copy';
 import { getOrCreateSessionId } from '@/lib/analytics/native/identity';
 import { useCart } from '@/lib/cart';
 import { CART_QUERY_PARAM, locationHasCartTransfer } from '@/lib/cart/cart-hash';
@@ -65,7 +65,7 @@ export function CheckoutPage({ signedInEmail = null }: CheckoutPageProps) {
     searchParams.get(CART_QUERY_PARAM) || searchParams.get('cartHandoff'),
   );
   const cartHref = localizeHref(routes.cart, locale);
-  const copy = SITE_V2_COPY.checkout;
+  const copy = siteV2CheckoutCopy(ui);
   const [customer, setCustomer] = useState<CustomerInformation>({
     email: signedInEmail ?? '',
   });

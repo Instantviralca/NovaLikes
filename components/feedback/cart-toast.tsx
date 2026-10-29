@@ -6,7 +6,7 @@ import { Check } from 'lucide-react';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { nlBody, nlDisplay } from '@/components/marketing/home-v5/fonts';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
+import { siteV2CartCopy } from '@/lib/site-v2/locale-commerce-copy';
 import { useCartUi } from '@/lib/cart/cart-ui-context';
 import { emitLegacyAnalyticsEvent } from '@/lib/analytics/core/bridge';
 import { routes } from '@/config/routes';
@@ -171,7 +171,7 @@ function CartToast({
 }) {
   const { openCart } = useCartUi();
   const { ui } = useI18nChrome();
-  const copy = SITE_V2_COPY.cart;
+  const copy = siteV2CartCopy(ui);
   // packageTitle only — never append serviceName (avoids "2500 Instagram Likes Instagram Likes").
   const headline = item.quantityLabel?.trim() || item.title;
   const sub = item.priceLabel

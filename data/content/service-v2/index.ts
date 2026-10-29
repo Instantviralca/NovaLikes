@@ -32,3 +32,4 @@ export { SERVICE_V2_UK_CONTENT } from './markets/uk';
 export { SERVICE_V2_CA_CONTENT } from './markets/ca';
 export { SERVICE_V2_AU_CONTENT } from './markets/au';
 export { getServiceV2MarketContent } from './markets';
+export { SERVICE_V2_DE_CONTENT, getServiceV2LocaleContent } from './locales/de';

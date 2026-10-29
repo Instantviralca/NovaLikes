@@ -5,7 +5,7 @@ import { Check, Lock } from 'lucide-react';
 import { CheckoutButton } from '@/components/commerce/cart/checkout-button';
 import { CouponForm } from '@/components/commerce/cart/coupon-form';
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
+import { siteV2CartCopy } from '@/lib/site-v2/locale-commerce-copy';
 import { formatMoney } from '@/lib/pricing/format';
 import type { CartTotals } from '@/types/cart';
 import { cn } from '@/lib/utils';
@@ -18,7 +18,7 @@ type CartSummaryProps = {
 
 export function CartSummary({ totals, className, couponCode }: CartSummaryProps) {
   const { ui } = useI18nChrome();
-  const copy = SITE_V2_COPY.cart;
+  const copy = siteV2CartCopy(ui);
   const discountLabel =
     totals.discount.amount > 0 && couponCode
       ? `${ui.cart.discount} (${couponCode})`

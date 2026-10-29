@@ -10,7 +10,8 @@ import { SplitTitle } from '@/components/marketing/home-v5/split-title';
 import { PLATFORM_ICONS, bulletIcon } from '@/components/marketing/home-v5/icons';
 import type { Market } from '@/lib/market/config';
 import { resolvePublicHref } from '@/lib/market/paths';
-import { applyFromPrice, formatCardPrice } from '@/lib/marketing/home-v5/from-price';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
+import { applyFromPrice } from '@/lib/marketing/home-v5/from-price';
 
 type Service = HomeV5Content['services'][number];
 
@@ -78,17 +79,19 @@ export function ServiceBlock({
   index,
   platformLabel,
   href,
+  priceTemplate,
 }: {
   service: Service;
   index: number;
   platformLabel: string;
   href: string;
+  priceTemplate: string;
 }) {
   const platform = service.platform as 'instagram' | 'tiktok';
   const PlatformIcon = PLATFORM_ICONS[platform];
   const MetricIcon = METRIC_ICONS[service.metric] ?? UserPlus;
   const visual = SERVICE_VISUALS[service.slug];
-  const price = formatCardPrice(service.slug);
+  const price = applyFromPrice(priceTemplate, service.slug);
   const color = CHIP_COLORS[index % CHIP_COLORS.length];
   const headingId = `${service.slug}-heading`;
   const bullets = (service.bullets as readonly string[])
@@ -169,9 +172,11 @@ export function ServiceBlock({
 export function HomeV5Services({
   content = HOME_V5,
   market = null,
+  locale = DEFAULT_LOCALE,
 }: {
   content?: HomeV5Content;
   market?: Market | null;
+  locale?: Locale;
 }) {
   return (
     <section className="services" aria-label="Services">
@@ -189,7 +194,8 @@ export function HomeV5Services({
                   service={service}
                   index={index}
                   platformLabel={content.hero.tabs[platform].label}
-                  href={resolvePublicHref(`/${service.slug}`, { market })}
+                  href={resolvePublicHref(`/${service.slug}`, { locale, market })}
+                  priceTemplate={content.hero.cardPrice}
                 />
               </li>
             );

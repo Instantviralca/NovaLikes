@@ -10,9 +10,11 @@ import {
 import { PlatformTabPanel, PlatformTabs } from '@/components/marketing/home-v5/platform-tabs';
 import { HOME_V5 } from '@/data/content/home-v5';
 import type { HomeV5Content } from '@/data/content/home-v5-types';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import type { Market } from '@/lib/market/config';
 import { resolvePublicHref } from '@/lib/market/paths';
-import { formatCardPrice } from '@/lib/marketing/home-v5/from-price';
+import { loadUi } from '@/lib/i18n/content/load';
+import { applyFromPrice } from '@/lib/marketing/home-v5/from-price';
 
 const PLATFORM_ORDER: PlatformKey[] = ['instagram', 'tiktok', 'facebook'];
 
@@ -21,11 +23,14 @@ type HeroCard = { slug: string; title: string; line: string; icon: string };
 export function HomeV5Hero({
   content = HOME_V5,
   market = null,
+  locale = DEFAULT_LOCALE,
 }: {
   content?: HomeV5Content;
   market?: Market | null;
+  locale?: Locale;
 }) {
   const { hero } = content;
+  const choosePlatform = loadUi(locale).serviceV2Ui.choosePlatform;
   const [igName, ttName] = hero.title.highlight.split(' & ');
 
   const tabMeta = PLATFORM_ORDER.map((key) => {
@@ -47,7 +52,7 @@ export function HomeV5Hero({
       <div className="wrap center">
         <p className="eyebrow">{hero.eyebrow}</p>
         <h1 className="h1">
-          {hero.title.lead}{' '}
+          {hero.title.lead ? <>{hero.title.lead}{' '}</> : null}
           <span className="hl">
             <span className="h1-tile t-ig" aria-hidden="true">
               <CameraSquare className="ic" />
@@ -63,7 +68,7 @@ export function HomeV5Hero({
         </h1>
         <p className="lead">{hero.subtitle}</p>
         <PlatformTabs
-          label="Choose a platform"
+          label={choosePlatform}
           tabs={tabMeta.map(({ key, label, icon, panelClass }) => ({
             key,
             label,
@@ -75,12 +80,12 @@ export function HomeV5Hero({
             <PlatformTabPanel key={tab.key} tabKey={tab.key} panelClass={tab.panelClass}>
               {tab.cards.map((card) => {
                 const CardIcon = cardIcon(card.icon);
-                const price = formatCardPrice(card.slug);
+                const price = applyFromPrice(hero.cardPrice, card.slug);
                 return (
                   <Link
                     key={card.slug}
                     className="svc-card"
-                    href={resolvePublicHref(`/${card.slug}`, { market })}
+                    href={resolvePublicHref(`/${card.slug}`, { locale, market })}
                   >
                     <span className="svc-ic">
                       <CardIcon className="ic" />

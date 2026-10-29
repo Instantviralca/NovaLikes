@@ -22,7 +22,7 @@ export function SplitTitle({
 }) {
   return (
     <Tag id={id} className={cn(className)}>
-      {title.lead}{' '}
+      {title.lead ? <>{title.lead}{' '}</> : null}
       <span className="hl">
         {title.highlight}
         {pen ? <PenUnderline /> : null}

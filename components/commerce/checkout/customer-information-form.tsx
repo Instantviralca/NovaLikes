@@ -3,7 +3,6 @@
 import { Mail } from 'lucide-react';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
 import type { CustomerInformation } from '@/types/checkout';
 
 type CustomerInformationFormProps = {
@@ -22,7 +21,7 @@ export function CustomerInformationForm({
   hideLegend = false,
 }: CustomerInformationFormProps) {
   const { ui } = useI18nChrome();
-  const optional = SITE_V2_COPY.checkout.optional;
+  const optional = ui.checkout.optional;
 
   return (
     <fieldset>

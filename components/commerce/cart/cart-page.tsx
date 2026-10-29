@@ -10,7 +10,7 @@ import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { nlBody, nlDisplay } from '@/components/marketing/home-v5/fonts';
 import { formatCartItemsHeading } from '@/components/site-v2/cart-helpers';
 import { routes } from '@/config/routes';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
+import { siteV2CartCopy } from '@/lib/site-v2/locale-commerce-copy';
 import { useCart } from '@/lib/cart';
 import { localizeHref } from '@/lib/i18n/paths';
 import { cn } from '@/lib/utils';
@@ -20,7 +20,7 @@ import '@/components/site-v2/site-v2.css';
 export function CartPage() {
   const cart = useCart();
   const { locale, ui } = useI18nChrome();
-  const copy = SITE_V2_COPY.cart;
+  const copy = siteV2CartCopy(ui);
   const fontClassName = `${nlDisplay.variable} ${nlBody.variable}`;
 
   if (!cart.isHydrated) {

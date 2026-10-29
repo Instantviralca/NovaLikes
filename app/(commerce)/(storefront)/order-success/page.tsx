@@ -5,7 +5,7 @@ import { ArrowRight, Check, Clock } from 'lucide-react';
 import { ConversionTracker } from '@/components/analytics/ConversionTracker';
 import { nlBody, nlDisplay, preloadHomeDisplayFont } from '@/components/marketing/home-v5/fonts';
 import { routes } from '@/config/routes';
-import { SITE_V2_COPY } from '@/data/content/site-v2-copy';
+import { siteV2OrderSuccessNextSteps } from '@/lib/site-v2/locale-commerce-copy';
 import { allowMockPayments } from '@/lib/config/env';
 import { ACCOUNT_UI } from '@/lib/customers/messages';
 import { getCustomerFromCookies } from '@/lib/customers/session';
@@ -40,7 +40,7 @@ export default async function OrderSuccessPage({ searchParams }: OrderSuccessPag
   const orderIdParam = params.orderId?.trim();
   const email = params.email?.trim();
   const fontClassName = `${nlDisplay.variable} ${nlBody.variable}`;
-  const nextSteps = SITE_V2_COPY.orderSuccess.next;
+  const nextSteps = siteV2OrderSuccessNextSteps(ui);
 
   let verified = false;
   let paymentPending = false;
