@@ -85,7 +85,12 @@ export function V2PackagePicker({
 }: V2PackagePickerProps) {
   const { locale } = useI18nChrome();
   const usePickerSummaryInDialog =
-    locale === 'de' || locale === 'es' || locale === 'fr' || locale === 'it' || locale === 'pt-br';
+    locale === 'de' ||
+    locale === 'es' ||
+    locale === 'fr' ||
+    locale === 'it' ||
+    locale === 'pt-br' ||
+    locale === 'ar';
   const tierDefs = copy.tiers ?? [];
   const hasTiers =
     tierDefs.length > 0 && packages.some((p) => Boolean(p.package.commentType));

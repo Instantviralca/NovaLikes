@@ -450,6 +450,15 @@ export const ENGLISH_UI = {
     choosePlatform: 'Choose a platform',
     pageHero: 'Page hero',
   },
+  homeV5Ui: {
+    profilePosts: 'Posts',
+    profileFollowers: 'Followers',
+    profileFollowing: 'Following',
+    chipLikes: 'Likes',
+    chipFollowers: 'Followers',
+    faqWhatsapp: 'Ask us on WhatsApp',
+    heroJoiner: '&',
+  },
   checkoutPayment: {
     cardMethod: 'Credit / Debit Card',
     card: 'Card',
@@ -509,6 +518,7 @@ export type UiDictionary = {
     choosePlatform: string;
     pageHero: string;
   };
+  homeV5Ui: { [K in keyof typeof ENGLISH_UI.homeV5Ui]: string };
   checkoutPayment: {
     cardMethod: string;
     card: string;

@@ -440,5 +440,14 @@
     "growthTimeline": "Linha do tempo de crescimento",
     "accountGrowth": "Crescimento da conta",
     "liveTracking": "Rastreamento ao vivo"
+  },
+  "homeV5Ui": {
+    "profilePosts": "Publicações",
+    "profileFollowers": "Seguidores",
+    "profileFollowing": "Seguindo",
+    "chipLikes": "Curtidas",
+    "chipFollowers": "Seguidores",
+    "faqWhatsapp": "Pergunte no WhatsApp",
+    "heroJoiner": "&"
   }
 }

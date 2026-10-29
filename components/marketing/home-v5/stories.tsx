@@ -3,9 +3,11 @@ import { Heart, Star, UserPlus } from 'lucide-react';
 import { HOME_V5 } from '@/data/content/home-v5';
 import type { HomeV5Content } from '@/data/content/home-v5-types';
 import { SplitTitle } from '@/components/marketing/home-v5/split-title';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
+import { loadUi } from '@/lib/i18n/content/load';
 
 /** Decorative profile card visual (matches the prototype). */
-function ProfileVisual() {
+function ProfileVisual({ labels }: { labels: ReturnType<typeof loadUi>['homeV5Ui'] }) {
   return (
     <div className="vis vis-profile" aria-hidden="true">
       <span className="bg-blob" />
@@ -22,15 +24,15 @@ function ProfileVisual() {
         <div className="pf-stats">
           <span>
             <b className="bar" />
-            <em>Posts</em>
+            <em>{labels.profilePosts}</em>
           </span>
           <span className="on">
             <b className="bar" />
-            <em>Followers</em>
+            <em>{labels.profileFollowers}</em>
           </span>
           <span>
             <b className="bar" />
-            <em>Following</em>
+            <em>{labels.profileFollowing}</em>
           </span>
         </div>
         <div className="pf-grid">
@@ -43,10 +45,10 @@ function ProfileVisual() {
         </div>
       </div>
       <span className="chip-float cf-1 rv-pop">
-        <Heart className="ic" aria-hidden="true" /> Likes
+        <Heart className="ic" aria-hidden="true" /> {labels.chipLikes}
       </span>
       <span className="chip-float cf-2 rv-pop">
-        <UserPlus className="ic" aria-hidden="true" /> Followers
+        <UserPlus className="ic" aria-hidden="true" /> {labels.chipFollowers}
       </span>
       <svg className="doodle d-spark" viewBox="0 0 60 60">
         <path d="M8 30h12M40 30h12M30 8v12M30 40v12" />
@@ -85,7 +87,14 @@ function GrowthVisual() {
   );
 }
 
-export function HomeV5Stories({ content = HOME_V5 }: { content?: HomeV5Content }) {
+export function HomeV5Stories({
+  content = HOME_V5,
+  locale = DEFAULT_LOCALE,
+}: {
+  content?: HomeV5Content;
+  locale?: Locale;
+}) {
+  const homeV5Ui = loadUi(locale).homeV5Ui;
   return (
     <>
       {content.stories.map((story, index) => {
@@ -102,7 +111,11 @@ export function HomeV5Stories({ content = HOME_V5 }: { content?: HomeV5Content }
                 </blockquote>
               </div>
               <div className={reversed ? 'story-vis rv-left' : 'story-vis rv-right'}>
-                {story.visual === 'profile' ? <ProfileVisual /> : <GrowthVisual />}
+                {story.visual === 'profile' ? (
+                  <ProfileVisual labels={homeV5Ui} />
+                ) : (
+                  <GrowthVisual />
+                )}
               </div>
             </div>
           </section>

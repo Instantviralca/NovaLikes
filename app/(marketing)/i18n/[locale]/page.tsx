@@ -9,6 +9,7 @@ import { HOME_V5_ES } from '@/data/content/home-v5-es';
 import { HOME_V5_FR } from '@/data/content/home-v5-fr';
 import { HOME_V5_IT } from '@/data/content/home-v5-it';
 import { HOME_V5_PT_BR } from '@/data/content/home-v5-pt-br';
+import { HOME_V5_AR } from '@/data/content/home-v5-ar';
 import { isLocalizedLocale } from '@/lib/i18n/config';
 import { loadHomepageHub, loadMetadataBundle, loadUi } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
@@ -34,7 +35,14 @@ export default async function LocalizedHomePage({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocalizedLocale(locale)) notFound();
 
-  if (locale === 'de' || locale === 'es' || locale === 'fr' || locale === 'it' || locale === 'pt-br') {
+  if (
+    locale === 'de' ||
+    locale === 'es' ||
+    locale === 'fr' ||
+    locale === 'it' ||
+    locale === 'pt-br' ||
+    locale === 'ar'
+  ) {
     preloadHomeDisplayFont();
     const fontVars = `${nlDisplay.variable} ${nlBody.variable}`;
     const homeContent =
@@ -46,7 +54,9 @@ export default async function LocalizedHomePage({ params }: PageProps) {
             ? HOME_V5_FR
             : locale === 'it'
               ? HOME_V5_IT
-              : HOME_V5_PT_BR;
+              : locale === 'pt-br'
+                ? HOME_V5_PT_BR
+                : HOME_V5_AR;
     return (
       <HomeV5View fontClassName={fontVars} content={homeContent} locale={locale} />
     );

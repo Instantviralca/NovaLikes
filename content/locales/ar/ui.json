@@ -51,7 +51,7 @@
     "brandSummary": "خدمات نمو موثوقة وشفافة لوسائل التواصل الاجتماعي، مع التعليم والوضوح أولاً.",
     "tagline": "النمو على إنستغرام وتيك توك وفيسبوك، كله في مكان واحد.",
     "helpSupport": "المساعدة والدعم",
-    "whatsapp247": "WhatsApp 24/7",
+    "whatsapp247": "واتساب على مدار الساعة",
     "yourOrder": "طلبك",
     "payCard": "بطاقة"
   },
@@ -180,19 +180,19 @@
     "continuing": "جارٍ المتابعة…",
     "unableToContinue": "تعذر المتابعة إلى الدفع.",
     "checkoutTimeout": "يستغرق الدفع وقتًا أطول من المتوقع. حاول مرة أخرى.",
-    "addedToast": "Added to your cart",
-    "viewCart": "View cart",
-    "itemsCount": "{count} items · One-time purchase",
-    "itemCount": "1 item · One-time purchase",
-    "addAnotherService": "Add another service",
-    "drawerFine": "Secure checkout · No password needed",
-    "pageFine": "Secure checkout · Prices in USD",
-    "itemsHeading": "{count} items",
-    "itemHeading": "1 item",
-    "trustNoPassword": "No password needed",
-    "trustStartWithin": "Most orders start within 6–8 hours",
-    "trustRefill": "6-month refill on every order",
-    "trustWhatsapp": "24/7 WhatsApp support"
+    "addedToast": "تمت الإضافة إلى السلة",
+    "viewCart": "عرض السلة",
+    "itemsCount": "{count} عناصر · شراء لمرة واحدة",
+    "itemCount": "عنصر واحد · شراء لمرة واحدة",
+    "addAnotherService": "أضف خدمة أخرى",
+    "drawerFine": "دفع آمن · بدون كلمة مرور",
+    "pageFine": "دفع آمن · الأسعار بالدولار",
+    "itemsHeading": "{count} عناصر",
+    "itemHeading": "عنصر واحد",
+    "trustNoPassword": "بدون كلمة مرور",
+    "trustStartWithin": "تبدأ معظم الطلبات خلال 6–8 ساعات",
+    "trustRefill": "إعادة تعبئة 6 أشهر مع كل طلب",
+    "trustWhatsapp": "دعم واتساب على مدار الساعة"
   },
   "checkout": {
     "title": "الدفع",
@@ -240,27 +240,27 @@
     "stepReview": "المراجعة",
     "stepPayment": "الدفع",
     "progressAria": "خطوات الدفع",
-    "total": "Total",
-    "oneTime": "One-time payment. No subscription.",
-    "orderSummaryToggle": "Order summary",
-    "stepCart": "Cart",
-    "stepDetailsPayment": "Details & payment",
-    "stepDone": "Done",
-    "backToCart": "Back to cart",
-    "yourDetails": "Your details",
-    "updatesHint": "Order updates go here",
-    "optional": "(optional)",
-    "encrypted": "Encrypted",
-    "haveCoupon": "Have a coupon code?",
-    "placeOrderWithTotal": "Place Order · {total}",
-    "legalTerms": "Terms",
-    "legalPrivacy": "Privacy",
-    "legalRefund": "Refund policy",
-    "legalContact": "Contact",
-    "trustNoPassword": "No password needed",
-    "trustStartWithin": "Most orders start within 6–8 hours",
-    "trustRefill": "6-month refill on every order",
-    "trustWhatsapp": "24/7 WhatsApp support"
+    "total": "الإجمالي",
+    "oneTime": "دفعة واحدة. بدون اشتراك.",
+    "orderSummaryToggle": "ملخص الطلب",
+    "stepCart": "السلة",
+    "stepDetailsPayment": "البيانات والدفع",
+    "stepDone": "تم",
+    "backToCart": "العودة إلى السلة",
+    "yourDetails": "بياناتك",
+    "updatesHint": "نرسل تحديثات الطلب إلى هنا",
+    "optional": "(اختياري)",
+    "encrypted": "مشفّر",
+    "haveCoupon": "لديك رمز خصم؟",
+    "placeOrderWithTotal": "إتمام الطلب · {total}",
+    "legalTerms": "الشروط",
+    "legalPrivacy": "الخصوصية",
+    "legalRefund": "الاسترداد",
+    "legalContact": "اتصل بنا",
+    "trustNoPassword": "بدون كلمة مرور",
+    "trustStartWithin": "تبدأ معظم الطلبات خلال 6–8 ساعات",
+    "trustRefill": "إعادة تعبئة 6 أشهر مع كل طلب",
+    "trustWhatsapp": "دعم واتساب على مدار الساعة"
   },
   "orderSuccess": {
     "paymentConfirmed": "تم تأكيد الدفع",
@@ -274,9 +274,9 @@
     "trackOrder": "تتبع الطلب",
     "backHome": "العودة إلى الرئيسية",
     "ariaLabel": "نجاح الطلب",
-    "nextEmail": "We send a confirmation to your email.",
-    "nextTiming": "Most orders start within 6–8 hours and finish 4–6 hours later.",
-    "nextTrack": "Follow progress any time on the Track Order page."
+    "nextEmail": "نرسل لك تأكيدًا على بريدك الإلكتروني.",
+    "nextTiming": "تبدأ معظم الطلبات خلال 6–8 ساعات وتنتهي بعدها بـ4–6 ساعات.",
+    "nextTrack": "تابع التقدّم في أي وقت من صفحة «تتبع الطلب»."
   },
   "trackOrder": {
     "title": "تتبع طلبك",
@@ -304,21 +304,21 @@
     "heading": "إجابة سريعة"
   },
   "serviceV2Ui": {
-    "weUse": "We use",
-    "oneTime": "One-time",
-    "buyServiceAria": "Buy {platform} {service}",
-    "choosePlatform": "Choose a platform",
-    "pageHero": "Page hero"
+    "weUse": "نستخدم",
+    "oneTime": "لمرة واحدة",
+    "buyServiceAria": "شراء {service} {platform}",
+    "choosePlatform": "اختر المنصة",
+    "pageHero": "رأس الصفحة"
   },
   "checkoutPayment": {
-    "cardMethod": "Credit / Debit Card",
-    "card": "Card"
+    "cardMethod": "بطاقة ائتمان أو خصم",
+    "card": "بطاقة"
   },
   "headerAria": {
-    "cartMany": "Cart, {count} items",
-    "cartOne": "Cart, 1 item",
-    "openMenu": "Open NovaLikes menu",
-    "openCart": "Open cart"
+    "cartMany": "السلة، {count} عناصر",
+    "cartOne": "السلة، عنصر واحد",
+    "openMenu": "فتح قائمة NovaLikes",
+    "openCart": "فتح السلة"
   },
   "orderDialog": {
     "title": "تفاصيل الطلب",
@@ -331,11 +331,11 @@
     "paymentReassuranceAria": "ضمانات الدفع",
     "secureCheckoutEncrypted": "دفع آمن · دفع مشفّر",
     "moneyBackGuarantee": "ضمان استرداد خلال 30 يومًا",
-    "notesLabel": "Order notes (optional)",
-    "notesPlaceholder": "Anything we should know about this order?",
-    "notesHintComments": "Add your own comments, one per line, ask for another language, or ask for gradual delivery. Leave empty and our team writes the comments.",
-    "notesHintDefault": "Want gradual delivery? Tell us the pace you prefer.",
-    "close": "Close",
+    "notesLabel": "ملاحظات الطلب (اختياري)",
+    "notesPlaceholder": "هل هناك ما يجب أن نعرفه عن هذا الطلب؟",
+    "notesHintComments": "أضف تعليقاتك الخاصة، كل تعليق في سطر، أو اطلب لغة أخرى أو تسليمًا تدريجيًا. اتركه فارغًا وسيكتب فريقنا التعليقات.",
+    "notesHintDefault": "تريد تسليمًا تدريجيًا؟ أخبرنا بالوتيرة التي تفضّلها.",
+    "close": "إغلاق",
     "labels": {
       "Instagram username": "اسم مستخدم Instagram",
       "TikTok username": "اسم مستخدم TikTok",
@@ -440,5 +440,14 @@
     "growthTimeline": "الجدول الزمني للنمو",
     "accountGrowth": "نمو الحساب",
     "liveTracking": "تتبع مباشر"
+  },
+  "homeV5Ui": {
+    "profilePosts": "منشورات",
+    "profileFollowers": "متابعون",
+    "profileFollowing": "يتابع",
+    "chipLikes": "لايكات",
+    "chipFollowers": "متابعون",
+    "faqWhatsapp": "اسألنا على واتساب",
+    "heroJoiner": "و"
   }
 }

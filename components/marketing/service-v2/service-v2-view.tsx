@@ -28,7 +28,11 @@ import { buildBreadcrumb } from '@/lib/linking';
 import type { Market } from '@/lib/market/config';
 import { loadMarketServiceFaqItemsByPrefix } from '@/lib/market/content/load';
 import { resolvePublicHref } from '@/lib/market/paths';
-import { applyFromPrice } from '@/lib/marketing/home-v5/from-price';
+import {
+  applyFromPrice,
+  isolatePriceForLocale,
+} from '@/lib/marketing/home-v5/from-price';
+import { vsMobileRowLabels } from '@/lib/marketing/service-v2/vs-mobile-labels';
 import {
   getServiceFromPriceLabel,
   resolveHeroSubtitle,
@@ -41,6 +45,7 @@ import type { Service } from '@/types/service';
 import { Music2, ThumbsUp } from 'lucide-react';
 
 import './service-v2.css';
+import './service-v2-rtl.css';
 
 const IMG_SIZES = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px';
 
@@ -134,10 +139,17 @@ function InlineRichText({
   return <>{nodes}</>;
 }
 
-function fillFromPrice(template: string, slug: string, fromPrice: string | null): string {
+function fillFromPrice(
+  template: string,
+  slug: string,
+  fromPrice: string | null,
+  locale: Locale,
+): string {
   if (!template.includes('{fromPrice}')) return template;
-  if (!fromPrice) return applyFromPrice(template, slug);
-  return template.split('{fromPrice}').join(fromPrice);
+  if (!fromPrice) return applyFromPrice(template, slug, locale);
+  return template
+    .split('{fromPrice}')
+    .join(isolatePriceForLocale(fromPrice, locale));
 }
 
 function badgeLabelFor(badge: PackageBadgeId, locale: Locale): string {
@@ -409,7 +421,9 @@ export function ServiceV2View({
   const fromPrice = getServiceFromPriceLabel(service.slug);
   const subtitle =
     resolveHeroSubtitle(copy.hero.subtitle, service.slug) ??
-    (fromPrice ? fillFromPrice(copy.hero.subtitle, service.slug, fromPrice) : copy.hero.subtitle);
+    (fromPrice
+      ? fillFromPrice(copy.hero.subtitle, service.slug, fromPrice, locale ?? DEFAULT_LOCALE)
+      : copy.hero.subtitle);
 
   const packages = getActivePackagesByServiceSlug(service.slug);
   const chromeUi = loadUi(locale);
@@ -438,7 +452,7 @@ export function ServiceV2View({
     ...copy.faq.extra.map((item) => ({
       id: item.id,
       question: item.question,
-      answer: fillFromPrice(item.answer, service.slug, fromPrice),
+      answer: fillFromPrice(item.answer, service.slug, fromPrice, locale ?? DEFAULT_LOCALE),
     })),
   ];
   const firstFaqId = faqEntries[0]?.id;
@@ -481,7 +495,8 @@ export function ServiceV2View({
               locale === 'es' ||
               locale === 'fr' ||
               locale === 'it' ||
-              locale === 'pt-br'
+              locale === 'pt-br' ||
+              locale === 'ar'
                 ? copy.meta.name
                 : undefined
             }
@@ -654,7 +669,7 @@ export function ServiceV2View({
           <div>
             <SplitTitle title={copy.cost.title} className="h2 mid" pen />
             <p className="body ink">
-              {fillFromPrice(copy.cost.intro, service.slug, fromPrice)}
+              {fillFromPrice(copy.cost.intro, service.slug, fromPrice, locale ?? DEFAULT_LOCALE)}
             </p>
             <ul className="ticks">
               {copy.cost.points.map((point) => (
@@ -840,6 +855,7 @@ export function ServiceV2View({
               <tbody>
                 {copy.vs.rows.map((row) => {
                   const rowFrom = getServiceFromPriceLabel(row.slug) ?? '';
+                  const vsLabels = vsMobileRowLabels(locale ?? DEFAULT_LOCALE, copy.vs.cols);
                   const isCurrent = row.current === true;
                   return (
                     <tr key={row.slug} className={isCurrent ? 'cur' : undefined}>
@@ -854,8 +870,10 @@ export function ServiceV2View({
                         )}
                       </th>
                       <td>{row.changes}</td>
-                      <td>{row.needs}</td>
-                      <td className="vfrom">{rowFrom}</td>
+                      <td data-label={vsLabels.needsLabel}>{row.needs}</td>
+                      <td className="vfrom" data-label={vsLabels.fromLabel}>
+                        {rowFrom}
+                      </td>
                     </tr>
                   );
                 })}
@@ -980,7 +998,11 @@ export function ServiceV2View({
           </div>
           <div className="more-cards">
             {copy.more.services.map((svc) => {
-              const priceLine = applyFromPrice(copy.more.cardPrice, svc.slug);
+              const priceLine = applyFromPrice(
+                copy.more.cardPrice,
+                svc.slug,
+                locale ?? DEFAULT_LOCALE,
+              );
               return (
                 <Link key={svc.slug} className="mcard rv-up" href={serviceHref(svc.slug)}>
                   <div className="mc-vis">

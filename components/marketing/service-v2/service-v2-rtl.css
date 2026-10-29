@@ -1,0 +1,146 @@
+/* RTL overrides for Service v2 — only when an ancestor sets dir="rtl" (e.g. /ar). LTR unchanged. */
+
+[dir='rtl'] .svc-v2 {
+  text-align: start;
+}
+
+[dir='rtl'] .svc-v2 .h1,
+[dir='rtl'] .svc-v2 .lead,
+[dir='rtl'] .svc-v2 .crumbs,
+[dir='rtl'] .svc-v2 .trust {
+  text-align: center;
+}
+
+[dir='rtl'] .svc-v2 .h1-tile {
+  margin-right: 0;
+  margin-inline-end: 0.14em;
+}
+
+[dir='rtl'] .svc-v2 .pen {
+  left: auto;
+  right: -2%;
+}
+
+[dir='rtl'] .svc-v2 .tlink,
+[dir='rtl'] .svc-v2 .promo-btn,
+[dir='rtl'] .svc-v2 .dark-btn,
+[dir='rtl'] .svc-v2 .buy .ic,
+[dir='rtl'] .svc-v2 .sticky-cta .ic,
+[dir='rtl'] .svc-v2 .mcard .sq .ic {
+  transform: scaleX(-1);
+}
+
+/* Same column template as LTR; `dir=rtl` on the page places the number column on the right. */
+[dir='rtl'] .svc-v2 .tl-step {
+  grid-template-columns: 40px 1fr;
+}
+
+[dir='rtl'] .svc-v2 .tl-body {
+  text-align: start;
+}
+
+[dir='rtl'] .svc-v2 .tl-step::before {
+  left: auto;
+  right: 19px;
+}
+
+[dir='rtl'] .svc-v2 .tl-body p {
+  max-width: none;
+}
+
+[dir='rtl'] .svc-v2 .mu-input,
+[dir='rtl'] .svc-v2 .mu-chips span,
+[dir='rtl'] .svc-v2 .pk-q,
+[dir='rtl'] .svc-v2 .pk-pr,
+[dir='rtl'] .svc-v2 .pk-price,
+[dir='rtl'] .svc-v2 .pk-save,
+[dir='rtl'] .svc-v2 .usd,
+[dir='rtl'] .svc-v2 .ctable td:nth-child(2),
+[dir='rtl'] .svc-v2 .vtable .vfrom {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+[dir='rtl'] .svc-v2 .mu-input {
+  text-align: start;
+}
+
+[dir='rtl'] .svc-v2 .mu-input .at {
+  margin-right: 0;
+  margin-inline-end: 2px;
+}
+
+[dir='rtl'] .svc-v2 .caret {
+  margin-left: 0;
+  margin-inline-start: 2px;
+}
+
+[dir='rtl'] .svc-v2 .ctable th,
+[dir='rtl'] .svc-v2 .ctable td,
+[dir='rtl'] .svc-v2 .vtable th,
+[dir='rtl'] .svc-v2 .vtable td {
+  text-align: start;
+}
+
+[dir='rtl'] .svc-v2 .best-tag {
+  margin-left: 0;
+  margin-inline-start: 8px;
+}
+
+[dir='rtl'] .svc-v2 .g-k {
+  margin-right: 0;
+  margin-inline-end: 6px;
+}
+
+[dir='rtl'] .svc-v2 .faq-list summary {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .svc-v2 .faq-list details p {
+  padding: 0 0 24px 60px;
+}
+
+[dir='rtl'] .svc-v2 .diagram .n2 {
+  left: 82.5%;
+}
+
+[dir='rtl'] .svc-v2 .diagram .n3 {
+  left: 17.5%;
+}
+
+[dir='rtl'] .svc-v2 .doodle-pen {
+  right: auto;
+  left: -70px;
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .svc-v2 .pc-chip {
+  left: auto;
+  right: 16px;
+}
+
+[dir='rtl'] .svc-v2 .pk-tier {
+  text-align: start;
+}
+
+@media (max-width: 640px) {
+  [dir='rtl'] .svc-v2 .h1,
+  [dir='rtl'] .svc-v2 .lead,
+  [dir='rtl'] .svc-v2 .crumbs,
+  [dir='rtl'] .svc-v2 .trust {
+    text-align: start;
+  }
+
+  [dir='rtl'] .svc-v2 .tl-step::before {
+    right: 17px;
+  }
+
+  [dir='rtl'] .svc-v2 .diagram .dg-node.n3 {
+    left: 24%;
+  }
+
+  [dir='rtl'] .svc-v2 .sticky-cta {
+    left: 88px;
+    right: 16px;
+  }
+}

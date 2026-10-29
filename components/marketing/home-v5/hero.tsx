@@ -30,7 +30,9 @@ export function HomeV5Hero({
   locale?: Locale;
 }) {
   const { hero } = content;
-  const choosePlatform = loadUi(locale).serviceV2Ui.choosePlatform;
+  const ui = loadUi(locale);
+  const choosePlatform = ui.serviceV2Ui.choosePlatform;
+  const heroJoiner = ui.homeV5Ui.heroJoiner;
   const [igName, ttName] = hero.title.highlight.split(' & ');
 
   const tabMeta = PLATFORM_ORDER.map((key) => {
@@ -57,7 +59,7 @@ export function HomeV5Hero({
             <span className="h1-tile t-ig" aria-hidden="true">
               <CameraSquare className="ic" />
             </span>
-            {igName} &{' '}
+            {igName} {heroJoiner}{' '}
             <span className="h1-tile t-tt" aria-hidden="true">
               <Music2 className="ic" aria-hidden="true" />
             </span>
@@ -84,7 +86,7 @@ export function HomeV5Hero({
             <PlatformTabPanel key={tab.key} tabKey={tab.key} panelClass={tab.panelClass}>
               {tab.cards.map((card) => {
                 const CardIcon = cardIcon(card.icon);
-                const price = applyFromPrice(hero.cardPrice, card.slug);
+                const price = applyFromPrice(hero.cardPrice, card.slug, locale);
                 return (
                   <Link
                     key={card.slug}

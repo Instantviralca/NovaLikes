@@ -80,22 +80,24 @@ export function ServiceBlock({
   platformLabel,
   href,
   priceTemplate,
+  locale = DEFAULT_LOCALE,
 }: {
   service: Service;
   index: number;
   platformLabel: string;
   href: string;
   priceTemplate: string;
+  locale?: Locale;
 }) {
   const platform = service.platform as 'instagram' | 'tiktok';
   const PlatformIcon = PLATFORM_ICONS[platform];
   const MetricIcon = METRIC_ICONS[service.metric] ?? UserPlus;
   const visual = SERVICE_VISUALS[service.slug];
-  const price = applyFromPrice(priceTemplate, service.slug);
+  const price = applyFromPrice(priceTemplate, service.slug, locale);
   const color = CHIP_COLORS[index % CHIP_COLORS.length];
   const headingId = `${service.slug}-heading`;
   const bullets = (service.bullets as readonly string[])
-    .map((bullet) => applyFromPrice(bullet, service.slug))
+    .map((bullet) => applyFromPrice(bullet, service.slug, locale))
     .filter(Boolean);
   const questions = [service.why, service.how];
 
@@ -196,6 +198,7 @@ export function HomeV5Services({
                   platformLabel={content.hero.tabs[platform].label}
                   href={resolvePublicHref(`/${service.slug}`, { locale, market })}
                   priceTemplate={content.hero.cardPrice}
+                  locale={locale}
                 />
               </li>
             );

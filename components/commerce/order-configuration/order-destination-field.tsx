@@ -1,5 +1,6 @@
 'use client';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
@@ -26,6 +27,7 @@ export function OrderDestinationField({
   className,
   autoFocus,
 }: OrderDestinationFieldProps) {
+  const { locale } = useI18nChrome();
   const id = `order-destination-${field.id}`;
   const describedBy = error ? `${id}-error` : field.helpText ? `${id}-help` : undefined;
   const required = Boolean(field.validation?.required && !field.optional);
@@ -39,6 +41,7 @@ export function OrderDestinationField({
       <Input
         id={id}
         name={field.name}
+        dir={locale === 'ar' ? 'ltr' : undefined}
         type={field.type === 'url' ? 'url' : 'text'}
         inputMode={field.type === 'url' ? 'url' : 'text'}
         autoComplete="off"

@@ -335,8 +335,9 @@
   .vtable tr{padding:16px 18px;border-bottom:1px solid var(--line)}
   .vtable tbody th,.vtable td{padding:0;border:0}
   .vtable td{margin-top:6px;font-size:15px}
-  .vtable td:nth-child(3)::before{content:"Needs: ";font-weight:800;color:var(--ink)}
-  .vtable td.vfrom::before{content:"From ";font-weight:700;color:var(--body)}
+  .vtable td:nth-child(3)::before{content:attr(data-label) ": ";font-weight:800;color:var(--ink)}
+  .vtable td.vfrom::before{content:attr(data-label) " ";font-weight:700;color:var(--body)}
+  [lang^="fr"] .vtable td:nth-child(3)::before,html[lang^="fr"] .vtable td:nth-child(3)::before{content:attr(data-label) "\00a0: "}
   .vtable tr.cur{background:var(--accent-1)}
   .vtable tr.cur th,.vtable tr.cur td{background:transparent}
 }

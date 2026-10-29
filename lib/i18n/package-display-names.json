@@ -196,6 +196,13 @@
       "1000 curtidas para Página do Facebook",
       "2500 curtidas no Instagram",
       "10000 visualizações High Quality no TikTok"
+    ],
+    "ar": [
+      "10 تعليق انستقرام Premium",
+      "25 تعليق انستقرام High Quality",
+      "1000 لايك لصفحة فيسبوك",
+      "2500 لايك انستقرام",
+      "10000 مشاهدة تيك توك High Quality"
     ]
   },
   "it": [
@@ -328,6 +335,72 @@
     [
       "YouTube Subscribers",
       "inscritos no YouTube"
+    ]
+  ],
+  "ar": [
+    [
+      "Facebook Page Likes",
+      "لايك لصفحة فيسبوك"
+    ],
+    [
+      "Facebook Post Likes",
+      "لايك لمنشور فيسبوك"
+    ],
+    [
+      "High Quality Instagram Comments",
+      "تعليق انستقرام High Quality"
+    ],
+    [
+      "Premium Instagram Comments",
+      "تعليق انستقرام Premium"
+    ],
+    [
+      "High Quality TikTok Views",
+      "مشاهدة تيك توك High Quality"
+    ],
+    [
+      "Premium TikTok Views",
+      "مشاهدة تيك توك Premium"
+    ],
+    [
+      "Instagram Likes",
+      "لايك انستقرام"
+    ],
+    [
+      "Instagram Views",
+      "مشاهدة انستقرام"
+    ],
+    [
+      "Instagram Followers",
+      "متابع انستقرام"
+    ],
+    [
+      "Instagram Comments",
+      "تعليق انستقرام"
+    ],
+    [
+      "TikTok Likes",
+      "لايك تيك توك"
+    ],
+    [
+      "TikTok Views",
+      "مشاهدة تيك توك"
+    ],
+    [
+      "TikTok Followers",
+      "متابع تيك توك"
+    ],
+    [
+      "Facebook Followers",
+      "متابع فيسبوك"
+    ],
+    [
+      "YouTube Views",
+      "مشاهدة يوتيوب"
+    ],
+    [
+      "YouTube Subscribers",
+      "مشترك يوتيوب"
     ]
   ]
 }

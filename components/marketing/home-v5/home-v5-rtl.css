@@ -1,0 +1,66 @@
+/* RTL overrides for Home v5 — /ar only via dir="rtl". LTR unchanged. */
+
+[dir='rtl'] .home-v5 {
+  text-align: start;
+}
+
+[dir='rtl'] .home-v5 .center {
+  text-align: center;
+}
+
+[dir='rtl'] .home-v5 .h1-tile {
+  margin-right: 0;
+  margin-inline-end: 0.12em;
+}
+
+[dir='rtl'] .home-v5 .pen {
+  left: auto;
+  right: -2%;
+}
+
+[dir='rtl'] .home-v5 .btn {
+  padding: 0 24px 0 8px;
+}
+
+[dir='rtl'] .home-v5 .btn .ic,
+[dir='rtl'] .home-v5 .svc-card .chev,
+[dir='rtl'] .home-v5 .sticky-cta .ic {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .home-v5 .svc-card .chev {
+  right: auto;
+  left: 16px;
+}
+
+[dir='rtl'] .home-v5 .svc-card:hover .chev {
+  transform: scaleX(-1) translateX(-3px);
+}
+
+[dir='rtl'] .home-v5 .tabpanel {
+  text-align: start;
+}
+
+[dir='rtl'] .home-v5 .callout {
+  padding: 4px 22px 4px 0;
+  border-left: 0;
+  border-right: 3px solid #ffd9c2;
+}
+
+[dir='rtl'] .home-v5 .story.rev .story-text {
+  order: 0;
+}
+
+@keyframes nl-marquee-rtl {
+  to {
+    transform: translateX(50%);
+  }
+}
+
+[dir='rtl'] .home-v5 .mq-track {
+  animation-name: nl-marquee-rtl;
+}
+
+[dir='rtl'] .home-v5 .h2.left {
+  text-align: start;
+}

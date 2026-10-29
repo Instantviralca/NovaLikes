@@ -3,6 +3,7 @@ import { SERVICE_V2_ES_CONTENT } from '../es';
 import { SERVICE_V2_FR_CONTENT } from '../fr';
 import { SERVICE_V2_IT_CONTENT } from '../it';
 import { SERVICE_V2_PT_BR_CONTENT } from '../pt-br';
+import { SERVICE_V2_AR_CONTENT } from '../ar';
 import { DE_BUY_INSTAGRAM_FOLLOWERS_V2 } from './buy-instagram-followers';
 import { DE_BUY_INSTAGRAM_LIKES_V2 } from './buy-instagram-likes';
 import { DE_BUY_INSTAGRAM_VIEWS_V2 } from './buy-instagram-views';
@@ -28,7 +29,7 @@ export const SERVICE_V2_DE_CONTENT: Record<string, ServiceV2Content> = {
   'buy-facebook-post-likes': DE_BUY_FACEBOOK_POST_LIKES_V2,
 };
 
-/** Locale v2 copy for a core English slug (de, es, fr, it, pt-br). Other locales stay on their current views. */
+/** Locale v2 copy for a core English slug (de, es, fr, it, pt-br, ar). Other locales stay on their current views. */
 export function getServiceV2LocaleContent(
   locale: string,
   coreSlug: string,
@@ -38,5 +39,6 @@ export function getServiceV2LocaleContent(
   if (locale === 'fr') return SERVICE_V2_FR_CONTENT[coreSlug];
   if (locale === 'it') return SERVICE_V2_IT_CONTENT[coreSlug];
   if (locale === 'pt-br') return SERVICE_V2_PT_BR_CONTENT[coreSlug];
+  if (locale === 'ar') return SERVICE_V2_AR_CONTENT[coreSlug];
   return undefined;
 }

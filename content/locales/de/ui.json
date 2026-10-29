@@ -440,5 +440,14 @@
     "growthTimeline": "Wachstumszeitachse",
     "accountGrowth": "Account-Wachstum",
     "liveTracking": "Live-Tracking"
+  },
+  "homeV5Ui": {
+    "profilePosts": "Beiträge",
+    "profileFollowers": "Follower",
+    "profileFollowing": "Gefolgt",
+    "chipLikes": "Likes",
+    "chipFollowers": "Follower",
+    "faqWhatsapp": "Fragen Sie uns auf WhatsApp",
+    "heroJoiner": "&"
   }
 }

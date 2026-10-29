@@ -26,6 +26,7 @@ import { loadServiceFaqItems, type LocalizedServiceBundle } from '@/lib/i18n/con
 import type { UiDictionary } from '@/lib/i18n/content/ui-english';
 import { buildBreadcrumb } from '@/lib/linking';
 import { applyFromPrice } from '@/lib/marketing/home-v5/from-price';
+import { vsMobileRowLabels } from '@/lib/marketing/service-v2/vs-mobile-labels';
 import {
   formatQuantityShort,
   getServiceFromPriceLabel,
@@ -618,6 +619,7 @@ export function IgFollowersV1View({
               <tbody>
                 {copy.vs.rows.map((row) => {
                   const rowFrom = getServiceFromPriceLabel(row.slug) ?? '';
+                  const vsLabels = vsMobileRowLabels(locale, copy.vs.cols);
                   const isCurrent = 'current' in row && row.current === true;
                   return (
                     <tr key={row.slug} className={isCurrent ? 'cur' : undefined}>
@@ -632,8 +634,10 @@ export function IgFollowersV1View({
                         )}
                       </th>
                       <td>{row.changes}</td>
-                      <td>{row.needs}</td>
-                      <td className="vfrom">{rowFrom}</td>
+                      <td data-label={vsLabels.needsLabel}>{row.needs}</td>
+                      <td className="vfrom" data-label={vsLabels.fromLabel}>
+                        {rowFrom}
+                      </td>
                     </tr>
                   );
                 })}

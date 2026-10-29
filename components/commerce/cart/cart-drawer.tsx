@@ -21,14 +21,20 @@ import { cn } from '@/lib/utils';
 
 import '@/components/site-v2/site-v2.css';
 
-type DrawerPos = { top: number; right: number } | null;
+type DrawerPos = { top: number; right?: number; left?: number } | null;
 
-function readCartAnchorPos(): DrawerPos {
+function readCartAnchorPos(isRtl: boolean): DrawerPos {
   if (typeof window === 'undefined') return null;
   if (window.matchMedia('(max-width: 640px)').matches) return null;
   const anchor = document.querySelector<HTMLElement>('[data-analytics="nav-cart"]');
-  if (!anchor) return { top: 70, right: 16 };
+  if (!anchor) return isRtl ? { top: 70, left: 16 } : { top: 70, right: 16 };
   const rect = anchor.getBoundingClientRect();
+  if (isRtl) {
+    return {
+      top: Math.round(rect.bottom + 8),
+      left: Math.round(Math.max(8, rect.left)),
+    };
+  }
   return {
     top: Math.round(rect.bottom + 8),
     right: Math.round(Math.max(8, window.innerWidth - rect.right)),
@@ -52,9 +58,11 @@ export function CartDrawer() {
     setMounted(true);
   }, []);
 
+  const isRtl = locale === 'ar';
+
   const updatePos = useCallback(() => {
-    setPos(readCartAnchorPos());
-  }, []);
+    setPos(readCartAnchorPos(isRtl));
+  }, [isRtl]);
 
   useEffect(() => {
     if (!isCartOpen) return;
@@ -83,7 +91,9 @@ export function CartDrawer() {
 
   const drawerStyle =
     pos != null
-      ? ({ top: pos.top, right: pos.right, left: 'auto', bottom: 'auto' } as const)
+      ? isRtl
+        ? ({ top: pos.top, left: pos.left ?? 16, right: 'auto', bottom: 'auto' } as const)
+        : ({ top: pos.top, right: pos.right ?? 16, left: 'auto', bottom: 'auto' } as const)
       : undefined;
 
   const panel = (

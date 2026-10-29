@@ -13,6 +13,7 @@ const PACKAGE_PHRASES_FR = packageDisplayNames.fr as unknown as PhrasePair[];
 const PACKAGE_PHRASES_DE = packageDisplayNames.de as unknown as PhrasePair[];
 const PACKAGE_PHRASES_IT = packageDisplayNames.it as unknown as PhrasePair[];
 const PACKAGE_PHRASES_PT_BR = packageDisplayNames['pt-br'] as unknown as PhrasePair[];
+const PACKAGE_PHRASES_AR = packageDisplayNames.ar as unknown as PhrasePair[];
 
 const PACKAGE_PHRASES_BY_LOCALE: Partial<Record<Locale, readonly PhrasePair[]>> = {
   es: PACKAGE_PHRASES_ES,
@@ -20,6 +21,7 @@ const PACKAGE_PHRASES_BY_LOCALE: Partial<Record<Locale, readonly PhrasePair[]>> 
   de: PACKAGE_PHRASES_DE,
   it: PACKAGE_PHRASES_IT,
   'pt-br': PACKAGE_PHRASES_PT_BR,
+  ar: PACKAGE_PHRASES_AR,
 };
 
 function applyPackagePhrases(englishName: string, phrases: readonly PhrasePair[]): string {

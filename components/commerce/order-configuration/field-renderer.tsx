@@ -1,5 +1,6 @@
 'use client';
 
+import { useI18nChrome } from '@/components/i18n/i18n-chrome';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -28,8 +29,11 @@ export function FieldRenderer({
   error,
   selectPlaceholder = 'Select…',
 }: FieldRendererProps) {
+  const { locale } = useI18nChrome();
   const id = `order-field-${field.id}`;
   const describedBy = error ? `${id}-error` : field.helpText ? `${id}-help` : undefined;
+  const ltrField =
+    locale === 'ar' && (field.type === 'url' || field.type === 'username');
   const required = Boolean(field.validation?.required && !field.optional);
 
   if (field.type === 'textarea') {
@@ -127,6 +131,7 @@ export function FieldRenderer({
       <Input
         id={id}
         name={field.name}
+        dir={ltrField ? 'ltr' : undefined}
         type={inputType}
         placeholder={field.placeholder}
         value={String(value ?? '')}

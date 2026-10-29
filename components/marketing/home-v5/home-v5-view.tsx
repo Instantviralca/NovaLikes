@@ -14,6 +14,7 @@ import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import type { Market } from '@/lib/market/config';
 import { cn } from '@/lib/utils';
 import '@/components/marketing/home-v5/home-v5.css';
+import '@/components/marketing/home-v5/home-v5-rtl.css';
 
 /**
  * Homepage v5 root: English `/`, a market variant, or `/de` (HOME_V5_DE).
@@ -35,11 +36,11 @@ export function HomeV5View({
       <HomeV5Hero content={content} market={market} locale={locale} />
       <HomeV5Marquee content={content} />
       <HomeV5Statement content={content} />
-      <HomeV5Stories content={content} />
+      <HomeV5Stories content={content} locale={locale} />
       <HomeV5Services content={content} market={market} locale={locale} />
       <HomeV5Why content={content} />
       <HomeV5Promises content={content} />
-      <HomeV5Faq content={content} />
+      <HomeV5Faq content={content} locale={locale} />
       <HomeV5GetStarted content={content} market={market} locale={locale} />
       <HomeV5StickyCta content={content} />
     </div>

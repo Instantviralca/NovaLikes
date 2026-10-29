@@ -508,3 +508,16 @@
 @media (max-width:640px){.tool-cards.three{grid-template-columns:minmax(0,1fr)}}
 .coupon .input{min-width:0}
 @media (max-width:640px){.drawer{max-height:calc(100vh - 16px);overflow:auto;border-radius:18px}}
+
+/* RTL: cart drawer + checkout chrome (/ar) */
+[dir='rtl'] .site-v2 .drawer.is-portal:not([style*='left']){
+  right:auto;
+  left:16px;
+}
+[dir='rtl'] .site-v2 .drawer .tlink .ic,
+[dir='rtl'] .site-v2 .dr-add .ic{
+  transform:scaleX(-1);
+}
+[dir='rtl'] .site-v2 .co-mobile-sum summary{
+  flex-direction:row-reverse;
+}

@@ -5,7 +5,7 @@ import packageDisplayNames from '@/lib/i18n/package-display-names.json';
 import type { Locale } from '@/lib/i18n/config';
 
 /** English catalog titles paired with `expected` entries in package-display-names.json. */
-const CATALOG_CASES: Record<'es' | 'fr' | 'de' | 'it' | 'pt-br', readonly string[]> = {
+const CATALOG_CASES: Record<'es' | 'fr' | 'de' | 'it' | 'pt-br' | 'ar', readonly string[]> = {
   es: [
     '10 Premium Instagram Comments',
     '25 High Quality Instagram Comments',
@@ -40,10 +40,17 @@ const CATALOG_CASES: Record<'es' | 'fr' | 'de' | 'it' | 'pt-br', readonly string
     '2500 Instagram Likes',
     '10000 High Quality TikTok Views',
   ],
+  ar: [
+    '10 Premium Instagram Comments',
+    '25 High Quality Instagram Comments',
+    '1000 Facebook Page Likes',
+    '2500 Instagram Likes',
+    '10000 High Quality TikTok Views',
+  ],
 };
 
 describe('localizePackageDisplayName', () => {
-  for (const locale of ['es', 'fr', 'de', 'it', 'pt-br'] as const) {
+  for (const locale of ['es', 'fr', 'de', 'it', 'pt-br', 'ar'] as const) {
     describe(locale, () => {
       const expected = packageDisplayNames.expected[locale];
       const catalog = CATALOG_CASES[locale];
