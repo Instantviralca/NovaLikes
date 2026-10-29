@@ -11,11 +11,13 @@ type PhrasePair = readonly [en: string, localized: string];
 const PACKAGE_PHRASES_ES = packageDisplayNames.es as unknown as PhrasePair[];
 const PACKAGE_PHRASES_FR = packageDisplayNames.fr as unknown as PhrasePair[];
 const PACKAGE_PHRASES_DE = packageDisplayNames.de as unknown as PhrasePair[];
+const PACKAGE_PHRASES_IT = packageDisplayNames.it as unknown as PhrasePair[];
 
 const PACKAGE_PHRASES_BY_LOCALE: Partial<Record<Locale, readonly PhrasePair[]>> = {
   es: PACKAGE_PHRASES_ES,
   fr: PACKAGE_PHRASES_FR,
   de: PACKAGE_PHRASES_DE,
+  it: PACKAGE_PHRASES_IT,
 };
 
 function applyPackagePhrases(englishName: string, phrases: readonly PhrasePair[]): string {

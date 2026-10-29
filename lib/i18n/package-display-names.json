@@ -182,6 +182,79 @@
       "1000 Facebook Fanpage Likes",
       "2500 Instagram Likes",
       "10000 High Quality TikTok Views"
+    ],
+    "it": [
+      "10 commenti Instagram Premium",
+      "25 commenti Instagram High Quality",
+      "1000 like per Pagina Facebook",
+      "2500 like Instagram",
+      "10000 visualizzazioni TikTok High Quality"
     ]
-  }
+  },
+  "it": [
+    [
+      "Facebook Page Likes",
+      "like per Pagina Facebook"
+    ],
+    [
+      "Facebook Post Likes",
+      "like per post Facebook"
+    ],
+    [
+      "High Quality Instagram Comments",
+      "commenti Instagram High Quality"
+    ],
+    [
+      "Premium Instagram Comments",
+      "commenti Instagram Premium"
+    ],
+    [
+      "High Quality TikTok Views",
+      "visualizzazioni TikTok High Quality"
+    ],
+    [
+      "Premium TikTok Views",
+      "visualizzazioni TikTok Premium"
+    ],
+    [
+      "Instagram Likes",
+      "like Instagram"
+    ],
+    [
+      "Instagram Views",
+      "visualizzazioni Instagram"
+    ],
+    [
+      "Instagram Followers",
+      "follower Instagram"
+    ],
+    [
+      "Instagram Comments",
+      "commenti Instagram"
+    ],
+    [
+      "TikTok Likes",
+      "like TikTok"
+    ],
+    [
+      "TikTok Views",
+      "visualizzazioni TikTok"
+    ],
+    [
+      "TikTok Followers",
+      "follower TikTok"
+    ],
+    [
+      "Facebook Followers",
+      "follower Facebook"
+    ],
+    [
+      "YouTube Views",
+      "visualizzazioni YouTube"
+    ],
+    [
+      "YouTube Subscribers",
+      "iscritti YouTube"
+    ]
+  ]
 }

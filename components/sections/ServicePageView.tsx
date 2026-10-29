@@ -44,8 +44,8 @@ export async function ServicePageView({
     }
   }
 
-  // Locale pilot: /de, /es and /fr service routes use ServiceV2View. Other locales keep today's view.
-  if (!market && (locale === 'de' || locale === 'es' || locale === 'fr')) {
+  // Locale pilot: /de, /es, /fr and /it service routes use ServiceV2View. Other locales keep today's view.
+  if (!market && (locale === 'de' || locale === 'es' || locale === 'fr' || locale === 'it')) {
     const { getServiceV2LocaleContent } = await import('@/data/content/service-v2');
     const v2Locale = getServiceV2LocaleContent(locale, service.slug);
     if (v2Locale) {
