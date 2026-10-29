@@ -32,6 +32,7 @@ import {
   SERVICE_V2_CONTENT,
   SERVICE_V2_DE_CONTENT,
   SERVICE_V2_ES_CONTENT,
+  SERVICE_V2_FR_CONTENT,
   SERVICE_V2_UK_CONTENT,
 } from '@/data/content/service-v2';
 import type { ServiceV2Content } from '@/data/content/service-v2/types';
@@ -712,6 +713,147 @@ describe('ServiceV2View markup for all 10 ES services', () => {
         expect(serviceHrefs.length).toBeGreaterThan(0);
         for (const href of serviceHrefs) {
           expect(href.startsWith('/es/')).toBe(true);
+        }
+      });
+
+      it('keeps pricing and how-it-works anchors', () => {
+        expect(html).toContain('svc-v2');
+        expect(html).toContain('id="pricing-packages"');
+        expect(html).toContain('id="how-it-works"');
+      });
+    });
+  }
+});
+
+const FR_BANNED = [
+  'garanti ',
+  'garantis',
+  'garanties',
+  'instantané',
+  'immédiat',
+  'pas cher',
+  'bon marché',
+  'vrais abonnés',
+  '#1',
+];
+
+function assertNoFrenchBannedWords(raw: string) {
+  const lower = raw.toLowerCase();
+  for (const word of FR_BANNED) {
+    expect(lower).not.toContain(word);
+  }
+}
+
+/** Copy uses U+00A0 before ? ! : ; SSR titles may render as normal spaces. */
+function normalizeFrenchTypography(s: string): string {
+  return s.replace(/\u00a0/g, ' ');
+}
+
+describe('SERVICE_V2_FR_CONTENT copy constraints', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_FR_CONTENT)) {
+    it(`${slug} has no banned French marketing words`, () => {
+      const { keywords: _keywords, ...metaRest } = copy.meta;
+      assertNoFrenchBannedWords(JSON.stringify({ ...copy, meta: metaRest }));
+    });
+  }
+});
+
+describe('ServiceV2View markup for all 10 FR services', () => {
+  for (const [slug, copy] of Object.entries(SERVICE_V2_FR_CONTENT)) {
+    describe(slug, () => {
+      const service = getServiceBySlug(slug)!;
+      const html = renderToStaticMarkup(
+        createElement(ServiceV2View, { service, content: copy, locale: 'fr' }),
+      );
+      const packages = getActivePackagesByServiceSlug(slug);
+      const serviceContent = getServiceContentBySlug(slug);
+      const faqIds = serviceContent?.faq.faqIds ?? [];
+      const frenchFaqs = loadServiceFaqItems('fr', faqIds);
+      const expectedFaqCount = faqIds.length + copy.faq.extra.length;
+
+      it('loads the service', () => {
+        expect(service.slug).toBe(slug);
+      });
+
+      it('renders exactly one H1', () => {
+        expect(html.match(/<h1[\s>]/gi) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.hero.title.highlight);
+        expect(html).not.toMatch(/<h1[^>]*>\s/);
+      });
+
+      it('renders 14 H2s in content order', () => {
+        expect(h2Texts(html).map(normalizeFrenchTypography)).toEqual(
+          expectedH2s(copy).map(normalizeFrenchTypography),
+        );
+      });
+
+      it('has no raw placeholders or unparsed markdown links', () => {
+        const withoutClasses = html.replace(/\sclass="[^"]*"/g, '');
+        expect(withoutClasses).not.toContain('{');
+        expect(withoutClasses).not.toContain('[');
+        expect(withoutClasses).not.toContain('](');
+      });
+
+      it('renders package tiles from the registry, one tier at a time', () => {
+        expect(html.match(/class="pk-tile"/g) ?? []).toHaveLength(packages.length);
+        for (const pkg of packages) {
+          expect(html).toContain(formatQuantityShort(pkg.quantity));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+        }
+        if (copy.picker.tiers?.length) {
+          for (const tier of copy.picker.tiers) {
+            expect(html).toContain(`data-tier="${tier.label}"`);
+            const byTier = packages.filter((p) => p.commentType === tier.label);
+            expect(byTier.length).toBeGreaterThan(0);
+            for (const pkg of byTier) {
+              expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+            }
+          }
+        }
+      });
+
+      it('renders cost rows from the registry with exactly one best row', () => {
+        expect(html).toContain('class="ctable"');
+        expect(html.match(/class="best"/g) ?? []).toHaveLength(1);
+        expect(html).toContain(copy.cost.best);
+        for (const pkg of packages) {
+          expect(html).toContain(costLabel(pkg, copy.meta.unit));
+          expect(html).toContain(formatMoney(pkg.price, pkg.currency));
+        }
+      });
+
+      it('renders French FAQ answers then extra, with no duplicate questions', () => {
+        const details = [...html.matchAll(/data-faq-id="([^"]+)"/g)];
+        expect(details).toHaveLength(expectedFaqCount);
+        for (const item of frenchFaqs) {
+          expect(html).toContain(item.question);
+          expect(html).toContain(item.answer);
+        }
+        for (const extra of copy.faq.extra) {
+          expect(html).toContain(extra.question);
+        }
+        const questions = [
+          ...html.matchAll(/data-faq-id="[^"]+"[\s\S]*?<h3>([\s\S]*?)<\/h3>/g),
+        ].map((m) => stripHtml(m[1]!));
+        expect(new Set(questions).size).toBe(questions.length);
+      });
+
+      it('localizes every internal link under /fr and has no /learn link', () => {
+        expect(html).not.toContain('/learn');
+        const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]!);
+        const internal = hrefs.filter(
+          (href) =>
+            href.startsWith('/') &&
+            !href.startsWith('//') &&
+            !href.startsWith('/assets/'),
+        );
+        expect(internal.length).toBeGreaterThan(0);
+        const bad = internal.filter((href) => href !== '/fr' && !href.startsWith('/fr/'));
+        expect(bad).toEqual([]);
+        const serviceHrefs = internal.filter((href) => href !== '/fr');
+        expect(serviceHrefs.length).toBeGreaterThan(0);
+        for (const href of serviceHrefs) {
+          expect(href.startsWith('/fr/')).toBe(true);
         }
       });
 

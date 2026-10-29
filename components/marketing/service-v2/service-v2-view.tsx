@@ -477,7 +477,9 @@ export function ServiceV2View({
             copy={copy.picker}
             stickyLabel={copy.sticky.label}
             serviceDisplayName={
-              locale === 'de' || locale === 'es' ? copy.meta.name : undefined
+              locale === 'de' || locale === 'es' || locale === 'fr'
+                ? copy.meta.name
+                : undefined
             }
           />
         </div>

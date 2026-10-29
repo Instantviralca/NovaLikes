@@ -171,10 +171,7 @@ export function PricingGrid({
     ? [
         formatQuantityShort(active.package.quantity),
         active.package.commentType ?? '',
-        localizePackageDisplayName(
-          serviceName || active.package.title,
-          locale,
-        ),
+        localizePackageDisplayName(serviceName || active.package.title, locale),
       ]
         .filter(Boolean)
         .join(' ')

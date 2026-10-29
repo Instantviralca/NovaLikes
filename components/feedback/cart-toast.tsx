@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import { Check } from 'lucide-react';
 
 import { useI18nChrome } from '@/components/i18n/i18n-chrome';
+import { localizePackageDisplayName } from '@/lib/i18n/es-visible-display';
 import { nlBody, nlDisplay } from '@/components/marketing/home-v5/fonts';
 import { siteV2CartCopy } from '@/lib/site-v2/locale-commerce-copy';
 import { useCartUi } from '@/lib/cart/cart-ui-context';
@@ -170,10 +171,13 @@ function CartToast({
   onResume: () => void;
 }) {
   const { openCart } = useCartUi();
-  const { ui } = useI18nChrome();
+  const { locale, ui } = useI18nChrome();
   const copy = siteV2CartCopy(ui);
   // packageTitle only — never append serviceName (avoids "2500 Instagram Likes Instagram Likes").
-  const headline = item.quantityLabel?.trim() || item.title;
+  const headline = localizePackageDisplayName(
+    item.quantityLabel?.trim() || item.title,
+    locale,
+  );
   const sub = item.priceLabel
     ? `${copy.addedToast} · ${item.priceLabel}`
     : copy.addedToast;

@@ -84,7 +84,8 @@ export function V2PackagePicker({
   serviceDisplayName,
 }: V2PackagePickerProps) {
   const { locale } = useI18nChrome();
-  const usePickerSummaryInDialog = locale === 'de' || locale === 'es';
+  const usePickerSummaryInDialog =
+    locale === 'de' || locale === 'es' || locale === 'fr';
   const tierDefs = copy.tiers ?? [];
   const hasTiers =
     tierDefs.length > 0 && packages.some((p) => Boolean(p.package.commentType));

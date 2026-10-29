@@ -4,26 +4,29 @@
  */
 
 import type { Locale } from '@/lib/i18n/config';
+import packageDisplayNames from '@/lib/i18n/package-display-names.json';
 
-/** Longer English product/service phrases first. */
-const PACKAGE_PHRASES: readonly [en: string, es: string][] = [
-  ['Facebook Page Likes', 'Me gusta de Página de Facebook'],
-  ['Facebook Post Likes', 'Me gusta de publicaciones de Facebook'],
-  ['High Quality Instagram Comments', 'comentarios de Instagram de alta calidad'],
-  ['Premium Instagram Comments', 'comentarios Premium de Instagram'],
-  ['High Quality TikTok Views', 'visualizaciones de TikTok de alta calidad'],
-  ['Premium TikTok Views', 'visualizaciones Premium de TikTok'],
-  ['Instagram Likes', 'Me gusta de Instagram'],
-  ['Instagram Views', 'visualizaciones de Instagram'],
-  ['Instagram Followers', 'seguidores de Instagram'],
-  ['Instagram Comments', 'comentarios de Instagram'],
-  ['TikTok Likes', 'Me gusta de TikTok'],
-  ['TikTok Views', 'visualizaciones de TikTok'],
-  ['TikTok Followers', 'seguidores de TikTok'],
-  ['Facebook Followers', 'seguidores de Facebook'],
-  ['YouTube Views', 'visualizaciones de YouTube'],
-  ['YouTube Subscribers', 'suscriptores de YouTube'],
-];
+type PhrasePair = readonly [en: string, localized: string];
+
+const PACKAGE_PHRASES_ES = packageDisplayNames.es as unknown as PhrasePair[];
+const PACKAGE_PHRASES_FR = packageDisplayNames.fr as unknown as PhrasePair[];
+const PACKAGE_PHRASES_DE = packageDisplayNames.de as unknown as PhrasePair[];
+
+const PACKAGE_PHRASES_BY_LOCALE: Partial<Record<Locale, readonly PhrasePair[]>> = {
+  es: PACKAGE_PHRASES_ES,
+  fr: PACKAGE_PHRASES_FR,
+  de: PACKAGE_PHRASES_DE,
+};
+
+function applyPackagePhrases(englishName: string, phrases: readonly PhrasePair[]): string {
+  let out = englishName;
+  for (const [en, localized] of phrases) {
+    if (out.includes(en)) {
+      out = out.split(en).join(localized);
+    }
+  }
+  return out;
+}
 
 /** Decorative UI phrases (dashboards, chips, mock cards). Longer first. */
 const DECORATIVE_PHRASES: readonly [en: string, es: string][] = [
@@ -71,18 +74,14 @@ const DECORATIVE_PHRASES: readonly [en: string, es: string][] = [
 ];
 
 /**
- * Localize English catalog package DISPLAY names for Spanish UI only.
+ * Localize English catalog package DISPLAY names for es/de/fr UI.
  * Leaves IDs/prices/quantities untouched — call only at render.
  */
 export function localizePackageDisplayName(englishName: string, locale: Locale): string {
-  if (locale !== 'es' || !englishName) return englishName;
-  let out = englishName;
-  for (const [en, es] of PACKAGE_PHRASES) {
-    if (out.includes(en)) {
-      out = out.split(en).join(es);
-    }
-  }
-  return out;
+  if (!englishName) return englishName;
+  const phrases = PACKAGE_PHRASES_BY_LOCALE[locale];
+  if (!phrases) return englishName;
+  return applyPackagePhrases(englishName, phrases);
 }
 
 /**

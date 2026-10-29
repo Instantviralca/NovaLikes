@@ -1,0 +1,187 @@
+{
+  "_rule": "Cart/toast/checkout package DISPLAY names. Same mechanism as the existing Spanish PACKAGE_PHRASES table in lib/i18n/es-visible-display.ts: replace English catalog fragments, longest first. One table per locale. These names match the names on the v2 service pages.",
+  "es": [
+    [
+      "Facebook Page Likes",
+      "likes para Página de Facebook"
+    ],
+    [
+      "Facebook Post Likes",
+      "likes para publicación de Facebook"
+    ],
+    [
+      "High Quality Instagram Comments",
+      "comentarios High Quality de Instagram"
+    ],
+    [
+      "Premium Instagram Comments",
+      "comentarios Premium de Instagram"
+    ],
+    [
+      "High Quality TikTok Views",
+      "visualizaciones High Quality de TikTok"
+    ],
+    [
+      "Premium TikTok Views",
+      "visualizaciones Premium de TikTok"
+    ],
+    [
+      "Instagram Likes",
+      "likes de Instagram"
+    ],
+    [
+      "Instagram Views",
+      "visualizaciones de Instagram"
+    ],
+    [
+      "Instagram Followers",
+      "seguidores de Instagram"
+    ],
+    [
+      "Instagram Comments",
+      "comentarios de Instagram"
+    ],
+    [
+      "TikTok Likes",
+      "likes de TikTok"
+    ],
+    [
+      "TikTok Views",
+      "visualizaciones de TikTok"
+    ],
+    [
+      "TikTok Followers",
+      "seguidores de TikTok"
+    ],
+    [
+      "Facebook Followers",
+      "seguidores de Facebook"
+    ],
+    [
+      "YouTube Views",
+      "visualizaciones de YouTube"
+    ],
+    [
+      "YouTube Subscribers",
+      "suscriptores de YouTube"
+    ]
+  ],
+  "fr": [
+    [
+      "Facebook Page Likes",
+      "likes pour Page Facebook"
+    ],
+    [
+      "Facebook Post Likes",
+      "likes pour publication Facebook"
+    ],
+    [
+      "High Quality Instagram Comments",
+      "commentaires Instagram High Quality"
+    ],
+    [
+      "Premium Instagram Comments",
+      "commentaires Instagram Premium"
+    ],
+    [
+      "High Quality TikTok Views",
+      "vues TikTok High Quality"
+    ],
+    [
+      "Premium TikTok Views",
+      "vues TikTok Premium"
+    ],
+    [
+      "Instagram Likes",
+      "likes Instagram"
+    ],
+    [
+      "Instagram Views",
+      "vues Instagram"
+    ],
+    [
+      "Instagram Followers",
+      "abonnés Instagram"
+    ],
+    [
+      "Instagram Comments",
+      "commentaires Instagram"
+    ],
+    [
+      "TikTok Likes",
+      "likes TikTok"
+    ],
+    [
+      "TikTok Views",
+      "vues TikTok"
+    ],
+    [
+      "TikTok Followers",
+      "abonnés TikTok"
+    ],
+    [
+      "Facebook Followers",
+      "abonnés Facebook"
+    ],
+    [
+      "YouTube Views",
+      "vues YouTube"
+    ],
+    [
+      "YouTube Subscribers",
+      "abonnés YouTube"
+    ]
+  ],
+  "de": [
+    [
+      "Facebook Page Likes",
+      "Facebook Fanpage Likes"
+    ],
+    [
+      "Facebook Post Likes",
+      "Facebook Post Likes"
+    ],
+    [
+      "Instagram Comments",
+      "Instagram Kommentare"
+    ],
+    [
+      "Instagram Followers",
+      "Instagram Follower"
+    ],
+    [
+      "TikTok Followers",
+      "TikTok Follower"
+    ],
+    [
+      "Facebook Followers",
+      "Facebook Follower"
+    ],
+    [
+      "YouTube Subscribers",
+      "YouTube Abonnenten"
+    ]
+  ],
+  "expected": {
+    "es": [
+      "10 comentarios Premium de Instagram",
+      "25 comentarios High Quality de Instagram",
+      "1000 likes para Página de Facebook",
+      "2500 likes de Instagram",
+      "10000 visualizaciones High Quality de TikTok"
+    ],
+    "fr": [
+      "10 commentaires Instagram Premium",
+      "25 commentaires Instagram High Quality",
+      "1000 likes pour Page Facebook",
+      "2500 likes Instagram",
+      "10000 vues TikTok High Quality"
+    ],
+    "de": [
+      "10 Premium Instagram Kommentare",
+      "1000 Facebook Fanpage Likes",
+      "2500 Instagram Likes",
+      "10000 High Quality TikTok Views"
+    ]
+  }
+}

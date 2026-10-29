@@ -6,6 +6,7 @@ import { HomeV5View } from '@/components/marketing/home-v5/home-v5-view';
 import { HomePageView } from '@/components/sections/HomePageView';
 import { HOME_V5_DE } from '@/data/content/home-v5-de';
 import { HOME_V5_ES } from '@/data/content/home-v5-es';
+import { HOME_V5_FR } from '@/data/content/home-v5-fr';
 import { isLocalizedLocale } from '@/lib/i18n/config';
 import { loadHomepageHub, loadMetadataBundle, loadUi } from '@/lib/i18n/content/load';
 import { buildLocaleMetadata } from '@/lib/i18n/metadata';
@@ -31,10 +32,11 @@ export default async function LocalizedHomePage({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocalizedLocale(locale)) notFound();
 
-  if (locale === 'de' || locale === 'es') {
+  if (locale === 'de' || locale === 'es' || locale === 'fr') {
     preloadHomeDisplayFont();
     const fontVars = `${nlDisplay.variable} ${nlBody.variable}`;
-    const homeContent = locale === 'de' ? HOME_V5_DE : HOME_V5_ES;
+    const homeContent =
+      locale === 'de' ? HOME_V5_DE : locale === 'es' ? HOME_V5_ES : HOME_V5_FR;
     return (
       <HomeV5View fontClassName={fontVars} content={homeContent} locale={locale} />
     );

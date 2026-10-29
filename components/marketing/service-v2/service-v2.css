@@ -334,6 +334,7 @@
 .ck-item p{margin:4px 0 0;font-size:16px;line-height:1.6;color:var(--body)}
 @media (max-width:1024px){.cost-grid{grid-template-columns:1fr;gap:32px}}
 @media (max-width:640px){
+  .diagram .dg-node.n3{left:76%}
   .ck-grid{grid-template-columns:1fr}
   .ctable th,.ctable td{padding:12px 10px;font-size:14px}
   .best-tag{display:block;width:max-content;margin:4px 0 0}
