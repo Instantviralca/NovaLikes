@@ -169,8 +169,14 @@ export async function PATCH(request: Request) {
     }
     return NextResponse.json({ ok: true, order: details });
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Unable to update order.';
-    const status = message.includes('not found') ? 404 : 400;
-    return NextResponse.json({ ok: false, error: message }, { status });
+    console.error('[admin/orders PATCH]', error);
+    const message = error instanceof Error ? error.message : '';
+    if (message.toLowerCase().includes('not found')) {
+      return NextResponse.json({ ok: false, error: 'Not found' }, { status: 404 });
+    }
+    return NextResponse.json(
+      { ok: false, error: 'Unable to update order. Please try again later.' },
+      { status: 500 },
+    );
   }
 }

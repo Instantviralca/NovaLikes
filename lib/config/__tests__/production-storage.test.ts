@@ -9,6 +9,7 @@ describe('production CMS storage guard', () => {
     IV_ENV: process.env.IV_ENV,
     DATABASE_URL: process.env.DATABASE_URL,
     IV_PERSISTENCE: process.env.IV_PERSISTENCE,
+    IV_PAYMENTS_MODE: process.env.IV_PAYMENTS_MODE,
     NEXT_PHASE: process.env.NEXT_PHASE,
   };
 
@@ -19,6 +20,8 @@ describe('production CMS storage guard', () => {
     else process.env.DATABASE_URL = previous.DATABASE_URL;
     if (previous.IV_PERSISTENCE === undefined) delete process.env.IV_PERSISTENCE;
     else process.env.IV_PERSISTENCE = previous.IV_PERSISTENCE;
+    if (previous.IV_PAYMENTS_MODE === undefined) delete process.env.IV_PAYMENTS_MODE;
+    else process.env.IV_PAYMENTS_MODE = previous.IV_PAYMENTS_MODE;
     if (previous.NEXT_PHASE === undefined) delete process.env.NEXT_PHASE;
     else process.env.NEXT_PHASE = previous.NEXT_PHASE;
   });
@@ -26,6 +29,24 @@ describe('production CMS storage guard', () => {
   it('uses memory store in tests', () => {
     expect(cmsUsesMemoryStore()).toBe(true);
     expect(() => assertCmsProductionDatabase()).not.toThrow();
+  });
+
+  it('rejects mock payments in production', () => {
+    process.env.IV_PAYMENTS_MODE = 'mock';
+    process.env.DATABASE_URL = 'postgresql://USER:PASSWORD@127.0.0.1:5432/novalikes';
+    process.env.IV_ADMIN_PASSWORD = 'strong-admin-password-ok';
+    process.env.IV_ADMIN_SESSION_SECRET = 'session-secret-at-least-32-chars!!';
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://novalikes.com';
+    const result = validateEnv({ forceProduction: true });
+    expect(result.ok).toBe(false);
+    expect(
+      result.issues.some(
+        (i) =>
+          i.key === 'IV_PAYMENTS_MODE' &&
+          i.level === 'error' &&
+          i.message === 'Mock payments are not allowed in production.',
+      ),
+    ).toBe(true);
   });
 
   it('flags memory persistence as a production error', () => {
@@ -40,6 +61,8 @@ describe('production CMS storage guard', () => {
   });
 
   it('does not treat missing email as a launch-blocking error', () => {
+    delete process.env.IV_PERSISTENCE;
+    delete process.env.IV_PAYMENTS_MODE;
     delete process.env.RESEND_API_KEY;
     delete process.env.SMTP_HOST;
     delete process.env.EMAIL_FROM;

@@ -402,6 +402,7 @@ describe('Env validation', () => {
     delete process.env.IV_ADMIN_SESSION_SECRET;
     delete process.env.EMAIL_FROM;
     delete process.env.IV_PERSISTENCE;
+    delete process.env.IV_PAYMENTS_MODE;
     process.env.ADMIN_PASSWORD = 'alias-admin-password-strong';
     process.env.SESSION_SECRET = 'alias-session-secret-32chars!!';
     process.env.RESEND_API_KEY = 're_test_key';
@@ -421,6 +422,7 @@ describe('Env validation', () => {
     delete process.env.RESEND_API_KEY;
     delete process.env.RESEND_FROM_EMAIL;
     delete process.env.IV_PERSISTENCE;
+    delete process.env.IV_PAYMENTS_MODE;
     process.env.ADMIN_PASSWORD = 'alias-admin-password-strong';
     process.env.SESSION_SECRET = 'alias-session-secret-32chars!!';
     process.env.SMTP_HOST = '127.0.0.1';

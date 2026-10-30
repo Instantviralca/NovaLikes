@@ -29,7 +29,16 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: 'Invalid credentials.' }, { status: 401 });
   }
 
-  const result = await authenticateAuthor(email, password, clientIp(request));
+  let result;
+  try {
+    result = await authenticateAuthor(email, password, clientIp(request));
+  } catch (error) {
+    console.error('[author/login]', error);
+    return NextResponse.json(
+      { ok: false, error: 'Sign-in is unavailable right now. Please try again later.' },
+      { status: 500 },
+    );
+  }
   if (!result.ok) {
     return NextResponse.json({ ok: false, error: result.error }, { status: result.status });
   }

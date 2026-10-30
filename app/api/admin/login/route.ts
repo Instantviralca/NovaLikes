@@ -22,7 +22,10 @@ function clientIp(request: Request): string {
   );
 }
 
-function loginErrorHint(error: unknown): string {
+const LOGIN_UNAVAILABLE_MESSAGE =
+  'Sign-in is unavailable right now. Please try again later.';
+
+function loginErrorDetailForLog(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
   const lower = message.toLowerCase();
 
@@ -107,7 +110,7 @@ export async function POST(request: Request) {
     response.cookies.set(ADMIN_CSRF_COOKIE, session.csrfToken, getAdminCsrfCookieOptions());
     return response;
   } catch (error) {
-    console.error('[admin/login]', error);
-    return NextResponse.json({ ok: false, error: loginErrorHint(error) }, { status: 500 });
+    console.error('[admin/login]', loginErrorDetailForLog(error), error);
+    return NextResponse.json({ error: LOGIN_UNAVAILABLE_MESSAGE }, { status: 500 });
   }
 }
