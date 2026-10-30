@@ -2,7 +2,7 @@
 
 /*
   NovaLikes Design System ? deeper coral / orange
-  Primary: #E85D04 ù Hover: #C2410C
+  Primary: #E85D04 ÔøΩ Hover: #C2410C
 */
 
 @theme inline {
@@ -59,7 +59,7 @@
   --container-lg: 64rem;
   --container-xl: 80rem;
 
-  /* Spacing scale ? VDS: 8 ù 16 ù 24 ù 32 ù 48 ù 64 ù 96 ù 120 */
+  /* Spacing scale ? VDS: 8 ÔøΩ 16 ÔøΩ 24 ÔøΩ 32 ÔøΩ 48 ÔøΩ 64 ÔøΩ 96 ÔøΩ 120 */
   --spacing-vds-1: var(--space-8);
   --spacing-vds-2: var(--space-16);
   --spacing-vds-3: var(--space-24);
@@ -71,7 +71,7 @@
 }
 
 :root {
-  /* Site tokens ù Buzzoid-aligned surfaces + action orange */
+  /* Site tokens ÔøΩ Buzzoid-aligned surfaces + action orange */
   --nl-orange: #ff5c00;
   --nl-orange-500: #ff5c00;
   --nl-pink: #ed4ab0;
@@ -86,7 +86,7 @@
   --nl-dark-surface: #0b1a29;
   --nl-eyebrow-bg: #fff3eb;
 
-  /* Brand aliases ù homepage tokens (old components pick these up) */
+  /* Brand aliases ÔøΩ homepage tokens (old components pick these up) */
   --brand-primary: var(--nl-orange);
   --brand-primary-hover: #ea5500;
   --brand-secondary: #ea5500;
@@ -135,7 +135,7 @@
   --vds-warning: var(--color-warning);
   --vds-error: var(--color-error);
 
-  /* Typography scale ù match homepage H1/H2 weights & sizes */
+  /* Typography scale ÔøΩ match homepage H1/H2 weights & sizes */
   --type-hero: clamp(2.125rem, 4vw, 3.5rem);
   --type-h1: clamp(2.125rem, 4vw, 3.5rem);
   --type-h2: clamp(1.625rem, 3vw, 2.5rem);
@@ -207,7 +207,7 @@
   --shadow-lg: 0 16px 40px rgb(20 20 20 / 0.12), 0 4px 12px rgb(20 20 20 / 0.06);
   --shadow-glow: 0 10px 24px -12px rgb(234 88 12 / 0.55);
 
-  /* Gradients ù homepage orange?pink */
+  /* Gradients ÔøΩ homepage orange?pink */
   --gradient-brand: var(--nl-grad);
   --gradient-hero: linear-gradient(160deg, #ffffff 0%, #f6f7fa 55%, #f1f3f7 100%);
   --gradient-dark: linear-gradient(145deg, #12263a 0%, #ff5c00 100%);
@@ -239,7 +239,7 @@
   body {
     @apply min-h-full bg-background font-sans text-foreground antialiased;
     overflow-wrap: break-word;
-    /* Soft washes only ù no filter:blur / backdrop-filter; avoid background-attachment:fixed (mobile paint cost). */
+    /* Soft washes only ‚Äî no filter:blur / backdrop-filter; avoid background-attachment:fixed (mobile paint cost). */
     background-image:
       radial-gradient(ellipse 70% 42% at 100% -10%, rgb(249 115 22 / 0.07), transparent 70%),
       radial-gradient(ellipse 50% 36% at -5% 20%, rgb(236 72 153 / 0.045), transparent 70%);

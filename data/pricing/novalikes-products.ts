@@ -1,4 +1,4 @@
-﻿/**
+/**
  * NovaLikes.com commercial product catalog.
  *
  * Instagram + TikTok package quantities/prices/compare-at aligned to

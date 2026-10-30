@@ -1,4 +1,4 @@
-﻿import {
+import {
   getNovaLikesProductById,
   getNovaLikesProductsByPlatformType,
   NOVALIKES_PRODUCTS,

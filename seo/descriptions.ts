@@ -1,4 +1,4 @@
-﻿import { site } from '@/config/site';
+import { site } from '@/config/site';
 import { ROOT_HOMEPAGE_METADATA_V5 } from '@/data/content/home-v5';
 import { truncateAtWordBoundary } from '@/seo/truncate';
 import type { LearnArticle } from '@/types/blog';
