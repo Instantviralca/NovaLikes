@@ -49,9 +49,7 @@ describe('Article #17 How to grow Instagram followers organically in 2026', () =
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-instagram-followers', label: 'Instagram followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);

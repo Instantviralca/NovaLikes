@@ -47,15 +47,7 @@ describe('Article #7 Buying TikTok followers FYP and account safety', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-followers', label: 'TikTok followers' },
-    ]);
-    expect(commercial.some((link) => link.href === '/buy-tiktok-likes')).toBe(
-      false,
-    );
-    expect(commercial.some((link) => link.href === '/buy-tiktok-views')).toBe(
-      false,
-    );
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);

@@ -99,8 +99,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-3',
-    'For Reels, Instagram defines Views as the number of times the Reel starts to play or replay. It separately defines Accounts reached as the number of unique accounts that have seen the Reel at least once. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'For Reels, Instagram defines Views as the number of times the Reel starts to play or replay. It separately defines Accounts reached as the number of unique accounts that have seen the Reel at least once. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-open-4',
@@ -123,8 +123,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wh-1',
-    "Instagram's current Help Center describes Reel Views as the number of times the Reel starts to play or replay. (Facebook)",
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram's current Help Center describes Reel Views as the number of times the Reel starts to play or replay. (Instagram Help Center)",
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-wh-2',
@@ -181,8 +181,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-rp-1', 'Yes.'),
   paragraph(
     'p-rp-2',
-    'Instagram explicitly includes replays in its current Reel Views definition. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram explicitly includes replays in its current Reel Views definition. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-rp-3',
@@ -215,8 +215,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-un-1', 'No.'),
   paragraph(
     'p-un-2',
-    'The Reel view metric itself is not a unique-account metric because it includes starts and replays. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'The Reel view metric itself is not a unique-account metric because it includes starts and replays. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-un-3',
@@ -224,8 +224,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-4',
-    "Meta's broader Instagram Insights documentation similarly defines Views as the number of times content was played or displayed, while reach-based metrics focus on unique accounts. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's broader Instagram Insights documentation similarly defines Views as the number of times content was played or displayed, while reach-based metrics focus on unique accounts. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-un-5',
@@ -266,8 +266,8 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-vr-2',
-    'Instagram clearly separates the two in Reel Insights. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram clearly separates the two in Reel Insights. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-vr-ex', 'Example', 3),
   paragraph('p-vr-3', 'Suppose:'),
@@ -307,8 +307,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hi-6',
-    "Instagram's documentation explicitly includes replays in views, so repeat viewing can make the view total higher than unique reach. (Facebook)",
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram's documentation explicitly includes replays in views, so repeat viewing can make the view total higher than unique reach. (Instagram Help Center)",
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-hi-7',
@@ -337,8 +337,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-watch', 'What Is Instagram Reel Watch Time?', 2),
   paragraph(
     'p-wt-1',
-    'Instagram Reel Insights includes Watch time, which Meta defines as the total amount of time a Reel was played. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Reel Insights includes Watch time, which Meta defines as the total amount of time a Reel was played. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-wt-2',
@@ -382,8 +382,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-avg', 'What Is Average Watch Time?', 2),
   paragraph(
     'p-av-1',
-    'Instagram also provides average watch-time information in Reel Insights, helping creators understand the average amount of time viewers spent playing their Reel. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram also provides average watch-time information in Reel Insights, helping creators understand the average amount of time viewers spent playing their Reel. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-av-2',
@@ -425,8 +425,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cm-2',
-    'It defines views around the Reel starting to play or replay. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'It defines views around the Reel starting to play or replay. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-cm-3',
@@ -464,12 +464,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ts-4',
-    'the number of times the Reel starts to play or replay. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'the number of times the Reel starts to play or replay. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ts-5',
-    "So don't insert an unsupported:",
+    'So there is no published rule like:',
   ),
   paragraph(
     'p-ts-6',
@@ -487,8 +487,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sp-1',
-    'Because Instagram includes replays in Reel Views, repeat playback can contribute to total view activity. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Because Instagram includes replays in Reel Views, repeat playback can contribute to total view activity. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sp-2',
@@ -522,16 +522,16 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lp-4',
-    'What we can safely say is:',
+    'What Instagram does say is:',
   ),
   paragraph(
     'p-lp-5',
-    'replays are included in Reel Views. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'replays are included in Reel Views. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-lp-6',
-    'We do not need to invent implementation details that Instagram does not publicly document.',
+    "Instagram doesn't publish more detail than that.",
   ),
 
   heading(
@@ -568,48 +568,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-fo-10',
     'The Reel can be discovered beyond the existing follower audience, and viewers can replay it as well.',
   ),
-
-  heading(
-    'h-options',
-    'Compare Instagram View Options',
-    2,
-  ),
-  paragraph(
-    'p-op-1',
-    'Instagram Reel views are a content-level metric.',
-  ),
-  paragraph(
-    'p-op-2',
-    'Instagram views is a playback-activity service.',
-    [{ href: '/buy-instagram-views', label: 'Instagram views' }],
-  ),
-  paragraph(
-    'p-op-3',
-    'A view service changes the view count, nothing more.',
-  ),
-  paragraph(
-    'p-op-4',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-op', [
-    'more followers,',
-    'Explore placement,',
-    'Reels recommendation,',
-    'likes,',
-    'comments,',
-    'sales,',
-    'or organic reach.',
-  ]),
   {
-    id: 'cta-ig-views',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-instagram-views',
-    heading: 'Compare Instagram View Options',
-    description:
-      'Instagram views measure content playback activity. Compare the available options without treating views as a guarantee of followers, engagement, reach or recommendation performance.',
-    label: 'View Instagram View Packages',
-  },
+      id: 'cta-ig-views',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-instagram-views',
+      heading: 'Compare Instagram View Options',
+      description:
+        'Instagram views measure content playback activity. Compare the available options without treating views as a guarantee of followers, engagement, reach or recommendation performance.',
+      label: 'View Instagram View Packages',
+    },
+
+
 
   heading(
     'h-few-likes',
@@ -632,8 +602,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fl-4',
-    'Instagram tracks Reel Views separately from interactions such as likes, comments, saves and shares. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram tracks Reel Views separately from interactions such as likes, comments, saves and shares. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-fl-5', 'So:'),
   paragraph('p-fl-6', 'high views + lower likes'),
@@ -669,8 +639,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ff-4',
-    'Instagram Reel Insights can show follows generated from a Reel separately from the view count. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Reel Insights can show follows generated from a Reel separately from the view count. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-ff-5', 'This shows why:'),
   paragraph('p-ff-6', 'view ≠ follow'),
@@ -732,8 +702,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-im-1',
-    "Instagram's current Insights model increasingly uses Views as a broad metric for how often content was played or displayed. Meta's Instagram Insights documentation says Views can apply across Reels, posts, Stories, Live videos and ads. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram's current Insights model increasingly uses Views as a broad metric for how often content was played or displayed. Meta's Instagram Insights documentation says Views can apply across Reels, posts, Stories, Live videos and ads. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-im-2',
@@ -754,7 +724,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-im-7',
-    "For a current article, follow Instagram's current UI terminology rather than copying outdated metric labels.",
+    'Use the labels you see in your own Insights today.',
   ),
 
   heading(
@@ -768,7 +738,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ch-2',
-    'The practical response is not to build an article around historical labels.',
+    "So don't rely on older labels.",
   ),
   paragraph(
     'p-ch-3',
@@ -780,8 +750,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ch-5',
-    'Views is the key play/display metric across Instagram Insights, and for Reels it includes starts and replays. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Views is the key play/display metric across Instagram Insights, and for Reels it includes starts and replays. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ch-6',
@@ -799,8 +769,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-who-2',
-    "It does not function like Story viewers where Instagram can show a list of individual accounts that viewed a Story. Instagram's Story Insights documentation distinguishes total Views from unique Viewers. (Facebook)",
-    [{ href: IG_STORY_INSIGHTS, label: 'Facebook', external: true }],
+    "It does not function like Story viewers where Instagram can show a list of individual accounts that viewed a Story. Instagram's Story Insights documentation distinguishes total Views from unique Viewers. (Instagram Help Center)",
+    [{ href: IG_STORY_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-who-3',
@@ -818,8 +788,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-2',
-    'Instagram defines Story Views as the number of times a Story was played or displayed and separately defines Viewers as unique accounts that saw it. (Facebook)',
-    [{ href: IG_STORY_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram defines Story Views as the number of times a Story was played or displayed and separately defines Viewers as unique accounts that saw it. (Instagram Help Center)',
+    [{ href: IG_STORY_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-st-3', 'For Reels:'),
   bullets('ul-st', [
@@ -828,8 +798,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-st-4',
-    '(Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Source: Instagram Help Center.',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-st-5',
@@ -841,7 +811,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-7',
-    'But avoid using Story-specific behaviour to invent Reel rules.',
+    "But Story rules don't tell you how Reel views work.",
   ),
 
   heading(
@@ -885,11 +855,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-al-1',
-    'No guarantee should be made.',
+    'No.',
   ),
   paragraph(
     'p-al-2',
-    'A view service concerns the view metric.',
+    "Instagram's Community Guidelines ban artificially collecting likes, followers or other engagement, and Instagram may remove engagement from inauthentic accounts.",
+    [{ href: 'https://help.instagram.com/477434105621119', label: 'Community Guidelines', external: true }],
   ),
   paragraph(
     'p-al-3',
@@ -1081,14 +1052,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ev-3',
-    'Instagram separates this explicitly from Views. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram separates this explicitly from Views. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-ev-3', '3. Check Watch Time', 3),
   paragraph(
     'p-ev-4',
-    'How much viewing time accumulated? (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'How much viewing time accumulated? (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-ev-4', '4. Check Likes and Comments', 3),
   paragraph(
@@ -1107,8 +1078,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ev-8',
-    'Instagram provides follow information within Reel Insights. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram provides follow information within Reel Insights. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-ev-7', '7. Compare Similar Reels', 3),
   paragraph(
@@ -1168,8 +1139,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-op2-17',
-    'Instagram provides multiple Insights metrics because one number cannot describe every type of performance. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram provides multiple Insights metrics because one number cannot describe every type of performance. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(

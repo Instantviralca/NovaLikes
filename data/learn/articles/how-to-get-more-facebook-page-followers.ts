@@ -114,8 +114,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-open-4',
-    'Facebook defines following a Page as a connection where the person may receive updates from that Page in Feed. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'Facebook defines following a Page as a connection where the person may receive updates from that Page in Feed. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-5',
@@ -141,8 +141,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-open-11',
-    'Facebook also has recommendation systems that can surface suggested posts and Pages to people who do not already follow them, so your existing follower base is not the only possible source of discovery. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'Facebook also has recommendation systems that can surface suggested posts and Pages to people who do not already follow them, so your existing follower base is not the only possible source of discovery. (Facebook Help Center)',
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-12',
@@ -339,8 +339,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-inv-1',
-    'Facebook has an official feature that lets people invite friends to follow a Page or profile. Its current Help Center provides an Invite friends workflow directly from the Page/profile interface. (Facebook)',
-    [{ href: FB_INVITE_FRIENDS, label: 'Facebook', external: true }],
+    'Facebook has an official feature that lets people invite friends to follow a Page or profile. Its current Help Center provides an Invite friends workflow directly from the Page/profile interface. (Facebook Help Center)',
+    [{ href: FB_INVITE_FRIENDS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-inv-2',
@@ -381,8 +381,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-can-1',
-    "Yes. Facebook's current Help Center includes a Page/profile feature for selecting friends and sending invitations to follow. (Facebook)",
-    [{ href: FB_INVITE_FRIENDS, label: 'Facebook', external: true }],
+    "Yes. Facebook's current Help Center includes a Page/profile feature for selecting friends and sending invitations to follow. (Facebook Help Center)",
+    [{ href: FB_INVITE_FRIENDS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-can-2',
@@ -401,14 +401,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sim-1',
-    'Facebook currently provides a setting allowing Page managers to permit their Page to be recommended to people looking at similar Pages. (Facebook)',
-    [{ href: FB_SIMILAR_PAGE_SUGGESTIONS, label: 'Facebook', external: true }],
+    'Facebook currently provides a setting allowing Page managers to permit their Page to be recommended to people looking at similar Pages. (Facebook Help Center)',
+    [{ href: FB_SIMILAR_PAGE_SUGGESTIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-sim-2', 'This is worth checking.'),
   paragraph(
     'p-sim-3',
-    "Facebook's wider recommendation system includes discovery experiences such as Pages you may like and suggested Feed content. (Facebook)",
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    "Facebook's wider recommendation system includes discovery experiences such as Pages you may like and suggested Feed content. (Facebook Help Center)",
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-sim-4',
@@ -488,8 +488,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-share-8',
-    "Facebook's recommendation system can also suggest content from Pages users do not already follow. (Facebook)",
-    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook', external: true }],
+    "Facebook's recommendation system can also suggest content from Pages users do not already follow. (Facebook Help Center)",
+    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -606,8 +606,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-fmt-4', 'Then review your own performance.'),
   paragraph(
     'p-fmt-5',
-    'Facebook provides Page post Insights including metrics such as post reach and engagement, allowing Page managers to evaluate how individual posts perform. (Facebook)',
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook provides Page post Insights including metrics such as post reach and engagement, allowing Page managers to evaluate how individual posts perform. (Facebook Help Center)',
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-fmt-6', 'The useful question is:'),
   paragraph('p-fmt-7', 'Which formats work for my audience?'),
@@ -628,13 +628,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ins-2',
-    'Facebook Page Insights provides information about Page performance, audience demographics and how people respond to posts. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook Page Insights provides information about Page performance, audience demographics and how people respond to posts. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ins-3',
-    'Facebook also provides follower-specific Insights through the Professional Dashboard, and separate demographic information about people following a Page. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook also provides follower-specific Insights through the Professional Dashboard, and separate demographic information about people following a Page. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-ins-4', 'Use that data.'),
   heading('h-ins-month', 'Questions to Ask Every Month', 3),
@@ -649,8 +649,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ins-5',
-    'Meta specifically describes Page Insights as a way to understand Page performance and how people respond to posts. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Meta specifically describes Page Insights as a way to understand Page performance and how people respond to posts. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   figure(
     'fig-loop',
@@ -873,8 +873,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-act-7',
-    'Use Insights to compare your own publishing patterns and content performance. Facebook specifically provides Page and post-level Insights for this purpose. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Use Insights to compare your own publishing patterns and content performance. Facebook specifically provides Page and post-level Insights for this purpose. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading('h-current', '18. Make Your Page Look Current', 2),
@@ -910,8 +910,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-audd-1',
-    'Facebook provides follower demographic data to Page managers through Page Insights. (Facebook)',
-    [{ href: FB_FOLLOWER_DEMOGRAPHICS, label: 'Facebook', external: true }],
+    'Facebook provides follower demographic data to Page managers through Page Insights. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_DEMOGRAPHICS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-audd-2',
@@ -959,8 +959,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-reach-3',
-    "A person may see a Page's content without following it because Facebook can recommend suggested content from Pages the person does not currently follow. (Facebook)",
-    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook', external: true }],
+    "A person may see a Page's content without following it because Facebook can recommend suggested content from Pages the person does not currently follow. (Facebook Help Center)",
+    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-reach-4',
@@ -974,56 +974,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-reach-6',
     'The Page and content still need to create a reason to stay.',
   ),
-
-  heading(
-    'h-vs-service',
-    'Organic Growth vs Facebook Follower Services',
-    2,
-  ),
-  paragraph(
-    'p-vs-1',
-    'Organic audience building and a follower-count service are different things.',
-  ),
-  paragraph('p-vs-2', 'Organic growth focuses on:'),
-  bullets('ul-vs-organic', [
-    'content,',
-    'discovery,',
-    'audience fit,',
-    'interaction,',
-    'and continued publishing.',
-  ]),
-  paragraph(
-    'p-vs-3',
-    "A Facebook follower service concerns the Page's follower-count metric.",
-  ),
-  paragraph(
-    'p-vs-4',
-    'If you want to compare that separate option, Facebook followers is a follower-count service.',
-    [{ href: '/buy-facebook-followers', label: 'Facebook followers' }],
-  ),
-  paragraph(
-    'p-vs-5',
-    'It is not a replacement for organic content strategy or a guaranteed method for increasing:',
-  ),
-  bullets('ul-vs-not', [
-    'organic reach,',
-    'post likes,',
-    'comments,',
-    'Feed ranking,',
-    'website traffic,',
-    'leads,',
-    'or sales.',
-  ]),
   {
-    id: 'cta-fb-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-facebook-followers',
-    heading: 'Compare Facebook Follower Options',
-    description:
-      "Organic audience growth and follower-count services are different approaches. If you're comparing Facebook follower packages, review the available options without treating follower count as a guarantee of reach, engagement or business results.",
-    label: 'View Facebook Followers',
-  },
+      id: 'cta-fb-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-facebook-followers',
+      heading: 'Compare Facebook Follower Options',
+      description:
+        "Organic audience growth and follower-count services are different approaches. If you're comparing Facebook follower packages, review the available options without treating follower count as a guarantee of reach, engagement or business results.",
+      label: 'View Facebook Followers',
+    },
+
+
 
   heading(
     'h-invite-everyone',
@@ -1032,8 +994,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ie-1',
-    "Facebook has official invitation features for following Pages, but a useful organic strategy should still consider relevance rather than treating every interaction as permission to spam someone. Facebook's current documented invitation workflow is focused on inviting friends to follow a Page/profile. (Facebook)",
-    [{ href: FB_INVITE_FRIENDS, label: 'Facebook', external: true }],
+    "Facebook has official invitation features for following Pages, but a useful organic strategy should still consider relevance rather than treating every interaction as permission to spam someone. Facebook's current documented invitation workflow is focused on inviting friends to follow a Page/profile. (Facebook Help Center)",
+    [{ href: FB_INVITE_FRIENDS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ie-2',
@@ -1056,8 +1018,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-grp-1',
-    'Facebook allows Pages to request to join groups in situations where the group allows Page participation. (Facebook)',
-    [{ href: FB_JOIN_GROUP, label: 'Facebook', external: true }],
+    'Facebook allows Pages to request to join groups in situations where the group allows Page participation. (Facebook Help Center)',
+    [{ href: FB_JOIN_GROUP, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-grp-2',
@@ -1093,8 +1055,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-reels-2',
-    'Facebook provides Reel Insights so creators can inspect performance rather than assuming every Reel behaves the same way. (Facebook)',
-    [{ href: FB_REELS_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook provides Reel Insights so creators can inspect performance rather than assuming every Reel behaves the same way. (Facebook Help Center)',
+    [{ href: FB_REELS_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-reels-3', 'The better approach is:'),
   bullets('ul-reels', [
@@ -1232,13 +1194,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rec-1',
-    'Yes. Facebook has recommendation experiences including Pages you may like, and it has a Page setting allowing a Page to be recommended to people viewing similar Pages. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'Yes. Facebook has recommendation experiences including Pages you may like, and it has a Page setting allowing a Page to be recommended to people viewing similar Pages. (Facebook Help Center)',
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-rec-2',
-    'Facebook can also suggest content from Pages people do not currently follow. (Facebook)',
-    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook', external: true }],
+    'Facebook can also suggest content from Pages people do not currently follow. (Facebook Help Center)',
+    [{ href: FB_SUGGESTED_CONTENT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-rec-3',
@@ -1339,8 +1301,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-new-3', 'Step 3: Invite Relevant Friends', 3),
   paragraph(
     'p-new-4',
-    'Facebook provides a native friend-invitation workflow for Pages/profiles. (Facebook)',
-    [{ href: FB_INVITE_FRIENDS, label: 'Facebook', external: true }],
+    'Facebook provides a native friend-invitation workflow for Pages/profiles. (Facebook Help Center)',
+    [{ href: FB_INVITE_FRIENDS, label: 'Facebook Help Center', external: true }],
   ),
   heading(
     'h-new-4',
@@ -1349,8 +1311,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-new-5',
-    'Review whether the Page is allowed to appear as a recommendation alongside similar Pages. (Facebook)',
-    [{ href: FB_SIMILAR_PAGE_SUGGESTIONS, label: 'Facebook', external: true }],
+    'Review whether the Page is allowed to appear as a recommendation alongside similar Pages. (Facebook Help Center)',
+    [{ href: FB_SIMILAR_PAGE_SUGGESTIONS, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-new-5', 'Step 5: Connect Existing Channels', 3),
   paragraph(
@@ -1365,8 +1327,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-new-7', 'Step 7: Review Insights', 3),
   paragraph(
     'p-new-8',
-    'Facebook Page Insights can show Page performance, audience information and post response data. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook Page Insights can show Page performance, audience information and post response data. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   heading(
     'h-new-8',
@@ -1410,8 +1372,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-week-4', 'Week 4: Review', 3),
   paragraph(
     'p-30-2',
-    'Use Page Insights to compare reach and engagement on your posts. Facebook exposes post reach and engagement data through Page Insights. (Facebook)',
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    'Use Page Insights to compare reach and engagement on your posts. Facebook exposes post reach and engagement data through Page Insights. (Facebook Help Center)',
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-30-3', 'Ask:'),
   bullets('ul-week-4', [
@@ -1475,8 +1437,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-meas-4',
-    'Facebook provides follower Insights through the Professional Dashboard and Page performance data through Page Insights. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook provides follower Insights through the Professional Dashboard and Page performance data through Page Insights. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-meas-5',
@@ -1545,8 +1507,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-sys-2', 'Then repeat.'),
   paragraph(
     'p-sys-3',
-    'Facebook gives Pages native tools for invitations, recommendations and Insights, while its broader recommendation systems can introduce users to Pages and content they do not already follow. (Facebook)',
-    [{ href: FB_INVITE_FRIENDS, label: 'Facebook', external: true }],
+    'Facebook gives Pages native tools for invitations, recommendations and Insights, while its broader recommendation systems can introduce users to Pages and content they do not already follow. (Facebook Help Center)',
+    [{ href: FB_INVITE_FRIENDS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-sys-4',
@@ -1605,7 +1567,7 @@ export const HOW_TO_GET_MORE_FACEBOOK_PAGE_FOLLOWERS_ARTICLE: LearnArticleRecord
     authorId: 'author-novalikes-editorial',
     featuredImage: {
       src: `${IMAGE_DIR}/featured.png`,
-      alt: 'How to Get More Facebook Page Followers Organically',
+      alt: 'Sketch of the path from discovering a Facebook Page post to useful content, a Page visit and a follow decision',
       width: 1600,
       height: 900,
       priority: true,

@@ -75,7 +75,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-what-decides', 'What Decides How Many Views a TikTok Gets', 2),
   paragraph(
     'p-wd-1',
-    'TikTok recommends videos using viewer interactions (likes, shares, comments, follows and what people watch), information about the video such as captions, sounds and hashtags, and device and account settings like language and country. It says follower count and past high-performing videos are not direct factors. (TikTok Newsroom)',
+    'TikTok recommends videos using viewer interactions (likes, shares, comments, follows and what people watch), information about the video such as captions, sounds and hashtags, and device and account settings like language and country. When it explained this in 2020, TikTok said follower count and past high-performing videos are not direct factors, although accounts with more followers are likely to get more views. (TikTok Newsroom)',
     [{ href: TT_NEWSROOM_FOR_YOU, label: 'TikTok Newsroom', external: true }],
   ),
   paragraph(
@@ -95,7 +95,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w2', '2. Make it easy to watch to the end', 3),
   paragraph(
     'p-w2',
-    'Cut pauses and repeated points, and keep the video only as long as the idea needs. Film vertically: TikTok says vertical videos, and videos longer than five seconds, perform best. (TikTok Newsroom)',
+    'Cut pauses and repeated points, and keep the video only as long as the idea needs. Film vertically: in its 2020 creator tips, TikTok said vertical videos, and videos longer than five seconds, perform best. (TikTok Newsroom)',
     [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
   ),
 
@@ -109,7 +109,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w4', '4. Use a few relevant hashtags', 3),
   paragraph(
     'p-w4',
-    'Choose hashtags that describe the video. TikTok says #FYP, #ForYou and #ForYouPage work just like any other hashtag, so they are not a shortcut to the For You feed. (TikTok Newsroom)',
+    'Choose hashtags that describe the video. TikTok said in 2020 that #FYP, #ForYou and #ForYouPage work just like any other hashtag, so they are not a shortcut to the For You feed. (TikTok Newsroom)',
     [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
   ),
 
@@ -128,14 +128,14 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w7', '7. Post consistently, not constantly', 3),
   paragraph(
     'p-w7',
-    'TikTok says the number of videos you post will not affect how your content is recommended in the For You feed. (TikTok Newsroom) A schedule you can keep, with videos you are happy with, beats posting several weaker videos a day.',
+    'TikTok said in 2020 that the number of videos you post will not affect how your content is recommended in the For You feed. (TikTok Newsroom) A schedule you can keep, with videos you are happy with, beats posting several weaker videos a day.',
     [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
   ),
 
   heading('h-w8', '8. Give each video time', 3),
   paragraph(
     'p-w8',
-    'TikTok says video performance extends over a couple of days. (TikTok Newsroom) Do not delete a video after a few hours because it started slowly.',
+    'TikTok said in 2020 that video performance extends over a couple of days. (TikTok Newsroom) Do not delete a video after a few hours because it started slowly.',
     [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
   ),
 
@@ -160,7 +160,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Share the link outside TikTok, for example in a group chat, on Instagram or in a newsletter.',
     'Reply to comments early. A video reply can bring new viewers back to the original post.',
     'Pin your strongest video to the top of your profile so profile visitors start there.',
-    'Leave the video up. Deleting and reposting the same file restarts its time to perform.',
+    'Leave the video up rather than deleting it and posting it again.',
   ]),
   paragraph(
     'p-after-1',
@@ -189,9 +189,9 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-dont-1',
-    'Fake engagement is on TikTok’s list of content that is not eligible for the For You feed. (TikTok) Our guide on whether buying TikTok followers affects FYP reach explains what TikTok says about it.',
+    'Fake engagement is on TikTok’s list of content that is not eligible for the For You feed. (TikTok Community Guidelines) Our guide on whether buying TikTok followers affects FYP reach explains what TikTok says about it.',
     [
-      { href: TT_FYF_STANDARDS, label: 'TikTok', external: true },
+      { href: TT_FYF_STANDARDS, label: 'TikTok Community Guidelines', external: true },
       {
         href: '/learn/buying-tiktok-followers-fyp-account-safety',
         label: 'whether buying TikTok followers affects FYP reach',
@@ -209,14 +209,6 @@ const BLOCKS: ArticleContentBlock[] = [
     ],
   ),
 
-  {
-    id: 'cta-tiktok-views',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'Views, likes and followers measure different things. Purchased views are paid views: they do not count towards Creator Rewards qualified views, and content is still what keeps people watching.',
-    serviceSlugs: ['buy-tiktok-views', 'buy-tiktok-likes', 'buy-tiktok-followers'],
-  },
 ];
 
 const CONTENT = BLOCKS.map((block) => {
@@ -290,7 +282,7 @@ export const HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE: LearnArticleRecord = {
   contentReviewed: true,
   lastEditorialUpdate: PUBLISHED_AT,
   keyTakeaways: [
-    'TikTok recommends videos based on viewer interactions, video information and settings, not follower count.',
+    'TikTok recommends videos based on viewer interactions, video information and settings. Follower count is not a direct factor.',
     'The first seconds and how much of the video people watch matter most.',
     'Describe the topic in the caption, on-screen text and speech; #fyp works like any other hashtag.',
     'Posting more often does not change how TikTok recommends your videos. Consistency and quality do.',
@@ -308,14 +300,14 @@ export const HOW_TO_GET_MORE_VIEWS_ON_TIKTOK_ARTICLE: LearnArticleRecord = {
       id: 'faq-2',
       question: 'Does posting more often get more views on TikTok?',
       answer:
-        'Not by itself. TikTok says the number of videos you post does not affect how your content is recommended in the For You feed. Consistent, watchable videos matter more than volume.',
+        'Not by itself. TikTok said in 2020 that the number of videos you post does not affect how your content is recommended in the For You feed. Consistent, watchable videos matter more than volume.',
       schemaEligible: true,
     },
     {
       id: 'faq-3',
       question: 'Do #fyp hashtags help you get more views?',
       answer:
-        'No more than any other hashtag. TikTok says #FYP, #ForYou and #ForYouPage work like all other hashtags. Use a few hashtags that describe your video instead.',
+        'No more than any other hashtag. TikTok said in 2020 that #FYP, #ForYou and #ForYouPage work like all other hashtags. Use a few hashtags that describe your video instead.',
       schemaEligible: true,
     },
     {

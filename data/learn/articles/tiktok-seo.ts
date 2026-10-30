@@ -498,7 +498,7 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-say-4', 'is immediately understandable.'),
   paragraph(
     'p-say-5',
-    'I would use this because it creates a better user experience, not because TikTok publicly promises that saying an exact keyword gives a specific ranking boost.',
+    'This helps because it is clearer for viewers. TikTok does not promise that saying an exact keyword gives a ranking boost.',
   ),
   paragraph('p-say-6', 'That distinction matters.'),
   paragraph('p-say-7', 'Build for the viewer first.'),
@@ -524,18 +524,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-os-7',
     'Do not repeat the phrase unnecessarily across every frame.',
   ),
-  {
-    id: 'cta-tiktok-seo',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'TikTok search visibility, followers, likes and views describe different parts of a TikTok presence.',
-    serviceSlugs: [
-      'buy-tiktok-followers',
-      'buy-tiktok-likes',
-      'buy-tiktok-views',
-    ],
-  },
 
   heading(
     'h-best-answer',
@@ -807,19 +795,18 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-fr-2',
     'Follower count and search relevance are different concepts. TikTok followers are an audience metric, not a search-ranking rule.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-fr-3',
     'TikTok likes are a content interaction, not a promised search-ranking lever.',
-    [{ href: '/buy-tiktok-likes', label: 'TikTok likes' }],
   ),
   paragraph(
     'p-fr-4',
     "TikTok's public description of recommendations identifies multiple types of information that can influence what is shown, including content relevance and user interactions. It does not provide a simple rule stating that accounts with more followers automatically rank above smaller accounts in Search. (TikTok Support)",
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
-  paragraph('p-fr-5', 'So we should not tell creators:'),
+  paragraph('p-fr-5', 'So be wary of anyone who says:',
+  ),
   paragraph(
     'p-fr-6',
     '“Get more followers and TikTok will rank your videos higher.”',
@@ -834,7 +821,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fr-9',
-    'No NovaLikes service is a guaranteed TikTok SEO ranking tool.',
+    'Bought followers, likes or views do not improve TikTok Search ranking.',
   ),
 
   heading(
@@ -845,7 +832,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-bv-1',
     'Buying TikTok views is not a way to improve TikTok Search rankings.',
-    [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
   ),
   paragraph(
     'p-bv-2',
@@ -853,7 +839,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bv-3',
-    'A view service changes the view count. It is not a guaranteed method of:',
+    'A view service changes the view count. It does not help with:',
   ),
   bullets('ul-bv-not', [
     'ranking in TikTok Search,',

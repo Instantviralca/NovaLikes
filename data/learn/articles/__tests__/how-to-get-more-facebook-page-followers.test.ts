@@ -46,9 +46,7 @@ describe('Article #12 How to get more Facebook Page followers organically', () =
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-facebook-followers', label: 'Facebook followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       commercial.some((link) => link.href === '/buy-facebook-page-likes'),
     ).toBe(false);

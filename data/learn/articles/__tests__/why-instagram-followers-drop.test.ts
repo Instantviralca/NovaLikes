@@ -47,9 +47,7 @@ describe('Article #8 Why Instagram followers drop', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-instagram-followers', label: 'Instagram followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
@@ -81,7 +79,6 @@ describe('Article #8 Why Instagram followers drop', () => {
     expect(article.content).toContain(
       'does not automatically delete ordinary followers',
     );
-    expect(article.content).toContain("Don't make that claim.");
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

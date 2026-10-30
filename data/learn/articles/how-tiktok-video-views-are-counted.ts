@@ -330,7 +330,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-pv-2',
-    '(TikTok Support)',
+    'Source: TikTok Support.',
     [{ href: TIKTOK_HOW_REWARDS_WORK, label: 'TikTok Support', external: true }],
   ),
   paragraph(
@@ -438,7 +438,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-tp-4',
-    'A TikTok view service changes the view count, nothing more.',
+    "A TikTok view service changes the view count, nothing more. TikTok's rules ban fake views, so bought views can also put a Creator Rewards account at risk.",
   ),
 
   heading(
@@ -541,41 +541,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'For Creator Rewards, the documented threshold relevant here is that qualified views must be longer than five seconds. (TikTok Support)',
     [{ href: TIKTOK_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
   ),
-
-  heading('h-options', 'Understand TikTok View Options', 2),
-  paragraph(
-    'p-op-1',
-    'A TikTok view service concerns the visible view metric.',
-  ),
-  paragraph(
-    'p-op-2',
-    'TikTok views is a content-level viewing-activity service.',
-    [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
-  ),
-  paragraph(
-    'p-op-3',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-op', [
-    'Creator Rewards earnings',
-    'FYP ranking',
-    'TikTok Search ranking',
-    'follower growth',
-    'likes',
-    'comments',
-    'virality',
-    'sales',
-  ]),
   {
-    id: 'cta-tiktok-views',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-tiktok-views',
-    heading: 'Compare TikTok View Options',
-    description:
-      'TikTok views measure video viewing activity. Compare the available options without treating a view count as a guarantee of followers, engagement, FYP reach or Creator Rewards eligibility.',
-    label: 'View TikTok View Packages',
-  },
+      id: 'cta-tiktok-views',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-tiktok-views',
+      heading: 'Compare TikTok View Options',
+      description:
+        'TikTok views measure video viewing activity. Compare the available options without treating a view count as a guarantee of followers, engagement, FYP reach or Creator Rewards eligibility.',
+      label: 'View TikTok View Packages',
+    },
+
+
 
   heading(
     'h-change',
@@ -1068,10 +1045,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'h-monetization',
     'Public TikTok Views and Monetization Are Not the Same Thing',
     2,
-  ),
-  paragraph(
-    'p-mn-1',
-    'This deserves repeating because it prevents misleading expectations.',
   ),
   paragraph(
     'p-mn-2',

@@ -97,81 +97,27 @@ function figure(
 const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-open-1',
-    'Buying TikTok followers raises two different questions that are often mixed together:',
-  ),
-  paragraph('p-open-2', 'Can it affect your account?'),
-  paragraph('p-open-3', 'and:'),
-  paragraph('p-open-4', 'Can it affect your For You Page reach?'),
-  paragraph('p-open-5', 'Those questions do not have the same answer.'),
-  paragraph(
-    'p-open-6',
-    'TikTok publicly prohibits fake engagement and says its rules cover services that artificially increase engagement, including followers and likes. TikTok also has separate systems for account standing, content eligibility and recommendations. (TikTok Newsroom)',
+    'Buying TikTok followers can affect your account, and it is not a way to get more For You Page reach or to qualify for Creator Rewards. TikTok bans fake engagement and says its rules cover services that artificially increase engagement, including selling followers or likes. It also runs separate systems for account standing, content eligibility and recommendations. (TikTok Newsroom)',
     [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
   ),
   paragraph(
-    'p-open-7',
-    'At the same time, TikTok does not publish a simple formula saying:',
-  ),
-  paragraph(
-    'p-open-8',
-    '“Buying X followers automatically reduces your FYP reach by Y%.”',
-  ),
-  paragraph(
-    'p-open-9',
-    'That kind of claim would go beyond what TikTok publicly documents.',
-  ),
-  paragraph('p-open-10', 'So the accurate answer is more nuanced:'),
-  paragraph(
     'p-open-11',
-    'Using third-party follower services can create platform-policy risk, but there is no public TikTok formula that lets someone predict an exact FYP penalty from a follower purchase.',
+    'What TikTok does not publish is a fixed penalty. There is no public TikTok formula that lets someone predict an exact FYP penalty from a follower purchase, and no rule saying that more followers means more reach. The sections below take account risk, FYP reach and monetization one at a time, because they have different answers.',
   ),
-  paragraph('p-open-12', 'That distinction matters.'),
 
   heading(
     'h-policy',
     'What Does TikTok Say About Artificial Engagement?',
     2,
   ),
-  paragraph('p-pol-1', "TikTok's public policy position is clear."),
   paragraph(
     'p-pol-2',
-    'In its explanation of how it counters deceptive behaviour, TikTok says it does not allow fake engagement, including facilitating the trade or marketing of services designed to artificially increase engagement, such as selling followers or likes. (TikTok Newsroom)',
+    'In its explanation of how it counters deceptive behaviour, TikTok says it does not allow fake engagement, including facilitating the trade or marketing of services designed to artificially increase engagement, such as selling followers or likes. TikTok says it invests in technologies for detecting and preventing this behaviour, and its 2024 explanation reported proactive removals under its fake-engagement policies. (TikTok Newsroom)',
     [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph(
-    'p-pol-3',
-    'This is important because discussions about follower services often make claims such as:',
-  ),
-  paragraph('p-pol-4', '“TikTok doesn\'t care.”'),
-  paragraph('p-pol-5', 'or:'),
-  paragraph('p-pol-6', '“Buying followers is completely safe.”'),
-  paragraph('p-pol-7', 'Neither claim holds up.'),
-  paragraph(
-    'p-pol-8',
-    'TikTok has explicitly documented a policy against artificial/fake engagement. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-
-  heading(
-    'h-owner',
-    'What Does That Mean for an Account Owner?',
-    3,
   ),
   paragraph(
     'p-own-1',
-    'It means you should understand that third-party engagement activity can carry platform-policy risk.',
-  ),
-  paragraph(
-    'p-own-2',
-    'That does not mean every account will experience the same outcome.',
-  ),
-  paragraph(
-    'p-own-3',
-    'It also does not mean we can predict exactly what TikTok will do in every case.',
-  ),
-  paragraph(
-    'p-own-4',
-    'But it does mean that zero-risk guarantees are not credible.',
+    'So claims that TikTok does not care, or that buying followers is completely safe, do not hold up. Not every account will see the same outcome, but third-party engagement activity carries platform-policy risk, and zero-risk guarantees are not credible.',
   ),
   figure(
     'fig-three-questions',
@@ -181,169 +127,71 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
 
   heading('h-safe', 'Is Buying TikTok Followers “Safe”?', 2),
-  paragraph('p-safe-1', 'The word “safe” is too absolute.'),
   paragraph(
-    'p-safe-2',
-    "Nobody outside TikTok controls TikTok's enforcement systems.",
-  ),
-  paragraph(
-    'p-safe-3',
-    'A third-party service therefore cannot truthfully promise:',
+    'p-safe-1',
+    "The word “safe” is too absolute. Nobody outside TikTok controls TikTok's enforcement systems, account removals or future product changes, so a third-party service cannot truthfully promise any of the following:",
   ),
   bullets('ul-safe-promises', [
-    'completely safe',
-    'zero risk',
-    'TikTok approved',
-    'impossible to detect',
-    'or that your account can never be affected',
+    'that it is completely safe or carries zero risk',
+    'that it is TikTok approved',
+    'that it is impossible to detect',
+    'that your account can never be affected',
+    'that the followers will stay forever',
   ]),
   paragraph(
-    'p-safe-4',
-    'TikTok\'s public materials show that it actively works against deceptive behaviour and fake engagement. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph('p-safe-5', 'The more responsible wording is:'),
-  paragraph(
     'p-safe-6',
-    'There can be platform-policy risk when using third-party engagement services, and outcomes cannot be guaranteed.',
+    "The accurate wording is that third-party engagement services carry platform-policy risk and outcomes cannot be guaranteed.",
   ),
-  paragraph('p-safe-7', 'That is less exciting marketing copy.'),
-  paragraph('p-safe-8', 'It is also more accurate.'),
 
   heading('h-ban', 'Does TikTok Ban Accounts for Fake Engagement?', 2),
   paragraph(
     'p-ban-1',
-    'TikTok has enforcement systems covering Community Guidelines violations and can apply restrictions or bans depending on violations and account history. Its Help Center provides a process for reviewing violation notices and account updates. (TikTok Support)',
+    'TikTok enforces its Community Guidelines and can apply restrictions or bans depending on the violation and the account history. Its Help Center explains how to review violation notices and account updates. (TikTok Support)',
     [{ href: TIKTOK_VIOLATIONS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-ban-2',
-    'TikTok also provides an Account Status area where users can review issues affecting their account or posts. (TikTok Support)',
-    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph('p-ban-3', 'However, it would be inaccurate to claim:'),
-  paragraph('p-ban-4', '“Buying followers always results in a ban.”'),
-  paragraph('p-ban-5', 'TikTok does not publish such a universal rule.'),
-  paragraph('p-ban-6', 'The more supportable statement is:'),
-  paragraph(
-    'p-ban-7',
-    'Artificial engagement is prohibited, and TikTok has enforcement mechanisms for policy violations.',
-  ),
-  paragraph(
-    'p-ban-8',
-    'The exact outcome can depend on circumstances TikTok does not publicly expose in a simple formula.',
+    'p-ban-5',
+    'TikTok does not publish a rule saying that buying followers always results in a ban, and it does not reveal all of its detection methods. The supportable statement is narrower: artificial engagement is prohibited, TikTok can enforce that, and the exact outcome depends on circumstances it does not publish.',
   ),
 
-  heading('h-rewards', 'What About TikTok Creator Rewards?', 2),
-  paragraph(
-    'p-rew-1',
-    'This is an especially important distinction for creators interested in monetization.',
-  ),
-  paragraph(
-    'p-rew-2',
-    "TikTok's current Creator Rewards Program requirements explicitly say participating accounts must not engage in malicious or fraudulent activities such as obtaining fake video views or inflating follower counts. (TikTok Support)",
-    [{ href: TIKTOK_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rew-3',
-    'So if your goal is Creator Rewards eligibility or participation, artificial follower inflation is directly relevant to TikTok\'s published program rules.',
-  ),
-  paragraph('p-rew-4', 'You should not assume:'),
-  paragraph('p-rew-5', '“The follower number is all that matters.”'),
-  paragraph(
-    'p-rew-6',
-    'The program considers account standing and authenticity requirements in addition to numeric eligibility conditions. (TikTok Support)',
-    [{ href: TIKTOK_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
-  ),
-
-  heading('h-fyp', 'Can Buying TikTok Followers Affect the FYP?', 2),
-  paragraph(
-    'p-fyp-1',
-    'This is where a lot of online advice becomes speculative.',
-  ),
-  paragraph('p-fyp-2', "TikTok's For You system is personalized."),
+  heading('h-fyp', 'Can Buying TikTok Followers Affect FYP Reach?', 2),
   paragraph(
     'p-fyp-3',
-    'TikTok says its recommendation systems use information including user interactions, content information and user information, with different factors weighted depending on the recommendation surface. (TikTok Support)',
+    "TikTok's For You system is personalized. TikTok says its recommendation systems use information including user interactions, content information and user information, with different factors weighted depending on the recommendation surface. (TikTok Support)",
     [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-fyp-4',
-    'The For You feed itself can be influenced by actions such as watching, liking, sharing and commenting on similar posts. (TikTok Support)',
+    'The feed each viewer sees is shaped by their own behaviour. TikTok says the For You feed can be influenced by actions such as watching, liking, sharing and commenting on similar posts. (TikTok Support)',
     [{ href: TIKTOK_FOR_YOU, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-fyp-5',
-    'What TikTok does not publicly provide is a formula like:',
-  ),
-  {
-    id: 'bq-formula',
-    type: 'blockquote',
-    text: 'Purchase 1,000 followers → lose 30% FYP reach.',
-    order: nextOrder(),
-  },
-  paragraph(
-    'p-fyp-6',
-    "That formula does not exist in TikTok's public documentation.",
-  ),
-  paragraph('p-fyp-7', 'So we should separate two statements:'),
-  heading('h-stmt-1', 'Statement 1', 3),
-  paragraph(
-    'p-stmt-1',
-    'Artificial engagement can violate TikTok policy. Supported. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  heading('h-stmt-2', 'Statement 2', 3),
-  paragraph(
-    'p-stmt-2',
-    'Buying a particular number of followers causes a specific FYP penalty. Not supported by a public TikTok formula.',
+    'What TikTok does not publish is a formula such as “buy 1,000 followers and lose 30% of your FYP reach.” The supported statement is that artificial engagement can violate TikTok policy. The unsupported one is that buying a particular number of followers causes a specific FYP penalty.',
   ),
   paragraph(
-    'p-fyp-8',
-    'That distinction should remain clear throughout this article.',
+    'p-more-2',
+    'The opposite claim is unsupported too. TikTok describes a multi-signal personalized system rather than a ranking rule based on follower count, so be wary of anyone who says bought followers unlock the FYP, make TikTok push your videos or trigger the algorithm. Follower count is neither a guaranteed FYP boost nor a fixed FYP penalty. (TikTok Support)',
+    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
 
   heading(
     'h-metrics',
-    'Followers and FYP Reach Are Different Metrics',
+    'Are TikTok Followers and FYP Reach the Same Metric?',
     2,
   ),
   paragraph(
     'p-met-1',
-    'A follower count sits at the account level.',
-  ),
-  paragraph(
-    'p-met-2',
-    'FYP distribution concerns how individual content is recommended to viewers.',
-  ),
-  paragraph(
-    'p-met-3',
-    'These concepts can interact within the broader platform, but they are not interchangeable.',
-  ),
-  paragraph('p-met-4', 'A profile might have:'),
-  paragraph('p-met-5', '50,000 followers'),
-  paragraph('p-met-6', 'while one video receives:'),
-  paragraph('p-met-7', '3,000 views'),
-  paragraph('p-met-8', 'and another receives:'),
-  paragraph('p-met-9', '200,000 views.'),
-  paragraph(
-    'p-met-10',
-    'That difference alone does not prove anything about follower authenticity.',
+    'No. A follower count sits at the account level, while FYP distribution concerns how each video is recommended to viewers. A profile with 50,000 followers might get 3,000 views on one video and 200,000 on another, and that difference alone proves nothing about whether the followers are real.',
   ),
   paragraph(
     'p-met-11',
-    'Those metrics are easier to interpret when you keep TikTok followers, likes and views as separate measurements.',
+    'Those numbers are easier to read when you keep TikTok followers, likes and views as separate measurements. You can also see TikTok views but few followers on an account that is still being discovered through recommendations.',
     [
       {
         href: '/learn/tiktok-followers-vs-likes-vs-views',
         label: 'TikTok followers, likes and views',
       },
-    ],
-  ),
-  paragraph(
-    'p-met-12',
-    'You can also see TikTok views but few followers on an account that is still being discovered through recommendations.',
-    [
       {
         href: '/learn/tiktok-views-but-no-followers',
         label: 'TikTok views but few followers',
@@ -352,13 +200,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-met-13',
-    'TikTok itself says post views can fluctuate and recommends using analytics to understand content performance. (TikTok Support)',
+    'TikTok says post views can fluctuate and recommends using analytics to understand content performance. Individual videos can perform differently because recommendation is personalized and content-level factors matter. (TikTok Support)',
     [{ href: TIKTOK_POST_VIEWS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-met-14',
-    'Individual videos can perform differently because recommendation is personalized and content-level factors matter. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
   ),
   figure(
     'fig-followers-fyp',
@@ -368,229 +211,29 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
 
   heading(
-    'h-more-fyp',
-    'Does Having More Followers Automatically Increase FYP Reach?',
-    2,
-  ),
-  paragraph(
-    'p-more-1',
-    'No such guarantee is published by TikTok.',
-  ),
-  paragraph(
-    'p-more-2',
-    "TikTok's recommendation documentation describes a multi-signal personalized system rather than a simple ranking rule based on follower count. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-more-3',
-    'So be wary of anyone who says:',
-  ),
-  bullets('ul-more-never', [
-    'Buy followers to unlock the FYP',
-    'More followers make TikTok push your videos',
-    'Followers trigger the algorithm',
-  ]),
-  paragraph(
-    'p-more-4',
-    'Those are unsupported claims.',
-  ),
-  paragraph(
-    'p-more-5',
-    'Followers and recommendation reach are separate things.',
-  ),
-
-  heading(
     'h-ratios',
     'Could Low-Quality Followers Hurt Engagement Ratios?',
     2,
   ),
-  paragraph('p-rat-1', 'This is where people often go wrong.'),
   paragraph(
     'p-rat-2',
-    'Mathematically, if your follower number changes while genuine interactions remain the same, simple ratios calculated using follower count can change.',
-  ),
-  paragraph('p-rat-3', 'For example:'),
-  paragraph('p-rat-4', '100 interactions / 1,000 followers'),
-  paragraph('p-rat-5', 'and:'),
-  paragraph('p-rat-6', '100 interactions / 10,000 followers'),
-  paragraph('p-rat-7', 'produce different percentages.'),
-  paragraph('p-rat-8', 'That is arithmetic.'),
-  paragraph(
-    'p-rat-9',
-    'But you should not leap from that arithmetic to:',
-  ),
-  paragraph(
-    'p-rat-10',
-    '“TikTok automatically punishes accounts because their public engagement rate falls below X%.”',
+    'In simple arithmetic, yes. If your follower count rises while genuine interactions stay the same, any ratio calculated from follower count falls: 100 interactions on 1,000 followers is 10%, while 100 interactions on 10,000 followers is 1%. Third-party analytics ratios can therefore look worse.',
   ),
   paragraph(
     'p-rat-11',
-    'TikTok does not publish a universal engagement-rate threshold controlling FYP eligibility.',
+    "It does not follow that TikTok automatically punishes accounts whose public engagement rate drops below a set percentage. TikTok does not publish a universal engagement-rate threshold controlling FYP eligibility, and a third-party ratio is not the same thing as TikTok's internal recommendation systems.",
   ),
-  paragraph('p-rat-12', 'So there are two separate concepts:'),
-  paragraph(
-    'p-rat-13',
-    'Third-party analytics ratios may look different.',
-  ),
-  paragraph('p-rat-14', 'and:'),
-  paragraph(
-    'p-rat-15',
-    "TikTok's internal recommendation systems.",
-  ),
-  paragraph(
-    'p-rat-16',
-    'They are not the same system.',
-  ),
-
-  heading('h-remove', 'Can TikTok Remove Followers?', 2),
-  paragraph(
-    'p-rem-1',
-    "Users themselves can remove individual followers from their accounts through TikTok's follower controls. (TikTok Support)",
-    [{ href: TIKTOK_REMOVE_FOLLOWERS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rem-2',
-    'TikTok also publicly describes substantial proactive enforcement against fake engagement activity and manipulative behaviour. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph('p-rem-3', 'However, nobody can honestly promise:'),
-  paragraph(
-    'p-rem-4',
-    '“TikTok will definitely never remove followers.”',
-  ),
-  paragraph('p-rem-5', 'And nobody can honestly claim:'),
-  paragraph(
-    'p-rem-6',
-    '“TikTok removes every purchased follower.”',
-  ),
-  paragraph('p-rem-7', 'Neither absolute is supportable.'),
-  paragraph(
-    'p-rem-8',
-    'Follower counts on social platforms can change for multiple reasons.',
-  ),
-
-  heading('h-change', 'Why Follower Counts Can Change', 2),
-  paragraph(
-    'p-chg-1',
-    'A TikTok follower number is not permanently fixed.',
-  ),
-  paragraph(
-    'p-chg-2',
-    'Possible reasons for changes can include:',
-  ),
-  bullets('ul-chg', [
-    'users unfollowing,',
-    'accounts being removed,',
-    'users deleting accounts,',
-    'platform enforcement,',
-    'or ordinary audience movement.',
-  ]),
-  paragraph(
-    'p-chg-3',
-    'Because TikTok maintains account and enforcement systems, creators should not assume every follower count will remain unchanged forever. (TikTok Support)',
-    [{ href: TIKTOK_VIOLATIONS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-chg-4',
-    'This is why guarantees about permanent follower retention should be treated carefully unless a service has a clearly defined contractual refill policy.',
-  ),
-
-  heading(
-    'h-drop',
-    'Is a Sudden Drop in Views Proof You Were Penalized for Buying Followers?',
-    2,
-  ),
-  paragraph('p-drop-1', 'No.'),
-  paragraph(
-    'p-drop-2',
-    'A drop in views alone is not enough evidence to diagnose the cause.',
-  ),
-  paragraph(
-    'p-drop-3',
-    'TikTok itself says video views can fluctuate and recommends reviewing analytics to understand performance. (TikTok Support)',
-    [{ href: TIKTOK_POST_VIEWS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-drop-4',
-    'If performance changes, investigate actual account information rather than immediately concluding:',
-  ),
-  paragraph('p-drop-5', '“I am shadowbanned.”'),
-  paragraph('p-drop-6', 'Useful checks include:'),
-  bullets('ul-drop-checks', [
-    'recent analytics,',
-    'Account Status,',
-    'violation notifications,',
-    'recommendation eligibility notices,',
-    'and whether the problem affects one video or many videos.',
-  ]),
-  paragraph(
-    'p-drop-7',
-    'TikTok provides dedicated tools for reviewing account status and recommendation eligibility. (TikTok Support)',
-    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
-  ),
-
-  heading(
-    'h-ineligible',
-    'What Does “Not Eligible for Recommendation” Mean?',
-    2,
-  ),
-  paragraph(
-    'p-inel-1',
-    'TikTok can mark accounts as ineligible for recommendation.',
-  ),
-  paragraph(
-    'p-inel-2',
-    'Its current Help Center says that when an account repeatedly posts content unsuitable for the For You feed, the account and its posts may stop appearing in For You and become harder to find. TikTok says affected users receive notifications and can review flagged content and appeal. (TikTok Support)',
-    [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-inel-3',
-    'That is an actual documented recommendation restriction.',
-  ),
-  paragraph('p-inel-4', 'But note what the documentation says:'),
-  paragraph(
-    'p-inel-5',
-    'it discusses content unsuitable for recommendation.',
-  ),
-  paragraph(
-    'p-inel-6',
-    'It does not provide a public rule saying every follower purchase automatically triggers this exact status.',
-  ),
-  paragraph('p-inel-7', 'Do not merge those claims.'),
-
-  heading('h-transparency', 'Service Transparency', 2),
-  paragraph(
-    'p-tr-1',
-    'If you are considering a TikTok follower service, evaluate it for what it actually provides.',
-  ),
-  paragraph(
-    'p-tr-2',
-    'A TikTok followers package is a follower-count service.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
-  ),
-  paragraph(
-    'p-tr-3',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-tr-not', [
-    'reaching the For You page',
-    'improving TikTok Search rankings',
-    'making videos viral',
-    'qualifying safely for Creator Rewards',
-    'increasing organic engagement',
-    'producing sales',
-    'avoiding TikTok enforcement',
-  ]),
   {
-    id: 'cta-follower-service',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-tiktok-followers',
-    heading: 'Understand What a Follower Service Does',
-    description:
-      'A follower service changes a follower-count metric. It is not a guaranteed method for improving FYP reach, search rankings, engagement or monetization eligibility.',
-    label: 'View TikTok Followers',
-  },
+      id: 'cta-follower-service',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-tiktok-followers',
+      heading: 'Understand What a Follower Service Does',
+      description:
+        'A follower service changes a follower-count metric. It is not a guaranteed method for improving FYP reach, search rankings, engagement or monetization eligibility.',
+      label: 'View TikTok Followers',
+    },
+
 
   heading(
     'h-qualify',
@@ -598,25 +241,13 @@ const BLOCKS: ArticleContentBlock[] = [
     2,
   ),
   paragraph(
-    'p-qual-1',
-    'This is one of the clearest areas where caution is necessary.',
-  ),
-  paragraph(
-    'p-qual-2',
-    'Even if a numeric follower threshold matters for a TikTok feature, simply reaching the displayed number does not necessarily mean the account satisfies all eligibility requirements.',
-  ),
-  paragraph(
-    'p-qual-3',
-    "TikTok's Creator Rewards rules explicitly prohibit fraudulent behaviour including inflating follower counts and acquiring fake video views. (TikTok Support)",
+    'p-rew-2',
+    "No. TikTok's current Creator Rewards Program requirements say participating accounts must not engage in malicious or fraudulent activities such as obtaining fake video views or inflating follower counts. The program considers account standing and authenticity in addition to numeric eligibility conditions. (TikTok Support)",
     [{ href: TIKTOK_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-qual-4',
-    'So buying followers is not a way to meet Creator Rewards requirements.',
-  ),
-  paragraph(
-    'p-qual-5',
-    "That would conflict directly with TikTok's published program rules.",
+    'p-qual-2',
+    "Even where a follower threshold matters, reaching the displayed number does not mean the account meets every requirement. Buying followers is not a way to meet Creator Rewards requirements, because it conflicts directly with TikTok's published program rules.",
   ),
 
   heading(
@@ -626,188 +257,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-live-1',
-    'TikTok says LIVE availability depends on age requirements and a local minimum-follower threshold. (TikTok Support)',
+    'Bought followers are not a safe shortcut to LIVE either. A numeric threshold is not permission to manipulate that metric, and engagement policies apply alongside feature requirements. TikTok says LIVE availability depends on age requirements and a local minimum-follower threshold. (TikTok Support)',
     [{ href: TIKTOK_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-live-2',
-    'That does not mean third-party follower purchases should be treated as a safe shortcut to eligibility.',
-  ),
-  paragraph(
-    'p-live-3',
-    'Platform feature requirements and platform engagement policies need to be considered together.',
-  ),
-  paragraph(
-    'p-live-4',
-    'A numeric threshold is not permission to manipulate that metric.',
-  ),
-  figure(
-    'fig-account-risk',
-    `${IMAGE_DIR}/before-judging-account-risk.png`,
-    'Four checks before judging TikTok account risk: Account Status, recommendation status, analytics and platform rules',
-    'Use real account information instead of guessing from one metric.',
-  ),
-
-  heading('h-no-drop', 'Is It Possible to Guarantee “No Drop”?', 2),
-  paragraph(
-    'p-nd-1',
-    'No responsible provider should guarantee what another platform will permanently display.',
-  ),
-  paragraph(
-    'p-nd-2',
-    'TikTok controls TikTok accounts and platform data.',
-  ),
-  paragraph(
-    'p-nd-3',
-    'Third-party services do not control:',
-  ),
-  bullets('ul-nd', [
-    'account removals,',
-    'user behaviour,',
-    'TikTok enforcement,',
-    'future product changes,',
-    'or recommendation systems.',
-  ]),
-  paragraph(
-    'p-nd-4',
-    'This is why wording such as:',
-  ),
-  paragraph(
-    'p-nd-5',
-    '“permanent followers guaranteed forever”',
-  ),
-  paragraph(
-    'p-nd-6',
-    'should be avoided unless a clearly defined service policy genuinely supports what is being promised.',
-  ),
-  paragraph(
-    'p-nd-7',
-    'A refill policy, where one exists, is different from claiming TikTok itself guarantees retention.',
-  ),
-
-  heading('h-no-ban', 'Is It Possible to Guarantee “No Ban”?', 2),
-  paragraph('p-nb-1', 'No.'),
-  paragraph(
-    'p-nb-2',
-    'A third-party provider does not control TikTok enforcement.',
-  ),
-  paragraph(
-    'p-nb-3',
-    'TikTok has published policies against fake engagement and operates content/account enforcement systems. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph(
-    'p-nb-4',
-    'A provider can explain its own process.',
-  ),
-  paragraph(
-    'p-nb-5',
-    'It cannot truthfully guarantee:',
-  ),
-  paragraph('p-nb-6', 'TikTok will never take action.'),
-  paragraph(
-    'p-nb-7',
-    'This is why NovaLikes copy should continue avoiding absolute phrases such as:',
-  ),
-  bullets('ul-nb', [
-    'completely safe',
-    'zero account risk',
-    'undetectable',
-    'TikTok approved',
-  ]),
-
-  heading(
-    'h-detect',
-    'Does TikTok Know When Engagement Is Artificial?',
-    2,
-  ),
-  paragraph(
-    'p-det-1',
-    'TikTok publicly says it invests in technologies for detecting and preventing deceptive behaviour and fake engagement. Its 2024 explanation reported proactive removals under fake-engagement policies. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph(
-    'p-det-2',
-    'TikTok does not publicly reveal all detection methods.',
-  ),
-  paragraph('p-det-3', 'That is expected.'),
-  paragraph(
-    'p-det-4',
-    'Platforms generally do not publish exact enforcement systems in a way that would make them easy to evade.',
-  ),
-  paragraph(
-    'p-det-5',
-    'The useful takeaway for users is not:',
-  ),
-  paragraph('p-det-6', '“How can I beat detection?”'),
-  paragraph('p-det-7', 'It is:'),
-  paragraph(
-    'p-det-8',
-    '“I should understand that artificial engagement is a policy-controlled area.”',
-  ),
-
-  heading(
-    'h-check',
-    'What Should You Check Before Using Any Third-Party TikTok Service?',
-    2,
-  ),
-  paragraph('p-chk-1', 'Focus on transparency.'),
-  heading('h-check-1', '1. What Metric Are You Actually Purchasing?', 3),
-  paragraph('p-chk-2', 'Followers? Likes? Views?'),
-  paragraph('p-chk-3', 'They are different metrics.'),
-  paragraph(
-    'p-chk-4',
-    'Do not buy one while expecting guaranteed results in another.',
-  ),
-  heading(
-    'h-check-2',
-    '2. Does the Provider Ask for Your Password?',
-    3,
-  ),
-  paragraph(
-    'p-chk-5',
-    'Avoid giving account credentials to unnecessary third parties.',
-  ),
-  paragraph(
-    'p-chk-6',
-    'TikTok itself warns users to be cautious with suspicious links and third-party sites promising free likes or fans. (TikTok Support)',
-    [{ href: TIKTOK_PHISHING, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-chk-7',
-    'For NovaLikes-supported ordering flows, the service should request only the public profile/content information required for the selected service.',
-  ),
-  heading('h-check-3', '3. Are There Unrealistic Algorithm Claims?', 3),
-  paragraph('p-chk-8', 'Be cautious with:'),
-  bullets('ul-chk-claims', [
-    '“Guaranteed FYP”',
-    '“Guaranteed viral”',
-    '“Guaranteed engagement”',
-    '“Guaranteed organic reach”',
-    '“Guaranteed Creator Rewards eligibility”',
-  ]),
-  paragraph(
-    'p-chk-9',
-    'Those promises cannot be responsibly guaranteed.',
-  ),
-  heading('h-check-4', '4. Is the Refund Policy Clear?', 3),
-  paragraph(
-    'p-chk-10',
-    'Read the actual policy instead of assuming every order qualifies for every outcome.',
-  ),
-  heading(
-    'h-check-5',
-    '5. Does the Provider Explain Platform Risk?',
-    3,
-  ),
-  paragraph('p-chk-11', 'A provider saying:'),
-  paragraph(
-    'p-chk-12',
-    '“There is absolutely no risk under any circumstances”',
-  ),
-  paragraph(
-    'p-chk-13',
-    "is making a much stronger claim than TikTok's own policies support.",
   ),
 
   heading(
@@ -816,238 +267,112 @@ const BLOCKS: ArticleContentBlock[] = [
     2,
   ),
   paragraph(
-    'p-lv-1',
-    "TikTok's fake-engagement rules are not limited only to follower count.",
-  ),
-  paragraph(
     'p-lv-2',
-    "TikTok's published deceptive-behaviour guidance explicitly discusses artificially increasing engagement such as followers or likes, and Creator Rewards specifically prohibits fake video views and inflated follower counts. (TikTok Newsroom)",
+    "Yes. TikTok's fake-engagement rules are not limited to follower count. Its deceptive-behaviour guidance discusses artificially increasing engagement such as followers or likes, and Creator Rewards specifically prohibits fake video views as well as inflated follower counts. The issue is artificial engagement in general, although this still does not give a precise penalty formula. (TikTok Newsroom)",
     [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
   ),
-  paragraph('p-lv-3', 'So the underlying issue is broader:'),
-  paragraph('p-lv-4', 'artificial engagement'),
+
+  heading('h-remove', 'Can TikTok Remove Followers?', 2),
   paragraph(
-    'p-lv-5',
-    'rather than one specific public metric.',
+    'p-rem-1',
+    "A TikTok follower number is not fixed. It changes when users unfollow or delete their accounts, when accounts are removed through platform enforcement, and through ordinary audience movement. Account owners can also remove individual followers themselves through TikTok's follower controls. (TikTok Support)",
+    [{ href: TIKTOK_REMOVE_FOLLOWERS, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-lv-6',
-    'Again, that does not give us a precise penalty formula.',
+    'p-rem-2',
+    "Nobody can honestly promise that TikTok will never remove followers, or claim that it removes every purchased follower. A refill policy, where one exists, is the provider's commitment, not a TikTok guarantee. TikTok publicly describes substantial proactive enforcement against fake engagement activity and manipulative behaviour. (TikTok Newsroom)",
+    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
   ),
-  paragraph('p-lv-7', 'It establishes the policy direction.'),
+
+  heading(
+    'h-drop',
+    'Is a Sudden Drop in Views Proof You Were Penalized for Buying Followers?',
+    2,
+  ),
+  paragraph(
+    'p-drop-2',
+    'No. A drop in views alone is not enough evidence to diagnose the cause, and TikTok says video views can fluctuate. Before concluding that you are shadowbanned, check your recent analytics, Account Status, violation notifications and any recommendation eligibility notices, and whether the problem affects one video or many. TikTok provides an Account Status area for reviewing issues affecting your account or posts. (TikTok Support)',
+    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
+  ),
+
+  heading(
+    'h-ineligible',
+    'What Does “Not Eligible for Recommendation” Mean?',
+    2,
+  ),
+  paragraph(
+    'p-inel-2',
+    'TikTok can mark accounts as ineligible for recommendation. Its Help Center says that when an account repeatedly posts content unsuitable for the For You feed, the account and its posts may stop appearing in For You and become harder to find. Affected users receive notifications and can review flagged content and appeal. (TikTok Support)',
+    [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
+  ),
+  paragraph(
+    'p-inel-6',
+    'That is a documented recommendation restriction, but it is about content unsuitable for recommendation. TikTok does not publish a rule saying every follower purchase automatically triggers this status.',
+  ),
+  figure(
+    'fig-account-risk',
+    `${IMAGE_DIR}/before-judging-account-risk.png`,
+    'Four checks before judging TikTok account risk: Account Status, recommendation status, analytics and platform rules',
+    'Use real account information instead of guessing from one metric.',
+  ),
 
   heading(
     'h-promote',
     'Is TikTok Promote the Same as Buying Followers?',
     2,
   ),
-  paragraph('p-pr-1', 'No.'),
   paragraph(
     'p-pr-2',
-    'TikTok has its own official Promote advertising feature for increasing visibility and supporting audience-growth goals. TikTok lists Promote among its creator growth resources. (TikTok Support)',
+    "No. Promote is TikTok's own advertising feature for increasing visibility and supporting audience-growth goals, and TikTok lists it among its creator growth resources. Paying TikTok directly through its advertising tools is a platform-supported product, not third-party artificial engagement. (TikTok Support)",
     [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-pr-3',
-    'Official paid promotion and third-party artificial engagement are not the same thing.',
+
+  heading(
+    'h-check',
+    'What Should You Check Before Using Any Third-Party TikTok Service?',
+    2,
   ),
   paragraph(
-    'p-pr-4',
-    "If someone's goal is paying TikTok directly to promote content through TikTok's advertising tools, that is a separate platform-supported product.",
+    'p-tr-1',
+    'A follower package changes a visible count, not your For You reach, search rankings or organic engagement. If you are assessing any third-party service, check these points:',
+  ),
+  bullets('ul-chk', [
+    'Which metric it changes. Followers, likes and views are different, so do not expect results in one from buying another.',
+    'Whether it asks for your password. Do not give account credentials to third parties.',
+    'Whether it claims guaranteed FYP, viral reach, organic engagement or Creator Rewards eligibility. None of these can be guaranteed.',
+    'Whether its refund policy is written down. Read it rather than assuming every order qualifies.',
+    "Whether it claims there is no risk at all. That goes further than TikTok's own policies support.",
+  ]),
+  paragraph(
+    'p-chk-6',
+    'TikTok itself warns users to be cautious with suspicious links and third-party sites promising free likes or fans. (TikTok Support)',
+    [{ href: TIKTOK_PHISHING, label: 'TikTok Support', external: true }],
   ),
 
   heading(
     'h-grow',
-    'How Should You Grow a TikTok Account Alongside Visible Metrics?',
+    'How Do You Grow a TikTok Account Without Fake Engagement?',
     2,
   ),
   paragraph(
     'p-gr-1',
-    "TikTok's own audience-growth guidance recommends practices such as:",
-  ),
-  bullets('ul-gr', [
-    'engaging with viewers,',
-    'reviewing analytics,',
-    'publishing quality content regularly,',
-    'collaborating with creators,',
-    'and using creator tools to learn what performs.',
-  ]),
-  paragraph(
-    'p-gr-2',
-    '(TikTok Support)',
+    "TikTok's own audience-growth guidance recommends engaging with viewers, reviewing analytics, publishing quality content regularly, collaborating with creators and using creator tools to learn what performs. (TikTok Support)",
     [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-gr-3',
-    'Those activities address the content and audience side of growth.',
-  ),
-  paragraph(
     'p-gr-4',
-    'They should not be replaced by the assumption that changing a visible follower number will automatically improve content performance.',
-  ),
-  paragraph(
-    'p-gr-5',
-    'Search-focused publishing is covered separately in TikTok SEO.',
+    'Those activities address the content and audience side of growth, and changing a visible follower number does not replace that work. Search-focused publishing is covered separately in TikTok SEO.',
     [{ href: '/learn/tiktok-seo', label: 'TikTok SEO' }],
   ),
-  paragraph(
-    'p-gr-6',
-    'A sustainable account strategy should still focus on:',
-  ),
-  bullets('ul-gr-focus', [
-    'content,',
-    'audience fit,',
-    'profile clarity,',
-    'consistency,',
-    'search demand,',
-    'analytics,',
-    'and genuine interaction.',
-  ]),
-
-  heading(
-    'h-separate',
-    'Followers, Reach and Safety Should Be Evaluated Separately',
-    2,
-  ),
-  paragraph(
-    'p-sep-1',
-    'One of the biggest mistakes in this topic is combining everything into one statement:',
-  ),
-  paragraph(
-    'p-sep-2',
-    '“Buy followers → algorithm boost → more FYP reach → safe account.”',
-  ),
-  paragraph('p-sep-3', 'There is no support for that chain.'),
-  paragraph('p-sep-4', 'A more accurate framework is:'),
-  heading('h-fw-fol', 'Followers', 3),
-  paragraph('p-sep-5', 'A visible account-level metric.'),
-  heading('h-fw-fyp', 'FYP Reach', 3),
-  paragraph(
-    'p-sep-6',
-    'A personalized content-recommendation outcome driven by multiple signals. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-fw-safe', 'Account Safety', 3),
-  paragraph(
-    'p-sep-7',
-    'Related to account security, policy compliance and platform enforcement. TikTok provides account-status and enforcement tools for reviewing these issues. (TikTok Support)',
-    [{ href: TIKTOK_VIOLATIONS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sep-8',
-    'These areas can exist on the same account without being the same thing.',
-  ),
-
-  heading(
-    'h-account',
-    'Can Buying TikTok Followers Affect Your Account?',
-    2,
-  ),
-  paragraph('p-acc-1', 'The most accurate answer is:'),
-  paragraph(
-    'p-acc-2',
-    'It can introduce platform-policy risk because TikTok prohibits fake/artificial engagement. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph(
-    'p-acc-3',
-    'What cannot be accurately predicted is:',
-  ),
-  bullets('ul-acc', [
-    'the exact enforcement outcome,',
-    'the exact timing,',
-    'or an exact FYP impact.',
-  ]),
-  paragraph(
-    'p-acc-4',
-    'TikTok does not publish a universal formula connecting a particular follower purchase with a particular recommendation penalty.',
-  ),
-  paragraph(
-    'p-acc-5',
-    'That means both extremes should be avoided.',
-  ),
-  paragraph('p-acc-6', 'Not:'),
-  paragraph('p-acc-7', '“Nothing can ever happen.”'),
-  paragraph('p-acc-8', 'And not:'),
-  paragraph(
-    'p-acc-9',
-    '“Your account will definitely be banned immediately.”',
-  ),
-  paragraph('p-acc-10', 'Neither is sufficiently supported.'),
-
-  heading(
-    'h-fyp-answer',
-    'Can Buying TikTok Followers Affect FYP Reach?',
-    2,
-  ),
-  paragraph(
-    'p-fa-1',
-    'There is no public TikTok rule that lets us state a guaranteed direct percentage impact.',
-  ),
-  paragraph(
-    'p-fa-2',
-    'TikTok describes For You recommendations as personalized and influenced by multiple factors, including interactions and content information. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-fa-3',
-    'Therefore, follower count alone should not be treated as:',
-  ),
-  bullets('ul-fa', [
-    'a guaranteed FYP boost,',
-    'or a guaranteed FYP penalty formula.',
-  ]),
-  paragraph(
-    'p-fa-4',
-    "If your FYP performance changes, use TikTok's analytics, Account Status and recommendation notices to investigate the actual account rather than relying on assumptions. (TikTok Support)",
-    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
-  ),
-
-  heading('h-practical', 'The Practical Answer', 2),
-  paragraph(
-    'p-prac-1',
-    "If you're considering buying TikTok followers, understand what you're actually doing.",
-  ),
-  paragraph(
-    'p-prac-2',
-    'You are changing a visible account metric through a third-party service.',
-  ),
-  paragraph(
-    'p-prac-3',
-    "You are not purchasing control of TikTok's recommendation system.",
-  ),
-  paragraph('p-prac-4', 'You are not guaranteed:'),
-  bullets('ul-prac', [
-    'more FYP reach,',
-    'better search rankings,',
-    'more organic engagement,',
-    'Creator Rewards eligibility,',
-    'sales,',
-    'or account safety.',
-  ]),
-  paragraph(
-    'p-prac-5',
-    'TikTok explicitly restricts fake engagement and maintains systems for account enforcement and recommendation eligibility. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
-  ),
-  paragraph('p-prac-6', 'So the responsible approach is:'),
-  bullets('ul-prac-approach', [
-    'understand the policy risk,',
-    'avoid exaggerated promises,',
-    'protect your credentials,',
-    'keep follower metrics separate from algorithm claims,',
-    'and continue building content based on audience response and actual analytics.',
-  ]),
 
   heading('h-takeaways', 'Key Takeaways', 2),
   bullets('ul-takeaways', [
-    'TikTok prohibits fake/artificial engagement, including services that artificially increase followers or likes.',
+    'TikTok prohibits fake engagement, including services that artificially increase followers or likes.',
     'TikTok Creator Rewards explicitly prohibits inflated follower counts and fake video views.',
-    'TikTok does not publish a simple formula saying a follower purchase causes a specific FYP penalty.',
+    'TikTok does not publish a formula saying a follower purchase causes a specific FYP penalty.',
     'Follower count does not guarantee For You reach. TikTok describes recommendation as a personalized, multi-signal system.',
-    'A sudden view drop alone is not proof of an enforcement action. TikTok recommends reviewing analytics when views fluctuate.',
-    'Account Status and recommendation notices are more useful than guessing whether an account has been penalized.',
-    'No third-party service should promise zero TikTok policy risk or guaranteed FYP improvement.',
+    'A sudden view drop is not proof of enforcement. Check analytics, Account Status and recommendation notices instead of guessing.',
+    'No third-party service can honestly promise zero TikTok policy risk or guaranteed FYP improvement.',
   ]),
 ];
 
@@ -1159,7 +484,7 @@ export const BUYING_TIKTOK_FOLLOWERS_FYP_ACCOUNT_SAFETY_ARTICLE: LearnArticleRec
         id: 'faq-5',
         question: 'Can purchased followers help me enter Creator Rewards?',
         answer:
-          'TikTok\'s Creator Rewards rules explicitly prohibit fraudulent activity such as inflating follower counts or acquiring fake video views. Buying followers should therefore not be recommended as a method for satisfying Creator Rewards requirements.',
+          'TikTok\'s Creator Rewards rules explicitly prohibit fraudulent activity such as inflating follower counts or acquiring fake video views. Buying followers is therefore not a way to meet Creator Rewards requirements.',
         schemaEligible: true,
       },
       {

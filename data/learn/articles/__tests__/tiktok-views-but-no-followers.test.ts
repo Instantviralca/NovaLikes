@@ -50,16 +50,20 @@ describe('Article #2 TikTok views but no followers', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-views', label: 'TikTok views' },
-      { href: '/buy-tiktok-followers', label: 'TikTok followers' },
-    ]);
+    expect(commercial).toEqual([]);
+    expect(
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
+      ),
+    ).toBe(false);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
-    expect(
-      article.blocks.some((block) => block.type === 'service_cluster_cta'),
-    ).toBe(true);
+    
     expect(
       article.blocks.some(
         (block) =>

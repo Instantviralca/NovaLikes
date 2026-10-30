@@ -48,9 +48,7 @@ describe('Article #19 How many followers to go LIVE on TikTok', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-followers', label: 'TikTok followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
@@ -77,6 +75,11 @@ describe('Article #19 How many followers to go LIVE on TikTok', () => {
     expect(article.content).toContain(
       'going LIVE is unavailable while Restricted Mode is enabled',
     );
+    expect(
+      article.content.includes('Have 1,000 followers') ||
+        article.content.includes('lists 1,000 followers'),
+    ).toBe(true);
+    expect(article.content).toContain('may vary across regions');
     expect(article.content).not.toMatch(/Reach 1K and Go LIVE/i);
     expect(
       article.blocks.some(

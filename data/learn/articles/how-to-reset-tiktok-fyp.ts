@@ -166,14 +166,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'No. Clearing the cache (usually under Settings and privacy, Free up space) removes temporary files and frees storage on your phone. TikTok does not describe it as a way to change recommendations. Use Refresh your For You feed for that.',
   ),
 
-  {
-    id: 'cta-tiktok-growth',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Growing Your Own TikTok?',
-    text: 'Resetting your feed only changes what you watch. If you are working on your own account, compare views, likes and followers to see which metric matters for your goal.',
-    serviceSlugs: ['buy-tiktok-views', 'buy-tiktok-likes', 'buy-tiktok-followers'],
-  },
 ];
 
 const CONTENT = BLOCKS.map((block) => {

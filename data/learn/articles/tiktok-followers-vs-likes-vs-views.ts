@@ -424,18 +424,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok provides analytics specifically so creators can examine content and audience performance in more detail. (TikTok Support)',
     [{ href: TIKTOK_CREATOR_TOOLS, label: 'TikTok Support', external: true }],
   ),
-  {
-    id: 'cta-tiktok-metrics',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'Followers, likes and views measure different parts of a TikTok presence. Compare the available NovaLikes options for the metric you want to focus on.',
-    serviceSlugs: [
-      'buy-tiktok-followers',
-      'buy-tiktok-likes',
-      'buy-tiktok-views',
-    ],
-  },
 
   heading('h-compare', 'Why Comparing TikTok Metrics Together Matters', 2),
   paragraph(
@@ -488,7 +476,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ng-1',
-    'No guaranteed relationship should be assumed.',
+    'No.',
   ),
   paragraph(
     'p-ng-2',
@@ -505,14 +493,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-ng-5',
     'More likes do not guarantee more sales, enquiries or website visits.',
-  ),
-  paragraph(
-    'p-ng-6',
-    'This is particularly important when comparing social media growth services.',
-  ),
-  paragraph(
-    'p-ng-7',
-    'A follower service should be evaluated as a follower-count service. A view service concerns views. A like service concerns likes.',
   ),
   paragraph(
     'p-ng-8',
@@ -576,17 +556,14 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-pur-3',
     'TikTok followers tell you about the audience connected to your account.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
   ),
   paragraph(
     'p-pur-4',
     'TikTok likes show one form of interaction with individual content.',
-    [{ href: '/buy-tiktok-likes', label: 'TikTok likes' }],
   ),
   paragraph(
     'p-pur-5',
     'TikTok views show viewing activity around individual posts.',
-    [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
   ),
   paragraph(
     'p-pur-6',

@@ -108,13 +108,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-open-3',
-    'Instagram states that posts from a private account are visible only to approved followers, while posts from a public account can be seen by anyone on Instagram. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'Instagram states that posts from a private account are visible only to approved followers, while posts from a public account can be seen by anyone on Instagram. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-open-4',
-    "Public accounts also have a major discovery advantage: Instagram's recommendation system considers content from public accounts for surfaces including Reels, Explore, Feed Recommendations, Search and Suggested Accounts. Recommendation eligibility does not guarantee that Instagram will recommend a post, but a private account does not participate in that same broad public recommendation model. (Facebook)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    "Public accounts also have a major discovery advantage: Instagram's recommendation system considers content from public accounts for surfaces including Reels, Explore, Feed Recommendations, Search and Suggested Accounts. Recommendation eligibility does not guarantee that Instagram will recommend a post, but a private account does not participate in that same broad public recommendation model. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-open-5', 'So the difference is not simply:'),
   paragraph('p-open-6', 'Public = everyone sees everything'),
@@ -138,8 +138,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-private-what', 'What Is a Private Instagram Account?', 2),
   paragraph(
     'p-priv-1',
-    'A private Instagram account restricts access to its posts to people the account owner has approved as followers. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'A private Instagram account restricts access to its posts to people the account owner has approved as followers. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-priv-2',
@@ -177,13 +177,13 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-public-what', 'What Is a Public Instagram Account?', 2),
   paragraph(
     'p-pub-1',
-    'A public Instagram account allows anyone on Instagram to see its public posts. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'A public Instagram account allows anyone on Instagram to see its public posts. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pub-2',
-    "Public profiles can also be viewed through Instagram's web experience. Meta says that if an account is public, anyone can view its profile and posts by visiting its Instagram web URL. (Facebook)",
-    [{ href: IG_WEB_PROFILE, label: 'Facebook', external: true }],
+    "Public profiles can also be viewed through Instagram's web experience. Meta says that if an account is public, anyone can view its profile and posts by visiting its Instagram web URL. (Instagram Help Center)",
+    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pub-3',
@@ -207,8 +207,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pub-6',
-    'Whether Instagram actually recommends a particular account or piece of content depends on its recommendation systems and eligibility. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Whether Instagram actually recommends a particular account or piece of content depends on its recommendation systems and eligibility. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -233,8 +233,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-found-3',
-    'The key restriction documented by Instagram is that private-account posts are visible only to approved followers. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'The key restriction documented by Instagram is that private-account posts are visible only to approved followers. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-found-4', 'So the useful distinction is:'),
   bullets('ul-found-diff', [
@@ -280,8 +280,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-diff-3',
-    'Instagram says public-account content can be eligible to appear to non-followers through Reels, Feed, Explore, Search and Suggested Accounts. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Instagram says public-account content can be eligible to appear to non-followers through Reels, Feed, Explore, Search and Suggested Accounts. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-diff-4', 'Eligible does not mean guaranteed.'),
   paragraph(
@@ -308,13 +308,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-reach-2',
-    'Making an account private restricts post visibility to approved followers. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'Making an account private restricts post visibility to approved followers. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-reach-3',
-    'Public-account recommendation eligibility, meanwhile, allows eligible accounts and content to potentially appear to non-followers across Reels, Explore, Feed Recommendations, Search and Suggested Accounts. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Public-account recommendation eligibility, meanwhile, allows eligible accounts and content to potentially appear to non-followers across Reels, Explore, Feed Recommendations, Search and Suggested Accounts. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-reach-4',
@@ -357,8 +357,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ex-1',
-    "Instagram's recommendation eligibility documentation specifically describes recommendations using content from public accounts. These recommendations may appear in Explore, Reels, Feed, Search and Suggested Accounts. (Facebook)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    "Instagram's recommendation eligibility documentation specifically describes recommendations using content from public accounts. These recommendations may appear in Explore, Reels, Feed, Search and Suggested Accounts. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ex-2',
@@ -386,13 +386,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rl-2',
-    'Private-account posts are available to approved followers rather than anyone on Instagram. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'Private-account posts are available to approved followers rather than anyone on Instagram. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-rl-3',
-    'Public accounts, on the other hand, can be eligible for non-follower recommendations through Reels and other surfaces. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Public accounts, on the other hand, can be eligible for non-follower recommendations through Reels and other surfaces. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-rl-4',
@@ -433,8 +433,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vw-4',
-    "Instagram's recommendations are personalized, meaning content can be selected differently for different people based on what Instagram predicts will be relevant or valuable to them. (Facebook)",
-    [{ href: IG_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    "Instagram's recommendations are personalized, meaning content can be selected differently for different people based on what Instagram predicts will be relevant or valuable to them. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATIONS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-vw-5', 'So a public account does not equal:'),
   bullets('ul-vw-not', [
@@ -539,8 +539,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pend-2',
-    'Meta says that when switching to a professional account/public setup, pending follow requests are automatically accepted when you go public. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'Meta says that when switching to a professional account/public setup, pending follow requests are automatically accepted when you go public. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pend-3',
@@ -559,8 +559,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-pro-1', 'No.'),
   paragraph(
     'p-pro-2',
-    "Instagram's current Help Center states that professional accounts cannot be set to private. (Facebook)",
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    "Instagram's current Help Center states that professional accounts cannot be set to private. (Instagram Help Center)",
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pro-3',
@@ -596,12 +596,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wp-2',
-    "Meta's documentation simply establishes that professional accounts cannot be private. (Facebook)",
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
-  ),
-  paragraph(
-    'p-wp-3',
-    'We should not invent an internal Meta reasoning beyond that.',
+    "Meta's documentation simply establishes that professional accounts cannot be private. (Instagram Help Center)",
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-wp-4',
@@ -620,8 +616,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ins-1',
-    "Instagram's current documentation indicates Insights are associated with public/professional usage, and Meta states that if you switch back to a private account, you lose access to Insights. Past insights may become available again if you later return to a public professional setup. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Yes. Instagram Insights is only available on professional (creator or business) accounts, and professional accounts cannot be private. So switching to a private account means switching back to a personal account, which removes access to Insights. Past insights may become available again if you later return to a professional account. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ins-2',
@@ -653,13 +649,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sb-2',
-    'If you suspect an actual account restriction, Instagram provides Account Status so users can review content or behaviour that may lead to restrictions or limitations. (Facebook)',
-    [{ href: IG_ACCOUNT_STATUS, label: 'Facebook', external: true }],
+    'If you suspect an actual account restriction, Instagram provides Account Status so users can review content or behaviour that may lead to restrictions or limitations. (Instagram Help Center)',
+    [{ href: IG_ACCOUNT_STATUS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sb-3',
-    'Recommendation eligibility is also specifically visible for professional accounts through Account Status. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Recommendation eligibility is also specifically visible for professional accounts through Account Status. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sb-4',
@@ -682,8 +678,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fix-4',
-    'Instagram explicitly says recommendation eligibility means it may recommend content; eligibility does not guarantee recommendation. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Instagram explicitly says recommendation eligibility means it may recommend content; eligibility does not guarantee recommendation. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-fix-5',
@@ -697,8 +693,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rec-1',
-    "Public status matters because Instagram's Recommendation Guidelines determine which public-account content may be recommended to people who do not follow the account. (Facebook)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    "Public status matters because Instagram's Recommendation Guidelines determine which public-account content may be recommended to people who do not follow the account. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-rec-2', 'Possible surfaces include:'),
   bullets('ul-recs', [
@@ -720,8 +716,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-rec-4',
-    'If your account is public but discovery is unusually limited, Account Status is the correct place to inspect recommendation eligibility instead of assuming public status guarantees distribution. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'If your account is public but discovery is unusually limited, Account Status is the correct place to inspect recommendation eligibility instead of assuming public status guarantees distribution. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
 
   heading('h-eligibility', 'What Is Recommendation Eligibility?', 2),
@@ -732,18 +728,19 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-el-2', 'It is not a promise.'),
   paragraph(
     'p-el-3',
-    'Meta explicitly distinguishes eligible from guaranteed recommendation. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Meta explicitly distinguishes eligible from guaranteed recommendation. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-el-4',
-    'This distinction should stay clear because many social-media articles oversimplify the concept.',
+    'Many guides blur this point.',
   ),
   paragraph(
     'p-el-5',
-    'Do not say “Make your Instagram public and you will appear in Explore.”',
+    '“Make your Instagram public and you will appear in Explore” is not accurate.',
   ),
-  paragraph('p-el-6', 'Instead:'),
+  paragraph('p-el-6', 'A more accurate version:',
+  ),
   paragraph(
     'p-el-7',
     'Public eligible accounts can be considered for Explore and other recommendation surfaces.',
@@ -810,8 +807,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-biz-1',
-    'A business intending to use Instagram for marketing, customer discovery, Reels, content distribution, Insights and brand visibility will generally need the public professional-account model because Instagram professional accounts cannot be private. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'A business intending to use Instagram for marketing, customer discovery, Reels, content distribution, Insights and brand visibility will generally need the public professional-account model because Instagram professional accounts cannot be private. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-biz-2',
@@ -845,8 +842,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cr-3',
-    'Instagram says public accounts can use Insights, while professional accounts cannot be private. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Insights comes with professional accounts, and professional accounts cannot be private. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-cr-4',
@@ -864,8 +861,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-teen-2',
-    "Meta's public/private-account guidance notes that accounts for younger users can have different defaults, so generic adult-account advice should not be treated as universally applicable. (Facebook)",
-    [{ href: IG_PUBLIC_PRIVATE_DIFFERENCES, label: 'Facebook', external: true }],
+    "Meta's public/private-account guidance notes that accounts for younger users can have different defaults, so generic adult-account advice should not be treated as universally applicable. (Instagram Help Center)",
+    [{ href: IG_PUBLIC_PRIVATE_DIFFERENCES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-teen-3',
@@ -906,13 +903,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gg-1',
-    'For public accounts, Instagram states that people can view profiles and posts through the public web URL. (Facebook)',
-    [{ href: IG_WEB_PROFILE, label: 'Facebook', external: true }],
+    'For public accounts, Instagram states that people can view profiles and posts through the public web URL. (Instagram Help Center)',
+    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-gg-2',
-    'Private-account content is restricted to approved Instagram followers rather than being openly available in the same way. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'Private-account content is restricted to approved Instagram followers rather than being openly available in the same way. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-gg-3',
@@ -934,7 +931,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pg-2',
-    'We should not recommend it as a guaranteed growth strategy.',
+    'It is not a reliable growth strategy.',
   ),
   paragraph(
     'p-pg-3',
@@ -942,8 +939,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pg-4',
-    'It also removes the normal public content-discovery pathway because only approved followers can see the private posts. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'It also removes the normal public content-discovery pathway because only approved followers can see the private posts. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pg-5',
@@ -969,13 +966,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-2',
-    'A public account has the potential to participate in non-follower recommendation surfaces when eligible. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'A public account has the potential to participate in non-follower recommendation surfaces when eligible. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pr-3',
-    'But public status also means your posts have broader accessibility. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'But public status also means your posts have broader accessibility. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-pr-4',
@@ -994,83 +991,20 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph('p-pr-7', 'Then choose accordingly.'),
 
-  heading('h-service', 'Using a Public Instagram Profile', 2),
-  paragraph(
-    'p-svc-1',
-    'NovaLikes Instagram follower orders use the public profile information required for the supported service.',
-  ),
-  paragraph(
-    'p-svc-2',
-    'If you want to compare follower options, Instagram followers is a follower-count service for a public profile.',
-    [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
-  ),
-  paragraph(
-    'p-svc-3',
-    'A follower service is not a reason to ignore your personal privacy preferences.',
-  ),
-  paragraph('p-svc-4', 'Nor does it guarantee:'),
-  bullets('ul-svc-not', [
-    'Explore reach,',
-    'Reels distribution,',
-    'organic likes,',
-    'views,',
-    'comments,',
-    'sales,',
-    'or recommendation eligibility.',
-  ]),
-  {
-    id: 'cta-ig-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-instagram-followers',
-    heading: 'Using a Public Instagram Profile?',
-    description:
-      'NovaLikes Instagram follower orders use the public profile information required for the selected service. You do not need to provide your Instagram password.',
-    label: 'View Instagram Followers',
-  },
 
-  heading(
-    'h-buy-private',
-    'Can You Buy Followers for a Private Instagram Account?',
-    2,
-  ),
-  paragraph(
-    'p-bp-1',
-    'For a service that relies on identifying and fulfilling against a public profile, private access can prevent the normal public-profile workflow.',
-  ),
-  paragraph(
-    'p-bp-2',
-    'The correct approach is to follow the actual service requirements rather than claiming that every private account can be fulfilled in the same way.',
-  ),
-  paragraph(
-    'p-bp-3',
-    'Do not ask customers for their Instagram password simply to bypass privacy.',
-  ),
-  paragraph(
-    'p-bp-4',
-    'If the supported NovaLikes follower flow requires public profile access, state that requirement clearly.',
-  ),
 
   heading(
     'h-password',
-    'Does NovaLikes Need Your Instagram Password?',
+    'Does a Third-Party Service Need Your Instagram Password?',
     2,
   ),
   paragraph(
     'p-pw-1',
-    'For the supported Instagram follower ordering flow, no password is required.',
-  ),
-  paragraph(
-    'p-pw-2',
-    'Users should provide only the public profile information required for the selected service.',
-  ),
-  paragraph(
-    'p-pw-3',
-    'This is particularly relevant in an article about privacy.',
+    'No. A legitimate service only needs your public username, and NovaLikes never asks for your Instagram password.',
   ),
   paragraph(
     'p-pw-4',
-    'Account credentials should remain under the user\'s control.',
+    'Keep your login details under your own control.',
   ),
 
   heading(
@@ -1080,13 +1014,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sw-1',
-    'Instagram provides an Account privacy control allowing eligible personal users to change between private and public account states. (Facebook)',
-    [{ href: IG_MAKE_PRIVATE, label: 'Facebook', external: true }],
+    'Instagram provides an Account privacy control allowing eligible personal users to change between private and public account states. (Instagram Help Center)',
+    [{ href: IG_MAKE_PRIVATE, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sw-2',
-    'But remember: professional accounts cannot be private. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'But remember: professional accounts cannot be private. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sw-3',
@@ -1094,8 +1028,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sw-4',
-    'That can also affect Insights access. (Facebook)',
-    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Facebook', external: true }],
+    'That can also affect Insights access. (Instagram Help Center)',
+    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -1115,8 +1049,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-hp-2',
-    'Instagram documents this path in its private-account guidance. (Facebook)',
-    [{ href: IG_MAKE_PRIVATE, label: 'Facebook', external: true }],
+    'Instagram documents this path in its private-account guidance. (Instagram Help Center)',
+    [{ href: IG_MAKE_PRIVATE, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-hp-3',
@@ -1124,8 +1058,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hp-4',
-    'Professional accounts cannot use private status. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'Professional accounts cannot use private status. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -1140,14 +1074,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bpv-2',
-    'Professional accounts cannot remain private. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'Professional accounts cannot remain private. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bp-insights', '2. Insights', 3),
   paragraph(
     'p-bpv-3',
-    'If analytics are important to you, understand that switching back to private can remove Insights access. (Facebook)',
-    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Facebook', external: true }],
+    'If analytics are important to you, understand that switching back to private can remove Insights access. (Instagram Help Center)',
+    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bp-discovery', '3. Discovery Goals', 3),
   paragraph(
@@ -1156,8 +1090,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bpv-5',
-    'Recommendation eligibility applies to public-account content. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Recommendation eligibility applies to public-account content. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bp-audience', '4. Existing Audience', 3),
   paragraph(
@@ -1189,14 +1123,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bpu-2',
-    'Public posts can be seen by anyone on Instagram. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'Public posts can be seen by anyone on Instagram. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bpu-pending', 'Pending Follow Requests', 3),
   paragraph(
     'p-bpu-3',
-    'Instagram warns that pending requests can be automatically accepted when moving to a public professional configuration. (Facebook)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Facebook', external: true }],
+    'Instagram warns that pending requests can be automatically accepted when moving to a public professional configuration. (Instagram Help Center)',
+    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bpu-profile', 'Profile Information', 3),
   paragraph(
@@ -1206,14 +1140,14 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-bpu-elig', 'Recommendation Eligibility', 3),
   paragraph(
     'p-bpu-5',
-    'If growth matters, understand that being public makes recommendation eligibility possible but does not guarantee distribution. (Facebook)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    'If growth matters, understand that being public makes recommendation eligibility possible but does not guarantee distribution. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-bpu-insights', 'Insights', 3),
   paragraph(
     'p-bpu-6',
-    'Public/professional status can give you analytics that are unavailable after moving private. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Insights come with a professional account, which is always public. A private personal account has no Insights. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -1257,8 +1191,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sm-2',
-    'A public account lets people access public content broadly, while a private account limits posts to approved followers. (Facebook)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Facebook', external: true }],
+    'A public account lets people access public content broadly, while a private account limits posts to approved followers. (Instagram Help Center)',
+    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sm-3',
@@ -1268,13 +1202,13 @@ const BLOCKS: ArticleContentBlock[] = [
   bullets('ul-sm-public', [
     'broader discoverability,',
     'recommendation eligibility,',
-    'professional-account compatibility,',
-    'and Insights access where applicable.',
+    'the option to switch to a professional account,',
+    'and Insights once the account is professional.',
   ]),
   paragraph(
     'p-sm-5',
-    "Those public-account features are documented across Instagram's recommendation and Insights guidance. (Facebook)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Facebook', external: true }],
+    "Those public-account features are documented across Instagram's recommendation and Insights guidance. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-sm-6', 'Private accounts have:'),
   bullets('ul-sm-private', [
@@ -1295,6 +1229,17 @@ const BLOCKS: ArticleContentBlock[] = [
     'audience',
     'and how you want Instagram to be used.',
   ]),
+  {
+      id: 'cta-ig-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-instagram-followers',
+      heading: 'Using a Public Instagram Profile?',
+      description:
+        'NovaLikes Instagram follower orders use the public profile information required for the selected service. You do not need to provide your Instagram password.',
+      label: 'View Instagram Followers',
+    },
+
 
   heading('h-takeaways', 'Key Takeaways', 2),
   bullets('ul-takeaways', [
@@ -1303,8 +1248,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'Instagram recommendation eligibility for non-follower surfaces applies to content from public accounts.',
     'Recommendation eligibility does not guarantee that Instagram will recommend the content.',
     'Professional Instagram accounts cannot be set to private.',
-    'Switching to a private account can remove access to Instagram Insights.',
-    'Public accounts can use Instagram Insights where eligible.',
+    'Insights are only available on professional accounts, so going private removes them.',
     'Private is not an algorithm penalty, and public is not a guaranteed reach boost.',
   ]),
 ];
@@ -1341,7 +1285,7 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'Public vs Private Instagram Accounts',
+    alt: 'Split illustration of an Instagram account, with a public side open to everyone and a private side locked to approved followers',
     width: 1600,
     height: 900,
     priority: true,
@@ -1388,7 +1332,7 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
   keyTakeaways: [
     'Content on a public account can be visible to anyone on Instagram.',
     'Public-account content may be eligible for recommendation to non-followers.',
-    'Public accounts can use Instagram Insights where other eligibility requirements are met.',
+    'Instagram Insights is only available on professional accounts, which are always public.',
     'Only approved followers can see posts on a private account.',
     'New followers on a private account require approval.',
     'Private content is not operating as broadly accessible public recommendation content.',
@@ -1427,7 +1371,7 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
       id: 'faq-5',
       question: 'Do you lose Instagram Insights if you make your account private?',
       answer:
-        'Meta says switching back to a private account removes access to Insights, although past data may become available again if you later return to an eligible public setup.',
+        'Yes. Insights is only available on professional accounts, and professional accounts cannot be private, so going private removes Insights. Past data may become available again if you later switch back to a professional account.',
       schemaEligible: true,
     },
     {

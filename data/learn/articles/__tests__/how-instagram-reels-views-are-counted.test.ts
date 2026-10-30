@@ -45,9 +45,7 @@ describe('Article #11 How Instagram Reels views are counted', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-instagram-views', label: 'Instagram views' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
@@ -70,7 +68,7 @@ describe('Article #11 How Instagram Reels views are counted', () => {
     expect(article.content).toContain(
       'Views can be higher than Accounts reached because total playback',
     );
-    expect(article.content).toContain("So don't insert an unsupported:");
+    expect(article.content).toContain('So there is no published rule like:');
     expect(
       article.blocks.some(
         (block) =>

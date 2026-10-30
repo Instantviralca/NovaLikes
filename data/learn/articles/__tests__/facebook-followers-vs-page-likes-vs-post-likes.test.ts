@@ -48,17 +48,20 @@ describe('Article #6 Facebook followers vs Page Likes vs Post Likes', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-facebook-followers', label: 'Facebook followers' },
-      { href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' },
-      { href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' },
-    ]);
+    expect(commercial).toEqual([]);
+    expect(
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
+      ),
+    ).toBe(false);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
-    expect(
-      article.blocks.some((block) => block.type === 'service_cluster_cta'),
-    ).toBe(true);
+    
     expect(
       article.blocks.some(
         (block) =>

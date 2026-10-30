@@ -113,8 +113,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-6',
-    'Some followers simply choose to unfollow. Instagram also routinely removes disabled accounts, which can directly change follower totals. Spam and fake accounts may be removed too, and Instagram provides tools for identifying potential spam followers. (Facebook)',
-    [{ href: IG_COUNT_CHANGES, label: 'Facebook', external: true }],
+    'Some followers simply choose to unfollow. Instagram also routinely removes disabled accounts, which can directly change follower totals. Spam and fake accounts may be removed too, and Instagram provides tools for identifying potential spam followers. (Instagram Help Center)',
+    [{ href: IG_COUNT_CHANGES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-open-7',
@@ -142,8 +142,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-2',
-    "Instagram lets users follow and unfollow accounts whenever they choose. The platform's Help Center provides a standard Unfollow action directly from a profile. (Facebook)",
-    [{ href: IG_UNFOLLOW, label: 'Facebook', external: true }],
+    "Instagram lets users follow and unfollow accounts whenever they choose. The platform's Help Center provides a standard Unfollow action directly from a profile. (Instagram Help Center)",
+    [{ href: IG_UNFOLLOW, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-un-3',
@@ -171,8 +171,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-7',
-    'For professional accounts, Instagram Insights specifically includes follower growth information showing followers gained and lost over time. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'For professional accounts, Instagram Insights specifically includes follower growth information showing followers gained and lost over time. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-un-8',
@@ -194,8 +194,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dis-2',
-    'Instagram says it routinely removes disabled accounts to keep the platform safe, and that this can cause updates to the total number of followers an account displays. (Facebook)',
-    [{ href: IG_COUNT_CHANGES, label: 'Facebook', external: true }],
+    'Instagram says it routinely removes disabled accounts to keep the platform safe, and that this can cause updates to the total number of followers an account displays. (Instagram Help Center)',
+    [{ href: IG_COUNT_CHANGES, label: 'Instagram Help Center', external: true }],
+  ),
+  paragraph(
+    'p-dis-2b',
+    'Instagram also removes likes, follows and comments that come from accounts or apps used to inflate popularity. If you bought followers, this is a common reason some of them disappear. (Instagram Help Center)',
+    [{ href: 'https://www.facebook.com/help/instagram/572730176521116', label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-dis-3',
@@ -238,13 +243,13 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-spam', '3. Spam or Fake Accounts Can Disappear', 2),
   paragraph(
     'p-sp-1',
-    "Instagram's Community Guidelines tell users not to artificially collect followers, likes or shares, and Meta says spam, fake accounts and other accounts that violate its rules may be removed from Instagram. (Facebook)",
-    [{ href: IG_COMMUNITY_GUIDELINES, label: 'Facebook', external: true }],
+    "Instagram's Community Guidelines tell users not to artificially collect followers, likes or shares, and Meta says spam, fake accounts and other accounts that violate its rules may be removed from Instagram. (Instagram Help Center)",
+    [{ href: IG_COMMUNITY_GUIDELINES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sp-2',
-    'Instagram also has a built-in Potential spam follower feature that lets users review and remove accounts Instagram has identified as possible spam followers. (Facebook)',
-    [{ href: IG_SPAM_FOLLOWERS, label: 'Facebook', external: true }],
+    'Instagram also has a built-in Potential spam follower feature that lets users review and remove accounts Instagram has identified as possible spam followers. (Instagram Help Center)',
+    [{ href: IG_SPAM_FOLLOWERS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-sp-3',
@@ -456,7 +461,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-inc-2',
     '“If you stop posting for exactly seven days, Instagram removes followers.”',
   ),
-  paragraph('p-inc-3', "Don't make that claim."),
   paragraph(
     'p-inc-4',
     'Instagram does not automatically delete ordinary followers because you did not upload enough content.',
@@ -538,13 +542,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ins-2',
-    "Meta's current documentation says follower Insights can include Growth, meaning the number of followers gained or lost. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's current documentation says follower Insights can include Growth, meaning the number of followers gained or lost. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ins-3',
-    "Instagram's professional dashboard also provides recent account metrics including new followers alongside views, interactions and content performance. (Facebook)",
-    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram's professional dashboard also provides recent account metrics including new followers alongside views, interactions and content performance. (Instagram Help Center)",
+    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ins-4',
@@ -598,32 +602,17 @@ const BLOCKS: ArticleContentBlock[] = [
       },
     ],
   ),
-  paragraph(
-    'p-und-3',
-    'If you are comparing follower options, Instagram followers is a follower-count service.',
-    [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
-  ),
-  paragraph(
-    'p-und-4',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-und-not', [
-    "improving Instagram's algorithm,",
-    'reaching Explore,',
-    'increasing Reel views,',
-    'producing organic engagement,',
-    'or permanently preventing follower loss.',
-  ]),
   {
-    id: 'cta-ig-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-instagram-followers',
-    heading: 'Compare Instagram Follower Options',
-    description:
-      "Follower count is only one Instagram metric. If you're comparing follower packages, review the available options without treating follower count as a guarantee of reach, engagement or other outcomes.",
-    label: 'View Instagram Followers',
-  },
+      id: 'cta-ig-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-instagram-followers',
+      heading: 'Compare Instagram Follower Options',
+      description:
+        "Follower count is only one Instagram metric. If you're comparing follower packages, review the available options without treating follower count as a guarantee of reach, engagement or other outcomes.",
+      label: 'View Instagram Followers',
+    },
+
 
   heading(
     'h-net',
@@ -650,8 +639,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-net-15', '-60'),
   paragraph(
     'p-net-16',
-    "Instagram Insights' gained/lost follower information can help professional accounts understand this difference. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram Insights' gained/lost follower information can help professional accounts understand this difference. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-net-17',
@@ -685,8 +674,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-res-4',
-    'Instagram provides an Account Status area where users can review removed content and certain restrictions affecting features. (Facebook)',
-    [{ href: IG_ACCOUNT_STATUS, label: 'Facebook', external: true }],
+    'Instagram provides an Account Status area where users can review removed content and certain restrictions affecting features. (Instagram Help Center)',
+    [{ href: IG_ACCOUNT_STATUS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-res-5',
@@ -721,8 +710,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-app-1', 'This is where the risks are real.'),
   paragraph(
     'p-app-2',
-    'Instagram explicitly warns users about non-Instagram apps that offer likes and followers. Meta says accounts that continue using some of these apps may have parts of the account limited, and another official Help Center page warns that accounts using apps to gain likes or followers may be disabled or terminated. (Facebook)',
-    [{ href: IG_THIRD_PARTY_APPS, label: 'Facebook', external: true }],
+    'Instagram explicitly warns users about non-Instagram apps that offer likes and followers. Meta says accounts that continue using some of these apps may have parts of the account limited, and another official Help Center page warns that accounts using apps to gain likes or followers may be disabled or terminated. (Instagram Help Center)',
+    [{ href: IG_THIRD_PARTY_APPS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-app-3',
@@ -740,14 +729,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-app-5',
-    'NovaLikes-supported service ordering should remain separate from giving away an Instagram password.',
+    'NovaLikes never asks for your Instagram password.',
   ),
 
   heading('h-fake', 'Does Instagram Remove Fake Followers?', 2),
   paragraph(
     'p-fk-1',
-    'Instagram says spam and fake accounts that violate its Community Guidelines may be removed, and it also provides users with a tool for removing potential spam followers themselves. (Facebook)',
-    [{ href: IG_REMOVED_ACCOUNTS, label: 'Facebook', external: true }],
+    'Instagram says spam and fake accounts that violate its Community Guidelines may be removed, and it also provides users with a tool for removing potential spam followers themselves. (Instagram Help Center)',
+    [{ href: IG_REMOVED_ACCOUNTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-fk-2',
@@ -755,7 +744,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fk-3',
-    'What we should not claim is:',
+    'But neither of these is accurate:',
   ),
   paragraph(
     'p-fk-4',
@@ -779,13 +768,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rl-2',
-    'Account owners with private profiles can also remove followers from their follower list. (Facebook)',
-    [{ href: IG_REMOVE_FOLLOWER, label: 'Facebook', external: true }],
+    'Account owners can also remove followers from their follower list, on public and private accounts. (Instagram Help Center)',
+    [{ href: IG_REMOVE_FOLLOWER, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-rl-3',
-    'Instagram separately removes disabled and rule-breaking accounts. (Facebook)',
-    [{ href: IG_COUNT_CHANGES, label: 'Facebook', external: true }],
+    'Instagram separately removes disabled and rule-breaking accounts. (Instagram Help Center)',
+    [{ href: IG_COUNT_CHANGES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-rl-4',
@@ -803,8 +792,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-who-1',
-    "Instagram's official Insights focuses on follower trends such as growth and follower gains/losses rather than providing an official professional dashboard whose purpose is to list every person who recently unfollowed you. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Instagram's official Insights focuses on follower trends such as growth and follower gains/losses rather than providing an official professional dashboard whose purpose is to list every person who recently unfollowed you. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-who-2',
@@ -812,8 +801,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-who-3',
-    'Instagram itself warns about apps offering likes and followers and the account risks associated with some non-Instagram services. (Facebook)',
-    [{ href: IG_THIRD_PARTY_APPS, label: 'Facebook', external: true }],
+    'Instagram itself warns about apps offering likes and followers and the account risks associated with some non-Instagram services. (Instagram Help Center)',
+    [{ href: IG_THIRD_PARTY_APPS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-who-4',
@@ -874,8 +863,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ten-8',
-    'Professional Insights allow follower growth to be evaluated over time instead of treating one day\'s movement in isolation. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "Professional Insights allow follower growth to be evaluated over time instead of treating one day's movement in isolation. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -898,12 +887,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-wk-3',
-    'Instagram Insights provides audience and content data to professional accounts, while Account Status can surface actual platform issues. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Insights provides audience and content data to professional accounts, while Account Status can surface actual platform issues. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-wk-4',
-    "If there is no platform warning, don't invent one.",
+    "If there's no platform warning, don't assume a penalty.",
   ),
   paragraph(
     'p-wk-5',
@@ -987,8 +976,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-buy-3',
-    'If Instagram removed disabled or spam accounts, repeatedly chasing the previous number does not solve the underlying issue. Instagram explicitly says disabled-account removals can change follower totals. (Facebook)',
-    [{ href: IG_COUNT_CHANGES, label: 'Facebook', external: true }],
+    'If Instagram removed disabled or spam accounts, repeatedly chasing the previous number does not solve the underlying issue. Instagram explicitly says disabled-account removals can change follower totals. (Instagram Help Center)',
+    [{ href: IG_COUNT_CHANGES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-buy-4',
@@ -996,12 +985,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-buy-5',
-    'A follower service should therefore be treated as exactly that:',
+    'A follower service only changes the follower count.',
   ),
-  paragraph('p-buy-6', 'a follower-count service.'),
   paragraph(
     'p-buy-7',
-    'Not as a substitute for understanding retention, content or audience fit.',
+    'It is not a substitute for understanding retention, content or audience fit.',
   ),
 
   heading(
@@ -1052,8 +1040,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-rd-insights', 'Review Instagram Insights', 3),
   paragraph(
     'p-rd-9',
-    'Track gains and losses rather than obsessing only over the headline follower total. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Track gains and losses rather than obsessing only over the headline follower total. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading(
     'h-rd-status',
@@ -1062,8 +1050,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rd-10',
-    'If you suspect a real platform restriction, look for actual evidence in Account Status rather than guessing. (Facebook)',
-    [{ href: IG_ACCOUNT_STATUS, label: 'Facebook', external: true }],
+    'If you suspect a real platform restriction, look for actual evidence in Account Status rather than guessing. (Instagram Help Center)',
+    [{ href: IG_ACCOUNT_STATUS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading('h-not-bad', 'Follower Loss Is Not Always Bad', 2),
@@ -1122,8 +1110,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-mv-3',
-    'Instagram itself may update follower totals when disabled accounts are removed. (Facebook)',
-    [{ href: IG_COUNT_CHANGES, label: 'Facebook', external: true }],
+    'Instagram itself may update follower totals when disabled accounts are removed. (Instagram Help Center)',
+    [{ href: IG_COUNT_CHANGES, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-mv-4',
@@ -1231,7 +1219,7 @@ export const WHY_INSTAGRAM_FOLLOWERS_DROP_ARTICLE: LearnArticleRecord = {
   keyTakeaways: [
     'People unfollow normally',
     'Instagram removes disabled accounts',
-    'Spam or fake accounts disappear',
+    'Spam or fake accounts disappear, and Instagram removes follows from inauthentic accounts',
     'Your recent content attracts a different audience',
     'A viral post brought temporary followers who later leave',
     'Your content direction changes',

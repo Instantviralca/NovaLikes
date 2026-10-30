@@ -109,8 +109,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-3',
-    'When Facebook shows Save video, that usually means saving the video inside Facebook so you can find and watch it again later. Meta describes Save video and Save reel as features for viewing content later. (Facebook)',
-    [{ href: FB_SAVE_LATER, label: 'Facebook', external: true }],
+    'When Facebook shows Save video, that usually means saving the video inside Facebook so you can find and watch it again later. Meta describes Save video and Save reel as features for viewing content later. (Facebook Help Center)',
+    [{ href: FB_SAVE_LATER, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-4',
@@ -118,8 +118,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-5',
-    'Facebook does provide direct downloading for some content you own. Meta documents downloading Reels you shared yourself and downloading your own Facebook LIVE video after the stream has ended. (Facebook)',
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook', external: true }],
+    'Facebook does provide direct downloading for some content you own. Meta documents downloading Reels you shared yourself and downloading your own Facebook LIVE video after the stream has ended. (Facebook Help Center)',
+    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-6',
@@ -154,8 +154,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pm-2',
-    'Meta says that when something is shared as Public, anyone can see it, including people who are not Facebook friends and people outside Facebook. (Facebook)',
-    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook', external: true }],
+    'Meta says that when something is shared as Public, anyone can see it, including people who are not Facebook friends and people outside Facebook. (Facebook Help Center)',
+    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pm-3',
@@ -169,8 +169,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-pm-5',
-    'Facebook documents those audience choices separately from the Public setting. (Facebook)',
-    [{ href: FB_CHOOSE_WHO, label: 'Facebook', external: true }],
+    'Facebook documents those audience choices separately from the Public setting. (Facebook Help Center)',
+    [{ href: FB_CHOOSE_WHO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pm-6',
@@ -218,8 +218,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-how-5',
-    'Facebook audience controls determine who can see shared content. (Facebook)',
-    [{ href: FB_CONTROL_SHARE, label: 'Facebook', external: true }],
+    'Facebook audience controls determine who can see shared content. (Facebook Help Center)',
+    [{ href: FB_CONTROL_SHARE, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-how-2', 'Step 2: Copy the Video Link', 3),
   paragraph(
@@ -282,8 +282,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-sv-save', 'Save Video', 3),
   paragraph(
     'p-sv-2',
-    "Facebook's built-in Save video function stores the video in your saved Facebook content so you can return to it later. Meta specifically describes saving Reels and videos as a way to view them later. (Facebook)",
-    [{ href: FB_SAVE_VIDEO, label: 'Facebook', external: true }],
+    "Facebook's built-in Save video function stores the video in your saved Facebook content so you can return to it later. Meta specifically describes saving Reels and videos as a way to view them later. (Facebook Help Center)",
+    [{ href: FB_SAVE_VIDEO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-sv-3',
@@ -333,13 +333,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nt-3',
-    'Meta currently documents the ability to download a Reel you shared to Facebook. It also documents downloading your own Facebook LIVE video after the stream has ended. (Facebook)',
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook', external: true }],
+    'Meta currently documents the ability to download a Reel you shared to Facebook. It also documents downloading your own Facebook LIVE video after the stream has ended. (Facebook Help Center)',
+    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-nt-4',
-    'Facebook also lets users export copies of their own Facebook information and select media quality during an export. (Facebook)',
-    [{ href: FB_EXPORT_INFO, label: 'Facebook', external: true }],
+    'Facebook also lets users export copies of their own Facebook information and select media quality during an export. (Facebook Help Center)',
+    [{ href: FB_EXPORT_INFO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-nt-5',
@@ -347,8 +347,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nt-6',
-    "For another creator's ordinary public video, Facebook's general Save feature is primarily designed around returning to the content later inside Facebook. (Facebook)",
-    [{ href: FB_SAVE_VIDEO, label: 'Facebook', external: true }],
+    "For another creator's ordinary public video, Facebook's general Save feature is primarily designed around returning to the content later inside Facebook. (Facebook Help Center)",
+    [{ href: FB_SAVE_VIDEO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-nt-7',
@@ -359,8 +359,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-or-1', 'Yes.'),
   paragraph(
     'p-or-2',
-    "Meta currently documents a native option for downloading a Reel you've shared to Facebook to your device. Meta notes that download options can differ depending on whether the Reel was posted before or after September 2025. (Facebook)",
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook', external: true }],
+    "Meta documents a native option for downloading a Reel you've shared to Facebook in its iPhone and Android apps. It is not available on computers. (Facebook Help Center)",
+    [{ href: 'https://www.facebook.com/help/1005944300373812', label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-or-3',
@@ -379,8 +379,13 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-ol-1', 'Yes.'),
   paragraph(
     'p-ol-2',
-    'Meta documents downloading an ended Facebook LIVE video from your video library. (Facebook)',
-    [{ href: FB_SAVE_LIVE, label: 'Facebook', external: true }],
+    'Meta documents downloading an ended Facebook LIVE video from your video library. (Facebook Help Center)',
+    [{ href: FB_SAVE_LIVE, label: 'Facebook Help Center', external: true }],
+  ),
+  paragraph(
+    'p-ol-2b',
+    'Since 19 February 2025, Facebook keeps new LIVE videos for 30 days, then removes them automatically. To keep one, download it, move it to cloud storage or turn a clip into a Reel before then. (Meta Newsroom)',
+    [{ href: 'https://about.fb.com/news/2025/02/updating-our-facebook-live-video-storage-policy/', label: 'Meta Newsroom', external: true }],
   ),
   paragraph(
     'p-ol-3',
@@ -418,13 +423,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-se-5',
-    "Meta says Facebook does not claim ownership of users' content; users retain rights in the content they create while granting Meta the licenses necessary to operate its services. (Facebook)",
-    [{ href: FB_TERMS, label: 'Facebook', external: true }],
+    "Meta says Facebook does not claim ownership of users' content; users retain rights in the content they create while granting Meta the licenses necessary to operate its services. (Facebook Help Center)",
+    [{ href: FB_TERMS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-se-6',
-    "Meta also says Facebook's terms do not allow people to post content that violates another person's intellectual-property rights. (Facebook)",
-    [{ href: FB_INTELLECTUAL_PROPERTY, label: 'Facebook', external: true }],
+    "Meta also says Facebook's terms do not allow people to post content that violates another person's intellectual-property rights. (Facebook Help Center)",
+    [{ href: FB_INTELLECTUAL_PROPERTY, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-se-7',
@@ -439,8 +444,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cf-3',
-    'A Facebook creator can choose Public as the audience, which means the post can be seen broadly. (Facebook)',
-    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook', external: true }],
+    'A Facebook creator can choose Public as the audience, which means the post can be seen broadly. (Facebook Help Center)',
+    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-cf-4',
@@ -452,8 +457,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cf-6',
-    "Meta recommends getting permission from the author before posting someone else's copyrighted work when necessary. (Facebook)",
-    [{ href: FB_AVOID_COPYRIGHTED, label: 'Facebook', external: true }],
+    "Meta recommends getting permission from the author before posting someone else's copyrighted work when necessary. (Facebook Help Center)",
+    [{ href: FB_AVOID_COPYRIGHTED, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-cf-7',
@@ -484,8 +489,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wh-4',
-    'Meta maintains copyright reporting and intellectual-property enforcement systems when rights holders believe their work has been used without permission. (Facebook)',
-    [{ href: FB_COPYRIGHT, label: 'Facebook', external: true }],
+    'Meta maintains copyright reporting and intellectual-property enforcement systems when rights holders believe their work has been used without permission. (Facebook Help Center)',
+    [{ href: FB_COPYRIGHT, label: 'Facebook Help Center', external: true }],
   ),
 
   heading('h-private', 'Can You Download a Private Facebook Video?', 2),
@@ -499,8 +504,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-3',
-    "Facebook's audience settings exist specifically to control who can view a post. (Facebook)",
-    [{ href: FB_CONTROL_SHARE, label: 'Facebook', external: true }],
+    "Facebook's audience settings exist specifically to control who can view a post. (Facebook Help Center)",
+    [{ href: FB_CONTROL_SHARE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pr-4',
@@ -522,8 +527,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gr-2',
-    "Meta says photos and videos in public groups are visible to the group's public audience, while content in private groups is available only to group members. (Facebook)",
-    [{ href: FB_GROUP_MEDIA, label: 'Facebook', external: true }],
+    "Meta says photos and videos in public groups are visible to the group's public audience, while content in private groups is available only to group members. (Facebook Help Center)",
+    [{ href: FB_GROUP_MEDIA, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-gr-3',
@@ -545,8 +550,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lg-2',
-    'Facebook itself defines Public content as viewable by anyone, including people off Facebook. (Facebook)',
-    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook', external: true }],
+    'Facebook itself defines Public content as viewable by anyone, including people off Facebook. (Facebook Help Center)',
+    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-lg-3',
@@ -728,8 +733,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-un-2',
-    'Facebook allows people to change the audience of posts after publishing them. (Facebook)',
-    [{ href: FB_CHANGE_AUDIENCE, label: 'Facebook', external: true }],
+    'Facebook allows people to change the audience of posts after publishing them. (Facebook Help Center)',
+    [{ href: FB_CHANGE_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-un-3',
@@ -751,8 +756,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bp-2',
-    'Meta lets publishers change who can see past posts. (Facebook)',
-    [{ href: FB_CHANGE_AUDIENCE, label: 'Facebook', external: true }],
+    'Meta lets publishers change who can see past posts. (Facebook Help Center)',
+    [{ href: FB_CHANGE_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-bp-3',
@@ -811,15 +816,16 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-vs-reel', 'Facebook Video vs Facebook Reel', 2),
   paragraph(
     'p-vr-1',
-    "Facebook's video ecosystem now includes Reels alongside other video content.",
+    'In June 2025 Facebook renamed its Videos tab to Reels, and all new videos posted to Facebook are now shared as Reels. (Facebook Help Center)',
+    [{ href: 'https://www.facebook.com/help/276515126152168', label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-vr-2',
-    'Meta has increasingly integrated video into Reels experiences, but user search intent still differs.',
+    'Older videos can still open from watch or videos links, while newer ones usually open as Reel links.',
   ),
   paragraph(
     'p-vr-3',
-    'Downloading a Facebook video and downloading a Facebook Reel are separate tasks.',
+    'So the link you have matters more than what you call the video.',
   ),
   paragraph(
     'p-vr-4',
@@ -865,8 +871,13 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-lv-own', 'Your Own LIVE', 3),
   paragraph(
     'p-lv-2',
-    'Meta provides a native workflow for saving or downloading your own ended Facebook LIVE video. (Facebook)',
-    [{ href: FB_SAVE_LIVE, label: 'Facebook', external: true }],
+    'Meta provides a native workflow for saving or downloading your own ended Facebook LIVE video. (Facebook Help Center)',
+    [{ href: FB_SAVE_LIVE, label: 'Facebook Help Center', external: true }],
+  ),
+  paragraph(
+    'p-lv-2b',
+    'Do it within 30 days: Facebook now removes LIVE videos automatically after that. (Meta Newsroom)',
+    [{ href: 'https://about.fb.com/news/2025/02/updating-our-facebook-live-video-storage-policy/', label: 'Meta Newsroom', external: true }],
   ),
   heading('h-lv-other', "Someone Else's Public LIVE Recording", 3),
   paragraph(
@@ -911,8 +922,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-3',
-    'Meta has separate Story features and even provides creators with native options for saving their own archived Stories to a device. (Facebook)',
-    [{ href: FB_SAVE_STORY, label: 'Facebook', external: true }],
+    'Meta has separate Story features and even provides creators with native options for saving their own archived Stories to a device. (Facebook Help Center)',
+    [{ href: FB_SAVE_STORY, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-st-4',
@@ -998,8 +1009,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rm-3',
-    'Meta operates copyright reporting and intellectual-property enforcement systems across Facebook. (Facebook)',
-    [{ href: FB_COPYRIGHT, label: 'Facebook', external: true }],
+    'Meta operates copyright reporting and intellectual-property enforcement systems across Facebook. (Facebook Help Center)',
+    [{ href: FB_COPYRIGHT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-rm-4',
@@ -1072,8 +1083,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-1',
-    'Meta documents ordinary actions such as saving content for later viewing, but its official sources do not describe a creator notification for downloads of public video media by outside tools. (Facebook)',
-    [{ href: FB_SAVE_VIDEO, label: 'Facebook', external: true }],
+    'Meta documents ordinary actions such as saving content for later viewing, but its official sources do not describe a creator notification for downloads of public video media by outside tools. (Facebook Help Center)',
+    [{ href: FB_SAVE_VIDEO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-nf-2',
@@ -1099,8 +1110,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pg-2',
-    'Facebook Pages commonly publish public-facing video content, but individual posts still operate under Facebook\'s visibility and content systems. (Facebook)',
-    [{ href: FB_PHOTOS_VIDEOS, label: 'Facebook', external: true }],
+    "Facebook Pages commonly publish public-facing video content, but individual posts still operate under Facebook's visibility and content systems. (Facebook Help Center)",
+    [{ href: FB_PHOTOS_VIDEOS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pg-3',
@@ -1118,13 +1129,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pf-2',
-    'If the owner selected Public for that video or post, Public means anyone can see it, including people off Facebook. (Facebook)',
-    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook', external: true }],
+    'If the owner selected Public for that video or post, Public means anyone can see it, including people off Facebook. (Facebook Help Center)',
+    [{ href: FB_SELECT_AUDIENCE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pf-3',
-    'If it is Friends-only, Only Me or otherwise restricted, the public downloader cannot retrieve it. (Facebook)',
-    [{ href: FB_CHOOSE_WHO, label: 'Facebook', external: true }],
+    'If it is Friends-only, Only Me or otherwise restricted, the public downloader cannot retrieve it. (Facebook Help Center)',
+    [{ href: FB_CHOOSE_WHO, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -1190,8 +1201,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-af-4',
-    "Meta's Terms preserve creators' rights in the content they create, and Meta maintains intellectual-property enforcement processes. (Facebook)",
-    [{ href: FB_TERMS, label: 'Facebook', external: true }],
+    "Meta's Terms preserve creators' rights in the content they create, and Meta maintains intellectual-property enforcement processes. (Facebook Help Center)",
+    [{ href: FB_TERMS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading('h-repost', 'Can You Repost a Downloaded Facebook Video?', 2),
@@ -1201,8 +1212,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rp-2',
-    'Meta advises users to avoid posting copied content they do not have the right to post and operates copyright reporting systems for rights holders. (Facebook)',
-    [{ href: FB_COMMUNITY, label: 'Facebook', external: true }],
+    'Meta advises users to avoid posting copied content they do not have the right to post and operates copyright reporting systems for rights holders. (Facebook Help Center)',
+    [{ href: FB_COMMUNITY, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-rp-3', 'Possible legitimate situations include:'),
   bullets('ul-repost', [
@@ -1231,8 +1242,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bu-3',
-    'For broader exports, Facebook provides tools for downloading copies of Page and profile information, and creators can download certain own-content types directly. (Facebook)',
-    [{ href: FB_DOWNLOAD_PAGE, label: 'Facebook', external: true }],
+    'For broader exports, Facebook provides tools for downloading copies of Page and profile information, and creators can download certain own-content types directly. (Facebook Help Center)',
+    [{ href: FB_DOWNLOAD_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-bu-4',
@@ -1250,8 +1261,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lt-2',
-    'If the answer is that you just want to watch it again later on Facebook, use Facebook\'s native Save video feature. (Facebook)',
-    [{ href: FB_SAVE_VIDEO, label: 'Facebook', external: true }],
+    "If the answer is that you just want to watch it again later on Facebook, use Facebook's native Save video feature. (Facebook Help Center)",
+    [{ href: FB_SAVE_VIDEO, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-lt-3',
@@ -1299,8 +1310,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-si-3',
-    "And remember: being able to download a public file does not give you ownership of somebody else's content. Meta retains a copyright and intellectual-property framework for Facebook content and does not take ownership away from creators merely because they post it to Facebook. (Facebook)",
-    [{ href: FB_TERMS, label: 'Facebook', external: true }],
+    "And remember: being able to download a public file does not give you ownership of somebody else's content. Meta retains a copyright and intellectual-property framework for Facebook content and does not take ownership away from creators merely because they post it to Facebook. (Facebook Help Center)",
+    [{ href: FB_TERMS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading('h-takeaways', 'Key Takeaways', 2),
@@ -1350,7 +1361,7 @@ export const HOW_TO_DOWNLOAD_FACEBOOK_VIDEO_ARTICLE: LearnArticleRecord = {
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'How to Download a Public Facebook Video',
+    alt: 'Three steps: a public Facebook video, its facebook.com/watch link, and the available file saved to a folder',
     width: 1600,
     height: 900,
     priority: true,

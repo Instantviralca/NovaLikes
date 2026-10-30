@@ -36,12 +36,21 @@ describe('Why does my TikTok have 0 views', () => {
         : [],
     );
     expect(commercial).toEqual([]);
+    expect(
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
+      ),
+    ).toBe(false);
     expect(article.relatedServices).toEqual([
       'buy-tiktok-views',
       'buy-tiktok-likes',
       'buy-tiktok-followers',
     ]);
-    expect(article.blocks.some((block) => block.type === 'service_cluster_cta')).toBe(true);
+    
   });
 
   it('cites TikTok sources and links related Learn guides', () => {

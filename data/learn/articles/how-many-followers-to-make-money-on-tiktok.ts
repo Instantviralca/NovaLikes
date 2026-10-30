@@ -170,7 +170,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-no-followers', 'Can You Make Money on TikTok Without Followers?', 2),
   paragraph(
     'p-nf-1',
-    'Not through TikTok’s own programs, which all start at 1,000 followers or more. You can still earn from TikTok skills without a large audience:',
+    "Mostly not through TikTok's own programs, which usually start at 1,000 followers or more. You can still earn from TikTok skills without a large audience:",
   ),
   bullets('ul-nf', [
     'Make videos for brands to post on their own accounts (often called UGC). You are paid for the content, not your reach.',
@@ -199,14 +199,6 @@ const BLOCKS: ArticleContentBlock[] = [
     ],
   ),
 
-  {
-    id: 'cta-tiktok-growth',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'Followers, likes and views measure different things. A higher count does not unlock Creator Rewards or other earning features by itself; TikTok checks views, account standing and authenticity separately.',
-    serviceSlugs: ['buy-tiktok-followers', 'buy-tiktok-views', 'buy-tiktok-likes'],
-  },
 ];
 
 const CONTENT = BLOCKS.map((block) => {

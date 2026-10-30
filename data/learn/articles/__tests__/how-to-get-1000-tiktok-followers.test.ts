@@ -52,9 +52,7 @@ describe('Article #16 How to get your first 1,000 TikTok followers organically',
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-followers', label: 'TikTok followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);

@@ -104,13 +104,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-6',
-    'The difference has also become more confusing because Facebook has been moving Pages toward follows as the main audience connection. Meta currently says some Pages that previously had a Like button may now only have a Follow button. Its Page Insights documentation also says Page Likes have been replaced by follows in Meta Business Suite. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'The difference has also become more confusing because Facebook has been moving Pages toward follows as the main audience connection. Meta currently says some Pages that previously had a Like button may now only have a Follow button. Its Page Insights documentation also says Page Likes have been replaced by follows in Meta Business Suite. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-7',
-    'At the same time, Meta documentation still refers to people being able to like or follow Pages in some contexts, so the exact Page interface a user sees can vary. (Facebook)',
-    [{ href: FB_INVITE_FOLLOW, label: 'Facebook', external: true }],
+    'At the same time, Meta documentation still refers to people being able to like or follow Pages in some contexts, so the exact Page interface a user sees can vary. (Facebook Help Center)',
+    [{ href: FB_INVITE_FOLLOW, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-open-8', 'Post Likes are different again.'),
   paragraph(
@@ -129,8 +129,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fol-2',
-    'Meta explains that when someone follows a Page, they may receive updates from that Page in their Feed. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'Meta explains that when someone follows a Page, they may receive updates from that Page in their Feed. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-fol-3',
@@ -150,8 +150,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fol-7',
-    'Facebook uses personalized Feed ranking and recommendations, so following a Page does not create a guarantee that every Page post reaches every follower. Meta\'s current recommendation documentation also confirms that Facebook may recommend Pages and posts people do not already follow. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    "Facebook uses personalized Feed ranking and recommendations, so following a Page does not create a guarantee that every Page post reaches every follower. Meta's current recommendation documentation also confirms that Facebook may recommend Pages and posts people do not already follow. (Facebook Help Center)",
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   heading(
     'h-fol-useful',
@@ -166,8 +166,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-fol-8',
-    "Meta provides Page follower information through the Page's professional dashboard and Audience insights. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta provides Page follower information through the Page's professional dashboard and Audience insights. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-fol-9', 'Think of followers as:'),
   paragraph('p-fol-10', 'people connected to the Page'),
@@ -176,7 +176,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-fol-13',
     'Facebook followers therefore describe the Page audience, not a reaction to one piece of content.',
-    [{ href: '/buy-facebook-followers', label: 'Facebook followers' }],
   ),
 
   heading('h-page-likes', 'What Are Facebook Page Likes?', 2),
@@ -190,23 +189,22 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pl-3',
-    'Meta currently states that some Pages that previously had a Like button may now only have a Follow button. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'Meta currently states that some Pages that previously had a Like button may now only have a Follow button. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pl-4',
-    'Its current Page follower Insights documentation goes further and says Page Likes have been replaced by follows in Meta Business Suite, meaning Page managers now see follow insights rather than Page Like insights there. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Its current Page follower Insights documentation goes further and says Page Likes have been replaced by follows in Meta Business Suite, meaning Page managers now see follow insights rather than Page Like insights there. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pl-5',
-    "However, Facebook's wider documentation can still reference liking or following a Page, and Meta notes that its Page experience can change as features are tested. (Facebook)",
-    [{ href: FB_PROFILES_PAGES_GROUPS, label: 'Facebook', external: true }],
+    "However, Facebook's wider documentation can still reference liking or following a Page, and Meta notes that its Page experience can change as features are tested. (Facebook Help Center)",
+    [{ href: FB_PROFILES_PAGES_GROUPS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pl-6',
     'So Facebook Page Likes should now be understood as a Page-level connection whose visibility and availability can depend on the Page experience.',
-    [{ href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' }],
   ),
   heading(
     'h-pl-happens',
@@ -215,8 +213,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pl-7',
-    "Meta's current follower documentation says that when someone likes a Page, they automatically follow it, and that connection is included in Page follow totals. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's current follower documentation says that when someone likes a Page, they automatically follow it, and that connection is included in Page follow totals. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pl-8',
@@ -248,8 +246,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-po-3',
-    'A user can react to content with options including Like, Love, Haha, Wow, Sad and Angry. (Facebook)',
-    [{ href: FB_REACT, label: 'Facebook', external: true }],
+    'A user can react to content with options including Like, Love, Haha, Wow, Sad and Angry. (Facebook Help Center)',
+    [{ href: FB_REACT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-po-4',
@@ -291,7 +289,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-po-10',
     'Facebook Post Likes should therefore be considered a content-level interaction metric.',
-    [{ href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' }],
   ),
 
   heading(
@@ -351,8 +348,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wd-4',
-    'Meta currently explains that liking a Page can automatically include following it, while some Pages now expose only a Follow option. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'Meta currently explains that liking a Page can automatically include following it, while some Pages now expose only a Follow option. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-wd-5',
@@ -392,8 +389,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-of-2',
-    'Meta explicitly says that some Pages that previously had a Like button may now only have a Follow button. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE_ALT, label: 'Facebook', external: true }],
+    'Meta explicitly says that some Pages that previously had a Like button may now only have a Follow button. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE_ALT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-of-3',
@@ -409,8 +406,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-of-6',
-    "Meta's Business Suite documentation now directs Page managers toward follower Insights because Page Like Insights have been replaced by follow Insights there. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's Business Suite documentation now directs Page managers toward follower Insights because Page Like Insights have been replaced by follow Insights there. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -425,8 +422,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lwf-3',
-    'Facebook lets people react to posts directly, including with the Like reaction. (Facebook)',
-    [{ href: FB_REACT, label: 'Facebook', external: true }],
+    'Facebook lets people react to posts directly, including with the Like reaction. (Facebook Help Center)',
+    [{ href: FB_REACT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-lwf-4',
@@ -434,8 +431,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lwf-5',
-    'This is particularly relevant because Facebook can recommend posts and Pages to people who do not already follow them. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'This is particularly relevant because Facebook can recommend posts and Pages to people who do not already follow them. (Facebook Help Center)',
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-lwf-6', 'Someone might:'),
   bullets('ul-lwf', [
@@ -499,8 +496,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mf-9',
-    'Facebook Feed is personalized and considers multiple signals when determining which posts appear and how they are ordered. Public Facebook guidance notes that engagement signals such as comments, likes, reactions and shares can be among the information relevant to Feed ranking, but no simple relationship guarantees exposure to every follower. (Facebook)',
-    [{ href: FB_FEED_ORDER, label: 'Facebook', external: true }],
+    'Facebook Feed is personalized and considers multiple signals when determining which posts appear and how they are ordered. Public Facebook guidance notes that engagement signals such as comments, likes, reactions and shares can be among the information relevant to Feed ranking, but no simple relationship guarantees exposure to every follower. (Facebook Help Center)',
+    [{ href: FB_FEED_ORDER, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -531,8 +528,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gu-7',
-    'Facebook can also recommend content to people who do not already follow the Page. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'Facebook can also recommend content to people who do not already follow the Page. (Facebook Help Center)',
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-gu-8', 'Therefore:'),
   paragraph('p-gu-9', 'more followers ≠ guaranteed likes'),
@@ -542,28 +539,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-gu-12',
     'These metrics should be assessed independently.',
   ),
-  {
-    id: 'cta-facebook-metrics',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare Facebook Options',
-    text: 'Facebook Followers, Page Likes and Post Likes refer to different parts of a Facebook presence. Followers and Page Likes use a Page URL. Post Likes use a specific post URL.',
-    serviceSlugs: [
-      'buy-facebook-followers',
-      'buy-facebook-page-likes',
-      'buy-facebook-post-likes',
-    ],
-  },
 
   heading(
     'h-still',
     'Are Page Likes Still Important in 2026?',
     2,
   ),
-  paragraph('p-st-1', 'The better question is:'),
+  paragraph('p-st-1', 'Not as a current metric.',
+  ),
   paragraph(
     'p-st-2',
-    'Does the Page experience you are using still expose Page Likes?',
+    'On 15 November 2025 Meta retired the old Page Likes metric (called “Page fans”) from its Page insights API, after retiring the Insights tab for classic Pages. Follows are now the Page audience number Meta reports.',
+    [{ href: 'https://developers.facebook.com/blog/post/2025/08/15/page-insights-api-updates/', label: 'Page insights API', external: true }],
   ),
   paragraph(
     'p-st-3',
@@ -576,8 +563,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-st-5',
-    'Those points come from Facebook\'s current Page-follow documentation. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    "Those points come from Facebook's current Page-follow documentation. (Facebook Help Center)",
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-st-6',
@@ -657,8 +644,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rx-2',
-    "Facebook's current reaction system includes Like as well as other options such as Love, Haha, Wow, Sad and Angry. (Facebook)",
-    [{ href: FB_WHAT_LIKE_MEANS, label: 'Facebook', external: true }],
+    "Facebook's current reaction system includes Like as well as other options such as Love, Haha, Wow, Sad and Angry. (Facebook Help Center)",
+    [{ href: FB_WHAT_LIKE_MEANS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-rx-3', 'So:'),
   paragraph('p-rx-4', 'Every Like is a reaction.'),
@@ -680,8 +667,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hide-1',
-    'Facebook provides settings allowing users to hide reaction totals on certain posts and Reels. (Facebook)',
-    [{ href: FB_HIDE_REACTIONS, label: 'Facebook', external: true }],
+    'Facebook provides settings allowing users to hide reaction totals on certain posts and Reels. (Facebook Help Center)',
+    [{ href: FB_HIDE_REACTIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-hide-2',
@@ -727,8 +714,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-cmp-6',
-    "Facebook's recommendations can expose content beyond an existing follower base, which makes simple follower-to-like comparisons incomplete. (Facebook)",
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    "Facebook's recommendations can expose content beyond an existing follower base, which makes simple follower-to-like comparisons incomplete. (Facebook Help Center)",
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -745,8 +732,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-biz-3', 'Followers'),
   paragraph(
     'p-biz-4',
-    "Meta's current Page management experience focuses on follower Insights. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's current Page management experience focuses on follower Insights. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   heading(
     'h-biz-content',
@@ -763,14 +750,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-biz-8',
-    "Facebook's Feed systems consider various interaction signals, while businesses can assess post-level performance separately from Page audience size. (Facebook)",
-    [{ href: FB_FEED_ORDER, label: 'Facebook', external: true }],
+    "Facebook's Feed systems consider various interaction signals, while businesses can assess post-level performance separately from Page audience size. (Facebook Help Center)",
+    [{ href: FB_FEED_ORDER, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-biz-history', 'To Understand Page Like History', 3),
   paragraph(
     'p-biz-9',
-    "Use any Page Like information still available in your Page's current interface or historical reporting, keeping in mind Meta's transition toward followers. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Use any Page Like information still available in your Page's current interface or historical reporting, keeping in mind Meta's transition toward followers. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -788,8 +775,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mm-3',
-    'Meta says that on Pages where likes are still relevant, someone liking a Page can automatically follow it. It also says that people who previously liked and followed a Page remain followers when the Page shifts to the newer Follow-only experience. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Meta says that on Pages where likes are still relevant, someone liking a Page can automatically follow it. It also says that people who previously liked and followed a Page remain followers when the Page shifts to the newer Follow-only experience. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-mm-4',
@@ -807,8 +794,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wp-2',
-    "That is supported by Facebook's own move toward Follow buttons, follower tabs and follower Insights. (Facebook)",
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    "That is supported by Facebook's own move toward Follow buttons, follower tabs and follower Insights. (Facebook Help Center)",
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-wp-3',
@@ -899,8 +886,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-out-4',
-    'Meta describes Facebook recommendations and Feed as personalized systems influenced by multiple signals, rather than a simple rule based on one visible count. (Facebook)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'Meta describes Facebook recommendations and Feed as personalized systems influenced by multiple signals, rather than a simple rule based on one visible count. (Facebook Help Center)',
+    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-out-5',
@@ -930,8 +917,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cl-5',
-    "Facebook's shift toward the Follow model has made followers increasingly central to Page management, but Page Likes can still appear in legacy/current contexts depending on the Page experience. (Facebook)",
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    "Facebook's shift toward the Follow model has made followers central to Page management, though Page Likes can still appear in some older reports. (Facebook Help Center)",
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-cl-6',
@@ -939,8 +926,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   heading('h-takeaways', 'Key Takeaways', 2),
   bullets('ul-takeaways', [
-    'Facebook Page Followers are a Page-level audience metric.',
-    'Meta is transitioning many Page experiences away from Page Likes and toward follows.',
+    'Facebook Page Followers are the current Page-level audience metric.',
+    'Meta retired the old Page Likes metric from its Page insights API in November 2025.',
     'Some Pages may now show only a Follow button.',
     'Post Likes are reactions to one individual Facebook post, not Likes on the Page itself.',
     'A Like is one type of Facebook Reaction.',
@@ -1025,10 +1012,10 @@ export const FACEBOOK_FOLLOWERS_VS_PAGE_LIKES_VS_POST_LIKES_ARTICLE: LearnArticl
     contentReviewed: true,
     lastEditorialUpdate: SCHEDULED_AT,
     keyTakeaways: [
-      'Page Followers = people connected to the Page through following',
-      'Page Likes = a Page-level connection that Facebook has been transitioning away from on many Page experiences',
-      'Post Likes = Like reactions on one specific post',
-    ],
+    'Page Followers = people connected to the Page through following',
+    'Page Likes = an older Page-level connection; Meta retired the Page Likes metric from its Page insights API in November 2025',
+    'Post Likes = Like reactions on one specific post',
+  ],
     faqs: [
       {
         id: 'faq-1',
@@ -1042,7 +1029,7 @@ export const FACEBOOK_FOLLOWERS_VS_PAGE_LIKES_VS_POST_LIKES_ARTICLE: LearnArticl
         id: 'faq-2',
         question: 'Are Facebook Page Likes being removed?',
         answer:
-          'Facebook says some Pages that previously had a Like button may now only have a Follow button, and Meta Business Suite now focuses on Follows rather than Page Like insights.',
+          'Largely, yes. Facebook says some Pages that previously had a Like button may now only have a Follow button, Meta Business Suite shows follows rather than Page Like insights, and Meta retired the Page Likes metric from its Page insights API in November 2025.',
         schemaEligible: true,
       },
       {

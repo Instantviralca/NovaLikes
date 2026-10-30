@@ -361,7 +361,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-fewer-1',
     'TikTok does not publish a rule saying private accounts lose a fixed share of follower growth.',
   ),
-  paragraph('p-fewer-2', "So don't invent one."),
   paragraph(
     'p-fewer-3',
     'But there is an obvious structural difference: public accounts allow broader content access, while private accounts require follower approval for protected account content. (TikTok Support)',
@@ -764,7 +763,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-teen-3',
-    'So an article saying every TikTok user can configure every privacy feature identically would be inaccurate.',
+    'So not every TikTok user sees the same privacy options.',
   ),
   paragraph('p-teen-4', 'Some controls depend on:'),
   bullets('ul-teen', [
@@ -861,71 +860,27 @@ const BLOCKS: ArticleContentBlock[] = [
     'And do not choose private because somebody claimed “Private accounts cannot be found at all.”',
   ),
   paragraph('p-cr-6', 'Both are oversimplifications.'),
-
-  heading(
-    'h-service',
-    'Public Profiles and TikTok Follower Services',
-    2,
-  ),
-  paragraph(
-    'p-svc-1',
-    'NovaLikes TikTok follower ordering uses public profile information for the supported ordering flow.',
-  ),
-  paragraph(
-    'p-svc-2',
-    'If you want to compare follower packages, TikTok followers is a follower-count service for a public profile.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
-  ),
-  paragraph(
-    'p-svc-3',
-    'But a follower service is not a reason to weaken your privacy preferences.',
-  ),
-  paragraph(
-    'p-svc-4',
-    'The NovaLikes follower service needs a public profile to deliver followers.',
-  ),
-  paragraph(
-    'p-svc-5',
-    'That does not mean public accounts rank better.',
-  ),
-  paragraph('p-svc-6', 'A follower service does not guarantee:'),
-  bullets('ul-svc-not', [
-    'FYP reach,',
-    'search ranking,',
-    'organic growth,',
-    'or engagement',
-  ]),
-  paragraph(
-    'p-svc-7',
-    'as a result of the follower service.',
-  ),
   {
-    id: 'cta-tt-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-tiktok-followers',
-    heading: 'Using a Public TikTok Profile?',
-    description:
-      'NovaLikes TikTok follower orders use the public profile information required for the selected service. You do not need to provide your TikTok password.',
-    label: 'View TikTok Followers',
-  },
+      id: 'cta-tt-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-tiktok-followers',
+      heading: 'Using a Public TikTok Profile?',
+      description:
+        'NovaLikes TikTok follower orders use the public profile information required for the selected service. You do not need to provide your TikTok password.',
+      label: 'View TikTok Followers',
+    },
+
+
 
   heading(
     'h-password',
-    'Does NovaLikes Need Your TikTok Password?',
+    'Does a Third-Party Service Need Your TikTok Password?',
     2,
   ),
   paragraph(
     'p-pw-1',
-    'For the supported TikTok follower ordering flow, no password is required.',
-  ),
-  paragraph(
-    'p-pw-2',
-    'The service should only ask for the public profile information required to identify the intended account.',
-  ),
-  paragraph(
-    'p-pw-3',
-    'This distinction fits especially well in an article about account privacy:',
+    'No. A legitimate service only needs your public username, and NovaLikes never asks for your TikTok password.',
   ),
   paragraph(
     'p-pw-4',
@@ -1158,7 +1113,7 @@ export const PUBLIC_VS_PRIVATE_TIKTOK_ACCOUNT_ARTICLE: LearnArticleRecord = {
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'Public vs Private TikTok Accounts',
+    alt: 'Two phones compared: a public TikTok profile visible worldwide and a private profile locked to approved followers',
     width: 1600,
     height: 900,
     priority: true,

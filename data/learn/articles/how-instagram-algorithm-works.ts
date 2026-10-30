@@ -96,8 +96,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-2',
-    "Instagram uses different ranking and recommendation systems across different parts of the app because people use Feed, Stories, Explore and Reels differently. Instagram's creator guidance describes these areas as having their own ranking approaches rather than one universal formula. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "Instagram uses different ranking and recommendation systems across different parts of the app because people use Feed, Stories, Explore and Reels differently. Instagram's creator guidance describes these areas as having their own ranking approaches rather than one universal formula. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph('p-open-3', 'That distinction matters for creators.'),
   paragraph(
@@ -120,8 +120,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-10',
-    "Instagram's recommendations are personalized, meaning two people can receive very different content based on their interests, activity and connections. (Facebook)",
-    [{ href: IG_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    "Instagram's recommendations are personalized, meaning two people can receive very different content based on their interests, activity and connections. (Instagram Help Center)",
+    [{ href: IG_RECOMMENDATIONS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -135,8 +135,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-one-2',
-    'Instagram has explained that people use different parts of the app for different purposes, so those parts are ranked differently. Feed, Stories, Explore and Reels each have their own context and ranking process. (Instagram About)',
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    'Instagram has explained that people use different parts of the app for different purposes, so those parts are ranked differently. Feed, Stories, Explore and Reels each have their own context and ranking process. (Instagram blog)',
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph('p-one-3', 'Imagine one person opens Instagram.'),
   paragraph('p-one-4', 'They may use:'),
@@ -169,8 +169,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-feed-2',
-    "It can include content from accounts a person follows as well as recommended posts from accounts they do not follow. Instagram's public guidance says Feed ranking considers information about the post, the person who posted it, the viewer's activity and the viewer's history of interacting with that account. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "It can include content from accounts a person follows as well as recommended posts from accounts they do not follow. Instagram's public guidance says Feed ranking considers information about the post, the person who posted it, the viewer's activity and the viewer's history of interacting with that account. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-feed-3',
@@ -191,8 +191,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-feed-6',
-    'These systems use multiple signals and predictions rather than one visible metric such as follower count. (Instagram About)',
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    'These systems use multiple signals and predictions rather than one visible metric such as follower count. (Instagram blog)',
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   heading('h-feed-creators', 'What This Means for Creators', 3),
   paragraph('p-feed-7', 'The practical objective is not:'),
@@ -228,7 +228,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-feed-15',
     'comments are worth exactly twice as much as shares.',
   ),
-  paragraph('p-feed-16', 'Avoid those claims.'),
+  paragraph('p-feed-16', 'Instagram has never published numbers like these.',
+  ),
 
   heading(
     'h-reels-vs-photos',
@@ -282,8 +283,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-st-3',
-    "Instagram's ranking explanations have historically highlighted signals around viewing history, engagement history and closeness when deciding which Stories to prioritize. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "Instagram's ranking explanations have historically highlighted signals around viewing history, engagement history and closeness when deciding which Stories to prioritize. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-st-4',
@@ -316,8 +317,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-st-7',
-    "Instagram's Stories product continues to support interaction tools such as polls, music and other features designed around lightweight sharing and connection. (Instagram About)",
-    [{ href: IG_STORIES_GUIDE, label: 'Instagram About', external: true }],
+    "Instagram's Stories product continues to support interaction tools such as polls, music and other features designed around lightweight sharing and connection. (Instagram blog)",
+    [{ href: IG_STORIES_GUIDE, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-st-8',
@@ -335,8 +336,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ex-2',
-    'Instagram says posts shown in Search and Explore are automatically selected using multiple factors to personalize what each person sees. (Facebook)',
-    [{ href: IG_EXPLORE, label: 'Facebook', external: true }],
+    'Instagram says posts shown in Search and Explore are automatically selected using multiple factors to personalize what each person sees. (Instagram Help Center)',
+    [{ href: IG_EXPLORE, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ex-3',
@@ -344,8 +345,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ex-4',
-    'Instagram looks at patterns in what a person has previously shown interest in and tries to recommend related content. Its recommendation guidance gives examples such as interacting with restaurant or bookstore content leading to future recommendations around food, recipes, books or reading. (Facebook)',
-    [{ href: IG_RECOMMENDATIONS, label: 'Facebook', external: true }],
+    'Instagram looks at patterns in what a person has previously shown interest in and tries to recommend related content. Its recommendation guidance gives examples such as interacting with restaurant or bookstore content leading to future recommendations around food, recipes, books or reading. (Instagram Help Center)',
+    [{ href: IG_RECOMMENDATIONS, label: 'Instagram Help Center', external: true }],
   ),
   heading(
     'h-ex-interest',
@@ -380,12 +381,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ex-10',
-    'Instagram says eligible public-account content may be recommended to people who do not follow the account across areas including Explore, Reels and Feed Recommendations. Eligibility does not guarantee recommendation; it means the content may be recommended. (Facebook)',
-    [{ href: IG_ELIGIBILITY, label: 'Facebook', external: true }],
-  ),
-  paragraph(
-    'p-ex-11',
-    'That distinction should always be preserved.',
+    'Instagram says eligible public-account content may be recommended to people who do not follow the account across areas including Explore, Reels and Feed Recommendations. Eligibility does not guarantee recommendation; it means the content may be recommended. (Instagram Help Center)',
+    [{ href: IG_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   figure(
     'fig-followers-vs-discovery',
@@ -401,8 +398,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-re-2',
-    "Instagram's ranking explanation says Reels frequently contain content from accounts a person does not follow, which makes recommendation particularly important on this surface. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "Instagram's ranking explanation says Reels frequently contain content from accounts a person does not follow, which makes recommendation particularly important on this surface. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-re-3',
@@ -420,8 +417,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-re-5',
-    'Again, there is no public creator-facing formula that lets you calculate an exact ranking score. (Instagram About)',
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    'Again, there is no public creator-facing formula that lets you calculate an exact ranking score. (Instagram blog)',
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   heading('h-re-better', 'A Better Reels Question', 3),
   paragraph('p-re-6', "Don't ask:"),
@@ -441,8 +438,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-re-11', 'Then use Insights to study what happened.'),
   paragraph(
     'p-re-12',
-    'Instagram provides performance insights for individual Reels and other content formats to professional accounts. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram provides performance insights for individual Reels and other content formats to professional accounts. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -456,8 +453,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-or-2',
-    'Meta reported in January 2026 that it had increased the prevalence of original content in Instagram recommendations in the U.S. during Q4 2025. According to Meta, 75% of recommendations were coming from original posts at that point. (Facebook)',
-    [{ href: META_AI_2026, label: 'Facebook', external: true }],
+    'Meta reported in January 2026 that it had increased the prevalence of original content in Instagram recommendations in the U.S. during Q4 2025. According to Meta, 75% of recommendations were coming from original posts at that point. (Meta Newsroom)',
+    [{ href: META_AI_2026, label: 'Meta Newsroom', external: true }],
   ),
   paragraph(
     'p-or-3',
@@ -511,8 +508,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ya-2',
-    "Meta said in May 2026 that Instagram's Your Algorithm feature allows users to customize topics they want to see more or less of. At that time, the feature was available for Reels and Explore in English-speaking countries, with Feed support planned next. (Facebook)",
-    [{ href: META_YOUR_ALGORITHM, label: 'Facebook', external: true }],
+    "Meta said in May 2026 that Instagram's Your Algorithm feature allows users to customize topics they want to see more or less of. At that time, the feature was available for Reels and Explore in English-speaking countries, with Feed support planned next. (Meta Newsroom)",
+    [{ href: META_YOUR_ALGORITHM, label: 'Meta Newsroom', external: true }],
   ),
   paragraph(
     'p-ya-3',
@@ -546,22 +543,9 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ya-11',
-    'Personalization is central to the experience. (Facebook)',
-    [{ href: META_YOUR_ALGORITHM, label: 'Facebook', external: true }],
+    'Personalization is central to the experience. (Meta Newsroom)',
+    [{ href: META_YOUR_ALGORITHM, label: 'Meta Newsroom', external: true }],
   ),
-  {
-    id: 'cta-instagram-algorithm',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare Instagram Growth Options',
-    text: 'Instagram followers, likes and views are different visible metrics. None of them is a guaranteed way to manipulate Feed, Reels or Explore ranking.',
-    serviceSlugs: [
-      'buy-instagram-followers',
-      'buy-instagram-likes',
-      'buy-instagram-views',
-      'buy-instagram-comments',
-    ],
-  },
 
   heading(
     'h-engagement',
@@ -570,8 +554,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-eng-1',
-    'Instagram uses interaction behaviour as part of its personalization and prediction systems. Its public ranking explanations discuss activity such as likes, saves, comments and other interactions when predicting what content may interest a viewer. (Instagram About)',
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    'Instagram uses interaction behaviour as part of its personalization and prediction systems. Its public ranking explanations discuss activity such as likes, saves, comments and other interactions when predicting what content may interest a viewer. (Instagram blog)',
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-eng-2',
@@ -620,8 +604,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-time-6',
-    'Professional accounts can use Instagram Insights to understand audience and content performance rather than relying on generic “best time to post” claims. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Professional accounts can use Instagram Insights to understand audience and content performance rather than relying on generic “best time to post” claims. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -631,7 +615,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mf-1',
-    'No automatic guarantee should be assumed.',
+    'No.',
   ),
   paragraph(
     'p-mf-2',
@@ -670,8 +654,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-2',
-    'Instagram says public-account content may be recommended to non-followers in places including Explore, Reels, Feed Recommendations, Search and suggested accounts. (Facebook)',
-    [{ href: IG_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Instagram says public-account content may be recommended to non-followers in places including Explore, Reels, Feed Recommendations, Search and suggested accounts. (Instagram Help Center)',
+    [{ href: IG_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   bullets('ul-nf', [
     'Explore,',
@@ -691,8 +675,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-7',
-    'Creators using professional accounts can inspect recommendation eligibility through Account Status. (Facebook)',
-    [{ href: IG_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Creators using professional accounts can inspect recommendation eligibility through Account Status. (Instagram Help Center)',
+    [{ href: IG_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   figure(
     'fig-reaches-people',
@@ -708,8 +692,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-stop-1',
-    'Instagram has separate Recommendation Guidelines covering whether public-account content is eligible to be recommended to people who do not follow that account. (Facebook)',
-    [{ href: IG_ELIGIBILITY, label: 'Facebook', external: true }],
+    'Instagram has separate Recommendation Guidelines covering whether public-account content is eligible to be recommended to people who do not follow that account. (Instagram Help Center)',
+    [{ href: IG_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-stop-2', 'This is important because:'),
   bullets('ul-stop', [
@@ -757,8 +741,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-del-4',
-    'Use Insights and patterns across multiple posts instead. Instagram provides content-level insights precisely so professional accounts can review how individual posts, Stories and Reels perform. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Use Insights and patterns across multiple posts instead. Instagram provides content-level insights precisely so professional accounts can review how individual posts, Stories and Reels perform. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -784,8 +768,8 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-cmp-2',
-    "This is a simplified creator-friendly interpretation of Instagram's public ranking guidance, not an official ranking formula. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "This is a simplified creator-friendly interpretation of Instagram's public ranking guidance, not an official ranking formula. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
 
   heading(
@@ -817,8 +801,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-wk-3', '3. Create Original Content', 3),
   paragraph(
     'p-wk-5',
-    "Instagram's recommendation direction has increasingly emphasized original posts, with Meta reporting that 75% of Instagram recommendations in the U.S. were coming from original posts in Q4 2025. (Facebook)",
-    [{ href: META_AI_2026, label: 'Facebook', external: true }],
+    "Instagram's recommendation direction has increasingly emphasized original posts, with Meta reporting that 75% of Instagram recommendations in the U.S. were coming from original posts in Q4 2025. (Meta Newsroom)",
+    [{ href: META_AI_2026, label: 'Meta Newsroom', external: true }],
   ),
   heading(
     'h-wk-4',
@@ -842,8 +826,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-wk-5', '5. Review Insights', 3),
   paragraph(
     'p-wk-8',
-    'Professional accounts can use Instagram Insights to examine overall trends and individual content performance. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Professional accounts can use Instagram Insights to examine overall trends and individual content performance. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-wk-6', '6. Look for Repeatable Patterns', 3),
   paragraph(
@@ -857,8 +841,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-wk-7', '7. Check Recommendation Eligibility', 3),
   paragraph(
     'p-wk-11',
-    'If discovery suddenly changes, inspect Account Status where available before jumping to conclusions. (Facebook)',
-    [{ href: IG_ELIGIBILITY, label: 'Facebook', external: true }],
+    'If discovery suddenly changes, inspect Account Status where available before jumping to conclusions. (Instagram Help Center)',
+    [{ href: IG_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
   ),
 
   heading(
@@ -875,41 +859,17 @@ const BLOCKS: ArticleContentBlock[] = [
     'that more followers create proportional views,',
     'that likes guarantee Explore placement,',
     'that views guarantee new followers,',
-    'that purchasing engagement improves ranking,',
     'or that one “algorithm hack” will make a post viral.',
   ]),
   paragraph(
     'p-ng-2',
-    "Instagram's public documentation describes personalized ranking systems with many signals, not deterministic creator shortcuts. (Instagram About)",
-    [{ href: IG_RANKING, label: 'Instagram About', external: true }],
+    "Instagram's public documentation describes personalized ranking systems with many signals, not deterministic creator shortcuts. (Instagram blog)",
+    [{ href: IG_RANKING, label: 'Instagram blog', external: true }],
   ),
   paragraph(
     'p-ng-3',
-    'This distinction is especially important when discussing social-media growth services.',
-  ),
-  paragraph(
-    'p-ng-4',
-    'Instagram followers describe account audience size, not a guaranteed ranking rule.',
-    [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
-  ),
-  paragraph(
-    'p-ng-5',
-    'Instagram likes are a reaction metric, not an Explore-placement formula.',
-    [{ href: '/buy-instagram-likes', label: 'Instagram likes' }],
-  ),
-  paragraph(
-    'p-ng-6',
-    'Instagram views measure viewing activity, not guaranteed recommendation.',
-    [{ href: '/buy-instagram-views', label: 'Instagram views' }],
-  ),
-  paragraph(
-    'p-ng-7',
-    'Instagram comments are a conversation metric, not a ranking shortcut.',
-    [{ href: '/buy-instagram-comments', label: 'Instagram comments' }],
-  ),
-  paragraph(
-    'p-ng-8',
-    "None of these is a guaranteed way to manipulate Instagram's recommendation algorithm.",
+    "Instagram's Community Guidelines also ban artificially collecting likes or followers, so bought engagement is not a ranking strategy.",
+    [{ href: 'https://help.instagram.com/477434105621119', label: 'Community Guidelines', external: true }],
   ),
 
   heading(
@@ -942,8 +902,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cl-9',
-    'And in 2026, Meta continues increasing its use of AI-driven recommendation systems while emphasizing more timely and original recommendations. (Facebook)',
-    [{ href: META_AI_2026, label: 'Facebook', external: true }],
+    'And in 2026, Meta continues increasing its use of AI-driven recommendation systems while emphasizing more timely and original recommendations. (Meta Newsroom)',
+    [{ href: META_AI_2026, label: 'Meta Newsroom', external: true }],
   ),
   paragraph(
     'p-cl-10',

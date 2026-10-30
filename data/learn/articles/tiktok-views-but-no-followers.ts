@@ -120,7 +120,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-open-7',
     "So if you're getting TikTok views but no followers, the useful question isn't simply:",
-    [{ href: '/buy-tiktok-views', label: 'TikTok views' }],
   ),
   paragraph(
     'p-open-8',
@@ -504,8 +503,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-metric-3',
-    'TikTok followers and TikTok views answer different questions about that objective.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
+    'Followers and views answer different questions.',
   ),
   paragraph('p-metric-4', 'Consider:'),
   heading('h-video-a', 'Video A', 3),
@@ -537,18 +535,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'TikTok provides creators with analytics and TikTok Studio specifically to review content and account performance rather than relying on a single visible number. TikTok also recommends reviewing analytics and top-performing posts when working on audience growth. (TikTok Support)',
     [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
   ),
-  {
-    id: 'cta-tiktok-metrics',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'Followers, likes and views represent different parts of a TikTok presence. Compare the available NovaLikes options for the metric you want to focus on.',
-    serviceSlugs: [
-      'buy-tiktok-followers',
-      'buy-tiktok-likes',
-      'buy-tiktok-views',
-    ],
-  },
 
   heading(
     'h-limits',

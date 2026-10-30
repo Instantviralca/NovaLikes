@@ -156,8 +156,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-review', '2. The Video Is Still Under Review', 2),
   paragraph(
     'p-rev-1',
-    'Every new upload is checked before it can be recommended. TikTok says that when a video is first uploaded it goes through its content moderation system, and only videos that pass moderation enter the pool that can be recommended in the For You feed. (TikTok)',
-    [{ href: TIKTOK_RECOMMENDATION_SYSTEM, label: 'TikTok', external: true }],
+    'Every new upload is checked before it can be recommended. TikTok says that when a video is first uploaded it goes through its content moderation system, and only videos that pass moderation enter the pool that can be recommended in the For You feed. (TikTok Transparency Center)',
+    [{ href: TIKTOK_RECOMMENDATION_SYSTEM, label: 'TikTok Transparency Center', external: true }],
   ),
   paragraph(
     'p-rev-2',
@@ -188,8 +188,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-inel-2',
-    'TikTok says ineligible posts can still be discovered in other ways, such as search or by people who follow you. On a new account with few followers, though, an ineligible post can stay at or near 0. (TikTok)',
-    [{ href: TIKTOK_FYF_STANDARDS, label: 'TikTok', external: true }],
+    'TikTok says ineligible posts can still be discovered in other ways, such as search or by people who follow you. On a new account with few followers, though, an ineligible post can stay at or near 0. (TikTok Community Guidelines)',
+    [{ href: TIKTOK_FYF_STANDARDS, label: 'TikTok Community Guidelines', external: true }],
   ),
   paragraph(
     'p-inel-3',
@@ -276,14 +276,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'If the cause was technical, or you have changed the part that caused the problem, uploading again is reasonable. Delete the stuck version first so you do not end up with two copies on your profile.',
   ),
 
-  {
-    id: 'cta-tiktok-growth',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'Views, likes and followers measure different things. Fix any privacy, review or eligibility issue first: no package changes a setting or a TikTok decision about your post.',
-    serviceSlugs: ['buy-tiktok-views', 'buy-tiktok-likes', 'buy-tiktok-followers'],
-  },
 ];
 
 const CONTENT = BLOCKS.map((block) => {

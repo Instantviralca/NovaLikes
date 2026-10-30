@@ -42,17 +42,20 @@ describe('Article #1 TikTok followers vs likes vs views', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-followers', label: 'TikTok followers' },
-      { href: '/buy-tiktok-likes', label: 'TikTok likes' },
-      { href: '/buy-tiktok-views', label: 'TikTok views' },
-    ]);
+    expect(commercial).toEqual([]);
+    expect(
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
+      ),
+    ).toBe(false);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
-    expect(
-      article.blocks.some((block) => block.type === 'service_cluster_cta'),
-    ).toBe(true);
+    
     expect(
       article.blocks.some(
         (block) =>

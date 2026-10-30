@@ -97,76 +97,25 @@ function figure(
 
 const BLOCKS: ArticleContentBlock[] = [
   paragraph(
-    'p-open-1',
-    "If you're searching for the TikTok LIVE follower requirement, you have probably seen one number repeated everywhere: 1,000 followers.",
-  ),
-  paragraph(
-    'p-open-2',
-    'That number is commonly used as a TikTok LIVE benchmark.',
-  ),
-  paragraph(
-    'p-open-3',
-    "But TikTok's current official guidance is more careful.",
-  ),
-  paragraph(
     'p-open-4',
-    'TikTok says creators must meet a local minimum-follower threshold to access LIVE rather than publishing one universal follower number that applies identically to every account in every country. TikTok also requires creators to be at least 18 years old to host a LIVE. (TikTok Support)',
+    "If you are wondering how many followers to go LIVE on TikTok, the short answer is 1,000. TikTok's Help Center lists 1,000 followers to go LIVE and notes that this may vary across regions. You must also be at least 18 years old to host a LIVE. (TikTok Support)",
     [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-open-5',
-    'So the most accurate 2026 answer is that many creators use 1,000 followers as a practical reference point, but TikTok does not currently present 1,000 as a guaranteed worldwide unlock for every account.',
-  ),
-  paragraph(
-    'p-open-6',
-    'Your actual LIVE eligibility can depend on:',
-  ),
-  bullets('ul-open', [
-    'your follower threshold,',
-    'your age,',
-    'your location,',
-    'feature availability,',
-    "and whether the account meets TikTok's eligibility requirements.",
-  ]),
   paragraph(
     'p-open-7',
-    'TikTok says only creators who meet its LIVE eligibility requirements can start a LIVE. (TikTok Support)',
+    "Followers are only one part of eligibility. Your age, your location, feature availability and whether the account meets TikTok's eligibility requirements all matter, and TikTok says only creators who meet those requirements can start a LIVE. (TikTok Support) That is why two accounts with similar follower counts may not see the same LIVE options.",
     [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-open-8',
-    'This explains why two accounts with similar follower counts may not necessarily see the same LIVE options.',
-  ),
 
-  heading(
-    'h-why-1000',
-    'Why Does Everyone Say You Need 1,000 TikTok Followers?',
-    2,
-  ),
+  heading('h-why-1000', 'Why Does Everyone Say You Need 1,000 TikTok Followers?', 2),
   paragraph(
     'p-w1-1',
-    'Because 1,000 followers has historically been the most commonly referenced TikTok LIVE threshold and continues to appear across creator guidance.',
-  ),
-  paragraph(
-    'p-w1-2',
-    "But TikTok's current official wording focuses on meeting a local follower threshold rather than promising one universal number across every market. (TikTok Support)",
+    "Because it is the number TikTok's own Help Center gives for going LIVE. TikTok adds that the requirement may vary across regions, so it is not identical everywhere. (TikTok Support) The number is useful for planning, but it is not an automatic worldwide unlock.",
     [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-w1-3',
-    'That means 1,000 can still be useful for planning.',
-  ),
-  paragraph(
-    'p-w1-4',
-    'It just is not an automatic worldwide guarantee.',
-  ),
-  paragraph(
-    'p-w1-5',
-    'A more accurate way to put it: around 1,000 followers is the commonly used TikTok LIVE benchmark, but TikTok applies a local minimum-follower threshold, so eligibility can vary.',
-  ),
-  paragraph(
-    'p-w1-6',
-    'It is not true that TikTok always unlocks LIVE at exactly 1,000 followers.',
+    'p-in-3',
+    'Reaching 1,000 followers also does not mean the LIVE button instantly appears. Other eligibility factors still apply, so if the option is missing at 1,000, check your age, Restricted Mode and actual account eligibility before contacting TikTok.',
   ),
   figure(
     'fig-elig',
@@ -175,138 +124,28 @@ const BLOCKS: ArticleContentBlock[] = [
     '1,000 followers is commonly referenced, but it is not a universal automatic unlock.',
   ),
 
-  heading(
-    'h-age',
-    'What Is the Minimum Age to Go LIVE on TikTok?',
-    2,
-  ),
+  heading('h-age', 'What Is the Minimum Age to Go LIVE on TikTok?', 2),
   paragraph(
     'p-ag-1',
-    'TikTok currently requires users to be 18 years old or older to go LIVE. (TikTok Support)',
+    'TikTok currently requires creators to be at least 18 years old to host a LIVE. (TikTok Support) Many older articles still mention lower ages, including a "16+ to go LIVE, 18+ for Gifts" rule, but that is out of date. Under the current rule, a 16-year-old cannot go LIVE.',
     [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-ag-2',
-    'This is important because many older articles still mention lower age requirements.',
-  ),
-  paragraph(
-    'p-ag-3',
-    'Those articles may be outdated.',
-  ),
-  paragraph(
-    'p-ag-4',
-    "TikTok's current Help Center says 18+ to host a LIVE. (TikTok Support)",
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ag-5',
-    'TikTok can also ask users to confirm their age before allowing LIVE access. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ag-6',
-    'So having enough followers is not enough if the account does not meet the age requirement.',
-  ),
-
-  heading(
-    'h-16',
-    'Can a 16-Year-Old Go LIVE on TikTok?',
-    2,
-  ),
-  paragraph(
-    'p-16-1',
-    "Under TikTok's current published rule, no.",
-  ),
-  paragraph(
-    'p-16-2',
-    'TikTok says creators must be at least 18 years old to host a LIVE. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-16-3',
-    "This is one area where older tutorials can be particularly misleading because TikTok's age rules have changed over time.",
-  ),
-  paragraph(
-    'p-16-4',
-    'Today, the rule is 18+.',
-  ),
-  paragraph(
-    'p-16-5',
-    'The older “16+ to go LIVE, 18+ for Gifts” rule you may still see online is out of date.',
-  ),
-  paragraph(
-    'p-16-6',
-    "That is not TikTok's current LIVE-hosting guidance.",
-  ),
-
-  heading(
-    'h-confirm',
-    'Does TikTok Check Your Age Before You Go LIVE?',
-    2,
-  ),
-  paragraph('p-cf-1', 'It can.'),
   paragraph(
     'p-cf-2',
-    'TikTok says it may ask creators to confirm their age before allowing them to go LIVE in order to ensure they meet the minimum-age requirement. (TikTok Support)',
+    'TikTok may also ask creators to confirm their age before allowing them to go LIVE, to ensure they meet the minimum-age requirement. (TikTok Support) This is an eligibility and safety check, and a follower count cannot substitute for it: an account with 100 followers and one with 1 million both have to satisfy the age rule.',
     [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-cf-3',
-    'That means an account could potentially meet a follower threshold while still needing to complete an age-confirmation step.',
-  ),
-  paragraph(
-    'p-cf-4',
-    'If TikTok believes the account does not meet the required age, follower count will not override that requirement.',
-  ),
 
-  heading(
-    'h-us',
-    'How Many Followers Do You Need to Go LIVE in the US?',
-    2,
-  ),
-  paragraph(
-    'p-us-1',
-    "TikTok's current global Help Center does not publish one exact follower number for every US account.",
-  ),
-  paragraph(
-    'p-us-2',
-    'Its current wording uses a local minimum-follower threshold. (TikTok Support)',
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-us-3',
-    'That is why this guide does not include a country-by-country follower table. TikTok does not publish one.',
-  ),
-  paragraph(
-    'p-us-4',
-    'Any such table would be a guess.',
-  ),
-  paragraph(
-    'p-us-5',
-    'The practical step: check whether LIVE appears on your account after you meet the age and follower requirements for your location.',
-  ),
-
-  heading(
-    'h-country',
-    'Does the TikTok LIVE Requirement Vary by Country?',
-    2,
-  ),
+  heading('h-country', 'Does the TikTok LIVE Requirement Vary by Country?', 2),
   paragraph(
     'p-co-1',
-    "TikTok's use of a local minimum-follower threshold indicates that follower eligibility is not necessarily identical in every market. (TikTok Support)",
+    'It can. TikTok says the 1,000-follower requirement may vary across regions, and it does not give a separate number for the US or any other country. (TikTok Support) That is why this guide has no country-by-country table: TikTok does not publish one, so any such table would be a guess.',
     [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-co-2',
-    'This is why one user may report LIVE access below a number another creator needed, or two accounts in different locations may not receive identical feature access.',
-  ),
-  paragraph(
-    'p-co-3',
-    'Do not build your strategy around screenshots from another creator without checking your own account.',
-  ),
-  paragraph(
-    'p-co-4',
-    'TikTok controls feature eligibility.',
+    'p-ev-2',
+    "TikTok's LIVE and Gift features also have regional and feature-specific availability requirements. (TikTok Support) One creator may report LIVE access below a number another creator needed, so check your own app and account rather than screenshots or articles written for another country.",
+    [{ href: TT_LIVE_GIFTS, label: 'TikTok Support', external: true }],
   ),
   figure(
     'fig-two',
@@ -315,298 +154,95 @@ const BLOCKS: ArticleContentBlock[] = [
     'Follower count is only one part of TikTok LIVE eligibility.',
   ),
 
-  heading(
-    'h-500',
-    'Can You Go LIVE on TikTok With 500 Followers?',
-    2,
-  ),
+  heading('h-500', 'Can You Go LIVE on TikTok With 500 Followers?', 2),
   paragraph(
     'p-500-1',
-    'Possibly for some accounts, if their local threshold allows it, but 500 followers does not unlock LIVE for everyone.',
-  ),
-  paragraph(
-    'p-500-2',
-    'TikTok currently describes the requirement as a local minimum-follower threshold. (TikTok Support)',
+    "Possibly for some accounts, if their local threshold allows it, but 500 followers does not unlock LIVE for everyone. TikTok lists 1,000 followers as the requirement and says it may vary across regions. (TikTok Support) There is no TikTok-supported trick that guarantees LIVE at 500 followers, so treat articles promising that a few settings will bypass the rule with caution.",
     [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-500-3',
-    'So claims such as “500 followers now unlock LIVE for everyone” would be unreliable.',
-  ),
-  paragraph(
-    'p-500-4',
-    'If LIVE appears on an eligible account below the commonly quoted 1,000 benchmark, use the feature TikTok has actually provided.',
-  ),
-  paragraph(
-    'p-500-5',
-    "But don't assume another account will receive the same access.",
-  ),
-
-  heading(
-    'h-under',
-    'Can You Go LIVE With Fewer Than 1,000 Followers?',
-    2,
-  ),
-  paragraph(
-    'p-un-1',
-    'Some accounts may have a local threshold that differs from the commonly quoted 1,000 followers.',
-  ),
-  paragraph(
-    'p-un-2',
-    "TikTok's current wording supports variation rather than one universal global number. (TikTok Support)",
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-un-3',
-    'Do not change region with a VPN, fake your age, keep switching account type, contact support pretending you previously had LIVE, or rely on a supposed bug to get around an eligibility requirement.',
-  ),
-  paragraph(
-    'p-un-4',
-    'If TikTok has not made LIVE available to the account, the sensible path is to continue meeting the legitimate account requirements.',
-  ),
-
-  heading(
-    'h-trick',
-    'Is There a TikTok LIVE 500 Follower Trick?',
-    2,
-  ),
-  paragraph(
-    'p-tr-1',
-    'There is no official TikTok-supported trick that guarantees LIVE access at 500 followers.',
-  ),
-  paragraph(
-    'p-tr-2',
-    "TikTok's official position is that only creators who meet eligibility requirements can go LIVE. (TikTok Support)",
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-tr-3',
-    'So articles promising that three settings will bypass the follower rule should be treated carefully.',
-  ),
-  paragraph(
-    'p-tr-4',
-    'A user seeing LIVE below 1,000 does not prove a universal bypass.',
   ),
   paragraph(
     'p-tr-5',
-    'It may simply reflect local eligibility, account-level availability or TikTok testing and features available to that account.',
+    "A user seeing LIVE below 1,000 does not prove a universal bypass. It may reflect local eligibility, account-level availability or features TikTok is testing on that account. If LIVE appears on your account below 1,000, use it, but don't assume another account will get the same access.",
   ),
 
-  heading(
-    'h-business',
-    'Can Switching to a Business Account Unlock TikTok LIVE?',
-    2,
-  ),
-  paragraph(
-    'p-bu-1',
-    'No. Switching account type is not a reliable way around the LIVE requirements.',
-  ),
-  paragraph(
-    'p-bu-2',
-    "TikTok's official LIVE troubleshooting guidance says only eligible creators can go LIVE. (TikTok Support)",
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-bu-3',
-    'There is no current official TikTok rule saying switch to a Business Account and follower requirements disappear.',
-  ),
-  paragraph(
-    'p-bu-4',
-    'Choose an account type based on what the account actually needs.',
-  ),
-  paragraph('p-bu-5', 'Not as an eligibility hack.'),
-
-  heading(
-    'h-missing',
-    "Why Don't I Have the LIVE Option Even With Enough Followers?",
-    2,
-  ),
-  paragraph(
-    'p-ms-1',
-    'Here are the checks that matter.',
-  ),
+  heading('h-missing', "Why Can't I Go LIVE on TikTok Even With Enough Followers?", 2),
   paragraph(
     'p-ms-2',
-    'If you believe your account meets the follower threshold, several other conditions may still matter.',
+    'If you think you meet the follower requirement but the LIVE option is missing, work through these checks before assuming a technical problem:',
   ),
-  heading('h-ms-age', '1. Check Your Age', 3),
-  paragraph(
-    'p-ms-3',
-    'You must be at least 18 to host a TikTok LIVE. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ms-confirm', '2. Check Whether TikTok Has Asked You to Confirm Your Age', 3),
-  paragraph(
-    'p-ms-4',
-    'TikTok may require age confirmation before giving LIVE access. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ms-region', '3. Check Regional and Account Availability', 3),
-  paragraph(
-    'p-ms-5',
-    "TikTok uses a local follower threshold, so another creator's experience may not match yours. (TikTok Support)",
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ms-elig', '4. Check Eligibility', 3),
-  paragraph(
-    'p-ms-6',
-    'TikTok says only eligible creators can go LIVE. (TikTok Support)',
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-ms-restricted', '5. Check Restricted Mode', 3),
+  bullets('ul-ms', [
+    'Age: you must be at least 18, and TikTok may ask you to confirm it.',
+    'Followers: you need to have met the local minimum-follower threshold TikTok applies to your account, which may differ from 1,000.',
+    'Availability: LIVE has to be available for your account and location.',
+    'Eligibility: TikTok has to consider the account eligible for LIVE.',
+    'Settings: Restricted Mode must be off.',
+  ]),
   paragraph(
     'p-ms-7',
-    'TikTok says going LIVE is unavailable while Restricted Mode is enabled. (TikTok Support)',
+    'Restricted Mode is the one people overlook. TikTok says going LIVE is unavailable while Restricted Mode is enabled, and gifting on LIVE is disabled too. (TikTok Support) To check, go to Settings and privacy, then Content preferences, then Restricted Mode. If it was turned on deliberately for safety or Family Pairing reasons, think before switching it off.',
     [{ href: TT_USER_SAFETY, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ms-8',
-    'That one is easy to overlook.',
-  ),
-
-  heading(
-    'h-restricted',
-    'Restricted Mode Can Prevent TikTok LIVE',
-    2,
-  ),
-  paragraph(
-    'p-rm-1',
-    "TikTok's current Safety documentation specifically says certain features are unavailable when Restricted Mode is turned on, including going LIVE and gifting on LIVE. (TikTok Support)",
-    [{ href: TT_USER_SAFETY, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rm-2',
-    'If your account otherwise appears eligible but LIVE is unavailable, review Settings and privacy, then Content preferences, then Restricted Mode, and check whether Restricted Mode is active. (TikTok Support)',
-    [{ href: TT_USER_SAFETY, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rm-3',
-    'Do not turn it off automatically if it was deliberately enabled for safety or Family Pairing reasons.',
-  ),
-  paragraph(
-    'p-rm-4',
-    'Just understand that it affects LIVE access.',
-  ),
-
-  heading(
-    'h-still',
-    "What If I Meet the Requirements but Still Can't Go LIVE?",
-    2,
-  ),
-  paragraph(
-    'p-st-1',
-    'TikTok has an official LIVE troubleshooting page.',
   ),
   paragraph(
     'p-st-2',
-    'It says only creators meeting eligibility requirements can go LIVE, and users who meet the requirements but still experience issues can report the problem to TikTok. (TikTok Support)',
+    "If you meet every requirement and still can't go LIVE, TikTok's troubleshooting page says you can report the problem through the app. (TikTok Support) That is more reliable than refreshing the app 50 times, changing your username or switching languages.",
+    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
+  ),
+
+  heading('h-dw', "What Doesn't Work to Unlock TikTok LIVE?", 2),
+  paragraph(
+    'p-dw-1',
+    "TikTok controls LIVE eligibility, and only creators who meet its requirements can go LIVE. (TikTok Support) None of the common workarounds changes that:",
+    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
+  ),
+  bullets('ul-dw', [
+    'A VPN: TikTok uses local eligibility for LIVE, and disguising your location does not make the account qualify. It can also complicate account security and feature availability.',
+    "Changing your birthday: pretending to be older breaks TikTok's rules and puts the account at risk. If your birthday is genuinely wrong, use TikTok's age and support process.",
+    'Switching to a Business Account: there is no TikTok rule that makes follower requirements disappear for a different account type, so choose the type the account actually needs.',
+    'Asking support to bypass the rules: support is for accounts that meet the requirements but still have problems. Claiming you previously had LIVE when you did not misrepresents your account.',
+    'Hidden settings or supposed bugs: a feature appearing on someone else\'s account is not a bypass you can copy.',
+    'Sharing your login: never send your password, verification code or credentials to anyone who says they can unlock LIVE manually.',
+  ]),
+  paragraph(
+    'p-by-5',
+    "Buying followers does not unlock LIVE either. A follower number alone cannot guarantee age eligibility, regional availability, account eligibility, Gifts or monetization, and TikTok's rules ban fake engagement, so TikTok may remove bought followers and the purchase can put your account at risk.",
+    [{ href: 'https://www.tiktok.com/community-guidelines/en/integrity-authenticity', label: "TikTok's rules", external: true }],
+  ),
+
+  heading('h-remove', 'Can You Lose TikTok LIVE Access Later?', 2),
+  paragraph(
+    'p-rl-2',
+    "LIVE access is not permanently guaranteed because an account once qualified. TikTok's LIVE troubleshooting guidance is built around continuing eligibility (TikTok Support), so an account that breaks the rules or otherwise becomes ineligible cannot rely on its follower count to keep LIVE.",
     [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-st-3',
-    'That is more legitimate than following random LIVE-unlock tricks.',
-  ),
-  paragraph(
-    'p-st-4',
-    "Use TikTok's in-app support and reporting process.",
-  ),
-  paragraph(
-    'p-st-5',
-    'Do not send your password, verification code or account credentials to somebody claiming they can manually unlock LIVE.',
+    'p-dl-1',
+    "TikTok does not say exactly what happens if an account's follower count later drops below its local threshold, so be wary of anyone who claims LIVE disappears instantly below 1,000 or that you keep it forever once unlocked. Follower counts move both ways, because people unfollow and TikTok acts against invalid accounts. Our guide on why TikTok followers drop covers those causes in more depth.",
+    [
+      {
+        href: '/learn/why-tiktok-followers-drop',
+        label: 'why TikTok followers drop',
+      },
+    ],
   ),
 
-  heading(
-    'h-instant',
-    'Does Reaching 1,000 Followers Instantly Unlock LIVE?',
-    2,
-  ),
-  paragraph('p-in-1', 'Not necessarily.'),
-  paragraph(
-    'p-in-2',
-    "Even if 1,000 is the commonly used planning benchmark, TikTok's current requirement is described as a local minimum-follower threshold, and other eligibility factors still apply. (TikTok Support)",
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-in-3',
-    'So reaching 1,000 followers does not necessarily equal LIVE instantly appearing everywhere.',
-  ),
-  paragraph(
-    'p-in-4',
-    'If the button is absent, check age, Restricted Mode, actual account eligibility and TikTok support.',
-  ),
-
-  heading(
-    'h-public',
-    'Does TikTok LIVE Require a Public Account?',
-    2,
-  ),
+  heading('h-public', 'Does TikTok LIVE Require a Public Account?', 2),
   paragraph(
     'p-pu-1',
-    "TikTok's LIVE help pages do not list a public account as one of the requirements.",
-  ),
-  paragraph(
-    'p-pu-2',
-    'The more important documented requirements are age, follower eligibility and LIVE feature availability. (TikTok Support)',
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-pu-3',
-    'If public audience growth is your broader objective, a public account usually makes more strategic sense because TikTok public accounts provide broader visibility than private accounts.',
-  ),
-  paragraph(
-    'p-pu-4',
-    'Our separate guide on public vs private TikTok accounts covers that distinction.',
+    "TikTok's LIVE help pages do not list a public account as a requirement; the documented requirements are age, follower eligibility and feature availability. (TikTok Support) A public account usually makes more sense if audience growth is your goal, because public accounts are more visible, but going public does not unlock LIVE by itself. Our guide on public vs private TikTok accounts covers the difference.",
     [
+      { href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true },
       {
         href: '/learn/public-vs-private-tiktok-account',
         label: 'public vs private TikTok accounts',
       },
     ],
   ),
-  paragraph(
-    'p-pu-5',
-    'But a public account does not automatically unlock LIVE.',
-  ),
-  paragraph('p-pu-6', "It doesn't."),
 
-  heading(
-    'h-views',
-    'Does TikTok LIVE Require a Certain Number of Video Views?',
-    2,
-  ),
+  heading('h-rewards', 'Are TikTok LIVE and Creator Rewards Requirements the Same?', 2),
   paragraph(
     'p-vw-1',
-    "TikTok's current general LIVE requirements should not be confused with Creator Rewards requirements.",
+    "No. TikTok has several creator features with their own purposes and thresholds, so always check which feature a requirement belongs to.",
   ),
-  paragraph(
-    'p-vw-2',
-    'Creator Rewards has separate criteria such as follower and recent video-view requirements. (TikTok Support)',
-    [{ href: TT_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph('p-vw-3', 'Those are different programs.'),
-  paragraph(
-    'p-vw-4',
-    'You do not need 100,000 recent views to go LIVE.',
-  ),
-  paragraph(
-    'p-vw-5',
-    'That figure belongs to Creator Rewards eligibility, not normal LIVE hosting.',
-  ),
-  paragraph(
-    'p-vw-6',
-    'TikTok has multiple creator features with different thresholds.',
-  ),
-  paragraph(
-    'p-vw-7',
-    'Always check which feature a requirement belongs to.',
-  ),
-
-  heading(
-    'h-rewards',
-    'TikTok LIVE vs Creator Rewards Requirements',
-    2,
-  ),
-  paragraph('p-rw-1', 'These are separate.'),
   {
     id: 'table-features',
     type: 'comparison_table',
@@ -621,65 +257,20 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-rw-2',
-    'Creator Rewards currently has requirements including at least 10,000 followers and 100,000 video views in the previous 30 days in eligible regions. (TikTok Support)',
+    'Creator Rewards currently requires at least 10,000 followers and 100,000 video views in the previous 30 days in eligible regions. (TikTok Support) Those are Creator Rewards requirements, not LIVE requirements, so you do not need 100,000 recent views to go LIVE.',
     [{ href: TT_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-rw-3',
-    'They are not LIVE requirements.',
-  ),
 
-  heading(
-    'h-gifts-same',
-    'Is TikTok LIVE the Same as LIVE Gifts?',
-    2,
-  ),
-  paragraph('p-gs-1', 'No.'),
-  paragraph(
-    'p-gs-2',
-    'Being able to host a LIVE and being eligible for every LIVE monetization feature are not automatically the same thing.',
-  ),
+  heading('h-gifts-same', 'Is TikTok LIVE the Same as LIVE Gifts?', 2),
   paragraph(
     'p-gs-3',
-    'TikTok describes LIVE Gifts as a separate feature that allows viewers to send virtual Gifts during qualifying LIVE streams. (TikTok Support)',
+    'No. Being able to host a LIVE and being eligible to earn from it are different questions. TikTok describes LIVE Gifts as a separate feature that lets viewers send virtual Gifts during qualifying LIVE streams, with its own creator eligibility and availability conditions. (TikTok Support)',
     [{ href: TT_LIVE_GIFTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-gs-4',
-    'Gift and Coin features also have their own age, availability and eligibility rules. (TikTok Support)',
-    [{ href: TT_GIFTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-gs-5',
-    'So someone asking whether they can go LIVE and someone asking whether they can earn from LIVE Gifts are asking two different questions.',
-  ),
-
-  heading(
-    'h-gifts-age',
-    'How Old Do You Need to Be for TikTok LIVE Gifts?',
-    2,
   ),
   paragraph(
     'p-ga-1',
-    "TikTok's current Gifts documentation says users need to be at least 18 years old, or 19 in South Korea, to purchase and use Coins for Gifts. (TikTok Support)",
+    "TikTok's Gifts documentation also says users need to be at least 18, or 19 in South Korea, to purchase and use Coins for Gifts. (TikTok Support) This is another reason the idea that 1,000 followers unlocks everything is wrong: different features have different rules.",
     [{ href: TT_GIFTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ga-2',
-    "TikTok's LIVE Gifts feature also has separate creator eligibility and availability conditions. (TikTok Support)",
-    [{ href: TT_LIVE_GIFTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ga-3',
-    'This is another reason why “get 1,000 followers and everything unlocks” is wrong.',
-  ),
-  paragraph(
-    'p-ga-4',
-    "That's not how the platform works.",
-  ),
-  paragraph(
-    'p-ga-5',
-    'Different features have different rules.',
   ),
   figure(
     'fig-features',
@@ -688,123 +279,21 @@ const BLOCKS: ArticleContentBlock[] = [
     'One follower milestone does not unlock every TikTok creator feature.',
   ),
 
-  heading(
-    'h-more-followers',
-    'Does Going LIVE Help You Get More Followers?',
-    2,
-  ),
-  paragraph(
-    'p-mf-1',
-    'A LIVE can create another way for an audience to interact with a creator.',
-  ),
+  heading('h-more-followers', 'Does Going LIVE Help You Get More Followers?', 2),
   paragraph(
     'p-mf-2',
-    'TikTok LIVE supports real-time creator and viewer interaction, and features such as multi-guest and co-hosting can create additional forms of live participation. (TikTok Support)',
+    'It can give your audience another way to interact with you. TikTok LIVE supports real-time creator and viewer interaction, and features such as multi-guest and co-hosting add more forms of participation. (TikTok Support) But a viewer can watch, comment, leave or follow, and those are separate actions, so the quality and relevance of the LIVE still decide whether people follow.',
     [{ href: TT_COHOST, label: 'TikTok Support', external: true }],
   ),
   paragraph(
-    'p-mf-3',
-    'But going LIVE does not always bring more followers.',
-  ),
-  paragraph(
-    'p-mf-4',
-    'A viewer can watch, comment, leave or choose to follow.',
-  ),
-  paragraph(
-    'p-mf-5',
-    'Those are separate actions.',
-  ),
-  paragraph(
-    'p-mf-6',
-    'The quality and relevance of the LIVE still matter.',
-  ),
-  paragraph(
-    'p-mf-7',
-    'TikTok followers, likes and views also measure different things, so LIVE activity should not be treated as a substitute for understanding those metrics.',
+    'p-fyp-2',
+    'TikTok does not say that hosting a LIVE gives your future videos a ranking boost or increases For You reach by any fixed amount, so treat claims of a LIVE-to-FYP boost as unconfirmed. Followers, likes and views also measure different things; our guide on TikTok followers, likes and views explains how.',
     [
       {
         href: '/learn/tiktok-followers-vs-likes-vs-views',
         label: 'TikTok followers, likes and views',
       },
     ],
-  ),
-
-  heading(
-    'h-fyp',
-    'Does Going LIVE Improve FYP Reach?',
-    2,
-  ),
-  paragraph(
-    'p-fyp-1',
-    'Not in any way TikTok has confirmed.',
-  ),
-  paragraph(
-    'p-fyp-2',
-    'TikTok does not publicly state that hosting a LIVE gives your future videos a ranking boost, or that LIVE increases FYP reach by a fixed percentage.',
-  ),
-  paragraph(
-    'p-fyp-3',
-    'So any claim of a LIVE-to-FYP boost is a myth until TikTok says otherwise.',
-  ),
-  paragraph('p-fyp-4', 'LIVE is a creator format.'),
-  paragraph(
-    'p-fyp-5',
-    "FYP video recommendation is another part of TikTok's ecosystem.",
-  ),
-  paragraph(
-    'p-fyp-6',
-    'Treat them separately unless TikTok documents a direct relationship.',
-  ),
-
-  heading(
-    'h-buy',
-    'Can Buying Followers Unlock TikTok LIVE?',
-    2,
-  ),
-  paragraph(
-    'p-by-1',
-    'No.',
-  ),
-  paragraph(
-    'p-by-2',
-    'Changing a follower count through a third-party service is not a guaranteed way to unlock TikTok LIVE.',
-  ),
-  paragraph(
-    'p-by-3',
-    'TikTok controls LIVE eligibility and says only creators meeting the required eligibility conditions can use LIVE. (TikTok Support)',
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-by-4',
-    'A follower number alone cannot guarantee LIVE access, age eligibility, regional availability, account eligibility, Gifts or monetization.',
-  ),
-  paragraph(
-    'p-by-5',
-    'TikTok also has rules against artificial or fake engagement, so third-party engagement carries platform-policy risk and is neither TikTok-approved nor risk-free.',
-  ),
-  paragraph(
-    'p-by-6',
-    'So buying followers does not unlock LIVE, LIVE is not switched on after a purchase, and TikTok does not accept purchased followers as part of its eligibility checks.',
-  ),
-  paragraph('p-by-7', 'TikTok makes the LIVE decision, not the follower count alone.'),
-
-  heading(
-    'h-service',
-    'TikTok Followers and LIVE Eligibility Are Separate',
-    2,
-  ),
-  paragraph(
-    'p-svc-1',
-    'If you are comparing options for TikTok followers, a follower service changes the follower count. It is not a LIVE-unlock method.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
-  ),
-  paragraph(
-    'p-svc-2',
-    'A follower service concerns the follower-count metric.',
-  ),
-  paragraph(
-    'p-svc-3',
-    'TikTok itself decides whether an account meets LIVE requirements.',
   ),
   {
     id: 'cta-tt-followers',
@@ -817,16 +306,25 @@ const BLOCKS: ArticleContentBlock[] = [
     label: 'View TikTok Followers',
   },
 
-  heading(
-    'h-useful',
-    'Is 1,000 Followers a Useful Goal Anyway?',
-    2,
-  ),
-  paragraph('p-uf-1', 'Yes, as an audience milestone.'),
+  heading('h-organic', 'How Do You Reach the LIVE Follower Threshold Organically?', 2),
   paragraph(
-    'p-uf-2',
-    'Our earlier guide on how to get your first 1,000 TikTok followers organically explains how to work toward that level through clear audience positioning, search-driven topics, content clusters, analytics and audience feedback.',
+    'p-uf-3',
+    "1,000 followers is a useful audience milestone and a common LIVE planning benchmark, not a magic algorithm number. If LIVE is your goal, build an audience that actually wants to follow you rather than chasing the visible count:",
+  ),
+  bullets('ul-og', [
+    'Make the account easy to understand, so a new viewer knows who it is for, what you publish and why to follow.',
+    'Create specific content: instead of general "TikTok tips", answer a problem such as why TikTok videos get views but no followers.',
+    'Use Creator Search Insights to find search topics, content gaps and Search performance.',
+    'Build related videos, so one useful post leads naturally to the next.',
+    'Review Analytics to find content that drives views, profile interest, comments and followers.',
+    'Use comments and audience questions as a source of future topics, and repeat what attracts the right audience instead of changing niche after every post.',
+  ]),
+  paragraph(
+    'p-og-4',
+    "Creator Search Insights helps you make content around questions people already search for. (TikTok Support) Our TikTok SEO guide covers search-focused publishing in more detail, and our guide on how to get your first 1,000 TikTok followers organically walks through positioning, content clusters and analytics.",
     [
+      { href: TT_CREATOR_SEARCH_INSIGHTS, label: 'TikTok Support', external: true },
+      { href: '/learn/tiktok-seo', label: 'TikTok SEO' },
       {
         href: '/learn/how-to-get-1000-tiktok-followers',
         label: 'how to get your first 1,000 TikTok followers organically',
@@ -834,466 +332,32 @@ const BLOCKS: ArticleContentBlock[] = [
     ],
   ),
   paragraph(
-    'p-uf-3',
-    'But 1,000 is an audience milestone and a common LIVE planning benchmark, not a magic TikTok algorithm number.',
-  ),
-  paragraph('p-uf-4', 'Even at 1,000 followers:'),
-  bullets('ul-uf', [
-    'video performance can vary,',
-    'LIVE access still depends on actual eligibility,',
-    'and other creator programs can have completely different requirements.',
-  ]),
-
-  heading(
-    'h-organic',
-    'How to Reach the LIVE Threshold Organically',
-    2,
-  ),
-  paragraph(
-    'p-og-1',
-    'If LIVE is your goal, focus on building an actual audience rather than chasing only the visible number.',
-  ),
-  heading('h-og-1', '1. Make Your Account Easy to Understand', 3),
-  paragraph(
-    'p-og-2',
-    'A new viewer should know who the account is for, what you publish and why they should follow.',
-  ),
-  heading('h-og-2', '2. Create Specific Content', 3),
-  paragraph(
-    'p-og-3',
-    'Instead of “TikTok Tips,” try a specific problem such as why TikTok videos get views but no followers. Specific problems create clearer reasons to watch.',
-  ),
-  heading('h-og-3', '3. Use Creator Search Insights', 3),
-  paragraph(
-    'p-og-4',
-    "TikTok's Creator Search Insights lets creators identify search topics, content gaps and Search performance. That can help you create content around questions people already search for. (TikTok Support)",
-    [{ href: TT_CREATOR_SEARCH_INSIGHTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-og-5',
-    'Our TikTok SEO guide covers search-focused publishing in more detail.',
-    [{ href: '/learn/tiktok-seo', label: 'TikTok SEO' }],
-  ),
-  heading('h-og-4', '4. Build Related Videos', 3),
-  paragraph(
-    'p-og-6',
-    'One useful post should lead naturally to another.',
-  ),
-  heading('h-og-5', '5. Review Analytics', 3),
-  paragraph(
-    'p-og-7',
-    'Find content that generates views, profile interest, comments and followers.',
-  ),
-  heading('h-og-6', '6. Respond to Audience Questions', 3),
-  paragraph(
-    'p-og-8',
-    'Comments can reveal future topics.',
-  ),
-  heading('h-og-7', '7. Repeat What Attracts the Right Audience', 3),
-  paragraph(
-    'p-og-9',
-    "Don't change niche after every post.",
-  ),
-  paragraph('p-og-10', 'Build patterns.'),
-
-  heading(
-    'h-support',
-    'Can You Get TikTok LIVE Through Support?',
-    2,
-  ),
-  paragraph(
-    'p-su-1',
-    'TikTok support should be used for legitimate troubleshooting.',
-  ),
-  paragraph(
-    'p-su-2',
-    'TikTok says users who meet LIVE eligibility requirements but still cannot go LIVE can report the problem. (TikTok Support)',
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-su-3',
-    "That is different from asking support to bypass requirements you don't meet.",
-  ),
-  paragraph(
-    'p-su-4',
-    'Do not send support false messages such as “I previously had LIVE and it disappeared” when that is not true.',
-  ),
-  paragraph(
-    'p-su-5',
-    'Use support to fix actual issues.',
-  ),
-  paragraph(
-    'p-su-6',
-    'Not to misrepresent account history.',
+    'p-sy-4',
+    'Your follower strategy should make sense even before LIVE becomes available, because TikTok still offers short-form posts, Search, For You discovery, Duet, Stitch and comments. The best position to reach LIVE from is an account people already want to follow.',
   ),
 
-  heading('h-vpn', 'Can a VPN Unlock TikTok LIVE?', 2),
-  paragraph('p-vpn-1', 'No, and it is not worth trying.'),
-  paragraph(
-    'p-vpn-2',
-    'TikTok explicitly uses local eligibility concepts for LIVE. (TikTok Support)',
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-vpn-3',
-    'Trying to disguise your location does not create a legitimate guarantee that the account will qualify.',
-  ),
-  paragraph(
-    'p-vpn-4',
-    'It can also complicate account security, location signals and feature availability.',
-  ),
-  paragraph(
-    'p-vpn-5',
-    'The correct approach is to use the requirements TikTok applies to the real account.',
-  ),
-
-  heading(
-    'h-birthday',
-    'Can You Change Your Birthday to Unlock LIVE?',
-    2,
-  ),
-  paragraph(
-    'p-bd-1',
-    'Do not falsify age information.',
-  ),
-  paragraph(
-    'p-bd-2',
-    'TikTok requires creators to be at least 18 to host LIVE and may ask them to confirm their age. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-bd-3',
-    "If the birthday on your account is genuinely incorrect, use TikTok's legitimate age and support process.",
-  ),
-  paragraph(
-    'p-bd-4',
-    "Pretending to be older breaks TikTok's rules and puts the account at risk.",
-  ),
-
-  heading(
-    'h-why-age',
-    'Why Does TikTok Ask for Age Verification?',
-    2,
-  ),
-  paragraph(
-    'p-wa-1',
-    'TikTok says it may ask LIVE creators to confirm their age to ensure they meet the minimum age requirement. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-wa-2',
-    'That is an eligibility and safety check.',
-  ),
-  paragraph(
-    'p-wa-3',
-    'A follower count cannot substitute for it.',
-  ),
-  paragraph(
-    'p-wa-4',
-    'Someone with 100 followers and someone with 1 million followers both still need to satisfy age rules when those rules apply.',
-  ),
-
-  heading(
-    'h-remove',
-    'Can TikTok Remove LIVE Access Later?',
-    2,
-  ),
-  paragraph(
-    'p-rl-1',
-    'LIVE access is not permanently guaranteed just because an account once qualified.',
-  ),
-  paragraph(
-    'p-rl-2',
-    'TikTok maintains content and account enforcement systems, and its LIVE troubleshooting documentation is built around continuing eligibility. (TikTok Support)',
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-rl-3',
-    'If an account breaks TikTok rules or otherwise becomes ineligible for a feature, its follower count alone will not protect LIVE access.',
-  ),
-  paragraph(
-    'p-rl-4',
-    'So “once you unlock LIVE, TikTok can never take it away” is not true.',
-  ),
-
-  heading(
-    'h-drop-live',
-    'Does Going Below the Follower Threshold Remove LIVE?',
-    2,
-  ),
-  paragraph(
-    'p-dl-1',
-    "TikTok's public documentation does not say exactly what happens to every account if its follower count later drops below its local LIVE threshold.",
-  ),
-  paragraph(
-    'p-dl-2',
-    'So be wary of anyone who says LIVE disappears instantly if you drop below 1,000, or that once unlocked you keep LIVE forever.',
-  ),
-  paragraph('p-dl-3', 'Both are too absolute.'),
-  paragraph(
-    'p-dl-4',
-    'If availability changes on an actual account, check the LIVE button, TikTok eligibility and support.',
-  ),
-
-  heading(
-    'h-drop-before',
-    'What If Your TikTok Followers Drop Before You Unlock LIVE?',
-    2,
-  ),
-  paragraph(
-    'p-db-1',
-    'Follower counts can move in both directions.',
-  ),
-  paragraph('p-db-2', 'People can unfollow.'),
-  paragraph('p-db-3', 'Accounts can disappear.'),
-  paragraph(
-    'p-db-4',
-    'TikTok can take action against invalid accounts.',
-  ),
-  paragraph(
-    'p-db-5',
-    'If your account is approaching a required local follower threshold and later falls below it, keep working on audience growth rather than assuming the count is permanent.',
-  ),
-  paragraph(
-    'p-db-6',
-    'Our guide on why TikTok followers drop covers those causes in more depth.',
-    [
-      {
-        href: '/learn/why-tiktok-followers-drop',
-        label: 'why TikTok followers drop',
-      },
-    ],
-  ),
-
-  heading(
-    'h-first-live',
-    'What Should Your First TikTok LIVE Be About?',
-    2,
-  ),
+  heading('h-first-live', 'What Should Your First TikTok LIVE Be About?', 2),
   paragraph(
     'p-fl-1',
-    'Once LIVE is genuinely available, do not start with “I am LIVE… what should we talk about?”',
-  ),
-  paragraph(
-    'p-fl-2',
-    'Give the session a purpose.',
-  ),
-  paragraph('p-fl-3', 'Examples:'),
-  heading('h-fl-edu', 'Educational Creator', 3),
-  paragraph('p-fl-4', 'TikTok SEO Q&A'),
-  heading('h-fl-fit', 'Fitness Creator', 3),
-  paragraph('p-fl-5', 'Beginner Workout Form Questions'),
-  heading('h-fl-local', 'Local Business', 3),
-  paragraph('p-fl-6', 'Ask Us Anything About Roof Repairs'),
-  heading('h-fl-ecom', 'Ecommerce Brand', 3),
-  paragraph('p-fl-7', 'Live Product Demonstration'),
-  heading('h-fl-photo', 'Photographer', 3),
-  paragraph('p-fl-8', 'Editing a Photo From Start to Finish'),
-  paragraph(
-    'p-fl-9',
-    'The audience should understand why the LIVE exists.',
-  ),
-  paragraph(
-    'p-fl-10',
-    "TikTok's LIVE tools support direct interaction, comments, moderation and multi-guest formats, so the format works particularly well for real-time conversation. (TikTok Support)",
-    [{ href: TT_MULTI_GUEST, label: 'TikTok Support', external: true }],
-  ),
-
-  heading(
-    'h-mod',
-    'Prepare Moderation Before Your First LIVE',
-    2,
-  ),
-  paragraph('p-md-1', 'LIVE is real-time.'),
-  paragraph(
-    'p-md-2',
-    'That means you cannot edit comments before they appear in the same way you edit a prerecorded video.',
+    'Once LIVE is available, give the session a clear purpose instead of opening with "what should we talk about?" An educational creator might host a TikTok SEO Q&A, a fitness creator could answer beginner workout form questions, a local roofer could run an "ask us anything about roof repairs" session, an ecommerce brand could demonstrate a product live, and a photographer could edit a photo from start to finish.',
   ),
   paragraph(
     'p-md-3',
-    'TikTok provides LIVE moderation tools and allows creators and moderators to manage things such as comments and filtering. (TikTok Support)',
+    'LIVE is real-time, so you cannot review comments before they appear the way you would edit a prerecorded video. TikTok provides LIVE moderation tools that let creators and moderators manage comments and filtering. (TikTok Support) Before a larger LIVE, review those controls, consider assigning a moderator, set blocked keywords where relevant and decide how you will handle inappropriate comments.',
     [{ href: TT_MODERATING, label: 'TikTok Support', external: true }],
   ),
-  paragraph('p-md-4', 'Before a larger LIVE:'),
-  bullets('ul-mod', [
-    'review moderation controls,',
-    'consider assigning a moderator,',
-    'review blocked keywords where relevant,',
-    'and know how to handle inappropriate comments.',
-  ]),
   paragraph(
-    'p-md-5',
-    'A follower milestone gets you closer to eligibility.',
-  ),
-  paragraph(
-    'p-md-6',
-    'It does not prepare the LIVE for you.',
+    'p-fl-10',
+    "TikTok's LIVE tools support direct interaction, comments, moderation and multi-guest formats, so the format suits real-time conversation best. (TikTok Support)",
+    [{ href: TT_MULTI_GUEST, label: 'TikTok Support', external: true }],
   ),
 
-  heading(
-    'h-everywhere',
-    'Is TikTok LIVE Available Everywhere?',
-    2,
-  ),
-  paragraph(
-    'p-ev-1',
-    'Do not assume every TikTok feature has identical availability worldwide.',
-  ),
-  paragraph(
-    'p-ev-2',
-    "TikTok's LIVE and Gift ecosystem has regional and feature-specific availability requirements. (TikTok Support)",
-    [{ href: TT_LIVE_GIFTS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-ev-3',
-    'That means a creator should check the actual TikTok app and account rather than relying on an article written for another country.',
-  ),
-  paragraph(
-    'p-ev-4',
-    'So no single follower number applies to TikTok LIVE in every country.',
-  ),
-
-  heading(
-    'h-know',
-    'How Do You Know When TikTok LIVE Is Available?',
-    2,
-  ),
-  paragraph(
-    'p-kn-1',
-    'The most practical indicator is your account itself.',
-  ),
-  paragraph(
-    'p-kn-2',
-    'If the account meets the applicable requirements and TikTok has enabled LIVE, the LIVE creation option should become available through the normal creation flow.',
-  ),
-  paragraph(
-    'p-kn-3',
-    "If you believe all requirements are met but the option is missing, TikTok's official troubleshooting guidance says to report the issue. (TikTok Support)",
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-kn-4',
-    'This is more reliable than refreshing the app 50 times, changing your username, switching languages or using an alleged hidden setting.',
-  ),
-
-  heading(
-    'h-strategy',
-    'Should You Build Your Entire TikTok Strategy Around Unlocking LIVE?',
-    2,
-  ),
-  paragraph('p-sy-1', 'Probably not.'),
-  paragraph('p-sy-2', 'LIVE can be useful.'),
-  paragraph('p-sy-3', 'But TikTok still offers:'),
-  bullets('ul-sy', [
-    'short-form posts,',
-    'Search,',
-    'For You discovery,',
-    'profiles,',
-    'Duet,',
-    'Stitch,',
-    'comments,',
-    'and other content formats.',
-  ]),
-  paragraph(
-    'p-sy-4',
-    'Your follower strategy should make sense even before LIVE becomes available.',
-  ),
-  paragraph(
-    'p-sy-5',
-    'The best position to reach LIVE from is an account people already want to follow.',
-  ),
-  paragraph(
-    'p-sy-6',
-    'Not an empty account whose only goal is reaching a threshold.',
-  ),
-
-  heading(
-    'h-simple',
-    'TikTok LIVE Requirements in Simple Terms',
-    2,
-  ),
-  paragraph(
-    'p-sm-1',
-    'Think of LIVE eligibility as several gates.',
-  ),
-  heading('h-sm-1', 'Gate 1: Age', 3),
-  paragraph(
-    'p-sm-2',
-    'Are you 18 or older? (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-sm-2', 'Gate 2: Followers', 3),
-  paragraph(
-    'p-sm-3',
-    'Have you met the local minimum-follower threshold TikTok applies to your account? (TikTok Support)',
-    [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-sm-3', 'Gate 3: Availability', 3),
-  paragraph(
-    'p-sm-4',
-    'Is LIVE available for the account and location?',
-  ),
-  heading('h-sm-4', 'Gate 4: Eligibility', 3),
-  paragraph(
-    'p-sm-5',
-    'Does TikTok consider the creator eligible for LIVE? (TikTok Support)',
-    [{ href: TT_LIVE_ISSUES, label: 'TikTok Support', external: true }],
-  ),
-  heading('h-sm-5', 'Gate 5: Account Settings', 3),
-  paragraph(
-    'p-sm-6',
-    'Is something such as Restricted Mode preventing LIVE access? TikTok explicitly says Restricted Mode disables going LIVE. (TikTok Support)',
-    [{ href: TT_USER_SAFETY, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-sm-7',
-    'Pass those checks before diagnosing a technical problem.',
-  ),
-
-  heading(
-    'h-answer',
-    'So, How Many Followers Do You Need to Go LIVE on TikTok?',
-    2,
-  ),
-  paragraph(
-    'p-an-1',
-    'The answer most creators hear is 1,000 followers.',
-  ),
-  paragraph(
-    'p-an-2',
-    'That remains a useful practical benchmark.',
-  ),
+  heading('h-answer', 'So, How Many Followers Do You Need to Go LIVE on TikTok?', 2),
   paragraph(
     'p-an-3',
-    'But the more accurate 2026 answer is that TikTok currently uses a local minimum-follower threshold rather than publishing one universal worldwide follower number for every account. (TikTok Support)',
+    "TikTok's Help Center gives 1,000 followers and adds that the requirement may vary across regions, so once you reach it, check whether the LIVE option appears on your own account. (TikTok Support) You must also be 18 or older and meet TikTok's other LIVE eligibility requirements. In practice, 999 is not universally impossible and 1,000 is not guaranteed LIVE, so your own account is the final answer.",
     [{ href: TT_WHAT_IS_LIVE, label: 'TikTok Support', external: true }],
   ),
-  paragraph(
-    'p-an-4',
-    'You must also be 18 or older and meet TikTok\'s other LIVE eligibility requirements. (TikTok Support)',
-    [{ href: TT_LIVE_AGE, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-an-5',
-    'So 999 is not universally impossible, and 1,000 is not guaranteed LIVE.',
-  ),
-  paragraph(
-    'p-an-6',
-    'Check the actual account.',
-  ),
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'TikTok currently requires creators to be at least 18 years old to host a LIVE.',
-    'TikTok uses a local minimum-follower threshold for LIVE rather than presenting one guaranteed global number.',
-    '1,000 followers remains a commonly used practical benchmark, but it is not an automatic worldwide unlock.',
-    "Only creators who meet TikTok's LIVE eligibility requirements can go LIVE.",
-    'TikTok may ask creators to confirm their age before granting LIVE access.',
-    'Restricted Mode prevents users from going LIVE.',
-    'LIVE Gifts and other monetization features have additional requirements separate from normal LIVE access.',
-    'Creator Rewards requirements are separate from TikTok LIVE requirements.',
-    'A third-party follower service does not guarantee TikTok LIVE access.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {
@@ -1329,7 +393,7 @@ export const HOW_MANY_FOLLOWERS_TO_GO_LIVE_ON_TIKTOK_ARTICLE: LearnArticleRecord
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'How Many Followers Do You Need to Go LIVE on TikTok?',
+    alt: 'A phone going LIVE beside three TikTok LIVE requirements: 1,000 followers (may vary across regions), age 18 or older, and an eligible account',
     width: 1600,
     height: 900,
     priority: true,
@@ -1370,17 +434,17 @@ export const HOW_MANY_FOLLOWERS_TO_GO_LIVE_ON_TIKTOK_ARTICLE: LearnArticleRecord
   lastEditorialUpdate: SCHEDULED_AT,
   keyTakeaways: [
     'You must currently be 18 or older to host a TikTok LIVE',
-    'TikTok uses a local minimum-follower threshold rather than publishing one guaranteed global number',
+    "TikTok's Help Center lists 1,000 followers to go LIVE, and says this may vary across regions",
     "LIVE features are subject to TikTok's current feature and regional availability",
     'Only creators who meet LIVE eligibility requirements can start a LIVE',
-    '1,000 followers is a useful commonly referenced benchmark, not an automatic worldwide unlock',
+    'Reaching 1,000 followers does not guarantee LIVE if other eligibility rules are not met',
   ],
   faqs: [
     {
       id: 'faq-1',
       question: 'How many followers do you need to go LIVE on TikTok in 2026?',
       answer:
-        'TikTok currently says creators need to meet a local minimum-follower threshold. Around 1,000 followers remains a commonly referenced planning benchmark, but TikTok does not present it as one guaranteed global threshold for every account.',
+        "TikTok's Help Center says you need 1,000 followers to go LIVE, and notes that this may vary across regions. You must also be 18 or older and meet TikTok's other LIVE eligibility rules.",
       schemaEligible: true,
     },
     {
@@ -1415,7 +479,7 @@ export const HOW_MANY_FOLLOWERS_TO_GO_LIVE_ON_TIKTOK_ARTICLE: LearnArticleRecord
       id: 'faq-6',
       question: 'Can buying followers guarantee TikTok LIVE access?',
       answer:
-        'No. TikTok controls LIVE eligibility, and follower count is only one part of the requirements. A follower service is not a guaranteed way to unlock LIVE.',
+        "No. TikTok decides LIVE eligibility itself, and follower count is only one part of it. Buying followers also breaks TikTok's rules on fake engagement.",
       schemaEligible: true,
     },
     {

@@ -45,9 +45,7 @@ describe('Article #15 How to get more likes on a Facebook post without ads', () 
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       commercial.some((link) => link.href === '/buy-facebook-followers'),
     ).toBe(false);

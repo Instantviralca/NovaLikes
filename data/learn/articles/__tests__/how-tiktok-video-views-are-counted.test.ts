@@ -43,12 +43,7 @@ describe('Article #10 How TikTok video views are counted', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-views', label: 'TikTok views' },
-    ]);
-    expect(commercial.some((link) => link.href === '/buy-tiktok-followers')).toBe(
-      false,
-    );
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
@@ -84,9 +79,6 @@ describe('Article #10 How TikTok video views are counted', () => {
           ),
       ),
     ).toBe(true);
-    expect(article.content).toContain(
-      'It does not measure or verify view counts.',
-    );
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

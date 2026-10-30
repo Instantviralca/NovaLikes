@@ -98,11 +98,10 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-9',
-    "Instagram's own Insights separates views, interactions and followers rather than treating them as one combined performance number. Meta defines interactions as actions such as likes, comments, saves and shares, while follower insights describe trends in the account's audience. (Facebook)",
+    "Instagram's own Insights separates views, interactions and followers rather than treating them as one combined performance number. Meta defines interactions as actions such as likes, comments, saves and shares, while follower insights describe trends in the account's audience. (Instagram Help Center)",
     [
       { href: IG_INSIGHTS, label: 'Insights', external: true },
-      { href: IG_INSIGHTS, label: 'Facebook', external: true },
-    ],
+      { href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-open-10',
@@ -113,7 +112,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-followers-1',
     'Instagram followers are accounts that have chosen to follow a profile.',
-    [{ href: '/buy-instagram-followers', label: 'Instagram followers' }],
   ),
   paragraph(
     'p-followers-2',
@@ -125,8 +123,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-followers-4',
-    "For professional accounts, Instagram's Insights can show follower trends, including growth and audience information when the relevant eligibility thresholds are met. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    "For professional accounts, Instagram's Insights can show follower trends, including growth and audience information when the relevant eligibility thresholds are met. (Instagram Help Center)",
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-followers-5',
@@ -187,11 +185,10 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-likes-2',
-    'Instagram includes likes within its broader Interactions metric alongside actions such as comments, saves and shares. (Facebook)',
+    'Instagram includes likes within its broader Interactions metric alongside actions such as comments, saves and shares. (Instagram Help Center)',
     [
       { href: IG_INSIGHTS, label: 'Interactions', external: true },
-      { href: IG_INSIGHTS, label: 'Facebook', external: true },
-    ],
+      { href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-likes-3', 'That distinction matters.'),
   paragraph('p-likes-4', 'A like is not the same thing as:'),
@@ -216,7 +213,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-likes-8',
     'Instagram likes therefore help describe one particular type of reaction to content.',
-    [{ href: '/buy-instagram-likes', label: 'Instagram likes' }],
   ),
   heading('h-likes-tell', 'What Can Likes Tell You?', 3),
   paragraph('p-likes-9', 'Likes can help you compare:'),
@@ -248,13 +244,12 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-views', 'What Are Instagram Views?', 2),
   paragraph(
     'p-views-1',
-    'Instagram currently defines Views in Insights as the number of times content was played or displayed. The metric can apply across content including Reels, posts, Stories, Live videos and ads. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram currently defines Views in Insights as the number of times content was played or displayed. The metric can apply across content including Reels, posts, Stories, Live videos and ads. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-views-2',
     'Instagram views therefore relate primarily to content consumption or visibility.',
-    [{ href: '/buy-instagram-views', label: 'Instagram views' }],
   ),
   paragraph(
     'p-views-3',
@@ -265,8 +260,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-views-6', 'Accounts reached'),
   paragraph(
     'p-views-7',
-    'Instagram says Accounts reached represents unique accounts that saw the content at least once, while Views can include multiple views from the same account. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram says Accounts reached represents unique accounts that saw the content at least once, while Views can include multiple views from the same account. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-views-8', 'That means:'),
   paragraph('p-views-9', '10,000 views'),
@@ -277,8 +272,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-views-11', '10,000 different people.'),
   paragraph(
     'p-views-12',
-    'For Reels specifically, Instagram says views count when a Reel starts to play or replay, while Accounts reached represents unique accounts that saw the Reel. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'For Reels specifically, Instagram says views count when a Reel starts to play or replay, while Accounts reached represents unique accounts that saw the Reel. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading(
     'h-views-useful',
@@ -316,7 +311,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-comments-1',
     'Instagram comments are another form of interaction with content.',
-    [{ href: '/buy-instagram-comments', label: 'Instagram comments' }],
   ),
   paragraph(
     'p-comments-2',
@@ -324,8 +318,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-comments-3',
-    'Instagram includes comments within its Interactions metrics alongside likes, saves and shares. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram includes comments within its Interactions metrics alongside likes, saves and shares. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-comments-4',
@@ -484,8 +478,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vfl-6',
-    'For Reels, Instagram provides separate metrics for views, likes, comments, saves, shares and follows generated from the Reel. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'For Reels, Instagram provides separate metrics for views, likes, comments, saves, shares and follows generated from the Reel. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-vfl-7',
@@ -585,22 +579,9 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-which-8',
-    "Instagram provides multiple metrics in Insights for exactly this reason rather than collapsing performance into one number. (Facebook)",
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram provides multiple metrics in Insights for exactly this reason rather than collapsing performance into one number. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
-  {
-    id: 'cta-instagram-metrics',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare Instagram Growth Options',
-    text: "Different Instagram metrics represent different parts of a profile's visible presence.",
-    serviceSlugs: [
-      'buy-instagram-followers',
-      'buy-instagram-likes',
-      'buy-instagram-views',
-      'buy-instagram-comments',
-    ],
-  },
 
   heading(
     'h-misleading',
@@ -684,8 +665,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-ev-2', '2. Look at Views and Reach Separately', 3),
   paragraph(
     'p-ev-5',
-    'Remember that views and unique accounts reached are not necessarily the same thing. Instagram explicitly distinguishes the two in Insights. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Remember that views and unique accounts reached are not necessarily the same thing. Instagram explicitly distinguishes the two in Insights. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-ev-3', '3. Review Interactions', 3),
   paragraph('p-ev-6', 'Look at:'),
@@ -697,8 +678,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ev-7',
-    'Instagram groups these types of actions under content interactions. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram groups these types of actions under content interactions. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   heading('h-ev-4', '4. Track Follower Trends', 3),
   paragraph(
@@ -716,8 +697,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ev-10',
-    'Instagram Reel Insights can show how many accounts followed you as a result of viewing a particular Reel. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Reel Insights can show how many accounts followed you as a result of viewing a particular Reel. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ev-11',
@@ -776,7 +757,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mf-6',
-    'More followers should therefore not be presented as a guaranteed method for obtaining proportional increases in:',
+    'So more followers do not automatically bring proportional increases in:',
   ),
   bullets('ul-mf-not', [
     'views,',
@@ -803,8 +784,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mvf-3',
-    'Instagram even reports Follows separately in Reel Insights, defining it as accounts that started following as a result of viewing the Reel. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram even reports Follows separately in Reel Insights, defining it as accounts that started following as a result of viewing the Reel. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph('p-mvf-4', 'That distinction is useful.'),
   paragraph('p-mvf-5', 'Views can show visibility.'),
@@ -820,13 +801,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ins-1',
-    'Instagram Insights are available to professional accounts such as business and creator accounts. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Instagram Insights are available to professional accounts such as business and creator accounts. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   paragraph(
     'p-ins-2',
-    'Rather than guessing from visible profile numbers alone, creators can use Insights to inspect Views, Accounts reached, Interactions, Accounts engaged, Total followers, and individual content performance. (Facebook)',
-    [{ href: IG_INSIGHTS, label: 'Facebook', external: true }],
+    'Rather than guessing from visible profile numbers alone, creators can use Insights to inspect Views, Accounts reached, Interactions, Accounts engaged, Total followers, and individual content performance. (Instagram Help Center)',
+    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   bullets('ul-ins-metrics', [
     'Views,',
@@ -838,8 +819,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ins-4',
-    'Reel-specific Insights can also include metrics such as views, watch time, accounts reached, likes, comments, saves, shares, and follows. (Facebook)',
-    [{ href: IG_REEL_INSIGHTS, label: 'Facebook', external: true }],
+    'Reel-specific Insights can also include metrics such as views, watch time, accounts reached, likes, comments, saves, shares, and follows. (Instagram Help Center)',
+    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
   ),
   bullets('ul-ins-reels', [
     'views,',

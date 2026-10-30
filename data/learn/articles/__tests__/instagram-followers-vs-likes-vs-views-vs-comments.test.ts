@@ -46,18 +46,20 @@ describe('Article #3 Instagram followers vs likes vs views vs comments', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-instagram-followers', label: 'Instagram followers' },
-      { href: '/buy-instagram-likes', label: 'Instagram likes' },
-      { href: '/buy-instagram-views', label: 'Instagram views' },
-      { href: '/buy-instagram-comments', label: 'Instagram comments' },
-    ]);
+    expect(commercial).toEqual([]);
+    expect(
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
+      ),
+    ).toBe(false);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
-    expect(
-      article.blocks.some((block) => block.type === 'service_cluster_cta'),
-    ).toBe(true);
+    
     expect(
       article.blocks.some(
         (block) =>

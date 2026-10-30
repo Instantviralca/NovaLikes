@@ -138,8 +138,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-9',
-    'Facebook Page Insights lets Page managers compare post reach and engagement, making it more useful to evaluate Likes alongside other metrics rather than in isolation. (Facebook)',
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook Page Insights lets Page managers compare post reach and engagement, making it more useful to evaluate Likes alongside other metrics rather than in isolation. (Facebook Help Center)',
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-10',
@@ -152,8 +152,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-13',
-    "Meta's own guidance says improving reach begins with posting content your audience wants to see, while its Page engagement guidance recommends using Insights, adjusting posting frequency and responding to people. (Facebook)",
-    [{ href: FB_REACH_BEST_PRACTICES, label: 'Facebook', external: true }],
+    "Meta's own guidance says improving reach begins with posting content your audience wants to see, while its Page engagement guidance recommends using Insights, adjusting posting frequency and responding to people. (Meta Business Help Center)",
+    [{ href: FB_REACH_BEST_PRACTICES, label: 'Meta Business Help Center', external: true }],
   ),
 
   heading(
@@ -194,8 +194,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-top-8',
-    "Meta's current reach guidance specifically tells businesses to improve post quality and publish content their audience wants to see. (Facebook)",
-    [{ href: FB_REACH_BEST_PRACTICES, label: 'Facebook', external: true }],
+    "Meta's current reach guidance specifically tells businesses to improve post quality and publish content their audience wants to see. (Meta Business Help Center)",
+    [{ href: FB_REACH_BEST_PRACTICES, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-top-9',
@@ -245,8 +245,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pur-7',
-    "Meta's current Page-post best practices emphasize clear messaging, clean presentation and concise, recognizable creative rather than cluttered posts. (Facebook)",
-    [{ href: FB_PAGE_POST_BEST_PRACTICES, label: 'Facebook', external: true }],
+    "Meta's current Page-post best practices emphasize clear messaging, clean presentation and concise, recognizable creative rather than cluttered posts. (Meta Business Help Center)",
+    [{ href: FB_PAGE_POST_BEST_PRACTICES, label: 'Meta Business Help Center', external: true }],
   ),
 
   heading('h-opening', '3. Improve the First Sentence', 2),
@@ -278,8 +278,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-op-9',
-    'In fact, Meta advises publishers to use headlines and text that set appropriate expectations rather than misleading people. (Facebook)',
-    [{ href: FB_CLICKBAIT, label: 'Facebook', external: true }],
+    'In fact, Meta advises publishers to use headlines and text that set appropriate expectations rather than misleading people. (Meta Business Help Center)',
+    [{ href: FB_CLICKBAIT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-op-10',
@@ -310,8 +310,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-cb-8', 'The second exaggerates the payoff.'),
   paragraph(
     'p-cb-9',
-    'Meta specifically provides guidance against clickbait and recommends setting accurate expectations about what the user is about to consume. (Facebook)',
-    [{ href: FB_CLICKBAIT, label: 'Facebook', external: true }],
+    'Meta specifically provides guidance against clickbait and recommends setting accurate expectations about what the user is about to consume. (Meta Business Help Center)',
+    [{ href: FB_CLICKBAIT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph('p-cb-10', 'The lesson:'),
   paragraph(
@@ -342,8 +342,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-vis-6',
-    "Meta's current Page-post guidance recommends clean, consistent creative, recognizable imagery and concise visual communication. (Facebook)",
-    [{ href: FB_PAGE_POST_BEST_PRACTICES, label: 'Facebook', external: true }],
+    "Meta's current Page-post guidance recommends clean, consistent creative, recognizable imagery and concise visual communication. (Meta Business Help Center)",
+    [{ href: FB_PAGE_POST_BEST_PRACTICES, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph('p-vis-7', 'Avoid creating a graphic with:'),
   bullets('ul-vis-avoid', [
@@ -370,8 +370,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-orig-2',
-    "Meta's current guidance around Facebook content increasingly emphasizes original material; its fake-engagement/content-quality documentation notes reduced distribution can apply to accounts repeatedly sharing unoriginal content. (Facebook)",
-    [{ href: FB_FAKE_ENGAGEMENT, label: 'Facebook', external: true }],
+    "Meta's current guidance around Facebook content increasingly emphasizes original material; its fake-engagement/content-quality documentation notes reduced distribution can apply to accounts repeatedly sharing unoriginal content. (Meta Business Help Center)",
+    [{ href: FB_FAKE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-orig-3',
@@ -408,8 +408,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-bait-1', 'This is important.'),
   paragraph(
     'p-bait-2',
-    'Facebook specifically identifies engagement bait as content that pushes users to interact artificially and says posts and Pages using this tactic can receive less distribution. (Facebook)',
-    [{ href: FB_ENGAGEMENT_BAIT, label: 'Facebook', external: true }],
+    'Facebook specifically identifies engagement bait as content that pushes users to interact artificially and says posts and Pages using this tactic can receive less distribution. (Meta Business Help Center)',
+    [{ href: FB_ENGAGEMENT_BAIT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-bait-3',
@@ -449,8 +449,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ask-2',
-    "Meta's anti-engagement-bait guidance is specifically aimed at posts that urge people to interact in inauthentic ways to inflate likes, comments or shares. (Facebook)",
-    [{ href: FB_ENGAGEMENT_BAIT, label: 'Facebook', external: true }],
+    "Meta's anti-engagement-bait guidance is specifically aimed at posts that urge people to interact in inauthentic ways to inflate likes, comments or shares. (Meta Business Help Center)",
+    [{ href: FB_ENGAGEMENT_BAIT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph('p-ask-3', 'A useful distinction:'),
   paragraph('p-ask-4', 'Natural CTA:'),
@@ -504,8 +504,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-q-8',
-    "Meta's current creator/content guidance specifically recommends paying attention to high-performing content and discussions happening in comments to understand the audience better. (Facebook)",
-    [{ href: FB_CONTENT_MONETIZATION, label: 'Facebook', external: true }],
+    "Meta's current creator/content guidance specifically recommends paying attention to high-performing content and discussions happening in comments to understand the audience better. (Meta Business Help Center)",
+    [{ href: FB_CONTENT_MONETIZATION, label: 'Meta Business Help Center', external: true }],
   ),
 
   heading('h-respond', '8. Respond to Genuine Comments', 2),
@@ -519,8 +519,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-res-3',
-    "Meta's current Page engagement best practices recommend responding to people as part of increasing Page engagement. (Facebook)",
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    "Meta's current Page engagement best practices recommend responding to people as part of increasing Page engagement. (Meta Business Help Center)",
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-res-4',
@@ -558,8 +558,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tm-3',
-    'Meta recommends using your own Insights to see when your audience is active, and specifically notes that audiences may be in different time zones. (Facebook)',
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    'Meta recommends using your own Insights to see when your audience is active, and specifically notes that audiences may be in different time zones. (Meta Business Help Center)',
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-tm-4',
@@ -588,8 +588,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fr-3',
-    "Meta's Page engagement guidance explicitly recommends adjusting posting frequency and posting in moderation. (Facebook)",
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    "Meta's Page engagement guidance explicitly recommends adjusting posting frequency and posting in moderation. (Meta Business Help Center)",
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-fr-4',
@@ -631,8 +631,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-fmt-3',
-    "Meta's Page engagement guidance recommends using photos, videos and other content types rather than relying on one format forever. (Facebook)",
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    "Meta's Page engagement guidance recommends using photos, videos and other content types rather than relying on one format forever. (Meta Business Help Center)",
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-fmt-4',
@@ -741,8 +741,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ins-1',
-    'Facebook gives Page managers post-level Insights, including information such as post reach and post engagement. (Facebook)',
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook gives Page managers post-level Insights, including information such as post reach and post engagement. (Facebook Help Center)',
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ins-2',
@@ -769,8 +769,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ins-6',
-    'Meta positions Page Insights specifically as a way to understand Page performance and how people respond to posts. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Meta positions Page Insights specifically as a way to understand Page performance and how people respond to posts. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   figure(
     'fig-loop',
@@ -800,8 +800,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rf-3',
-    'Meta defines organic reach around people who had an unpaid Page post enter their screen, while post engagement is tracked separately. (Facebook)',
-    [{ href: FB_ORGANIC_PAID_REACH, label: 'Facebook', external: true }],
+    'Meta defines organic reach around people who had an unpaid Page post enter their screen, while post engagement is tracked separately. (Facebook Help Center)',
+    [{ href: FB_ORGANIC_PAID_REACH, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-rf-4', 'So:'),
   bullets('ul-rf', [
@@ -825,8 +825,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-fol-1', 'No.'),
   paragraph(
     'p-fol-2',
-    'A follower is connected to the Page and may see its updates in Feed, but Facebook does not guarantee every follower sees every post. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'A follower is connected to the Page and may see its updates in Feed, but Facebook does not guarantee every follower sees every post. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-fol-3',
@@ -887,51 +887,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-pl-5',
     'The user still needs to encounter and choose to react to the individual post.',
   ),
-
-  heading(
-    'h-service',
-    'Organic Likes vs Facebook Post Like Services',
-    2,
-  ),
-  paragraph(
-    'p-svc-1',
-    'Organic engagement and a Post Like service are separate concepts.',
-  ),
-  paragraph(
-    'p-svc-2',
-    'Organic Likes happen through your normal Facebook audience/content activity.',
-  ),
-  paragraph(
-    'p-svc-3',
-    'A Facebook Post Like service concerns one specific public Facebook post.',
-  ),
-  paragraph(
-    'p-svc-4',
-    'If you want to compare that option, Facebook Post Likes is a Post Like metric service rather than an organic-content strategy.',
-    [{ href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' }],
-  ),
-  paragraph(
-    'p-svc-5',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-svc-not', [
-    'increasing organic reach,',
-    'getting more followers,',
-    'improving Feed ranking,',
-    'creating comments,',
-    'generating sales,',
-    'or causing further organic engagement.',
-  ]),
   {
-    id: 'cta-fb-post-likes',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-facebook-post-likes',
-    heading: 'Compare Facebook Post Like Options',
-    description:
-      "Organic engagement and Post Like services are separate approaches. If you're comparing Facebook Post Like packages, review the available options without treating Likes as a guarantee of organic reach, followers or business results.",
-    label: 'View Facebook Post Likes',
-  },
+      id: 'cta-fb-post-likes',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-facebook-post-likes',
+      heading: 'Compare Facebook Post Like Options',
+      description:
+        "Organic engagement and Post Like services are separate approaches. If you're comparing Facebook Post Like packages, review the available options without treating Likes as a guarantee of organic reach, followers or business results.",
+      label: 'View Facebook Post Likes',
+    },
+
+
 
   heading(
     'h-more-likes-reach',
@@ -940,7 +907,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ml-1',
-    'Not in any guaranteed way.',
+    'Not automatically.',
   ),
   paragraph(
     'p-ml-2',
@@ -948,8 +915,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ml-3',
-    'Meta describes content distribution as involving multiple signals rather than a simple Like-count equation. (Facebook)',
-    [{ href: FB_DISTRIBUTES_CONTENT, label: 'Facebook', external: true }],
+    'Meta describes content distribution as involving multiple signals rather than a simple Like-count equation. (Meta Business Help Center)',
+    [{ href: FB_DISTRIBUTES_CONTENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-ml-4',
@@ -958,10 +925,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-ml-5',
     'But you cannot promise a fixed reach increase from a Like count.',
-  ),
-  paragraph(
-    'p-ml-6',
-    'That is especially important when describing paid third-party Post Like services.',
   ),
 
   heading(
@@ -976,8 +939,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-br-3',
-    "Facebook controls its own content-ranking and distribution systems, and Meta's own documentation describes distribution as using multiple signals. (Facebook)",
-    [{ href: FB_DISTRIBUTES_CONTENT, label: 'Facebook', external: true }],
+    "Facebook controls its own content-ranking and distribution systems, and Meta's own documentation describes distribution as using multiple signals. (Meta Business Help Center)",
+    [{ href: FB_DISTRIBUTES_CONTENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-br-4',
@@ -993,8 +956,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-bst-1', "That's a different strategy."),
   paragraph(
     'p-bst-2',
-    'Facebook officially offers boosted posts as a paid way for Page owners to reach more people and pursue objectives such as engagement or local-business promotion. (Facebook)',
-    [{ href: FB_BOOST_VS_ADS, label: 'Facebook', external: true }],
+    'Facebook officially offers boosted posts as a paid way for Page owners to reach more people and pursue objectives such as engagement or local-business promotion. (Meta Business Help Center)',
+    [{ href: FB_BOOST_VS_ADS, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-bst-3',
@@ -1011,8 +974,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bst-5',
-    "If your actual goal is paid Facebook reach, Meta's own advertising/boosting products are the platform-supported route for purchasing distribution. (Facebook)",
-    [{ href: FB_BOOST_A_POST, label: 'Facebook', external: true }],
+    "If your actual goal is paid Facebook reach, Meta's own advertising/boosting products are the platform-supported route for purchasing distribution. (Meta Business Help Center)",
+    [{ href: FB_BOOST_A_POST, label: 'Meta Business Help Center', external: true }],
   ),
 
   heading(
@@ -1097,8 +1060,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-bt-1', 'No.'),
   paragraph(
     'p-bt-2',
-    'Meta does recommend looking at your own audience activity in Insights when deciding when to post. (Facebook)',
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    'Meta does recommend looking at your own audience activity in Insights when deciding when to post. (Meta Business Help Center)',
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph('p-bt-3', 'That is useful.'),
   paragraph(
@@ -1121,8 +1084,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-pv-1', 'There is no universal winner.'),
   paragraph(
     'p-pv-2',
-    'Meta recommends using multiple content formats and current Page post guidance emphasizes clear, quality creative. (Facebook)',
-    [{ href: FB_PAGE_ENGAGEMENT, label: 'Facebook', external: true }],
+    'Meta recommends using multiple content formats and current Page post guidance emphasizes clear, quality creative. (Meta Business Help Center)',
+    [{ href: FB_PAGE_ENGAGEMENT, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-pv-3',
@@ -1192,8 +1155,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-rp-3',
-    'Page Insights helps you investigate those questions. (Facebook)',
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    'Page Insights helps you investigate those questions. (Facebook Help Center)',
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-rp-4',
@@ -1356,8 +1319,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-mo-3',
-    "Facebook's Page Insights provides post reach and engagement data specifically to support this kind of performance review. (Facebook)",
-    [{ href: FB_POST_INSIGHTS, label: 'Facebook', external: true }],
+    "Facebook's Page Insights provides post reach and engagement data specifically to support this kind of performance review. (Facebook Help Center)",
+    [{ href: FB_POST_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-mo-4', 'Then ask:'),
   bullets('ul-mo-q', [
@@ -1370,8 +1333,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-mo-5',
-    "Meta's own content guidance recommends learning from content that performs well and from discussions in the comments. (Facebook)",
-    [{ href: FB_CONTENT_MONETIZATION, label: 'Facebook', external: true }],
+    "Meta's own content guidance recommends learning from content that performs well and from discussions in the comments. (Meta Business Help Center)",
+    [{ href: FB_CONTENT_MONETIZATION, label: 'Meta Business Help Center', external: true }],
   ),
 
   heading(
@@ -1398,8 +1361,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-cp-4',
-    "Meta's current guidance aligns with that approach: create content the audience values, use clean creative, post at a frequency that makes sense, engage with people and use Insights to learn what works. (Facebook)",
-    [{ href: FB_REACH_BEST_PRACTICES, label: 'Facebook', external: true }],
+    "Meta's current guidance aligns with that approach: create content the audience values, use clean creative, post at a frequency that makes sense, engage with people and use Insights to learn what works. (Meta Business Help Center)",
+    [{ href: FB_REACH_BEST_PRACTICES, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-cp-5',
@@ -1452,7 +1415,7 @@ export const HOW_TO_GET_MORE_LIKES_ON_FACEBOOK_POST_ARTICLE: LearnArticleRecord 
     authorId: 'author-novalikes-editorial',
     featuredImage: {
       src: `${IMAGE_DIR}/featured.png`,
-      alt: 'How to Get More Likes on a Facebook Post Without Ads',
+      alt: 'Sketch of a Facebook Page post with three tips: create useful content, reach the right audience and earn natural reactions',
       width: 1600,
       height: 900,
       priority: true,
@@ -1540,7 +1503,7 @@ export const HOW_TO_GET_MORE_LIKES_ON_FACEBOOK_POST_ARTICLE: LearnArticleRecord 
         id: 'faq-6',
         question: 'Does buying Facebook Post Likes increase organic reach?',
         answer:
-          "Not in any guaranteed way. Facebook's distribution systems use multiple signals, and Meta does not publish a rule stating that purchasing a number of Likes creates a specific organic-reach increase.",
+          "No. A bought Like only changes the visible count. Meta's rules ban inauthentic engagement, and bought Likes don't make Facebook show the post to more people.",
         schemaEligible: true,
       },
       {

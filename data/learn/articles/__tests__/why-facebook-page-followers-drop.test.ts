@@ -47,10 +47,7 @@ describe('Article #18 Why Facebook Page followers drop or change', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' },
-      { href: '/buy-facebook-followers', label: 'Facebook followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       commercial.some((link) => link.href === '/buy-facebook-post-likes'),
     ).toBe(false);

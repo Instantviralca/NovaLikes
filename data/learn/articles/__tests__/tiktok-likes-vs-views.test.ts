@@ -50,30 +50,19 @@ describe('Article #25 TikTok likes vs views', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-tiktok-likes', label: 'TikTok Likes' },
-      { href: '/buy-tiktok-views', label: 'TikTok Views' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
-      article.blocks.some((block) =>
-        block.type === 'paragraph'
-          ? (block.inlineLinks ?? []).some(
-              (link) => link.href === '/buy-tiktok-followers',
-            )
-          : false,
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
       ),
     ).toBe(false);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
-    expect(
-      article.blocks.some(
-        (block) =>
-          block.type === 'service_cluster_cta' &&
-          block.heading === 'Compare TikTok Likes and Views' &&
-          block.serviceSlugs.join(',') === 'buy-tiktok-likes,buy-tiktok-views',
-      ),
-    ).toBe(true);
     expect(article.blocks.some((block) => block.type === 'internal_cta')).toBe(
       false,
     );
@@ -95,7 +84,7 @@ describe('Article #25 TikTok likes vs views', () => {
     expect(article.content).not.toMatch(/100 Likes = another 1,000 views/i);
     expect(article.content).not.toMatch(/watch time = 70%/i);
     expect(article.content).toContain(
-      'does not publish a deterministic purchased-Likes-to-extra-reach formula',
+      'say TikTok removes fake likes it finds',
     );
     expect(
       article.blocks.some(

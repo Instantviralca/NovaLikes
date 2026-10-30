@@ -111,8 +111,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-6',
-    'And Facebook has been making a larger structural change from Page Likes toward Page Follows, which can make older audience numbers difficult to compare directly with current ones. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'And Facebook has been making a larger structural change from Page Likes toward Page Follows, which can make older audience numbers difficult to compare directly with current ones. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-open-7',
@@ -141,8 +141,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-open-12',
-    'Facebook now directs Page managers toward Follower Insights inside Professional Dashboard rather than Page Like Insights. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook now directs Page managers toward Follower Insights inside Professional Dashboard rather than Page Like Insights. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
 
   heading(
@@ -160,13 +160,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-uf-3',
-    "Meta's current Help Center says users can go to a Page, select Following and choose Unfollow. (Facebook)",
-    [{ href: FB_UNFOLLOW, label: 'Facebook', external: true }],
+    "Meta's current Help Center says users can go to a Page, select Following and choose Unfollow. (Facebook Help Center)",
+    [{ href: FB_UNFOLLOW, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-uf-4',
-    "Following a Page means the user may see updates from that Page in Feed. Unfollowing means they stop following that Page's updates. (Facebook)",
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    "Following a Page means the user may see updates from that Page in Feed. Unfollowing means they stop following that Page's updates. (Facebook Help Center)",
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph('p-uf-5', 'People can unfollow because:'),
   bullets('ul-uf', [
@@ -267,21 +267,22 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tr-1',
-    'This is one of the most important 2026 explanations.',
+    "Many older Pages changed from Likes to Followers, so old and new numbers don't always match.",
   ),
   paragraph(
     'p-tr-2',
-    'Facebook has been transitioning Page Likes to Followers.',
+    'Facebook has moved Pages from Likes to Followers, and in November 2025 Meta retired the old Page Likes metric from its Page insights API.',
+    [{ href: 'https://developers.facebook.com/blog/post/2025/08/15/page-insights-api-updates/', label: 'Page insights API', external: true }],
   ),
   paragraph(
     'p-tr-3',
-    'Meta currently says Page Likes have been replaced by Follows in Meta Business Suite, meaning Page managers now see follower Insights rather than Page Like Insights there. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Meta currently says Page Likes have been replaced by Follows in Meta Business Suite, meaning Page managers now see follower Insights rather than Page Like Insights there. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-tr-4',
-    "Meta's Page-follow documentation also states that if someone previously liked a Page but did not follow it, that connection was removed as Facebook transitioned toward the follower model. (Facebook)",
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    "Meta's Page-follow documentation also states that if someone previously liked a Page but did not follow it, that connection was removed as Facebook transitioned toward the follower model. (Facebook Help Center)",
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-tr-5',
@@ -307,13 +308,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ns-3',
-    "Meta's current documentation says Page managers no longer get Page Like Insights in Meta Business Suite because Likes have been replaced by Follows. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's current documentation says Page managers no longer get Page Like Insights in Meta Business Suite because Likes have been replaced by Follows. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ns-4',
-    'It also says Page managers can no longer see people who Like the Page in the same way; current audience management is follower-focused. (Facebook)',
-    [{ href: FB_SEE_WHO_FOLLOWS, label: 'Facebook', external: true }],
+    'It also says Page managers can no longer see people who Like the Page in the same way; current audience management is follower-focused. (Facebook Help Center)',
+    [{ href: FB_SEE_WHO_FOLLOWS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ns-5',
@@ -322,11 +323,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-ns-6',
     'You may not be comparing the same measurement.',
-  ),
-  paragraph(
-    'p-ns-7',
-    'If you are comparing that older Page-connection option separately, Facebook Page Likes is a historical Page-connection metric, not current follower Insights.',
-    [{ href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' }],
   ),
   figure(
     'fig-metric',
@@ -346,13 +342,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fk-2',
-    "Its current Community Standards Enforcement reporting says Meta's goal is to remove as many fake Facebook accounts as possible, including accounts created with malicious intent. (Transparency)",
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    "Its current Community Standards Enforcement reporting says Meta's goal is to remove as many fake Facebook accounts as possible, including accounts created with malicious intent. (Meta Transparency Center)",
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-fk-3',
-    "Meta's inauthentic-behavior policy also says that when it identifies coordinated inauthentic networks, it removes fake accounts and other involved Meta assets. (Transparency)",
-    [{ href: META_INAUTHENTIC_BEHAVIOR, label: 'Transparency', external: true }],
+    "Meta's inauthentic-behavior policy also says that when it identifies coordinated inauthentic networks, it removes fake accounts and other involved Meta assets. (Meta Transparency Center)",
+    [{ href: META_INAUTHENTIC_BEHAVIOR, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-fk-4',
@@ -360,8 +356,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fk-5',
-    "If an account that follows a Page is subsequently removed from Facebook, it is reasonable to infer that the removed account can no longer remain part of the Page's active follower audience. (Transparency)",
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    "If an account that follows a Page is subsequently removed from Facebook, it is reasonable to infer that the removed account can no longer remain part of the Page's active follower audience. (Meta Transparency Center)",
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-fk-6',
@@ -375,7 +371,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-fk-8',
     'But not every follower drop is Facebook deleting bots.',
   ),
-  paragraph('p-fk-9', 'There is no basis for that.'),
 
   heading(
     'h-not-bots',
@@ -396,13 +391,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nb-4',
-    'Facebook does remove fake accounts. (Transparency)',
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    'Facebook does remove fake accounts. (Meta Transparency Center)',
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-nb-5',
-    'But real users also have a direct Unfollow option. (Facebook)',
-    [{ href: FB_UNFOLLOW, label: 'Facebook', external: true }],
+    'But real users also have a direct Unfollow option. (Facebook Help Center)',
+    [{ href: FB_UNFOLLOW, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-nb-6',
@@ -424,8 +419,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-in-2',
-    "Meta's current instructions direct Page managers to switch into the Page, open Professional Dashboard, select Insights and review Audience/Follower information. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's current instructions direct Page managers to switch into the Page, open Professional Dashboard, select Insights and review Audience/Follower information. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-in-3',
@@ -433,8 +428,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-in-4',
-    "Meta's broader Page Insights system also provides information about Page performance, audience demographics and how people respond to posts. (Facebook)",
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's broader Page Insights system also provides information about Page performance, audience demographics and how people respond to posts. (Facebook Help Center)",
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-in-5',
@@ -478,8 +473,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-re-4',
-    "Meta's Page Insights treats audience and content-performance metrics separately. (Facebook)",
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's Page Insights treats audience and content-performance metrics separately. (Facebook Help Center)",
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-re-5',
@@ -527,8 +522,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pl-5',
-    'Meta says public posts can be liked or commented on even by people who are not following the person or profile, illustrating that interaction and following are separate actions. (Facebook)',
-    [{ href: FB_WHO_CAN_LIKE_COMMENT, label: 'Facebook', external: true }],
+    'Meta says public posts can be liked or commented on even by people who are not following the person or profile, illustrating that interaction and following are separate actions. (Facebook Help Center)',
+    [{ href: FB_WHO_CAN_LIKE_COMMENT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pl-6',
@@ -557,10 +552,6 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-fr-1',
     'Facebook does not publish a universal rule saying post five times per day and followers will leave.',
-  ),
-  paragraph(
-    'p-fr-2',
-    "So don't invent one.",
   ),
   paragraph(
     'p-fr-3',
@@ -726,18 +717,14 @@ const BLOCKS: ArticleContentBlock[] = [
     2,
   ),
   paragraph(
-    'p-cp-1',
-    "This deserves repeating because Facebook's Page model is currently changing.",
-  ),
-  paragraph(
     'p-cp-2',
-    'Meta says Page Likes are transitioning to Followers and that Page Like Insights are no longer available in Meta Business Suite. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Meta says Page Likes are transitioning to Followers and that Page Like Insights are no longer available in Meta Business Suite. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-cp-3',
-    'Meta also says that previous Like-only connections that were not also follows were removed during the transition. (Facebook)',
-    [{ href: FB_FOLLOW_PAGE, label: 'Facebook', external: true }],
+    'Meta also says that previous Like-only connections that were not also follows were removed during the transition. (Facebook Help Center)',
+    [{ href: FB_FOLLOW_PAGE, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-cp-4',
@@ -763,8 +750,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ws-2',
-    "Meta's current Business Help documentation says Likes on Facebook Pages are being transitioned to Followers, while current follower Insights documentation says Page Like Insights have been replaced by Follow Insights in Meta Business Suite. (Facebook)",
-    [{ href: FB_LIKES_TO_FOLLOWERS, label: 'Facebook', external: true }],
+    "Meta's current Business Help documentation says Likes on Facebook Pages are being transitioned to Followers, while current follower Insights documentation says Page Like Insights have been replaced by Follow Insights in Meta Business Suite. (Meta Business Help Center)",
+    [{ href: FB_LIKES_TO_FOLLOWERS, label: 'Meta Business Help Center', external: true }],
   ),
   paragraph(
     'p-ws-3',
@@ -772,49 +759,20 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ws-4',
-    'For 2026 reporting, focus primarily on Followers rather than trying to recreate the old Page Like model.',
-  ),
-
-  heading(
-    'h-service',
-    'Understand Your Facebook Follower Metric',
-    2,
-  ),
-  paragraph(
-    'p-svc-1',
-    'If you are comparing Facebook Page follower options, Facebook followers is a follower-count service, not a retention guarantee.',
-    [{ href: '/buy-facebook-followers', label: 'Facebook followers' }],
-  ),
-  paragraph(
-    'p-svc-2',
-    "A follower service concerns the Page's follower-count metric.",
-  ),
-  paragraph(
-    'p-svc-3',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-svc-not', [
-    'preventing future follower loss,',
-    'increasing organic reach,',
-    'creating Post Likes,',
-    'improving Feed ranking,',
-    'generating sales,',
-    'or permanently preserving every follower.',
-  ]),
-  paragraph(
-    'p-svc-4',
-    "Facebook controls Facebook's platform, accounts and enforcement.",
+    'For current reporting, focus on Followers rather than the old Page Like numbers.',
   ),
   {
-    id: 'cta-fb-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-facebook-followers',
-    heading: 'Compare Facebook Follower Options',
-    description:
-      "Facebook follower counts can change for several reasons. If you're comparing follower packages, review the available options without treating follower count as a guarantee of permanent retention, reach or engagement.",
-    label: 'View Facebook Followers',
-  },
+      id: 'cta-fb-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-facebook-followers',
+      heading: 'Compare Facebook Follower Options',
+      description:
+        "Facebook follower counts can change for several reasons. If you're comparing follower packages, review the available options without treating follower count as a guarantee of permanent retention, reach or engagement.",
+      label: 'View Facebook Followers',
+    },
+
+
 
   heading(
     'h-buy',
@@ -832,8 +790,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-buy-4',
-    'Likewise, if Facebook removes fake accounts as part of platform enforcement, simply chasing the previous public number does not address why the count changed. Meta actively removes fake accounts from Facebook. (Transparency)',
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    'Likewise, if Facebook removes fake accounts as part of platform enforcement, simply chasing the previous public number does not address why the count changed. Meta actively removes fake accounts from Facebook. (Meta Transparency Center)',
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-buy-5',
@@ -847,8 +805,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rf-2',
-    "Meta's transparency reporting explicitly states that it works to remove fake Facebook accounts, and its inauthentic-behavior enforcement includes removing fake accounts involved in coordinated manipulation. (Transparency)",
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    "Meta's transparency reporting explicitly states that it works to remove fake Facebook accounts, and its inauthentic-behavior enforcement includes removing fake accounts involved in coordinated manipulation. (Meta Transparency Center)",
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-rf-3',
@@ -870,13 +828,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pe-1',
-    'Meta says Pages may have limits applied if they violate Community Standards, and specifically notes that the Like button may be disabled on Pages it determines are deceptively obtaining Likes. (Facebook)',
-    [{ href: FB_PAGE_LIMITS, label: 'Facebook', external: true }],
+    'Meta says Pages may have limits applied if they violate Community Standards, and specifically notes that the Like button may be disabled on Pages it determines are deceptively obtaining Likes. (Facebook Help Center)',
+    [{ href: FB_PAGE_LIMITS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pe-2',
-    'Meta also warns against apps or websites that offer free Facebook Likes or followers in exchange for Facebook login information because they can create account-security risks. (Facebook)',
-    [{ href: FB_FREE_LIKES_WARNING, label: 'Facebook', external: true }],
+    'Meta also warns against apps or websites that offer free Facebook Likes or followers in exchange for Facebook login information because they can create account-security risks. (Facebook Help Center)',
+    [{ href: FB_FREE_LIKES_WARNING, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-pe-3',
@@ -894,14 +852,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'There is no official Meta rule saying Facebook deletes Page followers merely because a Page did not publish for a particular number of days.',
   ),
   paragraph(
-    'p-ia-2',
-    'So Facebook does not remove inactive Page followers after 30 days.',
-  ),
-  paragraph(
-    'p-ia-3',
-    'There is no support for that claim in the current Meta sources reviewed.',
-  ),
-  paragraph(
     'p-ia-4',
     'A period of inactivity can affect audience interest when the Page returns, but that is different from Facebook automatically deleting followers because the Page stopped posting.',
   ),
@@ -914,8 +864,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-se-1', "No, not according to Meta's sources."),
   paragraph(
     'p-se-2',
-    'Facebook allows people to unfollow Pages themselves. (Facebook)',
-    [{ href: FB_UNFOLLOW, label: 'Facebook', external: true }],
+    'Facebook allows people to unfollow Pages themselves. (Facebook Help Center)',
+    [{ href: FB_UNFOLLOW, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-se-3',
@@ -941,8 +891,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lr-3',
-    "Meta's Page Insights separately helps managers understand Page performance and audience information. (Facebook)",
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    "Meta's Page Insights separately helps managers understand Page performance and audience information. (Facebook Help Center)",
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-lr-4',
@@ -969,8 +919,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-on-2', 'Start by checking:'),
   paragraph(
     'p-on-3',
-    'Was the old number actually Page Likes? Facebook has transitioned Like reporting toward Follows. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Was the old number actually Page Likes? Facebook has transitioned Like reporting toward Follows. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-on-4',
@@ -982,13 +932,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-on-6',
-    'Could removed accounts have been part of the follower base? Meta does remove fake accounts, although the follower total alone cannot prove that was the cause. (Transparency)',
-    [{ href: META_FAKE_ACCOUNTS, label: 'Transparency', external: true }],
+    'Could removed accounts have been part of the follower base? Meta does remove fake accounts, although the follower total alone cannot prove that was the cause. (Meta Transparency Center)',
+    [{ href: META_FAKE_ACCOUNTS, label: 'Meta Transparency Center', external: true }],
   ),
   paragraph(
     'p-on-7',
-    'Do Page Insights show the change as a real trend? Use Professional Dashboard, then Insights, then Audience/Followers. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Do Page Insights show the change as a real trend? Use Professional Dashboard, then Insights, then Audience/Followers. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-on-8',
@@ -1016,8 +966,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-sl-3',
-    'Then use Page Insights to compare audience trends with Page and content performance. Meta specifically provides Page Insights to help understand audience demographics and how people respond to posts. (Facebook)',
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    'Then use Page Insights to compare audience trends with Page and content performance. Meta specifically provides Page Insights to help understand audience demographics and how people respond to posts. (Facebook Help Center)',
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-sl-4',
@@ -1031,13 +981,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wh-1',
-    'Facebook provides Page follower and audience Insights and lets Page managers view follower information through its current Page tools, but its documented Page Insights workflow is designed around audience analysis rather than an unfollower-alert system. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Facebook provides Page follower and audience Insights and lets Page managers view follower information through its current Page tools, but its documented Page Insights workflow is designed around audience analysis rather than an unfollower-alert system. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-wh-2',
-    'Do not use suspicious third-party services that ask for unnecessary Facebook login credentials merely to promise an unfollower list. Meta itself warns that sites offering free Likes or followers in exchange for login details can put account security at risk. (Facebook)',
-    [{ href: FB_FREE_LIKES_WARNING, label: 'Facebook', external: true }],
+    'Do not use suspicious third-party services that ask for unnecessary Facebook login credentials merely to promise an unfollower list. Meta itself warns that sites offering free Likes or followers in exchange for login details can put account security at risk. (Facebook Help Center)',
+    [{ href: FB_FREE_LIKES_WARNING, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-wh-3',
@@ -1052,8 +1002,8 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph('p-ag-1', 'Yes.'),
   paragraph(
     'p-ag-2',
-    'Facebook provides a reconnect feature for people, Pages and groups a user previously unfollowed. Meta says the user can reconnect by following again. (Facebook)',
-    [{ href: FB_RECONNECT, label: 'Facebook', external: true }],
+    'Facebook provides a reconnect feature for people, Pages and groups a user previously unfollowed. Meta says the user can reconnect by following again. (Facebook Help Center)',
+    [{ href: FB_RECONNECT, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-ag-3',
@@ -1079,14 +1029,14 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-do-3',
-    'Do not mix them. Facebook has transitioned Page Like reporting toward Followers. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Do not mix them. Facebook has transitioned Page Like reporting toward Followers. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-do-2', 'Step 2: Open Follower Insights', 3),
   paragraph(
     'p-do-4',
-    'Use Professional Dashboard, then Insights, then Audience/Followers. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Use Professional Dashboard, then Insights, then Audience/Followers. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-do-3', 'Step 3: Identify the Date', 3),
   paragraph('p-do-5', 'Was the decline one day, one week or several months?'),
@@ -1103,8 +1053,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-do-6', 'Step 6: Check Page Status', 3),
   paragraph(
     'p-do-8',
-    "If you suspect an actual Facebook restriction, use Facebook's Page and account status tools rather than diagnosing a penalty from follower count alone. Meta documents that Pages can face limits for Community Standards issues. (Facebook)",
-    [{ href: FB_PAGE_LIMITS, label: 'Facebook', external: true }],
+    "If you suspect an actual Facebook restriction, use Facebook's Page and account status tools rather than diagnosing a penalty from follower count alone. Meta documents that Pages can face limits for Community Standards issues. (Facebook Help Center)",
+    [{ href: FB_PAGE_LIMITS, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-do-7', 'Step 7: Improve Audience Fit', 3),
   paragraph(
@@ -1163,8 +1113,8 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-rd-study', 'Study Insights', 3),
   paragraph(
     'p-rd-9',
-    "Use Facebook's Page performance and follower tools instead of guessing. (Facebook)",
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    "Use Facebook's Page performance and follower tools instead of guessing. (Facebook Help Center)",
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   heading('h-rd-build', 'Build on Successful Topics', 3),
   paragraph(
@@ -1232,8 +1182,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-tn-4',
-    "Facebook's current Insights tools exist to help Page managers understand their audience and Page performance over time. (Facebook)",
-    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook', external: true }],
+    "Facebook's current Insights tools exist to help Page managers understand their audience and Page performance over time. (Facebook Help Center)",
+    [{ href: FB_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-tn-5',
@@ -1259,8 +1209,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sm-4',
-    'Meanwhile Facebook can change Page audience reporting, transition Page Likes toward Follows, or remove accounts that violate its rules. (Facebook)',
-    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook', external: true }],
+    'Meanwhile Facebook can change Page audience reporting, transition Page Likes toward Follows, or remove accounts that violate its rules. (Facebook Help Center)',
+    [{ href: FB_FOLLOWER_INSIGHTS, label: 'Facebook Help Center', external: true }],
   ),
   paragraph(
     'p-sm-5',
@@ -1316,7 +1266,7 @@ export const WHY_FACEBOOK_PAGE_FOLLOWERS_DROP_ARTICLE: LearnArticleRecord = {
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'Why Do Facebook Page Followers Drop or Change?',
+    alt: 'A Facebook Page follower total dropping, with three possible causes: unfollows, metric changes and account cleanup',
     width: 1600,
     height: 900,
     priority: true,

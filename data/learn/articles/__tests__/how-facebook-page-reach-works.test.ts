@@ -47,28 +47,33 @@ describe('Article #9 How Facebook Page reach works', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-facebook-followers', label: 'Facebook followers' },
-      { href: '/buy-facebook-page-likes', label: 'Facebook Page Likes' },
-      { href: '/buy-facebook-post-likes', label: 'Facebook Post Likes' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
-      article.blocks.filter((block) => block.type === 'figure'),
-    ).toHaveLength(3);
+      article.blocks.some((block) => block.type === 'service_cluster_cta'),
+    ).toBe(false);
     expect(
       article.blocks.some(
         (block) =>
-          block.type === 'service_cluster_cta' &&
-          block.heading === 'Understand Your Facebook Metrics' &&
-          block.serviceSlugs.length === 3,
+          block.type === 'internal_cta' && block.href.startsWith('/buy-'),
       ),
-    ).toBe(true);
+    ).toBe(false);
+    expect(
+      article.blocks.filter((block) => block.type === 'figure'),
+    ).toHaveLength(3);
+    
     expect(
       article.blocks.some((block) => block.type === 'comparison_table'),
     ).toBe(true);
     expect(article.content).toContain(
       'estimated number of people who saw content from your Page',
     );
+    expect(
+      article.blocks.some(
+        (block) =>
+          block.type === 'heading' &&
+          block.text === 'Reach and Impressions Are Now Viewers and Views',
+      ),
+    ).toBe(true);
     expect(article.content).not.toMatch(/Facebook only (shows|reaches) posts to \d+%/i);
     expect(
       article.blocks.some(

@@ -64,6 +64,54 @@ describe('Article #24 How to download a public Facebook Reel', () => {
     expect(article.content).toContain(
       'all videos posted to Facebook are shared as Reels',
     );
+    const readerTexts: string[] = [];
+    for (const block of article.blocks) {
+      if (block.type === 'figure' || block.type === 'image') {
+        readerTexts.push(block.image.alt);
+        if (block.image.caption) readerTexts.push(block.image.caption);
+        continue;
+      }
+      if (
+        block.type === 'paragraph' ||
+        block.type === 'heading' ||
+        block.type === 'blockquote' ||
+        block.type === 'callout' ||
+        block.type === 'tip' ||
+        block.type === 'warning'
+      ) {
+        readerTexts.push(block.text);
+      } else if (block.type === 'bulleted_list' || block.type === 'numbered_list') {
+        if (block.leadIn) readerTexts.push(block.leadIn);
+        readerTexts.push(...block.items);
+      } else if (block.type === 'key_takeaway_box') {
+        if (block.title) readerTexts.push(block.title);
+        readerTexts.push(...block.items);
+      } else if (block.type === 'faq_group') {
+        for (const item of block.items) {
+          readerTexts.push(item.question, item.answer);
+        }
+      } else if (block.type === 'internal_cta') {
+        if (block.heading) readerTexts.push(block.heading);
+        if (block.description) readerTexts.push(block.description);
+        readerTexts.push(block.label);
+      } else if (block.type === 'comparison_table' || block.type === 'data_table') {
+        if (block.caption) readerTexts.push(block.caption);
+        readerTexts.push(...block.headers);
+        for (const row of block.rows) readerTexts.push(...row);
+      } else if (block.type === 'step_process') {
+        if (block.title) readerTexts.push(block.title);
+        for (const step of block.steps) readerTexts.push(step.title, step.text);
+      }
+    }
+    for (const faq of article.faqs ?? []) {
+      readerTexts.push(faq.question, faq.answer);
+    }
+    for (const takeaway of article.keyTakeaways ?? []) {
+      readerTexts.push(takeaway);
+    }
+    for (const text of readerTexts) {
+      expect(text).not.toMatch(/September 2025/);
+    }
     expect(article.content).toContain('No Facebook password should be required');
     expect(article.content).toContain('does not mean copyright-free');
     expect(article.content).toContain(

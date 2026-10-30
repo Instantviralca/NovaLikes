@@ -52,9 +52,7 @@ describe('Article #14 Public vs private Instagram accounts', () => {
         ? (block.inlineLinks ?? []).filter((link) => link.href.startsWith('/buy-'))
         : [],
     );
-    expect(commercial).toEqual([
-      { href: '/buy-instagram-followers', label: 'Instagram followers' },
-    ]);
+    expect(commercial).toEqual([]);
     expect(
       article.blocks.filter((block) => block.type === 'figure'),
     ).toHaveLength(3);
@@ -81,6 +79,9 @@ describe('Article #14 Public vs private Instagram accounts', () => {
     );
     expect(article.content).toContain(
       'But do not say “Instagram penalizes private accounts.”',
+    );
+    expect(article.content).not.toMatch(
+      /Public accounts can use Instagram Insights/i,
     );
     expect(
       article.blocks.some(

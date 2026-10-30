@@ -384,12 +384,12 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-rewards', 'Likes vs Views for Creator Rewards', 2),
   paragraph(
     'p-rw-2',
-    "TikTok's Creator Rewards Program uses qualified views and separate eligibility and reward rules. (TikTok Support)",
+    "TikTok's Creator Rewards Program pays on qualified views. The rate per 1,000 qualified views (RPM) then depends on several factors, including watch time, search value, location, advertising value and video engagement, meaning how many viewers engage with your content. (TikTok Support)",
     [{ href: TIKTOK_REWARDS_HOW, label: 'TikTok Support', external: true }],
   ),
   paragraph(
     'p-rw-5',
-    'So more Likes do not automatically mean more Creator Rewards money, and not every public view counts as a qualified view.',
+    'So likes can matter as part of engagement, but they do not replace qualified views, and not every public view counts as a qualified view.',
   ),
   paragraph(
     'p-rw-6',
@@ -476,20 +476,12 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-buy-likes', 'Can Bought Likes Increase Views?', 2),
   paragraph(
     'p-bl-1',
-    'Not in any guaranteed way.',
+    'No.',
   ),
   paragraph(
     'p-bl-2',
-    "TikTok's recommendation systems can consider Likes as one user-interaction signal. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
-  ),
-  paragraph(
-    'p-bl-3',
-    'But that does not mean bought Likes guarantee more views.',
-  ),
-  paragraph(
-    'p-bl-4',
-    'TikTok does not publish a deterministic purchased-Likes-to-extra-reach formula. Artificial engagement can also create policy risk.',
+    "TikTok's Community Guidelines ban fake engagement and say TikTok removes fake likes it finds. So bought likes are not a way to get more views.",
+    [{ href: 'https://www.tiktok.com/community-guidelines/en/integrity-authenticity', label: 'Community Guidelines', external: true }],
   ),
   paragraph(
     'p-bl-5',
@@ -506,67 +498,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'A view service changes the view count. It does not create Likes or organic engagement by itself.',
   ),
 
-  heading(
-    'h-services',
-    'TikTok Likes and Views Are Separate Services',
-    2,
-  ),
-  paragraph(
-    'p-sv-1',
-    'If someone wants to compare available NovaLikes packages, there are two separate service pages: TikTok Likes and TikTok Views. Each service corresponds to a different metric.',
-    [
-      { href: '/buy-tiktok-likes', label: 'TikTok Likes' },
-      { href: '/buy-tiktok-views', label: 'TikTok Views' },
-    ],
-  ),
-  paragraph(
-    'p-sv-2',
-    'Buying one does not guarantee growth in the other.',
-  ),
-  {
-    id: 'cta-tiktok-likes-views',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Likes and Views',
-    text: 'TikTok Likes and Views measure different things. Compare the available packages separately without treating either metric as a guarantee of FYP reach, follower growth or organic engagement.',
-    serviceSlugs: ['buy-tiktok-likes', 'buy-tiktok-views'],
-  },
 
-  heading(
-    'h-which-buy',
-    'Which Should You Buy: TikTok Likes or Views?',
-    2,
-  ),
-  paragraph(
-    'p-wb-1',
-    'Start with the number you actually want to change.',
-  ),
-  paragraph(
-    'p-wb-2',
-    'If you want a higher Like count on a post, a TikTok Likes package is the relevant service.',
-  ),
-  paragraph(
-    'p-wb-3',
-    'If you want a higher view count, a TikTok Views package is the relevant service.',
-  ),
-  paragraph(
-    'p-wb-4',
-    'Neither one delivers the other. Bought Likes are not a reliable way to get organic views, and bought views do not bring Likes by themselves.',
-  ),
 
-  heading(
-    'h-both',
-    'Should You Buy Both TikTok Likes and Views?',
-    2,
-  ),
-  paragraph(
-    'p-bo-1',
-    'You do not need both. It depends on which metric you want to change.',
-  ),
-  paragraph(
-    'p-bo-3',
-    'Be wary of any seller who says every 1,000 views must have exactly 100 Likes and then offers Likes to fill that ratio.',
-  ),
 
   heading(
     'h-ban',
@@ -620,8 +553,8 @@ const BLOCKS: ArticleContentBlock[] = [
     'A good ratio is one above your own recent baseline, not a fixed internet figure.',
     'TikTok recommendation systems use multiple signals, so neither metric controls the For You feed on its own.',
     'More Views do not guarantee more Likes, and more Likes do not guarantee more Views or followers.',
-    'Creator Rewards uses qualified views, not public Likes.',
-    'TikTok Like and View services change separate metrics; neither guarantees growth in the other.',
+    'Creator Rewards pays on qualified views; engagement, including likes, is one factor in the rate.',
+    "Bought likes or views break TikTok's rules on fake engagement and do not grow the other metric.",
   ]),
 ];
 
@@ -763,21 +696,14 @@ export const TIKTOK_LIKES_VS_VIEWS_ARTICLE: LearnArticleRecord = {
       id: 'faq-8',
       question: 'Are TikTok Views important for Creator Rewards?',
       answer:
-        'Creator Rewards uses qualified views and separate program rules, so the ordinary public view count should not automatically be treated as the number of monetization-qualified views.',
+        'Creator Rewards pays on qualified views, not on the public view count. Qualified views are unique For You views over five seconds that are not paid or fraudulent. Engagement, including likes, is one of the factors in the reward rate.',
       schemaEligible: true,
     },
     {
       id: 'faq-9',
       question: 'Does buying TikTok Likes guarantee more organic views?',
       answer:
-        "No. TikTok's recommendation systems use multiple signals, and TikTok publishes no formula that turns bought Likes into organic views. A Like service changes the Like count; it does not guarantee organic distribution.",
-      schemaEligible: true,
-    },
-    {
-      id: 'faq-10',
-      question: 'Should I buy TikTok Likes or Views?',
-      answer:
-        'Choose based on the metric you want to change. A Like package concerns Likes; a View package concerns Views. Neither should be treated as a guarantee that the other metric, followers or organic reach will increase.',
+        "No. TikTok's rules ban fake engagement, and TikTok says it removes fake likes. Bought likes are not a way to get organic views.",
       schemaEligible: true,
     },
   ],

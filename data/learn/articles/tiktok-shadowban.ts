@@ -201,14 +201,6 @@ const BLOCKS: ArticleContentBlock[] = [
     ],
   ),
 
-  {
-    id: 'cta-tiktok-growth',
-    type: 'service_cluster_cta',
-    order: nextOrder(),
-    heading: 'Compare TikTok Growth Options',
-    text: 'No package lifts a TikTok restriction or changes an eligibility decision. Fake engagement is on TikTok’s list of content it does not recommend, so deal with any flagged posts first.',
-    serviceSlugs: ['buy-tiktok-views', 'buy-tiktok-likes', 'buy-tiktok-followers'],
-  },
 ];
 
 const CONTENT = BLOCKS.map((block) => {
@@ -300,7 +292,7 @@ export const TIKTOK_SHADOWBAN_ARTICLE: LearnArticleRecord = {
       id: 'faq-2',
       question: 'How do I know if I am shadowbanned on TikTok?',
       answer:
-        'Check your inbox for an ineligibility notification, look for an “Ineligible for recommendation” notice under your username, and open Account status in Settings and privacy. If all three are clear, TikTok has not restricted your account.',
+        'Check your inbox for an ineligibility notification, look for an “Ineligible for recommendation” notice under your username, and open Account status in Settings and privacy. If all three are clear, TikTok has not flagged a restriction you can see.',
       schemaEligible: true,
     },
     {
@@ -328,7 +320,7 @@ export const TIKTOK_SHADOWBAN_ARTICLE: LearnArticleRecord = {
       id: 'faq-6',
       question: 'Can buying followers get you shadowbanned on TikTok?',
       answer:
-        'It carries risk. Fake engagement is on TikTok’s list of content it does not recommend, and TikTok says it does not allow services that artificially increase followers or likes.',
+        "It can put your account at risk. Buying followers breaks TikTok's rules on fake engagement, fake engagement is on TikTok's list of content it does not recommend, and TikTok says it removes fake followers or likes.",
       schemaEligible: true,
     },
   ],

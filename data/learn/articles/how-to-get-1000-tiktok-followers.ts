@@ -1212,59 +1212,18 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-1k-5',
     'Again: this is a tool unlock, not a guaranteed algorithm boost.',
   ),
-
-  heading(
-    'h-service',
-    'Organic Growth vs TikTok Follower Services',
-    2,
-  ),
-  paragraph(
-    'p-svc-1',
-    'Organic follower growth and a follower-count service are separate things.',
-  ),
-  paragraph('p-svc-2', 'Organic growth involves:'),
-  bullets('ul-svc-org', [
-    'content,',
-    'discovery,',
-    'search,',
-    'profile positioning,',
-    'viewer relationships,',
-    'and repeated audience value.',
-  ]),
-  paragraph(
-    'p-svc-3',
-    'A TikTok follower service concerns the follower-count metric.',
-  ),
-  paragraph(
-    'p-svc-4',
-    'If you want to compare the separate option, TikTok followers is a follower-count service rather than an organic-growth method.',
-    [{ href: '/buy-tiktok-followers', label: 'TikTok followers' }],
-  ),
-  paragraph(
-    'p-svc-5',
-    'It is not a guaranteed method for:',
-  ),
-  bullets('ul-svc-not', [
-    'FYP reach,',
-    'Search ranking,',
-    'views,',
-    'likes,',
-    'comments,',
-    'Creator Rewards eligibility,',
-    'LIVE eligibility,',
-    'sales,',
-    'or organic growth.',
-  ]),
   {
-    id: 'cta-tt-followers',
-    type: 'internal_cta',
-    order: nextOrder(),
-    href: '/buy-tiktok-followers',
-    heading: 'Compare TikTok Follower Options',
-    description:
-      "Organic audience building and follower-count services are separate approaches. If you're comparing TikTok follower packages, review the available options without treating follower count as a guarantee of FYP reach, engagement or monetization.",
-    label: 'View TikTok Followers',
-  },
+      id: 'cta-tt-followers',
+      type: 'internal_cta',
+      order: nextOrder(),
+      href: '/buy-tiktok-followers',
+      heading: 'Compare TikTok Follower Options',
+      description:
+        "Organic audience building and follower-count services are separate approaches. If you're comparing TikTok follower packages, review the available options without treating follower count as a guarantee of FYP reach, engagement or monetization.",
+      label: 'View TikTok Followers',
+    },
+
+
 
   heading(
     'h-buy',
@@ -1281,7 +1240,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-buy-3',
-    'TikTok also prohibits fake/artificial engagement, so third-party follower services can carry platform-policy risk and are neither TikTok-approved nor zero-risk.',
+    "TikTok's rules also ban fake engagement, including services that sell followers, so bought followers can put your account at risk.",
+    [{ href: 'https://www.tiktok.com/community-guidelines/en/integrity-authenticity', label: "TikTok's rules", external: true }],
   ),
   paragraph(
     'p-buy-4',
@@ -1377,19 +1337,12 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-li-1',
-    'Do not build this article around a universal fixed LIVE number.',
-  ),
-  paragraph(
-    'p-li-2',
-    "TikTok's current LIVE requirements can involve a local minimum-follower threshold, and availability can depend on region and age requirements.",
+    'Not always.',
   ),
   paragraph(
     'p-li-3',
-    'That deserves its own dedicated article because the rule is not simply that everyone worldwide needs exactly 1,000 followers.',
-  ),
-  paragraph(
-    'p-li-4',
-    'For this article: focus on organic audience growth, not feature-threshold shortcuts.',
+    'TikTok sets a LIVE follower threshold that can vary by region, and you must be 18 or older to host. Our guide to how many followers you need to go LIVE on TikTok covers the details.',
+    [{ href: '/learn/how-many-followers-to-go-live-on-tiktok', label: 'how many followers you need to go LIVE on TikTok' }],
   ),
 
   heading(
@@ -1456,7 +1409,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mix-1',
-    'Try thinking in percentages of purpose, not guaranteed performance:',
+    'Mix these five types of content instead of chasing one format:',
   ),
   heading('h-mix-search', 'Search Answers', 3),
   paragraph(
@@ -1627,7 +1580,7 @@ export const HOW_TO_GET_1000_TIKTOK_FOLLOWERS_ARTICLE: LearnArticleRecord = {
   authorId: 'author-novalikes-editorial',
   featuredImage: {
     src: `${IMAGE_DIR}/featured.png`,
-    alt: 'How to Get Your First 1,000 TikTok Followers Organically',
+    alt: 'Four steps from a creator profile and useful content to the right audience and a 1,000-follower milestone',
     width: 1600,
     height: 900,
     priority: true,
