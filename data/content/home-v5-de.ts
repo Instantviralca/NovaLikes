@@ -151,12 +151,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Erhöhen Sie die Follower-Zahl eines öffentlichen Instagram-Kontos, die erste Zahl, die Besucher in Ihrem Profil prüfen.',
       bullets: [
-        'Nur öffentlicher Benutzername, nie Ihr Passwort',
-        'Pakete ab {fromPrice}, Preise in USD',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
-        'Bestellung mit Bestellnummer verfolgen',
+        "Nur öffentlicher Benutzername, nie Ihr Passwort",
+        "Nach der Lieferung wieder auf privat stellen",
+        "Schrittweise Lieferung für gleichmäßiges Wachstum",
+        "Fortschritt mit Ihrer Bestellnummer verfolgen"
       ],
       cta: 'Instagram Follower kaufen',
       why: {
@@ -179,12 +177,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Ergänzen Sie Likes bei einem öffentlichen Foto, Karussell oder Reel. Likes stehen direkt unter dem Beitrag und sind das schnellste Signal für neue Zuschauer.',
       bullets: [
-        'Fotos, Karussells und Reels',
-        'Beitragslink einfügen, kein Login',
-        'Pakete ab {fromPrice}',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
+        "Fotos, Karussells und Reels",
+        "Ein Beitrag pro Bestellung, einfach Link einfügen",
+        "Ideal für Launches, Angebote und angepinnte Beiträge",
+        "Größe passend zur Reichweite des Beitrags wählen"
       ],
       cta: 'Instagram Likes kaufen',
       why: {
@@ -207,12 +203,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Erhöhen Sie die View-Zahl eines öffentlichen Reels oder Videos, damit ein neuer Upload sehenswert wirkt, wenn Sie den Link teilen.',
       bullets: [
-        'Reels und Videobeiträge',
-        'Link einfügen, kein Passwort',
-        'Pakete ab {fromPrice}',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
+        "Reels und Videobeiträge",
+        "Ein Reel-Link, kein Passwort",
+        "Größere Pakete senken den Preis pro 1.000",
+        "Mit Likes kombinieren, damit die Zahlen natürlich wirken"
       ],
       cta: 'Instagram Views kaufen',
       why: {
@@ -235,12 +229,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Ergänzen Sie Kommentare unter einem öffentlichen Beitrag oder Reel, damit er aktiv wirkt und andere zum Mitreden einlädt.',
       bullets: [
-        'High-Quality- oder Premium-Kommentare',
-        'Eigene Texte oder Sprache auf Wunsch',
-        'Beitragslink einfügen, kein Login',
-        'Pakete ab {fromPrice}',
-        'Start meist innerhalb von 6–8 Stunden',
-        '6 Monate Nachfüllung ab Lieferung',
+        "High-Quality- oder Premium-Kommentare",
+        "Eigene Kommentare, einer pro Zeile",
+        "Auf Wunsch auf Deutsch oder in anderer Sprache",
+        "Beitragslink einfügen, kein Login"
       ],
       cta: 'Instagram Kommentare kaufen',
       why: {
@@ -263,12 +255,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Erhöhen Sie die Follower-Zahl eines öffentlichen TikTok-Kontos. Neue Zuschauer prüfen sie in Ihrem Profil, bevor sie folgen.',
       bullets: [
-        'Nur Benutzername, kein Passwort',
-        'Pakete ab {fromPrice}, Preise in USD',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
-        'Bestellung mit Bestellnummer verfolgen',
+        "Benutzername ohne @, kein Passwort",
+        "Nach der Lieferung wieder auf privat stellen",
+        "Schrittweise Lieferung auf Wunsch",
+        "Kein Weg zu Creator Rewards"
       ],
       cta: 'TikTok Follower kaufen',
       why: {
@@ -291,12 +281,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Ergänzen Sie Likes bei einem öffentlichen TikTok-Video, etwa einem Produktlaunch, einer Kooperation oder Ihrem besten Clip.',
       bullets: [
-        'Ein Video pro Bestellung',
-        'Videolink einfügen, kein Login',
-        'Pakete ab {fromPrice}',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
+        "Ein öffentliches Video pro Bestellung",
+        "Videolink einfügen, kein Login",
+        "Likes passend zu den Views halten",
+        "Ideal für angepinnte Clips, Launches und Kooperationen"
       ],
       cta: 'TikTok Likes kaufen',
       why: {
@@ -319,12 +307,10 @@ export const HOME_V5_DE = {
       },
       intro: 'Erhöhen Sie die View-Zahl eines öffentlichen TikTok-Videos. Eine niedrige Zahl kann ein gutes Video ignoriert wirken lassen, besonders bei neuen Uploads.',
       bullets: [
-        'High-Quality- oder Premium-Views',
-        'Videolink einfügen',
-        'Pakete ab {fromPrice}',
-        'Start meist innerhalb von 6–8 Stunden',
-        'Schrittweise Lieferung auf Wunsch',
-        '6 Monate Nachfüllung ab Lieferung',
+        "High-Quality- oder Premium-Views",
+        "Ein Videolink, kein Login",
+        "High Quality hat den niedrigsten Preis pro 1.000",
+        "Views bringen kein Geld aus Creator Rewards"
       ],
       cta: 'TikTok Views kaufen',
       why: {

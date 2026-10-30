@@ -150,12 +150,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Aumenta el número de seguidores de una cuenta pública de Instagram, la primera cifra que los visitantes miran en tu perfil.',
       bullets: [
-        'Solo tu usuario público, nunca tu contraseña',
-        'Paquetes desde {fromPrice}, precios en USD',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
-        'Sigue tu pedido con el número de pedido',
+        "Solo tu usuario público, nunca tu contraseña",
+        "Vuelve a privado cuando termine la entrega",
+        "Entrega gradual para un crecimiento más estable",
+        "Sigue el progreso con tu número de pedido"
       ],
       cta: 'Comprar seguidores de Instagram',
       why: {
@@ -177,12 +175,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Añade likes a una foto, carrusel o Reel público. Los likes están justo debajo de la publicación y son la señal más rápida para quien la ve por primera vez.',
       bullets: [
-        'Fotos, carruseles y Reels',
-        'Pega el enlace, sin iniciar sesión',
-        'Paquetes desde {fromPrice}',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
+        "Fotos, carruseles y Reels",
+        "Una publicación por pedido, pega su enlace",
+        "Ideal para lanzamientos, ofertas y publicaciones fijadas",
+        "Elige un tamaño acorde al alcance de la publicación"
       ],
       cta: 'Comprar likes de Instagram',
       why: {
@@ -204,12 +200,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Aumenta las visualizaciones de un Reel o vídeo público para que una nueva publicación parezca digna de ver cuando compartes el enlace.',
       bullets: [
-        'Reels y publicaciones de vídeo',
-        'Pega el enlace, sin contraseña',
-        'Paquetes desde {fromPrice}',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
+        "Reels y publicaciones de vídeo",
+        "Un enlace de Reel, sin contraseña",
+        "Los paquetes grandes bajan el precio por 1.000",
+        "Combínalas con likes para que los números se vean naturales"
       ],
       cta: 'Comprar visualizaciones de Instagram',
       why: {
@@ -231,12 +225,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Añade comentarios a una publicación o Reel público para que parezca activo e invite a otros a participar.',
       bullets: [
-        'Comentarios High Quality o Premium',
-        'Textos propios o idioma si lo pides',
-        'Pega el enlace, sin iniciar sesión',
-        'Paquetes desde {fromPrice}',
-        'Suele empezar en 6–8 horas',
-        '6 meses de reposición desde la entrega',
+        "Comentarios High Quality o Premium",
+        "Envía tus propios comentarios, uno por línea",
+        "En español o en otro idioma si lo pides",
+        "Pega el enlace, sin iniciar sesión"
       ],
       cta: 'Comprar comentarios de Instagram',
       why: {
@@ -258,12 +250,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Aumenta el número de seguidores de una cuenta pública de TikTok. Los nuevos espectadores lo miran en tu perfil antes de seguirte.',
       bullets: [
-        'Solo el usuario, sin contraseña',
-        'Paquetes desde {fromPrice}, precios en USD',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
-        'Sigue tu pedido con el número de pedido',
+        "Usuario sin la @, sin contraseña",
+        "Vuelve a privado cuando termine la entrega",
+        "Entrega gradual si la pides",
+        "No da acceso a Creator Rewards"
       ],
       cta: 'Comprar seguidores de TikTok',
       why: {
@@ -285,12 +275,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Añade likes a un vídeo público de TikTok, como un lanzamiento de producto, una colaboración o tu mejor clip.',
       bullets: [
-        'Un vídeo por pedido',
-        'Pega el enlace del vídeo, sin iniciar sesión',
-        'Paquetes desde {fromPrice}',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
+        "Un vídeo público por pedido",
+        "Pega el enlace del vídeo, sin iniciar sesión",
+        "Mantén los likes acordes a las visualizaciones",
+        "Ideal para clips fijados, lanzamientos y colaboraciones"
       ],
       cta: 'Comprar likes de TikTok',
       why: {
@@ -312,12 +300,10 @@ export const HOME_V5_ES = {
       },
       intro: 'Aumenta las visualizaciones de un vídeo público de TikTok. Un número bajo puede hacer que un buen vídeo parezca ignorado, sobre todo si es nuevo.',
       bullets: [
-        'Visualizaciones High Quality o Premium',
-        'Pega el enlace del vídeo',
-        'Paquetes desde {fromPrice}',
-        'Suele empezar en 6–8 horas',
-        'Entrega gradual si la pides',
-        '6 meses de reposición desde la entrega',
+        "Visualizaciones High Quality o Premium",
+        "Un enlace de vídeo, sin iniciar sesión",
+        "High Quality tiene el precio más bajo por 1.000",
+        "Las visualizaciones no generan dinero de Creator Rewards"
       ],
       cta: 'Comprar visualizaciones de TikTok',
       why: {

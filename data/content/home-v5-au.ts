@@ -149,12 +149,10 @@ export const HOME_V5_AU = {
       },
       intro: 'More followers on a public Instagram account, so the profile looks as established as the business behind it.',
       bullets: [
-        'Your public handle and nothing else',
-        'From {fromPrice}, charged in USD',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
-        'Track it with your order ID',
+        "Your public handle and nothing else",
+        "Flip back to private once delivery’s done",
+        "Gradual delivery keeps the climb steady",
+        "Track it with your order ID"
       ],
       cta: 'Buy Instagram Followers',
       why: {
@@ -176,12 +174,10 @@ export const HOME_V5_AU = {
       },
       intro: 'Extra likes on a public photo, carousel or Reel, handy for new stock drops and EOFY sale posts.',
       bullets: [
-        'Photos, carousels and Reels all work',
-        'Post link only, never a login',
-        'Packages starting from {fromPrice}',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
+        "Photos, carousels and Reels all work",
+        "One post per order, just the link",
+        "Handy for launches, sales and pinned posts",
+        "Match the size to the post’s reach"
       ],
       cta: 'Buy Instagram Likes',
       why: {
@@ -203,12 +199,10 @@ export const HOME_V5_AU = {
       },
       intro: 'Extra views on a public Reel or video, giving new uploads a fair go when you start sharing them.',
       bullets: [
-        'Reels and video posts both work',
-        'Reel link only, never a password',
-        'Packages starting from {fromPrice}',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
+        "Reels and video posts both work",
+        "Reel link only, never a password",
+        "Bigger packs bring the price per 1,000 down",
+        "Add likes so the numbers sit naturally"
       ],
       cta: 'Buy Instagram Views',
       why: {
@@ -230,12 +224,10 @@ export const HOME_V5_AU = {
       },
       intro: 'Comments on a public post or Reel, in our words or yours, so the conversation has already started when people arrive.',
       bullets: [
-        'High Quality and Premium comment tiers',
-        'Your own words, Australian spelling on request',
-        'Post link only, never a login',
-        'Packages starting from {fromPrice}',
-        'Most orders rolling within 6–8 hours',
-        'Six months of refills from delivery',
+        "High Quality and Premium comment tiers",
+        "Supply your own lines, one per comment",
+        "Australian spelling on request",
+        "Post link only, never a login"
       ],
       cta: 'Buy Instagram Comments',
       why: {
@@ -257,12 +249,10 @@ export const HOME_V5_AU = {
       },
       intro: 'More followers on a public TikTok account, for when a video lands and people come looking.',
       bullets: [
-        'Your public handle and nothing else',
-        'From {fromPrice}, charged in USD',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
-        'Track it with your order ID',
+        "Your public handle and nothing else",
+        "Flip back to private after delivery",
+        "Gradual delivery if you ask",
+        "Won’t get you into Creator Rewards"
       ],
       cta: 'Buy TikTok Followers',
       why: {
@@ -284,12 +274,10 @@ export const HOME_V5_AU = {
       },
       intro: 'Extra hearts on one public TikTok video, whether it is a product clip, a collab or a pinned favourite.',
       bullets: [
-        'One video for each order',
-        'Video link only, never a login',
-        'Packages starting from {fromPrice}',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
+        "One video for each order",
+        "Video link only, never a login",
+        "Keep likes in line with views",
+        "Handy for pinned clips, launches and collabs"
       ],
       cta: 'Buy TikTok Likes',
       why: {
@@ -311,12 +299,10 @@ export const HOME_V5_AU = {
       },
       intro: 'Extra views on one public TikTok video, so a fresh upload isn’t stuck near zero while people make up their minds.',
       bullets: [
-        'High Quality and Premium view tiers',
-        'Video link only',
-        'Packages starting from {fromPrice}',
-        'Most orders rolling within 6–8 hours',
-        'Gradual delivery if you ask',
-        'Six months of refills from delivery',
+        "High Quality and Premium view tiers",
+        "Video link only, never a login",
+        "High Quality gives the lowest per-1,000 price",
+        "Bought views don’t earn Creator Rewards"
       ],
       cta: 'Buy TikTok Views',
       why: {

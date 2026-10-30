@@ -150,12 +150,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Augmentez le nombre d’abonnés d’un compte Instagram public, le premier chiffre que les visiteurs regardent sur votre profil.',
       bullets: [
-        'Votre nom d’utilisateur public, jamais votre mot de passe',
-        'Forfaits dès {fromPrice}, prix en USD',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
-        'Suivi avec votre numéro de commande',
+        "Votre nom d’utilisateur public, jamais votre mot de passe",
+        "Repassez en privé une fois la livraison terminée",
+        "Livraison progressive pour une hausse plus régulière",
+        "Suivez l’avancement avec votre numéro de commande"
       ],
       cta: 'Acheter des abonnés Instagram',
       why: {
@@ -177,12 +175,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Ajoutez des likes à une photo, un carrousel ou un Reel public. Les likes s’affichent juste sous la publication et sont le signal le plus rapide pour qui la découvre.',
       bullets: [
-        'Photos, carrousels et Reels',
-        'Collez le lien, sans connexion',
-        'Forfaits dès {fromPrice}',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
+        "Photos, carrousels et Reels",
+        "Une publication par commande, collez son lien",
+        "Idéal pour lancements, offres et publications épinglées",
+        "Choisissez une taille adaptée à la portée de la publication"
       ],
       cta: 'Acheter des likes Instagram',
       why: {
@@ -204,12 +200,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Augmentez les vues d’un Reel ou d’une vidéo publique pour qu’une nouvelle publication donne envie d’être regardée quand vous partagez le lien.',
       bullets: [
-        'Reels et publications vidéo',
-        'Collez le lien, sans mot de passe',
-        'Forfaits dès {fromPrice}',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
+        "Reels et publications vidéo",
+        "Un lien de Reel, sans mot de passe",
+        "Les grands forfaits baissent le prix pour 1 000",
+        "Associez-les à des likes pour des chiffres naturels"
       ],
       cta: 'Acheter des vues Instagram',
       why: {
@@ -231,12 +225,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Ajoutez des commentaires à une publication ou un Reel public pour qu’il paraisse actif et invite les autres à participer.',
       bullets: [
-        'Commentaires High Quality ou Premium',
-        'Vos propres textes ou une langue sur demande',
-        'Collez le lien, sans connexion',
-        'Forfaits dès {fromPrice}',
-        'Démarrage en général sous 6 à 8 h',
-        'Refill de 6 mois après la livraison',
+        "Commentaires High Quality ou Premium",
+        "Envoyez vos commentaires, un par ligne",
+        "En français ou dans une autre langue sur demande",
+        "Collez le lien, sans connexion"
       ],
       cta: 'Acheter des commentaires Instagram',
       why: {
@@ -258,12 +250,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Augmentez le nombre d’abonnés d’un compte TikTok public. Les nouveaux spectateurs le regardent sur votre profil avant de vous suivre.',
       bullets: [
-        'Nom d’utilisateur seul, sans mot de passe',
-        'Forfaits dès {fromPrice}, prix en USD',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
-        'Suivi avec votre numéro de commande',
+        "Nom d’utilisateur sans le @, sans mot de passe",
+        "Repassez en privé une fois la livraison terminée",
+        "Livraison progressive sur demande",
+        "Ne donne pas accès à Creator Rewards"
       ],
       cta: 'Acheter des abonnés TikTok',
       why: {
@@ -285,12 +275,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Ajoutez des likes à une vidéo TikTok publique, comme un lancement de produit, une collaboration ou votre meilleur clip.',
       bullets: [
-        'Une vidéo par commande',
-        'Collez le lien de la vidéo, sans connexion',
-        'Forfaits dès {fromPrice}',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
+        "Une vidéo publique par commande",
+        "Collez le lien de la vidéo, sans connexion",
+        "Gardez les likes cohérents avec les vues",
+        "Idéal pour clips épinglés, lancements et collaborations"
       ],
       cta: 'Acheter des likes TikTok',
       why: {
@@ -312,12 +300,10 @@ export const HOME_V5_FR = {
       },
       intro: 'Augmentez les vues d’une vidéo TikTok publique. Un chiffre faible peut faire paraître une bonne vidéo ignorée, surtout si elle vient d’être publiée.',
       bullets: [
-        'Vues High Quality ou Premium',
-        'Collez le lien de la vidéo',
-        'Forfaits dès {fromPrice}',
-        'Démarrage en général sous 6 à 8 h',
-        'Livraison progressive sur demande',
-        'Refill de 6 mois après la livraison',
+        "Vues High Quality ou Premium",
+        "Un lien de vidéo, sans connexion",
+        "High Quality a le prix le plus bas pour 1 000",
+        "Les vues ne rapportent rien via Creator Rewards"
       ],
       cta: 'Acheter des vues TikTok',
       why: {

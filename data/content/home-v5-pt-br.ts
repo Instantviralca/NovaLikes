@@ -150,12 +150,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Aumente o número de seguidores de uma conta pública do Instagram, o primeiro número que os visitantes olham no seu perfil.',
       bullets: [
-        'Só o usuário público, nunca a senha',
-        'Pacotes a partir de {fromPrice}, preços em USD',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
-        'Acompanhe pelo número do pedido',
+        "Só o usuário público, nunca a senha",
+        "Volte para o privado quando a entrega terminar",
+        "Entrega gradual para um crescimento mais constante",
+        "Acompanhe pelo número do pedido"
       ],
       cta: 'Comprar seguidores no Instagram',
       why: {
@@ -177,12 +175,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Adicione curtidas a uma foto, carrossel ou Reel público. As curtidas ficam logo abaixo do post e são o sinal mais rápido para quem vê pela primeira vez.',
       bullets: [
-        'Fotos, carrosséis e Reels',
-        'Cole o link, sem login',
-        'Pacotes a partir de {fromPrice}',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
+        "Fotos, carrosséis e Reels",
+        "Um post por pedido, cole o link dele",
+        "Ideal para lançamentos, ofertas e posts fixados",
+        "Escolha um tamanho que combine com o alcance do post"
       ],
       cta: 'Comprar curtidas no Instagram',
       why: {
@@ -204,12 +200,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Aumente as visualizações de um Reel ou vídeo público, para um conteúdo novo parecer valer o play quando você compartilha o link.',
       bullets: [
-        'Reels e posts em vídeo',
-        'Cole o link, sem senha',
-        'Pacotes a partir de {fromPrice}',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
+        "Reels e posts em vídeo",
+        "Um link de Reel, sem senha",
+        "Pacotes maiores baixam o preço por 1.000",
+        "Combine com curtidas para números naturais"
       ],
       cta: 'Comprar visualizações no Instagram',
       why: {
@@ -231,12 +225,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Adicione comentários a um post ou Reel público para ele parecer ativo e convidar outras pessoas a participar.',
       bullets: [
-        'Comentários High Quality ou Premium',
-        'Seus próprios textos ou um idioma, se pedir',
-        'Cole o link, sem login',
-        'Pacotes a partir de {fromPrice}',
-        'Costuma começar em 6–8 horas',
-        '6 meses de reposição após a entrega',
+        "Comentários High Quality ou Premium",
+        "Envie seus próprios comentários, um por linha",
+        "Em português ou outro idioma, se pedir",
+        "Cole o link do post, sem login"
       ],
       cta: 'Comprar comentários no Instagram',
       why: {
@@ -258,12 +250,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Aumente o número de seguidores de uma conta pública do TikTok. Novos espectadores olham esse número no seu perfil antes de seguir.',
       bullets: [
-        'Só o usuário, sem senha',
-        'Pacotes a partir de {fromPrice}, preços em USD',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
-        'Acompanhe pelo número do pedido',
+        "Usuário sem o @, sem senha",
+        "Volte para o privado quando a entrega terminar",
+        "Entrega gradual se você pedir",
+        "Não dá acesso ao Creator Rewards"
       ],
       cta: 'Comprar seguidores no TikTok',
       why: {
@@ -285,12 +275,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Adicione curtidas a um vídeo público do TikTok, como um lançamento de produto, uma parceria ou o seu melhor clipe.',
       bullets: [
-        'Um vídeo por pedido',
-        'Cole o link do vídeo, sem login',
-        'Pacotes a partir de {fromPrice}',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
+        "Um vídeo público por pedido",
+        "Cole o link do vídeo, sem login",
+        "Mantenha as curtidas de acordo com as visualizações",
+        "Ideal para clipes fixados, lançamentos e parcerias"
       ],
       cta: 'Comprar curtidas no TikTok',
       why: {
@@ -312,12 +300,10 @@ export const HOME_V5_PT_BR = {
       },
       intro: 'Aumente as visualizações de um vídeo público do TikTok. Um número baixo pode fazer um bom vídeo parecer ignorado, principalmente se for novo.',
       bullets: [
-        'Visualizações High Quality ou Premium',
-        'Cole o link do vídeo',
-        'Pacotes a partir de {fromPrice}',
-        'Costuma começar em 6–8 horas',
-        'Entrega gradual se você pedir',
-        '6 meses de reposição após a entrega',
+        "Visualizações High Quality ou Premium",
+        "Um link de vídeo, sem login",
+        "High Quality tem o menor preço por 1.000",
+        "Visualizações não geram dinheiro no Creator Rewards"
       ],
       cta: 'Comprar visualizações no TikTok',
       why: {

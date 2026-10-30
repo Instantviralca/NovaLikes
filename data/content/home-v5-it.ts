@@ -150,12 +150,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aumenta il numero di follower di un account Instagram pubblico, il primo numero che i visitatori guardano sul tuo profilo.',
       bullets: [
-        'Solo lo username pubblico, mai la password',
-        'Pacchetti da {fromPrice}, prezzi in USD',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
-        'Traccia l’ordine con il numero d’ordine',
+        "Solo lo username pubblico, mai la password",
+        "Torna al privato a consegna finita",
+        "Consegna graduale per una crescita più regolare",
+        "Segui l’avanzamento con il numero d’ordine"
       ],
       cta: 'Comprare follower Instagram',
       why: {
@@ -177,12 +175,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aggiungi like a una foto, un carosello o un Reel pubblico. I like sono subito sotto il post e sono il segnale più rapido per chi lo vede per la prima volta.',
       bullets: [
-        'Foto, caroselli e Reel',
-        'Incolla il link, senza login',
-        'Pacchetti da {fromPrice}',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
+        "Foto, caroselli e Reel",
+        "Un post per ordine, incolla il suo link",
+        "Ideale per lanci, offerte e post fissati",
+        "Scegli una dimensione adatta alla portata del post"
       ],
       cta: 'Comprare like Instagram',
       why: {
@@ -204,12 +200,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aumenta le visualizzazioni di un Reel o di un video pubblico, così un nuovo contenuto invita a guardarlo quando condividi il link.',
       bullets: [
-        'Reel e post video',
-        'Incolla il link, senza password',
-        'Pacchetti da {fromPrice}',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
+        "Reel e post video",
+        "Un link al Reel, nessuna password",
+        "I pacchetti grandi abbassano il prezzo per 1.000",
+        "Abbinale ai like per numeri naturali"
       ],
       cta: 'Comprare visualizzazioni Instagram',
       why: {
@@ -231,12 +225,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aggiungi commenti a un post o a un Reel pubblico, così sembra attivo e invita gli altri a partecipare.',
       bullets: [
-        'Commenti High Quality o Premium',
-        'I tuoi testi o una lingua su richiesta',
-        'Incolla il link, senza login',
-        'Pacchetti da {fromPrice}',
-        'Di solito parte entro 6–8 ore',
-        '6 mesi di refill dalla consegna',
+        "Commenti High Quality o Premium",
+        "Invia i tuoi commenti, uno per riga",
+        "In italiano o in un’altra lingua su richiesta",
+        "Incolla il link, senza login"
       ],
       cta: 'Comprare commenti Instagram',
       why: {
@@ -258,12 +250,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aumenta il numero di follower di un account TikTok pubblico. I nuovi spettatori lo controllano sul tuo profilo prima di seguirti.',
       bullets: [
-        'Solo lo username, nessuna password',
-        'Pacchetti da {fromPrice}, prezzi in USD',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
-        'Traccia l’ordine con il numero d’ordine',
+        "Username senza la @, nessuna password",
+        "Torna al privato a consegna finita",
+        "Consegna graduale su richiesta",
+        "Non dà accesso a Creator Rewards"
       ],
       cta: 'Comprare follower TikTok',
       why: {
@@ -285,12 +275,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aggiungi like a un video TikTok pubblico, come il lancio di un prodotto, una collaborazione o la tua clip migliore.',
       bullets: [
-        'Un video per ordine',
-        'Incolla il link del video, senza login',
-        'Pacchetti da {fromPrice}',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
+        "Un video pubblico per ordine",
+        "Incolla il link del video, senza login",
+        "Tieni i like in linea con le visualizzazioni",
+        "Ideale per clip fissate, lanci e collaborazioni"
       ],
       cta: 'Comprare like TikTok',
       why: {
@@ -312,12 +300,10 @@ export const HOME_V5_IT = {
       },
       intro: 'Aumenta le visualizzazioni di un video TikTok pubblico. Un numero basso può far sembrare ignorato un buon video, soprattutto se è appena uscito.',
       bullets: [
-        'Visualizzazioni High Quality o Premium',
-        'Incolla il link del video',
-        'Pacchetti da {fromPrice}',
-        'Di solito parte entro 6–8 ore',
-        'Consegna graduale su richiesta',
-        '6 mesi di refill dalla consegna',
+        "Visualizzazioni High Quality o Premium",
+        "Un link al video, senza login",
+        "High Quality ha il prezzo più basso per 1.000",
+        "Le visualizzazioni non fanno guadagnare con Creator Rewards"
       ],
       cta: 'Comprare visualizzazioni TikTok',
       why: {
