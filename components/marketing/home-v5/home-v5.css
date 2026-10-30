@@ -311,8 +311,20 @@ details[open] .pl{transform:rotate(45deg);background:#FFEDE3;color:var(--orange)
   .faq-head{position:static}
   .start-extras{grid-template-columns:1fr 1fr}
   .start-grid{padding:8px 20px;border-radius:32px}
+  .story-vis{overflow:hidden}
+  .vis{height:min(400px,72vw);overflow:hidden}
+  /* Single-column service blocks: no sticky overlap; cap illustration height */
+  .stack-item{position:static}
+  .svc-block{transform:none;box-shadow:0 -1px 0 rgba(29,33,48,.04)}
+  .svc-block::after{display:none}
+  .svc-vis{height:auto;max-height:360px;padding:20px 0;overflow:hidden;isolation:isolate}
+  .svc-vis .blob{z-index:0}
+  .svc-vis img{position:relative;z-index:1;width:min(96%,520px);max-height:320px;height:auto;object-fit:contain;margin-inline:auto}
+  .svc-vis .vis-chip,.svc-vis .d-lines{z-index:2}
+  .svc-text,.svc-qs{position:relative;z-index:1}
 }
 @media (max-width:640px){
+  .home-v5{overflow-x:clip}
   .wrap{padding:0 16px}
   .hero{padding:44px 0 40px}
   .lead{font-size:17px}
