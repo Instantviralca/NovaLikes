@@ -9,11 +9,7 @@ import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import type { Market } from '@/lib/market/config';
 import { loadUi } from '@/lib/i18n/content/load';
 import { resolvePublicHref } from '@/lib/market/paths';
-import {
-  calculateAggregateRating,
-  getApprovedReviews,
-  getReviewsByPlatform,
-} from '@/lib/reviews';
+import { calculateAggregateRating, getReviewsByPlatform } from '@/lib/reviews';
 import type { PlatformId } from '@/types/platform';
 
 const PLATFORM_ORDER: PlatformKey[] = ['instagram', 'tiktok', 'facebook'];
@@ -31,13 +27,14 @@ function labelWordPx(title: string): number {
   return Math.max(48, Math.ceil(title.length * 9.2));
 }
 
-function platformAggregate(platform: PlatformKey) {
+function platformAggregate(platform: PlatformKey): { score: string; count: string } | null {
   const scoped = getReviewsByPlatform(platform as PlatformId);
-  const source = scoped.length >= 8 ? scoped : getApprovedReviews();
-  const agg = calculateAggregateRating(source);
+  if (scoped.length < 8) return null;
+  const agg = calculateAggregateRating(scoped);
+  if (!agg?.ratingValue) return null;
   return {
-    score: agg?.ratingValue?.toFixed(1) ?? '4.8',
-    count: String(agg?.reviewCount ?? 0),
+    score: agg.ratingValue.toFixed(1),
+    count: String(agg.reviewCount ?? 0),
   };
 }
 
@@ -122,15 +119,17 @@ export function HomeV5GetStarted({
                     <img src={PLATFORM_ICON_SRC[key]} alt="" width={20} height={20} decoding="async" />
                   </span>
                   <span className="sg-name">{tab.label}</span>
-                  <span className="sg-rating" aria-hidden="true">
-                    <span className="sg-score">
-                      <StarIcon />
-                      {rating.score}
+                  {rating ? (
+                    <span className="sg-rating" aria-hidden="true">
+                      <span className="sg-score">
+                        <StarIcon />
+                        {rating.score}
+                      </span>
+                      <span className="sg-count">
+                        <span>{rating.count}</span>
+                      </span>
                     </span>
-                    <span className="sg-count">
-                      <span>{rating.count}</span>
-                    </span>
-                  </span>
+                  ) : null}
                 </h3>
                 <div className="sg-keys" style={{ ['--sg-word' as string]: `${word}px` }}>
                   {cards.map((card, index) => (

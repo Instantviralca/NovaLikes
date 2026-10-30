@@ -67,6 +67,7 @@ export function HomeV5Hero({
           </span>
           {hero.title.tail ? (
             <>
+              {' '}
               <br />
               {hero.title.tail}
             </>
