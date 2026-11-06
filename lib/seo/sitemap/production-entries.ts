@@ -9,6 +9,11 @@ import type { MetadataRoute } from 'next';
 import { listPublishedCmsPublicArticles } from '@/lib/cms/learn-bridge';
 import { absoluteUrl } from '@/lib/seo/metadata/canonical';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
+import { SITE_CONTENT_RELEASED_AT } from '@/lib/seo/sitemap/routes';
+
+function maxDate(a: Date, b: Date): Date {
+  return a.getTime() >= b.getTime() ? a : b;
+}
 
 export async function getProductionSitemapEntries(): Promise<MetadataRoute.Sitemap> {
   const entries = buildSitemapEntries();
@@ -22,7 +27,10 @@ export async function getProductionSitemapEntries(): Promise<MetadataRoute.Sitem
       seen.add(url);
       entries.push({
         url,
-        lastModified: new Date(article.updatedAt || article.publishedAt),
+        lastModified: maxDate(
+          new Date(article.updatedAt || article.publishedAt),
+          SITE_CONTENT_RELEASED_AT,
+        ),
         changeFrequency: 'monthly',
         priority: 0.6,
       });

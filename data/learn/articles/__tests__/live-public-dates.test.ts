@@ -21,6 +21,7 @@ import {
 } from '@/lib/learn/article-seo';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
+import { SITE_CONTENT_RELEASED_AT } from '@/lib/seo/sitemap/routes';
 
 const LAUNCH_ISO = '2026-08-22T08:00:00.000Z';
 const LAUNCH_MS = Date.parse(LAUNCH_ISO);
@@ -134,11 +135,12 @@ describe('live Learn registry public publication dates', () => {
     }
   });
 
-  it('puts all live Learn URLs in the sitemap with lastModified on/before launch', () => {
+  it('puts all live Learn URLs in the sitemap with lastModified >= site v2 go-live', () => {
     const entries = buildSitemapEntries();
     const byUrl = new Map(
       entries.map((entry) => [entry.url, entry] as const),
     );
+    const siteFloor = SITE_CONTENT_RELEASED_AT.getTime();
 
     for (const article of unrevised) {
       const url = `https://novalikes.com/learn/${article.slug}`;
@@ -149,7 +151,9 @@ describe('live Learn registry public publication dates', () => {
         entry!.lastModified instanceof Date
           ? entry!.lastModified
           : new Date(entry!.lastModified as string);
-      expect(stamp.getTime(), url).toBeLessThanOrEqual(LAUNCH_MS);
+      expect(stamp.getTime(), url).toBeGreaterThanOrEqual(siteFloor);
+      // Sitemap lastmod may be floored to site v2 go-live (2026-10-30), after this
+      // block’s frozen clock (2026-08-22); do not assert against vi’s fake “now”.
       expect(
         entries.some((item) =>
           item.url.includes(`/es/learn/${article.slug}`),
@@ -223,7 +227,9 @@ describe('revised launch articles carry a truthful modified date', () => {
         entry!.lastModified instanceof Date
           ? entry!.lastModified
           : new Date(entry!.lastModified as string);
-      expect(stamp.getTime(), url).toBe(Date.parse(article.updatedAt));
+      expect(stamp.getTime(), url).toBe(
+        Math.max(Date.parse(article.updatedAt), SITE_CONTENT_RELEASED_AT.getTime()),
+      );
       expect(entries.some((item) => item.url.includes(`/es/learn/${article.slug}`))).toBe(false);
     }
   });

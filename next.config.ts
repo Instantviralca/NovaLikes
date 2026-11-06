@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  /**
+   * Next injects a trailing-slash → no-slash redirect before middleware runs, which
+   * caused legacy product/services-prices URLs to take two hops (308 then our 301/410).
+   * We strip trailing slashes in middleware after legacy handling instead.
+   */
+  skipTrailingSlashRedirect: true,
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
@@ -29,91 +35,8 @@ const nextConfig: NextConfig = {
         destination: '/buy-tiktok-followers',
         permanent: true,
       },
-      {
-        source: '/product/buy-100-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-250-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-500-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-1000-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-3000-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-5000-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-10000-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-15000-tiktok-followers',
-        destination: '/buy-tiktok-followers',
-        permanent: true,
-      },
-      {
-        source: '/instagram-services-prices',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-100-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-250-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-500-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-1000-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-2500-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-5000-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-10000-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
-      {
-        source: '/product/buy-25000-instagram-followers',
-        destination: '/buy-instagram-followers',
-        permanent: true,
-      },
+      // Legacy /product/* and *-services-prices → removed here: Next evaluates redirects
+      // before middleware, so these blocked single-hop 301/410 from lib/seo/legacy-urls.ts.
       {
         source: '/buy-facebook-likes-followers',
         destination: '/buy-facebook-followers',

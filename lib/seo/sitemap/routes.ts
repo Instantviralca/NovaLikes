@@ -32,6 +32,18 @@ import {
 } from '@/lib/seo/metadata/canonical';
 import type { IndexableRoute, SitemapChangeFrequency } from '@/types/sitemap';
 
+/** Site-wide v2 rebuild went live (design + content for all core, market and locale pages). */
+export const SITE_CONTENT_RELEASED_AT = new Date('2026-10-30T00:00:00.000Z');
+
+function maxDate(a: Date, b: Date): Date {
+  return a.getTime() >= b.getTime() ? a : b;
+}
+
+/** After parseLastModified / registry timestamps, floor to site v2 go-live. */
+function withSiteContentFloor(date: Date): Date {
+  return maxDate(date, SITE_CONTENT_RELEASED_AT);
+}
+
 function isExcludedRoute(route: string): boolean {
   const normalized = normalizeCanonicalPath(route);
   return SITEMAP_EXCLUSION_PREFIXES.some(
@@ -95,7 +107,7 @@ export function getIndexableRoutes(): IndexableRoute[] {
     result.push({
       route: normalized,
       canonicalUrl: buildCanonicalUrl(entry.canonicalPath),
-      lastModified: parseLastModified(entry.updatedAt),
+      lastModified: withSiteContentFloor(parseLastModified(entry.updatedAt)),
       changeFrequency: changeFrequencyFor(normalized, entry.pageType),
       priority: priorityFor(normalized, entry.pageType, Boolean(service?.featured)),
       pageType: entry.pageType,
@@ -123,7 +135,7 @@ export function getAuthorSitemapRoutes(): IndexableRoute[] {
   const index: IndexableRoute = {
     route: normalizeCanonicalPath(authorsIndexPath()),
     canonicalUrl: buildCanonicalUrl(authorsIndexPath()),
-    lastModified: parseLastModified(undefined),
+    lastModified: withSiteContentFloor(parseLastModified(undefined)),
     changeFrequency: 'monthly',
     priority: 0.55,
     pageType: 'learn',
@@ -133,7 +145,7 @@ export function getAuthorSitemapRoutes(): IndexableRoute[] {
   const profiles = authors.map((author) => ({
     route: normalizeCanonicalPath(authorPath(author.slug)),
     canonicalUrl: buildCanonicalUrl(author.seo.canonicalPath || authorPath(author.slug)),
-    lastModified: parseLastModified(author.joinedAt),
+    lastModified: withSiteContentFloor(parseLastModified(author.joinedAt)),
     changeFrequency: 'monthly' as SitemapChangeFrequency,
     priority: 0.5,
     pageType: 'learn' as const,
@@ -152,7 +164,7 @@ export function getTagSitemapRoutes(): IndexableRoute[] {
     .map((tag) => ({
       route: normalizeCanonicalPath(tagPath(tag.slug)),
       canonicalUrl: buildCanonicalUrl(tagPath(tag.slug)),
-      lastModified: parseLastModified(undefined),
+      lastModified: withSiteContentFloor(parseLastModified(undefined)),
       changeFrequency: 'weekly' as SitemapChangeFrequency,
       priority: 0.45,
       pageType: 'learn' as const,
@@ -171,7 +183,10 @@ export function getFutureLearnSitemapRoutes(): IndexableRoute[] {
     return {
       route: normalizeCanonicalPath(`/learn/${article.slug}`),
       canonicalUrl: buildArticleCanonical(article.slug),
-      lastModified: publicDates.sitemapLastModified,
+      lastModified:
+        publicDates.sitemapLastModified !== undefined
+          ? withSiteContentFloor(publicDates.sitemapLastModified)
+          : withSiteContentFloor(parseLastModified(undefined)),
       changeFrequency: 'monthly' as SitemapChangeFrequency,
       priority: article.featured ? 0.7 : 0.6,
       pageType: 'learn' as const,
@@ -187,7 +202,7 @@ export function getFutureLearnSitemapRoutes(): IndexableRoute[] {
       return {
         route: normalizeCanonicalPath(`/learn/${category.slug}`),
         canonicalUrl: buildCanonicalUrl(`/learn/${category.slug}`),
-        lastModified: parseLastModified(entry?.updatedAt),
+        lastModified: withSiteContentFloor(parseLastModified(entry?.updatedAt)),
         changeFrequency: 'weekly' as SitemapChangeFrequency,
         priority: 0.65,
         pageType: 'learn' as const,

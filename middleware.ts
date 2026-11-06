@@ -57,6 +57,7 @@ import {
   isAuthorCmsPath,
 } from '@/lib/cms/author-routes';
 import { getLowercasePublicRedirect } from '@/lib/seo/lowercase-public-path';
+import { legacyUrlMiddlewareResponse, publicAbsoluteUrl } from '@/lib/seo/legacy-urls';
 
 function contentLanguage(locale: string): string {
   return locale === 'pt-br' ? 'pt-BR' : locale;
@@ -71,6 +72,16 @@ function contentLanguage(locale: string): string {
  */
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const legacyResponse = legacyUrlMiddlewareResponse(request, pathname, NextResponse);
+  if (legacyResponse) return legacyResponse;
+
+  // Replace Next's internal `/:path+/` → `/:path+` redirect (skipped via skipTrailingSlashRedirect)
+  if (pathname.length > 1 && pathname.endsWith('/')) {
+    const targetPath = pathname.replace(/\/+$/, '') || '/';
+    const url = publicAbsoluteUrl(request, targetPath, request.nextUrl.search);
+    return NextResponse.redirect(url, 308);
+  }
 
   const lowercasePath = getLowercasePublicRedirect(pathname);
   if (lowercasePath) {

@@ -10,7 +10,7 @@ import { localizeHref } from '@/lib/i18n/paths';
 import { PRIMARY_MARKETS } from '@/lib/market/config';
 import { hreflangMapWithMarket, localizeMarketHref } from '@/lib/market/paths';
 import { isCoreLocalizedPath, isEnglishOnlyLearnPath } from '@/lib/i18n/config';
-import { getIndexableRoutes } from '@/lib/seo/sitemap/routes';
+import { getIndexableRoutes, SITE_CONTENT_RELEASED_AT } from '@/lib/seo/sitemap/routes';
 import { validateSitemapUrl } from '@/lib/seo/sitemap/validate-url';
 import { absoluteUrl, normalizeCanonicalPath } from '@/lib/seo/metadata/canonical';
 
@@ -55,7 +55,9 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     entries.push(entry);
   }
 
-  const localizedStamp = lastModifiedByPath.get('/') ?? new Date('2026-08-19T00:00:00.000Z');
+  const localizedStamp =
+    lastModifiedByPath.get('/') ??
+    SITE_CONTENT_RELEASED_AT;
   for (const locale of LOCALIZED_LOCALES) {
     for (const path of CORE_PATHS) {
       const localizedPath = localizeHref(path, locale);
@@ -103,11 +105,15 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     }
   }
 
-  const marketStamp = lastModifiedByPath.get('/') ?? new Date('2026-08-31T00:00:00.000Z');
+  const marketStamp =
+    lastModifiedByPath.get('/') ??
+    SITE_CONTENT_RELEASED_AT;
   for (const market of PRIMARY_MARKETS) {
     for (const corePath of ['/', ...CORE_SERVICE_SLUGS.map((slug) => `/${slug}`)] as const) {
       const marketPath = localizeMarketHref(corePath, market);
-      const englishStamp = lastModifiedByPath.get(corePath) ?? marketStamp;
+      const englishStamp =
+        lastModifiedByPath.get(corePath) ??
+        marketStamp;
       entries.push({
         url: absoluteUrl(marketPath),
         lastModified: englishStamp,
