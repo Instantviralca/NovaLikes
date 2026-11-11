@@ -17,20 +17,17 @@ describe('market metadata (SEO flag)', () => {
     expect(langs?.['en-AU']).toMatch(/\/au\/?$/);
   });
 
-  it('primary-market service pages: noindex follow and no market hreflang when MARKET_SERVICE_PAGES_INDEXABLE is false', () => {
-    expect(MARKET_SERVICE_PAGES_INDEXABLE).toBe(false);
+  it('primary-market service pages: index follow and market hreflang when MARKET_SERVICE_PAGES_INDEXABLE is true', () => {
+    expect(MARKET_SERVICE_PAGES_INDEXABLE).toBe(true);
     const m = marketServiceMetadata('uk', 'buy-instagram-followers', 'T', 'D');
     expect(m.robots).toMatchObject({
-      index: false,
+      index: true,
       follow: true,
-      googleBot: { index: false, follow: true },
+      googleBot: { index: true, follow: true },
     });
     const langs = m.alternates?.languages as Record<string, string> | undefined;
-    expect(langs?.['en-GB']).toBeUndefined();
-    expect(langs?.['en-CA']).toBeUndefined();
-    expect(langs?.['en-AU']).toBeUndefined();
-    expect(Object.keys(langs ?? {}).sort()).toEqual(
-      ['ar', 'de', 'en', 'es', 'fr', 'it', 'pt-BR', 'x-default'].sort(),
-    );
+    expect(langs?.['en-GB']).toMatch(/\/uk\/buy-instagram-followers$/);
+    expect(langs?.['en-CA']).toMatch(/\/ca\/buy-instagram-followers$/);
+    expect(langs?.['en-AU']).toMatch(/\/au\/buy-instagram-followers$/);
   });
 });

@@ -4,6 +4,7 @@
 
 import { describe, expect, it } from 'vitest';
 
+import { CORE_SERVICE_SLUGS } from '@/lib/i18n/config';
 import { PRIMARY_MARKETS } from '@/lib/market/config';
 import {
   assertSitemapPartitionComplete,
@@ -79,7 +80,7 @@ describe('Sitemap XML presentation (XSL)', () => {
     expect(partition.sum).toBe(partition.total);
     expect(partition.duplicates).toEqual([]);
     expect(partition.missing).toEqual([]);
-    const marketUrlCount = PRIMARY_MARKETS.length;
+    const marketUrlCount = PRIMARY_MARKETS.length * (1 + CORE_SERVICE_SLUGS.length);
     expect(buckets.markets).toHaveLength(marketUrlCount);
     expect(validateSitemapCanonicals(entries)).toHaveLength(0);
     expect(findOrphanSitemapPages(entries)).toHaveLength(0);
