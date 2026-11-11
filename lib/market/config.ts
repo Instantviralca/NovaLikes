@@ -16,6 +16,13 @@ export type Market = (typeof MARKETS)[number];
  */
 export const PRIMARY_MARKETS: readonly Market[] = ['uk', 'ca', 'au'];
 
+/**
+ * When false, UK/CA/AU `/buy-*` pages stay live but use `noindex, follow`, omit
+ * en-GB/en-CA/en-AU hreflang on English and localized service rows, and drop
+ * those URLs from `markets.xml` (homepages remain indexed and in the sitemap).
+ */
+export const MARKET_SERVICE_PAGES_INDEXABLE = false;
+
 /** Markets shown in the footer/region switcher (excludes redirected `/us`). */
 export const SWITCHER_MARKETS: readonly Market[] = PRIMARY_MARKETS;
 

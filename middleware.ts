@@ -19,9 +19,11 @@ import {
   isInternalGeoPath,
   isMarket,
   isMarketCorePath,
+  isPrimaryMarket,
   MARKET_HEADER,
   MARKET_HREFLANG,
   MARKET_PATH_HEADER,
+  MARKET_SERVICE_PAGES_INDEXABLE,
   type Market,
 } from '@/lib/market/config';
 import {
@@ -35,6 +37,7 @@ import {
   I18N_HEADER,
   I18N_PATH_HEADER,
   isCoreLocalizedPath,
+  isCoreServiceSlug,
   isLocalizedLocale,
 } from '@/lib/i18n/config';
 import {
@@ -150,6 +153,16 @@ export async function middleware(request: NextRequest) {
     });
     response.headers.set(MARKET_HEADER, parsedMarket.market);
     response.headers.set('content-language', MARKET_HREFLANG[parsedMarket.market as Market]);
+    const slug = parsedMarket.pathname.slice(1);
+    if (
+      !MARKET_SERVICE_PAGES_INDEXABLE &&
+      isPrimaryMarket(parsedMarket.market as Market) &&
+      parsedMarket.pathname !== '/' &&
+      parsedMarket.pathname.startsWith('/buy-') &&
+      isCoreServiceSlug(slug)
+    ) {
+      response.headers.set('x-robots-tag', 'noindex, follow');
+    }
     return response;
   }
 

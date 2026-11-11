@@ -3,11 +3,12 @@ import type { Metadata } from 'next';
 import type { CoreServiceSlug } from '@/lib/i18n/config';
 import { absoluteUrl, buildCanonicalUrl } from '@/lib/seo/metadata/canonical';
 import { buildPageMetadata } from '@/lib/seo/metadata/build';
-import { hreflangMapWithMarket, localizeMarketHref } from '@/lib/market/paths';
+import { getBareCorePath, hreflangMapWithMarket, localizeMarketHref } from '@/lib/market/paths';
 import {
   isPrimaryMarket,
   MARKET_HREFLANG,
   MARKET_OG_LOCALE,
+  MARKET_SERVICE_PAGES_INDEXABLE,
   type Market,
 } from '@/lib/market/config';
 
@@ -27,7 +28,9 @@ export function buildMarketMetadata(options: {
     ? localizeMarketHref(pathname, market)
     : pathname;
   const languages: Record<string, string> = {};
-  for (const [code, path] of Object.entries(hreflangMapWithMarket(pathname))) {
+  for (const [code, path] of Object.entries(
+    hreflangMapWithMarket(getBareCorePath(pathname)),
+  )) {
     languages[code] = absoluteUrl(path);
   }
 
@@ -39,8 +42,11 @@ export function buildMarketMetadata(options: {
     robots: { index: true, follow: true },
   });
 
+  const { alternates, ...metadataWithoutAlternates } = metadata;
+  void alternates;
+
   return {
-    ...metadata,
+    ...metadataWithoutAlternates,
     alternates: {
       canonical: buildCanonicalUrl(canonicalPath),
       languages,
@@ -63,10 +69,26 @@ export function marketServiceMetadata(
   title: string,
   description: string,
 ): Metadata {
-  return buildMarketMetadata({
+  const base = buildMarketMetadata({
     market,
     pathname: `/${slug}`,
     title,
     description,
   });
+  const noindexMarketService =
+    isPrimaryMarket(market) && !MARKET_SERVICE_PAGES_INDEXABLE;
+  if (!noindexMarketService) {
+    return base;
+  }
+  return {
+    ...base,
+    robots: {
+      index: false,
+      follow: true,
+      googleBot: {
+        index: false,
+        follow: true,
+      },
+    },
+  };
 }

@@ -10,7 +10,7 @@ import {
   type Locale,
 } from '@/lib/i18n/config';
 import { localizeHref } from '@/lib/i18n/paths';
-import { hreflangMapWithMarket } from '@/lib/market/paths';
+import { getBareCorePath, hreflangMapWithMarket } from '@/lib/market/paths';
 import { absoluteUrl, buildCanonicalUrl } from '@/lib/seo/metadata/canonical';
 import { buildPageMetadata } from '@/lib/seo/metadata/build';
 import type { Metadata } from 'next';
@@ -148,7 +148,7 @@ export function buildLocaleMetadata(options: {
   const { locale, pathname, title, description } = options;
   const canonicalPath = localizeHref(pathname, locale);
   const languages: Record<string, string> = {};
-  const hrefs = hreflangMapWithMarket(pathname);
+  const hrefs = hreflangMapWithMarket(getBareCorePath(pathname));
   for (const [code, path] of Object.entries(hrefs)) {
     languages[code] = absoluteUrl(path);
   }
@@ -161,8 +161,11 @@ export function buildLocaleMetadata(options: {
     robots: { index: true, follow: true },
   });
 
+  const { alternates, ...metadataWithoutAlternates } = metadata;
+  void alternates;
+
   return {
-    ...metadata,
+    ...metadataWithoutAlternates,
     alternates: {
       canonical: buildCanonicalUrl(canonicalPath),
       languages,
@@ -181,7 +184,7 @@ export function buildLocaleMetadata(options: {
 
 export function hreflangLanguages(pathname: string): Record<string, string> {
   const languages: Record<string, string> = {};
-  for (const [code, path] of Object.entries(hreflangMapWithMarket(pathname))) {
+  for (const [code, path] of Object.entries(hreflangMapWithMarket(getBareCorePath(pathname)))) {
     languages[code] = absoluteUrl(path);
   }
   return languages;

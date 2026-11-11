@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 import { seoSiteConfig } from '@/config/seo';
 import { isApprovedServiceSlug } from '@/data/linking/approved-services';
 import { isCoreLocalizedPath, isEnglishOnlyLearnPath } from '@/lib/i18n/config';
-import { hreflangMapWithMarket } from '@/lib/market/paths';
+import { getBareCorePath, hreflangMapWithMarket } from '@/lib/market/paths';
 import {
   absoluteUrl,
   buildCanonicalUrl,
@@ -22,8 +22,10 @@ import type { MetadataEntry, SeoRobotsPolicy } from '@/types/seo-metadata';
 
 function alternateLanguages(path: string): Record<string, string> | undefined {
   if (!isCoreLocalizedPath(path) || isEnglishOnlyLearnPath(path)) return undefined;
+  /** Strip `/uk`, `/ca`, etc. so service hreflang keys match unprefixed English slugs. */
+  const bareForHreflang = getBareCorePath(path);
   const languages: Record<string, string> = {};
-  for (const [code, href] of Object.entries(hreflangMapWithMarket(path))) {
+  for (const [code, href] of Object.entries(hreflangMapWithMarket(bareForHreflang))) {
     languages[code] = absoluteUrl(href);
   }
   return languages;

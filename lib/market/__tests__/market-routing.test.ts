@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { CORE_SERVICE_SLUGS } from '@/lib/i18n/config';
 import { hreflangMapWithMarket, localizeMarketHref, marketSwitcherHref } from '@/lib/market/paths';
-import { MARKETS } from '@/lib/market/config';
+import { MARKETS, MARKET_SERVICE_PAGES_INDEXABLE } from '@/lib/market/config';
 
 describe('Geo market routing', () => {
   it('maps core service paths to market-prefixed equivalents', () => {
@@ -31,14 +31,25 @@ describe('Geo market routing', () => {
     expect(marketSwitcherHref('/about', 'uk')).toBe('/about');
   });
 
-  it('includes primary-market en-GB/en-CA/en-AU (not en-US) in hreflang for market-eligible paths', () => {
+  it('includes primary-market en-GB/en-CA/en-AU (not en-US) in hreflang for homepage; service rows follow MARKET_SERVICE_PAGES_INDEXABLE', () => {
     const serviceMap = hreflangMapWithMarket('/buy-instagram-followers');
-    expect(serviceMap['en-GB']).toBe('/uk/buy-instagram-followers');
-    expect(serviceMap['en-CA']).toBe('/ca/buy-instagram-followers');
-    expect(serviceMap['en-AU']).toBe('/au/buy-instagram-followers');
+    if (MARKET_SERVICE_PAGES_INDEXABLE) {
+      expect(serviceMap['en-GB']).toBe('/uk/buy-instagram-followers');
+      expect(serviceMap['en-CA']).toBe('/ca/buy-instagram-followers');
+      expect(serviceMap['en-AU']).toBe('/au/buy-instagram-followers');
+    } else {
+      expect(serviceMap['en-GB']).toBeUndefined();
+      expect(serviceMap['en-CA']).toBeUndefined();
+      expect(serviceMap['en-AU']).toBeUndefined();
+    }
     expect(serviceMap['en-US']).toBeUndefined();
     expect(serviceMap.en).toBe('/buy-instagram-followers');
     expect(serviceMap['x-default']).toBe('/buy-instagram-followers');
+
+    const homeMap = hreflangMapWithMarket('/');
+    expect(homeMap['en-GB']).toBe('/uk/');
+    expect(homeMap['en-CA']).toBe('/ca/');
+    expect(homeMap['en-AU']).toBe('/au/');
 
     const aboutMap = hreflangMapWithMarket('/about');
     expect(aboutMap['en-CA']).toBeUndefined();
