@@ -55,8 +55,13 @@ export async function markOrderPaymentStatus(input: {
   }
 
   const now = new Date().toISOString();
+  const becamePaid = input.status === 'paid' && existing.payment?.status !== 'paid';
+  // Paid orders skip the manual "pending" step and go straight to processing.
+  // No extra customer email: the payment_confirmed email below covers it.
+  const moveToProcessing = becamePaid && existing.status === 'pending';
   const updated: Order = {
     ...existing,
+    status: moveToProcessing ? 'processing' : existing.status,
     payment: {
       provider: existing.payment?.provider ?? 'remote-payment',
       paymentId: input.paymentId,
@@ -64,27 +69,42 @@ export async function markOrderPaymentStatus(input: {
       amount: existing.total,
       paidAt: input.status === 'paid' ? now : existing.payment?.paidAt,
     },
-    timeline:
-      input.status === 'paid' && existing.payment?.status !== 'paid'
-        ? [
-            ...existing.timeline,
-            {
-              id: `evt_${existing.id}_paid_${Date.now()}`,
-              orderId: existing.id,
-              type: 'payment_confirmed',
-              message: 'Payment verified.',
-              publicMessage: 'Payment confirmed. Your order is awaiting fulfilment.',
-              updatedBy: { type: 'system', id: 'payments' },
-              at: now,
-            },
-          ]
-        : existing.timeline,
+    timeline: becamePaid
+      ? [
+          ...existing.timeline,
+          {
+            id: `evt_${existing.id}_paid_${Date.now()}`,
+            orderId: existing.id,
+            type: 'payment_confirmed',
+            message: 'Payment verified.',
+            publicMessage: 'Payment confirmed. Your order is being processed.',
+            updatedBy: { type: 'system', id: 'payments' },
+            at: now,
+          },
+          ...(moveToProcessing
+            ? [
+                {
+                  id: `evt_${existing.id}_processing_${Date.now()}`,
+                  orderId: existing.id,
+                  type: 'status_changed' as const,
+                  previousStatus: 'pending' as const,
+                  newStatus: 'processing' as const,
+                  status: 'processing' as const,
+                  message: 'Status updated to processing after payment.',
+                  publicMessage: 'Order status updated to processing.',
+                  updatedBy: { type: 'system' as const, id: 'payments' },
+                  at: now,
+                },
+              ]
+            : []),
+        ]
+      : existing.timeline,
     updatedAt: now,
   };
 
   const saved = await saveOrder(updated);
 
-  if (input.status === 'paid' && existing.payment?.status !== 'paid') {
+  if (becamePaid) {
     try {
       await notifyOrderPaid(saved);
     } catch (error) {
