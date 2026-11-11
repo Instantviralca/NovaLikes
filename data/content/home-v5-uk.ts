@@ -327,7 +327,7 @@ export const HOME_V5_UK = {
       {
         title: 'A UK company, not an anonymous website',
         icon: 'building',
-        body: 'NovaLikes is run by DMRUSH LIMITED, registered in Scotland (company no. SC876437) at 1/4 22 Dundasvale Court, Glasgow. The team has handled social media orders for 7–8 years, first as ViralMe and now as NovaLikes.',
+        body: 'NovaLikes is run by THE HOUSE OF VEYNOR LTD, registered in England and Wales (company no. 17561169) at Office 2236, 85 Dunstall Hill, Wolverhampton. The team has handled social media orders for 7–8 years, first as ViralMe and now as NovaLikes.',
       },
       {
         title: 'Honest about what each service does',

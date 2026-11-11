@@ -38,7 +38,7 @@ Eligible orders are covered by the NovaLikes 30-Day Money-Back Guarantee accordi
 
 ## Key Facts
 
-- Operator: DMRUSH LIMITED, registered in Scotland (Company No. SC876437), 1/4 22 Dundasvale Court, Glasgow, G4 0XE.
+- Operator: THE HOUSE OF VEYNOR LTD, registered in England and Wales (Company No. 17561169), Office 2236, 85 Dunstall Hill, Wolverhampton, WV6 0SR.
 - History: NovaLikes was previously ViralMe, which ran for more than four years; the team has provided social media growth services for 7–8 years.
 - Delivery: most orders start within 6–8 hours of payment and are usually completed within 4–6 hours after they start. Gradual delivery is available on request.
 - Refill: every service includes a 6-month refill from the date the order is delivered, requested via WhatsApp with the order ID.

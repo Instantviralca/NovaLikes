@@ -160,12 +160,15 @@ describe('Organization schema entity signals', () => {
       'https://www.tumblr.com/novalikess',
     ]);
     expect(schema).not.toHaveProperty('aggregateRating');
-    // Verified operator details (DMRUSH LIMITED, Companies House SC876437).
-    expect(schema.legalName).toBe('DMRUSH LIMITED');
+    // Verified operator details (THE HOUSE OF VEYNOR LTD, Companies House 17561169).
+    expect(schema.legalName).toBe('THE HOUSE OF VEYNOR LTD');
     expect(schema.telephone).toBe('+447454758272');
     expect(schema.address).toMatchObject({
       '@type': 'PostalAddress',
-      postalCode: 'G4 0XE',
+      streetAddress: 'Office 2236, 85 Dunstall Hill',
+      addressLocality: 'Wolverhampton',
+      addressRegion: 'England',
+      postalCode: 'WV6 0SR',
       addressCountry: 'GB',
     });
     expect(schema).not.toHaveProperty('areaServed');

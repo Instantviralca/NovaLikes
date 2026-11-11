@@ -332,7 +332,7 @@ export const HOME_V5_IT = {
       {
         title: 'Un’azienda vera e raggiungibile',
         icon: 'building',
-        body: 'NovaLikes è gestito da DMRUSH LIMITED, società registrata in Scozia (n. SC876437). Il team gestisce ordini social da 7–8 anni, prima come ViralMe e oggi come NovaLikes, e risponde su WhatsApp (+44 7454 758272) a qualsiasi ora.',
+        body: 'NovaLikes è gestito da THE HOUSE OF VEYNOR LTD, società registrata in Inghilterra e Galles (n. 17561169). Il team gestisce ordini social da 7–8 anni, prima come ViralMe e oggi come NovaLikes, e risponde su WhatsApp (+44 7454 758272) a qualsiasi ora.',
       },
     ],
   },

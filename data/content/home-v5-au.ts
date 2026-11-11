@@ -326,7 +326,7 @@ export const HOME_V5_AU = {
       {
         title: 'Someone to talk to, any hour',
         icon: 'message-circle',
-        body: 'AWST or AEDT, our team is on WhatsApp 24/7. NovaLikes is operated by DMRUSH LIMITED (company no. SC876437), and the team has looked after social media orders for 7–8 years, first under the ViralMe name.',
+        body: 'AWST or AEDT, our team is on WhatsApp 24/7. NovaLikes is operated by THE HOUSE OF VEYNOR LTD (company no. 17561169), and the team has looked after social media orders for 7–8 years, first under the ViralMe name.',
       },
       {
         title: 'Upfront about what you get',

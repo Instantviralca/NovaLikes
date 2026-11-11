@@ -326,7 +326,7 @@ export const HOME_V5_CA = {
       {
         title: 'Support that keeps your hours',
         icon: 'message-circle',
-        body: 'Pacific, Mountain, Central, Eastern or Atlantic, our team answers WhatsApp 24/7. NovaLikes is operated by DMRUSH LIMITED (company no. SC876437), and the team has handled social media orders for 7–8 years, first as ViralMe.',
+        body: 'Pacific, Mountain, Central, Eastern or Atlantic, our team answers WhatsApp 24/7. NovaLikes is operated by THE HOUSE OF VEYNOR LTD (company no. 17561169), and the team has handled social media orders for 7–8 years, first as ViralMe.',
       },
       {
         title: 'Clear about what you are buying',

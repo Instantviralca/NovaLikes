@@ -52,13 +52,13 @@ export const aboutContent: AboutPageContent = {
     title: 'Our Story',
     description: 'A clearer way to buy social media growth services.',
     purpose: 'Share company journey without unverifiable historical claims',
-    body: 'Our team has provided social media growth services for 7–8 years. We started on earlier sites, then ran ViralMe for more than four years before rebuilding it as NovaLikes in 2026 — with clearer packages, password-free ordering, order tracking and a Learn Center that explains how platform metrics really work.\n\nNovaLikes is operated by DMRUSH LIMITED, a company registered in Scotland (Company No. SC876437), with its registered office at 1/4 22 Dundasvale Court, Glasgow, G4 0XE.',
+    body: 'Our team has provided social media growth services for 7–8 years. We started on earlier sites, then ran ViralMe for more than four years before rebuilding it as NovaLikes in 2026 — with clearer packages, password-free ordering, order tracking and a Learn Center that explains how platform metrics really work.\n\nNovaLikes is operated by THE HOUSE OF VEYNOR LTD, a company registered in England and Wales (Company No. 17561169), with its registered office at Office 2236, 85 Dunstall Hill, Wolverhampton, England, WV6 0SR.',
   },
   mission: {
     id: 'our-mission',
     title: 'Helping You Grow. The Right Way.',
     description:
-      'Our mission is to make social media growth simple and honest: choose a service, add a public username or link, and track your order — no passwords and no hidden steps. Most orders start within 6–8 hours and are usually completed within 4–6 hours after they start, and you can ask for gradual delivery if you prefer a slower pace.\n\nNovaLikes is operated by DMRUSH LIMITED, registered in Scotland (Company No. SC876437), 1/4 22 Dundasvale Court, Glasgow, G4 0XE. Our services and Learn Center guides are overseen by Najaf Khan, our Social Media Growth Expert. For help with an order, email support@novalikes.com or message us on WhatsApp at +44 7454 758272.',
+      'Our mission is to make social media growth simple and honest: choose a service, add a public username or link, and track your order — no passwords and no hidden steps. Most orders start within 6–8 hours and are usually completed within 4–6 hours after they start, and you can ask for gradual delivery if you prefer a slower pace.\n\nNovaLikes is operated by THE HOUSE OF VEYNOR LTD, registered in England and Wales (Company No. 17561169), Office 2236, 85 Dunstall Hill, Wolverhampton, WV6 0SR. Our services and Learn Center guides are overseen by Najaf Khan, our Social Media Growth Expert. For help with an order, email support@novalikes.com or message us on WhatsApp at +44 7454 758272.',
     purpose: 'Communicate the NovaLikes mission',
     items: [],
   },

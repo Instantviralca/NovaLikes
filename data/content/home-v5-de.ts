@@ -339,7 +339,7 @@ export const HOME_V5_DE = {
       {
         title: 'Ein echtes, erreichbares Unternehmen',
         icon: 'building',
-        body: 'NovaLikes wird von der DMRUSH LIMITED betrieben, einem in Schottland registrierten Unternehmen (Nr. SC876437). Das Team bearbeitet seit 7–8 Jahren Social-Media-Bestellungen, zuerst als ViralMe und heute als NovaLikes, und ist auf WhatsApp (+44 7454 758272) rund um die Uhr erreichbar.',
+        body: 'NovaLikes wird von THE HOUSE OF VEYNOR LTD betrieben, einem in England und Wales registrierten Unternehmen (Nr. 17561169). Das Team bearbeitet seit 7–8 Jahren Social-Media-Bestellungen, zuerst als ViralMe und heute als NovaLikes, und ist auf WhatsApp (+44 7454 758272) rund um die Uhr erreichbar.',
       },
     ],
   },

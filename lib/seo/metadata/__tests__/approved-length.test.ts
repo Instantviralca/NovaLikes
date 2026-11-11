@@ -155,11 +155,11 @@ describe('Approved static SEO metadata', () => {
     expect(websiteSchema()).not.toHaveProperty('potentialAction');
     expect(website).not.toContain('searchaction');
     expect(org).not.toContain('aggregaterating');
-    // Verified operator details (DMRUSH LIMITED, Companies House SC876437).
+    // Verified operator details (THE HOUSE OF VEYNOR LTD, Companies House 17561169).
     // `org` is lower-cased above.
-    expect(org).toContain('"legalname":"dmrush limited"');
+    expect(org).toContain('"legalname":"the house of veynor ltd"');
     expect(org).toContain('"telephone":"+447454758272"');
-    expect(org).toContain('"postalcode":"g4 0xe"');
+    expect(org).toContain('"postalcode":"wv6 0sr"');
 
     for (const slug of APPROVED_SERVICE_SLUGS) {
       const service = getServiceBySlug(slug)!;

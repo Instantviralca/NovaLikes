@@ -332,7 +332,7 @@ export const HOME_V5_PT_BR = {
       {
         title: 'Uma empresa real e fácil de contatar',
         icon: 'building',
-        body: 'A NovaLikes é operada pela DMRUSH LIMITED, empresa registrada na Escócia (nº SC876437). A equipe cuida de pedidos para redes sociais há 7–8 anos, primeiro como ViralMe e agora como NovaLikes, e responde no WhatsApp (+44 7454 758272) a qualquer hora.',
+        body: 'A NovaLikes é operada pela THE HOUSE OF VEYNOR LTD, empresa registrada na Inglaterra e no País de Gales (nº 17561169). A equipe cuida de pedidos para redes sociais há 7–8 anos, primeiro como ViralMe e agora como NovaLikes, e responde no WhatsApp (+44 7454 758272) a qualquer hora.',
       },
     ],
   },

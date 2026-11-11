@@ -91,7 +91,7 @@ export const UK_BUY_FACEBOOK_POST_LIKES_V2 = {
         icon: 'building',
         tone: 'sun',
         title: 'A UK company behind every order',
-        body: 'NovaLikes is run by DMRUSH LIMITED, registered in Scotland (company no. SC876437), with a UK WhatsApp number you can message any time.',
+        body: 'NovaLikes is run by THE HOUSE OF VEYNOR LTD, registered in England and Wales (company no. 17561169), with a UK WhatsApp number you can message any time.',
       },
       {
         icon: 'clock',

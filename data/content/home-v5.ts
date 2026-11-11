@@ -338,7 +338,7 @@ export const HOME_V5 = {
       },
       {
         "title": "A real company you can reach",
-        "body": "NovaLikes is operated by DMRUSH LIMITED, a company registered in Scotland (No. SC876437). The team has handled social media orders for 7–8 years, first as ViralMe and now as NovaLikes, and you can message us on WhatsApp (+44 7454 758272) at any hour.",
+        "body": "NovaLikes is operated by THE HOUSE OF VEYNOR LTD, a company registered in England and Wales (No. 17561169). The team has handled social media orders for 7–8 years, first as ViralMe and now as NovaLikes, and you can message us on WhatsApp (+44 7454 758272) at any hour.",
         "icon": "building"
       }
     ]

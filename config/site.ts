@@ -11,17 +11,17 @@ export const site = {
   supportEmail: 'support@novalikes.com',
   /** Public WhatsApp chat (E.164 without +). Opens wa.me in a new tab. */
   whatsappNumber: '447454758272',
-  /** Legal entity that operates NovaLikes (Companies House, Scotland). */
+  /** Legal entity that operates NovaLikes (Companies House, England and Wales). */
   company: {
-    legalName: 'DMRUSH LIMITED',
-    companyNumber: 'SC876437',
-    registeredIn: 'Scotland',
-    streetAddress: '1/4 22 Dundasvale Court',
-    addressLocality: 'Glasgow',
-    addressRegion: 'Scotland',
-    postalCode: 'G4 0XE',
+    legalName: 'THE HOUSE OF VEYNOR LTD',
+    companyNumber: '17561169',
+    registeredIn: 'England and Wales',
+    streetAddress: 'Office 2236, 85 Dunstall Hill',
+    addressLocality: 'Wolverhampton',
+    addressRegion: 'England',
+    postalCode: 'WV6 0SR',
     addressCountry: 'GB',
-    addressDisplay: '1/4 22 Dundasvale Court, Glasgow, Scotland, G4 0XE',
+    addressDisplay: 'Office 2236, 85 Dunstall Hill, Wolverhampton, England, WV6 0SR',
     phoneE164: '+447454758272',
     phoneDisplay: '+44 7454 758272',
     /** NovaLikes was previously operated under the ViralMe brand. */

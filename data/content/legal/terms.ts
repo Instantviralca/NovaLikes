@@ -133,7 +133,7 @@ function buildSections(config: TermsConfig): LegalPolicySection[] {
         },
         {
           type: 'paragraph',
-          text: `${operatingName} is operated by DMRUSH LIMITED, a company registered in Scotland (Company No. SC876437), with its registered office at 1/4 22 Dundasvale Court, Glasgow, Scotland, G4 0XE.`,
+          text: `${operatingName} is operated by THE HOUSE OF VEYNOR LTD, a company registered in England and Wales (Company No. 17561169), with its registered office at Office 2236, 85 Dunstall Hill, Wolverhampton, England, WV6 0SR.`,
         },
         {
           type: 'paragraph',

@@ -12,7 +12,7 @@ export const NAJAF_KHAN: AuthorRecord = {
   slug: 'najaf-khan',
   name: 'Najaf Khan',
   role: 'Social Media Growth Expert at NovaLikes',
-  bio: 'Najaf Khan is a Social Media Growth Expert at NovaLikes and an SEO specialist who has handled Instagram, TikTok and Facebook growth services for 7–8 years. He works with DMRUSH LIMITED, the company that operates NovaLikes, and has worked with major brands and several public figures on growing their social media presence; client names are kept confidential out of respect for their privacy. He writes the Learn Center guides on content, growth and how platform metrics actually work.',
+  bio: 'Najaf Khan is a Social Media Growth Expert at NovaLikes and an SEO specialist who has handled Instagram, TikTok and Facebook growth services for 7–8 years. He works with THE HOUSE OF VEYNOR LTD, the company that operates NovaLikes, and has worked with major brands and several public figures on growing their social media presence; client names are kept confidential out of respect for their privacy. He writes the Learn Center guides on content, growth and how platform metrics actually work.',
   avatar: AVATAR,
   website: 'https://vocal.media/authors/najaf-khan-4n16on01ig',
   socialLinks: {
