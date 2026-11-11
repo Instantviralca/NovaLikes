@@ -241,7 +241,7 @@ export const DE_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 Monate',
         title: '6 Monate Nachfüllung',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'Wenn Follower aus Ihrer Bestellung innerhalb von 6 Monaten nach dem Liefertermin zurückgehen, schreiben Sie uns per WhatsApp oder E-Mail mit Ihrer Bestellnummer, und wir füllen die Differenz kostenlos auf. Behalten Sie denselben Benutzernamen und lassen Sie das Profil öffentlich, während eine Nachfüllung geliefert wird.',
       },
       {

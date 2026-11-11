@@ -240,7 +240,7 @@ export const FR_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 mois',
         title: 'Refill de 6 mois',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'Si les abonnés de votre commande baissent dans les 6 mois suivant la date de livraison, écrivez-nous sur WhatsApp ou par e-mail avec votre numéro de commande et nous comblons la différence gratuitement. Gardez le même nom d’utilisateur et un profil public pendant la livraison d’un refill.',
       },
       {

@@ -241,7 +241,7 @@ export const CA_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 months',
         title: 'Six months of refills',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'Lost some followers in the six months after delivery? Send your order ID by WhatsApp or email and we make up the difference for free. Your username needs to stay the same, and the profile public, while a refill is on its way.',
       },
       {

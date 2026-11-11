@@ -241,7 +241,7 @@ export const AU_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 months',
         title: 'Half a year of refills',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'Should followers from your order drop within six months of delivery, send the order ID on WhatsApp or by email and we replace what was lost, free. Leave the username as it is, and the profile public, while a refill comes through.',
       },
       {

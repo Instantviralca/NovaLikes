@@ -240,7 +240,7 @@ export const AR_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 أشهر',
         title: 'إعادة تعبئة لمدة 6 أشهر',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'إذا انخفض عدد المتابعين في طلبك خلال 6 أشهر من تاريخ التسليم، راسلنا على واتساب أو بالبريد الإلكتروني برقم الطلب ونعوّض الفرق مجانًا. حافظ على اسم المستخدم نفسه وعلى الحساب عامًا أثناء تسليم إعادة التعبئة.',
       },
       {

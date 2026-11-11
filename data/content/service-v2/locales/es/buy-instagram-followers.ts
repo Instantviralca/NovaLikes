@@ -240,7 +240,7 @@ export const ES_BUY_INSTAGRAM_FOLLOWERS_V2 = {
       {
         chip: '6 meses',
         title: '6 meses de reposición',
-        image: '/assets/images/illustrations/instagram-followers/instagram-followers-order-process.webp',
+        image: '/assets/images/illustrations/instagram-followers/instagram-followers-buying-process.webp',
         body: 'Si los seguidores de tu pedido bajan en los 6 meses posteriores a la fecha de entrega, escríbenos por WhatsApp o email con tu número de pedido y reponemos la diferencia sin coste. Mantén el mismo nombre de usuario y el perfil público mientras se entrega una reposición.',
       },
       {
