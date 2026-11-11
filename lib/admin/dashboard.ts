@@ -24,6 +24,9 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
 
   const pending = orders.filter((o) => o.status === 'pending');
   const processing = orders.filter((o) => o.status === 'processing');
+  const toFulfil = orders
+    .filter((o) => o.status === 'pending' || o.status === 'processing')
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   const completedToday = orders.filter(
     (o) => o.status === 'completed' && o.updatedAt.startsWith(todayKey),
   );
@@ -58,7 +61,7 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
 
   return {
     greeting: 'Welcome back.',
-    pendingReviewCount: pending.length,
+    pendingReviewCount: toFulfil.length,
     dateLabel: today.toLocaleDateString(undefined, {
       weekday: 'long',
       year: 'numeric',
@@ -84,7 +87,7 @@ export async function getDashboardViewModel(): Promise<DashboardViewModel> {
       { id: 'settings', label: 'Site Settings', href: '/admin/settings' },
     ],
     recentOrders: orders.slice(0, 5).map(toOrderRow),
-    pendingOrders: pending.slice(0, 5).map(toOrderRow),
+    pendingOrders: toFulfil.slice(0, 5).map(toOrderRow),
     activity: orders.slice(0, 8).map((o) => ({
       id: o.id,
       message: `Order ${getCustomerOrderId(o)} · ${o.status}`,

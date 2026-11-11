@@ -12,7 +12,7 @@ type PendingOrdersWidgetProps = {
 
 export function PendingOrdersWidget({ orders, loading }: PendingOrdersWidgetProps) {
   return (
-    <AdminCard title="Pending orders" description="Orders waiting for manual review">
+    <AdminCard title="Orders to fulfil" description="Orders waiting for manual review">
       {loading ? (
         <div className="space-y-2" aria-busy="true">
           {Array.from({ length: 3 }).map((_, i) => (
@@ -21,8 +21,7 @@ export function PendingOrdersWidget({ orders, loading }: PendingOrdersWidgetProp
         </div>
       ) : orders.length === 0 ? (
         <AdminEmptyState
-          title="No pending orders"
-          description="New paid orders will show here for review."
+          title="New paid orders will show here until they are completed."
         />
       ) : (
         <ul className="space-y-3">

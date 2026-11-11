@@ -16,8 +16,9 @@ export function WelcomeBanner({
       <p className="text-sm text-muted-foreground">{dateLabel}</p>
       <h2 className="mt-1 text-xl font-semibold">{greeting}</h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        You have {pendingReviewCount} order{pendingReviewCount === 1 ? '' : 's'} waiting for
-        review.
+        {pendingReviewCount === 1
+          ? '1 paid order waiting to be completed.'
+          : `${pendingReviewCount} paid orders waiting to be completed.`}
       </p>
     </section>
   );
