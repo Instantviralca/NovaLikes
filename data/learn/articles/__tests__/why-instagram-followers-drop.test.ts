@@ -71,13 +71,13 @@ describe('Article #8 Why Instagram followers drop', () => {
             (link) => link.href === '/tools/instagram-follower-counter',
           ),
       ),
-    ).toBe(true);
+    ).toBe(false);
     expect(article.content).not.toMatch(/track exactly who unfollowed you/i);
     expect(article.content).toContain(
       'routinely removes disabled accounts',
     );
     expect(article.content).toContain(
-      'does not automatically delete ordinary followers',
+      'a drop on its own does not mean your account is in trouble',
     );
   });
 

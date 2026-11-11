@@ -144,8 +144,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lk-3',
-    'TikTok explicitly includes liking content among the user interactions that can help personalize recommendation experiences. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'TikTok explicitly includes liking content among the user interactions that can help personalize recommendation experiences.',
   ),
   paragraph(
     'p-lk-5',
@@ -236,8 +235,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rt-5',
-    'TikTok does not publish one universal Like-to-View percentage creators must hit to receive recommendation distribution. Its recommendation systems use multiple signals. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'TikTok does not publish one universal Like-to-View percentage creators must hit to receive recommendation distribution. Its recommendation systems use multiple signals.',
   ),
 
   heading('h-good-ratio', 'What Is a Good TikTok Like-to-View Ratio?', 2),
@@ -315,8 +313,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ml-2',
-    "TikTok says recommendations can be influenced by user interactions such as Likes, follows, shares, comments and watch behaviour, alongside content and user information. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    "TikTok says recommendations can be influenced by user interactions such as Likes, follows, shares, comments and watch behaviour, alongside content and user information.",
   ),
   paragraph(
     'p-ml-5',
@@ -326,8 +323,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-fyp-likes', 'Do Likes Matter for the For You Feed?', 2),
   paragraph(
     'p-fl-1',
-    'TikTok says user interactions influence recommendation systems, and explicitly includes actions such as following accounts, liking posts, sharing, commenting, watching content fully or skipping. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'TikTok says user interactions influence recommendation systems, and explicitly includes actions such as following accounts, liking posts, sharing, commenting, watching content fully or skipping.',
   ),
   paragraph(
     'p-fl-4',
@@ -345,8 +341,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wl-3',
-    'TikTok does say that for many recommendation contexts, user interactions such as watch time, full watches, skips, Likes and comments can influence ranking, and certain interaction signals may generally weigh more heavily than other categories. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'TikTok does say that for many recommendation contexts, user interactions such as watch time, full watches, skips, Likes and comments can influence ranking, and certain interaction signals may generally weigh more heavily than other categories.',
   ),
 
   heading('h-growth', 'Likes vs Views for TikTok Growth', 2),
@@ -372,8 +367,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-search', 'Likes vs Views for TikTok Search', 2),
   paragraph(
     'p-se-2',
-    "TikTok's current Search recommendation documentation says Search results can be influenced by how well content matches the query, hashtags, sounds, past user search behaviour and other user or content information. For many users, TikTok says content information — including how well content matches the search term — generally weighs heavily in Search. (TikTok Support)",
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    "TikTok's current Search recommendation documentation says Search results can be influenced by how well content matches the query, hashtags, sounds, past user search behaviour and other user or content information. For many users, TikTok says content information, including how well content matches the search term, generally weighs heavily in Search.",
   ),
   paragraph(
     'p-se-4',
@@ -545,17 +539,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-pt-5',
     'The video may need improvement, but do not diagnose it from those two metrics alone. Check Search, watch behaviour, comments, shares and audience context.',
   ),
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Views measure visibility; Likes measure one kind of interaction.',
-    'A like-to-view ratio is Likes divided by Views, multiplied by 100. TikTok publishes no good or bad number.',
-    'A good ratio is one above your own recent baseline, not a fixed internet figure.',
-    'TikTok recommendation systems use multiple signals, so neither metric controls the For You feed on its own.',
-    'More Views do not guarantee more Likes, and more Likes do not guarantee more Views or followers.',
-    'Creator Rewards pays on qualified views; engagement, including likes, is one factor in the rate.',
-    "Bought likes or views break TikTok's rules on fake engagement and do not grow the other metric.",
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

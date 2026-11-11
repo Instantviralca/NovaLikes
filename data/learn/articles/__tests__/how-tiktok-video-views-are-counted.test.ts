@@ -63,10 +63,10 @@ describe('Article #10 How TikTok video views are counted', () => {
       article.blocks.some((block) => block.type === 'comparison_table'),
     ).toBe(true);
     expect(article.content).toContain(
-      'Public video views ≠ automatically qualified Creator Rewards views',
+      'The public counter, the figures in TikTok Studio and the qualified views used for Creator Rewards are not calculated the same way.',
     );
     expect(article.content).toContain(
-      'does not provide a complete ordinary-view counting formula',
+      'What TikTok does not publish is a precise rule for the public counter.',
     );
     expect(
       article.blocks.some(
@@ -78,7 +78,7 @@ describe('Article #10 How TikTok video views are counted', () => {
               link.label === 'TikTok Video Downloader',
           ),
       ),
-    ).toBe(true);
+    ).toBe(false);
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

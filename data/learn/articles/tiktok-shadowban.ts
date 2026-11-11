@@ -151,8 +151,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-how-long', 'How Long Does a TikTok Shadowban Last?', 2),
   paragraph(
     'p-long-1',
-    'TikTok gives no fixed time. It says it may restore an account to good standing automatically at any time, depending on how much of the account’s content is unsuitable. (TikTok Support)',
-    [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
+    'TikTok gives no fixed time. It says it may restore an account to good standing automatically at any time, depending on how much of the account’s content is unsuitable.',
   ),
   paragraph(
     'p-long-2',

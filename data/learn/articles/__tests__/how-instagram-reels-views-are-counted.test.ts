@@ -66,9 +66,11 @@ describe('Article #11 How Instagram Reels views are counted', () => {
     ).toBe(true);
     expect(article.content).toContain('starts to play or replay');
     expect(article.content).toContain(
-      'Views can be higher than Accounts reached because total playback',
+      'Views measure playback. Reach measures people.',
     );
-    expect(article.content).toContain('So there is no published rule like:');
+    expect(article.content).toContain(
+      'There is no published percentage that unlocks Explore or wider recommendations',
+    );
     expect(
       article.blocks.some(
         (block) =>

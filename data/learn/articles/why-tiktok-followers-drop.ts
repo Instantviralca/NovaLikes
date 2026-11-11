@@ -24,28 +24,10 @@ const TT_FOLLOW_UNFOLLOW =
   'https://support.tiktok.com/en/using-tiktok/followers-and-following/following-and-unfollowing';
 const TT_ACCOUNT_TYPES =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/switching-to-a-creator-or-business-account';
-const TT_INACTIVE =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/inactive-account-policy';
-const TT_ACCOUNT_STATUS =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-status';
-const TT_NOT_RECOMMENDED =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/why-is-my-account-not-being-recommended';
 const TT_RECOMMENDS =
   'https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content';
-const TT_REMOVE_FOLLOWERS =
-  'https://support.tiktok.com/en/using-tiktok/followers-and-following/removing-followers';
-const TT_FOLLOWERS_FOLLOWING =
-  'https://support.tiktok.com/en/using-tiktok/followers-and-following';
-const TT_PRIVATE =
-  'https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/making-your-account-public-or-private';
-const TT_CREATOR_REWARDS =
-  'https://support.tiktok.com/en/business-and-creator/creator-rewards-program/creator-rewards-program';
-const TT_THIRD_PARTY =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/connect-to-third-party-apps';
 const TT_SEARCH_INSIGHTS =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/creator-search-insights';
-const TT_REPORT_PROBLEM =
-  'https://support.tiktok.com/en/using-tiktok/report-a-problem/report-a-problem';
 const TT_GROW_AUDIENCE =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/how-to-grow-your-audience';
 
@@ -124,8 +106,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-1', 'Are People Simply Unfollowing You?', 2),
   paragraph(
     'p-1-3',
-    "This is the most direct cause. A user can open your profile and tap the Following button to unfollow, so follower counts naturally move in both directions without any bug or penalty. (TikTok Support)",
-    [{ href: TT_FOLLOW_UNFOLLOW, label: 'TikTok Support', external: true }],
+    "This is the most direct cause. A user can open your profile and tap the Following button to unfollow, so follower counts naturally move in both directions without any bug or penalty.",
   ),
   paragraph(
     'p-1-6',
@@ -219,19 +200,16 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-16', 'Did You or Someone Managing the Account Remove Followers?', 2),
   paragraph(
     'p-16-2',
-    'TikTok gives account owners a native Remove follower function, so if you, an employee, an agency or anyone else managing the account removes followers, the count goes down. (TikTok Support)',
-    [{ href: TT_REMOVE_FOLLOWERS, label: 'TikTok Support', external: true }],
+    'TikTok gives account owners a native Remove follower function, so if you, an employee, an agency or anyone else managing the account removes followers, the count goes down.',
   ),
   paragraph(
     'p-16-4',
-    'On accounts with several managers, check whether anyone has been cleaning the follower list, blocking accounts or changing privacy settings before blaming TikTok. Following, removing followers and blocking are separate account-management controls, not ranking signals or algorithm penalties. (TikTok Support)',
-    [{ href: TT_FOLLOWERS_FOLLOWING, label: 'TikTok Support', external: true }],
+    'On accounts with several managers, check whether anyone has been cleaning the follower list, blocking accounts or changing privacy settings before blaming TikTok. Following, removing followers and blocking are separate account-management controls, not ranking signals or algorithm penalties.',
   ),
   paragraph(
     'p-18-1',
-    "Privacy changes matter as well. On a private account, only people the owner approves can follow and see its content and follower and following lists (TikTok Support). Going private can change how easily people evaluate your content and follow you, but it is an access choice, not a penalty. Our guide on public vs private TikTok accounts explains the difference.",
+    "Privacy changes matter as well. On a private account, only people the owner approves can follow and see its content and follower and following lists. Going private can change how easily people evaluate your content and follow you, but it is an access choice, not a penalty. Our guide on public vs private TikTok accounts explains the difference.",
     [
-      { href: TT_PRIVATE, label: 'TikTok Support', external: true },
       {
         href: '/learn/public-vs-private-tiktok-account',
         label: 'public vs private TikTok accounts',
@@ -243,12 +221,10 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-df-1',
     "Yes. TikTok's Community Guidelines ban fake engagement for every account and say TikTok will remove fake followers or likes it finds. TikTok also removes fake and spam accounts, and when an account that followed you is removed, it drops off your count. TikTok does not show you which removed accounts followed you.",
-    [{ href: 'https://www.tiktok.com/community-guidelines/en/integrity-authenticity', label: 'Community Guidelines', external: true }],
   ),
   paragraph(
     'p-20-3',
-    "TikTok's Creator Rewards eligibility rules also say creators must not engage in fraudulent activity such as inflating follower counts or acquiring fake video views. (TikTok Support) Bought followers are therefore not TikTok-approved, are not a safe way to meet creator-program eligibility and can disappear. Buying more does not stop a drop either: if people leave because of content mismatch or temporary viral interest, the audience problem remains.",
-    [{ href: TT_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
+    "TikTok's Creator Rewards eligibility rules also say creators must not engage in fraudulent activity such as inflating follower counts or acquiring fake video views. Bought followers are therefore not TikTok-approved, are not a safe way to meet creator-program eligibility and can disappear. Buying more does not stop a drop either: if people leave because of content mismatch or temporary viral interest, the audience problem remains.",
   ),
   paragraph(
     'p-pd-3',
@@ -262,13 +238,11 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-19', 'Does TikTok Remove Inactive Followers?', 2),
   paragraph(
     'p-9-3',
-    "A common claim is that TikTok removes followers who have not opened the app in 30 days, or deletes your followers if you stop posting. TikTok's Inactive Account Policy says something narrower: when an account remains inactive for 180 days or more, its username may be reset to a randomized numeric username. (TikTok Support)",
-    [{ href: TT_INACTIVE, label: 'TikTok Support', external: true }],
+    "A common claim is that TikTok removes followers who have not opened the app in 30 days, or deletes your followers if you stop posting. TikTok's Inactive Account Policy says something narrower: when an account remains inactive for 180 days or more, its username may be reset to a randomized numeric username.",
   ),
   paragraph(
     'p-19-2',
-    "That is a username policy, not a follower-purge rule. TikTok does not say inactive accounts are removed from the accounts they follow, and its follower documentation describes no rule that unfollows people for not watching your videos. (TikTok Support) Your audience may still lose interest during a long break, but that is different from a documented follower-deletion countdown. If TikTok publishes a different policy, we will update this guide.",
-    [{ href: TT_FOLLOW_UNFOLLOW, label: 'TikTok Support', external: true }],
+    "That is a username policy, not a follower-purge rule. TikTok does not say inactive accounts are removed from the accounts they follow, and its follower documentation describes no rule that unfollows people for not watching your videos. Your audience may still lose interest during a long break, but that is different from a documented follower-deletion countdown. If TikTok publishes a different policy, we will update this guide.",
   ),
 
   heading('h-12', "Does Losing Followers Mean You're Shadowbanned?", 2),
@@ -278,25 +252,21 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-12-3',
-    'Account Status lets you review account-standing issues, including certain restrictions on login, posts, comments and other functions. (TikTok Support) Check it if follower loss comes with posting or comment restrictions, login problems or other changes to how the account works, rather than relying on rumours or unofficial shadowban-checker websites.',
-    [{ href: TT_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
+    'Account Status lets you review account-standing issues, including certain restrictions on login, posts, comments and other functions. Check it if follower loss comes with posting or comment restrictions, login problems or other changes to how the account works, rather than relying on rumours or unofficial shadowban-checker websites.',
   ),
   paragraph(
     'p-12-4',
-    'Recommendation eligibility is separate. If an account becomes ineligible for recommendation, TikTok says it notifies the user in their inbox and profile, shows the flagged content and offers an appeal. (TikTok Support) Check those notices if discovery among non-followers collapses, but remember that follower count is an audience metric, and a decline does not tell you either system was triggered.',
-    [{ href: TT_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
+    'Recommendation eligibility is separate. If an account becomes ineligible for recommendation, TikTok says it notifies the user in their inbox and profile, shows the flagged content and offers an appeal. Check those notices if discovery among non-followers collapses, but remember that follower count is an audience metric, and a decline does not tell you either system was triggered.',
   ),
   paragraph(
     'p-ha-2',
-    'Losing followers also has no published direct effect on the algorithm. TikTok describes recommendation as using multiple signals, including user interactions, content information and user information (TikTok Support), and it publishes no rule such as lose 100 followers and your next videos get 30 percent less reach. Follower loss is useful information about retention, not a ranking equation.',
-    [{ href: TT_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'Losing followers also has no published direct effect on the algorithm. TikTok describes recommendation as using multiple signals, including user interactions, content information and user information, and it publishes no rule such as lose 100 followers and your next videos get 30 percent less reach. Follower loss is useful information about retention, not a ranking equation.',
   ),
 
   heading('h-views-up', 'Why Are My TikTok Followers Dropping While Views Go Up?', 2),
   paragraph(
     'p-vu-1',
-    'Views and followers measure different things. A new video can reach many non-followers and gain views while existing followers leave, because TikTok recommends content based on interests and interactions rather than sending every post to every follower. Following and unfollowing remain separate user actions. (TikTok Support)',
-    [{ href: TT_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'Views and followers measure different things. A new video can reach many non-followers and gain views while existing followers leave, because TikTok recommends content based on interests and interactions rather than sending every post to every follower. Following and unfollowing remain separate user actions.',
   ),
   paragraph(
     'p-fu-1',
@@ -316,20 +286,17 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-10', 'Is There a Normal Rate of Follower Loss on TikTok?', 2),
   paragraph(
     'p-10-1',
-    'Be careful with articles claiming that losing 2 percent a week is normal, that anything over 5 percent means a shadowban, or that 10 followers per 1,000 are removed daily. TikTok gives you follower Analytics but does not publish a normal follower-loss rate. (TikTok Support) A 200-follower local account and a 10-million-follower celebrity have completely different audience behaviour, so compare against your own historical baseline instead.',
-    [{ href: TT_ACCOUNT_TYPES, label: 'TikTok Support', external: true }],
+    'Be careful with articles claiming that losing 2 percent a week is normal, that anything over 5 percent means a shadowban, or that 10 followers per 1,000 are removed daily. TikTok gives you follower Analytics but does not publish a normal follower-loss rate. A 200-follower local account and a 10-million-follower celebrity have completely different audience behaviour, so compare against your own historical baseline instead.',
   ),
 
   heading('h-who', 'Can You See Exactly Who Unfollowed You on TikTok?', 2),
   paragraph(
     'p-who-1',
-    'No. TikTok has a followers list and follower Analytics, but no list of who unfollowed you and when. (TikTok Support) For growth decisions the names matter less than the trend: which content attracted people, which period coincided with higher losses and whether the account still suits the audience a viral post brought in.',
-    [{ href: TT_ACCOUNT_TYPES, label: 'TikTok Support', external: true }],
+    'No. TikTok has a followers list and follower Analytics, but no list of who unfollowed you and when. For growth decisions the names matter less than the trend: which content attracted people, which period coincided with higher losses and whether the account still suits the audience a viral post brought in.',
   ),
   paragraph(
     'p-21-1',
-    'Avoid third-party apps that promise to show exactly who unfollowed you or to get followers back instantly, especially if they ask for your password, two-factor codes or session cookies. TikTok has a formal authorization system for third-party apps and recommends reviewing permissions when you connect one. (TikTok Support) Your curiosity is not worth losing the account.',
-    [{ href: TT_THIRD_PARTY, label: 'TikTok Support', external: true }],
+    'Avoid third-party apps that promise to show exactly who unfollowed you or to get followers back instantly, especially if they ask for your password, two-factor codes or session cookies. TikTok has a formal authorization system for third-party apps and recommends reviewing permissions when you connect one. Your curiosity is not worth losing the account.',
   ),
 
   heading('h-what-do', 'What Should You Do When TikTok Followers Are Dropping?', 2),
@@ -363,8 +330,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-33-2',
-    "If a count looks clearly inconsistent or an account feature is failing, use TikTok's official Report a problem workflow under Settings and privacy. (TikTok Support) Most unexpected metric movement is not technical, so use it for genuine platform issues.",
-    [{ href: TT_REPORT_PROBLEM, label: 'TikTok Support', external: true }],
+    "If a count looks clearly inconsistent or an account feature is failing, use TikTok's official Report a problem workflow under Settings and privacy. Most unexpected metric movement is not technical, so use it for genuine platform issues.",
   ),
   {
     id: 'cta-tiktok-followers',

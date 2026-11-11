@@ -25,15 +25,9 @@ const VIDEO_TOOL_HREF = '/tools/facebook-video-downloader';
 const FB_REELS_TV = 'https://www.facebook.com/help/276515126152168';
 const FB_DOWNLOAD_REEL = 'https://www.facebook.com/help/1005944300373812';
 const FB_SELECT_AUDIENCE = 'https://www.facebook.com/help/211513702214269';
-const FB_CHOOSE_WHO = 'https://www.facebook.com/help/120939471321735';
 const FB_INTELLECTUAL_PROPERTY =
   'https://www.facebook.com/help/intellectual_property';
 const FB_COMMUNITY = 'https://www.facebook.com/help/477434105621119';
-const FB_AVOID_COPYRIGHTED = 'https://www.facebook.com/help/308895412492789';
-const FB_MUSIC = 'https://www.facebook.com/help/728395571305053';
-const FB_IG_REEL_DOWNLOAD =
-  'https://www.facebook.com/help/instagram/520831036611383';
-const FB_COPYRIGHT = 'https://www.facebook.com/help/1020633957973118';
 
 let order = 0;
 function nextOrder(): number {
@@ -61,10 +55,6 @@ function paragraph(
     order: nextOrder(),
     ...(inlineLinks ? { inlineLinks } : {}),
   };
-}
-
-function bullets(id: string, items: string[]): ArticleContentBlock {
-  return { id, type: 'bulleted_list', items, order: nextOrder() };
 }
 
 function numbered(id: string, items: string[]): ArticleContentBlock {
@@ -148,13 +138,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ow-3',
-    'This should be your first choice for your own Reel, because there is no reason to use an outside tool when Facebook already gives you the option. The same applies to Reels on a profile or Page you legitimately manage, where a native download is useful for archiving, re-editing or keeping company-owned media. (Facebook Help Center)',
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook Help Center', external: true }],
+    'This should be your first choice for your own Reel, because there is no reason to use an outside tool when Facebook already gives you the option. The same applies to Reels on a profile or Page you legitimately manage, where a native download is useful for archiving, re-editing or keeping company-owned media.',
   ),
   paragraph(
     'p-fw-2',
-    "Meta confirms that you can download Reels you shared, but it does not say what every downloaded file will contain in terms of watermarks or audio. Be wary of claims that native downloads never have a watermark, or always do, and check the file yourself before you rely on it. (Facebook Help Center)",
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook Help Center', external: true }],
+    "Meta confirms that you can download Reels you shared, but it does not say what every downloaded file will contain in terms of watermarks or audio. Be wary of claims that native downloads never have a watermark, or always do, and check the file yourself before you rely on it.",
   ),
 
   heading(
@@ -164,8 +152,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dt-1',
-    "Not with Facebook's own feature. Meta's Help Center says the option to download a Reel you shared is not available on computers and points users to the Facebook mobile apps instead. (Facebook Help Center)",
-    [{ href: FB_DOWNLOAD_REEL, label: 'Facebook Help Center', external: true }],
+    "Not with Facebook's own feature. Meta's Help Center says the option to download a Reel you shared is not available on computers and points users to the Facebook mobile apps instead.",
   ),
   paragraph(
     'p-dt-3',
@@ -258,8 +245,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-cf-5',
-    'Meta also advises that the safest way to avoid copyright infringement is to post content you created yourself, so do not repost a downloaded Reel as your own. (Facebook Help Center)',
-    [{ href: FB_AVOID_COPYRIGHTED, label: 'Facebook Help Center', external: true }],
+    'Meta also advises that the safest way to avoid copyright infringement is to post content you created yourself, so do not repost a downloaded Reel as your own.',
   ),
   figure(
     'fig-rights',
@@ -275,15 +261,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-mu-2',
-    "Reels can include music, and Meta says its music use is governed by agreements with artists, songwriters and rights holders. A Reel being playable on Facebook does not mean those rights allow re-uploading elsewhere or commercial reuse, and a downloader does not give you a licence to the soundtrack. (Facebook Help Center)",
-    [{ href: FB_MUSIC, label: 'Facebook Help Center', external: true }],
+    "Reels can include music, and Meta says its music use is governed by agreements with artists, songwriters and rights holders. A Reel being playable on Facebook does not mean those rights allow re-uploading elsewhere or commercial reuse, and a downloader does not give you a licence to the soundtrack.",
   ),
 
   heading('h-private', 'Can You Download a Private Facebook Reel?', 2),
   paragraph(
     'p-pr-2',
-    'No. Facebook lets publishers control who can see content through audience settings such as Public, Friends and Only Me, and private groups limit access in the same way. (Facebook Help Center)',
-    [{ href: FB_CHOOSE_WHO, label: 'Facebook Help Center', external: true }],
+    'No. Facebook lets publishers control who can see content through audience settings such as Public, Friends and Only Me, and private groups limit access in the same way.',
   ),
   paragraph(
     'p-pr-3',
@@ -293,13 +277,11 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-other', 'Which Facebook Content Can the Reels Downloader Not Handle?', 2),
   paragraph(
     'p-st-3',
-    "The tool handles Facebook Reels only. Even though Facebook now uses Reels for uploaded video, an active LIVE stream is not the same as a completed public Reel file, so the downloader is not a LIVE recorder. It does not download Stories or private-group videos, and for your own Stories you can use Facebook's archive options. It also rejects Instagram links, since Instagram Reels have their own URLs, settings and native download controls. (Instagram Help Center)",
-    [{ href: FB_IG_REEL_DOWNLOAD, label: 'Instagram Help Center', external: true }],
+    "The tool handles Facebook Reels only. Even though Facebook now uses Reels for uploaded video, an active LIVE stream is not the same as a completed public Reel file, so the downloader is not a LIVE recorder. It does not download Stories or private-group videos, and for your own Stories you can use Facebook's archive options. It also rejects Instagram links, since Instagram Reels have their own URLs, settings and native download controls.",
   ),
   paragraph(
     'p-rm-2',
-    "It is also not a way around Meta's copyright enforcement. Facebook runs copyright reporting systems for rights holders, and if Facebook removes a Reel or makes it unavailable, a downloader cannot bring it back. (Facebook Help Center)",
-    [{ href: FB_COPYRIGHT, label: 'Facebook Help Center', external: true }],
+    "It is also not a way around Meta's copyright enforcement. Facebook runs copyright reporting systems for rights holders, and if Facebook removes a Reel or makes it unavailable, a downloader cannot bring it back.",
   ),
 
   heading("h-fail", "Why Doesn't My Facebook Reel Download?", 2),

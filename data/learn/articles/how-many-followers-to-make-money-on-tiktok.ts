@@ -18,8 +18,6 @@ const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const TT_CREATOR_REWARDS_NEWSROOM =
   'https://newsroom.tiktok.com/introducing-the-new-creator-rewards-program?lang=en';
-const TT_CREATOR_REWARDS_SUPPORT =
-  'https://support.tiktok.com/en/business-and-creator/creator-rewards-program/creator-rewards-program';
 const TT_LIVE_SUBSCRIPTION =
   'https://newsroom.tiktok.com/en-us/live-subscription-subscriber-only-videos';
 const TT_SHOP_CREATOR_ELIGIBILITY =
@@ -121,8 +119,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-1000', 'Can You Make Money on TikTok With 1,000 Followers?', 2),
   paragraph(
     'p-1000-1',
-    'Yes, in several ways. At 1,000 followers and 18 or older you can usually offer LIVE Subscriptions, and in the US you can apply to TikTok Shop as an affiliate creator and earn commission on products you promote. (TikTok Shop Academy)',
-    [{ href: TT_SHOP_CREATOR_ELIGIBILITY, label: 'TikTok Shop Academy', external: true }],
+    'Yes, in several ways. At 1,000 followers and 18 or older you can usually offer LIVE Subscriptions, and in the US you can apply to TikTok Shop as an affiliate creator and earn commission on products you promote.',
   ),
   paragraph(
     'p-1000-2',
@@ -148,13 +145,11 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-views', 'How Many Views Do You Need to Make Money on TikTok?', 2),
   paragraph(
     'p-views-1',
-    'For the Creator Rewards Program, you need 100,000 video views in the last 30 days to qualify, alongside 10,000 followers. (TikTok Newsroom) Because the window is the last 30 days, views from a video that went viral months ago do not count towards it.',
-    [{ href: TT_CREATOR_REWARDS_NEWSROOM, label: 'TikTok Newsroom', external: true }],
+    'For the Creator Rewards Program, you need 100,000 video views in the last 30 days to qualify, alongside 10,000 followers. Because the window is the last 30 days, views from a video that went viral months ago do not count towards it.',
   ),
   paragraph(
     'p-views-2',
-    'Once you are in the program, earnings are based on qualified views, not all views. TikTok says qualified views are unique views from the For You feed and exclude views under five seconds, paid views and fraudulent views. (TikTok Support) TikTok does not publish a fixed rate per 1,000 views.',
-    [{ href: TT_CREATOR_REWARDS_SUPPORT, label: 'TikTok Support', external: true }],
+    'Once you are in the program, earnings are based on qualified views, not all views. TikTok says qualified views are unique views from the For You feed and exclude views under five seconds, paid views and fraudulent views. TikTok does not publish a fixed rate per 1,000 views.',
   ),
   paragraph(
     'p-views-3',
@@ -185,8 +180,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-quality', 'Do Your Followers Need to Be Real?', 2),
   paragraph(
     'p-q-1',
-    'For the features that pay you, yes. Creator Rewards requires an account in good standing and counts only qualified views, and TikTok excludes fraudulent and paid views from them. (TikTok Support) Followers who never watch your videos will not help you reach 100,000 views in 30 days.',
-    [{ href: TT_CREATOR_REWARDS_SUPPORT, label: 'TikTok Support', external: true }],
+    'For the features that pay you, yes. Creator Rewards requires an account in good standing and counts only qualified views, and TikTok excludes fraudulent and paid views from them. Followers who never watch your videos will not help you reach 100,000 views in 30 days.',
   ),
   paragraph(
     'p-q-2',

@@ -69,10 +69,10 @@ describe('Article #16 How to get your first 1,000 TikTok followers organically',
       ),
     ).toBe(true);
     expect(article.content).toContain(
-      'Searches by followers filter becomes available when you have more than 1,000 followers',
+      'In many regions, going LIVE requires at least 1,000 followers and being 18 or older',
     );
     expect(article.content).toContain(
-      'This is a content framework, not a guarantee that you will reach 1,000 followers in 30 days.',
+      'There is no fixed timeline and no set number of videos.',
     );
     expect(article.content).not.toMatch(/1,?000 followers in 7 days guaranteed/i);
     expect(

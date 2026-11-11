@@ -24,12 +24,8 @@ const TIKTOK_FYF_STANDARDS =
   'https://www.tiktok.com/community-guidelines/en/fyf-standards';
 const TIKTOK_NOT_RECOMMENDED =
   'https://support.tiktok.com/en/safety-hc/account-and-user-safety/why-is-my-account-not-being-recommended';
-const TIKTOK_ACCOUNT_STATUS =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-status';
 const TIKTOK_POST_VIEWS =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/my-videos-arent-getting-views';
-const TIKTOK_NEWSROOM_FOR_YOU =
-  'https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you';
 
 let order = 0;
 function nextOrder(): number {
@@ -188,8 +184,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-inel-2',
-    'TikTok says ineligible posts can still be discovered in other ways, such as search or by people who follow you. On a new account with few followers, though, an ineligible post can stay at or near 0. (TikTok Community Guidelines)',
-    [{ href: TIKTOK_FYF_STANDARDS, label: 'TikTok Community Guidelines', external: true }],
+    'TikTok says ineligible posts can still be discovered in other ways, such as search or by people who follow you. On a new account with few followers, though, an ineligible post can stay at or near 0.',
   ),
   paragraph(
     'p-inel-3',
@@ -210,8 +205,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-acc-2',
-    'Check your inbox notifications, the notice under your username on your profile, and the Account status page in Settings and privacy, which lists recent violations and restrictions. (TikTok Support) Menu names can differ slightly between app versions.',
-    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
+    'Check your inbox notifications, the notice under your username on your profile, and the Account status page in Settings and privacy, which lists recent violations and restrictions. Menu names can differ slightly between app versions.',
   ),
   paragraph(
     'p-acc-3',
@@ -223,8 +217,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-acc-4',
-    'TikTok says it may restore recommendations automatically, but it does not give a fixed timeframe. (TikTok Support)',
-    [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
+    'TikTok says it may restore recommendations automatically, but it does not give a fixed timeframe.',
   ),
   paragraph(
     'p-acc-5',
@@ -247,8 +240,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-new-account', 'What If My Account Is Brand New?', 2),
   paragraph(
     'p-new-1',
-    'Follower count is not what decides whether a video gets shown. TikTok says that neither follower count nor previous high-performing videos are direct factors in its recommendation system; it looks at things such as viewer interactions, video information like captions, sounds and hashtags, and device and account settings. (TikTok Newsroom)',
-    [{ href: TIKTOK_NEWSROOM_FOR_YOU, label: 'TikTok Newsroom', external: true }],
+    'Follower count is not what decides whether a video gets shown. TikTok says that neither follower count nor previous high-performing videos are direct factors in its recommendation system; it looks at things such as viewer interactions, video information like captions, sounds and hashtags, and device and account settings.',
   ),
   paragraph(
     'p-new-2',

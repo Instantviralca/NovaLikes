@@ -110,8 +110,7 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-changes-1',
-    'TikTok says enabling a refresh will not override settings you have already chosen or affect the accounts you follow. (TikTok Newsroom) Your own videos, followers and likes are part of your account, not your feed, so a refresh is not a way to delete them.',
-    [{ href: TIKTOK_REFRESH_NEWSROOM, label: 'TikTok Newsroom', external: true }],
+    'TikTok says enabling a refresh will not override settings you have already chosen or affect the accounts you follow. Your own videos, followers and likes are part of your account, not your feed, so a refresh is not a way to delete them.',
   ),
 
   heading('h-retrain', 'How to Retrain Your Feed After the Refresh', 2),

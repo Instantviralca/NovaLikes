@@ -159,8 +159,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pp-1',
-    'Yes. Meta explicitly says certain profile information is always public for both public and private Instagram accounts, including the profile picture. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Yes. Meta explicitly says certain profile information is always public for both public and private Instagram accounts, including the profile picture.',
   ),
   paragraph(
     'p-pp-3',
@@ -209,8 +208,7 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-tb-2',
-    "Meta's list of information anyone can see also covers links, follower and following counts and, where applicable, a Threads username and channels someone has created or joined. Account privacy separately controls access to posts. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    "Meta's list of information anyone can see also covers links, follower and following counts and, where applicable, a Threads username and channels someone has created or joined. Account privacy separately controls access to posts.",
   ),
   paragraph(
     'p-ne-3',
@@ -232,8 +230,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ap-3',
-    "You don't need to follow the account or wait for the owner's approval to see the profile picture. Approval only becomes relevant for private-account content that Instagram restricts to approved followers. (Instagram Help Center)",
-    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
+    "You don't need to follow the account or wait for the owner's approval to see the profile picture. Approval only becomes relevant for private-account content that Instagram restricts to approved followers.",
   ),
 
   heading(
@@ -243,18 +240,15 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hi-3',
-    'No, and this is one of the most common misunderstandings. Meta says the profile picture stays among the information anyone can see even when an account is private, and that this information is public to people on or off Instagram, including those without an Instagram account. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'No, and this is one of the most common misunderstandings. Meta says the profile picture stays among the information anyone can see even when an account is private, and that this information is public to people on or off Instagram, including those without an Instagram account.',
   ),
   paragraph(
     'p-hi-5',
-    "If you don't want strangers seeing a particular image, change the profile picture itself rather than relying on a private account to hide it. Instagram lets users change their profile picture through Edit Profile or Accounts Center. (Instagram Help Center)",
-    [{ href: IG_CHANGE_PROFILE_PICTURE, label: 'Instagram Help Center', external: true }],
+    "If you don't want strangers seeing a particular image, change the profile picture itself rather than relying on a private account to hide it. Instagram lets users change their profile picture through Edit Profile or Accounts Center.",
   ),
   paragraph(
     'p-se-1',
-    'Not every profile picture appears in Google Images, because indexing is up to the search engine. Still, a profile picture can be accessible outside the app: Meta explains that search engines can process publicly visible Instagram profile information under their own systems. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Not every profile picture appears in Google Images, because indexing is up to the search engine. Still, a profile picture can be accessible outside the app: Meta explains that search engines can process publicly visible Instagram profile information under their own systems.',
   ),
   figure(
     'fig-private',
@@ -270,7 +264,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bl-6',
-    'A larger view makes the available image easier to inspect, but it cannot recreate detail that was never there. The NovaLikes viewer does not use AI enhancement and does not invent missing pixels.',
+    'A larger view makes the available image easier to inspect, but it cannot recreate detail that was never there. The NovaLikes viewer shows the image as Instagram serves it. It does not upscale, sharpen or invent missing pixels.',
   ),
 
   heading('h-screenshot', 'Can You Zoom In on an Instagram Profile Picture?', 2),
@@ -340,8 +334,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-fb-1',
-    "Instagram also allows changes through Accounts Center, and Meta's documentation says you can import the picture you already use on your Facebook profile. (Instagram Help Center)",
-    [{ href: IG_CHANGE_PROFILE_PICTURE, label: 'Instagram Help Center', external: true }],
+    "Instagram also allows changes through Accounts Center, and Meta's documentation says you can import the picture you already use on your Facebook profile.",
   ),
   paragraph(
     'p-fb-2',
@@ -356,8 +349,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nt-1',
-    "Instagram's Help Center documents profile information as publicly viewable and does not describe viewing a profile picture as an action that notifies anyone, unlike interactive actions such as following or commenting. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    "Instagram's Help Center documents profile information as publicly viewable and does not describe viewing a profile picture as an action that notifies anyone, unlike interactive actions such as following or commenting.",
   ),
   paragraph(
     'p-an-3',
@@ -403,16 +395,6 @@ const BLOCKS: ArticleContentBlock[] = [
       'Enter an Instagram username to view the profile picture available from its public profile information. No Instagram password is required.',
     label: 'Open Profile Picture Viewer',
   },
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Instagram profile pictures are part of the profile information Meta says anyone can see, including for private accounts.',
-    'Private-account posts remain restricted to approved followers; a public profile picture does not make private posts public.',
-    'Full size means the larger version actually available, widely reported at about 320 × 320 pixels, not the original camera file.',
-    'Enlarging cannot add detail, and a profile-picture viewer cannot bypass private Instagram content.',
-    'No Instagram password is required to view a public profile picture.',
-    'Viewing a profile picture does not follow, Like, message or otherwise modify the target account.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

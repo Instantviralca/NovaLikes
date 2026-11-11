@@ -23,24 +23,10 @@ const TIKTOK_RECOMMENDS =
   'https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content';
 const TIKTOK_VIOLATIONS =
   'https://support.tiktok.com/en/safety-hc/account-and-user-safety/content-violations-and-bans';
-const TIKTOK_ACCOUNT_STATUS =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-status';
-const TIKTOK_CREATOR_REWARDS =
-  'https://support.tiktok.com/en/business-and-creator/creator-rewards-program/creator-rewards-program';
 const TIKTOK_FOR_YOU =
   'https://support.tiktok.com/en/getting-started/for-you';
 const TIKTOK_POST_VIEWS =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/my-videos-arent-getting-views';
-const TIKTOK_REMOVE_FOLLOWERS =
-  'https://support.tiktok.com/en/using-tiktok/followers-and-following/removing-followers';
-const TIKTOK_NOT_RECOMMENDED =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/why-is-my-account-not-being-recommended';
-const TIKTOK_LIVE =
-  'https://support.tiktok.com/en/live-gifts-wallet/tiktok-live/what-is-tiktok-live';
-const TIKTOK_PHISHING =
-  'https://support.tiktok.com/en/safety-hc/account-and-user-safety/avoid-fraudulent-message-attacks-on-tiktok';
-const TIKTOK_GROW_AUDIENCE =
-  'https://support.tiktok.com/en/using-tiktok/growing-your-audience/how-to-grow-your-audience';
 
 let order = 0;
 function nextOrder(): number {
@@ -112,8 +98,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pol-2',
-    'In its explanation of how it counters deceptive behaviour, TikTok says it does not allow fake engagement, including facilitating the trade or marketing of services designed to artificially increase engagement, such as selling followers or likes. TikTok says it invests in technologies for detecting and preventing this behaviour, and its 2024 explanation reported proactive removals under its fake-engagement policies. (TikTok Newsroom)',
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
+    'In its explanation of how it counters deceptive behaviour, TikTok says it does not allow fake engagement, including facilitating the trade or marketing of services designed to artificially increase engagement, such as selling followers or likes. TikTok says it invests in technologies for detecting and preventing this behaviour, and its 2024 explanation reported proactive removals under its fake-engagement policies.',
   ),
   paragraph(
     'p-own-1',
@@ -123,7 +108,7 @@ const BLOCKS: ArticleContentBlock[] = [
     'fig-three-questions',
     `${IMAGE_DIR}/three-separate-questions.png`,
     'Three columns separating TikTok platform policy, account standing and For You Page distribution as related but different questions',
-    'Policy risk, account enforcement and recommendation performance are related topics — but they are not identical.',
+    'Policy risk, account enforcement and recommendation performance are related topics, but they are not identical.',
   ),
 
   heading('h-safe', 'Is Buying TikTok Followers “Safe”?', 2),
@@ -171,8 +156,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-more-2',
-    'The opposite claim is unsupported too. TikTok describes a multi-signal personalized system rather than a ranking rule based on follower count, so be wary of anyone who says bought followers unlock the FYP, make TikTok push your videos or trigger the algorithm. Follower count is neither a guaranteed FYP boost nor a fixed FYP penalty. (TikTok Support)',
-    [{ href: TIKTOK_RECOMMENDS, label: 'TikTok Support', external: true }],
+    'The opposite claim is unsupported too. TikTok describes a multi-signal personalized system rather than a ranking rule based on follower count, so be wary of anyone who says bought followers unlock the FYP, make TikTok push your videos or trigger the algorithm. Follower count is neither a guaranteed FYP boost nor a fixed FYP penalty.',
   ),
 
   heading(
@@ -242,8 +226,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rew-2',
-    "No. TikTok's current Creator Rewards Program requirements say participating accounts must not engage in malicious or fraudulent activities such as obtaining fake video views or inflating follower counts. The program considers account standing and authenticity in addition to numeric eligibility conditions. (TikTok Support)",
-    [{ href: TIKTOK_CREATOR_REWARDS, label: 'TikTok Support', external: true }],
+    "No. TikTok's current Creator Rewards Program requirements say participating accounts must not engage in malicious or fraudulent activities such as obtaining fake video views or inflating follower counts. The program considers account standing and authenticity in addition to numeric eligibility conditions.",
   ),
   paragraph(
     'p-qual-2',
@@ -257,8 +240,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-live-1',
-    'Bought followers are not a safe shortcut to LIVE either. A numeric threshold is not permission to manipulate that metric, and engagement policies apply alongside feature requirements. TikTok says LIVE availability depends on age requirements and a local minimum-follower threshold. (TikTok Support)',
-    [{ href: TIKTOK_LIVE, label: 'TikTok Support', external: true }],
+    'Bought followers are not a safe shortcut to LIVE either. A numeric threshold is not permission to manipulate that metric, and engagement policies apply alongside feature requirements. TikTok says LIVE availability depends on age requirements and a local minimum-follower threshold.',
   ),
 
   heading(
@@ -268,20 +250,17 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-lv-2',
-    "Yes. TikTok's fake-engagement rules are not limited to follower count. Its deceptive-behaviour guidance discusses artificially increasing engagement such as followers or likes, and Creator Rewards specifically prohibits fake video views as well as inflated follower counts. The issue is artificial engagement in general, although this still does not give a precise penalty formula. (TikTok Newsroom)",
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
+    "Yes. TikTok's fake-engagement rules are not limited to follower count. Its deceptive-behaviour guidance discusses artificially increasing engagement such as followers or likes, and Creator Rewards specifically prohibits fake video views as well as inflated follower counts. The issue is artificial engagement in general, although this still does not give a precise penalty formula.",
   ),
 
   heading('h-remove', 'Can TikTok Remove Followers?', 2),
   paragraph(
     'p-rem-1',
-    "A TikTok follower number is not fixed. It changes when users unfollow or delete their accounts, when accounts are removed through platform enforcement, and through ordinary audience movement. Account owners can also remove individual followers themselves through TikTok's follower controls. (TikTok Support)",
-    [{ href: TIKTOK_REMOVE_FOLLOWERS, label: 'TikTok Support', external: true }],
+    "A TikTok follower number is not fixed. It changes when users unfollow or delete their accounts, when accounts are removed through platform enforcement, and through ordinary audience movement. Account owners can also remove individual followers themselves through TikTok's follower controls.",
   ),
   paragraph(
     'p-rem-2',
-    "Nobody can honestly promise that TikTok will never remove followers, or claim that it removes every purchased follower. A refill policy, where one exists, is the provider's commitment, not a TikTok guarantee. TikTok publicly describes substantial proactive enforcement against fake engagement activity and manipulative behaviour. (TikTok Newsroom)",
-    [{ href: TIKTOK_DECEPTIVE, label: 'TikTok Newsroom', external: true }],
+    "Nobody can honestly promise that TikTok will never remove followers, or claim that it removes every purchased follower. A refill policy, where one exists, is the provider's commitment, not a TikTok guarantee. TikTok publicly describes substantial proactive enforcement against fake engagement activity and manipulative behaviour.",
   ),
 
   heading(
@@ -291,8 +270,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-drop-2',
-    'No. A drop in views alone is not enough evidence to diagnose the cause, and TikTok says video views can fluctuate. Before concluding that you are shadowbanned, check your recent analytics, Account Status, violation notifications and any recommendation eligibility notices, and whether the problem affects one video or many. TikTok provides an Account Status area for reviewing issues affecting your account or posts. (TikTok Support)',
-    [{ href: TIKTOK_ACCOUNT_STATUS, label: 'TikTok Support', external: true }],
+    'No. A drop in views alone is not enough evidence to diagnose the cause, and TikTok says video views can fluctuate. Before concluding that you are shadowbanned, check your recent analytics, Account Status, violation notifications and any recommendation eligibility notices, and whether the problem affects one video or many. TikTok provides an Account Status area for reviewing issues affecting your account or posts.',
   ),
 
   heading(
@@ -302,8 +280,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-inel-2',
-    'TikTok can mark accounts as ineligible for recommendation. Its Help Center says that when an account repeatedly posts content unsuitable for the For You feed, the account and its posts may stop appearing in For You and become harder to find. Affected users receive notifications and can review flagged content and appeal. (TikTok Support)',
-    [{ href: TIKTOK_NOT_RECOMMENDED, label: 'TikTok Support', external: true }],
+    'TikTok can mark accounts as ineligible for recommendation. Its Help Center says that when an account repeatedly posts content unsuitable for the For You feed, the account and its posts may stop appearing in For You and become harder to find. Affected users receive notifications and can review flagged content and appeal.',
   ),
   paragraph(
     'p-inel-6',
@@ -323,8 +300,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-2',
-    "No. Promote is TikTok's own advertising feature for increasing visibility and supporting audience-growth goals, and TikTok lists it among its creator growth resources. Paying TikTok directly through its advertising tools is a platform-supported product, not third-party artificial engagement. (TikTok Support)",
-    [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
+    "No. Promote is TikTok's own advertising feature for increasing visibility and supporting audience-growth goals, and TikTok lists it among its creator growth resources. Paying TikTok directly through its advertising tools is a platform-supported product, not third-party artificial engagement.",
   ),
 
   heading(
@@ -345,8 +321,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-chk-6',
-    'TikTok itself warns users to be cautious with suspicious links and third-party sites promising free likes or fans. (TikTok Support)',
-    [{ href: TIKTOK_PHISHING, label: 'TikTok Support', external: true }],
+    'TikTok itself warns users to be cautious with suspicious links and third-party sites promising free likes or fans.',
   ),
 
   heading(
@@ -356,24 +331,13 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-gr-1',
-    "TikTok's own audience-growth guidance recommends engaging with viewers, reviewing analytics, publishing quality content regularly, collaborating with creators and using creator tools to learn what performs. (TikTok Support)",
-    [{ href: TIKTOK_GROW_AUDIENCE, label: 'TikTok Support', external: true }],
+    "TikTok's own audience-growth guidance recommends engaging with viewers, reviewing analytics, publishing quality content regularly, collaborating with creators and using creator tools to learn what performs.",
   ),
   paragraph(
     'p-gr-4',
     'Those activities address the content and audience side of growth, and changing a visible follower number does not replace that work. Search-focused publishing is covered separately in TikTok SEO.',
     [{ href: '/learn/tiktok-seo', label: 'TikTok SEO' }],
   ),
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'TikTok prohibits fake engagement, including services that artificially increase followers or likes.',
-    'TikTok Creator Rewards explicitly prohibits inflated follower counts and fake video views.',
-    'TikTok does not publish a formula saying a follower purchase causes a specific FYP penalty.',
-    'Follower count does not guarantee For You reach. TikTok describes recommendation as a personalized, multi-signal system.',
-    'A sudden view drop is not proof of enforcement. Check analytics, Account Status and recommendation notices instead of guessing.',
-    'No third-party service can honestly promise zero TikTok policy risk or guaranteed FYP improvement.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

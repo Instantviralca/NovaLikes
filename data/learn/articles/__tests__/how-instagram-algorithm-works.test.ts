@@ -5,7 +5,7 @@ import { getPublishedLearnArticleBySlug } from '@/data/learn/articles';
 import { isPublicLiveArticle } from '@/lib/learn/editorial/status';
 import { getIndexableArticles } from '@/lib/learn/article-seo';
 import { buildSitemapEntries } from '@/lib/seo/sitemap/build';
-import { calculateReadingTime } from '@/lib/learn/article';
+import { estimateReadingTimeMinutes } from '@/lib/learn/reading-time';
 
 describe('Article #5 Instagram algorithm 2026', () => {
   it('is published with the original Wednesday 2 September 2026 editorial date', () => {
@@ -71,7 +71,7 @@ describe('Article #5 Instagram algorithm 2026', () => {
       ),
     ).toBe(false);
     expect(article.content).toContain(
-      'so bought engagement is not a ranking strategy',
+      "Instagram's Community Guidelines also prohibit artificially collecting likes or followers",
     );
   });
 
@@ -91,6 +91,6 @@ describe('Article #5 Instagram algorithm 2026', () => {
     expect(article.featuredImage?.src).toBe(
       '/assets/images/learn/how-instagram-algorithm-works/featured.png',
     );
-    expect(article.readingTime).toBe(calculateReadingTime(article.blocks));
+    expect(article.readingTime).toBe(estimateReadingTimeMinutes(article.content));
   });
 });

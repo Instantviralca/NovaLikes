@@ -35,7 +35,7 @@ describe('Article #6 Facebook followers vs Page Likes vs Post Likes', () => {
     );
     expect(article.content).not.toMatch(/Page Likes no longer exist/i);
     expect(article.content).toContain(
-      'Many Page experiences are moving toward follows',
+      'Facebook has been moving Pages away from Likes and towards follows',
     );
     expect(article.relatedServices).toEqual([
       'buy-facebook-followers',

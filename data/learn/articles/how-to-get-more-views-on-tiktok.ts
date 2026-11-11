@@ -26,8 +26,6 @@ const TT_SEARCH_INSIGHTS =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/creator-search-insights';
 const TT_PROMOTE =
   'https://support.tiktok.com/en/using-tiktok/growing-your-audience/use-promote-to-grow-your-tiktok-audience';
-const TT_FYF_STANDARDS =
-  'https://www.tiktok.com/community-guidelines/en/fyf-standards';
 
 let order = 0;
 function nextOrder(): number {
@@ -95,8 +93,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w2', '2. Make it easy to watch to the end', 3),
   paragraph(
     'p-w2',
-    'Cut pauses and repeated points, and keep the video only as long as the idea needs. Film vertically: in its 2020 creator tips, TikTok said vertical videos, and videos longer than five seconds, perform best. (TikTok Newsroom)',
-    [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
+    'Cut pauses and repeated points, and keep the video only as long as the idea needs. Film vertically: in its 2020 creator tips, TikTok said vertical videos, and videos longer than five seconds, perform best.',
   ),
 
   heading('h-w3', '3. Say and show what the video is about', 3),
@@ -109,8 +106,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w4', '4. Use a few relevant hashtags', 3),
   paragraph(
     'p-w4',
-    'Choose hashtags that describe the video. TikTok said in 2020 that #FYP, #ForYou and #ForYouPage work just like any other hashtag, so they are not a shortcut to the For You feed. (TikTok Newsroom)',
-    [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
+    'Choose hashtags that describe the video. TikTok said in 2020 that #FYP, #ForYou and #ForYouPage work just like any other hashtag, so they are not a shortcut to the For You feed.',
   ),
 
   heading('h-w5', '5. Add a sound that fits', 3),
@@ -128,15 +124,13 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-w7', '7. Post consistently, not constantly', 3),
   paragraph(
     'p-w7',
-    'TikTok said in 2020 that the number of videos you post will not affect how your content is recommended in the For You feed. (TikTok Newsroom) A schedule you can keep, with videos you are happy with, beats posting several weaker videos a day.',
-    [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
+    'TikTok said in 2020 that the number of videos you post will not affect how your content is recommended in the For You feed. A schedule you can keep, with videos you are happy with, beats posting several weaker videos a day.',
   ),
 
   heading('h-w8', '8. Give each video time', 3),
   paragraph(
     'p-w8',
-    'TikTok said in 2020 that video performance extends over a couple of days. (TikTok Newsroom) Do not delete a video after a few hours because it started slowly.',
-    [{ href: TT_NEWSROOM_CREATOR_TIPS, label: 'TikTok Newsroom', external: true }],
+    'TikTok said in 2020 that video performance extends over a couple of days. Do not delete a video after a few hours because it started slowly.',
   ),
 
   heading('h-w9', '9. Learn from TikTok Studio', 3),
@@ -189,9 +183,8 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-dont-1',
-    'Fake engagement is on TikTok’s list of content that is not eligible for the For You feed. (TikTok Community Guidelines) Our guide on whether buying TikTok followers affects FYP reach explains what TikTok says about it.',
+    'Fake engagement is on TikTok’s list of content that is not eligible for the For You feed. Our guide on whether buying TikTok followers affects FYP reach explains what TikTok says about it.',
     [
-      { href: TT_FYF_STANDARDS, label: 'TikTok Community Guidelines', external: true },
       {
         href: '/learn/buying-tiktok-followers-fyp-account-safety',
         label: 'whether buying TikTok followers affects FYP reach',

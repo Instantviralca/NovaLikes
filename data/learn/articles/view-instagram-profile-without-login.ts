@@ -28,18 +28,10 @@ const IG_WEB_PROFILE =
   'https://www.facebook.com/help/instagram/365041933611384';
 const IG_PUBLIC_PROFILE_INFO =
   'https://www.facebook.com/help/instagram/347751748650214';
-const IG_MAKE_PRIVATE =
-  'https://www.facebook.com/help/instagram/448523408565555';
 const IG_PUBLIC_VS_PRIVATE =
   'https://www.facebook.com/help/instagram/517073653436611';
 const IG_EMBED =
   'https://www.facebook.com/help/instagram/620154495870484';
-const IG_ON_THE_WEB =
-  'https://www.facebook.com/help/instagram/513918941996087';
-const IG_AGE_RESTRICTED =
-  'https://www.facebook.com/help/instagram/1462811168095506';
-const IG_BUSINESS_BUTTON =
-  'https://www.facebook.com/help/instagram/1419650861499317';
 const IG_TURN_OFF_EMBED =
   'https://www.facebook.com/help/instagram/252460186989212';
 
@@ -148,8 +140,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-pf-2',
-    'Some other profile-related information can also appear depending on the account and features. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Some other profile-related information can also appear depending on the account and features.',
   ),
   paragraph(
     'p-pf-4',
@@ -170,8 +161,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pa-1',
-    'Meta says that if an Instagram account is public, anyone can see its profile and posts through its Instagram web URL, which is instagram.com plus the username. (Instagram Help Center)',
-    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
+    'Meta says that if an Instagram account is public, anyone can see its profile and posts through its Instagram web URL, which is instagram.com plus the username.',
   ),
   paragraph(
     'p-pa-4',
@@ -195,8 +185,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-br-3',
-    "Instagram controls its own web interface, which Meta's Help Center documents at instagram.com. (Instagram Help Center)",
-    [{ href: IG_ON_THE_WEB, label: 'Instagram Help Center', external: true }],
+    "Instagram controls its own web interface, which Meta's Help Center documents at instagram.com.",
   ),
   paragraph(
     'p-pp-2',
@@ -241,13 +230,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pr-1',
-    'Only its basic profile information. Meta says the username, name, profile picture, bio, links and follower or following counts remain visible regardless of account privacy. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Only its basic profile information. Meta says the username, name, profile picture, bio, links and follower or following counts remain visible regardless of account privacy.',
   ),
   paragraph(
     'p-pr-3',
-    "So private means content access is restricted rather than the profile becoming invisible, and the account's protected posts do not become available. Instagram's privacy settings exist specifically so users can restrict who sees their posts, Reels and Stories. (Instagram Help Center)",
-    [{ href: IG_MAKE_PRIVATE, label: 'Instagram Help Center', external: true }],
+    "So private means content access is restricted rather than the profile becoming invisible, and the account's protected posts do not become available. Instagram's privacy settings exist specifically so users can restrict who sees their posts, Reels and Stories.",
   ),
   paragraph(
     'p-pr-4',
@@ -287,8 +274,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ag-2',
-    "The same applies to other account controls. If another user has blocked your Instagram account, the viewer is not a way around that decision, and it does not get around age limits either. Meta has documented that certain profile or content visibility can depend on age restrictions. (Instagram Help Center)",
-    [{ href: IG_AGE_RESTRICTED, label: 'Instagram Help Center', external: true }],
+    "The same applies to other account controls. If another user has blocked your Instagram account, the viewer is not a way around that decision, and it does not get around age limits either. Meta has documented that certain profile or content visibility can depend on age restrictions.",
   ),
   figure(
     'fig-access',
@@ -304,8 +290,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dp-1',
-    'Yes. Both are on the list of information Meta says anyone can see, even for private accounts. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Yes. Both are on the list of information Meta says anyone can see, even for private accounts.',
   ),
   paragraph(
     'p-ct-2',
@@ -341,8 +326,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-1',
-    "Instagram's public profile-information documentation does not describe ordinary profile viewing as an action that sends the profile owner a visitor notification. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    "Instagram's public profile-information documentation does not describe ordinary profile viewing as an action that sends the profile owner a visitor notification.",
   ),
   paragraph(
     'p-an-1',
@@ -374,8 +358,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-po-1',
-    "Sometimes, on Instagram itself. For public accounts, Meta says public posts can be visible through the account's web profile. (Instagram Help Center)",
-    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
+    "Sometimes, on Instagram itself. For public accounts, Meta says public posts can be visible through the account's web profile.",
   ),
   paragraph(
     'p-rl-2',
@@ -394,8 +377,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-bu-2',
-    'Yes, if they are public. Business accounts can also display additional public business information and action buttons depending on their setup. (Instagram Help Center)',
-    [{ href: IG_BUSINESS_BUTTON, label: 'Instagram Help Center', external: true }],
+    'Yes, if they are public. Business accounts can also display additional public business information and action buttons depending on their setup.',
   ),
   paragraph(
     'p-ce-2',
@@ -473,15 +455,6 @@ const BLOCKS: ArticleContentBlock[] = [
       'Enter an Instagram username to check the public profile information currently available for that account. No Instagram password is required.',
     label: 'Open Instagram Profile Viewer',
   },
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Meta says name, username, profile picture, bio, links and follower and following numbers are public to everyone on or off Instagram, including people without an account.',
-    'For a public Instagram account, Meta says anyone can see the profile and public posts through its Instagram web URL.',
-    'Making an account private restricts posts, Reels and Stories; it does not make every basic profile field invisible.',
-    'A public profile viewer cannot unlock private posts, Stories, DMs or restricted follower lists.',
-    'No Instagram password is required, but no website can honestly promise a completely untraceable visit.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

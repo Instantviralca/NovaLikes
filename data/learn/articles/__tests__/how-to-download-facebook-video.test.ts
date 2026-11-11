@@ -67,14 +67,14 @@ describe('Article #21 How to download a public Facebook video', () => {
       true,
     );
     expect(article.content).toContain(
-      'publicly viewable does not mean every Facebook video is technically downloadable',
+      'The NovaLikes downloader only works with public videos.',
     );
     expect(article.content).toContain(
-      'No Facebook password should be required',
+      'it never asks for your Facebook password',
     );
-    expect(article.content).toContain('not mean copyright-free');
+    expect(article.content).toContain('Public Does Not Mean Free to Reuse');
     expect(article.content).toContain(
-      'is not a private-video bypass',
+      'It cannot open Friends only videos, private group posts',
     );
     expect(article.content).not.toMatch(/every video in 4K/i);
     expect(

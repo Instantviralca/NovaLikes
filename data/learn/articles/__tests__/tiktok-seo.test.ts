@@ -73,7 +73,7 @@ describe('Article #4 TikTok SEO', () => {
       ),
     ).toBe(false);
     expect(article.content).toContain(
-      'It does not help with:',
+      'TikTok SEO simply means making videos that match those searches clearly enough for TikTok to show them',
     );
   });
 

@@ -68,10 +68,10 @@ describe('Article #15 How to get more likes on a Facebook post without ads', () 
       ),
     ).toBe(true);
     expect(article.content).toContain(
-      'engagement bait as content that pushes users to interact artificially',
+      'Facebook treats them as engagement bait and shows those posts to fewer people',
     );
     expect(article.content).toContain(
-      'There is no guaranteed algorithm formula.',
+      'There is no universal best time, though.',
     );
     expect(
       article.blocks.some(

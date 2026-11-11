@@ -23,22 +23,6 @@ const FB_FEEDS_TAB =
   'https://www.facebook.com/help/218728138156311';
 const FB_ORGANIC_PAID_POST_REACH =
   'https://www.facebook.com/help/285625061456389';
-const FB_RECOMMENDATIONS =
-  'https://www.facebook.com/help/1257205004624246';
-const FB_BUSINESS_SUITE_INSIGHTS =
-  'https://www.facebook.com/business/help/700570830721044';
-const FB_FEED_ORDER =
-  'https://www.facebook.com/help/fblite/520348825116417';
-const FB_FEED_POST_TYPES =
-  'https://www.facebook.com/help/166738576721085';
-const FB_PAGE_INSIGHTS_BUSINESS =
-  'https://www.facebook.com/business/help/144825579583746';
-const FB_SEE_PAGE_INSIGHTS =
-  'https://www.facebook.com/help/268680253165747';
-const FB_WHY_ADVERTISE =
-  'https://www.facebook.com/business/help/205029060038706';
-const FB_HASHTAGS =
-  'https://www.facebook.com/help/587836257914341';
 
 let order = 0;
 function nextOrder(): number {
@@ -126,8 +110,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-vs-imp', 'What Is the Difference Between Facebook Reach and Impressions?', 2),
   paragraph(
     'p-wr-1',
-    "Reach is a people-based visibility metric: the estimated number of people who saw content from your Page or about your Page. Impressions count the number of times that content entered someone's screen. Because people can see the same post more than once, Facebook tracks the two separately. (Facebook Help Center)",
-    [{ href: FB_VIEWS_REACH_IMPRESSIONS, label: 'Facebook Help Center', external: true }],
+    "Reach is a people-based visibility metric: the estimated number of people who saw content from your Page or about your Page. Impressions count the number of times that content entered someone's screen. Because people can see the same post more than once, Facebook tracks the two separately.",
   ),
   paragraph(
     'p-vi-8',
@@ -154,8 +137,7 @@ const BLOCKS: ArticleContentBlock[] = [
   heading('h-organic', 'What Is the Difference Between Organic and Paid Reach?', 2),
   paragraph(
     'p-org-1',
-    'Organic reach refers to people who had an unpaid post from your Page enter their screen. Paid reach refers to people who had a paid post from your Page enter their screen, through advertising or promotion. Meta keeps separate definitions for organic, paid and post reach. (Facebook Help Center)',
-    [{ href: FB_ORGANIC_PAID_POST_REACH, label: 'Facebook Help Center', external: true }],
+    'Organic reach refers to people who had an unpaid post from your Page enter their screen. Paid reach refers to people who had a paid post from your Page enter their screen, through advertising or promotion. Meta keeps separate definitions for organic, paid and post reach.',
   ),
   {
     id: 'table-reach-types',
@@ -170,13 +152,11 @@ const BLOCKS: ArticleContentBlock[] = [
   },
   paragraph(
     'p-th-3',
-    "One person can sometimes fall into more than one reporting category depending on how they encountered content, so these metrics should not simply be added together. Organic reach is also not the same as followers reached, since it can include people shown recommended content. Meta's reach metrics are estimates rather than exact counts of identified individual people. (Facebook Help Center)",
-    [{ href: FB_VIEWS_REACH_IMPRESSIONS, label: 'Facebook Help Center', external: true }],
+    "One person can sometimes fall into more than one reporting category depending on how they encountered content, so these metrics should not simply be added together. Organic reach is also not the same as followers reached, since it can include people shown recommended content. Meta's reach metrics are estimates rather than exact counts of identified individual people.",
   ),
   paragraph(
     'p-pd-6',
-    'Meta Business Suite exists partly to help businesses understand both paid and organic activity across their Meta presence. (Meta Business Help Center)',
-    [{ href: FB_BUSINESS_SUITE_INSIGHTS, label: 'Meta Business Help Center', external: true }],
+    'Meta Business Suite exists partly to help businesses understand both paid and organic activity across their Meta presence.',
   ),
 
   heading(
@@ -186,8 +166,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-na-2',
-    'Because the Facebook Feed is ranked. Meta says the default Feed uses ranking to show people posts considered relevant to them rather than displaying everything chronologically. Users can open a Feeds view for more recent content, but the normal Feed returns to ranked ordering. (Facebook Help Center)',
-    [{ href: FB_FEEDS_TAB, label: 'Facebook Help Center', external: true }],
+    'Because the Facebook Feed is ranked. Meta says the default Feed uses ranking to show people posts considered relevant to them rather than displaying everything chronologically. Users can open a Feeds view for more recent content, but the normal Feed returns to ranked ordering.',
   ),
   paragraph(
     'p-na-5',
@@ -207,13 +186,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-rk-1',
-    "Meta says posts higher in Feed can be influenced by people's activity and engagement with Facebook content. Its Help documentation gives examples such as the content someone watches, comments, likes, reactions and the type of post. (Facebook Help Center)",
-    [{ href: FB_FEED_POST_TYPES, label: 'Facebook Help Center', external: true }],
+    "Meta says posts higher in Feed can be influenced by people's activity and engagement with Facebook content. Its Help documentation gives examples such as the content someone watches, comments, likes, reactions and the type of post.",
   ),
   paragraph(
     'p-rk-4',
-    'Facebook also describes Feed ranking as personalized around the people, Pages, businesses and communities a person connects with, so two people who follow the same Page do not necessarily see the same Feed order. (Facebook Help Center)',
-    [{ href: FB_FEED_ORDER, label: 'Facebook Help Center', external: true }],
+    'Facebook also describes Feed ranking as personalized around the people, Pages, businesses and communities a person connects with, so two people who follow the same Page do not necessarily see the same Feed order.',
   ),
   paragraph(
     'p-rk-8',
@@ -227,8 +204,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hi-2',
-    'Yes. Facebook has recommendation experiences that surface content and Pages people do not already follow, including Suggested For You posts and Pages You May Like. (Facebook Help Center)',
-    [{ href: FB_RECOMMENDATIONS, label: 'Facebook Help Center', external: true }],
+    'Yes. Facebook has recommendation experiences that surface content and Pages people do not already follow, including Suggested For You posts and Pages You May Like.',
   ),
   paragraph(
     'p-nf-10',
@@ -242,8 +218,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ch-1',
-    "Different posts receive different reach because Feed and recommendations are personalized and content performance is not uniform. Meta says Feed ordering can reflect people's prior activity, engagement and the type of content involved. (Facebook Help Center)",
-    [{ href: FB_FEED_POST_TYPES, label: 'Facebook Help Center', external: true }],
+    "Different posts receive different reach because Feed and recommendations are personalized and content performance is not uniform. Meta says Feed ordering can reflect people's prior activity, engagement and the type of content involved.",
   ),
   paragraph(
     'p-ch-2',
@@ -264,13 +239,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-eg-1',
-    'Engagement and Feed distribution can be related, because Meta says signals such as likes, reactions and comments can contribute to what appears higher in Feed. But Facebook does not publish an equation in which each interaction creates a fixed amount of extra reach. (Facebook Help Center)',
-    [{ href: FB_FEED_POST_TYPES, label: 'Facebook Help Center', external: true }],
+    'Engagement and Feed distribution can be related, because Meta says signals such as likes, reactions and comments can contribute to what appears higher in Feed. But Facebook does not publish an equation in which each interaction creates a fixed amount of extra reach.',
   ),
   paragraph(
     'p-hr-1',
-    'Seeing content and reacting to it are separate actions. Someone can read or watch a post and keep scrolling, which adds to reach without creating a Like, so high reach with modest Likes is not a contradiction. Facebook itself separates Page reach from engagement and performance metrics in Insights. (Meta Business Help Center)',
-    [{ href: FB_PAGE_INSIGHTS_BUSINESS, label: 'Meta Business Help Center', external: true }],
+    'Seeing content and reacting to it are separate actions. Someone can read or watch a post and keep scrolling, which adds to reach without creating a Like, so high reach with modest Likes is not a contradiction. Facebook itself separates Page reach from engagement and performance metrics in Insights.',
   ),
   paragraph(
     'p-lr-2',
@@ -290,8 +263,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pv-2',
-    "Meta has described Page views as the number of times the Page's profile itself was viewed, while reach relates to people encountering content from or about the Page. Depending on the tool, Page views may be labelled differently or no longer shown. Someone who sees a Page post in Feed without opening the Page adds to reach but not to Page views. (Facebook Help Center)",
-    [{ href: FB_VIEWS_REACH_IMPRESSIONS, label: 'Facebook Help Center', external: true }],
+    "Meta has described Page views as the number of times the Page's profile itself was viewed, while reach relates to people encountering content from or about the Page. Depending on the tool, Page views may be labelled differently or no longer shown. Someone who sees a Page post in Feed without opening the Page adds to reach but not to Page views.",
   ),
   paragraph(
     'p-um-1',
@@ -311,13 +283,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-wh-1',
-    'Page owners can use Page Insights and Meta Business Suite. Meta says Page Insights can help you understand how people engage with the Page, view performance metrics, identify posts with stronger engagement and see when your audience is using Facebook. Page Insights data can currently be accessed for up to the previous two years. (Facebook Help Center)',
-    [{ href: FB_SEE_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
+    'Page owners can use Page Insights and Meta Business Suite. Meta says Page Insights can help you understand how people engage with the Page, view performance metrics, identify posts with stronger engagement and see when your audience is using Facebook. Page Insights data can currently be accessed for up to the previous two years.',
   ),
   paragraph(
     'p-wh-4',
-    "Meta Business Suite also provides insights covering organic and paid activity. These tools should be your main source for judging your own Page, because third-party \"average reach\" articles cannot know your Page better than your own analytics. (Meta Business Help Center)",
-    [{ href: FB_BUSINESS_SUITE_INSIGHTS, label: 'Meta Business Help Center', external: true }],
+    "Meta Business Suite also provides insights covering organic and paid activity. These tools should be your main source for judging your own Page, because third-party \"average reach\" articles cannot know your Page better than your own analytics.",
   ),
 
   heading(
@@ -339,8 +309,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-ev-12',
-    'One unusually strong or weak post does not define the entire Page, and patterns across several posts are more informative than one screenshot. Availability and reporting windows vary by metric. (Facebook Help Center)',
-    [{ href: FB_SEE_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
+    'One unusually strong or weak post does not define the entire Page, and patterns across several posts are more informative than one screenshot. Availability and reporting windows vary by metric.',
   ),
 
   heading(
@@ -350,8 +319,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-inc-2',
-    "There is no guaranteed formula. Facebook's own business guidance acknowledges that organic reach has limits, recommends regular Page publishing as one way to reach customers, and presents advertising as an option for businesses that want more reach. (Meta Business Help Center)",
-    [{ href: FB_WHY_ADVERTISE, label: 'Meta Business Help Center', external: true }],
+    "There is no guaranteed formula. Facebook's own business guidance acknowledges that organic reach has limits, recommends regular Page publishing as one way to reach customers, and presents advertising as an option for businesses that want more reach.",
   ),
   paragraph(
     'p-inc-3',
@@ -359,13 +327,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-tm-2',
-    'Posting time can matter because your audience is active at certain hours, and Meta says Page Insights can show when your audience is on Facebook. That is a better guide than a generic "best time to post", since Pages differ by country, industry and audience habits. (Facebook Help Center)',
-    [{ href: FB_SEE_PAGE_INSIGHTS, label: 'Facebook Help Center', external: true }],
+    'Posting time can matter because your audience is active at certain hours, and Meta says Page Insights can show when your audience is on Facebook. That is a better guide than a generic "best time to post", since Pages differ by country, industry and audience habits.',
   ),
   paragraph(
     'p-hs-1',
-    'Hashtags turn topics and phrases into clickable links that can help people find posts about subjects they are interested in. Facebook does not publish a hashtag-to-reach formula, so use a hashtag when it describes the subject rather than filling a caption with unrelated tags. (Facebook Help Center)',
-    [{ href: FB_HASHTAGS, label: 'Facebook Help Center', external: true }],
+    'Hashtags turn topics and phrases into clickable links that can help people find posts about subjects they are interested in. Facebook does not publish a hashtag-to-reach formula, so use a hashtag when it describes the subject rather than filling a caption with unrelated tags.',
   ),
 
   heading(
@@ -375,8 +341,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-dr-1',
-    'Meta says multiple factors can affect reach, and personalized ranking means different posts naturally receive different distribution. Before assuming one cause, check your recent content, audience response, organic versus paid distribution, format changes, publishing patterns and Page Insights. One decline does not prove a penalty, a "shadowban" or an account problem. (Facebook Help Center)',
-    [{ href: FB_ORGANIC_PAID_POST_REACH, label: 'Facebook Help Center', external: true }],
+    'Meta says multiple factors can affect reach, and personalized ranking means different posts naturally receive different distribution. Before assuming one cause, check your recent content, audience response, organic versus paid distribution, format changes, publishing patterns and Page Insights. One decline does not prove a penalty, a "shadowban" or an account problem.',
   ),
 
   heading(
@@ -387,12 +352,10 @@ const BLOCKS: ArticleContentBlock[] = [
   paragraph(
     'p-bf-1',
     "No. Meta's rules ban inauthentic engagement, and Meta may remove it. Bought followers, Page Likes or Post Likes don't make Facebook show your posts to more people.",
-    [{ href: 'https://transparency.meta.com/policies/community-standards/inauthentic-behavior/', label: "Meta's rules", external: true }],
   ),
   paragraph(
     'p-bf-4',
-    "Followers and Page Likes are Page-level metrics, while reach is a visibility metric. Facebook's own systems decide what people see through personalized ranking and recommendations, and Meta publishes no rule saying more followers or Likes produce a matching rise in reach. (Facebook Help Center)",
-    [{ href: FB_FEED_ORDER, label: 'Facebook Help Center', external: true }],
+    "Followers and Page Likes are Page-level metrics, while reach is a visibility metric. Facebook's own systems decide what people see through personalized ranking and recommendations, and Meta publishes no rule saying more followers or Likes produce a matching rise in reach.",
   ),
 
   heading(

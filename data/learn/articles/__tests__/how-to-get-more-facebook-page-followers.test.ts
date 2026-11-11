@@ -69,10 +69,10 @@ describe('Article #12 How to get more Facebook Page followers organically', () =
       ),
     ).toBe(true);
     expect(article.content).toContain(
-      'Why would someone who discovers this Page choose to keep seeing it?',
+      'Most people discover a Page through one post, glance at the Page, and decide in a few seconds whether more of the same would be worth seeing.',
     );
     expect(article.content).toContain(
-      'This is a planning framework, not a promise of follower numbers.',
+      'Growth takes time. Most Pages grow gradually through steady, useful posting',
     );
     expect(
       article.blocks.some(

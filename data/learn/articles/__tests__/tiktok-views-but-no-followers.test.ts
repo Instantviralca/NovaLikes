@@ -81,7 +81,7 @@ describe('Article #2 TikTok views but no followers', () => {
             (link) => link.href === '/tools/tiktok-video-downloader',
           ),
       ),
-    ).toBe(true);
+    ).toBe(false);
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

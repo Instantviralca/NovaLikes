@@ -25,12 +25,6 @@ const META_BEST_PRACTICES =
   'https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/';
 const IG_RANKING_EXPLAINED =
   'https://about.instagram.com/blog/announcements/instagram-ranking-explained';
-const IG_INSIGHTS =
-  'https://www.facebook.com/help/instagram/788388387972460';
-const IG_REEL_INSIGHTS =
-  'https://www.facebook.com/help/instagram/202865988324236';
-const IG_ACCOUNT_STATUS =
-  'https://www.facebook.com/help/instagram/338481628002750';
 const META_YOUR_ALGORITHM =
   'https://about.fb.com/news/2026/05/new-supervision-tools-parents-insights-teens-algorithm/';
 
@@ -216,9 +210,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-re-2',
-    'Reels are useful for reaching beyond your current audience, but that does not mean only Reel accounts grow or that photos are dead. Instagram lists Reels among the places where eligible public-account content may be recommended to people who do not follow the creator. (Instagram Help Center)',
-    [
-      { href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'Reels are useful for reaching beyond your current audience, but that does not mean only Reel accounts grow or that photos are dead. Instagram lists Reels among the places where eligible public-account content may be recommended to people who do not follow the creator.',
   ),
   paragraph(
     'p-re-5',
@@ -264,9 +256,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-sr-1',
-    'Describe the subject in natural language in the content, caption and on-screen text instead of stuffing a caption with repeated keywords. That clarity matters because Instagram lists Search among the non-follower discovery surfaces for eligible public content. (Instagram Help Center)',
-    [
-      { href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'Describe the subject in natural language in the content, caption and on-screen text instead of stuffing a caption with repeated keywords. That clarity matters because Instagram lists Search among the non-follower discovery surfaces for eligible public content.',
   ),
   paragraph(
     'p-ca-1',
@@ -274,8 +264,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ht-1',
-    "Use hashtags when they genuinely describe the content. Do not assume 30 hashtags equal more followers, 3 hashtags equal an algorithm boost, or one hidden hashtag killed your account. Instagram's Professional Dashboard Best Practices includes education on hashtags, which is a better guide than outdated universal rules. (Meta Newsroom)",
-    [{ href: META_BEST_PRACTICES, label: 'Meta Newsroom', external: true }],
+    "Use hashtags when they genuinely describe the content. Do not assume 30 hashtags equal more followers, 3 hashtags equal an algorithm boost, or one hidden hashtag killed your account. Instagram's Professional Dashboard Best Practices includes education on hashtags, which is a better guide than outdated universal rules.",
   ),
 
   heading(
@@ -350,9 +339,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pu-1',
-    "A private account restricts content to approved followers, so if your goal is reaching non-followers through Reels, Explore and Search, a public account fits that goal. Going public is an access setting, not an algorithm trick, and eligibility does not guarantee that the account or content will be recommended. Instagram's recommendation eligibility system applies to content from public accounts. (Instagram Help Center)",
-    [
-      { href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    "A private account restricts content to approved followers, so if your goal is reaching non-followers through Reels, Explore and Search, a public account fits that goal. Going public is an access setting, not an algorithm trick, and eligibility does not guarantee that the account or content will be recommended. Instagram's recommendation eligibility system applies to content from public accounts.",
   ),
   paragraph(
     'p-pu-6',
@@ -366,14 +353,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-el-2',
-    'Instagram says professional accounts can check Account Status to see whether their content may be eligible for recommendations to non-followers. Eligible content may be considered for Reels, Feed, Explore, Search and Suggested Accounts. (Instagram Help Center)',
-    [
-      { href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'Instagram says professional accounts can check Account Status to see whether their content may be eligible for recommendations to non-followers. Eligible content may be considered for Reels, Feed, Explore, Search and Suggested Accounts.',
   ),
   paragraph(
     'p-sh-2',
-    'One low-performing Reel does not prove a restriction, especially when other posts get normal views and followers keep interacting, so look at several posts and your Insights before drawing a conclusion. If discovery changes sharply, Account Status is more useful than assuming a shadowban, because Instagram lets you review whether account or content issues may lead to feature restrictions or other limitations. (Instagram Help Center)',
-    [{ href: IG_ACCOUNT_STATUS, label: 'Instagram Help Center', external: true }],
+    'One low-performing Reel does not prove a restriction, especially when other posts get normal views and followers keep interacting, so look at several posts and your Insights before drawing a conclusion. If discovery changes sharply, Account Status is more useful than assuming a shadowban, because Instagram lets you review whether account or content issues may lead to feature restrictions or other limitations.',
   ),
 
   heading(
@@ -383,8 +367,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-in-2',
-    "Insights are available to professional accounts and show more than a headline follower total. Instagram's documentation says follower Insights can include Growth, meaning followers gained or lost, plus follower locations, age ranges and when followers are most active. (Instagram Help Center)",
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
+    "Insights are available to professional accounts and show more than a headline follower total. Instagram's documentation says follower Insights can include Growth, meaning followers gained or lost, plus follower locations, age ranges and when followers are most active.",
   ),
   paragraph(
     'p-in-3',
@@ -392,13 +375,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nf-1',
-    'A post that mostly reaches existing followers helps retention, while one that reaches many non-followers helps discovery. Neither is automatically better, and a healthy account usually needs both. Instagram Insights can break engagement information down between followers and non-followers on supported content. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
+    'A post that mostly reaches existing followers helps retention, while one that reaches many non-followers helps discovery. Neither is automatically better, and a healthy account usually needs both. Instagram Insights can break engagement information down between followers and non-followers on supported content.',
   ),
   paragraph(
     'p-vw-2',
-    "Do not judge posts by views alone. In a hypothetical example, Reel A gets 150,000 views and 50 new followers while Reel B gets 35,000 views and 400 new followers. Those are not benchmarks, but they show that the biggest view count does not always produce the strongest follower growth. Instagram's Reel Insights track Views, Accounts reached, Watch time and interactions separately from follower totals. (Instagram Help Center)",
-    [{ href: IG_REEL_INSIGHTS, label: 'Instagram Help Center', external: true }],
+    "Do not judge posts by views alone. In a hypothetical example, Reel A gets 150,000 views and 50 new followers while Reel B gets 35,000 views and 400 new followers. Those are not benchmarks, but they show that the biggest view count does not always produce the strongest follower growth. Instagram's Reel Insights track Views, Accounts reached, Watch time and interactions separately from follower totals.",
   ),
   paragraph(
     'p-vf-7',
@@ -436,8 +417,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ti-1',
-    'Treat the active-times data as a test, not a rule. Posting when followers are active can help content meet the audience, but it cannot rescue irrelevant content. Instagram Insights can show when followers are most active for accounts with the relevant follower data. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
+    'Treat the active-times data as a test, not a rule. Posting when followers are active can help content meet the audience, but it cannot rescue irrelevant content. Instagram Insights can show when followers are most active for accounts with the relevant follower data.',
   ),
 
   heading(
@@ -447,8 +427,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-ho-1',
-    'There is no single schedule that fits every creator. Meta says the Best Practices Creation section can cover posting frequency, capturing attention, Reel length, trending audio and hashtags, and the Reach section covers algorithms and the relationship between Reels and follower growth, with personalized tips based on account performance. (Meta Newsroom)',
-    [{ href: META_BEST_PRACTICES, label: 'Meta Newsroom', external: true }],
+    'There is no single schedule that fits every creator. Meta says the Best Practices Creation section can cover posting frequency, capturing attention, Reel length, trending audio and hashtags, and the Reach section covers algorithms and the relationship between Reels and follower growth, with personalized tips based on account performance.',
   ),
   paragraph(
     'p-pb-3',
@@ -543,17 +522,6 @@ const BLOCKS: ArticleContentBlock[] = [
     'p-av-3',
     'Organic growth works as a loop: create, get discovered, attract profile visits, gain some followers, study Insights, learn what attracted them and make stronger related content. The goal is not a bigger number under Followers but an audience that understands why it should keep following.',
   ),
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Instagram can recommend eligible public-account content to non-followers through Reels, Feed, Explore, Search and Suggested Accounts.',
-    'Recommendation eligibility does not guarantee recommendation or reach.',
-    'Instagram Insights can show followers gained and lost as part of follower Growth data.',
-    'Professional Dashboard Best Practices provides current guidance across creation, engagement, reach, monetization and guidelines, including personalized tips.',
-    'Meta reported that 75% of Instagram recommendations in the US were coming from original posts after an increase in original-content prevalence in Q4 2025.',
-    'Instagram uses different ranking systems across surfaces such as Feed, Stories, Explore and Reels rather than one universal algorithm.',
-    'Follower count is not a guarantee of views, reach, engagement or business results.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

@@ -67,13 +67,13 @@ describe('Article #18 Why Facebook Page followers drop or change', () => {
       ),
     ).toBe(true);
     expect(article.content).toContain(
-      'liked a Page but did not follow it',
+      'connections that were only Likes, without a follow, were removed during the transition',
     );
     expect(article.content).toContain(
-      'Page Like Insights have been replaced by Follow Insights',
+      'Page Likes have been replaced by follows in Meta Business Suite',
     );
     expect(article.content).toContain(
-      'There is no official Meta rule saying Facebook deletes Page followers merely because a Page did not publish',
+      'Facebook does not delete followers because a Page stopped posting for a while.',
     );
     expect(article.content).not.toMatch(/Facebook removes 8%/i);
     expect(article.content).not.toMatch(/shadowban/i);

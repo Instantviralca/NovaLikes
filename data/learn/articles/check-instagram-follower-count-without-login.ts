@@ -30,10 +30,6 @@ const IG_INSIGHTS =
   'https://www.facebook.com/help/instagram/788388387972460';
 const IG_WHO_CAN_SEE_POSTS =
   'https://www.facebook.com/help/instagram/183881842314338';
-const IG_SEARCH_ACCOUNTS =
-  'https://www.facebook.com/help/instagram/415595770433263';
-const IG_SEARCH =
-  'https://www.facebook.com/help/instagram/1482378711987121';
 const IG_EMBED =
   'https://www.facebook.com/help/instagram/620154495870484';
 
@@ -116,8 +112,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-fg-4',
-    'Profiles also show a following count, which is the number of accounts the profile itself follows. Meta lists both the number of followers and following as public profile information. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Profiles also show a following count, which is the number of accounts the profile itself follows. Meta lists both the number of followers and following as public profile information.',
   ),
   paragraph(
     'p-wh-6',
@@ -138,8 +133,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-nl-2',
-    "Yes. Meta says the number of followers and following is public to everyone on or off Instagram, including people who don't have an Instagram account. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    "Yes. Meta says the number of followers and following is public to everyone on or off Instagram, including people who don't have an Instagram account.",
   ),
   paragraph(
     'p-nl-3',
@@ -209,8 +203,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-pc-1',
-    'Yes. Meta specifically says the number of followers and following remains public regardless of whether a personal account is private or public. (Instagram Help Center)',
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    'Yes. Meta specifically says the number of followers and following remains public regardless of whether a personal account is private or public.',
   ),
   paragraph(
     'p-pc-3',
@@ -254,8 +247,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-hi-5',
-    "No. Meta says the number of followers and following can't be hidden and remains public regardless of whether the personal account is private or public. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PROFILE_INFO, label: 'Instagram Help Center', external: true }],
+    "No. Meta says the number of followers and following can't be hidden and remains public regardless of whether the personal account is private or public.",
   ),
   paragraph(
     'p-ch-2',
@@ -329,8 +321,7 @@ const BLOCKS: ArticleContentBlock[] = [
   ),
   paragraph(
     'p-eg-4',
-    'Not automatically. Follower count measures audience size, while engagement and reach describe what happens to content, and Instagram Insights treats follower information and content performance as separate categories. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
+    'Not automatically. Follower count measures audience size, while engagement and reach describe what happens to content, and Instagram Insights treats follower information and content performance as separate categories.',
   ),
   paragraph(
     'p-rc-4',
@@ -393,13 +384,11 @@ const BLOCKS: ArticleContentBlock[] = [
   ]),
   paragraph(
     'p-mi-4',
-    "The tool will not present the closest match or another account's number as the profile you asked for. Display names can contain spaces, change or be shared by several accounts, so confirm the current username first. Instagram says some accounts may require using the exact username to find them in Search. (Instagram Help Center)",
-    [{ href: IG_SEARCH_ACCOUNTS, label: 'Instagram Help Center', external: true }],
+    "The tool will not present the closest match or another account's number as the profile you asked for. Display names can contain spaces, change or be shared by several accounts, so confirm the current username first. Instagram says some accounts may require using the exact username to find them in Search.",
   ),
   paragraph(
     'p-fn-2',
-    "To find a username, open the account's profile or use Instagram Search, which lets users search for people and topics through Search and Explore. (Instagram Help Center)",
-    [{ href: IG_SEARCH, label: 'Instagram Help Center', external: true }],
+    "To find a username, open the account's profile or use Instagram Search, which lets users search for people and topics through Search and Explore.",
   ),
 
   heading('h-tool-facts', "What the Follower Counter Does and Doesn't Do", 2),
@@ -431,16 +420,6 @@ const BLOCKS: ArticleContentBlock[] = [
       'Enter an Instagram username to check the follower count currently available from its public profile information. No Instagram password is required.',
     label: 'Open Instagram Follower Counter',
   },
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Meta says the number of Instagram followers and following is public profile information for both public and private accounts, visible even to people without an Instagram account.',
-    'A private account still restricts its posts to approved followers, and its follower list can be restricted even though the count is public.',
-    'Abbreviated counts such as 104M are shown as published; they are not proof of an exact number.',
-    'Instagram Insights, available to owners of professional accounts, shows followers gained and lost; a public counter does not expose those analytics.',
-    'No Instagram password is required to check a public follower count.',
-    'A follower counter cannot reveal private follower identities, private posts, fake-follower percentages or private Instagram analytics.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {

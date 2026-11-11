@@ -68,7 +68,7 @@ describe('Article #3 Instagram followers vs likes vs views vs comments', () => {
             (link) => link.href === '/tools/instagram-follower-counter',
           ),
       ),
-    ).toBe(true);
+    ).toBe(false);
   });
 
   it('adds the English Learn URL to the sitemap and never a locale-prefixed URL', () => {

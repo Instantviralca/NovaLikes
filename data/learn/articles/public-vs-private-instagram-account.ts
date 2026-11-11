@@ -15,6 +15,8 @@ const SLUG = 'public-vs-private-instagram-account';
 const SCHEDULED_AT = '2026-09-23T08:00:00.000Z';
 /** Public live date - NovaLikes production launch (registry commit 23c2480). Editorial target remains SCHEDULED_AT. */
 const PUBLISHED_AT = '2026-08-22T08:00:00.000Z';
+/** Full reader revision: tighter copy, fewer repeated source links. */
+const UPDATED_AT = '2026-11-11T10:00:00.000Z';
 const IMAGE_DIR = `/assets/images/learn/${SLUG}`;
 
 const IG_WHO_CAN_SEE_POSTS =
@@ -25,18 +27,8 @@ const IG_INSIGHTS =
   'https://www.facebook.com/help/instagram/788388387972460';
 const IG_PROFESSIONAL_ACCOUNTS =
   'https://www.facebook.com/help/instagram/138925576505882';
-const IG_WEB_PROFILE =
-  'https://www.facebook.com/help/instagram/365041933611384';
-const IG_RECOMMENDATIONS =
-  'https://www.facebook.com/help/instagram/313829416281232';
-const IG_ACCOUNT_STATUS =
-  'https://www.facebook.com/help/instagram/338481628002750';
-const IG_PUBLIC_PRIVATE_DIFFERENCES =
-  'https://www.facebook.com/help/instagram/517073653436611';
 const IG_MAKE_PRIVATE =
   'https://www.facebook.com/help/instagram/448523408565555';
-const IG_ACCOUNT_CONTENT_INSIGHTS =
-  'https://www.facebook.com/help/instagram/1533933820244654';
 
 let order = 0;
 function nextOrder(): number {
@@ -96,76 +88,28 @@ function figure(
 
 const BLOCKS: ArticleContentBlock[] = [
   paragraph(
-    'p-open-1',
-    'Making an Instagram account private changes much more than whether strangers can immediately see your posts.',
-  ),
-  paragraph('p-open-2', 'It changes:'),
-  bullets('ul-open', [
-    'who can access your content,',
-    'how new followers are approved,',
-    'whether your content can be recommended broadly to non-followers,',
-    'and which account features are available.',
-  ]),
-  paragraph(
-    'p-open-3',
-    'Instagram states that posts from a private account are visible only to approved followers, while posts from a public account can be seen by anyone on Instagram. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
+    'p-1',
+    'The privacy switch on Instagram looks like a small setting, but it changes who can see your posts, how new people follow you, whether Instagram can show your content to strangers, and which tools you keep. The right choice depends on what the account is for, so it helps to know exactly what each setting does before you flip it.',
   ),
   paragraph(
-    'p-open-4',
-    "Public accounts also have a major discovery advantage: Instagram's recommendation system considers content from public accounts for surfaces including Reels, Explore, Feed Recommendations, Search and Suggested Accounts. Recommendation eligibility does not guarantee that Instagram will recommend a post, but a private account does not participate in that same broad public recommendation model. (Instagram Help Center)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'p-2',
+    'In short, Instagram says posts from a private account are visible only to approved followers, while posts from a public account can be seen by anyone on Instagram. Almost every other difference between the two settings follows from that one rule.',
+    [
+      { href: IG_WHO_CAN_SEE_POSTS, label: 'posts from a private account are visible only to approved followers', external: true },
+    ],
   ),
-  paragraph('p-open-5', 'So the difference is not simply:'),
-  paragraph('p-open-6', 'Public = everyone sees everything'),
-  paragraph('p-open-7', 'and:'),
-  paragraph('p-open-8', 'Private = nobody can find you'),
-  paragraph('p-open-9', 'A better way to think about it is:'),
+  heading('h-what-a-private-instagram-account-does', 'What a Private Instagram Account Does', 2),
   paragraph(
-    'p-open-10',
-    'Public = broader content accessibility and recommendation potential',
+    'p-3',
+    'On a private account, someone who finds your profile can see your name, photo, bio and follower counts, but not your posts. To see them, they send a follow request and wait for you to approve it. You can approve or decline each request, and you can remove existing followers at any time.',
   ),
   paragraph(
-    'p-open-11',
-    'Private = controlled content access through follower approval',
-  ),
-  paragraph('p-open-12', 'Both options serve legitimate purposes.'),
-  paragraph(
-    'p-open-13',
-    'The right choice depends on what you want the account to accomplish.',
-  ),
-
-  heading('h-private-what', 'What Is a Private Instagram Account?', 2),
-  paragraph(
-    'p-priv-1',
-    'A private Instagram account restricts access to its posts to people the account owner has approved as followers. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
+    'p-4',
+    'That approval step is the whole point. It gives you control over exactly who sees your photos, Reels and Stories, which is why private accounts suit personal profiles, family accounts and anyone who would rather not share content with strangers.',
   ),
   paragraph(
-    'p-priv-2',
-    'That means someone discovering the account cannot simply open the profile and browse the full content library in the same way they can with a public account.',
-  ),
-  paragraph(
-    'p-priv-3',
-    'Instead, the relationship generally becomes:',
-  ),
-  bullets('ul-priv-flow', [
-    'Discover profile',
-    'Send follow request',
-    'Account owner approves',
-    'Follower gains access to private posts',
-  ]),
-  paragraph(
-    'p-priv-4',
-    'This gives the account owner substantially more control over who sees their content.',
-  ),
-  paragraph(
-    'p-priv-5',
-    'For personal users, that can be exactly what they want.',
-  ),
-  paragraph(
-    'p-priv-6',
-    'For creators or businesses whose goal is broad discovery, it introduces an intentional barrier between discovery and content access.',
+    'p-5',
+    'The trade off is discovery. A person who lands on a private profile cannot browse a few posts to decide whether the account is worth following. They have to request access first, which is a bigger ask than tapping Follow on a profile they have already enjoyed.',
   ),
   figure(
     'fig-compare',
@@ -173,90 +117,16 @@ const BLOCKS: ArticleContentBlock[] = [
     'Public vs Private Instagram: broader visibility versus approved-follower access',
     'Private prioritizes control. Public prioritizes accessibility. Recommendation eligibility does not guarantee reach.',
   ),
-
-  heading('h-public-what', 'What Is a Public Instagram Account?', 2),
+  heading('h-what-a-public-instagram-account-does', 'What a Public Instagram Account Does', 2),
   paragraph(
-    'p-pub-1',
-    'A public Instagram account allows anyone on Instagram to see its public posts. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
+    'p-6',
+    'On a public account, anyone on Instagram can see your posts, and anyone with the link can open your profile on the web. People can follow you without waiting for approval.',
   ),
   paragraph(
-    'p-pub-2',
-    "Public profiles can also be viewed through Instagram's web experience. Meta says that if an account is public, anyone can view its profile and posts by visiting its Instagram web URL. (Instagram Help Center)",
-    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
+    'p-7',
+    'Public status also makes your content eligible to be shown to people who do not follow you. Instagram lists Reels, Explore, Search, Feed recommendations and Suggested Accounts as the places where this can happen, and it is clear that being eligible is not the same as being recommended. A public account can still get very little reach if its content does not interest the people Instagram tests it with.',
   ),
-  paragraph(
-    'p-pub-3',
-    'This makes public status a natural fit for accounts whose purpose includes:',
-  ),
-  bullets('ul-pub-goals', [
-    'creator discovery,',
-    'brand visibility,',
-    'business marketing,',
-    'public education,',
-    'community building,',
-    'or reaching people who do not already follow them.',
-  ]),
-  paragraph(
-    'p-pub-4',
-    'But public does not mean Instagram guarantees reach.',
-  ),
-  paragraph(
-    'p-pub-5',
-    'It simply means content can participate in broader public visibility and recommendation opportunities.',
-  ),
-  paragraph(
-    'p-pub-6',
-    'Whether Instagram actually recommends a particular account or piece of content depends on its recommendation systems and eligibility. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-
-  heading(
-    'h-found',
-    'Can a Private Instagram Account Be Found?',
-    2,
-  ),
-  paragraph(
-    'p-found-1',
-    'Private does not mean deleted or nonexistent.',
-  ),
-  paragraph(
-    'p-found-2',
-    'Instagram maintains different controls for:',
-  ),
-  bullets('ul-found', [
-    'profile visibility,',
-    'post visibility,',
-    'following,',
-    'comments,',
-    'and other interactions.',
-  ]),
-  paragraph(
-    'p-found-3',
-    'The key restriction documented by Instagram is that private-account posts are visible only to approved followers. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph('p-found-4', 'So the useful distinction is:'),
-  bullets('ul-found-diff', [
-    'finding an account',
-    'versus seeing its private content.',
-  ]),
-  paragraph('p-found-5', 'Those are different things.'),
-  paragraph(
-    'p-found-6',
-    'So a private profile is not “completely invisible on Instagram.”',
-  ),
-  paragraph(
-    'p-found-7',
-    'That would oversimplify what the privacy setting actually does.',
-  ),
-
-  heading(
-    'h-main-diff',
-    'Public vs Private Instagram: The Main Difference',
-    2,
-  ),
-  paragraph('p-diff-1', 'The simplest comparison is:'),
+  heading('h-public-vs-private-at-a-glance', 'Public vs Private at a Glance', 2),
   {
     id: 'table-main-diff',
     type: 'comparison_table',
@@ -275,72 +145,26 @@ const BLOCKS: ArticleContentBlock[] = [
     ],
   },
   paragraph(
-    'p-diff-2',
-    'The recommendation point is where people often get confused.',
+    'p-8',
+    'The recommendation row is where most confusion comes from. Instagram does not punish private accounts with a hidden penalty. Private posts simply sit outside the recommendation system because you chose to limit them to approved followers. Going public removes that barrier, but it does not decide how well your content performs once it is eligible.',
   ),
+  heading('h-does-making-your-instagram-private-reduc', 'Does Making Your Instagram Private Reduce Reach?', 2),
   paragraph(
-    'p-diff-3',
-    'Instagram says public-account content can be eligible to appear to non-followers through Reels, Feed, Explore, Search and Suggested Accounts. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph('p-diff-4', 'Eligible does not mean guaranteed.'),
-  paragraph(
-    'p-diff-5',
-    'A public account can still receive very little reach.',
-  ),
-  paragraph(
-    'p-diff-6',
-    "A private account's reduced discovery is also not an algorithmic punishment.",
-  ),
-  paragraph(
-    'p-diff-7',
-    'It is a consequence of choosing restricted content access.',
-  ),
-
-  heading(
-    'h-reach',
-    'Does Making Instagram Private Reduce Reach?',
-    2,
-  ),
-  paragraph(
-    'p-reach-1',
-    'This question needs a more precise answer.',
-  ),
-  paragraph(
-    'p-reach-2',
-    'Making an account private restricts post visibility to approved followers. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-reach-3',
-    'Public-account recommendation eligibility, meanwhile, allows eligible accounts and content to potentially appear to non-followers across Reels, Explore, Feed Recommendations, Search and Suggested Accounts. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-reach-4',
-    'So if by reach you mean potential exposure beyond your existing approved followers, then a private account naturally has less public discovery opportunity.',
-  ),
-  paragraph(
-    'p-reach-5',
-    'But do not say “Instagram penalizes private accounts.”',
-  ),
-  paragraph(
-    'p-reach-6',
-    'That suggests an artificial ranking penalty.',
-  ),
-  paragraph('p-reach-7', 'A better explanation is:'),
-  paragraph(
-    'p-reach-8',
-    'Private accounts intentionally restrict who can access their content, so they do not have the same public discovery opportunities as public accounts.',
-  ),
-  paragraph(
-    'p-reach-9',
-    'Those discovery surfaces are also part of how the Instagram algorithm works, which is a separate system from the public/private toggle itself.',
+    'p-9',
+    'It reduces the number of people who can possibly see your posts. On a private account, your audience is your approved followers. On a public account, your audience is your followers plus anyone Instagram decides to show your content to through its recommendation eligibility rules.',
     [
-      {
-        href: '/learn/how-instagram-algorithm-works',
-        label: 'how the Instagram algorithm works',
-      },
+      { href: IG_RECOMMENDATION_ELIGIBILITY, label: 'recommendation eligibility rules', external: true },
+    ],
+  ),
+  paragraph(
+    'p-10',
+    'So if reach to you means new people finding your work, a private account has far less of it by design. If reach means your existing followers seeing what you post, privacy makes little difference, because approved followers still see your posts in their feed and Stories as normal.',
+  ),
+  paragraph(
+    'p-11',
+    'The same logic answers the Explore question. Explore, Reels recommendations and Suggested Accounts are discovery features built on public content, so private posts are not candidates for them. If you want to understand what decides which public posts get picked, our guide on how the Instagram algorithm works covers the signals involved.',
+    [
+      { href: '/learn/how-instagram-algorithm-works', label: 'how the Instagram algorithm works' },
     ],
   ),
   figure(
@@ -349,287 +173,45 @@ const BLOCKS: ArticleContentBlock[] = [
     'Audience access: private content stays with approved followers while public content can also reach non-followers through discovery surfaces',
     'Public status creates discovery opportunities. It does not guarantee distribution.',
   ),
-
-  heading(
-    'h-explore',
-    'Can Private Instagram Posts Appear in Explore?',
-    2,
+  heading('h-can-a-private-account-still-gain-followe', 'Can a Private Account Still Gain Followers?', 2),
+  paragraph(
+    'p-12',
+    'Yes. Private accounts gain followers through requests, and many personal accounts grow steadily this way through friends, mutual connections and people who already know them.',
   ),
   paragraph(
-    'p-ex-1',
-    "Instagram's recommendation eligibility documentation specifically describes recommendations using content from public accounts. These recommendations may appear in Explore, Reels, Feed, Search and Suggested Accounts. (Instagram Help Center)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'p-13',
+    'What changes is the journey. On a public account, people usually discover a post, look through a few more, then follow. On a private account, they see only the profile, decide whether to request access, then wait. That extra step costs you some followers who would have followed after seeing your content, which is the price of control.',
   ),
   paragraph(
-    'p-ex-2',
-    'Therefore, a private account should not be treated as a normal candidate for broad non-follower Explore recommendations.',
-  ),
-  paragraph('p-ex-3', 'That makes sense.'),
-  paragraph('p-ex-4', 'Explore is a discovery experience.'),
-  paragraph(
-    'p-ex-5',
-    'A private account has explicitly restricted its content to approved followers.',
-  ),
-  paragraph(
-    'p-ex-6',
-    'The two goals are fundamentally different.',
-  ),
-
-  heading(
-    'h-reels',
-    'Can Private Instagram Reels Reach Non-Followers?',
-    2,
-  ),
-  paragraph(
-    'p-rl-1',
-    'Do not think of private-account Reels as equivalent to public Reels designed for broad discovery.',
-  ),
-  paragraph(
-    'p-rl-2',
-    'Private-account posts are available to approved followers rather than anyone on Instagram. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-rl-3',
-    'Public accounts, on the other hand, can be eligible for non-follower recommendations through Reels and other surfaces. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-rl-4',
-    'So if your main objective is Reels discovery among people who do not follow you, public status is more aligned with that goal.',
-  ),
-  paragraph(
-    'p-rl-5',
-    'This still does not mean a public Reel equals guaranteed non-follower reach.',
-  ),
-  paragraph(
-    'p-rl-6',
-    'Recommendation eligibility is only eligibility.',
-  ),
-  paragraph(
-    'p-rl-7',
-    'Even then, a Reel view is a playback metric, not proof that the account reached a unique new follower. Our earlier guide on how Instagram Reel views are counted explains that distinction.',
+    'p-14',
+    'Switching to private does not remove anyone who already follows you. Your follower list stays the same, and you manage individual followers separately. If your count does fall after a change, our guide on why Instagram followers drop explains the usual reasons, such as unfollows, deactivated accounts and spam removal.',
     [
-      {
-        href: '/learn/how-instagram-reels-views-are-counted',
-        label: 'how Instagram Reel views are counted',
-      },
+      { href: '/learn/why-instagram-followers-drop', label: 'why Instagram followers drop' },
     ],
   ),
-
-  heading(
-    'h-views',
-    'Does a Public Account Automatically Get More Views?',
-    2,
-  ),
-  paragraph('p-vw-1', 'No.'),
+  heading('h-professional-accounts-cannot-be-private', 'Professional Accounts Cannot Be Private', 2),
   paragraph(
-    'p-vw-2',
-    'Public status creates accessibility.',
-  ),
-  paragraph(
-    'p-vw-3',
-    'It does not produce a guaranteed number of views.',
-  ),
-  paragraph(
-    'p-vw-4',
-    "Instagram's recommendations are personalized, meaning content can be selected differently for different people based on what Instagram predicts will be relevant or valuable to them. (Instagram Help Center)",
-    [{ href: IG_RECOMMENDATIONS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph('p-vw-5', 'So a public account does not equal:'),
-  bullets('ul-vw-not', [
-    'high reach',
-    'viral Reels',
-    'or Explore placement.',
-  ]),
-  paragraph(
-    'p-vw-6',
-    'A public account has the opportunity to participate in broader discovery.',
-  ),
-  paragraph(
-    'p-vw-7',
-    'Performance remains a separate question.',
-  ),
-
-  heading(
-    'h-gain',
-    'Can a Private Instagram Account Gain Followers?',
-    2,
-  ),
-  paragraph('p-gain-1', 'Yes.'),
-  paragraph(
-    'p-gain-2',
-    'Private accounts are specifically built around an approval-based follower model.',
-  ),
-  paragraph('p-gain-3', 'People can request to follow.'),
-  paragraph(
-    'p-gain-4',
-    'The account owner can approve or decline them.',
-  ),
-  paragraph(
-    'p-gain-5',
-    "The difference is that prospective followers cannot evaluate the account's private posts in the same way they can browse the full content of a public profile.",
-  ),
-  paragraph(
-    'p-gain-6',
-    'That can change the follower journey.',
-  ),
-  heading('h-public-journey', 'Public Journey', 3),
-  bullets('ul-pub-journey', [
-    'Discover content',
-    'See more posts',
-    'Evaluate profile',
-    'Follow',
-  ]),
-  heading('h-private-journey', 'Private Journey', 3),
-  bullets('ul-priv-journey', [
-    'Discover profile',
-    'See limited public-facing profile context',
-    'Request follow',
-    'Wait for approval',
-    'Access content',
-  ]),
-  paragraph(
-    'p-gain-7',
-    'That extra friction is intentional.',
-  ),
-  paragraph('p-gain-8', 'It is the privacy benefit.'),
-
-  heading(
-    'h-remove',
-    'Does Making Your Account Private Remove Followers?',
-    2,
-  ),
-  paragraph('p-rm-1', 'Do not assume so.'),
-  paragraph(
-    'p-rm-2',
-    'Switching privacy status and manually removing followers are separate actions.',
-  ),
-  paragraph(
-    'p-rm-3',
-    'The private setting changes access rules for the account.',
-  ),
-  paragraph(
-    'p-rm-4',
-    'It is not the same thing as deleting the follower list.',
-  ),
-  paragraph(
-    'p-rm-5',
-    "If there are specific existing followers you do not want to retain, manage those relationships separately through Instagram's follower controls.",
-  ),
-  paragraph(
-    'p-rm-6',
-    'Follower totals can also change for other reasons, which is why our earlier guide on why Instagram followers can drop treats privacy switches as distinct from unfollows, disabled accounts or spam removal.',
+    'p-15',
+    'This is the rule that catches creators and businesses out. Instagram says professional accounts cannot be set to private. Creator and business accounts are always public.',
     [
-      {
-        href: '/learn/why-instagram-followers-drop',
-        label: 'why Instagram followers can drop',
-      },
+      { href: IG_PROFESSIONAL_ACCOUNTS, label: 'professional accounts cannot be set to private', external: true },
     ],
   ),
-
-  heading(
-    'h-pending',
-    'What Happens to Pending Requests When You Go Public?',
-    2,
-  ),
   paragraph(
-    'p-pend-1',
-    "This is one place where Instagram's current professional-account documentation provides an important warning.",
+    'p-16',
+    'That matters for three reasons:',
   ),
-  paragraph(
-    'p-pend-2',
-    'Meta says that when switching to a professional account/public setup, pending follow requests are automatically accepted when you go public. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-pend-3',
-    'That means someone with a private personal account should review their pending requests before changing account type/privacy if that matters to them.',
-  ),
-  paragraph(
-    'p-pend-4',
-    'Do not assume those requests simply disappear.',
-  ),
-
-  heading(
-    'h-pro',
-    'Can a Professional Instagram Account Be Private?',
-    2,
-  ),
-  paragraph('p-pro-1', 'No.'),
-  paragraph(
-    'p-pro-2',
-    "Instagram's current Help Center states that professional accounts cannot be set to private. (Instagram Help Center)",
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-pro-3',
-    'Professional accounts include creator and business account types.',
-  ),
-  paragraph(
-    'p-pro-4',
-    'This is a major practical difference.',
-  ),
-  paragraph('p-pro-5', 'If you need:'),
-  bullets('ul-pro-need', [
-    'business/creator tools,',
-    'professional analytics,',
-    'and other professional-account features,',
+  bullets('ul-1', [
+    'If you want a private account, you first have to switch back to a personal account.',
+    'Switching back to personal removes access to Insights.',
+    'If you move from a private personal account to a professional one, Instagram automatically accepts any pending follow requests, so review them first if that matters to you.',
   ]),
   paragraph(
-    'p-pro-6',
-    "you are operating under Instagram's public professional-account model.",
-  ),
-  paragraph(
-    'p-pro-7',
-    'If privacy is your main priority, a personal private account may fit better.',
-  ),
-
-  heading(
-    'h-why-pro',
-    "Why Can't Professional Accounts Be Private?",
-    2,
-  ),
-  paragraph(
-    'p-wp-1',
-    'The useful way to understand this is that professional accounts are built around public-facing creator/business functionality.',
-  ),
-  paragraph(
-    'p-wp-2',
-    "Meta's documentation simply establishes that professional accounts cannot be private. (Instagram Help Center)",
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-wp-4',
-    'For users, the practical tradeoff is enough:',
-  ),
-  paragraph('p-wp-5', 'Professional tools → public account'),
-  paragraph(
-    'p-wp-6',
-    'Private audience control → personal private account',
-  ),
-
-  heading(
-    'h-insights-lose',
-    'Do You Lose Instagram Insights When You Go Private?',
-    2,
-  ),
-  paragraph(
-    'p-ins-1',
-    'Yes. Instagram Insights is only available on professional (creator or business) accounts, and professional accounts cannot be private. So switching to a private account means switching back to a personal account, which removes access to Insights. Past insights may become available again if you later return to a professional account. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-ins-2',
-    'That is an important consideration for creators and businesses.',
-  ),
-  paragraph(
-    'p-ins-3',
-    'Before switching away from a professional/public account, understand that analytics access can change.',
-  ),
-  paragraph(
-    'p-ins-4',
-    'If Insights matter to your content strategy, that is part of the privacy tradeoff.',
+    'p-17',
+    'On Insights, Instagram\'s help pages say that Insights are only available on professional accounts, and that past data may come back if you later return to a professional account. If you rely on numbers such as reach, profile visits and follower activity to plan content, losing them is a real cost of going private.',
+    [
+      { href: IG_INSIGHTS, label: 'Insights are only available on professional accounts', external: true },
+    ],
   ),
   figure(
     'fig-tools',
@@ -637,598 +219,65 @@ const BLOCKS: ArticleContentBlock[] = [
     'Privacy versus creator tools: a private account emphasizes approved followers while a public professional account provides Insights and discovery eligibility',
     'Professional Instagram accounts cannot be private.',
   ),
-
-  heading(
-    'h-shadowban',
-    'Does Going Private Help With “Shadowban” Problems?',
-    2,
+  heading('h-common-myths-about-switching', 'Common Myths About Switching', 2),
+  paragraph(
+    'p-18',
+    'A few tactics get passed around online that are worth clearing up.',
   ),
   paragraph(
-    'p-sb-1',
-    'There is no reason to recommend switching private as a universal shadowban fix.',
+    'p-19',
+    'Going private for a few days does not reset your reach or fix a suspected shadowban. If you think your account has been limited, check Account Status in your settings, which shows any restrictions and whether your content can be recommended.',
   ),
   paragraph(
-    'p-sb-2',
-    'If you suspect an actual account restriction, Instagram provides Account Status so users can review content or behaviour that may lead to restrictions or limitations. (Instagram Help Center)',
-    [{ href: IG_ACCOUNT_STATUS, label: 'Instagram Help Center', external: true }],
+    'p-20',
+    'Going public does not fix low reach on its own. It makes your posts eligible for recommendations, and from there it comes down to whether people watch, share and save what you post.',
   ),
   paragraph(
-    'p-sb-3',
-    'Recommendation eligibility is also specifically visible for professional accounts through Account Status. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'p-21',
+    'Going private to make people curious enough to request access is not a growth strategy. There is no sign that Instagram rewards private accounts with more followers, and you lose every discovery route that depends on public content. Hashtags do not get around privacy either. A private post with a hashtag is still only visible to approved followers.',
   ),
   paragraph(
-    'p-sb-4',
-    'So instead of “Go private for three days and Instagram will reset your reach,” use Check Account Status and actual recommendation eligibility.',
+    'p-22',
+    'Finally, a private account does not erase you from the internet. Your profile itself can still be found, and older public posts may have been shared or saved before you switched. Privacy controls who can open your posts on Instagram from now on.',
+  ),
+  heading('h-which-setting-is-right-for-you', 'Which Setting Is Right for You?', 2),
+  paragraph(
+    'p-23',
+    'Choose public if the account is meant to reach people who do not know you yet. That covers creators, brands, businesses, educators and anyone who needs Insights or other professional tools. Remember that everything you post can be seen by anyone, so keep personal details out of captions and Stories.',
   ),
   paragraph(
-    'p-sb-5',
-    'There is no official Instagram documentation supporting a magic privacy-toggle reset.',
-  ),
-
-  heading('h-fix-reach', 'Does Going Public Fix Low Reach?', 2),
-  paragraph('p-fix-1', 'Also no.'),
-  paragraph(
-    'p-fix-2',
-    'Changing from private to public expands potential accessibility.',
+    'p-24',
+    'Choose private if the account is mainly for people you know and you want to approve every follower. You give up recommendations and Insights, and in return you decide exactly who sees your content.',
   ),
   paragraph(
-    'p-fix-3',
-    'It does not guarantee that Instagram will recommend the account or content.',
+    'p-25',
+    'Younger users should keep the privacy settings Instagram applies to teen accounts. Follower numbers are never a good reason to weaken those protections.',
   ),
   paragraph(
-    'p-fix-4',
-    'Instagram explicitly says recommendation eligibility means it may recommend content; eligibility does not guarantee recommendation. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
+    'p-26',
+    'If you are unsure, ask yourself one question: should a stranger be able to see this post today? If the answer is usually yes, public fits. If it is usually no, private does.',
   ),
+  heading('h-how-to-switch-between-public-and-private', 'How to Switch Between Public and Private', 2),
   paragraph(
-    'p-fix-5',
-    'So private → public can remove a discovery restriction, but public → high reach is not an automatic outcome.',
-  ),
-
-  heading(
-    'h-recs',
-    'Public Accounts and Instagram Recommendations',
-    2,
-  ),
-  paragraph(
-    'p-rec-1',
-    "Public status matters because Instagram's Recommendation Guidelines determine which public-account content may be recommended to people who do not follow the account. (Instagram Help Center)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph('p-rec-2', 'Possible surfaces include:'),
-  bullets('ul-recs', [
-    'Reels,',
-    'Feed Recommendations,',
-    'Explore,',
-    'Search,',
-    'and Suggested Accounts.',
-  ]),
-  paragraph(
-    'p-rec-3',
-    'This makes recommendation eligibility especially relevant to:',
-  ),
-  bullets('ul-rec-who', [
-    'creators,',
-    'businesses,',
-    'brands,',
-    'and public-facing profiles.',
-  ]),
-  paragraph(
-    'p-rec-4',
-    'If your account is public but discovery is unusually limited, Account Status is the correct place to inspect recommendation eligibility instead of assuming public status guarantees distribution. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-
-  heading('h-eligibility', 'What Is Recommendation Eligibility?', 2),
-  paragraph(
-    'p-el-1',
-    'Recommendation eligibility means Instagram may recommend your public account or content to people who do not follow you.',
-  ),
-  paragraph('p-el-2', 'It is not a promise.'),
-  paragraph(
-    'p-el-3',
-    'Meta explicitly distinguishes eligible from guaranteed recommendation. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-el-4',
-    'Many guides blur this point.',
-  ),
-  paragraph(
-    'p-el-5',
-    '“Make your Instagram public and you will appear in Explore” is not accurate.',
-  ),
-  paragraph('p-el-6', 'A more accurate version:',
-  ),
-  paragraph(
-    'p-el-7',
-    'Public eligible accounts can be considered for Explore and other recommendation surfaces.',
-  ),
-
-  heading(
-    'h-followers',
-    'Public Account vs Private Account for Followers',
-    2,
-  ),
-  paragraph(
-    'p-fol-1',
-    'If your goal is follower growth, public accounts reduce friction.',
-  ),
-  paragraph('p-fol-2', 'A new viewer can:'),
-  bullets('ul-fol-public', [
-    'discover public content,',
-    'inspect the profile,',
-    'browse posts,',
-    'then decide whether to follow.',
-  ]),
-  paragraph(
-    'p-fol-3',
-    'A private account asks the visitor to decide whether to request access before seeing the private post library.',
-  ),
-  paragraph(
-    'p-fol-4',
-    'That does not mean private accounts cannot grow.',
-  ),
-  paragraph(
-    'p-fol-5',
-    'It means the acquisition journey is different.',
-  ),
-  heading('h-fol-public', 'Public', 3),
-  paragraph('p-fol-6', 'Discovery first → follow decision.'),
-  heading('h-fol-private', 'Private', 3),
-  paragraph(
-    'p-fol-7',
-    'Follow request first → full content access after approval.',
-  ),
-  paragraph(
-    'p-fol-8',
-    'For brands and creators trying to build a broad audience, the public journey usually aligns better with the objective.',
-  ),
-  paragraph(
-    'p-fol-9',
-    'For personal users prioritizing control, private may be preferable.',
-  ),
-  paragraph(
-    'p-fol-10',
-    'Follower count is still only one metric. Instagram followers, likes, views and comments measure different things, so a privacy setting should not be treated as a substitute for understanding what each number represents.',
+    'p-27',
+    'For a personal account, Instagram\'s steps to make your account private are short:',
     [
-      {
-        href: '/learn/instagram-followers-vs-likes-vs-views-vs-comments',
-        label: 'Instagram followers, likes, views and comments',
-      },
+      { href: IG_MAKE_PRIVATE, label: 'make your account private', external: true },
     ],
   ),
-
-  heading(
-    'h-business',
-    'Public vs Private Instagram for Businesses',
-    2,
-  ),
-  paragraph(
-    'p-biz-1',
-    'A business intending to use Instagram for marketing, customer discovery, Reels, content distribution, Insights and brand visibility will generally need the public professional-account model because Instagram professional accounts cannot be private. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-biz-2',
-    'This is less a growth “hack” than a product requirement.',
-  ),
-  paragraph(
-    'p-biz-3',
-    'A business should still decide how much personal/private information belongs on the account.',
-  ),
-  paragraph(
-    'p-biz-4',
-    'Public does not mean you need to publish everything.',
-  ),
-  paragraph(
-    'p-biz-5',
-    'It means the business profile and content are operating publicly.',
-  ),
-
-  heading(
-    'h-creators',
-    'Public vs Private Instagram for Creators',
-    2,
-  ),
-  paragraph(
-    'p-cr-1',
-    'Creators have a similar tradeoff.',
-  ),
-  paragraph(
-    'p-cr-2',
-    'A public professional account provides Insights, public discovery and potential recommendation exposure.',
-  ),
-  paragraph(
-    'p-cr-3',
-    'Instagram Insights comes with professional accounts, and professional accounts cannot be private. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-cr-4',
-    'A creator who prioritizes audience growth, analytics, brand work and public content will usually operate publicly.',
-  ),
-  paragraph(
-    'p-cr-5',
-    'Someone who simply wants to share personal content with approved people may prefer private.',
-  ),
-
-  heading('h-teen', 'What About Teen Instagram Accounts?', 2),
-  paragraph(
-    'p-teen-1',
-    "Age affects Instagram's default privacy experience.",
-  ),
-  paragraph(
-    'p-teen-2',
-    "Meta's public/private-account guidance notes that accounts for younger users can have different defaults, so generic adult-account advice should not be treated as universally applicable. (Instagram Help Center)",
-    [{ href: IG_PUBLIC_PRIVATE_DIFFERENCES, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-teen-3',
-    'For younger users, current Instagram safety/privacy controls should take priority over creator-growth advice.',
-  ),
-  paragraph(
-    'p-teen-4',
-    'Do not encourage someone to weaken privacy protections just to chase follower numbers.',
-  ),
-
-  heading(
-    'h-hashtags',
-    'Can a Private Instagram Account Use Hashtags for Reach?',
-    2,
-  ),
-  paragraph(
-    'p-ht-1',
-    'Hashtags should not be treated as a way to bypass account privacy.',
-  ),
-  paragraph(
-    'p-ht-2',
-    'If posts are restricted to approved followers, adding a hashtag does not magically turn the private post into ordinary public content.',
-  ),
-  paragraph(
-    'p-ht-3',
-    'Privacy determines who can access the post.',
-  ),
-  paragraph('p-ht-4', 'A hashtag does not override that.'),
-  paragraph(
-    'p-ht-5',
-    'This is another reason to separate content categorization from content access.',
-  ),
-
-  heading(
-    'h-google',
-    'Does a Private Instagram Account Appear on Google?',
-    2,
-  ),
-  paragraph(
-    'p-gg-1',
-    'For public accounts, Instagram states that people can view profiles and posts through the public web URL. (Instagram Help Center)',
-    [{ href: IG_WEB_PROFILE, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-gg-2',
-    'Private-account content is restricted to approved Instagram followers rather than being openly available in the same way. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-gg-3',
-    'And a private account does not remove every trace of the profile from every search engine or historical cache.',
-  ),
-  paragraph(
-    'p-gg-4',
-    'The accurate claim is about content accessibility, not universal erasure from the internet.',
-  ),
-
-  heading(
-    'h-private-growth',
-    'Should You Make Instagram Private to Gain Followers?',
-    2,
-  ),
-  paragraph(
-    'p-pg-1',
-    'There is a social-media tactic where accounts go private hoping curiosity will make users request access.',
-  ),
-  paragraph(
-    'p-pg-2',
-    'It is not a reliable growth strategy.',
-  ),
-  paragraph(
-    'p-pg-3',
-    'There is no Instagram documentation saying private accounts receive a follower-growth advantage.',
-  ),
-  paragraph(
-    'p-pg-4',
-    'It also removes the normal public content-discovery pathway because only approved followers can see the private posts. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-pg-5',
-    'For an account whose strategy depends on Reels discovery, Explore, Search or public sharing, the tradeoff is significant.',
-  ),
-  paragraph(
-    'p-pg-6',
-    'Choose privacy because you want privacy.',
-  ),
-  paragraph(
-    'p-pg-7',
-    'Not because somebody promised an algorithm trick.',
-  ),
-
-  heading(
-    'h-public-reach',
-    'Should You Make Instagram Public Just to Get More Reach?',
-    2,
-  ),
-  paragraph(
-    'p-pr-1',
-    'Only if broader visibility fits your goals.',
-  ),
-  paragraph(
-    'p-pr-2',
-    'A public account has the potential to participate in non-follower recommendation surfaces when eligible. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-pr-3',
-    'But public status also means your posts have broader accessibility. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-pr-4',
-    'So the decision is not purely an SEO/growth decision.',
-  ),
-  paragraph(
-    'p-pr-5',
-    'It is also a privacy decision.',
-  ),
-  paragraph('p-pr-6', 'Ask:'),
-  bullets('ul-pr-ask', [
-    'Do I want strangers to access this content?',
-    'Is the account intended to be public-facing?',
-    'Do I need creator/business Insights?',
-    'Do I want non-follower discovery?',
-  ]),
-  paragraph('p-pr-7', 'Then choose accordingly.'),
-
-
-
-  heading(
-    'h-password',
-    'Does a Third-Party Service Need Your Instagram Password?',
-    2,
-  ),
-  paragraph(
-    'p-pw-1',
-    'No. A legitimate service only needs your public username, and NovaLikes never asks for your Instagram password.',
-  ),
-  paragraph(
-    'p-pw-4',
-    'Keep your login details under your own control.',
-  ),
-
-  heading(
-    'h-switch',
-    'Can You Switch Between Public and Private?',
-    2,
-  ),
-  paragraph(
-    'p-sw-1',
-    'Instagram provides an Account privacy control allowing eligible personal users to change between private and public account states. (Instagram Help Center)',
-    [{ href: IG_MAKE_PRIVATE, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-sw-2',
-    'But remember: professional accounts cannot be private. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-sw-3',
-    'So if you currently have a professional account and want private status, you may need to change the account type as part of that process.',
-  ),
-  paragraph(
-    'p-sw-4',
-    'That can also affect Insights access. (Instagram Help Center)',
-    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Instagram Help Center', external: true }],
-  ),
-
-  heading(
-    'h-how-private',
-    'How to Make an Instagram Account Private',
-    2,
-  ),
-  paragraph(
-    'p-hp-1',
-    "Instagram's current Help Center process includes:",
-  ),
-  numbered('ol-private', [
-    'Open Instagram settings.',
-    'Go to Account privacy under the content-visibility controls.',
-    'Turn on Private account.',
-    'Confirm the switch.',
+  numbered('ol-2', [
+    'Open your profile and go to Settings and activity.',
+    'Tap Account privacy.',
+    'Turn Private account on or off and confirm.',
   ]),
   paragraph(
-    'p-hp-2',
-    'Instagram documents this path in its private-account guidance. (Instagram Help Center)',
-    [{ href: IG_MAKE_PRIVATE, label: 'Instagram Help Center', external: true }],
+    'p-28',
+    'If the option is missing, you are probably on a creator or business account. Switch to a personal account first, keeping in mind that you will lose Insights while you stay private. Menu names change from time to time, so follow the wording in your app if it differs slightly.',
   ),
   paragraph(
-    'p-hp-3',
-    'Interface wording can change over time, so follow the current options shown in your Instagram app if they differ slightly.',
+    'p-29',
+    'Before going public, check two things: that you are comfortable with every existing post being visible to anyone, and whether you have pending follow requests you would rather not accept.',
   ),
-  paragraph(
-    'p-hp-4',
-    'Professional accounts cannot use private status. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-
-  heading(
-    'h-before-private',
-    'What Should You Check Before Going Private?',
-    2,
-  ),
-  heading('h-bp-type', '1. Account Type', 3),
-  paragraph(
-    'p-bpv-1',
-    'Are you currently using a professional account?',
-  ),
-  paragraph(
-    'p-bpv-2',
-    'Professional accounts cannot remain private. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bp-insights', '2. Insights', 3),
-  paragraph(
-    'p-bpv-3',
-    'If analytics are important to you, understand that switching back to private can remove Insights access. (Instagram Help Center)',
-    [{ href: IG_ACCOUNT_CONTENT_INSIGHTS, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bp-discovery', '3. Discovery Goals', 3),
-  paragraph(
-    'p-bpv-4',
-    'Do you depend on Reels, Explore, Search or recommendations to reach non-followers?',
-  ),
-  paragraph(
-    'p-bpv-5',
-    'Recommendation eligibility applies to public-account content. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bp-audience', '4. Existing Audience', 3),
-  paragraph(
-    'p-bpv-6',
-    'Private status means future followers require approval.',
-  ),
-  heading('h-bp-purpose', '5. Purpose', 3),
-  paragraph('p-bpv-7', 'Are you a:'),
-  bullets('ul-purpose', [
-    'personal user,',
-    'creator,',
-    'business,',
-    'or public brand?',
-  ]),
-  paragraph(
-    'p-bpv-8',
-    'Your account purpose should drive the choice.',
-  ),
-
-  heading(
-    'h-before-public',
-    'What Should You Check Before Going Public?',
-    2,
-  ),
-  heading('h-bpu-posts', 'Existing Posts', 3),
-  paragraph(
-    'p-bpu-1',
-    'Are you comfortable making your content broadly visible?',
-  ),
-  paragraph(
-    'p-bpu-2',
-    'Public posts can be seen by anyone on Instagram. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bpu-pending', 'Pending Follow Requests', 3),
-  paragraph(
-    'p-bpu-3',
-    'Instagram warns that pending requests can be automatically accepted when moving to a public professional configuration. (Instagram Help Center)',
-    [{ href: IG_PROFESSIONAL_ACCOUNTS, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bpu-profile', 'Profile Information', 3),
-  paragraph(
-    'p-bpu-4',
-    'Review what you are comfortable sharing publicly.',
-  ),
-  heading('h-bpu-elig', 'Recommendation Eligibility', 3),
-  paragraph(
-    'p-bpu-5',
-    'If growth matters, understand that being public makes recommendation eligibility possible but does not guarantee distribution. (Instagram Help Center)',
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  heading('h-bpu-insights', 'Insights', 3),
-  paragraph(
-    'p-bpu-6',
-    'Insights come with a professional account, which is always public. A private personal account has no Insights. (Instagram Help Center)',
-    [{ href: IG_INSIGHTS, label: 'Instagram Help Center', external: true }],
-  ),
-
-  heading(
-    'h-which',
-    'Public vs Private Instagram: Which Is Better?',
-    2,
-  ),
-  paragraph('p-wh-1', 'There is no universal winner.'),
-  heading('h-which-public', 'Public Is Better Suited to:', 3),
-  bullets('ul-which-public', [
-    'creators seeking discovery,',
-    'businesses,',
-    'brands,',
-    'public educational accounts,',
-    'accounts using professional tools,',
-    'and people who want broader content accessibility.',
-  ]),
-  heading('h-which-private', 'Private Is Better Suited to:', 3),
-  bullets('ul-which-private', [
-    'people prioritizing audience control,',
-    'personal sharing,',
-    'restricted content access,',
-    'and users who want to approve followers individually.',
-  ]),
-  paragraph('p-wh-2', 'The correct question is not:'),
-  paragraph('p-wh-3', '“Which setting gets more followers?”'),
-  paragraph('p-wh-4', 'It is:'),
-  paragraph(
-    'p-wh-5',
-    '“What is this Instagram account supposed to do?”',
-  ),
-
-  heading(
-    'h-simple',
-    'Public vs Private Instagram in Simple Terms',
-    2,
-  ),
-  paragraph(
-    'p-sm-1',
-    'The difference can be summarized in one sentence:',
-  ),
-  paragraph(
-    'p-sm-2',
-    'A public account lets people access public content broadly, while a private account limits posts to approved followers. (Instagram Help Center)',
-    [{ href: IG_WHO_CAN_SEE_POSTS, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph(
-    'p-sm-3',
-    'From that one difference come several consequences.',
-  ),
-  paragraph('p-sm-4', 'Public accounts have:'),
-  bullets('ul-sm-public', [
-    'broader discoverability,',
-    'recommendation eligibility,',
-    'the option to switch to a professional account,',
-    'and Insights once the account is professional.',
-  ]),
-  paragraph(
-    'p-sm-5',
-    "Those public-account features are documented across Instagram's recommendation and Insights guidance. (Instagram Help Center)",
-    [{ href: IG_RECOMMENDATION_ELIGIBILITY, label: 'Instagram Help Center', external: true }],
-  ),
-  paragraph('p-sm-6', 'Private accounts have:'),
-  bullets('ul-sm-private', [
-    'follower approval,',
-    'restricted post access,',
-    'and greater audience control.',
-  ]),
-  paragraph('p-sm-7', 'Neither setting guarantees growth.'),
-  paragraph('p-sm-8', 'Neither setting guarantees safety.'),
-  paragraph(
-    'p-sm-9',
-    'Neither setting is right for every user.',
-  ),
-  paragraph('p-sm-10', 'Choose based on:'),
-  bullets('ul-sm-choose', [
-    'privacy',
-    'purpose',
-    'audience',
-    'and how you want Instagram to be used.',
-  ]),
   {
       id: 'cta-ig-followers',
       type: 'internal_cta',
@@ -1239,18 +288,6 @@ const BLOCKS: ArticleContentBlock[] = [
         'NovaLikes Instagram follower orders use the public profile information required for the selected service. You do not need to provide your Instagram password.',
       label: 'View Instagram Followers',
     },
-
-
-  heading('h-takeaways', 'Key Takeaways', 2),
-  bullets('ul-takeaways', [
-    'Private Instagram posts can only be seen by approved followers.',
-    'Public-account posts can be seen by anyone on Instagram.',
-    'Instagram recommendation eligibility for non-follower surfaces applies to content from public accounts.',
-    'Recommendation eligibility does not guarantee that Instagram will recommend the content.',
-    'Professional Instagram accounts cannot be set to private.',
-    'Insights are only available on professional accounts, so going private removes them.',
-    'Private is not an algorithm penalty, and public is not a guaranteed reach boost.',
-  ]),
 ];
 
 const CONTENT = BLOCKS.map((block) => {
@@ -1277,7 +314,7 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
   title:
     'Public vs Private Instagram Accounts: What Changes for Followers and Reach?',
   excerpt:
-    'Making an Instagram account private changes much more than whether strangers can immediately see your posts.',
+    'Going private on Instagram limits your posts to approved followers, removes you from recommendations to non-followers and switches off Insights. Here is what changes and how to choose.',
   content: CONTENT,
   blocks: BLOCKS,
   category: 'instagram',
@@ -1292,8 +329,8 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
   },
   readingTime: estimateReadingTimeMinutes(CONTENT),
   publishedAt: PUBLISHED_AT,
-  updatedAt: PUBLISHED_AT,
-  showModifiedDate: false,
+  updatedAt: UPDATED_AT,
+  showModifiedDate: true,
   seo: {
     title: 'Public vs Private Instagram Accounts: What Changes?',
     description:
@@ -1330,62 +367,61 @@ export const PUBLIC_VS_PRIVATE_INSTAGRAM_ACCOUNT_ARTICLE: LearnArticleRecord = {
   contentReviewed: true,
   lastEditorialUpdate: SCHEDULED_AT,
   keyTakeaways: [
-    'Content on a public account can be visible to anyone on Instagram.',
-    'Public-account content may be eligible for recommendation to non-followers.',
-    'Instagram Insights is only available on professional accounts, which are always public.',
-    'Only approved followers can see posts on a private account.',
-    'New followers on a private account require approval.',
-    'Private content is not operating as broadly accessible public recommendation content.',
-    'Instagram professional accounts cannot be set to private.',
+    'Private posts are visible only to approved followers. Public posts can be seen by anyone on Instagram.',
+    'Only public content can be recommended to non-followers in Reels, Explore, Search and Suggested Accounts.',
+    'Being eligible for recommendations does not mean Instagram will recommend your posts.',
+    'Creator and business accounts cannot be private, and Insights only work on those accounts.',
+    'Going private does not remove existing followers or reset your reach.',
+    'Pick the setting that matches what the account is for, not a growth trick.',
   ],
   faqs: [
     {
       id: 'faq-1',
       question: 'What is the difference between a public and private Instagram account?',
       answer:
-        'Public-account posts can be viewed by anyone on Instagram, while private-account posts can only be seen by approved followers.',
+        'Posts on a public account can be seen by anyone on Instagram, and anyone can follow without approval. Posts on a private account are visible only to followers you approve.',
       schemaEligible: true,
     },
     {
       id: 'faq-2',
       question: 'Does making Instagram private reduce reach?',
       answer:
-        'Private accounts restrict posts to approved followers. Public-account content can potentially be recommended to non-followers across Reels, Explore, Feed, Search and Suggested Accounts when eligible.',
+        'It limits your audience to approved followers. Private posts are not shown to non-followers in Reels, Explore or Search, so you lose that discovery. Your existing followers still see your posts as normal.',
       schemaEligible: true,
     },
     {
       id: 'faq-3',
       question: 'Can a private Instagram account appear on Explore?',
       answer:
-        "Instagram's non-follower recommendation eligibility applies to public-account content. Private posts are restricted to approved followers.",
+        'No. Explore and other recommendation features use content from public accounts. Private posts are only shown to approved followers.',
       schemaEligible: true,
     },
     {
       id: 'faq-4',
       question: 'Can a business Instagram account be private?',
       answer:
-        'No. Instagram says professional accounts cannot be set to private.',
+        'No. Instagram says professional accounts, which include creator and business accounts, cannot be set to private.',
       schemaEligible: true,
     },
     {
       id: 'faq-5',
       question: 'Do you lose Instagram Insights if you make your account private?',
       answer:
-        'Yes. Insights is only available on professional accounts, and professional accounts cannot be private, so going private removes Insights. Past data may become available again if you later switch back to a professional account.',
+        'Yes. Insights only work on professional accounts, which are always public. Past data may become available again if you switch back to a professional account later.',
       schemaEligible: true,
     },
     {
       id: 'faq-6',
-      question: 'Does making Instagram public guarantee more followers?',
+      question: 'Does going private remove my followers?',
       answer:
-        'No. Public status allows broader accessibility and potential recommendation eligibility, but Instagram explicitly does not guarantee that eligible content will be recommended.',
+        'No. Your current followers stay. The setting only changes who can see your posts and how new people follow you.',
       schemaEligible: true,
     },
     {
       id: 'faq-7',
-      question: 'Can anyone see posts from a public Instagram account?',
+      question: 'Will going public get me more followers?',
       answer:
-        'Instagram says public-account posts can be seen by anyone on Instagram, and public profiles/posts can also be viewed through their Instagram web URL.',
+        'It makes your content eligible to reach people who do not follow you, which helps if your posts are useful or entertaining. It does not add followers by itself.',
       schemaEligible: true,
     },
   ],

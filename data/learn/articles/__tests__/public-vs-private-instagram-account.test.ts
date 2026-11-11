@@ -78,7 +78,7 @@ describe('Article #14 Public vs private Instagram accounts', () => {
       'professional accounts cannot be set to private',
     );
     expect(article.content).toContain(
-      'But do not say “Instagram penalizes private accounts.”',
+      'Instagram does not punish private accounts with a hidden penalty.',
     );
     expect(article.content).not.toMatch(
       /Public accounts can use Instagram Insights/i,
